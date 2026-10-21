@@ -65,6 +65,9 @@ main { margin-top: 36px; flex: 1; }
 @media (prefers-reduced-motion: reduce) { .list, .tabs button { transition: none; } }
 .tabs button[aria-pressed="true"] { color: var(--ink); }
 .tabs button:hover { color: var(--ink); }
+.tabs .c { margin-left: 4px; font-size: 0.8125rem; font-variant-numeric: tabular-nums; }
+.tabs .c:empty { display: none; }
+.tabs button.zero { opacity: .45; }
 .empty { padding: 4px 0; color: var(--grey); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .list li { border-top: 1px solid var(--line); }
 .list li:last-child { border-bottom: 1px solid var(--line); }
@@ -78,7 +81,8 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 
 /* inline search hint */
 .search { position: relative; }
-.search input { padding-right: 64px; }
+.search input { padding-right: 124px; }
+.search input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
 .kbd { position: absolute; right: 0; top: 50%; transform: translateY(-50%); display: inline-flex; gap: 4px; align-items: center; color: var(--grey); font-size: 0.75rem; cursor: pointer; background: none; border: 0; padding: 0; font-family: inherit; }
 .kbd kbd, .pal-foot kbd { font-family: inherit; font-size: 0.72rem; color: var(--ink); background: var(--page); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px; padding: 1px 6px; min-width: 1.4em; text-align: center; }
 
@@ -131,11 +135,11 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 
   <main>
     <div class="tabs" role="group" aria-label="Show">
-      <button type="button" data-cat="all" aria-pressed="true">All</button>
-      <button type="button" data-cat="Job" aria-pressed="false">Jobs</button>
-      <button type="button" data-cat="Admit card" aria-pressed="false">Admit cards</button>
-      <button type="button" data-cat="Result" aria-pressed="false">Results</button>
-      <button type="button" data-cat="Answer key" aria-pressed="false">Answer keys</button>
+      <button type="button" data-cat="all" aria-pressed="true">All<span class="c"></span></button>
+      <button type="button" data-cat="Job" aria-pressed="false">Jobs<span class="c"></span></button>
+      <button type="button" data-cat="Admit card" aria-pressed="false">Admit cards<span class="c"></span></button>
+      <button type="button" data-cat="Result" aria-pressed="false">Results<span class="c"></span></button>
+      <button type="button" data-cat="Answer key" aria-pressed="false">Answer keys<span class="c"></span></button>
     </div>
     <label class="search" for="q"><span style="position:absolute;left:-9999px">Search notices</span>
       <input id="q" type="search" placeholder="Search: SSC, UGC NET, 12th pass, Bihar…" autocomplete="off" data-en-ph="Search: SSC, UGC NET, 12th pass, Bihar…" data-hi-ph="खोजें: SSC, UGC NET, 12वीं पास, बिहार…">
@@ -203,6 +207,13 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   }
   function render() {
     const rows = [...ITEMS].sort((a, b) => b.posted.localeCompare(a.posted)).filter(i => (!i.last || left(i.last) >= 0) && (cat === "all" || i.type === cat) && q.split(/\s+/).every(w => words(i).includes(w)));
+    // match counts per category while searching
+    const hits = ITEMS.filter(i => (!i.last || left(i.last) >= 0) && (!q || qmatch(i)));
+    document.querySelectorAll(".tabs button").forEach(b => {
+      const n = b.dataset.cat === "all" ? hits.length : hits.filter(i => i.type === b.dataset.cat).length;
+      b.querySelector(".c").textContent = q ? n : "";
+      b.classList.toggle("zero", !!q && n === 0);
+    });
     document.getElementById("list").innerHTML = rows.map(i =>
       `<li><a class="row" href="${i.url}" target="_blank" rel="noopener"><span class="num hide-sm">${fmt(i.posted)}</span><span class="t">${esc(i.title)}</span><span class="hide-sm g">${i.org}</span><span class="hide-sm g">${i.type}</span><span class="num">${i.last ? fmt(i.last) : "—"}</span></a></li>`
     ).join("") || (q ? `<li class="empty">Nothing matches "${esc(q)}". Try a shorter word, like an organisation name.</li>` : '<li class="empty">Nothing here right now. New notices appear as soon as they are published.</li>');
