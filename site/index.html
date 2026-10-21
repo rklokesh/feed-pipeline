@@ -47,7 +47,11 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 .row { display: grid; grid-template-columns: 5rem 1fr 7rem 6.5rem 5.5rem; gap: 0 16px; align-items: baseline; }
 main { margin-top: 48px; flex: 1; }
 .head { color: var(--grey); padding-bottom: 4px; }
-.tabs { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: 28px; }
+.tabs { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: 14px; }
+.search { display: block; margin-bottom: 32px; }
+.search input { all: unset; box-sizing: border-box; width: 100%; padding: 6px 0; border-bottom: 1px solid var(--line); }
+.search input::placeholder { color: var(--grey); }
+.search input:focus { border-bottom-color: var(--ink); }
 .tabs button { all: unset; cursor: pointer; color: var(--grey); }
 .tabs button[aria-pressed="true"] { color: var(--ink); }
 .tabs button:hover { color: var(--ink); }
@@ -87,6 +91,9 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       <button type="button" data-cat="Result" aria-pressed="false">Results</button>
       <button type="button" data-cat="Answer key" aria-pressed="false">Answer keys</button>
     </div>
+    <label class="search" for="q"><span style="position:absolute;left:-9999px">Search notices</span>
+      <input id="q" type="search" placeholder="Search: SSC, UGC NET, 12th pass, Bihar…" autocomplete="off" data-en-ph="Search: SSC, UGC NET, 12th pass, Bihar…" data-hi-ph="खोजें: SSC, UGC NET, 12वीं पास, बिहार…">
+    </label>
     <div class="row head"><span class="hide-sm">Posted</span><span data-en="Notice" data-hi="सूचना">Notice</span><span class="hide-sm">Organisation</span><span class="hide-sm">Type</span><span>Last date</span></div>
     <ul class="list" id="list"></ul>
   </main>
@@ -118,24 +125,27 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   const left = iso => Math.ceil((new Date(iso + "T23:59:59") - TODAY) / 864e5);
   const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
-  let cat = "all";
+  let cat = "all", q = "";
+  const words = i => [i.title, i.org, i.type].join(" ").toLowerCase();
   function render() {
-    const rows = [...ITEMS].sort((a, b) => b.posted.localeCompare(a.posted)).filter(i => (!i.last || left(i.last) >= 0) && (cat === "all" || i.type === cat));
+    const rows = [...ITEMS].sort((a, b) => b.posted.localeCompare(a.posted)).filter(i => (!i.last || left(i.last) >= 0) && (cat === "all" || i.type === cat) && q.split(/\s+/).every(w => words(i).includes(w)));
     document.getElementById("list").innerHTML = rows.map(i =>
       `<li><a class="row" href="${i.url}" target="_blank" rel="noopener"><span class="num hide-sm">${fmt(i.posted)}</span><span class="t">${esc(i.title)}</span><span class="hide-sm g">${i.org}</span><span class="hide-sm g">${i.type}</span><span class="num">${i.last ? fmt(i.last) : "—"}</span></a></li>`
-    ).join("") || '<li class="empty">Nothing here right now. New notices appear as soon as they are published.</li>';
+    ).join("") || (q ? `<li class="empty">Nothing matches "${esc(q)}". Try a shorter word, like an organisation name.</li>` : '<li class="empty">Nothing here right now. New notices appear as soon as they are published.</li>');
   }
   document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => {
     cat = b.dataset.cat;
     document.querySelectorAll(".tabs button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
     render();
   }));
+  document.getElementById("q").addEventListener("input", e => { q = e.target.value.trim().toLowerCase(); render(); });
   render();
 
   let hi = false;
   document.getElementById("lang").addEventListener("click", e => {
     hi = !hi;
     document.querySelectorAll("[data-en]").forEach(el => el.textContent = hi ? el.dataset.hi : el.dataset.en);
+    const qi = document.getElementById("q"); qi.placeholder = hi ? qi.dataset.hiPh : qi.dataset.enPh;
     e.currentTarget.textContent = hi ? "English" : "हिंदी";
     document.documentElement.lang = hi ? "hi" : "en";
   });
