@@ -2,6 +2,8 @@
 # Step 1 (probe) checks which of these load from GitHub's servers.
 # URLs are best-known entry points; the probe report flags any that 404 or redirect.
 # render: static = plain HTML fetch is enough; js = needs a headless browser.
+# runner: github = reachable from GitHub's US servers (probe, Oct 2026);
+#         india  = needs an Indian internet connection (Mac mini runner, later).
 
 sources:
   # ---- Central: commissions & exam bodies ----
@@ -9,137 +11,169 @@ sources:
     org: UPSC
     url: https://upsc.gov.in/whats-new
     render: static
+    runner: india
   - id: upsc-active-exams
     org: UPSC
     url: https://upsc.gov.in/examinations/active-exams
     render: static
+    runner: india
   - id: ssc-notice-board
     org: SSC
     url: https://ssc.gov.in/home/notice-board
     render: js
+    runner: github
   - id: ibps-home
     org: IBPS
     url: https://www.ibps.in/
     render: static
+    runner: github
   - id: nta-home
     org: NTA
     url: https://nta.ac.in/
     render: static
+    runner: github
   - id: rrb-cdg
     org: RRB Chandigarh
     url: https://www.rrbcdg.gov.in/
     render: static
+    runner: india
   - id: rrb-unified
     org: RRB (unified portal)
     url: https://rrb.indianrailways.gov.in/
     render: static
+    runner: india
 
   # ---- Banks & financial ----
   - id: sbi-careers
     org: SBI
     url: https://sbi.bank.in/web/careers/current-openings
     render: static
+    runner: github
   - id: rbi-opportunities
     org: RBI
     url: https://opportunities.rbi.org.in/Scripts/Vacancies.aspx
     render: static
+    runner: india
   - id: nabard-careers
     org: NABARD
     url: https://www.nabard.org/careers-notices1.aspx?cid=693&id=26
     render: static
+    runner: india
   - id: lic-careers
     org: LIC
     url: https://licindia.in/careers
     render: static
+    runner: github
 
   # ---- Defence & police ----
   - id: army-home
     org: Indian Army
     url: https://joinindianarmy.nic.in/
     render: static
+    runner: india
   - id: navy-home
     org: Indian Navy
     url: https://www.joinindiannavy.gov.in/
     render: static
+    runner: india
   - id: iaf-agniveer
     org: Indian Air Force
     url: https://agnipathvayu.cdac.in/
     render: static
+    runner: india
   - id: coast-guard
     org: Indian Coast Guard
     url: https://joinindiancoastguard.cdac.in/
     render: static
+    runner: india
   - id: bsf-recruitment
     org: BSF
     url: https://rectt.bsf.gov.in/
     render: static
+    runner: india
   - id: crpf-recruitment
     org: CRPF
-    url: https://crpf.gov.in/recruitment.htm
+    url: https://crpf.gov.in/recruitment.htm  # moved: redirects to crpf.mha.gov.in (404) - find new page
     render: static
+    runner: india
   - id: itbp-recruitment
     org: ITBP
     url: https://recruitment.itbpolice.nic.in/
     render: static
+    runner: india
 
   # ---- Research / PSU ----
   - id: drdo-careers
     org: DRDO
     url: https://www.drdo.gov.in/drdo/careers
     render: static
+    runner: india
   - id: isro-careers
     org: ISRO
     url: https://www.isro.gov.in/Careers.html
     render: static
+    runner: github
 
   # ---- States (Hindi belt first) ----
   - id: uppsc-home
     org: UPPSC
     url: https://uppsc.up.nic.in/
     render: static
+    runner: github
   - id: upsssc-home
     org: UPSSSC
     url: https://upsssc.gov.in/
     render: static
+    runner: india
   - id: bpsc-home
     org: BPSC
     url: https://bpsc.bihar.gov.in/
     render: static
+    runner: github
   - id: bssc-home
     org: BSSC
     url: https://bssc.bihar.gov.in/
     render: static
+    runner: github
   - id: rpsc-home
     org: RPSC
     url: https://rpsc.rajasthan.gov.in/
     render: static
+    runner: india
   - id: rssb-home
     org: RSSB Rajasthan
     url: https://rssb.rajasthan.gov.in/
     render: static
+    runner: india
   - id: mppsc-home
     org: MPPSC
     url: https://mppsc.mp.gov.in/
     render: static
+    runner: india
   - id: mpesb-home
     org: MPESB
     url: https://esb.mp.gov.in/
     render: static
+    runner: india
   - id: dsssb-home
     org: DSSSB
     url: https://dsssb.delhi.gov.in/
     render: static
+    runner: india
   - id: ukpsc-home
     org: UKPSC
     url: https://psc.uk.gov.in/
     render: static
+    runner: india
 
   # ---- Aggregated official sources ----
   - id: employment-news
     org: Employment News
     url: https://employmentnews.gov.in/
     render: static
+    runner: india
   - id: ncs-home
     org: NCS
     url: https://www.ncs.gov.in/
     render: static
+    runner: github

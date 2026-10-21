@@ -1,0 +1,50 @@
+name: Watch official sources
+
+# Checks official notice boards, extracts new notices, queues them for review.
+on:
+  schedule:
+    - cron: "7,37 * * * *"   # every 30 min (GitHub may delay scheduled runs at busy times)
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Optional: comma-separated source ids"
+        default: ""
+
+permissions:
+  contents: write   # commit data/ back to the repo
+  models: read      # free GitHub Models AI fallback for extraction
+
+concurrency:
+  group: watch-github
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install OCR tools (Hindi + English)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-hin poppler-utils
+      - run: pip install -r requirements.txt
+      - run: python -m playwright install --with-deps chromium
+      - name: Watch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          ARGS="--runner github"
+          if [ -n "${{ inputs.only }}" ]; then ARGS="$ARGS --only ${{ inputs.only }}"; fi
+          python scripts/watch.py $ARGS
+      - name: Save data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet && { echo "no changes"; exit 0; }
+          git commit -m "Watch: new data $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
