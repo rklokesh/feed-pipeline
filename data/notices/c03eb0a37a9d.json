@@ -1,8 +1,7 @@
 {
-  "baseline_sample": true,
   "board_url": "https://www.ibps.in/",
   "extraction": {
-    "ai": "github-models:bad-response:'OK\\r\\n'"
+    "ai": "github-models:bad-response:'OK\\r\\n',github-models-azure:ConnectionError"
   },
   "fields": {
     "apply_last": {

@@ -1,8 +1,7 @@
 {
-  "baseline_sample": true,
   "board_url": "https://sbi.bank.in/web/careers/current-openings",
   "extraction": {
-    "ai": "github-models:bad-response:'OK\\r\\n'"
+    "ai": "github-models:bad-response:'OK\\r\\n',github-models-azure:ConnectionError"
   },
   "fields": {
     "advt_no": {
