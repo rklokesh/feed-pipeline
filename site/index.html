@@ -91,35 +91,12 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 
 /* inline search: plain grey words at the right, never boxes */
 .search { position: relative; }
-.search input { padding-right: 90px; }
+.search input { padding-right: 60px; }
 .search input::-webkit-search-cancel-button, .search input::-webkit-search-decoration { -webkit-appearance: none; appearance: none; display: none; }
 .sx { position: absolute; right: 0; top: 50%; transform: translateY(-50%); all: unset; position: absolute; right: 0; top: 50%; transform: translateY(-50%); cursor: pointer; color: var(--grey); }
 .sx:hover { color: var(--ink); }
 
-/* search pop-up: same sheet as the page. Square, hairlines, no shadow, no tint. */
-.pal-back { position: fixed; inset: 0; z-index: 50; background: color-mix(in srgb, var(--page) 88%, transparent); display: flex; justify-content: center; align-items: flex-start;
-  padding: calc(env(safe-area-inset-top, 0px) + 10vh) max(16px, env(safe-area-inset-right, 0px)) 16px max(16px, env(safe-area-inset-left, 0px)); opacity: 0; transition: opacity .14s linear; }
-.pal-back.on { opacity: 1; }
-.pal { width: 100%; max-width: 640px; max-height: 72vh; display: flex; flex-direction: column; background: var(--page); border: 1px solid var(--ink); }
-.pal-top { display: flex; align-items: baseline; gap: 16px; padding: 10px 14px; border-bottom: 1px solid var(--ink); }
-.pal-top input { all: unset; flex: 1; min-width: 0; }
-.pal-top input::placeholder { color: var(--grey); }
-.pal-top button { all: unset; cursor: pointer; color: var(--grey); }
-.pal-top button:hover { color: var(--ink); }
-.pal-body { overflow-y: auto; }
-.pal-group { padding: 14px 14px 4px; color: var(--grey); }
-.pal-item { display: grid; grid-template-columns: 1fr auto; gap: 16px; padding: 4px 14px; color: var(--ink); text-decoration: none; cursor: pointer; border-top: 1px solid var(--line); }
-.pal-item .s { color: var(--grey); white-space: nowrap; }
-.pal-item:hover, .pal-item[aria-selected="true"] { background: var(--soft); text-decoration: none; }
-.pal-item mark { background: none; color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
-.pal-try { padding: 12px 14px 4px; color: var(--grey); display: flex; flex-wrap: wrap; gap: 4px 16px; }
-.pal-try button { all: unset; cursor: pointer; color: var(--ink); }
-.pal-try button:hover { text-decoration: underline; text-underline-offset: 3px; }
-.pal-empty { padding: 12px 14px; color: var(--grey); }
-.pal-foot { padding: 8px 14px; border-top: 1px solid var(--line); color: var(--grey); margin-top: 10px; }
-@media (hover: none) { .pal-foot { display: none; } }
-@media (max-width: 640px) { .pal-item { grid-template-columns: 1fr; gap: 0; } .pal-item .s { white-space: normal; } }
-@media (prefers-reduced-motion: reduce) { .pal-back { transition: none; } }
+
 
 @media (max-width: 640px) {
   .top { grid-template-columns: 1fr auto 1fr; }
@@ -150,8 +127,8 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       <button type="button" data-cat="Answer key" aria-pressed="false">Answer keys<span class="c"></span></button>
     </div>
     <label class="search" for="q"><span style="position:absolute;left:-9999px">Search notices</span>
-      <input id="q" type="search" placeholder="Search: SSC, UGC NET, 12th pass, Bihar…" autocomplete="off" data-en-ph="Search: SSC, UGC NET, 12th pass, Bihar…" data-hi-ph="खोजें: SSC, UGC NET, 12वीं पास, बिहार…">
-          <button type="button" class="sx" id="kHint" aria-label="Open quick search">Press K</button>
+      <input id="q" type="search" placeholder="Start typing to search: SSC, UGC NET, teacher…" autocomplete="off" data-en-ph="Start typing to search: SSC, UGC NET, teacher…" data-hi-ph="खोजने के लिए लिखें: SSC, UGC NET, शिक्षक…">
+          <button type="button" class="sx" id="kHint" hidden>Clear</button>
     </label>
     <div class="row head"><span class="hide-sm">Posted</span><span data-en="Notice" data-hi="सूचना">Notice</span><span class="hide-sm">Organisation</span><span class="hide-sm">Type</span><span>Last date / status</span></div>
     <ul class="list" id="list"></ul>
@@ -164,16 +141,6 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 </div>
 
 
-<div class="pal-back" id="palBack" hidden>
-  <div class="pal" role="dialog" aria-modal="true" aria-label="Search">
-    <div class="pal-top">
-      <input id="pq" type="text" placeholder="Search jobs, results, admit cards…" autocomplete="off" aria-controls="palList" aria-label="Search">
-      <button type="button" id="palClear">Clear</button>
-    </div>
-    <div class="pal-body" id="palList" role="listbox"></div>
-    <div class="pal-foot">↑ ↓ move · ↵ open · esc close</div>
-  </div>
-</div>
 
 <script>
 (() => {
@@ -261,104 +228,24 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     document.documentElement.lang = hi ? "hi" : "en";
   });
 
-  // ---------- search pop-up (press K) ----------
-  const back = document.getElementById("palBack"), pq = document.getElementById("pq"), plist = document.getElementById("palList");
-  const GROUPS = [["Job", "Jobs"], ["Result", "Results"], ["Answer key", "Answer keys"], ["Admit card", "Admit cards"]];
-  let sel = 0, flat = [];
-  const hl = (text, terms) => {
-    let out = esc(text);
-    terms.forEach(t => { if (t) out = out.replace(new RegExp("(" + t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "ig"), "<mark>$1</mark>"); });
-    return out;
-  };
-  // Relevance first (title start > title word > title > organisation/type), then most recent.
-  function score(i, terms) {
-    const t = i.title.toLowerCase(), o = (i.org + " " + i.type).toLowerCase();
-    let s = 0;
-    for (const w of terms) {
-      const ty = i.type.toLowerCase(), og = i.org.toLowerCase();
-      if (og === w || ty.startsWith(w)) s += 7;          // exact organisation or category ("ssc", "result")
-      else if (t.startsWith(w)) s += 6;
-      else if (new RegExp("\\b" + w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).test(t)) s += 4;
-      else if (t.includes(w)) s += 2;
-      else if (o.includes(w)) s += 3;
-      else return -1;
-    }
-    return s;
-  }
-  const meta = i => [i.org, i.type, i.last ? (left(i.last) >= 0 ? "till " + fmt(i.last) : "closed") : fmt(i.posted)].filter(Boolean).join(" · ");
-  function palRender() {
-    const raw = pq.value.trim().toLowerCase(), terms = raw.split(/\s+/).filter(Boolean);
-    let html = "";
-    flat = [];
-    if (!terms.length) {
-      const recent = [...ITEMS].sort((a, b) => b.posted.localeCompare(a.posted)).slice(0, 6);
-      html += '<div class="pal-try">Try <button type="button" data-try="SSC">SSC</button><button type="button" data-try="result">result</button><button type="button" data-try="UGC NET">UGC NET</button><button type="button" data-try="teacher">teacher</button></div>';
-      html += '<div class="pal-group">Recent</div>';
-      recent.forEach(i => { flat.push(i); html += `<a class="pal-item" role="option" data-k="${flat.length - 1}" href="${i.url}" target="_blank" rel="noopener">${esc(i.title)}<span class="s">${esc(meta(i))}</span></a>`; });
-    } else {
-      const scored = ITEMS.map(i => ({ i, s: score(i, terms) })).filter(x => x.s >= 0)
-        .sort((a, b) => b.s - a.s || b.i.posted.localeCompare(a.i.posted));
-      // groups ordered by their best match
-      const order = [...new Set(scored.map(x => x.i.type))];
-      order.forEach(type => {
-        const label = (GROUPS.find(g => g[0] === type) || [type, type])[1];
-        html += `<div class="pal-group">${label}</div>`;
-        scored.filter(x => x.i.type === type).slice(0, 6).forEach(({ i }) => {
-          flat.push(i);
-          html += `<a class="pal-item" role="option" data-k="${flat.length - 1}" href="${i.url}" target="_blank" rel="noopener">${hl(i.title, terms)}<span class="s">${hl(meta(i), terms)}</span></a>`;
-        });
-      });
-      if (!flat.length) html = `<div class="pal-empty">Nothing found for “${esc(raw)}”. Try an organisation like SSC, or a word like result.</div>`;
-    }
-    plist.innerHTML = html;
-    sel = 0; mark();
-  }
-  function mark() {
-    plist.querySelectorAll(".pal-item").forEach(el => {
-      const on = Number(el.dataset.k) === sel;
-      el.setAttribute("aria-selected", String(on));
-      if (on) el.scrollIntoView({ block: "nearest" });
-    });
-  }
-  function openPal(prefill) {
-    back.hidden = false;
-    pq.value = prefill ?? document.getElementById("q").value;
-    palRender();
-    requestAnimationFrame(() => { back.classList.add("on"); pq.focus(); pq.select(); });
-  }
-  function closePal() {
-    back.classList.remove("on");
-    setTimeout(() => { back.hidden = true; }, 160);
-  }
-  pq.addEventListener("input", palRender);
-  document.getElementById("palClear").addEventListener("click", () => { pq.value = ""; palRender(); pq.focus(); });
-  plist.addEventListener("click", e => {
-    const t = e.target.closest("[data-try]");
-    if (t) { pq.value = t.dataset.try; palRender(); pq.focus(); }
-  });
-  plist.addEventListener("mousemove", e => { const it = e.target.closest(".pal-item"); if (it && Number(it.dataset.k) !== sel) { sel = Number(it.dataset.k); mark(); } });
-  back.addEventListener("click", e => { if (e.target === back) closePal(); });
-  pq.addEventListener("keydown", e => {
-    if (e.key === "ArrowDown") { e.preventDefault(); if (flat.length) { sel = (sel + 1) % flat.length; mark(); } }
-    else if (e.key === "ArrowUp") { e.preventDefault(); if (flat.length) { sel = (sel - 1 + flat.length) % flat.length; mark(); } }
-    else if (e.key === "Enter") { const el = plist.querySelector(`.pal-item[data-k="${sel}"]`); if (el) { e.preventDefault(); el.click(); } }
-    else if (e.key === "Escape") { e.preventDefault(); closePal(); }
-  });
-  document.addEventListener("keydown", e => {
-    const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName || "") || document.activeElement?.isContentEditable;
-    const isK = e.key === "k" || e.key === "K";
-    if (isK && (e.metaKey || e.ctrlKey)) { e.preventDefault(); back.hidden ? openPal("") : closePal(); return; }
-    if (isK && !typing && !e.altKey && back.hidden) { e.preventDefault(); openPal(""); }
-    if (e.key === "Escape" && !back.hidden) closePal();
-  });
+  // "Clear" appears only while there is text in the search line.
   const kHint = document.getElementById("kHint"), qIn = document.getElementById("q");
-  const syncHint = () => { kHint.textContent = qIn.value ? "Clear" : (matchMedia("(hover: none)").matches ? "" : "Press K"); };
-  kHint.addEventListener("click", e => {
-    e.preventDefault();
-    if (qIn.value) { qIn.value = ""; qIn.dispatchEvent(new Event("input")); qIn.focus(); } else openPal("");
-  });
+  const syncHint = () => { kHint.hidden = !qIn.value; };
+  kHint.addEventListener("click", e => { e.preventDefault(); qIn.value = ""; qIn.dispatchEvent(new Event("input")); qIn.focus(); });
   qIn.addEventListener("input", syncHint);
   syncHint();
+
+  // Start typing anywhere and the letters go straight into the search line.
+  document.addEventListener("keydown", e => {
+    const el = document.activeElement;
+    const inField = el && (/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName) || el.isContentEditable);
+    if (inField) {
+      if (e.key === "Escape" && el === qIn) { qIn.value = ""; qIn.dispatchEvent(new Event("input")); qIn.blur(); }
+      return;
+    }
+    if (e.ctrlKey || e.metaKey || e.altKey || e.key.length !== 1 || e.key === " ") return;
+    qIn.focus();   // the key press then lands in the search line
+  });
 })();
 </script>
 
