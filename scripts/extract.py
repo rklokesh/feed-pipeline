@@ -150,10 +150,10 @@ For each non-null key also give an "evidence" object mapping the key to the exac
 def _providers() -> list[dict]:
     out = []
     if os.environ.get("GEMINI_API_KEY"):
-        for model in os.environ.get("GEMINI_MODELS", "gemini-flash-latest,gemini-flash-lite-latest").split(","):
+        for model in os.environ.get("GEMINI_MODELS", "gemini-flash-lite-latest").split(","):
             out.append({"name": f"gemini/{model.strip()}", "key": os.environ["GEMINI_API_KEY"], "model": model.strip(),
                         "url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"})
-    if os.environ.get("GITHUB_TOKEN") and os.environ.get("AI_DISABLE_GITHUB") != "1":
+    if os.environ.get("GITHUB_TOKEN") and os.environ.get("AI_ENABLE_GITHUB") == "1":
         out.append({"name": "github-models", "url": "https://models.github.ai/inference/chat/completions",
                     "key": os.environ["GITHUB_TOKEN"], "model": os.environ.get("GITHUB_MODEL", "openai/gpt-4o-mini"),
                     "headers": {"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"}})
@@ -194,7 +194,7 @@ def ai_extract(text: str) -> tuple[dict, str]:
             body = {"model": p["model"], "temperature": 0, "response_format": {"type": "json_object"},
                     "messages": [{"role": "system", "content": AI_PROMPT},
                                  {"role": "user", "content": text[:14000]}]}
-            for wait in (0, 10, 30, 60):  # free tiers answer 429/503 when busy: wait and retry
+            for wait in (0, 15, 45):  # free tiers answer 429/503 when busy: wait and retry
                 if wait:
                     time.sleep(wait)
                 _throttle()
