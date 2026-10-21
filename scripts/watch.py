@@ -263,6 +263,8 @@ def main() -> int:
     ap.add_argument("--baseline-sample", type=int, default=int(os.environ.get("BASELINE_SAMPLE", "5")),
                     help="on a source's first run, mark all links seen but process this many newest as samples")
     ap.add_argument("--max-new", type=int, default=25, help="cap new notices processed per source per run")
+    ap.add_argument("--reextract", action="store_true",
+                    help="re-run extraction on pending notifications that are missing key fields")
     ap.add_argument("--ai-budget", type=int, default=int(os.environ.get("AI_BUDGET", "15")))
     a = ap.parse_args()
 
@@ -277,6 +279,18 @@ def main() -> int:
     ai_budget = [a.ai_budget]
     hashes = known_hashes()
     summary = []
+
+    if a.reextract:
+        by_id = {s["id"]: s for s in sources}
+        for fn in sorted(os.listdir(f"{DATA}/notices")):
+            rec = load(f"{DATA}/notices/{fn}", {})
+            src = by_id.get(rec.get("source_id"))
+            if src and rec.get("status") == "pending_review" and rec.get("kind") == "notification":
+                new_rec = process(src, {"url": rec["url"], "title": rec["title"]}, ai_budget, {})
+                new_rec["first_seen"] = rec["first_seen"]
+                save(f"{DATA}/notices/{fn}", new_rec)
+                summary.append(f"- re-extracted {rec['id']} ({src['org']}): ai={new_rec.get('extraction', {}).get('ai')}"[:200])
+        sources = []  # re-extract only
 
     for src in sources:
         h = health.setdefault(src["id"], {})

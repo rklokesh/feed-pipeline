@@ -9,6 +9,9 @@ on:
       only:
         description: "Optional: comma-separated source ids"
         default: ""
+      reextract:
+        description: "Re-run extraction on pending notices (true/false)"
+        default: "false"
 
 permissions:
   contents: write   # commit data/ back to the repo
@@ -39,6 +42,7 @@ jobs:
         run: |
           ARGS="--runner github"
           if [ -n "${{ inputs.only }}" ]; then ARGS="$ARGS --only ${{ inputs.only }}"; fi
+          if [ "${{ inputs.reextract }}" = "true" ]; then ARGS="$ARGS --reextract"; fi
           python scripts/watch.py $ARGS
       - name: Save data
         run: |

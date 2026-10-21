@@ -149,8 +149,12 @@ For each non-null key also give an "evidence" object mapping the key to the exac
 def _providers() -> list[dict]:
     out = []
     if os.environ.get("GITHUB_TOKEN") and os.environ.get("AI_DISABLE_GITHUB") != "1":
+        gh_headers = {"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"}
         out.append({"name": "github-models", "url": "https://models.github.ai/inference/chat/completions",
-                    "key": os.environ["GITHUB_TOKEN"], "model": os.environ.get("GITHUB_MODEL", "openai/gpt-4o-mini")})
+                    "key": os.environ["GITHUB_TOKEN"], "model": os.environ.get("GITHUB_MODEL", "openai/gpt-4o-mini"),
+                    "headers": gh_headers})
+        out.append({"name": "github-models-azure", "url": "https://models.inference.ai.azure.com/chat/completions",
+                    "key": os.environ["GITHUB_TOKEN"], "model": os.environ.get("GITHUB_MODEL_AZURE", "gpt-4o-mini")})
     if os.environ.get("GEMINI_API_KEY"):
         out.append({"name": "gemini", "url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
                     "key": os.environ["GEMINI_API_KEY"], "model": os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")})
@@ -176,7 +180,8 @@ def ai_extract(text: str) -> tuple[dict, str]:
     reasons = []
     for p in _providers():
         try:
-            r = requests.post(p["url"], timeout=90, headers={"Authorization": f"Bearer {p['key']}"}, json={
+            headers = {"Authorization": f"Bearer {p['key']}", "Content-Type": "application/json", **p.get("headers", {})}
+            r = requests.post(p["url"], timeout=90, headers=headers, json={
                 "model": p["model"], "temperature": 0, "response_format": {"type": "json_object"},
                 "messages": [{"role": "system", "content": AI_PROMPT},
                              {"role": "user", "content": text[:14000]}]})
