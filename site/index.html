@@ -16,15 +16,15 @@
 :root {
   --page: #FFFFFF;
   --ink: #1D1C1B;
-  --grey: #9C9890;
+  --grey: #76726B;
   --line: #E5E1D8;
   --soft: #F4F1EB;
   --font: "Helvetica Neue", Helvetica, Arial, system-ui, -apple-system, "Segoe UI", Roboto, "Kohinoor Devanagari", "Nirmala UI", "Noto Sans Devanagari", sans-serif;
 }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --page: #1C1B1A; --ink: #ECEAE4; --grey: #8E8A82; --line: #34322E; --soft: #262522; color-scheme: dark; }
+  :root:not([data-theme="light"]) { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; color-scheme: dark; }
 }
-:root[data-theme="dark"] { --page: #1C1B1A; --ink: #ECEAE4; --grey: #8E8A82; --line: #34322E; --soft: #262522; color-scheme: dark; }
+:root[data-theme="dark"] { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; color-scheme: dark; }
 
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
@@ -51,7 +51,7 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 .top button { all: unset; cursor: pointer; }
 .top button:hover { text-decoration: underline; text-underline-offset: 3px; }
 
-.row { display: grid; grid-template-columns: 5rem 1fr 7rem 6.5rem 5.5rem; gap: 0 16px; align-items: baseline; }
+.row { display: grid; grid-template-columns: 5rem 1fr 6.5rem 6.5rem 10.5rem; gap: 0 16px; align-items: baseline; }
 main { margin-top: 36px; flex: 1; }
 .head { color: var(--grey); padding-bottom: 4px; }
 .tabs { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: 14px; }
@@ -115,7 +115,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   .top > .g { font-size: 0.875rem; }
   .top .logo img { width: 88px; height: 88px; }
   .hide-sm { display: none; }
-  .row { grid-template-columns: 1fr 4.5rem; }
+  .row { grid-template-columns: 1fr 5.5rem; }
 }
 </style>
 </head>
@@ -184,6 +184,14 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   const left = iso => Math.ceil((new Date(iso + "T23:59:59") - TODAY) / 864e5);
   const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
+  // Last date: the date, then plain days left. Jobs with no date found say so; other notices have none.
+  function lastCell(i) {
+    if (i.type !== "Job") return "—";
+    if (!i.last) return "In notice";
+    const d = left(i.last);
+    const rest = d === 0 ? "today" : d === 1 ? "1 day left" : d + " days left";
+    return `${fmt(i.last)}<span class="hide-sm"> · ${rest}</span>`;
+  }
   let cat = "all", q = "";
   const words = i => [i.title, i.org, i.type].join(" ").toLowerCase();
   const qmatch = i => q.split(/\s+/).every(w => words(i).includes(w));
@@ -210,7 +218,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       b.classList.toggle("zero", !!q && n === 0);
     });
     document.getElementById("list").innerHTML = rows.map(i =>
-      `<li><a class="row" href="${i.url}" target="_blank" rel="noopener"><span class="num hide-sm">${fmt(i.posted)}</span><span class="t">${esc(i.title)}</span><span class="hide-sm g">${i.org}</span><span class="hide-sm g">${i.type}</span><span class="num">${i.last ? fmt(i.last) : "—"}</span></a></li>`
+      `<li><a class="row" href="${i.url}" target="_blank" rel="noopener"><span class="num hide-sm">${fmt(i.posted)}</span><span class="t">${esc(i.title)}</span><span class="hide-sm g">${i.org}</span><span class="hide-sm g">${i.type}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a></li>`
     ).join("") || (q ? `<li class="empty">Nothing matches "${esc(q)}". Try a shorter word, like an organisation name.</li>` : '<li class="empty">Nothing here right now. New notices appear as soon as they are published.</li>');
   }
   const list = document.getElementById("list");
