@@ -1,0 +1,38 @@
+name: Probe official sources
+
+# Step 1: run by hand from the Actions tab ("Run workflow").
+on:
+  workflow_dispatch:
+    inputs:
+      pdfs:
+        description: "PDFs to sample per source"
+        default: "3"
+      only:
+        description: "Optional: comma-separated source ids"
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python -m playwright install --with-deps chromium
+      - name: Probe
+        run: |
+          ARGS="--pdfs ${{ inputs.pdfs || '3' }} --render-js"
+          if [ -n "${{ inputs.only }}" ]; then ARGS="$ARGS --only ${{ inputs.only }}"; fi
+          python scripts/probe.py $ARGS
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: probe-results
+          path: out/
