@@ -34,6 +34,7 @@
 [hidden] { display: none !important; }
 /* tags: one small framed shape used for days left, the K shortcut and the chosen category */
 .tag { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.gap { display: inline-block; width: 14px; }
 .tag.calm { color: var(--calm); }
 .tag.warm { color: var(--warm); }
 .tag.hot { color: var(--hot); }
@@ -222,7 +223,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   function lastCell(i) {
     if (i.type !== "Job") return t("available");
     if (!i.last) return t("inNotice");
-    return `<span class="hide-sm">${fmt(i.last)} · ${daysTag(i.last)}</span><span class="show-sm">${daysTag(i.last, true)}</span>`;
+    return `<span class="hide-sm">${fmt(i.last)}<span class="gap"></span>${daysTag(i.last)}</span><span class="show-sm">${daysTag(i.last, true)}</span>`;
   }
   let cat = "all", q = "";
   // search matches English and Hindi words alike, whichever language is showing

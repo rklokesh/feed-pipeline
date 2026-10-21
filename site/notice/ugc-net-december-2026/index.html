@@ -29,6 +29,7 @@
 [hidden] { display: none !important; }
 /* tags: one small framed shape used for days left, the K shortcut and the chosen category */
 .tag { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.gap { display: inline-block; width: 14px; }
 .tag.calm { color: var(--calm); }
 .tag.warm { color: var(--warm); }
 .tag.hot { color: var(--hot); }
@@ -199,7 +200,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     if (d < 0) { document.getElementById("state").textContent = t("closed"); el.textContent = ""; }
     else {
       const cls = d <= 3 ? "hot" : d <= 7 ? "warm" : "calm";
-      el.innerHTML = t("lastDate") + '<span class="dl"> · <span class="tag ' + cls + '">' + (d === 0 ? t("lastDay") : t("daysLeft")(d)) + "</span></span>";
+      el.innerHTML = t("lastDate") + '<span class="dl"><span class="gap"></span><span class="tag ' + cls + '">' + (d === 0 ? t("lastDay") : t("daysLeft")(d)) + "</span></span>";
     }
     const btn = document.getElementById("lang");
     btn.textContent = t("switchTo"); btn.lang = t("switchLang");
