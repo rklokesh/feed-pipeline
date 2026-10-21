@@ -114,6 +114,9 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 .search input::-webkit-search-cancel-button, .search input::-webkit-search-decoration { -webkit-appearance: none; appearance: none; display: none; }
 .sx { position: absolute; right: 0; top: 50%; transform: translateY(-50%); all: unset; position: absolute; right: 0; top: 50%; transform: translateY(-50%); cursor: pointer; color: var(--grey); }
 .sx:hover { color: var(--ink); }
+.recent { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: -30px 0 22px; }
+.recent button { all: unset; cursor: pointer; color: var(--ink); }
+.recent button:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 
 
@@ -151,6 +154,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       <input id="q" type="search" placeholder="Search: SSC, UGC NET, 12th pass, Bihar…" autocomplete="off" data-t-ph="searchPh">
       <button type="button" class="sx" id="kHint" hidden data-t="clear">Clear</button>
     </label>
+    <div class="recent" id="recent" hidden></div>
     <p class="newline" id="newline" hidden></p>
     <div class="row head"><span class="hide-sm" data-t="hPosted">Posted</span><span data-t="hNotice">Notice</span><span class="hide-sm" data-t="hOrg">Organisation</span><span class="hide-sm" data-t="hType">Type</span><span data-t="hLast">Last date / status</span><span class="hide-sm" data-t="hPdf">PDF</span></div>
     <ul class="list" id="list"></ul>
@@ -169,7 +173,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     en: {
       title: "SarkariChart", brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", about: "About", show: "Show",
       all: "All", jobs: "Jobs", admits: "Admit cards", results: "Results", keys: "Answer keys",
-      searchLabel: "Search notices", searchPh: "Search: SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
+      searchLabel: "Search notices", recentLabel: "Recent:", searchPh: "Search: SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
       hPosted: "Posted", hNotice: "Notice", hOrg: "Organisation", hType: "Type", hLast: "Last date / status", hPdf: "PDF",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
       report: "Report a mistake", privacy: "Privacy", switchTo: "हिंदी", switchLang: "hi",
@@ -183,7 +187,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     hi: {
       title: "सरकारी चार्ट", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में", show: "दिखाएँ",
       all: "सभी", jobs: "नौकरियाँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की",
-      searchLabel: "सूचनाएँ खोजें", searchPh: "खोजें: एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
+      searchLabel: "सूचनाएँ खोजें", recentLabel: "हाल की खोजें:", searchPh: "खोजें: एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
       hPosted: "जारी", hNotice: "सूचना", hOrg: "संस्था", hType: "प्रकार", hLast: "अंतिम तिथि / स्थिति", hPdf: "पीडीएफ",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
       report: "गलती बताएँ", privacy: "गोपनीयता", switchTo: "अंग्रेज़ी", switchLang: "en",
@@ -268,8 +272,60 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   }
   let cat = "all", q = "";
   // search matches English and Hindi words alike, whichever language is showing
-  const words = i => [i.title, i.hi, i.org, ORG_HI[i.org] || "", i.type, T.hi[i.type]].join(" ").toLowerCase();
-  const qmatch = i => q.split(/\s+/).every(w => words(i).includes(w));
+  const words = i => [i.title, i.hi, i.org, ORG_HI[i.org] || "", i.type, T.hi[i.type], i.tags || ""].join(" ").toLowerCase();
+
+  // How people actually type: abbreviations, nicknames and Hindi spellings point to the same notices.
+  const SYN = [
+    ["railway", "rrb", "रेलवे", "rail"], ["bank", "ibps", "sbi", "बैंक"],
+    ["police", "constable", "capf", "पुलिस", "कांस्टेबल", "sipahi", "सिपाही"],
+    ["10th", "matric", "matriculation", "10वीं", "हाईस्कूल", "high school"],
+    ["12th", "10+2", "intermediate", "inter", "12वीं", "इंटर", "higher secondary", "उच्चतर माध्यमिक"],
+    ["teacher", "अध्यापक", "शिक्षक", "lecturer", "प्रवक्ता", "professor", "प्रोफ़ेसर"],
+    ["cgl", "combined graduate level"], ["chsl", "combined higher secondary"],
+    ["steno", "stenographer", "आशुलिपिक"], ["je", "junior engineer", "जूनियर इंजीनियर", "engineer", "इंजीनियर"],
+    ["net", "ugc net", "नेट", "यूजीसी"], ["gd", "general duty", "जीडी"],
+    ["result", "results", "रिज़ल्ट", "रिजल्ट", "परिणाम", "merit", "selected", "चयनित"],
+    ["admit", "admit card", "hall ticket", "एडमिट", "प्रवेश पत्र"],
+    ["answer key", "answer", "key", "आंसर", "उत्तर कुंजी", "response sheet", "उत्तर पत्रक"],
+    ["job", "jobs", "vacancy", "bharti", "भर्ती", "नौकरी", "recruitment"],
+    ["ssc", "एसएससी", "staff selection"], ["nta", "एनटीए"], ["uppsc", "यूपीपीएससी"], ["bpsc", "बीपीएससी", "bihar", "बिहार"],
+    ["up", "uttar pradesh", "उत्तर प्रदेश", "uppsc"],
+  ];
+  const expand = w => {
+    const out = new Set([w]);
+    for (const g of SYN) if (g.some(x => x === w || (w.length >= 3 && x.startsWith(w)))) g.forEach(x => out.add(x));
+    return [...out];
+  };
+  // Typos: allow 1 wrong letter in words of 4–6 letters, 2 in longer words.
+  function near(a, b, max) {
+    if (Math.abs(a.length - b.length) > max) return false;
+    const prev = Array.from({ length: b.length + 1 }, (_, k) => k);
+    for (let i = 1; i <= a.length; i++) {
+      const cur = [i];
+      let rowMin = i;
+      for (let j = 1; j <= b.length; j++) {
+        cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+        rowMin = Math.min(rowMin, cur[j]);
+      }
+      if (rowMin > max) return false;
+      prev.splice(0, prev.length, ...cur);
+    }
+    return prev[b.length] <= max;
+  }
+  const tokens = i => words(i).split(/[^\p{L}\p{N}+]+/u).filter(Boolean);
+  function wordHit(i, w) {
+    const text = words(i);
+    if (expand(w).some(x => text.includes(x))) return 2;          // exact or synonym
+    const max = w.length >= 7 ? 2 : w.length >= 4 ? 1 : 0;
+    if (max && tokens(i).some(tk => near(w, tk, max) || (tk.length > w.length && near(w, tk.slice(0, w.length), max)))) return 1;   // typo
+    return 0;
+  }
+  const qwords = () => q.split(/\s+/).filter(Boolean);
+  const qmatch = i => qwords().every(w => wordHit(i, w) > 0);
+  // Most useful first while searching: open jobs (closing soonest), admit cards, answer keys, results.
+  const TYPE_RANK = { "Job": 0, "Admit card": 2, "Answer key": 3, "Result": 4 };
+  const searchRank = i => (i.type === "Job" && !i.last ? 1 : TYPE_RANK[i.type] ?? 5);
+  const titleScore = i => { const tt = (i.title + " " + i.hi).toLowerCase(); return qwords().reduce((n, w) => n + (tt.startsWith(w) ? 3 : tt.includes(w) ? 2 : 0), 0); };
   const live = i => !i.last || left(i.last) >= 0;
   function setCat(c) {
     cat = c;
@@ -292,7 +348,8 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     // Jobs: closing soonest first (undated last). Everything else: newest first.
     const byClosing = (a, b) => (!a.last) - (!b.last) || (a.last || "").localeCompare(b.last || "") || b.posted.localeCompare(a.posted);
     const byNewest = (a, b) => b.posted.localeCompare(a.posted);
-    const rows = [...ITEMS].sort(cat === "Job" ? byClosing : byNewest).filter(i => live(i) && (cat === "all" || i.type === cat) && qmatch(i));
+    const bySearch = (a, b) => searchRank(a) - searchRank(b) || titleScore(b) - titleScore(a) || (a.last || "9").localeCompare(b.last || "9") || b.posted.localeCompare(a.posted);
+    const rows = [...ITEMS].sort(q ? bySearch : cat === "Job" ? byClosing : byNewest).filter(i => live(i) && (cat === "all" || i.type === cat) && qmatch(i));
     const hits = ITEMS.filter(i => live(i) && (!q || qmatch(i)));
     document.querySelectorAll(".tabs button").forEach(b => {
       const n = b.dataset.cat === "all" ? hits.length : hits.filter(i => i.type === b.dataset.cat).length;
@@ -330,13 +387,59 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     requestAnimationFrame(() => { render(); requestAnimationFrame(() => list.classList.remove("fade")); });
   }
   document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => { setCat(b.dataset.cat); update(); }));
+  // Shareable searches: ?q=ssc+gd opens with the search filled in; the address follows what you type.
+  let urlTimer, recentTimer;
+  function syncUrl() {
+    clearTimeout(urlTimer);
+    urlTimer = setTimeout(() => {
+      try {
+        const u = new URL(location.href);
+        if (q) u.searchParams.set("q", document.getElementById("q").value.trim()); else u.searchParams.delete("q");
+        history.replaceState(null, "", u);
+      } catch (e) {}
+    }, 400);
+  }
+  // Recent searches (this device only): saved once a search has results and you pause or open one.
+  const RECENT_KEY = "sc-recent";
+  const getRecent = () => { try { return JSON.parse(localStorage.getItem(RECENT_KEY) || "[]"); } catch (e) { return []; } };
+  function saveRecent(text) {
+    text = (text || "").trim();
+    if (text.length < 2) return;
+    const list = [text, ...getRecent().filter(x => x.toLowerCase() !== text.toLowerCase())].slice(0, 3);
+    try { localStorage.setItem(RECENT_KEY, JSON.stringify(list)); } catch (e) {}
+  }
+  const recentEl = document.getElementById("recent");
+  function showRecent() {
+    const r = getRecent();
+    const qv = document.getElementById("q").value;
+    recentEl.hidden = !!qv || !r.length || document.activeElement !== document.getElementById("q");
+    recentEl.innerHTML = `<span class="g">${t("recentLabel")}</span>` + r.map(x => `<button type="button" data-r="${esc(x)}">${esc(x)}</button>`).join("");
+  }
+  recentEl.addEventListener("mousedown", e => {
+    const b = e.target.closest("[data-r]");
+    if (!b) return;
+    e.preventDefault();
+    const qi = document.getElementById("q");
+    qi.value = b.dataset.r; qi.dispatchEvent(new Event("input")); qi.focus();
+  });
+  document.getElementById("q").addEventListener("focus", showRecent);
+  document.getElementById("q").addEventListener("blur", () => setTimeout(showRecent, 0));
+  list.addEventListener("click", e => { if (q && e.target.closest("a")) saveRecent(document.getElementById("q").value); });
+
   document.getElementById("q").addEventListener("input", e => {
     q = e.target.value.trim().toLowerCase();
     sel = -1;
     const before = cat;
     followSearch();
     if (cat !== before) update(); else render();
+    syncUrl(); showRecent();
+    clearTimeout(recentTimer);
+    if (q) recentTimer = setTimeout(() => { if (ITEMS.some(i => live(i) && qmatch(i))) saveRecent(e.target.value); }, 1500);
   });
+  try {
+    const startQ = new URL(location.href).searchParams.get("q");
+    if (startQ) { const qi = document.getElementById("q"); qi.value = startQ; q = startQ.trim().toLowerCase(); }
+  } catch (e) {}
   document.getElementById("lang").addEventListener("click", () => {
     lang = lang === "hi" ? "en" : "hi";
     try { localStorage.setItem("sc-lang", lang); } catch (e) {}
@@ -363,6 +466,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
         else if (e.key === "Enter" && n) {
           e.preventDefault();
           const row = rowsEls()[sel < 0 ? 0 : sel].querySelector("a.row");
+          saveRecent(qIn.value);
           if (row) row.click();
         }
         else if (e.key === "Escape") { qIn.value = ""; qIn.dispatchEvent(new Event("input")); qIn.blur(); }
