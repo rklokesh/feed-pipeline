@@ -86,12 +86,11 @@ main { margin-top: 36px; flex: 1; }
 .list li.lr { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr) 6.5rem 6.5rem 10rem 4.25rem; gap: 0 16px; align-items: baseline; padding: 5px 8px; }
 .list li.lr > a.row { display: contents; }
 .list .t { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.list li.lr:hover { background: var(--hover); }
-.list li.lr:hover .t { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.list li.lr:hover, .list li.lr.sel { background: var(--hover); }
+.list li.lr.sel .t, .list li.lr:hover .t { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .list .pdf { color: var(--ink); white-space: nowrap; }
 .list .pdf:hover { text-decoration: underline; text-underline-offset: 3px; }
-.list .pdf { display: inline-flex; align-items: center; gap: 5px; align-self: stretch; margin-block: -5px; padding: 5px 0 5px 14px; border-left: 1px solid var(--line); }
-.head > span:last-child { border-left: 1px solid var(--line); margin-block: -7px; padding: 7px 0 7px 14px; }
+.list .pdf { display: inline-flex; align-items: center; gap: 5px; align-self: center; }
 .list .pdf svg { flex: none; }
 .list a.row:hover { text-decoration: none; }
 .list a.row:hover .t { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
@@ -263,6 +262,14 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       `<li class="lr"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm">${fmt(i.posted)}</span><span class="t" title="${esc(title(i))}">${esc(title(i))}</span><span class="hide-sm g">${org(i)}</span><span class="hide-sm g">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
     ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
   }
+  // Keyboard: ↓ / ↑ move through the results while searching, Enter opens the highlighted one.
+  let sel = -1;
+  function rowsEls() { return [...document.querySelectorAll("#list li.lr")]; }
+  function markSel() {
+    rowsEls().forEach((li, k) => { li.classList.toggle("sel", k === sel); li.setAttribute("aria-selected", String(k === sel)); });
+    const el = rowsEls()[sel];
+    if (el) el.scrollIntoView({ block: "nearest" });
+  }
   function applyLang() {
     document.documentElement.lang = lang;
     document.title = t("title");
@@ -282,6 +289,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => { setCat(b.dataset.cat); update(); }));
   document.getElementById("q").addEventListener("input", e => {
     q = e.target.value.trim().toLowerCase();
+    sel = -1;
     const before = cat;
     followSearch();
     if (cat !== before) update(); else render();
@@ -305,7 +313,17 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     const el = document.activeElement;
     const inField = el && (/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName) || el.isContentEditable);
     if (inField) {
-      if (e.key === "Escape" && el === qIn) { qIn.value = ""; qIn.dispatchEvent(new Event("input")); qIn.blur(); }
+      if (el === qIn) {
+        const n = rowsEls().length;
+        if (e.key === "ArrowDown" && n) { e.preventDefault(); sel = Math.min(sel + 1, n - 1); markSel(); }
+        else if (e.key === "ArrowUp" && n) { e.preventDefault(); sel = Math.max(sel - 1, 0); markSel(); }
+        else if (e.key === "Enter" && n) {
+          e.preventDefault();
+          const row = rowsEls()[sel < 0 ? 0 : sel].querySelector("a.row");
+          if (row) row.click();
+        }
+        else if (e.key === "Escape") { qIn.value = ""; qIn.dispatchEvent(new Event("input")); qIn.blur(); }
+      }
       return;
     }
     if (e.ctrlKey || e.metaKey || e.altKey || e.key.length !== 1 || e.key === " ") return;
