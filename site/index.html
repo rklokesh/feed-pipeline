@@ -88,7 +88,8 @@ main { margin-top: 36px; flex: 1; }
 .list li.lr:hover .t { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .list .pdf { color: var(--ink); white-space: nowrap; }
 .list .pdf:hover { text-decoration: underline; text-underline-offset: 3px; }
-.list .pdf svg { vertical-align: -2px; margin-right: 4px; }
+.list .pdf { display: inline-flex; align-items: center; gap: 5px; align-self: center; }
+.list .pdf svg { flex: none; }
 .list a.row:hover { text-decoration: none; }
 .list a.row:hover .t { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .right { text-align: right; }
@@ -241,6 +242,8 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   }
   // PDF = a printable copy of OUR notice page (made automatically when the site is published), in the language being viewed.
   const pdfOf = i => i.page ? `${i.url}sarkarichart-${i.url.split("/").filter(Boolean).pop()}-${lang}.pdf` : "";
+  // generic PDF file icon (red outlined page, folded corner)
+  const PDFICON = '<svg class="pdfi" width="19" height="23" viewBox="0 0 34 41" aria-hidden="true"><path d="M3 3h19.5L31 11.5V38H3z" fill="#F6F4F1" stroke="#E2231A" stroke-width="3" stroke-linejoin="round"/><path d="M22.5 3v8.5H31" fill="none" stroke="#E2231A" stroke-width="3" stroke-linejoin="round"/><text x="17" y="31.5" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#2B2B2B">PDF</text></svg>';
   const DL = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>';
   function render() {
     // Jobs: closing soonest first (undated last). Everything else: newest first.
@@ -254,7 +257,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       b.classList.toggle("zero", !!q && n === 0);
     });
     document.getElementById("list").innerHTML = rows.map(i =>
-      `<li class="lr"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm">${fmt(i.posted)}</span><span class="t">${esc(title(i))}</span><span class="hide-sm g">${org(i)}</span><span class="hide-sm g">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}<span>${t("pdf")}</span></a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
+      `<li class="lr"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm">${fmt(i.posted)}</span><span class="t">${esc(title(i))}</span><span class="hide-sm g">${org(i)}</span><span class="hide-sm g">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
     ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
   }
   function applyLang() {
