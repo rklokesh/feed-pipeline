@@ -14,6 +14,7 @@ import re
 import shutil
 import subprocess
 import tempfile
+import time
 from datetime import date
 
 import requests
@@ -149,13 +150,25 @@ For each non-null key also give an "evidence" object mapping the key to the exac
 def _providers() -> list[dict]:
     out = []
     if os.environ.get("GEMINI_API_KEY"):
-        out.append({"name": "gemini", "url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
-                    "key": os.environ["GEMINI_API_KEY"], "model": os.environ.get("GEMINI_MODEL", "gemini-flash-latest")})
+        for model in os.environ.get("GEMINI_MODELS", "gemini-flash-latest,gemini-flash-lite-latest").split(","):
+            out.append({"name": f"gemini/{model.strip()}", "key": os.environ["GEMINI_API_KEY"], "model": model.strip(),
+                        "url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"})
     if os.environ.get("GITHUB_TOKEN") and os.environ.get("AI_DISABLE_GITHUB") != "1":
         out.append({"name": "github-models", "url": "https://models.github.ai/inference/chat/completions",
                     "key": os.environ["GITHUB_TOKEN"], "model": os.environ.get("GITHUB_MODEL", "openai/gpt-4o-mini"),
                     "headers": {"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"}})
     return out
+
+
+_last_call = [0.0]
+
+
+def _throttle(min_gap: float = float(os.environ.get("AI_MIN_GAP", "7"))):
+    """Free tiers allow only a few requests per minute: keep calls spaced out."""
+    gap = time.time() - _last_call[0]
+    if gap < min_gap:
+        time.sleep(min_gap - gap)
+    _last_call[0] = time.time()
 
 
 def _json_from(content: str) -> dict:
@@ -178,10 +191,16 @@ def ai_extract(text: str) -> tuple[dict, str]:
     for p in _providers():
         try:
             headers = {"Authorization": f"Bearer {p['key']}", "Content-Type": "application/json", **p.get("headers", {})}
-            r = requests.post(p["url"], timeout=90, headers=headers, json={
-                "model": p["model"], "temperature": 0, "response_format": {"type": "json_object"},
-                "messages": [{"role": "system", "content": AI_PROMPT},
-                             {"role": "user", "content": text[:14000]}]})
+            body = {"model": p["model"], "temperature": 0, "response_format": {"type": "json_object"},
+                    "messages": [{"role": "system", "content": AI_PROMPT},
+                                 {"role": "user", "content": text[:14000]}]}
+            for wait in (0, 10, 30, 60):  # free tiers answer 429/503 when busy: wait and retry
+                if wait:
+                    time.sleep(wait)
+                _throttle()
+                r = requests.post(p["url"], timeout=90, headers=headers, json=body)
+                if r.status_code not in (429, 500, 502, 503):
+                    break
             if r.status_code != 200:
                 reasons.append(f"{p['name']}:{r.status_code}")
                 continue
