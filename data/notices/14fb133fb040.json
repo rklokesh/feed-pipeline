@@ -1,0 +1,22 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://bpsc.bihar.gov.in/",
+  "extraction": {
+    "ai": "github-models:bad-response:'OK\\r\\n'"
+  },
+  "fields": {},
+  "first_seen": "2026-10-21T19:45:45+00:00",
+  "id": "14fb133fb040",
+  "kind": "notification",
+  "org": "BPSC",
+  "pdf": {
+    "bytes": 253009,
+    "pages": 1,
+    "sha256": "6cac8812645c7abf8070233618673341fcde4872a4486a21b5b88bfe243a9464",
+    "text_kind": "ocr"
+  },
+  "source_id": "bpsc-home",
+  "status": "pending_review",
+  "title": "Important Notices :- Regarding raising dispute for refund/chargeback of unsuccessful/pending/failed transactions .",
+  "url": "https://bpsc.bihar.gov.in/wp-content/uploads/2025/04/NB-2024-04-29-01.pdf"
+}

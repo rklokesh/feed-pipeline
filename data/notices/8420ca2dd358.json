@@ -1,0 +1,22 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://ssc.gov.in/home/notice-board",
+  "extraction": {
+    "ai": "github-models:bad-response:'OK\\r\\n'"
+  },
+  "fields": {},
+  "first_seen": "2026-10-21T19:45:45+00:00",
+  "id": "8420ca2dd358",
+  "kind": "notification",
+  "org": "SSC",
+  "pdf": {
+    "bytes": 62755,
+    "pages": 1,
+    "sha256": "84f9c79be72de91f7351b6b724b57bd0818593f67c85568401cf6fb93f5918aa",
+    "text_kind": "text"
+  },
+  "source_id": "ssc-notice-board",
+  "status": "pending_review",
+  "title": "Tentative Vacancies of Junior Engineer Examination, 2026.",
+  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/JE_Tentative_Vacancy_08102026.pdf"
+}

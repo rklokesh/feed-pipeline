@@ -1,0 +1,50 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://nta.ac.in/",
+  "extraction": {
+    "ai": "github-models:bad-response:'OK\\r\\n'"
+  },
+  "fields": {
+    "admit_card": {
+      "evidence": "ouncement of Exam City To be Intimated later Downloading of Admit Card To be Intimated later Date of Examination 14 December 2026 to 19 December 2026 Centre, Date and Shift As indicated on Admit Card Display of",
+      "source": "rule",
+      "value": "2026-12-14"
+    },
+    "apply_last": {
+      "evidence": "Form 08 October 2026 to 28 October 2026 (up to 11:50 P.M.) Last date for submission of Examination fee 28 October 2026 (through Credit Card/ Debit Card/Net Banking /UPI (up to 11:50 P.M.) Late Submission of online applicati",
+      "source": "rule",
+      "value": "2026-10-28"
+    },
+    "apply_or_official_url": {
+      "evidence": "Answer Key(s) To be announced later on the website Website https://ugcnet.nta.nic.in / www.nta.ac.in Application Fee General/ Unreserved Rs. 1150/- General-EWS/OBC-",
+      "source": "rule",
+      "value": "https://ugcnet.nta.nic.in"
+    },
+    "exam_date": {
+      "evidence": "mated later Downloading of Admit Card To be Intimated later Date of Examination 14 December 2026 to 19 December 2026 Centre, Date and Shift As indicated on Admit Card Display of Recorded Responses and Answer Key(s) To b",
+      "source": "rule",
+      "value": "2026-12-14"
+    },
+    "fee_amounts": {
+      "evidence": "(up to 11:50 P.M.) Last date for submission of Examination fee 28 October 2026 (through Credit Card/ Debit Card/Net Banking /UPI (up to 11:50 P.M.) Late Submission of online application Form with Late Fee Rs. 500/- Late Submission of online application Form 29 October 2026 to 31 October 2026 (up to 11:50 P.M.) Last Date of Successful Tra",
+      "source": "rule",
+      "value": [
+        500
+      ]
+    }
+  },
+  "first_seen": "2026-10-21T19:45:45+00:00",
+  "id": "60256803a1b7",
+  "kind": "notification",
+  "org": "NTA",
+  "pdf": {
+    "bytes": 380301,
+    "pages": 2,
+    "sha256": "529c3aa37d4af6b420fb1297c2f83b01659ba76246f6671607b669277c77d5fd",
+    "text_kind": "text"
+  },
+  "source_id": "nta-home",
+  "status": "pending_review",
+  "title": "Opening of the online registration portal for submission of Online Application Form for UGC-NET December 2026 examination – reg Read More",
+  "url": "https://nta.ac.in/Download/Notice/Notice_20261008212430.pdf"
+}

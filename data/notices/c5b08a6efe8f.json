@@ -1,0 +1,28 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://uppsc.up.nic.in/",
+  "extraction": {
+    "ai": "github-models:bad-response:'OK\\r\\n'"
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "cic) 3i)1ici c TT1t I 2— l41c1 TTfft '4T jj.jt44 '14II 31Tr https://uppsc.up.nic.in 1ii —16.10.2026 *ft 3I 3T 30031T0 9ii uiici '9T DISTRICT INFORMATION SLI P 5t .",
+      "source": "rule",
+      "value": "https://uppsc.up.nic.in"
+    }
+  },
+  "first_seen": "2026-10-21T19:45:45+00:00",
+  "id": "c5b08a6efe8f",
+  "kind": "notification",
+  "org": "UPPSC",
+  "pdf": {
+    "bytes": 971393,
+    "pages": 1,
+    "sha256": "ee9381fbf7373ddad2821f074c97a73dcfd10501d534e0e6dd28b636b8f9cc82",
+    "text_kind": "text"
+  },
+  "source_id": "uppsc-home",
+  "status": "pending_review",
+  "title": "5. NOTICE REGARDING DISTRICT INFORMATION SLIP FOR ADVT. NO:- D-6/E-1/2025 VETTING O.. Visible upto : 26/10/2026",
+  "url": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmbO3OUZentgjJg+um+MX8d"
+}

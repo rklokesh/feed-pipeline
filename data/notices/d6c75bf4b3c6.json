@@ -1,0 +1,28 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://uppsc.up.nic.in/",
+  "extraction": {
+    "ai": "github-models:bad-response:'OK\\r\\n'"
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "2— 1l1lc1 -41T 3T1 '-1IT Ci-c'1 ''I1c 1 *ii 31TZñT c C'611I https://uppsc.up.nic.in ti 1-iici 19.10.2026 '34e1 *ft I 3PT~ &trt 3t0o3TR0 T12I cIiRi M1lc1 DISTRICT I",
+      "source": "rule",
+      "value": "https://uppsc.up.nic.in"
+    }
+  },
+  "first_seen": "2026-10-21T19:45:45+00:00",
+  "id": "d6c75bf4b3c6",
+  "kind": "notification",
+  "org": "UPPSC",
+  "pdf": {
+    "bytes": 571689,
+    "pages": 1,
+    "sha256": "84dd18255f05c54ad848ebbc4389aa8932faec09776a570f36eb0f806cc766f8",
+    "text_kind": "text"
+  },
+  "source_id": "uppsc-home",
+  "status": "pending_review",
+  "title": "2. NOTICE REGARDING DISTRICT INFORMATION SLIP FOR ADVT. NO:- D-6/E-1/2025, DENTAL S.. Visible upto : 28/10/2026",
+  "url": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmzNJIRVKnDR5BHS7ZpRn4S"
+}

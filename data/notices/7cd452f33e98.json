@@ -1,0 +1,28 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://uppsc.up.nic.in/",
+  "extraction": {
+    "ai": "github-models:bad-response:'OK\\r\\n'"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "AGRAJ DATA PROCESSING CENTRE LIST OF SELECTED CANDIDATES IN ADVT. NO. A-7/E-1/2021, U.P. TECHNICAL EDUCATION (TEACHING) SERVICE EXAMINATION-2021 PAGE 1 of 1 POST",
+      "source": "rule",
+      "value": "A-7/E-1/2021"
+    }
+  },
+  "first_seen": "2026-10-21T19:45:45+00:00",
+  "id": "7cd452f33e98",
+  "kind": "notification",
+  "org": "UPPSC",
+  "pdf": {
+    "bytes": 205861,
+    "pages": 2,
+    "sha256": "832696eb4606941f85b37370fe85c8176a6f25c7ecf4b7dadfdb8a5e69474a84",
+    "text_kind": "text"
+  },
+  "source_id": "uppsc-home",
+  "status": "pending_review",
+  "title": "4. NOTICE REGARDING ADVT. NO. A-7/E-1/2021, U.P. TECHNICAL EDUCATION (TEACHING) SER.. Visible upto : 16/11/2026",
+  "url": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmbO3OUZentgoWo8RkhUpnV"
+}

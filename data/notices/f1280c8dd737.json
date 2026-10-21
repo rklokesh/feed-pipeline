@@ -1,0 +1,28 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://ssc.gov.in/home/notice-board",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "e also been made available on the Commission’s website i.e. https://ssc.gov.in from 07.10.2026 (06:00PM) to 06.11.2026 (06:00PM) which can be accessed by the",
+      "source": "rule",
+      "value": "https://ssc.gov.in"
+    }
+  },
+  "first_seen": "2026-10-21T19:45:45+00:00",
+  "id": "f1280c8dd737",
+  "kind": "result",
+  "org": "SSC",
+  "pdf": {
+    "bytes": 437547,
+    "pages": 1,
+    "sha256": "14b45008292bc907063f5be90fb6f880789fa593bef72c12e04e4b8bea8538ff",
+    "text_kind": "text"
+  },
+  "source_id": "ssc-notice-board",
+  "status": "pending_review",
+  "title": "Stenographer Grade 'C' and 'D' Examination, 2025: Uploading Marks of CBE and Skill Test",
+  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Final_Marks_Writeup_07102026.pdf"
+}

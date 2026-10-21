@@ -1,0 +1,28 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://ssc.gov.in/home/notice-board",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "F). Candidates are advised to visit the CRPF website (i.e., https://rect.crpf.gov.in ) for further information. 17. Representations received from the candidates wit",
+      "source": "rule",
+      "value": "https://rect.crpf.gov.in"
+    }
+  },
+  "first_seen": "2026-10-21T19:45:45+00:00",
+  "id": "33cb1c81cd7a",
+  "kind": "other",
+  "org": "SSC",
+  "pdf": {
+    "bytes": 1262226,
+    "pages": 18,
+    "sha256": "183097592d6b0c8408d6c23dbddede8c44835d2f42daea46f972677ca932bdf4",
+    "text_kind": "text"
+  },
+  "source_id": "ssc-notice-board",
+  "status": "pending_review",
+  "title": "Constable (GD) in Central Armed Police Forces (CAPFs) and SSF, and Rifleman (GD) in Assam Rifles Examination, 2026– Shortlisting of candidates to appear in Physical Efficiency Test (PET)/Physical Standard Test (PST)",
+  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_12102026.pdf"
+}
