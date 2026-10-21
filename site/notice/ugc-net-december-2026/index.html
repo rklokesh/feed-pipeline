@@ -69,6 +69,14 @@ h1 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; text-wrap: b
 
 .note { display: grid; gap: 4px; max-width: 40rem; }
 
+@media print {
+  body { padding: 0; }
+  .sheet { min-height: 0; padding-block: 0; }
+  .nav-r, .note p:last-child, .status .dl { display: none; }
+  .top .logo img { width: 72px; height: 72px; }
+  .kv .r { break-inside: avoid; }
+  a { text-decoration: none; }
+}
 footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-align: center; justify-items: center; }
 
 @media (max-width: 640px) {
@@ -84,70 +92,123 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 
 <div class="sheet">
   <header class="top">
-    <span class="g">Govt jobs, exams, results</span>
-    <a class="logo" href="/" aria-label="SarkariChart home"><img src="/logo-256.png" width="112" height="112" alt="SarkariChart"></a>
-    <span class="nav-r"><a href="#">About</a><button type="button" id="lang">हिंदी</button></span>
+    <span class="g" data-t="tagline">Govt jobs, exams, results</span>
+    <a class="logo" href="/" data-t-aria="home"><img src="/logo-256.png" width="112" height="112" alt="SarkariChart" data-t-alt="brand"></a>
+    <span class="nav-r"><a href="#" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button></span>
   </header>
 
   <main>
     <div class="title">
-      <p class="crumb"><a href="/">All notices</a> / Jobs / NTA</p>
-      <h1>UGC NET December 2026</h1>
-      <p class="status"><span>Applications open</span><span id="left">Last date 28 Oct 2026</span></p>
+      <p class="crumb"><a href="/" data-t="allNotices">All notices</a> / <span data-t="jobs">Jobs</span> / <span data-t="nta">NTA</span></p>
+      <h1 data-t="h1">UGC NET December 2026</h1>
+      <p class="status"><span id="state" data-t="open">Applications open</span><span id="left"></span></p>
     </div>
 
-    <section class="kv" aria-label="Key details">
-      <div class="h">Key details</div>
-      <div class="r"><span>Conducted by</span><span class="v">National Testing Agency (NTA)</span></div>
-      <div class="r"><span>Apply online</span><span class="v num">8 Oct 2026 to 28 Oct 2026</span></div>
-      <div class="r"><span>Exam dates</span><span class="v">As given in the official notice</span></div>
-      <div class="r"><span>Apply for</span><span class="v">Junior Research Fellowship and Assistant Professor<small>or Assistant Professor and admission to Ph.D.</small><small>or admission to Ph.D. only</small></span></div>
-      <div class="r"><span>Eligibility and age</span><span class="v">As given in the official notice</span></div>
+    <section class="kv" data-t-aria="key">
+      <div class="h" data-t="key">Key details</div>
+      <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">National Testing Agency (NTA)</span></div>
+      <div class="r"><span data-t="apply">Apply online</span><span class="v num" data-t="applyV">8 Oct 2026 to 28 Oct 2026</span></div>
+      <div class="r"><span data-t="examDates">Exam dates</span><span class="v" data-t="asNotice">As given in the official notice</span></div>
+      <div class="r"><span data-t="applyFor">Apply for</span><span class="v"><span data-t="af1">Junior Research Fellowship and Assistant Professor</span><small data-t="af2">or Assistant Professor and admission to Ph.D.</small><small data-t="af3">or admission to Ph.D. only</small></span></div>
+      <div class="r"><span data-t="elig">Eligibility and age</span><span class="v" data-t="asNotice">As given in the official notice</span></div>
     </section>
 
-    <section class="kv" aria-label="Application fee">
-      <div class="h">Application fee</div>
-      <div class="r"><span>General</span><span class="v num">₹1,150</span></div>
-      <div class="r"><span>OBC</span><span class="v num">₹600</span></div>
-      <div class="r"><span>SC / ST</span><span class="v num">₹325</span></div>
-      <div class="r"><span>Persons with disability</span><span class="v num">₹325</span></div>
+    <section class="kv" data-t-aria="fee">
+      <div class="h" data-t="fee">Application fee</div>
+      <div class="r"><span data-t="gen">General</span><span class="v num">₹1,150</span></div>
+      <div class="r"><span data-t="obc">OBC</span><span class="v num">₹600</span></div>
+      <div class="r"><span data-t="scst">SC / ST</span><span class="v num">₹325</span></div>
+      <div class="r"><span data-t="pwd">Persons with disability</span><span class="v num">₹325</span></div>
     </section>
 
-    <section class="kv" aria-label="Updates">
-      <div class="h">Updates for this exam</div>
-      <a class="r" href="https://nta.ac.in/Download/Notice/Notice_20261008212430.pdf" target="_blank" rel="noopener"><span class="num">8 Oct 2026</span><span class="v">Notification published, registration opens</span></a>
-      <a class="r" href="https://nta.ac.in" target="_blank" rel="noopener"><span class="num">16 Oct 2026</span><span class="v">Corrigendum to the information bulletin</span></a>
+    <section class="kv" data-t-aria="updates">
+      <div class="h" data-t="updates">Updates for this exam</div>
+      <a class="r" href="https://nta.ac.in/Download/Notice/Notice_20261008212430.pdf" target="_blank" rel="noopener"><span class="num" data-d="2026-10-08"></span><span class="v" data-t="u1">Notification published, registration opens</span></a>
+      <a class="r" href="http://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2026/10/202610161905649093.pdf" target="_blank" rel="noopener"><span class="num" data-d="2026-10-16"></span><span class="v" data-t="u2">Corrigendum to the information bulletin</span></a>
     </section>
 
-    <section class="kv" aria-label="Official links">
-      <div class="h">Official links</div>
-      <a class="r" href="https://nta.ac.in/Download/Notice/Notice_20261008212430.pdf" target="_blank" rel="noopener"><span>Official notice</span><span class="v">PDF on nta.ac.in</span></a>
-      <a class="r" href="https://ugcnet.nta.nic.in" target="_blank" rel="noopener"><span>Apply online</span><span class="v">ugcnet.nta.nic.in</span></a>
-      <a class="r" href="https://nta.ac.in" target="_blank" rel="noopener"><span>Official website</span><span class="v">nta.ac.in</span></a>
+    <section class="kv" data-t-aria="links">
+      <div class="h" data-t="links">Official links</div>
+      <a class="r" href="https://nta.ac.in/Download/Notice/Notice_20261008212430.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v" data-t="lNoticeV">PDF on nta.ac.in</span></a>
+      <a class="r" href="https://ugcnet.nta.nic.in" target="_blank" rel="noopener"><span data-t="apply">Apply online</span><span class="v" data-t="lApplyV">ugcnet.nta.nic.in</span></a>
+      <a class="r" href="https://nta.ac.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v" data-t="lSiteV">nta.ac.in</span></a>
     </section>
 
     <div class="note">
-      <p class="g">Details are taken from the official notice. Checked on 22 Oct 2026. If anything here differs from the official notice, the official notice is correct.</p>
-      <p><a href="#">Report a mistake on this page</a></p>
+      <p class="g" data-t="checked">Details are taken from the official notice. Checked on 22 Oct 2026. If anything here differs from the official notice, the official notice is correct.</p>
+      <p><a id="dlPdf" href="#" download data-t="dlPdf">Download this page as PDF</a> · <a href="#" data-t="reportPage">Report a mistake on this page</a></p>
     </div>
   </main>
 
   <footer>
-    <p class="g">SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.</p>
-    <p><a href="#">About</a> · <a href="#">Report a mistake</a> · <a href="#">Privacy</a></p>
+    <p class="g" data-t="disclaimer">SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.</p>
+    <p><a href="#" data-t="about">About</a> · <a href="#" data-t="report">Report a mistake</a> · <a href="#" data-t="privacy">Privacy</a></p>
   </footer>
 </div>
 
 <script>
 (() => {
+  const T = {
+    en: {
+      title: "UGC NET December 2026", brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", about: "About",
+      allNotices: "All notices", jobs: "Jobs", nta: "NTA", h1: "UGC NET December 2026", open: "Applications open", closed: "Applications closed",
+      key: "Key details", by: "Conducted by", byV: "National Testing Agency (NTA)", apply: "Apply online", applyV: "8 Oct 2026 to 28 Oct 2026",
+      examDates: "Exam dates", asNotice: "As given in the official notice", applyFor: "Apply for",
+      af1: "Junior Research Fellowship and Assistant Professor", af2: "or Assistant Professor and admission to Ph.D.", af3: "or admission to Ph.D. only",
+      elig: "Eligibility and age", fee: "Application fee", gen: "General", obc: "OBC", scst: "SC / ST", pwd: "Persons with disability",
+      updates: "Updates for this exam", u1: "Notification published, registration opens", u2: "Corrigendum to the information bulletin",
+      links: "Official links", lNotice: "Official notice", lNoticeV: "PDF on nta.ac.in", lApplyV: "ugcnet.nta.nic.in", lSite: "Official website", lSiteV: "nta.ac.in",
+      checked: "Details are taken from the official notice. Checked on 22 Oct 2026. If anything here differs from the official notice, the official notice is correct.",
+      reportPage: "Report a mistake on this page", dlPdf: "Download this page as PDF",
+      disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
+      report: "Report a mistake", privacy: "Privacy", switchTo: "हिंदी", switchLang: "hi",
+      lastDate: "Last date 28 Oct 2026", lastDay: "Last day", daysLeft: d => `${d} day${d === 1 ? "" : "s"} left`, locale: "en-IN",
+    },
+    hi: {
+      title: "यूजीसी नेट दिसंबर 2026", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
+      allNotices: "सभी सूचनाएँ", jobs: "नौकरियाँ", nta: "एनटीए", h1: "यूजीसी नेट दिसंबर 2026", open: "आवेदन जारी हैं", closed: "आवेदन बंद हो चुके हैं",
+      key: "मुख्य जानकारी", by: "आयोजक", byV: "राष्ट्रीय परीक्षा एजेंसी (एनटीए)", apply: "ऑनलाइन आवेदन", applyV: "8 अक्तूबर 2026 से 28 अक्तूबर 2026",
+      examDates: "परीक्षा तिथियाँ", asNotice: "आधिकारिक सूचना के अनुसार", applyFor: "किसके लिए आवेदन",
+      af1: "जूनियर रिसर्च फ़ेलोशिप और सहायक प्रोफ़ेसर", af2: "या सहायक प्रोफ़ेसर और पीएच.डी. में प्रवेश", af3: "या केवल पीएच.डी. में प्रवेश",
+      elig: "पात्रता और आयु", fee: "आवेदन शुल्क", gen: "सामान्य", obc: "अन्य पिछड़ा वर्ग", scst: "अनुसूचित जाति / जनजाति", pwd: "दिव्यांगजन",
+      updates: "इस परीक्षा की अपडेट", u1: "अधिसूचना जारी, पंजीकरण शुरू", u2: "सूचना बुलेटिन में शुद्धिपत्र",
+      links: "आधिकारिक लिंक", lNotice: "आधिकारिक सूचना", lNoticeV: "एनटीए वेबसाइट पर पीडीएफ", lApplyV: "यूजीसी नेट आवेदन पोर्टल", lSite: "आधिकारिक वेबसाइट", lSiteV: "एनटीए वेबसाइट",
+      checked: "यह जानकारी आधिकारिक सूचना से ली गई है। 22 अक्तूबर 2026 को जाँची गई। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
+      reportPage: "इस पेज पर गलती बताएँ", dlPdf: "यह पेज पीडीएफ में डाउनलोड करें",
+      disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
+      report: "गलती बताएँ", privacy: "गोपनीयता", switchTo: "अंग्रेज़ी", switchLang: "en",
+      lastDate: "अंतिम तिथि 28 अक्तूबर 2026", lastDay: "आज अंतिम दिन", daysLeft: d => `${d} दिन बाकी`, locale: "hi-IN",
+    },
+  };
+  let lang = "en";
+  try { if (localStorage.getItem("sc-lang") === "hi") lang = "hi"; } catch (e) {}
+  const t = k => T[lang][k];
   const last = new Date("2026-10-28T23:59:59");
-  const d = Math.ceil((last - new Date()) / 864e5);
-  const el = document.getElementById("left");
-  if (d < 0) { el.previousElementSibling.textContent = "Applications closed"; }
-  else {
-    const cls = d <= 3 ? "hot" : d <= 7 ? "warm" : "calm";
-    el.innerHTML = 'Last date 28 Oct 2026 · <span class="tag ' + cls + '">' + (d === 0 ? "Last day" : d === 1 ? "1 day left" : d + " days left") + "</span>";
+
+  function apply() {
+    document.documentElement.lang = lang;
+    document.title = t("title");
+    document.querySelectorAll("[data-t]").forEach(el => el.textContent = t(el.dataset.t));
+    document.querySelectorAll("[data-t-aria]").forEach(el => el.setAttribute("aria-label", t(el.dataset.tAria)));
+    document.querySelectorAll("[data-t-alt]").forEach(el => el.alt = t(el.dataset.tAlt));
+    document.querySelectorAll("[data-d]").forEach(el => el.textContent = new Date(el.dataset.d + "T00:00:00").toLocaleDateString(t("locale"), { day: "numeric", month: "short", year: "numeric" }));
+    const d = Math.ceil((last - new Date()) / 864e5);
+    const el = document.getElementById("left");
+    if (d < 0) { document.getElementById("state").textContent = t("closed"); el.textContent = ""; }
+    else {
+      const cls = d <= 3 ? "hot" : d <= 7 ? "warm" : "calm";
+      el.innerHTML = t("lastDate") + '<span class="dl"> · <span class="tag ' + cls + '">' + (d === 0 ? t("lastDay") : t("daysLeft")(d)) + "</span></span>";
+    }
+    const btn = document.getElementById("lang");
+    btn.textContent = t("switchTo"); btn.lang = t("switchLang");
+    document.getElementById("dlPdf").href = "/notice/ugc-net-december-2026/sarkarichart-ugc-net-december-2026-" + lang + ".pdf";
   }
+  document.getElementById("lang").addEventListener("click", () => {
+    lang = lang === "hi" ? "en" : "hi";
+    try { localStorage.setItem("sc-lang", lang); } catch (e) {}
+    apply();
+  });
+  apply();
 })();
 </script>
 

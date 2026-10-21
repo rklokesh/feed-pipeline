@@ -1,10 +1,10 @@
 name: Deploy site
 
-# Publishes site/ to Cloudflare Pages (sarkarichart.pages.dev).
+# Builds PDF copies of every notice page, then publishes site/ to Cloudflare Pages.
 on:
   push:
     branches: [main]
-    paths: ["site/**", ".github/workflows/deploy.yml"]
+    paths: ["site/**", "scripts/make_pdfs.mjs", ".github/workflows/deploy.yml"]
   workflow_dispatch:
 
 permissions:
@@ -17,7 +17,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -26,6 +26,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+      - name: Install PDF printer
+        run: |
+          npm i --no-save playwright@1.48.0
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y -qq fonts-noto-core fonts-noto-ui-core >/dev/null || true
+      - name: Make PDFs of notice pages (English + Hindi)
+        run: node scripts/make_pdfs.mjs site
       - name: Create Pages project (first run only)
         run: npx --yes wrangler@3 pages project create sarkarichart --production-branch main || echo "project exists"
       - name: Deploy

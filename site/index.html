@@ -65,7 +65,7 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 .row { display: grid; grid-template-columns: 5rem 1fr 6.5rem 6.5rem 10.5rem 3.5rem; gap: 0 16px; align-items: baseline; }
 main { margin-top: 36px; flex: 1; }
 .head { color: var(--grey); background: var(--soft); padding: 7px 8px; border-bottom: 1px solid var(--ink); }
-.tabs { display: flex; flex-wrap: wrap; gap: 2px 28px; margin-bottom: 22px; font-size: 2.25rem; line-height: 1.15; letter-spacing: -0.02em; }
+.tabs { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: 14px; }
 .search { display: block; margin-bottom: 40px; }
 .search input { all: unset; box-sizing: border-box; width: 100%; padding: 6px 0; border-bottom: 1px solid var(--line); }
 .search input::placeholder { color: var(--grey); }
@@ -76,7 +76,7 @@ main { margin-top: 36px; flex: 1; }
 @media (prefers-reduced-motion: reduce) { .list, .tabs button { transition: none; } }
 .tabs button[aria-pressed="true"] { color: var(--ink); }
 .tabs button:hover { color: var(--ink); }
-.tabs .c { margin-left: 8px; font-variant-numeric: tabular-nums; }
+.tabs .c { margin-left: 5px; font-variant-numeric: tabular-nums; }
 .tabs .c:empty { display: none; }
 .tabs button.zero { opacity: .45; }
 .empty { padding: 5px 8px; color: var(--grey); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -112,7 +112,6 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   .top > .g { font-size: 0.875rem; }
   .top .logo img { width: 88px; height: 88px; }
   .hide-sm { display: none; }
-  .tabs { font-size: 1.5rem; gap: 2px 18px; }
   .list .pdf.hide-sm { display: none; }
   .show-sm { display: inline; }
   .row, .list li.lr { grid-template-columns: 1fr 5.5rem; }
@@ -124,72 +123,108 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 
 <div class="sheet">
   <header class="top">
-    <span class="g">Govt jobs, exams, results</span>
-    <a class="logo" href="/" aria-label="SarkariChart home"><img src="/logo-256.png" width="112" height="112" alt="SarkariChart"></a>
-    <span class="nav-r"><a href="#">About</a><button type="button" id="lang">हिंदी</button></span>
+    <span class="g" data-t="tagline">Govt jobs, exams, results</span>
+    <a class="logo" href="/" data-t-aria="home"><img src="/logo-256.png" width="112" height="112" alt="SarkariChart" data-t-alt="brand"></a>
+    <span class="nav-r"><a href="#" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button></span>
   </header>
 
   <main>
-    <div class="tabs" role="group" aria-label="Show">
-      <button type="button" data-cat="all" aria-pressed="true">All<span class="c"></span></button>
-      <button type="button" data-cat="Job" aria-pressed="false">Jobs<span class="c"></span></button>
-      <button type="button" data-cat="Admit card" aria-pressed="false">Admit cards<span class="c"></span></button>
-      <button type="button" data-cat="Result" aria-pressed="false">Results<span class="c"></span></button>
-      <button type="button" data-cat="Answer key" aria-pressed="false">Answer keys<span class="c"></span></button>
+    <div class="tabs" role="group" data-t-aria="show">
+      <button type="button" data-cat="all" aria-pressed="true"><span data-t="all">All</span><span class="c"></span></button>
+      <button type="button" data-cat="Job" aria-pressed="false"><span data-t="jobs">Jobs</span><span class="c"></span></button>
+      <button type="button" data-cat="Admit card" aria-pressed="false"><span data-t="admits">Admit cards</span><span class="c"></span></button>
+      <button type="button" data-cat="Result" aria-pressed="false"><span data-t="results">Results</span><span class="c"></span></button>
+      <button type="button" data-cat="Answer key" aria-pressed="false"><span data-t="keys">Answer keys</span><span class="c"></span></button>
     </div>
-    <label class="search" for="q"><span style="position:absolute;left:-9999px">Search notices</span>
+    <label class="search" for="q"><span style="position:absolute;left:-9999px" data-t="searchLabel">Search notices</span>
       <svg class="sicon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 20.5 20.5"/></svg>
-      <input id="q" type="search" placeholder="Search: SSC, UGC NET, 12th pass, Bihar…" autocomplete="off" data-en-ph="Search: SSC, UGC NET, 12th pass, Bihar…" data-hi-ph="खोजें: SSC, UGC NET, 12वीं पास, बिहार…">
-          <button type="button" class="sx" id="kHint" hidden>Clear</button>
+      <input id="q" type="search" placeholder="Search: SSC, UGC NET, 12th pass, Bihar…" autocomplete="off" data-t-ph="searchPh">
+      <button type="button" class="sx" id="kHint" hidden data-t="clear">Clear</button>
     </label>
-    <div class="row head"><span class="hide-sm">Posted</span><span data-en="Notice" data-hi="सूचना">Notice</span><span class="hide-sm">Organisation</span><span class="hide-sm">Type</span><span>Last date / status</span><span class="hide-sm">PDF</span></div>
+    <div class="row head"><span class="hide-sm" data-t="hPosted">Posted</span><span data-t="hNotice">Notice</span><span class="hide-sm" data-t="hOrg">Organisation</span><span class="hide-sm" data-t="hType">Type</span><span data-t="hLast">Last date / status</span><span class="hide-sm" data-t="hPdf">PDF</span></div>
     <ul class="list" id="list"></ul>
   </main>
 
   <footer>
-    <p class="g">SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.</p>
-    <p><a href="#">About</a> · <a href="#">Report a mistake</a> · <a href="#">Privacy</a></p>
+    <p class="g" data-t="disclaimer">SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.</p>
+    <p><a href="#" data-t="about">About</a> · <a href="#" data-t="report">Report a mistake</a> · <a href="#" data-t="privacy">Privacy</a></p>
   </footer>
 </div>
 
-
-
 <script>
 (() => {
+  // ---------- language ----------
+  const T = {
+    en: {
+      title: "SarkariChart", brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", about: "About", show: "Show",
+      all: "All", jobs: "Jobs", admits: "Admit cards", results: "Results", keys: "Answer keys",
+      searchLabel: "Search notices", searchPh: "Search: SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
+      hPosted: "Posted", hNotice: "Notice", hOrg: "Organisation", hType: "Type", hLast: "Last date / status", hPdf: "PDF",
+      disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
+      report: "Report a mistake", privacy: "Privacy", switchTo: "हिंदी", switchLang: "hi",
+      Job: "Job", Result: "Result", "Answer key": "Answer key", "Admit card": "Admit card",
+      available: "Available", inNotice: "In notice", lastDay: "Last day", pdfAria: "Download this notice as PDF",
+      daysLeft: d => `${d} day${d === 1 ? "" : "s"} left`, daysShort: d => `${d} day${d === 1 ? "" : "s"}`,
+      none: q => `Nothing matches "${q}". Try a shorter word, like an organisation name.`,
+      empty: "Nothing here right now. New notices appear as soon as they are published.",
+      locale: "en-IN",
+    },
+    hi: {
+      title: "सरकारी चार्ट", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में", show: "दिखाएँ",
+      all: "सभी", jobs: "नौकरियाँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की",
+      searchLabel: "सूचनाएँ खोजें", searchPh: "खोजें: एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
+      hPosted: "जारी", hNotice: "सूचना", hOrg: "संस्था", hType: "प्रकार", hLast: "अंतिम तिथि / स्थिति", hPdf: "पीडीएफ",
+      disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
+      report: "गलती बताएँ", privacy: "गोपनीयता", switchTo: "अंग्रेज़ी", switchLang: "en",
+      Job: "नौकरी", Result: "रिज़ल्ट", "Answer key": "आंसर की", "Admit card": "एडमिट कार्ड",
+      available: "उपलब्ध", inNotice: "सूचना में देखें", lastDay: "आज अंतिम दिन", pdfAria: "यह सूचना पीडीएफ में डाउनलोड करें",
+      daysLeft: d => `${d} दिन बाकी`, daysShort: d => `${d} दिन`,
+      none: q => `“${q}” से कुछ नहीं मिला। छोटा शब्द आज़माएँ, जैसे संस्था का नाम।`,
+      empty: "अभी यहाँ कुछ नहीं है। नई सूचनाएँ जारी होते ही यहाँ दिखेंगी।",
+      locale: "hi-IN",
+    },
+  };
+  const ORG_HI = { NTA: "एनटीए", SSC: "एसएससी", UPPSC: "यूपीपीएससी", BPSC: "बीपीएससी" };
+  let lang = "en";
+  try { if (localStorage.getItem("sc-lang") === "hi") lang = "hi"; } catch (e) {}
+  const t = k => T[lang][k];
+
   // Sample entries from the watcher's test runs (Oct 2026). Only extracted values; not verified.
   const TODAY = new Date();
   // posted = date on the official notice where known, otherwise the day we found it.
   const ITEMS = [
-    { type: "Job", title: "UGC NET December 2026", org: "NTA", posted: "2026-10-08", last: "2026-10-28", url: "/notice/ugc-net-december-2026/", page: true , pdf: "https://nta.ac.in/Download/Notice/Notice_20261008212430.pdf" },
-    { type: "Job", title: "SWAYAM exam, online application", org: "NTA", posted: "2026-10-09", last: "2026-11-01", url: "https://nta.ac.in" , pdf: "https://nta.ac.in/Download/Notice/Notice_20261009123259.pdf" },
-    { type: "Job", title: "NIFT Entrance Exam 2027", org: "NTA", posted: "2026-10-16", last: "2026-11-16", url: "https://nta.ac.in" , pdf: "https://nta.ac.in/Download/Notice/Notice_20261016183525.pdf" },
-    { type: "Job", title: "Junior Engineer Examination 2026", org: "SSC", posted: "2026-10-21", last: null, url: "https://ssc.gov.in" , pdf: "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/JE_Tentative_Vacancy_08102026.pdf" },
-    { type: "Job", title: "Lecturer, Textile Technology", org: "UPPSC", posted: "2026-10-21", last: null, url: "https://uppsc.up.nic.in" , pdf: "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmbO3OUZentgoWo8RkhUpnV" },
-    { type: "Answer key", title: "Selection Posts Phase XIV, response sheets", org: "SSC", posted: "2026-10-21", url: "https://ssc.gov.in" , pdf: "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_rhq.pdf" },
-    { type: "Result", title: "Constable (GD) in CAPFs, SSF and Rifleman (GD)", org: "SSC", posted: "2026-10-21", url: "https://ssc.gov.in" , pdf: "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_12102026.pdf" },
-    { type: "Result", title: "Combined Higher Secondary (10+2) Level Exam 2025", org: "SSC", posted: "2026-10-21", url: "https://ssc.gov.in" , pdf: "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_final_chsl_2025_07102026.pdf" },
-    { type: "Admit card", title: "Stenographer (आशुलिपिक), exam start date", org: "BPSC", posted: "2026-10-21", url: "https://bpsc.bihar.gov.in" , pdf: "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Important-Notice-Date-of-012026-Stenographer-BPSC-Exam_BPSC-20260420-zj3eyx.pdf" },
-    { type: "Result", title: "Assistant Teacher, Advt. A-5/E-1/2025", org: "UPPSC", posted: "2026-10-21", url: "https://uppsc.up.nic.in" , pdf: "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmzNJIRVKnDRwIQMjGyuh7N" },
+    { type: "Job", title: "UGC NET December 2026", hi: "यूजीसी नेट दिसंबर 2026", org: "NTA", posted: "2026-10-08", last: "2026-10-28", url: "/notice/ugc-net-december-2026/", page: true },
+    { type: "Job", title: "SWAYAM exam, online application", hi: "स्वयं परीक्षा, ऑनलाइन आवेदन", org: "NTA", posted: "2026-10-09", last: "2026-11-01", url: "https://nta.ac.in" },
+    { type: "Job", title: "NIFT Entrance Exam 2027", hi: "निफ्ट प्रवेश परीक्षा 2027", org: "NTA", posted: "2026-10-16", last: "2026-11-16", url: "https://nta.ac.in" },
+    { type: "Job", title: "Junior Engineer Examination 2026", hi: "जूनियर इंजीनियर परीक्षा 2026", org: "SSC", posted: "2026-10-21", last: null, url: "https://ssc.gov.in" },
+    { type: "Job", title: "Lecturer, Textile Technology", hi: "प्रवक्ता, वस्त्र प्रौद्योगिकी", org: "UPPSC", posted: "2026-10-21", last: null, url: "https://uppsc.up.nic.in" },
+    { type: "Answer key", title: "Selection Posts Phase XIV, response sheets", hi: "सेलेक्शन पोस्ट फेज़ 14, उत्तर पत्रक", org: "SSC", posted: "2026-10-21", url: "https://ssc.gov.in" },
+    { type: "Result", title: "Constable (GD) in CAPFs, SSF and Rifleman (GD)", hi: "सीएपीएफ, एसएसएफ में कांस्टेबल (जीडी) और राइफलमैन (जीडी)", org: "SSC", posted: "2026-10-21", url: "https://ssc.gov.in" },
+    { type: "Result", title: "Combined Higher Secondary (10+2) Level Exam 2025", hi: "संयुक्त उच्चतर माध्यमिक (10+2) स्तर परीक्षा 2025", org: "SSC", posted: "2026-10-21", url: "https://ssc.gov.in" },
+    { type: "Admit card", title: "Stenographer (आशुलिपिक), exam start date", hi: "आशुलिपिक, परीक्षा आरंभ तिथि", org: "BPSC", posted: "2026-10-21", url: "https://bpsc.bihar.gov.in" },
+    { type: "Result", title: "Assistant Teacher, Advt. A-5/E-1/2025", hi: "सहायक अध्यापक, विज्ञापन ए-5/ई-1/2025", org: "UPPSC", posted: "2026-10-21", url: "https://uppsc.up.nic.in" },
   ];
-  const fmt = iso => new Date(iso + "T00:00:00").toLocaleDateString("en-IN", { day: "numeric", month: "short" });
+  const title = i => lang === "hi" ? i.hi : i.title;
+  const org = i => lang === "hi" ? (ORG_HI[i.org] || i.org) : i.org;
+  const fmt = iso => new Date(iso + "T00:00:00").toLocaleDateString(t("locale"), { day: "numeric", month: "short" });
   const left = iso => Math.ceil((new Date(iso + "T23:59:59") - TODAY) / 864e5);
   const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
-  // Last date: the date, then plain days left. Jobs with no date found say so; other notices have none.
-  // days-left tag: calm when there is time, warm under a week, hot in the last 3 days
+  // days-left text: calm when there is time, warm under a week, hot in the last 3 days
   function daysTag(iso, short) {
     const d = left(iso);
     const cls = d <= 3 ? "hot" : d <= 7 ? "warm" : "calm";
-    const txt = d === 0 ? "Last day" : short ? `${d} day${d === 1 ? "" : "s"}` : `${d} day${d === 1 ? "" : "s"} left`;
+    const txt = d === 0 ? t("lastDay") : short ? t("daysShort")(d) : t("daysLeft")(d);
     return `<span class="tag ${cls}">${txt}</span>`;
   }
   function lastCell(i) {
-    if (i.type !== "Job") return "Available";
-    if (!i.last) return "In notice";
+    if (i.type !== "Job") return t("available");
+    if (!i.last) return t("inNotice");
     return `<span class="hide-sm">${fmt(i.last)} · ${daysTag(i.last)}</span><span class="show-sm">${daysTag(i.last, true)}</span>`;
   }
   let cat = "all", q = "";
-  const words = i => [i.title, i.org, i.type].join(" ").toLowerCase();
+  // search matches English and Hindi words alike, whichever language is showing
+  const words = i => [i.title, i.hi, i.org, ORG_HI[i.org] || "", i.type, T.hi[i.type]].join(" ").toLowerCase();
   const qmatch = i => q.split(/\s+/).every(w => words(i).includes(w));
   const live = i => !i.last || left(i.last) >= 0;
   function setCat(c) {
@@ -204,21 +239,34 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     const types = [...new Set(hits.map(i => i.type))];
     setCat(types.length === 1 ? types[0] : "all");
   }
+  // PDF = a printable copy of OUR notice page (made automatically when the site is published), in the language being viewed.
+  const pdfOf = i => i.page ? `${i.url}sarkarichart-${i.url.split("/").filter(Boolean).pop()}-${lang}.pdf` : "";
+  const DL = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>';
   function render() {
     // Jobs: closing soonest first (undated last). Everything else: newest first.
     const byClosing = (a, b) => (!a.last) - (!b.last) || (a.last || "").localeCompare(b.last || "") || b.posted.localeCompare(a.posted);
     const byNewest = (a, b) => b.posted.localeCompare(a.posted);
-    const rows = [...ITEMS].sort(cat === "Job" ? byClosing : byNewest).filter(i => (!i.last || left(i.last) >= 0) && (cat === "all" || i.type === cat) && q.split(/\s+/).every(w => words(i).includes(w)));
-    // match counts per category while searching
-    const hits = ITEMS.filter(i => (!i.last || left(i.last) >= 0) && (!q || qmatch(i)));
+    const rows = [...ITEMS].sort(cat === "Job" ? byClosing : byNewest).filter(i => live(i) && (cat === "all" || i.type === cat) && qmatch(i));
+    const hits = ITEMS.filter(i => live(i) && (!q || qmatch(i)));
     document.querySelectorAll(".tabs button").forEach(b => {
       const n = b.dataset.cat === "all" ? hits.length : hits.filter(i => i.type === b.dataset.cat).length;
       b.querySelector(".c").textContent = q ? n : "";
       b.classList.toggle("zero", !!q && n === 0);
     });
     document.getElementById("list").innerHTML = rows.map(i =>
-      `<li class="lr"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm">${fmt(i.posted)}</span><span class="t">${esc(i.title)}</span><span class="hide-sm g">${i.org}</span><span class="hide-sm g">${i.type}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${i.pdf ? `<a class="pdf hide-sm" href="${i.pdf}" target="_blank" rel="noopener" aria-label="Download official notice PDF: ${esc(i.title)}" title="Official notice PDF"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>PDF</span></a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
-    ).join("") || (q ? `<li class="empty">Nothing matches "${esc(q)}". Try a shorter word, like an organisation name.</li>` : '<li class="empty">Nothing here right now. New notices appear as soon as they are published.</li>');
+      `<li class="lr"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm">${fmt(i.posted)}</span><span class="t">${esc(title(i))}</span><span class="hide-sm g">${org(i)}</span><span class="hide-sm g">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}<span>${t("pdf")}</span></a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
+    ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
+  }
+  function applyLang() {
+    document.documentElement.lang = lang;
+    document.title = t("title");
+    document.querySelectorAll("[data-t]").forEach(el => el.textContent = t(el.dataset.t));
+    document.querySelectorAll("[data-t-ph]").forEach(el => el.placeholder = t(el.dataset.tPh));
+    document.querySelectorAll("[data-t-aria]").forEach(el => el.setAttribute("aria-label", t(el.dataset.tAria)));
+    document.querySelectorAll("[data-t-alt]").forEach(el => el.alt = t(el.dataset.tAlt));
+    const btn = document.getElementById("lang");
+    btn.textContent = t("switchTo"); btn.lang = t("switchLang");
+    render();
   }
   const list = document.getElementById("list");
   function update() {
@@ -232,16 +280,12 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     followSearch();
     if (cat !== before) update(); else render();
   });
-  render();
-
-  let hi = false;
-  document.getElementById("lang").addEventListener("click", e => {
-    hi = !hi;
-    document.querySelectorAll("[data-en]").forEach(el => el.textContent = hi ? el.dataset.hi : el.dataset.en);
-    const qi = document.getElementById("q"); qi.placeholder = hi ? qi.dataset.hiPh : qi.dataset.enPh;
-    e.currentTarget.textContent = hi ? "English" : "हिंदी";
-    document.documentElement.lang = hi ? "hi" : "en";
+  document.getElementById("lang").addEventListener("click", () => {
+    lang = lang === "hi" ? "en" : "hi";
+    try { localStorage.setItem("sc-lang", lang); } catch (e) {}
+    applyLang();
   });
+  applyLang();
 
   // "Clear" appears only while there is text in the search line.
   const kHint = document.getElementById("kHint"), qIn = document.getElementById("q");
