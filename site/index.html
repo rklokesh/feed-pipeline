@@ -35,6 +35,11 @@
 /* tags: one small framed shape used for days left, the K shortcut and the chosen category */
 .tag { white-space: nowrap; font-variant-numeric: tabular-nums; }
 .gap { display: inline-block; width: 14px; }
+/* "New" badge on the 3 most recent notices: a soft breathing dot, not a hard blink */
+.new { display: inline-flex; align-items: center; gap: 5px; margin-right: 8px; color: var(--hot); font-size: 0.8125rem; vertical-align: 1px; }
+.new::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; animation: breathe 1.6s ease-in-out infinite; }
+@keyframes breathe { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .25; transform: scale(.7); } }
+@media (prefers-reduced-motion: reduce) { .new::before { animation: none; } }
 .dd { display: inline-block; min-width: 2ch; text-align: right; font-variant-numeric: tabular-nums; }
 .tag.calm { color: var(--calm); }
 .tag.warm { color: var(--warm); }
@@ -167,7 +172,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
       report: "Report a mistake", privacy: "Privacy", switchTo: "हिंदी", switchLang: "hi",
       Job: "Job", Result: "Result", "Answer key": "Answer key", "Admit card": "Admit card",
-      available: "Available", inNotice: "In notice", lastDay: "Last day", pdfAria: "Download this notice as PDF",
+      available: "Available", newBadge: "New", inNotice: "In notice", lastDay: "Last day", pdfAria: "Download this notice as PDF",
       daysLeft: d => `${d} day${d === 1 ? "" : "s"} left`, daysShort: d => `${d} day${d === 1 ? "" : "s"}`,
       none: q => `Nothing matches "${q}". Try a shorter word, like an organisation name.`,
       empty: "Nothing here right now. New notices appear as soon as they are published.",
@@ -181,7 +186,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
       report: "गलती बताएँ", privacy: "गोपनीयता", switchTo: "अंग्रेज़ी", switchLang: "en",
       Job: "नौकरी", Result: "रिज़ल्ट", "Answer key": "आंसर की", "Admit card": "एडमिट कार्ड",
-      available: "उपलब्ध", inNotice: "सूचना में देखें", lastDay: "आज अंतिम दिन", pdfAria: "यह सूचना पीडीएफ में डाउनलोड करें",
+      available: "उपलब्ध", newBadge: "नया", inNotice: "सूचना में देखें", lastDay: "आज अंतिम दिन", pdfAria: "यह सूचना पीडीएफ में डाउनलोड करें",
       daysLeft: d => `${d} दिन बाकी`, daysShort: d => `${d} दिन`,
       none: q => `“${q}” से कुछ नहीं मिला। छोटा शब्द आज़माएँ, जैसे संस्था का नाम।`,
       empty: "अभी यहाँ कुछ नहीं है। नई सूचनाएँ जारी होते ही यहाँ दिखेंगी।",
@@ -208,6 +213,8 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     { type: "Admit card", title: "Stenographer (आशुलिपिक), exam start date", hi: "आशुलिपिक, परीक्षा आरंभ तिथि", org: "BPSC", posted: "2026-10-21", url: "https://bpsc.bihar.gov.in" },
     { type: "Result", title: "Assistant Teacher, Advt. A-5/E-1/2025", hi: "सहायक अध्यापक, विज्ञापन ए-5/ई-1/2025", org: "UPPSC", posted: "2026-10-21", url: "https://uppsc.up.nic.in" },
   ];
+  // the 3 most recently posted notices get a "New" badge
+  const NEWEST = [...ITEMS].sort((a, b) => b.posted.localeCompare(a.posted)).slice(0, 3);
   const title = i => lang === "hi" ? i.hi : i.title;
   const org = i => lang === "hi" ? (ORG_HI[i.org] || i.org) : i.org;
   const fmtText = iso => new Date(iso + "T00:00:00").toLocaleDateString(t("locale"), { day: "numeric", month: "short" });
@@ -270,7 +277,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       b.classList.toggle("zero", !!q && n === 0);
     });
     document.getElementById("list").innerHTML = rows.map(i =>
-      `<li class="lr"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm">${fmt(i.posted)}</span><span class="t" title="${esc(title(i))}">${esc(title(i))}</span><span class="hide-sm g">${org(i)}</span><span class="hide-sm g">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
+      `<li class="lr"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm">${fmt(i.posted)}</span><span class="t" title="${esc(title(i))}">${NEWEST.includes(i) ? `<span class="new">${t("newBadge")}</span>` : ""}${esc(title(i))}</span><span class="hide-sm g">${org(i)}</span><span class="hide-sm g">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
     ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
   }
   // Keyboard: ↓ / ↑ move through the results while searching, Enter opens the highlighted one.
