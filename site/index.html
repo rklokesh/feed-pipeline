@@ -10,17 +10,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap">
 <style>
-/* Layout: an index, not a page of boxes. One typeface, one size, two inks (text + grey label), hairline rules.
-   Columns line up across the whole page like a ruled sheet. */
+/* Layout: nav line, one ruled table, footer. Nothing else. One typeface, one size, two inks. */
 :root {
   --page: #FFFFFF;
   --ink: #1D1C1B;
-  --grey: #9C9890;     /* labels, meta */
-  --line: #E5E1D8;     /* hairlines */
-  --soft: #F4F1EB;     /* row hover only */
+  --grey: #9C9890;
+  --line: #E5E1D8;
+  --soft: #F4F1EB;
   --font: "Helvetica Neue", Helvetica, Arial, system-ui, -apple-system, "Segoe UI", Roboto, "Kohinoor Devanagari", "Nirmala UI", "Noto Sans Devanagari", sans-serif;
-  --size: 1rem;
-  --lh: 1.35;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) { --page: #1C1B1A; --ink: #ECEAE4; --grey: #8E8A82; --line: #34322E; --soft: #262522; color-scheme: dark; }
@@ -30,74 +27,39 @@
 * { box-sizing: border-box; }
 body {
   background: var(--page); color: var(--ink);
-  font-family: var(--font); font-size: var(--size); line-height: var(--lh);
+  font-family: var(--font); font-size: 1rem; line-height: 1.35;
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
   -webkit-font-smoothing: antialiased;
 }
-.sheet { max-width: 980px; margin: 0 auto; padding-block: 14px 64px; }
+.sheet { max-width: 980px; margin: 0 auto; padding-block: 14px 48px; min-height: 100vh; display: flex; flex-direction: column; }
 a { color: inherit; text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 :focus-visible { outline: 1px solid var(--ink); outline-offset: 2px; }
-h1, h2, p, ul { margin: 0; padding: 0; font: inherit; }
-ul { list-style: none; }
+ul, p { margin: 0; padding: 0; list-style: none; }
 .g { color: var(--grey); }
 .num { font-variant-numeric: tabular-nums; }
 
-/* the shared grid every row uses */
-.row { display: grid; grid-template-columns: 7rem 1fr 9rem 6rem 1.25rem; gap: 0 16px; align-items: baseline; }
-
-/* top line */
-.top { display: grid; grid-template-columns: 1fr 1fr 1fr auto; gap: 16px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+.top { display: grid; grid-template-columns: 1fr 1fr 1fr auto; gap: 16px; padding-bottom: 6px; }
 .top button { all: unset; cursor: pointer; }
 .top button:hover { text-decoration: underline; text-underline-offset: 3px; }
 
-/* intro */
-.intro { padding-top: 6px; display: grid; gap: 22px; max-width: 34rem; }
-.intro p + p { margin-top: 0; }
-
-/* find */
-.find { margin-top: 48px; display: grid; gap: 10px; }
-.find input { all: unset; width: 100%; padding: 4px 0; border-bottom: 1px solid var(--line); }
-.find input::placeholder { color: var(--grey); }
-.find input:focus { border-bottom-color: var(--ink); }
-.tabs { display: flex; flex-wrap: wrap; gap: 4px 18px; }
-.tabs button { all: unset; cursor: pointer; color: var(--grey); }
-.tabs button[aria-pressed="true"] { color: var(--ink); }
-.tabs button:hover { color: var(--ink); }
-
-/* lists */
-section { margin-top: 44px; }
+.row { display: grid; grid-template-columns: 7.5rem 1fr 8rem 7rem 1.25rem; gap: 0 16px; align-items: baseline; }
+main { margin-top: 56px; flex: 1; }
 .head { color: var(--grey); padding-bottom: 4px; }
 .list li { border-top: 1px solid var(--line); }
 .list li:last-child { border-bottom: 1px solid var(--line); }
 .list a.row { padding: 4px 0; }
 .list a.row:hover { text-decoration: none; background: var(--soft); }
 .list a.row:hover .t { text-decoration: underline; text-underline-offset: 3px; }
-.arrow { text-align: right; }
 .right { text-align: right; }
-.empty { padding: 4px 0; color: var(--grey); border-top: 1px solid var(--line); }
-
-/* browse index */
-.index { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-.index ul { display: grid; }
 
 footer { margin-top: 64px; display: grid; gap: 4px; max-width: 34rem; }
 
-.remind { margin-top: 44px; display: grid; gap: 4px; max-width: 34rem; }
-.remind form { display: flex; gap: 16px; align-items: baseline; margin-top: 6px; }
-.remind input { all: unset; flex: 1; min-width: 0; padding: 4px 0; border-bottom: 1px solid var(--line); }
-.remind input::placeholder { color: var(--grey); }
-.remind input:focus { border-bottom-color: var(--ink); }
-.remind button { all: unset; cursor: pointer; }
-.remind button:hover { text-decoration: underline; text-underline-offset: 3px; }
-
 @media (max-width: 640px) {
   .top { grid-template-columns: 1fr auto; }
-  .top .hide-sm { display: none; }
-  .row { grid-template-columns: 5.2rem 1fr 1rem; }
-  .row .hide-sm { display: none; }
-  .index { grid-template-columns: 1fr 1fr; }
+  .hide-sm { display: none; }
+  .row { grid-template-columns: 5.4rem 1fr 1rem; }
 }
 </style>
 </head>
@@ -108,59 +70,14 @@ footer { margin-top: 64px; display: grid; gap: 4px; max-width: 34rem; }
   <header class="top">
     <a href="#">SarkariChart</a>
     <span class="hide-sm g">Govt jobs, exams, results</span>
-    <a class="hide-sm" href="#browse">Browse ↓</a>
+    <a class="hide-sm" href="#">About</a>
     <button type="button" id="lang">हिंदी</button>
   </header>
 
-  <div class="intro">
-    <div>
-      <p data-en="Every government job, admit card, answer key and result in one calm list. Each entry links to the official notice." data-hi="हर सरकारी नौकरी, एडमिट कार्ड, आंसर की और रिज़ल्ट एक शांत सूची में। हर जानकारी आधिकारिक सूचना से जुड़ी है।">Every government job, admit card, answer key and result in one calm list. Each entry links to the official notice.</p>
-      <p class="g" id="updated">Checked hourly</p>
-      <p><a href="#">How we check →</a></p>
-    </div>
-    <p class="g">Design preview. Entries are samples from our test run and not yet verified.</p>
-  </div>
-
-  <div class="find">
-    <label for="q" class="g" style="position:absolute;left:-9999px">Search</label>
-    <input id="q" type="search" placeholder="Search SSC, UGC NET, 12th pass…" autocomplete="off">
-    <div class="tabs" role="group" aria-label="Show">
-      <button type="button" data-cat="all" aria-pressed="true">All</button>
-      <button type="button" data-cat="job" aria-pressed="false">Jobs</button>
-      <button type="button" data-cat="admit" aria-pressed="false">Admit cards</button>
-      <button type="button" data-cat="result" aria-pressed="false">Results</button>
-      <button type="button" data-cat="key" aria-pressed="false">Answer keys</button>
-    </div>
-  </div>
-
-  <section data-sec="job">
-    <div class="row head"><span>Last date</span><span>Open for applications</span><span class="hide-sm">Organisation</span><span class="hide-sm right">Posts</span><span></span></div>
-    <ul class="list" id="jobs"></ul>
-  </section>
-
-  <section data-sec="admit result key">
-    <div class="row head"><span>Seen</span><span>Admit cards, results, answer keys</span><span class="hide-sm">Organisation</span><span class="hide-sm right">Type</span><span></span></div>
-    <ul class="list" id="updates"></ul>
-  </section>
-
-  <section id="browse">
-    <div class="head">Browse index</div>
-    <div class="index">
-      <ul><li class="g">Qualification</li><li><a href="#">10th pass</a></li><li><a href="#">12th pass</a></li><li><a href="#">Graduate</a></li><li><a href="#">Engineering</a></li><li><a href="#">Teaching</a></li></ul>
-      <ul><li class="g">Organisation</li><li><a href="#">SSC</a></li><li><a href="#">Banking</a></li><li><a href="#">NTA</a></li><li><a href="#">UPPSC</a></li><li><a href="#">BPSC</a></li></ul>
-      <ul><li class="g">State</li><li><a href="#">All India</a></li><li><a href="#">Uttar Pradesh</a></li><li><a href="#">Bihar</a></li><li class="g">Rajasthan (soon)</li><li class="g">Madhya Pradesh (soon)</li></ul>
-    </div>
-  </section>
-
-  <section class="remind" aria-labelledby="rh">
-    <p id="rh" class="g">Reminders</p>
-    <p>One email three days before each last date you follow. Nothing else.</p>
-    <form id="remindForm" novalidate>
-      <input id="email" type="email" placeholder="Your email" aria-label="Email address" autocomplete="email">
-      <button type="submit">Remind me →</button>
-    </form>
-    <p class="g" id="remindMsg" hidden></p>
-  </section>
+  <main>
+    <div class="row head"><span>Date</span><span data-en="Notice" data-hi="सूचना">Notice</span><span class="hide-sm">Organisation</span><span class="hide-sm right">Type</span><span></span></div>
+    <ul class="list" id="list"></ul>
+  </main>
 
   <footer>
     <p class="g">SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.</p>
@@ -170,54 +87,31 @@ footer { margin-top: 64px; display: grid; gap: 4px; max-width: 34rem; }
 
 <script>
 (() => {
-  // Sample entries from the watcher's test runs (Oct 2026). Only values it actually extracted; not verified.
+  // Sample entries from the watcher's test runs (Oct 2026). Only extracted values; not verified.
   const TODAY = new Date();
-  const JOBS = [
-    { title: "UGC NET December 2026", org: "NTA", posts: "—", last: "2026-10-28", url: "https://nta.ac.in" },
-    { title: "SWAYAM exam, online application", org: "NTA", posts: "—", last: "2026-11-01", url: "https://nta.ac.in" },
-    { title: "NIFT Entrance Exam 2027", org: "NTA", posts: "—", last: "2026-11-16", url: "https://nta.ac.in" },
-    { title: "Junior Engineer Examination 2026", org: "SSC", posts: "1,699", last: null, url: "https://ssc.gov.in" },
-    { title: "Lecturer, Textile Technology", org: "UPPSC", posts: "1", last: null, url: "https://uppsc.up.nic.in" },
+  const ITEMS = [
+    { kind: "job", type: "Job", title: "UGC NET December 2026", org: "NTA", last: "2026-10-28", url: "https://nta.ac.in" },
+    { kind: "job", type: "Job", title: "SWAYAM exam, online application", org: "NTA", last: "2026-11-01", url: "https://nta.ac.in" },
+    { kind: "job", type: "Job", title: "NIFT Entrance Exam 2027", org: "NTA", last: "2026-11-16", url: "https://nta.ac.in" },
+    { kind: "job", type: "Job · 1,699 posts", title: "Junior Engineer Examination 2026", org: "SSC", last: null, url: "https://ssc.gov.in" },
+    { kind: "job", type: "Job · 1 post", title: "Lecturer, Textile Technology", org: "UPPSC", last: null, url: "https://uppsc.up.nic.in" },
+    { kind: "up", type: "Answer key", title: "Selection Posts Phase XIV, response sheets", org: "SSC", seen: "2026-10-21", url: "https://ssc.gov.in" },
+    { kind: "up", type: "Result", title: "Constable (GD) in CAPFs, SSF and Rifleman (GD)", org: "SSC", seen: "2026-10-21", url: "https://ssc.gov.in" },
+    { kind: "up", type: "Result", title: "Combined Higher Secondary (10+2) Level Exam 2025", org: "SSC", seen: "2026-10-21", url: "https://ssc.gov.in" },
+    { kind: "up", type: "Admit card", title: "Stenographer (आशुलिपिक), exam start date", org: "BPSC", seen: "2026-10-21", url: "https://bpsc.bihar.gov.in" },
+    { kind: "up", type: "Result", title: "Assistant Teacher, Advt. A-5/E-1/2025", org: "UPPSC", seen: "2026-10-21", url: "https://uppsc.up.nic.in" },
   ];
-  const UPDATES = [
-    { when: "2026-10-21", type: "Answer key", cat: "key", title: "Selection Posts Phase XIV, response sheets", org: "SSC", url: "https://ssc.gov.in" },
-    { when: "2026-10-21", type: "Result", cat: "result", title: "Constable (GD) in CAPFs, SSF and Rifleman (GD)", org: "SSC", url: "https://ssc.gov.in" },
-    { when: "2026-10-21", type: "Result", cat: "result", title: "Combined Higher Secondary (10+2) Level Exam 2025", org: "SSC", url: "https://ssc.gov.in" },
-    { when: "2026-10-21", type: "Admit card", cat: "admit", title: "Stenographer (आशुलिपिक), exam start date", org: "BPSC", url: "https://bpsc.bihar.gov.in" },
-    { when: "2026-10-21", type: "Result", cat: "result", title: "Assistant Teacher, Advt. A-5/E-1/2025", org: "UPPSC", url: "https://uppsc.up.nic.in" },
-    { when: "2026-10-21", type: "Result", cat: "result", title: "Stenographer Grade C and D Exam 2025", org: "SSC", url: "https://ssc.gov.in" },
-  ];
-
   const fmt = iso => new Date(iso + "T00:00:00").toLocaleDateString("en-IN", { day: "numeric", month: "short" });
   const left = iso => Math.ceil((new Date(iso + "T23:59:59") - TODAY) / 864e5);
   const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const date = i => i.kind === "job"
+    ? (i.last ? `${fmt(i.last)}<span class="g"> · ${left(i.last)}d left</span>` : '<span class="g">See notice</span>')
+    : `<span class="g">${fmt(i.seen)}</span>`;
 
-  let cat = "all", q = "";
-  const hit = (...f) => !q || f.join(" ").toLowerCase().includes(q);
-
-  function render() {
-    const jobs = JOBS.filter(j => (!j.last || left(j.last) >= 0) && hit(j.title, j.org))
-      .sort((a, b) => (!a.last) - (!b.last) || (a.last || "").localeCompare(b.last || ""));
-    document.getElementById("jobs").innerHTML = jobs.map(j => {
-      const d = j.last ? left(j.last) : null;
-      const when = j.last ? `${fmt(j.last)}<span class="g"> · ${d === 0 ? "today" : d + "d"}</span>` : '<span class="g">In notice</span>';
-      return `<li><a class="row" href="${j.url}" target="_blank" rel="noopener"><span class="num">${when}</span><span class="t">${esc(j.title)}</span><span class="hide-sm g">${j.org}</span><span class="hide-sm right num">${j.posts}</span><span class="arrow">→</span></a></li>`;
-    }).join("") || `<li class="empty">Nothing open matches "${esc(q)}".</li>`;
-
-    const ups = UPDATES.filter(u => (cat === "all" || u.cat === cat) && hit(u.title, u.org, u.type));
-    document.getElementById("updates").innerHTML = ups.map(u =>
-      `<li><a class="row" href="${u.url}" target="_blank" rel="noopener"><span class="num g">${fmt(u.when)}</span><span class="t">${esc(u.title)}</span><span class="hide-sm g">${u.org}</span><span class="hide-sm right g">${u.type}</span><span class="arrow">→</span></a></li>`
-    ).join("") || `<li class="empty">Nothing matches.</li>`;
-
-    document.querySelectorAll("section[data-sec]").forEach(s => s.hidden = cat !== "all" && !s.dataset.sec.split(" ").includes(cat));
-  }
-
-  document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => {
-    cat = b.dataset.cat;
-    document.querySelectorAll(".tabs button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
-    render();
-  }));
-  document.getElementById("q").addEventListener("input", e => { q = e.target.value.trim().toLowerCase(); render(); });
+  const rows = ITEMS.filter(i => i.kind !== "job" || !i.last || left(i.last) >= 0);
+  document.getElementById("list").innerHTML = rows.map(i =>
+    `<li><a class="row" href="${i.url}" target="_blank" rel="noopener"><span class="num">${date(i)}</span><span class="t">${esc(i.title)}</span><span class="hide-sm g">${i.org}</span><span class="hide-sm right g">${i.type}</span><span class="right">→</span></a></li>`
+  ).join("");
 
   let hi = false;
   document.getElementById("lang").addEventListener("click", e => {
@@ -226,17 +120,6 @@ footer { margin-top: 64px; display: grid; gap: 4px; max-width: 34rem; }
     e.currentTarget.textContent = hi ? "English" : "हिंदी";
     document.documentElement.lang = hi ? "hi" : "en";
   });
-
-  document.getElementById("remindForm").addEventListener("submit", e => {
-    e.preventDefault();
-    const ok = /.+@.+\..+/.test(document.getElementById("email").value.trim());
-    const m = document.getElementById("remindMsg");
-    m.hidden = false;
-    m.textContent = ok ? "Thanks. On the live site we'll confirm by email first." : "Enter an email like name@example.com.";
-  });
-
-  document.getElementById("updated").textContent = "Checked hourly · updated " + TODAY.toLocaleString("en-IN", { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" });
-  render();
 })();
 </script>
 
