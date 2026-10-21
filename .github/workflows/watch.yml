@@ -3,7 +3,10 @@ name: Watch official sources
 # Checks official notice boards, extracts new notices, queues them for review.
 on:
   schedule:
-    - cron: "7,37 * * * *"   # every 30 min (GitHub may delay scheduled runs at busy times)
+    # Times are UTC. Hourly 06:45-22:45 IST, plus 01:45 and 04:45 IST overnight (19 runs/day),
+    # which keeps a private repo inside GitHub's 2,000 free minutes/month.
+    - cron: "15 1-17 * * *"
+    - cron: "15 20,23 * * *"
   workflow_dispatch:
     inputs:
       only:
