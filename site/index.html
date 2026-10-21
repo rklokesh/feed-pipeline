@@ -37,7 +37,7 @@
 .gap { display: inline-block; width: 14px; }
 .newline { margin: -24px 0 12px; color: var(--hot); }
 /* "New" badge on the 3 most recent notices: a soft breathing dot, not a hard blink */
-.new { display: inline-flex; align-items: center; gap: 5px; margin-right: 8px; color: var(--hot); font-size: 0.8125rem; vertical-align: 1px; }
+.new { display: inline-flex; align-items: center; margin-right: 8px; color: var(--hot); vertical-align: 2px; }
 .new::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; animation: breathe 1.6s ease-in-out infinite; }
 @keyframes breathe { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .25; transform: scale(.7); } }
 @media (prefers-reduced-motion: reduce) { .new::before { animation: none; } }
@@ -359,7 +359,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     const nl = document.getElementById("newline"), nNew = ITEMS.filter(i => live(i) && isNew(i)).length;
     nl.hidden = firstVisit || !nNew; nl.textContent = nNew ? t("sinceLast")(nNew) : "";
     document.getElementById("list").innerHTML = rows.map(i =>
-      `<li class="lr"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm">${fmt(i.posted)}</span><span class="t" title="${esc(title(i))}">${isNew(i) ? `<span class="new">${t("newBadge")}</span>` : ""}${esc(title(i))}</span><span class="hide-sm g">${org(i)}</span><span class="hide-sm g">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
+      `<li class="lr"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm">${fmt(i.posted)}</span><span class="t" title="${esc(title(i))}">${isNew(i) ? `<span class="new" title="${t("newBadge")}" aria-label="${t("newBadge")}"></span>` : ""}${esc(title(i))}</span><span class="hide-sm g">${org(i)}</span><span class="hide-sm g">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
     ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
   }
   // Keyboard: ↓ / ↑ move through the results while searching, Enter opens the highlighted one.
