@@ -120,6 +120,7 @@ sources:
     org: UPPSC
     url: https://uppsc.up.nic.in/
     render: static
+    download: browser  # Open_PDF_DB links only serve the file inside a browser session
     runner: github
   - id: upsssc-home
     org: UPSSSC

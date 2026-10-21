@@ -183,7 +183,12 @@ def ai_extract(text: str) -> tuple[dict, str]:
             if r.status_code != 200:
                 reasons.append(f"{p['name']}:{r.status_code}")
                 continue
-            data = _json_from(r.json()["choices"][0]["message"]["content"])
+            try:
+                content = r.json()["choices"][0]["message"]["content"]
+                data = _json_from(content)
+            except Exception:  # noqa: BLE001
+                reasons.append(f"{p['name']}:bad-response:{r.text[:160]!r}")
+                continue
             ev = data.pop("evidence", {}) or {}
             fields = {k: {"value": v, "source": "ai", "provider": p["name"], "evidence": ev.get(k, "")}
                       for k, v in data.items() if v not in (None, "", [], {})}
@@ -211,9 +216,10 @@ def extract(text: str, kind: str, allow_ai: bool) -> tuple[dict, dict]:
 
 KIND_RULES = [
     ("noise", r"tender|\brti\b|auction|quotation|e-?procurement|empanelment|annual\s+report"),
+    ("info", r"booklet|guidelines|\bfaq|instructions\s+to|how\s+to\s+apply|scribe|calendar|vakyakosh|flowchart"),
     ("answer_key", r"answer\s*key|उत्तर\s*कुंजी|provisional\s+key|final\s+key"),
     ("admit_card", r"admit\s*card|e-?admit|call\s*letter|प्रवेश\s*पत्र|hall\s*ticket"),
-    ("result", r"\bresult|merit\s+list|select(?:ed|ion)\s+list|परिणाम|final\s+list|marks"),
+    ("result", r"\bresult|merit\s+list|select(?:ed|ion)\s+list|selected\s+candidates|परिणाम|final\s+list|marks"),
     ("syllabus", r"syllabus|scheme\s+of\s+exam|पाठ्यक्रम"),
     ("update", r"corrigendum|addendum|extension|extended|revised|modification|शुद्धि"),
     ("notification", r"recruit|vacanc|advertisement|advt|notification|notice\s+of\s+exam|online\s+application|भर्ती|विज्ञापन|apply"),
@@ -226,8 +232,10 @@ def classify(title: str, text_head: str = "") -> str:
     for kind, rx in KIND_RULES:
         if re.search(rx, t):
             return kind
-    head = text_head[:1500].lower()
+    head = text_head[:600].lower()
+    if re.search(r"^\W*(notification|advertisement|employment\s+notice)|invites?\s+online\s+applications|recruitment\s+of", head):
+        return "notification"
     for kind, rx in KIND_RULES:
-        if kind != "noise" and re.search(rx, head):
+        if kind not in ("noise", "info") and re.search(rx, head):
             return kind
     return "other"

@@ -27,6 +27,26 @@ _bundles: dict[str, str] = {}  # host -> CA bundle path with repaired chain
 last_repair_error: dict[str, str] = {}  # host -> why chain repair failed (for health.json)
 
 
+def _load_any_cert(raw: bytes):
+    """AIA links serve DER, PEM or PKCS#7 (.p7c) — accept all three."""
+    from cryptography import x509
+    from cryptography.hazmat.primitives.serialization import pkcs7
+
+    for loader in (x509.load_der_x509_certificate, x509.load_pem_x509_certificate):
+        try:
+            return loader(raw)
+        except ValueError:
+            pass
+    for loader in (pkcs7.load_der_pkcs7_certificates, pkcs7.load_pem_pkcs7_certificates):
+        try:
+            certs = loader(raw)
+            if certs:
+                return certs[0]
+        except ValueError:
+            pass
+    raise ValueError(f"unrecognised certificate format ({raw[:20]!r})")
+
+
 def _aia_bundle(host: str) -> str | None:
     """Build a CA bundle containing certifi roots + intermediates fetched via AIA."""
     if host in _bundles:
@@ -48,10 +68,7 @@ def _aia_bundle(host: str) -> str | None:
             if not urls:
                 break
             raw = requests.get(urls[0], timeout=TIMEOUT).content
-            try:
-                cert = x509.load_der_x509_certificate(raw)
-            except ValueError:
-                cert = x509.load_pem_x509_certificate(raw)
+            cert = _load_any_cert(raw)
             extra.append(cert.public_bytes(Encoding.PEM))
             if cert.issuer == cert.subject:
                 break
@@ -95,8 +112,13 @@ def get(url: str, attempts: int = 3, stream: bool = False) -> requests.Response:
     raise last
 
 
-def download(url: str, max_bytes: int = 15 * 1024 * 1024) -> bytes:
-    r = get(url, stream=True)
+def download(url: str, max_bytes: int = 15 * 1024 * 1024, referer: str = "") -> bytes:
+    if referer:
+        session.headers["Referer"] = referer  # some boards (ASP.NET) only serve files to their own pages
+    try:
+        r = get(url, stream=True)
+    finally:
+        session.headers.pop("Referer", None)
     r.raise_for_status()
     data = b""
     for chunk in r.iter_content(64 * 1024):

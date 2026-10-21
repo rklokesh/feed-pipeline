@@ -127,6 +127,30 @@ def links_with_browser(url: str, prefix: str = "") -> list[dict]:
     return merged
 
 
+def browser_download(board: str, url: str) -> bytes | None:
+    """Fetch a file the way a visitor would: open the board first, then the file, in one browser session."""
+    from playwright.sync_api import sync_playwright
+
+    try:
+        with sync_playwright() as p:
+            b = p.chromium.launch()
+            ctx = b.new_context(user_agent=USER_AGENT, accept_downloads=True)
+            page = ctx.new_page()
+            page.goto(board, timeout=90_000, wait_until="domcontentloaded")
+            resp = ctx.request.get(url, headers={"Referer": board}, timeout=90_000)
+            body = resp.body()
+            if not body.startswith(b"%PDF"):
+                page.goto(url, timeout=90_000, wait_until="networkidle")
+                for frame in page.frames:
+                    if ".pdf" in frame.url.lower():
+                        body = ctx.request.get(frame.url).body()
+                        break
+            b.close()
+            return body
+    except Exception:  # noqa: BLE001
+        return None
+
+
 def embedded_pdf(data: bytes, base: str) -> str | None:
     """If a 'PDF' link returned an HTML viewer page, find the real PDF inside it."""
     try:
@@ -162,7 +186,9 @@ def process(src: dict, item: dict, ai_budget: list[int], hashes: dict) -> dict:
         rec["status"] = "ignored"
         return rec
     try:
-        data = download(item["url"])
+        data = download(item["url"], referer=src["url"])
+        if not data.startswith(b"%PDF") and src.get("download") == "browser":
+            data = browser_download(src["url"], item["url"]) or data
         if not data.startswith(b"%PDF"):
             inner = embedded_pdf(data, item["url"])  # e.g. UPPSC's Open_PDF_DB viewer page
             if inner:
