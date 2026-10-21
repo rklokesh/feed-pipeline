@@ -44,7 +44,7 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 .top button { all: unset; cursor: pointer; }
 .top button:hover { text-decoration: underline; text-underline-offset: 3px; }
 
-.row { display: grid; grid-template-columns: 7.5rem 1fr 8rem 7rem 1.25rem; gap: 0 16px; align-items: baseline; }
+.row { display: grid; grid-template-columns: 5rem 1fr 7rem 6.5rem 5.5rem; gap: 0 16px; align-items: baseline; }
 main { margin-top: 48px; flex: 1; }
 .head { color: var(--grey); padding-bottom: 4px; }
 .tabs { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: 28px; }
@@ -64,7 +64,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 @media (max-width: 640px) {
   .top { grid-template-columns: 1fr auto; }
   .hide-sm { display: none; }
-  .row { grid-template-columns: 5.4rem 1fr 1rem; }
+  .row { grid-template-columns: 1fr 4.5rem; }
 }
 </style>
 </head>
@@ -87,7 +87,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       <button type="button" data-cat="Result" aria-pressed="false">Results</button>
       <button type="button" data-cat="Answer key" aria-pressed="false">Answer keys</button>
     </div>
-    <div class="row head"><span>Date</span><span data-en="Notice" data-hi="सूचना">Notice</span><span class="hide-sm">Organisation</span><span class="hide-sm right">Type</span><span></span></div>
+    <div class="row head"><span class="hide-sm">Posted</span><span data-en="Notice" data-hi="सूचना">Notice</span><span class="hide-sm">Organisation</span><span class="hide-sm">Type</span><span>Last date</span></div>
     <ul class="list" id="list"></ul>
   </main>
 
@@ -101,30 +101,28 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 (() => {
   // Sample entries from the watcher's test runs (Oct 2026). Only extracted values; not verified.
   const TODAY = new Date();
+  // posted = date on the official notice where known, otherwise the day we found it.
   const ITEMS = [
-    { kind: "job", type: "Job", title: "UGC NET December 2026", org: "NTA", last: "2026-10-28", url: "https://nta.ac.in" },
-    { kind: "job", type: "Job", title: "SWAYAM exam, online application", org: "NTA", last: "2026-11-01", url: "https://nta.ac.in" },
-    { kind: "job", type: "Job", title: "NIFT Entrance Exam 2027", org: "NTA", last: "2026-11-16", url: "https://nta.ac.in" },
-    { kind: "job", type: "Job", title: "Junior Engineer Examination 2026", org: "SSC", last: null, url: "https://ssc.gov.in" },
-    { kind: "job", type: "Job", title: "Lecturer, Textile Technology", org: "UPPSC", last: null, url: "https://uppsc.up.nic.in" },
-    { kind: "up", type: "Answer key", title: "Selection Posts Phase XIV, response sheets", org: "SSC", seen: "2026-10-21", url: "https://ssc.gov.in" },
-    { kind: "up", type: "Result", title: "Constable (GD) in CAPFs, SSF and Rifleman (GD)", org: "SSC", seen: "2026-10-21", url: "https://ssc.gov.in" },
-    { kind: "up", type: "Result", title: "Combined Higher Secondary (10+2) Level Exam 2025", org: "SSC", seen: "2026-10-21", url: "https://ssc.gov.in" },
-    { kind: "up", type: "Admit card", title: "Stenographer (आशुलिपिक), exam start date", org: "BPSC", seen: "2026-10-21", url: "https://bpsc.bihar.gov.in" },
-    { kind: "up", type: "Result", title: "Assistant Teacher, Advt. A-5/E-1/2025", org: "UPPSC", seen: "2026-10-21", url: "https://uppsc.up.nic.in" },
+    { type: "Job", title: "UGC NET December 2026", org: "NTA", posted: "2026-10-08", last: "2026-10-28", url: "https://nta.ac.in" },
+    { type: "Job", title: "SWAYAM exam, online application", org: "NTA", posted: "2026-10-09", last: "2026-11-01", url: "https://nta.ac.in" },
+    { type: "Job", title: "NIFT Entrance Exam 2027", org: "NTA", posted: "2026-10-16", last: "2026-11-16", url: "https://nta.ac.in" },
+    { type: "Job", title: "Junior Engineer Examination 2026", org: "SSC", posted: "2026-10-21", last: null, url: "https://ssc.gov.in" },
+    { type: "Job", title: "Lecturer, Textile Technology", org: "UPPSC", posted: "2026-10-21", last: null, url: "https://uppsc.up.nic.in" },
+    { type: "Answer key", title: "Selection Posts Phase XIV, response sheets", org: "SSC", posted: "2026-10-21", url: "https://ssc.gov.in" },
+    { type: "Result", title: "Constable (GD) in CAPFs, SSF and Rifleman (GD)", org: "SSC", posted: "2026-10-21", url: "https://ssc.gov.in" },
+    { type: "Result", title: "Combined Higher Secondary (10+2) Level Exam 2025", org: "SSC", posted: "2026-10-21", url: "https://ssc.gov.in" },
+    { type: "Admit card", title: "Stenographer (आशुलिपिक), exam start date", org: "BPSC", posted: "2026-10-21", url: "https://bpsc.bihar.gov.in" },
+    { type: "Result", title: "Assistant Teacher, Advt. A-5/E-1/2025", org: "UPPSC", posted: "2026-10-21", url: "https://uppsc.up.nic.in" },
   ];
   const fmt = iso => new Date(iso + "T00:00:00").toLocaleDateString("en-IN", { day: "numeric", month: "short" });
   const left = iso => Math.ceil((new Date(iso + "T23:59:59") - TODAY) / 864e5);
   const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const date = i => i.kind === "job"
-    ? (i.last ? `${fmt(i.last)}<span class="g"> · ${left(i.last)}d</span>` : '<span class="g">See notice</span>')
-    : `<span class="g">${fmt(i.seen)}</span>`;
 
   let cat = "all";
   function render() {
-    const rows = ITEMS.filter(i => (i.kind !== "job" || !i.last || left(i.last) >= 0) && (cat === "all" || i.type === cat));
+    const rows = [...ITEMS].sort((a, b) => b.posted.localeCompare(a.posted)).filter(i => (!i.last || left(i.last) >= 0) && (cat === "all" || i.type === cat));
     document.getElementById("list").innerHTML = rows.map(i =>
-      `<li><a class="row" href="${i.url}" target="_blank" rel="noopener"><span class="num" style="white-space:nowrap">${date(i)}</span><span class="t">${esc(i.title)}</span><span class="hide-sm g">${i.org}</span><span class="hide-sm right g">${i.type}</span><span class="right">→</span></a></li>`
+      `<li><a class="row" href="${i.url}" target="_blank" rel="noopener"><span class="num hide-sm">${fmt(i.posted)}</span><span class="t">${esc(i.title)}</span><span class="hide-sm g">${i.org}</span><span class="hide-sm g">${i.type}</span><span class="num">${i.last ? fmt(i.last) : "—"}</span></a></li>`
     ).join("") || '<li class="empty">Nothing here right now. New notices appear as soon as they are published.</li>';
   }
   document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => {
