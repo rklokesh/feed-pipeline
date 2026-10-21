@@ -73,12 +73,10 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 main { margin-top: 36px; flex: 1; }
 .head { color: var(--grey); background: var(--soft); padding: 7px 8px; border-bottom: 1px solid color-mix(in srgb, var(--ink) 28%, var(--page)); }
 .tabs { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: 14px; }
-.search { display: block; margin-bottom: 36px; }
-.search input { all: unset; box-sizing: border-box; width: 100%; padding: 13px 0; font-size: 1.0625rem; color: var(--ink); }
+.search { display: block; margin-bottom: 40px; }
+.search input { all: unset; box-sizing: border-box; width: 100%; padding: 6px 0; border-bottom: 1px solid var(--line); }
 .search input::placeholder { color: var(--grey); }
-.search { border: 1px solid color-mix(in srgb, var(--ink) 22%, var(--page)); border-radius: 8px; background: var(--page); transition: border-color .15s ease, box-shadow .15s ease; }
-.search:hover { border-color: color-mix(in srgb, var(--ink) 40%, var(--page)); }
-.search:focus-within { border-color: var(--ink); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ink) 8%, transparent); }
+.search input:focus { border-bottom-color: var(--ink); }
 .tabs button { all: unset; cursor: pointer; color: var(--grey); transition: color .25s ease; }
 .list { transition: opacity .18s ease; }
 .list.fade { opacity: 0; }
@@ -109,11 +107,11 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 
 /* inline search: plain grey words at the right, never boxes */
 .search { position: relative; }
-.search input { padding-right: 70px; padding-left: 46px; }
-.sicon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--ink); pointer-events: none; }
+.search input { padding-right: 60px; padding-left: 28px; }
+.sicon { position: absolute; left: 0; top: 50%; transform: translateY(-50%); color: var(--grey); pointer-events: none; }
 .search:focus-within .sicon { color: var(--ink); }
 .search input::-webkit-search-cancel-button, .search input::-webkit-search-decoration { -webkit-appearance: none; appearance: none; display: none; }
-.sx { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); all: unset; position: absolute; right: 14px; top: 50%; transform: translateY(-50%); cursor: pointer; color: var(--grey); }
+.sx { position: absolute; right: 0; top: 50%; transform: translateY(-50%); all: unset; position: absolute; right: 0; top: 50%; transform: translateY(-50%); cursor: pointer; color: var(--grey); }
 .sx:hover { color: var(--ink); }
 
 
@@ -148,7 +146,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       <button type="button" data-cat="Answer key" aria-pressed="false"><span data-t="keys">Answer keys</span><span class="c"></span></button>
     </div>
     <label class="search" for="q"><span style="position:absolute;left:-9999px" data-t="searchLabel">Search notices</span>
-      <svg class="sicon" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 20.5 20.5"/></svg>
+      <svg class="sicon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 20.5 20.5"/></svg>
       <input id="q" type="search" placeholder="Search: SSC, UGC NET, 12th pass, Bihar…" autocomplete="off" data-t-ph="searchPh">
       <button type="button" class="sx" id="kHint" hidden data-t="clear">Clear</button>
     </label>
