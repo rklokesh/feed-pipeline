@@ -19,15 +19,24 @@
   --grey: #76726B;
   --line: #E5E1D8;
   --soft: #F4F1EB;
+  --calm: #3E6B4E; --calm-bg: #EEF4EE;
+  --warm: #9A5410; --warm-bg: #FBF0E2;
+  --hot: #B23A1A; --hot-bg: #FCEBE5;
   --font: "Helvetica Neue", Helvetica, Arial, system-ui, -apple-system, "Segoe UI", Roboto, "Kohinoor Devanagari", "Nirmala UI", "Noto Sans Devanagari", sans-serif;
 }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; color-scheme: dark; }
+  :root:not([data-theme="light"]) { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
 }
-:root[data-theme="dark"] { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; color-scheme: dark; }
+:root[data-theme="dark"] { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
 
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
+/* tags: one small framed shape used for days left, the K shortcut and the chosen category */
+.tag { display: inline-block; border: 1px solid currentColor; border-radius: 4px; padding: 0 5px; line-height: 1.2; font-size: 0.9375rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.tag.calm { color: var(--calm); background: var(--calm-bg); border-color: color-mix(in srgb, var(--calm) 35%, transparent); }
+.tag.warm { color: var(--warm); background: var(--warm-bg); border-color: color-mix(in srgb, var(--warm) 35%, transparent); }
+.tag.hot { color: var(--hot); background: var(--hot-bg); border-color: color-mix(in srgb, var(--hot) 40%, transparent); }
+
 body {
   background: var(--page); color: var(--ink);
   font-family: var(--font); font-size: 1rem; line-height: 1.35;
@@ -41,6 +50,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; text-decoratio
 :focus-visible { outline: 1px solid var(--ink); outline-offset: 2px; }
 ul, p { margin: 0; padding: 0; list-style: none; }
 .g { color: var(--grey); }
+.show-sm { display: none; }
 .num { font-variant-numeric: tabular-nums; }
 
 .top { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; padding-bottom: 6px; }
@@ -54,16 +64,16 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 .row { display: grid; grid-template-columns: 5rem 1fr 6.5rem 6.5rem 10.5rem; gap: 0 16px; align-items: baseline; }
 main { margin-top: 36px; flex: 1; }
 .head { color: var(--grey); padding-bottom: 4px; }
-.tabs { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: 14px; }
+.tabs { display: flex; flex-wrap: wrap; gap: 6px 8px; margin-bottom: 14px; }
 .search { display: block; margin-bottom: 32px; }
 .search input { all: unset; box-sizing: border-box; width: 100%; padding: 6px 0; border-bottom: 1px solid var(--line); }
 .search input::placeholder { color: var(--grey); }
 .search input:focus { border-bottom-color: var(--ink); }
-.tabs button { all: unset; cursor: pointer; color: var(--grey); transition: color .25s ease; }
+.tabs button { all: unset; cursor: pointer; color: var(--grey); padding: 1px 8px; border: 1px solid transparent; border-radius: 4px; transition: color .2s ease, border-color .2s ease; }
 .list { transition: opacity .18s ease; }
 .list.fade { opacity: 0; }
 @media (prefers-reduced-motion: reduce) { .list, .tabs button { transition: none; } }
-.tabs button[aria-pressed="true"] { color: var(--ink); }
+.tabs button[aria-pressed="true"] { color: var(--ink); border-color: var(--ink); }
 .tabs button:hover { color: var(--ink); }
 .tabs .c { margin-left: 5px; font-variant-numeric: tabular-nums; }
 .tabs .c:empty { display: none; }
@@ -81,10 +91,11 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 
 /* inline search: plain grey words at the right, never boxes */
 .search { position: relative; }
-.search input { padding-right: 90px; }
+.search input { padding-right: 96px; }
 .search input::-webkit-search-cancel-button, .search input::-webkit-search-decoration { -webkit-appearance: none; appearance: none; display: none; }
 .sx { position: absolute; right: 0; top: 50%; transform: translateY(-50%); all: unset; position: absolute; right: 0; top: 50%; transform: translateY(-50%); cursor: pointer; color: var(--grey); }
-.sx:hover { color: var(--ink); }
+.sx { border: 1px solid var(--line); border-radius: 4px; padding: 0 7px; line-height: 1.5; font-size: 0.875rem; }
+.sx:hover { color: var(--ink); border-color: var(--grey); }
 
 /* search pop-up: same sheet as the page. Square, hairlines, no shadow, no tint. */
 .pal-back { position: fixed; inset: 0; z-index: 50; background: color-mix(in srgb, var(--page) 88%, transparent); display: flex; justify-content: center; align-items: flex-start;
@@ -116,6 +127,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   .top > .g { font-size: 0.875rem; }
   .top .logo img { width: 88px; height: 88px; }
   .hide-sm { display: none; }
+  .show-sm { display: inline; }
   .row { grid-template-columns: 1fr 5.5rem; }
 }
 </style>
@@ -186,12 +198,17 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   // Last date: the date, then plain days left. Jobs with no date found say so; other notices have none.
+  // days-left tag: calm when there is time, warm under a week, hot in the last 3 days
+  function daysTag(iso, short) {
+    const d = left(iso);
+    const cls = d <= 3 ? "hot" : d <= 7 ? "warm" : "calm";
+    const txt = d === 0 ? "Last day" : short ? `${d} day${d === 1 ? "" : "s"}` : `${d} day${d === 1 ? "" : "s"} left`;
+    return `<span class="tag ${cls}">${txt}</span>`;
+  }
   function lastCell(i) {
     if (i.type !== "Job") return "—";
     if (!i.last) return "In notice";
-    const d = left(i.last);
-    const rest = d === 0 ? "today" : d === 1 ? "1 day left" : d + " days left";
-    return `${fmt(i.last)}<span class="hide-sm"> · ${rest}</span>`;
+    return `<span class="hide-sm">${fmt(i.last)} ${daysTag(i.last)}</span><span class="show-sm">${daysTag(i.last, true)}</span>`;
   }
   let cat = "all", q = "";
   const words = i => [i.title, i.org, i.type].join(" ").toLowerCase();

@@ -15,14 +15,24 @@
 /* Notice page: the same ruled sheet as the homepage. Title, one status line, then key facts as label/value rows. */
 :root {
   --page: #FFFFFF; --ink: #1D1C1B; --grey: #76726B; --line: #E5E1D8; --soft: #F4F1EB;
+  --calm: #3E6B4E; --calm-bg: #EEF4EE;
+  --warm: #9A5410; --warm-bg: #FBF0E2;
+  --hot: #B23A1A; --hot-bg: #FCEBE5;
+
   --font: "Helvetica Neue", Helvetica, Arial, system-ui, -apple-system, "Segoe UI", Roboto, "Kohinoor Devanagari", "Nirmala UI", "Noto Sans Devanagari", sans-serif;
 }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; color-scheme: dark; }
+  :root:not([data-theme="light"]) { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
 }
-:root[data-theme="dark"] { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; color-scheme: dark; }
+:root[data-theme="dark"] { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
+/* tags: one small framed shape used for days left, the K shortcut and the chosen category */
+.tag { display: inline-block; border: 1px solid currentColor; border-radius: 4px; padding: 0 5px; line-height: 1.2; font-size: 0.9375rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.tag.calm { color: var(--calm); background: var(--calm-bg); border-color: color-mix(in srgb, var(--calm) 35%, transparent); }
+.tag.warm { color: var(--warm); background: var(--warm-bg); border-color: color-mix(in srgb, var(--warm) 35%, transparent); }
+.tag.hot { color: var(--hot); background: var(--hot-bg); border-color: color-mix(in srgb, var(--hot) 40%, transparent); }
+
 body { background: var(--page); color: var(--ink); font-family: var(--font); font-size: 1rem; line-height: 1.35;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); -webkit-font-smoothing: antialiased; }
 .sheet { max-width: 980px; margin: 0 auto; padding-block: 14px 48px; min-height: 100vh; display: flex; flex-direction: column; }
@@ -45,7 +55,7 @@ main { margin-top: 36px; flex: 1; display: grid; gap: 40px; align-content: start
 .crumb { color: var(--grey); }
 .title { display: grid; gap: 6px; }
 h1 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; text-wrap: balance; }
-.status { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.status { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; }
 
 /* label / value rows */
 .kv { display: grid; }
@@ -134,7 +144,10 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   const d = Math.ceil((last - new Date()) / 864e5);
   const el = document.getElementById("left");
   if (d < 0) { el.previousElementSibling.textContent = "Applications closed"; }
-  else el.textContent = "Last date 28 Oct 2026 · " + (d === 0 ? "closes today" : d === 1 ? "1 day left" : d + " days left");
+  else {
+    const cls = d <= 3 ? "hot" : d <= 7 ? "warm" : "calm";
+    el.innerHTML = 'Last date 28 Oct 2026 <span class="tag ' + cls + '">' + (d === 0 ? "Last day" : d === 1 ? "1 day left" : d + " days left") + "</span>";
+  }
 })();
 </script>
 
