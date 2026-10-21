@@ -91,7 +91,9 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 
 /* inline search: plain grey words at the right, never boxes */
 .search { position: relative; }
-.search input { padding-right: 60px; }
+.search input { padding-right: 60px; padding-left: 24px; }
+.sicon { position: absolute; left: 0; top: 50%; transform: translateY(-50%); color: var(--grey); pointer-events: none; }
+.search:focus-within .sicon { color: var(--ink); }
 .search input::-webkit-search-cancel-button, .search input::-webkit-search-decoration { -webkit-appearance: none; appearance: none; display: none; }
 .sx { position: absolute; right: 0; top: 50%; transform: translateY(-50%); all: unset; position: absolute; right: 0; top: 50%; transform: translateY(-50%); cursor: pointer; color: var(--grey); }
 .sx:hover { color: var(--ink); }
@@ -127,7 +129,8 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       <button type="button" data-cat="Answer key" aria-pressed="false">Answer keys<span class="c"></span></button>
     </div>
     <label class="search" for="q"><span style="position:absolute;left:-9999px">Search notices</span>
-      <input id="q" type="search" placeholder="Start typing to search: SSC, UGC NET, teacher…" autocomplete="off" data-en-ph="Start typing to search: SSC, UGC NET, teacher…" data-hi-ph="खोजने के लिए लिखें: SSC, UGC NET, शिक्षक…">
+      <svg class="sicon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search: SSC, UGC NET, 12th pass, Bihar…" autocomplete="off" data-en-ph="Search: SSC, UGC NET, 12th pass, Bihar…" data-hi-ph="खोजें: SSC, UGC NET, 12वीं पास, बिहार…">
           <button type="button" class="sx" id="kHint" hidden>Clear</button>
     </label>
     <div class="row head"><span class="hide-sm">Posted</span><span data-en="Notice" data-hi="सूचना">Notice</span><span class="hide-sm">Organisation</span><span class="hide-sm">Type</span><span>Last date / status</span></div>
