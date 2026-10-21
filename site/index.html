@@ -52,7 +52,10 @@ main { margin-top: 48px; flex: 1; }
 .search input { all: unset; box-sizing: border-box; width: 100%; padding: 6px 0; border-bottom: 1px solid var(--line); }
 .search input::placeholder { color: var(--grey); }
 .search input:focus { border-bottom-color: var(--ink); }
-.tabs button { all: unset; cursor: pointer; color: var(--grey); }
+.tabs button { all: unset; cursor: pointer; color: var(--grey); transition: color .25s ease; }
+.list { transition: opacity .18s ease; }
+.list.fade { opacity: 0; }
+@media (prefers-reduced-motion: reduce) { .list, .tabs button { transition: none; } }
 .tabs button[aria-pressed="true"] { color: var(--ink); }
 .tabs button:hover { color: var(--ink); }
 .empty { padding: 4px 0; color: var(--grey); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -127,18 +130,38 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 
   let cat = "all", q = "";
   const words = i => [i.title, i.org, i.type].join(" ").toLowerCase();
+  const qmatch = i => q.split(/\s+/).every(w => words(i).includes(w));
+  const live = i => !i.last || left(i.last) >= 0;
+  function setCat(c) {
+    cat = c;
+    document.querySelectorAll(".tabs button").forEach(x => x.setAttribute("aria-pressed", String(x.dataset.cat === c)));
+  }
+  // If the search finds nothing in the chosen category but finds it elsewhere, move to where it is.
+  function followSearch() {
+    if (!q || cat === "all") return;
+    const hits = ITEMS.filter(i => live(i) && qmatch(i));
+    if (!hits.length || hits.some(i => i.type === cat)) return;
+    const types = [...new Set(hits.map(i => i.type))];
+    setCat(types.length === 1 ? types[0] : "all");
+  }
   function render() {
     const rows = [...ITEMS].sort((a, b) => b.posted.localeCompare(a.posted)).filter(i => (!i.last || left(i.last) >= 0) && (cat === "all" || i.type === cat) && q.split(/\s+/).every(w => words(i).includes(w)));
     document.getElementById("list").innerHTML = rows.map(i =>
       `<li><a class="row" href="${i.url}" target="_blank" rel="noopener"><span class="num hide-sm">${fmt(i.posted)}</span><span class="t">${esc(i.title)}</span><span class="hide-sm g">${i.org}</span><span class="hide-sm g">${i.type}</span><span class="num">${i.last ? fmt(i.last) : "—"}</span></a></li>`
     ).join("") || (q ? `<li class="empty">Nothing matches "${esc(q)}". Try a shorter word, like an organisation name.</li>` : '<li class="empty">Nothing here right now. New notices appear as soon as they are published.</li>');
   }
-  document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => {
-    cat = b.dataset.cat;
-    document.querySelectorAll(".tabs button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
-    render();
-  }));
-  document.getElementById("q").addEventListener("input", e => { q = e.target.value.trim().toLowerCase(); render(); });
+  const list = document.getElementById("list");
+  function update() {
+    list.classList.add("fade");
+    requestAnimationFrame(() => { render(); requestAnimationFrame(() => list.classList.remove("fade")); });
+  }
+  document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => { setCat(b.dataset.cat); update(); }));
+  document.getElementById("q").addEventListener("input", e => {
+    q = e.target.value.trim().toLowerCase();
+    const before = cat;
+    followSearch();
+    if (cat !== before) update(); else render();
+  });
   render();
 
   let hi = false;
