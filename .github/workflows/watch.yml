@@ -46,7 +46,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          if [ "${{ inputs.ai_check }}" = "true" ]; then python scripts/ai_check.py; exit 0; fi
+          if [ "${{ inputs.ai_check }}" = "true" ]; then mkdir -p data && python scripts/ai_check.py 2>&1 | tee data/ai-check.txt; exit 0; fi
           ARGS="--runner github"
           if [ -n "${{ inputs.only }}" ]; then ARGS="$ARGS --only ${{ inputs.only }}"; fi
           if [ "${{ inputs.reextract }}" = "true" ]; then ARGS="$ARGS --reextract"; fi
