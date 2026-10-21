@@ -1,0 +1,33 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://sbi.bank.in/web/careers/current-openings",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "CIATES (CUSTOMER SUPPORT AND SALES) IN STATE BANK OF INDIA [ADVERTISEMENT NO. CRPD/CR/2026-27/17] “ACQUAINT YOURSELF BOOKLET” FOR PRELIMINARY EXAMINATION INTRODUCTION This Book",
+      "source": "rule",
+      "value": "CRPD/CR/2026-27/17"
+    },
+    "apply_or_official_url": {
+      "evidence": "r Samachar issue dated 29.08.2026 and on the Bank’s website https://sbi.bank.in/web/careers/current-openings. The terms and conditions, period of probation, emoluments etc. were given in th",
+      "source": "rule",
+      "value": "https://sbi.bank.in/web/careers/current-openings"
+    }
+  },
+  "first_seen": "2026-10-21T19:36:36+00:00",
+  "id": "e769c1df5b70",
+  "kind": "other",
+  "org": "SBI",
+  "pdf": {
+    "bytes": 317889,
+    "pages": 9,
+    "sha256": "83bf72e55f7bd884ebcdd72bbfcbe7cb041c728e2cc0d2079db5e90588ed3f00",
+    "text_kind": "text"
+  },
+  "source_id": "sbi-careers",
+  "status": "pending_review",
+  "title": "ENGLISH)",
+  "url": "https://sbi.bank.in/webfiles/uploads/files_2627/09/SBI_JA-Customer_Support_Sales-IH_Pre-2026-27_Eng.pdf"
+}

@@ -1,0 +1,28 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://www.ncs.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "ion SWAYAM Offers courses from Class 9th to Post Graduation https://swayam.gov.in/ with rich e-learning content in the form of:  e-Tutorial: Audio, Video, Virtua",
+      "source": "rule",
+      "value": "https://swayam.gov.in/"
+    }
+  },
+  "first_seen": "2026-10-21T19:36:36+00:00",
+  "id": "5dd66dd1b633",
+  "kind": "other",
+  "org": "NCS",
+  "pdf": {
+    "bytes": 657380,
+    "pages": 5,
+    "sha256": "b9fb155ba97d4d5ee5e02dfcac45ef0f5b56d07232f1cb9fe539a574ff7fde3a",
+    "text_kind": "text"
+  },
+  "source_id": "ncs-home",
+  "status": "pending_review",
+  "title": "Training Document",
+  "url": "https://ncsdocsstorage.blob.core.windows.net/ncsdocsstorage/common%2Fwhatsnew%2Fnewsletter_1786551484415.pdf?sv=2023-11-03&spr=https&st=2026-08-12T16%3A13%3A04Z&se=2028-08-12T16%3A18%3A04Z&sr=b&sp=r&sig=J6d35Ykkg%2FeUOZf0PfJoDniyrL1B8z5ZUIctdiE5UXc%3D"
+}
