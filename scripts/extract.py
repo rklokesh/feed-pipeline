@@ -148,16 +148,13 @@ For each non-null key also give an "evidence" object mapping the key to the exac
 
 def _providers() -> list[dict]:
     out = []
-    if os.environ.get("GITHUB_TOKEN") and os.environ.get("AI_DISABLE_GITHUB") != "1":
-        gh_headers = {"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"}
-        out.append({"name": "github-models", "url": "https://models.github.ai/inference/chat/completions",
-                    "key": os.environ["GITHUB_TOKEN"], "model": os.environ.get("GITHUB_MODEL", "openai/gpt-4o-mini"),
-                    "headers": gh_headers})
-        out.append({"name": "github-models-azure", "url": "https://models.inference.ai.azure.com/chat/completions",
-                    "key": os.environ["GITHUB_TOKEN"], "model": os.environ.get("GITHUB_MODEL_AZURE", "gpt-4o-mini")})
     if os.environ.get("GEMINI_API_KEY"):
         out.append({"name": "gemini", "url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
-                    "key": os.environ["GEMINI_API_KEY"], "model": os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")})
+                    "key": os.environ["GEMINI_API_KEY"], "model": os.environ.get("GEMINI_MODEL", "gemini-flash-latest")})
+    if os.environ.get("GITHUB_TOKEN") and os.environ.get("AI_DISABLE_GITHUB") != "1":
+        out.append({"name": "github-models", "url": "https://models.github.ai/inference/chat/completions",
+                    "key": os.environ["GITHUB_TOKEN"], "model": os.environ.get("GITHUB_MODEL", "openai/gpt-4o-mini"),
+                    "headers": {"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"}})
     return out
 
 
