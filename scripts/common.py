@@ -24,6 +24,7 @@ session = requests.Session()
 session.headers.update({"User-Agent": USER_AGENT, "Accept-Language": "en-IN,en;q=0.9,hi;q=0.8"})
 
 _bundles: dict[str, str] = {}  # host -> CA bundle path with repaired chain
+last_repair_error: dict[str, str] = {}  # host -> why chain repair failed (for health.json)
 
 
 def _aia_bundle(host: str) -> str | None:
@@ -55,6 +56,7 @@ def _aia_bundle(host: str) -> str | None:
             if cert.issuer == cert.subject:
                 break
         if not extra:
+            last_repair_error[host] = "certificate has no AIA issuer link"
             return None
         fd, path = tempfile.mkstemp(suffix=".pem")
         with os.fdopen(fd, "wb") as f:
@@ -63,7 +65,8 @@ def _aia_bundle(host: str) -> str | None:
                 f.write(b"\n" + e)
         _bundles[host] = path
         return path
-    except Exception:  # noqa: BLE001
+    except Exception as e:  # noqa: BLE001
+        last_repair_error[host] = f"{type(e).__name__}: {e}"[:200]
         return None
 
 
@@ -83,6 +86,7 @@ def get(url: str, attempts: int = 3, stream: bool = False) -> requests.Response:
                     return session.get(url, timeout=TIMEOUT, stream=stream, verify=bundle)
                 except requests.RequestException as e2:
                     last = e2
+                    last_repair_error[host] = f"chain repaired but still failing: {e2}"[-200:]
             break  # a real certificate problem: don't hammer the site
         except requests.RequestException as e:
             last = e

@@ -106,7 +106,7 @@ def rule_extract(text: str) -> dict:
             if ds:
                 f[key] = {"value": ds[0], "source": "rule", "evidence": _snip(text, m.start(), m.end() + 60)}
 
-    m = re.search(r"(?:advt\.?|advertisement|notification)\s*(?:no\.?|number)\s*[:.\-]?\s*([A-Z0-9][A-Z0-9/().\-\s]{2,40})", text, re.I)
+    m = re.search(r"(?:advt\.?|advertisement|notification)\s*(?:no\.?|number)\s*[:.\-]?\s*([A-Z0-9][A-Z0-9/().\- ]{2,40})", text, re.I)
     if m:
         f["advt_no"] = {"value": m[1].strip(" .-"), "source": "rule", "evidence": _snip(text, m.start(), m.end())}
 
@@ -157,6 +157,20 @@ def _providers() -> list[dict]:
     return out
 
 
+def _json_from(content: str) -> dict:
+    """Models sometimes wrap JSON in ``` fences or add a sentence; take the outermost object."""
+    content = content.strip()
+    if content.startswith("```"):
+        content = re.sub(r"^```(?:json)?\s*|\s*```$", "", content)
+    try:
+        return json.loads(content)
+    except json.JSONDecodeError:
+        i, j = content.find("{"), content.rfind("}")
+        if i >= 0 and j > i:
+            return json.loads(content[i: j + 1])
+        raise
+
+
 def ai_extract(text: str) -> tuple[dict, str]:
     """Try each free provider in turn; returns (fields, provider) or ({}, reason)."""
     reasons = []
@@ -169,7 +183,7 @@ def ai_extract(text: str) -> tuple[dict, str]:
             if r.status_code != 200:
                 reasons.append(f"{p['name']}:{r.status_code}")
                 continue
-            data = json.loads(r.json()["choices"][0]["message"]["content"])
+            data = _json_from(r.json()["choices"][0]["message"]["content"])
             ev = data.pop("evidence", {}) or {}
             fields = {k: {"value": v, "source": "ai", "provider": p["name"], "evidence": ev.get(k, "")}
                       for k, v in data.items() if v not in (None, "", [], {})}
@@ -206,9 +220,14 @@ KIND_RULES = [
 ]
 
 
-def classify(title: str) -> str:
+def classify(title: str, text_head: str = "") -> str:
+    """Classify by title first; if the title is vague, use the first part of the PDF."""
     t = title.lower()
     for kind, rx in KIND_RULES:
         if re.search(rx, t):
+            return kind
+    head = text_head[:1500].lower()
+    for kind, rx in KIND_RULES:
+        if kind != "noise" and re.search(rx, head):
             return kind
     return "other"

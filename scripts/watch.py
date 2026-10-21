@@ -27,12 +27,13 @@ import yaml
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.dirname(__file__))
-from common import USER_AGENT, download, get  # noqa: E402
+from common import USER_AGENT, download, get, last_repair_error  # noqa: E402
 from extract import classify, extract, pdf_text  # noqa: E402
 
 DATA = "data"
 PDF_HINTS = re.compile(r"(\.pdf($|\?))|open_pdf|/api/attachment/|writereaddata|/uploads?/", re.I)
 GENERIC = re.compile(r"^(click\s*here|view|download|read\s*more|details?|pdf|new|link|open|here|more)\W*$", re.I)
+FRAGMENT = re.compile(r"\(\s*\d+(\.\d+)?\s*[KM]B\s*\)|^[a-z]", re.I)
 NOW = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
 
@@ -68,14 +69,15 @@ def links_from_html(html: str, base: str) -> list[dict]:
             continue
         seen.add(url)
         title = clean(a.get_text(" ")) or clean(a.get("title", ""))
-        if len(title) < 8 or GENERIC.match(title):  # "Click here", "View" -> use the row/item text
+        if len(title) < 25 or GENERIC.match(title) or FRAGMENT.search(title) or not title[:1].isalnum():
+            # "Click here", "English) (959 KB)" -> use the whole row/item text instead
             parent = a.find_parent(["tr", "li", "p", "div"])
             title = clean(parent.get_text(" ")) if parent else title
         out.append({"url": url, "title": title[:300] or os.path.basename(urlparse(url).path)})
     return out
 
 
-def links_with_browser(url: str) -> list[dict]:
+def links_with_browser(url: str, prefix: str = "") -> list[dict]:
     """For JS-rendered boards (e.g. SSC): render the page and also read JSON the page loads."""
     from playwright.sync_api import sync_playwright
 
@@ -90,7 +92,16 @@ def links_with_browser(url: str) -> list[dict]:
             for v in obj:
                 walk(v, ctx)
         elif isinstance(obj, str) and PDF_HINTS.search(obj):
-            found.append({"url": urljoin(url, obj), "title": ctx[:300]})
+            path = obj.replace("\\", "/")
+            if path.startswith("http"):
+                full = path
+            elif prefix and "/" in path:
+                full = prefix + path.lstrip("/")
+            elif "/" in path:
+                full = urljoin(url, path)
+            else:
+                return  # a bare file name with no folder can't be resolved reliably
+            found.append({"url": full, "title": ctx[:300]})
 
     with sync_playwright() as p:
         b = p.chromium.launch()
@@ -108,14 +119,41 @@ def links_with_browser(url: str) -> list[dict]:
         html = page.content()
         b.close()
     merged, seen = [], set()
-    for item in links_from_html(html, url) + found:
+    html_links = [i for i in links_from_html(html, url) if not (prefix and "\\" in i["url"])]
+    for item in found + html_links:
         if item["url"] not in seen:
             seen.add(item["url"])
             merged.append(item)
     return merged
 
 
-def process(src: dict, item: dict, ai_budget: list[int]) -> dict:
+def embedded_pdf(data: bytes, base: str) -> str | None:
+    """If a 'PDF' link returned an HTML viewer page, find the real PDF inside it."""
+    try:
+        soup = BeautifulSoup(data[:500_000].decode("utf-8", "replace"), "html.parser")
+    except Exception:  # noqa: BLE001
+        return None
+    for tag, attr in (("iframe", "src"), ("embed", "src"), ("object", "data"), ("a", "href")):
+        for el in soup.find_all(tag):
+            v = (el.get(attr) or "").strip()
+            if v and (".pdf" in v.lower() or tag != "a"):
+                return urljoin(base, v)
+    m = re.search(rb"""["']([^"']+\.pdf[^"']*)["']""", data, re.I)
+    return urljoin(base, m.group(1).decode("utf-8", "replace")) if m else None
+
+
+def known_hashes() -> dict:
+    out = {}
+    d = f"{DATA}/notices"
+    for fn in os.listdir(d) if os.path.isdir(d) else []:
+        r = load(os.path.join(d, fn), {})
+        h = (r.get("pdf") or {}).get("sha256")
+        if h and r.get("status") != "duplicate":
+            out.setdefault(h, r["id"])
+    return out
+
+
+def process(src: dict, item: dict, ai_budget: list[int], hashes: dict) -> dict:
     kind = classify(item["title"])
     rec = {"id": nid(item["url"]), "source_id": src["id"], "org": src["org"], "title": item["title"],
            "url": item["url"], "board_url": src["url"], "kind": kind, "first_seen": NOW,
@@ -125,11 +163,21 @@ def process(src: dict, item: dict, ai_budget: list[int]) -> dict:
         return rec
     try:
         data = download(item["url"])
+        if not data.startswith(b"%PDF"):
+            inner = embedded_pdf(data, item["url"])  # e.g. UPPSC's Open_PDF_DB viewer page
+            if inner:
+                rec["pdf"]["via"] = inner
+                data = download(inner)
         rec["pdf"]["sha256"] = hashlib.sha256(data).hexdigest()
+        if rec["pdf"]["sha256"] in hashes:
+            rec["status"], rec["duplicate_of"] = "duplicate", hashes[rec["pdf"]["sha256"]]
+            return rec
         rec["pdf"]["bytes"] = len(data)
         if data.startswith(b"%PDF"):
             text, tkind, pages = pdf_text(data)
             rec["pdf"].update({"text_kind": tkind, "pages": pages})
+            if kind in ("other", "notification"):
+                kind = rec["kind"] = classify(item["title"], text)
             allow_ai = ai_budget[0] > 0
             fields, meta = extract(text, kind, allow_ai)
             if meta.get("ai"):
@@ -140,6 +188,7 @@ def process(src: dict, item: dict, ai_budget: list[int]) -> dict:
                 open(f"{DATA}/text/{rec['id']}.txt", "w", encoding="utf-8").write(text[:20000])
         else:
             rec["pdf"]["text_kind"] = "not-pdf"
+            rec["pdf"]["head"] = data[:120].decode("utf-8", "replace")
     except Exception as e:  # noqa: BLE001
         rec["pdf"]["error"] = f"{type(e).__name__}: {e}"[:200]
     return rec
@@ -200,13 +249,14 @@ def main() -> int:
     seen = load(f"{DATA}/seen.json", {})
     health = load(f"{DATA}/health.json", {})
     ai_budget = [a.ai_budget]
+    hashes = known_hashes()
     summary = []
 
     for src in sources:
         h = health.setdefault(src["id"], {})
         try:
             if src.get("render") == "js":
-                items = links_with_browser(src["url"])
+                items = links_with_browser(src["url"], src.get("attachment_prefix", ""))
             else:
                 r = get(src["url"])
                 r.raise_for_status()
@@ -218,7 +268,10 @@ def main() -> int:
                 h.pop("warning", None)
         except Exception as e:  # noqa: BLE001
             h["consecutive_failures"] = h.get("consecutive_failures", 0) + 1
-            h["last_error"] = f"{type(e).__name__}: {e}"[:200]
+            h["last_error"] = f"{type(e).__name__}: {e}"[-200:]
+            host = urlparse(src["url"]).hostname
+            if host in last_repair_error:
+                h["cert_repair"] = last_repair_error[host]
             summary.append(f"- {src['org']}: FAILED ({h['last_error'][:80]})")
             continue
 
@@ -231,7 +284,9 @@ def main() -> int:
             to_process = new[: a.max_new]
 
         for item in to_process:
-            rec = process(src, item, ai_budget)
+            rec = process(src, item, ai_budget, hashes)
+            if rec.get("pdf", {}).get("sha256") and rec["status"] != "duplicate":
+                hashes.setdefault(rec["pdf"]["sha256"], rec["id"])
             if first_run:
                 rec["baseline_sample"] = True
             save(f"{DATA}/notices/{rec['id']}.json", rec)

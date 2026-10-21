@@ -21,6 +21,7 @@ sources:
     org: SSC
     url: https://ssc.gov.in/home/notice-board
     render: js
+    attachment_prefix: https://ssc.gov.in/api/attachment/
     runner: github
   - id: ibps-home
     org: IBPS
@@ -62,7 +63,7 @@ sources:
   - id: lic-careers
     org: LIC
     url: https://licindia.in/careers
-    render: static
+    render: js
     runner: github
 
   # ---- Defence & police ----
@@ -111,7 +112,7 @@ sources:
   - id: isro-careers
     org: ISRO
     url: https://www.isro.gov.in/Careers.html
-    render: static
+    render: js
     runner: github
 
   # ---- States (Hindi belt first) ----
@@ -177,3 +178,4 @@ sources:
     url: https://www.ncs.gov.in/
     render: static
     runner: github
+    enabled: false  # homepage PDFs are portal guides, not job notices
