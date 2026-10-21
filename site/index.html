@@ -205,7 +205,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     return `<span class="tag ${cls}">${txt}</span>`;
   }
   function lastCell(i) {
-    if (i.type !== "Job") return "Out now";
+    if (i.type !== "Job") return "Available";
     if (!i.last) return "In notice";
     return `<span class="hide-sm">${fmt(i.last)} · ${daysTag(i.last)}</span><span class="show-sm">${daysTag(i.last, true)}</span>`;
   }
