@@ -1,17 +1,17 @@
 # Review queue — 28 pending
 
-_Updated 2026-10-21T19:49:33+00:00_
+_Updated 2026-10-21T19:57:13+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2026-10-21 | BPSC | notification | Important Notices :- Regarding raising dispute for refund/chargeback of unsuccessful/pendi | — | — | — | — | [open](https://bpsc.bihar.gov.in/wp-content/uploads/2025/04/NB-2024-04-29-01.pdf) |
 | 2026-10-21 | BPSC | update | Corrigendum: Integrated 72nd Combined (Preliminary) Competitive Examination – Reduction of | — | — | — | — | [open](https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Corrigendum-72nd-CCE-Reduction-of-2-posts-of-BPS_BPSC-20260903-23e57k.pdf) |
-| 2026-10-21 | SBI | notification | DOWNLOAD ADVERTISEMENT( HINDI (645 KB) / English) (959 KB) (NEW) | 2026-08-31 | — | — | — | [open](https://sbi.bank.in/webfiles/uploads/files_2627/08/JA_2026_Detailed_Advt_Eng.pdf) |
+| 2026-10-21 | SBI | notification | DOWNLOAD ADVERTISEMENT( HINDI (645 KB) / English) (959 KB) (NEW) | — | — | — | — | [open](https://sbi.bank.in/webfiles/uploads/files_2627/08/JA_2026_Detailed_Advt_Eng.pdf) |
 | 2026-10-21 | BPSC | notification | Important Notice: Date of Commencement of Examination for the Post of Stenographer in Biha | — | — | — | — | [open](https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Important-Notice-Date-of-012026-Stenographer-BPSC-Exam_BPSC-20260420-zj3eyx.pdf) |
 | 2026-10-21 | NTA | notification | Inviting Online Application Form for Study Webs of Active Learning for Young Aspiring Mind | 2026-11-01 | — | — | — | [open](https://nta.ac.in/Download/Notice/Notice_20261009123259.pdf) |
 | 2026-10-21 | SSC | other | Constable (GD) in Central Armed Police Forces (CAPFs) and SSF, and Rifleman (GD) in Assam  | — | — | — | — | [open](https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_12102026.pdf) |
 | 2026-10-21 | SBI | info | ACQUAINT YOURSELF BOOKLET(HINDI/ ENGLISH) (NEW) | — | — | — | — | [open](https://sbi.bank.in/webfiles/uploads/files_2627/09/SBI_JA-Customer_Support_Sales-IH_Pre_I_2026-27_Hindi.pdf) |
-| 2026-10-21 | SBI | notification | DOWNLOAD ADVERTISEMENT (Hindi (592 KB) / English) (714 KB) (NEW) | 2026-08-27 | — | — | — | [open](https://sbi.bank.in/webfiles/uploads/files_2627/08/JA_2026_Backlog_Detailed_Advt_Eng.pdf) |
+| 2026-10-21 | SBI | notification | DOWNLOAD ADVERTISEMENT (Hindi (592 KB) / English) (714 KB) (NEW) | — | — | — | — | [open](https://sbi.bank.in/webfiles/uploads/files_2627/08/JA_2026_Backlog_Detailed_Advt_Eng.pdf) |
 | 2026-10-21 | BPSC | other | Important Notice :- Regarding Postponement of 72nd CCE (Preliminary) Competitive Examinati | — | — | — | — | [open](https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Regarding_postpone_72nd_BPSC_BPSC-20260720-u768lx.pdf) |
 | 2026-10-21 | NTA | notification | Opening of the online registration portal for submission of Online Application Form for UG | 2026-10-28 | — | — | 500 | [open](https://nta.ac.in/Download/Notice/Notice_20261008212430.pdf) |
 | 2026-10-21 | NTA | notification | Inviting Online Applications for the National Institute of Fashion Technology Entrance Exa | 2026-11-16 | — | — | 5000 | [open](https://nta.ac.in/Download/Notice/Notice_20261016183525.pdf) |

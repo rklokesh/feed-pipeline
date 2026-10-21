@@ -1,34 +1,15 @@
 {
   "board_url": "https://sbi.bank.in/web/careers/current-openings",
-  "extraction": {
-    "ai": "github-models:bad-response:'OK\\r\\n',github-models-azure:ConnectionError"
-  },
-  "fields": {
-    "advt_no": {
-      "evidence": "SPECIAL RECRUITMENT DRIVE FOR SC/ST/OBC BACKLOG VACANCIES (Advertisement No. CRPD/CR/SPLDRIVE/2026-27/16) ONLINE REGISTRATION OF APPLICATION AND PAYMENT OF FEES: 07.08.2026 TO 27.08.202",
-      "source": "rule",
-      "value": "CRPD/CR/SPLDRIVE/2026-27/16)"
-    },
-    "apply_last": {
-      "evidence": "nch experience of one year successfully in SBI on or before last date of registration i.e. 27.08.2026, provided his/ her conduct and performance is found to be satisfactory during the entire training period. Also, a. \"Leprosy",
-      "source": "rule",
-      "value": "2026-08-27"
-    },
-    "apply_or_official_url": {
-      "evidence": "6. Candidates are advised to check regularly Bank's website https://sbi.bank.in/web/careers/current-openings for details and updates. The examinations will be as detailed under point No. 4",
-      "source": "rule",
-      "value": "https://sbi.bank.in/web/careers/current-openings"
-    }
-  },
+  "fields": {},
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "43b98aa97831",
   "kind": "notification",
   "org": "SBI",
   "pdf": {
-    "bytes": 727067,
-    "pages": 11,
-    "sha256": "b1426ea1e5cc76bea1a8f512e0af33229d60faced62edfe205d1e9f527dd450c",
-    "text_kind": "text"
+    "bytes": 246,
+    "head": "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your adminis",
+    "sha256": "09c5b277dc414431c51f3d127f09d4d479d2157f1a32df97de2d9e3841bef524",
+    "text_kind": "not-pdf"
   },
   "source_id": "sbi-careers",
   "status": "pending_review",

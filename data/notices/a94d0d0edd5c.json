@@ -1,7 +1,7 @@
 {
   "board_url": "https://www.ibps.in/",
   "extraction": {
-    "ai": "github-models:bad-response:'OK\\r\\n',github-models-azure:ConnectionError"
+    "ai": "gemini:503,github-models:bad-response:'OK\\r\\n'"
   },
   "fields": {
     "apply_last": {

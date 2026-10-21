@@ -1,34 +1,15 @@
 {
   "board_url": "https://sbi.bank.in/web/careers/current-openings",
-  "extraction": {
-    "ai": "github-models:bad-response:'OK\\r\\n',github-models-azure:ConnectionError"
-  },
-  "fields": {
-    "advt_no": {
-      "evidence": "ECRUITMENT OF JUNIOR ASSOCIATES (CUSTOMER SUPPORT & SALES) (Advertisement No. CRPD/CR/2026-27/17) ONLINE REGISTRATION OF APPLICATION AND PAYMENT OF FEES: 11.08.2026 TO 31.08.202",
-      "source": "rule",
-      "value": "CRPD/CR/2026-27/17)"
-    },
-    "apply_last": {
-      "evidence": "my layer’’. Candidates belonging to OBC category but before last date of registration i.e., 31.08.2026, provided his/ her conduct and coming in ‘’CREAMY LAYER’’, are not entitled for any relaxation/ reservation performance is",
-      "source": "rule",
-      "value": "2026-08-31"
-    },
-    "apply_or_official_url": {
-      "evidence": "6. Candidates are advised to check regularly Bank's website https://sbi.bank.in/web/careers/current-openings for details and updates. The examinations will be as detailed under point No. 4",
-      "source": "rule",
-      "value": "https://sbi.bank.in/web/careers/current-openings"
-    }
-  },
+  "fields": {},
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "1b2185fb0dc8",
   "kind": "notification",
   "org": "SBI",
   "pdf": {
-    "bytes": 982223,
-    "pages": 11,
-    "sha256": "5018c4660bc945253f56e7b866d8b22114cdf3fff439311d05a67846f426508b",
-    "text_kind": "text"
+    "bytes": 246,
+    "head": "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your adminis",
+    "sha256": "a5bf46055ebe6aa0007546c596124f401a65066fa46e908abd65f5912a68d3bf",
+    "text_kind": "not-pdf"
   },
   "source_id": "sbi-careers",
   "status": "pending_review",

@@ -1,7 +1,7 @@
 {
   "board_url": "https://uppsc.up.nic.in/",
   "extraction": {
-    "ai": "github-models:bad-response:'OK\\r\\n',github-models-azure:ConnectionError"
+    "ai": "gemini:429,github-models:bad-response:'OK\\r\\n'"
   },
   "fields": {
     "apply_or_official_url": {
@@ -17,7 +17,7 @@
   "pdf": {
     "bytes": 971393,
     "pages": 1,
-    "sha256": "b9633b320459cdd63fe858a54080522d90de550ae2403bacad2e44e8d8294c0e",
+    "sha256": "549b216d0f7263c249790fc484cb71fe7844b0364580d905193191b6103e7564",
     "text_kind": "text"
   },
   "source_id": "uppsc-home",

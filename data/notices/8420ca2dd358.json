@@ -1,7 +1,7 @@
 {
   "board_url": "https://ssc.gov.in/home/notice-board",
   "extraction": {
-    "ai": "github-models:bad-response:'OK\\r\\n',github-models-azure:ConnectionError"
+    "ai": "gemini:429,github-models:bad-response:'OK\\r\\n'"
   },
   "fields": {},
   "first_seen": "2026-10-21T19:45:45+00:00",
