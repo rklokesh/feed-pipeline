@@ -204,19 +204,20 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   const TODAY = new Date();
   // posted = date on the official notice where known, otherwise the day we found it.
   const ITEMS = [
-    { type: "Job", title: "UGC NET December 2026", hi: "यूजीसी नेट दिसंबर 2026", org: "NTA", posted: "2026-10-08", last: "2026-10-28", url: "/notice/ugc-net-december-2026/", page: true },
-    { type: "Job", title: "SWAYAM exam, online application", hi: "स्वयं परीक्षा, ऑनलाइन आवेदन", org: "NTA", posted: "2026-10-09", last: "2026-11-01", url: "https://nta.ac.in" },
-    { type: "Job", title: "NIFT Entrance Exam 2027", hi: "निफ्ट प्रवेश परीक्षा 2027", org: "NTA", posted: "2026-10-16", last: "2026-11-16", url: "https://nta.ac.in" },
-    { type: "Job", title: "Junior Engineer Examination 2026", hi: "जूनियर इंजीनियर परीक्षा 2026", org: "SSC", posted: "2026-10-21", last: null, url: "https://ssc.gov.in" },
-    { type: "Job", title: "Lecturer, Textile Technology", hi: "प्रवक्ता, वस्त्र प्रौद्योगिकी", org: "UPPSC", posted: "2026-10-21", last: null, url: "https://uppsc.up.nic.in" },
-    { type: "Answer key", title: "Selection Posts Phase XIV, response sheets", hi: "सेलेक्शन पोस्ट फेज़ 14, उत्तर पत्रक", org: "SSC", posted: "2026-10-21", url: "https://ssc.gov.in" },
-    { type: "Result", title: "Constable (GD) in CAPFs, SSF and Rifleman (GD)", hi: "सीएपीएफ, एसएसएफ में कांस्टेबल (जीडी) और राइफलमैन (जीडी)", org: "SSC", posted: "2026-10-21", url: "https://ssc.gov.in" },
-    { type: "Result", title: "Combined Higher Secondary (10+2) Level Exam 2025", hi: "संयुक्त उच्चतर माध्यमिक (10+2) स्तर परीक्षा 2025", org: "SSC", posted: "2026-10-21", url: "https://ssc.gov.in" },
-    { type: "Admit card", title: "Stenographer (आशुलिपिक), exam start date", hi: "आशुलिपिक, परीक्षा आरंभ तिथि", org: "BPSC", posted: "2026-10-21", url: "https://bpsc.bihar.gov.in" },
-    { type: "Result", title: "Assistant Teacher, Advt. A-5/E-1/2025", hi: "सहायक अध्यापक, विज्ञापन ए-5/ई-1/2025", org: "UPPSC", posted: "2026-10-21", url: "https://uppsc.up.nic.in" },
+    { type: "Job", title: "UGC NET December 2026", hi: "यूजीसी नेट दिसंबर 2026", org: "NTA", posted: "2026-10-08", seenAt: "2026-10-21T19:50:00Z", last: "2026-10-28", url: "/notice/ugc-net-december-2026/", page: true },
+    { type: "Job", title: "SWAYAM exam, online application", hi: "स्वयं परीक्षा, ऑनलाइन आवेदन", org: "NTA", posted: "2026-10-09", seenAt: "2026-10-21T19:50:00Z", last: "2026-11-01", url: "https://nta.ac.in" },
+    { type: "Job", title: "NIFT Entrance Exam 2027", hi: "निफ्ट प्रवेश परीक्षा 2027", org: "NTA", posted: "2026-10-16", seenAt: "2026-10-21T19:50:00Z", last: "2026-11-16", url: "https://nta.ac.in" },
+    { type: "Job", title: "Junior Engineer Examination 2026", hi: "जूनियर इंजीनियर परीक्षा 2026", org: "SSC", posted: "2026-10-21", seenAt: "2026-10-21T19:50:00Z", last: null, url: "https://ssc.gov.in" },
+    { type: "Job", title: "Lecturer, Textile Technology", hi: "प्रवक्ता, वस्त्र प्रौद्योगिकी", org: "UPPSC", posted: "2026-10-21", seenAt: "2026-10-21T19:50:00Z", last: null, url: "https://uppsc.up.nic.in" },
+    { type: "Answer key", title: "Selection Posts Phase XIV, response sheets", hi: "सेलेक्शन पोस्ट फेज़ 14, उत्तर पत्रक", org: "SSC", posted: "2026-10-21", seenAt: "2026-10-21T19:50:00Z", url: "https://ssc.gov.in" },
+    { type: "Result", title: "Constable (GD) in CAPFs, SSF and Rifleman (GD)", hi: "सीएपीएफ, एसएसएफ में कांस्टेबल (जीडी) और राइफलमैन (जीडी)", org: "SSC", posted: "2026-10-21", seenAt: "2026-10-21T19:50:00Z", url: "https://ssc.gov.in" },
+    { type: "Result", title: "Combined Higher Secondary (10+2) Level Exam 2025", hi: "संयुक्त उच्चतर माध्यमिक (10+2) स्तर परीक्षा 2025", org: "SSC", posted: "2026-10-21", seenAt: "2026-10-21T19:50:00Z", url: "https://ssc.gov.in" },
+    { type: "Admit card", title: "Stenographer (आशुलिपिक), exam start date", hi: "आशुलिपिक, परीक्षा आरंभ तिथि", org: "BPSC", posted: "2026-10-21", seenAt: "2026-10-21T19:50:00Z", url: "https://bpsc.bihar.gov.in" },
+    { type: "Result", title: "Assistant Teacher, Advt. A-5/E-1/2025", hi: "सहायक अध्यापक, विज्ञापन ए-5/ई-1/2025", org: "UPPSC", posted: "2026-10-21", seenAt: "2026-10-21T19:50:00Z", url: "https://uppsc.up.nic.in" },
   ];
-  // the 3 most recently posted notices get a "New" badge
-  const NEWEST = [...ITEMS].sort((a, b) => b.posted.localeCompare(a.posted)).slice(0, 3);
+  // "New" badge: shown for 12 hours after we first publish a notice (seenAt), then it disappears on its own.
+  const NEW_FOR_MS = 12 * 3600 * 1000;
+  const isNew = i => i.seenAt && (Date.now() - Date.parse(i.seenAt)) < NEW_FOR_MS;
   const title = i => lang === "hi" ? i.hi : i.title;
   const org = i => lang === "hi" ? (ORG_HI[i.org] || i.org) : i.org;
   const fmtText = iso => new Date(iso + "T00:00:00").toLocaleDateString(t("locale"), { day: "numeric", month: "short" });
@@ -279,7 +280,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       b.classList.toggle("zero", !!q && n === 0);
     });
     document.getElementById("list").innerHTML = rows.map(i =>
-      `<li class="lr"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm">${fmt(i.posted)}</span><span class="t" title="${esc(title(i))}">${NEWEST.includes(i) ? `<span class="new">${t("newBadge")}</span>` : ""}${esc(title(i))}</span><span class="hide-sm g">${org(i)}</span><span class="hide-sm g">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
+      `<li class="lr"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm">${fmt(i.posted)}</span><span class="t" title="${esc(title(i))}">${isNew(i) ? `<span class="new">${t("newBadge")}</span>` : ""}${esc(title(i))}</span><span class="hide-sm g">${org(i)}</span><span class="hide-sm g">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
     ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
   }
   // Keyboard: ↓ / ↑ move through the results while searching, Enter opens the highlighted one.
