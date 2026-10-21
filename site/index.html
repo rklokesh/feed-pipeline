@@ -196,7 +196,10 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     setCat(types.length === 1 ? types[0] : "all");
   }
   function render() {
-    const rows = [...ITEMS].sort((a, b) => b.posted.localeCompare(a.posted)).filter(i => (!i.last || left(i.last) >= 0) && (cat === "all" || i.type === cat) && q.split(/\s+/).every(w => words(i).includes(w)));
+    // Jobs: closing soonest first (undated last). Everything else: newest first.
+    const byClosing = (a, b) => (!a.last) - (!b.last) || (a.last || "").localeCompare(b.last || "") || b.posted.localeCompare(a.posted);
+    const byNewest = (a, b) => b.posted.localeCompare(a.posted);
+    const rows = [...ITEMS].sort(cat === "Job" ? byClosing : byNewest).filter(i => (!i.last || left(i.last) >= 0) && (cat === "all" || i.type === cat) && q.split(/\s+/).every(w => words(i).includes(w)));
     // match counts per category while searching
     const hits = ITEMS.filter(i => (!i.last || left(i.last) >= 0) && (!q || qmatch(i)));
     document.querySelectorAll(".tabs button").forEach(b => {
