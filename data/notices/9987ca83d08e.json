@@ -1,0 +1,33 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://nta.ac.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "re advised to regularly visit the official websites of NTA (https://nta.ac.in) and UGC-NET (https://ugenet.nta.ac.in) for the latest updates and announcement",
+      "source": "rule",
+      "value": "https://nta.ac.in"
+    },
+    "exam_date": {
+      "evidence": "tions to the Information Bulletin of UGC-NET December 2026 Examination dates - Existing provision (old) Provision after corrigendum (new) 1 14-19 December 2026; buffer dates | 14-18 December 2026 and 21 December",
+      "source": "rule",
+      "value": "2026-12-19"
+    }
+  },
+  "first_seen": "2026-10-21T19:41:50+00:00",
+  "id": "9987ca83d08e",
+  "kind": "update",
+  "org": "NTA",
+  "pdf": {
+    "bytes": 8779761,
+    "pages": 126,
+    "sha256": "4c535ef8c8e6f0b00408ee5ff4602c85549c471a0e3cf00cd1facf2054501e36",
+    "text_kind": "ocr"
+  },
+  "source_id": "nta-home",
+  "status": "pending_review",
+  "title": "Public Notice Corrigendum to the Information Bulletin of UGC-NET December 2026 Examination",
+  "url": "http://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2026/10/202610161905649093.pdf"
+}

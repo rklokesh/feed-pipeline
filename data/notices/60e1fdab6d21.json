@@ -1,0 +1,45 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://nta.ac.in/",
+  "extraction": {
+    "ai": "github-models:JSONDecodeError"
+  },
+  "fields": {
+    "admit_card": {
+      "evidence": "ance City Intimation Slip 21st December 2026 Downloading of Admit Card 4th January 2027 Computer Based Test (CBT) - GAT Mode of examination Paper Based Test (PBT) – CAT Date of Entrance Examination 10th January",
+      "source": "rule",
+      "value": "2027-01-04"
+    },
+    "apply_last": {
+      "evidence": "ation and submission of 16th October, 2026 application form Last date for submission of online 16th November, 2026 application as per the applicable fee Last date for submission of online application with late fees of ₹ 5000",
+      "source": "rule",
+      "value": "2026-11-16"
+    },
+    "apply_or_official_url": {
+      "evidence": "00, e-mail: nift@nta.ac.in वेिस इट/ Website www.nta.ac.in , https://exams.nta.nic.in/niftee/ (उच्चतर शिक्षा शिभाग, शिक्षा मंत्रालय, भारत सरकार के तहत एक स्वायत्त संगठन) (An",
+      "source": "rule",
+      "value": "https://exams.nta.nic.in/niftee/"
+    },
+    "fee_amounts": {
+      "evidence": "nline 16th November, 2026 application as per the applicable fee Last date for submission of online application with late fees of ₹ 5000/- (in 21st November, 2026 addition to the applicable application fee) Correction in particulars of application 22nd to 25th November, 2026 form (online only) प ाँचव ींमींज़िल, गवर्नमेंट ऑफ़ इींजिय प्रेस ज",
+      "source": "rule",
+      "value": [
+        5000
+      ]
+    }
+  },
+  "first_seen": "2026-10-21T19:41:50+00:00",
+  "id": "60e1fdab6d21",
+  "kind": "notification",
+  "org": "NTA",
+  "pdf": {
+    "bytes": 608210,
+    "pages": 2,
+    "sha256": "564c8669b23f33cfe9a5b47871a35a8057771793d432d1c3fda6ad97336f271d",
+    "text_kind": "text"
+  },
+  "source_id": "nta-home",
+  "status": "pending_review",
+  "title": "Inviting Online Applications for the National Institute of Fashion Technology Entrance Examination (NIFTEE)–2027 for Admissions to UG, PG, NLEA, Artisans and Ph.D. Programmes-reg. Read More",
+  "url": "https://nta.ac.in/Download/Notice/Notice_20261016183525.pdf"
+}

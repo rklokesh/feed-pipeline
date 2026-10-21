@@ -1,0 +1,33 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://sbi.bank.in/web/careers/current-openings",
+  "extraction": {
+    "ai": "github-models:JSONDecodeError"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "ECRUITMENT OF JUNIOR ASSOCIATES (CUSTOMER SUPPORT & SALES) (Advertisement No. CRPD/CR/2026-27/17) GUIDELINES REGARDING PERSONS WITH DISABILITIES USING THE SERVICES OF A SCRIBE T",
+      "source": "rule",
+      "value": "CRPD/CR/2026-27/17)"
+    },
+    "apply_last": {
+      "evidence": "ent authority. The certificate should be dated on or before last date of registration of application (i.e. 31-08-2026) 3. The candidate will have to arrange his/ her own scribe at his/ her own cost. 4. The scribe may be from",
+      "source": "rule",
+      "value": "2026-08-31"
+    }
+  },
+  "first_seen": "2026-10-21T19:41:50+00:00",
+  "id": "c8683df760ed",
+  "kind": "notification",
+  "org": "SBI",
+  "pdf": {
+    "bytes": 115381,
+    "pages": 2,
+    "sha256": "def4880eaa15b78e0a86d48b512e74d8c15e0574012f23822db31cc599de55e2",
+    "text_kind": "text"
+  },
+  "source_id": "sbi-careers",
+  "status": "pending_review",
+  "title": "SCRIBE GUIDELINES (NEW)",
+  "url": "https://sbi.bank.in/webfiles/uploads/files_2627/09/SCRIBE_GUIDELINES.pdf"
+}

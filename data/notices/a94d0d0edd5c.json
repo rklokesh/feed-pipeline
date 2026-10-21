@@ -1,0 +1,33 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://www.ibps.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_last": {
+      "evidence": "assignment is due to be completed within one year from the last date of receipt of application i.e., 20.07.2027) otherwise than by way of dismissal or discharge on account of misconduct or inefficiency or physical disab",
+      "source": "rule",
+      "value": "2027-07-20"
+    },
+    "apply_or_official_url": {
+      "evidence": "ww.ibps.in In case of queries / complaints please log in to http://cgrs.ibps.in The Online Examination (Preliminary and Main) for th e upcoming Common Recruitm",
+      "source": "rule",
+      "value": "http://cgrs.ibps.in"
+    }
+  },
+  "first_seen": "2026-10-21T19:41:50+00:00",
+  "id": "a94d0d0edd5c",
+  "kind": "admit_card",
+  "org": "IBPS",
+  "pdf": {
+    "bytes": 1271882,
+    "pages": 59,
+    "sha256": "2293242c12b406cdee2e6c47693048a77bfdb2980606cf8a3e66e7e3d72154bd",
+    "text_kind": "text"
+  },
+  "source_id": "ibps-home",
+  "status": "pending_review",
+  "title": "CRP- SPL-XVI Posted on 01 Jul, 2026",
+  "url": "https://www.ibps.in/wp-content/uploads/Detailed-Notification-CRP-SPL-XVI_Final_V1_30.06.2026.pdf"
+}
