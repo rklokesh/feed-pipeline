@@ -45,8 +45,13 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 .top button:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 .row { display: grid; grid-template-columns: 7.5rem 1fr 8rem 7rem 1.25rem; gap: 0 16px; align-items: baseline; }
-main { margin-top: 56px; flex: 1; }
+main { margin-top: 48px; flex: 1; }
 .head { color: var(--grey); padding-bottom: 4px; }
+.tabs { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: 28px; }
+.tabs button { all: unset; cursor: pointer; color: var(--grey); }
+.tabs button[aria-pressed="true"] { color: var(--ink); }
+.tabs button:hover { color: var(--ink); }
+.empty { padding: 4px 0; color: var(--grey); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .list li { border-top: 1px solid var(--line); }
 .list li:last-child { border-bottom: 1px solid var(--line); }
 .list a.row { padding: 4px 0; }
@@ -75,6 +80,13 @@ footer { margin-top: 64px; display: grid; gap: 4px; max-width: 34rem; }
   </header>
 
   <main>
+    <div class="tabs" role="group" aria-label="Show">
+      <button type="button" data-cat="all" aria-pressed="true">All</button>
+      <button type="button" data-cat="Job" aria-pressed="false">Jobs</button>
+      <button type="button" data-cat="Admit card" aria-pressed="false">Admit cards</button>
+      <button type="button" data-cat="Result" aria-pressed="false">Results</button>
+      <button type="button" data-cat="Answer key" aria-pressed="false">Answer keys</button>
+    </div>
     <div class="row head"><span>Date</span><span data-en="Notice" data-hi="सूचना">Notice</span><span class="hide-sm">Organisation</span><span class="hide-sm right">Type</span><span></span></div>
     <ul class="list" id="list"></ul>
   </main>
@@ -93,8 +105,8 @@ footer { margin-top: 64px; display: grid; gap: 4px; max-width: 34rem; }
     { kind: "job", type: "Job", title: "UGC NET December 2026", org: "NTA", last: "2026-10-28", url: "https://nta.ac.in" },
     { kind: "job", type: "Job", title: "SWAYAM exam, online application", org: "NTA", last: "2026-11-01", url: "https://nta.ac.in" },
     { kind: "job", type: "Job", title: "NIFT Entrance Exam 2027", org: "NTA", last: "2026-11-16", url: "https://nta.ac.in" },
-    { kind: "job", type: "Job · 1,699 posts", title: "Junior Engineer Examination 2026", org: "SSC", last: null, url: "https://ssc.gov.in" },
-    { kind: "job", type: "Job · 1 post", title: "Lecturer, Textile Technology", org: "UPPSC", last: null, url: "https://uppsc.up.nic.in" },
+    { kind: "job", type: "Job", title: "Junior Engineer Examination 2026", org: "SSC", last: null, url: "https://ssc.gov.in" },
+    { kind: "job", type: "Job", title: "Lecturer, Textile Technology", org: "UPPSC", last: null, url: "https://uppsc.up.nic.in" },
     { kind: "up", type: "Answer key", title: "Selection Posts Phase XIV, response sheets", org: "SSC", seen: "2026-10-21", url: "https://ssc.gov.in" },
     { kind: "up", type: "Result", title: "Constable (GD) in CAPFs, SSF and Rifleman (GD)", org: "SSC", seen: "2026-10-21", url: "https://ssc.gov.in" },
     { kind: "up", type: "Result", title: "Combined Higher Secondary (10+2) Level Exam 2025", org: "SSC", seen: "2026-10-21", url: "https://ssc.gov.in" },
@@ -105,13 +117,22 @@ footer { margin-top: 64px; display: grid; gap: 4px; max-width: 34rem; }
   const left = iso => Math.ceil((new Date(iso + "T23:59:59") - TODAY) / 864e5);
   const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const date = i => i.kind === "job"
-    ? (i.last ? `${fmt(i.last)}<span class="g"> · ${left(i.last)}d left</span>` : '<span class="g">See notice</span>')
+    ? (i.last ? `${fmt(i.last)}<span class="g"> · ${left(i.last)}d</span>` : '<span class="g">See notice</span>')
     : `<span class="g">${fmt(i.seen)}</span>`;
 
-  const rows = ITEMS.filter(i => i.kind !== "job" || !i.last || left(i.last) >= 0);
-  document.getElementById("list").innerHTML = rows.map(i =>
-    `<li><a class="row" href="${i.url}" target="_blank" rel="noopener"><span class="num">${date(i)}</span><span class="t">${esc(i.title)}</span><span class="hide-sm g">${i.org}</span><span class="hide-sm right g">${i.type}</span><span class="right">→</span></a></li>`
-  ).join("");
+  let cat = "all";
+  function render() {
+    const rows = ITEMS.filter(i => (i.kind !== "job" || !i.last || left(i.last) >= 0) && (cat === "all" || i.type === cat));
+    document.getElementById("list").innerHTML = rows.map(i =>
+      `<li><a class="row" href="${i.url}" target="_blank" rel="noopener"><span class="num" style="white-space:nowrap">${date(i)}</span><span class="t">${esc(i.title)}</span><span class="hide-sm g">${i.org}</span><span class="hide-sm right g">${i.type}</span><span class="right">→</span></a></li>`
+    ).join("") || '<li class="empty">Nothing here right now. New notices appear as soon as they are published.</li>';
+  }
+  document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => {
+    cat = b.dataset.cat;
+    document.querySelectorAll(".tabs button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+    render();
+  }));
+  render();
 
   let hi = false;
   document.getElementById("lang").addEventListener("click", e => {
