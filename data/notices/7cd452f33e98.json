@@ -1,13 +1,27 @@
 {
   "board_url": "https://uppsc.up.nic.in/",
   "extraction": {
-    "ai": "gemini:503,github-models:bad-response:'OK\\r\\n'"
+    "ai": "gemini/gemini-flash-lite-latest"
   },
   "fields": {
     "advt_no": {
       "evidence": "AGRAJ DATA PROCESSING CENTRE LIST OF SELECTED CANDIDATES IN ADVT. NO. A-7/E-1/2021, U.P. TECHNICAL EDUCATION (TEACHING) SERVICE EXAMINATION-2021 PAGE 1 of 1 POST",
       "source": "rule",
       "value": "A-7/E-1/2021"
+    },
+    "post_names": {
+      "evidence": "POST :: (9) - LECTURER TEXTILE TECHNOLOGY",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "LECTURER TEXTILE TECHNOLOGY"
+      ]
+    },
+    "total_vacancies": {
+      "evidence": "TOTAL RECORDS : 1",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 1
     }
   },
   "first_seen": "2026-10-21T19:45:45+00:00",
@@ -17,7 +31,7 @@
   "pdf": {
     "bytes": 205861,
     "pages": 2,
-    "sha256": "47518dfdd4876336f3b6330896c67fd2496a323350d520d3668a6fd4f504cf62",
+    "sha256": "63cab890d22eaaa03f1bfbe51c6ee878fa9f6361e8630ced95dbc92ed20bb66f",
     "text_kind": "text"
   },
   "source_id": "uppsc-home",

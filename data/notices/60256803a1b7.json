@@ -1,7 +1,7 @@
 {
   "board_url": "https://nta.ac.in/",
   "extraction": {
-    "ai": "gemini:503,github-models:bad-response:'OK\\r\\n'"
+    "ai": "gemini/gemini-flash-lite-latest"
   },
   "fields": {
     "admit_card": {
@@ -14,15 +14,71 @@
       "source": "rule",
       "value": "2026-10-28"
     },
+    "apply_last_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_last": "Submission of Online Application Form 08 October 2026 to 28 October 2026"
+      }
+    },
     "apply_or_official_url": {
       "evidence": "Answer Key(s) To be announced later on the website Website https://ugcnet.nta.nic.in / www.nta.ac.in Application Fee General/ Unreserved Rs. 1150/- General-EWS/OBC-",
       "source": "rule",
       "value": "https://ugcnet.nta.nic.in"
     },
+    "apply_start": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-10-08"
+    },
+    "apply_start_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_start": "Submission of Online Application Form 08 October 2026 to 28 October 2026"
+      }
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://ugcnet.nta.nic.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "https://ugcnet.nta.nic.in"
+      }
+    },
     "exam_date": {
       "evidence": "mated later Downloading of Admit Card To be Intimated later Date of Examination 14 December 2026 to 19 December 2026 Centre, Date and Shift As indicated on Admit Card Display of Recorded Responses and Answer Key(s) To b",
       "source": "rule",
       "value": "2026-12-14"
+    },
+    "exam_date_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "exam_date": "Date of Examination 14 December 2026 to 19 December 2026"
+      }
+    },
+    "fee": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "female": null,
+        "general": 1150,
+        "obc": 600,
+        "pwd": 325,
+        "sc_st": 325
+      }
     },
     "fee_amounts": {
       "evidence": "(up to 11:50 P.M.) Last date for submission of Examination fee 28 October 2026 (through Credit Card/ Debit Card/Net Banking /UPI (up to 11:50 P.M.) Late Submission of online application Form with Late Fee Rs. 500/- Late Submission of online application Form 29 October 2026 to 31 October 2026 (up to 11:50 P.M.) Last Date of Successful Tra",
@@ -30,6 +86,46 @@
       "value": [
         500
       ]
+    },
+    "fee_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "fee": "General/ Unreserved Rs. 1150/- \nGeneral-EWS/OBC- NCL Rs. 600/- \nSC/ST/PwD/ Third Gender Rs. 325/-"
+      }
+    },
+    "fee_last": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-10-28"
+    },
+    "fee_last_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "fee_last": "Last date for submission of Examination fee 28 October 2026"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Junior Research Fellowship and Assistant Professor",
+        "Assistant Professor and admission to Ph.D.",
+        "admission to Ph.D. only"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "award of Junior Research Fellowship and appointment as Assistant Professor’, (ii)‘appointment as Assistant Professor and admission to Ph.D.’ and (iii)‘admission to Ph.D. only’"
+      }
     }
   },
   "first_seen": "2026-10-21T19:45:45+00:00",

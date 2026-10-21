@@ -1,12 +1,18 @@
 {
   "board_url": "https://uppsc.up.nic.in/",
   "extraction": {
-    "ai": "gemini:429,github-models:bad-response:'OK\\r\\n'"
+    "ai": "gemini/gemini-flash-lite-latest"
   },
   "fields": {
     "apply_or_official_url": {
       "evidence": "cic) 3i)1ici c TT1t I 2— l41c1 TTfft '4T jj.jt44 '14II 31Tr https://uppsc.up.nic.in 1ii —16.10.2026 *ft 3I 3T 30031T0 9ii uiici '9T DISTRICT INFORMATION SLI P 5t .",
       "source": "rule",
+      "value": "https://uppsc.up.nic.in"
+    },
+    "apply_url": {
+      "evidence": "https://uppsc.up.nic.in",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
       "value": "https://uppsc.up.nic.in"
     }
   },
@@ -17,7 +23,7 @@
   "pdf": {
     "bytes": 971393,
     "pages": 1,
-    "sha256": "549b216d0f7263c249790fc484cb71fe7844b0364580d905193191b6103e7564",
+    "sha256": "904490047b28d14c97ad1ffacca608b21392876ab49a9b1721ad7e5c18d4317e",
     "text_kind": "text"
   },
   "source_id": "uppsc-home",

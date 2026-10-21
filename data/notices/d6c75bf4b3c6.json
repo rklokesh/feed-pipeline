@@ -1,13 +1,25 @@
 {
   "board_url": "https://uppsc.up.nic.in/",
   "extraction": {
-    "ai": "gemini:503,github-models:bad-response:'OK\\r\\n'"
+    "ai": "gemini/gemini-flash-lite-latest"
   },
   "fields": {
     "apply_or_official_url": {
       "evidence": "2— 1l1lc1 -41T 3T1 '-1IT Ci-c'1 ''I1c 1 *ii 31TZñT c C'611I https://uppsc.up.nic.in ti 1-iici 19.10.2026 '34e1 *ft I 3PT~ &trt 3t0o3TR0 T12I cIiRi M1lc1 DISTRICT I",
       "source": "rule",
       "value": "https://uppsc.up.nic.in"
+    },
+    "apply_url": {
+      "evidence": "https://uppsc.up.nic.in",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://uppsc.up.nic.in"
+    },
+    "exam_date": {
+      "evidence": "2026-03-28",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-03-28"
     }
   },
   "first_seen": "2026-10-21T19:45:45+00:00",
@@ -17,7 +29,7 @@
   "pdf": {
     "bytes": 571689,
     "pages": 1,
-    "sha256": "f5d8aa044fee0a397b85e36782e111a93cf9f31dfba02292e7b9143ba1228610",
+    "sha256": "169dd2b6f07171cbe527c9b58108bacb1b54ff953a950b843001d10c61beec50",
     "text_kind": "text"
   },
   "source_id": "uppsc-home",

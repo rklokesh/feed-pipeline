@@ -1,9 +1,30 @@
 {
   "board_url": "https://bpsc.bihar.gov.in/",
   "extraction": {
-    "ai": "gemini:503,github-models:bad-response:'OK\\r\\n'"
+    "ai": "gemini/gemini-flash-lite-latest"
   },
-  "fields": {},
+  "fields": {
+    "advt_no": {
+      "evidence": "विज्ञापन. संख्या-01/2020",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "01/2020"
+    },
+    "exam_date": {
+      "evidence": "दिनांक-11.06.2026 (गुरूवार) को आयोजित की जाएगी",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-06-11"
+    },
+    "post_names": {
+      "evidence": "आशुलिपिक के Rat पदों पर नियुक्ति हेतु प्रकाशित विज्ञापन. संख्या-01/2020",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "आशुलिपिक"
+      ]
+    }
+  },
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "2093323c3d32",
   "kind": "notification",

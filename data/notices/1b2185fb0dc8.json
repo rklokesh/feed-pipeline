@@ -1,15 +1,106 @@
 {
   "board_url": "https://sbi.bank.in/web/careers/current-openings",
-  "fields": {},
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "ECRUITMENT OF JUNIOR ASSOCIATES (CUSTOMER SUPPORT & SALES) (Advertisement No. CRPD/CR/2026-27/17) ONLINE REGISTRATION OF APPLICATION AND PAYMENT OF FEES: 11.08.2026 TO 31.08.202",
+      "source": "rule",
+      "value": "CRPD/CR/2026-27/17)"
+    },
+    "age_limit": {
+      "evidence": {
+        "as_on": "as on 01.04.2026",
+        "max": "not above 28 years",
+        "min": "Not below 20 years"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": "2026-04-01",
+        "max": 28,
+        "min": 20
+      }
+    },
+    "apply_last": {
+      "evidence": "my layer’’. Candidates belonging to OBC category but before last date of registration i.e., 31.08.2026, provided his/ her conduct and coming in ‘’CREAMY LAYER’’, are not entitled for any relaxation/ reservation performance is",
+      "source": "rule",
+      "value": "2026-08-31"
+    },
+    "apply_or_official_url": {
+      "evidence": "6. Candidates are advised to check regularly Bank's website https://sbi.bank.in/web/careers/current-openings for details and updates. The examinations will be as detailed under point No. 4",
+      "source": "rule",
+      "value": "https://sbi.bank.in/web/careers/current-openings"
+    },
+    "apply_start": {
+      "evidence": {
+        "apply_start": "ONLINE REGISTRATION OF APPLICATION AND PAYMENT OF FEES: 11.08.2026"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-08-11"
+    },
+    "apply_url": {
+      "evidence": {
+        "apply_url": "https://sbi.bank.in/web/careers/current-openings"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://sbi.bank.in/web/careers/current-openings"
+    },
+    "exam_date": {
+      "evidence": {
+        "exam_date": "Preliminary Examination will be conducted tentatively in the month of September 2026 and Main Examination will be conducted tentatively in the month of November 2026."
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "Preliminary Examination will be conducted tentatively in the month of September 2026 and Main Examination will be conducted tentatively in the month of November 2026."
+    },
+    "fee_last": {
+      "evidence": {
+        "fee_last": "TO 31.08.2026"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-08-31"
+    },
+    "post_names": {
+      "evidence": {
+        "post_names": "RECRUITMENT OF JUNIOR ASSOCIATES (CUSTOMER SUPPORT & SALES)"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Junior Associate (Customer Support & Sales)"
+      ]
+    },
+    "qualification": {
+      "evidence": {
+        "qualification": "Graduation in any discipline from a recognised University or any equivalent qualification recognised as such by Central Government."
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "Graduation in any discipline from a recognised University or any equivalent qualification recognised as such by Central Government."
+    },
+    "total_vacancies": {
+      "evidence": {
+        "total_vacancies": "Total | 1114 | 837 | 1716 | 760 | 3253 | 7680"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 7680
+    }
+  },
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "1b2185fb0dc8",
   "kind": "notification",
   "org": "SBI",
   "pdf": {
-    "bytes": 246,
-    "head": "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your adminis",
-    "sha256": "a5bf46055ebe6aa0007546c596124f401a65066fa46e908abd65f5912a68d3bf",
-    "text_kind": "not-pdf"
+    "bytes": 982223,
+    "pages": 11,
+    "sha256": "5018c4660bc945253f56e7b866d8b22114cdf3fff439311d05a67846f426508b",
+    "text_kind": "text"
   },
   "source_id": "sbi-careers",
   "status": "pending_review",

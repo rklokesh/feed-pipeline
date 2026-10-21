@@ -1,9 +1,58 @@
 {
   "board_url": "https://ssc.gov.in/home/notice-board",
   "extraction": {
-    "ai": "gemini:429,github-models:bad-response:'OK\\r\\n'"
+    "ai": "gemini/gemini-flash-lite-latest"
   },
-  "fields": {},
+  "fields": {
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "JE(C)",
+        "JE(E&M)",
+        "JE (M)",
+        "JE (C)",
+        "JE (E)",
+        "JE (C)",
+        "JE (C)",
+        "JE (E)",
+        "JE (M)",
+        "JE(E)",
+        "JE(M)",
+        "JE(C)",
+        "JE (C)",
+        "JE(E&M)",
+        "JE(C)",
+        "JE(C)",
+        "JE(E)",
+        "JE(T)",
+        "SA"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "1 JE(C) ... 2 JE(E&M) ... 3 Central Water Commission JE (M) ... 4 Central Water Commission JE (C) ... 5 Central Public Works Department JE (E) ... 6 Central Public Works Department JE (C) ... 7 Central Water Power Research Station , Department of Water Resources, Ministry of Jal Shakti JE (C) ... 8 Central Water Power Research Station , Department of Water Resources, Ministry of Jal Shakti JE (E) ... 9 Central Water Power Research Station , Department of Water Resources, Ministry of Jal Shakti JE (M) ... 10 DGQA-NAVAL, Ministry of Defence JE(E) ... 11 DGQA-NAVAL, Ministry of Defence JE(M) ... 12 Farakka Barrage Project, Department of Water Resources , River Development and Ganga Rejuvenation, Ministry of Jal Shakti JE(C) ... 13 Military Engineer Service (MES) JE (C) ... 14 Military Engineer Service (MES) JE(E&M) ... 15 Central Institute of Coastal Engineering For Fishery, Ministry of Fisheries, Animal Husbandry And Dairy JE(C) ... 16 Directorate General of Light Houses and Lightships, Ministry of Ports, shipping and Waterways JE(C) ... 17 Directorate General of Light Houses and Lightships, Ministry of Ports, shipping and Waterways JE(E) ... 18 Department of Telecommunication JE(T) ... 19 India Metelogical Deparment SA ... 20 Brahmaputra Board, Department of Water Resources , River Development and Ganga Rejuvenation. JE(C)"
+      }
+    },
+    "total_vacancies": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 1699
+    },
+    "total_vacancies_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "total_vacancies": "Total 245 140 462 134 718 1699 32 14 1 13"
+      }
+    }
+  },
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "8420ca2dd358",
   "kind": "notification",
