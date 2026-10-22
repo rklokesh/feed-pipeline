@@ -99,6 +99,15 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   content: ""; position: absolute; inset: -12px -9px; }
 footer a::after, .crumb a::after, a.r::after, #dlPdf::after { inset: -8px -4px; }
 .list li.lr { cursor: pointer; }
+
+/* Back to top: small round button, bottom-right, appears once you have scrolled a screen or more */
+.totop { position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: max(16px, env(safe-area-inset-bottom, 0px)); width: 38px; height: 38px; border-radius: 50%;
+  display: grid; place-items: center; cursor: pointer; color: var(--grey); background: var(--page); border: 1px solid var(--line);
+  box-shadow: 0 1px 3px color-mix(in srgb, var(--ink) 10%, transparent); opacity: 0; transform: translateY(8px); pointer-events: none; transition: opacity .2s ease, transform .2s ease, color .15s ease; z-index: 5; }
+.totop.on { opacity: 1; transform: none; pointer-events: auto; }
+.totop:hover { color: var(--ink); border-color: color-mix(in srgb, var(--ink) 30%, var(--page)); }
+.totop::after { content: ""; position: absolute; inset: -8px; }
+@media print { .totop { display: none; } }
 </style>
 </head>
 <body>
@@ -244,5 +253,7 @@ footer a::after, .crumb a::after, a.r::after, #dlPdf::after { inset: -8px -4px; 
   document.addEventListener("touchstart", function (e) { var url = want(e.target.closest && e.target.closest("a")); if (url) go(url); }, { passive: true });
 })();
 </script>
+<button type="button" class="totop" id="totop" aria-label="Back to top" title="Back to top"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<script>(function(){var b=document.getElementById("totop"),hi=document.documentElement.lang==="hi";function lab(){var h=document.documentElement.lang==="hi";b.setAttribute("aria-label",h?"ऊपर जाएँ":"Back to top");b.title=h?"ऊपर जाएँ":"Back to top";}function f(){b.classList.toggle("on",scrollY>innerHeight*0.8);}addEventListener("scroll",f,{passive:true});f();new MutationObserver(lab).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});lab();b.addEventListener("click",function(){var still=matchMedia("(prefers-reduced-motion: reduce)").matches;scrollTo({top:0,behavior:still?"auto":"smooth"});});})();</script>
 </body>
 </html>
