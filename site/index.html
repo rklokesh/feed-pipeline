@@ -132,12 +132,17 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 
 /* inline search: plain grey words at the right, never boxes */
 .search { position: relative; }
-.search input { padding-right: 60px; padding-left: 28px; }
+.search input { padding-right: 100px; padding-left: 28px; }
 .sicon { position: absolute; left: 0; top: 50%; transform: translateY(-50%); color: var(--grey); pointer-events: none; }
 .search:focus-within .sicon { color: var(--ink); }
 .search input::-webkit-search-cancel-button, .search input::-webkit-search-decoration { -webkit-appearance: none; appearance: none; display: none; }
 .sx { position: absolute; right: 0; top: 50%; transform: translateY(-50%); all: unset; position: absolute; right: 0; top: 50%; transform: translateY(-50%); cursor: pointer; color: var(--grey); }
 .sx:hover { color: var(--ink); }
+.sx { display: inline-flex; align-items: center; gap: 7px; }
+.sx[hidden] { display: none; }
+/* keycap hint: the Esc key also clears; hidden on touch screens with no keyboard */
+.kc { font: inherit; font-size: .6875rem; line-height: 1; padding: 3px 5px 2px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; color: var(--grey); background: var(--page); }
+@media (hover: none) { .kc { display: none; } }
 
 
 
@@ -188,7 +193,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     <label class="search" for="q"><span style="position:absolute;left:-9999px" data-t="searchLabel">Search notices</span>
       <svg class="sicon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 20.5 20.5"/></svg>
       <input id="q" type="search" placeholder="Search: SSC, UGC NET, 12th pass, Bihar…" autocomplete="off" data-t-ph="searchPh">
-      <button type="button" class="sx" id="kHint" hidden data-t="clear">Clear</button>
+      <button type="button" class="sx" id="kHint" hidden><span data-t="clear">Clear</span><kbd class="kc" aria-hidden="true">Esc</kbd></button>
     </label>
     <p class="newline off" id="newline" aria-live="polite">&nbsp;</p>
     <div class="row head"><span class="hide-sm" data-t="hPosted">Posted</span><span data-t="hNotice">Notice</span><span class="hide-sm" data-t="hOrg">Organisation</span><span class="hide-sm" data-t="hType">Type</span><span data-t="hLast">Last date</span><span class="hide-sm" data-t="hPdf">PDF</span></div>
