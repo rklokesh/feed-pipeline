@@ -221,12 +221,6 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
 .ftip { position: fixed; z-index: 20; max-width: min(640px, calc(100vw - 32px)); font-size: .75rem; line-height: 1.3; padding: 3px 7px; border-radius: 4px;
   background: color-mix(in srgb, var(--page) 94%, var(--ink)); color: var(--ink); border: 1px solid color-mix(in srgb, var(--ink) 16%, transparent); box-shadow: 0 2px 8px color-mix(in srgb, var(--ink) 14%, transparent); pointer-events: none; opacity: 0; transform: translateY(3px); transition: opacity .12s ease, transform .12s ease; }
 .ftip.on { opacity: 1; transform: none; transition-delay: 60ms; }
-/* Siren beside "Closing soon": a gentle wobble with a soft red glow; still for reduced-motion users */
-.tabs .siren { display: inline-block; margin-left: 5px; font-size: .9em; line-height: 1; transform-origin: 50% 85%; animation: siren 1.4s ease-in-out infinite; }
-@keyframes siren { 0%, 100% { transform: rotate(0); filter: drop-shadow(0 0 0 transparent); }
-  20% { transform: rotate(-9deg); filter: drop-shadow(0 0 4px rgba(230, 40, 40, .55)); } 40% { transform: rotate(8deg); }
-  60% { transform: rotate(-5deg); filter: drop-shadow(0 0 3px rgba(230, 40, 40, .45)); } 80% { transform: rotate(0); filter: drop-shadow(0 0 0 transparent); } }
-@media (prefers-reduced-motion: reduce) { .tabs .siren { animation: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -247,7 +241,7 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
     <div class="tabs" role="group" data-t-aria="show">
       <button type="button" data-cat="all" aria-pressed="true"><span data-t="all">All</span><span class="c"></span></button>
       <button type="button" data-cat="Job" aria-pressed="false"><span data-t="jobs">Jobs</span><span class="c"></span></button>
-      <button type="button" data-cat="soon" aria-pressed="false"><span data-t="soon">Closing soon</span><span class="siren" aria-hidden="true">🚨</span><span class="c"></span></button>
+      <button type="button" data-cat="soon" aria-pressed="false"><span data-t="soon">Closing soon</span><span class="c"></span></button>
       <button type="button" data-cat="Admit card" aria-pressed="false"><span data-t="admits">Admit cards</span><span class="c"></span></button>
       <button type="button" data-cat="Result" aria-pressed="false"><span data-t="results">Results</span><span class="c"></span></button>
       <button type="button" data-cat="Answer key" aria-pressed="false"><span data-t="keys">Answer keys</span><span class="c"></span></button>
