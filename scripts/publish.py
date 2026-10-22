@@ -35,7 +35,8 @@ ORG_HI = {"NTA": "एनटीए", "SSC": "एसएससी", "UPPSC": "य�
           "DRDO": "डीआरडीओ", "RSSB Rajasthan": "आरएसएसबी राजस्थान", "MPESB": "एमपीईएसबी", "UKPSC": "यूकेपीएससी",
           "Employment News": "रोज़गार समाचार", "RRB": "आरआरबी", "UP Police": "यूपी पुलिस", "CSBC Bihar": "सीएसबीसी बिहार",
           "RRC Northern Railway": "आरआरसी उत्तर रेलवे", "RRC Western Railway": "आरआरसी पश्चिम रेलवे",
-          "RRC Central Railway": "आरआरसी मध्य रेलवे", "CTET": "सीटेट", "KVS": "केवीएस"}
+          "RRC Central Railway": "आरआरसी मध्य रेलवे", "CTET": "सीटेट", "KVS": "केवीएस",
+          "WBPSC": "डब्ल्यूबीपीएससी", "HPSC": "एचपीएससी", "HSSC": "एचएसएससी", "MPSC": "एमपीएससी", "TNPSC": "टीएनपीएससी"}
 
 
 def gh(method, path, **kw):

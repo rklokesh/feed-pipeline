@@ -234,3 +234,46 @@ sources:
     url: https://kvs.gov.in/
     render: static
     runner: india
+
+  # ---- Tier 2 (Oct 2026): state commissions ----
+  - id: wbpsc-home
+    org: WBPSC
+    url: https://psc.wb.gov.in/
+    render: static
+    runner: india
+
+  - id: hpsc-home
+    org: HPSC
+    url: https://hpsc.gov.in/en-us/
+    render: static
+    runner: india
+
+  - id: hssc-notices
+    org: HSSC
+    url: https://hssc.gov.in/publicNotice
+    render: static
+    runner: india
+
+  - id: hssc-adverts
+    org: HSSC
+    url: https://hssc.gov.in/advertisement
+    render: static
+    runner: india
+
+  - id: mpsc-adverts
+    org: MPSC
+    url: https://mpsc.gov.in/adv_notification/8
+    render: js
+    runner: india
+
+  - id: mpsc-results
+    org: MPSC
+    url: https://mpsc.gov.in/result_of_exam/11
+    render: js
+    runner: india
+
+  - id: tnpsc-home
+    org: TNPSC
+    url: https://tnpsc.gov.in/home.aspx
+    render: static
+    runner: india
