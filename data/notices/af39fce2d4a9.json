@@ -1,6 +1,23 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://uppbpb.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "आरक्षी नागरिक पुलिस एवं समकक्ष पद",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Important notice regarding the rescheduling of physical efficiency test centers and dates for UP Police Constable recruitment 2025.",
+    "summary_hi": "उत्तर प्रदेश पुलिस आरक्षी भर्ती के अंतर्गत शारीरिक दक्षता परीक्षा हेतु निर्धारित केन्द्रों एवं तिथियों में परिवर्तन के संबंध में महत्वपूर्ण सूचना।",
+    "title_en": "UP Police Constable PET Exam Date Rescheduled Notice 2025",
+    "title_hi": "उत्तर प्रदेश पुलिस आरक्षी शारीरिक दक्षता परीक्षा तिथि परिवर्तन सूचना",
+    "type": "Admit card",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -25,16 +42,54 @@
   },
   "first_seen": "2026-10-22T21:08:30+00:00",
   "id": "af39fce2d4a9",
+  "issue": 49,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-10-08",
   "org": "UP Police",
+  "page": {
+    "apply_start": null,
+    "apply_url": "http://uppbpb.gov.in",
+    "changes_from_notes": "",
+    "conducted_by_en": "Uttar Pradesh Police Recruitment and Promotion Board (UPPBPB)",
+    "conducted_by_hi": "उत्तर प्रदेश पुलिस भर्ती एवं प्रोन्नति बोर्ड (UPPBPB)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "UP Police Constable PET Exam Date Rescheduled Notice 2025",
+    "h1_hi": "उत्तर प्रदेश पुलिस आरक्षी शारीरिक दक्षता परीक्षा तिथि परिवर्तन सूचना",
+    "last_date": null,
+    "notice_date": "2026-10-08",
+    "official_site": "http://uppbpb.gov.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Constable Civil Police & Equivalent Posts",
+        "value_hi": "आरक्षी नागरिक पुलिस एवं समकक्ष पद"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "PRPB-1(1) / 2025",
+        "value_hi": "PRPB-1(1) / 2025"
+      }
+    ],
+    "status_en": "Physical efficiency test dates and centers rescheduled",
+    "status_hi": "शारीरिक दक्षता परीक्षा की तिथियां एवं केंद्र संशोधित",
+    "summary_en": "Important notice regarding the rescheduling of physical efficiency test centers and dates for UP Police Constable recruitment 2025. Candidates should check the revised schedule and official website.",
+    "summary_hi": "उत्तर प्रदेश पुलिस आरक्षी भर्ती के अंतर्गत शारीरिक दक्षता परीक्षा हेतु निर्धारित केन्द्रों एवं तिथियों में परिवर्तन के संबंध में महत्वपूर्ण सूचना। उम्मीदवार संशोधित सूची और आधिकारिक वेबसाइट देखें।"
+  },
   "pdf": {
     "bytes": 633442,
     "pages": 1,
     "sha256": "b9add24e3bce65856a7e8b7a299eabb0aed705c489c06204687ed3c23a7e2104",
     "text_kind": "text"
   },
+  "published_at": "2026-10-22T21:10:50Z",
+  "slug": "up-police-constable-pet-exam-date-rescheduled-notice-2025",
   "source_id": "uppbpb-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "उत्तर प्रदेश पुलिस में आरक्षी नागरिक पुलिस एवं समकक्ष पदों पर सीधी भर्ती-2025 के अन्तर्गत शारीरिक दक्षता परीक्षा हेतु निर्धारित केन्द्रों एवं तिथियों के परिवर्तन के सम्बन्ध में महत्वपूर्ण सूचना का प्रकाशन ।",
   "url": "https://uppbpb.gov.in/FilesUploaded/Notice/VIG1_08102026627d3fc1-7aee-449e-a951-e41323c0dcf3.pdf"
 }

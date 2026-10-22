@@ -1,6 +1,23 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://www.rrc-wr.com/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Sports Quota Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Western Railway has issued an amendment notice regarding volleyball sports discipline eligibility for the ongoing sports quota recruitment. Candidates should check the revised guidelines before applying.",
+    "summary_hi": "पश्चिम रेलवे ने चल रही खेल कोटा भर्ती के लिए वॉलीबॉल खेल अनुशासन पात्रता के संबंध में संशोधन नोटिस जारी किया है। उम्मीदवारों को आवेदन करने से पहले संशोधित दिशानिर्देशों की जाँच करनी चाहिए।",
+    "title_en": "Western Railway Sports Quota 2026 Volleyball Amendment",
+    "title_hi": "पश्चिम रेलवे खेल कोटा 2026 वॉलीबॉल संशोधन",
+    "type": "Job",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -13,16 +30,54 @@
   },
   "first_seen": "2026-10-22T21:08:30+00:00",
   "id": "fa098f9a0da7",
+  "issue": 50,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-09-03",
   "org": "RRC Western Railway",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Railway Recruitment Cell, Western Railway (RRC WR)",
+    "conducted_by_hi": "रेलवे भर्ती सेल, पश्चिम रेलवे (आर.आर.सी. डब्ल्यू.आर.)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "Western Railway Sports Quota 2026 Volleyball Amendment",
+    "h1_hi": "पश्चिम रेलवे खेल कोटा 2026 वॉलीबॉल संशोधन",
+    "last_date": null,
+    "notice_date": "2026-09-03",
+    "official_site": "https://www.rrc-wr.com",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Sports Quota Posts",
+        "value_hi": "खेल कोटा पद"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "RRC/WR/01/2026(Sports Quota)",
+        "value_hi": "RRC/WR/01/2026(Sports Quota)"
+      }
+    ],
+    "status_en": "Amendment notice released",
+    "status_hi": "संशोधन नोटिस जारी किया गया",
+    "summary_en": "Western Railway has issued an amendment notice regarding volleyball sports discipline eligibility for employment notification RRC/WR/01/2026 (Sports Quota). Candidates should review the revised guidelines before applying.",
+    "summary_hi": "पश्चिम रेलवे ने रोजगार अधिसूचना आर.आर.सी./डब्लू.आर./01/2026 (खेल कोटा) के लिए वॉलीबॉल खेल अनुशासन पात्रता के संबंध में संशोधन नोटिस जारी किया है। उम्मीदवारों को आवेदन करने से पहले संशोधित दिशानिर्देशों की समीक्षा करनी चाहिए।"
+  },
   "pdf": {
     "bytes": 441895,
     "pages": 1,
     "sha256": "02546af8028dd6f769601719a670e96cc0da50b551e6d0d05790841d9cfba186",
     "text_kind": "text"
   },
+  "published_at": "2026-10-22T21:11:18Z",
+  "slug": "western-railway-sports-quota-2026-volleyball-amendment",
   "source_id": "rrc-wr",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Click here to view/download Notice of Amendment to the Notification regarding Volleyball Sport Discipline - Uploaded on 04-09-2026",
   "url": "https://www.rrc-wr.com/rrwc/Files/a06be1ce-7c5f-4afe-8daa-590c558b6a40.pdf"
 }

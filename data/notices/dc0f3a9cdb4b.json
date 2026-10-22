@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://ctet.nic.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "correction window notice, not a new vacancy or final result",
+    "summary_en": "Correction window for CTET applications is open until September 10, 2026.",
+    "summary_hi": "सीटीईटी आवेदन पत्रों में सुधार के लिए विंडो 10 सितंबर 2026 तक खुली है।",
+    "title_en": "CTET Correction Window",
+    "title_hi": "सीटीईटी सुधार विंडो",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -78,7 +93,7 @@
     "text_kind": "text"
   },
   "source_id": "ctet-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "PUBLIC NOTICE: CTET SEP-2026 CORRECTION WINDOW (last date 10.09.2026)",
   "url": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/09/20260907461266783.pdf"
 }

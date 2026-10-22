@@ -1,6 +1,23 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://csbc.bihar.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-06-24",
+    "last_date": null,
+    "list": true,
+    "posts": "Constable (General Duty Close Cadre)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "CSBC Bihar has released the final selection list for the post of Constable in the Special Branch of Bihar Police against Advertisement No. 01/2026.",
+    "summary_hi": "केंद्रीय चयन बोर्ड सिपाही भर्ती, बिहार ने विज्ञापन संख्या 01/2026 के अंतर्गत बिहार पुलिस विशेष शाखा में सिपाही पद के लिए अंतिम चयन सूची जारी कर दी है।",
+    "title_en": "Bihar Police Special Branch Constable Final Selection List 2026",
+    "title_hi": "बिहार पुलिस विशेष शाखा सिपाही अंतिम चयन सूची 2026",
+    "type": "Result",
+    "vacancies": 83
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -18,16 +35,66 @@
   },
   "first_seen": "2026-10-22T21:08:30+00:00",
   "id": "5c17550976bd",
+  "issue": 47,
+  "issue_tidy": true,
   "kind": "result",
+  "notice_date": "2026-10-09",
   "org": "CSBC Bihar",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Central Selection Board of Constable Bihar (CSBC Bihar)",
+    "conducted_by_hi": "केंद्रीय चयन बोर्ड सिपाही भर्ती, बिहार",
+    "exam_date": "2026-06-24",
+    "fees": [],
+    "h1_en": "Bihar Police Special Branch Constable Final Selection List 2026",
+    "h1_hi": "बिहार पुलिस विशेष शाखा सिपाही अंतिम चयन सूची 2026",
+    "last_date": null,
+    "notice_date": "2026-10-09",
+    "official_site": "https://csbc.bihar.gov.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Constable (General Duty Close Cadre) in Special Branch",
+        "value_hi": "विशेष शाखा में सिपाही (सामान्य बंद संवर्ग)"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "83",
+        "value_hi": "83"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "24 Jun 2026",
+        "value_hi": "24-06-2026"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "01/2026",
+        "value_hi": "01/2026"
+      }
+    ],
+    "status_en": "Final result declared",
+    "status_hi": "अंतिम परिणाम घोषित",
+    "summary_en": "CSBC Bihar has released the final selection list for the post of Constable in the Special Branch of Bihar Police against Advertisement No. 01/2026. Selected candidates must report for joining physically between 25 Oct 2026 and 20 Nov 2026.",
+    "summary_hi": "केंद्रीय चयन बोर्ड सिपाही भर्ती, बिहार ने विज्ञापन संख्या 01/2026 के अंतर्गत बिहार पुलिस विशेष शाखा में सिपाही पद के लिए अंतिम चयन सूची जारी कर दी है। चयनित अभ्यर्थियों को 25-10-2026 से 20-11-2026 के बीच भौतिक रूप से उपस्थित होकर योगदान करना होगा।"
+  },
   "pdf": {
     "bytes": 292318,
     "pages": 6,
     "sha256": "54d832c15e80a48db52fe846a6cb4d77ce48b64abb4b7f5066bfec2b2bbb2385",
     "text_kind": "text"
   },
+  "published_at": "2026-10-22T21:10:22Z",
+  "slug": "bihar-police-special-branch-constable-final-selection-list-2026",
   "source_id": "csbc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "09-10-2026 Results: Final Selection List of Candidates for the Post of Constable (General Duty Close Cadre) in Special Branch of Bihar Police . (Advt. No. 01/2026)",
   "url": "https://csbc.bihar.gov.in/Advt/Results-01-2026-Final-09-10-2026.pdf"
 }

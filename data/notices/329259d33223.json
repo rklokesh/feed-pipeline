@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://csbc.bihar.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Driver",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Candidate specific document verification notice with a list of individual roll numbers.",
+    "summary_en": "Notice regarding submission of original documents for document verification for specific candidates under Advt. No. 02/2025.",
+    "summary_hi": "विज्ञापन संख्या 02/2025 के अंतर्गत कुछ अभ्यर्थियों के लिए मूल दस्तावेजों के सत्यापन हेतु सूचना।",
+    "title_en": "CSBC Bihar Driver Document Verification Notice",
+    "title_hi": "केंद्रीय चयन बोर्ड सिपाही भर्ती बिहार चालक दस्तावेज सत्यापन सूचना",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -44,7 +59,7 @@
     "text_kind": "text"
   },
   "source_id": "csbc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "17-10-2026 Important Notice: Regarding Submission of Original Documents for Document Verification and Physical Presence for Some Candidates. (Advt. No. 02/2025)",
   "url": "https://csbc.bihar.gov.in/Advt/Notice-02-2025-17-10-2026.pdf"
 }

@@ -1,6 +1,23 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://www.rrc-wr.com/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-09-30",
+    "list": true,
+    "posts": "Group C and Group D",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "RRC Western Railway has invited online applications for Group C and Group D posts under the Sports Quota for 2026-27. Eligible candidates can apply online from 01.09.2026 to 30.09.2026.",
+    "summary_hi": "आरआरसी पश्चिम रेलवे ने वर्ष 2026-27 के लिए खेल कोटे के अंतर्गत ग्रुप सी और ग्रुप डी के पदों पर भर्ती के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 01.09.2026 से 30.09.2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "title_en": "RRC Western Railway Sports Quota Recruitment 2026",
+    "title_hi": "आरआरसी पश्चिम रेलवे खेल कोटा भर्ती 2026",
+    "type": "Job",
+    "vacancies": 64
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -68,16 +85,78 @@
   },
   "first_seen": "2026-10-22T21:08:30+00:00",
   "id": "2db4a2bf8028",
+  "issue": 46,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-08-27",
   "org": "RRC Western Railway",
+  "page": {
+    "apply_start": "2026-09-01",
+    "apply_url": "https://www.rrc-wr.com",
+    "changes_from_notes": "",
+    "conducted_by_en": "Railway Recruitment Cell, Western Railway (RRC WR)",
+    "conducted_by_hi": "रेलवे भर्ती सेल, पश्चिम रेलवे",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "RRC Western Railway Sports Quota Recruitment 2026",
+    "h1_hi": "आरआरसी पश्चिम रेलवे खेल कोटा भर्ती 2026",
+    "last_date": "2026-09-30",
+    "notice_date": "2026-08-27",
+    "official_site": "https://www.rrc-wr.com",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Group C and Group D",
+        "value_hi": "ग्रुप सी और ग्रुप डी"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "64",
+        "value_hi": "64"
+      },
+      {
+        "label_en": "Apply online",
+        "label_hi": "ऑनलाइन आवेदन",
+        "value_en": "01 Sep 2026 to 30 Sep 2026",
+        "value_hi": "01 सितं 2026 से 30 सितं 2026"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "18 to 25 years (as on 01 Jan 2027)",
+        "value_hi": "18 से 25 वर्ष (01 जन 2027 को)"
+      },
+      {
+        "label_en": "Educational qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "Graduate for Level 5/4, 12th/ITI for Level 3/2, 10th/ITI for Level 1",
+        "value_hi": "लेवल 5/4 के लिए स्नातक, लेवल 3/2 के लिए 12वीं/आईटीआई, लेवल 1 के लिए 10वीं/आईटीआई"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "RRC/WR/01/2026",
+        "value_hi": "RRC/WR/01/2026"
+      }
+    ],
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Railway Recruitment Cell (RRC) Western Railway has invited online applications for Group C and Group D posts under the Sports Quota for the year 2026-27. Eligible national sportspersons can apply online from 01 September 2026 to 30 September 2026.",
+    "summary_hi": "रेलवे भर्ती सेल (आरआरसी) पश्चिम रेलवे ने वर्ष 2026-27 के लिए खेल कोटे के अंतर्गत ग्रुप सी और ग्रुप डी के पदों पर भर्ती के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य राष्ट्रीय खिलाड़ी 01 सितंबर 2026 से 30 सितंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।"
+  },
   "pdf": {
     "bytes": 1443088,
     "pages": 20,
     "sha256": "e9871a7b2db2d352292b4c36c0073c84320a92a4c75e34aa1b89002331c98f71",
     "text_kind": "text"
   },
+  "published_at": "2026-10-22T21:10:03Z",
+  "slug": "rrc-western-railway-sports-quota-recruitment-2026",
   "source_id": "rrc-wr",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Click here to view/download Notification in Hindi - Uploaded on 27-08-2026",
   "url": "https://www.rrc-wr.com/rrwc/Files/f5048247-0e91-4bdb-a29b-35c880e208bb.pdf"
 }

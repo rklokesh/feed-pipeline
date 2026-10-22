@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://kvs.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Organizational chart of the board, not a job notice or result",
+    "summary_en": "This is an organizational chart of the Kendriya Vidyalaya Sangathan and does not contain any job vacancies or application details.",
+    "summary_hi": "यह केन्द्रीय विद्यालय संगठन का संगठनात्मक चार्ट है और इसमें कोई रिक्ति या आवेदन विवरण नहीं है।",
+    "title_en": "KVS Organizational Chart",
+    "title_hi": "केन्द्रीय विद्यालय संगठन संगठनात्मक चार्ट",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +31,7 @@
     "text_kind": "text"
   },
   "source_id": "kvs-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "संगठनात्मक चार्ट",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2025/05/2025051479.pdf"
 }

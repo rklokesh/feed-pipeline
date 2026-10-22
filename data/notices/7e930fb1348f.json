@@ -1,6 +1,23 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://ctet.nic.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-12-12",
+    "last_date": null,
+    "list": true,
+    "posts": "Central Teacher Eligibility Test",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "The 22nd edition of CTET will be conducted on 12th and 13th December 2026. Candidates can check their exam city and download admit cards from the portal prior to the exam.",
+    "summary_hi": "केंद्रीय शिक्षक पात्रता परीक्षा का 22वां संस्करण 12 और 13 दिसंबर 2026 को आयोजित किया जाएगा। अभ्यर्थी पोर्टल से परीक्षा शहर की जानकारी और प्रवेश पत्र डाउनलोड कर सकते हैं।",
+    "title_en": "CTET 22nd Edition Exam Schedule 2026",
+    "title_hi": "केंद्रीय शिक्षक पात्रता परीक्षा 22वां संस्करण परीक्षा कार्यक्रम 2026",
+    "type": "Admit card",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -13,16 +30,60 @@
   },
   "first_seen": "2026-10-22T21:08:30+00:00",
   "id": "7e930fb1348f",
+  "issue": 48,
+  "issue_tidy": true,
   "kind": "admit_card",
+  "notice_date": "2026-09-14",
   "org": "CTET",
+  "page": {
+    "apply_start": null,
+    "apply_url": "https://www.cbse.gov.in",
+    "changes_from_notes": "",
+    "conducted_by_en": "Central Board of Secondary Education (CBSE)",
+    "conducted_by_hi": "केंद्रीय माध्यमिक शिक्षा बोर्ड (सीबीएसई)",
+    "exam_date": "2026-12-12",
+    "fees": [],
+    "h1_en": "CTET 22nd Edition Exam Schedule 2026",
+    "h1_hi": "केंद्रीय शिक्षक पात्रता परीक्षा 22वां संस्करण परीक्षा कार्यक्रम 2026",
+    "last_date": null,
+    "notice_date": "2026-09-14",
+    "official_site": "https://ctet.nic.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Exam Name",
+        "label_hi": "परीक्षा का नाम",
+        "value_en": "Central Teacher Eligibility Test (CTET) 22nd Edition",
+        "value_hi": "केंद्रीय शिक्षक पात्रता परीक्षा (सीटीईटी) 22वां संस्करण"
+      },
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा की तिथि",
+        "value_en": "12 and 13 December 2026",
+        "value_hi": "12 और 13 दिसंबर 2026"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "CBSE/CTET/ 2026",
+        "value_hi": "सीबीएसई/सीटीईटी/2026"
+      }
+    ],
+    "status_en": "Exam dates announced",
+    "status_hi": "परीक्षा तिथियों की घोषणा की गई",
+    "summary_en": "The Central Board of Secondary Education has announced that the 22nd edition of the Central Teacher Eligibility Test (CTET) will be conducted on 12th and 13th December 2026. Candidates should check the official portal for exam city details 15 days prior and download their admit cards two days before the examination.",
+    "summary_hi": "केंद्रीय माध्यमिक शिक्षा बोर्ड ने घोषणा की है कि केंद्रीय शिक्षक पात्रता परीक्षा का 22वां संस्करण 12 और 13 दिसंबर 2026 को आयोजित किया जाएगा। अभ्यर्थी परीक्षा से 15 दिन पहले परीक्षा शहर की जानकारी और परीक्षा से दो दिन पहले प्रवेश पत्र आधिकारिक पोर्टल से डाउनलोड कर सकते हैं।"
+  },
   "pdf": {
     "bytes": 356150,
     "pages": 1,
     "sha256": "a6f21bff9e2130f53ab15b6f255a6aca74ac471f1cfd8657a365ec965978b3ef",
     "text_kind": "text"
   },
+  "published_at": "2026-10-22T21:10:36Z",
+  "slug": "ctet-22nd-edition-exam-schedule-2026",
   "source_id": "ctet-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "PUBLIC NOTICE: Exam Dates for 22nd edition of CTET",
   "url": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/09/20260914325514446.pdf"
 }
