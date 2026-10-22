@@ -1,0 +1,5 @@
+# gds https://indiapostgdsonline.gov.in/
+## plain fetch failed: HTTPSConnectionPool(host='indiapostgdsonline.gov.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='indiapostgdsonline.gov.in', port=443) at 0x10b220890>, 'Connection to indiapostgdsonline.gov.in timed out. (connect timeout=30)'))
+## browser failed: Page.goto: Timeout 45000ms exceeded.
+Call log:
+navigating to "https://indiapostgdsonline.gov.in/", waiting until "domcontentloaded"
