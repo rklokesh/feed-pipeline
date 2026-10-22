@@ -51,7 +51,6 @@ MAIN = r'''    <style>
     </style>
     <div class="rp">
       <div>
-        <nav class="crumb" aria-label="Breadcrumb"><a class="back" href="/"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a></nav>
         <h1 data-t="h1">Report a mistake</h1>
         <p class="lead" data-t="lead"></p>
       </div>
