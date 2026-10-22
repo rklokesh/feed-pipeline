@@ -1,108 +1,126 @@
 # SarkariChart — Handover
 
 Everything needed to continue this project from any Claude account (or by a person).
-Last updated: 22 Oct 2026 (evening). Owner: the site owner.
+Last updated: 22 Oct 2026 (night, IST ~00:00). Owner: the site owner.
 
-**To continue with a new Claude account:** connect your Mac folder `Sarkari Chart` (or give it the GitHub repo),
-then say: *"Read docs/HANDOVER.md and docs/PLAN.md in the sarkarichart repo and continue from 'Next steps'."*
+**To continue with a new Claude account:** in the Claude desktop app, connect the Mac folder
+`/Volumes/Workspace/App idea/Sarkari Chart` (it holds the repo, this file and the GitHub token file), then say:
+*"Read HANDOVER.md in the Sarkari Chart folder and docs/PLAN.md in the repo, and continue from 'Where we are / next steps'."*
+The repo is the source of truth; nothing important lives only inside a Claude account.
 
 ---
 
 ## 1. What we are building
 
 A calm, fast, trustworthy Indian govt-job alert site — a 10x better SarkariResult.
-- **Goal:** go viral; heavy on trust; the site just works; quick and fast; reliable. Avoid over-designed extras.
-- **Moat:** clean doc-like "craigslist of govt jobs" UX, speed, no ads for now, Google + AI-search friendly, full Hindi.
-- **Money later:** email list (alerts) → affiliate test-prep, coaching leads, direct-sold quiet sponsor slots
-  (side margins on desktop; on phones after the 5th row and above the footer; always labelled "Sponsored").
-- **Domain:** `sarkarichart.com` is available; buy it at public launch. Until then the site is
-  `https://sarkarichart.pages.dev` and stays **noindex**.
-- Full research, competitors, revenue model and legal notes: **docs/PLAN.md**.
+- **Goal (owner's words):** go viral; heavy on trust; the site just works; quick and fast; reliable. Avoid over-done features.
+- **Moat:** clean doc-like UX, speed, no ads for now, Google + AI-search friendly, full Hindi.
+- **Money later:** email list → affiliate test-prep, coaching leads, quiet sponsor slots (always labelled "Sponsored").
+- **Domain:** `sarkarichart.com` (available; buy at public launch). Until then: `https://sarkarichart.pages.dev`, **noindex**.
+- **Lead list:** WhatsApp Channel https://whatsapp.com/channel/0029Vb9M2x930LKIvmiBrY2s (in the top strip).
+  Later Telegram (fully automatable), then email sign-up (the list we own; Cloudflare D1).
+  WhatsApp Channel posting cannot be automated officially (unofficial APIs risk a ban) → plan: ready-to-paste posts.
+- Full research, competitors, revenue model, legal notes: **docs/PLAN.md**.
 
-## 2. Where everything lives (all owned by the owner, none tied to a Claude account)
+## 2. Where everything lives (all owned by the owner)
 
 | Thing | Where |
 |---|---|
-| Code + data (source of truth) | GitHub `rklokesh/sarkarichart` (private); local copy: Mac `/Volumes/Workspace/App idea/Sarkari Chart/sarkarichart` |
+| Code + data | GitHub `rklokesh/sarkarichart` (private); Mac copy: `/Volumes/Workspace/App idea/Sarkari Chart/sarkarichart` |
 | Live site | Cloudflare Pages project `sarkarichart` → https://sarkarichart.pages.dev |
-| Test views | `?preview=returning` (returning-visitor view + ~130 demo rows), `?demo` (demo rows) |
-| Secrets (GitHub → Settings → Secrets) | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `GEMINI_API_KEY` |
-| Personal GitHub token for pushes from the Mac | `Sarkari Chart/.github-token` (outside the repo; never paste it in chat) |
-| Logo source files | `Sarkari Chart/sarkarichart-6b-stacked.svg` (current), earlier concepts in the same folder |
-| Design preview (old Claude artifact) | copy saved as `docs/design-preview.html` |
-| Self-hosted runner script (for India-only sites, later) | `Sarkari Chart/setup-runner.sh` |
-| Review queue (approve/reject) | GitHub → `rklokesh/sarkarichart` → Issues (labels `review`, `approve`, `reject`) |
-| Plan / research doc (Claude Docs, old account) | https://claude.ai/artifact/REDXLjETKWT4p4gK773PPJ — copy in `docs/PLAN.md` |
+| Test views | `?preview=returning` (returning-visitor view + demo rows), `?demo` (demo rows) |
+| GitHub secrets | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `GEMINI_API_KEY` |
+| Personal GitHub token (pushes + API from the Mac) | `Sarkari Chart/.github-token` — outside the repo, never paste/print it. Has Contents, Actions, Administration (R/W). Cannot read Issues. |
+| Self-hosted runner | Mac mini, runner name `mac-mini-india`, labels `self-hosted, india`; installed by `Sarkari Chart/setup-runner.sh`; runs as a LaunchAgent (starts when the owner is logged in) |
+| Logo source | `Sarkari Chart/sarkarichart-6b-stacked.svg` |
+| Issues = record of every notice | GitHub → Issues (labels `auto-published`, `review`, `approve`, `reject`) |
+| Plan / research doc | https://claude.ai/artifact/REDXLjETKWT4p4gK773PPJ (old account) — copy in `docs/PLAN.md` |
 
-## 3. How the system works (all free tiers)
+## 3. How the system works (free tiers + the Mac mini)
 
 ```
-official notice boards ──(watch.yml, every 30 min, GitHub Actions)──▶ data/notices/<id>.json + PDF text
-        └─ prepare.yml (after each watch): Gemini writes a clean card (EN+HI title, category, dates, summary)
-           ├─ junk (refund notes, booklets…) → status "skipped"
-           └─ real notices → status "in_review" + a GitHub issue labelled `review`
-You: open the issue in the GitHub app → add label `approve` (or `reject`). Fix a field first by commenting
-     e.g. `title_en: SSC CGL 2026` or `last_date: 2026-11-30`.
-        └─ publish.yml: records decisions (sweeps all labelled issues), rebuilds the homepage list
-           (site/index.html between /*ITEMS:START*/ … /*ITEMS:END*/), then calls deploy.yml
-deploy.yml: builds notice-page PDFs (cached; only rebuilt when notice pages change) → Cloudflare Pages
+watch.yml        (GitHub, hourly)  → 9 boards reachable from US servers      ┐ data/notices/<id>.json
+watch-india.yml  (Mac mini, hourly at :45) → 22 India-only boards           ┘ + data/text/<id>.txt
+   └─ prepare.yml (after either watch): Gemini writes a card (EN+HI title, type, dates, summary, list/skip)
+        ├─ junk → "skipped"
+        ├─ AI confidence "low" → GitHub issue labelled `review` (waits for the owner)
+        └─ everything else → AUTO-PUBLISHED: status "approved", closed issue labelled `auto-published`,
+           pages.py writes /notice/<slug>/ (AI reads PDF + issue comments), publish.py build updates the homepage,
+           then deploy.yml (PDF copies of notice pages → Cloudflare Pages)
+publish.yml (when the owner adds a label to an issue, open or closed):
+   `reject`  → taken down (removed from the list, its page deleted)
+   `approve` → after a plain-words comment ("last date is 30 Nov"): page re-written with the fix, keeps its place
 ```
+- Sources: `sources/sources.yaml` (`runner: github` or `runner: india`; `render: static` or `js`).
+- AI: Gemini `gemini-flash-lite-latest` via OpenAI-compatible endpoint, free tier, throttled with retries.
+- Scripts: `watch.py`, `extract.py`, `common.py` (fetch; certificate-chain repair; legacy-TLS fallback for old govt
+  servers — certificates still verified; browser User-Agent retry on 403), `prepare.py`, `pages.py`, `publish.py`,
+  `make_pdfs.mjs`, `probe_links.py` (+ `probe-india.yml`: dumps every link on given board pages into `reports/links/`).
+- "Posted" date = the official notice date read from the PDF (`notice_date`), never our publish date.
+- Deploy: PDF-printer steps have timeouts + continue-on-error, so a stuck apt mirror never blocks the site.
 
-- Sources: `sources/sources.yaml` — `runner: github` (works from GitHub's US servers, 9 boards) or
-  `runner: india` (needs an Indian connection: UPSC, RRB, defence, most states → later via the Mac mini runner).
-- AI: Gemini `gemini-flash-lite-latest` via its OpenAI-compatible endpoint, free tier, throttled (7 s gap, retries).
-- Scripts: `scripts/watch.py`, `extract.py`, `common.py` (fetch + cert repair), `prepare.py`, `publish.py`, `make_pdfs.mjs`.
+## 4. Board status (22 Oct 2026, India runner)
 
-## 4. Design rules (agreed — keep them)
+- Working: UPSC (both pages), NABARD, Navy, BSF, ITBP, RPSC, RSSB, MPPSC, DSSSB, UPSSSC (+ the 9 GitHub boards:
+  SSC, IBPS, NTA, SBI, LIC, ISRO, UPPSC, BPSC, BSSC).
+- Reached but 0 notices found — need per-board tuning (links point to pages, not PDFs, or JS menus):
+  RRB unified, Army, Coast Guard, UKPSC, Employment News, RBI. **← in progress** (probe-india run dispatched;
+  read `reports/links/*.txt` after `git pull`, then adjust each source in sources.yaml / watch.py).
+- Failing: RRB Chandigarh (certificate doesn't match its hostname — don't bypass), MP ESB (certificate chain),
+  CRPF (tried rectt.crpf.gov.in: no DNS), DRDO (tried rac.gov.in: timeout), IAF Agniveer (site was down, 503).
 
-- Look: calm, warm, document-like; one sans typeface (Helvetica Neue/system, Noto Sans Devanagari for Hindi);
-  ink `#36322D` (warm charcoal, never pure black); greys from the theme; no boxes, no clutter.
-- Page width 1000px; header = tagline · logo (stacked mark + "सरकारी चार्ट" in Tiro Devanagari Hindi) · About / हिंदी / light-dark toggle.
-- Tabs: All · Jobs · Closing soon (jobs closing ≤ 7 days, soonest first, count always shown) · Admit cards · Results · Answer keys;
-  sliding underline; switching tabs never moves the page or the footer.
-- Table: Posted (date + fixed slot for a red blinking "New" tag) · Notice (only dark text) · Organisation · Type ·
-  Last date (date; orange ≤ 7 days, red ≤ 3 days; quick grey tooltip "N days left"; NIL in light grey when none) · PDF.
-  Newest first everywhere. 25 rows, then "Show 25 more". Whole row clickable; big invisible tap areas everywhere.
-- "New": newest 3 for first-time visitors (last 24 h); afterwards "new since your last visit" (a visit ends after 30 min away);
-  line "N new since your last visit" keeps its space so nothing shifts.
-- Search: typewriter hint cycling newest notices ("Search : …"); synonyms + Hindi + typo tolerance; picks the tab
-  (matches in one category → that tab, several → All); ↑/↓/Enter; Esc keycap clears; `?q=` shareable.
-- Full Hindi mode: not one English word left (except the Esc key).
-- Every link to official sites/PDFs opens in a new tab. Our notice page can be downloaded as our own PDF (logo, both languages).
-- Speed: hover/touch prefetch of our own pages; no images except tiny SVGs; back-to-top button.
-- Announcement strip at the very top (soft beige, WhatsApp icon, text + link, × to close; remembered per visitor by `data-id`;
-  shorter text on phones; EN/HI; hidden automatically while `data-href` is empty). Change `data-id` to re-show it for a new message.
-- Rejected ideas (don't redo): Press-K command palette, boxed search, tag frames on tabs, pillars/elephants in margins,
-  click sounds, recent-search chips (parked — a reminder exists), bookmark pop-up (parked).
+## 5. Design rules (agreed — keep them)
 
-## 5. Next steps (in order)
+- Calm, warm, document-like; ink `#36322D` (never pure black); Helvetica Neue/system + Noto Sans Devanagari;
+  logo = stacked 8-petal mark + "सरकारी चार्ट" (Tiro Devanagari Hindi). Page width 1000px.
+- Favicon: mark only; follows the site theme (toggle or system): charcoal in light, white in dark
+  (`favicon-light.svg`, `favicon-dark.svg`, `favicon.png`, `favicon-white.png`, swapped by a small head script).
+- Tabs: All · Jobs · Closing soon (with a flashing red siren image `siren.webp`, ~1 flash/sec; still image for
+  reduced motion) · Admit cards · Results · Answer keys. Switching tabs never moves the page or footer.
+- Table: Posted (date + fixed slot for a red blinking "New" tag) · Notice · Organisation · Type · Last date
+  (orange ≤7 days, red ≤3; native-style tooltip "N days left"; NIL in light grey) · PDF. Newest first, 25 rows +
+  "Show 25 more". Whole row clickable; big invisible tap areas. Cut-off titles show the full title in the same tooltip.
+- "New": notice issued within 2 days (IST) AND (first visit OR published after your last visit; a visit ends after
+  30 min away). Line "N new since your last visit".
+- Search: typewriter hint "Search : <newest notices>"; Hindi + synonyms + typos; picks the tab; Esc keycap clears; `?q=`.
+- Top strip: sticky frosted glass, WhatsApp icon, underlined link (no button shape; text + underline fade together
+  on hover), × close (remembered per `data-id`). Underline offset 5px site-wide.
+- Our own pages open in the same tab; official sites/PDFs in a new tab. NOT installable as an app (manifest removed,
+  service worker self-unregisters).
+- Full Hindi mode (not one English word except the Esc key). Back-to-top button bottom-right.
+- Rejected (don't redo): command palette, boxed search, pillars/elephants in margins, click sounds, purple/charcoal
+  strip, emoji siren, recent-search chips and bookmark pop-up (both parked; reminders set for Sun 25 Oct).
 
-1. ✅ Done 22 Oct: 20 real notices approved and live (17 visible; 3 expired ones auto-hidden).
-2. ✅ Done: every approved notice gets its own EN/HI page at /notice/<slug>/ (scripts/pages.py + templates/notice.html):
-   AI reads the official PDF + the reviewer's plain-English GitHub comments; rows link to it; PDF + "Share on WhatsApp".
-   To rewrite all pages: Actions → "Publish approved notices" → Run workflow → tick "Rewrite every notice page".
-1b. ✅ WhatsApp Channel live in the strip: https://whatsapp.com/channel/0029Vb9M2x930LKIvmiBrY2s
-   **Lead list:** next — post approved notices there; later Telegram + email. (Original plan: the owner creates a WhatsApp Channel "सरकारी चार्ट – SarkariChart" (and optionally Telegram) and shares the link;
-   put it in the strip's `data-href` on the homepage and notice pages. Then: post approved notices to the channel,
-   add a "Share on WhatsApp" button on notice pages, and later an email sign-up stored in a free Cloudflare D1 database
-   (WhatsApp followers cannot be exported; email is the owned list).
-3. **Trust details:** "Checked on <time>" + official source link on each notice; corrections note.
-4. **Mac mini self-hosted runner** (`setup-runner.sh`, label `india`) to cover UPSC, RRB, defence, states.
-5. **Daily health message** (what was checked, what failed, what awaits approval).
-6. **Launch:** buy sarkarichart.com, connect to Cloudflare Pages, remove noindex, sitemap, JobPosting schema,
-   Search Console + Bing, WhatsApp share button.
-7. Later: email/WhatsApp alerts + sign-up, Telegram channel, sponsor slots, eligibility profile.
+## 6. Where we are / next steps (in order)
 
-## 6. Working conventions used so far
+1. **Finish board tuning** (section 4): RRB first (most searched), then Army, Coast Guard, Employment News, UKPSC, RBI;
+   find working URLs for CRPF and DRDO.
+2. **Daily health message** to the owner: boards checked/failed, what auto-published, what waits in `review`,
+   whether the Mac runner is online.
+3. **Launch for search:** buy sarkarichart.com → connect to Cloudflare Pages → remove noindex (`site/_headers`) →
+   sitemap, JobPosting schema, server-rendered notice list (SEO/AEO), Search Console + Bing.
+4. **Speed (agreed in principle, not done):** outline the wordmark text into SVG paths + non-blocking Noto font;
+   long cache headers for static assets.
+5. Ready-to-paste WhatsApp channel posts per notice; Telegram channel automation; email sign-up (D1).
+6. Later: sponsor slots, eligibility profile.
 
-- Commit as `rklokesh <rklokesh@users.noreply.github.com>`; pushes from the Mac use the token file via an
-  `http.extraheader` (never print the token).
-- Verify every change in a headless browser (desktop + phone widths, English + Hindi, light + dark) before deploying.
-- When copying files to the Mac, check a sha256 — one truncated upload once broke the live page.
-- **Important:** `site/index.html` contains the published notice list (between `/*ITEMS:START*/` and `/*ITEMS:END*/`),
-  written by the publish workflow. After hand-editing or replacing that file, always `git pull` first and then run
-  `python3 scripts/publish.py build`, otherwise approved notices are wiped from the homepage.
-- Reminders already scheduled in the old Claude session (Sun 25 Oct): bookmark pop-up idea; recent-searches redesign.
-- Keep this file current: update it whenever something important changes, and copy it to the Mac folder root
-  (`Sarkari Chart/HANDOVER.md`) as well as `docs/HANDOVER.md` in the repo.
-- The preview (old Claude artifact) and live site were kept identical except for preview-only demo rows.
+## 7. Mac mini notes
+
+- Keep "Prevent automatic sleeping when the display is off" ON (System Settings → Energy). FileVault is on, so
+  automatic login is impossible: after a power cut, log in once and the runner restarts by itself.
+  Planned restarts: `sudo fdesetup authrestart`. A small UPS is the cheap fix for outages.
+- If the Mac is off, India-board checks wait in the queue; the GitHub boards keep running.
+- Budget alternatives to the Mac (not set up): Oracle Cloud Always Free (Mumbai/Hyderabad) or AWS Lightsail Mumbai.
+
+## 8. Working conventions
+
+- Commit as `rklokesh <rklokesh@users.noreply.github.com>`; push from the Mac with an `http.extraheader` built from
+  `../.github-token` (never print the token; mask output with `sed "s/$T/***/g"`).
+- **Always `git pull` first.** Bots commit data and `site/index.html` (the notice list between `/*ITEMS:START*/` and
+  `/*ITEMS:END*/`) every hour. After hand-replacing `site/index.html`, run `python3 scripts/publish.py build`.
+- Claude's remote file tools: git needs delete permission on the folder (lock files); `scripts/publish.py` could only be
+  written via file commit (not shell) in one session, and `.github/workflows/*` only via shell — if one way is refused,
+  try the other. Verify copies with sha256 (one truncated upload once broke the live page). Image files may be
+  re-encoded in transfer (hash changes) — check dimensions/frames instead.
+- Test every UI change in a headless browser (desktop + phone, EN + HI, light + dark) before pushing.
+- Keep this file current: copy to the Mac folder root (`Sarkari Chart/HANDOVER.md`) AND `docs/HANDOVER.md`.
