@@ -1,0 +1,50 @@
+name: Watch India-only sources
+
+# Same as "Watch official sources", but for boards that block foreign servers (UPSC, RRB, defence,
+# paramilitary, Employment News, state commissions). Runs on the owner's Mac mini (self-hosted runner,
+# label `india`), so it costs no GitHub minutes. If the Mac is off, the run simply waits in the queue.
+on:
+  schedule:
+    - cron: "45 0-17 * * *"     # hourly, 06:15-23:15 IST
+    - cron: "45 20,23 * * *"    # plus 02:15 and 05:15 IST
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Optional: comma-separated source ids"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: watch-india
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: [self-hosted, india]
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -q -r requirements.txt
+      - run: python -m playwright install chromium
+      - name: Watch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          BASELINE_SAMPLE: "2"   # first look at a new board: remember everything, send only the 2 newest for review
+        run: |
+          ARGS="--runner india"
+          if [ -n "${{ inputs.only }}" ]; then ARGS="$ARGS --only ${{ inputs.only }}"; fi
+          python scripts/watch.py $ARGS
+      - name: Save data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet && { echo "no changes"; exit 0; }
+          git commit -m "Watch (India): new data $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 8; done

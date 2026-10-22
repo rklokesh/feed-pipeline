@@ -3,7 +3,7 @@ name: Prepare notices for review
 # After each watch run: AI turns new raw notices into clean cards and opens a review issue for each.
 on:
   workflow_run:
-    workflows: ["Watch official sources"]
+    workflows: ["Watch official sources", "Watch India-only sources"]
     types: [completed]
   workflow_dispatch:
 
