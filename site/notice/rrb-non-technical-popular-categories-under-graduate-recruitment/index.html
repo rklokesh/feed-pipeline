@@ -175,12 +175,12 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .lead { margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
-.kv { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
 .kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
-.kv a.r:hover { background: var(--hover, var(--soft)); }
+.kv a.r:hover { background: color-mix(in srgb, var(--ink) 2.5%, transparent); }   /* barely there, like the homepage rows */
 @media (max-width: 640px) { .kv .r { padding: 8px 12px; } .kv .h { padding: 8px 12px; } }
 /* siren beside "N days left" when a job closes within a week */
 .dsiren { display: inline-block; width: 14px; height: 14px; margin-left: 6px; vertical-align: -2px; }

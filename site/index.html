@@ -725,6 +725,8 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       }
       return;
     }
+    // Esc anywhere on the page clears the search (no need to click into the box first)
+    if (e.key === "Escape" && qIn.value) { qIn.value = ""; qIn.dispatchEvent(new Event("input")); return; }
     if (e.ctrlKey || e.metaKey || e.altKey || e.key.length !== 1 || e.key === " ") return;
     qIn.focus();   // the key press then lands in the search line
   });
