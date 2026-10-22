@@ -1,0 +1,5 @@
+# ssb https://ssbrectt.gov.in/
+## plain fetch failed: HTTPSConnectionPool(host='ssbrectt.gov.in', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='ssbrectt.gov.in', port=443): Failed to resolve 'ssbrectt.gov.in' ([Errno 8] nodename nor servname provided, or not known)"))
+## browser failed: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://ssbrectt.gov.in/
+Call log:
+navigating to "https://ssbrectt.gov.in/", waiting until "domcontentloaded"
