@@ -161,6 +161,8 @@ def links_following(src: dict) -> list[dict]:
                 page.wait_for_timeout(1500)
                 html_ = page.content()
                 found = links_from_html(html_, page.url)
+                dbg.append("   pdf-ish: " + " | ".join(sorted(set(re.findall(r"[^\"'\\s<>()]*(?:\\.pdf|/documents/|/-/image/|getfile|download)[^\"'\\s<>()]*", html_, re.I)))[:40]))
+                dbg.append("   text: " + re.sub(r"\\s+", " ", page.inner_text("body"))[:1500])
                 dbg.append(f"{href} -> {page.title()!r} {len(html_)} chars, {len(found)} links; "
                            + " | ".join(f"{t[1][:80]}={t[0]}" for t in page.eval_on_selector_all("a[href]", "els => els.map(e => [e.href, e.innerText.replace(/\\s+/g, ' ')])")
                                        if re.search(r"pdf|/-/|document|download|notice|cen", t[0], re.I) and "getdata" not in t[0])[:60])
