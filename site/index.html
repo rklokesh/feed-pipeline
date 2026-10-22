@@ -172,7 +172,7 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
 /* Rotating search hint: the newest notices take turns after "Search:"; the real placeholder stays for screen readers */
 .search.rot input::placeholder { color: transparent; }
 .ph { position: absolute; left: 28px; right: 100px; top: 50%; transform: translateY(-50%); color: var(--grey); pointer-events: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.ph-word { white-space: pre; }
+.ph-lead, .ph-word { white-space: pre; } /* keeps the space after "Search:" even before a word is typed */
 .ph-caret { display: inline-block; width: 1px; height: 1.05em; margin-left: 1px; vertical-align: -0.15em; background: var(--grey); animation: caret 1s steps(1) infinite; }
 @keyframes caret { 50% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .ph-caret { display: none; } }
