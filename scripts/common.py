@@ -16,6 +16,7 @@ from urllib.parse import urlparse
 
 import certifi
 import requests
+import requests.adapters
 
 USER_AGENT = "SarkariChartBot/0.2 (+https://sarkarichart.com/bot; job-alert indexer)"
 TIMEOUT = int(os.environ.get("FETCH_TIMEOUT", "30"))
@@ -87,6 +88,30 @@ def _aia_bundle(host: str) -> str | None:
         return None
 
 
+class _LegacyTLS(requests.adapters.HTTPAdapter):
+    """For old government servers: allow legacy renegotiation and older ciphers.
+    Certificates are still fully verified (same CA bundle, hostname check on)."""
+    def init_poolmanager(self, *a, **kw):
+        ctx = ssl.create_default_context(cafile=certifi.where())
+        ctx.options |= getattr(ssl, "OP_LEGACY_SERVER_CONNECT", 0x4)
+        try:
+            ctx.set_ciphers("DEFAULT:@SECLEVEL=1")
+        except ssl.SSLError:
+            pass
+        kw["ssl_context"] = ctx
+        return super().init_poolmanager(*a, **kw)
+
+
+_legacy_hosts: set[str] = set()
+BROWSER_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36"
+
+
+def _legacy(host: str) -> None:
+    if host not in _legacy_hosts:
+        session.mount(f"https://{host}", _LegacyTLS())
+        _legacy_hosts.add(host)
+
+
 def get(url: str, attempts: int = 3, stream: bool = False) -> requests.Response:
     """GET with polite retries/back-off and certificate-chain repair. Raises on final failure."""
     last: Exception | None = None
@@ -94,9 +119,21 @@ def get(url: str, attempts: int = 3, stream: bool = False) -> requests.Response:
     for i in range(1, attempts + 1):
         try:
             verify = _bundles.get(host, True)
-            return session.get(url, timeout=TIMEOUT, stream=stream, verify=verify)
+            r = session.get(url, timeout=TIMEOUT, stream=stream, verify=verify)
+            if r.status_code == 403:  # some boards' firewalls reject non-browser visitors
+                r = session.get(url, timeout=TIMEOUT, stream=stream, verify=verify,
+                                headers={"User-Agent": BROWSER_UA, "Accept": "text/html,application/xhtml+xml,*/*;q=0.8"})
+            return r
         except requests.exceptions.SSLError as e:
             last = e
+            msg = str(e)
+            if host not in _legacy_hosts and ("LEGACY_RENEGOTIATION" in msg or "HANDSHAKE_FAILURE" in msg
+                                              or "DH_KEY_TOO_SMALL" in msg or "UNSUPPORTED_PROTOCOL" in msg):
+                _legacy(host)
+                try:
+                    return session.get(url, timeout=TIMEOUT, stream=stream, verify=_bundles.get(host, True))
+                except requests.exceptions.SSLError as e3:
+                    last = e3
             bundle = _aia_bundle(host)
             if bundle:
                 try:
