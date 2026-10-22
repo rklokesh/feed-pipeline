@@ -132,15 +132,14 @@ footer a::after, .crumb a::after, a.r::after, #dlPdf::after { inset: -8px -4px; 
 .strip-x:hover { color: var(--page); background: color-mix(in srgb, var(--page) 12%, var(--ink)); }
 .strip-x::after { content: ""; position: absolute; inset: -7px; }
 @media (max-width: 640px) { .strip { justify-content: flex-start; gap: 10px; padding: 7px 46px 7px 16px; font-size: .875rem; } }
-/* Announcement strip colour: soft purple (light) / deep purple (dark) */
-.strip { background: #ECE6F7; color: #3F2E66; }
-.strip-x { color: #6E6190; } .strip-x:hover { color: #3F2E66; background: #E0D7F2; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .strip { background: #2C2442; color: #DED5F5; }
-  :root:not([data-theme="light"]) .strip-x { color: #A99BD0; } :root:not([data-theme="light"]) .strip-x:hover { color: #DED5F5; background: #3A3057; }
-}
-:root[data-theme="dark"] .strip { background: #2C2442; color: #DED5F5; }
-:root[data-theme="dark"] .strip-x { color: #A99BD0; } :root[data-theme="dark"] .strip-x:hover { color: #DED5F5; background: #3A3057; }
+/* Announcement strip: frosted glass, stays at the top while scrolling */
+.strip { position: sticky; top: 0; z-index: 30; color: var(--ink);
+  background: color-mix(in srgb, var(--page) 70%, transparent);
+  -webkit-backdrop-filter: blur(14px) saturate(160%); backdrop-filter: blur(14px) saturate(160%);
+  border-bottom: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
+  box-shadow: 0 1px 12px color-mix(in srgb, var(--ink) 5%, transparent); }
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .strip { background: var(--soft); } }
+.strip-x { color: var(--grey); } .strip-x:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 7%, transparent); }
 @media print { .strip { display: none !important; } }
 .lead { margin: 10px 0 0; color: var(--grey); max-width: 46rem; }
 .actions { display: flex; flex-wrap: wrap; gap: 8px 20px; }
