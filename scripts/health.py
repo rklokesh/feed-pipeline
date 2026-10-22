@@ -84,6 +84,15 @@ def main():
         lines += ["**Failing boards:**"] + bad + [""]
     if empty:
         lines += ["**Nothing found (may need tuning):** " + ", ".join(empty), ""]
+    radar = ROOT / "data/radar.json"
+    if radar.exists():
+        r = json.loads(radar.read_text())
+        gaps = r.get("not_covered") or []
+        if gaps:
+            lines += ["**Radar — boards seen elsewhere that we don't watch yet** (add their official sites):",
+                      ", ".join(f"{g['board']} ({g['mentions']})" for g in gaps[:15]), ""]
+        for n in r.get("notes") or []:
+            lines.append(f"_radar: {n}_")
     body = "\n".join(lines)
     print(body)
 
