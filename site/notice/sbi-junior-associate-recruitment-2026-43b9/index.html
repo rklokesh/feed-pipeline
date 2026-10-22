@@ -132,6 +132,15 @@ footer a::after, .crumb a::after, a.r::after, #dlPdf::after { inset: -8px -4px; 
 .strip-x:hover { color: var(--page); background: color-mix(in srgb, var(--page) 12%, var(--ink)); }
 .strip-x::after { content: ""; position: absolute; inset: -7px; }
 @media (max-width: 640px) { .strip { justify-content: flex-start; gap: 10px; padding: 7px 46px 7px 16px; font-size: .875rem; } }
+/* Announcement strip colour: soft purple (light) / deep purple (dark) */
+.strip { background: #ECE6F7; color: #3F2E66; }
+.strip-x { color: #6E6190; } .strip-x:hover { color: #3F2E66; background: #E0D7F2; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .strip { background: #2C2442; color: #DED5F5; }
+  :root:not([data-theme="light"]) .strip-x { color: #A99BD0; } :root:not([data-theme="light"]) .strip-x:hover { color: #DED5F5; background: #3A3057; }
+}
+:root[data-theme="dark"] .strip { background: #2C2442; color: #DED5F5; }
+:root[data-theme="dark"] .strip-x { color: #A99BD0; } :root[data-theme="dark"] .strip-x:hover { color: #DED5F5; background: #3A3057; }
 @media print { .strip { display: none !important; } }
 .lead { margin: 10px 0 0; color: var(--grey); max-width: 46rem; }
 .actions { display: flex; flex-wrap: wrap; gap: 8px 20px; }
@@ -139,6 +148,7 @@ footer a::after, .crumb a::after, a.r::after, #dlPdf::after { inset: -8px -4px; 
 .share { display: inline-flex; align-items: center; gap: 6px; }
 .share svg { color: #1f8f4e; }
 @media print { .share { display: none !important; } }
+.kv a.r:hover .v, .kv a.r:hover > span:first-child { text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
