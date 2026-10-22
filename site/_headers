@@ -3,3 +3,17 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Cache-Control: no-cache
+
+# Static images/icons: cache for a week (names are stable; HTML stays no-cache so changes show at once)
+/*.png
+  ! Cache-Control
+  Cache-Control: public, max-age=604800
+/*.webp
+  ! Cache-Control
+  Cache-Control: public, max-age=604800
+/*.svg
+  ! Cache-Control
+  Cache-Control: public, max-age=604800
+/notice/*.pdf
+  ! Cache-Control
+  Cache-Control: public, max-age=86400
