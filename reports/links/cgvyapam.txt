@@ -1,0 +1,5 @@
+# cgvyapam https://vyapam.cgstate.gov.in/
+## plain fetch failed: HTTPSConnectionPool(host='vyapam.cgstate.gov.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='vyapam.cgstate.gov.in', port=443) at 0x1079386b0>, 'Connection to vyapam.cgstate.gov.in timed out. (connect timeout=30)'))
+## browser failed: Page.goto: Timeout 45000ms exceeded.
+Call log:
+navigating to "https://vyapam.cgstate.gov.in/", waiting until "domcontentloaded"

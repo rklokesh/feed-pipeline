@@ -1,0 +1,5 @@
+# gpsc https://gpsc.gujarat.gov.in/
+## plain fetch failed: HTTPSConnectionPool(host='gpsc.gujarat.gov.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gpsc.gujarat.gov.in', port=443) at 0x106db8650>, 'Connection to gpsc.gujarat.gov.in timed out. (connect timeout=30)'))
+## browser failed: Page.goto: Timeout 45000ms exceeded.
+Call log:
+navigating to "https://gpsc.gujarat.gov.in/", waiting until "domcontentloaded"
