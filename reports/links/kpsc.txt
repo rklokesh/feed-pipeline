@@ -1,0 +1,5 @@
+# kpsc https://kpsc.kar.nic.in/
+## plain fetch failed: HTTPSConnectionPool(host='kpsc.kar.nic.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='kpsc.kar.nic.in', port=443) at 0x10733cdd0>, 'Connection to kpsc.kar.nic.in timed out. (connect timeout=30)'))
+## browser failed: Page.goto: Timeout 45000ms exceeded.
+Call log:
+navigating to "https://kpsc.kar.nic.in/", waiting until "domcontentloaded"
