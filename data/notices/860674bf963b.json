@@ -1,0 +1,91 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://recruitment.itbpolice.nic.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "age_limit": {
+      "evidence": "ost educational qualification (i) (ii) (iii) (iv) Constable 18 to 23 years Matriculation or Players who have participated or won (GD) (Relaxation in its e",
+      "source": "rule",
+      "value": {
+        "max": 23,
+        "min": 18
+      }
+    },
+    "apply_last": {
+      "conflict": {
+        "evidence": {
+          "apply_last": "and will be closed on 01st November 2026 (01/11/2026) at 11:59 P.M."
+        },
+        "provider": "gemini/gemini-flash-lite-latest",
+        "source": "ai",
+        "value": "2026-11-01"
+      },
+      "evidence": "years commencing from 1st January of the relevant year till last date (i.e.-01/01/2024 till 01/11/2026) of submission of applications are eligible to apply. ii) National The sportspersons who have represented a",
+      "source": "rule",
+      "value": "2024-01-01"
+    },
+    "apply_or_official_url": {
+      "evidence": "es will be intimated through ITBPF Recruitment website i.e. https://recruitment.itbpolice.nic.in. c. ITBPF reserves the right to make changes in sequence of the recruitment proc",
+      "source": "rule",
+      "value": "https://recruitment.itbpolice.nic.in"
+    },
+    "apply_start": {
+      "evidence": {
+        "apply_start": "Online application mode will be opened w.e.f. 3rd October, 2026 (03/10/2026)"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-10-03"
+    },
+    "apply_url": {
+      "evidence": {
+        "apply_url": "https://recruitment.itbpolice.nic.in"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://recruitment.itbpolice.nic.in"
+    },
+    "post_names": {
+      "evidence": {
+        "post_names": "DETAILED ADVERTISEMENT FOR RECRUITMENT OF MERITORIOUS SPORTSPERSONS TO THE POST OF CONSTABLE (GENERAL DUTY) UNDER SPORTS QUOTA-2025 IN ITBPF."
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Constable (General Duty)"
+      ]
+    },
+    "qualification": {
+      "evidence": {
+        "qualification": "Matriculation or its equivalent from a recognized board."
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "Matriculation or its equivalent from a recognized board."
+    },
+    "total_vacancies": {
+      "evidence": {
+        "total_vacancies": "Grand Total of Vacancy 72 54 126"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 126
+    }
+  },
+  "first_seen": "2026-10-22T17:22:23+00:00",
+  "id": "860674bf963b",
+  "kind": "notification",
+  "org": "ITBP",
+  "pdf": {
+    "bytes": 1097336,
+    "pages": 36,
+    "sha256": "f33bfc800e8b84bc644899e0aa7bbfcc7fa998cb13356d6e3579da180e5e1dcf",
+    "text_kind": "text"
+  },
+  "source_id": "itbp-recruitment",
+  "status": "pending_review",
+  "title": "DETAILED ADVERTISEMENT FOR RECRUITMENT OF MERITORIOUS SPORTSPERSONS TO THE POST OF CONSTABLE (GENERAL DUTY) UNDER SPORTS QUOTA -2025 IN ITBPF",
+  "url": "https://recruitment.itbpolice.nic.in/noticeboards/downloadpdf/361.pdf"
+}

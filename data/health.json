@@ -1,9 +1,22 @@
 {
+  "army-home": {
+    "consecutive_failures": 0,
+    "last_error": "",
+    "last_links": 0,
+    "last_ok": "2026-10-22T17:22:23+00:00",
+    "warning": "page loaded but no notice links found — layout may have changed"
+  },
   "bpsc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 8,
     "last_ok": "2026-10-22T17:12:36+00:00"
+  },
+  "bsf-recruitment": {
+    "consecutive_failures": 0,
+    "last_error": "",
+    "last_links": 10,
+    "last_ok": "2026-10-22T17:22:23+00:00"
   },
   "bssc-home": {
     "consecutive_failures": 0,
@@ -11,6 +24,38 @@
     "last_links": 0,
     "last_ok": "2026-10-22T17:12:36+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
+  },
+  "coast-guard": {
+    "consecutive_failures": 0,
+    "last_error": "",
+    "last_links": 0,
+    "last_ok": "2026-10-22T17:22:23+00:00",
+    "warning": "page loaded but no notice links found — layout may have changed"
+  },
+  "crpf-recruitment": {
+    "consecutive_failures": 1,
+    "last_error": "HTTPError: 404 Client Error: Not Found for url: https://crpf.mha.gov.in/recruitment.htm"
+  },
+  "drdo-careers": {
+    "consecutive_failures": 1,
+    "last_error": "HTTPError: 404 Client Error: Not Found for url: https://www.drdo.gov.in/drdo/careers"
+  },
+  "dsssb-home": {
+    "consecutive_failures": 0,
+    "last_error": "",
+    "last_links": 11,
+    "last_ok": "2026-10-22T17:22:23+00:00"
+  },
+  "employment-news": {
+    "consecutive_failures": 0,
+    "last_error": "",
+    "last_links": 0,
+    "last_ok": "2026-10-22T17:22:23+00:00",
+    "warning": "page loaded but no notice links found — layout may have changed"
+  },
+  "iaf-agniveer": {
+    "consecutive_failures": 1,
+    "last_error": "HTTPError: 503 Server Error: Service Unavailable for url: https://agnipathvayu.cdac.in/AV"
   },
   "ibps-home": {
     "cert_repair": "SSLError: [SSL: UNEXPECTED_MESSAGE] unexpected message (_ssl.c:1010)",
@@ -26,6 +71,12 @@
     "last_links": 1,
     "last_ok": "2026-10-22T17:12:36+00:00"
   },
+  "itbp-recruitment": {
+    "consecutive_failures": 0,
+    "last_error": "",
+    "last_links": 4,
+    "last_ok": "2026-10-22T17:22:23+00:00"
+  },
   "lic-careers": {
     "consecutive_failures": 0,
     "last_error": "",
@@ -33,11 +84,64 @@
     "last_ok": "2026-10-22T17:12:36+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
   },
+  "mpesb-home": {
+    "cert_repair": "SSLError: [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1010)",
+    "consecutive_failures": 1,
+    "last_error": "ol(host='esb.mp.gov.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1010)')))"
+  },
+  "mppsc-home": {
+    "consecutive_failures": 0,
+    "last_error": "",
+    "last_links": 32,
+    "last_ok": "2026-10-22T17:22:23+00:00"
+  },
+  "nabard-careers": {
+    "consecutive_failures": 0,
+    "last_error": "",
+    "last_links": 235,
+    "last_ok": "2026-10-22T17:22:23+00:00"
+  },
+  "navy-home": {
+    "consecutive_failures": 0,
+    "last_error": "",
+    "last_links": 1,
+    "last_ok": "2026-10-22T17:22:23+00:00"
+  },
   "nta-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 820,
     "last_ok": "2026-10-22T17:12:36+00:00"
+  },
+  "rbi-opportunities": {
+    "consecutive_failures": 0,
+    "last_error": "",
+    "last_links": 0,
+    "last_ok": "2026-10-22T17:22:23+00:00",
+    "warning": "page loaded but no notice links found — layout may have changed"
+  },
+  "rpsc-home": {
+    "consecutive_failures": 0,
+    "last_error": "",
+    "last_links": 217,
+    "last_ok": "2026-10-22T17:22:23+00:00"
+  },
+  "rrb-cdg": {
+    "cert_repair": "SSLError: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1010)",
+    "consecutive_failures": 1,
+    "last_error": "ectionPool(host='www.rrbcdg.gov.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1010)')))"
+  },
+  "rrb-unified": {
+    "consecutive_failures": 0,
+    "last_error": "",
+    "last_links": 0,
+    "last_ok": "2026-10-22T17:22:23+00:00",
+    "warning": "page loaded but no notice links found — layout may have changed"
+  },
+  "rssb-home": {
+    "cert_repair": "SSLError: [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1010)",
+    "consecutive_failures": 1,
+    "last_error": "'rssb.rajasthan.gov.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1010)')))"
   },
   "sbi-careers": {
     "consecutive_failures": 0,
@@ -51,10 +155,30 @@
     "last_links": 11,
     "last_ok": "2026-10-22T17:12:36+00:00"
   },
+  "ukpsc-home": {
+    "consecutive_failures": 0,
+    "last_error": "",
+    "last_links": 0,
+    "last_ok": "2026-10-22T17:22:23+00:00",
+    "warning": "page loaded but no notice links found — layout may have changed"
+  },
   "uppsc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 40,
     "last_ok": "2026-10-22T17:12:36+00:00"
+  },
+  "upsc-active-exams": {
+    "consecutive_failures": 1,
+    "last_error": "HTTPError: 403 Client Error: Forbidden for url: https://www.upsc.gov.in"
+  },
+  "upsc-whats-new": {
+    "consecutive_failures": 1,
+    "last_error": "HTTPError: 403 Client Error: Forbidden for url: https://www.upsc.gov.in"
+  },
+  "upsssc-home": {
+    "cert_repair": "SSLError: [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1010)",
+    "consecutive_failures": 1,
+    "last_error": "ol(host='upsssc.gov.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1010)')))"
   }
 }
