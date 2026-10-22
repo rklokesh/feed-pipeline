@@ -85,7 +85,7 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 .top .logo .mark { color: var(--ink); }
 .nav-r { display: flex; justify-content: flex-end; align-items: center; gap: 18px; }
 .themeb { display: inline-flex; color: var(--grey); }
-.themeb svg { display: block; transform: translateY(2px); } /* optical centre with the words beside it */
+.themeb svg { display: block; transform: translateY(-0.5px); } /* optical centre with the words beside it */
 .top .themeb:hover { color: var(--ink); text-decoration: none; }
 .top button { all: unset; cursor: pointer; }
 .top button:hover { text-decoration: underline; text-underline-offset: 3px; }
@@ -392,12 +392,15 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   addEventListener("resize", () => moveInk(true));
   if (document.fonts) document.fonts.ready.then(() => moveInk(true));
   // If the search finds nothing in the chosen category but finds it elsewhere, move to where it is.
+  // Search picks the tab: matches in one category -> that tab; matches in several -> All; no matches -> stay put.
   function followSearch() {
-    if (!q || cat === "all") return;
+    if (!q) return;
     const hits = ITEMS.filter(i => live(i) && qmatch(i));
-    if (!hits.length || hits.some(i => inCat(i, cat))) return;
+    if (!hits.length) return;
+    if (cat === "soon" && hits.every(i => inCat(i, "soon"))) return;
     const types = [...new Set(hits.map(i => i.type))];
-    setCat(types.length === 1 ? types[0] : "all");
+    const target = types.length === 1 ? types[0] : "all";
+    if (target !== cat) setCat(target);
   }
   // PDF = a printable copy of OUR notice page (made automatically when the site is published), in the language being viewed.
   const pdfOf = i => i.page ? `${i.url}sarkarichart-${i.url.split("/").filter(Boolean).pop()}-${lang}.pdf` : "";
