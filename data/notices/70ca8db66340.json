@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "low",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal circular or duplicate document notice",
+    "summary_en": "This notice is not relevant for the main job listing.",
+    "summary_hi": "यह सूचना मुख्य नौकरी सूची के लिए प्रासंगिक नहीं है।",
+    "title_en": "RRB CEN 07/2026 Recruitment",
+    "title_hi": "आरआरबी सीईएन 07/2026 भर्ती",
+    "type": "Job",
+    "vacancies": null
+  },
   "fields": {},
   "first_seen": "2026-10-22T20:05:37+00:00",
   "id": "70ca8db66340",
@@ -13,7 +28,7 @@
     "text_kind": "not-pdf"
   },
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "RRB CEN 07/2026: Final CEN 07-2026 14.10.2026 English",
   "url": "https://rrb.indianrailways.gov.in/-/image/1791999622770Final_CEN_07-2026_14.10.2026_English.pdf/examsDocuments"
 }
