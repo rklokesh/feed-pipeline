@@ -10,11 +10,12 @@
     "skip_reason": "",
     "summary_en": "National Testing Agency has opened the online application portal for UGC-NET December 2026. Eligible candidates should apply online through the official website before the last date.",
     "summary_hi": "राष्ट्रीय परीक्षण एजेंसी ने यूजीसी-नेट दिसंबर 2026 के लिए ऑनलाइन आवेदन पोर्टल खोल दिया है। योग्य उम्मीदवार अंतिम तिथि से पहले आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन करें।",
-    "title_en": "UGC-NET December 2026 Examination",
-    "title_hi": "यूजीसी-नेट दिसंबर 2026 परीक्षा",
+    "title_en": "UGC-NET December 2026 Examination Notice Released",
+    "title_hi": "यूजीसी-नेट दिसंबर 2026 परीक्षा सूचना जारी",
     "type": "Job",
     "vacancies": null
   },
+  "editor_notes": [],
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -148,6 +149,66 @@
   "issue": 7,
   "kind": "notification",
   "org": "NTA",
+  "page": {
+    "apply_start": "2026-10-08",
+    "apply_url": "https://ugcnet.nta.nic.in",
+    "changes_from_notes": "",
+    "conducted_by_en": "National Testing Agency (NTA)",
+    "conducted_by_hi": "राष्ट्रीय परीक्षण एजेंसी (NTA)",
+    "exam_date": "2026-12-14",
+    "fees": [
+      {
+        "amount": "₹1150",
+        "cat_en": "General / Unreserved",
+        "cat_hi": "सामान्य / अनारक्षित"
+      },
+      {
+        "amount": "₹600",
+        "cat_en": "General-EWS / OBC-NCL",
+        "cat_hi": "सामान्य-ईडब्ल्यूएस / अन्य पिछड़ा वर्ग-एनसीएल"
+      },
+      {
+        "amount": "₹325",
+        "cat_en": "SC / ST / PwD / Third Gender",
+        "cat_hi": "अनुसूचित जाति / अनुसूचित जनजाति / दिव्यांग / तृतीय लिंग"
+      }
+    ],
+    "h1_en": "UGC-NET December 2026 Examination Notice Released",
+    "h1_hi": "यूजीसी-नेट दिसंबर 2026 परीक्षा सूचना जारी",
+    "last_date": "2026-10-28",
+    "official_site": "https://ugcnet.nta.nic.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Junior Research Fellowship and Assistant Professor, Assistant Professor and admission to Ph.D., admission to Ph.D. only",
+        "value_hi": "जूनियर रिसर्च फेलोशिप और सहायक प्रोफेसर, सहायक प्रोफेसर और पीएचडी में प्रवेश, केवल पीएचडी में प्रवेश"
+      },
+      {
+        "label_en": "Apply online",
+        "label_hi": "ऑनलाइन आवेदन",
+        "value_en": "08 Oct 2026 to 28 Oct 2026",
+        "value_hi": "08 अक्टूबर 2026 से 28 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Last date for fee",
+        "label_hi": "शुल्क जमा करने की अंतिम तिथि",
+        "value_en": "28 Oct 2026",
+        "value_hi": "28 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "14 Dec 2026 to 19 Dec 2026",
+        "value_hi": "14 दिसंबर 2026 से 19 दिसंबर 2026"
+      }
+    ],
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "National Testing Agency (NTA) has opened the online application portal for UGC-NET December 2026. Eligible candidates should apply online through the official website before the last date.",
+    "summary_hi": "राष्ट्रीय परीक्षण एजेंसी (NTA) ने यूजीसी-नेट दिसंबर 2026 के लिए ऑनलाइन आवेदन पोर्टल खोल दिया है। योग्य उम्मीदवारों को अंतिम तिथि से पहले आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन करना चाहिए।"
+  },
   "pdf": {
     "bytes": 380301,
     "pages": 2,
@@ -155,6 +216,7 @@
     "text_kind": "text"
   },
   "published_at": "2026-10-22T13:43:02Z",
+  "slug": "ugc-net-december-2026-examination-notice-released",
   "source_id": "nta-home",
   "status": "approved",
   "title": "Opening of the online registration portal for submission of Online Application Form for UGC-NET December 2026 examination – reg Read More",

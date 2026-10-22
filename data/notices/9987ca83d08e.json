@@ -16,6 +16,7 @@
     "type": "Job",
     "vacancies": null
   },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -36,6 +37,44 @@
   "issue": 13,
   "kind": "update",
   "org": "NTA",
+  "page": {
+    "apply_start": null,
+    "apply_url": "https://nta.ac.in",
+    "changes_from_notes": "",
+    "conducted_by_en": "National Testing Agency (NTA)",
+    "conducted_by_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए)",
+    "exam_date": "2026-12-19",
+    "fees": [],
+    "h1_en": "UGC-NET December 2026 Examination Corrigendum",
+    "h1_hi": "यूजीसी-नेट दिसंबर 2026 परीक्षा शुद्धिपत्र",
+    "last_date": null,
+    "official_site": "https://nta.ac.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Assistant Professor and Junior Research Fellowship",
+        "value_hi": "सहायक प्रोफेसर और कनिष्ठ अनुसंधान फेलोशिप"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "14-18 December 2026 and 21 December 2026",
+        "value_hi": "14-18 दिसंबर 2026 और 21 दिसंबर 2026"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "UGC-NET December 2026",
+        "value_hi": "यूजीसी-नेट दिसंबर 2026"
+      }
+    ],
+    "status_en": "Corrigendum released",
+    "status_hi": "शुद्धिपत्र जारी",
+    "summary_en": "National Testing Agency has issued a corrigendum with amendments and clarifications regarding the Information Bulletin for UGC-NET December 2026 Examination. Candidates should review the revised details before applying.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने यूजीसी-नेट दिसंबर 2026 परीक्षा के सूचना बुलेटिन के संबंध में संशोधनों और स्पष्टीकरणों के साथ एक शुद्धिपत्र जारी किया है। उम्मीदवारों को आवेदन करने से पहले संशोधित विवरण देख लेना चाहिए।"
+  },
   "pdf": {
     "bytes": 8779761,
     "pages": 126,
@@ -43,6 +82,7 @@
     "text_kind": "ocr"
   },
   "published_at": "2026-10-22T13:42:46Z",
+  "slug": "ugc-net-december-2026-examination-corrigendum",
   "source_id": "nta-home",
   "status": "approved",
   "title": "Public Notice Corrigendum to the Information Bulletin of UGC-NET December 2026 Examination",

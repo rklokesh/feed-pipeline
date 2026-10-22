@@ -3,7 +3,7 @@
   "board_url": "https://ssc.gov.in/home/notice-board",
   "card": {
     "confidence": "high",
-    "exam_date": null,
+    "exam_date": "2026-09-16",
     "last_date": null,
     "list": true,
     "posts": "Selection Posts",
@@ -16,6 +16,7 @@
     "type": "Answer key",
     "vacancies": null
   },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -38,6 +39,62 @@
   "issue": 14,
   "kind": "answer_key",
   "org": "SSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": "https://ssc.gov.in",
+    "changes_from_notes": "",
+    "conducted_by_en": "Staff Selection Commission (SSC)",
+    "conducted_by_hi": "कर्मचारी चयन आयोग (एसएससी)",
+    "exam_date": "2026-09-16",
+    "fees": [
+      {
+        "amount": "₹50",
+        "cat_en": "Per question/answer challenged",
+        "cat_hi": "चुनौती दिए गए प्रत्येक प्रश्न/उत्तर के लिए"
+      }
+    ],
+    "h1_en": "SSC Phase-XIV Selection Posts Examination 2026 Answer Key",
+    "h1_hi": "कर्मचारी चयन आयोग चरण-14 चयन पद परीक्षा 2026 उत्तर कुंजी",
+    "last_date": null,
+    "official_site": "https://ssc.gov.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Selection Posts (Matriculation, Higher Secondary, and Graduation & Above Level)",
+        "value_hi": "चयन पद (मैट्रिकुलेशन, उच्च माध्यमिक, और स्नातक एवं उससे ऊपर स्तर)"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "16 Sep 2026 to 26 Sep 2026",
+        "value_hi": "16 सितं 2026 से 26 सितं 2026"
+      },
+      {
+        "label_en": "Objection start date",
+        "label_hi": "आपत्ति शुरू होने की तिथि",
+        "value_en": "09 Oct 2026 (04:00 PM)",
+        "value_hi": "09 अक्तू 2026 (04:00 PM)"
+      },
+      {
+        "label_en": "Last date for objection",
+        "label_hi": "आपत्ति की अंतिम तिथि",
+        "value_en": "12 Oct 2026 (04:00 PM)",
+        "value_hi": "12 अक्तू 2026 (04:00 PM)"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Phase-XIV/2026/Selection Posts",
+        "value_hi": "चरण-14/2026/चयन पद"
+      }
+    ],
+    "status_en": "Answer key released, objections open till 12 Oct 2026",
+    "status_hi": "उत्तर कुंजी जारी, 12 अक्टूबर 2026 तक आपत्तियां खुली हैं",
+    "summary_en": "Staff Selection Commission has released the tentative answer keys and response sheets for Phase-XIV Selection Posts Examination 2026. Candidates can submit online challenges with a fee of ₹50 per question from 09 October 2026 to 12 October 2026.",
+    "summary_hi": "कर्मचारी चयन आयोग ने चरण-14 चयन पद परीक्षा 2026 के लिए संभावित उत्तर कुंजियां और प्रतिक्रिया पत्रक जारी कर दिए हैं। उम्मीदवार 09 अक्टूबर 2026 से 12 अक्टूबर 2026 तक प्रति प्रश्न ₹50 शुल्क के साथ ऑनलाइन आपत्ति दर्ज करा सकते हैं।"
+  },
   "pdf": {
     "bytes": 403747,
     "pages": 1,
@@ -45,6 +102,7 @@
     "text_kind": "text"
   },
   "published_at": "2026-10-22T13:42:43Z",
+  "slug": "ssc-phase-xiv-selection-posts-examination-2026-answer-key",
   "source_id": "ssc-notice-board",
   "status": "approved",
   "title": "Phase-XIV/2026/Selection Posts Examination - Uploading of Candidate’s Response Sheet(s) along with Tentative Answer Keys and inviting challenges thereon",

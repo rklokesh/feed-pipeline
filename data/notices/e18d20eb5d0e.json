@@ -11,11 +11,12 @@
     "skip_reason": "",
     "summary_en": "Bihar Public Service Commission has issued a corrigendum deleting 44 vacancies of Sugarcane Officer from the 72nd Combined Preliminary Examination, revising total vacancies to 1186.",
     "summary_hi": "बिहार लोक सेवा आयोग ने ७२वीं संयुक्त प्रारंभिक परीक्षा से गन्ना अधिकारी के ४४ पदों को विलोपित करते हुए कुल रिक्तियों को संशोधित कर ११३६ कर दिया है।",
-    "title_en": "BPSC 72nd Combined Preliminary Exam 2026 Vacancy Corrigendum",
-    "title_hi": "बीपीएससी ७२वीं संयुक्त प्रारंभिक परीक्षा २०२६ रिक्ति शुद्धि-पत्र",
+    "title_en": "BPSC 72nd CCE 2026: Sugarcane Officer Vacancies Deleted",
+    "title_hi": "बीपीएससी ७२वीं संयुक्त प्रारंभिक परीक्षा २०२६: गन्ना अधिकारी के पद विलोपित",
     "type": "Job",
     "vacancies": 1186
   },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -25,6 +26,44 @@
   "issue": 20,
   "kind": "update",
   "org": "BPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Bihar Public Service Commission (BPSC)",
+    "conducted_by_hi": "बिहार लोक सेवा आयोग (बीपीएससी)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "BPSC 72nd CCE 2026: Sugarcane Officer Vacancies Deleted",
+    "h1_hi": "बीपीएससी ७२वीं संयुक्त प्रारंभिक परीक्षा २०२६: गन्ना अधिकारी के पद विलोपित",
+    "last_date": null,
+    "official_site": "https://bpsc.bihar.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Integrated 72nd Combined Preliminary Examination",
+        "value_hi": "एकीकृत ७२वीं संयुक्त प्रारंभिक प्रतियोगिता परीक्षा"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "1186",
+        "value_hi": "११८६"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Integrated 72nd CCE",
+        "value_hi": "एकीकृत ७२वीं संयुक्त प्रारंभिक प्रतियोगिता परीक्षा"
+      }
+    ],
+    "status_en": "Corrigendum issued: 44 vacancies deleted, total revised to 1186",
+    "status_hi": "शुद्धि-पत्र जारी: ४४ पद विलोपित, कुल रिक्तियां संशोधित होकर ११००८६ हुईं",
+    "summary_en": "Bihar Public Service Commission has issued a corrigendum deleting 44 vacancies of Sugarcane Officer from the Integrated 72nd Combined Preliminary Examination, revising the total vacancies to 1186.",
+    "summary_hi": "बिहार लोक सेवा आयोग ने एकीकृत ७२वीं संयुक्त प्रारंभिक परीक्षा से गन्ना अधिकारी के ४४ पदों को विलोपित करते हुए कुल रिक्तियों को संशोधित कर ११००८६ कर दिया है।"
+  },
   "pdf": {
     "bytes": 30148,
     "pages": 1,
@@ -32,6 +71,7 @@
     "text_kind": "ocr"
   },
   "published_at": "2026-10-22T13:42:29Z",
+  "slug": "bpsc-72nd-cce-2026-sugarcane-officer-vacancies-deleted",
   "source_id": "bpsc-home",
   "status": "approved",
   "title": "Corrigendum: Integrated 72nd Combined (Preliminary) Competitive Examination – Deletion of 44 Vacancies of Sugarcane Officer.",
