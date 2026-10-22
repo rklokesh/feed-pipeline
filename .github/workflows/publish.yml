@@ -26,11 +26,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests==2.32.3
-      - name: Record decision
-        if: github.event_name == 'issues'
+      - name: Record decisions (this one and any others labelled meanwhile)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/publish.py decide ${{ github.event.issue.number }} ${{ github.event.label.name }}
+        run: python scripts/publish.py sweep
       - name: Rebuild homepage list
         run: python scripts/publish.py build
       - name: Save
@@ -39,7 +38,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data site/index.html
           git diff --cached --quiet && { echo "no changes"; exit 0; }
-          git commit -m "Publish: ${{ github.event.label.name || 'rebuild' }} #${{ github.event.issue.number }}"
+          git commit -m "Publish: decisions $(date -u +%Y-%m-%dT%H:%MZ)"
           for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
   deploy:
     needs: decide

@@ -2,6 +2,8 @@
 
   python scripts/publish.py decide <issue-number> <approve|reject>
       Reads the issue (and any "field: value" correction comments), updates the notice file, closes the issue.
+  python scripts/publish.py sweep
+      Same, for every open issue labelled approve/reject (safe when you label many at once).
   python scripts/publish.py build
       Writes every approved notice into the homepage list (site/index.html, between the ITEMS markers).
 """
@@ -109,8 +111,20 @@ def build():
     print(f"homepage now lists {len(items)} approved notices")
 
 
+def sweep():
+    """Handle every open review issue that already carries approve/reject, so bulk-labelling many at once never loses one."""
+    for label in ("approve", "reject"):
+        for iss in gh("GET", "/issues", params={"state": "open", "labels": label, "per_page": 100}):
+            try:
+                decide(iss["number"], label)
+            except Exception as e:  # noqa: BLE001
+                print(f"#{iss['number']}: {e}")
+
+
 if __name__ == "__main__":
     if sys.argv[1] == "decide":
         decide(int(sys.argv[2]), sys.argv[3])
+    elif sys.argv[1] == "sweep":
+        sweep()
     else:
         build()
