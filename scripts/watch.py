@@ -162,7 +162,8 @@ def links_following(src: dict) -> list[dict]:
                 html_ = page.content()
                 found = links_from_html(html_, page.url)
                 dbg.append(f"{href} -> {page.title()!r} {len(html_)} chars, {len(found)} links; "
-                           + " | ".join(f"{t[1][:60]}={t[0]}" for t in page.eval_on_selector_all("a[href]", "els => els.map(e => [e.href, e.innerText])")[:25]))
+                           + " | ".join(f"{t[1][:80]}={t[0]}" for t in page.eval_on_selector_all("a[href]", "els => els.map(e => [e.href, e.innerText.replace(/\\s+/g, ' ')])")
+                                       if re.search(r"pdf|/-/|document|download|notice|cen", t[0], re.I) and "getdata" not in t[0])[:60])
                 for item in found:
                     if item["url"] not in seen:
                         seen.add(item["url"])

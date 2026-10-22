@@ -70,6 +70,7 @@ main { margin-top: 36px; flex: 1; display: grid; gap: 40px; align-content: start
 .crumb .back { display: inline-flex; align-items: center; gap: 6px; color: var(--ink); font-weight: 500; }
 .crumb .back svg { flex: none; transition: transform .15s ease; }
 .crumb .back:hover svg { transform: translateX(-3px); }
+.crumb .here { color: var(--grey); }
 .crumb .sep { color: var(--line); color: color-mix(in srgb, var(--grey) 55%, transparent); }
 .title { display: grid; gap: 6px; }
 h1 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; text-wrap: balance; }
@@ -183,7 +184,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
 
   <main>
     <div class="title">
-      <nav class="crumb" aria-label="Breadcrumb"><a class="back" href="/"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a><span class="sep" aria-hidden="true">/</span><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><a href="/?q=SSC" data-t="org">SSC</a></nav>
+      <nav class="crumb" aria-label="Breadcrumb"><a class="back" href="/"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a><span class="sep" aria-hidden="true">/</span><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">SSC</span></nav>
       <h1 data-t="h1">SSC Junior Engineer Examination 2026 Tentative Vacancies</h1>
       <p class="status"><span id="state">Notice published</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Staff Selection Commission has released the tentative vacancies totaling 1699 for the Junior Engineer Examination 2026. Check department-wise vacancies.</p>
