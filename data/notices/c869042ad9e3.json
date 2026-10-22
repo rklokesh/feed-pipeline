@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-11-06",
+    "list": false,
+    "posts": "Non-Technical Popular Categories Graduate Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Frequently asked questions document, not a job vacancy notice",
+    "summary_en": "Frequently asked questions for RRB CEN 06/2026 recruitment.",
+    "summary_hi": "रेलवे भर्ती परीक्षा 06/2026 के लिए अक्सर पूछे जाने वाले प्रश्न।",
+    "title_en": "RRB Non-Technical Popular Categories Graduate Examination 2026",
+    "title_hi": "रेलवे स्नातक लोकप्रिय श्रेणियां परीक्षा 2026",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -37,7 +52,7 @@
     "text_kind": "text"
   },
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "RRB CEN 06/2026: Frequently Asked Questions (FAQs) for CEN 06 2026 (English Version)",
   "url": "https://rrb.indianrailways.gov.in/-/image/1792054651680Frequently_Asked_Questions_(FAQs)_for_CEN_06_2026_(English_Version).pdf/examsDocuments"
 }
