@@ -1,9 +1,11 @@
-# Review queue — 12 pending
+# Review queue — 14 pending
 
-_Updated 2026-10-22T17:22:23+00:00_
+_Updated 2026-10-22T17:28:07+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-22 | RSSB Rajasthan | other | 21-10-2026 - Contractual Teaching Associate (Raj-CES) 2026 : Important Instructions and Sc | — | — | — | — | [open](https://rssb.rajasthan.gov.in/storage/news_item/1792591103.pdf) |
+| 2026-10-22 | RSSB Rajasthan | other | 22-10-2026 - LDC Grade II / Junior Assistant 2026 : Important Instructions regarding Onlin | — | — | — | — | [open](https://rssb.rajasthan.gov.in/storage/news_item/1792682309.pdf) |
 | 2026-10-22 | NABARD | result | Result - Senior Climate Finance Specialist | — | — | — | — | [open](https://www.nabard.org/auth/writereaddata/CareerNotices/211936651Result - Senior Climate Finance Specialist.pdf) |
 | 2026-10-22 | NABARD | result | Result - Specialist – Derivatives & Treasury Management | — | — | — | — | [open](https://www.nabard.org/auth/writereaddata/CareerNotices/1163297678Result - Specialist – Derivatives & Treasury Management.pdf) |
 | 2026-10-22 | BSF | admit_card | LINK FOR DOWNLOADING E-ADMIT CARDS FOR THE POST OF HC(RO) & HC(RM) IN BSF COMN SETUP 2025  | — | — | — | — | [open](https://d3t79nicn48uzj.cloudfront.net/bsf/custom/1791964439.pdf) |

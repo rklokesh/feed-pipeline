@@ -86,8 +86,8 @@
   },
   "mpesb-home": {
     "cert_repair": "SSLError: [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1010)",
-    "consecutive_failures": 1,
-    "last_error": "ol(host='esb.mp.gov.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1010)')))"
+    "consecutive_failures": 2,
+    "last_error": ": Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
   },
   "mppsc-home": {
     "consecutive_failures": 0,
@@ -128,8 +128,8 @@
   },
   "rrb-cdg": {
     "cert_repair": "SSLError: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1010)",
-    "consecutive_failures": 1,
-    "last_error": "ectionPool(host='www.rrbcdg.gov.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1010)')))"
+    "consecutive_failures": 2,
+    "last_error": "l: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.rrbcdg.gov.in'. (_ssl.c:1010)\")))"
   },
   "rrb-unified": {
     "consecutive_failures": 0,
@@ -140,8 +140,10 @@
   },
   "rssb-home": {
     "cert_repair": "SSLError: [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1010)",
-    "consecutive_failures": 1,
-    "last_error": "'rssb.rajasthan.gov.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1010)')))"
+    "consecutive_failures": 0,
+    "last_error": "",
+    "last_links": 10,
+    "last_ok": "2026-10-22T17:28:07+00:00"
   },
   "sbi-careers": {
     "consecutive_failures": 0,
@@ -169,16 +171,20 @@
     "last_ok": "2026-10-22T17:12:36+00:00"
   },
   "upsc-active-exams": {
-    "consecutive_failures": 1,
-    "last_error": "HTTPError: 403 Client Error: Forbidden for url: https://www.upsc.gov.in"
+    "consecutive_failures": 0,
+    "last_error": "",
+    "last_links": 3,
+    "last_ok": "2026-10-22T17:28:07+00:00"
   },
   "upsc-whats-new": {
-    "consecutive_failures": 1,
-    "last_error": "HTTPError: 403 Client Error: Forbidden for url: https://www.upsc.gov.in"
+    "consecutive_failures": 0,
+    "last_error": "",
+    "last_links": 3,
+    "last_ok": "2026-10-22T17:28:07+00:00"
   },
   "upsssc-home": {
     "cert_repair": "SSLError: [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1010)",
-    "consecutive_failures": 1,
-    "last_error": "ol(host='upsssc.gov.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1010)')))"
+    "consecutive_failures": 2,
+    "last_error": ": Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
   }
 }
