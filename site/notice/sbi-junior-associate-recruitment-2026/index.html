@@ -126,7 +126,8 @@ footer a::after, .crumb a::after, a.r::after, #dlPdf::after { inset: -8px -4px; 
 .strip .wa { flex: none; display: block; width: 20px; height: 20px; }
 .strip .cta { flex: none; white-space: nowrap; position: relative; color: inherit; font-weight: 500;
   text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; text-decoration-color: color-mix(in srgb, currentColor 55%, transparent); }
-.strip .cta:hover { text-decoration-color: currentColor; }
+.strip .cta { transition: opacity .15s ease; }
+.strip .cta:hover { opacity: .6; }  /* text and underline fade together */
 .strip .cta::after { content: ""; position: absolute; inset: -8px -6px; }
 .strip-x { all: unset; position: absolute; right: 12px; top: 50%; transform: translateY(-50%); width: 30px; height: 30px; display: grid; place-items: center; cursor: pointer;
   color: color-mix(in srgb, var(--page) 70%, var(--ink)); border-radius: 50%; }
