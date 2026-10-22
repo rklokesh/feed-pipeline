@@ -13,7 +13,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=block&text=%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%9A%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%9F">
 <style>
 /* Notice page: the same ruled sheet as the homepage. Title, one status line, then key facts as label/value rows. */
@@ -151,62 +150,6 @@ footer a::after, .crumb a::after, a.r::after, #dlPdf::after { inset: -8px -4px; 
 .share svg { color: #1f8f4e; }
 @media print { .share { display: none !important; } }
 .kv a.r:hover .v, .kv a.r:hover > span:first-child { text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
-/* ===== Ticket: the notice as a punched, ruled ticket in typewriter type (one light font, no images) ===== */
-:root { --paper: #F6F2E9; --rule: color-mix(in srgb, var(--ink) 30%, transparent); --mono: "Space Mono", ui-monospace, "SF Mono", Menlo, Consolas, "Noto Sans Devanagari", monospace; }
-:root[data-theme="dark"] { --paper: #24221F; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --paper: #24221F; } }
-main { margin-top: 28px; }
-.ticket { --rail: 44px; position: relative; max-width: 760px; width: 100%; margin: 0 auto; background: var(--paper);
-  border: 1px solid var(--rule); padding-left: var(--rail); font-family: var(--mono); font-size: .9375rem; line-height: 1.45;
-  box-shadow: 0 1px 2px color-mix(in srgb, var(--ink) 6%, transparent), 0 8px 24px -12px color-mix(in srgb, var(--ink) 18%, transparent); }
-/* punched holes down the left rail: page colour shows through, like a perforated ticket */
-.ticket::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: var(--rail); border-right: 1px dotted var(--rule);
-  background: radial-gradient(circle at 50% 30px, var(--page) 6.5px, var(--rule) 7px 7.5px, transparent 8px) 0 0 / 100% 60px repeat-y; }
-.ticket > * { border-top: 1px dotted var(--rule); padding: 14px 18px; }
-.ticket > :first-child { border-top: 0; }
-.tk-head { display: flex; gap: 6px 22px; flex-wrap: wrap; align-items: baseline; text-transform: uppercase; letter-spacing: .32em; font-size: .8125rem; color: var(--grey); }
-.tk-head .tk-no { margin-left: auto; letter-spacing: .12em; }
-.tk-title { display: grid; gap: 8px; padding-block: 18px 20px; }
-.tk-title .crumb { font-size: .8125rem; }
-.ticket h1 { font-size: 1.5rem; line-height: 1.25; letter-spacing: -0.01em; text-wrap: balance; }
-.ticket .lead { margin: 0; color: var(--grey); }
-.tk-dates { display: grid; grid-template-columns: 1fr 1fr; padding: 0 !important; }
-.tk-cell { display: grid; align-content: space-between; gap: 18px; padding: 12px 18px 14px; min-height: 104px; }
-.tk-cell + .tk-cell { border-left: 1px dotted var(--rule); }
-.tk-l, .tk-sh { text-transform: uppercase; letter-spacing: .32em; font-size: .75rem; color: var(--grey); }
-.tk-big { font-size: 1.375rem; line-height: 1.15; text-align: right; font-variant-numeric: tabular-nums; }
-.tk-stv { font-size: 1.125rem; }
-.tk-st { display: flex; justify-content: flex-end; gap: 10px; font-size: .8125rem; margin-top: -10px; }
-.tk-st #state { color: var(--grey); }
-.tk-sec { display: grid; padding-bottom: 6px !important; }
-.tk-sh { padding-bottom: 6px; }
-.tk-sec .r { display: grid; grid-template-columns: 11rem 1fr; gap: 0 16px; padding: 7px 0; border-top: 1px dotted var(--rule); align-items: baseline; }
-.tk-sec .r > :first-child { color: var(--grey); }
-.tk-sec a.r .v::after { content: " ↗"; color: var(--grey); }
-.tk-sec a.r:hover { text-decoration: none; }
-.tk-sec a.r:hover .v, .tk-sec a.r:hover > span:first-child { text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
-/* tear-off stub: perforation with notches, barcode, fine print, actions */
-.tk-stub { position: relative; border-top: 2px dashed var(--rule) !important; display: grid; gap: 12px; padding-top: 18px !important; }
-.tk-stub::before, .tk-stub::after { content: ""; position: absolute; top: -10px; width: 18px; height: 18px; border-radius: 50%; background: var(--page); border: 1px solid var(--rule); }
-.tk-stub::before { left: calc(-1 * var(--rail) - 10px); } .tk-stub::after { right: -10px; }
-.tk-code { display: flex; align-items: center; gap: 14px; color: var(--ink); }
-.tk-bar { fill: currentColor; max-width: 60%; }
-.tk-id { font-size: .75rem; letter-spacing: .2em; color: var(--grey); }
-.tk-fine { font-size: .8125rem; color: var(--grey); max-width: 44rem; }
-.ticket .actions { font-family: var(--font); font-size: .9375rem; }
-:lang(hi) .ticket { font-family: var(--font); }   /* Hindi: clean Devanagari, the ticket frame stays */
-:lang(hi) .tk-head, :lang(hi) .tk-l, :lang(hi) .tk-sh { letter-spacing: .04em; }
-@media (max-width: 640px) {
-  .ticket { --rail: 26px; font-size: .875rem; }
-  .ticket::before { background-size: 100% 46px; background-image: radial-gradient(circle at 50% 23px, var(--page) 4.5px, var(--rule) 5px 5.5px, transparent 6px); }
-  .ticket > * { padding: 12px 14px; }
-  .tk-cell { padding: 10px 14px 12px; min-height: 88px; }
-  .tk-big { font-size: 1.125rem; }
-  .ticket h1 { font-size: 1.25rem; }
-  .tk-sec .r { grid-template-columns: 1fr; gap: 1px; }
-  .tk-head { letter-spacing: .2em; }
-}
-@media print { .ticket { box-shadow: none; } .tk-stub .actions { display: none; } }
 footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-left: 6px; vertical-align: -6px; }
 @media (prefers-reduced-motion: reduce) { footer .pref .hand { display: none; } }
 </style>
@@ -226,30 +169,29 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   </header>
 
   <main>
-    <article class="ticket">
-      <div class="tk-head"><span data-t="crumbType">Results</span><span data-t="org">SSC</span><span class="tk-no" data-t="tkNo">No. DBB346</span></div>
-      <div class="tk-title">
-        <p class="crumb"><a href="/" data-t="allNotices">All notices</a></p>
-        <h1 data-t="h1">SSC CHSL Examination 2025 Final Result</h1>
-        <p class="lead" data-t="summary">Staff Selection Commission has declared the final result for the Combined Higher Secondary (10+2) Level Examination, 2025, provisionally recommending 3515 candidates. Candidates can check their final allocation status on the official website.</p>
-      </div>
-      <div class="tk-dates"><div class="tk-cell"><span class="tk-l" data-t="noticeDateL">Notice date</span><span class="tk-big" data-t="postedV">7 Oct 2026</span></div><div class="tk-cell"><span class="tk-l" data-t="statusL">Status</span><span class="tk-big tk-stv" id="state">Final result declared, 3515 candidates provisionally shortlisted</span><span id="left" hidden></span></div></div>
-      <section class="tk-sec" data-t-aria="key"><div class="tk-sh" data-t="key">Key details</div>
-        <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Staff Selection Commission (SSC)</span></div>
-        <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Combined Higher Secondary Level (CHSL)</span></div>
-        <div class="r"><span data-t="r1l">Total vacancies</span><span class="v" data-t="r1v">3522</span></div>
-        <div class="r"><span data-t="r2l">Advertisement number</span><span class="v" data-t="r2v">HQ-C11011/1/2026-C-1 (E-14486)</span></div>
-      </section>
-      <section class="tk-sec" data-t-aria="links"><div class="tk-sh" data-t="links">Official links</div>
-        <a class="r" href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_final_chsl_2025_07102026.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">ssc.gov.in</span></a>
-        <a class="r" href="https://ssc.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">ssc.gov.in</span></a>
-      </section>
-      <div class="tk-stub">
-        <div class="tk-code"><svg class="tk-bar" viewBox="0 0 85 28" width="170" height="28" preserveAspectRatio="none" aria-hidden="true"><rect x="0" width="3" height="28"/><rect x="5" width="2" height="28"/><rect x="8" width="2" height="28"/><rect x="12" width="3" height="28"/><rect x="16" width="2" height="28"/><rect x="20" width="3" height="28"/><rect x="25" width="1" height="28"/><rect x="27" width="3" height="28"/><rect x="32" width="2" height="28"/><rect x="35" width="1" height="28"/><rect x="37" width="2" height="28"/><rect x="40" width="2" height="28"/><rect x="43" width="2" height="28"/><rect x="47" width="1" height="28"/><rect x="49" width="1" height="28"/><rect x="51" width="3" height="28"/><rect x="55" width="1" height="28"/><rect x="58" width="1" height="28"/><rect x="61" width="2" height="28"/><rect x="65" width="3" height="28"/><rect x="69" width="3" height="28"/><rect x="74" width="3" height="28"/><rect x="79" width="1" height="28"/><rect x="82" width="2" height="28"/></svg><span class="tk-id">DBB346830BF1</span></div>
-        <p class="tk-fine" data-t="checked">Details are taken from the official notice. Checked on 22 Oct 2026. If anything here differs from the official notice, the official notice is correct.</p>
-        <p class="actions"><a class="share" id="share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a><a id="dlPdf" href="#" download data-t="dlPdf">Download this page as PDF</a><a href="#" data-t="reportPage">Report a mistake on this page</a></p>
-      </div>
-    </article>
+    <div class="title">
+      <p class="crumb"><a href="/" data-t="allNotices">All notices</a> / <span data-t="crumbType">Results</span> / <span data-t="org">SSC</span></p>
+      <h1 data-t="h1">SSC CHSL Examination 2025 Final Result</h1>
+      <p class="status"><span id="state">Final result declared, 3515 candidates provisionally shortlisted</span><span id="left"></span></p>
+      <p class="lead" data-t="summary">Staff Selection Commission has declared the final result for the Combined Higher Secondary (10+2) Level Examination, 2025, provisionally recommending 3515 candidates. Candidates can check their final allocation status on the official website.</p>
+    </div>
+    <section class="kv" data-t-aria="key">
+      <div class="h" data-t="key">Key details</div>
+      <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Staff Selection Commission (SSC)</span></div>
+      <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">7 Oct 2026</span></div>
+      <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Combined Higher Secondary Level (CHSL)</span></div>
+      <div class="r"><span data-t="r1l">Total vacancies</span><span class="v" data-t="r1v">3522</span></div>
+      <div class="r"><span data-t="r2l">Advertisement number</span><span class="v" data-t="r2v">HQ-C11011/1/2026-C-1 (E-14486)</span></div>
+    </section>
+    <section class="kv" data-t-aria="links">
+      <div class="h" data-t="links">Official links</div>
+      <a class="r" href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_final_chsl_2025_07102026.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">ssc.gov.in</span></a>
+      <a class="r" href="https://ssc.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">ssc.gov.in</span></a>
+    </section>
+    <div class="note">
+      <p class="g" data-t="checked">Details are taken from the official notice. Checked on 22 Oct 2026. If anything here differs from the official notice, the official notice is correct.</p>
+      <p class="actions"><a class="share" id="share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a><a id="dlPdf" href="#" download data-t="dlPdf">Download this page as PDF</a><a href="#" data-t="reportPage">Report a mistake on this page</a></p>
+    </div>
   </main>
 
   <footer>
@@ -293,10 +235,6 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       r1v: "3522",
       r2l: "Advertisement number",
       r2v: "HQ-C11011/1/2026-C-1 (E-14486)",
-      noticeDateL: "Notice date",
-      lastL: "Last date",
-      statusL: "Status",
-      tkNo: "No. DBB346",
     },
     hi: {
       brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -329,10 +267,6 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       r1v: "3522",
       r2l: "विज्ञापन संख्या",
       r2v: "HQ-C11011/1/2026-C-1 (E-14486)",
-      noticeDateL: "सूचना की तिथि",
-      lastL: "अंतिम तिथि",
-      statusL: "स्थिति",
-      tkNo: "क्र. DBB346",
     },
   };
   let lang = "en";
@@ -365,7 +299,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       else {
         st.textContent = t("open");
         const cls = d <= 3 ? "hot" : d <= 7 ? "warm" : "calm";
-        el.innerHTML = '<span class="dl"><span class="tag ' + cls + '">' + (d === 0 ? t("lastDay") : t("daysLeft")(d)) + "</span></span>";
+        el.innerHTML = t("lastDate") + '<span class="dl"><span class="gap"></span><span class="tag ' + cls + '">' + (d === 0 ? t("lastDay") : t("daysLeft")(d)) + "</span></span>";
       }
     }
     const sh = document.getElementById("share");

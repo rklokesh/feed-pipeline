@@ -222,51 +222,27 @@ def render(n: dict, slug: str) -> str:
         links.append(("lSite", site))
 
     esc = html.escape
-    # ---- ticket layout (punched rail, dotted grid, typewriter type) ----
-    en["noticeDateL"], hi["noticeDateL"] = "Notice date", "सूचना की तिथि"
-    en["lastL"], hi["lastL"] = "Last date", "अंतिम तिथि"
-    en["statusL"], hi["statusL"] = "Status", "स्थिति"
-    if last:
-        en["lastV"], hi["lastV"] = d_en(last), d_hi(last)
-    en["tkNo"], hi["tkNo"] = f"No. {n['id'][:6].upper()}", f"क्र. {n['id'][:6].upper()}"
-    hdr = (f'      <div class="tk-head"><span data-t="crumbType">{esc(en["crumbType"])}</span>'
-           f'<span data-t="org">{esc(en["org"])}</span><span class="tk-no" data-t="tkNo">{esc(en["tkNo"])}</span></div>\n')
-    title = (f'      <div class="tk-title">\n        <p class="crumb"><a href="/" data-t="allNotices">All notices</a></p>\n'
-             f'        <h1 data-t="h1">{esc(en["h1"])}</h1>\n'
-             + (f'        <p class="lead" data-t="summary">{esc(en["summary"])}</p>\n' if en["summary"] else "") + "      </div>\n")
-    cells = [f'<div class="tk-cell"><span class="tk-l" data-t="noticeDateL">Notice date</span><span class="tk-big" data-t="postedV">{esc(en["postedV"])}</span></div>']
-    if last:
-        cells.append(f'<div class="tk-cell"><span class="tk-l" data-t="lastL">Last date</span><span class="tk-big" data-t="lastV">{esc(en["lastV"])}</span>'
-                     f'<span class="tk-st"><span id="state"></span><span id="left"></span></span></div>')
-    else:
-        cells.append(f'<div class="tk-cell"><span class="tk-l" data-t="statusL">Status</span><span class="tk-big tk-stv" id="state">{esc(en["statusV"])}</span><span id="left" hidden></span></div>')
-    dates = '      <div class="tk-dates">' + "".join(cells) + "</div>\n"
-
-    def section(key, label, body):
-        return (f'      <section class="tk-sec" data-t-aria="{key}"><div class="tk-sh" data-t="{key}">{esc(label)}</div>\n{body}      </section>\n')
-
-    rows_html = "".join(f'        <div class="r"><span data-t="{lk}">{esc(en[lk])}</span><span class="v" data-t="{vk}">{esc(en[vk])}</span></div>\n'
-                        for lk, vk in rows if lk != "postedL")
-    secs = section("key", en["key"], rows_html)
+    main = [f'''    <div class="title">
+      <p class="crumb"><a href="/" data-t="allNotices">All notices</a> / <span data-t="crumbType">{esc(en["crumbType"])}</span> / <span data-t="org">{esc(en["org"])}</span></p>
+      <h1 data-t="h1">{esc(en["h1"])}</h1>
+      <p class="status"><span id="state">{esc(en["statusV"])}</span><span id="left"></span></p>
+      {f'<p class="lead" data-t="summary">{esc(en["summary"])}</p>' if en["summary"] else ""}
+    </div>''',
+            '    <section class="kv" data-t-aria="key">\n      <div class="h" data-t="key">Key details</div>\n' +
+            "".join(f'      <div class="r"><span data-t="{lk}">{esc(en[lk])}</span><span class="v" data-t="{vk}">{esc(en[vk])}</span></div>\n'
+                    for lk, vk in rows) + "    </section>"]
     if fees:
-        secs += section("fee", en["fee"], "".join(f'        <div class="r"><span data-t="{k}">{esc(en[k])}</span><span class="v num">{amt}</span></div>\n' for k, amt in fees))
-    secs += section("links", en["links"], "".join(
-        f'        <a class="r" href="{esc(u)}" target="_blank" rel="noopener"><span data-t="{k}">{esc(en[k])}</span><span class="v">{esc(host(u))}</span></a>\n'
-        for k, u in links if u))
-    # barcode drawn from the notice id (decorative, deterministic)
-    bits = bin(int(n["id"][:12], 16))[2:].zfill(48)
-    x, bars = 0, []
-    for k in range(0, 48, 2):
-        w = 1 + int(bits[k]) + int(bits[k + 1])
-        bars.append(f'<rect x="{x}" width="{w}" height="28"/>')
-        x += w + 1 + int(bits[(k + 7) % 48])
-    barcode = f'<svg class="tk-bar" viewBox="0 0 {x} 28" width="{x * 2}" height="28" preserveAspectRatio="none" aria-hidden="true">{"".join(bars)}</svg>'
+        main.append('    <section class="kv" data-t-aria="fee">\n      <div class="h" data-t="fee">Application fee</div>\n' +
+                    "".join(f'      <div class="r"><span data-t="{k}">{esc(en[k])}</span><span class="v num">{amt}</span></div>\n' for k, amt in fees) +
+                    "    </section>")
+    main.append('    <section class="kv" data-t-aria="links">\n      <div class="h" data-t="links">Official links</div>\n' +
+                "".join(f'      <a class="r" href="{esc(u)}" target="_blank" rel="noopener"><span data-t="{k}">{esc(en[k])}</span><span class="v">{esc(host(u))}</span></a>\n'
+                        for k, u in links if u) + "    </section>")
     wa = ('<svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>')
-    stub = (f'      <div class="tk-stub">\n        <div class="tk-code">{barcode}<span class="tk-id">{esc(n["id"].upper())}</span></div>\n'
-            f'        <p class="tk-fine" data-t="checked">{esc(en["checked"])}</p>\n'
-            f'        <p class="actions"><a class="share" id="share" href="#">{wa}<span data-t="share">Share on WhatsApp</span></a>'
-            f'<a id="dlPdf" href="#" download data-t="dlPdf">Download this page as PDF</a><a href="#" data-t="reportPage">Report a mistake on this page</a></p>\n      </div>\n')
-    main = ['    <article class="ticket">\n' + hdr + title + dates + secs + stub + '    </article>']
+    main.append(f'''    <div class="note">
+      <p class="g" data-t="checked">{esc(en["checked"])}</p>
+      <p class="actions"><a class="share" id="share" href="#">{wa}<span data-t="share">Share on WhatsApp</span></a><a id="dlPdf" href="#" download data-t="dlPdf">Download this page as PDF</a><a href="#" data-t="reportPage">Report a mistake on this page</a></p>
+    </div>''')
 
     tpl = TEMPLATE.read_text(encoding="utf-8")
     t_en = "\n".join(f"      {k}: {js(v)}," for k, v in en.items())
