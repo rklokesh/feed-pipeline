@@ -154,17 +154,25 @@ def links_following(src: dict) -> list[dict]:
                 if k not in keys:
                     keys.add(k)
                     subs.append(href)
+        dbg = [f"home {home} title={page.title()!r} subs={len(subs)}"]
         for href in subs[:limit]:
             try:
                 page.goto(href, wait_until="domcontentloaded", referer=home)
                 page.wait_for_timeout(1500)
-                for item in links_from_html(page.content(), page.url):
+                html_ = page.content()
+                found = links_from_html(html_, page.url)
+                dbg.append(f"{href} -> {page.title()!r} {len(html_)} chars, {len(found)} links; "
+                           + " | ".join(f"{t[1][:60]}={t[0]}" for t in page.eval_on_selector_all("a[href]", "els => els.map(e => [e.href, e.innerText])")[:25]))
+                for item in found:
                     if item["url"] not in seen:
                         seen.add(item["url"])
                         out.append(item)
             except Exception as e:  # noqa: BLE001
-                print(f"  follow {href}: {e}"[:200])
+                dbg.append(f"{href}: {e}"[:300])
         b.close()
+    os.makedirs(DATA, exist_ok=True)
+    with open(f"{DATA}/debug-{src['id']}.txt", "w") as fh:
+        fh.write("\n".join(dbg))
     return out
 
 
