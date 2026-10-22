@@ -1,0 +1,28 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://www.rrc-wr.com/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "07. Website: www.rrc- wr.com NOTICE OF AMENDMENT Employment Notification No.RRC/WR/01/2026(Sports Quota) Dated: 27/08/ 2026 Ref : 1) Railway Board Letter No.-2025/E (Sports)/1/10/VBL(E.F No.",
+      "source": "rule",
+      "value": "RRC/WR/01/2026(Sports Quota) Dated"
+    }
+  },
+  "first_seen": "2026-10-22T21:08:30+00:00",
+  "id": "fa098f9a0da7",
+  "kind": "notification",
+  "org": "RRC Western Railway",
+  "pdf": {
+    "bytes": 441895,
+    "pages": 1,
+    "sha256": "02546af8028dd6f769601719a670e96cc0da50b551e6d0d05790841d9cfba186",
+    "text_kind": "text"
+  },
+  "source_id": "rrc-wr",
+  "status": "pending_review",
+  "title": "Click here to view/download Notice of Amendment to the Notification regarding Volleyball Sport Discipline - Uploaded on 04-09-2026",
+  "url": "https://www.rrc-wr.com/rrwc/Files/a06be1ce-7c5f-4afe-8daa-590c558b6a40.pdf"
+}

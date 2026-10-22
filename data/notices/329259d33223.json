@@ -1,0 +1,50 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://csbc.bihar.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "02/2025"
+    },
+    "apply_or_official_url": {
+      "evidence": "kx ¼vkj{kh 'kk[kk½ dsUnzh; p;u Ik\"kZn ¼flikgh HkrhZ½] fcgkj https://csbc.bihar.gov.in ¼osclkbV & ½ vko’;d lwpuk lanHkZ %& foKkiu la[;k & 02@2025 fo\"k; % dfri; vH;fFk",
+      "source": "rule",
+      "value": "https://csbc.bihar.gov.in"
+    },
+    "apply_url": {
+      "evidence": {
+        "apply_url": "https://csbc.bihar.gov.in"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://csbc.bihar.gov.in"
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Driver"
+      ]
+    }
+  },
+  "first_seen": "2026-10-22T21:08:30+00:00",
+  "id": "329259d33223",
+  "kind": "notification",
+  "org": "CSBC Bihar",
+  "pdf": {
+    "bytes": 818168,
+    "pages": 3,
+    "sha256": "164589022c5f1b0b8280673381a0afe506eed396e55a685c43c2511771912071",
+    "text_kind": "text"
+  },
+  "source_id": "csbc-home",
+  "status": "pending_review",
+  "title": "17-10-2026 Important Notice: Regarding Submission of Original Documents for Document Verification and Physical Presence for Some Candidates. (Advt. No. 02/2025)",
+  "url": "https://csbc.bihar.gov.in/Advt/Notice-02-2025-17-10-2026.pdf"
+}

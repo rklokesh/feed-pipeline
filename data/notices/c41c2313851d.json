@@ -1,0 +1,146 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://kvs.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "F. 11022/1/2019-KVS/RPS/RR"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "F. 11022/1/2019-KVS/RPS/RR"
+      }
+    },
+    "age_limit": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": null,
+        "max": 25,
+        "min": 18
+      }
+    },
+    "age_limit_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "age_limit": "Age limit for direct recruits 18 to 25 years."
+      }
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "www.kvsangathan.nic.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "www .kvsangathan. nic. in"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Commissioner",
+        "Additional Commissioner (Admin.)",
+        "Sub-staff",
+        "ASSISTANT COMMISSIONER",
+        "PRINCIPAL",
+        "VICE-PRINCIPAL",
+        "PGT-COMPUTER SCIENCE",
+        "PGT-HINDI/ENGLISH",
+        "PGT-MATHS/PHYSICS/CHEMISTRY/BIOLOGY/BIO-TECHNOLOGY/HISTORY/GEOGRAPHY/ECONOMICS/COMMERCE",
+        "TGT- HINDI/ENGLISH",
+        "TGT-SANSKRIT",
+        "TGT-MATHS/SCIENCE/SOCIAL STUDIES",
+        "TGT-ART EDUCATION",
+        "TGT-WORK EXPERIENCE",
+        "TGT- PHYSICAL AND HEALTH EDUCATION",
+        "LIBRARIAN",
+        "SPECIAL EDUCATOR (TGT)",
+        "PRT-MUSIC",
+        "PRIMARY TEACHER",
+        "SPECIAL EDUCATOR (PRT)",
+        "JOINT COMMISSIONER (FINANCE)",
+        "SUPERINTENDENT ENGINEER",
+        "DEPUTY COMMISSIONER",
+        "DEPUTY COMMISSIONER (ADMINISTRATION)",
+        "DEPUTY COMMISSIONER (FINANCE)",
+        "ADMINISTRATIVE OFFICER",
+        "FINANCE OFFICER",
+        "ASSISTANT ENGINEER",
+        "ASSISTANT EDITOR",
+        "ASSISTANT SECTION OFFICER",
+        "STENOGRAPHER GRADE-I",
+        "STENOGRAPHER GRADE-II",
+        "SENIOR SECRETARIAT ASSISTANT",
+        "JUNIOR SECRETARIAT ASSISTANT",
+        "STAFF CAR DRIVER (ORDINARY GRADE)"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "Subject: Recruitment Rules for the post of Commissioner and Additional Commissioner (Admin.)"
+      }
+    },
+    "qualification": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "Matriculation (Class X) or equivalent"
+    },
+    "qualification_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "qualification": "Educational and other qualifications required for direct recruits Matriculation (Class X) or equivalent"
+      }
+    },
+    "total_vacancies": {
+      "evidence": "romotion or by dcputation;transfcr and pcn;;~ntage <:1f the 1 vacancies to be filled by various methods _ 11 Tn case of recruitment hy promotion/ by N",
+      "source": "rule",
+      "value": 1
+    },
+    "total_vacancies_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "total_vacancies": "No. of post(s) 10211 (Subject to variation)"
+      }
+    }
+  },
+  "first_seen": "2026-10-22T21:08:30+00:00",
+  "id": "c41c2313851d",
+  "kind": "notification",
+  "org": "KVS",
+  "pdf": {
+    "bytes": 2230901,
+    "pages": 76,
+    "sha256": "0f8aa05852ca26670db4ca61f82ebdddf81f9a9d901712e406055a031a466124",
+    "text_kind": "text"
+  },
+  "source_id": "kvs-home",
+  "status": "pending_review",
+  "title": "भर्ती",
+  "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/01/2026012368.pdf"
+}

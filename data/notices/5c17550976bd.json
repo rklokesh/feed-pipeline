@@ -1,0 +1,33 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://csbc.bihar.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "¼;g lwph vuqØekad okj gS] bls e/s kk lwph u le>saA½ 3 CSBC Advt. No. 01/2026 Constables (General Duty Close Cadre) in Special Branch of Bihar Police LIST OF SELECTED CANDIDATES 7010110151 70",
+      "source": "rule",
+      "value": "01/2026 Constables (General Duty Close Ca"
+    },
+    "apply_or_official_url": {
+      "evidence": "gh HkrhZ½] fcgkj 05] gkfMZax jksM] iVuk & 800 001 ¼osclkbV &https://csbc.bihar.gov.in ½ lanHkZ % foKkiu la[;k & 01@2026 fo’ks\"k 'kk[kk] fcgkj iqfyl esa ^^flikgh ¼lke",
+      "source": "rule",
+      "value": "https://csbc.bihar.gov.in"
+    }
+  },
+  "first_seen": "2026-10-22T21:08:30+00:00",
+  "id": "5c17550976bd",
+  "kind": "result",
+  "org": "CSBC Bihar",
+  "pdf": {
+    "bytes": 292318,
+    "pages": 6,
+    "sha256": "54d832c15e80a48db52fe846a6cb4d77ce48b64abb4b7f5066bfec2b2bbb2385",
+    "text_kind": "text"
+  },
+  "source_id": "csbc-home",
+  "status": "pending_review",
+  "title": "09-10-2026 Results: Final Selection List of Candidates for the Post of Constable (General Duty Close Cadre) in Special Branch of Bihar Police . (Advt. No. 01/2026)",
+  "url": "https://csbc.bihar.gov.in/Advt/Results-01-2026-Final-09-10-2026.pdf"
+}

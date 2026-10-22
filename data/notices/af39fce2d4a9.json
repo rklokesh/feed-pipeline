@@ -1,0 +1,40 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://uppbpb.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "f,q q-d-iqwf frtri fu souo gfuq *rff yq ffi qtd o1 trq-sr{i http://uppbpb.gov.in qp q-ffiq-q o-G vi t qa fi qfr-d fuqr qror t fu erqfdqt d qfre{r r:q-{fi qrrf,",
+      "source": "rule",
+      "value": "http://uppbpb.gov.in"
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "http://uppbpb.gov.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "http://uppbpb.gov.in qp q-ffiq-q"
+    }
+  },
+  "first_seen": "2026-10-22T21:08:30+00:00",
+  "id": "af39fce2d4a9",
+  "kind": "notification",
+  "org": "UP Police",
+  "pdf": {
+    "bytes": 633442,
+    "pages": 1,
+    "sha256": "b9add24e3bce65856a7e8b7a299eabb0aed705c489c06204687ed3c23a7e2104",
+    "text_kind": "text"
+  },
+  "source_id": "uppbpb-home",
+  "status": "pending_review",
+  "title": "उत्तर प्रदेश पुलिस में आरक्षी नागरिक पुलिस एवं समकक्ष पदों पर सीधी भर्ती-2025 के अन्तर्गत शारीरिक दक्षता परीक्षा हेतु निर्धारित केन्द्रों एवं तिथियों के परिवर्तन के सम्बन्ध में महत्वपूर्ण सूचना का प्रकाशन ।",
+  "url": "https://uppbpb.gov.in/FilesUploaded/Notice/VIG1_08102026627d3fc1-7aee-449e-a951-e41323c0dcf3.pdf"
+}

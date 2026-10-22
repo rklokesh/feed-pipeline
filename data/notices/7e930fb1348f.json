@@ -1,0 +1,28 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://ctet.nic.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "arka, New Delhi-110077 Telephone: +91-11- 24050477 Website: https://www.cbse.gov.in",
+      "source": "rule",
+      "value": "https://www.cbse.gov.in"
+    }
+  },
+  "first_seen": "2026-10-22T21:08:30+00:00",
+  "id": "7e930fb1348f",
+  "kind": "admit_card",
+  "org": "CTET",
+  "pdf": {
+    "bytes": 356150,
+    "pages": 1,
+    "sha256": "a6f21bff9e2130f53ab15b6f255a6aca74ac471f1cfd8657a365ec965978b3ef",
+    "text_kind": "text"
+  },
+  "source_id": "ctet-home",
+  "status": "pending_review",
+  "title": "PUBLIC NOTICE: Exam Dates for 22nd edition of CTET",
+  "url": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/09/20260914325514446.pdf"
+}

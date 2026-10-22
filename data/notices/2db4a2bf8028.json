@@ -1,0 +1,83 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://www.rrc-wr.com/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "रोजगार सूचना संख्या:RRC/WR/01/2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "RRC/WR/01/2026"
+    },
+    "age_limit": {
+      "evidence": "न्यूनतम आयु 18 वर्ष तथा अधिकतम आयु 25 वर्ष दिनांक 01/01/2027 को होनी चाहिए।",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": "2027-01-01",
+        "max": 25,
+        "min": 18
+      }
+    },
+    "apply_last": {
+      "evidence": "ऑनलाइन आवेदनकरने की अंतिम तिथि एवं समय 30.09.2026को 18:00 बजे",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-09-30"
+    },
+    "apply_or_official_url": {
+      "evidence": "292)ेमजीरोड ,(cid:274)ांटरोडम(cid:224)ु बई.400007 – वेबसाइट:https://www.rrc-wr.com रोजगार सूचना सं(cid:201)या:RRC/WR/01/2026 ((cid:232)पो(cid:618)स(cid:91) कोटा)(",
+      "source": "rule",
+      "value": "https://www.rrc-wr.com"
+    },
+    "apply_start": {
+      "evidence": "ऑनलाइन आवेदनकरने की प्रारंभिक तिथि एवं समय 01.09.2026को 10:00 बजे",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-09-01"
+    },
+    "apply_url": {
+      "evidence": "https://www.rrc-wr.com",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://www.rrc-wr.com"
+    },
+    "post_names": {
+      "evidence": "पिचं म रेलवे म्ै रुप ‘C’ के 21 पदों तथा रुप ‘D’ के 43 पदों",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Group 'C'",
+        "Group 'D'"
+      ]
+    },
+    "qualification": {
+      "evidence": "किसी मान्यता प्राप्त विश्वविद्यालय से किसी भी विधा में स्नातक (Graduate) की डि्री।",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "Graduate for Level 5/4, 12th/+2 or ITI/Course Completed Apprenticeship for Level 3/2, 10th or ITI for Level 1"
+    },
+    "total_vacancies": {
+      "evidence": "पिचं म रेलवे म्ै रुप ‘C’ के 21 पदों तथा रुप ‘D’ के 43 पदों",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 64
+    }
+  },
+  "first_seen": "2026-10-22T21:08:30+00:00",
+  "id": "2db4a2bf8028",
+  "kind": "notification",
+  "org": "RRC Western Railway",
+  "pdf": {
+    "bytes": 1443088,
+    "pages": 20,
+    "sha256": "e9871a7b2db2d352292b4c36c0073c84320a92a4c75e34aa1b89002331c98f71",
+    "text_kind": "text"
+  },
+  "source_id": "rrc-wr",
+  "status": "pending_review",
+  "title": "Click here to view/download Notification in Hindi - Uploaded on 27-08-2026",
+  "url": "https://www.rrc-wr.com/rrwc/Files/f5048247-0e91-4bdb-a29b-35c880e208bb.pdf"
+}

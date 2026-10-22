@@ -1,0 +1,84 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://ctet.nic.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "CBSE/CTET/December-2026"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "F.No.: CBSE/CTET/December-2026"
+      }
+    },
+    "apply_last": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-06-10"
+    },
+    "apply_last_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_last": "initially open from 11.05.2026 to 10.06.2026"
+      }
+    },
+    "apply_or_official_url": {
+      "evidence": "applicable, will be available on the official CTET website https://ctet.nic.in from 07.09.2026 to 10.09.2026. Candidates who had successfully submitted their",
+      "source": "rule",
+      "value": "https://ctet.nic.in"
+    },
+    "apply_start": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-05-11"
+    },
+    "apply_start_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_start": "initially open from 11.05.2026 to 10.06.2026"
+      }
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://ctet.nic.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "https://ctet.nic.in"
+      }
+    }
+  },
+  "first_seen": "2026-10-22T21:08:30+00:00",
+  "id": "dc0f3a9cdb4b",
+  "kind": "notification",
+  "org": "CTET",
+  "pdf": {
+    "bytes": 187953,
+    "pages": 2,
+    "sha256": "004812bcd86def3cbbac64141e3da7b21006baee69830e3636465ce6a3a5bfee",
+    "text_kind": "text"
+  },
+  "source_id": "ctet-home",
+  "status": "pending_review",
+  "title": "PUBLIC NOTICE: CTET SEP-2026 CORRECTION WINDOW (last date 10.09.2026)",
+  "url": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/09/20260907461266783.pdf"
+}
