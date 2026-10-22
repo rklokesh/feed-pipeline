@@ -26,14 +26,22 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+      # PDFs only change when a notice page, the PDF script or the logo changes.
+      # They are cached under that fingerprint, so homepage-only edits skip the slow browser install.
+      - name: Restore notice PDFs
+        id: pdfcache
+        uses: actions/cache@v4
+        with:
+          path: site/notice/**/*.pdf
+          key: pdfs-${{ hashFiles('site/notice/**/*.html', 'scripts/make_pdfs.mjs', 'site/logo*.png') }}
       - name: Install PDF printer
+        if: steps.pdfcache.outputs.cache-hit != 'true'
         run: |
           npm i --no-save playwright@1.48.0
           npx playwright install --with-deps chromium
           sudo apt-get install -y -qq fonts-noto-core fonts-noto-ui-core >/dev/null || true
       - name: Make PDFs of notice pages (English + Hindi)
+        if: steps.pdfcache.outputs.cache-hit != 'true'
         run: node scripts/make_pdfs.mjs site
-      - name: Create Pages project (first run only)
-        run: npx --yes wrangler@3 pages project create sarkarichart --production-branch main || echo "project exists"
       - name: Deploy
         run: npx --yes wrangler@3 pages deploy site --project-name sarkarichart --branch main --commit-dirty=true
