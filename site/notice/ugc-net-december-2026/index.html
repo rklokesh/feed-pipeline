@@ -90,6 +90,14 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   h1 { font-size: 1.4rem; }
   .kv .r { grid-template-columns: 1fr; gap: 0; }
 }
+
+/* Easy to hit: every link and button gets an invisible touch area larger than its text (about 44px tall),
+   without changing the layout. Neighbouring areas meet halfway so they never overlap. */
+.tabs button, .nav-r a, .nav-r button, .list a.pdf, .sx, footer a, .crumb a, a.r, #dlPdf, .hit { position: relative; }
+.tabs button::after, .nav-r a::after, .nav-r button::after, .list a.pdf::after, .sx::after, footer a::after, .crumb a::after, a.r::after, #dlPdf::after, .hit::after {
+  content: ""; position: absolute; inset: -12px -9px; }
+footer a::after, .crumb a::after, a.r::after, #dlPdf::after { inset: -8px -4px; }
+.list li.lr { cursor: pointer; }
 </style>
 </head>
 <body>

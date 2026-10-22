@@ -160,6 +160,14 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 }
 
 
+
+/* Easy to hit: every link and button gets an invisible touch area larger than its text (about 44px tall),
+   without changing the layout. Neighbouring areas meet halfway so they never overlap. */
+.tabs button, .nav-r a, .nav-r button, .list a.pdf, .sx, footer a, .crumbs a, .hit { position: relative; }
+.tabs button::after, .nav-r a::after, .nav-r button::after, .list a.pdf::after, .sx::after, footer a::after, .crumbs a::after, .hit::after {
+  content: ""; position: absolute; inset: -12px -9px; }
+footer a::after, .crumbs a::after { inset: -10px -5px; }
+.list li.lr { cursor: pointer; }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 </head>
@@ -441,6 +449,13 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     paintTheme();
   });
   matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", paintTheme);
+  // The whole row is the link: a tap anywhere on the row (gaps included) opens the notice; the PDF icon keeps its own job.
+  document.getElementById("list").addEventListener("click", e => {
+    if (e.target.closest("a")) return;
+    const li = e.target.closest("li.lr"); if (!li) return;
+    const a = li.querySelector("a.row"); if (!a) return;
+    if (e.metaKey || e.ctrlKey) window.open(a.href, "_blank", "noopener"); else a.click();
+  });
   function applyLang() {
     document.documentElement.lang = lang;
     document.title = t("title");
