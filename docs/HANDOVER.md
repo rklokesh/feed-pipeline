@@ -77,14 +77,15 @@ deploy.yml: builds notice-page PDFs (cached; only rebuilt when notice pages chan
 
 ## 5. Next steps (in order)
 
-1. **Approve the 21 waiting review cards** (GitHub app → Issues #1–#21; #2 and #6 are the same SBI ad — reject one).
-   First real notices go live. ← we are here
-1b. **Lead list:** the owner creates a WhatsApp Channel "सरकारी चार्ट – SarkariChart" (and optionally Telegram) and shares the link;
+1. ✅ Done 22 Oct: 20 real notices approved and live (17 visible; 3 expired ones auto-hidden).
+2. ✅ Done: every approved notice gets its own EN/HI page at /notice/<slug>/ (scripts/pages.py + templates/notice.html):
+   AI reads the official PDF + the reviewer's plain-English GitHub comments; rows link to it; PDF + "Share on WhatsApp".
+   To rewrite all pages: Actions → "Publish approved notices" → Run workflow → tick "Rewrite every notice page".
+1b. ✅ WhatsApp Channel live in the strip: https://whatsapp.com/channel/0029Vb9M2x930LKIvmiBrY2s
+   **Lead list:** next — post approved notices there; later Telegram + email. (Original plan: the owner creates a WhatsApp Channel "सरकारी चार्ट – SarkariChart" (and optionally Telegram) and shares the link;
    put it in the strip's `data-href` on the homepage and notice pages. Then: post approved notices to the channel,
    add a "Share on WhatsApp" button on notice pages, and later an email sign-up stored in a free Cloudflare D1 database
    (WhatsApp followers cannot be exported; email is the owned list).
-2. **Notice page per approved notice** (template = `site/notice/ugc-net-december-2026/`), so rows open our page
-   (key dates, fees, eligibility, official links, our PDF) instead of the raw official PDF.
 3. **Trust details:** "Checked on <time>" + official source link on each notice; corrections note.
 4. **Mac mini self-hosted runner** (`setup-runner.sh`, label `india`) to cover UPSC, RRB, defence, states.
 5. **Daily health message** (what was checked, what failed, what awaits approval).
