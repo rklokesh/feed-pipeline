@@ -264,7 +264,7 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
       locale: "hi-IN",
     },
   };
-  const ORG_HI = { NTA: "एनटीए", SSC: "एसएससी", UPPSC: "यूपीपीएससी", BPSC: "बीपीएससी" };
+  const ORG_HI = /*ORGHI:START*/{ NTA: "एनटीए", SSC: "एसएससी", UPPSC: "यूपीपीएससी", BPSC: "बीपीएससी" }/*ORGHI:END*/;
   let lang = "en";
   try { if (localStorage.getItem("sc-lang") === "hi") lang = "hi"; } catch (e) {}
   const t = k => T[lang][k];
@@ -273,6 +273,7 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
   const TODAY = new Date();
   // posted = date on the official notice where known, otherwise the day we found it.
   const ITEMS = [
+    /*ITEMS:START*/
     { type: "Job", title: "UGC NET December 2026", hi: "यूजीसी नेट दिसंबर 2026", org: "NTA", posted: "2026-10-08", publishedAt: "2026-10-08T04:30:00Z", last: "2026-10-28", url: "/notice/ugc-net-december-2026/", page: true },
     { type: "Job", title: "SWAYAM exam, online application", hi: "स्वयं परीक्षा, ऑनलाइन आवेदन", org: "NTA", posted: "2026-10-09", publishedAt: "2026-10-09T05:00:00Z", last: "2026-11-01", url: "https://nta.ac.in" },
     { type: "Job", title: "NIFT Entrance Exam 2027", hi: "निफ्ट प्रवेश परीक्षा 2027", org: "NTA", posted: "2026-10-16", publishedAt: "2026-10-16T06:15:00Z", last: "2026-11-16", url: "https://nta.ac.in" },
@@ -283,6 +284,7 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
     { type: "Result", title: "Combined Higher Secondary (10+2) Level Exam 2025", hi: "संयुक्त उच्चतर माध्यमिक (10+2) स्तर परीक्षा 2025", org: "SSC", posted: "2026-10-21", publishedAt: "2026-10-21T11:20:00Z", url: "https://ssc.gov.in" },
     { type: "Admit card", title: "Stenographer (आशुलिपिक), exam start date", hi: "आशुलिपिक, परीक्षा आरंभ तिथि", org: "BPSC", posted: "2026-10-21", publishedAt: "2026-10-21T09:00:00Z", url: "https://bpsc.bihar.gov.in" },
     { type: "Result", title: "Assistant Teacher, Advt. A-5/E-1/2025", hi: "सहायक अध्यापक, विज्ञापन ए-5/ई-1/2025", org: "UPPSC", posted: "2026-10-21", publishedAt: "2026-10-21T07:30:00Z", url: "https://uppsc.up.nic.in" },
+    /*ITEMS:END*/
   ];
 
   // ---- TEST ONLY: ?preview=… or ?demo adds ~150 made-up rows to judge a full list. Normal visitors never see them. ----

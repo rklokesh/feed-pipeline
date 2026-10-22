@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths: ["site/**", "scripts/make_pdfs.mjs", ".github/workflows/deploy.yml"]
   workflow_dispatch:
+  workflow_call:      # publish.yml calls this right after you approve a notice
 
 permissions:
   contents: read
@@ -23,6 +24,8 @@ jobs:
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # always deploy the newest commit (includes just-published notices)
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
