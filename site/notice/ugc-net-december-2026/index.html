@@ -128,6 +128,8 @@ footer a::after, .crumb a::after, a.r::after, #dlPdf::after { inset: -8px -4px; 
 .strip-x::after { content: ""; position: absolute; inset: -8px; }
 @media (max-width: 640px) { .strip { justify-content: flex-start; text-align: left; padding: 8px 44px 8px 16px; } }
 @media print { .strip { display: none !important; } }
+footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-left: 6px; vertical-align: -6px; }
+@media (prefers-reduced-motion: reduce) { footer .pref .hand { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 </head>
@@ -187,7 +189,7 @@ footer a::after, .crumb a::after, a.r::after, #dlPdf::after { inset: -8px -4px; 
   </main>
 
   <footer>
-    <p class="pref"><a href="https://www.google.com/preferences/source?q=sarkarichart.com" target="_blank" rel="noopener"><span class="star" aria-hidden="true">★</span> <span data-t="prefSrc">Add SarkariChart as a preferred source on Google</span></a></p>
+    <p class="pref"><a href="https://www.google.com/preferences/source?q=sarkarichart.com" target="_blank" rel="noopener"><span data-t="prefSrc">Add SarkariChart as a preferred source on Google</span></a><img class="hand" src="/hand.webp" width="24" height="24" alt="" aria-hidden="true" loading="lazy" decoding="async"></p>
     <p class="g" data-t="disclaimer">SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.</p>
     <p><a href="#" data-t="about" target="_blank" rel="noopener">About</a> · <a href="#" data-t="report" target="_blank" rel="noopener">Report a mistake</a> · <a href="#" data-t="privacy" target="_blank" rel="noopener">Privacy</a></p>
   </footer>
