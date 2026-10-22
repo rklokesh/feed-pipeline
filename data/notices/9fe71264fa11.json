@@ -1,5 +1,20 @@
 {
   "board_url": "https://psc.uk.gov.in/candidate-corner/recruitment",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Veterinary Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "This notice is an edit window/correction notice for an already closed application process, not a new job opening.",
+    "summary_en": "Uttarakhand Public Service Commission has opened the online edit window for Veterinary Officer Examination 2026 from September 22, 2026 to October 1, 2026 for candidates to correct their application forms.",
+    "summary_hi": "उत्तराखंड लोक सेवा आयोग ने पशुचिकित्सा अधिकारी परीक्षा 2026 के लिए ऑनलाइन आवेदन में संशोधन हेतु 22 सितंबर 2026 से 1 अक्टूबर 2026 तक एडिट विंडो खोल दी है।",
+    "title_en": "UKPSC Veterinary Officer Examination Application Correction",
+    "title_hi": "उत्तराखंड लोक सेवा आयोग पशुचिकित्सा अधिकारी परीक्षा आवेदन सुधार",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "ukpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "1019909814.pdf",
   "url": "https://psc.uk.gov.in/public/uploads/recruitment/1019909814.pdf"
 }

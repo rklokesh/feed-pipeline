@@ -1,5 +1,20 @@
 {
   "board_url": "https://psc.uk.gov.in/candidate-corner/recruitment",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Lecturer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal notification regarding exam process, multiple subject applications, and combined final result declaration for an ongoing recruitment",
+    "summary_en": "Uttarakhand Public Service Commission has issued a notification stating that the final results for all subjects of the Lecturer Examination 2025 will be declared together based on candidate preferences.",
+    "summary_hi": "उत्तराखंड लोक सेवा आयोग ने सूचना जारी की है कि प्रवक्ता परीक्षा 2025 के सभी विषयों के अंतिम परिणाम उम्मीदवारों की वरीयता के आधार पर एक साथ घोषित किए जाएंगे।",
+    "title_en": "UKPSC Lecturer Examination 2025 Notice",
+    "title_hi": "उत्तराखंड प्रवक्ता परीक्षा 2025 सूचना",
+    "type": "Job",
+    "vacancies": 856
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "ukpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "1433940324.pdf",
   "url": "https://psc.uk.gov.in/public/uploads/recruitment/1433940324.pdf"
 }

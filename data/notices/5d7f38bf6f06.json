@@ -1,5 +1,20 @@
 {
   "board_url": "https://psc.uk.gov.in/candidate-corner/recruitment",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-11-02",
+    "list": false,
+    "posts": "Advocate",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal circular/invitation of bio-data for panel of advocates, not a general job vacancy",
+    "summary_en": "UKPSC invited bio-data from experienced advocates for constitution of a new panel of advocates for legal cases. Interested advocates should submit their applications by 2 November 2026.",
+    "summary_hi": "उत्तराखंड लोक सेवा आयोग ने कानूनी मामलों के लिए अधिवक्ताओं के नए पैनल के गठन हेतु अनुभवी अधिवक्ताओं से बायो-डाटा आमंत्रित किया है। इच्छुक अधिवक्ता 2 नवंबर 2026 तक आवेदन भेज सकते हैं।",
+    "title_en": "UKPSC Panel of Advocates Bio-Data Invitation 2026",
+    "title_hi": "उत्तराखंड लोक सेवा आयोग अधिवक्ता पैनल आमंत्रण 2026",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "ukpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "1563211575.pdf",
   "url": "https://psc.uk.gov.in/public/uploads/recruitment/1563211575.pdf"
 }

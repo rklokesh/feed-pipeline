@@ -1,5 +1,20 @@
 {
   "board_url": "https://psc.uk.gov.in/candidate-corner/recruitment",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "It is a self-declaration format for discrepancy in names, not a job notice, result, or admit card.",
+    "summary_en": "This document is a self-declaration format for candidates to declare discrepancies in names across documents for UKPSC examinations.",
+    "summary_hi": "यह दस्तावेज यूकेपीएससी परीक्षाओं के लिए दस्तावेजों में नाम की विसंगतियों को घोषित करने हेतु एक स्व-घोषणा प्रारूप है।",
+    "title_en": "UKPSC Name Discrepancy Self Declaration Form",
+    "title_hi": "उत्तराखंड लोक सेवा आयोग नाम विसंगति स्व घोषणा पत्र",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "ukpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "1172412848.pdf",
   "url": "https://psc.uk.gov.in/public/uploads/recruitment/1172412848.pdf"
 }

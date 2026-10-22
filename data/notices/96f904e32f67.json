@@ -1,5 +1,20 @@
 {
   "board_url": "https://psc.uk.gov.in/candidate-corner/recruitment",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-11-02",
+    "list": false,
+    "posts": "Advocate",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "internal circular or panel formation notice for advocates, not a public job vacancy",
+    "summary_en": "Notice inviting bio-data from experienced advocates for constitution of a new panel for the Uttarakhand Public Service Commission.",
+    "summary_hi": "उत्तराखंड लोक सेवा आयोग के लिए अधिवक्ताओं के नए पैनल के गठन हेतु बायोडाटा आमंत्रित किए गए हैं।",
+    "title_en": "UKPSC Advocate Panel Formation Notice",
+    "title_hi": "उत्तराखंड लोक सेवा आयोग अधिवक्ता पैनल गठन सूचना",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "ukpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "149248227.pdf",
   "url": "https://psc.uk.gov.in/public/uploads/recruitment/149248227.pdf"
 }

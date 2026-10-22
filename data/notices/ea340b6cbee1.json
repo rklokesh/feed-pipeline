@@ -1,22 +1,83 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://psc.uk.gov.in/candidate-corner/results",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "State Civil and Subordinate Services",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "The final selection result for the UKPSC Combined State Civil and Subordinate Services Examination 2024 has been declared. Candidates can check their results on the official website.",
+    "summary_hi": "उत्तराखंड सम्मिलित राज्य सिविल और अवर अधीनस्थ सेवा परीक्षा 2024 का अंतिम चयन परिणाम घोषित कर दिया गया है। उम्मीदवार आधिकारिक वेबसाइट पर अपना परिणाम देख सकते हैं।",
+    "title_en": "UKPSC Combined State Civil/Subordinate Services Exam 2024 Final Result",
+    "title_hi": "उत्तराखंड सम्मिलित राज्य सिविल/अवर अधीनस्थ सेवा परीक्षा 2024 अंतिम परिणाम",
+    "type": "Result",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-22T19:37:47+00:00",
   "id": "ea340b6cbee1",
+  "issue": 43,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-09-25",
   "org": "UKPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Uttarakhand Public Service Commission (UKPSC)",
+    "conducted_by_hi": "उत्तराखंड लोक सेवा आयोग (UKPSC)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "UKPSC Combined State Civil/Subordinate Services Exam 2024 Final Result",
+    "h1_hi": "उत्तराखंड सम्मिलित राज्य सिविल/अवर अधीनस्थ सेवा परीक्षा 2024 अंतिम परिणाम",
+    "last_date": null,
+    "notice_date": "2026-09-25",
+    "official_site": "https://psc.uk.gov.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "State Civil and Subordinate Services",
+        "value_hi": "राज्य सिविल और अवर अधीनस्थ सेवाएं"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "49/34/LSS-2024/G-1/2025-26",
+        "value_hi": "49/34/LSS-2024/G-1/2025-26"
+      },
+      {
+        "label_en": "Result Status",
+        "label_hi": "परिणाम स्थिति",
+        "value_en": "Final Selection Result Declared",
+        "value_hi": "अंतिम चयन परिणाम घोषित"
+      }
+    ],
+    "status_en": "Final result declared",
+    "status_hi": "अंतिम परिणाम घोषित",
+    "summary_en": "The final selection result for the UKPSC Combined State Civil and Subordinate Services Examination 2024 has been declared. Candidates can check their results on the official website.",
+    "summary_hi": "उत्तराखंड सम्मिलित राज्य सिविल और अवर अधीनस्थ सेवा परीक्षा 2024 का अंतिम चयन परिणाम घोषित कर दिया गया है। उम्मीदवार आधिकारिक वेबसाइट पर अपना परिणाम देख सकते हैं।"
+  },
   "pdf": {
     "bytes": 26563,
     "pages": 1,
     "sha256": "10b6a1a5a73f7b8e3837657a98826b58d28801b759c55754257f9ea8311e2100",
     "text_kind": "text"
   },
+  "published_at": "2026-10-22T19:41:11Z",
+  "slug": "ukpsc-combined-state-civil-subordinate-services-exam-2024-final",
   "source_id": "ukpsc-results",
-  "status": "pending_review",
+  "status": "approved",
   "title": "2031721675.pdf",
   "url": "https://psc.uk.gov.in/public/uploads/results/2031721675.pdf"
 }

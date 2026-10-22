@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://psc.uk.gov.in/candidate-corner/results",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Various Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Court case related individual marks notice",
+    "summary_en": "Marks of petitioners for the Combined State Civil Upper Subordinate Examination 2021 pursuant to High Court writ petitions.",
+    "summary_hi": "उच्च न्यायालय की रिट याचिकाओं के क्रम में सम्मिलित राज्य सिविल अपर अधीनस्थ परीक्षा 2021 के याचिकाकर्ताओं के अंक।",
+    "title_en": "UKPSC Combined State Civil Upper Subordinate Exam 2021 Court Case Results",
+    "title_hi": "उत्तराखंड सम्मिलित राज्य सिविल अपर अधीनस्थ परीक्षा 2021 न्यायालय मामला परिणाम",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +31,7 @@
     "text_kind": "text"
   },
   "source_id": "ukpsc-results",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "1161252082.pdf",
   "url": "https://psc.uk.gov.in/public/uploads/results/1161252082.pdf"
 }

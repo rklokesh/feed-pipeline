@@ -1,5 +1,20 @@
 {
   "board_url": "https://psc.uk.gov.in/candidate-corner/recruitment",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Civil Judge",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "document is a notice regarding missing documents for specific candidates in a judicial service examination, not a main job listing or result",
+    "summary_en": "UKPSC issued a notice for shortlisted candidates of the Civil Judge Exam 2023 to submit missing documents by 06-10-2026.",
+    "summary_hi": "उत्तराखंड लोक सेवा आयोग ने सिविल जज परीक्षा 2023 के सफल अभ्यर्थियों के लिए आवश्यक दस्तावेज 06-10-2026 तक जमा करने हेतु सूचना जारी की है।",
+    "title_en": "UKPSC Civil Judge Exam 2023 Document Verification Notice",
+    "title_hi": "उत्तराखंड लोक सेवा आयोग सिविल जज परीक्षा 2023 दस्तावेज सत्यापन सूचना",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "ukpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "1304545086.pdf",
   "url": "https://psc.uk.gov.in/public/uploads/recruitment/1304545086.pdf"
 }
