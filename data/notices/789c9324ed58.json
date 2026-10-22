@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://rectt.bsf.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Constable (Tradesmen)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Correction notice for roll numbers in a previous result, not a new result or job",
+    "summary_en": "BSF has released a correction notice for roll numbers shortlisted for the second phase of examination for Constable Tradesmen 2024-25.",
+    "summary_hi": "सीमा सुरक्षा बल ने कांस्टेबल ट्रेड्समैन 2024-25 के लिए परीक्षा के दूसरे चरण हेतु शॉर्टलिस्ट किए गए रोल नंबरों के लिए सुधार सूचना जारी की है।",
+    "title_en": "BSF Constable Tradesmen 2024-25 Result Correction",
+    "title_hi": "सीमा सुरक्षा बल कांस्टेबल ट्रेड्समैन 2024-25 परिणाम सुधार",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +31,7 @@
     "text_kind": "text"
   },
   "source_id": "bsf-recruitment",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "LINK FOR DOWNLOADING E-ADMIT CARDS FOR THE POST OF HC(RO) & HC(RM) IN BSF COMN SETUP 2025 NOTICE FOR WRITTEN EXAMINATION I.E. CBT FOR THE POST OF HC(RO) AND HC(RM) SCHEDULED ON 2ND NOVEMBER 2026 NOTICE : RECRUITMENT FOR THE POST OF CONSTABLE (TRADESMAN) IN BSF - 2024 & 25 REGARDING WRITTEN EXAMINATI",
   "url": "https://d3t79nicn48uzj.cloudfront.net/bsf/custom/1791964439.pdf"
 }

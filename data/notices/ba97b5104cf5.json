@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://www.joinindiannavy.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Various Officer Entries",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "This is an internal calendar document and policy overview, not a specific job vacancy notice.",
+    "summary_en": "Indian Navy calendar showing general eligibility criteria and entry schemes for officers in 2026.",
+    "summary_hi": "भारतीय नौसेना कैलेंडर 2026 जिसमें अधिकारियों के लिए सामान्य पात्रता मानदंड और प्रवेश योजनाएं दी गई हैं।",
+    "title_en": "Indian Navy Officer Entry Calendar and Eligibility 2026",
+    "title_hi": "भारतीय नौसेना अधिकारी प्रवेश कैलेंडर और पात्रता 2026",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +31,7 @@
     "text_kind": "text"
   },
   "source_id": "navy-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "IN Calendar - 2026",
   "url": "https://www.joinindiannavy.gov.in/images/OFFICIAL_IN_CALENDAR_2026_DMPR.pdf"
 }

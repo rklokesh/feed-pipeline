@@ -1,12 +1,28 @@
 {
   "baseline_sample": true,
   "board_url": "https://mppsc.mp.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "State Forest Service Main Exam",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "View the final answer key for the State Forest Service Main Exam 2026 conducted by MPPSC.",
+    "summary_hi": "مبپپسک کے ذریعہ منعقد ریاستی ون سروس مکھن امتحان 2026 کے لیے فائنل انسر کی دیکھیں.",
+    "title_en": "MPPSC State Forest Service Main Exam 2026 Final Answer Key",
+    "title_hi": "مبپپسک ریشٹس فاریسٹ سروس مکھن پرکشا 2026 فائنل انسر کی",
+    "type": "Answer key",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-22T17:22:23+00:00",
   "id": "7a0692bd2868",
+  "issue": 25,
   "kind": "answer_key",
   "org": "MPPSC",
   "pdf": {
@@ -16,7 +32,7 @@
     "text_kind": "text"
   },
   "source_id": "mppsc-home",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "Final Answer Key - State Forest Service Main Exam 2026, Dated 16/10/2026",
   "url": "https://mppsc.mp.gov.in/uploads/files/Final_Answer_Key_SFS_Main_Exam_2026_Dated_16_10_2026.pdf"
 }
