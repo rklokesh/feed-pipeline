@@ -1,7 +1,7 @@
 # SarkariChart — Handover
 
 Everything needed to continue this project from any Claude account (or by a person).
-Last updated: 22 Oct 2026 (night, IST ~00:00). Owner: the site owner.
+Last updated: 23 Oct 2026 (early morning IST). Owner: the site owner.
 
 **To continue with a new Claude account:** in the Claude desktop app, connect the Mac folder
 `/Volumes/Workspace/App idea/Sarkari Chart` (it holds the repo, this file and the GitHub token file), then say:
@@ -59,6 +59,27 @@ publish.yml (when the owner adds a label to an issue, open or closed):
 - "Posted" date = the official notice date read from the PDF (`notice_date`), never our publish date.
 - Deploy: PDF-printer steps have timeouts + continue-on-error, so a stuck apt mirror never blocks the site.
 
+## 3b. Added on 22–23 Oct (late)
+
+- **View counter:** `functions/api/views.js` (Cloudflare Pages Function) + free D1 database `sarkarichart-views`
+  (binding `DB`, id in `wrangler.toml`). One view per visitor per day; shown on notice pages only from 100 views.
+- **Report a mistake:** `/report/` page (built by `scripts/report_page.py` from the notice template) →
+  `functions/api/report.js` opens a GitHub issue labelled `user-report` (screenshot stored in D1, served by
+  `/api/report-img`; 5 reports/hour/visitor; honeypot). Needs Cloudflare Pages secret `GH_TOKEN` — set from GitHub
+  secret `REPORT_GH_TOKEN` (fine-grained, Issues R/W on this repo only) by re-running workflow `setup-views.yml`.
+- **Daily health report:** `scripts/health.py` + `health.yml` (08:01 IST) → comment on the open issue labelled `health`.
+- Labels on non-notice issues (health, user-report) never publish anything (publish.py only acts on issues with a notice-id).
+- `probe-india.yml` + `scripts/probe_links.py`: dump all links of given board pages from the Mac → `reports/links/`.
+- RRB: `follow:` mode in `watch.py` (opens each CEN page inside one browser session; reads `/-/image/...pdf` links)
+  and `download: browser`. Debug trace in `data/debug-rrb-unified.txt`.
+- New boards: UP Police, CSBC Bihar, RRC NR/WR/CR, CTET, KVS, UKPSC recruitment + results pages.
+  Not yet: India Post GDS (timeout), SSB (DNS gone), NVS, CISF, Assam Rifles, Army, Coast Guard, Employment News, CRPF, DRDO.
+- UI since: red arrow "New" image (`new-en.png`/`new-hi.png`, nudge) — the green GIF was rejected; siren in the New slot
+  for jobs closing ≤7 days and beside "N days left" on notice pages; Esc anywhere clears search; centred tabs;
+  every list column one line with "…" + tooltip (tooltip detects sub-pixel cut-offs); notice pages: "← All notices"
+  top-left (replaces tagline), breadcrumb "Jobs / Board", centred 760px column, key details/links as square bordered
+  tables with homepage hover colour, icons on Share/PDF/Report. Ticket design was tried and rejected.
+
 ## 4. Board status (22 Oct 2026, India runner)
 
 - Working: UPSC (both pages), NABARD, Navy, BSF, ITBP, RPSC, RSSB, MPPSC, DSSSB, UPSSSC (+ the 9 GitHub boards:
@@ -93,10 +114,9 @@ publish.yml (when the owner adds a label to an issue, open or closed):
 
 ## 6. Where we are / next steps (in order)
 
-1. **Finish board tuning** (section 4): RRB first (most searched), then Army, Coast Guard, Employment News, UKPSC, RBI;
-   find working URLs for CRPF and DRDO.
-2. **Daily health message** to the owner: boards checked/failed, what auto-published, what waits in `review`,
-   whether the Mac runner is online.
+1. **Boards still missing** (section 3b): India Post GDS first, then Tier 2 state commissions in batches of 5
+   (MPSC, TNPSC, KPSC, WBPSC, HSSC/HPSC, GPSC, OPSC/OSSC, JPSC/JSSC, CGPSC, APPSC, TSPSC).
+2. Notice detail page: the owner will give design instructions.
 3. **Launch for search:** buy sarkarichart.com → connect to Cloudflare Pages → remove noindex (`site/_headers`) →
    sitemap, JobPosting schema, server-rendered notice list (SEO/AEO), Search Console + Bing.
 4. **Speed (agreed in principle, not done):** outline the wordmark text into SVG paths + non-blocking Noto font;
