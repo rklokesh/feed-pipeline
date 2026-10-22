@@ -127,6 +127,47 @@ def links_with_browser(url: str, prefix: str = "") -> list[dict]:
     return merged
 
 
+def links_following(src: dict) -> list[dict]:
+    """Boards that list each recruitment on its own sub-page (e.g. RRB: getdata?cennum=07/2026&loc=...).
+    Open the board in a real browser session, then visit each matching sub-page from there (the site rejects
+    direct visits), and collect the notice links on every sub-page."""
+    from playwright.sync_api import sync_playwright
+    from common import BROWSER_UA
+
+    pat = re.compile(src["follow"])
+    key = re.compile(src.get("follow_key", src["follow"]))   # one sub-page per key (e.g. per CEN number)
+    limit = int(src.get("follow_limit", 12))
+    out, seen = [], set()
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        ctx = b.new_context(user_agent=BROWSER_UA)
+        page = ctx.new_page()
+        page.set_default_timeout(45_000)
+        page.goto(src["url"], wait_until="domcontentloaded")
+        page.wait_for_timeout(3000)
+        home = page.url
+        subs, keys = [], set()
+        for a in page.eval_on_selector_all("a[href]", "els => els.map(e => [e.href, e.innerText])"):
+            href = a[0]
+            if pat.search(href):
+                k = key.search(href).group(0)
+                if k not in keys:
+                    keys.add(k)
+                    subs.append(href)
+        for href in subs[:limit]:
+            try:
+                page.goto(href, wait_until="domcontentloaded", referer=home)
+                page.wait_for_timeout(1500)
+                for item in links_from_html(page.content(), page.url):
+                    if item["url"] not in seen:
+                        seen.add(item["url"])
+                        out.append(item)
+            except Exception as e:  # noqa: BLE001
+                print(f"  follow {href}: {e}"[:200])
+        b.close()
+    return out
+
+
 def browser_download(board: str, url: str) -> bytes | None:
     """Fetch a file the way a visitor would: open the board first, then the file, in one browser session."""
     from playwright.sync_api import sync_playwright
@@ -295,7 +336,9 @@ def main() -> int:
     for src in sources:
         h = health.setdefault(src["id"], {})
         try:
-            if src.get("render") == "js":
+            if src.get("follow"):
+                items = links_following(src)
+            elif src.get("render") == "js":
                 items = links_with_browser(src["url"], src.get("attachment_prefix", ""))
             else:
                 r = get(src["url"])

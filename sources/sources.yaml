@@ -39,10 +39,14 @@ sources:
     render: static
     runner: india
   - id: rrb-unified
-    org: RRB (unified portal)
+    org: RRB
     url: https://rrb.indianrailways.gov.in/
     render: js
     runner: india
+    # each CEN (recruitment) has its own page per region; open one region page per CEN of this/last year
+    follow: "getdata\\?cennum=\\d+/(2025|2026|2027)&loc=[a-z]+&status=1"
+    follow_key: "cennum=\\d+/\\d+"
+    follow_limit: 14
 
   # ---- Banks & financial ----
   - id: sbi-careers
