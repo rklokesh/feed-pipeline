@@ -63,7 +63,14 @@ footer .pref .star { color: var(--warm); }
 .top button:hover { text-decoration: underline; text-underline-offset: 5px; }
 
 main { margin-top: 36px; flex: 1; display: grid; gap: 40px; align-content: start; }
-.crumb { color: var(--grey); }
+/* Breadcrumb: a clear "← All notices" back link, then the category and board (each opens that view on the homepage) */
+.crumb { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; color: var(--grey); margin-bottom: 10px; }
+.crumb a { color: var(--grey); }
+.crumb a:hover { color: var(--ink); }
+.crumb .back { display: inline-flex; align-items: center; gap: 6px; color: var(--ink); font-weight: 500; }
+.crumb .back svg { flex: none; transition: transform .15s ease; }
+.crumb .back:hover svg { transform: translateX(-3px); }
+.crumb .sep { color: var(--line); color: color-mix(in srgb, var(--grey) 55%, transparent); }
 .title { display: grid; gap: 6px; }
 h1 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; text-wrap: balance; }
 .status { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; }
@@ -78,7 +85,13 @@ h1 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; text-wrap: b
 .kv a.r .v::after { content: " ↗"; color: var(--grey); }
 .kv .r .v small { display: block; color: var(--grey); font-size: inherit; }
 
-.note { display: grid; gap: 4px; max-width: 40rem; }
+.note { display: grid; gap: 18px; max-width: 46rem; }
+.actions { row-gap: 12px !important; column-gap: 28px !important; }
+.actions .act { display: inline-flex; align-items: center; gap: 6px; }
+.actions .act svg, .actions .share svg { flex: none; }
+.actions .act svg { color: var(--grey); }
+.actions a:hover svg { color: var(--ink); }
+.actions .share:hover svg { color: inherit; }
 
 @media print {
   body { padding: 0; }
@@ -170,7 +183,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
 
   <main>
     <div class="title">
-      <p class="crumb"><a href="/" data-t="allNotices">All notices</a> / <span data-t="crumbType">Jobs</span> / <span data-t="org">IBPS</span></p>
+      <nav class="crumb" aria-label="Breadcrumb"><a class="back" href="/"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a><span class="sep" aria-hidden="true">/</span><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><a href="/?q=IBPS" data-t="org">IBPS</a></nav>
       <h1 data-t="h1">IBPS Specialist Officers CRP SPL XVI Recruitment 2027</h1>
       <p class="status"><span id="state">Notice published</span><span id="left"></span></p>
       <p class="lead" data-t="summary">IBPS has invited online applications for the Common Recruitment Process for Specialist Officers (CRP SPL-XVI) for vacancies of 2027-28. Eligible candidates can apply online through the official website.</p>
@@ -193,7 +206,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     </section>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 22 Oct 2026. If anything here differs from the official notice, the official notice is correct.</p>
-      <p class="actions"><a class="share" id="share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a><a id="dlPdf" href="#" download data-t="dlPdf">Download this page as PDF</a><a href="#" data-t="reportPage">Report a mistake on this page</a></p>
+      <p class="actions"><a class="share" id="share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="#"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
     </div>
   </main>
 

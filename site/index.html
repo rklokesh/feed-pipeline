@@ -672,6 +672,10 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   try {
     const startQ = new URL(location.href).searchParams.get("q");
     if (startQ) { const qi = document.getElementById("q"); qi.value = startQ; q = startQ.trim().toLowerCase(); }
+    // ?cat=jobs|closing-soon|admit-cards|results|answer-keys opens that tab (used by notice-page breadcrumbs)
+    const CATS = { jobs: "Job", "closing-soon": "soon", "admit-cards": "Admit card", results: "Result", "answer-keys": "Answer key" };
+    const startCat = CATS[new URL(location.href).searchParams.get("cat")];
+    if (startCat) requestAnimationFrame(() => document.querySelector(`.tabs button[data-cat="${startCat}"]`)?.click());
   } catch (e) {}
   document.getElementById("lang").addEventListener("click", () => {
     lang = lang === "hi" ? "en" : "hi";

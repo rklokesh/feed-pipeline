@@ -18,9 +18,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Probe
+        env:
+          TARGETS: ${{ inputs.targets }}   # via env: "&" in URLs must not reach the shell
         run: |
           export PATH="$HOME/.sarkarichart-venv/bin:$PATH"
-          python scripts/probe_links.py ${{ inputs.targets }}
+          python scripts/probe_links.py $TARGETS
       - name: Save
         run: |
           git config user.name "github-actions[bot]"

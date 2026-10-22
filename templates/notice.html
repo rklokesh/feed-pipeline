@@ -63,7 +63,14 @@ footer .pref .star { color: var(--warm); }
 .top button:hover { text-decoration: underline; text-underline-offset: 5px; }
 
 main { margin-top: 36px; flex: 1; display: grid; gap: 40px; align-content: start; }
-.crumb { color: var(--grey); }
+/* Breadcrumb: a clear "← All notices" back link, then the category and board (each opens that view on the homepage) */
+.crumb { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; color: var(--grey); margin-bottom: 10px; }
+.crumb a { color: var(--grey); }
+.crumb a:hover { color: var(--ink); }
+.crumb .back { display: inline-flex; align-items: center; gap: 6px; color: var(--ink); font-weight: 500; }
+.crumb .back svg { flex: none; transition: transform .15s ease; }
+.crumb .back:hover svg { transform: translateX(-3px); }
+.crumb .sep { color: var(--line); color: color-mix(in srgb, var(--grey) 55%, transparent); }
 .title { display: grid; gap: 6px; }
 h1 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; text-wrap: balance; }
 .status { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; }
@@ -78,7 +85,13 @@ h1 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; text-wrap: b
 .kv a.r .v::after { content: " ↗"; color: var(--grey); }
 .kv .r .v small { display: block; color: var(--grey); font-size: inherit; }
 
-.note { display: grid; gap: 4px; max-width: 40rem; }
+.note { display: grid; gap: 18px; max-width: 46rem; }
+.actions { row-gap: 12px !important; column-gap: 28px !important; }
+.actions .act { display: inline-flex; align-items: center; gap: 6px; }
+.actions .act svg, .actions .share svg { flex: none; }
+.actions .act svg { color: var(--grey); }
+.actions a:hover svg { color: var(--ink); }
+.actions .share:hover svg { color: inherit; }
 
 @media print {
   body { padding: 0; }
