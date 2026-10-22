@@ -1,5 +1,3 @@
-// Minimal service worker: lets Android offer "Add to home screen".
-// It caches nothing, so visitors always get the latest notices straight from the network.
+// Retired: SarkariChart is a normal website, not an installable app. This removes any old copy from browsers.
 self.addEventListener("install", () => self.skipWaiting());
-self.addEventListener("activate", e => e.waitUntil(self.clients.claim()));
-self.addEventListener("fetch", () => {});
+self.addEventListener("activate", e => e.waitUntil(self.registration.unregister()));

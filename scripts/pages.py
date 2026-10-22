@@ -223,7 +223,7 @@ def render(n: dict, slug: str) -> str:
 
     esc = html.escape
     main = [f'''    <div class="title">
-      <p class="crumb"><a href="/" data-t="allNotices" target="_blank" rel="noopener">All notices</a> / <span data-t="crumbType">{esc(en["crumbType"])}</span> / <span data-t="org">{esc(en["org"])}</span></p>
+      <p class="crumb"><a href="/" data-t="allNotices">All notices</a> / <span data-t="crumbType">{esc(en["crumbType"])}</span> / <span data-t="org">{esc(en["org"])}</span></p>
       <h1 data-t="h1">{esc(en["h1"])}</h1>
       <p class="status"><span id="state">{esc(en["statusV"])}</span><span id="left"></span></p>
       {f'<p class="lead" data-t="summary">{esc(en["summary"])}</p>' if en["summary"] else ""}
@@ -241,7 +241,7 @@ def render(n: dict, slug: str) -> str:
     wa = ('<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>')
     main.append(f'''    <div class="note">
       <p class="g" data-t="checked">{esc(en["checked"])}</p>
-      <p class="actions"><a class="share" id="share" href="#" target="_blank" rel="noopener">{wa}<span data-t="share">Share on WhatsApp</span></a><a id="dlPdf" href="#" download data-t="dlPdf">Download this page as PDF</a><a href="#" data-t="reportPage" target="_blank" rel="noopener">Report a mistake on this page</a></p>
+      <p class="actions"><a class="share" id="share" href="#">{wa}<span data-t="share">Share on WhatsApp</span></a><a id="dlPdf" href="#" download data-t="dlPdf">Download this page as PDF</a><a href="#" data-t="reportPage">Report a mistake on this page</a></p>
     </div>''')
 
     tpl = TEMPLATE.read_text(encoding="utf-8")
