@@ -62,6 +62,7 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 .g { color: var(--grey); }
 .list li.lr > a.row > span:not(.t) { color: var(--grey); } /* only the notice title stays dark; deadline colours still show */
 .list li.lr > .pdf { color: var(--grey); }
+.list li.lr.fresh > a.row > span:first-child { color: var(--ink); } /* new notices: posted date stays dark like the title */
 .show-sm { display: none; }
 .num { font-variant-numeric: tabular-nums; }
 
@@ -76,15 +77,19 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 .row { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr) 5.75rem 6.25rem 9rem 4.25rem; gap: 0 16px; align-items: baseline; }
 main { margin-top: 36px; flex: 1; }
 .head { color: var(--grey); background: var(--soft); padding: 7px 8px; border-bottom: 1px solid color-mix(in srgb, var(--ink) 28%, var(--page)); }
-.tabs { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: 14px; }
+.tabs { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: 14px; position: relative; }
+/* One stroke under the active tab; it slides to whichever tab you pick. */
+.tabs .ink { position: absolute; left: 0; top: 0; height: 1.5px; width: 0; background: var(--ink); border-radius: 1px; pointer-events: none; opacity: 0;
+  transition: transform .32s cubic-bezier(.3,.7,.2,1), width .32s cubic-bezier(.3,.7,.2,1), opacity .2s ease; }
+.tabs .ink.still { transition: none; }
 .search { display: block; margin-bottom: 40px; }
 .search input { all: unset; box-sizing: border-box; width: 100%; padding: 6px 0; border-bottom: 1px solid var(--line); }
 .search input::placeholder { color: var(--grey); }
 .search input:focus { border-bottom-color: var(--ink); }
-.tabs button { all: unset; cursor: pointer; color: var(--grey); transition: color .25s ease; }
+.tabs button { all: unset; cursor: pointer; color: var(--grey); transition: color .25s ease; padding-bottom: 9px; }
 .list { transition: opacity .18s ease; }
 .list.fade { opacity: 0; }
-@media (prefers-reduced-motion: reduce) { .list, .tabs button { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .list, .tabs button, .tabs .ink { transition: none; } }
 .tabs button[aria-pressed="true"] { color: var(--ink); }
 .tabs button:hover { color: var(--ink); }
 .tabs .c { margin-left: 5px; font-variant-numeric: tabular-nums; }
@@ -151,6 +156,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       <button type="button" data-cat="Admit card" aria-pressed="false"><span data-t="admits">Admit cards</span><span class="c"></span></button>
       <button type="button" data-cat="Result" aria-pressed="false"><span data-t="results">Results</span><span class="c"></span></button>
       <button type="button" data-cat="Answer key" aria-pressed="false"><span data-t="keys">Answer keys</span><span class="c"></span></button>
+      <span class="ink still" aria-hidden="true"></span>
     </div>
     <label class="search" for="q"><span style="position:absolute;left:-9999px" data-t="searchLabel">Search notices</span>
       <svg class="sicon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 20.5 20.5"/></svg>
@@ -338,7 +344,19 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   function setCat(c) {
     cat = c;
     document.querySelectorAll(".tabs button").forEach(x => x.setAttribute("aria-pressed", String(x.dataset.cat === c)));
+    moveInk();
   }
+  // Slides the stroke under the active tab (also follows the tab when Hindi/English or the window width changes).
+  function moveInk(still) {
+    const ink = document.querySelector(".tabs .ink"), b = document.querySelector('.tabs button[aria-pressed="true"]');
+    if (!ink || !b) return;
+    ink.classList.toggle("still", !!still);
+    ink.style.width = b.offsetWidth + "px";
+    ink.style.transform = `translate(${b.offsetLeft}px, ${b.offsetTop + b.offsetHeight - 1.5}px)`;
+    ink.style.opacity = 1;
+  }
+  addEventListener("resize", () => moveInk(true));
+  if (document.fonts) document.fonts.ready.then(() => moveInk(true));
   // If the search finds nothing in the chosen category but finds it elsewhere, move to where it is.
   function followSearch() {
     if (!q || cat === "all") return;
@@ -364,10 +382,11 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       b.querySelector(".c").textContent = q ? n : "";
       b.classList.toggle("zero", !!q && n === 0);
     });
+    moveInk();
     const nl = document.getElementById("newline"), nNew = ITEMS.filter(i => live(i) && isNew(i)).length;
     const showNl = !firstVisit && nNew > 0; nl.classList.toggle("off", !showNl); nl.textContent = showNl ? t("sinceLast")(nNew) : "\u00a0";
     document.getElementById("list").innerHTML = rows.map(i =>
-      `<li class="lr"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm">${fmt(i.posted)}</span><span class="t" title="${esc(title(i))}">${isNew(i) ? `<span class="new" title="${t("newBadge")}" aria-label="${t("newBadge")}"></span>` : ""}${esc(title(i))}</span><span class="hide-sm g">${org(i)}</span><span class="hide-sm g">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
+      `<li class="lr${isNew(i) ? " fresh" : ""}"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm">${fmt(i.posted)}</span><span class="t" title="${esc(title(i))}">${isNew(i) ? `<span class="new" title="${t("newBadge")}" aria-label="${t("newBadge")}"></span>` : ""}${esc(title(i))}</span><span class="hide-sm g">${org(i)}</span><span class="hide-sm g">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
     ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
   }
   // Keyboard: ↓ / ↑ move through the results while searching, Enter opens the highlighted one.
@@ -452,8 +471,10 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     lang = lang === "hi" ? "en" : "hi";
     try { localStorage.setItem("sc-lang", lang); } catch (e) {}
     applyLang();
+    moveInk(true);
   });
   applyLang();
+  moveInk(true);
 
   // "Clear" appears only while there is text in the search line.
   const kHint = document.getElementById("kHint"), qIn = document.getElementById("q");
