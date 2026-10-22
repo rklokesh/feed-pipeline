@@ -207,6 +207,10 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
 .strip-x::after { content: ""; position: absolute; inset: -7px; }
 @media (max-width: 640px) { .strip { justify-content: flex-start; gap: 10px; padding: 7px 46px 7px 16px; font-size: .875rem; } }
 @media print { .strip { display: none !important; } }
+/* Full-title tooltip for cut-off notice titles: same look as the days-left tooltip, but floats above the row so it is never clipped */
+.ftip { position: fixed; z-index: 20; max-width: min(640px, calc(100vw - 32px)); font-size: .8125rem; line-height: 1.3; padding: 4px 8px; border-radius: 5px;
+  background: var(--grey); color: var(--page); pointer-events: none; opacity: 0; transform: translateY(3px); transition: opacity .12s ease, transform .12s ease; }
+.ftip.on { opacity: 1; transform: none; transition-delay: 60ms; }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -501,7 +505,7 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
     const nl = document.getElementById("newline"), nNew = ITEMS.filter(i => live(i) && isNew(i)).length;
     const showNl = !firstVisit && nNew > 0; nl.classList.toggle("off", !showNl); nl.textContent = showNl ? t("sinceLast")(nNew) : "\u00a0";
     document.getElementById("list").innerHTML = rows.slice(0, shown).map(i =>
-      `<li class="lr${isNew(i) ? " fresh" : ""}"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm"><span class="pc"><span>${fmt(i.posted)}</span><span>${isNew(i) ? `<span class="newtag">${t("newBadge")}</span>` : ""}</span></span></span><span class="t" title="${esc(title(i))}">${isNew(i) ? `<span class="newtag show-sm">${t("newBadge")}</span>` : ""}${esc(title(i))}</span><span class="hide-sm g">${org(i)}</span><span class="hide-sm g">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
+      `<li class="lr${isNew(i) ? " fresh" : ""}"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm"><span class="pc"><span>${fmt(i.posted)}</span><span>${isNew(i) ? `<span class="newtag">${t("newBadge")}</span>` : ""}</span></span></span><span class="t" data-full="${esc(title(i))}">${isNew(i) ? `<span class="newtag show-sm">${t("newBadge")}</span>` : ""}${esc(title(i))}</span><span class="hide-sm g">${org(i)}</span><span class="hide-sm g">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
     ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
     // One long page, revealed 50 rows at a time (no "page 2"): Ctrl+F, search and the back button keep working.
     const more = document.getElementById("more");
@@ -529,6 +533,22 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
   });
   matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", paintTheme);
   document.getElementById("more").addEventListener("click", e => { if (!e.target.closest("#moreBtn")) return; shown += PAGE; render(); });
+  // Show the complete heading when a notice title is cut off (…), in the same tooltip style as the dates
+  const ftip = document.createElement("div"); ftip.className = "ftip"; ftip.setAttribute("aria-hidden", "true"); document.body.appendChild(ftip);
+  let ftipFor = null;
+  document.getElementById("list").addEventListener("mouseover", e => {
+    const t = e.target.closest(".t[data-full]");
+    if (t === ftipFor) return;
+    ftipFor = t; ftip.classList.remove("on");
+    if (!t || t.scrollWidth <= t.clientWidth + 1) return;
+    ftip.textContent = t.dataset.full;
+    const r = t.getBoundingClientRect();
+    ftip.style.left = Math.max(16, Math.min(r.left, innerWidth - ftip.offsetWidth - 16)) + "px";
+    ftip.style.top = (r.top - ftip.offsetHeight - 6) + "px";
+    requestAnimationFrame(() => ftip.classList.add("on"));
+  });
+  document.getElementById("list").addEventListener("mouseleave", () => { ftipFor = null; ftip.classList.remove("on"); });
+  addEventListener("scroll", () => { ftipFor = null; ftip.classList.remove("on"); }, { passive: true });
   // The whole row is the link: a tap anywhere on the row (gaps included) opens the notice; the PDF icon keeps its own job.
   document.getElementById("list").addEventListener("click", e => {
     if (e.target.closest("a")) return;
