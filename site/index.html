@@ -164,7 +164,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 
 /* Easy to hit: every link and button gets an invisible touch area larger than its text (about 44px tall),
    without changing the layout. Neighbouring areas meet halfway so they never overlap. */
-.tabs button, .nav-r a, .nav-r button, .list a.pdf, .sx, footer a, .crumbs a, .hit { position: relative; }
+.tabs button, .nav-r a, .nav-r button, .list a.pdf, footer a, .crumbs a, .hit { position: relative; }
 .tabs button::after, .nav-r a::after, .nav-r button::after, .list a.pdf::after, .sx::after, footer a::after, .crumbs a::after, .hit::after {
   content: ""; position: absolute; inset: -12px -9px; }
 footer a::after, .crumbs a::after { inset: -10px -5px; }
