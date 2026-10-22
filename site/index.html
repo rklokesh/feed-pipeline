@@ -171,9 +171,10 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
 /* Rotating search hint: the newest notices take turns after "Search:"; the real placeholder stays for screen readers */
 .search.rot input::placeholder { color: transparent; }
 .ph { position: absolute; left: 28px; right: 100px; top: 50%; transform: translateY(-50%); color: var(--grey); pointer-events: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.ph-word { display: inline-block; transition: opacity .35s ease, transform .35s ease; }
-.ph-word.out { opacity: 0; transform: translateY(-6px); }
-.ph-word.pre { opacity: 0; transform: translateY(6px); transition: none; }
+.ph-word { white-space: pre; }
+.ph-caret { display: inline-block; width: 1px; height: 1.05em; margin-left: 1px; vertical-align: -0.15em; background: var(--grey); animation: caret 1s steps(1) infinite; }
+@keyframes caret { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .ph-caret { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 </head>
@@ -200,7 +201,7 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
     <label class="search" for="q"><span style="position:absolute;left:-9999px" data-t="searchLabel">Search notices</span>
       <svg class="sicon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 20.5 20.5"/></svg>
       <input id="q" type="search" placeholder="Search: SSC, UGC NET, 12th pass, Bihar…" autocomplete="off" data-t-ph="searchPh">
-      <span class="ph" id="ph" aria-hidden="true" hidden><span class="ph-lead"></span><span class="ph-word"></span></span>
+      <span class="ph" id="ph" aria-hidden="true" hidden><span class="ph-lead"></span><span class="ph-word"></span><span class="ph-caret"></span></span>
       <button type="button" class="sx" id="kHint" hidden><span data-t="clear">Clear</span><kbd class="kc" aria-hidden="true">Esc</kbd></button>
     </label>
     <p class="newline off" id="newline" aria-live="polite">&nbsp;</p>
@@ -472,23 +473,30 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
     const extra = lang === "hi" ? ["12वीं पास", "बिहार", "एसएससी"] : ["12th pass", "Bihar", "SSC"];
     return [...new Set([...fresh, ...extra])];
   };
-  let phI = 0, phTimer = null;
+  // Typewriter: types a name, pauses, erases it, types the next.
+  let phI = 0, phN = 0, phDel = false, phTimer = null;
+  const SEG = window.Intl && Intl.Segmenter ? new Intl.Segmenter(undefined, { granularity: "grapheme" }) : null;
+  const chars = w => SEG ? [...SEG.segment(w)].map(x => x.segment) : [...w];   // whole Hindi syllables, not half letters
+  const STILL = matchMedia("(prefers-reduced-motion: reduce)").matches;
   function phShow() {
     const empty = !document.getElementById("q").value;
     phEl.hidden = !empty; searchBox.classList.toggle("rot", empty);
     phEl.querySelector(".ph-lead").textContent = t("phLead");
-    const w = phWords(); phWord.textContent = w[phI % w.length];
+    const w = phWords()[phI % phWords().length];
+    phWord.textContent = STILL ? w : chars(w).slice(0, phN).join("");
   }
-  function phNext() {
-    if (document.getElementById("q").value || document.hidden) return;
-    phWord.classList.add("out");
-    setTimeout(() => {
-      phI++; phShow(); phWord.classList.remove("out"); phWord.classList.add("pre");
-      requestAnimationFrame(() => requestAnimationFrame(() => phWord.classList.remove("pre")));
-    }, 350);
+  function phTick() {
+    clearTimeout(phTimer);
+    if (document.getElementById("q").value || document.hidden) { phTimer = setTimeout(phTick, 600); return; }
+    const w = chars(phWords()[phI % phWords().length]);
+    let wait = 70 + Math.random() * 50;                  // human-ish typing
+    if (!phDel) { phN++; if (phN >= w.length) { phN = w.length; phDel = true; wait = 1700; } }
+    else { phN--; wait = 28; if (phN <= 0) { phN = 0; phDel = false; phI++; wait = 350; } }
+    phShow();
+    phTimer = setTimeout(phTick, wait);
   }
   document.getElementById("q").addEventListener("input", phShow);
-  if (!matchMedia("(prefers-reduced-motion: reduce)").matches) phTimer = setInterval(phNext, 2600);
+  if (!STILL) phTimer = setTimeout(phTick, 500);
   function applyLang() {
     document.documentElement.lang = lang;
     document.title = t("title");
