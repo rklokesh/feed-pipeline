@@ -18,7 +18,7 @@
 /* Layout: nav line, one ruled table, footer. Nothing else. One typeface, one size, two inks. */
 :root {
   --page: #FFFFFF;
-  --ink: #1D1C1B;
+  --ink: #36322D;
   --grey: #76726B;
   --line: #E5E1D8;
   --soft: #F4F1EB;
@@ -168,6 +168,12 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   content: ""; position: absolute; inset: -12px -9px; }
 footer a::after, .crumbs a::after { inset: -10px -5px; }
 .list li.lr { cursor: pointer; }
+/* Rotating search hint: the newest notices take turns after "Search:"; the real placeholder stays for screen readers */
+.search.rot input::placeholder { color: transparent; }
+.ph { position: absolute; left: 28px; right: 100px; top: 50%; transform: translateY(-50%); color: var(--grey); pointer-events: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ph-word { display: inline-block; transition: opacity .35s ease, transform .35s ease; }
+.ph-word.out { opacity: 0; transform: translateY(-6px); }
+.ph-word.pre { opacity: 0; transform: translateY(6px); transition: none; }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 </head>
@@ -194,6 +200,7 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
     <label class="search" for="q"><span style="position:absolute;left:-9999px" data-t="searchLabel">Search notices</span>
       <svg class="sicon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 20.5 20.5"/></svg>
       <input id="q" type="search" placeholder="Search: SSC, UGC NET, 12th pass, Bihar…" autocomplete="off" data-t-ph="searchPh">
+      <span class="ph" id="ph" aria-hidden="true" hidden><span class="ph-lead"></span><span class="ph-word"></span></span>
       <button type="button" class="sx" id="kHint" hidden><span data-t="clear">Clear</span><kbd class="kc" aria-hidden="true">Esc</kbd></button>
     </label>
     <p class="newline off" id="newline" aria-live="polite">&nbsp;</p>
@@ -215,7 +222,7 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
     en: {
       title: "SarkariChart", brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", about: "About", show: "Show",
       all: "All", jobs: "Jobs", soon: "Closing soon", prefSrc: "Add SarkariChart as a preferred source on Google", admits: "Admit cards", results: "Results", keys: "Answer keys",
-      searchLabel: "Search notices", searchPh: "Search: SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
+      searchLabel: "Search notices", phLead: "Search: ", searchPh: "Search: SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
       hPosted: "Posted", hNotice: "Notice", hOrg: "Organisation", hType: "Type", hLast: "Last date", nil: "NIL", hPdf: "PDF",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
       report: "Report a mistake", privacy: "Privacy", switchTo: "हिंदी", toDark: "Switch to dark mode", toLight: "Switch to light mode", switchLang: "hi",
@@ -229,7 +236,7 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
     hi: {
       title: "सरकारी चार्ट", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में", show: "दिखाएँ",
       all: "सभी", jobs: "नौकरियाँ", soon: "जल्द बंद", prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की",
-      searchLabel: "सूचनाएँ खोजें", searchPh: "खोजें: एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
+      searchLabel: "सूचनाएँ खोजें", phLead: "खोजें: ", searchPh: "खोजें: एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
       hPosted: "जारी", hNotice: "सूचना", hOrg: "संस्था", hType: "प्रकार", hLast: "अंतिम तिथि", nil: "निरंक", hPdf: "पीडीएफ",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
       report: "गलती बताएँ", privacy: "गोपनीयता", switchTo: "अंग्रेज़ी", toDark: "गहरा रंग चुनें", toLight: "हल्का रंग चुनें", switchLang: "en",
@@ -456,6 +463,32 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
     const a = li.querySelector("a.row"); if (!a) return;
     if (e.metaKey || e.ctrlKey) window.open(a.href, "_blank", "noopener"); else a.click();
   });
+  // Rotating hint inside the empty search box: short names of the newest live notices, then a few everyday searches.
+  // Stops the moment someone types; stays still for people who prefer reduced motion.
+  const phEl = document.getElementById("ph"), phWord = phEl.querySelector(".ph-word"), searchBox = document.querySelector(".search");
+  const shortName = i => { const w = (lang === "hi" ? i.hi : i.title).replace(/[,(].*$/, "").trim().split(/\s+/); return w.slice(0, 3).join(" "); };
+  const phWords = () => {
+    const fresh = ITEMS.filter(i => live(i) && !i.quiet).sort((a, b) => pubTime(b) - pubTime(a)).slice(0, 5).map(shortName);
+    const extra = lang === "hi" ? ["12वीं पास", "बिहार", "एसएससी"] : ["12th pass", "Bihar", "SSC"];
+    return [...new Set([...fresh, ...extra])];
+  };
+  let phI = 0, phTimer = null;
+  function phShow() {
+    const empty = !document.getElementById("q").value;
+    phEl.hidden = !empty; searchBox.classList.toggle("rot", empty);
+    phEl.querySelector(".ph-lead").textContent = t("phLead");
+    const w = phWords(); phWord.textContent = w[phI % w.length];
+  }
+  function phNext() {
+    if (document.getElementById("q").value || document.hidden) return;
+    phWord.classList.add("out");
+    setTimeout(() => {
+      phI++; phShow(); phWord.classList.remove("out"); phWord.classList.add("pre");
+      requestAnimationFrame(() => requestAnimationFrame(() => phWord.classList.remove("pre")));
+    }, 350);
+  }
+  document.getElementById("q").addEventListener("input", phShow);
+  if (!matchMedia("(prefers-reduced-motion: reduce)").matches) phTimer = setInterval(phNext, 2600);
   function applyLang() {
     document.documentElement.lang = lang;
     document.title = t("title");
@@ -465,6 +498,7 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
     document.querySelectorAll("[data-t-alt]").forEach(el => el.alt = t(el.dataset.tAlt));
     const btn = document.getElementById("lang");
     btn.textContent = t("switchTo"); btn.lang = t("switchLang");
+    phShow();
     paintTheme();
     render();
   }
