@@ -57,7 +57,19 @@ def _aia_bundle(host: str) -> str | None:
         from cryptography.hazmat.primitives.serialization import Encoding
         from cryptography.x509.oid import AuthorityInformationAccessOID, ExtensionOID
 
-        pem = ssl.get_server_certificate((host, 443), timeout=TIMEOUT)
+        # Read the server's own certificate only to find its issuer link; the chain is verified afterwards.
+        import socket
+        rc = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+        rc.check_hostname = False
+        rc.verify_mode = ssl.CERT_NONE
+        rc.options |= getattr(ssl, "OP_LEGACY_SERVER_CONNECT", 0x4)
+        try:
+            rc.set_ciphers("DEFAULT:@SECLEVEL=1")
+        except ssl.SSLError:
+            pass
+        with socket.create_connection((host, 443), timeout=TIMEOUT) as sock:
+            with rc.wrap_socket(sock, server_hostname=host) as tls:
+                pem = ssl.DER_cert_to_PEM_cert(tls.getpeercert(binary_form=True))
         cert = x509.load_pem_x509_certificate(pem.encode())
         extra: list[bytes] = []
         for _ in range(3):  # walk up to three intermediates

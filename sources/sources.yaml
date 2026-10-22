@@ -35,13 +35,13 @@ sources:
     runner: github
   - id: rrb-cdg
     org: RRB Chandigarh
-    url: https://www.rrbcdg.gov.in/
+    url: https://rrbcdg.gov.in/
     render: static
     runner: india
   - id: rrb-unified
     org: RRB (unified portal)
     url: https://rrb.indianrailways.gov.in/
-    render: static
+    render: js
     runner: india
 
   # ---- Banks & financial ----
@@ -53,7 +53,7 @@ sources:
   - id: rbi-opportunities
     org: RBI
     url: https://opportunities.rbi.org.in/Scripts/Vacancies.aspx
-    render: static
+    render: js
     runner: india
   - id: nabard-careers
     org: NABARD
@@ -70,7 +70,7 @@ sources:
   - id: army-home
     org: Indian Army
     url: https://joinindianarmy.nic.in/
-    render: static
+    render: js
     runner: india
   - id: navy-home
     org: Indian Navy
@@ -85,7 +85,7 @@ sources:
   - id: coast-guard
     org: Indian Coast Guard
     url: https://joinindiancoastguard.cdac.in/
-    render: static
+    render: js
     runner: india
   - id: bsf-recruitment
     org: BSF
@@ -94,7 +94,7 @@ sources:
     runner: india
   - id: crpf-recruitment
     org: CRPF
-    url: https://crpf.gov.in/recruitment.htm  # moved: redirects to crpf.mha.gov.in (404) - find new page
+    url: https://rectt.crpf.gov.in/  # CRPF recruitment portal (old crpf.gov.in/recruitment.htm is 404)
     render: static
     runner: india
   - id: itbp-recruitment
@@ -106,7 +106,7 @@ sources:
   # ---- Research / PSU ----
   - id: drdo-careers
     org: DRDO
-    url: https://www.drdo.gov.in/drdo/careers
+    url: https://rac.gov.in/  # DRDO Recruitment & Assessment Centre (old careers page is 404)
     render: static
     runner: india
   - id: isro-careers
@@ -165,14 +165,14 @@ sources:
   - id: ukpsc-home
     org: UKPSC
     url: https://psc.uk.gov.in/
-    render: static
+    render: js
     runner: india
 
   # ---- Aggregated official sources ----
   - id: employment-news
     org: Employment News
     url: https://employmentnews.gov.in/
-    render: static
+    render: js
     runner: india
   - id: ncs-home
     org: NCS
