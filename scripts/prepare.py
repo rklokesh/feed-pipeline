@@ -154,6 +154,17 @@ def main():
     if todo or waiting:
         ensure_labels()
     published = 0
+    # tidy: every auto-published notice's issue must be closed and labelled `auto-published` (retries earlier failures)
+    for f in files:
+        n = json.loads(f.read_text())
+        if n.get("auto_published") and n.get("issue") and not n.get("issue_tidy"):
+            ensure_labels()
+            a = gh("PUT", f"/issues/{n['issue']}/labels", json={"labels": ["auto-published"]})
+            b = gh("PATCH", f"/issues/{n['issue']}", json={"state": "closed", "state_reason": "completed"})
+            print(f"  tidy issue #{n['issue']}: labels {'ok' if a is not None else 'FAILED'}, close {'ok' if b else 'FAILED'}")
+            if a is not None and b:
+                n["issue_tidy"] = True
+                f.write_text(json.dumps(n, ensure_ascii=False, indent=2, sort_keys=True))
     # cards that were waiting for a human before auto-publish was switched on
     for f, n in waiting:
         go_live(n)
@@ -161,8 +172,9 @@ def main():
         if n.get("issue"):
             gh("POST", f"/issues/{n['issue']}/comments", json={"body": "Auto-published: live on the site now. "
                "Add **reject** to take it down, or comment a fix and add **approve**."})
-            gh("PUT", f"/issues/{n['issue']}/labels", json={"labels": ["auto-published"]})
-            gh("PATCH", f"/issues/{n['issue']}", json={"state": "closed"})
+            if gh("PUT", f"/issues/{n['issue']}/labels", json={"labels": ["auto-published"]}) is not None and \
+                    gh("PATCH", f"/issues/{n['issue']}", json={"state": "closed", "state_reason": "completed"}):
+                n["issue_tidy"] = True
         f.write_text(json.dumps(n, ensure_ascii=False, indent=2, sort_keys=True))
         print(f"  {n['id']}: auto-published (was waiting)")
     limit = int(os.environ.get("PREPARE_LIMIT", "40"))
@@ -187,8 +199,8 @@ def main():
                 "body": issue_body(n, card, auto), "labels": ["auto-published" if auto else "review"]})
             if iss:
                 n["issue"] = iss["number"]
-                if auto:
-                    gh("PATCH", f"/issues/{iss['number']}", json={"state": "closed"})
+                if auto and gh("PATCH", f"/issues/{iss['number']}", json={"state": "closed", "state_reason": "completed"}):
+                    n["issue_tidy"] = True
             print(f"  {n['id']}: {card.get('type')} | {card.get('title_en')} | {'LIVE' if auto else 'review'} | issue {n.get('issue')}")
         f.write_text(json.dumps(n, ensure_ascii=False, indent=2, sort_keys=True))
     out = os.environ.get("GITHUB_OUTPUT")
