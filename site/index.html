@@ -80,8 +80,9 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 
 .top { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; padding-bottom: 6px; }
 .top .logo { display: block; line-height: 0; }
-.top .logo img { width: 112px; height: 112px; display: block; }
+.top .logo img, .top .logo .mark { width: 112px; height: 112px; display: block; }
 .top .logo:hover { text-decoration: none; }
+.top .logo .mark { color: var(--ink); }
 .nav-r { display: flex; justify-content: flex-end; align-items: center; gap: 18px; }
 .themeb { display: inline-flex; color: var(--grey); }
 .top .themeb:hover { color: var(--ink); text-decoration: none; }
@@ -149,7 +150,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 @media (max-width: 640px) {
   .top { grid-template-columns: 1fr auto 1fr; }
   .top > .g { font-size: 0.875rem; }
-  .top .logo img { width: 88px; height: 88px; }
+  .top .logo img, .top .logo .mark { width: 88px; height: 88px; }
   .hide-sm { display: none; }
   .list .pdf.hide-sm { display: none; }
   .show-sm { display: inline; }
@@ -176,7 +177,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 <div class="sheet">
   <header class="top">
     <span class="g" data-t="tagline">Govt jobs, exams, results</span>
-    <a class="logo" href="/" data-t-aria="home"><img src="/logo-256.png" width="112" height="112" alt="SarkariChart" data-t-alt="brand"></a>
+    <a class="logo" href="/" data-t-aria="home"><svg class="mark" viewBox="-100 -100 200 200" width="112" height="112" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="SarkariChart"><circle cx="0" cy="0" r="92"/><circle cx="0" cy="0" r="80"/><line x1="0" y1="-80" x2="0" y2="-92"/><line x1="20.71" y1="-77.27" x2="23.81" y2="-88.87"/><line x1="40" y1="-69.28" x2="46" y2="-79.67"/><line x1="56.57" y1="-56.57" x2="65.05" y2="-65.05"/><line x1="69.28" y1="-40" x2="79.67" y2="-46"/><line x1="77.27" y1="-20.71" x2="88.87" y2="-23.81"/><line x1="80" y1="0" x2="92" y2="0"/><line x1="77.27" y1="20.71" x2="88.87" y2="23.81"/><line x1="69.28" y1="40" x2="79.67" y2="46"/><line x1="56.57" y1="56.57" x2="65.05" y2="65.05"/><line x1="40" y1="69.28" x2="46" y2="79.67"/><line x1="20.71" y1="77.27" x2="23.81" y2="88.87"/><line x1="0" y1="80" x2="0" y2="92"/><line x1="-20.71" y1="77.27" x2="-23.81" y2="88.87"/><line x1="-40" y1="69.28" x2="-46" y2="79.67"/><line x1="-56.57" y1="56.57" x2="-65.05" y2="65.05"/><line x1="-69.28" y1="40" x2="-79.67" y2="46"/><line x1="-77.27" y1="20.71" x2="-88.87" y2="23.81"/><line x1="-80" y1="0" x2="-92" y2="0"/><line x1="-77.27" y1="-20.71" x2="-88.87" y2="-23.81"/><line x1="-69.28" y1="-40" x2="-79.67" y2="-46"/><line x1="-56.57" y1="-56.57" x2="-65.05" y2="-65.05"/><line x1="-40" y1="-69.28" x2="-46" y2="-79.67"/><line x1="-20.71" y1="-77.27" x2="-23.81" y2="-88.87"/><path transform="translate(0 40) rotate(0)" d="M0 0 C 30 -23.75 27 -66.5 0 -95 C -27 -66.5 -30 -23.75 0 0 Z"/><path transform="translate(0 40) rotate(-28)" d="M0 0 C 24 -21.25 21.6 -59.49999999999999 0 -85 C -21.6 -59.49999999999999 -24 -21.25 0 0 Z"/><path transform="translate(0 40) rotate(28)" d="M0 0 C 24 -21.25 21.6 -59.49999999999999 0 -85 C -21.6 -59.49999999999999 -24 -21.25 0 0 Z"/><path transform="translate(0 40) rotate(-58)" d="M0 0 C 20 -17 18 -47.599999999999994 0 -68 C -18 -47.599999999999994 -20 -17 0 0 Z"/><path transform="translate(0 40) rotate(58)" d="M0 0 C 20 -17 18 -47.599999999999994 0 -68 C -18 -47.599999999999994 -20 -17 0 0 Z"/><path d="M-66 40 Q0 80 66 40"/><line x1="0" y1="60" x2="0" y2="80"/></svg></a>
     <span class="nav-r"><a href="#" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
