@@ -1,6 +1,6 @@
 name: Publish approved notices
 
-# You add the "approve" or "reject" label to a review issue -> this records the decision, writes a clean
+# Notices go live automatically (prepare.yml). You add "reject" to take one down, or "approve" after commenting a fix -> this records the decision, writes a clean
 # notice page for each approved notice (AI reads the official PDF + your comments), rebuilds the homepage and deploys.
 on:
   issues:
@@ -35,7 +35,12 @@ jobs:
       - name: Record decisions (this one and any others labelled meanwhile)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/publish.py sweep
+        run: |
+          # the issue you just labelled (works on closed auto-published issues too), then any others
+          if [ "${{ github.event_name }}" = "issues" ]; then
+            python scripts/publish.py decide ${{ github.event.issue.number }} ${{ github.event.label.name }} || true
+          fi
+          python scripts/publish.py sweep
       - name: Write notice pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

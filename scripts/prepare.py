@@ -1,4 +1,10 @@
-"""Step 2 of the pipeline: turn each raw notice into a clean listing card, then ask a human to approve it.
+"""Step 2 of the pipeline: turn each raw notice into a clean listing card and publish it.
+
+AUTO-PUBLISH (default, AUTO_PUBLISH=1): every listable card from an official board goes live straight away.
+A closed GitHub issue labelled "auto-published" is kept as the record; adding the "reject" label to it takes the
+notice down, and commenting a fix ("last date is 30 Nov") then adding "approve" rewrites it with your fix.
+Only cards the AI itself marks "low" confidence wait for a human (label "review").
+
 
 For every notice with status "pending_review" and no card yet:
   1. AI writes a card: clean English + Hindi titles, category, last date, short summaries, key facts,
@@ -102,13 +108,17 @@ def gh(method: str, path: str, **kw):
     return r.json()
 
 
+AUTO = os.environ.get("AUTO_PUBLISH", "1") == "1"
+
+
 def ensure_labels():
     for name, color, desc in (("review", "c9b38a", "Waiting for your OK"), ("approve", "2f7d4f", "Publish this notice"),
-                              ("reject", "b23a1a", "Do not publish")):
+                              ("reject", "b23a1a", "Do not publish / take down"),
+                              ("auto-published", "6f8fb0", "Went live automatically; add reject to take it down")):
         gh("POST", "/labels", json={"name": name, "color": color, "description": desc})
 
 
-def issue_body(n: dict, c: dict) -> str:
+def issue_body(n: dict, c: dict, auto: bool = False) -> str:
     rows = [("Category", c.get("type")), ("Title (English)", c.get("title_en")), ("Title (Hindi)", c.get("title_hi")),
             ("Board", n.get("org")), ("Posts", c.get("posts")), ("Vacancies", c.get("vacancies")),
             ("Last date", c.get("last_date")), ("Exam date", c.get("exam_date")), ("AI confidence", c.get("confidence"))]
@@ -116,21 +126,45 @@ def issue_body(n: dict, c: dict) -> str:
     return (f"**{c.get('summary_en','')}**\n\n{c.get('summary_hi','')}\n\n| Field | Value |\n|---|---|\n{t}\n\n"
             f"Official notice: {n.get('url')}\nBoard page: {n.get('board_url')}\n"
             f"Board's own title: `{n.get('title')}`\n\n"
-            "---\nTo publish: add the **approve** label. To drop it: add **reject**. "
-            "To fix a field, comment e.g. `title_en: ...` or `last_date: 2026-11-30` before approving.\n"
+            + ("---\n**Already live on the site.** To take it down: add the **reject** label. "
+               "To fix something: comment in plain words (e.g. `last date is 30 Nov`, `vacancies 1,200`), then add **approve**.\n"
+               if auto else
+               "---\nTo publish: add the **approve** label. To drop it: add **reject**. "
+               "To fix a field, comment e.g. `title_en: ...` or `last_date: 2026-11-30` before approving.\n")
+            +
             f"<!-- notice-id: {n['id']} -->")
+
+
+def go_live(n: dict) -> None:
+    n["status"] = "approved"
+    n["auto_published"] = True
+    n["published_at"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
 
 
 def main():
     files = sorted(NOTICES.glob("*.json"))
-    todo = []
+    todo, waiting = [], []
     for f in files:
         n = json.loads(f.read_text())
         if n.get("status") == "pending_review" and not n.get("card"):
             todo.append((f, n))
-    print(f"{len(todo)} notices need a card")
-    if todo:
+        elif AUTO and n.get("status") == "in_review" and (n.get("card") or {}).get("confidence") != "low":
+            waiting.append((f, n))
+    print(f"{len(todo)} notices need a card; {len(waiting)} older review cards to auto-publish")
+    if todo or waiting:
         ensure_labels()
+    published = 0
+    # cards that were waiting for a human before auto-publish was switched on
+    for f, n in waiting:
+        go_live(n)
+        published += 1
+        if n.get("issue"):
+            gh("POST", f"/issues/{n['issue']}/comments", json={"body": "Auto-published: live on the site now. "
+               "Add **reject** to take it down, or comment a fix and add **approve**."})
+            gh("PUT", f"/issues/{n['issue']}/labels", json={"labels": ["auto-published"]})
+            gh("PATCH", f"/issues/{n['issue']}", json={"state": "closed"})
+        f.write_text(json.dumps(n, ensure_ascii=False, indent=2, sort_keys=True))
+        print(f"  {n['id']}: auto-published (was waiting)")
     limit = int(os.environ.get("PREPARE_LIMIT", "40"))
     for f, n in todo[:limit]:
         card, how = ai_card(n)
@@ -142,14 +176,26 @@ def main():
             n["status"] = "skipped"
             print(f"  {n['id']}: skipped - {card.get('skip_reason')}")
         else:
-            n["status"] = "in_review"
+            auto = AUTO and card.get("confidence") != "low"
+            if auto:
+                go_live(n)
+                published += 1
+            else:
+                n["status"] = "in_review"
             iss = gh("POST", "/issues", json={
                 "title": f"{n.get('org')} · {card.get('title_en')} ({card.get('type')})",
-                "body": issue_body(n, card), "labels": ["review"]})
+                "body": issue_body(n, card, auto), "labels": ["auto-published" if auto else "review"]})
             if iss:
                 n["issue"] = iss["number"]
-            print(f"  {n['id']}: {card.get('type')} | {card.get('title_en')} | issue {n.get('issue')}")
+                if auto:
+                    gh("PATCH", f"/issues/{iss['number']}", json={"state": "closed"})
+            print(f"  {n['id']}: {card.get('type')} | {card.get('title_en')} | {'LIVE' if auto else 'review'} | issue {n.get('issue')}")
         f.write_text(json.dumps(n, ensure_ascii=False, indent=2, sort_keys=True))
+    out = os.environ.get("GITHUB_OUTPUT")
+    if out:
+        with open(out, "a") as fh:
+            fh.write(f"published={published}\n")
+    print(f"{published} notices went live")
 
 
 if __name__ == "__main__":

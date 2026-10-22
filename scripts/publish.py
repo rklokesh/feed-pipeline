@@ -14,6 +14,7 @@ import json
 import os
 import pathlib
 import re
+import shutil
 import sys
 
 import requests
@@ -27,7 +28,12 @@ EDITABLE = {"title_en", "title_hi", "type", "last_date", "exam_date", "posts", "
 TYPES = {"job": "Job", "result": "Result", "admit card": "Admit card", "answer key": "Answer key"}
 ORG_HI = {"NTA": "एनटीए", "SSC": "एसएससी", "UPPSC": "यूपीपीएससी", "BPSC": "बीपीएससी", "SBI": "एसबीआई", "IBPS": "आईबीपीएस",
           "ISRO": "इसरो", "UPSC": "यूपीएससी", "RRB": "आरआरबी", "LIC": "एलआईसी", "BSSC": "बीएसएससी", "UPSSSC": "यूपीएसएसएससी",
-          "RPSC": "आरपीएससी", "MPPSC": "एमपीपीएससी", "DSSSB": "डीएसएसएसबी", "NCS": "एनसीएस"}
+          "RPSC": "आरपीएससी", "MPPSC": "एमपीपीएससी", "DSSSB": "डीएसएसएसबी", "NCS": "एनसीएस",
+          "RRB Chandigarh": "आरआरबी चंडीगढ़", "RRB (unified portal)": "आरआरबी", "RBI": "आरबीआई", "NABARD": "नाबार्ड",
+          "Indian Army": "भारतीय सेना", "Indian Navy": "भारतीय नौसेना", "Indian Air Force": "भारतीय वायुसेना",
+          "Indian Coast Guard": "भारतीय तटरक्षक बल", "BSF": "बीएसएफ", "CRPF": "सीआरपीएफ", "ITBP": "आईटीबीपी",
+          "DRDO": "डीआरडीओ", "RSSB Rajasthan": "आरएसएसबी राजस्थान", "MPESB": "एमपीईएसबी", "UKPSC": "यूकेपीएससी",
+          "Employment News": "रोज़गार समाचार"}
 
 
 def gh(method, path, **kw):
@@ -71,12 +77,17 @@ def decide(number: int, action: str):
     n.setdefault("card", {}).update(fixes)
     now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
     if action == "approve":
+        if n.get("status") == "approved":
+            # already live (auto-published): re-write its page so your comments are applied; keep its place in the list
+            n.pop("page", None)
+        else:
+            n["published_at"] = now.isoformat().replace("+00:00", "Z")
         n["status"] = "approved"
-        n["published_at"] = now.isoformat().replace("+00:00", "Z")
         msg = "Published. It will be on the site in about a minute." + (f" Corrections applied: {', '.join(fixes)}." if fixes else "")
     else:
+        was_live = n.get("status") == "approved"
         n["status"] = "rejected"
-        msg = "Rejected: it will not be published."
+        msg = "Taken down: it is no longer on the site." if was_live else "Rejected: it will not be published."
     f.write_text(json.dumps(n, ensure_ascii=False, indent=2, sort_keys=True))
     gh("POST", f"/issues/{number}/comments", json={"body": msg})
     gh("PATCH", f"/issues/{number}", json={"state": "closed"})
@@ -88,6 +99,10 @@ def build():
     for f in sorted(NOTICES.glob("*.json")):
         n = json.loads(f.read_text())
         if n.get("status") != "approved":
+            page = ROOT / "site" / "notice" / n["slug"] if n.get("slug") else None
+            if page and page.is_dir():   # taken down: remove its page too
+                shutil.rmtree(page)
+                print(f"removed page {n['slug']}")
             continue
         c = n.get("card") or {}
         pub = n.get("published_at") or n.get("first_seen")
