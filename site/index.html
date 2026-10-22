@@ -148,6 +148,11 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   .show-sm { display: inline; }
   .row, .list li.lr { grid-template-columns: minmax(0, 1fr) 5.5rem; }
 }
+/* Recent searches: small grey chips, clearly a helper and not part of the table */
+.recent { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: -30px 0 18px; font-size: .8125rem; }
+.recent .rl { color: color-mix(in srgb, var(--grey) 75%, var(--page)); margin-right: 2px; }
+.recent button { all: unset; cursor: pointer; color: var(--grey); background: var(--soft); border-radius: 999px; padding: 2px 10px; line-height: 1.5; transition: color .15s ease, background .15s ease; }
+.recent button:hover, .recent button:focus-visible { color: var(--ink); background: color-mix(in srgb, var(--ink) 8%, var(--page)); }
 </style>
 </head>
 <body>
@@ -175,6 +180,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       <input id="q" type="search" placeholder="Search: SSC, UGC NET, 12th pass, Bihar…" autocomplete="off" data-t-ph="searchPh">
       <button type="button" class="sx" id="kHint" hidden data-t="clear">Clear</button>
     </label>
+    <div class="recent" id="recent" hidden></div>
     <p class="newline off" id="newline" aria-live="polite">&nbsp;</p>
     <div class="row head"><span class="hide-sm" data-t="hPosted">Posted</span><span data-t="hNotice">Notice</span><span class="hide-sm" data-t="hOrg">Organisation</span><span class="hide-sm" data-t="hType">Type</span><span data-t="hLast">Last date</span><span class="hide-sm" data-t="hPdf">PDF</span></div>
     <ul class="list" id="list"></ul>
@@ -194,7 +200,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     en: {
       title: "SarkariChart", brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", about: "About", show: "Show",
       all: "All", jobs: "Jobs", soon: "Closing soon", prefSrc: "Add SarkariChart as a preferred source on Google", admits: "Admit cards", results: "Results", keys: "Answer keys",
-      searchLabel: "Search notices", searchPh: "Search: SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
+      searchLabel: "Search notices", recentLabel: "Recent", searchPh: "Search: SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
       hPosted: "Posted", hNotice: "Notice", hOrg: "Organisation", hType: "Type", hLast: "Last date", nil: "NIL", hPdf: "PDF",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
       report: "Report a mistake", privacy: "Privacy", switchTo: "हिंदी", switchLang: "hi",
@@ -208,7 +214,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     hi: {
       title: "सरकारी चार्ट", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में", show: "दिखाएँ",
       all: "सभी", jobs: "नौकरियाँ", soon: "जल्द बंद", prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की",
-      searchLabel: "सूचनाएँ खोजें", searchPh: "खोजें: एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
+      searchLabel: "सूचनाएँ खोजें", recentLabel: "हाल की खोजें", searchPh: "खोजें: एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
       hPosted: "जारी", hNotice: "सूचना", hOrg: "संस्था", hType: "प्रकार", hLast: "अंतिम तिथि", nil: "निरंक", hPdf: "पीडीएफ",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
       report: "गलती बताएँ", privacy: "गोपनीयता", switchTo: "अंग्रेज़ी", switchLang: "en",
@@ -431,7 +437,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   }
   document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => { setCat(b.dataset.cat); update(); }));
   // Shareable searches: ?q=ssc+gd opens with the search filled in; the address follows what you type.
-  let urlTimer;
+  let urlTimer, recentTimer;
   function syncUrl() {
     clearTimeout(urlTimer);
     urlTimer = setTimeout(() => {
@@ -443,13 +449,42 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     }, 400);
   }
 
+  // Recent searches (this device only): saved once a search has results and you pause or open one.
+  const RECENT_KEY = "sc-recent";
+  const getRecent = () => { try { return JSON.parse(localStorage.getItem(RECENT_KEY) || "[]"); } catch (e) { return []; } };
+  function saveRecent(text) {
+    text = (text || "").trim();
+    if (text.length < 2) return;
+    const list = [text, ...getRecent().filter(x => x.toLowerCase() !== text.toLowerCase())].slice(0, 3);
+    try { localStorage.setItem(RECENT_KEY, JSON.stringify(list)); } catch (e) {}
+  }
+  const recentEl = document.getElementById("recent");
+  function showRecent() {
+    const r = getRecent();
+    const qv = document.getElementById("q").value;
+    recentEl.hidden = !!qv || !r.length || document.activeElement !== document.getElementById("q");
+    recentEl.innerHTML = `<span class="rl">${t("recentLabel")}</span>` + r.map(x => `<button type="button" data-r="${esc(x)}">${esc(x)}</button>`).join("");
+  }
+  recentEl.addEventListener("mousedown", e => {
+    const b = e.target.closest("[data-r]");
+    if (!b) return;
+    e.preventDefault();
+    const qi = document.getElementById("q");
+    qi.value = b.dataset.r; qi.dispatchEvent(new Event("input")); qi.focus();
+  });
+  document.getElementById("q").addEventListener("focus", showRecent);
+  document.getElementById("q").addEventListener("blur", () => setTimeout(showRecent, 0));
+  list.addEventListener("click", e => { if (q && e.target.closest("a")) saveRecent(document.getElementById("q").value); });
+
   document.getElementById("q").addEventListener("input", e => {
     q = e.target.value.trim().toLowerCase();
     sel = -1;
     const before = cat;
     followSearch();
     if (cat !== before) update(); else render();
-    syncUrl();
+    syncUrl(); showRecent();
+    clearTimeout(recentTimer);
+    if (q) recentTimer = setTimeout(() => { if (ITEMS.some(i => live(i) && qmatch(i))) saveRecent(e.target.value); }, 1500);
   });
   try {
     const startQ = new URL(location.href).searchParams.get("q");
