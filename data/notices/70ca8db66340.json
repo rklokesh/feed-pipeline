@@ -1,0 +1,88 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://rrb.indianrailways.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "07/2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "07/2026"
+    },
+    "age_limit": {
+      "evidence": "Age (as on 01.01.2027): The lower and upper age limits prescribed for each post are indicated at Para 5.1 & 5.2 with relevant upper age relaxation. (18-30)",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": "2027-01-01",
+        "max": 30,
+        "min": 18
+      }
+    },
+    "apply_last": {
+      "evidence": "ws 26.09.2026 Opening date of Online application 15.10.2026 Closing date for Submission of Online Application 13.11.2026 (23:59 hours) Last Date for Application fee payment for the submitted applications 15.11.2026 Dates for Mo",
+      "source": "rule",
+      "value": "2026-11-13"
+    },
+    "apply_or_official_url": {
+      "evidence": "will be uploaded on the unified official RRB website, i.e. https://rrb.indianrailways.gov.in. Candidates can navigate to webpages of individual RRBs from this common website",
+      "source": "rule",
+      "value": "https://rrb.indianrailways.gov.in"
+    },
+    "apply_start": {
+      "evidence": "ES: Date of Indicative Notice in Employment News 26.09.2026 Opening date of Online application 15.10.2026 Closing date for Submission of Online Application 13.11.2026 (23:59 hours) Last Date for Application fee payment for the submitt",
+      "source": "rule",
+      "value": "2026-10-15"
+    },
+    "apply_url": {
+      "evidence": "https://rrb.indianrailways.gov.in",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://rrb.indianrailways.gov.in"
+    },
+    "fee_last": {
+      "evidence": "Last Date for Application fee payment for the submitted applications 15.11.2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-15"
+    },
+    "post_names": {
+      "evidence": "Commercial Cum Ticket Clerk, Accounts Clerk cum Typist, Junior Clerk Cum Typist, Trains Clerk",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Commercial Cum Ticket Clerk",
+        "Accounts Clerk cum Typist",
+        "Junior Clerk Cum Typist",
+        "Trains Clerk"
+      ]
+    },
+    "qualification": {
+      "evidence": "CEN No. 07/2026 NON TECHNICAL POPULAR CATEGORIES (UNDER GRADUATE)",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "Under Graduate"
+    },
+    "total_vacancies": {
+      "evidence": "PORTANT INSTRUCTIONS 4-6 3 1.0 GENERAL INSTRUCTIONS 6-8 4 2.0 VACANCIES 8 5 3.0 STANDARDS OF MEDICAL FITNESS 8 6 4.0 NATIONALITY / CITIZENSHIP 9 7 5.0",
+      "source": "rule",
+      "value": 0
+    }
+  },
+  "first_seen": "2026-10-22T20:09:06+00:00",
+  "id": "70ca8db66340",
+  "kind": "notification",
+  "org": "RRB",
+  "pdf": {
+    "bytes": 1992485,
+    "pages": 57,
+    "sha256": "503ecbf994c0b924fc3bcfb560c3e5566e8e2b067b84e676eeab3f99dc60d7fd",
+    "text_kind": "text"
+  },
+  "source_id": "rrb-unified",
+  "status": "pending_review",
+  "title": "RRB CEN 07/2026: Final CEN 07-2026 14.10.2026 English",
+  "url": "https://rrb.indianrailways.gov.in/-/image/1791999622770Final_CEN_07-2026_14.10.2026_English.pdf/examsDocuments"
+}

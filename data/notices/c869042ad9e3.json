@@ -1,0 +1,43 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://rrb.indianrailways.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_last": {
+      "evidence": "e opening date of application is 08.10.2026. 02 What is the closing date for submission of Application for CEN No. 06/2026? The closing date for submission of online application is 06.11.2026 @23.59Hrs. And the last date for pa",
+      "source": "rule",
+      "value": "2026-11-06"
+    },
+    "apply_or_official_url": {
+      "evidence": "ne online application through unified official RRB website (https://rrb.indianrailways.gov.in) is required to be submitted by the candidate. The candidate must provide order",
+      "source": "rule",
+      "value": "https://rrb.indianrailways.gov.in"
+    },
+    "apply_start": {
+      "evidence": "cal Popular Categories (Graduate)) (English) 01 What is the opening date of Application for CEN No. 06/2026? The opening date of application is 08.10.2026. 02 What is the closing date for submission of Application for CEN No. 0",
+      "source": "rule",
+      "value": "2026-10-08"
+    },
+    "fee_last": {
+      "evidence": "sion of online application is 06.11.2026 @23.59Hrs. And the last date for payment of the application fee for submitted applications is 08.11.2026. 03 What are the dates for modification of application? Modification window",
+      "source": "rule",
+      "value": "2026-11-08"
+    }
+  },
+  "first_seen": "2026-10-22T20:09:06+00:00",
+  "id": "c869042ad9e3",
+  "kind": "info",
+  "org": "RRB",
+  "pdf": {
+    "bytes": 573918,
+    "pages": 8,
+    "sha256": "9c3fb7836620135fa8d6736ba267844489dafc2b4b00e51594c62ff797f8d584",
+    "text_kind": "text"
+  },
+  "source_id": "rrb-unified",
+  "status": "pending_review",
+  "title": "RRB CEN 06/2026: Frequently Asked Questions (FAQs) for CEN 06 2026 (English Version)",
+  "url": "https://rrb.indianrailways.gov.in/-/image/1792054651680Frequently_Asked_Questions_(FAQs)_for_CEN_06_2026_(English_Version).pdf/examsDocuments"
+}
