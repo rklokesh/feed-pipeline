@@ -176,6 +176,10 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
 .ph-caret { display: inline-block; width: 1px; height: 1.05em; margin-left: 1px; vertical-align: -0.15em; background: var(--grey); animation: caret 1s steps(1) infinite; }
 @keyframes caret { 50% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .ph-caret { display: none; } }
+.more { display: flex; justify-content: center; align-items: baseline; gap: 14px; padding: 18px 0 4px; }
+.more[hidden] { display: none; }
+.more button { all: unset; cursor: pointer; position: relative; color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.more button::after { content: ""; position: absolute; inset: -12px -10px; }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 </head>
@@ -208,6 +212,7 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
     <p class="newline off" id="newline" aria-live="polite">&nbsp;</p>
     <div class="row head"><span class="hide-sm" data-t="hPosted">Posted</span><span data-t="hNotice">Notice</span><span class="hide-sm" data-t="hOrg">Organisation</span><span class="hide-sm" data-t="hType">Type</span><span data-t="hLast">Last date</span><span class="hide-sm" data-t="hPdf">PDF</span></div>
     <ul class="list" id="list"></ul>
+    <div class="more" id="more" hidden></div>
   </main>
 
   <footer>
@@ -224,7 +229,7 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
     en: {
       title: "SarkariChart", brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", about: "About", show: "Show",
       all: "All", jobs: "Jobs", soon: "Closing soon", prefSrc: "Add SarkariChart as a preferred source on Google", admits: "Admit cards", results: "Results", keys: "Answer keys",
-      searchLabel: "Search notices", phLead: "Search: ", searchPh: "Search: SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
+      searchLabel: "Search notices", showing: (a, b) => `Showing ${a} of ${b}`, showMore: n => `Show ${n} more`, phLead: "Search: ", searchPh: "Search: SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
       hPosted: "Posted", hNotice: "Notice", hOrg: "Organisation", hType: "Type", hLast: "Last date", nil: "NIL", hPdf: "PDF",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
       report: "Report a mistake", privacy: "Privacy", switchTo: "हिंदी", toDark: "Switch to dark mode", toLight: "Switch to light mode", switchLang: "hi",
@@ -238,7 +243,7 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
     hi: {
       title: "सरकारी चार्ट", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में", show: "दिखाएँ",
       all: "सभी", jobs: "नौकरियाँ", soon: "जल्द बंद", prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की",
-      searchLabel: "सूचनाएँ खोजें", phLead: "खोजें: ", searchPh: "खोजें: एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
+      searchLabel: "सूचनाएँ खोजें", showing: (a, b) => `${b} में से ${a} दिख रहीं`, showMore: n => `${n} और दिखाएँ`, phLead: "खोजें: ", searchPh: "खोजें: एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
       hPosted: "जारी", hNotice: "सूचना", hOrg: "संस्था", hType: "प्रकार", hLast: "अंतिम तिथि", nil: "निरंक", hPdf: "पीडीएफ",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
       report: "गलती बताएँ", privacy: "गोपनीयता", switchTo: "अंग्रेज़ी", toDark: "गहरा रंग चुनें", toLight: "हल्का रंग चुनें", switchLang: "en",
@@ -418,12 +423,13 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
   // "Closing soon" = open jobs whose last date is within a week, soonest first.
   const SOON_DAYS = 7;
   const inCat = (i, c) => c === "all" ? true : c === "soon" ? i.type === "Job" && !!i.last && left(i.last) <= SOON_DAYS : i.type === c;
+  const PAGE = 50; let shown = PAGE, allRows = [];
   function render() {
     // Jobs: closing soonest first (undated last). Everything else: newest first.
     const byNewest = (a, b) => b.posted.localeCompare(a.posted) || pubTime(b) - pubTime(a);
     const bySearch = (a, b) => searchRank(a) - searchRank(b) || titleScore(b) - titleScore(a) || (a.last || "9").localeCompare(b.last || "9") || b.posted.localeCompare(a.posted);
     const byClosing = (a, b) => a.last.localeCompare(b.last) || b.posted.localeCompare(a.posted);
-    const rows = ITEMS.filter(i => live(i) && inCat(i, cat) && qmatch(i)).sort(q ? bySearch : cat === "soon" ? byClosing : byNewest);
+    const rows = allRows = ITEMS.filter(i => live(i) && inCat(i, cat) && qmatch(i)).sort(q ? bySearch : cat === "soon" ? byClosing : byNewest);
     const hits = ITEMS.filter(i => live(i) && (!q || qmatch(i)));
     document.querySelectorAll(".tabs button").forEach(b => {
       const soon = b.dataset.cat === "soon";
@@ -434,9 +440,13 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
     moveInk();
     const nl = document.getElementById("newline"), nNew = ITEMS.filter(i => live(i) && isNew(i)).length;
     const showNl = !firstVisit && nNew > 0; nl.classList.toggle("off", !showNl); nl.textContent = showNl ? t("sinceLast")(nNew) : "\u00a0";
-    document.getElementById("list").innerHTML = rows.map(i =>
+    document.getElementById("list").innerHTML = rows.slice(0, shown).map(i =>
       `<li class="lr${isNew(i) ? " fresh" : ""}"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm"><span class="pc"><span>${fmt(i.posted)}</span><span>${isNew(i) ? `<span class="newtag">${t("newBadge")}</span>` : ""}</span></span></span><span class="t" title="${esc(title(i))}">${isNew(i) ? `<span class="newtag show-sm">${t("newBadge")}</span>` : ""}${esc(title(i))}</span><span class="hide-sm g">${org(i)}</span><span class="hide-sm g">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
     ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
+    // One long page, revealed 50 rows at a time (no "page 2"): Ctrl+F, search and the back button keep working.
+    const more = document.getElementById("more");
+    more.hidden = allRows.length <= shown;
+    more.innerHTML = more.hidden ? "" : `<span class="g">${t("showing")(Math.min(shown, allRows.length), allRows.length)}</span><button type="button" id="moreBtn">${t("showMore")(Math.min(PAGE, allRows.length - shown))}</button>`;
   }
   // Keyboard: ↓ / ↑ move through the results while searching, Enter opens the highlighted one.
   let sel = -1;
@@ -458,6 +468,7 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
     paintTheme();
   });
   matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", paintTheme);
+  document.getElementById("more").addEventListener("click", e => { if (!e.target.closest("#moreBtn")) return; shown += PAGE; render(); });
   // The whole row is the link: a tap anywhere on the row (gaps included) opens the notice; the PDF icon keeps its own job.
   document.getElementById("list").addEventListener("click", e => {
     if (e.target.closest("a")) return;
@@ -513,13 +524,14 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
   }
   const list = document.getElementById("list");
   function update() {
+    shown = PAGE;
     list.classList.add("fade");
     requestAnimationFrame(() => { render(); requestAnimationFrame(() => list.classList.remove("fade")); });
   }
   // Switching tabs never moves the page or the footer: the list always keeps the height of the full "All" list.
   function holdHeight() {
     const L = document.getElementById("list");
-    const full = ITEMS.filter(i => live(i)).length, rows = L.querySelectorAll("li.lr");
+    const full = Math.min(ITEMS.filter(i => live(i)).length, PAGE), rows = L.querySelectorAll("li.lr");
     if (!rows.length) return;
     const rowH = L.scrollHeight / Math.max(rows.length, 1);
     L.style.minHeight = Math.ceil(Math.max(L.scrollHeight, rowH * full)) + "px";
@@ -539,6 +551,7 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
   }
 
   document.getElementById("q").addEventListener("input", e => {
+    shown = PAGE;
     q = e.target.value.trim().toLowerCase();
     sel = -1;
     const before = cat;
