@@ -1,4 +1,5 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://recruitment.itbpolice.nic.in/",
   "card": {
@@ -16,6 +17,7 @@
     "type": "Job",
     "vacancies": null
   },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -24,15 +26,51 @@
   "id": "7bf9f3ca605b",
   "issue": 26,
   "kind": "update",
+  "notice_date": "2026-10-22",
   "org": "ITBP",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Indo-Tibetan Border Police (ITBP)",
+    "conducted_by_hi": "भारत-तिब्बत सीमा पुलिस (आईटीबीपी)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "ITBP Constable GD Sportsperson 2025 Vacancy Amendment",
+    "h1_hi": "आईटीबीपी कांस्टेबल जीडी स्पोर्ट्सपर्सन 2025 रिक्ति संशोधन",
+    "last_date": null,
+    "notice_date": null,
+    "official_site": "https://recruitment.itbpolice.nic.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Constable (General Duty) - Sportsperson",
+        "value_hi": "कांस्टेबल (सामान्य ड्यूटी) - स्पोर्ट्सपर्सन"
+      },
+      {
+        "label_en": "Notice Type",
+        "label_hi": "नोटिस प्रकार",
+        "value_en": "Corrigendum (Seat Amendment)",
+        "value_hi": "शुद्धिपत्र (सीट संशोधन)"
+      }
+    ],
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Indo-Tibetan Border Police has issued a corrigendum regarding the number of seats for the weightlifting discipline in the Constable GD Sportsperson recruitment 2025. Candidates can check the updated seat details through the official notice. Review the amendment before proceeding further.",
+    "summary_hi": "भारत-तिब्बत सीमा पुलिस ने कांस्टेबल जीडी स्पोर्ट्सपर्सन भर्ती 2025 में भारोत्तोलन अनुशासन के लिए सीटों की संख्या के संबंध में एक शुद्धिपत्र जारी किया है। उम्मीदवार आधिकारिक नोटिस के माध्यम से अद्यतन सीट विवरण देख सकते हैं। आगे बढ़ने से पहले संशोधन की समीक्षा करें।"
+  },
   "pdf": {
     "bytes": 807177,
     "pages": 1,
     "sha256": "073eb45aaeb3a2762e7c439d81c982cd84db0f75d2045c0724152dfc0586d4b2",
     "text_kind": "scanned"
   },
+  "published_at": "2026-10-22T18:08:51Z",
+  "slug": "itbp-constable-gd-sportsperson-2025-vacancy-amendment",
   "source_id": "itbp-recruitment",
-  "status": "in_review",
+  "status": "approved",
   "title": "CORRIGENDUM REGARDING RECRUITMENT TO THE POST OF CONSTABLE (GENERAL DUTY) SPORTSPERSON 2025 AMENDMENT IN THE NUMBER OF SEATS FOR SL NO 22 WEIGHTLIFTING DISCIPLINE",
   "url": "https://recruitment.itbpolice.nic.in/noticeboards/downloadpdf/362.pdf"
 }

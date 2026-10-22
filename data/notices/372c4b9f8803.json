@@ -1,4 +1,5 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://rssb.rajasthan.gov.in/",
   "card": {
@@ -16,6 +17,7 @@
     "type": "Admit card",
     "vacancies": null
   },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -24,15 +26,57 @@
   "id": "372c4b9f8803",
   "issue": 22,
   "kind": "other",
+  "notice_date": "2026-10-22",
   "org": "RSSB Rajasthan",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Rajasthan Staff Selection Board (RSSB)",
+    "conducted_by_hi": "राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी)",
+    "exam_date": "2026-11-17",
+    "fees": [],
+    "h1_en": "RSSB Teaching Associate Exam Schedule 2026",
+    "h1_hi": "राजस्थान कर्मचारी चयन बोर्ड टीचिंग असोसिएट परीक्षा कार्यक्रम 2026",
+    "last_date": null,
+    "notice_date": null,
+    "official_site": "https://rssb.rajasthan.gov.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Teaching Associate (Contractual)",
+        "value_hi": "टीचिंग असोसिएट (संविदा आधारित)"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "17 Nov 2026 to 21 Dec 2026",
+        "value_hi": "17 नव 2026 से 21 दिस 2026"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "06/2026",
+        "value_hi": "06/2026"
+      }
+    ],
+    "status_en": "Exam schedule released",
+    "status_hi": "परीक्षा कार्यक्रम जारी",
+    "summary_en": "Rajasthan Staff Selection Board has announced the exam schedule for Contractual Teaching Associate Recruitment 2026 starting from November 17, 2026. Candidates should check their exam date and time according to their subject and follow all instructions.",
+    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने संविदा आधारित टीचिंग असोसिएट भर्ती 2026 की परीक्षा का कार्यक्रम जारी कर दिया है, जो 17 नवंबर 2026 से शुरू होगी। अभ्यर्थी अपने विषय के अनुसार परीक्षा की तिथि और समय की जांच कर लें और सभी निर्देशों का पालन करें।"
+  },
   "pdf": {
     "bytes": 461760,
     "pages": 3,
     "sha256": "448a3b4f6680d41f75d60a262ab6d363a0528369c25bca52b3396c7e6884f5f1",
     "text_kind": "text"
   },
+  "published_at": "2026-10-22T18:08:33Z",
+  "slug": "rssb-teaching-associate-exam-schedule-2026",
   "source_id": "rssb-home",
-  "status": "in_review",
+  "status": "approved",
   "title": "21-10-2026 - Contractual Teaching Associate (Raj-CES) 2026 : Important Instructions and Schedule of Exam for the candidates",
   "url": "https://rssb.rajasthan.gov.in/storage/news_item/1792591103.pdf"
 }

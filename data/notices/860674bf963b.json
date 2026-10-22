@@ -1,4 +1,5 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://recruitment.itbpolice.nic.in/",
   "card": {
@@ -11,11 +12,12 @@
     "skip_reason": "",
     "summary_en": "Indo-Tibetan Border Police Force invites online applications for 126 Constable General Duty posts under Sports Quota 2025. Eligible candidates can apply online from 3rd October 2026 to 1st November 2026.",
     "summary_hi": "भारत-तिब्बत सीमा पुलिस बल ने खेल कोटा 2025 के तहत कांस्टेबल सामान्य ड्यूटी के 126 पदों पर भर्ती के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 3 अक्टूबर 2026 से 1 नवंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
-    "title_en": "ITBP Constable General Duty Sports Quota Recruitment 2026",
-    "title_hi": "ITBP कांस्टेबल सामान्य ड्यूटी खेल कोटा भर्ती 2026",
+    "title_en": "ITBP Constable GD Sports Quota Recruitment 2025",
+    "title_hi": "आईटीबीपी कांस्टेबल जीडी खेल कोटा भर्ती 2025",
     "type": "Job",
     "vacancies": 126
   },
+  "editor_notes": [],
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -93,15 +95,75 @@
   "id": "860674bf963b",
   "issue": 27,
   "kind": "notification",
+  "notice_date": "2026-10-22",
   "org": "ITBP",
+  "page": {
+    "apply_start": "2026-10-03",
+    "apply_url": "https://recruitment.itbpolice.nic.in",
+    "changes_from_notes": "",
+    "conducted_by_en": "Indo-Tibetan Border Police Force (ITBPF)",
+    "conducted_by_hi": "भारत-तिब्बत सीमा पुलिस बल (ITBPF)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "ITBP Constable GD Sports Quota Recruitment 2025",
+    "h1_hi": "आईटीबीपी कांस्टेबल जीडी खेल कोटा भर्ती 2025",
+    "last_date": "2026-11-01",
+    "notice_date": null,
+    "official_site": "https://recruitment.itbpolice.nic.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Constable (General Duty) under Sports Quota",
+        "value_hi": "कांस्टेबल (सामान्य ड्यूटी) खेल कोटा"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "126",
+        "value_hi": "126"
+      },
+      {
+        "label_en": "Apply online",
+        "label_hi": "ऑनलाइन आवेदन",
+        "value_en": "03 Oct 2026 to 01 Nov 2026",
+        "value_hi": "03 अक्तूबर 2026 से 01 नवंबर 2026"
+      },
+      {
+        "label_en": "Educational qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "Matriculation or its equivalent from a recognized board along with required sports achievements",
+        "value_hi": "मान्यता प्राप्त बोर्ड से मैट्रिकुलेशन या समकक्ष और आवश्यक खेल उपलब्धियां"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "18 to 23 years as on 01 Nov 2026",
+        "value_hi": "01 नवंबर 2026 के अनुसार 18 से 23 वर्ष"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Sports Quota-2025",
+        "value_hi": "खेल कोटा-2025"
+      }
+    ],
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Indo-Tibetan Border Police Force has invited online applications for the recruitment of 126 Constable General Duty posts under Sports Quota 2025. Eligible and meritorious sportsperson candidates can apply online through the official recruitment website.",
+    "summary_hi": "भारत-तिब्बत सीमा पुलिस बल ने खेल कोटा 2025 के तहत कांस्टेबल सामान्य ड्यूटी के 126 पदों पर भर्ती के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य और मेधावी खिलाड़ी उम्मीदवार आधिकारिक भर्ती वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।"
+  },
   "pdf": {
     "bytes": 1097336,
     "pages": 36,
     "sha256": "f33bfc800e8b84bc644899e0aa7bbfcc7fa998cb13356d6e3579da180e5e1dcf",
     "text_kind": "text"
   },
+  "published_at": "2026-10-22T18:08:53Z",
+  "slug": "itbp-constable-gd-sports-quota-recruitment-2025",
   "source_id": "itbp-recruitment",
-  "status": "in_review",
+  "status": "approved",
   "title": "DETAILED ADVERTISEMENT FOR RECRUITMENT OF MERITORIOUS SPORTSPERSONS TO THE POST OF CONSTABLE (GENERAL DUTY) UNDER SPORTS QUOTA -2025 IN ITBPF",
   "url": "https://recruitment.itbpolice.nic.in/noticeboards/downloadpdf/361.pdf"
 }

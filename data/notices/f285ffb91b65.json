@@ -1,4 +1,5 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://rectt.bsf.gov.in/",
   "card": {
@@ -11,11 +12,12 @@
     "skip_reason": "",
     "summary_en": "Download the e-admit card for the written examination (CBT) scheduled on 2nd November 2026 for the BSF Head Constable RO and RM recruitment.",
     "summary_hi": "बीएसएफ हेड कांस्टेबल आरओ और आरएम भर्ती के लिए 2 नवंबर 2026 को आयोजित होने वाली लिखित परीक्षा (सीबीटी) के लिए ई-एडमिट कार्ड डाउनलोड करें।",
-    "title_en": "BSF Head Constable RO and RM Admit Card 2025",
+    "title_en": "BSF HC RO & RM Admit Card 2025",
     "title_hi": "बीएसएफ हेड कांस्टेबल आरओ और आरएम एडमिट कार्ड 2025",
     "type": "Admit card",
     "vacancies": null
   },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -24,15 +26,57 @@
   "id": "f285ffb91b65",
   "issue": 28,
   "kind": "admit_card",
+  "notice_date": "2026-10-22",
   "org": "BSF",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Border Security Force (BSF)",
+    "conducted_by_hi": "सीमा सुरक्षा बल (बीएसएफ)",
+    "exam_date": "2026-11-02",
+    "fees": [],
+    "h1_en": "BSF HC RO & RM Admit Card 2025",
+    "h1_hi": "बीएसएफ हेड कांस्टेबल आरओ और आरएम एडमिट कार्ड 2025",
+    "last_date": null,
+    "notice_date": null,
+    "official_site": "https://rectt.bsf.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Head Constable (RO) & Head Constable (RM)",
+        "value_hi": "हेड कांस्टेबल (आरओ) और हेड कांस्टेबल (आरएम)"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा की तिथि",
+        "value_en": "02 Nov 2026",
+        "value_hi": "02 नव 2026"
+      },
+      {
+        "label_en": "How to download",
+        "label_hi": "कैसे डाउनलोड करें",
+        "value_en": "Download online using login credentials on the official recruitment website",
+        "value_hi": "आधिकारिक भर्ती वेबसाइट पर लॉगिन विवरण का उपयोग करके ऑनलाइन डाउनलोड करें"
+      }
+    ],
+    "status_en": "Admit card released",
+    "status_hi": "एडमिट कार्ड जारी कर दिया गया है",
+    "summary_en": "Download the e-admit card for the written examination (CBT) scheduled on 2nd November 2026 for the BSF Head Constable RO and RM recruitment. Candidates should check their exam date and details on the admit card and bring it to the exam centre along with a valid ID.",
+    "summary_hi": "बीएसएफ हेड कांस्टेबल आरओ और आरएम भर्ती के लिए 2 नवंबर 2026 को होने वाली लिखित परीक्षा (सीबीटी) के लिए ई-एडमिट कार्ड डाउनलोड करें। उम्मीदवार एडमिट कार्ड पर अपनी परीक्षा की तिथि और विवरण जांच लें और वैध पहचान पत्र के साथ इसे परीक्षा केंद्र पर लाएं।"
+  },
   "pdf": {
     "bytes": 2397275,
     "pages": 4,
     "sha256": "251ba832335aa3944959c1f48ebe6cbf531d21ce5820eceb4f8828b7820531a7",
     "text_kind": "scanned"
   },
+  "published_at": "2026-10-22T18:08:58Z",
+  "slug": "bsf-hc-ro-rm-admit-card-2025",
   "source_id": "bsf-recruitment",
-  "status": "in_review",
+  "status": "approved",
   "title": "LINK FOR DOWNLOADING E-ADMIT CARDS FOR THE POST OF HC(RO) & HC(RM) IN BSF COMN SETUP 2025 NOTICE FOR WRITTEN EXAMINATION I.E. CBT FOR THE POST OF HC(RO) AND HC(RM) SCHEDULED ON 2ND NOVEMBER 2026 NOTICE : RECRUITMENT FOR THE POST OF CONSTABLE (TRADESMAN) IN BSF - 2024 & 25 REGARDING WRITTEN EXAMINATI",
   "url": "https://d3t79nicn48uzj.cloudfront.net/bsf/custom/1792396127.pdf"
 }
