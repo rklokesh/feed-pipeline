@@ -60,6 +60,8 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; text-decoratio
 :focus-visible { outline: 1px solid var(--ink); outline-offset: 2px; }
 ul, p { margin: 0; padding: 0; list-style: none; }
 .g { color: var(--grey); }
+.list li.lr > a.row > span:not(.t) { color: var(--grey); } /* only the notice title stays dark; deadline colours still show */
+.list li.lr > .pdf { color: var(--grey); }
 .show-sm { display: none; }
 .num { font-variant-numeric: tabular-nums; }
 
