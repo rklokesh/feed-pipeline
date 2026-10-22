@@ -117,12 +117,6 @@ main { margin-top: 36px; flex: 1; }
 .right { text-align: right; }
 
 footer .pref { margin-bottom: 0; }
-footer .save { margin-bottom: 10px; display: grid; justify-items: center; gap: 2px; }
-footer .save button { all: unset; cursor: pointer; }
-footer .save button:hover span { text-decoration: underline; text-underline-offset: 3px; }
-footer .save button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 2px; }
-footer .save .bmi { vertical-align: -1px; color: var(--grey); }
-footer .save #saveHint:empty { display: none; }
 footer .pref .star { color: var(--warm); }
 footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-align: center; justify-items: center; }
 
@@ -185,7 +179,6 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 
   <footer>
     <p class="pref"><a href="https://www.google.com/preferences/source?q=sarkarichart.com" target="_blank" rel="noopener"><span class="star" aria-hidden="true">★</span> <span data-t="prefSrc">Add SarkariChart as a preferred source on Google</span></a></p>
-    <p class="save" id="save" hidden><button type="button" id="saveBtn"><svg class="bmi" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h12v17l-6-4.5-6 4.5z"/></svg> <span id="saveLbl"></span></button><span class="g" id="saveHint" aria-live="polite"></span></p>
     <p class="g" data-t="disclaimer">SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.</p>
     <p><a href="#" data-t="about">About</a> · <a href="#" data-t="report">Report a mistake</a> · <a href="#" data-t="privacy">Privacy</a></p>
   </footer>
@@ -197,7 +190,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   const T = {
     en: {
       title: "SarkariChart", brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", about: "About", show: "Show",
-      all: "All", jobs: "Jobs", soon: "Closing soon", prefSrc: "Add SarkariChart as a preferred source on Google", saveDesk: "Bookmark SarkariChart", saveKey: k => `Press ${k} to bookmark this page`, saveHome: "Add SarkariChart to your home screen", saveIos: "Tap the Share button, then Add to Home Screen", saveAndroid: "Open the browser menu (⋮), then tap Add to Home screen", admits: "Admit cards", results: "Results", keys: "Answer keys",
+      all: "All", jobs: "Jobs", soon: "Closing soon", prefSrc: "Add SarkariChart as a preferred source on Google", admits: "Admit cards", results: "Results", keys: "Answer keys",
       searchLabel: "Search notices", recentLabel: "Recent:", searchPh: "Search: SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
       hPosted: "Posted", hNotice: "Notice", hOrg: "Organisation", hType: "Type", hLast: "Last date / status", hPdf: "PDF",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
@@ -211,7 +204,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     },
     hi: {
       title: "सरकारी चार्ट", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में", show: "दिखाएँ",
-      all: "सभी", jobs: "नौकरियाँ", soon: "जल्द बंद", prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ", saveDesk: "सरकारी चार्ट को बुकमार्क करें", saveKey: k => `बुकमार्क करने के लिए ${k} दबाएँ`, saveHome: "सरकारी चार्ट को होम स्क्रीन पर जोड़ें", saveIos: "शेयर बटन दबाएँ, फिर ‘होम स्क्रीन में जोड़ें’ चुनें", saveAndroid: "ब्राउज़र मेन्यू (⋮) खोलें, फिर ‘होम स्क्रीन में जोड़ें’ चुनें", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की",
+      all: "सभी", jobs: "नौकरियाँ", soon: "जल्द बंद", prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की",
       searchLabel: "सूचनाएँ खोजें", recentLabel: "हाल की खोजें:", searchPh: "खोजें: एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
       hPosted: "जारी", hNotice: "सूचना", hOrg: "संस्था", hType: "प्रकार", hLast: "अंतिम तिथि / स्थिति", hPdf: "पीडीएफ",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
@@ -417,27 +410,6 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     const el = rowsEls()[sel];
     if (el) el.scrollIntoView({ block: "nearest" });
   }
-  // Bookmark / home screen: browsers don't let sites add bookmarks, so we show the one step that works on this device.
-  const UA = navigator.userAgent;
-  const IOS = /iPad|iPhone|iPod/.test(UA) || (/Macintosh/.test(UA) && navigator.maxTouchPoints > 1);
-  const ANDROID = /Android/i.test(UA);
-  const MAC = /Mac/.test(navigator.platform || UA);
-  const INSTALLED = matchMedia("(display-mode: standalone)").matches || navigator.standalone;
-  let installPrompt = null, saveHintOn = false;
-  addEventListener("beforeinstallprompt", e => { e.preventDefault(); installPrompt = e; });
-  addEventListener("appinstalled", () => { document.getElementById("save").hidden = true; });
-  function saveHintText() { return IOS ? t("saveIos") : ANDROID ? t("saveAndroid") : t("saveKey")(MAC ? "⌘ + D" : "Ctrl + D"); }
-  function renderSave() {
-    const box = document.getElementById("save");
-    box.hidden = !!INSTALLED;
-    document.getElementById("saveLbl").textContent = IOS || ANDROID ? t("saveHome") : t("saveDesk");
-    document.getElementById("saveHint").textContent = saveHintOn ? saveHintText() : "";
-  }
-  document.getElementById("saveBtn").addEventListener("click", async () => {
-    if (installPrompt) { installPrompt.prompt(); try { await installPrompt.userChoice; } catch (e) {} installPrompt = null; return; }
-    saveHintOn = !saveHintOn; renderSave();
-  });
-  if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("/sw.js").catch(() => {});
   function applyLang() {
     document.documentElement.lang = lang;
     document.title = t("title");
@@ -447,7 +419,6 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     document.querySelectorAll("[data-t-alt]").forEach(el => el.alt = t(el.dataset.tAlt));
     const btn = document.getElementById("lang");
     btn.textContent = t("switchTo"); btn.lang = t("switchLang");
-    renderSave();
     render();
   }
   const list = document.getElementById("list");
