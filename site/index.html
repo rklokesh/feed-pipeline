@@ -530,5 +530,23 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 })();
 </script>
 
+<!-- Faster clicks: start loading our own pages when a visitor hovers or touches a link (never official sites or PDFs) -->
+<script type="speculationrules">{"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/*.pdf"}},{"not":{"selector_matches":"[download]"}}]},"eagerness":"moderate"}]}</script>
+<script>
+(function () {
+  if (HTMLScriptElement.supports && HTMLScriptElement.supports("speculationrules")) return; // browser does it natively
+  var done = {}, timer;
+  function want(a) {
+    if (!a || !a.href || a.hasAttribute("download")) return null;
+    var u; try { u = new URL(a.href); } catch (e) { return null; }
+    if (u.origin !== location.origin || /\.pdf$/i.test(u.pathname) || u.pathname === location.pathname) return null;
+    return u.origin + u.pathname + u.search;
+  }
+  function go(url) { if (done[url]) return; done[url] = 1; var l = document.createElement("link"); l.rel = "prefetch"; l.href = url; document.head.appendChild(l); }
+  document.addEventListener("mouseover", function (e) { var url = want(e.target.closest && e.target.closest("a")); if (!url) return; clearTimeout(timer); timer = setTimeout(function () { go(url); }, 65); }, { passive: true });
+  document.addEventListener("mouseout", function () { clearTimeout(timer); }, { passive: true });
+  document.addEventListener("touchstart", function (e) { var url = want(e.target.closest && e.target.closest("a")); if (url) go(url); }, { passive: true });
+})();
+</script>
 </body>
 </html>
