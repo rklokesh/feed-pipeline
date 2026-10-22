@@ -173,7 +173,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     </label>
     <div class="recent" id="recent" hidden></div>
     <p class="newline off" id="newline" aria-live="polite">&nbsp;</p>
-    <div class="row head"><span class="hide-sm" data-t="hPosted">Posted</span><span data-t="hNotice">Notice</span><span class="hide-sm" data-t="hOrg">Organisation</span><span class="hide-sm" data-t="hType">Type</span><span data-t="hLast">Last date / status</span><span class="hide-sm" data-t="hPdf">PDF</span></div>
+    <div class="row head"><span class="hide-sm" data-t="hPosted">Posted</span><span data-t="hNotice">Notice</span><span class="hide-sm" data-t="hOrg">Organisation</span><span class="hide-sm" data-t="hType">Type</span><span data-t="hLast">Last date</span><span class="hide-sm" data-t="hPdf">PDF</span></div>
     <ul class="list" id="list"></ul>
   </main>
 
@@ -192,7 +192,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       title: "SarkariChart", brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", about: "About", show: "Show",
       all: "All", jobs: "Jobs", soon: "Closing soon", prefSrc: "Add SarkariChart as a preferred source on Google", admits: "Admit cards", results: "Results", keys: "Answer keys",
       searchLabel: "Search notices", recentLabel: "Recent:", searchPh: "Search: SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
-      hPosted: "Posted", hNotice: "Notice", hOrg: "Organisation", hType: "Type", hLast: "Last date / status", hPdf: "PDF",
+      hPosted: "Posted", hNotice: "Notice", hOrg: "Organisation", hType: "Type", hLast: "Last date", hPdf: "PDF",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
       report: "Report a mistake", privacy: "Privacy", switchTo: "हिंदी", switchLang: "hi",
       Job: "Job", Result: "Result", "Answer key": "Answer key", "Admit card": "Admit card",
@@ -206,7 +206,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       title: "सरकारी चार्ट", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में", show: "दिखाएँ",
       all: "सभी", jobs: "नौकरियाँ", soon: "जल्द बंद", prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की",
       searchLabel: "सूचनाएँ खोजें", recentLabel: "हाल की खोजें:", searchPh: "खोजें: एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
-      hPosted: "जारी", hNotice: "सूचना", hOrg: "संस्था", hType: "प्रकार", hLast: "अंतिम तिथि / स्थिति", hPdf: "पीडीएफ",
+      hPosted: "जारी", hNotice: "सूचना", hOrg: "संस्था", hType: "प्रकार", hLast: "अंतिम तिथि", hPdf: "पीडीएफ",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
       report: "गलती बताएँ", privacy: "गोपनीयता", switchTo: "अंग्रेज़ी", switchLang: "en",
       Job: "नौकरी", Result: "रिज़ल्ट", "Answer key": "आंसर की", "Admit card": "एडमिट कार्ड",
@@ -286,8 +286,8 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     return `<span class="tag ${cls}">${txt}</span>`;
   }
   function lastCell(i) {
-    if (i.type !== "Job") return t("available");
-    if (!i.last) return t("inNotice");
+    // Only a known deadline shows here; every other row stays empty ("no deadline to worry about").
+    if (i.type !== "Job" || !i.last) return "";
     // No "days left" text in the list: the date itself turns warm in the last week and red-orange in the last 3 days.
     const d = left(i.last);
     const cls = d <= 3 ? "tag hot" : d <= 7 ? "tag warm" : "";
