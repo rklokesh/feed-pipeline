@@ -35,12 +35,6 @@
 /* tags: one small framed shape used for days left, the K shortcut and the chosen category */
 .tag { white-space: nowrap; font-variant-numeric: tabular-nums; }
 .gap { display: inline-block; width: 14px; }
-.newline { margin: -24px 0 12px; color: var(--hot); }
-/* "New" badge on the 3 most recent notices: a soft breathing dot, not a hard blink */
-.new { display: inline-flex; align-items: center; margin-right: 8px; color: var(--hot); vertical-align: 2px; }
-.new::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; animation: breathe 1.6s ease-in-out infinite; }
-@keyframes breathe { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .25; transform: scale(.7); } }
-@media (prefers-reduced-motion: reduce) { .new::before { animation: none; } }
 .dd { display: inline-block; min-width: 2ch; text-align: right; font-variant-numeric: tabular-nums; }
 .tag.calm { color: var(--calm); }
 .tag.warm { color: var(--warm); }
@@ -72,7 +66,7 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 
 .row { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr) 5.75rem 6.25rem 9rem 4.25rem; gap: 0 16px; align-items: baseline; }
 main { margin-top: 36px; flex: 1; }
-.head { color: var(--grey); background: var(--soft); padding: 7px 8px; border-bottom: 1px solid color-mix(in srgb, var(--ink) 28%, var(--page)); }
+.head { color: var(--grey); background: var(--soft); padding: 7px 8px; border-bottom: 1px solid var(--ink); }
 .tabs { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: 14px; }
 .search { display: block; margin-bottom: 40px; }
 .search input { all: unset; box-sizing: border-box; width: 100%; padding: 6px 0; border-bottom: 1px solid var(--line); }
@@ -114,9 +108,6 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 .search input::-webkit-search-cancel-button, .search input::-webkit-search-decoration { -webkit-appearance: none; appearance: none; display: none; }
 .sx { position: absolute; right: 0; top: 50%; transform: translateY(-50%); all: unset; position: absolute; right: 0; top: 50%; transform: translateY(-50%); cursor: pointer; color: var(--grey); }
 .sx:hover { color: var(--ink); }
-.recent { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: -30px 0 22px; }
-.recent button { all: unset; cursor: pointer; color: var(--ink); }
-.recent button:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 
 
@@ -154,8 +145,6 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
       <input id="q" type="search" placeholder="Search: SSC, UGC NET, 12th pass, Bihar…" autocomplete="off" data-t-ph="searchPh">
       <button type="button" class="sx" id="kHint" hidden data-t="clear">Clear</button>
     </label>
-    <div class="recent" id="recent" hidden></div>
-    <p class="newline" id="newline" hidden></p>
     <div class="row head"><span class="hide-sm" data-t="hPosted">Posted</span><span data-t="hNotice">Notice</span><span class="hide-sm" data-t="hOrg">Organisation</span><span class="hide-sm" data-t="hType">Type</span><span data-t="hLast">Last date / status</span><span class="hide-sm" data-t="hPdf">PDF</span></div>
     <ul class="list" id="list"></ul>
   </main>
@@ -173,12 +162,12 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     en: {
       title: "SarkariChart", brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", about: "About", show: "Show",
       all: "All", jobs: "Jobs", admits: "Admit cards", results: "Results", keys: "Answer keys",
-      searchLabel: "Search notices", recentLabel: "Recent:", searchPh: "Search: SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
+      searchLabel: "Search notices", searchPh: "Search: SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
       hPosted: "Posted", hNotice: "Notice", hOrg: "Organisation", hType: "Type", hLast: "Last date / status", hPdf: "PDF",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
       report: "Report a mistake", privacy: "Privacy", switchTo: "हिंदी", switchLang: "hi",
       Job: "Job", Result: "Result", "Answer key": "Answer key", "Admit card": "Admit card",
-      available: "Available", newBadge: "New", sinceLast: n => `${n} new since your last visit`, inNotice: "In notice", lastDay: "Last day", pdfAria: "Download this notice as PDF",
+      available: "Available", inNotice: "In notice", lastDay: "Last day", pdfAria: "Download this notice as PDF",
       daysLeft: d => `${d} day${d === 1 ? "" : "s"} left`, daysShort: d => `${d} day${d === 1 ? "" : "s"}`,
       none: q => `Nothing matches "${q}". Try a shorter word, like an organisation name.`,
       empty: "Nothing here right now. New notices appear as soon as they are published.",
@@ -187,12 +176,12 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     hi: {
       title: "सरकारी चार्ट", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में", show: "दिखाएँ",
       all: "सभी", jobs: "नौकरियाँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की",
-      searchLabel: "सूचनाएँ खोजें", recentLabel: "हाल की खोजें:", searchPh: "खोजें: एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
+      searchLabel: "सूचनाएँ खोजें", searchPh: "खोजें: एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
       hPosted: "जारी", hNotice: "सूचना", hOrg: "संस्था", hType: "प्रकार", hLast: "अंतिम तिथि / स्थिति", hPdf: "पीडीएफ",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
       report: "गलती बताएँ", privacy: "गोपनीयता", switchTo: "अंग्रेज़ी", switchLang: "en",
       Job: "नौकरी", Result: "रिज़ल्ट", "Answer key": "आंसर की", "Admit card": "एडमिट कार्ड",
-      available: "उपलब्ध", newBadge: "नया", sinceLast: n => `पिछली बार के बाद ${n} नई सूचनाएँ`, inNotice: "सूचना में देखें", lastDay: "आज अंतिम दिन", pdfAria: "यह सूचना पीडीएफ में डाउनलोड करें",
+      available: "उपलब्ध", inNotice: "सूचना में देखें", lastDay: "आज अंतिम दिन", pdfAria: "यह सूचना पीडीएफ में डाउनलोड करें",
       daysLeft: d => `${d} दिन बाकी`, daysShort: d => `${d} दिन`,
       none: q => `“${q}” से कुछ नहीं मिला। छोटा शब्द आज़माएँ, जैसे संस्था का नाम।`,
       empty: "अभी यहाँ कुछ नहीं है। नई सूचनाएँ जारी होते ही यहाँ दिखेंगी।",
@@ -208,40 +197,17 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   const TODAY = new Date();
   // posted = date on the official notice where known, otherwise the day we found it.
   const ITEMS = [
-    { type: "Job", title: "UGC NET December 2026", hi: "यूजीसी नेट दिसंबर 2026", org: "NTA", posted: "2026-10-08", publishedAt: "2026-10-08T04:30:00Z", last: "2026-10-28", url: "/notice/ugc-net-december-2026/", page: true },
-    { type: "Job", title: "SWAYAM exam, online application", hi: "स्वयं परीक्षा, ऑनलाइन आवेदन", org: "NTA", posted: "2026-10-09", publishedAt: "2026-10-09T05:00:00Z", last: "2026-11-01", url: "https://nta.ac.in" },
-    { type: "Job", title: "NIFT Entrance Exam 2027", hi: "निफ्ट प्रवेश परीक्षा 2027", org: "NTA", posted: "2026-10-16", publishedAt: "2026-10-16T06:15:00Z", last: "2026-11-16", url: "https://nta.ac.in" },
-    { type: "Job", title: "Junior Engineer Examination 2026", hi: "जूनियर इंजीनियर परीक्षा 2026", org: "SSC", posted: "2026-10-21", publishedAt: "2026-10-22T05:40:00Z", last: null, url: "https://ssc.gov.in" },
-    { type: "Job", title: "Lecturer, Textile Technology", hi: "प्रवक्ता, वस्त्र प्रौद्योगिकी", org: "UPPSC", posted: "2026-10-21", publishedAt: "2026-10-22T05:10:00Z", last: null, url: "https://uppsc.up.nic.in" },
-    { type: "Answer key", title: "Selection Posts Phase XIV, response sheets", hi: "सेलेक्शन पोस्ट फेज़ 14, उत्तर पत्रक", org: "SSC", posted: "2026-10-21", publishedAt: "2026-10-22T04:25:00Z", url: "https://ssc.gov.in" },
-    { type: "Result", title: "Constable (GD) in CAPFs, SSF and Rifleman (GD)", hi: "सीएपीएफ, एसएसएफ में कांस्टेबल (जीडी) और राइफलमैन (जीडी)", org: "SSC", posted: "2026-10-21", publishedAt: "2026-10-21T13:00:00Z", url: "https://ssc.gov.in" },
-    { type: "Result", title: "Combined Higher Secondary (10+2) Level Exam 2025", hi: "संयुक्त उच्चतर माध्यमिक (10+2) स्तर परीक्षा 2025", org: "SSC", posted: "2026-10-21", publishedAt: "2026-10-21T11:20:00Z", url: "https://ssc.gov.in" },
-    { type: "Admit card", title: "Stenographer (आशुलिपिक), exam start date", hi: "आशुलिपिक, परीक्षा आरंभ तिथि", org: "BPSC", posted: "2026-10-21", publishedAt: "2026-10-21T09:00:00Z", url: "https://bpsc.bihar.gov.in" },
-    { type: "Result", title: "Assistant Teacher, Advt. A-5/E-1/2025", hi: "सहायक अध्यापक, विज्ञापन ए-5/ई-1/2025", org: "UPPSC", posted: "2026-10-21", publishedAt: "2026-10-21T07:30:00Z", url: "https://uppsc.up.nic.in" },
+    { type: "Job", title: "UGC NET December 2026", hi: "यूजीसी नेट दिसंबर 2026", org: "NTA", posted: "2026-10-08", last: "2026-10-28", url: "/notice/ugc-net-december-2026/", page: true },
+    { type: "Job", title: "SWAYAM exam, online application", hi: "स्वयं परीक्षा, ऑनलाइन आवेदन", org: "NTA", posted: "2026-10-09", last: "2026-11-01", url: "https://nta.ac.in" },
+    { type: "Job", title: "NIFT Entrance Exam 2027", hi: "निफ्ट प्रवेश परीक्षा 2027", org: "NTA", posted: "2026-10-16", last: "2026-11-16", url: "https://nta.ac.in" },
+    { type: "Job", title: "Junior Engineer Examination 2026", hi: "जूनियर इंजीनियर परीक्षा 2026", org: "SSC", posted: "2026-10-21", last: null, url: "https://ssc.gov.in" },
+    { type: "Job", title: "Lecturer, Textile Technology", hi: "प्रवक्ता, वस्त्र प्रौद्योगिकी", org: "UPPSC", posted: "2026-10-21", last: null, url: "https://uppsc.up.nic.in" },
+    { type: "Answer key", title: "Selection Posts Phase XIV, response sheets", hi: "सेलेक्शन पोस्ट फेज़ 14, उत्तर पत्रक", org: "SSC", posted: "2026-10-21", url: "https://ssc.gov.in" },
+    { type: "Result", title: "Constable (GD) in CAPFs, SSF and Rifleman (GD)", hi: "सीएपीएफ, एसएसएफ में कांस्टेबल (जीडी) और राइफलमैन (जीडी)", org: "SSC", posted: "2026-10-21", url: "https://ssc.gov.in" },
+    { type: "Result", title: "Combined Higher Secondary (10+2) Level Exam 2025", hi: "संयुक्त उच्चतर माध्यमिक (10+2) स्तर परीक्षा 2025", org: "SSC", posted: "2026-10-21", url: "https://ssc.gov.in" },
+    { type: "Admit card", title: "Stenographer (आशुलिपिक), exam start date", hi: "आशुलिपिक, परीक्षा आरंभ तिथि", org: "BPSC", posted: "2026-10-21", url: "https://bpsc.bihar.gov.in" },
+    { type: "Result", title: "Assistant Teacher, Advt. A-5/E-1/2025", hi: "सहायक अध्यापक, विज्ञापन ए-5/ई-1/2025", org: "UPPSC", posted: "2026-10-21", url: "https://uppsc.up.nic.in" },
   ];
-  // ---------- "New" = new since YOUR last visit ----------
-  // A visit ends after 30 minutes away. Within one visit (reloads, new tabs) the badges stay put;
-  // on the next visit, only notices published after the previous one are marked.
-  // First-time visitors: notices from the last 24 hours, at most the 5 most recent.
-  // Backfilled/catch-up notices (quiet: true) are never marked new.
-  const VISIT_GAP = 30 * 60 * 1000, FIRST_WINDOW = 24 * 3600 * 1000, FIRST_CAP = 3;
-  const pubTime = i => Date.parse(i.publishedAt || (i.posted + "T00:00:00+05:30"));
-  let since = null, firstVisit = true;
-  try {
-    const v = JSON.parse(localStorage.getItem("sc-visit") || "null");
-    const now = Date.now();
-    if (v && v.lastSeen) {
-      if (now - v.lastSeen > VISIT_GAP) { firstVisit = false; since = v.lastSeen; }   // a new visit
-      else { firstVisit = !!v.first; since = v.since ?? null; }                       // same visit: keep what was shown
-    }
-    const save = () => { try { localStorage.setItem("sc-visit", JSON.stringify({ lastSeen: Date.now(), since, first: firstVisit })); } catch (e) {} };
-    save();
-    setInterval(() => { if (!document.hidden) save(); }, 60 * 1000);
-    document.addEventListener("visibilitychange", () => { if (!document.hidden) save(); });
-  } catch (e) { /* no storage: behave like a first visit */ }
-  const FIRST_NEW = [...ITEMS].filter(i => !i.quiet && Date.now() - pubTime(i) < FIRST_WINDOW)
-    .sort((a, b) => pubTime(b) - pubTime(a)).slice(0, FIRST_CAP);
-  const isNew = i => !i.quiet && (firstVisit ? FIRST_NEW.includes(i) : pubTime(i) > since);
   const title = i => lang === "hi" ? i.hi : i.title;
   const org = i => lang === "hi" ? (ORG_HI[i.org] || i.org) : i.org;
   const fmtText = iso => new Date(iso + "T00:00:00").toLocaleDateString(t("locale"), { day: "numeric", month: "short" });
@@ -272,60 +238,8 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   }
   let cat = "all", q = "";
   // search matches English and Hindi words alike, whichever language is showing
-  const words = i => [i.title, i.hi, i.org, ORG_HI[i.org] || "", i.type, T.hi[i.type], i.tags || ""].join(" ").toLowerCase();
-
-  // How people actually type: abbreviations, nicknames and Hindi spellings point to the same notices.
-  const SYN = [
-    ["railway", "rrb", "रेलवे", "rail"], ["bank", "ibps", "sbi", "बैंक"],
-    ["police", "constable", "capf", "पुलिस", "कांस्टेबल", "sipahi", "सिपाही"],
-    ["10th", "matric", "matriculation", "10वीं", "हाईस्कूल", "high school"],
-    ["12th", "10+2", "intermediate", "inter", "12वीं", "इंटर", "higher secondary", "उच्चतर माध्यमिक"],
-    ["teacher", "अध्यापक", "शिक्षक", "lecturer", "प्रवक्ता", "professor", "प्रोफ़ेसर"],
-    ["cgl", "combined graduate level"], ["chsl", "combined higher secondary"],
-    ["steno", "stenographer", "आशुलिपिक"], ["je", "junior engineer", "जूनियर इंजीनियर", "engineer", "इंजीनियर"],
-    ["net", "ugc net", "नेट", "यूजीसी"], ["gd", "general duty", "जीडी"],
-    ["result", "results", "रिज़ल्ट", "रिजल्ट", "परिणाम", "merit", "selected", "चयनित"],
-    ["admit", "admit card", "hall ticket", "एडमिट", "प्रवेश पत्र"],
-    ["answer key", "answer", "key", "आंसर", "उत्तर कुंजी", "response sheet", "उत्तर पत्रक"],
-    ["job", "jobs", "vacancy", "bharti", "भर्ती", "नौकरी", "recruitment"],
-    ["ssc", "एसएससी", "staff selection"], ["nta", "एनटीए"], ["uppsc", "यूपीपीएससी"], ["bpsc", "बीपीएससी", "bihar", "बिहार"],
-    ["up", "uttar pradesh", "उत्तर प्रदेश", "uppsc"],
-  ];
-  const expand = w => {
-    const out = new Set([w]);
-    for (const g of SYN) if (g.some(x => x === w || (w.length >= 3 && x.startsWith(w)))) g.forEach(x => out.add(x));
-    return [...out];
-  };
-  // Typos: allow 1 wrong letter in words of 4–6 letters, 2 in longer words.
-  function near(a, b, max) {
-    if (Math.abs(a.length - b.length) > max) return false;
-    const prev = Array.from({ length: b.length + 1 }, (_, k) => k);
-    for (let i = 1; i <= a.length; i++) {
-      const cur = [i];
-      let rowMin = i;
-      for (let j = 1; j <= b.length; j++) {
-        cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
-        rowMin = Math.min(rowMin, cur[j]);
-      }
-      if (rowMin > max) return false;
-      prev.splice(0, prev.length, ...cur);
-    }
-    return prev[b.length] <= max;
-  }
-  const tokens = i => words(i).split(/[^\p{L}\p{N}+]+/u).filter(Boolean);
-  function wordHit(i, w) {
-    const text = words(i);
-    if (expand(w).some(x => text.includes(x))) return 2;          // exact or synonym
-    const max = w.length >= 7 ? 2 : w.length >= 4 ? 1 : 0;
-    if (max && tokens(i).some(tk => near(w, tk, max) || (tk.length > w.length && near(w, tk.slice(0, w.length), max)))) return 1;   // typo
-    return 0;
-  }
-  const qwords = () => q.split(/\s+/).filter(Boolean);
-  const qmatch = i => qwords().every(w => wordHit(i, w) > 0);
-  // Most useful first while searching: open jobs (closing soonest), admit cards, answer keys, results.
-  const TYPE_RANK = { "Job": 0, "Admit card": 2, "Answer key": 3, "Result": 4 };
-  const searchRank = i => (i.type === "Job" && !i.last ? 1 : TYPE_RANK[i.type] ?? 5);
-  const titleScore = i => { const tt = (i.title + " " + i.hi).toLowerCase(); return qwords().reduce((n, w) => n + (tt.startsWith(w) ? 3 : tt.includes(w) ? 2 : 0), 0); };
+  const words = i => [i.title, i.hi, i.org, ORG_HI[i.org] || "", i.type, T.hi[i.type]].join(" ").toLowerCase();
+  const qmatch = i => q.split(/\s+/).every(w => words(i).includes(w));
   const live = i => !i.last || left(i.last) >= 0;
   function setCat(c) {
     cat = c;
@@ -347,19 +261,16 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   function render() {
     // Jobs: closing soonest first (undated last). Everything else: newest first.
     const byClosing = (a, b) => (!a.last) - (!b.last) || (a.last || "").localeCompare(b.last || "") || b.posted.localeCompare(a.posted);
-    const byNewest = (a, b) => b.posted.localeCompare(a.posted) || pubTime(b) - pubTime(a);
-    const bySearch = (a, b) => searchRank(a) - searchRank(b) || titleScore(b) - titleScore(a) || (a.last || "9").localeCompare(b.last || "9") || b.posted.localeCompare(a.posted);
-    const rows = [...ITEMS].sort(q ? bySearch : cat === "Job" ? byClosing : byNewest).filter(i => live(i) && (cat === "all" || i.type === cat) && qmatch(i));
+    const byNewest = (a, b) => b.posted.localeCompare(a.posted);
+    const rows = [...ITEMS].sort(cat === "Job" ? byClosing : byNewest).filter(i => live(i) && (cat === "all" || i.type === cat) && qmatch(i));
     const hits = ITEMS.filter(i => live(i) && (!q || qmatch(i)));
     document.querySelectorAll(".tabs button").forEach(b => {
       const n = b.dataset.cat === "all" ? hits.length : hits.filter(i => i.type === b.dataset.cat).length;
       b.querySelector(".c").textContent = q ? n : "";
       b.classList.toggle("zero", !!q && n === 0);
     });
-    const nl = document.getElementById("newline"), nNew = ITEMS.filter(i => live(i) && isNew(i)).length;
-    nl.hidden = firstVisit || !nNew; nl.textContent = nNew ? t("sinceLast")(nNew) : "";
     document.getElementById("list").innerHTML = rows.map(i =>
-      `<li class="lr"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm">${fmt(i.posted)}</span><span class="t" title="${esc(title(i))}">${isNew(i) ? `<span class="new" title="${t("newBadge")}" aria-label="${t("newBadge")}"></span>` : ""}${esc(title(i))}</span><span class="hide-sm g">${org(i)}</span><span class="hide-sm g">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
+      `<li class="lr"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm">${fmt(i.posted)}</span><span class="t" title="${esc(title(i))}">${esc(title(i))}</span><span class="hide-sm g">${org(i)}</span><span class="hide-sm g">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
     ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
   }
   // Keyboard: ↓ / ↑ move through the results while searching, Enter opens the highlighted one.
@@ -387,59 +298,13 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     requestAnimationFrame(() => { render(); requestAnimationFrame(() => list.classList.remove("fade")); });
   }
   document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => { setCat(b.dataset.cat); update(); }));
-  // Shareable searches: ?q=ssc+gd opens with the search filled in; the address follows what you type.
-  let urlTimer, recentTimer;
-  function syncUrl() {
-    clearTimeout(urlTimer);
-    urlTimer = setTimeout(() => {
-      try {
-        const u = new URL(location.href);
-        if (q) u.searchParams.set("q", document.getElementById("q").value.trim()); else u.searchParams.delete("q");
-        history.replaceState(null, "", u);
-      } catch (e) {}
-    }, 400);
-  }
-  // Recent searches (this device only): saved once a search has results and you pause or open one.
-  const RECENT_KEY = "sc-recent";
-  const getRecent = () => { try { return JSON.parse(localStorage.getItem(RECENT_KEY) || "[]"); } catch (e) { return []; } };
-  function saveRecent(text) {
-    text = (text || "").trim();
-    if (text.length < 2) return;
-    const list = [text, ...getRecent().filter(x => x.toLowerCase() !== text.toLowerCase())].slice(0, 3);
-    try { localStorage.setItem(RECENT_KEY, JSON.stringify(list)); } catch (e) {}
-  }
-  const recentEl = document.getElementById("recent");
-  function showRecent() {
-    const r = getRecent();
-    const qv = document.getElementById("q").value;
-    recentEl.hidden = !!qv || !r.length || document.activeElement !== document.getElementById("q");
-    recentEl.innerHTML = `<span class="g">${t("recentLabel")}</span>` + r.map(x => `<button type="button" data-r="${esc(x)}">${esc(x)}</button>`).join("");
-  }
-  recentEl.addEventListener("mousedown", e => {
-    const b = e.target.closest("[data-r]");
-    if (!b) return;
-    e.preventDefault();
-    const qi = document.getElementById("q");
-    qi.value = b.dataset.r; qi.dispatchEvent(new Event("input")); qi.focus();
-  });
-  document.getElementById("q").addEventListener("focus", showRecent);
-  document.getElementById("q").addEventListener("blur", () => setTimeout(showRecent, 0));
-  list.addEventListener("click", e => { if (q && e.target.closest("a")) saveRecent(document.getElementById("q").value); });
-
   document.getElementById("q").addEventListener("input", e => {
     q = e.target.value.trim().toLowerCase();
     sel = -1;
     const before = cat;
     followSearch();
     if (cat !== before) update(); else render();
-    syncUrl(); showRecent();
-    clearTimeout(recentTimer);
-    if (q) recentTimer = setTimeout(() => { if (ITEMS.some(i => live(i) && qmatch(i))) saveRecent(e.target.value); }, 1500);
   });
-  try {
-    const startQ = new URL(location.href).searchParams.get("q");
-    if (startQ) { const qi = document.getElementById("q"); qi.value = startQ; q = startQ.trim().toLowerCase(); }
-  } catch (e) {}
   document.getElementById("lang").addEventListener("click", () => {
     lang = lang === "hi" ? "en" : "hi";
     try { localStorage.setItem("sc-lang", lang); } catch (e) {}
@@ -466,7 +331,6 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
         else if (e.key === "Enter" && n) {
           e.preventDefault();
           const row = rowsEls()[sel < 0 ? 0 : sel].querySelector("a.row");
-          saveRecent(qIn.value);
           if (row) row.click();
         }
         else if (e.key === "Escape") { qIn.value = ""; qIn.dispatchEvent(new Event("input")); qIn.blur(); }
