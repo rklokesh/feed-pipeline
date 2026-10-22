@@ -62,7 +62,6 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 .g { color: var(--grey); }
 .list li.lr > a.row > span:not(.t) { color: var(--grey); } /* only the notice title stays dark; deadline colours still show */
 .list li.lr > .pdf { color: var(--grey); }
-.list li.lr.fresh > a.row > span:first-child { color: var(--ink); } /* new notices: posted date stays dark like the title */
 .show-sm { display: none; }
 .num { font-variant-numeric: tabular-nums; }
 
@@ -86,7 +85,7 @@ main { margin-top: 36px; flex: 1; }
 .search input { all: unset; box-sizing: border-box; width: 100%; padding: 6px 0; border-bottom: 1px solid var(--line); }
 .search input::placeholder { color: var(--grey); }
 .search input:focus { border-bottom-color: var(--ink); }
-.tabs button { all: unset; cursor: pointer; color: var(--grey); transition: color .25s ease; padding-bottom: 9px; }
+.tabs button { all: unset; cursor: pointer; color: var(--grey); transition: color .25s ease; padding-bottom: 5px; }
 .list { transition: opacity .18s ease; }
 .list.fade { opacity: 0; }
 @media (prefers-reduced-motion: reduce) { .list, .tabs button, .tabs .ink { transition: none; } }
