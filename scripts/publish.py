@@ -91,7 +91,8 @@ def build():
             continue
         c = n.get("card") or {}
         pub = n.get("published_at") or n.get("first_seen")
-        posted = dt.datetime.fromisoformat(pub.replace("Z", "+00:00")).astimezone(IST).date().isoformat()
+        # "Posted" = the date the board issued the notice (pages.py reads it from the PDF), never our publish date
+        posted = n.get("notice_date") or dt.datetime.fromisoformat(n["first_seen"].replace("Z", "+00:00")).astimezone(IST).date().isoformat()
         it = {"type": c.get("type", "Job"), "title": c.get("title_en") or n.get("title"), "hi": c.get("title_hi") or c.get("title_en"),
               "org": n.get("org"), "posted": posted, "publishedAt": pub, "url": n.get("url"), "id": n["id"]}
         if n.get("slug") and (ROOT / "site" / "notice" / n["slug"] / "index.html").exists():

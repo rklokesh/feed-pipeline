@@ -53,6 +53,8 @@ Answer with ONE JSON object:
      // Exam date, Educational qualification, Age limit (with as-on date), Selection process, Advertisement number,
      // for results/admit cards: how to download, roll-number/district info, etc. Values short; dates like '14 Dec 2026'.
  "fees": [ {"cat_en": "General / OBC", "cat_hi": "सामान्य / अन्य पिछड़ा वर्ग", "amount": "₹100"} ],
+ "notice_date": "YYYY-MM-DD: the date the board issued THIS notice (e.g. 'Dated: 08.10.2026', 'Date of publication', the date
+                 printed at the top or bottom of the notice / press note). Not the exam date, not the last date. null if not printed.",
  "apply_start": "YYYY-MM-DD or null", "last_date": "YYYY-MM-DD or null (last date to apply)", "exam_date": "YYYY-MM-DD or null",
  "apply_url": "official application URL or null", "official_site": "official website URL or null",
  "changes_from_notes": "one line: what you changed because of the editor notes, or empty"
@@ -152,6 +154,17 @@ def valid_date(v) -> str | None:
         return None
 
 
+def official_date(n: dict) -> str:
+    """The date the board issued the notice; falls back to the day our watcher first saw it on the board's site."""
+    seen = dt.datetime.fromisoformat(n["first_seen"].replace("Z", "+00:00")).astimezone(IST).date()
+    d = valid_date((n.get("page") or {}).get("notice_date"))
+    if d:
+        dd = dt.date.fromisoformat(d)
+        if seen - dt.timedelta(days=400) <= dd <= seen:   # sane: issued before we saw it, not ancient
+            return d
+    return seen.isoformat()
+
+
 def render(n: dict, slug: str) -> str:
     c, pg = n.get("card") or {}, n.get("page") or {}
     typ = c.get("type", "Job")
@@ -185,7 +198,10 @@ def render(n: dict, slug: str) -> str:
     hi["checked"] = (f"यह जानकारी आधिकारिक सूचना से ली गई है। {d_hi(checked)} को जाँची गई। "
                      "यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।")
 
-    rows = [("by", "byV")]
+    posted = official_date(n)
+    en["postedL"], hi["postedL"] = "Notice date", "सूचना की तिथि"
+    en["postedV"], hi["postedV"] = d_en(posted), d_hi(posted)
+    rows = [("by", "byV"), ("postedL", "postedV")]
     for k, r in enumerate(pg.get("rows") or []):
         if not (r.get("label_en") and r.get("value_en")):
             continue
@@ -260,6 +276,7 @@ def main():
                     n["card"][k] = valid_date(page[k]) or n["card"].get(k)
             if page.get("h1_en"):
                 n["card"]["title_en"], n["card"]["title_hi"] = page["h1_en"], page.get("h1_hi") or n["card"].get("title_hi")
+        n["notice_date"] = official_date(n)
         slug = unique_slug(n, taken)
         n["slug"] = slug
         out = SITE / "notice" / slug / "index.html"
