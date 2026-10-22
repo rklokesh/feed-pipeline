@@ -1,0 +1,69 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://hssc.gov.in/advertisement",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "1 Advt. No. 06/2026 HARYANA STAFF SELECTION COMMISSION BAYS NO.67-70, SECTOR-2, PANCHKULA – 134151",
+      "source": "rule",
+      "value": "06/2026"
+    },
+    "apply_last": {
+      "evidence": "pening Date for submission of online application 24.06.2026 Closing Date for Submission of online Application 30.06.2026 (11:59 PM) Correction/Edit in Application form 01.07.2026 to 02.07.2026 (11:59 PM) Fee detail No fee is re",
+      "source": "rule",
+      "value": "2026-06-30"
+    },
+    "apply_or_official_url": {
+      "evidence": "CET) Advt. No. 01/2025 Group-C through the URL address i.e. https://adv062026.hryssc.com from 24.06.2026 to 30.06.2026 till 11.59 P.M. Thereafter, the website link will",
+      "source": "rule",
+      "value": "https://adv062026.hryssc.com"
+    },
+    "apply_start": {
+      "evidence": "AT A GLANCE Item(s) Timeline Date of Publication 22.06.2026 Opening Date for submission of online application 24.06.2026 Closing Date for Submission of online Application 30.06.2026 (11:59 PM) Correction/Edit in Application for",
+      "source": "rule",
+      "value": "2026-06-24"
+    },
+    "apply_url": {
+      "evidence": {
+        "apply_url": "https://adv062026.hryssc.com"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://adv062026.hryssc.com"
+    },
+    "fee": {
+      "evidence": {
+        "female": "No fee is required to be deposited by any candidate for applying against any post(s).",
+        "general": "No fee is required to be deposited by any candidate for applying against any post(s).",
+        "obc": "No fee is required to be deposited by any candidate for applying against any post(s).",
+        "pwd": "No fee is required to be deposited by any candidate for applying against any post(s).",
+        "sc_st": "No fee is required to be deposited by any candidate for applying against any post(s)."
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "female": 0,
+        "general": 0,
+        "obc": 0,
+        "pwd": 0,
+        "sc_st": 0
+      }
+    }
+  },
+  "first_seen": "2026-10-22T21:48:42+00:00",
+  "id": "dd8bb24efbce",
+  "kind": "notification",
+  "org": "HSSC",
+  "pdf": {
+    "bytes": 4686871,
+    "pages": 81,
+    "sha256": "9de3015c5fd240fffcf25a9326445337cb7ef6f88f89b9f42188bef018960616",
+    "text_kind": "text"
+  },
+  "source_id": "hssc-adverts",
+  "status": "pending_review",
+  "title": "Advt. No. 06/2026 (Group-C) 2026-06-22",
+  "url": "https://hssc.gov.in/file/ac1f23cd-9d9c-1328-819e-ef25fa0a0061/advertisements"
+}

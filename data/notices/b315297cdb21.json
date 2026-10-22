@@ -1,0 +1,33 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://hssc.gov.in/advertisement",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "KULA-134154 (www.hssc.gov.in) PUBLIC NOTICE In reference to Advertisement No. 05/2026 published on 18.06.2026 regarding Common Eligibility Test (CET) for Group-D posts, which is available o",
+      "source": "rule",
+      "value": "05/2026 published on 18.06.2026"
+    },
+    "apply_last": {
+      "evidence": "T) for Group-D posts have been extended as under:- Extended Closing Date for 05.07.2026 (11:59 PM) submission of online Application form Closing Date for deposit fee 08.07.2026 (11:59 PM) Correction/Edit in Applicatio",
+      "source": "rule",
+      "value": "2026-07-05"
+    }
+  },
+  "first_seen": "2026-10-22T21:48:42+00:00",
+  "id": "b315297cdb21",
+  "kind": "update",
+  "org": "HSSC",
+  "pdf": {
+    "bytes": 414760,
+    "pages": 1,
+    "sha256": "93b572263cfdc7d583255c3a0990c78bb48bac2adf45787b99830c19dba1b540",
+    "text_kind": "text"
+  },
+  "source_id": "hssc-adverts",
+  "status": "pending_review",
+  "title": "Advt. No. 05/2026 (Group-D) Closing Date Extension 2026-07-03",
+  "url": "https://hssc.gov.in/file/ac1f23cd-9d9c-1328-819f-293dcbcf0080/advertisements"
+}
