@@ -27,6 +27,7 @@ for (const slug of slugs) {
     const page = await browser.newPage();
     await page.addInitScript(l => { try { localStorage.setItem("sc-lang", l); } catch (e) {} }, lang);
     await page.goto(`http://127.0.0.1:${port}/notice/${slug}/`, { waitUntil: "networkidle" });
+    await page.evaluate(() => document.fonts.ready);   // logo wordmark font must be in before printing
     await page.emulateMedia({ media: "print" });
     const out = join(dir, slug, `sarkarichart-${slug}-${lang}.pdf`);
     await page.pdf({ path: out, format: "A4", printBackground: true, margin: { top: "16mm", bottom: "16mm", left: "14mm", right: "14mm" } });
