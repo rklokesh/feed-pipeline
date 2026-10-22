@@ -48,9 +48,8 @@
 @keyframes glow { 0%, 100% { text-shadow: 0 0 0 transparent; opacity: 1; } 50% { text-shadow: 0 0 4px rgba(255, 255, 255, .55); opacity: .5; } }
 @media (prefers-reduced-motion: reduce) { .newtag { animation: none; } }
 .t .newtag { margin-right: 8px; vertical-align: 1px; }
-/* NIL = no deadline: lighter and italic so it reads as 'nothing here', not as data */
+/* NIL = no deadline: lighter so it reads as 'nothing here', not as data */
 .list li.lr > a.row > span .nil { color: color-mix(in srgb, var(--grey) 62%, var(--page)); }
-html[lang="en"] .nil { font-style: italic; } /* Devanagari has no true italic, so Hindi keeps upright */
 /* Quick tooltip (the browser's own one waits about a second) */
 .tip { position: relative; }
 .tip::after { content: attr(data-tip); position: absolute; left: 50%; bottom: calc(100% + 6px); transform: translate(-50%, 3px); white-space: nowrap;
