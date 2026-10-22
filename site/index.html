@@ -50,6 +50,13 @@
 @keyframes nudge { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(3px); } }
 @media (prefers-reduced-motion: reduce) { .newtag { animation: none; } }
 .t .newtag { margin-right: 8px; vertical-align: -2px; }
+.pc .slot { display: inline-flex; align-items: center; gap: 3px; }
+.rsiren { display: inline-block; line-height: 0; vertical-align: -2px; }
+.rsiren img { width: 14px; height: 14px; display: block; }
+.t .rsiren { margin-right: 6px; }
+.rsiren.show-sm { display: none; }
+@media (max-width: 640px) { .rsiren.show-sm { display: inline-block; } }
+
 /* NIL = no deadline: lighter so it reads as 'nothing here', not as data */
 .list li.lr > a.row > span .nil { color: color-mix(in srgb, var(--grey) 62%, var(--page)); }
 /* Quick tooltip (the browser's own one waits about a second) */
@@ -515,6 +522,8 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   // generic PDF file icon (red outlined page, folded corner)
   const PDFICON = '<svg class="pdfi" width="16" height="19.3" viewBox="0 0 34 41" aria-hidden="true"><path d="M4 0h20.2L34 9.8V37a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z" fill="#DC1C1C"/><path d="M34 10.6V37a4 4 0 0 1-4 4H2.2z" fill="#BB1013"/><path d="M24.2 0L34 9.8V11h-8.3a1.5 1.5 0 0 1-1.5-1.5z" fill="#8E0A0D" opacity=".45"/><path d="M24.2 0L34 9.8h-8.3a1.5 1.5 0 0 1-1.5-1.5z" fill="#EE6560"/><rect x="9" y="15.2" width="16" height="1.7" fill="#fff"/><rect x="9" y="20.4" width="16" height="1.7" fill="#fff"/><text x="17" y="34.6" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#fff">PDF</text></svg>';
   const DL = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>';
+  // Closing-soon rows carry the same flashing siren as the tab (same slot and size as the NEW arrow)
+  const SIREN = '<picture class="rsiren" aria-hidden="true"><source srcset="/siren-still.png" media="(prefers-reduced-motion: reduce)"><img src="/siren.webp" width="14" height="14" alt="" decoding="async"></picture>';
   // "Closing soon" = open jobs whose last date is within a week, soonest first.
   const SOON_DAYS = 7;
   const inCat = (i, c) => c === "all" ? true : c === "soon" ? i.type === "Job" && !!i.last && left(i.last) <= SOON_DAYS : i.type === c;
@@ -536,7 +545,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     const nl = document.getElementById("newline"), nNew = ITEMS.filter(i => live(i) && isNew(i)).length;
     const showNl = !firstVisit && nNew > 0; nl.classList.toggle("off", !showNl); nl.textContent = showNl ? t("sinceLast")(nNew) : "\u00a0";
     document.getElementById("list").innerHTML = rows.slice(0, shown).map(i =>
-      `<li class="lr${isNew(i) ? " fresh" : ""}"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm"><span class="pc"><span>${fmt(i.posted)}</span><span>${isNew(i) ? `<img class="newtag" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" width="23" height="14">` : ""}</span></span></span><span class="t" data-full="${esc(title(i))}">${isNew(i) ? `<img class="newtag show-sm" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" width="23" height="14">` : ""}${esc(title(i))}</span><span class="hide-sm g cut" data-full="${esc(org(i) || "")}">${esc(org(i) || "")}</span><span class="hide-sm g cut" data-full="${esc(t(i.type))}">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
+      `<li class="lr${isNew(i) ? " fresh" : ""}"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm"><span class="pc"><span>${fmt(i.posted)}</span><span class="slot">${isNew(i) ? `<img class="newtag" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" width="23" height="14">` : ""}${inCat(i, "soon") ? SIREN : ""}</span></span></span><span class="t" data-full="${esc(title(i))}">${inCat(i, "soon") ? SIREN.replace('class="rsiren"', 'class="rsiren show-sm"') : ""}${isNew(i) ? `<img class="newtag show-sm" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" width="23" height="14">` : ""}${esc(title(i))}</span><span class="hide-sm g cut" data-full="${esc(org(i) || "")}">${esc(org(i) || "")}</span><span class="hide-sm g cut" data-full="${esc(t(i.type))}">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
     ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
     // One long page, revealed 50 rows at a time (no "page 2"): Ctrl+F, search and the back button keep working.
     const more = document.getElementById("more");
