@@ -275,6 +275,22 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
     { type: "Admit card", title: "Stenographer (आशुलिपिक), exam start date", hi: "आशुलिपिक, परीक्षा आरंभ तिथि", org: "BPSC", posted: "2026-10-21", publishedAt: "2026-10-21T09:00:00Z", url: "https://bpsc.bihar.gov.in" },
     { type: "Result", title: "Assistant Teacher, Advt. A-5/E-1/2025", hi: "सहायक अध्यापक, विज्ञापन ए-5/ई-1/2025", org: "UPPSC", posted: "2026-10-21", publishedAt: "2026-10-21T07:30:00Z", url: "https://uppsc.up.nic.in" },
   ];
+
+  // ---- TEST ONLY: ?preview=… or ?demo adds ~150 made-up rows to judge a full list. Normal visitors never see them. ----
+  if (/[?&](preview|demo)\b/.test(location.search)) (function demo() {
+    const orgs = [["SSC","एसएससी"],["UPSC","यूपीएससी"],["RRB","आरआरबी"],["IBPS","आईबीपीएस"],["SBI","एसबीआई"],["UPPSC","यूपीपीएससी"],["BPSC","बीपीएससी"],["RPSC","आरपीएससी"],["MPESB","एमपीईएसबी"],["DSSSB","डीएसएसएसबी"],["NTA","एनटीए"],["UPSSSC","यूपीएसएसएससी"],["Indian Army","भारतीय सेना"],["ISRO","इसरो"],["LIC","एलआईसी"]];
+    const posts = [["Constable","कांस्टेबल"],["Assistant Teacher","सहायक अध्यापक"],["Clerk","लिपिक"],["Junior Engineer","जूनियर इंजीनियर"],["Staff Nurse","स्टाफ नर्स"],["Patwari","पटवारी"],["Stenographer","आशुलिपिक"],["Assistant Professor","सहायक प्राध्यापक"],["Forest Guard","वन रक्षक"],["Data Entry Operator","डेटा एंट्री ऑपरेटर"],["Technician Grade III","तकनीशियन ग्रेड 3"],["Probationary Officer","प्रोबेशनरी अधिकारी"],["Lower Division Clerk","निम्न श्रेणी लिपिक"],["Agniveer","अग्निवीर"],["Lab Assistant","प्रयोगशाला सहायक"]];
+    const kinds = [["Job","Recruitment 2026","भर्ती 2026"],["Result","Final result","अंतिम परिणाम"],["Admit card","Admit card","एडमिट कार्ड"],["Answer key","Provisional answer key","अनंतिम उत्तर कुंजी"],["Job","Online application","ऑनलाइन आवेदन"]];
+    const base = Date.parse("2026-10-21T12:00:00Z");
+    for (let n = 0; n < 150; n++) {
+      const o = orgs[(n * 7) % orgs.length], p = posts[(n * 11) % posts.length], k = kinds[(n * 3) % kinds.length];
+      const t = base - (n + 1) * 7.2 * 3600e3;
+      const d = new Date(t + 5.5 * 3600e3).toISOString().slice(0, 10);
+      const last = k[0] === "Job" && n % 4 !== 0 ? new Date(t + ((n % 9) + 6) * 864e5).toISOString().slice(0, 10) : undefined;
+      ITEMS.push({ type: k[0], title: `${p[0]}, ${k[1]}`, hi: `${p[1]}, ${k[2]}`, org: o[0], orgHi: o[1], posted: d, publishedAt: new Date(t).toISOString(), last, url: "#" });
+      ORG_HI[o[0]] = ORG_HI[o[0]] || o[1];
+    }
+  })();
   // ---------- "New" = new since YOUR last visit ----------
   // A visit ends after 30 minutes away. Within one visit (reloads, new tabs) the badges stay put;
   // on the next visit, only notices published after the previous one are marked.
