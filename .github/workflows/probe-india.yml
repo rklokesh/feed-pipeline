@@ -1,0 +1,31 @@
+name: Probe India boards (links dump)
+
+# Run by hand: dumps every link on the given board pages (from the Mac mini, Indian connection) into reports/links/.
+on:
+  workflow_dispatch:
+    inputs:
+      targets:
+        description: "space-separated id=url pairs"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: [self-hosted, india]
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Probe
+        run: |
+          export PATH="$HOME/.sarkarichart-venv/bin:$PATH"
+          python scripts/probe_links.py ${{ inputs.targets }}
+      - name: Save
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/links
+          git diff --cached --quiet && exit 0
+          git commit -m "Probe links $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 8; done
