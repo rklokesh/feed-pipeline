@@ -94,6 +94,8 @@ def build():
         posted = dt.datetime.fromisoformat(pub.replace("Z", "+00:00")).astimezone(IST).date().isoformat()
         it = {"type": c.get("type", "Job"), "title": c.get("title_en") or n.get("title"), "hi": c.get("title_hi") or c.get("title_en"),
               "org": n.get("org"), "posted": posted, "publishedAt": pub, "url": n.get("url"), "id": n["id"]}
+        if n.get("slug") and (ROOT / "site" / "notice" / n["slug"] / "index.html").exists():
+            it["url"], it["page"] = f"/notice/{n['slug']}/", True   # our own clean page (with PDF)
         if it["type"] == "Job" and c.get("last_date"):
             it["last"] = c["last_date"]
         items.append(it)

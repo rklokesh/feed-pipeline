@@ -1,11 +1,16 @@
 name: Publish approved notices
 
-# You add the "approve" or "reject" label to a review issue -> this records the decision,
-# rebuilds the homepage list and deploys the site.
+# You add the "approve" or "reject" label to a review issue -> this records the decision, writes a clean
+# notice page for each approved notice (AI reads the official PDF + your comments), rebuilds the homepage and deploys.
 on:
   issues:
     types: [labeled]
   workflow_dispatch:
+    inputs:
+      rebuild_pages:
+        description: "Rewrite every notice page (re-reads your comments)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -19,26 +24,32 @@ jobs:
   decide:
     if: github.event_name == 'workflow_dispatch' || github.event.label.name == 'approve' || github.event.label.name == 'reject'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install requests==2.32.3
+          cache: pip
+      - run: pip install -r requirements.txt
       - name: Record decisions (this one and any others labelled meanwhile)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/publish.py sweep
+      - name: Write notice pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/pages.py ${{ inputs.rebuild_pages && '--all' || '' }}
       - name: Rebuild homepage list
         run: python scripts/publish.py build
       - name: Save
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data site/index.html
+          git add data site
           git diff --cached --quiet && { echo "no changes"; exit 0; }
-          git commit -m "Publish: decisions $(date -u +%Y-%m-%dT%H:%MZ)"
+          git commit -m "Publish: decisions and pages $(date -u +%Y-%m-%dT%H:%MZ)"
           for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
   deploy:
     needs: decide
