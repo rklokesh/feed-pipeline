@@ -18,7 +18,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -39,12 +39,16 @@ jobs:
           key: pdfs-${{ hashFiles('site/notice/**/*.html', 'scripts/make_pdfs.mjs', 'site/logo*.png') }}
       - name: Install PDF printer
         if: steps.pdfcache.outputs.cache-hit != 'true'
+        timeout-minutes: 8          # a stuck apt mirror must never block the site deploy
+        continue-on-error: true
         run: |
           npm i --no-save playwright@1.48.0
           npx playwright install --with-deps chromium
           sudo apt-get install -y -qq fonts-noto-core fonts-noto-ui-core >/dev/null || true
       - name: Make PDFs of notice pages (English + Hindi)
         if: steps.pdfcache.outputs.cache-hit != 'true'
+        timeout-minutes: 8
+        continue-on-error: true
         run: node scripts/make_pdfs.mjs site
       - name: Deploy
         run: npx --yes wrangler@3 pages deploy site --project-name sarkarichart --branch main --commit-dirty=true
