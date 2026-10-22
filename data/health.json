@@ -10,7 +10,7 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 8,
-    "last_ok": "2026-10-22T20:50:20+00:00"
+    "last_ok": "2026-10-22T23:19:48+00:00"
   },
   "bsf-recruitment": {
     "consecutive_failures": 0,
@@ -22,7 +22,7 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 0,
-    "last_ok": "2026-10-22T20:50:20+00:00",
+    "last_ok": "2026-10-22T23:19:48+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
   },
   "coast-guard": {
@@ -89,8 +89,8 @@
   },
   "ibps-home": {
     "cert_repair": "SSLError: [SSL: UNEXPECTED_MESSAGE] unexpected message (_ssl.c:1010)",
-    "consecutive_failures": 0,
-    "last_error": "",
+    "consecutive_failures": 1,
+    "last_error": "SSLError: HTTPSConnectionPool(host='www.ibps.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: UNEXPECTED_MESSAGE] unexpected message (_ssl.c:1010)')))",
     "last_links": 0,
     "last_ok": "2026-10-22T20:50:20+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
@@ -99,7 +99,7 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 1,
-    "last_ok": "2026-10-22T20:50:20+00:00"
+    "last_ok": "2026-10-22T23:19:48+00:00"
   },
   "itbp-recruitment": {
     "consecutive_failures": 0,
@@ -114,10 +114,10 @@
     "last_ok": "2026-10-22T21:08:30+00:00"
   },
   "lic-careers": {
-    "consecutive_failures": 1,
-    "last_error": "Error: Page.goto: net::ERR_TIMED_OUT at https://licindia.in/careers\nCall log:\nnavigating to \"https://licindia.in/careers\", waiting until \"networkidle\"\n",
+    "consecutive_failures": 0,
+    "last_error": "",
     "last_links": 0,
-    "last_ok": "2026-10-22T17:12:36+00:00",
+    "last_ok": "2026-10-22T23:19:48+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
   },
   "mpesb-home": {
@@ -161,7 +161,7 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 820,
-    "last_ok": "2026-10-22T20:50:20+00:00"
+    "last_ok": "2026-10-22T23:19:48+00:00"
   },
   "rbi-opportunities": {
     "consecutive_failures": 0,
@@ -216,13 +216,13 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 20,
-    "last_ok": "2026-10-22T20:50:20+00:00"
+    "last_ok": "2026-10-22T23:19:48+00:00"
   },
   "ssc-notice-board": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 11,
-    "last_ok": "2026-10-22T20:50:20+00:00"
+    "last_ok": "2026-10-22T23:19:48+00:00"
   },
   "tnpsc-home": {
     "consecutive_failures": 0,
@@ -252,7 +252,7 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 40,
-    "last_ok": "2026-10-22T20:50:20+00:00"
+    "last_ok": "2026-10-22T23:19:48+00:00"
   },
   "upsc-active-exams": {
     "consecutive_failures": 0,
