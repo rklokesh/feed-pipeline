@@ -1,7 +1,7 @@
 # SarkariChart — Handover
 
 Everything needed to continue this project from any Claude account (or by a person).
-Last updated: 22 Oct 2026. Owner: the site owner.
+Last updated: 22 Oct 2026 (evening). Owner: the site owner.
 
 **To continue with a new Claude account:** connect your Mac folder `Sarkari Chart` (or give it the GitHub repo),
 then say: *"Read docs/HANDOVER.md and docs/PLAN.md in the sarkarichart repo and continue from 'Next steps'."*
@@ -31,6 +31,8 @@ A calm, fast, trustworthy Indian govt-job alert site — a 10x better SarkariRes
 | Logo source files | `Sarkari Chart/sarkarichart-6b-stacked.svg` (current), earlier concepts in the same folder |
 | Design preview (old Claude artifact) | copy saved as `docs/design-preview.html` |
 | Self-hosted runner script (for India-only sites, later) | `Sarkari Chart/setup-runner.sh` |
+| Review queue (approve/reject) | GitHub → `rklokesh/sarkarichart` → Issues (labels `review`, `approve`, `reject`) |
+| Plan / research doc (Claude Docs, old account) | https://claude.ai/artifact/REDXLjETKWT4p4gK773PPJ — copy in `docs/PLAN.md` |
 
 ## 3. How the system works (all free tiers)
 
@@ -68,12 +70,19 @@ deploy.yml: builds notice-page PDFs (cached; only rebuilt when notice pages chan
 - Full Hindi mode: not one English word left (except the Esc key).
 - Every link to official sites/PDFs opens in a new tab. Our notice page can be downloaded as our own PDF (logo, both languages).
 - Speed: hover/touch prefetch of our own pages; no images except tiny SVGs; back-to-top button.
+- Announcement strip at the very top (soft beige, WhatsApp icon, text + link, × to close; remembered per visitor by `data-id`;
+  shorter text on phones; EN/HI; hidden automatically while `data-href` is empty). Change `data-id` to re-show it for a new message.
 - Rejected ideas (don't redo): Press-K command palette, boxed search, tag frames on tabs, pillars/elephants in margins,
   click sounds, recent-search chips (parked — a reminder exists), bookmark pop-up (parked).
 
 ## 5. Next steps (in order)
 
-1. **Approve the 21 waiting review cards** (GitHub app → Issues). First real notices go live. ← we are here
+1. **Approve the 21 waiting review cards** (GitHub app → Issues #1–#21; #2 and #6 are the same SBI ad — reject one).
+   First real notices go live. ← we are here
+1b. **Lead list:** the owner creates a WhatsApp Channel "सरकारी चार्ट – SarkariChart" (and optionally Telegram) and shares the link;
+   put it in the strip's `data-href` on the homepage and notice pages. Then: post approved notices to the channel,
+   add a "Share on WhatsApp" button on notice pages, and later an email sign-up stored in a free Cloudflare D1 database
+   (WhatsApp followers cannot be exported; email is the owned list).
 2. **Notice page per approved notice** (template = `site/notice/ugc-net-december-2026/`), so rows open our page
    (key dates, fees, eligibility, official links, our PDF) instead of the raw official PDF.
 3. **Trust details:** "Checked on <time>" + official source link on each notice; corrections note.
@@ -89,4 +98,10 @@ deploy.yml: builds notice-page PDFs (cached; only rebuilt when notice pages chan
   `http.extraheader` (never print the token).
 - Verify every change in a headless browser (desktop + phone widths, English + Hindi, light + dark) before deploying.
 - When copying files to the Mac, check a sha256 — one truncated upload once broke the live page.
+- **Important:** `site/index.html` contains the published notice list (between `/*ITEMS:START*/` and `/*ITEMS:END*/`),
+  written by the publish workflow. After hand-editing or replacing that file, always `git pull` first and then run
+  `python3 scripts/publish.py build`, otherwise approved notices are wiped from the homepage.
+- Reminders already scheduled in the old Claude session (Sun 25 Oct): bookmark pop-up idea; recent-searches redesign.
+- Keep this file current: update it whenever something important changes, and copy it to the Mac folder root
+  (`Sarkari Chart/HANDOVER.md`) as well as `docs/HANDOVER.md` in the repo.
 - The preview (old Claude artifact) and live site were kept identical except for preview-only demo rows.
