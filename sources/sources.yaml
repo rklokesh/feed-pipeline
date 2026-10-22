@@ -164,8 +164,14 @@ sources:
     runner: india
   - id: ukpsc-home
     org: UKPSC
-    url: https://psc.uk.gov.in/
-    render: js
+    url: https://psc.uk.gov.in/candidate-corner/recruitment   # home page only links to these sub-pages
+    render: static
+    runner: india
+
+  - id: ukpsc-results
+    org: UKPSC
+    url: https://psc.uk.gov.in/candidate-corner/results
+    render: static
     runner: india
 
   # ---- Aggregated official sources ----
