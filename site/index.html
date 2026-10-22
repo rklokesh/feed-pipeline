@@ -588,6 +588,8 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     requestAnimationFrame(() => ftip.classList.add("on"));
   });
   document.getElementById("list").addEventListener("mouseleave", () => { ftipFor = null; ftip.classList.remove("on"); });
+  // the list is re-drawn on tab switch/search: forget the old row so the next hover always shows the tooltip
+  new MutationObserver(() => { ftipFor = null; ftip.classList.remove("on"); }).observe(document.getElementById("list"), { childList: true });
   addEventListener("scroll", () => { ftipFor = null; ftip.classList.remove("on"); }, { passive: true });
   // The whole row is the link: a tap anywhere on the row (gaps included) opens the notice; the PDF icon keeps its own job.
   document.getElementById("list").addEventListener("click", e => {
