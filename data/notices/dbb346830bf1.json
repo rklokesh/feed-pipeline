@@ -1,12 +1,28 @@
 {
   "baseline_sample": true,
   "board_url": "https://ssc.gov.in/home/notice-board",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Combined Higher Secondary Level (CHSL)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Staff Selection Commission has declared the final result for the Combined Higher Secondary (10+2) Level Examination, 2025, recommending 3515 candidates provisionally.",
+    "summary_hi": "कर्मचारी चयन आयोग ने संयुक्त उच्च माध्यमिक (10+2) स्तर परीक्षा 2025 के लिए अंतिम परिणाम घोषित कर दिया है, जिसमें 3515 उम्मीदवारों की अनंतिम रूप से सिफारिश की गई है।",
+    "title_en": "SSC Combined Higher Secondary Level CHSL Examination 2025 Final Result",
+    "title_hi": "कर्मचारी चयन आयोग संयुक्त उच्च माध्यमिक स्तर परीक्षा 2025 अंतिम परिणाम",
+    "type": "Result",
+    "vacancies": 3522
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "dbb346830bf1",
+  "issue": 19,
   "kind": "result",
   "org": "SSC",
   "pdf": {
@@ -16,7 +32,7 @@
     "text_kind": "text"
   },
   "source_id": "ssc-notice-board",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "Combined Higher Secondary (10+2) Level Examination, 2025: Declaration of Final Result",
   "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_final_chsl_2025_07102026.pdf"
 }

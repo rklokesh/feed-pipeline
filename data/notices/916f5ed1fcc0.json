@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://uppsc.up.nic.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Regional Inspector (Technical)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Uttar Pradesh Public Service Commission has released the final result for the Regional Inspector Technical Examination 2020. Candidates can check their selection status.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने क्षेत्रीय निरीक्षक प्राविधिक परीक्षा 2020 का अंतिम परिणाम जारी कर दिया है। उम्मीदवार अपनी चयन स्थिति की जांच कर सकते हैं।",
+    "title_en": "UPPSC Regional Inspector Technical Exam 2020 Final Result",
+    "title_hi": "उत्तर प्रदेश लोक सेवा आयोग क्षेत्रीय निरीक्षक प्राविधिक परीक्षा 2020 अंतिम परिणाम",
+    "type": "Result",
+    "vacancies": 11
+  },
   "extraction": {
     "ai": null
   },
@@ -13,6 +28,7 @@
   },
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "916f5ed1fcc0",
+  "issue": 12,
   "kind": "result",
   "org": "UPPSC",
   "pdf": {
@@ -22,7 +38,7 @@
     "text_kind": "text"
   },
   "source_id": "uppsc-home",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "3. LIST OF PROVISIONALLY SELECTED CANDIDATES IN ADVT. NO. A-2/E-1/2020, REGIONAL I.. Visible upto : 16/11/2026",
   "url": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmbO3OUZentgvOzjioxzzCo"
 }

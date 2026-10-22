@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://sbi.bank.in/web/careers/current-openings",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "scribe guidelines",
+    "summary_en": "Guidelines for using a scribe for the SBI Junior Associates recruitment examination.",
+    "summary_hi": "भारतीय स्टेट बैंक कनिष्ठ सहायक भर्ती परीक्षा के लिए श्रोता के उपयोग हेतु दिशा-निर्देश।",
+    "title_en": "SBI Junior Associates Scribe Guidelines",
+    "title_hi": "भारतीय स्टेट बैंक कनिष्ठ सहायक श्रोता दिशा निर्देश",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -27,7 +42,7 @@
     "text_kind": "text"
   },
   "source_id": "sbi-careers",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "SCRIBE GUIDELINES (NEW)",
   "url": "https://sbi.bank.in/webfiles/uploads/files_2627/09/SCRIBE_GUIDELINES.pdf"
 }

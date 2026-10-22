@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://bpsc.bihar.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "72nd CCE Preliminary",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Exam postponement notice, not a new job opening, result, admit card, or answer key.",
+    "summary_en": "The 72nd Combined Preliminary Competitive Examination scheduled for 26 July 2026 has been postponed due to unavoidable reasons. A new exam date will be announced later.",
+    "summary_hi": "अरिहार्य कारणों से 26 जुलाई 2026 को होने वाली 72वीं संयुक्त प्रारंभिक प्रतियोगिता परीक्षा स्थगित कर दी गई है। नई परीक्षा तिथि की सूचना बाद में दी जाएगी।",
+    "title_en": "BPSC 72nd CCE Preliminary Examination Postponed",
+    "title_hi": "बिहार लोक सेवा आयोग 72वीं प्रारंभिक परीक्षा स्थगित",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +31,7 @@
     "text_kind": "ocr"
   },
   "source_id": "bpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Important Notice :- Regarding Postponement of 72nd CCE (Preliminary) Competitive Examination.",
   "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Regarding_postpone_72nd_BPSC_BPSC-20260720-u768lx.pdf"
 }

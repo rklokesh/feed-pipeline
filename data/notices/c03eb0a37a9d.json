@@ -1,15 +1,31 @@
 {
   "board_url": "https://www.ibps.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-08-01",
+    "last_date": "2026-07-21",
+    "list": true,
+    "posts": "Probationary Officer / Management Trainee",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Apply online for the IBPS Common Recruitment Process for Probationary Officers and Management Trainees CRP PO/MT-XVI across participating banks.",
+    "summary_hi": "भाग लेने वाले बैंकों में प्रोबेशनरी ऑफिसर और मैनेजमेंट ट्रेनी के पदों के लिए आईबीपीएस की सामान्य भर्ती प्रक्रिया के वास्ते ऑनलाइन आवेदन करें।",
+    "title_en": "IBPS Probationary Officer and Management Trainee CRP PO MT XVI Exam 2026",
+    "title_hi": "आईबीपीएस प्रोबेशनरी ऑफिसर और मैनेजमेंट ट्रेनी सीआरपी पीओ एमटी सोलहवीं परीक्षा 2026",
+    "type": "Job",
+    "vacancies": null
+  },
   "fields": {},
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "c03eb0a37a9d",
+  "issue": 16,
   "kind": "other",
   "org": "IBPS",
   "pdf": {
     "error": "SSLError: HTTPSConnectionPool(host='www.ibps.in', port=443): Max retries exceeded with url: /wp-content/uploads/Detailed-Notification_CRP-PO-XVI_Final_V1_30.06.2026.pdf (Caused by SSLError(SSLError(1,"
   },
   "source_id": "ibps-home",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "CRP-PO/MTs-XVI Posted on 01 Jul, 2026",
   "url": "https://www.ibps.in/wp-content/uploads/Detailed-Notification_CRP-PO-XVI_Final_V1_30.06.2026.pdf"
 }

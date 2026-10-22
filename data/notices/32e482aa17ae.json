@@ -1,5 +1,20 @@
 {
   "board_url": "https://nta.ac.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-12-08",
+    "last_date": "2026-11-01",
+    "list": true,
+    "posts": "SWAYAM Courses",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "National Testing Agency has invited online applications for the SWAYAM July Semester Examination 2026. Eligible candidates can apply online through the official website.",
+    "summary_hi": "राष्ट्रीय परीक्षण एजेंसी ने स्वयं जुलाई सत्र परीक्षा 2026 के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+    "title_en": "NTA SWAYAM July Semester Examination 2026",
+    "title_hi": "राष्ट्रीय परीक्षण एजेंसी स्वयं जुलाई सत्र परीक्षा 2026",
+    "type": "Job",
+    "vacancies": 662
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -51,6 +66,7 @@
   },
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "32e482aa17ae",
+  "issue": 4,
   "kind": "notification",
   "org": "NTA",
   "pdf": {
@@ -60,7 +76,7 @@
     "text_kind": "text"
   },
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "Inviting Online Application Form for Study Webs of Active Learning for Young Aspiring Minds [SWAYAM-2026 (July Semester)] -reg. Read More",
   "url": "https://nta.ac.in/Download/Notice/Notice_20261009123259.pdf"
 }

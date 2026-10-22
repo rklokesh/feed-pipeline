@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://ssc.gov.in/home/notice-board",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Selection Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Staff Selection Commission has uploaded the tentative answer keys and response sheets for Phase-XIV Selection Posts Examination 2026. Candidates can submit challenges online by 12 October 2026.",
+    "summary_hi": "कर्मचारी चयन आयोग ने चरण-14 चयन पद परीक्षा 2026 के लिए संभावित उत्तर कुंजियां और प्रतिक्रिया पत्रक जारी कर दिए हैं। उम्मीदवार 12 अक्टूबर 2026 तक ऑनलाइन आपत्ति दर्ज करा सकते हैं।",
+    "title_en": "SSC Phase-XIV Selection Posts Examination 2026 Answer Key",
+    "title_hi": "कर्मचारी चयन आयोग चरण-14 चयन पद परीक्षा 2026 उत्तर कुंजी",
+    "type": "Answer key",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -20,6 +35,7 @@
   },
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "a5745d960b5b",
+  "issue": 14,
   "kind": "answer_key",
   "org": "SSC",
   "pdf": {
@@ -29,7 +45,7 @@
     "text_kind": "text"
   },
   "source_id": "ssc-notice-board",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "Phase-XIV/2026/Selection Posts Examination - Uploading of Candidate’s Response Sheet(s) along with Tentative Answer Keys and inviting challenges thereon",
   "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_rhq.pdf"
 }

@@ -1,5 +1,20 @@
 {
   "board_url": "https://uppsc.up.nic.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-03-28",
+    "last_date": null,
+    "list": true,
+    "posts": "Dental Surgeon",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Uttar Pradesh Public Service Commission has released the district information slip for the Dental Surgeon Examination 2025. Candidates can check their exam district details on the official website.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने दंत शल्य चिकित्सक परीक्षा 2025 के लिए जिला सूचना पर्ची जारी कर दी है। उम्मीदवार आधिकारिक वेबसाइट पर अपने परीक्षा जिले का विवरण देख सकते हैं।",
+    "title_en": "UPPSC Dental Surgeon Exam District Information 2025",
+    "title_hi": "उत्तर प्रदेश लोक सेवा आयोग दंत शल्य चिकित्सक परीक्षा जिला सूचना 2025",
+    "type": "Admit card",
+    "vacancies": null
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -24,6 +39,7 @@
   },
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "d6c75bf4b3c6",
+  "issue": 18,
   "kind": "notification",
   "org": "UPPSC",
   "pdf": {
@@ -33,7 +49,7 @@
     "text_kind": "text"
   },
   "source_id": "uppsc-home",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "2. NOTICE REGARDING DISTRICT INFORMATION SLIP FOR ADVT. NO:- D-6/E-1/2025, DENTAL S.. Visible upto : 28/10/2026",
   "url": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmzNJIRVKnDR5BHS7ZpRn4S"
 }

@@ -1,12 +1,28 @@
 {
   "baseline_sample": true,
   "board_url": "https://bpsc.bihar.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Deputy Superintendent of Police and others",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "The Bihar Public Service Commission has issued a corrigendum reducing 2 vacancies for the Deputy Superintendent of Police post, making the total vacancies 1187 for the 72nd CCE.",
+    "summary_hi": "बिहार लोक सेवा आयोग ने ७२वीं संयुक्त प्रतियोगिता परीक्षा के लिए पुलिस उपाधीक्षक के पद की २ रिक्तियों को कम करने का शुद्धि-पत्र जारी किया है, जिससे कुल रिक्तियां ११३७ हो गई हैं।",
+    "title_en": "BPSC 72nd Combined Competitive Exam 2026 Vacancy Corrigendum",
+    "title_hi": "बीपीएससी ७२वीं संयुक्त प्रतियोगिता परीक्षा २०२६ रिक्ति शुद्धि-पत्र",
+    "type": "Job",
+    "vacancies": 1187
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "18c8914c6142",
+  "issue": 1,
   "kind": "update",
   "org": "BPSC",
   "pdf": {
@@ -16,7 +32,7 @@
     "text_kind": "ocr"
   },
   "source_id": "bpsc-home",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "Corrigendum: Integrated 72nd Combined (Preliminary) Competitive Examination – Reduction of 2 Vacancies of Deputy Superintendent of Police (BPS).",
   "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Corrigendum-72nd-CCE-Reduction-of-2-posts-of-BPS_BPSC-20260903-23e57k.pdf"
 }

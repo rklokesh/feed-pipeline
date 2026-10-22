@@ -1,5 +1,20 @@
 {
   "board_url": "https://sbi.bank.in/web/careers/current-openings",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-08-27",
+    "list": true,
+    "posts": "Junior Associate (Customer Support & Sales)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "State Bank of India has invited online applications for 1538 Junior Associate (Customer Support & Sales) backlog vacancies. Eligible candidates can apply online from 07.08.2026 to 27.08.2026.",
+    "summary_hi": "भारतीय स्टेट बैंक ने 1538 कनिष्ठ सहायक बैकलॉग रिक्तियों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 07.08.2026 से 27.08.2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "title_en": "SBI Junior Associate Recruitment 2026",
+    "title_hi": "भारतीय स्टेट बैंक कनिष्ठ सहायक भर्ती 2026",
+    "type": "Job",
+    "vacancies": 1538
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -76,6 +91,7 @@
   },
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "43b98aa97831",
+  "issue": 6,
   "kind": "notification",
   "org": "SBI",
   "pdf": {
@@ -85,7 +101,7 @@
     "text_kind": "text"
   },
   "source_id": "sbi-careers",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "DOWNLOAD ADVERTISEMENT (Hindi (592 KB) / English) (714 KB) (NEW)",
   "url": "https://sbi.bank.in/webfiles/uploads/files_2627/08/JA_2026_Backlog_Detailed_Advt_Eng.pdf"
 }

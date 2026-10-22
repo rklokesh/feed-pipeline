@@ -1,5 +1,20 @@
 {
   "board_url": "https://sbi.bank.in/web/careers/current-openings",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-09-01",
+    "last_date": "2026-08-31",
+    "list": true,
+    "posts": "Junior Associate (Customer Support & Sales)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "State Bank of India has announced recruitment for 7680 Junior Associate (Customer Support & Sales) posts. Eligible candidates can apply online from 11 August 2026 to 31 August 2026.",
+    "summary_hi": "भारतीय स्टेट बैंक ने 7680 जूनियर एसोसिएट (कस्टमर सपोर्ट एंड सेल्स) पदों पर भर्ती की घोषणा की है। योग्य उम्मीदवार 11 अगस्त 2026 से 31 अगस्त 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "title_en": "SBI Junior Associate Recruitment 2026",
+    "title_hi": "एसबीआई जूनियर एसोसिएट भर्ती 2026",
+    "type": "Job",
+    "vacancies": 7680
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -94,6 +109,7 @@
   },
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "1b2185fb0dc8",
+  "issue": 2,
   "kind": "notification",
   "org": "SBI",
   "pdf": {
@@ -103,7 +119,7 @@
     "text_kind": "text"
   },
   "source_id": "sbi-careers",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "DOWNLOAD ADVERTISEMENT( HINDI (645 KB) / English) (959 KB) (NEW)",
   "url": "https://sbi.bank.in/webfiles/uploads/files_2627/08/JA_2026_Detailed_Advt_Eng.pdf"
 }

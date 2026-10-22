@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://sbi.bank.in/web/careers/current-openings",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "acquaint yourself booklet for exam instructions, not a job notice",
+    "summary_en": "This is an informational booklet outlining instructions and guidelines for the SBI Junior Associates preliminary examination.",
+    "summary_hi": "यह भारतीय स्टेट बैंक कनिष्ठ सहायक प्रारंभिक परीक्षा के लिए निर्देश और दिशा-निर्देश प्रदान करने वाली एक जानकारी पुस्तिका है।",
+    "title_en": "SBI Junior Associates Preliminary Examination Acquaint Yourself Booklet",
+    "title_hi": "भारतीय स्टेट बैंक कनिष्ठ सहायक प्रारंभिक परीक्षा स्वयं जानकारी पुस्तिका",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -22,7 +37,7 @@
     "text_kind": "text"
   },
   "source_id": "sbi-careers",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "ACQUAINT YOURSELF BOOKLET(HINDI/ ENGLISH) (NEW)",
   "url": "https://sbi.bank.in/webfiles/uploads/files_2627/09/SBI_JA-Customer_Support_Sales-IH_Pre_I_2026-27_Hindi.pdf"
 }

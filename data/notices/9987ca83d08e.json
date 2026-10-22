@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://nta.ac.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-12-19",
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant Professor and Junior Research Fellowship",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "National Testing Agency has issued a corrigendum with amendments and clarifications regarding the Information Bulletin for UGC-NET December 2026 Examination. Candidates should review the revised details before applying.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने यूजीसी-नेट दिसंबर 2026 परीक्षा के सूचना बुलेटिन के संबंध में संशोधनों और स्पष्टीकरणों के साथ एक शुद्धिपत्र जारी किया है। उम्मीदवारों को आवेदन करने से पहले संशोधित विवरण देख लेना चाहिए।",
+    "title_en": "UGC-NET December 2026 Examination Corrigendum",
+    "title_hi": "यूजीसी-नेट दिसंबर 2026 परीक्षा शुद्धिपत्र",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -18,6 +33,7 @@
   },
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "9987ca83d08e",
+  "issue": 13,
   "kind": "update",
   "org": "NTA",
   "pdf": {
@@ -27,7 +43,7 @@
     "text_kind": "ocr"
   },
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "Public Notice Corrigendum to the Information Bulletin of UGC-NET December 2026 Examination",
   "url": "http://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2026/10/202610161905649093.pdf"
 }

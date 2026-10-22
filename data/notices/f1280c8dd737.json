@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://ssc.gov.in/home/notice-board",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Stenographer Grade C and D",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Staff Selection Commission has uploaded the final marks for Stenographer Grade C and D Examination 2025. Candidates can check their scores using their login credentials.",
+    "summary_hi": "कर्मचारी चयन आयोग ने आशुलिपिक ग्रेड सी और डी परीक्षा 2025 के अंतिम अंक अपलोड कर दिए हैं। उम्मीदवार अपने लॉगिन विवरण का उपयोग करके अपने अंक देख सकते हैं।",
+    "title_en": "SSC Stenographer Grade C and D Examination 2025 Marks",
+    "title_hi": "कर्मचारी चयन आयोग आशुलिपिक ग्रेड सी और डी परीक्षा 2025 अंक",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -13,6 +28,7 @@
   },
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "f1280c8dd737",
+  "issue": 21,
   "kind": "result",
   "org": "SSC",
   "pdf": {
@@ -22,7 +38,7 @@
     "text_kind": "text"
   },
   "source_id": "ssc-notice-board",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "Stenographer Grade 'C' and 'D' Examination, 2025: Uploading Marks of CBE and Skill Test",
   "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Final_Marks_Writeup_07102026.pdf"
 }

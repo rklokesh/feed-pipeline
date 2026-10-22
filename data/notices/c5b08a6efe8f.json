@@ -1,5 +1,20 @@
 {
   "board_url": "https://uppsc.up.nic.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-10-26",
+    "last_date": null,
+    "list": true,
+    "posts": "Vetting Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Notice regarding the district information slip for the UPPSC Vetting Officer Examination 2025. Candidates can check their exam district details on the official website.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग वेटींग ऑफिसर परीक्षा 2025 के लिए जिला सूचना पर्ची के संबंध में सूचना। उम्मीदवार आधिकारिक वेबसाइट पर परीक्षा जिले का विवरण देख सकते हैं।",
+    "title_en": "UPPSC Vetting Officer Exam 2025 District Information Slip Notice",
+    "title_hi": "उत्तर प्रदेश लोक सेवा आयोग वेटींग ऑफिसर परीक्षा 2025 जिला सूचना पर्ची सूचना",
+    "type": "Admit card",
+    "vacancies": null
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -18,6 +33,7 @@
   },
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "c5b08a6efe8f",
+  "issue": 17,
   "kind": "notification",
   "org": "UPPSC",
   "pdf": {
@@ -27,7 +43,7 @@
     "text_kind": "text"
   },
   "source_id": "uppsc-home",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "5. NOTICE REGARDING DISTRICT INFORMATION SLIP FOR ADVT. NO:- D-6/E-1/2025 VETTING O.. Visible upto : 26/10/2026",
   "url": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmbO3OUZentgjJg+um+MX8d"
 }

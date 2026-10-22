@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://ssc.gov.in/home/notice-board",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-05-30",
+    "last_date": null,
+    "list": true,
+    "posts": "Constable (GD) & Rifleman (GD)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Staff Selection Commission has released the shortlisting result of candidates to appear in the Physical Efficiency Test and Physical Standard Test for Constable GD and Rifleman GD Examination.",
+    "summary_hi": "कर्मचारी चयन आयोग ने सिपाही जीडी और राइफलमैन जीडी परीक्षा के शारीरिक दक्षता और मानक परीक्षण के लिए शॉर्टलिस्ट किए गए उम्मीदवारों का परिणाम जारी कर दिया है।",
+    "title_en": "SSC Constable GD Examination Result",
+    "title_hi": "कर्मचारी चयन आयोग सिपाही जीडी परीक्षा परिणाम",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -13,6 +28,7 @@
   },
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "33cb1c81cd7a",
+  "issue": 5,
   "kind": "other",
   "org": "SSC",
   "pdf": {
@@ -22,7 +38,7 @@
     "text_kind": "text"
   },
   "source_id": "ssc-notice-board",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "Constable (GD) in Central Armed Police Forces (CAPFs) and SSF, and Rifleman (GD) in Assam Rifles Examination, 2026– Shortlisting of candidates to appear in Physical Efficiency Test (PET)/Physical Standard Test (PST)",
   "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_12102026.pdf"
 }

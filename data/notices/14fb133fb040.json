@@ -1,5 +1,20 @@
 {
   "board_url": "https://bpsc.bihar.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Refund and chargeback instruction notice",
+    "summary_en": "Notice regarding raising a dispute for refund or chargeback of unsuccessful or failed online payment transactions.",
+    "summary_hi": "असफल या लंबित ऑनलाइन भुगतान लेनदेन के रिफंड और चार्जबैक के लिए विवाद उठाने के संबंध में सूचना।",
+    "title_en": "BPSC Refund and Chargeback Notice",
+    "title_hi": "बिहार लोक सेवा आयोग रिफंड और चार्जबैग सूचना",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -15,7 +30,7 @@
     "text_kind": "ocr"
   },
   "source_id": "bpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Important Notices :- Regarding raising dispute for refund/chargeback of unsuccessful/pending/failed transactions .",
   "url": "https://bpsc.bihar.gov.in/wp-content/uploads/2025/04/NB-2024-04-29-01.pdf"
 }

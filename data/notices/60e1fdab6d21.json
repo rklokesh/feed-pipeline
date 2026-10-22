@@ -1,5 +1,20 @@
 {
   "board_url": "https://nta.ac.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2027-01-10",
+    "last_date": "2026-11-16",
+    "list": true,
+    "posts": "UG, PG, NLEA, Artisans and Ph.D. Programmes",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "National Testing Agency invites online applications for NIFTEE 2027 for admissions to various UG, PG, NLEA, Artisans and Ph.D. programmes. Eligible candidates should apply online through the official portal.",
+    "summary_hi": "राष्ट्रीय परीक्षण एजेंसी ने विभिन्न स्नातक, स्नातकोत्तर और पीएचडी कार्यक्रमों में प्रवेश के लिए राष्ट्रीय फैशन प्रौद्योगिकी संस्थान प्रवेश परीक्षा 2027 के वास्ते ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार आधिकारिक पोर्टल के माध्यम से ऑनलाइन आवेदन करें।",
+    "title_en": "NTA NIFT Entrance Examination NIFTEE 2027",
+    "title_hi": "राष्ट्रीय फैशन प्रौद्योगिकी संस्थान प्रवेश परीक्षा 2027",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -141,6 +156,7 @@
   },
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "60e1fdab6d21",
+  "issue": 8,
   "kind": "notification",
   "org": "NTA",
   "pdf": {
@@ -150,7 +166,7 @@
     "text_kind": "text"
   },
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "Inviting Online Applications for the National Institute of Fashion Technology Entrance Examination (NIFTEE)–2027 for Admissions to UG, PG, NLEA, Artisans and Ph.D. Programmes-reg. Read More",
   "url": "https://nta.ac.in/Download/Notice/Notice_20261016183525.pdf"
 }

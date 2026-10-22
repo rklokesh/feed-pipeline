@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://www.isro.gov.in/Careers.html",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "This is a glossary document/vocabulary list, not a job notice, result, or admit card.",
+    "summary_en": "This notice contains a bilingual glossary of English and Hindi technical terms and usages.",
+    "summary_hi": "इस सूचना में अंग्रेजी और हिंदी तकनीकी शब्दों और प्रयोगों की द्विभाषी शब्दावली शामिल है।",
+    "title_en": "ISRO e-Saral Hindi Vakyakosh",
+    "title_hi": "भारतीय अन्तरिक्ष अनुसंधान संगठन ई सरल हिन्दी वामकोश",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +31,7 @@
     "text_kind": "text"
   },
   "source_id": "isro-careers",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "e-Saral Hindi Vakyakosh",
   "url": "https://www.isro.gov.in/media_isro/pdf/bilingual_100_sentences.pdf"
 }

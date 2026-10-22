@@ -1,5 +1,20 @@
 {
   "board_url": "https://nta.ac.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-12-14",
+    "last_date": "2026-10-28",
+    "list": true,
+    "posts": "Junior Research Fellowship and Assistant Professor",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "National Testing Agency has opened the online application portal for UGC-NET December 2026. Eligible candidates should apply online through the official website before the last date.",
+    "summary_hi": "राष्ट्रीय परीक्षण एजेंसी ने यूजीसी-नेट दिसंबर 2026 के लिए ऑनलाइन आवेदन पोर्टल खोल दिया है। योग्य उम्मीदवार अंतिम तिथि से पहले आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन करें।",
+    "title_en": "UGC-NET December 2026 Examination",
+    "title_hi": "यूजीसी-नेट दिसंबर 2026 परीक्षा",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -130,6 +145,7 @@
   },
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "60256803a1b7",
+  "issue": 7,
   "kind": "notification",
   "org": "NTA",
   "pdf": {
@@ -139,7 +155,7 @@
     "text_kind": "text"
   },
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "Opening of the online registration portal for submission of Online Application Form for UGC-NET December 2026 examination – reg Read More",
   "url": "https://nta.ac.in/Download/Notice/Notice_20261008212430.pdf"
 }

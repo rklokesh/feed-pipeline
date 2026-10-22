@@ -1,5 +1,20 @@
 {
   "board_url": "https://ssc.gov.in/home/notice-board",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Junior Engineer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Staff Selection Commission has released the tentative vacancies totaling 1699 for the Junior Engineer Examination 2026. Check department-wise vacancies.",
+    "summary_hi": "कर्मचारी चयन आयोग ने कनिष्ठ अभियंता परीक्षा 2026 के लिए कुल 1699 संभावित रिक्तियां जारी कर दी हैं। विभागवार रिक्तियां देखें।",
+    "title_en": "SSC Junior Engineer Examination 2026 Tentative Vacancies",
+    "title_hi": "कर्मचारी चयन आयोग कनिष्ठ अभियंता परीक्षा 2026 संभावित रिक्तियां",
+    "type": "Job",
+    "vacancies": 1699
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -55,6 +70,7 @@
   },
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "8420ca2dd358",
+  "issue": 11,
   "kind": "notification",
   "org": "SSC",
   "pdf": {
@@ -64,7 +80,7 @@
     "text_kind": "text"
   },
   "source_id": "ssc-notice-board",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "Tentative Vacancies of Junior Engineer Examination, 2026.",
   "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/JE_Tentative_Vacancy_08102026.pdf"
 }

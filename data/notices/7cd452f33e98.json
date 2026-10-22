@@ -1,5 +1,20 @@
 {
   "board_url": "https://uppsc.up.nic.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Lecturer Textile Technology",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Uttar Pradesh Public Service Commission has released the final result for Lecturer Textile Technology under Advt. No. A-7/E-1/2021. Candidates can check the selected list.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने विज्ञापन संख्या ए-7/ई-1/2021 के अंतर्गत प्राध्यापक वस्त्र प्रौद्योगिकी पद का अंतिम परिणाम जारी कर दिया है। अभ्यर्थी चयनित सूची देख सकते हैं।",
+    "title_en": "UPPSC Lecturer Textile Technology Exam 2021 Final Result",
+    "title_hi": "उत्तर प्रदेश लोक सेवा आयोग प्राविधिक शिक्षा सेवा परीक्षा 2021 परिणाम",
+    "type": "Result",
+    "vacancies": 1
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -26,6 +41,7 @@
   },
   "first_seen": "2026-10-21T19:45:45+00:00",
   "id": "7cd452f33e98",
+  "issue": 9,
   "kind": "notification",
   "org": "UPPSC",
   "pdf": {
@@ -35,7 +51,7 @@
     "text_kind": "text"
   },
   "source_id": "uppsc-home",
-  "status": "pending_review",
+  "status": "in_review",
   "title": "4. NOTICE REGARDING ADVT. NO. A-7/E-1/2021, U.P. TECHNICAL EDUCATION (TEACHING) SER.. Visible upto : 16/11/2026",
   "url": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmbO3OUZentgoWo8RkhUpnV"
 }
