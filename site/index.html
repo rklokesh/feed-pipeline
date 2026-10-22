@@ -114,6 +114,8 @@ main { margin-top: 36px; flex: 1; }
 .list a.row:hover .t { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .right { text-align: right; }
 
+footer .pref { margin-bottom: 10px; }
+footer .pref .star { color: var(--warm); }
 footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-align: center; justify-items: center; }
 
 
@@ -156,6 +158,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     <div class="tabs" role="group" data-t-aria="show">
       <button type="button" data-cat="all" aria-pressed="true"><span data-t="all">All</span><span class="c"></span></button>
       <button type="button" data-cat="Job" aria-pressed="false"><span data-t="jobs">Jobs</span><span class="c"></span></button>
+      <button type="button" data-cat="soon" aria-pressed="false"><span data-t="soon">Closing soon</span><span class="c"></span></button>
       <button type="button" data-cat="Admit card" aria-pressed="false"><span data-t="admits">Admit cards</span><span class="c"></span></button>
       <button type="button" data-cat="Result" aria-pressed="false"><span data-t="results">Results</span><span class="c"></span></button>
       <button type="button" data-cat="Answer key" aria-pressed="false"><span data-t="keys">Answer keys</span><span class="c"></span></button>
@@ -173,6 +176,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   </main>
 
   <footer>
+    <p class="pref"><a href="https://www.google.com/preferences/source?q=sarkarichart.com" target="_blank" rel="noopener"><span class="star" aria-hidden="true">★</span> <span data-t="prefSrc">Add SarkariChart as a preferred source on Google</span></a></p>
     <p class="g" data-t="disclaimer">SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.</p>
     <p><a href="#" data-t="about">About</a> · <a href="#" data-t="report">Report a mistake</a> · <a href="#" data-t="privacy">Privacy</a></p>
   </footer>
@@ -184,7 +188,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   const T = {
     en: {
       title: "SarkariChart", brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", about: "About", show: "Show",
-      all: "All", jobs: "Jobs", admits: "Admit cards", results: "Results", keys: "Answer keys",
+      all: "All", jobs: "Jobs", soon: "Closing soon", prefSrc: "Add SarkariChart as a preferred source on Google", admits: "Admit cards", results: "Results", keys: "Answer keys",
       searchLabel: "Search notices", recentLabel: "Recent:", searchPh: "Search: SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
       hPosted: "Posted", hNotice: "Notice", hOrg: "Organisation", hType: "Type", hLast: "Last date / status", hPdf: "PDF",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
@@ -198,7 +202,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
     },
     hi: {
       title: "सरकारी चार्ट", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में", show: "दिखाएँ",
-      all: "सभी", jobs: "नौकरियाँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की",
+      all: "सभी", jobs: "नौकरियाँ", soon: "जल्द बंद", prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की",
       searchLabel: "सूचनाएँ खोजें", recentLabel: "हाल की खोजें:", searchPh: "खोजें: एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
       hPosted: "जारी", hNotice: "सूचना", hOrg: "संस्था", hType: "प्रकार", hLast: "अंतिम तिथि / स्थिति", hPdf: "पीडीएफ",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
@@ -364,7 +368,7 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   function followSearch() {
     if (!q || cat === "all") return;
     const hits = ITEMS.filter(i => live(i) && qmatch(i));
-    if (!hits.length || hits.some(i => i.type === cat)) return;
+    if (!hits.length || hits.some(i => inCat(i, cat))) return;
     const types = [...new Set(hits.map(i => i.type))];
     setCat(types.length === 1 ? types[0] : "all");
   }
@@ -373,16 +377,21 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
   // generic PDF file icon (red outlined page, folded corner)
   const PDFICON = '<svg class="pdfi" width="16" height="19.3" viewBox="0 0 34 41" aria-hidden="true"><path d="M4 0h20.2L34 9.8V37a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z" fill="#DC1C1C"/><path d="M34 10.6V37a4 4 0 0 1-4 4H2.2z" fill="#BB1013"/><path d="M24.2 0L34 9.8V11h-8.3a1.5 1.5 0 0 1-1.5-1.5z" fill="#8E0A0D" opacity=".45"/><path d="M24.2 0L34 9.8h-8.3a1.5 1.5 0 0 1-1.5-1.5z" fill="#EE6560"/><rect x="9" y="15.2" width="16" height="1.7" fill="#fff"/><rect x="9" y="20.4" width="16" height="1.7" fill="#fff"/><text x="17" y="34.6" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#fff">PDF</text></svg>';
   const DL = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>';
+  // "Closing soon" = open jobs whose last date is within a week, soonest first.
+  const SOON_DAYS = 7;
+  const inCat = (i, c) => c === "all" ? true : c === "soon" ? i.type === "Job" && !!i.last && left(i.last) <= SOON_DAYS : i.type === c;
   function render() {
     // Jobs: closing soonest first (undated last). Everything else: newest first.
     const byNewest = (a, b) => b.posted.localeCompare(a.posted) || pubTime(b) - pubTime(a);
     const bySearch = (a, b) => searchRank(a) - searchRank(b) || titleScore(b) - titleScore(a) || (a.last || "9").localeCompare(b.last || "9") || b.posted.localeCompare(a.posted);
-    const rows = [...ITEMS].sort(q ? bySearch : byNewest).filter(i => live(i) && (cat === "all" || i.type === cat) && qmatch(i));
+    const byClosing = (a, b) => a.last.localeCompare(b.last) || b.posted.localeCompare(a.posted);
+    const rows = ITEMS.filter(i => live(i) && inCat(i, cat) && qmatch(i)).sort(q ? bySearch : cat === "soon" ? byClosing : byNewest);
     const hits = ITEMS.filter(i => live(i) && (!q || qmatch(i)));
     document.querySelectorAll(".tabs button").forEach(b => {
-      const n = b.dataset.cat === "all" ? hits.length : hits.filter(i => i.type === b.dataset.cat).length;
-      b.querySelector(".c").textContent = q ? n : "";
-      b.classList.toggle("zero", !!q && n === 0);
+      const soon = b.dataset.cat === "soon";
+      const n = hits.filter(i => inCat(i, b.dataset.cat)).length;
+      b.querySelector(".c").textContent = q || soon ? n : "";   // Closing soon always shows how many
+      b.classList.toggle("zero", (!!q || soon) && n === 0);
     });
     moveInk();
     const nl = document.getElementById("newline"), nNew = ITEMS.filter(i => live(i) && isNew(i)).length;
