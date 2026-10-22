@@ -166,6 +166,16 @@ def links_following(src: dict) -> list[dict]:
                 dbg.append(f"{href} -> {page.title()!r} {len(html_)} chars, {len(found)} links; "
                            + " | ".join(f"{t[1][:80]}={t[0]}" for t in page.eval_on_selector_all("a[href]", "els => els.map(e => [e.href, e.innerText.replace(/\\s+/g, ' ')])")
                                        if re.search(r"pdf|/-/|document|download|notice|cen", t[0], re.I) and "getdata" not in t[0])[:60])
+                # RRB-style document links live in scripts/attributes as /-/image/<id><File name>.pdf/<x>
+                for m in re.finditer(r"/-/image/(\d{6,})([^\"'<>]+?)(?:\.pdf)?(?:/[^\"'<>\s]*)?(?=[\"'<>])", html_):
+                    name = re.sub(r"[_\s]+", " ", m.group(2)).strip(" -.")
+                    if re.search(r"hindi|हिंदी|हिन्दी", name, re.I) or len(name) < 3:
+                        continue   # the English copy is enough; the AI writes the Hindi card
+                    u = urljoin(page.url, m.group(0))
+                    if u not in seen:
+                        seen.add(u)
+                        cen = (re.search(r"cennum=([\d/]+)", href) or [None, ""])[1]
+                        out.append({"url": u, "title": f"RRB CEN {cen}: {name}"[:300]})
                 for item in found:
                     if item["url"] not in seen:
                         seen.add(item["url"])
