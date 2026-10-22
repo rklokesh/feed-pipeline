@@ -165,6 +165,24 @@ def main():
             if a is not None and b:
                 n["issue_tidy"] = True
                 f.write_text(json.dumps(n, ensure_ascii=False, indent=2, sort_keys=True))
+    # tidy (2): any OPEN issue still labelled `review` whose notice is already live -> relabel + close
+    import re as _re
+    if AUTO:
+        open_rev = gh("GET", "/issues", params={"state": "open", "labels": "review", "per_page": 100}) or []
+        print(f"  open review issues: {len(open_rev)}")
+        for iss in open_rev:
+            m = _re.search(r"notice-id:\s*([0-9a-f]+)", iss.get("body") or "")
+            nf = NOTICES / f"{m.group(1)}.json" if m else None
+            if not (nf and nf.exists()):
+                print(f"  #{iss['number']}: no notice file"); continue
+            nn = json.loads(nf.read_text())
+            if nn.get("status") == "approved":
+                gh("DELETE", f"/issues/{iss['number']}/labels/review")
+                gh("POST", f"/issues/{iss['number']}/labels", json={"labels": ["auto-published"]})
+                r = gh("PATCH", f"/issues/{iss['number']}", json={"state": "closed", "state_reason": "completed"})
+                print(f"  #{iss['number']}: live -> relabelled, closed={bool(r)}")
+            else:
+                print(f"  #{iss['number']}: notice status {nn.get('status')} (left for review)")
     # cards that were waiting for a human before auto-publish was switched on
     for f, n in waiting:
         go_live(n)
