@@ -581,11 +581,19 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   // Show the complete heading when a notice title is cut off (…), in the same tooltip style as the dates
   const ftip = document.createElement("div"); ftip.className = "ftip"; ftip.setAttribute("aria-hidden", "true"); document.body.appendChild(ftip);
   let ftipFor = null;
+  // Is the text cut off with "…"? scrollWidth is rounded to whole pixels, so a title that overflows by a
+  // fraction of a pixel shows "…" but looks "not cut"; measure the real text width instead.
+  const isCut = el => {
+    if (el.scrollWidth > el.clientWidth + 1) return true;
+    const r = document.createRange(); r.selectNodeContents(el);
+    const cs = getComputedStyle(el), box = el.getBoundingClientRect().width - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    return r.getBoundingClientRect().width > box + 0.01;
+  };
   const tipOn = e => {
     const t = e.target.closest(".t[data-full], .cut[data-full]");
     if (t === ftipFor) return;
     ftipFor = t; ftip.classList.remove("on");
-    if (!t || t.scrollWidth <= t.clientWidth + 1) return;
+    if (!t || !isCut(t)) return;
     ftip.textContent = t.dataset.full;
     const r = t.getBoundingClientRect();
     ftip.style.left = Math.max(16, Math.min(r.left, innerWidth - ftip.offsetWidth - 16)) + "px";
