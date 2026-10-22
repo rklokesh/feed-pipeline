@@ -1,22 +1,77 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://hpsc.gov.in/en-us/",
+  "card": {
+    "confidence": "medium",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant District Attorney",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "HPSC has released an announcement for the posts of Assistant District Attorney in the Prosecution Department.",
+    "summary_hi": "हरियाणा लोक सेवा आयोग ने अभियोजन विभाग में सहायक जिला न्यायवादी के पदों के लिए घोषणा जारी की है।",
+    "title_en": "HPSC Assistant District Attorney Recruitment 2025",
+    "title_hi": "हरियाणा लोक सेवा आयोग सहायक जिला न्यायवादी भर्ती 2025",
+    "type": "Job",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-22T21:48:42+00:00",
   "id": "9a44b0e66a32",
+  "issue": 53,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-10-21",
   "org": "HPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Haryana Public Service Commission (HPSC)",
+    "conducted_by_hi": "हरियाणा लोक सेवा आयोग (एचपीएससी)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "HPSC Assistant District Attorney Recruitment 2025",
+    "h1_hi": "हरियाणा लोक सेवा आयोग सहायक जिला न्यायवादी भर्ती 2025",
+    "last_date": null,
+    "notice_date": "2026-10-21",
+    "official_site": "https://hpsc.gov.in/en-us/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Assistant District Attorney",
+        "value_hi": "सहायक जिला न्यायवादी"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "18/2025",
+        "value_hi": "18/2025"
+      }
+    ],
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Haryana Public Service Commission has released an announcement for Assistant District Attorney posts in the Prosecution Department. Candidates can check the official website for further details.",
+    "summary_hi": "हरियाणा लोक सेवा आयोग ने अभियोजन विभाग में सहायक जिला न्यायवादी के पदों के लिए घोषणा जारी की है। उम्मीदवार अधिक विवरण के लिए आधिकारिक वेबसाइट देख सकते हैं।"
+  },
   "pdf": {
     "bytes": 345683,
     "pages": 1,
     "sha256": "bf6ae21615ef9f249ab10f2a37411371cf20d1657192f2d15cf0101fee03324d",
     "text_kind": "scanned"
   },
+  "published_at": "2026-10-22T21:49:48Z",
+  "slug": "hpsc-assistant-district-attorney-recruitment-2025",
   "source_id": "hpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Announcement dated 21.10.2026 for the posts of Assistant District Attorney (Advt. No. 18/2025) in Prosecution Department, Haryana",
   "url": "https://hpsc.gov.in/Portals/0/Ann_ADA_21_10_2026.pdf"
 }

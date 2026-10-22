@@ -1,6 +1,23 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://hssc.gov.in/advertisement",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-06-30",
+    "list": true,
+    "posts": "Group-C Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Haryana Staff Selection Commission invites online applications for Group-C posts under CET Phase-II from qualified candidates. Eligible candidates can apply online through the official website.",
+    "summary_hi": "हरियाणा कर्मचारी चयन आयोग ने योग्य उम्मीदवारों के लिए समूह-सी के पदों पर भर्ती हेतु ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+    "title_en": "HSSC Group C CET Phase II Recruitment 2026",
+    "title_hi": "हरियाणा कर्मचारी चयन आयोग समूह सी परीक्षा 2026",
+    "type": "Job",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -54,16 +71,66 @@
   },
   "first_seen": "2026-10-22T21:48:42+00:00",
   "id": "dd8bb24efbce",
+  "issue": 55,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-06-22",
   "org": "HSSC",
+  "page": {
+    "apply_start": "2026-06-24",
+    "apply_url": "https://adv062026.hryssc.com",
+    "changes_from_notes": "",
+    "conducted_by_en": "Haryana Staff Selection Commission (HSSC)",
+    "conducted_by_hi": "हरियाणा कर्मचारी चयन आयोग (HSSC)",
+    "exam_date": null,
+    "fees": [
+      {
+        "amount": "₹0",
+        "cat_en": "All Categories",
+        "cat_hi": "सभी श्रेणियां"
+      }
+    ],
+    "h1_en": "HSSC Group C CET Phase II Recruitment 2026",
+    "h1_hi": "हरियाणा कर्मचारी चयन आयोग समूह सी परीक्षा 2026",
+    "last_date": "2026-06-30",
+    "notice_date": "2026-06-22",
+    "official_site": "https://hssc.gov.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Group-C Posts",
+        "value_hi": "समूह-सी पद"
+      },
+      {
+        "label_en": "Apply online",
+        "label_hi": "ऑनलाइन आवेदन",
+        "value_en": "24 Jun 2026 to 30 Jun 2026",
+        "value_hi": "24 जून 2026 से 30 जून 2026"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Advt. No. 06/2026",
+        "value_hi": "विज्ञापन संख्या 06/2026"
+      }
+    ],
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Haryana Staff Selection Commission invites online applications for Group-C posts under CET Phase-II from qualified candidates. Eligible candidates can apply online through the official website.",
+    "summary_hi": "हरियाणा कर्मचारी चयन आयोग ने योग्य उम्मीदवारों के लिए समूह-सी के पदों पर भर्ती हेतु ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।"
+  },
   "pdf": {
     "bytes": 4686871,
     "pages": 81,
     "sha256": "9de3015c5fd240fffcf25a9326445337cb7ef6f88f89b9f42188bef018960616",
     "text_kind": "text"
   },
+  "published_at": "2026-10-22T21:50:02Z",
+  "slug": "hssc-group-c-cet-phase-ii-recruitment-2026",
   "source_id": "hssc-adverts",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Advt. No. 06/2026 (Group-C) 2026-06-22",
   "url": "https://hssc.gov.in/file/ac1f23cd-9d9c-1328-819e-ef25fa0a0061/advertisements"
 }

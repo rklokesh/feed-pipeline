@@ -1,6 +1,23 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://hssc.gov.in/publicNotice",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Primary Teacher",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Haryana Staff Selection Commission has released the final answer key for the Primary Teacher Mewat Cadre examination. Candidates can check the official website to view their answers.",
+    "summary_hi": "हरियाणा कर्मचारी चयन आयोग ने प्राथमिक शिक्षक मेवात संवर्ग परीक्षा के लिए अंतिम उत्तर कुंजी जारी कर दी है। उम्मीदवार अपने उत्तर देखने के लिए आधिकारिक वेबसाइट पर जा सकते हैं।",
+    "title_en": "HSSC Primary Teacher Mewat Cadre Final Answer Key 2024",
+    "title_hi": "हरियाणा कर्मचारी चयन आयोग प्राथमिक शिक्षक मेवात संवर्ग अंतिम उत्तर कुंजी 2024",
+    "type": "Answer key",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -13,16 +30,54 @@
   },
   "first_seen": "2026-10-22T21:48:42+00:00",
   "id": "e6711d3cbf13",
+  "issue": 56,
+  "issue_tidy": true,
   "kind": "answer_key",
+  "notice_date": "2026-09-10",
   "org": "HSSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Haryana Staff Selection Commission (HSSC)",
+    "conducted_by_hi": "हरियाणा कर्मचारी चयन आयोग (HSSC)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "HSSC Primary Teacher Mewat Cadre Final Answer Key 2024",
+    "h1_hi": "हरियाणा कर्मचारी चयन आयोग प्राथमिक शिक्षक मेवात संवर्ग अंतिम उत्तर कुंजी 2024",
+    "last_date": null,
+    "notice_date": "2026-09-10",
+    "official_site": "https://hssc.gov.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Primary Teacher (Mewat Cadre)",
+        "value_hi": "प्राथमिक शिक्षक (मेवात संवर्ग)"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Advt. No. 05/2024, Cat. No.1",
+        "value_hi": "विज्ञापन संख्या 05/2024, श्रेणी संख्या 1"
+      }
+    ],
+    "status_en": "Final answer key released",
+    "status_hi": "अंतिम उत्तर कुंजी जारी की गई",
+    "summary_en": "Haryana Staff Selection Commission has released the final answer key for the Primary Teacher (Mewat Cadre) post under Advt. No. 05/2024. Candidates can check the official website to view the final answer key.",
+    "summary_hi": "हरियाणा कर्मचारी चयन आयोग ने विज्ञापन संख्या 05/2024 के अंतर्गत प्राथमिक शिक्षक (मेवात संवर्ग) पद के लिए अंतिम उत्तर कुंजी जारी कर दी है। उम्मीदवार अंतिम उत्तर कुंजी देखने के लिए आधिकारिक वेबसाइट पर जा सकते हैं।"
+  },
   "pdf": {
     "bytes": 520515,
     "pages": 1,
     "sha256": "f74a3d4ac261bb2c1a62d010aa3cf71b1e3ca27fa1715ea84326926ea8ea7bbd",
     "text_kind": "text"
   },
+  "published_at": "2026-10-22T21:50:09Z",
+  "slug": "hssc-primary-teacher-mewat-cadre-final-answer-key-2024",
   "source_id": "hssc-notices",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Notice to the candidates regarding Final Answer Key for the post of Primary Teacher (Mewat Cadre) against Advt. No. 05/2024, Cat. No.1 of Elementary Education Department, Haryana. 05/2024 01 2026-09-10",
   "url": "https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a0-89ede0820007/publicNotice"
 }

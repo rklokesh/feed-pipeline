@@ -1,22 +1,77 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://hssc.gov.in/publicNotice",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Primary Teacher (PRT)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "HSSC has released the final answer key for the Primary Teacher (PRT) exam under advertisement 5/2024. Candidates can check their answers against the official sets.",
+    "summary_hi": "हरियाणा कर्मचारी चयन आयोग ने विज्ञापन 5/2024 के तहत प्राथमिक शिक्षक परीक्षा के लिए अंतिम उत्तर कुंजी जारी कर दी है। उम्मीदवार आधिकारिक सेटों के अनुसार अपने उत्तरों की जांच कर सकते हैं।",
+    "title_en": "HSSC Primary Teacher PRT Advt 5/2024 Final Answer Key",
+    "title_hi": "हरियाणा कर्मचारी चयन आयोग प्राथमिक शिक्षक विज्ञापन 5/2024 अंतिम उत्तर कुंजी",
+    "type": "Answer key",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-22T21:48:42+00:00",
   "id": "96823eca02d5",
+  "issue": 52,
+  "issue_tidy": true,
   "kind": "answer_key",
+  "notice_date": "2026-09-10",
   "org": "HSSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Haryana Staff Selection Commission (HSSC)",
+    "conducted_by_hi": "हरियाणा कर्मचारी चयन आयोग (एचएसएससी)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "HSSC Primary Teacher PRT Advt 5/2024 Final Answer Key",
+    "h1_hi": "हरियाणा कर्मचारी चयन आयोग प्राथमिक शिक्षक विज्ञापन 5/2024 अंतिम उत्तर कुंजी",
+    "last_date": null,
+    "notice_date": "2026-09-10",
+    "official_site": "https://hssc.gov.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Primary Teacher (PRT)",
+        "value_hi": "प्राथमिक शिक्षक"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "5/2024",
+        "value_hi": "5/2024"
+      }
+    ],
+    "status_en": "Final answer key released",
+    "status_hi": "अंतिम उत्तर कुंजी जारी की गई",
+    "summary_en": "HSSC has released the final answer key for the Primary Teacher (PRT) exam under advertisement 5/2024. Candidates can check their answers against the official sets.",
+    "summary_hi": "हरियाणा कर्मचारी चयन आयोग ने विज्ञापन 5/2024 के तहत प्राथमिक शिक्षक परीक्षा के लिए अंतिम उत्तर कुंजी जारी कर दी है। उम्मीदवार आधिकारिक सेटों के अनुसार अपने उत्तरों की जांच कर सकते हैं।"
+  },
   "pdf": {
     "bytes": 48481,
     "pages": 4,
     "sha256": "7ab05003d0906fef1a0acfe0e240509bbf6b52cca80ac39e62464068893fa8db",
     "text_kind": "text"
   },
+  "published_at": "2026-10-22T21:49:41Z",
+  "slug": "hssc-primary-teacher-prt-advt-5-2024-final-answer-key",
   "source_id": "hssc-notices",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Final Answer Key For The Post Of Primary Teacher (PRT) 5/2024 01 2026-09-10",
   "url": "https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a0-89a629190004/publicNotice"
 }

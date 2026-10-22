@@ -1,22 +1,77 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://hpsc.gov.in/en-us/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant District Attorney",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "HPSC has released the final result for the Assistant District Attorney examination 2025. Candidates can check their qualification status through the notice.",
+    "summary_hi": "हरियाणा लोक सेवा आयोग ने सहायक जिला न्यायवादी परीक्षा 2025 का अंतिम परिणाम जारी कर दिया है। उम्मीदवार नोटिस के माध्यम से अपनी अर्हता स्थिति की जांच कर सकते हैं।",
+    "title_en": "HPSC Assistant District Attorney Final Result 2026",
+    "title_hi": "हरियाणा लोक सेवा आयोग सहायक जिला न्यायवादी अंतिम परिणाम 2026",
+    "type": "Result",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-22T21:48:42+00:00",
   "id": "8dd6483490f4",
+  "issue": 51,
+  "issue_tidy": true,
   "kind": "result",
+  "notice_date": "2026-10-22",
   "org": "HPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Haryana Public Service Commission (HPSC)",
+    "conducted_by_hi": "हरियाणा लोक सेवा आयोग (HPSC)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "HPSC Assistant District Attorney Final Result 2026",
+    "h1_hi": "हरियाणा लोक सेवा आयोग सहायक जिला न्यायवादी अंतिम परिणाम 2026",
+    "last_date": null,
+    "notice_date": "2026-10-22",
+    "official_site": "https://hpsc.gov.in/en-us/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Assistant District Attorney",
+        "value_hi": "सहायक जिला न्यायवादी"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "18/2025",
+        "value_hi": "18/2025"
+      }
+    ],
+    "status_en": "Final result declared",
+    "status_hi": "अंतिम परिणाम घोषित",
+    "summary_en": "HPSC has released the final result for the Assistant District Attorney examination 2025 in the Prosecution Department, Haryana. Candidates can check their qualification status through the notice.",
+    "summary_hi": "हरियाणा लोक सेवा आयोग ने हरियाणा के अभियोजन विभाग में सहायक जिला न्यायवादी परीक्षा 2025 के लिए अंतिम परिणाम जारी कर दिया है। उम्मीदवार नोटिस के माध्यम से अपनी अर्हता स्थिति की जांच कर सकते हैं।"
+  },
   "pdf": {
     "bytes": 791201,
     "pages": 2,
     "sha256": "3bc51b151d688b7cf611cc76db7ff9c2c17b8ec053153f032da5bf358209995d",
     "text_kind": "scanned"
   },
+  "published_at": "2026-10-22T21:49:34Z",
+  "slug": "hpsc-assistant-district-attorney-final-result-2026",
   "source_id": "hpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Final Result dated 22.10.2026 for the posts of Assistant District Attorney in Prosecution Department, Haryana (Advt. No. 18/2025)",
   "url": "https://hpsc.gov.in/Portals/0/Final_Result_ADA_22_10_2026.pdf"
 }

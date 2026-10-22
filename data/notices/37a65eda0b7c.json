@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://tnpsc.gov.in/home.aspx",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal circular / rules of procedure document, not a job notice",
+    "summary_en": "Internal rules of procedure for the Tamil Nadu Public Service Commission.",
+    "summary_hi": "தமிழ் நாடு அரசுப் பணியாளர் தேர்வாணையத்தின் உள் செயல்முறை விதிகள்.",
+    "title_en": "TNPSC Rules of Procedure",
+    "title_hi": "தமிழ் நாடு அரசுப் பணியாளர் தேர்வாணைய செயல்முறை விதிகள்",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +31,7 @@
     "text_kind": "text"
   },
   "source_id": "tnpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Rules of Procedure",
   "url": "https://tnpsc.gov.in/static_pdf/document/Rules-of-Procedure.pdf"
 }

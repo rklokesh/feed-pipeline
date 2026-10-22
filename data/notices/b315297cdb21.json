@@ -1,6 +1,23 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://hssc.gov.in/advertisement",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-07-05",
+    "list": true,
+    "posts": "Group-D Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Haryana Staff Selection Commission has extended the online application closing date for Group-D Common Eligibility Test under Advertisement No. 05/2026 to 2026-07-05. Candidates can apply on the official website.",
+    "summary_hi": "हरियाणा कर्मचारी चयन आयोग ने विज्ञापन संख्या 05/2026 के तहत समूह-डी सामान्य पात्रता परीक्षा के लिए ऑनलाइन आवेदन की अंतिम तिथि 2026-07-05 तक बढ़ा दी है। उम्मीदवार आधिकारिक वेबसाइट पर आवेदन कर सकते हैं।",
+    "title_en": "HSSC Group-D CET Advt 05/2026 Application Date Extension",
+    "title_hi": "हरियाणा कर्मचारी चयन आयोग समूह-डी सीईटी विज्ञापन 05/2026 आवेदन तिथि विस्तार",
+    "type": "Job",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -18,16 +35,66 @@
   },
   "first_seen": "2026-10-22T21:48:42+00:00",
   "id": "b315297cdb21",
+  "issue": 54,
+  "issue_tidy": true,
   "kind": "update",
+  "notice_date": "2026-07-03",
   "org": "HSSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": "https://hssc.gov.in/advertisement",
+    "changes_from_notes": "",
+    "conducted_by_en": "Haryana Staff Selection Commission (HSSC)",
+    "conducted_by_hi": "हरियाणा कर्मचारी चयन आयोग (HSSC)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "HSSC Group-D CET Advt 05/2026 Application Date Extension",
+    "h1_hi": "हरियाणा कर्मचारी चयन आयोग समूह-डी सीईटी विज्ञापन 05/2026 आवेदन तिथि विस्तार",
+    "last_date": "2026-07-05",
+    "notice_date": "2026-07-03",
+    "official_site": "https://hssc.gov.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Group-D Posts (CET)",
+        "value_hi": "समूह-डी पद (सीईटी)"
+      },
+      {
+        "label_en": "Apply online (last date)",
+        "label_hi": "ऑनलाइन आवेदन (अंतिम तिथि)",
+        "value_en": "05 Jul 2026",
+        "value_hi": "05 Jul 2026"
+      },
+      {
+        "label_en": "Last date for fee",
+        "label_hi": "शुल्क जमा करने की अंतिम तिथि",
+        "value_en": "08 Jul 2026",
+        "value_hi": "08 Jul 2026"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "05/2026",
+        "value_hi": "05/2026"
+      }
+    ],
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Haryana Staff Selection Commission has extended the online application closing date for Group-D Common Eligibility Test under Advertisement No. 05/2026 to 05 Jul 2026. Eligible candidates can apply online through the official website.",
+    "summary_hi": "हरियाणा कर्मचारी चयन आयोग ने विज्ञापन संख्या 05/2026 के अंतर्गत समूह-डी सामान्य पात्रता परीक्षा के लिए ऑनलाइन आवेदन की अंतिम तिथि 05 Jul 2026 तक बढ़ा दी है। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।"
+  },
   "pdf": {
     "bytes": 414760,
     "pages": 1,
     "sha256": "93b572263cfdc7d583255c3a0990c78bb48bac2adf45787b99830c19dba1b540",
     "text_kind": "text"
   },
+  "published_at": "2026-10-22T21:49:55Z",
+  "slug": "hssc-group-d-cet-advt-05-2026-application-date-extension",
   "source_id": "hssc-adverts",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Advt. No. 05/2026 (Group-D) Closing Date Extension 2026-07-03",
   "url": "https://hssc.gov.in/file/ac1f23cd-9d9c-1328-819f-293dcbcf0080/advertisements"
 }
