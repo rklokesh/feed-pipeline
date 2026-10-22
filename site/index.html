@@ -41,9 +41,9 @@
 /* Posted cell = date + a fixed slot for the "New" tag, so every date lines up whether or not a tag is there. */
 .pc { display: inline-grid; grid-template-columns: auto 2.5rem; column-gap: 12px; align-items: baseline; white-space: nowrap; }
 .newtag { display: inline-block; font-size: .6875rem; line-height: 1; padding: 3px 5px 2px; border-radius: 4px; letter-spacing: .02em;
-  color: var(--hot); background: color-mix(in srgb, var(--hot) 8%, var(--page)); animation: glow 2.4s ease-in-out infinite; }
+  color: color-mix(in srgb, var(--hot) 10%, #fff); background: var(--hot); animation: glow 2.4s ease-in-out infinite; }
 /* only the letters glow; the tag's frame stays still */
-@keyframes glow { 0%, 100% { text-shadow: 0 0 0 transparent; } 50% { text-shadow: 0 0 4px color-mix(in srgb, var(--hot) 35%, transparent); } }
+@keyframes glow { 0%, 100% { text-shadow: 0 0 0 transparent; } 50% { text-shadow: 0 0 4px rgba(255, 255, 255, .55); } }
 @media (prefers-reduced-motion: reduce) { .newtag { animation: none; } }
 .t .newtag { margin-right: 8px; vertical-align: 1px; }
 .dd { display: inline-block; min-width: 2ch; text-align: right; font-variant-numeric: tabular-nums; }
