@@ -228,7 +228,7 @@ def render(n: dict, slug: str) -> str:
     main = [f'''    <div class="title">
       <nav class="crumb" aria-label="Breadcrumb"><a class="back" href="/"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a><span class="sep" aria-hidden="true">/</span><a href="/?cat={CAT_SLUG.get(typ, "jobs")}" data-t="crumbType">{esc(en["crumbType"])}</a><span class="sep" aria-hidden="true">/</span><a href="/?q={urllib.parse.quote(en["org"])}" data-t="org">{esc(en["org"])}</a></nav>
       <h1 data-t="h1">{esc(en["h1"])}</h1>
-      <p class="status"><span id="state">{esc(en["statusV"])}</span><span id="left"></span></p>
+      <p class="status"><span id="state">{esc(en["statusV"])}</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       {f'<p class="lead" data-t="summary">{esc(en["summary"])}</p>' if en["summary"] else ""}
     </div>''',
             '    <section class="kv" data-t-aria="key">\n      <div class="h" data-t="key">Key details</div>\n' +
