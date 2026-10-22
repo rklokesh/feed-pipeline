@@ -196,7 +196,8 @@ def browser_download(board: str, url: str) -> bytes | None:
     try:
         with sync_playwright() as p:
             b = p.chromium.launch()
-            ctx = b.new_context(user_agent=USER_AGENT, accept_downloads=True)
+            from common import BROWSER_UA
+            ctx = b.new_context(user_agent=BROWSER_UA, accept_downloads=True)
             page = ctx.new_page()
             page.goto(board, timeout=90_000, wait_until="domcontentloaded")
             resp = ctx.request.get(url, headers={"Referer": board}, timeout=90_000)

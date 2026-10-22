@@ -47,6 +47,7 @@ sources:
     follow: "getdata\\?cennum=\\d+/(2025|2026|2027)&loc=[a-z]+&status=1"
     follow_key: "cennum=\\d+/\\d+"
     follow_limit: 14
+    download: browser   # files are only served inside a browser session
 
   # ---- Banks & financial ----
   - id: sbi-careers
