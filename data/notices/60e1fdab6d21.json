@@ -159,6 +159,7 @@
   "id": "60e1fdab6d21",
   "issue": 8,
   "kind": "notification",
+  "notice_date": "2026-10-16",
   "org": "NTA",
   "page": {
     "apply_start": "2026-10-16",
@@ -167,10 +168,17 @@
     "conducted_by_en": "National Testing Agency (NTA)",
     "conducted_by_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए)",
     "exam_date": "2027-01-10",
-    "fees": [],
+    "fees": [
+      {
+        "amount": "₹5000",
+        "cat_en": "With Late Fee",
+        "cat_hi": "विलंब शुल्क के साथ"
+      }
+    ],
     "h1_en": "NTA NIFT Entrance Examination NIFTEE 2027",
     "h1_hi": "राष्ट्रीय फैशन प्रौद्योगिकी संस्थान प्रवेश परीक्षा 2027",
     "last_date": "2026-11-16",
+    "notice_date": "2026-10-16",
     "official_site": "https://www.nta.ac.in/",
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
@@ -178,7 +186,7 @@
         "label_en": "Posts",
         "label_hi": "पद",
         "value_en": "UG, PG, NLEA, Artisans and Ph.D. Programmes",
-        "value_hi": "स्नातक, स्नातकोत्तर, एनएलईए, कारीगर और पीएचडी कार्यक्रम"
+        "value_hi": "स्नातक, स्नातकोत्तर, पार्श्व प्रवेश, कारीगर और पीएचडी कार्यक्रम"
       },
       {
         "label_en": "Apply online",
@@ -188,7 +196,7 @@
       },
       {
         "label_en": "Last date for fee",
-        "label_hi": "शुल्क की अंतिम तिथि",
+        "label_hi": "शुल्क के लिए अंतिम तिथि",
         "value_en": "16 Nov 2026",
         "value_hi": "16 नवंबर 2026"
       },
@@ -202,19 +210,19 @@
         "label_en": "Educational qualification",
         "label_hi": "शैक्षणिक योग्यता",
         "value_en": "Refer to the NIFT Admissions Guidelines-2027 and Information Bulletin",
-        "value_hi": "निफ्ट प्रवेश दिशा-निर्देश 2027 और सूचना बुलेटिन देखें"
+        "value_hi": "एनआईएफटी प्रवेश दिशा-निर्देश 2027 और सूचना बुलेटिन देखें"
       },
       {
         "label_en": "Advertisement number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "NIFTEE-2027",
-        "value_hi": "NIFTEE-2027"
+        "value_hi": "एनआईएफटीईई-2027"
       }
     ],
     "status_en": "",
     "status_hi": "",
-    "summary_en": "National Testing Agency invites online applications for NIFTEE 2027 for admissions to various UG, PG, NLEA, Artisans and Ph.D. programmes. Eligible candidates should apply online through the official portal before 16 November 2026.",
-    "summary_hi": "राष्ट्रीय परीक्षण एजेंसी ने विभिन्न स्नातक, स्नातकोत्तर, एनएलईए, कारीगर और पीएचडी कार्यक्रमों में प्रवेश के लिए राष्ट्रीय फैशन प्रौद्योगिकी संस्थान प्रवेश परीक्षा 2027 के वास्ते ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 16 नवंबर 2026 से पहले आधिकारिक पोर्टल के माध्यम से ऑनलाइन आवेदन करें।"
+    "summary_en": "National Testing Agency invites online applications for NIFTEE 2027 for admissions to UG, PG, NLEA, Artisans and Ph.D. programmes. Eligible candidates should apply online through the official portal before 16 November 2026.",
+    "summary_hi": "राष्ट्रीय परीक्षण एजेंसी ने स्नातक, स्नातकोत्तर, पार्श्व प्रवेश, कारीगर और पीएचडी कार्यक्रमों में प्रवेश के लिए राष्ट्रीय फैशन प्रौद्योगिकी संस्थान प्रवेश परीक्षा 2027 के वास्ते ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 16 नवंबर 2026 से पहले आधिकारिक पोर्टल के माध्यम से ऑनलाइन आवेदन करें।"
   },
   "pdf": {
     "bytes": 608210,
