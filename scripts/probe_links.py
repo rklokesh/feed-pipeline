@@ -42,8 +42,9 @@ for arg in sys.argv[1:]:
         with sync_playwright() as p:
             b = p.chromium.launch()
             pg = b.new_page(user_agent=common.BROWSER_UA, ignore_https_errors=False)
-            pg.goto(url, timeout=90_000, wait_until="networkidle")
-            pg.wait_for_timeout(3000)
+            pg.set_default_timeout(45_000)
+            pg.goto(url, timeout=45_000, wait_until="domcontentloaded")
+            pg.wait_for_timeout(5000)
             html = pg.content()
             lines.append(f"## browser: final {pg.url}, title {pg.title()!r}, {len(html)} chars")
             lines += dump(html, pg.url)
