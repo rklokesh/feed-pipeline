@@ -1,0 +1,51 @@
+{
+  "board_url": "https://www.nabard.org/careers-notices1.aspx?cid=693&id=26",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "exam_date": {
+      "evidence": "LIMINARY EXAM) RECRUITMENT OF DEVELOPMENT ASSISTANT (HINDI) EXAM DATE:- 21.02.2026 REGIONAL OFFICE SC ST OBC EWS UR CATEGORY-A CATEGORY-B CATEGORY-C CATEGORY-D&E EXS DIS-EXS ANDHRA PRADESH - - - - 31.00* MAHAR",
+      "source": "rule",
+      "value": "2026-02-21"
+    },
+    "exam_date_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "exam_date": "EXAM DATE:- 21.02.2026"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "DEVELOPMENT ASSISTANT (HINDI)"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "RECRUITMENT OF DEVELOPMENT ASSISTANT (HINDI)"
+      }
+    }
+  },
+  "first_seen": "2026-10-23T12:03:42+00:00",
+  "id": "591ebcb60d4b",
+  "kind": "notification",
+  "org": "NABARD",
+  "pdf": {
+    "bytes": 154844,
+    "pages": 1,
+    "sha256": "e1759de5d2ed96a2f7bdb37d276c27fd5e4415d5b217b13073d8b604391b8b94",
+    "text_kind": "text"
+  },
+  "source_id": "nabard-careers",
+  "status": "pending_review",
+  "title": "Development Assistant (Hindi) – 2026 – Preliminary Examination Cut-off",
+  "url": "https://www.nabard.org/auth/writereaddata/CareerNotices/19564459Development Assistant (Hindi) – 2026 – Preliminary Examination Cut-off.pdf"
+}

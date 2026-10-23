@@ -1,0 +1,37 @@
+{
+  "board_url": "https://www.nabard.org/careers-notices1.aspx?cid=693&id=26",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "exam_date": {
+      "evidence": "PHASE - II (MAIN EXAM) RECRUITMENT OF DEVELOPMENT ASSISTANT EXAM DATE:- 12.04.2026 TABLE SHOWING REGIONAL OFFICE WISE & CATEGORY WISE CUT-OFF APPLIED ON TOTAL FOR SELECT LIST AND WAIT LIST CATEGORY- REGIONAL O",
+      "source": "rule",
+      "value": "2026-04-12"
+    },
+    "post_names": {
+      "evidence": {
+        "post_names": "RECRUITMENT OF DEVELOPMENT ASSISTANT"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "DEVELOPMENT ASSISTANT"
+      ]
+    }
+  },
+  "first_seen": "2026-10-23T12:03:42+00:00",
+  "id": "f1b4aa8aabb5",
+  "kind": "notification",
+  "org": "NABARD",
+  "pdf": {
+    "bytes": 146127,
+    "pages": 2,
+    "sha256": "7a76e0be307096db56507f5d87088fba429758d4ec01e147d33c144ce0fa1645",
+    "text_kind": "text"
+  },
+  "source_id": "nabard-careers",
+  "status": "pending_review",
+  "title": "Development Assistant – 2026 – Mains Examination Cut-off",
+  "url": "https://www.nabard.org/auth/writereaddata/CareerNotices/208269494Development Assistant – 2026 – Mains Examination Cut-off.pdf"
+}

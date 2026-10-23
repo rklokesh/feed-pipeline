@@ -1,0 +1,51 @@
+{
+  "board_url": "https://www.nabard.org/careers-notices1.aspx?cid=693&id=26",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "exam_date": {
+      "evidence": "- I (PRELIMINARY EXAM) RECRUITMENT OF DEVELOPMENT ASSISTANT EXAM DATE:- 21.02.2026 TABLE SHOWING REGIONAL OFFICE WISE & CATEGORYWISE CUT-OFF APPLIED ON TOTAL (100) REGIONAL OFFICE SC ST OBC EWS UR CATEGORY-A C",
+      "source": "rule",
+      "value": "2026-02-21"
+    },
+    "exam_date_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "exam_date": "EXAM DATE:- 21.02.2026"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Development Assistant"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "RECRUITMENT OF DEVELOPMENT ASSISTANT"
+      }
+    }
+  },
+  "first_seen": "2026-10-23T12:03:42+00:00",
+  "id": "1510542f2847",
+  "kind": "notification",
+  "org": "NABARD",
+  "pdf": {
+    "bytes": 101708,
+    "pages": 1,
+    "sha256": "f61ed7c52bec8e4ba6f0b63a5f44a43abc5639724b367489cf646d9bf1a40cfd",
+    "text_kind": "text"
+  },
+  "source_id": "nabard-careers",
+  "status": "pending_review",
+  "title": "Development Assistant – 2026 – Preliminary Examination Cut-off",
+  "url": "https://www.nabard.org/auth/writereaddata/CareerNotices/323026600Development Assistant – 2026 – Preliminary Examination Cut-off.pdf"
+}
