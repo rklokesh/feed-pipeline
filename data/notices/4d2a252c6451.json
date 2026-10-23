@@ -1,0 +1,27 @@
+{
+  "board_url": "https://rpsc.rajasthan.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "total_vacancies": {
+      "evidence": "INTV) FOR THE POST OF ASST. PROF. (MEDICAL EDU.) EXAM 2024 (33 POSTS) ASST. PROF. (BS) ORTHOPAEDICS PG- 1 21/10/2026 -------------------------------",
+      "source": "rule",
+      "value": 33
+    }
+  },
+  "first_seen": "2026-10-23T07:50:20+00:00",
+  "id": "4d2a252c6451",
+  "kind": "result",
+  "org": "RPSC",
+  "pdf": {
+    "bytes": 53089,
+    "pages": 1,
+    "sha256": "180efa4a5b747e268051c3d0cf1dd9ccb6216e6b6485a4649bedef108269bd3c",
+    "text_kind": "text"
+  },
+  "source_id": "rpsc-home",
+  "status": "pending_review",
+  "title": "23/10/2026 Main Merit List for Asst. Professor (Medical Edu.) - 2024 (Orthopaedics (BS))",
+  "url": "https://rpsc.rajasthan.gov.in/Static/Result/150873FC720A47388A2DFC6956BD4DC7.pdf"
+}
