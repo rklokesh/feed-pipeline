@@ -1,21 +1,76 @@
 {
+  "auto_published": true,
   "board_url": "https://mppsc.mp.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant Professor",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Madhya Pradesh Public Service Commission (MPPSC) has released the final answer key for the Assistant Professor Exam 2025 for Physics, Chemistry, Mathematics, and History subjects.",
+    "summary_hi": "मध्य प्रदेश लोक सेवा आयोग (MPPSC) ने भौतिकी, रसायन विज्ञान, गणित और इतिहास विषयों के लिए सहायक प्राध्यापक परीक्षा 2025 की अंतिम उत्तर कुंजी जारी कर दी है।",
+    "title_en": "MPPSC Assistant Professor Exam 2025 Final Answer Key Released",
+    "title_hi": "मध्य प्रदेश लोक सेवा आयोग सहायक प्राध्यापक परीक्षा 2025 अंतिम उत्तर कुंजी जारी",
+    "type": "Answer key",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-23T13:03:48+00:00",
   "id": "56a3dae6bb60",
+  "issue": 79,
+  "issue_tidy": true,
   "kind": "answer_key",
+  "notice_date": "2026-10-23",
   "org": "MPPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Madhya Pradesh Public Service Commission (MPPSC)",
+    "conducted_by_hi": "मध्य प्रदेश लोक सेवा आयोग (MPPSC)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "MPPSC Assistant Professor Exam 2025 Final Answer Key Released",
+    "h1_hi": "मध्य प्रदेश लोक सेवा आयोग सहायक प्राध्यापक परीक्षा 2025 अंतिम उत्तर कुंजी जारी",
+    "last_date": null,
+    "notice_date": "2026-10-23",
+    "official_site": "https://mppsc.mp.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Assistant Professor",
+        "value_hi": "सहायक प्राध्यापक"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "23/2025, 24/2025, 27/2025, 14/2025",
+        "value_hi": "23/2025, 24/2025, 27/2025, 14/2025"
+      }
+    ],
+    "status_en": "Final answer key released",
+    "status_hi": "अंतिम उत्तर कुंजी जारी",
+    "summary_en": "Madhya Pradesh Public Service Commission (MPPSC) has released the final answer key for the Assistant Professor Exam 2025 for Physics, Chemistry, Mathematics, and History subjects. Candidates who appeared for the exam can check and download the final answer key from the official website.",
+    "summary_hi": "मध्य प्रदेश लोक सेवा आयोग (MPPSC) ने भौतिकी, रसायन विज्ञान, गणित और इतिहास विषयों के लिए सहायक प्राध्यापक परीक्षा 2025 की अंतिम उत्तर कुंजी जारी कर दी है। परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक वेबसाइट से अंतिम उत्तर कुंजी देख और डाउनलोड कर सकते हैं।"
+  },
   "pdf": {
     "bytes": 272286,
     "pages": 6,
     "sha256": "7c206bb73cad5cca0b38a2ba90bdb9d4111555a6aa06cff77ca29add2c52625b",
     "text_kind": "text"
   },
+  "published_at": "2026-10-23T13:09:41Z",
+  "slug": "mppsc-assistant-professor-exam-2025-final-answer-key-released",
   "source_id": "mppsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Final Answer Key- Assistant Professor (Physics, Chemistry, Mathematics, History) Exam 2025, Dated 23/10/2026",
   "url": "https://mppsc.mp.gov.in/uploads/files/Final_Answer_Key_Assistant_Professor_Exam_2025_04_Subjects_Dated_23_10_2026.pdf"
 }
