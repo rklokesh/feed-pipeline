@@ -1,21 +1,76 @@
 {
+  "auto_published": true,
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Senior Scientific Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Question paper for the Senior Scientific Officer 2026 examination conducted by RPSC.",
+    "summary_hi": "आरपीएससी द्वारा आयोजित वरिष्ठ वैज्ञानिक अधिकारी 2026 परीक्षा के लिए प्रश्न पत्र।",
+    "title_en": "RPSC Sr. Scientific Officer 2026 Ballistics Question Paper",
+    "title_hi": "आरपीएससी वरिष्ठ वैज्ञानिक अधिकारी 2026 बॉलजिस्टिक्स प्रश्न पत्र",
+    "type": "Answer key",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-23T07:50:20+00:00",
   "id": "d64afe6e562c",
+  "issue": 60,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-10-22",
   "org": "RPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
+    "conducted_by_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "RPSC Sr. Scientific Officer 2026 Ballistics Question Paper",
+    "h1_hi": "आरपीएससी वरिष्ठ वैज्ञानिक अधिकारी 2026 बॉलजिस्टिक्स प्रश्न पत्र",
+    "last_date": null,
+    "notice_date": "2026-10-22",
+    "official_site": "https://rpsc.rajasthan.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Senior Scientific Officer (Ballistics Division)",
+        "value_hi": "वरिष्ठ वैज्ञानिक अधिकारी (बॉलजिस्टिक्स डिवीजन)"
+      },
+      {
+        "label_en": "Notice Type",
+        "label_hi": "सूचना का प्रकार",
+        "value_en": "Previous Question Paper",
+        "value_hi": "पिछला प्रश्न पत्र"
+      }
+    ],
+    "status_en": "Question paper released",
+    "status_hi": "प्रश्न पत्र जारी किया गया",
+    "summary_en": "Question paper for the Senior Scientific Officer - 2026 (Ballistics Division) examination has been released by RPSC. Candidates who appeared for the exam can download the official question paper from the website.",
+    "summary_hi": "आरपीएससी द्वारा वरिष्ठ वैज्ञानिक अधिकारी - 2026 (बॉलजिस्टिक्स डिवीजन) परीक्षा के लिए प्रश्न पत्र जारी कर दिया गया है। परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक वेबसाइट से आधिकारिक प्रश्न पत्र डाउनलोड कर सकते हैं।"
+  },
   "pdf": {
     "bytes": 15794176,
     "pages": 0,
     "sha256": "f0caaceb38edd159c5961ca010fcc9c151efe5526e3b908cd7e8f88a68f00625",
     "text_kind": "failed"
   },
+  "published_at": "2026-10-23T07:57:29Z",
+  "slug": "rpsc-sr-scientific-officer-2026-ballistics-question-paper",
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "22/10/2026 Question Paper for Sr. Scientific Officer - 2026 (Ballistics Division)",
   "url": "https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/379B4D7F-75F7-4EB1-81C1-9D0368A5F685.pdf"
 }

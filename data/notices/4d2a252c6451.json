@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant Professor (Orthopaedics)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Rajasthan Public Service Commission has released the main merit list for Assistant Professor Medical Education Exam 2024 for Orthopaedics. Candidates can check their results.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने ऑर्थोपेडिक्स के लिए सहायक आचार्य चिकित्सा शिक्षा परीक्षा दो हजार चौबीस की मुख्य मेरिट सूची जारी कर दी है। उम्मीदवार अपना परिणाम देख सकते हैं।",
+    "title_en": "RPSC Asst Professor Medical Edu 2024 Orthopaedics Main Merit List",
+    "title_hi": "आरपीएससी सहायक आचार्य चिकित्सा शिक्षा परीक्षा 2024 ऑर्थोपेडिक्स मुख्य मेरिट सूची",
+    "type": "Result",
+    "vacancies": 33
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -12,16 +29,60 @@
   },
   "first_seen": "2026-10-23T07:50:20+00:00",
   "id": "4d2a252c6451",
+  "issue": 58,
+  "issue_tidy": true,
   "kind": "result",
+  "notice_date": "2026-10-21",
   "org": "RPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
+    "conducted_by_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "RPSC Asst Professor Medical Edu 2024 Orthopaedics Main Merit List",
+    "h1_hi": "आरपीएससी सहायक आचार्य चिकित्सा शिक्षा परीक्षा 2024 ऑर्थोपेडिक्स मुख्य मेरिट सूची",
+    "last_date": null,
+    "notice_date": "2026-10-21",
+    "official_site": "https://rpsc.rajasthan.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Assistant Professor (Orthopaedics)",
+        "value_hi": "सहायक आचार्य (ऑर्थोपेडिक्स)"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "33",
+        "value_hi": "33"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Exam 2024",
+        "value_hi": "परीक्षा 2024"
+      }
+    ],
+    "status_en": "Main merit list declared",
+    "status_hi": "मुख्य मेरिट सूची घोषित",
+    "summary_en": "Rajasthan Public Service Commission has released the main merit list for the Assistant Professor (Medical Education) Exam 2024 in Orthopaedics. Candidates who appeared for the interview can check their results.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने ऑर्थोपेडिक्स में सहायक आचार्य (चिकित्सा शिक्षा) परीक्षा 2024 के लिए मुख्य मेरिट सूची जारी कर दी है। साक्षात्कार में शामिल होने वाले उम्मीदवार अपना परिणाम देख सकते हैं।"
+  },
   "pdf": {
     "bytes": 53089,
     "pages": 1,
     "sha256": "180efa4a5b747e268051c3d0cf1dd9ccb6216e6b6485a4649bedef108269bd3c",
     "text_kind": "text"
   },
+  "published_at": "2026-10-23T07:57:15Z",
+  "slug": "rpsc-asst-professor-medical-edu-2024-orthopaedics-main-merit-lis",
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "23/10/2026 Main Merit List for Asst. Professor (Medical Edu.) - 2024 (Orthopaedics (BS))",
   "url": "https://rpsc.rajasthan.gov.in/Static/Result/150873FC720A47388A2DFC6956BD4DC7.pdf"
 }
