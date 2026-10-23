@@ -1,0 +1,27 @@
+{
+  "board_url": "https://rrb.indianrailways.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "exam_date": {
+      "evidence": "s can view their exam city 10 days (Tentatively) before the exam date which is scheduled on 03.11.2026, 04.11.2026 and 05.11.2026 respectively. 2. Downloading of E-Call letters will start 4 days (Tentatively)",
+      "source": "rule",
+      "value": "2026-11-03"
+    }
+  },
+  "first_seen": "2026-10-23T14:03:51+00:00",
+  "id": "3568d6f6f85c",
+  "kind": "admit_card",
+  "org": "RRB",
+  "pdf": {
+    "bytes": 404052,
+    "pages": 1,
+    "sha256": "5d136f6ee23563e5884ab6f838278492bd67495e86b9ec9d3313da99f12ee4c2",
+    "text_kind": "text"
+  },
+  "source_id": "rrb-unified",
+  "status": "pending_review",
+  "title": "RRB CEN 01/2026: City Intimation alp eng",
+  "url": "https://rrb.indianrailways.gov.in/-/image/1792763913591City_Intimation_alp_eng.pdf/examsDocuments"
+}
