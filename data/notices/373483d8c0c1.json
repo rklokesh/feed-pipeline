@@ -1,0 +1,50 @@
+{
+  "board_url": "https://uppsc.up.nic.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "3IITh t https://uppsc.up.nic.in Home Page 'R Click here for Advt. No. A-5/E-1/2025, Assistant Teacher, Trained Graduate Grade (Male/Female Branch) Exam-2025 Docum",
+      "source": "rule",
+      "value": "A-5/E-1/2025"
+    },
+    "apply_or_official_url": {
+      "evidence": "-10-2026 2— cicl RILi 4c'i Rici 3RJ R'ii 23.10.2026 3IITh t https://uppsc.up.nic.in Home Page 'R Click here for Advt. No. A-5/E-1/2025, Assistant Teacher, Trained",
+      "source": "rule",
+      "value": "https://uppsc.up.nic.in"
+    },
+    "apply_url": {
+      "evidence": {
+        "apply_url": "https://uppsc.up.nic.in Home Page 'R Click here for Advt."
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://uppsc.up.nic.in"
+    },
+    "post_names": {
+      "evidence": {
+        "post_names": "Assistant Teacher, Trained Graduate Grade (Male/Female Branch)"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Assistant Teacher, Trained Graduate Grade (Male/Female Branch)"
+      ]
+    }
+  },
+  "first_seen": "2026-10-23T11:41:22+00:00",
+  "id": "373483d8c0c1",
+  "kind": "notification",
+  "org": "UPPSC",
+  "pdf": {
+    "bytes": 3654948,
+    "pages": 2,
+    "sha256": "b0525ce4459fa9f63f6812558921e5d2c4efb48d0f89c45586322cdd42f453c4",
+    "text_kind": "text"
+  },
+  "source_id": "uppsc-home",
+  "status": "pending_review",
+  "title": "30 Oct 2026 NOTICE REAGARDING DOCUMENT VERIFICATION FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER TRAINED GRADUATE (M./F.) EXAM 2025, (HOME SCIENCE).",
+  "url": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmzNJIRVKnDR3aQH/S0HdIS"
+}
