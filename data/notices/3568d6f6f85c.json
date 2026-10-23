@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-03",
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant Loco Pilot",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Railway Recruitment Board has released the exam city and date intimation link for the Assistant Loco Pilot examination 2026. Candidates can view their exam city and download travel authority.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने सहायक लोको पायलट परीक्षा 2026 के लिए परीक्षा शहर और तिथि की सूचना का लिंक जारी कर दिया है। उम्मीदवार अपने परीक्षा शहर की जांच कर सकते हैं और यात्रा प्राधिकार डाउनलोड कर सकते हैं।",
+    "title_en": "RRB CEN 01/2026 Assistant Loco Pilot Exam City Intimation",
+    "title_hi": "रेलवे भर्ती बोर्ड केंद्रीय रोजगार सूचना संख्या 01/2026 सहायक लोको पायलट परीक्षा शहर की सूचना",
+    "type": "Admit card",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -12,16 +29,66 @@
   },
   "first_seen": "2026-10-23T14:03:51+00:00",
   "id": "3568d6f6f85c",
+  "issue": 81,
+  "issue_tidy": true,
   "kind": "admit_card",
+  "notice_date": "2026-10-23",
   "org": "RRB",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Railway Recruitment Boards (RRB)",
+    "conducted_by_hi": "रेलवे भर्ती बोर्ड (आरआरबी)",
+    "exam_date": "2026-11-03",
+    "fees": [],
+    "h1_en": "RRB CEN 01/2026 Assistant Loco Pilot Exam City Intimation",
+    "h1_hi": "रेलवे भर्ती बोर्ड केंद्रीय रोजगार सूचना संख्या 01/2026 सहायक लोको पायलट परीक्षा शहर की सूचना",
+    "last_date": null,
+    "notice_date": "2026-10-23",
+    "official_site": "https://rrb.indianrailways.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Assistant Loco Pilot (ALP)",
+        "value_hi": "सहायक लोको पायलट"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "CEN No. 01/2026",
+        "value_hi": "केंद्रीय रोजगार सूचना संख्या 01/2026"
+      },
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "03.11.2026, 04.11.2026 and 05.11.2026",
+        "value_hi": "03.11.2026, 04.11.2026 और 05.11.2026"
+      },
+      {
+        "label_en": "Helpdesk Contact",
+        "label_hi": "हेल्पलाइन नंबर",
+        "value_en": "7996342666",
+        "value_hi": "7996342666"
+      }
+    ],
+    "status_en": "Exam city intimation slip released",
+    "status_hi": "परीक्षा शहर की सूचना पर्ची जारी कर दी गई है",
+    "summary_en": "Railway Recruitment Board has released the exam city and date intimation link for the Assistant Loco Pilot examination 2026. Candidates can view their exam city, date, and download travel authority using their credentials.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने सहायक लोको पायलट परीक्षा 2026 के लिए परीक्षा शहर और तिथि की सूचना का लिंक जारी कर दिया है। उम्मीदवार अपने क्रेडेंशियल का उपयोग करके परीक्षा शहर, तिथि और यात्रा प्राधिकार देख सकते हैं।"
+  },
   "pdf": {
     "bytes": 404052,
     "pages": 1,
     "sha256": "5d136f6ee23563e5884ab6f838278492bd67495e86b9ec9d3313da99f12ee4c2",
     "text_kind": "text"
   },
+  "published_at": "2026-10-23T14:10:34Z",
+  "slug": "rrb-cen-01-2026-assistant-loco-pilot-exam-city-intimation",
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RRB CEN 01/2026: City Intimation alp eng",
   "url": "https://rrb.indianrailways.gov.in/-/image/1792763913591City_Intimation_alp_eng.pdf/examsDocuments"
 }
