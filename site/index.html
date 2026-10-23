@@ -418,23 +418,11 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   // and, for returning visitors, it appeared since their last visit. No cap: a bulk upload of old notices stays quiet.
   const FRESH_DAYS = 2;
   const issuedRecently = i => (Date.now() - Date.parse(i.posted + "T23:59:59+05:30")) < FRESH_DAYS * 864e5;
-  const isNewVisit = i => !i.quiet && issuedRecently(i) && (firstVisit || pubTime(i) > since);
-  // PREVIEW of three "New" rules (pick one, then the others are removed):  ?new=1  ?new=2  ?new=3
-  //   1 = official date today or yesterday (IST)   2 = official date today   3 = Today / Yesterday dividers
-  //   In all three, a LATE upload (reached us in the last 24 h, officially dated 2+ days ago) is "new" for a day.
-  const NEW_MODE = (() => { try { return ["1", "2", "3"].includes(new URLSearchParams(location.search).get("new")) ? +new URLSearchParams(location.search).get("new") : 0; } catch (e) { return 0; } })();
+  // "New" = officially issued today or yesterday (India time). Same for every visitor; the list is sorted by that
+  // same official date, so every "New" row sits at the top, newest date first.
   const istDay = ms => new Date(ms + 5.5 * 36e5).toISOString().slice(0, 10);
   const N_TODAY = istDay(Date.now()), N_YDAY = istDay(Date.now() - 864e5);
-  // late = reached us in the last 24 h but officially dated 2-3 days ago (older ones are back-catalogue from a newly added board)
-  const N_WEEK = istDay(Date.now() - 3 * 864e5);   // up to 3 days late
-  const lateUpload = i => !i.quiet && Date.now() - pubTime(i) < 864e5 && i.posted < N_YDAY && i.posted >= N_WEEK;
-  const effDay = i => (NEW_MODE && lateUpload(i)) ? N_TODAY : i.posted;   // late uploads sit with today's notices
-  const isNew = i => NEW_MODE === 0 ? isNewVisit(i)
-    : i.quiet ? false
-    : lateUpload(i) ? true
-    : NEW_MODE === 1 ? (i.posted === N_TODAY || i.posted === N_YDAY)
-    : NEW_MODE === 2 ? i.posted === N_TODAY
-    : false;   // mode 3: dividers instead of tags (only late uploads get the arrow)
+  const isNew = i => !i.quiet && (i.posted === N_TODAY || i.posted === N_YDAY);
   const title = i => lang === "hi" ? i.hi : i.title;
   const org = i => lang === "hi" ? (ORG_HI[i.org] || i.org) : i.org;
   const fmtText = iso => new Date(iso + "T00:00:00").toLocaleDateString(t("locale"), { day: "numeric", month: "short" });
@@ -560,7 +548,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   const PAGE = 25; let shown = PAGE, allRows = [];
   function render() {
     // Jobs: closing soonest first (undated last). Everything else: newest first.
-    const byNewest = (a, b) => effDay(b).localeCompare(effDay(a)) || pubTime(b) - pubTime(a);
+    const byNewest = (a, b) => b.posted.localeCompare(a.posted) || pubTime(b) - pubTime(a);
     const bySearch = (a, b) => searchRank(a) - searchRank(b) || titleScore(b) - titleScore(a) || (a.last || "9").localeCompare(b.last || "9") || b.posted.localeCompare(a.posted);
     const byClosing = (a, b) => a.last.localeCompare(b.last) || b.posted.localeCompare(a.posted);
     const rows = allRows = ITEMS.filter(i => live(i) && inCat(i, cat) && qmatch(i)).sort(q ? bySearch : cat === "soon" ? byClosing : byNewest);
@@ -573,12 +561,8 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     });
     moveInk();
     const nl = document.getElementById("newline"), nNew = ITEMS.filter(i => live(i) && isNew(i)).length;
-    const showNl = NEW_MODE === 0 && !firstVisit && nNew > 0; nl.classList.toggle("off", !showNl); nl.textContent = showNl ? t("sinceLast")(nNew) : "\u00a0";
-    const dividers = NEW_MODE === 3 && !q && cat !== "soon";
-    let lastGroup = null;
-    const dayLabel = i => { const d = effDay(i); return d === N_TODAY ? t("dToday") : d === N_YDAY ? t("dYday") : t("dEarlier"); };
-    const divider = i => { if (!dividers) return ""; const g = dayLabel(i); if (g === lastGroup) return ""; lastGroup = g; return `<li class="day" aria-hidden="true"><span>${g}</span></li>`; };
-    document.getElementById("list").innerHTML = rows.slice(0, shown).map(i => divider(i) +
+    const showNl = false;   // "N new since your last visit" retired: New is now the same for everyone nl.classList.toggle("off", !showNl); nl.textContent = showNl ? t("sinceLast")(nNew) : "\u00a0";
+    document.getElementById("list").innerHTML = rows.slice(0, shown).map(i =>
       `<li class="lr${isNew(i) ? " fresh" : ""}"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm"><span class="pc"><span>${fmt(i.posted)}</span><span class="slot">${isNew(i) ? `<img class="newtag" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" width="23" height="14">` : ""}${inCat(i, "soon") ? SIREN : ""}</span></span></span><span class="t" data-full="${esc(title(i))}">${inCat(i, "soon") ? SIREN.replace('class="rsiren"', 'class="rsiren show-sm"') : ""}${isNew(i) ? `<img class="newtag show-sm" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" width="23" height="14">` : ""}${esc(title(i))}</span><span class="hide-sm g cut" data-full="${esc(org(i) || "")}">${esc(org(i) || "")}</span><span class="hide-sm g cut" data-full="${esc(t(i.type))}">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
     ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
     // One long page, revealed 50 rows at a time (no "page 2"): Ctrl+F, search and the back button keep working.
