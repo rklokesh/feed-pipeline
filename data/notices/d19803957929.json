@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://ssc.gov.in/home/notice-board",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-02",
+    "last_date": null,
+    "list": true,
+    "posts": "Junior Engineer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Staff Selection Commission has released the exam city details for Junior Engineer Examination 2026 Paper-I. Candidates can check their exam city and download the admit card from the official website.",
+    "summary_hi": "कर्मचारी चयन आयोग ने कनिष्ठ अभियंता परीक्षा 2026 पेपर-I के लिए परीक्षा शहर का विवरण जारी कर दिया है। उम्मीदवार आधिकारिक वेबसाइट से अपने परीक्षा शहर की जाँच कर सकते हैं और प्रवेश पत्र डाउनलोड कर सकते हैं।",
+    "title_en": "SSC JE Exam 2026 Paper-I City and Admit Card Notice",
+    "title_hi": "कर्मचारी चयन आयोग कनिष्ठ अभियंता परीक्षा 2026 परीक्षा शहर और प्रवेश पत्र सूचना",
+    "type": "Admit card",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -12,16 +29,60 @@
   },
   "first_seen": "2026-10-23T17:09:26+00:00",
   "id": "d19803957929",
+  "issue": 82,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-10-23",
   "org": "SSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": "https://ssc.gov.in/",
+    "changes_from_notes": "",
+    "conducted_by_en": "Staff Selection Commission (SSC)",
+    "conducted_by_hi": "कर्मचारी चयन आयोग (एसएससी)",
+    "exam_date": "2026-11-02",
+    "fees": [],
+    "h1_en": "SSC JE Exam 2026 Paper-I City and Admit Card Notice",
+    "h1_hi": "कर्मचारी चयन आयोग कनिष्ठ अभियंता परीक्षा 2026 परीक्षा शहर और प्रवेश पत्र सूचना",
+    "last_date": null,
+    "notice_date": "2026-10-23",
+    "official_site": "https://ssc.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पदों",
+        "value_en": "Junior Engineer",
+        "value_hi": "कनिष्ठ अभियंता"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा की तारीख",
+        "value_en": "02 Nov 2026 to 06 Nov 2026",
+        "value_hi": "02 नवंबर 2026 से 06 नवंबर 2026"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "HQ-IT018/5/2024-IT (E-10583)",
+        "value_hi": "HQ-IT018/5/2024-IT (E-10583)"
+      }
+    ],
+    "status_en": "Exam city details released, admit card available 2-3 days prior to exam",
+    "status_hi": "परीक्षा शहर का विवरण जारी, प्रवेश पत्र परीक्षा से 2-3 दिन पहले उपलब्ध होगा",
+    "summary_en": "Staff Selection Commission has released the examination city details for Junior Engineer Examination 2026 Paper-I. Candidates can check their exam city by logging into the official website. The exam is scheduled from 02.11.2026 to 06.11.2026.",
+    "summary_hi": "कर्मचारी चयन आयोग ने कनिष्ठ अभियंता परीक्षा 2026 पेपर-I के लिए परीक्षा शहर का विवरण जारी कर दिया है। उम्मीदवार आधिकारिक वेबसाइट पर लॉग इन करके अपने परीक्षा शहर की जाँच कर सकते हैं। परीक्षा 02.11.2026 से 06.11.2026 तक निर्धारित है।"
+  },
   "pdf": {
     "bytes": 261403,
     "pages": 1,
     "sha256": "c521bfba03f2e7fe8b8e326b23ac58abd490780e71333049961d505b7183eca5",
     "text_kind": "text"
   },
+  "published_at": "2026-10-23T17:10:40Z",
+  "slug": "ssc-je-exam-2026-paper-i-city-and-admit-card-notice",
   "source_id": "ssc-notice-board",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Information regarding the city of examination and Admission Certificate for the candidates of Junior Engineer Examination, 2026 (Computer Based Examination) Paper-I",
   "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/JE_2026_City_Live_Notice_23102026.pdf"
 }
