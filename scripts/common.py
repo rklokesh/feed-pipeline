@@ -139,7 +139,7 @@ def get(url: str, attempts: int = 3, stream: bool = False) -> requests.Response:
         except requests.exceptions.SSLError as e:
             last = e
             msg = str(e)
-            if host not in _legacy_hosts and ("LEGACY_RENEGOTIATION" in msg or "HANDSHAKE_FAILURE" in msg
+            if host not in _legacy_hosts and ("LEGACY_RENEGOTIATION" in msg or "HANDSHAKE_FAILURE" in msg or "UNEXPECTED_MESSAGE" in msg
                                               or "DH_KEY_TOO_SMALL" in msg or "UNSUPPORTED_PROTOCOL" in msg):
                 _legacy(host)
                 try:
