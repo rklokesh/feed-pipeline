@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://uppsc.up.nic.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-10-29",
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant Teacher, Trained Graduate Grade",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Uttar Pradesh Public Service Commission has announced the document verification schedule for Assistant Teacher Trained Graduate Grade Exam 2025. Candidates should check the schedule and complete authentication on the official website.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने सहायक अध्यापक प्रशिक्षित स्नातक श्रेणी परीक्षा 2025 के लिए अभिलेख सत्यापन कार्यक्रम घोषित कर दिया है। उम्मीदवार आधिकारिक वेबसाइट पर जाकर अपना कार्यक्रम देखें और सत्यापन प्रक्रिया पूरी करें।",
+    "title_en": "UPPSC Assistant Teacher Document Verification 2025",
+    "title_hi": "उत्तर प्रदेश लोक सेवा आयोग सहायक अध्यापक अभिलेख सत्यापन 2025",
+    "type": "Job",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -35,16 +52,60 @@
   },
   "first_seen": "2026-10-23T11:41:22+00:00",
   "id": "9558c27efbe0",
+  "issue": 64,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-10-23",
   "org": "UPPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": "https://uppsc.up.nic.in",
+    "changes_from_notes": "",
+    "conducted_by_en": "Uttar Pradesh Public Service Commission (UPPSC)",
+    "conducted_by_hi": "उत्तर प्रदेश लोक सेवा आयोग (यूपीपीएससी)",
+    "exam_date": "2026-10-29",
+    "fees": [],
+    "h1_en": "UPPSC Assistant Teacher Document Verification 2025",
+    "h1_hi": "उत्तर प्रदेश लोक सेवा आयोग सहायक अध्यापक अभिलेख सत्यापन 2025",
+    "last_date": null,
+    "notice_date": "2026-10-23",
+    "official_site": "https://uppsc.up.nic.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Assistant Teacher, Trained Graduate Grade (Male/Female Branch)",
+        "value_hi": "सहायक अध्यापक, प्रशिक्षित स्नातक श्रेणी (पुरुष/महिला शाखा)"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "29 Oct 2026",
+        "value_hi": "29 अक्तूबर 2026"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "A-5/E-1/2025",
+        "value_hi": "A-5/E-1/2025"
+      }
+    ],
+    "status_en": "Document verification schedule released",
+    "status_hi": "अभिलेख सत्यापन कार्यक्रम जारी किया गया",
+    "summary_en": "Uttar Pradesh Public Service Commission has announced the document verification schedule for Assistant Teacher Trained Graduate Grade Exam 2025. Candidates should check the schedule and complete authentication on the official website.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने सहायक अध्यापक प्रशिक्षित स्नातक श्रेणी परीक्षा 2025 के लिए अभिलेख सत्यापन कार्यक्रम घोषित कर दिया है। उम्मीदवार आधिकारिक वेबसाइट पर जाकर अपना कार्यक्रम देखें और सत्यापन प्रक्रिया पूरी करें।"
+  },
   "pdf": {
     "bytes": 3654953,
     "pages": 2,
     "sha256": "f2979258aa2f7a5a336c46dfcd3b9c93f34ea2197fb83d309c858ad8eb53e2bd",
     "text_kind": "text"
   },
+  "published_at": "2026-10-23T11:43:16Z",
+  "slug": "uppsc-assistant-teacher-document-verification-2025",
   "source_id": "uppsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1. NOTICE REAGARDING DOCUMENT VERIFICATION FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TE.. Visible upto : 30/10/2026",
   "url": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmzNJIRVKnDR/OjdeHPS5Dn"
 }

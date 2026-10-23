@@ -1,5 +1,20 @@
 {
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-10-28",
+    "list": false,
+    "posts": "Statistical Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal notice regarding detailed application form submission for specific candidates in an existing recruitment",
+    "summary_en": "RPSC has released a final opportunity for shortlisted candidates to submit their detailed application form for the Statistical Officer 2025 recruitment by October 28, 2026.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने सांख्यिकी अधिकारी 2025 भर्ती के लिए चयनित अभ्यर्थियों को 28 अक्टूबर 2026 तक विस्तृत आवेदन पत्र भरने का अंतिम अवसर दिया है।",
+    "title_en": "RPSC Statistical Officer Detailed Application Notice",
+    "title_hi": "राजस्थान लोक सेवा आयोग सांख्यिकी अधिकारी विस्तृत आवेदन सूचना",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "23/10/2026 Press Note Regarding Online Detailed Application Form for Statistical Officer - 2025",
   "url": "https://rpsc.rajasthan.gov.in/Static/PressNotes/763E6378-565F-4EC3-9878-BB7C8B8C543F.pdf"
 }
