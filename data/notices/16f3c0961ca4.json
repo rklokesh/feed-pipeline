@@ -1,21 +1,76 @@
 {
+  "auto_published": true,
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Rajasthan State and Subordinate Services",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Rajasthan Public Service Commission has released a revised result preamble for the Rajasthan State and Subordinate Services Combined Competitive Examination 2023 following court orders.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने न्यायालय के आदेशों के पालन में राजस्थान राज्य एवं अधीनस्थ सेवाएं संयुक्त प्रतियोगी परीक्षा 2023 के संबंध में संशोधित परिणाम प्रस्तावना जारी कर दी है।",
+    "title_en": "RPSC Rajasthan State and Sub. Services Exam 2023 Result Preamble",
+    "title_hi": "आरपीएससी राजस्थान राज्य एवं अधीनस्थ सेवाएं परीक्षा 2023 परिणाम प्रस्तावना",
+    "type": "Result",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-23T12:03:42+00:00",
   "id": "16f3c0961ca4",
+  "issue": 67,
+  "issue_tidy": true,
   "kind": "result",
+  "notice_date": "2026-10-23",
   "org": "RPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
+    "conducted_by_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "RPSC Rajasthan State and Sub. Services Exam 2023 Result Preamble",
+    "h1_hi": "आरपीएससी राजस्थान राज्य एवं अधीनस्थ सेवाएं परीक्षा 2023 परिणाम प्रस्तावना",
+    "last_date": null,
+    "notice_date": "2026-10-23",
+    "official_site": "https://rpsc.rajasthan.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Rajasthan State and Subordinate Services",
+        "value_hi": "राजस्थान राज्य एवं अधीनस्थ सेवाएं"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Combined Competitive Examination 2023",
+        "value_hi": "संयुक्त प्रतियोगी परीक्षा 2023"
+      }
+    ],
+    "status_en": "Revised result preamble released",
+    "status_hi": "संशोधित परिणाम प्रस्तावना जारी",
+    "summary_en": "Rajasthan Public Service Commission has released a revised result preamble for the Rajasthan State and Subordinate Services Combined Competitive Examination 2023 following court orders.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने न्यायालय के आदेशों के पालन में राजस्थान राज्य एवं अधीनस्थ सेवाएं संयुक्त प्रतियोगी परीक्षा 2023 के संबंध में संशोधित परिणाम प्रस्तावना जारी कर दी है।"
+  },
   "pdf": {
     "bytes": 186962,
     "pages": 1,
     "sha256": "77a98728d4115c6174be72539b846b6a370c5f5e84c612b436ee761a9b320a21",
     "text_kind": "text"
   },
+  "published_at": "2026-10-23T12:10:41Z",
+  "slug": "rpsc-rajasthan-state-and-sub-services-exam-2023-result-preamble",
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "23/10/2026 Result Preamble for Raj. State And Sub. Services Comb. Comp. Exam - 2023",
   "url": "https://rpsc.rajasthan.gov.in/Static/Result/B5EB37F4A8524D638793903E0A809AF1.pdf"
 }

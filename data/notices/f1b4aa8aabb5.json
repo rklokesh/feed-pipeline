@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://www.nabard.org/careers-notices1.aspx?cid=693&id=26",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-04-12",
+    "last_date": null,
+    "list": true,
+    "posts": "Development Assistant",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "NABARD has released the regional and category-wise cut-off marks for the Development Assistant Mains Examination 2026. Candidates can check the official PDF for details.",
+    "summary_hi": "नाबार्ड ने डेवलपमेंट असिस्टेंट मुख्य परीक्षा 2026 के लिए क्षेत्रीय और श्रेणीवार कट-ऑफ अंक जारी कर दिए हैं। उम्मीदवार विवरण के लिए आधिकारिक पीडीएफ देख सकते हैं।",
+    "title_en": "NABARD Development Assistant Mains Exam Cut-Off 2026",
+    "title_hi": "नाबार्ड डेवलपमेंट असिस्टेंट मुख्य परीक्षा कट-ऑफ 2026",
+    "type": "Result",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -22,16 +39,54 @@
   },
   "first_seen": "2026-10-23T12:03:42+00:00",
   "id": "f1b4aa8aabb5",
+  "issue": 76,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-10-23",
   "org": "NABARD",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "National Bank for Agriculture and Rural Development (NABARD)",
+    "conducted_by_hi": "राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड)",
+    "exam_date": "2026-04-12",
+    "fees": [],
+    "h1_en": "NABARD Development Assistant Mains Exam Cut-Off 2026",
+    "h1_hi": "नाबार्ड डेवलपमेंट असिस्टेंट मुख्य परीक्षा कट-ऑफ 2026",
+    "last_date": null,
+    "notice_date": null,
+    "official_site": "https://www.nabard.org",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Development Assistant",
+        "value_hi": "डेवलपमेंट असिस्टेंट"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "12 Apr 2026",
+        "value_hi": "12 अप्रेल 2026"
+      }
+    ],
+    "status_en": "Mains Examination cut-off released",
+    "status_hi": "मुख्य परीक्षा कट-ऑफ जारी",
+    "summary_en": "National Bank for Agriculture and Rural Development has released the regional and category-wise cut-off marks for the Development Assistant Mains Examination 2026 held on 12 April 2026. Candidates can check the official PDF for detailed cut-offs.",
+    "summary_hi": "राष्ट्रीय कृषि और ग्रामीण विकास बैंक ने 12 अप्रैल 2026 को आयोजित डेवलपमेंट असिस्टेंट मुख्य परीक्षा 2026 के लिए क्षेत्रीय और श्रेणीवार कट-ऑफ अंक जारी कर दिए हैं। उम्मीदवार विस्तृत कट-ऑफ के लिए आधिकारिक पीडीएफ देख सकते हैं।"
+  },
   "pdf": {
     "bytes": 146127,
     "pages": 2,
     "sha256": "7a76e0be307096db56507f5d87088fba429758d4ec01e147d33c144ce0fa1645",
     "text_kind": "text"
   },
+  "published_at": "2026-10-23T12:12:33Z",
+  "slug": "nabard-development-assistant-mains-exam-cut-off-2026",
   "source_id": "nabard-careers",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Development Assistant – 2026 – Mains Examination Cut-off",
   "url": "https://www.nabard.org/auth/writereaddata/CareerNotices/208269494Development Assistant – 2026 – Mains Examination Cut-off.pdf"
 }

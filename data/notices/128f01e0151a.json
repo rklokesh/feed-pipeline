@@ -1,21 +1,76 @@
 {
+  "auto_published": true,
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Lecturer (Agad Tantra)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "RPSC has released the reserve list and cutoff marks for the Lecturer (Ayurved Dept) Agad Tantra Examination 2025. Candidates can check their roll number and merit rank.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने व्याख्याता (आयुर्वेद विभाग) अगद तंत्र परीक्षा 2025 के लिए आरक्षित सूची और कटऑफ अंक जारी कर दिए हैं। उम्मीदवार अपना रोल नंबर और मेरिट रैंक देख सकते हैं।",
+    "title_en": "RPSC Lecturer Agad Tantra 2025 Reserve List and Cutoff Marks",
+    "title_hi": "राजस्थान लोक सेवा आयोग व्याख्याता अगद तंत्र 2025 आरक्षित सूची एवं कटऑफ अंक",
+    "type": "Result",
+    "vacancies": 1
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-23T12:03:42+00:00",
   "id": "128f01e0151a",
+  "issue": 65,
+  "issue_tidy": true,
   "kind": "result",
+  "notice_date": "2026-10-23",
   "org": "RPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
+    "conducted_by_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "RPSC Lecturer Agad Tantra 2025 Reserve List and Cutoff Marks",
+    "h1_hi": "राजस्थान लोक सेवा आयोग व्याख्याता अगद तंत्र 2025 आरक्षित सूची एवं कटऑफ अंक",
+    "last_date": null,
+    "notice_date": "2026-10-23",
+    "official_site": "https://rpsc.rajasthan.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Lecturer (Agad Tantra)",
+        "value_hi": "व्याख्याता (अगद तंत्र)"
+      },
+      {
+        "label_en": "Total candidates in reserve list",
+        "label_hi": "आरक्षित सूची में कुल उम्मीदवार",
+        "value_en": "1",
+        "value_hi": "1"
+      }
+    ],
+    "status_en": "Reserve list and cutoff marks declared",
+    "status_hi": "आरक्षित सूची एवं कटऑफ अंक घोषित",
+    "summary_en": "RPSC has released the reserve list and cutoff marks for the Lecturer (Agad Tantra) examination 2025 under the Ayurved Department. Candidates included in the list can check their roll number and merit rank.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने आयुर्वेद विभाग के अंतर्गत व्याख्याता (अगद तंत्र) परीक्षा 2025 के लिए आरक्षित सूची और कटऑफ अंक जारी कर दिए हैं। सूची में शामिल उम्मीदवार अपना रोल नंबर और मेरिट रैंक देख सकते हैं।"
+  },
   "pdf": {
     "bytes": 281843,
     "pages": 1,
     "sha256": "1efd5696b6aa6f863425e80bec525a4707754a88f504a0bf09df4ac160cc09f7",
     "text_kind": "text"
   },
+  "published_at": "2026-10-23T12:10:28Z",
+  "slug": "rpsc-lecturer-agad-tantra-2025-reserve-list-and-cutoff-marks",
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "23/10/2026 Result Preamble and Cutoff Marks (Reserve List) for Lecturer (Ayurved Dept.) - 2025 (Agad Tantra)",
   "url": "https://rpsc.rajasthan.gov.in/Static/Result/304FCDE9E8864E18A817242C9A6B041E.pdf"
 }

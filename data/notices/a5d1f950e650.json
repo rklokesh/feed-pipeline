@@ -1,21 +1,82 @@
 {
+  "auto_published": true,
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Lecturer (Agad Tantra)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Rajasthan Public Service Commission has released the main result and cut-off marks for the Lecturer Agad Tantra exam 2025.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने व्याख्याता अगद तंत्र परीक्षा 2025 के लिए मुख्य परिणाम और कट-ऑफ अंक जारी कर दिए हैं।",
+    "title_en": "RPSC Lecturer Agad Tantra 2025 Main Result and Cut-Off Marks",
+    "title_hi": "आरपीएससी व्याख्याता अगद तंत्र 2025 मुख्य परिणाम और कट-ऑफ अंक",
+    "type": "Result",
+    "vacancies": 1
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-23T12:03:42+00:00",
   "id": "a5d1f950e650",
+  "issue": 73,
+  "issue_tidy": true,
   "kind": "result",
+  "notice_date": "2026-10-23",
   "org": "RPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
+    "conducted_by_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "RPSC Lecturer Agad Tantra 2025 Main Result and Cut-Off Marks",
+    "h1_hi": "आरपीएससी व्याख्याता अगद तंत्र 2025 मुख्य परिणाम और कट-ऑफ अंक",
+    "last_date": null,
+    "notice_date": "2026-10-23",
+    "official_site": "https://rpsc.rajasthan.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Lecturer (Agad Tantra)",
+        "value_hi": "व्याख्याता (अगद तंत्र)"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "1",
+        "value_hi": "1"
+      },
+      {
+        "label_en": "Result status",
+        "label_hi": "परिणाम स्थिति",
+        "value_en": "1 candidate selected in main list",
+        "value_hi": "मुख्य सूची में 1 अभ्यर्थी चयनित"
+      }
+    ],
+    "status_en": "Main result and cut-off marks declared",
+    "status_hi": "मुख्य परिणाम और कट-ऑफ अंक घोषित",
+    "summary_en": "Rajasthan Public Service Commission has released the main result and cut-off marks for the Lecturer Agad Tantra Exam 2025 under the AYUSH Department. Candidates who appeared for document verification can check their merit status and cut-off marks.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने आयुष विभाग के अंतर्गत व्याख्याता अगद तंत्र परीक्षा 2025 के लिए मुख्य परिणाम और कट-ऑफ अंक जारी कर दिए हैं। दस्तावेज सत्यापन के लिए उपस्थित होने वाले उम्मीदवार अपना मेरिट स्टेटस और कट-ऑफ अंक देख सकते हैं।"
+  },
   "pdf": {
     "bytes": 281818,
     "pages": 1,
     "sha256": "4f052d21de7d784bc1424b9c8d8dcb628dd3fbd0b8fff2a3cef9b1e482168be7",
     "text_kind": "text"
   },
+  "published_at": "2026-10-23T12:11:53Z",
+  "slug": "rpsc-lecturer-agad-tantra-2025-main-result-and-cut-off-marks",
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "23/10/2026 Result Preamble and Cutoff Marks (Main List) for Lecturer (Ayurved Dept.) - 2025 (Agad Tantra)",
   "url": "https://rpsc.rajasthan.gov.in/Static/Result/22B19347D4E34E908CBCA12122879F2E.pdf"
 }

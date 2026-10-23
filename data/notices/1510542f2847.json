@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://www.nabard.org/careers-notices1.aspx?cid=693&id=26",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-02-21",
+    "last_date": null,
+    "list": true,
+    "posts": "Development Assistant",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "NABARD has released the preliminary examination cut-off marks for the Development Assistant recruitment 2026. Candidates can check the regional and category-wise cut-off scores.",
+    "summary_hi": "नाबार्ड ने विकास सहायक भर्ती 2026 के लिए प्रारंभिक परीक्षा के कट-ऑफ अंक जारी कर दिए हैं। उम्मीदवार क्षेत्रीय और श्रेणीवार कट-ऑफ अंक देख सकते हैं।",
+    "title_en": "NABARD Development Assistant Prelims Cut-off 2026",
+    "title_hi": "नाबार्ड विकास सहायक प्रारंभिक परीक्षा कट-ऑफ 2026",
+    "type": "Result",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -36,16 +53,54 @@
   },
   "first_seen": "2026-10-23T12:03:42+00:00",
   "id": "1510542f2847",
+  "issue": 66,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-10-23",
   "org": "NABARD",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "National Bank for Agriculture and Rural Development (NABARD)",
+    "conducted_by_hi": "राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड)",
+    "exam_date": "2026-02-21",
+    "fees": [],
+    "h1_en": "NABARD Development Assistant Prelims Cut-off 2026",
+    "h1_hi": "नाबार्ड विकास सहायक प्रारंभिक परीक्षा कट-ऑफ 2026",
+    "last_date": null,
+    "notice_date": null,
+    "official_site": "https://www.nabard.org",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Development Assistant",
+        "value_hi": "विकास सहायक"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "21 Feb 2026",
+        "value_hi": "21 फरवरी 2026"
+      }
+    ],
+    "status_en": "Preliminary examination cut-off released",
+    "status_hi": "प्रारंभिक परीक्षा कट-ऑफ जारी",
+    "summary_en": "National Bank for Agriculture and Rural Development has released the preliminary examination cut-off marks for the Development Assistant recruitment 2026. Candidates can check the regional and category-wise cut-off scores from this notice.",
+    "summary_hi": "राष्ट्रीय कृषि और ग्रामीण विकास बैंक ने विकास सहायक भर्ती 2026 के लिए प्रारंभिक परीक्षा के कट-ऑफ अंक जारी कर दिए हैं। उम्मीदवार इस सूचना से क्षेत्रीय और श्रेणीवार कट-ऑफ अंक देख सकते हैं।"
+  },
   "pdf": {
     "bytes": 101708,
     "pages": 1,
     "sha256": "f61ed7c52bec8e4ba6f0b63a5f44a43abc5639724b367489cf646d9bf1a40cfd",
     "text_kind": "text"
   },
+  "published_at": "2026-10-23T12:10:34Z",
+  "slug": "nabard-development-assistant-prelims-cut-off-2026",
   "source_id": "nabard-careers",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Development Assistant – 2026 – Preliminary Examination Cut-off",
   "url": "https://www.nabard.org/auth/writereaddata/CareerNotices/323026600Development Assistant – 2026 – Preliminary Examination Cut-off.pdf"
 }
