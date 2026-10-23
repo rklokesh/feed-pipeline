@@ -80,6 +80,19 @@ publish.yml (when the owner adds a label to an issue, open or closed):
   top-left (replaces tagline), breadcrumb "Jobs / Board", centred 760px column, key details/links as square bordered
   tables with homepage hover colour, icons on Share/PDF/Report. Ticket design was tried and rejected.
 
+
+## 3c. Check schedule (23 Oct)
+
+- **Mac timer (main):** launchd job `com.sarkarichart.poke` (installed by `Sarkari Chart/setup-timer.sh`) dispatches
+  `watch-india.yml` every 30 min. Files: `~/.sarkarichart/{poke.sh,token,poke.log}` (external drives are off-limits to
+  background jobs on macOS, so they live in the home folder). Undo command is at the top of setup-timer.sh.
+- `watch-india.yml` now checks ALL boards (runner india + github) on the Mac; `prepare.yml` runs on the Mac after a Mac
+  check (dynamic runs-on), on GitHub after the backup check. `watch.yml` (GitHub) is a 3-hourly backup.
+  Both watchers share concurrency group `watch-data`.
+- GitHub's free cron was skipping runs (gaps of 3–6 h) — that is why the Mac timer exists.
+- "New" tag rule (final): officially issued today or yesterday (IST), same for everyone; list strictly newest official
+  date first; "N new since your last visit" line retired.
+
 ## 4. Board status (22 Oct 2026, India runner)
 
 - Working: UPSC (both pages), NABARD, Navy, BSF, ITBP, RPSC, RSSB, MPPSC, DSSSB, UPSSSC (+ the 9 GitHub boards:
