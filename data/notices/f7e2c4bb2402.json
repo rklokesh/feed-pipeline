@@ -1,21 +1,76 @@
 {
+  "auto_published": true,
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-02",
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant Professor, Sub Inspector / Platoon Commander",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Rajasthan Public Service Commission announced interview dates for Assistant Professor and Sub Inspector 2025 examinations. Candidates should check the schedule and bring original documents.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने सहायक आचार्य और उप निरीक्षक 2025 परीक्षाओं के लिए साक्षात्कार तिथियां घोषित कर दी हैं। उम्मीदवार अपना शेड्यूल देखें और मूल दस्तावेज साथ लाएं।",
+    "title_en": "RPSC Assistant Professor and Sub Inspector Interview Dates 2025",
+    "title_hi": "आरपीएससी सहायक आचार्य और उप निरीक्षक साक्षात्कार तिथियां 2025",
+    "type": "Admit card",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-23T11:03:37+00:00",
   "id": "f7e2c4bb2402",
+  "issue": 62,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-10-23",
   "org": "RPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
+    "conducted_by_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी)",
+    "exam_date": "2026-11-02",
+    "fees": [],
+    "h1_en": "RPSC Assistant Professor and Sub Inspector Interview Dates 2025",
+    "h1_hi": "आरपीएससी सहायक आचार्य और उप निरीक्षक साक्षात्कार तिथियां 2025",
+    "last_date": null,
+    "notice_date": "2026-10-23",
+    "official_site": "https://rpsc.rajasthan.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Sub Inspector / Platoon Commander 2025, Assistant Professor (Chemistry & Economics) 2025",
+        "value_hi": "उप निरीक्षक / प्लाटून कमांडर 2025, सहायक आचार्य (केमिस्ट्री और इकोनॉमिक्स) 2025"
+      },
+      {
+        "label_en": "Interview Dates",
+        "label_hi": "साक्षात्कार तिथियां",
+        "value_en": "02 Nov 2026 to 30 Nov 2026",
+        "value_hi": "02 नव 2026 से 30 नव 2026 तक"
+      }
+    ],
+    "status_en": "Interview schedule released",
+    "status_hi": "साक्षात्कार कार्यक्रम जारी",
+    "summary_en": "Rajasthan Public Service Commission announced interview dates for Assistant Professor and Sub Inspector 2025 examinations. Candidates should check the interview schedule and bring original documents along with photocopies.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने सहायक आचार्य और उप निरीक्षक 2025 परीक्षाओं के लिए साक्षात्कार तिथियां घोषित कर दी हैं। उम्मीदवार अपना साक्षात्कार कार्यक्रम देखें और मूल दस्तावेजों के साथ फोटोकॉपी लाएं।"
+  },
   "pdf": {
     "bytes": 99769,
     "pages": 1,
     "sha256": "cc1c720a2e1e70a99b812713e06a6732519414bdf0edf035059d38956d31c5d2",
     "text_kind": "text"
   },
+  "published_at": "2026-10-23T11:09:14Z",
+  "slug": "rpsc-assistant-professor-and-sub-inspector-interview-dates-2025",
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "23/10/2026 Press Note Regarding Interview Dates for Asst. Prof. (College Education) - 2025 (Chemistry, Economics)",
   "url": "https://rpsc.rajasthan.gov.in/Static/PressNotes/F27F2D3E-37B7-4CF6-A80E-44257524E758.pdf"
 }
