@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <meta name="description" content="{{DESC}}">
+<link rel="canonical" href="{{URL}}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="SarkariChart">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:url" content="{{URL}}">
+<meta property="og:image" content="{{OGIMG}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <title>{{TITLE}}</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" id="favPng">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" id="favSvg">
@@ -228,7 +238,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", about: "About",
       allNotices: "All notices", open: "Applications open", closed: "Applications closed", lastDay: "Last day",
       daysLeft: d => `${d} day${d === 1 ? "" : "s"} left`, locale: "en-IN", views: n => `${n.toLocaleString("en-IN")} views`,
-      reportPage: "Report a mistake on this page", dlPdf: "Download this page as PDF", share: "Share on WhatsApp",
+      reportPage: "Report a mistake on this page", copyLink: "Copy link", copied: "Link copied ✓", dlPdf: "Download this page as PDF", share: "Share on WhatsApp",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
       report: "Report a mistake", privacy: "Privacy", switchTo: "हिंदी", switchLang: "hi", toDark: "Switch to dark mode", toLight: "Switch to light mode",
       prefSrc: "Add SarkariChart as a preferred source on Google",
@@ -238,7 +248,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
       allNotices: "सभी सूचनाएँ", open: "आवेदन जारी हैं", closed: "आवेदन बंद हो चुके हैं", lastDay: "आज अंतिम दिन",
       daysLeft: d => `${d} दिन बाकी`, locale: "hi-IN", views: n => `${n.toLocaleString("en-IN")} बार देखा गया`,
-      reportPage: "इस पेज पर गलती बताएँ", dlPdf: "यह पेज पीडीएफ में डाउनलोड करें", share: "व्हाट्सऐप पर भेजें",
+      reportPage: "इस पेज पर गलती बताएँ", copyLink: "लिंक कॉपी करें", copied: "लिंक कॉपी हो गया ✓", dlPdf: "यह पेज पीडीएफ में डाउनलोड करें", share: "व्हाट्सऐप पर भेजें",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
       report: "गलती बताएँ", privacy: "गोपनीयता", switchTo: "अंग्रेज़ी", switchLang: "en", toDark: "गहरा रंग चुनें", toLight: "हल्का रंग चुनें",
       prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ",
@@ -297,6 +307,15 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       .then(r => r.ok ? r.json() : null).then(d => { if (d && typeof d.n === "number") { views = d.n; paintViews(); if (post) { try { localStorage.setItem(key, today); } catch (e) {} } } }).catch(() => {});
     ("requestIdleCallback" in window) ? requestIdleCallback(go, { timeout: 2000 }) : setTimeout(go, 600);
   })();
+  // Copy link: one tap, with a tick; on phones that can share natively, a long text is not needed
+  const cp = document.getElementById("copyLink");
+  if (cp) cp.addEventListener("click", async e => {
+    e.preventDefault();
+    const url = location.origin + location.pathname, lab = cp.querySelector("span");
+    try { await navigator.clipboard.writeText(url); }
+    catch (err) { const ta = document.createElement("textarea"); ta.value = url; document.body.appendChild(ta); ta.select(); try { document.execCommand("copy"); } catch (e2) {} ta.remove(); }
+    lab.textContent = t("copied"); setTimeout(() => { lab.textContent = t("copyLink"); }, 1800);
+  });
   document.getElementById("lang").addEventListener("click", () => {
     lang = lang === "hi" ? "en" : "hi";
     try { localStorage.setItem("sc-lang", lang); } catch (e) {}

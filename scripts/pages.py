@@ -165,6 +165,7 @@ def official_date(n: dict) -> str:
     return seen.isoformat()
 
 
+SITE_URL = os.environ.get("SITE_URL", "https://sarkarichart.pages.dev")   # change to https://sarkarichart.com at launch
 CAT_SLUG = {"Job": "jobs", "Result": "results", "Admit card": "admit-cards", "Answer key": "answer-keys"}
 
 
@@ -244,7 +245,7 @@ def render(n: dict, slug: str) -> str:
     wa = ('<svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>')
     main.append(f'''    <div class="note">
       <p class="g" data-t="checked">{esc(en["checked"])}</p>
-      <p class="actions"><a class="share" id="share" href="#">{wa}<span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/{slug}/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
+      <p class="actions"><a class="share" id="share" href="#">{wa}<span data-t="share">Share on WhatsApp</span></a><a class="act" id="copyLink" href="#"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><span data-t="copyLink">Copy link</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/{slug}/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
     </div>''')
 
     tpl = TEMPLATE.read_text(encoding="utf-8")
@@ -253,6 +254,7 @@ def render(n: dict, slug: str) -> str:
     desc = (en["summary"] or en["h1"])[:155]
     out = (tpl.replace("{{TITLE}}", esc(en["title"])).replace("{{DESC}}", esc(desc)).replace("{{MAIN}}", "\n".join(main))
            .replace("{{T_EN}}", t_en).replace("{{T_HI}}", t_hi).replace("{{SLUG}}", slug)
+           .replace("{{OGIMG}}", f"{SITE_URL}/notice/{slug}/og.png").replace("{{URL}}", f"{SITE_URL}/notice/{slug}/")
            .replace("{{LAST}}", f'new Date("{last}T23:59:59+05:30")' if last else "null"))
     return out
 
@@ -285,6 +287,15 @@ def main():
         out = SITE / "notice" / slug / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(render(n, slug), encoding="utf-8")
+        # data for the share image (site/notice/<slug>/og.png, drawn by scripts/make_pdfs.mjs at deploy)
+        c, pg = n.get("card") or {}, n.get("page") or {}
+        typ = c.get("type", "Job")
+        last = valid_date(pg.get("last_date") or c.get("last_date")) if typ == "Job" else None
+        og = {"title_en": pg.get("h1_en") or c.get("title_en") or n.get("title"), "title_hi": pg.get("h1_hi") or c.get("title_hi") or "",
+              "org": n.get("org") or "", "type_en": typ, "type_hi": {"Job": "नौकरी", "Result": "रिज़ल्ट", "Admit card": "एडमिट कार्ड", "Answer key": "आंसर की"}.get(typ, ""),
+              "last_en": d_en(last) if last else "", "last_hi": d_hi(last) if last else "",
+              "status_en": pg.get("status_en") or "", "status_hi": pg.get("status_hi") or ""}
+        (out.parent / "og.json").write_text(json.dumps(og, ensure_ascii=False), encoding="utf-8")
         f.write_text(json.dumps(n, ensure_ascii=False, indent=2, sort_keys=True))
         print(f"  {n['id']}: /notice/{slug}/ {('(notes: ' + n['page'].get('changes_from_notes', '') + ')') if n.get('editor_notes') else ''}")
 

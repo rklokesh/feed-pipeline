@@ -35,8 +35,11 @@ jobs:
         id: pdfcache
         uses: actions/cache@v4
         with:
-          path: site/notice/**/*.pdf
-          key: pdfs-${{ hashFiles('site/notice/**/*.html', 'scripts/make_pdfs.mjs', 'site/logo*.png') }}
+          path: |
+            site/notice/**/*.pdf
+            site/notice/**/og.png
+            site/og.png
+          key: pdfs-og-${{ hashFiles('site/notice/**/*.html', 'site/notice/**/og.json', 'scripts/make_pdfs.mjs', 'scripts/og_card.mjs', 'site/logo*.png') }}
       - name: Install PDF printer
         if: steps.pdfcache.outputs.cache-hit != 'true'
         timeout-minutes: 8          # a stuck apt mirror must never block the site deploy
@@ -50,5 +53,10 @@ jobs:
         timeout-minutes: 8
         continue-on-error: true
         run: node scripts/make_pdfs.mjs site
+      - name: Make share images (og.png, 1200x630)
+        if: steps.pdfcache.outputs.cache-hit != 'true'
+        timeout-minutes: 6
+        continue-on-error: true
+        run: node scripts/og_card.mjs site
       - name: Deploy
         run: npx --yes wrangler@3 pages deploy site --project-name sarkarichart --branch main --commit-dirty=true
