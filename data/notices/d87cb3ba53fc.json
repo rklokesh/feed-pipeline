@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://www.rrc-wr.com/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-13",
+    "last_date": null,
+    "list": true,
+    "posts": "ALP / Tech. III",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Western Railway has rescheduled the computer-based test for ALP and Tech-III posts to 13-11-2026. Candidates can download their call letters 7 days prior to the exam.",
+    "summary_hi": "पश्चिमी रेलवे ने सहायक लोको पायलट और तकनीशियन तृतीय पदों के लिए कंप्यूटर आधारित परीक्षा को 13-11-2026 तक पुनर्चक्रित किया है। उम्मीदवार परीक्षा से 7 दिन पहले अपने प्रवेश पत्र डाउनलोड कर सकते हैं।",
+    "title_en": "Western Railway ALP and Tech-III CBT Rescheduling Notice 2026",
+    "title_hi": "पश्चिमी रेलवे सहायक लोको पायलट और तकनीशियन तृतीय कंप्यूटर आधारित परीक्षा पुनर्चक्रण सूचना 2026",
+    "type": "Admit card",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -12,16 +29,60 @@
   },
   "first_seen": "2026-10-23T12:33:44+00:00",
   "id": "d87cb3ba53fc",
+  "issue": 78,
+  "issue_tidy": true,
   "kind": "admit_card",
+  "notice_date": "2026-10-23",
   "org": "RRC Western Railway",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Railway Recruitment Cell, Western Railway (RRC WR)",
+    "conducted_by_hi": "रेलवे भर्ती प्रकोष्ठ, पश्चिमी रेलवे",
+    "exam_date": "2026-11-13",
+    "fees": [],
+    "h1_en": "Western Railway ALP and Tech-III CBT Rescheduling Notice 2026",
+    "h1_hi": "पश्चिमी रेलवे सहायक लोको पायलट और तकनीशियन तृतीय कंप्यूटर आधारित परीक्षा पुनर्चक्रण सूचना 2026",
+    "last_date": null,
+    "notice_date": "2026-10-23",
+    "official_site": "https://www.rrc-wr.com/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "ALP / Tech. III",
+        "value_hi": "सहायक लोको पायलट / तकनीशियन तृतीय"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "13 Nov 2026",
+        "value_hi": "13 नव 2026"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "GDCE Notification No. 01/2023",
+        "value_hi": "जीडीसीई अधिसूचना संख्या 01/2023"
+      }
+    ],
+    "status_en": "CBT rescheduled to 13 Nov 2026",
+    "status_hi": "कंप्यूटर आधारित परीक्षा 13 नव 2026 को पुनर्चक्रित",
+    "summary_en": "Western Railway has rescheduled the computer-based test for ALP and Tech-III posts to 13 Nov 2026. Candidates can download their call letters 7 days prior to the exam date from the official website.",
+    "summary_hi": "पश्चिमी रेलवे ने सहायक लोको पायलट और तकनीशियन तृतीय पदों के लिए कंप्यूटर आधारित परीक्षा को 13 नव 2026 तक पुनर्चक्रित किया है। उम्मीदवार परीक्षा तिथि से 7 दिन पहले आधिकारिक वेबसाइट से अपने प्रवेश पत्र डाउनलोड कर सकते हैं।"
+  },
   "pdf": {
     "bytes": 424999,
     "pages": 1,
     "sha256": "c31f9524c53fec4228c7c10b5cdba1832579f3072c2d81edfc1d2d88341d4d65",
     "text_kind": "text"
   },
+  "published_at": "2026-10-23T12:40:13Z",
+  "slug": "western-railway-alp-and-tech-iii-cbt-rescheduling-notice-2026",
   "source_id": "rrc-wr",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Click here to view/download Notice regarding re-scheduling of CBT for the post of ALP/Tech-III",
   "url": "https://www.rrc-wr.com/rrwc/Files/5000775f-bdce-49e4-a0c9-4492738f8428.pdf"
 }
