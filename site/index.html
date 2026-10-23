@@ -122,6 +122,10 @@ main { margin-top: 36px; flex: 1; }
 .tabs button.zero { opacity: .45; }
 .empty { padding: 5px 8px; color: var(--grey); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .list li + li { border-top: 1px solid var(--line); }
+.list li.day { list-style: none; padding: 14px 8px 4px; color: var(--grey); font-size: .8125rem; letter-spacing: .04em; border-top: 0 !important; }
+.list li.day + li.lr { border-top: 1px solid var(--line); }
+.list li.day:first-child { padding-top: 6px; }
+
 .list li:last-child { border-bottom: 1px solid var(--line); }
 .list li.lr { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr) 7.25rem 5.75rem 7.5rem 4.25rem; gap: 0 16px; align-items: baseline; padding: 5px 8px; }
 .list li.lr > a.row { display: contents; }
@@ -290,7 +294,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
       report: "Report a mistake", privacy: "Privacy", switchTo: "हिंदी", toDark: "Switch to dark mode", toLight: "Switch to light mode", switchLang: "hi",
       Job: "Job", Result: "Result", "Answer key": "Answer key", "Admit card": "Admit card",
-      available: "Available", newBadge: "New", sinceLast: n => `${n} new since your last visit`, inNotice: "In notice", lastDay: "Last day", pdfAria: "Download this notice as PDF",
+      available: "Available", newBadge: "New", dToday: "Today", dYday: "Yesterday", dEarlier: "Earlier", sinceLast: n => `${n} new since your last visit`, inNotice: "In notice", lastDay: "Last day", pdfAria: "Download this notice as PDF",
       daysLeft: d => `${d} day${d === 1 ? "" : "s"} left`, daysShort: d => `${d} day${d === 1 ? "" : "s"}`,
       none: q => `Nothing matches "${q}". Try a shorter word, like an organisation name.`,
       empty: "Nothing here right now. New notices appear as soon as they are published.",
@@ -304,7 +308,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
       report: "गलती बताएँ", privacy: "गोपनीयता", switchTo: "अंग्रेज़ी", toDark: "गहरा रंग चुनें", toLight: "हल्का रंग चुनें", switchLang: "en",
       Job: "नौकरी", Result: "रिज़ल्ट", "Answer key": "आंसर की", "Admit card": "एडमिट कार्ड",
-      available: "उपलब्ध", newBadge: "नया", sinceLast: n => `पिछली बार के बाद ${n} नई सूचनाएँ`, inNotice: "सूचना में देखें", lastDay: "आज अंतिम दिन", pdfAria: "यह सूचना पीडीएफ में डाउनलोड करें",
+      available: "उपलब्ध", newBadge: "नया", dToday: "आज", dYday: "कल", dEarlier: "पहले", sinceLast: n => `पिछली बार के बाद ${n} नई सूचनाएँ`, inNotice: "सूचना में देखें", lastDay: "आज अंतिम दिन", pdfAria: "यह सूचना पीडीएफ में डाउनलोड करें",
       daysLeft: d => `${d} दिन बाकी`, daysShort: d => `${d} दिन`,
       none: q => `“${q}” से कुछ नहीं मिला। छोटा शब्द आज़माएँ, जैसे संस्था का नाम।`,
       empty: "अभी यहाँ कुछ नहीं है। नई सूचनाएँ जारी होते ही यहाँ दिखेंगी।",
@@ -414,7 +418,23 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   // and, for returning visitors, it appeared since their last visit. No cap: a bulk upload of old notices stays quiet.
   const FRESH_DAYS = 2;
   const issuedRecently = i => (Date.now() - Date.parse(i.posted + "T23:59:59+05:30")) < FRESH_DAYS * 864e5;
-  const isNew = i => !i.quiet && issuedRecently(i) && (firstVisit || pubTime(i) > since);
+  const isNewVisit = i => !i.quiet && issuedRecently(i) && (firstVisit || pubTime(i) > since);
+  // PREVIEW of three "New" rules (pick one, then the others are removed):  ?new=1  ?new=2  ?new=3
+  //   1 = official date today or yesterday (IST)   2 = official date today   3 = Today / Yesterday dividers
+  //   In all three, a LATE upload (reached us in the last 24 h, officially dated 2+ days ago) is "new" for a day.
+  const NEW_MODE = (() => { try { return ["1", "2", "3"].includes(new URLSearchParams(location.search).get("new")) ? +new URLSearchParams(location.search).get("new") : 0; } catch (e) { return 0; } })();
+  const istDay = ms => new Date(ms + 5.5 * 36e5).toISOString().slice(0, 10);
+  const N_TODAY = istDay(Date.now()), N_YDAY = istDay(Date.now() - 864e5);
+  // late = reached us in the last 24 h but officially dated 2-3 days ago (older ones are back-catalogue from a newly added board)
+  const N_WEEK = istDay(Date.now() - 3 * 864e5);   // up to 3 days late
+  const lateUpload = i => !i.quiet && Date.now() - pubTime(i) < 864e5 && i.posted < N_YDAY && i.posted >= N_WEEK;
+  const effDay = i => (NEW_MODE && lateUpload(i)) ? N_TODAY : i.posted;   // late uploads sit with today's notices
+  const isNew = i => NEW_MODE === 0 ? isNewVisit(i)
+    : i.quiet ? false
+    : lateUpload(i) ? true
+    : NEW_MODE === 1 ? (i.posted === N_TODAY || i.posted === N_YDAY)
+    : NEW_MODE === 2 ? i.posted === N_TODAY
+    : false;   // mode 3: dividers instead of tags (only late uploads get the arrow)
   const title = i => lang === "hi" ? i.hi : i.title;
   const org = i => lang === "hi" ? (ORG_HI[i.org] || i.org) : i.org;
   const fmtText = iso => new Date(iso + "T00:00:00").toLocaleDateString(t("locale"), { day: "numeric", month: "short" });
@@ -540,7 +560,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   const PAGE = 25; let shown = PAGE, allRows = [];
   function render() {
     // Jobs: closing soonest first (undated last). Everything else: newest first.
-    const byNewest = (a, b) => b.posted.localeCompare(a.posted) || pubTime(b) - pubTime(a);
+    const byNewest = (a, b) => effDay(b).localeCompare(effDay(a)) || pubTime(b) - pubTime(a);
     const bySearch = (a, b) => searchRank(a) - searchRank(b) || titleScore(b) - titleScore(a) || (a.last || "9").localeCompare(b.last || "9") || b.posted.localeCompare(a.posted);
     const byClosing = (a, b) => a.last.localeCompare(b.last) || b.posted.localeCompare(a.posted);
     const rows = allRows = ITEMS.filter(i => live(i) && inCat(i, cat) && qmatch(i)).sort(q ? bySearch : cat === "soon" ? byClosing : byNewest);
@@ -553,8 +573,12 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     });
     moveInk();
     const nl = document.getElementById("newline"), nNew = ITEMS.filter(i => live(i) && isNew(i)).length;
-    const showNl = !firstVisit && nNew > 0; nl.classList.toggle("off", !showNl); nl.textContent = showNl ? t("sinceLast")(nNew) : "\u00a0";
-    document.getElementById("list").innerHTML = rows.slice(0, shown).map(i =>
+    const showNl = NEW_MODE === 0 && !firstVisit && nNew > 0; nl.classList.toggle("off", !showNl); nl.textContent = showNl ? t("sinceLast")(nNew) : "\u00a0";
+    const dividers = NEW_MODE === 3 && !q && cat !== "soon";
+    let lastGroup = null;
+    const dayLabel = i => { const d = effDay(i); return d === N_TODAY ? t("dToday") : d === N_YDAY ? t("dYday") : t("dEarlier"); };
+    const divider = i => { if (!dividers) return ""; const g = dayLabel(i); if (g === lastGroup) return ""; lastGroup = g; return `<li class="day" aria-hidden="true"><span>${g}</span></li>`; };
+    document.getElementById("list").innerHTML = rows.slice(0, shown).map(i => divider(i) +
       `<li class="lr${isNew(i) ? " fresh" : ""}"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm"><span class="pc"><span>${fmt(i.posted)}</span><span class="slot">${isNew(i) ? `<img class="newtag" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" width="23" height="14">` : ""}${inCat(i, "soon") ? SIREN : ""}</span></span></span><span class="t" data-full="${esc(title(i))}">${inCat(i, "soon") ? SIREN.replace('class="rsiren"', 'class="rsiren show-sm"') : ""}${isNew(i) ? `<img class="newtag show-sm" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" width="23" height="14">` : ""}${esc(title(i))}</span><span class="hide-sm g cut" data-full="${esc(org(i) || "")}">${esc(org(i) || "")}</span><span class="hide-sm g cut" data-full="${esc(t(i.type))}">${t(i.type)}</span><span class="num" style="white-space:nowrap">${lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
     ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
     // One long page, revealed 50 rows at a time (no "page 2"): Ctrl+F, search and the back button keep working.
