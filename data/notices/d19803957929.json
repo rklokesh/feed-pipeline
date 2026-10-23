@@ -1,0 +1,27 @@
+{
+  "board_url": "https://ssc.gov.in/home/notice-board",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "e designated login module on the website of the Commission (https://ssc.gov.in/). 2. The ‘Admission Certificate’ for the said examinations will tentatively be",
+      "source": "rule",
+      "value": "https://ssc.gov.in/"
+    }
+  },
+  "first_seen": "2026-10-23T17:09:26+00:00",
+  "id": "d19803957929",
+  "kind": "other",
+  "org": "SSC",
+  "pdf": {
+    "bytes": 261403,
+    "pages": 1,
+    "sha256": "c521bfba03f2e7fe8b8e326b23ac58abd490780e71333049961d505b7183eca5",
+    "text_kind": "text"
+  },
+  "source_id": "ssc-notice-board",
+  "status": "pending_review",
+  "title": "Information regarding the city of examination and Admission Certificate for the candidates of Junior Engineer Examination, 2026 (Computer Based Examination) Paper-I",
+  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/JE_2026_City_Live_Notice_23102026.pdf"
+}
