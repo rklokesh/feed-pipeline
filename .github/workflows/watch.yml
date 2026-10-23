@@ -5,8 +5,7 @@ on:
   schedule:
     # Times are UTC. Hourly 06:45-22:45 IST, plus 01:45 and 04:45 IST overnight (19 runs/day),
     # which keeps a private repo inside GitHub's 2,000 free minutes/month.
-    - cron: "15 1-17 * * *"
-    - cron: "15 20,23 * * *"
+    - cron: "15 */3 * * *"   # backup only (every 3 h): the Mac checks all boards every 30 min
   workflow_dispatch:
     inputs:
       only:
@@ -24,7 +23,7 @@ permissions:
   models: read      # free GitHub Models AI fallback for extraction
 
 concurrency:
-  group: watch-github
+  group: watch-data   # shared with watch-india.yml
   cancel-in-progress: false
 
 jobs:

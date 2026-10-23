@@ -17,17 +17,23 @@ concurrency:
 
 jobs:
   prepare:
-    runs-on: ubuntu-latest
+    # after a Mac check, prepare on the Mac too (free minutes); after the GitHub backup check, on GitHub
+    runs-on: ${{ github.event.workflow_run.name == 'Watch India-only sources' && fromJSON('["self-hosted","india"]') || 'ubuntu-latest' }}
     timeout-minutes: 50
     outputs:
       published: ${{ steps.cards.outputs.published }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
+        if: runner.os != 'macOS'
         with:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
+        if: runner.os != 'macOS'
+      - name: Use the Mac's Python (set up by the India watcher)
+        if: runner.os == 'macOS'
+        run: echo "$HOME/.sarkarichart-venv/bin" >> "$GITHUB_PATH"
       - name: Prepare cards and auto-publish
         id: cards
         env:
