@@ -427,15 +427,6 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       .then(r => r.ok ? r.json() : null).then(d => { if (d && typeof d.n === "number") { views = d.n; paintViews(); if (post) { try { localStorage.setItem(key, today); } catch (e) {} } } }).catch(() => {});
     ("requestIdleCallback" in window) ? requestIdleCallback(go, { timeout: 2000 }) : setTimeout(go, 600);
   })();
-  // Copy link: one tap, with a tick; on phones that can share natively, a long text is not needed
-  const cp = document.getElementById("copyLink");
-  if (cp) cp.addEventListener("click", async e => {
-    e.preventDefault();
-    const url = location.origin + location.pathname, lab = cp.querySelector("span");
-    try { await navigator.clipboard.writeText(url); }
-    catch (err) { const ta = document.createElement("textarea"); ta.value = url; document.body.appendChild(ta); ta.select(); try { document.execCommand("copy"); } catch (e2) {} ta.remove(); }
-    lab.textContent = t("copied"); setTimeout(() => { lab.textContent = t("copyLink"); }, 1800);
-  });
   document.getElementById("lang").addEventListener("click", () => {
     lang = lang === "hi" ? "en" : "hi";
     try { localStorage.setItem("sc-lang", lang); } catch (e) {}
