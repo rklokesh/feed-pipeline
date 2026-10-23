@@ -1,5 +1,20 @@
 {
   "board_url": "https://ssc.gov.in/home/notice-board",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Constable GD and Rifleman GD",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Clarification notice regarding categories of shortlisted candidates for an already declared result",
+    "summary_en": "The Commission has released a clarification notice regarding category statuses of candidates shortlisted for the next stage of the examination.",
+    "summary_hi": "आयोग ने परीक्षा के अगले चरण के लिए शॉर्टलिस्ट किए गए उम्मीदवारों की श्रेणी की स्थिति के संबंध में स्पष्टीकरण नोटिस जारी किया है।",
+    "title_en": "SSC Constable GD Examination 2026 Shortlisted Candidates Status",
+    "title_hi": "कर्मचारी चयन आयोग सिपाही जीडी परीक्षा 2026 चयनित अभ्यर्थियों की स्थिति",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "ssc-notice-board",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Constable (GD) in Central Armed Police Forces (CAPFs) and SSF, and Rifleman (GD) in Assam Rifles Examination, 2026– Information regarding status of categories of shortlisted candidates",
   "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_23102026.pdf"
 }
