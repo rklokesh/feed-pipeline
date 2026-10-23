@@ -1,5 +1,20 @@
 {
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Senior Scientific Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Previous year or exam question paper, not a job vacancy or major recruitment notice",
+    "summary_en": "Question paper for the Senior Scientific Officer 2025 examination by RPSC.",
+    "summary_hi": "आरपीएससी द्वारा सीनियर साइंटिफिक ऑफिसर 2025 परीक्षा का प्रश्न पत्र।",
+    "title_en": "RPSC Senior Scientific Officer Serology Question Paper 2025",
+    "title_hi": "आरपीएससी सीनियर साइंटिफिक ऑफिसर सेरोलॉजी प्रश्न पत्र 2025",
+    "type": "Answer key",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "failed"
   },
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "23/10/2026 Question Paper for Senior Scientific Officer – 2025 (Serology Division)",
   "url": "https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/565B8917-C6E6-42D5-83A4-90FBE9C54A77.pdf"
 }

@@ -1,5 +1,20 @@
 {
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Assistant Director",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Question paper document, not a job vacancy, result, admit card, or answer key",
+    "summary_en": "Question paper for the RPSC Assistant Director 2025 examination.",
+    "summary_hi": "आरपीएससी सहायक निदेशक 2025 परीक्षा के लिए प्रश्न पत्र।",
+    "title_en": "RPSC Assistant Director DNA Division 2025 Question Paper",
+    "title_hi": "राजस्थान लोक सेवा आयोग सहायक निदेशक डीएनए खंड 2025 प्रश्न पत्र",
+    "type": "Answer key",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "failed"
   },
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "23/10/2026 Question Paper for Assistant Director - 2025 (DNA Division)",
   "url": "https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/C4095F2E-A14D-4D1F-A68C-9EB450327670.pdf"
 }

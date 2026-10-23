@@ -1,5 +1,20 @@
 {
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Senior Scientific Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Question paper release, not a job, result, admit card, or answer key",
+    "summary_en": "Question paper released for Senior Scientific Officer – 2025 (Narcotics Division) by RPSC.",
+    "summary_hi": "आरपीएससी द्वारा सीनियर साइंटिफिक ऑफिसर 2025 (नारकोटिक्स डिवीजन) के लिए प्रश्न पत्र जारी किया गया है।",
+    "title_en": "RPSC Senior Scientific Officer 2025 Question Paper",
+    "title_hi": "आरपीएससी सीनियर साइंटिफिक ऑफिसर 2025 प्रश्न पत्र",
+    "type": "Answer key",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "failed"
   },
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "23/10/2026 Question Paper for Senior Scientific Officer – 2025 (Narcotics Division)",
   "url": "https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/DFC87ECA-AE62-434A-8E84-5F75D11B68F8.pdf"
 }
