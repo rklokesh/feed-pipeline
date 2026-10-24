@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://uppbpb.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Homeguard",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Uttar Pradesh Police has released the notice regarding the publication of final marks for Homeguard Enrolment 2025. Candidates can check their scores on the official website.",
+    "summary_hi": "उत्तर प्रदेश पुलिस ने होमगार्ड्स एनरोलमेंट 2025 के अंतिम अंकों के प्रकाशन के संबंध में सूचना जारी कर दी है। उम्मीदवार आधिकारिक वेबसाइट पर अपने अंक देख सकते हैं।",
+    "title_en": "UP Police Homeguard Enrolment 2025 Final Marks Notice",
+    "title_hi": "उत्तर प्रदेश पुलिस होमगार्ड्स एनरोलमेंट 2025 अंतिम अंक सूचना",
+    "type": "Result",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -12,16 +29,66 @@
   },
   "first_seen": "2026-10-24T06:07:01+00:00",
   "id": "66325a834ad5",
+  "issue": 85,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-10-24",
   "org": "UP Police",
+  "page": {
+    "apply_start": null,
+    "apply_url": "https://uppbpb.gov.in",
+    "changes_from_notes": "",
+    "conducted_by_en": "Uttar Pradesh Police Recruitment and Promotion Board (UPPBPB)",
+    "conducted_by_hi": "उत्तर प्रदेश पुलिस भर्ती एवं प्रोन्नति बोर्ड (UPPBPB)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "UP Police Homeguard Enrolment 2025 Final Marks Notice",
+    "h1_hi": "उत्तर प्रदेश पुलिस होमगार्ड्स एनरोलमेंट 2025 अंतिम अंक सूचना",
+    "last_date": null,
+    "notice_date": "2026-10-24",
+    "official_site": "https://uppbpb.gov.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Homeguard",
+        "value_hi": "होमगार्ड"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "A-1/2025",
+        "value_hi": "A-1/2025"
+      },
+      {
+        "label_en": "Notice date",
+        "label_hi": "सूचना तिथि",
+        "value_en": "2026-10-24",
+        "value_hi": "2026-10-24"
+      },
+      {
+        "label_en": "Marks viewing window",
+        "label_hi": "अंक देखने की अवधि",
+        "value_en": "24 Oct 2026 to 23 Nov 2026",
+        "value_hi": "24 अक्टू 2026 से 23 नव 2026"
+      }
+    ],
+    "status_en": "Final marks notice released",
+    "status_hi": "अंतिम अंक सूचना जारी",
+    "summary_en": "Uttar Pradesh Police has released the notice regarding the publication of final marks for Homeguard Enrolment 2025. Candidates can check their scores on the official website.",
+    "summary_hi": "उत्तर प्रदेश पुलिस ने होमगार्ड्स एनरोलमेंट 2025 के अंतिम अंकों के प्रकाशन के संबंध में सूचना जारी कर दी है। उम्मीदवार आधिकारिक वेबसाइट पर अपने अंक देख सकते हैं।"
+  },
   "pdf": {
     "bytes": 305311,
     "pages": 1,
     "sha256": "f688e437ec2313e64400c06ef28f3d7c3ffcc0e8be21889dec9d914b4450972e",
     "text_kind": "text"
   },
+  "published_at": "2026-10-24T06:11:34Z",
+  "slug": "up-police-homeguard-enrolment-2025-final-marks-notice",
   "source_id": "uppbpb-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "LATEST NOTICE: उत्तर प्रदेश होमगार्ड्स के पदों पर एनरोलमेंट -2025 के अन्तर्गत अन्तिम अंकों के प्रकाशन के सम्बन्ध में सूचना |",
   "url": "https://uppbpb.gov.in/FilesUploaded/Notice/HG2025_Marks_Notice602be8cf-8ca2-47a1-9c85-b03cb41d37e0.pdf"
 }
