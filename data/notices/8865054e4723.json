@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://nta.ac.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2027-01-28",
+    "last_date": "2026-11-22",
+    "list": true,
+    "posts": "Undergraduate Engineering Programs (B.E/B.Tech), B. Arch, B. Planning",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "National Testing Agency has invited online applications for Joint Entrance Examination JEE Main 2027 Session 1. Eligible candidates can apply online through the official website.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने संयुक्त प्रवेश परीक्षा मुख्य 2027 सत्र 1 के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+    "title_en": "NTA Joint Entrance Examination JEE Main 2027 Session 1",
+    "title_hi": "राष्ट्रीय परीक्षा एजेंसी संयुक्त प्रवेश परीक्षा मुख्य 2027 सत्र 1",
+    "type": "Job",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -62,16 +79,72 @@
   },
   "first_seen": "2026-10-24T16:41:13+00:00",
   "id": "8865054e4723",
+  "issue": 88,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-10-24",
   "org": "NTA",
+  "page": {
+    "apply_start": "2026-10-24",
+    "apply_url": "https://jeemain.nta.nic.in/",
+    "changes_from_notes": "",
+    "conducted_by_en": "National Testing Agency (NTA)",
+    "conducted_by_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए)",
+    "exam_date": "2027-01-28",
+    "fees": [],
+    "h1_en": "NTA Joint Entrance Examination JEE Main 2027 Session 1",
+    "h1_hi": "राष्ट्रीय परीक्षा एजेंसी संयुक्त प्रवेश परीक्षा मुख्य 2027 सत्र 1",
+    "last_date": "2026-11-22",
+    "notice_date": "2026-10-24",
+    "official_site": "https://nta.ac.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Undergraduate Engineering Programs (B.E/B.Tech), B. Arch, B. Planning",
+        "value_hi": "स्नातक इंजीनियरिंग कार्यक्रम (बी.ई./बी.टेक), बी. आर्च, बी. प्लानिंग"
+      },
+      {
+        "label_en": "Apply online (start to last date)",
+        "label_hi": "ऑनलाइन आवेदन (प्रारंभ से अंतिम तिथि)",
+        "value_en": "24 Oct 2026 to 22 Nov 2026",
+        "value_hi": "24 अक्तूबर 2026 से 22 नवंबर 2026"
+      },
+      {
+        "label_en": "Last date for fee",
+        "label_hi": "शुल्क भुगतान की अंतिम तिथि",
+        "value_en": "22 Nov 2026",
+        "value_hi": "22 नवंबर 2026"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "20, 21, 22, 23, 24 and 28 Jan 2027",
+        "value_hi": "20, 21, 22, 23, 24 और 28 जनवरी 2027"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "JEE (Main) 2027 Session 1",
+        "value_hi": "संयुक्त प्रवेश परीक्षा मुख्य 2027 सत्र 1"
+      }
+    ],
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "National Testing Agency has invited online applications for Joint Entrance Examination JEE Main 2027 Session 1. Eligible candidates can apply online through the official website. The exam will be conducted in January 2027.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने संयुक्त प्रवेश परीक्षा मुख्य 2027 सत्र 1 के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं। परीक्षा जनवरी 2027 में आयोजित की जाएगी।"
+  },
   "pdf": {
     "bytes": 1445439,
     "pages": 3,
     "sha256": "e5670a67f36b643918aa5012459968a8113581f669923242a87845c9b8d38ae5",
     "text_kind": "text"
   },
+  "published_at": "2026-10-24T16:42:52Z",
+  "slug": "nta-joint-entrance-examination-jee-main-2027-session-1",
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Inviting Online Application form for the Joint Entrance Examination (JEE)-2027 (Session 1) – Reg. Read More",
   "url": "https://nta.ac.in/Download/Notice/Notice_20261024220013.pdf"
 }
