@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://ssc.gov.in/home/notice-board",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Grade C Stenographer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "SSC has released tentative vacancies for the Grade 'C' Stenographers Limited Departmental Competitive Examination, 2025. Check the service-wise vacancy details in the notice.",
+    "summary_hi": "कर्मचारी चयन आयोग ने श्रेणी ग आशुलिपिक सीमित विभागीय प्रतियोगी परीक्षा 2025 के लिए संभावित रिक्तियां जारी कर दी हैं। नोटिस में सेवा-वार रिक्ति विवरण देखें।",
+    "title_en": "SSC Grade C Stenographers LDCE 2025 Tentative Vacancies",
+    "title_hi": "कर्मचारी चयन आयोग श्रेणी ग आशुलिपिक सीमित विभागीय प्रतियोगी परीक्षा 2025 संभावित रिक्तियां",
+    "type": "Job",
+    "vacancies": 314
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -41,16 +58,60 @@
   },
   "first_seen": "2026-10-24T11:10:46+00:00",
   "id": "c9700d813c8a",
+  "issue": 87,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-10-24",
   "org": "SSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Staff Selection Commission (SSC)",
+    "conducted_by_hi": "कर्मचारी चयन आयोग (एसएससी)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "SSC Grade C Stenographers LDCE 2025 Tentative Vacancies",
+    "h1_hi": "कर्मचारी चयन आयोग श्रेणी ग आशुलिपिक सीमित विभागीय प्रतियोगी परीक्षा 2025 संभावित रिक्तियां",
+    "last_date": null,
+    "notice_date": "2026-10-24",
+    "official_site": "https://ssc.gov.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Grade 'C' Stenographer",
+        "value_hi": "श्रेणी ग आशुलिपिक"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "314",
+        "value_hi": "314"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Grade 'C' Stenographers LDCE, 2025",
+        "value_hi": "श्रेणी ग आशुलिपिक सीमित विभागीय प्रतियोगी परीक्षा 2025"
+      }
+    ],
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Staff Selection Commission has released tentative vacancies for the Grade 'C' Stenographers Limited Departmental Competitive Examination, 2025. A total of 314 tentative vacancies have been announced across various services. Check the service-wise breakdown in the notice.",
+    "summary_hi": "कर्मचारी चयन आयोग ने श्रेणी ग आशुलिपिक सीमित विभागीय प्रतियोगी परीक्षा 2025 के लिए संभावित रिक्तियां जारी कर दी हैं। विभिन्न सेवाओं के लिए कुल 314 संभावित रिक्तियों की घोषणा की गई है। नोटिस में सेवा-वार विवरण देखें।"
+  },
   "pdf": {
     "bytes": 263042,
     "pages": 1,
     "sha256": "abf4e9f9956eacaaa87f362e8078f61a54bae85e741916b90485abd6d8e97252",
     "text_kind": "text"
   },
+  "published_at": "2026-10-24T11:13:06Z",
+  "slug": "ssc-grade-c-stenographers-ldce-2025-tentative-vacancies",
   "source_id": "ssc-notice-board",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Tentative Vacancy of Grade 'C' Stenographers Limited Departmental Competitive Examination, 2025",
   "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/tentative_vacancies_24102026.pdf"
 }
