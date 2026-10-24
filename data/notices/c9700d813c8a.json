@@ -1,0 +1,56 @@
+{
+  "board_url": "https://ssc.gov.in/home/notice-board",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Central Secretariat Stenographers Services",
+        "Railway Board Secretariat Stenographers Service",
+        "Armed Forces Headquarters Stenographers Service",
+        "Election Commission of India Stenographers Service",
+        "Indian Foreign Service Branch(B) Stenographers",
+        "Central Vigilance Commission"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "Central Secretariat Stenographers Services"
+      }
+    },
+    "total_vacancies": {
+      "evidence": "exchanged with any other available PwBD Category. **Three (03 vacancies) are horizontally reserved for PwBD candidates of each category VH, OH and PwBD",
+      "source": "rule",
+      "value": 3
+    },
+    "total_vacancies_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "total_vacancies": "195 48 24 267"
+      }
+    }
+  },
+  "first_seen": "2026-10-24T11:10:46+00:00",
+  "id": "c9700d813c8a",
+  "kind": "notification",
+  "org": "SSC",
+  "pdf": {
+    "bytes": 263042,
+    "pages": 1,
+    "sha256": "abf4e9f9956eacaaa87f362e8078f61a54bae85e741916b90485abd6d8e97252",
+    "text_kind": "text"
+  },
+  "source_id": "ssc-notice-board",
+  "status": "pending_review",
+  "title": "Tentative Vacancy of Grade 'C' Stenographers Limited Departmental Competitive Examination, 2025",
+  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/tentative_vacancies_24102026.pdf"
+}
