@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://uppsc.up.nic.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-06",
+    "last_date": null,
+    "list": true,
+    "posts": "Lecturer (Ayurveda)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Uttar Pradesh Public Service Commission has released the district information slip and admit card notice for the lecturers Ayurveda department examination.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने आयुर्वेद विभाग के अंतर्गत प्राध्यापक परीक्षा के लिए जिला सूचना पर्ची और प्रवेश पत्र की सूचना जारी कर दी है।",
+    "title_en": "UPPSC Lecturers Ayurveda Exam Admit Card 2026",
+    "title_hi": "उत्तर प्रदेश लोक सेवा आयोग प्रवक्ता आयुर्वेद परीक्षा प्रवेश पत्र",
+    "type": "Admit card",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -12,16 +29,60 @@
   },
   "first_seen": "2026-10-24T04:30:43+00:00",
   "id": "3deda2a409cd",
+  "issue": 83,
+  "issue_tidy": true,
   "kind": "admit_card",
+  "notice_date": "2026-10-24",
   "org": "UPPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": "https://uppsc.up.nic.in",
+    "changes_from_notes": "",
+    "conducted_by_en": "Uttar Pradesh Public Service Commission (UPPSC)",
+    "conducted_by_hi": "उत्तर प्रदेश लोक सेवा आयोग (UPPSC)",
+    "exam_date": "2026-11-06",
+    "fees": [],
+    "h1_en": "UPPSC Lecturers Ayurveda Exam Admit Card 2026",
+    "h1_hi": "उत्तर प्रदेश लोक सेवा आयोग प्रवक्ता आयुर्वेद परीक्षा प्रवेश पत्र",
+    "last_date": null,
+    "notice_date": "2026-11-06",
+    "official_site": "https://uppsc.up.nic.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Lecturer (Ayurveda)",
+        "value_hi": "प्रवक्ता (आयुर्वेद)"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "06 Nov 2026",
+        "value_hi": "06 Nov 2026"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "D-3/E-1/2023",
+        "value_en_hi": "D-3/E-1/2023"
+      }
+    ],
+    "status_en": "District information slip and admit card notice released",
+    "status_hi": "जिला सूचना पर्ची और प्रवेश पत्र की सूचना जारी",
+    "summary_en": "Uttar Pradesh Public Service Commission has released the district information slip and admit card notice for the lecturers Ayurveda department examination. Candidates can download their admit card and check their district information slip from the official website.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने आयुर्वेद विभाग के अंतर्गत प्राध्यापक परीक्षा के लिए जिला सूचना पर्ची और प्रवेश पत्र की सूचना जारी कर दी है। उम्मीदवार आधिकारिक वेबसाइट से अपना प्रवेश पत्र डाउनलोड कर सकते हैं और अपनी जिला सूचना पर्ची देख सकते हैं।"
+  },
   "pdf": {
     "bytes": 2013917,
     "pages": 1,
     "sha256": "f843f526791b318abe70f3ab04b97e104298a5cbb07b644bfced936c429694c1",
     "text_kind": "text"
   },
+  "published_at": "2026-10-24T04:31:49Z",
+  "slug": "uppsc-lecturers-ayurveda-exam-admit-card-2026",
   "source_id": "uppsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "06 Nov 2026 NOTICE REGARDING DISTRICT INFORMATION SLIP / ADMIT CARD FOR ADVT. NO:- D-3/E-1/2023, LECTURERS UNDER UTTAR PRADESH AYUSH (AYURVEDA) DEPARTMENT",
   "url": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmzNJIRVKnDRzTHz/jf4ZQm"
 }
