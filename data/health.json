@@ -3,94 +3,94 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 0,
-    "last_ok": "2026-10-24T06:37:01+00:00",
+    "last_ok": "2026-10-24T07:07:07+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
   },
   "bpsc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 8,
-    "last_ok": "2026-10-24T06:41:26+00:00"
+    "last_ok": "2026-10-24T07:10:48+00:00"
   },
   "bsf-recruitment": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 11,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "bssc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 0,
-    "last_ok": "2026-10-24T06:41:26+00:00",
+    "last_ok": "2026-10-24T07:10:48+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
   },
   "coast-guard": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 0,
-    "last_ok": "2026-10-24T06:37:01+00:00",
+    "last_ok": "2026-10-24T07:07:07+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
   },
   "crpf-recruitment": {
-    "consecutive_failures": 37,
+    "consecutive_failures": 38,
     "last_error": "eeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='rectt.crpf.gov.in', port=443): Failed to resolve 'rectt.crpf.gov.in' ([Errno 8] nodename nor servname provided, or not known)\"))"
   },
   "csbc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 185,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "ctet-home": {
-    "consecutive_failures": 1,
-    "last_error": "Error: Page.goto: net::ERR_TIMED_OUT at https://ctet.nic.in/\nCall log:\nnavigating to \"https://ctet.nic.in/\", waiting until \"networkidle\"\n",
+    "consecutive_failures": 0,
+    "last_error": "",
     "last_links": 13,
-    "last_ok": "2026-10-24T06:07:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "drdo-careers": {
-    "consecutive_failures": 37,
-    "last_error": ", port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='rac.gov.in', port=443) at 0x10982a600>, 'Connection to rac.gov.in timed out. (connect timeout=30)'))"
+    "consecutive_failures": 38,
+    "last_error": ", port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='rac.gov.in', port=443) at 0x1069c7ce0>, 'Connection to rac.gov.in timed out. (connect timeout=30)'))"
   },
   "dsssb-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 11,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "employment-news": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 0,
-    "last_ok": "2026-10-24T06:37:01+00:00",
+    "last_ok": "2026-10-24T07:07:07+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
   },
   "hpsc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 25,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "hssc-adverts": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 10,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "hssc-notices": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 10,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "iaf-agniveer": {
-    "consecutive_failures": 37,
+    "consecutive_failures": 38,
     "last_error": "HTTPError: 503 Server Error: Service Unavailable for url: https://agnipathvayu.cdac.in/AV"
   },
   "ibps-home": {
-    "cert_repair": "SSLError: [SSL: UNEXPECTED_MESSAGE] unexpected message (_ssl.c:1010)",
-    "consecutive_failures": 0,
-    "last_error": "",
+    "cert_repair": "d but still failing: HTTPSConnectionPool(host='www.ibps.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: UNEXPECTED_MESSAGE] unexpected message (_ssl.c:1010)')))",
+    "consecutive_failures": 1,
+    "last_error": "SSLError: HTTPSConnectionPool(host='www.ibps.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: UNEXPECTED_MESSAGE] unexpected message (_ssl.c:1010)')))",
     "last_links": 0,
     "last_ok": "2026-10-24T06:41:26+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
@@ -99,186 +99,186 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 1,
-    "last_ok": "2026-10-24T06:41:26+00:00"
+    "last_ok": "2026-10-24T07:10:48+00:00"
   },
   "itbp-recruitment": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 4,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "kvs-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 36,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "lic-careers": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 0,
-    "last_ok": "2026-10-24T06:41:26+00:00",
+    "last_ok": "2026-10-24T07:10:48+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
   },
   "mpesb-home": {
     "cert_repair": "certificate has no AIA issuer link",
-    "consecutive_failures": 38,
+    "consecutive_failures": 39,
     "last_error": ": Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
   },
   "mppsc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 28,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "mpsc-adverts": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 0,
-    "last_ok": "2026-10-24T06:37:01+00:00",
+    "last_ok": "2026-10-24T07:07:07+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
   },
   "mpsc-results": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 0,
-    "last_ok": "2026-10-24T06:37:01+00:00",
+    "last_ok": "2026-10-24T07:07:07+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
   },
   "nabard-careers": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 239,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "navy-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 1,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "nta-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 820,
-    "last_ok": "2026-10-24T06:41:26+00:00"
+    "last_ok": "2026-10-24T07:10:48+00:00"
   },
   "rbi-opportunities": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 0,
-    "last_ok": "2026-10-24T06:37:01+00:00",
+    "last_ok": "2026-10-24T07:07:07+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
   },
   "rpsc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 237,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "rrb-cdg": {
     "cert_repair": "h url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'rrbcdg.gov.in'. (_ssl.c:1010)\")))",
-    "consecutive_failures": 38,
+    "consecutive_failures": 39,
     "last_error": "h url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'rrbcdg.gov.in'. (_ssl.c:1010)\")))"
   },
   "rrb-unified": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 79,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "rrc-cr": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 1,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "rrc-nr": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 292,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "rrc-wr": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 507,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "rssb-home": {
     "cert_repair": "SSLError: [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1010)",
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 10,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "sbi-careers": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 20,
-    "last_ok": "2026-10-24T06:41:26+00:00"
+    "last_ok": "2026-10-24T07:10:48+00:00"
   },
   "ssc-notice-board": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 11,
-    "last_ok": "2026-10-24T06:41:26+00:00"
+    "last_ok": "2026-10-24T07:10:48+00:00"
   },
   "tnpsc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 20,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "ukpsc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 18,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "ukpsc-results": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 26,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "uppbpb-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 6,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "uppsc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 42,
-    "last_ok": "2026-10-24T06:41:26+00:00"
+    "last_ok": "2026-10-24T07:10:48+00:00"
   },
   "upsc-active-exams": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 3,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "upsc-whats-new": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 3,
-    "last_ok": "2026-10-24T06:37:01+00:00"
+    "last_ok": "2026-10-24T07:07:07+00:00"
   },
   "upsssc-home": {
     "cert_repair": "SSLError: [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1010)",
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 0,
-    "last_ok": "2026-10-24T06:37:01+00:00",
+    "last_ok": "2026-10-24T07:07:07+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
   },
   "wbpsc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 0,
-    "last_ok": "2026-10-24T06:37:01+00:00",
+    "last_ok": "2026-10-24T07:07:07+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
   }
 }
