@@ -1,0 +1,77 @@
+{
+  "board_url": "https://nta.ac.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "admit_card": {
+      "evidence": "f the City of Examination 30th December 2026 Downloading of Admit Cards from NTA website 13th January 2027 Date of Examination 20,21,22,23,24 and 28 January 2027 Duration of Examination for each Session of JEE",
+      "source": "rule",
+      "value": "2027-01-13"
+    },
+    "apply_last": {
+      "evidence": "026 Website (https://jeemain.nta.nic.in/) (upto 11:50 P.M.) Last date of successful transaction of fee through 22nd November 2026 (upto 11:50 P.M.) Credit/Debit Card/Net Banking/UPI Late Submission of online appli",
+      "source": "rule",
+      "value": "2026-11-22"
+    },
+    "apply_or_official_url": {
+      "evidence": "rm through 24th October 2026 to 22nd November 2026 Website (https://jeemain.nta.nic.in/) (upto 11:50 P.M.) Last date of successful transaction of fee through 22nd Nove",
+      "source": "rule",
+      "value": "https://jeemain.nta.nic.in/"
+    },
+    "apply_start": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-10-24"
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://jeemain.nta.nic.in/"
+    },
+    "exam_date": {
+      "evidence": "wnloading of Admit Cards from NTA website 13th January 2027 Date of Examination 20,21,22,23,24 and 28 January 2027 Duration of Examination for each Session of JEE (Main) -2027 Paper 1 (B. E/ B. Tech.) Or Paper 2A (B. Ar",
+      "source": "rule",
+      "value": "2027-01-28"
+    },
+    "fee_amounts": {
+      "evidence": "/) (upto 11:50 P.M.) Last date of successful transaction of fee through 22nd November 2026 (upto 11:50 P.M.) Credit/Debit Card/Net Banking/UPI Late Submission of online application Form with Late Fee of Rs. 500/- Late Submission of online application Form 23rd November 2026 to 26th November 2026 Last Date of Successful Transaction with La",
+      "source": "rule",
+      "value": [
+        500
+      ]
+    },
+    "fee_last": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-22"
+    },
+    "post_names": {
+      "evidence": "Paper 1 is conducted for admission to Undergraduate Engineering Programs (B.E/B.Tech)... Paper 2 of JEE (Main) is conducted for admission to B. Arch and B. Planning courses in the country.",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Undergraduate Engineering Programs (B.E/B.Tech)",
+        "B. Arch",
+        "B. Planning"
+      ]
+    }
+  },
+  "first_seen": "2026-10-24T16:41:13+00:00",
+  "id": "8865054e4723",
+  "kind": "notification",
+  "org": "NTA",
+  "pdf": {
+    "bytes": 1445439,
+    "pages": 3,
+    "sha256": "e5670a67f36b643918aa5012459968a8113581f669923242a87845c9b8d38ae5",
+    "text_kind": "text"
+  },
+  "source_id": "nta-home",
+  "status": "pending_review",
+  "title": "Inviting Online Application form for the Joint Entrance Examination (JEE)-2027 (Session 1) – Reg. Read More",
+  "url": "https://nta.ac.in/Download/Notice/Notice_20261024220013.pdf"
+}
