@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-11-25",
+    "list": true,
+    "posts": "Station Master",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Railway Recruitment Board has invited online applications for the post of Station Master under CEN 08/2026. Eligible candidates can apply online through the official RRB website.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने केंद्रीय रोजगार सूचना 08/2026 के तहत स्टेशन मास्टर के पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+    "title_en": "RRB Station Master Recruitment 2026: Apply Now for 1215 Vacancies",
+    "title_hi": "रेलवे भर्ती बोर्ड स्टेशन मास्टर भर्ती 2026: 1215 रिक्तियों के लिए आवेदन करें",
+    "type": "Job",
+    "vacancies": 1215
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -76,16 +93,78 @@
   },
   "first_seen": "2026-10-26T12:26:14+00:00",
   "id": "2a33502f11ae",
+  "issue": 102,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-10-24",
   "org": "RRB",
+  "page": {
+    "apply_start": "2026-10-27",
+    "apply_url": "https://www.rrbapply.gov.in",
+    "changes_from_notes": "",
+    "conducted_by_en": "Railway Recruitment Board (RRB)",
+    "conducted_by_hi": "रेलवे भर्ती बोर्ड (आरआरबी)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "RRB Station Master Recruitment 2026: Apply Now for 1215 Vacancies",
+    "h1_hi": "रेलवे भर्ती बोर्ड स्टेशन मास्टर भर्ती 2026: 1215 रिक्तियों के लिए आवेदन करें",
+    "last_date": "2026-11-25",
+    "notice_date": "2026-10-24",
+    "official_site": "https://rrb.indianrailways.gov.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Station Master",
+        "value_hi": "स्टेशन मास्टर"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "1215",
+        "value_hi": "1215"
+      },
+      {
+        "label_en": "Apply online (start to last date)",
+        "label_hi": "ऑनलाइन आवेदन (प्रारंभ से अंतिम तिथि)",
+        "value_en": "27 Oct 2026 to 25 Nov 2026",
+        "value_hi": "27 अक्तूबर 2026 से 25 नवंबर 2026"
+      },
+      {
+        "label_en": "Last date for fee",
+        "label_hi": "शुल्क भुगतान की अंतिम तिथि",
+        "value_en": "27 Nov 2026",
+        "value_hi": "27 नवंबर 2026"
+      },
+      {
+        "label_en": "Age limit (with as-on date)",
+        "label_hi": "आयु सीमा (तिथि के अनुसार)",
+        "value_en": "20 to 33 years as on 01.01.2027",
+        "value_hi": "01.01.2027 के अनुसार 20 से 33 वर्ष"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "CEN No. 08/2026",
+        "value_hi": "केंद्रीय रोजगार सूचना संख्या 08/2026"
+      }
+    ],
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Railway Recruitment Board has invited online applications for the post of Station Master under CEN 08/2026. Eligible candidates can apply online through the official RRB website up to 25 November 2026.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने केंद्रीय रोजगार सूचना 08/2026 के तहत स्टेशन मास्टर के पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 25 नवंबर 2026 तक आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।"
+  },
   "pdf": {
     "bytes": 1577201,
     "pages": 46,
     "sha256": "ca818d92ae5254950bfbb51e1c33904bd3514460765f5e234528640aa16f6ee4",
     "text_kind": "text"
   },
+  "published_at": "2026-10-26T12:38:15Z",
+  "slug": "rrb-station-master-recruitment-2026-apply-now-for-1215-vacancies",
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RRB CEN 08/2026: CEN 08 2026 StationMaster",
   "url": "https://rrb.indianrailways.gov.in/-/image/1793016771817CEN_08_2026_StationMaster.pdf/examsDocuments"
 }

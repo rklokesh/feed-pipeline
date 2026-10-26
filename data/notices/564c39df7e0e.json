@@ -1,5 +1,20 @@
 {
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-11-25",
+    "list": false,
+    "posts": "Station Master",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "FAQ document for an open recruitment notification, not a primary job notice or application link itself",
+    "summary_en": "Frequently asked questions and clarification notice for RRB Station Master recruitment under CEN 08/2026.",
+    "summary_hi": "रेलवे भर्ती बोर्ड स्टेशन मास्टर भर्ती केन्द्रीय रोजगार सूचना 08/2026 के संबंध में अक्सर पूछे जाने वाले प्रश्न और दिशा-निर्देश।",
+    "title_en": "RRB Station Master Examination CEN 08/2026",
+    "title_hi": "रेलवे स्टेशन मास्टर परीक्षा केन्द्रीय रोजगार सूचना 08/2026",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -36,7 +51,7 @@
     "text_kind": "text"
   },
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "RRB CEN 08/2026: FAQ English CEN 08 2026 Station Master",
   "url": "https://rrb.indianrailways.gov.in/-/image/1793016909878FAQ_English_CEN_08_2026_Station_Master.pdf/examsDocuments"
 }

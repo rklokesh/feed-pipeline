@@ -1,21 +1,88 @@
 {
+  "auto_published": true,
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Lecturer (Kayachikitsa)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Rajasthan Public Service Commission has released the main list result and cutoff marks for the Lecturer Kayachikitsa Exam 2025.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने लेक्चरर कायचिकित्सा परीक्षा 2025 के लिए मुख्य सूची का परिणाम और कटऑफ अंक जारी कर दिए हैं।",
+    "title_en": "RPSC Lecturer Kayachikitsa 2025 Main Result and Cutoff",
+    "title_hi": "आरपीएससी लेक्चरर कायचिकित्सा 2025 मुख्य परिणाम और कटऑफ",
+    "type": "Result",
+    "vacancies": 1
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-26T12:26:14+00:00",
   "id": "c38ab59a6cab",
+  "issue": 104,
+  "issue_tidy": true,
   "kind": "result",
+  "notice_date": "2026-10-26",
   "org": "RPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
+    "conducted_by_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "RPSC Lecturer Kayachikitsa 2025 Main Result and Cutoff",
+    "h1_hi": "आरपीएससी लेक्चरर कायचिकित्सा 2025 मुख्य परिणाम और कटऑफ",
+    "last_date": null,
+    "notice_date": "2026-10-26",
+    "official_site": "https://rpsc.rajasthan.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Lecturer (Kayachikitsa)",
+        "value_hi": "लेक्चरर (कायचिकित्सा)"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "1",
+        "value_hi": "1"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Lecturer (Ayurved Dept.) - 2025",
+        "value_hi": "लेक्चरर (आयुर्वेद विभाग) - 2025"
+      },
+      {
+        "label_en": "Result status",
+        "label_hi": "परिणाम स्थिति",
+        "value_en": "Main list declared",
+        "value_hi": "मुख्य सूची घोषित"
+      }
+    ],
+    "status_en": "Main result declared and cutoff marks released",
+    "status_hi": "मुख्य परिणाम घोषित और कटऑफ अंक जारी",
+    "summary_en": "Rajasthan Public Service Commission has released the main list result and cutoff marks for the Lecturer Kayachikitsa Exam 2025 under the Ayurved Department. Candidates who appeared for the document verification can check their roll number in the main list. Visit the official website to view the complete result details.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने आयुर्वेद विभाग के अंतर्गत लेक्चरर कायचिकित्सा परीक्षा 2025 के लिए मुख्य सूची का परिणाम और कटऑफ अंक जारी कर दिए हैं। दस्तावेज सत्यापन में भाग लेने वाले उम्मीदवार मुख्य सूची में अपना रोल नंबर देख सकते हैं। परिणाम का पूरा विवरण देखने के लिए आधिकारिक वेबसाइट पर जाएं।"
+  },
   "pdf": {
     "bytes": 281399,
     "pages": 1,
     "sha256": "8f2894658ae43f94b96fa1c0e3f0e251f2f425f4fb0c4d3a5072a6168d067af7",
     "text_kind": "text"
   },
+  "published_at": "2026-10-26T12:38:55Z",
+  "slug": "rpsc-lecturer-kayachikitsa-2025-main-result-and-cutoff",
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "26/10/2026 Result Preamble and Cutoff Marks (Main List) for Lecturer (Ayurved Dept.) - 2025 (Kayachikitsa)",
   "url": "https://rpsc.rajasthan.gov.in/Static/Result/D0B6334708F34347B13F1574BB22EBF8.pdf"
 }
