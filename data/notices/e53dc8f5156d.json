@@ -1,21 +1,82 @@
 {
+  "auto_published": true,
   "board_url": "https://ssc.gov.in/home/notice-board",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-02",
+    "last_date": null,
+    "list": true,
+    "posts": "Junior Engineer and Sub-Inspector",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "The Staff Selection Commission has revised the examination dates for Junior Engineer and Sub-Inspector in Delhi Police and CAPF Examinations 2026. Check the revised schedule.",
+    "summary_hi": "कर्मचारी चयन आयोग ने कनिष्ठ अभियंता और दिल्ली पुलिस तथा केंद्रीय सशस्त्र पुलिस बल उप निरीक्षक परीक्षा 2026 के लिए परीक्षा तिथियों में संशोधन किया है। संशोधित कार्यक्रम देखें।",
+    "title_en": "SSC JE and SI Exam 2026 Revised Dates",
+    "title_hi": "कर्मचारी चयन आयोग कनिष्ठ अभियंता और उप निरीक्षक परीक्षा 2026 संशोधित तिथियां",
+    "type": "Job",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-26T13:36:36+00:00",
   "id": "e53dc8f5156d",
+  "issue": 105,
+  "issue_tidy": true,
   "kind": "update",
+  "notice_date": "2026-10-26",
   "org": "SSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Staff Selection Commission (SSC)",
+    "conducted_by_hi": "कर्मचारी चयन आयोग (एसएससी)",
+    "exam_date": "2026-11-02",
+    "fees": [],
+    "h1_en": "SSC JE and SI Exam 2026 Revised Dates",
+    "h1_hi": "कर्मचारी चयन आयोग कनिष्ठ अभियंता और उप निरीक्षक परीक्षा 2026 संशोधित तिथियां",
+    "last_date": null,
+    "notice_date": "2026-10-26",
+    "official_site": "https://ssc.gov.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Junior Engineer and Sub-Inspector in Delhi Police and CAPFs",
+        "value_hi": "कनिष्ठ अभियंता और दिल्ली पुलिस तथा केंद्रीय सशस्त्र पुलिस बल उप निरीक्षक"
+      },
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "JE Paper-I: 02 Nov to 06 Nov 2026 and 30 Nov to 01 Dec 2026; SI: 23 Nov to 28 Nov 2026",
+        "value_hi": "कनिष्ठ अभियंता पेपर-I: 02 नव से 06 नव 2026 और 30 नव से 01 दिस 2026; उप निरीक्षक: 23 नव से 28 नव 2026"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "HQ-EC033/7/2025-EC",
+        "value_hi": "HQ-EC033/7/2025-EC"
+      }
+    ],
+    "status_en": "Exam dates revised",
+    "status_hi": "परीक्षा तिथियां संशोधित",
+    "summary_en": "The Staff Selection Commission has released revised examination dates for the Junior Engineer Examination 2026 and Sub-Inspector in Delhi Police and Central Armed Police Forces Examination 2026. Candidates should check the revised schedule and visit the official website for updates.",
+    "summary_hi": "कर्मचारी चयन आयोग ने कनिष्ठ अभियंता परीक्षा 2026 और दिल्ली पुलिस तथा केंद्रीय सशस्त्र पुलिस बल उप निरीक्षक परीक्षा 2026 के लिए संशोधित परीक्षा तिथियां जारी कर दी हैं। उम्मीदवार संशोधित कार्यक्रम देखें और अपडेट के लिए आधिकारिक वेबसाइट पर जाएं।"
+  },
   "pdf": {
     "bytes": 376378,
     "pages": 1,
     "sha256": "009a5b07560ffa9f4eac6cec4821e5b76e6dc2af8b389e98f1f508868c683ca4",
     "text_kind": "text"
   },
+  "published_at": "2026-10-26T13:40:33Z",
+  "slug": "ssc-je-and-si-exam-2026-revised-dates",
   "source_id": "ssc-notice-board",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Important Notice - Revised dates for Junior Engineer Examination, 2026 and Sub-Inspector in Delhi Police and Central Armed Police Forces Examination, 2026.",
   "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Important notice_revised_dated_26_10_2026.pdf"
 }
