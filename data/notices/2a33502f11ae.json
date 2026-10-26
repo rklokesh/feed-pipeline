@@ -1,0 +1,91 @@
+{
+  "board_url": "https://rrb.indianrailways.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": {
+        "advt_no": "CEN No. 08/2026"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "CEN No. 08/2026"
+    },
+    "age_limit": {
+      "evidence": {
+        "age_limit": "20-33 Years (as on 01.01.2027)"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": "2027-01-01",
+        "max": 33,
+        "min": 20
+      }
+    },
+    "apply_last": {
+      "evidence": "ng date & time of online Applications Submission 27.10.2026 Closing date & time of online Applications Submission 25.11.2026 (23:59Hrs) Last date for application fee payment for the submitted 27.11.2026 applicatio",
+      "source": "rule",
+      "value": "2026-11-25"
+    },
+    "apply_or_official_url": {
+      "evidence": "/2026 will be uploaded on unified official RRB website i.e. https://rrb.indianrailways.gov.in. Candidates can navigate to Webpages of individual RRBs from this common website",
+      "source": "rule",
+      "value": "https://rrb.indianrailways.gov.in"
+    },
+    "apply_start": {
+      "evidence": {
+        "apply_start": "Opening date & time of online Applications Submission | 27.10.2026"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-10-27"
+    },
+    "apply_url": {
+      "evidence": {
+        "apply_url": "https://www.rrbapply.gov.in"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://www.rrbapply.gov.in"
+    },
+    "fee_last": {
+      "evidence": {
+        "fee_last": "Last date for application fee payment for the submitted applications | 27.11.2026"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-27"
+    },
+    "post_names": {
+      "evidence": {
+        "post_names": "CENTRALISED EMPLOYMENT NOTICE (CEN) No. - 08/2026 FOR (STATION MASTER)"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "STATION MASTER"
+      ]
+    },
+    "total_vacancies": {
+      "evidence": "OCESS 06 4 4 DETAILED CENTRALISED EMPLOYMENT NOTICE 07-09 5 5 VACANCIES 10 6 6 MEDICAL STANDARD FOR THE POST 10 7 7 NATIONALITY/ CITIZENSHIP 11 8 8 AGE",
+      "source": "rule",
+      "value": 5
+    }
+  },
+  "first_seen": "2026-10-26T12:26:14+00:00",
+  "id": "2a33502f11ae",
+  "kind": "notification",
+  "org": "RRB",
+  "pdf": {
+    "bytes": 1577201,
+    "pages": 46,
+    "sha256": "ca818d92ae5254950bfbb51e1c33904bd3514460765f5e234528640aa16f6ee4",
+    "text_kind": "text"
+  },
+  "source_id": "rrb-unified",
+  "status": "pending_review",
+  "title": "RRB CEN 08/2026: CEN 08 2026 StationMaster",
+  "url": "https://rrb.indianrailways.gov.in/-/image/1793016771817CEN_08_2026_StationMaster.pdf/examsDocuments"
+}

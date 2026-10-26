@@ -1,0 +1,42 @@
+{
+  "board_url": "https://rrb.indianrailways.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_last": {
+      "evidence": "pening date of application is 27-10-2026. Q. 02 What is the closing date for submission of online Application for CEN 08/2026? Ans. The closing date for submission of online application is 25-11-2026 @ 23.59 Hrs. Q. 03 What is",
+      "source": "rule",
+      "value": "2026-11-25"
+    },
+    "apply_or_official_url": {
+      "evidence": "Ans. After Create an Account, Log-in to the application in https://www.rrbapply.gov.in portal using RRB credentials or AADHAAR credentials. There are five broad secti",
+      "source": "rule",
+      "value": "https://www.rrbapply.gov.in"
+    },
+    "apply_start": {
+      "evidence": "Master) FREQUENTLY ASKED QUESTIONS (FAQs) Q. 01 What is the opening date of Application for CEN 08/2026? Ans. The opening date of application is 27-10-2026. Q. 02 What is the closing date for submission of online Application fo",
+      "source": "rule",
+      "value": "2026-10-27"
+    },
+    "fee_last": {
+      "evidence": "ication fee payment for the submitted application? Ans. The last date for payment of the application fee for submitted applications is 27-11-2026. Q. 04 What are the dates for modification of application? Ans. Modificatio",
+      "source": "rule",
+      "value": "2026-11-27"
+    }
+  },
+  "first_seen": "2026-10-26T12:26:14+00:00",
+  "id": "564c39df7e0e",
+  "kind": "info",
+  "org": "RRB",
+  "pdf": {
+    "bytes": 180818,
+    "pages": 7,
+    "sha256": "afd80d8e7505b18115939b69ff5ab10bd43393ac084ebb583b834013886c0ef2",
+    "text_kind": "text"
+  },
+  "source_id": "rrb-unified",
+  "status": "pending_review",
+  "title": "RRB CEN 08/2026: FAQ English CEN 08 2026 Station Master",
+  "url": "https://rrb.indianrailways.gov.in/-/image/1793016909878FAQ_English_CEN_08_2026_Station_Master.pdf/examsDocuments"
+}
