@@ -1,5 +1,20 @@
 {
   "board_url": "https://nta.ac.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Various Examinations",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "examination calendar notice, not a specific job vacancy or result",
+    "summary_en": "NTA has released the revised examination calendar for December 2026 onwards. Check the proposed exam dates for various tests.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने दिसंबर 2026 से आगे के लिए संशोधित परीक्षा कैलेंडर जारी किया है। विभिन्न परीक्षाओं की प्रस्तावित तिथियां देखें।",
+    "title_en": "NTA Examination Calendar 2026-2027",
+    "title_hi": "राष्ट्रीय परीक्षा एजेंसी परीक्षा कैलेंडर",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Revised Examination Calender-Reg Read More",
   "url": "https://nta.ac.in/Download/Notice/Notice_20261026114247.pdf"
 }
