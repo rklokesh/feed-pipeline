@@ -1,21 +1,88 @@
 {
+  "auto_published": true,
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Lecturer (Panchkarma)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Rajasthan Public Service Commission has released the reserve list result and cut-off marks for the Lecturer Panchkarma Ayurved Department Examination 2025.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने व्याख्याता पंचकर्म आयुर्वेद विभाग परीक्षा 2025 के लिए आरक्षित सूची का परिणाम और कट-ऑफ अंक जारी कर दिए हैं।",
+    "title_en": "RPSC Lecturer Panchkarma Ayurved 2025 Reserve List Result",
+    "title_hi": "आरपीएससी व्याख्याता पंचकर्म आयुर्वेद 2025 आरक्षित सूची परिणाम",
+    "type": "Result",
+    "vacancies": 1
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-26T11:56:27+00:00",
   "id": "285485867f9a",
+  "issue": 95,
+  "issue_tidy": true,
   "kind": "result",
+  "notice_date": "2026-10-26",
   "org": "RPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
+    "conducted_by_hi": "राजस्थान लोक सेवा आयोग (RPSC)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "RPSC Lecturer Panchkarma Ayurved 2025 Reserve List Result",
+    "h1_hi": "आरपीएससी व्याख्याता पंचकर्म आयुर्वेद 2025 आरक्षित सूची परिणाम",
+    "last_date": null,
+    "notice_date": "2026-10-26",
+    "official_site": "https://rpsc.rajasthan.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Lecturer (Panchkarma)",
+        "value_hi": "व्याख्याता (पंचकर्म)"
+      },
+      {
+        "label_en": "Department",
+        "label_hi": "विभाग",
+        "value_en": "Ayurved, Yoga and Naturopathy, Unani, Siddha and Homoeopathy (AYUSH) Department",
+        "value_hi": "आयुर्वेद, योग व प्राकृतिक चिकित्सा, यूनानी, सिद्धा एवं होमियोपैथी (आयुष) विभाग"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Lecturer (Panchkarma) Exam - 2025",
+        "value_hi": "व्याख्याता (पंचकर्म) परीक्षा - 2025"
+      },
+      {
+        "label_en": "Selection Process",
+        "label_hi": "चयन प्रक्रिया",
+        "value_en": "Eligibility check, Document Verification and Reserve List",
+        "value_hi": "पात्रता जाँच, दस्तावेज सत्यापन और आरक्षित सूची"
+      }
+    ],
+    "status_en": "Reserve list result declared",
+    "status_hi": "आरक्षित सूची परिणाम घोषित",
+    "summary_en": "Rajasthan Public Service Commission has released the reserve list result and cut-off marks for the Lecturer Panchkarma Ayurved Department Examination 2025. Candidates can check their roll number and merit rank in the notice.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने व्याख्याता पंचकर्म आयुर्वेद विभाग परीक्षा 2025 के लिए आरक्षित सूची का परिणाम और कट-ऑफ अंक जारी कर दिए हैं। उम्मीदवार सूचना में अपना रोल नंबर और मेरिट क्रमांक देख सकते हैं।"
+  },
   "pdf": {
     "bytes": 282646,
     "pages": 1,
     "sha256": "86ff5d276d749dd0b309dbabf3be5d37ca8465f0b30dc5061252da210887effb",
     "text_kind": "text"
   },
+  "published_at": "2026-10-26T12:07:48Z",
+  "slug": "rpsc-lecturer-panchkarma-ayurved-2025-reserve-list-result",
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "26/10/2026 Result Preamble and Cutoff Marks (Reserve List) for Lecturer (Ayurved Dept.) - 2025 (Panchkarma)",
   "url": "https://rpsc.rajasthan.gov.in/Static/Result/CD5DCB72FDE24FB0B96E0D4AD8B94A1C.pdf"
 }

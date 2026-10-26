@@ -1,21 +1,82 @@
 {
+  "auto_published": true,
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Lecturer (Kaumarbhritya)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Rajasthan Public Service Commission has released the reserve list and cut-off marks for the Lecturer (Kaumarbhritya) exam 2025 under the Ayurved Department.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने आयुर्वेद विभाग के अंतर्गत लेक्चरर (कौमारभृत्य) परीक्षा 2025 के लिए आरक्षित सूची और कट-ऑफ अंक जारी कर दिए हैं।",
+    "title_en": "RPSC Lecturer Ayurved Dept 2025 Reserve List & Cut Off",
+    "title_hi": "राजपसए लेक्चरर आयुर्वेद विभाग 2025 आरक्षित सूची और कट ऑफ",
+    "type": "Result",
+    "vacancies": 1
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-26T11:56:27+00:00",
   "id": "04df961ba0e3",
+  "issue": 94,
+  "issue_tidy": true,
   "kind": "result",
+  "notice_date": "2026-10-26",
   "org": "RPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
+    "conducted_by_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "RPSC Lecturer Ayurved Dept 2025 Reserve List & Cut Off",
+    "h1_hi": "राजपसए लेक्चरर आयुर्वेद विभाग 2025 आरक्षित सूची और कट ऑफ",
+    "last_date": null,
+    "notice_date": "2026-10-26",
+    "official_site": "https://rpsc.rajasthan.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Lecturer (Kaumarbhritya)",
+        "value_hi": "लेक्चरर (कौमारभृत्य)"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "1",
+        "value_hi": "1"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Lecturer (Kaumarbhritya) Exam - 2025",
+        "value_hi": "लेक्चरर (कौमारभृत्य) परीक्षा - 2025"
+      }
+    ],
+    "status_en": "Reserve list and cut-off marks declared",
+    "status_hi": "आरक्षित सूची और कट-ऑफ अंक घोषित",
+    "summary_en": "Rajasthan Public Service Commission has released the reserve list and cut-off marks for the Lecturer (Kaumarbhritya) exam 2025 under the Ayurved Department. Candidates can check their roll number and merit rank in the notice.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने आयुर्वेद विभाग के अंतर्गत लेक्चरर (कौमारभृत्य) परीक्षा 2025 के लिए आरक्षित सूची और कट-ऑफ अंक जारी कर दिए हैं। उम्मीदवार नोटिस में अपना रोल नंबर और मेरिट रैंक देख सकते हैं।"
+  },
   "pdf": {
     "bytes": 283591,
     "pages": 1,
     "sha256": "a32538849e8885b6586ce500f78d228ceb8a727abfd49c6d28f767a52423f70f",
     "text_kind": "text"
   },
+  "published_at": "2026-10-26T12:07:36Z",
+  "slug": "rpsc-lecturer-ayurved-dept-2025-reserve-list-cut-off",
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "26/10/2026 Result Preamble and Cutoff Marks (Reserve List) for Lecturer (Ayurved Dept.) - 2025 (Kaumarbhritya)",
   "url": "https://rpsc.rajasthan.gov.in/Static/Result/73AD9A7EEF8A4105A2D67D960173A6C4.pdf"
 }

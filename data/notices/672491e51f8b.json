@@ -1,21 +1,82 @@
 {
+  "auto_published": true,
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Lecturer (Panchkarma)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Rajasthan Public Service Commission has released the main result and cutoff marks for the Lecturer Panchkarma Exam 2025.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने व्याख्याता पंचकर्म परीक्षा 2025 के लिए मुख्य परिणाम और कटऑफ अंक जारी कर दिए हैं।",
+    "title_en": "RPSC Lecturer Ayurved Dept Panchkarma 2025 Result",
+    "title_hi": "आरपीएससी व्याख्याता आयुर्वेद विभाग पंचकर्म 2025 परिणाम",
+    "type": "Result",
+    "vacancies": 1
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-26T11:56:27+00:00",
   "id": "672491e51f8b",
+  "issue": 99,
+  "issue_tidy": true,
   "kind": "result",
+  "notice_date": "2026-10-26",
   "org": "RPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
+    "conducted_by_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "RPSC Lecturer Ayurved Dept Panchkarma 2025 Result",
+    "h1_hi": "आरपीएससी व्याख्याता आयुर्वेद विभाग पंचकर्म 2025 परिणाम",
+    "last_date": null,
+    "notice_date": "2026-10-26",
+    "official_site": "https://rpsc.rajasthan.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post",
+        "label_hi": "पद",
+        "value_en": "Lecturer (Panchkarma)",
+        "value_hi": "व्याख्याता (पंचकर्म)"
+      },
+      {
+        "label_en": "Total Vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "1",
+        "value_hi": "1"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Lecturer (Ayurved Dept.) - 2025",
+        "value_hi": "व्याख्याता (आयुर्वेद विभाग) - 2025"
+      }
+    ],
+    "status_en": "Main result declared",
+    "status_hi": "मुख्य परिणाम घोषित",
+    "summary_en": "Rajasthan Public Service Commission has released the main result and cutoff marks for the Lecturer Panchkarma Exam 2025 under the Ayurved Department. Candidates who appeared can check their result and download the notice.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने आयुर्वेद विभाग के अंतर्गत व्याख्याता पंचकर्म परीक्षा 2025 के लिए मुख्य परिणाम और कटऑफ अंक जारी कर दिए हैं। उपस्थित उम्मीदवार अपना परिणाम देख सकते हैं और सूचना डाउनलोड कर सकते हैं।"
+  },
   "pdf": {
     "bytes": 279367,
     "pages": 1,
     "sha256": "554c72fbefe063a3cd37489e16cb717f130c0c0d27025c87adaec8b25b973bbf",
     "text_kind": "text"
   },
+  "published_at": "2026-10-26T12:08:33Z",
+  "slug": "rpsc-lecturer-ayurved-dept-panchkarma-2025-result",
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "26/10/2026 Result Preamble and Cutoff Marks (Main List) for Lecturer (Ayurved Dept.) - 2025 (Panchkarma)",
   "url": "https://rpsc.rajasthan.gov.in/Static/Result/820DDF20D928490787E22E9F74690831.pdf"
 }

@@ -1,21 +1,82 @@
 {
+  "auto_published": true,
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Lecturer (Swasthvritta)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Rajasthan Public Service Commission has released the main list result and cut off marks for the Lecturer Swasthvritta Exam 2025.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने व्याख्याता स्वस्थवृत्त परीक्षा 2025 का मुख्य सूची परिणाम और कट ऑफ अंक जारी कर दिए हैं।",
+    "title_en": "RPSC Lecturer Ayurved Swasthvritta 2025 Result & Cut Off",
+    "title_hi": "आरपीएससी व्याख्याता आयुर्वेद स्वस्थवृत्त 2025 परिणाम और कट ऑफ",
+    "type": "Result",
+    "vacancies": 2
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-26T11:56:27+00:00",
   "id": "489f4e66792b",
+  "issue": 96,
+  "issue_tidy": true,
   "kind": "result",
+  "notice_date": "2026-10-26",
   "org": "RPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
+    "conducted_by_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "RPSC Lecturer Ayurved Swasthvritta 2025 Result & Cut Off",
+    "h1_hi": "आरपीएससी व्याख्याता आयुर्वेद स्वस्थवृत्त 2025 परिणाम और कट ऑफ",
+    "last_date": null,
+    "notice_date": "2026-10-26",
+    "official_site": "https://rpsc.rajasthan.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Lecturer (Swasthvritta)",
+        "value_hi": "व्याख्याता (स्वस्थवृत्त)"
+      },
+      {
+        "label_en": "Total Vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "2",
+        "value_hi": "2"
+      },
+      {
+        "label_en": "Department",
+        "label_hi": "विभाग",
+        "value_en": "Ayurved Department",
+        "value_hi": "आयुर्वेद विभाग"
+      }
+    ],
+    "status_en": "Main list result and cut off marks declared",
+    "status_hi": "मुख्य सूची का परिणाम और कट ऑफ अंक घोषित",
+    "summary_en": "Rajasthan Public Service Commission has released the main list result and cut off marks for the Lecturer Swasthvritta Exam 2025 under the Ayurved Department. Candidates who appeared for document verification can check their roll numbers and merit ranks in the result.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने आयुर्वेद विभाग के अंतर्गत व्याख्याता स्वस्थवृत्त परीक्षा 2025 के लिए मुख्य सूची का परिणाम और कट ऑफ अंक जारी कर दिए हैं। दस्तावेज सत्यापन में भाग लेने वाले उम्मीदवार परिणाम में अपने रोल नंबर और मेरिट क्रमांक देख सकते हैं।"
+  },
   "pdf": {
     "bytes": 284652,
     "pages": 1,
     "sha256": "c40d53bca5096a0c14ae1c8d39e386b504370355dc92537d89ae95fbdb8210d6",
     "text_kind": "text"
   },
+  "published_at": "2026-10-26T12:08:07Z",
+  "slug": "rpsc-lecturer-ayurved-swasthvritta-2025-result-cut-off",
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "26/10/2026 Result Preamble and Cutoff Marks (Main List) for Lecturer (Ayurved Dept.) - 2025 (Swasthvritta)",
   "url": "https://rpsc.rajasthan.gov.in/Static/Result/029FCA19364C47ABA1F99CF0D30B32A8.pdf"
 }

@@ -1,21 +1,82 @@
 {
+  "auto_published": true,
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Lecturer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "RPSC has released the reserve list and cut-off marks for the Lecturer Samhita Maulik Siddhant exam 2025 in the Ayurved Department.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने आयुर्वेद विभाग के अंतर्गत व्याख्याता संहिता मौलिक सिद्धांत परीक्षा दो हजार पचीस के लिए आरक्षित सूची और कट ऑफ अंक जारी कर दिए हैं।",
+    "title_en": "RPSC Lecturer Ayurved Dept 2025 Reserve List Released",
+    "title_hi": "राजस्थान लोक सेवा आयोग व्याख्याता आयुर्वेद विभाग परीक्षा 2025 आरक्षित सूची जारी",
+    "type": "Result",
+    "vacancies": 1
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-26T11:56:27+00:00",
   "id": "0067f6587683",
+  "issue": 92,
+  "issue_tidy": true,
   "kind": "result",
+  "notice_date": "2026-10-26",
   "org": "RPSC",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
+    "conducted_by_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "RPSC Lecturer Ayurved Dept 2025 Reserve List Released",
+    "h1_hi": "राजस्थान लोक सेवा आयोग व्याख्याता आयुर्वेद विभाग परीक्षा 2025 आरक्षित सूची जारी",
+    "last_date": null,
+    "notice_date": "2026-10-26",
+    "official_site": "https://rpsc.rajasthan.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Lecturer (Samhita Maulik Siddhant)",
+        "value_hi": "व्याख्याता (संहिता मौलिक सिद्धांत)"
+      },
+      {
+        "label_en": "Total candidates in reserve list",
+        "label_hi": "आरक्षित सूची में कुल उम्मीदवार",
+        "value_en": "1",
+        "value_hi": "1"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Lecturer - Samhita (Maulik Siddhant) (Ayush Dept.) Exam 2025",
+        "value_hi": "व्याख्याता - संहिता (मौलिक सिद्धांत) (आयुष विभाग) परीक्षा 2025"
+      }
+    ],
+    "status_en": "Reserve list and cut-off marks declared",
+    "status_hi": "आरक्षित सूची और कट-ऑफ अंक घोषित",
+    "summary_en": "Rajasthan Public Service Commission has released the reserve list and cut-off marks for the Lecturer Samhita Maulik Siddhant exam 2025 in the Ayurved Department. Candidates can check their roll number and cut-off marks from the notice.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने आयुर्वेद विभाग के अंतर्गत व्याख्याता संहिता मौलिक सिद्धांत परीक्षा 2025 के लिए आरक्षित सूची और कट-ऑफ अंक जारी कर दिए हैं। उम्मीदवार नोटिस से अपना रोल नंबर और कट-ऑफ अंक देख सकते हैं।"
+  },
   "pdf": {
     "bytes": 284230,
     "pages": 1,
     "sha256": "04b6043048e8b2ede10d005aa8b5665d83de9de521ffb34eb254e80056c89397",
     "text_kind": "text"
   },
+  "published_at": "2026-10-26T12:07:12Z",
+  "slug": "rpsc-lecturer-ayurved-dept-2025-reserve-list-released",
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "26/10/2026 Result Preamble and Cutoff Marks (Reserve List) for Lecturer (Ayurved Dept.) - 2025 (Samhita (Maulik Siddhant))",
   "url": "https://rpsc.rajasthan.gov.in/Static/Result/BFF0ACA3E1BC47C79FEB87A99BC3F284.pdf"
 }
