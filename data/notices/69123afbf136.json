@@ -1,5 +1,20 @@
 {
   "board_url": "https://nta.ac.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Various Examinations",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "This is an exam calendar notification, not a specific job vacancy, result, admit card, or answer key.",
+    "summary_en": "National Testing Agency has released the examination calendar for the December 2026 cycle onwards. Check the proposed dates for various entrance and competitive exams.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने दिसंबर 2026 चक्र और उसके आगे के लिए परीक्षा कैलेंडर जारी कर दिया है। विभिन्न प्रवेश और प्रतियोगी परीक्षाओं की प्रस्तावित तिथियां देखें।",
+    "title_en": "NTA Examination Calendar 2026-2027",
+    "title_hi": "एनटीए परीक्षा कैलेंडर 2026-2027",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Exam Calendar || Abhyas",
   "url": "https://nta.ac.in/Download/Notice/ExamcalendarRevised.pdf"
 }
