@@ -1,5 +1,20 @@
 {
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal notice regarding Pre-Litigation Committee, not a job, result, admit card, or answer key.",
+    "summary_en": "Notice regarding the Pre-Litigation Committee issued by the Rajasthan Public Service Commission.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग द्वारा जारी प्री-लिटिगेशन कमेटी से संबंधित सूचना।",
+    "title_en": "RPSC Pre-Litigation Committee Notice",
+    "title_hi": "आरपीएससी प्री-लिटिगेशन कमेटी सूचना",
+    "type": "Job",
+    "vacancies": null
+  },
   "fields": {},
   "first_seen": "2026-10-26T07:25:31+00:00",
   "id": "bea90a021e1e",
@@ -9,7 +24,7 @@
     "error": "HTTPError: 404 Client Error: Not Found for url: https://rpsc.rajasthan.gov.in/~/Static/News/DDBBF709FA084177A9DC0E323933A614.pdf"
   },
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "02/07/2026 Press Note Regarding Pre-Litigation Committee",
   "url": "https://rpsc.rajasthan.gov.in/~/Static/News/DDBBF709FA084177A9DC0E323933A614.pdf"
 }

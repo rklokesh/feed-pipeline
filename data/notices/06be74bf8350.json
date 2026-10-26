@@ -1,5 +1,20 @@
 {
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal grievance portal notice, not a job, result, admit card, or answer key",
+    "summary_en": "RPSC issued a press note regarding the candidate grievance portal for complaints disposal.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने उम्मीदवारों की शिकायतों के निस्तारण के लिए grievance portal के संबंध में प्रेस नोट जारी किया है।",
+    "title_en": "RPSC Candidate Grievance Portal Notice",
+    "title_hi": "राजस्थान लोक सेवा आयोग उम्मीदवार शिकायत पोर्टल सूचना",
+    "type": "Job",
+    "vacancies": null
+  },
   "fields": {},
   "first_seen": "2026-10-26T07:25:31+00:00",
   "id": "06be74bf8350",
@@ -9,7 +24,7 @@
     "error": "HTTPError: 404 Client Error: Not Found for url: https://rpsc.rajasthan.gov.in/~/Static/News/E8B17BD099F3403CAC90A775F03CC8B5.pdf"
   },
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "05/06/2026 Press Note Regarding Candidate Grievance Portal For Candidates Complaints Disposal Process",
   "url": "https://rpsc.rajasthan.gov.in/~/Static/News/E8B17BD099F3403CAC90A775F03CC8B5.pdf"
 }

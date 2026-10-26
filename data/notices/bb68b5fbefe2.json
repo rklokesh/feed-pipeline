@@ -1,5 +1,20 @@
 {
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal notice regarding pre-litigation committee, not a job, result, admit card, or answer key.",
+    "summary_en": "RPSC has released a press note regarding the pre-litigation committee.",
+    "summary_hi": "आरपीएससी ने प्री-लिटिगेशन समिति के संबंध में प्रेस नोट जारी किया है।",
+    "title_en": "RPSC Pre-Litigation Committee Notice",
+    "title_hi": "आरपीएससी प्री-लिटिगेशन समिति नोटिस",
+    "type": "Job",
+    "vacancies": null
+  },
   "fields": {},
   "first_seen": "2026-10-26T07:25:31+00:00",
   "id": "bb68b5fbefe2",
@@ -9,7 +24,7 @@
     "error": "HTTPError: 404 Client Error: Not Found for url: https://rpsc.rajasthan.gov.in/~/Static/News/C264733326104C9C9FDF20B88C6AA2F3.pdf"
   },
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "15/10/2020 Press Note Regarding Pre-Litigation Committee",
   "url": "https://rpsc.rajasthan.gov.in/~/Static/News/C264733326104C9C9FDF20B88C6AA2F3.pdf"
 }
