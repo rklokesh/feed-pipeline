@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://www.rrc-wr.com/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-10-31",
+    "last_date": null,
+    "list": true,
+    "posts": "Dresser Gr-III, Junior Clerk cum Typist",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Download the call letter for the Western Railway departmental computer-based test scheduled for 31st October 2026 using your unique ID and HRMS ID.",
+    "summary_hi": "31 अक्टूबर 2026 को निर्धारित पश्चिमी रेलवे विभागीय कंप्यूटर आधारित परीक्षा के लिए अपनी विशिष्ट आईडी और मानव संसाधन प्रबंधन प्रणाली आईडी का उपयोग करके प्रवेश पत्र डाउनलोड करें।",
+    "title_en": "Western Railway Departmental CBT Call Letter 2026",
+    "title_hi": "पश्चिमी रेलवे विभागीय कंप्यूटर आधारित परीक्षा प्रवेश पत्र 2026",
+    "type": "Admit card",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -17,16 +34,60 @@
   },
   "first_seen": "2026-10-27T09:46:29+00:00",
   "id": "aac1124b0d64",
+  "issue": 109,
+  "issue_tidy": true,
   "kind": "admit_card",
+  "notice_date": "2026-10-27",
   "org": "RRC Western Railway",
+  "page": {
+    "apply_start": null,
+    "apply_url": "https://cdn.digialm.com/EForms/configuredHtml/33166/103145/pdoDypEZbI0DY3lxWU/login.html",
+    "changes_from_notes": "",
+    "conducted_by_en": "Railway Recruitment Cell, Western Railway (RRC WR)",
+    "conducted_by_hi": "रेलवे भर्ती प्रकोष्ठ, पश्चिमी रेलवे",
+    "exam_date": "2026-10-31",
+    "fees": [],
+    "h1_en": "Western Railway Departmental CBT Call Letter 2026",
+    "h1_hi": "पश्चिमी रेलवे विभागीय कंप्यूटर आधारित परीक्षा प्रवेश पत्र 2026",
+    "last_date": null,
+    "notice_date": null,
+    "official_site": "https://www.rrc-wr.com/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Dresser Gr-III, Junior Clerk cum Typist, Junior Engineer (AC-TRS)",
+        "value_hi": "ड्रेसर ग्रेड-III, जूनियर क्लर्क कम टाइपिस्ट, जूनियर इंजीनियर (एसी-टीआरएस)"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा की तिथि",
+        "value_en": "31 Oct 2026",
+        "value_hi": "31 अक्टूबर 2026"
+      },
+      {
+        "label_en": "How to download",
+        "label_hi": "कैसे डाउनलोड करें",
+        "value_en": "Log in using Unique ID as Login ID and HRMS ID as Password",
+        "value_hi": "लॉगिन आईडी के रूप में विशिष्ट आईडी और पासवर्ड के रूप में मानव संसाधन प्रबंधन प्रणाली आईडी का उपयोग करके लॉगिन करें"
+      }
+    ],
+    "status_en": "Admit card released for CBT scheduled on 31 Oct 2026",
+    "status_hi": "31 अक्टूबर 2026 को निर्धारित कंप्यूटर आधारित परीक्षा के लिए प्रवेश पत्र जारी",
+    "summary_en": "Download the call letter for the Western Railway departmental computer-based test scheduled for 31st October 2026 using your unique ID and HRMS ID.",
+    "summary_hi": "31 अक्टूबर 2026 को निर्धारित पश्चिमी रेलवे विभागीय कंप्यूटर आधारित परीक्षा के लिए अपनी विशिष्ट आईडी और मानव संसाधन प्रबंधन प्रणाली आईडी का उपयोग करके प्रवेश पत्र डाउनलोड करें।"
+  },
   "pdf": {
     "bytes": 1034269,
     "pages": 67,
     "sha256": "49ce924a4f5e946b8515f712ce3fd9f3f7e0a788076a76920116509818624586",
     "text_kind": "text"
   },
+  "published_at": "2026-10-27T09:52:28Z",
+  "slug": "western-railway-departmental-cbt-call-letter-2026",
   "source_id": "rrc-wr",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Notice regarding downloading of Call Letters for CBT scheduled on 31st October, 2026 - Uploaded on 27.10.2026",
   "url": "https://www.rrc-wr.com/rrwc/Files/18a7b057-f718-45ae-83b6-a4744b4ab148.pdf"
 }
