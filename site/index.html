@@ -815,6 +815,16 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       }
       return;
     }
+    // ↑ / ↓ move between rows from anywhere on the page; Enter opens the highlighted notice
+    const n = rowsEls().length;
+    if ((e.key === "ArrowDown" || e.key === "ArrowUp") && n && !e.altKey && !e.metaKey && !e.ctrlKey) {
+      e.preventDefault(); sel = e.key === "ArrowDown" ? Math.min(sel + 1, n - 1) : Math.max(sel - 1, 0); markSel(); return;
+    }
+    if (e.key === "Enter" && n && (sel >= 0 || document.querySelector("#list li.lr:hover"))) {
+      const li = sel >= 0 ? rowsEls()[sel] : document.querySelector("#list li.lr:hover");   // highlighted row, else the one under the mouse
+      const row = li && li.querySelector("a.row");
+      if (row) { e.preventDefault(); row.click(); } return;
+    }
     // Esc anywhere on the page clears the search (no need to click into the box first)
     if (e.key === "Escape" && qIn.value) { qIn.value = ""; qIn.dispatchEvent(new Event("input")); return; }
     if (e.ctrlKey || e.metaKey || e.altKey || e.key.length !== 1 || e.key === " ") return;

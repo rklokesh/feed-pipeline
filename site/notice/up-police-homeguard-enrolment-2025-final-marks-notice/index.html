@@ -204,6 +204,19 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media (max-width: 640px) { .hback { font-size: .9375rem; gap: 5px; } }
 .hback::after { content: ""; position: absolute; inset: -12px -9px; }
 @media print { .hback { visibility: hidden; } }
+/* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
+.kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
+.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv ol.steps li + li { margin-top: 6px; }
+.faq .qa + .qa { border-top: 1px solid var(--line); }
+.faq summary { cursor: pointer; padding: 9px 14px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--grey); flex: none; }
+.faq details[open] summary::after { content: "−"; }
+.faq summary:hover { background: var(--row-hover); }
+.faq .qa p { margin: 0; padding: 0 14px 12px; color: var(--grey); line-height: 1.5; }
+.rel a.r .v::after { content: none; }
+.kv.rel .r { grid-template-columns: 1fr auto; }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -242,6 +255,16 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <a class="r" href="https://uppbpb.gov.in" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">uppbpb.gov.in</span></a>
       <a class="r" href="https://uppbpb.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">uppbpb.gov.in</span></a>
     </section>
+    <section class="kv rel" data-t-aria="relH">
+      <div class="h" data-t="relH">More notices</div>
+      <a class="r" href="/notice/up-police-constable-pet-exam-date-rescheduled-notice-2025/"><span data-t="rel0">UP Police Constable PET Exam Date Rescheduled Notice 2025</span><span class="v g num">8 Oct 2026</span></a>
+      <a class="r" href="/notice/rpsc-lecturer-ayurved-dept-2025-reserve-list-released/"><span data-t="rel1">RPSC Lecturer Ayurved Dept 2025 Reserve List Released</span><span class="v g num">26 Oct 2026</span></a>
+      <a class="r" href="/notice/rpsc-lecturer-ayurved-dept-shalakya-tantra-2025-main-result/"><span data-t="rel2">RPSC Lecturer Ayurved Dept Shalakya Tantra 2025 Main Result</span><span class="v g num">26 Oct 2026</span></a>
+      <a class="r" href="/notice/rpsc-lecturer-ayurved-dept-2025-reserve-list-cut-off/"><span data-t="rel3">RPSC Lecturer Ayurved Dept 2025 Reserve List &amp; Cut Off</span><span class="v g num">26 Oct 2026</span></a>
+      <a class="r" href="/notice/rpsc-lecturer-panchkarma-ayurved-2025-reserve-list-result/"><span data-t="rel4">RPSC Lecturer Panchkarma Ayurved 2025 Reserve List Result</span><span class="v g num">26 Oct 2026</span></a>
+      <a class="r" href="/notice/rpsc-lecturer-ayurved-swasthvritta-2025-result-cut-off/"><span data-t="rel5">RPSC Lecturer Ayurved Swasthvritta 2025 Result &amp; Cut Off</span><span class="v g num">26 Oct 2026</span></a>
+    </section>
+    <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Results", "item": "https://sarkarichart.pages.dev/?cat=results"}, {"@type": "ListItem", "position": 3, "name": "UP Police Homeguard Enrolment 2025 Final Marks Notice", "item": "https://sarkarichart.pages.dev/notice/up-police-homeguard-enrolment-2025-final-marks-notice/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "UP Police Homeguard Enrolment 2025 Final Marks Notice", "url": "https://sarkarichart.pages.dev/notice/up-police-homeguard-enrolment-2025-final-marks-notice/", "inLanguage": ["en-IN", "hi-IN"], "description": "Uttar Pradesh Police has released the notice regarding the publication of final marks for Homeguard Enrolment 2025. Candidates can check their scores on the official website.", "datePublished": "2026-10-24", "dateModified": "2026-10-24", "isBasedOn": "https://uppbpb.gov.in/FilesUploaded/Notice/HG2025_Marks_Notice602be8cf-8ca2-47a1-9c85-b03cb41d37e0.pdf", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.pages.dev/"}, "about": {"@type": "GovernmentOrganization", "name": "Uttar Pradesh Police Recruitment and Promotion Board (UPPBPB)"}}]</script>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 24 Oct 2026. If anything here differs from the official notice, the official notice is correct.</p>
       <p class="actions"><a class="share" id="share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/up-police-homeguard-enrolment-2025-final-marks-notice/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
@@ -291,6 +314,13 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r2v: "2026-10-24",
       r3l: "Marks viewing window",
       r3v: "24 Oct 2026 to 23 Nov 2026",
+      relH: "More notices",
+      rel0: "UP Police Constable PET Exam Date Rescheduled Notice 2025",
+      rel1: "RPSC Lecturer Ayurved Dept 2025 Reserve List Released",
+      rel2: "RPSC Lecturer Ayurved Dept Shalakya Tantra 2025 Main Result",
+      rel3: "RPSC Lecturer Ayurved Dept 2025 Reserve List & Cut Off",
+      rel4: "RPSC Lecturer Panchkarma Ayurved 2025 Reserve List Result",
+      rel5: "RPSC Lecturer Ayurved Swasthvritta 2025 Result & Cut Off",
     },
     hi: {
       brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -325,6 +355,13 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r2v: "2026-10-24",
       r3l: "अंक देखने की अवधि",
       r3v: "24 अक्टू 2026 से 23 नव 2026",
+      relH: "और सूचनाएँ",
+      rel0: "उत्तर प्रदेश पुलिस आरक्षी शारीरिक दक्षता परीक्षा तिथि परिवर्तन सूचना",
+      rel1: "राजस्थान लोक सेवा आयोग व्याख्याता आयुर्वेद विभाग परीक्षा 2025 आरक्षित सूची जारी",
+      rel2: "आरपीएससी व्याख्याता आयुर्वेद विभाग शल्य तंत्र 2025 मुख्य परिणाम",
+      rel3: "राजपसए लेक्चरर आयुर्वेद विभाग 2025 आरक्षित सूची और कट ऑफ",
+      rel4: "आरपीएससी व्याख्याता पंचकर्म आयुर्वेद 2025 आरक्षित सूची परिणाम",
+      rel5: "आरपीएससी व्याख्याता आयुर्वेद स्वस्थवृत्त 2025 परिणाम और कट ऑफ",
     },
   };
   let lang = "en";

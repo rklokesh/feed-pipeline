@@ -204,6 +204,19 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media (max-width: 640px) { .hback { font-size: .9375rem; gap: 5px; } }
 .hback::after { content: ""; position: absolute; inset: -12px -9px; }
 @media print { .hback { visibility: hidden; } }
+/* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
+.kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
+.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv ol.steps li + li { margin-top: 6px; }
+.faq .qa + .qa { border-top: 1px solid var(--line); }
+.faq summary { cursor: pointer; padding: 9px 14px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--grey); flex: none; }
+.faq details[open] summary::after { content: "−"; }
+.faq summary:hover { background: var(--row-hover); }
+.faq .qa p { margin: 0; padding: 0 14px 12px; color: var(--grey); line-height: 1.5; }
+.rel a.r .v::after { content: none; }
+.kv.rel .r { grid-template-columns: 1fr auto; }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -245,6 +258,16 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <a class="r" href="https://rrb.indianrailways.gov.in/-/image/179299755991426.10.2026_ENG_OBJECTION_TRACKER_NOTICE_FOR_CEN_03_2026_SC.pdf/examsDocuments" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rrb.indianrailways.gov.in</span></a>
       <a class="r" href="https://rrb.indianrailways.gov.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rrb.indianrailways.gov.in</span></a>
     </section>
+    <section class="kv rel" data-t-aria="relH">
+      <div class="h" data-t="relH">More notices</div>
+      <a class="r" href="/notice/rrb-cen-03-2026-section-controller-answer-key/"><span data-t="rel0">RRB CEN 03/2026 Section Controller Answer Key</span><span class="v g num">26 Oct 2026</span></a>
+      <a class="r" href="/notice/rrb-station-master-cen-08-2026-corrigendum-1/"><span data-t="rel1">RRB Station Master CEN 08/2026 Corrigendum 1</span><span class="v g num">27 Oct 2026</span></a>
+      <a class="r" href="/notice/rrb-station-master-recruitment-2026-apply-now-for-1215-vacancies/"><span data-t="rel2">RRB Station Master Recruitment 2026: Apply Now for 1215 Vacancies</span><span class="v g num">24 Oct 2026</span></a>
+      <a class="r" href="/notice/rrb-cen-01-2026-assistant-loco-pilot-exam-city-intimation/"><span data-t="rel3">RRB CEN 01/2026 Assistant Loco Pilot Exam City Intimation</span><span class="v g num">23 Oct 2026</span></a>
+      <a class="r" href="/notice/rrb-non-technical-popular-categories-under-graduate-recruitment/"><span data-t="rel4">RRB Non-Technical Popular Categories Under Graduate Recruitment 2026</span><span class="v g num">14 Oct 2026</span></a>
+      <a class="r" href="/notice/rpsc-senior-scientific-officer-2025-biology-question-paper/"><span data-t="rel5">RPSC Senior Scientific Officer 2025 Biology Question Paper</span><span class="v g num">23 Oct 2026</span></a>
+    </section>
+    <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Answer keys", "item": "https://sarkarichart.pages.dev/?cat=answer-keys"}, {"@type": "ListItem", "position": 3, "name": "RRB Section Controller CEN 03/2026 Answer Key", "item": "https://sarkarichart.pages.dev/notice/rrb-section-controller-cen-03-2026-answer-key/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "RRB Section Controller CEN 03/2026 Answer Key", "url": "https://sarkarichart.pages.dev/notice/rrb-section-controller-cen-03-2026-answer-key/", "inLanguage": ["en-IN", "hi-IN"], "description": "Railway Recruitment Boards has released the answer key and objection tracker for the Section Controller CEN 03/2026 computer-based test. Candidates who appeared for the exam can view their response sheets and raise objections online until 03.11.2026.", "datePublished": "2026-10-26", "dateModified": "2026-10-26", "isBasedOn": "https://rrb.indianrailways.gov.in/-/image/179299755991426.10.2026_ENG_OBJECTION_TRACKER_NOTICE_FOR_CEN_03_2026_SC.pdf/examsDocuments", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.pages.dev/"}, "about": {"@type": "GovernmentOrganization", "name": "Railway Recruitment Boards (RRB)"}}]</script>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 26 Oct 2026. If anything here differs from the official notice, the official notice is correct.</p>
       <p class="actions"><a class="share" id="share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/rrb-section-controller-cen-03-2026-answer-key/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
@@ -295,6 +318,13 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r3l: "Objection window",
       r3v: "26 Oct 2026 to 03 Nov 2026",
       f0: "Per Question Objection Fee",
+      relH: "More notices",
+      rel0: "RRB CEN 03/2026 Section Controller Answer Key",
+      rel1: "RRB Station Master CEN 08/2026 Corrigendum 1",
+      rel2: "RRB Station Master Recruitment 2026: Apply Now for 1215 Vacancies",
+      rel3: "RRB CEN 01/2026 Assistant Loco Pilot Exam City Intimation",
+      rel4: "RRB Non-Technical Popular Categories Under Graduate Recruitment 2026",
+      rel5: "RPSC Senior Scientific Officer 2025 Biology Question Paper",
     },
     hi: {
       brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -330,6 +360,13 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r3l: "आपत्ति विंडो",
       r3v: "26 अक्तूबर 2026 से 03 नवंबर 2026",
       f0: "प्रति प्रश्न आपत्ति शुल्क",
+      relH: "और सूचनाएँ",
+      rel0: "रेलवे भर्ती बोर्ड केंद्रीय रोजगार अधिसूचना 03/2026 सेक्शन कंट्रोलर उत्तर कुंजी",
+      rel1: "रेलवे भर्ती बोर्ड स्टेशन मास्टर केंद्रीय रोजगार सूचना 08/2026 शुद्धिपत्र 1",
+      rel2: "रेलवे भर्ती बोर्ड स्टेशन मास्टर भर्ती 2026: 1215 रिक्तियों के लिए आवेदन करें",
+      rel3: "रेलवे भर्ती बोर्ड केंद्रीय रोजगार सूचना संख्या 01/2026 सहायक लोको पायलट परीक्षा शहर की सूचना",
+      rel4: "रेलवे भर्ती बोर्ड स्नातक-पूर्व गैर-तकनीकी लोकप्रिय श्रेणियां भर्ती 2026",
+      rel5: "आरपीएससी सीनियर साइंटिफिक ऑफिसर 2025 जीव विज्ञान प्रश्न पत्र",
     },
   };
   let lang = "en";

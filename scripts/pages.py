@@ -49,10 +49,25 @@ Answer with ONE JSON object:
  "status_hi": "same in Hindi",
  "conducted_by_en": "full name of the organisation (short form in brackets)", "conducted_by_hi": "same in Hindi",
  "rows": [ {"label_en": "", "label_hi": "", "value_en": "", "value_hi": ""} ],
-     // ordered, only rows you know: Posts, Total vacancies, Apply online (start to last date), Last date for fee,
+     // KEY DETAILS at a glance (short; the full dates/age/eligibility go in their own sections below). Ordered, only rows you know: Posts, Total vacancies, Apply online (start to last date), Last date for fee,
      // Exam date, Educational qualification, Age limit (with as-on date), Selection process, Advertisement number,
      // for results/admit cards: how to download, roll-number/district info, etc. Values short; dates like '14 Dec 2026'.
  "fees": [ {"cat_en": "General / OBC", "cat_hi": "सामान्य / अन्य पिछड़ा वर्ग", "amount": "₹100"} ],
+ "intro_en": "3-4 sentence introduction for the page: which board, which posts/exam and year, how many vacancies, the key dates, and who should read it. Plain, factual, no hype.",
+ "intro_hi": "same in Hindi",
+ "dates": [ {"label_en": "Online application starts", "label_hi": "", "value_en": "03 Oct 2026", "value_hi": ""} ],
+     // every stage printed in the notice, in order: notification, apply start, last date, fee last date, correction window,
+     // admit card, exam, answer key, result. Only those printed.
+ "age": [ {"label_en": "Minimum age", "label_hi": "", "value_en": "18 years", "value_hi": ""} ],
+     // minimum, maximum, as-on date, and each category relaxation printed in the notice
+ "vacancies": [ {"post_en": "Constable (GD)", "post_hi": "", "total": "126", "detail_en": "UR 52, OBC 34, SC 19, ST 9, EWS 12", "detail_hi": ""} ],
+ "eligibility": [ {"label_en": "Education", "label_hi": "", "value_en": "", "value_hi": ""} ],   // education, experience, physical standards, nationality
+ "selection_en": ["step 1", "step 2"], "selection_hi": ["", ""],   // selection process stages, in order
+ "how_en": ["step 1", "step 2"], "how_hi": ["", ""],                // how to apply / how to download, short imperative steps
+ "extra": [ {"label_en": "", "label_hi": "", "value_en": "", "value_hi": ""} ],   // other useful facts: exam pattern, salary/pay level, documents needed, centres
+ "faq": [ {"q_en": "What is the last date to apply for ...?", "a_en": "...", "q_hi": "", "a_hi": ""} ],
+     // 4-6 questions people actually search for THIS notice (last date, fee, age, eligibility, how to apply/download, vacancies),
+     // each answered in 1-2 sentences from the notice. Skip questions the notice does not answer.
  "notice_date": "YYYY-MM-DD: the date the board issued THIS notice (e.g. 'Dated: 08.10.2026', 'Date of publication', the date
                  printed at the top or bottom of the notice / press note). Not the exam date, not the last date. null if not printed.",
  "apply_start": "YYYY-MM-DD or null", "last_date": "YYYY-MM-DD or null (last date to apply)", "exam_date": "YYYY-MM-DD or null",
@@ -169,7 +184,7 @@ SITE_URL = os.environ.get("SITE_URL", "https://sarkarichart.pages.dev")   # chan
 CAT_SLUG = {"Job": "jobs", "Result": "results", "Admit card": "admit-cards", "Answer key": "answer-keys"}
 
 
-def render(n: dict, slug: str) -> str:
+def render(n: dict, slug: str, related: list | None = None) -> str:
     c, pg = n.get("card") or {}, n.get("page") or {}
     typ = c.get("type", "Job")
     en, hi = {}, {}
@@ -239,9 +254,91 @@ def render(n: dict, slug: str) -> str:
         main.append('    <section class="kv" data-t-aria="fee">\n      <div class="h" data-t="fee">Application fee</div>\n' +
                     "".join(f'      <div class="r"><span data-t="{k}">{esc(en[k])}</span><span class="v num">{amt}</span></div>\n' for k, amt in fees) +
                     "    </section>")
+    def sec_kv(key, label_en, label_hi, items):
+        """items: (label_en, label_hi, value_en, value_hi); returns a table-like section"""
+        items = [x for x in items if x[0] and x[2]]
+        if not items:
+            return
+        en[key], hi[key] = label_en, label_hi
+        body = ""
+        for k, (le, lh, ve, vh) in enumerate(items):
+            en[f"{key}{k}l"], hi[f"{key}{k}l"] = le, lh or le
+            en[f"{key}{k}v"], hi[f"{key}{k}v"] = ve, vh or ve
+            body += f'      <div class="r"><span data-t="{key}{k}l">{esc(le)}</span><span class="v" data-t="{key}{k}v">{esc(ve)}</span></div>\n'
+        main.append(f'    <section class="kv" data-t-aria="{key}">\n      <div class="h" data-t="{key}">{esc(label_en)}</div>\n{body}    </section>')
+
+    def sec_list(key, label_en, label_hi, items_en, items_hi):
+        items = [(e, (items_hi[k] if k < len(items_hi or []) and items_hi[k] else e)) for k, e in enumerate(items_en or []) if e]
+        if not items:
+            return
+        en[key], hi[key] = label_en, label_hi
+        lis = ""
+        for k, (e, h) in enumerate(items):
+            en[f"{key}{k}"], hi[f"{key}{k}"] = e, h
+            lis += f'<li data-t="{key}{k}">{esc(e)}</li>'
+        main.append(f'    <section class="kv" data-t-aria="{key}">\n      <div class="h" data-t="{key}">{esc(label_en)}</div>\n      <ol class="steps">{lis}</ol>\n    </section>')
+
+    g = lambda k: pg.get(k) or []
+    if pg.get("intro_en"):
+        en["aboutH"], hi["aboutH"] = "About this notice", "इस सूचना के बारे में"
+        en["intro"], hi["intro"] = pg["intro_en"], pg.get("intro_hi") or pg["intro_en"]
+        main.insert(1, '    <section class="kv" data-t-aria="aboutH">\n      <div class="h" data-t="aboutH">About this notice</div>\n'
+                       f'      <p class="p" data-t="intro">{esc(en["intro"])}</p>\n    </section>')
+    sec_kv("datesH", "Important dates", "महत्वपूर्ण तिथियाँ", [(d.get("label_en"), d.get("label_hi"), d.get("value_en"), d.get("value_hi")) for d in g("dates")])
+    sec_kv("ageH", "Age limit", "आयु सीमा", [(d.get("label_en"), d.get("label_hi"), d.get("value_en"), d.get("value_hi")) for d in g("age")])
+    vac = [(v.get("post_en"), v.get("post_hi"), " · ".join(x for x in [str(v.get("total") or ""), v.get("detail_en") or ""] if x),
+            " · ".join(x for x in [str(v.get("total") or ""), v.get("detail_hi") or v.get("detail_en") or ""] if x)) for v in g("vacancies")]
+    sec_kv("vacH", "Vacancy details", "रिक्तियों का विवरण", vac)
+    sec_kv("eligH", "Eligibility", "पात्रता", [(d.get("label_en"), d.get("label_hi"), d.get("value_en"), d.get("value_hi")) for d in g("eligibility")])
+    sec_list("selH", "Selection process", "चयन प्रक्रिया", pg.get("selection_en"), pg.get("selection_hi"))
+    sec_list("howH", "How to apply" if typ == "Job" else "How to download", "आवेदन कैसे करें" if typ == "Job" else "कैसे डाउनलोड करें", pg.get("how_en"), pg.get("how_hi"))
+    sec_kv("extraH", "Other details", "अन्य जानकारी", [(d.get("label_en"), d.get("label_hi"), d.get("value_en"), d.get("value_hi")) for d in g("extra")])
     main.append('    <section class="kv" data-t-aria="links">\n      <div class="h" data-t="links">Official links</div>\n' +
                 "".join(f'      <a class="r" href="{esc(u)}" target="_blank" rel="noopener"><span data-t="{k}">{esc(en[k])}</span><span class="v">{esc(host(u))}</span></a>\n'
                         for k, u in links if u) + "    </section>")
+    faq = [q for q in g("faq") if q.get("q_en") and q.get("a_en")][:6]
+    if faq:
+        en["faqH"], hi["faqH"] = "Frequently asked questions", "अक्सर पूछे जाने वाले सवाल"
+        body = ""
+        for k, q in enumerate(faq):
+            en[f"q{k}"], hi[f"q{k}"] = q["q_en"], q.get("q_hi") or q["q_en"]
+            en[f"a{k}"], hi[f"a{k}"] = q["a_en"], q.get("a_hi") or q["a_en"]
+            body += f'      <details class="qa"><summary data-t="q{k}">{esc(q["q_en"])}</summary><p data-t="a{k}">{esc(q["a_en"])}</p></details>\n'
+        main.append(f'    <section class="kv faq" data-t-aria="faqH">\n      <div class="h" data-t="faqH">Frequently asked questions</div>\n{body}    </section>')
+    if related:
+        en["relH"], hi["relH"] = "More notices", "और सूचनाएँ"
+        body = ""
+        for k, r in enumerate(related[:6]):
+            en[f"rel{k}"], hi[f"rel{k}"] = r["en"], r["hi"] or r["en"]
+            body += f'      <a class="r" href="/notice/{r["slug"]}/"><span data-t="rel{k}">{esc(r["en"])}</span><span class="v g num">{esc(d_en(r["posted"]))}</span></a>\n'
+        main.append(f'    <section class="kv rel" data-t-aria="relH">\n      <div class="h" data-t="relH">More notices</div>\n{body}    </section>')
+    # structured data for Google and AI search
+    url = f"{SITE_URL}/notice/{slug}/"
+    ld = [{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": f"{SITE_URL}/"},
+              {"@type": "ListItem", "position": 2, "name": en["crumbType"], "item": f"{SITE_URL}/?cat={CAT_SLUG.get(typ, 'jobs')}"},
+              {"@type": "ListItem", "position": 3, "name": en["h1"], "item": url}]},
+          {"@context": "https://schema.org", "@type": "WebPage", "name": en["h1"], "url": url, "inLanguage": ["en-IN", "hi-IN"],
+           "description": en.get("intro") or en["summary"], "datePublished": posted,
+           "dateModified": (n.get("published_at") or "")[:10] or posted,
+           "isBasedOn": n.get("url"), "publisher": {"@type": "Organization", "name": "SarkariChart", "url": f"{SITE_URL}/"},
+           "about": {"@type": "GovernmentOrganization", "name": en["byV"]}}]
+    if faq:
+        ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q["q_en"], "acceptedAnswer": {"@type": "Answer", "text": q["a_en"]}} for q in faq]})
+    if typ == "Job" and last:
+        total = sum(int(re.sub(r"\D", "", str(v.get("total") or "")) or 0) for v in g("vacancies"))
+        jp = {"@context": "https://schema.org", "@type": "JobPosting", "title": en["h1"],
+              "description": "<p>" + esc(en.get("intro") or en["summary"]) + "</p>",
+              "datePosted": posted, "validThrough": f"{last}T23:59:59+05:30", "employmentType": "FULL_TIME",
+              "hiringOrganization": {"@type": "Organization", "name": en["byV"], **({"sameAs": site} if site else {})},
+              "jobLocation": {"@type": "Place", "address": {"@type": "PostalAddress", "addressCountry": "IN"}},
+              "applicantLocationRequirements": {"@type": "Country", "name": "India"},
+              "directApply": False, "url": url}
+        if total:
+            jp["totalJobOpenings"] = total
+        ld.append(jp)
+    main.append('    <script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>")
     wa = ('<svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>')
     main.append(f'''    <div class="note">
       <p class="g" data-t="checked">{esc(en["checked"])}</p>
@@ -256,6 +353,19 @@ def render(n: dict, slug: str) -> str:
            .replace("{{T_EN}}", t_en).replace("{{T_HI}}", t_hi).replace("{{SLUG}}", slug)
            .replace("{{OGIMG}}", f"{SITE_URL}/notice/{slug}/og.png").replace("{{URL}}", f"{SITE_URL}/notice/{slug}/")
            .replace("{{LAST}}", f'new Date("{last}T23:59:59+05:30")' if last else "null"))
+    return out
+
+
+def related_for(n: dict, notices: list) -> list:
+    """Up to 6 other live notices: same board first, then same category; newest first."""
+    me, c = n["id"], (n.get("card") or {})
+    pool = [x for _, x in notices if x.get("status") == "approved" and x.get("slug") and x["id"] != me]
+    key = lambda x: (x.get("org") == n.get("org"), (x.get("card") or {}).get("type") == c.get("type"), x.get("notice_date") or "")
+    out = []
+    for x in sorted(pool, key=key, reverse=True)[:6]:
+        xc = x.get("card") or {}
+        out.append({"slug": x["slug"], "en": xc.get("title_en") or x.get("title"), "hi": xc.get("title_hi") or "",
+                    "posted": x.get("notice_date") or x["first_seen"][:10]})
     return out
 
 
@@ -286,7 +396,7 @@ def main():
         n["slug"] = slug
         out = SITE / "notice" / slug / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(render(n, slug), encoding="utf-8")
+        out.write_text(render(n, slug, related_for(n, notices)), encoding="utf-8")
         # data for the share image (site/notice/<slug>/og.png, drawn by scripts/make_pdfs.mjs at deploy)
         c, pg = n.get("card") or {}, n.get("page") or {}
         typ = c.get("type", "Job")

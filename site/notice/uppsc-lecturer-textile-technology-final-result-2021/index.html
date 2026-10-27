@@ -204,6 +204,19 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media (max-width: 640px) { .hback { font-size: .9375rem; gap: 5px; } }
 .hback::after { content: ""; position: absolute; inset: -12px -9px; }
 @media print { .hback { visibility: hidden; } }
+/* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
+.kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
+.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv ol.steps li + li { margin-top: 6px; }
+.faq .qa + .qa { border-top: 1px solid var(--line); }
+.faq summary { cursor: pointer; padding: 9px 14px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--grey); flex: none; }
+.faq details[open] summary::after { content: "−"; }
+.faq summary:hover { background: var(--row-hover); }
+.faq .qa p { margin: 0; padding: 0 14px 12px; color: var(--grey); line-height: 1.5; }
+.rel a.r .v::after { content: none; }
+.kv.rel .r { grid-template-columns: 1fr auto; }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -240,6 +253,16 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <a class="r" href="https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmbO3OUZentgoWo8RkhUpnV" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">uppsc.up.nic.in</span></a>
       <a class="r" href="https://uppsc.up.nic.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">uppsc.up.nic.in</span></a>
     </section>
+    <section class="kv rel" data-t-aria="relH">
+      <div class="h" data-t="relH">More notices</div>
+      <a class="r" href="/notice/uppsc-assistant-teacher-exam-2025-final-result/"><span data-t="rel0">UPPSC Assistant Teacher Exam 2025 Final Result</span><span class="v g num">22 Oct 2026</span></a>
+      <a class="r" href="/notice/uppsc-regional-inspector-technical-2020-final-result/"><span data-t="rel1">UPPSC Regional Inspector Technical 2020 Final Result</span><span class="v g num">22 Oct 2026</span></a>
+      <a class="r" href="/notice/uppsc-inspector-of-drugs-exam-2025-corrigendum/"><span data-t="rel2">UPPSC Inspector of Drugs Exam 2025 Corrigendum</span><span class="v g num">27 Oct 2026</span></a>
+      <a class="r" href="/notice/uppsc-chikitsa-adhikari-unani-exam-corrigendum-2025/"><span data-t="rel3">UPPSC Chikitsa Adhikari Unani Exam Corrigendum 2025</span><span class="v g num">25 Oct 2026</span></a>
+      <a class="r" href="/notice/uppsc-lecturers-ayurveda-exam-admit-card-2026/"><span data-t="rel4">UPPSC Lecturers Ayurveda Exam Admit Card 2026</span><span class="v g num">24 Oct 2026</span></a>
+      <a class="r" href="/notice/uppsc-combined-state-agriculture-services-exam-2023-admit-card/"><span data-t="rel5">UPPSC Combined State Agriculture Services Exam 2023 Admit Card</span><span class="v g num">24 Oct 2026</span></a>
+    </section>
+    <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Results", "item": "https://sarkarichart.pages.dev/?cat=results"}, {"@type": "ListItem", "position": 3, "name": "UPPSC Lecturer Textile Technology Final Result 2021", "item": "https://sarkarichart.pages.dev/notice/uppsc-lecturer-textile-technology-final-result-2021/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "UPPSC Lecturer Textile Technology Final Result 2021", "url": "https://sarkarichart.pages.dev/notice/uppsc-lecturer-textile-technology-final-result-2021/", "inLanguage": ["en-IN", "hi-IN"], "description": "Uttar Pradesh Public Service Commission has released the final result for Lecturer Textile Technology under Advt. No. A-7/E-1/2021. Candidates can check the selected list.", "datePublished": "2026-10-22", "dateModified": "2026-10-22", "isBasedOn": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmbO3OUZentgoWo8RkhUpnV", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.pages.dev/"}, "about": {"@type": "GovernmentOrganization", "name": "Uttar Pradesh Public Service Commission (UPPSC)"}}]</script>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 22 Oct 2026. If anything here differs from the official notice, the official notice is correct.</p>
       <p class="actions"><a class="share" id="share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/uppsc-lecturer-textile-technology-final-result-2021/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
@@ -287,6 +310,13 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r1v: "1",
       r2l: "Advertisement number",
       r2v: "A-7/E-1/2021",
+      relH: "More notices",
+      rel0: "UPPSC Assistant Teacher Exam 2025 Final Result",
+      rel1: "UPPSC Regional Inspector Technical 2020 Final Result",
+      rel2: "UPPSC Inspector of Drugs Exam 2025 Corrigendum",
+      rel3: "UPPSC Chikitsa Adhikari Unani Exam Corrigendum 2025",
+      rel4: "UPPSC Lecturers Ayurveda Exam Admit Card 2026",
+      rel5: "UPPSC Combined State Agriculture Services Exam 2023 Admit Card",
     },
     hi: {
       brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -319,6 +349,13 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r1v: "1",
       r2l: "विज्ञापन संख्या",
       r2v: "ए-7/ई-1/2021",
+      relH: "और सूचनाएँ",
+      rel0: "उत्तर प्रदेश लोक सेवा आयोग सहायक अध्यापक परीक्षा 2025 अंतिम परिणाम",
+      rel1: "उत्तर प्रदेश लोक सेवा आयोग क्षेत्रीय निरीक्षक प्राविधिक 2020 अंतिम परिणाम",
+      rel2: "उत्तर प्रदेश लोक सेवा आयोग औषधि निरीक्षक परीक्षा 2025 संशोधन",
+      rel3: "उत्तर प्रदेश लोक सेवा आयोग चिकित्सा अधिकारी यूनानी परीक्षा शुद्धिपत्र 2025",
+      rel4: "उत्तर प्रदेश लोक सेवा आयोग प्रवक्ता आयुर्वेद परीक्षा प्रवेश पत्र",
+      rel5: "उत्तर प्रदेश लोक सेवा आयोग सम्मिलित राज्य कृषि सेवा परीक्षा 2023 प्रवेश पत्र",
     },
   };
   let lang = "en";
