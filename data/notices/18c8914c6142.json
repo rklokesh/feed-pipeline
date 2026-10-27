@@ -25,28 +25,78 @@
   "id": "18c8914c6142",
   "issue": 1,
   "kind": "update",
-  "notice_date": "2026-05-05",
+  "notice_date": "2026-10-22",
   "org": "BPSC",
   "page": {
-    "apply_start": null,
+    "age": [],
+    "apply_start": "2026-05-07",
     "apply_url": null,
     "changes_from_notes": "",
     "conducted_by_en": "Bihar Public Service Commission (BPSC)",
     "conducted_by_hi": "बिहार लोक सेवा आयोग (बीपीएससी)",
+    "dates": [
+      {
+        "label_en": "Original notification date",
+        "label_hi": "मूल अधिसूचना तिथि",
+        "value_en": "05 May 2026",
+        "value_hi": "०५ मई २०२६"
+      },
+      {
+        "label_en": "Online application start date",
+        "label_hi": "ऑनलाइन आवेदन प्रारंभ तिथि",
+        "value_en": "07 May 2026",
+        "value_hi": "०७ मई २०२६"
+      }
+    ],
+    "eligibility": [],
     "exam_date": null,
+    "extra": [
+      {
+        "label_en": "Pay Scale",
+        "label_hi": "वेतनमान",
+        "value_en": "Level-9",
+        "value_hi": "लेवल-९"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The BPSC has reduced 2 vacancies for the Deputy Superintendent of Police post, bringing the total vacancies for the 72nd CCE to 1187.",
+        "a_hi": "बीपीएससी ने पुलिस उपाधीक्षक के पद के लिए २ रिक्तियां कम कर दी हैं, जिससे ७२वीं संयुक्त प्रतियोगिता परीक्षा के लिए कुल रिक्तियां १११८७ हो गई हैं।",
+        "q_en": "What is the change announced in the BPSC 72nd CCE corrigendum?",
+        "q_hi": "बीपीएससी ७२वीं संयुक्त प्रतियोगिता परीक्षा शुद्धि-पत्र में क्या बदलाव घोषित किया गया है?"
+      },
+      {
+        "a_en": "No, all other terms and conditions of the advertisement published on 05.05.2026 remain unchanged.",
+        "a_hi": "नहीं, दिनांक ०५.०५.२०२६ को प्रकाशित विज्ञापन की शेष सभी शर्तें यथावत रहेंगी।",
+        "q_en": "Are other terms of the original advertisement changed?",
+        "q_hi": "क्या मूल विज्ञापन की अन्य शर्तें बदली हैं?"
+      }
+    ],
     "fees": [],
     "h1_en": "BPSC 72nd CCE Vacancy Reduction Notice 2026",
     "h1_hi": "बीपीएससी ७२वीं संयुक्त प्रतियोगिता परीक्षा रिक्ति कटौती सूचना २०२६",
+    "how_en": [
+      "Visit the official BPSC website.",
+      "Check the corrigendum notice regarding vacancy reduction for the 72nd CCE.",
+      "Refer to the revised category-wise vacancy details for your reference."
+    ],
+    "how_hi": [
+      "आधिकारिक बीपीएससी वेबसाइट पर जाएं।",
+      "७२वीं संयुक्त प्रतियोगिता परीक्षा के लिए रिक्ति कटौती से संबंधित शुद्धि-पत्र की जांच करें।",
+      "अपने संदर्भ के लिए संशोधित श्रेणीवार रिक्ति विवरण देखें।"
+    ],
+    "intro_en": "The Bihar Public Service Commission (BPSC) has released a corrigendum for the Integrated 72nd Combined Preliminary Competitive Examination. Through this notice, the board has announced a reduction of 2 vacancies for the post of Deputy Superintendent of Police under the Home Department (Police Branch), revising the total vacancies for the examination to 1187. All other terms and conditions of the original advertisement dated 05.05.2026 remain unchanged.",
+    "intro_hi": "बिहार लोक सेवा आयोग (बीपीएससी) ने एकीकृत ७२वीं संयुक्त प्रारंभिक प्रतियोगिता परीक्षा के लिए एक शुद्धि-पत्र जारी किया है। इस सूचना के माध्यम से बोर्ड ने गृह विभाग (आरक्षी शाखा) के अंतर्गत पुलिस उपाधीक्षक के पद के लिए २ रिक्तियों में कटौती की घोषणा की है, जिससे परीक्षा के लिए कुल रिक्तियां संशोधित होकर १११८७ हो गई हैं। दिनांक ०५.०५.२०२६ के मूल विज्ञापन की अन्य सभी शर्तें यथावत रहेंगी।",
     "last_date": null,
-    "notice_date": "2026-05-05",
+    "notice_date": null,
     "official_site": "https://bpsc.bihar.gov.in/",
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
         "label_en": "Posts",
         "label_hi": "पद",
-        "value_en": "Deputy Superintendent of Police and others",
-        "value_hi": "पुलिस उपाधीक्षक और अन्य"
+        "value_en": "Deputy Superintendent of Police (BPS) and others",
+        "value_hi": "पुलिस उपाधीक्षक (बिहार पुलिस सेवा) और अन्य"
       },
       {
         "label_en": "Total vacancies",
@@ -61,10 +111,29 @@
         "value_hi": "एकीकृत ७२वीं संयुक्त (प्रारम्भिक) प्रतियोगिता परीक्षा"
       }
     ],
-    "status_en": "Vacancy reduction corrigendum released",
-    "status_hi": "रिक्ति कटौती शुद्धि-पत्र जारी",
-    "summary_en": "The Bihar Public Service Commission has issued a corrigendum reducing 2 vacancies for the Deputy Superintendent of Police post under the Integrated 72nd Combined (Preliminary) Competitive Examination. Total vacancies now stand at 1187. Candidates can refer to the official notice for revised category-wise details.",
-    "summary_hi": "बिहार लोक सेवा आयोग ने एकीकृत ७२वीं संयुक्त (प्रारम्भिक) प्रतियोगिता परीक्षा के तहत पुलिस उपाधीक्षक के पद की २ रिक्तियों को कम करने के संबंध में शुद्धि-पत्र जारी किया है। अब कुल रिक्तियां ११३७ हैं।"
+    "selection_en": [
+      "Preliminary Examination",
+      "Main Examination",
+      "Interview"
+    ],
+    "selection_hi": [
+      "प्रारंभिक परीक्षा",
+      "मुख्य परीक्षा",
+      "साक्षात्कार"
+    ],
+    "status_en": "Corrigendum issued: Vacancies reduced",
+    "status_hi": "शुद्धि-पत्र जारी: रिक्तियां कम की गईं",
+    "summary_en": "The Bihar Public Service Commission has issued a corrigendum reducing 2 vacancies for the Deputy Superintendent of Police post, bringing the total vacancies to 1187 for the 72nd Combined Preliminary Competitive Examination. Candidates can check the revised category-wise vacancy details in the official notice.",
+    "summary_hi": "बिहार लोक सेवा आयोग ने ७२वीं संयुक्त प्रारंभिक प्रतियोगिता परीक्षा के लिए पुलिस उपाधीक्षक के पद की २ रिक्तियों को कम करते हुए एक शुद्धि-पत्र जारी किया है, जिससे कुल रिक्तियां ११औ७ हो गई हैं। उम्मीदवार आधिकारिक सूचना में संशोधित श्रेणीवार रिक्ति विवरण देख सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Revised total vacancies for this post is 20 (after reduction of 2 posts)",
+        "detail_hi": "इस पद के लिए संशोधित कुल रिक्तियां २० हैं (२ पदों की कटौती के पश्चात)",
+        "post_en": "Deputy Superintendent of Police, Home Department (Police Branch), Bihar Police Service",
+        "post_hi": "पुलिस उपाधीक्षक, गृह विभाग (आरक्षी शाखा), बिहार पुलिस सेवा",
+        "total": "20"
+      }
+    ]
   },
   "pdf": {
     "bytes": 42598,
