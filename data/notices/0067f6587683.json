@@ -29,32 +29,68 @@
   "notice_date": "2026-10-26",
   "org": "RPSC",
   "page": {
+    "after_en": [
+      "The department will process the recommendation for appointment upon receiving a formal requisition."
+    ],
+    "after_hi": [
+      "विभाग औपचारिक मांग प्राप्त होने पर नियुक्ति की सिफारिश की प्रक्रिया करेगा।"
+    ],
     "age": [],
     "apply_start": null,
     "apply_url": null,
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Check the official RPSC notice for your roll number.",
+      "Verify cut-off marks and category details."
+    ],
+    "checklist_hi": [
+      "अपने रोल नंबर के लिए आधिकारिक आरपीएससी नोटिस की जांच करें।",
+      "कट-ऑफ अंक और श्रेणी विवरण सत्यापित करें।"
+    ],
     "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
     "conducted_by_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी)",
     "dates": [
       {
-        "label_en": "Notice date",
-        "label_hi": "सूचना तिथि",
+        "label_en": "Notice Date",
+        "label_hi": "सूचना की तिथि",
         "value_en": "26 Oct 2026",
         "value_hi": "26 अक्टू 2026"
       },
       {
-        "label_en": "Consideration list date",
+        "label_en": "Provisional List Date",
         "label_hi": "विचारित सूची तिथि",
         "value_en": "03 Jul 2026",
         "value_hi": "03 जुला 2026"
       }
     ],
+    "documents_en": [
+      "Educational qualification certificates",
+      "Identity proof",
+      "Age proof",
+      "Caste certificate (if applicable)"
+    ],
+    "documents_hi": [
+      "शैक्षणिक योग्यता प्रमाण पत्र",
+      "पहचान प्रमाण",
+      "आयु प्रमाण",
+      "जाति प्रमाण पत्र (यदि लागू हो)"
+    ],
     "eligibility": [],
     "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a secondary list of successful candidates released by the Rajasthan Public Service Commission for appointment recommendations after document verification.",
+        "a_hi": "यह दस्तावेज़ सत्यापन के बाद नियुक्ति की सिफारिश के लिए राजस्थान लोक सेवा आयोग द्वारा जारी सफल उम्मीदवारों की एक अतिरिक्त सूची है।",
+        "q_en": "What is the RPSC Lecturer Ayurved Reserve List?",
+        "q_hi": "आरक्षित सूची क्या है?"
+      }
+    ],
     "extra": [
       {
-        "label_en": "General (UR) Cut-off Marks",
-        "label_hi": "सामान्य (अनारक्षित) कट-ऑफ अंक",
+        "label_en": "General Cut-off Marks",
+        "label_hi": "सामान्य कट-ऑफ अंक",
         "value_en": "92.33 (DOB: 25-04-1996)",
         "value_hi": "92.33 (जन्म तिथि: 25-04-1996)"
       }
@@ -63,20 +99,20 @@
       {
         "a_en": "The reserve list was released on 26 October 2026.",
         "a_hi": "आरक्षित सूची 26 अक्टूबर 2026 को जारी की गई थी।",
-        "q_en": "When was the RPSC Lecturer Ayurved Dept 2025 reserve list released?",
-        "q_hi": "आरपीएससी व्याख्याता आयुर्वेद विभाग 2025 की आरक्षित सूची कब जारी की गई?"
+        "q_en": "When was the RPSC Lecturer Ayurved Reserve List released?",
+        "q_hi": "आरपीएससी व्याख्याता आयुर्वेद आरक्षित सूची कब जारी की गई?"
       },
       {
-        "a_en": "Total 1 candidate has been selected in the reserve list.",
-        "a_hi": "आरक्षित सूची में कुल 1 उम्मीदवार का चयन किया गया है।",
-        "q_en": "How many candidates are selected in the reserve list?",
-        "q_hi": "आरक्षित सूची में कुल कितने उम्मीदवारों का चयन किया गया है?"
+        "a_en": "Only 1 candidate has been selected in the reserve list.",
+        "a_hi": "आरक्षित सूची में केवल 1 उम्मीदवार का चयन किया गया है।",
+        "q_en": "How many candidates are selected in the RPSC Lecturer Ayurved Reserve List?",
+        "q_hi": "आरपीएससी व्याख्याता आयुर्वेद आरक्षित सूची में कितने उम्मीदवार चुने गए हैं?"
       },
       {
-        "a_en": "The General (UR) category cut-off mark is 92.33.",
-        "a_hi": "सामान्य (अनारक्षित) श्रेणी के कट-ऑफ अंक 92.33 हैं।",
-        "q_en": "What is the General category cut-off marks for the reserve list?",
-        "q_hi": "आरक्षित सूची के लिए सामान्य श्रेणी के कट-ऑफ अंक क्या हैं?"
+        "a_en": "The cut-off marks for the General (UR) category is 92.33.",
+        "a_hi": "सामान्य (अनारक्षित) श्रेणी के लिए कट-ऑफ अंक 92.33 है।",
+        "q_en": "What is the cut-off marks for the General category in the reserve list?",
+        "q_hi": "आरक्षित सूची में सामान्य श्रेणी के लिए कट-ऑफ अंक क्या है?"
       }
     ],
     "fees": [],
@@ -84,68 +120,84 @@
     "h1_hi": "राजस्थान लोक सेवा आयोग व्याख्याता आयुर्वेद 2025 आरक्षित सूची और कटऑफ",
     "how_en": [
       "Visit the official RPSC website.",
-      "Check the News and Events or Result section for the Lecturer Ayurved Dept 2025 reserve list notice.",
-      "Download the PDF and check your roll number and category cut-off marks."
+      "Click on the results section for Lecturer (Samhita Maulik Siddhant) Ayurved Dept. 2025.",
+      "Download the PDF notice containing the reserve list and cut-off marks.",
+      "Check your roll number and merit rank."
     ],
     "how_hi": [
-      "आधिकारिक वेबसाइट पर जाएं।",
-      "समाचार और अनुभाग या परिणाम अनुभाग में व्याख्याता आयुर्वेद विभाग 2025 आरक्षित सूची सूचना देखें।",
-      "पीडीएफ डाउनलोड करें और अपना रोल नंबर तथा श्रेणी कट-ऑफ अंक जांचें।"
+      "आधिकारिक आरपीएससी वेबसाइट पर जाएं।",
+      "व्याख्याता (संहिता मौलिक सिद्धांत) आयुर्वेद विभाग 2025 के परिणाम अनुभाग पर क्लिक करें।",
+      "आरक्षित सूची और कट-ऑफ अंकों वाली पीडीएफ सूचना डाउनलोड करें।",
+      "अपना रोल नंबर और मेरिट रैंक जांचें।"
     ],
-    "intro_en": "The Rajasthan Public Service Commission (RPSC) has released the reserve list and cut-off marks for the Lecturer (Samhita Maulik Siddhant) competitive examination 2025 under the Ayurved Department. Following document verification, one candidate has been declared successful provisionally in the reserve list. Candidates can check the cut-off marks and roll number details provided in the official notice.",
-    "intro_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी) ने आयुर्वेद विभाग के तहत व्याख्याता (संहिता मौलिक सिद्धांत) प्रतियोगी परीक्षा 2025 के लिए आरक्षित सूची और कट-ऑफ अंक जारी कर दिए हैं। दस्तावेजों की जांच के बाद, आरक्षित सूची में एक उम्मीदवार को अनंतिम रूप से सफल घोषित किया गया है। उम्मीदवार आधिकारिक सूचना में दिए गए कट-ऑफ अंक और रोल नंबर विवरण की जांच कर सकते हैं।",
+    "intro_en": "The Rajasthan Public Service Commission (RPSC) has released the reserve list and cut-off marks for the Lecturer (Samhita Maulik Siddhant) Competitive Examination 2025 under the Ayurved Department. Following document verification, one candidate has been provisionally declared successful in the reserve list based on merit. The cut-off marks for the General category have also been published. Candidates who appeared for the examination can check the official notice for their roll number and merit status.",
+    "intro_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी) ने आयुर्वेद विभाग के अंतर्गत व्याख्याता (संहिता मौलिक सिद्धांत) प्रतियोगी परीक्षा 2025 के लिए आरक्षित सूची और कट-ऑफ अंक जारी कर दिए हैं। दस्तावेज़ सत्यापन के बाद, मेरिट के आधार पर आरक्षित सूची में एक उम्मीदवार को अनंतिम रूप से सफल घोषित किया गया है। सामान्य श्रेणी के लिए कट-ऑफ अंक भी प्रकाशित किए गए हैं। परीक्षा में शामिल होने वाले उम्मीदवार अपना रोल नंबर और मेरिट स्थिति आधिकारिक सूचना में देख सकते हैं।",
     "last_date": null,
+    "mistakes_en": [],
+    "mistakes_hi": [],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": "2026-10-26",
     "official_site": "https://rpsc.rajasthan.gov.in/",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Post name",
-        "label_hi": "पद का नाम",
-        "value_en": "Lecturer (Samhita Maulik Siddhant)",
-        "value_hi": "व्याख्याता (संहिता मौलिक सिद्धांत)"
+        "label_en": "Exam Name",
+        "label_hi": "परीक्षा का नाम",
+        "value_en": "Lecturer (Samhita Maulik Siddhant) Exam 2025",
+        "value_hi": "व्याख्याता (संहिता मौलिक सिद्धांत) परीक्षा 2025"
       },
       {
         "label_en": "Department",
         "label_hi": "विभाग",
-        "value_en": "Ayurved Department",
-        "value_hi": "आयुर्वेद विभाग"
+        "value_en": "Ayurved, Yoga and Naturopathy, Unani, Siddha and Homoeopathy (AYUSH) Department",
+        "value_hi": "आयुर्वेद, योग और प्राकृतिक चिकित्सा, यूनानी, सिद्ध एवं होम्योपैथी (आयुष) विभाग"
       },
       {
-        "label_en": "Exam year",
-        "label_hi": "परीक्षा वर्ष",
-        "value_en": "2025",
-        "value_hi": "2025"
-      },
-      {
-        "label_en": "Result type",
-        "label_hi": "परिणाम प्रकार",
-        "value_en": "Reserve List & Cutoff Marks",
-        "value_hi": "आरक्षित सूची और कट-ऑफ अंक"
+        "label_en": "Total Selected Candidates",
+        "label_hi": "कुल चयनित उम्मीदवार",
+        "value_en": "1",
+        "value_hi": "1"
       }
     ],
+    "salary": [],
     "selection_en": [
       "Written Examination",
-      "Document Verification",
-      "Reserve List / Recommendation"
+      "Document Verification and Eligibility Checking",
+      "Reserve List / Recommendation for Appointment"
     ],
     "selection_hi": [
       "लिखित परीक्षा",
-      "दस्तावेज सत्यापन",
-      "आरक्षित सूची / अभिशंसा"
+      "दस्तावेज़ सत्यापन और पात्रता जांच",
+      "आरक्षित सूची / नियुक्ति के लिए सिफारिश"
     ],
+    "share_card": {
+      "headline_en": "Reserve List & Cutoff",
+      "headline_hi": "आरक्षित सूची और कटऑफ",
+      "kind": "result",
+      "line_en": "Lecturer Ayurved Exam 2025",
+      "line_hi": "व्याख्याता आयुर्वेद परीक्षा 2025",
+      "posts": 1
+    },
     "status_en": "Reserve list and cut-off marks declared",
     "status_hi": "आरक्षित सूची और कट-ऑफ अंक घोषित",
-    "summary_en": "Rajasthan Public Service Commission (RPSC) has released the reserve list and cut-off marks for the Lecturer (Samhita Maulik Siddhant) exam 2025 in the Ayurved Department. Candidates who appeared can check their roll number and cut-off marks.",
-    "summary_hi": "राजस्थान लोक सेवा आयोग ने आयुर्वेद विभाग के अंतर्गत व्याख्याता संहिता मौलिक सिद्धांत परीक्षा 2025 के लिए आरक्षित सूची और कट-ऑफ अंक जारी कर दिए हैं।",
+    "summary_en": "Rajasthan Public Service Commission has released the reserve list and cut-off marks for the Lecturer (Samhita Maulik Siddhant) exam 2025 in the Ayurved Department. Candidates can check their roll number and merit rank in the published list. Successful candidates may be recommended for appointment upon receiving a requisition from the department.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने आयुर्वेद विभाग के अंतर्गत व्याख्याता संहिता मौलिक सिद्धांत परीक्षा 2025 के लिए आरक्षित सूची और कट-ऑफ अंक जारी कर दिए हैं। उम्मीदवार प्रकाशित सूची में अपना रोल नंबर और मेरिट रैंक देख सकते हैं।",
     "vacancies": [
       {
-        "detail_en": "Reserve List Candidate: 01",
-        "detail_hi": "आरक्षित सूची उम्मीदवार: 01",
+        "detail_en": "Gen. (UR) - 1 (Cut off: 92.33)",
+        "detail_hi": "सामान्य - 1 (कट ऑफ: 92.33)",
         "post_en": "Lecturer (Samhita Maulik Siddhant)",
         "post_hi": "व्याख्याता (संहिता मौलिक सिद्धांत)",
         "total": "1"
       }
+    ],
+    "who_en": [
+      "Candidates who appeared for the RPSC Lecturer Ayurved Exam 2025 and were included in the consideration list."
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जो आरपीएससी व्याख्याता आयुर्वेद परीक्षा 2025 में उपस्थित हुए थे और विचारित सूची में शामिल थे।"
     ]
   },
   "pdf": {
