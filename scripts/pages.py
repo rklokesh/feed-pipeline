@@ -254,8 +254,11 @@ def render(n: dict, slug: str, related: list | None = None) -> str:
         main.append('    <section class="kv" data-t-aria="fee">\n      <div class="h" data-t="fee">Application fee</div>\n' +
                     "".join(f'      <div class="r"><span data-t="{k}">{esc(en[k])}</span><span class="v num">{amt}</span></div>\n' for k, amt in fees) +
                     "    </section>")
+    S = lambda v: "" if v is None else (", ".join(S(x) for x in v) if isinstance(v, list) else str(v)).strip()
+
     def sec_kv(key, label_en, label_hi, items):
         """items: (label_en, label_hi, value_en, value_hi); returns a table-like section"""
+        items = [tuple(S(y) for y in x) for x in items]
         items = [x for x in items if x[0] and x[2]]
         if not items:
             return
@@ -268,7 +271,9 @@ def render(n: dict, slug: str, related: list | None = None) -> str:
         main.append(f'    <section class="kv" data-t-aria="{key}">\n      <div class="h" data-t="{key}">{esc(label_en)}</div>\n{body}    </section>')
 
     def sec_list(key, label_en, label_hi, items_en, items_hi):
-        items = [(e, (items_hi[k] if k < len(items_hi or []) and items_hi[k] else e)) for k, e in enumerate(items_en or []) if e]
+        items_en = [S(x) for x in (items_en if isinstance(items_en, list) else [items_en] if items_en else [])]
+        items_hi = [S(x) for x in (items_hi if isinstance(items_hi, list) else [])]
+        items = [(e, (items_hi[k] if k < len(items_hi) and items_hi[k] else e)) for k, e in enumerate(items_en) if e]
         if not items:
             return
         en[key], hi[key] = label_en, label_hi
@@ -278,8 +283,9 @@ def render(n: dict, slug: str, related: list | None = None) -> str:
             lis += f'<li data-t="{key}{k}">{esc(e)}</li>'
         main.append(f'    <section class="kv" data-t-aria="{key}">\n      <div class="h" data-t="{key}">{esc(label_en)}</div>\n      <ol class="steps">{lis}</ol>\n    </section>')
 
-    g = lambda k: pg.get(k) or []
-    if pg.get("intro_en"):
+    g = lambda k: [x for x in (pg.get(k) or []) if isinstance(x, dict)] if isinstance(pg.get(k), list) else []
+    if S(pg.get("intro_en")):
+        pg["intro_en"], pg["intro_hi"] = S(pg.get("intro_en")), S(pg.get("intro_hi"))
         en["aboutH"], hi["aboutH"] = "About this notice", "इस सूचना के बारे में"
         en["intro"], hi["intro"] = pg["intro_en"], pg.get("intro_hi") or pg["intro_en"]
         main.insert(1, '    <section class="kv" data-t-aria="aboutH">\n      <div class="h" data-t="aboutH">About this notice</div>\n'
@@ -296,7 +302,8 @@ def render(n: dict, slug: str, related: list | None = None) -> str:
     main.append('    <section class="kv" data-t-aria="links">\n      <div class="h" data-t="links">Official links</div>\n' +
                 "".join(f'      <a class="r" href="{esc(u)}" target="_blank" rel="noopener"><span data-t="{k}">{esc(en[k])}</span><span class="v">{esc(host(u))}</span></a>\n'
                         for k, u in links if u) + "    </section>")
-    faq = [q for q in g("faq") if q.get("q_en") and q.get("a_en")][:6]
+    faq = [{k: S(v) for k, v in q.items()} for q in g("faq")]
+    faq = [q for q in faq if q.get("q_en") and q.get("a_en")][:6]
     if faq:
         en["faqH"], hi["faqH"] = "Frequently asked questions", "अक्सर पूछे जाने वाले सवाल"
         body = ""
@@ -371,13 +378,19 @@ def related_for(n: dict, notices: list) -> list:
 
 def main():
     rebuild_all = "--all" in sys.argv
+    backfill = [int(os.environ.get("PAGE_BACKFILL", "6"))]
     files = sorted(NOTICES.glob("*.json"))
     notices = [(f, json.loads(f.read_text())) for f in files]
     taken = {n["slug"]: n["id"] for _, n in notices if n.get("slug")}
     for f, n in notices:
         if n.get("status") != "approved":
             continue
-        need_ai = rebuild_all or not n.get("page")
+        # pages written before the full layout (no FAQ/intro) are upgraded a few per run, so the free AI quota
+        # is never exhausted in one go; every 30-minute check upgrades the next few until all are done
+        old_layout = n.get("page") and not ({"faq", "intro_en"} & set(n["page"]))
+        need_ai = rebuild_all or not n.get("page") or (old_layout and backfill[0] > 0)
+        if old_layout and not rebuild_all and need_ai:
+            backfill[0] -= 1
         if need_ai:
             notes = gh_comments(n.get("issue"))
             page = ai_page(n, notes)
@@ -396,7 +409,11 @@ def main():
         n["slug"] = slug
         out = SITE / "notice" / slug / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(render(n, slug, related_for(n, notices)), encoding="utf-8")
+        try:
+            out.write_text(render(n, slug, related_for(n, notices)), encoding="utf-8")
+        except Exception as e:  # noqa: BLE001 — keep going; this page keeps its previous version
+            print(f"  {n['id']}: render failed ({type(e).__name__}: {e})"[:300])
+            continue
         # data for the share image (site/notice/<slug>/og.png, drawn by scripts/make_pdfs.mjs at deploy)
         c, pg = n.get("card") or {}, n.get("page") or {}
         typ = c.get("type", "Job")
