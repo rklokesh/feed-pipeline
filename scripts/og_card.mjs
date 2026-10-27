@@ -7,7 +7,7 @@ import { join } from "node:path";
 
 const SITE = process.argv[2] || "site";
 const home = readFileSync(join(SITE, "index.html"), "utf8");
-// the brand badge (site/logo-red-552.webp) as an inline image
+// the brand logo, exactly as provided (site/sarkarichart-logo.png), as an inline image
 const logo = `<img src="data:image/png;base64,${readFileSync(join(SITE, "sarkarichart-logo.png")).toString("base64")}" width="236" height="236" alt="">`;
 const esc = s => String(s || "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
