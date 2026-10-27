@@ -72,76 +72,138 @@
   "notice_date": "2026-10-09",
   "org": "NTA",
   "page": {
+    "after_en": [
+      "Announcement of examination city",
+      "Release of admit cards",
+      "Conduct of Computer Based Test",
+      "Declaration of results"
+    ],
+    "after_hi": [
+      "परीक्षा शहर की घोषणा",
+      "प्रवेश पत्र जारी करना",
+      "कंप्यूटर आधारित परीक्षा का संचालन",
+      "परिणामों की घोषणा"
+    ],
     "age": [],
     "apply_start": "2026-10-09",
     "apply_url": "https://exams.nta.nic.in/swayam/",
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Verify all details entered in the application form",
+      "Ensure fee payment status is successful",
+      "Note down application number and password securely"
+    ],
+    "checklist_hi": [
+      "आवेदन पत्र में दर्ज सभी विवरणों को सत्यापित करें",
+      "सुनिश्चित करें कि शुल्क भुगतान की स्थिति सफल है",
+      "आवेदन संख्या और पासवर्ड को सुरक्षित रूप से नोट करें"
+    ],
     "conducted_by_en": "National Testing Agency (NTA)",
     "conducted_by_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए)",
     "dates": [
       {
         "label_en": "Online application starts",
         "label_hi": "ऑनलाइन आवेदन शुरू",
-        "value_en": "09 October 2026",
-        "value_hi": "09 अक्टूबर 2026"
+        "value_en": "09 Oct 2026",
+        "value_hi": "09 अक्तूबर 2026"
       },
       {
-        "label_en": "Online application last date",
-        "label_hi": "ऑनलाइन आवेदन की अंतिम तिथि",
-        "value_en": "31 October 2026",
-        "value_hi": "31 अक्टूबर 2026"
+        "label_en": "Online application ends",
+        "label_hi": "ऑनलाइन आवेदन समाप्त",
+        "value_en": "31 Oct 2026",
+        "value_hi": "31 अक्तूबर 2026"
       },
       {
         "label_en": "Last date for fee transaction",
         "label_hi": "शुल्क लेनदेन की अंतिम तिथि",
-        "value_en": "01 November 2026",
+        "value_en": "01 Nov 2026",
         "value_hi": "01 नवंबर 2026"
       },
       {
         "label_en": "Correction window",
         "label_hi": "सुधार विंडो",
-        "value_en": "02 November 2026 to 03 November 2026",
+        "value_en": "02 Nov 2026 to 03 Nov 2026",
         "value_hi": "02 नवंबर 2026 से 03 नवंबर 2026"
       },
       {
         "label_en": "Exam date",
         "label_hi": "परीक्षा की तिथि",
-        "value_en": "08, 09, 10, 11 and 12 December 2026",
+        "value_en": "08, 09, 10, 11 and 12 Dec 2026",
         "value_hi": "08, 09, 10, 11 और 12 दिसंबर 2026"
       }
     ],
+    "documents_en": [
+      "Valid Email ID and Mobile Number",
+      "Scanned photograph and signature",
+      "Academic details",
+      "Payment instruments (Credit/Debit Card, Net Banking, UPI)"
+    ],
+    "documents_hi": [
+      "मान्य ईमेल आईडी और मोबाइल नंबर",
+      "स्कैन की गई तस्वीर और हस्ताक्षर",
+      "शैक्षणिक विवरण",
+      "भुगतान उपकरण (क्रेडिट/डेबिट कार्ड, नेट बैंकिंग, यूपीआई)"
+    ],
     "eligibility": [],
     "exam_date": "2026-12-08",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "SWAYAM is an indigenous platform of the Ministry of Education, Government of India, providing educational courses. NTA conducts the semester exams for these courses.",
+        "a_hi": "स्वयं भारत सरकार के शिक्षा मंत्रालय का एक स्वदेशी मंच है जो शैक्षिक पाठ्यक्रम प्रदान करता है। एनटीए इन पाठ्यक्रमों के लिए सेमेस्टर परीक्षाओं का संचालन करता है।",
+        "q_en": "What is SWAYAM-2026?",
+        "q_hi": "स्वयं-2026 क्या है?"
+      }
+    ],
     "extra": [
       {
         "label_en": "Exam Mode",
         "label_hi": "परीक्षा मोड",
-        "value_en": "Computer-Based Test (CBT) Mode",
-        "value_hi": "कंप्यूटर आधारित परीक्षा मोड"
+        "value_en": "Computer-Based Test (CBT)",
+        "value_hi": "कंप्यूटर आधारित परीक्षण (सीबीटी)"
       },
       {
         "label_en": "Exam Duration",
         "label_hi": "परीक्षा की अवधि",
         "value_en": "180 Minutes (03:00 Hours)",
         "value_hi": "180 मिनट (03:00 घंटे)"
+      },
+      {
+        "label_en": "Helpdesk Numbers",
+        "label_hi": "हेल्पलाइन नंबर",
+        "value_en": "011-40759000, 011-69227700",
+        "value_hi": "011-40759000, 011-69227700"
       }
     ],
     "faq": [
       {
         "a_en": "The last date to submit the online application form is 31 October 2026 up to 11:50 PM.",
-        "a_hi": "ऑनलाइन आवेदन पत्र जमा करने की अंतिम तिथि 31 अक्टूबर 2026 रात 11:50 बजे तक है।",
+        "a_hi": "ऑनलाइन आवेदन पत्र जमा करने की अंतिम तिथि 31 अक्तूबर 2026 रात 11:50 बजे तक है।",
         "q_en": "What is the last date to apply for SWAYAM July Semester Exam 2026?",
         "q_hi": "स्वयं जुलाई सत्र परीक्षा 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "The exam will be conducted on 08, 09, 10, 11, and 12 December 2026.",
-        "a_hi": "परीक्षा 08, 09, 10, 11 और 12 दिसंबर 2026 को आयोजित की जाएगी।",
-        "q_en": "When will the SWAYAM 2026 July Semester exam be conducted?",
-        "q_hi": "स्वयं 2026 जुलाई सत्र की परीक्षा कब आयोजित की जाएगी?"
+        "a_en": "The examination is conducted by the National Testing Agency (NTA).",
+        "a_hi": "परीक्षा राष्ट्रीय परीक्षण एजेंसी (एनटीए) द्वारा आयोजित की जाती है।",
+        "q_en": "Who conducts the SWAYAM 2026 examination?",
+        "q_hi": "स्वयं 2026 परीक्षा कौन आयोजित करता है?"
       },
       {
-        "a_en": "Candidates can apply online through the official website at https://exams.nta.nic.in/swayam/.",
-        "a_hi": "उम्मीदवार आधिकारिक वेबसाइट https://exams.nta.nic.in/swayam/ के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+        "a_en": "The exam is scheduled to be held on 08, 09, 10, 11, and 12 December 2026.",
+        "a_hi": "परीक्षा 08, 09, 10, 11 और 12 दिसंबर 2026 को आयोजित होने निर्धारित है।",
+        "q_en": "When will the SWAYAM July Semester Exam 2026 be held?",
+        "q_hi": "स्वयं जुलाई सत्र परीक्षा 2026 कब आयोजित की जाएगी?"
+      },
+      {
+        "a_en": "Yes, the correction window will be open from 02 November to 03 November 2026.",
+        "a_hi": "हाँ, सुधार विंडो 02 नवंबर से 03 नवंबर 2026 तक खुली रहेगी।",
+        "q_en": "Is there a correction window for the application form?",
+        "q_hi": "क्या आवेदन पत्र के लिए कोई सुधार विंडो है?"
+      },
+      {
+        "a_en": "Candidates can apply through https://exams.nta.nic.in/swayam/.",
+        "a_hi": "उम्मीदवार https://exams.nta.nic.in/swayam/ के माध्यम से आवेदन कर सकते हैं।",
         "q_en": "What is the official website to apply for SWAYAM 2026?",
         "q_hi": "स्वयं 2026 के लिए आवेदन करने की आधिकारिक वेबसाइट क्या है?"
       }
@@ -150,52 +212,69 @@
     "h1_en": "NTA SWAYAM July Semester Exam 2026 Online Form",
     "h1_hi": "राष्ट्रीय परीक्षण एजेंसी स्वयं जुलाई सत्र परीक्षा 2026 ऑनलाइन फॉर्म",
     "how_en": [
-      "Visit the official website at https://exams.nta.nic.in/swayam/.",
-      "Register and fill out the online application form with required details.",
-      "Upload necessary documents and pay the examination fee online.",
-      "Submit the form and take a printout for future reference."
+      "Go to the official website at https://exams.nta.nic.in/swayam/.",
+      "Read the Information Bulletin carefully.",
+      "Register and fill out the online application form.",
+      "Upload necessary documents if required.",
+      "Pay the examination fee online through Credit/Debit Card, Net Banking, or UPI.",
+      "Download and print the confirmation page for future reference."
     ],
     "how_hi": [
       "आधिकारिक वेबसाइट https://exams.nta.nic.in/swayam/ पर जाएं।",
-      "पंजीकरण करें और आवश्यक विवरण के साथ ऑनलाइन आवेदन पत्र भरें।",
-      "आवश्यक दस्तावेज अपलोड करें और परीक्षा शुल्क का ऑनलाइन भुगतान करें।",
-      "फॉर्म जमा करें और भविष्य के संदर्भ के लिए प्रिंटआउट लें।"
+      "सूचना बुलेटिन को ध्यान से पढ़ें।",
+      "पंजीकरण करें और ऑनलाइन आवेदन पत्र भरें।",
+      "आवश्यक होने पर आवश्यक दस्तावेज अपलोड करें।",
+      "क्रेडिट/डेबिट कार्ड, नेट बैंकिंग या यूपीआई के माध्यम से ऑनलाइन परीक्षा शुल्क का भुगतान करें।",
+      "भविष्य के संदर्भ के लिए पुष्टिकरण पृष्ठ को डाउनलोड और प्रिंट करें।"
     ],
-    "intro_en": "National Testing Agency (NTA) has released the notification for the Study Webs of Active Learning for Young Aspiring Minds [SWAYAM-2026 (July Semester)] Examination. A total of 662 courses are included in this session. Candidates who wish to apply can submit their online applications from 09 October 2026 to 31 October 2026. Read the notice for complete schedule, exam mode, and other details.",
-    "intro_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने स्टडी वेब्स ऑफ एक्टिव लर्निंग फॉर यंग आस्पiring माइंड्स [स्वयं-2026 (जुलाई सत्र)] परीक्षा के लिए अधिसूचना जारी कर दी है। इस सत्र में कुल 662 पाठ्यक्रम शामिल हैं। जो उम्मीदवार आवेदन करना चाहते हैं, वे 09 अक्टूबर 2026 से 31 अक्टूबर 2026 तक अपने ऑनलाइन आवेदन जमा कर सकते हैं।",
+    "intro_en": "National Testing Agency (NTA) has issued a public notice inviting online applications for the Study Webs of Active Learning for Young Aspiring Minds (SWAYAM-2026) July Semester Examination. The examination will cover 662 courses and will be conducted in Computer-Based Test (CBT) mode. Candidates can submit their online applications from 09 October 2026 to 31 October 2026. The exam is scheduled to be held on 08, 09, 10, 11, and 12 December 2026. Applicants should carefully review the information bulletin and guidelines available on the official website before applying.",
+    "intro_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने स्वयं-2026 जुलाई सत्र परीक्षा के लिए ऑनलाइन आवेदन आमंत्रित करते हुए एक सार्वजनिक सूचना जारी की है। यह परीक्षा 662 पाठ्यक्रमों के लिए कंप्यूटर आधारित परीक्षण (सीबीटी) मोड में आयोजित की जाएगी। उम्मीदवार 09 अक्तूबर 2026 से 31 अक्तूबर 2026 तक अपने ऑनलाइन आवेदन जमा कर सकते हैं। परीक्षा 08, 09, 10, 11 और 12 दिसंबर 2026 को आयोजित होने निर्धारित है। आवेदकों को आवेदन करने से पहले आधिकारिक वेबसाइट पर उपलब्ध सूचना बुलेटिन और दिशानिर्देशों की सावधानीपूर्वक समीक्षा करनी चाहिए।",
     "last_date": "2026-10-31",
+    "mistakes_en": [
+      "Submitting applications after the last date",
+      "Providing incorrect particulars during registration",
+      "Failing to complete the fee transaction successfully before the deadline"
+    ],
+    "mistakes_hi": [
+      "अंतिम तिथि के बाद आवेदन जमा करना",
+      "पंजीकरण के दौरान गलत विवरण प्रदान करना",
+      "समय सीमा से पहले शुल्क लेनदेन को सफलतापूर्वक पूरा करने में विफल रहना"
+    ],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": "2026-10-09",
     "official_site": "https://exams.nta.nic.in/",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
         "label_en": "Posts",
-        "label_hi": "पद",
+        "label_hi": "पदों",
         "value_en": "SWAYAM Courses",
         "value_hi": "स्वयं पाठ्यक्रम"
       },
       {
-        "label_en": "Total vacancies",
-        "label_hi": "कुल रिक्तियां",
-        "value_en": "662 Courses",
-        "value_hi": "662 पाठ्यक्रम"
+        "label_en": "Total courses",
+        "label_hi": "कुल पाठ्यक्रम",
+        "value_en": "662",
+        "value_hi": "662"
       },
       {
         "label_en": "Apply online",
         "label_hi": "ऑनलाइन आवेदन",
         "value_en": "09 Oct 2026 to 31 Oct 2026",
-        "value_hi": "09 अक्टूबर 2026 से 31 अक्टूबर 2026"
+        "value_hi": "09 अक्तूबर 2026 से 31 अक्तूबर 2026"
       },
       {
         "label_en": "Last date for fee",
-        "label_hi": "शुल्क की अंतिम तिथि",
+        "label_hi": "शुल्क के लिए अंतिम तिथि",
         "value_en": "01 Nov 2026",
         "value_hi": "01 नवंबर 2026"
       },
       {
         "label_en": "Exam date",
         "label_hi": "परीक्षा की तिथि",
-        "value_en": "08, 09, 10, 11 and 12 December 2026",
+        "value_en": "08, 09, 10, 11 and 12 Dec 2026",
         "value_hi": "08, 09, 10, 11 और 12 दिसंबर 2026"
       },
       {
@@ -205,26 +284,41 @@
         "value_hi": "स्वयं-2026 (जुलाई सत्र)"
       }
     ],
+    "salary": [],
     "selection_en": [
-      "Computer-Based Test (CBT)",
-      "Course-wise examination as per schedule"
+      "Computer Based Test (CBT)",
+      "Course completion as per SWAYAM guidelines"
     ],
     "selection_hi": [
-      "कंप्यूटर आधारित परीक्षा",
-      "अनुसूची के अनुसार पाठ्यक्रम-वार परीक्षा"
+      "कंप्यूटर आधारित परीक्षा (सीबीटी)",
+      "स्वयं दिशा-निर्देशों के अनुसार पाठ्यक्रम पूरा करना"
     ],
-    "status_en": "Answer key released, objections open till 30 Oct 2026",
-    "status_hi": "उत्तर कुंजी जारी, 30 अक्टूबर 2026 तक आपत्तियां खुली हैं",
-    "summary_en": "National Testing Agency has invited online applications for the SWAYAM July Semester Examination 2026. Eligible candidates can apply online through the official website before 31 October 2026.",
-    "summary_hi": "राष्ट्रीय परीक्षण एजेंसी ने स्वयं जुलाई सत्र परीक्षा 2026 के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 31 अक्टूबर 2026 से पहले आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "SWAYAM Courses",
+      "line_hi": "स्वयं पाठ्यक्रम",
+      "posts": 662
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "National Testing Agency has invited online applications for the SWAYAM July Semester Examination 2026. Eligible candidates can apply online through the official website.",
+    "summary_hi": "राष्ट्रीय परीक्षण एजेंसी ने स्वयं जुलाई सत्र परीक्षा 2026 के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
     "vacancies": [
       {
-        "detail_en": "662 Courses for July Semester 2026",
-        "detail_hi": "जुलाई सत्र 2026 के लिए 662 पाठ्यक्रम",
-        "post_en": "SWAYAM Courses",
-        "post_hi": "स्वयं पाठ्यक्रम",
+        "detail_en": "Various courses coordinated through SWAYAM",
+        "detail_hi": "स्वयं के माध्यम से समन्वित विभिन्न पाठ्यक्रम",
+        "post_en": "SWAYAM Courses (July Semester 2026)",
+        "post_hi": "स्वयं पाठ्यक्रम (जुलाई सत्र 2026)",
         "total": "662"
       }
+    ],
+    "who_en": [
+      "Students and learners enrolled in or wishing to take SWAYAM courses for the July 2026 semester."
+    ],
+    "who_hi": [
+      "जुलाई 2026 सत्र के लिए स्वयं पाठ्यक्रमों में नामांकित या लेने के इच्छुक छात्र और शिक्षार्थी।"
     ]
   },
   "pdf": {
