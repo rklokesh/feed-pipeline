@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Station Master",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "RRB has issued a corrigendum updating the total vacancies to 1265 for the Station Master recruitment under CEN 08/2026. Candidates should check the updated vacancy details.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने केंद्रीय रोजगार सूचना संख्या 08/2026 के अंतर्गत स्टेशन मास्टर भर्ती के लिए कुल रिक्तियों को संशोधित कर 1265 कर दिया है। उम्मीदवार अद्यतन रिक्ति विवरण की जाँच करें।",
+    "title_en": "RRB Station Master CEN 08/2026 Corrigendum 1",
+    "title_hi": "रेलवे भर्ती बोर्ड स्टेशन मास्टर केंद्रीय रोजगार सूचना 08/2026 शुद्धिपत्र 1",
+    "type": "Job",
+    "vacancies": 1265
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
@@ -15,16 +32,66 @@
   },
   "first_seen": "2026-10-27T04:58:41+00:00",
   "id": "b1e59bc60517",
+  "issue": 107,
+  "issue_tidy": true,
   "kind": "update",
+  "notice_date": "2026-10-27",
   "org": "RRB",
+  "page": {
+    "apply_start": null,
+    "apply_url": null,
+    "changes_from_notes": "",
+    "conducted_by_en": "Railway Recruitment Boards (RRB)",
+    "conducted_by_hi": "रेलवे भर्ती बोर्ड (आरआरबी)",
+    "exam_date": null,
+    "fees": [],
+    "h1_en": "RRB Station Master CEN 08/2026 Corrigendum 1",
+    "h1_hi": "रेलवे भर्ती बोर्ड स्टेशन मास्टर केंद्रीय रोजगार सूचना 08/2026 शुद्धिपत्र 1",
+    "last_date": null,
+    "notice_date": "2026-10-27",
+    "official_site": "https://rrb.indianrailways.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Station Master",
+        "value_hi": "स्टेशन मास्टर"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "1265",
+        "value_hi": "1265"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "20–33 Years (as on 01.01.2027)",
+        "value_hi": "20–33 वर्ष (01.01.2027 के अनुसार)"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "CEN No. 08/2026",
+        "value_hi": "केंद्रीय रोजगार सूचना संख्या 08/2026"
+      }
+    ],
+    "status_en": "Corrigendum released, total vacancies updated to 1265",
+    "status_hi": "शुद्धिपत्र जारी, कुल रिक्तियां संशोधित होकर 1265 हुईं",
+    "summary_en": "Railway Recruitment Boards have issued Corrigendum No. 1 for CEN 08/2026, updating the total vacancies for the Station Master post to 1265. Candidates should note the revised vacancy details.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने केंद्रीय रोजगार सूचना संख्या 08/2026 के लिए शुद्धिपत्र संख्या 1 जारी किया है, जिसके तहत स्टेशन मास्टर पद के लिए कुल रिक्तियों को संशोधित कर 1265 कर दिया गया है। उम्मीदवार संशोधित रिक्ति विवरण देख लें।"
+  },
   "pdf": {
     "bytes": 149177,
     "pages": 1,
     "sha256": "b78a54a7373fad0e8e46d95646921578129f851291989d21ac683339f2131b30",
     "text_kind": "text"
   },
+  "published_at": "2026-10-27T05:07:13Z",
+  "slug": "rrb-station-master-cen-08-2026-corrigendum-1",
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RRB CEN 08/2026: Corrigendum No 1 CEN 08 2026",
   "url": "https://rrb.indianrailways.gov.in/-/image/1793076767666Corrigendum_No_1_CEN_08_2026.pdf/examsDocuments"
 }
