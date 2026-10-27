@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,17 +258,15 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/rpsc.webp" width="76" height="76" alt="Rajasthan Public Service Commission (RPSC) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=results" data-t="crumbType">Results</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">RPSC</span></nav>
       <h1 data-t="h1">RPSC Lecturer Prasooti Tantra Stree Roga 2025 Reserve List</h1>
+      <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: rpsc.rajasthan.gov.in</p>
       <p class="status"><span id="state">Reserve list and cut-off marks declared</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Rajasthan Public Service Commission has released the reserve list and cut-off marks for the Lecturer Prasooti Tantra and Stree Roga examination 2025 under the Ayush Department. Candidates can check their roll number and cut-off details.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">The Rajasthan Public Service Commission (RPSC) has published the reserve list and cut-off marks for the Lecturer (Prasooti Tantra &amp; Stree Roga) Examination 2025 under the AYUSH Department. Following document verification and eligibility checks, one candidate has been provisionally selected in the reserve list. Qualified candidates can verify their roll number and merit rank from the official notice.</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Rajasthan Public Service Commission (RPSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">23 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Post Name</span><span class="v" data-t="r0v">Lecturer (Prasooti Tantra &amp; Stree Roga)</span></div>
@@ -250,37 +274,46 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="r2l">Advertisement Number</span><span class="v" data-t="r2v">Lecturer (Ayurved Dept.) - 2025</span></div>
       <div class="r"><span data-t="r3l">Total Selected Candidates</span><span class="v" data-t="r3v">01</span></div>
     </section>
-    <section class="kv" data-t-aria="datesH">
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">The Rajasthan Public Service Commission (RPSC) has published the reserve list and cut-off marks for the Lecturer (Prasooti Tantra &amp; Stree Roga) Examination 2025 under the AYUSH Department. Following document verification and eligibility checks, one candidate has been provisionally selected in the reserve list. Qualified candidates can verify their roll number and merit rank from the official notice.</p>
+    </section>
+    <section class="kv" id="datesH" data-t-aria="datesH">
       <div class="h" data-t="datesH">Important dates</div>
       <div class="r"><span data-t="datesH0l">Reserve List Notice Date</span><span class="v" data-t="datesH0v">23 Oct 2026</span></div>
       <div class="r"><span data-t="datesH1l">Considered List Date</span><span class="v" data-t="datesH1v">03 Jul 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="vacH">
+    <section class="kv" id="vacH" data-t-aria="vacH">
       <div class="h" data-t="vacH">Vacancy details</div>
       <div class="r"><span data-t="vacH0l">Lecturer (Prasooti Tantra &amp; Stree Roga)</span><span class="v" data-t="vacH0v">1 · Gen. (UR): 1</span></div>
     </section>
-    <section class="kv" data-t-aria="selH">
+    <section class="kv" id="selH" data-t-aria="selH">
       <div class="h" data-t="selH">Selection process</div>
       <ol class="steps"><li data-t="selH0">Written Examination</li><li data-t="selH1">Eligibility Checking and Document Verification</li><li data-t="selH2">Reserve List / Final Recommendation</li></ol>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to download</div>
       <ol class="steps"><li data-t="howH0">Visit the official RPSC website.</li><li data-t="howH1">Go to the News and Events or Result section.</li><li data-t="howH2">Click on the link for &#x27;Result Preamble and Cutoff Marks (Reserve List) for Lecturer (Ayurved Dept.) - 2025 (Prasooti Tantra And Stree Roga)&#x27;.</li><li data-t="howH3">Check your roll number and merit rank in the PDF.</li></ol>
     </section>
-    <section class="kv" data-t-aria="extraH">
+    <section class="kv" id="extraH" data-t-aria="extraH">
       <div class="h" data-t="extraH">Other details</div>
       <div class="r"><span data-t="extraH0l">Cut Off Marks (Gen. UR)</span><span class="v" data-t="extraH0v">108.67 (DOB: 25-01-1993)</span></div>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://rpsc.rajasthan.gov.in/Static/Result/0D2997246E944AA4BC69CFB977A18932.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rpsc.rajasthan.gov.in</span></a>
       <a class="r" href="https://rpsc.rajasthan.gov.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rpsc.rajasthan.gov.in</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">When was the RPSC Lecturer Prasooti Tantra Stree Roga Reserve List 2025 released?</h3><p data-t="a0">The reserve list was released on 23 October 2026.</p></div>
       <div class="qa"><h3 data-t="q1">How many candidates are selected in the reserve list?</h3><p data-t="a1">Total 1 candidate is selected in the reserve list.</p></div>
       <div class="qa"><h3 data-t="q2">What is the cut-off marks for General category in the reserve list?</h3><p data-t="a2">The cut-off marks for Gen (UR) category is 108.67.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">राजस्थान लोक सेवा आयोग ने आयुष विभाग के अंतर्गत व्याख्याता प्रसूति तंत्र एवं स्त्री रोग परीक्षा 2025 के लिए आरक्षित सूची और कट-ऑफ अंक जारी कर दिए हैं। उम्मीदवार अपना रोल नंबर और कट-ऑफ विवरण देख सकते हैं। राजस्थान लोक सेवा आयोग (आरपीएससी) ने आयुष विभाग के अंतर्गत व्याख्याता (प्रसूति तंत्र एवं स्त्री रोग) प्रतियोगी परीक्षा-2025 के लिए आरक्षित सूची और कट-ऑफ अंक जारी कर दिए हैं। दस्तावेज सत्यापन और पात्रता जांच के बाद, आरक्षित सूची में एक उम्मीदवार को सफल घोषित किया गया है।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -322,7 +355,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "RPSC",
       summary: "Rajasthan Public Service Commission has released the reserve list and cut-off marks for the Lecturer Prasooti Tantra and Stree Roga examination 2025 under the Ayush Department. Candidates can check their roll number and cut-off details.",
       statusV: "Reserve list and cut-off marks declared",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -341,6 +374,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r2v: "Lecturer (Ayurved Dept.) - 2025",
       r3l: "Total Selected Candidates",
       r3v: "01",
+      metaV: "Updated 23 Oct 2026 · Source: rpsc.rajasthan.gov.in",
       aboutH: "About this notice",
       intro: "The Rajasthan Public Service Commission (RPSC) has published the reserve list and cut-off marks for the Lecturer (Prasooti Tantra & Stree Roga) Examination 2025 under the AYUSH Department. Following document verification and eligibility checks, one candidate has been provisionally selected in the reserve list. Qualified candidates can verify their roll number and merit rank from the official notice.",
       datesH: "Important dates",
@@ -370,6 +404,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "Total 1 candidate is selected in the reserve list.",
       q2: "What is the cut-off marks for General category in the reserve list?",
       a2: "The cut-off marks for Gen (UR) category is 108.67.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "RPSC Senior Teacher English Exam 2025 Disqualified Candidates List",
       rel1: "RPSC Senior Teacher English Result 2025",
@@ -392,7 +427,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "RPSC",
       summary: "राजस्थान लोक सेवा आयोग ने आयुष विभाग के अंतर्गत व्याख्याता प्रसूति तंत्र एवं स्त्री रोग परीक्षा 2025 के लिए आरक्षित सूची और कट-ऑफ अंक जारी कर दिए हैं। उम्मीदवार अपना रोल नंबर और कट-ऑफ विवरण देख सकते हैं।",
       statusV: "आरक्षित सूची और कट-ऑफ अंक घोषित",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -411,6 +446,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r2v: "व्याख्याता (आयुर्वेद विभाग) - 2025",
       r3l: "कुल चयनित उम्मीदवार",
       r3v: "01",
+      metaV: "अपडेट 23 अक्तूबर 2026 · स्रोत: rpsc.rajasthan.gov.in",
       aboutH: "इस सूचना के बारे में",
       intro: "राजस्थान लोक सेवा आयोग (आरपीएससी) ने आयुष विभाग के अंतर्गत व्याख्याता (प्रसूति तंत्र एवं स्त्री रोग) प्रतियोगी परीक्षा-2025 के लिए आरक्षित सूची और कट-ऑफ अंक जारी कर दिए हैं। दस्तावेज सत्यापन और पात्रता जांच के बाद, आरक्षित सूची में एक उम्मीदवार को सफल घोषित किया गया है।",
       datesH: "महत्वपूर्ण तिथियाँ",
@@ -440,6 +476,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "आरक्षित सूची में कुल 1 उम्मीदवार का चयन किया गया है।",
       q2: "आरक्षित सूची में सामान्य वर्ग के लिए कट-ऑफ अंक क्या है?",
       a2: "सामान्य (अनारक्षित) वर्ग के लिए कट-ऑफ अंक 108.67 है।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "आरपीएससी वरिष्ठ अध्यापक अंग्रेजी परीक्षा 2025 अयोग्य अभ्यर्थियों की सूची",
       rel1: "आरपीएससी वरिष्ठ अध्यापक अंग्रेजी परिणाम 2025",

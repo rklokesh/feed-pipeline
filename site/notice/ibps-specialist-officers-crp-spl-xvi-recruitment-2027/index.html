@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,17 +258,15 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/ibps.webp" width="76" height="76" alt="Institute of Banking Personnel Selection (IBPS) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">IBPS</span></nav>
       <h1 data-t="h1">IBPS CRP SPL XVI Recruitment 2027 for Specialist Officers</h1>
+      <p class="meta g" data-t="metaV">Updated 22 Oct 2026 · Source: ibps.in</p>
       <p class="status"><span id="state">Notice published</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Institute of Banking Personnel Selection (IBPS) has invited online applications for the Common Recruitment Process for Specialist Officers (CRP SPL-XVI) for vacancies of 2027-28. Eligible and interested candidates can apply online through the official website.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">Institute of Banking Personnel Selection (IBPS) has released the notification for the Common Recruitment Process for Specialist Officers (CRP SPL-XVI) for vacancies of 2027-28. Eligible candidates can register online from 01 July 2026 to 21 July 2026. The recruitment process involves Preliminary examination, Main examination, and Interview for various Scale I Specialist Officer posts in participating banks.</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Institute of Banking Personnel Selection (IBPS)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">30 Jun 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">IT Officer, Agricultural Field Officer, Rajbhasha Adhikari, Law Officer, HR/Personnel Officer, Marketing Officer (Scale I)</span></div>
@@ -251,7 +275,12 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="r3l">Age limit</span><span class="v" data-t="r3v">20 to 30 years as on 01.07.2026</span></div>
       <div class="r"><span data-t="r4l">Advertisement number</span><span class="v" data-t="r4v">CRP SPL-XVI</span></div>
     </section>
-    <section class="kv" data-t-aria="datesH">
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#ageH" data-t="ageH">Age limit</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">Institute of Banking Personnel Selection (IBPS) has released the notification for the Common Recruitment Process for Specialist Officers (CRP SPL-XVI) for vacancies of 2027-28. Eligible candidates can register online from 01 July 2026 to 21 July 2026. The recruitment process involves Preliminary examination, Main examination, and Interview for various Scale I Specialist Officer posts in participating banks.</p>
+    </section>
+    <section class="kv" id="datesH" data-t-aria="datesH">
       <div class="h" data-t="datesH">Important dates</div>
       <div class="r"><span data-t="datesH0l">Online registration including Edit/Modification</span><span class="v" data-t="datesH0v">01.07.2026 to 21.07.2026</span></div>
       <div class="r"><span data-t="datesH1l">Payment of Application Fees</span><span class="v" data-t="datesH1v">01.07.2026 to 21.07.2026</span></div>
@@ -264,7 +293,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="datesH8l">Conduct of Interview</span><span class="v" data-t="datesH8v">November/December, 2026</span></div>
       <div class="r"><span data-t="datesH9l">Provisional Allotment</span><span class="v" data-t="datesH9v">January, 2027</span></div>
     </section>
-    <section class="kv" data-t-aria="ageH">
+    <section class="kv" id="ageH" data-t-aria="ageH">
       <div class="h" data-t="ageH">Age limit</div>
       <div class="r"><span data-t="ageH0l">Minimum age</span><span class="v" data-t="ageH0v">20 years</span></div>
       <div class="r"><span data-t="ageH1l">Maximum age</span><span class="v" data-t="ageH1v">30 years</span></div>
@@ -273,7 +302,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="ageH4l">Other Backward Classes relaxation</span><span class="v" data-t="ageH4v">3 years</span></div>
       <div class="r"><span data-t="ageH5l">Persons With Benchmark Disability relaxation</span><span class="v" data-t="ageH5v">10 years</span></div>
     </section>
-    <section class="kv" data-t-aria="vacH">
+    <section class="kv" id="vacH" data-t-aria="vacH">
       <div class="h" data-t="vacH">Vacancy details</div>
       <div class="r"><span data-t="vacH0l">IT Officer (Scale I)</span><span class="v" data-t="vacH0v">Not specified · Refer to official notification annexure for bank-wise vacancies.</span></div>
       <div class="r"><span data-t="vacH1l">Agricultural Field Officer (Scale I)</span><span class="v" data-t="vacH1v">Not specified · Refer to official notification annexure for bank-wise vacancies.</span></div>
@@ -282,34 +311,38 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="vacH4l">HR/Personnel Officer (Scale I)</span><span class="v" data-t="vacH4v">Not specified · Refer to official notification annexure for bank-wise vacancies.</span></div>
       <div class="r"><span data-t="vacH5l">Marketing Officer (Scale I)</span><span class="v" data-t="vacH5v">Not specified · Refer to official notification annexure for bank-wise vacancies.</span></div>
     </section>
-    <section class="kv" data-t-aria="eligH">
+    <section class="kv" id="eligH" data-t-aria="eligH">
       <div class="h" data-t="eligH">Eligibility</div>
       <div class="r"><span data-t="eligH0l">Nationality</span><span class="v" data-t="eligH0v">Must be a citizen of India or a subject of Nepal/Bhutan, Tibetan refugee, or person of Indian origin migrated with intention of permanent settlement.</span></div>
     </section>
-    <section class="kv" data-t-aria="selH">
+    <section class="kv" id="selH" data-t-aria="selH">
       <div class="h" data-t="selH">Selection process</div>
       <ol class="steps"><li data-t="selH0">Online Examination – Preliminary</li><li data-t="selH1">Online Examination – Main</li><li data-t="selH2">Common Interview</li><li data-t="selH3">Provisional Allotment</li></ol>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to apply</div>
       <ol class="steps"><li data-t="howH0">Visit the official website of IBPS at www.ibps.in.</li><li data-t="howH1">Click on the Home Page to open the link &#x27;CRP Specialist Officers&#x27;.</li><li data-t="howH2">Click option &#x27;CLICK HERE TO APPLY ONLINE FOR CRP-Specialist Officers (CRP SPL-XVI)&#x27; to open the On-Line Application Form.</li><li data-t="howH3">Register by entering basic details and upload photograph, signature, left thumb impression, and handwritten declaration.</li><li data-t="howH4">Proceed to pay the application fee online and submit the application.</li></ol>
     </section>
-    <section class="kv" data-t-aria="extraH">
+    <section class="kv" id="extraH" data-t-aria="extraH">
       <div class="h" data-t="extraH">Other details</div>
       <div class="r"><span data-t="extraH0l">Salary Scale</span><span class="v" data-t="extraH0v">Basic: ₹ 48480-2000/7-62480-2340/2-67160-2680/7-85920 for Specialist Officers Scale I</span></div>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://www.ibps.in/wp-content/uploads/Detailed-Notification-CRP-SPL-XVI_Final_V1_30.06.2026.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">ibps.in</span></a>
       <a class="r" href="https://www.ibps.in/" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">ibps.in</span></a>
       <a class="r" href="https://www.ibps.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">ibps.in</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">What is the last date to apply for IBPS CRP SPL XVI?</h3><p data-t="a0">The last date to apply online is 21 July 2026.</p></div>
       <div class="qa"><h3 data-t="q1">What is the age limit for IBPS Specialist Officers Recruitment 2027?</h3><p data-t="a1">Candidates must be between 20 and 30 years of age as on 01.07.2026.</p></div>
       <div class="qa"><h3 data-t="q2">What are the posts available under IBPS CRP SPL-XVI?</h3><p data-t="a2">The posts include IT Officer, Agricultural Field Officer, Rajbhasha Adhikari, Law Officer, HR/Personnel Officer, and Marketing Officer (Scale I).</p></div>
       <div class="qa"><h3 data-t="q3">When will the Preliminary examination be conducted?</h3><p data-t="a3">The Online Preliminary Examination will be conducted in August 2026.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">इंस्टीट्यूट ऑफ बैंकिंग पर्सनल सेलेक्शन (आईबीपीएस) ने वर्ष 2027-28 की रिक्तियों के लिए स्पेशलिस्ट ऑफिसर (सीआरपी एसपीएल-16) हेतु ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य और इच्छुक उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं। इंस्टीट्यूट ऑफ बैंकिंग पर्सनल सेलेक्शन (आईबीपीएस) ने वर्ष 2027-28 की रिक्तियों के लिए स्पेशलिस्ट ऑफिसर (सीआरपी एसपीएल-16) के सामान्य भर्ती प्रक्रिया का नोटिफिकेशन जारी कर दिया है। योग्य उम्मीदवार 01 जुलाई 2026 से 21 जुलाई 2026 तक ऑनलाइन पंजीकरण कर सकते हैं। भर्ती प्रक्रिया में भाग लेने वाले बैंकों में विभिन्न स्केल I स्पेशलिस्ट ऑफिसर पदों के लिए प्रारंभिक परीक्षा, मुख्य परीक्षा और साक्षात्कार शामिल हैं।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -352,7 +385,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "Institute of Banking Personnel Selection (IBPS) has invited online applications for the Common Recruitment Process for Specialist Officers (CRP SPL-XVI) for vacancies of 2027-28. Eligible and interested candidates can apply online through the official website.",
       statusV: "Notice published",
       lastDate: "Last date 21 Jul 2026",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -373,6 +406,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r3v: "20 to 30 years as on 01.07.2026",
       r4l: "Advertisement number",
       r4v: "CRP SPL-XVI",
+      metaV: "Updated 22 Oct 2026 · Source: ibps.in",
       aboutH: "About this notice",
       intro: "Institute of Banking Personnel Selection (IBPS) has released the notification for the Common Recruitment Process for Specialist Officers (CRP SPL-XVI) for vacancies of 2027-28. Eligible candidates can register online from 01 July 2026 to 21 July 2026. The recruitment process involves Preliminary examination, Main examination, and Interview for various Scale I Specialist Officer posts in participating banks.",
       datesH: "Important dates",
@@ -448,6 +482,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a2: "The posts include IT Officer, Agricultural Field Officer, Rajbhasha Adhikari, Law Officer, HR/Personnel Officer, and Marketing Officer (Scale I).",
       q3: "When will the Preliminary examination be conducted?",
       a3: "The Online Preliminary Examination will be conducted in August 2026.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "NABARD Specialists on Contract Recruitment 2026-27",
       rel1: "UPPSC Inspector of Drugs Exam 2025 Corrigendum",
@@ -471,7 +506,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "इंस्टीट्यूट ऑफ बैंकिंग पर्सनल सेलेक्शन (आईबीपीएस) ने वर्ष 2027-28 की रिक्तियों के लिए स्पेशलिस्ट ऑफिसर (सीआरपी एसपीएल-16) हेतु ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य और इच्छुक उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
       statusV: "सूचना जारी",
       lastDate: "अंतिम तिथि 21 जुलाई 2026",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -492,6 +527,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r3v: "20 से 30 वर्ष 01.07.2026 के अनुसार",
       r4l: "विज्ञापन संख्या",
       r4v: "सीआरपी एसपीएल-XVI",
+      metaV: "अपडेट 22 अक्तूबर 2026 · स्रोत: ibps.in",
       aboutH: "इस सूचना के बारे में",
       intro: "इंस्टीट्यूट ऑफ बैंकिंग पर्सनल सेलेक्शन (आईबीपीएस) ने वर्ष 2027-28 की रिक्तियों के लिए स्पेशलिस्ट ऑफिसर (सीआरपी एसपीएल-16) के सामान्य भर्ती प्रक्रिया का नोटिफिकेशन जारी कर दिया है। योग्य उम्मीदवार 01 जुलाई 2026 से 21 जुलाई 2026 तक ऑनलाइन पंजीकरण कर सकते हैं। भर्ती प्रक्रिया में भाग लेने वाले बैंकों में विभिन्न स्केल I स्पेशलिस्ट ऑफिसर पदों के लिए प्रारंभिक परीक्षा, मुख्य परीक्षा और साक्षात्कार शामिल हैं।",
       datesH: "महत्वपूर्ण तिथियाँ",
@@ -567,6 +603,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a2: "पदों में आईटी ऑफिसर, एग्रीकल्चरल फील्ड ऑफिसर, राजभाषा अधिकारी, लॉ ऑफिसर, एचआर/पर्सनल ऑफिसर और मार्केटिंग ऑफिसर (स्केल I) शामिल हैं।",
       q3: "प्रारंभिक परीक्षा कब आयोजित की जाएगी?",
       a3: "ऑनलाइन प्रारंभिक परीक्षा अगस्त 2026 में आयोजित की जाएगी।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "नाबार्ड अनुबंध पर विशेषज्ञ भर्ती 2026-27",
       rel1: "उत्तर प्रदेश लोक सेवा आयोग औषधि निरीक्षक परीक्षा 2025 संशोधन",

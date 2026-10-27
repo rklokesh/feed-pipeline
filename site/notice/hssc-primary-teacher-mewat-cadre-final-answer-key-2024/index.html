@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,17 +258,15 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/hssc.webp" width="76" height="76" alt="Haryana Staff Selection Commission (HSSC) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=answer-keys" data-t="crumbType">Answer keys</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">HSSC</span></nav>
       <h1 data-t="h1">HSSC Primary Teacher Mewat Cadre Final Answer Key 2024</h1>
+      <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: hssc.gov.in</p>
       <p class="status"><span id="state">Final answer key released</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Haryana Staff Selection Commission has released the final answer key for the Primary Teacher (Mewat Cadre) written examination under Advt. No. 05/2024. Candidates who appeared for the exam can check and download the final answer key from the official website.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">The Haryana Staff Selection Commission (HSSC) has published the notice regarding the release of the final answer key for the Primary Teacher (Mewat Cadre) post against Advertisement Number 05/2024, Category Number 1. Candidates who participated in the written examination conducted by the Elementary Education Department, Haryana can now view the final answer key. All concerned candidates are advised to check the official HSSC website for complete details.</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Haryana Staff Selection Commission (HSSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">10 Sep 2026</span></div>
       <div class="r"><span data-t="r0l">Post name</span><span class="v" data-t="r0v">Primary Teacher (Mewat Cadre)</span></div>
@@ -250,24 +274,33 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="r2l">Department</span><span class="v" data-t="r2v">Elementary Education Department, Haryana</span></div>
       <div class="r"><span data-t="r3l">Notice date</span><span class="v" data-t="r3v">10 Sep 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="datesH">
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">The Haryana Staff Selection Commission (HSSC) has published the notice regarding the release of the final answer key for the Primary Teacher (Mewat Cadre) post against Advertisement Number 05/2024, Category Number 1. Candidates who participated in the written examination conducted by the Elementary Education Department, Haryana can now view the final answer key. All concerned candidates are advised to check the official HSSC website for complete details.</p>
+    </section>
+    <section class="kv" id="datesH" data-t-aria="datesH">
       <div class="h" data-t="datesH">Important dates</div>
       <div class="r"><span data-t="datesH0l">Notice date</span><span class="v" data-t="datesH0v">10 Sep 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to download</div>
       <ol class="steps"><li data-t="howH0">Go to the official website of the Haryana Staff Selection Commission at www.hssc.gov.in.</li><li data-t="howH1">Navigate to the public notice or answer key section for Advt. No. 05/2024.</li><li data-t="howH2">Click on the link for the Final Answer Key for Primary Teacher (Mewat Cadre).</li><li data-t="howH3">View and download the final answer key for your reference.</li></ol>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a0-89ede0820007/publicNotice" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">hssc.gov.in</span></a>
       <a class="r" href="https://hssc.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">hssc.gov.in</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">Has the HSSC Primary Teacher Mewat Cadre final answer key been released?</h3><p data-t="a0">Yes, the final answer key for Advt. No. 05/2024, Cat. No. 1 has been released on 10 September 2026.</p></div>
       <div class="qa"><h3 data-t="q1">Where can I download the HSSC Primary Teacher final answer key?</h3><p data-t="a1">You can download the final answer key from the official HSSC website at www.hssc.gov.in.</p></div>
       <div class="qa"><h3 data-t="q2">Which department issued the recruitment for Primary Teacher Mewat Cadre?</h3><p data-t="a2">The recruitment was issued by the Elementary Education Department, Haryana.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">हरियाणा कर्मचारी चयन आयोग ने विज्ञापन संख्या 05/2024 के तहत प्राथमिक शिक्षक (मेवात संवर्ग) लिखित परीक्षा के लिए अंतिम उत्तर कुंजी जारी कर दी है। परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक वेबसाइट से अंतिम उत्तर कुंजी देख और डाउनलोड कर सकते हैं। हरियाणा कर्मचारी चयन आयोग (HSSC) ने विज्ञापन संख्या 05/2024, श्रेणी संख्या 1 के तहत प्राथमिक शिक्षक (मेवात संवर्ग) पद के लिए अंतिम उत्तर कुंजी जारी करने के संबंध में सूचना प्रकाशित की है। प्रारंभिक शिक्षा विभाग, हरियाणा द्वारा आयोजित लिखित परीक्षा में भाग लेने वाले उम्मीदवार अब अंतिम उत्तर कुंजी देख सकते हैं। सभी संबंधित उम्मीदवारों को सलाह दी जाती है कि वे पूरी जानकारी के लिए आधिकारिक HSSC वेबसाइट देखें।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -309,7 +342,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "HSSC",
       summary: "Haryana Staff Selection Commission has released the final answer key for the Primary Teacher (Mewat Cadre) written examination under Advt. No. 05/2024. Candidates who appeared for the exam can check and download the final answer key from the official website.",
       statusV: "Final answer key released",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -328,6 +361,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r2v: "Elementary Education Department, Haryana",
       r3l: "Notice date",
       r3v: "10 Sep 2026",
+      metaV: "Updated 23 Oct 2026 · Source: hssc.gov.in",
       aboutH: "About this notice",
       intro: "The Haryana Staff Selection Commission (HSSC) has published the notice regarding the release of the final answer key for the Primary Teacher (Mewat Cadre) post against Advertisement Number 05/2024, Category Number 1. Candidates who participated in the written examination conducted by the Elementary Education Department, Haryana can now view the final answer key. All concerned candidates are advised to check the official HSSC website for complete details.",
       datesH: "Important dates",
@@ -345,6 +379,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "You can download the final answer key from the official HSSC website at www.hssc.gov.in.",
       q2: "Which department issued the recruitment for Primary Teacher Mewat Cadre?",
       a2: "The recruitment was issued by the Elementary Education Department, Haryana.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "HSSC PRT Advt 5/2024 Final Answer Key Released",
       rel1: "HSSC Group-D CET Advt 05/2026 Application Date Extension",
@@ -367,7 +402,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "HSSC",
       summary: "हरियाणा कर्मचारी चयन आयोग ने विज्ञापन संख्या 05/2024 के तहत प्राथमिक शिक्षक (मेवात संवर्ग) लिखित परीक्षा के लिए अंतिम उत्तर कुंजी जारी कर दी है। परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक वेबसाइट से अंतिम उत्तर कुंजी देख और डाउनलोड कर सकते हैं।",
       statusV: "अंतिम उत्तर कुंजी जारी की गई",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -386,6 +421,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r2v: "प्रारंभिक शिक्षा विभाग, हरियाणा",
       r3l: "सूचना तिथि",
       r3v: "10 सितं 2026",
+      metaV: "अपडेट 23 अक्तूबर 2026 · स्रोत: hssc.gov.in",
       aboutH: "इस सूचना के बारे में",
       intro: "हरियाणा कर्मचारी चयन आयोग (HSSC) ने विज्ञापन संख्या 05/2024, श्रेणी संख्या 1 के तहत प्राथमिक शिक्षक (मेवात संवर्ग) पद के लिए अंतिम उत्तर कुंजी जारी करने के संबंध में सूचना प्रकाशित की है। प्रारंभिक शिक्षा विभाग, हरियाणा द्वारा आयोजित लिखित परीक्षा में भाग लेने वाले उम्मीदवार अब अंतिम उत्तर कुंजी देख सकते हैं। सभी संबंधित उम्मीदवारों को सलाह दी जाती है कि वे पूरी जानकारी के लिए आधिकारिक HSSC वेबसाइट देखें।",
       datesH: "महत्वपूर्ण तिथियाँ",
@@ -403,6 +439,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "आप आधिकारिक HSSC वेबसाइट www.hssc.gov.in से अंतिम उत्तर कुंजी डाउनलोड कर सकते हैं।",
       q2: "प्राथमिक शिक्षक मेवात संवर्ग की भर्ती किस विभाग द्वारा निकाली गई थी?",
       a2: "यह भर्ती प्रारंभिक शिक्षा विभाग, हरियाणा द्वारा निकाली गई थी।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "हरियाणा कर्मचारी चयन आयोग प्राथमिक शिक्षक विज्ञापन 5/2024 अंतिम उत्तर कुंजी जारी",
       rel1: "हरियाणा कर्मचारी चयन आयोग समूह-डी सीईटी विज्ञापन 05/2026 आवेदन तिथि विस्तार",

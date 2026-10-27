@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,17 +258,15 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/ssc.webp" width="76" height="76" alt="Staff Selection Commission (SSC) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=results" data-t="crumbType">Results</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">SSC</span></nav>
       <h1 data-t="h1">SSC Constable GD 2026 PET/PST Shortlisting Result</h1>
+      <p class="meta g" data-t="metaV">Updated 22 Oct 2026 · Source: ssc.gov.in</p>
       <p class="status"><span id="state">PET/PST Shortlisting Result Declared</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Staff Selection Commission has released the result of candidates shortlisted for the Physical Efficiency Test and Physical Standard Test for the Constable GD and Rifleman GD Examination, 2026. Candidates who appeared in the computer-based exam can check their qualification status and lists on the official website.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">The Staff Selection Commission has announced the shortlisting results for the Constable (GD) in Central Armed Police Forces (CAPFs) and SSF, and Rifleman (GD) in Assam Rifles Examination, 2026. The computer-based examination was conducted from 27.04.2026 to 30.05.2026, in which 21,56,776 candidates appeared. Qualified candidates are now eligible to appear in the Physical Efficiency Test (PET) and Physical Standard Test (PST).</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Staff Selection Commission (SSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">12 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Constable (GD) &amp; Rifleman (GD)</span></div>
@@ -250,42 +274,51 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="r2l">Selection Process</span><span class="v" data-t="r2v">CBE, PET/PST, Medical Examination</span></div>
       <div class="r"><span data-t="r3l">Advertisement Number</span><span class="v" data-t="r3v">No. HQ-C-3/2/2026-C-3</span></div>
     </section>
-    <section class="kv" data-t-aria="datesH">
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">The Staff Selection Commission has announced the shortlisting results for the Constable (GD) in Central Armed Police Forces (CAPFs) and SSF, and Rifleman (GD) in Assam Rifles Examination, 2026. The computer-based examination was conducted from 27.04.2026 to 30.05.2026, in which 21,56,776 candidates appeared. Qualified candidates are now eligible to appear in the Physical Efficiency Test (PET) and Physical Standard Test (PST).</p>
+    </section>
+    <section class="kv" id="datesH" data-t-aria="datesH">
       <div class="h" data-t="datesH">Important dates</div>
       <div class="r"><span data-t="datesH0l">Exam date</span><span class="v" data-t="datesH0v">27 Apr 2026 - 30 May 2026</span></div>
       <div class="r"><span data-t="datesH1l">Notice date</span><span class="v" data-t="datesH1v">12 Oct 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="vacH">
+    <section class="kv" id="vacH" data-t-aria="vacH">
       <div class="h" data-t="vacH">Vacancy details</div>
       <div class="r"><span data-t="vacH0l">Constable (GD) &amp; Rifleman (GD)</span><span class="v" data-t="vacH0v">As per rules · Shortlisted for PET/PST: Female 15,782, Male SSF 330, Male Other than SSF 1,81,251</span></div>
     </section>
-    <section class="kv" data-t-aria="eligH">
+    <section class="kv" id="eligH" data-t-aria="eligH">
       <div class="h" data-t="eligH">Eligibility</div>
       <div class="r"><span data-t="eligH0l">Minimum qualifying marks for shortlisting</span><span class="v" data-t="eligH0v">UR: 30%, OBC/EWS: 25%, All other categories (SC, ST, ESM): 20%</span></div>
     </section>
-    <section class="kv" data-t-aria="selH">
+    <section class="kv" id="selH" data-t-aria="selH">
       <div class="h" data-t="selH">Selection process</div>
       <ol class="steps"><li data-t="selH0">Computer Based Examination (CBE)</li><li data-t="selH1">Physical Efficiency Test (PET) / Physical Standard Test (PST)</li><li data-t="selH2">Detailed Medical Examination (DME) / Review Medical Examination (RME)</li></ol>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to download</div>
       <ol class="steps"><li data-t="howH0">Visit the official website of the Staff Selection Commission (ssc.gov.in).</li><li data-t="howH1">Check the result notice and look into List-I (Female) and List-II (Male) for shortlisted candidate details.</li><li data-t="howH2">Visit the CRPF website (rect.crpf.gov.in) for PET/PST call letters and further schedule.</li></ol>
     </section>
-    <section class="kv" data-t-aria="extraH">
+    <section class="kv" id="extraH" data-t-aria="extraH">
       <div class="h" data-t="extraH">Other details</div>
       <div class="r"><span data-t="extraH0l">Nodal CAPF for PET/PST</span><span class="v" data-t="extraH0v">Central Reserve Police Force (CRPF)</span></div>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_12102026.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">ssc.gov.in</span></a>
       <a class="r" href="https://rect.crpf.gov.in" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">rect.crpf.gov.in</span></a>
       <a class="r" href="https://ssc.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">ssc.gov.in</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">When was the SSC Constable GD CBE exam conducted?</h3><p data-t="a0">The Computer Based Examination for Constable GD 2026 was conducted from 27.04.2026 to 30.05.2026.</p></div>
       <div class="qa"><h3 data-t="q1">Who will conduct the PET/PST for SSC Constable GD 2026?</h3><p data-t="a1">The PET/PST will be conducted by the CAPFs, and the Nodal CAPF (CRPF) will issue the call letters.</p></div>
       <div class="qa"><h3 data-t="q2">Where can I download the PET/PST admit card?</h3><p data-t="a2">Candidates can visit the official CRPF website at https://rect.crpf.gov.in to download their call letters.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">कर्मचारी चयन आयोग ने सिपाही जीडी और राइफलमैन जीडी परीक्षा, 2026 के शारीरिक दक्षता और मानक परीक्षण के लिए शॉर्टलिस्ट किए गए उम्मीदवारों का परिणाम जारी कर दिया है। कंप्यूटर आधारित परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक वेबसाइट पर अपना परिणाम देख सकते हैं। कर्मचारी चयन आयोग ने केंद्रीय सशस्त्र पुलिस बलों (सीएपीएफ) और एसएसएफ में सिपाही (जीडी) तथा असम राइफल्स में राइफलमैन (जीडी) परीक्षा, 2026 के लिए शॉर्टलिस्टिंग परिणाम घोषित कर दिया है। कंप्यूटर आधारित परीक्षा 27.04.2026 से 30.05.2026 तक आयोजित की गई थी, जिसमें 21,56,776 उम्मीदवार शामिल हुए थे। योग्य उम्मीदवार अब शारीरिक दक्षता परीक्षण (पीईटी) और शारीरिक मानक परीक्षण (पीएसटी) में शामिल होने के पात्र हैं।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -327,7 +360,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "SSC",
       summary: "Staff Selection Commission has released the result of candidates shortlisted for the Physical Efficiency Test and Physical Standard Test for the Constable GD and Rifleman GD Examination, 2026. Candidates who appeared in the computer-based exam can check their qualification status and lists on the official website.",
       statusV: "PET/PST Shortlisting Result Declared",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -346,6 +379,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r2v: "CBE, PET/PST, Medical Examination",
       r3l: "Advertisement Number",
       r3v: "No. HQ-C-3/2/2026-C-3",
+      metaV: "Updated 22 Oct 2026 · Source: ssc.gov.in",
       aboutH: "About this notice",
       intro: "The Staff Selection Commission has announced the shortlisting results for the Constable (GD) in Central Armed Police Forces (CAPFs) and SSF, and Rifleman (GD) in Assam Rifles Examination, 2026. The computer-based examination was conducted from 27.04.2026 to 30.05.2026, in which 21,56,776 candidates appeared. Qualified candidates are now eligible to appear in the Physical Efficiency Test (PET) and Physical Standard Test (PST).",
       datesH: "Important dates",
@@ -377,6 +411,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "The PET/PST will be conducted by the CAPFs, and the Nodal CAPF (CRPF) will issue the call letters.",
       q2: "Where can I download the PET/PST admit card?",
       a2: "Candidates can visit the official CRPF website at https://rect.crpf.gov.in to download their call letters.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "SSC CHSL Examination 2025 Final Result Declared",
       rel1: "SSC Stenographer Grade C and D 2025 Final Marks Released",
@@ -399,7 +434,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "एसएससी",
       summary: "कर्मचारी चयन आयोग ने सिपाही जीडी और राइफलमैन जीडी परीक्षा, 2026 के शारीरिक दक्षता और मानक परीक्षण के लिए शॉर्टलिस्ट किए गए उम्मीदवारों का परिणाम जारी कर दिया है। कंप्यूटर आधारित परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक वेबसाइट पर अपना परिणाम देख सकते हैं।",
       statusV: "शारीरिक दक्षता और मानक परीक्षण शॉर्टलिस्टिंग परिणाम घोषित",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -418,6 +453,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r2v: "कंप्यूटर आधारित परीक्षा, शारीरिक दक्षता और मानक परीक्षण, चिकित्सा परीक्षा",
       r3l: "विज्ञापन संख्या",
       r3v: "सं. एचक्यू-सी-3/2/2026-सी-3",
+      metaV: "अपडेट 22 अक्तूबर 2026 · स्रोत: ssc.gov.in",
       aboutH: "इस सूचना के बारे में",
       intro: "कर्मचारी चयन आयोग ने केंद्रीय सशस्त्र पुलिस बलों (सीएपीएफ) और एसएसएफ में सिपाही (जीडी) तथा असम राइफल्स में राइफलमैन (जीडी) परीक्षा, 2026 के लिए शॉर्टलिस्टिंग परिणाम घोषित कर दिया है। कंप्यूटर आधारित परीक्षा 27.04.2026 से 30.05.2026 तक आयोजित की गई थी, जिसमें 21,56,776 उम्मीदवार शामिल हुए थे। योग्य उम्मीदवार अब शारीरिक दक्षता परीक्षण (पीईटी) और शारीरिक मानक परीक्षण (पीएसटी) में शामिल होने के पात्र हैं।",
       datesH: "महत्वपूर्ण तिथियाँ",
@@ -449,6 +485,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "पीईटी/पीएसटी सीएपीएफ द्वारा आयोजित किया जाएगा, और नोडल सीएपीएफ (सीआरपीएफ) बुलावा पत्र जारी करेगा।",
       q2: "मैं पीईटी/पीएसटी प्रवेश पत्र कहाँ से डाउनलोड कर सकता हूँ?",
       a2: "उम्मीदवार अपने बुलावा पत्र डाउनलोड करने के लिए आधिकारिक सीआरपीएफ वेबसाइट https://rect.crpf.gov.in पर जा सकते हैं।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "कर्मचारी चयन आयोग संयुक्त उच्च माध्यमिक स्तर परीक्षा 2025 अंतिम परिणाम घोषित",
       rel1: "कर्मचारी चयन आयोग आशुलिपिक ग्रेड सी और डी 2025 अंतिम अंक जारी",

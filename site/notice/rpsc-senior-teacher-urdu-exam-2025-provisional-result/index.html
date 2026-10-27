@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,17 +258,15 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/rpsc.webp" width="76" height="76" alt="Rajasthan Public Service Commission (RPSC) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=results" data-t="crumbType">Results</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">RPSC</span></nav>
       <h1 data-t="h1">RPSC Senior Teacher Urdu Exam 2025 Provisional Result</h1>
+      <p class="meta g" data-t="metaV">Updated 27 Oct 2026 · Source: rpsc.rajasthan.gov.in</p>
       <p class="status"><span id="state">Provisional result and cut-off marks declared</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Rajasthan Public Service Commission has released the provisional result and cut-off marks for eligibility checking of the Senior Teacher Urdu Competitive Examination 2025. Shortlisted candidates must submit the detailed application form online from 31 October 2026 to 06 November 2026.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">The Rajasthan Public Service Commission (RPSC) has announced the provisional result for eligibility checking of the Senior Teacher (Urdu) Competitive Examination 2025. The written examination was conducted on 16 July 2026 and 17 July 2026. A total of 158 candidates have been provisionally included for document verification. Shortlisted candidates are required to fill out the detailed application form online through the SSO ID portal between 31 October 2026 and 06 November 2026.</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Rajasthan Public Service Commission (RPSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">27 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Senior Teacher (Urdu)</span></div>
@@ -251,47 +275,56 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="r3l">Detailed form online dates</span><span class="v" data-t="r3v">31 Oct 2026 to 06 Nov 2026</span></div>
       <div class="r"><span data-t="r4l">Advertisement number</span><span class="v" data-t="r4v">Senior Teacher (Sec. Edu.) Comp. Exam - 2025</span></div>
     </section>
-    <section class="kv" data-t-aria="datesH">
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">The Rajasthan Public Service Commission (RPSC) has announced the provisional result for eligibility checking of the Senior Teacher (Urdu) Competitive Examination 2025. The written examination was conducted on 16 July 2026 and 17 July 2026. A total of 158 candidates have been provisionally included for document verification. Shortlisted candidates are required to fill out the detailed application form online through the SSO ID portal between 31 October 2026 and 06 November 2026.</p>
+    </section>
+    <section class="kv" id="datesH" data-t-aria="datesH">
       <div class="h" data-t="datesH">Important dates</div>
       <div class="r"><span data-t="datesH0l">Exam Date</span><span class="v" data-t="datesH0v">16 Jul 2026 &amp; 17 Jul 2026</span></div>
       <div class="r"><span data-t="datesH1l">Detailed Form Online Start Date</span><span class="v" data-t="datesH1v">31 Oct 2026</span></div>
       <div class="r"><span data-t="datesH2l">Detailed Form Online Last Date</span><span class="v" data-t="datesH2v">06 Nov 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="vacH">
+    <section class="kv" id="vacH" data-t-aria="vacH">
       <div class="h" data-t="vacH">Vacancy details</div>
       <div class="r"><span data-t="vacH0l">Senior Teacher (Urdu)</span><span class="v" data-t="vacH0v">158 (Provisional list) · Non-Scheduled Area candidates: 158</span></div>
     </section>
-    <section class="kv" data-t-aria="eligH">
+    <section class="kv" id="eligH" data-t-aria="eligH">
       <div class="h" data-t="eligH">Eligibility</div>
       <div class="r"><span data-t="eligH0l">Education / Rules</span><span class="v" data-t="eligH0v">As per service rules and advertisement conditions</span></div>
     </section>
-    <section class="kv" data-t-aria="selH">
+    <section class="kv" id="selH" data-t-aria="selH">
       <div class="h" data-t="selH">Selection process</div>
       <ol class="steps"><li data-t="selH0">Written Examination (Paper I and Paper II)</li><li data-t="selH1">Provisional List for Eligibility Checking</li><li data-t="selH2">Detailed Application Form Submission and Document Verification by Department</li><li data-t="selH3">Final Result and Recommendation</li></ol>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to download</div>
       <ol class="steps"><li data-t="howH0">Log in to your SSO ID and go to the recruitment portal.</li><li data-t="howH1">Select &#x27;My Recruitment&#x27; followed by &#x27;Detailed Form Cum Scrutiny&#x27;.</li><li data-t="howH2">Click &#x27;Apply Now&#x27; and fill out the detailed application form for the Senior Teacher Urdu exam between 31 Oct 2026 and 06 Nov 2026.</li><li data-t="howH3">Take two printouts of the submitted detailed form along with all original documents and self-attested copies for verification when called by the department.</li></ol>
     </section>
-    <section class="kv" data-t-aria="extraH">
+    <section class="kv" id="extraH" data-t-aria="extraH">
       <div class="h" data-t="extraH">Other details</div>
       <div class="r"><span data-t="extraH0l">Notice Date</span><span class="v" data-t="extraH0v">27 Oct 2026</span></div>
       <div class="r"><span data-t="extraH1l">Cut-off General (UR)</span><span class="v" data-t="extraH1v">255.30</span></div>
       <div class="r"><span data-t="extraH2l">Cut-off OBC</span><span class="v" data-t="extraH2v">230.30</span></div>
       <div class="r"><span data-t="extraH3l">Cut-off EWS</span><span class="v" data-t="extraH3v">217.49</span></div>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://rpsc.rajasthan.gov.in/Static/Result/3274CA3402EA44DEB703B253B96F3F5F.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rpsc.rajasthan.gov.in</span></a>
       <a class="r" href="https://rpsc.rajasthan.gov.in/" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">rpsc.rajasthan.gov.in</span></a>
       <a class="r" href="https://rpsc.rajasthan.gov.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rpsc.rajasthan.gov.in</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">When was the RPSC Senior Teacher Urdu Exam 2025 provisional result released?</h3><p data-t="a0">The provisional result was released on 27 October 2026.</p></div>
       <div class="qa"><h3 data-t="q1">What is the last date to fill the detailed application form online?</h3><p data-t="a1">The last date to fill the detailed application form online is 06 November 2026 (up to 11:59 PM).</p></div>
       <div class="qa"><h3 data-t="q2">How many candidates have been shortlisted in the provisional eligibility checking list?</h3><p data-t="a2">A total of 158 candidates have been provisionally shortlisted for the non-scheduled area.</p></div>
       <div class="qa"><h3 data-t="q3">Where should shortlisted candidates submit their detailed application form?</h3><p data-t="a3">Candidates must fill it online through the RPSC recruitment portal via SSO ID and later submit it to the concerned department (Secondary Education Department, Bikaner) during document verification.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">राजस्थान लोक सेवा आयोग ने वरिष्ठ अध्यापक उर्दू प्रतियोगी परीक्षा 2025 के पात्रता जांच हेतु अनंतिम परिणाम और कट-ऑफ अंक जारी कर दिए हैं। चयनित अभ्यर्थियों को 31 अक्टूबर 2026 से 06 नवंबर 2026 तक ऑनलाइन विस्तृत आवेदन पत्र भरना होगा। राजस्थान लोक सेवा आयोग (आरपीएससी) ने वरिष्ठ अध्यापक (उर्दू) प्रतियोगी परीक्षा 2025 की पात्रता जांच के लिए अनंतिम परिणाम घोषित कर दिया है। लिखित परीक्षा 16 जुलाई 2026 और 17 जुलाई 2026 को आयोजित की गई थी। दस्तावेज़ सत्यापन के लिए कुल 158 उम्मीदवारों को अनंतिम रूप से शामिल किया गया है। चयनित उम्मीदवारों को 31 अक्टूबर 2026 से 06 नवंबर 2026 के बीच एसएसओ आईडी पोर्टल के माध्यम से ऑनलाइन विस्तृत आवेदन पत्र भरना होगा।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -333,7 +366,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "RPSC",
       summary: "Rajasthan Public Service Commission has released the provisional result and cut-off marks for eligibility checking of the Senior Teacher Urdu Competitive Examination 2025. Shortlisted candidates must submit the detailed application form online from 31 October 2026 to 06 November 2026.",
       statusV: "Provisional result and cut-off marks declared",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -354,6 +387,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r3v: "31 Oct 2026 to 06 Nov 2026",
       r4l: "Advertisement number",
       r4v: "Senior Teacher (Sec. Edu.) Comp. Exam - 2025",
+      metaV: "Updated 27 Oct 2026 · Source: rpsc.rajasthan.gov.in",
       aboutH: "About this notice",
       intro: "The Rajasthan Public Service Commission (RPSC) has announced the provisional result for eligibility checking of the Senior Teacher (Urdu) Competitive Examination 2025. The written examination was conducted on 16 July 2026 and 17 July 2026. A total of 158 candidates have been provisionally included for document verification. Shortlisted candidates are required to fill out the detailed application form online through the SSO ID portal between 31 October 2026 and 06 November 2026.",
       datesH: "Important dates",
@@ -397,6 +431,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a2: "A total of 158 candidates have been provisionally shortlisted for the non-scheduled area.",
       q3: "Where should shortlisted candidates submit their detailed application form?",
       a3: "Candidates must fill it online through the RPSC recruitment portal via SSO ID and later submit it to the concerned department (Secondary Education Department, Bikaner) during document verification.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "RPSC Senior Teacher English Exam 2025 Disqualified Candidates List",
       rel1: "RPSC Senior Teacher English Result 2025",
@@ -419,7 +454,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "RPSC",
       summary: "राजस्थान लोक सेवा आयोग ने वरिष्ठ अध्यापक उर्दू प्रतियोगी परीक्षा 2025 के पात्रता जांच हेतु अनंतिम परिणाम और कट-ऑफ अंक जारी कर दिए हैं। चयनित अभ्यर्थियों को 31 अक्टूबर 2026 से 06 नवंबर 2026 तक ऑनलाइन विस्तृत आवेदन पत्र भरना होगा।",
       statusV: "अनंतिम परिणाम और कट-ऑफ अंक घोषित",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -440,6 +475,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r3v: "31 अक्टूबर 2026 से 06 नवंबर 2026",
       r4l: "विज्ञापन संख्या",
       r4v: "वरिष्ठ अध्यापक (माध्यमिक शिक्षा) प्रतियोगी परीक्षा - 2025",
+      metaV: "अपडेट 27 अक्तूबर 2026 · स्रोत: rpsc.rajasthan.gov.in",
       aboutH: "इस सूचना के बारे में",
       intro: "राजस्थान लोक सेवा आयोग (आरपीएससी) ने वरिष्ठ अध्यापक (उर्दू) प्रतियोगी परीक्षा 2025 की पात्रता जांच के लिए अनंतिम परिणाम घोषित कर दिया है। लिखित परीक्षा 16 जुलाई 2026 और 17 जुलाई 2026 को आयोजित की गई थी। दस्तावेज़ सत्यापन के लिए कुल 158 उम्मीदवारों को अनंतिम रूप से शामिल किया गया है। चयनित उम्मीदवारों को 31 अक्टूबर 2026 से 06 नवंबर 2026 के बीच एसएसओ आईडी पोर्टल के माध्यम से ऑनलाइन विस्तृत आवेदन पत्र भरना होगा।",
       datesH: "महत्वपूर्ण तिथियाँ",
@@ -483,6 +519,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a2: "गैर-अनुसूचित क्षेत्र के लिए कुल 158 उम्मीदवारों को अनंतिम रूप से शॉर्टलिस्ट किया गया है।",
       q3: "शॉर्टलिस्ट किए गए उम्मीदवारों को अपना विस्तृत आवेदन पत्र कहां जमा करना होगा?",
       a3: "उम्मीदवारों को एसएसओ आईडी के माध्यम से आरपीएससी भर्ती पोर्टल पर इसे ऑनलाइन भरना होगा और बाद में दस्तावेज़ सत्यापन के दौरान संबंधित विभाग (माध्यमिक शिक्षा विभाग, बीकानेर) को जमा करना होगा।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "आरपीएससी वरिष्ठ अध्यापक अंग्रेजी परीक्षा 2025 अयोग्य अभ्यर्थियों की सूची",
       rel1: "आरपीएससी वरिष्ठ अध्यापक अंग्रेजी परिणाम 2025",

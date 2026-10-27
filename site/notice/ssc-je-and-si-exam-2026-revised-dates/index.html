@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,47 +258,54 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/ssc.webp" width="76" height="76" alt="Staff Selection Commission (SSC) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">SSC</span></nav>
       <h1 data-t="h1">SSC JE and SI Exam 2026 Revised Dates</h1>
+      <p class="meta g" data-t="metaV">Updated 26 Oct 2026 · Source: ssc.gov.in</p>
       <p class="status"><span id="state">Exam dates revised</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">The Staff Selection Commission has revised the examination dates for Junior Engineer and Sub-Inspector in Delhi Police and Central Armed Police Forces Examinations 2026. Check the revised schedule on this page.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">The Staff Selection Commission has issued a corrigendum notice regarding the revision of examination dates for the Junior Engineer Examination 2026 and the Sub-Inspector in Delhi Police and Central Armed Police Forces Examination 2026. Candidates who applied for these exams should note the updated schedule. The Junior Engineer Paper-I will now be conducted in November and December 2026, while the Sub-Inspector CBE will be held in November 2026. Applicants are advised to check the official website regularly for further updates.</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Staff Selection Commission (SSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">26 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Junior Engineer and Sub-Inspector in Delhi Police and CAPFs</span></div>
       <div class="r"><span data-t="r1l">Exam date</span><span class="v" data-t="r1v">Junior Engineer: 02 Nov to 06 Nov 2026 &amp; 30 Nov to 01 Dec 2026; Sub-Inspector: 23 Nov to 28 Nov 2026</span></div>
       <div class="r"><span data-t="r2l">Advertisement number</span><span class="v" data-t="r2v">HQ-EC033/7/2025-EC</span></div>
     </section>
-    <section class="kv" data-t-aria="datesH">
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">The Staff Selection Commission has issued a corrigendum notice regarding the revision of examination dates for the Junior Engineer Examination 2026 and the Sub-Inspector in Delhi Police and Central Armed Police Forces Examination 2026. Candidates who applied for these exams should note the updated schedule. The Junior Engineer Paper-I will now be conducted in November and December 2026, while the Sub-Inspector CBE will be held in November 2026. Applicants are advised to check the official website regularly for further updates.</p>
+    </section>
+    <section class="kv" id="datesH" data-t-aria="datesH">
       <div class="h" data-t="datesH">Important dates</div>
       <div class="r"><span data-t="datesH0l">Notice date</span><span class="v" data-t="datesH0v">26 Oct 2026</span></div>
       <div class="r"><span data-t="datesH1l">Junior Engineer Exam Date (Revised)</span><span class="v" data-t="datesH1v">02 Nov to 06 Nov 2026 and 30 Nov to 01 Dec 2026</span></div>
       <div class="r"><span data-t="datesH2l">Sub-Inspector Exam Date (Revised)</span><span class="v" data-t="datesH2v">23 Nov to 28 Nov 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="selH">
+    <section class="kv" id="selH" data-t-aria="selH">
       <div class="h" data-t="selH">Selection process</div>
       <ol class="steps"><li data-t="selH0">Computer Based Examination (CBE)</li></ol>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to apply</div>
       <ol class="steps"><li data-t="howH0">Visit the official website of the Staff Selection Commission.</li><li data-t="howH1">Check the notice board for the revised examination schedule notice.</li><li data-t="howH2">Download and save the notice for future reference.</li></ol>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Important notice_revised_dated_26_10_2026.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">ssc.gov.in</span></a>
       <a class="r" href="https://ssc.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">ssc.gov.in</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">What are the revised exam dates for SSC Junior Engineer Examination 2026?</h3><p data-t="a0">Paper-I for the Junior Engineer Examination 2026 will be conducted from 02nd to 06th November 2026 and from 30th November to 01st December 2026.</p></div>
       <div class="qa"><h3 data-t="q1">When is the SSC Sub-Inspector in Delhi Police and CAPFs Examination 2026 scheduled?</h3><p data-t="a1">The Sub-Inspector in Delhi Police and Central Armed Police Forces Examination 2026 will be held from 23rd to 28th November 2026.</p></div>
       <div class="qa"><h3 data-t="q2">Where can I check the official notice for the revised dates?</h3><p data-t="a2">You can check the official notice on the Staff Selection Commission website at ssc.gov.in.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">कर्मचारी चयन आयोग ने कनिष्ठ अभियंता और दिल्ली पुलिस तथा केंद्रीय सशस्त्र पुलिस बल उप निरीक्षक परीक्षा 2026 के लिए परीक्षा तिथियों में संशोधन किया है। इस पृष्ठ पर संशोधित कार्यक्रम देखें। कर्मचारी चयन आयोग ने कनिष्ठ अभियंता परीक्षा 2026 और दिल्ली पुलिस तथा केंद्रीय सशस्त्र पुलिस बल उप निरीक्षक परीक्षा 2026 के लिए परीक्षा तिथियों के संशोधन के संबंध में एक शुद्धि पत्र नोटिस जारी किया है। इन परीक्षाओं के लिए आवेदन करने वाले उम्मीदवारों को अद्यतन कार्यक्रम पर ध्यान देना चाहिए। कनिष्ठ अभियंता पेपर-I अब नवंबर और दिसंबर 2026 में आयोजित किया जाएगा, जबकि उप निरीक्षक परीक्षा नवंबर 2026 में आयोजित की जाएगी। आवेदकों को सलाह दी जाती है कि वे आगे के अपडेट के लिए आधिकारिक वेबसाइट की नियमित रूप से जांच करें।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -314,7 +347,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "SSC",
       summary: "The Staff Selection Commission has revised the examination dates for Junior Engineer and Sub-Inspector in Delhi Police and Central Armed Police Forces Examinations 2026. Check the revised schedule on this page.",
       statusV: "Exam dates revised",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -331,6 +364,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r1v: "Junior Engineer: 02 Nov to 06 Nov 2026 & 30 Nov to 01 Dec 2026; Sub-Inspector: 23 Nov to 28 Nov 2026",
       r2l: "Advertisement number",
       r2v: "HQ-EC033/7/2025-EC",
+      metaV: "Updated 26 Oct 2026 · Source: ssc.gov.in",
       aboutH: "About this notice",
       intro: "The Staff Selection Commission has issued a corrigendum notice regarding the revision of examination dates for the Junior Engineer Examination 2026 and the Sub-Inspector in Delhi Police and Central Armed Police Forces Examination 2026. Candidates who applied for these exams should note the updated schedule. The Junior Engineer Paper-I will now be conducted in November and December 2026, while the Sub-Inspector CBE will be held in November 2026. Applicants are advised to check the official website regularly for further updates.",
       datesH: "Important dates",
@@ -353,6 +387,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "The Sub-Inspector in Delhi Police and Central Armed Police Forces Examination 2026 will be held from 23rd to 28th November 2026.",
       q2: "Where can I check the official notice for the revised dates?",
       a2: "You can check the official notice on the Staff Selection Commission website at ssc.gov.in.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "SSC Grade C Stenographers LDCE 2025 Tentative Vacancies",
       rel1: "SSC Junior Engineer Examination 2026 Tentative Vacancies",
@@ -375,7 +410,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "एसएससी",
       summary: "कर्मचारी चयन आयोग ने कनिष्ठ अभियंता और दिल्ली पुलिस तथा केंद्रीय सशस्त्र पुलिस बल उप निरीक्षक परीक्षा 2026 के लिए परीक्षा तिथियों में संशोधन किया है। इस पृष्ठ पर संशोधित कार्यक्रम देखें।",
       statusV: "परीक्षा तिथियां संशोधित",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -392,6 +427,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r1v: "कनिष्ठ अभियंता: 02 नव से 06 नव 2026 और 30 नव से 01 दिस 2026; उप निरीक्षक: 23 नव से 28 नव 2026",
       r2l: "विज्ञापन संख्या",
       r2v: "HQ-EC033/7/2025-EC",
+      metaV: "अपडेट 26 अक्तूबर 2026 · स्रोत: ssc.gov.in",
       aboutH: "इस सूचना के बारे में",
       intro: "कर्मचारी चयन आयोग ने कनिष्ठ अभियंता परीक्षा 2026 और दिल्ली पुलिस तथा केंद्रीय सशस्त्र पुलिस बल उप निरीक्षक परीक्षा 2026 के लिए परीक्षा तिथियों के संशोधन के संबंध में एक शुद्धि पत्र नोटिस जारी किया है। इन परीक्षाओं के लिए आवेदन करने वाले उम्मीदवारों को अद्यतन कार्यक्रम पर ध्यान देना चाहिए। कनिष्ठ अभियंता पेपर-I अब नवंबर और दिसंबर 2026 में आयोजित किया जाएगा, जबकि उप निरीक्षक परीक्षा नवंबर 2026 में आयोजित की जाएगी। आवेदकों को सलाह दी जाती है कि वे आगे के अपडेट के लिए आधिकारिक वेबसाइट की नियमित रूप से जांच करें।",
       datesH: "महत्वपूर्ण तिथियाँ",
@@ -414,6 +450,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "दिल्ली पुलिस और केंद्रीय सशस्त्र पुलिस बल उप निरीक्षक परीक्षा 2026, 23 से 28 नवंबर 2026 तक आयोजित की जाएगी।",
       q2: "संशोधित तिथियों के लिए आधिकारिक नोटिस मैं कहाँ देख सकता हूँ?",
       a2: "आप ssc.gov.in पर कर्मचारी चयन आयोग की वेबसाइट पर आधिकारिक नोटिस देख सकते हैं।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "कर्मचारी चयन आयोग श्रेणी ग आशुलिपिक सीमित विभागीय प्रतियोगी परीक्षा 2025 संभावित रिक्तियां",
       rel1: "कर्मचारी चयन आयोग कनिष्ठ अभियंता परीक्षा 2026 संभावित रिक्तियां",

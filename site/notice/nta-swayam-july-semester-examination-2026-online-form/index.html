@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,17 +258,15 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/nta.webp" width="76" height="76" alt="National Testing Agency (NTA) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">NTA</span></nav>
       <h1 data-t="h1">NTA SWAYAM July Semester Exam 2026 Online Form</h1>
+      <p class="meta g" data-t="metaV">Updated 22 Oct 2026 · Source: nta.ac.in</p>
       <p class="status"><span id="state">Answer key released, objections open till 30 Oct 2026</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">National Testing Agency has invited online applications for the SWAYAM July Semester Examination 2026. Eligible candidates can apply online through the official website before 31 October 2026.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">National Testing Agency (NTA) has released the notification for the Study Webs of Active Learning for Young Aspiring Minds [SWAYAM-2026 (July Semester)] Examination. A total of 662 courses are included in this session. Candidates who wish to apply can submit their online applications from 09 October 2026 to 31 October 2026. Read the notice for complete schedule, exam mode, and other details.</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">National Testing Agency (NTA)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">9 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">SWAYAM Courses</span></div>
@@ -252,7 +276,12 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="r4l">Exam date</span><span class="v" data-t="r4v">08, 09, 10, 11 and 12 December 2026</span></div>
       <div class="r"><span data-t="r5l">Advertisement number</span><span class="v" data-t="r5v">SWAYAM-2026 (July Semester)</span></div>
     </section>
-    <section class="kv" data-t-aria="datesH">
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">National Testing Agency (NTA) has released the notification for the Study Webs of Active Learning for Young Aspiring Minds [SWAYAM-2026 (July Semester)] Examination. A total of 662 courses are included in this session. Candidates who wish to apply can submit their online applications from 09 October 2026 to 31 October 2026. Read the notice for complete schedule, exam mode, and other details.</p>
+    </section>
+    <section class="kv" id="datesH" data-t-aria="datesH">
       <div class="h" data-t="datesH">Important dates</div>
       <div class="r"><span data-t="datesH0l">Online application starts</span><span class="v" data-t="datesH0v">09 October 2026</span></div>
       <div class="r"><span data-t="datesH1l">Online application last date</span><span class="v" data-t="datesH1v">31 October 2026</span></div>
@@ -260,34 +289,38 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="datesH3l">Correction window</span><span class="v" data-t="datesH3v">02 November 2026 to 03 November 2026</span></div>
       <div class="r"><span data-t="datesH4l">Exam date</span><span class="v" data-t="datesH4v">08, 09, 10, 11 and 12 December 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="vacH">
+    <section class="kv" id="vacH" data-t-aria="vacH">
       <div class="h" data-t="vacH">Vacancy details</div>
       <div class="r"><span data-t="vacH0l">SWAYAM Courses</span><span class="v" data-t="vacH0v">662 · 662 Courses for July Semester 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="selH">
+    <section class="kv" id="selH" data-t-aria="selH">
       <div class="h" data-t="selH">Selection process</div>
       <ol class="steps"><li data-t="selH0">Computer-Based Test (CBT)</li><li data-t="selH1">Course-wise examination as per schedule</li></ol>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to apply</div>
       <ol class="steps"><li data-t="howH0">Visit the official website at https://exams.nta.nic.in/swayam/.</li><li data-t="howH1">Register and fill out the online application form with required details.</li><li data-t="howH2">Upload necessary documents and pay the examination fee online.</li><li data-t="howH3">Submit the form and take a printout for future reference.</li></ol>
     </section>
-    <section class="kv" data-t-aria="extraH">
+    <section class="kv" id="extraH" data-t-aria="extraH">
       <div class="h" data-t="extraH">Other details</div>
       <div class="r"><span data-t="extraH0l">Exam Mode</span><span class="v" data-t="extraH0v">Computer-Based Test (CBT) Mode</span></div>
       <div class="r"><span data-t="extraH1l">Exam Duration</span><span class="v" data-t="extraH1v">180 Minutes (03:00 Hours)</span></div>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://nta.ac.in/Download/Notice/Notice_20261009123259.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">nta.ac.in</span></a>
       <a class="r" href="https://exams.nta.nic.in/swayam/" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">exams.nta.nic.in</span></a>
       <a class="r" href="https://exams.nta.nic.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">exams.nta.nic.in</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">What is the last date to apply for SWAYAM July Semester Exam 2026?</h3><p data-t="a0">The last date to submit the online application form is 31 October 2026 up to 11:50 PM.</p></div>
       <div class="qa"><h3 data-t="q1">When will the SWAYAM 2026 July Semester exam be conducted?</h3><p data-t="a1">The exam will be conducted on 08, 09, 10, 11, and 12 December 2026.</p></div>
       <div class="qa"><h3 data-t="q2">What is the official website to apply for SWAYAM 2026?</h3><p data-t="a2">Candidates can apply online through the official website at https://exams.nta.nic.in/swayam/.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">राष्ट्रीय परीक्षण एजेंसी ने स्वयं जुलाई सत्र परीक्षा 2026 के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 31 अक्टूबर 2026 से पहले आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं। राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने स्टडी वेब्स ऑफ एक्टिव लर्निंग फॉर यंग आस्पiring माइंड्स [स्वयं-2026 (जुलाई सत्र)] परीक्षा के लिए अधिसूचना जारी कर दी है। इस सत्र में कुल 662 पाठ्यक्रम शामिल हैं। जो उम्मीदवार आवेदन करना चाहते हैं, वे 09 अक्टूबर 2026 से 31 अक्टूबर 2026 तक अपने ऑनलाइन आवेदन जमा कर सकते हैं।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -330,7 +363,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "National Testing Agency has invited online applications for the SWAYAM July Semester Examination 2026. Eligible candidates can apply online through the official website before 31 October 2026.",
       statusV: "Answer key released, objections open till 30 Oct 2026",
       lastDate: "Last date 31 Oct 2026",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -353,6 +386,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r4v: "08, 09, 10, 11 and 12 December 2026",
       r5l: "Advertisement number",
       r5v: "SWAYAM-2026 (July Semester)",
+      metaV: "Updated 22 Oct 2026 · Source: nta.ac.in",
       aboutH: "About this notice",
       intro: "National Testing Agency (NTA) has released the notification for the Study Webs of Active Learning for Young Aspiring Minds [SWAYAM-2026 (July Semester)] Examination. A total of 662 courses are included in this session. Candidates who wish to apply can submit their online applications from 09 October 2026 to 31 October 2026. Read the notice for complete schedule, exam mode, and other details.",
       datesH: "Important dates",
@@ -389,6 +423,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "The exam will be conducted on 08, 09, 10, 11, and 12 December 2026.",
       q2: "What is the official website to apply for SWAYAM 2026?",
       a2: "Candidates can apply online through the official website at https://exams.nta.nic.in/swayam/.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "UGC-NET December 2026 Last Date Extended",
       rel1: "NTA UGC-NET December 2026 Application Date Extended",
@@ -412,7 +447,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "राष्ट्रीय परीक्षण एजेंसी ने स्वयं जुलाई सत्र परीक्षा 2026 के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 31 अक्टूबर 2026 से पहले आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
       statusV: "उत्तर कुंजी जारी, 30 अक्टूबर 2026 तक आपत्तियां खुली हैं",
       lastDate: "अंतिम तिथि 31 अक्तूबर 2026",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -435,6 +470,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r4v: "08, 09, 10, 11 और 12 दिसंबर 2026",
       r5l: "विज्ञापन संख्या",
       r5v: "स्वयं-2026 (जुलाई सत्र)",
+      metaV: "अपडेट 22 अक्तूबर 2026 · स्रोत: nta.ac.in",
       aboutH: "इस सूचना के बारे में",
       intro: "राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने स्टडी वेब्स ऑफ एक्टिव लर्निंग फॉर यंग आस्पiring माइंड्स [स्वयं-2026 (जुलाई सत्र)] परीक्षा के लिए अधिसूचना जारी कर दी है। इस सत्र में कुल 662 पाठ्यक्रम शामिल हैं। जो उम्मीदवार आवेदन करना चाहते हैं, वे 09 अक्टूबर 2026 से 31 अक्टूबर 2026 तक अपने ऑनलाइन आवेदन जमा कर सकते हैं।",
       datesH: "महत्वपूर्ण तिथियाँ",
@@ -471,6 +507,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "परीक्षा 08, 09, 10, 11 और 12 दिसंबर 2026 को आयोजित की जाएगी।",
       q2: "स्वयं 2026 के लिए आवेदन करने की आधिकारिक वेबसाइट क्या है?",
       a2: "उम्मीदवार आधिकारिक वेबसाइट https://exams.nta.nic.in/swayam/ के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "यूजीसी-नेट दिसंबर 2026 अंतिम तिथि बढ़ाई गई",
       rel1: "एनटीए यूजीसी-नेट दिसंबर 2026 आवेदन तिथि बढ़ाई गई",

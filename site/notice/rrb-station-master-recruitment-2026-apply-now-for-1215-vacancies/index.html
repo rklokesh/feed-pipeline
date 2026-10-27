@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,17 +258,15 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/rrb.webp" width="76" height="76" alt="Railway Recruitment Board (RRB) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">RRB</span></nav>
       <h1 data-t="h1">RRB Station Master Recruitment 2026: Apply Online for 1215 Posts</h1>
+      <p class="meta g" data-t="metaV">Updated 26 Oct 2026 · Source: rrb.indianrailways.gov.in</p>
       <p class="status"><span id="state">Notice published</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Railway Recruitment Board has invited online applications for the post of Station Master under CEN 08/2026 for 1215 vacancies. Eligible and interested candidates can apply online through the official website. Read the notice carefully for eligibility, dates, and other details.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">Railway Recruitment Boards (RRBs) have issued Centralized Employment Notice CEN No. 08/2026 for the recruitment of Station Master across Indian Railways. A total of 1215 vacancies are available. Eligible candidates can submit their online applications from 27 October 2026 to 25 November 2026. Applicants should review the eligibility criteria, medical standards, and application procedures before applying.</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Railway Recruitment Board (RRB)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">24 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Station Master</span></div>
@@ -252,7 +276,12 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="r4l">Age limit (as on)</span><span class="v" data-t="r4v">20-33 years as on 01 Jan 2027</span></div>
       <div class="r"><span data-t="r5l">Advertisement number</span><span class="v" data-t="r5v">CEN No. 08/2026</span></div>
     </section>
-    <section class="kv" data-t-aria="datesH">
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#ageH" data-t="ageH">Age limit</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">Railway Recruitment Boards (RRBs) have issued Centralized Employment Notice CEN No. 08/2026 for the recruitment of Station Master across Indian Railways. A total of 1215 vacancies are available. Eligible candidates can submit their online applications from 27 October 2026 to 25 November 2026. Applicants should review the eligibility criteria, medical standards, and application procedures before applying.</p>
+    </section>
+    <section class="kv" id="datesH" data-t-aria="datesH">
       <div class="h" data-t="datesH">Important dates</div>
       <div class="r"><span data-t="datesH0l">Date of Indicative notice in Employment News</span><span class="v" data-t="datesH0v">24 Oct 2026</span></div>
       <div class="r"><span data-t="datesH1l">Online application starts</span><span class="v" data-t="datesH1v">27 Oct 2026</span></div>
@@ -260,46 +289,50 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="datesH3l">Last date for application fee payment</span><span class="v" data-t="datesH3v">27 Nov 2026</span></div>
       <div class="r"><span data-t="datesH4l">Modification window for corrections</span><span class="v" data-t="datesH4v">28 Nov 2026 to 07 Dec 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="ageH">
+    <section class="kv" id="ageH" data-t-aria="ageH">
       <div class="h" data-t="ageH">Age limit</div>
       <div class="r"><span data-t="ageH0l">Minimum age</span><span class="v" data-t="ageH0v">20 years</span></div>
       <div class="r"><span data-t="ageH1l">Maximum age</span><span class="v" data-t="ageH1v">33 years</span></div>
       <div class="r"><span data-t="ageH2l">Age as on</span><span class="v" data-t="ageH2v">01 Jan 2027</span></div>
     </section>
-    <section class="kv" data-t-aria="vacH">
+    <section class="kv" id="vacH" data-t-aria="vacH">
       <div class="h" data-t="vacH">Vacancy details</div>
       <div class="r"><span data-t="vacH0l">Station Master</span><span class="v" data-t="vacH0v">1215 · Level 6 in 7th CPC (Initial Pay Rs. 35400), Medical Standard A-2. RRB-wise and Zone-wise detailed distribution given in Annexure-B of the notice.</span></div>
     </section>
-    <section class="kv" data-t-aria="eligH">
+    <section class="kv" id="eligH" data-t-aria="eligH">
       <div class="h" data-t="eligH">Eligibility</div>
       <div class="r"><span data-t="eligH0l">Nationality / Citizenship</span><span class="v" data-t="eligH0v">Must be an Indian National or as brought out at Para 7 of the CEN.</span></div>
       <div class="r"><span data-t="eligH1l">Education</span><span class="v" data-t="eligH1v">Candidates must ensure they possess/fulfil all prescribed educational qualifications as on the closing date. Candidates waiting for final results are not eligible.</span></div>
     </section>
-    <section class="kv" data-t-aria="selH">
+    <section class="kv" id="selH" data-t-aria="selH">
       <div class="h" data-t="selH">Selection process</div>
       <ol class="steps"><li data-t="selH0">Computer Based Test (CBT)</li><li data-t="selH1">Computer Based Aptitude Test (CBAT)</li><li data-t="selH2">Document Verification (DV)</li></ol>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to apply</div>
       <ol class="steps"><li data-t="howH0">Visit the unified official RRB website or the designated application link.</li><li data-t="howH1">Create an account or use existing account credentials if already created for 2024/2025/2026 CENs.</li><li data-t="howH2">Authenticate identity using DigiLocker or Aadhaar during account creation or application.</li><li data-t="howH3">Select a single RRB and submit only one online application along with required details.</li><li data-t="howH4">Pay the application fee and take a final printout of the submitted application.</li></ol>
     </section>
-    <section class="kv" data-t-aria="extraH">
+    <section class="kv" id="extraH" data-t-aria="extraH">
       <div class="h" data-t="extraH">Other details</div>
       <div class="r"><span data-t="extraH0l">Medical Standard</span><span class="v" data-t="extraH0v">A-2 medical standard required for the post of Station Master.</span></div>
       <div class="r"><span data-t="extraH1l">Modification Fee</span><span class="v" data-t="extraH1v">Rs. 250/- (non-refundable) for each occasion of modification from 28.11.2026 to 07.12.2026.</span></div>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://rrb.indianrailways.gov.in/-/image/1793016771817CEN_08_2026_StationMaster.pdf/examsDocuments" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rrb.indianrailways.gov.in</span></a>
       <a class="r" href="https://www.rrbapply.gov.in" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">rrbapply.gov.in</span></a>
       <a class="r" href="https://rrb.indianrailways.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rrb.indianrailways.gov.in</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">What is the last date to apply for RRB Station Master Recruitment 2026?</h3><p data-t="a0">The last date to submit online applications is 25 November 2026 up to 23:59 hours.</p></div>
       <div class="qa"><h3 data-t="q1">How many vacancies are announced for Station Master under CEN 08/2026?</h3><p data-t="a1">A total of 1215 vacancies have been announced across all RRBs.</p></div>
       <div class="qa"><h3 data-t="q2">What is the age limit for RRB Station Master post?</h3><p data-t="a2">Candidates must be between 20 and 33 years of age as on 01 January 2027.</p></div>
       <div class="qa"><h3 data-t="q3">Can I apply to more than one RRB?</h3><p data-t="a3">No, candidates can apply to only one RRB. Submitting applications to more than one RRB will lead to rejection of all applications.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">रेलवे भर्ती बोर्ड ने केंद्रीय रोजगार सूचना 08/2026 के तहत स्टेशन मास्टर के 1215 पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य और इच्छुक उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं। पात्रता, तिथियों और अन्य विवरणों के लिए सूचना को ध्यान से पढ़ें। रेलवे भर्ती बोर्ड (RRB) ने भारतीय रेलवे में स्टेशन मास्टर के पद के लिए केंद्रीय रोजगार सूचना CEN No. 08/2026 जारी की है। कुल 1215 रिक्तियां उपलब्ध हैं। योग्य उम्मीदवार 27 अक्टूबर 2026 से 25 नवंबर 2026 तक अपने ऑनलाइन आवेदन जमा कर सकते हैं। आवेदकों को आवेदन करने से पहले पात्रता मापदंड, चिकित्सा मानक और आवेदन प्रक्रिया की समीक्षा करनी चाहिए।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -342,7 +375,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "Railway Recruitment Board has invited online applications for the post of Station Master under CEN 08/2026 for 1215 vacancies. Eligible and interested candidates can apply online through the official website. Read the notice carefully for eligibility, dates, and other details.",
       statusV: "Notice published",
       lastDate: "Last date 25 Nov 2026",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -365,6 +398,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r4v: "20-33 years as on 01 Jan 2027",
       r5l: "Advertisement number",
       r5v: "CEN No. 08/2026",
+      metaV: "Updated 26 Oct 2026 · Source: rrb.indianrailways.gov.in",
       aboutH: "About this notice",
       intro: "Railway Recruitment Boards (RRBs) have issued Centralized Employment Notice CEN No. 08/2026 for the recruitment of Station Master across Indian Railways. A total of 1215 vacancies are available. Eligible candidates can submit their online applications from 27 October 2026 to 25 November 2026. Applicants should review the eligibility criteria, medical standards, and application procedures before applying.",
       datesH: "Important dates",
@@ -417,6 +451,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a2: "Candidates must be between 20 and 33 years of age as on 01 January 2027.",
       q3: "Can I apply to more than one RRB?",
       a3: "No, candidates can apply to only one RRB. Submitting applications to more than one RRB will lead to rejection of all applications.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "RRB Station Master CEN 08/2026 Corrigendum 1",
       rel1: "RRB UG Non-Technical Popular Categories Recruitment 2026",
@@ -440,7 +475,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "रेलवे भर्ती बोर्ड ने केंद्रीय रोजगार सूचना 08/2026 के तहत स्टेशन मास्टर के 1215 पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य और इच्छुक उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं। पात्रता, तिथियों और अन्य विवरणों के लिए सूचना को ध्यान से पढ़ें।",
       statusV: "सूचना जारी",
       lastDate: "अंतिम तिथि 25 नवंबर 2026",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -463,6 +498,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r4v: "20-33 वर्ष 01 जनवरी 2027 के अनुसार",
       r5l: "विज्ञापन संख्या",
       r5v: "केंद्रीय रोजगार सूचना संख्या 08/2026",
+      metaV: "अपडेट 26 अक्तूबर 2026 · स्रोत: rrb.indianrailways.gov.in",
       aboutH: "इस सूचना के बारे में",
       intro: "रेलवे भर्ती बोर्ड (RRB) ने भारतीय रेलवे में स्टेशन मास्टर के पद के लिए केंद्रीय रोजगार सूचना CEN No. 08/2026 जारी की है। कुल 1215 रिक्तियां उपलब्ध हैं। योग्य उम्मीदवार 27 अक्टूबर 2026 से 25 नवंबर 2026 तक अपने ऑनलाइन आवेदन जमा कर सकते हैं। आवेदकों को आवेदन करने से पहले पात्रता मापदंड, चिकित्सा मानक और आवेदन प्रक्रिया की समीक्षा करनी चाहिए।",
       datesH: "महत्वपूर्ण तिथियाँ",
@@ -515,6 +551,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a2: "उम्मीदवारों की आयु 01 जनवरी 2027 के अनुसार 20 से 33 वर्ष के बीच होनी चाहिए।",
       q3: "क्या मैं एक से अधिक आरआरबी में आवेदन कर सकता हूँ?",
       a3: "नहीं, उम्मीदवार केवल एक आरआरबी में आवेदन कर सकते हैं। एक से अधिक आरआरबी में आवेदन जमा करने से सभी आवेदन अस्वीकार हो जाएंगे।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "रेलवे भर्ती बोर्ड स्टेशन मास्टर केंद्रीय रोजगार सूचना 08/2026 शुद्धिपत्र 1",
       rel1: "रेलवे भर्ती बोर्ड स्नातक-पूर्व गैर-तकनीकी लोकप्रिय श्रेणियां भर्ती 2026",

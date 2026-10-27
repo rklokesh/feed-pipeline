@@ -40,6 +40,8 @@ PROMPT = """You write the facts section of a calm, trustworthy Indian government
 Input: the board, our review card, the official PDF text, and EDITOR NOTES from the site owner.
 EDITOR NOTES are corrections or additions by a human who checked the notice: apply them and prefer them over the PDF.
 Use only facts from the notice or the editor notes. Never invent dates, numbers, fees or links. Leave out what is unknown.
+Be thorough: a reader should not need to open the PDF for the basics. Detail comes from the notice's facts, never from filler or hype;
+general guidance (documents, mistakes, what happens next) must stay true for this kind of notice. Empty lists for anything that does not apply.
 Hindi must be natural Devanagari with no English words (proper nouns transliterated, numbers as digits, ₹ for money).
 Answer with ONE JSON object:
 {
@@ -54,7 +56,7 @@ Answer with ONE JSON object:
      // Exam date, Educational qualification, Age limit (with as-on date), Selection process, Advertisement number,
      // for results/admit cards: how to download, roll-number/district info, etc. Values short; dates like '14 Dec 2026'.
  "fees": [ {"cat_en": "General / OBC", "cat_hi": "सामान्य / अन्य पिछड़ा वर्ग", "amount": "₹100"} ],
- "intro_en": "3-4 sentence introduction for the page: which board, which posts/exam and year, how many vacancies, the key dates, and who should read it. Plain, factual, no hype.",
+ "intro_en": "4-6 sentence introduction for the page: which board, which posts/exam and year, how many vacancies, the key dates, and who should read it. Plain, factual, no hype.",
  "intro_hi": "same in Hindi",
  "dates": [ {"label_en": "Online application starts", "label_hi": "", "value_en": "03 Oct 2026", "value_hi": ""} ],
      // every stage printed in the notice, in order: notification, apply start, last date, fee last date, correction window,
@@ -66,8 +68,21 @@ Answer with ONE JSON object:
  "selection_en": ["step 1", "step 2"], "selection_hi": ["", ""],   // selection process stages, in order
  "how_en": ["step 1", "step 2"], "how_hi": ["", ""],                // how to apply / how to download, short imperative steps
  "extra": [ {"label_en": "", "label_hi": "", "value_en": "", "value_hi": ""} ],   // other useful facts: exam pattern, salary/pay level, documents needed, centres
+ "who_en": ["who should read/apply, one short line each, e.g. 'Graduates aged 18-30 who want a railway job'"], "who_hi": [""],
+ "not_en": ["who cannot apply / common reasons people are not eligible, from the notice"], "not_hi": [""],
+ "changes": [ {"what_en": "Last date to apply", "what_hi": "", "old_en": "30 Oct 2026", "old_hi": "", "new_en": "15 Nov 2026", "new_hi": ""} ],
+     // ONLY for corrigendum / extension / postponement / revised notices: each changed item with old and new value
+ "salary": [ {"label_en": "Pay level", "label_hi": "", "value_en": "Level 6 (₹35,400–1,12,400)", "value_hi": ""} ],   // only if printed
+ "exam_pattern": [ {"part_en": "General Awareness", "part_hi": "", "questions": "25", "marks": "50", "time": ""} ],
+     // subjects/papers with questions, marks, time; add a row 'Negative marking' in part_en with the rule in marks if printed
+ "physical": [ {"label_en": "Height (male)", "label_hi": "", "value_en": "170 cm", "value_hi": ""} ],   // police/defence physical standards
+ "documents_en": ["documents to keep ready / carry"], "documents_hi": [""],
+ "mistakes_en": ["common mistakes to avoid for THIS notice, practical, from its instructions"], "mistakes_hi": [""],
+ "explain": [ {"q_en": "What is <exam/post>?", "a_en": "2-3 plain sentences for a first-time reader", "q_hi": "", "a_hi": ""} ],   // 1-2 items
+ "after_en": ["what happens next after this notice: next stage, document verification, joining"], "after_hi": [""],
+ "checklist_en": ["final checklist before applying/downloading, short imperative lines"], "checklist_hi": [""],
  "faq": [ {"q_en": "What is the last date to apply for ...?", "a_en": "...", "q_hi": "", "a_hi": ""} ],
-     // 4-6 questions people actually search for THIS notice (last date, fee, age, eligibility, how to apply/download, vacancies),
+     // 8-12 questions people actually search for THIS notice (last date, fee, age, eligibility, how to apply/download, vacancies),
      // each answered in 1-2 sentences from the notice. Skip questions the notice does not answer.
  "notice_date": "YYYY-MM-DD: the date the board issued THIS notice (e.g. 'Dated: 08.10.2026', 'Date of publication', the date
                  printed at the top or bottom of the notice / press note). Not the exam date, not the last date. null if not printed.",
@@ -207,7 +222,7 @@ def render(n: dict, slug: str, related: list | None = None) -> str:
     last = valid_date(pg.get("last_date") or c.get("last_date")) if typ == "Job" else None
     if last:
         en["lastDate"], hi["lastDate"] = f"Last date {d_en(last)}", f"अंतिम तिथि {d_hi(last)}"
-    en["key"], hi["key"] = "Key details", "मुख्य जानकारी"
+    en["key"], hi["key"] = "At a glance", "एक नज़र में"
     en["fee"], hi["fee"] = "Application fee", "आवेदन शुल्क"
     en["links"], hi["links"] = "Official links", "आधिकारिक लिंक"
     en["lNotice"], hi["lNotice"] = "Official notice", "आधिकारिक सूचना"
@@ -246,20 +261,34 @@ def render(n: dict, slug: str, related: list | None = None) -> str:
         links.append(("lSite", site))
 
     esc = html.escape
+    from share_card import board as _board
+    logo_key = _board(n.get("source_id", ""))[0]
+    logo_img = (f'<img class="olg" src="/org/{logo_key}.webp" width="76" height="76" alt="{esc(en["byV"])} logo" decoding="async">'
+                if logo_key and (SITE / "org" / f"{logo_key}.webp").exists() else "")
+    src_host = host(n.get("url") or site or "")
+    en["metaV"] = f"Updated {d_en(checked)}" + (f" · Source: {src_host}" if src_host else "")
+    hi["metaV"] = f"अपडेट {d_hi(checked)}" + (f" · स्रोत: {src_host}" if src_host else "")
     main = [f'''    <div class="title">
+      {logo_img}
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat={CAT_SLUG.get(typ, "jobs")}" data-t="crumbType">{esc(en["crumbType"])}</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">{esc(en["org"])}</span></nav>
       <h1 data-t="h1">{esc(en["h1"])}</h1>
+      <p class="meta g" data-t="metaV">{esc(en["metaV"])}</p>
       <p class="status"><span id="state">{esc(en["statusV"])}</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       {f'<p class="lead" data-t="summary">{esc(en["summary"])}</p>' if en["summary"] else ""}
     </div>''',
-            '    <section class="kv" data-t-aria="key">\n      <div class="h" data-t="key">Key details</div>\n' +
+            '    <section class="kv glance" id="glance" data-t-aria="key">\n      <div class="h" data-t="key">At a glance</div>\n' +
             "".join(f'      <div class="r"><span data-t="{lk}">{esc(en[lk])}</span><span class="v" data-t="{vk}">{esc(en[vk])}</span></div>\n'
                     for lk, vk in rows) + "    </section>"]
-    if fees:
-        main.append('    <section class="kv" data-t-aria="fee">\n      <div class="h" data-t="fee">Application fee</div>\n' +
+    def fee_section():
+        if not fees:
+            return
+        toc.append(("fee", "fee"))
+        main.append('    <section class="kv" id="fee" data-t-aria="fee">\n      <div class="h" data-t="fee">Application fee</div>\n' +
                     "".join(f'      <div class="r"><span data-t="{k}">{esc(en[k])}</span><span class="v num">{amt}</span></div>\n' for k, amt in fees) +
                     "    </section>")
     S = lambda v: "" if v is None else (", ".join(S(x) for x in v) if isinstance(v, list) else str(v)).strip()
+
+    toc = []
 
     def sec_kv(key, label_en, label_hi, items):
         """items: (label_en, label_hi, value_en, value_hi); returns a table-like section"""
@@ -273,9 +302,10 @@ def render(n: dict, slug: str, related: list | None = None) -> str:
             en[f"{key}{k}l"], hi[f"{key}{k}l"] = le, lh or le
             en[f"{key}{k}v"], hi[f"{key}{k}v"] = ve, vh or ve
             body += f'      <div class="r"><span data-t="{key}{k}l">{esc(le)}</span><span class="v" data-t="{key}{k}v">{esc(ve)}</span></div>\n'
-        main.append(f'    <section class="kv" data-t-aria="{key}">\n      <div class="h" data-t="{key}">{esc(label_en)}</div>\n{body}    </section>')
+        toc.append((key, key))
+        main.append(f'    <section class="kv" id="{key}" data-t-aria="{key}">\n      <div class="h" data-t="{key}">{esc(label_en)}</div>\n{body}    </section>')
 
-    def sec_list(key, label_en, label_hi, items_en, items_hi):
+    def sec_list(key, label_en, label_hi, items_en, items_hi, ordered=True):
         items_en = [S(x) for x in (items_en if isinstance(items_en, list) else [items_en] if items_en else [])]
         items_hi = [S(x) for x in (items_hi if isinstance(items_hi, list) else [])]
         items = [(e, (items_hi[k] if k < len(items_hi) and items_hi[k] else e)) for k, e in enumerate(items_en) if e]
@@ -286,29 +316,77 @@ def render(n: dict, slug: str, related: list | None = None) -> str:
         for k, (e, h) in enumerate(items):
             en[f"{key}{k}"], hi[f"{key}{k}"] = e, h
             lis += f'<li data-t="{key}{k}">{esc(e)}</li>'
-        main.append(f'    <section class="kv" data-t-aria="{key}">\n      <div class="h" data-t="{key}">{esc(label_en)}</div>\n      <ol class="steps">{lis}</ol>\n    </section>')
+        toc.append((key, key))
+        tag = "ol" if ordered else "ul"
+        main.append(f'    <section class="kv" id="{key}" data-t-aria="{key}">\n      <div class="h" data-t="{key}">{esc(label_en)}</div>\n      <{tag} class="steps{"" if ordered else " dots"}">{lis}</{tag}>\n    </section>')
 
     g = lambda k: [x for x in (pg.get(k) or []) if isinstance(x, dict)] if isinstance(pg.get(k), list) else []
+    kv4 = lambda k: [(d.get("label_en"), d.get("label_hi"), d.get("value_en"), d.get("value_hi")) for d in g(k)]
     if S(pg.get("intro_en")):
         pg["intro_en"], pg["intro_hi"] = S(pg.get("intro_en")), S(pg.get("intro_hi"))
         en["aboutH"], hi["aboutH"] = "About this notice", "इस सूचना के बारे में"
         en["intro"], hi["intro"] = pg["intro_en"], pg.get("intro_hi") or pg["intro_en"]
-        main.insert(1, '    <section class="kv" data-t-aria="aboutH">\n      <div class="h" data-t="aboutH">About this notice</div>\n'
-                       f'      <p class="p" data-t="intro">{esc(en["intro"])}</p>\n    </section>')
-    sec_kv("datesH", "Important dates", "महत्वपूर्ण तिथियाँ", [(d.get("label_en"), d.get("label_hi"), d.get("value_en"), d.get("value_hi")) for d in g("dates")])
-    sec_kv("ageH", "Age limit", "आयु सीमा", [(d.get("label_en"), d.get("label_hi"), d.get("value_en"), d.get("value_hi")) for d in g("age")])
-    vac = [(v.get("post_en"), v.get("post_hi"), " · ".join(x for x in [str(v.get("total") or ""), v.get("detail_en") or ""] if x),
-            " · ".join(x for x in [str(v.get("total") or ""), v.get("detail_hi") or v.get("detail_en") or ""] if x)) for v in g("vacancies")]
+        toc.append(("about", "aboutH"))
+        main.append('    <section class="kv" id="about" data-t-aria="aboutH">\n      <div class="h" data-t="aboutH">About this notice</div>\n'
+                    f'      <p class="p" data-t="intro">{esc(en["intro"])}</p>\n    </section>')
+    ch = [(d.get("what_en"), d.get("what_hi"), f"{S(d.get('old_en')) or '—'} → {S(d.get('new_en'))}",
+           f"{S(d.get('old_hi') or d.get('old_en')) or '—'} → {S(d.get('new_hi') or d.get('new_en'))}") for d in g("changes") if S(d.get("new_en"))]
+    sec_kv("chgH", "What changed", "क्या बदला", ch)
+    sec_list("whoH", "Who should read this", "यह किसके लिए है", pg.get("who_en"), pg.get("who_hi"), ordered=False)
+    sec_list("notH", "Who cannot apply", "कौन आवेदन नहीं कर सकता", pg.get("not_en"), pg.get("not_hi"), ordered=False)
+    sec_kv("datesH", "Important dates", "महत्वपूर्ण तिथियाँ", kv4("dates"))
+    fee_section()
+    sec_kv("ageH", "Age limit", "आयु सीमा", kv4("age"))
+    vac = [(v.get("post_en"), v.get("post_hi"), " · ".join(x for x in [S(v.get("total")), S(v.get("detail_en"))] if x),
+            " · ".join(x for x in [S(v.get("total")), S(v.get("detail_hi") or v.get("detail_en"))] if x)) for v in g("vacancies")]
+    nums = [re.fullmatch(r"[\d,]+", S(v.get("total"))) for v in g("vacancies")]
+    if len(nums) > 1 and all(nums):
+        tot = f'{sum(int(m.group(0).replace(",", "")) for m in nums):,}'
+        vac.append(("Total", "कुल", tot, tot))
     sec_kv("vacH", "Vacancy details", "रिक्तियों का विवरण", vac)
-    sec_kv("eligH", "Eligibility", "पात्रता", [(d.get("label_en"), d.get("label_hi"), d.get("value_en"), d.get("value_hi")) for d in g("eligibility")])
+    sec_kv("eligH", "Eligibility", "पात्रता", kv4("eligibility"))
+    sec_kv("physH", "Physical standards", "शारीरिक मानक", kv4("physical"))
+    sec_kv("payH", "Salary and pay level", "वेतन और पे लेवल", kv4("salary"))
+    pat = [d for d in g("exam_pattern") if S(d.get("part_en"))]
+    if pat:
+        en["patH"], hi["patH"] = "Exam pattern", "परीक्षा पैटर्न"
+        en["patC1"], hi["patC1"] = "Part / subject", "भाग / विषय"
+        en["patC2"], hi["patC2"] = "Questions", "प्रश्न"
+        en["patC3"], hi["patC3"] = "Marks", "अंक"
+        en["patC4"], hi["patC4"] = "Time", "समय"
+        has_t = any(S(d.get("time")) for d in pat)
+        rows_h = ""
+        for k, d in enumerate(pat):
+            en[f"pat{k}"], hi[f"pat{k}"] = S(d.get("part_en")), S(d.get("part_hi")) or S(d.get("part_en"))
+            rows_h += (f'<tr><td data-t="pat{k}">{esc(en[f"pat{k}"])}</td><td class="num">{esc(S(d.get("questions")))}</td>'
+                       f'<td class="num">{esc(S(d.get("marks")))}</td>' + (f'<td>{esc(S(d.get("time")))}</td>' if has_t else "") + "</tr>")
+        toc.append(("patH", "patH"))
+        main.append('    <section class="kv" id="patH" data-t-aria="patH">\n      <div class="h" data-t="patH">Exam pattern</div>\n'
+                    '      <div class="tw"><table class="tbl"><thead><tr><th data-t="patC1">Part / subject</th><th data-t="patC2">Questions</th><th data-t="patC3">Marks</th>'
+                    + ('<th data-t="patC4">Time</th>' if has_t else "") + f'</tr></thead><tbody>{rows_h}</tbody></table></div>\n    </section>')
     sec_list("selH", "Selection process", "चयन प्रक्रिया", pg.get("selection_en"), pg.get("selection_hi"))
     sec_list("howH", "How to apply" if typ == "Job" else "How to download", "आवेदन कैसे करें" if typ == "Job" else "कैसे डाउनलोड करें", pg.get("how_en"), pg.get("how_hi"))
-    sec_kv("extraH", "Other details", "अन्य जानकारी", [(d.get("label_en"), d.get("label_hi"), d.get("value_en"), d.get("value_hi")) for d in g("extra")])
-    main.append('    <section class="kv" data-t-aria="links">\n      <div class="h" data-t="links">Official links</div>\n' +
+    sec_list("docH", "Documents to keep ready", "ज़रूरी दस्तावेज़", pg.get("documents_en"), pg.get("documents_hi"), ordered=False)
+    sec_list("mistH", "Common mistakes to avoid", "इन गलतियों से बचें", pg.get("mistakes_en"), pg.get("mistakes_hi"), ordered=False)
+    exp = [{k: S(v) for k, v in q.items()} for q in g("explain")]
+    exp = [q for q in exp if q.get("q_en") and q.get("a_en")][:2]
+    if exp:
+        en["expH"], hi["expH"] = "Good to know", "जानने योग्य"
+        body_e = ""
+        for k, q in enumerate(exp):
+            en[f"eq{k}"], hi[f"eq{k}"] = q["q_en"], q.get("q_hi") or q["q_en"]
+            en[f"ea{k}"], hi[f"ea{k}"] = q["a_en"], q.get("a_hi") or q["a_en"]
+            body_e += f'      <div class="qa"><h3 data-t="eq{k}">{esc(q["q_en"])}</h3><p data-t="ea{k}">{esc(q["a_en"])}</p></div>\n'
+        toc.append(("expH", "expH"))
+        main.append(f'    <section class="kv faq" id="expH" data-t-aria="expH">\n      <div class="h" data-t="expH">Good to know</div>\n{body_e}    </section>')
+    sec_list("aftH", "What happens next", "आगे क्या होगा", pg.get("after_en"), pg.get("after_hi"))
+    sec_kv("extraH", "Other details", "अन्य जानकारी", kv4("extra"))
+    toc.append(("links", "links"))
+    main.append('    <section class="kv" id="links" data-t-aria="links">\n      <div class="h" data-t="links">Official links</div>\n' +
                 "".join(f'      <a class="r" href="{esc(u)}" target="_blank" rel="noopener"><span data-t="{k}">{esc(en[k])}</span><span class="v">{esc(host(u))}</span></a>\n'
                         for k, u in links if u) + "    </section>")
     faq = [{k: S(v) for k, v in q.items()} for q in g("faq")]
-    faq = [q for q in faq if q.get("q_en") and q.get("a_en")][:6]
+    faq = [q for q in faq if q.get("q_en") and q.get("a_en")][:12]
     if faq:
         en["faqH"], hi["faqH"] = "Frequently asked questions", "अक्सर पूछे जाने वाले सवाल"
         body = ""
@@ -316,7 +394,17 @@ def render(n: dict, slug: str, related: list | None = None) -> str:
             en[f"q{k}"], hi[f"q{k}"] = q["q_en"], q.get("q_hi") or q["q_en"]
             en[f"a{k}"], hi[f"a{k}"] = q["a_en"], q.get("a_hi") or q["a_en"]
             body += f'      <div class="qa"><h3 data-t="q{k}">{esc(q["q_en"])}</h3><p data-t="a{k}">{esc(q["a_en"])}</p></div>\n'
-        main.append(f'    <section class="kv faq" data-t-aria="faqH">\n      <div class="h" data-t="faqH">Frequently asked questions</div>\n{body}    </section>')
+        toc.append(("faq", "faqH"))
+        main.append(f'    <section class="kv faq" id="faq" data-t-aria="faqH">\n      <div class="h" data-t="faqH">Frequently asked questions</div>\n{body}    </section>')
+    sec_list("chkH", "Final checklist", "अंतिम चेकलिस्ट", pg.get("checklist_en"), pg.get("checklist_hi"), ordered=False)
+    if S(pg.get("intro_hi")) or S(pg.get("summary_hi")):
+        # for readers on the English page who are more at home in Hindi; hidden when the page is already in Hindi
+        hs = " ".join(x for x in [S(pg.get("summary_hi")), S(pg.get("intro_hi"))] if x)
+        main.append(f'    <section class="kv hisum" lang="hi">\n      <div class="h">हिंदी में सारांश</div>\n      <p class="p">{esc(hs)}</p>\n    </section>')
+    if len(toc) >= 4:
+        en["tocH"], hi["tocH"] = "On this page", "इस पेज पर"
+        items = "".join(f'<li><a href="#{a_}" data-t="{k_}">{esc(en[k_])}</a></li>' for a_, k_ in toc)
+        main.insert(2, f'    <details class="toc"><summary data-t="tocH">On this page</summary><ol>{items}</ol></details>')
     if related:
         en["relH"], hi["relH"] = "More notices", "और सूचनाएँ"
         body = ""
@@ -393,7 +481,7 @@ def main():
             continue
         # pages written before the full layout (no FAQ/intro) are upgraded a few per run, so the free AI quota
         # is never exhausted in one go; every 30-minute check upgrades the next few until all are done
-        old_layout = n.get("page") and not ({"faq", "intro_en"} & set(n["page"]))
+        old_layout = n.get("page") and "share_card" not in n["page"]   # before the full article layout (Oct 2026)
         need_ai = rebuild_all or not n.get("page") or (old_layout and backfill[0] > 0)
         if old_layout and not rebuild_all and need_ai:
             backfill[0] -= 1

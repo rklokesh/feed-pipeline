@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,17 +258,15 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/nta.webp" width="76" height="76" alt="National Testing Agency (NTA) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">NTA</span></nav>
       <h1 data-t="h1">NTA NIFT Entrance Examination NIFTEE 2027</h1>
+      <p class="meta g" data-t="metaV">Updated 22 Oct 2026 · Source: nta.ac.in</p>
       <p class="status"><span id="state">Notice published</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">National Testing Agency invites online applications for NIFTEE 2027 for admissions to various UG, PG, NLEA, Artisans, and Ph.D. programmes. Eligible candidates should apply online through the official portal before 16 November 2026.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">The National Testing Agency (NTA) has released the notification for the National Institute of Fashion Technology Entrance Examination (NIFTEE) 2027. This examination is conducted for admissions to Undergraduate, Postgraduate, NLEA, Artisans, and Ph.D. programmes for the academic session 2027–28. Online registrations are open from 16 October 2026 to 16 November 2026. Interested candidates should review the eligibility criteria and apply through the official website.</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">National Testing Agency (NTA)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">16 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Programs</span><span class="v" data-t="r0v">UG, PG, NLEA, Artisans and Ph.D. Programmes</span></div>
@@ -250,11 +274,12 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="r2l">Exam date</span><span class="v" data-t="r2v">10 Jan 2027</span></div>
       <div class="r"><span data-t="r3l">Advertisement number</span><span class="v" data-t="r3v">NIFTEE–2027</span></div>
     </section>
-    <section class="kv" data-t-aria="fee">
-      <div class="h" data-t="fee">Application fee</div>
-      <div class="r"><span data-t="f0">With late fee (additional)</span><span class="v num">₹5000</span></div>
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#fee" data-t="fee">Application fee</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">The National Testing Agency (NTA) has released the notification for the National Institute of Fashion Technology Entrance Examination (NIFTEE) 2027. This examination is conducted for admissions to Undergraduate, Postgraduate, NLEA, Artisans, and Ph.D. programmes for the academic session 2027–28. Online registrations are open from 16 October 2026 to 16 November 2026. Interested candidates should review the eligibility criteria and apply through the official website.</p>
     </section>
-    <section class="kv" data-t-aria="datesH">
+    <section class="kv" id="datesH" data-t-aria="datesH">
       <div class="h" data-t="datesH">Important dates</div>
       <div class="r"><span data-t="datesH0l">Online registration starts</span><span class="v" data-t="datesH0v">16 Oct 2026</span></div>
       <div class="r"><span data-t="datesH1l">Last date to apply</span><span class="v" data-t="datesH1v">16 Nov 2026</span></div>
@@ -264,39 +289,47 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="datesH5l">Downloading of Admit Card</span><span class="v" data-t="datesH5v">04 Jan 2027</span></div>
       <div class="r"><span data-t="datesH6l">Date of Entrance Examination</span><span class="v" data-t="datesH6v">10 Jan 2027</span></div>
     </section>
-    <section class="kv" data-t-aria="vacH">
+    <section class="kv" id="fee" data-t-aria="fee">
+      <div class="h" data-t="fee">Application fee</div>
+      <div class="r"><span data-t="f0">With late fee (additional)</span><span class="v num">₹5000</span></div>
+    </section>
+    <section class="kv" id="vacH" data-t-aria="vacH">
       <div class="h" data-t="vacH">Vacancy details</div>
       <div class="r"><span data-t="vacH0l">UG, PG, NLEA, Artisans and Ph.D. Programmes</span><span class="v" data-t="vacH0v">Not specified · Includes B.Des, B.F.Tech, M.Des, M.F.M, M.F.Tech, Lateral Entry, Artisans, and Ph.D. admissions.</span></div>
     </section>
-    <section class="kv" data-t-aria="eligH">
+    <section class="kv" id="eligH" data-t-aria="eligH">
       <div class="h" data-t="eligH">Eligibility</div>
       <div class="r"><span data-t="eligH0l">Education &amp; Eligibility</span><span class="v" data-t="eligH0v">Refer to the NIFT Admissions Guidelines–2027 and NIFTEE–2027 Information Bulletin for detailed educational qualifications, age limits, and subject combinations.</span></div>
     </section>
-    <section class="kv" data-t-aria="selH">
+    <section class="kv" id="selH" data-t-aria="selH">
       <div class="h" data-t="selH">Selection process</div>
       <ol class="steps"><li data-t="selH0">Computer Based Test (CBT) - GAT and/or Paper Based Test (PBT) - CAT as applicable</li><li data-t="selH1">Research Proposal Presentation and Interview (RPPI) for Ph.D. candidates</li><li data-t="selH2">Subsequent selection stages as prescribed in NIFT Admissions Guidelines-2027</li></ol>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to apply</div>
       <ol class="steps"><li data-t="howH0">Visit the official NTA NIFTEE website at https://exams.nta.nic.in/niftee/</li><li data-t="howH1">Register online and fill out the application form with required details</li><li data-t="howH2">Upload recent photograph, signature, UDID Card (if PwD), and other required documents</li><li data-t="howH3">Pay the application fee online and submit the form</li></ol>
     </section>
-    <section class="kv" data-t-aria="extraH">
+    <section class="kv" id="extraH" data-t-aria="extraH">
       <div class="h" data-t="extraH">Other details</div>
       <div class="r"><span data-t="extraH0l">Exam Mode</span><span class="v" data-t="extraH0v">Computer Based Test (CBT) for GAT and Paper Based Test (PBT) for CAT</span></div>
       <div class="r"><span data-t="extraH1l">Helpline Numbers</span><span class="v" data-t="extraH1v">011-40759000, 011-69227700</span></div>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://nta.ac.in/Download/Notice/Notice_20261016183525.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">nta.ac.in</span></a>
       <a class="r" href="https://exams.nta.nic.in/niftee/" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">exams.nta.nic.in</span></a>
       <a class="r" href="https://www.nta.ac.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">nta.ac.in</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">What is the last date to apply for NIFTEE 2027?</h3><p data-t="a0">The last date to submit the online application form is 16 November 2026. Applications with a late fee of ₹5000 can be submitted until 21 November 2026.</p></div>
       <div class="qa"><h3 data-t="q1">When will the NIFTEE 2027 examination be conducted?</h3><p data-t="a1">The entrance examination for NIFTEE 2027 is scheduled to be conducted on 10 January 2027.</p></div>
       <div class="qa"><h3 data-t="q2">When can I download the NIFTEE 2027 admit card?</h3><p data-t="a2">Admit cards for the entrance examination will be available for download from 4 January 2027.</p></div>
       <div class="qa"><h3 data-t="q3">What is the official website to apply for NIFTEE 2027?</h3><p data-t="a3">Candidates can apply online through the official portal at https://exams.nta.nic.in/niftee/.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">राष्ट्रीय परीक्षण एजेंसी ने विभिन्न स्नातक, स्नातकोत्तर, एनएलईए, कारीगर और पीएचडी कार्यक्रमों में प्रवेश के लिए राष्ट्रीय फैशन प्रौद्योगिकी संस्थान प्रवेश परीक्षा 2027 के वास्ते ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 16 नवंबर 2026 से पहले आधिकारिक पोर्टल के माध्यम से ऑनलाइन आवेदन करें। राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने राष्ट्रीय फैशन प्रौद्योगिकी संस्थान प्रवेश परीक्षा (निफ्टीई) 2027 के लिए अधिसूचना जारी कर दी है। यह परीक्षा शैक्षणिक सत्र 2027–28 के लिए स्नातक, स्नातकोत्तर, एनएलईए, कारीगर और पीएचडी कार्यक्रमों में प्रवेश के लिए आयोजित की जाती है। ऑनलाइन पंजीकरण 16 अक्टूबर 2026 से 16 नवंबर 2026 तक खुला है। इच्छुक उम्मीदवार पात्रता मानदंड की समीक्षा करें और आधिकारिक वेबसाइट के माध्यम से आवेदन करें।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -339,7 +372,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "National Testing Agency invites online applications for NIFTEE 2027 for admissions to various UG, PG, NLEA, Artisans, and Ph.D. programmes. Eligible candidates should apply online through the official portal before 16 November 2026.",
       statusV: "Notice published",
       lastDate: "Last date 16 Nov 2026",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -359,6 +392,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r3l: "Advertisement number",
       r3v: "NIFTEE–2027",
       f0: "With late fee (additional)",
+      metaV: "Updated 22 Oct 2026 · Source: nta.ac.in",
       aboutH: "About this notice",
       intro: "The National Testing Agency (NTA) has released the notification for the National Institute of Fashion Technology Entrance Examination (NIFTEE) 2027. This examination is conducted for admissions to Undergraduate, Postgraduate, NLEA, Artisans, and Ph.D. programmes for the academic session 2027–28. Online registrations are open from 16 October 2026 to 16 November 2026. Interested candidates should review the eligibility criteria and apply through the official website.",
       datesH: "Important dates",
@@ -405,6 +439,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a2: "Admit cards for the entrance examination will be available for download from 4 January 2027.",
       q3: "What is the official website to apply for NIFTEE 2027?",
       a3: "Candidates can apply online through the official portal at https://exams.nta.nic.in/niftee/.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "UGC-NET December 2026 Last Date Extended",
       rel1: "NTA UGC-NET December 2026 Application Date Extended",
@@ -428,7 +463,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "राष्ट्रीय परीक्षण एजेंसी ने विभिन्न स्नातक, स्नातकोत्तर, एनएलईए, कारीगर और पीएचडी कार्यक्रमों में प्रवेश के लिए राष्ट्रीय फैशन प्रौद्योगिकी संस्थान प्रवेश परीक्षा 2027 के वास्ते ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 16 नवंबर 2026 से पहले आधिकारिक पोर्टल के माध्यम से ऑनलाइन आवेदन करें।",
       statusV: "सूचना जारी",
       lastDate: "अंतिम तिथि 16 नवंबर 2026",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -448,6 +483,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r3l: "विज्ञापन संख्या",
       r3v: "निफ्टीई–2027",
       f0: "विलंब शुल्क के साथ (अतिरिक्त)",
+      metaV: "अपडेट 22 अक्तूबर 2026 · स्रोत: nta.ac.in",
       aboutH: "इस सूचना के बारे में",
       intro: "राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने राष्ट्रीय फैशन प्रौद्योगिकी संस्थान प्रवेश परीक्षा (निफ्टीई) 2027 के लिए अधिसूचना जारी कर दी है। यह परीक्षा शैक्षणिक सत्र 2027–28 के लिए स्नातक, स्नातकोत्तर, एनएलईए, कारीगर और पीएचडी कार्यक्रमों में प्रवेश के लिए आयोजित की जाती है। ऑनलाइन पंजीकरण 16 अक्टूबर 2026 से 16 नवंबर 2026 तक खुला है। इच्छुक उम्मीदवार पात्रता मानदंड की समीक्षा करें और आधिकारिक वेबसाइट के माध्यम से आवेदन करें।",
       datesH: "महत्वपूर्ण तिथियाँ",
@@ -494,6 +530,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a2: "प्रवेश परीक्षा के लिए एडमिट कार्ड 4 जनवरी 2027 से डाउनलोड के लिए उपलब्ध होंगे।",
       q3: "निफ्टीई 2027 के लिए आवेदन करने की आधिकारिक वेबसाइट क्या है?",
       a3: "उम्मीदवार आधिकारिक पोर्टल https://exams.nta.nic.in/niftee/ के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "यूजीसी-नेट दिसंबर 2026 अंतिम तिथि बढ़ाई गई",
       rel1: "एनटीए यूजीसी-नेट दिसंबर 2026 आवेदन तिथि बढ़ाई गई",

@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,17 +258,15 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/ukpsc.webp" width="76" height="76" alt="Uttarakhand Public Service Commission (UKPSC) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">UKPSC</span></nav>
       <h1 data-t="h1">UKPSC Combined State Civil Upper Subordinate Exam 2026</h1>
+      <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: psc.uk.gov.in</p>
       <p class="status"><span id="state">Notice published</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Uttarakhand Public Service Commission has invited online applications for 67 vacancies under the Combined State Civil/Upper Subordinate Services Examination 2026. Eligible candidates can apply online up to 29 September 2026.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">The Uttarakhand Public Service Commission (UKPSC) has released the notification for the Combined State Civil/Upper Subordinate Services Examination 2026 to fill 67 vacancies across various departments. Online applications are open from 09 September 2026 to 29 September 2026. Eligible and interested candidates should review the official advertisement thoroughly before applying on the official website.</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Uttarakhand Public Service Commission (UKPSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">9 Sep 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Combined State Civil/Upper Subordinate Services</span></div>
@@ -251,7 +275,12 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="r3l">Last date for fee</span><span class="v" data-t="r3v">29 Sep 2026</span></div>
       <div class="r"><span data-t="r4l">Advertisement number</span><span class="v" data-t="r4v">A-1/E-1/2026-27</span></div>
     </section>
-    <section class="kv" data-t-aria="datesH">
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">The Uttarakhand Public Service Commission (UKPSC) has released the notification for the Combined State Civil/Upper Subordinate Services Examination 2026 to fill 67 vacancies across various departments. Online applications are open from 09 September 2026 to 29 September 2026. Eligible and interested candidates should review the official advertisement thoroughly before applying on the official website.</p>
+    </section>
+    <section class="kv" id="datesH" data-t-aria="datesH">
       <div class="h" data-t="datesH">Important dates</div>
       <div class="r"><span data-t="datesH0l">Notification date</span><span class="v" data-t="datesH0v">09 Sep 2026</span></div>
       <div class="r"><span data-t="datesH1l">Online application starts</span><span class="v" data-t="datesH1v">09 Sep 2026</span></div>
@@ -259,28 +288,32 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="datesH3l">Examination fee last date</span><span class="v" data-t="datesH3v">29 Sep 2026</span></div>
       <div class="r"><span data-t="datesH4l">Correction window</span><span class="v" data-t="datesH4v">07 Oct 2026 to 16 Oct 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="vacH">
+    <section class="kv" id="vacH" data-t-aria="vacH">
       <div class="h" data-t="vacH">Vacancy details</div>
       <div class="r"><span data-t="vacH0l">Combined State Civil/Upper Subordinate Services</span><span class="v" data-t="vacH0v">67 · Various departments</span></div>
     </section>
-    <section class="kv" data-t-aria="selH">
+    <section class="kv" id="selH" data-t-aria="selH">
       <div class="h" data-t="selH">Selection process</div>
       <ol class="steps"><li data-t="selH0">Check the official notification for detailed selection process.</li></ol>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to apply</div>
       <ol class="steps"><li data-t="howH0">Visit the official UKPSC website.</li><li data-t="howH1">Read the detailed advertisement and ensure eligibility.</li><li data-t="howH2">Fill out the online application form and pay the fee before the last date.</li></ol>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://psc.uk.gov.in/public/uploads/recruitment/1247631101.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">psc.uk.gov.in</span></a>
       <a class="r" href="https://psc.uk.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">psc.uk.gov.in</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">What is the last date to apply for UKPSC Combined State Civil Upper Subordinate Exam 2026?</h3><p data-t="a0">The last date to submit online applications is 29 September 2026.</p></div>
       <div class="qa"><h3 data-t="q1">How many vacancies are announced in this recruitment?</h3><p data-t="a1">A total of 67 vacancies are announced under this examination.</p></div>
       <div class="qa"><h3 data-t="q2">When is the correction window open for the application form?</h3><p data-t="a2">The correction window is open from 07 October 2026 to 16 October 2026.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">उत्तराखंड लोक सेवा आयोग ने सम्मिलित राज्य सिविल प्रवर अधीनस्थ सेवा परीक्षा 2026 के अंतर्गत 67 रिक्त पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 29 सितंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं। उत्तराखंड लोक सेवा आयोग (UKPSC) ने विभिन्न विभागों में 67 रिक्तियों को भरने के लिए सम्मिलित राज्य सिविल/प्रवर अधीनस्थ सेवा परीक्षा 2026 का विज्ञापन जारी किया है। ऑनलाइन आवेदन 09 सितंबर 2026 से 29 सितंबर 2026 तक खुले हैं। योग्य और इच्छुक उम्मीदवारों को आवेदन करने से पहले आधिकारिक विज्ञापन की भली-भांति जाँच करनी चाहिए।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -323,7 +356,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "Uttarakhand Public Service Commission has invited online applications for 67 vacancies under the Combined State Civil/Upper Subordinate Services Examination 2026. Eligible candidates can apply online up to 29 September 2026.",
       statusV: "Notice published",
       lastDate: "Last date 29 Sep 2026",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -344,6 +377,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r3v: "29 Sep 2026",
       r4l: "Advertisement number",
       r4v: "A-1/E-1/2026-27",
+      metaV: "Updated 23 Oct 2026 · Source: psc.uk.gov.in",
       aboutH: "About this notice",
       intro: "The Uttarakhand Public Service Commission (UKPSC) has released the notification for the Combined State Civil/Upper Subordinate Services Examination 2026 to fill 67 vacancies across various departments. Online applications are open from 09 September 2026 to 29 September 2026. Eligible and interested candidates should review the official advertisement thoroughly before applying on the official website.",
       datesH: "Important dates",
@@ -373,6 +407,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "A total of 67 vacancies are announced under this examination.",
       q2: "When is the correction window open for the application form?",
       a2: "The correction window is open from 07 October 2026 to 16 October 2026.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "UKPSC Upper Subordinate Exam 2026 Correction Window",
       rel1: "UKPSC Assistant Geologist, Mining & Chemist Exam 2026 Document Submission",
@@ -396,7 +431,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "उत्तराखंड लोक सेवा आयोग ने सम्मिलित राज्य सिविल प्रवर अधीनस्थ सेवा परीक्षा 2026 के अंतर्गत 67 रिक्त पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 29 सितंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
       statusV: "सूचना जारी",
       lastDate: "अंतिम तिथि 29 सितंबर 2026",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -417,6 +452,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r3v: "29 सितंबर 2026",
       r4l: "विज्ञापन संख्या",
       r4v: "A-1/E-1/2026-27",
+      metaV: "अपडेट 23 अक्तूबर 2026 · स्रोत: psc.uk.gov.in",
       aboutH: "इस सूचना के बारे में",
       intro: "उत्तराखंड लोक सेवा आयोग (UKPSC) ने विभिन्न विभागों में 67 रिक्तियों को भरने के लिए सम्मिलित राज्य सिविल/प्रवर अधीनस्थ सेवा परीक्षा 2026 का विज्ञापन जारी किया है। ऑनलाइन आवेदन 09 सितंबर 2026 से 29 सितंबर 2026 तक खुले हैं। योग्य और इच्छुक उम्मीदवारों को आवेदन करने से पहले आधिकारिक विज्ञापन की भली-भांति जाँच करनी चाहिए।",
       datesH: "महत्वपूर्ण तिथियाँ",
@@ -446,6 +482,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "इस परीक्षा के अंतर्गत कुल 67 रिक्तियों की घोषणा की गई है।",
       q2: "आवेदन पत्र के लिए संशोधन विंडो कब खुली रहेगी?",
       a2: "संशोधन विंडो 07 अक्टूबर 2026 से 16 अक्टूबर 2026 तक खुली रहेगी।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "उत्तराखंड सम्मिलित राज्य सिविल प्रवर अधीनस्थ सेवा परीक्षा 2026 संशोधन विंडो",
       rel1: "उत्तराखंड लोक सेवा आयोग सहायक भू-वैज्ञानिक, खान और रसायनज्ञ परीक्षा 2026 दस्तावेज प्रेषण",

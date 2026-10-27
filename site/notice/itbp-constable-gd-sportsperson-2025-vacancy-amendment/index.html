@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,39 +258,46 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/itbp.webp" width="76" height="76" alt="Indo-Tibetan Border Police (ITBP) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">ITBP</span></nav>
       <h1 data-t="h1">ITBP Constable GD Sportsperson 2025 Vacancy Amendment</h1>
+      <p class="meta g" data-t="metaV">Updated 22 Oct 2026 · Source: recruitment.itbpolice.nic.in</p>
       <p class="status"><span id="state">Notice published</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Indo-Tibetan Border Police has issued a corrigendum regarding the number of seats for the weightlifting discipline in the Constable GD Sportsperson recruitment 2025. Candidates can check the updated seat details in the official notice. Read the official notification for further details.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">The Indo-Tibetan Border Police (ITBP) has released a corrigendum notice for the recruitment of Constable (General Duty) Sportsperson 2025. This notice specifically announces an amendment in the number of seats for the weightlifting discipline (Sl No 22). Candidates who applied for this recruitment should review the updated vacancy details.</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Indo-Tibetan Border Police (ITBP)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">22 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Constable (General Duty) Sportsperson</span></div>
       <div class="r"><span data-t="r1l">Recruitment Year</span><span class="v" data-t="r1v">2025</span></div>
     </section>
-    <section class="kv" data-t-aria="vacH">
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">The Indo-Tibetan Border Police (ITBP) has released a corrigendum notice for the recruitment of Constable (General Duty) Sportsperson 2025. This notice specifically announces an amendment in the number of seats for the weightlifting discipline (Sl No 22). Candidates who applied for this recruitment should review the updated vacancy details.</p>
+    </section>
+    <section class="kv" id="vacH" data-t-aria="vacH">
       <div class="h" data-t="vacH">Vacancy details</div>
       <div class="r"><span data-t="vacH0l">Constable (General Duty) Sportsperson - Weightlifting Discipline</span><span class="v" data-t="vacH0v">As per Corrigendum · Amendment in the number of seats for Sl No 22 Weightlifting discipline.</span></div>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to apply</div>
       <ol class="steps"><li data-t="howH0">Visit the official ITBP recruitment website.</li><li data-t="howH1">Click on the link for the Constable GD Sportsperson 2025 weightlifting corrigendum notice.</li><li data-t="howH2">Download and read the PDF to check the revised vacancy details.</li></ol>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://recruitment.itbpolice.nic.in/noticeboards/downloadpdf/362.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">recruitment.itbpolice.nic.in</span></a>
       <a class="r" href="https://recruitment.itbpolice.nic.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">recruitment.itbpolice.nic.in</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">What is the ITBP Constable GD Sportsperson 2025 corrigendum about?</h3><p data-t="a0">The corrigendum announces an amendment in the number of seats for the weightlifting discipline (Sl No 22).</p></div>
       <div class="qa"><h3 data-t="q1">Which organization conducts the Constable GD Sportsperson recruitment?</h3><p data-t="a1">The Indo-Tibetan Border Police (ITBP) conducts this recruitment.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">भारत-तिब्बत सीमा पुलिस ने कांस्टेबल जीडी स्पोर्ट्सपर्सन भर्ती 2025 में भारोत्तोलन अनुशासन के लिए सीटों की संख्या के संबंध में एक शुद्धिपत्र जारी किया है। उम्मीदवार आधिकारिक सूचना में अद्यतन सीट विवरण देख सकते हैं। अधिक विवरण के लिए आधिकारिक अधिसूचना पढ़ें। भारत-तिब्बत सीमा पुलिस (आईटीबीपी) ने कांस्टेबल (सामान्य ड्यूटी) स्पोर्ट्सपर्सन 2025 भर्ती के लिए एक शुद्धिपत्र नोटिस जारी किया है। यह नोटिस विशेष रूप से भारोत्तोलन अनुशासन (क्रमांक 22) के लिए सीटों की संख्या में संशोधन की घोषणा करता है। इस भर्ती के लिए आवेदन करने वाले उम्मीदवारों को अद्यतन रिक्ति विवरण की समीक्षा करनी चाहिए।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -306,7 +339,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "ITBP",
       summary: "Indo-Tibetan Border Police has issued a corrigendum regarding the number of seats for the weightlifting discipline in the Constable GD Sportsperson recruitment 2025. Candidates can check the updated seat details in the official notice. Read the official notification for further details.",
       statusV: "Notice published",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -321,6 +354,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r0v: "Constable (General Duty) Sportsperson",
       r1l: "Recruitment Year",
       r1v: "2025",
+      metaV: "Updated 22 Oct 2026 · Source: recruitment.itbpolice.nic.in",
       aboutH: "About this notice",
       intro: "The Indo-Tibetan Border Police (ITBP) has released a corrigendum notice for the recruitment of Constable (General Duty) Sportsperson 2025. This notice specifically announces an amendment in the number of seats for the weightlifting discipline (Sl No 22). Candidates who applied for this recruitment should review the updated vacancy details.",
       vacH: "Vacancy details",
@@ -335,6 +369,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a0: "The corrigendum announces an amendment in the number of seats for the weightlifting discipline (Sl No 22).",
       q1: "Which organization conducts the Constable GD Sportsperson recruitment?",
       a1: "The Indo-Tibetan Border Police (ITBP) conducts this recruitment.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "ITBP Constable GD Sports Quota Recruitment 2025",
       rel1: "NABARD Specialists on Contract Recruitment 2026-27",
@@ -357,7 +392,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "ITBP",
       summary: "भारत-तिब्बत सीमा पुलिस ने कांस्टेबल जीडी स्पोर्ट्सपर्सन भर्ती 2025 में भारोत्तोलन अनुशासन के लिए सीटों की संख्या के संबंध में एक शुद्धिपत्र जारी किया है। उम्मीदवार आधिकारिक सूचना में अद्यतन सीट विवरण देख सकते हैं। अधिक विवरण के लिए आधिकारिक अधिसूचना पढ़ें।",
       statusV: "सूचना जारी",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -372,6 +407,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r0v: "कांस्टेबल (सामान्य ड्यूटी) स्पोर्ट्सपर्सन",
       r1l: "भर्ती वर्ष",
       r1v: "2025",
+      metaV: "अपडेट 22 अक्तूबर 2026 · स्रोत: recruitment.itbpolice.nic.in",
       aboutH: "इस सूचना के बारे में",
       intro: "भारत-तिब्बत सीमा पुलिस (आईटीबीपी) ने कांस्टेबल (सामान्य ड्यूटी) स्पोर्ट्सपर्सन 2025 भर्ती के लिए एक शुद्धिपत्र नोटिस जारी किया है। यह नोटिस विशेष रूप से भारोत्तोलन अनुशासन (क्रमांक 22) के लिए सीटों की संख्या में संशोधन की घोषणा करता है। इस भर्ती के लिए आवेदन करने वाले उम्मीदवारों को अद्यतन रिक्ति विवरण की समीक्षा करनी चाहिए।",
       vacH: "रिक्तियों का विवरण",
@@ -386,6 +422,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a0: "शुद्धिपत्र भारोत्तोलन अनुशासन (क्रमांक 22) के लिए सीटों की संख्या में संशोधन की घोषणा करता है।",
       q1: "कांस्टेबल जीडी स्पोर्ट्सपर्सन भर्ती कौन सा संगठन आयोजित करता है?",
       a1: "भारत-तिब्बत सीमा पुलिस (आईटीबीपी) इस भर्ती का आयोजन करती है।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "आईटीबीपी कांस्टेबल जीडी खेल कोटा भर्ती 2025",
       rel1: "नाबार्ड अनुबंध पर विशेषज्ञ भर्ती 2026-27",

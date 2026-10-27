@@ -616,7 +616,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   const DL = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>';
   // Closing-soon rows carry the same flashing siren as the tab (same slot and size as the NEW arrow)
   const SIREN = '<picture class="rsiren" aria-hidden="true"><source srcset="/siren-still.png" media="(prefers-reduced-motion: reduce)"><img src="/siren.webp" width="14" height="14" alt="" decoding="async"></picture>';
-  // "Closing soon" = open jobs whose last date is within a week, soonest first.
+  // "Closing soon" = open jobs whose last date is within a week (listed newest first, like every tab; the days-left column shows urgency).
   const SOON_DAYS = 7;
   const inCat = (i, c) => c === "all" ? true : c === "soon" ? i.type === "Job" && !!i.last && left(i.last) <= SOON_DAYS : i.type === c;
   const PAGE = 25; let shown = PAGE, allRows = [];
@@ -625,7 +625,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     const byNewest = (a, b) => b.posted.localeCompare(a.posted) || pubTime(b) - pubTime(a);
     const bySearch = (a, b) => searchRank(a) - searchRank(b) || titleScore(b) - titleScore(a) || (a.last || "9").localeCompare(b.last || "9") || b.posted.localeCompare(a.posted);
     const byClosing = (a, b) => a.last.localeCompare(b.last) || b.posted.localeCompare(a.posted);
-    const rows = allRows = ITEMS.filter(i => live(i) && inCat(i, cat) && qmatch(i)).sort(q ? bySearch : cat === "soon" ? byClosing : byNewest);
+    const rows = allRows = ITEMS.filter(i => live(i) && inCat(i, cat) && qmatch(i)).sort(q ? bySearch : byNewest);   // every tab, Closing soon included: newest official date first
     const hits = ITEMS.filter(i => live(i) && (!q || qmatch(i)));
     document.querySelectorAll(".tabs button").forEach(b => {
       const soon = b.dataset.cat === "soon";

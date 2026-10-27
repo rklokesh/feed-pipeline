@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,17 +258,15 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/rrb.webp" width="76" height="76" alt="Railway Recruitment Cell, Western Railway (RRC WR) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">RRC Western Railway</span></nav>
       <h1 data-t="h1">RRC Western Railway Sports Quota Recruitment 2026</h1>
+      <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: rrc-wr.com</p>
       <p class="status"><span id="state">Notice published</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">RRC Western Railway has invited online applications for Group C and Group D posts under the Sports Quota for 2026-27. Eligible candidates can apply online from 01 September 2026 to 30 September 2026.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">Railway Recruitment Cell (RRC), Western Railway has released the official notification for recruitment against Sports Quota for the year 2026-27. A total of 64 vacancies are available for Group C and Group D posts across various sports disciplines. Eligible and interested sportspersons can submit their applications online through the official website from 01.09.2026 to 30.09.2026.</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Railway Recruitment Cell, Western Railway (RRC WR)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">27 Aug 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Group C and Group D</span></div>
@@ -251,50 +275,60 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="r3l">Age limit</span><span class="v" data-t="r3v">18 to 25 years (As on 01/01/2027)</span></div>
       <div class="r"><span data-t="r4l">Advertisement number</span><span class="v" data-t="r4v">RRC/WR/01/2026</span></div>
     </section>
-    <section class="kv" data-t-aria="datesH">
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#ageH" data-t="ageH">Age limit</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">Railway Recruitment Cell (RRC), Western Railway has released the official notification for recruitment against Sports Quota for the year 2026-27. A total of 64 vacancies are available for Group C and Group D posts across various sports disciplines. Eligible and interested sportspersons can submit their applications online through the official website from 01.09.2026 to 30.09.2026.</p>
+    </section>
+    <section class="kv" id="datesH" data-t-aria="datesH">
       <div class="h" data-t="datesH">Important dates</div>
       <div class="r"><span data-t="datesH0l">Notification date</span><span class="v" data-t="datesH0v">27 Aug 2026</span></div>
       <div class="r"><span data-t="datesH1l">Online application starts</span><span class="v" data-t="datesH1v">01 Sep 2026 (10:00 AM)</span></div>
       <div class="r"><span data-t="datesH2l">Last date to apply</span><span class="v" data-t="datesH2v">30 Sep 2026 (18:00 PM)</span></div>
     </section>
-    <section class="kv" data-t-aria="ageH">
+    <section class="kv" id="ageH" data-t-aria="ageH">
       <div class="h" data-t="ageH">Age limit</div>
       <div class="r"><span data-t="ageH0l">Minimum age</span><span class="v" data-t="ageH0v">18 years</span></div>
       <div class="r"><span data-t="ageH1l">Maximum age</span><span class="v" data-t="ageH1v">25 years</span></div>
       <div class="r"><span data-t="ageH2l">As on date</span><span class="v" data-t="ageH2v">01 Jan 2027</span></div>
     </section>
-    <section class="kv" data-t-aria="vacH">
+    <section class="kv" id="vacH" data-t-aria="vacH">
       <div class="h" data-t="vacH">Vacancy details</div>
       <div class="r"><span data-t="vacH0l">Group C (Level 5/4)</span><span class="v" data-t="vacH0v">5 · Athletics, Gymnastics, Hockey, Weightlifting, Wrestling</span></div>
       <div class="r"><span data-t="vacH1l">Group C (Level 3/2)</span><span class="v" data-t="vacH1v">16 · Athletics, Cricket, Diving, Football, Gymnastics, Hockey, Powerlifting, Swimming, Weightlifting, Wrestling</span></div>
       <div class="r"><span data-t="vacH2l">Group D (Level 1)</span><span class="v" data-t="vacH2v">43 · Athletics, Ball Badminton, Basketball, Boxing, Bodybuilding, Cycling, Hockey, Handball, Kho-Kho, Powerlifting, Swimming, Volleyball, Water Polo, Weightlifting</span></div>
+      <div class="r"><span data-t="vacH3l">Total</span><span class="v" data-t="vacH3v">64</span></div>
     </section>
-    <section class="kv" data-t-aria="eligH">
+    <section class="kv" id="eligH" data-t-aria="eligH">
       <div class="h" data-t="eligH">Eligibility</div>
       <div class="r"><span data-t="eligH0l">Level 5/4 Qualification</span><span class="v" data-t="eligH0v">Graduation in any discipline from a recognized University.</span></div>
       <div class="r"><span data-t="eligH1l">Level 3/2 Qualification</span><span class="v" data-t="eligH1v">12th (+2 stage) or its equivalent examination passed, OR Matriculation (10th) passed + Course Completed Act Apprenticeship, OR Matriculation (10th) passed + ITI approved by NCVT/SCVT.</span></div>
       <div class="r"><span data-t="eligH2l">Level 1 Qualification</span><span class="v" data-t="eligH2v">10th (Matriculation) passed or ITI passed or equivalent qualification or National Apprenticeship Certificate (NAC) granted by NCVT.</span></div>
       <div class="r"><span data-t="eligH3l">Sports Achievements</span><span class="v" data-t="eligH3v">Sportspersons who have achieved specified sports norms from 01/04/2024 up to the date of notification.</span></div>
     </section>
-    <section class="kv" data-t-aria="selH">
+    <section class="kv" id="selH" data-t-aria="selH">
       <div class="h" data-t="selH">Selection process</div>
       <ol class="steps"><li data-t="selH0">Scrutiny of application</li><li data-t="selH1">Trial</li><li data-t="selH2">Assessment of sports achievements, educational qualifications and general intelligence</li></ol>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to apply</div>
       <ol class="steps"><li data-t="howH0">Visit the official website rrc-wr.com</li><li data-t="howH1">Check the notification and ensure eligibility</li><li data-t="howH2">Fill out the online application form with correct details</li><li data-t="howH3">Upload necessary documents and submit before the last date</li></ol>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://www.rrc-wr.com/rrwc/Files/f5048247-0e91-4bdb-a29b-35c880e208bb.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rrc-wr.com</span></a>
       <a class="r" href="https://www.rrc-wr.com" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">rrc-wr.com</span></a>
       <a class="r" href="https://www.rrc-wr.com" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rrc-wr.com</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">What is the last date to apply for RRC Western Railway Sports Quota Recruitment 2026?</h3><p data-t="a0">The last date to apply online is 30 September 2026 up to 18:00 hours.</p></div>
       <div class="qa"><h3 data-t="q1">How many total vacancies are announced in this notification?</h3><p data-t="a1">A total of 64 vacancies are announced (21 for Group C and 43 for Group D).</p></div>
       <div class="qa"><h3 data-t="q2">What is the age limit for RRC WR Sports Quota Recruitment?</h3><p data-t="a2">Candidates must be between 18 and 25 years of age as on 01/01/2027.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">आरआरसी पश्चिम रेलवे ने वर्ष 2026-27 के लिए खेल कोटे के अंतर्गत ग्रुप सी और ग्रुप डी के पदों पर भर्ती के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 01 सितंबर 2026 से 30 सितंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं। रेलवे भर्ती प्रकोष्ठ (आरआरसी), पश्चिम रेलवे ने वर्ष 2026-27 के लिए खेल कोटे के अंतर्गत भर्ती हेतु आधिकारिक विज्ञापन जारी कर दिया है। विभिन्न खेल विधाओं में ग्रुप सी और ग्रुप डी के पदों के लिए कुल 64 रिक्तियां उपलब्ध हैं। योग्य और इच्छुक खिलाड़ी आधिकारिक वेबसाइट के माध्यम से 01.09.2026 से 30.09.2026 तक ऑनलाइन आवेदन कर सकते हैं।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -337,7 +371,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "RRC Western Railway has invited online applications for Group C and Group D posts under the Sports Quota for 2026-27. Eligible candidates can apply online from 01 September 2026 to 30 September 2026.",
       statusV: "Notice published",
       lastDate: "Last date 30 Sep 2026",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -358,6 +392,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r3v: "18 to 25 years (As on 01/01/2027)",
       r4l: "Advertisement number",
       r4v: "RRC/WR/01/2026",
+      metaV: "Updated 23 Oct 2026 · Source: rrc-wr.com",
       aboutH: "About this notice",
       intro: "Railway Recruitment Cell (RRC), Western Railway has released the official notification for recruitment against Sports Quota for the year 2026-27. A total of 64 vacancies are available for Group C and Group D posts across various sports disciplines. Eligible and interested sportspersons can submit their applications online through the official website from 01.09.2026 to 30.09.2026.",
       datesH: "Important dates",
@@ -381,6 +416,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       vacH1v: "16 · Athletics, Cricket, Diving, Football, Gymnastics, Hockey, Powerlifting, Swimming, Weightlifting, Wrestling",
       vacH2l: "Group D (Level 1)",
       vacH2v: "43 · Athletics, Ball Badminton, Basketball, Boxing, Bodybuilding, Cycling, Hockey, Handball, Kho-Kho, Powerlifting, Swimming, Volleyball, Water Polo, Weightlifting",
+      vacH3l: "Total",
+      vacH3v: "64",
       eligH: "Eligibility",
       eligH0l: "Level 5/4 Qualification",
       eligH0v: "Graduation in any discipline from a recognized University.",
@@ -406,6 +443,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "A total of 64 vacancies are announced (21 for Group C and 43 for Group D).",
       q2: "What is the age limit for RRC WR Sports Quota Recruitment?",
       a2: "Candidates must be between 18 and 25 years of age as on 01/01/2027.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "RRC Western Railway Sports Quota Volleyball Amendment 2026",
       rel1: "Western Railway Departmental CBT Call Letter 2026",
@@ -429,7 +467,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "आरआरसी पश्चिम रेलवे ने वर्ष 2026-27 के लिए खेल कोटे के अंतर्गत ग्रुप सी और ग्रुप डी के पदों पर भर्ती के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 01 सितंबर 2026 से 30 सितंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
       statusV: "सूचना जारी",
       lastDate: "अंतिम तिथि 30 सितंबर 2026",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -450,6 +488,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r3v: "18 से 25 वर्ष (01/01/2027 के अनुसार)",
       r4l: "विज्ञापन संख्या",
       r4v: "RRC/WR/01/2026",
+      metaV: "अपडेट 23 अक्तूबर 2026 · स्रोत: rrc-wr.com",
       aboutH: "इस सूचना के बारे में",
       intro: "रेलवे भर्ती प्रकोष्ठ (आरआरसी), पश्चिम रेलवे ने वर्ष 2026-27 के लिए खेल कोटे के अंतर्गत भर्ती हेतु आधिकारिक विज्ञापन जारी कर दिया है। विभिन्न खेल विधाओं में ग्रुप सी और ग्रुप डी के पदों के लिए कुल 64 रिक्तियां उपलब्ध हैं। योग्य और इच्छुक खिलाड़ी आधिकारिक वेबसाइट के माध्यम से 01.09.2026 से 30.09.2026 तक ऑनलाइन आवेदन कर सकते हैं।",
       datesH: "महत्वपूर्ण तिथियाँ",
@@ -473,6 +512,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       vacH1v: "16 · एथलेटिक्स, क्रिकेट, डाइविंग, फुटबॉल, जिम्नास्टिक्स, हॉकी, पावरलिफ्टिंग, तैराकी, भारोत्तोलन, कुश्ती",
       vacH2l: "ग्रुप डी (लेवल 1)",
       vacH2v: "43 · एथलेटिक्स, बॉल बैडमिंटन, बास्केटबॉल, बॉक्सिंग, बॉडी बिल्डिंग, साइकिलिंग, हॉकी, हैंडबॉल, खो-खो, पावरलिफ्टिंग, तैराकी, वॉलीबॉल, वाटर पोलो, भारोत्तोलन",
+      vacH3l: "कुल",
+      vacH3v: "64",
       eligH: "पात्रता",
       eligH0l: "लेवल 5/4 योग्यता",
       eligH0v: "किसी मान्यता प्राप्त विश्वविद्यालय से किसी भी विधा में स्नातक की डिग्री।",
@@ -498,6 +539,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "कुल 64 रिक्तियों की घोषणा की गई है (ग्रुप सी के लिए 21 और ग्रुप डी के लिए 43)।",
       q2: "आरआरसी डब्ल्यूआर खेल कोटा भर्ती के लिए आयु सीमा क्या है?",
       a2: "उम्मीदवारों की आयु 01/01/2027 को 18 से 25 वर्ष के बीच होनी चाहिए।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "आरआरसी पश्चिमी रेलवे खेल कोटा वॉलीबॉल संशोधन 2026",
       rel1: "पश्चिमी रेलवे विभागीय कंप्यूटर आधारित परीक्षा प्रवेश पत्र 2026",

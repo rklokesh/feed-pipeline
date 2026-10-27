@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,17 +258,15 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/uppsc.webp" width="76" height="76" alt="Uttar Pradesh Public Service Commission (UPPSC) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">UPPSC</span></nav>
       <h1 data-t="h1">UPPSC Inspector of Drugs Exam 2025 Corrigendum</h1>
+      <p class="meta g" data-t="metaV">Updated 27 Oct 2026 · Source: uppsc.up.nic.in</p>
       <p class="status"><span id="state">Corrigendum notice released, online submission closed on 21 Oct 2026</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Uttar Pradesh Public Service Commission has issued a corrigendum regarding essential qualifications for the Inspector of Drugs Examination 2025. Candidates should check the revised qualification details and online submission dates.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">Uttar Pradesh Public Service Commission (UPPSC) has released a corrigendum notice for the Inspector of Drugs Examination 2025 under advertisement number A-6/E-1/2025. This notice updates the essential qualifications required for the posts. Candidates who applied can review the updated criteria and fee reconciliation schedules.</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Uttar Pradesh Public Service Commission (UPPSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">27 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Inspector of Drugs</span></div>
@@ -250,38 +274,47 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="r2l">Online application last date</span><span class="v" data-t="r2v">21 Oct 2026</span></div>
       <div class="r"><span data-t="r3l">Fee reconciliation last date</span><span class="v" data-t="r3v">28 Oct 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="datesH">
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">Uttar Pradesh Public Service Commission (UPPSC) has released a corrigendum notice for the Inspector of Drugs Examination 2025 under advertisement number A-6/E-1/2025. This notice updates the essential qualifications required for the posts. Candidates who applied can review the updated criteria and fee reconciliation schedules.</p>
+    </section>
+    <section class="kv" id="datesH" data-t-aria="datesH">
       <div class="h" data-t="datesH">Important dates</div>
       <div class="r"><span data-t="datesH0l">Notification date</span><span class="v" data-t="datesH0v">22 Dec 2025</span></div>
       <div class="r"><span data-t="datesH1l">Online application last date</span><span class="v" data-t="datesH1v">21 Oct 2026</span></div>
       <div class="r"><span data-t="datesH2l">Fee reconciliation last date</span><span class="v" data-t="datesH2v">28 Oct 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="vacH">
+    <section class="kv" id="vacH" data-t-aria="vacH">
       <div class="h" data-t="vacH">Vacancy details</div>
       <div class="r"><span data-t="vacH0l">Inspector of Drugs</span><span class="v" data-t="vacH0v">Refer to original advertisement</span></div>
     </section>
-    <section class="kv" data-t-aria="eligH">
+    <section class="kv" id="eligH" data-t-aria="eligH">
       <div class="h" data-t="eligH">Eligibility</div>
       <div class="r"><span data-t="eligH0l">Education</span><span class="v" data-t="eligH0v">Degree in Pharmacy or Pharmaceutical Sciences or Medicine with specialization in Clinical Pharmacology or Microbiology from a University established in India by law, along with prescribed experience.</span></div>
     </section>
-    <section class="kv" data-t-aria="selH">
+    <section class="kv" id="selH" data-t-aria="selH">
       <div class="h" data-t="selH">Selection process</div>
       <ol class="steps"><li data-t="selH0">Written Examination</li><li data-t="selH1">Interview</li></ol>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to apply</div>
       <ol class="steps"><li data-t="howH0">Visit the official UPPSC website.</li><li data-t="howH1">Check the corrigendum and revised essential qualifications for the Inspector of Drugs exam.</li></ol>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnQ0/TjMEfCjLiTSi73XyRM" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">uppsc.up.nic.in</span></a>
       <a class="r" href="https://uppsc.up.nic.in/" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">uppsc.up.nic.in</span></a>
       <a class="r" href="https://uppsc.up.nic.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">uppsc.up.nic.in</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">What is the advertisement number for UPPSC Inspector of Drugs Exam 2025?</h3><p data-t="a0">The advertisement number is A-6/E-1/2025.</p></div>
       <div class="qa"><h3 data-t="q1">What is the last date to submit the online application?</h3><p data-t="a1">The last date to submit the online application was 21 October 2026.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">उत्तर प्रदेश लोक सेवा आयोग ने औषधि निरीक्षक परीक्षा 2025 के लिए आवश्यक योग्यताओं के संबंध में शुद्धिपत्र जारी किया है। उम्मीदवार संशोधित योग्यता विवरण और ऑनलाइन जमा करने की तिथियां देख सकते हैं। उत्तर प्रदेश लोक सेवा आयोग (UPPSC) ने विज्ञापन संख्या A-6/E-1/2025 के तहत औषधि निरीक्षक परीक्षा 2025 के लिए एक शुद्धिपत्र नोटिस जारी किया है। यह नोटिस पदों के लिए आवश्यक अनिवार्य योग्यताओं को अद्यतन करता है। आवेदन करने वाले उम्मीदवार अद्यतन मानदंडों और शुल्क मिलान कार्यक्रम की समीक्षा कर सकते हैं।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -324,7 +357,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "Uttar Pradesh Public Service Commission has issued a corrigendum regarding essential qualifications for the Inspector of Drugs Examination 2025. Candidates should check the revised qualification details and online submission dates.",
       statusV: "Corrigendum notice released, online submission closed on 21 Oct 2026",
       lastDate: "Last date 21 Oct 2026",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -343,6 +376,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r2v: "21 Oct 2026",
       r3l: "Fee reconciliation last date",
       r3v: "28 Oct 2026",
+      metaV: "Updated 27 Oct 2026 · Source: uppsc.up.nic.in",
       aboutH: "About this notice",
       intro: "Uttar Pradesh Public Service Commission (UPPSC) has released a corrigendum notice for the Inspector of Drugs Examination 2025 under advertisement number A-6/E-1/2025. This notice updates the essential qualifications required for the posts. Candidates who applied can review the updated criteria and fee reconciliation schedules.",
       datesH: "Important dates",
@@ -369,6 +403,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a0: "The advertisement number is A-6/E-1/2025.",
       q1: "What is the last date to submit the online application?",
       a1: "The last date to submit the online application was 21 October 2026.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "UPPSC Chikitsa Adhikari Unani Exam Corrigendum 2025",
       rel1: "UPPSC Assistant Teacher Home Science Document Verification 2025",
@@ -392,7 +427,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "उत्तर प्रदेश लोक सेवा आयोग ने औषधि निरीक्षक परीक्षा 2025 के लिए आवश्यक योग्यताओं के संबंध में शुद्धिपत्र जारी किया है। उम्मीदवार संशोधित योग्यता विवरण और ऑनलाइन जमा करने की तिथियां देख सकते हैं।",
       statusV: "शुद्धिपत्र नोटिस जारी, ऑनलाइन जमा करना 21 अक्टूबर 2026 को बंद हो गया",
       lastDate: "अंतिम तिथि 21 अक्तूबर 2026",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -411,6 +446,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r2v: "21 अक्टूबर 2026",
       r3l: "फीस मिलान की अंतिम तिथि",
       r3v: "28 अक्टूबर 2026",
+      metaV: "अपडेट 27 अक्तूबर 2026 · स्रोत: uppsc.up.nic.in",
       aboutH: "इस सूचना के बारे में",
       intro: "उत्तर प्रदेश लोक सेवा आयोग (UPPSC) ने विज्ञापन संख्या A-6/E-1/2025 के तहत औषधि निरीक्षक परीक्षा 2025 के लिए एक शुद्धिपत्र नोटिस जारी किया है। यह नोटिस पदों के लिए आवश्यक अनिवार्य योग्यताओं को अद्यतन करता है। आवेदन करने वाले उम्मीदवार अद्यतन मानदंडों और शुल्क मिलान कार्यक्रम की समीक्षा कर सकते हैं।",
       datesH: "महत्वपूर्ण तिथियाँ",
@@ -437,6 +473,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a0: "विज्ञापन संख्या A-6/E-1/2025 है।",
       q1: "ऑनलाइन आवेदन जमा करने की अंतिम तिथि क्या है?",
       a1: "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 21 अक्टूबर 2026 थी।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "उत्तर प्रदेश लोक सेवा आयोग चिकित्सा अधिकारी यूनानी परीक्षा शुद्धिपत्र 2025",
       rel1: "उत्तर प्रदेश लोक सेवा आयोग सहायक अध्यापक गृह विज्ञान दस्तावेज सत्यापन 2025",

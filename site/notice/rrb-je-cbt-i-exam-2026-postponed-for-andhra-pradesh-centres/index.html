@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,17 +258,15 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/rrb.webp" width="76" height="76" alt="Railway Recruitment Boards (RRB) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=admit-cards" data-t="crumbType">Admit cards</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">RRB</span></nav>
       <h1 data-t="h1">RRB JE CBT-I Exam 2026 Postponed for Andhra Pradesh Centres</h1>
+      <p class="meta g" data-t="metaV">Updated 27 Oct 2026 · Source: rrb.indianrailways.gov.in</p>
       <p class="status"><span id="state">CBT-I exam postponed for specific centres in Andhra Pradesh</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Railway Recruitment Boards have postponed the CBT-I for CEN 04/2026 scheduled on 28-10-2026 at specific centres in Andhra Pradesh due to a cyclonic storm. Affected candidates will be informed about the rescheduled dates via SMS and email. Exams at all other centres will be held as per schedule.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">Railway Recruitment Boards (RRB) have issued a notice regarding the postponement of the CBT-I exam for CEN No. 04/2026. The examination scheduled for 28 October 2026 has been postponed only for specific test centres in Andhra Pradesh due to cyclonic storm &#x27;Arnab&#x27;. Candidates registered for centres in Srikakulam, Visakhapatnam, Rajahmundry, and Vijayawada should check their registered email and mobile for updates on the rescheduled dates. Exams at all other centres remain unaffected.</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Railway Recruitment Boards (RRB)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">27 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Junior Engineer, Depot Material Superintendent, Chemical &amp; Metallurgical Assistant</span></div>
@@ -250,36 +274,45 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="r2l">Original Exam Date</span><span class="v" data-t="r2v">28 Oct 2026</span></div>
       <div class="r"><span data-t="r3l">Postponed Centres</span><span class="v" data-t="r3v">Srikakulam, Visakhapatnam, Rajahmundry and Vijayawada</span></div>
     </section>
-    <section class="kv" data-t-aria="datesH">
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">Railway Recruitment Boards (RRB) have issued a notice regarding the postponement of the CBT-I exam for CEN No. 04/2026. The examination scheduled for 28 October 2026 has been postponed only for specific test centres in Andhra Pradesh due to cyclonic storm &#x27;Arnab&#x27;. Candidates registered for centres in Srikakulam, Visakhapatnam, Rajahmundry, and Vijayawada should check their registered email and mobile for updates on the rescheduled dates. Exams at all other centres remain unaffected.</p>
+    </section>
+    <section class="kv" id="datesH" data-t-aria="datesH">
       <div class="h" data-t="datesH">Important dates</div>
       <div class="r"><span data-t="datesH0l">Notice Date</span><span class="v" data-t="datesH0v">27 Oct 2026</span></div>
       <div class="r"><span data-t="datesH1l">Original Exam Date</span><span class="v" data-t="datesH1v">28 Oct 2026</span></div>
       <div class="r"><span data-t="datesH2l">Rescheduled Date</span><span class="v" data-t="datesH2v">To be published shortly</span></div>
     </section>
-    <section class="kv" data-t-aria="selH">
+    <section class="kv" id="selH" data-t-aria="selH">
       <div class="h" data-t="selH">Selection process</div>
       <ol class="steps"><li data-t="selH0">Computer Based Test-I (CBT-I)</li></ol>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to download</div>
       <ol class="steps"><li data-t="howH0">Check your registered mobile number for SMS updates from RRB.</li><li data-t="howH1">Check your registered email ID for notifications regarding the new exam date and venue.</li><li data-t="howH2">Visit the official RRB website regularly for official announcements.</li></ol>
     </section>
-    <section class="kv" data-t-aria="extraH">
+    <section class="kv" id="extraH" data-t-aria="extraH">
       <div class="h" data-t="extraH">Other details</div>
       <div class="r"><span data-t="extraH0l">Affected Test Centre Codes</span><span class="v" data-t="extraH0v">38141 (Srikakulam); 8827, 9208, 9417 (Visakhapatnam); 7954 (Rajahmundry); 8031 (Vijayawada)</span></div>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://rrb.indianrailways.gov.in/-/image/1793110990951Notice_postponement_of_CBT-I_CEN-04-2026_JEs_English.pdf/examsDocuments" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rrb.indianrailways.gov.in</span></a>
       <a class="r" href="https://rrb.indianrailways.gov.in" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">rrb.indianrailways.gov.in</span></a>
       <a class="r" href="https://rrb.indianrailways.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rrb.indianrailways.gov.in</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">Why was the RRB JE CBT-I exam postponed?</h3><p data-t="a0">The exam was postponed due to cyclonic storm &#x27;Arnab&#x27; in certain regions of Andhra Pradesh.</p></div>
       <div class="qa"><h3 data-t="q1">Which exam centres are affected by this postponement?</h3><p data-t="a1">Exams are postponed at all centres in Srikakulam, Visakhapatnam, Rajahmundry, and Vijayawada in Andhra Pradesh.</p></div>
       <div class="qa"><h3 data-t="q2">How will I know the new exam date?</h3><p data-t="a2">The rescheduled date and venue will be published shortly on the official RRB website, and SMS/email will be sent to affected candidates.</p></div>
       <div class="qa"><h3 data-t="q3">Are exams at other centres also postponed?</h3><p data-t="a3">No, CBT-I in all other centres will be conducted as per the original schedule.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">रेलवे भर्ती बोर्ड ने चक्रवात के कारण आंध्र प्रदेश के विशिष्ट केंद्रों पर 28-10-2026 को होने वाली सीबीटी-प्रथम परीक्षा स्थगित कर दी है। प्रभावित उम्मीदवारों को एसएमएस और ईमेल के माध्यम से नई तारीखों की सूचना दी जाएगी। अन्य सभी केंद्रों पर परीक्षाएं निर्धारित समय पर होंगी। रेलवे भर्ती बोर्ड (आरआरबी) ने केंद्रीय रोजगार अधिसूचना संख्या 04/2026 की सीबीटी-प्रथम परीक्षा के स्थगन के संबंध में एक नोटिस जारी किया है। चक्रवात &#x27;अर्नब&#x27; के कारण आंध्र प्रदेश के विशिष्ट परीक्षा केंद्रों पर 28 अक्टूबर 2026 को होने वाली परीक्षा को स्थगित कर दिया गया है। श्रीकाकुलम, विशाखापत्तनम, राजमुंदरी और विजयवाड़ा केंद्रों के लिए पंजीकृत उम्मीदवारों को पुनर्निर्धारित तिथियों के बारे में अपडेट के लिए अपना पंजीकृत ईमेल और मोबाइल देखना चाहिए। अन्य सभी केंद्रों पर परीक्षाएं निर्धारित समय पर होंगी।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -321,7 +354,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "RRB",
       summary: "Railway Recruitment Boards have postponed the CBT-I for CEN 04/2026 scheduled on 28-10-2026 at specific centres in Andhra Pradesh due to a cyclonic storm. Affected candidates will be informed about the rescheduled dates via SMS and email. Exams at all other centres will be held as per schedule.",
       statusV: "CBT-I exam postponed for specific centres in Andhra Pradesh",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -340,6 +373,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r2v: "28 Oct 2026",
       r3l: "Postponed Centres",
       r3v: "Srikakulam, Visakhapatnam, Rajahmundry and Vijayawada",
+      metaV: "Updated 27 Oct 2026 · Source: rrb.indianrailways.gov.in",
       aboutH: "About this notice",
       intro: "Railway Recruitment Boards (RRB) have issued a notice regarding the postponement of the CBT-I exam for CEN No. 04/2026. The examination scheduled for 28 October 2026 has been postponed only for specific test centres in Andhra Pradesh due to cyclonic storm 'Arnab'. Candidates registered for centres in Srikakulam, Visakhapatnam, Rajahmundry, and Vijayawada should check their registered email and mobile for updates on the rescheduled dates. Exams at all other centres remain unaffected.",
       datesH: "Important dates",
@@ -367,6 +401,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a2: "The rescheduled date and venue will be published shortly on the official RRB website, and SMS/email will be sent to affected candidates.",
       q3: "Are exams at other centres also postponed?",
       a3: "No, CBT-I in all other centres will be conducted as per the original schedule.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "RRB CEN 01/2026 Assistant Loco Pilot Exam City Intimation",
       rel1: "RRB Station Master CEN 08/2026 Corrigendum 1",
@@ -389,7 +424,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "आरआरबी",
       summary: "रेलवे भर्ती बोर्ड ने चक्रवात के कारण आंध्र प्रदेश के विशिष्ट केंद्रों पर 28-10-2026 को होने वाली सीबीटी-प्रथम परीक्षा स्थगित कर दी है। प्रभावित उम्मीदवारों को एसएमएस और ईमेल के माध्यम से नई तारीखों की सूचना दी जाएगी। अन्य सभी केंद्रों पर परीक्षाएं निर्धारित समय पर होंगी।",
       statusV: "आंध्र प्रदेश के विशिष्ट केंद्रों के लिए सीबीटी-प्रथम परीक्षा स्थगित",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -408,6 +443,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r2v: "28 अक्टूबर 2026",
       r3l: "स्थगित केंद्र",
       r3v: "श्रीकाकुलम, विशाखापत्तनम, राजमुंदरी और विजयवाड़ा",
+      metaV: "अपडेट 27 अक्तूबर 2026 · स्रोत: rrb.indianrailways.gov.in",
       aboutH: "इस सूचना के बारे में",
       intro: "रेलवे भर्ती बोर्ड (आरआरबी) ने केंद्रीय रोजगार अधिसूचना संख्या 04/2026 की सीबीटी-प्रथम परीक्षा के स्थगन के संबंध में एक नोटिस जारी किया है। चक्रवात 'अर्नब' के कारण आंध्र प्रदेश के विशिष्ट परीक्षा केंद्रों पर 28 अक्टूबर 2026 को होने वाली परीक्षा को स्थगित कर दिया गया है। श्रीकाकुलम, विशाखापत्तनम, राजमुंदरी और विजयवाड़ा केंद्रों के लिए पंजीकृत उम्मीदवारों को पुनर्निर्धारित तिथियों के बारे में अपडेट के लिए अपना पंजीकृत ईमेल और मोबाइल देखना चाहिए। अन्य सभी केंद्रों पर परीक्षाएं निर्धारित समय पर होंगी।",
       datesH: "महत्वपूर्ण तिथियाँ",
@@ -435,6 +471,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a2: "पुनर्निर्धारित तिथि और स्थान शीघ्र ही आधिकारिक आरआरबी वेबसाइट पर प्रकाशित किया जाएगा, और प्रभावित उम्मीदवारों को एसएमएस/ईमेल भेजा जाएगा।",
       q3: "क्या अन्य केंद्रों पर भी परीक्षाएं स्थगित हैं?",
       a3: "नहीं, अन्य सभी केंद्रों पर सीबीटी-प्रथम मूल कार्यक्रम के अनुसार आयोजित की जाएगी।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "रेलवे भर्ती बोर्ड केंद्रीय रोजगार सूचना संख्या 01/2026 सहायक लोको पायलट परीक्षा शहर की सूचना",
       rel1: "रेलवे भर्ती बोर्ड स्टेशन मास्टर केंद्रीय रोजगार सूचना 08/2026 शुद्धिपत्र 1",

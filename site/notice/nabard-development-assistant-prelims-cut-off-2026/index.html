@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,47 +258,54 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/nabard.webp" width="76" height="76" alt="National Bank for Agriculture and Rural Development (NABARD) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=results" data-t="crumbType">Results</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">NABARD</span></nav>
       <h1 data-t="h1">NABARD Development Assistant Prelims Cut-off 2026</h1>
+      <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: nabard.org</p>
       <p class="status"><span id="state">Preliminary examination cut-off marks released</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">National Bank for Agriculture and Rural Development (NABARD) has released the preliminary examination cut-off marks for the Development Assistant recruitment 2026. Candidates who appeared for the exam held on 21 Feb 2026 can now check the regional and category-wise cut-off scores. Visit the official website to view the complete details.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">The National Bank for Agriculture and Rural Development (NABARD) has published the regional office-wise and category-wise preliminary examination cut-off marks for the Development Assistant recruitment 2026. The Phase I preliminary examination was conducted on 21 February 2026. Candidates can check the official cut-off list to know the minimum qualifying marks required for different categories and regional offices.</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">National Bank for Agriculture and Rural Development (NABARD)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">23 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Post name</span><span class="v" data-t="r0v">Development Assistant</span></div>
       <div class="r"><span data-t="r1l">Exam date</span><span class="v" data-t="r1v">21 Feb 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="datesH">
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">The National Bank for Agriculture and Rural Development (NABARD) has published the regional office-wise and category-wise preliminary examination cut-off marks for the Development Assistant recruitment 2026. The Phase I preliminary examination was conducted on 21 February 2026. Candidates can check the official cut-off list to know the minimum qualifying marks required for different categories and regional offices.</p>
+    </section>
+    <section class="kv" id="datesH" data-t-aria="datesH">
       <div class="h" data-t="datesH">Important dates</div>
       <div class="r"><span data-t="datesH0l">Exam date</span><span class="v" data-t="datesH0v">21 Feb 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="selH">
+    <section class="kv" id="selH" data-t-aria="selH">
       <div class="h" data-t="selH">Selection process</div>
       <ol class="steps"><li data-t="selH0">Phase I (Preliminary Examination)</li><li data-t="selH1">Phase II (Main Examination)</li></ol>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to download</div>
       <ol class="steps"><li data-t="howH0">Go to the official NABARD careers website.</li><li data-t="howH1">Click on the Development Assistant 2026 preliminary examination cut-off notice link.</li><li data-t="howH2">Check the regional office and category-wise cut-off marks in the PDF.</li></ol>
     </section>
-    <section class="kv" data-t-aria="extraH">
+    <section class="kv" id="extraH" data-t-aria="extraH">
       <div class="h" data-t="extraH">Other details</div>
       <div class="r"><span data-t="extraH0l">Objective Test Tests</span><span class="v" data-t="extraH0v">Test of English Language (EL), Numerical Ability (NA), and Reasoning (RE)</span></div>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://www.nabard.org/auth/writereaddata/CareerNotices/323026600Development Assistant – 2026 – Preliminary Examination Cut-off.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">nabard.org</span></a>
       <a class="r" href="https://www.nabard.org" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">nabard.org</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">When was the NABARD Development Assistant Prelims exam 2026 conducted?</h3><p data-t="a0">The preliminary examination was conducted on 21 February 2026.</p></div>
       <div class="qa"><h3 data-t="q1">Where can I check the NABARD Development Assistant cut-off marks?</h3><p data-t="a1">You can check the regional office and category-wise cut-off marks on the official NABARD website.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड) ने विकास सहायक भर्ती 2026 के लिए प्रारंभिक परीक्षा के कट-ऑफ अंक जारी कर दिए हैं। 21 फरवरी 2026 को आयोजित परीक्षा में शामिल होने वाले उम्मीदवार क्षेत्रीय और श्रेणीवार कट-ऑफ अंक देख सकते हैं। पूरी जानकारी देखने के लिए आधिकारिक वेबसाइट पर जाएं। राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड) ने विकास सहायक भर्ती 2026 के लिए क्षेत्रीय कार्यालय-वार और श्रेणी-वार प्रारंभिक परीक्षा के कट-ऑफ अंक प्रकाशित किए हैं। चरण I प्रारंभिक परीक्षा 21 फरवरी 2026 को आयोजित की गई थी। उम्मीदवार विभिन्न श्रेणियों और क्षेत्रीय कार्यालयों के लिए आवश्यक न्यूनतम अर्हक अंक जानने के लिए आधिकारिक कट-ऑफ सूची देख सकते हैं।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -314,7 +347,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "NABARD",
       summary: "National Bank for Agriculture and Rural Development (NABARD) has released the preliminary examination cut-off marks for the Development Assistant recruitment 2026. Candidates who appeared for the exam held on 21 Feb 2026 can now check the regional and category-wise cut-off scores. Visit the official website to view the complete details.",
       statusV: "Preliminary examination cut-off marks released",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -329,6 +362,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r0v: "Development Assistant",
       r1l: "Exam date",
       r1v: "21 Feb 2026",
+      metaV: "Updated 23 Oct 2026 · Source: nabard.org",
       aboutH: "About this notice",
       intro: "The National Bank for Agriculture and Rural Development (NABARD) has published the regional office-wise and category-wise preliminary examination cut-off marks for the Development Assistant recruitment 2026. The Phase I preliminary examination was conducted on 21 February 2026. Candidates can check the official cut-off list to know the minimum qualifying marks required for different categories and regional offices.",
       datesH: "Important dates",
@@ -349,6 +383,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a0: "The preliminary examination was conducted on 21 February 2026.",
       q1: "Where can I check the NABARD Development Assistant cut-off marks?",
       a1: "You can check the regional office and category-wise cut-off marks on the official NABARD website.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "NABARD Development Assistant Hindi Prelims Cut-Off 2026",
       rel1: "NABARD Development Assistant Hindi Mains Cut-Off 2026",
@@ -371,7 +406,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "NABARD",
       summary: "राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड) ने विकास सहायक भर्ती 2026 के लिए प्रारंभिक परीक्षा के कट-ऑफ अंक जारी कर दिए हैं। 21 फरवरी 2026 को आयोजित परीक्षा में शामिल होने वाले उम्मीदवार क्षेत्रीय और श्रेणीवार कट-ऑफ अंक देख सकते हैं। पूरी जानकारी देखने के लिए आधिकारिक वेबसाइट पर जाएं।",
       statusV: "प्रारंभिक परीक्षा के कट-ऑफ अंक जारी किए गए",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -386,6 +421,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r0v: "विकास सहायक",
       r1l: "परीक्षा की तिथि",
       r1v: "21 फरवरी 2026",
+      metaV: "अपडेट 23 अक्तूबर 2026 · स्रोत: nabard.org",
       aboutH: "इस सूचना के बारे में",
       intro: "राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड) ने विकास सहायक भर्ती 2026 के लिए क्षेत्रीय कार्यालय-वार और श्रेणी-वार प्रारंभिक परीक्षा के कट-ऑफ अंक प्रकाशित किए हैं। चरण I प्रारंभिक परीक्षा 21 फरवरी 2026 को आयोजित की गई थी। उम्मीदवार विभिन्न श्रेणियों और क्षेत्रीय कार्यालयों के लिए आवश्यक न्यूनतम अर्हक अंक जानने के लिए आधिकारिक कट-ऑफ सूची देख सकते हैं।",
       datesH: "महत्वपूर्ण तिथियाँ",
@@ -406,6 +442,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a0: "प्रारंभिक परीक्षा 21 फरवरी 2026 को आयोजित की गई थी।",
       q1: "मैं नाबार्ड विकास सहायक कट-ऑफ अंक कहाँ देख सकता हूँ?",
       a1: "आप आधिकारिक नाबार्ड वेबसाइट पर क्षेत्रीय कार्यालय और श्रेणी-वार कट-ऑफ अंक देख सकते हैं।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "नाबार्ड डेवलपमेंट असिस्टेंट हिंदी प्रारंभिक परीक्षा कट-ऑफ 2026",
       rel1: "नाबार्ड डेवलपमेंट असिस्टेंट हिंदी मुख्य परीक्षा कट-ऑफ 2026",

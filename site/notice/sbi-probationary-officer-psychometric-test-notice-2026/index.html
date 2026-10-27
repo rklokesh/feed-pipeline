@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,17 +258,15 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/sbi.webp" width="76" height="76" alt="State Bank of India (SBI) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=admit-cards" data-t="crumbType">Admit cards</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">SBI</span></nav>
       <h1 data-t="h1">SBI Probationary Officer Psychometric Test Notice 2026</h1>
+      <p class="meta g" data-t="metaV">Updated 27 Oct 2026 · Source: sbi.bank.in</p>
       <p class="status"><span id="state">Psychometric test date announced, mock test on 28 Oct 2026</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">State Bank of India has scheduled the online psychometric test in remote proctored mode for Probationary Officer recruitment on 31 Oct 2026. Shortlisted candidates should check their registered email for instructions, mock test details, and credentials.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">The State Bank of India (SBI) has released an important notice regarding the online psychometric test in remote proctored mode for Probationary Officer recruitment under advertisement number CRPD/PO/2026-27/09. The test is scheduled for 31 Oct 2026. Shortlisted candidates must check their registered email and SMS for test credentials and system instructions.</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">State Bank of India (SBI)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">27 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Probationary Officer</span></div>
@@ -250,38 +274,47 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="r2l">Mock Test Date</span><span class="v" data-t="r2v">28 Oct 2026</span></div>
       <div class="r"><span data-t="r3l">Exam Date</span><span class="v" data-t="r3v">31 Oct 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="datesH">
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">The State Bank of India (SBI) has released an important notice regarding the online psychometric test in remote proctored mode for Probationary Officer recruitment under advertisement number CRPD/PO/2026-27/09. The test is scheduled for 31 Oct 2026. Shortlisted candidates must check their registered email and SMS for test credentials and system instructions.</p>
+    </section>
+    <section class="kv" id="datesH" data-t-aria="datesH">
       <div class="h" data-t="datesH">Important dates</div>
       <div class="r"><span data-t="datesH0l">Mock Test Date</span><span class="v" data-t="datesH0v">28 Oct 2026 (10:00 AM to 05:00 PM)</span></div>
       <div class="r"><span data-t="datesH1l">Exam Date</span><span class="v" data-t="datesH1v">31 Oct 2026 (1:00 PM)</span></div>
     </section>
-    <section class="kv" data-t-aria="vacH">
+    <section class="kv" id="vacH" data-t-aria="vacH">
       <div class="h" data-t="vacH">Vacancy details</div>
       <div class="r"><span data-t="vacH0l">Probationary Officer</span><span class="v" data-t="vacH0v">Not Specified · Refer to original recruitment notification</span></div>
     </section>
-    <section class="kv" data-t-aria="selH">
+    <section class="kv" id="selH" data-t-aria="selH">
       <div class="h" data-t="selH">Selection process</div>
       <ol class="steps"><li data-t="selH0">Online Psychometric Test (Remote Proctored Mode)</li><li data-t="selH1">Group Exercises</li><li data-t="selH2">Personal Interview</li></ol>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to download</div>
       <ol class="steps"><li data-t="howH0">Check your registered email ID and SMS for test instructions and credentials.</li><li data-t="howH1">Take the mock test on 28 Oct 2026 between 10:00 AM and 05:00 PM to familiarize yourself with the interface.</li><li data-t="howH2">Ensure all system requirements are met and be ready at least 15 minutes before the test start time on 31 Oct 2026.</li></ol>
     </section>
-    <section class="kv" data-t-aria="extraH">
+    <section class="kv" id="extraH" data-t-aria="extraH">
       <div class="h" data-t="extraH">Other details</div>
       <div class="r"><span data-t="extraH0l">Mode of Exam</span><span class="v" data-t="extraH0v">Online Remote Proctored Mode (RPA)</span></div>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://sbi.bank.in/webfiles/uploads/files_2627/10/Important_Notice_for_Psychometric_Test.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">sbi.bank.in</span></a>
       <a class="r" href="https://sbi.bank.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">sbi.bank.in</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">When is the SBI PO Psychometric Test 2026 scheduled?</h3><p data-t="a0">The psychometric test is scheduled for 31 Oct 2026 starting at 1:00 PM.</p></div>
       <div class="qa"><h3 data-t="q1">How do I get my test credentials and link?</h3><p data-t="a1">The test link and user credentials have been sent separately to the candidates&#x27; registered email IDs.</p></div>
       <div class="qa"><h3 data-t="q2">Is there a mock test available?</h3><p data-t="a2">Yes, a mock test will be accessible on 28 Oct 2026 from 10:00 AM to 05:00 PM.</p></div>
       <div class="qa"><h3 data-t="q3">Is appearing in the Psychometric Test mandatory?</h3><p data-t="a3">Yes, appearing in the psychometric test is mandatory. Only candidates who appear in it will be allowed for group exercises and personal interviews.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">भारतीय स्टेट बैंक ने प्रोबायेशनरी ऑफिसर भर्ती के लिए रिमोट प्रॉक्टर्ड मोड में ऑनलाइन साइकोमेट्रिक टेस्ट 31 अक्टूबर 2026 को निर्धारित किया है। शॉर्टलिस्ट किए गए उम्मीदवार निर्देशों, मॉक टेस्ट विवरण और क्रेडेंशियल के लिए अपना पंजीकृत ईमेल देखें। भारतीय स्टेट बैंक (एसबीआई) ने विज्ञापन संख्या CRPD/PO/2026-27/09 के तहत प्रोबायेशनरी ऑफिसर भर्ती के लिए रिमोट प्रॉक्टर्ड मोड में ऑनलाइन साइकोमेट्रिक टेस्ट के संबंध में एक महत्वपूर्ण नोटिस जारी किया है। परीक्षा 31 अक्टूबर 2026 को निर्धारित है। शॉर्टलिस्ट किए गए उम्मीदवारों को टेस्ट क्रेडेंशियल और सिस्टम निर्देशों के लिए अपना पंजीकृत ईमेल और एसएमएस देखना होगा।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -323,7 +356,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "SBI",
       summary: "State Bank of India has scheduled the online psychometric test in remote proctored mode for Probationary Officer recruitment on 31 Oct 2026. Shortlisted candidates should check their registered email for instructions, mock test details, and credentials.",
       statusV: "Psychometric test date announced, mock test on 28 Oct 2026",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -342,6 +375,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r2v: "28 Oct 2026",
       r3l: "Exam Date",
       r3v: "31 Oct 2026",
+      metaV: "Updated 27 Oct 2026 · Source: sbi.bank.in",
       aboutH: "About this notice",
       intro: "The State Bank of India (SBI) has released an important notice regarding the online psychometric test in remote proctored mode for Probationary Officer recruitment under advertisement number CRPD/PO/2026-27/09. The test is scheduled for 31 Oct 2026. Shortlisted candidates must check their registered email and SMS for test credentials and system instructions.",
       datesH: "Important dates",
@@ -372,6 +406,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a2: "Yes, a mock test will be accessible on 28 Oct 2026 from 10:00 AM to 05:00 PM.",
       q3: "Is appearing in the Psychometric Test mandatory?",
       a3: "Yes, appearing in the psychometric test is mandatory. Only candidates who appear in it will be allowed for group exercises and personal interviews.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "SBI Junior Associate Recruitment 2026",
       rel1: "SBI Junior Associate Recruitment 2026 for 7680 Posts",
@@ -394,7 +429,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       org: "एसबीआई",
       summary: "भारतीय स्टेट बैंक ने प्रोबायेशनरी ऑफिसर भर्ती के लिए रिमोट प्रॉक्टर्ड मोड में ऑनलाइन साइकोमेट्रिक टेस्ट 31 अक्टूबर 2026 को निर्धारित किया है। शॉर्टलिस्ट किए गए उम्मीदवार निर्देशों, मॉक टेस्ट विवरण और क्रेडेंशियल के लिए अपना पंजीकृत ईमेल देखें।",
       statusV: "साइकोमेट्रिक टेस्ट की तिथि घोषित, मॉक टेस्ट 28 अक्टूबर 2026 को",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -413,6 +448,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r2v: "28 अक्टूबर 2026",
       r3l: "परीक्षा की तिथि",
       r3v: "31 अक्टूबर 2026",
+      metaV: "अपडेट 27 अक्तूबर 2026 · स्रोत: sbi.bank.in",
       aboutH: "इस सूचना के बारे में",
       intro: "भारतीय स्टेट बैंक (एसबीआई) ने विज्ञापन संख्या CRPD/PO/2026-27/09 के तहत प्रोबायेशनरी ऑफिसर भर्ती के लिए रिमोट प्रॉक्टर्ड मोड में ऑनलाइन साइकोमेट्रिक टेस्ट के संबंध में एक महत्वपूर्ण नोटिस जारी किया है। परीक्षा 31 अक्टूबर 2026 को निर्धारित है। शॉर्टलिस्ट किए गए उम्मीदवारों को टेस्ट क्रेडेंशियल और सिस्टम निर्देशों के लिए अपना पंजीकृत ईमेल और एसएमएस देखना होगा।",
       datesH: "महत्वपूर्ण तिथियाँ",
@@ -443,6 +479,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a2: "हाँ, मॉक टेस्ट 28 अक्टूबर 2026 को सुबह 10:00 बजे से शाम 05:00 बजे तक उपलब्ध रहेगा।",
       q3: "क्या साइकोमेट्रिक टेस्ट में शामिल होना अनिवार्य है?",
       a3: "हाँ, साइकोमेट्रिक टेस्ट में शामिल होना अनिवार्य है। केवल इसमें शामिल होने वाले उम्मीदवारों को समूह अभ्यास और व्यक्तिगत साक्षात्कार के लिए अनुमति दी जाएगी।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "भारतीय स्टेट बैंक कनिष्ठ सहायक भर्ती 2026",
       rel1: "एसबीआई जूनियर एसोसिएट भर्ती 2026, 7680 पद",

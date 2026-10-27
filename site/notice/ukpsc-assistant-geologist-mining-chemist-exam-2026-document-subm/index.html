@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,17 +258,15 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/ukpsc.webp" width="76" height="76" alt="Uttarakhand Public Service Commission (UKPSC) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">UKPSC</span></nav>
       <h1 data-t="h1">UKPSC Assistant Geologist, Mining &amp; Chemist Exam 2026 Document Submission</h1>
+      <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: psc.uk.gov.in</p>
       <p class="status"><span id="state">Document submission window open till 21 Oct 2026</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">UKPSC has opened a re-window to download online application forms and submit hard copies of documents for the Assistant Geologist, Mining Officer and Assistant Chemist Exam 2026 by 21 October 2026.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">The Uttarakhand Public Service Commission (UKPSC) has issued a detailed notification providing a re-opportunity for candidates to download their online application forms and submit self-attested copies of required documents for the Assistant Geologist, Mining Officer and Assistant Chemist Exam 2026. Candidates who could not send their documents earlier due to postal disruptions during the Kanwar Yatra can now send them by 21 October 2026. Those who already submitted their documents earlier need not send them again.</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Uttarakhand Public Service Commission (UKPSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">7 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Assistant Geologist, Mining Officer, Assistant Chemist</span></div>
@@ -250,43 +274,52 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="r2l">Application form download start date</span><span class="v" data-t="r2v">07 Oct 2026</span></div>
       <div class="r"><span data-t="r3l">Last date to submit hard copies</span><span class="v" data-t="r3v">21 Oct 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="datesH">
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">The Uttarakhand Public Service Commission (UKPSC) has issued a detailed notification providing a re-opportunity for candidates to download their online application forms and submit self-attested copies of required documents for the Assistant Geologist, Mining Officer and Assistant Chemist Exam 2026. Candidates who could not send their documents earlier due to postal disruptions during the Kanwar Yatra can now send them by 21 October 2026. Those who already submitted their documents earlier need not send them again.</p>
+    </section>
+    <section class="kv" id="datesH" data-t-aria="datesH">
       <div class="h" data-t="datesH">Important dates</div>
       <div class="r"><span data-t="datesH0l">Notification date</span><span class="v" data-t="datesH0v">07 Oct 2026</span></div>
       <div class="r"><span data-t="datesH1l">Download application link starts</span><span class="v" data-t="datesH1v">07 Oct 2026</span></div>
       <div class="r"><span data-t="datesH2l">Last date for document submission</span><span class="v" data-t="datesH2v">21 Oct 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="vacH">
+    <section class="kv" id="vacH" data-t-aria="vacH">
       <div class="h" data-t="vacH">Vacancy details</div>
       <div class="r"><span data-t="vacH0l">Assistant Geologist, Mining Officer, Assistant Chemist</span><span class="v" data-t="vacH0v">Not specified · Group-B posts in Directorate of Geology and Mining, Uttarakhand</span></div>
     </section>
-    <section class="kv" data-t-aria="eligH">
+    <section class="kv" id="eligH" data-t-aria="eligH">
       <div class="h" data-t="eligH">Eligibility</div>
       <div class="r"><span data-t="eligH0l">Educational Qualification</span><span class="v" data-t="eligH0v">As per original advertisement rules</span></div>
     </section>
-    <section class="kv" data-t-aria="selH">
+    <section class="kv" id="selH" data-t-aria="selH">
       <div class="h" data-t="selH">Selection process</div>
       <ol class="steps"><li data-t="selH0">Online application and scrutiny of documents</li><li data-t="selH1">Main Examination</li><li data-t="selH2">Interview and original document verification</li></ol>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to apply</div>
       <ol class="steps"><li data-t="howH0">Visit the official UKPSC website psc.uk.gov.in.</li><li data-t="howH1">Download your online application form using the provided link from 07 Oct 2026 to 21 Oct 2026.</li><li data-t="howH2">Attach self-attested copies of all educational, domicile, reservation and other required documents along with the checklist.</li><li data-t="howH3">Send the documents by post or other means to the office of the Secretary, Uttarakhand Public Service Commission, Haridwar by 21 October 2026 up to 06:00 PM.</li><li data-t="howH4">Mention the exam name, applied post name, and application number clearly on top of the envelope.</li></ol>
     </section>
-    <section class="kv" data-t-aria="extraH">
+    <section class="kv" id="extraH" data-t-aria="extraH">
       <div class="h" data-t="extraH">Other details</div>
       <div class="r"><span data-t="extraH0l">Submission Address</span><span class="v" data-t="extraH0v">Secretary, Uttarakhand Public Service Commission, Haridwar, Uttarakhand - 249404</span></div>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://psc.uk.gov.in/public/uploads/recruitment/491550030.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">psc.uk.gov.in</span></a>
       <a class="r" href="https://psc.uk.gov.in" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">psc.uk.gov.in</span></a>
       <a class="r" href="https://psc.uk.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">psc.uk.gov.in</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">What is the last date to submit documents for the UKPSC Assistant Geologist, Mining &amp; Chemist Exam 2026?</h3><p data-t="a0">The last date to submit the hard copies of documents is 21 October 2026 up to 06:00 PM.</p></div>
       <div class="qa"><h3 data-t="q1">Who can apply or submit documents in this re-window?</h3><p data-t="a1">Candidates who applied online earlier and could not send their documents due to postal disruptions during the Kanwar Yatra can submit them now.</p></div>
       <div class="qa"><h3 data-t="q2">Do candidates who already sent their documents need to resend them?</h3><p data-t="a2">No, candidates who have already sent their documents pursuant to the earlier notification dated 03 August 2026 do not need to send them again.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">उत्तराखंड लोक सेवा आयोग ने सहायक भू-वैज्ञानिक, खान अधिकारी और सहायक रसायनज्ञ परीक्षा 2026 के लिए ऑनलाइन आवेदन पत्र डाउनलोड करने और दस्तावेज भेजने हेतु 21 अक्टूबर 2026 तक पुनः अवसर प्रदान किया है。 उत्तराखंड लोक सेवा आयोग ने सहायक भू-वैज्ञानिक, खान अधिकारी और सहायक रसायनज्ञ (समूह-ख) परीक्षा 2026 के अंतर्गत ऑनलाइन आवेदन पत्र डाउनलोड करने और दस्तावेजों की स्व-प्रमाणित प्रतियां भेजने के लिए पुनः अवसर प्रदान करते हुए विस्तृत विज्ञप्ति जारी की है। जिन अभ्यर्थियों के दस्तावेज कांवड़ यात्रा के दौरान डाक सेवा बाधित होने के कारण नहीं पहुंच पाए थे, वे 21 अक्टूबर 2026 तक अपने दस्तावेज भेज सकते हैं। जिन अभ्यर्थियों ने पहले ही दस्तावेज भेज दिए हैं, उन्हें दोबारा भेजने की आवश्यकता नहीं है।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -329,7 +362,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "UKPSC has opened a re-window to download online application forms and submit hard copies of documents for the Assistant Geologist, Mining Officer and Assistant Chemist Exam 2026 by 21 October 2026.",
       statusV: "Document submission window open till 21 Oct 2026",
       lastDate: "Last date 21 Oct 2026",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -348,6 +381,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r2v: "07 Oct 2026",
       r3l: "Last date to submit hard copies",
       r3v: "21 Oct 2026",
+      metaV: "Updated 23 Oct 2026 · Source: psc.uk.gov.in",
       aboutH: "About this notice",
       intro: "The Uttarakhand Public Service Commission (UKPSC) has issued a detailed notification providing a re-opportunity for candidates to download their online application forms and submit self-attested copies of required documents for the Assistant Geologist, Mining Officer and Assistant Chemist Exam 2026. Candidates who could not send their documents earlier due to postal disruptions during the Kanwar Yatra can now send them by 21 October 2026. Those who already submitted their documents earlier need not send them again.",
       datesH: "Important dates",
@@ -383,6 +417,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "Candidates who applied online earlier and could not send their documents due to postal disruptions during the Kanwar Yatra can submit them now.",
       q2: "Do candidates who already sent their documents need to resend them?",
       a2: "No, candidates who have already sent their documents pursuant to the earlier notification dated 03 August 2026 do not need to send them again.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "UKPSC Upper Subordinate Exam 2026 Correction Window",
       rel1: "UKPSC Assistant Geologist & Mines Officer 2026 Offline Form Submission",
@@ -406,7 +441,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "उत्तराखंड लोक सेवा आयोग ने सहायक भू-वैज्ञानिक, खान अधिकारी और सहायक रसायनज्ञ परीक्षा 2026 के लिए ऑनलाइन आवेदन पत्र डाउनलोड करने और दस्तावेज भेजने हेतु 21 अक्टूबर 2026 तक पुनः अवसर प्रदान किया है。",
       statusV: "दस्तावेज प्रेषण हेतु विंडो 21 अक्टूबर 2026 तक खुली है",
       lastDate: "अंतिम तिथि 21 अक्तूबर 2026",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -425,6 +460,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r2v: "07 अक्टूबर 2026",
       r3l: "हार्ड कॉपी जमा करने की अंतिम तिथि",
       r3v: "21 अक्टूबर 2026",
+      metaV: "अपडेट 23 अक्तूबर 2026 · स्रोत: psc.uk.gov.in",
       aboutH: "इस सूचना के बारे में",
       intro: "उत्तराखंड लोक सेवा आयोग ने सहायक भू-वैज्ञानिक, खान अधिकारी और सहायक रसायनज्ञ (समूह-ख) परीक्षा 2026 के अंतर्गत ऑनलाइन आवेदन पत्र डाउनलोड करने और दस्तावेजों की स्व-प्रमाणित प्रतियां भेजने के लिए पुनः अवसर प्रदान करते हुए विस्तृत विज्ञप्ति जारी की है। जिन अभ्यर्थियों के दस्तावेज कांवड़ यात्रा के दौरान डाक सेवा बाधित होने के कारण नहीं पहुंच पाए थे, वे 21 अक्टूबर 2026 तक अपने दस्तावेज भेज सकते हैं। जिन अभ्यर्थियों ने पहले ही दस्तावेज भेज दिए हैं, उन्हें दोबारा भेजने की आवश्यकता नहीं है।",
       datesH: "महत्वपूर्ण तिथियाँ",
@@ -460,6 +496,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "वे अभ्यर्थी जिन्होंने पहले ऑनलाइन आवेदन किया था और कांवड़ यात्रा के दौरान डाक सेवा बाधित होने के कारण दस्तावेज नहीं भेज पाए थे, वे अब भेज सकते हैं।",
       q2: "क्या जिन अभ्यर्थियों ने पहले ही दस्तावेज भेज दिए हैं, उन्हें दोबारा भेजने की आवश्यकता है?",
       a2: "नहीं, जिन अभ्यर्थियों ने पूर्व में 03 अगस्त 2026 की विज्ञप्ति के क्रम में दस्तावेज भेज दिए हैं, उन्हें पुनः दस्तावेज भेजने की आवश्यकता नहीं है।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "उत्तराखंड सम्मिलित राज्य सिविल प्रवर अधीनस्थ सेवा परीक्षा 2026 संशोधन विंडो",
       rel1: "उत्तराखंड सहायक भू-वैज्ञानिक और खान अधिकारी 2026 ऑफलाइन फॉर्म जमा करने की सूचना",

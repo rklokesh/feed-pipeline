@@ -207,13 +207,39 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 @media print { .hback { visibility: hidden; } }
 /* richer notice sections: intro paragraph, numbered steps, FAQ, related notices */
 .kv .p { padding: 10px 14px; margin: 0; line-height: 1.5; }
-.kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
-.kv ol.steps li + li { margin-top: 6px; }
+.kv .steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
+.kv .steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
 .faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
 .faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
+
+/* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
+html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
+.meta { font-size: .94rem; }
+.kv.glance { border-top: 3px solid var(--ink); }
+.kv.glance .h { color: var(--ink); font-weight: 600; }
+section[id], .toc { scroll-margin-top: 80px; }
+.toc { border: 1px solid var(--line); }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "+"; }
+.toc[open] summary::after { content: "–"; }
+.toc ol { list-style: decimal; padding: 10px 14px 12px 34px; columns: 2; column-gap: 32px; }
+.toc li { padding: 3px 0; break-inside: avoid; }
+.toc a { color: var(--ink); }
+ul.steps.dots { list-style: disc; }
+.tw { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
+.tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
+.tbl tbody tr:hover { background: var(--row-hover); }
+html[lang="hi"] .hisum { display: none; }
+@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -232,17 +258,15 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 
   <main>
     <div class="title">
+      <img class="olg" src="/org/hssc.webp" width="76" height="76" alt="Haryana Staff Selection Commission (HSSC) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">HSSC</span></nav>
       <h1 data-t="h1">HSSC Group C CET Phase II Recruitment 2026</h1>
+      <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: hssc.gov.in</p>
       <p class="status"><span id="state">Notice published</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Haryana Staff Selection Commission invites online applications for Group-C posts under CET Phase-II from qualified candidates. Eligible candidates can apply online through the official website.</p>
     </div>
-    <section class="kv" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
-      <p class="p" data-t="intro">Haryana Staff Selection Commission (HSSC) has released Advertisement No. 06/2026 for recruitment to various Group-C posts under CET Phase-II. Candidates who qualified the CET Advt. No. 01/2025 Group-C can apply online through the official website. The online application window is open from 24 June 2026 to 30 June 2026.</p>
-    </section>
-    <section class="kv" data-t-aria="key">
-      <div class="h" data-t="key">Key details</div>
+    <section class="kv glance" id="glance" data-t-aria="key">
+      <div class="h" data-t="key">At a glance</div>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Haryana Staff Selection Commission (HSSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">22 Jun 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Group-C Posts</span></div>
@@ -250,48 +274,57 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       <div class="r"><span data-t="r2l">Application fee</span><span class="v" data-t="r2v">No fee</span></div>
       <div class="r"><span data-t="r3l">Advertisement number</span><span class="v" data-t="r3v">Advt. No. 06/2026</span></div>
     </section>
-    <section class="kv" data-t-aria="fee">
-      <div class="h" data-t="fee">Application fee</div>
-      <div class="r"><span data-t="f0">All Categories</span><span class="v num">₹0</span></div>
+    <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#fee" data-t="fee">Application fee</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
+    <section class="kv" id="about" data-t-aria="aboutH">
+      <div class="h" data-t="aboutH">About this notice</div>
+      <p class="p" data-t="intro">Haryana Staff Selection Commission (HSSC) has released Advertisement No. 06/2026 for recruitment to various Group-C posts under CET Phase-II. Candidates who qualified the CET Advt. No. 01/2025 Group-C can apply online through the official website. The online application window is open from 24 June 2026 to 30 June 2026.</p>
     </section>
-    <section class="kv" data-t-aria="datesH">
+    <section class="kv" id="datesH" data-t-aria="datesH">
       <div class="h" data-t="datesH">Important dates</div>
       <div class="r"><span data-t="datesH0l">Date of Publication</span><span class="v" data-t="datesH0v">22 Jun 2026</span></div>
       <div class="r"><span data-t="datesH1l">Online application starts</span><span class="v" data-t="datesH1v">24 Jun 2026</span></div>
       <div class="r"><span data-t="datesH2l">Closing date for online application</span><span class="v" data-t="datesH2v">30 Jun 2026</span></div>
       <div class="r"><span data-t="datesH3l">Correction in application form</span><span class="v" data-t="datesH3v">01 Jul 2026 to 02 Jul 2026</span></div>
     </section>
-    <section class="kv" data-t-aria="vacH">
+    <section class="kv" id="fee" data-t-aria="fee">
+      <div class="h" data-t="fee">Application fee</div>
+      <div class="r"><span data-t="f0">All Categories</span><span class="v num">₹0</span></div>
+    </section>
+    <section class="kv" id="vacH" data-t-aria="vacH">
       <div class="h" data-t="vacH">Vacancy details</div>
       <div class="r"><span data-t="vacH0l">Group-C Posts</span><span class="v" data-t="vacH0v">As per rules · Details of various groups, posts with category wise bifurcation given in Appendix-A of notice.</span></div>
     </section>
-    <section class="kv" data-t-aria="eligH">
+    <section class="kv" id="eligH" data-t-aria="eligH">
       <div class="h" data-t="eligH">Eligibility</div>
       <div class="r"><span data-t="eligH0l">CET Qualification</span><span class="v" data-t="eligH0v">Qualified in Common Eligibility Test (CET) Advt. No. 01/2025 Group-C with required percentage (50% for unreserved, 40% for reserved category).</span></div>
     </section>
-    <section class="kv" data-t-aria="selH">
+    <section class="kv" id="selH" data-t-aria="selH">
       <div class="h" data-t="selH">Selection process</div>
       <ol class="steps"><li data-t="selH0">Shortlisting of candidates (up to 10 times the number of posts)</li><li data-t="selH1">Written Examination / Skill Test</li><li data-t="selH2">Document Scrutiny</li></ol>
     </section>
-    <section class="kv" data-t-aria="howH">
+    <section class="kv" id="howH" data-t-aria="howH">
       <div class="h" data-t="howH">How to apply</div>
       <ol class="steps"><li data-t="howH0">Go to the official application website: https://adv062026.hryssc.com</li><li data-t="howH1">Register and fill out the online application form with required details.</li><li data-t="howH2">Upload necessary supporting documents and certificates.</li><li data-t="howH3">Submit the final application form before the closing date and take a printout.</li></ol>
     </section>
-    <section class="kv" data-t-aria="extraH">
+    <section class="kv" id="extraH" data-t-aria="extraH">
       <div class="h" data-t="extraH">Other details</div>
       <div class="r"><span data-t="extraH0l">Exam Pattern</span><span class="v" data-t="extraH0v">100 Multiple Choice Questions (MCQs), 100 Marks, Duration: 1 Hour 45 Minutes. Bilingual paper. Negative marking of 1 mark for un-attempted questions.</span></div>
     </section>
-    <section class="kv" data-t-aria="links">
+    <section class="kv" id="links" data-t-aria="links">
       <div class="h" data-t="links">Official links</div>
       <a class="r" href="https://hssc.gov.in/file/ac1f23cd-9d9c-1328-819e-ef25fa0a0061/advertisements" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">hssc.gov.in</span></a>
       <a class="r" href="https://adv062026.hryssc.com" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">adv062026.hryssc.com</span></a>
       <a class="r" href="https://hssc.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">hssc.gov.in</span></a>
     </section>
-    <section class="kv faq" data-t-aria="faqH">
+    <section class="kv faq" id="faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
       <div class="qa"><h3 data-t="q0">What is the last date to apply for HSSC Group C CET Phase II Recruitment 2026?</h3><p data-t="a0">The last date to submit the online application is 30 June 2026 up to 11:59 PM.</p></div>
       <div class="qa"><h3 data-t="q1">Is there any application fee for HSSC Advt. No. 06/2026?</h3><p data-t="a1">No fee is required to be deposited by any candidate for applying against any post.</p></div>
       <div class="qa"><h3 data-t="q2">Who is eligible to apply for these Group-C posts?</h3><p data-t="a2">Candidates who are qualified in Common Eligibility Test (CET) Advt. No. 01/2025 Group-C are eligible to apply.</p></div>
+    </section>
+    <section class="kv hisum" lang="hi">
+      <div class="h">हिंदी में सारांश</div>
+      <p class="p">हरियाणा कर्मचारी चयन आयोग ने योग्य उम्मीदवारों के लिए समूह-सी के पदों पर भर्ती हेतु ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं। हरियाणा कर्मचारी चयन आयोग (एचएसएससी) ने सीईटी चरण-II के तहत विभिन्न समूह-सी पदों पर भर्ती के लिए विज्ञापन संख्या 06/2026 जारी किया है। सीईटी विज्ञापन संख्या 01/2025 समूह-सी उत्तीर्ण करने वाले उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं। ऑनलाइन आवेदन की प्रक्रिया 24 जून 2026 से 30 जून 2026 तक खुली है।</p>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
@@ -334,7 +367,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "Haryana Staff Selection Commission invites online applications for Group-C posts under CET Phase-II from qualified candidates. Eligible candidates can apply online through the official website.",
       statusV: "Notice published",
       lastDate: "Last date 30 Jun 2026",
-      key: "Key details",
+      key: "At a glance",
       fee: "Application fee",
       links: "Official links",
       lNotice: "Official notice",
@@ -354,6 +387,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r3l: "Advertisement number",
       r3v: "Advt. No. 06/2026",
       f0: "All Categories",
+      metaV: "Updated 23 Oct 2026 · Source: hssc.gov.in",
       aboutH: "About this notice",
       intro: "Haryana Staff Selection Commission (HSSC) has released Advertisement No. 06/2026 for recruitment to various Group-C posts under CET Phase-II. Candidates who qualified the CET Advt. No. 01/2025 Group-C can apply online through the official website. The online application window is open from 24 June 2026 to 30 June 2026.",
       datesH: "Important dates",
@@ -390,6 +424,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "No fee is required to be deposited by any candidate for applying against any post.",
       q2: "Who is eligible to apply for these Group-C posts?",
       a2: "Candidates who are qualified in Common Eligibility Test (CET) Advt. No. 01/2025 Group-C are eligible to apply.",
+      tocH: "On this page",
       relH: "More notices",
       rel0: "HSSC Group-D CET Advt 05/2026 Application Date Extension",
       rel1: "HSSC PRT Advt 5/2024 Final Answer Key Released",
@@ -413,7 +448,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       summary: "हरियाणा कर्मचारी चयन आयोग ने योग्य उम्मीदवारों के लिए समूह-सी के पदों पर भर्ती हेतु ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
       statusV: "सूचना जारी",
       lastDate: "अंतिम तिथि 30 जून 2026",
-      key: "मुख्य जानकारी",
+      key: "एक नज़र में",
       fee: "आवेदन शुल्क",
       links: "आधिकारिक लिंक",
       lNotice: "आधिकारिक सूचना",
@@ -433,6 +468,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       r3l: "विज्ञापन संख्या",
       r3v: "विज्ञापन संख्या 06/2026",
       f0: "सभी श्रेणियां",
+      metaV: "अपडेट 23 अक्तूबर 2026 · स्रोत: hssc.gov.in",
       aboutH: "इस सूचना के बारे में",
       intro: "हरियाणा कर्मचारी चयन आयोग (एचएसएससी) ने सीईटी चरण-II के तहत विभिन्न समूह-सी पदों पर भर्ती के लिए विज्ञापन संख्या 06/2026 जारी किया है। सीईटी विज्ञापन संख्या 01/2025 समूह-सी उत्तीर्ण करने वाले उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं। ऑनलाइन आवेदन की प्रक्रिया 24 जून 2026 से 30 जून 2026 तक खुली है।",
       datesH: "महत्वपूर्ण तिथियाँ",
@@ -469,6 +505,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
       a1: "किसी भी पद के लिए आवेदन करने हेतु किसी भी उम्मीदवार को कोई शुल्क जमा करने की आवश्यकता नहीं है।",
       q2: "इन समूह-सी पदों के लिए आवेदन करने के लिए कौन पात्र है?",
       a2: "सामान्य पात्रता परीक्षा (सीईटी) विज्ञापन संख्या 01/2025 समूह-सी उत्तीर्ण करने वाले उम्मीदवार आवेदन करने के पात्र हैं।",
+      tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "हरियाणा कर्मचारी चयन आयोग समूह-डी सीईटी विज्ञापन 05/2026 आवेदन तिथि विस्तार",
       rel1: "हरियाणा कर्मचारी चयन आयोग प्राथमिक शिक्षक विज्ञापन 5/2024 अंतिम उत्तर कुंजी जारी",
