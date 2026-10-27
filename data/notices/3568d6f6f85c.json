@@ -35,49 +35,139 @@
   "notice_date": "2026-10-23",
   "org": "RRB",
   "page": {
+    "age": [],
     "apply_start": null,
-    "apply_url": null,
+    "apply_url": "https://www.rrbapply.gov.in",
     "changes_from_notes": "",
-    "conducted_by_en": "Railway Recruitment Boards (RRB)",
+    "conducted_by_en": "Railway Recruitment Board (RRB)",
     "conducted_by_hi": "रेलवे भर्ती बोर्ड (आरआरबी)",
+    "dates": [
+      {
+        "label_en": "Exam City and Date Intimation",
+        "label_hi": "परीक्षा शहर और तिथि की सूचना",
+        "value_en": "Available now",
+        "value_hi": "अब उपलब्ध है"
+      },
+      {
+        "label_en": "Exam Dates",
+        "label_hi": "परीक्षा तिथियां",
+        "value_en": "03.11.2026, 04.11.2026, 05.11.2026",
+        "value_hi": "03.11.2026, 04.11.2026, 05.11.2026"
+      },
+      {
+        "label_en": "E-Call Letter Download",
+        "label_hi": "ई-कॉल लेटर डाउनलोड",
+        "value_en": "4 days prior to exam date (tentatively)",
+        "value_hi": "परीक्षा तिथि से 4 दिन पहले (संभावित)"
+      }
+    ],
+    "eligibility": [
+      {
+        "label_en": "ID Verification",
+        "label_hi": "पहचान सत्यापन",
+        "value_en": "Aadhaar linked biometric authentication is mandatory at the exam center.",
+        "value_hi": "परीक्षा केंद्र पर आधार लिंक्ड बायोमेट्रिक प्रमाणीकरण अनिवार्य है।"
+      }
+    ],
     "exam_date": "2026-11-03",
+    "extra": [
+      {
+        "label_en": "Helpdesk Contact",
+        "label_hi": "हेल्पलाइन संपर्क",
+        "value_en": "7996342666 (Monday to Saturday, 09:00 am to 06:00 pm)",
+        "value_hi": "7996342666 (सोमवार से शनिवार, सुबह 09:00 बजे से शाम 06:00 बजे तक)"
+      },
+      {
+        "label_en": "Official Application Website for Aadhaar Verification",
+        "label_hi": "आधार सत्यापन के लिए आधिकारिक आवेदन वेबसाइट",
+        "value_en": "www.rrbapply.gov.in",
+        "value_hi": "www.rrbapply.gov.in"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The exam is scheduled on 03.11.2026, 04.11.2026, and 05.11.2026.",
+        "a_hi": "परीक्षा 03.11.2026, 04.11.2026 और 05.11.2026 को निर्धारित है।",
+        "q_en": "When is the RRB ALP CBT 1 exam scheduled for 2026?",
+        "q_hi": "आरआरबी एएलपी सीबीटी 1 परीक्षा 2026 कब आयोजित होनी है?"
+      },
+      {
+        "a_en": "Candidates can view their exam city and date by logging into the active link provided on the official website of RRB.",
+        "a_hi": "उम्मीदवार आरआरबी की आधिकारिक वेबसाइट पर दिए गए सक्रिय लिंक पर लॉगिन करके अपने परीक्षा शहर और तिथि की जांच कर सकते हैं।",
+        "q_en": "How can I check my exam city for RRB ALP 2026?",
+        "q_hi": "मैं आरआरबी एएलपी 2026 के लिए अपने परीक्षा शहर की जांच कैसे कर सकता हूं?"
+      },
+      {
+        "a_en": "E-call letters will be available for download tentatively 4 days prior to the respective exam dates.",
+        "a_hi": "ई-कॉल लेटर संबंधित परीक्षा तिथियों से लगभग 4 दिन पहले डाउनलोड के लिए उपलब्ध होंगे।",
+        "q_en": "When will the e-call letters be available for download?",
+        "q_hi": "ई-कॉल लेटर डाउनलोड के लिए कब उपलब्ध होंगे?"
+      },
+      {
+        "a_en": "Candidates must bring their original Aadhaar card or a printout of e-verified Aadhaar for biometric authentication.",
+        "a_hi": "उम्मीदवारों को बायोमेट्रिक प्रमाणीकरण के लिए अपना मूल आधार कार्ड या ई-सत्यापित आधार का प्रिंटआउट लाना होगा।",
+        "q_en": "What documents are required at the exam center?",
+        "q_hi": "परीक्षा केंद्र पर कौन से दस्तावेज आवश्यक हैं?"
+      }
+    ],
     "fees": [],
     "h1_en": "RRB CEN 01/2026 Assistant Loco Pilot Exam City Intimation",
     "h1_hi": "रेलवे भर्ती बोर्ड केंद्रीय रोजगार सूचना संख्या 01/2026 सहायक लोको पायलट परीक्षा शहर की सूचना",
+    "how_en": [
+      "Visit the official website of RRB.",
+      "Click on the link for viewing Exam City & Date for CEN 01/2026 (ALP).",
+      "Login using your credentials to view the exam city and download travel authority."
+    ],
+    "how_hi": [
+      "आरआरबी की आधिकारिक वेबसाइट पर जाएं।",
+      "केंद्रीय रोजगार सूचना 01/2026 (एएलपी) के लिए परीक्षा शहर और तिथि देखने के लिए दिए गए लिंक पर क्लिक करें।",
+      "परीक्षा शहर देखने और यात्रा प्राधिकार डाउनलोड करने के लिए अपने विवरण का उपयोग करके लॉगिन करें।"
+    ],
+    "intro_en": "The Railway Recruitment Board (RRB) has activated the exam city and date intimation link for the Assistant Loco Pilot (ALP) Computer Based Test (CBT-1) under CEN 01/2026. Registered candidates can check their exam city and download travel authority for SC/ST candidates from the official website. The examinations are scheduled to be held on 03 November 2026, 04 November 2026, and 05 November 2026.",
+    "intro_hi": "रेलवे भर्ती बोर्ड (आरआरबी) ने केंद्रीय रोजगार सूचना संख्या 01/2026 के तहत सहायक लोको पायलट (एएलपी) कंप्यूटर आधारित परीक्षा (सीबीटी-1) के लिए परीक्षा शहर और तिथि की सूचना का लिंक सक्रिय कर दिया है। पंजीकृत उम्मीदवार आधिकारिक वेबसाइट से अपने परीक्षा शहर की जांच कर सकते हैं और एससी/एसटी उम्मीदवारों के लिए यात्रा प्राधिकार डाउनलोड कर सकते हैं। परीक्षाएं 03 नवंबर 2026, 04 नवंबर 2026 और 05 नवंबर 2026 को आयोजित होने निर्धारित हैं।",
     "last_date": null,
     "notice_date": "2026-10-23",
     "official_site": "https://rrb.indianrailways.gov.in/",
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Posts",
-        "label_hi": "पद",
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
         "value_en": "Assistant Loco Pilot (ALP)",
         "value_hi": "सहायक लोको पायलट"
       },
       {
         "label_en": "Advertisement Number",
         "label_hi": "विज्ञापन संख्या",
-        "value_en": "CEN No. 01/2026",
+        "value_en": "CEN 01/2026",
         "value_hi": "केंद्रीय रोजगार सूचना संख्या 01/2026"
       },
       {
-        "label_en": "Exam Date",
-        "label_hi": "परीक्षा तिथि",
-        "value_en": "03.11.2026, 04.11.2026 and 05.11.2026",
+        "label_en": "Exam Dates",
+        "label_hi": "परीक्षा तिथियां",
+        "value_en": "03.11.2026, 04.11.2026, and 05.11.2026",
         "value_hi": "03.11.2026, 04.11.2026 और 05.11.2026"
-      },
-      {
-        "label_en": "Helpdesk Contact",
-        "label_hi": "हेल्पलाइन नंबर",
-        "value_en": "7996342666",
-        "value_hi": "7996342666"
       }
     ],
-    "status_en": "Exam city intimation slip released",
-    "status_hi": "परीक्षा शहर की सूचना पर्ची जारी कर दी गई है",
-    "summary_en": "Railway Recruitment Board has released the exam city and date intimation link for the Assistant Loco Pilot examination 2026. Candidates can view their exam city, date, and download travel authority using their credentials.",
-    "summary_hi": "रेलवे भर्ती बोर्ड ने सहायक लोको पायलट परीक्षा 2026 के लिए परीक्षा शहर और तिथि की सूचना का लिंक जारी कर दिया है। उम्मीदवार अपने क्रेडेंशियल का उपयोग करके परीक्षा शहर, तिथि और यात्रा प्राधिकार देख सकते हैं।"
+    "selection_en": [
+      "Computer Based Test (CBT I)"
+    ],
+    "selection_hi": [
+      "कंप्यूटर आधारित परीक्षा (सीबीटी 1)"
+    ],
+    "status_en": "Exam city and date intimation link released",
+    "status_hi": "परीक्षा शहर और तिथि की सूचना का लिंक जारी कर दिया गया है",
+    "summary_en": "Railway Recruitment Board has released the exam city and date intimation link for the Assistant Loco Pilot examination 2026. Candidates can view their exam city and download travel authority.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने सहायक लोको पायलट परीक्षा 2026 के लिए परीक्षा शहर और तिथि की सूचना का लिंक जारी कर दिया है। उम्मीदवार अपने परीक्षा शहर की जांच कर सकते हैं और यात्रा प्राधिकार डाउनलोड कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "CEN 01/2026",
+        "detail_hi": "केंद्रीय रोजगार सूचना संख्या 01/2026",
+        "post_en": "Assistant Loco Pilot (ALP)",
+        "post_hi": "सहायक लोको पायलट",
+        "total": "As per notification"
+      }
+    ]
   },
   "pdf": {
     "bytes": 404052,
