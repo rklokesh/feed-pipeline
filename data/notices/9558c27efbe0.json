@@ -58,15 +58,56 @@
   "notice_date": "2026-10-23",
   "org": "UPPSC",
   "page": {
+    "age": [],
     "apply_start": null,
     "apply_url": "https://uppsc.up.nic.in",
     "changes_from_notes": "",
     "conducted_by_en": "Uttar Pradesh Public Service Commission (UPPSC)",
-    "conducted_by_hi": "उत्तर प्रदेश लोक सेवा आयोग (यूपीपीएससी)",
+    "conducted_by_hi": "उत्तर प्रदेश लोक सेवा आयोग",
+    "dates": [
+      {
+        "label_en": "Document Verification Dates",
+        "label_hi": "अभिलेख सत्यापन तिथियां",
+        "value_en": "29 Oct 2026 to 31 Oct 2026",
+        "value_hi": "29 अक्टूबर 2026 से 31 अक्टूबर 2026"
+      }
+    ],
+    "eligibility": [],
     "exam_date": "2026-10-29",
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "The document verification is scheduled from 29 Oct 2026 to 31 Oct 2026.",
+        "a_hi": "अभिलेख सत्यापन 29 अक्टूबर 2026 से 31 अक्टूबर 2026 तक निर्धारित है।",
+        "q_en": "When is the UPPSC Assistant Teacher Document Verification 2025 scheduled?",
+        "q_hi": "यूपीपीएससी सहायक अध्यापक अभिलेख सत्यापन 2025 कब निर्धारित है?"
+      },
+      {
+        "a_en": "You can download and print the complete form set from the official website https://uppsc.up.nic.in by logging into your applicant dashboard after OTR authentication.",
+        "a_hi": "आप ओटीआर प्रमाणीकरण के बाद अपने आवेदक डैशबोर्ड में लॉगिन करके आधिकारिक वेबसाइट https://uppsc.up.nic.in से पूरा फॉर्म सेट डाउनलोड और प्रिंट कर सकते हैं।",
+        "q_en": "Where can I download the document verification form set?",
+        "q_hi": "मैं अभिलेख सत्यापन फॉर्म सेट कहां से डाउनलोड कर सकता हूं?"
+      }
+    ],
     "fees": [],
     "h1_en": "UPPSC Assistant Teacher Document Verification 2025",
     "h1_hi": "उत्तर प्रदेश लोक सेवा आयोग सहायक अध्यापक अभिलेख सत्यापन 2025",
+    "how_en": [
+      "Visit the official UPPSC website at https://uppsc.up.nic.in.",
+      "Click on 'Click here for Advt. No. A-5/E-1/2025, Assistant Teacher, Trained Graduate Grade (Male/Female Branch) Exam-2025 Document Verification'.",
+      "Click on 'Click here to Authenticate' and complete authentication using your OTR number.",
+      "Go to the 'Applicant Dashboard', check the latest status, and click on 'Proceed to Print Complete Form Set for Document Verification'.",
+      "Print the required forms, fill them, attach necessary documents, and report for document verification as per the scheduled date and shift."
+    ],
+    "how_hi": [
+      "आधिकारिक वेबसाइट https://uppsc.up.nic.in पर जाएं।",
+      "'Click here for Advt. No. A-5/E-1/2025, Assistant Teacher, Trained Graduate Grade (Male/Female Branch) Exam-2025 Document Verification' पर क्लिक करें।",
+      "'Click here to Authenticate' पर क्लिक करें और अपने ओटीआर नंबर का उपयोग करके प्रमाणीकरण पूरा करें।",
+      "'Applicant Dashboard' पर जाएं, नवीनतम स्थिति जांचें, और 'Proceed to Print Complete Form Set for Document Verification' पर क्लिक करें।",
+      "आवश्यक फॉर्म प्रिंट करें, उन्हें भरें, आवश्यक दस्तावेज संलग्न करें और निर्धारित तिथि तथा पाली के अनुसार अभिलेख सत्यापन के लिए उपस्थित हों।"
+    ],
+    "intro_en": "Uttar Pradesh Public Service Commission (UPPSC) has released the document verification schedule for the Assistant Teacher, Trained Graduate Grade (Male/Female Branch) Exam-2025 under advertisement number A-5/E-1/2025. The document verification is scheduled to be held on 29 Oct 2026, 30 Oct 2026, and 31 Oct 2026 in multiple shifts. Qualified candidates must complete the online authentication and print the complete form set for document verification from the official website.",
+    "intro_hi": "उत्तर प्रदेश लोक सेवा आयोग (UPPSC) ने विज्ञापन संख्या A-5/E-1/2025 के अंतर्गत सहायक अध्यापक, प्रशिक्षित स्नातक श्रेणी (पुरुष/महिला शाखा) परीक्षा-2025 के लिए अभिलेख सत्यापन का कार्यक्रम जारी कर दिया है। अभिलेख सत्यापन 29 अक्टूबर 2026, 30 अक्टूबर 2026 और 31 अक्टूबर 2026 को विभिन्न पालियों में आयोजित किया जाना है। योग्य उम्मीदवारों को आधिकारिक वेबसाइट से ऑनलाइन प्रमाणीकरण पूरा करना होगा और अभिलेख सत्यापन के लिए फॉर्म सेट का प्रिंट निकालना होगा।",
     "last_date": null,
     "notice_date": "2026-10-23",
     "official_site": "https://uppsc.up.nic.in",
@@ -79,22 +120,37 @@
         "value_hi": "सहायक अध्यापक, प्रशिक्षित स्नातक श्रेणी (पुरुष/महिला शाखा)"
       },
       {
-        "label_en": "Exam date",
-        "label_hi": "परीक्षा तिथि",
-        "value_en": "29 Oct 2026",
-        "value_hi": "29 अक्तूबर 2026"
-      },
-      {
-        "label_en": "Advertisement number",
+        "label_en": "Advertisement Number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "A-5/E-1/2025",
         "value_hi": "A-5/E-1/2025"
+      },
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "29 Oct 2026",
+        "value_hi": "29 अक्टूबर 2026"
       }
     ],
+    "selection_en": [
+      "Document Verification"
+    ],
+    "selection_hi": [
+      "अभिलेख सत्यापन"
+    ],
     "status_en": "Document verification schedule released",
-    "status_hi": "अभिलेख सत्यापन कार्यक्रम जारी किया गया",
+    "status_hi": "अभिलेख सत्यापन कार्यक्रम जारी",
     "summary_en": "Uttar Pradesh Public Service Commission has announced the document verification schedule for Assistant Teacher Trained Graduate Grade Exam 2025. Candidates should check the schedule and complete authentication on the official website.",
-    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने सहायक अध्यापक प्रशिक्षित स्नातक श्रेणी परीक्षा 2025 के लिए अभिलेख सत्यापन कार्यक्रम घोषित कर दिया है। उम्मीदवार आधिकारिक वेबसाइट पर जाकर अपना कार्यक्रम देखें और सत्यापन प्रक्रिया पूरी करें।"
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने सहायक अध्यापक प्रशिक्षित स्नातक श्रेणी परीक्षा 2025 के लिए अभिलेख सत्यापन कार्यक्रम घोषित कर दिया है। उम्मीदवार आधिकारिक वेबसाइट पर जाकर अपना कार्यक्रम देखें और सत्यापन प्रक्रिया पूरी करें।",
+    "vacancies": [
+      {
+        "detail_en": "",
+        "detail_hi": "",
+        "post_en": "Assistant Teacher, Trained Graduate Grade (Male/Female Branch)",
+        "post_hi": "सहायक अध्यापक, प्रशिक्षित स्नातक श्रेणी (पुरुष/महिला शाखा)",
+        "total": ""
+      }
+    ]
   },
   "pdf": {
     "bytes": 3654953,
