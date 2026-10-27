@@ -328,7 +328,8 @@ def render(n: dict, slug: str, related: list | None = None) -> str:
           {"@context": "https://schema.org", "@type": "WebPage", "name": en["h1"], "url": url, "inLanguage": ["en-IN", "hi-IN"],
            "description": en.get("intro") or en["summary"], "datePublished": posted,
            "dateModified": (n.get("published_at") or "")[:10] or posted,
-           "isBasedOn": n.get("url"), "publisher": {"@type": "Organization", "name": "SarkariChart", "url": f"{SITE_URL}/"},
+           "isBasedOn": n.get("url"), "publisher": {"@type": "Organization", "name": "SarkariChart", "url": f"{SITE_URL}/", "logo": f"{SITE_URL}/logo-512.png"},
+           "primaryImageOfPage": f"{SITE_URL}/notice/{slug}/og.png",
            "about": {"@type": "GovernmentOrganization", "name": en["byV"]}}]
     if faq:
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
@@ -358,7 +359,7 @@ def render(n: dict, slug: str, related: list | None = None) -> str:
     desc = (en["summary"] or en["h1"])[:155]
     out = (tpl.replace("{{TITLE}}", esc(en["title"])).replace("{{DESC}}", esc(desc)).replace("{{MAIN}}", "\n".join(main))
            .replace("{{T_EN}}", t_en).replace("{{T_HI}}", t_hi).replace("{{SLUG}}", slug)
-           .replace("{{OGIMG}}", f"{SITE_URL}/notice/{slug}/og.png").replace("{{URL}}", f"{SITE_URL}/notice/{slug}/")
+           .replace("{{OGIMG}}", f"{SITE_URL}/notice/{slug}/og.png").replace("{{OGALT}}", esc(f"{en['h1']} — {en['org']} {typ} notice summary card by SarkariChart")).replace("{{URL}}", f"{SITE_URL}/notice/{slug}/")
            .replace("{{LAST}}", f'new Date("{last}T23:59:59+05:30")' if last else "null"))
     return out
 

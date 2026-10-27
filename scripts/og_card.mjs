@@ -7,8 +7,8 @@ import { join } from "node:path";
 
 const SITE = process.argv[2] || "site";
 const home = readFileSync(join(SITE, "index.html"), "utf8");
-const logo = (home.match(/<svg class="mark"[\s\S]*?<\/svg>/) || [""])[0]
-  .replace(/class="mark"/, 'class="mark" style="color:#36322D"').replace(/width="138" height="139"/, 'width="230" height="232"');
+// the brand badge (site/logo-552.webp) as an inline image
+const logo = `<img src="data:image/webp;base64,${readFileSync(join(SITE, "logo-552.webp")).toString("base64")}" width="236" height="236" alt="">`;
 const esc = s => String(s || "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
 function card(o) {
