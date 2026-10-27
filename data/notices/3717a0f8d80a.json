@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://psc.wb.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Clerk",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "This notice is about viewing OMR sheets for an already conducted exam, not a new job vacancy, result, admit card, or answer key.",
+    "summary_en": "Candidates can view their OMR sheets for the Clerkship Examination 2023 on the official website until 12.11.2025.",
+    "summary_hi": "उम्मीदवार आधिकारिक वेबसाइट पर 12.11.2025 तक लिपिक परीक्षा 2023 के लिए अपनी ओएमआर शीट देख सकते हैं।",
+    "title_en": "WBPSC Clerkship Examination 2023 OMR Sheet Notice",
+    "title_hi": "पश्चिम बंगाल लोक सेवा आयोग लिपिक परीक्षा ओएमआर शीट सूचना",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -65,7 +80,7 @@
     "text_kind": "text"
   },
   "source_id": "wbpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "IMPORTANT NOTICE REGARDING CLERKSHIP EXAMINATION (PRELI) RECRUITMENT EXAMINATION, 2023 [ADVT. NO. 13/2023] SCHEDULE OF INTERVIEW FOR RECRUITMENT TO THE POST OF ASSISTANT ENGINEER (ELECTRICAL) IN THE WEST BENGAL ENGINEERING SERVICE (ELECTRICAL) UNDER THE PUBLIC WORKS DEPARTMENT, GOVT. OF WEST BENGAL ",
   "url": "https://psc.wb.gov.in/Download?param1=An_20251029173719_Notice_OMR_clerkship.pdf&param2=advertisement"
 }

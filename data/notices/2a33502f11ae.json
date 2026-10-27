@@ -11,8 +11,8 @@
     "skip_reason": "",
     "summary_en": "Railway Recruitment Board has invited online applications for the post of Station Master under CEN 08/2026. Eligible candidates can apply online through the official RRB website.",
     "summary_hi": "रेलवे भर्ती बोर्ड ने केंद्रीय रोजगार सूचना 08/2026 के तहत स्टेशन मास्टर के पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
-    "title_en": "RRB Station Master Recruitment 2026: Apply Online for 1215 Posts",
-    "title_hi": "रेलवे भर्ती बोर्ड स्टेशन मास्टर भर्ती 2026: 1215 पदों के लिए ऑनलाइन आवेदन करें",
+    "title_en": "RRB Station Master Recruitment 2026",
+    "title_hi": "रेलवे भर्ती बोर्ड स्टेशन मास्टर भर्ती 2026",
     "type": "Job",
     "vacancies": 1215
   },
@@ -99,6 +99,16 @@
   "notice_date": "2026-10-24",
   "org": "RRB",
   "page": {
+    "after_en": [
+      "Appearance in Computer Based Test (CBT)",
+      "Computer Based Aptitude Test (CBAT) for qualified candidates",
+      "Document Verification and Medical Examination"
+    ],
+    "after_hi": [
+      "कंप्यूटर आधारित परीक्षा (सीबीटी) में शामिल होना",
+      "योग्य उम्मीदवारों के लिए कंप्यूटर आधारित एप्टीट्यूड टेस्ट (सीबीएटी)",
+      "दस्तावेज़ सत्यापन और चिकित्सा परीक्षा"
+    ],
     "age": [
       {
         "label_en": "Minimum age",
@@ -113,29 +123,40 @@
         "value_hi": "33 वर्ष"
       },
       {
-        "label_en": "Age as on",
-        "label_hi": "आयु इस तिथि के अनुसार",
+        "label_en": "As-on date",
+        "label_hi": "आयु गणना की तिथि",
         "value_en": "01 Jan 2027",
         "value_hi": "01 जनवरी 2027"
       }
     ],
     "apply_start": "2026-10-27",
     "apply_url": "https://www.rrbapply.gov.in",
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Verify eligibility criteria including age and qualifications.",
+      "Keep a valid mobile number and personal email ID ready.",
+      "Ensure correct details are filled during account creation as modifications are restricted."
+    ],
+    "checklist_hi": [
+      "आयु और योग्यताओं सहित पात्रता मानदंडों की जाँच करें।",
+      "एक वैध मोबाइल नंबर और व्यक्तिगत ईमेल आईडी तैयार रखें।",
+      "सुनिश्चित करें कि खाता बनाते समय सही विवरण भरे गए हैं क्योंकि संशोधन प्रतिबंधित हैं।"
+    ],
     "conducted_by_en": "Railway Recruitment Board (RRB)",
-    "conducted_by_hi": "रेलवे भर्ती बोर्ड (RRB)",
+    "conducted_by_hi": "रेलवे भर्ती बोर्ड (आरआरबी)",
     "dates": [
       {
-        "label_en": "Date of Indicative notice in Employment News",
-        "label_hi": "रोजगार समाचार में सांकेतिक सूचना की तिथि",
+        "label_en": "Indicative notice date",
+        "label_hi": "संकेतक नोटिस तिथि",
         "value_en": "24 Oct 2026",
-        "value_hi": "24 अक्टूबर 2026"
+        "value_hi": "24 अक्तूबर 2026"
       },
       {
         "label_en": "Online application starts",
-        "label_hi": "ऑनलाइन आवेदन प्रारंभ",
+        "label_hi": "ऑनलाइन आवेदन शुरू",
         "value_en": "27 Oct 2026",
-        "value_hi": "27 अक्टूबर 2026"
+        "value_hi": "27 अक्तूबर 2026"
       },
       {
         "label_en": "Online application last date",
@@ -144,95 +165,119 @@
         "value_hi": "25 नवंबर 2026"
       },
       {
-        "label_en": "Last date for application fee payment",
-        "label_hi": "आवेदन शुल्क भुगतान की अंतिम तिथि",
+        "label_en": "Last date for fee payment",
+        "label_hi": "शुल्क भुगतान की अंतिम तिथि",
         "value_en": "27 Nov 2026",
         "value_hi": "27 नवंबर 2026"
       },
       {
-        "label_en": "Modification window for corrections",
-        "label_hi": "सुधार के लिए संशोधन विंडो",
+        "label_en": "Modification window",
+        "label_hi": "संशोधन विंडो",
         "value_en": "28 Nov 2026 to 07 Dec 2026",
         "value_hi": "28 नवंबर 2026 से 07 दिसंबर 2026"
       }
     ],
+    "documents_en": [
+      "Educational qualification certificates",
+      "Age proof",
+      "Caste / Category certificate in prescribed format"
+    ],
+    "documents_hi": [
+      "शैक्षणिक योग्यता प्रमाण पत्र",
+      "आयु प्रमाण",
+      "निर्धारित प्रारूप में जाति / श्रेणी प्रमाण पत्र"
+    ],
     "eligibility": [
       {
-        "label_en": "Nationality / Citizenship",
-        "label_hi": "राष्ट्रीयता / नागरिकता",
-        "value_en": "Must be an Indian National or as brought out at Para 7 of the CEN.",
-        "value_hi": "भारतीय नागरिक होना चाहिए या जैसा कि सूचना के पैरा 7 में बताया गया है।"
-      },
-      {
-        "label_en": "Education",
-        "label_hi": "शैक्षणिक योग्यता",
-        "value_en": "Candidates must ensure they possess/fulfil all prescribed educational qualifications as on the closing date. Candidates waiting for final results are not eligible.",
-        "value_hi": "उम्मीदवारों को यह सुनिश्चित करना चाहिए कि वे अंतिम तिथि तक सभी निर्धारित शैक्षणिक योग्यताएं रखते हैं। अंतिम परिणामों की प्रतीक्षा कर रहे उम्मीदवार पात्र नहीं हैं।"
+        "label_en": "Nationality",
+        "label_hi": "राष्ट्रीयता",
+        "value_en": "Indian Nationals and other eligible categories as specified in the notice.",
+        "value_hi": "भारतीय नागरिक और नोटिस में निर्दिष्ट अन्य पात्र श्रेणियां।"
       }
     ],
     "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a centralized employment notice issued by Railway Recruitment Boards for recruiting Station Master posts across Indian Railways through a computer-based test, aptitude test, and document verification.",
+        "a_hi": "यह भारतीय रेलवे में कंप्यूटर आधारित परीक्षा, एप्टीट्यूड टेस्ट और दस्तावेज़ सत्यापन के माध्यम से स्टेशन मास्टर के पदों पर भर्ती के लिए रेलवे भर्ती बोर्डों द्वारा जारी एक केंद्रीय रोजगार सूचना है।",
+        "q_en": "What is CEN 08/2026 Station Master Examination?",
+        "q_hi": "सीईएन 08/2026 स्टेशन मास्टर परीक्षा क्या है?"
+      }
+    ],
     "extra": [
       {
         "label_en": "Medical Standard",
         "label_hi": "चिकित्सा मानक",
-        "value_en": "A-2 medical standard required for the post of Station Master.",
-        "value_hi": "स्टेशन मास्टर के पद के लिए A-2 चिकित्सा मानक आवश्यक है।"
+        "value_en": "A-2",
+        "value_hi": "ए-2"
       },
       {
-        "label_en": "Modification Fee",
+        "label_en": "Modification fee",
         "label_hi": "संशोधन शुल्क",
-        "value_en": "Rs. 250/- (non-refundable) for each occasion of modification from 28.11.2026 to 07.12.2026.",
-        "value_hi": "28.11.2026 से 07.12.2026 तक संशोधन के प्रत्येक अवसर के लिए ₹250 (गैर-वापसी योग्य)।"
+        "value_en": "₹250",
+        "value_hi": "₹250"
       }
     ],
     "faq": [
       {
-        "a_en": "The last date to submit online applications is 25 November 2026 up to 23:59 hours.",
-        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 25 नवंबर 2026 को रात 23:59 बजे तक है।",
+        "a_en": "The last date to submit online applications is 25 November 2026 up to 23:59 hrs.",
+        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 25 नवंबर 2026 रात्रि 23:59 बजे तक है।",
         "q_en": "What is the last date to apply for RRB Station Master Recruitment 2026?",
-        "q_hi": "रेलवे भर्ती बोर्ड स्टेशन मास्टर भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+        "q_hi": "आरआरबी स्टेशन मास्टर भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
         "a_en": "A total of 1215 vacancies have been announced across all RRBs.",
         "a_hi": "सभी आरआरबी में कुल 1215 रिक्तियों की घोषणा की गई है।",
         "q_en": "How many vacancies are announced for Station Master under CEN 08/2026?",
-        "q_hi": "CEN 08/2026 के तहत स्टेशन मास्टर के लिए कितनी रिक्तियों की घोषणा की गई है?"
+        "q_hi": "सीईएन 08/2026 के तहत स्टेशन मास्टर के लिए कुल कितनी रिक्तियों की घोषणा की गई है?"
       },
       {
         "a_en": "Candidates must be between 20 and 33 years of age as on 01 January 2027.",
         "a_hi": "उम्मीदवारों की आयु 01 जनवरी 2027 के अनुसार 20 से 33 वर्ष के बीच होनी चाहिए।",
-        "q_en": "What is the age limit for RRB Station Master post?",
-        "q_hi": "रेलवे भर्ती बोर्ड स्टेशन मास्टर पद के लिए आयु सीमा क्या है?"
-      },
-      {
-        "a_en": "No, candidates can apply to only one RRB. Submitting applications to more than one RRB will lead to rejection of all applications.",
-        "a_hi": "नहीं, उम्मीदवार केवल एक आरआरबी में आवेदन कर सकते हैं। एक से अधिक आरआरबी में आवेदन जमा करने से सभी आवेदन अस्वीकार हो जाएंगे।",
-        "q_en": "Can I apply to more than one RRB?",
-        "q_hi": "क्या मैं एक से अधिक आरआरबी में आवेदन कर सकता हूँ?"
+        "q_en": "What is the age limit for RRB Station Master 2026?",
+        "q_hi": "आरआरबी स्टेशन मास्टर 2026 के लिए आयु सीमा क्या है?"
       }
     ],
     "fees": [],
-    "h1_en": "RRB Station Master Recruitment 2026: Apply Online for 1215 Posts",
-    "h1_hi": "रेलवे भर्ती बोर्ड स्टेशन मास्टर भर्ती 2026: 1215 पदों के लिए ऑनलाइन आवेदन करें",
+    "h1_en": "RRB Station Master Recruitment 2026",
+    "h1_hi": "रेलवे भर्ती बोर्ड स्टेशन मास्टर भर्ती 2026",
     "how_en": [
-      "Visit the unified official RRB website or the designated application link.",
-      "Create an account or use existing account credentials if already created for 2024/2025/2026 CENs.",
-      "Authenticate identity using DigiLocker or Aadhaar during account creation or application.",
-      "Select a single RRB and submit only one online application along with required details.",
-      "Pay the application fee and take a final printout of the submitted application."
+      "Visit the unified official RRB website.",
+      "Create an account or log in using existing credentials from 2024/2025/2026.",
+      "Choose a single RRB and submit one online application.",
+      "Complete identity authentication using DigiLocker or Aadhaar.",
+      "Pay the applicable examination fee."
     ],
     "how_hi": [
-      "एकीकृत आधिकारिक आरआरबी वेबसाइट या नामित आवेदन लिंक पर जाएं।",
-      "एक खाता बनाएं या यदि 2024/2025/2026 CEN के लिए पहले से खाता बनाया गया है तो मौजूदा खाता विवरण का उपयोग करें।",
-      "खाता बनाते समय या आवेदन के दौरान डिजीलॉकर या आधार का उपयोग करके पहचान प्रमाणित करें।",
-      "एक एकल आरआरबी का चयन करें और आवश्यक विवरण के साथ केवल एक ऑनलाइन आवेदन जमा करें।",
-      "आवेदन शुल्क का भुगतान करें और जमा किए गए आवेदन का अंतिम प्रिंटआउट लें।"
+      "आधिकारिक आरआरबी वेबसाइट पर जाएं।",
+      "एक खाता बनाएं या 2024/2025/2026 के मौजूदा विवरण से लॉगिन करें।",
+      "एकल आरआरबी का चयन करें और एक ऑनलाइन आवेदन जमा करें।",
+      "डिजीलॉकर या आधार का उपयोग करके पहचान प्रमाणीकरण पूरा करें।",
+      "लागू परीक्षा शुल्क का भुगतान करें।"
     ],
-    "intro_en": "Railway Recruitment Boards (RRBs) have issued Centralized Employment Notice CEN No. 08/2026 for the recruitment of Station Master across Indian Railways. A total of 1215 vacancies are available. Eligible candidates can submit their online applications from 27 October 2026 to 25 November 2026. Applicants should review the eligibility criteria, medical standards, and application procedures before applying.",
-    "intro_hi": "रेलवे भर्ती बोर्ड (RRB) ने भारतीय रेलवे में स्टेशन मास्टर के पद के लिए केंद्रीय रोजगार सूचना CEN No. 08/2026 जारी की है। कुल 1215 रिक्तियां उपलब्ध हैं। योग्य उम्मीदवार 27 अक्टूबर 2026 से 25 नवंबर 2026 तक अपने ऑनलाइन आवेदन जमा कर सकते हैं। आवेदकों को आवेदन करने से पहले पात्रता मापदंड, चिकित्सा मानक और आवेदन प्रक्रिया की समीक्षा करनी चाहिए।",
+    "intro_en": "Railway Recruitment Boards (RRBs) have issued Centralized Employment Notice CEN No. 08/2026 for the recruitment of Station Master across various Zonal Railways. A total of 1215 vacancies are announced with a pay level of 7th CPC Level 6. Online applications open on 27 October 2026 and will close on 25 November 2026. Candidates who meet the eligibility criteria should review the instructions and apply through the official website before the deadline.",
+    "intro_hi": "रेलवे भर्ती बोर्ड (आरआरबी) ने विभिन्न क्षेत्रीय रेलवे में स्टेशन मास्टर की भर्ती के लिए केंद्रीय रोजगार सूचना संख्या 08/2026 जारी की है। सातवें वेतन आयोग के लेवल 6 के वेतनमान के साथ कुल 1215 रिक्तियों की घोषणा की गई है। ऑनलाइन आवेदन 27 अक्तूबर 2026 से शुरू होंगे और 25 नवंबर 2026 को समाप्त होंगे। जो उम्मीदवार पात्रता मानदंडों को पूरा करते हैं, उन्हें निर्देशों की समीक्षा करनी चाहिए और समय सीमा से पहले आधिकारिक वेबसाइट के माध्यम से आवेदन करना चाहिए।",
     "last_date": "2026-11-25",
+    "mistakes_en": [
+      "Submitting applications to more than one RRB, which leads to rejection of all applications.",
+      "Failing to keep mobile number and email ID active throughout the recruitment process."
+    ],
+    "mistakes_hi": [
+      "एक से अधिक आरआरबी में आवेदन करना, जिससे सभी आवेदन अस्वीकार हो जाते हैं।",
+      "भर्ती प्रक्रिया के दौरान मोबाइल नंबर और ईमेल आईडी को सक्रिय न रखना।"
+    ],
+    "not_en": [
+      "Candidates waiting for final results of the prescribed educational qualification.",
+      "Candidates attempting to submit more than one application."
+    ],
+    "not_hi": [
+      "निर्धारित शैक्षणिक योग्यता के अंतिम परिणामों की प्रतीक्षा कर रहे उम्मीदवार।",
+      "एक से अधिक आवेदन जमा करने का प्रयास करने वाले उम्मीदवार।"
+    ],
     "notice_date": "2026-10-24",
     "official_site": "https://rrb.indianrailways.gov.in",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
@@ -248,10 +293,10 @@
         "value_hi": "1215"
       },
       {
-        "label_en": "Apply online (start to last date)",
-        "label_hi": "ऑनलाइन आवेदन (प्रारंभ से अंतिम तिथि)",
+        "label_en": "Apply online",
+        "label_hi": "ऑनलाइन आवेदन",
         "value_en": "27 Oct 2026 to 25 Nov 2026",
-        "value_hi": "27 अक्टूबर 2026 से 25 नवंबर 2026"
+        "value_hi": "27 अक्तूबर 2026 से 25 नवंबर 2026"
       },
       {
         "label_en": "Last date for fee",
@@ -260,16 +305,24 @@
         "value_hi": "27 नवंबर 2026"
       },
       {
-        "label_en": "Age limit (as on)",
-        "label_hi": "आयु सीमा (इस तिथि के अनुसार)",
-        "value_en": "20-33 years as on 01 Jan 2027",
-        "value_hi": "20-33 वर्ष 01 जनवरी 2027 के अनुसार"
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "20–33 Years (as on 01.01.2027)",
+        "value_hi": "20–33 वर्ष (01.01.2027 के अनुसार)"
       },
       {
         "label_en": "Advertisement number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "CEN No. 08/2026",
-        "value_hi": "केंद्रीय रोजगार सूचना संख्या 08/2026"
+        "value_hi": "सीईएन संख्या 08/2026"
+      }
+    ],
+    "salary": [
+      {
+        "label_en": "Pay level",
+        "label_hi": "वेतन स्तर",
+        "value_en": "Level 6 (₹35,400 initial)",
+        "value_hi": "लेवल 6 (₹35,400 प्रारंभिक)"
       }
     ],
     "selection_en": [
@@ -278,22 +331,36 @@
       "Document Verification (DV)"
     ],
     "selection_hi": [
-      "कंप्यूटर आधारित परीक्षा (CBT)",
-      "कंप्यूटर आधारित एप्टीट्यूड टेस्ट (CBAT)",
-      "दस्तावेज़ सत्यापन (DV)"
+      "कंप्यूटर आधारित परीक्षा (सीबीटी)",
+      "कंप्यूटर आधारित एप्टीट्यूड टेस्ट (सीबीएटी)",
+      "दस्तावेज़ सत्यापन"
     ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Station Master",
+      "line_hi": "स्टेशन मास्टर",
+      "posts": 1215
+    },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "Railway Recruitment Board has invited online applications for the post of Station Master under CEN 08/2026 for 1215 vacancies. Eligible and interested candidates can apply online through the official website. Read the notice carefully for eligibility, dates, and other details.",
-    "summary_hi": "रेलवे भर्ती बोर्ड ने केंद्रीय रोजगार सूचना 08/2026 के तहत स्टेशन मास्टर के 1215 पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य और इच्छुक उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं। पात्रता, तिथियों और अन्य विवरणों के लिए सूचना को ध्यान से पढ़ें।",
+    "summary_en": "Railway Recruitment Board invites online applications for 1215 Station Master posts under CEN 08/2026. Eligible candidates can apply online through the official website by 25 November 2026.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने केंद्रीय रोजगार सूचना 08/2026 के तहत 1215 स्टेशन मास्टर पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 25 नवंबर 2026 तक आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
     "vacancies": [
       {
-        "detail_en": "Level 6 in 7th CPC (Initial Pay Rs. 35400), Medical Standard A-2. RRB-wise and Zone-wise detailed distribution given in Annexure-B of the notice.",
-        "detail_hi": "7वें सीपीसी में लेवल 6 (प्रारंभिक वेतन ₹35400), चिकित्सा मानक A-2। आरआरबी-वार और ज़ोन-वार विस्तृत विवरण सूचना के परिशिष्ट-बी में दिया गया है।",
+        "detail_en": "Detailed distribution is given in Annexure-B of the official notice.",
+        "detail_hi": "विस्तृत विवरण आधिकारिक सूचना के अनुलग्नक-बी में दिया गया है।",
         "post_en": "Station Master",
         "post_hi": "स्टेशन मास्टर",
         "total": "1215"
       }
+    ],
+    "who_en": [
+      "Eligible Indian nationals meeting the age and other criteria specified in CEN 08/2026."
+    ],
+    "who_hi": [
+      "सीईएन 08/2026 में निर्दिष्ट आयु और अन्य मानदंडों को पूरा करने वाले पात्र भारतीय नागरिक।"
     ]
   },
   "pdf": {

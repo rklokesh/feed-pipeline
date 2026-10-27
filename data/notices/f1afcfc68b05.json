@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://bssc.bihar.gov.in/NoticeBoard.htm",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Inter Level Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "document scrutiny and counselling notice for an old exam, not a new job application",
+    "summary_en": "Notice regarding document scrutiny and counselling for the first inter level combined competitive examination 2014.",
+    "summary_hi": "प्रथम इंटर स्तरीय संयुक्त प्रतियोगिता परीक्षा 2014 के लिए दस्तावेज सत्यापन और काउंसलिंग से संबंधित सूचना।",
+    "title_en": "BSSC Inter Level Exam 2014 Document Scrutiny Notice",
+    "title_hi": "बिहार कर्मचारी चयन आयोग इंटर स्तरीय परीक्षा 2014 दस्तावेज सत्यापन सूचना",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +31,7 @@
     "text_kind": "scanned"
   },
   "source_id": "bssc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "27-10-2026 06060114 Notice Regarding Scrutiny of Documents (Counselling) for Adv. No.- 06060114, Post- 1st Inter Level Combined Competitive Exam-2014 (In the Light of Order Passed in CWJC No.- 2548/2022)",
   "url": "https://bssc.bihar.gov.in/Advertisement/4680_06060114_notice.pdf"
 }

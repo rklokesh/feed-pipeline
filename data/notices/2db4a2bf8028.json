@@ -91,6 +91,12 @@
   "notice_date": "2026-08-27",
   "org": "RRC Western Railway",
   "page": {
+    "after_en": [
+      "Trial and document verification for shortlisted candidates"
+    ],
+    "after_hi": [
+      "शॉर्टलिस्ट किए गए उम्मीदवारों के लिए ट्रायल और दस्तावेज सत्यापन"
+    ],
     "age": [
       {
         "label_en": "Minimum age",
@@ -105,83 +111,128 @@
         "value_hi": "25 वर्ष"
       },
       {
-        "label_en": "As on date",
-        "label_hi": "आयु की गणना",
+        "label_en": "As-on date",
+        "label_hi": "आयु गणना तिथि",
         "value_en": "01 Jan 2027",
         "value_hi": "01 जनवरी 2027"
       }
     ],
     "apply_start": "2026-09-01",
     "apply_url": "https://www.rrc-wr.com",
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Check eligibility criteria including age, education, and sports achievements",
+      "Keep scanned copies of certificates ready before applying online",
+      "Submit application before 30 September 2026"
+    ],
+    "checklist_hi": [
+      "आयु, शिक्षा और खेल उपलब्धियों सहित पात्रता मानदंडों की जांच करें",
+      "ऑनलाइन आवेदन करने से पहले प्रमाण पत्रों की स्कैन की गई प्रतियां तैयार रखें",
+      "30 सितंबर 2026 से पहले आवेदन जमा करें"
+    ],
     "conducted_by_en": "Railway Recruitment Cell, Western Railway (RRC WR)",
-    "conducted_by_hi": "रेलवे भर्ती प्रकोष्ठ, पश्चिम रेलवे",
+    "conducted_by_hi": "रेलवे भर्ती सेल, पश्चिम रेलवे",
     "dates": [
       {
         "label_en": "Notification date",
         "label_hi": "अधिसूचना तिथि",
         "value_en": "27 Aug 2026",
-        "value_hi": "27 अगस्त 2026"
+        "value_hi": "27 अग 2026"
       },
       {
         "label_en": "Online application starts",
         "label_hi": "ऑनलाइन आवेदन प्रारंभ",
         "value_en": "01 Sep 2026 (10:00 AM)",
-        "value_hi": "01 सितंबर 2026 (10:00 बजे)"
+        "value_hi": "01 सितं 2026 (10:00 बजे)"
       },
       {
-        "label_en": "Last date to apply",
-        "label_hi": "आवेदन की अंतिम तिथि",
-        "value_en": "30 Sep 2026 (18:00 PM)",
-        "value_hi": "30 सितंबर 2026 (18:00 बजे)"
+        "label_en": "Online application last date",
+        "label_hi": "ऑनलाइन आवेदन अंतिम तिथि",
+        "value_en": "30 Sep 2026 (06:00 PM)",
+        "value_hi": "30 सितं 2026 (18:00 बजे)"
       }
+    ],
+    "documents_en": [
+      "Educational qualification certificates",
+      "Sports achievement certificates",
+      "Proof of date of birth",
+      "Identity proof"
+    ],
+    "documents_hi": [
+      "शैक्षणिक योग्यता प्रमाण पत्र",
+      "खेल उपलब्धि प्रमाण पत्र",
+      "जन्मतिथि प्रमाण",
+      "पहचान प्रमाण"
     ],
     "eligibility": [
       {
-        "label_en": "Level 5/4 Qualification",
-        "label_hi": "लेवल 5/4 योग्यता",
-        "value_en": "Graduation in any discipline from a recognized University.",
-        "value_hi": "किसी मान्यता प्राप्त विश्वविद्यालय से किसी भी विधा में स्नातक की डिग्री।"
+        "label_en": "Level 5/4 Education",
+        "label_hi": "लेवल 5/4 शिक्षा",
+        "value_en": "Graduation in any discipline from a recognized university",
+        "value_hi": "किसी मान्यता प्राप्त विश्वविद्यालय से किसी भी विधा में स्नातक की डिग्री"
       },
       {
-        "label_en": "Level 3/2 Qualification",
-        "label_hi": "लेवल 3/2 योग्यता",
-        "value_en": "12th (+2 stage) or its equivalent examination passed, OR Matriculation (10th) passed + Course Completed Act Apprenticeship, OR Matriculation (10th) passed + ITI approved by NCVT/SCVT.",
-        "value_hi": "12वीं (+2 स्तर) उत्तीर्ण, अथवा 10वीं उत्तीर्ण + कोर्स कम्प्लीटेड अप्रेंटिसशिप, अथवा 10वीं उत्तीर्ण + आईटीआई।"
+        "label_en": "Level 3/2 Education",
+        "label_hi": "लेवल 3/2 शिक्षा",
+        "value_en": "12th (+2 stage) or equivalent, OR 10th + Course Completed Apprenticeship, OR 10th + ITI",
+        "value_hi": "12वीं या समकक्ष, अथवा 10वीं पास और कोर्स कंप्लीटेड अप्रेंटिसशिप, अथवा 10वीं पास और आईटीआई"
       },
       {
-        "label_en": "Level 1 Qualification",
-        "label_hi": "लेवल 1 योग्यता",
-        "value_en": "10th (Matriculation) passed or ITI passed or equivalent qualification or National Apprenticeship Certificate (NAC) granted by NCVT.",
-        "value_hi": "10वीं उत्तीर्ण अथवा आईटीआई उत्तीर्ण अथवा समकक्ष योग्यता अथवा एनसीवीटी द्वारा प्रदान किया गया राष्ट्रीय अप्रेंटिसशिप प्रमाण-पत्र।"
+        "label_en": "Level 1 Education",
+        "label_hi": "लेवल 1 शिक्षा",
+        "value_en": "10th pass or ITI or equivalent or National Apprenticeship Certificate (NAC) granted by NCVT",
+        "value_hi": "10वीं पास अथवा आईटीआई अथवा समकक्ष योग्यता अथवा राष्ट्रीय अप्रेंटिसशिप प्रमाण-पत्र"
       },
       {
         "label_en": "Sports Achievements",
         "label_hi": "खेल उपलब्धियां",
-        "value_en": "Sportspersons who have achieved specified sports norms from 01/04/2024 up to the date of notification.",
-        "value_hi": "वे खिलाड़ी जिन्होंने 01/04/2024 से अधिसूचना जारी होने की तिथि तक निर्धारित खेल उपलब्धि मानदंड प्राप्त किए हैं।"
+        "value_en": "Candidates must have achieved required sports norms between 01/04/2024 and the date of notification and be active players",
+        "value_hi": "उम्मीदवारों ने 01/04/2024 से अधिसूचना की तिथि तक निर्धारित खेल उपलब्धि मानदंड प्राप्त किए हों और वर्तमान में सक्रिय खिलाड़ी हों"
       }
     ],
     "exam_date": null,
-    "extra": [],
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a direct recruitment drive conducted by Railway Recruitment Cell, Western Railway, to appoint meritorious sportspersons to Group C and Group D posts based on sports trials and achievements.",
+        "a_hi": "यह रेलवे भर्ती सेल, पश्चिम रेलवे द्वारा आयोजित एक सीधी भर्ती अभियान है, जिसके तहत खेल ट्रायल और उपलब्धियों के आधार पर उत्कृष्ट खिलाड़ियों को ग्रुप सी और ग्रुप डी के पदों पर नियुक्त किया जाता है।",
+        "q_en": "What is RRC Western Railway Sports Quota Recruitment?",
+        "q_hi": "आरआरसी पश्चिम रेलवे खेल कोटा भर्ती क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Reservation",
+        "label_hi": "आरक्षण",
+        "value_en": "No reservation for SC/ST/OBC/EWS/PwBD/Ex-SM categories",
+        "value_hi": "एससी/एसटी/ओबीसी/ईडब्ल्यूएस/दिव्यांग/भूतपूर्व सैनिक वर्ग के लिए कोई आरक्षण नहीं"
+      }
+    ],
     "faq": [
       {
-        "a_en": "The last date to apply online is 30 September 2026 up to 18:00 hours.",
-        "a_hi": "ऑनलाइन आवेदन करने की अंतिम तिथि 30 सितंबर 2026 (18:00 बजे तक) है।",
+        "a_en": "The last date to submit online applications is 30 September 2026 up to 6:00 PM.",
+        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 30 सितंबर 2026 शाम 6:00 बजे तक है।",
         "q_en": "What is the last date to apply for RRC Western Railway Sports Quota Recruitment 2026?",
         "q_hi": "आरआरसी पश्चिम रेलवे खेल कोटा भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "A total of 64 vacancies are announced (21 for Group C and 43 for Group D).",
-        "a_hi": "कुल 64 रिक्तियों की घोषणा की गई है (ग्रुप सी के लिए 21 और ग्रुप डी के लिए 43)।",
+        "a_en": "A total of 64 vacancies are announced for Group C and Group D posts.",
+        "a_hi": "ग्रुप सी और ग्रुप डी के पदों के लिए कुल 64 रिक्तियां घोषित की गई हैं।",
         "q_en": "How many total vacancies are announced in this notification?",
-        "q_hi": "इस अधिसूचना में कुल कितनी रिक्तियों की घोषणा की गई है?"
+        "q_hi": "इस अधिसूचना में कुल कितनी रिक्तियां घोषित की गई हैं?"
       },
       {
-        "a_en": "Candidates must be between 18 and 25 years of age as on 01/01/2027.",
-        "a_hi": "उम्मीदवारों की आयु 01/01/2027 को 18 से 25 वर्ष के बीच होनी चाहिए।",
-        "q_en": "What is the age limit for RRC WR Sports Quota Recruitment?",
-        "q_hi": "आरआरसी डब्ल्यूआर खेल कोटा भर्ती के लिए आयु सीमा क्या है?"
+        "a_en": "Candidates must be between 18 and 25 years of age as on 01 January 2027.",
+        "a_hi": "उम्मीदवारों की आयु 01 जनवरी 2027 को 18 से 25 वर्ष के बीच होनी चाहिए।",
+        "q_en": "What is the age limit for RRC Western Railway Sports Quota 2026?",
+        "q_hi": "आरआरसी पश्चिम रेलवे खेल कोटा 2026 के लिए आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "Candidates can apply online through the official website rrc-wr.com.",
+        "a_hi": "उम्मीदवार आधिकारिक वेबसाइट rrc-wr.com के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+        "q_en": "What is the official website to apply online?",
+        "q_hi": "ऑनलाइन आवेदन करने के लिए आधिकारिक वेबसाइट क्या है?"
       }
     ],
     "fees": [],
@@ -189,21 +240,36 @@
     "h1_hi": "आरआरसी पश्चिम रेलवे खेल कोटा भर्ती 2026",
     "how_en": [
       "Visit the official website rrc-wr.com",
-      "Check the notification and ensure eligibility",
-      "Fill out the online application form with correct details",
-      "Upload necessary documents and submit before the last date"
+      "Check the sports quota notification and ensure eligibility",
+      "Fill out the online application form with personal and sports details",
+      "Upload required documents and submit the application before the last date"
     ],
     "how_hi": [
       "आधिकारिक वेबसाइट rrc-wr.com पर जाएं",
-      "अधिसूचना की जांच करें और पात्रता सुनिश्चित करें",
-      "सही विवरण के साथ ऑनलाइन आवेदन पत्र भरें",
-      "आवश्यक दस्तावेज अपलोड करें और अंतिम तिथि से पहले सबमिट करें"
+      "खेल कोटा अधिसूचना की जांच करें और पात्रता सुनिश्चित करें",
+      "व्यक्तिगत और खेल विवरण के साथ ऑनलाइन आवेदन पत्र भरें",
+      "आवश्यक दस्तावेज अपलोड करें और अंतिम तिथि से पहले आवेदन जमा करें"
     ],
-    "intro_en": "Railway Recruitment Cell (RRC), Western Railway has released the official notification for recruitment against Sports Quota for the year 2026-27. A total of 64 vacancies are available for Group C and Group D posts across various sports disciplines. Eligible and interested sportspersons can submit their applications online through the official website from 01.09.2026 to 30.09.2026.",
-    "intro_hi": "रेलवे भर्ती प्रकोष्ठ (आरआरसी), पश्चिम रेलवे ने वर्ष 2026-27 के लिए खेल कोटे के अंतर्गत भर्ती हेतु आधिकारिक विज्ञापन जारी कर दिया है। विभिन्न खेल विधाओं में ग्रुप सी और ग्रुप डी के पदों के लिए कुल 64 रिक्तियां उपलब्ध हैं। योग्य और इच्छुक खिलाड़ी आधिकारिक वेबसाइट के माध्यम से 01.09.2026 से 30.09.2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "intro_en": "Railway Recruitment Cell, Western Railway (RRC WR) has released an employment notification for recruitment against Sports Quota for the year 2026-27. A total of 64 vacancies are available for Group C and Group D posts across various sports disciplines. Eligible sportsperson candidates can submit their online applications from 01 September 2026 to 30 September 2026. There is no reservation for SC, ST, OBC, EWS, PwBD, or Ex-SM categories in this recruitment.",
+    "intro_hi": "रेलवे भर्ती सेल, पश्चिम रेलवे ने वर्ष 2026-27 के लिए खेल कोटे के अंतर्गत भर्ती हेतु रोजगार सूचना जारी की है। विभिन्न खेल विधाओं में ग्रुप सी और ग्रुप डी के पदों के लिए कुल 64 रिक्तियां उपलब्ध हैं। योग्य खिलाड़ी उम्मीदवार 01 सितंबर 2026 से 30 सितंबर 2026 तक अपने ऑनलाइन आवेदन जमा कर सकते हैं। इस भर्ती में एससी, एसटी, ओबीसी, ईडब्ल्यूएस, दिव्यांग या भूतपूर्व सैनिक वर्ग के लिए कोई आरक्षण उपलब्ध नहीं है।",
     "last_date": "2026-09-30",
+    "mistakes_en": [
+      "Do not wait until the last date to apply",
+      "Ensure all sports achievements fall within the valid period from 01.04.2024 to the notification date"
+    ],
+    "mistakes_hi": [
+      "आवेदन करने के लिए अंतिम तिथि का इंतजार न करें",
+      "सुनिश्चित करें कि सभी खेल उपलब्धियां 01.04.2024 से अधिसूचना तिथि के बीच की वैध अवधि की हैं"
+    ],
+    "not_en": [
+      "Candidates awaiting final results of the prescribed educational qualification are not eligible to apply"
+    ],
+    "not_hi": [
+      "निर्धारित शैक्षणिक योग्यता की अंतिम परीक्षा के परिणाम की प्रतीक्षा कर रहे उम्मीदवार आवेदन करने के पात्र नहीं हैं"
+    ],
     "notice_date": "2026-08-27",
     "official_site": "https://www.rrc-wr.com",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
@@ -221,14 +287,20 @@
       {
         "label_en": "Apply online",
         "label_hi": "ऑनलाइन आवेदन",
-        "value_en": "01 Sep 2026 to 30 Sep 2026",
-        "value_hi": "01 सितंबर 2026 से 30 सितंबर 2026"
+        "value_en": "01 Sep 2026 – 30 Sep 2026",
+        "value_hi": "01 सितं 2026 – 30 सितं 2026"
+      },
+      {
+        "label_en": "Educational qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "Graduate / 12th / ITI / 10th (depends on post level)",
+        "value_hi": "स्नातक / 12वीं / आईटीआई / 10वीं (पद के स्तर पर निर्भर)"
       },
       {
         "label_en": "Age limit",
         "label_hi": "आयु सीमा",
-        "value_en": "18 to 25 years (As on 01/01/2027)",
-        "value_hi": "18 से 25 वर्ष (01/01/2027 के अनुसार)"
+        "value_en": "18–25 years as on 01 Jan 2027",
+        "value_hi": "01 जन 2027 को 18–25 वर्ष"
       },
       {
         "label_en": "Advertisement number",
@@ -237,33 +309,42 @@
         "value_hi": "RRC/WR/01/2026"
       }
     ],
+    "salary": [],
     "selection_en": [
-      "Scrutiny of application",
-      "Trial",
-      "Assessment of sports achievements, educational qualifications and general intelligence"
+      "Scrutiny of application forms",
+      "Trial of candidates",
+      "Assessment of sports achievements, educational qualifications, and general intelligence"
     ],
     "selection_hi": [
-      "आवेदन की संवीक्षा",
-      "ट्रायल",
-      "खेल उपलब्धियों, शैक्षणिक योग्यताओं और सामान्य बुद्धिमत्ता का मूल्यांकन"
+      "आवेदन पत्रों की संवीक्षा",
+      "उम्मीदवारों का ट्रायल",
+      "खेल उपलब्धियों, शैक्षणिक योग्यता और सामान्य बुद्धिमत्ता का मूल्यांकन"
     ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Sports Quota Recruitment",
+      "line_hi": "खेल कोटा भर्ती",
+      "posts": 64
+    },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "RRC Western Railway has invited online applications for Group C and Group D posts under the Sports Quota for 2026-27. Eligible candidates can apply online from 01 September 2026 to 30 September 2026.",
-    "summary_hi": "आरआरसी पश्चिम रेलवे ने वर्ष 2026-27 के लिए खेल कोटे के अंतर्गत ग्रुप सी और ग्रुप डी के पदों पर भर्ती के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 01 सितंबर 2026 से 30 सितंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "summary_en": "RRC Western Railway has invited online applications for Group C and Group D posts under the Sports Quota for 2026-27. Eligible national-level sportsperson candidates can apply online from 01.09.2026 to 30.09.2026.",
+    "summary_hi": "आरआरसी पश्चिम रेलवे ने वर्ष 2026-27 के लिए खेल कोटे के अंतर्गत ग्रुप सी और ग्रुप डी के पदों पर भर्ती के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य राष्ट्रीय स्तर के खिलाड़ी उम्मीदवार 01.09.2026 से 30.09.2026 तक ऑनलाइन आवेदन कर सकते हैं।",
     "vacancies": [
       {
         "detail_en": "Athletics, Gymnastics, Hockey, Weightlifting, Wrestling",
-        "detail_hi": "एथलेटिक्स, जिम्नास्टिक्स, हॉकी, भारोत्तोलन, कुश्ती",
-        "post_en": "Group C (Level 5/4)",
-        "post_hi": "ग्रुप सी (लेवल 5/4)",
+        "detail_hi": "एथलेटिक्स, जिम्नास्टिक, हॉकी, भारोत्तोलन, कुश्ती",
+        "post_en": "Group C (Level 5 / Level 4)",
+        "post_hi": "ग्रुप सी (लेवल 5 / लेवल 4)",
         "total": "5"
       },
       {
         "detail_en": "Athletics, Cricket, Diving, Football, Gymnastics, Hockey, Powerlifting, Swimming, Weightlifting, Wrestling",
-        "detail_hi": "एथलेटिक्स, क्रिकेट, डाइविंग, फुटबॉल, जिम्नास्टिक्स, हॉकी, पावरलिफ्टिंग, तैराकी, भारोत्तोलन, कुश्ती",
-        "post_en": "Group C (Level 3/2)",
-        "post_hi": "ग्रुप सी (लेवल 3/2)",
+        "detail_hi": "एथलेटिक्स, क्रिकेट, डाइविंग, फुटबॉल, जिम्नास्टिक, हॉकी, पावरलिफ्टिंग, तैराकी, भारोत्तोलन, कुश्ती",
+        "post_en": "Group C (Level 3 / Level 2)",
+        "post_hi": "ग्रुप सी (लेवल 3 / लेवल 2)",
         "total": "16"
       },
       {
@@ -273,6 +354,12 @@
         "post_hi": "ग्रुप डी (लेवल 1)",
         "total": "43"
       }
+    ],
+    "who_en": [
+      "Active sportsperson candidates meeting the age and educational criteria for RRC Western Railway Sports Quota 2026"
+    ],
+    "who_hi": [
+      "आरआरसी पश्चिम रेलवे खेल कोटा 2026 के लिए आयु और शैक्षणिक मानदंडों को पूरा करने वाले सक्रिय खिलाड़ी उम्मीदवार"
     ]
   },
   "pdf": {
