@@ -23,6 +23,7 @@ import requests
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from extract import _json_from, _providers, _throttle  # noqa: E402
+from share_card import share_data  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 NOTICES = ROOT / "data" / "notices"
@@ -72,6 +73,10 @@ Answer with ONE JSON object:
                  printed at the top or bottom of the notice / press note). Not the exam date, not the last date. null if not printed.",
  "apply_start": "YYYY-MM-DD or null", "last_date": "YYYY-MM-DD or null (last date to apply)", "exam_date": "YYYY-MM-DD or null",
  "apply_url": "official application URL or null", "official_site": "official website URL or null",
+ "share_card": {"kind": "job | admit | result | answer | corr (corrigendum, date extended, exam postponed) | sched (DV / interview schedule)",
+                "line_en": "post or exam name for the share image, max 32 chars, e.g. 'Station Master', 'CHSL Tier-II Exam'",
+                "line_hi": "same in Hindi", "headline_en": "max 22 chars, e.g. 'Recruitment 2026', 'Admit Card 2026', 'Last Date Extended'",
+                "headline_hi": "same in Hindi", "posts": "total vacancies as a number for job notices, else null"},
  "changes_from_notes": "one line: what you changed because of the editor notes, or empty"
 }"""
 
@@ -415,14 +420,8 @@ def main():
         except Exception as e:  # noqa: BLE001 — keep going; this page keeps its previous version
             print(f"  {n['id']}: render failed ({type(e).__name__}: {e})"[:300])
             continue
-        # data for the share image (site/notice/<slug>/og.png, drawn by scripts/make_pdfs.mjs at deploy)
-        c, pg = n.get("card") or {}, n.get("page") or {}
-        typ = c.get("type", "Job")
-        last = valid_date(pg.get("last_date") or c.get("last_date")) if typ == "Job" else None
-        og = {"title_en": pg.get("h1_en") or c.get("title_en") or n.get("title"), "title_hi": pg.get("h1_hi") or c.get("title_hi") or "",
-              "org": n.get("org") or "", "type_en": typ, "type_hi": {"Job": "नौकरी", "Result": "रिज़ल्ट", "Admit card": "एडमिट कार्ड", "Answer key": "आंसर की"}.get(typ, ""),
-              "last_en": d_en(last) if last else "", "last_hi": d_hi(last) if last else "",
-              "status_en": pg.get("status_en") or "", "status_hi": pg.get("status_hi") or ""}
+        # data for the share images (site/notice/<slug>/og.png + og-hi.png, drawn by scripts/og_card.mjs at deploy)
+        og = share_data(n, d_en, d_hi, valid_date)
         (out.parent / "og.json").write_text(json.dumps(og, ensure_ascii=False), encoding="utf-8")
         f.write_text(json.dumps(n, ensure_ascii=False, indent=2, sort_keys=True))
         print(f"  {n['id']}: /notice/{slug}/ {('(notes: ' + n['page'].get('changes_from_notes', '') + ')') if n.get('editor_notes') else ''}")
