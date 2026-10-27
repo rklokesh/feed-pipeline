@@ -23,7 +23,7 @@ BOARDS = [
     ("uppbpb", "uppolice", "UP Police", "यूपी पुलिस"), ("bpsc", "bpsc", "BPSC", "बीपीएससी"), ("bssc", "bssc", "BSSC", "बीएसएससी"),
     ("csbc", "csbc", "CSBC", "सीएसबीसी"), ("rpsc", "rpsc", "RPSC", "आरपीएससी"), ("rssb", "rssb", "RSSB", "आरएसएसबी"),
     ("mppsc", "mppsc", "MPPSC", "एमपीपीएससी"), ("mpesb", "mpesb", "MPESB", "एमपीईएसबी"), ("dsssb", "dsssb", "DSSSB", "डीएसएसएसबी"),
-    ("ukpsc", "ukpsc", "UKPSC", "यूकेपीएससी"), ("hpsc", "", "HPSC", "एचपीएससी"), ("hssc", "hssc", "HSSC", "एचएसएससी"),
+    ("ukpsc", "ukpsc", "UKPSC", "यूकेपीएससी"), ("hpsc", "hpsc", "HPSC", "एचपीएससी"), ("hssc", "hssc", "HSSC", "एचएसएससी"),
     ("wbpsc", "wbpsc", "WBPSC", "डब्ल्यूबीपीएससी"), ("mpsc", "mpsc", "MPSC", "एमपीएससी"), ("tnpsc", "tnpsc", "TNPSC", "टीएनपीएससी"),
     ("ctet", "ctet", "CTET", "सीटीईटी"), ("kvs", "kvs", "KVS", "केवीएस"), ("indiapost", "indiapost", "India Post", "इंडिया पोस्ट"),
     ("employment-news", "", "Employment News", "रोज़गार समाचार"), ("ncs", "", "NCS", "एनसीएस"),
