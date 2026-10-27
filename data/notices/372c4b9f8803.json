@@ -30,15 +30,70 @@
   "notice_date": "2026-10-22",
   "org": "RSSB Rajasthan",
   "page": {
+    "age": [],
     "apply_start": null,
     "apply_url": null,
     "changes_from_notes": "",
     "conducted_by_en": "Rajasthan Staff Selection Board (RSSB)",
     "conducted_by_hi": "राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी)",
+    "dates": [
+      {
+        "label_en": "Paper-I Exam Date",
+        "label_hi": "पेपर-I परीक्षा तिथि",
+        "value_en": "17 Nov 2026",
+        "value_hi": "17 नवंबर 2026"
+      },
+      {
+        "label_en": "Paper-II Exam Dates",
+        "label_hi": "पेपर-II परीक्षा तिथियां",
+        "value_en": "07 Dec 2026 to 21 Dec 2026",
+        "value_hi": "07 दिसंबर 2026 से 21 दिसंबर 2026"
+      }
+    ],
+    "eligibility": [
+      {
+        "label_en": "Educational Qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "As per RSSB advertisement requirements.",
+        "value_hi": "आरएसएसबी विज्ञापन आवश्यकताओं के अनुसार।"
+      }
+    ],
     "exam_date": "2026-11-17",
+    "extra": [
+      {
+        "label_en": "Exam Pattern",
+        "label_hi": "परीक्षा पैटर्न",
+        "value_en": "Each question will have 5 options (A, B, C, D, and E for unattempted). 1/3 negative marking for unattempted/unfilled 10% or more questions may lead to disqualification.",
+        "value_hi": "प्रत्येक प्रश्न में 5 विकल्प (A, B, C, D और E अनुत्तरित के लिए) होंगे। 1/3 नकारात्मक अंकन।"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The exams are scheduled from November 17, 2026, to December 21, 2026.",
+        "a_hi": "परीक्षाएं 17 नवंबर 2026 से 21 दिसंबर 2026 तक आयोजित की जानी हैं।",
+        "q_en": "When is the RSSB Teaching Associate Exam 2026 scheduled?",
+        "q_hi": "आरएसएसबी टीचिंग असोसिएट परीक्षा 2026 कब आयोजित की जाएगी?"
+      },
+      {
+        "a_en": "Paper-I (General Studies of Rajasthan) will be held on November 17, 2026, from 11:00 AM to 12:00 PM.",
+        "a_hi": "पेपर-I (राजस्थान का सामान्य ज्ञान) 17 नवंबर 2026 को प्रातः 11:00 बजे से दोपहर 12:00 बजे तक आयोजित होगा।",
+        "q_en": "When will Paper-I be conducted?",
+        "q_hi": "पेपर-I कब आयोजित किया जाएगा?"
+      }
+    ],
     "fees": [],
     "h1_en": "RSSB Teaching Associate Exam Schedule 2026",
     "h1_hi": "राजस्थान कर्मचारी चयन बोर्ड टीचिंग असोसिएट परीक्षा कार्यक्रम 2026",
+    "how_en": [
+      "Visit the official RSSB website to download the provisional e-admit card when released.",
+      "Check the exam date, time, and shift details for your specific subject."
+    ],
+    "how_hi": [
+      "प्रोविज़नल ई-प्रवेश पत्र जारी होने पर डाउनलोड करने के लिए आधिकारिक आरएसएसबी वेबसाइट पर जाएं।",
+      "अपने विशिष्ट विषय के लिए परीक्षा की तारीख, समय और पाली के विवरण की जांच करें।"
+    ],
+    "intro_en": "Rajasthan Staff Selection Board (RSSB) has released the examination schedule for the Contractual Teaching Associate Recruitment 2026. The Paper-I (General Studies of Rajasthan) is scheduled for November 17, 2026, and Paper-II (Subject-wise) will be conducted from December 07, 2026, to December 21, 2026. Candidates must ensure they meet the eligibility criteria and follow all exam instructions provided by the board.",
+    "intro_hi": "राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी) ने संविदा आधारित टीचिंग असोसिएट भर्ती 2026 के लिए परीक्षा कार्यक्रम जारी कर दिया है। पेपर-I (राजस्थान का सामान्य ज्ञान) 17 नवंबर 2026 को और पेपर-II (विषयवार) 07 दिसंबर 2026 से 21 दिसंबर 2026 तक आयोजित किया जाएगा।",
     "last_date": null,
     "notice_date": null,
     "official_site": "https://rssb.rajasthan.gov.in",
@@ -47,26 +102,41 @@
       {
         "label_en": "Posts",
         "label_hi": "पद",
-        "value_en": "Teaching Associate (Contractual)",
-        "value_hi": "टीचिंग असोसिएट (संविदा आधारित)"
+        "value_en": "Contractual Teaching Associate",
+        "value_hi": "संविदा आधारित टीचिंग असोसिएट"
       },
       {
-        "label_en": "Exam date",
+        "label_en": "Exam Date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "17 Nov 2026 to 21 Dec 2026",
-        "value_hi": "17 नव 2026 से 21 दिस 2026"
+        "value_hi": "17 नवंबर 2026 से 21 दिसंबर 2026"
       },
       {
-        "label_en": "Advertisement number",
+        "label_en": "Advertisement Number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "06/2026",
         "value_hi": "06/2026"
       }
     ],
+    "selection_en": [
+      "Written Examination (Paper-I and Paper-II)"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा (पेपर-I और पेपर-II)"
+    ],
     "status_en": "Exam schedule released",
     "status_hi": "परीक्षा कार्यक्रम जारी",
-    "summary_en": "Rajasthan Staff Selection Board has announced the exam schedule for Contractual Teaching Associate Recruitment 2026 starting from November 17, 2026. Candidates should check their exam date and time according to their subject and follow all instructions.",
-    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने संविदा आधारित टीचिंग असोसिएट भर्ती 2026 की परीक्षा का कार्यक्रम जारी कर दिया है, जो 17 नवंबर 2026 से शुरू होगी। अभ्यर्थी अपने विषय के अनुसार परीक्षा की तिथि और समय की जांच कर लें और सभी निर्देशों का पालन करें।"
+    "summary_en": "Rajasthan Staff Selection Board has announced the exam schedule for Contractual Teaching Associate Recruitment 2026. The exams will be held from November 17, 2026, to December 21, 2026. Candidates should check the detailed schedule and exam instructions.",
+    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने संविदा आधारित टीचिंग असोसिएट भर्ती 2026 की परीक्षा का कार्यक्रम जारी कर दिया है। परीक्षाएं 17 नवंबर 2026 से 21 दिसंबर 2026 तक आयोजित की जाएंगी।",
+    "vacancies": [
+      {
+        "detail_en": "Refer to official notification",
+        "detail_hi": "आधिकारिक अधिसूचना देखें",
+        "post_en": "Teaching Associate (Contractual)",
+        "post_hi": "टीचिंग असोसिएट (संविदा आधारित)",
+        "total": "As per notification"
+      }
+    ]
   },
   "pdf": {
     "bytes": 461760,

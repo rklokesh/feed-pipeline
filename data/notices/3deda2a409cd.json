@@ -35,17 +35,56 @@
   "notice_date": "2026-10-24",
   "org": "UPPSC",
   "page": {
+    "age": [],
     "apply_start": null,
-    "apply_url": "https://uppsc.up.nic.in",
+    "apply_url": null,
     "changes_from_notes": "",
     "conducted_by_en": "Uttar Pradesh Public Service Commission (UPPSC)",
     "conducted_by_hi": "उत्तर प्रदेश लोक सेवा आयोग (UPPSC)",
+    "dates": [
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "06 Nov 2026",
+        "value_hi": "06 नवंबर 2026"
+      }
+    ],
+    "eligibility": [],
     "exam_date": "2026-11-06",
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "The exam is scheduled to be held on 06 November 2026.",
+        "a_hi": "परीक्षा 06 नवंबर 2026 को आयोजित होने निर्धारित है।",
+        "q_en": "When is the UPPSC Lecturer Ayurveda exam scheduled?",
+        "q_hi": "यूपीपीएससी प्रवक्ता आयुर्वेद परीक्षा कब आयोजित होगी?"
+      },
+      {
+        "a_en": "You can check your district information slip on the official UPPSC website using your OTR number.",
+        "a_hi": "आप अपने ओटीआर नंबर का उपयोग करके आधिकारिक यूपीपीएससी वेबसाइट पर अपनी जिला सूचना पर्ची देख सकते हैं।",
+        "q_en": "How can I check my exam district?",
+        "q_hi": "मैं अपना परीक्षा जिला कैसे देख सकता हूँ?"
+      }
+    ],
     "fees": [],
     "h1_en": "UPPSC Lecturers Ayurveda Exam Admit Card 2026",
     "h1_hi": "उत्तर प्रदेश लोक सेवा आयोग प्रवक्ता आयुर्वेद परीक्षा प्रवेश पत्र",
+    "how_en": [
+      "Visit the official UPPSC website at https://uppsc.up.nic.in",
+      "Click on the link for district information slip or admit card",
+      "Log in using your OTR number and required details",
+      "View and download your district information slip and admit card"
+    ],
+    "how_hi": [
+      "आधिकारिक वेबसाइट https://uppsc.up.nic.in पर जाएँ",
+      "जिला सूचना पर्ची या प्रवेश पत्र के लिए दिए गए लिंक पर क्लिक करें",
+      "अपने ओटीआर नंबर और आवश्यक विवरण का उपयोग करके लॉगिन करें",
+      "अपनी जिला सूचना पर्ची और प्रवेश पत्र देखें और डाउनलोड करें"
+    ],
+    "intro_en": "The Uttar Pradesh Public Service Commission (UPPSC) has issued the notice regarding the district information slip and admit card for the Lecturers Ayurveda Department examination. Candidates who applied under Advertisement Number D-3/E-1/2023 can check their examination district and download their admit cards using their One Time Registration (OTR) number on the official website. The examination is scheduled to be held on 06 November 2026.",
+    "intro_hi": "उत्तर प्रदेश लोक सेवा आयोग (UPPSC) ने प्राध्यापक आयुर्वेद विभाग परीक्षा के लिए जिला सूचना पर्ची और प्रवेश पत्र के संबंध में सूचना जारी कर दी है। विज्ञापन संख्या D-3/E-1/2023 के अंतर्गत आवेदन करने वाले उम्मीदवार आधिकारिक वेबसाइट पर अपने वन टाइम रजिस्ट्रेशन (OTR) नंबर का उपयोग करके अपने परीक्षा जिले की जाँच कर सकते हैं और प्रवेश पत्र डाउनलोड कर सकते हैं। परीक्षा 06 नवंबर 2026 को आयोजित होने निर्धारित है।",
     "last_date": null,
-    "notice_date": "2026-11-06",
+    "notice_date": null,
     "official_site": "https://uppsc.up.nic.in",
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
@@ -56,22 +95,43 @@
         "value_hi": "प्रवक्ता (आयुर्वेद)"
       },
       {
-        "label_en": "Exam date",
-        "label_hi": "परीक्षा तिथि",
-        "value_en": "06 Nov 2026",
-        "value_hi": "06 Nov 2026"
-      },
-      {
-        "label_en": "Advertisement number",
+        "label_en": "Advertisement Number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "D-3/E-1/2023",
-        "value_en_hi": "D-3/E-1/2023"
+        "value_hi": "D-3/E-1/2023"
+      },
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "06 Nov 2026",
+        "value_hi": "06 नवंबर 2026"
+      },
+      {
+        "label_en": "How to Download",
+        "label_hi": "कैसे डाउनलोड करें",
+        "value_en": "Use OTR number on the official website to download district info slip and admit card",
+        "value_hi": "जिला सूचना पर्ची और प्रवेश पत्र डाउनलोड करने के लिए आधिकारिक वेबसाइट पर ओटीआर नंबर का उपयोग करें"
       }
+    ],
+    "selection_en": [
+      "Written Examination"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा"
     ],
     "status_en": "District information slip and admit card notice released",
     "status_hi": "जिला सूचना पर्ची और प्रवेश पत्र की सूचना जारी",
-    "summary_en": "Uttar Pradesh Public Service Commission has released the district information slip and admit card notice for the lecturers Ayurveda department examination. Candidates can download their admit card and check their district information slip from the official website.",
-    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने आयुर्वेद विभाग के अंतर्गत प्राध्यापक परीक्षा के लिए जिला सूचना पर्ची और प्रवेश पत्र की सूचना जारी कर दी है। उम्मीदवार आधिकारिक वेबसाइट से अपना प्रवेश पत्र डाउनलोड कर सकते हैं और अपनी जिला सूचना पर्ची देख सकते हैं।"
+    "summary_en": "Uttar Pradesh Public Service Commission has released the district information slip and admit card notice for the Lecturers Ayurveda department examination under Advt. No. D-3/E-1/2023. Registered candidates can check their exam district and download admit cards from the official website.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने विज्ञापन संख्या D-3/E-1/2023 के अंतर्गत प्राध्यापक आयुर्वेद विभाग परीक्षा के लिए जिला सूचना पर्ची और प्रवेश पत्र की सूचना जारी कर दी है। पंजीकृत उम्मीदवार आधिकारिक वेबसाइट से अपने परीक्षा जिले की जाँच कर सकते हैं और प्रवेश पत्र डाउनलोड कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Lecturers under Uttar Pradesh Ayush (Ayurveda) Department",
+        "detail_hi": "उत्तर प्रदेश आयुष (आयुर्वेद) विभाग के अंतर्गत प्राध्यापक",
+        "post_en": "Lecturer (Ayurveda)",
+        "post_hi": "प्रवक्ता (आयुर्वेद)",
+        "total": "As per rules"
+      }
+    ]
   },
   "pdf": {
     "bytes": 2013917,

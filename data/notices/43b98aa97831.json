@@ -97,15 +97,142 @@
   "notice_date": "2026-10-22",
   "org": "SBI",
   "page": {
+    "age": [
+      {
+        "label_en": "Minimum age",
+        "label_hi": "न्यूनतम आयु",
+        "value_en": "20 years",
+        "value_hi": "20 वर्ष"
+      },
+      {
+        "label_en": "Maximum age",
+        "label_hi": "अधिकतम आयु",
+        "value_en": "28 years",
+        "value_hi": "28 वर्ष"
+      },
+      {
+        "label_en": "As on date",
+        "label_hi": "इस तिथि के अनुसार",
+        "value_en": "01 Apr 2026",
+        "value_hi": "01 अप्रैल 2026"
+      },
+      {
+        "label_en": "OBC relaxation",
+        "label_hi": "अन्य पिछड़ा वर्ग छूट",
+        "value_en": "3 years",
+        "value_hi": "3 वर्ष"
+      },
+      {
+        "label_en": "SC/ST relaxation",
+        "label_hi": "अनुसूचित जाति/अनुसूचित जनजाति छूट",
+        "value_en": "5 years",
+        "value_hi": "5 वर्ष"
+      },
+      {
+        "label_en": "PwBD (OBC) relaxation",
+        "label_hi": "दिव्यांग (अन्य पिछड़ा वर्ग) छूट",
+        "value_en": "13 years",
+        "value_hi": "13 वर्ष"
+      },
+      {
+        "label_en": "PwBD (SC/ST) relaxation",
+        "label_hi": "दिव्यांग (अनुसूचित जाति/अनुसूचित जनजाति) छूट",
+        "value_en": "15 years",
+        "value_hi": "15 वर्ष"
+      }
+    ],
     "apply_start": "2026-08-07",
     "apply_url": "https://sbi.bank.in/web/careers/current-openings",
     "changes_from_notes": "",
     "conducted_by_en": "State Bank of India (SBI)",
     "conducted_by_hi": "भारतीय स्टेट बैंक (एसबीआई)",
+    "dates": [
+      {
+        "label_en": "Online application starts",
+        "label_hi": "ऑनलाइन आवेदन प्रारंभ",
+        "value_en": "07 Aug 2026",
+        "value_hi": "07 अगस्त 2026"
+      },
+      {
+        "label_en": "Last date to apply and pay fee",
+        "label_hi": "आवेदन और शुल्क भुगतान की अंतिम तिथि",
+        "value_en": "27 Aug 2026",
+        "value_hi": "27 अगस्त 2026"
+      },
+      {
+        "label_en": "Preliminary Examination",
+        "label_hi": "प्रारंभिक परीक्षा",
+        "value_en": "Sep 2026 (Tentative)",
+        "value_hi": "सितंबर 2026 (संभावित)"
+      },
+      {
+        "label_en": "Main Examination",
+        "label_hi": "मुख्य परीक्षा",
+        "value_en": "Oct/Nov 2026 (Tentative)",
+        "value_hi": "अक्टूबर/नवंबर 2026 (संभावित)"
+      }
+    ],
+    "eligibility": [
+      {
+        "label_en": "Education",
+        "label_hi": "शिक्षा",
+        "value_en": "Graduation in any discipline from a recognised University or equivalent qualification as on 31.12.2026.",
+        "value_hi": "31.12.2026 तक किसी मान्यता प्राप्त विश्वविद्यालय से किसी भी विषय में स्नातक या समकक्ष योग्यता।"
+      },
+      {
+        "label_en": "Local Language",
+        "label_hi": "स्थानीय भाषा",
+        "value_en": "Proficiency in reading, writing, speaking and understanding the specified opted local language of the State/UT.",
+        "value_hi": "राज्य/केंद्र शासित प्रदेश की निर्दिष्ट चुनी गई स्थानीय भाषा को पढ़ने, लिखने, बोलने और समझने में दक्षता।"
+      }
+    ],
     "exam_date": null,
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "The last date to submit online applications is 27 August 2026.",
+        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 27 अगस्त 2026 है।",
+        "q_en": "What is the last date to apply for SBI Junior Associate Recruitment 2026?",
+        "q_hi": "भारतीय स्टेट बैंक कनिष्ठ सहायक भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "A total of 1538 backlog vacancies have been announced for Junior Associates.",
+        "a_hi": "कनिष्ठ सहायकों के लिए कुल 1538 बैकलॉग रिक्तियों की घोषणा की गई है।",
+        "q_en": "What is the total number of vacancies for this SBI recruitment drive?",
+        "q_hi": "इस एसबीआई भर्ती अभियान के लिए कुल रिक्तियों की संख्या क्या है?"
+      },
+      {
+        "a_en": "Candidates must be between 20 and 28 years of age as on 01.04.2026, with age relaxations applicable for reserved categories.",
+        "a_hi": "उम्मीदवारों की आयु 01.04.2026 के अनुसार 20 से 28 वर्ष के बीच होनी चाहिए, आरक्षित श्रेणियों के लिए आयु में छूट लागू है।",
+        "q_en": "What is the age limit for SBI Junior Associate posts?",
+        "q_hi": "एसबीआई कनिष्ठ सहायक पदों के लिए आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "Candidates must possess a Graduation degree in any discipline from a recognised university as on 31.12.2026.",
+        "a_hi": "उम्मीदवारों के पास 31.12.2026 तक किसी मान्यता प्राप्त विश्वविद्यालय से किसी भी विषय में स्नातक की डिग्री होनी चाहिए।",
+        "q_en": "What is the educational qualification required?",
+        "q_hi": "आवश्यक शैक्षणिक योग्यता क्या है?"
+      }
+    ],
     "fees": [],
     "h1_en": "SBI Junior Associate Recruitment 2026",
     "h1_hi": "भारतीय स्टेट बैंक कनिष्ठ सहायक भर्ती 2026",
+    "how_en": [
+      "Visit the official SBI careers website at sbi.bank.in/web/careers/current-openings.",
+      "Click on the recruitment notification link for Junior Associates Special Drive.",
+      "Register online by filling in your basic details and uploading required documents.",
+      "Pay the application fee and submit the application form before the last date.",
+      "Take a printout of the final submitted application for future reference."
+    ],
+    "how_hi": [
+      "एसबीआई की आधिकारिक करियर वेबसाइट sbi.bank.in/web/careers/current-openings पर जाएं।",
+      "कनिष्ठ सहायक विशेष अभियान भर्ती अधिसूचना लिंक पर क्लिक करें।",
+      "अपने बुनियादी विवरण भरकर और आवश्यक दस्तावेज अपलोड करके ऑनलाइन पंजीकरण करें।",
+      "आवेदन शुल्क का भुगतान करें और अंतिम तिथि से पहले आवेदन पत्र जमा करें।",
+      "भविष्य के संदर्भ के लिए अंतिम रूप से जमा किए गए आवेदन का प्रिंटआउट लें।"
+    ],
+    "intro_en": "State Bank of India (SBI) has released advertisement number CRPD/CR/SPLDRIVE/2026-27/16 for a special recruitment drive to fill 1538 Junior Associate (Customer Support & Sales) backlog vacancies for SC, ST, and OBC categories. Eligible Indian citizens can submit their online applications from 07 August 2026 to 27 August 2026. Candidates should read the complete notification regarding local language proficiency and eligibility criteria before applying.",
+    "intro_hi": "भारतीय स्टेट बैंक (एसबीआई) ने एससी, एसटी और ओबीसी श्रेणियों के लिए 1538 कनिष्ठ सहायक बैकलॉग रिक्तियों को भरने हेतु विशेष भर्ती अभियान के लिए विज्ञापन संख्या CRPD/CR/SPLDRIVE/2026-27/16 जारी किया है। योग्य भारतीय नागरिक 07 अगस्त 2026 से 27 अगस्त 2026 तक ऑनलाइन आवेदन कर सकते हैं। उम्मीदवारों को आवेदन करने से पहले स्थानीय भाषा की दक्षता और पात्रता मानदंडों से संबंधित पूरी अधिसूचना पढ़नी चाहिए।",
     "last_date": "2026-08-27",
     "notice_date": null,
     "official_site": "https://sbi.bank.in",
@@ -138,32 +265,51 @@
       {
         "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
-        "value_en": "Prelims: Sep 2026 (Tentative), Mains: Oct/Nov 2026 (Tentative)",
-        "value_hi": "प्रारंभिक: सितंबर 2026 (संभावित), मुख्य: अक्टूबर/नवंबर 2026 (संभावित)"
+        "value_en": "Prelims: Sep 2026, Mains: Oct/Nov 2026 (Tentative)",
+        "value_hi": "प्रारंभिक: सितंबर 2026, मुख्य: अक्टूबर/नवंबर 2026 (संभावित)"
       },
       {
         "label_en": "Educational qualification",
         "label_hi": "शैक्षणिक योग्यता",
-        "value_en": "Graduation in any discipline from a recognised University",
-        "value_hi": "मान्यता प्राप्त विश्वविद्यालय से किसी भी विषय में स्नातक"
+        "value_en": "Graduation in any discipline",
+        "value_hi": "किसी भी विषय में स्नातक"
       },
       {
         "label_en": "Age limit",
         "label_hi": "आयु सीमा",
-        "value_en": "20 to 28 years as on 01.04.2026",
-        "value_hi": "01.04.2026 को 20 से 28 वर्ष"
+        "value_en": "20 to 28 years (As on 01.04.2026)",
+        "value_hi": "20 से 28 वर्ष (01.04.2026 के अनुसार)"
       },
       {
         "label_en": "Advertisement number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "CRPD/CR/SPLDRIVE/2026-27/16",
-        "value_hi": "CRPD/CR/SPLDRIVE/2026-27/16"
+        "value_en_hi": "CRPD/CR/SPLDRIVE/2026-27/16"
       }
+    ],
+    "selection_en": [
+      "Preliminary Examination",
+      "Main Examination",
+      "Local Language Test (after qualifying Main examination and before joining)"
+    ],
+    "selection_hi": [
+      "प्रारंभिक परीक्षा",
+      "मुख्य परीक्षा",
+      "स्थानीय भाषा परीक्षण (मुख्य परीक्षा उत्तीर्ण करने के बाद और शामिल होने से पहले)"
     ],
     "status_en": "",
     "status_hi": "",
-    "summary_en": "State Bank of India has invited online applications for 1538 Junior Associate (Customer Support & Sales) backlog vacancies. Eligible candidates can apply online from 07.08.2026 to 27.08.2026.",
-    "summary_hi": "भारतीय स्टेट बैंक ने 1538 कनिष्ठ सहायक बैकलॉग रिक्तियों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 07.08.2026 से 27.08.2026 तक ऑनलाइन आवेदन कर सकते हैं।"
+    "summary_en": "State Bank of India has invited online applications for 1538 Junior Associate (Customer Support & Sales) backlog vacancies under special recruitment drive. Eligible candidates can apply online from 07.08.2026 to 27.08.2026.",
+    "summary_hi": "भारतीय स्टेट बैंक ने विशेष भर्ती अभियान के तहत 1538 कनिष्ठ सहायक बैकलॉग रिक्तियों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 07.08.2026 से 27.08.2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "SC: 207, ST: 1219, OBC: 112",
+        "detail_hi": "एससी: 207, एसटी: 1219, ओबीसी: 112",
+        "post_en": "Junior Associate (Customer Support & Sales)",
+        "post_hi": "कनिष्ठ सहायक (ग्राहक सहायता एवं बिक्री)",
+        "total": "1538"
+      }
+    ]
   },
   "pdf": {
     "bytes": 727067,
