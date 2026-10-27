@@ -1,0 +1,71 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://psc.wb.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "erkship Examination (Preli.) Recruitment Examination, 2023 [Advt. No. 13/2023] will be able to view their own OMR sheets. The link will be available in the ‘",
+      "source": "rule",
+      "value": "13/2023"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "[Advt. No. 13/2023]"
+      }
+    },
+    "apply_or_official_url": {
+      "evidence": "nk will be available in the ‘Candidate’s corner’ section at https://psc.wb.gov.in from 29.10.2025 and the same will be available till 12.11.2025. By order of the",
+      "source": "rule",
+      "value": "https://psc.wb.gov.in"
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://psc.wb.gov.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "https://psc.wb.gov.in"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Clerk"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "Clerkship Examination (Preli.) Recruitment Examination, 2023"
+      }
+    }
+  },
+  "first_seen": "2026-10-27T22:24:34+00:00",
+  "id": "3717a0f8d80a",
+  "kind": "notification",
+  "org": "WBPSC",
+  "pdf": {
+    "bytes": 600513,
+    "pages": 1,
+    "sha256": "af915bbf62828d9764d29dc20ab2ec521a24b0e996294851b7ee8d92554f7e47",
+    "text_kind": "text"
+  },
+  "source_id": "wbpsc-home",
+  "status": "pending_review",
+  "title": "IMPORTANT NOTICE REGARDING CLERKSHIP EXAMINATION (PRELI) RECRUITMENT EXAMINATION, 2023 [ADVT. NO. 13/2023] SCHEDULE OF INTERVIEW FOR RECRUITMENT TO THE POST OF ASSISTANT ENGINEER (ELECTRICAL) IN THE WEST BENGAL ENGINEERING SERVICE (ELECTRICAL) UNDER THE PUBLIC WORKS DEPARTMENT, GOVT. OF WEST BENGAL ",
+  "url": "https://psc.wb.gov.in/Download?param1=An_20251029173719_Notice_OMR_clerkship.pdf&param2=advertisement"
+}

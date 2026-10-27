@@ -1,0 +1,57 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://psc.wb.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "admit_card": {
+      "evidence": "k the Written Examination. N.B.: Downloading of e-interview call letters will be commencing on and from the 6th November, 2025 Assistant Secretary Public Service Commission West Bengal",
+      "source": "rule",
+      "value": "2025-11-06"
+    },
+    "advt_no": {
+      "evidence": "orks Department, Govt. of West Bengal vide the Commission's Advt. No. 21/2020. Candidates, as shown below, have been considered eligible after scrutiny of the",
+      "source": "rule",
+      "value": "21/2020"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "Advt. No. 21/2020"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Assistant Engineer (Electrical)"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "Assistant Engineer (Electrical)"
+      }
+    }
+  },
+  "first_seen": "2026-10-27T22:24:34+00:00",
+  "id": "147a97751bab",
+  "kind": "notification",
+  "org": "WBPSC",
+  "pdf": {
+    "bytes": 688352,
+    "pages": 1,
+    "sha256": "e046be9b673398bed54439c5275fbbb17935fb2ca79ef1a487e943f9808c0aef",
+    "text_kind": "text"
+  },
+  "source_id": "wbpsc-home",
+  "status": "pending_review",
+  "title": "IMPORTANT NOTICE REGARDING CLERKSHIP EXAMINATION (PRELI) RECRUITMENT EXAMINATION, 2023 [ADVT. NO. 13/2023] SCHEDULE OF INTERVIEW FOR RECRUITMENT TO THE POST OF ASSISTANT ENGINEER (ELECTRICAL) IN THE WEST BENGAL ENGINEERING SERVICE (ELECTRICAL) UNDER THE PUBLIC WORKS DEPARTMENT, GOVT. OF WEST BENGAL ",
+  "url": "https://psc.wb.gov.in/Download?param1=20251031172549_ScheduleAsstEnggELec.pdf&param2=advertisement"
+}

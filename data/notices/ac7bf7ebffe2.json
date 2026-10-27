@@ -1,0 +1,28 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://www.ibps.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "ww.ibps.in In case of queries / complaints please log in to http://cgrs.ibps.in CORRIGENDUM Important Notice Detailed Notification dated 01.07.2026 with indica",
+      "source": "rule",
+      "value": "http://cgrs.ibps.in"
+    }
+  },
+  "first_seen": "2026-10-27T22:24:34+00:00",
+  "id": "ac7bf7ebffe2",
+  "kind": "update",
+  "org": "IBPS",
+  "pdf": {
+    "bytes": 476851,
+    "pages": 1,
+    "sha256": "c63b8c11083865687c88db3741724ee4b2325ea381b30c99ca64cf4221828031",
+    "text_kind": "text"
+  },
+  "source_id": "ibps-home",
+  "status": "pending_review",
+  "title": "20 Jul 2026 Corrigendum Regarding Updated Vacancies dated 20.07.2026 in connection with CRP SPL XVI",
+  "url": "https://www.ibps.in/wp-content/uploads/Corrigendum-CRP-SPL-XVI_Vacancy_Update_20.07.2026.pdf"
+}

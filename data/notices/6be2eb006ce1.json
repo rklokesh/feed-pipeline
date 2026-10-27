@@ -1,0 +1,37 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://licindia.in/careers",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "exam_date": {
+      "evidence": "D.O.T:-03&07.10.2025(PREXAM)&08.11.2025(MAIN EXAM)",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2025-10-03 & 2025-10-07 (PREXAM) & 2025-11-08 (MAIN EXAM)"
+    },
+    "post_names": {
+      "evidence": "RECRUITMENT OF AAO (GENERALIST)-32ND BATCH",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "AAO (GENERALIST)"
+      ]
+    }
+  },
+  "first_seen": "2026-10-27T22:28:27+00:00",
+  "id": "6be2eb006ce1",
+  "kind": "notification",
+  "org": "LIC",
+  "pdf": {
+    "bytes": 284613,
+    "pages": 1,
+    "sha256": "a60b5ed35912b9dcf6b4e649cb8f863c29fcc49be5fa28a38c99cefbe06429d2",
+    "text_kind": "text"
+  },
+  "source_id": "lic-careers",
+  "status": "pending_review",
+  "title": "CUT-OFFS FOR AAO GENERALIST-2025",
+  "url": "https://licindia.in/documents/d/guest/cut-off-marks-gen"
+}
