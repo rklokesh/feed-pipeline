@@ -211,12 +211,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
 .kv ol.steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
-.faq summary { cursor: pointer; padding: 9px 14px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
-.faq summary::-webkit-details-marker { display: none; }
-.faq summary::after { content: "+"; color: var(--grey); flex: none; }
-.faq details[open] summary::after { content: "−"; }
-.faq summary:hover { background: var(--row-hover); }
-.faq .qa p { margin: 0; padding: 0 14px 12px; color: var(--grey); line-height: 1.5; }
+.faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
+.faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 </style>
@@ -311,10 +307,10 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
     </section>
     <section class="kv faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
-      <details class="qa"><summary data-t="q0">What is the last date to apply for IBPS CRP SPL XVI?</summary><p data-t="a0">The last date to apply online is 21 July 2026.</p></details>
-      <details class="qa"><summary data-t="q1">What is the age limit for IBPS Specialist Officers Recruitment 2027?</summary><p data-t="a1">Candidates must be between 20 and 30 years of age as on 01.07.2026.</p></details>
-      <details class="qa"><summary data-t="q2">What are the posts available under IBPS CRP SPL-XVI?</summary><p data-t="a2">The posts include IT Officer, Agricultural Field Officer, Rajbhasha Adhikari, Law Officer, HR/Personnel Officer, and Marketing Officer (Scale I).</p></details>
-      <details class="qa"><summary data-t="q3">When will the Preliminary examination be conducted?</summary><p data-t="a3">The Online Preliminary Examination will be conducted in August 2026.</p></details>
+      <div class="qa"><h3 data-t="q0">What is the last date to apply for IBPS CRP SPL XVI?</h3><p data-t="a0">The last date to apply online is 21 July 2026.</p></div>
+      <div class="qa"><h3 data-t="q1">What is the age limit for IBPS Specialist Officers Recruitment 2027?</h3><p data-t="a1">Candidates must be between 20 and 30 years of age as on 01.07.2026.</p></div>
+      <div class="qa"><h3 data-t="q2">What are the posts available under IBPS CRP SPL-XVI?</h3><p data-t="a2">The posts include IT Officer, Agricultural Field Officer, Rajbhasha Adhikari, Law Officer, HR/Personnel Officer, and Marketing Officer (Scale I).</p></div>
+      <div class="qa"><h3 data-t="q3">When will the Preliminary examination be conducted?</h3><p data-t="a3">The Online Preliminary Examination will be conducted in August 2026.</p></div>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>

@@ -211,12 +211,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
 .kv ol.steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
-.faq summary { cursor: pointer; padding: 9px 14px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
-.faq summary::-webkit-details-marker { display: none; }
-.faq summary::after { content: "+"; color: var(--grey); flex: none; }
-.faq details[open] summary::after { content: "−"; }
-.faq summary:hover { background: var(--row-hover); }
-.faq .qa p { margin: 0; padding: 0 14px 12px; color: var(--grey); line-height: 1.5; }
+.faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
+.faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 </style>
@@ -289,10 +285,10 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
     </section>
     <section class="kv faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
-      <details class="qa"><summary data-t="q0">When is the RRB ALP CBT 1 exam scheduled for 2026?</summary><p data-t="a0">The exam is scheduled on 03.11.2026, 04.11.2026, and 05.11.2026.</p></details>
-      <details class="qa"><summary data-t="q1">How can I check my exam city for RRB ALP 2026?</summary><p data-t="a1">Candidates can view their exam city and date by logging into the active link provided on the official website of RRB.</p></details>
-      <details class="qa"><summary data-t="q2">When will the e-call letters be available for download?</summary><p data-t="a2">E-call letters will be available for download tentatively 4 days prior to the respective exam dates.</p></details>
-      <details class="qa"><summary data-t="q3">What documents are required at the exam center?</summary><p data-t="a3">Candidates must bring their original Aadhaar card or a printout of e-verified Aadhaar for biometric authentication.</p></details>
+      <div class="qa"><h3 data-t="q0">When is the RRB ALP CBT 1 exam scheduled for 2026?</h3><p data-t="a0">The exam is scheduled on 03.11.2026, 04.11.2026, and 05.11.2026.</p></div>
+      <div class="qa"><h3 data-t="q1">How can I check my exam city for RRB ALP 2026?</h3><p data-t="a1">Candidates can view their exam city and date by logging into the active link provided on the official website of RRB.</p></div>
+      <div class="qa"><h3 data-t="q2">When will the e-call letters be available for download?</h3><p data-t="a2">E-call letters will be available for download tentatively 4 days prior to the respective exam dates.</p></div>
+      <div class="qa"><h3 data-t="q3">What documents are required at the exam center?</h3><p data-t="a3">Candidates must bring their original Aadhaar card or a printout of e-verified Aadhaar for biometric authentication.</p></div>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>

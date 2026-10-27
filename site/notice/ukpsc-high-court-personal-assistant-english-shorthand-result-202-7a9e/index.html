@@ -211,12 +211,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
 .kv ol.steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
-.faq summary { cursor: pointer; padding: 9px 14px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
-.faq summary::-webkit-details-marker { display: none; }
-.faq summary::after { content: "+"; color: var(--grey); flex: none; }
-.faq details[open] summary::after { content: "−"; }
-.faq summary:hover { background: var(--row-hover); }
-.faq .qa p { margin: 0; padding: 0 14px 12px; color: var(--grey); line-height: 1.5; }
+.faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
+.faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 </style>
@@ -283,9 +279,9 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
     </section>
     <section class="kv faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
-      <details class="qa"><summary data-t="q0">When was the UKPSC High Court Personal Assistant English Shorthand exam held?</summary><p data-t="a0">The English shorthand exam was conducted on 22 Jul 2026.</p></details>
-      <details class="qa"><summary data-t="q1">How many candidates have qualified the English shorthand exam?</summary><p data-t="a1">A total of 5 candidates with specific roll numbers have been declared provisionally successful for the main written examination.</p></details>
-      <details class="qa"><summary data-t="q2">Where can I check the detailed schedule for the main written exam?</summary><p data-t="a2">Detailed information regarding the main written exam for successful candidates will be released separately on the official UKPSC website psc.uk.gov.in.</p></details>
+      <div class="qa"><h3 data-t="q0">When was the UKPSC High Court Personal Assistant English Shorthand exam held?</h3><p data-t="a0">The English shorthand exam was conducted on 22 Jul 2026.</p></div>
+      <div class="qa"><h3 data-t="q1">How many candidates have qualified the English shorthand exam?</h3><p data-t="a1">A total of 5 candidates with specific roll numbers have been declared provisionally successful for the main written examination.</p></div>
+      <div class="qa"><h3 data-t="q2">Where can I check the detailed schedule for the main written exam?</h3><p data-t="a2">Detailed information regarding the main written exam for successful candidates will be released separately on the official UKPSC website psc.uk.gov.in.</p></div>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>

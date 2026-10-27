@@ -211,12 +211,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
 .kv ol.steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
-.faq summary { cursor: pointer; padding: 9px 14px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
-.faq summary::-webkit-details-marker { display: none; }
-.faq summary::after { content: "+"; color: var(--grey); flex: none; }
-.faq details[open] summary::after { content: "−"; }
-.faq summary:hover { background: var(--row-hover); }
-.faq .qa p { margin: 0; padding: 0 14px 12px; color: var(--grey); line-height: 1.5; }
+.faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
+.faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 </style>
@@ -283,9 +279,9 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
     </section>
     <section class="kv faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
-      <details class="qa"><summary data-t="q0">When was the RPSC Lecturer Panchkarma 2025 main result declared?</summary><p data-t="a0">The main result was declared on 26 October 2026.</p></details>
-      <details class="qa"><summary data-t="q1">How many candidates are selected in the main list?</summary><p data-t="a1">Total 1 candidate has been selected in the main list.</p></details>
-      <details class="qa"><summary data-t="q2">What are the cutoff marks for General category in Lecturer Panchkarma 2025?</summary><p data-t="a2">The cutoff marks for the General (UR) category is 109.12.</p></details>
+      <div class="qa"><h3 data-t="q0">When was the RPSC Lecturer Panchkarma 2025 main result declared?</h3><p data-t="a0">The main result was declared on 26 October 2026.</p></div>
+      <div class="qa"><h3 data-t="q1">How many candidates are selected in the main list?</h3><p data-t="a1">Total 1 candidate has been selected in the main list.</p></div>
+      <div class="qa"><h3 data-t="q2">What are the cutoff marks for General category in Lecturer Panchkarma 2025?</h3><p data-t="a2">The cutoff marks for the General (UR) category is 109.12.</p></div>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>

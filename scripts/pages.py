@@ -310,7 +310,7 @@ def render(n: dict, slug: str, related: list | None = None) -> str:
         for k, q in enumerate(faq):
             en[f"q{k}"], hi[f"q{k}"] = q["q_en"], q.get("q_hi") or q["q_en"]
             en[f"a{k}"], hi[f"a{k}"] = q["a_en"], q.get("a_hi") or q["a_en"]
-            body += f'      <details class="qa"><summary data-t="q{k}">{esc(q["q_en"])}</summary><p data-t="a{k}">{esc(q["a_en"])}</p></details>\n'
+            body += f'      <div class="qa"><h3 data-t="q{k}">{esc(q["q_en"])}</h3><p data-t="a{k}">{esc(q["a_en"])}</p></div>\n'
         main.append(f'    <section class="kv faq" data-t-aria="faqH">\n      <div class="h" data-t="faqH">Frequently asked questions</div>\n{body}    </section>')
     if related:
         en["relH"], hi["relH"] = "More notices", "और सूचनाएँ"

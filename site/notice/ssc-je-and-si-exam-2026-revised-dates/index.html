@@ -211,12 +211,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
 .kv ol.steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
-.faq summary { cursor: pointer; padding: 9px 14px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
-.faq summary::-webkit-details-marker { display: none; }
-.faq summary::after { content: "+"; color: var(--grey); flex: none; }
-.faq details[open] summary::after { content: "−"; }
-.faq summary:hover { background: var(--row-hover); }
-.faq .qa p { margin: 0; padding: 0 14px 12px; color: var(--grey); line-height: 1.5; }
+.faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
+.faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 </style>
@@ -275,9 +271,9 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
     </section>
     <section class="kv faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
-      <details class="qa"><summary data-t="q0">What are the revised exam dates for SSC Junior Engineer Examination 2026?</summary><p data-t="a0">Paper-I for the Junior Engineer Examination 2026 will be conducted from 02nd to 06th November 2026 and from 30th November to 01st December 2026.</p></details>
-      <details class="qa"><summary data-t="q1">When is the SSC Sub-Inspector in Delhi Police and CAPFs Examination 2026 scheduled?</summary><p data-t="a1">The Sub-Inspector in Delhi Police and Central Armed Police Forces Examination 2026 will be held from 23rd to 28th November 2026.</p></details>
-      <details class="qa"><summary data-t="q2">Where can I check the official notice for the revised dates?</summary><p data-t="a2">You can check the official notice on the Staff Selection Commission website at ssc.gov.in.</p></details>
+      <div class="qa"><h3 data-t="q0">What are the revised exam dates for SSC Junior Engineer Examination 2026?</h3><p data-t="a0">Paper-I for the Junior Engineer Examination 2026 will be conducted from 02nd to 06th November 2026 and from 30th November to 01st December 2026.</p></div>
+      <div class="qa"><h3 data-t="q1">When is the SSC Sub-Inspector in Delhi Police and CAPFs Examination 2026 scheduled?</h3><p data-t="a1">The Sub-Inspector in Delhi Police and Central Armed Police Forces Examination 2026 will be held from 23rd to 28th November 2026.</p></div>
+      <div class="qa"><h3 data-t="q2">Where can I check the official notice for the revised dates?</h3><p data-t="a2">You can check the official notice on the Staff Selection Commission website at ssc.gov.in.</p></div>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>

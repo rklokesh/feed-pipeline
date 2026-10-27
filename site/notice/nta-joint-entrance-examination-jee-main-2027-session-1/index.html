@@ -211,12 +211,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
 .kv ol.steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
-.faq summary { cursor: pointer; padding: 9px 14px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
-.faq summary::-webkit-details-marker { display: none; }
-.faq summary::after { content: "+"; color: var(--grey); flex: none; }
-.faq details[open] summary::after { content: "−"; }
-.faq summary:hover { background: var(--row-hover); }
-.faq .qa p { margin: 0; padding: 0 14px 12px; color: var(--grey); line-height: 1.5; }
+.faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
+.faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 </style>
@@ -297,10 +293,10 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
     </section>
     <section class="kv faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
-      <details class="qa"><summary data-t="q0">What is the last date to apply for JEE Main 2027 Session 1?</summary><p data-t="a0">The last date to submit the online application form is 22 November 2026 up to 11:50 P.M.</p></details>
-      <details class="qa"><summary data-t="q1">When will the JEE Main 2027 Session 1 examination be conducted?</summary><p data-t="a1">The examination will be conducted on 20, 21, 22, 23, 24, and 28 January 2027.</p></details>
-      <details class="qa"><summary data-t="q2">When can I download the admit card?</summary><p data-t="a2">Admit cards will be available for download from the NTA website starting 13 January 2027.</p></details>
-      <details class="qa"><summary data-t="q3">What is the official website to apply?</summary><p data-t="a3">Candidates can apply through the official website https://jeemain.nta.nic.in/</p></details>
+      <div class="qa"><h3 data-t="q0">What is the last date to apply for JEE Main 2027 Session 1?</h3><p data-t="a0">The last date to submit the online application form is 22 November 2026 up to 11:50 P.M.</p></div>
+      <div class="qa"><h3 data-t="q1">When will the JEE Main 2027 Session 1 examination be conducted?</h3><p data-t="a1">The examination will be conducted on 20, 21, 22, 23, 24, and 28 January 2027.</p></div>
+      <div class="qa"><h3 data-t="q2">When can I download the admit card?</h3><p data-t="a2">Admit cards will be available for download from the NTA website starting 13 January 2027.</p></div>
+      <div class="qa"><h3 data-t="q3">What is the official website to apply?</h3><p data-t="a3">Candidates can apply through the official website https://jeemain.nta.nic.in/</p></div>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>

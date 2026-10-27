@@ -211,12 +211,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv ol.steps { margin: 0; padding: 10px 14px 10px 36px; list-style: decimal; }
 .kv ol.steps li + li { margin-top: 6px; }
 .faq .qa + .qa { border-top: 1px solid var(--line); }
-.faq summary { cursor: pointer; padding: 9px 14px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
-.faq summary::-webkit-details-marker { display: none; }
-.faq summary::after { content: "+"; color: var(--grey); flex: none; }
-.faq details[open] summary::after { content: "−"; }
-.faq summary:hover { background: var(--row-hover); }
-.faq .qa p { margin: 0; padding: 0 14px 12px; color: var(--grey); line-height: 1.5; }
+.faq .qa h3 { margin: 0; padding: 9px 14px 2px; font: inherit; color: var(--ink); }
+.faq .qa p { margin: 0; padding: 0 14px 10px; color: var(--grey); line-height: 1.5; }
 .rel a.r .v::after { content: none; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 </style>
@@ -300,10 +296,10 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
     </section>
     <section class="kv faq" data-t-aria="faqH">
       <div class="h" data-t="faqH">Frequently asked questions</div>
-      <details class="qa"><summary data-t="q0">What is the last date to apply for SBI Junior Associate Recruitment 2026?</summary><p data-t="a0">The last date to submit the online application is 31 August 2026.</p></details>
-      <details class="qa"><summary data-t="q1">What is the educational qualification required?</summary><p data-t="a1">Candidates must possess a Graduation degree in any discipline from a recognised University.</p></details>
-      <details class="qa"><summary data-t="q2">What is the age limit for this recruitment?</summary><p data-t="a2">Candidates must be between 20 and 28 years of age as on 01.04.2026.</p></details>
-      <details class="qa"><summary data-t="q3">How many total vacancies are announced?</summary><p data-t="a3">A total of 7680 vacancies have been announced for Junior Associates.</p></details>
+      <div class="qa"><h3 data-t="q0">What is the last date to apply for SBI Junior Associate Recruitment 2026?</h3><p data-t="a0">The last date to submit the online application is 31 August 2026.</p></div>
+      <div class="qa"><h3 data-t="q1">What is the educational qualification required?</h3><p data-t="a1">Candidates must possess a Graduation degree in any discipline from a recognised University.</p></div>
+      <div class="qa"><h3 data-t="q2">What is the age limit for this recruitment?</h3><p data-t="a2">Candidates must be between 20 and 28 years of age as on 01.04.2026.</p></div>
+      <div class="qa"><h3 data-t="q3">How many total vacancies are announced?</h3><p data-t="a3">A total of 7680 vacancies have been announced for Junior Associates.</p></div>
     </section>
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
