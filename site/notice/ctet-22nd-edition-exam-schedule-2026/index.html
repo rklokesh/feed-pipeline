@@ -216,7 +216,9 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 
 /* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
-.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+.hrow { display: flex; align-items: center; justify-content: center; gap: 18px; }
+.hrow.has-logo h1 { text-align: left; margin: 0; }
+.hrow .olg { flex: none; width: 64px; height: 64px; object-fit: contain; }
 h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
 html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .meta { font-size: .94rem; }
@@ -238,7 +240,7 @@ ul.steps.dots { list-style: disc; }
 .tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
 .tbl tbody tr:hover { background: var(--row-hover); }
 html[lang="hi"] .hisum { display: none; }
-@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
@@ -258,10 +260,9 @@ html[lang="hi"] .hisum { display: none; }
 
   <main>
     <div class="title">
-      <img class="olg" src="/org/ctet.webp" width="76" height="76" alt="Central Board of Secondary Education (CBSE) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=admit-cards" data-t="crumbType">Admit cards</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">CTET</span></nav>
-      <h1 data-t="h1">CTET 22nd Edition Exam Schedule 2026</h1>
-      <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: cdnbbsr.s3waas.gov.in</p>
+      <div class="hrow has-logo"><img class="olg" src="/org/ctet.webp" width="64" height="64" alt="Central Board of Secondary Education (CBSE) logo" decoding="async"><h1 data-t="h1">CTET 22nd Edition Exam Schedule 2026</h1></div>
+      <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: ctet.nic.in</p>
       <p class="status"><span id="state">Exam dates announced</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">The 22nd edition of the Central Teacher Eligibility Test (CTET) will be conducted on 12th and 13th December 2026 by CBSE. Candidates should check their exam city 15 days prior and download their admit cards two days before the exam.</p>
     </div>
@@ -363,7 +364,7 @@ html[lang="hi"] .hisum { display: none; }
       r1v: "22nd Edition",
       r2l: "Admit Card Availability",
       r2v: "2 days before the exam",
-      metaV: "Updated 23 Oct 2026 · Source: cdnbbsr.s3waas.gov.in",
+      metaV: "Updated 23 Oct 2026 · Source: ctet.nic.in",
       aboutH: "About this notice",
       intro: "The Central Board of Secondary Education (CBSE) has released the public notice for the 22nd edition of the Central Teacher Eligibility Test (CTET). The examination is scheduled to be held on 12th and 13th December 2026. Candidates who applied for the test can read this notice for schedule details, exam city information, and admit card download timelines.",
       datesH: "Important dates",
@@ -423,7 +424,7 @@ html[lang="hi"] .hisum { display: none; }
       r1v: "22वां संस्करण",
       r2l: "प्रवेश पत्र उपलब्धता",
       r2v: "परीक्षा से 2 दिन पहले",
-      metaV: "अपडेट 23 अक्तूबर 2026 · स्रोत: cdnbbsr.s3waas.gov.in",
+      metaV: "अपडेट 23 अक्तूबर 2026 · स्रोत: ctet.nic.in",
       aboutH: "इस सूचना के बारे में",
       intro: "केंद्रीय माध्यमिक शिक्षा बोर्ड ने केंद्रीय शिक्षक पात्रता परीक्षा (सीटीईटी) के 22वें संस्करण के लिए सार्वजनिक नोटिस जारी कर दिया है। यह परीक्षा 12 और 13 दिसंबर 2026 को आयोजित होने निर्धारित है। परीक्षा के लिए आवेदन करने वाले अभ्यर्थी इस नोटिस से परीक्षा कार्यक्रम, परीक्षा शहर की जानकारी और प्रवेश पत्र डाउनलोड करने की समय-सीमा की जानकारी प्राप्त कर सकते हैं।",
       datesH: "महत्वपूर्ण तिथियाँ",

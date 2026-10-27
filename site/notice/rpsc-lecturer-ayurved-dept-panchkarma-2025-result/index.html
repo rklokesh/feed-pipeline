@@ -216,7 +216,9 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 
 /* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
-.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+.hrow { display: flex; align-items: center; justify-content: center; gap: 18px; }
+.hrow.has-logo h1 { text-align: left; margin: 0; }
+.hrow .olg { flex: none; width: 64px; height: 64px; object-fit: contain; }
 h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
 html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .meta { font-size: .94rem; }
@@ -238,7 +240,7 @@ ul.steps.dots { list-style: disc; }
 .tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
 .tbl tbody tr:hover { background: var(--row-hover); }
 html[lang="hi"] .hisum { display: none; }
-@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
@@ -258,9 +260,8 @@ html[lang="hi"] .hisum { display: none; }
 
   <main>
     <div class="title">
-      <img class="olg" src="/org/rpsc.webp" width="76" height="76" alt="Rajasthan Public Service Commission (RPSC) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=results" data-t="crumbType">Results</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">RPSC</span></nav>
-      <h1 data-t="h1">RPSC Lecturer Panchkarma 2025 Main List Result Declared</h1>
+      <div class="hrow has-logo"><img class="olg" src="/org/rpsc.webp" width="64" height="64" alt="Rajasthan Public Service Commission (RPSC) logo" decoding="async"><h1 data-t="h1">RPSC Lecturer Panchkarma 2025 Main List Result Declared</h1></div>
       <p class="meta g" data-t="metaV">Updated 26 Oct 2026 · Source: rpsc.rajasthan.gov.in</p>
       <p class="status"><span id="state">Main result and cutoff marks declared</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Rajasthan Public Service Commission has released the main result and cutoff marks for the Lecturer Panchkarma Exam 2025 under Ayurved Department. Candidates who appeared for document verification can check their roll number and merit rank in the result. Download the result notice for cutoff details.</p>

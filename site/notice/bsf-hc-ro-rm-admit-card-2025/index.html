@@ -216,7 +216,9 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 
 /* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
-.title .olg { width: 76px; height: 76px; object-fit: contain; margin: 0 auto 4px; }
+.hrow { display: flex; align-items: center; justify-content: center; gap: 18px; }
+.hrow.has-logo h1 { text-align: left; margin: 0; }
+.hrow .olg { flex: none; width: 64px; height: 64px; object-fit: contain; }
 h1 { font-size: clamp(1.9rem, 1.25rem + 2.4vw, 2.75rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; max-width: 20em; margin: 2px auto 0; }
 html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .meta { font-size: .94rem; }
@@ -238,7 +240,7 @@ ul.steps.dots { list-style: disc; }
 .tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
 .tbl tbody tr:hover { background: var(--row-hover); }
 html[lang="hi"] .hisum { display: none; }
-@media (max-width: 640px) { .title .olg { width: 60px; height: 60px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
+@media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
@@ -258,10 +260,9 @@ html[lang="hi"] .hisum { display: none; }
 
   <main>
     <div class="title">
-      <img class="olg" src="/org/bsf.webp" width="76" height="76" alt="Border Security Force (BSF) logo" decoding="async">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=admit-cards" data-t="crumbType">Admit cards</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">BSF</span></nav>
-      <h1 data-t="h1">BSF HC RO &amp; RM Admit Card 2025</h1>
-      <p class="meta g" data-t="metaV">Updated 22 Oct 2026 · Source: d3t79nicn48uzj.cloudfront.net</p>
+      <div class="hrow has-logo"><img class="olg" src="/org/bsf.webp" width="64" height="64" alt="Border Security Force (BSF) logo" decoding="async"><h1 data-t="h1">BSF HC RO &amp; RM Admit Card 2025</h1></div>
+      <p class="meta g" data-t="metaV">Updated 22 Oct 2026 · Source: rectt.bsf.gov.in</p>
       <p class="status"><span id="state">Admit card released</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Download the e-admit card for the written examination (CBT) scheduled on 2nd November 2026 for the BSF Head Constable (RO) and Head Constable (RM) recruitment.</p>
     </div>
@@ -361,7 +362,7 @@ html[lang="hi"] .hisum { display: none; }
       r1v: "02 Nov 2026",
       r2l: "How to download",
       r2v: "Download through the official BSF recruitment portal using login credentials.",
-      metaV: "Updated 22 Oct 2026 · Source: d3t79nicn48uzj.cloudfront.net",
+      metaV: "Updated 22 Oct 2026 · Source: rectt.bsf.gov.in",
       aboutH: "About this notice",
       intro: "The Border Security Force (BSF) has released the link for downloading e-admit cards for the written examination (CBT) for the post of Head Constable (RO) and Head Constable (RM) in BSF Comn Setup 2025. Candidates appearing for the examination scheduled on 2nd November 2026 can download their admit cards from the official website. Ensure you check all details printed on your admit card before the exam date.",
       datesH: "Important dates",
@@ -418,7 +419,7 @@ html[lang="hi"] .hisum { display: none; }
       r1v: "02 नवं 2026",
       r2l: "कैसे डाउनलोड करें",
       r2v: "लॉगिन विवरण का उपयोग करके आधिकारिक बीएसएफ भर्ती पोर्टल के माध्यम से डाउनलोड करें।",
-      metaV: "अपडेट 22 अक्तूबर 2026 · स्रोत: d3t79nicn48uzj.cloudfront.net",
+      metaV: "अपडेट 22 अक्तूबर 2026 · स्रोत: rectt.bsf.gov.in",
       aboutH: "इस सूचना के बारे में",
       intro: "सीमा सुरक्षा बल (बीएसएफ) ने बीएसएफ कॉमिन सेटअप 2025 में हेड कांस्टेबल (आरओ) और हेड कांस्टेबल (आरएम) के पद के लिए लिखित परीक्षा (सीबीटी) के वास्ते ई-एडमिट कार्ड डाउनलोड करने के लिए लिंक जारी कर दिया है। 2 नवंबर 2026 को निर्धारित परीक्षा के लिए उपस्थित होने वाले उम्मीदवार आधिकारिक वेबसाइट से अपने एडमिट कार्ड डाउनलोड कर सकते हैं। परीक्षा की तारीख से पहले अपने एडमिट कार्ड पर छपे सभी विवरणों की जांच अवश्य कर लें।",
       datesH: "महत्वपूर्ण तिथियाँ",

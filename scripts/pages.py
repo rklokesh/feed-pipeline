@@ -263,15 +263,14 @@ def render(n: dict, slug: str, related: list | None = None) -> str:
     esc = html.escape
     from share_card import board as _board
     logo_key = _board(n.get("source_id", ""))[0]
-    logo_img = (f'<img class="olg" src="/org/{logo_key}.webp" width="76" height="76" alt="{esc(en["byV"])} logo" decoding="async">'
+    logo_img = (f'<img class="olg" src="/org/{logo_key}.webp" width="64" height="64" alt="{esc(en["byV"])} logo" decoding="async">'
                 if logo_key and (SITE / "org" / f"{logo_key}.webp").exists() else "")
-    src_host = host(n.get("url") or site or "")
+    src_host = host(n.get("board_url") or site or n.get("url") or "")   # the board's own site, not a PDF mirror (e.g. cloudfront)
     en["metaV"] = f"Updated {d_en(checked)}" + (f" · Source: {src_host}" if src_host else "")
     hi["metaV"] = f"अपडेट {d_hi(checked)}" + (f" · स्रोत: {src_host}" if src_host else "")
     main = [f'''    <div class="title">
-      {logo_img}
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat={CAT_SLUG.get(typ, "jobs")}" data-t="crumbType">{esc(en["crumbType"])}</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">{esc(en["org"])}</span></nav>
-      <h1 data-t="h1">{esc(en["h1"])}</h1>
+      <div class="hrow{" has-logo" if logo_img else ""}">{logo_img}<h1 data-t="h1">{esc(en["h1"])}</h1></div>
       <p class="meta g" data-t="metaV">{esc(en["metaV"])}</p>
       <p class="status"><span id="state">{esc(en["statusV"])}</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       {f'<p class="lead" data-t="summary">{esc(en["summary"])}</p>' if en["summary"] else ""}
