@@ -29,15 +29,82 @@
   "notice_date": "2026-09-09",
   "org": "UKPSC",
   "page": {
+    "age": [],
     "apply_start": "2026-09-09",
     "apply_url": null,
     "changes_from_notes": "",
     "conducted_by_en": "Uttarakhand Public Service Commission (UKPSC)",
-    "conducted_by_hi": "उत्तराखंड लोक सेवा आयोग (यूकेपीएससी)",
+    "conducted_by_hi": "उत्तराखंड लोक सेवा आयोग (UKPSC)",
+    "dates": [
+      {
+        "label_en": "Notification date",
+        "label_hi": "अधिसूचना तिथि",
+        "value_en": "09 Sep 2026",
+        "value_hi": "09 सितंबर 2026"
+      },
+      {
+        "label_en": "Online application starts",
+        "label_hi": "ऑनलाइन आवेदन प्रारंभ",
+        "value_en": "09 Sep 2026",
+        "value_hi": "09 सितंबर 2026"
+      },
+      {
+        "label_en": "Online application last date",
+        "label_hi": "ऑनलाइन आवेदन की अंतिम तिथि",
+        "value_en": "29 Sep 2026",
+        "value_hi": "29 सितंबर 2026"
+      },
+      {
+        "label_en": "Examination fee last date",
+        "label_hi": "परीक्षा शुल्क जमा करने की अंतिम तिथि",
+        "value_en": "29 Sep 2026",
+        "value_hi": "29 सितंबर 2026"
+      },
+      {
+        "label_en": "Correction window",
+        "label_hi": "संशोधन विंडो",
+        "value_en": "07 Oct 2026 to 16 Oct 2026",
+        "value_hi": "07 अक्टूबर 2026 से 16 अक्टूबर 2026"
+      }
+    ],
+    "eligibility": [],
     "exam_date": null,
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "The last date to submit online applications is 29 September 2026.",
+        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 29 सितंबर 2026 है।",
+        "q_en": "What is the last date to apply for UKPSC Combined State Civil Upper Subordinate Exam 2026?",
+        "q_hi": "उत्तराखंड सम्मिलित राज्य सिविल प्रवर अधीनस्थ सेवा परीक्षा 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "A total of 67 vacancies are announced under this examination.",
+        "a_hi": "इस परीक्षा के अंतर्गत कुल 67 रिक्तियों की घोषणा की गई है।",
+        "q_en": "How many vacancies are announced in this recruitment?",
+        "q_hi": "इस भर्ती में कुल कितनी रिक्तियों की घोषणा की गई है?"
+      },
+      {
+        "a_en": "The correction window is open from 07 October 2026 to 16 October 2026.",
+        "a_hi": "संशोधन विंडो 07 अक्टूबर 2026 से 16 अक्टूबर 2026 तक खुली रहेगी।",
+        "q_en": "When is the correction window open for the application form?",
+        "q_hi": "आवेदन पत्र के लिए संशोधन विंडो कब खुली रहेगी?"
+      }
+    ],
     "fees": [],
     "h1_en": "UKPSC Combined State Civil Upper Subordinate Exam 2026",
     "h1_hi": "उत्तराखंड सम्मिलित राज्य सिविल प्रवर अधीनस्थ सेवा परीक्षा 2026",
+    "how_en": [
+      "Visit the official UKPSC website.",
+      "Read the detailed advertisement and ensure eligibility.",
+      "Fill out the online application form and pay the fee before the last date."
+    ],
+    "how_hi": [
+      "आधिकारिक उत्तराखंड लोक सेवा आयोग की वेबसाइट पर जाएं।",
+      "विस्तृत विज्ञापन पढ़ें और पात्रता सुनिश्चित करें।",
+      "अंतिम तिथि से पहले ऑनलाइन आवेदन पत्र भरें और शुल्क भुगतान करें।"
+    ],
+    "intro_en": "The Uttarakhand Public Service Commission (UKPSC) has released the notification for the Combined State Civil/Upper Subordinate Services Examination 2026 to fill 67 vacancies across various departments. Online applications are open from 09 September 2026 to 29 September 2026. Eligible and interested candidates should review the official advertisement thoroughly before applying on the official website.",
+    "intro_hi": "उत्तराखंड लोक सेवा आयोग (UKPSC) ने विभिन्न विभागों में 67 रिक्तियों को भरने के लिए सम्मिलित राज्य सिविल/प्रवर अधीनस्थ सेवा परीक्षा 2026 का विज्ञापन जारी किया है। ऑनलाइन आवेदन 09 सितंबर 2026 से 29 सितंबर 2026 तक खुले हैं। योग्य और इच्छुक उम्मीदवारों को आवेदन करने से पहले आधिकारिक विज्ञापन की भली-भांति जाँच करनी चाहिए।",
     "last_date": "2026-09-29",
     "notice_date": "2026-09-09",
     "official_site": "https://psc.uk.gov.in",
@@ -46,8 +113,8 @@
       {
         "label_en": "Posts",
         "label_hi": "पद",
-        "value_en": "Various Departments",
-        "value_hi": "विभिन्न विभाग"
+        "value_en": "Combined State Civil/Upper Subordinate Services",
+        "value_hi": "सम्मिलित राज्य सिविल/प्रवर अधीनस्थ सेवा"
       },
       {
         "label_en": "Total vacancies",
@@ -63,7 +130,7 @@
       },
       {
         "label_en": "Last date for fee",
-        "label_hi": "शुल्क जमा करने की अंतिम तिथि",
+        "label_hi": "शुल्क की अंतिम तिथि",
         "value_en": "29 Sep 2026",
         "value_hi": "29 सितंबर 2026"
       },
@@ -71,13 +138,28 @@
         "label_en": "Advertisement number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "A-1/E-1/2026-27",
-        "value_hi": "ए-1/ई-1/2026-27"
+        "value_hi": "A-1/E-1/2026-27"
       }
+    ],
+    "selection_en": [
+      "Check the official notification for detailed selection process."
+    ],
+    "selection_hi": [
+      "विस्तृत चयन प्रक्रिया के लिए आधिकारिक विज्ञापन देखें।"
     ],
     "status_en": "",
     "status_hi": "",
     "summary_en": "Uttarakhand Public Service Commission has invited online applications for 67 vacancies under the Combined State Civil/Upper Subordinate Services Examination 2026. Eligible candidates can apply online up to 29 September 2026.",
-    "summary_hi": "उत्तराखंड लोक सेवा आयोग ने सम्मिलित राज्य सिविल प्रवर अधीनस्थ सेवा परीक्षा 2026 के अंतर्गत 67 रिक्त पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 29 सितंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।"
+    "summary_hi": "उत्तराखंड लोक सेवा आयोग ने सम्मिलित राज्य सिविल प्रवर अधीनस्थ सेवा परीक्षा 2026 के अंतर्गत 67 रिक्त पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 29 सितंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Various departments",
+        "detail_hi": "विभिन्न विभाग",
+        "post_en": "Combined State Civil/Upper Subordinate Services",
+        "post_hi": "सम्मिलित राज्य सिविल/प्रवर अधीनस्थ सेवा",
+        "total": "67"
+      }
+    ]
   },
   "pdf": {
     "bytes": 549472,
