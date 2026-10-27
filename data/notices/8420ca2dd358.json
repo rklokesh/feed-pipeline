@@ -73,27 +73,55 @@
   "id": "8420ca2dd358",
   "issue": 11,
   "kind": "notification",
-  "notice_date": "2026-10-22",
+  "notice_date": "2026-10-08",
   "org": "SSC",
   "page": {
+    "age": [],
     "apply_start": null,
     "apply_url": null,
     "changes_from_notes": "",
     "conducted_by_en": "Staff Selection Commission (SSC)",
     "conducted_by_hi": "कर्मचारी चयन आयोग (एसएससी)",
+    "dates": [],
+    "eligibility": [],
     "exam_date": null,
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "A total of 1699 tentative vacancies have been announced for the SSC Junior Engineer Examination 2026.",
+        "a_hi": "एसएससी कनिष्ठ अभियंता परीक्षा 2026 के लिए कुल 1699 संभावित रिक्तियों की घोषणा की गई है।",
+        "q_en": "What is the total number of tentative vacancies for SSC Junior Engineer Examination 2026?",
+        "q_hi": "एसएससी कनिष्ठ अभियंता परीक्षा 2026 के लिए कुल संभावित रिक्तियां कितनी हैं?"
+      },
+      {
+        "a_en": "The Junior Engineer Examination is conducted by the Staff Selection Commission (SSC).",
+        "a_hi": "कनिष्ठ अभियंता परीक्षा कर्मचारी चयन आयोग (एसएससी) द्वारा आयोजित की जाती है।",
+        "q_en": "Which organization conducts the Junior Engineer Examination?",
+        "q_hi": "कनिष्ठ अभियंता परीक्षा कौन सा संगठन आयोजित करता है?"
+      }
+    ],
     "fees": [],
     "h1_en": "SSC Junior Engineer Examination 2026 Tentative Vacancies",
     "h1_hi": "कर्मचारी चयन आयोग कनिष्ठ अभियंता परीक्षा 2026 संभावित रिक्तियां",
+    "how_en": [
+      "Visit the official website of the Staff Selection Commission.",
+      "Go to the Notice Board section to check the tentative vacancies notice for Junior Engineer Examination, 2026."
+    ],
+    "how_hi": [
+      "कर्मचारी चयन आयोग की आधिकारिक वेबसाइट पर जाएं।",
+      "कनिष्ठ अभियंता परीक्षा, 2026 के लिए संभावित रिक्तियों की सूचना देखने के लिए नोटिस बोर्ड अनुभाग पर जाएं।"
+    ],
+    "intro_en": "The Staff Selection Commission (SSC) has released the tentative vacancies for the Junior Engineer Examination, 2026. A total of 1699 vacancies have been announced across various departments and ministries. Candidates preparing for the SSC JE 2026 examination can check the department-wise break-up of vacancies.",
+    "intro_hi": "कर्मचारी चयन आयोग (एसएससी) ने कनिष्ठ अभियंता परीक्षा, 2026 के लिए संभावित रिक्तियां जारी कर दी हैं। विभिन्न विभागों और मंत्रालयों में कुल 1699 रिक्तियों की घोषणा की गई है। एसएससी जेई 2026 परीक्षा की तैयारी कर रहे उम्मीदवार रिक्तियों का विभागवार विवरण देख सकते हैं।",
     "last_date": null,
-    "notice_date": null,
+    "notice_date": "2026-10-08",
     "official_site": "https://ssc.gov.in",
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
         "label_en": "Posts",
         "label_hi": "पद",
-        "value_en": "Junior Engineer",
+        "value_en": "Junior Engineer (JE)",
         "value_hi": "कनिष्ठ अभियंता"
       },
       {
@@ -101,12 +129,162 @@
         "label_hi": "कुल रिक्तियां",
         "value_en": "1699",
         "value_hi": "1699"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Junior Engineer Examination, 2026",
+        "value_hi": "कनिष्ठ अभियंता परीक्षा, 2026"
       }
     ],
+    "selection_en": [],
+    "selection_hi": [],
     "status_en": "",
     "status_hi": "",
-    "summary_en": "Staff Selection Commission has released the tentative vacancies totaling 1699 for the Junior Engineer Examination 2026. Check department-wise vacancies.",
-    "summary_hi": "कर्मचारी चयन आयोग ने कनिष्ठ अभियंता परीक्षा 2026 के लिए कुल 1699 संभावित रिक्तियां जारी कर दी हैं। विभागवार रिक्तियां देखें।"
+    "summary_en": "Staff Selection Commission has released the tentative vacancies totaling 1699 for the Junior Engineer Examination 2026. Check department-wise and category-wise vacancy details.",
+    "summary_hi": "कर्मचारी चयन आयोग ने कनिष्ठ अभियंता परीक्षा 2026 के लिए कुल 1699 संभावित रिक्तियां जारी कर दी हैं। विभागवार और श्रेणीवार रिक्ति विवरण देखें।",
+    "vacancies": [
+      {
+        "detail_en": "SC 39, ST 20, OBC 118, EWS 9, UR 85",
+        "detail_hi": "एससी 39, एसटी 20, ओबीसी 118, ईडब्ल्यूएस 9, यूआर 85",
+        "post_en": "Border Roads Organization - JE (C) (Male candidates only)",
+        "post_hi": "बॉर्डर रोड्स ऑर्गेनाइजेशन - जेई (सिविल) (केवल पुरुष उम्मीदवारों के लिए)",
+        "total": "271"
+      },
+      {
+        "detail_en": "SC 1, ST 1, OBC 9, EWS 1, UR 10",
+        "detail_hi": "एससी 1, एसटी 1, ओबीसी 9, ईडब्ल्यूएस 1, यूआर 10",
+        "post_en": "Border Roads Organization - JE (E&M) (Male candidates only)",
+        "post_hi": "बॉर्डर रोड्स ऑर्गेनाइजेशन - जेई (ई एंड एम) (केवल पुरुष उम्मीदवारों के लिए)",
+        "total": "22"
+      },
+      {
+        "detail_en": "SC 1, ST 0, OBC 1, EWS 0, UR 1",
+        "detail_hi": "एससी 1, एसटी 0, ओबीसी 1, ईडब्ल्यूएस 0, यूआर 1",
+        "post_en": "Central Water Commission - JE (M)",
+        "post_hi": "केंद्रीय जल आयोग - जेई (यांत्रिक)",
+        "total": "3"
+      },
+      {
+        "detail_en": "SC 4, ST 4, OBC 6, EWS 3, UR 12",
+        "detail_hi": "एससी 4, एसटी 4, ओबीसी 6, ईडब्ल्यूएस 3, यूआर 12",
+        "post_en": "Central Water Commission - JE (C)",
+        "post_hi": "केंद्रीय जल आयोग - जेई (सिविल)",
+        "total": "29"
+      },
+      {
+        "detail_en": "SC 15, ST 7, OBC 27, EWS 10, UR 44",
+        "detail_hi": "एससी 15, एसटी 7, ओबीसी 27, ईडब्ल्यूएस 10, यूआर 44",
+        "post_en": "Central Public Works Department - JE (E)",
+        "post_hi": "केंद्रीय लोक निर्माण विभाग - जेई (विद्युत)",
+        "total": "103"
+      },
+      {
+        "detail_en": "SC 51, ST 25, OBC 92, EWS 34, UR 141",
+        "detail_hi": "एससी 51, एसटी 25, ओबीसी 92, ईडब्ल्यूएस 34, यूआर 141",
+        "post_en": "Central Public Works Department - JE (C)",
+        "post_hi": "केंद्रीय लोक निर्माण विभाग - जेई (सिविल)",
+        "total": "343"
+      },
+      {
+        "detail_en": "SC 1, ST 0, OBC 0, EWS 0, UR 1",
+        "detail_hi": "एससी 1, एसटी 0, ओबीसी 0, ईडब्ल्यूएस 0, यूआर 1",
+        "post_en": "Central Water Power Research Station - JE (C)",
+        "post_hi": "केंद्रीय जल और विद्युत अनुसंधान केंद्र - जेई (सिविल)",
+        "total": "2"
+      },
+      {
+        "detail_en": "SC 1, ST 0, OBC 0, EWS 0, UR 0",
+        "detail_hi": "एससी 1, एसटी 0, ओबीसी 0, ईडब्ल्यूएस 0, यूआर 0",
+        "post_en": "Central Water Power Research Station - JE (E)",
+        "post_hi": "केंद्रीय जल और विद्युत अनुसंधान केंद्र - जेई (विद्युत)",
+        "total": "1"
+      },
+      {
+        "detail_en": "SC 0, ST 0, OBC 0, EWS 0, UR 1",
+        "detail_hi": "एससी 0, एसटी 0, ओबीसी 0, ईडब्ल्यूएस 0, यूआर 1",
+        "post_en": "Central Water Power Research Station - JE (M)",
+        "post_hi": "केंद्रीय जल और विद्युत अनुसंधान केंद्र - जेई (यांत्रिक)",
+        "total": "1"
+      },
+      {
+        "detail_en": "SC 0, ST 1, OBC 1, EWS 0, UR 0",
+        "detail_hi": "एससी 0, एसटी 1, ओबीसी 1, ईडब्ल्यूएस 0, यूआर 0",
+        "post_en": "DGQA-NAVAL, Ministry of Defence - JE(E)",
+        "post_hi": "डीजीक्यूए-नौसेना, रक्षा मंत्रालय - जेई (विद्युत)",
+        "total": "2"
+      },
+      {
+        "detail_en": "SC 1, ST 1, OBC 0, EWS 1, UR 3",
+        "detail_hi": "एससी 1, एसटी 1, ओबीसी 0, ईडब्ल्यूएस 1, यूआर 3",
+        "post_en": "DGQA-NAVAL, Ministry of Defence - JE(M)",
+        "post_hi": "डीजीक्यूए-नौसेना, रक्षा मंत्रालय - जेई (यांत्रिक)",
+        "total": "6"
+      },
+      {
+        "detail_en": "SC 0, ST 0, OBC 0, EWS 0, UR 2",
+        "detail_hi": "एससी 0, एसटी 0, ओबीसी 0, ईडब्ल्यूएस 0, यूआर 2",
+        "post_en": "Farakka Barrage Project - JE(C)",
+        "post_hi": "फरक्का बैराज परियोजना - जेई (सिविल)",
+        "total": "2"
+      },
+      {
+        "detail_en": "SC 19, ST 32, OBC 33, EWS 9, UR 61",
+        "detail_hi": "एससी 19, एसटी 32, ओबीसी 33, ईडब्ल्यूएस 9, यूआर 61",
+        "post_en": "Military Engineer Service (MES) - JE (C)",
+        "post_hi": "मिलिट्री इंजीनियर सर्विस - जेई (सिविल)",
+        "total": "154"
+      },
+      {
+        "detail_en": "SC 16, ST 26, OBC 38, EWS 11, UR 70",
+        "detail_hi": "एससी 16, एसटी 26, ओबीसी 38, ईडब्ल्यूएस 11, यूआर 70",
+        "post_en": "Military Engineer Service (MES) - JE(E&M)",
+        "post_hi": "मिलिट्री इंजीनियर सर्विस - जेई (ई एंड एम)",
+        "total": "161"
+      },
+      {
+        "detail_en": "SC 1, ST 1, OBC 1, EWS 0, UR 0",
+        "detail_hi": "एससी 1, एसटी 1, ओबीसी 1, ईडब्ल्यूएस 0, यूआर 0",
+        "post_en": "Central Institute of Coastal Engineering For Fishery - JE(C)",
+        "post_hi": "मत्स्य पालन के लिए तटीय इंजीनियरिंग का केंद्रीय संस्थान - जेई (सिविल)",
+        "total": "3"
+      },
+      {
+        "detail_en": "SC 1, ST 1, OBC 0, EWS 1, UR 4",
+        "detail_hi": "एससी 1, एसटी 1, ओबीसी 0, ईडब्ल्यूएस 1, यूआर 4",
+        "post_en": "Directorate General of Light Houses and Lightships - JE(C)",
+        "post_hi": "दीपक और लाइटशिप महानिदेशालय - जेई (सिविल)",
+        "total": "7"
+      },
+      {
+        "detail_en": "SC 0, ST 0, OBC 1, EWS 0, UR 1",
+        "detail_hi": "एससी 0, एसटी 0, ओबीसी 1, ईडब्ल्यूएस 0, यूआर 1",
+        "post_en": "Directorate General of Light Houses and Lightships - JE(E)",
+        "post_hi": "दीपक और लाइटशिप महानिदेशालय - जेई (विद्युत)",
+        "total": "2"
+      },
+      {
+        "detail_en": "SC 10, ST 5, OBC 18, EWS 6, UR 30",
+        "detail_hi": "एससी 10, एसटी 5, ओबीसी 18, ईडब्ल्यूएस 6, यूआर 30",
+        "post_en": "Department of Telecommunication - JE(T)",
+        "post_hi": "दूरसंचार विभाग - जेई (टी)",
+        "total": "69"
+      },
+      {
+        "detail_en": "SC 76, ST 11, OBC 99, EWS 45, UR 231",
+        "detail_hi": "एससी 76, एसटी 11, ओबीसी 99, ईडब्ल्यूएस 45, यूआर 231",
+        "post_en": "India Meteorological Department - SA",
+        "post_hi": "भारत मौसम विज्ञान विभाग - एसए",
+        "total": "462"
+      },
+      {
+        "detail_en": "SC 8, ST 5, OBC 18, EWS 4, UR 21",
+        "detail_hi": "एससी 8, एसटी 5, ओबीसी 18, ईडब्ल्यूएस 4, यूआर 21",
+        "post_en": "Brahmaputra Board - JE(C)",
+        "post_hi": "ब्रह्मपुत्र बोर्ड - जेई (सिविल)",
+        "total": "56"
+      }
+    ]
   },
   "pdf": {
     "bytes": 62755,

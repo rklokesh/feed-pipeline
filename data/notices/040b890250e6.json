@@ -1,5 +1,20 @@
 {
   "board_url": "https://mppsc.mp.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Assistant Town Planner",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Court case or caveat notice related to exam result, not the actual result or job posting",
+    "summary_en": "Caveat notice regarding the written exam result for Assistant Town Planner Exam 2026.",
+    "summary_hi": "सहायक नगर निवेशक परीक्षा के लिखित परीक्षा परिणाम के संबंध में केवियट सूचना।",
+    "title_en": "MPPSC Assistant Town Planner Exam 2026 Caveat Notice",
+    "title_hi": "मध्य प्रदेश लोक सेवा आयोग सहायक नगर निवेशक परीक्षा केवियट सूचना",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "mppsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Caveat Vigyapti on Written Exam Result - Assistant Town Planner Exam 2026, Dated 27/10/2026",
   "url": "https://mppsc.mp.gov.in/uploads/advertisement/Caveat_Vigyapti_Written_Exam_Result_Assistant_Town_Planner_Exam_2026_Dated_27_10_2026.pdf"
 }

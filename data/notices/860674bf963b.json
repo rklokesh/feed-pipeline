@@ -99,15 +99,131 @@
   "notice_date": "2026-10-22",
   "org": "ITBP",
   "page": {
+    "age": [
+      {
+        "label_en": "Minimum age",
+        "label_hi": "न्यूनतम आयु",
+        "value_en": "18 years",
+        "value_hi": "18 वर्ष"
+      },
+      {
+        "label_en": "Maximum age",
+        "label_hi": "अधिकतम आयु",
+        "value_en": "23 years",
+        "value_hi": "23 वर्ष"
+      },
+      {
+        "label_en": "As on date",
+        "label_hi": "इस तिथि के अनुसार",
+        "value_en": "01 Nov 2026",
+        "value_hi": "01 नवंबर 2026"
+      },
+      {
+        "label_en": "Un-reserved / EWS / OBC relaxation",
+        "label_hi": "अनारक्षित / ईडब्ल्यूएस / ओबीसी छूट",
+        "value_en": "05 Years",
+        "value_hi": "05 वर्ष"
+      },
+      {
+        "label_en": "OBC (NCL) relaxation",
+        "label_hi": "अन्य पिछड़ा वर्ग (क्रीमी लेयर रहित) छूट",
+        "value_en": "08 Years",
+        "value_hi": "08 वर्ष"
+      },
+      {
+        "label_en": "SC / ST relaxation",
+        "label_hi": "अनुसूचित जाति / अनुसूचित जनजाति छूट",
+        "value_en": "10 Years",
+        "value_hi": "10 वर्ष"
+      }
+    ],
     "apply_start": "2026-10-03",
     "apply_url": "https://recruitment.itbpolice.nic.in",
     "changes_from_notes": "",
     "conducted_by_en": "Indo-Tibetan Border Police Force (ITBPF)",
-    "conducted_by_hi": "भारत-तिब्बत सीमा पुलिस बल (ITBPF)",
+    "conducted_by_hi": "भारत-तिब्बत सीमा पुलिस बल (आईटीबीपी)",
+    "dates": [
+      {
+        "label_en": "Online application starts",
+        "label_hi": "ऑनलाइन आवेदन शुरू",
+        "value_en": "03 Oct 2026",
+        "value_hi": "03 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Online application last date",
+        "label_hi": "ऑनलाइन आवेदन की अंतिम तिथि",
+        "value_en": "01 Nov 2026",
+        "value_hi": "01 नवंबर 2026"
+      }
+    ],
+    "eligibility": [
+      {
+        "label_en": "Education",
+        "label_hi": "शिक्षा",
+        "value_en": "Matriculation or its equivalent from a recognized board.",
+        "value_hi": "मान्यता प्राप्त बोर्ड से मैट्रिकुलेशन या समकक्ष।"
+      },
+      {
+        "label_en": "Sports Qualification",
+        "label_hi": "खेल योग्यता",
+        "value_en": "Players who have participated or won medal(s) in international, national, inter-university competitions, or Khelo India games from 01/01/2024 till 01/11/2026.",
+        "value_hi": "वे खिलाड़ी जिन्होंने 01/01/2024 से 01/11/2026 तक अंतरराष्ट्रीय, राष्ट्रीय, अंतर-विश्वविद्यालय प्रतियोगिताओं या खेलो इंडिया खेलों में भाग लिया है या पदक जीता है।"
+      }
+    ],
     "exam_date": null,
+    "extra": [
+      {
+        "label_en": "Pay Scale",
+        "label_hi": "वेतनमान",
+        "value_en": "Level-3 in the pay matrix Rs. 21,700 to 69,100/- (7th CPC)",
+        "value_hi": "वेतन मैट्रिक्स में लेवल-3 ₹ 21,700 से 69,100/- (7वां सीपीसी)"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The last date to submit online applications is 1st November 2026.",
+        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 1 नवंबर 2026 है।",
+        "q_en": "What is the last date to apply for ITBP Constable GD Sports Quota Recruitment 2025?",
+        "q_hi": "आईटीबीपी कांस्टेबल जीडी खेल कोटा भर्ती 2025 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "There are a total of 126 vacancies for Constable (General Duty) under Sports Quota.",
+        "a_hi": "खेल कोटा के तहत कांस्टेबल (सामान्य ड्यूटी) के लिए कुल 126 रिक्तियां हैं।",
+        "q_en": "What is the total number of vacancies advertised?",
+        "q_hi": "विज्ञापित रिक्तियों की कुल संख्या कितनी है?"
+      },
+      {
+        "a_en": "Candidates must be between 18 and 23 years of age as on 1st November 2026.",
+        "a_hi": "उम्मीदवारों की आयु 1 नवंबर 2026 के अनुसार 18 से 23 वर्ष के बीच होनी चाहिए।",
+        "q_en": "What is the age limit for this recruitment?",
+        "q_hi": "इस भर्ती के लिए आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "Candidates must have passed Matriculation or its equivalent from a recognized board.",
+        "a_hi": "उम्मीदवारों को किसी मान्यता प्राप्त बोर्ड से मैट्रिकुलेशन या समकक्ष उत्तीर्ण होना चाहिए।",
+        "q_en": "What is the educational qualification required?",
+        "q_hi": "आवश्यक शैक्षणिक योग्यता क्या है?"
+      }
+    ],
     "fees": [],
     "h1_en": "ITBP Constable GD Sports Quota Recruitment 2025",
     "h1_hi": "आईटीबीपी कांस्टेबल जीडी खेल कोटा भर्ती 2025",
+    "how_en": [
+      "Check eligibility criteria in the official notification.",
+      "Visit the official ITBP recruitment website at recruitment.itbpolice.nic.in.",
+      "Fill out the online application form with required details.",
+      "Upload necessary educational and sports achievement documents.",
+      "Submit the application before 1st November 2026."
+    ],
+    "how_hi": [
+      "आधिकारिक अधिसूचना में पात्रता मापदंडों की जांच करें।",
+      "आधिकारिक आईटीबीपी भर्ती वेबसाइट recruitment.itbpolice.nic.in पर जाएं।",
+      "आवश्यक विवरण के साथ ऑनलाइन आवेदन पत्र भरें।",
+      "आवश्यक शैक्षणिक और खेल उपलब्धि दस्तावेज अपलोड करें।",
+      "1 नवंबर 2026 से पहले आवेदन जमा करें।"
+    ],
+    "intro_en": "The Indo-Tibetan Border Police Force (ITBPF) has released a detailed advertisement for the recruitment of meritorious sportspersons to the post of Constable (General Duty) under Sports Quota-2025. There are 126 vacancies available across various sports disciplines. Online applications are open from 3rd October 2026 to 1st November 2026. Eligible and interested candidates should check their eligibility and apply online through the official ITBP recruitment website.",
+    "intro_hi": "भारत-तिब्बत सीमा पुलिस बल (आईटीबीपी) ने खेल कोटा-2025 के तहत कांस्टेबल (सामान्य ड्यूटी) के पद पर मेधावी खिलाड़ियों की भर्ती के लिए एक विस्तृत विज्ञापन जारी किया है। विभिन्न खेल विषयों में कुल 126 रिक्तियां उपलब्ध हैं। ऑनलाइन आवेदन 3 अक्टूबर 2026 से 1 नवंबर 2026 तक खुले हैं। योग्य और इच्छुक उम्मीदवार अपनी पात्रता की जांच करें और आधिकारिक आईटीबीपी भर्ती वेबसाइट के माध्यम से ऑनलाइन आवेदन करें।",
     "last_date": "2026-11-01",
     "notice_date": null,
     "official_site": "https://recruitment.itbpolice.nic.in",
@@ -129,19 +245,19 @@
         "label_en": "Apply online",
         "label_hi": "ऑनलाइन आवेदन",
         "value_en": "03 Oct 2026 to 01 Nov 2026",
-        "value_hi": "03 अक्तूबर 2026 से 01 नवंबर 2026"
+        "value_hi": "03 अक्टूबर 2026 से 01 नवंबर 2026"
       },
       {
         "label_en": "Educational qualification",
         "label_hi": "शैक्षणिक योग्यता",
-        "value_en": "Matriculation or its equivalent from a recognized board along with required sports achievements",
-        "value_hi": "मान्यता प्राप्त बोर्ड से मैट्रिकुलेशन या समकक्ष और आवश्यक खेल उपलब्धियां"
+        "value_en": "Matriculation or its equivalent from a recognized board",
+        "value_hi": "मान्यता प्राप्त बोर्ड से मैट्रिकुलेशन या समकक्ष"
       },
       {
         "label_en": "Age limit",
         "label_hi": "आयु सीमा",
-        "value_en": "18 to 23 years as on 01 Nov 2026",
-        "value_hi": "01 नवंबर 2026 के अनुसार 18 से 23 वर्ष"
+        "value_en": "18 to 23 years (as on 01 Nov 2026)",
+        "value_hi": "18 से 23 वर्ष (01 नवंबर 2026 के अनुसार)"
       },
       {
         "label_en": "Advertisement number",
@@ -150,10 +266,216 @@
         "value_hi": "खेल कोटा-2025"
       }
     ],
+    "selection_en": [
+      "Online Application & Scrutiny",
+      "Recruitment Process (Documentation, Physical Standards, and Sports Trials)"
+    ],
+    "selection_hi": [
+      "ऑनलाइन आवेदन और संवीक्षा",
+      "भर्ती प्रक्रिया (दस्तावेजीकरण, शारीरिक मानक और खेल परीक्षण)"
+    ],
     "status_en": "",
     "status_hi": "",
-    "summary_en": "Indo-Tibetan Border Police Force has invited online applications for the recruitment of 126 Constable General Duty posts under Sports Quota 2025. Eligible and meritorious sportsperson candidates can apply online through the official recruitment website.",
-    "summary_hi": "भारत-तिब्बत सीमा पुलिस बल ने खेल कोटा 2025 के तहत कांस्टेबल सामान्य ड्यूटी के 126 पदों पर भर्ती के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य और मेधावी खिलाड़ी उम्मीदवार आधिकारिक भर्ती वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।"
+    "summary_en": "Indo-Tibetan Border Police Force invites online applications for 126 Constable General Duty posts under Sports Quota 2025. Eligible candidates can apply online from 3rd October 2026 to 1st November 2026.",
+    "summary_hi": "भारत-तिब्बत सीमा पुलिस बल ने खेल कोटा 2025 के तहत कांस्टेबल सामान्य ड्यूटी के 126 पदों पर भर्ती के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 3 अक्टूबर 2026 से 1 नवंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Male 03, Female 02",
+        "detail_hi": "पुरुष 03, महिला 02",
+        "post_en": "Constable (General Duty) - Athletics",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - एथलेटिक्स",
+        "total": "05"
+      },
+      {
+        "detail_en": "Male 02, Female 02",
+        "detail_hi": "पुरुष 02, महिला 02",
+        "post_en": "Constable (General Duty) - Aquatic",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - तैराकी",
+        "total": "04"
+      },
+      {
+        "detail_en": "Male 01, Female 04",
+        "detail_hi": "पुरुष 01, महिला 04",
+        "post_en": "Constable (General Duty) - Archery",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - तीरंदाजी",
+        "total": "05"
+      },
+      {
+        "detail_en": "Male 03, Female 03",
+        "detail_hi": "पुरुष 03, महिला 03",
+        "post_en": "Constable (General Duty) - Badminton",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - बैडमिंटन",
+        "total": "06"
+      },
+      {
+        "detail_en": "Male 03, Female 00",
+        "detail_hi": "पुरुष 03, महिला 00",
+        "post_en": "Constable (General Duty) - Basketball",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - बास्केटबॉल",
+        "total": "03"
+      },
+      {
+        "detail_en": "Male 05, Female 04",
+        "detail_hi": "पुरुष 05, महिला 04",
+        "post_en": "Constable (General Duty) - Boxing",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - मुक्केबाजी",
+        "total": "09"
+      },
+      {
+        "detail_en": "Male 01, Female 00",
+        "detail_hi": "पुरुष 01, महिला 00",
+        "post_en": "Constable (General Duty) - Equestrian",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - घुड़सवारी",
+        "total": "01"
+      },
+      {
+        "detail_en": "Male 02, Female 00",
+        "detail_hi": "पुरुष 02, महिला 00",
+        "post_en": "Constable (General Duty) - Football",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - फुटबॉल",
+        "total": "02"
+      },
+      {
+        "detail_en": "Male 03, Female 03",
+        "detail_hi": "पुरुष 03, महिला 03",
+        "post_en": "Constable (General Duty) - Gymnastic",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - जिम्नास्टिक",
+        "total": "06"
+      },
+      {
+        "detail_en": "Male 03, Female 00",
+        "detail_hi": "पुरुष 03, महिला 00",
+        "post_en": "Constable (General Duty) - Handball",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - हैंडबॉल",
+        "total": "03"
+      },
+      {
+        "detail_en": "Male 04, Female 02",
+        "detail_hi": "पुरुष 04, महिला 02",
+        "post_en": "Constable (General Duty) - Ice Hockey",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - आइस हॉकी",
+        "total": "06"
+      },
+      {
+        "detail_en": "Male 03, Female 00",
+        "detail_hi": "पुरुष 03, महिला 00",
+        "post_en": "Constable (General Duty) - Hockey",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - हॉकी",
+        "total": "03"
+      },
+      {
+        "detail_en": "Male 04, Female 08",
+        "detail_hi": "पुरुष 04, महिला 08",
+        "post_en": "Constable (General Duty) - Judo",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - जूडो",
+        "total": "12"
+      },
+      {
+        "detail_en": "Male 01, Female 02",
+        "detail_hi": "पुरुष 01, महिला 02",
+        "post_en": "Constable (General Duty) - Kho-Kho",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - खो-खो",
+        "total": "03"
+      },
+      {
+        "detail_en": "Male 01, Female 03",
+        "detail_hi": "पुरुष 01, महिला 03",
+        "post_en": "Constable (General Duty) - Pencak Silat",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - पेंcak सिलाट",
+        "total": "04"
+      },
+      {
+        "detail_en": "Male 01, Female 00",
+        "detail_hi": "पुरुष 01, महिला 00",
+        "post_en": "Constable (General Duty) - Powerlifting",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - पावरलिफ्टिंग",
+        "total": "01"
+      },
+      {
+        "detail_en": "Male 04, Female 04",
+        "detail_hi": "पुरुष 04, महिला 04",
+        "post_en": "Constable (General Duty) - Ski",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - स्की",
+        "total": "08"
+      },
+      {
+        "detail_en": "Male 04, Female 04",
+        "detail_hi": "पुरुष 04, महिला 04",
+        "post_en": "Constable (General Duty) - Sports Shooting",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - शूटिंग",
+        "total": "08"
+      },
+      {
+        "detail_en": "Male 02, Female 00",
+        "detail_hi": "पुरुष 02, महिला 00",
+        "post_en": "Constable (General Duty) - Table Tennis",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - टेबल टेनिस",
+        "total": "02"
+      },
+      {
+        "detail_en": "Male 03, Female 04",
+        "detail_hi": "पुरुष 03, महिला 04",
+        "post_en": "Constable (General Duty) - Taekwondo",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - ताइक्वांडो",
+        "total": "07"
+      },
+      {
+        "detail_en": "Male 06, Female 00",
+        "detail_hi": "पुरुष 06, महिला 00",
+        "post_en": "Constable (General Duty) - Volleyball",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - वॉलीबॉल",
+        "total": "06"
+      },
+      {
+        "detail_en": "Male 04, Female 00",
+        "detail_hi": "पुरुष 04, महिला 00",
+        "post_en": "Constable (General Duty) - Weightlifting",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - वेटलिफ्टिंग",
+        "total": "04"
+      },
+      {
+        "detail_en": "Male 04, Female 01",
+        "detail_hi": "पुरुष 04, महिला 01",
+        "post_en": "Constable (General Duty) - Wrestling",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - कुश्ती",
+        "total": "05"
+      },
+      {
+        "detail_en": "Male 01, Female 02",
+        "detail_hi": "पुरुष 01, महिला 02",
+        "post_en": "Constable (General Duty) - Canoeing",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - केनोइंग",
+        "total": "03"
+      },
+      {
+        "detail_en": "Male 01, Female 02",
+        "detail_hi": "पुरुष 01, महिला 02",
+        "post_en": "Constable (General Duty) - Kayaking",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - क Kayaking",
+        "total": "03"
+      },
+      {
+        "detail_en": "Male 00, Female 01",
+        "detail_hi": "पुरुष 00, महिला 01",
+        "post_en": "Constable (General Duty) - Rowing",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - रोइंग",
+        "total": "01"
+      },
+      {
+        "detail_en": "Male 01, Female 01",
+        "detail_hi": "पुरुष 01, महिला 01",
+        "post_en": "Constable (General Duty) - MTB Cycling",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - एमटीबी साइकिलिंग",
+        "total": "02"
+      },
+      {
+        "detail_en": "Male 02, Female 02",
+        "detail_hi": "पुरुष 02, महिला 02",
+        "post_en": "Constable (General Duty) - Karate",
+        "post_hi": "कांस्टेबल (सामान्य ड्यूटी) - कराटे",
+        "total": "04"
+      }
+    ]
   },
   "pdf": {
     "bytes": 1097336,
