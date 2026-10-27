@@ -1,0 +1,55 @@
+{
+  "board_url": "https://rrb.indianrailways.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "CEN No. 04/2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "CEN No. 04/2026"
+    },
+    "apply_or_official_url": {
+      "evidence": "ेलवे भती बोर्ड /RAILWAY RECRUITMENT BOARDS वेबसाइट/Website: https://rrb.indianrailways.gov.in Notice on postponement of CBT-I examination at Srikakulam, Visakhapatnam, Rajah",
+      "source": "rule",
+      "value": "https://rrb.indianrailways.gov.in"
+    },
+    "apply_url": {
+      "evidence": "https://rrb.indianrailways.gov.in",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://rrb.indianrailways.gov.in"
+    },
+    "exam_date": {
+      "evidence": "CBT-I scheduled on 28.10.2026 at all the centres in Srikakulam",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-10-28"
+    },
+    "post_names": {
+      "evidence": "Recruitment for Various posts of Junior Engineer, Depot Material Superintendent and Chemical & Metallurgical Assistant",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Junior Engineer",
+        "Depot Material Superintendent",
+        "Chemical & Metallurgical Assistant"
+      ]
+    }
+  },
+  "first_seen": "2026-10-27T14:46:52+00:00",
+  "id": "6c3d7a23dd39",
+  "kind": "notification",
+  "org": "RRB",
+  "pdf": {
+    "bytes": 586525,
+    "pages": 1,
+    "sha256": "ac4b22aa03ce45814b97c3b71cf0dee8aaa927e5ee79c0be549bc17f93873a7e",
+    "text_kind": "text"
+  },
+  "source_id": "rrb-unified",
+  "status": "pending_review",
+  "title": "RRB CEN 04/2026: Notice postponement of CBT-I CEN-04-2026 JEs English",
+  "url": "https://rrb.indianrailways.gov.in/-/image/1793110990951Notice_postponement_of_CBT-I_CEN-04-2026_JEs_English.pdf/examsDocuments"
+}
