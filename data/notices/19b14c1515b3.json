@@ -29,76 +29,183 @@
   "notice_date": "2026-10-23",
   "org": "RSSB Rajasthan",
   "page": {
+    "after_en": [
+      "Final appointment orders will be issued by the competent authority after successful completion and verification of documents."
+    ],
+    "after_hi": [
+      "दस्तावेजों के सफल सत्यापन के बाद सक्षम प्राधिकारी द्वारा अंतिम नियुक्ति आदेश जारी किए जाएंगे।"
+    ],
     "age": [
       {
-        "label_en": "Age calculation as on",
-        "label_hi": "आयु की गणना इस तिथि के अनुसार",
+        "label_en": "As on date",
+        "label_hi": "आयु की गणना तिथि",
         "value_en": "01 Jan 2026",
-        "value_hi": "01 जनवरी 2026"
+        "value_hi": "01 जन 2026"
       }
     ],
     "apply_start": null,
-    "apply_url": null,
+    "apply_url": "https://rssb.rajasthan.gov.in/",
+    "changes": [],
     "changes_from_notes": "",
-    "conducted_by_en": "Rajasthan Subordinate and Ministerial Services Selection Board (RSSB)",
-    "conducted_by_hi": "राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी)",
+    "checklist_en": [
+      "Download and fill two sets of the Detailed Scrutiny Form.",
+      "Arrange all original certificates along with self-attested photocopies in two separate files.",
+      "Attach required affidavits, character certificates, and handwritten samples.",
+      "Carry valid photo ID, e-Aadhaar with QR code, and passport-size photographs to the venue on time."
+    ],
+    "checklist_hi": [
+      "विस्तृत संवीक्षा प्रपत्र की दो प्रतियां डाउनलोड करें और भरें।",
+      "सभी मूल प्रमाण पत्रों को स्व-प्रमाणित फोटो प्रतियों के साथ दो अलग-अलग फाइलों में व्यवस्थित करें।",
+      "आवश्यक शपथ पत्र, चरित्र प्रमाण पत्र और हस्तलिखित नमूना संलग्न करें।",
+      "वैध फोटो आईडी, क्यूआर कोड वाला ई-आधार और पासपोर्ट आकार के फोटो समय पर केंद्र पर लेकर जाएं।"
+    ],
+    "conducted_by_en": "Rajasthan Staff Selection Board (RSSB)",
+    "conducted_by_hi": "राजस्थान कर्मचारी चयन बोर्ड (RSSB)",
     "dates": [
       {
-        "label_en": "Notice Date",
-        "label_hi": "सूचना दिनांक",
+        "label_en": "Original Advertisement Date",
+        "label_hi": "मूल विज्ञापन तिथि",
+        "value_en": "12 Dec 2024",
+        "value_hi": "12 दिसं 2024"
+      },
+      {
+        "label_en": "Notice Issuance Date",
+        "label_hi": "सूचना जारी होने की तिथि",
         "value_en": "23 Oct 2026",
-        "value_hi": "23 अक्टूबर 2026"
+        "value_hi": "23 अक्तू 2026"
       }
+    ],
+    "documents_en": [
+      "Detailed Form Cum Scrutiny Form (Two sets)",
+      "Secondary mark sheet and certificate for date of birth verification",
+      "Complete educational mark sheets and certificates",
+      "Bonafide resident certificate (Special TSP resident certificate if applicable)",
+      "Category certificate (SC, ST, OBC, MBC, EWS, Sahariya) issued by the last date of online application",
+      "Handwritten sample sheet in Hindi and English",
+      "Two passport-size photographs and self-attested photo ID (Aadhaar, Voter ID, Driving Licence, Passport)",
+      "E-Aadhaar card containing QR code",
+      "Character certificates (Two from different Gazetted Officers and one from the last attended educational institution)",
+      "Marriage certificate and affidavit regarding dowry/no-dowry and children (if applicable)",
+      "Widow/Divorced documents and self-declarations (if applicable)",
+      "Disability certificate from a competent medical board (if applicable)",
+      "Sports certificates from competent authorities (if applicable)",
+      "Ex-servicemen discharge book/noc/self-declaration (if applicable)",
+      "Notarized affidavit for self-verification of documents and non-involvement in criminal cases"
+    ],
+    "documents_hi": [
+      "विस्तृत संवीक्षा प्रपत्र (दो सेट)",
+      "जन्मतिथि सत्यापन हेतु माध्यमिक अंकसूची एवं प्रमाण पत्र",
+      "समस्त शैक्षणिक अंकसूचियां एवं प्रमाण पत्र",
+      "मूल निवास प्रमाण पत्र (टीएसपी क्षेत्र होने पर विशेष मूल निवास प्रमाण पत्र)",
+      "ऑनलाइन आवेदन की अंतिम तिथि तक जारी श्रेणी प्रमाण पत्र (एससी, एसटी, ओबीसी, एमबीसी, ईडब्ल्यूएस, सहरिया)",
+      "हिंदी और अंग्रेजी में हस्तलिखित नमूना पत्र",
+      "दो पासपोर्ट साइज फोटो और स्व-प्रमाणित फोटो आईडी (आधार, वोटर आईडी, ड्राइविंग लाइसेंस, पासपोर्ट)",
+      "क्यूआर कोड युक्त ई-आधार कार्ड",
+      "चरित्र प्रमाण पत्र (दो अलग-अलग राजपत्रित अधिकारियों द्वारा और एक अंतिम शिक्षण संस्थान द्वारा)",
+      "विवाह प्रमाण पत्र और दहेज/संतान संबंधी घोषणा पत्र (यदि लागू हो)",
+      "विधवा/परित्यक्ता दस्तावेज और स्व-घोषणा पत्र (यदि लागू हो)",
+      "सक्षम मेडिकल बोर्ड से विकलांगता प्रमाण पत्र (यदि लागू हो)",
+      "सक्षम प्राधिकारी से खेल प्रमाण पत्र (यदि लागू हो)",
+      "भूतपूर्व सैनिक डिस्चार्ज बुक/एनओसी/स्व-घोषणा पत्र (यदि लागू हो)",
+      "दस्तावेजों के सत्यापन और आपराधिक मामलों में संलिप्त न होने संबंधी नोटरी सत्यापित शपथ पत्र"
     ],
     "eligibility": [
       {
         "label_en": "Educational Qualification",
         "label_hi": "शैक्षणिक योग्यता",
-        "value_en": "As per advertisement no. 19/2024 dated 12-12-2024",
-        "value_hi": "विज्ञापन संख्या 19/2024 दिनांक 12-12-2024 के अनुसार"
+        "value_en": "As per Fourth Class Employee Recruitment 2024 rules",
+        "value_hi": "चतुर्थ श्रेणी कर्मचारी भर्ती 2024 के नियमों के अनुसार"
+      },
+      {
+        "label_en": "Language & Culture",
+        "label_hi": "भाषा एवं संस्कृति",
+        "value_en": "Knowledge of Hindi written in Devanagari script and Rajasthani culture",
+        "value_hi": "देवनागरी लिपि में लिखित हिंदी तथा राजस्थानी संस्कृति का ज्ञान"
       }
     ],
     "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is the final verification stage where provisionally selected candidates must present their original educational, category, and identity documents to prove their eligibility for appointment.",
+        "a_hi": "यह अंतिम सत्यापन चरण है जहां अनंतिम रूप से चयनित अभ्यर्थियों को नियुक्ति के लिए अपनी पात्रता साबित करने हेतु अपने मूल शैक्षणिक, श्रेणी और पहचान दस्तावेज प्रस्तुत करने होते हैं।",
+        "q_en": "What is RSSB Fourth Class Employee Document Verification?",
+        "q_hi": "राजस्थान कर्मचारी चयन बोर्ड चतुर्थ श्रेणी कर्मचारी दस्तावेज सत्यापन क्या है?"
+      }
+    ],
     "extra": [
       {
-        "label_en": "Required Fee for Offline Form",
-        "label_hi": "ऑफ़लाइन फॉर्म के लिए आवश्यक शुल्क",
+        "label_en": "Offline Form Fee (if not filled online)",
+        "label_hi": "ऑफ़लाइन फॉर्म शुल्क (यदि ऑनलाइन नहीं भरा गया)",
         "value_en": "₹100 Postal Order in favor of Secretary, RSSB Jaipur",
-        "value_hi": "सचिव, राजस्थान कर्मचारी चयन बोर्ड, जयपुर के नाम ₹100 का पोस्टल ऑर्डर"
+        "value_hi": "₹100 का पोस्टल ऑर्डर (सचिव, राजस्थान कर्मचारी चयन बोर्ड, जयपुर के नाम)"
       }
     ],
     "faq": [
       {
-        "a_en": "Candidates need to bring two sets of the detailed scrutiny form, educational mark sheets, secondary certificate for date of birth, caste certificate, domicile, character certificates, ID proof, photographs, and other category-specific documents.",
-        "a_hi": "अभ्यर्थियों को विस्तृत जांच फॉर्म की दो प्रतियां, शैक्षणिक अंक तालिकाएं, जन्म तिथि के लिए माध्यमिक प्रमाण पत्र, जाति प्रमाण पत्र, मूल निवास, चरित्र प्रमाण पत्र, पहचान पत्र, फोटोग्राफ और अन्य श्रेणी-विशेष दस्तावेज लाने होंगे।",
-        "q_en": "What documents are required for RSSB Fourth Class Employee DV 2024?",
-        "q_hi": "आरएसएसबी चतुर्थ श्रेणी कर्मचारी दस्तावेज सत्यापन 2024 के लिए कौन से दस्तावेज आवश्यक हैं?"
+        "a_en": "Candidates must bring two sets of detailed scrutiny forms, educational mark sheets, date of birth proof, caste certificate, bonafide resident certificate, character certificates, ID proof, and self-attested photocopies of all supporting documents.",
+        "a_hi": "अभ्यर्थियों को संवीक्षा प्रपत्र के दो सेट, शैक्षणिक अंकसूचियां, जन्मतिथि प्रमाण, जाति प्रमाण पत्र, मूल निवास प्रमाण पत्र, चरित्र प्रमाण पत्र, आईडी प्रूफ और सभी सहायक दस्तावेजों की स्व-प्रमाणित फोटो प्रतियां लानी होंगी।",
+        "q_en": "What documents are required for RSSB Fourth Class Employee Document Verification?",
+        "q_hi": "राजस्थान चतुर्थ श्रेणी कर्मचारी दस्तावेज सत्यापन के लिए कौन से दस्तावेज आवश्यक हैं?"
       },
       {
-        "a_en": "If the detailed scrutiny form was not filled online due to unavoidable reasons, candidates must submit a postal order of ₹100 in favor of the Secretary, RSSB Jaipur.",
-        "a_hi": "यदि अपरिहार्य कारणों से विस्तृत संवीक्षा फॉर्म ऑनलाइन नहीं भरा गया है, तो सचिव, आरएसएसबी जयपुर के पक्ष में ₹100 का पोस्टल ऑर्डर जमा करना होगा।",
-        "q_en": "What is the fee for offline scrutiny form submission?",
-        "q_hi": "ऑफ़लाइन संवीक्षा फॉर्म जमा करने के लिए कितना शुल्क है?"
+        "a_en": "If you have not filled it online due to unavoidable reasons, you can download the form from the RSSB website, fill it manually, and submit it along with a ₹100 postal order in favor of the Secretary, RSSB Jaipur, explaining the reason.",
+        "a_hi": "यदि आपने अपरिहार्य कारणों से इसे ऑनलाइन नहीं भरा है, तो आप इसे बोर्ड की वेबसाइट से डाउनलोड कर सकते हैं, मैन्युअल रूप से भरकर सचिव, राजस्थान कर्मचारी चयन बोर्ड, जयपुर के पक्ष में ₹100 के पोस्टल ऑर्डर और कारण सहित जमा कर सकते हैं।",
+        "q_en": "What should I do if I have not filled the online Detailed Scrutiny Form?",
+        "q_hi": "यदि मैंने ऑनलाइन विस्तृत संवीक्षा प्रपत्र नहीं भरा है तो मुझे क्या करना चाहिए?"
+      },
+      {
+        "a_en": "Candidates must prepare and submit two complete sets of documents along with the detailed scrutiny forms.",
+        "a_hi": "अभ्यर्थियों को विस्तृत संवीक्षा प्रपत्र के साथ दस्तावेजों के दो पूरे सेट तैयार करके जमा करने होंगे।",
+        "q_en": "How many sets of documents need to be submitted?",
+        "q_hi": "दस्तावेजों के कितने सेट जमा करने होंगे?"
+      },
+      {
+        "a_en": "Caste certificates should ideally be issued by the last date of the online application. If issued later, an affidavit must be submitted.",
+        "a_hi": "जाति प्रमाण पत्र ऑनलाइन आवेदन की अंतिम तिथि तक जारी किया जाना चाहिए। यदि बाद में जारी किया गया है, तो एक शपथ पत्र प्रस्तुत करना होगा।",
+        "q_en": "Is a caste certificate issued after the last date of the online application valid?",
+        "q_hi": "क्या ऑनलाइन आवेदन की अंतिम तिथि के बाद जारी जाति प्रमाण पत्र मान्य है?"
       }
     ],
     "fees": [],
     "h1_en": "RSSB Fourth Class Employee 2024 DV Schedule & Instructions",
     "h1_hi": "राजस्थान चतुर्थ श्रेणी कर्मचारी 2024 दस्तावेज सत्यापन शेड्यूल और निर्देश",
     "how_en": [
-      "Download and fill the Detailed Form Cum Scrutiny Form from the RSSB website if not already filled online.",
-      "Attach self-attested copies of all educational mark sheets, certificates, caste certificates, domicile, and other required documents in two sets.",
-      "Bring the physical copies, postal order of ₹100 (if offline form used), ID proof, and 2 passport-size photographs to the designated office on the scheduled date."
+      "Download the Detailed Form Cum Scrutiny Form from the RSSB website if not already filled online.",
+      "Fill out the two sets of scrutiny forms and attach self-attested photocopies of all required educational, category, and residential documents in the specified order.",
+      "Attach two passport-size photographs, a self-attested copy of e-Aadhaar with QR code, and valid photo ID.",
+      "Present yourself in person at the designated office on the scheduled date and time with all original documents and two sets of files."
     ],
     "how_hi": [
-      "यदि ऑनलाइन विस्तृत आवेदन सह परिरीक्षा फॉर्म नहीं भरा गया है, तो इसे बोर्ड की वेबसाइट से डाउनलोड कर भरें।",
-      "सभी शैक्षणिक अंक तालिकाओं, प्रमाण पत्रों, जाति प्रमाण पत्र, मूल निवास और अन्य आवश्यक दस्तावेजों की स्व-प्रमाणित प्रतियों को दो सेट में संलग्न करें।",
-      "निर्धारित तिथि पर सभी मूल दस्तावेजों, दो प्रतियों, ₹100 के पोस्टल ऑर्डर (यदि ऑफलाइन फॉर्म भरा हो), पहचान पत्र और 2 पासपोर्ट साइज फोटो के साथ कार्यालय में उपस्थित हों।"
+      "यदि ऑनलाइन विस्तृत संवीक्षा प्रपत्र नहीं भरा गया है, तो इसे बोर्ड की वेबसाइट से डाउनलोड करें।",
+      "संवीक्षा प्रपत्र की दो प्रतियां भरें और निर्धारित क्रम में सभी आवश्यक शैक्षणिक, श्रेणी और मूल निवास दस्तावेजों की स्व-प्रमाणित छायाप्रतियां संलग्न करें।",
+      "दो पासपोर्ट साइज फोटोग्राफ, क्यूआर कोड युक्त ई-आधार की स्व-प्रमाणित प्रति और वैध फोटो पहचान पत्र साथ रखें।",
+      "निर्धारित तिथि और समय पर सभी मूल दस्तावेजों और दो सेट फाइलों के साथ व्यक्तिगत रूप से कार्यालय में उपस्थित हों।"
     ],
-    "intro_en": "The Rajasthan Subordinate and Ministerial Services Selection Board (RSSB) has released the document verification schedule and instructions for provisionally selected candidates of the Fourth Class Employee Recruitment 2024. Candidates must bring their detailed scrutiny form in two sets along with self-attested copies of all required educational, caste, domicile, and other certificates as specified in the notice. Failing to appear on the scheduled date and time will result in cancellation of candidature.",
-    "intro_hi": "राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी) ने चतुर्थ श्रेणी कर्मचारी भर्ती 2024 के अनंतिम रूप से चयनित अभ्यर्थियों के लिए दस्तावेज सत्यापन का शेड्यूल और आवश्यक निर्देश जारी कर दिए हैं। अभ्यर्थियों को विज्ञापन में दिए गए निर्देशों के अनुसार अपने विस्तृत आवेदन सह परिरीक्षा फॉर्म की दो प्रतियों के साथ सभी मूल दस्तावेज और उनकी स्व-प्रमाणित प्रतियां लेकर उपस्थित होना होगा। निर्धारित तिथि और समय पर उपस्थित न होने पर उम्मीदवारी रद्द कर दी जाएगी।",
+    "intro_en": "The Office of the Joint Director, School Education, Jaipur Division has released the instructions and schedule for the document verification of provisionally selected candidates for the Fourth Class Employee Direct Recruitment 2024. Candidates who are in the merit list must appear in person at the office with two sets of detailed scrutiny forms and self-attested copies of all required original documents. All candidates should carefully read the notification and guidelines before attending the verification process.",
+    "intro_hi": "संयुक्त निदेशक, स्कूल शिक्षा, जयपुर संभाग कार्यालय द्वारा चतुर्थ श्रेणी कर्मचारी सीधी भर्ती 2024 के अंतर्गत अनंतिम रूप से चयनित अभ्यर्थियों के दस्तावेज सत्यापन हेतु निर्देश एवं शेड्यूल जारी किए गए हैं। चयनित सूची में शामिल अभ्यर्थियों को सभी आवश्यक मूल दस्तावेजों, प्रमाण पत्रों और विस्तृत संवीक्षा प्रपत्र की दो स्व-प्रमाणित प्रतियों के साथ निर्धारित कार्यालय में उपस्थित होना होगा। अभ्यर्थियों को सलाह दी जाती है कि वे सत्यापन प्रक्रिया में भाग लेने से पहले दिशा-निर्देशों का अध्ययन अवश्य करें।",
     "last_date": null,
+    "mistakes_en": [
+      "Failing to bring two complete sets of documents arranged in the specified order with page numbers",
+      "Submitting category certificates issued after the last date of online application without the required affidavit",
+      "Mismatch between photographs or signatures uploaded in the online form and those presented during verification",
+      "Failing to submit the handwritten sample matching the prescribed format"
+    ],
+    "mistakes_hi": [
+      "निर्दिष्ट क्रम में पृष्ठ संख्या के साथ व्यवस्थित दस्तावेजों के दो पूरे सेट न लाना",
+      "आवश्यक शपथ पत्र के बिना ऑनलाइन आवेदन की अंतिम तिथि के बाद जारी श्रेणी प्रमाण पत्र प्रस्तुत करना",
+      "ऑनलाइन फॉर्म में अपलोड किए गए फोटो या हस्ताक्षर और सत्यापन के दौरान प्रस्तुत किए गए फोटो या हस्ताक्षर में अंतर होना",
+      "निर्धारित प्रारूप से मेल खाने वाला हस्तलिखित नमूना प्रस्तुत करने में विफल रहना"
+    ],
+    "not_en": [
+      "Candidates who fail to appear on the scheduled date and time for document verification"
+    ],
+    "not_hi": [
+      "वे अभ्यर्थी जो दस्तावेज सत्यापन के लिए निर्धारित तिथि और समय पर उपस्थित होने में असफल रहते हैं"
+    ],
     "notice_date": "2026-10-23",
     "official_site": "https://rssb.rajasthan.gov.in/",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
@@ -108,38 +215,59 @@
         "value_hi": "चतुर्थ श्रेणी कर्मचारी"
       },
       {
+        "label_en": "Recruitment Year",
+        "label_hi": "भर्ती वर्ष",
+        "value_en": "2024",
+        "value_hi": "2024"
+      },
+      {
         "label_en": "Advertisement Number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "19/2024",
         "value_hi": "19/2024"
       },
       {
-        "label_en": "Selection Process",
-        "label_hi": "चयन प्रक्रिया",
-        "value_en": "Document Verification",
-        "value_hi": "दस्तावेज सत्यापन"
+        "label_en": "Stage",
+        "label_hi": "चरण",
+        "value_en": "Document Verification (Scrutiny)",
+        "value_hi": "दस्तावेज सत्यापन (संवीक्षा)"
       }
     ],
+    "salary": [],
     "selection_en": [
-      "Document Verification",
-      "Scrutiny of Detailed Application Form"
+      "Written Examination",
+      "Document Verification and Scrutiny of Records"
     ],
     "selection_hi": [
-      "दस्तावेज सत्यापन",
-      "विस्तृत आवेदन पत्र की जांच"
+      "लिखित परीक्षा",
+      "दस्तावेज सत्यापन और अभिलेखों की संवीक्षा"
     ],
+    "share_card": {
+      "headline_en": "DV Schedule & Notice",
+      "headline_hi": "दस्तावेज सत्यापन शेड्यूल",
+      "kind": "sched",
+      "line_en": "Fourth Class Employee 2024",
+      "line_hi": "चतुर्थ श्रेणी कर्मचारी 2024",
+      "posts": null
+    },
     "status_en": "Document verification schedule and instructions released",
     "status_hi": "दस्तावेज सत्यापन शेड्यूल और निर्देश जारी",
-    "summary_en": "Schedule and instructions for document verification of provisionally selected candidates for the Fourth Class Employee Recruitment 2024 by RSSB.",
-    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड द्वारा चतुर्थ श्रेणी कर्मचारी भर्ती 2024 के अनंतिम रूप से चयनित अभ्यर्थियों के दस्तावेज सत्यापन हेतु शेड्यूल और निर्देश जारी किए गए हैं।",
+    "summary_en": "Document verification schedule and instructions for provisionally selected candidates of Fourth Class Employee Recruitment 2024 by RSSB. Candidates must submit the detailed scrutiny form in two sets along with self-attested copies of all original documents and certificates.",
+    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड द्वारा चतुर्थ श्रेणी कर्मचारी भर्ती 2024 के अनंतिम रूप से चयनित अभ्यर्थियों के दस्तावेज सत्यापन हेतु शेड्यूल और निर्देश जारी किए गए हैं। अभ्यर्थियों को सभी मूल दस्तावेजों और प्रमाण पत्रों की स्व-प्रमाणित प्रतियों के साथ विस्तृत संवीक्षा प्रपत्र की दो प्रतियां जमा करनी होंगी।",
     "vacancies": [
       {
-        "detail_en": "Provisionally selected candidates for document verification",
-        "detail_hi": "दस्तावेज सत्यापन हेतु अनंतिम रूप से चयनित अभ्यर्थी",
+        "detail_en": "Refer to official notification for category-wise break-up",
+        "detail_hi": "श्रेणी-वार विवरण के लिए आधिकारिक अधिसूचना देखें",
         "post_en": "Fourth Class Employee",
         "post_hi": "चतुर्थ श्रेणी कर्मचारी",
         "total": null
       }
+    ],
+    "who_en": [
+      "Candidates provisionally selected for the Fourth Class Employee Recruitment 2024"
+    ],
+    "who_hi": [
+      "चतुर्थ श्रेणी कर्मचारी भर्ती 2024 के लिए अनंतिम रूप से चयनित अभ्यर्थी"
     ]
   },
   "pdf": {

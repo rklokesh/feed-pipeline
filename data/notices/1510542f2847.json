@@ -11,7 +11,7 @@
     "skip_reason": "",
     "summary_en": "NABARD has released the preliminary examination cut-off marks for the Development Assistant recruitment 2026. Candidates can check the regional and category-wise cut-off scores.",
     "summary_hi": "नाबार्ड ने विकास सहायक भर्ती 2026 के लिए प्रारंभिक परीक्षा के कट-ऑफ अंक जारी कर दिए हैं। उम्मीदवार क्षेत्रीय और श्रेणीवार कट-ऑफ अंक देख सकते हैं।",
-    "title_en": "NABARD Development Assistant Prelims Cut-off 2026",
+    "title_en": "NABARD Development Assistant Prelims Cut-Off 2026",
     "title_hi": "नाबार्ड विकास सहायक प्रारंभिक परीक्षा कट-ऑफ 2026",
     "type": "Result",
     "vacancies": null
@@ -59,90 +59,162 @@
   "notice_date": "2026-10-23",
   "org": "NABARD",
   "page": {
+    "after_en": [
+      "Candidates who clear the preliminary examination cut-off will be eligible for the next phase of the recruitment process."
+    ],
+    "after_hi": [
+      "प्रारंभिक परीक्षा कट-ऑफ पास करने वाले उम्मीदवार भर्ती प्रक्रिया के अगले चरण के लिए पात्र होंगे।"
+    ],
     "age": [],
     "apply_start": null,
     "apply_url": null,
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Check regional office category-wise cut-off",
+      "Verify objective test section-wise cut-off scores"
+    ],
+    "checklist_hi": [
+      "क्षेत्रीय कार्यालय श्रेणी-वार कट-ऑफ की जांच करें",
+      "वस्तुनिष्ठ परीक्षण अनुभाग-वार कट-ऑफ अंकों का सत्यापन करें"
+    ],
     "conducted_by_en": "National Bank for Agriculture and Rural Development (NABARD)",
     "conducted_by_hi": "राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड)",
     "dates": [
       {
-        "label_en": "Exam date",
-        "label_hi": "परीक्षा की तिथि",
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
         "value_en": "21 Feb 2026",
         "value_hi": "21 फरवरी 2026"
       }
     ],
+    "documents_en": [],
+    "documents_hi": [],
     "eligibility": [],
     "exam_date": "2026-02-21",
+    "exam_pattern": [
+      {
+        "marks": "40",
+        "part_en": "Test of English Language (EL)",
+        "part_hi": "अंग्रेजी भाषा परीक्षण",
+        "questions": "",
+        "time": ""
+      },
+      {
+        "marks": "30",
+        "part_en": "Test of Numerical Ability (NA)",
+        "part_hi": "संख्यात्मक क्षमता परीक्षण",
+        "questions": "",
+        "time": ""
+      },
+      {
+        "marks": "30",
+        "part_en": "Test of Reasoning (RE)",
+        "part_hi": "तर्क परीक्षण",
+        "questions": "",
+        "time": ""
+      }
+    ],
+    "explain": [
+      {
+        "a_en": "It is the minimum qualifying score set by NABARD for the Phase-I preliminary examination, categorized by regions and candidate categories, required to clear this stage of the recruitment process.",
+        "a_hi": "यह भर्ती प्रक्रिया के इस चरण को पार करने के लिए आवश्यक क्षेत्रों और उम्मीदवार श्रेणियों द्वारा वर्गीकृत, चरण-I प्रारंभिक परीक्षा के लिए नाबार्ड द्वारा निर्धारित न्यूनतम अर्हक स्कोर है।",
+        "q_en": "What is the NABARD Development Assistant Prelims Cut-Off?",
+        "q_hi": "नाबार्ड विकास सहायक प्रारंभिक परीक्षा कट-ऑफ क्या है?"
+      }
+    ],
     "extra": [
       {
-        "label_en": "Objective Test Tests",
-        "label_hi": "वस्तुनिष्ठ परीक्षा विषय",
-        "value_en": "Test of English Language (EL), Numerical Ability (NA), and Reasoning (RE)",
-        "value_hi": "अंग्रेजी भाषा (EL), संख्यात्मक क्षमता (NA), और तर्कशक्ति (RE) की परीक्षा"
+        "label_en": "Objective Test Cut-offs (SC/ST/OBC/PWBD/EXS/DISEXS)",
+        "label_hi": "वस्तुनिष्ठ परीक्षण कट-ऑफ (एससी/एसटी/ओबीसी/पीडब्ल्यूबीडी/ईएक्सएस/डीआईएक्सएस)",
+        "value_en": "Test of English Language: 11.50, Test of Numerical Ability: 13.00, Test of Reasoning: 11.25",
+        "value_hi": "अंग्रेजी भाषा परीक्षण: 11.50, संख्यात्मक क्षमता परीक्षण: 13.00, तर्क परीक्षण: 11.25"
+      },
+      {
+        "label_en": "Objective Test Cut-offs (EWS/UR)",
+        "label_hi": "वस्तुनिष्ठ परीक्षण कट-ऑफ (ईडब्ल्यूएस/यूआर)",
+        "value_en": "Test of English Language: 15.75, Test of Numerical Ability: 17.50, Test of Reasoning: 16.00",
+        "value_hi": "अंग्रेजी भाषा परीक्षण: 15.75, संख्यात्मक क्षमता परीक्षण: 17.50, तर्क परीक्षण: 16.00"
       }
     ],
     "faq": [
       {
-        "a_en": "The preliminary examination was conducted on 21 February 2026.",
-        "a_hi": "प्रारंभिक परीक्षा 21 फरवरी 2026 को आयोजित की गई थी।",
-        "q_en": "When was the NABARD Development Assistant Prelims exam 2026 conducted?",
-        "q_hi": "नाबार्ड विकास सहायक प्रारंभिक परीक्षा 2026 कब आयोजित की गई थी?"
+        "a_en": "The preliminary examination was conducted on 21.02.2026.",
+        "a_hi": "प्रारंभिक परीक्षा 21.02.2026 को आयोजित की गई थी।",
+        "q_en": "When was the NABARD Development Assistant Prelims exam conducted?",
+        "q_hi": "नाबार्ड विकास सहायक प्रारंभिक परीक्षा कब आयोजित की गई थी?"
       },
       {
-        "a_en": "You can check the regional office and category-wise cut-off marks on the official NABARD website.",
-        "a_hi": "आप आधिकारिक नाबार्ड वेबसाइट पर क्षेत्रीय कार्यालय और श्रेणी-वार कट-ऑफ अंक देख सकते हैं।",
-        "q_en": "Where can I check the NABARD Development Assistant cut-off marks?",
-        "q_hi": "मैं नाबार्ड विकास सहायक कट-ऑफ अंक कहाँ देख सकता हूँ?"
+        "a_en": "Regional office-wise and category-wise cut-off marks are available in the official NABARD cut-off notification.",
+        "a_hi": "क्षेत्रीय कार्यालय-वार और श्रेणी-वार कट-ऑफ अंक आधिकारिक नाबार्ड कट-ऑफ अधिसूचना में उपलब्ध हैं।",
+        "q_en": "Where can I check the regional office cut-offs?",
+        "q_hi": "मैं क्षेत्रीय कार्यालय के कट-ऑफ कहां देख सकता हूं?"
       }
     ],
     "fees": [],
-    "h1_en": "NABARD Development Assistant Prelims Cut-off 2026",
+    "h1_en": "NABARD Development Assistant Prelims Cut-Off 2026",
     "h1_hi": "नाबार्ड विकास सहायक प्रारंभिक परीक्षा कट-ऑफ 2026",
     "how_en": [
-      "Go to the official NABARD careers website.",
-      "Click on the Development Assistant 2026 preliminary examination cut-off notice link.",
-      "Check the regional office and category-wise cut-off marks in the PDF."
+      "Visit the official NABARD website career section.",
+      "Open the Development Assistant 2026 preliminary examination cut-off notification.",
+      "Check your regional office and category cut-off marks from the table."
     ],
     "how_hi": [
-      "आधिकारिक नाबार्ड करियर वेबसाइट पर जाएं।",
-      "विकास सहायक 2026 प्रारंभिक परीक्षा कट-ऑफ सूचना लिंक पर क्लिक करें।",
-      "पीडीएफ में क्षेत्रीय कार्यालय और श्रेणी-वार कट-ऑफ अंक देखें।"
+      "नाबार्ड की आधिकारिक वेबसाइट के करियर अनुभाग पर जाएं।",
+      "विकास सहायक 2026 प्रारंभिक परीक्षा कट-ऑफ अधिसूचना खोलें।",
+      "तालिका से अपने क्षेत्रीय कार्यालय और श्रेणी के कट-ऑफ अंक देखें।"
     ],
-    "intro_en": "The National Bank for Agriculture and Rural Development (NABARD) has published the regional office-wise and category-wise preliminary examination cut-off marks for the Development Assistant recruitment 2026. The Phase I preliminary examination was conducted on 21 February 2026. Candidates can check the official cut-off list to know the minimum qualifying marks required for different categories and regional offices.",
-    "intro_hi": "राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड) ने विकास सहायक भर्ती 2026 के लिए क्षेत्रीय कार्यालय-वार और श्रेणी-वार प्रारंभिक परीक्षा के कट-ऑफ अंक प्रकाशित किए हैं। चरण I प्रारंभिक परीक्षा 21 फरवरी 2026 को आयोजित की गई थी। उम्मीदवार विभिन्न श्रेणियों और क्षेत्रीय कार्यालयों के लिए आवश्यक न्यूनतम अर्हक अंक जानने के लिए आधिकारिक कट-ऑफ सूची देख सकते हैं।",
+    "intro_en": "National Bank for Agriculture and Rural Development (NABARD) has released the Phase-I preliminary examination cut-off marks for the Development Assistant recruitment 2026. The preliminary exam was conducted on 21.02.2026. Candidates who appeared for the exam can now check the regional office-wise and category-wise cut-off scores applied on the total marks as well as the objective tests.",
+    "intro_hi": "राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड) ने विकास सहायक भर्ती 2026 के लिए चरण-I प्रारंभिक परीक्षा के कट-ऑफ अंक जारी कर दिए हैं। प्रारंभिक परीक्षा 21.02.2026 को आयोजित की गई थी। परीक्षा में शामिल होने वाले उम्मीदवार अब कुल अंकों और वस्तुनिष्ठ परीक्षणों पर लागू क्षेत्रीय कार्यालय-वार और श्रेणी-वार कट-ऑफ अंक देख सकते हैं।",
     "last_date": null,
+    "mistakes_en": [],
+    "mistakes_hi": [],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": null,
     "official_site": "https://www.nabard.org",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Post name",
-        "label_hi": "पद का नाम",
+        "label_en": "Posts",
+        "label_hi": "पद",
         "value_en": "Development Assistant",
         "value_hi": "विकास सहायक"
       },
       {
-        "label_en": "Exam date",
-        "label_hi": "परीक्षा की तिथि",
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
         "value_en": "21 Feb 2026",
         "value_hi": "21 फरवरी 2026"
       }
     ],
+    "salary": [],
     "selection_en": [
-      "Phase I (Preliminary Examination)",
-      "Phase II (Main Examination)"
+      "Preliminary Examination (Phase-I)"
     ],
     "selection_hi": [
-      "चरण I (प्र प्रारंभिक परीक्षा)",
-      "चरण II (मुख्य परीक्षा)"
+      "प्रारंभिक परीक्षा (चरण-I)"
     ],
-    "status_en": "Preliminary examination cut-off marks released",
-    "status_hi": "प्रारंभिक परीक्षा के कट-ऑफ अंक जारी किए गए",
-    "summary_en": "National Bank for Agriculture and Rural Development (NABARD) has released the preliminary examination cut-off marks for the Development Assistant recruitment 2026. Candidates who appeared for the exam held on 21 Feb 2026 can now check the regional and category-wise cut-off scores. Visit the official website to view the complete details.",
-    "summary_hi": "राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड) ने विकास सहायक भर्ती 2026 के लिए प्रारंभिक परीक्षा के कट-ऑफ अंक जारी कर दिए हैं। 21 फरवरी 2026 को आयोजित परीक्षा में शामिल होने वाले उम्मीदवार क्षेत्रीय और श्रेणीवार कट-ऑफ अंक देख सकते हैं। पूरी जानकारी देखने के लिए आधिकारिक वेबसाइट पर जाएं।",
-    "vacancies": []
+    "share_card": {
+      "headline_en": "Prelims Cut-Off 2026",
+      "headline_hi": "प्रारंभिक कट-ऑफ 2026",
+      "kind": "result",
+      "line_en": "Development Assistant",
+      "line_hi": "विकास सहायक",
+      "posts": null
+    },
+    "status_en": "Preliminary examination cut-off released",
+    "status_hi": "प्रारंभिक परीक्षा कट-ऑफ जारी",
+    "summary_en": "NABARD has released the Phase-I preliminary examination cut-off marks for the Development Assistant recruitment 2026. Candidates can check the regional office-wise and category-wise cut-off scores in the notice.",
+    "summary_hi": "नाबार्ड ने विकास सहायक भर्ती 2026 के लिए चरण-I प्रारंभिक परीक्षा के कट-ऑफ अंक जारी कर दिए हैं। उम्मीदवार नोटिस में क्षेत्रीय कार्यालय-वार और श्रेणी-वार कट-ऑफ अंक देख सकते हैं।",
+    "vacancies": [],
+    "who_en": [
+      "Candidates who appeared for the NABARD Development Assistant preliminary examination 2026."
+    ],
+    "who_hi": [
+      "नाबार्ड विकास सहायक प्रारंभिक परीक्षा 2026 में शामिल होने वाले उम्मीदवार।"
+    ]
   },
   "pdf": {
     "bytes": 101708,

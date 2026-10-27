@@ -112,9 +112,21 @@
   "id": "1b2185fb0dc8",
   "issue": 2,
   "kind": "notification",
-  "notice_date": "2026-08-11",
+  "notice_date": "2026-10-22",
   "org": "SBI",
   "page": {
+    "after_en": [
+      "Preliminary Exam",
+      "Main Exam",
+      "Local Language Test",
+      "Document Verification and Appointment"
+    ],
+    "after_hi": [
+      "प्रारंभिक परीक्षा",
+      "मुख्य परीक्षा",
+      "स्थानीय भाषा परीक्षण",
+      "दस्तावेज़ सत्यापन और नियुक्ति"
+    ],
     "age": [
       {
         "label_en": "Minimum age",
@@ -130,26 +142,37 @@
       },
       {
         "label_en": "As on date",
-        "label_hi": "इस तिथि के अनुसार",
-        "value_en": "01.04.2026",
-        "value_hi": "01.04.2026"
+        "label_hi": "आयु गणना तिथि",
+        "value_en": "01 Apr 2026",
+        "value_hi": "01 अप्रैल 2026"
       }
     ],
     "apply_start": "2026-08-11",
     "apply_url": "https://sbi.bank.in/web/careers/current-openings",
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Check eligibility and age limit",
+      "Keep scanned photo and signature ready",
+      "Verify local language requirement for the chosen State/UT"
+    ],
+    "checklist_hi": [
+      "योग्यता और आयु सीमा जांचें",
+      "स्कैन की गई फोटो और हस्ताक्षर तैयार रखें",
+      "चुने गए राज्य/केंद्र शासित प्रदेश के लिए स्थानीय भाषा की आवश्यकता सत्यापित करें"
+    ],
     "conducted_by_en": "State Bank of India (SBI)",
     "conducted_by_hi": "भारतीय स्टेट बैंक (एसबीआई)",
     "dates": [
       {
-        "label_en": "Online registration starts",
-        "label_hi": "ऑनलाइन पंजीकरण प्रारंभ",
+        "label_en": "Online application starts",
+        "label_hi": "ऑनलाइन आवेदन शुरू",
         "value_en": "11 Aug 2026",
         "value_hi": "11 अगस्त 2026"
       },
       {
-        "label_en": "Last date for online registration and fee",
-        "label_hi": "ऑनलाइन पंजीकरण और शुल्क की अंतिम तिथि",
+        "label_en": "Last date of registration and fee payment",
+        "label_hi": "पंजीकरण और शुल्क भुगतान की अंतिम तिथि",
         "value_en": "31 Aug 2026",
         "value_hi": "31 अगस्त 2026"
       },
@@ -166,69 +189,104 @@
         "value_hi": "नवंबर 2026 (संभावित)"
       }
     ],
+    "documents_en": [
+      "Graduation mark sheet and certificate",
+      "Category certificate (if applicable)",
+      "ID proof",
+      "Local language proof (10th/12th mark sheet if studied local language)"
+    ],
+    "documents_hi": [
+      "स्नातक अंक तालिका और प्रमाण पत्र",
+      "श्रेणी प्रमाण पत्र (यदि लागू हो)",
+      "पहचान प्रमाण",
+      "स्थानीय भाषा का प्रमाण (स्थानीय भाषा में पढ़ाई करने पर 10वीं/12वीं की अंक तालिका)"
+    ],
     "eligibility": [
       {
         "label_en": "Education",
         "label_hi": "शिक्षा",
-        "value_en": "Graduation in any discipline from a recognised University or any equivalent qualification recognised as such by Central Government.",
-        "value_hi": "मान्यता प्राप्त विश्वविद्यालय से किसी भी विषय में स्नातक या केंद्र सरकार द्वारा मान्यता प्राप्त समकक्ष योग्यता।"
+        "value_en": "Graduation in any discipline from a recognised University or equivalent.",
+        "value_hi": "मान्यता प्राप्त विश्वविद्यालय से किसी भी विषय में स्नातक या समकक्ष।"
       }
     ],
-    "exam_date": null,
-    "extra": [
+    "exam_date": "2026-09-01",
+    "exam_pattern": [],
+    "explain": [
       {
-        "label_en": "Language Requirement",
-        "label_hi": "भाषा आवश्यकता",
-        "value_en": "Candidates must be proficient in the specified opted local language of the State/UT they apply for.",
-        "value_hi": "उम्मीदवारों को उस राज्य/केंद्र शासित प्रदेश की निर्दिष्ट स्थानीय भाषा में पारंगत होना चाहिए जिसके लिए वे आवेदन करते हैं।"
+        "a_en": "SBI Junior Associate (Customer Support & Sales) is a clerical cadre post in the State Bank of India responsible for customer interaction, account opening, cash handling, and other banking operations.",
+        "a_hi": "एसबीआई जूनियर एसोसिएट (कस्टमर सपोर्ट एंड सेल्स) भारतीय स्टेट बैंक में एक लिपिक संवर्ग का पद है जो ग्राहक संपर्क, खाता खोलना, नकद हैंडलिंग और अन्य बैंकिंग संचालन के लिए जिम्मेदार है।",
+        "q_en": "What is SBI Junior Associate?",
+        "q_hi": "एसबीआई जूनियर एसोसिएट क्या है?"
       }
     ],
+    "extra": [],
     "faq": [
       {
-        "a_en": "The last date to submit the online application is 31 August 2026.",
-        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 31 अगस्त 2026 है।",
-        "q_en": "What is the last date to apply for SBI Junior Associate Recruitment 2026?",
-        "q_hi": "एसबीआई जूनियर एसोसिएट भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+        "a_en": "There are a total of 7680 vacancies advertised for Junior Associates.",
+        "a_hi": "जूनियर एसोसिएट के लिए कुल 7680 रिक्तियों की घोषणा की गई है।",
+        "q_en": "What is the total number of vacancies for SBI Junior Associate 2026?",
+        "q_hi": "एसबीआई जूनियर एसोसिएट 2026 के लिए कुल रिक्तियां कितनी हैं?"
       },
       {
-        "a_en": "Candidates must possess a Graduation degree in any discipline from a recognised University.",
-        "a_hi": "उम्मीदवारों के पास किसी मान्यता प्राप्त विश्वविद्यालय से किसी भी विषय में स्नातक की डिग्री होनी चाहिए।",
-        "q_en": "What is the educational qualification required?",
-        "q_hi": "आवश्यक शैक्षणिक योग्यता क्या है?"
+        "a_en": "The last date to apply online is 31 August 2026.",
+        "a_hi": "ऑनलाइन आवेदन करने की अंतिम तिथि 31 अगस्त 2026 है।",
+        "q_en": "What is the last date to apply for SBI Junior Associate 2026?",
+        "q_hi": "एसबीआई जूनियर एसोसिएट 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
         "a_en": "Candidates must be between 20 and 28 years of age as on 01.04.2026.",
         "a_hi": "उम्मीदवारों की आयु 01.04.2026 के अनुसार 20 से 28 वर्ष के बीच होनी चाहिए।",
-        "q_en": "What is the age limit for this recruitment?",
-        "q_hi": "इस भर्ती के लिए आयु सीमा क्या है?"
+        "q_en": "What is the age limit for SBI Junior Associate recruitment?",
+        "q_hi": "एसबीआई जूनियर एसोसिएट भर्ती के लिए आयु सीमा क्या है?"
       },
       {
-        "a_en": "A total of 7680 vacancies have been announced for Junior Associates.",
-        "a_hi": "जूनियर एसोसिएट के लिए कुल 7680 रिक्तियों की घोषणा की गई है।",
-        "q_en": "How many total vacancies are announced?",
-        "q_hi": "कुल कितनी रिक्तियों की घोषणा की गई है?"
+        "a_en": "Graduation in any discipline from a recognised university is required.",
+        "a_hi": "मान्यता प्राप्त विश्वविद्यालय से किसी भी विषय में स्नातक की डिग्री आवश्यक है।",
+        "q_en": "What is the educational qualification required?",
+        "q_hi": "आवश्यक शैक्षणिक योग्यता क्या है?"
+      },
+      {
+        "a_en": "The Preliminary Examination is tentatively scheduled for September 2026.",
+        "a_hi": "प्रारंभिक परीक्षा सितंबर 2026 में संभावित है।",
+        "q_en": "When will the SBI Junior Associate Preliminary Exam be held?",
+        "q_hi": "एसबीआई जूनियर एसोसिएट प्रारंभिक परीक्षा कब आयोजित की जाएगी?"
       }
     ],
     "fees": [],
     "h1_en": "SBI Junior Associate Recruitment 2026 for 7680 Posts",
     "h1_hi": "एसबीआई जूनियर एसोसिएट भर्ती 2026, 7680 पद",
     "how_en": [
-      "Visit the official SBI careers website at https://sbi.bank.in/web/careers/current-openings.",
-      "Click on 'RECRUITMENT OF JUNIOR ASSOCIATES (CUSTOMER SUPPORT & SALES)' and select 'Apply Online'.",
-      "Register using valid details, upload required documents, and pay the application fee.",
-      "Submit the form and take a printout for future reference."
+      "Visit the official SBI careers website.",
+      "Register online and fill out the application form.",
+      "Upload necessary documents and pay the application fee.",
+      "Submit the application and print a copy for future reference."
     ],
     "how_hi": [
-      "एसबीआई की आधिकारिक करियर वेबसाइट https://sbi.bank.in/web/careers/current-openings पर जाएं।",
-      "'RECRUITMENT OF JUNIOR ASSOCIATES (CUSTOMER SUPPORT & SALES)' पर क्लिक करें और 'Apply Online' चुनें।",
-      "वैध विवरण का उपयोग करके पंजीकरण करें, आवश्यक दस्तावेज अपलोड करें और आवेदन शुल्क का भुगतान करें।",
-      "फॉर्म जमा करें और भविष्य के संदर्भ के लिए प्रिंटआउट लें।"
+      "एसबीआई की आधिकारिक करियर वेबसाइट पर जाएं।",
+      "ऑनलाइन पंजीकरण करें और आवेदन पत्र भरें।",
+      "आवश्यक दस्तावेज अपलोड करें और आवेदन शुल्क का भुगतान करें।",
+      "आवेदन जमा करें और भविष्य के संदर्भ के लिए एक प्रति प्रिंट करें।"
     ],
-    "intro_en": "State Bank of India (SBI) has issued advertisement number CRPD/CR/2026-27/17 for the recruitment of Junior Associates (Customer Support & Sales) across various states and union territories. A total of 7680 regular and backlog vacancies are available in the clerical cadre. Eligible candidates can submit their online applications from 11 August 2026 to 31 August 2026. Candidates should review the complete notification for details regarding local language proficiency tests, educational qualifications, and the selection process.",
-    "intro_hi": "भारतीय स्टेट बैंक (एसबीआई) ने विभिन्न राज्यों और केंद्र शासित प्रदेशों में जूनियर एसोसिएट (कस्टमर सपोर्ट एंड सेल्स) की भर्ती के लिए विज्ञापन संख्या CRPD/CR/2026-27/17 जारी किया है। क्लैरिकल संवर्ग में कुल 7680 नियमित और बै बैकलॉग रिक्तियां उपलब्ध हैं। योग्य उम्मीदवार 11 अगस्त 2026 से 31 अगस्त 2026 तक अपने ऑनलाइन आवेदन जमा कर सकते हैं। उम्मीदवार स्थानीय भाषा दक्षता परीक्षा, शैक्षणिक योग्यताओं और चयन प्रक्रिया के विवरण के लिए पूरी अधिसूचना की समीक्षा करें।",
+    "intro_en": "State Bank of India (SBI) has issued an advertisement for the recruitment of Junior Associates (Customer Support & Sales) in the clerical cadre for 7680 vacancies. Online applications are open from 11 August 2026 to 31 August 2026. Eligible candidates holding a graduation degree and aged between 20 and 28 years can apply through the official website. The preliminary examination is tentatively scheduled for September 2026 followed by the main examination in November 2026.",
+    "intro_hi": "भारतीय स्टेट बैंक (एसबीआई) ने लिपिक संवर्ग में जूनियर एसोसिएट (कस्टमर सपोर्ट एंड सेल्स) के 7680 पदों पर भर्ती के लिए विज्ञापन जारी किया है। ऑनलाइन आवेदन 11 अगस्त 2026 से 31 अगस्त 2026 तक खुले हैं। स्नातक की डिग्री रखने वाले और 20 से 28 वर्ष की आयु के योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से आवेदन कर सकते हैं। प्रारंभिक परीक्षा सितंबर 2026 में और मुख्य परीक्षा नवंबर 2026 में संभावित है।",
     "last_date": "2026-08-31",
-    "notice_date": "2026-08-11",
-    "official_site": "https://sbi.bank.in",
+    "mistakes_en": [
+      "Applying for more than one State/UT",
+      "Failing to check local language proficiency requirements"
+    ],
+    "mistakes_hi": [
+      "एक से अधिक राज्य/केंद्र शासित प्रदेश के लिए आवेदन करना",
+      "स्थानीय भाषा की दक्षता आवश्यकताओं की जांच करने में विफल रहना"
+    ],
+    "not_en": [
+      "Candidates already working in SBI in the clerical cadre"
+    ],
+    "not_hi": [
+      "एसबीआई में लिपिक संवर्ग में पहले से कार्यरत उम्मीदवार"
+    ],
+    "notice_date": null,
+    "official_site": "https://sbi.bank.in/web/careers/current-openings",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
@@ -258,8 +316,8 @@
       {
         "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
-        "value_en": "Prelims: Sep 2026, Mains: Nov 2026 (Tentative)",
-        "value_hi": "प्रारंभिक: सितंबर 2026, मुख्य: नवंबर 2026 (संभावित)"
+        "value_en": "Sep 2026 (Prelims) / Nov 2026 (Mains)",
+        "value_hi": "सितंबर 2026 (प्रारंभिक) / नवंबर 2026 (मुख्य)"
       },
       {
         "label_en": "Educational qualification",
@@ -270,8 +328,8 @@
       {
         "label_en": "Age limit",
         "label_hi": "आयु सीमा",
-        "value_en": "20 to 28 years (As on 01.04.2026)",
-        "value_hi": "20 से 28 वर्ष (01.04.2026 के अनुसार)"
+        "value_en": "20–28 years (as on 01.04.2026)",
+        "value_hi": "20–28 वर्ष (01.04.2026 के अनुसार)"
       },
       {
         "label_en": "Advertisement number",
@@ -280,28 +338,43 @@
         "value_hi": "CRPD/CR/2026-27/17"
       }
     ],
+    "salary": [],
     "selection_en": [
       "Preliminary Examination",
       "Main Examination",
-      "Local Language Proficiency Test"
+      "Test of specified opted local language"
     ],
     "selection_hi": [
       "प्रारंभिक परीक्षा",
       "मुख्य परीक्षा",
-      "स्थानीय भाषा दक्षता परीक्षा"
+      "निर्दिष्ट स्थानीय भाषा का परीक्षण"
     ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Junior Associate",
+      "line_hi": "जूनियर एसोसिएट",
+      "posts": 7680
+    },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "State Bank of India has announced recruitment for 7680 Junior Associate (Customer Support & Sales) posts. Eligible candidates can apply online from 11 August 2026 to 31 August 2026. Read the notice for details on local language tests, eligibility, and exam dates.",
-    "summary_hi": "भारतीय स्टेट बैंक ने 7680 जूनियर एसोसिएट (कस्टमर सपोर्ट एंड सेल्स) पदों पर भर्ती की घोषणा की है। योग्य उम्मीदवार 11 अगस्त 2026 से 31 अगस्त 2026 तक ऑनलाइन आवेदन कर सकते हैं। स्थानीय भाषा परीक्षा, पात्रता और परीक्षा तिथियों के विवरण के लिए सूचना पढ़ें।",
+    "summary_en": "State Bank of India has announced recruitment for 7680 Junior Associate (Customer Support & Sales) posts. Eligible candidates can apply online from 11 August 2026 to 31 August 2026.",
+    "summary_hi": "भारतीय स्टेट बैंक ने 7680 जूनियर एसोसिएट (कस्टमर सपोर्ट एंड सेल्स) पदों पर भर्ती की घोषणा की है। योग्य उम्मीदवार 11 अगस्त 2026 से 31 अगस्त 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
     "vacancies": [
       {
-        "detail_en": "Regular and Backlog vacancies across various circles and states/UTs.",
-        "detail_hi": "विभिन्न सर्किलों और राज्यों/केंद्र शासित प्रदेशों में नियमित और बैकलॉग रिक्तियां।",
+        "detail_en": "State-wise vacancies across various circles including Gujarat, Karnataka, Madhya Pradesh, Odisha, Tamil Nadu, Maharashtra, and others.",
+        "detail_hi": "गुजरात, कर्नाटक, मध्य प्रदेश, ओडिशा, तमिलनाडु, महाराष्ट्र और अन्य विभिन्न सर्किलों में राज्यवार रिक्तियां।",
         "post_en": "Junior Associate (Customer Support & Sales)",
         "post_hi": "जूनियर एसोसिएट (कस्टमर सपोर्ट एंड सेल्स)",
         "total": "7680"
       }
+    ],
+    "who_en": [
+      "Graduates aged 20-28 looking for a banking job in SBI"
+    ],
+    "who_hi": [
+      "एसबीआई में बैंकिंग नौकरी चाहने वाले 20-28 वर्ष की आयु के स्नातक"
     ]
   },
   "pdf": {
