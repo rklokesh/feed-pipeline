@@ -39,15 +39,65 @@
   "notice_date": "2026-10-16",
   "org": "UPPSC",
   "page": {
+    "age": [],
     "apply_start": null,
-    "apply_url": "https://uppsc.up.nic.in",
+    "apply_url": null,
     "changes_from_notes": "",
     "conducted_by_en": "Uttar Pradesh Public Service Commission (UPPSC)",
-    "conducted_by_hi": "उत्तर प्रदेश लोक सेवा आयोग (UPPSC)",
+    "conducted_by_hi": "उत्तर प्रदेश लोक सेवा आयोग (यूपीपीएससी)",
+    "dates": [
+      {
+        "label_en": "District information slip available from",
+        "label_hi": "जिला सूचना पर्ची उपलब्ध होने की तिथि",
+        "value_en": "16 Oct 2026",
+        "value_hi": "16 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "26 Oct 2026",
+        "value_hi": "26 अक्टूबर 2026"
+      }
+    ],
+    "eligibility": [],
     "exam_date": "2026-10-26",
+    "extra": [
+      {
+        "label_en": "Exam Timing",
+        "label_hi": "परीक्षा का समय",
+        "value_en": "09:30 AM to 11:30 AM",
+        "value_hi": "प्रातः 09:30 बजे से पूर्वाह्न 11:30 बजे तक"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The exam is scheduled to be held on 26 October 2026 from 09:30 AM to 11:30 AM.",
+        "a_hi": "परीक्षा 26 अक्टूबर 2026 को प्रातः 09:30 बजे से पूर्वाह्न 11:30 बजे तक आयोजित होने निर्धारित है।",
+        "q_en": "When is the UPPSC Vetting Officer Exam 2025 scheduled?",
+        "q_hi": "उत्तर प्रदेश लोक सेवा आयोग वेटींग ऑफिसर परीक्षा 2025 कब आयोजित होगी?"
+      },
+      {
+        "a_en": "You can check your exam district by visiting the official UPPSC website and downloading the district information slip using your login details.",
+        "a_hi": "आप आधिकारिक यूपीपीएससी वेबसाइट पर जाकर और अपने लॉगिन विवरण का उपयोग करके जिला सूचना पर्ची डाउनलोड करके अपने परीक्षा जिले की जाँच कर सकते हैं।",
+        "q_en": "How can I check my exam district for the UPPSC Vetting Officer Exam 2025?",
+        "q_hi": "मैं उत्तर प्रदेश लोक सेवा आयोग वेटींग ऑफिसर परीक्षा 2025 के लिए अपने परीक्षा जिले की जाँच कैसे कर सकता हूँ?"
+      }
+    ],
     "fees": [],
     "h1_en": "UPPSC Vetting Officer Exam 2025 District Information Slip",
     "h1_hi": "उत्तर प्रदेश लोक सेवा आयोग वेटींग ऑफिसर परीक्षा 2025 जिला सूचना पर्ची",
+    "how_en": [
+      "Visit the official UPPSC website at https://uppsc.up.nic.in",
+      "Click on the link for the District Information Slip for Advt. No. A-6/E-1/2025 Vetting Officer Exam 2025",
+      "Enter your login credentials to view and download your exam district details"
+    ],
+    "how_hi": [
+      "आधिकारिक यूपीपीएससी वेबसाइट https://uppsc.up.nic.in पर जाएं",
+      "विज्ञापन संख्या ए-6/ई-1/2025 वेटींग ऑफिसर परीक्षा 2025 के लिए जिला सूचना पर्ची के लिंक पर क्लिक करें",
+      "अपने परीक्षा जिले का विवरण देखने और डाउनलोड करने के लिए अपने लॉगिन विवरण दर्ज करें"
+    ],
+    "intro_en": "The Uttar Pradesh Public Service Commission (UPPSC) has released the district information slip for the Vetting Officer Examination 2025 (Advt. No. A-6/E-1/2025). The exam is scheduled for 26 October 2026. Candidates appearing for the exam can check their allotted district through the official website using their credentials.",
+    "intro_hi": "उत्तर प्रदेश लोक सेवा आयोग (यूपीपीएससी) ने वेटींग ऑफिसर परीक्षा 2025 (विज्ञापन संख्या ए-6/ई-1/2025) के लिए जिला सूचना पर्ची जारी कर दी है। परीक्षा 26 अक्टूबर 2026 को निर्धारित है। परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक वेबसाइट पर अपने क्रेडेंशियल का उपयोग करके अपने आवंटित जिले की जाँच कर सकते हैं।",
     "last_date": null,
     "notice_date": "2026-10-16",
     "official_site": "https://uppsc.up.nic.in",
@@ -60,28 +110,43 @@
         "value_hi": "वेटींग ऑफिसर"
       },
       {
-        "label_en": "Advertisement number",
+        "label_en": "Advertisement Number",
         "label_hi": "विज्ञापन संख्या",
-        "value_en": "D-6/E-1/2025",
-        "value_hi": "D-6/E-1/2025"
+        "value_en": "A-6/E-1/2025",
+        "value_hi": "ए-6/ई-1/2025"
       },
       {
         "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "26 Oct 2026",
-        "value_hi": "26 अक्तूबर 2026"
+        "value_hi": "26 अक्टूबर 2026"
       },
       {
-        "label_en": "How to download",
-        "label_hi": "कैसे डाउनलोड करें",
-        "value_en": "Log in to the official website using your OTR number to view the district information slip.",
-        "value_hi": "जिला सूचना पर्ची देखने के लिए अपने वन टाइम रजिस्ट्रेशन नंबर का उपयोग करके आधिकारिक वेबसाइट पर लॉगिन करें।"
+        "label_en": "Notice date",
+        "label_hi": "सूचना तिथि",
+        "value_en": "16 Oct 2026",
+        "value_hi": "16 अक्टूबर 2026"
       }
+    ],
+    "selection_en": [
+      "Written Examination"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा"
     ],
     "status_en": "District information slip released",
     "status_hi": "जिला सूचना पर्ची जारी",
-    "summary_en": "Notice regarding the district information slip for the UPPSC Vetting Officer Examination 2025. Candidates can check their exam district details on the official website.",
-    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग वेटींग ऑफिसर परीक्षा 2025 के लिए जिला सूचना पर्ची के संबंध में सूचना। उम्मीदवार आधिकारिक वेबसाइट पर परीक्षा जिले का विवरण देख सकते हैं।"
+    "summary_en": "District information slip released for the UPPSC Vetting Officer Exam 2025. Registered candidates can check their exam district details on the official website.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग वेटींग ऑफिसर परीक्षा 2025 के लिए जिला सूचना पर्ची जारी कर दी गई है। पंजीकृत उम्मीदवार आधिकारिक वेबसाइट पर अपने परीक्षा जिले का विवरण देख सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Refer to official notification",
+        "detail_hi": "आधिकारिक अधिसूचना देखें",
+        "post_en": "Vetting Officer",
+        "post_hi": "वेटींग ऑफिसर",
+        "total": "Not specified"
+      }
+    ]
   },
   "pdf": {
     "bytes": 971393,
