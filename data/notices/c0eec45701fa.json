@@ -1,0 +1,66 @@
+{
+  "board_url": "https://rrb.indianrailways.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "CEN 03/2026"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "CEN 03/2026 (SECTION CONTROLLER)"
+      }
+    },
+    "exam_date": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-10-12 to 2026-10-13"
+    },
+    "exam_date_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "exam_date": "conducted from 12.10.2026 to 13.10.2026"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Section Controller"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "CEN 03/2026 (SECTION CONTROLLER)"
+      }
+    }
+  },
+  "first_seen": "2026-10-27T06:58:50+00:00",
+  "id": "c0eec45701fa",
+  "kind": "notification",
+  "org": "RRB",
+  "pdf": {
+    "bytes": 850759,
+    "pages": 1,
+    "sha256": "9221ca412545cbe4d9d043d8a66ee50561ce391edcac518c595b1c9933013605",
+    "text_kind": "text"
+  },
+  "source_id": "rrb-unified",
+  "status": "pending_review",
+  "title": "RRB CEN 03/2026: 10.2026 ENGLISH OBJECTION TRACKER NOTICE FOR CEN 03 2026 SC",
+  "url": "https://rrb.indianrailways.gov.in/-/image/179308322342727.10.2026_ENGLISH_OBJECTION_TRACKER_NOTICE_FOR_CEN_03_2026_SC.pdf/examsDocuments"
+}
