@@ -1,5 +1,20 @@
 {
   "board_url": "https://rrcnr.org/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Various Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Candidate instructions for document uploading",
+    "summary_en": "Instructions for candidates to upload documents on the OIRMS portal against CEN-08/2024.",
+    "summary_hi": "सीईएन-08/2024 के तहत ओआईआरएमएस पोर्टल पर दस्तावेज अपलोड करने के लिए उम्मीदवारों के निर्देश।",
+    "title_en": "RRB Northern Railway CEN-08/2024 Document Upload Instructions",
+    "title_hi": "आरआरबी नॉर्दर्न रेलवे सीईएन-08/2024 दस्तावेज अपलोड निर्देश",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "scanned"
   },
   "source_id": "rrc-nr",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "27.10.2026 Kind Attention: Instructions to candidates to upload documents on OIRMS Portal against CEN-08/2024. Click here for Notice",
   "url": "https://rrcnr.org/downloads/Notification_No-0827102026.pdf"
 }
