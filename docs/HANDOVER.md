@@ -118,15 +118,22 @@ publish.yml (when the owner adds a label to an issue, open or closed):
   **Closing soon** leads with the Last date column (nearest first), Posted moves to the right (phones keep last date
   on the right); every other tab: newest official date first. Search hint shows newest open jobs + popular exams.
 
-## 4. Board status (22 Oct 2026, India runner)
+## 4. Board status (28 Oct 2026)
 
-- Working: UPSC (both pages), NABARD, Navy, BSF, ITBP, RPSC, RSSB, MPPSC, DSSSB, UPSSSC (+ the 9 GitHub boards:
-  SSC, IBPS, NTA, SBI, LIC, ISRO, UPPSC, BPSC, BSSC).
-- Reached but 0 notices found — need per-board tuning (links point to pages, not PDFs, or JS menus):
-  RRB unified, Army, Coast Guard, UKPSC, Employment News, RBI. **← in progress** (probe-india run dispatched;
-  read `reports/links/*.txt` after `git pull`, then adjust each source in sources.yaml / watch.py).
-- Failing: RRB Chandigarh (certificate doesn't match its hostname — don't bypass), MP ESB (certificate chain),
-  CRPF (tried rectt.crpf.gov.in: no DNS), DRDO (tried rac.gov.in: timeout), IAF Agniveer (site was down, 503).
+- Working (47 sources): UPSC, SSC, NTA, RRB unified (follow mode), RRC NR/WR/CR, SBI, RBI, NABARD, Navy, BSF, ITBP,
+  ISRO, UPPSC, UP Police, BPSC, CSBC, RPSC, RSSB, MPPSC, DSSSB, UKPSC, HPSC, HSSC, TNPSC, CTET, KVS, plus (fixed 28 Oct):
+  - **IBPS** — Mac runner (GitHub gets a TLS error); follows the running CRP pages (`specialist-officers-xvi` etc.),
+    reads PDFs under wp-content/uploads. Score/call-letter items are login links and can't be read.
+  - **LIC** — follows `licindia.in/recruitment-of-…` pages; documents are `/documents/d/guest/<name>`.
+  - **UPSSSC** — `AllNotifications.aspx` (js), PDFs via `ViewPdf.aspx?…`.
+  - **BSSC** — `NoticeBoard.htm` (direct PDFs).
+  - **WBPSC** — links are `Download?param1=…pdf&param2=…`; html.parser turned `&param` into `¶m` → fixed in
+    `links_from_html`; PDF_HINTS now accepts `.pdf&`.
+  Each got a fresh baseline (seen.json entry removed → first run records old notices, publishes only 5 samples).
+- Not working: **MPSC** (list loads from a JSON feed, needs its own reader), MP ESB (certificate chain),
+  RRB Chandigarh (certificate hostname mismatch — don't bypass), CRPF/DRDO/IAF (URLs dead or down).
+- Not added yet: India Post GDS, Army, Coast Guard, CISF, Employment News, SSB, NVS, Assam Rifles, GPSC, KPSC, OPSC,
+  CG Vyapam (probe dumps for most are in `reports/links/`).
 
 ## 5. Design rules (agreed — keep them)
 
@@ -151,7 +158,7 @@ publish.yml (when the owner adds a label to an issue, open or closed):
 
 ## 6. Where we are / next steps (in order)
 
-1. **Fix broken boards:** IBPS (TLS), LIC, UPSSSC, BSSC, WBPSC, MPSC (0 links) — use `probe-india.yml` to see links.
+1. **MPSC** reader (JSON feed) — the other broken boards were fixed on 28 Oct (section 4).
 2. **Add boards:** India Post GDS, Army, Navy/Air Force Agniveer, Coast Guard, CRPF, CISF, DRDO, Employment News,
    SSB, NVS, Assam Rifles, GPSC, KPSC, OPSC, CG Vyapam (logos for most are already in `assets/org`).
 3. **Trust pages:** About, Privacy, Terms/Disclaimer, Contact, Press kit.
