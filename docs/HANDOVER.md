@@ -1,7 +1,7 @@
 # SarkariChart — Handover
 
 Everything needed to continue this project from any Claude account (or by a person).
-Last updated: 23 Oct 2026 (early morning IST). Owner: the site owner.
+Last updated: 28 Oct 2026 (early morning IST). Owner: the site owner.
 
 **To continue with a new Claude account:** in the Claude desktop app, connect the Mac folder
 `/Volumes/Workspace/App idea/Sarkari Chart` (it holds the repo, this file and the GitHub token file), then say:
@@ -17,9 +17,9 @@ A calm, fast, trustworthy Indian govt-job alert site — a 10x better SarkariRes
 - **Moat:** clean doc-like UX, speed, no ads for now, Google + AI-search friendly, full Hindi.
 - **Money later:** email list → affiliate test-prep, coaching leads, quiet sponsor slots (always labelled "Sponsored").
 - **Domain:** `sarkarichart.com` (available; buy at public launch). Until then: `https://sarkarichart.pages.dev`, **noindex**.
-- **Lead list:** WhatsApp Channel https://whatsapp.com/channel/0029Vb9M2x930LKIvmiBrY2s (in the top strip).
-  Later Telegram (fully automatable), then email sign-up (the list we own; Cloudflare D1).
-  WhatsApp Channel posting cannot be automated officially (unofficial APIs risk a ban) → plan: ready-to-paste posts.
+- **Lead list:** Telegram channel **@sarkarichart** (https://t.me/sarkarichart) — in the top strip, posted to
+  automatically after every deploy. WhatsApp is kept only for the reader's "Share on WhatsApp" button (channel posting
+  can't be automated safely). Later: email sign-up (the list we own; Cloudflare D1).
 - Full research, competitors, revenue model, legal notes: **docs/PLAN.md**.
 
 ## 2. Where everything lives (all owned by the owner)
@@ -29,10 +29,11 @@ A calm, fast, trustworthy Indian govt-job alert site — a 10x better SarkariRes
 | Code + data | GitHub `rklokesh/sarkarichart` (private); Mac copy: `/Volumes/Workspace/App idea/Sarkari Chart/sarkarichart` |
 | Live site | Cloudflare Pages project `sarkarichart` → https://sarkarichart.pages.dev |
 | Test views | `?preview=returning` (returning-visitor view + demo rows), `?demo` (demo rows) |
-| GitHub secrets | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `GEMINI_API_KEY` |
+| GitHub secrets | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `GEMINI_API_KEY`, `TELEGRAM_BOT_TOKEN` (never ask for it in chat), `REPORT_GH_TOKEN` |
 | Personal GitHub token (pushes + API from the Mac) | `Sarkari Chart/.github-token` — outside the repo, never paste/print it. Has Contents, Actions, Administration (R/W). Cannot read Issues. |
 | Self-hosted runner | Mac mini, runner name `mac-mini-india`, labels `self-hosted, india`; installed by `Sarkari Chart/setup-runner.sh`; runs as a LaunchAgent (starts when the owner is logged in) |
-| Logo source | `Sarkari Chart/sarkarichart-6b-stacked.svg` |
+| Site logo | The original red eagle badge `Sarkari Chart/sarkarichart-logo.png` = `site/sarkarichart-logo.png` (byte-identical). **Never modify it** (no crop/mask/recolour); only scaled copies: `-276.webp`, `-64.png`, `-180.png`. |
+| Board logos | Originals: `~/Desktop/Logos` (the owner's). Repo: `assets/org/<key>.png` (≤400px, only blank margins trimmed) for share cards; `site/org/<key>.webp` (152px) for notice pages. Board → key map: `BOARDS` in `scripts/share_card.py`. |
 | Issues = record of every notice | GitHub → Issues (labels `auto-published`, `review`, `approve`, `reject`) |
 | Plan / research doc | https://claude.ai/artifact/REDXLjETKWT4p4gK773PPJ (old account) — copy in `docs/PLAN.md` |
 
@@ -93,6 +94,30 @@ publish.yml (when the owner adds a label to an issue, open or closed):
 - "New" tag rule (final): officially issued today or yesterday (IST), same for everyone; list strictly newest official
   date first; "N new since your last visit" line retired.
 
+## 3d. Added 24–28 Oct
+
+- **Telegram:** `scripts/telegram.py` + `telegram.yml` (after each deploy) posts new notices to @sarkarichart with the
+  share image (`sendPhoto`, falls back to text). Remembers what it posted in `data/telegram.json`.
+- **SEO:** JSON-LD on notice pages (BreadcrumbList, WebPage, FAQPage, JobPosting only when a last date exists) and
+  homepage (Organization, WebSite + SearchAction `?q=`); og/twitter tags with alt text. Still noindex until launch.
+- **Share cards (approved design):** `scripts/og_card.mjs` draws `og.png` (English) + `og-hi.png` (Hindi), 1200×675, at
+  deploy from each notice's `og.json`. Bands: blue SARKARI | logo | CHART · red tag pairs curved around our logo · white
+  board logo + board name (maroon #7B1113, Poppins 900) · red post/exam line (+ yellow "N Posts" / exam date) · yellow
+  headline · blue call to action. Words per kind (job/admit/result/answer/corr/sched) and fallbacks live in
+  `scripts/share_card.py`; AI adds a `share_card` block to each page. Past last date → "APPLICATIONS CLOSED".
+  Fonts (OFL) in `scripts/fonts/`. Deploy cache key `pdfs-og2-…` includes fonts + logos.
+- **Notice page = full article** (`pages.py` PROMPT + render, `templates/notice.html`): board logo above the breadcrumb,
+  big bold heading, "Updated · Source" line, **At a glance** box, collapsible **On this page** contents, then About, What
+  changed (corrigenda), Who should read / Who cannot apply, Dates, Fee, Age, Vacancies (with Total row), Eligibility,
+  Physical standards, Pay, Exam pattern table, Selection, How to apply, Documents, Common mistakes, Good to know,
+  What happens next, Other details, Official links, FAQ (up to 12, always open), Final checklist, Hindi summary (hidden in
+  Hindi mode), More notices. Facts only from the PDF — missing facts mean the section is left out.
+  Older pages are upgraded by the AI 6 per run (`PAGE_BACKFILL`; marker: page has no `share_card`).
+  Research behind it: competitor pages (SahiSarkariJobs ~4,000 words with tables; SarkariJobNews ~1,300 words, weak).
+- **Homepage:** tabs left-aligned; ← / → switch tabs (outside the search box); ↑/↓ + Enter open rows from anywhere;
+  **Closing soon** leads with the Last date column (nearest first), Posted moves to the right (phones keep last date
+  on the right); every other tab: newest official date first. Search hint shows newest open jobs + popular exams.
+
 ## 4. Board status (22 Oct 2026, India runner)
 
 - Working: UPSC (both pages), NABARD, Navy, BSF, ITBP, RPSC, RSSB, MPPSC, DSSSB, UPSSSC (+ the 9 GitHub boards:
@@ -114,10 +139,9 @@ publish.yml (when the owner adds a label to an issue, open or closed):
 - Table: Posted (date + fixed slot for a red blinking "New" tag) · Notice · Organisation · Type · Last date
   (orange ≤7 days, red ≤3; native-style tooltip "N days left"; NIL in light grey) · PDF. Newest first, 25 rows +
   "Show 25 more". Whole row clickable; big invisible tap areas. Cut-off titles show the full title in the same tooltip.
-- "New": notice issued within 2 days (IST) AND (first visit OR published after your last visit; a visit ends after
-  30 min away). Line "N new since your last visit".
+- "New": officially issued today or yesterday (IST), same for everyone (red arrow image `new-en/hi.png`).
 - Search: typewriter hint "Search : <newest notices>"; Hindi + synonyms + typos; picks the tab; Esc keycap clears; `?q=`.
-- Top strip: sticky frosted glass, WhatsApp icon, underlined link (no button shape; text + underline fade together
+- Top strip: sticky frosted glass, Telegram icon, underlined link (no button shape; text + underline fade together
   on hover), × close (remembered per `data-id`). Underline offset 5px site-wide.
 - Our own pages open in the same tab; official sites/PDFs in a new tab. NOT installable as an app (manifest removed,
   service worker self-unregisters).
@@ -127,15 +151,16 @@ publish.yml (when the owner adds a label to an issue, open or closed):
 
 ## 6. Where we are / next steps (in order)
 
-1. **Boards still missing** (section 3b): India Post GDS first, then Tier 2 state commissions in batches of 5
-   (MPSC, TNPSC, KPSC, WBPSC, HSSC/HPSC, GPSC, OPSC/OSSC, JPSC/JSSC, CGPSC, APPSC, TSPSC).
-2. Notice detail page: the owner will give design instructions.
-3. **Launch for search:** buy sarkarichart.com → connect to Cloudflare Pages → remove noindex (`site/_headers`) →
-   sitemap, JobPosting schema, server-rendered notice list (SEO/AEO), Search Console + Bing.
-4. **Speed (agreed in principle, not done):** outline the wordmark text into SVG paths + non-blocking Noto font;
-   long cache headers for static assets.
-5. Ready-to-paste WhatsApp channel posts per notice; Telegram channel automation; email sign-up (D1).
-6. Later: sponsor slots, eligibility profile.
+1. **Fix broken boards:** IBPS (TLS), LIC, UPSSSC, BSSC, WBPSC, MPSC (0 links) — use `probe-india.yml` to see links.
+2. **Add boards:** India Post GDS, Army, Navy/Air Force Agniveer, Coast Guard, CRPF, CISF, DRDO, Employment News,
+   SSB, NVS, Assam Rifles, GPSC, KPSC, OPSC, CG Vyapam (logos for most are already in `assets/org`).
+3. **Trust pages:** About, Privacy, Terms/Disclaimer, Contact, Press kit.
+4. **Launch for search** (when sarkarichart.com is bought): set `SITE_URL` + the hardcoded pages.dev URLs (index.html,
+   schema, report_page.py, og) → remove noindex (`site/_headers`) → sitemap, robots, llms.txt, server-rendered list →
+   Search Console + Bing. Keyword research + ideal reader profile first.
+5. After launch: one page per exam, Google Discover follow link, card preview on notice pages, parked bookmark
+   pop-up and recent searches.
+6. Owner to-do: Telegram channel photo = `sarkarichart-logo.png`; buy the domain.
 
 ## 7. Mac mini notes
 
@@ -148,7 +173,11 @@ publish.yml (when the owner adds a label to an issue, open or closed):
 ## 8. Working conventions
 
 - Commit as `rklokesh <rklokesh@users.noreply.github.com>`; push from the Mac with an `http.extraheader` built from
-  `../.github-token` (never print the token; mask output with `sed "s/$T/***/g"`).
+  `../.github-token` (never print the token; mask output with `sed "s/$T/***/g"`). Working recipe:
+  `B=$(printf 'x-access-token:%s' "$T" | base64 | tr -d '\n')` then `git -c http.extraheader="AUTHORIZATION: basic $B" …`
+  (without `tr -d '\n'` long tokens wrap and GitHub answers 400). For rebases set `GIT_COMMITTER_NAME/EMAIL`.
+- Claude's Mac shell is a Linux VM: `sed -i` (not `sed -i ''`), no `~/.sarkarichart-venv`; system `python3` has
+  requests, yaml and Pillow, so `PAGE_BACKFILL=0 python3 scripts/pages.py` rebuilds pages without AI.
 - **Always `git pull` first.** Bots commit data and `site/index.html` (the notice list between `/*ITEMS:START*/` and
   `/*ITEMS:END*/`) every hour. After hand-replacing `site/index.html`, run `python3 scripts/publish.py build`.
 - Claude's remote file tools: git needs delete permission on the folder (lock files); `scripts/publish.py` could only be
