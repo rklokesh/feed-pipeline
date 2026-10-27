@@ -1,0 +1,30 @@
+{
+  "board_url": "https://rrb.indianrailways.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "age_limit": {
+      "evidence": "Standard (All RRBs) 01.01.2027) Station Master 6 35400 A-2 20–33 Years 1265 Notes: i. “(RRB-wise & Railway Zone-wise, detailed distribution of vacanci",
+      "source": "rule",
+      "value": {
+        "max": 33,
+        "min": 20
+      }
+    }
+  },
+  "first_seen": "2026-10-27T04:58:41+00:00",
+  "id": "b1e59bc60517",
+  "kind": "update",
+  "org": "RRB",
+  "pdf": {
+    "bytes": 149177,
+    "pages": 1,
+    "sha256": "b78a54a7373fad0e8e46d95646921578129f851291989d21ac683339f2131b30",
+    "text_kind": "text"
+  },
+  "source_id": "rrb-unified",
+  "status": "pending_review",
+  "title": "RRB CEN 08/2026: Corrigendum No 1 CEN 08 2026",
+  "url": "https://rrb.indianrailways.gov.in/-/image/1793076767666Corrigendum_No_1_CEN_08_2026.pdf/examsDocuments"
+}
