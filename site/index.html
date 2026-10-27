@@ -691,11 +691,24 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   // Rotating hint inside the empty search box: short names of the newest live notices, then a few everyday searches.
   // Stops the moment someone types; stays still for people who prefer reduced motion.
   const phEl = document.getElementById("ph"), phWord = phEl.querySelector(".ph-word"), searchBox = document.querySelector(".search");
-  const shortName = i => { const w = (lang === "hi" ? i.hi : i.title).replace(/[,(].*$/, "").trim().split(/\s+/); return w.slice(0, 3).join(" "); };
+  const shortName = i => {
+    const w = (lang === "hi" ? i.hi : i.title).replace(/[,(].*$/, "").trim().split(/\s+/).slice(0, 3);
+    while (w.length > 1 && /^(and|&|of|for|the|in|और|के|की|का|में)$/i.test(w[w.length - 1])) w.pop();   // no dangling "and"
+    return w.join(" ");
+  };
+  // Search hint: the newest OPEN jobs (what a visitor came for), mixed with the most-searched exams that we
+  // actually have notices for right now (so typing the hint always finds something).
+  const POPULAR = [["SSC GD", "एसएससी जीडी"], ["UP Police", "यूपी पुलिस"], ["Railway", "रेलवे"], ["SSC CGL", "एसएससी सीजीएल"],
+    ["Bihar Police", "बिहार पुलिस"], ["Bank", "बैंक"], ["CTET", "सीटेट"], ["Agniveer", "अग्निवीर"], ["Teacher", "शिक्षक"], ["UPSC", "यूपीएससी"]];
   const phWords = () => {
-    const fresh = ITEMS.filter(i => live(i) && !i.quiet).sort((a, b) => pubTime(b) - pubTime(a)).slice(0, 5).map(shortName);
-    const extra = lang === "hi" ? ["12वीं पास", "बिहार", "एसएससी"] : ["12th pass", "Bihar", "SSC"];
-    return [...new Set([...fresh, ...extra])];
+    const today = new Date().toISOString().slice(0, 10);
+    const jobs = ITEMS.filter(i => live(i) && !i.quiet && i.type === "Job" && (!i.last || i.last >= today))
+      .sort((a, b) => b.posted.localeCompare(a.posted) || pubTime(b) - pubTime(a)).slice(0, 4).map(shortName);
+    const have = w => ITEMS.some(i => live(i) && words(i).includes(w.toLowerCase()));
+    const pop = POPULAR.filter(([en]) => have(en)).slice(0, 4).map(([en, hi]) => lang === "hi" ? hi : en);
+    const out = [];
+    for (let k = 0; k < Math.max(jobs.length, pop.length); k++) { if (jobs[k]) out.push(jobs[k]); if (pop[k]) out.push(pop[k]); }
+    return [...new Set(out)].length ? [...new Set(out)] : (lang === "hi" ? ["12वीं पास", "एसएससी"] : ["12th pass", "SSC"]);
   };
   // Typewriter: types a name, pauses, erases it, types the next.
   let phI = 0, phN = 0, phDel = false, phTimer = null;
