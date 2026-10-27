@@ -328,7 +328,7 @@ def render(n: dict, slug: str, related: list | None = None) -> str:
           {"@context": "https://schema.org", "@type": "WebPage", "name": en["h1"], "url": url, "inLanguage": ["en-IN", "hi-IN"],
            "description": en.get("intro") or en["summary"], "datePublished": posted,
            "dateModified": (n.get("published_at") or "")[:10] or posted,
-           "isBasedOn": n.get("url"), "publisher": {"@type": "Organization", "name": "SarkariChart", "url": f"{SITE_URL}/", "logo": f"{SITE_URL}/logo-512.png"},
+           "isBasedOn": n.get("url"), "publisher": {"@type": "Organization", "name": "SarkariChart", "url": f"{SITE_URL}/", "logo": f"{SITE_URL}/logo-red-512.png"},
            "primaryImageOfPage": f"{SITE_URL}/notice/{slug}/og.png",
            "about": {"@type": "GovernmentOrganization", "name": en["byV"]}}]
     if faq:
