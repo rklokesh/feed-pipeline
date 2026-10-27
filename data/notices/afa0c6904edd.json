@@ -4,15 +4,15 @@
   "card": {
     "confidence": "high",
     "exam_date": "2026-10-12",
-    "last_date": null,
+    "last_date": "2026-11-03",
     "list": true,
     "posts": "Section Controller",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
     "summary_en": "Railway Recruitment Boards has released the answer key and objection tracker link for Section Controller CEN 03/2026 computer based test. Candidates can view their response sheets and raise objections online by 03.11.2026.",
     "summary_hi": "रेलवे भर्ती बोर्ड ने सेक्शन कंट्रोलर CEN 03/2026 कंप्यूटर आधारित परीक्षा के लिए उत्तर कुंजी और आपत्ति ट्रैकर लिंक जारी कर दिया है। उम्मीदवार 03.11.2026 तक अपनी उत्तर पुस्तिका देख सकते हैं और ऑनलाइन आपत्तियां दर्ज कर सकते हैं।",
-    "title_en": "RRB Section Controller CEN 03/2026 Answer Key",
-    "title_hi": "रेलवे भर्ती बोर्ड सेक्शन कंट्रोलर CEN 03/2026 उत्तर कुंजी",
+    "title_en": "RRB Section Controller CEN 03/2026 Answer Key & Objections",
+    "title_hi": "रेलवे भर्ती बोर्ड सेक्शन कंट्रोलर CEN 03/2026 उत्तर कुंजी और आपत्ति",
     "type": "Answer key",
     "vacancies": null
   },
@@ -74,12 +74,56 @@
   "notice_date": "2026-10-26",
   "org": "RRB",
   "page": {
+    "age": [],
     "apply_start": null,
     "apply_url": null,
     "changes_from_notes": "",
     "conducted_by_en": "Railway Recruitment Boards (RRB)",
     "conducted_by_hi": "रेलवे भर्ती बोर्ड (RRB)",
+    "dates": [
+      {
+        "label_en": "CBT Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "12 Oct 2026 to 13 Oct 2026",
+        "value_hi": "12 अक्तूबर 2026 से 13 अक्तूबर 2026"
+      },
+      {
+        "label_en": "Answer Key & Objection Starts",
+        "label_hi": "उत्तर कुंजी और आपत्ति शुरू",
+        "value_en": "26 Oct 2026 (05:00 PM)",
+        "value_hi": "26 अक्तूबर 2026 (सायंकाल 05:00 बजे)"
+      },
+      {
+        "label_en": "Closing Date for Objections",
+        "label_hi": "आपत्ति दर्ज करने की अंतिम तिथि",
+        "value_en": "03 Nov 2026 (05:00 PM)",
+        "value_hi": "03 नवम् 2026 (सायंकाल 05:00 बजे)"
+      }
+    ],
+    "eligibility": [],
     "exam_date": "2026-10-12",
+    "extra": [
+      {
+        "label_en": "Objection Fee Refund",
+        "label_hi": "आपत्ति शुल्क वापसी",
+        "value_en": "Fee paid for correct objections will be refunded after deduction of applicable bank charges.",
+        "value_hi": "सही पाई गई आपत्तियों के लिए भुगतान किया गया शुल्क लागू बैंक शुल्क काटने के बाद वापस कर दिया जाएगा।"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The last date to raise objections is 03.11.2026 up to 05:00 PM.",
+        "a_hi": "आपत्ति दर्ज करने की अंतिम तिथि 03.11.2026 को सायंकाल 05:00 बजे तक है।",
+        "q_en": "What is the last date to raise objections for RRB Section Controller CEN 03/2026?",
+        "q_hi": "RRB सेक्शन कंट्रोलर CEN 03/2026 के लिए आपत्ति दर्ज करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "The prescribed fee is Rs. 50/- plus applicable bank service charges per question.",
+        "a_hi": "निर्धारित शुल्क प्रति प्रश्न ₹50/- और लागू बैंक सेवा शुल्क है।",
+        "q_en": "What is the fee for raising objections?",
+        "q_hi": "आपत्तियां दर्ज करने के लिए शुल्क कितना है?"
+      }
+    ],
     "fees": [
       {
         "amount": "₹50",
@@ -87,9 +131,23 @@
         "cat_hi": "प्रति प्रश्न आपत्ति शुल्क"
       }
     ],
-    "h1_en": "RRB Section Controller CEN 03/2026 Answer Key",
-    "h1_hi": "रेलवे भर्ती बोर्ड सेक्शन कंट्रोलर CEN 03/2026 उत्तर कुंजी",
-    "last_date": null,
+    "h1_en": "RRB Section Controller CEN 03/2026 Answer Key & Objections",
+    "h1_hi": "रेलवे भर्ती बोर्ड सेक्शन कंट्रोलर CEN 03/2026 उत्तर कुंजी और आपत्ति",
+    "how_en": [
+      "Visit the official website of RRBs.",
+      "Click on the link to view question paper, responses, and raise objections for CEN 03/2026.",
+      "Log in using your credentials.",
+      "View your response sheet and submit objections with the prescribed fee before 03.11.2026."
+    ],
+    "how_hi": [
+      "RRB की आधिकारिक वेबसाइट पर जाएं।",
+      "CEN 03/2026 के लिए प्रश्न पत्र, प्रतिक्रियाएं देखने और आपत्तियां दर्ज करने के लिंक पर क्लिक करें।",
+      "अपने विवरण का उपयोग करके लॉगिन करें।",
+      "अपनी उत्तर पुस्तिका देखें और 03.11.2026 से पहले निर्धारित शुल्क के साथ आपत्तियां दर्ज करें।"
+    ],
+    "intro_en": "Railway Recruitment Boards (RRB) has released the answer key and objection tracker for the Computer Based Test (CBT) held under CEN 03/2026 for Section Controller posts. The exam was conducted from 12.10.2026 to 13.10.2026. Candidates can view their question papers, responses, and raise objections online from 26.10.2026 to 03.11.2026.",
+    "intro_hi": "रेलवे भर्ती बोर्ड (RRB) ने सेक्शन कंट्रोलर पदों के लिए CEN 03/2026 के अंतर्गत आयोजित कंप्यूटर आधारित परीक्षा (CBT) की उत्तर कुंजी और आपत्ति ट्रैकर जारी कर दिया है। यह परीक्षा 12.10.2026 से 13.10.2026 तक आयोजित की गई थी। उम्मीदवार 26.10.2026 से 03.11.2026 तक अपने प्रश्न पत्र, प्रतिक्रियाएं देख सकते हैं और आपत्तियां दर्ज कर सकते हैं।",
+    "last_date": "2026-11-03",
     "notice_date": "2026-10-26",
     "official_site": "https://rrb.indianrailways.gov.in/",
     "provider": "gemini/gemini-flash-lite-latest",
@@ -101,28 +159,45 @@
         "value_hi": "सेक्शन कंट्रोलर"
       },
       {
-        "label_en": "Advertisement number",
+        "label_en": "Advertisement Number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "CEN 03/2026",
         "value_hi": "CEN 03/2026"
       },
       {
-        "label_en": "Exam date",
+        "label_en": "Exam Date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "12 Oct 2026 to 13 Oct 2026",
         "value_hi": "12 अक्तूबर 2026 से 13 अक्तूबर 2026"
       },
       {
-        "label_en": "Objection window",
+        "label_en": "Objection Window",
         "label_hi": "आपत्ति विंडो",
         "value_en": "26 Oct 2026 to 03 Nov 2026",
-        "value_hi": "26 अक्तूबर 2026 से 03 नवंबर 2026"
+        "value_hi": "26 अक्तूबर 2026 से 03 नवम् 2026"
       }
+    ],
+    "selection_en": [
+      "Computer Based Test (CBT)",
+      "Document Verification / Medical Examination as per rules"
+    ],
+    "selection_hi": [
+      "कंप्यूटर आधारित परीक्षा (CBT)",
+      "नियमों के अनुसार दस्तावेज़ सत्यापन / चिकित्सा परीक्षा"
     ],
     "status_en": "Answer key released, objections open till 03 Nov 2026",
     "status_hi": "उत्तर कुंजी जारी, 03 नवम् 2026 तक आपत्तियां खुली हैं",
-    "summary_en": "Railway Recruitment Boards has released the answer key and objection tracker for the Section Controller CEN 03/2026 computer-based test. Candidates who appeared for the exam can view their response sheets and raise objections online until 03.11.2026.",
-    "summary_hi": "रेलवे भर्ती बोर्ड ने सेक्शन कंट्रोलर CEN 03/2026 कंप्यूटर आधारित परीक्षा के लिए उत्तर कुंजी और आपत्ति ट्रैकर जारी कर दिया है। परीक्षा में शामिल होने वाले उम्मीदवार 03.11.2026 तक अपनी उत्तर पुस्तिका देख सकते हैं और ऑनलाइन आपत्तियां दर्ज कर सकते हैं।"
+    "summary_en": "Railway Recruitment Boards has released the answer key and objection tracker link for Section Controller CEN 03/2026 computer based test. Candidates who appeared can view response sheets and raise objections online till 03.11.2026.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने सेक्शन कंट्रोलर CEN 03/2026 कंप्यूटर आधारित परीक्षा के लिए उत्तर कुंजी और आपत्ति ट्रैकर लिंक जारी कर दिया है। परीक्षा में शामिल होने वाले उम्मीदवार 03.11.2026 तक उत्तर पुस्तिका देख सकते हैं और ऑनलाइन आपत्तियां दर्ज कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Level 6 of 7th CPC Pay Matrix",
+        "detail_hi": "सातवें सीपीसी वेतन मैट्रिक्स का लेवल 6",
+        "post_en": "Section Controller",
+        "post_hi": "सेक्शन कंट्रोलर",
+        "total": null
+      }
+    ]
   },
   "pdf": {
     "bytes": 844858,

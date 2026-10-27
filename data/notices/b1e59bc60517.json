@@ -38,15 +38,83 @@
   "notice_date": "2026-10-27",
   "org": "RRB",
   "page": {
+    "age": [
+      {
+        "label_en": "Minimum age",
+        "label_hi": "न्यूनतम आयु",
+        "value_en": "20 years",
+        "value_hi": "20 वर्ष"
+      },
+      {
+        "label_en": "Maximum age",
+        "label_hi": "अधिकतम आयु",
+        "value_en": "33 years",
+        "value_hi": "33 वर्ष"
+      },
+      {
+        "label_en": "Age calculation as on",
+        "label_hi": "आयु की गणना इस तिथि के अनुसार",
+        "value_en": "01 Jan 2027",
+        "value_hi": "01 जनवरी 2027"
+      }
+    ],
     "apply_start": null,
     "apply_url": null,
     "changes_from_notes": "",
     "conducted_by_en": "Railway Recruitment Boards (RRB)",
     "conducted_by_hi": "रेलवे भर्ती बोर्ड (आरआरबी)",
+    "dates": [
+      {
+        "label_en": "Notice date",
+        "label_hi": "नोटिस दिनांक",
+        "value_en": "27 Oct 2026",
+        "value_hi": "27 अक्तूबर 2026"
+      }
+    ],
+    "eligibility": [
+      {
+        "label_en": "Medical Standard",
+        "label_hi": "चिकित्सा मानक",
+        "value_en": "A-2",
+        "value_hi": "ए-2"
+      }
+    ],
     "exam_date": null,
+    "extra": [
+      {
+        "label_en": "Initial Pay",
+        "label_hi": "प्रारंभिक वेतन",
+        "value_en": "₹35,400",
+        "value_hi": "₹35,400"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The total vacancies for Station Master have been revised to 1,265 across all RRBs.",
+        "a_hi": "स्टेशन मास्टर के लिए कुल रिक्तियों को संशोधित करके सभी आरआरबी के लिए 1,265 कर दिया गया है।",
+        "q_en": "What is the total number of vacancies for RRB Station Master CEN 08/2026 after Corrigendum 1?",
+        "q_hi": "शुद्धिपत्र 1 के बाद आरआरबी स्टेशन मास्टर केंद्रीय रोजगार सूचना 08/2026 के लिए कुल रिक्तियां कितनी हैं?"
+      },
+      {
+        "a_en": "The prescribed age limit is 20 to 33 years as on 01.01.2027.",
+        "a_hi": "निर्धारित आयु सीमा 01.01.2027 के अनुसार 20 से 33 वर्ष है।",
+        "q_en": "What is the age limit for RRB Station Master recruitment?",
+        "q_hi": "आरआरबी स्टेशन मास्टर भर्ती के लिए आयु सीमा क्या है?"
+      }
+    ],
     "fees": [],
     "h1_en": "RRB Station Master CEN 08/2026 Corrigendum 1",
     "h1_hi": "रेलवे भर्ती बोर्ड स्टेशन मास्टर केंद्रीय रोजगार सूचना 08/2026 शुद्धिपत्र 1",
+    "how_en": [
+      "Visit the official website of your regional Railway Recruitment Board.",
+      "Check the CEN 08/2026 notifications and updates for revised vacancy details."
+    ],
+    "how_hi": [
+      "अपने क्षेत्रीय रेलवे भर्ती बोर्ड की आधिकारिक वेबसाइट पर जाएं।",
+      "संशोधित रिक्ति विवरण के लिए केंद्रीय रोजगार सूचना 08/2026 की अधिसूचनाओं और अपडेट की जांच करें।"
+    ],
+    "intro_en": "Railway Recruitment Boards has published Corrigendum No. 1 for CEN No. 08/2026 regarding the recruitment of Station Master in Level-6 of the 7th CPC Pay Matrix. As per the notice dated 27.10.2026, the total vacancies have been revised to 1,265 across all RRBs. All other terms and conditions of the notification remain unchanged.",
+    "intro_hi": "रेलवे भर्ती बोर्ड ने 7वें सीपीसी वेतन मैट्रिक्स के लेवल-6 में स्टेशन मास्टर की भर्ती के संबंध में केंद्रीय रोजगार सूचना संख्या 08/2026 के लिए शुद्धिपत्र संख्या 1 जारी किया है। 27.10.2026 के नोटिस के अनुसार, सभी आरआरबी के लिए कुल रिक्तियों को संशोधित करके 1,265 कर दिया गया है। अधिसूचना के अन्य सभी नियम और शर्तें अपरिवर्तित रहेंगी।",
     "last_date": null,
     "notice_date": "2026-10-27",
     "official_site": "https://rrb.indianrailways.gov.in/",
@@ -65,10 +133,10 @@
         "value_hi": "1265"
       },
       {
-        "label_en": "Age limit",
-        "label_hi": "आयु सीमा",
-        "value_en": "20–33 Years (as on 01.01.2027)",
-        "value_hi": "20–33 वर्ष (01.01.2027 के अनुसार)"
+        "label_en": "Age limit (as on 01.01.2027)",
+        "label_hi": "आयु सीमा (01.01.2027 के अनुसार)",
+        "value_en": "20–33 Years",
+        "value_hi": "20–33 वर्ष"
       },
       {
         "label_en": "Advertisement number",
@@ -77,10 +145,25 @@
         "value_hi": "केंद्रीय रोजगार सूचना संख्या 08/2026"
       }
     ],
-    "status_en": "Corrigendum released, total vacancies updated to 1265",
-    "status_hi": "शुद्धिपत्र जारी, कुल रिक्तियां संशोधित होकर 1265 हुईं",
-    "summary_en": "Railway Recruitment Boards have issued Corrigendum No. 1 for CEN 08/2026, updating the total vacancies for the Station Master post to 1265. Candidates should note the revised vacancy details.",
-    "summary_hi": "रेलवे भर्ती बोर्ड ने केंद्रीय रोजगार सूचना संख्या 08/2026 के लिए शुद्धिपत्र संख्या 1 जारी किया है, जिसके तहत स्टेशन मास्टर पद के लिए कुल रिक्तियों को संशोधित कर 1265 कर दिया गया है। उम्मीदवार संशोधित रिक्ति विवरण देख लें।"
+    "selection_en": [
+      "Computer Based Selection process as per CEN 08/2026"
+    ],
+    "selection_hi": [
+      "केंद्रीय रोजगार सूचना 08/2026 के अनुसार कंप्यूटर आधारित चयन प्रक्रिया"
+    ],
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Railway Recruitment Boards has issued Corrigendum No. 1 for CEN 08/2026, updating the total vacancies for Station Master to 1265. Candidates should note the revised vacancy count.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने केंद्रीय रोजगार सूचना 08/2026 के लिए शुद्धिपत्र संख्या 1 जारी किया है, जिसके तहत स्टेशन मास्टर के लिए कुल रिक्तियों को संशोधित करके 1265 कर दिया गया है। उम्मीदवार संशोधित रिक्ति संख्या पर ध्यान दें।",
+    "vacancies": [
+      {
+        "detail_en": "Level-6 of 7th CPC Pay Matrix, All RRBs combined",
+        "detail_hi": "7वें सीपीसी वेतन मैट्रिक्स का लेवल-6, सभी आरआरबी सम्मिलित",
+        "post_en": "Station Master",
+        "post_hi": "स्टेशन मास्टर",
+        "total": "1265"
+      }
+    ]
   },
   "pdf": {
     "bytes": 149177,
