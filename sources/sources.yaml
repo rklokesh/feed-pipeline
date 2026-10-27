@@ -27,7 +27,10 @@ sources:
     org: IBPS
     url: https://www.ibps.in/
     render: static
-    runner: github
+    runner: india          # GitHub's servers hit a TLS error here; the Mac reads it fine
+    # each running exam cycle (CRP) has its own page; its notices/corrigenda are PDFs under wp-content/uploads
+    follow: "ibps\\.in/index\\.php/(specialist-officers|rural-bank|regional-rural-bank|clerical-cadre|management-trainees|po-mt|clerks?)-[a-z]+/?$"
+    follow_limit: 6
   - id: nta-home
     org: NTA
     url: https://nta.ac.in/
@@ -70,8 +73,9 @@ sources:
     url: https://licindia.in/careers
     render: js
     runner: github
-
-  # ---- Defence & police ----
+    # each recruitment has its own page; documents are /documents/d/guest/<name> (no .pdf in the link)
+    follow: "licindia\\.in/recruitment-of-"
+    follow_limit: 4
   - id: army-home
     org: Indian Army
     url: https://joinindianarmy.nic.in/
@@ -129,8 +133,8 @@ sources:
     runner: github
   - id: upsssc-home
     org: UPSSSC
-    url: https://upsssc.gov.in/
-    render: static
+    url: https://upsssc.gov.in/AllNotifications.aspx
+    render: js
     runner: india
   - id: bpsc-home
     org: BPSC
@@ -139,7 +143,7 @@ sources:
     runner: github
   - id: bssc-home
     org: BSSC
-    url: https://bssc.bihar.gov.in/
+    url: https://bssc.bihar.gov.in/NoticeBoard.htm
     render: static
     runner: github
   - id: rpsc-home
