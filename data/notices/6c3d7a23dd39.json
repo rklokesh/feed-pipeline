@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-10-28",
+    "last_date": null,
+    "list": true,
+    "posts": "Junior Engineer, Depot Material Superintendent, Chemical & Metallurgical Assistant",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "RRB has postponed the CBT-I exam scheduled for 28-10-2026 at specific centres in Andhra Pradesh due to a cyclonic storm. Affected candidates will receive updates on rescheduled dates.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने चक्रवात के कारण आंध्र प्रदेश के कुछ केंद्रों पर 28-10-2026 को होने वाली परीक्षा स्थगित कर दी है। प्रभावित उम्मीदवारों को नई तारीखों की सूचना दी जाएगी।",
+    "title_en": "RRB JE CBT-I Exam 2026 Postponed for Andhra Pradesh Centres",
+    "title_hi": "रेलवे भर्ती बोर्ड कनिष्ठ अभियंता परीक्षा 2026 आंध्र प्रदेश केंद्रों के लिए स्थगित",
+    "type": "Admit card",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -40,16 +57,141 @@
   },
   "first_seen": "2026-10-27T14:46:52+00:00",
   "id": "6c3d7a23dd39",
+  "issue": 118,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-10-27",
   "org": "RRB",
+  "page": {
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://rrb.indianrailways.gov.in",
+    "changes_from_notes": "",
+    "conducted_by_en": "Railway Recruitment Boards (RRB)",
+    "conducted_by_hi": "रेलवे भर्ती बोर्ड (आरआरबी)",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस तिथि",
+        "value_en": "27 Oct 2026",
+        "value_hi": "27 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Original Exam Date",
+        "label_hi": "मूल परीक्षा तिथि",
+        "value_en": "28 Oct 2026",
+        "value_hi": "28 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Rescheduled Date",
+        "label_hi": "पुनर्निर्धारित तिथि",
+        "value_en": "To be published shortly",
+        "value_hi": "शीघ्र ही प्रकाशित की जाएगी"
+      }
+    ],
+    "eligibility": [],
+    "exam_date": "2026-10-28",
+    "extra": [
+      {
+        "label_en": "Affected Test Centre Codes",
+        "label_hi": "प्रभावित परीक्षा केंद्र कोड",
+        "value_en": "38141 (Srikakulam); 8827, 9208, 9417 (Visakhapatnam); 7954 (Rajahmundry); 8031 (Vijayawada)",
+        "value_hi": "38141 (श्रीकाकुलम); 8827, 9208, 9417 (विशाखापत्तनम); 7954 (राजमुंदरी); 8031 (विजयवाड़ा)"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The exam was postponed due to cyclonic storm 'Arnab' in certain regions of Andhra Pradesh.",
+        "a_hi": "आंध्र प्रदेश के कुछ क्षेत्रों में चक्रवात 'अर्नब' के कारण परीक्षा स्थगित कर दी गई है।",
+        "q_en": "Why was the RRB JE CBT-I exam postponed?",
+        "q_hi": "आरआरबी जेई सीबीटी-प्रथम परीक्षा क्यों स्थगित की गई?"
+      },
+      {
+        "a_en": "Exams are postponed at all centres in Srikakulam, Visakhapatnam, Rajahmundry, and Vijayawada in Andhra Pradesh.",
+        "a_hi": "आंध्र प्रदेश के श्रीकाकुलम, विशाखापत्तनम, राजमुंदरी और विजयवाड़ा के सभी केंद्रों पर परीक्षाएं स्थगित कर दी गई हैं।",
+        "q_en": "Which exam centres are affected by this postponement?",
+        "q_hi": "इस स्थगन से कौन से परीक्षा केंद्र प्रभावित हैं?"
+      },
+      {
+        "a_en": "The rescheduled date and venue will be published shortly on the official RRB website, and SMS/email will be sent to affected candidates.",
+        "a_hi": "पुनर्निर्धारित तिथि और स्थान शीघ्र ही आधिकारिक आरआरबी वेबसाइट पर प्रकाशित किया जाएगा, और प्रभावित उम्मीदवारों को एसएमएस/ईमेल भेजा जाएगा।",
+        "q_en": "How will I know the new exam date?",
+        "q_hi": "मुझे नई परीक्षा तिथि कैसे पता चलेगी?"
+      },
+      {
+        "a_en": "No, CBT-I in all other centres will be conducted as per the original schedule.",
+        "a_hi": "नहीं, अन्य सभी केंद्रों पर सीबीटी-प्रथम मूल कार्यक्रम के अनुसार आयोजित की जाएगी।",
+        "q_en": "Are exams at other centres also postponed?",
+        "q_hi": "क्या अन्य केंद्रों पर भी परीक्षाएं स्थगित हैं?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "RRB JE CBT-I Exam 2026 Postponed for Andhra Pradesh Centres",
+    "h1_hi": "रेलवे भर्ती बोर्ड कनिष्ठ अभियंता परीक्षा 2026 आंध्र प्रदेश केंद्रों के लिए स्थगित",
+    "how_en": [
+      "Check your registered mobile number for SMS updates from RRB.",
+      "Check your registered email ID for notifications regarding the new exam date and venue.",
+      "Visit the official RRB website regularly for official announcements."
+    ],
+    "how_hi": [
+      "आरआरबी से एसएमएस अपडेट के लिए अपना पंजीकृत मोबाइल नंबर जांचें।",
+      "नई परीक्षा तिथि और केंद्र के संबंध में सूचना के लिए अपनी पंजीकृत ईमेल आईडी जांचें।",
+      "आधिकारिक घोषणाओं के लिए नियमित रूप से आधिकारिक आरआरबी वेबसाइट पर जाएं।"
+    ],
+    "intro_en": "Railway Recruitment Boards (RRB) have issued a notice regarding the postponement of the CBT-I exam for CEN No. 04/2026. The examination scheduled for 28 October 2026 has been postponed only for specific test centres in Andhra Pradesh due to cyclonic storm 'Arnab'. Candidates registered for centres in Srikakulam, Visakhapatnam, Rajahmundry, and Vijayawada should check their registered email and mobile for updates on the rescheduled dates. Exams at all other centres remain unaffected.",
+    "intro_hi": "रेलवे भर्ती बोर्ड (आरआरबी) ने केंद्रीय रोजगार अधिसूचना संख्या 04/2026 की सीबीटी-प्रथम परीक्षा के स्थगन के संबंध में एक नोटिस जारी किया है। चक्रवात 'अर्नब' के कारण आंध्र प्रदेश के विशिष्ट परीक्षा केंद्रों पर 28 अक्टूबर 2026 को होने वाली परीक्षा को स्थगित कर दिया गया है। श्रीकाकुलम, विशाखापत्तनम, राजमुंदरी और विजयवाड़ा केंद्रों के लिए पंजीकृत उम्मीदवारों को पुनर्निर्धारित तिथियों के बारे में अपडेट के लिए अपना पंजीकृत ईमेल और मोबाइल देखना चाहिए। अन्य सभी केंद्रों पर परीक्षाएं निर्धारित समय पर होंगी।",
+    "last_date": null,
+    "notice_date": "2026-10-27",
+    "official_site": "https://rrb.indianrailways.gov.in",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Junior Engineer, Depot Material Superintendent, Chemical & Metallurgical Assistant",
+        "value_hi": "कनिष्ठ अभियंता, डिपो सामग्री अधीक्षक, रासायनिक और धातुओं से संबंधित सहायक"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "CEN No. 04/2026",
+        "value_hi": "केंद्रीय रोजगार अधिसूचना संख्या 04/2026"
+      },
+      {
+        "label_en": "Original Exam Date",
+        "label_hi": "मूल परीक्षा तिथि",
+        "value_en": "28 Oct 2026",
+        "value_hi": "28 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Postponed Centres",
+        "label_hi": "स्थगित केंद्र",
+        "value_en": "Srikakulam, Visakhapatnam, Rajahmundry and Vijayawada",
+        "value_hi": "श्रीकाकुलम, विशाखापत्तनम, राजमुंदरी और विजयवाड़ा"
+      }
+    ],
+    "selection_en": [
+      "Computer Based Test-I (CBT-I)"
+    ],
+    "selection_hi": [
+      "कंप्यूटर आधारित परीक्षा-प्रथम (सीबीटी-I)"
+    ],
+    "status_en": "CBT-I exam postponed for specific centres in Andhra Pradesh",
+    "status_hi": "आंध्र प्रदेश के विशिष्ट केंद्रों के लिए सीबीटी-प्रथम परीक्षा स्थगित",
+    "summary_en": "Railway Recruitment Boards have postponed the CBT-I for CEN 04/2026 scheduled on 28-10-2026 at specific centres in Andhra Pradesh due to a cyclonic storm. Affected candidates will be informed about the rescheduled dates via SMS and email. Exams at all other centres will be held as per schedule.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने चक्रवात के कारण आंध्र प्रदेश के विशिष्ट केंद्रों पर 28-10-2026 को होने वाली सीबीटी-प्रथम परीक्षा स्थगित कर दी है। प्रभावित उम्मीदवारों को एसएमएस और ईमेल के माध्यम से नई तारीखों की सूचना दी जाएगी। अन्य सभी केंद्रों पर परीक्षाएं निर्धारित समय पर होंगी।",
+    "vacancies": []
+  },
   "pdf": {
     "bytes": 586525,
     "pages": 1,
     "sha256": "ac4b22aa03ce45814b97c3b71cf0dee8aaa927e5ee79c0be549bc17f93873a7e",
     "text_kind": "text"
   },
+  "published_at": "2026-10-27T14:53:46Z",
+  "slug": "rrb-je-cbt-i-exam-2026-postponed-for-andhra-pradesh-centres",
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RRB CEN 04/2026: Notice postponement of CBT-I CEN-04-2026 JEs English",
   "url": "https://rrb.indianrailways.gov.in/-/image/1793110990951Notice_postponement_of_CBT-I_CEN-04-2026_JEs_English.pdf/examsDocuments"
 }
