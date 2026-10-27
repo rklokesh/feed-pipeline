@@ -1,0 +1,38 @@
+{
+  "board_url": "https://www.nabard.org/careers-notices1.aspx?cid=693&id=26",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Specialists on contract - CISO & DoS-CSITE"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "Recruitment of Specialists on contract - 2026-27 - CISO & DoS-CSITE"
+      }
+    }
+  },
+  "first_seen": "2026-10-27T11:46:38+00:00",
+  "id": "05e63c00afea",
+  "kind": "notification",
+  "org": "NABARD",
+  "pdf": {
+    "bytes": 164838,
+    "pages": 1,
+    "sha256": "2c53706161914d594a9f210a5874f6d7dad13ac143d392f2924abfbef285025c",
+    "text_kind": "scanned"
+  },
+  "source_id": "nabard-careers",
+  "status": "pending_review",
+  "title": "Notification",
+  "url": "https://www.nabard.org/auth/writereaddata/CareerNotices/120281697Notification.pdf"
+}

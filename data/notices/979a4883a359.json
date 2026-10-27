@@ -1,0 +1,64 @@
+{
+  "board_url": "https://sbi.bank.in/web/careers/current-openings",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "820411 IMPORTANT NOTICE RECRUITMENT OF PROBATIONARY OFFICER ADVERTISEMENT NO. CRPD/PO/2026-27/09 ONLINE PSYCHOMETRIC TEST IN REMOTE PROCTORED (RPA) MODE Psychometric Test has b",
+      "source": "rule",
+      "value": "CRPD/PO/2026-27/09"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "ADVERTISEMENT NO. CRPD/PO/2026-27/09"
+      }
+    },
+    "exam_date": {
+      "evidence": "their email for receipt of communication in this regard. • Date of Test: 31.10.2026 • Test Start Time: 1 PM Kindly ensure that all setup is done and you are ready to take the test at least 15 minutes before the",
+      "source": "rule",
+      "value": "2026-10-31"
+    },
+    "exam_date_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "exam_date": "Date of Test: 31.10.2026"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "PROBATIONARY OFFICER"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "RECRUITMENT OF PROBATIONARY OFFICER"
+      }
+    }
+  },
+  "first_seen": "2026-10-27T11:51:01+00:00",
+  "id": "979a4883a359",
+  "kind": "notification",
+  "org": "SBI",
+  "pdf": {
+    "bytes": 99532,
+    "pages": 1,
+    "sha256": "b5c5ecae7c5fc71d91d43b0576a2e1de9e413019b14bea847242a45c3c99d3bd",
+    "text_kind": "text"
+  },
+  "source_id": "sbi-careers",
+  "status": "pending_review",
+  "title": "NOTICE: ONLINE PSYCHOMETRIC TEST IN REMOTE PROCTORED (RPA) MODE",
+  "url": "https://sbi.bank.in/webfiles/uploads/files_2627/10/Important_Notice_for_Psychometric_Test.pdf"
+}
