@@ -31,7 +31,7 @@ from common import USER_AGENT, download, get, last_repair_error  # noqa: E402
 from extract import classify, extract, pdf_text  # noqa: E402
 
 DATA = "data"
-PDF_HINTS = re.compile(r"(\.pdf($|\?))|open_pdf|/api/attachment/|writereaddata|/uploads?/|/file/[0-9a-f-]{36}/", re.I)
+PDF_HINTS = re.compile(r"(\.pdf($|[?&#]))|open_pdf|/api/attachment/|writereaddata|/uploads?/|/file/[0-9a-f-]{36}/", re.I)
 GENERIC = re.compile(r"^(click\s*here|view|download|read\s*more|details?|pdf|new|link|open|here|more)\W*$", re.I)
 FRAGMENT = re.compile(r"\(\s*\d+(\.\d+)?\s*[KM]B\s*\)|^[a-z]", re.I)
 NOW = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
@@ -64,7 +64,8 @@ def links_from_html(html: str, base: str) -> list[dict]:
     soup = BeautifulSoup(html, "html.parser")
     out, seen = [], set()
     for a in soup.find_all("a", href=True):
-        url = urljoin(base, a["href"].strip())
+        # html.parser reads "&param2=" in a bare href as the entity "&para" + "m2" (WBPSC Download?param1=..&param2=..)
+        url = urljoin(base, a["href"].strip().replace("\u00b6m", "&param"))
         if not url.startswith("http") or url in seen or not PDF_HINTS.search(url):
             continue
         seen.add(url)
