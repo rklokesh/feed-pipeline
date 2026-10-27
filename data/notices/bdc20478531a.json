@@ -1,21 +1,210 @@
 {
+  "auto_published": true,
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-07-16",
+    "last_date": "2026-11-06",
+    "list": true,
+    "posts": "Senior Teacher (Urdu)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Rajasthan Public Service Commission has released the provisional result and cut-off marks for eligibility checking of the Senior Teacher (Urdu) Competitive Examination 2025.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने वरिष्ठ अध्यापक (उर्दू) प्रतियोगी परीक्षा 2025 के पात्रता जांच हेतु अनंतिम परिणाम और कट-ऑफ अंक जारी कर दिए हैं।",
+    "title_en": "RPSC Senior Teacher Urdu Exam 2025 Provisional Result",
+    "title_hi": "आरपीएससी वरिष्ठ अध्यापक उर्दू परीक्षा 2025 अनंतिम परिणाम",
+    "type": "Result",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-27T12:46:42+00:00",
   "id": "bdc20478531a",
+  "issue": 116,
+  "issue_tidy": true,
   "kind": "result",
+  "notice_date": "2026-10-27",
   "org": "RPSC",
+  "page": {
+    "age": [],
+    "apply_start": "2026-10-31",
+    "apply_url": "https://rpsc.rajasthan.gov.in/",
+    "changes_from_notes": "",
+    "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
+    "conducted_by_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी)",
+    "dates": [
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "16 Jul 2026 & 17 Jul 2026",
+        "value_hi": "16 जुलाई 2026 और 17 जुलाई 2026"
+      },
+      {
+        "label_en": "Detailed Form Online Start Date",
+        "label_hi": "विस्तृत फॉर्म ऑनलाइन प्रारंभ तिथि",
+        "value_en": "31 Oct 2026",
+        "value_hi": "31 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Detailed Form Online Last Date",
+        "label_hi": "विस्तृत फॉर्म ऑनलाइन अंतिम तिथि",
+        "value_en": "06 Nov 2026",
+        "value_hi": "06 नवंबर 2026"
+      }
+    ],
+    "eligibility": [
+      {
+        "label_en": "Education / Rules",
+        "label_hi": "शिक्षा / नियम",
+        "value_en": "As per service rules and advertisement conditions",
+        "value_hi": "सेवा नियमों और विज्ञापन शर्तों के अनुसार"
+      }
+    ],
+    "exam_date": "2026-07-16",
+    "extra": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "सूचना तिथि",
+        "value_en": "27 Oct 2026",
+        "value_hi": "27 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Cut-off General (UR)",
+        "label_hi": "कट-ऑफ सामान्य (अनारक्षित)",
+        "value_en": "255.30",
+        "value_hi": "255.30"
+      },
+      {
+        "label_en": "Cut-off OBC",
+        "label_hi": "कट-ऑफ अन्य पिछड़ा वर्ग",
+        "value_en": "230.30",
+        "value_hi": "230.30"
+      },
+      {
+        "label_en": "Cut-off EWS",
+        "label_hi": "कट-ऑफ ईडब्ल्यूएस",
+        "value_en": "217.49",
+        "value_hi": "217.49"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The provisional result was released on 27 October 2026.",
+        "a_hi": "अनंतिम परिणाम 27 अक्टूबर 2026 को जारी किया गया था।",
+        "q_en": "When was the RPSC Senior Teacher Urdu Exam 2025 provisional result released?",
+        "q_hi": "आरपीएससी वरिष्ठ अध्यापक उर्दू परीक्षा 2025 का अनंतिम परिणाम कब जारी किया गया?"
+      },
+      {
+        "a_en": "The last date to fill the detailed application form online is 06 November 2026 (up to 11:59 PM).",
+        "a_hi": "ऑनलाइन विस्तृत आवेदन पत्र भरने की अंतिम तिथि 06 नवंबर 2026 (रात्रि 11:59 बजे तक) है।",
+        "q_en": "What is the last date to fill the detailed application form online?",
+        "q_hi": "ऑनलाइन विस्तृत आवेदन पत्र भरने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "A total of 158 candidates have been provisionally shortlisted for the non-scheduled area.",
+        "a_hi": "गैर-अनुसूचित क्षेत्र के लिए कुल 158 उम्मीदवारों को अनंतिम रूप से शॉर्टलिस्ट किया गया है।",
+        "q_en": "How many candidates have been shortlisted in the provisional eligibility checking list?",
+        "q_hi": "अनंतिम पात्रता जांच सूची में कुल कितने उम्मीदवारों को शॉर्टलिस्ट किया गया है?"
+      },
+      {
+        "a_en": "Candidates must fill it online through the RPSC recruitment portal via SSO ID and later submit it to the concerned department (Secondary Education Department, Bikaner) during document verification.",
+        "a_hi": "उम्मीदवारों को एसएसओ आईडी के माध्यम से आरपीएससी भर्ती पोर्टल पर इसे ऑनलाइन भरना होगा और बाद में दस्तावेज़ सत्यापन के दौरान संबंधित विभाग (माध्यमिक शिक्षा विभाग, बीकानेर) को जमा करना होगा।",
+        "q_en": "Where should shortlisted candidates submit their detailed application form?",
+        "q_hi": "शॉर्टलिस्ट किए गए उम्मीदवारों को अपना विस्तृत आवेदन पत्र कहां जमा करना होगा?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "RPSC Senior Teacher Urdu Exam 2025 Provisional Result",
+    "h1_hi": "आरपीएससी वरिष्ठ अध्यापक उर्दू परीक्षा 2025 अनंतिम परिणाम",
+    "how_en": [
+      "Log in to your SSO ID and go to the recruitment portal.",
+      "Select 'My Recruitment' followed by 'Detailed Form Cum Scrutiny'.",
+      "Click 'Apply Now' and fill out the detailed application form for the Senior Teacher Urdu exam between 31 Oct 2026 and 06 Nov 2026.",
+      "Take two printouts of the submitted detailed form along with all original documents and self-attested copies for verification when called by the department."
+    ],
+    "how_hi": [
+      "अपनी एसएसओ आईडी में लॉगिन करें और भर्ती पोर्टल पर जाएं।",
+      "माई रिक्रूटमेंट के बाद डिटेल्ड फॉर्म कम स्क्रूटनी का चयन करें।",
+      "31 अक्टूबर 2026 से 06 नवंबर 2026 के बीच वरिष्ठ अध्यापक उर्दू परीक्षा के लिए अप्लाई नाउ पर क्लिक करें और विस्तृत आवेदन पत्र भरें।",
+      "विभाग द्वारा बुलाए जाने पर सभी मूल दस्तावेजों और स्व-सत्यापित प्रतियों के साथ जमा किए गए विस्तृत फॉर्म के दो प्रिंटआउट अपने पास सुरक्षित रखें।"
+    ],
+    "intro_en": "The Rajasthan Public Service Commission (RPSC) has announced the provisional result for eligibility checking of the Senior Teacher (Urdu) Competitive Examination 2025. The written examination was conducted on 16 July 2026 and 17 July 2026. A total of 158 candidates have been provisionally included for document verification. Shortlisted candidates are required to fill out the detailed application form online through the SSO ID portal between 31 October 2026 and 06 November 2026.",
+    "intro_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी) ने वरिष्ठ अध्यापक (उर्दू) प्रतियोगी परीक्षा 2025 की पात्रता जांच के लिए अनंतिम परिणाम घोषित कर दिया है। लिखित परीक्षा 16 जुलाई 2026 और 17 जुलाई 2026 को आयोजित की गई थी। दस्तावेज़ सत्यापन के लिए कुल 158 उम्मीदवारों को अनंतिम रूप से शामिल किया गया है। चयनित उम्मीदवारों को 31 अक्टूबर 2026 से 06 नवंबर 2026 के बीच एसएसओ आईडी पोर्टल के माध्यम से ऑनलाइन विस्तृत आवेदन पत्र भरना होगा।",
+    "last_date": "2026-11-06",
+    "notice_date": "2026-10-27",
+    "official_site": "https://rpsc.rajasthan.gov.in/",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Senior Teacher (Urdu)",
+        "value_hi": "वरिष्ठ अध्यापक (उर्दू)"
+      },
+      {
+        "label_en": "Total candidates in provisional list",
+        "label_hi": "अनंतिम सूची में कुल उम्मीदवार",
+        "value_en": "158",
+        "value_hi": "158"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "16 Jul 2026 & 17 Jul 2026",
+        "value_hi": "16 जुलाई 2026 और 17 जुलाई 2026"
+      },
+      {
+        "label_en": "Detailed form online dates",
+        "label_hi": "विस्तृत फॉर्म ऑनलाइन तिथियां",
+        "value_en": "31 Oct 2026 to 06 Nov 2026",
+        "value_hi": "31 अक्टूबर 2026 से 06 नवंबर 2026"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Senior Teacher (Sec. Edu.) Comp. Exam - 2025",
+        "value_hi": "वरिष्ठ अध्यापक (माध्यमिक शिक्षा) प्रतियोगी परीक्षा - 2025"
+      }
+    ],
+    "selection_en": [
+      "Written Examination (Paper I and Paper II)",
+      "Provisional List for Eligibility Checking",
+      "Detailed Application Form Submission and Document Verification by Department",
+      "Final Result and Recommendation"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा (प्रश्न पत्र I और प्रश्न पत्र II)",
+      "पात्रता जांच हेतु अनंतिम सूची",
+      "विस्तृत आवेदन पत्र जमा करना और विभाग द्वारा दस्तावेज़ सत्यापन",
+      "अंतिम परिणाम और सिफारिश"
+    ],
+    "status_en": "Provisional result and cut-off marks declared",
+    "status_hi": "अनंतिम परिणाम और कट-ऑफ अंक घोषित",
+    "summary_en": "Rajasthan Public Service Commission has released the provisional result and cut-off marks for eligibility checking of the Senior Teacher Urdu Competitive Examination 2025. Shortlisted candidates must submit the detailed application form online from 31 October 2026 to 06 November 2026.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने वरिष्ठ अध्यापक उर्दू प्रतियोगी परीक्षा 2025 के पात्रता जांच हेतु अनंतिम परिणाम और कट-ऑफ अंक जारी कर दिए हैं। चयनित अभ्यर्थियों को 31 अक्टूबर 2026 से 06 नवंबर 2026 तक ऑनलाइन विस्तृत आवेदन पत्र भरना होगा।",
+    "vacancies": [
+      {
+        "detail_en": "Non-Scheduled Area candidates: 158",
+        "detail_hi": "गैर अनुसूचित क्षेत्र के उम्मीदवार: 158",
+        "post_en": "Senior Teacher (Urdu)",
+        "post_hi": "वरिष्ठ अध्यापक (उर्दू)",
+        "total": "158 (Provisional list)"
+      }
+    ]
+  },
   "pdf": {
     "bytes": 415700,
     "pages": 3,
     "sha256": "16034ed56d1a9585d5b2ad4ee9ce34efe61b1c89d33af60b0f2a722a0f24e245",
     "text_kind": "text"
   },
+  "published_at": "2026-10-27T12:52:05Z",
+  "slug": "rpsc-senior-teacher-urdu-exam-2025-provisional-result",
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "27/10/2026 Result Preamble and Cutoff Marks (Provisional List for Eligibility Checking) for Sr. Teacher (Sec. Edu.) Comp. Exam - 2025 (Urdu)",
   "url": "https://rpsc.rajasthan.gov.in/Static/Result/3274CA3402EA44DEB703B253B96F3F5F.pdf"
 }

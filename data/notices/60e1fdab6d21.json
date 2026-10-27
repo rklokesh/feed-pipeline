@@ -162,31 +162,138 @@
   "notice_date": "2026-10-16",
   "org": "NTA",
   "page": {
+    "age": [],
     "apply_start": "2026-10-16",
     "apply_url": "https://exams.nta.nic.in/niftee/",
     "changes_from_notes": "",
     "conducted_by_en": "National Testing Agency (NTA)",
     "conducted_by_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए)",
+    "dates": [
+      {
+        "label_en": "Online registration starts",
+        "label_hi": "ऑनलाइन पंजीकरण शुरू",
+        "value_en": "16 Oct 2026",
+        "value_hi": "16 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Last date to apply",
+        "label_hi": "आवेदन करने की अंतिम तिथि",
+        "value_en": "16 Nov 2026",
+        "value_hi": "16 नवंबर 2026"
+      },
+      {
+        "label_en": "Last date with late fee",
+        "label_hi": "विलंब शुल्क के साथ अंतिम तिथि",
+        "value_en": "21 Nov 2026",
+        "value_hi": "21 नवंबर 2026"
+      },
+      {
+        "label_en": "Correction in particulars",
+        "label_hi": "विवरण में सुधार",
+        "value_en": "22 to 25 Nov 2026",
+        "value_hi": "22 से 25 नवंबर 2026"
+      },
+      {
+        "label_en": "Advance City Intimation Slip",
+        "label_hi": "अग्रिम शहर सूचना पर्ची",
+        "value_en": "21 Dec 2026",
+        "value_hi": "21 दिसंबर 2026"
+      },
+      {
+        "label_en": "Downloading of Admit Card",
+        "label_hi": "प्रवेश पत्र डाउनलोड करना",
+        "value_en": "04 Jan 2027",
+        "value_hi": "04 जनवरी 2027"
+      },
+      {
+        "label_en": "Date of Entrance Examination",
+        "label_hi": "प्रवेश परीक्षा की तिथि",
+        "value_en": "10 Jan 2027",
+        "value_hi": "10 जनवरी 2027"
+      }
+    ],
+    "eligibility": [
+      {
+        "label_en": "Education & Eligibility",
+        "label_hi": "शिक्षा एवं पात्रता",
+        "value_en": "Refer to the NIFT Admissions Guidelines–2027 and NIFTEE–2027 Information Bulletin for detailed educational qualifications, age limits, and subject combinations.",
+        "value_hi": "विस्तृत शैक्षणिक योग्यता, आयु सीमा और विषय संयोजनों के लिए निफ्टी प्रवेश दिशा-निर्देश–2027 और निफ्टीई–2027 सूचना बुलेटिन देखें।"
+      }
+    ],
     "exam_date": "2027-01-10",
+    "extra": [
+      {
+        "label_en": "Exam Mode",
+        "label_hi": "परीक्षा मोड",
+        "value_en": "Computer Based Test (CBT) for GAT and Paper Based Test (PBT) for CAT",
+        "value_hi": "जीएटी के लिए कंप्यूटर आधारित परीक्षा (सीबीटी) और सीएटी के लिए पेपर आधारित परीक्षा (पीबीटी)"
+      },
+      {
+        "label_en": "Helpline Numbers",
+        "label_hi": "हेल्पलाइन नंबर",
+        "value_en": "011-40759000, 011-69227700",
+        "value_hi": "011-40759000, 011-69227700"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The last date to submit the online application form is 16 November 2026. Applications with a late fee of ₹5000 can be submitted until 21 November 2026.",
+        "a_hi": "ऑनलाइन आवेदन पत्र जमा करने की अंतिम तिथि 16 नवंबर 2026 है। ₹5000 के विलंब शुल्क के साथ आवेदन 21 नवंबर 2026 तक जमा किए जा सकते हैं।",
+        "q_en": "What is the last date to apply for NIFTEE 2027?",
+        "q_hi": "निफ्टीई 2027 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "The entrance examination for NIFTEE 2027 is scheduled to be conducted on 10 January 2027.",
+        "a_hi": "निफ्टीई 2027 प्रवेश परीक्षा 10 जनवरी 2027 को आयोजित होने निर्धारित है।",
+        "q_en": "When will the NIFTEE 2027 examination be conducted?",
+        "q_hi": "निफ्टीई 2027 परीक्षा कब आयोजित की जाएगी?"
+      },
+      {
+        "a_en": "Admit cards for the entrance examination will be available for download from 4 January 2027.",
+        "a_hi": "प्रवेश परीक्षा के लिए एडमिट कार्ड 4 जनवरी 2027 से डाउनलोड के लिए उपलब्ध होंगे।",
+        "q_en": "When can I download the NIFTEE 2027 admit card?",
+        "q_hi": "मैं निफ्टीई 2027 का एडमिट कार्ड कब डाउनलोड कर सकता हूँ?"
+      },
+      {
+        "a_en": "Candidates can apply online through the official portal at https://exams.nta.nic.in/niftee/.",
+        "a_hi": "उम्मीदवार आधिकारिक पोर्टल https://exams.nta.nic.in/niftee/ के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+        "q_en": "What is the official website to apply for NIFTEE 2027?",
+        "q_hi": "निफ्टीई 2027 के लिए आवेदन करने की आधिकारिक वेबसाइट क्या है?"
+      }
+    ],
     "fees": [
       {
         "amount": "₹5000",
-        "cat_en": "With Late Fee",
-        "cat_hi": "विलंब शुल्क के साथ"
+        "cat_en": "With late fee (additional)",
+        "cat_hi": "विलंब शुल्क के साथ (अतिरिक्त)"
       }
     ],
     "h1_en": "NTA NIFT Entrance Examination NIFTEE 2027",
     "h1_hi": "राष्ट्रीय फैशन प्रौद्योगिकी संस्थान प्रवेश परीक्षा 2027",
+    "how_en": [
+      "Visit the official NTA NIFTEE website at https://exams.nta.nic.in/niftee/",
+      "Register online and fill out the application form with required details",
+      "Upload recent photograph, signature, UDID Card (if PwD), and other required documents",
+      "Pay the application fee online and submit the form"
+    ],
+    "how_hi": [
+      "आधिकारिक एनटीए निफ्टीई वेबसाइट पर जाएं https://exams.nta.nic.in/niftee/",
+      "ऑनलाइन पंजीकरण करें और आवश्यक विवरण के साथ आवेदन पत्र भरें",
+      "हाल ही में खींची गई तस्वीर, हस्ताक्षर, यूडीआईडी कार्ड (यदि दिव्यांग हैं) और अन्य आवश्यक दस्तावेज अपलोड करें",
+      "ऑनलाइन आवेदन शुल्क का भुगतान करें और फॉर्म जमा करें"
+    ],
+    "intro_en": "The National Testing Agency (NTA) has released the notification for the National Institute of Fashion Technology Entrance Examination (NIFTEE) 2027. This examination is conducted for admissions to Undergraduate, Postgraduate, NLEA, Artisans, and Ph.D. programmes for the academic session 2027–28. Online registrations are open from 16 October 2026 to 16 November 2026. Interested candidates should review the eligibility criteria and apply through the official website.",
+    "intro_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने राष्ट्रीय फैशन प्रौद्योगिकी संस्थान प्रवेश परीक्षा (निफ्टीई) 2027 के लिए अधिसूचना जारी कर दी है। यह परीक्षा शैक्षणिक सत्र 2027–28 के लिए स्नातक, स्नातकोत्तर, एनएलईए, कारीगर और पीएचडी कार्यक्रमों में प्रवेश के लिए आयोजित की जाती है। ऑनलाइन पंजीकरण 16 अक्टूबर 2026 से 16 नवंबर 2026 तक खुला है। इच्छुक उम्मीदवार पात्रता मानदंड की समीक्षा करें और आधिकारिक वेबसाइट के माध्यम से आवेदन करें।",
     "last_date": "2026-11-16",
     "notice_date": "2026-10-16",
     "official_site": "https://www.nta.ac.in/",
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Posts",
-        "label_hi": "पद",
+        "label_en": "Programs",
+        "label_hi": "कार्यक्रम",
         "value_en": "UG, PG, NLEA, Artisans and Ph.D. Programmes",
-        "value_hi": "स्नातक, स्नातकोत्तर, पार्श्व प्रवेश, कारीगर और पीएचडी कार्यक्रम"
+        "value_hi": "स्नातक, स्नातकोत्तर, एनएलईए, कारीगर और पीएचडी कार्यक्रम"
       },
       {
         "label_en": "Apply online",
@@ -195,34 +302,41 @@
         "value_hi": "16 अक्टूबर 2026 से 16 नवंबर 2026"
       },
       {
-        "label_en": "Last date for fee",
-        "label_hi": "शुल्क के लिए अंतिम तिथि",
-        "value_en": "16 Nov 2026",
-        "value_hi": "16 नवंबर 2026"
-      },
-      {
         "label_en": "Exam date",
-        "label_hi": "परीक्षा की तिथि",
+        "label_hi": "परीक्षा तिथि",
         "value_en": "10 Jan 2027",
         "value_hi": "10 जनवरी 2027"
       },
       {
-        "label_en": "Educational qualification",
-        "label_hi": "शैक्षणिक योग्यता",
-        "value_en": "Refer to the NIFT Admissions Guidelines-2027 and Information Bulletin",
-        "value_hi": "एनआईएफटी प्रवेश दिशा-निर्देश 2027 और सूचना बुलेटिन देखें"
-      },
-      {
         "label_en": "Advertisement number",
         "label_hi": "विज्ञापन संख्या",
-        "value_en": "NIFTEE-2027",
-        "value_hi": "एनआईएफटीईई-2027"
+        "value_en": "NIFTEE–2027",
+        "value_hi": "निफ्टीई–2027"
       }
+    ],
+    "selection_en": [
+      "Computer Based Test (CBT) - GAT and/or Paper Based Test (PBT) - CAT as applicable",
+      "Research Proposal Presentation and Interview (RPPI) for Ph.D. candidates",
+      "Subsequent selection stages as prescribed in NIFT Admissions Guidelines-2027"
+    ],
+    "selection_hi": [
+      "कंप्यूटर आधारित परीक्षा (सीबीटी) - जीएटी और/या पेपर आधारित परीक्षा (पीबीटी) - सीएटी जैसा लागू हो",
+      "पीएचडी उम्मीदवारों के लिए शोध प्रस्ताव प्रस्तुति और साक्षात्कार (आरपीपीआई)",
+      "निफ्टी प्रवेश दिशा-निर्देश-2027 में निर्धारित आगामी चयन चरण"
     ],
     "status_en": "",
     "status_hi": "",
-    "summary_en": "National Testing Agency invites online applications for NIFTEE 2027 for admissions to UG, PG, NLEA, Artisans and Ph.D. programmes. Eligible candidates should apply online through the official portal before 16 November 2026.",
-    "summary_hi": "राष्ट्रीय परीक्षण एजेंसी ने स्नातक, स्नातकोत्तर, पार्श्व प्रवेश, कारीगर और पीएचडी कार्यक्रमों में प्रवेश के लिए राष्ट्रीय फैशन प्रौद्योगिकी संस्थान प्रवेश परीक्षा 2027 के वास्ते ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 16 नवंबर 2026 से पहले आधिकारिक पोर्टल के माध्यम से ऑनलाइन आवेदन करें।"
+    "summary_en": "National Testing Agency invites online applications for NIFTEE 2027 for admissions to various UG, PG, NLEA, Artisans, and Ph.D. programmes. Eligible candidates should apply online through the official portal before 16 November 2026.",
+    "summary_hi": "राष्ट्रीय परीक्षण एजेंसी ने विभिन्न स्नातक, स्नातकोत्तर, एनएलईए, कारीगर और पीएचडी कार्यक्रमों में प्रवेश के लिए राष्ट्रीय फैशन प्रौद्योगिकी संस्थान प्रवेश परीक्षा 2027 के वास्ते ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 16 नवंबर 2026 से पहले आधिकारिक पोर्टल के माध्यम से ऑनलाइन आवेदन करें।",
+    "vacancies": [
+      {
+        "detail_en": "Includes B.Des, B.F.Tech, M.Des, M.F.M, M.F.Tech, Lateral Entry, Artisans, and Ph.D. admissions.",
+        "detail_hi": "बी.डैस, बी.एफ.टेक, एम.डैस, एम.एफ.एम, एम.एफ.टेक, लेटरल एंट्री, कारीगर और पीएचडी प्रवेश शामिल हैं।",
+        "post_en": "UG, PG, NLEA, Artisans and Ph.D. Programmes",
+        "post_hi": "स्नातक, स्नातकोत्तर, एनएलईए, कारीगर और पीएचडी कार्यक्रम",
+        "total": "Not specified"
+      }
+    ]
   },
   "pdf": {
     "bytes": 608210,

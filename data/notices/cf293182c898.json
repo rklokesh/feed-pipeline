@@ -1,5 +1,20 @@
 {
   "board_url": "https://mppsc.mp.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Tender or procurement notice for office equipment, not a job or recruitment notice",
+    "summary_en": "MPPSC notice regarding GeM bid for procurement of 7 interactive panels with CPU for the office.",
+    "summary_hi": "कार्यालय के लिए सीपीयू के साथ सात इंटरैक्टिव पैनल की खरीद के संबंध में जेम बिड की सूचना।",
+    "title_en": "MPPSC Interactive Panels Procurement Bid",
+    "title_hi": "मध्य प्रदेश लोक सेवा आयोग इंटरेक्टिव पैनल क्रय निविदा",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "mppsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "आयोग कार्यालय में 07 नग Interactive Panels with CPU की आवश्‍यकता के संदर्भ में GeM पर Bid की सूचना, दिनांक 27/10/2026",
   "url": "https://mppsc.mp.gov.in/uploads/files/Vigyapti_10460_03_2026_Computer_Dated_27_10_2026.pdf"
 }
