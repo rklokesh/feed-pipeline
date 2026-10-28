@@ -93,7 +93,7 @@ sources:
     runner: india
   - id: coast-guard
     org: Indian Coast Guard
-    url: https://joinindiancoastguard.cdac.in/
+    url: https://joinindiancoastguard.cdac.in/cgcat/   # officer entry page carries the advertisement PDFs
     render: js
     runner: india
   - id: bsf-recruitment
@@ -281,3 +281,15 @@ sources:
     url: https://tnpsc.gov.in/home.aspx
     render: static
     runner: india
+  - id: cisf-recruitment
+    org: CISF
+    url: https://cisfrectt.cisf.gov.in/
+    render: static
+    runner: india
+    # documents open via file_open.php?fnm=<token>
+  - id: indiapost-vacancies
+    org: India Post
+    url: https://www.indiapost.gov.in/vacancies
+    render: static
+    runner: india
+    # documents are /api/documents/file/<id>; GDS has its own site (indiapostgdsonline.gov.in) which times out from India too

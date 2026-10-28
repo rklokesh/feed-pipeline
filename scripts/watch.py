@@ -31,7 +31,7 @@ from common import USER_AGENT, download, get, last_repair_error  # noqa: E402
 from extract import classify, extract, pdf_text  # noqa: E402
 
 DATA = "data"
-PDF_HINTS = re.compile(r"(\.pdf($|[?&#]))|open_pdf|/api/attachment/|writereaddata|/uploads?/|/file/[0-9a-f-]{36}/|ViewPdf\.aspx\?|/documents/d/guest/", re.I)
+PDF_HINTS = re.compile(r"(\.pdf($|[?&#]))|open_pdf|/api/attachment/|writereaddata|/uploads?/|/file/[0-9a-f-]{36}/|ViewPdf\.aspx\?|/documents/d/guest/|file_open\.php\?fnm=|/api/documents/file/", re.I)
 GENERIC = re.compile(r"^(click\s*here|view|download|read\s*more|details?|pdf|new|link|open|here|more)\W*$", re.I)
 FRAGMENT = re.compile(r"\(\s*\d+(\.\d+)?\s*[KM]B\s*\)|^[a-z]", re.I)
 NOW = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
