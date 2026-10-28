@@ -183,7 +183,13 @@ publish.yml (when the owner adds a label to an issue, open or closed):
 7. Quality check 28 Oct: all pages on the full layout, every notice tagged; fixed issue dates for old notices picked up
    when a board was first added (now dated by their own PDF date, or by their past last date — never "New").
    Boards failing for weeks (CRPF, DRDO, IAF Agniveer, RRB Chandigarh) only add noise to the health report.
-8. After launch: Google Discover follow link, parked bookmark pop-up and recent searches; MPSC/NVS/Employment News feed
+8. **Browse pages (29 Oct)** — `scripts/hubs.py`: `tag` (AI tags each job notice's minimum qualification: 10th, 12th,
+   iti, diploma, graduate, postgraduate; `[]` = not stated) and `build`: `/<state>-govt-jobs/` (state's own boards:
+   open jobs = job notices with an unexpired last date, then latest notices), `/<qual>-govt-jobs/` (open jobs only),
+   `/govt-jobs/` index. Homepage stays as is: typing "10th pass", "UP", "graduate"… shows one quiet link line above the
+   table (the reserved `#newline` slot, words in `/*HUBS:START*/`); footer link "Jobs by state". Moat rule from the owner:
+   clean, fast, reliable, trustworthy, usable — never clutter the design to copy competitors.
+9. After launch: Google Discover follow link, parked bookmark pop-up and recent searches; MPSC/NVS/Employment News feed
    readers; press kit page.
 6. Owner to-do: buy the domain (Telegram channel photo is set). On domain day also set up Cloudflare Email Routing for contact@sarkarichart.com and add it to /contact/. Never put the owner's name or company on the site.
 
