@@ -174,8 +174,8 @@ publish.yml (when the owner adds a label to an issue, open or closed):
 5. **Exam pages are live (28 Oct)** — `scripts/exams.py`: `tag` (before pages.py; one batched AI call tags each notice with
    `exam: {key: "ssc-cgl-2026", name_en, name_hi}`, `{}` = not part of an exam; reuses known keys) and `build` (after
    pages.py): `/exam/<key>/` for exams with 2+ live notices (timeline with stage labels from share_card headlines, key
-   facts from the notification, more exams from the same board, ItemList schema), `/exam/` index, homepage "Exams:" line
-   (between `<!--EXAMS:START-->` markers), "All updates for <exam> →" link under each notice heading, sitemap entries.
+   facts from the notification, more exams from the same board, ItemList schema), `/exam/` index, homepage **Exams tab** (rows written into
+   index.html between `/*EXAMS:START*/` markers; one row per exam: updated date, name, board, latest type, N updates), "All updates for <exam> →" link under each notice heading, sitemap entries.
    First run: 113 notices tagged, 29 exam pages. To fix a wrong grouping, edit the notice's `exam` in data/notices.
 6. After launch: Google Discover follow link, parked bookmark pop-up and recent searches; MPSC/NVS/Employment News feed
    readers; press kit page.
