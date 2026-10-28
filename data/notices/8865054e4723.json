@@ -85,34 +85,53 @@
   "notice_date": "2026-10-24",
   "org": "NTA",
   "page": {
+    "after_en": [
+      "Appearance in Computer Based Test",
+      "Declaration of results and scores"
+    ],
+    "after_hi": [
+      "कंप्यूटर आधारित परीक्षा में उपस्थिति",
+      "परिणामों और स्कोर की घोषणा"
+    ],
     "age": [],
     "apply_start": "2026-10-24",
     "apply_url": "https://jeemain.nta.nic.in/",
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Check eligibility criteria in the information bulletin",
+      "Keep scanned documents ready before filling the form",
+      "Pay the fee before the last date"
+    ],
+    "checklist_hi": [
+      "सूचना बुलेटिन में पात्रता मापदंड की जाँच करें",
+      "फॉर्म भरने से पहले स्कैन किए गए दस्तावेज़ तैयार रखें",
+      "अिमथ तिथि से पहले शुल्क का भुगतान करें"
+    ],
     "conducted_by_en": "National Testing Agency (NTA)",
     "conducted_by_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए)",
     "dates": [
       {
         "label_en": "Online application starts",
-        "label_hi": "ऑनलाइन आवेदन प्रारंभ",
+        "label_hi": "ऑनलाइन आवेदन शुरू",
         "value_en": "24 Oct 2026",
-        "value_hi": "24 अक्तूबर 2026"
+        "value_hi": "24 अक्टूबर 2026"
       },
       {
-        "label_en": "Online application last date",
-        "label_hi": "ऑनलाइन आवेदन की अंतिम तिथि",
+        "label_en": "Last date to apply",
+        "label_hi": "आवेदन की अंतिम तिथि",
         "value_en": "22 Nov 2026",
         "value_hi": "22 नवंबर 2026"
       },
       {
-        "label_en": "Last date of successful fee transaction",
-        "label_hi": "सफल शुल्क लेनदेन की अंतिम तिथि",
+        "label_en": "Last date for fee transaction",
+        "label_hi": "शुल्क लेनदेन की अंतिम तिथि",
         "value_en": "22 Nov 2026",
         "value_hi": "22 नवंबर 2026"
       },
       {
         "label_en": "Late submission with late fee",
-        "label_hi": "विलम्ब शुल्क के साथ विलंबित आवेदन",
+        "label_hi": "विलम्ब शुल्क के साथ देर से आवेदन",
         "value_en": "23 Nov 2026 to 26 Nov 2026",
         "value_hi": "23 नवंबर 2026 से 26 नवंबर 2026"
       },
@@ -129,94 +148,180 @@
         "value_hi": "30 दिसंबर 2026"
       },
       {
-        "label_en": "Downloading of admit cards",
-        "label_hi": "प्रवेश पत्र डाउनलोड करना",
+        "label_en": "Admit card download",
+        "label_hi": "प्रवेश पत्र डाउनलोड",
         "value_en": "13 Jan 2027",
         "value_hi": "13 जनवरी 2027"
       },
       {
-        "label_en": "Date of examination",
-        "label_hi": "परीक्षा की तिथि",
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
         "value_en": "20, 21, 22, 23, 24 and 28 Jan 2027",
         "value_hi": "20, 21, 22, 23, 24 और 28 जनवरी 2027"
       }
     ],
+    "documents_en": [
+      "Valid email address and mobile number",
+      "Scanned photograph and signature",
+      "Educational qualification details"
+    ],
+    "documents_hi": [
+      "वैध ईमेल पता और मोबाइल नंबर",
+      "स्कैन की गई फोटो और हस्ताक्षर",
+      "शैक्षणिक योग्यता विवरण"
+    ],
     "eligibility": [
       {
-        "label_en": "Information",
-        "label_hi": "जानकारी",
-        "value_en": "Refer to the Information Bulletin of JEE (Main)-2027 on the official website for detailed eligibility criteria.",
-        "value_hi": "विस्तृत पात्रता मानदंड के लिए आधिकारिक वेबसाइट पर जेईई (मुख्य)-2027 के सूचना बुलेटिन को देखें।"
+        "label_en": "Education",
+        "label_hi": "शिक्षा",
+        "value_en": "Refer to the Information Bulletin of JEE (Main)-2027 on the official website.",
+        "value_hi": "आधिकारिक वेबसाइट पर जेईई (मुख्य)-2027 के सूचना बुलेटिन को देखें।"
       }
     ],
     "exam_date": "2027-01-28",
+    "exam_pattern": [
+      {
+        "marks": "As per rules",
+        "part_en": "Paper 1 (B.E./B.Tech) - Mathematics, Physics, Chemistry",
+        "part_hi": "पेपर 1 (बी.ई./बी.टेक) - गणित, भौतिकी, रसायन विज्ञान",
+        "questions": "75",
+        "time": "3 Hours"
+      },
+      {
+        "marks": "As per rules",
+        "part_en": "Paper 2A (B.Arch.) - Mathematics, Aptitude Test, Drawing Test",
+        "part_hi": "पेपर 2ए (बी.आर्च.) - गणित, एप्टीट्यूड टेस्ट, ड्राइंग टेस्ट",
+        "questions": "77",
+        "time": "3 Hours 30 Minutes"
+      },
+      {
+        "marks": "As per rules",
+        "part_en": "Paper 2B (B.Planning) - Mathematics, Aptitude Test, Planning",
+        "part_hi": "पेपर 2बी (बी.प्लानिंग) - गणित, एप्टीट्यूड टेस्ट, प्लानिंग",
+        "questions": "100",
+        "time": "3 Hours 30 Minutes"
+      }
+    ],
+    "explain": [
+      {
+        "a_en": "Joint Entrance Examination (JEE) Main is a national level entrance exam conducted by NTA for admission to undergraduate engineering, architecture, and planning programs across India.",
+        "a_hi": "संयुक्त प्रवेश परीक्षा (जेईई) मुख्य भारत भर में स्नातक इंजीनियरिंग, वास्तुकला और योजना कार्यक्रमों में प्रवेश के लिए एनटीए द्वारा आयोजित एक राष्ट्रीय स्तर की प्रवेश परीक्षा है।",
+        "q_en": "What is JEE Main 2027?",
+        "q_hi": "जेईई मुख्य 2027 क्या है?"
+      }
+    ],
     "extra": [
       {
-        "label_en": "Languages of Exam",
-        "label_hi": "परीक्षा की भाषाएं",
+        "label_en": "Exam Languages",
+        "label_hi": "परीक्षा भाषाएं",
         "value_en": "English, Hindi, Assamese, Bengali, Gujarati, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu and Urdu",
         "value_hi": "अंग्रेजी, हिंदी, असमिया, बंगाली, गुजराती, कन्नड़, मलयालम, मराठी, उड़िया, पंजाबी, तमिल, तेलुगु और उर्दू"
       }
     ],
     "faq": [
       {
-        "a_en": "The last date to submit the online application form is 22 November 2026 up to 11:50 P.M.",
-        "a_hi": "ऑनलाइन आवेदन पत्र जमा करने की अंतिम तिथि 22 नवंबर 2026 रात 11:50 बजे तक है।",
+        "a_en": "The last date to apply for JEE Main 2027 Session 1 is 22nd November 2026.",
+        "a_hi": "जेईई मुख्य 2027 सत्र 1 के लिए आवेदन करने की अंतिम तिथि 22 नवंबर 2026 है।",
         "q_en": "What is the last date to apply for JEE Main 2027 Session 1?",
-        "q_hi": "जेईई मेन 2027 सत्र 1 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+        "q_hi": "जेईई मुख्य 2027 सत्र 1 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "The examination will be conducted on 20, 21, 22, 23, 24, and 28 January 2027.",
+        "a_en": "The application fee is ₹500.",
+        "a_hi": "आवेदन शुल्क ₹500 है।",
+        "q_en": "What is the application fee for JEE Main 2027?",
+        "q_hi": "जेईई मुख्य 2027 के लिए आवेदन शुल्क क्या है?"
+      },
+      {
+        "a_en": "The exam will be conducted on 20, 21, 22, 23, 24, and 28 January 2027.",
         "a_hi": "परीक्षा 20, 21, 22, 23, 24 और 28 जनवरी 2027 को आयोजित की जाएगी।",
-        "q_en": "When will the JEE Main 2027 Session 1 examination be conducted?",
-        "q_hi": "जेईई मेन 2027 सत्र 1 की परीक्षा कब आयोजित की जाएगी?"
+        "q_en": "When will the JEE Main 2027 Session 1 exam be conducted?",
+        "q_hi": "जेईई मुख्य 2027 सत्र 1 की परीक्षा कब आयोजित की जाएगी?"
       },
       {
-        "a_en": "Admit cards will be available for download from the NTA website starting 13 January 2027.",
-        "a_hi": "प्रवेश पत्र 13 जनवरी 2027 से एनटीए की वेबसाइट से डाउनलोड के लिए उपलब्ध होंगे।",
-        "q_en": "When can I download the admit card?",
-        "q_hi": "मैं प्रवेश पत्र कब डाउनलोड कर सकता हूँ?"
+        "a_en": "The official website is https://jeemain.nta.nic.in/",
+        "a_hi": "आधिकारिक वेबसाइट https://jeemain.nta.nic.in/ है।",
+        "q_en": "What is the official website to apply for JEE Main 2027?",
+        "q_hi": "जेईई मुख्य 2027 के लिए आवेदन करने की आधिकारिक वेबसाइट क्या है?"
       },
       {
-        "a_en": "Candidates can apply through the official website https://jeemain.nta.nic.in/",
-        "a_hi": "उम्मीदवार आधिकारिक वेबसाइट https://jeemain.nta.nic.in/ के माध्यम से आवेदन कर सकते हैं।",
-        "q_en": "What is the official website to apply?",
-        "q_hi": "आवेदन करने के लिए आधिकारिक वेबसाइट क्या है?"
+        "a_en": "Admit cards will be available for download from 13th January 2027.",
+        "a_hi": "प्रवेश पत्र 13 जनवरी 2027 से डाउनलोड के लिए उपलब्ध होंगे।",
+        "q_en": "When will the admit cards be available for download?",
+        "q_hi": "प्रवेश पत्र डाउनलोड के लिए कब उपलब्ध होंगे?"
+      },
+      {
+        "a_en": "No, candidates can apply only for Session 1 currently; a separate opportunity will be given for Session 2 later.",
+        "a_hi": "नहीं, उम्मीदवार वर्तमान में केवल सत्र 1 के लिए आवेदन कर सकते हैं; बाद में सत्र 2 के लिए एक अलग अवसर दिया जाएगा।",
+        "q_en": "Can I apply for Session 2 right now?",
+        "q_hi": "क्या मैं अभी सत्र 2 के लिए आवेदन कर सकता हूँ?"
+      },
+      {
+        "a_en": "The exam city will be announced on 30th December 2026.",
+        "a_hi": "परीक्षा शहर की घोषणा 30 दिसंबर 2026 को की जाएगी।",
+        "q_en": "When is the exam city likely to be announced?",
+        "q_hi": "परीक्षा शहर की घोषणा कब होने की संभावना है?"
+      },
+      {
+        "a_en": "JEE Main comprises Paper 1 for B.E./B.Tech, Paper 2A for B.Arch, and Paper 2B for B.Planning.",
+        "a_hi": "जेईई मुख्य में बी.ई./बी.टेक के लिए पेपर 1, बी.आर्च के लिए पेपर 2ए और बी.प्लानिंग के लिए पेपर 2बी शामिल हैं।",
+        "q_en": "What are the papers included in JEE Main?",
+        "q_hi": "जेईई मुख्य में कौन से पेपर शामिल हैं?"
       }
     ],
-    "fees": [],
+    "fees": [
+      {
+        "amount": "₹500",
+        "cat_en": "General / All Candidates",
+        "cat_hi": "सामान्य / सभी उम्मीदवार"
+      }
+    ],
     "h1_en": "JEE Main 2027 Session 1 Online Form Open",
     "h1_hi": "संयुक्त प्रवेश परीक्षा मुख्य 2027 सत्र 1 ऑनलाइन फॉर्म खुला",
     "how_en": [
       "Visit the official website at https://jeemain.nta.nic.in/",
-      "Register and fill out the online application form for Session 1",
+      "Register and fill out the online application form",
       "Upload necessary documents and pay the examination fee",
       "Submit the form and take a printout for future reference"
     ],
     "how_hi": [
       "आधिकारिक वेबसाइट https://jeemain.nta.nic.in/ पर जाएं",
-      "सत्र 1 के लिए पंजीकरण करें और ऑनलाइन आवेदन पत्र भरें",
+      "पंजीकरण करें और ऑनलाइन आवेदन पत्र भरें",
       "आवश्यक दस्तावेज अपलोड करें और परीक्षा शुल्क का भुगतान करें",
       "फॉर्म जमा करें और भविष्य के संदर्भ के लिए प्रिंटआउट लें"
     ],
-    "intro_en": "The National Testing Agency (NTA) has released the public notice for the Joint Entrance Examination (JEE Main) 2027 Session 1. This examination is conducted for admission to undergraduate engineering, architecture, and planning programs across participating institutions. Online applications are open from 24 October 2026 to 22 November 2026. Candidates seeking admission for the academic session 2027-28 should review the eligibility and apply through the official website.",
-    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने संयुक्त प्रवेश परीक्षा (जेईई मेन) 2027 सत्र 1 के लिए सार्वजनिक नोटिस जारी कर दिया है। यह परीक्षा भाग लेने वाले संस्थानों में स्नातक इंजीनियरिंग, वास्तुकला और योजना कार्यक्रमों में प्रवेश के लिए आयोजित की जाती है। ऑनलाइन आवेदन 24 अक्तूबर 2026 से 22 नवंबर 2026 तक खुले हैं। शैक्षणिक सत्र 2027-28 के लिए प्रवेश चाहने वाले उम्मीदवार पात्रता की जांच करें और आधिकारिक वेबसाइट के माध्यम से आवेदन करें।",
+    "intro_en": "The National Testing Agency (NTA) has released the notification for the Joint Entrance Examination (JEE) Main 2027 Session 1. The exam is conducted for admission to Undergraduate Engineering Programs (B.E/B.Tech), B. Arch, and B. Planning courses at NITs, IIITs, CFTIs, and other participating institutions. Online applications are open from 24th October 2026 to 22nd November 2026. Candidates wishing to seek admission or qualify for JEE (Advanced) should read the notice and apply within the stipulated timeline.",
+    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने संयुक्त प्रवेश परीक्षा (जेईई) मुख्य 2027 सत्र 1 के लिए अधिसूचना जारी कर दी है। यह परीक्षा एनआईटी, आईआईआईटी, सीएफटीआई और अन्य भाग लेने वाले संस्थानों में स्नातक इंजीनियरिंग कार्यक्रमों (बी.ई./बी.टेक), बी. आर्च और बी. प्लानिंग पाठ्यक्रमों में प्रवेश के लिए आयोजित की जाती है। ऑनलाइन आवेदन 24 अक्टूबर 2026 से 22 नवंबर 2026 तक खुले हैं। जो उम्मीदवार प्रवेश चाहते हैं या जेईई (एडवांस्ड) के लिए अर्हता प्राप्त करना चाहते हैं, उन्हें नोटिस पढ़ना चाहिए और निर्धारित समय सीमा के भीतर आवेदन करना चाहिए।",
     "last_date": "2026-11-22",
+    "mistakes_en": [
+      "Do not submit more than one application form; multiple forms will lead to strict action.",
+      "Ensure correct email and mobile number are provided for all communications."
+    ],
+    "mistakes_hi": [
+      "एक से अधिक आवेदन पत्र जमा न करें; एकाधिक फॉर्मों पर सख्त कार्रवाई की जाएगी।",
+      "सुनिश्चित करें कि सभी संचार के लिए सही ईमेल और मोबाइल नंबर प्रदान किया गया है।"
+    ],
+    "not_en": [
+      "Candidates submitting more than one application form will be disqualified"
+    ],
+    "not_hi": [
+      "एक से अधिक आवेदन पत्र जमा करने वाले उम्मीदवारों को अयोग्य घोषित कर दिया जाएगा"
+    ],
     "notice_date": "2026-10-24",
     "official_site": "https://nta.ac.in/",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
         "label_en": "Posts",
         "label_hi": "पद",
-        "value_en": "Undergraduate Engineering Programs (B.E/B.Tech), B.Arch, B.Planning",
-        "value_hi": "स्नातक इंजीनियरिंग कार्यक्रम (बी.ई./बी.टेक), बी.आर्क, बी.प्लानिंग"
+        "value_en": "Undergraduate Engineering Programs (B.E/B.Tech), B. Arch, B. Planning",
+        "value_hi": "स्नातक इंजीनियरिंग कार्यक्रम (बी.ई./बी.टेक), बी. आर्च, बी. प्लानिंग"
       },
       {
-        "label_en": "Apply online (start to last date)",
-        "label_hi": "ऑनलाइन आवेदन (प्रारंभ से अंतिम तिथि)",
+        "label_en": "Apply online",
+        "label_hi": "ऑनलाइन आवेदन",
         "value_en": "24 Oct 2026 to 22 Nov 2026",
-        "value_hi": "24 अक्तूबर 2026 से 22 नवंबर 2026"
+        "value_hi": "24 अक्टूबर 2026 से 22 नवंबर 2026"
       },
       {
         "label_en": "Last date for fee",
@@ -233,44 +338,52 @@
       {
         "label_en": "Advertisement number",
         "label_hi": "विज्ञापन संख्या",
-        "value_en": "Public Notice Dated 24.10.2026",
-        "value_hi": "सार्वजनिक नोटिस दिनांक 24.10.2026"
+        "value_en": "JEE (Main) 2027 Session 1",
+        "value_hi": "जेईई (मुख्य) 2027 सत्र 1"
       }
     ],
+    "salary": [],
     "selection_en": [
-      "Computer Based Test (CBT) / Pen and Paper mode (for Drawing test in B. Arch)",
-      "All India Rank / Score generation"
+      "Computer Based Test (CBT) / Paper and Pen mode (for Drawing)",
+      "Declaration of Result"
     ],
     "selection_hi": [
-      "कंप्यूटर आधारित परीक्षा (सीबीटी) / पेन और पेपर मोड (बी. आर्क में ड्राइंग परीक्षा के लिए)",
-      "अखिल भारतीय रैंक / स्कोर सृजन"
+      "कंप्यूटर आधारित परीक्षा (सीबीटी) / पेपर और पेन मोड (ड्राइंग के लिए)",
+      "परिणाम की घोषणा"
     ],
+    "share_card": {
+      "headline_en": "Online Form Open",
+      "headline_hi": "ऑनलाइन फॉर्म खुला",
+      "kind": "job",
+      "line_en": "JEE Main 2027 Session 1",
+      "line_hi": "जेईई मुख्य 2027 सत्र 1",
+      "posts": null
+    },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "National Testing Agency has invited online applications for Joint Entrance Examination (JEE Main) 2027 Session 1. Eligible candidates can apply online through the official website before 22 November 2026. Read the notice for exam dates, papers, and important instructions.",
-    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने संयुक्त प्रवेश परीक्षा (मुख्य) 2027 सत्र 1 के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 22 नवंबर 2026 से पहले आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं। परीक्षा तिथियों, पेपर और महत्वपूर्ण निर्देशों के लिए सूचना पढ़ें।",
+    "summary_en": "National Testing Agency has invited online applications for Joint Entrance Examination JEE Main 2027 Session 1. Eligible candidates can apply online through the official website.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने संयुक्त प्रवेश परीक्षा मुख्य 2027 सत्र 1 के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
     "vacancies": [
       {
-        "detail_en": "Admission to NITs, IIITs, CFTIs and other participating universities",
-        "detail_hi": "एनआईटी, आईआईआईटी, सीएफटीआई और अन्य भाग लेने वाले विश्वविद्यालयों में प्रवेश",
+        "detail_en": "Paper 1 admission to NITs, IIITs, CFTIs and participating universities, and eligibility test for JEE (Advanced)",
+        "detail_hi": "एनआईटी, आईआईआईटी, सीएफटीआई और भाग लेने वाले विश्वविद्यालयों में प्रवेश के लिए पेपर 1 और जेईई (एडवांस्ड) के लिए पात्रता परीक्षा",
         "post_en": "Undergraduate Engineering Programs (B.E/B.Tech)",
         "post_hi": "स्नातक इंजीनियरिंग कार्यक्रम (बी.ई./बी.टेक)",
-        "total": "Not specified"
+        "total": "As per rules"
       },
       {
-        "detail_en": "Admission to B. Arch courses",
-        "detail_hi": "बी. आर्क पाठ्यक्रमों में प्रवेश",
-        "post_en": "B. Arch",
-        "post_hi": "बी. आर्क",
-        "total": "Not specified"
-      },
-      {
-        "detail_en": "Admission to B. Planning courses",
-        "detail_hi": "बी. प्लानिंग पाठ्यक्रमों में प्रवेश",
-        "post_en": "B. Planning",
-        "post_hi": "बी. प्लानिंग",
-        "total": "Not specified"
+        "detail_en": "Paper 2A and Paper 2B admission to respective courses",
+        "detail_hi": "संबंधित पाठ्यक्रमों में प्रवेश के लिए पेपर 2ए और पेपर 2बी",
+        "post_en": "B. Arch & B. Planning",
+        "post_hi": "बी. आर्च और बी. प्लानिंग",
+        "total": "As per rules"
       }
+    ],
+    "who_en": [
+      "Candidates aspiring for admission to engineering, architecture, and planning courses in top technical institutions"
+    ],
+    "who_hi": [
+      "शीर्ष तकनीकी संस्थानों में इंजीनियरिंग, वास्तुकला और योजना पाठ्यक्रमों में प्रवेश के इच्छुक उम्मीदवार"
     ]
   },
   "pdf": {

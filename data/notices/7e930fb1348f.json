@@ -36,97 +36,196 @@
   "notice_date": "2026-09-14",
   "org": "CTET",
   "page": {
+    "after_en": [
+      "Appear for the CTET exam on the allotted date and shift.",
+      "Wait for the declaration of results on the official website."
+    ],
+    "after_hi": [
+      "आवंटित तिथि और पाली में सीटीईटी परीक्षा में शामिल हों।",
+      "आधिकारिक वेबसाइट पर परिणाम घोषित होने की प्रतीक्षा करें।"
+    ],
     "age": [],
     "apply_start": null,
-    "apply_url": null,
+    "apply_url": "https://www.cbse.gov.in",
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Note your exam dates as 12th and 13th December 2026.",
+      "Check exam city 15 days before the test.",
+      "Download the admit card 2 days before the exam."
+    ],
+    "checklist_hi": [
+      "अपनी परीक्षा तिथियां 12 और 13 दिसंबर 2026 के रूप में नोट करें।",
+      "परीक्षा से 15 दिन पहले परीक्षा शहर की जांच करें।",
+      "परीक्षा से 2 दिन पहले प्रवेश पत्र डाउनलोड करें।"
+    ],
     "conducted_by_en": "Central Board of Secondary Education (CBSE)",
     "conducted_by_hi": "केंद्रीय माध्यमिक शिक्षा बोर्ड (सीबीएसई)",
     "dates": [
       {
-        "label_en": "Notice Date",
-        "label_hi": "नोटिस तिथि",
+        "label_en": "Notice date",
+        "label_hi": "सूचना तिथि",
         "value_en": "14 Sep 2026",
         "value_hi": "14 सितंबर 2026"
       },
       {
-        "label_en": "Exam Date",
+        "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
-        "value_en": "12 Dec 2026 - 13 Dec 2026",
-        "value_hi": "12 दिसंबर 2026 - 13 दिसंबर 2026"
+        "value_en": "12 & 13 Dec 2026",
+        "value_hi": "12 और 13 दिसंबर 2026"
+      },
+      {
+        "label_en": "Exam city availability",
+        "label_hi": "परीक्षा शहर उपलब्धता",
+        "value_en": "15 days before exam",
+        "value_hi": "परीक्षा से 15 दिन पहले"
+      },
+      {
+        "label_en": "Admit card availability",
+        "label_hi": "प्रवेश पत्र उपलब्धता",
+        "value_en": "2 days before exam",
+        "value_hi": "परीक्षा से 2 दिन पहले"
       }
+    ],
+    "documents_en": [
+      "Printed copy of CTET Admit Card",
+      "Valid photo ID proof"
+    ],
+    "documents_hi": [
+      "सीटीईटी प्रवेश पत्र की मुद्रित प्रति",
+      "मान्य फोटो आईडी प्रमाण"
     ],
     "eligibility": [],
     "exam_date": "2026-12-12",
-    "extra": [],
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "The Central Teacher Eligibility Test (CTET) is a national-level eligibility test conducted by CBSE to determine the eligibility of candidates for appointment as teachers for classes I to VIII.",
+        "a_hi": "केंद्रीय शिक्षक पात्रता परीक्षा (सीटीईटी) सीबीएसई द्वारा आयोजित एक राष्ट्रीय स्तर की पात्रता परीक्षा है, जो कक्षा 1 से 8 तक के शिक्षकों के रूप में नियुक्ति के लिए उम्मीदवारों की पात्रता निर्धारित करती है।",
+        "q_en": "What is CTET?",
+        "q_hi": "सीटीईटी क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Issuing authority",
+        "label_hi": "जारी करने वाला प्राधिकारी",
+        "value_en": "Director (CTET), CBSE",
+        "value_hi": "निदेशक (सीटीईटी), सीबीएसई"
+      }
+    ],
     "faq": [
       {
         "a_en": "The CTET 22nd edition exam will be conducted on 12th and 13th December 2026.",
         "a_hi": "सीटीईटी 22वें संस्करण की परीक्षा 12 और 13 दिसंबर 2026 को आयोजित की जाएगी।",
-        "q_en": "When will the CTET 22nd edition exam be conducted?",
-        "q_hi": "सीटीईटी 22वें संस्करण की परीक्षा कब आयोजित की जाएगी?"
+        "q_en": "When is the CTET 22nd edition exam scheduled?",
+        "q_hi": "सीटीईटी 22वें संस्करण की परीक्षा कब निर्धारित है?"
       },
       {
-        "a_en": "Information regarding the examination city and date will be available on the CTET portal 15 days before the exam.",
-        "a_hi": "परीक्षा शहर और तिथि से संबंधित जानकारी परीक्षा से 15 दिन पहले सीटीईटी पोर्टल पर उपलब्ध होगी।",
-        "q_en": "When will the CTET exam city and date information be available?",
-        "q_hi": "सीटीईटी परीक्षा शहर और तिथि की जानकारी कब उपलब्ध होगी?"
+        "a_en": "Information regarding the examination city and date will be made available on the CTET portal 15 days before the examination.",
+        "a_hi": "परीक्षा शहर और तिथि से संबंधित जानकारी परीक्षा से 15 दिन पहले सीटीईटी पोर्टल पर उपलब्ध कराई जाएगी।",
+        "q_en": "When will the CTET exam city be announced?",
+        "q_hi": "सीटीईटी परीक्षा शहर की घोषणा कब की जाएगी?"
       },
       {
-        "a_en": "Admit cards containing exam centre details will be available for download from the CTET portal two days before the examination.",
-        "a_hi": "परीक्षा केंद्र विवरण वाले प्रवेश पत्र परीक्षा से दो दिन पहले सीटीईटी पोर्टल से डाउनलोड के लिए उपलब्ध होंगे।",
-        "q_en": "When can candidates download the CTET Admit Card?",
-        "q_hi": "अभ्यर्थी सीटीईटी प्रवेश पत्र कब डाउनलोड कर सकते हैं?"
+        "a_en": "The admit card will be available for download from the CTET portal two days before the examination.",
+        "a_hi": "प्रवेश पत्र परीक्षा से दो दिन पहले सीटीईटी पोर्टल से डाउनलोड के लिए उपलब्ध होगा।",
+        "q_en": "When can I download the CTET admit card?",
+        "q_hi": "मैं सीटीईटी प्रवेश पत्र कब डाउनलोड कर सकता हूं?"
+      },
+      {
+        "a_en": "The Central Teacher Eligibility Test is conducted by the Central Board of Secondary Education (CBSE).",
+        "a_hi": "केंद्रीय शिक्षक पात्रता परीक्षा केंद्रीय माध्यमिक शिक्षा बोर्ड (सीबीएसई) द्वारा आयोजित की जाती है।",
+        "q_en": "Who conducts the CTET exam?",
+        "q_hi": "सीटीईटी परीक्षा कौन आयोजित करता है?"
+      },
+      {
+        "a_en": "Candidates can visit the official website https://www.cbse.gov.in or the CTET portal for updates and downloads.",
+        "a_hi": "अभ्यर्थी अपडेट और डाउनलोड के लिए आधिकारिक वेबसाइट https://www.cbse.gov.in या सीटीईटी पोर्टल पर जा सकते हैं।",
+        "q_en": "What is the official website to download the CTET admit card?",
+        "q_hi": "सीटीईटी प्रवेश पत्र डाउनलोड करने के लिए आधिकारिक वेबसाइट क्या है?"
       }
     ],
     "fees": [],
     "h1_en": "CTET 22nd Edition Exam Schedule 2026",
     "h1_hi": "केंद्रीय शिक्षक पात्रता परीक्षा 22वां संस्करण परीक्षा कार्यक्रम 2026",
     "how_en": [
-      "Visit the official CTET portal 15 days before the exam to check the allotted examination city and date.",
-      "Download the Admit Card from the CTET portal two days before the examination."
+      "Visit the official CTET portal.",
+      "Click on the link to check the examination city and date 15 days before the exam.",
+      "Download the admit card 2 days before the exam using your login credentials."
     ],
     "how_hi": [
-      "आवंटित परीक्षा शहर और तिथि की जांच करने के लिए परीक्षा से 15 दिन पहले आधिकारिक सीटीईटी पोर्टल पर जाएं।",
-      "परीक्षा से दो दिन पहले सीटीईटी पोर्टल से प्रवेश पत्र डाउनलोड करें।"
+      "आधिकारिक सीटीईटी पोर्टल पर जाएं।",
+      "परीक्षा से 15 दिन पहले परीक्षा शहर और तिथि की जांच करने के लिए लिंक पर क्लिक करें।",
+      "अपने लॉगिन विवरण का उपयोग करके परीक्षा से 2 दिन पहले प्रवेश पत्र डाउनलोड करें।"
     ],
-    "intro_en": "The Central Board of Secondary Education (CBSE) has released the public notice for the 22nd edition of the Central Teacher Eligibility Test (CTET). The examination is scheduled to be held on 12th and 13th December 2026. Candidates who applied for the test can read this notice for schedule details, exam city information, and admit card download timelines.",
-    "intro_hi": "केंद्रीय माध्यमिक शिक्षा बोर्ड ने केंद्रीय शिक्षक पात्रता परीक्षा (सीटीईटी) के 22वें संस्करण के लिए सार्वजनिक नोटिस जारी कर दिया है। यह परीक्षा 12 और 13 दिसंबर 2026 को आयोजित होने निर्धारित है। परीक्षा के लिए आवेदन करने वाले अभ्यर्थी इस नोटिस से परीक्षा कार्यक्रम, परीक्षा शहर की जानकारी और प्रवेश पत्र डाउनलोड करने की समय-सीमा की जानकारी प्राप्त कर सकते हैं।",
+    "intro_en": "The Central Board of Secondary Education (CBSE) has released the public notice for the conduct of the 22nd edition of the Central Teacher Eligibility Test (CTET). The examination is scheduled to be held on 12th and 13th December 2026. Candidates who applied for the test should note that information regarding the examination city and exam date will be available on the official portal 15 days prior to the exam. The admit cards containing the exam centre details can be downloaded from the portal two days before the examination.",
+    "intro_hi": "केंद्रीय माध्यमिक शिक्षा बोर्ड (सीबीएसई) ने केंद्रीय शिक्षक पात्रता परीक्षा (सीटीईटी) के 22वें संस्करण के आयोजन के लिए सार्वजनिक नोटिस जारी कर दिया है। परीक्षा 12 और 13 दिसंबर 2026 को आयोजित होने निर्धारित है। परीक्षा के लिए आवेदन करने वाले अभ्यर्थियों को ध्यान देना चाहिए कि परीक्षा शहर और परीक्षा तिथि की जानकारी परीक्षा से 15 दिन पहले आधिकारिक पोर्टल पर उपलब्ध होगी। परीक्षा केंद्र विवरण वाले प्रवेश पत्र परीक्षा से दो दिन पहले पोर्टल से डाउनलोड किए जा सकते हैं।",
     "last_date": null,
+    "mistakes_en": [
+      "Do not wait until the last day to download the admit card."
+    ],
+    "mistakes_hi": [
+      "प्रवेश पत्र डाउनलोड करने के लिए अंतिम दिन तक प्रतीक्षा न करें।"
+    ],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": "2026-09-14",
-    "official_site": "https://www.cbse.gov.in",
+    "official_site": "https://ctet.nic.in/",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Exam Date",
-        "label_hi": "परीक्षा तिथि",
-        "value_en": "12 Dec 2026 and 13 Dec 2026",
-        "value_hi": "12 दिसंबर 2026 और 13 दिसंबर 2026"
+        "label_en": "Exam dates",
+        "label_hi": "परीक्षा तिथियां",
+        "value_en": "12 & 13 Dec 2026",
+        "value_hi": "12 और 13 दिसंबर 2026"
       },
       {
-        "label_en": "Exam Edition",
-        "label_hi": "परीक्षा संस्करण",
-        "value_en": "22nd Edition",
-        "value_hi": "22वां संस्करण"
+        "label_en": "Exam city slip",
+        "label_hi": "परीक्षा शहर पर्ची",
+        "value_en": "15 days before exam",
+        "value_hi": "परीक्षा से 15 दिन पहले"
       },
       {
-        "label_en": "Admit Card Availability",
-        "label_hi": "प्रवेश पत्र उपलब्धता",
-        "value_en": "2 days before the exam",
+        "label_en": "Admit card download",
+        "label_hi": "प्रवेश पत्र डाउनलोड",
+        "value_en": "2 days before exam",
         "value_hi": "परीक्षा से 2 दिन पहले"
+      },
+      {
+        "label_en": "Notice number",
+        "label_hi": "सूचना संख्या",
+        "value_en": "F. No. CBSE/CTET/ 2026",
+        "value_hi": "एफ. नो. सीबीएसई/सीटीईटी/ 2026"
       }
     ],
+    "salary": [],
     "selection_en": [
-      "Written Examination"
+      "Written examination (CTET)"
     ],
     "selection_hi": [
-      " लिखित परीक्षा"
+      "लिखित परीक्षा (सीटीईटी)"
     ],
+    "share_card": {
+      "headline_en": "Exam Dates Announced",
+      "headline_hi": "परीक्षा तिथियों की घोषणा",
+      "kind": "admit",
+      "line_en": "CTET 22nd Edition Exam",
+      "line_hi": "सीटीईटी 22वां संस्करण परीक्षा",
+      "posts": null
+    },
     "status_en": "Exam dates announced",
     "status_hi": "परीक्षा तिथियों की घोषणा की गई",
-    "summary_en": "The 22nd edition of the Central Teacher Eligibility Test (CTET) will be conducted on 12th and 13th December 2026 by CBSE. Candidates should check their exam city 15 days prior and download their admit cards two days before the exam.",
-    "summary_hi": "केंद्रीय शिक्षक पात्रता परीक्षा (सीटीईटी) का 22वां संस्करण केंद्रीय माध्यमिक शिक्षा बोर्ड द्वारा 12 और 13 दिसंबर 2026 को आयोजित किया जाएगा। अभ्यर्थी परीक्षा से 15 दिन पहले अपना परीक्षा शहर देख सकते हैं और परीक्षा से दो दिन पहले प्रवेश पत्र डाउनलोड कर सकते हैं।",
-    "vacancies": []
+    "summary_en": "The 22nd edition of the Central Teacher Eligibility Test (CTET) will be conducted on 12th and 13th December 2026 by CBSE. Candidates can check their exam city 15 days before and download admit cards 2 days before the exam.",
+    "summary_hi": "केंद्रीय शिक्षक पात्रता परीक्षा (सीटीईटी) का 22वां संस्करण सीबीएसई द्वारा 12 और 13 दिसंबर 2026 को आयोजित किया जाएगा। अभ्यर्थी परीक्षा से 15 दिन पहले अपना परीक्षा शहर और परीक्षा से 2 दिन पहले प्रवेश पत्र डाउनलोड कर सकते हैं।",
+    "vacancies": [],
+    "who_en": [
+      "Candidates who have registered for the 22nd edition of the Central Teacher Eligibility Test (CTET)."
+    ],
+    "who_hi": [
+      "वे अभ्यर्थी जिन्होंने केंद्रीय शिक्षक पात्रता परीक्षा (सीटीईटी) के 22वें संस्करण के लिए पंजीकरण कराया है।"
+    ]
   },
   "pdf": {
     "bytes": 356150,
