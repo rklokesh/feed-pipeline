@@ -196,11 +196,17 @@ def valid_date(v) -> str | None:
 def official_date(n: dict) -> str:
     """The date the board issued the notice; falls back to the day our watcher first saw it on the board's site."""
     seen = dt.datetime.fromisoformat(n["first_seen"].replace("Z", "+00:00")).astimezone(IST).date()
-    d = valid_date((n.get("page") or {}).get("notice_date"))
+    pg, c = n.get("page") or {}, n.get("card") or {}
+    d = valid_date(pg.get("notice_date"))
     if d:
         dd = dt.date.fromisoformat(d)
-        if seen - dt.timedelta(days=400) <= dd <= seen:   # sane: issued before we saw it, not ancient
+        if seen - dt.timedelta(days=800) <= dd <= seen:   # issued before we saw it; old notices keep their old date
             return d
+    # No date printed: a notice whose last date had already passed when we first saw it is old, not new —
+    # it was issued on or before that last date (e.g. a board added to our watch list later). Never show it as "New".
+    last = valid_date(pg.get("last_date") or c.get("last_date"))
+    if last and dt.date.fromisoformat(last) < seen:
+        return last
     return seen.isoformat()
 
 
