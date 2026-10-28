@@ -1,5 +1,20 @@
 {
   "board_url": "https://cisfrectt.cisf.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Notices regarding conduct of computer based examination for past recruitments, not a new job opening or final result/admit card for general listing.",
+    "summary_en": "",
+    "summary_hi": "",
+    "title_en": "",
+    "title_hi": "",
+    "type": "Admit card",
+    "vacancies": null
+  },
   "fields": {},
   "first_seen": "2026-10-28T21:19:07+00:00",
   "id": "7cc4e128c487",
@@ -10,7 +25,7 @@
     "via": "data:application/pdf;base64,%PDF-1.6\r%����\r\n6 0 obj\r<</Metadata 4 0 R/OutputIntents 2 0 R/Pages 7 0 R/Type/Catalog>>\rendobj\r4 0 obj\r<</Length 3531/Subtype/XML/Type/Metadata>>stream\r\n<?xpacket begin="
   },
   "source_id": "cisf-recruitment",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English) Conduct of CBE for the posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (Hindi) Conduct of CBE for the post of ASI/Exe (LDCE) -2023 (English) Conduct of CBE for the post of ASI/Exe (LDCE) - 2023 (Hindi)",
   "url": "https://cisfrectt.cisf.gov.in/file_open.php?fnm=4LBugO7f0csHwvFIZdl0HNHrlH0n7wQI_DZQBEgW1Bkc2P0PtdzqHkfe5gS5L2RH1KYMbCVXDkHyZ5vcGPTSRQ"
 }
