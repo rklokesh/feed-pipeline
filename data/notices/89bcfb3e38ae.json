@@ -1,0 +1,33 @@
+{
+  "board_url": "https://nta.ac.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "n (Main) – 2027 (Session 1) is available on the NTA website https://jeemain.nta.nic.in/. 2. To facilitate a smooth and streamlined registration process for JEE (Main) 2",
+      "source": "rule",
+      "value": "https://jeemain.nta.nic.in/"
+    },
+    "apply_url": {
+      "evidence": "https://jeemain.nta.nic.in/",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://jeemain.nta.nic.in/"
+    }
+  },
+  "first_seen": "2026-10-28T16:54:20+00:00",
+  "id": "89bcfb3e38ae",
+  "kind": "notification",
+  "org": "NTA",
+  "pdf": {
+    "bytes": 714120,
+    "pages": 1,
+    "sha256": "d24733397846ca61d0ef44f7ab3eda31f09851b48e9a661d95953f37561b53c3",
+    "text_kind": "text"
+  },
+  "source_id": "nta-home",
+  "status": "pending_review",
+  "title": "Advisory and Instructions regarding registration process for Joint Entrance Examination (Main) – 2027 (Session 1) Read More",
+  "url": "https://nta.ac.in/Download/Notice/Notice_20261028220547.pdf"
+}
