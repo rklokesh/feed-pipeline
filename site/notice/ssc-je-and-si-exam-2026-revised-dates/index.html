@@ -216,6 +216,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 
 /* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.ogimg { display: block; width: 100%; height: auto; margin: 14px auto 0; border: 1px solid var(--line); }
 .hrow { display: flex; align-items: center; justify-content: center; gap: 18px; }
 .hrow.has-logo h1 { text-align: left; margin: 0; }
 .hrow .olg { flex: none; width: 64px; height: 64px; object-fit: contain; }
@@ -261,10 +262,12 @@ html[lang="hi"] .hisum { display: none; }
   <main>
     <div class="title">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">SSC</span></nav>
-      <div class="hrow has-logo"><img class="olg" src="/org/ssc.webp" width="64" height="64" alt="Staff Selection Commission (SSC) logo" decoding="async"><h1 data-t="h1">SSC JE and SI Exam 2026 Revised Dates</h1></div>
+      <h1 data-t="h1">SSC JE and SI Exam 2026 Revised Dates</h1>
       <p class="meta g" data-t="metaV">Updated 26 Oct 2026 · Source: ssc.gov.in</p>
       <p class="status"><span id="state">Exam dates revised</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">The Staff Selection Commission has revised the examination dates for Junior Engineer and Sub-Inspector in Delhi Police and Central Armed Police Forces Examinations 2026. Check the revised schedule on this page.</p>
+      <img class="ogimg" id="ogimg" src="/notice/ssc-je-and-si-exam-2026-revised-dates/og.png" data-en="/notice/ssc-je-and-si-exam-2026-revised-dates/og.png" data-hi="/notice/ssc-je-and-si-exam-2026-revised-dates/og-hi.png" width="1200" height="675" alt="SSC JE and SI Exam 2026 Revised Dates — summary card" decoding="async" onerror="this.hidden=true">
+      <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
       <div class="h" data-t="key">At a glance</div>

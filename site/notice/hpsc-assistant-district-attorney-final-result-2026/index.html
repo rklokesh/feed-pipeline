@@ -216,6 +216,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 
 /* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.ogimg { display: block; width: 100%; height: auto; margin: 14px auto 0; border: 1px solid var(--line); }
 .hrow { display: flex; align-items: center; justify-content: center; gap: 18px; }
 .hrow.has-logo h1 { text-align: left; margin: 0; }
 .hrow .olg { flex: none; width: 64px; height: 64px; object-fit: contain; }
@@ -261,10 +262,12 @@ html[lang="hi"] .hisum { display: none; }
   <main>
     <div class="title">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=results" data-t="crumbType">Results</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">HPSC</span></nav>
-      <div class="hrow has-logo"><img class="olg" src="/org/hpsc.webp" width="64" height="64" alt="Haryana Public Service Commission (HPSC) logo" decoding="async"><h1 data-t="h1">HPSC Assistant District Attorney Final Result 2026</h1></div>
+      <h1 data-t="h1">HPSC Assistant District Attorney Final Result 2026</h1>
       <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: hpsc.gov.in</p>
       <p class="status"><span id="state">Final result declared</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">HPSC has released the final result for the Assistant District Attorney examination 2025 in the Prosecution Department, Haryana. Candidates who appeared for the selection process can check their qualification status through the notice.</p>
+      <img class="ogimg" id="ogimg" src="/notice/hpsc-assistant-district-attorney-final-result-2026/og.png" data-en="/notice/hpsc-assistant-district-attorney-final-result-2026/og.png" data-hi="/notice/hpsc-assistant-district-attorney-final-result-2026/og-hi.png" width="1200" height="675" alt="HPSC Assistant District Attorney Final Result 2026 — summary card" decoding="async" onerror="this.hidden=true">
+      <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
       <div class="h" data-t="key">At a glance</div>

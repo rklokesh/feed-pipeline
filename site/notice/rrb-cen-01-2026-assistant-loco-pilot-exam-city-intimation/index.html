@@ -216,6 +216,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 
 /* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.ogimg { display: block; width: 100%; height: auto; margin: 14px auto 0; border: 1px solid var(--line); }
 .hrow { display: flex; align-items: center; justify-content: center; gap: 18px; }
 .hrow.has-logo h1 { text-align: left; margin: 0; }
 .hrow .olg { flex: none; width: 64px; height: 64px; object-fit: contain; }
@@ -261,10 +262,12 @@ html[lang="hi"] .hisum { display: none; }
   <main>
     <div class="title">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=admit-cards" data-t="crumbType">Admit cards</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">RRB</span></nav>
-      <div class="hrow has-logo"><img class="olg" src="/org/rrb.webp" width="64" height="64" alt="Railway Recruitment Board (RRB) logo" decoding="async"><h1 data-t="h1">RRB CEN 01/2026 Assistant Loco Pilot Exam City Intimation</h1></div>
+      <h1 data-t="h1">RRB CEN 01/2026 Assistant Loco Pilot Exam City Intimation</h1>
       <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: rrb.indianrailways.gov.in</p>
       <p class="status"><span id="state">Exam city intimation slip released</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Railway Recruitment Board has released the exam city and date intimation link for the Assistant Loco Pilot examination 2026. Candidates can view their exam city and download travel authority.</p>
+      <img class="ogimg" id="ogimg" src="/notice/rrb-cen-01-2026-assistant-loco-pilot-exam-city-intimation/og.png" data-en="/notice/rrb-cen-01-2026-assistant-loco-pilot-exam-city-intimation/og.png" data-hi="/notice/rrb-cen-01-2026-assistant-loco-pilot-exam-city-intimation/og-hi.png" width="1200" height="675" alt="RRB CEN 01/2026 Assistant Loco Pilot Exam City Intimation — summary card" decoding="async" onerror="this.hidden=true">
+      <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
       <div class="h" data-t="key">At a glance</div>

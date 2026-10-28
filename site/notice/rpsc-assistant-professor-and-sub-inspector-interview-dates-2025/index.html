@@ -216,6 +216,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 
 /* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.ogimg { display: block; width: 100%; height: auto; margin: 14px auto 0; border: 1px solid var(--line); }
 .hrow { display: flex; align-items: center; justify-content: center; gap: 18px; }
 .hrow.has-logo h1 { text-align: left; margin: 0; }
 .hrow .olg { flex: none; width: 64px; height: 64px; object-fit: contain; }
@@ -261,10 +262,12 @@ html[lang="hi"] .hisum { display: none; }
   <main>
     <div class="title">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=admit-cards" data-t="crumbType">Admit cards</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">RPSC</span></nav>
-      <div class="hrow has-logo"><img class="olg" src="/org/rpsc.webp" width="64" height="64" alt="Rajasthan Public Service Commission (RPSC) logo" decoding="async"><h1 data-t="h1">RPSC Asst Professor &amp; Sub Inspector Interview Dates 2025</h1></div>
+      <h1 data-t="h1">RPSC Asst Professor &amp; Sub Inspector Interview Dates 2025</h1>
       <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: rpsc.rajasthan.gov.in</p>
       <p class="status"><span id="state">Interview schedule released</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Rajasthan Public Service Commission announced interview dates for Assistant Professor and Sub Inspector 2025 examinations. Candidates should check the schedule and bring original documents along with photocopies.</p>
+      <img class="ogimg" id="ogimg" src="/notice/rpsc-assistant-professor-and-sub-inspector-interview-dates-2025/og.png" data-en="/notice/rpsc-assistant-professor-and-sub-inspector-interview-dates-2025/og.png" data-hi="/notice/rpsc-assistant-professor-and-sub-inspector-interview-dates-2025/og-hi.png" width="1200" height="675" alt="RPSC Asst Professor &amp; Sub Inspector Interview Dates 2025 — summary card" decoding="async" onerror="this.hidden=true">
+      <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
       <div class="h" data-t="key">At a glance</div>

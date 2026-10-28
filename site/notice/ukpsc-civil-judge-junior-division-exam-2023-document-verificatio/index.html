@@ -216,6 +216,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 
 /* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.ogimg { display: block; width: 100%; height: auto; margin: 14px auto 0; border: 1px solid var(--line); }
 .hrow { display: flex; align-items: center; justify-content: center; gap: 18px; }
 .hrow.has-logo h1 { text-align: left; margin: 0; }
 .hrow .olg { flex: none; width: 64px; height: 64px; object-fit: contain; }
@@ -261,10 +262,12 @@ html[lang="hi"] .hisum { display: none; }
   <main>
     <div class="title">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">UKPSC</span></nav>
-      <div class="hrow has-logo"><img class="olg" src="/org/ukpsc.webp" width="64" height="64" alt="Uttarakhand Public Service Commission (UKPSC) logo" decoding="async"><h1 data-t="h1">UKPSC Civil Judge Junior Division Exam 2023 Document Verification</h1></div>
+      <h1 data-t="h1">UKPSC Civil Judge Junior Division Exam 2023 Document Verification</h1>
       <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: psc.uk.gov.in</p>
       <p class="status"><span id="state">Document verification notice released, submission open till 06 Oct 2026</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Uttarakhand Public Service Commission has released a notification regarding document verification and submission of required documents for Civil Judge Junior Division Exam 2023. Candidates must submit their documents by 06-10-2026.</p>
+      <img class="ogimg" id="ogimg" src="/notice/ukpsc-civil-judge-junior-division-exam-2023-document-verificatio/og.png" data-en="/notice/ukpsc-civil-judge-junior-division-exam-2023-document-verificatio/og.png" data-hi="/notice/ukpsc-civil-judge-junior-division-exam-2023-document-verificatio/og-hi.png" width="1200" height="675" alt="UKPSC Civil Judge Junior Division Exam 2023 Document Verification — summary card" decoding="async" onerror="this.hidden=true">
+      <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
       <div class="h" data-t="key">At a glance</div>

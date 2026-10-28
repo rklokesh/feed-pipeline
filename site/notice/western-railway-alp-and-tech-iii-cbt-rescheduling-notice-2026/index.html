@@ -216,6 +216,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 
 /* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.ogimg { display: block; width: 100%; height: auto; margin: 14px auto 0; border: 1px solid var(--line); }
 .hrow { display: flex; align-items: center; justify-content: center; gap: 18px; }
 .hrow.has-logo h1 { text-align: left; margin: 0; }
 .hrow .olg { flex: none; width: 64px; height: 64px; object-fit: contain; }
@@ -261,10 +262,12 @@ html[lang="hi"] .hisum { display: none; }
   <main>
     <div class="title">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=admit-cards" data-t="crumbType">Admit cards</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">RRC Western Railway</span></nav>
-      <div class="hrow has-logo"><img class="olg" src="/org/rrb.webp" width="64" height="64" alt="Railway Recruitment Cell, Western Railway (RRC WR) logo" decoding="async"><h1 data-t="h1">Western Railway ALP and Tech-III CBT Rescheduling Notice 2026</h1></div>
+      <h1 data-t="h1">Western Railway ALP and Tech-III CBT Rescheduling Notice 2026</h1>
       <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: rrc-wr.com</p>
       <p class="status"><span id="state">CBT exam rescheduled to 13 Nov 2026</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Western Railway has rescheduled the computer-based test for ALP and Tech-III posts under GDCE Notification No. 01/2023. The exam originally scheduled for 07-11-2026 will now be held on 13-11-2026. Eligible candidates can download their call letters from the official website 7 days before the exam.</p>
+      <img class="ogimg" id="ogimg" src="/notice/western-railway-alp-and-tech-iii-cbt-rescheduling-notice-2026/og.png" data-en="/notice/western-railway-alp-and-tech-iii-cbt-rescheduling-notice-2026/og.png" data-hi="/notice/western-railway-alp-and-tech-iii-cbt-rescheduling-notice-2026/og-hi.png" width="1200" height="675" alt="Western Railway ALP and Tech-III CBT Rescheduling Notice 2026 — summary card" decoding="async" onerror="this.hidden=true">
+      <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
       <div class="h" data-t="key">At a glance</div>

@@ -270,10 +270,12 @@ def render(n: dict, slug: str, related: list | None = None) -> str:
     hi["metaV"] = f"अपडेट {d_hi(checked)}" + (f" · स्रोत: {src_host}" if src_host else "")
     main = [f'''    <div class="title">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat={CAT_SLUG.get(typ, "jobs")}" data-t="crumbType">{esc(en["crumbType"])}</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">{esc(en["org"])}</span></nav>
-      <div class="hrow{" has-logo" if logo_img else ""}">{logo_img}<h1 data-t="h1">{esc(en["h1"])}</h1></div>
+      <h1 data-t="h1">{esc(en["h1"])}</h1>
       <p class="meta g" data-t="metaV">{esc(en["metaV"])}</p>
       <p class="status"><span id="state">{esc(en["statusV"])}</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       {f'<p class="lead" data-t="summary">{esc(en["summary"])}</p>' if en["summary"] else ""}
+      <img class="ogimg" id="ogimg" src="/notice/{slug}/og.png" data-en="/notice/{slug}/og.png" data-hi="/notice/{slug}/og-hi.png" width="1200" height="675" alt="{esc(en["h1"])} — summary card" decoding="async" onerror="this.hidden=true">
+      <script>(function(){{var i=document.getElementById("ogimg");function s(){{var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){{i.hidden=false;i.src=u;}}}}s();new MutationObserver(s).observe(document.documentElement,{{attributes:true,attributeFilter:["lang"]}});}})();</script>
     </div>''',
             '    <section class="kv glance" id="glance" data-t-aria="key">\n      <div class="h" data-t="key">At a glance</div>\n' +
             "".join(f'      <div class="r"><span data-t="{lk}">{esc(en[lk])}</span><span class="v" data-t="{vk}">{esc(en[vk])}</span></div>\n'
