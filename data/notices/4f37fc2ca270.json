@@ -1,0 +1,92 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://joinindiancoastguard.cdac.in/cgcat/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "age_limit": {
+      "evidence": "r Educational Qualification (Born Between) (a) General Duty 21-25 years as on Male (i) Should hold a Graduate Degree from a recognised (GD) 01 Jul 2026",
+      "source": "rule",
+      "value": {
+        "max": 25,
+        "min": 21
+      }
+    },
+    "apply_last": {
+      "conflict": {
+        "evidence": {
+          "apply_last": "TO 27 Jul 2025 (2330 HRS)"
+        },
+        "provider": "gemini/gemini-flash-lite-latest",
+        "source": "ai",
+        "value": "2025-07-27"
+      },
+      "evidence": "l first undergo photo and biometric verification. Note: The last date of induction at INA will tentatively be 27 Dec 2026. The exact date will be mentioned in Appointment letter. No further induction will be under",
+      "source": "rule",
+      "value": "2026-12-27"
+    },
+    "apply_or_official_url": {
+      "evidence": "application will be through Coast Guard recruitment website https://joinindiancoastguard.cdac.in 2. Eligibility Criteria. Indian citizens having following minimum qualification",
+      "source": "rule",
+      "value": "https://joinindiancoastguard.cdac.in"
+    },
+    "apply_start": {
+      "evidence": {
+        "apply_start": "FROM 08 Jul 2025 (1600 HRS)"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2025-07-08"
+    },
+    "apply_url": {
+      "evidence": {
+        "apply_url": "https://joinindiancoastguard.cdac.in"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://joinindiancoastguard.cdac.in"
+    },
+    "post_names": {
+      "evidence": {
+        "post_names": "AS ASSISTANT COMMANDANT - GENERAL DUTY, TECHNICAL (ENGINEERING & ELECTRICAL/ELECTRONICS)"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Assistant Commandant - General Duty (GD)",
+        "Assistant Commandant - Technical (Mechanical/Electrical/Electronics)"
+      ]
+    },
+    "qualification": {
+      "evidence": {
+        "qualification": "(i) Should hold a Graduate Degree from a recognised university."
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "Graduate Degree for GD and Engineering degree in relevant discipline for Technical branch with Physics and Mathematics up to class XII."
+    },
+    "total_vacancies": {
+      "evidence": {
+        "total_vacancies": "Total 170 28 28 43 12 59 170"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 170
+    }
+  },
+  "first_seen": "2026-10-28T02:27:42+00:00",
+  "id": "4f37fc2ca270",
+  "kind": "notification",
+  "org": "Indian Coast Guard",
+  "pdf": {
+    "bytes": 936302,
+    "pages": 16,
+    "sha256": "45d1ae56633bc840fbc8f6fcc1037841ac6dffe837a8e49ae64ecabe3c721ce7",
+    "text_kind": "text"
+  },
+  "source_id": "coast-guard",
+  "status": "pending_review",
+  "title": "English",
+  "url": "https://joinindiancoastguard.cdac.in/cgcat/assets/img/news/Advertisement_for_Asst_Comdt_2027_Batch.pdf"
+}

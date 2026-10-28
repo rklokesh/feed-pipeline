@@ -1,0 +1,113 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://www.indiapost.gov.in/vacancies",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "No.B-9/XI/Rect of Dvrs/DP/Dlgs/2025"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "No.B-9/XI/Rect of Dvrs/DP/Dlgs/2025"
+      }
+    },
+    "age_limit": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": null,
+        "max": 56,
+        "min": null
+      }
+    },
+    "age_limit_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "max": "प्रतिनियुक्ति/समावेशन द्वारा नियुक्ति के लिए अधिकतम आयु सीमा आवेदन प्राप्त होने की अंतिम तिथि को 56 वर्ष से अधिक नहीं होनी चाहिए।"
+      }
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "www.indiapost.gov.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "वेबसाइट www.indiapost.gov.in पर उपलब्ध हैं।"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "स्टाफ कार चालक [साधारण ग्रेड]"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "स्टाफ कार चालक [साधारण ग्रेड] में 11"
+      }
+    },
+    "qualification": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "10वीं पास, हल्के और भारी मोटर वाहन चलाने के लिए वैध ड्राइविंग लाइसेंस, और कम से कम तीन साल का अनुभव।"
+    },
+    "qualification_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "qualification": "iv. किसी मान्यता प्राप्त बोर्ड या संस्थान से 10वीं पास।"
+      }
+    },
+    "total_vacancies": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 11
+    },
+    "total_vacancies_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "total_vacancies": "स्टाफ कार चालक [साधारण ग्रेड] में 11 (बारह) रिक्तियों को भरना"
+      }
+    }
+  },
+  "first_seen": "2026-10-28T02:27:42+00:00",
+  "id": "e4f8ddcc6fe5",
+  "kind": "notification",
+  "org": "India Post",
+  "pdf": {
+    "bytes": 1081366,
+    "pages": 6,
+    "sha256": "1c199fcff7692b9b85a1e60a02e50330deb3ce8b6d9b0ce46d24ee9422015fd6",
+    "text_kind": "text"
+  },
+  "source_id": "indiapost-vacancies",
+  "status": "pending_review",
+  "title": "Notification for filling up of Drivers (Ordinary Grade) through deputation /absorption basis on 01.08.2026",
+  "url": "https://www.indiapost.gov.in/api/documents/file/103pgjk0mj9n00heh09v82063nq0007d0sjth3igcr04nr70fiaj0eiq939zwj"
+}
