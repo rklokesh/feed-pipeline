@@ -1,5 +1,23 @@
 {
+  "auto_published": true,
   "board_url": "https://uppsc.up.nic.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-12-17",
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant Architect",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Uttar Pradesh Public Service Commission has announced the exam date and pattern for the Assistant Architect Screening Exam 2024. Check the exam details and syllabus.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने सहायक वास्तुविद स्क्रीनिंग परीक्षा 2024 के लिए परीक्षा तिथि और पैटर्न की घोषणा कर दी है। परीक्षा विवरण और पाठ्यक्रम देखें।",
+    "title_en": "UPPSC Assistant Architect Exam Notice 2024 – Date and Pattern",
+    "title_hi": "उत्तर प्रदेश लोक सेवा आयोग सहायक वास्तुविद परीक्षा नोटिस 2024 – तिथि एवं पैटर्न",
+    "type": "Job",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -40,16 +58,228 @@
   },
   "first_seen": "2026-10-28T18:55:03+00:00",
   "id": "5814c1d44fc1",
+  "issue": 158,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-02-09",
   "org": "UPPSC",
+  "page": {
+    "after_en": [
+      "Declaration of written exam results",
+      "Further selection stages as per commission guidelines"
+    ],
+    "after_hi": [
+      "लिखित परीक्षा परिणाम की घोषणा",
+      "आयोग के दिशा-निर्देशों के अनुसार आगे के चयन चरण"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://uppsc.up.njc.jn",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check exam date and pattern",
+      "Download admit card once released",
+      "Verify exam centre details"
+    ],
+    "checklist_hi": [
+      "परीक्षा तिथि और पैटर्न की जाँच करें",
+      "जारी होने पर एडमिट कार्ड डाउनलोड करें",
+      "परीक्षा केंद्र के विवरण को सत्यापित करें"
+    ],
+    "conducted_by_en": "Uttar Pradesh Public Service Commission (UPPSC)",
+    "conducted_by_hi": "उत्तर प्रदेश लोक सेवा आयोग (यूपीपीएससी)",
+    "dates": [
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "17 Dec 2026",
+        "value_hi": "17 दिसंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Printout of admit card",
+      "Valid photo ID proof"
+    ],
+    "documents_hi": [
+      "एडमिट कार्ड का प्रिंटआउट",
+      "वैध फोटो पहचान प्रमाण"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-12-17",
+    "exam_pattern": [
+      {
+        "marks": "300",
+        "part_en": "General Studies / Main Subject",
+        "part_hi": "सामान्य अध्ययन / मुख्य विषय",
+        "questions": "150",
+        "time": "2 Hours"
+      },
+      {
+        "marks": "1/3 (0.33)",
+        "part_en": "Negative marking",
+        "part_hi": "नकारात्मक अंकन",
+        "questions": "",
+        "time": ""
+      }
+    ],
+    "explain": [
+      {
+        "a_en": "It is a screening examination conducted by the Uttar Pradesh Public Service Commission to recruit Assistant Architects in the Public Works Department.",
+        "a_hi": "यह लोक निर्माण विभाग में सहायक वास्तुविदों की भर्ती के लिए उत्तर प्रदेश लोक सेवा आयोग द्वारा आयोजित एक स्क्रीनिंग परीक्षा है।",
+        "q_en": "What is the UPPSC Assistant Architect Exam 2024?",
+        "q_hi": "यूपीपीएससी सहायक वास्तुविद परीक्षा 2024 क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Negative Marking",
+        "label_hi": "नकारात्मक अंकन",
+        "value_en": "1/3 (0.33) marks for each incorrect answer",
+        "value_hi": "प्रत्येक गलत उत्तर के लिए 1/3 (0.33) अंक"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The exam is scheduled to be held on 17 December 2026.",
+        "a_hi": "परीक्षा 17 दिसंबर 2026 को आयोजित होने वाली है।",
+        "q_en": "When is the UPPSC Assistant Architect Exam 2024 scheduled?",
+        "q_hi": "यूपीपीएससी सहायक वास्तुविद परीक्षा 2024 कब निर्धारित है?"
+      },
+      {
+        "a_en": "There will be a total of 150 questions carrying 300 marks.",
+        "a_hi": "300 अंकों के कुल 150 प्रश्न होंगे।",
+        "q_en": "What is the total number of questions in the exam?",
+        "q_hi": "परीक्षा में कुल प्रश्नों की संख्या कितनी है?"
+      },
+      {
+        "a_en": "Yes, there is a negative marking of 1/3 (0.33) marks for incorrect answers.",
+        "a_hi": "हाँ, गलत उत्तरों के लिए 1/3 (0.33) अंकों की नकारात्मक मार्किंग है।",
+        "q_en": "Is there negative marking in the exam?",
+        "q_hi": "क्या परीक्षा में नकारात्मक अंकन है?"
+      },
+      {
+        "a_en": "The exam duration is 2 hours.",
+        "a_hi": "परीक्षा की अवधि 2 घंटे है।",
+        "q_en": "What is the duration of the exam?",
+        "q_hi": "परीक्षा की अवधि क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "UPPSC Assistant Architect Exam Notice 2024 – Date and Pattern",
+    "h1_hi": "उत्तर प्रदेश लोक सेवा आयोग सहायक वास्तुविद परीक्षा नोटिस 2024 – तिथि एवं पैटर्न",
+    "how_en": [
+      "Visit the official UPPSC website.",
+      "Check the notification section for exam date and pattern details.",
+      "Download the exam schedule and syllabus for reference."
+    ],
+    "how_hi": [
+      "आधिकारिक यूपीपीएससी वेबसाइट पर जाएं।",
+      "परीक्षा तिथि और पैटर्न विवरण के लिए अधिसूचना अनुभाग की जाँच करें।",
+      "संदर्भाधीन परीक्षा कार्यक्रम और पाठ्यक्रम डाउनलोड करें।"
+    ],
+    "intro_en": "The Uttar Pradesh Public Service Commission (UPPSC) has issued a notice regarding the Assistant Architect (Public Works Department Uttar Pradesh) Screening Exam 2024 under Advertisement Number D-2/E-1/2024 (S-06/01). As per the notice, the examination will be conducted on 17 December 2026. The exam pattern includes a total of 150 objective-type questions carrying 300 marks for a duration of 2 hours. Candidates appearing for the exam should check the official notification for complete details regarding the syllabus and exam scheme.",
+    "intro_hi": "उत्तर प्रदेश लोक सेवा आयोग (यूपीपीएससी) ने विज्ञापन संख्या डी-2/ई-1/2024 (एस-06/01) के तहत सहायक वास्तुविद (लोक निर्माण विभाग उत्तर प्रदेश) स्क्रीनिंग परीक्षा 2024 के संबंध में एक नोटिस जारी किया है। नोटिस के अनुसार, परीक्षा 17 दिसंबर 2026 को आयोजित की जाएगी। परीक्षा पैटर्न में 2 घंटे की अवधि के लिए 300 अंकों के कुल 150 वस्तुनिष्ठ प्रकार के प्रश्न शामिल हैं। परीक्षा में शामिल होने वाले उम्मीदवारों को पाठ्यक्रम और परीक्षा योजना से संबंधित पूरी जानकारी के लिए आधिकारिक अधिसूचना देखनी चाहिए।",
+    "last_date": null,
+    "mistakes_en": [
+      "Recheck the exam date and timing to avoid confusion.",
+      "Reach the exam centre well before the reporting time."
+    ],
+    "mistakes_hi": [
+      "भ्रम से बचने के लिए परीक्षा की तिथि और समय की पुनः जांच करें।",
+      "रिपोर्टिंग समय से काफी पहले परीक्षा केंद्र पर पहुंचें।"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-02-09",
+    "official_site": "https://uppsc.up.nic.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Assistant Architect",
+        "value_hi": "सहायक वास्तुविद"
+      },
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "17 Dec 2026",
+        "value_hi": "17 दिसंबर 2026"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "D-2/E-1/2024 (S-06/01)",
+        "value_hi": "डी-2/ई-1/2024 (एस-06/01)"
+      },
+      {
+        "label_en": "Total Questions",
+        "label_hi": "कुल प्रश्न",
+        "value_en": "150",
+        "value_hi": "150"
+      },
+      {
+        "label_en": "Total Marks",
+        "label_hi": "कुल अंक",
+        "value_en": "300",
+        "value_hi": "300"
+      },
+      {
+        "label_en": "Exam Duration",
+        "label_hi": "परीक्षा अवधि",
+        "value_en": "2 Hours",
+        "value_hi": "2 घंटे"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Screening Examination",
+      "Interview (if applicable)"
+    ],
+    "selection_hi": [
+      "स्क्रीनिंग परीक्षा",
+      "साक्षात्कार (यदि लागू हो)"
+    ],
+    "share_card": {
+      "headline_en": "Exam Date Notice",
+      "headline_hi": "परीक्षा तिथि सूचना",
+      "kind": "job",
+      "line_en": "Assistant Architect",
+      "line_hi": "सहायक वास्तुविद",
+      "posts": null
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Uttar Pradesh Public Service Commission has released the exam date and pattern for the Assistant Architect (Public Works Department) Screening Exam 2024. The examination is scheduled for 17 December 2026. Candidates can check the exam scheme and syllabus details on the official website.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने सहायक वास्तुविद (लोक निर्माण विभाग) स्क्रीनिंग परीक्षा 2024 के लिए परीक्षा तिथि और पैटर्न जारी कर दिया है। परीक्षा 17 दिसंबर 2026 को आयोजित होने वाली है। उम्मीदवार आधिकारिक वेबसाइट पर परीक्षा योजना और पाठ्यक्रम विवरण देख सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Public Works Department Uttar Pradesh",
+        "detail_hi": "लोक निर्माण विभाग उत्तर प्रदेश",
+        "post_en": "Assistant Architect",
+        "post_hi": "सहायक वास्तुविद",
+        "total": ""
+      }
+    ],
+    "who_en": [
+      "Candidates who applied for the UPPSC Assistant Architect Screening Exam 2024"
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जिन्होंने यूपीपीएससी सहायक वास्तुविद स्क्रीनिंग परीक्षा 2024 के लिए आवेदन किया है"
+    ]
+  },
   "pdf": {
     "bytes": 614975,
     "pages": 1,
     "sha256": "a13c533f0c021f02fc3c6bed9e9f152ab655921d1ea97c0eb55a58c0d49827a8",
     "text_kind": "text"
   },
+  "published_at": "2026-10-28T18:56:35Z",
+  "slug": "uppsc-assistant-architect-exam-notice-2024-date-and-pattern",
   "source_id": "uppsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "17 Dec 2026 NOTICE REGARDING ADVT. NO. D-2/E-1/2024, ASSISTANT ARCHITECT, S-06/01 (PUBLIC WORKS DEPARTMENT UTTAR PRADESH)(SCREENING) EXAM-2024",
   "url": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagktt06NhTTxwrCJQ8FYSe0e"
 }
