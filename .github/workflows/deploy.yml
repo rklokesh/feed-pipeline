@@ -4,7 +4,7 @@ name: Deploy site
 on:
   push:
     branches: [main]
-    paths: ["site/**", "functions/**", "wrangler.toml", "scripts/make_pdfs.mjs", ".github/workflows/deploy.yml"]
+    paths: ["site/**", "functions/**", "wrangler.toml", "scripts/make_pdfs.mjs", "scripts/og_card.mjs", "scripts/fonts/**", "assets/org/**", ".github/workflows/deploy.yml"]
   workflow_dispatch:
   workflow_call:      # publish.yml calls this right after you approve a notice
 
