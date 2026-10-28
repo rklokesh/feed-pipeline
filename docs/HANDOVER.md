@@ -164,7 +164,7 @@ publish.yml (when the owner adds a label to an issue, open or closed):
 1. **MPSC** reader (JSON feed) — the other broken boards were fixed on 28 Oct (section 4).
 2. **Add boards:** India Post GDS, Army, Navy/Air Force Agniveer, Coast Guard, CRPF, CISF, DRDO, Employment News,
    SSB, NVS, Assam Rifles, GPSC, KPSC, OPSC, CG Vyapam (logos for most are already in `assets/org`).
-3. **Trust pages:** About, Privacy, Terms/Disclaimer, Contact, Press kit.
+3. Trust pages are live (28 Oct): /about/, /privacy/, /terms/, /contact/ — built by `scripts/info_pages.py` (edit text there; runs in prepare/publish workflows). Press kit page still to do.
 4. **Launch for search** (when sarkarichart.com is bought): set `SITE_URL` + the hardcoded pages.dev URLs (index.html,
    schema, report_page.py, og) → remove noindex (`site/_headers`) → sitemap, robots, llms.txt, server-rendered list →
    Search Console + Bing. Keyword research + ideal reader profile first.
