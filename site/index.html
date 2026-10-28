@@ -279,6 +279,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       <button type="button" data-cat="Admit card" aria-pressed="false"><span data-t="admits">Admit cards</span><span class="c"></span></button>
       <button type="button" data-cat="Result" aria-pressed="false"><span data-t="results">Results</span><span class="c"></span></button>
       <button type="button" data-cat="Answer key" aria-pressed="false"><span data-t="keys">Answer keys</span><span class="c"></span></button>
+      <button type="button" data-cat="exams" aria-pressed="false"><span data-t="exams">Exams</span><span class="c"></span></button>
       <span class="ink still" aria-hidden="true"></span>
     </div>
     <label class="search" for="q"><span style="position:absolute;left:-9999px" data-t="searchLabel">Search notices</span>
@@ -291,13 +292,12 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     <div class="row head"><span class="hide-sm" data-t="hPosted">Posted</span><span data-t="hNotice">Notice</span><span class="hide-sm" data-t="hOrg">Organisation</span><span class="hide-sm" data-t="hType">Type</span><span data-t="hLast">Last date</span><span class="hide-sm" data-t="hPdf">PDF</span></div>
     <ul class="list" id="list"></ul>
     <div class="more" id="more" hidden></div>
-    <!--EXAMS:START--><p class="exams" id="exams"><span class="x-en">Exams:</span><span class="x-hi" lang="hi">परीक्षाएँ:</span> <a href="/exam/cisf-constable-and-asi-2024/"><span class="x-en">CISF Constable and ASI 2024</span><span class="x-hi" lang="hi">सीआईएसएफ कांस्टेबल एंड एएसआई 2024</span></a> · <a href="/exam/rrb-station-master-2026/"><span class="x-en">RRB Station Master 2026</span><span class="x-hi" lang="hi">आरआरबी स्टेशन मास्टर 2026</span></a> · <a href="/exam/ukpsc-high-court-personal-assistant-2025/"><span class="x-en">UKPSC High Court Personal Assistant 2025</span><span class="x-hi" lang="hi">यूकेपीएससी हाईकोर्ट पर्सनल असिस्टेंट 2025</span></a> · <a href="/exam/rpsc-senior-teacher-english-2025/"><span class="x-en">RPSC Senior Teacher English 2025</span><span class="x-hi" lang="hi">आरपीएससी सीनियर टीचर इंग्लिश 2025</span></a> · <a href="/exam/ugc-net-dec-2026/"><span class="x-en">UGC-NET December 2026</span><span class="x-hi" lang="hi">यूजीसी-नेट दिसंबर 2026</span></a> · <a href="/exam/rpsc-lecturer-ayurved-2025/"><span class="x-en">RPSC Lecturer Ayurved 2025</span><span class="x-hi" lang="hi">आरपीएससी लेक्चरर आयुर्वेद 2025</span></a> · <a href="/exam/rpsc-lecturer-shalakya-tantra-2025/"><span class="x-en">RPSC Lecturer Shalakya Tantra 2025</span><span class="x-hi" lang="hi">आरपीएससी लेक्चरर शालक्य तंत्र 2025</span></a> · <a href="/exam/rpsc-lecturer-panchkarma-2025/"><span class="x-en">RPSC Lecturer Panchkarma 2025</span><span class="x-hi" lang="hi">आरपीएससी लेक्चरर पंचकर्म 2025</span></a> · <a href="/exam/"><span class="x-en">All exams →</span><span class="x-hi" lang="hi">सभी परीक्षाएँ →</span></a></p><!--EXAMS:END-->
   </main>
 
   <footer>
     <p class="pref"><a href="https://www.google.com/preferences/source?q=sarkarichart.com" target="_blank" rel="noopener"><span data-t="prefSrc">Add SarkariChart as a preferred source on Google</span></a><img class="hand" src="/hand.webp" width="24" height="24" alt="" aria-hidden="true" loading="lazy" decoding="async"></p>
     <p class="g" data-t="disclaimer">SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.</p>
-    <p><a href="/about/" data-t="about">About</a> · <a href="/report/" data-t="report">Report a mistake</a> · <a href="/privacy/" data-t="privacy">Privacy</a> · <a href="/terms/" data-t="terms">Terms</a> · <a href="/contact/" data-t="contact">Contact</a></p>
+    <p><a href="/about/" data-t="about">About</a> · <a href="/report/" data-t="report">Report a mistake</a> · <a href="/privacy/" data-t="privacy">Privacy</a> · <a href="/terms/" data-t="terms">Terms</a> · <a href="/contact/" data-t="contact">Contact</a> · <a href="/exam/" data-t="exams">Exams</a></p>
   </footer>
 </div>
 
@@ -307,7 +307,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   const T = {
     en: {
       title: "SarkariChart – Latest Govt Jobs, Admit Card, Result 2026 | सरकारी नौकरी", brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", logoAlt: "SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices", about: "About", show: "Show",
-      all: "All", jobs: "Jobs", soon: "Closing soon", prefSrc: "Add SarkariChart as a preferred source on Google", admits: "Admit cards", results: "Results", keys: "Answer keys",
+      all: "All", jobs: "Jobs", soon: "Closing soon", prefSrc: "Add SarkariChart as a preferred source on Google", admits: "Admit cards", results: "Results", keys: "Answer keys", exams: "Exams", hExam: "Exam", hUpdated: "Updated", hLatest: "Latest", hUpdates: "Updates", nUpd: n => `${n} update${n === 1 ? "" : "s"}`,
       searchLabel: "Search notices", showing: (a, b) => `Showing ${a} of ${b}`, showMore: n => `Show ${n} more`, phLead: "Search : ", searchPh: "Search : SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
       hPosted: "Posted", hNotice: "Notice", hOrg: "Organisation", hType: "Type", hLast: "Last date", hPostedR: "Posted", nil: "NIL", hPdf: "PDF",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
@@ -321,7 +321,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     },
     hi: {
       title: "सरकारी चार्ट – सरकारी नौकरी, एडमिट कार्ड, रिज़ल्ट 2026", logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में", show: "दिखाएँ",
-      all: "सभी", jobs: "नौकरियाँ", soon: "जल्द बंद", prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की",
+      all: "सभी", jobs: "नौकरियाँ", soon: "जल्द बंद", prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की", exams: "परीक्षाएँ", hExam: "परीक्षा", hUpdated: "अपडेट", hLatest: "ताज़ा", hUpdates: "अपडेट", nUpd: n => `${n} अपडेट`,
       searchLabel: "सूचनाएँ खोजें", showing: (a, b) => `${b} में से ${a} दिख रहीं`, showMore: n => `${n} और दिखाएँ`, phLead: "खोजें : ", searchPh: "खोजें : एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
       hPosted: "जारी", hNotice: "सूचना", hOrg: "संस्था", hType: "प्रकार", hLast: "अंतिम तिथि", hPostedR: "जारी", nil: "निरंक", hPdf: "पीडीएफ",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
@@ -541,6 +541,8 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     const cls = d <= 3 ? "tag hot" : d <= 7 ? "tag warm" : "";
     return `<span class="tip ${cls}" data-tip="${d === 0 ? t("lastDay") : t("daysLeft")(d)}">${fmtText(i.last)}</span>`;
   }
+  // one row per exam with 2+ updates (written by scripts/exams.py build)
+  const EXAMS = /*EXAMS:START*/[{"key": "cisf-constable-and-asi-2024", "en": "CISF Constable and ASI 2024", "hi": "सीआईएसएफ कांस्टेबल एंड एएसआई 2024", "org": "CISF", "n": 3, "latest": "2026-10-28", "st_en": "Admit card", "st_hi": "एडमिट कार्ड"}, {"key": "rrb-station-master-2026", "en": "RRB Station Master 2026", "hi": "आरआरबी स्टेशन मास्टर 2026", "org": "RRB", "n": 2, "latest": "2026-10-27", "st_en": "Notification", "st_hi": "अधिसूचना"}, {"key": "ukpsc-high-court-personal-assistant-2025", "en": "UKPSC High Court Personal Assistant 2025", "hi": "यूकेपीएससी हाईकोर्ट पर्सनल असिस्टेंट 2025", "org": "UKPSC", "n": 2, "latest": "2026-10-27", "st_en": "Result", "st_hi": "रिज़ल्ट"}, {"key": "rpsc-senior-teacher-english-2025", "en": "RPSC Senior Teacher English 2025", "hi": "आरपीएससी सीनियर टीचर इंग्लिश 2025", "org": "RPSC", "n": 2, "latest": "2026-10-27", "st_en": "Result", "st_hi": "रिज़ल्ट"}, {"key": "ugc-net-dec-2026", "en": "UGC-NET December 2026", "hi": "यूजीसी-नेट दिसंबर 2026", "org": "NTA", "n": 4, "latest": "2026-10-27", "st_en": "Notification", "st_hi": "अधिसूचना"}, {"key": "rpsc-lecturer-ayurved-2025", "en": "RPSC Lecturer Ayurved 2025", "hi": "आरपीएससी लेक्चरर आयुर्वेद 2025", "org": "RPSC", "n": 2, "latest": "2026-10-26", "st_en": "Result", "st_hi": "रिज़ल्ट"}, {"key": "rpsc-lecturer-shalakya-tantra-2025", "en": "RPSC Lecturer Shalakya Tantra 2025", "hi": "आरपीएससी लेक्चरर शालक्य तंत्र 2025", "org": "RPSC", "n": 2, "latest": "2026-10-26", "st_en": "Result", "st_hi": "रिज़ल्ट"}, {"key": "rpsc-lecturer-panchkarma-2025", "en": "RPSC Lecturer Panchkarma 2025", "hi": "आरपीएससी लेक्चरर पंचकर्म 2025", "org": "RPSC", "n": 2, "latest": "2026-10-26", "st_en": "Result", "st_hi": "रिज़ल्ट"}, {"key": "ssc-junior-engineer-2026", "en": "SSC Junior Engineer 2026", "hi": "एसएससी जूनियर इंजीनियर 2026", "org": "SSC", "n": 3, "latest": "2026-10-26", "st_en": "Notification", "st_hi": "अधिसूचना"}, {"key": "rpsc-lecturer-kayachikitsa-2025", "en": "RPSC Lecturer Kayachikitsa 2025", "hi": "आरपीएससी व्याख्याता कायाचिकित्सा 2025", "org": "RPSC", "n": 2, "latest": "2026-10-26", "st_en": "Result", "st_hi": "रिज़ल्ट"}, {"key": "rrb-section-controller-2026", "en": "RRB Section Controller 2026", "hi": "आरआरबी सेक्शन कंट्रोलर 2026", "org": "RRB", "n": 2, "latest": "2026-10-26", "st_en": "Answer key", "st_hi": "आंसर की"}, {"key": "rpsc-lecturer-agad-tantra-2025", "en": "RPSC Lecturer Agad Tantra 2025", "hi": "आरपीएससी लेक्चरर अगद तंत्र 2025", "org": "RPSC", "n": 2, "latest": "2026-10-23", "st_en": "Result", "st_hi": "रिज़ल्ट"}, {"key": "nabard-development-assistant-2026", "en": "NABARD Development Assistant 2026", "hi": "नाबार्ड डेवलपमेंट असिस्टेंट 2026", "org": "NABARD", "n": 2, "latest": "2026-10-23", "st_en": "Result", "st_hi": "रिज़ल्ट"}, {"key": "rpsc-state-and-subordinate-services-2023", "en": "RPSC State and Subordinate Services 2023", "hi": "आरपीएससी राज्य एवं अधीनस्थ सेवाएं 2023", "org": "RPSC", "n": 2, "latest": "2026-10-23", "st_en": "Result", "st_hi": "रिज़ल्ट"}, {"key": "rpsc-senior-scientific-officer-biology-2025", "en": "RPSC Senior Scientific Officer Biology 2025", "hi": "आरपीएससी सीनियर साइंटिफिक ऑफिसर बायोलॉजी 2025", "org": "RPSC", "n": 2, "latest": "2026-10-23", "st_en": "Answer key", "st_hi": "आंसर की"}, {"key": "rpsc-asst-professor-medical-edu-orthopaedics-2024", "en": "RPSC Asst Professor Medical Edu Orthopaedics 2024", "hi": "आरपीएससी असिस्टेंट प्रोफेसर मेडिकल एजुकेशन ऑर्थोपेडिक्स 2024", "org": "RPSC", "n": 2, "latest": "2026-10-23", "st_en": "Answer key", "st_hi": "आंसर की"}, {"key": "nabard-development-assistant-hindi-2026", "en": "NABARD Development Assistant Hindi 2026", "hi": "नाबार्ड डेवलपमेंट असिस्टेंट हिंदी 2026", "org": "NABARD", "n": 2, "latest": "2026-10-23", "st_en": "Result", "st_hi": "रिज़ल्ट"}, {"key": "rpsc-lecturer-prasooti-tantra-stree-roga-2025", "en": "RPSC Lecturer Prasooti Tantra Stree Roga 2025", "hi": "आरपीएससी लेक्चरर प्रसूति तंत्र स्त्री रोग 2025", "org": "RPSC", "n": 2, "latest": "2026-10-23", "st_en": "Result", "st_hi": "रिज़ल्ट"}, {"key": "bsf-hc-ro-rm-2025", "en": "BSF Head Constable RO and RM 2025", "hi": "बीएसएफ हेड कांस्टेबल आरओ और आरएम 2025", "org": "BSF", "n": 2, "latest": "2026-10-23", "st_en": "Admit card", "st_hi": "एडमिट कार्ड"}, {"key": "rpsc-senior-teacher-sanskrit-2025", "en": "RPSC Senior Teacher Sanskrit 2025", "hi": "आरपीएससी वरिष्ठ अध्यापक संस्कृत 2025", "org": "RPSC", "n": 2, "latest": "2026-10-23", "st_en": "Result", "st_hi": "रिज़ल्ट"}, {"key": "sbi-junior-associate-2026", "en": "SBI Junior Associate 2026", "hi": "एसबीआई जूनियर एसोसिएट 2026", "org": "SBI", "n": 2, "latest": "2026-10-22", "st_en": "Notification", "st_hi": "अधिसूचना"}, {"key": "itbp-constable-gd-sportsperson-2025", "en": "ITBP Constable GD Sportsperson 2025", "hi": "आईटीबीपी कांस्टेबल जीडी स्पोर्ट्सपर्सन 2025", "org": "ITBP", "n": 2, "latest": "2026-10-22", "st_en": "Notification", "st_hi": "अधिसूचना"}, {"key": "uppsc-assistant-teacher-2025", "en": "UPPSC Assistant Teacher 2025", "hi": "यूपीपीएससी असिस्टेंट टीचर 2025", "org": "UPPSC", "n": 2, "latest": "2026-10-22", "st_en": "Result", "st_hi": "रिज़ल्ट"}, {"key": "hpsc-assistant-district-attorney-2026", "en": "HPSC Assistant District Attorney 2026", "hi": "एचपीएससी सहायक जिला अत्तरनी 2026", "org": "HPSC", "n": 2, "latest": "2026-10-22", "st_en": "Result", "st_hi": "रिज़ल्ट"}, {"key": "ukpsc-upper-subordinate-2026", "en": "UKPSC Upper Subordinate 2026", "hi": "यूकेपीएससी अपर सबऑर्डिनेट 2026", "org": "UKPSC", "n": 3, "latest": "2026-10-07", "st_en": "Notification", "st_hi": "अधिसूचना"}, {"key": "ukpsc-assistant-geologist-mining-chemist-2026", "en": "UKPSC Assistant Geologist, Mining & Chemist 2026", "hi": "यूकेपीएससी असिस्टेंट जियोलॉजिस्ट, माइनिंग एंड केमिस्ट 2026", "org": "UKPSC", "n": 2, "latest": "2026-10-07", "st_en": "Notification", "st_hi": "अधिसूचना"}, {"key": "ukpsc-civil-judge-junior-division-2023", "en": "UKPSC Civil Judge Junior Division 2023", "hi": "यूकेपीएससी सिविल जज जूनियर डिवीजन 2023", "org": "UKPSC", "n": 2, "latest": "2026-09-29", "st_en": "Notification", "st_hi": "अधिसूचना"}, {"key": "bpsc-72nd-cce-2026", "en": "BPSC 72nd CCE 2026", "hi": "बीपीएससी 72वीं सीसीई 2026", "org": "BPSC", "n": 2, "latest": "2026-09-03", "st_en": "Notification", "st_hi": "अधिसूचना"}, {"key": "rrc-western-railway-sports-quota-2026", "en": "RRC Western Railway Sports Quota 2026", "hi": "आरआरसी वेस्टर्न रेलवे स्पोर्ट्स कोटा 2026", "org": "RRC Western Railway", "n": 2, "latest": "2026-09-03", "st_en": "Notification", "st_hi": "अधिसूचना"}, {"key": "ibps-crp-spl-xvi-2027", "en": "IBPS CRP SPL XVI 2027", "hi": "आईबीपीएस सीआरपी एसपीएल XVI 2027", "org": "IBPS", "n": 2, "latest": "2026-07-20", "st_en": "Notification", "st_hi": "अधिसूचना"}]/*EXAMS:END*/;
   let cat = "all", q = "";
   // search matches English and Hindi words alike, whichever language is showing
   const words = i => [i.title, i.hi, i.org, ORG_HI[i.org] || "", i.type, T.hi[i.type], i.tags || ""].join(" ").toLowerCase();
@@ -617,7 +619,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   // If the search finds nothing in the chosen category but finds it elsewhere, move to where it is.
   // Search picks the tab: matches in one category -> that tab; matches in several -> All; no matches -> stay put.
   function followSearch() {
-    if (!q) return;
+    if (!q || cat === "exams") return;
     const hits = ITEMS.filter(i => live(i) && qmatch(i));
     if (!hits.length) return;
     if (cat === "soon" && hits.every(i => inCat(i, "soon"))) return;
@@ -636,7 +638,29 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   const SOON_DAYS = 7;
   const inCat = (i, c) => c === "all" ? true : c === "soon" ? i.type === "Job" && !!i.last && left(i.last) <= SOON_DAYS : i.type === c;
   const PAGE = 25; let shown = PAGE, allRows = [];
+  const examHit = x => qwords().every(w => (x.en + " " + x.hi + " " + x.org + " " + (ORG_HI[x.org] || "") + " " + x.key).toLowerCase().includes(w));
+  function setHead(k, key) { const h = document.querySelector(".row.head").children[k]; if (key) { h.dataset.t = key; h.textContent = t(key); } else { delete h.dataset.t; h.textContent = ""; } }
+  function renderExams() {
+    const rows = allRows = EXAMS.filter(examHit);
+    document.querySelectorAll(".tabs button").forEach(b => {
+      const ex = b.dataset.cat === "exams";
+      const n = ex ? rows.length : ITEMS.filter(i => live(i) && (!q || qmatch(i)) && inCat(i, b.dataset.cat)).length;
+      b.querySelector(".c").textContent = q || b.dataset.cat === "soon" ? n : "";
+      b.classList.toggle("zero", (!!q || b.dataset.cat === "soon") && n === 0);
+    });
+    moveInk();
+    setHead(0, "hUpdated"); setHead(1, "hExam"); setHead(2, "hOrg"); setHead(3, "hLatest"); setHead(4, "hUpdates"); setHead(5, "");
+    document.getElementById("list").innerHTML = rows.slice(0, shown).map(x => {
+      const name = lang === "hi" ? (x.hi || x.en) : x.en, o = lang === "hi" ? (ORG_HI[x.org] || x.org) : x.org, st = lang === "hi" ? x.st_hi : x.st_en;
+      return `<li class="lr"><a class="row" href="/exam/${x.key}/"><span class="num hide-sm"><span class="pc"><span>${fmt(x.latest)}</span><span class="slot"></span><span class="siren-r"></span></span></span><span class="t" data-full="${esc(name)}">${esc(name)}</span><span class="hide-sm g cut" data-full="${esc(o)}">${esc(o)}</span><span class="hide-sm g cut" data-full="${esc(st)}">${esc(st)}</span><span class="num g" style="white-space:nowrap">${t("nUpd")(x.n)}</span></a><span class="pdf hide-sm"></span></li>`;
+    }).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
+    const more = document.getElementById("more");
+    more.hidden = allRows.length <= shown;
+    more.innerHTML = more.hidden ? "" : `<span class="g">${t("showing")(Math.min(shown, allRows.length), allRows.length)}</span><button type="button" id="moreBtn">${t("showMore")(Math.min(PAGE, allRows.length - shown))}</button>`;
+  }
   function render() {
+    if (cat === "exams") return renderExams();
+    setHead(1, "hNotice"); setHead(2, "hOrg"); setHead(3, "hType"); setHead(5, "hPdf");
     // Jobs: closing soonest first (undated last). Everything else: newest first.
     const byNewest = (a, b) => b.posted.localeCompare(a.posted) || pubTime(b) - pubTime(a);
     const bySearch = (a, b) => searchRank(a) - searchRank(b) || titleScore(b) - titleScore(a) || (a.last || "9").localeCompare(b.last || "9") || b.posted.localeCompare(a.posted);
@@ -645,7 +669,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     const hits = ITEMS.filter(i => live(i) && (!q || qmatch(i)));
     document.querySelectorAll(".tabs button").forEach(b => {
       const soon = b.dataset.cat === "soon";
-      const n = hits.filter(i => inCat(i, b.dataset.cat)).length;
+      const n = b.dataset.cat === "exams" ? EXAMS.filter(examHit).length : hits.filter(i => inCat(i, b.dataset.cat)).length;
       b.querySelector(".c").textContent = q || soon ? n : "";   // Closing soon always shows how many
       b.classList.toggle("zero", (!!q || soon) && n === 0);
     });
@@ -823,7 +847,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     const startQ = new URL(location.href).searchParams.get("q");
     if (startQ) { const qi = document.getElementById("q"); qi.value = startQ; q = startQ.trim().toLowerCase(); }
     // ?cat=jobs|closing-soon|admit-cards|results|answer-keys opens that tab (used by notice-page breadcrumbs)
-    const CATS = { jobs: "Job", "closing-soon": "soon", "admit-cards": "Admit card", results: "Result", "answer-keys": "Answer key" };
+    const CATS = { jobs: "Job", "closing-soon": "soon", "admit-cards": "Admit card", results: "Result", "answer-keys": "Answer key", exams: "exams" };
     const startCat = CATS[new URL(location.href).searchParams.get("cat")];
     if (startCat) requestAnimationFrame(() => document.querySelector(`.tabs button[data-cat="${startCat}"]`)?.click());
   } catch (e) {}

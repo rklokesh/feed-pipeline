@@ -1,7 +1,7 @@
 """Exam pages: one permanent page per exam (e.g. /exam/ssc-cgl-2026/) with every official update for it, newest first.
 
   python scripts/exams.py tag     # before pages.py: AI tags new notices with their exam (one batched call per ~60 notices)
-  python scripts/exams.py build   # after pages.py: writes site/exam/<key>/, the homepage "Exams" strip, site/exam/index.html
+  python scripts/exams.py build   # after pages.py: writes site/exam/<key>/, the homepage "Exams" tab rows, site/exam/index.html
 
 A notice belongs to one exam: board + exam/post + cycle year ("ssc-cgl-2026"). Notification, date changes, admit card,
 answer key and result of the same cycle share the key. An exam page is made once it has 2+ live notices (a single
@@ -253,19 +253,17 @@ def render_index(g: dict) -> str:
             .replace("{{URL}}", f"{SITE_URL}/exam/").replace("{{LAST}}", "null"))
 
 
-def homepage_strip(g: dict):
-    """A small "Exams" line under the homepage list: the 8 exams with the newest updates (links Google can follow)."""
+def homepage_data(g: dict):
+    """Rows for the homepage "Exams" tab: written into site/index.html between /*EXAMS:START*/ and /*EXAMS:END*/."""
+    rows = []
+    for x in sorted(g.values(), key=lambda x: x["latest"], reverse=True):
+        se, sh = TYPE.get((x["items"][0].get("card") or {}).get("type", "Job"), TYPE["Job"])   # short, fits the column
+        rows.append({"key": x["key"], "en": x["name_en"], "hi": x["name_hi"] or x["name_en"], "org": x["items"][0].get("org") or "",
+                     "n": len(x["items"]), "latest": x["latest"], "st_en": se, "st_hi": sh})
     p = SITE / "index.html"
     s = p.read_text(encoding="utf-8")
-    top = sorted(g.values(), key=lambda x: x["latest"], reverse=True)[:8]
-    esc = html.escape
-    links = " · ".join(f'<a href="/exam/{x["key"]}/"><span class="x-en">{esc(x["name_en"])}</span><span class="x-hi" lang="hi">{esc(x["name_hi"] or x["name_en"])}</span></a>' for x in top)
-    block = (f'<!--EXAMS:START--><p class="exams" id="exams"><span class="x-en">Exams:</span><span class="x-hi" lang="hi">परीक्षाएँ:</span> {links}'
-             f' · <a href="/exam/"><span class="x-en">All exams →</span><span class="x-hi" lang="hi">सभी परीक्षाएँ →</span></a></p><!--EXAMS:END-->') if top else "<!--EXAMS:START--><!--EXAMS:END-->"
-    if "<!--EXAMS:START-->" in s:
-        s = re.sub(r"<!--EXAMS:START-->.*?<!--EXAMS:END-->", lambda m: block, s, flags=re.S)
-    else:
-        s = s.replace('    <div class="more" id="more" hidden></div>\n', '    <div class="more" id="more" hidden></div>\n    ' + block + "\n", 1)
+    data = json.dumps(rows, ensure_ascii=False).replace("</", "<\\/")
+    s = re.sub(r"/\*EXAMS:START\*/.*?/\*EXAMS:END\*/", lambda m: "/*EXAMS:START*/" + data + "/*EXAMS:END*/", s, count=1, flags=re.S)
     p.write_text(s, encoding="utf-8")
 
 
@@ -290,7 +288,7 @@ def build():
                 f.unlink()
             d.rmdir()
     (out / "index.html").write_text(render_index(g), encoding="utf-8")
-    homepage_strip(g)
+    homepage_data(g)
     print(f"exams: {len(g)} exam pages")
 
 
