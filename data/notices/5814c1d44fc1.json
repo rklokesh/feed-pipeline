@@ -1,0 +1,55 @@
+{
+  "board_url": "https://uppsc.up.nic.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "Q6/2O24_25"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "Q6/2O24_25"
+      }
+    },
+    "apply_or_official_url": {
+      "evidence": "j c 35- tr—i 50 300 —J 2— .tq L1)r wifm Iqqcii-c 31TrTr irr https://uppsc.up.njc.jn tR :— 1iIiRsi iigq q4q * r- 1. 1To 3T-T ft iftr—--i ct) o 3zj I 2. 5 3N rri if",
+      "source": "rule",
+      "value": "https://uppsc.up.njc.jn"
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://uppsc.up.njc.jn"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "https://uppsc.up.njc.jn"
+      }
+    }
+  },
+  "first_seen": "2026-10-28T18:55:03+00:00",
+  "id": "5814c1d44fc1",
+  "kind": "notification",
+  "org": "UPPSC",
+  "pdf": {
+    "bytes": 614975,
+    "pages": 1,
+    "sha256": "a13c533f0c021f02fc3c6bed9e9f152ab655921d1ea97c0eb55a58c0d49827a8",
+    "text_kind": "text"
+  },
+  "source_id": "uppsc-home",
+  "status": "pending_review",
+  "title": "17 Dec 2026 NOTICE REGARDING ADVT. NO. D-2/E-1/2024, ASSISTANT ARCHITECT, S-06/01 (PUBLIC WORKS DEPARTMENT UTTAR PRADESH)(SCREENING) EXAM-2024",
+  "url": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagktt06NhTTxwrCJQ8FYSe0e"
+}

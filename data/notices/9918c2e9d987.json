@@ -1,0 +1,39 @@
+{
+  "board_url": "https://uppsc.up.nic.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "744/03 / 031R0 / t1-06 / 2025-26",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "744/03 / 031R0 / t1-06 / 2025-26"
+    },
+    "apply_or_official_url": {
+      "evidence": "0 - (9tfl*) •I 2—'1Ic1 '-i'1iiT 1[fT I -LctH 31Tth'T c 'iic https://uppsc.up.riic.in ti",
+      "source": "rule",
+      "value": "https://uppsc.up.riic.in"
+    },
+    "apply_url": {
+      "evidence": "https://uppsc.up.nic.in",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://uppsc.up.nic.in"
+    }
+  },
+  "first_seen": "2026-10-28T18:55:03+00:00",
+  "id": "9918c2e9d987",
+  "kind": "notification",
+  "org": "UPPSC",
+  "pdf": {
+    "bytes": 969882,
+    "pages": 1,
+    "sha256": "7bc42c1af02c9042095c983ca6e88df27fcfb2d608da388e430db294e3f6b903",
+    "text_kind": "text"
+  },
+  "source_id": "uppsc-home",
+  "status": "pending_review",
+  "title": "16 Dec 2026 NOTICE REGARDING ADVT. NO. D-6/E-1/2025, FOOD SAFETY AND DRUG ADMINISTRATION UTTAR PRADESH / INSPECTOR OF DRUGS, S-06/04",
+  "url": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagldpN1/ndg4XUIRXwT7epDC"
+}
