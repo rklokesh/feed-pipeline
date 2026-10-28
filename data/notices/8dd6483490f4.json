@@ -30,112 +30,146 @@
   "notice_date": "2026-10-22",
   "org": "HPSC",
   "page": {
+    "after_en": [
+      "Candidates whose roll numbers appear in the final result will undergo document verification and subsequent appointment procedures as per the department guidelines."
+    ],
+    "after_hi": [
+      "वे उम्मीदवार जिनके रोल नंबर अंतिम परिणाम में दिखाई देते हैं, विभाग के दिशानिर्देशों के अनुसार दस्तावेज़ सत्यापन और उसके बाद की नियुक्ति प्रक्रिया से गुजरेंगे।"
+    ],
     "age": [],
     "apply_start": null,
     "apply_url": null,
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Check your roll number in the official result PDF.",
+      "Save a copy of the result for future reference."
+    ],
+    "checklist_hi": [
+      "आधिकारिक परिणाम पीडीएफ में अपना रोल नंबर जांचें।",
+      "भविष्य के संदर्भ के लिए परिणाम की एक प्रति सहेजें।"
+    ],
     "conducted_by_en": "Haryana Public Service Commission (HPSC)",
     "conducted_by_hi": "हरियाणा लोक सेवा आयोग (HPSC)",
     "dates": [
       {
-        "label_en": "Result Date",
-        "label_hi": "परिणाम तिथि",
+        "label_en": "Result declaration date",
+        "label_hi": "परिणाम घोषणा की तिथि",
         "value_en": "22 Oct 2026",
-        "value_hi": "22 अक्टूबर 2026"
+        "value_hi": "22 अक्तूबर 2026"
       }
+    ],
+    "documents_en": [
+      "Official result PDF containing roll numbers"
+    ],
+    "documents_hi": [
+      "रोल नंबर वाली आधिकारिक परिणाम पीडीएफ"
     ],
     "eligibility": [],
     "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a recruitment exam conducted by the Haryana Public Service Commission to select qualified law graduates for the post of Assistant District Attorney in the Prosecution Department of Haryana.",
+        "a_hi": "यह हरियाणा के अभियोजन विभाग में सहायक जिला न्यायवादी के पद के लिए योग्य कानून स्नातकों का चयन करने के लिए हरियाणा लोक सेवा आयोग द्वारा आयोजित एक भर्ती परीक्षा है।",
+        "q_en": "What is the HPSC Assistant District Attorney examination?",
+        "q_hi": "हरियाणा लोक सेवा आयोग सहायक जिला न्यायवादी परीक्षा क्या है?"
+      }
+    ],
     "extra": [],
     "faq": [
       {
         "a_en": "The final result was declared on 22 October 2026.",
-        "a_hi": "अंतिम परिणाम 22 अक्टूबर 2026 को घोषित किया गया था।",
-        "q_en": "When was the HPSC Assistant District Attorney Final Result 2026 declared?",
-        "q_hi": "हरियाणा लोक सेवा आयोग सहायक जिला न्यायवादी अंतिम परिणाम 2026 कब घोषित किया गया?"
+        "a_hi": "अंतिम परिणाम 22 अक्तूबर 2026 को घोषित किया गया था।",
+        "q_en": "When was the HPSC Assistant District Attorney final result 2026 declared?",
+        "q_hi": "हरियाणा लोक सेवा आयोग सहायक जिला न्यायवादी अंतिम परिणाम 2026 कब घोषित किया गया था?"
       },
       {
-        "a_en": "This recruitment is for the Prosecution Department, Haryana.",
-        "a_hi": "यह भर्ती अभियोजन विभाग, हरियाणा के लिए है।",
-        "q_en": "Which department is associated with this recruitment?",
-        "q_hi": "यह भर्ती किस विभाग से संबंधित है?"
+        "a_en": "Recruitment is for the Prosecution Department, Haryana.",
+        "a_hi": "भर्ती अभियोजन विभाग, हरियाणा के लिए है।",
+        "q_en": "Which department is recruiting through the HPSC ADA Advt. No. 18/2025?",
+        "q_hi": "हरियाणा लोक सेवा आयोग विज्ञापन संख्या 18/2025 के माध्यम से कौन सा विभाग भर्ती कर रहा है?"
       },
       {
-        "a_en": "The advertisement number is 18/2025.",
-        "a_hi": "विज्ञापन संख्या 18/2025 है।",
-        "q_en": "What is the advertisement number for HPSC Assistant District Attorney recruitment?",
-        "q_hi": "हरियाणा लोक सेवा आयोग सहायक जिला न्यायवादी भर्ती के लिए विज्ञापन संख्या क्या है?"
-      },
-      {
-        "a_en": "You can check the result by downloading the official PDF notice from the HPSC website.",
-        "a_hi": "आप हरियाणा लोक सेवा आयोग की वेबसाइट से आधिकारिक पीडीएफ नोटिस डाउनलोड करके परिणाम देख सकते हैं।",
-        "q_en": "How can I check the HPSC Assistant District Attorney result?",
-        "q_hi": "मैं हरियाणा लोक सेवा आयोग सहायक जिला न्यायवादी का परिणाम कैसे देख सकता हूँ?"
+        "a_en": "You can check your result by downloading the official PDF notice from the HPSC website and searching for your roll number.",
+        "a_hi": "आप हरियाणा लोक सेवा आयोग की वेबसाइट से आधिकारिक पीडीएफ नोटिस डाउनलोड करके और अपना रोल नंबर खोजकर अपना परिणाम देख सकते हैं।",
+        "q_en": "How can I check my HPSC ADA final result?",
+        "q_hi": "मैं अपना हरियाणा लोक सेवा आयोग सहायक जिला न्यायवादी अंतिम परिणाम कैसे देख सकता हूँ?"
       }
     ],
     "fees": [],
     "h1_en": "HPSC Assistant District Attorney Final Result 2026",
     "h1_hi": "हरियाणा लोक सेवा आयोग सहायक जिला न्यायवादी अंतिम परिणाम 2026",
     "how_en": [
-      "Go to the official HPSC website at hpsc.gov.in.",
-      "Navigate to the results section or check the announcements.",
-      "Click on the link for the Final Result for Assistant District Attorney (Advt. No. 18/2025).",
-      "Download and save the PDF notice containing the roll numbers of qualified candidates."
+      "Go to the official website of HPSC.",
+      "Click on the results section on the homepage.",
+      "Open the link for the final result of Assistant District Attorney (Advt. No. 18/2025).",
+      "Download or view the PDF containing the roll numbers of selected candidates."
     ],
     "how_hi": [
-      "हरियाणा लोक सेवा आयोग की आधिकारिक वेबसाइट hpsc.gov.in पर जाएं।",
-      "परिणाम अनुभाग पर जाएं या घोषणाओं की जांच करें।",
-      "सहायक जिला न्यायवादी (विज्ञापन संख्या 18/2025) के अंतिम परिणाम के लिंक पर क्लिक करें।",
-      "योग्य उम्मीदवारों के अनुक्रमांक वाले पीडीएफ नोटिस को डाउनलोड और सहेजें।"
+      "हरियाणा लोक सेवा आयोग की आधिकारिक वेबसाइट पर जाएं।",
+      "होमपेज पर परिणाम अनुभाग पर क्लिक करें।",
+      "सहायक जिला न्यायवादी (विज्ञापन संख्या 18/2025) के अंतिम परिणाम के लिंक को खोलें।",
+      "चयनित उम्मीदवारों के रोल नंबर वाली पीडीएफ को डाउनलोड करें या देखें।"
     ],
-    "intro_en": "The Haryana Public Service Commission (HPSC) has announced the final result for the recruitment of Assistant District Attorney in the Prosecution Department, Haryana under Advertisement No. 18/2025. Candidates who participated in the selection stages can now verify their qualification status. This page provides all the essential details regarding the declared final result.",
-    "intro_hi": "हरियाणा लोक सेवा आयोग (HPSC) ने विज्ञापन संख्या 18/2025 के अंतर्गत अभियोजन विभाग, हरियाणा में सहायक जिला न्यायवादी के पदों की भर्ती के लिए अंतिम परिणाम घोषित कर दिया है। चयन चरणों में भाग लेने वाले उम्मीदवार अब अपनी अर्हता स्थिति की जांच कर सकते हैं। यह पृष्ठ घोषित अंतिम परिणाम से संबंधित सभी आवश्यक विवरण प्रदान करता है।",
+    "intro_en": "The Haryana Public Service Commission (HPSC) has officially released the final result for the recruitment of Assistant District Attorney in the Prosecution Department, Haryana under Advertisement Number 18/2025. Candidates who participated in the recruitment process can now check the final list of qualified candidates. This notice contains the roll numbers of candidates who have been successfully recommended for appointment. All shortlisted candidates should review the official notice for further instructions regarding their selection and joining.",
+    "intro_hi": "हरियाणा लोक सेवा आयोग (HPSC) ने विज्ञापन संख्या 18/2025 के अंतर्गत हरियाणा के अभियोजन विभाग में सहायक जिला न्यायवादी के पद के लिए अंतिम परिणाम आधिकारिक रूप से जारी कर दिया है। भर्ती प्रक्रिया में भाग लेने वाले उम्मीदवार अब योग्य उम्मीदवारों की अंतिम सूची देख सकते हैं। इस नोटिस में उन उम्मीदवारों के रोल नंबर शामिल हैं जिन्हें नियुक्ति के लिए सफलतापूर्वक अनुशंसित किया गया है। सभी शॉर्टलिस्ट किए गए उम्मीदवारों को अपने चयन और नियुक्ति के संबंध में आगे के निर्देशों के लिए आधिकारिक नोटिस की समीक्षा करनी चाहिए।",
     "last_date": null,
+    "mistakes_en": [],
+    "mistakes_hi": [],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": "2026-10-22",
     "official_site": "https://hpsc.gov.in/en-us/",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Posts",
-        "label_hi": "पद",
+        "label_en": "Post name",
+        "label_hi": "पद का नाम",
         "value_en": "Assistant District Attorney",
         "value_hi": "सहायक जिला न्यायवादी"
-      },
-      {
-        "label_en": "Advertisement Number",
-        "label_hi": "विज्ञापन संख्या",
-        "value_en": "18/2025",
-        "value_hi": "18/2025"
       },
       {
         "label_en": "Department",
         "label_hi": "विभाग",
         "value_en": "Prosecution Department, Haryana",
         "value_hi": "अभियोजन विभाग, हरियाणा"
-      }
-    ],
-    "selection_en": [
-      "Written Examination / Recruitment Test",
-      "Interview / Viva-Voce",
-      "Final Result Declaration"
-    ],
-    "selection_hi": [
-      "लिखित परीक्षा / भर्ती परीक्षा",
-      "साक्षात्कार",
-      "अंतिम परिणाम घोषणा"
-    ],
-    "status_en": "Final result declared",
-    "status_hi": "अतिम परिणाम घोषित",
-    "summary_en": "Haryana Public Service Commission (HPSC) has released the final result for the Assistant District Attorney posts in the Prosecution Department, Haryana. Candidates who appeared for the recruitment process can check their result using the official website or notice. Follow the official link to view the merit list and further details.",
-    "summary_hi": "हरियाणा लोक सेवा आयोग ने अभियोजन विभाग, हरियाणा में सहायक जिला न्यायवादी के पदों के लिए अंतिम परिणाम जारी कर दिया है। भर्ती प्रक्रिया में शामिल होने वाले उम्मीदवार आधिकारिक वेबसाइट या नोटिस के माध्यम से अपना परिणाम देख सकते हैं।",
-    "vacancies": [
+      },
       {
-        "detail_en": "Prosecution Department, Haryana",
-        "detail_hi": "अभियोजन विभाग, हरियाणा",
-        "post_en": "Assistant District Attorney",
-        "post_hi": "सहायक जिला न्यायवादी",
-        "total": "Not specified"
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "18/2025",
+        "value_hi": "18/2025"
+      },
+      {
+        "label_en": "Result date",
+        "label_hi": "परिणाम दिनांक",
+        "value_en": "22 Oct 2026",
+        "value_hi": "22 अक्तूबर 2026"
       }
+    ],
+    "salary": [],
+    "selection_en": [],
+    "selection_hi": [],
+    "share_card": {
+      "headline_en": "Final Result Declared",
+      "headline_hi": "अंतिम परिणाम घोषित",
+      "kind": "result",
+      "line_en": "Assistant District Attorney",
+      "line_hi": "सहायक जिला न्यायवादी",
+      "posts": null
+    },
+    "status_en": "Final result declared",
+    "status_hi": "अंतिम परिणाम घोषित",
+    "summary_en": "HPSC has released the final result for the Assistant District Attorney examination 2025 in the Prosecution Department, Haryana. Candidates who appeared for the selection process can check their qualification status through the notice.",
+    "summary_hi": "हरियाणा लोक सेवा आयोग ने हरियाणा के अभियोजन विभाग में सहायक जिला न्यायवादी परीक्षा 2025 के लिए अंतिम परिणाम जारी कर दिया है। चयन प्रक्रिया में शामिल होने वाले उम्मीदवार नोटिस के माध्यम से अपनी अर्हता स्थिति की जांच कर सकते हैं।",
+    "vacancies": [],
+    "who_en": [
+      "Candidates who appeared for the HPSC Assistant District Attorney examination 2025."
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जो हरियाणा लोक सेवा आयोग सहायक जिला न्यायवादी परीक्षा 2025 में उपस्थित हुए थे।"
     ]
   },
   "pdf": {
