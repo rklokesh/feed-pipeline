@@ -1,0 +1,27 @@
+{
+  "board_url": "https://rpsc.rajasthan.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "exam_date": {
+      "evidence": "LECTURER (Ayush Deptt.) Exam - 2025 Subject : Kaumarbhritya Exam Date : 12-01-2026 Date Of Final Answer Key Published on Website: 28-10-2026 Answer key as per the Question Paper uploaded on Website Q. No. RES",
+      "source": "rule",
+      "value": "2026-01-12"
+    }
+  },
+  "first_seen": "2026-10-28T11:18:22+00:00",
+  "id": "a552df6f3f66",
+  "kind": "answer_key",
+  "org": "RPSC",
+  "pdf": {
+    "bytes": 222404,
+    "pages": 1,
+    "sha256": "0cec22dde41fa14a70553c44553408f55a1d6a873964d614fb89734ef799b038",
+    "text_kind": "text"
+  },
+  "source_id": "rpsc-home",
+  "status": "pending_review",
+  "title": "28/10/2026 Final Answer Key for Lecturer (Ayurved Dept.) Exam-2025 (Kaumarbhritya)",
+  "url": "https://rpsc.rajasthan.gov.in/Static/AnswerKeys/D7728C7E-ECC8-4352-908A-6A908BC563E3.pdf"
+}

@@ -1,0 +1,27 @@
+{
+  "board_url": "https://rpsc.rajasthan.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "exam_date": {
+      "evidence": "LECTURER (Ayush Deptt.) Exam - 2025 Subject : Swasthvritta Exam Date : 12-01-2026 Date Of Final Answer Key Published on Website: 28-10-2026 Answer key as per the Question Paper uploaded on Website Q. No. RES",
+      "source": "rule",
+      "value": "2026-01-12"
+    }
+  },
+  "first_seen": "2026-10-28T11:18:22+00:00",
+  "id": "a22d6d4c07bf",
+  "kind": "answer_key",
+  "org": "RPSC",
+  "pdf": {
+    "bytes": 222700,
+    "pages": 1,
+    "sha256": "69cd67887b974760a8d1df3d2c322c784fb91f8c13b50d58efce5722d5c23d93",
+    "text_kind": "text"
+  },
+  "source_id": "rpsc-home",
+  "status": "pending_review",
+  "title": "28/10/2026 Final Answer Key for Lecturer (Ayurved Dept.) Exam-2025 (Swasthvritta)",
+  "url": "https://rpsc.rajasthan.gov.in/Static/AnswerKeys/3A8E1556-1728-4305-85B3-51DF798F7861.pdf"
+}

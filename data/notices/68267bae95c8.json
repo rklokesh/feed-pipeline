@@ -1,0 +1,27 @@
+{
+  "board_url": "https://rpsc.rajasthan.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "exam_date": {
+      "evidence": "LECTURER (Ayush Deptt.) Exam - 2025 Subject : Kayachikitsa Exam Date : 12-01-2026 Date Of Final Answer Key Published on Website: 28-10-2026 Answer key as per the Question Paper uploaded on Website Q. No. RES",
+      "source": "rule",
+      "value": "2026-01-12"
+    }
+  },
+  "first_seen": "2026-10-28T11:18:22+00:00",
+  "id": "68267bae95c8",
+  "kind": "answer_key",
+  "org": "RPSC",
+  "pdf": {
+    "bytes": 222439,
+    "pages": 1,
+    "sha256": "72503a310d4d5081a819ce3181b179199cb1b4d771ded95c659d4cdf866a0d3e",
+    "text_kind": "text"
+  },
+  "source_id": "rpsc-home",
+  "status": "pending_review",
+  "title": "28/10/2026 Final Answer Key for Lecturer (Ayurved Dept.) Exam-2025 (Kayachikitsa)",
+  "url": "https://rpsc.rajasthan.gov.in/Static/AnswerKeys/08C163C1-8CAB-4826-A7E6-850125FD4C59.pdf"
+}

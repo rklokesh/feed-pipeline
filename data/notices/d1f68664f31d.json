@@ -1,0 +1,27 @@
+{
+  "board_url": "https://rpsc.rajasthan.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "exam_date": {
+      "evidence": "ER LECTURER (Ayush Deptt.) Exam - 2025 Subject : Panchkarma Exam Date : 12-01-2026 Date Of Final Answer Key Published on Website: 28-10-2026 Answer key as per the Question Paper uploaded on Website Q. No. RES",
+      "source": "rule",
+      "value": "2026-01-12"
+    }
+  },
+  "first_seen": "2026-10-28T11:18:22+00:00",
+  "id": "d1f68664f31d",
+  "kind": "answer_key",
+  "org": "RPSC",
+  "pdf": {
+    "bytes": 222439,
+    "pages": 1,
+    "sha256": "66916b0f2ab2656c5a18d2daeec9539371ae6168fce9fb5495d7385316d67b4f",
+    "text_kind": "text"
+  },
+  "source_id": "rpsc-home",
+  "status": "pending_review",
+  "title": "28/10/2026 Final Answer Key for Lecturer (Ayurved Dept.) Exam-2025 (Panchkarma)",
+  "url": "https://rpsc.rajasthan.gov.in/Static/AnswerKeys/27EB8308-310B-4203-8834-89CF78A20AE7.pdf"
+}

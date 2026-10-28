@@ -1,0 +1,27 @@
+{
+  "board_url": "https://rpsc.rajasthan.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "exam_date": {
+      "evidence": "CTURER (Ayush Deptt.) Exam - 2025 Subject : Shalakya Tantra Exam Date : 12-01-2026 Date Of Final Answer Key Published on Website: 28-10-2026 Answer key as per the Question Paper uploaded on Website Q. No. RES",
+      "source": "rule",
+      "value": "2026-01-12"
+    }
+  },
+  "first_seen": "2026-10-28T11:18:22+00:00",
+  "id": "358ae2c58e17",
+  "kind": "answer_key",
+  "org": "RPSC",
+  "pdf": {
+    "bytes": 222429,
+    "pages": 1,
+    "sha256": "dda0eeae898581c75d7d4cf9104282cadc654dbe6cdf1bfd3822c87c9fdcc16a",
+    "text_kind": "text"
+  },
+  "source_id": "rpsc-home",
+  "status": "pending_review",
+  "title": "28/10/2026 Final Answer Key for Lecturer (Ayurved Dept.) Exam-2025 (Shalakya Tantra)",
+  "url": "https://rpsc.rajasthan.gov.in/Static/AnswerKeys/5FF292EC-4BEA-449A-BA38-F4574743D04D.pdf"
+}
