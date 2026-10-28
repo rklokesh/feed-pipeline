@@ -29,26 +29,52 @@
   "notice_date": "2026-10-26",
   "org": "RPSC",
   "page": {
+    "after_en": [
+      "The commission will send the candidate's name for appointment upon receiving a requisition from the department within the prescribed time."
+    ],
+    "after_hi": [
+      "निर्धारित समय में विभाग से मांग प्राप्त होने पर आयोग द्वारा उम्मीदवार का नाम नियुक्ति के लिए भेजा जाएगा।"
+    ],
     "age": [],
     "apply_start": null,
     "apply_url": null,
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Check your roll number and merit rank in the official notice.",
+      "Verify your category cutoff and date of birth."
+    ],
+    "checklist_hi": [
+      "आधिकारिक सूचना में अपना रोल नंबर और मेरिट क्रमांक जांचें।",
+      "अपनी श्रेणी के कटऑफ और जन्मतिथि का मिलान करें।"
+    ],
     "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
-    "conducted_by_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी)",
+    "conducted_by_hi": "राजस्थान लोक सेवा आयोग (RPSC)",
     "dates": [
       {
-        "label_en": "Notice date",
-        "label_hi": "सूचना तिथि",
+        "label_en": "Result Declaration Date",
+        "label_hi": "परिणाम घोषणा की तिथि",
         "value_en": "26 Oct 2026",
         "value_hi": "26 अक्टू 2026"
       }
     ],
+    "documents_en": [],
+    "documents_hi": [],
     "eligibility": [],
     "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a supplementary or reserve list released by the Rajasthan Public Service Commission containing roll numbers of candidates who are provisionally recommended for appointment based on merit after document verification.",
+        "a_hi": "यह राजस्थान लोक सेवा आयोग द्वारा जारी की गई एक पूरक या आरक्षित सूची है जिसमें उन उम्मीदवारों के रोल नंबर शामिल हैं जिन्हें दस्तावेज़ सत्यापन के बाद मेरिट के आधार पर नियुक्ति के लिए अनंतिम रूप से अनुशंसित किया गया है।",
+        "q_en": "What is the RPSC Lecturer Shalakya Tantra Reserve List?",
+        "q_hi": "आरपीएससी व्याख्याता शालक्य तंत्र आरक्षित सूची क्या है?"
+      }
+    ],
     "extra": [
       {
-        "label_en": "Cutoff Marks (Gen. UR)",
-        "label_hi": "कटऑफ अंक (सामान्य अनारक्षित)",
+        "label_en": "General (UR) Cut Off Marks",
+        "label_hi": "सामान्य (अनारक्षित) कट ऑफ अंक",
         "value_en": "104.67 (DOB: 28-11-1993)",
         "value_hi": "104.67 (जन्मतिथि: 28-11-1993)"
       }
@@ -57,40 +83,45 @@
       {
         "a_en": "The reserve list was released on 26 October 2026.",
         "a_hi": "आरक्षित सूची 26 अक्टूबर 2026 को जारी की गई थी।",
-        "q_en": "When was the RPSC Lecturer Shalakya Tantra 2025 reserve list released?",
-        "q_hi": "आरपीएससी व्याख्याता शालक्य तंत्र 2025 आरक्षित सूची कब जारी की गई थी?"
+        "q_en": "When was the RPSC Lecturer Shalakya Tantra Reserve List released?",
+        "q_hi": "RPSC व्याख्याता शालक्य तंत्र आरक्षित सूची कब जारी की गई?"
       },
       {
-        "a_en": "Total 1 candidate is included in the reserve list.",
-        "a_hi": "आरक्षित सूची में कुल 1 उम्मीदवार शामिल है।",
-        "q_en": "How many candidates are included in the reserve list?",
-        "q_hi": "आरक्षित सूची में कुल कितने उम्मीदवार शामिल हैं?"
+        "a_en": "Total 1 candidate is selected in the reserve list.",
+        "a_hi": "आरक्षित सूची में कुल 1 उम्मीदवार का चयन किया गया है।",
+        "q_en": "How many candidates are selected in the reserve list?",
+        "q_hi": "आरक्षित सूची में कुल कितने उम्मीदवारों का चयन किया गया है?"
       },
       {
-        "a_en": "The cutoff mark for the General (UR) category is 104.67.",
-        "a_hi": "सामान्य (अनारक्षित) श्रेणी के लिए कटऑफ अंक 104.67 है।",
-        "q_en": "What is the cutoff mark for the General category in the reserve list?",
-        "q_hi": "आरक्षित सूची में सामान्य वर्ग के लिए कटऑफ अंक क्या है?"
+        "a_en": "The General (UR) category cutoff marks are 104.67.",
+        "a_hi": "सामान्य (अनारक्षित) श्रेणी के कटऑफ अंक 104.67 हैं।",
+        "q_en": "What is the General category cutoff for Lecturer Shalakya Tantra?",
+        "q_hi": "व्याख्याता शालक्य तंत्र के लिए सामान्य श्रेणी का कटऑफ क्या है?"
       }
     ],
     "fees": [],
     "h1_en": "RPSC Lecturer Shalakya Tantra 2025 Reserve List Declared",
     "h1_hi": "आरपीएससी व्याख्याता शालक्य तंत्र 2025 आरक्षित सूची घोषित",
     "how_en": [
-      "Visit the official RPSC website.",
-      "Click on the reserve list link for Lecturer (Shalakya Tantra) 2025.",
-      "Check your roll number and merit rank in the PDF."
+      "Visit the official website of RPSC.",
+      "Click on the result section for Lecturer (Shalakya Tantra) 2025.",
+      "Download the PDF and check your roll number and merit rank."
     ],
     "how_hi": [
-      "आधिकारिक आरपीएससी वेबसाइट पर जाएं।",
-      "व्याख्याता (शालक्य तंत्र) 2025 के लिए आरक्षित सूची लिंक पर क्लिक करें।",
-      "पीडीएफ में अपना रोल नंबर और मेरिट क्रमांक जांचें।"
+      "RPSC की आधिकारिक वेबसाइट पर जाएं।",
+      "व्याख्याता (शालक्य तंत्र) 2025 के परिणाम अनुभाग पर क्लिक करें।",
+      "पीडीएफ डाउनलोड करें और अपना रोल नंबर तथा मेरिट क्रमांक जांचें।"
     ],
-    "intro_en": "The Rajasthan Public Service Commission (RPSC) has published the reserve list and cutoff marks for the Lecturer (Shalakya Tantra) examination 2025 under the Ayurved Department. Candidates who appeared for document verification can check their roll number and merit rank in the declared reserve list. One candidate has been provisionally selected and recommended for appointment upon demand by the department.",
-    "intro_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी) ने आयुर्वेद विभाग के अंतर्गत व्याख्याता (शालक्य तंत्र) परीक्षा 2025 के लिए आरक्षित सूची और कटऑफ अंक जारी कर दिए हैं। दस्तावेज़ सत्यापन के लिए उपस्थित होने वाले उम्मीदवार घोषित आरक्षित सूची में अपना रोल नंबर और मेरिट क्रमांक देख सकते हैं। विभाग द्वारा मांग किए जाने पर नियुक्ति के लिए एक उम्मीदवार को अनंतिम रूप से चयनित और संस्तुत किया गया है।",
+    "intro_en": "The Rajasthan Public Service Commission (RPSC) has released the reserve list and cutoff marks for the Lecturer (Shalakya Tantra) examination 2025 under the AYUSH Department. Following document verification of candidates from the consideration list, one candidate has been declared successful in the reserve list. Candidates who appeared for this examination can check their result and cutoff details.",
+    "intro_hi": "राजस्थान लोक सेवा आयोग (RPSC) ने आयुर्वेद विभाग के अंतर्गत व्याख्याता (शालक्य तंत्र) परीक्षा 2025 के लिए आरक्षित सूची और कटऑफ अंक जारी कर दिए हैं। विचार सूची के उम्मीदवारों के दस्तावेजों की जांच के बाद, आरक्षित सूची में एक उम्मीदवार को सफल घोषित किया गया है। इस परीक्षा में शामिल होने वाले उम्मीदवार अपना परिणाम और कटऑफ विवरण देख सकते हैं।",
     "last_date": null,
+    "mistakes_en": [],
+    "mistakes_hi": [],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": "2026-10-26",
     "official_site": "https://rpsc.rajasthan.gov.in/",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
@@ -100,40 +131,55 @@
         "value_hi": "व्याख्याता (शालक्य तंत्र)"
       },
       {
-        "label_en": "Total vacancies",
-        "label_hi": "कुल रिक्तियां",
-        "value_en": "1",
-        "value_hi": "1"
-      },
-      {
-        "label_en": "Advertisement number",
+        "label_en": "Advertisement Number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "Lecturer (Ayurved Dept.) - 2025",
         "value_hi": "व्याख्याता (आयुर्वेद विभाग) - 2025"
+      },
+      {
+        "label_en": "Total Candidates Selected",
+        "label_hi": "कुल चयनित उम्मीदवार",
+        "value_en": "01",
+        "value_hi": "01"
       }
     ],
+    "salary": [],
     "selection_en": [
       "Written Examination",
       "Document Verification",
-      "Reserve List / Recommendation"
+      "Reserve List / Final Recommendation"
     ],
     "selection_hi": [
       "लिखित परीक्षा",
       "दस्तावेज़ सत्यापन",
-      "आरक्षित सूची / अनुशंसा"
+      "आरक्षित सूची / अंतिम संस्तुति"
     ],
+    "share_card": {
+      "headline_en": "Reserve List Declared",
+      "headline_hi": "आरक्षित सूची घोषित",
+      "kind": "result",
+      "line_en": "Lecturer Shalakya Tantra",
+      "line_hi": "व्याख्याता शालक्य तंत्र",
+      "posts": 1
+    },
     "status_en": "Reserve list and cutoff marks declared",
     "status_hi": "आरक्षित सूची और कटऑफ अंक घोषित",
-    "summary_en": "Rajasthan Public Service Commission has released the reserve list and cutoff marks for the Lecturer Shalakya Tantra examination 2025 under the Ayurveda Department.",
-    "summary_hi": "राजस्थान लोक सेवा आयोग ने आयुर्वेद विभाग के अंतर्गत व्याख्याता शालक्य तंत्र परीक्षा 2025 के लिए आरक्षित सूची और कटऑफ अंक जारी कर दिए हैं।",
+    "summary_en": "Rajasthan Public Service Commission has released the reserve list and cutoff marks for the Lecturer Shalakya Tantra examination 2025. Candidates included in the reserve list can check their roll number and merit rank. The commission will recommend the candidate's name for appointment upon receiving a requisition from the department.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने व्याख्याता शालक्य तंत्र परीक्षा 2025 के लिए आरक्षित सूची और कटऑफ अंक जारी कर दिए हैं। आरक्षित सूची में शामिल उम्मीदवार अपना रोल नंबर और मेरिट क्रमांक देख सकते हैं। विभाग से मांग प्राप्त होने पर आयोग द्वारा उम्मीदवार का नाम नियुक्ति के लिए अभिस्तावित किया जाएगा।",
     "vacancies": [
       {
-        "detail_en": "Gen. (UR): 1",
-        "detail_hi": "सामान्य (अनारक्षित): 1",
+        "detail_en": "Gen (UR): 01",
+        "detail_hi": "सामान्य (अनारक्षित): 01",
         "post_en": "Lecturer (Shalakya Tantra)",
         "post_hi": "व्याख्याता (शालक्य तंत्र)",
         "total": "1"
       }
+    ],
+    "who_en": [
+      "Candidates who appeared for the RPSC Lecturer Shalakya Tantra Exam 2025."
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जो RPSC व्याख्याता शालक्य तंत्र परीक्षा 2025 में शामिल हुए थे।"
     ]
   },
   "pdf": {
