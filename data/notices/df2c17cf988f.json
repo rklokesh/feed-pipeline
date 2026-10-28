@@ -11,8 +11,8 @@
     "skip_reason": "",
     "summary_en": "National Testing Agency has extended the last date to submit online applications for the UGC-NET December 2026 examination to 31 October 2026.",
     "summary_hi": "राष्ट्रीय परीक्षण एजेंसी ने यूजीसी-नेट दिसंबर 2026 परीक्षा के लिए ऑनलाइन आवेदन जमा करने की अंतिम तिथि 31 अक्टूबर 2026 तक बढ़ा दी है।",
-    "title_en": "NTA UGC-NET December 2026 Application Date Extended",
-    "title_hi": "एनटीए यूजीसी-नेट दिसंबर 2026 आवेदन तिथि बढ़ाई गई",
+    "title_en": "NTA UGC-NET December 2026 Last Date Extended – Apply Online Form",
+    "title_hi": "एनटीए यूजीसी-नेट दिसंबर 2026 अंतिम तिथि बढ़ाई गई – ऑनलाइन फॉर्म",
     "type": "Job",
     "vacancies": null
   },
@@ -35,91 +35,150 @@
   "notice_date": "2026-10-27",
   "org": "NTA",
   "page": {
+    "after_en": [
+      "Examination conduction as per schedule",
+      "Release of admit card",
+      "Answer key and result declaration"
+    ],
+    "after_hi": [
+      "निर्धारित कार्यक्रम के अनुसार परीक्षा का आयोजन",
+      "एडमिट कार्ड जारी करना",
+      "उत्तर कुंजी और परिणाम घोषणा"
+    ],
     "age": [],
     "apply_start": null,
     "apply_url": "https://nta.ac.in",
+    "changes": [
+      {
+        "new_en": "31 Oct 2026",
+        "new_hi": "31 अक्टूबर 2026",
+        "old_en": "Not specified in notice",
+        "old_hi": "नोटिस में निर्दिष्ट नहीं",
+        "what_en": "Last date for submission of Online Application Form",
+        "what_hi": "ऑनलाइन आवेदन पत्र जमा करने की अंतिम तिथि"
+      },
+      {
+        "new_en": "31 Oct 2026",
+        "new_hi": "31 अक्टूबर 2026",
+        "old_en": "Not specified in notice",
+        "old_hi": "नोटिस में निर्दिष्ट नहीं",
+        "what_en": "Last date for successful transaction of examination fee",
+        "what_hi": "परीक्षा शुल्क के सफल लेनदेन की अंतिम तिथि"
+      }
+    ],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Check eligibility criteria",
+      "Keep documents ready",
+      "Submit application and fee before 31 October 2026"
+    ],
+    "checklist_hi": [
+      "पात्रता मापदंडों की जांच करें",
+      "दस्तावेज़ तैयार रखें",
+      "31 अक्टूबर 2026 से पहले आवेदन और शुल्क जमा करें"
+    ],
     "conducted_by_en": "National Testing Agency (NTA)",
     "conducted_by_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए)",
     "dates": [
       {
-        "label_en": "Notice date",
-        "label_hi": "नोटिस की तिथि",
-        "value_en": "27 October 2026",
-        "value_hi": "27 अक्टूबर 2026"
-      },
-      {
         "label_en": "Last date for submission of Online Application Form",
         "label_hi": "ऑनलाइन आवेदन पत्र जमा करने की अंतिम तिथि",
-        "value_en": "31 October 2026",
+        "value_en": "31 Oct 2026",
         "value_hi": "31 अक्टूबर 2026"
       },
       {
         "label_en": "Last date for successful transaction of examination fee",
         "label_hi": "परीक्षा शुल्क के सफल लेनदेन की अंतिम तिथि",
-        "value_en": "31 October 2026",
+        "value_en": "31 Oct 2026",
         "value_hi": "31 अक्टूबर 2026"
       }
     ],
+    "documents_en": [
+      "Educational qualification details",
+      "Scanned photograph and signature",
+      "Valid ID proof",
+      "Payment details"
+    ],
+    "documents_hi": [
+      "शैक्षणिक योग्यता विवरण",
+      "स्कैन की गई फोटो और हस्ताक्षर",
+      "वैध पहचान प्रमाण",
+      "भुगतान विवरण"
+    ],
     "eligibility": [
       {
-        "label_en": "Nationality",
-        "label_hi": "राष्ट्रीयता",
-        "value_en": "Indian nationals",
-        "value_hi": "भारतीय नागरिक"
+        "label_en": "Examination Purpose",
+        "label_hi": "परीक्षा का उद्देश्य",
+        "value_en": "Junior Research Fellowship, Assistant Professor, and Ph.D. admission in Indian Universities and Colleges",
+        "value_hi": "भारतीय विश्वविद्यालयों और कॉलेजों में जूनियर रिसर्च फेलोशिप, सहायक प्रोफेसर और पीएचडी प्रवेश"
       }
     ],
     "exam_date": null,
-    "extra": [
+    "exam_pattern": [],
+    "explain": [
       {
-        "label_en": "Official Website",
-        "label_hi": "आधिकारिक वेबसाइट",
-        "value_en": "https://ugcnet.nta.nic.in",
-        "value_hi": "https://ugcnet.nta.nic.in"
+        "a_en": "UGC-NET is a national-level examination conducted by the National Testing Agency to determine the eligibility of Indian nationals for Junior Research Fellowship, Assistant Professor, and Ph.D. admissions in Indian universities.",
+        "a_hi": "यूजीसी-नेट राष्ट्रीय परीक्षण एजेंसी द्वारा आयोजित एक राष्ट्रीय स्तर की परीक्षा है जो भारतीय विश्वविद्यालयों में जूनियर रिसर्च फेलोशिप, सहायक प्रोफेसर और पीएचडी प्रवेश के लिए भारतीय नागरिकों की पात्रता निर्धारित करती है।",
+        "q_en": "What is UGC-NET December 2026?",
+        "q_hi": "यूजीसी-नेट दिसंबर 2026 क्या है?"
       }
     ],
+    "extra": [],
     "faq": [
       {
-        "a_en": "The last date to submit the online application form is 31 October 2026 up to 11:50 PM.",
-        "a_hi": "ऑनलाइन आवेदन पत्र जमा करने की अंतिम तिथि 31 अक्टूबर 2026 रात 11:50 बजे तक है।",
-        "q_en": "What is the extended last date to apply for UGC-NET December 2026?",
-        "q_hi": "यूजीसी-नेट दिसंबर 2026 के लिए आवेदन करने की बढ़ाई गई अंतिम तिथि क्या है?"
+        "a_en": "The last date to apply for UGC-NET December 2026 is 31 October 2026 up to 11:50 PM.",
+        "a_hi": "यूजीसी-नेट दिसंबर 2026 के लिए आवेदन करने की अंतिम तिथि 31 अक्टूबर 2026 रात्रि 11:50 बजे तक है।",
+        "q_en": "What is the last date to apply for UGC-NET December 2026?",
+        "q_hi": "यूजीसी-नेट दिसंबर 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "The last date for the successful transaction of the examination fee is 31 October 2026 up to 11:50 PM.",
-        "a_hi": "परीक्षा शुल्क के सफल लेनदेन की अंतिम तिथि 31 अक्टूबर 2026 रात 11:50 बजे तक है।",
-        "q_en": "What is the last date to pay the examination fee?",
-        "q_hi": "परीक्षा शुल्क का भुगतान करने की अंतिम तिथि क्या है?"
+        "a_en": "The examination is conducted by the National Testing Agency (NTA).",
+        "a_hi": "यह परीक्षा राष्ट्रीय परीक्षण एजेंसी (एनटीए) द्वारा आयोजित की जाती है।",
+        "q_en": "Who conducts the UGC-NET December 2026 examination?",
+        "q_hi": "यूजीसी-नेट दिसंबर 2026 परीक्षा कौन आयोजित करता है?"
       },
       {
-        "a_en": "The National Testing Agency (NTA) is conducting the examination.",
-        "a_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए) परीक्षा आयोजित कर रही है।",
-        "q_en": "Who is conducting the UGC-NET December 2026 examination?",
-        "q_hi": "यूजीसी-नेट दिसंबर 2026 परीक्षा कौन आयोजित कर रहा है?"
+        "a_en": "The last date for successful transaction of the examination fee is 31 October 2026 up to 11:50 PM.",
+        "a_hi": "परीक्षा शुल्क के सफल लेनदेन की अंतिम तिथि 31 अक्टूबर 2026 रात्रि 11:50 बजे तक है।",
+        "q_en": "What is the last date for fee payment for UGC-NET December 2026?",
+        "q_hi": "यूजीसी-नेट दिसंबर 2026 के लिए शुल्क भुगतान की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "Candidates can visit https://nta.ac.in and https://ugcnet.nta.nic.in for updates.",
-        "a_hi": "उम्मीदवार अपडेट के लिए https://nta.ac.in और https://ugcnet.nta.nic.in पर जा सकते हैं।",
-        "q_en": "What is the official website for UGC-NET December 2026?",
-        "q_hi": "यूजीसी-नेट दिसंबर 2026 के लिए आधिकारिक वेबसाइट कौन सी है?"
+        "a_en": "You can apply online through the official websites https://nta.ac.in and https://ugcnet.nta.nic.in.",
+        "a_hi": "आप आधिकारिक वेबसाइटों https://nta.ac.in और https://ugcnet.nta.nic.in के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+        "q_en": "Where can I apply online for UGC-NET December 2026?",
+        "q_hi": "मैं यूजीसी-नेट दिसंबर 2026 के लिए ऑनलाइन आवेदन कहां कर सकता हूं?"
       }
     ],
     "fees": [],
-    "h1_en": "NTA UGC-NET December 2026 Application Date Extended",
-    "h1_hi": "एनटीए यूजीसी-नेट दिसंबर 2026 आवेदन तिथि बढ़ाई गई",
+    "h1_en": "NTA UGC-NET December 2026 Last Date Extended – Apply Online Form",
+    "h1_hi": "एनटीए यूजीसी-नेट दिसंबर 2026 अंतिम तिथि बढ़ाई गई – ऑनलाइन फॉर्म",
     "how_en": [
-      "Visit the official NTA websites https://nta.ac.in or https://ugcnet.nta.nic.in.",
-      "Complete the online application form and pay the examination fee by 31 October 2026."
+      "Visit the official website at https://nta.ac.in or https://ugcnet.nta.nic.in",
+      "Click on the UGC-NET December 2026 online application link",
+      "Fill out the application form and complete the fee payment before 31 October 2026",
+      "Take a printout of the final confirmation page for future reference"
     ],
     "how_hi": [
-      "आधिकारिक एनटीए वेबसाइट https://nta.ac.in या https://ugcnet.nta.nic.in पर जाएं।",
-      "31 अक्टूबर 2026 तक ऑनलाइन आवेदन पत्र पूरा करें और परीक्षा शुल्क का भुगतान करें।"
+      "आधिकारिक वेबसाइट https://nta.ac.in या https://ugcnet.nta.nic.in पर जाएं",
+      "यूजीसी-नेट दिसंबर 2026 ऑनलाइन आवेदन लिंक पर क्लिक करें",
+      "आवेदन पत्र भरें और 31 अक्टूबर 2026 से पहले शुल्क भुगतान पूरा करें",
+      "भविष्य के संदर्भ के लिए अंतिम पुष्टिकरण पृष्ठ का प्रिंटआउट लें"
     ],
-    "intro_en": "The National Testing Agency (NTA) has issued a public notice to extend the last date for submitting online applications for the UGC-NET December 2026 Examination. The examination determines eligibility for Junior Research Fellowship (JRF), Assistant Professor appointment, and Ph.D. admissions. The revised last date to apply and pay the examination fee is 31 October 2026 up to 11:50 PM. Candidates are advised to complete their applications before the deadline.",
-    "intro_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने यूजीसी-नेट दिसंबर 2026 परीक्षा के लिए ऑनलाइन आवेदन जमा करने की अंतिम तिथि बढ़ाने के संबंध में एक सार्वजनिक सूचना जारी की है। यह परीक्षा जूनियर रिसर्च फेलोशिप (जेआरएफ), सहायक प्रोफेसर पद और पीएचडी में प्रवेश के लिए पात्रता निर्धारित करती है। आवेदन करने और परीक्षा शुल्क का भुगतान करने की संशोधित अंतिम तिथि 31 अक्टूबर 2026 रात 11:50 बजे तक है। उम्मीदवारों को सलाह दी जाती है कि वे समय सीमा से पहले अपना आवेदन पूरा करें।",
+    "intro_en": "The National Testing Agency (NTA) has released a public notice regarding the extension of the last date for submission of online application forms for the UGC-NET December 2026 Examination. The examination is conducted for determining the eligibility of Indian nationals for Junior Research Fellowship (JRF), Assistant Professor, and admission to Ph.D. programmes. The revised last date to submit the online application and fee is 31 October 2026 up to 11:50 PM. Candidates who have not yet applied should complete their registration before the deadline.",
+    "intro_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने यूजीसी-नेट दिसंबर 2026 परीक्षा के लिए ऑनलाइन आवेदन पत्र जमा करने की अंतिम तिथि बढ़ाने के संबंध में एक सार्वजनिक नोटिस जारी किया है। यह परीक्षा भारतीय नागरिकों के लिए जूनियर रिसर्च फेलोशिप (जेआरएफ), सहायक प्रोफेसर के रूप में नियुक्ति और पीएचडी कार्यक्रमों में प्रवेश के लिए पात्रता निर्धारित करने हेतु आयोजित की जाती है। ऑनलाइन आवेदन और शुल्क जमा करने की संशोधित अंतिम तिथि 31 अक्टूबर 2026 रात्रि 11:50 बजे तक है। जिन उम्मीदवारों ने अभी तक आवेदन नहीं किया है, वे समय सीमा से पहले अपना पंजीकरण पूरा कर लें।",
     "last_date": "2026-10-31",
+    "mistakes_en": [
+      "Do not wait until the last minute to avoid technical difficulties"
+    ],
+    "mistakes_hi": [
+      "तकनीकी कठिनाइयों से बचने के लिए अंतिम समय तक प्रतीक्षा न करें"
+    ],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": "2026-10-27",
     "official_site": "https://ugcnet.nta.nic.in",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
@@ -129,42 +188,51 @@
         "value_hi": "जूनियर रिसर्च फेलोशिप और सहायक प्रोफेसर"
       },
       {
-        "label_en": "Apply online (last date)",
-        "label_hi": "ऑनलाइन आवेदन (अंतिम तिथि)",
-        "value_en": "31 October 2026 (up to 11:50 PM)",
-        "value_hi": "31 अक्टूबर 2026 (रात 11:50 बजे तक)"
+        "label_en": "Last date to apply",
+        "label_hi": "आवेदन की अंतिम तिथि",
+        "value_en": "31 Oct 2026 (11:50 PM)",
+        "value_hi": "31 अक्टूबर 2026 (रात्रि 11:50 बजे तक)"
       },
       {
-        "label_en": "Last date for fee",
+        "label_en": "Fee payment last date",
         "label_hi": "शुल्क भुगतान की अंतिम तिथि",
-        "value_en": "31 October 2026 (up to 11:50 PM)",
-        "value_hi": "31 अक्टूबर 2026 (रात 11:50 बजे तक)"
-      },
-      {
-        "label_en": "Advertisement number",
-        "label_hi": "विज्ञापन संख्या",
-        "value_en": "UGC-NET December 2026",
-        "value_hi": "यूजीसी-नेट दिसंबर 2026"
+        "value_en": "31 Oct 2026 (11:50 PM)",
+        "value_hi": "31 अक्टूबर 2026 (रात्रि 11:50 बजे तक)"
       }
     ],
+    "salary": [],
     "selection_en": [
       "UGC-NET December 2026 Examination"
     ],
     "selection_hi": [
       "यूजीसी-नेट दिसंबर 2026 परीक्षा"
     ],
-    "status_en": "Application last date extended up to 31 Oct 2026",
-    "status_hi": "आवेदन की अंतिम तिथि 31 अक्टूबर 2026 तक बढ़ाई गई",
-    "summary_en": "National Testing Agency has extended the last date to submit online applications for the UGC-NET December 2026 examination to 31 October 2026. Candidates who have not yet applied can submit their applications and fees on the official website.",
-    "summary_hi": "राष्ट्रीय परीक्षण एजेंसी ने यूजीसी-नेट दिसंबर 2026 परीक्षा के लिए ऑनलाइन आवेदन जमा करने की अंतिम तिथि 31 अक्टूबर 2026 तक बढ़ा दी है। जिन उम्मीदवारों ने अभी तक आवेदन नहीं किया है वे आधिकारिक वेबसाइट पर आवेदन और शुल्क जमा कर सकते हैं।",
+    "share_card": {
+      "headline_en": "Last Date Extended",
+      "headline_hi": "अंतिम तिथि बढ़ाई गई",
+      "kind": "corr",
+      "line_en": "UGC-NET Dec 2026 Exam",
+      "line_hi": "यूजीसी-नेट दिसंबर 2026 परीक्षा",
+      "posts": null
+    },
+    "status_en": "Last date extended up to 31 October 2026",
+    "status_hi": "अंतिम तिथि 31 अक्टूबर 2026 तक बढ़ाई गई",
+    "summary_en": "National Testing Agency has extended the last date to submit online applications for the UGC-NET December 2026 examination to 31 October 2026. Candidates can apply online through the official website.",
+    "summary_hi": "राष्ट्रीय परीक्षण एजेंसी ने यूजीसी-नेट दिसंबर 2026 परीक्षा के लिए ऑनलाइन आवेदन जमा करने की अंतिम तिथि 31 अक्टूबर 2026 तक बढ़ा दी है। उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
     "vacancies": [
       {
         "detail_en": "Eligibility for JRF, Assistant Professor, and Ph.D. admission",
         "detail_hi": "जेआरएफ, सहायक प्रोफेसर और पीएचडी प्रवेश के लिए पात्रता",
         "post_en": "Junior Research Fellowship and Assistant Professor",
         "post_hi": "जूनियर रिसर्च फेलोशिप और सहायक प्रोफेसर",
-        "total": "Not specified"
+        "total": "Not Specified"
       }
+    ],
+    "who_en": [
+      "Candidates seeking Junior Research Fellowship, Assistant Professor positions, or Ph.D. admissions who have not yet applied"
+    ],
+    "who_hi": [
+      "जूनियर रिसर्च फेलोशिप, सहायक प्रोफेसर पदों या पीएचडी प्रवेश के इच्छुक उम्मीदवार जिन्होंने अभी तक आवेदन नहीं किया है"
     ]
   },
   "pdf": {
