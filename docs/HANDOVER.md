@@ -132,8 +132,11 @@ publish.yml (when the owner adds a label to an issue, open or closed):
   Each got a fresh baseline (seen.json entry removed → first run records old notices, publishes only 5 samples).
 - Not working: **MPSC** (list loads from a JSON feed, needs its own reader), MP ESB (certificate chain),
   RRB Chandigarh (certificate hostname mismatch — don't bypass), CRPF/DRDO/IAF (URLs dead or down).
-- Not added yet: India Post GDS, Army, Coast Guard, CISF, Employment News, SSB, NVS, Assam Rifles, GPSC, KPSC, OPSC,
-  CG Vyapam (probe dumps for most are in `reports/links/`).
+- Added 28 Oct: **India Post** (`/vacancies`, documents `/api/documents/file/…`), **Coast Guard** (now the CGCAT page),
+  **CISF** (`file_open.php?fnm=…`; site gave 502 on its first check — retried every run).
+- Not possible yet (checked 28 Oct): India Post GDS site, GPSC, KPSC, CG Vyapam (time out even from India), SSB (DNS
+  gone), JSSC (times out), OPSC (inner pages bounce to home without a session), Army (login portal only), NVS, Assam
+  Rifles and Employment News (pages are JS apps with no document links — would need their data feeds).
 
 ## 5. Design rules (agreed — keep them)
 
