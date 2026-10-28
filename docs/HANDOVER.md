@@ -165,9 +165,12 @@ publish.yml (when the owner adds a label to an issue, open or closed):
 2. **Add boards:** India Post GDS, Army, Navy/Air Force Agniveer, Coast Guard, CRPF, CISF, DRDO, Employment News,
    SSB, NVS, Assam Rifles, GPSC, KPSC, OPSC, CG Vyapam (logos for most are already in `assets/org`).
 3. Trust pages are live (28 Oct): /about/, /privacy/, /terms/, /contact/ — built by `scripts/info_pages.py` (edit text there; runs in prepare/publish workflows). Press kit page still to do.
-4. **Launch for search** (when sarkarichart.com is bought): set `SITE_URL` + the hardcoded pages.dev URLs (index.html,
-   schema, report_page.py, og) → remove noindex (`site/_headers`) → sitemap, robots, llms.txt, server-rendered list →
-   Search Console + Bing. Keyword research + ideal reader profile first.
+4. **Launch for search — ready, waiting for the domain.** `scripts/seo_files.py` builds sitemap.xml, robots.txt (closed
+   while `LAUNCHED = False`) and llms.txt on every publish. Domain day: connect sarkarichart.com in Cloudflare Pages →
+   `python3 scripts/go_live.py https://sarkarichart.com` (switches every address, removes noindex, opens robots, rebuilds;
+   tested on a copy 28 Oct) → commit + push → Search Console + Bing, submit /sitemap.xml → contact@ email via Cloudflare
+   Email Routing. Reader profile + search words: `docs/KEYWORDS.md` (titles now follow it: "<board> <post> <search word>
+   <year> – <hook>", browser title adds " | SarkariChart" when it fits).
 5. After launch: one page per exam, Google Discover follow link, card preview on notice pages, parked bookmark
    pop-up and recent searches.
 6. Owner to-do: buy the domain (Telegram channel photo is set). On domain day also set up Cloudflare Email Routing for contact@sarkarichart.com and add it to /contact/. Never put the owner's name or company on the site.

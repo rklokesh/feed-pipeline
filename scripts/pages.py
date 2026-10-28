@@ -45,7 +45,11 @@ general guidance (documents, mistakes, what happens next) must stay true for thi
 Hindi must be natural Devanagari with no English words (proper nouns transliterated, numbers as digits, ₹ for money).
 Answer with ONE JSON object:
 {
- "h1_en": "page title, max 70 chars", "h1_hi": "same in Hindi",
+ "h1_en": "page title in the words people search, max 65 chars: board short name + post/exam + search word + year + one hook,
+           e.g. 'RRB Station Master Recruitment 2026 – Apply Online for 1,215 Posts', 'SSC GD Admit Card 2026 Out – Exam City Slip Link',
+           'UPSC CSE Result 2026 – Cut Off and Final List'. Search words: Recruitment, Notification, Vacancy, Online Form, Admit Card,
+           Answer Key, Result, Cut Off, Merit List, Last Date Extended. No 'expected', no hype.",
+ "h1_hi": "same in Hindi with Hindi search words (भर्ती, वैकेंसी, एडमिट कार्ड, आंसर की, रिज़ल्ट, कट ऑफ, अंतिम तिथि)",
  "summary_en": "2-3 plain sentences: what this is, who it is for, what to do next",
  "summary_hi": "same in Hindi",
  "status_en": "one short status line for non-job notices, e.g. 'Final result declared' / 'District information slip released' / 'Answer key released, objections open till 30 Oct 2026'; for jobs: empty",
@@ -448,9 +452,14 @@ def render(n: dict, slug: str, related: list | None = None) -> str:
     </div>''')
 
     tpl = TEMPLATE.read_text(encoding="utf-8")
+    for d_, brand in ((en, "SarkariChart"), (hi, "सरकारी चार्ट")):   # browser tab / Google title: heading + brand when it fits
+        if len(f'{d_["title"]} | {brand}') <= 72:
+            d_["title"] = f'{d_["title"]} | {brand}'
     t_en = "\n".join(f"      {k}: {js(v)}," for k, v in en.items())
     t_hi = "\n".join(f"      {k}: {js(v)}," for k, v in hi.items())
-    desc = (en["summary"] or en["h1"])[:155]
+    desc = (en["summary"] or en["h1"])
+    if len(desc) > 158:
+        desc = desc[:155].rsplit(" ", 1)[0] + "…"
     out = (tpl.replace("{{TITLE}}", esc(en["title"])).replace("{{DESC}}", esc(desc)).replace("{{MAIN}}", "\n".join(main))
            .replace("{{T_EN}}", t_en).replace("{{T_HI}}", t_hi).replace("{{SLUG}}", slug)
            .replace("{{OGIMG}}", f"{SITE_URL}/notice/{slug}/og.png").replace("{{OGALT}}", esc(f"{en['h1']} — {en['org']} {typ} notice summary card by SarkariChart")).replace("{{URL}}", f"{SITE_URL}/notice/{slug}/")
