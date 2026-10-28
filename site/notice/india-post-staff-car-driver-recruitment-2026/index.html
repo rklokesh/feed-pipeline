@@ -30,14 +30,14 @@
   --page: #FFFFFF; --ink: #36322D; --grey: #76726B; --line: #E5E1D8; --soft: #F4F1EB;
   --calm: #3E6B4E; --calm-bg: #EEF4EE;
   --warm: #9A5410; --warm-bg: #FBF0E2;
-  --hot: #B23A1A; --hot-bg: #FCEBE5;
+  --hot: #B23A1A; --hot-bg: #FCEBE5; --unread: #8E1B1E;
 
   --font: "Helvetica Neue", Helvetica, Arial, system-ui, -apple-system, "Segoe UI", Roboto, "Kohinoor Devanagari", "Nirmala UI", "Noto Sans Devanagari", sans-serif;
 }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
+  :root:not([data-theme="light"]) { --page: #1C1B1A; --unread: #F2A7A1; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
 }
-:root[data-theme="dark"] { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
+:root[data-theme="dark"] { --page: #1C1B1A; --unread: #F2A7A1; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 /* tags: one small framed shape used for days left, the K shortcut and the chosen category */
@@ -191,7 +191,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
 .kv a.r:hover { background: var(--row-hover); }   /* same as homepage rows */
-.kv.rel a.r:visited > span:first-child { color: var(--grey); }   /* already opened */
+.kv.rel a.r > span:first-child { color: var(--unread); }   /* not opened yet */
+.kv.rel a.r:visited > span:first-child { color: var(--ink); }   /* already opened */
 :root { --row-hover: #FAF8F4; }
 :root[data-theme="dark"] { --row-hover: #222120; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --row-hover: #222120; } }
@@ -378,7 +379,7 @@ html[lang="hi"] .hisum { display: none; }
       <a class="r" href="/notice/rrb-station-master-cen-08-2026-corrigendum-1/"><span data-t="rel2">RRB Station Master Recruitment 2026 – Vacancies Increased to 1,265</span><span class="v g num">27 Oct 2026</span></a>
       <a class="r" href="/notice/ugc-net-december-2026-last-date-extended/"><span data-t="rel3">UGC-NET December 2026 Last Date Extended – Apply Online</span><span class="v g num">27 Oct 2026</span></a>
       <a class="r" href="/notice/nta-ugc-net-december-2026-application-date-extended/"><span data-t="rel4">NTA UGC-NET December 2026 Last Date Extended – Apply Online Form</span><span class="v g num">27 Oct 2026</span></a>
-      <a class="r" href="/notice/ssc-je-and-si-exam-2026-revised-dates/"><span data-t="rel5">SSC JE and SI Exam 2026 Revised Dates</span><span class="v g num">26 Oct 2026</span></a>
+      <a class="r" href="/notice/ssc-je-and-si-exam-2026-revised-dates/"><span data-t="rel5">SSC JE and SI Exam 2026 Revised Dates – Schedule Notice</span><span class="v g num">26 Oct 2026</span></a>
     </section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Jobs", "item": "https://sarkarichart.pages.dev/?cat=jobs"}, {"@type": "ListItem", "position": 3, "name": "India Post Staff Car Driver Recruitment 2026", "item": "https://sarkarichart.pages.dev/notice/india-post-staff-car-driver-recruitment-2026/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "India Post Staff Car Driver Recruitment 2026", "url": "https://sarkarichart.pages.dev/notice/india-post-staff-car-driver-recruitment-2026/", "inLanguage": ["en-IN", "hi-IN"], "description": "India Post, Office of the Manager, Mail Motor Service, Bengaluru has released a notification for filling up 11 vacancies of Staff Car Driver (Ordinary Grade) on a deputation/absorption basis. The posts belong to General Central Services, Group 'C', Non-Gazetted, Non-Ministerial in Pay Level-2. Eligible and willing regular central government employees can submit their applications in the prescribed proforma through proper channel within 60 days of publication in Employment News. Applicants should ensure they meet all eligibility conditions including a valid driving license and required experience.", "datePublished": "2026-08-01", "dateModified": "2026-10-28", "isBasedOn": "https://www.indiapost.gov.in/api/documents/file/103pgjk0mj9n00heh09v82063nq0007d0sjth3igcr04nr70fiaj0eiq939zwj", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.pages.dev/notice/india-post-staff-car-driver-recruitment-2026/og.png", "about": {"@type": "GovernmentOrganization", "name": "India Post (Department of Posts)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many vacancies are announced for India Post Staff Car Driver Recruitment 2026?", "acceptedAnswer": {"@type": "Answer", "text": "A total of 11 vacancies are announced (10 for MMS Bengaluru and 1 for MMS Sub Depot Mysuru)."}}, {"@type": "Question", "name": "What is the last date to apply?", "acceptedAnswer": {"@type": "Answer", "text": "Applications must be sent within 60 days from the date of publication of the advertisement in Employment News."}}, {"@type": "Question", "name": "What is the age limit for this recruitment?", "acceptedAnswer": {"@type": "Answer", "text": "The maximum age limit for appointment by deputation/absorption shall not exceed 56 years as on the closing date of receipt of applications."}}, {"@type": "Question", "name": "What is the educational qualification required?", "acceptedAnswer": {"@type": "Answer", "text": "Candidates must have passed 10th standard from a recognized board or institute, along with a valid driving license for light and heavy motor vehicles."}}, {"@type": "Question", "name": "What is the pay scale for Staff Car Driver posts?", "acceptedAnswer": {"@type": "Answer", "text": "Selected candidates will get a salary in Pay Matrix Level-2 (₹19,900–63,200) as per the 7th CPC."}}, {"@type": "Question", "name": "How should applications be sent?", "acceptedAnswer": {"@type": "Answer", "text": "Applications must be sent through proper channel via Speed Post only to the Manager, Mail Motor Service, Bengaluru."}}, {"@type": "Question", "name": "What is the selection process?", "acceptedAnswer": {"@type": "Answer", "text": "Selection is based on a driving test and trade test as per prescribed pattern/syllabus."}}, {"@type": "Question", "name": "Where can the application proforma be downloaded?", "acceptedAnswer": {"@type": "Answer", "text": "The application proforma and notification can be downloaded from the official website www.indiapost.gov.in."}}]}]</script>
     <div class="note">
@@ -521,7 +522,7 @@ html[lang="hi"] .hisum { display: none; }
       rel2: "RRB Station Master Recruitment 2026 – Vacancies Increased to 1,265",
       rel3: "UGC-NET December 2026 Last Date Extended – Apply Online",
       rel4: "NTA UGC-NET December 2026 Last Date Extended – Apply Online Form",
-      rel5: "SSC JE and SI Exam 2026 Revised Dates",
+      rel5: "SSC JE and SI Exam 2026 Revised Dates – Schedule Notice",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",

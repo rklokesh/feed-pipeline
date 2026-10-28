@@ -30,14 +30,14 @@
   --page: #FFFFFF; --ink: #36322D; --grey: #76726B; --line: #E5E1D8; --soft: #F4F1EB;
   --calm: #3E6B4E; --calm-bg: #EEF4EE;
   --warm: #9A5410; --warm-bg: #FBF0E2;
-  --hot: #B23A1A; --hot-bg: #FCEBE5;
+  --hot: #B23A1A; --hot-bg: #FCEBE5; --unread: #8E1B1E;
 
   --font: "Helvetica Neue", Helvetica, Arial, system-ui, -apple-system, "Segoe UI", Roboto, "Kohinoor Devanagari", "Nirmala UI", "Noto Sans Devanagari", sans-serif;
 }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
+  :root:not([data-theme="light"]) { --page: #1C1B1A; --unread: #F2A7A1; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
 }
-:root[data-theme="dark"] { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
+:root[data-theme="dark"] { --page: #1C1B1A; --unread: #F2A7A1; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 /* tags: one small framed shape used for days left, the K shortcut and the chosen category */
@@ -191,7 +191,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
 .kv a.r:hover { background: var(--row-hover); }   /* same as homepage rows */
-.kv.rel a.r:visited > span:first-child { color: var(--grey); }   /* already opened */
+.kv.rel a.r > span:first-child { color: var(--unread); }   /* not opened yet */
+.kv.rel a.r:visited > span:first-child { color: var(--ink); }   /* already opened */
 :root { --row-hover: #FAF8F4; }
 :root[data-theme="dark"] { --row-hover: #222120; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --row-hover: #222120; } }
@@ -325,7 +326,7 @@ html[lang="hi"] .hisum { display: none; }
       <div class="h" data-t="relH">More notices</div>
       <a class="r" href="/notice/hssc-primary-teacher-mewat-cadre-final-answer-key-2024/"><span data-t="rel0">HSSC Primary Teacher Mewat Cadre Final Answer Key 2024</span><span class="v g num">10 Sep 2026</span></a>
       <a class="r" href="/notice/hssc-group-d-cet-advt-05-2026-application-date-extension/"><span data-t="rel1">HSSC Group-D CET Recruitment 2026 – Last Date Extended to 05 Jul</span><span class="v g num">3 Jul 2026</span></a>
-      <a class="r" href="/notice/hssc-group-c-cet-phase-ii-recruitment-2026/"><span data-t="rel2">HSSC Group C CET Phase II Recruitment 2026</span><span class="v g num">22 Jun 2026</span></a>
+      <a class="r" href="/notice/hssc-group-c-cet-phase-ii-recruitment-2026/"><span data-t="rel2">HSSC Group C Recruitment 2026 – Apply Online for CET Phase 2 Posts</span><span class="v g num">22 Jun 2026</span></a>
       <a class="r" href="/notice/rrb-section-controller-cen-03-2026-answer-key/"><span data-t="rel3">RRB Section Controller CEN 03/2026 Answer Key &amp; Objections</span><span class="v g num">26 Oct 2026</span></a>
       <a class="r" href="/notice/rrb-cen-03-2026-section-controller-answer-key/"><span data-t="rel4">RRB CEN 03/2026 Section Controller Answer Key 2026 – Raise Objections</span><span class="v g num">26 Oct 2026</span></a>
       <a class="r" href="/notice/rpsc-senior-scientific-officer-2025-biology-question-paper/"><span data-t="rel5">RPSC Senior Scientific Officer 2025 Biology Question Paper</span><span class="v g num">23 Oct 2026</span></a>
@@ -408,7 +409,7 @@ html[lang="hi"] .hisum { display: none; }
       relH: "More notices",
       rel0: "HSSC Primary Teacher Mewat Cadre Final Answer Key 2024",
       rel1: "HSSC Group-D CET Recruitment 2026 – Last Date Extended to 05 Jul",
-      rel2: "HSSC Group C CET Phase II Recruitment 2026",
+      rel2: "HSSC Group C Recruitment 2026 – Apply Online for CET Phase 2 Posts",
       rel3: "RRB Section Controller CEN 03/2026 Answer Key & Objections",
       rel4: "RRB CEN 03/2026 Section Controller Answer Key 2026 – Raise Objections",
       rel5: "RPSC Senior Scientific Officer 2025 Biology Question Paper",
@@ -474,7 +475,7 @@ html[lang="hi"] .hisum { display: none; }
       relH: "और सूचनाएँ",
       rel0: "हरियाणा कर्मचारी चयन आयोग प्राथमिक शिक्षक मेवात संवर्ग अंतिम उत्तर कुंजी 2024",
       rel1: "हरियाणा कर्मचारी चयन आयोग समूह-डी सीईटी भर्ती 2026 – अंतिम तिथि 05 जुलाई तक बढ़ी",
-      rel2: "हरियाणा कर्मचारी चयन आयोग समूह सी परीक्षा 2026",
+      rel2: "हरियाणा कर्मचारी चयन आयोग समूह सी भर्ती 2026 – सीईटी फेज 2 पदों के लिए ऑनलाइन आवेदन",
       rel3: "रेलवे भर्ती बोर्ड सेक्शन कंट्रोलर CEN 03/2026 उत्तर कुंजी और आपत्ति",
       rel4: "आरआरबी सीईएन 03/2026 सेक्शन कंट्रोलर आंसर की 2026 – आपत्ति दर्ज करें",
       rel5: "आरपीएससी सीनियर साइंटिफिक ऑफिसर 2025 जीव विज्ञान प्रश्न पत्र",

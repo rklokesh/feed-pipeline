@@ -37,13 +37,13 @@
   --hover: #FAF8F4;
   --calm: #3E6B4E; --calm-bg: #EEF4EE;
   --warm: #9A5410; --warm-bg: #FBF0E2;
-  --hot: #B23A1A; --hot-bg: #FCEBE5;
+  --hot: #B23A1A; --hot-bg: #FCEBE5; --unread: #8E1B1E;
   --font: "Helvetica Neue", Helvetica, Arial, system-ui, -apple-system, "Segoe UI", Roboto, "Kohinoor Devanagari", "Nirmala UI", "Noto Sans Devanagari", sans-serif;
 }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --hover: #222120; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
+  :root:not([data-theme="light"]) { --page: #1C1B1A; --unread: #F2A7A1; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --hover: #222120; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
 }
-:root[data-theme="dark"] { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --hover: #222120; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
+:root[data-theme="dark"] { --page: #1C1B1A; --unread: #F2A7A1; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --hover: #222120; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
 
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
@@ -141,8 +141,9 @@ main { margin-top: 36px; flex: 1; }
 .list li.lr { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr) 7.25rem 5.75rem 7.5rem 4.25rem; gap: 0 16px; align-items: baseline; padding: 5px 8px; }
 .list li.lr > a.row { display: contents; }
 .list .t { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* notices you have already opened turn soft grey (browsers allow only a colour change here, so nothing is tracked by us) */
-.list li.lr > a.row:visited > .t { color: var(--grey); }
+/* not opened yet: deep red; already opened: normal ink (the browser decides; nothing is tracked by us) */
+.list li.lr > a.row > .t { color: var(--unread); }
+.list li.lr > a.row:visited > .t { color: var(--ink); }
 /* every column stays on one line: long text ends in "…" and shows in full in the tooltip */
 .list .cut, .row.head > span { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .list li.lr:hover, .list li.lr.sel { background: var(--hover); }

@@ -30,14 +30,14 @@
   --page: #FFFFFF; --ink: #36322D; --grey: #76726B; --line: #E5E1D8; --soft: #F4F1EB;
   --calm: #3E6B4E; --calm-bg: #EEF4EE;
   --warm: #9A5410; --warm-bg: #FBF0E2;
-  --hot: #B23A1A; --hot-bg: #FCEBE5;
+  --hot: #B23A1A; --hot-bg: #FCEBE5; --unread: #8E1B1E;
 
   --font: "Helvetica Neue", Helvetica, Arial, system-ui, -apple-system, "Segoe UI", Roboto, "Kohinoor Devanagari", "Nirmala UI", "Noto Sans Devanagari", sans-serif;
 }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
+  :root:not([data-theme="light"]) { --page: #1C1B1A; --unread: #F2A7A1; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
 }
-:root[data-theme="dark"] { --page: #1C1B1A; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
+:root[data-theme="dark"] { --page: #1C1B1A; --unread: #F2A7A1; --ink: #ECEAE4; --grey: #A29E96; --line: #34322E; --soft: #262522; --calm: #9CC7A8; --calm-bg: #1F2A22; --warm: #E7B27A; --warm-bg: #33281C; --hot: #F09A80; --hot-bg: #3A221C; color-scheme: dark; }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 /* tags: one small framed shape used for days left, the K shortcut and the chosen category */
@@ -191,7 +191,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
 .kv a.r:hover { background: var(--row-hover); }   /* same as homepage rows */
-.kv.rel a.r:visited > span:first-child { color: var(--grey); }   /* already opened */
+.kv.rel a.r > span:first-child { color: var(--unread); }   /* not opened yet */
+.kv.rel a.r:visited > span:first-child { color: var(--ink); }   /* already opened */
 :root { --row-hover: #FAF8F4; }
 :root[data-theme="dark"] { --row-hover: #222120; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --row-hover: #222120; } }
@@ -343,7 +344,7 @@ html[lang="hi"] .hisum { display: none; }
       <a class="r" href="/notice/nabard-specialists-on-contract-recruitment-2026-27/"><span data-t="rel2">NABARD Specialists on Contract Recruitment 2026-27</span><span class="v g num">27 Oct 2026</span></a>
       <a class="r" href="/notice/rrb-station-master-cen-08-2026-corrigendum-1/"><span data-t="rel3">RRB Station Master Recruitment 2026 – Vacancies Increased to 1,265</span><span class="v g num">27 Oct 2026</span></a>
       <a class="r" href="/notice/ugc-net-december-2026-last-date-extended/"><span data-t="rel4">UGC-NET December 2026 Last Date Extended – Apply Online</span><span class="v g num">27 Oct 2026</span></a>
-      <a class="r" href="/notice/nta-ugc-net-december-2026-application-date-extended/"><span data-t="rel5">NTA UGC-NET December 2026 Application Date Extended</span><span class="v g num">27 Oct 2026</span></a>
+      <a class="r" href="/notice/nta-ugc-net-december-2026-application-date-extended/"><span data-t="rel5">NTA UGC-NET December 2026 Last Date Extended – Apply Online Form</span><span class="v g num">27 Oct 2026</span></a>
     </section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Jobs", "item": "https://sarkarichart.pages.dev/?cat=jobs"}, {"@type": "ListItem", "position": 3, "name": "IBPS CRP SPL XVI Vacancy Update 2026", "item": "https://sarkarichart.pages.dev/notice/ibps-crp-spl-xvi-vacancy-update-2026/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "IBPS CRP SPL XVI Vacancy Update 2026", "url": "https://sarkarichart.pages.dev/notice/ibps-crp-spl-xvi-vacancy-update-2026/", "inLanguage": ["en-IN", "hi-IN"], "description": "The Institute of Banking Personnel Selection (IBPS) has issued a corrigendum regarding updated vacancies for the Common Recruitment Process for Specialist Officers (CRP SPL XVI) for the year 2027-28. The indicative vacancies have been updated as on 20.07.2026 in Annexure I of the detailed notification dated 01.07.2026. Participating banks have communicated these indicative and anticipated vacancies, and provisional allotment will be based on actual vacancies reported. Candidates should note that all other terms and conditions of the original notification remain unchanged.", "datePublished": "2026-07-20", "dateModified": "2026-10-27", "isBasedOn": "https://www.ibps.in/wp-content/uploads/Corrigendum-CRP-SPL-XVI_Vacancy_Update_20.07.2026.pdf", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.pages.dev/notice/ibps-crp-spl-xvi-vacancy-update-2026/og.png", "about": {"@type": "GovernmentOrganization", "name": "Institute of Banking Personnel Selection (IBPS)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Who issued the CRP SPL XVI vacancy update?", "acceptedAnswer": {"@type": "Answer", "text": "The Institute of Banking Personnel Selection (IBPS) issued the vacancy update corrigendum."}}, {"@type": "Question", "name": "What is the date of the IBPS CRP SPL XVI corrigendum?", "acceptedAnswer": {"@type": "Answer", "text": "The corrigendum is dated 20 July 2026."}}, {"@type": "Question", "name": "Where can I check the updated vacancies?", "acceptedAnswer": {"@type": "Answer", "text": "Updated vacancies can be checked in Annexure I of the detailed notification dated 01.07.2026 on the official IBPS website."}}, {"@type": "Question", "name": "Have the other terms and conditions of the notification changed?", "acceptedAnswer": {"@type": "Answer", "text": "No, all other terms and conditions mentioned in the detailed notification dated 01.07.2026 remain unchanged."}}, {"@type": "Question", "name": "Where can I log in for queries regarding IBPS CRP SPL XVI?", "acceptedAnswer": {"@type": "Answer", "text": "You can log in to http://cgrs.ibps.in for queries or complaints."}}, {"@type": "Question", "name": "Are the vacancies announced in the update final?", "acceptedAnswer": {"@type": "Answer", "text": "The vacancies mentioned are indicative and anticipated; provisional allotment will be made based on actual vacancies reported by participating banks."}}, {"@type": "Question", "name": "What is the official website of IBPS?", "acceptedAnswer": {"@type": "Answer", "text": "The official website is www.ibps.in."}}, {"@type": "Question", "name": "For which recruitment process has the vacancy update been released?", "acceptedAnswer": {"@type": "Answer", "text": "The update has been released for the Common Recruitment Process for Specialist Officers (CRP SPL XVI) for 2027-28."}}]}]</script>
     <div class="note">
@@ -444,7 +445,7 @@ html[lang="hi"] .hisum { display: none; }
       rel2: "NABARD Specialists on Contract Recruitment 2026-27",
       rel3: "RRB Station Master Recruitment 2026 – Vacancies Increased to 1,265",
       rel4: "UGC-NET December 2026 Last Date Extended – Apply Online",
-      rel5: "NTA UGC-NET December 2026 Application Date Extended",
+      rel5: "NTA UGC-NET December 2026 Last Date Extended – Apply Online Form",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -528,7 +529,7 @@ html[lang="hi"] .hisum { display: none; }
       rel2: "नाबार्ड अनुबंध पर विशेषज्ञ भर्ती 2026-27",
       rel3: "रेलवे भर्ती बोर्ड स्टेशन मास्टर भर्ती 2026 – रिक्तियों की संख्या बढ़कर 1,265 हुई",
       rel4: "यूजीसी-नेट दिसंबर 2026 अंतिम तिथि बढ़ाई गई – ऑनलाइन आवेदन करें",
-      rel5: "एनटीए यूजीसी-नेट दिसंबर 2026 आवेदन तिथि बढ़ाई गई",
+      rel5: "एनटीए यूजीसी-नेट दिसंबर 2026 अंतिम तिथि बढ़ाई गई – ऑनलाइन फॉर्म",
     },
   };
   let lang = "en";
