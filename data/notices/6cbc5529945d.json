@@ -59,10 +59,19 @@
   "notice_date": "2026-10-23",
   "org": "NABARD",
   "page": {
+    "after_en": [],
+    "after_hi": [],
     "age": [],
     "apply_start": null,
     "apply_url": null,
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Check your category and regional office cut-off from the official notice."
+    ],
+    "checklist_hi": [
+      "आधिकारिक नोटिस से अपनी श्रेणी और क्षेत्रीय कार्यालय के कट-ऑफ की जाँच करें।"
+    ],
     "conducted_by_en": "National Bank for Agriculture and Rural Development (NABARD)",
     "conducted_by_hi": "राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड)",
     "dates": [
@@ -70,54 +79,96 @@
         "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "12 Apr 2026",
-        "value_hi": "12 अप्रैल 2026"
+        "value_hi": "12 अप्रेल 2026"
       }
     ],
+    "documents_en": [],
+    "documents_hi": [],
     "eligibility": [],
     "exam_date": "2026-04-12",
-    "extra": [
+    "exam_pattern": [
       {
-        "label_en": "Exam Date",
-        "label_hi": "परीक्षा तिथि",
-        "value_en": "12.04.2026",
-        "value_hi": "12.04.2026"
-      }
-    ],
-    "faq": [
-      {
-        "a_en": "The Mains exam was conducted on 12 April 2026.",
-        "a_hi": "मुख्य परीक्षा 12 अप्रैल 2026 को आयोजित की गई थी।",
-        "q_en": "When was the NABARD Development Assistant Hindi Mains Exam 2026 conducted?",
-        "q_hi": "नाबार्ड डेवलपमेंट असिस्टेंट हिंदी मुख्य परीक्षा 2026 कब आयोजित की गई थी?"
+        "marks": "1.00",
+        "part_en": "Test 1 (T1)",
+        "part_hi": "परीक्षण 1",
+        "questions": "20",
+        "time": ""
       },
       {
-        "a_en": "The notice provides regional office-wise and category-wise cut-off marks applied on totals for both the select list and wait list.",
-        "a_hi": "नोटिस चयन सूची और प्रतीक्षा सूची दोनों के लिए कुल पर लागू क्षेत्रीय कार्यालय-वार और श्रेणी-वार कट-ऑफ अंक प्रदान करता है।",
-        "q_en": "What details are available in the NABARD cut-off notice?",
-        "q_hi": "नाबार्ड कट-ऑफ नोटिस में क्या विवरण उपलब्ध हैं?"
+        "marks": "SC, ST, OBC, PWBD, EXS & DISEXS: 7.50, EWS, UR: 11.50",
+        "part_en": "Test 2 (T2)",
+        "part_hi": "परीक्षण 2",
+        "questions": "50",
+        "time": ""
+      },
+      {
+        "marks": "SC, ST, OBC, PWBD, EXS & DISEXS: 7.50, EWS, UR: 9.75",
+        "part_en": "Test 3 (T3)",
+        "part_hi": "परीक्षण 3",
+        "questions": "40",
+        "time": ""
+      },
+      {
+        "marks": "SC, ST, OBC, PWBD, EXS & DISEXS: 16.25, EWS, UR: 18.25",
+        "part_en": "Test 4 (T4)",
+        "part_hi": "परीक्षण 4",
+        "questions": "40",
+        "time": ""
+      }
+    ],
+    "explain": [
+      {
+        "a_en": "It is the minimum qualifying score released by NABARD for the Phase-II Main Examination, categorized by regional offices and candidate categories for select and wait lists.",
+        "a_hi": "यह चयन और प्रतीक्षा सूचियों के लिए क्षेत्रीय कार्यालयों और उम्मीदवार श्रेणियों द्वारा वर्गीकृत, चरण-II मुख्य परीक्षा के लिए नाबार्ड द्वारा जारी न्यूनतम योग्यता स्कोर है।",
+        "q_en": "What is the NABARD Development Assistant (Hindi) Mains Cut-Off?",
+        "q_hi": "नाबार्ड डेवलपमेंट असिस्टेंट (हिंदी) मुख्य परीक्षा कट-ऑफ क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "The Mains exam was conducted on 12 Apr 2026.",
+        "a_hi": "मुख्य परीक्षा 12 अप्रेल 2026 को आयोजित की गई थी।",
+        "q_en": "When was the NABARD Development Assistant (Hindi) Mains Exam held?",
+        "q_hi": "नाबार्ड डेवलपमेंट असिस्टेंट (हिंदी) मुख्य परीक्षा कब आयोजित की गई थी?"
+      },
+      {
+        "a_en": "The notice includes regional office-wise and category-wise cut-off marks applied on the total for select and wait lists, along with sectional cut-offs.",
+        "a_hi": "नोटिस में चयन और प्रतीक्षा सूचियों के लिए कुल अंकों पर लागू क्षेत्रीय कार्यालय-वार और श्रेणी-वार कट-ऑफ अंक, साथ ही अनुभागीय कट-ऑफ शामिल हैं।",
+        "q_en": "What details are included in the cut-off notice?",
+        "q_hi": "कट-ऑफ नोटिस में क्या विवरण शामिल हैं?"
       }
     ],
     "fees": [],
     "h1_en": "NABARD Development Assistant Hindi Mains Cut-Off 2026",
     "h1_hi": "नाबार्ड डेवलपमेंट असिस्टेंट हिंदी मुख्य परीक्षा कट-ऑफ 2026",
     "how_en": [
-      "Visit the official NABARD website or click the direct notice link.",
-      "Check the regional office and category-wise cut-off marks for the Select List and Wait List in the PDF."
+      "Visit the official NABARD website.",
+      "Navigate to the career notices section.",
+      "Open the Development Assistant (Hindi) Mains Examination Cut-off notice.",
+      "Check the regional office and category-wise cut-off marks."
     ],
     "how_hi": [
-      "नाबार्ड की आधिकारिक वेबसाइट पर जाएं या सीधे नोटिस लिंक पर क्लिक करें।",
-      "पीडीएफ में चयन सूची और प्रतीक्षा सूची के लिए क्षेत्रीय कार्यालय और श्रेणी-वार कट-ऑफ अंक देखें।"
+      "आधिकारिक नाबार्ड वेबसाइट पर जाएं।",
+      "करियर नोटिस अनुभाग पर जाएं।",
+      "डेवलपमेंट असिस्टेंट (हिंदी) मुख्य परीक्षा कट-ऑफ नोटिस खोलें।",
+      "क्षेत्रीय कार्यालय और श्रेणी-वार कट-ऑफ अंकों की जाँच करें।"
     ],
-    "intro_en": "The National Bank for Agriculture and Rural Development (NABARD) has published the Phase II (Main Exam) cut-off marks for the recruitment of Development Assistant (Hindi) 2026. The main examination was conducted on 12 April 2026. This notice provides the regional office-wise and category-wise cut-off marks applied on the total for the select list and wait list. Candidates who appeared for the examination can check the official cut-off details.",
-    "intro_hi": "राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड) ने डेवलपमेंट असिस्टेंट (हिंदी) 2026 की भर्ती के लिए चरण द्वितीय (मुख्य परीक्षा) के कट-ऑफ अंक प्रकाशित कर दिए हैं। मुख्य परीक्षा 12 अप्रैल 2026 को आयोजित की गई थी। यह नोटिस चयन सूची और प्रतीक्षा सूची के कुल अंकों पर लागू क्षेत्रीय कार्यालय-वार और श्रेणी-वार कट-ऑफ अंक प्रदान करता है। परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक कट-ऑफ विवरण देख सकते हैं।",
+    "intro_en": "National Bank for Agriculture and Rural Development (NABARD) has published the regional office-wise and category-wise cut-off marks for the Phase-II (Main Exam) of the Recruitment of Development Assistant (Hindi) 2026. The exam was conducted on 12 Apr 2026. The notice outlines the cut-off marks applied on the total for the select list and wait list across various regional offices. Additionally, sectional cut-offs for different tests are specified for various categories.",
+    "intro_hi": "राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड) ने डेवलपमेंट असिस्टेंट (हिंदी) 2026 की भर्ती के चरण-II (मुख्य परीक्षा) के लिए क्षेत्रीय कार्यालय-वार और श्रेणी-वार कट-ऑफ अंक प्रकाशित किए हैं। परीक्षा 12 अप्रेल 2026 को आयोजित की गई थी। नोटिस में विभिन्न क्षेत्रीय कार्यालयों के लिए चयन सूची और प्रतीक्षा सूची पर कुल अंकों पर लागू कट-ऑफ अंकों की रूपरेखा दी गई है। इसके अतिरिक्त, विभिन्न श्रेणियों के लिए अलग-अलग परीक्षणों के अनुभागीय कट-ऑफ निर्दिष्ट किए गए हैं।",
     "last_date": null,
+    "mistakes_en": [],
+    "mistakes_hi": [],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": null,
     "official_site": "https://www.nabard.org",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Post name",
-        "label_hi": "पद का नाम",
+        "label_en": "Posts",
+        "label_hi": "पद",
         "value_en": "Development Assistant (Hindi)",
         "value_hi": "डेवलपमेंट असिस्टेंट (हिंदी)"
       },
@@ -125,33 +176,30 @@
         "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "12 Apr 2026",
-        "value_hi": "12 अप्रैल 2026"
-      },
-      {
-        "label_en": "Stage",
-        "label_hi": "चरण",
-        "value_en": "Phase II (Main Exam) Cut-Off",
-        "value_hi": "चरण द्वितीय (मुख्य परीक्षा) कट-ऑफ"
+        "value_hi": "12 अप्रेल 2026"
       }
     ],
-    "selection_en": [
-      "Phase II Main Examination"
+    "salary": [],
+    "selection_en": [],
+    "selection_hi": [],
+    "share_card": {
+      "headline_en": "Mains Cut-Off 2026",
+      "headline_hi": "मुख्य परीक्षा कट-ऑफ 2026",
+      "kind": "result",
+      "line_en": "Development Assistant (Hindi)",
+      "line_hi": "डेवलपमेंट असिस्टेंट (हिंदी)",
+      "posts": null
+    },
+    "status_en": "Mains examination cut-off marks released",
+    "status_hi": "मुख्य परीक्षा कट-ऑफ अंक जारी",
+    "summary_en": "National Bank for Agriculture and Rural Development has released the Phase-II Main Exam cut-off marks for Development Assistant (Hindi) 2026. Candidates can view the regional office-wise and category-wise cut-offs for select and wait lists in the notice. Check the sectional cut-offs and regional details provided in the official notice.",
+    "summary_hi": "राष्ट्रीय कृषि और ग्रामीण विकास बैंक ने डेवलपमेंट असिस्टेंट (हिंदी) 2026 के लिए चरण-II मुख्य परीक्षा के कट-ऑफ अंक जारी कर दिए हैं। उम्मीदवार नोटिस में चयन और प्रतीक्षा सूचियों के लिए क्षेत्रीय कार्यालय-वार और श्रेणी-वार कट-ऑफ देख सकते हैं। आधिकारिक नोटिस में दिए गए अनुभागीय कट-ऑफ और क्षेत्रीय विवरण की जाँच करें।",
+    "vacancies": [],
+    "who_en": [
+      "Candidates who appeared for the NABARD Development Assistant (Hindi) Mains Examination 2026."
     ],
-    "selection_hi": [
-      "चरण द्वितीय मुख्य परीक्षा"
-    ],
-    "status_en": "Mains Examination cut-off marks released",
-    "status_hi": "मुख्य परीक्षा के कट-ऑफ अंक जारी किए गए",
-    "summary_en": "National Bank for Agriculture and Rural Development (NABARD) has released the Phase II Main Exam cut-offs for Development Assistant (Hindi) 2026. Check the regional office-wise and category-wise cut-off marks for select and wait lists in the notice. Candidates can view the detailed cut-offs as per their category.",
-    "summary_hi": "राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड) ने डेवलपमेंट असिस्टेंट (हिंदी) 2026 के लिए चरण द्वितीय मुख्य परीक्षा के कट-ऑफ जारी कर दिए हैं। नोटिस में क्षेत्रीय कार्यालय-वार और श्रेणी-वार कट-ऑफ अंक देखें। उम्मीदवार अपनी श्रेणी के अनुसार विस्तृत कट-ऑफ देख सकते हैं।",
-    "vacancies": [
-      {
-        "detail_en": "Regional office-wise select and wait list cut-offs released",
-        "detail_hi": "क्षेत्रीय कार्यालय-वार चयन और प्रतीक्षा सूची कट-ऑफ जारी",
-        "post_en": "Development Assistant (Hindi)",
-        "post_hi": "डेवलपमेंट असिस्टेंट (हिंदी)",
-        "total": "Not specified"
-      }
+    "who_hi": [
+      "वे उम्मीदवार जो नाबार्ड डेवलपमेंट असिस्टेंट (हिंदी) मुख्य परीक्षा 2026 के लिए उपस्थित हुए थे।"
     ]
   },
   "pdf": {

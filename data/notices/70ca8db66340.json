@@ -12,8 +12,8 @@
     "skip_reason": "",
     "summary_en": "Railway Recruitment Board has announced CEN 07/2026 for Under Graduate Non-Technical Popular Categories. Eligible candidates can apply online through the official website.",
     "summary_hi": "रेलवे भर्ती बोर्ड ने स्नातक-पूर्व गैर-तकनीकी लोकप्रिय श्रेणियों के लिए केंद्रीयकृत रोजगार सूचना संख्या 07/2026 जारी की है। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
-    "title_en": "RRB UG Non-Technical Popular Categories Recruitment 2026",
-    "title_hi": "रेलवे भर्ती बोर्ड स्नातक-पूर्व गैर-तकनीकी लोकप्रिय श्रेणियां भर्ती 2026",
+    "title_en": "RRB NTPC Undergraduate Recruitment 2026",
+    "title_hi": "रेलवे भर्ती बोर्ड एनएटीपीसी स्नातक पूर्व भर्ती 2026",
     "type": "Job",
     "vacancies": 1688
   },
@@ -96,6 +96,16 @@
   "notice_date": "2026-10-14",
   "org": "RRB",
   "page": {
+    "after_en": [
+      "Computer Based Test (CBT)",
+      "Document Verification",
+      "Medical Examination"
+    ],
+    "after_hi": [
+      "कंप्यूटर आधारित परीक्षा",
+      "दस्तावेज सत्यापन",
+      "चिकित्सा परीक्षा"
+    ],
     "age": [
       {
         "label_en": "Minimum age",
@@ -110,7 +120,7 @@
         "value_hi": "30 वर्ष"
       },
       {
-        "label_en": "Age as on",
+        "label_en": "As on date",
         "label_hi": "आयु गणना की तिथि",
         "value_en": "01 Jan 2027",
         "value_hi": "01 जनवरी 2027"
@@ -118,13 +128,26 @@
     ],
     "apply_start": "2026-10-15",
     "apply_url": "https://rrb.indianrailways.gov.in",
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Ensure you meet the age and educational qualifications before applying.",
+      "Keep your active mobile number and personal email ID ready.",
+      "Authenticate your identity using Digilocker or Aadhaar.",
+      "Verify all details carefully before final submission."
+    ],
+    "checklist_hi": [
+      "आवेदन करने से पहले सुनिश्चित करें कि आप आयु और शैक्षणिक योग्यता को पूरा करते हैं।",
+      "अपना सक्रिय मोबाइल नंबर और व्यक्तिगत ईमेल आईडी तैयार रखें।",
+      "डिजीलॉकर या आधार का उपयोग करके अपनी पहचान को प्रमाणित करें।",
+      "अंतिम सबमिशन से पहले सभी विवरणों की सावधानीपूर्वक जांच करें।"
+    ],
     "conducted_by_en": "Railway Recruitment Board (RRB)",
     "conducted_by_hi": "रेलवे भर्ती बोर्ड (आरआरबी)",
     "dates": [
       {
-        "label_en": "Date of Indicative Notice in Employment News",
-        "label_hi": "रोजगार समाचार में सांकेतिक सूचना की तिथि",
+        "label_en": "Indicative Notice in Employment News",
+        "label_hi": "रोजगार समाचार में सांकेतिक सूचना",
         "value_en": "26 Sep 2026",
         "value_hi": "26 सितंबर 2026"
       },
@@ -132,7 +155,7 @@
         "label_en": "Opening date of Online application",
         "label_hi": "ऑनलाइन आवेदन शुरू होने की तिथि",
         "value_en": "15 Oct 2026",
-        "value_hi": "15 अक्तूबर 2026"
+        "value_hi": "15 अक्टूबर 2026"
       },
       {
         "label_en": "Closing date for Submission of Online Application",
@@ -153,6 +176,20 @@
         "value_hi": "16 नवंबर 2026 से 25 नवंबर 2026"
       }
     ],
+    "documents_en": [
+      "Educational qualification certificates",
+      "Age proof certificate",
+      "Caste / Category certificate in prescribed format",
+      "Scanned photograph and signature",
+      "Aadhaar or Digilocker identity details"
+    ],
+    "documents_hi": [
+      "शैक्षणिक योग्यता प्रमाण पत्र",
+      "आयु प्रमाण पत्र",
+      "निर्धारित प्रारूप में जाति/श्रेणी प्रमाण पत्र",
+      "स्कैन की गई फोटो और हस्ताक्षर",
+      "आधार या डिजीलॉकर पहचान विवरण"
+    ],
     "eligibility": [
       {
         "label_en": "Education",
@@ -162,47 +199,107 @@
       }
     ],
     "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a centralised recruitment process conducted by the Railway Recruitment Board to select eligible undergraduate candidates for various non-technical popular categories posts in Indian Railways.",
+        "a_hi": "यह भारतीय रेलवे में विभिन्न गैर-तकनीकी लोकप्रिय श्रेणियों के पदों के लिए योग्य स्नातक-पूर्व उम्मीदवारों का चयन करने के लिए रेलवे भर्ती बोर्ड द्वारा आयोजित एक केंद्रीयकृत भर्ती प्रक्रिया है।",
+        "q_en": "What is RRB NTPC Under Graduate Recruitment?",
+        "q_hi": "आरआरबी एनएटीपीसी स्नातक-पूर्व भर्ती क्या है?"
+      }
+    ],
     "extra": [],
     "faq": [
       {
-        "a_en": "The last date to submit the online application is 13 November 2026 up to 23:59 hours.",
-        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 13 नवंबर 2026 को 23:59 बजे तक है।",
-        "q_en": "What is the last date to apply for RRB CEN 07/2026?",
-        "q_hi": "आरआरबी सीईएन 07/2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+        "a_en": "The last date to submit online applications is 13 November 2026.",
+        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 13 नवंबर 2026 है।",
+        "q_en": "What is the last date to apply for RRB NTPC Under Graduate Recruitment 2026?",
+        "q_hi": "आरआरबी एनएटीपीसी स्नातक-पूर्व भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "A total of 1688 vacancies are announced under CEN 07/2026.",
-        "a_hi": "सीईएन 07/2026 के तहत कुल 1688 रिक्तियों की घोषणा की गई है।",
-        "q_en": "What is the total number of vacancies in RRB NTPC Under Graduate Recruitment 2026?",
-        "q_hi": "आरआरबी एनटीपीसी स्नातक-पूर्व भर्ती 2026 में कुल रिक्तियां कितनी हैं?"
+        "a_en": "A total of 1,688 vacancies are announced across all RRBs.",
+        "a_hi": "सभी आरआरबी में कुल 1,688 रिक्तियों की घोषणा की गई है।",
+        "q_en": "How many total vacancies are announced under CEN 07/2026?",
+        "q_hi": "सीईएन 07/2026 के तहत कुल कितनी रिक्तियों की घोषणा की गई है?"
       },
       {
-        "a_en": "The age limit for the posts is 18 to 30 years as on 01 January 2027.",
-        "a_hi": "पदों के लिए आयु सीमा 01 जनवरी 2027 के अनुसार 18 से 30 वर्ष है।",
-        "q_en": "What is the age limit for RRB CEN 07/2026 posts?",
-        "q_hi": "आरआरबी सीईएन 07/2026 पदों के लिए आयु सीमा क्या है?"
+        "a_en": "Candidates must be between 18 and 30 years of age as on 01 January 2027.",
+        "a_hi": "उम्मीदवारों की आयु 01 जनवरी 2027 के अनुसार 18 से 30 वर्ष के बीच होनी चाहिए।",
+        "q_en": "What is the age limit for RRB NTPC Under Graduate posts?",
+        "q_hi": "आरआरबी एनएटीपीसी स्नातक-पूर्व पदों के लिए आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "Candidates must possess an Under Graduate qualification from a recognised board or university.",
+        "a_hi": "उम्मीदवार के पास किसी मान्यता प्राप्त बोर्ड या विश्वविद्यालय से स्नातक-पूर्व योग्यता होनी चाहिए।",
+        "q_en": "What is the educational qualification required?",
+        "q_hi": "आवश्यक शैक्षणिक योग्यता क्या है?"
+      },
+      {
+        "a_en": "The online application process starts on 15 October 2026.",
+        "a_hi": "ऑनलाइन आवेदन प्रक्रिया 15 अक्टूबर 2026 से शुरू होती है।",
+        "q_en": "When does the online application process start?",
+        "q_hi": "ऑनलाइन आवेदन प्रक्रिया कब शुरू होती है?"
+      },
+      {
+        "a_en": "No, multiple applications to different RRBs or the same RRB will lead to rejection of all applications.",
+        "a_hi": "नहीं, विभिन्न आरआरबी या एक ही आरआरबी के लिए कई आवेदन करने से सभी आवेदन अस्वीकार कर दिए जाएंगे।",
+        "q_en": "Can I apply to multiple RRBs?",
+        "q_hi": "क्या मैं कई आरआरबी के लिए आवेदन कर सकता हूँ?"
+      },
+      {
+        "a_en": "The modification window is open from 16 November 2026 to 25 November 2026.",
+        "a_hi": "संशोधन विंडो 16 नवंबर 2026 से 25 नवंबर 2026 तक खुली है।",
+        "q_en": "What is the modification window dates for application correction?",
+        "q_hi": "आवेदन सुधार के लिए संशोधन विंडो की तिथियां क्या हैं?"
+      },
+      {
+        "a_en": "Candidates can apply through the unified official RRB website at https://rrb.indianrailways.gov.in.",
+        "a_hi": "उम्मीदवार https://rrb.indianrailways.gov.in पर एकीकृत आधिकारिक आरआरबी वेबसाइट के माध्यम से आवेदन कर सकते हैं।",
+        "q_en": "What is the official website to apply?",
+        "q_hi": "आवेदन करने के लिए आधिकारिक वेबसाइट क्या है?"
       }
     ],
     "fees": [],
-    "h1_en": "RRB UG Non-Technical Popular Categories Recruitment 2026",
-    "h1_hi": "रेलवे भर्ती बोर्ड स्नातक-पूर्व गैर-तकनीकी लोकप्रिय श्रेणियां भर्ती 2026",
+    "h1_en": "RRB NTPC Undergraduate Recruitment 2026",
+    "h1_hi": "रेलवे भर्ती बोर्ड एनएटीपीसी स्नातक पूर्व भर्ती 2026",
     "how_en": [
       "Visit the unified official RRB website.",
-      "Create an account or log in using existing credentials from earlier RRB CENs.",
-      "Fill out the online application form with the required details and choose your preferred RRB and posts.",
-      "Upload scanned documents and make the fee payment before the last date."
+      "Click on 'Create an Account' if you are a new user, or log in with existing credentials.",
+      "Read the detailed CEN thoroughly before filling up the online application.",
+      "Select your chosen RRB, Railway Zone/PU, and post preferences.",
+      "Upload mandatory scanned documents, live photo, and pay the application fee.",
+      "Submit the application and take a printout of the final confirmation."
     ],
     "how_hi": [
-      "आधिकारिक आरआरबी वेबसाइट पर जाएं।",
-      "एक खाता बनाएं या पहले के आरआरबी सीईएन से मौजूदा क्रेडेंशियल का उपयोग करके लॉगिन करें।",
-      "आवश्यक विवरण के साथ ऑनलाइन आवेदन पत्र भरें और अपने पसंदीदा आरआरबी और पदों का चयन करें।",
-      "स्कैन किए गए दस्तावेज़ अपलोड करें और अंतिम तिथि से पहले शुल्क भुगतान करें।"
+      "आरआरबी की एकीकृत आधिकारिक वेबसाइट पर जाएं।",
+      "यदि आप नए उपयोगकर्ता हैं तो 'खाता बनाएं' पर क्लिक करें, या मौजूदा विवरण के साथ लॉगिन करें।",
+      "ऑनलाइन आवेदन भरने से पहले विस्तृत सीईएन को अच्छी तरह से पढ़ें।",
+      "अपने चुने हुए आरआरबी, रेलवे जोन/पीयू और पद प्राथमिकताओं का चयन करें।",
+      "अनिवार्य स्कैन किए गए दस्तावेज, लाइव फोटो अपलोड करें और आवेदन शुल्क का भुगतान करें।",
+      "आवेदन जमा करें और अंतिम पुष्टिकरण का प्रिंटआउट लें।"
     ],
-    "intro_en": "Railway Recruitment Board (RRB) has released Centralised Employment Notice (CEN) No. 07/2026 for recruitment to Non-Technical Popular Categories (Under Graduate) posts. A total of 1688 vacancies are available across various posts including Commercial Cum Ticket Clerk, Accounts Clerk cum Typist, Junior Clerk Cum Typist, and Trains Clerk. Eligible and interested candidates can submit their online applications from 15 October 2026 to 13 November 2026 on the official RRB website.",
-    "intro_hi": "रेलवे भर्ती बोर्ड (आरआरबी) ने गैर-तकनीकी लोकप्रिय श्रेणियों (स्नातक-पूर्व) के पदों पर भर्ती के लिए केंद्रीयकृत रोजगार सूचना (सीईएन) संख्या 07/2026 जारी की है। कमर्शियल कम टिकट क्लर्क, अकाउंट्स क्लर्क कम टाइपिस्ट, जूनियर क्लर्क कम टाइपिस्ट और ट्रेन्स क्लर्क सहित विभिन्न पदों के लिए कुल 1688 रिक्तियां उपलब्ध हैं। योग्य और इच्छुक उम्मीदवार आधिकारिक आरआरबी वेबसाइट पर 15 अक्तूबर 2026 से 13 नवंबर 2026 तक अपने ऑनलाइन आवेदन जमा कर सकते हैं।",
+    "intro_en": "The Railway Recruitment Board (RRB) has released Centralised Employment Notice (CEN) No. 07/2026 for the recruitment of Non-Technical Popular Categories (Under Graduate) posts across various zones. A total of 1,688 vacancies are available for positions including Commercial Cum Ticket Clerk, Accounts Clerk cum Typist, Junior Clerk Cum Typist, and Trains Clerk. Online applications begin on 15 October 2026 and will close on 13 November 2026. Under-graduate candidates aged between 18 and 30 years should read the official notification carefully before applying through the unified official RRB website.",
+    "intro_hi": "रेलवे भर्ती बोर्ड (आरआरबी) ने विभिन्न क्षेत्रों में गैर-तकनीकी लोकप्रिय श्रेणियों (स्नातक-पूर्व) के पदों पर भर्ती के लिए केंद्रीयकृत रोजगार सूचना (सीईएन) संख्या 07/2026 जारी की है। कमर्शियल कम टिकट क्लर्क, अकाउंट्स क्लर्क कम टाइपिस्ट, जूनियर क्लर्क कम टाइपिस्ट और ट्रेन्स क्लर्क सहित विभिन्न पदों के लिए कुल 1,688 रिक्तियां उपलब्ध हैं। ऑनलाइन आवेदन 15 अक्टूबर 2026 से शुरू होंगे और 13 नवंबर 2026 को समाप्त होंगे। 18 से 30 वर्ष की आयु के स्नातक-पूर्व उम्मीदवार आधिकारिक वेबसाइट के माध्यम से आवेदन करने से पहले आधिकारिक अधिसूचना को ध्यान से पढ़ें।",
     "last_date": "2026-11-13",
+    "mistakes_en": [
+      "Submitting multiple applications to different RRBs or the same RRB will lead to rejection of all applications.",
+      "Details filled in the 'Create an Account' form and 'Chosen RRB' cannot be modified later.",
+      "Waiting for final results makes the candidate ineligible."
+    ],
+    "mistakes_hi": [
+      "विभिन्न आरआरबी या एक ही आरआरबी में कई आवेदन जमा करने से सभी आवेदन अस्वीकार कर दिए जाएंगे।",
+      "खाता बनाएं फॉर्म और चुने गए आरआरबी में भरे गए विवरण को बाद में संशोधित नहीं किया जा सकता है।",
+      "अंतिम परिणामों की प्रतीक्षा करना उम्मीदवार को अयोग्य बनाता है।"
+    ],
+    "not_en": [
+      "Candidates waiting for final results of prescribed educational qualifications are NOT eligible to apply."
+    ],
+    "not_hi": [
+      "निर्धारित शैक्षणिक योग्यता के अंतिम परिणामों की प्रतीक्षा कर रहे उम्मीदवार आवेदन करने के लिए पात्र नहीं हैं।"
+    ],
     "notice_date": "2026-10-14",
     "official_site": "https://rrb.indianrailways.gov.in",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
@@ -214,14 +311,14 @@
       {
         "label_en": "Total vacancies",
         "label_hi": "कुल रिक्तियां",
-        "value_en": "1688",
-        "value_hi": "1688"
+        "value_en": "1,688",
+        "value_hi": "1,688"
       },
       {
         "label_en": "Apply online",
         "label_hi": "ऑनलाइन आवेदन",
         "value_en": "15 Oct 2026 to 13 Nov 2026",
-        "value_hi": "15 अक्तूबर 2026 से 13 नवंबर 2026"
+        "value_hi": "15 अक्टूबर 2026 से 13 नवंबर 2026"
       },
       {
         "label_en": "Last date for fee",
@@ -238,14 +335,28 @@
       {
         "label_en": "Age limit",
         "label_hi": "आयु सीमा",
-        "value_en": "18-30 years (as on 01-01-2027)",
-        "value_hi": "18-30 वर्ष (01-01-2027 के अनुसार)"
+        "value_en": "18-30 years (as on 01.01.2027)",
+        "value_hi": "18-30 वर्ष (01.01.2027 के अनुसार)"
       },
       {
         "label_en": "Advertisement number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "CEN No. 07/2026",
         "value_hi": "केंद्रीयकृत रोजगार सूचना संख्या 07/2026"
+      }
+    ],
+    "salary": [
+      {
+        "label_en": "Commercial Cum Ticket Clerk",
+        "label_hi": "कमर्शियल कम टिकट क्लर्क",
+        "value_en": "Pay Level 3 (Initial pay ₹21,700)",
+        "value_hi": "वेतन स्तर 3 (प्रारंभिक वेतन ₹21,700)"
+      },
+      {
+        "label_en": "Accounts Clerk cum Typist / Junior Clerk Cum Typist / Trains Clerk",
+        "label_hi": "अकाउंट्स क्लर्क कम टाइपिस्ट / जूनियर क्लर्क कम टाइपिस्ट / ट्रेन्स क्लर्क",
+        "value_en": "Pay Level 2 (Initial pay ₹19,900)",
+        "value_hi": "वेतन स्तर 2 (प्रारंभिक वेतन ₹19,900)"
       }
     ],
     "selection_en": [
@@ -255,42 +366,56 @@
     ],
     "selection_hi": [
       "कंप्यूटर आधारित परीक्षा",
-      "दस्तावेज़ सत्यापन",
-      "चिकित्सा परीक्षण"
+      "दस्तावेज सत्यापन",
+      "चिकित्सा परीक्षा"
     ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "NTPC Under Graduate",
+      "line_hi": "एनटीपीसी स्नातक पूर्व",
+      "posts": 1688
+    },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "Railway Recruitment Board has announced CEN 07/2026 for Under Graduate Non-Technical Popular Categories. Eligible candidates can apply online through the official website.",
-    "summary_hi": "रेलवे भर्ती बोर्ड ने स्नातक-पूर्व गैर-तकनीकी लोकप्रिय श्रेणियों के लिए केंद्रीयकृत रोजगार सूचना संख्या 07/2026 जारी की है। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+    "summary_en": "Railway Recruitment Board has announced CEN 07/2026 for Under Graduate Non-Technical Popular Categories to fill 1,688 vacancies. Eligible candidates can apply online through the official website before 13 November 2026.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने 1,688 रिक्तियों को भरने के लिए स्नातक-पूर्व गैर-तकनीकी लोकप्रिय श्रेणियों के तहत केंद्रीयकृत रोजगार सूचना संख्या 07/2026 जारी की है। योग्य उम्मीदवार 13 नवंबर 2026 से पहले आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
     "vacancies": [
       {
-        "detail_en": "Pay Level 3, Initial pay ₹21700, Medical Standard B2",
-        "detail_hi": "वेतन स्तर 3, प्रारंभिक वेतन ₹21700, चिकित्सा मानक B2",
+        "detail_en": "Pay Level 3, Initial pay ₹21,700, Medical Standard B2",
+        "detail_hi": "वेतन स्तर 3, प्रारंभिक वेतन ₹21,700, चिकित्सा मानक B2",
         "post_en": "Commercial Cum Ticket Clerk",
         "post_hi": "कमर्शियल कम टिकट क्लर्क",
         "total": "700"
       },
       {
-        "detail_en": "Pay Level 2, Initial pay ₹19900, Medical Standard C2",
-        "detail_hi": "वेतन स्तर 2, प्रारंभिक वेतन ₹19900, चिकित्सा मानक C2",
+        "detail_en": "Pay Level 2, Initial pay ₹19,900, Medical Standard C2",
+        "detail_hi": "वेतन स्तर 2, प्रारंभिक वेतन ₹19,900, चिकित्सा मानक C2",
         "post_en": "Accounts Clerk cum Typist",
         "post_hi": "अकाउंट्स क्लर्क कम टाइपिस्ट",
         "total": "200"
       },
       {
-        "detail_en": "Pay Level 2, Initial pay ₹19900, Medical Standard C2",
-        "detail_hi": "वेतन स्तर 2, प्रारंभिक वेतन ₹19900, चिकित्सा मानक C2",
+        "detail_en": "Pay Level 2, Initial pay ₹19,900, Medical Standard C2",
+        "detail_hi": "वेतन स्तर 2, प्रारंभिक वेतन ₹19,900, चिकित्सा मानक C2",
         "post_en": "Junior Clerk Cum Typist",
         "post_hi": "जूनियर क्लर्क कम टाइपिस्ट",
         "total": "600"
       },
       {
-        "detail_en": "Pay Level 2, Initial pay ₹19900, Medical Standard A3",
-        "detail_hi": "वेतन स्तर 2, प्रारंभिक वेतन ₹19900, चिकित्सा मानक A3",
+        "detail_en": "Pay Level 2, Initial pay ₹19,900, Medical Standard A3",
+        "detail_hi": "वेतन स्तर 2, प्रारंभिक वेतन ₹19,900, चिकित्सा मानक A3",
         "post_en": "Trains Clerk",
         "post_hi": "ट्रेन्स क्लर्क",
         "total": "188"
       }
+    ],
+    "who_en": [
+      "Undergraduate candidates aged 18-30 years who want a railway job."
+    ],
+    "who_hi": [
+      "18-30 वर्ष की आयु के स्नातक-पूर्व उम्मीदवार जो रेलवे में नौकरी चाहते हैं।"
     ]
   },
   "pdf": {
