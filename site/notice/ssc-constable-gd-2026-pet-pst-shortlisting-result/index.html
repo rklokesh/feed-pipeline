@@ -191,8 +191,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
 .kv a.r:hover { background: var(--row-hover); }   /* same as homepage rows */
-.kv.rel a.r > span:first-child { color: var(--unread); }   /* not opened yet */
-.kv.rel a.r:visited > span:first-child { color: var(--ink); }   /* already opened */
+.kv.rel a.r:visited > span:first-child { color: color-mix(in srgb, var(--ink) 72%, var(--page)); }   /* already opened */
 :root { --row-hover: #FAF8F4; }
 :root[data-theme="dark"] { --row-hover: #222120; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --row-hover: #222120; } }
@@ -363,7 +362,7 @@ html[lang="hi"] .hisum { display: none; }
     <section class="kv rel" data-t-aria="relH">
       <div class="h" data-t="relH">More notices</div>
       <a class="r" href="/notice/ssc-chsl-examination-2025-final-result-declared/"><span data-t="rel0">SSC CHSL Final Result 2025 Declared – 3515 Candidates Recommended</span><span class="v g num">7 Oct 2026</span></a>
-      <a class="r" href="/notice/ssc-stenographer-grade-c-and-d-2025-final-marks-uploaded/"><span data-t="rel1">SSC Stenographer Grade C and D 2025 Final Marks Released</span><span class="v g num">7 Oct 2026</span></a>
+      <a class="r" href="/notice/ssc-stenographer-grade-c-and-d-2025-final-marks-uploaded/"><span data-t="rel1">SSC Stenographer Grade C and D 2025 Final Marks Released – Check Scores</span><span class="v g num">7 Oct 2026</span></a>
       <a class="r" href="/notice/ssc-je-and-si-exam-2026-revised-dates/"><span data-t="rel2">SSC JE and SI Exam 2026 Revised Dates – Schedule Notice</span><span class="v g num">26 Oct 2026</span></a>
       <a class="r" href="/notice/ssc-grade-c-stenographers-ldce-2025-tentative-vacancies/"><span data-t="rel3">SSC Grade C Stenographer Vacancy 2025 – LDCE Tentative Vacancies Out</span><span class="v g num">24 Oct 2026</span></a>
       <a class="r" href="/notice/ssc-je-exam-2026-paper-i-city-and-admit-card-notice/"><span data-t="rel4">SSC JE Admit Card 2026 Out – Paper-1 Exam City Slip Link</span><span class="v g num">23 Oct 2026</span></a>
@@ -492,7 +491,7 @@ html[lang="hi"] .hisum { display: none; }
       tocH: "On this page",
       relH: "More notices",
       rel0: "SSC CHSL Final Result 2025 Declared – 3515 Candidates Recommended",
-      rel1: "SSC Stenographer Grade C and D 2025 Final Marks Released",
+      rel1: "SSC Stenographer Grade C and D 2025 Final Marks Released – Check Scores",
       rel2: "SSC JE and SI Exam 2026 Revised Dates – Schedule Notice",
       rel3: "SSC Grade C Stenographer Vacancy 2025 – LDCE Tentative Vacancies Out",
       rel4: "SSC JE Admit Card 2026 Out – Paper-1 Exam City Slip Link",
@@ -604,7 +603,7 @@ html[lang="hi"] .hisum { display: none; }
       tocH: "इस पेज पर",
       relH: "और सूचनाएँ",
       rel0: "एसएससी सीएचएसएल अंतिम परिणाम 2025 घोषित – 3515 उम्मीदवार अनुशंसित",
-      rel1: "कर्मचारी चयन आयोग आशुलिपिक ग्रेड सी और डी 2025 अंतिम अंक जारी",
+      rel1: "कर्मचारी चयन आयोग आशुलिपिक ग्रेड सी और डी 2025 अंतिम अंक जारी – स्कोर देखें",
       rel2: "कर्मचारी चयन आयोग कनिष्ठ अभियंता और उप निरीक्षक परीक्षा 2026 संशोधित तिथियां",
       rel3: "कर्मचारी चयन आयोग श्रेणी ग आशुलिपिक वैकेंसी 2025 – एलडीसीई संभावित रिक्तियां जारी",
       rel4: "एसएससी जेई एडमिट कार्ड 2026 जारी – पेपर-1 परीक्षा शहर पर्ची लिंक",

@@ -191,8 +191,7 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
 .kv a.r:hover { background: var(--row-hover); }   /* same as homepage rows */
-.kv.rel a.r > span:first-child { color: var(--unread); }   /* not opened yet */
-.kv.rel a.r:visited > span:first-child { color: var(--ink); }   /* already opened */
+.kv.rel a.r:visited > span:first-child { color: color-mix(in srgb, var(--ink) 72%, var(--page)); }   /* already opened */
 :root { --row-hover: #FAF8F4; }
 :root[data-theme="dark"] { --row-hover: #222120; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --row-hover: #222120; } }
@@ -340,7 +339,7 @@ html[lang="hi"] .hisum { display: none; }
       <div class="h" data-t="relH">More notices</div>
       <a class="r" href="/notice/nabard-development-assistant-prelims-cut-off-2026/"><span data-t="rel0">NABARD Development Assistant Prelims Cut-Off 2026</span><span class="v g num">23 Oct 2026</span></a>
       <a class="r" href="/notice/nabard-development-assistant-hindi-mains-cut-off-2026/"><span data-t="rel1">NABARD Development Assistant Hindi Mains Cut-Off 2026</span><span class="v g num">23 Oct 2026</span></a>
-      <a class="r" href="/notice/nabard-development-assistant-mains-exam-cut-off-2026/"><span data-t="rel2">NABARD Development Assistant Mains Exam Cut-Off 2026</span><span class="v g num">23 Oct 2026</span></a>
+      <a class="r" href="/notice/nabard-development-assistant-mains-exam-cut-off-2026/"><span data-t="rel2">NABARD Development Assistant Cut Off 2026 – Mains Exam Marks Out</span><span class="v g num">23 Oct 2026</span></a>
       <a class="r" href="/notice/nabard-senior-climate-finance-specialist-result/"><span data-t="rel3">NABARD Senior Climate Finance Specialist Result 2026</span><span class="v g num">22 Oct 2026</span></a>
       <a class="r" href="/notice/nabard-specialist-derivatives-and-treasury-management-result/"><span data-t="rel4">NABARD Specialist Derivatives &amp; Treasury Management Result</span><span class="v g num">22 Oct 2026</span></a>
       <a class="r" href="/notice/nabard-specialists-on-contract-recruitment-2026-27/"><span data-t="rel5">NABARD Specialists on Contract Recruitment 2026-27</span><span class="v g num">27 Oct 2026</span></a>
@@ -436,7 +435,7 @@ html[lang="hi"] .hisum { display: none; }
       relH: "More notices",
       rel0: "NABARD Development Assistant Prelims Cut-Off 2026",
       rel1: "NABARD Development Assistant Hindi Mains Cut-Off 2026",
-      rel2: "NABARD Development Assistant Mains Exam Cut-Off 2026",
+      rel2: "NABARD Development Assistant Cut Off 2026 – Mains Exam Marks Out",
       rel3: "NABARD Senior Climate Finance Specialist Result 2026",
       rel4: "NABARD Specialist Derivatives & Treasury Management Result",
       rel5: "NABARD Specialists on Contract Recruitment 2026-27",
@@ -515,7 +514,7 @@ html[lang="hi"] .hisum { display: none; }
       relH: "और सूचनाएँ",
       rel0: "नाबार्ड विकास सहायक प्रारंभिक परीक्षा कट-ऑफ 2026",
       rel1: "नाबार्ड डेवलपमेंट असिस्टेंट हिंदी मुख्य परीक्षा कट-ऑफ 2026",
-      rel2: "नाबार्ड डेवलपमेंट असिस्टेंट मुख्य परीक्षा कट-ऑफ 2026",
+      rel2: "नाबार्ड डेवलपमेंट असिस्टेंट कट ऑफ 2026 – मुख्य परीक्षा के अंक जारी",
       rel3: "नाबार्ड सीनियर क्लाइमेट फाइनेंस स्पेशलिस्ट परिणाम 2026",
       rel4: "नाबार्ड स्पेशलिस्ट डेरिवेटिव्स एंड ट्रेजरी मैनेजमेंट परिणाम",
       rel5: "नाबार्ड अनुबंध पर विशेषज्ञ भर्ती 2026-27",
