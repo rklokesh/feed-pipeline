@@ -54,13 +54,14 @@
 .newline.off { visibility: hidden; } /* keeps its space, so the table never jumps */
 /* "New" badge on the 3 most recent notices: a soft breathing dot, not a hard blink */
 /* Posted cell = date + a fixed slot for the "New" tag, so every date lines up whether or not a tag is there. */
-.pc { display: inline-grid; grid-template-columns: 2.5rem auto; column-gap: 8px; align-items: baseline; white-space: nowrap; }
+.pc { display: inline-grid; grid-template-columns: 23px auto 16px; column-gap: 6px; align-items: baseline; white-space: nowrap; }
 /* "New" = the red arrow image (English or Hindi), nudging gently forward: calm, not a panic blink */
 .newtag { display: inline-block; width: 23px; height: 14px; vertical-align: -2px; animation: nudge 1.8s ease-in-out infinite; }
 @keyframes nudge { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(3px); } }
 @media (prefers-reduced-motion: reduce) { .newtag { animation: none; } }
 .t .newtag { margin-right: 8px; vertical-align: -2px; }
-.pc .slot { display: inline-flex; align-items: center; justify-content: flex-end; gap: 3px; order: -1; }   /* New arrow / siren sit left of the date, pointing at it */
+.pc .siren-r { display: inline-flex; align-items: center; }
+.pc .slot { display: inline-flex; align-items: center; justify-content: flex-end; gap: 3px; order: -1; }   /* New arrow sits left of the date, pointing at it; the siren stays on the right */
 .rsiren { display: inline-block; line-height: 0; vertical-align: -2px; }
 .rsiren img { width: 14px; height: 14px; display: block; }
 .t .rsiren { margin-right: 6px; }
@@ -650,7 +651,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     const nl = document.getElementById("newline"), nNew = ITEMS.filter(i => live(i) && isNew(i)).length;
     const showNl = false;   // "N new since your last visit" retired: New is now the same for everyone nl.classList.toggle("off", !showNl); nl.textContent = showNl ? t("sinceLast")(nNew) : "\u00a0";
     document.getElementById("list").innerHTML = rows.slice(0, shown).map(i =>
-      `<li class="lr${isNew(i) ? " fresh" : ""}"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm"><span class="pc"><span>${soonView ? lastCell(i) : fmt(i.posted)}</span><span class="slot">${isNew(i) ? `<img class="newtag" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" width="23" height="14">` : ""}${inCat(i, "soon") ? SIREN : ""}</span></span></span><span class="t" data-full="${esc(title(i))}">${inCat(i, "soon") ? SIREN.replace('class="rsiren"', 'class="rsiren show-sm"') : ""}${isNew(i) ? `<img class="newtag show-sm" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" width="23" height="14">` : ""}${esc(title(i))}</span><span class="hide-sm g cut" data-full="${esc(org(i) || "")}">${esc(org(i) || "")}</span><span class="hide-sm g cut" data-full="${esc(t(i.type))}">${t(i.type)}</span><span class="num" style="white-space:nowrap">${soonView ? `<span class="hide-sm g">${fmt(i.posted)}</span><span class="show-sm">${lastCell(i)}</span>` : lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
+      `<li class="lr${isNew(i) ? " fresh" : ""}"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm"><span class="pc"><span>${soonView ? lastCell(i) : fmt(i.posted)}</span><span class="slot">${isNew(i) ? `<img class="newtag" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" width="23" height="14">` : ""}</span><span class="siren-r">${inCat(i, "soon") ? SIREN : ""}</span></span></span><span class="t" data-full="${esc(title(i))}">${inCat(i, "soon") ? SIREN.replace('class="rsiren"', 'class="rsiren show-sm"') : ""}${isNew(i) ? `<img class="newtag show-sm" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" width="23" height="14">` : ""}${esc(title(i))}</span><span class="hide-sm g cut" data-full="${esc(org(i) || "")}">${esc(org(i) || "")}</span><span class="hide-sm g cut" data-full="${esc(t(i.type))}">${t(i.type)}</span><span class="num" style="white-space:nowrap">${soonView ? `<span class="hide-sm g">${fmt(i.posted)}</span><span class="show-sm">${lastCell(i)}</span>` : lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
     ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
     // One long page, revealed 50 rows at a time (no "page 2"): Ctrl+F, search and the back button keep working.
     const more = document.getElementById("more");
