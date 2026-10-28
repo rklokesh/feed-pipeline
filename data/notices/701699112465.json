@@ -1,0 +1,64 @@
+{
+  "board_url": "https://rrcnr.org/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "TMENT CELL NORTHERN RAILWAY NOTICE GDCE Recruitment against Notification No. 01/2023/GDCE - Re-examination of Candidates due to Mismatch in Trade/Examination Group It is hereby informed",
+      "source": "rule",
+      "value": "01/2023/GDCE - Re-examination"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "Notification No. 01/2023/GDCE"
+      }
+    },
+    "apply_last": {
+      "evidence": "the online mode. A link is being provided for the same. The last date for submission of the consent is 12.11.2026. Candidates who do not submit their consent within the prescribed time shall be treated as not willing to appe",
+      "source": "rule",
+      "value": "2026-11-12"
+    },
+    "apply_last_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_last": "The last date for submission of the consent is 12.11.2026."
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "ALP/Technician"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "post of ALP/Technician under the GDCE Recruitment"
+      }
+    }
+  },
+  "first_seen": "2026-10-28T15:18:40+00:00",
+  "id": "701699112465",
+  "kind": "notification",
+  "org": "RRC Northern Railway",
+  "pdf": {
+    "bytes": 446959,
+    "pages": 1,
+    "sha256": "6d47cd10a1feae675331eccc9cde531960d3509ee05a771f6886edf9c60edb5c",
+    "text_kind": "text"
+  },
+  "source_id": "rrc-nr",
+  "status": "pending_review",
+  "title": "28.10.2026 Kind Attention: Notice regarding online submission of willingness/unwillingness for identified candidates under GDCE Notification No. 01/2023/GDCE. Identified candidates must submit consent through the provided link by 12.11.2026. A separate email will be sent to the identified candidates",
+  "url": "https://rrcnr.org/downloads/GDCE_Notice .pdf"
+}
