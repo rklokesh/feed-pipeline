@@ -1,6 +1,23 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://joinindiancoastguard.cdac.in/cgcat/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2025-07-27",
+    "list": true,
+    "posts": "Assistant Commandant (General Duty & Technical)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Indian Coast Guard has invited online applications for Assistant Commandant 2027 Batch for General Duty and Technical branches. Eligible male candidates can apply online from 08 July 2025 to 27 July 2025.",
+    "summary_hi": "भारतीय तटरक्षक ने जनरल ड्यूटी और तकनीकी शाखाओं के लिए सहायक कमांडेंट 2027 बैच के वास्ते ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य पुरुष उम्मीदवार 08 जुलाई 2025 से 27 जुलाई 2025 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "title_en": "ICG Assistant Commandant 2027 Batch",
+    "title_hi": "भारतीय तटरक्षक सहायक कमांडेंट 2027 बैच",
+    "type": "Job",
+    "vacancies": 170
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -77,16 +94,375 @@
   },
   "first_seen": "2026-10-28T02:27:42+00:00",
   "id": "4f37fc2ca270",
+  "issue": 127,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-10-28",
   "org": "Indian Coast Guard",
+  "page": {
+    "after_en": [
+      "Candidates who clear CGCAT (Stage-I) will be called for Preliminary Selection Board (PSB) Stage-II.",
+      "Qualified candidates proceed to Final Selection Board (FSB) Stage-III, followed by Medical Examination (Stage-IV) and final induction (Stage-V)."
+    ],
+    "after_hi": [
+      "सीजीकैट (चरण-I) पास करने वाले उम्मीदवारों को प्रारंभिक चयन बोर्ड (पीएसबी) चरण-II के लिए बुलाया जाएगा।",
+      "योग्य उम्मीदवार अंतिम चयन बोर्ड (एफएसबी) चरण-III में आगे बढ़ते हैं, जिसके बाद चिकित्सा परीक्षा (चरण-IV) और अंतिम प्रेरण (चरण-V) होता है।"
+    ],
+    "age": [
+      {
+        "label_en": "Minimum age",
+        "label_hi": "न्यूनतम आयु",
+        "value_en": "21 years",
+        "value_hi": "21 वर्ष"
+      },
+      {
+        "label_en": "Maximum age",
+        "label_hi": "अधिकतम आयु",
+        "value_en": "25 years",
+        "value_hi": "25 वर्ष"
+      },
+      {
+        "label_en": "As on date",
+        "label_hi": "आयु की गणना इस तिथि को होगी",
+        "value_en": "01 Jul 2026 (born between 01 Jul 2001 and 30 Jun 2005)",
+        "value_hi": "01 जुलाई 2026 (जन्म 01 जुलाई 2001 और 30 जून 2005 के बीच)"
+      },
+      {
+        "label_en": "SC/ST upper age relaxation",
+        "label_hi": "अजा/जजा ऊपरी आयु में छूट",
+        "value_en": "5 years (applicable only if posts are reserved for them)",
+        "value_hi": "5 वर्ष (केवल तभी लागू जब पद उनके लिए आरक्षित हों)"
+      },
+      {
+        "label_en": "OBC upper age relaxation",
+        "label_hi": "अ पिछ वि ऊपरी आयु में छूट",
+        "value_en": "3 years (applicable only if posts are reserved for them)",
+        "value_hi": "3 वर्ष (केवल तभी लागू जब पद उनके लिए आरक्षित हों)"
+      },
+      {
+        "label_en": "Serving Coast Guard personnel relaxation",
+        "label_hi": "सेवारत तटरक्षक कर्मियों के लिए छूट",
+        "value_en": "Up to 5 years",
+        "value_hi": "अधिकतम 5 वर्ष"
+      }
+    ],
+    "apply_start": "2025-07-08",
+    "apply_url": "https://joinindiancoastguard.cdac.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Verify your age eligibility (born between 01 Jul 2001 and 30 Jun 2005)",
+      "Ensure you possess the required educational qualifications",
+      "Keep scanned photograph, signature, and documents ready before applying",
+      "Note down your registration number after final submission"
+    ],
+    "checklist_hi": [
+      "अपनी आयु पात्रता सत्यापित करें (01 जुलाई 2001 और 30 जून 2005 के बीच जन्मे)",
+      "सुनिश्चित करें कि आपके पास आवश्यक शैक्षणिक योग्यताएं हैं",
+      "आवेदन करने से पहले स्कैन किया गया फोटो, हस्ताक्षर और दस्तावेज तैयार रखें",
+      "अंतिम जमा करने के बाद अपना पंजीकरण नंबर नोट कर लें"
+    ],
+    "conducted_by_en": "Indian Coast Guard (ICG)",
+    "conducted_by_hi": "भारतीय तटरक्षक (आईसीजी)",
+    "dates": [
+      {
+        "label_en": "Online application starts",
+        "label_hi": "ऑनलाइन आवेदन शुरू",
+        "value_en": "08 Jul 2025 (1600 HRS)",
+        "value_hi": "08 जुलाई 2025 (1600 बजे)"
+      },
+      {
+        "label_en": "Last date to apply",
+        "label_hi": "आवेदन करने की अंतिम तिथि",
+        "value_en": "27 Jul 2025 (2330 HRS)",
+        "value_hi": "27 जुलाई 2025 (2330 बजे)"
+      },
+      {
+        "label_en": "Proof of passing degree last date",
+        "label_hi": "डिग्री उत्तीर्ण करने का प्रमाण प्रस्तुत करने की अंतिम तिथि",
+        "value_en": "31 Oct 2026",
+        "value_hi": "31 अक्टूबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Original educational certificates and marksheets",
+      "Proof of date of birth",
+      "Valid photo ID proof",
+      "Bonafide certificate for final year students signed by the Registrar/Controller of the University",
+      "Caste certificate (if applicable)"
+    ],
+    "documents_hi": [
+      "मूल शैक्षणिक प्रमाण पत्र और अंक तालिकाएं",
+      "जन्म तिथि का प्रमाण",
+      "वैध फोटो पहचान प्रमाण",
+      "विश्वविद्यालय के रजिस्ट्रार/नियंत्रक द्वारा हस्ताक्षरित अंतिम वर्ष के छात्रों के लिए बोनाफाइड प्रमाण पत्र",
+      "जाति प्रमाण पत्र (यदि लागू हो)"
+    ],
+    "eligibility": [
+      {
+        "label_en": "General Duty Education",
+        "label_hi": "जनरल ड्यूटी शिक्षा",
+        "value_en": "Graduate Degree from a recognised university with Physics and Mathematics up to class XII.",
+        "value_hi": "कक्षा 12 तक भौतिकी और गणित के साथ मान्यता प्राप्त विश्वविद्यालय से स्नातक डिग्री।"
+      },
+      {
+        "label_en": "Technical Branch Education",
+        "label_hi": "तकनीकी शाखा शिक्षा",
+        "value_en": "Engineering degree in relevant discipline (Naval Architecture, Mechanical, Marine, Automotive, Mechatronics, Industrial & Production, Metallurgy, Design, Aeronautical, Aerospace, Electrical, Electronics, Telecommunication, Instrumentation, Power Engineering, etc.) with Physics and Mathematics up to class XII.",
+        "value_hi": "संबंधित अनुशासन में इंजीनियरिंग डिग्री (नौसेना वास्तुकला, मैकेनिकल, मरीन, ऑटोमोटिव, मेचैट्रॉनिक्स, औद्योगिक और उत्पादन, धातुकर्म, डिजाइन, एयरोनॉटिकल, एयरोस्पेस, इलेक्ट्रिकल, इलेक्ट्रॉनिक्स, दूरसंचार, इंस्ट्रुमेंटेशन, पावर इंजीनियरिंग, आदि) कक्षा 12 तक भौतिकी और गणित के साथ।"
+      },
+      {
+        "label_en": "Gender",
+        "label_hi": "लिंग",
+        "value_en": "Male candidates only",
+        "value_hi": "केवल पुरुष उम्मीदवार"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [
+      {
+        "marks": "100",
+        "part_en": "English",
+        "part_hi": "अंग्रेजी",
+        "questions": "25",
+        "time": "2 Hours (Combined for all parts)"
+      },
+      {
+        "marks": "100",
+        "part_en": "Reasoning & Numerical Ability",
+        "part_hi": "तर्क और संख्यात्मक क्षमता",
+        "questions": "25",
+        "time": "2 Hours (Combined for all parts)"
+      },
+      {
+        "marks": "100",
+        "part_en": "General Science & Mathematical aptitude",
+        "part_hi": "सामान्य विज्ञान और गणितीय योग्यता",
+        "questions": "25",
+        "time": "2 Hours (Combined for all parts)"
+      },
+      {
+        "marks": "100",
+        "part_en": "General Knowledge",
+        "part_hi": "सामान्य ज्ञान",
+        "questions": "25",
+        "time": "2 Hours (Combined for all parts)"
+      },
+      {
+        "marks": "One negative mark for each incorrect answer",
+        "part_en": "Negative marking",
+        "part_hi": "नकारात्मक अंकन",
+        "questions": "",
+        "time": ""
+      }
+    ],
+    "explain": [
+      {
+        "a_en": "It is a direct entry scheme for dynamic Indian male candidates to join the Indian Coast Guard as a Group 'A' Gazetted Officer in General Duty or Technical branches through a rigorous multi-stage selection process.",
+        "a_hi": "यह एक कठोर बहु-चरण चयन प्रक्रिया के माध्यम से जनरल ड्यूटी या तकनीकी शाखाओं में समूह 'ए' राजपत्रित अधिकारी के रूप में भारतीय तटरक्षक बल में शामिल होने के लिए गतिशील भारतीय पुरुष उम्मीदवारों के लिए एक सीधी प्रवेश योजना है।",
+        "q_en": "What is ICG Assistant Commandant Entry?",
+        "q_hi": "आईसीजी सहायक कमांडेंट प्रवेश क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "The last date to apply online is 27 July 2025 (2330 HRS).",
+        "a_hi": "ऑनलाइन आवेदन करने की अंतिम तिथि 27 जुलाई 2025 (2330 बजे) है।",
+        "q_en": "What is the last date to apply for ICG Assistant Commandant 2027 Batch?",
+        "q_hi": "आईसीजी सहायक कमांडेंट 2027 बैच के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "Indian male candidates holding a Graduate Degree for GD or an Engineering degree for Technical branches, aged between 21 to 25 years, can apply.",
+        "a_hi": "जीडी के लिए स्नातक की डिग्री या तकनीकी शाखाओं के लिए इंजीनियरिंग की डिग्री रखने वाले भारतीय पुरुष उम्मीदवार, जिनकी आयु 21 से 25 वर्ष के बीच है, आवेदन कर सकते हैं।",
+        "q_en": "Who can apply for ICG Assistant Commandant 2027 Batch?",
+        "q_hi": "आईसीजी सहायक कमांडेंट 2027 बैच के लिए कौन आवेदन कर सकता है?"
+      },
+      {
+        "a_en": "There are a total of 170 tentative vacancies available for this batch.",
+        "a_hi": "इस बैच के लिए कुल 170 संभावित रिक्तियां उपलब्ध हैं।",
+        "q_en": "What is the total number of vacancies for ICG Assistant Commandant 2027 Batch?",
+        "q_hi": "आईसीजी सहायक कमांडेंट 2027 बैच के लिए कुल रिक्तियों की संख्या क्या है?"
+      },
+      {
+        "a_en": "Candidates can apply through the official website: joinindiancoastguard.cdac.in",
+        "a_hi": "उम्मीदवार आधिकारिक वेबसाइट के माध्यम से आवेदन कर सकते हैं: joinindiancoastguard.cdac.in",
+        "q_en": "What is the official website to apply for ICG Assistant Commandant?",
+        "q_hi": "आईसीजी सहायक कमांडेंट के लिए आवेदन करने की आधिकारिक वेबसाइट क्या है?"
+      },
+      {
+        "a_en": "Yes, candidates studying in the final year of their degree are eligible as a special concession, provided they submit proof of passing by 31 October 2026.",
+        "a_hi": "हाँ, अपनी डिग्री के अंतिम वर्ष में अध्ययन करने वाले उम्मीदवार एक विशेष रियायत के रूप में पात्र हैं, बशर्ते वे 31 अक्टूबर 2026 तक उत्तीर्ण होने का प्रमाण प्रस्तुत करें।",
+        "q_en": "Are final year graduation students eligible to apply?",
+        "q_hi": "क्या अंतिम वर्ष के स्नातक छात्र आवेदन करने के पात्र हैं?"
+      },
+      {
+        "a_en": "Candidates must be born between 01 July 2001 and 30 June 2005 (both dates inclusive).",
+        "a_hi": "उम्मीदवारों का जन्म 01 जुलाई 2001 और 30 जून 2005 के बीच (दोनों तिथियां शामिल) होना चाहिए।",
+        "q_en": "What is the age limit for ICG Assistant Commandant 2027 Batch?",
+        "q_hi": "आईसीजी सहायक कमांडेंट 2027 बैच के लिए आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "The selection procedure comprises CGCAT (Stage-I), PSB (Stage-II), FSB (Stage-III), Medical Examination (Stage-IV), and Induction (Stage-V).",
+        "a_hi": "चयन प्रक्रिया में सीजीकैट (चरण-I), पीएसबी (चरण-II), एफएसबी (चरण-III), चिकित्सा परीक्षा (चरण-IV), और प्रेरण (चरण-V) शामिल हैं।",
+        "q_en": "What is the selection procedure for ICG Assistant Commandant?",
+        "q_hi": "आईसीजी सहायक कमांडेंट के लिए चयन प्रक्रिया क्या है?"
+      },
+      {
+        "a_en": "CGCAT comprises 100 objective multiple-choice questions carrying 4 marks each across English, Reasoning & Numerical Ability, General Science & Mathematical Aptitude, and General Knowledge, with 1 mark negative marking for incorrect answers.",
+        "a_hi": "सीजीकैट में अंग्रेजी, तर्क और संख्यात्मक क्षमता, सामान्य विज्ञान और गणितीय योग्यता, और सामान्य ज्ञान पर प्रत्येक 4 अंक के 100 वस्तुनिष्ठ बहुविकल्पीय प्रश्न शामिल हैं, जिसमें गलत उत्तरों के लिए 1 अंक की नकारात्मक अंकन है।",
+        "q_en": "What is the exam pattern for CGCAT Stage-I?",
+        "q_hi": "सीजीकैट चरण-I के लिए परीक्षा पैटर्न क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "ICG Assistant Commandant 2027 Batch",
+    "h1_hi": "भारतीय तटरक्षक सहायक कमांडेंट 2027 बैच",
+    "how_en": [
+      "Visit the official Indian Coast Guard recruitment website: joinindiancoastguard.cdac.in",
+      "Click on the Assistant Commandant 2027 Batch recruitment link and complete the registration.",
+      "Fill out the online application form with accurate personal and educational details.",
+      "Upload necessary documents, photograph, and signature as per prescribed specifications.",
+      "Submit the application form before the last date and take a printout for future reference."
+    ],
+    "how_hi": [
+      "भारतीय तटरक्षक की आधिकारिक भर्ती वेबसाइट पर जाएं: joinindiancoastguard.cdac.in",
+      "सहायक कमांडेंट 2027 बैच भर्ती लिंक पर क्लिक करें और पंजीकरण पूरा करें।",
+      "सटीक व्यक्तिगत और शैक्षणिक विवरण के साथ ऑनलाइन आवेदन पत्र भरें।",
+      "निर्दिष्ट विनिर्देशों के अनुसार आवश्यक दस्तावेज, फोटोग्राफ और हस्ताक्षर अपलोड करें।",
+      "अंतिम तिथि से पहले आवेदन पत्र जमा करें और भविष्य के संदर्भ के लिए प्रिंटआउट लें।"
+    ],
+    "intro_en": "Indian Coast Guard has released the official notification for the recruitment of Assistant Commandant for the 2027 Batch (General Duty and Technical branches) as a Group 'A' Gazetted Officer. A total of 170 vacancies are available for male candidates who meet the eligibility criteria. Online registration opens on 08 July 2025 and closes on 27 July 2025. Eligible and interested candidates must review the official notification and apply through the official website within the stipulated dates.",
+    "intro_hi": "भारतीय तटरक्षक ने समूह 'ए' राजपत्रित अधिकारी के रूप में सहायक कमांडेंट 2027 बैच (जनरल ड्यूटी और तकनीकी शाखाओं) की भर्ती के लिए आधिकारिक अधिसूचना जारी कर दी है। पात्रता मानदंडों को पूरा करने वाले पुरुष उम्मीदवारों के लिए कुल 170 रिक्तियां उपलब्ध हैं। ऑनलाइन पंजीकरण 08 जुलाई 2025 से शुरू होकर 27 जुलाई 2025 को समाप्त होगा। योग्य और इच्छुक उम्मीदवारों को आधिकारिक अधिसूचना की समीक्षा करनी चाहिए और निर्धारित तिथियों के भीतर आधिकारिक वेबसाइट के माध्यम से आवेदन करना चाहिए।",
+    "last_date": "2025-07-27",
+    "mistakes_en": [
+      "Entering incorrect date of birth or gender, as changes are not allowed at any subsequent stage",
+      "Failing to submit the final year degree pass proof by 31 Oct 2026 for final year students",
+      "Mismatch of biometrics during Stage-II verification compared to Stage-I"
+    ],
+    "mistakes_hi": [
+      "गलत जन्म तिथि या लिंग दर्ज करना, क्योंकि बाद के किसी भी चरण में बदलाव की अनुमति नहीं है",
+      "अंतिम वर्ष के छात्रों द्वारा 31 अक्टूबर 2026 तक डिग्री उत्तीर्ण करने का प्रमाण प्रस्तुत करने में विफल रहना",
+      "चरण-I की तुलना में चरण-II सत्यापन के दौरान बायोमेट्रिक का मेल न खाना"
+    ],
+    "not_en": [
+      "Candidates withdrawn on disciplinary grounds from any other service training academy",
+      "Candidates arrested, convicted, or prosecuted on criminal charges",
+      "Candidates debarred from appearing in any public service exam"
+    ],
+    "not_hi": [
+      "किसी अन्य सेवा प्रशिक्षण अकादमी से अनुशासनिक आधार पर हटाए गए उम्मीदवार",
+      "आपराधिक मामलों में गिरफ्तार, दोषी ठहराए गए या मुकदमे का सामना कर रहे उम्मीदवार",
+      "किसी भी लोक सेवा परीक्षा में बैठने से वंचित उम्मीदवार"
+    ],
+    "notice_date": "2025-07-08",
+    "official_site": "https://joinindiancoastguard.cdac.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Assistant Commandant (General Duty & Technical)",
+        "value_hi": "सहायक कमांडेंट (जनरल ड्यूटी और तकनीकी)"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "170",
+        "value_hi": "170"
+      },
+      {
+        "label_en": "Apply online",
+        "label_hi": "ऑनलाइन आवेदन",
+        "value_en": "08 Jul 2025 to 27 Jul 2025",
+        "value_hi": "08 जुलाई 2025 से 27 जुलाई 2025"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "21–25 years (born between 01 Jul 2001 and 30 Jun 2005)",
+        "value_hi": "21–25 वर्ष (जन्म 01 जुलाई 2001 से 30 जून 2005 के बीच)"
+      },
+      {
+        "label_en": "Educational qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "Graduate Degree for GD and Engineering degree in relevant discipline for Technical branch with Physics and Mathematics up to class XII.",
+        "value_hi": "सामान्य ड्यूटी के लिए स्नातक डिग्री और तकनीकी शाखा के लिए संबंधित अनुशासन में इंजीनियरिंग डिग्री, कक्षा 12 तक भौतिकी और गणित के साथ।"
+      },
+      {
+        "label_en": "Selection process",
+        "label_hi": "चयन प्रक्रिया",
+        "value_en": "CGCAT (Stage I), PSB (Stage II), FSB (Stage III), Medical Examination (Stage IV), Induction (Stage V)",
+        "value_hi": "सीजीकैट (चरण I), पीएसबी (चरण II), एफएसबी (चरण III), चिकित्सा परीक्षा (चरण IV), प्रेरण (चरण V)"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Assistant Commandant 2027 Batch",
+        "value_hi": "सहायक कमांडेंट 2027 बैच"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Stage-I: Coast Guard Common Admission Test (CGCAT)",
+      "Stage-II: Preliminary Selection Board (PSB)",
+      "Stage-III: Final Selection Board (FSB)",
+      "Stage-IV: Medical Examination",
+      "Stage-V: Induction"
+    ],
+    "selection_hi": [
+      "चरण-I: कोस्ट गार्ड कॉमन एडमिशन टेस्ट (सीजीकैट)",
+      "चरण-II: प्रारंभिक चयन बोर्ड (पीएसबी)",
+      "चरण-III: अंतिम चयन बोर्ड (एफएसबी)",
+      "चरण-IV: चिकित्सा परीक्षा",
+      "चरण-V: प्रेरण"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2027",
+      "headline_hi": "भर्ती 2027",
+      "kind": "job",
+      "line_en": "Assistant Commandant",
+      "line_hi": "सहायक कमांडेंट",
+      "posts": "170"
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Indian Coast Guard has invited online applications for Assistant Commandant 2027 Batch for General Duty and Technical branches. Eligible male candidates can apply online from 08 July 2025 to 27 July 2025.",
+    "summary_hi": "भारतीय तटरक्षक ने जनरल ड्यूटी और तकनीकी शाखाओं के लिए सहायक कमांडेंट 2027 बैच के वास्ते ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य पुरुष उम्मीदवार 08 जुलाई 2025 से 27 जुलाई 2025 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "UR 46, OBC 35, SC 25, ST 24, EWS 10",
+        "detail_hi": "अनारक्षित 46, अ पिछ वि 35, अजा 25, जजा 24, ईडब्ल्यूएस 10",
+        "post_en": "General Duty (GD)",
+        "post_hi": "जनरल ड्यूटी (जीडी)",
+        "total": "140"
+      },
+      {
+        "detail_en": "UR 13, OBC 8, SC 3, ST 4, EWS 2",
+        "detail_hi": "अनारक्षित 13, अ पिछ वि 8, अजा 3, जजा 4, ईडब्ल्यूएस 2",
+        "post_en": "Tech (Engg/Elect)",
+        "post_hi": "तकनीकी (इंजीनियरिंग/इलेक्ट्रिकल)",
+        "total": "30"
+      }
+    ],
+    "who_en": [
+      "Male graduates aged 21-25 years wanting a career as an officer in the Indian Coast Guard"
+    ],
+    "who_hi": [
+      "21-25 वर्ष की आयु के पुरुष स्नातक जो भारतीय तटरक्षक बल में अधिकारी के रूप में करियर बनाना चाहते हैं"
+    ]
+  },
   "pdf": {
     "bytes": 936302,
     "pages": 16,
     "sha256": "45d1ae56633bc840fbc8f6fcc1037841ac6dffe837a8e49ae64ecabe3c721ce7",
     "text_kind": "text"
   },
+  "published_at": "2026-10-28T02:33:42Z",
+  "slug": "icg-assistant-commandant-2027-batch",
   "source_id": "coast-guard",
-  "status": "pending_review",
+  "status": "approved",
   "title": "English",
   "url": "https://joinindiancoastguard.cdac.in/cgcat/assets/img/news/Advertisement_for_Asst_Comdt_2027_Batch.pdf"
 }

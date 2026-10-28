@@ -29,48 +29,94 @@
   "notice_date": "2026-10-26",
   "org": "RPSC",
   "page": {
+    "after_en": [
+      "Forwarding of the candidate's name for appointment upon requisition by the department."
+    ],
+    "after_hi": [
+      "विभाग द्वारा मांग किए जाने पर नियुक्ति के लिए उम्मीदवार का नाम आगे भेजा जाना।"
+    ],
     "age": [],
     "apply_start": null,
     "apply_url": null,
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Check the official result PDF for your roll number.",
+      "Verify your cut-off marks and category details."
+    ],
+    "checklist_hi": [
+      "अपने रोल नंबर के लिए आधिकारिक परिणाम पीडीएफ देखें।",
+      "अपने कटऑफ अंक और श्रेणी विवरण की जांच करें।"
+    ],
     "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
     "conducted_by_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी)",
     "dates": [
       {
-        "label_en": "Notice date",
-        "label_hi": "नोटिस दिनांक",
+        "label_en": "Consideration list date",
+        "label_hi": "विचार सूची दिनांक",
+        "value_en": "02 Jul 2026",
+        "value_hi": "02 जुल 2026"
+      },
+      {
+        "label_en": "Notice / Result date",
+        "label_hi": "नोटिस / परिणाम दिनांक",
         "value_en": "26 Oct 2026",
-        "value_hi": "26-10-2026"
+        "value_hi": "26 अक्तू 2026"
       }
+    ],
+    "documents_en": [
+      "Educational qualification certificates",
+      "Identity proof",
+      "Document verification forms and related certificates"
+    ],
+    "documents_hi": [
+      "शैक्षणिक योग्यता प्रमाण पत्र",
+      "पहचान प्रमाण",
+      "दस्तावेज सत्यापन फॉर्म और संबंधित प्रमाण पत्र"
     ],
     "eligibility": [],
     "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a reserve list of candidates prepared by RPSC after document verification for the Lecturer Kayachikitsa Examination 2025, from which names may be recommended for appointment upon receiving a requisition from the department.",
+        "a_hi": "यह व्याख्याता कायचिकित्सा परीक्षा 2025 के लिए दस्तावेज सत्यापन के बाद आरपीएससी द्वारा तैयार की गई उम्मीदवारों की एक आरक्षित सूची है, जिससे विभाग से मांग प्राप्त होने पर नियुक्ति के लिए नाम अनुशंसित किए जा सकते हैं।",
+        "q_en": "What is the RPSC Lecturer Kayachikitsa Reserve List?",
+        "q_hi": "आरपीएससी व्याख्याता कायचिकित्सा आरक्षित सूची क्या है?"
+      }
+    ],
     "extra": [
       {
-        "label_en": "Cut-off marks (OBC GEN)",
-        "label_hi": "कटऑफ अंक (ओबीसी सामान्य)",
+        "label_en": "OBC (GEN) Cut Off Marks",
+        "label_hi": "अन्य पिछड़ा वर्ग (सामान्य) कट ऑफ अंक",
         "value_en": "72.15 (DOB: 15-07-1981)",
         "value_hi": "72.15 (जन्म तिथि: 15-07-1981)"
       }
     ],
     "faq": [
       {
-        "a_en": "The reserve list and cut-off marks were released on 26 October 2026.",
-        "a_hi": "आरक्षित सूची और कटऑफ अंक 26 अक्टूबर 2026 को जारी किए गए।",
-        "q_en": "What is the release date of the RPSC Lecturer Kayachikitsa 2025 reserve list?",
-        "q_hi": "आरपीएससी व्याख्याता कायचिकित्सा 2025 आरक्षित सूची किस तारीख को जारी की गई?"
+        "a_en": "The reserve list was released on 26 October 2026.",
+        "a_hi": "आरक्षित सूची 26 अक्तूबर 2026 को जारी की गई थी।",
+        "q_en": "When was the RPSC Lecturer Kayachikitsa 2025 reserve list released?",
+        "q_hi": "आरपीएससी व्याख्याता कायचिकित्सा 2025 आरक्षित सूची कब जारी की गई थी?"
       },
       {
-        "a_en": "A total of 1 candidate is included in the reserve list.",
-        "a_hi": "आरक्षित सूची में कुल 1 उम्मीदवार शामिल है।",
-        "q_en": "How many candidates are included in the RPSC Lecturer Kayachikitsa reserve list?",
-        "q_hi": "आरपीएससी व्याख्याता कायचिकित्सा आरक्षित सूची में कुल कितने उम्मीदवार शामिल हैं?"
+        "a_en": "The cut-off marks for OBC (GEN) is 72.15.",
+        "a_hi": "अन्य पिछड़ा वर्ग (सामान्य) के लिए कटऑफ अंक 72.15 है।",
+        "q_en": "What is the cut-off marks for OBC (GEN) in Lecturer Kayachikitsa 2025?",
+        "q_hi": "व्याख्याता कायचिकित्सा 2025 में अन्य पिछड़ा वर्ग (सामान्य) के लिए कटऑफ अंक क्या है?"
       },
       {
-        "a_en": "The cut-off mark for OBC (General) is 72.15.",
-        "a_hi": "ओबीसी (सामान्य) के लिए कटऑफ अंक 72.15 है।",
-        "q_en": "What is the cut-off mark for OBC category in the reserve list?",
-        "q_hi": "आरक्षित सूची में ओबीसी वर्ग के लिए कटऑफ अंक क्या है?"
+        "a_en": "Total 1 candidate is selected in the reserve list.",
+        "a_hi": "आरक्षित सूची में कुल 1 उम्मीदवार का चयन किया गया है।",
+        "q_en": "How many candidates are selected in the reserve list?",
+        "q_hi": "आरक्षित सूची में कितने उम्मीदवारों का चयन किया गया है?"
+      },
+      {
+        "a_en": "The examination was conducted for the Ayush Department.",
+        "a_hi": "परीक्षा आयुष विभाग के लिए आयोजित की गई थी।",
+        "q_en": "Which department conducted the Lecturer Kayachikitsa examination?",
+        "q_hi": "व्याख्याता कायचिकित्सा परीक्षा किस विभाग के लिए आयोजित की गई थी?"
       }
     ],
     "fees": [],
@@ -78,62 +124,90 @@
     "h1_hi": "आरपीएससी व्याख्याता कायचिकित्सा 2025 आरक्षित सूची और कटऑफ",
     "how_en": [
       "Visit the official RPSC website.",
-      "Check the News and Events or Result section for the Lecturer Kayachikitsa 2025 reserve list notice.",
-      "Download the PDF and check your roll number and cut-off marks."
+      "Go to the News and Events or Result section.",
+      "Click on the link for Lecturer (Kayachikitsa) 2025 reserve list and cut-off marks.",
+      "Check your roll number and merit rank in the PDF."
     ],
     "how_hi": [
-      "आधिकारिक आरपीएससी वेबसाइट पर जाएं।",
-      "व्याख्याता कायचिकित्सा 2025 आरक्षित सूची नोटिस के लिए समाचार और अनुभाग देखें।",
-      "पीडीएफ डाउनलोड करें और अपना रोल नंबर तथा कटऑफ अंक जांचें।"
+      "आरपीएससी की आधिकारिक वेबसाइट पर जाएं।",
+      "समाचार और अनुभाग या परिणाम अनुभाग पर जाएं।",
+      "व्याख्याता (कायचिकित्सा) 2025 आरक्षित सूची और कटऑफ अंकों के लिंक पर क्लिक करें।",
+      "पीडीएफ में अपना रोल नंबर और मेरिट रैंक जांचें।"
     ],
-    "intro_en": "The Rajasthan Public Service Commission (RPSC) has published the reserve list and cut-off marks for the Lecturer Kayachikitsa Examination 2025 under the Ayurveda, Yoga and Naturopathy, Unani, Siddha and Homeopathy (AYUSH) Department. One candidate has been provisionally declared successful in the reserve list after document verification. Candidates can review the notice for roll numbers and category-wise cut-off marks.",
-    "intro_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी) ने आयुर्वेद, योग और प्राकृतिक चिकित्सा, यूनानी, सिद्ध एवं होमियोपैथी (आयुष) विभाग के अंतर्गत व्याख्याता कायचिकित्सा प्रतियोगिता परीक्षा-2025 के लिए आरक्षित सूची और कटऑफ अंक जारी कर दिए हैं। दस्तावेजों की जांच के बाद आरक्षित सूची में एक उम्मीदवार को सफल घोषित किया गया है। उम्मीदवार रोल नंबर और श्रेणीवार कटऑफ अंकों के लिए नोटिस देख सकते हैं।",
+    "intro_en": "The Rajasthan Public Service Commission (RPSC) has published the reserve list and cut-off marks for the Lecturer (Kayachikitsa) Competitive Examination 2025 under the Ayush Department. Document verification was conducted for candidates provisionally included in the consideration list released earlier. Based on service rules, one candidate has been declared successful in the reserve list with their merit rank. Candidates who appeared for this examination can now check the official reserve list and category-wise cut-off marks.",
+    "intro_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी) ने आयुष विभाग के अंतर्गत व्याख्याता (कायचिकित्सा) प्रतियोगी परीक्षा 2025 के लिए आरक्षित सूची और कटऑफ अंक जारी कर दिए हैं। पहले जारी की गई विचार सूची में अस्थायी रूप से शामिल उम्मीदवारों की पात्रता जांच और दस्तावेज सत्यापन कराया गया था। सेवा नियमों के आधार पर आरक्षित सूची में एक उम्मीदवार को उसके मेरिट क्रमांक के साथ सफल घोषित किया गया है। इस परीक्षा में शामिल हुए उम्मीदवार अब आधिकारिक आरक्षित सूची और श्रेणीवार कटऑफ अंक देख सकते हैं।",
     "last_date": null,
+    "mistakes_en": [],
+    "mistakes_hi": [],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": "2026-10-26",
     "official_site": "https://rpsc.rajasthan.gov.in/",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Posts",
-        "label_hi": "पद",
+        "label_en": "Post name",
+        "label_hi": "पद का नाम",
         "value_en": "Lecturer (Kayachikitsa)",
         "value_hi": "व्याख्याता (कायचिकित्सा)"
       },
       {
-        "label_en": "Total candidates in reserve list",
-        "label_hi": "आरक्षित सूची में कुल उम्मीदवार",
-        "value_en": "1",
-        "value_hi": "1"
+        "label_en": "Department",
+        "label_hi": "विभाग",
+        "value_en": "Ayush Department",
+        "value_hi": "आयुष विभाग"
       },
       {
-        "label_en": "Advertisement number",
-        "label_hi": "विज्ञापन संख्या",
-        "value_en": "Lecturer (Kayachikitsa) Examination-2025",
-        "value_hi": "व्याख्याता (कायचिकित्सा) प्रतियोगिता परीक्षा-2025"
+        "label_en": "Examination year",
+        "label_hi": "परीक्षा वर्ष",
+        "value_en": "2025",
+        "value_hi": "2025"
+      },
+      {
+        "label_en": "Result type",
+        "label_hi": "परिणाम प्रकार",
+        "value_en": "Reserve List and Cut Off Marks",
+        "value_hi": "आरक्षित सूची और कटऑफ अंक"
       }
     ],
+    "salary": [],
     "selection_en": [
-      "Written examination",
-      "Document verification",
-      "Reserve list preparation and recommendation"
+      "Competitive Examination",
+      "Consideration List and Document Verification",
+      "Reserve List Declaration"
     ],
     "selection_hi": [
-      "लिखित परीक्षा",
-      "दस्तावेज़ सत्यापन",
-      "आरक्षित सूची तैयारी और अभिशंषा"
+      "प्रतियोगी परीक्षा",
+      "विचार सूची और दस्तावेज सत्यापन",
+      "आरक्षित सूची घोषणा"
     ],
+    "share_card": {
+      "headline_en": "Reserve List & Cut Off",
+      "headline_hi": "आरक्षित सूची और कटऑफ",
+      "kind": "result",
+      "line_en": "Lecturer (Kayachikitsa)",
+      "line_hi": "व्याख्याता (कायचिकित्सा)",
+      "posts": 1
+    },
     "status_en": "Reserve list and cut-off marks declared",
     "status_hi": "आरक्षित सूची और कटऑफ अंक घोषित",
-    "summary_en": "RPSC has released the reserve list and cut-off marks for the Lecturer Kayachikitsa Examination 2025 under the Ayush Department. Candidates can check their roll number and cut-off details.",
-    "summary_hi": "आरपीएससी ने आयुष विभाग के अंतर्गत व्याख्याता कायचिकित्सा परीक्षा 2025 के लिए आरक्षित सूची और कटऑफ अंक जारी कर दिए हैं। उम्मीदवार अपना रोल नंबर और कटऑफ विवरण देख सकते हैं।",
+    "summary_en": "RPSC has released the reserve list and cut-off marks for the Lecturer Kayachikitsa Examination 2025 under the Ayush Department. Candidates included in the reserve list can check their roll number and merit rank. The recommended candidate's name will be forwarded for appointment upon requisition.",
+    "summary_hi": "आरपीएससी ने आयुष विभाग के अंतर्गत व्याख्याता कायचिकित्सा परीक्षा 2025 के लिए आरक्षित सूची और कटऑफ अंक जारी कर दिए हैं। आरक्षित सूची में शामिल उम्मीदवार अपना रोल नंबर और मेरिट क्रमांक देख सकते हैं। मांग प्राप्त होने पर अनुशंसित उम्मीदवार का नाम नियुक्ति के लिए भेजा जाएगा।",
     "vacancies": [
       {
-        "detail_en": "Reserve list candidate: 1",
+        "detail_en": "Reserve List Candidate: 1",
         "detail_hi": "आरक्षित सूची उम्मीदवार: 1",
         "post_en": "Lecturer (Kayachikitsa)",
         "post_hi": "व्याख्याता (कायचिकित्सा)",
         "total": "1"
       }
+    ],
+    "who_en": [
+      "Candidates who appeared for the RPSC Lecturer Kayachikitsa Exam 2025 and were part of the consideration list."
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जो आरपीएससी व्याख्याता कायचिकित्सा परीक्षा 2025 में शामिल हुए थे और विचार सूची का हिस्सा थे।"
     ]
   },
   "pdf": {

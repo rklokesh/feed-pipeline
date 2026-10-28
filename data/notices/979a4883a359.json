@@ -72,107 +72,181 @@
   "notice_date": "2026-10-27",
   "org": "SBI",
   "page": {
+    "after_en": [
+      "Candidates who appear for the psychometric test will be allowed to appear for Group Exercises and Personal Interview."
+    ],
+    "after_hi": [
+      "साइकोमेट्रिक टेस्ट में शामिल होने वाले उम्मीदवारों को ग्रुप एक्सरसाइज और पर्सनल इंटरव्यू के लिए उपस्थित होने की अनुमति दी जाएगी।"
+    ],
     "age": [],
     "apply_start": null,
     "apply_url": null,
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Check registered email and SMS for test link and credentials",
+      "Take the mock test on 28 Oct 2026",
+      "Verify system requirements prior to the exam date",
+      "Be ready at least 15 minutes before 1:00 PM on 31 Oct 2026"
+    ],
+    "checklist_hi": [
+      "टेस्ट लिंक और क्रेडेंशियल के लिए पंजीकृत ईमेल और एसएमएस की जाँच करें",
+      "28 अकतूबर 2026 को मॉक टेस्ट दें",
+      "परीक्षा की तारीख से पहले सिस्टम आवश्यकताओं को सत्यापित करें",
+      "31 अकतूबर 2026 को दोपहर 1:00 बजे से कम से कम 15 मिनट पहले तैयार रहें"
+    ],
     "conducted_by_en": "State Bank of India (SBI)",
     "conducted_by_hi": "भारतीय स्टेट बैंक (एसबीआई)",
     "dates": [
       {
-        "label_en": "Mock Test Date",
-        "label_hi": "मॉक टेस्ट की तिथि",
+        "label_en": "Mock test link accessible",
+        "label_hi": "मॉक टेस्ट लिंक उपलब्ध",
         "value_en": "28 Oct 2026 (10:00 AM to 05:00 PM)",
-        "value_hi": "28 अक्टूबर 2026 (सुबह 10:00 बजे से शाम 05:00 बजे तक)"
+        "value_hi": "28 अकतूबर 2026 (सुबह 10:00 बजे से शाम 05:00 बजे तक)"
       },
       {
-        "label_en": "Exam Date",
-        "label_hi": "परीक्षा की तिथि",
-        "value_en": "31 Oct 2026 (1:00 PM)",
-        "value_hi": "31 अक्टूबर 2026 (दोपहर 1:00 बजे)"
+        "label_en": "Psychometric test date",
+        "label_hi": "साइकोमेट्रिक टेस्ट की तिथि",
+        "value_en": "31 Oct 2026",
+        "value_hi": "31 अकतूबर 2026"
       }
+    ],
+    "documents_en": [
+      "Registered email account with credentials",
+      "Compatible device meeting system requirements for remote proctored test"
+    ],
+    "documents_hi": [
+      "क्रेडेंशियल के साथ पंजीकृत ईमेल खाता",
+      "रिमोट प्रॉक्टर्ड टेस्ट के लिए सिस्टम आवश्यकताओं को पूरा करने वाला संगत उपकरण"
     ],
     "eligibility": [],
     "exam_date": "2026-10-31",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is an online test conducted in remote proctored mode by the State Bank of India for candidates shortlisted in the Probationary Officer recruitment process. Appearing in this test is mandatory to qualify for the next stages of the selection process.",
+        "a_hi": "यह भारतीय स्टेट बैंक द्वारा प्रोबायेशनरी ऑफिसर भर्ती प्रक्रिया में शॉर्टलिस्ट किए गए उम्मीदवारों के लिए रिमोट प्रॉक्टर्ड मोड में आयोजित एक ऑनलाइन परीक्षा है। चयन प्रक्रिया के अगले चरणों के लिए अर्हता प्राप्त करने हेतु इस परीक्षा में शामिल होना अनिवार्य है।",
+        "q_en": "What is the SBI PO Psychometric Test?",
+        "q_hi": "एसबीआई पीओ साइकोमेट्रिक टेस्ट क्या है?"
+      }
+    ],
     "extra": [
       {
-        "label_en": "Mode of Exam",
-        "label_hi": "परीक्षा का तरीका",
-        "value_en": "Online Remote Proctored Mode (RPA)",
-        "value_hi": "ऑनलाइन रिमोट प्रॉक्टर्ड मोड (RPA)"
+        "label_en": "Test Mode",
+        "label_hi": "परीक्षा का मोड",
+        "value_en": "Online Remote Proctored (RPA) Mode",
+        "value_hi": "ऑनलाइन रिमोट प्रॉक्टर्ड (RPA) मोड"
+      },
+      {
+        "label_en": "Mandatory Requirement",
+        "label_hi": "अनिवार्य आवश्यकता",
+        "value_en": "Appearing in Psychometric Test is mandatory for Group Exercises & Personal Interview",
+        "value_hi": "ग्रुप एक्सरसाइज और पर्सनल इंटरव्यू के लिए साइकोमेट्रिक टेस्ट में शामिल होना अनिवार्य है"
       }
     ],
     "faq": [
       {
-        "a_en": "The psychometric test is scheduled for 31 Oct 2026 starting at 1:00 PM.",
-        "a_hi": "साइकोमेट्रिक टेस्ट 31 अक्टूबर 2026 को दोपहर 1:00 बजे से निर्धारित है।",
-        "q_en": "When is the SBI PO Psychometric Test 2026 scheduled?",
-        "q_hi": "एसबीआई पीओ साइकोमेट्रिक टेस्ट 2026 कब निर्धारित है?"
+        "a_en": "The test is scheduled for 31 Oct 2026 starting at 1:00 PM.",
+        "a_hi": "यह परीक्षा 31 अकतूबर 2026 को दोपहर 1:00 बजे शुरू होगी।",
+        "q_en": "When is the SBI PO Psychometric Test scheduled?",
+        "q_hi": "एसबीआई पीओ साइकोमेट्रिक टेस्ट कब निर्धारित है?"
       },
       {
-        "a_en": "The test link and user credentials have been sent separately to the candidates' registered email IDs.",
-        "a_hi": "टेस्ट लिंक और यूजर क्रेडेंशियल उम्मीदवारों की पंजीकृत ईमेल आईडी पर अलग से भेजे गए हैं।",
-        "q_en": "How do I get my test credentials and link?",
-        "q_hi": "मुझे अपना टेस्ट क्रेडेंशियल और लिंक कैसे मिलेगा?"
+        "a_en": "The test link and user credentials have been sent separately to your registered email ID and communicated via SMS.",
+        "a_hi": "टेस्ट लिंक और यूजर क्रेडेंशियल आपकी पंजीकृत ईमेल आईडी पर अलग से भेज दिए गए हैं और एसएमएस के माध्यम से सूचित किए गए हैं।",
+        "q_en": "How can I access the test link and credentials?",
+        "q_hi": "मैं टेस्ट लिंक और क्रेडेंशियल कैसे प्राप्त कर सकता हूँ?"
       },
       {
-        "a_en": "Yes, a mock test will be accessible on 28 Oct 2026 from 10:00 AM to 05:00 PM.",
-        "a_hi": "हाँ, मॉक टेस्ट 28 अक्टूबर 2026 को सुबह 10:00 बजे से शाम 05:00 बजे तक उपलब्ध रहेगा।",
-        "q_en": "Is there a mock test available?",
-        "q_hi": "क्या कोई मॉक टेस्ट उपलब्ध है?"
+        "a_en": "A mock test is scheduled on 28 Oct 2026 from 10:00 AM to 05:00 PM to familiarize candidates with the testing environment and interface.",
+        "a_hi": "उम्मीदवारों को परीक्षण वातावरण और इंटरफेस से परिचित कराने के लिए 28 अकतूबर 2026 को सुबह 10:00 बजे से शाम 05:00 बजे तक एक मॉक टेस्ट निर्धारित किया गया है।",
+        "q_en": "Is the mock test mandatory or optional?",
+        "q_hi": "क्या मॉक टेस्ट अनिवार्य है या वैकल्पिक?"
       },
       {
-        "a_en": "Yes, appearing in the psychometric test is mandatory. Only candidates who appear in it will be allowed for group exercises and personal interviews.",
-        "a_hi": "हाँ, साइकोमेट्रिक टेस्ट में शामिल होना अनिवार्य है। केवल इसमें शामिल होने वाले उम्मीदवारों को समूह अभ्यास और व्यक्तिगत साक्षात्कार के लिए अनुमति दी जाएगी।",
-        "q_en": "Is appearing in the Psychometric Test mandatory?",
+        "a_en": "The test will be conducted online in Remote Proctored (RPA) mode, allowing candidates to take the test from anywhere.",
+        "a_hi": "यह परीक्षा ऑनलाइन रिमोट प्रॉक्टर्ड (RPA) मोड में आयोजित की जाएगी, जिससे उम्मीदवार कहीं से भी परीक्षा दे सकेंगे।",
+        "q_en": "What is the mode of the SBI PO Psychometric Test?",
+        "q_hi": "एसबीआई पीओ साइकोमेट्रिक टेस्ट का मोड क्या है?"
+      },
+      {
+        "a_en": "Yes, appearing in the psychometric test is mandatory. Only candidates who appear for this test will be allowed to participate in Group Exercises and Personal Interview.",
+        "a_hi": "हाँ, साइकोमेट्रिक टेस्ट में शामिल होना अनिवार्य है। केवल इस परीक्षा में उपस्थित होने वाले उम्मीदवारों को ग्रुप एक्सरसाइज और पर्सनल इंटरव्यू में भाग लेने की अनुमति दी जाएगी।",
+        "q_en": "Is appearing in the psychometric test compulsory?",
         "q_hi": "क्या साइकोमेट्रिक टेस्ट में शामिल होना अनिवार्य है?"
+      },
+      {
+        "a_en": "This notice is associated with Advertisement No. CRPD/PO/2026-27/09.",
+        "a_hi": "यह नोटिस विज्ञापन संख्या CRPD/PO/2026-27/09 से संबंधित है।",
+        "q_en": "What advertisement number is this notice associated with?",
+        "q_hi": "यह नोटिस किस विज्ञापन संख्या से संबंधित है?"
       }
     ],
     "fees": [],
     "h1_en": "SBI Probationary Officer Psychometric Test Notice 2026",
     "h1_hi": "एसबीआई प्रोबायेशनरी ऑफिसर साइकोमेट्रिक टेस्ट नोटिस 2026",
     "how_en": [
-      "Check your registered email ID and SMS for test instructions and credentials.",
-      "Take the mock test on 28 Oct 2026 between 10:00 AM and 05:00 PM to familiarize yourself with the interface.",
-      "Ensure all system requirements are met and be ready at least 15 minutes before the test start time on 31 Oct 2026."
+      "Check your registered email ID and SMS for communication from SBI regarding the psychometric test.",
+      "Review the system requirements and instructions shared in the email.",
+      "Participate in the mock test on 28 Oct 2026 between 10:00 AM and 05:00 PM to familiarize yourself with the testing environment.",
+      "Ensure your setup is ready at least 15 minutes before 1:00 PM on 31 Oct 2026 and take the test using the provided credentials."
     ],
     "how_hi": [
-      "परीक्षण निर्देश और क्रेडेंशियल के लिए अपनी पंजीकृत ईमेल आईडी और एसएमएस की जाँच करें।",
-      "इंटरफ़ेस से परिचित होने के लिए 28 अक्टूबर 2026 को सुबह 10:00 बजे से शाम 05:00 बजे के बीच मॉक टेस्ट लें।",
-      "सुनिश्चित करें कि सभी सिस्टम आवश्यकताएँ पूरी हो गई हैं और 31 अक्टूबर 2026 को परीक्षा शुरू होने के समय से कम से कम 15 मिनट पहले तैयार रहें।"
+      "साइकोमेट्रिक टेस्ट के संबंध में एसबीआई के संदेश के लिए अपनी पंजीकृत ईमेल आईडी और एसएमएस की जाँच करें।",
+      "ईमेल में साझा की गई सिस्टम आवश्यकताओं और निर्देशों की समीक्षा करें।",
+      "परीक्षण वातावरण से परिचित होने के लिए 28 अकतूबर 2026 को सुबह 10:00 बजे से शाम 05:00 बजे के बीच मॉक टेस्ट में भाग लें।",
+      "31 अकतूबर 2026 को दोपहर 1:00 बजे से कम से कम 15 मिनट पहले अपनी व्यवस्था तैयार रखें और प्रदान किए गए क्रेडेंशियल का उपयोग करके परीक्षा दें।"
     ],
-    "intro_en": "The State Bank of India (SBI) has released an important notice regarding the online psychometric test in remote proctored mode for Probationary Officer recruitment under advertisement number CRPD/PO/2026-27/09. The test is scheduled for 31 Oct 2026. Shortlisted candidates must check their registered email and SMS for test credentials and system instructions.",
-    "intro_hi": "भारतीय स्टेट बैंक (एसबीआई) ने विज्ञापन संख्या CRPD/PO/2026-27/09 के तहत प्रोबायेशनरी ऑफिसर भर्ती के लिए रिमोट प्रॉक्टर्ड मोड में ऑनलाइन साइकोमेट्रिक टेस्ट के संबंध में एक महत्वपूर्ण नोटिस जारी किया है। परीक्षा 31 अक्टूबर 2026 को निर्धारित है। शॉर्टलिस्ट किए गए उम्मीदवारों को टेस्ट क्रेडेंशियल और सिस्टम निर्देशों के लिए अपना पंजीकृत ईमेल और एसएमएस देखना होगा।",
+    "intro_en": "The State Bank of India (SBI) has released an important notice regarding the online psychometric test in remote proctored mode for the recruitment of Probationary Officers under advertisement number CRPD/PO/2026-27/09. The psychometric test is scheduled to be conducted on 31 Oct 2026 starting at 1:00 PM. Shortlisted candidates can take the test from anywhere following the remote proctored guidelines. Detailed instructions, test links, and user credentials have been sent to the candidates' registered email IDs and via SMS. Candidates must note that appearing in this psychometric test is mandatory to qualify for the subsequent Group Exercises and Personal Interview rounds.",
+    "intro_hi": "भारतीय स्टेट बैंक (एसबीआई) ने विज्ञापन संख्या CRPD/PO/2026-27/09 के तहत प्रोबायेशनरी ऑफिसर के पद के लिए रिमोट प्रॉक्टर्ड मोड में ऑनलाइन साइकोमेट्रिक टेस्ट के संबंध में एक महत्वपूर्ण नोटिस जारी किया है। साइकोमेट्रिक टेस्ट 31 अकतूबर 2026 को दोपहर 1:00 बजे आयोजित किया जाना तय है। शॉर्टलिस्ट किए गए उम्मीदवार रिमोट प्रॉक्टर्ड दिशानिर्देशों का पालन करते हुए कहीं से भी परीक्षा दे सकते हैं। विस्तृत निर्देश, टेस्ट लिंक और यूजर क्रेडेंशियल उम्मीदवारों की पंजीकृत ईमेल आईडी पर और एसएमएस के माध्यम से भेज दिए गए हैं। उम्मीदवारों को ध्यान देना चाहिए कि बाद के ग्रुप एक्सरसाइज और पर्सनल इंटरव्यू राउंड के लिए अर्हता प्राप्त करने हेतु इस साइकोमेट्रिक टेस्ट में शामिल होना अनिवार्य है।",
     "last_date": null,
+    "mistakes_en": [
+      "Do not miss the mock test window on 28 Oct 2026.",
+      "Do not delay joining past the scheduled test start time; ensure setup is ready 15 minutes before the test."
+    ],
+    "mistakes_hi": [
+      "28 अकतूबर 2026 को मॉक टेस्ट विंडो न छोड़ें।",
+      "निर्धारित परीक्षा शुरू होने के समय के बाद शामिल होने में देरी न करें; सुनिश्चित करें कि परीक्षा से 15 मिनट पहले सेटअप तैयार है।"
+    ],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": "2026-10-27",
-    "official_site": "https://sbi.bank.in",
+    "official_site": "https://sbi.bank.in/web/careers/current-openings",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Posts",
+        "label_en": "Post",
         "label_hi": "पद",
-        "value_en": "Probationary Officer",
-        "value_hi": "प्रोबायेशनरी ऑफिसर"
+        "value_en": "Probationary Officer (PO)",
+        "value_hi": "प्रोबायेशनरी ऑफिसर (पीओ)"
       },
       {
-        "label_en": "Advertisement Number",
+        "label_en": "Advertisement number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "CRPD/PO/2026-27/09",
         "value_hi": "CRPD/PO/2026-27/09"
       },
       {
-        "label_en": "Mock Test Date",
-        "label_hi": "मॉक टेस्ट की तिथि",
-        "value_en": "28 Oct 2026",
-        "value_hi": "28 अक्टूबर 2026"
-      },
-      {
-        "label_en": "Exam Date",
+        "label_en": "Test date",
         "label_hi": "परीक्षा की तिथि",
         "value_en": "31 Oct 2026",
-        "value_hi": "31 अक्टूबर 2026"
+        "value_hi": "31 अकतूबर 2026"
+      },
+      {
+        "label_en": "Test start time",
+        "label_hi": "परीक्षा शुरू होने का समय",
+        "value_en": "1:00 PM",
+        "value_hi": "दोपहर 1:00 बजे"
+      },
+      {
+        "label_en": "Mock test date",
+        "label_hi": "मॉक टेस्ट की तिथि",
+        "value_en": "28 Oct 2026 (10:00 AM to 05:00 PM)",
+        "value_hi": "28 अकतूबर 2026 (सुबह 10:00 बजे से शाम 05:00 बजे तक)"
       }
     ],
+    "salary": [],
     "selection_en": [
       "Online Psychometric Test (Remote Proctored Mode)",
       "Group Exercises",
@@ -180,21 +254,35 @@
     ],
     "selection_hi": [
       "ऑनलाइन साइकोमेट्रिक टेस्ट (रिमोट प्रॉक्टर्ड मोड)",
-      "समूह अभ्यास",
-      "व्यक्तिगत साक्षात्कार"
+      "ग्रुप एक्सरसाइज",
+      "पर्सनल इंटरव्यू"
     ],
-    "status_en": "Psychometric test date announced, mock test on 28 Oct 2026",
-    "status_hi": "साइकोमेट्रिक टेस्ट की तिथि घोषित, मॉक टेस्ट 28 अक्टूबर 2026 को",
-    "summary_en": "State Bank of India has scheduled the online psychometric test in remote proctored mode for Probationary Officer recruitment on 31 Oct 2026. Shortlisted candidates should check their registered email for instructions, mock test details, and credentials.",
-    "summary_hi": "भारतीय स्टेट बैंक ने प्रोबायेशनरी ऑफिसर भर्ती के लिए रिमोट प्रॉक्टर्ड मोड में ऑनलाइन साइकोमेट्रिक टेस्ट 31 अक्टूबर 2026 को निर्धारित किया है। शॉर्टलिस्ट किए गए उम्मीदवार निर्देशों, मॉक टेस्ट विवरण और क्रेडेंशियल के लिए अपना पंजीकृत ईमेल देखें।",
+    "share_card": {
+      "headline_en": "Psychometric Test Notice",
+      "headline_hi": "साइकोमेट्रिक टेस्ट नोटिस",
+      "kind": "admit",
+      "line_en": "Probationary Officer",
+      "line_hi": "प्रोबायेशनरी ऑफिसर",
+      "posts": null
+    },
+    "status_en": "Psychometric test schedule and instructions released",
+    "status_hi": "साइकोमेट्रिक टेस्ट शेड्यूल और निर्देश जारी किए गए",
+    "summary_en": "State Bank of India has scheduled the online psychometric test in remote proctored mode for Probationary Officer recruitment on 31 Oct 2026. Shortlisted candidates should check their registered email for instructions, credentials, and mock test details.",
+    "summary_hi": "भारतीय स्टेट बैंक ने प्रोबायेशनरी ऑफिसर भर्ती के लिए रिमोट प्रॉक्टर्ड मोड में ऑनलाइन साइकोमेट्रिक टेस्ट 31 अकतूबर 2026 को निर्धारित किया है। शॉर्टलिस्ट किए गए उम्मीदवार निर्देशों, क्रेडेंशियल और मॉक टेस्ट विवरण के लिए अपना पंजीकृत ईमेल देखें।",
     "vacancies": [
       {
-        "detail_en": "Refer to original recruitment notification",
-        "detail_hi": "मूल भर्ती अधिसूचना देखें",
+        "detail_en": "As per advertisement CRPD/PO/2026-27/09",
+        "detail_hi": "विज्ञापन CRPD/PO/2026-27/09 के अनुसार",
         "post_en": "Probationary Officer",
         "post_hi": "प्रोबायेशनरी ऑफिसर",
-        "total": "Not Specified"
+        "total": null
       }
+    ],
+    "who_en": [
+      "Shortlisted candidates for SBI Probationary Officer recruitment under advertisement CRPD/PO/2026-27/09."
+    ],
+    "who_hi": [
+      "विज्ञापन CRPD/PO/2026-27/09 के तहत एसबीआई प्रोबायेशनरी ऑफिसर भर्ती के लिए शॉर्टलिस्ट किए गए उम्मीदवार।"
     ]
   },
   "pdf": {

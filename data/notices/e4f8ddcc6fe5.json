@@ -1,6 +1,23 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://www.indiapost.gov.in/vacancies",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Staff Car Driver (Ordinary Grade)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "India Post has invited applications for filling up 11 Staff Car Driver posts on a deputation/absorption basis. Eligible candidates should check the official notification for details.",
+    "summary_hi": "भारतीय डाक ने प्रतिनियुक्ति/समावेशन के आधार पर स्टाफ कार चालक के 11 पदों को भरने के लिए आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार विवरण के लिए आधिकारिक अधिसूचना देखें।",
+    "title_en": "India Post Staff Car Driver Recruitment 2026",
+    "title_hi": "भारतीय डाक स्टाफ कार चालक भर्ती 2026",
+    "type": "Job",
+    "vacancies": 11
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -98,16 +115,302 @@
   },
   "first_seen": "2026-10-28T02:27:42+00:00",
   "id": "e4f8ddcc6fe5",
+  "issue": 128,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-08-01",
   "org": "India Post",
+  "page": {
+    "after_en": [
+      "Submitted applications will be scrutinized, and eligible candidates will be called for a driving test and trade test."
+    ],
+    "after_hi": [
+      "प्रस्तुत आवेदनों की संवीक्षा की जाएगी, और योग्य उम्मीदवारों को ड्राइविंग परीक्षण और ट्रेड परीक्षण के लिए बुलाया जाएगा।"
+    ],
+    "age": [
+      {
+        "label_en": "Maximum age limit",
+        "label_hi": "अधिकतम आयु सीमा",
+        "value_en": "56 years",
+        "value_hi": "56 वर्ष"
+      }
+    ],
+    "apply_start": null,
+    "apply_url": "https://www.indiapost.gov.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Verify eligibility criteria including 10th pass, driving license, and experience.",
+      "Fill out Annexure-I completely and get Annexure-II/certificates attested.",
+      "Dispatch through Speed Post well before the 60-day deadline."
+    ],
+    "checklist_hi": [
+      "10वीं पास, ड्राइविंग लाइसेंस और अनुभव सहित पात्रता मानदंडों की जाँच करें।",
+      "अनुलग्नक-I को पूरी तरह भरें और अनुलग्नक-II/प्रमाण पत्र सत्यापित कराएं।",
+      "60 दिन की समय सीमा से पहले स्पीड पोस्ट के माध्यम से भेजें।"
+    ],
+    "conducted_by_en": "India Post (Department of Posts)",
+    "conducted_by_hi": "भारतीय डाक (डाक विभाग)",
+    "dates": [
+      {
+        "label_en": "Notification date",
+        "label_hi": "अधिसूचना तिथि",
+        "value_en": "01 Aug 2026",
+        "value_hi": "01 अगस्त 2026"
+      },
+      {
+        "label_en": "Last date to apply",
+        "label_hi": "आवेदन की अंतिम तिथि",
+        "value_en": "60 days from Employment News publication",
+        "value_hi": "रोजगार समाचार में प्रकाशन से 60 दिन"
+      }
+    ],
+    "documents_en": [
+      "Integrity certificate",
+      "List of major/minor penalties imposed during last 10 years (or 'Nil' certificate)",
+      "Vigilance clearance certificate",
+      "Attested copies of APAR for last 5 years (2020-21 to 2024-25)",
+      "Experience certificate for 3 years certified by Gazetted Officer",
+      "Valid LMV and HMV driving license certified by Gazetted Officer",
+      "10th standard certificate certified by Gazetted Officer"
+    ],
+    "documents_hi": [
+      "सद्भावना प्रमाण पत्र",
+      "पिछले दस वर्षों के दौरान लगाए गए बड़े/छोटे दंडों की सूची (या 'शून्य' प्रमाण पत्र)",
+      "सतर्कता मंजूरी प्रमाण पत्र",
+      "पिछले पांच वर्षों (2020-21 से 2024-25) के एपीएआर की सत्यापित प्रतियां",
+      "राजपत्रित अधिकारी द्वारा सत्यापित तीन साल के अनुभव का प्रमाण पत्र",
+      "राजपत्रित अधिकारी द्वारा सत्यापित एलएमवी और एचएमवी ड्राइविंग लाइसेंस",
+      "राजपत्रित अधिकारी द्वारा प्रमाणित 10वीं कक्षा का प्रमाण पत्र"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Education",
+        "label_hi": "शिक्षा",
+        "value_en": "10th pass from a recognized board or institute.",
+        "value_hi": "किसी मान्यता प्राप्त बोर्ड या संस्थान से 10वीं पास।"
+      },
+      {
+        "label_en": "Driving License",
+        "label_hi": "ड्राइविंग लाइसेंस",
+        "value_en": "Valid driving license for light (LMV) and heavy (HMV) motor vehicles.",
+        "value_hi": "हल्के और भारी मोटर वाहन चलाने के लिए वैध ड्राइविंग लाइसेंस।"
+      },
+      {
+        "label_en": "Experience",
+        "label_hi": "अनुभव",
+        "value_en": "At least 3 years of experience in driving light and heavy motor vehicles.",
+        "value_hi": "कम से कम तीन साल का हल्के और भारी मोटर वाहन चलाने का अनुभव।"
+      },
+      {
+        "label_en": "Knowledge",
+        "label_hi": "ज्ञान",
+        "value_en": "Knowledge of motor mechanism (candidate should be able to remove minor defects in vehicles).",
+        "value_hi": "मोटर तंत्र का ज्ञान (उम्मीदवार को वाहनों में उत्पन्न होने वाले छोटे-मोटे दोषों को दूर करने में सक्षम होना चाहिए)।"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a recruitment notification by India Post to fill Staff Car Driver (Ordinary Grade) posts on a deputation/absorption basis from eligible regular government employees.",
+        "a_hi": "यह योग्य नियमित सरकारी कर्मचारियों से प्रतिनियुक्ति/समावेशन के आधार पर स्टाफ कार चालक (साधारण ग्रेड) के पदों को भरने के लिए भारतीय डाक की एक भर्ती अधिसूचना है।",
+        "q_en": "What is the Staff Car Driver recruitment at India Post?",
+        "q_hi": "भारतीय डाक में स्टाफ कार चालक भर्ती क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Pay Scale",
+        "label_hi": "वेतनमान",
+        "value_en": "Pay Matrix Level-2 (₹19,900–63,200) under 7th CPC",
+        "value_hi": "सातवें वेतन आयोग के अनुसार वेतन मैट्रिक्स लेवल-2 (₹19,900–63,200)"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "A total of 11 vacancies are announced (10 for MMS Bengaluru and 1 for MMS Sub Depot Mysuru).",
+        "a_hi": "कुल 11 रिक्तियां घोषित की गई हैं (10 एमएमएस बेंगलूरु के लिए और 1 मैसूर के लिए)।",
+        "q_en": "How many vacancies are announced for India Post Staff Car Driver Recruitment 2026?",
+        "q_hi": "भारतीय डाक स्टाफ कार चालक भर्ती 2026 के लिए कुल कितनी रिक्तियां घोषित की गई हैं?"
+      },
+      {
+        "a_en": "Applications must be sent within 60 days from the date of publication of the advertisement in Employment News.",
+        "a_hi": "रोजगार समाचार में विज्ञापन के प्रकाशन की तारीख से 60 दिनों के भीतर आवेदन भेजे जाने चाहिए।",
+        "q_en": "What is the last date to apply?",
+        "q_hi": "आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "The maximum age limit for appointment by deputation/absorption shall not exceed 56 years as on the closing date of receipt of applications.",
+        "a_hi": "प्रतिनियुक्ति/समावेशन द्वारा नियुक्ति के लिए अधिकतम आयु सीमा आवेदन प्राप्त होने की अंतिम तिथि को 56 वर्ष से अधिक नहीं होनी चाहिए।",
+        "q_en": "What is the age limit for this recruitment?",
+        "q_hi": "इस भर्ती के लिए आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "Candidates must have passed 10th standard from a recognized board or institute, along with a valid driving license for light and heavy motor vehicles.",
+        "a_hi": "उम्मीदवारों को किसी मान्यता प्राप्त बोर्ड या संस्थान से 10वीं कक्षा उत्तीर्ण होना चाहिए, साथ ही हल्के और भारी मोटर वाहनों के लिए वैध ड्राइविंग लाइसेंस होना चाहिए।",
+        "q_en": "What is the educational qualification required?",
+        "q_hi": "आवश्यक शैक्षिक योग्यता क्या है?"
+      },
+      {
+        "a_en": "Selected candidates will get a salary in Pay Matrix Level-2 (₹19,900–63,200) as per the 7th CPC.",
+        "a_hi": "चयनित उम्मीदवारों को 7वें वेतन आयोग के अनुसार पे मैट्रिक्स लेवल-2 (₹19,900–63,200) में वेतन मिलेगा।",
+        "q_en": "What is the pay scale for Staff Car Driver posts?",
+        "q_hi": "स्टाफ कार चालक पदों के लिए वेतनमान क्या है?"
+      },
+      {
+        "a_en": "Applications must be sent through proper channel via Speed Post only to the Manager, Mail Motor Service, Bengaluru.",
+        "a_hi": "आवेदन उचित माध्यम से केवल स्पीड पोस्ट द्वारा प्रबंधक, डाक वाहन सेवा, बेंगलूरु को भेजे जाने चाहिए।",
+        "q_en": "How should applications be sent?",
+        "q_hi": "आवेदन कैसे भेजे जाने चाहिए?"
+      },
+      {
+        "a_en": "Selection is based on a driving test and trade test as per prescribed pattern/syllabus.",
+        "a_hi": "चयन निर्धारित पैटर्न/पाठ्यक्रम के अनुसार ड्राइविंग परीक्षण और ट्रेड परीक्षण के आधार पर होता है।",
+        "q_en": "What is the selection process?",
+        "q_hi": "चयन प्रक्रिया क्या है?"
+      },
+      {
+        "a_en": "The application proforma and notification can be downloaded from the official website www.indiapost.gov.in.",
+        "a_hi": "आवेदन प्रोफॉर्मा और अधिसूचना आधिकारिक वेबसाइट www.indiapost.gov.in से डाउनलोड की जा सकती है।",
+        "q_en": "Where can the application proforma be downloaded?",
+        "q_hi": "आवेदन प्रोफॉर्मा कहाँ से डाउनलोड किया जा सकता है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "India Post Staff Car Driver Recruitment 2026",
+    "h1_hi": "भारतीय डाक स्टाफ कार चालक भर्ती 2026",
+    "how_en": [
+      "Check eligibility and download the application proforma from www.indiapost.gov.in.",
+      "Fill out the application in the prescribed proforma (Annexure-I) in duplicate.",
+      "Attach required documents certified by a Gazetted Officer including educational certificate, driving license, and experience certificate.",
+      "Send the application through proper channel via Speed Post only to the Manager, Mail Motor Service, No. 4, Basaveshwara Road, Vasanthnagar, Bengaluru - 560001 within 60 days."
+    ],
+    "how_hi": [
+      "पात्रता की जाँच करें और www.indiapost.gov.in से आवेदन प्रोफॉर्मा डाउनलोड करें।",
+      "निर्धारित प्रोफॉर्मा (अनुलग्नक-I) में दो प्रतियों में आवेदन भरें।",
+      "शैक्षिक प्रमाण पत्र, ड्राइविंग लाइसेंस और अनुभव प्रमाण पत्र सहित राजपत्रित अधिकारी द्वारा सत्यापित आवश्यक दस्तावेज संलग्न करें।",
+      "आवेदन को उचित माध्यम से केवल स्पीड पोस्ट द्वारा प्रबंधक, डाक वाहन सेवा, नंबर 4, बसवेश्वर रोड, वसंतनगर, बेंगलूरु - 560001 को 60 दिनों के भीतर भेजें।"
+    ],
+    "intro_en": "India Post, Office of the Manager, Mail Motor Service, Bengaluru has released a notification for filling up 11 vacancies of Staff Car Driver (Ordinary Grade) on a deputation/absorption basis. The posts belong to General Central Services, Group 'C', Non-Gazetted, Non-Ministerial in Pay Level-2. Eligible and willing regular central government employees can submit their applications in the prescribed proforma through proper channel within 60 days of publication in Employment News. Applicants should ensure they meet all eligibility conditions including a valid driving license and required experience.",
+    "intro_hi": "भारतीय डाक, प्रबंधक का कार्यालय, डाक वाहन सेवा, बेंगलूरु ने प्रतिनियुक्ति/समावेशन के आधार पर स्टाफ कार चालक (साधारण ग्रेड) के 11 पदों को भरने के लिए अधिसूचना जारी की है। ये पद सामान्य केंद्रीय सेवाएं, ग्रुप 'सी', गैर-राजपत्रित, गैर-मंत्रिस्तरीय वेतन मैट्रिक्स लेवल-2 के अंतर्गत हैं। योग्य और इच्छुक नियमित केंद्रीय सरकारी कर्मचारी रोजगार समाचार में प्रकाशन के 60 दिनों के भीतर निर्धारित प्रोफॉर्मा में उचित माध्यम से अपने आवेदन भेज सकते हैं। आवेदकों को सुनिश्चित करना चाहिए कि वे वैध ड्राइविंग लाइसेंस और आवश्यक अनुभव सहित सभी पात्रता शर्तों को पूरा करते हैं।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not send applications by ordinary post or courier; use Speed Post only.",
+      "Ensure applications are sent through proper channel with all required enclosures attested by a Gazetted Officer."
+    ],
+    "mistakes_hi": [
+      "साधारण डाक या कूरियर से आवेदन न भेजें; केवल स्पीड पोस्ट का उपयोग करें।",
+      "सुनिश्चित करें कि आवेदन उचित माध्यम से और राजपत्रित अधिकारी द्वारा सत्यापित सभी आवश्यक संलग्नकों के साथ भेजे जाएं।"
+    ],
+    "not_en": [
+      "Candidates who apply without proper channel or without required certificates and documents will not be considered."
+    ],
+    "not_hi": [
+      "जो उम्मीदवार उचित माध्यम के बिना या आवश्यक प्रमाण पत्रों और दस्तावेजों के बिना आवेदन करते हैं, उनके आवेदन पर विचार नहीं किया जाएगा।"
+    ],
+    "notice_date": "2026-08-01",
+    "official_site": "https://www.indiapost.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Staff Car Driver (Ordinary Grade)",
+        "value_hi": "स्टाफ कार चालक [साधारण ग्रेड]"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "11",
+        "value_hi": "11"
+      },
+      {
+        "label_en": "Last date to apply",
+        "label_hi": "आवेदन की अंतिम तिथि",
+        "value_en": "60 days from publication",
+        "value_hi": "प्रकाशन से 60 दिन"
+      },
+      {
+        "label_en": "Educational qualification",
+        "label_hi": "शैक्षिक योग्यता",
+        "value_en": "10th pass with valid LMV & HMV driving license",
+        "value_hi": "10वीं पास और हल्के व भारी मोटर वाहन का वैध ड्राइविंग लाइसेंस"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "Maximum 56 years",
+        "value_hi": "अधिकतम 56 वर्ष"
+      },
+      {
+        "label_en": "Selection process",
+        "label_hi": "चयन प्रक्रिया",
+        "value_en": "Driving Test & Trade Test",
+        "value_hi": "ड्राइविंग परीक्षण एवं ट्रेड परीक्षण"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "No.B-9/XI/Rect of Dvrs/DP/Dlgs/2025",
+        "value_hi": "No.B-9/XI/Rect of Dvrs/DP/Dlgs/2025"
+      }
+    ],
+    "salary": [
+      {
+        "label_en": "Pay Scale",
+        "label_hi": "वेतनमान",
+        "value_en": "Level 2 (₹19,900–63,200)",
+        "value_hi": "लेवल 2 (₹19,900–63,200)"
+      }
+    ],
+    "selection_en": [
+      "Driving Test",
+      "Trade Test"
+    ],
+    "selection_hi": [
+      "ड्राइविंग परीक्षण",
+      "ट्रेड परीक्षण"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Staff Car Driver",
+      "line_hi": "स्टाफ कार चालक",
+      "posts": 11
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "India Post has invited applications to fill 11 Staff Car Driver (Ordinary Grade) posts on a deputation/absorption basis. Eligible regular government employees can apply through proper channels within 60 days of advertisement publication. Read the notification for complete details.",
+    "summary_hi": "भारतीय डाक ने प्रतिनियुक्ति/समावेशन के आधार पर स्टाफ कार चालक (साधारण ग्रेड) के 11 पदों को भरने के लिए आवेदन आमंत्रित किए हैं। योग्य नियमित सरकारी कर्मचारी विज्ञापन प्रकाशन के 60 दिनों के भीतर उचित माध्यम से आवेदन कर सकते हैं। पूरी जानकारी के लिए अधिसूचना पढ़ें।",
+    "vacancies": [
+      {
+        "detail_en": "MMS Bengaluru: 10, MMS Sub Depot Mysuru: 01",
+        "detail_hi": "एमएमएस, बेंगलूरु: 10, मैसूर: 01",
+        "post_en": "Staff Car Driver (Ordinary Grade)",
+        "post_hi": "स्टाफ कार चालक (साधारण ग्रेड)",
+        "total": "11"
+      }
+    ],
+    "who_en": [
+      "Regular Dispatch Riders (Group 'C') and MTS (Group 'C') in Pay Level-1 of Department of Posts or other Central Government Ministries and Armed Forces personnel."
+    ],
+    "who_hi": [
+      "डाक विभाग या अन्य केंद्रीय सरकारी मंत्रालयों के नियमित डिस्पैच राइडर्स (ग्रुप 'सी') और एमटीएस (ग्रुप 'सी') जो पे मैट्रिक्स लेवल-1 में हैं और सशस्त्र बल कर्मी।"
+    ]
+  },
   "pdf": {
     "bytes": 1081366,
     "pages": 6,
     "sha256": "1c199fcff7692b9b85a1e60a02e50330deb3ce8b6d9b0ce46d24ee9422015fd6",
     "text_kind": "text"
   },
+  "published_at": "2026-10-28T02:33:55Z",
+  "slug": "india-post-staff-car-driver-recruitment-2026",
   "source_id": "indiapost-vacancies",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Notification for filling up of Drivers (Ordinary Grade) through deputation /absorption basis on 01.08.2026",
   "url": "https://www.indiapost.gov.in/api/documents/file/103pgjk0mj9n00heh09v82063nq0007d0sjth3igcr04nr70fiaj0eiq939zwj"
 }

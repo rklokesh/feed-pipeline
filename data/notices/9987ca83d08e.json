@@ -11,8 +11,8 @@
     "skip_reason": "",
     "summary_en": "National Testing Agency has issued a corrigendum with amendments and clarifications regarding the Information Bulletin for UGC-NET December 2026 Examination. Candidates should review the revised details before applying.",
     "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने यूजीसी-नेट दिसंबर 2026 परीक्षा के सूचना बुलेटिन के संबंध में संशोधनों और स्पष्टीकरणों के साथ एक शुद्धिपत्र जारी किया है। उम्मीदवारों को आवेदन करने से पहले संशोधित विवरण देख लेना चाहिए।",
-    "title_en": "UGC-NET December 2026 Examination Corrigendum",
-    "title_hi": "यूजीसी-नेट दिसंबर 2026 परीक्षा शुद्धिपत्र",
+    "title_en": "UGC-NET December 2026 Examination Corrigendum Released",
+    "title_hi": "यूजीसी-नेट दिसंबर 2026 परीक्षा शुद्धिपत्र जारी",
     "type": "Job",
     "vacancies": null
   },
@@ -39,60 +39,121 @@
   "notice_date": "2026-10-16",
   "org": "NTA",
   "page": {
+    "after_en": [
+      "Release of city intimation slip",
+      "Download of admit card",
+      "Appearance in the computer-based test examination"
+    ],
+    "after_hi": [
+      "शहर सूचना पर्ची जारी होना",
+      "प्रवेश पत्र डाउनलोड करना",
+      "कंप्यूटर आधारित परीक्षा में उपस्थित होना"
+    ],
     "age": [],
     "apply_start": null,
     "apply_url": "https://nta.ac.in",
+    "changes": [
+      {
+        "new_en": "14-18 December 2026 and 21 December 2026; subject-wise schedule separately",
+        "new_hi": "14-18 दिसंबर 2026 और 21 दिसंबर 2026; विषयवार अनुसूची अलग से",
+        "old_en": "14-19 December 2026; buffer dates 20-21 December 2026",
+        "old_hi": "14-19 दिसंबर 2026; बफर तिथियां 20-21 दिसंबर 2026",
+        "what_en": "Examination dates",
+        "what_hi": "परीक्षा तिथियां"
+      },
+      {
+        "new_en": "City intimation slip from 23 November 2026; Admit-card from 7 December 2026",
+        "new_hi": "शहर सूचना पर्ची 23 नवंबर 2026 से; प्रवेश पत्र 7 दिसंबर 2026 से",
+        "old_en": "Both dates: To be Intimated later",
+        "old_hi": "दोनों तिथियां: बाद में सूचित किया जाएगा",
+        "what_en": "City intimation slip & Admit card dates",
+        "what_hi": "शहर सूचना पर्ची और प्रवेश पत्र की तिथियां"
+      },
+      {
+        "new_en": "Pen to be provided at centre; candidates need not bring a pen",
+        "new_hi": "केंद्र पर पेन प्रदान किया जाएगा; उम्मीदवारों को पेन लाने की आवश्यकता नहीं है",
+        "old_en": "Barred-items section lists pen",
+        "old_hi": "वर्जित-वस्तुएं अनुभाग में पेन सूचीबद्ध था",
+        "what_en": "Ball-point pen instruction",
+        "what_hi": "बॉल-पॉइंट पेन निर्देश"
+      }
+    ],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Read the corrigendum and comparative statement thoroughly",
+      "Note the revised exam dates",
+      "Keep track of city intimation slip and admit card release dates"
+    ],
+    "checklist_hi": [
+      "शुद्धिपत्र और तुलनात्मक विवरण को अच्छी तरह से पढ़ें",
+      "संशोधित परीक्षा तिथियों को नोट करें",
+      "शहर सूचना पर्ची और प्रवेश पत्र जारी होने की तिथियों पर नज़र रखें"
+    ],
     "conducted_by_en": "National Testing Agency (NTA)",
     "conducted_by_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए)",
     "dates": [
       {
         "label_en": "Notice date",
-        "label_hi": "सूचना तिथि",
-        "value_en": "16 October 2026",
+        "label_hi": "नोटिस तिथि",
+        "value_en": "16 Oct 2026",
         "value_hi": "16 अक्टूबर 2026"
-      },
-      {
-        "label_en": "City intimation slip release",
-        "label_hi": "शहर सूचना पर्ची जारी",
-        "value_en": "23 November 2026",
-        "value_hi": "23 नवंबर 2026"
-      },
-      {
-        "label_en": "Admit card download starts",
-        "label_hi": "प्रवेश पत्र डाउनलोड शुरू",
-        "value_en": "07 December 2026",
-        "value_hi": "07 दिसंबर 2026"
       },
       {
         "label_en": "Exam dates",
         "label_hi": "परीक्षा तिथियां",
-        "value_en": "14-18 December 2026 and 21 December 2026",
+        "value_en": "14–18 Dec 2026 and 21 Dec 2026",
         "value_hi": "14-18 दिसंबर 2026 और 21 दिसंबर 2026"
+      },
+      {
+        "label_en": "City intimation slip available",
+        "label_hi": "शहर सूचना पर्ची उपलब्ध",
+        "value_en": "23 Nov 2026",
+        "value_hi": "23 नवंबर 2026"
+      },
+      {
+        "label_en": "Admit card download",
+        "label_hi": "प्रवेश पत्र डाउनलोड",
+        "value_en": "07 Dec 2026",
+        "value_hi": "07 दिसंबर 2026"
       }
+    ],
+    "documents_en": [
+      "UDID Certificate / Disability Certificate for PwD candidates as applicable"
+    ],
+    "documents_hi": [
+      "दिव्यांग उम्मीदवारों के लिए लागू यूडीआईडी प्रमाण पत्र / विकलांगता प्रमाण पत्र"
     ],
     "eligibility": [],
     "exam_date": "2026-12-19",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is an official notice issued by the National Testing Agency outlining amendments, corrections, and clarifications regarding examination dates, admit card downloads, evaluation rules, and PwD certificates for the UGC-NET December 2026 examination.",
+        "a_hi": "यह राष्ट्रीय परीक्षा एजेंसी द्वारा जारी एक आधिकारिक नोटिस है जो यूजीसी-नेट दिसंबर 2026 परीक्षा के लिए परीक्षा तिथियों, प्रवेश पत्र डाउनलोड, मूल्यांकन नियमों और दिव्यांग प्रमाण पत्र के संबंध में संशोधनों, सुधारों और स्पष्टीकरणों की रूपरेखा तैयार करता है।",
+        "q_en": "What is the UGC-NET December 2026 Corrigendum?",
+        "q_hi": "यूजीसी-नेट दिसंबर 2026 शुद्धिपत्र क्या है?"
+      }
+    ],
     "extra": [
       {
         "label_en": "Pen provision",
-        "label_hi": "पेन प्रावधान",
-        "value_en": "Pen to be provided at the centre; candidates need not bring a pen.",
-        "value_hi": "केंद्र पर पेन उपलब्ध कराया जाएगा; उम्मीदवारों को पेन लाने की आवश्यकता नहीं है।"
+        "label_hi": "पेन का प्रावधान",
+        "value_en": "Pen to be provided at centre; candidates need not bring a pen",
+        "value_hi": "केंद्र पर पेन प्रदान किया जाएगा; उम्मीदवारों को पेन लाने की आवश्यकता नहीं है"
       }
     ],
     "faq": [
       {
-        "a_en": "The examination is scheduled from 14 to 18 December 2026 and on 21 December 2026.",
-        "a_hi": "परीक्षा 14 से 18 दिसंबर 2026 और 21 दिसंबर 2026 को निर्धारित है।",
-        "q_en": "When is the UGC-NET December 2026 Examination scheduled?",
+        "a_en": "The examination is scheduled to be held from 14 to 18 December 2026 and on 21 December 2026.",
+        "a_hi": "परीक्षा 14 से 18 दिसंबर 2026 और 21 दिसंबर 2026 तक आयोजित होने निर्धारित है।",
+        "q_en": "When is the UGC-NET December 2026 examination scheduled?",
         "q_hi": "यूजीसी-नेट दिसंबर 2026 परीक्षा कब निर्धारित है?"
       },
       {
-        "a_en": "The exam city intimation slip will be available from 23 November 2026.",
-        "a_hi": "परीक्षा शहर की सूचना पर्ची 23 नवंबर 2026 से उपलब्ध होगी।",
+        "a_en": "The city intimation slip will be available from 23 November 2026.",
+        "a_hi": "शहर सूचना पर्ची 23 नवंबर 2026 से उपलब्ध होगी।",
         "q_en": "When will the city intimation slip be available?",
-        "q_hi": "शहर की सूचना पर्ची कब उपलब्ध होगी?"
+        "q_hi": "शहर सूचना पर्ची कब उपलब्ध होगी?"
       },
       {
         "a_en": "Admit cards can be downloaded starting from 7 December 2026.",
@@ -101,69 +162,113 @@
         "q_hi": "उम्मीदवार अपने प्रवेश पत्र कब डाउनलोड कर सकते हैं?"
       },
       {
-        "a_en": "No, pens will be provided at the exam centre.",
-        "a_hi": "नहीं, परीक्षा केंद्र पर पेन उपलब्ध कराया जाएगा।",
+        "a_en": "No, a pen will be provided at the centre, and candidates need not bring a pen.",
+        "a_hi": "नहीं, केंद्र पर पेन प्रदान किया जाएगा, और उम्मीदवारों को पेन लाने की आवश्यकता नहीं है।",
         "q_en": "Do candidates need to bring a pen to the exam centre?",
         "q_hi": "क्या उम्मीदवारों को परीक्षा केंद्र पर पेन लाना होगा?"
+      },
+      {
+        "a_en": "Candidates can check updates on the official websites nta.ac.in and ugenet.nta.ac.in.",
+        "a_hi": "उम्मीदवार आधिकारिक वेबसाइट nta.ac.in और ugenet.nta.ac.in पर अपडेट देख सकते हैं।",
+        "q_en": "What is the official website to check updates for UGC-NET December 2026?",
+        "q_hi": "यूजीसी-नेट दिसंबर 2026 के लिए अपडेट देखने के लिए आधिकारिक वेबसाइट कौन सी है?"
       }
     ],
     "fees": [],
-    "h1_en": "UGC-NET December 2026 Examination Corrigendum",
-    "h1_hi": "यूजीसी-नेट दिसंबर 2026 परीक्षा शुद्धिपत्र",
+    "h1_en": "UGC-NET December 2026 Examination Corrigendum Released",
+    "h1_hi": "यूजीसी-नेट दिसंबर 2026 परीक्षा शुद्धिपत्र जारी",
     "how_en": [
       "Visit the official website of NTA or UGC-NET.",
-      "Read the Consolidated Comparative Statement and Updated Information Bulletin.",
-      "Download the city intimation slip and admit card when available."
+      "Read the updated information bulletin and comparative statement carefully.",
+      "Download city intimation slip and admit card when available."
     ],
     "how_hi": [
       "एनटीए या यूजीसी-नेट की आधिकारिक वेबसाइट पर जाएं।",
-      "समेकित तुलनात्मक विवरण और अद्यतन सूचना बुलेटिन पढ़ें।",
-      "उपलब्ध होने पर शहर की सूचना पर्ची और प्रवेश पत्र डाउनलोड करें।"
+      "अद्यतन सूचना बुलेटिन और तुलनात्मक विवरण को ध्यान से पढ़ें।",
+      "उपलब्ध होने पर शहर सूचना पर्ची और प्रवेश पत्र डाउनलोड करें।"
     ],
-    "intro_en": "The National Testing Agency has issued a public notice corrigendum for the UGC-NET December 2026 Examination. This notice provides important amendments, corrections, and clarifications regarding examination dates, city intimation, admit card downloading, and certificate requirements. Candidates appearing for the Assistant Professor and Junior Research Fellowship examination are advised to read the updated information bulletin.",
-    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी ने यूजीसी-नेट दिसंबर 2026 परीक्षा के लिए एक सार्वजनिक सूचना शुद्धिपत्र जारी किया है। यह सूचना परीक्षा तिथियों, शहर की सूचना, प्रवेश पत्र डाउनलोड और प्रमाण पत्र आवश्यकताओं के संबंध में महत्वपूर्ण संशोधन, सुधार और स्पष्टीकरण प्रदान करती है। सहायक प्रोफेसर और जूनियर रिसर्च फेलोशिप परीक्षा में शामिल होने वाले उम्मीदवारों को सलाह दी जाती है कि वे अद्यतन सूचना बुलेटिन पढ़ें।",
+    "intro_en": "The National Testing Agency (NTA) has reviewed the Information Bulletin issued for the UGC-NET December 2026 Examination and has made certain amendments, corrections, and clarifications. A consolidated comparative statement is issued to ensure greater clarity and transparency for candidates appearing for Assistant Professor and Junior Research Fellowship posts. Candidates must carefully go through the updated information bulletin and comparative statement before filling out their application forms and appearing in the examination. The examination is scheduled to be held between 14 to 18 December 2026 and on 21 December 2026. All candidates should regularly visit the official NTA website for the latest updates.",
+    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने यूजीसी-नेट दिसंबर 2026 परीक्षा के लिए जारी सूचना बुलेटिन की समीक्षा की है और कुछ संशोधन, सुधार और स्पष्टीकरण किए हैं। सहायक प्रोफेसर और कनिष्ठ अनुसंधान फेलोशिप पदों के लिए आवेदन करने वाले उम्मीदवारों के लिए अधिक स्पष्टता और पारदर्शित सुनिश्चित करने हेतु एक समेकित तुलनात्मक विवरण जारी किया गया है। उम्मीदवारों को अपने आवेदन पत्र भरने और परीक्षा में बैठने से पहले अद्यतन सूचना बुलेटिन और तुलनात्मक विवरण को ध्यान से देखना चाहिए। परीक्षा 14 से 18 दिसंबर 2026 और 21 दिसंबर 2026 के बीच आयोजित होने निर्धारित है। सभी उम्मीदवारों को नवीनतम अपडेट के लिए नियमित रूप से आधिकारिक एनटीए वेबसाइट पर जाना चाहिए।",
     "last_date": null,
+    "mistakes_en": [
+      "Failing to review the updated information bulletin and comparative statement before applying",
+      "Not checking the correct category requirements for PwD certificates"
+    ],
+    "mistakes_hi": [
+      "आवेदन करने से पहले अद्यतन सूचना बुलेटिन और तुलनात्मक विवरण की समीक्षा करने में विफल रहना",
+      "दिव्यांग प्रमाण पत्र के लिए सही श्रेणी की आवश्यकताओं की जांच न करना"
+    ],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": "2026-10-16",
     "official_site": "https://nta.ac.in",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Assistant Professor and Junior Research Fellowship",
+        "value_hi": "सहायक प्रोफेसर और कनिष्ठ अनुसंधान फेलोशिप"
+      },
+      {
         "label_en": "Exam date",
-        "label_hi": "परीक्षा की तिथि",
-        "value_en": "14-18 December 2026 and 21 December 2026",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "14–18 Dec 2026 and 21 Dec 2026",
         "value_hi": "14-18 दिसंबर 2026 और 21 दिसंबर 2026"
       },
       {
         "label_en": "City intimation slip",
         "label_hi": "शहर सूचना पर्ची",
-        "value_en": "Available from 23 November 2026",
-        "value_hi": "23 नवंबर 2026 से उपलब्ध"
+        "value_en": "From 23 Nov 2026",
+        "value_hi": "23 नवंबर 2026 से"
       },
       {
         "label_en": "Admit card download",
         "label_hi": "प्रवेश पत्र डाउनलोड",
-        "value_en": "From 7 December 2026",
+        "value_en": "From 7 Dec 2026",
         "value_hi": "7 दिसंबर 2026 से"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "UGC-NET December 2026",
+        "value_hi": "यूजीसी-नेट दिसंबर 2026"
       }
     ],
+    "salary": [],
     "selection_en": [
-      "Written Examination"
+      "Computer Based Test (CBT)"
     ],
     "selection_hi": [
-      "लिखित परीक्षा"
+      "कंप्यूटर आधारित परीक्षा"
     ],
-    "status_en": "Corrigendum released",
-    "status_hi": "शुद्धिपत्र जारी",
-    "summary_en": "National Testing Agency has issued a corrigendum with amendments and clarifications regarding the Information Bulletin for UGC-NET December 2026 Examination. Candidates should review the revised details before applying.",
-    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने यूजीसी-नेट दिसंबर 2026 परीक्षा के सूचना बुलेटिन के संबंध में संशोधनों और स्पष्टीकरणों के साथ एक शुद्धिपत्र जारी किया है। उम्मीदवारों को आवेदन करने से पहले संशोधित विवरण देख लेना चाहिए।",
+    "share_card": {
+      "headline_en": "Corrigendum Released",
+      "headline_hi": "शुद्धिपत्र जारी",
+      "kind": "corr",
+      "line_en": "UGC-NET December 2026",
+      "line_hi": "यूजीसी-नेट दिसंबर 2026",
+      "posts": null
+    },
+    "status_en": "Corrigendum and revised dates released",
+    "status_hi": "शुद्धिपत्र और संशोधित तिथियां जारी",
+    "summary_en": "National Testing Agency has issued a corrigendum with amendments and clarifications regarding the Information Bulletin for UGC-NET December 2026 Examination. Candidates should review the revised details before applying and appearing in the examination.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने यूजीसी-नेट दिसंबर 2026 परीक्षा के सूचना बुलेटिन के संबंध में संशोधनों और स्पष्टीकरणों के साथ एक शुद्धिपत्र जारी किया है। उम्मीदवारों को आवेदन करने और परीक्षा में बैठने से पहले संशोधित विवरण देख लेना चाहिए।",
     "vacancies": [
       {
-        "detail_en": "As per UGC-NET December 2026 rules",
-        "detail_hi": "यूजीसी-नेट दिसंबर 2026 के नियमों के अनुसार",
+        "detail_en": "Subject-wise vacancies as per rules",
+        "detail_hi": "नियमों के अनुसार विषयवार रिक्तियां",
         "post_en": "Assistant Professor and Junior Research Fellowship",
-        "post_hi": "सहायक प्रोफेसर और जूनियर रिसर्च फेलोशिप",
+        "post_hi": "सहायक प्रोफेसर और कनिष्ठ अनुसंधान फेलोशिप",
         "total": "Not specified"
       }
+    ],
+    "who_en": [
+      "Candidates applying for UGC-NET December 2026 Examination for Assistant Professor and JRF"
+    ],
+    "who_hi": [
+      "सहायक प्रोफेसर और जेआरएफ के लिए यूजीसी-नेट दिसंबर 2026 परीक्षा के लिए आवेदन करने वाले उम्मीदवार"
     ]
   },
   "pdf": {
