@@ -29,48 +29,103 @@
   "notice_date": "2026-10-23",
   "org": "BSF",
   "page": {
+    "after_en": [
+      "Appear for the Computer Based Test (CBT) on the scheduled date.",
+      "Check for subsequent results and further recruitment stages."
+    ],
+    "after_hi": [
+      "निर्धारित तिथि पर कंप्यूटर आधारित परीक्षा (सीबीटी) में शामिल हों।",
+      "तत्पश्चात परिणामों और आगे के भर्ती चरणों की जाँच करें।"
+    ],
     "age": [],
     "apply_start": null,
     "apply_url": null,
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Download the e-admit card.",
+      "Take a clear printout of the admit card.",
+      "Check exam venue and reporting time."
+    ],
+    "checklist_hi": [
+      "ई-एडमिट कार्ड डाउनलोड करें।",
+      "एडमिट कार्ड का एक स्पष्ट प्रिंटआउट लें।",
+      "परीक्षा केंद्र और रिपोर्टिंग समय की जाँच करें।"
+    ],
     "conducted_by_en": "Border Security Force (BSF)",
     "conducted_by_hi": "सीमा सुरक्षा बल (बीएसएफ)",
     "dates": [],
+    "documents_en": [
+      "E-Admit Card",
+      "Valid Photo Identity Proof"
+    ],
+    "documents_hi": [
+      "ई-एडमिट कार्ड",
+      "वैध फोटो पहचान प्रमाण"
+    ],
     "eligibility": [],
     "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "The admit card is a mandatory document issued by the Border Security Force to enter the Computer Based Test examination hall for Head Constable (RO) and Head Constable (RM) posts.",
+        "a_hi": "एडमिट कार्ड हेड कांस्टेबल (आरओ) और हेड कांस्टेबल (आरएम) पदों के लिए कंप्यूटर आधारित परीक्षा हॉल में प्रवेश करने के लिए सीमा सुरक्षा बल द्वारा जारी किया जाने वाला एक अनिवार्य दस्तावेज है।",
+        "q_en": "What is the BSF HC RO & RM Admit Card?",
+        "q_hi": "बीएसएफ एचसी आरओ और आरएम एडमिट कार्ड क्या है?"
+      }
+    ],
     "extra": [],
     "faq": [
       {
-        "a_en": "You can download the e-admit card from the official BSF recruitment website using your login credentials.",
-        "a_hi": "आप अपने लॉगिन विवरण का उपयोग करके आधिकारिक बीएसएफ भर्ती वेबसाइट से ई-एडमिट कार्ड डाउनलोड कर सकते हैं।",
-        "q_en": "How can I download the BSF HC RO and RM admit card?",
-        "q_hi": "मैं बीएसएफ एचसी आरओ और आरएम एडमिट कार्ड कैसे डाउनलोड कर सकता हूँ?"
+        "a_en": "The Border Security Force (BSF) has released the admit card.",
+        "a_hi": "सीमा सुरक्षा बल (बीएसएफ) ने एडमिट कार्ड जारी किया है।",
+        "q_en": "Who has released the BSF HC RO & RM Admit Card?",
+        "q_hi": "बीएसएफ एचसी आरओ और आरएम एडमिट कार्ड किसने जारी किया है?"
       },
       {
-        "a_en": "Yes, mock test links for the Computer Based Test for both Head Constable (RO) and Head Constable (RM) have been released by BSF.",
-        "a_hi": "हाँ, बीएसएफ द्वारा हेड कांस्टेबल (आरओ) और हेड कांस्टेबल (आरएम) दोनों के लिए कंप्यूटर आधारित परीक्षा के वास्ते मॉक टेस्ट लिंक जारी कर दिए गए हैं।",
-        "q_en": "Are mock test links available for BSF HC RO and RM CBT?",
-        "q_hi": "क्या बीएसएफ एचसी आरओ और आरएम सीबीटी के लिए मॉक टेस्ट लिंक उपलब्ध हैं?"
+        "a_en": "This notice covers Head Constable (RO) and Head Constable (RM) posts in BSF Comn Setup.",
+        "a_hi": "इस सूचना में बीएसएफ संचार सेटअप में हेड कांस्टेबल (आरओ) और हेड कांस्टेबल (आरएम) पद शामिल हैं।",
+        "q_en": "Which posts are covered in this notice?",
+        "q_hi": "इस सूचना में कौन से पद शामिल हैं?"
+      },
+      {
+        "a_en": "Yes, mock test links for CBT have been provided by BSF.",
+        "a_hi": "हाँ, सीबीटी के लिए मॉक टेस्ट लिंक बीएसएफ द्वारा प्रदान किए गए हैं।",
+        "q_en": "Is there a mock test link available?",
+        "q_hi": "क्या कोई मॉक टेस्ट लिंक उपलब्ध है?"
       }
     ],
     "fees": [],
     "h1_en": "BSF HC RO & RM Admit Card and Mock Test 2025",
     "h1_hi": "बीएसएफ एचसी आरओ और आरएम एडमिट कार्ड और मॉक टेस्ट 2025",
     "how_en": [
-      "Go to the official BSF recruitment website rectt.bsf.gov.in.",
-      "Click on the link for downloading e-admit cards for HC(RO) & HC(RM) or the mock test link.",
-      "Enter your login credentials to download the admit card or access the mock test."
+      "Visit the official BSF recruitment website.",
+      "Click on the link for downloading e-admit cards for HC(RO) and HC(RM).",
+      "Enter your login credentials to download the admit card.",
+      "Use the mock test link to practice for the CBT exam."
     ],
     "how_hi": [
-      "आधिकारिक बीएसएफ भर्ती वेबसाइट rectt.bsf.gov.in पर जाएं।",
-      "एचसी (आरओ) और एचसी (आरएम) के लिए ई-एडमिट कार्ड डाउनलोड करने के लिंक या मॉक टेस्ट लिंक पर क्लिक करें।",
-      "एडमिट कार्ड डाउनलोड करने या मॉक टेस्ट तक पहुंचने के लिए अपने लॉगिन विवरण दर्ज करें।"
+      "आधिकारिक बीएसएफ भर्ती वेबसाइट पर जाएं।",
+      "एचसी (आरओ) और एचसी (आरएम) के लिए ई-एडमिट कार्ड डाउनलोड करने के लिंक पर क्लिक करें।",
+      "एडमिट कार्ड डाउनलोड करने के लिए अपने लॉगिन विवरण दर्ज करें।",
+      "सीबीटी परीक्षा के अभ्यास के लिए मॉक टेस्ट लिंक का उपयोग करें।"
     ],
-    "intro_en": "The Border Security Force (BSF) has activated the links for downloading e-admit cards and taking mock tests for the Computer Based Test (CBT) for the posts of Head Constable (RO) and Head Constable (RM) in BSF Communication Setup 2025. Candidates who applied for these posts can access the mock test links and download their admit cards by visiting the official BSF recruitment portal.",
-    "intro_hi": "सीमा सुरक्षा बल (बीएसएफ) ने बीएसएफ कम्युनिकेशन सेटअप 2025 में हेड कांस्टेबल (आरओ) और हेड कांस्टेबल (आरएम) के पदों के लिए कंप्यूटर आधारित परीक्षा (सीबीटी) के वास्ते ई-एडमिट कार्ड डाउनलोड करने और मॉक टेस्ट देने के लिए लिंक सक्रिय कर दिए हैं। इन पदों के लिए आवेदन करने वाले उम्मीदवार आधिकारिक बीएसएफ भर्ती पोर्टल पर जाकर मॉक टेस्ट लिंक का उपयोग कर सकते हैं और अपने एडमिट कार्ड डाउनलोड कर सकते हैं।",
+    "intro_en": "The Border Security Force (BSF) has issued the notice regarding the e-admit cards and mock test links for the Computer Based Test (CBT) for the post of Head Constable (RO) and Head Constable (RM) in BSF Comn Setup 2025. Candidates who applied for these posts can now access their admit cards and practice through the mock test links provided by the board. It is advised to download the admit card well in advance of the exam date.",
+    "intro_hi": "सीमा सुरक्षा बल (बीएसएफ) ने बीएसएफ संचार सेटअप 2025 में हेड कांस्टेबल (आरओ) और हेड कांस्टेबल (आरएम) पद के लिए कंप्यूटर आधारित परीक्षा के लिए ई-एडमिट कार्ड और मॉक टेस्ट लिंक के संबंध में सूचना जारी की है। इन पदों के लिए आवेदन करने वाले उम्मीदवार अब अपने एडमिट कार्ड प्राप्त कर सकते हैं और बोर्ड द्वारा प्रदान किए गए मॉक टेस्ट लिंक के माध्यम से अभ्यास कर सकते हैं। परीक्षा तिथि से काफी पहले एडमिट कार्ड डाउनलोड करने की सलाह दी जाती है।",
     "last_date": null,
+    "mistakes_en": [
+      "Do not wait until the last day to download the admit card.",
+      "Ensure all details on the admit card are correct."
+    ],
+    "mistakes_hi": [
+      "एडमिट कार्ड डाउनलोड करने के لیے अंतिम दिन तक प्रतीक्षा न करें।",
+      "सुनिश्चित करें कि एडमिट कार्ड पर सभी विवरण सही हैं।"
+    ],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": null,
     "official_site": "https://rectt.bsf.gov.in/",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
@@ -81,22 +136,45 @@
       },
       {
         "label_en": "Organization",
-        "label_hi": "संस्था",
-        "value_en": "BSF Communication Setup",
-        "value_hi": "बीएसएफ कम्युनिकेशन सेटअप"
+        "label_hi": "संगठन",
+        "value_en": "Border Security Force (BSF)",
+        "value_hi": "सीमा सुरक्षा बल (बीएसएफ)"
+      },
+      {
+        "label_en": "Notice Type",
+        "label_hi": "सूचना का प्रकार",
+        "value_en": "Admit Card & Mock Test Link",
+        "value_hi": "एडमिट कार्ड और मॉक टेस्ट लिंक"
       }
     ],
+    "salary": [],
     "selection_en": [
-      "Computer Based Test (CBT)"
+      "Computer Based Test (CBT)",
+      "Mock Test Practice"
     ],
     "selection_hi": [
-      "कंप्यूटर आधारित परीक्षा (सीबीटी)"
+      "कंप्यूटर आधारित परीक्षा",
+      "मॉक टेस्ट अभ्यास"
     ],
+    "share_card": {
+      "headline_en": "Admit Card 2025",
+      "headline_hi": "एडमिट कार्ड 2025",
+      "kind": "admit",
+      "line_en": "HC(RO) & HC(RM)",
+      "line_hi": "एचसी (आरओ) और एचसी (आरएम)",
+      "posts": null
+    },
     "status_en": "Admit card released",
-    "status_hi": "एडमिट कार्ड जारी",
-    "summary_en": "The Border Security Force has released the e-admit cards and mock test links for the Computer Based Test for Head Constable (RO) and Head Constable (RM) posts. Candidates can download their admit cards from the official website.",
-    "summary_hi": "सीमा सुरक्षा बल ने हेड कांस्टेबल (आरओ) और हेड कांस्टेबल (आरएम) पदों के लिए कंप्यूटर आधारित परीक्षा के लिए ई-एडमिट कार्ड और मॉक टेस्ट लिंक जारी कर दिए हैं। उम्मीदवार आधिकारिक वेबसाइट से अपने एडमिट कार्ड डाउनलोड कर सकते हैं।",
-    "vacancies": []
+    "status_hi": "एडमिट कार्ड जारी किया गया",
+    "summary_en": "The Border Security Force has released the e-admit cards and mock test links for the Computer Based Test (CBT) for Head Constable (RO) and Head Constable (RM) posts in BSF Comn Setup 2025. Candidates can download their admit cards and practice with the mock test links.",
+    "summary_hi": "सीमा सुरक्षा बल ने बीएसएफ संचार सेटअप 2025 में हेड कांस्टेबल (आरओ) और हेड कांस्टेबल (आरएम) पदों के लिए कंप्यूटर आधारित परीक्षा के लिए ई-एडमिट कार्ड और मॉक टेस्ट लिंक जारी कर दिए हैं। उम्मीदवार अपने एडमिट कार्ड डाउनलोड कर सकते हैं और मॉक टेस्ट लिंक के साथ अभ्यास कर सकते हैं।",
+    "vacancies": [],
+    "who_en": [
+      "Candidates who applied for Head Constable (RO) and Head Constable (RM) in BSF Comn Setup 2025"
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जिन्होंने बीएसएफ संचार सेटअप 2025 में हेड कांस्टेबल (आरओ) और हेड कांस्टेबल (आरएम) के लिए आवेदन किया है"
+    ]
   },
   "pdf": {
     "bytes": 326670,

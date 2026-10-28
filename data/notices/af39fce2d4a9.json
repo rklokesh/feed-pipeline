@@ -48,87 +48,227 @@
   "notice_date": "2026-10-08",
   "org": "UP Police",
   "page": {
+    "after_en": [
+      "Appear for the physical efficiency test at the newly allotted center on the revised date."
+    ],
+    "after_hi": [
+      "संशोधित तिथि पर नए आवंटित केंद्र पर शारीरिक दक्षता परीक्षा में उपस्थित हों।"
+    ],
     "age": [],
     "apply_start": null,
     "apply_url": "http://uppbpb.gov.in",
+    "changes": [
+      {
+        "new_en": "08-10-2026",
+        "new_hi": "08-10-2026",
+        "old_en": "24-09-2026",
+        "old_hi": "24-09-2026",
+        "what_en": "PET Exam Date for 24-09-2026 batch",
+        "what_hi": "दिनांक 24-09-2026 की शारीरिक दक्षता परीक्षा तिथि"
+      },
+      {
+        "new_en": "09-10-2026",
+        "new_hi": "09-10-2026",
+        "old_en": "29-09-2026 or 01-10-2026",
+        "old_hi": "29-09-2026 या 01-10-2026",
+        "what_en": "PET Exam Date for 29-09-2026 / 01-10-2026 batch",
+        "what_hi": "दिनांक 29-09-2026 / 01-10-2026 की शारीरिक दक्षता परीक्षा तिथि"
+      },
+      {
+        "new_en": "11-10-2026",
+        "new_hi": "11-10-2026",
+        "old_en": "05-10-2026 or 07-10-2026",
+        "old_hi": "05-10-2026 या 07-10-2026",
+        "what_en": "PET Exam Date for 05-10-2026 / 07-10-2026 batch",
+        "what_hi": "दिनांक 05-10-2026 / 07-10-2026 की शारीरिक दक्षता परीक्षा तिथि"
+      }
+    ],
     "changes_from_notes": "",
-    "conducted_by_en": "Uttar Pradesh Police Recruitment and Promotion Board (UPPBPB)",
-    "conducted_by_hi": "उत्तर प्रदेश पुलिस भर्ती एवं प्रोन्नति बोर्ड (यूपीपीबीपीबी)",
+    "checklist_en": [
+      "Check the official website for your updated exam schedule.",
+      "Note down your new exam date and center.",
+      "Keep your identification documents ready."
+    ],
+    "checklist_hi": [
+      "अपनी अद्यतन परीक्षा समय सारणी के लिए आधिकारिक वेबसाइट देखें।",
+      "अपनी नई परीक्षा तिथि और केंद्र नोट करें।",
+      "अपने पहचान दस्तावेज तैयार रखें।"
+    ],
+    "conducted_by_en": "Uttar Pradesh Police Recruitment and Promotion Board (UPPRPB)",
+    "conducted_by_hi": "उत्तर प्रदेश पुलिस भर्ती एवं प्रोन्नति बोर्ड",
     "dates": [
       {
-        "label_en": "Notice Date",
-        "label_hi": "सूचना दिनांक",
-        "value_en": "08 Oct 2026",
-        "value_hi": "08.10.2026"
+        "label_en": "Original Exam Date 1",
+        "label_hi": "मूल परीक्षा तिथि १",
+        "value_en": "24-09-2026",
+        "value_hi": "24-09-2026"
+      },
+      {
+        "label_en": "Revised Exam Date 1",
+        "label_hi": "संशोधित परीक्षा तिथि १",
+        "value_en": "08-10-2026",
+        "value_hi": "08-10-2026"
+      },
+      {
+        "label_en": "Original Exam Date 2",
+        "label_hi": "मूल परीक्षा तिथि २",
+        "value_en": "29-09-2026 or 01-10-2026",
+        "value_hi": "29-09-2026 या 01-10-2026"
+      },
+      {
+        "label_en": "Revised Exam Date 2",
+        "label_hi": "संशोधित परीक्षा तिथि २",
+        "value_en": "09-10-2026",
+        "value_hi": "09-10-2026"
+      },
+      {
+        "label_en": "Original Exam Date 3",
+        "label_hi": "मूल परीक्षा तिथि ३",
+        "value_en": "05-10-2026 or 07-10-2026",
+        "value_hi": "05-10-2026 या 07-10-2026"
+      },
+      {
+        "label_en": "Revised Exam Date 3",
+        "label_hi": "संशोधित परीक्षा तिथि ३",
+        "value_en": "11-10-2026",
+        "value_hi": "11-10-2026"
       }
+    ],
+    "documents_en": [
+      "Official notice printout",
+      "Original identity proof",
+      "Previously issued admit card / relevant documents"
+    ],
+    "documents_hi": [
+      "आधिकारिक सूचना का प्रिंटआउट",
+      "मूल पहचान पत्र",
+      "पूर्व में जारी प्रवेश पत्र एवं संबंधित दस्तावेज"
     ],
     "eligibility": [],
     "exam_date": null,
-    "extra": [],
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "This notice informs candidates that the physical efficiency test (PET) dates and exam centers originally scheduled for specific days in September and October 2025 have been revised due to administrative reasons.",
+        "a_hi": "यह सूचना अभ्यर्थियों को यह सूचित करती है कि प्रशासनिक कारणों से सितंबर और अक्टूबर 2025 की कुछ निश्चित तिथियों पर निर्धारित शारीरिक दक्षता परीक्षा (PET) की तिथियों और केंद्रों में संशोधन किया गया है।",
+        "q_en": "What is this UP Police PET rescheduling notice about?",
+        "q_hi": "यह उत्तर प्रदेश पुलिस शारीरिक दक्षता परीक्षा परिवर्तन सूचना क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Notice Reference",
+        "label_hi": "सूचना संदर्भ",
+        "value_en": "Pratikar-3(Anusandhan Evam Pariksha)02 / 2025",
+        "value_hi": "प्रतीकर-३(अनुसंधान एवं परीक्षा)०२ / २०२५"
+      }
+    ],
     "faq": [
       {
-        "a_en": "The dates and centers have been rescheduled due to unavoidable administrative reasons.",
-        "a_hi": "अपरिहार्य प्रशासनिक कारणों से तिथियों और केंद्रों में परिवर्तन किया गया है।",
-        "q_en": "Why have the UP Police Constable PET dates and centers been changed?",
-        "q_hi": "उत्तर प्रदेश पुलिस आरक्षी पीईटी की तिथियां और केंद्र क्यों बदले गए हैं?"
+        "a_en": "The exam dates and centers for certain batches have been changed due to administrative and unavoidable reasons.",
+        "a_hi": "प्रशासनिक एवं अपरिहार्य कारणों से कुछ बैचों की परीक्षा तिथियों और केंद्रों में परिवर्तन किया गया है।",
+        "q_en": "Why has the UP Police Constable PET exam date been changed?",
+        "q_hi": "उत्तर प्रदेश पुलिस आरक्षी शारीरिक दक्षता परीक्षा की तिथि क्यों बदली गई है?"
       },
       {
-        "a_en": "You can check the revised schedule on the official website of UPPBPB at http://uppbpb.gov.in.",
-        "a_hi": "आप यूपीपीबीपीबी की आधिकारिक वेबसाइट http://uppbpb.gov.in पर संशोधित शेड्यूल देख सकते हैं।",
-        "q_en": "Where can I check the revised PET schedule?",
-        "q_hi": "मैं संशोधित पीईटी शेड्यूल कहां देख सकता हूं?"
+        "a_en": "You can check the revised schedule on the official website of UPPRPB at http://uppbpb.gov.in.",
+        "a_hi": "आप उत्तर प्रदेश पुलिस भर्ती एवं प्रोन्नति बोर्ड की आधिकारिक वेबसाइट http://uppbpb.gov.in पर संशोधित समय सारणी देख सकते हैं।",
+        "q_en": "Where can I check the revised exam schedule?",
+        "q_hi": "मैं संशोधित परीक्षा समय सारणी कहां देख सकता हूं?"
+      },
+      {
+        "a_en": "The exams originally scheduled on 24-09-2026 are rescheduled to 08-10-2026.",
+        "a_hi": "मूल रूप से 24-09-2026 को निर्धारित परीक्षा अब 08-10-2026 को होगी।",
+        "q_en": "What is the new date for exams originally scheduled on 24-09-2026?",
+        "q_hi": "मूल रूप से 24-09-2026 को निर्धारित परीक्षा की नई तिथि क्या है?"
       }
     ],
     "fees": [],
     "h1_en": "UP Police Constable PET Exam Date and Center Rescheduled Notice 2025",
     "h1_hi": "उत्तर प्रदेश पुलिस आरक्षी शारीरिक दक्षता परीक्षा तिथि एवं केंद्र परिवर्तन सूचना 2025",
     "how_en": [
-      "Visit the official website at http://uppbpb.gov.in",
-      "Check the notice section for revised PET exam dates and center details",
-      "Download or view the updated schedule and verify your new exam center and date"
+      "Visit the official website of UPPRPB at http://uppbpb.gov.in.",
+      "Check the notice section for the physical efficiency test center and date rescheduling notification.",
+      "Verify your original exam date against the newly allotted revised date and center.",
+      "Download and print any updated instructions or admit card details if required."
     ],
     "how_hi": [
-      "आधिकारिक वेबसाइट http://uppbpb.gov.in पर जाएं",
-      "संशोधित शारीरिक दक्षता परीक्षा तिथियों और केंद्र विवरण के लिए नोटिस अनुभाग देखें",
-      "अद्यतन शेड्यूल डाउनलोड करें या देखें और अपने नए परीक्षा केंद्र एवं तिथि की पुष्टि करें"
+      "उत्तर प्रदेश पुलिस भर्ती एवं प्रोन्नति बोर्ड की आधिकारिक वेबसाइट http://uppbpb.gov.in पर जाएं।",
+      "शारीरिक दक्षता परीक्षा केंद्र एवं तिथि परिवर्तन से संबंधित सूचना को देखें।",
+      "अपनी मूल परीक्षा तिथि का मिलान नई संशोधित तिथि एवं केंद्र से करें।",
+      "आवश्यक दिशा-निर्देशों और संशोधित विवरण को डाउनलोड या प्रिंट करें।"
     ],
-    "intro_en": "The Uttar Pradesh Police Recruitment and Promotion Board (UPPBPB) has issued an important notice regarding the revision of physical efficiency test (PET) centers and dates for the Constable Civil Police and equivalent posts recruitment 2025. Due to unavoidable administrative reasons, the exam dates and centers originally scheduled for certain dates have been updated. Candidates should check the revised details to ensure they report to the correct venue on the newly assigned date.",
-    "intro_hi": "उत्तर प्रदेश पुलिस भर्ती एवं प्रोन्नति बोर्ड (यूपीपीबीपीबी) ने आरक्षी नागरिक पुलिस एवं समकक्ष पदों की भर्ती 2025 के तहत शारीरिक दक्षता परीक्षा के केंद्रों और तिथियों में संशोधन के संबंध में एक महत्वपूर्ण सूचना जारी की है। प्रशासनिक कारणों से कुछ तिथियों पर निर्धारित परीक्षा तिथियों और केंद्रों को बदल दिया गया है। अभ्यर्थियों को सलाह दी जाती है कि वे संशोधित विवरण की जाँच करें और निर्धारित नए केंद्र एवं तिथि पर उपस्थित हों।",
+    "intro_en": "The Uttar Pradesh Police Recruitment and Promotion Board (UPPRPB) has issued an important notice regarding the revision of physical efficiency test (PET) dates and centers for the Constable Civil Police and equivalent posts recruitment 2025. Due to administrative and unavoidable reasons, exams scheduled on specific past dates have been postponed and rescheduled to new dates. Candidates whose exams were affected on 24-09-2026, 29-09-2026, 01-10-2026, 05-10-2026, and 07-10-2026 must check the revised schedule. All concerned candidates should visit the official website to verify their updated exam centers and dates.",
+    "intro_hi": "उत्तर प्रदेश पुलिस भर्ती एवं प्रोन्नति बोर्ड (UPPRPB) ने उत्तर प्रदेश पुलिस में आरक्षी नागरिक पुलिस एवं समकक्ष पदों पर सीधी भर्ती-2025 के अंतर्गत शारीरिक दक्षता परीक्षा (PET) हेतु निर्धारित केंद्रों एवं तिथियों में परिवर्तन के संबंध में महत्वपूर्ण सूचना जारी की है। प्रशासनिक एवं अपरिहार्य कारणों से पूर्व में निर्धारित कुछ तिथियों की परीक्षाएं स्थगित कर पुनः निर्धारित की गई हैं। दिनांक 24-09-2026, 29-09-2026, 01-10-2026, 05-10-2026 और 07-10-2026 को प्रभावित होने वाले अभ्यर्थी अपनी संशोधित तिथियां और केंद्र आधिकारिक वेबसाइट पर देख सकते हैं।",
     "last_date": null,
+    "mistakes_en": [
+      "Do not miss checking the revised exam date if your exam was originally scheduled on the affected dates.",
+      "Do not go to the old exam center without verifying the updated center details."
+    ],
+    "mistakes_hi": [
+      "यदि आपकी परीक्षा मूल रूप से प्रभावित तिथियों में थी, तो संशोधित तिथि की जांच करना न भूलें।",
+      "अद्यतन केंद्र विवरण की पुष्टि किए बिना पुराने परीक्षा केंद्र पर न जाएं।"
+    ],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": "2026-10-08",
     "official_site": "http://uppbpb.gov.in",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
         "label_en": "Posts",
         "label_hi": "पद",
-        "value_en": "Constable Civil Police & Equivalent Posts",
+        "value_en": "Constable Civil Police and equivalent posts",
         "value_hi": "आरक्षी नागरिक पुलिस एवं समकक्ष पद"
       },
       {
-        "label_en": "Notice Subject",
+        "label_en": "Notice subject",
         "label_hi": "सूचना का विषय",
-        "value_en": "PET Exam Centers and Dates Rescheduled",
+        "value_en": "Rescheduling of PET exam dates and centers",
         "value_hi": "शारीरिक दक्षता परीक्षा केंद्र एवं तिथियों में परिवर्तन"
       },
       {
-        "label_en": "Official Website",
+        "label_en": "Official website",
         "label_hi": "आधिकारिक वेबसाइट",
         "value_en": "uppbpb.gov.in",
         "value_hi": "uppbpb.gov.in"
       }
     ],
+    "salary": [],
     "selection_en": [
       "Physical Efficiency Test (PET)"
     ],
     "selection_hi": [
-      "शारीरिक दक्षता परीक्षा (पीईटी)"
+      "शारीरिक दक्षता परीक्षा (PET)"
     ],
-    "status_en": "PET Exam Date & Center Rescheduled",
-    "status_hi": "शारीरिक दक्षता परीक्षा तिथि एवं केंद्र संशोधित",
-    "summary_en": "Important notice regarding the rescheduling of physical efficiency test (PET) centers and dates for UP Police Constable recruitment 2025. Candidates affected by administrative reasons can check the revised schedule on the official website.",
-    "summary_hi": "उत्तर प्रदेश पुलिस आरक्षी भर्ती 2025 के अंतर्गत शारीरिक दक्षता परीक्षा के केंद्रों एवं तिथियों में परिवर्तन के संबंध में महत्वपूर्ण सूचना। प्रशासनिक कारणों से प्रभावित अभ्यर्थी आधिकारिक वेबसाइट पर संशोधित शेड्यूल देख सकते हैं।",
-    "vacancies": []
+    "share_card": {
+      "headline_en": "Exam Schedule Revised",
+      "headline_hi": "परीक्षा तिथि संशोधित",
+      "kind": "corr",
+      "line_en": "UP Police Constable PET 2025",
+      "line_hi": "यूपी पुलिस आरक्षी पीईटी २०२५",
+      "posts": null
+    },
+    "status_en": "Physical efficiency test dates and centers rescheduled",
+    "status_hi": "शारीरिक दक्षता परीक्षा की तिथियां एवं केंद्र संशोधित",
+    "summary_en": "Important notice regarding the rescheduling of physical efficiency test centers and dates for UP Police Constable recruitment 2025. Candidates affected by administrative reasons for dates 24-09-2026, 29-09-2026, 01-10-2026, 05-10-2026, and 07-10-2026 can check revised dates and download updated notices from the official website.",
+    "summary_hi": "उत्तर प्रदेश पुलिस आरक्षी भर्ती के अंतर्गत शारीरिक दक्षता परीक्षा हेतु निर्धारित केन्द्रों एवं तिथियों में परिवर्तन के संबंध में महत्वपूर्ण सूचना। दिनांक 24-09-2026, 29-09-2026, 01-10-2026, 05-10-2026 और 07-10-2026 की परीक्षाओं के लिए संशोधित तिथियां और केंद्र घोषित किए गए हैं।",
+    "vacancies": [
+      {
+        "detail_en": "PET examination rescheduling notice",
+        "detail_hi": "शारीरिक दक्षता परीक्षा पुनर्निर्धारण सूचना",
+        "post_en": "Constable Civil Police and equivalent posts",
+        "post_hi": "आरक्षी नागरिक पुलिस एवं समकक्ष पद",
+        "total": null
+      }
+    ],
+    "who_en": [
+      "Candidates who were scheduled to appear for the UP Police Constable PET on 24-09-2026, 29-09-2026, 01-10-2026, 05-10-2026, and 07-10-2026."
+    ],
+    "who_hi": [
+      "वे सभी अभ्यर्थी जिनकी उत्तर प्रदेश पुलिस आरक्षी शारीरिक दक्षता परीक्षा 24-09-2026, 29-09-2026, 01-10-2026, 05-10-2026 और 07-10-2026 को निर्धारित थी।"
+    ]
   },
   "pdf": {
     "bytes": 633442,
