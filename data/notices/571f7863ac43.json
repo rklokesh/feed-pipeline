@@ -29,12 +29,31 @@
   "notice_date": "2026-09-09",
   "org": "UKPSC",
   "page": {
+    "after_en": [
+      "Admit cards will be issued for eligible applicants",
+      "Candidates must appear for the examination as per the schedule"
+    ],
+    "after_hi": [
+      "योग्य आवेदकों के लिए प्रवेश पत्र जारी किए जाएंगे",
+      "उम्मीदवारों को अनुसूची के अनुसार परीक्षा में उपस्थित होना होगा"
+    ],
     "age": [],
     "apply_start": "2026-09-09",
-    "apply_url": null,
+    "apply_url": "https://psc.uk.gov.in",
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Check eligibility criteria",
+      "Keep documents ready",
+      "Submit application before 29 September 2026"
+    ],
+    "checklist_hi": [
+      "पात्रता मानदंडों की जाँच करें",
+      "दस्तावेज़ तैयार रखें",
+      "29 सितंबर 2026 से पहले आवेदन जमा करें"
+    ],
     "conducted_by_en": "Uttarakhand Public Service Commission (UKPSC)",
-    "conducted_by_hi": "उत्तराखंड लोक सेवा आयोग (UKPSC)",
+    "conducted_by_hi": "उत्तराखंड लोक सेवा आयोग (यूकेपीएससी)",
     "dates": [
       {
         "label_en": "Notification date",
@@ -49,65 +68,110 @@
         "value_hi": "09 सितंबर 2026"
       },
       {
-        "label_en": "Online application last date",
-        "label_hi": "ऑनलाइन आवेदन की अंतिम तिथि",
+        "label_en": "Last date to apply",
+        "label_hi": "आवेदन की अंतिम तिथि",
         "value_en": "29 Sep 2026",
         "value_hi": "29 सितंबर 2026"
       },
       {
-        "label_en": "Examination fee last date",
-        "label_hi": "परीक्षा शुल्क जमा करने की अंतिम तिथि",
+        "label_en": "Last date for fee payment",
+        "label_hi": "शुल्क भुगतान की अंतिम तिथि",
         "value_en": "29 Sep 2026",
         "value_hi": "29 सितंबर 2026"
       },
       {
-        "label_en": "Correction window",
-        "label_hi": "संशोधन विंडो",
+        "label_en": "Application correction window",
+        "label_hi": "आवेदन सुधार विंडो",
         "value_en": "07 Oct 2026 to 16 Oct 2026",
         "value_hi": "07 अक्टूबर 2026 से 16 अक्टूबर 2026"
       }
     ],
-    "eligibility": [],
+    "documents_en": [
+      "Educational certificates",
+      "Identity proof",
+      "Scanned photograph and signature"
+    ],
+    "documents_hi": [
+      "शैक्षणिक प्रमाण पत्र",
+      "पहचान प्रमाण",
+      "स्कैन की गई तस्वीर और हस्ताक्षर"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Detailed eligibility",
+        "label_hi": "विस्तृत योग्यता",
+        "value_en": "Refer to the official advertisement for educational qualification, rules, and conditions.",
+        "value_hi": "शैक्षणिक योग्यता, नियमों और शर्तों के लिए आधिकारिक विज्ञापन देखें।"
+      }
+    ],
     "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a combined competitive examination conducted by the Uttarakhand Public Service Commission to recruit eligible candidates for various administrative and civil posts across departments in the state.",
+        "a_hi": "यह राज्य के विभिन्न विभागों में विभिन्न प्रशासनिक और सिविल पदों के लिए योग्य उम्मीदवारों की भर्ती हेतु उत्तराखंड लोक सेवा आयोग द्वारा आयोजित एक संयुक्त प्रतियोगी परीक्षा है।",
+        "q_en": "What is the UKPSC Upper Subordinate Exam?",
+        "q_hi": "यूकेपीएससी प्रवर अधीनस्थ परीक्षा क्या है?"
+      }
+    ],
     "extra": [],
     "faq": [
       {
-        "a_en": "The last date to submit online applications is 29 September 2026.",
-        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 29 सितंबर 2026 है।",
-        "q_en": "What is the last date to apply for UKPSC Combined State Civil Upper Subordinate Exam 2026?",
-        "q_hi": "उत्तराखंड सम्मिलित राज्य सिविल प्रवर अधीनस्थ सेवा परीक्षा 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+        "a_en": "The last date to submit online applications is 29 September 2026 up to 11:59:59 PM.",
+        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 29 सितंबर 2026 रात 11:59:59 बजे तक है।",
+        "q_en": "What is the last date to apply for UKPSC Upper Subordinate Exam 2026?",
+        "q_hi": "यूकेपीएससी प्रवर अधीनस्थ परीक्षा 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "A total of 67 vacancies are announced under this examination.",
-        "a_hi": "इस परीक्षा के अंतर्गत कुल 67 रिक्तियों की घोषणा की गई है।",
-        "q_en": "How many vacancies are announced in this recruitment?",
-        "q_hi": "इस भर्ती में कुल कितनी रिक्तियों की घोषणा की गई है?"
+        "a_en": "A total of 67 vacancies have been announced under this recruitment.",
+        "a_hi": "इस भर्ती के अंतर्गत कुल 67 रिक्तियों की घोषणा की गई है।",
+        "q_en": "How many vacancies are announced in this notification?",
+        "q_hi": "इस अधिसूचना में कुल कितनी रिक्तियां घोषित की गई हैं?"
       },
       {
-        "a_en": "The correction window is open from 07 October 2026 to 16 October 2026.",
-        "a_hi": "संशोधन विंडो 07 अक्टूबर 2026 से 16 अक्टूबर 2026 तक खुली रहेगी।",
-        "q_en": "When is the correction window open for the application form?",
-        "q_hi": "आवेदन पत्र के लिए संशोधन विंडो कब खुली रहेगी?"
+        "a_en": "The correction window for the online application form is open from 07 October 2026 to 16 October 2026.",
+        "a_hi": "ऑनलाइन आवेदन पत्र के लिए सुधार विंडो 07 अक्टूबर 2026 से 16 अक्टूबर 2026 तक खुली है।",
+        "q_en": "When can I correct my online application form?",
+        "q_hi": "मैं अपने ऑनलाइन आवेदन पत्र में कब सुधार कर सकता हूँ?"
+      },
+      {
+        "a_en": "Candidates can apply through the official website at psc.uk.gov.in.",
+        "a_hi": "उम्मीदवार आधिकारिक वेबसाइट psc.uk.gov.in के माध्यम से आवेदन कर सकते हैं।",
+        "q_en": "What is the official website to apply for UKPSC recruitment?",
+        "q_hi": "यूकेपीएससी भर्ती के लिए आवेदन करने की आधिकारिक वेबसाइट क्या है?"
       }
     ],
     "fees": [],
     "h1_en": "UKPSC Combined State Civil Upper Subordinate Exam 2026",
     "h1_hi": "उत्तराखंड सम्मिलित राज्य सिविल प्रवर अधीनस्थ सेवा परीक्षा 2026",
     "how_en": [
-      "Visit the official UKPSC website.",
-      "Read the detailed advertisement and ensure eligibility.",
-      "Fill out the online application form and pay the fee before the last date."
+      "Visit the official UKPSC website at psc.uk.gov.in",
+      "Read the notification carefully before applying",
+      "Fill out the online application form and pay the exam fee before the last date",
+      "Take a printout of the submitted application form for future reference"
     ],
     "how_hi": [
-      "आधिकारिक उत्तराखंड लोक सेवा आयोग की वेबसाइट पर जाएं।",
-      "विस्तृत विज्ञापन पढ़ें और पात्रता सुनिश्चित करें।",
-      "अंतिम तिथि से पहले ऑनलाइन आवेदन पत्र भरें और शुल्क भुगतान करें।"
+      "यूकेपीएससी की आधिकारिक वेबसाइट psc.uk.gov.in पर जाएं",
+      "आवेदन करने से पहले विज्ञापन को ध्यान से पढ़ें",
+      "ऑनलाइन आवेदन पत्र भरें और अंतिम तिथि से पहले परीक्षा शुल्क का भुगतान करें",
+      "भविष्य के संदर्भ के लिए जमा किए गए आवेदन पत्र का प्रिंटआउट लें"
     ],
-    "intro_en": "The Uttarakhand Public Service Commission (UKPSC) has released the notification for the Combined State Civil/Upper Subordinate Services Examination 2026 to fill 67 vacancies across various departments. Online applications are open from 09 September 2026 to 29 September 2026. Eligible and interested candidates should review the official advertisement thoroughly before applying on the official website.",
-    "intro_hi": "उत्तराखंड लोक सेवा आयोग (UKPSC) ने विभिन्न विभागों में 67 रिक्तियों को भरने के लिए सम्मिलित राज्य सिविल/प्रवर अधीनस्थ सेवा परीक्षा 2026 का विज्ञापन जारी किया है। ऑनलाइन आवेदन 09 सितंबर 2026 से 29 सितंबर 2026 तक खुले हैं। योग्य और इच्छुक उम्मीदवारों को आवेदन करने से पहले आधिकारिक विज्ञापन की भली-भांति जाँच करनी चाहिए।",
+    "intro_en": "Uttarakhand Public Service Commission (UKPSC) has released the notification for the Combined State Civil/Upper Subordinate Services Examination 2026. A total of 67 vacancies across various departments will be filled through this direct recruitment process. Online applications are open from 09 September 2026 to 29 September 2026. Interested and eligible candidates should review the detailed notification on the official website before applying.",
+    "intro_hi": "उत्तराखंड लोक सेवा आयोग (यूकेपीएससी) ने सम्मिलित राज्य सिविल/प्रवर अधीनस्थ सेवा परीक्षा 2026 के लिए विज्ञापन जारी कर दिया है। इस सीधी भर्ती प्रक्रिया के माध्यम से विभिन्न विभागों में कुल 67 रिक्त पद भरे जाएंगे। ऑनलाइन आवेदन 09 सितंबर 2026 से 29 सितंबर 2026 तक खुले हैं। इच्छुक और योग्य उम्मीदवारों को आवेदन करने से पहले आधिकारिक वेबसाइट पर विस्तृत विज्ञापन की जांच करनी चाहिए।",
     "last_date": "2026-09-29",
+    "mistakes_en": [
+      "Failing to read the notification thoroughly before applying",
+      "Missing the application or fee payment deadline of 29 September 2026"
+    ],
+    "mistakes_hi": [
+      "आवेदन करने से पहले विज्ञापन को पूरी तरह से न पढ़ना",
+      "29 सितंबर 2026 की आवेदन या शुल्क भुगतान समय सीमा से चूक जाना"
+    ],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": "2026-09-09",
     "official_site": "https://psc.uk.gov.in",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
@@ -130,7 +194,7 @@
       },
       {
         "label_en": "Last date for fee",
-        "label_hi": "शुल्क की अंतिम तिथि",
+        "label_hi": "शुल्क भुगतान की अंतिम तिथि",
         "value_en": "29 Sep 2026",
         "value_hi": "29 सितंबर 2026"
       },
@@ -138,15 +202,24 @@
         "label_en": "Advertisement number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "A-1/E-1/2026-27",
-        "value_hi": "A-1/E-1/2026-27"
+        "value_hi": "ए-1/ई-1/2026-27"
       }
     ],
+    "salary": [],
     "selection_en": [
-      "Check the official notification for detailed selection process."
+      "Direct recruitment through examination"
     ],
     "selection_hi": [
-      "विस्तृत चयन प्रक्रिया के लिए आधिकारिक विज्ञापन देखें।"
+      "परीक्षा के माध्यम से सीधी भर्ती"
     ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Upper Subordinate Exam 2026",
+      "line_hi": "प्रवर अधीनस्थ परीक्षा 2026",
+      "posts": 67
+    },
     "status_en": "",
     "status_hi": "",
     "summary_en": "Uttarakhand Public Service Commission has invited online applications for 67 vacancies under the Combined State Civil/Upper Subordinate Services Examination 2026. Eligible candidates can apply online up to 29 September 2026.",
@@ -159,6 +232,12 @@
         "post_hi": "सम्मिलित राज्य सिविल/प्रवर अधीनस्थ सेवा",
         "total": "67"
       }
+    ],
+    "who_en": [
+      "Eligible candidates aspiring for civil/upper subordinate services in Uttarakhand"
+    ],
+    "who_hi": [
+      "उत्तराखंड में सिविल/प्रवर अधीनस्थ सेवाओं के इच्छुक योग्य उम्मीदवार"
     ]
   },
   "pdf": {

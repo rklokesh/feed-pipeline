@@ -59,55 +59,111 @@
   "notice_date": "2026-10-23",
   "org": "NABARD",
   "page": {
+    "after_en": [
+      "Shortlisted candidates proceed to the next recruitment stages as per NABARD guidelines."
+    ],
+    "after_hi": [
+      "शॉर्टलिस्ट किए गए उम्मीदवार नाबार्ड के दिशानिर्देशों के अनुसार अगली भर्ती चरणों में आगे बढ़ेंगे।"
+    ],
     "age": [],
     "apply_start": null,
     "apply_url": null,
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Check regional office cut-offs",
+      "Verify sectional cut-off marks against your score"
+    ],
+    "checklist_hi": [
+      "क्षेत्रीय कार्यालय कट-ऑफ की जांच करें",
+      "अपने स्कोर के मुकाबले अनुभाग-वार कट-ऑफ अंकों का मिलान करें"
+    ],
     "conducted_by_en": "National Bank for Agriculture and Rural Development (NABARD)",
     "conducted_by_hi": "राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड)",
     "dates": [
       {
-        "label_en": "Preliminary Exam Date",
-        "label_hi": "प्रारंभिक परीक्षा तिथि",
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
         "value_en": "21 Feb 2026",
         "value_hi": "21 फरवरी 2026"
       }
     ],
+    "documents_en": [],
+    "documents_hi": [],
     "eligibility": [],
     "exam_date": "2026-02-21",
-    "extra": [],
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is the minimum qualifying score set by NABARD for the Phase I preliminary examination held on 21 Feb 2026, required for candidates to clear the exam stage.",
+        "a_hi": "यह 21 फरवरी 2026 को आयोजित चरण-I प्रारंभिक परीक्षा के लिए नाबार्ड द्वारा निर्धारित न्यूनतम अर्हक स्कोर है, जो उम्मीदवारों के लिए परीक्षा चरण को पार करने के लिए आवश्यक है।",
+        "q_en": "What is the NABARD Development Assistant (Hindi) Preliminary Exam Cut-Off?",
+        "q_hi": "नाबार्ड डेवलपमेंट असिस्टेंट (हिंदी) प्रारंभिक परीक्षा कट-ऑफ क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Sectional Cut-Offs T1 (Test of Reasoning)",
+        "label_hi": "अनुभाग-वार कट-ऑफ टी1 (तर्क परीक्षण)",
+        "value_en": "SC/ST/OBC/PWBD/EXS & DISEXS: 5.25, EWS/UR: 8.75",
+        "value_hi": "एससी/एसटी/ओबीसी/पीडब्लूडी/ईएक्सएस और डीआईएक्सएस: 5.25, ईडब्ल्यूएस/यूआर: 8.75"
+      },
+      {
+        "label_en": "Sectional Cut-Offs T2 (Test of English Language)",
+        "label_hi": "अनुभाग-वार कट-ऑफ टी2 (अंग्रेजी भाषा परीक्षण)",
+        "value_en": "SC/ST/OBC/PWBD/EXS & DISEXS: 5.50, EWS/UR: 8.50",
+        "value_hi": "एससी/एसटी/ओबीसी/पीडब्लूडी/ईएक्सएस और डीआईएक्सएस: 5.50, ईडब्ल्यूएस/यूआर: 8.50"
+      },
+      {
+        "label_en": "Sectional Cut-Offs T3 (Test of Professional Knowledge / Hindi)",
+        "label_hi": "अनुभाग-वार कट-ऑफ टी3 (व्यावसायिक ज्ञान / हिंदी परीक्षण)",
+        "value_en": "SC/ST/OBC/PWBD/EXS & DISEXS: 4.75, EWS/UR: 9.00",
+        "value_hi": "एससी/एसटी/ओबीसी/पीडब्लूडी/ईएक्सएस और डीआईएक्सएस: 4.75, ईडब्ल्यूएस/यूआर: 9.00"
+      }
+    ],
     "faq": [
       {
         "a_en": "The preliminary examination was conducted on 21 Feb 2026.",
         "a_hi": "प्रारंभिक परीक्षा 21 फरवरी 2026 को आयोजित की गई थी।",
-        "q_en": "When was the NABARD Development Assistant Hindi Prelims exam conducted?",
-        "q_hi": "नाबार्ड डेवलपमेंट असिस्टेंट हिंदी प्रारंभिक परीक्षा कब आयोजित की गई थी?"
+        "q_en": "When was the NABARD Development Assistant (Hindi) Prelims exam held?",
+        "q_hi": "नाबार्ड डेवलपमेंट असिस्टेंट (हिंदी) प्रारंभिक परीक्षा कब आयोजित की गई थी?"
       },
       {
-        "a_en": "The notice contains the regional office-wise cut-off marks and sectional cut-off scores for the preliminary examination.",
-        "a_hi": "नोटिस में प्रारंभिक परीक्षा के लिए क्षेत्रीय कार्यालय-वार कट-ऑफ अंक और अनुभाग-वार कट-ऑफ स्कोर शामिल हैं।",
-        "q_en": "What details are available in the NABARD cut-off notice?",
-        "q_hi": "नाबार्ड कट-ऑफ नोटिस में क्या विवरण उपलब्ध हैं?"
+        "a_en": "The National Bank for Agriculture and Rural Development (NABARD) has released the cut-off marks.",
+        "a_hi": "राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड) ने कट-ऑफ अंक जारी किए हैं।",
+        "q_en": "Who has released the cut-off marks?",
+        "q_hi": "कट-ऑफ अंक किसने जारी किए हैं?"
+      },
+      {
+        "a_en": "Candidates can check the cut-off marks on the official NABARD careers notices website.",
+        "a_hi": "उम्मीदवार आधिकारिक नाबार्ड करियर नोटिस वेबसाइट पर कट-ऑफ अंक देख सकते हैं।",
+        "q_en": "Where can I check the cut-off marks?",
+        "q_hi": "मैं कट-ऑफ अंक कहां देख सकता हूँ?"
       }
     ],
     "fees": [],
     "h1_en": "NABARD Development Assistant Hindi Prelims Cut-Off 2026",
     "h1_hi": "नाबार्ड डेवलपमेंट असिस्टेंट हिंदी प्रारंभिक परीक्षा कट-ऑफ 2026",
     "how_en": [
-      "Visit the official NABARD careers website.",
-      "Click on the notice regarding the Development Assistant (Hindi) – 2026 – Preliminary Examination Cut-off.",
-      "Check the regional and category-wise cut-off scores in the opened PDF."
+      "Visit the official NABARD careers notices website.",
+      "Click on the link for Development Assistant (Hindi) – 2026 – Preliminary Examination Cut-off.",
+      "View and download the PDF notice containing the cut-off marks."
     ],
     "how_hi": [
-      "नाबार्ड की आधिकारिक करियर वेबसाइट पर जाएं।",
-      "डेवलपमेंट असिस्टेंट (हिंदी) - 2026 - प्रारंभिक परीक्षा कट-ऑफ से संबंधित नोटिस पर क्लिक करें।",
-      "खुली हुई पीडीएफ में क्षेत्रीय और श्रेणीवार कट-ऑफ अंक देखें।"
+      "आधिकारिक नाबार्ड करियर नोटिस वेबसाइट पर जाएं।",
+      "डेवलपमेंट असिस्टेंट (हिंदी) – 2026 – प्रारंभिक परीक्षा कट-ऑफ के लिए दिए गए लिंक पर क्लिक करें।",
+      "कट-ऑफ अंकों वाली पीडीएफ नोटिस देखें और डाउनलोड करें।"
     ],
-    "intro_en": "The National Bank for Agriculture and Rural Development (NABARD) has announced the preliminary examination cut-off marks for the Recruitment of Development Assistant (Hindi) 2026. The Phase-I preliminary examination was conducted on 21 Feb 2026. Candidates can view the regional office-wise cut-offs and sectional cut-offs through the official notice.",
-    "intro_hi": "राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड) ने डेवलपमेंट असिस्टेंट (हिंदी) भर्ती 2026 के लिए प्रारंभिक परीक्षा के कट-ऑफ अंक घोषित कर दिए हैं। चरण-I प्रारंभिक परीक्षा 21 फरवरी 2026 को आयोजित की गई थी। उम्मीदवार आधिकारिक नोटिस के माध्यम से क्षेत्रीय कार्यालय-वार कट-ऑफ और अनुभाग-वार कट-ऑफ देख सकते हैं।",
+    "intro_en": "The National Bank for Agriculture and Rural Development (NABARD) has released the Phase I preliminary examination cut-off marks for the Recruitment of Development Assistant (Hindi) 2026. The preliminary examination was conducted on 21 Feb 2026. Candidates who appeared for the exam can now check the regional office-wise and category-wise cut-off scores, including sectional cut-offs. All qualified candidates are selected under the wait list as specified in the notice.",
+    "intro_hi": "राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड) ने डेवलपमेंट असिस्टेंट (हिंदी) भर्ती 2026 के लिए चरण-I (प्रारंभिक परीक्षा) के कट-ऑफ अंक जारी कर दिए हैं। प्रारंभिक परीक्षा 21 फरवरी 2026 को आयोजित की गई थी। परीक्षा में शामिल होने वाले उम्मीदवार अब क्षेत्रीय कार्यालय-वार और श्रेणी-वार कट-ऑफ अंक, जिसमें अनुभाग-वार कट-ऑफ शामिल हैं, देख सकते हैं। नोटिस में निर्दिष्ट के अनुसार सभी योग्य उम्मीदवारों को प्रतीक्षा सूची के तहत चुना गया है।",
     "last_date": null,
+    "mistakes_en": [],
+    "mistakes_hi": [],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": null,
     "official_site": "https://www.nabard.org",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
@@ -121,19 +177,48 @@
         "label_hi": "परीक्षा तिथि",
         "value_en": "21 Feb 2026",
         "value_hi": "21 फरवरी 2026"
+      },
+      {
+        "label_en": "Notice type",
+        "label_hi": "सूचना का प्रकार",
+        "value_en": "Preliminary Examination Cut-Off",
+        "value_hi": "प्रारंभिक परीक्षा कट-ऑफ"
       }
     ],
+    "salary": [],
     "selection_en": [
-      "Phase-I (Preliminary Examination)"
+      "Phase I (Preliminary Examination)"
     ],
     "selection_hi": [
       "चरण-I (प्रारंभिक परीक्षा)"
     ],
+    "share_card": {
+      "headline_en": "Prelims Cut-Off 2026",
+      "headline_hi": "प्रारंभिक परीक्षा कट-ऑफ 2026",
+      "kind": "result",
+      "line_en": "Development Assistant (Hindi)",
+      "line_hi": "डेवलपमेंट असिस्टेंट (हिंदी)",
+      "posts": null
+    },
     "status_en": "Preliminary examination cut-off marks released",
-    "status_hi": "प्रारंभिक परीक्षा के कट-ऑफ अंक जारी",
-    "summary_en": "NABARD has released the preliminary examination cut-off marks for the Development Assistant (Hindi) recruitment 2026. Candidates who appeared for the exam held on 21 Feb 2026 can now check the category-wise and regional cut-off scores.",
-    "summary_hi": "नाबार्ड ने डेवलपमेंट असिस्टेंट (हिंदी) भर्ती 2026 के लिए प्रारंभिक परीक्षा के कट-ऑफ अंक जारी कर दिए हैं। 21 फरवरी 2026 को आयोजित परीक्षा में शामिल होने वाले उम्मीदवार श्रेणीवार और क्षेत्रीय कट-ऑफ अंक देख सकते हैं।",
-    "vacancies": []
+    "status_hi": "प्रारंभिक परीक्षा के कट-ऑफ अंक जारी किए गए",
+    "summary_en": "NABARD has released the preliminary examination cut-off marks for Development Assistant (Hindi) recruitment 2026. Candidates can check the category-wise cut-off scores for the exam held on 21 Feb 2026.",
+    "summary_hi": "नाबार्ड ने डेवलपमेंट असिस्टेंट (हिंदी) भर्ती 2026 के लिए प्रारंभिक परीक्षा के कट-ऑफ अंक जारी कर दिए हैं। उम्मीदवार 21 फरवरी 2026 को आयोजित परीक्षा के लिए श्रेणीवार कट-ऑफ अंक देख सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Regional office-wise cut-offs released for Andhra Pradesh, Maharashtra (HO Mumbai), and Tamilnadu.",
+        "detail_hi": "आंध्र प्रदेश, महाराष्ट्र (मुख्यालय मुंबई) और तमिलनाडु के लिए क्षेत्रीय कार्यालय-वार कट-ऑफ जारी किए गए।",
+        "post_en": "Development Assistant (Hindi)",
+        "post_hi": "डेवलपमेंट असिस्टेंट (हिंदी)",
+        "total": null
+      }
+    ],
+    "who_en": [
+      "Candidates who appeared for the NABARD Development Assistant (Hindi) Preliminary Exam 2026"
+    ],
+    "who_hi": [
+      "नाबार्ड डेवलपमेंट असिस्टेंट (हिंदी) प्रारंभिक परीक्षा 2026 में शामिल होने वाले उम्मीदवार"
+    ]
   },
   "pdf": {
     "bytes": 154844,
