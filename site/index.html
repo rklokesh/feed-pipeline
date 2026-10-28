@@ -54,13 +54,13 @@
 .newline.off { visibility: hidden; } /* keeps its space, so the table never jumps */
 /* "New" badge on the 3 most recent notices: a soft breathing dot, not a hard blink */
 /* Posted cell = date + a fixed slot for the "New" tag, so every date lines up whether or not a tag is there. */
-.pc { display: inline-grid; grid-template-columns: auto 2.5rem; column-gap: 12px; align-items: baseline; white-space: nowrap; }
+.pc { display: inline-grid; grid-template-columns: 2.5rem auto; column-gap: 8px; align-items: baseline; white-space: nowrap; }
 /* "New" = the red arrow image (English or Hindi), nudging gently forward: calm, not a panic blink */
 .newtag { display: inline-block; width: 23px; height: 14px; vertical-align: -2px; animation: nudge 1.8s ease-in-out infinite; }
 @keyframes nudge { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(3px); } }
 @media (prefers-reduced-motion: reduce) { .newtag { animation: none; } }
 .t .newtag { margin-right: 8px; vertical-align: -2px; }
-.pc .slot { display: inline-flex; align-items: center; gap: 3px; }
+.pc .slot { display: inline-flex; align-items: center; justify-content: flex-end; gap: 3px; order: -1; }   /* New arrow / siren sit left of the date, pointing at it */
 .rsiren { display: inline-block; line-height: 0; vertical-align: -2px; }
 .rsiren img { width: 14px; height: 14px; display: block; }
 .t .rsiren { margin-right: 6px; }
