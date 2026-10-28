@@ -177,7 +177,13 @@ publish.yml (when the owner adds a label to an issue, open or closed):
    facts from the notification, more exams from the same board, ItemList schema), `/exam/` index, homepage **Exams tab** (rows written into
    index.html between `/*EXAMS:START*/` markers; one row per exam: updated date, name, board, latest type, N updates), "All updates for <exam> →" link under each notice heading, sitemap entries.
    First run: 113 notices tagged, 29 exam pages. To fix a wrong grouping, edit the notice's `exam` in data/notices.
-6. After launch: Google Discover follow link, parked bookmark pop-up and recent searches; MPSC/NVS/Employment News feed
+6. **Competitor review** in `docs/COMPETITORS.md` (28 Oct). Proposed next features from it: qualification pages
+   (10th/12th/ITI/diploma/graduate), state pages for the Hindi belt, "what's next" on exam pages, Hindi PDF + video
+   links, alerts without an account, age-eligibility checker.
+7. Quality check 28 Oct: all pages on the full layout, every notice tagged; fixed issue dates for old notices picked up
+   when a board was first added (now dated by their own PDF date, or by their past last date — never "New").
+   Boards failing for weeks (CRPF, DRDO, IAF Agniveer, RRB Chandigarh) only add noise to the health report.
+8. After launch: Google Discover follow link, parked bookmark pop-up and recent searches; MPSC/NVS/Employment News feed
    readers; press kit page.
 6. Owner to-do: buy the domain (Telegram channel photo is set). On domain day also set up Cloudflare Email Routing for contact@sarkarichart.com and add it to /contact/. Never put the owner's name or company on the site.
 
