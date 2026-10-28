@@ -1,0 +1,49 @@
+{
+  "board_url": "https://rssb.rajasthan.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": {
+        "advt_no": "प-14(169)RSSB/अर्थना/स्कूल शिक्षा/कंप्यूटर अनुदेशक/भर्ती/2025"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "प-14(169)RSSB/अर्थना/स्कूल शिक्षा/कंप्यूटर अनुदेशक/भर्ती/2025"
+    },
+    "post_names": {
+      "evidence": {
+        "post_names": "वरिष्ठ कंप्यूटर अनुदेशक एवं बेसिक कंप्यूटर अनुदेशक संयुक्त सीधी भर्ती-2026"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "वरिष्ठ कंप्यूटर अनुदेशक",
+        "बेसिक कंप्यूटर अनुदेशक"
+      ]
+    },
+    "total_vacancies": {
+      "evidence": {
+        "total_vacancies": "वरिष्ठ कंप्यूटर अनुदेशक के कुल 322 ... एवं बेसिक कंप्यूटर अनुदेशक के कुल 3629"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 3951
+    }
+  },
+  "first_seen": "2026-10-28T12:20:56+00:00",
+  "id": "83b7361a8bac",
+  "kind": "notification",
+  "org": "RSSB Rajasthan",
+  "pdf": {
+    "bytes": 91493,
+    "pages": 1,
+    "sha256": "396940b64463206af95b9c50bf99d5435776321301b2fd681a1dbcc5cf3c903d",
+    "text_kind": "text"
+  },
+  "source_id": "rssb-home",
+  "status": "pending_review",
+  "title": "28-10-2026 - Basic and Senior Computer Instructor 2026 : Ammended Advertisement",
+  "url": "https://rssb.rajasthan.gov.in/storage/news_item/1793188157.pdf"
+}
