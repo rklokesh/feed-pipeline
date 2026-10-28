@@ -217,6 +217,12 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 
 /* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.exlink { margin-top: 2px; }
+.exlink a { text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+.kv.tl .r { grid-template-columns: 7.5rem 1fr; }
+.kv.tl .r small { display: inline; margin-left: 6px; }
+.kv.tl a.r .v::after, .kv.rel a.r .v.g::after { content: none; }
+@media (max-width: 640px) { .kv.tl .r { grid-template-columns: 1fr; } }
 .ogimg { display: block; width: 100%; height: auto; margin: 14px auto 0; border: 1px solid var(--line); }
 .hrow { display: flex; align-items: center; justify-content: center; gap: 18px; }
 .hrow.has-logo h1 { text-align: left; margin: 0; }
@@ -264,6 +270,7 @@ html[lang="hi"] .hisum { display: none; }
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=results" data-t="crumbType">Results</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">UPPSC</span></nav>
       <h1 data-t="h1">UPPSC Regional Inspector Technical 2020 Final Result</h1>
       <p class="meta g" data-t="metaV">Updated 22 Oct 2026 · Source: uppsc.up.nic.in</p>
+      
       <p class="status"><span id="state">Final result declared</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Uttar Pradesh Public Service Commission has released the final result for the Regional Inspector Technical Examination 2020. A total of 11 candidates have been provisionally selected. Candidates can view their names and roll numbers in the result list.</p>
       <img class="ogimg" id="ogimg" src="/notice/uppsc-regional-inspector-technical-2020-final-result/og.png" data-en="/notice/uppsc-regional-inspector-technical-2020-final-result/og.png" data-hi="/notice/uppsc-regional-inspector-technical-2020-final-result/og-hi.png" width="1200" height="675" alt="UPPSC Regional Inspector Technical 2020 Final Result — summary card" decoding="async" onerror="this.hidden=true">

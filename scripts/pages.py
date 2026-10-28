@@ -208,7 +208,7 @@ SITE_URL = os.environ.get("SITE_URL", "https://sarkarichart.pages.dev")   # chan
 CAT_SLUG = {"Job": "jobs", "Result": "results", "Admit card": "admit-cards", "Answer key": "answer-keys"}
 
 
-def render(n: dict, slug: str, related: list | None = None) -> str:
+def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | None = None) -> str:
     c, pg = n.get("card") or {}, n.get("page") or {}
     typ = c.get("type", "Job")
     en, hi = {}, {}
@@ -272,10 +272,15 @@ def render(n: dict, slug: str, related: list | None = None) -> str:
     src_host = host(n.get("board_url") or site or n.get("url") or "")   # the board's own site, not a PDF mirror (e.g. cloudfront)
     en["metaV"] = f"Updated {d_en(checked)}" + (f" · Source: {src_host}" if src_host else "")
     hi["metaV"] = f"अपडेट {d_hi(checked)}" + (f" · स्रोत: {src_host}" if src_host else "")
+    exam_g = (exam_groups or {}).get(((n.get("exam") or {}).get("key")) or "")
+    if exam_g:
+        en["exLink"] = f'All updates for {exam_g["name_en"]} →'
+        hi["exLink"] = f'{exam_g["name_hi"] or exam_g["name_en"]} के सभी अपडेट →'
     main = [f'''    <div class="title">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat={CAT_SLUG.get(typ, "jobs")}" data-t="crumbType">{esc(en["crumbType"])}</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">{esc(en["org"])}</span></nav>
       <h1 data-t="h1">{esc(en["h1"])}</h1>
       <p class="meta g" data-t="metaV">{esc(en["metaV"])}</p>
+      {f'<p class="exlink"><a href="/exam/{exam_g["key"]}/" data-t="exLink">{esc(en["exLink"])}</a></p>' if exam_g else ""}
       <p class="status"><span id="state">{esc(en["statusV"])}</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       {f'<p class="lead" data-t="summary">{esc(en["summary"])}</p>' if en["summary"] else ""}
       <img class="ogimg" id="ogimg" src="/notice/{slug}/og.png" data-en="/notice/{slug}/og.png" data-hi="/notice/{slug}/og-hi.png" width="1200" height="675" alt="{esc(en["h1"])} — summary card" decoding="async" onerror="this.hidden=true">
@@ -486,6 +491,12 @@ def main():
     files = sorted(NOTICES.glob("*.json"))
     notices = [(f, json.loads(f.read_text())) for f in files]
     taken = {n["slug"]: n["id"] for _, n in notices if n.get("slug")}
+    try:
+        from exams import groups as _exam_groups
+        exam_groups = _exam_groups([x for _, x in notices])
+    except Exception as e:  # noqa: BLE001 — an exam-page problem must never stop notice pages
+        print(f"  exam groups unavailable: {e}")
+        exam_groups = {}
     for f, n in notices:
         if n.get("status") != "approved":
             continue
@@ -514,7 +525,7 @@ def main():
         out = SITE / "notice" / slug / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
         try:
-            out.write_text(render(n, slug, related_for(n, notices)), encoding="utf-8")
+            out.write_text(render(n, slug, related_for(n, notices), exam_groups), encoding="utf-8")
         except Exception as e:  # noqa: BLE001 — keep going; this page keeps its previous version
             print(f"  {n['id']}: render failed ({type(e).__name__}: {e})"[:300])
             continue

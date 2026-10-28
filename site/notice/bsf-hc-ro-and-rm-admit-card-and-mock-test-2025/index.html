@@ -217,6 +217,12 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 
 /* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.exlink { margin-top: 2px; }
+.exlink a { text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+.kv.tl .r { grid-template-columns: 7.5rem 1fr; }
+.kv.tl .r small { display: inline; margin-left: 6px; }
+.kv.tl a.r .v::after, .kv.rel a.r .v.g::after { content: none; }
+@media (max-width: 640px) { .kv.tl .r { grid-template-columns: 1fr; } }
 .ogimg { display: block; width: 100%; height: auto; margin: 14px auto 0; border: 1px solid var(--line); }
 .hrow { display: flex; align-items: center; justify-content: center; gap: 18px; }
 .hrow.has-logo h1 { text-align: left; margin: 0; }
@@ -264,6 +270,7 @@ html[lang="hi"] .hisum { display: none; }
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=admit-cards" data-t="crumbType">Admit cards</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">BSF</span></nav>
       <h1 data-t="h1">BSF HC RO &amp; RM Admit Card and Mock Test 2025</h1>
       <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: rectt.bsf.gov.in</p>
+      
       <p class="status"><span id="state">Admit card released</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">The Border Security Force has released the e-admit cards and mock test links for the Computer Based Test (CBT) for Head Constable (RO) and Head Constable (RM) posts in BSF Comn Setup 2025. Candidates can download their admit cards and practice with the mock test links.</p>
       <img class="ogimg" id="ogimg" src="/notice/bsf-hc-ro-and-rm-admit-card-and-mock-test-2025/og.png" data-en="/notice/bsf-hc-ro-and-rm-admit-card-and-mock-test-2025/og.png" data-hi="/notice/bsf-hc-ro-and-rm-admit-card-and-mock-test-2025/og-hi.png" width="1200" height="675" alt="BSF HC RO &amp; RM Admit Card and Mock Test 2025 — summary card" decoding="async" onerror="this.hidden=true">

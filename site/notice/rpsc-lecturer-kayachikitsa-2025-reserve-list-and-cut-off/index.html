@@ -217,6 +217,12 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 
 /* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.exlink { margin-top: 2px; }
+.exlink a { text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+.kv.tl .r { grid-template-columns: 7.5rem 1fr; }
+.kv.tl .r small { display: inline; margin-left: 6px; }
+.kv.tl a.r .v::after, .kv.rel a.r .v.g::after { content: none; }
+@media (max-width: 640px) { .kv.tl .r { grid-template-columns: 1fr; } }
 .ogimg { display: block; width: 100%; height: auto; margin: 14px auto 0; border: 1px solid var(--line); }
 .hrow { display: flex; align-items: center; justify-content: center; gap: 18px; }
 .hrow.has-logo h1 { text-align: left; margin: 0; }
@@ -264,6 +270,7 @@ html[lang="hi"] .hisum { display: none; }
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=results" data-t="crumbType">Results</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">RPSC</span></nav>
       <h1 data-t="h1">RPSC Lecturer Kayachikitsa 2025 Reserve List and Cut Off</h1>
       <p class="meta g" data-t="metaV">Updated 26 Oct 2026 · Source: rpsc.rajasthan.gov.in</p>
+      
       <p class="status"><span id="state">Reserve list and cut-off marks declared</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">RPSC has released the reserve list and cut-off marks for the Lecturer Kayachikitsa Examination 2025 under the Ayush Department. Candidates included in the reserve list can check their roll number and merit rank. The recommended candidate&#x27;s name will be forwarded for appointment upon requisition.</p>
       <img class="ogimg" id="ogimg" src="/notice/rpsc-lecturer-kayachikitsa-2025-reserve-list-and-cut-off/og.png" data-en="/notice/rpsc-lecturer-kayachikitsa-2025-reserve-list-and-cut-off/og.png" data-hi="/notice/rpsc-lecturer-kayachikitsa-2025-reserve-list-and-cut-off/og-hi.png" width="1200" height="675" alt="RPSC Lecturer Kayachikitsa 2025 Reserve List and Cut Off — summary card" decoding="async" onerror="this.hidden=true">

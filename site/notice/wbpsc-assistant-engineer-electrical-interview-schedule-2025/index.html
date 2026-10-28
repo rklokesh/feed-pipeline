@@ -217,6 +217,12 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 
 /* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.exlink { margin-top: 2px; }
+.exlink a { text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+.kv.tl .r { grid-template-columns: 7.5rem 1fr; }
+.kv.tl .r small { display: inline; margin-left: 6px; }
+.kv.tl a.r .v::after, .kv.rel a.r .v.g::after { content: none; }
+@media (max-width: 640px) { .kv.tl .r { grid-template-columns: 1fr; } }
 .ogimg { display: block; width: 100%; height: auto; margin: 14px auto 0; border: 1px solid var(--line); }
 .hrow { display: flex; align-items: center; justify-content: center; gap: 18px; }
 .hrow.has-logo h1 { text-align: left; margin: 0; }
@@ -264,6 +270,7 @@ html[lang="hi"] .hisum { display: none; }
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=admit-cards" data-t="crumbType">Admit cards</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">WBPSC</span></nav>
       <h1 data-t="h1">WBPSC Assistant Engineer Electrical Interview Schedule 2025</h1>
       <p class="meta g" data-t="metaV">Updated 28 Oct 2026 · Source: psc.wb.gov.in</p>
+      
       <p class="status"><span id="state">Interview schedule released, e-call letters available from 06 Nov 2025</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">The interview schedule for Assistant Engineer (Electrical) under Advt. No. 21/2020 has been released by WBPSC. Candidates can download their e-interview call letters starting from 6 November 2025. Check your roll number, interview date, and reporting time in the official notice.</p>
       <img class="ogimg" id="ogimg" src="/notice/wbpsc-assistant-engineer-electrical-interview-schedule-2025/og.png" data-en="/notice/wbpsc-assistant-engineer-electrical-interview-schedule-2025/og.png" data-hi="/notice/wbpsc-assistant-engineer-electrical-interview-schedule-2025/og-hi.png" width="1200" height="675" alt="WBPSC Assistant Engineer Electrical Interview Schedule 2025 — summary card" decoding="async" onerror="this.hidden=true">

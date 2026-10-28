@@ -217,6 +217,12 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .kv.rel .r { grid-template-columns: 1fr auto; }
 
 /* ---- article layout (Oct 2026): board logo, big blog heading, at-a-glance box, contents, tables ---- */
+.exlink { margin-top: 2px; }
+.exlink a { text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+.kv.tl .r { grid-template-columns: 7.5rem 1fr; }
+.kv.tl .r small { display: inline; margin-left: 6px; }
+.kv.tl a.r .v::after, .kv.rel a.r .v.g::after { content: none; }
+@media (max-width: 640px) { .kv.tl .r { grid-template-columns: 1fr; } }
 .ogimg { display: block; width: 100%; height: auto; margin: 14px auto 0; border: 1px solid var(--line); }
 .hrow { display: flex; align-items: center; justify-content: center; gap: 18px; }
 .hrow.has-logo h1 { text-align: left; margin: 0; }
@@ -264,6 +270,7 @@ html[lang="hi"] .hisum { display: none; }
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">RRC Western Railway</span></nav>
       <h1 data-t="h1">RRC Western Railway Sports Quota Volleyball Amendment 2026</h1>
       <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: rrc-wr.com</p>
+      
       <p class="status"><span id="state">Amendment notice released regarding volleyball sports discipline eligibility</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">Railway Recruitment Cell Western Railway has issued an amendment regarding volleyball sports achievements eligibility under Employment Notification No. RRC/WR/01/2026. Candidates applying for the sports quota should carefully review the revised guidelines on volleyball certificates before submitting their applications.</p>
       <img class="ogimg" id="ogimg" src="/notice/western-railway-sports-quota-2026-volleyball-amendment/og.png" data-en="/notice/western-railway-sports-quota-2026-volleyball-amendment/og.png" data-hi="/notice/western-railway-sports-quota-2026-volleyball-amendment/og-hi.png" width="1200" height="675" alt="RRC Western Railway Sports Quota Volleyball Amendment 2026 — summary card" decoding="async" onerror="this.hidden=true">

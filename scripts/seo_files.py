@@ -40,6 +40,10 @@ def sitemap(items):
     urls = [(f"{SITE_URL}/", today, "hourly", "1.0")]
     urls += [(f"{SITE_URL}/{p}/", "2026-10-28", "monthly", "0.3") for p in ("about", "contact", "privacy", "terms")]
     urls += [(f"{SITE_URL}/notice/{i['slug']}/", i["lastmod"], "weekly", "0.8") for i in items]
+    exam_dir = SITE / "exam"
+    if exam_dir.exists():
+        urls.append((f"{SITE_URL}/exam/", today, "daily", "0.7"))
+        urls += [(f"{SITE_URL}/exam/{d.name}/", today, "daily", "0.9") for d in sorted(exam_dir.iterdir()) if (d / "index.html").exists()]
     body = "".join(f"  <url><loc>{html.escape(u)}</loc><lastmod>{m}</lastmod><changefreq>{c}</changefreq><priority>{p}</priority></url>\n"
                    for u, m, c, p in urls)
     (SITE / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n'
