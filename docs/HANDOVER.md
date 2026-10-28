@@ -170,7 +170,7 @@ publish.yml (when the owner adds a label to an issue, open or closed):
    Search Console + Bing. Keyword research + ideal reader profile first.
 5. After launch: one page per exam, Google Discover follow link, card preview on notice pages, parked bookmark
    pop-up and recent searches.
-6. Owner to-do: Telegram channel photo = `sarkarichart-logo.png`; buy the domain.
+6. Owner to-do: buy the domain (Telegram channel photo is set). On domain day also set up Cloudflare Email Routing for contact@sarkarichart.com and add it to /contact/. Never put the owner's name or company on the site.
 
 ## 7. Mac mini notes
 
