@@ -32,105 +32,155 @@
   "issue": 84,
   "issue_tidy": true,
   "kind": "admit_card",
-  "notice_date": "2026-10-23",
+  "notice_date": "2026-09-07",
   "org": "UPPSC",
   "page": {
+    "after_en": [
+      "Appear for the written examination on 06 Nov 2026 with the admit card and valid photo ID."
+    ],
+    "after_hi": [
+      "प्रवेश पत्र और वैध फोटो पहचान पत्र के साथ 06 नवंबर 2026 को लिखित परीक्षा में शामिल हों।"
+    ],
     "age": [],
     "apply_start": null,
     "apply_url": "https://uppsc.up.nic.in",
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Keep your OTR number ready",
+      "Download and print the admit card well in advance",
+      "Check exam centre and shift timings"
+    ],
+    "checklist_hi": [
+      "अपना ओटीआर नंबर तैयार रखें",
+      "समय रहते प्रवेश पत्र डाउनलोड करें और प्रिंट करें",
+      "परीक्षा केंद्र और पाली के समय की जांच करें"
+    ],
     "conducted_by_en": "Uttar Pradesh Public Service Commission (UPPSC)",
-    "conducted_by_hi": "उत्तर प्रदेश लोक सेवा आयोग",
+    "conducted_by_hi": "उत्तर प्रदेश लोक सेवा आयोग (यूपीपीएससी)",
     "dates": [
       {
-        "label_en": "District information slip available from",
-        "label_hi": "जिला सूचना पर्ची उपलब्ध होने की तिथि",
-        "value_en": "24 Oct 2026",
-        "value_hi": "24 अक्टू 2026"
-      },
-      {
-        "label_en": "Admit card download last date",
-        "label_hi": "प्रवेश पत्र डाउनलोड करने की अंतिम तिथि",
-        "value_en": "30 Oct 2026",
-        "value_hi": "30 अक्टू 2026"
-      },
-      {
-        "label_en": "Exam date",
-        "label_hi": "परीक्षा तिथि",
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा की तिथि",
         "value_en": "06 Nov 2026",
-        "value_hi": "06 नव 2026"
+        "value_hi": "06 नवंबर 2026"
       }
+    ],
+    "documents_en": [
+      "Admit Card",
+      "Valid Photo ID Proof"
+    ],
+    "documents_hi": [
+      "प्रवेश पत्र",
+      "वैध फोटो पहचान पत्र"
     ],
     "eligibility": [],
     "exam_date": "2026-11-06",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a recruitment examination conducted by the Uttar Pradesh Public Service Commission to select candidates for various posts in the state agriculture services.",
+        "a_hi": "यह राज्य कृषि सेवा में विभिन्न पदों के लिए उम्मीदवारों का चयन करने हेतु उत्तर प्रदेश लोक सेवा आयोग द्वारा आयोजित एक भर्ती परीक्षा है।",
+        "q_en": "What is UPPSC Combined State Agriculture Services Exam?",
+        "q_hi": "यूपीपीएससी सम्मिलित राज्य कृषि सेवा परीक्षा क्या है?"
+      }
+    ],
     "extra": [
       {
-        "label_en": "Exam Timing",
-        "label_hi": "परीक्षा का समय",
-        "value_en": "Session 1: 09:00 AM to 11:00 AM, Session 2: 03:00 PM to 05:00 PM",
-        "value_hi": "सत्र 1: सुबह 09:00 से सुबह 11:00 बजे तक, सत्र 2: दोपहर 03:00 से शाम 05:00 बजे तक"
+        "label_en": "Exam Shifts",
+        "label_hi": "परीक्षा की पालियां",
+        "value_en": "Shift 1: 09:00 AM to 11:00 AM, Shift 2: 03:00 PM to 05:00 PM",
+        "value_hi": "प्रथम पाली: सुबह 09:00 से 11:00 बजे तक, द्वितीय पाली: दोपहर 03:00 से 05:00 बजे तक"
       }
     ],
     "faq": [
       {
         "a_en": "The exam is scheduled to be held on 06 November 2026.",
-        "a_hi": "परीक्षा 06 नवंबर 2026 को आयोजित होने निर्धारित है।",
+        "a_hi": "परीक्षा 06 नवंबर 2026 को आयोजित की जानी है।",
         "q_en": "When is the UPPSC Combined State Agriculture Services Exam 2023 scheduled?",
-        "q_hi": "उत्तर प्रदेश लोक सेवा आयोग सम्मिलित राज्य कृषि सेवा परीक्षा 2023 कब आयोजित होगी?"
+        "q_hi": "यूपीपीएससी सम्मिलित राज्य कृषि सेवा परीक्षा 2023 कब आयोजित की जाएगी?"
       },
       {
-        "a_en": "You can download it from the official website https://uppsc.up.nic.in.",
-        "a_hi": "आप इसे आधिकारिक वेबसाइट https://uppsc.up.nic.in से डाउनलोड कर सकते हैं।",
-        "q_en": "Where can I download the admit card or district information slip?",
-        "q_hi": "मैं प्रवेश पत्र या जिला सूचना पर्ची कहां से डाउनलोड कर सकता हूं?"
+        "a_en": "You can download it from the official website https://uppsc.up.nic.in using your OTR details.",
+        "a_hi": "आप अपने ओटीआर विवरण का उपयोग करके आधिकारिक वेबसाइट https://uppsc.up.nic.in से इसे डाउनलोड कर सकते हैं।",
+        "q_en": "How can I download my admit card or check district information?",
+        "q_hi": "मैं अपना प्रवेश पत्र कैसे डाउनलोड कर सकता हूँ या जिला सूचना कैसे देख सकता हूँ?"
       }
     ],
     "fees": [],
     "h1_en": "UPPSC Combined State Agriculture Services Exam 2023 Admit Card",
     "h1_hi": "उत्तर प्रदेश लोक सेवा आयोग सम्मिलित राज्य कृषि सेवा परीक्षा 2023 प्रवेश पत्र",
     "how_en": [
-      "Visit the official UPPSC website at https://uppsc.up.nic.in",
-      "Click on the link for District Information Slip or Admit Card for Advt. No. A-3/E-1/2023",
-      "Enter your login credentials to view and download your district information slip or admit card"
+      "Visit the official website of UPPSC at https://uppsc.up.nic.in",
+      "Click on the link for district information slip or admit card download",
+      "Log in using your One Time Registration (OTR) number and required details",
+      "View your district information slip and download the admit card for the exam"
     ],
     "how_hi": [
-      "आधिकारिक वेबसाइट https://uppsc.up.nic.in पर जाएं",
-      "विज्ञापन संख्या ए-3/ई-1/2023 के लिए जिला सूचना पर्ची या प्रवेश पत्र के लिंक पर क्लिक करें",
-      "अपनी जिला सूचना पर्ची या प्रवेश पत्र देखने और डाउनलोड करने के लिए अपना लॉगिन विवरण दर्ज करें"
+      "यूपीपीएससी की आधिकारिक वेबसाइट https://uppsc.up.nic.in पर जाएं",
+      "जिला सूचना पर्ची या प्रवेश पत्र डाउनलोड करने के लिए दिए गए लिंक पर क्लिक करें",
+      "अपने वन टाइम रजिस्ट्रेशन (ओटीआर) नंबर और आवश्यक विवरण का उपयोग करके लॉगिन करें",
+      "अपनी जिला सूचना पर्ची देखें और परीक्षा के लिए प्रवेश पत्र डाउनलोड करें"
     ],
-    "intro_en": "Uttar Pradesh Public Service Commission (UPPSC) has issued a notice regarding the district information slip and admit card download for the Combined State Agriculture Services Examination 2023. The examination is scheduled to be held on 06 November 2026. Registered candidates can check their district information slip and download admit cards from the official website.",
-    "intro_hi": "उत्तर प्रदेश लोक सेवा आयोग ने सम्मिलित राज्य कृषि सेवा परीक्षा 2023 के लिए जिला सूचना पर्ची और प्रवेश पत्र डाउनलोड करने के संबंध में नोटिस जारी किया है। परीक्षा 06 नवंबर 2026 को आयोजित होने निर्धारित है। पंजीकृत उम्मीदवार आधिकारिक वेबसाइट से अपनी जिला सूचना पर्ची और प्रवेश पत्र डाउनलोड कर सकते हैं।",
+    "intro_en": "The Uttar Pradesh Public Service Commission (UPPSC) has announced the exam schedule and district information slip details for the Combined State Agriculture Services Examination 2023 (Advt. No. A-3/E-1/2023). The examination is scheduled to be held on 06 November 2026 in two shifts. Candidates can check their district allocation and download their admit cards using their OTR number and credentials on the official website.",
+    "intro_hi": "उत्तर प्रदेश लोक सेवा आयोग (यूपीपीएससी) ने सम्मिलित राज्य कृषि सेवा परीक्षा 2023 (विज्ञापन संख्या A-3/E-1/2023) के लिए परीक्षा कार्यक्रम और जिला सूचना पर्ची का विवरण घोषित कर दिया है। यह परीक्षा 06 नवंबर 2026 को दो पालियों में आयोजित की जानी है। उम्मीदवार आधिकारिक वेबसाइट पर अपने ओटीआर नंबर और विवरण का उपयोग करके अपने जिला आवंटन की जांच कर सकते हैं और प्रवेश पत्र डाउनलोड कर सकते हैं।",
     "last_date": null,
-    "notice_date": "2026-10-23",
+    "mistakes_en": [],
+    "mistakes_hi": [],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-09-07",
     "official_site": "https://uppsc.up.nic.in",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Exam date",
-        "label_hi": "परीक्षा तिथि",
-        "value_en": "06 Nov 2026",
-        "value_hi": "06 नव 2026"
+        "label_en": "Exam Name",
+        "label_hi": "परीक्षा का नाम",
+        "value_en": "Combined State Agriculture Services Examination 2023",
+        "value_hi": "सम्मिलित राज्य कृषि सेवा परीक्षा 2023"
       },
       {
-        "label_en": "Advertisement number",
+        "label_en": "Advertisement Number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "A-3/E-1/2023",
-        "value_hi": "ए-3/ई-1/2023"
+        "value_hi": "A-3/E-1/2023"
+      },
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा की तिथि",
+        "value_en": "06 Nov 2026",
+        "value_hi": "06 नवंबर 2026"
+      },
+      {
+        "label_en": "Admit Card Status",
+        "label_hi": "प्रवेश पत्र की स्थिति",
+        "value_en": "District information slip available, download admit card from official website",
+        "value_hi": "जिला सूचना पर्ची उपलब्ध है, आधिकारिक वेबसाइट से प्रवेश पत्र डाउनलोड करें"
       }
     ],
-    "selection_en": [
-      "Written Examination",
-      "Interview"
+    "salary": [],
+    "selection_en": [],
+    "selection_hi": [],
+    "share_card": {
+      "headline_en": "Admit Card Out",
+      "headline_hi": "प्रवेश पत्र जारी",
+      "kind": "admit",
+      "line_en": "Agriculture Services Exam 2023",
+      "line_hi": "कृषि सेवा परीक्षा 2023",
+      "posts": null
+    },
+    "status_en": "District information slip and admit card notice released, exam on 06 Nov 2026",
+    "status_hi": "जिला सूचना पर्ची और प्रवेश पत्र का नोटिस जारी, परीक्षा 06 नवंबर 2026 को",
+    "summary_en": "Uttar Pradesh Public Service Commission has released the notice regarding district information slip and admit card for the Combined State Agriculture Services Examination 2023. Candidates can check their district information and download admit cards from the official website.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने सम्मिलित राज्य कृषि सेवा परीक्षा 2023 के लिए जिला सूचना पर्ची और प्रवेश पत्र के संबंध में नोटिस जारी किया है। उम्मीदवार आधिकारिक वेबसाइट से अपने जिला की जानकारी देख सकते हैं और प्रवेश पत्र डाउनलोड कर सकते हैं。",
+    "vacancies": [],
+    "who_en": [
+      "Candidates who applied for the UPPSC Combined State Agriculture Services Exam 2023"
     ],
-    "selection_hi": [
-      "लिखित परीक्षा",
-      "साक्षात्कार"
-    ],
-    "status_en": "District information slip and admit card notice released",
-    "status_hi": "जिला सूचना पर्ची और प्रवेश पत्र का नोटिस जारी",
-    "summary_en": "Uttar Pradesh Public Service Commission has released the notice regarding district information slip and admit card for the Combined State Agriculture Services Examination 2023. Candidates can check their exam details and download documents from the official website.",
-    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने सम्मिलित राज्य कृषि सेवा परीक्षा 2023 के लिए जिला सूचना पर्ची और प्रवेश पत्र के संबंध में नोटिस जारी किया है। उम्मीदवार आधिकारिक वेबसाइट से अपने परीक्षा विवरण की जांच कर सकते हैं।",
-    "vacancies": []
+    "who_hi": [
+      "वे उम्मीदवार जिन्होंने यूपीपीएससी सम्मिलित राज्य कृषि सेवा परीक्षा 2023 के लिए आवेदन किया है"
+    ]
   },
   "pdf": {
     "bytes": 2013920,

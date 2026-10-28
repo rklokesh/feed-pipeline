@@ -41,10 +41,31 @@
   "notice_date": "2026-10-09",
   "org": "CSBC Bihar",
   "page": {
+    "after_en": [
+      "Physical reporting and document submission at the Special Branch office.",
+      "Medical examination and character verification by the appointing authority prior to formal appointment."
+    ],
+    "after_hi": [
+      "विशेष शाखा कार्यालय में भौतिक रूप से उपस्थिति और दस्तावेज जमा करना।",
+      "औपचारिक नियुक्ति से पूर्व नियुक्ति प्राधिकारी द्वारा चिकित्सीय परीक्षा और चरित्र सत्यापन।"
+    ],
     "age": [],
     "apply_start": null,
-    "apply_url": "https://csbc.bihar.gov.in",
+    "apply_url": null,
+    "changes": [],
     "changes_from_notes": "",
+    "checklist_en": [
+      "Verify your roll number in the selection list PDF.",
+      "Keep all original educational, caste, and residential certificates ready.",
+      "Ensure you carry a valid photo identity proof.",
+      "Report to the Special Branch within the dates 25 Oct 2026 to 20 Nov 2026."
+    ],
+    "checklist_hi": [
+      "चयन सूची पीडीएफ में अपने अनुक्रमांक की जांच करें।",
+      "सभी मूल शैक्षणिक, जाति और आवासीय प्रमाण पत्र तैयार रखें।",
+      "सुनिश्चित करें कि आप एक वैध फोटो पहचान प्रमाण साथ रखें।",
+      "25 अक्टूबर 2026 से 20 नवंबर 2026 के बीच विशेष शाखा में उपस्थित हों।"
+    ],
     "conducted_by_en": "Central Selection Board of Constable (CSBC Bihar)",
     "conducted_by_hi": "केंद्रीय चयन बोर्ड सिपाही भर्ती (सीएसबीसी बिहार)",
     "dates": [
@@ -56,9 +77,15 @@
       },
       {
         "label_en": "Physical test date",
-        "label_hi": "शारीरिक परीक्षण तिथि",
+        "label_hi": "शारीरिक जांच तिथि",
         "value_en": "12 Sep 2026",
         "value_hi": "12 सितंबर 2026"
+      },
+      {
+        "label_en": "Result publication date",
+        "label_hi": "परिणाम प्रकाशन तिथि",
+        "value_en": "09 Oct 2026",
+        "value_hi": "09 अक्टूबर 2026"
       },
       {
         "label_en": "Joining period",
@@ -67,68 +94,122 @@
         "value_hi": "25 अक्टूबर 2026 से 20 नवंबर 2026"
       }
     ],
+    "documents_en": [
+      "Educational qualification certificates",
+      "Date of birth proof",
+      "Caste and residential certificate (for SC/ST candidates)",
+      "Caste-cum-residential-cum-creamy layer free certificate (for BC and EBC candidates)",
+      "Economically Weaker Section (EWS) certificate",
+      "Government servant certificate (if applicable)",
+      "Freedom Fighter dependent certificate (if applicable)",
+      "Valid photo ID card (Aadhaar Card, Voter ID, Driving Licence, etc.)"
+    ],
+    "documents_hi": [
+      "शैक्षणिक योग्यता प्रमाण पत्र",
+      "जन्म तिथि प्रमाण",
+      "जाति और आवासीय प्रमाण पत्र (अनुसूचित जाति और अनुसूचित जनजाति के उम्मीदवारों के लिए)",
+      "जाति-सह-आवासीय-सह-क्रीमीलेयर रहित प्रमाण पत्र (पिछड़ा वर्ग और अत्यंत पिछड़ा वर्ग के उम्मीदवारों के लिए)",
+      "आर्थिक रूप से कमजोर वर्ग (ईडब्ल्यूएस) का प्रमाण पत्र",
+      "सरकारी सेवक होने का प्रमाण पत्र (यदि लागू हो)",
+      "स्वतंत्रता सेनानी के पोता/पोती/नाति/नातिनी होने संबंधी प्रमाण पत्र (यदि लागू हो)",
+      "वैध फोटोयुक्त पहचान पत्र (आधार कार्ड, मतदाता पहचान पत्र, ड्राइविंग लाइसेंस, आदि)"
+    ],
     "eligibility": [
       {
-        "label_en": "Medical and Physical Standards",
-        "label_hi": "चिकित्सा और शारीरिक मानक",
-        "value_en": "Verified through PST (Height, Chest, Weight) and medical examination as per Bihar Police Manual rules.",
-        "value_hi": "बिहार पुलिस मैनुअल नियमों के अनुसार पीएसटी (ऊंचाई, सीता, वजन) और चिकित्सा परीक्षण के माध्यम से सत्यापित।"
+        "label_en": "Medical & Character",
+        "label_hi": "चिकित्सा और चरित्र",
+        "value_en": "Must be declared medically fit and clear character verification as per Bihar Police rules.",
+        "value_hi": "बिहार पुलिस नियमों के अनुसार चिकित्सीय रूप से फिट और चरित्र सत्यापन में योग्य होना अनिवार्य है।"
       }
     ],
     "exam_date": "2026-06-24",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a recruitment process conducted by CSBC Bihar to select constables for the Special Branch of Bihar Police under Advertisement No. 01/2026.",
+        "a_hi": "यह विज्ञापन संख्या 01/2026 के तहत बिहार पुलिस की विशेष शाखा के लिए सिपाहियों का चयन करने हेतु सीएसबीसी बिहार द्वारा आयोजित एक भर्ती प्रक्रिया है।",
+        "q_en": "What is the Bihar Police Special Branch Constable Recruitment?",
+        "q_hi": "बिहार पुलिस विशेष शाखा सिपाही भर्ती क्या है?"
+      }
+    ],
     "extra": [
       {
         "label_en": "Joining Authority",
         "label_hi": "नियुक्ति प्राधिकारी",
-        "value_en": "Superintendent of Police level officers of Special Branch, Bihar Police",
-        "value_hi": "बिहार पुलिस विशेष शाखा के पुलिस अधीक्षक स्तर के अधिकारी"
+        "value_en": "Superintendent of Police level officer, Special Branch, Bihar Police",
+        "value_hi": "पुलिस अधीक्षक स्तर के अधिकारी, विशेष शाखा, बिहार पुलिस"
       }
     ],
     "faq": [
       {
-        "a_en": "There are a total of 83 vacancies for the Constable (General Duty Close Cadre) post under Advt. No. 01/2026.",
-        "a_hi": "विज्ञापन संख्या 01/2026 के तहत सिपाही (सामान्य बंध संवर्ग) पद के लिए कुल 83 रिक्तियां हैं।",
-        "q_en": "How many total vacancies are there for Bihar Police Special Branch Constable Recruitment 2026?",
-        "q_hi": "बिहार पुलिस विशेष शाखा सिपाही भर्ती 2026 के लिए कुल कितनी रिक्तियां हैं?"
+        "a_en": "The final selection list was released on 09 October 2026.",
+        "a_hi": "अंतिम चयन सूची 09 अक्टूबर 2026 को जारी की गई थी।",
+        "q_en": "When was the final selection list released for Bihar Police Special Branch Constable Advt 01/2026?",
+        "q_hi": "बिहार पुलिस विशेष शाखा सिपाही विज्ञापन 01/2026 के लिए अंतिम चयन सूची कब जारी की गई?"
       },
       {
-        "a_en": "The written examination was conducted on 24 June 2026.",
-        "a_hi": "लिखित परीक्षा 24 जून 2026 को आयोजित की गई थी।",
-        "q_en": "When was the written examination conducted?",
-        "q_hi": "लिखित परीक्षा कब आयोजित की गई थी?"
+        "a_en": "There are a total of 83 vacancies for Constable in the Special Branch.",
+        "a_hi": "विशेष शाखा में सिपाही के लिए कुल 83 रिक्तियां हैं।",
+        "q_en": "How many total vacancies are there in this recruitment?",
+        "q_hi": "इस भर्ती में कुल कितनी रिक्तियां हैं?"
       },
       {
-        "a_en": "Selected candidates must report for joining from 25 October 2026 to 20 November 2026.",
-        "a_hi": "चयनित अभ्यर्थियों को 25 अक्टूबर 2026 से 20 नवंबर 2026 तक योगदान के लिए उपस्थित होना होगा।",
-        "q_en": "What are the dates for joining after final selection?",
-        "q_hi": "अंतिम चयन के बाद योगदान की तिथियां क्या हैं?"
+        "a_en": "Selected candidates must join between 25 October 2026 and 20 November 2026.",
+        "a_hi": "चयनित उम्मीदवारों को 25 अक्टूबर 2026 से 20 नवंबर 2026 के बीच योगदान करना होगा।",
+        "q_en": "When is the joining period for selected candidates?",
+        "q_hi": "चयनित उम्मीदवारों के लिए योगदान की अवधि कब है?"
+      },
+      {
+        "a_en": "You can download the selection list from the official CSBC Bihar website at https://csbc.bihar.gov.in.",
+        "a_hi": "आप सीएसबीसी बिहार की आधिकारिक वेबसाइट https://csbc.bihar.gov.in से चयन सूची डाउनलोड कर सकते हैं।",
+        "q_en": "Where can I download the final selection list PDF?",
+        "q_hi": "मैं अंतिम चयन सूची पीडीएफ कहाँ से डाउनलोड कर सकता हूँ?"
+      },
+      {
+        "a_en": "The advertisement number is 01/2026.",
+        "a_hi": "विज्ञापन संख्या 01/2026 है।",
+        "q_en": "What is the advertisement number for this recruitment?",
+        "q_hi": "इस भर्ती के लिए विज्ञापन संख्या क्या है?"
       }
     ],
     "fees": [],
     "h1_en": "Bihar Police Special Branch Constable Final Selection List 2026",
     "h1_hi": "बिहार पुलिस विशेष शाखा सिपाही अंतिम चयन सूची 2026",
     "how_en": [
-      "Check your roll number in the official final selection list PDF published by CSBC.",
-      "Ensure you possess all required original educational, caste, residential, and identity documents.",
-      "Report physically to the Special Branch of Bihar Police for joining between 25 Oct 2026 and 20 Nov 2026."
+      "Visit the official CSBC Bihar website at https://csbc.bihar.gov.in.",
+      "Check the Special Branch tab and click on the final selection list PDF notice for Advt. No. 01/2026.",
+      "Search your roll number in the published list of selected candidates.",
+      "Report for joining physically at the Special Branch with required original documents between 25 Oct 2026 and 20 Nov 2026."
     ],
     "how_hi": [
-      "सीएसबीसी द्वारा प्रकाशित आधिकारिक अंतिम चयन सूची पीडीएफ में अपना रोल नंबर जांचें।",
-      "सुनिश्चित करें कि आपके पास सभी आवश्यक मूल शैक्षणिक, जाति, आवासीय और पहचान दस्तावेज मौजूद हैं।",
-      "25 अक्टूबर 2026 से 20 नवंबर 2026 के बीच योगदान के लिए बिहार पुलिस की विशेष शाखा में भौतिक रूप से उपस्थित हों।"
+      "सीएसबीसी बिहार की आधिकारिक वेबसाइट https://csbc.bihar.gov.in पर जाएं।",
+      "विशेष शाखा टैब की जाँच करें और विज्ञापन संख्या 01/2026 की अंतिम चयन सूची पीडीएफ नोटिस पर क्लिक करें।",
+      "चयनित उम्मीदवारों की प्रकाशित सूची में अपना अनुक्रमांक खोजें।",
+      "25 अक्टूबर 2026 से 20 नवंबर 2026 के बीच आवश्यक मूल दस्तावेजों के साथ विशेष शाखा में भौतिक रूप से योगदान के लिए उपस्थित हों।"
     ],
-    "intro_en": "The Central Selection Board of Constable (CSBC Bihar) has published the final selection list for the recruitment of Constables (General Duty Close Cadre) in the Special Branch of Bihar Police under Advertisement No. 01/2026. The written examination was conducted on 24 June 2026, followed by the Physical Standard Test (PST) on 12 September 2026. A total of 83 candidates have been finally selected. Selected candidates must physically report for joining with required original documents from 25 October 2026 to 20 November 2026.",
-    "intro_hi": "केंद्रीय चयन बोर्ड सिपाही भर्ती (सीएसबीसी बिहार) ने विज्ञापन संख्या 01/2026 के अंतर्गत बिहार पुलिस की विशेष शाखा में सिपाही (सामान्य बंध संवर्ग) पदों पर भर्ती के लिए अंतिम चयन सूची प्रकाशित कर दी है। लिखित परीक्षा 24 जून 2026 को आयोजित की गई थी, जिसके बाद 12 सितंबर 2026 को शारीरिक मानक परीक्षण (पीएसटी) हुआ। कुल 83 अभ्यर्थियों का अंतिम रूप से चयन किया गया है। चयनित अभ्यर्थियों को 25 अक्टूबर 2026 से 20 नवंबर 2026 तक आवश्यक मूल दस्तावेजों के साथ योगदान के लिए व्यक्तिगत रूप से उपस्थित होना होगा।",
+    "intro_en": "Central Selection Board of Constable (CSBC), Bihar has announced the final selection list for the recruitment of Constables (General Duty Close Cadre) in the Special Branch of Bihar Police under Advertisement No. 01/2026. The written examination was conducted on 24 June 2026, followed by the Physical Standard Test (PST) on 12 September 2026. A total of 83 candidates have been successfully recommended for final appointment. Selected candidates must report for joining with required documents between 25 October 2026 and 20 November 2026.",
+    "intro_hi": "केंद्रीय चयन बोर्ड सिपाही भर्ती (सीएसबीसी), बिहार ने विज्ञापन संख्या 01/2026 के अंतर्गत बिहार पुलिस विशेष शाखा में सिपाही (सामान्य बंद संवर्ग) पदों पर भर्ती के लिए अंतिम चयन सूची घोषित कर दी है। लिखित परीक्षा 24 जून 2026 को आयोजित की गई थी, जिसके बाद 12 सितंबर 2026 को शारीरिक मानक परीक्षा (पीएसटी) आयोजित हुई। कुल 83 उम्मीदवारों को अंतिम नियुक्ति के लिए अनुशंसित किया गया है। चयनित अभ्यर्थियों को 25 अक्टूबर 2026 से 20 नवंबर 2026 के बीच आवश्यक दस्तावेजों के साथ योगदान के लिए उपस्थित होना होगा।",
     "last_date": null,
+    "mistakes_en": [
+      "Failing to report for joining within the stipulated window from 25 October 2026 to 20 November 2026.",
+      "Missing mandatory original certificates during physical verification at the joining venue."
+    ],
+    "mistakes_hi": [
+      "25 अक्टूबर 2026 से 20 नवंबर 20 नवंबर 2026 की निर्धारित अवधि के भीतर योगदान के लिए उपस्थित होने में विफल रहना।",
+      "योगदान स्थल पर शारीरिक सत्यापन के दौरान अनिवार्य मूल प्रमाण पत्र प्रस्तुत न करना।"
+    ],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": "2026-10-09",
     "official_site": "https://csbc.bihar.gov.in",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
         "label_en": "Posts",
         "label_hi": "पद",
         "value_en": "Constable (General Duty Close Cadre)",
-        "value_hi": "सिपाही (सामान्य बंध संवर्ग)"
+        "value_hi": "सिपाही (सामान्य बंद संवर्ग)"
       },
       {
         "label_en": "Total vacancies",
@@ -137,16 +218,16 @@
         "value_hi": "83"
       },
       {
-        "label_en": "Joining dates",
-        "label_hi": "योगदान की तिथियां",
-        "value_en": "25 Oct 2026 to 20 Nov 2026",
-        "value_hi": "25 अक्टूबर 2026 से 20 नवंबर 2026"
-      },
-      {
         "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "24 Jun 2026",
         "value_hi": "24 जून 2026"
+      },
+      {
+        "label_en": "Joining dates",
+        "label_hi": "योगदान तिथियां",
+        "value_en": "25 Oct 2026 to 20 Nov 2026",
+        "value_hi": "25 अक्टूबर 2026 से 20 नवंबर 2026"
       },
       {
         "label_en": "Advertisement number",
@@ -155,28 +236,45 @@
         "value_hi": "01/2026"
       }
     ],
+    "salary": [],
     "selection_en": [
       "Written Examination",
       "Physical Standard Test (PST) and Document Verification",
-      "Medical Examination and Character Verification"
+      "Medical Examination and Character Verification",
+      "Final Selection"
     ],
     "selection_hi": [
       "लिखित परीक्षा",
-      "शारीरिक मानक परीक्षण (पीएसटी) और दस्तावेज सत्यापन",
-      "चिकित्सा परीक्षण और चरित्र सत्यापन"
+      "शारीरिक मानक परीक्षा (पीएसटी) और दस्तावेज़ सत्यापन",
+      "चिकित्सीय परीक्षा और चरित्र सत्यापन",
+      "अंतिम चयन"
     ],
+    "share_card": {
+      "headline_en": "Final Selection List",
+      "headline_hi": "अंतिम चयन सूची",
+      "kind": "result",
+      "line_en": "Special Branch Constable",
+      "line_hi": "विशेष शाखा सिपाही",
+      "posts": 83
+    },
     "status_en": "Final selection list declared",
-    "status_hi": "अंतिम चयन सूची घोषित",
-    "summary_en": "CSBC Bihar has released the final selection list for the post of Constable in the Special Branch of Bihar Police against Advertisement No. 01/2026. A total of 83 candidates have been recommended for final selection based on written exam, physical test, and document verification. Selected candidates must report for joining between 25 Oct 2026 and 20 Nov 2026.",
-    "summary_hi": "केंद्रीय चयन बोर्ड सिपाही भर्ती, बिहार ने विज्ञापन संख्या 01/2026 के अंतर्गत बिहार पुलिस विशेष शाखा में सिपाही पद के लिए अंतिम चयन सूची जारी कर दी है। लिखित परीक्षा, शारीरिक परीक्षण और दस्तावेज सत्यापन के आधार पर कुल 83 उम्मीदवारों को अंतिम चयन के लिए अनुशंसित किया गया है। चयनित अभ्यर्थियों को 25 अक्टूबर 2026 से 20 नवंबर 2026 के बीच योगदान हेतु उपस्थित होना होगा।",
+    "status_hi": "अंतिमतः चयन सूची घोषित",
+    "summary_en": "CSBC Bihar has released the final selection list for the post of Constable in the Special Branch of Bihar Police against Advertisement No. 01/2026. A total of 83 candidates have been finally selected.",
+    "summary_hi": "केंद्रीय चयन बोर्ड सिपाही भर्ती, बिहार ने विज्ञापन संख्या 01/2026 के अंतर्गत बिहार पुलिस विशेष शाखा में सिपाही पद के लिए अंतिम चयन सूची जारी कर दी है। कुल 83 उम्मीदवारों का अंतिम रूप से चयन किया गया है।",
     "vacancies": [
       {
-        "detail_en": "General (UR) 34, EWS 8, SC 13, ST 1, EBC 15, BC 10, BC Women 2",
-        "detail_hi": "सामान्य (अनारक्षित) 34, आर्थिक रूप से कमजोर वर्ग 8, अनुसूचित जाति 13, अनुसूचित जनजाति 1, अत्यंत पिछड़ा वर्ग 15, पिछड़ा वर्ग 10, पिछड़ा वर्गों की महिलाएं 2",
+        "detail_en": "General (UR) 34, EWS 08, SC 13, ST 01, EBC 15, BC 10, BC Women 02",
+        "detail_hi": "अनारक्षित 34, ईडब्ल्यूएस 08, एससी 13, एसटी 01, ईबीसी 15, बीसी 10, बीसी महिला 02",
         "post_en": "Constable (General Duty Close Cadre)",
-        "post_hi": "सिपाही (सामान्य बंध संवर्ग)",
+        "post_hi": "सिपाही (सामान्य बंद संवर्ग)",
         "total": "83"
       }
+    ],
+    "who_en": [
+      "Candidates who appeared for the Bihar Police Special Branch Constable Advt. No. 01/2026 recruitment process."
+    ],
+    "who_hi": [
+      "बिहार पुलिस विशेष शाखा सिपाही विज्ञापन संख्या 01/2026 भर्ती प्रक्रिया में शामिल होने वाले उम्मीदवार।"
     ]
   },
   "pdf": {
