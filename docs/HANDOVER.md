@@ -171,8 +171,14 @@ publish.yml (when the owner adds a label to an issue, open or closed):
    tested on a copy 28 Oct) → commit + push → Search Console + Bing, submit /sitemap.xml → contact@ email via Cloudflare
    Email Routing. Reader profile + search words: `docs/KEYWORDS.md` (titles now follow it: "<board> <post> <search word>
    <year> – <hook>", browser title adds " | SarkariChart" when it fits).
-5. After launch: one page per exam, Google Discover follow link, card preview on notice pages, parked bookmark
-   pop-up and recent searches.
+5. **Exam pages are live (28 Oct)** — `scripts/exams.py`: `tag` (before pages.py; one batched AI call tags each notice with
+   `exam: {key: "ssc-cgl-2026", name_en, name_hi}`, `{}` = not part of an exam; reuses known keys) and `build` (after
+   pages.py): `/exam/<key>/` for exams with 2+ live notices (timeline with stage labels from share_card headlines, key
+   facts from the notification, more exams from the same board, ItemList schema), `/exam/` index, homepage "Exams:" line
+   (between `<!--EXAMS:START-->` markers), "All updates for <exam> →" link under each notice heading, sitemap entries.
+   First run: 113 notices tagged, 29 exam pages. To fix a wrong grouping, edit the notice's `exam` in data/notices.
+6. After launch: Google Discover follow link, parked bookmark pop-up and recent searches; MPSC/NVS/Employment News feed
+   readers; press kit page.
 6. Owner to-do: buy the domain (Telegram channel photo is set). On domain day also set up Cloudflare Email Routing for contact@sarkarichart.com and add it to /contact/. Never put the owner's name or company on the site.
 
 ## 7. Mac mini notes
