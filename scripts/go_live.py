@@ -39,7 +39,7 @@ def main():
     h.write_text(s.replace("  X-Robots-Tag: noindex, nofollow\n", ""), encoding="utf-8")
     print(f"address switched in {changed} files; noindex removed")
     env = {"SITE_URL": new, "PAGE_BACKFILL": "0", "GEMINI_API_KEY": "", "GITHUB_TOKEN": "", "PATH": "/usr/bin:/bin:/usr/local/bin"}
-    for cmd in (["scripts/pages.py"], ["scripts/exams.py", "build"], ["scripts/publish.py", "build"], ["scripts/report_page.py"], ["scripts/info_pages.py"], ["scripts/seo_files.py"]):
+    for cmd in (["scripts/pages.py"], ["scripts/exams.py", "build"], ["scripts/hubs.py", "build"], ["scripts/publish.py", "build"], ["scripts/report_page.py"], ["scripts/info_pages.py"], ["scripts/seo_files.py"]):
         subprocess.run([sys.executable, *cmd], cwd=ROOT, env=env, check=True)
     print("rebuilt. Now: git add -A site scripts templates functions && commit && push; then Search Console + Bing.")
 
