@@ -1,5 +1,20 @@
 {
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Senior Teacher (Mathematics)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Disqualified candidates list for an exam, not a main result or job notification",
+    "summary_en": "Rajasthan Public Service Commission released the list of disqualified candidates for the Senior Teacher Competitive Exam 2025 in Mathematics.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने वरिष्ठ अध्यापक प्रतियोगी परीक्षा 2025 गणित विषय के लिए अयोग्य घोषित किए गए अभ्यर्थियों की सूची जारी की है।",
+    "title_en": "RPSC Senior Teacher Mathematics Exam 2025 Disqualified Candidates List",
+    "title_hi": "आरपीएससी वरिष्ठ अध्यापक गणित परीक्षा 2025 अयोग्य अभ्यर्थियों की सूची",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "28/10/2026 List of Disqualified Candidates for Sr. Teacher (Sec. Edu.) Comp. Exam - 2025 (Mathematics)",
   "url": "https://rpsc.rajasthan.gov.in/Static/Result/E5EFDDEF7BA64669A9581EFEEC8CD66A.pdf"
 }
