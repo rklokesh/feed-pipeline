@@ -32,11 +32,11 @@ function card(t, o, hi) {
 body{width:1200px;height:675px;font-family:P,D,sans-serif;font-weight:800;background:#fff;position:relative;overflow:hidden}
 .b{position:absolute;left:0;width:1200px;display:flex;align-items:center;white-space:nowrap}
 .b1,.b2{justify-content:space-around;color:#fff}
-.b1{top:0;height:100px;background:#1A3E8C;font-size:72px;letter-spacing:2px;-webkit-mask:radial-gradient(circle 104px at 600px 98px,transparent 99%,#000 100%)}
-.b2{top:100px;height:96px;background:#D32F2F;border-bottom:6px solid #fff;-webkit-mask:radial-gradient(circle 104px at 600px -2px,transparent 99%,#000 100%)}
+.b1{top:0;height:100px;background:#1A3E8C;font-size:72px;letter-spacing:2px;-webkit-mask:radial-gradient(circle 90px at 600px 98px,transparent 99%,#000 100%)}
+.b2{top:100px;height:96px;background:#D32F2F;border-bottom:6px solid #fff;-webkit-mask:radial-gradient(circle 90px at 600px -2px,transparent 99%,#000 100%)}
 .h{width:420px;text-align:center;display:block;overflow:hidden}
 .b2 .h{font-size:${hi ? 46 : 42}px}
-.logo{position:absolute;left:508px;top:6px;width:184px;height:184px}
+.logo{position:absolute;left:520px;top:18px;width:160px;height:160px}
 .w{top:202px;height:205px;justify-content:center;gap:40px;padding:0 40px}
 .olimg{width:190px;height:190px;object-fit:contain;flex:none}
 .org{font-family:P9,D,sans-serif;font-weight:900;font-size:${hi ? 176 : 215}px;color:#7B1113;letter-spacing:2px;line-height:1.15;-webkit-text-stroke:3px #7B1113;${hi ? "padding-top:18px;" : ""}}
