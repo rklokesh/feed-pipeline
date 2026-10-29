@@ -189,7 +189,11 @@ publish.yml (when the owner adds a label to an issue, open or closed):
    `/govt-jobs/` index. Homepage stays as is: typing "10th pass", "UP", "graduate"… shows one quiet link line above the
    table (the reserved `#newline` slot, words in `/*HUBS:START*/`); footer link "Jobs by state". Moat rule from the owner:
    clean, fast, reliable, trustworthy, usable — never clutter the design to copy competitors.
-9. After launch: Google Discover follow link, parked bookmark pop-up and recent searches; MPSC/NVS/Employment News feed
+9. 29 Oct: exam pages show "Next: <stage> — <date> (as per the official notice)" from the nearest future date printed in
+   the exam's notices (`next_step` in exams.py; nothing shown if none is printed). Notice pages add "Official notice in
+   Hindi" / "Official how-to video" rows only when the AI's link appears verbatim in the PDF text. Homepage Posted
+   column has a fixed date width so the siren lines up on every row.
+10. After launch: Google Discover follow link, parked bookmark pop-up and recent searches; MPSC/NVS/Employment News feed
    readers; press kit page.
 6. Owner to-do: buy the domain (Telegram channel photo is set). On domain day also set up Cloudflare Email Routing for contact@sarkarichart.com and add it to /contact/. Never put the owner's name or company on the site.
 
