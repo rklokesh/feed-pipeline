@@ -1,5 +1,20 @@
 {
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Senior Teacher",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Press note for submitting detailed application form, not a new vacancy or final result",
+    "summary_en": "Rajasthan Public Service Commission released a press note regarding the online detailed application form for Senior Teacher competitive exam 2025 in Social Science and Hindi.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने वरिष्ठ शिक्षक प्रतियोगी परीक्षा 2025 के लिए ऑनलाइन विस्तृत आवेदन पत्र के संबंध में प्रेस नोट जारी किया है।",
+    "title_en": "RPSC Senior Teacher Social Science and Hindi Detailed Application 2025",
+    "title_hi": "आरपीएससी वरिष्ठ शिक्षक सामाजिक विज्ञान और हिंदी विस्तृत आवेदन 2025",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "scanned"
   },
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "29/10/2026 Press Note Regarding Online Detailed Application Form for Sr. Teacher (Sec. Edu.) Comp. Exam - 2025 (Social Science, Hindi)",
   "url": "https://rpsc.rajasthan.gov.in/Static/PressNotes/A76535B3-2C73-48C5-99CE-ED10D167944E.pdf"
 }

@@ -1,5 +1,20 @@
 {
   "board_url": "https://psc.uk.gov.in/candidate-corner/recruitment",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Review Officer / Assistant Review Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "It is a candidate rejection and ineligible list for document verification, not a main job listing or final result.",
+    "summary_en": "UKPSC has released the list of ineligible and rejected candidates for the Review Officer and Assistant Review Officer Examination 2024 following document verification.",
+    "summary_hi": "उत्तराखंड लोक सेवा आयोग ने समीक्षा अधिकारी एवं सहायक समीक्षा अधिकारी परीक्षा के दस्तावेज़ सत्यापन के बाद अपात्र और निरस्त अभ्यर्थियों की सूची जारी कर दी है।",
+    "title_en": "UKPSC RO ARO Examination 2024 Ineligible Candidates Notice",
+    "title_hi": "उत्तराखंड लोक सेवा आयोग समीक्षा अधिकारी सहायक समीक्षा अधिकारी परीक्षा अपात्र अभ्यर्थियों की सूची",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "ukpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "1718966831.pdf",
   "url": "https://psc.uk.gov.in/public/uploads/recruitment/1718966831.pdf"
 }
