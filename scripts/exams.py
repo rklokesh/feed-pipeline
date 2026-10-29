@@ -1,7 +1,7 @@
 """Exam pages: one permanent page per exam (e.g. /exam/ssc-cgl-2026/) with every official update for it, newest first.
 
   python scripts/exams.py tag     # before pages.py: AI tags new notices with their exam (one batched call per ~60 notices)
-  python scripts/exams.py build   # after pages.py: writes site/exam/<key>/, the homepage "Exams" tab rows, site/exam/index.html
+  python scripts/exams.py build   # after pages.py: writes site/exam/<key>/, site/exam/index.html (homepage Exams tab was removed 30 Oct; homepage_data is a no-op without its marker)
 
 A notice belongs to one exam: board + exam/post + cycle year ("ssc-cgl-2026"). Notification, date changes, admit card,
 answer key and result of the same cycle share the key. An exam page is made once it has 2+ live notices (a single
