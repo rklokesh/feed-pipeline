@@ -1,5 +1,20 @@
 {
   "board_url": "https://cisfrectt.cisf.gov.in/",
+  "card": {
+    "confidence": "medium",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "CT (Fire), CT (TM), CT (Driver & DCPO), ASI/Exe",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Notices regarding exam schedule and conduct of computer-based examination without application dates or new vacancy details.",
+    "summary_en": "CISF has released the notice for the conduct of computer-based examination for various posts. Candidates should check the schedule details.",
+    "summary_hi": "सीआईएसएफ ने विभिन्न पदों के लिए कंप्यूटर आधारित परीक्षा के आयोजन की सूचना जारी कर दी है। उम्मीदवार परीक्षा कार्यक्रम देख सकते हैं।",
+    "title_en": "CISF Constable and ASI Exam Schedule 2024",
+    "title_hi": "सीआईएसएफ कांस्टेबल और सहायक उप निरीक्षक परीक्षा कार्यक्रम 2024",
+    "type": "Admit card",
+    "vacancies": null
+  },
   "fields": {},
   "first_seen": "2026-10-29T13:26:15+00:00",
   "id": "42fe8b10e5bf",
@@ -10,7 +25,7 @@
     "via": "data:application/pdf;base64,%PDF-1.6\r%����\r\n6 0 obj\r<</Metadata 4 0 R/OutputIntents 2 0 R/Pages 7 0 R/Type/Catalog>>\rendobj\r4 0 obj\r<</Length 3531/Subtype/XML/Type/Metadata>>stream\r\n<?xpacket begin="
   },
   "source_id": "cisf-recruitment",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English) Conduct of CBE for the posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (Hindi) Conduct of CBE for the post of ASI/Exe (LDCE) -2023 (English) Conduct of CBE for the post of ASI/Exe (LDCE) - 2023 (Hindi)",
   "url": "https://cisfrectt.cisf.gov.in/file_open.php?fnm=sZ-7fR_3NnA4fIHoP_HDPcKZ11MAT5lm1fPGQ301SokSQ_e-xRDgiEWi4Ee854AVnio5Qs3YdFD7Um9pBNULig"
 }
