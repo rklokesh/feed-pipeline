@@ -1,0 +1,30 @@
+{
+  "board_url": "https://rssb.rajasthan.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Driver"
+      ]
+    }
+  },
+  "first_seen": "2026-10-29T11:56:12+00:00",
+  "id": "fddeb9aba6f2",
+  "kind": "notification",
+  "org": "RSSB Rajasthan",
+  "pdf": {
+    "bytes": 2493607,
+    "pages": 110,
+    "sha256": "77e64455a5569020ddbf0303ccc8971c3c8210aaaac9f43b25a28ab2ae70c520",
+    "text_kind": "text"
+  },
+  "source_id": "rssb-home",
+  "status": "pending_review",
+  "title": "29-10-2026 - Driver 2024 : List of Provisionally Selected Candidate's for Document Verification after Trade Test",
+  "url": "https://rssb.rajasthan.gov.in/storage/news_item/1793273784.pdf"
+}

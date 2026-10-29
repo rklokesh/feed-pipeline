@@ -1,0 +1,32 @@
+{
+  "board_url": "https://dsssb.delhi.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "- 29.1,0.2026 RESULT NOTICE No : 384 1. The DSSSB vide its advertisement No.03/23 with closing date 2o/t2/2023 had advertised 22 (Tw_enty-Two) vacancies (ews-o2, uR-li, oBc-os, sc-o3, sr- o1",
+      "source": "rule",
+      "value": "03/23 with closing date 2o/t2/2023"
+    },
+    "total_vacancies": {
+      "evidence": "sement No.03/23 with closing date 2o/t2/2023 had advertised 22 (Tw_enty-Two) vacancies (ews-o2, uR-li, oBc-os, sc-o3, sr- o1, rncluding PwBD-o1, tniluding exsrvi-o2 &",
+      "source": "rule",
+      "value": 22
+    }
+  },
+  "first_seen": "2026-10-29T11:56:12+00:00",
+  "id": "792d00eda660",
+  "kind": "result",
+  "org": "DSSSB",
+  "pdf": {
+    "bytes": 1729430,
+    "pages": 7,
+    "sha256": "5a479663523e94897126692271dadf25b3ce0f10a76ed8362cf2bc1db7417808",
+    "text_kind": "text"
+  },
+  "source_id": "dsssb-home",
+  "status": "pending_review",
+  "title": "RESULT NOTICE No: 384 For Post code: 96/23, Computer Lab/IT Assistant in New Delhi Municipal Council Date: 29-10-2026 | 1.65 MB Download",
+  "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/result_notice_384_96-23.pdf"
+}
