@@ -1,5 +1,20 @@
 {
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Senior Teacher",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "This is a list of disqualified candidates, which is not needed on the main job listing.",
+    "summary_en": "Rajasthan Public Service Commission has released the list of disqualified candidates for the Senior Teacher Competitive Examination 2025 in Punjabi subject.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने वरिष्ठ अध्यापक प्रतियोगी परीक्षा 2025 पंजाबी विषय के लिए अयोग्य अभ्यर्थियों की सूची जारी कर दी है।",
+    "title_en": "RPSC Senior Teacher Punjabi Exam 2025 Disqualified Candidates List",
+    "title_hi": "आरपीएससी वरिष्ठ अध्यापक पंजाबी परीक्षा 2025 अयोग्य अभ्यर्थियों की सूची",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "29/10/2026 List of Disqualified Candidates for Sr. Teacher (Sec. Edu.) Comp. Exam - 2025 (Punjabi)",
   "url": "https://rpsc.rajasthan.gov.in/Static/Result/8A702B7E31474798A3DCFB7469B8C14E.pdf"
 }

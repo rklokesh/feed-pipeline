@@ -1,5 +1,23 @@
 {
+  "auto_published": true,
   "board_url": "https://rssb.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Driver",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Rajasthan Staff Selection Board has released the list of provisionally selected candidates for document verification after the trade test for the Driver 2024 recruitment.",
+    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने ड्राइवर 2024 भर्ती के लिए ट्रेड टेस्ट के बाद दस्तावेज़ सत्यापन हेतु अनंतिम रूप से चयनित उम्मीदवारों की सूची जारी कर दी है।",
+    "title_en": "RSSB Rajasthan Driver Result 2024 – Trade Test DV List Out",
+    "title_hi": "आरएसएसबी राजस्थान ड्राइवर रिजल्ट 2024 – ट्रेड टेस्ट डीवी सूची जारी",
+    "type": "Result",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -15,16 +33,187 @@
   },
   "first_seen": "2026-10-29T11:56:12+00:00",
   "id": "fddeb9aba6f2",
+  "issue": 166,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-10-29",
   "org": "RSSB Rajasthan",
+  "page": {
+    "after_en": [
+      "Document verification of shortlisted candidates",
+      "Final merit list and appointment"
+    ],
+    "after_hi": [
+      "शॉर्टलिस्ट किए गए उम्मीदवारों का दस्तावेज़ सत्यापन",
+      "अंतिम मेरिट सूची और नियुक्ति"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": null,
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check your roll number in the official PDF",
+      "Keep all original documents and photocopies ready for verification"
+    ],
+    "checklist_hi": [
+      "आधिकारिक पीडीएफ में अपना रोल नंबर जांचें",
+      "सत्यापन के लिए सभी मूल दस्तावेज और फोटोकॉपी तैयार रखें"
+    ],
+    "conducted_by_en": "Rajasthan Staff Selection Board (RSSB)",
+    "conducted_by_hi": "राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी)",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस की तारीख",
+        "value_en": "29 Oct 2026",
+        "value_hi": "29 अक्टूबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Photo ID proof",
+      "Educational certificates",
+      "Trade test related documents",
+      "Category certificate if applicable",
+      "Printout of application form"
+    ],
+    "documents_hi": [
+      "फोटो पहचान प्रमाण",
+      "शैक्षणिक प्रमाण पत्र",
+      "ट्रेड टेस्ट संबंधित दस्तावेज",
+      "श्रेणी प्रमाण पत्र यदि लागू हो",
+      "आवेदन पत्र का प्रिंटआउट"
+    ],
+    "eligibility": [],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is the list of candidates provisionally selected for document verification after successfully clearing the trade test stage of the Driver recruitment examination conducted by the Rajasthan Staff Selection Board.",
+        "a_hi": "यह राजस्थान कर्मचारी चयन बोर्ड द्वारा आयोजित ड्राइवर भर्ती परीक्षा के ट्रेड टेस्ट चरण को सफलतापूर्वक पास करने के बाद दस्तावेज़ सत्यापन के लिए अनंतिम रूप से चयनित उम्मीदवारों की सूची है।",
+        "q_en": "What is the RSSB Driver 2024 Document Verification List?",
+        "q_hi": "आरएसएसबी ड्राइवर 2024 दस्तावेज़ सत्यापन सूची क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "The list was released on 29 October 2026.",
+        "a_hi": "यह सूची 29 अक्टूबर 2026 को जारी की गई।",
+        "q_en": "When was the RSSB Driver 2024 trade test DV list released?",
+        "q_hi": "आरएसएसबी ड्राइवर 2024 ट्रेड टेस्ट डीवी सूची कब जारी की गई?"
+      },
+      {
+        "a_en": "The recruitment is conducted by the Rajasthan Staff Selection Board (RSSB).",
+        "a_hi": "यह भर्ती राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी) द्वारा आयोजित की जाती है।",
+        "q_en": "Which board conducted the Driver 2024 recruitment?",
+        "q_hi": "ड्राइवर 2024 भर्ती किस बोर्ड ने आयोजित की?"
+      },
+      {
+        "a_en": "The next stage is document verification for provisionally selected candidates.",
+        "a_hi": "अगला चरण अनंतिम रूप से चयनित उम्मीदवारों के लिए दस्तावेज़ सत्यापन है।",
+        "q_en": "What is the next stage after the trade test for RSSB Driver?",
+        "q_hi": "आरएसएसबी ड्राइवर के लिए ट्रेड टेस्ट के बाद अगला चरण क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "RSSB Rajasthan Driver Result 2024 – Trade Test DV List Out",
+    "h1_hi": "आरएसएसबी राजस्थान ड्राइवर रिजल्ट 2024 – ट्रेड टेस्ट डीवी सूची जारी",
+    "how_en": [
+      "Visit the official RSSB website.",
+      "Click on the Driver 2024 trade test result / document verification link.",
+      "Check your roll number and name in the PDF list.",
+      "Download and save the PDF for future reference."
+    ],
+    "how_hi": [
+      "आरएसएसबी की आधिकारिक वेबसाइट पर जाएं।",
+      "ड्राइवर 2024 ट्रेड टेस्ट परिणाम / दस्तावेज़ सत्यापन लिंक पर क्लिक करें।",
+      "पीडीएफ सूची में अपना रोल नंबर और नाम जांचें।",
+      "भविष्य के संदर्भ के लिए पीडीएफ डाउनलोड करें और सहेजें।"
+    ],
+    "intro_en": "The Rajasthan Staff Selection Board (RSSB) has published the list of provisionally selected candidates for document verification following the trade test for the Direct Recruitment of Driver - 2024 (NTSP/TSP). Candidates can check their rank, application number, roll number, and personal details in the official list. Shortlisted candidates are required to attend the document verification process as per the board guidelines.",
+    "intro_hi": "राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी) ने ड्राइवर - 2024 (एनटीएसपी/टीएसपी) सीधी भर्ती के ट्रेड टेस्ट के बाद दस्तावेज़ सत्यापन के लिए अनंतिम रूप से चयनित उम्मीदवारों की सूची जारी कर दी है। उम्मीदवार आधिकारिक सूची में अपनी रैंक, आवेदन संख्या, रोल नंबर और व्यक्तिगत विवरण की जांच कर सकते हैं। चयनित उम्मीदवारों को बोर्ड के दिशा-निर्देशों के अनुसार दस्तावेज़ सत्यापन प्रक्रिया में उपस्थित होना होगा।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not miss the scheduled date and time for document verification."
+    ],
+    "mistakes_hi": [
+      "दस्तावेज़ सत्यापन के लिए निर्धारित तिथि और समय न चूकें।"
+    ],
+    "not_en": [],
+    "notice_date": "2026-10-29",
+    "official_site": "https://rssb.rajasthan.gov.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Driver",
+        "value_hi": "ड्राइवर"
+      },
+      {
+        "label_en": "Recruitment Year",
+        "label_hi": "भर्ती वर्ष",
+        "value_en": "2024",
+        "value_hi": "2024"
+      },
+      {
+        "label_en": "Stage",
+        "label_hi": "चरण",
+        "value_en": "Document Verification after Trade Test",
+        "value_hi": "ट्रेड टेस्ट के बाद दस्तावेज़ सत्यापन"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Written Exam",
+      "Trade Test",
+      "Document Verification"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा",
+      "ट्रेड टेस्ट",
+      "दस्तावेज़ सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "DV List Out",
+      "headline_hi": "डीवी सूची जारी",
+      "kind": "result",
+      "line_en": "Driver 2024 Trade Test",
+      "line_hi": "ड्राइवर 2024 ट्रेड टेस्ट",
+      "posts": null
+    },
+    "status_en": "Trade test result and document verification list declared",
+    "status_hi": "ट्रेड टेस्ट परिणाम और दस्तावेज़ सत्यापन सूची घोषित",
+    "summary_en": "Rajasthan Staff Selection Board has released the list of provisionally selected candidates for document verification after the trade test for the Driver 2024 recruitment. Candidates who appeared for the trade test can check their roll numbers in the selection list.",
+    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने ड्राइवर 2024 भर्ती के लिए ट्रेड टेस्ट के बाद दस्तावेज़ सत्यापन हेतु अनंतिम रूप से चयनित उम्मीदवारों की सूची जारी कर दी है। ट्रेड टेस्ट में शामिल होने वाले उम्मीदवार चयन सूची में अपने रोल नंबर देख सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Direct Recruitment 2024 (NTSP/TSP)",
+        "detail_hi": "सीधी भर्ती 2024 (एनटीएसपी/टीएसपी)",
+        "post_en": "Driver",
+        "post_hi": "ड्राइवर",
+        "total": ""
+      }
+    ],
+    "who_en": [
+      "Candidates who appeared for the RSSB Driver 2024 trade test."
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जो आरएसएसबी ड्राइवर 2024 ट्रेड टेस्ट में शामिल हुए थे।"
+    ]
+  },
   "pdf": {
     "bytes": 2493607,
     "pages": 110,
     "sha256": "77e64455a5569020ddbf0303ccc8971c3c8210aaaac9f43b25a28ab2ae70c520",
     "text_kind": "text"
   },
+  "published_at": "2026-10-29T12:13:28Z",
+  "slug": "rssb-rajasthan-driver-result-2024-trade-test-dv-list-out",
   "source_id": "rssb-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "29-10-2026 - Driver 2024 : List of Provisionally Selected Candidate's for Document Verification after Trade Test",
   "url": "https://rssb.rajasthan.gov.in/storage/news_item/1793273784.pdf"
 }

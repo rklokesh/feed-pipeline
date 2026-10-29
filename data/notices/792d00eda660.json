@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://dsssb.delhi.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Computer Lab/IT Assistant",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "DSSSB has released the final result and provisional nomination for the post of Computer Lab/IT Assistant under Post Code 96/23 in NDMC.",
+    "summary_hi": "DSSSB ने NDMC में पोस्ट कोड 96/23 के तहत कंप्यूटर लैब/आईटी सहायक पद के लिए अंतिम परिणाम और अनंतिम नामांकन जारी कर दिया है।",
+    "title_en": "DSSSB Computer Lab IT Assistant Post Code 96/23 Final Result",
+    "title_hi": "DSSSB कंप्यूटर लैब आईटी सहायक पोस्ट कोड 96/23 अंतिम परिणाम",
+    "type": "Result",
+    "vacancies": 22
+  },
+  "exam": {},
   "extraction": {
     "ai": null
   },
@@ -17,6 +34,8 @@
   },
   "first_seen": "2026-10-29T11:56:12+00:00",
   "id": "792d00eda660",
+  "issue": 164,
+  "issue_tidy": true,
   "kind": "result",
   "org": "DSSSB",
   "pdf": {
@@ -25,8 +44,9 @@
     "sha256": "5a479663523e94897126692271dadf25b3ce0f10a76ed8362cf2bc1db7417808",
     "text_kind": "text"
   },
+  "published_at": "2026-10-29T12:12:18Z",
   "source_id": "dsssb-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RESULT NOTICE No: 384 For Post code: 96/23, Computer Lab/IT Assistant in New Delhi Municipal Council Date: 29-10-2026 | 1.65 MB Download",
   "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/result_notice_384_96-23.pdf"
 }

@@ -1,5 +1,20 @@
 {
   "board_url": "https://rssb.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Teaching Associate",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Court case compliance office order regarding debarred candidates",
+    "summary_en": "This notice is an office order regarding the compliance of a court order on debarred candidates for the Teaching Associate recruitment.",
+    "summary_hi": "यह नोटिस शिक्षण सहयोगी भर्ती के संबंध में न्यायालय के आदेश की पालना का कार्यालय आदेश है।",
+    "title_en": "RSSB Teaching Associate Court Order Compliance",
+    "title_hi": "राजस्थान कर्मचारी चयन बोर्ड शिक्षण सहयोगी न्यायालय आदेश अनुपालन",
+    "type": "Job",
+    "vacancies": 3540
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "rssb-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "29-10-2026 - Contractual Teaching Associate (Raj-CES) 2026 : Office Order for Compliance of Court Order Regarding Debarred Candidates",
   "url": "https://rssb.rajasthan.gov.in/storage/news_item/1793269096.pdf"
 }

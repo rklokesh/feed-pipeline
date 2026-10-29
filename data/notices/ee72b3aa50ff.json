@@ -1,5 +1,20 @@
 {
   "board_url": "https://dsssb.delhi.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Computer Lab/IT Assistant",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Rejection notice",
+    "summary_en": "DSSSB has released the rejection notice for the Computer Lab/IT Assistant post under code 96/23. Candidates can check their candidature status.",
+    "summary_hi": "DSSSB ने पोस्ट कोड 96/23 के तहत कंप्यूटर लैब/आईटी सहायक पद के लिए अस्वीकरण सूचना जारी कर दी है। उम्मीदवार अपनी उम्मीदवारी की स्थिति देख सकते हैं।",
+    "title_en": "DSSSB Computer Lab IT Assistant Post Code 96/23 Rejection Notice",
+    "title_hi": "DSSSB कंप्यूटर लैब आईटी सहायक पोस्ट कोड 96/23 अस्वीकरण सूचना",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "dsssb-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "REJECTION NOTICE No. 385 for the post of Computer Lab/IT Assistant in New Delhi Municipal Council under Post code 96/23. Date: 29-10-2026 | 227.98 KB Download",
   "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/rejection_notice_385_96-23.pdf"
 }
