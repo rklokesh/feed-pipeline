@@ -92,6 +92,8 @@ Answer with ONE JSON object:
                  printed at the top or bottom of the notice / press note). Not the exam date, not the last date. null if not printed.",
  "apply_start": "YYYY-MM-DD or null", "last_date": "YYYY-MM-DD or null (last date to apply)", "exam_date": "YYYY-MM-DD or null",
  "apply_url": "official application URL or null", "official_site": "official website URL or null",
+ "hindi_notice_url": "URL of the official Hindi version of this notice if it is printed in the text, else null",
+ "video_url": "URL of an official how-to-apply / instructions video if it is printed in the text, else null",
  "share_card": {"kind": "job | admit | result | answer | corr (corrigendum, date extended, exam postponed) | sched (DV / interview schedule)",
                 "line_en": "post or exam name for the share image, max 32 chars, e.g. 'Station Master', 'CHSL Tier-II Exam'",
                 "line_hi": "same in Hindi", "headline_en": "max 22 chars, e.g. 'Recruitment 2026', 'Admit Card 2026', 'Last Date Extended'",
@@ -238,6 +240,8 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
     en["lNotice"], hi["lNotice"] = "Official notice", "आधिकारिक सूचना"
     en["lApply"], hi["lApply"] = "Apply online", "ऑनलाइन आवेदन"
     en["lSite"], hi["lSite"] = "Official website", "आधिकारिक वेबसाइट"
+    en["lHindi"], hi["lHindi"] = "Official notice in Hindi", "आधिकारिक सूचना (हिंदी)"
+    en["lVideo"], hi["lVideo"] = "Official how-to video", "आधिकारिक वीडियो"
     en["by"], hi["by"] = "Conducted by", "आयोजक"
     en["byV"] = pg.get("conducted_by_en") or en["org"]
     hi["byV"] = pg.get("conducted_by_hi") or hi["org"]
@@ -269,6 +273,15 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
     site = pg.get("official_site") or n.get("board_url")
     if site:
         links.append(("lSite", site))
+    # extra official links: shown only when the exact link is printed in the official text (never an AI guess)
+    src_text = ""
+    tp = TEXT / f"{n['id']}.txt"
+    if tp.exists():
+        src_text = tp.read_text(errors="ignore")
+    for key, field in (("lHindi", "hindi_notice_url"), ("lVideo", "video_url")):
+        u = str(pg.get(field) or "").strip()
+        if u.startswith("http") and u.split("://", 1)[1].rstrip("/") in src_text:
+            links.append((key, u))
 
     esc = html.escape
     from share_card import board as _board

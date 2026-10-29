@@ -161,6 +161,39 @@ def stage(n):
         return TYPE.get((n.get("card") or {}).get("type", "Job"), TYPE["Job"])
 
 
+MON = {m: i + 1 for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"])}
+
+
+def _dates_in(text: str) -> list[str]:
+    """ISO dates written as '14 Dec 2026' or '14-12-2026' / '14.12.2026' in a value."""
+    out = []
+    for d, m, y in re.findall(r"\b(\d{1,2})\s+([A-Za-z]{3})[a-z]*\.?,?\s+(20\d\d)\b", text):
+        if m.lower() in MON:
+            out.append(f"{y}-{MON[m.lower()]:02d}-{int(d):02d}")
+    for d, m, y in re.findall(r"\b(\d{1,2})[-./](\d{1,2})[-./](20\d\d)\b", text):
+        if 1 <= int(m) <= 12:
+            out.append(f"{y}-{int(m):02d}-{int(d):02d}")
+    return out
+
+
+def next_step(items: list):
+    """The nearest upcoming date printed in this exam's own notices: (label_en, label_hi, iso). None if none is printed."""
+    today = dt.datetime.now(dt.timezone(dt.timedelta(hours=5, minutes=30))).date().isoformat()
+    best = None
+    for n in items:
+        for d in (n.get("page") or {}).get("dates") or []:
+            if not isinstance(d, dict) or not d.get("label_en"):
+                continue
+            for iso in _dates_in(str(d.get("value_en") or "")):
+                try:
+                    dt.date.fromisoformat(iso)
+                except ValueError:
+                    continue
+                if iso >= today and (best is None or iso < best[2]):
+                    best = (str(d["label_en"]).strip(), str(d.get("label_hi") or d["label_en"]).strip(), iso)
+    return best
+
+
 def render(x: dict, board_exams: list) -> str:
     esc = html.escape
     js = lambda v: json.dumps("" if v is None else str(v), ensure_ascii=False)
@@ -175,6 +208,11 @@ def render(x: dict, board_exams: list) -> str:
           "lead": f'{x["name_hi"] or x["name_en"]} की हर आधिकारिक सूचना एक जगह, नई सबसे ऊपर। ताज़ा: {title_hi(latest)} ({d_hi(latest["notice_date"])})।',
           "tlH": "सभी अपडेट", "colDate": "तिथि", "colStage": "अपडेट", "glH": "मुख्य जानकारी (अधिसूचना से)", "relH": f"{org} की और परीक्षाएँ",
           "note": "जानकारी आधिकारिक सूचनाओं से ली गई है। कोई बात अलग हो, तो आधिकारिक सूचना को ही सही मानें।"}
+    nxt, nxt_html = next_step(items), ""
+    if nxt:   # only a date the board itself printed; labelled as such
+        en["next"] = f"Next: {nxt[0]} — {d_en(nxt[2])} (as per the official notice)"
+        hi["next"] = f"आगे: {nxt[1]} — {d_hi(nxt[2])} (आधिकारिक सूचना के अनुसार)"
+        nxt_html = f'<p class="next" data-t="next">{html.escape(en["next"])}</p>'
     rows = ""
     for k, n in enumerate(items):
         te, th = stage(n)
@@ -187,6 +225,7 @@ def render(x: dict, board_exams: list) -> str:
       <nav class="crumb" aria-label="Breadcrumb"><a href="/exam/" data-t="crumbType">Exams</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">{esc(org)}</span></nav>
       <h1 data-t="h1">{esc(en["h1"])}</h1>
       <p class="lead" data-t="lead">{esc(en["lead"])}</p>
+      {nxt_html}
       <span id="state" hidden></span><span id="left" hidden></span><span id="views" hidden></span>
     </div>''',
             f'    <section class="kv tl" id="updates" data-t-aria="tlH">\n      <div class="h" data-t="tlH">All updates</div>\n{rows}    </section>']
