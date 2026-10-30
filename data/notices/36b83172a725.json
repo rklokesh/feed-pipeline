@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://www.indiapost.gov.in/vacancies",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-11-30",
+    "list": true,
+    "posts": "Skilled Artisan (MV Mechanic, MV Electrician, Tyreman, Blacksmith, Painter, Upholsterer, Carpenter & Joiner)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "India Post, Mail Motor Services Kolkata has invited applications for 19 vacant posts of Skilled Artisan through direct recruitment. Eligible candidates can submit their applications on or before 30 November 2026.",
+    "summary_hi": "इंडिया पोस्ट, मेल मोटर सर्विसेज कोलकाता ने सीधी भर्ती के माध्यम से स्किल्ड आर्टिसन के 19 रिक्त पदों के लिए आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 30 नवंबर 2026 या उससे पहले आवेदन भेज सकते हैं।",
+    "title_en": "India Post MMS Kolkata Skilled Artisan Recruitment 2026 – Apply for 19 Posts",
+    "title_hi": "इंडिया पोस्ट एमएमएस कोलकाता स्किल्ड आर्टिसन भर्ती 2026 – 19 पदों के लिए आवेदन करें",
+    "type": "Job",
+    "vacancies": 19
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -51,16 +68,389 @@
   },
   "first_seen": "2026-10-30T05:10:48+00:00",
   "id": "36b83172a725",
+  "issue": 175,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-10-29",
   "org": "India Post",
+  "page": {
+    "after_en": [
+      "Candidates shortlisted after application scrutiny will be called for a competitive trade test.",
+      "Final selection will lead to appointment on probation for one year."
+    ],
+    "after_hi": [
+      "आवेदन संवीक्षा के बाद शॉर्टलिस्ट किए गए उम्मीदवारों को प्रतियोगी ट्रेड टेस्ट के लिए बुलाया जाएगा।",
+      "अंतिम चयन के बाद एक वर्ष के प्रोबेशन पर नियुक्ति की जाएगी।"
+    ],
+    "age": [
+      {
+        "label_en": "Minimum age",
+        "label_hi": "न्यूनतम आयु",
+        "value_en": "18 years",
+        "value_hi": "18 वर्ष"
+      },
+      {
+        "label_en": "Maximum age",
+        "label_hi": "अधिकतम आयु",
+        "value_en": "30 years",
+        "value_hi": "30 वर्ष"
+      },
+      {
+        "label_en": "As-on date for age calculation",
+        "label_hi": "आयु गणना की तिथि",
+        "value_en": "01 July 2018",
+        "value_hi": "01 जुलाई 2018"
+      },
+      {
+        "label_en": "SC / ST relaxation",
+        "label_hi": "एससी / एसटी छूट",
+        "value_en": "5 years",
+        "value_hi": "5 वर्ष"
+      },
+      {
+        "label_en": "OBC (Non-creamy layer) relaxation",
+        "label_hi": "अन्य पिछड़ा वर्ग छूट",
+        "value_en": "3 years",
+        "value_hi": "3 वर्ष"
+      },
+      {
+        "label_en": "Central Government Servant relaxation",
+        "label_hi": "केंद्रीय सरकारी कर्मचारी छूट",
+        "value_en": "Up to 40 years",
+        "value_hi": "40 वर्ष तक"
+      }
+    ],
+    "apply_start": null,
+    "apply_url": "https://www.indiapost.gov.in/api/documents/file/10391xe2ox8w0is613k9jr369dy34fsw0s5ca3h16z08vuz04nku0gw9f35snp",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check eligibility regarding age and qualification.",
+      "Fill out the application form clearly in capital letters.",
+      "Enclose self-attested copies of required certificates and photos.",
+      "Superscribe the trade name on the envelope.",
+      "Send via Speed Post to the Senior Manager, MMS Kolkata before 30 November 2026."
+    ],
+    "checklist_hi": [
+      "आयु और योग्यता के संबंध में पात्रता की जाँच करें।",
+      "बड़े अक्षरों में स्पष्ट रूप से आवेदन पत्र भरें।",
+      "आवश्यक प्रमाण पत्रों और फोटो की स्व-सत्यापित प्रतियां संलग्न करें।",
+      "लिफाफे पर ट्रेड का नाम लिखें।",
+      "30 नवंबर 2026 से पहले सीनियर मैनेजर, एमएमएस कोलकाता को स्पीड पोस्ट द्वारा भेजें।"
+    ],
+    "conducted_by_en": "India Post, Mail Motor Services Kolkata (Department of Posts)",
+    "conducted_by_hi": "इंडिया पोस्ट, मेल मोटर सर्विसेज कोलकाता (डाक विभाग)",
+    "dates": [
+      {
+        "label_en": "Notification date",
+        "label_hi": "अधिसूचना तिथि",
+        "value_en": "29 Oct 2026",
+        "value_hi": "29 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Last date for receipt of application",
+        "label_hi": "आवेदन प्राप्त होने की अंतिम तिथि",
+        "value_en": "30 Nov 2026",
+        "value_hi": "30 नवंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Age proof (Birth certificate/Class 10th certificate/School leaving certificate)",
+      "Address proof",
+      "Indian Citizenship proof (Voter ID, Passport, Domicile, etc.)",
+      "Educational qualification certificates",
+      "Technical qualification certificates (ITI/etc.)",
+      "HMV Driving Licence/Licence Extract (for MV Mechanic only)",
+      "One year trade experience certificate on firm's letterhead with full postal address",
+      "SC/ST/OBC(NCL)/ESM Certificate in proper format",
+      "Two self-attested passport-size photographs"
+    ],
+    "documents_hi": [
+      "आयु प्रमाण (जन्म प्रमाण पत्र / 10वीं कक्षा का प्रमाण पत्र / स्कूल छोड़ने का प्रमाण पत्र)",
+      "पता प्रमाण",
+      "भारतीय नागरिकता प्रमाण (वोटर आईडी, पासपोर्ट, निवास प्रमाण पत्र, आदि)",
+      "शैक्षणिक योग्यता प्रमाण पत्र",
+      "तकनीकी योग्यता प्रमाण पत्र (आईटीआई आदि)",
+      "एचएमवी ड्राइविंग लाइसेंस / लाइसेंस एक्सट्रैक्ट (केवल एमवी मैकेनिक के लिए)",
+      "पूर्ण postal पते के साथ फर्म के लेटरहेड पर एक वर्ष का ट्रेड अनुभव प्रमाण पत्र",
+      "उचित प्रारूप में एससी / एसटी / ओबीसी (एनसीएल) / ईएसएम प्रमाण पत्र",
+      "दो स्व-सत्यापित पासपोर्ट साइज फोटोग्राफ"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Educational Qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "A certificate in the respective trade from any Technical Institution recognized by Government OR VIII Std. passed with experience of one year in the respective trade.",
+        "value_hi": "सरकार द्वारा मान्यता प्राप्त किसी तकनीकी संस्थान से संबंधित ट्रेड में प्रमाण पत्र या संबंधित ट्रेड में एक वर्ष के अनुभव के साथ आठवीं कक्षा उत्तीर्ण।"
+      },
+      {
+        "label_en": "Additional requirement for MV Mechanic",
+        "label_hi": "एमवी मैकेनिक के लिए अतिरिक्त आवश्यकता",
+        "value_en": "Must possess a valid Driving Licence (HMV) to drive any vehicle in service in order to test it.",
+        "value_hi": "परीक्षण के लिए सेवा में किसी भी वाहन को चलाने हेतु वैध ड्राइविंग लाइसेंस (HMV) होना आवश्यक है।"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a direct recruitment process to fill vacant artisan and tradesmen positions such as MV Mechanic, Electrician, Tyreman, Blacksmith, Painter, and Carpenter under Mail Motor Services, Kolkata in the West Bengal Circle.",
+        "a_hi": "यह पश्चिम बंगाल सर्कल में मेल मोटर सर्विसेज, कोलकाता के तहत एमवी मैकेनिक, इलेक्ट्रीशियन, टायरमैन, ब्लैकस्मिथ, पेंटर और कारपेंटर जैसे रिक्त कारीगर और ट्रेडसमेन पदों को भरने के लिए एक सीधी भर्ती प्रक्रिया है।",
+        "q_en": "What is Skilled Artisan Recruitment in India Post MMS Kolkata?",
+        "q_hi": "इंडिया पोस्ट एमएमएस कोलकाता में स्किल्ड आर्टिसन भर्ती क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Probation period",
+        "label_hi": "प्रोबेशन अवधि",
+        "value_en": "One year",
+        "value_hi": "एक वर्ष"
+      },
+      {
+        "label_en": "Previous applicants",
+        "label_hi": "पिछले आवेदक",
+        "value_en": "All previous applications in response to previous notifications (dated 08/08/2018 and 19.05.2020) will be considered, but fresh applications mentioning choices are preferable.",
+        "value_hi": "पिछली अधिसूचनाओं के संदर्भ में दिए गए सभी पिछले आवेदन माने जाएंगे, लेकिन अपनी पसंद बताते हुए नया आवेदन भेजना बेहतर है।"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The last date to receive applications is 30 November 2026 up to 17:00 hours.",
+        "a_hi": "आवेदन प्राप्त होने की अंतिम तिथि 30 नवंबर 2026 शाम 17:00 बजे तक है।",
+        "q_en": "What is the last date to apply for India Post MMS Kolkata Skilled Artisan Recruitment 2026?",
+        "q_hi": "इंडिया पोस्ट एमएमएस कोलकाता स्किल्ड आर्टिसन भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "There are a total of 19 vacancies available across various trades.",
+        "a_hi": "विभिन्न ट्रेडों में कुल 19 रिक्तियां उपलब्ध हैं।",
+        "q_en": "How many total vacancies are available?",
+        "q_hi": "कुल कितनी रिक्तियां उपलब्ध हैं?"
+      },
+      {
+        "a_en": "Applications must be sent offline through Speed Post only.",
+        "a_hi": "आवेदन केवल स्पीड पोस्ट के माध्यम से ऑफलाइन भेजे जाने चाहिए।",
+        "q_en": "What is the mode of application?",
+        "q_hi": "आवेदन का तरीका क्या है?"
+      },
+      {
+        "a_en": "Candidates need an ITI certificate in the respective trade OR 8th standard pass with one year of experience in the respective trade.",
+        "a_hi": "उम्मीदवारों के पास संबंधित ट्रेड में आईटीआई प्रमाण पत्र या संबंधित ट्रेड में एक साल के अनुभव के साथ 8वीं कक्षा उत्तीर्ण होना चाहिए।",
+        "q_en": "What is the educational qualification required?",
+        "q_hi": "आवश्यक शैक्षणिक योग्यता क्या है?"
+      },
+      {
+        "a_en": "The age limit is 18 to 30 years as on 01.07.2018, with relaxations for reserved categories as per rules.",
+        "a_hi": "आयु सीमा 01.07.2018 के अनुसार 18 से 30 वर्ष है, जिसमें नियमों के अनुसार आरक्षित श्रेणियों के लिए छूट दी गई है।",
+        "q_en": "What is the age limit for this recruitment?",
+        "q_hi": "इस भर्ती के लिए आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "Applications should be sent to 'The Senior Manager, Mail Motor Services, 139, Beleghata Road, Kolkata-700015'.",
+        "a_hi": "आवेदन 'The Senior Manager, Mail Motor Services, 139, Beleghata Road, Kolkata-700015' पर भेजा जाना चाहिए।",
+        "q_en": "Where should the application be sent?",
+        "q_hi": "आवेदन कहाँ भेजा जाना चाहिए?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "India Post MMS Kolkata Skilled Artisan Recruitment 2026 – Apply for 19 Posts",
+    "h1_hi": "इंडिया पोस्ट एमएमएस कोलकाता स्किल्ड आर्टिसन भर्ती 2026 – 19 पदों के लिए आवेदन करें",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Download the application form and notification from the official website.",
+      "Fill out the application form on plain paper in the prescribed format.",
+      "Attach self-attested photocopies of all required certificates and a recent passport-size photograph.",
+      "If applying for multiple trades, submit separate applications for each trade.",
+      "Superscribe the envelope with 'Application for the post of /Name of Trade: ...' and send it through Speed Post only to 'The Senior Manager, Mail Motor Services, 139, Beleghata Road, Kolkata-700015'."
+    ],
+    "how_hi": [
+      "आधिकारिक वेबसाइट से आवेदन पत्र और अधिसूचना डाउनलोड करें।",
+      "निर्धारित प्रारूप में सादे कागज पर आवेदन पत्र भरें।",
+      "सभी आवश्यक प्रमाण पत्रों की स्व-सत्यापित फोटोकॉपी और एक हालिया पासपोर्ट साइज फोटो संलग्न करें।",
+      "यदि आप कई ट्रेडों के लिए आवेदन कर रहे हैं, तो प्रत्येक ट्रेड के लिए अलग आवेदन भेजें।",
+      "लिफाफे के ऊपर 'Application for the post of /Name of Trade: ...' लिखें और इसे केवल स्पीड पोस्ट द्वारा 'The Senior Manager, Mail Motor Services, 139, Beleghata Road, Kolkata-700015' पर भेजें।"
+    ],
+    "intro_en": "India Post, Mail Motor Services (MMS) Kolkata has released a notification for the direct recruitment of Skilled Artisan (Tradesmen) posts for the West Bengal Circle, totaling 19 vacancies. This notification acts as a corrigendum to previous notices. Eligible and interested candidates can send their offline applications in the prescribed format through Speed Post only by 30 November 2026 up to 17:00 hours. The selection will be based on a competitive trade test. Candidates should ensure they meet all educational, age, and trade requirements before applying.",
+    "intro_hi": "इंडिया पोस्ट, मेल मोटर सर्विसेज (MMS) कोलकाता ने पश्चिम बंगाल सर्कल के लिए स्किल्ड आर्टिसन (Tradesmen) के पदों पर सीधी भर्ती हेतु कुल 19 रिक्तियों के लिए अधिसूचना जारी की है। यह अधिसूचना पिछली सूचनाओं के संबंध में सुधार (Corrigendum) है। योग्य और इच्छुक उम्मीदवार निर्धारित प्रारूप में अपने आवेदन केवल स्पीड पोस्ट के माध्यम से 30 नवंबर 2026 को शाम 17:00 बजे तक या उससे पहले भेज सकते हैं। चयन प्रतियोगी ट्रेड टेस्ट के आधार पर किया जाएगा।",
+    "last_date": "2026-11-30",
+    "mistakes_en": [
+      "Do not send applications through courier or normal post; use Speed Post only.",
+      "Do not forget to self-attest all attached documents.",
+      "Do not send original certificates, only send self-attested photocopies.",
+      "Ensure separate applications are sent for each trade if applying for more than one."
+    ],
+    "mistakes_hi": [
+      "कूरियर या सामान्य डाक से आवेदन न भेजें; केवल स्पीड पोस्ट का उपयोग करें।",
+      "सभी संलग्न दस्तावेजों को स्व-सत्यापित करना न भूलें।",
+      "मूल प्रमाण पत्र न भेजें, केवल स्व-सत्यापित फोटोकॉपी भेजें।",
+      "यदि एक से अधिक ट्रेड के लिए आवेदन कर रहे हैं, तो सुनिश्चित करें कि प्रत्येक के लिए अलग आवेदन भेजा जाए।"
+    ],
+    "not_en": [
+      "Applications sent by courier or any transmission other than speed post",
+      "Unsigned applications or those without self-attested documents",
+      "Candidates without valid community or required certificates"
+    ],
+    "not_hi": [
+      "कूरियर या स्पीड पोस्ट के अलावा अन्य माध्यमों से भेजे गए आवेदन",
+      "हस्ताक्षर रहित आवेदन या बिना स्व-सत्यापित दस्तावेजों के आवेदन",
+      "वैध समुदाय या आवश्यक प्रमाण पत्र के बिना उम्मीदवार"
+    ],
+    "notice_date": "2026-10-29",
+    "official_site": "https://www.indiapost.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Skilled Artisan (Tradesmen)",
+        "value_hi": "स्किल्ड आर्टिसन (tradesmen)"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "19",
+        "value_hi": "19"
+      },
+      {
+        "label_en": "Apply mode",
+        "label_hi": "आवेदन का तरीका",
+        "value_en": "Offline (By Speed Post only)",
+        "value_hi": "ऑफलाइन (केवल स्पीड पोस्ट द्वारा)"
+      },
+      {
+        "label_en": "Last date to apply",
+        "label_hi": "आवेदन की अंतिम तिथि",
+        "value_en": "30 Nov 2026 (up to 17:00 hrs)",
+        "value_hi": "30 नवंबर 2026 (शाम 17:00 बजे तक)"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "18 to 30 years (as on 01.07.2018)",
+        "value_hi": "18 से 30 वर्ष (01.07.2018 के अनुसार)"
+      },
+      {
+        "label_en": "Educational qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "ITI certificate in respective trade OR 8th pass with 1 year experience",
+        "value_hi": "संबंधित ट्रेड में आईटीआई प्रमाण पत्र या 1 साल के अनुभव के साथ 8वीं पास"
+      },
+      {
+        "label_en": "Selection process",
+        "label_hi": "चयन प्रक्रिया",
+        "value_en": "Competitive Trade Test",
+        "value_hi": "प्रतियोगी ट्रेड टेस्ट"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "MMG/36/Sk. Artisan/DR/II/95",
+        "value_hi": "MMG/36/Sk. Artisan/DR/II/95"
+      }
+    ],
+    "salary": [
+      {
+        "label_en": "Pay Scale",
+        "label_hi": "वेतनमान",
+        "value_en": "Level 2 in the pay matrix as per 7th CPC (₹19,900 to ₹63,200) + allowances",
+        "value_hi": "सातवें वेतन आयोग के अनुसार पे मैट्रिक्स लेवल 2 (₹19,900 से ₹63,200) + भत्ते"
+      }
+    ],
+    "selection_en": [
+      "Scrutiny of offline applications",
+      "Competitive Trade Test (syllabus and details informed with hall permits)"
+    ],
+    "selection_hi": [
+      "ऑफ़लाइन आवेदनों की संवीक्षा",
+      "प्रतियोगी ट्रेड टेस्ट (सिलेबस और विवरण हॉल परमिट के साथ सूचित किया जाएगा)"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Skilled Artisan",
+      "line_hi": "स्किल्ड आर्टिसन",
+      "posts": 19
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "India Post, Mail Motor Services Kolkata has invited applications for 19 vacant posts of Skilled Artisan through direct recruitment. Eligible candidates can submit their applications by speed post on or before 30 November 2026.",
+    "summary_hi": "इंडिया पोस्ट, मेल मोटर सर्विसेज कोलकाता ने सीधी भर्ती के माध्यम से स्किल्ड आर्टिसन के 19 रिक्त पदों के लिए आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 30 नवंबर 2026 या उससे पहले स्पीड पोस्ट के माध्यम से आवेदन भेज सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "UR 4, OBC 2, SC 1, ST 1 (Includes 2 ESM)",
+        "detail_hi": "सामान्य 4, अन्य पिछड़ा वर्ग 2, एससी 1, एसटी 1 (पूर्व सैनिकों के लिए 2 शामिल)",
+        "post_en": "MV Mechanic",
+        "post_hi": "एमवी मैकेनिक",
+        "total": "8"
+      },
+      {
+        "detail_en": "UR 2, OBC 1, SC 1",
+        "detail_hi": "सामान्य 2, अन्य पिछड़ा वर्ग 1, एससी 1",
+        "post_en": "MV Electrician",
+        "post_hi": "एमवी इलेक्ट्रीशियन",
+        "total": "4"
+      },
+      {
+        "detail_en": "UR 1, OBC 1",
+        "detail_hi": "सामान्य 1, अन्य पिछड़ा वर्ग 1",
+        "post_en": "Tyreman",
+        "post_hi": "टायरमैन",
+        "total": "2"
+      },
+      {
+        "detail_en": "UR 1, SC 1",
+        "detail_hi": "सामान्य 1, एससी 1",
+        "post_en": "Blacksmith",
+        "post_hi": "ब्लैकस्मिथ",
+        "total": "2"
+      },
+      {
+        "detail_en": "UR 1",
+        "detail_hi": "सामान्य 1",
+        "post_en": "Painter",
+        "post_hi": "पेंटर",
+        "total": "1"
+      },
+      {
+        "detail_en": "UR 1",
+        "detail_hi": "सामान्य 1",
+        "post_en": "Upholsterer",
+        "post_hi": "अपहोल्स्टरर",
+        "total": "1"
+      },
+      {
+        "detail_en": "OBC 1",
+        "detail_hi": "अन्य पिछड़ा वर्ग 1",
+        "post_en": "Carpenter & Joiner",
+        "post_hi": "कारपेंटर एंड ज्वाइनर",
+        "total": "1"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates possessing ITI certificate or 8th pass with 1 year experience in the respective trade",
+      "Candidates aged between 18 and 30 years meeting the criteria"
+    ],
+    "who_hi": [
+      "संबंधित ट्रेड में आईटीआई प्रमाण पत्र या 1 वर्ष के अनुभव के साथ 8वीं पास उम्मीदवार",
+      "18 से 30 वर्ष की आयु के योग्य उम्मीदवार"
+    ]
+  },
   "pdf": {
     "bytes": 928286,
     "pages": 13,
     "sha256": "a4c0d938c1bfd88a88aa7d949b6326ed1f5c0777d071fb150b12397ce75ce227",
     "text_kind": "text"
   },
+  "published_at": "2026-10-30T05:18:16Z",
+  "qual": [
+    "iti"
+  ],
+  "slug": "india-post-mms-kolkata-skilled-artisan-recruitment-2026-apply-fo",
   "source_id": "indiapost-vacancies",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Notification for Filling up of 19 vacant posts of Skilled Artisan of MMS Kolkata in West Bengal Circle through Direct Recruitment",
   "url": "https://www.indiapost.gov.in/api/documents/file/10391xe2ox8w0is613k9jr369dy34fsw0s5ca3h16z08vuz04nku0gw9f35snp"
 }

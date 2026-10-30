@@ -1,5 +1,20 @@
 {
   "board_url": "https://www.indiapost.gov.in/vacancies",
+  "card": {
+    "confidence": "medium",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Staff Car Driver (Ordinary Grade)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "PDF text is empty, insufficient details to list the job notice.",
+    "summary_en": "India Post has announced recruitment for 24 Staff Car Driver posts under Tamil Nadu Circle.",
+    "summary_hi": "भारतीय डाक ने तमिलनाडु सर्किल के अंतर्गत 24 स्टाफ कार ड्राइवर पदों के लिए भर्ती की घोषणा की है।",
+    "title_en": "India Post Staff Car Driver Recruitment 2026",
+    "title_hi": "भारतीय डाक स्टाफ कार ड्राइवर भर्ती 2026",
+    "type": "Job",
+    "vacancies": 24
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "scanned"
   },
   "source_id": "indiapost-vacancies",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Recruitment of 24 post of Staff Car (Ordinary Grade) under Direct Recruitment in Tamilnadu Circle",
   "url": "https://www.indiapost.gov.in/api/documents/file/100aafo2s64m0fy8p35t6z0iqrq3bvgv0sj5u0eiq33cu8h3a0kc0fh8h35s2f"
 }

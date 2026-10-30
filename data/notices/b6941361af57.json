@@ -1,11 +1,29 @@
 {
+  "auto_published": true,
   "board_url": "https://www.indiapost.gov.in/vacancies",
+  "card": {
+    "confidence": "medium",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Staff Car Driver (Ordinary Grade)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "India Post has invited applications for filling up 25 vacant posts of Staff Car Driver in West Bengal Circle on deputation or absorption basis. Interested candidates should check the eligibility details and apply as per the notification.",
+    "summary_hi": "भारतीय डाक ने पश्चिम बंगाल सर्किल में प्रतिनियुक्ति या आमेलन के आधार पर स्टाफ कार ड्राइवर के 25 रिक्त पदों को भरने के लिए आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार अधिसूचना के अनुसार आवेदन करें।",
+    "title_en": "India Post Staff Car Driver Recruitment 2024",
+    "title_hi": "भारतीय डाक स्टाफ कार ड्राइवर भर्ती",
+    "type": "Job",
+    "vacancies": 25
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-30T05:10:48+00:00",
   "id": "b6941361af57",
+  "issue": 176,
+  "issue_tidy": true,
   "kind": "notification",
   "org": "India Post",
   "pdf": {
@@ -14,8 +32,12 @@
     "sha256": "19cfde27af84f76a85dca881504be02b05a5ff7b85dd825924cfa1a4806c0511",
     "text_kind": "scanned"
   },
+  "published_at": "2026-10-30T05:18:43Z",
+  "qual": [
+    "10th"
+  ],
   "source_id": "indiapost-vacancies",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Display of notification for Filling up of 25 vacant post Staff Car Driver (Ordinary Grade) in West Bengal Circle on Deputation/Absorption basis",
   "url": "https://www.indiapost.gov.in/api/documents/file/10392z42m6853o1eh00ged3bvnq05ngs0s5c23mn2j38mj63afkt0joer3d9n0"
 }
