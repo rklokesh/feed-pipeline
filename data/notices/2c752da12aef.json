@@ -1,21 +1,256 @@
 {
+  "auto_published": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-27",
+    "last_date": null,
+    "list": true,
+    "posts": "NTPC (Undergraduate) Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Railway Recruitment Board has released the CBT-2 result and shortlisted candidates for the Computer Based Typing Skill Test (CBTST) under CEN 07/2025.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने सीईएन 07/2025 के तहत सीबीटी-2 परिणाम और कंप्यूटर आधारित टाइपिंग कौशल परीक्षण के लिए शॉर्टलिस्ट किए गए उम्मीदवारों की सूची जारी कर दी है।",
+    "title_en": "RRB NTPC CBT-2 Result 2025 – CBTST Shortlist and Score Card Link",
+    "title_hi": "आरआरबी एनटीपीसी सीबीटी-2 रिजल्ट 2025 – सीबीटीएसटी शॉर्टलिस्ट और स्कोर कार्ड लिंक",
+    "type": "Result",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "rrb-ntpc-undergraduate-2026",
+    "name_en": "RRB NTPC Undergraduate 2026",
+    "name_hi": "आरआरबी एनटीपीसी अंडरग्रेजुएट 2026"
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-30T15:11:31+00:00",
   "id": "2c752da12aef",
+  "issue": 184,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-10-30",
   "org": "RRB",
+  "page": {
+    "after_en": [
+      "Candidates qualifying the CBTST will be called for Document Verification based on their combined performance in CBT-2 and CBTST."
+    ],
+    "after_hi": [
+      "सीबीटीएसटी उत्तीर्ण करने वाले उम्मीदवारों को सीबीटी-2 और सीबीटीएसटी में उनके संयुक्त प्रदर्शन के आधार पर दस्तावेज़ सत्यापन के लिए बुलाया जाएगा।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": null,
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check your roll number in the official PDF list.",
+      "Download and review your scorecard and response sheet via the login link.",
+      "Keep track of exam city intimation and e-call letter release dates."
+    ],
+    "checklist_hi": [
+      "आधिकारिक पीडीएफ सूची में अपना रोल नंबर जांचें।",
+      "लॉगिन लिंक के माध्यम से अपना स्कोरकार्ड और उत्तर पुस्तिका डाउनलोड करें और जांचें।",
+      "परीक्षा शहर की सूचना और ई-कॉल लेटर जारी होने की तिथियों पर नजर रखें।"
+    ],
+    "conducted_by_en": "Railway Recruitment Board (RRB Ahmedabad)",
+    "conducted_by_hi": "रेलवे भर्ती बोर्ड (आरआरबी अहमदाबाद)",
+    "dates": [
+      {
+        "label_en": "CBT-2 Exam Date",
+        "label_hi": "सीबीटी-2 परीक्षा तिथि",
+        "value_en": "17 Sep 2026",
+        "value_hi": "17 सितंबर 2026"
+      },
+      {
+        "label_en": "Score Card / Login Link Active",
+        "label_hi": "स्कोर कार्ड / लॉगिन लिंक सक्रिय",
+        "value_en": "31 Oct 2026",
+        "value_hi": "31 अक्टूबर 2026"
+      },
+      {
+        "label_en": "CBTST Exam Date",
+        "label_hi": "सीबीटीएसटी परीक्षा तिथि",
+        "value_en": "27 Nov 2026",
+        "value_hi": "27 नवंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Registration Number",
+      "Date of Birth",
+      "E-Call Letter for CBTST (when available)"
+    ],
+    "documents_hi": [
+      "पंजीकरण संख्या",
+      "जन्म तिथि",
+      "सीबीटीएसटी के लिए ई-कॉल लेटर (उपलब्ध होने पर)"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Shortlisting Criteria",
+        "label_hi": "शॉर्टलिस्टिंग मानदंड",
+        "value_en": "Based on merit in CBT-2, provided marks are more than CBT-1 cut-off in the respective community.",
+        "value_hi": "सीबीटी-2 में मेरिट के आधार पर, बशर्ते अंक संबंधित समुदाय में सीबीटी-1 के कट-ऑफ से अधिक हों।"
+      }
+    ],
+    "exam_date": "2026-11-27",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "Computer Based Typing Skill Test (CBTST) is a qualifying skill test conducted for candidates shortlisted after the CBT-2 stage for NTPC posts under CEN 07/2025.",
+        "a_hi": "कंप्यूटर आधारित टाइपिंग कौशल परीक्षण (सीबीटीएसटी) सीईएन 07/2025 के तहत एनटीपीसी पदों के लिए सीबीटी-2 चरण के बाद शॉर्टलिस्ट किए गए उम्मीदवारों के लिए आयोजित एक अर्हक कौशल परीक्षण है।",
+        "q_en": "What is RRB NTPC CBTST?",
+        "q_hi": "आरआरबी एनटीपीसी सीबीटीएसटी क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "The CBT-2 exam was conducted on 17 September 2026.",
+        "a_hi": "सीबीटी-2 परीक्षा 17 सितंबर 2026 को आयोजित की गई थी।",
+        "q_en": "When was the RRB NTPC CBT-2 exam conducted for CEN 07/2025?",
+        "q_hi": "सीईएन 07/2025 के लिए आरआरबी एनटीपीसी सीबीटी-2 परीक्षा कब आयोजित की गई थी?"
+      },
+      {
+        "a_en": "A total of 162 candidates have been shortlisted for CBTST by RRB Ahmedabad.",
+        "a_hi": "आरआरबी अहमदाबाद द्वारा सीबीटीएसटी के लिए कुल 162 उम्मीदवारों को शॉर्टलिस्ट किया गया है।",
+        "q_en": "How many candidates are shortlisted for CBTST by RRB Ahmedabad?",
+        "q_hi": "आरआरबी अहमदाबाद द्वारा सीबीटीएसटी के लिए कितने उम्मीदवारों को शॉर्टलिस्ट किया गया है?"
+      },
+      {
+        "a_en": "The login link to view individual scores and question papers will be live from 31 October 2026.",
+        "a_hi": "व्यक्तिगत स्कोर और प्रश्न पत्र देखने के लिए लॉगिन लिंक 31 अक्टूबर 2026 से लाइव होगा।",
+        "q_en": "When will the score card link become active?",
+        "q_hi": "स्कोर कार्ड लिंक कब सक्रिय होगा?"
+      },
+      {
+        "a_en": "The CBTST for CEN 07/2025 is tentatively scheduled for 27 November 2026.",
+        "a_hi": "सीईएन 07/2025 के लिए सीबीटीएसटी 27 नवंबर 2026 को संभावित है।",
+        "q_en": "When is the CBTST exam tentatively scheduled?",
+        "q_hi": "सीबीटीएसटी परीक्षा कब संभावित है?"
+      },
+      {
+        "a_en": "E-call letters will be available for download 4 days prior to the CBTST date on the official RRB website.",
+        "a_hi": "सीबीटीएसटी तिथि से 4 दिन पहले आधिकारिक आरआरबी वेबसाइट पर ई-कॉल लेटर डाउनलोड के लिए उपलब्ध होंगे।",
+        "q_en": "Where can I download the e-call letter for CBTST?",
+        "q_hi": "मैं सीबीटीएसटी के लिए ई-कॉल लेटर कहां से डाउनलोड कर सकता हूं?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "RRB NTPC CBT-2 Result 2025 – CBTST Shortlist and Score Card Link",
+    "h1_hi": "आरआरबी एनटीपीसी सीबीटी-2 रिजल्ट 2025 – सीबीटीएसटी शॉर्टलिस्ट और स्कोर कार्ड लिंक",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official unified website of RRB.",
+      "Click on the link to view individual scores and CBTST status for CEN 07/2025.",
+      "Enter your Registration Number and Date of Birth to log in.",
+      "Check your score card, question paper, and correct answers."
+    ],
+    "how_hi": [
+      "आरआरबी की आधिकारिक एकीकृत वेबसाइट पर जाएं।",
+      "सीईएन 07/2025 के लिए व्यक्तिगत स्कोर और सीबीटीएसटी स्थिति देखने के लिए दिए गए लिंक पर क्लिक करें।",
+      "लॉग इन करने के लिए अपना पंजीकरण नंबर और जन्म तिथि दर्ज करें।",
+      "अपना स्कोर कार्ड, प्रश्न पत्र और सही उत्तर देखें।"
+    ],
+    "intro_en": "Railway Recruitment Board (RRB Ahmedabad) has announced the results of the 2nd Stage Computer Based Test (CBT-II) held on 17 September 2026 for NTPC Undergraduate posts under CEN 07/2025. A total of 162 candidates have been provisionally shortlisted for the Computer Based Typing Skill Test (CBTST). Candidates can view their marks, question papers, and qualifying status through the login link active from 31 October 2026. The CBTST is tentatively scheduled for 27 November 2026.",
+    "intro_hi": "रेलवे भर्ती बोर्ड (आरआरबी अहमदाबाद) ने सीईएन 07/2025 के तहत एनटीपीसी पूर्व स्नातक पदों के लिए 17 सितंबर 2026 को आयोजित दूसरे चरण की कंप्यूटर आधारित परीक्षा (सीबीटी-II) के परिणाम घोषित कर दिए हैं। कंप्यूटर आधारित टाइपिंग कौशल परीक्षण (सीबीटीएसटी) के लिए कुल 162 उम्मीदवारों को अनंतिम रूप से शॉर्टलिस्ट किया गया है। उम्मीदवार 31 अक्टूबर 2026 से सक्रिय लॉगिन लिंक के माध्यम से अपने अंक, प्रश्न पत्र और अर्हता स्थिति देख सकते हैं। सीबीटीएसटी 27 नवंबर 2026 को संभावित है।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not rely on touts promising jobs through illegal means; selection is purely merit-based and computerized."
+    ],
+    "mistakes_hi": [
+      "अवैध माध्यमों से नौकरी दिलाने का वादा करने वाले दलालों पर भरोसा न करें; चयन पूरी तरह से योग्यता आधारित और कंप्यूटरीकृत है।"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-10-30",
+    "official_site": "https://rrb.indianrailways.gov.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "NTPC (Undergraduate) Posts",
+        "value_hi": "एनटीपीसी (पूर्व स्नातक) पद"
+      },
+      {
+        "label_en": "Advertisement No.",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "CEN 07/2025",
+        "value_hi": "सीईएन 07/2025"
+      },
+      {
+        "label_en": "CBT-2 Exam Date",
+        "label_hi": "सीबीटी-2 परीक्षा तिथि",
+        "value_en": "17 Sep 2026",
+        "value_hi": "17 सितंबर 2026"
+      },
+      {
+        "label_en": "CBTST Exam Date",
+        "label_hi": "सीबीटीएसटी परीक्षा तिथि",
+        "value_en": "27 Nov 2026 (Tentative)",
+        "value_hi": "27 नवंबर 2026 (संभावित)"
+      },
+      {
+        "label_en": "Total Shortlisted",
+        "label_hi": "कुल शॉर्टलिस्टेड",
+        "value_en": "162 candidates (Ahmedabad)",
+        "value_hi": "162 उम्मीदवार (अहमदाबाद)"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "2nd Stage Computer Based Test (CBT-II)",
+      "Computer Based Typing Skill Test (CBTST)",
+      "Document Verification"
+    ],
+    "selection_hi": [
+      "द्वितीय चरण कंप्यूटर आधारित परीक्षा (सीबीटी-II)",
+      "कंप्यूटर आधारित टाइपिंग कौशल परीक्षण (सीबीटीएसटी)",
+      "दस्तावेज़ सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "CBT-2 Result & Shortlist",
+      "headline_hi": "सीबीटी-2 रिजल्ट और शॉर्टलिस्ट",
+      "kind": "result",
+      "line_en": "NTPC Undergraduate CEN 07/2025",
+      "line_hi": "एनटीपीसी पूर्व स्नातक सीईएन 07/2025",
+      "posts": null
+    },
+    "status_en": "CBT-2 result and CBTST shortlist released, score card link active from 31 Oct 2026",
+    "status_hi": "सीबीटी-2 परिणाम और सीबीटीएसटी शॉर्टलिस्ट जारी, स्कोर कार्ड लिंक 31 अक्टूबर 2026 से सक्रिय",
+    "summary_en": "Railway Recruitment Board (RRB) has released the CBT-2 result and shortlisted candidates for the Computer Based Typing Skill Test (CBTST) under CEN 07/2025. Candidates can check their individual scores and question papers from 31 October 2026.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने सीईएन 07/2025 के तहत सीबीटी-2 परिणाम और कंप्यूटर आधारित टाइपिंग कौशल परीक्षण के लिए शॉर्टलिस्ट किए गए उम्मीदवारों की सूची जारी कर दी है। उम्मीदवार 31 अक्टूबर 2026 से अपने व्यक्तिगत अंक और प्रश्न पत्र देख सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Total number of candidates shortlisted for CBTST by RRB Ahmedabad: 162",
+        "detail_hi": "आरआरबी अहमदाबाद द्वारा सीबीटीएसटी के लिए शॉर्टलिस्ट किए गए कुल उम्मीदवारों की संख्या: 162",
+        "post_en": "NTPC (Undergraduate) - CBTST Shortlist",
+        "post_hi": "एनटीपीसी (पूर्व स्नातक) - सीबीटीएसटी शॉर्टलिस्ट",
+        "total": "162"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates who appeared for the RRB NTPC Undergraduate CBT-2 exam under CEN 07/2025."
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जिन्होंने सीईएन 07/2025 के तहत आरआरबी एनटीपीसी पूर्व स्नातक सीबीटी-2 परीक्षा दी थी।"
+    ]
+  },
   "pdf": {
     "bytes": 796890,
     "pages": 2,
     "sha256": "9da4e9772b1aa40fbeb71cf5e7df3f072bfc7c68f517ea0a93ec89f5e94240fa",
     "text_kind": "text"
   },
+  "published_at": "2026-10-30T15:19:20Z",
+  "slug": "rrb-ntpc-cbt-2-result-2025-cbtst-shortlist-and-score-card-link",
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RRB CEN 07/2025: Roll No. Publishing for TST 30.10.2026",
   "url": "https://rrb.indianrailways.gov.in/-/image/1793373127271Roll_No._Publishing_for_TST_30.10.2026.pdf/examsDocuments"
 }

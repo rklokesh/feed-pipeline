@@ -1,5 +1,27 @@
 {
+  "auto_published": true,
   "board_url": "https://nta.ac.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-11-22",
+    "list": true,
+    "posts": "Engineering Aspirants",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "NTA has issued clarification allowing candidates to submit a fresh online application form for JEE Main 2027 Session 1 by 22nd November 2026 if they made errors in their previous form.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने जेईई मुख्य 2027 सत्र 1 के लिए नया ऑनलाइन आवेदन पत्र जमा करने हेतु स्पष्टीकरण जारी किया है, जिसकी अंतिम तिथि 22 नवंबर 2026 है।",
+    "title_en": "JEE Main 2027 Session 1 Fresh Application Notice – Last Date 22 Nov",
+    "title_hi": "जेईई मेन 2027 सत्र 1 नया आवेदन सूचना – अंतिम तिथि 22 नवंबर",
+    "type": "Job",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "nta-jee-main-2027",
+    "name_en": "NTA JEE Main 2027",
+    "name_hi": "एनटीए जेईई मेन 2027"
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -29,16 +51,234 @@
   },
   "first_seen": "2026-10-30T15:17:40+00:00",
   "id": "0578ad0416fb",
+  "issue": 183,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-10-30",
   "org": "NTA",
+  "page": {
+    "after_en": [
+      "Correction window will open from 27th November to 29th November 2026 for minor edits.",
+      "Admit card and exam date announcements will follow."
+    ],
+    "after_hi": [
+      "छोटे-मोटे बदलावों के लिए सुधार विंडो 27 नवंबर से 29 नवंबर 2026 तक खुलेगी।",
+      "इसके बाद एडमिट कार्ड और परीक्षा तिथि की घोषणा की जाएगी।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://jeemain.nta.nic.in/",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check eligibility and details carefully before submitting.",
+      "Keep scanned copies of photo and signature ready.",
+      "Ensure fee payment is successfully done."
+    ],
+    "checklist_hi": [
+      "जमा करने से पहले पात्रता और विवरण की सावधानीपूर्वक जांच करें।",
+      "फोटो और हस्ताक्षर की स्कैन की गई प्रतियां तैयार रखें।",
+      "सुनिश्चित करें कि शुल्क भुगतान सफलतापूर्वक हो गया है।"
+    ],
+    "conducted_by_en": "National Testing Agency (NTA)",
+    "conducted_by_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए)",
+    "dates": [
+      {
+        "label_en": "Public Notice Date",
+        "label_hi": "सार्वजनिक सूचना तिथि",
+        "value_en": "30 Oct 2026",
+        "value_hi": "30 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Fresh Application Last Date",
+        "label_hi": "नया आवेदन करने की अंतिम तिथि",
+        "value_en": "22 Nov 2026 (11:50 P.M.)",
+        "value_hi": "22 नवंबर 2026 (रात 11:50 बजे)"
+      },
+      {
+        "label_en": "Fresh Application with Late Fee",
+        "label_hi": "विलंब शुल्क के साथ नया आवेदन",
+        "value_en": "23 Nov 2026 to 26 Nov 2026",
+        "value_hi": "23 नवंबर 2026 से 26 नवंबर 2026"
+      },
+      {
+        "label_en": "Correction Window",
+        "label_hi": "सुधार विंडो",
+        "value_en": "27 Nov 2026 to 29 Nov 2026",
+        "value_hi": "27 नवंबर 2026 से 29 नवंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Photograph",
+      "Signature",
+      "Required educational and personal documents"
+    ],
+    "documents_hi": [
+      "फोटोशूट",
+      "हस्ताक्षर",
+      "आवश्यक शैक्षणिक और व्यक्तिगत दस्तावेज"
+    ],
+    "eligibility": [],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is an official clarification by NTA allowing candidates who made errors in their initial application form to submit a completely fresh application for JEE Main 2027 Session 1.",
+        "a_hi": "यह एनटीए द्वारा जारी एक आधिकारिक स्पष्टीकरण है जो उम्मीदवारों को अपने प्रारंभिक आवेदन पत्र में की गई गलतियों को सुधारने के लिए जेईई मेन 2027 सत्र 1 के लिए पूरी तरह से नया आवेदन जमा करने की अनुमति देता है।",
+        "q_en": "What is the JEE Main 2027 Session 1 fresh application notice?",
+        "q_hi": "जेईई मेन 2027 सत्र 1 नया आवेदन नोटिस क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "NTA Help Desk",
+        "label_hi": "एनटीए हेल्प डेस्क",
+        "value_en": "011-40759000 / 011-69227700",
+        "value_hi": "011-40759000 / 011-69227700"
+      },
+      {
+        "label_en": "Official Email",
+        "label_hi": "आधिकारिक ईमेल",
+        "value_en": "jeemain@nta.nic.in",
+        "value_hi": "jeemain@nta.nic.in"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The last date to submit a fresh application is 22nd November 2026 up to 11:50 P.M.",
+        "a_hi": "नया आवेदन जमा करने की अंतिम तिथि 22 नवंबर 2026 रात 11:50 बजे तक है।",
+        "q_en": "What is the last date to submit a fresh application for JEE Main 2027 Session 1?",
+        "q_hi": "जेईई मेन 2027 सत्र 1 के लिए नया आवेदन जमा करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "Yes, fresh applications with a late fee can be submitted from 23rd November 2026 to 26th November 2026 up to 11:50 P.M.",
+        "a_hi": "हाँ, विलंब शुल्क के साथ नए आवेदन 23 नवंबर 2026 से 26 नवंबर 2026 तक रात 11:50 बजे तक जमा किए जा सकते हैं।",
+        "q_en": "Can I submit a fresh application with a late fee?",
+        "q_hi": "क्या मैं विलंब शुल्क के साथ नया आवेदन जमा कर सकता हूँ?"
+      },
+      {
+        "a_en": "No, the examination fee paid against an earlier form will neither be refunded nor adjusted against the fresh application.",
+        "a_hi": "नहीं, पिछले फॉर्म के लिए भुगतान किया गया परीक्षा शुल्क न तो वापस किया जाएगा और न ही नए आवेदन के खिलाफ समायोजित किया जाएगा।",
+        "q_en": "Will my previous fee be refunded or adjusted?",
+        "q_hi": "क्या मेरा पिछلا शुल्क वापस या समायोजित किया जाएगा?"
+      },
+      {
+        "a_en": "The correction facility is available from 27th November 2026 to 29th November 2026.",
+        "a_hi": "सुधार सुविधा 27 नवंबर 2026 से 29 नवंबर 2026 तक उपलब्ध है।",
+        "q_en": "When is the correction facility available?",
+        "q_hi": "सुधार सुविधा कब उपलब्ध है?"
+      },
+      {
+        "a_en": "If you do not complete the fee payment and generate the confirmation page for the fresh form, your earlier form will remain valid.",
+        "a_hi": "यदि आप नए फॉर्म के लिए शुल्क भुगतान पूरा नहीं करते हैं और कन्फर्मेशन पेज जनरेट नहीं करते हैं, तो आपका पुराना फॉर्म ही वैध रहेगा।",
+        "q_en": "What happens if I submit a fresh form but do not pay the fee?",
+        "q_hi": "क्या होगा यदि मैं नया फॉर्म जमा करता हूँ लेकिन शुल्क भुगतान नहीं करता हूँ?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "JEE Main 2027 Session 1 Fresh Application Notice – Last Date 22 Nov",
+    "h1_hi": "जेईई मेन 2027 सत्र 1 नया आवेदन सूचना – अंतिम तिथि 22 नवंबर",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official website at jeemain.nta.nic.in.",
+      "Log in and fill out a fresh application form if you made major errors.",
+      "Upload new photograph, signature, and documents.",
+      "Complete the fee payment and generate the Confirmation Page."
+    ],
+    "how_hi": [
+      "आधिकारिक वेबसाइट jeemain.nta.nic.in पर जाएं।",
+      "लॉग इन करें और यदि आपने बड़ी गलतियाँ की हैं तो नया आवेदन पत्र भरें।",
+      "नया फोटोग्राफ, हस्ताक्षर और दस्तावेज अपलोड करें।",
+      "शुल्क भुगतान पूरा करें और कन्फर्मेशन पेज जनरेट करें।"
+    ],
+    "intro_en": "The National Testing Agency (NTA) has released an important public notice regarding the submission of a fresh Online Application Form for JEE (Main) – 2027 (Session 1). Candidates who have made mistakes in their previously submitted forms are allowed to submit a new application. The last date to submit a fresh application is 22nd November 2026, and with a late fee until 26th November 2026. Candidates should note that the fee paid for earlier forms will neither be refunded nor adjusted.",
+    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने संयुक्त प्रवेश परीक्षा मुख्य – 2027 (सत्र 1) के लिए एक नया ऑनलाइन आवेदन पत्र जमा करने के संबंध में एक महत्वपूर्ण सार्वजनिक सूचना जारी की है। जिन उम्मीदवारों ने अपने पहले जमा किए गए फॉर्म में गलतियां की हैं, वे नया आवेदन जमा कर सकते हैं। नया आवेदन जमा करने की अंतिम तिथि 22 नवंबर 2026 है, और विलंब शुल्क के साथ 26 नवंबर 2026 तक है। उम्मीदवारों को यह ध्यान रखना चाहिए कि पहले के फॉर्म के लिए भुगतान किया गया शुल्क न तो वापस किया जाएगा और न ही समायोजित किया जाएगा।",
+    "last_date": "2026-11-22",
+    "mistakes_en": [
+      "Do not assume earlier fees will be adjusted for the fresh application.",
+      "Ensure the new application has fee payment completed and confirmation page generated, as incomplete fresh forms will revert validity to the older form."
+    ],
+    "mistakes_hi": [
+      "यह न मानें कि नए आवेदन के लिए पहले का शुल्क समायोजित किया जाएगा।",
+      "सुनिश्चित करें कि नए आवेदन का शुल्क भुगतान पूरा हो गया है और कन्फर्मेशन पेज जनरेट हो गया है, क्योंकि अधूरा नया फॉर्म पुराने फॉर्म की वैधता को बरकरार रखेगा।"
+    ],
+    "not_en": [
+      "Candidates submitting multiple forms without valid reasons to appear more than once in violation of UFM rules."
+    ],
+    "not_hi": [
+      "यूएफएम नियमों के उल्लंघन में एक से अधिक बार उपस्थित होने के लिए बिना वैध कारणों के कई फॉर्म जमा करने वाले उम्मीदवार।"
+    ],
+    "notice_date": "2026-10-30",
+    "official_site": "https://jeemain.nta.nic.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Exam",
+        "label_hi": "परीक्षा",
+        "value_en": "JEE (Main) – 2027 (Session 1)",
+        "value_hi": "संयुक्त प्रवेश परीक्षा मुख्य – 2027 (सत्र 1)"
+      },
+      {
+        "label_en": "Fresh Application Last Date",
+        "label_hi": "नया आवेदन करने की अंतिम तिथि",
+        "value_en": "22 Nov 2026",
+        "value_hi": "22 नवंबर 2026"
+      },
+      {
+        "label_en": "Last Date with Late Fee",
+        "label_hi": "विलंब शुल्क के साथ अंतिम तिथि",
+        "value_en": "26 Nov 2026",
+        "value_hi": "26 नवंबर 2026"
+      },
+      {
+        "label_en": "Correction Window",
+        "label_hi": "सुधार विंडो",
+        "value_en": "27 Nov 2026 to 29 Nov 2026",
+        "value_hi": "27 नवंबर 2026 से 29 नवंबर 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Submit fresh application or use correction facility",
+      "Appear for JEE Main Session 1 examination"
+    ],
+    "selection_hi": [
+      "नया आवेदन जमा करें या सुधार सुविधा का उपयोग करें",
+      "जेईई मेन सत्र 1 परीक्षा में शामिल हों"
+    ],
+    "share_card": {
+      "headline_en": "Fresh Application Notice",
+      "headline_hi": "नया आवेदन सूचना",
+      "kind": "job",
+      "line_en": "JEE Main 2027 Session 1",
+      "line_hi": "जेईई मेन 2027 सत्र 1",
+      "posts": null
+    },
+    "status_en": "Fresh application window open till 22 Nov 2026",
+    "status_hi": "नया आवेदन फॉर्म भरने की अंतिम तिथि 22 नवंबर 2026 है",
+    "summary_en": "NTA has issued a clarification allowing candidates who made errors in their JEE Main 2027 Session 1 form to submit a fresh online application by 22nd November 2026. A fresh application number will be generated, and all details must be re-entered.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने जेईई मेन 2027 सत्र 1 के फॉर्म में गलती करने वाले उम्मीदवारों के लिए 22 नवंबर 2026 तक नया ऑनलाइन आवेदन जमा करने की अनुमति दी है। नया आवेदन नंबर जनरेट होगा और सभी विवरण फिर से दर्ज करने होंगे।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Engineering aspirants who made errors in their JEE Main 2027 Session 1 application form."
+    ],
+    "who_hi": [
+      "इंजीनियरिंग के वे उम्मीदवार जिन्होंने अपने जेईई मेन 2027 सत्र 1 आवेदन पत्र में गलतियां की हैं।"
+    ]
+  },
   "pdf": {
     "bytes": 280246,
     "pages": 1,
     "sha256": "6dc3b0379b42a405aa8f3bab63851ac718d392ec049732eb60088e52b4128a19",
     "text_kind": "text"
   },
+  "published_at": "2026-10-30T15:18:58Z",
+  "qual": [],
+  "slug": "jee-main-2027-session-1-fresh-application-notice-last-date-22-no",
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Clarification regarding submission of a fresh Online Application Form for JEE (Main) – 2027 (Session 1) Read More",
   "url": "https://nta.ac.in/Download/Notice/Notice_20261030202143.pdf"
 }
