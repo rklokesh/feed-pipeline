@@ -1,0 +1,66 @@
+{
+  "board_url": "https://www.indiapost.gov.in/vacancies",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "Notification No: MMG/36/Sk. Artisan/DR/II/95 भारत सरकार, Government of India संचार मं(cid:361)ालय /Ministry of Communication",
+      "source": "rule",
+      "value": "MMG/36/Sk. Artisan/DR/II/95"
+    },
+    "age_limit": {
+      "evidence": "One year. 1. ELIGIBILITY: a. Age limit for direct recruits: 18 to 30 years as on 01.07.2018 for unreserved candidate (UR). Relaxation of Age Limit (for re",
+      "source": "rule",
+      "value": {
+        "max": 30,
+        "min": 18
+      }
+    },
+    "apply_last": {
+      "evidence": "y for the vacancies notified as per eligibility conditions. LAST DATE FOR RECEIPT OF APPLICATION: on or before 30/11/2026 up to 17:00 hrs. SCALE OF PAY: Rs. 19,900/- to 63,200/- (Level 2 in the pay matrix as per 7th CPC)",
+      "source": "rule",
+      "value": "2026-11-30"
+    },
+    "post_names": {
+      "evidence": "MV Mechanic 8 2 1 1 4",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "MV Mechanic",
+        "MV Electrician",
+        "Tyreman",
+        "Blacksmith",
+        "Painter",
+        "Upholsterer",
+        "Carpenter & Joiner"
+      ]
+    },
+    "qualification": {
+      "evidence": "A certificate in the respective trade from any Technical Institution recognized\nby Government OR VIII Std. passed with experience of one year in the\nrespective trade.",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "A certificate in the respective trade from any Technical Institution recognized by Government OR VIII Std. passed with experience of one year in the respective trade."
+    },
+    "total_vacancies": {
+      "evidence": "Total 19 4 4 1 10",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 19
+    }
+  },
+  "first_seen": "2026-10-30T05:10:48+00:00",
+  "id": "36b83172a725",
+  "kind": "notification",
+  "org": "India Post",
+  "pdf": {
+    "bytes": 928286,
+    "pages": 13,
+    "sha256": "a4c0d938c1bfd88a88aa7d949b6326ed1f5c0777d071fb150b12397ce75ce227",
+    "text_kind": "text"
+  },
+  "source_id": "indiapost-vacancies",
+  "status": "pending_review",
+  "title": "Notification for Filling up of 19 vacant posts of Skilled Artisan of MMS Kolkata in West Bengal Circle through Direct Recruitment",
+  "url": "https://www.indiapost.gov.in/api/documents/file/10391xe2ox8w0is613k9jr369dy34fsw0s5ca3h16z08vuz04nku0gw9f35snp"
+}
