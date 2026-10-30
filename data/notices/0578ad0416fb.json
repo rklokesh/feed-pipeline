@@ -1,0 +1,44 @@
+{
+  "board_url": "https://nta.ac.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "apply_last": {
+      "evidence": "ignature and documents, must be entered and uploaded again. Last date: Fresh applications must be completed, including fee payment, on or before 22nd November 2026 upto 11:50 P.M. and with late fee from 23rd N",
+      "source": "rule",
+      "value": "2026-11-22"
+    },
+    "apply_or_official_url": {
+      "evidence": "Delhi – 110002 फ़ोन/Telephone: 011-40759000 िेबसाइट/Website: https://jeemain.nta.nic.in/ ई-मेल/e-mail: jeemain@nta.ac.in",
+      "source": "rule",
+      "value": "https://jeemain.nta.nic.in/"
+    },
+    "apply_url": {
+      "evidence": "https://jeemain.nta.nic.in/",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://jeemain.nta.nic.in/"
+    },
+    "fee_last": {
+      "evidence": "and with late fee from 23rd November 2026 to 26th November 2026 upto 11:50 P.M.",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-26"
+    }
+  },
+  "first_seen": "2026-10-30T15:17:40+00:00",
+  "id": "0578ad0416fb",
+  "kind": "notification",
+  "org": "NTA",
+  "pdf": {
+    "bytes": 280246,
+    "pages": 1,
+    "sha256": "6dc3b0379b42a405aa8f3bab63851ac718d392ec049732eb60088e52b4128a19",
+    "text_kind": "text"
+  },
+  "source_id": "nta-home",
+  "status": "pending_review",
+  "title": "Clarification regarding submission of a fresh Online Application Form for JEE (Main) – 2027 (Session 1) Read More",
+  "url": "https://nta.ac.in/Download/Notice/Notice_20261030202143.pdf"
+}
