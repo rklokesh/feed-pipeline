@@ -1,5 +1,20 @@
 {
   "board_url": "https://mppsc.mp.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-16",
+    "last_date": null,
+    "list": false,
+    "posts": "Assistant Director, Veterinary Assistant Surgeon, Veterinary Extension Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Interview schedule notice for an existing examination, not a new job opening or result.",
+    "summary_en": "MPPSC has announced the interview schedule for the Veterinary Assistant Surgeon and VEO Examination 2026, starting from 16 November 2026.",
+    "summary_hi": "मध्य प्रदेश लोक सेवा आयोग ने पशु चिकित्सा सहायक शल्यज्ञ परीक्षा 2026 के साक्षात्कार की तिथि 16 नवंबर 2026 घोषित कर दी है।",
+    "title_en": "MPPSC Veterinary Assistant Surgeon and VEO Exam 2026 Interview Notice",
+    "title_hi": "मध्य प्रदेश लोक सेवा आयोग पशु चिकित्सा सहायक शल्यज्ञ परीक्षा साक्षात्कार सूचना",
+    "type": "Job",
+    "vacancies": 80
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "mppsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "सहायक संचालक/पशु चिकित्‍सा सहायक शल्‍यज्ञ/पशु चिकित्‍सा विस्‍तार अधिकारी परीक्षा - 2026 के पद हेतु साक्षात्‍कार आयोजन संबंधी सूचना, दिनांक 30/10/2026",
   "url": "https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_AD_Veterinary_Assistant_Surgeon_VEO_Exam_2026_Dated_30_10_2026.pdf"
 }
