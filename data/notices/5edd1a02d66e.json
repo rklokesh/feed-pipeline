@@ -1,5 +1,20 @@
 {
   "board_url": "https://rrcnr.org/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-11-12",
+    "list": false,
+    "posts": "Various Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal candidate notice for willingness submission, not a general job listing",
+    "summary_en": "Identified candidates under GDCE Notification 01/2023 must submit their willingness or unwillingness for re-examination through the provided link by 12.11.2026.",
+    "summary_hi": "जीडीसीई अधिसूचना 01/2023 के तहत चिन्हित उम्मीदवारों को 12.11.2026 तक दिए गए लिंक के माध्यम से अपनी सहमति या असहमति दर्ज करनी होगी।",
+    "title_en": "RRB Northern Railway GDCE Re-examination Willingness Notice",
+    "title_hi": "उत्तर रेलवे सीमित विभागीय प्रतियोगी परीक्षा सहमति सूचना",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -27,7 +42,7 @@
     "text_kind": "text"
   },
   "source_id": "rrc-nr",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "28.10.2026 Kind Attention: Notice regarding online submission of willingness/unwillingness for identified candidates under GDCE Notification No. 01/2023/GDCE. Identified candidates must submit consent through the provided link by 12.11.2026. A separate email will be sent to the identified candidates",
   "url": "https://rrcnr.org/downloads/91_roll_no_list.pdf"
 }

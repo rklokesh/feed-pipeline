@@ -1,5 +1,20 @@
 {
   "board_url": "https://uppsc.up.nic.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "document verification notice for a specific past exam",
+    "summary_en": "",
+    "summary_hi": "",
+    "title_en": "",
+    "title_hi": "",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "uppsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "04 Nov 2026 NOTICE REAGARDING DOCUMENT VERIFICATION FOR ADVT. NO. A-2/E-1/2020, REGIONAL INSPECTOR (TECHNICAL) PRACTICAL EXAMINATION-2020",
   "url": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnfpuRH59X6AeasKv82Ugq+"
 }
