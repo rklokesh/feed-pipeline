@@ -1,5 +1,20 @@
 {
   "board_url": "https://dsssb.delhi.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "PGT (Maths) Male and Female",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Rejection notice for specific candidates, not a general job listing or final result",
+    "summary_en": "DSSSB has released a rejection notice for the post of PGT Maths under post code 825/24 due to failure in uploading dossiers.",
+    "summary_hi": "DSSSB ने डोजियर अपलोड न करने के कारण पोस्ट कोड 825/24 के तहत पीजीटी गणित के पद के लिए अस्वीकृति नोटिस जारी किया है।",
+    "title_en": "DSSSB PGT Maths Rejection Notice",
+    "title_hi": "DSSSB PGT गणित अस्वीकृति नोटिस",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "dsssb-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "REJECTION NOTICE No. 387 FOR THE POST OF PGT (Maths) - Male & PGT (Maths) - Female in Directorate of Education (DoE), GNCTD, Post Code 825/24. Date: 30-10-2026 | 219.35 KB Download",
   "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/rejection_no_387-825_24.pdf"
 }
