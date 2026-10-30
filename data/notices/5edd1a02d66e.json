@@ -1,0 +1,33 @@
+{
+  "board_url": "https://rrcnr.org/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "List of identified candidates under GDCE Notification No. 01/2023/GDCE for submission of online willingness/unwillingness for re‐examination. The candidates are require",
+      "source": "rule",
+      "value": "01/2023/GDCE for submission of"
+    },
+    "apply_last": {
+      "evidence": "The candidates are required to submit their consent through the provided link by 12.11.2026.",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-12"
+    }
+  },
+  "first_seen": "2026-10-30T11:11:17+00:00",
+  "id": "5edd1a02d66e",
+  "kind": "notification",
+  "org": "RRC Northern Railway",
+  "pdf": {
+    "bytes": 50684,
+    "pages": 1,
+    "sha256": "76742d57ee0ecf734e2d5c453caa210cd1f7730fc1a6898902f49c793f27f56b",
+    "text_kind": "text"
+  },
+  "source_id": "rrc-nr",
+  "status": "pending_review",
+  "title": "28.10.2026 Kind Attention: Notice regarding online submission of willingness/unwillingness for identified candidates under GDCE Notification No. 01/2023/GDCE. Identified candidates must submit consent through the provided link by 12.11.2026. A separate email will be sent to the identified candidates",
+  "url": "https://rrcnr.org/downloads/91_roll_no_list.pdf"
+}
