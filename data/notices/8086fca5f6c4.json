@@ -1,0 +1,37 @@
+{
+  "board_url": "https://dsssb.delhi.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "2 - /1385'1392 RESULT NOTIGE No: 386 1. The DSSSB vide its advertisement no. 1ot2oz4 dated 30.12.2024 with closing date 14.02.2025 had advertised total 31 vacancies (UR-11, EWS-02' OBG-I1' SC'03' sT",
+      "source": "rule",
+      "value": "1ot2oz4 dated 30.12.2024 with closing dat"
+    },
+    "apply_last": {
+      "evidence": "SB vide its advertisement no. 1ot2oz4 dated 30.12.2024 with closing date 14.02.2025 had advertised total 31 vacancies (UR-11, EWS-02' OBG-I1' SC'03' sT-04) for the Post of PGT (Maths) - Male (uR-10, EWS-02' OBC-07",
+      "source": "rule",
+      "value": "2025-02-14"
+    },
+    "total_vacancies": {
+      "evidence": "0.12.2024 with closing date 14.02.2025 had advertised total 31 vacancies (UR-11, EWS-02' OBG-I1' SC'03' sT-04) for the Post of PGT (Maths) - Male (uR-10",
+      "source": "rule",
+      "value": 31
+    }
+  },
+  "first_seen": "2026-10-30T10:41:12+00:00",
+  "id": "8086fca5f6c4",
+  "kind": "result",
+  "org": "DSSSB",
+  "pdf": {
+    "bytes": 1339844,
+    "pages": 6,
+    "sha256": "92207f0f68c6d56bca320f9245c2b982f70c6e041e485f53dcf24584aba57586",
+    "text_kind": "text"
+  },
+  "source_id": "dsssb-home",
+  "status": "pending_review",
+  "title": "RESULT NOTICE No: 386 POST CODE: 825/24, PGT (Maths) - Male & PGT (Maths) - Female in Directorate of Education, GNCTD Date: 30-10-2026 | 1.28 MB Download",
+  "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/result_no_386-825_24.pdf"
+}
