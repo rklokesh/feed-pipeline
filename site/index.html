@@ -117,29 +117,7 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 .row { display: grid; grid-template-columns: 7.25rem minmax(0, 1fr) 7.25rem 5.75rem 7.5rem 4.25rem; gap: 0 16px; align-items: baseline; }
 main { margin-top: 36px; flex: 1; }
 .head { color: color-mix(in srgb, var(--grey) 80%, var(--ink)); background: var(--soft); padding: 7px 8px; border-bottom: 1px solid color-mix(in srgb, var(--ink) 28%, var(--page)); }
-.fbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: -10px 0 26px; }
-.fbar .chip { display: inline-flex; align-items: stretch; border: 1px solid var(--line); border-radius: 8px; background: var(--page); box-shadow: 0 1px 2px rgba(0,0,0,.04); overflow: hidden; }
-.fbar .chip label { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; cursor: pointer; position: relative; }
-.fbar .chip .cl { color: var(--ink); }
-.fbar .chip .cv { color: var(--grey); }
-.fbar .chip.on .cv { color: var(--link, #1E6FD9); }
-.fbar .chip select { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; font: inherit; border: 0; }
-.fbar .chip.on .tg { color: var(--link, #1E6FD9); }
-.fbar .chip .tg { all: unset; cursor: pointer; padding: 5px 10px; color: var(--ink); }
-.fbar .chip:hover { border-color: color-mix(in srgb, var(--grey) 45%, var(--line)); }
-.fbar .chip select:focus, .fbar .chip button:focus { outline: none; }
 /* keyboard focus only: the chip's own rounded border darkens (no clipped outline) */
-.fbar .chip:has(:focus-visible) { border-color: var(--ink); }
-.fbar .chip .cx { all: unset; cursor: pointer; display: none; padding: 0 9px; color: var(--grey); border-left: 1px solid var(--line); }
-.fbar .chip .cx:hover { color: var(--ink); }
-.fbar .chip.on .cx { display: inline-flex; align-items: center; }
-.fbar .chip[hidden] { display: none; }
-.fbar .fcount { flex-basis: 100%; min-height: 1lh; margin: 4px 0 0 2px; color: var(--grey); }
-.fbar .fclr { all: unset; cursor: pointer; padding: 5px 4px; color: var(--link, #1E6FD9); white-space: nowrap; }
-.fbar .fclr:hover { text-decoration: underline; text-underline-offset: 4px; }
-.fbar .fclr:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; border-radius: 4px; }
-.fbar .fclr[hidden] { display: none; }
-@media (max-width: 640px) { .fbar { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; } .fbar::-webkit-scrollbar { display: none; } .fbar .chip, .fbar .fclr { flex: none; } .fbar .fcount { display: none; } }
 .hubh { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }   /* read by Google and screen readers, not shown */
 .tabrow { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 4px 18px; margin-bottom: 14px; }
 .tabrow .tabs { flex: 1 1 auto; margin-bottom: 0; }
@@ -291,6 +269,8 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
   .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 }
+.preset { margin: -10px 0 18px; }
+.preset a { color: inherit; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -326,13 +306,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       <span class="ph" id="ph" aria-hidden="true" hidden><span class="ph-lead"></span><span class="ph-word"></span><span class="ph-caret"></span></span>
       <button type="button" class="sx" id="kHint" hidden><span data-t="clear">Clear</span><kbd class="kc" aria-hidden="true">Esc</kbd></button>
     </label>
-    <div class="fbar" id="fbar">
-      <span class="chip" data-f="st"><label><span class="cl" data-t="fState">State</span><span class="cv" id="fStV"></span><select id="fSt" aria-label="State"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
-      <span class="chip" data-f="q"><label><span class="cl" data-t="fQual">Education</span><span class="cv" id="fQV"></span><select id="fQ" aria-label="Education"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
-      <span class="chip tog" data-f="me"><button type="button" id="fMe" class="tg" data-t="fMe">Jobs I can apply for</button><button type="button" class="cx" aria-label="Clear">×</button></span>
-      <button type="button" class="fclr" id="fClr" data-t="fClear" hidden>Clear filters</button>
-      <p class="fcount" id="fcount"></p>
-    </div>
+    <p class="preset g" id="preset" hidden></p>
     <p class="newline off" id="newline" aria-live="polite">&nbsp;</p>
     <div class="row head"><span class="hide-sm" data-t="hPosted">Posted</span><span data-t="hNotice">Notice</span><span class="hide-sm" data-t="hOrg">Organisation</span><span class="hide-sm" data-t="hType">Type</span><span data-t="hLast">Last date</span><span class="hide-sm" data-t="hPdf">PDF</span></div>
     <ul class="list" id="list"></ul>
@@ -771,9 +745,9 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   const QOK = { "10th": ["10th"], "12th": ["10th", "12th"], iti: ["10th", "iti"], diploma: ["10th", "12th", "diploma"],
                 graduate: ["10th", "12th", "graduate"], postgraduate: ["10th", "12th", "graduate", "postgraduate"] };
   let F = { st: "", q: "", me: false };
-  if (window.SC_PRESET) F = Object.assign(F, window.SC_PRESET);   // a browse page opens with its own filter (not saved)
-  else try { F = Object.assign(F, JSON.parse(localStorage.getItem("sc-jobf") || "{}")); delete F.sort; } catch (e) {}
-  const saveF = () => { try { localStorage.setItem("sc-jobf", JSON.stringify(F)); } catch (e) {} };
+  // No filter bar: the list stays one calm list. Only the browse pages (/up-govt-jobs/, /12th-pass-govt-jobs/ ...) narrow it.
+  if (window.SC_PRESET) F = Object.assign(F, window.SC_PRESET);
+  try { localStorage.removeItem("sc-jobf"); } catch (e) {}
   // State works on every tab; qualification and "only jobs I can apply for" only where the list is jobs.
   const jobish = c => c === "Job" || c === "soon";
   function jobFilter(i) {
@@ -788,36 +762,13 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     }
     return true;
   }
-  function paintFilters(rows) {
-    const bar = document.getElementById("fbar"), jobs = jobish(cat);
-    const opt = (v, txt, sel) => `<option value="${v}"${sel ? " selected" : ""}>${esc(txt)}</option>`;
-    const H = lang === "hi" ? 2 : 1;
-    document.getElementById("fSt").innerHTML = opt("", t("fAll"), !F.st) + opt("central", t("fCentral"), F.st === "central") + STATES.map(s => opt(s[0], s[H], F.st === s[0])).join("");
-    document.getElementById("fQ").innerHTML = opt("", t("fAll"), !F.q) + QS.map(x => opt(x[0], x[H], F.q === x[0])).join("");
-    for (const id of ["fSt", "fQ"]) { const el = document.getElementById(id); document.getElementById(id + "V").textContent = el.options[el.selectedIndex].text; }
-    bar.querySelector('[data-f="st"]').classList.toggle("on", !!F.st);
-    bar.querySelector('[data-f="q"]').classList.toggle("on", !!F.q);
-    bar.querySelector('[data-f="me"]').classList.toggle("on", !!F.me);
-    const ahead = rows.filter(i => i.last && left(i.last) >= 0).length, any = F.st || F.q || F.me;
-    document.getElementById("fClr").hidden = !any;
-    document.getElementById("fcount").innerHTML = (rows.length ? esc(jobs ? t("fJobs")(rows.length, ahead) : t("fItems")(rows.length)) : esc(t("fNone"))) + "";
+  function paintFilters(rows) {   // browse pages: one quiet line saying what this list is
+    const el = document.getElementById("preset"); if (!window.SC_PRESET) return;
+    const H = lang === "hi" ? 2 : 1, st = STATES.find(x => x[0] === F.st), qq = QS.find(x => x[0] === F.q);
+    const name = st ? st[H] : qq ? qq[H] : "";
+    el.hidden = false;
+    el.innerHTML = esc(lang === "hi" ? `${name} · ${rows.length} ${cat === "Job" ? "नौकरियाँ" : "सूचनाएँ"}` : `${name} · ${rows.length} ${cat === "Job" ? (rows.length === 1 ? "job" : "jobs") : (rows.length === 1 ? "notice" : "notices")}`) + ` · <a href="/">${esc(lang === "hi" ? "सभी सूचनाएँ" : "All notices")}</a>`;
   }
-  (function wireFilters() {
-    const bar = document.getElementById("fbar");
-    const set = (k, v) => { F[k] = v; saveF(); shown = PAGE; render(); };
-    document.getElementById("fSt").addEventListener("change", e => set("st", e.target.value));
-    document.getElementById("fQ").addEventListener("change", e => set("q", e.target.value));
-    document.getElementById("fMe").addEventListener("click", () => {
-      if (F.me) return set("me", false);
-      if (!jobish(cat) && cat !== "all") setCat("Job");
-      if (window.scElig && !window.scElig.load()) return window.scElig.form(() => { if (window.scElig.load()) set("me", true); });
-      set("me", true);
-    });
-    bar.addEventListener("click", e => {
-      const x = e.target.closest(".cx"); if (x) { const k = x.closest(".chip").dataset.f; set(k, k === "me" ? false : ""); return; }
-      if (e.target.closest("#fClr")) { F = { st: "", q: "", me: false }; saveF(); shown = PAGE; render(); }
-    });
-  })();
   function render() {
     setHead(1, "hNotice"); setHead(2, "hOrg"); setHead(3, "hType"); setHead(5, "hPdf");
     // Jobs: closing soonest first (undated last). Everything else: newest first.
@@ -1017,7 +968,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       const c = CATS[new URL(a.href).searchParams.get("cat")]; if (!c) return;
       e.preventDefault(); document.querySelector(`.tabs button[data-cat="${c}"]`)?.click(); history.replaceState(null, "", a.getAttribute("href")); scrollTo({ top: 0, behavior: "smooth" });
     });
-    const startCat = window.SC_PRESET ? "Job" : CATS[new URL(location.href).searchParams.get("cat")];
+    const startCat = window.SC_PRESET ? (window.SC_PRESET.st ? "all" : "Job") : CATS[new URL(location.href).searchParams.get("cat")];
     if (startCat) requestAnimationFrame(() => document.querySelector(`.tabs button[data-cat="${startCat}"]`)?.click());
   } catch (e) {}
   document.getElementById("lang").addEventListener("click", () => {
