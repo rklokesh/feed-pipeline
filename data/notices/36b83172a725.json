@@ -17,6 +17,18 @@
     "vacancies": 19
   },
   "editor_notes": [],
+  "elig": {
+    "age_max": 30,
+    "age_min": 18,
+    "age_on": "2018-07-01",
+    "domicile": null,
+    "qual": "10th",
+    "relax": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5
+    }
+  },
   "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
