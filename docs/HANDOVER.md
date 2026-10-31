@@ -283,3 +283,10 @@ publish.yml (when the owner adds a label to an issue, open or closed):
 - Filters: only State, Education, "Jobs I can apply for". Category (duplicated the tabs) and Sort (confused the posted-date logic)
   removed; each tab keeps its one fixed order (Closing soon: nearest last date; others: newest official date).
 - Rule going forward: no new on-screen features before launch unless they remove something.
+
+## 3h. Honest labels (31 Oct 2026)
+- New types "Update" (recruitment news that is not a new opening: DV, exam dates, objections, syllabus, vacancy changes after
+  applications closed) and "Admission" (JEE, NEET, CUET, NIFT, SWAYAM...). Both appear only under All; Jobs = openings.
+- scripts/retype.py: plain-rule check after the AI, runs at the start of prepare.yml's page step; report in reports/retype.txt.
+  First run moved 31 notices (6 Admission, 24 Update, 1 Result). prepare.py prompt also knows the two new types.
+- The list's Last date column now shows any known deadline except on results.
