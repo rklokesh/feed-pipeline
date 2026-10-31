@@ -300,3 +300,9 @@ SEO shows 69 only because of the pre-launch noindex (the one failing check); go_
 - Notice pages: section titles are <h2 class="h"> (pages.py post-process), same look.
 - Grey labels on beige headers darkened slightly for contrast.
 - Phones <= 400px: smaller logo, tighter header, "All notices" shows as the arrow only; no sideways scroll at 320-412px.
+
+## 3j. Filter bar removed (1 Nov 2026)
+- Homepage has no filter chips. Tabs + search are the only controls. Old saved filters (localStorage sc-jobf) are cleared.
+- Browse pages (/up-govt-jobs/, /12th-pass-govt-jobs/ ...) still narrow the list via window.SC_PRESET and show one grey line:
+  "UP · 21 notices · All notices". State pages open on All (every notice for that state); education pages open on Jobs.
+- "Am I eligible?" stays on notice pages (At a glance row) and the ✓ marks on the homepage.
