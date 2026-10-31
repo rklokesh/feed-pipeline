@@ -573,7 +573,8 @@ def main():
                 print(f"  {n['id']}: AI unavailable, page skipped this run")
                 continue
             n["page"] = page
-            n.pop("rewrite", None)
+            if n.pop("rewrite", None):   # text was re-read: qualification and eligibility are tagged again too
+                n.pop("qual", None); n.pop("elig", None)
             n["editor_notes"] = notes
             for k in ("last_date", "exam_date"):
                 if page.get(k) and n.get("card") is not None:

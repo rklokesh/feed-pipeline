@@ -407,7 +407,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     {"type": "Job", "title": "RRC Northern Railway ALP Technician GDCE Re-examination Notice 2026 – Willingness Link", "hi": "आरआरसी नॉर्दर्न रेलवे एएलपी टेक्निशियन जीडीसीई पुनः परीक्षा नोटिस 2026 – सहमति लिंक", "org": "RRC Northern Railway", "posted": "2026-10-28", "publishedAt": "2026-10-28T15:27:25Z", "url": "/notice/rrc-northern-railway-alp-technician-gdce-re-examination-notice-2/", "id": "701699112465", "page": true, "last": "2026-11-12"},
     {"type": "Result", "title": "RPSC Senior Teacher Sindhi Result 2025 – Cut Off and Provisional List", "hi": "आरपीएससी वरिष्ठ अध्यापक सिंधी रिजल्ट 2025 – कट ऑफ और अनंतिम सूची", "org": "RPSC", "posted": "2026-10-28", "publishedAt": "2026-10-28T12:56:04Z", "url": "/notice/rpsc-senior-teacher-sindhi-result-2025-cut-off-and-provisional-l/", "id": "9a2bf6bb5fc0", "page": true, "st": "rajasthan"},
     {"type": "Result", "title": "RPSC Senior Teacher Mathematics Result 2025 – Provisional List", "hi": "आरपीएससी वरिष्ठ अध्यापक गणित रिजल्ट 2025 – अनंतिम सूची", "org": "RPSC", "posted": "2026-10-28", "publishedAt": "2026-10-28T12:55:16Z", "url": "/notice/rpsc-senior-teacher-mathematics-result-2025-provisional-list/", "id": "16e588fedfda", "page": true, "st": "rajasthan"},
-    {"type": "Job", "title": "RSSB Computer Instructor Recruitment 2026 – Amended Notification 3,951 Posts", "hi": "राजस्थान कर्मचारी चयन बोर्ड कंप्यूटर अनुदेशक भर्ती 2026 – संशोधित विज्ञप्ति 3,951 पद", "org": "RSSB Rajasthan", "posted": "2026-10-28", "publishedAt": "2026-10-28T12:28:50Z", "url": "/notice/rssb-computer-instructor-recruitment-2026-amended-notification-f/", "id": "83b7361a8bac", "page": true, "st": "rajasthan", "q": ["graduate"]},
+    {"type": "Job", "title": "RSSB Computer Instructor Recruitment 2026 – Amended Notification 3,951 Posts", "hi": "राजस्थान कर्मचारी चयन बोर्ड कंप्यूटर अनुदेशक भर्ती 2026 – संशोधित विज्ञप्ति 3,951 पद", "org": "RSSB Rajasthan", "posted": "2026-10-28", "publishedAt": "2026-10-28T12:28:50Z", "url": "/notice/rssb-computer-instructor-recruitment-2026-amended-notification-f/", "id": "83b7361a8bac", "page": true, "st": "rajasthan"},
     {"type": "Answer key", "title": "RPSC Lecturer Answer Key 2026 – Prasooti Tantra and Stree Roga", "hi": "आरपीएससी प्राध्यापक उत्तर कुंजी 2026 – प्रसूति तंत्र एवं स्त्री रोग", "org": "RPSC", "posted": "2026-10-28", "publishedAt": "2026-10-28T11:25:50Z", "url": "/notice/rpsc-lecturer-answer-key-2026-prasooti-tantra-and-stree-roga/", "id": "fdefe5f17e8c", "page": true, "st": "rajasthan"},
     {"type": "Result", "title": "RPSC Lecturer Ayurved Dept Result 2025 – Swasthvritta Merit List", "hi": "आरपीएससी व्याख्याता आयुर्वेद विभाग रिज़ल्ट 2025 – स्वास्थ्यवृत्त मेरिट लिस्ट", "org": "RPSC", "posted": "2026-10-28", "publishedAt": "2026-10-28T11:25:44Z", "url": "/notice/rpsc-lecturer-ayurved-dept-result-2025-swasthvritta-merit-list/", "id": "f81c0b672766", "page": true, "st": "rajasthan"},
     {"type": "Result", "title": "RPSC Lecturer Ayurved Kayachikitsa Result 2025 – Main Merit List", "hi": "आरपीएससी व्याख्याता आयुर्वेद कायचिकित्सा 2025 रिज़ल्ट – मुख्य मेरिट सूची", "org": "RPSC", "posted": "2026-10-28", "publishedAt": "2026-10-28T11:25:37Z", "url": "/notice/rpsc-lecturer-ayurved-kayachikitsa-result-2025-main-merit-list/", "id": "eddb0b0ff8c3", "page": true, "st": "rajasthan"},
@@ -752,12 +752,16 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   const STATES = [["up", "UP", "यूपी"], ["bihar", "Bihar", "बिहार"], ["rajasthan", "Rajasthan", "राजस्थान"], ["mp", "MP", "एमपी"], ["haryana", "Haryana", "हरियाणा"],
                   ["delhi", "Delhi", "दिल्ली"], ["uttarakhand", "Uttarakhand", "उत्तराखंड"], ["west-bengal", "West Bengal", "पश्चिम बंगाल"], ["tamil-nadu", "Tamil Nadu", "तमिलनाडु"], ["maharashtra", "Maharashtra", "महाराष्ट्र"]];
   const QS = [["10th", "10th pass", "10वीं पास"], ["12th", "12th pass", "12वीं पास"], ["iti", "ITI", "आईटीआई"], ["diploma", "Diploma", "डिप्लोमा"], ["graduate", "Graduate", "स्नातक"], ["postgraduate", "Post graduate", "स्नातकोत्तर"]];
+  const QOK = { "10th": ["10th"], "12th": ["10th", "12th"], iti: ["10th", "iti"], diploma: ["10th", "12th", "diploma"],
+                graduate: ["10th", "12th", "graduate"], postgraduate: ["10th", "12th", "graduate", "postgraduate"] };
   let F = { st: "", q: "", me: false, sort: "" };
   try { F = Object.assign(F, JSON.parse(localStorage.getItem("sc-jobf") || "{}")); } catch (e) {}
   const saveF = () => { try { localStorage.setItem("sc-jobf", JSON.stringify(F)); } catch (e) {} };
   function jobFilter(i) {
     if (F.st && (F.st === "central" ? !!i.st : i.st !== F.st)) return false;
-    if (F.q && i.q && i.q.length && !i.q.includes(F.q)) return false;     // qualification not stated: keep, never hide a job by a missing tag
+    // "I have 12th pass" shows jobs whose minimum is 10th or 12th; ITI / diploma jobs only for those who have them.
+    // Jobs whose qualification is not known are left out of a qualification filter (no wrong matches).
+    if (F.q && !(i.q && i.q.some(x => (QOK[F.q] || []).includes(x)))) return false;
     if (F.me && window.scElig) {
       const me = window.scElig.load(), r = me && window.scElig.check(i.e, me);
       if (!r || r.s === "no") return false;
