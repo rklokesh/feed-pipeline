@@ -36,10 +36,10 @@
   "org": "MPPSC",
   "page": {
     "after_en": [
-      "Final results will be declared based on this final answer key."
+      "Declaration of the Main Exam result based on the final answer key."
     ],
     "after_hi": [
-      "इस अंतिम उत्तर कुंजी के आधार पर अंतिम परिणाम घोषित किए जाएंगे।"
+      "अंतिम उत्तर कुंजी के आधार पर मुख्य परीक्षा परिणाम की घोषणा।"
     ],
     "age": [],
     "apply_start": null,
@@ -47,14 +47,12 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Keep your exam question paper handy.",
-      "Check the correct set (A, B, C, or D).",
-      "Note any deleted questions if applicable."
+      "Check question paper sets (Set A, Set B, Set C, Set D)",
+      "Calculate estimated score using the final answers"
     ],
     "checklist_hi": [
-      "अपने परीक्षा प्रश्न पत्र को पास रखें।",
-      "सही सेट (A, B, C, या D) की जांच करें।",
-      "यदि कोई हो तो हटाए गए प्रश्नों पर ध्यान दें।"
+      "प्रश्नपत्र सेट (सेट ए, सेट बी, सेट सी, सेट डी) की जांच करें",
+      "अंतिम उत्तरों का उपयोग करके अपने संभावित अंकों की गणना करें"
     ],
     "conducted_by_en": "Madhya Pradesh Public Service Commission (MPPSC)",
     "conducted_by_hi": "मध्य प्रदेश लोक सेवा आयोग (एमपीएससी)",
@@ -63,13 +61,19 @@
         "label_en": "Exam Date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "27 Sep 2026",
-        "value_hi": "27 सितंबर 2026"
+        "value_hi": "27 सितं 2026"
       },
       {
-        "label_en": "Notice Issue Date",
-        "label_hi": "सूचना जारी होने की तिथि",
+        "label_en": "Provisional Answer Key Notice",
+        "label_hi": "प्रावधिक उत्तर कुंजी नोटिस",
+        "value_en": "29 Sep 2026",
+        "value_hi": "29 सितं 2026"
+      },
+      {
+        "label_en": "Final Answer Key Date",
+        "label_hi": "अंतिम उत्तर कुंजी तिथि",
         "value_en": "16 Oct 2026",
-        "value_hi": "16 अक्टूबर 2026"
+        "value_hi": "16 अक्तू 2026"
       }
     ],
     "documents_en": [],
@@ -79,47 +83,65 @@
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is the official document released by the Madhya Pradesh Public Service Commission containing the correct answers for all sets of the Main Exam 2026, prepared after reviewing objections.",
-        "a_hi": "यह मध्य प्रदेश लोक सेवा आयोग द्वारा जारी आधिकारिक दस्तावेज है जिसमें आपत्तियों की समीक्षा के बाद तैयार मुख्य परीक्षा 2026 के सभी सेटों के सही उत्तर शामिल हैं।",
-        "q_en": "What is the MPPSC State Forest Service Main Exam Final Answer Key?",
+        "a_en": "It is the official list of correct answers released by the Madhya Pradesh Public Service Commission after reviewing candidate objections on the provisional key, which will be used to evaluate the main exam results.",
+        "a_hi": "यह मध्य प्रदेश लोक सेवा आयोग द्वारा प्रोविजनल कुंजी पर आपत्तियों की समीक्षा के बाद जारी किए गए सही उत्तरों की आधिकारिक सूची है, जिसका उपयोग मुख्य परीक्षा परिणाम तैयार करने के लिए किया जाएगा।",
+        "q_en": "What is MPPSC State Forest Service Main Exam Final Answer Key?",
         "q_hi": "एमपीपीएससी राज्य वन सेवा मुख्य परीक्षा अंतिम उत्तर कुंजी क्या है?"
       }
     ],
-    "extra": [],
+    "extra": [
+      {
+        "label_en": "Subjects",
+        "label_hi": "विषय",
+        "value_en": "General Studies, Forestry & General Science",
+        "value_hi": "सामान्य अध्ययन, वानिकी एवं सामान्य विज्ञान"
+      }
+    ],
     "faq": [
       {
-        "a_en": "The exam was conducted on 27 September 2026.",
-        "a_hi": "परीक्षा 27 सितंबर 2026 को आयोजित की गई थी।",
-        "q_en": "When was the MPPSC State Forest Service Main Exam 2026 held?",
+        "a_en": "The exam was conducted on 27 September 2026 in a single session.",
+        "a_hi": "यह परीक्षा 27 सितंबर 2026 को एक सत्र में आयोजित की गई थी।",
+        "q_en": "When was the MPPSC State Forest Service Main Exam 2026 conducted?",
         "q_hi": "एमपीपीएससी राज्य वन सेवा मुख्य परीक्षा 2026 कब आयोजित की गई थी?"
       },
       {
         "a_en": "The final answer key was released on 16 October 2026.",
-        "a_hi": "अंतिम उत्तर कुंजी 16 अक्टूबर 2026 को जारी की गई।",
+        "a_hi": "अंतिम उत्तर कुंजी 16 अक्तूबर 2026 को जारी की गई।",
         "q_en": "When was the final answer key released?",
         "q_hi": "अंतिम उत्तर कुंजी कब जारी की गई?"
+      },
+      {
+        "a_en": "No, representations or objections regarding the final answer key are no longer accepted.",
+        "a_hi": "नहीं, अंतिम उत्तर कुंजी के संबंध में अब कोई अभ्यावेदन या आपत्ति स्वीकार नहीं की जाएगी।",
+        "q_en": "Can I submit objections against the final answer key?",
+        "q_hi": "क्या मैं अंतिम उत्तर कुंजी के खिलाफ आपत्ति दर्ज करा सकता हूं?"
       }
     ],
     "fees": [],
     "h1_en": "MPPSC State Forest Service Main Exam 2026 Final Answer Key",
     "h1_hi": "मध्य प्रदेश लोक सेवा आयोग राज्य वन सेवा मुख्य परीक्षा 2026 अंतिम उत्तर कुंजी",
+    "hindi_notice_url": null,
     "how_en": [
       "Visit the official MPPSC website.",
-      "Navigate to the results or answer key section.",
+      "Navigate to the Results or Answer Key section.",
       "Click on the link for State Forest Service Main Exam 2026 Final Answer Key.",
-      "Match your answers with Set A, B, C, or D as applicable."
+      "Download and verify your answers according to Set A, Set B, Set C, or Set D."
     ],
     "how_hi": [
-      "आधिकारिक एमपीपीएससी वेबसाइट पर जाएं।",
-      "परिणाम या उत्तर कुंजी अनुभाग पर जाएं।",
+      "मध्य प्रदेश लोक सेवा आयोग की आधिकारिक वेबसाइट पर जाएं।",
+      "रिज़ल्ट या उत्तर कुंजी अनुभाग पर जाएं।",
       "राज्य वन सेवा मुख्य परीक्षा 2026 अंतिम उत्तर कुंजी के लिंक पर क्लिक करें।",
-      "लागू Set A, B, C, या D के अनुसार अपने उत्तरों का मिलान करें।"
+      "सेट ए, सेट बी, सेट सी या सेट डी के अनुसार अपने उत्तर डाउनलोड करें और मिलान करें।"
     ],
-    "intro_en": "The Madhya Pradesh Public Service Commission (MPPSC) has released the final answer key for the State Forest Service Main Exam 2026. The examination was conducted on 27 September 2026. Candidates can check the official answer key for sets A, B, C, and D for General Studies, Forestry & General Science. This notice provides the corrected answers as evaluated by the expert committee.",
-    "intro_hi": "मध्य प्रदेश लोक सेवा आयोग (एमपीएससी) ने राज्य वन सेवा मुख्य परीक्षा 2026 के लिए अंतिम उत्तर कुंजी जारी कर दी है। परीक्षा 27 सितंबर 2026 को आयोजित की गई थी। उम्मीदवार सामान्य अध्ययन, वानिकी और सामान्य विज्ञान के लिए सेट ए, बी, सी और डी की आधिकारिक उत्तर कुंजी देख सकते हैं। यह सूचना विशेषज्ञ समिति द्वारा मूल्यांकित सही उत्तर प्रदान करती है।",
+    "intro_en": "The Madhya Pradesh Public Service Commission (MPPSC) has published the final answer key for the State Forest Service Main Exam 2026. The examination was conducted on 27 September 2026 in a single session. Following the provisional answer key and the review of objections submitted by candidates, subject matter experts prepared this final answer key. No further representations or objections will be accepted.",
+    "intro_hi": "मध्य प्रदेश लोक सेवा आयोग (एमपीएससी) ने राज्य वन सेवा मुख्य परीक्षा 2026 के लिए अंतिम उत्तर कुंजी प्रकाशित कर दी है। यह परीक्षा 27 सितंबर 2026 को एक सत्र में आयोजित की गई थी। प्रोविजनल उत्तर कुंजी पर प्राप्त आपत्तियों की विषय विशेषज्ञों द्वारा जांच के बाद यह अंतिम उत्तर कुंजी तैयार की गई है। अब इस संबंध में कोई अन्य अभ्यावेदन स्वीकार नहीं किया जाएगा।",
     "last_date": null,
-    "mistakes_en": [],
-    "mistakes_hi": [],
+    "mistakes_en": [
+      "No further objections will be accepted regarding the final answer key."
+    ],
+    "mistakes_hi": [
+      "अंतिम उत्तर कुंजी के संबंध में अब कोई आपत्ति स्वीकार नहीं की जाएगी।"
+    ],
     "not_en": [],
     "not_hi": [],
     "notice_date": "2026-10-16",
@@ -135,38 +157,47 @@
       },
       {
         "label_en": "Exam Date",
-        "label_hi": "परीक्षा तिथि",
+        "label_hi": "परीक्षा की तिथि",
         "value_en": "27 Sep 2026",
-        "value_hi": "27 सितंबर 2026"
+        "value_hi": "27 सितं 2026"
       },
       {
         "label_en": "Notice Date",
-        "label_hi": "सूचना तिथि",
+        "label_hi": "नोटिस की तिथि",
         "value_en": "16 Oct 2026",
-        "value_hi": "16 अक्टूबर 2026"
+        "value_hi": "16 अक्तू 2026"
       }
     ],
     "salary": [],
-    "selection_en": [],
-    "selection_hi": [],
+    "selection_en": [
+      "Main Examination",
+      "Interview",
+      "Document Verification"
+    ],
+    "selection_hi": [
+      "मुख्य परीक्षा",
+      "साक्षात्कार",
+      "दस्तावेज़ सत्यापन"
+    ],
     "share_card": {
-      "headline_en": "Final Answer Key 2026",
-      "headline_hi": "अंतिम उत्तर कुंजी 2026",
+      "headline_en": "Final Answer Key",
+      "headline_hi": "अंतिम उत्तर कुंजी",
       "kind": "answer",
-      "line_en": "State Forest Service Main Exam",
-      "line_hi": "राज्य वन सेवा मुख्य परीक्षा",
+      "line_en": "State Forest Service Main",
+      "line_hi": "राज्य वन सेवा मुख्य",
       "posts": null
     },
     "status_en": "Final answer key released",
     "status_hi": "अंतिम उत्तर कुंजी जारी",
-    "summary_en": "The final answer key for the State Forest Service Main Exam 2026 has been released by MPPSC. Candidates who appeared for the exam held on 27 September 2026 can view their answers set-wise.",
-    "summary_hi": "मध्य प्रदेश लोक सेवा आयोग द्वारा राज्य वन सेवा मुख्य परीक्षा 2026 की अंतिम उत्तर कुंजी जारी कर दी गई है। 27 सितंबर 2026 को आयोजित परीक्षा में शामिल होने वाले उम्मीदवार सेट-वार उत्तर देख सकते हैं।",
+    "summary_en": "MPPSC has released the final answer key for the State Forest Service Main Exam 2026. Candidates who appeared for the exam held on 27 September 2026 can check the final answers for General Studies, Forestry and General Science.",
+    "summary_hi": "मध्य प्रदेश लोक सेवा आयोग ने राज्य वन सेवा मुख्य परीक्षा 2026 के लिए अंतिम उत्तर कुंजी जारी कर दी है। 27 सितंबर 2026 को आयोजित परीक्षा के अभ्यर्थी सामान्य अध्ययन, वानिकी और सामान्य विज्ञान के उत्तर देख सकते हैं।",
     "vacancies": [],
+    "video_url": null,
     "who_en": [
       "Candidates who appeared for the MPPSC State Forest Service Main Exam 2026"
     ],
     "who_hi": [
-      "वे उम्मीदवार जो एमपीपीएससी राज्य वन सेवा मुख्य परीक्षा 2026 में शामिल हुए थे"
+      "वे अभ्यर्थी जिन्होंने एमपीपीएससी राज्य वन सेवा मुख्य परीक्षा 2026 दी है"
     ]
   },
   "pdf": {
@@ -176,7 +207,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-10-22T18:08:45Z",
-  "rewrite": true,
   "slug": "mppsc-state-forest-service-main-exam-2026-final-answer-key",
   "source_id": "mppsc-home",
   "status": "approved",

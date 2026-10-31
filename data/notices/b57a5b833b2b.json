@@ -1,6 +1,20 @@
 {
   "board_url": "https://mppsc.mp.gov.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Assistant Professor (Botany)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Candidature cancellation notice for an existing exam, not a new recruitment or result.",
+    "summary_en": "Notice regarding cancellation of candidature for certain candidates in the Assistant Professor Botany Exam 2024.",
+    "summary_hi": "सहायक प्राध्यापक वनस्पतिशास्त्र परीक्षा 2024 के लिए कुछ अभ्यर्थियों की उम्मीदवारी निरस्त किए जाने संबंधी सूचना।",
+    "title_en": "MPPSC Assistant Professor Botany Exam 2024 Candidature Cancellation Notice",
+    "title_hi": "मप्र लोक सेवा आयोग सहायक प्राध्यापक वनस्पतिशास्त्र परीक्षा उम्मीदवारी निरस्त सूचना",
+    "type": "Result",
+    "vacancies": 190
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +30,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "mppsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "सहायक प्राध्‍यापक (वनस्‍पतिशास्‍त्र) परीक्षा - 2024 के पद हेतु उम्‍मीदवारी निरस्‍त किए जाने संबंधी सूचना, दिनांक 27/10/2026",
   "url": "https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_Botany_Exam_2024_Dated_27_10_2026.pdf"
 }

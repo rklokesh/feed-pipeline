@@ -1,6 +1,20 @@
 {
   "board_url": "https://psc.uk.gov.in/candidate-corner/recruitment",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Civil Judge Junior Division",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal document regarding document verification and missing documents for specific candidates",
+    "summary_en": "Notice regarding submission of pending documents or representations for specific candidates for the Uttarakhand Judicial Service Civil Judge Examination 2023.",
+    "summary_hi": "उत्तराखंड न्यायिक सेवा सिविल न्यायाधीश परीक्षा 2023 के कुछ अभ्यर्थियों के लिए लंबित दस्तावेजों या प्रत्यावेदन जमा करने से संबंधित सूचना।",
+    "title_en": "UKPSC Civil Judge Junior Division Exam 2023 Document Verification Notice",
+    "title_hi": "उत्तराखंड न्यायिक सेवा सिविल न्यायाधीश परीक्षा 2023 दस्तावेज सत्यापन सूचना",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +30,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "ukpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "1304545086.pdf",
   "url": "https://psc.uk.gov.in/public/uploads/recruitment/1304545086.pdf"
 }

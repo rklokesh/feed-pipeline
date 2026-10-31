@@ -1,6 +1,20 @@
 {
   "board_url": "https://kvs.gov.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal circular regarding forwarding of audit reports through e-Office, not a job notice.",
+    "summary_en": "Kendriya Vidyalaya Sangathan has issued an internal circular regarding the mandatory forwarding of internal audit reports through e-office in addition to hard copies.",
+    "summary_hi": "केन्द्रीय विद्यालय संगठन ने आंतरिक लेखा परीक्षा प्रतिवेदनों को हार्ड कॉपी के अतिरिक्त ई-ऑफिस के माध्यम से अनिवार्य रूप से अग्रेषित करने के संबंध में आंतरिक परिपत्र जारी किया है।",
+    "title_en": "KVS Internal Audit Reports e-Office Forwarding Circular",
+    "title_hi": "केन्द्रीय विद्यालय संगठन आंतरिक लेखा परीक्षा प्रतिवेदन ई-ऑफिस परिपत्र",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +30,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "kvs-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "आंतरिक लेखा – परीक्षा प्रतिवेदनों को हार्ड कॉपी के अतिरिक्त ई-ऑफिस के माध्यम से अनिवार्य रूप से अग्रेषित किए जाने के संबंध में । नई",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/10/2026102328.pdf"
 }

@@ -1,6 +1,20 @@
 {
   "board_url": "https://mppsc.mp.gov.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "District Public Health Nursing Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "candidature cancellation notice for specific applicants",
+    "summary_en": "Notice regarding cancellation of candidature for certain applicants for the District Public Health Nursing Officer Examination 2025.",
+    "summary_hi": "जिला लोक स्वास्थ्य नर्स अधिकारी परीक्षा 2025 के कुछ आवेदकों की उम्मीदवारी निरस्त किए जाने के संबंध में सूचना।",
+    "title_en": "MPPSC District Public Health Nursing Officer 2025 Candidature Cancellation Notice",
+    "title_hi": "मध्य प्रदेश लोक सेवा आयोग जिला लोक स्वास्थ्य नर्स अधिकारी 2025 उम्मीदवारी निरस्त सूचना",
+    "type": "Job",
+    "vacancies": 12
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +30,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "mppsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "जिला लोक स्‍वास्‍थ्‍य नर्स अधिकारी - 2025 के पद हेतु उम्‍मीदवारी निरस्‍त किए जाने संबंधी सूचना, दिनांक 28/10/2026",
   "url": "https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_District_Public_Health_Nursing_Officer_2025_Dated_28_10_2026.pdf"
 }

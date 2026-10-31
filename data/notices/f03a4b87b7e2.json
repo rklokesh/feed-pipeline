@@ -1,6 +1,20 @@
 {
   "board_url": "https://uppbpb.gov.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-17",
+    "last_date": null,
+    "list": false,
+    "posts": "उपनिरीक्षक सशस्त्र पुलिस / प्लाटून कमाण्डर एवं उपनिरीक्षक घुडसवार पुलिस",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal departmental promotion and physical efficiency test notice for existing police personnel, not a general public job vacancy.",
+    "summary_en": "Departmental physical efficiency test notice for promotion to UP Police Sub Inspector and Platoon Commander posts.",
+    "summary_hi": "उत्तर प्रदेश पुलिस में उपनिरीक्षक और प्लाटून कमांडर के पदों पर पदोन्नति हेतु शारीरिक दक्षता परीक्षा की सूचना।",
+    "title_en": "UP Police SI and Platoon Commander Promotion Physical Test 2026",
+    "title_hi": "उप्र पुलिस उपनिरीक्षक और प्लाटून कमांडर पदोन्नति शारीरिक परीक्षा 2026",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +30,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "uppbpb-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "उपनिरीक्षक सशस्त्र पुलिस / प्लाटून कमाण्डर एवं उपनिरीक्षक घुडसवार पुलिस के पद पर पदोन्नति हेतु शारीरिक दक्षता परीक्षा के आयोजन के सम्बन्ध में ।",
   "url": "https://uppbpb.gov.in/FilesUploaded/Notice/VIG_12102026_25bce34a6-59a5-44b8-b223-c8d25bad41d1.pdf"
 }

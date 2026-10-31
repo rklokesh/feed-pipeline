@@ -1,7 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://kvs.gov.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Commissioner and Additional Commissioner",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal circular regarding recruitment rules and office memorandum, not an active job vacancy notice.",
+    "summary_en": "Notice regarding recruitment rules for Commissioner and Additional Commissioner posts in Kendriya Vidyalaya Sangathan.",
+    "summary_hi": "केन्द्रीय विद्यालय संगठन में कमिश्नर और अपर कमिश्नर पदों के लिए भर्ती नियमों से संबंधित सूचना।",
+    "title_en": "KVS Commissioner and Additional Commissioner Recruitment Rules",
+    "title_hi": "केन्द्रीय विद्यालय संगठन कमिश्नर और अपर कमिश्नर भर्ती नियम",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -141,7 +155,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "kvs-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "भर्ती",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/01/2026012368.pdf"
 }
