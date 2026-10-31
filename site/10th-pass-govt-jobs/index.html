@@ -135,8 +135,11 @@ main { margin-top: 36px; flex: 1; }
 .fbar .chip.on .cx { display: inline-flex; align-items: center; }
 .fbar .chip[hidden] { display: none; }
 .fbar .fcount { flex-basis: 100%; min-height: 1lh; margin: 4px 0 0 2px; color: var(--grey); }
-.fbar .fcount button { all: unset; cursor: pointer; color: var(--link, #1E6FD9); margin-left: 8px; }
-@media (max-width: 640px) { .fbar { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; } .fbar::-webkit-scrollbar { display: none; } .fbar .chip { flex: none; } .fbar .fcount { display: none; } }
+.fbar .fclr { all: unset; cursor: pointer; padding: 5px 4px; color: var(--link, #1E6FD9); white-space: nowrap; }
+.fbar .fclr:hover { text-decoration: underline; text-underline-offset: 4px; }
+.fbar .fclr:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; border-radius: 4px; }
+.fbar .fclr[hidden] { display: none; }
+@media (max-width: 640px) { .fbar { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; } .fbar::-webkit-scrollbar { display: none; } .fbar .chip, .fbar .fclr { flex: none; } .fbar .fcount { display: none; } }
 .hubh { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }   /* read by Google and screen readers, not shown */
 .tabrow { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 4px 18px; margin-bottom: 14px; }
 .tabrow .tabs { flex: 1 1 auto; margin-bottom: 0; }
@@ -335,6 +338,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       <span class="chip" data-f="q"><label><span class="cl" data-t="fQual">Education</span><span class="cv" id="fQV"></span><select id="fQ" aria-label="Education"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
       <span class="chip tog" data-f="me"><button type="button" id="fMe" class="tg" data-t="fMe">Jobs I can apply for</button><button type="button" class="cx" aria-label="Clear">×</button></span>
       <span class="chip" data-f="sort"><label><span class="cl" data-t="fSort">Sort</span><span class="cv" id="fSortV"></span><select id="fSort" aria-label="Sort"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
+      <button type="button" class="fclr" id="fClr" data-t="fClear" hidden>Clear filters</button>
       <p class="fcount" id="fcount"></p>
     </div>
     <p class="newline off" id="newline" aria-live="polite">&nbsp;</p>
@@ -807,7 +811,8 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     bar.querySelector('[data-f="me"]').classList.toggle("on", !!F.me);
     bar.querySelector('[data-f="sort"]').classList.toggle("on", !!F.sort);
     const ahead = rows.filter(i => i.last && left(i.last) >= 0).length, any = cat !== "all" || F.st || F.q || F.me || F.sort;
-    document.getElementById("fcount").innerHTML = (rows.length ? esc(jobs ? t("fJobs")(rows.length, ahead) : t("fItems")(rows.length)) : esc(t("fNone"))) + (any ? `<button type="button" id="fClr">${esc(t("fClear"))}</button>` : "");
+    document.getElementById("fClr").hidden = !any;
+    document.getElementById("fcount").innerHTML = (rows.length ? esc(jobs ? t("fJobs")(rows.length, ahead) : t("fItems")(rows.length)) : esc(t("fNone"))) + "";
   }
   (function wireFilters() {
     const bar = document.getElementById("fbar");
