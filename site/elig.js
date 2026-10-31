@@ -34,6 +34,9 @@
     .eligdlg label { display: grid; gap: 4px; margin-bottom: 14px; color: var(--grey); }
     .eligdlg label.ck { display: flex; gap: 8px; align-items: center; color: var(--ink); }
     .eligdlg input[type=date], .eligdlg select { font: inherit; color: var(--ink); background: var(--page); border: 1px solid var(--line); border-radius: 6px; padding: 7px 9px; }
+    .eligdlg input[type=date] { cursor: text; }
+    .eligdlg input[type=date]::-webkit-calendar-picker-indicator { cursor: pointer; }
+    .eligdlg select, .eligdlg label.ck, .eligdlg input[type=checkbox] { cursor: pointer; }
     .eligdlg .btns { display: flex; gap: 18px; margin: 6px 0 0; }
     .eligdlg .btns button { all: unset; cursor: pointer; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; color: var(--ink); }
     .eligdlg .btns button.g { color: var(--grey); }`;
