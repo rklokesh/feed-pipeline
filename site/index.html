@@ -127,7 +127,9 @@ main { margin-top: 36px; flex: 1; }
 .fbar .chip.on .tg { color: var(--link, #1E6FD9); }
 .fbar .chip .tg { all: unset; cursor: pointer; padding: 5px 10px; color: var(--ink); }
 .fbar .chip:hover { border-color: color-mix(in srgb, var(--grey) 45%, var(--line)); }
-.fbar .chip select:focus-visible + * , .fbar .chip label:focus-within { outline: 1px solid var(--ink); outline-offset: -1px; }
+.fbar .chip select:focus, .fbar .chip button:focus { outline: none; }
+/* keyboard focus only: the chip's own rounded border darkens (no clipped outline) */
+.fbar .chip:has(:focus-visible) { border-color: var(--ink); }
 .fbar .chip .cx { all: unset; cursor: pointer; display: none; padding: 0 9px; color: var(--grey); border-left: 1px solid var(--line); }
 .fbar .chip .cx:hover { color: var(--ink); }
 .fbar .chip.on .cx { display: inline-flex; align-items: center; }
