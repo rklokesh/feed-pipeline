@@ -139,6 +139,12 @@ publish.yml (when the owner adds a label to an issue, open or closed):
   so new garbled PDFs are fixed by this job, not at watch time.
 - **At a glance always shows** total posts (+ category split), qualification and selection stages when the notice gives
   them, even if the AI left them out of its rows (pages.py).
+- **One pattern (31 Oct, the owner's call):** exam pages and the boxed browse pages broke the site's single-list pattern.
+  Now: `/<state>-govt-jobs/` and `/<qual>-govt-jobs/` are copies of the homepage (made by `hubs.py build`, which must run
+  AFTER `publish.py build`) that open on the Jobs tab with that filter preset (`window.SC_PRESET`, not saved) and carry
+  their own title/description/canonical + a small heading. Exam timelines live on notice pages as "All updates for
+  <exam>" (pages.py, uses `exams.groups`); `/exam/` pages, `/govt-jobs/` index and the footer Exams / Jobs-by-state links
+  are gone. Exam tagging and qualification tagging continue as before.
 
 ## 4. Board status (28 Oct 2026)
 
