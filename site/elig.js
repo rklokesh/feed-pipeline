@@ -26,7 +26,10 @@
     #elig .elink { all: unset; cursor: pointer; color: var(--ink); text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
     .eligdlg { border: 1px solid var(--line); border-radius: 10px; padding: 22px 24px; background: var(--page); color: var(--ink); max-width: 24rem; width: calc(100% - 32px); }
     .eligdlg::backdrop { background: rgba(0,0,0,.35); }
-    .eligdlg h2 { font-size: 1.25rem; font-weight: 700; margin: 0 0 6px; }
+    .eligdlg form { position: relative; }
+    .eligdlg .x { all: unset; cursor: pointer; position: absolute; top: -10px; right: -10px; width: 32px; height: 32px; display: grid; place-items: center; font-size: 22px; color: var(--grey); border-radius: 6px; }
+    .eligdlg .x:hover { color: var(--ink); background: var(--soft); }
+    .eligdlg h2 { font-size: 1.25rem; font-weight: 700; margin: 0 0 6px; padding-right: 28px; }
     .eligdlg p.g { margin: 0 0 16px; color: var(--grey); font-size: .95rem; }
     .eligdlg label { display: grid; gap: 4px; margin-bottom: 14px; color: var(--grey); }
     .eligdlg label.ck { display: flex; gap: 8px; align-items: center; color: var(--ink); }
@@ -85,16 +88,23 @@
       dlg = document.createElement("dialog");
       dlg.className = "eligdlg";
       document.body.appendChild(dlg);
+      dlg.addEventListener("click", ev => {
+        if (ev.target !== dlg) return;            // clicks inside the form land on its children
+        const r = dlg.getBoundingClientRect();
+        if (ev.clientX < r.left || ev.clientX > r.right || ev.clientY < r.top || ev.clientY > r.bottom) dlg.close("cancel");
+      });
     }
+    dlg.returnValue = "";
     const me = load() || {};
     dlg.innerHTML = `<form method="dialog">
+      <button value="cancel" class="x" formnovalidate aria-label="${L("Close", "बंद करें")}">×</button>
       <h2>${L("Am I eligible?", "क्या मैं योग्य हूँ?")}</h2>
       <p class="g">${L("Saved only on this device. We check age and qualification against each official notice.", "सिर्फ़ इसी डिवाइस पर सेव होता है। हम हर आधिकारिक सूचना से आयु और योग्यता मिलाते हैं।")}</p>
       <label>${L("Date of birth", "जन्म तिथि")}<input type="date" name="dob" required value="${me.dob || ""}" min="1950-01-01" max="2015-12-31"></label>
       <label>${L("Category", "श्रेणी")}<select name="cat">${CATS.map(c => `<option value="${c}"${me.cat === c ? " selected" : ""}>${L(CN[c][0], CN[c][1])}</option>`).join("")}</select></label>
       <label>${L("Highest qualification", "सबसे ऊँची योग्यता")}<select name="qual">${Object.keys(QN).map(q => `<option value="${q}"${me.qual === q ? " selected" : ""}>${L(QN[q][0], QN[q][1])}</option>`).join("")}</select></label>
       <label class="ck"><input type="checkbox" name="pwd"${me.pwd ? " checked" : ""}> ${L("Person with disability (PwD)", "दिव्यांग (PwD)")}</label>
-      <p class="btns"><button value="save">${L("Save", "सेव करें")}</button>${me.dob ? `<button value="clear" class="g">${L("Forget me", "मेरी जानकारी हटाएँ")}</button>` : ""}<button value="cancel" class="g">${L("Cancel", "रद्द करें")}</button></p>
+      <p class="btns"><button value="save">${L("Save", "सेव करें")}</button>${me.dob ? `<button value="clear" class="g" formnovalidate>${L("Forget me", "मेरी जानकारी हटाएँ")}</button>` : ""}<button value="cancel" class="g" formnovalidate>${L("Cancel", "रद्द करें")}</button></p>
     </form>`;
     dlg.onclose = () => {
       if (dlg.returnValue === "save") {
