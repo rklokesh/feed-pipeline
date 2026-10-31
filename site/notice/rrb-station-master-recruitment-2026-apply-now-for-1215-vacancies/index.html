@@ -262,14 +262,15 @@ html[lang="hi"] .hidet { display: none; }
 /* Announcement + popular links travel together at the top; with the announcement closed, the links sit at the very top */
 .topbar { position: sticky; top: 0; z-index: 30; }
 .topbar .strip { position: relative; top: auto; box-shadow: none; }
-.topbar .qlinks { position: relative; top: auto; box-shadow: 0 1px 12px color-mix(in srgb, var(--ink) 5%, transparent); }
-.qlinks { display: flex; justify-content: center; gap: 0 20px; min-height: 38px; align-items: center; padding: 0 16px;
+.topbar .qlinks { position: relative; top: auto; }
+.qlinks { display: flex; justify-content: flex-start; gap: 0 18px; min-height: 40px; align-items: center; overflow-x: auto; scrollbar-width: none;
+  padding: 0 max(16px, calc((100% - 1000px) / 2 + 16px));
   margin: 0 calc(-1 * max(16px, env(safe-area-inset-right, 0px))) 0 calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
   background: color-mix(in srgb, var(--page) 94%, transparent); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--line); font-size: .875rem; }
-.qlinks a { color: var(--grey); white-space: nowrap; padding: 8px 0; }
+  border-bottom: 1px solid var(--line); font-size: 1rem; }
+.qlinks::-webkit-scrollbar { display: none; }
+.qlinks a { flex: none; color: var(--grey); white-space: nowrap; padding: 8px 0; transition: color .25s ease; }
 .qlinks a:hover { color: var(--ink); text-decoration: none; }
-@media (max-width: 640px) { .qlinks { justify-content: flex-start; overflow-x: auto; scrollbar-width: none; gap: 0 16px; } .qlinks::-webkit-scrollbar { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
