@@ -23,8 +23,8 @@ SITE = os.environ.get("SITE_URL", "https://sarkarichart.pages.dev")
 STATE = ROOT / "data/telegram.json"
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 REPORT = ROOT / "reports/telegram.txt"
-TYPE_HI = {"Job": "नौकरी", "Result": "रिज़ल्ट", "Admit card": "एडमिट कार्ड", "Answer key": "आंसर की"}
-EMOJI = {"Job": "🆕", "Result": "📊", "Admit card": "🎫", "Answer key": "🔑"}
+TYPE_HI = {"Job": "नौकरी", "Result": "रिज़ल्ट", "Admit card": "एडमिट कार्ड", "Answer key": "आंसर की", "Update": "अपडेट", "Admission": "प्रवेश"}
+EMOJI = {"Job": "🆕", "Result": "📊", "Admit card": "🎫", "Answer key": "🔑", "Update": "📢", "Admission": "🎓"}
 
 
 def api(method, **data):

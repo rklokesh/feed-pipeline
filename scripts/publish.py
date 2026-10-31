@@ -25,7 +25,7 @@ INDEX = ROOT / "site" / "index.html"
 REPO = os.environ.get("GITHUB_REPOSITORY", "rklokesh/sarkarichart")
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 EDITABLE = {"title_en", "title_hi", "type", "last_date", "exam_date", "posts", "vacancies", "summary_en", "summary_hi"}
-TYPES = {"job": "Job", "result": "Result", "admit card": "Admit card", "answer key": "Answer key"}
+TYPES = {"job": "Job", "result": "Result", "admit card": "Admit card", "answer key": "Answer key", "update": "Update", "admission": "Admission"}
 ORG_HI = {"NTA": "एनटीए", "SSC": "एसएससी", "UPPSC": "यूपीपीएससी", "BPSC": "बीपीएससी", "SBI": "एसबीआई", "IBPS": "आईबीपीएस",
           "ISRO": "इसरो", "UPSC": "यूपीएससी", "RRB": "आरआरबी", "LIC": "एलआईसी", "BSSC": "बीएसएससी", "UPSSSC": "यूपीएसएसएससी",
           "RPSC": "आरपीएससी", "MPPSC": "एमपीपीएससी", "DSSSB": "डीएसएसएसबी", "NCS": "एनसीएस",

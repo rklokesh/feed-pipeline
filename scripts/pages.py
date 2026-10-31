@@ -34,7 +34,7 @@ REPO = os.environ.get("GITHUB_REPOSITORY", "rklokesh/sarkarichart")
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 MONTHS_HI = ["जनवरी", "फ़रवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितंबर", "अक्तूबर", "नवंबर", "दिसंबर"]
 TYPE_LABEL = {"Job": ("Jobs", "नौकरियाँ"), "Result": ("Results", "रिज़ल्ट"), "Admit card": ("Admit cards", "एडमिट कार्ड"),
-              "Answer key": ("Answer keys", "आंसर की")}
+              "Answer key": ("Answer keys", "आंसर की"), "Update": ("Updates", "अपडेट"), "Admission": ("Admissions", "प्रवेश")}
 
 PROMPT = """You write the facts section of a calm, trustworthy Indian government-job notice page, in English AND Hindi.
 Input: the board, our review card, the official PDF text, and EDITOR NOTES from the site owner.
@@ -213,7 +213,7 @@ def official_date(n: dict) -> str:
 
 
 SITE_URL = os.environ.get("SITE_URL", "https://sarkarichart.pages.dev")   # change to https://sarkarichart.com at launch
-CAT_SLUG = {"Job": "jobs", "Result": "results", "Admit card": "admit-cards", "Answer key": "answer-keys"}
+CAT_SLUG = {"Job": "jobs", "Result": "results", "Admit card": "admit-cards", "Answer key": "answer-keys", "Update": "all", "Admission": "all"}
 
 
 def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | None = None) -> str:

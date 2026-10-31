@@ -16,7 +16,7 @@ SITE = ROOT / "site"
 SITE_URL = os.environ.get("SITE_URL", "https://sarkarichart.pages.dev")
 LAUNCHED = False   # go_live.py sets this to True
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
-TYPE_EN = {"Job": "Job", "Result": "Result", "Admit card": "Admit card", "Answer key": "Answer key"}
+TYPE_EN = {"Job": "Job", "Result": "Result", "Admit card": "Admit card", "Answer key": "Answer key", "Update": "Update", "Admission": "Admission"}
 
 
 def notices():

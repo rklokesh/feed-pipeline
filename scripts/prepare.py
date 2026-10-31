@@ -30,7 +30,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 NOTICES = ROOT / "data" / "notices"
 TEXT = ROOT / "data" / "text"
 REPO = os.environ.get("GITHUB_REPOSITORY", "rklokesh/sarkarichart")
-TYPES = ["Job", "Result", "Admit card", "Answer key"]
+TYPES = ["Job", "Result", "Admit card", "Answer key", "Update", "Admission"]
 
 PROMPT = """You prepare Indian government job notices for a calm, trustworthy listing site read by job aspirants.
 Read the notice (title, board, link, extracted fields, PDF text) and answer with ONE JSON object:
@@ -38,8 +38,11 @@ Read the notice (title, board, link, extracted fields, PDF text) and answer with
  "list": true|false,            // false for things aspirants do not need on the main list: refund/chargeback notes,
                                  // scribe guidelines, booklets, tenders, internal circulars, court cases, duplicate links
  "skip_reason": "short reason if list is false, else empty",
- "type": "Job"|"Result"|"Admit card"|"Answer key",
+ "type": "Job"|"Result"|"Admit card"|"Answer key"|"Update"|"Admission",
                                  // Job = new vacancy / application open / corrigendum to an open recruitment
+                                 // Update = news about a recruitment that is not a new opening: document verification,
+                                 //   exam date/schedule, objections, syllabus, vacancy change after applications closed
+                                 // Admission = entrance or course exam (JEE, NEET, CUET, NIFT, SWAYAM), not a job
  "title_en": "Short clear title, max 70 chars, e.g. 'SSC Junior Engineer Examination 2026' or
               'UPPSC Assistant Teacher (Advt A-5/E-1/2025) final result'. No 'Download', no file sizes, no numbering.",
  "title_hi": "The same title in natural Hindi (Devanagari only, no English words; numbers as digits)",

@@ -49,7 +49,8 @@ HEADLINES = [
     (r"online form|application form", "Apply Online {y}", "ऑनलाइन आवेदन {y}", None),
 ]
 DEFAULT = {"Job": ("Recruitment {y}", "भर्ती {y}"), "Admit card": ("Admit Card {y}", "एडमिट कार्ड {y}"),
-           "Result": ("Result {y}", "परिणाम {y}"), "Answer key": ("Answer Key {y}", "उत्तर कुंजी {y}")}
+           "Result": ("Result {y}", "परिणाम {y}"), "Answer key": ("Answer Key {y}", "उत्तर कुंजी {y}"),
+           "Update": ("Notice {y}", "सूचना {y}"), "Admission": ("Admission {y}", "प्रवेश {y}")}
 KIND = {"Job": "job", "Admit card": "admit", "Result": "result", "Answer key": "answer"}
 TAGS = {  # band 2: left pair | right pair
     "job": (("LAST DATE | FEE", "ELIGIBILITY | APPLY"), ("अंतिम तिथि | शुल्क", "पात्रता | आवेदन")),
