@@ -276,3 +276,10 @@ publish.yml (when the owner adds a label to an issue, open or closed):
 - Hindi option B: one page per notice. Title = English h1 | Hindi h1; description = English + Hindi summary. A closed
   `<details class="hidet" lang="hi">` holds the full Hindi copy (generated from the same sections), hidden in Hindi mode.
   Phones set to Hindi open the site in Hindi automatically (until the reader picks a language).
+
+## 3g. Back to simple (31 Oct 2026)
+- Top links bar removed; the same links are a quiet "browse" line in the footer (SEO internal links, nothing on screen while reading).
+- Announcement strip scrolls away (no longer sticky).
+- Filters: only State, Education, "Jobs I can apply for". Category (duplicated the tabs) and Sort (confused the posted-date logic)
+  removed; each tab keeps its one fixed order (Closing soon: nearest last date; others: newest official date).
+- Rule going forward: no new on-screen features before launch unless they remove something.
