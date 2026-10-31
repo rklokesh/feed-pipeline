@@ -86,6 +86,29 @@ PAGES = [
       ("Using the site", "साइट का इस्तेमाल",
        ["You are welcome to read, share and link to our pages. Please do not copy our pages in bulk or use automated tools that overload the site."],
        ["आप हमारे पेज पढ़ सकते हैं, शेयर कर सकते हैं और उनका लिंक दे सकते हैं। कृपया पेज थोक में कॉपी न करें और ऐसे ऑटोमेटेड टूल न चलाएँ जो साइट पर बोझ डालें।"], False)]),
+    ("press", ("Press kit", "प्रेस किट"),
+     ("Everything you need to write about SarkariChart: a short description, key facts and the logo.",
+      "सरकारी चार्ट के बारे में लिखने के लिए ज़रूरी सब कुछ: छोटा परिचय, मुख्य तथ्य और लोगो।"),
+     [("In one line", "एक पंक्ति में",
+       ["SarkariChart is a free, ad-free website that lists every new Indian government job, admit card, result and answer key straight from official notices, in English and Hindi."],
+       ["सरकारी चार्ट एक मुफ़्त, बिना विज्ञापन वाली वेबसाइट है जो हर नई सरकारी नौकरी, एडमिट कार्ड, रिज़ल्ट और आंसर की को सीधे आधिकारिक सूचनाओं से, हिंदी और अंग्रेज़ी में दिखाती है।"], False),
+      ("Key facts", "मुख्य तथ्य",
+       ["Checks about 45 official recruitment boards every 30 minutes: UPSC, SSC, RRB, IBPS, SBI, state public service commissions, police and defence boards.",
+        "Every notice page is written from the official PDF and links to it. Dates are the dates the board issued the notice.",
+        "Full Hindi on every page, a calm design with no pop-ups or ads, and free alerts on Telegram (@sarkarichart).",
+        "\"Am I eligible?\": readers can check their age and qualification against each job; the details stay on their own device.",
+        "Independent website, not run by or connected to any government department."],
+       ["लगभग 45 आधिकारिक भर्ती बोर्ड हर 30 मिनट में जाँचे जाते हैं: यूपीएससी, एसएससी, आरआरबी, आईबीपीएस, एसबीआई, राज्य लोक सेवा आयोग, पुलिस और रक्षा भर्ती बोर्ड।",
+        "हर सूचना पेज आधिकारिक पीडीएफ़ से बनता है और उसका लिंक देता है। तिथियाँ वही हैं जिस दिन बोर्ड ने सूचना जारी की।",
+        "हर पेज पूरी तरह हिंदी में, बिना पॉप-अप या विज्ञापन का शांत डिज़ाइन, और टेलीग्राम (@sarkarichart) पर मुफ़्त अलर्ट।",
+        "\"क्या मैं योग्य हूँ?\": पाठक हर नौकरी से अपनी आयु और योग्यता मिला सकते हैं; जानकारी उनके अपने डिवाइस पर ही रहती है।",
+        "स्वतंत्र वेबसाइट, किसी सरकारी विभाग द्वारा नहीं चलाई जाती और न ही उससे जुड़ी है।"], False),
+      ("Logo", "लोगो",
+       ["Please use the logo as it is: do not crop, recolour or change it. Download it with the link below."],
+       ["कृपया लोगो को जैसा है वैसा ही इस्तेमाल करें: काटें, रंग या बदलाव न करें। नीचे दिए लिंक से डाउनलोड करें।"], False),
+      ("Contact for press", "प्रेस के लिए संपर्क",
+       ["Write to us through the Report a mistake form and say it is a press request. We usually reply within two days."],
+       ["\"गलती बताएँ\" फ़ॉर्म से लिखें और बताएँ कि यह प्रेस के लिए है। हम आम तौर पर दो दिन में जवाब देते हैं।"], False)]),
     ("contact", ("Contact", "संपर्क"),
      ("We read every message. The quickest way to reach us is the form below.",
       "हम हर संदेश पढ़ते हैं। हम तक पहुँचने का सबसे तेज़ तरीका नीचे दिया फ़ॉर्म है।"),
@@ -99,7 +122,9 @@ PAGES = [
        ["हर नई नौकरी की सूचना मुफ़्त पाने के लिए हमारे टेलीग्राम चैनल @sarkarichart से जुड़ें।"], False)]),
 ]
 
-LINKS = {"contact": [("/report/", "Report a mistake form →", "गलती बताएँ फ़ॉर्म →"),
+LINKS = {"press": [("/sarkarichart-logo.png", "Download the logo (PNG) →", "लोगो डाउनलोड करें (PNG) →"),
+                   ("/report/", "Press request form →", "प्रेस अनुरोध फ़ॉर्म →")],
+         "contact": [("/report/", "Report a mistake form →", "गलती बताएँ फ़ॉर्म →"),
                      ("https://t.me/sarkarichart", "Join on Telegram →", "टेलीग्राम पर जुड़ें →")]}
 
 STYLE = """    <style>
@@ -117,7 +142,7 @@ STYLE = """    <style>
       .ip .more { color: var(--grey); display: flex; flex-wrap: wrap; gap: 6px 18px; border-top: 1px solid var(--line); padding-top: 16px; }
     </style>"""
 
-NAV = [("about", "About", "परिचय"), ("privacy", "Privacy", "गोपनीयता"), ("terms", "Terms", "नियम"), ("contact", "Contact", "संपर्क")]
+NAV = [("about", "About", "परिचय"), ("privacy", "Privacy", "गोपनीयता"), ("terms", "Terms", "नियम"), ("contact", "Contact", "संपर्क"), ("press", "Press kit", "प्रेस किट")]
 
 
 def build(slug, title, lead, sections):
