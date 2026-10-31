@@ -137,6 +137,7 @@ main { margin-top: 36px; flex: 1; }
 .fbar .fcount { flex-basis: 100%; min-height: 1lh; margin: 4px 0 0 2px; color: var(--grey); }
 .fbar .fcount button { all: unset; cursor: pointer; color: var(--link, #1E6FD9); margin-left: 8px; }
 @media (max-width: 640px) { .fbar { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; } .fbar::-webkit-scrollbar { display: none; } .fbar .chip { flex: none; } .fbar .fcount { display: none; } }
+.hubh { font-size: 1rem; font-weight: 600; margin: 0 0 14px; }
 .tabrow { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 4px 18px; margin-bottom: 14px; }
 .tabrow .tabs { flex: 1 1 auto; margin-bottom: 0; }
 .tabs { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: 14px; position: relative; }
@@ -330,7 +331,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   <footer>
     <p class="pref"><a href="https://www.google.com/preferences/source?q=sarkarichart.com" target="_blank" rel="noopener"><span data-t="prefSrc">Add SarkariChart as a preferred source on Google</span></a><img class="hand" src="/hand.webp" width="24" height="24" alt="" aria-hidden="true" loading="lazy" decoding="async"></p>
     <p class="g" data-t="disclaimer">SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.</p>
-    <p><a href="/about/" data-t="about">About</a> · <a href="/report/" data-t="report">Report a mistake</a> · <a href="/privacy/" data-t="privacy">Privacy</a> · <a href="/terms/" data-t="terms">Terms</a> · <a href="/contact/" data-t="contact">Contact</a> · <a href="/exam/" data-t="exams">Exams</a> · <a href="/govt-jobs/" data-t="browse">Jobs by state</a></p>
+    <p><a href="/about/" data-t="about">About</a> · <a href="/report/" data-t="report">Report a mistake</a> · <a href="/privacy/" data-t="privacy">Privacy</a> · <a href="/terms/" data-t="terms">Terms</a> · <a href="/contact/" data-t="contact">Contact</a></p>
   </footer>
 </div>
 
@@ -627,7 +628,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   }
   // one row per exam with 2+ updates (written by scripts/exams.py build)
   // browse pages a search can point to (written by scripts/hubs.py build)
-  const HUBS = /*HUBS:START*/[{"slug": "up-govt-jobs", "en": "UP", "hi": "यूपी", "kind": "state", "words": ["up", "यूपी", "up"]}, {"slug": "bihar-govt-jobs", "en": "Bihar", "hi": "बिहार", "kind": "state", "words": ["bihar", "बिहार", "bihar"]}, {"slug": "rajasthan-govt-jobs", "en": "Rajasthan", "hi": "राजस्थान", "kind": "state", "words": ["rajasthan", "राजस्थान", "rajasthan"]}, {"slug": "mp-govt-jobs", "en": "MP", "hi": "एमपी", "kind": "state", "words": ["mp", "एमपी", "mp"]}, {"slug": "haryana-govt-jobs", "en": "Haryana", "hi": "हरियाणा", "kind": "state", "words": ["haryana", "हरियाणा", "haryana"]}, {"slug": "delhi-govt-jobs", "en": "Delhi", "hi": "दिल्ली", "kind": "state", "words": ["delhi", "दिल्ली", "delhi"]}, {"slug": "uttarakhand-govt-jobs", "en": "Uttarakhand", "hi": "उत्तराखंड", "kind": "state", "words": ["uttarakhand", "उत्तराखंड", "uttarakhand"]}, {"slug": "west-bengal-govt-jobs", "en": "West Bengal", "hi": "पश्चिम बंगाल", "kind": "state", "words": ["west bengal", "पश्चिम बंगाल", "west bengal"]}, {"slug": "10th-pass-govt-jobs", "en": "10th Pass", "hi": "10वीं पास", "kind": "qual", "words": ["10th", "10 pass", "10th pass", "matric", "high school", "10वीं", "हाईस्कूल"]}, {"slug": "12th-pass-govt-jobs", "en": "12th Pass", "hi": "12वीं पास", "kind": "qual", "words": ["12th", "12 pass", "12th pass", "inter", "intermediate", "12वीं", "इंटर"]}, {"slug": "iti-govt-jobs", "en": "ITI", "hi": "आईटीआई", "kind": "qual", "words": ["iti", "आईटीआई"]}, {"slug": "diploma-govt-jobs", "en": "Diploma", "hi": "डिप्लोमा", "kind": "qual", "words": ["diploma", "polytechnic", "डिप्लोमा"]}, {"slug": "graduate-govt-jobs", "en": "Graduate", "hi": "स्नातक", "kind": "qual", "words": ["graduate", "graduation", "degree", "ba", "bsc", "bcom", "स्नातक", "ग्रेजुएट"]}, {"slug": "post-graduate-govt-jobs", "en": "Post Graduate", "hi": "स्नातकोत्तर", "kind": "qual", "words": ["post graduate", "pg", "postgraduate", "ma", "msc", "mba", "स्नातकोत्तर"]}]/*HUBS:END*/;
+  const HUBS = /*HUBS:START*/[{"slug": "up-govt-jobs", "en": "UP", "hi": "यूपी", "kind": "state", "words": ["up", "यूपी", "up"]}, {"slug": "bihar-govt-jobs", "en": "Bihar", "hi": "बिहार", "kind": "state", "words": ["bihar", "बिहार", "bihar"]}, {"slug": "rajasthan-govt-jobs", "en": "Rajasthan", "hi": "राजस्थान", "kind": "state", "words": ["rajasthan", "राजस्थान", "rajasthan"]}, {"slug": "mp-govt-jobs", "en": "MP", "hi": "एमपी", "kind": "state", "words": ["mp", "एमपी", "mp"]}, {"slug": "haryana-govt-jobs", "en": "Haryana", "hi": "हरियाणा", "kind": "state", "words": ["haryana", "हरियाणा", "haryana"]}, {"slug": "delhi-govt-jobs", "en": "Delhi", "hi": "दिल्ली", "kind": "state", "words": ["delhi", "दिल्ली", "delhi"]}, {"slug": "uttarakhand-govt-jobs", "en": "Uttarakhand", "hi": "उत्तराखंड", "kind": "state", "words": ["uttarakhand", "उत्तराखंड", "uttarakhand"]}, {"slug": "west-bengal-govt-jobs", "en": "West Bengal", "hi": "पश्चिम बंगाल", "kind": "state", "words": ["west bengal", "पश्चिम बंगाल", "west bengal"]}, {"slug": "maharashtra-govt-jobs", "en": "Maharashtra", "hi": "महाराष्ट्र", "kind": "state", "words": ["maharashtra", "महाराष्ट्र", "maharashtra"]}, {"slug": "tamil-nadu-govt-jobs", "en": "Tamil Nadu", "hi": "तमिलनाडु", "kind": "state", "words": ["tamil nadu", "तमिलनाडु", "tamil nadu"]}, {"slug": "10th-pass-govt-jobs", "en": "10th Pass", "hi": "10वीं पास", "kind": "qual", "words": ["10th", "10 pass", "10th pass", "matric", "high school", "10वीं", "हाईस्कूल"]}, {"slug": "12th-pass-govt-jobs", "en": "12th Pass", "hi": "12वीं पास", "kind": "qual", "words": ["12th", "12 pass", "12th pass", "inter", "intermediate", "12वीं", "इंटर"]}, {"slug": "iti-govt-jobs", "en": "ITI", "hi": "आईटीआई", "kind": "qual", "words": ["iti", "आईटीआई"]}, {"slug": "diploma-govt-jobs", "en": "Diploma", "hi": "डिप्लोमा", "kind": "qual", "words": ["diploma", "polytechnic", "डिप्लोमा"]}, {"slug": "graduate-govt-jobs", "en": "Graduate", "hi": "स्नातक", "kind": "qual", "words": ["graduate", "graduation", "degree", "ba", "bsc", "bcom", "स्नातक", "ग्रेजुएट"]}, {"slug": "post-graduate-govt-jobs", "en": "Post Graduate", "hi": "स्नातकोत्तर", "kind": "qual", "words": ["post graduate", "pg", "postgraduate", "ma", "msc", "mba", "स्नातकोत्तर"]}]/*HUBS:END*/;
   let cat = "all", q = "";
   // search matches English and Hindi words alike, whichever language is showing
   const words = i => [i.title, i.hi, i.org, ORG_HI[i.org] || "", i.type, T.hi[i.type], i.tags || ""].join(" ").toLowerCase();
@@ -755,7 +756,8 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   const QOK = { "10th": ["10th"], "12th": ["10th", "12th"], iti: ["10th", "iti"], diploma: ["10th", "12th", "diploma"],
                 graduate: ["10th", "12th", "graduate"], postgraduate: ["10th", "12th", "graduate", "postgraduate"] };
   let F = { st: "", q: "", me: false, sort: "" };
-  try { F = Object.assign(F, JSON.parse(localStorage.getItem("sc-jobf") || "{}")); } catch (e) {}
+  if (window.SC_PRESET) F = Object.assign(F, window.SC_PRESET);   // a browse page opens with its own filter (not saved)
+  else try { F = Object.assign(F, JSON.parse(localStorage.getItem("sc-jobf") || "{}")); } catch (e) {}
   const saveF = () => { try { localStorage.setItem("sc-jobf", JSON.stringify(F)); } catch (e) {} };
   function jobFilter(i) {
     if (F.st && (F.st === "central" ? !!i.st : i.st !== F.st)) return false;
@@ -995,7 +997,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     if (startQ) { const qi = document.getElementById("q"); qi.value = startQ; q = startQ.trim().toLowerCase(); }
     // ?cat=jobs|closing-soon|admit-cards|results|answer-keys opens that tab (used by notice-page breadcrumbs)
     const CATS = { jobs: "Job", "closing-soon": "soon", "admit-cards": "Admit card", results: "Result", "answer-keys": "Answer key" };
-    const startCat = CATS[new URL(location.href).searchParams.get("cat")];
+    const startCat = window.SC_PRESET ? "Job" : CATS[new URL(location.href).searchParams.get("cat")];
     if (startCat) requestAnimationFrame(() => document.querySelector(`.tabs button[data-cat="${startCat}"]`)?.click());
   } catch (e) {}
   document.getElementById("lang").addEventListener("click", () => {

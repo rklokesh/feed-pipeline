@@ -146,132 +146,37 @@ def d_hi(iso):
     return f"{d.day} {MONTHS_HI[d.month - 1]} {d.year}"
 
 
-def page(slug, en, hi, sections, desc):
-    """sections: [(key, title_en, title_hi, [notice...], empty_en, empty_hi)] rendered as the usual bordered lists."""
-    esc = html.escape
-    js = lambda v: json.dumps("" if v is None else str(v), ensure_ascii=False)
-    today = dt.datetime.now(IST).date().isoformat()
-    main = [f'''    <div class="title">
-      <nav class="crumb" aria-label="Breadcrumb"><a href="/govt-jobs/" data-t="crumbType">{esc(en["crumbType"])}</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">{esc(en["org"])}</span></nav>
-      <h1 data-t="h1">{esc(en["h1"])}</h1>
-      <p class="lead" data-t="lead">{esc(en["lead"])}</p>
-      <span id="state" hidden></span><span id="left" hidden></span><span id="views" hidden></span>
-    </div>''']
-    all_items = []
-    for key, te, th, items, ee, eh in sections:
-        en[key], hi[key] = te, th
-        body = ""
-        for k, n in enumerate(items):
-            i = f"{key}{k}"
-            en[i], hi[i] = title(n), title(n, True)
-            last = last_of(n)
-            if is_job(n) and last and last >= today:
-                en[i + "s"], hi[i + "s"] = f"Last date {d_en(last)}", f"अंतिम तिथि {d_hi(last)}"
-            else:
-                t = TYPE.get((n.get("card") or {}).get("type", "Job"), TYPE["Job"])
-                en[i + "s"], hi[i + "s"] = t
-            en[i + "d"], hi[i + "d"] = d_en(nd(n)), d_hi(nd(n))
-            body += (f'      <a class="r" href="/notice/{n["slug"]}/"><span class="num" data-t="{i}d">{esc(en[i + "d"])}</span>'
-                     f'<span class="v"><span data-t="{i}">{esc(en[i])}</span> <small class="g" data-t="{i}s">{esc(en[i + "s"])}</small></span></a>\n')
-            all_items.append(n)
-        if not body:
-            en[key + "E"], hi[key + "E"] = ee, eh
-            body = f'      <div class="r one"><span class="g" data-t="{key}E">{esc(ee)}</span></div>\n'
-        main.append(f'    <section class="kv tl" data-t-aria="{key}">\n      <div class="h" data-t="{key}">{esc(te)}</div>\n{body}    </section>')
-    main.append(f'    <div class="note"><p class="g" data-t="note">{esc(en["note"])}</p></div>\n    <a id="dlPdf" hidden></a><a id="share" hidden></a>')
-    url = f"{SITE_URL}/{slug}/"
-    ld = [{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-              {"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": f"{SITE_URL}/"},
-              {"@type": "ListItem", "position": 2, "name": "Govt jobs", "item": f"{SITE_URL}/govt-jobs/"},
-              {"@type": "ListItem", "position": 3, "name": en["org"], "item": url}]},
-          {"@context": "https://schema.org", "@type": "ItemList", "name": en["h1"], "url": url,
-           "itemListElement": [{"@type": "ListItem", "position": k + 1, "url": f'{SITE_URL}/notice/{n["slug"]}/', "name": title(n)} for k, n in enumerate(all_items[:50])]}]
-    main.append('    <script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>")
-    tpl = TPL.read_text(encoding="utf-8")
-    out = (tpl.replace("{{TITLE}}", esc(en["title"])).replace("{{DESC}}", esc(desc)).replace("{{MAIN}}", "\n".join(main))
-           .replace("{{T_EN}}", "\n".join(f"      {k}: {js(v)}," for k, v in en.items()))
-           .replace("{{T_HI}}", "\n".join(f"      {k}: {js(v)}," for k, v in hi.items()))
-           .replace("{{SLUG}}", slug).replace("{{OGIMG}}", f"{SITE_URL}/og.png").replace("{{OGALT}}", esc(en["h1"]))
-           .replace("{{URL}}", url).replace("{{LAST}}", "null"))
-    d = SITE / slug
-    d.mkdir(parents=True, exist_ok=True)
-    (d / "index.html").write_text(out, encoding="utf-8")
-
-
 def build():
-    notices = [n for _, n in load() if n.get("status") == "approved" and n.get("slug") and (SITE / "notice" / n["slug"]).exists()]
-    notices.sort(key=lambda n: (nd(n), n.get("first_seen") or ""), reverse=True)
-    today = dt.datetime.now(IST).date().isoformat()
-    # open = a job notice with a last date that has not passed (DV notices, syllabus updates etc. have none)
-    open_job = lambda n: is_job(n) and last_of(n) >= today
-    note = ("Lists are made from official notices and update every 30 minutes. If anything differs, the official notice is correct.",
-            "सूचियाँ आधिकारिक सूचनाओं से बनती हैं और हर 30 मिनट में अपडेट होती हैं। कोई बात अलग हो, तो आधिकारिक सूचना को ही सही मानें।")
-    hubs = []   # for the index page and the homepage search hints
-    for slug, en_name, hi_name, prefixes in STATES:
-        mine = [n for n in notices if any((n.get("source_id") or "").split("-")[0] == p or (n.get("source_id") or "").startswith(p + "-") for p in prefixes)]
-        if not mine:
-            continue
-        jobs = [n for n in mine if open_job(n)]
-        other = [n for n in mine if not open_job(n)][:30]
-        boards = ", ".join(dict.fromkeys(n.get("org") for n in mine if n.get("org")))
-        s = f"{slug}-govt-jobs"
-        en = {"crumbType": "Govt jobs", "org": en_name, "h1": f"{en_name} Govt Jobs {YEAR}",
-              "lead": f"Every official notice from {en_name}'s own recruitment boards ({boards}): jobs you can apply for now, then the latest admit cards, results and other updates. Central exams like SSC, RRB and UPSC are open to everyone and are on the homepage.",
-              "note": note[0], "title": f"{en_name} Govt Jobs {YEAR}: Latest Vacancy, Admit Card, Result | SarkariChart"}
-        hi = {"crumbType": "सरकारी नौकरी", "org": hi_name, "h1": f"{hi_name} सरकारी नौकरी {YEAR}",
-              "lead": f"{hi_name} के अपने भर्ती बोर्ड ({boards}) की हर आधिकारिक सूचना: पहले वे नौकरियाँ जिनमें अभी आवेदन हो सकता है, फिर ताज़ा एडमिट कार्ड, रिज़ल्ट और अपडेट। एसएससी, आरआरबी, यूपीएससी जैसी केंद्रीय परीक्षाएँ सबके लिए हैं और होमपेज पर हैं।",
-              "note": note[1], "title": f"{hi_name} सरकारी नौकरी {YEAR} | सरकारी चार्ट"}
-        page(s, en, hi, [("jobs", "Open jobs", "खुली नौकरियाँ", jobs, "No open jobs right now. New ones appear here as soon as they are announced.", "अभी कोई खुली नौकरी नहीं है। नई सूचना आते ही यहाँ दिखेगी।"),
-                         ("upd", "Latest notices: admit cards, results and updates", "ताज़ा सूचनाएँ: एडमिट कार्ड, रिज़ल्ट और अपडेट", other, "Nothing yet.", "अभी कुछ नहीं।")],
-             f"Latest {en_name} government jobs {YEAR} from official boards ({boards}): open vacancies with last dates, admit cards, answer keys and results.")
-        hubs.append({"kind": "state", "slug": s, "en": en_name, "hi": hi_name, "n": len(jobs), "words": [en_name.lower(), hi_name, slug.replace("-", " ")]})
-    for slug, tagv, en_name, hi_name, words in QUALS:
-        jobs = [n for n in notices if open_job(n) and tagv in (n.get("qual") or [])]
-        s = f"{slug}-govt-jobs"
-        en = {"crumbType": "Govt jobs", "org": en_name, "h1": f"{en_name} Govt Jobs {YEAR}",
-              "lead": f"Open government jobs that accept {en_name} as the minimum qualification, newest first, each with its last date. Always check the exact eligibility in the official notice.",
-              "note": note[0], "title": f"{en_name} Govt Jobs {YEAR}: Latest Vacancies, Apply Online | SarkariChart"}
-        hi = {"crumbType": "सरकारी नौकरी", "org": hi_name, "h1": f"{hi_name} सरकारी नौकरी {YEAR}",
-              "lead": f"वे खुली सरकारी नौकरियाँ जिनमें न्यूनतम योग्यता {hi_name} है, नई सबसे ऊपर, अंतिम तिथि के साथ। सही पात्रता हमेशा आधिकारिक सूचना में देखें।",
-              "note": note[1], "title": f"{hi_name} सरकारी नौकरी {YEAR} | सरकारी चार्ट"}
-        page(s, en, hi, [("jobs", "Open jobs", "खुली नौकरियाँ", jobs, "No open jobs for this qualification right now. New ones appear here as soon as they are announced.", "इस योग्यता की अभी कोई खुली नौकरी नहीं है। नई सूचना आते ही यहाँ दिखेगी।")],
-             f"Latest {en_name} government jobs {YEAR}: open vacancies from official notices with last dates and direct links.")
-        hubs.append({"kind": "qual", "slug": s, "en": en_name, "hi": hi_name, "n": len(jobs), "words": words})
-    index(hubs)
+    """Each browse page is the homepage itself, opened on the Jobs tab with one filter set (same look everywhere).
+    Run after publish.py build so the copies carry the current notice list."""
+    import shutil
+    home = (SITE / "index.html").read_text(encoding="utf-8")
+    if (SITE / "govt-jobs").exists():                # the old boxed index page
+        shutil.rmtree(SITE / "govt-jobs")
+    hubs = []
+    pages = [(f"{slug}-govt-jobs", en, hi, {"st": slug}, [en.lower(), hi, slug.replace("-", " ")], "state") for slug, en, hi, _ in STATES]
+    pages += [(f"{slug}-govt-jobs", en, hi, {"q": tagv}, words, "qual") for slug, tagv, en, hi, words in QUALS]
+    for s_, en, hi, preset, words, kind in pages:
+        title = f"{en} Govt Jobs {YEAR}: Latest Vacancy, Notification, Last Date | SarkariChart"
+        desc = (f"Latest {en} government jobs {YEAR} from official notices: open vacancies with last dates, eligibility and direct "
+                f"official links, in English and Hindi.")
+        url = f"{SITE_URL}/{s_}/"
+        h = home
+        h = re.sub(r"<title>.*?</title>", f"<title>{html.escape(title)}</title>", h, count=1, flags=re.S)
+        h = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{html.escape(desc)}">', h, count=1)
+        h = re.sub(r'<link rel="canonical" href="[^"]*">', f'<link rel="canonical" href="{url}">', h, count=1)
+        h = re.sub(r'<meta property="og:url" content="[^"]*">', f'<meta property="og:url" content="{url}">', h, count=1)
+        h = re.sub(r'<meta property="og:title" content="[^"]*">', f'<meta property="og:title" content="{html.escape(title)}">', h, count=1)
+        hi_title = f"{hi} सरकारी नौकरी {YEAR} | सरकारी चार्ट"
+        h = h.replace('document.title = t("title");', f'document.title = lang === "hi" ? {json.dumps(hi_title, ensure_ascii=False)} : {json.dumps(title)};', 1)
+        h = h.replace("</head>", f"<script>window.SC_PRESET = {json.dumps(preset)};</script>\n</head>", 1)
+        h = h.replace("  <main>\n", f'  <main>\n    <h1 class="hubh"><span class="x-en">{html.escape(en)} govt jobs {YEAR}</span><span class="x-hi" lang="hi">{html.escape(hi)} सरकारी नौकरी {YEAR}</span></h1>\n', 1)
+        d = SITE / s_
+        d.mkdir(parents=True, exist_ok=True)
+        (d / "index.html").write_text(h, encoding="utf-8")
+        hubs.append({"kind": kind, "slug": s_, "en": en, "hi": hi, "n": 0, "words": words})
     homepage_hints(hubs)
-    print(f"hubs: {len(hubs)} browse pages")
-
-
-def index(hubs):
-    esc = html.escape
-    js = lambda v: json.dumps("" if v is None else str(v), ensure_ascii=False)
-    en = {"h1": "Browse govt jobs", "lead": "By state and by qualification. Every list is made from official notices.",
-          "sH": "By state", "qH": "By qualification", "title": "Govt Jobs by State and Qualification | SarkariChart"}
-    hi = {"h1": "सरकारी नौकरी ढूँढें", "lead": "राज्य और योग्यता के अनुसार। हर सूची आधिकारिक सूचनाओं से बनती है।",
-          "sH": "राज्य के अनुसार", "qH": "योग्यता के अनुसार", "title": "राज्य और योग्यता के अनुसार सरकारी नौकरी | सरकारी चार्ट"}
-    secs = ""
-    for kind, key in (("state", "sH"), ("qual", "qH")):
-        rows = ""
-        for k, h in enumerate(x for x in hubs if x["kind"] == kind):
-            i = f"{kind}{k}"
-            en[i], hi[i] = f'{h["en"]} govt jobs', f'{h["hi"]} सरकारी नौकरी'
-            en[i + "n"], hi[i + "n"] = f'{h["n"]} open', f'{h["n"]} खुली'
-            rows += f'      <a class="r" href="/{h["slug"]}/"><span data-t="{i}">{esc(en[i])}</span><span class="v g" data-t="{i}n">{esc(en[i + "n"])}</span></a>\n'
-        secs += f'    <section class="kv rel">\n      <div class="h" data-t="{key}">{esc(en[key])}</div>\n{rows}    </section>\n'
-    main = f'''    <div class="title">
-      <h1 data-t="h1">{esc(en["h1"])}</h1>
-      <p class="lead" data-t="lead">{esc(en["lead"])}</p>
-      <span id="state" hidden></span><span id="left" hidden></span><span id="views" hidden></span>
-    </div>
-{secs}    <a id="dlPdf" hidden></a><a id="share" hidden></a>'''
-    tpl = TPL.read_text(encoding="utf-8")
-    out = (tpl.replace("{{TITLE}}", esc(en["title"])).replace("{{DESC}}", esc(en["lead"])).replace("{{MAIN}}", main)
-           .replace("{{T_EN}}", "\n".join(f"      {k}: {js(v)}," for k, v in en.items()))
-           .replace("{{T_HI}}", "\n".join(f"      {k}: {js(v)}," for k, v in hi.items()))
-           .replace("{{SLUG}}", "govt-jobs").replace("{{OGIMG}}", f"{SITE_URL}/og.png").replace("{{OGALT}}", "SarkariChart")
-           .replace("{{URL}}", f"{SITE_URL}/govt-jobs/").replace("{{LAST}}", "null"))
-    (SITE / "govt-jobs").mkdir(parents=True, exist_ok=True)
-    (SITE / "govt-jobs" / "index.html").write_text(out, encoding="utf-8")
+    print(f"hubs: {len(hubs)} browse pages (homepage with a filter set)")
 
 
 def homepage_hints(hubs):

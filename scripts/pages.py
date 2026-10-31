@@ -333,14 +333,10 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
     en["metaV"] = f"Updated {d_en(checked)}" + (f" · Source: {src_host}" if src_host else "")
     hi["metaV"] = f"अपडेट {d_hi(checked)}" + (f" · स्रोत: {src_host}" if src_host else "")
     exam_g = (exam_groups or {}).get(((n.get("exam") or {}).get("key")) or "")
-    if exam_g:
-        en["exLink"] = f'All updates for {exam_g["name_en"]} →'
-        hi["exLink"] = f'{exam_g["name_hi"] or exam_g["name_en"]} के सभी अपडेट →'
     main = [f'''    <div class="title">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat={CAT_SLUG.get(typ, "jobs")}" data-t="crumbType">{esc(en["crumbType"])}</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">{esc(en["org"])}</span></nav>
       <h1 data-t="h1">{esc(en["h1"])}</h1>
       <p class="meta g" data-t="metaV">{esc(en["metaV"])}</p>
-      {f'<p class="exlink"><a href="/exam/{exam_g["key"]}/" data-t="exLink">{esc(en["exLink"])}</a></p>' if exam_g else ""}
       <p class="status"><span id="state">{esc(en["statusV"])}</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       {f'<p class="lead" data-t="summary">{esc(en["summary"])}</p>' if en["summary"] else ""}
       <img class="ogimg" id="ogimg" src="/notice/{slug}/og.png" data-en="/notice/{slug}/og.png" data-hi="/notice/{slug}/og-hi.png" width="1200" height="675" alt="{esc(en["h1"])} — summary card" decoding="async" onerror="this.hidden=true">
@@ -475,6 +471,22 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
         en["tocH"], hi["tocH"] = "On this page", "इस पेज पर"
         items = "".join(f'<li><a href="#{a_}" data-t="{k_}">{esc(en[k_])}</a></li>' for a_, k_ in toc)
         main.insert(2, f'    <details class="toc"><summary data-t="tocH">On this page</summary><ol>{items}</ol></details>')
+    others = [x for x in (exam_g["items"] if exam_g else []) if x["id"] != n["id"]]
+    if others:   # every other official update for the same exam, newest first (replaces separate exam pages)
+        from exams import stage as _stage
+        en["exH"], hi["exH"] = f'All updates for {exam_g["name_en"]}', f'{exam_g["name_hi"] or exam_g["name_en"]} के सभी अपडेट'
+        body = ""
+        for k, x in enumerate(others[:12]):
+            xe, xh = _stage(x)
+            xc, xp = x.get("card") or {}, x.get("page") or {}
+            en[f"ex{k}"], hi[f"ex{k}"] = xp.get("h1_en") or xc.get("title_en") or x.get("title"), xp.get("h1_hi") or xc.get("title_hi") or xp.get("h1_en") or ""
+            en[f"exs{k}"], hi[f"exs{k}"] = xe, xh
+            xd = x.get("notice_date") or (x.get("first_seen") or "")[:10]
+            body += (f'      <a class="r" href="/notice/{x["slug"]}/"><span><span data-t="ex{k}">{esc(en[f"ex{k}"])}</span> <small class="g" data-t="exs{k}">{esc(xe)}</small></span>'
+                     f'<span class="v g num">{esc(d_en(xd))}</span></a>\n')
+        main.append(f'    <section class="kv rel" id="exam" data-t-aria="exH">\n      <div class="h" data-t="exH">{esc(en["exH"])}</div>\n{body}    </section>')
+        rel_ids = {x["id"] for x in others}
+        related = [r for r in (related or []) if r.get("id") not in rel_ids]
     if related:
         en["relH"], hi["relH"] = "More notices", "और सूचनाएँ"
         body = ""
@@ -540,7 +552,7 @@ def related_for(n: dict, notices: list) -> list:
     out = []
     for x in sorted(pool, key=key, reverse=True)[:6]:
         xc = x.get("card") or {}
-        out.append({"slug": x["slug"], "en": xc.get("title_en") or x.get("title"), "hi": xc.get("title_hi") or "",
+        out.append({"id": x["id"], "slug": x["slug"], "en": xc.get("title_en") or x.get("title"), "hi": xc.get("title_hi") or "",
                     "posted": x.get("notice_date") or x["first_seen"][:10]})
     return out
 

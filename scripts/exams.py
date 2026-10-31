@@ -393,39 +393,13 @@ def render_series(skey: str, years: list) -> str:
 
 
 def build():
-    g = groups()
+    """Exam pages were folded into notice pages (31 Oct 2026): each notice lists its exam's other updates.
+    This only removes the old /exam/ pages; the grouping (tag, groups) is still used by pages.py."""
     out = SITE / "exam"
-    out.mkdir(parents=True, exist_ok=True)
-    live = set()
-    by_board = {}
-    for x in g.values():
-        by_board.setdefault(x["items"][0].get("org"), []).append(x)
-    for v in by_board.values():
-        v.sort(key=lambda x: x["latest"], reverse=True)
-    for x in g.values():
-        d = out / x["key"]
-        d.mkdir(exist_ok=True)
-        (d / "index.html").write_text(render(x, by_board.get(x["items"][0].get("org"), [])), encoding="utf-8")
-        live.add(x["key"])
-    by_series = {}
-    for x in g.values():
-        if series(x["key"]) != x["key"]:
-            by_series.setdefault(series(x["key"]), []).append(x)
-    for skey, years in by_series.items():
-        if skey in g:          # an exam key without a year already uses this address
-            continue
-        d = out / skey
-        d.mkdir(exist_ok=True)
-        (d / "index.html").write_text(render_series(skey, years), encoding="utf-8")
-        live.add(skey)
-    for d in out.iterdir():          # exams that dropped below the threshold (e.g. a notice was rejected)
-        if d.is_dir() and d.name not in live:
-            for f in d.iterdir():
-                f.unlink()
-            d.rmdir()
-    (out / "index.html").write_text(render_index(g), encoding="utf-8")
-    homepage_data(g)
-    print(f"exams: {len(g)} exam pages + {len(by_series)} permanent all-years pages")
+    if out.exists():
+        import shutil
+        shutil.rmtree(out)
+        print("exams: removed old /exam/ pages")
 
 
 if __name__ == "__main__":
