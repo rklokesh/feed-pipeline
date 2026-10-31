@@ -161,7 +161,11 @@ publish.yml (when the owner adds a label to an issue, open or closed):
 
 ## 6. Where we are / next steps (in order)
 
-1. **MPSC** reader (JSON feed) — the other broken boards were fixed on 28 Oct (section 4).
+1. **MPSC** reader (JSON feed) — the other broken boards were fixed on 28 Oct (section 4). Employment News was turned off
+   31 Oct (`enabled: false`): no public job list without the paid e-paper; its ads come from boards we already watch.
+   Proposed headline feature for launch: **"Am I eligible?"** (DOB, category, qualification, state saved only in the
+   reader's browser → quiet mark on eligible open jobs + a direct answer on notice pages) and **follow an exam**
+   (browser notification on its next stage, no app/login).
 2. **Add boards:** India Post GDS, Army, Navy/Air Force Agniveer, Coast Guard, CRPF, CISF, DRDO, Employment News,
    SSB, NVS, Assam Rifles, GPSC, KPSC, OPSC, CG Vyapam (logos for most are already in `assets/org`).
 3. Trust pages are live (28 Oct): /about/, /privacy/, /terms/, /contact/ — built by `scripts/info_pages.py` (edit text there; runs in prepare/publish workflows). Press kit page still to do.
