@@ -1,20 +1,6 @@
 {
   "board_url": "https://kvs.gov.in/",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": null,
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "Internal administrative office order regarding the change of temporary accommodation for a Kendriya Vidyalaya, not a job vacancy or recruitment notice",
-    "summary_en": "This is an administrative office order from Kendriya Vidyalaya Sangathan regarding the revision of temporary accommodation for the newly opened Kendriya Vidyalaya in Nachane, Ratnagiri, Maharashtra.",
-    "summary_hi": "यह नाचने, रत्नागिरी, महाराष्ट्र में नव स्वीकृत केन्द्रीय विद्यालय के लिए अस्थायी आवास में संशोधन के संबंध में केन्द्रीय विद्यालय संगठन का एक प्रशासनिक कार्यालय आदेश है।",
-    "title_en": "KVS Ratnagiri Temporary Accommodation Revision Order",
-    "title_hi": "केन्द्रीय विद्यालय रत्नागिरी अस्थायी आवास संशोधन आदेश",
-    "type": "Job",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -27,10 +13,10 @@
     "bytes": 1829642,
     "pages": 4,
     "sha256": "6e7ea8f27bbaf83864d5fbce80b004b3702ce0435287673faaab062c638373ab",
-    "text_kind": "text"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "kvs-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "नाचने, रत्नागिरी, महाराष्ट्र में नव स्वीकृत केन्द्रीय विद्यालय खोलने के संबंध में संशोधित कार्यालय आदेश नई",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/10/2026102830.pdf"
 }

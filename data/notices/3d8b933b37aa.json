@@ -1,20 +1,6 @@
 {
   "board_url": "https://psc.uk.gov.in/candidate-corner/recruitment",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "Chief Fire Officer",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "Ineligible candidates list / rejection notice",
-    "summary_en": "UKPSC has released the final list of ineligible candidates for the Chief Fire Officer Examination 2026 as no representations were received.",
-    "summary_hi": "उत्तराखंड लोक सेवा आयोग ने मुख्य अग्निशमन अधिकारी परीक्षा 2026 के लिए अंतिम रूप से अनर्ह अभ्यर्थियों की सूची जारी कर दी है।",
-    "title_en": "UKPSC Chief Fire Officer Examination 2026 Ineligible Candidates List",
-    "title_hi": "उत्तराखंड लोक सेवा आयोग मुख्य अग्निशमन अधिकारी परीक्षा अनुपयुक्त अभ्यर्थी सूची",
-    "type": "Result",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -27,10 +13,10 @@
     "bytes": 389416,
     "pages": 1,
     "sha256": "8241277619b42f606b4380e7e6a529532e71866ada0d5316684f64d775db8b69",
-    "text_kind": "text"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "ukpsc-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "1904885097.pdf",
   "url": "https://psc.uk.gov.in/public/uploads/recruitment/1904885097.pdf"
 }

@@ -1,20 +1,6 @@
 {
   "board_url": "https://psc.uk.gov.in/candidate-corner/recruitment",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "सहायक भूवैज्ञानिक, खान अधिकारी, सहायक रसायनज्ञ",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "document is a verification check list for document submission rather than a job notification or application",
-    "summary_en": "This notice provides a document verification check list for candidates appearing in the Uttarakhand Public Service Commission Assistant Geologist, Mining Officer and Assistant Chemist Examination 2026.",
-    "summary_hi": "यह सूचना उत्तराखंड लोक सेवा आयोग सहायक भूवैज्ञानिक, खान अधिकारी और सहायक रसायनज्ञ परीक्षा 2026 के लिए दस्तावेज सत्यापन चेक लिस्ट प्रदान करती है।",
-    "title_en": "UKPSC Assistant Geologist, Mining Officer and Assistant Chemist Examination 2026 Check List",
-    "title_hi": "उत्तराखंड लोक सेवा आयोग सहायक भूवैज्ञानिक खान अधिकारी और सहायक रसायनज्ञ परीक्षा चेक लिस्ट",
-    "type": "Job",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -27,10 +13,10 @@
     "bytes": 203684,
     "pages": 2,
     "sha256": "01252a106fa31f4d048584652283c1fc6b3516912517f4de46249433aa23ce8a",
-    "text_kind": "text"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "ukpsc-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "444453022.pdf",
   "url": "https://psc.uk.gov.in/public/uploads/recruitment/444453022.pdf"
 }

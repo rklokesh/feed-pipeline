@@ -1,20 +1,6 @@
 {
   "board_url": "https://uppbpb.gov.in/",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "उप निरीक्षक, प्लाटून कमाण्डर, अग्निशमन द्वितीय अधिकारी",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "court case and internal recruitment order related to a specific appeal, not a general vacancy listing",
-    "summary_en": "Notice regarding court orders in special appeal for the 2020-21 direct recruitment of Sub Inspector and Fire Officer.",
-    "summary_hi": "उप निरीक्षक और अग्निशमन अधिकारी सीधी भर्ती 2020-21 के संबंध में न्यायालय के आदेश की सूचना।",
-    "title_en": "UP Police SI and Fire Officer 2020-21 Court Order Notice",
-    "title_hi": "उत्तर प्रदेश पुलिस उप निरीक्षक और अग्निशमन अधिकारी भर्ती न्यायालय आदेश सूचना",
-    "type": "Job",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -27,10 +13,10 @@
     "bytes": 473890,
     "pages": 1,
     "sha256": "56a1472ee71234360d6787f0e2532a4badfa3f28a7ff2d82b159d3dbbc8b8681",
-    "text_kind": "text"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "uppbpb-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "LATEST NOTICE: उप निरीक्षक नागरिक पुलिस, पीएसी प्लाटून कमाण्डर एवं अग्निशमन द्वितीय अधिकारी के पदों पर सीधी भर्ती-2020-21 विशेष अपील संख्याः 651/2026 में मा0 उच्च न्यायालय, इलाहाबाद द्वारा पारित निर्णय / आदेश दिनांकित 01-09-2026 (सम्बन्धित रिट याचिका ए-संख्याः 11427/2022 में पारित आदेश दिनांकित 29-0",
   "url": "https://uppbpb.gov.in/FilesUploaded/Notice/Vigyapti SICP_2020_21_DT_27_10_2026ca44a77c-4c05-4483-9ca3-8f42a16394b1.pdf"
 }
