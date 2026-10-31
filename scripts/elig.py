@@ -37,7 +37,11 @@ For each notice return:
 Answer with JSON: {"tags": [{"id": "...", "age_min": 18, "age_max": 27, "age_on": "2027-01-01", "relax": {"OBC": 3}, "qual": "graduate", "domicile": null}]}"""
 
 
+LOG = []
+
+
 def ai(user):
+    LOG.append(f"providers: {[p['name'] for p in _providers()]}")
     for prov in _providers():
         headers = {"Authorization": f"Bearer {prov['key']}", "Content-Type": "application/json", **prov.get("headers", {})}
         body = {"model": prov["model"], "temperature": 0, "response_format": {"type": "json_object"},
@@ -50,10 +54,12 @@ def ai(user):
                 r = requests.post(prov["url"], timeout=120, headers=headers, json=body)
             except requests.RequestException:
                 continue
+            LOG.append(f"{prov['name']}: HTTP {r.status_code} {r.text[:200]!r}" if r.status_code != 200 else f"{prov['name']}: HTTP 200")
             if r.status_code == 200:
                 try:
                     return _json_from(r.json()["choices"][0]["message"]["content"])
-                except Exception:  # noqa: BLE001
+                except Exception as e:  # noqa: BLE001
+                    LOG.append(f"parse failed: {type(e).__name__}: {r.text[:300]!r}")
                     break
             if r.status_code not in (429, 500, 502, 503):
                 break
@@ -111,6 +117,7 @@ def tag():
     todo.sort(key=lambda fn: str((fn[1].get("page") or {}).get("last_date") or "") >= today, reverse=True)
     if not todo:
         print("elig: nothing to tag")
+        LOG.append("nothing to tag")
         return
     for i in range(0, len(todo), 8):
         batch = todo[i:i + 8]
@@ -122,6 +129,7 @@ def tag():
         res = ai(json.dumps({"notices": items}, ensure_ascii=False))
         if not isinstance(res, dict):
             print("elig: AI unavailable, will continue next run")
+            LOG.append("AI unavailable")
             return
         tags = res.get("tags") if isinstance(res.get("tags"), list) else []
         got = {t.get("id"): t for t in tags if isinstance(t, dict)}
@@ -140,4 +148,7 @@ def tag():
 
 
 if __name__ == "__main__":
-    tag()
+    try:
+        tag()
+    finally:   # a short trace of the last run, committed with the data (helps when CI logs can't be read)
+        (ROOT / "data" / "debug-elig.txt").write_text(dt.datetime.utcnow().isoformat() + "\n" + "\n".join(LOG[-20:]) + "\n", encoding="utf-8")
