@@ -133,11 +133,11 @@ main { margin-top: 36px; flex: 1; }
 .fbar .chip .cx { all: unset; cursor: pointer; display: none; padding: 0 9px; color: var(--grey); border-left: 1px solid var(--line); }
 .fbar .chip .cx:hover { color: var(--ink); }
 .fbar .chip.on .cx { display: inline-flex; align-items: center; }
-.fbar.off { visibility: hidden; }
+.fbar .chip[hidden] { display: none; }
 .fbar .fcount { flex-basis: 100%; min-height: 1lh; margin: 4px 0 0 2px; color: var(--grey); }
 .fbar .fcount button { all: unset; cursor: pointer; color: var(--link, #1E6FD9); margin-left: 8px; }
 @media (max-width: 640px) { .fbar { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; } .fbar::-webkit-scrollbar { display: none; } .fbar .chip { flex: none; } .fbar .fcount { display: none; } }
-.hubh { font-size: 1rem; font-weight: 600; margin: 0 0 14px; }
+.hubh { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }   /* read by Google and screen readers, not shown */
 .tabrow { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 4px 18px; margin-bottom: 14px; }
 .tabrow .tabs { flex: 1 1 auto; margin-bottom: 0; }
 .tabs { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: 14px; position: relative; }
@@ -317,7 +317,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       <span class="ph" id="ph" aria-hidden="true" hidden><span class="ph-lead"></span><span class="ph-word"></span><span class="ph-caret"></span></span>
       <button type="button" class="sx" id="kHint" hidden><span data-t="clear">Clear</span><kbd class="kc" aria-hidden="true">Esc</kbd></button>
     </label>
-    <div class="fbar off" id="fbar">
+    <div class="fbar" id="fbar">
       <span class="chip" data-f="st"><label><span class="cl" data-t="fState">State</span><span class="cv" id="fStV"></span><select id="fSt" aria-label="State"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
       <span class="chip" data-f="q"><label><span class="cl" data-t="fQual">Qualification</span><span class="cv" id="fQV"></span><select id="fQ" aria-label="Qualification"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
       <span class="chip tog" data-f="me"><button type="button" id="fMe" class="tg" data-t="fMe">Only jobs I can apply for</button><button type="button" class="cx" aria-label="Clear">×</button></span>
@@ -343,7 +343,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   const T = {
     en: {
       title: "SarkariChart – Latest Govt Jobs, Admit Card, Result 2026 | सरकारी नौकरी", brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", logoAlt: "SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices", about: "About", show: "Show",
-      all: "All", jobs: "Jobs", soon: "Closing soon", prefSrc: "Add SarkariChart as a preferred source on Google", admits: "Admit cards", results: "Results", keys: "Answer keys", browse: "Jobs by state", fState: "State", fQual: "Qualification", fSort: "Sort", fMe: "Only jobs I can apply for", fAll: "All", fCentral: "Central (all India)", fNewest: "Newest", fClosing: "Last date first", fJobs: (n, a) => `${n} job${n === 1 ? "" : "s"}${a ? ` · ${a} with a last date ahead` : ""}`, fClear: "Clear filters", fNone: "No jobs match these filters.", exams: "Exams", hExam: "Exam", hUpdated: "Updated", hLatest: "Latest", hUpdates: "Updates", nUpd: n => `${n} update${n === 1 ? "" : "s"}`,
+      all: "All", jobs: "Jobs", soon: "Closing soon", prefSrc: "Add SarkariChart as a preferred source on Google", admits: "Admit cards", results: "Results", keys: "Answer keys", browse: "Jobs by state", fState: "State", fQual: "Qualification", fSort: "Sort", fMe: "Only jobs I can apply for", fAll: "All", fCentral: "Central (all India)", fNewest: "Newest", fClosing: "Last date first", fJobs: (n, a) => `${n} job${n === 1 ? "" : "s"}${a ? ` · ${a} with a last date ahead` : ""}`, fClear: "Clear filters", fNone: "Nothing matches these filters.", fOldest: "Oldest first", fItems: n => `${n} notice${n === 1 ? "" : "s"}`, exams: "Exams", hExam: "Exam", hUpdated: "Updated", hLatest: "Latest", hUpdates: "Updates", nUpd: n => `${n} update${n === 1 ? "" : "s"}`,
       searchLabel: "Search notices", showing: (a, b) => `Showing ${a} of ${b}`, showMore: n => `Show ${n} more`, phLead: "Search : ", searchPh: "Search : SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
       hPosted: "Posted", hNotice: "Notice", hOrg: "Organisation", hType: "Type", hLast: "Last date", hPostedR: "Posted", nil: "NIL", hPdf: "PDF",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
@@ -357,7 +357,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     },
     hi: {
       title: "सरकारी चार्ट – सरकारी नौकरी, एडमिट कार्ड, रिज़ल्ट 2026", logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में", show: "दिखाएँ",
-      all: "सभी", jobs: "नौकरियाँ", soon: "जल्द बंद", prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की", browse: "राज्य अनुसार नौकरी", fState: "राज्य", fQual: "योग्यता", fSort: "क्रम", fMe: "सिर्फ़ वे नौकरियाँ जिनमें मैं आवेदन कर सकूँ", fAll: "सभी", fCentral: "केंद्रीय (पूरा भारत)", fNewest: "नई पहले", fClosing: "अंतिम तिथि पहले", fJobs: (n, a) => `${n} नौकरियाँ${a ? ` · ${a} की अंतिम तिथि बाकी` : ""}`, fClear: "फ़िल्टर हटाएँ", fNone: "इन फ़िल्टर से कोई नौकरी नहीं मिली।", exams: "परीक्षाएँ", hExam: "परीक्षा", hUpdated: "अपडेट", hLatest: "ताज़ा", hUpdates: "अपडेट", nUpd: n => `${n} अपडेट`,
+      all: "सभी", jobs: "नौकरियाँ", soon: "जल्द बंद", prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की", browse: "राज्य अनुसार नौकरी", fState: "राज्य", fQual: "योग्यता", fSort: "क्रम", fMe: "सिर्फ़ वे नौकरियाँ जिनमें मैं आवेदन कर सकूँ", fAll: "सभी", fCentral: "केंद्रीय (पूरा भारत)", fNewest: "नई पहले", fClosing: "अंतिम तिथि पहले", fJobs: (n, a) => `${n} नौकरियाँ${a ? ` · ${a} की अंतिम तिथि बाकी` : ""}`, fClear: "फ़िल्टर हटाएँ", fNone: "इन फ़िल्टर से कुछ नहीं मिला।", fOldest: "पुरानी पहले", fItems: n => `${n} सूचनाएँ`, exams: "परीक्षाएँ", hExam: "परीक्षा", hUpdated: "अपडेट", hLatest: "ताज़ा", hUpdates: "अपडेट", nUpd: n => `${n} अपडेट`,
       searchLabel: "सूचनाएँ खोजें", showing: (a, b) => `${b} में से ${a} दिख रहीं`, showMore: n => `${n} और दिखाएँ`, phLead: "खोजें : ", searchPh: "खोजें : एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
       hPosted: "जारी", hNotice: "सूचना", hOrg: "संस्था", hType: "प्रकार", hLast: "अंतिम तिथि", hPostedR: "जारी", nil: "निरंक", hPdf: "पीडीएफ",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
@@ -630,7 +630,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   }
   // one row per exam with 2+ updates (written by scripts/exams.py build)
   // browse pages a search can point to (written by scripts/hubs.py build)
-  const HUBS = /*HUBS:START*/[{"slug": "up-govt-jobs", "en": "UP", "hi": "यूपी", "kind": "state", "words": ["up", "यूपी", "up"]}, {"slug": "bihar-govt-jobs", "en": "Bihar", "hi": "बिहार", "kind": "state", "words": ["bihar", "बिहार", "bihar"]}, {"slug": "rajasthan-govt-jobs", "en": "Rajasthan", "hi": "राजस्थान", "kind": "state", "words": ["rajasthan", "राजस्थान", "rajasthan"]}, {"slug": "mp-govt-jobs", "en": "MP", "hi": "एमपी", "kind": "state", "words": ["mp", "एमपी", "mp"]}, {"slug": "haryana-govt-jobs", "en": "Haryana", "hi": "हरियाणा", "kind": "state", "words": ["haryana", "हरियाणा", "haryana"]}, {"slug": "delhi-govt-jobs", "en": "Delhi", "hi": "दिल्ली", "kind": "state", "words": ["delhi", "दिल्ली", "delhi"]}, {"slug": "uttarakhand-govt-jobs", "en": "Uttarakhand", "hi": "उत्तराखंड", "kind": "state", "words": ["uttarakhand", "उत्तराखंड", "uttarakhand"]}, {"slug": "west-bengal-govt-jobs", "en": "West Bengal", "hi": "पश्चिम बंगाल", "kind": "state", "words": ["west bengal", "पश्चिम बंगाल", "west bengal"]}, {"slug": "10th-pass-govt-jobs", "en": "10th Pass", "hi": "10वीं पास", "kind": "qual", "words": ["10th", "10 pass", "10th pass", "matric", "high school", "10वीं", "हाईस्कूल"]}, {"slug": "12th-pass-govt-jobs", "en": "12th Pass", "hi": "12वीं पास", "kind": "qual", "words": ["12th", "12 pass", "12th pass", "inter", "intermediate", "12वीं", "इंटर"]}, {"slug": "iti-govt-jobs", "en": "ITI", "hi": "आईटीआई", "kind": "qual", "words": ["iti", "आईटीआई"]}, {"slug": "diploma-govt-jobs", "en": "Diploma", "hi": "डिप्लोमा", "kind": "qual", "words": ["diploma", "polytechnic", "डिप्लोमा"]}, {"slug": "graduate-govt-jobs", "en": "Graduate", "hi": "स्नातक", "kind": "qual", "words": ["graduate", "graduation", "degree", "ba", "bsc", "bcom", "स्नातक", "ग्रेजुएट"]}, {"slug": "post-graduate-govt-jobs", "en": "Post Graduate", "hi": "स्नातकोत्तर", "kind": "qual", "words": ["post graduate", "pg", "postgraduate", "ma", "msc", "mba", "स्नातकोत्तर"]}]/*HUBS:END*/;
+  const HUBS = /*HUBS:START*/[{"slug": "up-govt-jobs", "en": "UP", "hi": "यूपी", "kind": "state", "words": ["up", "यूपी", "up"]}, {"slug": "bihar-govt-jobs", "en": "Bihar", "hi": "बिहार", "kind": "state", "words": ["bihar", "बिहार", "bihar"]}, {"slug": "rajasthan-govt-jobs", "en": "Rajasthan", "hi": "राजस्थान", "kind": "state", "words": ["rajasthan", "राजस्थान", "rajasthan"]}, {"slug": "mp-govt-jobs", "en": "MP", "hi": "एमपी", "kind": "state", "words": ["mp", "एमपी", "mp"]}, {"slug": "haryana-govt-jobs", "en": "Haryana", "hi": "हरियाणा", "kind": "state", "words": ["haryana", "हरियाणा", "haryana"]}, {"slug": "delhi-govt-jobs", "en": "Delhi", "hi": "दिल्ली", "kind": "state", "words": ["delhi", "दिल्ली", "delhi"]}, {"slug": "uttarakhand-govt-jobs", "en": "Uttarakhand", "hi": "उत्तराखंड", "kind": "state", "words": ["uttarakhand", "उत्तराखंड", "uttarakhand"]}, {"slug": "west-bengal-govt-jobs", "en": "West Bengal", "hi": "पश्चिम बंगाल", "kind": "state", "words": ["west bengal", "पश्चिम बंगाल", "west bengal"]}, {"slug": "maharashtra-govt-jobs", "en": "Maharashtra", "hi": "महाराष्ट्र", "kind": "state", "words": ["maharashtra", "महाराष्ट्र", "maharashtra"]}, {"slug": "tamil-nadu-govt-jobs", "en": "Tamil Nadu", "hi": "तमिलनाडु", "kind": "state", "words": ["tamil nadu", "तमिलनाडु", "tamil nadu"]}, {"slug": "10th-pass-govt-jobs", "en": "10th Pass", "hi": "10वीं पास", "kind": "qual", "words": ["10th", "10 pass", "10th pass", "matric", "high school", "10वीं", "हाईस्कूल"]}, {"slug": "12th-pass-govt-jobs", "en": "12th Pass", "hi": "12वीं पास", "kind": "qual", "words": ["12th", "12 pass", "12th pass", "inter", "intermediate", "12वीं", "इंटर"]}, {"slug": "iti-govt-jobs", "en": "ITI", "hi": "आईटीआई", "kind": "qual", "words": ["iti", "आईटीआई"]}, {"slug": "diploma-govt-jobs", "en": "Diploma", "hi": "डिप्लोमा", "kind": "qual", "words": ["diploma", "polytechnic", "डिप्लोमा"]}, {"slug": "graduate-govt-jobs", "en": "Graduate", "hi": "स्नातक", "kind": "qual", "words": ["graduate", "graduation", "degree", "ba", "bsc", "bcom", "स्नातक", "ग्रेजुएट"]}, {"slug": "post-graduate-govt-jobs", "en": "Post Graduate", "hi": "स्नातकोत्तर", "kind": "qual", "words": ["post graduate", "pg", "postgraduate", "ma", "msc", "mba", "स्नातकोत्तर"]}]/*HUBS:END*/;
   let cat = "all", q = "";
   // search matches English and Hindi words alike, whichever language is showing
   const words = i => [i.title, i.hi, i.org, ORG_HI[i.org] || "", i.type, T.hi[i.type], i.tags || ""].join(" ").toLowerCase();
@@ -761,8 +761,11 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   if (window.SC_PRESET) F = Object.assign(F, window.SC_PRESET);   // a browse page opens with its own filter (not saved)
   else try { F = Object.assign(F, JSON.parse(localStorage.getItem("sc-jobf") || "{}")); } catch (e) {}
   const saveF = () => { try { localStorage.setItem("sc-jobf", JSON.stringify(F)); } catch (e) {} };
+  // State works on every tab; qualification and "only jobs I can apply for" only where the list is jobs.
+  const jobish = c => c === "Job" || c === "soon";
   function jobFilter(i) {
     if (F.st && (F.st === "central" ? !!i.st : i.st !== F.st)) return false;
+    if (!jobish(cat)) return true;
     // "I have 12th pass" shows jobs whose minimum is 10th or 12th; ITI / diploma jobs only for those who have them.
     // Jobs whose qualification is not known are left out of a qualification filter (no wrong matches).
     if (F.q && !(i.q && i.q.some(x => (QOK[F.q] || []).includes(x)))) return false;
@@ -772,22 +775,25 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     }
     return true;
   }
-  function paintFilters(rows, show) {
-    const bar = document.getElementById("fbar");
-    bar.classList.toggle("off", !show);   // other tabs keep the same space, so the list never jumps when switching
-    bar.inert = !show;                    // (the row is still filled in, so its height is identical on every tab)
+  function paintFilters(rows) {
+    const bar = document.getElementById("fbar"), jobs = jobish(cat);
+    bar.querySelector('[data-f="q"]').hidden = !jobs;      // only meaningful for job lists
+    bar.querySelector('[data-f="me"]').hidden = !jobs;
     const opt = (v, txt, sel) => `<option value="${v}"${sel ? " selected" : ""}>${esc(txt)}</option>`;
     const H = lang === "hi" ? 2 : 1;
     document.getElementById("fSt").innerHTML = opt("", t("fAll"), !F.st) + opt("central", t("fCentral"), F.st === "central") + STATES.map(s => opt(s[0], s[H], F.st === s[0])).join("");
     document.getElementById("fQ").innerHTML = opt("", t("fAll"), !F.q) + QS.map(x => opt(x[0], x[H], F.q === x[0])).join("");
-    document.getElementById("fSort").innerHTML = opt("", t("fNewest"), !F.sort) + opt("closing", t("fClosing"), F.sort === "closing");
+    // Sort: each tab's own order is the default; the other choices depend on the tab
+    const sorts = cat === "soon" ? [["", "fClosing"], ["newest", "fNewest"]] : jobs ? [["", "fNewest"], ["closing", "fClosing"], ["oldest", "fOldest"]] : [["", "fNewest"], ["oldest", "fOldest"]];
+    if (!sorts.some(x => x[0] === F.sort)) F.sort = "";
+    document.getElementById("fSort").innerHTML = sorts.map(x => opt(x[0], t(x[1]), F.sort === x[0])).join("");
     for (const id of ["fSt", "fQ", "fSort"]) { const el = document.getElementById(id); document.getElementById(id + "V").textContent = el.options[el.selectedIndex].text; }
     bar.querySelector('[data-f="st"]').classList.toggle("on", !!F.st);
     bar.querySelector('[data-f="q"]').classList.toggle("on", !!F.q);
     bar.querySelector('[data-f="me"]').classList.toggle("on", !!F.me);
     bar.querySelector('[data-f="sort"]').classList.toggle("on", !!F.sort);
-    const ahead = rows.filter(i => i.last && left(i.last) >= 0).length, any = F.st || F.q || F.me || F.sort;
-    document.getElementById("fcount").innerHTML = (rows.length ? esc(t("fJobs")(rows.length, ahead)) : esc(t("fNone"))) + (any ? `<button type="button" id="fClr">${esc(t("fClear"))}</button>` : "");
+    const ahead = rows.filter(i => i.last && left(i.last) >= 0).length, any = F.st || (jobs && (F.q || F.me)) || F.sort;
+    document.getElementById("fcount").innerHTML = (rows.length ? esc(jobs ? t("fJobs")(rows.length, ahead) : t("fItems")(rows.length)) : esc(t("fNone"))) + (any ? `<button type="button" id="fClr">${esc(t("fClear"))}</button>` : "");
   }
   (function wireFilters() {
     const bar = document.getElementById("fbar");
@@ -811,11 +817,11 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     const byNewest = (a, b) => b.posted.localeCompare(a.posted) || pubTime(b) - pubTime(a);
     const bySearch = (a, b) => searchRank(a) - searchRank(b) || titleScore(b) - titleScore(a) || (a.last || "9").localeCompare(b.last || "9") || b.posted.localeCompare(a.posted);
     const byClosing = (a, b) => a.last.localeCompare(b.last) || b.posted.localeCompare(a.posted);
-    const jobsView = cat === "Job";
     const byLastFirst = (a, b) => (a.last || "9999").localeCompare(b.last || "9999") || b.posted.localeCompare(a.posted);
-    const rows = allRows = ITEMS.filter(i => live(i) && inCat(i, cat) && qmatch(i) && (!jobsView || jobFilter(i)))
-      .sort(q ? bySearch : cat === "soon" ? byClosing : jobsView && F.sort === "closing" ? byLastFirst : byNewest);
-    paintFilters(rows, jobsView);   // Closing soon: nearest last date first (its first column); every other tab: newest official date first
+    const byOldest = (a, b) => -byNewest(a, b);
+    const order = q ? bySearch : F.sort === "closing" ? byLastFirst : F.sort === "oldest" ? byOldest : F.sort === "newest" ? byNewest : cat === "soon" ? byClosing : byNewest;
+    const rows = allRows = ITEMS.filter(i => live(i) && inCat(i, cat) && qmatch(i) && jobFilter(i)).sort(order);
+    paintFilters(rows);   // Closing soon: nearest last date first (its first column); every other tab: newest official date first
     const hits = ITEMS.filter(i => live(i) && (!q || qmatch(i)));
     document.querySelectorAll(".tabs button").forEach(b => {
       const soon = b.dataset.cat === "soon";
