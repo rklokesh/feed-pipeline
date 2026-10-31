@@ -121,13 +121,18 @@ main { margin-top: 36px; flex: 1; }
 .fbar .chip { display: inline-flex; align-items: stretch; border: 1px solid var(--line); border-radius: 8px; background: var(--page); box-shadow: 0 1px 2px rgba(0,0,0,.04); overflow: hidden; }
 .fbar .chip label { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; cursor: pointer; position: relative; }
 .fbar .chip .cl { color: var(--ink); }
-.fbar .chip select { all: unset; cursor: pointer; color: var(--grey); padding-right: 2px; field-sizing: content; max-width: 11rem; }
-.fbar .chip.on select, .fbar .chip.on .tg { color: var(--link, #1E6FD9); }
+.fbar .chip .cv { color: var(--grey); }
+.fbar .chip.on .cv { color: var(--link, #1E6FD9); }
+.fbar .chip select { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; font: inherit; border: 0; }
+.fbar .chip.on .tg { color: var(--link, #1E6FD9); }
 .fbar .chip .tg { all: unset; cursor: pointer; padding: 5px 10px; color: var(--ink); }
+.fbar .chip:hover { border-color: color-mix(in srgb, var(--grey) 45%, var(--line)); }
+.fbar .chip select:focus-visible + * , .fbar .chip label:focus-within { outline: 1px solid var(--ink); outline-offset: -1px; }
 .fbar .chip .cx { all: unset; cursor: pointer; display: none; padding: 0 9px; color: var(--grey); border-left: 1px solid var(--line); }
 .fbar .chip .cx:hover { color: var(--ink); }
 .fbar .chip.on .cx { display: inline-flex; align-items: center; }
-.fbar .fcount { flex-basis: 100%; margin: 4px 0 0 2px; color: var(--grey); }
+.fbar.off { visibility: hidden; }
+.fbar .fcount { flex-basis: 100%; min-height: 1lh; margin: 4px 0 0 2px; color: var(--grey); }
 .fbar .fcount button { all: unset; cursor: pointer; color: var(--link, #1E6FD9); margin-left: 8px; }
 @media (max-width: 640px) { .fbar { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; } .fbar::-webkit-scrollbar { display: none; } .fbar .chip { flex: none; } .fbar .fcount { display: none; } }
 .tabrow { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 4px 18px; margin-bottom: 14px; }
@@ -307,11 +312,11 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       <span class="ph" id="ph" aria-hidden="true" hidden><span class="ph-lead"></span><span class="ph-word"></span><span class="ph-caret"></span></span>
       <button type="button" class="sx" id="kHint" hidden><span data-t="clear">Clear</span><kbd class="kc" aria-hidden="true">Esc</kbd></button>
     </label>
-    <div class="fbar" id="fbar" hidden>
-      <span class="chip" data-f="st"><label><span class="cl" data-t="fState">State</span><select id="fSt" aria-label="State"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
-      <span class="chip" data-f="q"><label><span class="cl" data-t="fQual">Qualification</span><select id="fQ" aria-label="Qualification"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
+    <div class="fbar off" id="fbar">
+      <span class="chip" data-f="st"><label><span class="cl" data-t="fState">State</span><span class="cv" id="fStV"></span><select id="fSt" aria-label="State"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
+      <span class="chip" data-f="q"><label><span class="cl" data-t="fQual">Qualification</span><span class="cv" id="fQV"></span><select id="fQ" aria-label="Qualification"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
       <span class="chip tog" data-f="me"><button type="button" id="fMe" class="tg" data-t="fMe">Only jobs I can apply for</button><button type="button" class="cx" aria-label="Clear">×</button></span>
-      <span class="chip" data-f="sort"><label><span class="cl" data-t="fSort">Sort</span><select id="fSort" aria-label="Sort"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
+      <span class="chip" data-f="sort"><label><span class="cl" data-t="fSort">Sort</span><span class="cv" id="fSortV"></span><select id="fSort" aria-label="Sort"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
       <p class="fcount" id="fcount"></p>
     </div>
     <p class="newline off" id="newline" aria-live="polite">&nbsp;</p>
@@ -756,13 +761,14 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   }
   function paintFilters(rows, show) {
     const bar = document.getElementById("fbar");
-    bar.hidden = !show;
-    if (!show) return;
+    bar.classList.toggle("off", !show);   // other tabs keep the same space, so the list never jumps when switching
+    bar.inert = !show;                    // (the row is still filled in, so its height is identical on every tab)
     const opt = (v, txt, sel) => `<option value="${v}"${sel ? " selected" : ""}>${esc(txt)}</option>`;
     const H = lang === "hi" ? 2 : 1;
     document.getElementById("fSt").innerHTML = opt("", t("fAll"), !F.st) + opt("central", t("fCentral"), F.st === "central") + STATES.map(s => opt(s[0], s[H], F.st === s[0])).join("");
     document.getElementById("fQ").innerHTML = opt("", t("fAll"), !F.q) + QS.map(x => opt(x[0], x[H], F.q === x[0])).join("");
     document.getElementById("fSort").innerHTML = opt("", t("fNewest"), !F.sort) + opt("closing", t("fClosing"), F.sort === "closing");
+    for (const id of ["fSt", "fQ", "fSort"]) { const el = document.getElementById(id); document.getElementById(id + "V").textContent = el.options[el.selectedIndex].text; }
     bar.querySelector('[data-f="st"]').classList.toggle("on", !!F.st);
     bar.querySelector('[data-f="q"]').classList.toggle("on", !!F.q);
     bar.querySelector('[data-f="me"]').classList.toggle("on", !!F.me);
