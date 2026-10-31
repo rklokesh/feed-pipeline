@@ -265,3 +265,14 @@ publish.yml (when the owner adds a label to an issue, open or closed):
   re-encoded in transfer (hash changes) — check dimensions/frames instead.
 - Test every UI change in a headless browser (desktop + phone, EN + HI, light + dark) before pushing.
 - Keep this file current: copy to the Mac folder root (`Sarkari Chart/HANDOVER.md`) AND `docs/HANDOVER.md`.
+
+## 3f. Top links strip, universal filters, Hindi in one page (31 Oct 2026)
+- `.topbar` (site/index.html + templates/notice.html): sticky wrapper holding the Telegram announcement and the popular-links
+  strip (UP/Bihar/Rajasthan/MP jobs, 10th/12th/Graduate, Admit card/Result/Answer key). Closing the announcement leaves the
+  links at the very top. On phones the links scroll sideways.
+- Filters on every tab: Category (mirrors the tabs), State, Education, "Jobs I can apply for" (switches a non-job tab to Jobs),
+  Sort (Newest / Oldest / Last date first). hubs.py tag now tags education for admit cards, results and answer keys too
+  (jobs first); publish.py passes `q` for every type. Until the AI tags them, Education on non-job tabs shows few rows.
+- Hindi option B: one page per notice. Title = English h1 | Hindi h1; description = English + Hindi summary. A closed
+  `<details class="hidet" lang="hi">` holds the full Hindi copy (generated from the same sections), hidden in Hindi mode.
+  Phones set to Hindi open the site in Hindi automatically (until the reader picks a language).
