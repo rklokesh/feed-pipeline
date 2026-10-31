@@ -140,6 +140,10 @@ def groups(notices=None) -> dict:
     return {k: v for k, v in g.items() if len(v["items"]) >= MIN_NOTICES}
 
 
+def nd(n):
+    return n.get("notice_date") or (n.get("first_seen") or "")[:10]
+
+
 def d_en(iso):
     d = dt.date.fromisoformat(iso)
     return f"{d.day} {d.strftime('%b')} {d.year}"
@@ -194,6 +198,15 @@ def next_step(items: list):
     return best
 
 
+def series(key: str) -> str:
+    """ssc-cgl-2026 -> ssc-cgl: one permanent page per exam that collects every year (backlinks never split by year)."""
+    return re.sub(r"-20\d\d$", "", key)
+
+
+def strip_year(name: str) -> str:
+    return re.sub(r"\s*\b20\d\d\b", "", name or "").strip()
+
+
 def render(x: dict, board_exams: list) -> str:
     esc = html.escape
     js = lambda v: json.dumps("" if v is None else str(v), ensure_ascii=False)
@@ -208,6 +221,11 @@ def render(x: dict, board_exams: list) -> str:
           "lead": f'{x["name_hi"] or x["name_en"]} की हर आधिकारिक सूचना एक जगह, नई सबसे ऊपर। ताज़ा: {title_hi(latest)} ({d_hi(latest["notice_date"])})।',
           "tlH": "सभी अपडेट", "colDate": "तिथि", "colStage": "अपडेट", "glH": "मुख्य जानकारी (अधिसूचना से)", "relH": f"{org} की और परीक्षाएँ",
           "note": "जानकारी आधिकारिक सूचनाओं से ली गई है। कोई बात अलग हो, तो आधिकारिक सूचना को ही सही मानें।"}
+    series_html = ""
+    if series(x["key"]) != x["key"]:
+        en["serL"] = f'All years of {strip_year(x["name_en"])} →'
+        hi["serL"] = f'{strip_year(x["name_hi"] or x["name_en"])} के सभी वर्ष →'
+        series_html = f'<p class="exlink"><a href="/exam/{series(x["key"])}/" data-t="serL">{esc(en["serL"])}</a></p>'
     nxt, nxt_html = next_step(items), ""
     if nxt:   # only a date the board itself printed; labelled as such
         en["next"] = f"Next: {nxt[0]} — {d_en(nxt[2])} (as per the official notice)"
@@ -226,6 +244,7 @@ def render(x: dict, board_exams: list) -> str:
       <h1 data-t="h1">{esc(en["h1"])}</h1>
       <p class="lead" data-t="lead">{esc(en["lead"])}</p>
       {nxt_html}
+      {series_html}
       <span id="state" hidden></span><span id="left" hidden></span><span id="views" hidden></span>
     </div>''',
             f'    <section class="kv tl" id="updates" data-t-aria="tlH">\n      <div class="h" data-t="tlH">All updates</div>\n{rows}    </section>']
@@ -306,6 +325,73 @@ def homepage_data(g: dict):
     p.write_text(s, encoding="utf-8")
 
 
+def render_series(skey: str, years: list) -> str:
+    """Permanent exam page: the latest year's updates on top, then every year."""
+    esc = html.escape
+    js = lambda v: json.dumps("" if v is None else str(v), ensure_ascii=False)
+    years = sorted(years, key=lambda x: (x["key"], x["latest"]), reverse=True)
+    cur = years[0]
+    name_en, name_hi = strip_year(cur["name_en"]), strip_year(cur["name_hi"] or cur["name_en"])
+    org = cur["items"][0].get("org") or ""
+    en = {"h1": f"{name_en}: Notification, Admit Card, Result", "crumbType": "Exams", "org": org,
+          "lead": f'The latest is {cur["name_en"]}. Every official update for each year, newest first.',
+          "latH": f'Latest: {cur["name_en"]}', "allY": "All years", "more": f'All updates for {cur["name_en"]} →',
+          "note": "Details come from the official notices. If anything differs, the official notice is correct.",
+          "title": f"{name_en} Notification, Admit Card, Result – All Years | SarkariChart"}
+    hi = {"h1": f"{name_hi}: अधिसूचना, एडमिट कार्ड, रिज़ल्ट", "crumbType": "परीक्षाएँ", "org": org,
+          "lead": f'सबसे नई: {cur["name_hi"] or cur["name_en"]}। हर वर्ष की हर आधिकारिक सूचना, नई सबसे ऊपर।',
+          "latH": f'ताज़ा: {cur["name_hi"] or cur["name_en"]}', "allY": "सभी वर्ष", "more": f'{cur["name_hi"] or cur["name_en"]} के सभी अपडेट →',
+          "note": "जानकारी आधिकारिक सूचनाओं से ली गई है। कोई बात अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
+          "title": f"{name_hi}: सभी वर्ष | सरकारी चार्ट"}
+    nxt = next_step(cur["items"])
+    nxt_html = ""
+    if nxt:
+        en["next"] = f"Next: {nxt[0]} — {d_en(nxt[2])} (as per the official notice)"
+        hi["next"] = f"आगे: {nxt[1]} — {d_hi(nxt[2])} (आधिकारिक सूचना के अनुसार)"
+        nxt_html = f'<p class="next" data-t="next">{esc(en["next"])}</p>'
+    rows = ""
+    for k, n in enumerate(cur["items"][:6]):
+        te, th = stage(n)
+        en[f"i{k}"], hi[f"i{k}"] = title(n), title_hi(n)
+        en[f"t{k}"], hi[f"t{k}"] = te, th
+        en[f"d{k}"], hi[f"d{k}"] = d_en(nd(n)), d_hi(nd(n))
+        rows += (f'      <a class="r" href="/notice/{n["slug"]}/"><span class="num" data-t="d{k}">{esc(en[f"d{k}"])}</span>'
+                 f'<span class="v"><span data-t="i{k}">{esc(en[f"i{k}"])}</span> <small class="g" data-t="t{k}">{esc(te)}</small></span></a>\n')
+    yrows = ""
+    for k, y in enumerate(years):
+        en[f"y{k}"], hi[f"y{k}"] = y["name_en"], y["name_hi"] or y["name_en"]
+        en[f"yn{k}"], hi[f"yn{k}"] = f'{len(y["items"])} updates · {d_en(y["latest"])}', f'{len(y["items"])} अपडेट · {d_hi(y["latest"])}'
+        yrows += f'      <a class="r" href="/exam/{y["key"]}/"><span data-t="y{k}">{esc(en[f"y{k}"])}</span><span class="v g" data-t="yn{k}">{esc(en[f"yn{k}"])}</span></a>\n'
+    url = f"{SITE_URL}/exam/{skey}/"
+    main = f'''    <div class="title">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="/exam/" data-t="crumbType">Exams</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">{esc(org)}</span></nav>
+      <h1 data-t="h1">{esc(en["h1"])}</h1>
+      <p class="lead" data-t="lead">{esc(en["lead"])}</p>
+      {nxt_html}
+      <span id="state" hidden></span><span id="left" hidden></span><span id="views" hidden></span>
+    </div>
+    <section class="kv tl" data-t-aria="latH">
+      <div class="h" data-t="latH">{esc(en["latH"])}</div>
+{rows}      <a class="r" href="/exam/{cur["key"]}/"><span></span><span class="v" data-t="more">{esc(en["more"])}</span></a>
+    </section>
+    <section class="kv rel" data-t-aria="allY">
+      <div class="h" data-t="allY">All years</div>
+{yrows}    </section>
+    <div class="note"><p class="g" data-t="note">{esc(en["note"])}</p></div>
+    <a id="dlPdf" hidden></a><a id="share" hidden></a>'''
+    ld = [{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": f"{SITE_URL}/"},
+              {"@type": "ListItem", "position": 2, "name": "Exams", "item": f"{SITE_URL}/exam/"},
+              {"@type": "ListItem", "position": 3, "name": name_en, "item": url}]}]
+    main += '\n    <script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>"
+    tpl = TPL.read_text(encoding="utf-8")
+    return (tpl.replace("{{TITLE}}", esc(en["title"])).replace("{{DESC}}", esc(en["lead"][:158])).replace("{{MAIN}}", main)
+            .replace("{{T_EN}}", "\n".join(f"      {k}: {js(v)}," for k, v in en.items()))
+            .replace("{{T_HI}}", "\n".join(f"      {k}: {js(v)}," for k, v in hi.items()))
+            .replace("{{SLUG}}", "exam-" + skey).replace("{{OGIMG}}", f'{SITE_URL}/notice/{cur["items"][0]["slug"]}/og.png')
+            .replace("{{OGALT}}", esc(f"{name_en} — all years on SarkariChart")).replace("{{URL}}", url).replace("{{LAST}}", "null"))
+
+
 def build():
     g = groups()
     out = SITE / "exam"
@@ -321,6 +407,17 @@ def build():
         d.mkdir(exist_ok=True)
         (d / "index.html").write_text(render(x, by_board.get(x["items"][0].get("org"), [])), encoding="utf-8")
         live.add(x["key"])
+    by_series = {}
+    for x in g.values():
+        if series(x["key"]) != x["key"]:
+            by_series.setdefault(series(x["key"]), []).append(x)
+    for skey, years in by_series.items():
+        if skey in g:          # an exam key without a year already uses this address
+            continue
+        d = out / skey
+        d.mkdir(exist_ok=True)
+        (d / "index.html").write_text(render_series(skey, years), encoding="utf-8")
+        live.add(skey)
     for d in out.iterdir():          # exams that dropped below the threshold (e.g. a notice was rejected)
         if d.is_dir() and d.name not in live:
             for f in d.iterdir():
@@ -328,7 +425,7 @@ def build():
             d.rmdir()
     (out / "index.html").write_text(render_index(g), encoding="utf-8")
     homepage_data(g)
-    print(f"exams: {len(g)} exam pages")
+    print(f"exams: {len(g)} exam pages + {len(by_series)} permanent all-years pages")
 
 
 if __name__ == "__main__":
