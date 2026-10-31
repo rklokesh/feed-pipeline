@@ -131,6 +131,14 @@ publish.yml (when the owner adds a label to an issue, open or closed):
   and every year; yearly pages link up to it, so backlinks and ranking never split by year. 40 + 40 pages on 31 Oct.
 - **Press kit:** `/press/` (in info_pages.py; logo download, key facts).
 - **Employment News** turned off (no public job list). Exams tab removed from the homepage (30 Oct).
+- **Unreadable Hindi PDFs (31 Oct):** many MPPSC/UKPSC/RPSC/RSSB/UP Police PDFs use old non-Unicode Hindi fonts, so
+  their text came out as gibberish and pages missed vacancies, qualification and selection. `extract.looks_garbled()`
+  detects it; `reextract.yml` (every 6 h): the Mac downloads those PDFs (`reextract.py fetch`), a GitHub runner with
+  Hindi OCR reads them (`reextract.py ocr`), saves the text and marks approved notices `rewrite: true` (pages.py rewrites
+  them) or sends wrongly-skipped ones back to `pending_review`. 47 found on 31 Oct; 25 per run. The Mac has no Hindi OCR,
+  so new garbled PDFs are fixed by this job, not at watch time.
+- **At a glance always shows** total posts (+ category split), qualification and selection stages when the notice gives
+  them, even if the AI left them out of its rows (pages.py).
 
 ## 4. Board status (28 Oct 2026)
 
