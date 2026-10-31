@@ -24,6 +24,14 @@ MONTHS = {m: i for i, m in enumerate(
 
 # ---------- text ----------
 
+def looks_garbled(text: str) -> bool:
+    """Hindi PDFs set in old non-Unicode fonts (Kruti Dev and similar) come out as Latin gibberish full of ^ ~ | symbols."""
+    letters = sum(ch.isalpha() for ch in text) or 1
+    deva = len(re.findall(r"[\u0900-\u097F]", text))
+    odd = len(re.findall(r"[\^~`|\\{}<>■]", text))
+    return deva / letters < 0.02 and odd / max(len(text), 1) > 0.008
+
+
 def pdf_text(data: bytes, max_pages: int = 8) -> tuple[str, str, int]:
     """Return (text, kind, pages). kind = text | ocr | scanned | failed."""
     import pdfplumber
@@ -34,7 +42,12 @@ def pdf_text(data: bytes, max_pages: int = 8) -> tuple[str, str, int]:
             text = "\n".join((p.extract_text() or "") for p in pdf.pages[:max_pages])
     except Exception:  # noqa: BLE001
         return "", "failed", 0
-    if len(text.strip()) >= 200:
+    if len(text.strip()) >= 200 and not looks_garbled(text):
+        return text, "text", pages
+    if len(text.strip()) >= 200:            # unreadable old-font Hindi: read the page images instead
+        ocr = ocr_pdf(data, pages=4)
+        if len(ocr.strip()) >= 200 and not looks_garbled(ocr):
+            return ocr, "ocr-legacy-font", pages
         return text, "text", pages
     ocr = ocr_pdf(data, pages=2)
     return (ocr, "ocr", pages) if len(ocr.strip()) >= 200 else (text, "scanned", pages)

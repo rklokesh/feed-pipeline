@@ -261,6 +261,40 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
         en[f"r{k}l"], en[f"r{k}v"] = r["label_en"], r["value_en"]
         hi[f"r{k}l"], hi[f"r{k}v"] = r.get("label_hi") or r["label_en"], r.get("value_hi") or r["value_en"]
         rows.append((f"r{k}l", f"r{k}v"))
+    # The essentials always appear At a glance when the notice gives them, even if the AI left them out of its rows:
+    # total posts (with the category split), minimum qualification, selection stages.
+    labels = " ".join(str(r.get("label_en") or "").lower() for r in (pg.get("rows") or []) if isinstance(r, dict))
+    vac = [v for v in (pg.get("vacancies") or []) if isinstance(v, dict)]
+    nums = [re.sub(r"[^0-9]", "", str(v.get("total") or "")) for v in vac]
+    total = sum(int(x) for x in nums if x) if vac and all(nums) else None
+    total = total or (c.get("vacancies") if isinstance(c.get("vacancies"), int) and c.get("vacancies") > 0 else None)
+    if total and not re.search(r"vacanc|total post|no\.? of post|number of post", labels):
+        split_en = vac[0].get("detail_en") if len(vac) == 1 and vac[0].get("detail_en") else ""
+        split_hi = vac[0].get("detail_hi") if len(vac) == 1 and vac[0].get("detail_hi") else split_en
+        en["gTot"], hi["gTot"] = "Total vacancies", "कुल पद"
+        en["gTotV"], hi["gTotV"] = f"{total:,}" + (f" ({split_en})" if split_en else ""), f"{total:,}" + (f" ({split_hi})" if split_hi else "")
+        rows.insert(2, ("gTot", "gTotV"))
+    QN = {"10th": ("10th pass", "10वीं पास"), "12th": ("12th pass", "12वीं पास"), "iti": ("ITI", "आईटीआई"), "diploma": ("Diploma", "डिप्लोमा"),
+          "graduate": ("Graduate (any degree, see notice)", "स्नातक (सूचना देखें)"), "postgraduate": ("Post graduate", "स्नातकोत्तर")}
+    edu = next((e for e in (pg.get("eligibility") or []) if isinstance(e, dict) and re.search(r"educat|qualif", str(e.get("label_en")), re.I) and e.get("value_en")), None)
+    if not re.search(r"qualif|educat", labels):
+        if edu:
+            en["gQ"], hi["gQ"] = "Qualification", "योग्यता"
+            en["gQV"], hi["gQV"] = edu["value_en"], edu.get("value_hi") or edu["value_en"]
+            rows.append(("gQ", "gQV"))
+        elif (n.get("elig") or {}).get("qual") or (n.get("qual") or []):
+            q = (n.get("elig") or {}).get("qual") or n["qual"][0]
+            if q in QN:
+                en["gQ"], hi["gQ"] = "Minimum qualification", "न्यूनतम योग्यता"
+                en["gQV"], hi["gQV"] = QN[q]
+                rows.append(("gQ", "gQV"))
+    sel_en = [str(x).strip() for x in (pg.get("selection_en") or []) if str(x).strip()]
+    sel_hi = [str(x).strip() for x in (pg.get("selection_hi") or []) if str(x).strip()]
+    if sel_en and not re.search(r"selection", labels):
+        en["gSel"], hi["gSel"] = "Selection process", "चयन प्रक्रिया"
+        short = lambda xs: " → ".join(re.sub(r"\s*[:(].*$", "", x)[:40] for x in xs[:6])
+        en["gSelV"], hi["gSelV"] = short(sel_en), short(sel_hi) if len(sel_hi) == len(sel_en) else short(sel_en)
+        rows.append(("gSel", "gSelV"))
     fees = []
     for k, f in enumerate(pg.get("fees") or []):
         if f.get("cat_en") and f.get("amount"):
@@ -529,7 +563,7 @@ def main():
         # pages written before the full layout (no FAQ/intro) are upgraded a few per run, so the free AI quota
         # is never exhausted in one go; every 30-minute check upgrades the next few until all are done
         old_layout = n.get("page") and "share_card" not in n["page"]   # before the full article layout (Oct 2026)
-        need_ai = rebuild_all or not n.get("page") or (old_layout and backfill[0] > 0)
+        need_ai = rebuild_all or not n.get("page") or (old_layout and backfill[0] > 0) or bool(n.get("rewrite"))
         if old_layout and not rebuild_all and need_ai:
             backfill[0] -= 1
         if need_ai:
@@ -539,6 +573,7 @@ def main():
                 print(f"  {n['id']}: AI unavailable, page skipped this run")
                 continue
             n["page"] = page
+            n.pop("rewrite", None)
             n["editor_notes"] = notes
             for k in ("last_date", "exam_date"):
                 if page.get(k) and n.get("card") is not None:

@@ -1,0 +1,63 @@
+name: Re-read unreadable Hindi PDFs
+
+# Many state boards publish Hindi PDFs in old non-Unicode fonts; their text comes out as gibberish, so the AI can't see
+# vacancies, eligibility or dates. The Mac (Indian connection) downloads those PDFs; a GitHub runner with Hindi OCR reads
+# the page images and saves proper text; pages.py then rewrites those pages on its next run.
+on:
+  schedule:
+    - cron: "20 */6 * * *"      # every 6 hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: watch-data
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: [self-hosted, india]
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download the unreadable PDFs
+        run: |
+          export PATH="$HOME/.sarkarichart-venv/bin:$PATH"
+          rm -rf reread && python scripts/reextract.py fetch reread
+          ls reread | wc -l
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reread
+          path: reread/
+          if-no-files-found: ignore
+          retention-days: 2
+
+  ocr:
+    needs: fetch
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Hindi OCR
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-hin poppler-utils
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: reread
+          path: reread/
+      - name: Read them
+        run: mkdir -p reread && python scripts/reextract.py ocr reread
+      - name: Save
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data reports
+          git diff --cached --quiet && exit 0
+          git commit -m "Re-read unreadable Hindi PDFs $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 8; done
