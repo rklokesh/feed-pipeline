@@ -97,6 +97,12 @@ def decide(number: int, action: str):
     print(f"{n['id']}: {n['status']}")
 
 
+try:   # state of each board, for the Jobs tab filter (same list as the state pages)
+    from hubs import STATES as STATE_BOARDS
+except Exception:  # noqa: BLE001
+    STATE_BOARDS = []
+
+
 def build():
     items = []
     for f in sorted(NOTICES.glob("*.json")):
@@ -117,6 +123,12 @@ def build():
             it["url"], it["page"] = f"/notice/{n['slug']}/", True   # our own clean page (with PDF)
         if it["type"] == "Job" and c.get("last_date"):
             it["last"] = c["last_date"]
+        sid = n.get("source_id") or ""
+        for st_slug, _en, _hi, prefixes in STATE_BOARDS:
+            if any(sid == p_ or sid.startswith(p_ + "-") for p_ in prefixes):
+                it["st"] = st_slug
+        if it["type"] == "Job" and n.get("qual"):
+            it["q"] = n["qual"]
         el = n.get("elig") or {}
         if it["type"] == "Job" and (el.get("age_max") or el.get("age_min") or el.get("qual")):
             it["e"] = {k: v for k, v in {"min": el.get("age_min"), "max": el.get("age_max"), "on": el.get("age_on"), "relax": el.get("relax") or None,

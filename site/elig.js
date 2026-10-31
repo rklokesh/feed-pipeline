@@ -14,6 +14,28 @@
   const MONH = ["जनवरी", "फ़रवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितंबर", "अक्तूबर", "नवंबर", "दिसंबर"];
   const fd = iso => { const [y, m, d] = iso.split("-").map(Number); return hi() ? `${d} ${MONH[m - 1]} ${y}` : `${d} ${MON[m - 1]} ${y}`; };
 
+  // styles live here so the homepage and every notice page look the same (site colour tokens)
+  const css = document.createElement("style");
+  css.textContent = `
+    .eligbtn { all: unset; cursor: pointer; color: var(--grey); text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; white-space: nowrap; padding: 2px 0; }
+    .eligbtn:hover { color: var(--ink); }
+    .eok { display: inline-block; margin-right: 6px; color: var(--calm, #2E7D4F); font-weight: 600; }
+    #elig { display: flex; flex-wrap: wrap; gap: 2px 10px; align-items: baseline; }
+    #elig .er.yes { color: var(--calm, #2E7D4F); font-weight: 600; } #elig .er.no { color: var(--hot, #B23A1A); font-weight: 600; } #elig .er.maybe { font-weight: 600; }
+    #elig small { display: block; width: 100%; font-size: .92em; }
+    #elig .elink { all: unset; cursor: pointer; color: var(--ink); text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+    .eligdlg { border: 1px solid var(--line); border-radius: 10px; padding: 22px 24px; background: var(--page); color: var(--ink); max-width: 24rem; width: calc(100% - 32px); }
+    .eligdlg::backdrop { background: rgba(0,0,0,.35); }
+    .eligdlg h2 { font-size: 1.25rem; font-weight: 700; margin: 0 0 6px; }
+    .eligdlg p.g { margin: 0 0 16px; color: var(--grey); font-size: .95rem; }
+    .eligdlg label { display: grid; gap: 4px; margin-bottom: 14px; color: var(--grey); }
+    .eligdlg label.ck { display: flex; gap: 8px; align-items: center; color: var(--ink); }
+    .eligdlg input[type=date], .eligdlg select { font: inherit; color: var(--ink); background: var(--page); border: 1px solid var(--line); border-radius: 6px; padding: 7px 9px; }
+    .eligdlg .btns { display: flex; gap: 18px; margin: 6px 0 0; }
+    .eligdlg .btns button { all: unset; cursor: pointer; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; color: var(--ink); }
+    .eligdlg .btns button.g { color: var(--grey); }`;
+  document.head.appendChild(css);
+
   function load() { try { const v = JSON.parse(localStorage.getItem(KEY) || "null"); return v && v.dob ? v : null; } catch (e) { return null; } }
   function save(v) { try { v ? localStorage.setItem(KEY, JSON.stringify(v)) : localStorage.removeItem(KEY); } catch (e) {} }
   function ageOn(dob, on) {
@@ -104,8 +126,8 @@
   }
   function initHome() {
     const btn = document.getElementById("eligBtn"), list = document.getElementById("list");
-    if (!btn || !list) return;
-    btn.addEventListener("click", () => form(markList));
+    if (!list) return;
+    if (btn) btn.addEventListener("click", () => form(markList));
     // the list is re-drawn on every tab / search change: mark again (the ✓ goes inside rows, so this does not loop)
     new MutationObserver(markList).observe(list, { childList: true });
     new MutationObserver(markList).observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
@@ -130,7 +152,7 @@
     new MutationObserver(paint).observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
     paint();
   }
-  window.scElig = { check, load };
+  window.scElig = { check, load, form };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", () => { initHome(); initNotice(); });
   else { initHome(); initNotice(); }
 })();
