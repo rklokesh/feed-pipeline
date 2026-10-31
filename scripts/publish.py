@@ -117,6 +117,10 @@ def build():
             it["url"], it["page"] = f"/notice/{n['slug']}/", True   # our own clean page (with PDF)
         if it["type"] == "Job" and c.get("last_date"):
             it["last"] = c["last_date"]
+        el = n.get("elig") or {}
+        if it["type"] == "Job" and (el.get("age_max") or el.get("age_min") or el.get("qual")):
+            it["e"] = {k: v for k, v in {"min": el.get("age_min"), "max": el.get("age_max"), "on": el.get("age_on"), "relax": el.get("relax") or None,
+                                         "qual": el.get("qual"), "dom": el.get("domicile")}.items() if v}
         items.append(it)
     items.sort(key=lambda i: i["publishedAt"], reverse=True)
     html = INDEX.read_text(encoding="utf-8")

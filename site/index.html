@@ -117,6 +117,8 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 .row { display: grid; grid-template-columns: 7.25rem minmax(0, 1fr) 7.25rem 5.75rem 7.5rem 4.25rem; gap: 0 16px; align-items: baseline; }
 main { margin-top: 36px; flex: 1; }
 .head { color: var(--grey); background: var(--soft); padding: 7px 8px; border-bottom: 1px solid color-mix(in srgb, var(--ink) 28%, var(--page)); }
+.tabrow { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 4px 18px; margin-bottom: 14px; }
+.tabrow .tabs { flex: 1 1 auto; margin-bottom: 0; }
 .tabs { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: 14px; position: relative; }
 /* One stroke under the active tab; it slides to whichever tab you pick. */
 .tabs .ink { position: absolute; left: 0; top: 0; height: 1.5px; width: 0; background: var(--ink); border-radius: 1px; pointer-events: none; opacity: 0;
@@ -275,6 +277,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   </header>
 
   <main>
+    <div class="tabrow">
     <div class="tabs" role="group" data-t-aria="show">
       <button type="button" data-cat="all" aria-pressed="true"><span data-t="all">All</span><span class="c"></span></button>
       <button type="button" data-cat="Job" aria-pressed="false"><span data-t="jobs">Jobs</span><span class="c"></span></button>
@@ -283,6 +286,8 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       <button type="button" data-cat="Result" aria-pressed="false"><span data-t="results">Results</span><span class="c"></span></button>
       <button type="button" data-cat="Answer key" aria-pressed="false"><span data-t="keys">Answer keys</span><span class="c"></span></button>
       <span class="ink still" aria-hidden="true"></span>
+    </div>
+    <button type="button" id="eligBtn" class="eligbtn">Am I eligible?</button>
     </div>
     <label class="search" for="q"><span style="position:absolute;left:-9999px" data-t="searchLabel">Search notices</span>
       <svg class="sicon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 20.5 20.5"/></svg>
@@ -738,7 +743,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     hubHint();
     const showNl = false;   // "N new since your last visit" retired: New is now the same for everyone nl.classList.toggle("off", !showNl); nl.textContent = showNl ? t("sinceLast")(nNew) : "\u00a0";
     document.getElementById("list").innerHTML = rows.slice(0, shown).map(i =>
-      `<li class="lr${isNew(i) ? " fresh" : ""}"><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm"><span class="pc"><span>${soonView ? lastCell(i) : fmt(i.posted)}</span><span class="slot">${isNew(i) ? `<img class="newtag" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" width="23" height="14">` : ""}</span><span class="siren-r">${inCat(i, "soon") ? SIREN : ""}</span></span></span><span class="t" data-full="${esc(title(i))}">${inCat(i, "soon") ? SIREN.replace('class="rsiren"', 'class="rsiren show-sm"') : ""}${isNew(i) ? `<img class="newtag show-sm" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" width="23" height="14">` : ""}${esc(title(i))}</span><span class="hide-sm g cut" data-full="${esc(org(i) || "")}">${esc(org(i) || "")}</span><span class="hide-sm g cut" data-full="${esc(t(i.type))}">${t(i.type)}</span><span class="num" style="white-space:nowrap">${soonView ? `<span class="hide-sm g">${fmt(i.posted)}</span><span class="show-sm">${lastCell(i)}</span>` : lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
+      `<li class="lr${isNew(i) ? " fresh" : ""}"${i.e && i.type === "Job" && i.last && left(i.last) >= 0 ? ` data-e="${esc(JSON.stringify(i.e))}"` : ""}><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm"><span class="pc"><span>${soonView ? lastCell(i) : fmt(i.posted)}</span><span class="slot">${isNew(i) ? `<img class="newtag" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" width="23" height="14">` : ""}</span><span class="siren-r">${inCat(i, "soon") ? SIREN : ""}</span></span></span><span class="t" data-full="${esc(title(i))}">${inCat(i, "soon") ? SIREN.replace('class="rsiren"', 'class="rsiren show-sm"') : ""}${isNew(i) ? `<img class="newtag show-sm" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" width="23" height="14">` : ""}${esc(title(i))}</span><span class="hide-sm g cut" data-full="${esc(org(i) || "")}">${esc(org(i) || "")}</span><span class="hide-sm g cut" data-full="${esc(t(i.type))}">${t(i.type)}</span><span class="num" style="white-space:nowrap">${soonView ? `<span class="hide-sm g">${fmt(i.posted)}</span><span class="show-sm">${lastCell(i)}</span>` : lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
     ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
     // One long page, revealed 50 rows at a time (no "page 2"): Ctrl+F, search and the back button keep working.
     const more = document.getElementById("more");
@@ -988,5 +993,6 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
 </script>
 <button type="button" class="totop" id="totop" aria-label="Back to top" title="Back to top"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
 <script>(function(){var b=document.getElementById("totop"),hi=document.documentElement.lang==="hi";function lab(){var h=document.documentElement.lang==="hi";b.setAttribute("aria-label",h?"ऊपर जाएँ":"Back to top");b.title=h?"ऊपर जाएँ":"Back to top";}function f(){b.classList.toggle("on",scrollY>320);}addEventListener("scroll",f,{passive:true});f();new MutationObserver(lab).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});lab();b.addEventListener("click",function(){var still=matchMedia("(prefers-reduced-motion: reduce)").matches;scrollTo({top:0,behavior:still?"auto":"smooth"});});})();</script>
+<script src="/elig.js" defer></script>
 </body>
 </html>

@@ -284,6 +284,13 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
             links.append((key, u))
 
     esc = html.escape
+    # "Am I eligible?" row (filled in the browser by /elig.js from the reader's own details; nothing is sent anywhere)
+    el, elig_row = n.get("elig") or {}, ""
+    if typ == "Job" and (el.get("age_max") or el.get("age_min") or el.get("qual")):
+        e = {k: v for k, v in {"min": el.get("age_min"), "max": el.get("age_max"), "on": el.get("age_on"), "relax": el.get("relax") or None,
+                               "qual": el.get("qual"), "dom": el.get("domicile")}.items() if v}
+        en["eligL"], hi["eligL"] = "Are you eligible?", "क्या आप योग्य हैं?"
+        elig_row = f'      <div class="r"><span data-t="eligL">Are you eligible?</span><span class="v" id="elig" data-e="{esc(json.dumps(e, ensure_ascii=False))}"></span></div>\n'
     from share_card import board as _board
     logo_key = _board(n.get("source_id", ""))[0]
     logo_img = (f'<img class="olg" src="/org/{logo_key}.webp" width="64" height="64" alt="{esc(en["byV"])} logo" decoding="async">'
@@ -307,7 +314,7 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
     </div>''',
             '    <section class="kv glance" id="glance" data-t-aria="key">\n      <div class="h" data-t="key">At a glance</div>\n' +
             "".join(f'      <div class="r"><span data-t="{lk}">{esc(en[lk])}</span><span class="v" data-t="{vk}">{esc(en[vk])}</span></div>\n'
-                    for lk, vk in rows) + "    </section>"]
+                    for lk, vk in rows) + elig_row + "    </section>"]
     def fee_section():
         if not fees:
             return

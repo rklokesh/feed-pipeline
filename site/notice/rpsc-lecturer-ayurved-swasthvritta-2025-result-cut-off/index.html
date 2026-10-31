@@ -634,5 +634,6 @@ html[lang="hi"] .hisum { display: none; }
 </script>
 <button type="button" class="totop" id="totop" aria-label="Back to top" title="Back to top"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
 <script>(function(){var b=document.getElementById("totop"),hi=document.documentElement.lang==="hi";function lab(){var h=document.documentElement.lang==="hi";b.setAttribute("aria-label",h?"ऊपर जाएँ":"Back to top");b.title=h?"ऊपर जाएँ":"Back to top";}function f(){b.classList.toggle("on",scrollY>innerHeight*0.8);}addEventListener("scroll",f,{passive:true});f();new MutationObserver(lab).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});lab();b.addEventListener("click",function(){var still=matchMedia("(prefers-reduced-motion: reduce)").matches;scrollTo({top:0,behavior:still?"auto":"smooth"});});})();</script>
+<script src="/elig.js" defer></script>
 </body>
 </html>
