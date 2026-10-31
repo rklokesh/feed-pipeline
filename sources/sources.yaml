@@ -186,9 +186,12 @@ sources:
   # ---- Aggregated official sources ----
   - id: employment-news
     org: Employment News
-    url: https://employmentnews.gov.in/
+    url: https://employmentnews.gov.in/NewEmp/AllJobs.aspx?k=All
     render: js
     runner: india
+    # Off (31 Oct 2026): the free site has no readable job list (AllJobs is empty without the paid e-paper), and its
+    # job ads come from boards we already watch directly. Re-check if they publish a public list or feed.
+    enabled: false
   - id: ncs-home
     org: NCS
     url: https://www.ncs.gov.in/
