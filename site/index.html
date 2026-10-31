@@ -278,6 +278,17 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
 .tabs .siren img { width: 16px; height: 16px; display: block; }
 footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-left: 6px; vertical-align: -6px; }
 @media (prefers-reduced-motion: reduce) { footer .pref .hand { display: none; } }
+/* Announcement + popular links travel together at the top; with the announcement closed, the links sit at the very top */
+.topbar { position: sticky; top: 0; z-index: 30; }
+.topbar .strip { position: relative; top: auto; box-shadow: none; }
+.topbar .qlinks { position: relative; top: auto; box-shadow: 0 1px 12px color-mix(in srgb, var(--ink) 5%, transparent); }
+.qlinks { display: flex; justify-content: center; gap: 0 20px; min-height: 38px; align-items: center; padding: 0 16px;
+  margin: 0 calc(-1 * max(16px, env(safe-area-inset-right, 0px))) 0 calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
+  background: color-mix(in srgb, var(--page) 94%, transparent); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line); font-size: .875rem; }
+.qlinks a { color: var(--grey); white-space: nowrap; padding: 8px 0; }
+.qlinks a:hover { color: var(--ink); text-decoration: none; }
+@media (max-width: 640px) { .qlinks { justify-content: flex-start; overflow-x: auto; scrollbar-width: none; gap: 0 16px; } .qlinks::-webkit-scrollbar { display: none; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -286,8 +297,11 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
 <body>
 
 
+<div class="topbar">
 <div class="strip" id="strip" data-id="tg-channel-1" data-href="https://t.me/sarkarichart" role="region" aria-label="Announcement" hidden><svg class="wa" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11.5" fill="#29A9EB"/><path fill="#fff" d="M5.2 11.7 16.8 7.2c.5-.2 1 .1.8 .9l-2 9.3c-.1.6-.5.8-1 .5l-2.9-2.2-1.4 1.4c-.2.2-.3.3-.6.3l.2-3 5.4-4.9c.2-.2 0-.3-.3-.1l-6.7 4.2-2.9-.9c-.6-.2-.6-.6.1-.9z"/></svg><span id="stripText" data-en="Get every new govt job alert on Telegram, free." data-hi="हर नई सरकारी नौकरी की सूचना टेलीग्राम पर पाएँ, मुफ़्त।" data-en-s="Job alerts on Telegram, free." data-hi-s="नौकरी की सूचना टेलीग्राम पर, मुफ़्त।">Get every new govt job alert on Telegram, free.</span><a id="stripLink" class="cta" href="#" target="_blank" rel="noopener" data-en="Join the channel →" data-hi="चैनल से जुड़ें →" data-en-s="Join →" data-hi-s="जुड़ें →">Join the channel →</a><button type="button" class="strip-x" id="stripX" aria-label="Close" data-en="Close" data-hi="बंद करें"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
-<script>(function(){var s=document.getElementById("strip"),h=s.dataset.href,id=s.dataset.id,d=null;try{d=localStorage.getItem("sc-strip-closed")}catch(e){}if(!h||d===id)return; s.hidden=false; document.getElementById("stripLink").href=h;function lang(){var l=document.documentElement.lang==="hi"?"hi":"en",sm=matchMedia("(max-width: 640px)").matches;["stripText","stripLink"].forEach(function(k){var e=document.getElementById(k);e.textContent=(sm&&e.dataset[l+"S"])||e.dataset[l]});var x=document.getElementById("stripX");x.setAttribute("aria-label",x.dataset[l]);}try{if(localStorage.getItem("sc-lang")==="hi")document.documentElement.lang="hi"}catch(e){} lang();addEventListener("resize",lang);new MutationObserver(lang).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});document.getElementById("stripX").addEventListener("click",function(){s.hidden=true;try{localStorage.setItem("sc-strip-closed",id)}catch(e){}});})();</script>
+<script>(function(){var s=document.getElementById("strip"),h=s.dataset.href,id=s.dataset.id,d=null;try{d=localStorage.getItem("sc-strip-closed")}catch(e){}if(!h||d===id)return; s.hidden=false; document.getElementById("stripLink").href=h;function lang(){var l=document.documentElement.lang==="hi"?"hi":"en",sm=matchMedia("(max-width: 640px)").matches;["stripText","stripLink"].forEach(function(k){var e=document.getElementById(k);e.textContent=(sm&&e.dataset[l+"S"])||e.dataset[l]});var x=document.getElementById("stripX");x.setAttribute("aria-label",x.dataset[l]);}try{var sl=localStorage.getItem("sc-lang");if(sl==="hi"||(!sl&&/^hi\b/i.test(navigator.language||"")))document.documentElement.lang="hi"}catch(e){} lang();addEventListener("resize",lang);new MutationObserver(lang).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});document.getElementById("stripX").addEventListener("click",function(){s.hidden=true;try{localStorage.setItem("sc-strip-closed",id)}catch(e){}});})();</script>
+<nav class="qlinks" aria-label="Popular"><a href="/up-govt-jobs/" data-t="qlUp">UP Jobs</a> <a href="/bihar-govt-jobs/" data-t="qlBihar">Bihar Jobs</a> <a href="/rajasthan-govt-jobs/" data-t="qlRaj">Rajasthan Jobs</a> <a href="/mp-govt-jobs/" data-t="qlMp">MP Jobs</a> <a href="/10th-pass-govt-jobs/" data-t="ql10">10th Pass</a> <a href="/12th-pass-govt-jobs/" data-t="ql12">12th Pass</a> <a href="/graduate-govt-jobs/" data-t="qlGrad">Graduate</a> <a href="/?cat=admit-cards" data-t="qlAdmit">Admit Card</a> <a href="/?cat=results" data-t="qlRes">Result</a> <a href="/?cat=answer-keys" data-t="qlKey">Answer Key</a></nav>
+</div>
 <div class="sheet">
   <header class="top">
     <span class="g" data-t="tagline">Govt jobs, exams, results</span>
@@ -314,9 +328,10 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       <button type="button" class="sx" id="kHint" hidden><span data-t="clear">Clear</span><kbd class="kc" aria-hidden="true">Esc</kbd></button>
     </label>
     <div class="fbar" id="fbar">
+      <span class="chip" data-f="cat"><label><span class="cl" data-t="fCat">Category</span><span class="cv" id="fCatV"></span><select id="fCat" aria-label="Category"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
       <span class="chip" data-f="st"><label><span class="cl" data-t="fState">State</span><span class="cv" id="fStV"></span><select id="fSt" aria-label="State"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
-      <span class="chip" data-f="q"><label><span class="cl" data-t="fQual">Qualification</span><span class="cv" id="fQV"></span><select id="fQ" aria-label="Qualification"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
-      <span class="chip tog" data-f="me"><button type="button" id="fMe" class="tg" data-t="fMe">Only jobs I can apply for</button><button type="button" class="cx" aria-label="Clear">×</button></span>
+      <span class="chip" data-f="q"><label><span class="cl" data-t="fQual">Education</span><span class="cv" id="fQV"></span><select id="fQ" aria-label="Education"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
+      <span class="chip tog" data-f="me"><button type="button" id="fMe" class="tg" data-t="fMe">Jobs I can apply for</button><button type="button" class="cx" aria-label="Clear">×</button></span>
       <span class="chip" data-f="sort"><label><span class="cl" data-t="fSort">Sort</span><span class="cv" id="fSortV"></span><select id="fSort" aria-label="Sort"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
       <p class="fcount" id="fcount"></p>
     </div>
@@ -339,11 +354,11 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   const T = {
     en: {
       title: "SarkariChart – Latest Govt Jobs, Admit Card, Result 2026 | सरकारी नौकरी", brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", logoAlt: "SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices", about: "About", show: "Show",
-      all: "All", jobs: "Jobs", soon: "Closing soon", prefSrc: "Add SarkariChart as a preferred source on Google", admits: "Admit cards", results: "Results", keys: "Answer keys", browse: "Jobs by state", fState: "State", fQual: "Qualification", fSort: "Sort", fMe: "Only jobs I can apply for", fAll: "All", fCentral: "Central (all India)", fNewest: "Newest", fClosing: "Last date first", fJobs: (n, a) => `${n} job${n === 1 ? "" : "s"}${a ? ` · ${a} with a last date ahead` : ""}`, fClear: "Clear filters", fNone: "Nothing matches these filters.", fOldest: "Oldest first", fItems: n => `${n} notice${n === 1 ? "" : "s"}`, exams: "Exams", hExam: "Exam", hUpdated: "Updated", hLatest: "Latest", hUpdates: "Updates", nUpd: n => `${n} update${n === 1 ? "" : "s"}`,
+      all: "All", jobs: "Jobs", soon: "Closing soon", prefSrc: "Add SarkariChart as a preferred source on Google", admits: "Admit cards", results: "Results", keys: "Answer keys", browse: "Jobs by state", fState: "State", fCat: "Category", fQual: "Education", fSort: "Sort", fMe: "Jobs I can apply for", fAll: "All", fCentral: "Central (all India)", fNewest: "Newest", fClosing: "Last date first", fJobs: (n, a) => `${n} job${n === 1 ? "" : "s"}${a ? ` · ${a} with a last date ahead` : ""}`, fClear: "Clear filters", fNone: "Nothing matches these filters.", fOldest: "Oldest first", fItems: n => `${n} notice${n === 1 ? "" : "s"}`, exams: "Exams", hExam: "Exam", hUpdated: "Updated", hLatest: "Latest", hUpdates: "Updates", nUpd: n => `${n} update${n === 1 ? "" : "s"}`,
       searchLabel: "Search notices", showing: (a, b) => `Showing ${a} of ${b}`, showMore: n => `Show ${n} more`, phLead: "Search : ", searchPh: "Search : SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
       hPosted: "Posted", hNotice: "Notice", hOrg: "Organisation", hType: "Type", hLast: "Last date", hPostedR: "Posted", nil: "NIL", hPdf: "PDF",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
-      report: "Report a mistake", privacy: "Privacy", terms: "Terms", contact: "Contact", switchTo: "हिंदी", toDark: "Switch to dark mode", toLight: "Switch to light mode", switchLang: "hi",
+      report: "Report a mistake", privacy: "Privacy", qlUp: "UP Jobs", qlBihar: "Bihar Jobs", qlRaj: "Rajasthan Jobs", qlMp: "MP Jobs", ql10: "10th Pass", ql12: "12th Pass", qlGrad: "Graduate", qlAdmit: "Admit Card", qlRes: "Result", qlKey: "Answer Key", terms: "Terms", contact: "Contact", switchTo: "हिंदी", toDark: "Switch to dark mode", toLight: "Switch to light mode", switchLang: "hi",
       Job: "Job", Result: "Result", "Answer key": "Answer key", "Admit card": "Admit card",
       available: "Available", newBadge: "New", dToday: "Today", dYday: "Yesterday", dEarlier: "Earlier", sinceLast: n => `${n} new since your last visit`, inNotice: "In notice", lastDay: "Last day", pdfAria: "Download this notice as PDF",
       daysLeft: d => `${d} day${d === 1 ? "" : "s"} left`, daysShort: d => `${d} day${d === 1 ? "" : "s"}`,
@@ -353,11 +368,11 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     },
     hi: {
       title: "सरकारी चार्ट – सरकारी नौकरी, एडमिट कार्ड, रिज़ल्ट 2026", logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में", show: "दिखाएँ",
-      all: "सभी", jobs: "नौकरियाँ", soon: "जल्द बंद", prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की", browse: "राज्य अनुसार नौकरी", fState: "राज्य", fQual: "योग्यता", fSort: "क्रम", fMe: "सिर्फ़ वे नौकरियाँ जिनमें मैं आवेदन कर सकूँ", fAll: "सभी", fCentral: "केंद्रीय (पूरा भारत)", fNewest: "नई पहले", fClosing: "अंतिम तिथि पहले", fJobs: (n, a) => `${n} नौकरियाँ${a ? ` · ${a} की अंतिम तिथि बाकी` : ""}`, fClear: "फ़िल्टर हटाएँ", fNone: "इन फ़िल्टर से कुछ नहीं मिला।", fOldest: "पुरानी पहले", fItems: n => `${n} सूचनाएँ`, exams: "परीक्षाएँ", hExam: "परीक्षा", hUpdated: "अपडेट", hLatest: "ताज़ा", hUpdates: "अपडेट", nUpd: n => `${n} अपडेट`,
+      all: "सभी", jobs: "नौकरियाँ", soon: "जल्द बंद", prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की", browse: "राज्य अनुसार नौकरी", fState: "राज्य", fCat: "श्रेणी", fQual: "शिक्षा", fSort: "क्रम", fMe: "जिनमें मैं आवेदन कर सकूँ", fAll: "सभी", fCentral: "केंद्रीय (पूरा भारत)", fNewest: "नई पहले", fClosing: "अंतिम तिथि पहले", fJobs: (n, a) => `${n} नौकरियाँ${a ? ` · ${a} की अंतिम तिथि बाकी` : ""}`, fClear: "फ़िल्टर हटाएँ", fNone: "इन फ़िल्टर से कुछ नहीं मिला।", fOldest: "पुरानी पहले", fItems: n => `${n} सूचनाएँ`, exams: "परीक्षाएँ", hExam: "परीक्षा", hUpdated: "अपडेट", hLatest: "ताज़ा", hUpdates: "अपडेट", nUpd: n => `${n} अपडेट`,
       searchLabel: "सूचनाएँ खोजें", showing: (a, b) => `${b} में से ${a} दिख रहीं`, showMore: n => `${n} और दिखाएँ`, phLead: "खोजें : ", searchPh: "खोजें : एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
       hPosted: "जारी", hNotice: "सूचना", hOrg: "संस्था", hType: "प्रकार", hLast: "अंतिम तिथि", hPostedR: "जारी", nil: "निरंक", hPdf: "पीडीएफ",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
-      report: "गलती बताएँ", privacy: "गोपनीयता", terms: "नियम", contact: "संपर्क", switchTo: "अंग्रेज़ी", toDark: "गहरा रंग चुनें", toLight: "हल्का रंग चुनें", switchLang: "en",
+      report: "गलती बताएँ", privacy: "गोपनीयता", qlUp: "यूपी नौकरी", qlBihar: "बिहार नौकरी", qlRaj: "राजस्थान नौकरी", qlMp: "एमपी नौकरी", ql10: "10वीं पास", ql12: "12वीं पास", qlGrad: "स्नातक", qlAdmit: "एडमिट कार्ड", qlRes: "रिज़ल्ट", qlKey: "आंसर की", terms: "नियम", contact: "संपर्क", switchTo: "अंग्रेज़ी", toDark: "गहरा रंग चुनें", toLight: "हल्का रंग चुनें", switchLang: "en",
       Job: "नौकरी", Result: "रिज़ल्ट", "Answer key": "आंसर की", "Admit card": "एडमिट कार्ड",
       available: "उपलब्ध", newBadge: "नया", dToday: "आज", dYday: "कल", dEarlier: "पहले", sinceLast: n => `पिछली बार के बाद ${n} नई सूचनाएँ`, inNotice: "सूचना में देखें", lastDay: "आज अंतिम दिन", pdfAria: "यह सूचना पीडीएफ में डाउनलोड करें",
       daysLeft: d => `${d} दिन बाकी`, daysShort: d => `${d} दिन`,
@@ -368,7 +383,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   };
   const ORG_HI = /*ORGHI:START*/{"NTA": "एनटीए", "SSC": "एसएससी", "UPPSC": "यूपीपीएससी", "BPSC": "बीपीएससी", "SBI": "एसबीआई", "IBPS": "आईबीपीएस", "ISRO": "इसरो", "UPSC": "यूपीएससी", "RRB": "आरआरबी", "LIC": "एलआईसी", "BSSC": "बीएसएससी", "UPSSSC": "यूपीएसएसएससी", "RPSC": "आरपीएससी", "MPPSC": "एमपीपीएससी", "DSSSB": "डीएसएसएसबी", "NCS": "एनसीएस", "RRB Chandigarh": "आरआरबी चंडीगढ़", "RRB (unified portal)": "आरआरबी", "RBI": "आरबीआई", "NABARD": "नाबार्ड", "Indian Army": "भारतीय सेना", "Indian Navy": "भारतीय नौसेना", "Indian Air Force": "भारतीय वायुसेना", "Indian Coast Guard": "भारतीय तटरक्षक बल", "BSF": "बीएसएफ", "CRPF": "सीआरपीएफ", "ITBP": "आईटीबीपी", "CISF": "सीआईएसएफ", "India Post": "इंडिया पोस्ट", "DRDO": "डीआरडीओ", "RSSB Rajasthan": "आरएसएसबी राजस्थान", "MPESB": "एमपीईएसबी", "UKPSC": "यूकेपीएससी", "Employment News": "रोज़गार समाचार", "UP Police": "यूपी पुलिस", "CSBC Bihar": "सीएसबीसी बिहार", "RRC Northern Railway": "आरआरसी उत्तर रेलवे", "RRC Western Railway": "आरआरसी पश्चिम रेलवे", "RRC Central Railway": "आरआरसी मध्य रेलवे", "CTET": "सीटेट", "KVS": "केवीएस", "WBPSC": "डब्ल्यूबीपीएससी", "HPSC": "एचपीएससी", "HSSC": "एचएसएससी", "MPSC": "एमपीएससी", "TNPSC": "टीएनपीएससी"}/*ORGHI:END*/;
   let lang = "en";
-  try { if (localStorage.getItem("sc-lang") === "hi") lang = "hi"; } catch (e) {}
+  try { const saved = localStorage.getItem("sc-lang"); if (saved === "hi" || (!saved && /^hi\b/i.test(navigator.language || ""))) lang = "hi"; } catch (e) {}
   const t = k => T[lang][k];
 
   // Sample entries from the watcher's test runs (Oct 2026). Only extracted values; not verified.
@@ -761,10 +776,10 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   const jobish = c => c === "Job" || c === "soon";
   function jobFilter(i) {
     if (F.st && (F.st === "central" ? !!i.st : i.st !== F.st)) return false;
-    if (!jobish(cat)) return true;
     // "I have 12th pass" shows jobs whose minimum is 10th or 12th; ITI / diploma jobs only for those who have them.
     // Jobs whose qualification is not known are left out of a qualification filter (no wrong matches).
     if (F.q && !(i.q && i.q.some(x => (QOK[F.q] || []).includes(x)))) return false;
+    if (F.me && i.type !== "Job") return false;
     if (F.me && window.scElig) {
       const me = window.scElig.load(), r = me && window.scElig.check(i.e, me);
       if (!r || r.s === "no") return false;
@@ -773,38 +788,41 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   }
   function paintFilters(rows) {
     const bar = document.getElementById("fbar"), jobs = jobish(cat);
-    bar.querySelector('[data-f="q"]').hidden = !jobs;      // only meaningful for job lists
-    bar.querySelector('[data-f="me"]').hidden = !jobs;
     const opt = (v, txt, sel) => `<option value="${v}"${sel ? " selected" : ""}>${esc(txt)}</option>`;
+    const CATOPT = [["all", "all"], ["Job", "jobs"], ["soon", "soon"], ["Admit card", "admits"], ["Result", "results"], ["Answer key", "keys"]];
+    document.getElementById("fCat").innerHTML = CATOPT.map(x => opt(x[0], t(x[1]), cat === x[0])).join("");
+    bar.querySelector('[data-f="cat"]').classList.toggle("on", cat !== "all");
     const H = lang === "hi" ? 2 : 1;
     document.getElementById("fSt").innerHTML = opt("", t("fAll"), !F.st) + opt("central", t("fCentral"), F.st === "central") + STATES.map(s => opt(s[0], s[H], F.st === s[0])).join("");
     document.getElementById("fQ").innerHTML = opt("", t("fAll"), !F.q) + QS.map(x => opt(x[0], x[H], F.q === x[0])).join("");
     // Sort: each tab's own order is the default; the other choices depend on the tab
-    const sorts = cat === "soon" ? [["", "fClosing"], ["newest", "fNewest"]] : jobs ? [["", "fNewest"], ["closing", "fClosing"], ["oldest", "fOldest"]] : [["", "fNewest"], ["oldest", "fOldest"]];
+    const sorts = cat === "soon" ? [["", "fClosing"], ["newest", "fNewest"], ["oldest", "fOldest"]] : [["", "fNewest"], ["oldest", "fOldest"], ["closing", "fClosing"]];
     if (!sorts.some(x => x[0] === F.sort)) F.sort = "";
     document.getElementById("fSort").innerHTML = sorts.map(x => opt(x[0], t(x[1]), F.sort === x[0])).join("");
-    for (const id of ["fSt", "fQ", "fSort"]) { const el = document.getElementById(id); document.getElementById(id + "V").textContent = el.options[el.selectedIndex].text; }
+    for (const id of ["fCat", "fSt", "fQ", "fSort"]) { const el = document.getElementById(id); document.getElementById(id + "V").textContent = el.options[el.selectedIndex].text; }
     bar.querySelector('[data-f="st"]').classList.toggle("on", !!F.st);
     bar.querySelector('[data-f="q"]').classList.toggle("on", !!F.q);
     bar.querySelector('[data-f="me"]').classList.toggle("on", !!F.me);
     bar.querySelector('[data-f="sort"]').classList.toggle("on", !!F.sort);
-    const ahead = rows.filter(i => i.last && left(i.last) >= 0).length, any = F.st || (jobs && (F.q || F.me)) || F.sort;
+    const ahead = rows.filter(i => i.last && left(i.last) >= 0).length, any = cat !== "all" || F.st || F.q || F.me || F.sort;
     document.getElementById("fcount").innerHTML = (rows.length ? esc(jobs ? t("fJobs")(rows.length, ahead) : t("fItems")(rows.length)) : esc(t("fNone"))) + (any ? `<button type="button" id="fClr">${esc(t("fClear"))}</button>` : "");
   }
   (function wireFilters() {
     const bar = document.getElementById("fbar");
     const set = (k, v) => { F[k] = v; saveF(); shown = PAGE; render(); };
+    document.getElementById("fCat").addEventListener("change", e => { setCat(e.target.value); shown = PAGE; render(); });
     document.getElementById("fSt").addEventListener("change", e => set("st", e.target.value));
     document.getElementById("fQ").addEventListener("change", e => set("q", e.target.value));
     document.getElementById("fSort").addEventListener("change", e => set("sort", e.target.value));
     document.getElementById("fMe").addEventListener("click", () => {
       if (F.me) return set("me", false);
+      if (!jobish(cat) && cat !== "all") setCat("Job");
       if (window.scElig && !window.scElig.load()) return window.scElig.form(() => { if (window.scElig.load()) set("me", true); });
       set("me", true);
     });
     bar.addEventListener("click", e => {
-      const x = e.target.closest(".cx"); if (x) { const k = x.closest(".chip").dataset.f; set(k, k === "me" ? false : ""); return; }
-      if (e.target.closest("#fClr")) { F = { st: "", q: "", me: false, sort: "" }; saveF(); shown = PAGE; render(); }
+      const x = e.target.closest(".cx"); if (x) { const k = x.closest(".chip").dataset.f; if (k === "cat") { setCat("all"); shown = PAGE; render(); return; } set(k, k === "me" ? false : ""); return; }
+      if (e.target.closest("#fClr")) { F = { st: "", q: "", me: false, sort: "" }; saveF(); setCat("all"); shown = PAGE; render(); }
     });
   })();
   function render() {
@@ -1001,6 +1019,11 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     if (startQ) { const qi = document.getElementById("q"); qi.value = startQ; q = startQ.trim().toLowerCase(); }
     // ?cat=jobs|closing-soon|admit-cards|results|answer-keys opens that tab (used by notice-page breadcrumbs)
     const CATS = { jobs: "Job", "closing-soon": "soon", "admit-cards": "Admit card", results: "Result", "answer-keys": "Answer key" };
+    document.querySelector(".qlinks").addEventListener("click", e => {
+      const a = e.target.closest('a[href^="/?cat="]'); if (!a || window.SC_PRESET) return;
+      const c = CATS[new URL(a.href).searchParams.get("cat")]; if (!c) return;
+      e.preventDefault(); document.querySelector(`.tabs button[data-cat="${c}"]`)?.click(); history.replaceState(null, "", a.getAttribute("href"));
+    });
     const startCat = window.SC_PRESET ? "Job" : CATS[new URL(location.href).searchParams.get("cat")];
     if (startCat) requestAnimationFrame(() => document.querySelector(`.tabs button[data-cat="${startCat}"]`)?.click());
   } catch (e) {}

@@ -468,10 +468,6 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
         toc.append(("faq", "faqH"))
         main.append(f'    <section class="kv faq" id="faq" data-t-aria="faqH">\n      <div class="h" data-t="faqH">Frequently asked questions</div>\n{body}    </section>')
     sec_list("chkH", "Final checklist", "अंतिम चेकलिस्ट", pg.get("checklist_en"), pg.get("checklist_hi"), ordered=False)
-    if S(pg.get("intro_hi")) or S(pg.get("summary_hi")):
-        # for readers on the English page who are more at home in Hindi; hidden when the page is already in Hindi
-        hs = " ".join(x for x in [S(pg.get("summary_hi")), S(pg.get("intro_hi"))] if x)
-        main.append(f'    <section class="kv hisum" lang="hi">\n      <div class="h">हिंदी में सारांश</div>\n      <p class="p">{esc(hs)}</p>\n    </section>')
     if len(toc) >= 4:
         en["tocH"], hi["tocH"] = "On this page", "इस पेज पर"
         items = "".join(f'<li><a href="#{a_}" data-t="{k_}">{esc(en[k_])}</a></li>' for a_, k_ in toc)
@@ -528,20 +524,35 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
         ld.append(jp)
     main.append('    <script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>")
     wa = ('<svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>')
+    # Full Hindi copy of the article, built into the same page so Google can read the Hindi too (one page per notice, no
+    # duplicate URL). Closed by default; hidden when the reader has already switched the page to Hindi.
+    def to_hi(h):
+        h = "\n".join(x for x in h.split("\n") if 'id="elig"' not in x)   # the eligibility check lives in the main copy
+        h = re.sub(r'data-t="([^"]+)">([^<]*)<', lambda m: f'>{esc(str(hi.get(m.group(1), m.group(2))))}<', h)
+        return re.sub(r'\s(?:id|data-t-aria|data-t)="[^"]*"', "", h)
+    hi_secs = [to_hi(x) for x in main[1:] if 'class="kv' in x and 'class="kv rel' not in x]
+    if hi_secs and hi.get("h1") and hi["h1"] != en["h1"]:
+        lead = f'      <p class="lead">{esc(hi["summary"])}</p>\n' if hi.get("summary") and hi["summary"] != en["summary"] else ""
+        main.append(f'    <details class="hidet" lang="hi">\n      <summary>हिंदी में पूरी जानकारी पढ़ें</summary>\n'
+                    f'      <h2 class="hih">{esc(hi["h1"])}</h2>\n{lead}' + "\n".join(hi_secs) + "\n    </details>")
     main.append(f'''    <div class="note">
       <p class="g" data-t="checked">{esc(en["checked"])}</p>
       <p class="actions"><a class="share" id="share" href="#">{wa}<span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/{slug}/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
     </div>''')
 
     tpl = TEMPLATE.read_text(encoding="utf-8")
+    if hi["h1"] != en["h1"]:   # Google title in both languages, so Hindi searches find the same page
+        en["title"] = f'{en["h1"]} | {hi["h1"]}'
     for d_, brand in ((en, "SarkariChart"), (hi, "सरकारी चार्ट")):   # browser tab / Google title: heading + brand when it fits
         if len(f'{d_["title"]} | {brand}') <= 72:
             d_["title"] = f'{d_["title"]} | {brand}'
     t_en = "\n".join(f"      {k}: {js(v)}," for k, v in en.items())
     t_hi = "\n".join(f"      {k}: {js(v)}," for k, v in hi.items())
-    desc = (en["summary"] or en["h1"])
-    if len(desc) > 158:
-        desc = desc[:155].rsplit(" ", 1)[0] + "…"
+    cut = lambda t, k: t if len(t) <= k else t[:k - 1].rsplit(" ", 1)[0] + "…"
+    desc = cut(en["summary"] or en["h1"], 158)
+    hd = hi.get("summary") or ""
+    if hd and hd != en.get("summary"):   # English + Hindi in the Google snippet
+        desc = cut(en["summary"] or en["h1"], 100) + " | " + cut(hd, 110)
     out = (tpl.replace("{{TITLE}}", esc(en["title"])).replace("{{DESC}}", esc(desc)).replace("{{MAIN}}", "\n".join(main))
            .replace("{{T_EN}}", t_en).replace("{{T_HI}}", t_hi).replace("{{SLUG}}", slug)
            .replace("{{OGIMG}}", f"{SITE_URL}/notice/{slug}/og.png").replace("{{OGALT}}", esc(f"{en['h1']} — {en['org']} {typ} notice summary card by SarkariChart")).replace("{{URL}}", f"{SITE_URL}/notice/{slug}/")

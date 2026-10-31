@@ -60,6 +60,9 @@ PROMPT = """For each Indian government job notice, give the minimum educational 
 Use only these tags: "10th", "12th", "iti", "diploma", "graduate", "postgraduate". If different posts in one notice need different
 levels, list each level (e.g. ["10th","iti"]). 8th-pass posts count as "10th". A degree in any subject or a professional degree
 (B.Tech, MBBS, LLB, B.Ed) is "graduate"; a master's/PhD/MD is "postgraduate". Use [] when the notice does not say.
+For an admit card, result, answer key or exam schedule, give the qualification asked for the posts of that exam (the
+recruitment it belongs to), using the notice and your knowledge of that recruitment only when the posts are clearly named
+(e.g. SSC CGL -> graduate, RRB Group D -> 10th, ITI). Use [] when unsure.
 Answer with JSON: {"tags": [{"id": "...", "qual": ["..."]}]}"""
 
 
@@ -101,7 +104,8 @@ def ai(user):
 
 
 def tag():
-    todo = [(f, n) for f, n in load() if n.get("status") == "approved" and is_job(n) and "qual" not in n]
+    todo = [(f, n) for f, n in load() if n.get("status") == "approved" and "qual" not in n]
+    todo.sort(key=lambda fn: not is_job(fn[1]))   # jobs first
     if not todo:
         print("hubs: nothing to tag")
         return
@@ -112,7 +116,7 @@ def tag():
             pg = n.get("page") or {}
             elig = [f'{e.get("label_en")}: {e.get("value_en")}' for e in (pg.get("eligibility") or []) if isinstance(e, dict)]
             rows = [f'{r.get("label_en")}: {r.get("value_en")}' for r in (pg.get("rows") or []) if isinstance(r, dict) and re.search(r"qualif|educat|eligib", str(r.get("label_en")), re.I)]
-            items.append({"id": n["id"], "title": title(n), "posts": (n.get("card") or {}).get("posts"), "education": (elig + rows)[:6]})
+            items.append({"id": n["id"], "type": (n.get("card") or {}).get("type"), "title": title(n), "posts": (n.get("card") or {}).get("posts"), "education": (elig + rows)[:6]})
         res = ai(json.dumps({"notices": items}, ensure_ascii=False))
         if not res:
             print("hubs: AI unavailable, will tag next run")
@@ -123,7 +127,7 @@ def tag():
                 continue
             n["qual"] = sorted({q for q in (got[n["id"]].get("qual") or []) if q in TAGS}, key=TAGS.index)
             f.write_text(json.dumps(n, ensure_ascii=False, indent=2, sort_keys=True))
-        print(f"hubs: tagged {len(batch)} job notices")
+        print(f"hubs: tagged {len(batch)} notices")
 
 
 def nd(n):

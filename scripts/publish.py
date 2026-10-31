@@ -127,7 +127,7 @@ def build():
         for st_slug, _en, _hi, prefixes in STATE_BOARDS:
             if any(sid == p_ or sid.startswith(p_ + "-") for p_ in prefixes):
                 it["st"] = st_slug
-        if it["type"] == "Job" and n.get("qual"):
+        if n.get("qual"):
             it["q"] = n["qual"]
         el = n.get("elig") or {}
         if it["type"] == "Job" and (el.get("age_max") or el.get("age_min") or el.get("qual")):
