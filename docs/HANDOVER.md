@@ -145,6 +145,15 @@ publish.yml (when the owner adds a label to an issue, open or closed):
   their own title/description/canonical + a small heading. Exam timelines live on notice pages as "All updates for
   <exam>" (pages.py, uses `exams.groups`); `/exam/` pages, `/govt-jobs/` index and the footer Exams / Jobs-by-state links
   are gone. Exam tagging and qualification tagging continue as before.
+- **Filters on every tab (31 Oct):** chip row under the search box on all tabs: State + Sort everywhere; Qualification and
+  "Only jobs I can apply for" on Jobs / Closing soon. Browse-page heading is visually hidden (still in the HTML for Google
+  and screen readers). Opened notices no longer change colour (tried grey / red / softer; removed on the owner's call).
+- **Competitor SEO (sahisarkarijobs.in, launched 2026, ~739k clicks / 6 months):** WordPress, `/job/<slug>/` posts of
+  3–5k words with question-style headings, FAQ, "Analyst's Take"; taxonomy hubs (`/state/`, `/qualification/`,
+  `/organisation/`, `/designation/`); ~30 calculators; daily current affairs; preferred-source CTA, WhatsApp/Telegram.
+  Wins on long-tail small/mid recruitments. Gaps: no admit card / result / answer key pages, little Hindi, accuracy slips
+  (counts that don't add up, PDFs on CloudFront, stale "days left"). Our edge: full lifecycle, real Hindi, official
+  PDFs only, accuracy, speed.
 
 ## 4. Board status (28 Oct 2026)
 
