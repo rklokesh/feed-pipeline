@@ -333,10 +333,15 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
     en["metaV"] = f"Updated {d_en(checked)}" + (f" · Source: {src_host}" if src_host else "")
     hi["metaV"] = f"अपडेट {d_hi(checked)}" + (f" · स्रोत: {src_host}" if src_host else "")
     exam_g = (exam_groups or {}).get(((n.get("exam") or {}).get("key")) or "")
+    n_other = len([x for x in exam_g["items"] if x["id"] != n["id"]]) if exam_g else 0
+    if n_other:   # one quiet line near the top that jumps to "All updates for <exam>" at the bottom
+        en["exJump"] = f'{n_other} more update{"s" if n_other > 1 else ""} for {exam_g["name_en"]}\u00a0↓'
+        hi["exJump"] = f'{exam_g["name_hi"] or exam_g["name_en"]} के {n_other} और अपडेट\u00a0↓'
     main = [f'''    <div class="title">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat={CAT_SLUG.get(typ, "jobs")}" data-t="crumbType">{esc(en["crumbType"])}</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">{esc(en["org"])}</span></nav>
       <h1 data-t="h1">{esc(en["h1"])}</h1>
       <p class="meta g" data-t="metaV">{esc(en["metaV"])}</p>
+      {f'<p class="exjump"><a href="#exam" data-t="exJump">{esc(en["exJump"])}</a></p>' if n_other else ""}
       <p class="status"><span id="state">{esc(en["statusV"])}</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       {f'<p class="lead" data-t="summary">{esc(en["summary"])}</p>' if en["summary"] else ""}
       <img class="ogimg" id="ogimg" src="/notice/{slug}/og.png" data-en="/notice/{slug}/og.png" data-hi="/notice/{slug}/og-hi.png" width="1200" height="675" alt="{esc(en["h1"])} — summary card" decoding="async" onerror="this.hidden=true">
