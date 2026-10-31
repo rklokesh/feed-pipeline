@@ -108,6 +108,15 @@ def clean(t: dict) -> dict:
     return out
 
 
+def sane(e: dict, n: dict) -> dict:
+    """Drop an as-on date that cannot belong to this notice (e.g. a 2018 date quoted from an old rule)."""
+    issued = (n.get("notice_date") or n.get("first_seen") or "")[:10]
+    if e.get("age_on") and issued:
+        if abs(int(e["age_on"][:4]) - int(issued[:4])) > 1:
+            e["age_on"] = None
+    return e
+
+
 def tag():
     files = [(f, json.loads(f.read_text())) for f in sorted(NOTICES.glob("*.json"))]
     today = dt.date.today().isoformat()
@@ -139,7 +148,7 @@ def tag():
             if n["id"] not in got:
                 continue
             try:
-                n["elig"] = clean(got[n["id"]])
+                n["elig"] = sane(clean(got[n["id"]]), n)
             except Exception as e:  # noqa: BLE001 — one odd answer must never stop the run
                 print(f"  elig: {n['id']} skipped ({type(e).__name__})")
                 n["elig"] = {}
