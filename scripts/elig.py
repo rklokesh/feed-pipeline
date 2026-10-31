@@ -87,7 +87,8 @@ def clean(t: dict) -> dict:
     except ValueError:
         on = None
     relax = {}
-    for k, v in (t.get("relax") or {}).items():
+    raw = t.get("relax") if isinstance(t.get("relax"), dict) else {}
+    for k, v in raw.items():
         try:
             v = int(float(v))
         except (TypeError, ValueError):
@@ -119,14 +120,20 @@ def tag():
             items.append({"id": n["id"], "title": pg.get("h1_en"), "age_rows": pg.get("age"), "eligibility": pg.get("eligibility"),
                           "pdf_excerpts": age_text(n)})
         res = ai(json.dumps({"notices": items}, ensure_ascii=False))
-        if not res:
+        if not isinstance(res, dict):
             print("elig: AI unavailable, will continue next run")
             return
-        got = {t.get("id"): t for t in res.get("tags", []) if isinstance(t, dict)}
+        tags = res.get("tags") if isinstance(res.get("tags"), list) else []
+        got = {t.get("id"): t for t in tags if isinstance(t, dict)}
         for f, n in batch:
-            if n["id"] in got:
+            if n["id"] not in got:
+                continue
+            try:
                 n["elig"] = clean(got[n["id"]])
-                f.write_text(json.dumps(n, ensure_ascii=False, indent=2, sort_keys=True))
+            except Exception as e:  # noqa: BLE001 — one odd answer must never stop the run
+                print(f"  elig: {n['id']} skipped ({type(e).__name__})")
+                n["elig"] = {}
+            f.write_text(json.dumps(n, ensure_ascii=False, indent=2, sort_keys=True))
         print(f"elig: tagged {len(batch)} job notices")
         if i >= 40:          # at most ~48 per run, so one run never uses up the free AI quota
             break
