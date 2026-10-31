@@ -1,6 +1,20 @@
 {
   "board_url": "https://psc.uk.gov.in/candidate-corner/recruitment",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "सहायक भू-वैज्ञानिक, खान अधिकारी, सहायक रसायनज्ञ",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Document is a checklist format for certificate verification, not a job advertisement",
+    "summary_en": "Checklist of documents and certificates required for verification for the 2026 examination.",
+    "summary_hi": "वर्ष 2026 की परीक्षा के लिए आवश्यक दस्तावेजों और प्रमाण पत्रों की जाँच सूची।",
+    "title_en": "UKPSC Assistant Geologist, Mining Officer and Chemist Exam 2026",
+    "title_hi": "उत्तराखंड लोक सेवा आयोग सहायक भूवैज्ञानिक, खान अधिकारी एवं सहायक रसायनज्ञ परीक्षा 2026",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +30,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "ukpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "444453022.pdf",
   "url": "https://psc.uk.gov.in/public/uploads/recruitment/444453022.pdf"
 }

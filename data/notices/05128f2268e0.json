@@ -1,6 +1,20 @@
 {
   "board_url": "https://psc.uk.gov.in/candidate-corner/recruitment",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Lower Subordinate Services",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "cancellation list of candidates for an exam",
+    "summary_en": "UKPSC has released the list of candidates whose candidature has been cancelled for the Combined State Lower Subordinate Exam 2024.",
+    "summary_hi": "उत्तराखण्ड लोक सेवा आयोग ने सम्मिलित राज्य अवर अधीनस्थ सेवा परीक्षा 2024 के लिए अभ्यर्थन निरस्त किए गए अभ्यर्थियों की सूची जारी कर दी है।",
+    "title_en": "UKPSC Combined State Lower Subordinate Exam 2024 Candidature Cancellation List",
+    "title_hi": "उत्तराखण्ड सम्मिलित राज्य अवर अधीनस्थ सेवा परीक्षा 2024 अभ्यर्थन निरस्त सूची",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +30,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "ukpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "581827454.pdf",
   "url": "https://psc.uk.gov.in/public/uploads/recruitment/581827454.pdf"
 }

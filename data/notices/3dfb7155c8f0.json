@@ -1,6 +1,20 @@
 {
   "board_url": "https://mppsc.mp.gov.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "सहायक प्राध्यापक",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal notice regarding rejection of objections against candidature cancellation for an exam",
+    "summary_en": "Notice regarding the resolution of objections received from candidates whose candidature was cancelled for the Assistant Professor Yogik Vigyan Examination 2025.",
+    "summary_hi": "सहायक प्राध्यापक योगिक विज्ञान परीक्षा 2025 के लिए उम्मीदवारी निरस्त किए गए आवेदकों से प्राप्त आपत्तियों के निराकरण से संबंधित सूचना।",
+    "title_en": "MPPSC Assistant Professor Yogik Vigyan Exam 2025 Objection Notice",
+    "title_hi": "मध्य प्रदेश लोक सेवा आयोग सहायक प्राध्यापक योगिक विज्ञान परीक्षा आपत्ति सूचना",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +30,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "mppsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "सहायक प्राध्‍यापक (योगिक विज्ञान) परीक्षा - 2025 के पद हेतु उम्‍मीदवारी निरस्‍त किए आवेदक से प्राप्‍त आपत्ति अभ्‍यावेदन का निराकरण किए जाने की सूचना, दिनांक 27/10/2026",
   "url": "https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_Yogik_Vigyan_Exam_2025_Dated_27_10_2026.pdf"
 }

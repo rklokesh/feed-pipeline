@@ -1,12 +1,30 @@
 {
+  "auto_published": true,
   "board_url": "https://psc.uk.gov.in/candidate-corner/recruitment",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "प्रवक्ता",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "UKPSC issued a notice regarding the Lecturer Cadre Examination 2025 stating that the final selection result for all 16 subjects will be declared together after all exams are completed.",
+    "summary_hi": "उत्तराखंड लोक सेवा आयोग ने प्रवक्ता संवर्ग परीक्षा 2025 के संबंध में सूचना जारी की है कि सभी 16 विषयों की परीक्षाएं आयोजित होने के बाद अंतिम चयन परिणाम एक साथ घोषित किया जाएगा।",
+    "title_en": "UKPSC Lecturer Cadre Examination 2025 Notice",
+    "title_hi": "उत्तराखंड प्रवक्ता संवर्ग परीक्षा 2025 सूचना",
+    "type": "Job",
+    "vacancies": 856
+  },
+  "exam": {},
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-22T19:37:47+00:00",
   "id": "1b83515b9b2a",
+  "issue": 189,
+  "issue_tidy": true,
   "kind": "other",
   "org": "UKPSC",
   "pdf": {
@@ -15,8 +33,10 @@
     "sha256": "51ee90e7f0aae3ad638c9a080e30aebe974fe383d351aa20f8f78cfabc40e9bb",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-10-31T15:18:42Z",
+  "qual": [],
   "source_id": "ukpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1433940324.pdf",
   "url": "https://psc.uk.gov.in/public/uploads/recruitment/1433940324.pdf"
 }

@@ -11,8 +11,8 @@
     "skip_reason": "",
     "summary_en": "Rajasthan Public Service Commission has released the reserve list and cutoff marks for the Lecturer Swasthvritta Exam 2025.",
     "summary_hi": "राजस्थान लोक सेवा आयोग ने लेक्चरर स्वास्थवृत्त परीक्षा 2025 के लिए आरक्षित सूची और कटऑफ अंक जारी कर दिए हैं।",
-    "title_en": "RPSC Lecturer Ayurved Swasthvritta 2025 Reserve List Declared",
-    "title_hi": "आरपीएससी लेक्चरर आयुर्वेद स्वास्थवृत्त 2025 आरक्षित सूची जारी",
+    "title_en": "RPSC Lecturer Ayurved Swasthvritta Result 2025 – Reserve List Out",
+    "title_hi": "आरपीएससी लेक्चरर आयुर्वेद स्वास्थवृत्त 2025 रिज़ल्ट – आरक्षित सूची जारी",
     "type": "Result",
     "vacancies": 1
   },
@@ -35,10 +35,10 @@
   "org": "RPSC",
   "page": {
     "after_en": [
-      "The commission will recommend the selected candidate's name for appointment upon receiving a requisition from the department."
+      "The commission may recommend the candidate's name for appointment when a requisition is received from the department within the prescribed time."
     ],
     "after_hi": [
-      "विभाग से मांग प्राप्त होने पर आयोग चयनित उम्मीदवार का नाम नियुक्ति हेतु अभिस्तावित करेगा।"
+      "विभाग द्वारा निर्धारित समय में मांग प्राप्त होने पर आयोग अभ्यर्थी का नाम नियुक्ति के लिए भेज सकेगा।"
     ],
     "age": [],
     "apply_start": null,
@@ -46,48 +46,32 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check the official RPSC website for the result notice.",
-      "Verify your roll number and merit rank in the reserve list.",
-      "Check the cutoff marks and date of birth criteria."
+      "Check official result PDF for roll number 1005590",
+      "Verify category cutoff and date of birth criteria"
     ],
     "checklist_hi": [
-      "परिणाम नोटिस के लिए आधिकारिक आरपीएससी वेबसाइट देखें।",
-      "आरक्षित सूची में अपना रोल नंबर और मेरिट रैंक जांचें।",
-      "कटऑफ अंक और जन्मतिथि मानदंड देखें।"
+      "रोल नंबर 1005590 के लिए आधिकारिक परिणाम पीडीएफ देखें",
+      "श्रेणी कटऑफ और जन्म तिथि मानदंडों की जांच करें"
     ],
     "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
     "conducted_by_hi": "राजस्थान लोक सेवा आयोग (RPSC)",
     "dates": [
       {
-        "label_en": "Consideration list date",
-        "label_hi": "विचारित सूची तिथि",
-        "value_en": "03 Jul 2026",
-        "value_hi": "03 जुलाई 2026"
-      },
-      {
-        "label_en": "Result and cutoff date",
-        "label_hi": "परिणाम एवं कटऑफ तिथि",
+        "label_en": "Result Declaration Date",
+        "label_hi": "परिणाम घोषणा की तिथि",
         "value_en": "26 Oct 2026",
-        "value_hi": "26 अक्तूबर 2026"
+        "value_hi": "26 अक्टू 2026"
       }
     ],
-    "documents_en": [
-      "Photo ID proof",
-      "Academic qualification certificates",
-      "Document verification application form"
-    ],
-    "documents_hi": [
-      "फोटो पहचान पत्र",
-      "शैक्षणिक योग्यता प्रमाण पत्र",
-      "दस्तावेज सत्यापन आवेदन पत्र"
-    ],
+    "documents_en": [],
+    "documents_hi": [],
     "eligibility": [],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is a reserve list of candidates prepared after document verification for the Lecturer Ayurved Swasthvritta 2025 examination conducted by the Rajasthan Public Service Commission.",
-        "a_hi": "यह राजस्थान लोक सेवा आयोग द्वारा आयोजित लेक्चरर आयुर्वेद स्वास्थवृत्त 2025 परीक्षा के लिए दस्तावेज सत्यापन के बाद तैयार की गई उम्मीदवारों की आरक्षित सूची है।",
+        "a_en": "It is a reserve list released by the Rajasthan Public Service Commission containing the roll number and cutoff marks of candidates shortlisted for recommendation after document verification.",
+        "a_hi": "यह राजस्थान लोक सेवा आयोग द्वारा जारी एक आरक्षित सूची है जिसमें दस्तावेज सत्यापन के बाद संस्तुति के लिए शॉर्टलिस्ट किए गए अभ्यर्थी का रोल नंबर और कटऑफ अंक शामिल हैं।",
         "q_en": "What is the RPSC Lecturer Ayurved Swasthvritta Reserve List?",
         "q_hi": "आरपीएससी लेक्चरर आयुर्वेद स्वास्थवृत्त आरक्षित सूची क्या है?"
       }
@@ -95,54 +79,55 @@
     "extra": [
       {
         "label_en": "General (UR) Cut Off Marks",
-        "label_hi": "सामान्य कटऑफ अंक",
-        "value_en": "69.80 (DOB: 04-04-1986)",
-        "value_hi": "69.80 (जन्मतिथि: 04-04-1986)"
+        "label_hi": "सामान्य (अनारक्षित) कट ऑफ अंक",
+        "value_en": "69.80",
+        "value_hi": "69.80"
+      },
+      {
+        "label_en": "Cut Off Date of Birth",
+        "label_hi": "कट ऑफ जन्म तिथि",
+        "value_en": "04-04-1986",
+        "value_hi": "04-04-1986"
       }
     ],
     "faq": [
       {
         "a_en": "The reserve list was released on 26 October 2026.",
-        "a_hi": "आरक्षित सूची 26 अक्तूबर 2026 को जारी की गई।",
-        "q_en": "When was the RPSC Lecturer Ayurved Swasthvritta 2025 reserve list released?",
-        "q_hi": "आरपीएससी लेक्चरर आयुर्वेद स्वास्थवृत्त 2025 आरक्षित सूची कब जारी की गई?"
+        "a_hi": "आरक्षित सूची 26 अक्टूबर 2026 को जारी की गई थी।",
+        "q_en": "When was the RPSC Lecturer Ayurved Swasthvritta Reserve List released?",
+        "q_hi": "आरपीएससी लेक्चरर आयुर्वेद स्वास्थवृत्त आरक्षित सूची कब जारी की गई?"
       },
       {
-        "a_en": "Total 1 candidate is included in the reserve list.",
-        "a_hi": "आरक्षित सूची में कुल 1 उम्मीदवार शामिल है।",
-        "q_en": "How many candidates are included in the reserve list?",
-        "q_hi": "आरक्षित सूची में कितने उम्मीदवार शामिल हैं?"
+        "a_en": "Total 1 candidate has been selected in the reserve list.",
+        "a_hi": "आरक्षित सूची में कुल 1 अभ्यर्थी का चयन हुआ है।",
+        "q_en": "How many candidates are selected in the RPSC Lecturer Swasthvritta reserve list?",
+        "q_hi": "आरपीएससी लेक्चरर स्वास्थवृत्त आरक्षित सूची में कुल कितने अभ्यर्थी चयनित हुए हैं?"
       },
       {
-        "a_en": "The general category cutoff marks are 69.80.",
-        "a_hi": "सामान्य वर्ग के कटऑफ अंक 69.80 हैं।",
-        "q_en": "What is the general category cutoff for Lecturer Swasthvritta?",
-        "q_hi": "लेक्चरर स्वास्थवृत्त के लिए सामान्य वर्ग का कटऑफ क्या है?"
-      },
-      {
-        "a_en": "The examination was conducted for the Ayurved Department by RPSC.",
-        "a_hi": "यह परीक्षा आरपीएससी द्वारा आयुर्वेद विभाग के लिए आयोजित की गई थी।",
-        "q_en": "Which department conducted this examination?",
-        "q_hi": "यह परीक्षा किस विभाग के लिए आयोजित की गई थी?"
+        "a_en": "The General (UR) category cutoff marks is 69.80.",
+        "a_hi": "सामान्य (अनारक्षित) श्रेणी के कटऑफ अंक 69.80 हैं।",
+        "q_en": "What is the General category cutoff for RPSC Lecturer Swasthvritta 2025?",
+        "q_hi": "आरपीएससी लेक्चरर स्वास्थवृत्त 2025 के लिए सामान्य श्रेणी का कटऑफ क्या है?"
       }
     ],
     "fees": [],
-    "h1_en": "RPSC Lecturer Ayurved Swasthvritta 2025 Reserve List Declared",
-    "h1_hi": "आरपीएससी लेक्चरर आयुर्वेद स्वास्थवृत्त 2025 आरक्षित सूची जारी",
+    "h1_en": "RPSC Lecturer Ayurved Swasthvritta Result 2025 – Reserve List Out",
+    "h1_hi": "आरपीएससी लेक्चरर आयुर्वेद स्वास्थवृत्त 2025 रिज़ल्ट – आरक्षित सूची जारी",
+    "hindi_notice_url": null,
     "how_en": [
       "Visit the official RPSC website.",
-      "Go to the News and Events or Results section.",
-      "Click on the link for Lecturer Ayurved Swasthvritta 2025 Reserve List.",
-      "Download and check your roll number and cutoff marks."
+      "Go to the News and Events or Result section.",
+      "Click on the reserve list link for Lecturer Ayurved Dept 2025 (Swasthvritta).",
+      "Check your roll number and cutoff marks in the PDF."
     ],
     "how_hi": [
       "आरपीएससी की आधिकारिक वेबसाइट पर जाएं।",
-      "न्यूज एंड इवेंट्स या रिजल्ट सेक्शन में जाएं।",
-      "लेक्चरर आयुर्वेद स्वास्थवृत्त 2025 आरक्षित सूची के लिंक पर क्लिक करें।",
-      "अपना रोल नंबर और कटऑफ अंक डाउनलोड कर देखें।"
+      "न्यूज एंड इवेंट्स या रिज़ल्ट सेक्शन में जाएं।",
+      "लेक्चरर आयुर्वेद विभाग 2025 (स्वास्थवृत्त) की आरक्षित सूची के लिंक पर क्लिक करें।",
+      "पीडीएफ में अपना रोल नंबर और कटऑफ अंक जांचें।"
     ],
-    "intro_en": "The Rajasthan Public Service Commission (RPSC) has released the reserve list and cutoff marks for the Lecturer (Swasthvritta) competitive examination 2025 under the Ayurved, Yoga and Naturopathy, Unani, Siddha and Homoeopathy (AYUSH) Department. Document verification was conducted for candidates from the earlier consideration list, following which the final reserve list has been prepared. One candidate has been provisionally declared successful as per the service rules. The commission may recommend the candidate's name for appointment upon receiving a requisition from the department within the specified time.",
-    "intro_hi": "राजस्थान लोक सेवा आयोग (RPSC) ने आयुर्वेद, योग एवं प्राकृतिक चिकित्सा, यूनानी, सिद्धा एवं होम्योपैथी (आयुष) विभाग के अंतर्गत लेक्चरर (स्वास्थवृत्त) प्रतियोगी परीक्षा 2025 के लिए आरक्षित सूची और कटऑफ अंक जारी कर दिए हैं। पूर्व में जारी विचाराधीन सूची के उम्मीदवारों की पात्रता जांच और दस्तावेज सत्यापन के बाद यह आरक्षित सूची तैयार की गई है। सेवा नियमों के अनुसार एक उम्मीदवार को सफल घोषित किया गया है। विभाग से निर्धारित समय में मांग प्राप्त होने पर आयोग द्वारा इस उम्मीदवार का नाम नियुक्ति हेतु अभिस्तावित किया जा सकेगा।",
+    "intro_en": "Rajasthan Public Service Commission (RPSC) has published the reserve list and cutoff marks for the Lecturer (Swasthvritta) competitive exam 2025 under the Ayurved Department. Document verification and eligibility checking were conducted for candidates provisionally included in the consideration list. Based on the verification, one candidate has been successfully declared in the reserve list with merit rank. Candidates can check their roll number and category cutoff marks in the official notice.",
+    "intro_hi": "राजस्थान लोक सेवा आयोग (RPSC) ने आयुर्वेद विभाग के अंतर्गत लेक्चरर (स्वास्थवृत्त) प्रतियोगी परीक्षा 2025 के लिए आरक्षित सूची और कटऑफ अंक जारी कर दिए हैं। विचारित सूची में शामिल अभ्यर्थियों की पात्रता जांच और दस्तावेज सत्यापन के बाद, आरक्षित सूची में एक अभ्यर्थी को सफल घोषित किया गया है।",
     "last_date": null,
     "mistakes_en": [],
     "mistakes_hi": [],
@@ -154,34 +139,40 @@
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Post name",
+        "label_en": "Post Name",
         "label_hi": "पद का नाम",
         "value_en": "Lecturer (Swasthvritta)",
         "value_hi": "लेक्चरर (स्वास्थवृत्त)"
       },
       {
-        "label_en": "Total selected candidates",
-        "label_hi": "कुल चयनित उम्मीदवार",
-        "value_en": "01",
-        "value_hi": "01"
+        "label_en": "Department",
+        "label_hi": "विभाग",
+        "value_en": "Ayurved, Yoga and Naturopathy, Unani, Siddha and Homoeopathy (AYUSH) Department",
+        "value_hi": "आयुर्वेद, योग व प्राकृतिक चिकित्सा, यूनानी, सिद्धा एवं होम्योपैथी (आयुष) विभाग"
       },
       {
-        "label_en": "Result date",
-        "label_hi": "परिणाम तिथि",
-        "value_en": "26 Oct 2026",
-        "value_hi": "26 अक्तूबर 2026"
+        "label_en": "Exam Year",
+        "label_hi": "परीक्षा वर्ष",
+        "value_en": "2025",
+        "value_hi": "2025"
+      },
+      {
+        "label_en": "Total Candidates Selected",
+        "label_hi": "कुल चयनित अभ्यर्थी",
+        "value_en": "1",
+        "value_hi": "1"
       }
     ],
     "salary": [],
     "selection_en": [
-      "Competitive Examination",
+      "Written Examination",
       "Consideration List & Document Verification",
-      "Reserve List / Recommendation for Appointment"
+      "Reserve List Declaration"
     ],
     "selection_hi": [
-      "प्रतियोगी परीक्षा",
-      "विचारित सूची एवं दस्तावेज सत्यापन",
-      "आरक्षित सूची / नियुक्ति हेतु संस्तुति"
+      "लिखित परीक्षा",
+      "विचारित सूची और दस्तावेज सत्यापन",
+      "आरक्षित सूची घोषणा"
     ],
     "share_card": {
       "headline_en": "Reserve List Declared",
@@ -191,24 +182,25 @@
       "line_hi": "लेक्चरर स्वास्थवृत्त 2025",
       "posts": 1
     },
-    "status_en": "Reserve list and cutoff marks declared",
-    "status_hi": "आरक्षित सूची और कटऑफ अंक घोषित",
-    "summary_en": "Rajasthan Public Service Commission has released the reserve list and cutoff marks for the Lecturer Swasthvritta Exam 2025 under the Ayurved Department. Candidates can check their roll number and merit rank in the published list.",
-    "summary_hi": "राजस्थान लोक सेवा आयोग ने आयुर्वेद विभाग के अंतर्गत लेक्चरर स्वास्थवृत्त परीक्षा 2025 के लिए आरक्षित सूची और कटऑफ अंक जारी कर दिए हैं। उम्मीदवार प्रकाशित सूची में अपना रोल नंबर और मेरिट रैंक देख सकते हैं।",
+    "status_en": "Reserve list declared with cutoff marks",
+    "status_hi": "कटऑफ अंकों के साथ आरक्षित सूची घोषित",
+    "summary_en": "Rajasthan Public Service Commission has released the reserve list and cutoff marks for the Lecturer Swasthvritta Exam 2025 under the Ayurved Department.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने आयुर्वेद विभाग के अंतर्गत लेक्चरर स्वास्थवृत्त परीक्षा 2025 के लिए आरक्षित सूची और कटऑफ अंक जारी कर दिए हैं।",
     "vacancies": [
       {
         "detail_en": "Gen (UR): 1",
-        "detail_hi": "सामान्य: 1",
+        "detail_hi": "सामान्य (अनारक्षित): 1",
         "post_en": "Lecturer (Swasthvritta)",
         "post_hi": "लेक्चरर (स्वास्थवृत्त)",
         "total": "1"
       }
     ],
+    "video_url": null,
     "who_en": [
       "Candidates who appeared for the RPSC Lecturer Ayurved Swasthvritta Exam 2025"
     ],
     "who_hi": [
-      "वे उम्मीदवार जो आरपीएससी लेक्चरर आयुर्वेद स्वास्थवृत्त परीक्षा 2025 में शामिल हुए थे"
+      "वे अभ्यर्थी जिन्होंने आरपीएससी लेक्चरर आयुर्वेद स्वास्थवृत्त परीक्षा 2025 दी थी"
     ]
   },
   "pdf": {
@@ -218,7 +210,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-10-26T12:08:20Z",
-  "rewrite": true,
   "slug": "rpsc-lecturer-ayurved-swasthvritta-2025-reserve-list-declared",
   "source_id": "rpsc-home",
   "status": "approved",

@@ -1,6 +1,20 @@
 {
   "board_url": "https://mppsc.mp.gov.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Assistant Town Planner",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Caveat notice regarding court cases for an exam result",
+    "summary_en": "Madhya Pradesh Public Service Commission has filed a caveat petition in the High Court regarding the written exam result of Assistant Town Planner Examination 2026.",
+    "summary_hi": "मध्य प्रदेश लोक सेवा आयोग ने सहायक नगर नियोजक परीक्षा 2026 के लिखित परीक्षा परिणाम के संबंध में उच्च न्यायालय में केविएट याचिका दायर की है।",
+    "title_en": "MPPSC Assistant Town Planner Examination 2026 Written Exam Result Caveat",
+    "title_hi": "मध्य प्रदेश लोक सेवा आयोग सहायक नगर नियोजक परीक्षा परिणाम केविएट",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +30,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "mppsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Caveat Vigyapti on Written Exam Result - Assistant Town Planner Exam 2026, Dated 27/10/2026",
   "url": "https://mppsc.mp.gov.in/uploads/advertisement/Caveat_Vigyapti_Written_Exam_Result_Assistant_Town_Planner_Exam_2026_Dated_27_10_2026.pdf"
 }

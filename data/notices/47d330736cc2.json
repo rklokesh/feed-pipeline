@@ -4,15 +4,15 @@
   "card": {
     "confidence": "high",
     "exam_date": "2025-11-23",
-    "last_date": null,
+    "last_date": "2026-11-12",
     "list": true,
     "posts": "Driver",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
     "summary_en": "Rajasthan Staff Selection Board has released the list of provisionally shortlisted candidates for document verification and online scrutiny form filling for the Driver 2024 examination.",
     "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने चालक भर्ती परीक्षा 2024 के दस्तावेज सत्यापन और ऑनलाइन संवीक्षा फॉर्म भरने के लिए अनंतिम रूप से शॉर्टलिस्ट किए गए उम्मीदवारों की सूची जारी कर दी है।",
-    "title_en": "RSSB Driver Recruitment 2024 – Document Verification Shortlist Out",
-    "title_hi": "राजस्थान कर्मचारी चयन बोर्ड चालक भर्ती 2024 दस्तावेज सत्यापन सूची जारी",
+    "title_en": "RSSB Driver DV Schedule 2024 – Scrutiny Form Dates Out",
+    "title_hi": "राजस्थान कर्मचारी चयन बोर्ड चालक डीवी 2024 – संवीक्षा फॉर्म तिथियां जारी",
     "type": "Result",
     "vacancies": 2756
   },
@@ -31,50 +31,56 @@
   "org": "RSSB Rajasthan",
   "page": {
     "after_en": [
-      "Document verification of shortlisted candidates based on their online scrutiny forms."
+      "Document verification by the department",
+      "Final merit list and appointment"
     ],
     "after_hi": [
-      "ऑनलाइन संवीक्षा फॉर्म के आधार पर शॉर्टलिस्ट किए गए उम्मीदवारों का दस्तावेज सत्यापन।"
+      "विभाग द्वारा दस्तावेज सत्यापन",
+      "अंतिम मेरिट सूची और नियुक्ति"
     ],
     "age": [],
-    "apply_start": null,
+    "apply_start": "2026-10-30",
     "apply_url": "https://rssb.rajasthan.gov.in/",
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Keep your registration details ready.",
-      "Verify your name in the shortlist PDF.",
-      "Submit the online scrutiny form before 12 Nov 2026."
+      "Check your name and roll number in the shortlist",
+      "Submit the online scrutiny form on or before 12 Nov 2026"
     ],
     "checklist_hi": [
-      "अपने पंजीकरण विवरण तैयार रखें।",
-      "शॉर्टलिस्ट पीडीएफ में अपने नाम की जांच करें।",
-      "12 नवंबर 2026 से पहले ऑनलाइन संवीक्षा फॉर्म जमा करें।"
+      "शॉर्टलिस्ट सूची में अपना नाम और रोल नंबर जांचें",
+      "12 नवंबर 2026 को या उससे पहले ऑनलाइन संवीक्षा फॉर्म जमा करें"
     ],
     "conducted_by_en": "Rajasthan Staff Selection Board (RSSB)",
-    "conducted_by_hi": "राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी)",
+    "conducted_by_hi": "राजस्थान कर्मचारी चयन बोर्ड (RSSB)",
     "dates": [
       {
-        "label_en": "Exam Date",
+        "label_en": "Original advertisement date",
+        "label_hi": "मूल विज्ञापन तिथि",
+        "value_en": "11 Dec 2024",
+        "value_hi": "11 दिसंबर 2024"
+      },
+      {
+        "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "23 Nov 2025",
         "value_hi": "23 नवंबर 2025"
       },
       {
-        "label_en": "Result Date",
+        "label_en": "Result date",
         "label_hi": "परिणाम तिथि",
         "value_en": "16 Jan 2026",
         "value_hi": "16 जनवरी 2026"
       },
       {
-        "label_en": "Online Scrutiny Form Start Date",
-        "label_hi": "ऑनलाइन संवीक्षा फॉर्म शुरू होने की तिथि",
+        "label_en": "Online scrutiny form start date",
+        "label_hi": "ऑनलाइन संवीक्षा फॉर्म प्रारंभ तिथि",
         "value_en": "30 Oct 2026",
         "value_hi": "30 अक्टूबर 2026"
       },
       {
-        "label_en": "Online Scrutiny Form Last Date",
-        "label_hi": "ऑनलाइन संवीक्षा फॉर्म की अंतिम तिथि",
+        "label_en": "Online scrutiny form last date",
+        "label_hi": "ऑनलाइन संवीक्षा फॉर्म अंतिम तिथि",
         "value_en": "12 Nov 2026",
         "value_hi": "12 नवंबर 2026"
       }
@@ -82,78 +88,80 @@
     "documents_en": [
       "Educational qualification certificates",
       "Driving license",
-      "Category certificates",
-      "Identity proof"
+      "Category certificate",
+      "Identity proof",
+      "Printed copy of online scrutiny form"
     ],
     "documents_hi": [
       "शैक्षणिक योग्यता प्रमाण पत्र",
       "ड्राइविंग लाइसेंस",
       "श्रेणी प्रमाण पत्र",
-      "पहचान प्रमाण"
+      "पहचान पत्र",
+      "ऑनलाइन संवीक्षा फॉर्म की प्रिंटेड कॉपी"
     ],
-    "eligibility": [],
+    "eligibility": [
+      {
+        "label_en": "Selection stage",
+        "label_hi": "चयन चरण",
+        "value_en": "Candidates qualified in the trade test are shortlisted for document verification",
+        "value_hi": "ट्रेड टेस्ट में पात्र घोषित अभ्यर्थी दस्तावेज सत्यापन हेतु शॉर्टलिस्ट किए गए हैं"
+      }
+    ],
     "exam_date": "2025-11-23",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is an online form that provisionally shortlisted candidates must fill out prior to document verification, providing their complete academic and personal details as per board requirements.",
-        "a_hi": "यह एक ऑनलाइन फॉर्म है जिसे अनंतिम रूप से शॉर्टलिस्ट किए गए उम्मीदवारों को दस्तावेज सत्यापन से पहले भरना होगा, जिसमें बोर्ड की आवश्यकतानुसार उनके संपूर्ण शैक्षणिक और व्यक्तिगत विवरण देने होते हैं।",
-        "q_en": "What is RSSB Driver Online Scrutiny Form?",
-        "q_hi": "आरएसएसबी चालक ऑनलाइन संवीक्षा फॉर्म क्या है?"
+        "a_en": "It is an online detailed application-cum-scrutiny form that provisionally shortlisted candidates must fill out before the document verification process.",
+        "a_hi": "यह एक विस्तृत ऑनलाइन फॉर्म है जिसे दस्तावेज सत्यापन से पहले अनंतिम रूप से शॉर्टलिस्ट किए गए उम्मीदवारों द्वारा भरना अनिवार्य है।",
+        "q_en": "What is the RSSB Driver Online Scrutiny Form?",
+        "q_hi": "आरएसएसबी ड्राइवर ऑनलाइन संवीक्षा फॉर्म क्या है?"
       }
     ],
-    "extra": [
-      {
-        "label_en": "Advertisement Number",
-        "label_hi": "विज्ञापन संख्या",
-        "value_en": "20/2024",
-        "value_hi": "20/2024"
-      },
-      {
-        "label_en": "Associated Court Cases",
-        "label_hi": "संबंधित न्यायालय मामले",
-        "value_en": "SBCWP No. 18671/2026, 17003/2026, and 17005/2026",
-        "value_en_hi": "डब्लू.पी. संख्या 18671/2026, 17003/2026 और 17005/2026",
-        "value_hi": "रिट याचिका संख्या 18671/2026, 17003/2026 और 17005/2026"
-      }
-    ],
+    "extra": [],
     "faq": [
       {
-        "a_en": "The online scrutiny form can be filled from 30 Oct 2026 up to 12 Nov 2026.",
+        "a_en": "The online scrutiny form can be filled from 30 Oct 2026 to 12 Nov 2026.",
         "a_hi": "ऑनलाइन संवीक्षा फॉर्म 30 अक्टूबर 2026 से 12 नवंबर 2026 तक भरा जा सकता है।",
         "q_en": "When is the last date to fill the RSSB Driver online scrutiny form?",
-        "q_hi": "आरएसएसबी चालक ऑनलाइन संवीक्षा फॉर्म भरने की अंतिम तिथि क्या है?"
+        "q_hi": "आरएसएसबी ड्राइवर ऑनलाइन संवीक्षा फॉर्म भरने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "There are a total of 2,756 vacancies for the Driver post.",
-        "a_hi": "चालक पद के लिए कुल 2,756 रिक्तियां हैं।",
-        "q_en": "How many total vacancies are there in RSSB Driver Recruitment 2024?",
-        "q_hi": "आरएसएसबी चालक भर्ती 2024 में कुल कितने पद हैं?"
+        "a_en": "A total of 2,756 vacancies have been announced for the driver post.",
+        "a_hi": "चालक पद के लिए कुल 2,756 पद घोषित किए गए हैं।",
+        "q_en": "How many vacancies are announced for RSSB Driver Recruitment 2024?",
+        "q_hi": "आरएसएसबी ड्राइवर भर्ती 2024 के लिए कुल कितने पद हैं?"
+      },
+      {
+        "a_en": "Candidates who were declared qualified in the trade test conducted by the department are shortlisted for document verification and scrutiny.",
+        "a_hi": "विभाग द्वारा आयोजित ट्रेड टेस्ट में पात्र घोषित किए गए उम्मीदवार दस्तावेज सत्यापन के लिए शॉर्टलिस्ट किए गए हैं।",
+        "q_en": "Who is eligible to fill the scrutiny form?",
+        "q_hi": "संवीक्षा फॉर्म भरने के लिए कौन पात्र है?"
       }
     ],
     "fees": [],
-    "h1_en": "RSSB Driver Recruitment 2024 – Document Verification Shortlist Out",
-    "h1_hi": "राजस्थान कर्मचारी चयन बोर्ड चालक भर्ती 2024 दस्तावेज सत्यापन सूची जारी",
+    "h1_en": "RSSB Driver DV Schedule 2024 – Scrutiny Form Dates Out",
+    "h1_hi": "राजस्थान कर्मचारी चयन बोर्ड चालक डीवी 2024 – संवीक्षा फॉर्म तिथियां जारी",
+    "hindi_notice_url": null,
     "how_en": [
-      "Visit the official RSSB website at rssb.rajasthan.gov.in.",
-      "Check the shortlist provided in the notification annexure.",
-      "Log in to fill out the online detailed application cum scrutiny form between 30 Oct 2026 and 12 Nov 2026."
+      "Visit the official RSSB website.",
+      "Go to the candidate login or recruitment portal.",
+      "Fill out the detailed online scrutiny form (Scrutiny Form) between 30 Oct 2026 and 12 Nov 2026.",
+      "Keep copies of the submitted form and relevant documents ready for verification."
     ],
     "how_hi": [
-      "आधिकारिक वेबसाइट rssb.rajasthan.gov.in पर जाएं।",
-      "अधिसूचना के परिशिष्ट में दी गई शॉर्टलिस्ट की जांच करें।",
-      "30 अक्टूबर 2026 से 12 नवंबर 2026 के बीच ऑनलाइन विस्तृत आवेदन सह संवीक्षा फॉर्म भरने के लिए लॉगिन करें।"
+      "आधिकारिक वेबसाइट पर जाएं।",
+      "भर्ती पोर्टल पर लॉगिन करें।",
+      "30 अक्टूबर 2026 से 12 नवंबर 2026 के बीच ऑनलाइन विस्तृत संवीक्षा फॉर्म भरें।",
+      "भरे हुए फॉर्म और आवश्यक दस्तावेजों की प्रतियां सुरक्षित रखें।"
     ],
-    "intro_en": "Rajasthan Staff Selection Board (RSSB) has published the provisional shortlist of candidates for eligibility checking and document verification for the Driver Recruitment 2024. The written examination was held on 23 Nov 2025, followed by a trade test. Candidates declared qualified in the trade test are now provisionally shortlisted. The portal for filling out the online detailed application cum scrutiny form remains open from 30 Oct 2026 to 12 Nov 2026.",
-    "intro_hi": "राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी) ने चालक भर्ती परीक्षा 2024 के लिए पात्रता जांच और दस्तावेज सत्यापन हेतु अनंतिम रूप से शॉर्टलिस्ट किए गए उम्मीदवारों की सूची जारी कर दी है। लिखित परीक्षा 23 नवंबर 2025 को आयोजित की गई थी, जिसके बाद ट्रेड टेस्ट हुआ। ट्रेड टेस्ट में सफल घोषित उम्मीदवारों को अब दस्तावेज सत्यापन के लिए शॉर्टलिस्ट किया गया है। ऑनलाइन विस्तृत आवेदन सह संवीक्षा फॉर्म भरने के लिए पोर्टल 30 अक्टूबर 2026 से 12 नवंबर 2026 तक खुला रहेगा।",
-    "last_date": null,
+    "intro_en": "The Rajasthan Staff Selection Board (RSSB) has published the list of provisionally shortlisted candidates for document verification and online scrutiny form filling for the Driver Recruitment 2024. Candidates who cleared the trade test are eligible to fill out the detailed online scrutiny form. The online portal for submitting the scrutiny form remains open from 30 October 2026 to 12 November 2026. Applicants must check their status and complete the formalities within the stipulated timeframe.",
+    "intro_hi": "राजस्थान कर्मचारी चयन बोर्ड (RSSB) ने वाहन चालक सीधी भर्ती परीक्षा 2024 के अंतर्गत दस्तावेज सत्यापन और ऑनलाइन संवीक्षा फॉर्म भरने हेतु विचारित (शॉर्टलिस्ट) किए गए उम्मीदवारों की सूची जारी कर दी है। ट्रेड टेस्ट में पात्र घोषित किए गए अभ्यर्थी इसके लिए पात्र हैं। संवीक्षा फॉर्म भरने के लिए ऑनलाइन पोर्टल 30 अक्टूबर 2026 से 12 नवंबर 2026 तक खुला रहेगा।",
+    "last_date": "2026-11-12",
     "mistakes_en": [
-      "Do not miss the online scrutiny form submission window ending on 12 Nov 2026.",
-      "Ensure correct information is submitted to avoid disqualification."
+      "Providing incorrect information in the application can lead to disqualification at any stage."
     ],
     "mistakes_hi": [
-      "12 नवंबर 2026 को समाप्त होने वाली ऑनलाइन संवीक्षा फॉर्म जमा करने की तिथि न चूकें।",
-      "अयोग्यता से बचने के लिए सुनिश्चित करें कि सही जानकारी प्रस्तुत की गई है।"
+      "आवेदन में गलत सूचना देने पर किसी भी समय परिणाम से बाहर किया जा सकता है।"
     ],
     "not_en": [],
     "not_hi": [],
@@ -163,28 +171,28 @@
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Post",
-        "label_hi": "पद",
+        "label_en": "Post name",
+        "label_hi": "पद का नाम",
         "value_en": "Driver",
-        "value_hi": "चालक"
+        "value_hi": "वाहन चालक"
       },
       {
-        "label_en": "Total Vacancies",
+        "label_en": "Total vacancies",
         "label_hi": "कुल पद",
         "value_en": "2,756",
         "value_hi": "2,756"
       },
       {
-        "label_en": "Exam Date",
-        "label_hi": "परीक्षा तिथि",
-        "value_en": "23 Nov 2025",
-        "value_hi": "23 नवंबर 2025"
+        "label_en": "Scrutiny form dates",
+        "label_hi": "संवीक्षा फॉर्म तिथियां",
+        "value_en": "30 Oct 2026 to 12 Nov 2026",
+        "value_hi": "30 अक्टूबर 2026 से 12 नवंबर 2026"
       },
       {
-        "label_en": "Online Scrutiny Dates",
-        "label_hi": "ऑनलाइन संवीक्षा तिथियां",
-        "value_en": "30 Oct 2026 to 12 Nov 2026",
-        "value_hi": "30 अक्टूबर 2026 से 12 नवंबर 2026 तक"
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "20/2024",
+        "value_hi": "20/2024"
       }
     ],
     "salary": [],
@@ -195,35 +203,36 @@
     ],
     "selection_hi": [
       "लिखित परीक्षा",
-      "व्यवसायिक परीक्षण (ट्रेड टेस्ट)",
-      "दस्तावेज सत्यापन और ऑनलाइन संवीक्षा"
+      "व्यावसायिक परीक्षण (ट्रेड टेस्ट)",
+      "दस्तावेज सत्यापन एवं ऑनलाइन संवीक्षा"
     ],
     "share_card": {
       "headline_en": "DV Shortlist Out",
-      "headline_hi": "दस्तावेज सत्यापन सूची जारी",
+      "headline_hi": "डीवी सूची जारी",
       "kind": "result",
-      "line_en": "Driver 2024 Exam",
-      "line_hi": "चालक 2024 परीक्षा",
+      "line_en": "Driver Recruitment 2024",
+      "line_hi": "चालक भर्ती 2024",
       "posts": 2756
     },
-    "status_en": "Document verification shortlist released, online scrutiny form open from 30 Oct 2026 to 12 Nov 2026",
-    "status_hi": "दस्तावेज सत्यापन हेतु सूची जारी, ऑनलाइन संवीक्षा फॉर्म 30 अक्टूबर 2026 से 12 नवंबर 2026 तक भरा जाएगा",
-    "summary_en": "Rajasthan Staff Selection Board has released the provisional shortlist of candidates for document verification and online scrutiny form filling for the Driver Recruitment 2024. Shortlisted candidates can submit their online scrutiny forms from 30 Oct 2026 to 12 Nov 2026.",
-    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने चालक भर्ती 2024 के दस्तावेज सत्यापन और ऑनलाइन संवीक्षा फॉर्म भरने के लिए अनंतिम सूची जारी कर दी है। शॉर्टलिस्ट किए गए उम्मीदवार 30 अक्टूबर 2026 से 12 नवंबर 2026 तक ऑनलाइन संवीक्षा फॉर्म भर सकते हैं।",
+    "status_en": "Document verification shortlist released, online scrutiny form window open till 12 Nov 2026",
+    "status_hi": "दस्तावेज सत्यापन सूची जारी, ऑनलाइन संवीक्षा फॉर्म भरने की अंतिम तिथि 12 नवंबर 2026 है",
+    "summary_en": "Rajasthan Staff Selection Board has released the list of provisionally shortlisted candidates for document verification and online scrutiny form filling for the Driver 2024 recruitment. Eligible candidates can submit their online detailed scrutiny form from 30 Oct 2026 to 12 Nov 2026.",
+    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने चालक भर्ती 2024 के दस्तावेज सत्यापन और ऑनलाइन संवीक्षा फॉर्म भरने के लिए अनंतिम रूप से शॉर्टलिस्ट किए गए उम्मीदवारों की सूची जारी कर दी है। योग्य उम्मीदवार 30 अक्टूबर 2026 से 12 नवंबर 2026 तक अपना ऑनलाइन विस्तृत संवीक्षा फॉर्म भर सकते हैं।",
     "vacancies": [
       {
-        "detail_en": "Non-TSP: 2602, TSP: 154",
+        "detail_en": "Non-Scheduled Area: 2602, Scheduled Area: 154",
         "detail_hi": "गैर-अनुसूचित क्षेत्र: 2602, अनुसूचित क्षेत्र: 154",
         "post_en": "Driver",
-        "post_hi": "चालक",
+        "post_hi": "वाहन चालक",
         "total": "2756"
       }
     ],
+    "video_url": null,
     "who_en": [
-      "Candidates who appeared for the RSSB Driver Exam 2024 trade test and want to check their document verification status."
+      "Candidates who appeared for the RSSB Driver 2024 exam and cleared the trade test"
     ],
     "who_hi": [
-      "वे उम्मीदवार जो आरएसएसबी चालक परीक्षा 2024 ट्रेड टेस्ट में शामिल हुए थे और अपने दस्तावेज सत्यापन की स्थिति की जांच करना चाहते हैं।"
+      "वे उम्मीदवार जो RSSB चालक 2024 परीक्षा में शामिल हुए और ट्रेड टेस्ट में सफल रहे"
     ]
   },
   "pdf": {
@@ -233,7 +242,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-10-29T12:12:01Z",
-  "rewrite": true,
   "slug": "rssb-driver-recruitment-2024-document-verification-shortlist-out",
   "source_id": "rssb-home",
   "status": "approved",
