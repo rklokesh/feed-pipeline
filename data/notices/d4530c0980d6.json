@@ -1,21 +1,7 @@
 {
   "baseline_sample": true,
   "board_url": "https://mppsc.mp.gov.in/",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": null,
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "Tender / procurement notice for office supplies",
-    "summary_en": "Notice regarding GeM bid for photocopier toner and drum requirements in the commission office.",
-    "summary_hi": "आयोग कार्यालय में फोटोकॉपी टोनर और ड्रम की आवश्यकता के संबंध में जेम बोली की सूचना।",
-    "title_en": "MPPSC Photocopier Toner and Drum GeM Bid",
-    "title_hi": "मध्य प्रदेश लोक सेवा आयोग फोटोकॉपी टोनर और ड्रम जेम बोली",
-    "type": "Job",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -28,10 +14,10 @@
     "bytes": 12261,
     "pages": 1,
     "sha256": "9c1428d2d4afd92fae662214a7cf9b87efe2f67a027e6d00e73fe0a932944e92",
-    "text_kind": "text"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "mppsc-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "आयोग कार्यालय में photocopier Toner & Drum की आवश्यकता के सन्दर्भ में GeM पर Bid की सूचना, दिनांक 19/10/2026",
   "url": "https://mppsc.mp.gov.in/uploads/files/Vigyapti_10374_02_2011_Computer_Dated_19_10_2026.pdf"
 }

@@ -1,20 +1,6 @@
 {
   "board_url": "https://mppsc.mp.gov.in/",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "Metal Detector Procurement",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "Tender or procurement notice for metal detectors, not a job or recruitment",
-    "summary_en": "This is a procurement notice for metal detectors via GeM portal and is not a job vacancy.",
-    "summary_hi": "यह जेम पोर्टल के माध्यम से मेटल डिटेक्टरों की खरीद के लिए एक निविदा सूचना है, नौकरी रिक्ति नहीं।",
-    "title_en": "MPPSC Metal Detector Procurement Bid",
-    "title_hi": "मध्य प्रदेश लोक सेवा आयोग मेटल डिटेक्टर क्रय टेंडर",
-    "type": "Job",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -27,10 +13,10 @@
     "bytes": 12290,
     "pages": 1,
     "sha256": "b95d8216bac4aac7fee22b363f2be669859e3c4a9607cf49cd498be2c75925c4",
-    "text_kind": "text"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "mppsc-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "आयोग कार्यालय में 15 नग Metal Detector की आवश्‍यकता के संदर्भ में GeM पर Bid की सूचना, दिनांक 29/10/2026",
   "url": "https://mppsc.mp.gov.in/uploads/files/Vigyapti_10650_04_2026_computer.pdf"
 }
