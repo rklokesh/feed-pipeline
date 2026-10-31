@@ -290,3 +290,13 @@ publish.yml (when the owner adds a label to an issue, open or closed):
 - scripts/retype.py: plain-rule check after the AI, runs at the start of prepare.yml's page step; report in reports/retype.txt.
   First run moved 31 notices (6 Admission, 24 Update, 1 Result). prepare.py prompt also knows the two new types.
 - The list's Last date column now shows any known deadline except on results.
+
+## 3i. Speed + mobile pass (31 Oct 2026)
+Lighthouse (mobile, throttled, local copy): homepage 84 -> 95 performance, 152 -> 89 KB; notice page 97 perf / 100 accessibility.
+SEO shows 69 only because of the pre-launch noindex (the one failing check); go_live.py removes it.
+- Images re-encoded (look unchanged): logo 64 -> 21 KB, siren 16 -> 6 KB (32px), hand 13 -> 7 KB, NEW badges 8 -> 1.5 KB (46x28).
+- Logo preload/img fetchpriority=high (it is the largest paint).
+- Homepage JS: per-notice search text cached, typewriter hint words cached, date formatters made once.
+- Notice pages: section titles are <h2 class="h"> (pages.py post-process), same look.
+- Grey labels on beige headers darkened slightly for contrast.
+- Phones <= 400px: smaller logo, tighter header, "All notices" shows as the arrow only; no sideways scroll at 320-412px.
