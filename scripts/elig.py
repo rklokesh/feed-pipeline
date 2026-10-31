@@ -127,6 +127,8 @@ def tag():
             items.append({"id": n["id"], "title": pg.get("h1_en"), "age_rows": pg.get("age"), "eligibility": pg.get("eligibility"),
                           "pdf_excerpts": age_text(n)})
         res = ai(json.dumps({"notices": items}, ensure_ascii=False))
+        if isinstance(res, list):          # some answers come back as a bare list of tags
+            res = {"tags": res}
         if not isinstance(res, dict):
             print("elig: AI unavailable, will continue next run")
             LOG.append("AI unavailable")
