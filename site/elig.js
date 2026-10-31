@@ -27,8 +27,9 @@
     .eligdlg { border: 1px solid var(--line); border-radius: 10px; padding: 22px 24px; background: var(--page); color: var(--ink); max-width: 24rem; width: calc(100% - 32px); }
     .eligdlg::backdrop { background: rgba(0,0,0,.35); }
     .eligdlg form { position: relative; }
-    .eligdlg .x { all: unset; cursor: pointer; position: absolute; top: -10px; right: -10px; width: 32px; height: 32px; display: grid; place-items: center; font-size: 22px; color: var(--grey); border-radius: 6px; }
+    .eligdlg .x { all: unset; cursor: pointer; position: absolute; top: -4px; right: -8px; width: 32px; height: 32px; display: grid; place-items: center; color: var(--grey); border-radius: 50%; transition: background .15s, color .15s; }
     .eligdlg .x:hover { color: var(--ink); background: var(--soft); }
+    .eligdlg .x:focus-visible { outline: 1px solid var(--ink); outline-offset: 0; }
     .eligdlg h2 { font-size: 1.25rem; font-weight: 700; margin: 0 0 6px; padding-right: 28px; }
     .eligdlg p.g { margin: 0 0 16px; color: var(--grey); font-size: .95rem; }
     .eligdlg label { display: grid; gap: 4px; margin-bottom: 14px; color: var(--grey); }
@@ -100,7 +101,7 @@
     dlg.returnValue = "";
     const me = load() || {};
     dlg.innerHTML = `<form method="dialog">
-      <button value="cancel" class="x" formnovalidate aria-label="${L("Close", "बंद करें")}">×</button>
+      <button value="cancel" class="x" formnovalidate aria-label="${L("Close", "बंद करें")}" title="${L("Close", "बंद करें")}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
       <h2>${L("Am I eligible?", "क्या मैं योग्य हूँ?")}</h2>
       <p class="g">${L("Saved only on this device. We check age and qualification against each official notice.", "सिर्फ़ इसी डिवाइस पर सेव होता है। हम हर आधिकारिक सूचना से आयु और योग्यता मिलाते हैं।")}</p>
       <label>${L("Date of birth", "जन्म तिथि")}<input type="date" name="dob" required value="${me.dob || ""}" min="1950-01-01" max="2015-12-31"></label>

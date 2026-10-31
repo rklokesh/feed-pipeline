@@ -171,8 +171,6 @@ main { margin-top: 36px; flex: 1; }
 .exams a { color: var(--ink); text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
 html[lang="hi"] .x-en, html:not([lang="hi"]) .x-hi { display: none; }
 .list .t { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* already opened: a small step softer than the normal text (the browser decides; nothing is tracked by us) */
-.list li.lr > a.row:visited > .t { color: color-mix(in srgb, var(--ink) 72%, var(--page)); }
 /* every column stays on one line: long text ends in "…" and shows in full in the tooltip */
 .list .cut, .row.head > span { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .list li.lr:hover, .list li.lr.sel { background: var(--hover); }
