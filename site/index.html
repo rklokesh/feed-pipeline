@@ -187,6 +187,9 @@ html[lang="hi"] .x-en, html:not([lang="hi"]) .x-hi { display: none; }
 .right { text-align: right; }
 
 footer .pref { margin-bottom: 0; }
+footer .browse { margin-bottom: 8px; line-height: 1.7; }
+footer .browse a { color: inherit; }
+footer .browse span { white-space: nowrap; }
 footer .pref .star { color: var(--warm); }
 footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-align: center; justify-items: center; }
 
@@ -264,8 +267,8 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
 .strip-x:hover { color: var(--page); background: color-mix(in srgb, var(--page) 12%, var(--ink)); }
 .strip-x::after { content: ""; position: absolute; inset: -7px; }
 @media (max-width: 640px) { .strip { justify-content: flex-start; gap: 10px; padding: 7px 46px 7px 16px; font-size: .875rem; } }
-/* Announcement strip: frosted glass, stays at the top while scrolling */
-.strip { position: sticky; top: 0; z-index: 30; color: var(--ink);
+/* Announcement strip: frosted glass; scrolls away with the page */
+.strip { position: relative; color: var(--ink);
   background: color-mix(in srgb, var(--page) 70%, transparent);
   -webkit-backdrop-filter: blur(14px) saturate(160%); backdrop-filter: blur(14px) saturate(160%);
   border-bottom: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
@@ -281,18 +284,6 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
 .tabs .siren img { width: 16px; height: 16px; display: block; }
 footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-left: 6px; vertical-align: -6px; }
 @media (prefers-reduced-motion: reduce) { footer .pref .hand { display: none; } }
-/* Announcement + popular links travel together at the top; with the announcement closed, the links sit at the very top */
-.topbar { position: sticky; top: 0; z-index: 30; }
-.topbar .strip { position: relative; top: auto; box-shadow: none; }
-.topbar .qlinks { position: relative; top: auto; }
-.qlinks { display: flex; justify-content: flex-start; gap: 0 18px; min-height: 40px; align-items: center; overflow-x: auto; scrollbar-width: none;
-  padding: 0 max(16px, calc((100% - 1000px) / 2 + 16px));
-  margin: 0 calc(-1 * max(16px, env(safe-area-inset-right, 0px))) 0 calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
-  background: color-mix(in srgb, var(--page) 94%, transparent); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--line); font-size: 1rem; }
-.qlinks::-webkit-scrollbar { display: none; }
-.qlinks a { flex: none; color: var(--grey); white-space: nowrap; padding: 8px 0; transition: color .25s ease; }
-.qlinks a:hover { color: var(--ink); text-decoration: none; }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -301,11 +292,8 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
 <body>
 
 
-<div class="topbar">
 <div class="strip" id="strip" data-id="tg-channel-1" data-href="https://t.me/sarkarichart" role="region" aria-label="Announcement" hidden><svg class="wa" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11.5" fill="#29A9EB"/><path fill="#fff" d="M5.2 11.7 16.8 7.2c.5-.2 1 .1.8 .9l-2 9.3c-.1.6-.5.8-1 .5l-2.9-2.2-1.4 1.4c-.2.2-.3.3-.6.3l.2-3 5.4-4.9c.2-.2 0-.3-.3-.1l-6.7 4.2-2.9-.9c-.6-.2-.6-.6.1-.9z"/></svg><span id="stripText" data-en="Get every new govt job alert on Telegram, free." data-hi="हर नई सरकारी नौकरी की सूचना टेलीग्राम पर पाएँ, मुफ़्त।" data-en-s="Job alerts on Telegram, free." data-hi-s="नौकरी की सूचना टेलीग्राम पर, मुफ़्त।">Get every new govt job alert on Telegram, free.</span><a id="stripLink" class="cta" href="#" target="_blank" rel="noopener" data-en="Join the channel →" data-hi="चैनल से जुड़ें →" data-en-s="Join →" data-hi-s="जुड़ें →">Join the channel →</a><button type="button" class="strip-x" id="stripX" aria-label="Close" data-en="Close" data-hi="बंद करें"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
 <script>(function(){var s=document.getElementById("strip"),h=s.dataset.href,id=s.dataset.id,d=null;try{d=localStorage.getItem("sc-strip-closed")}catch(e){}if(!h||d===id)return; s.hidden=false; document.getElementById("stripLink").href=h;function lang(){var l=document.documentElement.lang==="hi"?"hi":"en",sm=matchMedia("(max-width: 640px)").matches;["stripText","stripLink"].forEach(function(k){var e=document.getElementById(k);e.textContent=(sm&&e.dataset[l+"S"])||e.dataset[l]});var x=document.getElementById("stripX");x.setAttribute("aria-label",x.dataset[l]);}try{var sl=localStorage.getItem("sc-lang");if(sl==="hi"||(!sl&&/^hi\b/i.test(navigator.language||"")))document.documentElement.lang="hi"}catch(e){} lang();addEventListener("resize",lang);new MutationObserver(lang).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});document.getElementById("stripX").addEventListener("click",function(){s.hidden=true;try{localStorage.setItem("sc-strip-closed",id)}catch(e){}});})();</script>
-<nav class="qlinks" aria-label="Popular"><a href="/up-govt-jobs/" data-t="qlUp">UP Jobs</a> <a href="/bihar-govt-jobs/" data-t="qlBihar">Bihar Jobs</a> <a href="/rajasthan-govt-jobs/" data-t="qlRaj">Rajasthan Jobs</a> <a href="/mp-govt-jobs/" data-t="qlMp">MP Jobs</a> <a href="/10th-pass-govt-jobs/" data-t="ql10">10th Pass</a> <a href="/12th-pass-govt-jobs/" data-t="ql12">12th Pass</a> <a href="/graduate-govt-jobs/" data-t="qlGrad">Graduate</a> <a href="/?cat=admit-cards" data-t="qlAdmit">Admit Card</a> <a href="/?cat=results" data-t="qlRes">Result</a> <a href="/?cat=answer-keys" data-t="qlKey">Answer Key</a></nav>
-</div>
 <div class="sheet">
   <header class="top">
     <span class="g" data-t="tagline">Govt jobs, exams, results</span>
@@ -332,11 +320,9 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       <button type="button" class="sx" id="kHint" hidden><span data-t="clear">Clear</span><kbd class="kc" aria-hidden="true">Esc</kbd></button>
     </label>
     <div class="fbar" id="fbar">
-      <span class="chip" data-f="cat"><label><span class="cl" data-t="fCat">Category</span><span class="cv" id="fCatV"></span><select id="fCat" aria-label="Category"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
       <span class="chip" data-f="st"><label><span class="cl" data-t="fState">State</span><span class="cv" id="fStV"></span><select id="fSt" aria-label="State"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
       <span class="chip" data-f="q"><label><span class="cl" data-t="fQual">Education</span><span class="cv" id="fQV"></span><select id="fQ" aria-label="Education"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
       <span class="chip tog" data-f="me"><button type="button" id="fMe" class="tg" data-t="fMe">Jobs I can apply for</button><button type="button" class="cx" aria-label="Clear">×</button></span>
-      <span class="chip" data-f="sort"><label><span class="cl" data-t="fSort">Sort</span><span class="cv" id="fSortV"></span><select id="fSort" aria-label="Sort"></select></label><button type="button" class="cx" aria-label="Clear">×</button></span>
       <button type="button" class="fclr" id="fClr" data-t="fClear" hidden>Clear filters</button>
       <p class="fcount" id="fcount"></p>
     </div>
@@ -349,6 +335,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   <footer>
     <p class="pref"><a href="https://www.google.com/preferences/source?q=sarkarichart.com" target="_blank" rel="noopener"><span data-t="prefSrc">Add SarkariChart as a preferred source on Google</span></a><img class="hand" src="/hand.webp" width="24" height="24" alt="" aria-hidden="true" loading="lazy" decoding="async"></p>
     <p class="g" data-t="disclaimer">SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.</p>
+    <p class="browse g"><span><a href="/up-govt-jobs/" data-t="qlUp">UP Jobs</a> ·</span> <span><a href="/bihar-govt-jobs/" data-t="qlBihar">Bihar Jobs</a> ·</span> <span><a href="/rajasthan-govt-jobs/" data-t="qlRaj">Rajasthan Jobs</a> ·</span> <span><a href="/mp-govt-jobs/" data-t="qlMp">MP Jobs</a> ·</span> <span><a href="/10th-pass-govt-jobs/" data-t="ql10">10th Pass</a> ·</span> <span><a href="/12th-pass-govt-jobs/" data-t="ql12">12th Pass</a> ·</span> <span><a href="/graduate-govt-jobs/" data-t="qlGrad">Graduate</a> ·</span> <span><a href="/?cat=admit-cards" data-t="qlAdmit">Admit Card</a> ·</span> <span><a href="/?cat=results" data-t="qlRes">Result</a> ·</span> <span><a href="/?cat=answer-keys" data-t="qlKey">Answer Key</a></span></p>
     <p><a href="/about/" data-t="about">About</a> · <a href="/report/" data-t="report">Report a mistake</a> · <a href="/privacy/" data-t="privacy">Privacy</a> · <a href="/terms/" data-t="terms">Terms</a> · <a href="/contact/" data-t="contact">Contact</a></p>
   </footer>
 </div>
@@ -773,9 +760,9 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   const QS = [["10th", "10th pass", "10वीं पास"], ["12th", "12th pass", "12वीं पास"], ["iti", "ITI", "आईटीआई"], ["diploma", "Diploma", "डिप्लोमा"], ["graduate", "Graduate", "स्नातक"], ["postgraduate", "Post graduate", "स्नातकोत्तर"]];
   const QOK = { "10th": ["10th"], "12th": ["10th", "12th"], iti: ["10th", "iti"], diploma: ["10th", "12th", "diploma"],
                 graduate: ["10th", "12th", "graduate"], postgraduate: ["10th", "12th", "graduate", "postgraduate"] };
-  let F = { st: "", q: "", me: false, sort: "" };
+  let F = { st: "", q: "", me: false };
   if (window.SC_PRESET) F = Object.assign(F, window.SC_PRESET);   // a browse page opens with its own filter (not saved)
-  else try { F = Object.assign(F, JSON.parse(localStorage.getItem("sc-jobf") || "{}")); } catch (e) {}
+  else try { F = Object.assign(F, JSON.parse(localStorage.getItem("sc-jobf") || "{}")); delete F.sort; } catch (e) {}
   const saveF = () => { try { localStorage.setItem("sc-jobf", JSON.stringify(F)); } catch (e) {} };
   // State works on every tab; qualification and "only jobs I can apply for" only where the list is jobs.
   const jobish = c => c === "Job" || c === "soon";
@@ -794,32 +781,22 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   function paintFilters(rows) {
     const bar = document.getElementById("fbar"), jobs = jobish(cat);
     const opt = (v, txt, sel) => `<option value="${v}"${sel ? " selected" : ""}>${esc(txt)}</option>`;
-    const CATOPT = [["all", "all"], ["Job", "jobs"], ["soon", "soon"], ["Admit card", "admits"], ["Result", "results"], ["Answer key", "keys"]];
-    document.getElementById("fCat").innerHTML = CATOPT.map(x => opt(x[0], t(x[1]), cat === x[0])).join("");
-    bar.querySelector('[data-f="cat"]').classList.toggle("on", cat !== "all");
     const H = lang === "hi" ? 2 : 1;
     document.getElementById("fSt").innerHTML = opt("", t("fAll"), !F.st) + opt("central", t("fCentral"), F.st === "central") + STATES.map(s => opt(s[0], s[H], F.st === s[0])).join("");
     document.getElementById("fQ").innerHTML = opt("", t("fAll"), !F.q) + QS.map(x => opt(x[0], x[H], F.q === x[0])).join("");
-    // Sort: each tab's own order is the default; the other choices depend on the tab
-    const sorts = cat === "soon" ? [["", "fClosing"], ["newest", "fNewest"], ["oldest", "fOldest"]] : [["", "fNewest"], ["oldest", "fOldest"], ["closing", "fClosing"]];
-    if (!sorts.some(x => x[0] === F.sort)) F.sort = "";
-    document.getElementById("fSort").innerHTML = sorts.map(x => opt(x[0], t(x[1]), F.sort === x[0])).join("");
-    for (const id of ["fCat", "fSt", "fQ", "fSort"]) { const el = document.getElementById(id); document.getElementById(id + "V").textContent = el.options[el.selectedIndex].text; }
+    for (const id of ["fSt", "fQ"]) { const el = document.getElementById(id); document.getElementById(id + "V").textContent = el.options[el.selectedIndex].text; }
     bar.querySelector('[data-f="st"]').classList.toggle("on", !!F.st);
     bar.querySelector('[data-f="q"]').classList.toggle("on", !!F.q);
     bar.querySelector('[data-f="me"]').classList.toggle("on", !!F.me);
-    bar.querySelector('[data-f="sort"]').classList.toggle("on", !!F.sort);
-    const ahead = rows.filter(i => i.last && left(i.last) >= 0).length, any = cat !== "all" || F.st || F.q || F.me || F.sort;
+    const ahead = rows.filter(i => i.last && left(i.last) >= 0).length, any = F.st || F.q || F.me;
     document.getElementById("fClr").hidden = !any;
     document.getElementById("fcount").innerHTML = (rows.length ? esc(jobs ? t("fJobs")(rows.length, ahead) : t("fItems")(rows.length)) : esc(t("fNone"))) + "";
   }
   (function wireFilters() {
     const bar = document.getElementById("fbar");
     const set = (k, v) => { F[k] = v; saveF(); shown = PAGE; render(); };
-    document.getElementById("fCat").addEventListener("change", e => { setCat(e.target.value); shown = PAGE; render(); });
     document.getElementById("fSt").addEventListener("change", e => set("st", e.target.value));
     document.getElementById("fQ").addEventListener("change", e => set("q", e.target.value));
-    document.getElementById("fSort").addEventListener("change", e => set("sort", e.target.value));
     document.getElementById("fMe").addEventListener("click", () => {
       if (F.me) return set("me", false);
       if (!jobish(cat) && cat !== "all") setCat("Job");
@@ -827,8 +804,8 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       set("me", true);
     });
     bar.addEventListener("click", e => {
-      const x = e.target.closest(".cx"); if (x) { const k = x.closest(".chip").dataset.f; if (k === "cat") { setCat("all"); shown = PAGE; render(); return; } set(k, k === "me" ? false : ""); return; }
-      if (e.target.closest("#fClr")) { F = { st: "", q: "", me: false, sort: "" }; saveF(); setCat("all"); shown = PAGE; render(); }
+      const x = e.target.closest(".cx"); if (x) { const k = x.closest(".chip").dataset.f; set(k, k === "me" ? false : ""); return; }
+      if (e.target.closest("#fClr")) { F = { st: "", q: "", me: false }; saveF(); shown = PAGE; render(); }
     });
   })();
   function render() {
@@ -837,9 +814,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     const byNewest = (a, b) => b.posted.localeCompare(a.posted) || pubTime(b) - pubTime(a);
     const bySearch = (a, b) => searchRank(a) - searchRank(b) || titleScore(b) - titleScore(a) || (a.last || "9").localeCompare(b.last || "9") || b.posted.localeCompare(a.posted);
     const byClosing = (a, b) => a.last.localeCompare(b.last) || b.posted.localeCompare(a.posted);
-    const byLastFirst = (a, b) => (a.last || "9999").localeCompare(b.last || "9999") || b.posted.localeCompare(a.posted);
-    const byOldest = (a, b) => -byNewest(a, b);
-    const order = q ? bySearch : F.sort === "closing" ? byLastFirst : F.sort === "oldest" ? byOldest : F.sort === "newest" ? byNewest : cat === "soon" ? byClosing : byNewest;
+    const order = q ? bySearch : cat === "soon" ? byClosing : byNewest;   // each tab has one fixed order
     const rows = allRows = ITEMS.filter(i => live(i) && inCat(i, cat) && qmatch(i) && jobFilter(i)).sort(order);
     paintFilters(rows);   // Closing soon: nearest last date first (its first column); every other tab: newest official date first
     const hits = ITEMS.filter(i => live(i) && (!q || qmatch(i)));
@@ -1025,10 +1000,10 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     if (startQ) { const qi = document.getElementById("q"); qi.value = startQ; q = startQ.trim().toLowerCase(); }
     // ?cat=jobs|closing-soon|admit-cards|results|answer-keys opens that tab (used by notice-page breadcrumbs)
     const CATS = { jobs: "Job", "closing-soon": "soon", "admit-cards": "Admit card", results: "Result", "answer-keys": "Answer key" };
-    document.querySelector(".qlinks").addEventListener("click", e => {
+    document.querySelector("footer .browse").addEventListener("click", e => {
       const a = e.target.closest('a[href^="/?cat="]'); if (!a || window.SC_PRESET) return;
       const c = CATS[new URL(a.href).searchParams.get("cat")]; if (!c) return;
-      e.preventDefault(); document.querySelector(`.tabs button[data-cat="${c}"]`)?.click(); history.replaceState(null, "", a.getAttribute("href"));
+      e.preventDefault(); document.querySelector(`.tabs button[data-cat="${c}"]`)?.click(); history.replaceState(null, "", a.getAttribute("href")); scrollTo({ top: 0, behavior: "smooth" });
     });
     const startCat = window.SC_PRESET ? "Job" : CATS[new URL(location.href).searchParams.get("cat")];
     if (startCat) requestAnimationFrame(() => document.querySelector(`.tabs button[data-cat="${startCat}"]`)?.click());

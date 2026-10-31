@@ -68,6 +68,9 @@ h1, h2, p, ul { margin: 0; padding: 0; font: inherit; list-style: none; }
 .themeb svg { display: block; transform: translateY(-0.5px); }
 .top .themeb:hover { color: var(--ink); text-decoration: none; }
 footer .pref { margin-bottom: 0; }
+footer .browse { margin-bottom: 8px; line-height: 1.7; }
+footer .browse a { color: inherit; }
+footer .browse span { white-space: nowrap; }
 footer .pref .star { color: var(--warm); }
 .top button { all: unset; cursor: pointer; }
 .top button:hover { text-decoration: underline; text-underline-offset: 5px; }
@@ -158,8 +161,8 @@ footer a::after, .crumb a::after, a.r::after, #dlPdf::after { inset: -8px -4px; 
 .strip-x:hover { color: var(--page); background: color-mix(in srgb, var(--page) 12%, var(--ink)); }
 .strip-x::after { content: ""; position: absolute; inset: -7px; }
 @media (max-width: 640px) { .strip { justify-content: flex-start; gap: 10px; padding: 7px 46px 7px 16px; font-size: .875rem; } }
-/* Announcement strip: frosted glass, stays at the top while scrolling */
-.strip { position: sticky; top: 0; z-index: 30; color: var(--ink);
+/* Announcement strip: frosted glass; scrolls away with the page */
+.strip { position: relative; color: var(--ink);
   background: color-mix(in srgb, var(--page) 70%, transparent);
   -webkit-backdrop-filter: blur(14px) saturate(160%); backdrop-filter: blur(14px) saturate(160%);
   border-bottom: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
@@ -259,18 +262,6 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
-/* Announcement + popular links travel together at the top; with the announcement closed, the links sit at the very top */
-.topbar { position: sticky; top: 0; z-index: 30; }
-.topbar .strip { position: relative; top: auto; box-shadow: none; }
-.topbar .qlinks { position: relative; top: auto; }
-.qlinks { display: flex; justify-content: flex-start; gap: 0 18px; min-height: 40px; align-items: center; overflow-x: auto; scrollbar-width: none;
-  padding: 0 max(16px, calc((100% - 1000px) / 2 + 16px));
-  margin: 0 calc(-1 * max(16px, env(safe-area-inset-right, 0px))) 0 calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
-  background: color-mix(in srgb, var(--page) 94%, transparent); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--line); font-size: 1rem; }
-.qlinks::-webkit-scrollbar { display: none; }
-.qlinks a { flex: none; color: var(--grey); white-space: nowrap; padding: 8px 0; transition: color .25s ease; }
-.qlinks a:hover { color: var(--ink); text-decoration: none; }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -278,11 +269,8 @@ html[lang="hi"] .hidet { display: none; }
 <body>
 
 
-<div class="topbar">
 <div class="strip" id="strip" data-id="tg-channel-1" data-href="https://t.me/sarkarichart" role="region" aria-label="Announcement" hidden><svg class="wa" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11.5" fill="#29A9EB"/><path fill="#fff" d="M5.2 11.7 16.8 7.2c.5-.2 1 .1.8 .9l-2 9.3c-.1.6-.5.8-1 .5l-2.9-2.2-1.4 1.4c-.2.2-.3.3-.6.3l.2-3 5.4-4.9c.2-.2 0-.3-.3-.1l-6.7 4.2-2.9-.9c-.6-.2-.6-.6.1-.9z"/></svg><span id="stripText" data-en="Get every new govt job alert on Telegram, free." data-hi="हर नई सरकारी नौकरी की सूचना टेलीग्राम पर पाएँ, मुफ़्त।" data-en-s="Job alerts on Telegram, free." data-hi-s="नौकरी की सूचना टेलीग्राम पर, मुफ़्त।">Get every new govt job alert on Telegram, free.</span><a id="stripLink" class="cta" href="#" target="_blank" rel="noopener" data-en="Join the channel →" data-hi="चैनल से जुड़ें →" data-en-s="Join →" data-hi-s="जुड़ें →">Join the channel →</a><button type="button" class="strip-x" id="stripX" aria-label="Close" data-en="Close" data-hi="बंद करें"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
 <script>(function(){var s=document.getElementById("strip"),h=s.dataset.href,id=s.dataset.id,d=null;try{d=localStorage.getItem("sc-strip-closed")}catch(e){}if(!h||d===id)return; s.hidden=false; document.getElementById("stripLink").href=h;function lang(){var l=document.documentElement.lang==="hi"?"hi":"en",sm=matchMedia("(max-width: 640px)").matches;["stripText","stripLink"].forEach(function(k){var e=document.getElementById(k);e.textContent=(sm&&e.dataset[l+"S"])||e.dataset[l]});var x=document.getElementById("stripX");x.setAttribute("aria-label",x.dataset[l]);}try{var sl=localStorage.getItem("sc-lang");if(sl==="hi"||(!sl&&/^hi\b/i.test(navigator.language||"")))document.documentElement.lang="hi"}catch(e){} lang();addEventListener("resize",lang);new MutationObserver(lang).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});document.getElementById("stripX").addEventListener("click",function(){s.hidden=true;try{localStorage.setItem("sc-strip-closed",id)}catch(e){}});})();</script>
-<nav class="qlinks" aria-label="Popular"><a href="/up-govt-jobs/" data-t="qlUp">UP Jobs</a> <a href="/bihar-govt-jobs/" data-t="qlBihar">Bihar Jobs</a> <a href="/rajasthan-govt-jobs/" data-t="qlRaj">Rajasthan Jobs</a> <a href="/mp-govt-jobs/" data-t="qlMp">MP Jobs</a> <a href="/10th-pass-govt-jobs/" data-t="ql10">10th Pass</a> <a href="/12th-pass-govt-jobs/" data-t="ql12">12th Pass</a> <a href="/graduate-govt-jobs/" data-t="qlGrad">Graduate</a> <a href="/?cat=admit-cards" data-t="qlAdmit">Admit Card</a> <a href="/?cat=results" data-t="qlRes">Result</a> <a href="/?cat=answer-keys" data-t="qlKey">Answer Key</a></nav>
-</div>
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
@@ -318,6 +306,7 @@ html[lang="hi"] .hidet { display: none; }
   <footer>
     <p class="pref"><a href="https://www.google.com/preferences/source?q=sarkarichart.com" target="_blank" rel="noopener"><span data-t="prefSrc">Add SarkariChart as a preferred source on Google</span></a><img class="hand" src="/hand.webp" width="24" height="24" alt="" aria-hidden="true" loading="lazy" decoding="async"></p>
     <p class="g" data-t="disclaimer">SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.</p>
+    <p class="browse g"><span><a href="/up-govt-jobs/" data-t="qlUp">UP Jobs</a> ·</span> <span><a href="/bihar-govt-jobs/" data-t="qlBihar">Bihar Jobs</a> ·</span> <span><a href="/rajasthan-govt-jobs/" data-t="qlRaj">Rajasthan Jobs</a> ·</span> <span><a href="/mp-govt-jobs/" data-t="qlMp">MP Jobs</a> ·</span> <span><a href="/10th-pass-govt-jobs/" data-t="ql10">10th Pass</a> ·</span> <span><a href="/12th-pass-govt-jobs/" data-t="ql12">12th Pass</a> ·</span> <span><a href="/graduate-govt-jobs/" data-t="qlGrad">Graduate</a> ·</span> <span><a href="/?cat=admit-cards" data-t="qlAdmit">Admit Card</a> ·</span> <span><a href="/?cat=results" data-t="qlRes">Result</a> ·</span> <span><a href="/?cat=answer-keys" data-t="qlKey">Answer Key</a></span></p>
     <p><a href="/about/" data-t="about">About</a> · <a href="/report/" data-t="report">Report a mistake</a> · <a href="/privacy/" data-t="privacy">Privacy</a> · <a href="/terms/" data-t="terms">Terms</a> · <a href="/contact/" data-t="contact">Contact</a></p>
   </footer>
 </div>
