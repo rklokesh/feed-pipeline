@@ -557,6 +557,8 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
            .replace("{{T_EN}}", t_en).replace("{{T_HI}}", t_hi).replace("{{SLUG}}", slug)
            .replace("{{OGIMG}}", f"{SITE_URL}/notice/{slug}/og.png").replace("{{OGALT}}", esc(f"{en['h1']} — {en['org']} {typ} notice summary card by SarkariChart")).replace("{{URL}}", f"{SITE_URL}/notice/{slug}/")
            .replace("{{LAST}}", f'new Date("{last}T23:59:59+05:30")' if last else "null"))
+    # section titles are real h2 headings (outline for Google and screen readers); styled exactly like before
+    out = re.sub(r'<div class="h"([^>]*)>([^<]*)</div>', r'<h2 class="h"\1>\2</h2>', out)
     return out
 
 

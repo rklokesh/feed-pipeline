@@ -20,7 +20,7 @@
 <title>NABARD Specialist Derivatives &amp; Treasury Management Result | नाबार्ड स्पेशलिस्ट डेरिवेटिव्स एंड ट्रेजरी मैनेजमेंट परिणाम</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">National Bank for Agriculture and Rural Development (NABARD)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">22 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Post name</span><span class="v" data-t="r0v">Specialist – Derivatives &amp; Treasury Management</span></div>
@@ -301,58 +309,58 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The National Bank for Agriculture and Rural Development (NABARD) has announced the result for the Specialist – Derivatives &amp; Treasury Management recruitment under Advertisement No. 03 dated 10.07.2026. According to the official notification, no candidate was found suitable for selection. Candidates who appeared for the recruitment process can check the official notice for confirmation. The bank reserves the right to rectify inadvertent errors if any.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who applied for NABARD Specialist – Derivatives &amp; Treasury Management recruitment under Advt. No. 03.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Advertisement date</span><span class="v" data-t="datesH0v">10 Jul 2026</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Specialist – Derivatives &amp; Treasury Management</span><span class="v" data-t="vacH0v">Not specified · No Candidate Found Suitable for Selection</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Recruitment process</li><li data-t="selH1">Result declaration</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official NABARD careers website.</li><li data-t="howH1">Click on the result notice link for Specialist – Derivatives &amp; Treasury Management.</li><li data-t="howH2">View the notice to check the selection status.</li></ol>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is the NABARD Specialist Derivatives &amp; Treasury Management result?</h3><p data-t="ea0">It is the official announcement of the selection status for candidates who applied for the Specialist – Derivatives &amp; Treasury Management post under advertisement number 03 dated 10.07.2026.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Since no candidates were found suitable, candidates should look out for future recruitment notifications by NABARD.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Organisation</span><span class="v" data-t="extraH0v">National Bank for Agriculture and Rural Development (NABARD)</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://www.nabard.org/auth/writereaddata/CareerNotices/1163297678Result - Specialist – Derivatives &amp; Treasury Management.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">nabard.org</span></a>
       <a class="r" href="https://www.nabard.org" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">nabard.org</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">Has NABARD released the Specialist – Derivatives &amp; Treasury Management result?</h3><p data-t="a0">Yes, NABARD has released the result notice for the Specialist – Derivatives &amp; Treasury Management post.</p></div>
       <div class="qa"><h3 data-t="q1">How many candidates were selected for the NABARD Specialist Derivatives &amp; Treasury Management post?</h3><p data-t="a1">According to the notice, no candidate was found suitable for selection.</p></div>
       <div class="qa"><h3 data-t="q2">What is the advertisement number for this recruitment?</h3><p data-t="a2">The advertisement number is Advt. No. 03 dated 10.07.2026.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check the official result PDF on the NABARD website.</li><li data-t="chkH1">Verify the advertisement number and post name.</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/nabard-development-assistant-prelims-cut-off-2026/"><span data-t="rel0">NABARD Development Assistant Prelims Cut-Off 2026</span><span class="v g num">23 Oct 2026</span></a>
       <a class="r" href="/notice/nabard-development-assistant-hindi-prelims-cut-off-2026/"><span data-t="rel1">NABARD Development Assistant Hindi Prelims Cut-Off 2026</span><span class="v g num">23 Oct 2026</span></a>
       <a class="r" href="/notice/nabard-development-assistant-hindi-mains-cut-off-2026/"><span data-t="rel2">NABARD Development Assistant Hindi Mains Cut-Off 2026</span><span class="v g num">23 Oct 2026</span></a>
@@ -366,7 +374,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">नाबार्ड स्पेशलिस्ट डेरिवेटिव्स एंड ट्रेजरी मैनेजमेंट परिणाम</h2>
       <p class="lead">नाबार्ड ने स्पेशलिस्ट डेरिवेटिव्स एंड ट्रेजरी मैनेजमेंट पद के लिए परिणाम जारी कर दिया है। सूचना में कहा गया है कि चयन के लिए कोई भी उम्मीदवार उपयुक्त नहीं पाया गया। अधिक विवरण के लिए आधिकारिक सूचना देखें।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >22 अक्तूबर 2026</span></div>
       <div class="r"><span >पद का नाम</span><span class="v" >स्पेशलिस्ट – डेरिवेटिव्स एंड ट्रेजरी मैनेजमेंट</span></div>
@@ -376,54 +384,54 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >भर्ती प्रक्रिया → परिणाम घोषणा</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड) ने विज्ञापन संख्या 03 दिनांक 10.07.2026 के तहत स्पेशलिस्ट – डेरिवेटिव्स एंड ट्रेजरी मैनेजमेंट भर्ती के लिए परिणाम घोषित कर दिया है। आधिकारिक अधिसूचना के अनुसार, चयन के लिए कोई भी उम्मीदवार उपयुक्त नहीं पाया गया है। भर्ती प्रक्रिया में शामिल होने वाले उम्मीदवार पुष्टि के लिए आधिकारिक सूचना देख सकते हैं। बैंक के पास किसी भी अनजाने त्रुटि को सुधारने का अधिकार सुरक्षित है।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >विज्ञापन संख्या 03 के तहत नाबार्ड स्पेशलिस्ट – डेरिवेटिव्स एंड ट्रेजरी मैनेजमेंट भर्ती के लिए आवेदन करने वाले उम्मीदवार।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >विज्ञापन तिथि</span><span class="v" >10 जुला 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >स्पेशलिस्ट – डेरिवेटिव्स एंड ट्रेजरी मैनेजमेंट</span><span class="v" >Not specified · चयन के लिए कोई उम्मीदवार उपयुक्त नहीं पाया गया</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >भर्ती प्रक्रिया</li><li >परिणाम घोषणा</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >नाबार्ड की आधिकारिक करियर वेबसाइट पर जाएं।</li><li >स्पेशलिस्ट – डेरिवेटिव्स एंड ट्रेजरी मैनेजमेंट के लिए परिणाम सूचना लिंक पर क्लिक करें।</li><li >चयन स्थिति की जांच करने के लिए सूचना देखें।</li></ol>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >नाबार्ड स्पेशलिस्ट डेरिवेटिव्स एंड ट्रेजरी मैनेजमेंट परिणाम क्या है?</h3><p >यह विज्ञापन संख्या 03 दिनांक 10.07.2026 के तहत स्पेशलिस्ट – डेरिवेटिव्स एंड ट्रेजरी मैनेजमेंट पद के लिए आवेदन करने वाले उम्मीदवारों की चयन स्थिति की आधिकारिक घोषणा है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >चूंकि कोई भी उम्मीदवार उपयुक्त नहीं पाया गया है, इसलिए उम्मीदवारों को नाबार्ड की भविष्य की भर्ती अधिसूचनाओं पर नजर रखनी चाहिए।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >संगठन</span><span class="v" >राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड)</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://www.nabard.org/auth/writereaddata/CareerNotices/1163297678Result - Specialist – Derivatives &amp; Treasury Management.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">nabard.org</span></a>
       <a class="r" href="https://www.nabard.org" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">nabard.org</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >क्या नाबार्ड ने स्पेशलिस्ट – डेरिवेटिव्स एंड ट्रेजरी मैनेजमेंट का परिणाम जारी कर दिया है?</h3><p >हाँ, नाबार्ड ने स्पेशलिस्ट – डेरिवेटिव्स एंड ट्रेजरी मैनेजमेंट पद के लिए परिणाम सूचना जारी कर दी है।</p></div>
       <div class="qa"><h3 >नाबार्ड स्पेशलिस्ट डेरिवेटिव्स एंड ट्रेजरी मैनेजमेंट पद के लिए कितने उम्मीदवारों का चयन किया गया है?</h3><p >सूचना के अनुसार, चयन के लिए कोई भी उम्मीदवार उपयुक्त नहीं पाया गया।</p></div>
       <div class="qa"><h3 >इस भर्ती के लिए विज्ञापन संख्या क्या है?</h3><p >विज्ञापन संख्या 03 दिनांक 10.07.2026 है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >नाबार्ड वेबसाइट पर आधिकारिक परिणाम पीडीएफ की जांच करें।</li><li >विज्ञापन संख्या और पद का नाम सत्यापित करें।</li></ul>
     </section>
     </details>

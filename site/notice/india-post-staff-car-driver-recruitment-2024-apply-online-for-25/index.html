@@ -20,7 +20,7 @@
 <title>India Post Staff Car Driver Recruitment 2024 – Apply Online for 25 Posts | भारतीय डाक स्टाफ कार ड्राइवर भर्ती 2024 – 25 पदों के लिए आवेदन करें</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">India Post</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">30 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Staff Car Driver (Ordinary Grade)</span></div>
@@ -301,67 +309,67 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">India Post has released a notification for filling up 25 vacant posts of Staff Car Driver (Ordinary Grade) in the West Bengal Circle. The recruitment will be conducted on a deputation or absorption basis. Eligible candidates who meet the required criteria should review the notification details and submit their applications as prescribed.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Eligible candidates working in relevant departments for deputation or absorption</li></ul>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Staff Car Driver (Ordinary Grade)</span><span class="v" data-t="vacH0v">25 · West Bengal Circle</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Mode</span><span class="v" data-t="eligH0v">Deputation / Absorption basis</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Review of applications as per deputation/absorption norms</li><li data-t="selH1">Verification of documents and eligibility</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to apply</div>
+      <h2 class="h" data-t="howH">How to apply</h2>
       <ol class="steps"><li data-t="howH0">Check the official India Post website for the detailed notification</li><li data-t="howH1">Verify eligibility for deputation or absorption</li><li data-t="howH2">Send the filled application form along with required documents through proper channel</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Service particulars</li><li data-t="docH1">Educational certificates</li><li data-t="docH2">Driving license</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Do not delay sending applications through proper channel</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is India Post Staff Car Driver Recruitment?</h3><p data-t="ea0">It is a recruitment notification issued by India Post to fill vacant posts of Staff Car Driver (Ordinary Grade) in the West Bengal Circle on a deputation or absorption basis.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Document verification and final appointment</li></ol>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://www.indiapost.gov.in/api/documents/file/10392z42m6853o1eh00ged3bvnq05ngs0s5c23mn2j38mj63afkt0joer3d9n0" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">indiapost.gov.in</span></a>
       <a class="r" href="https://www.indiapost.gov.in/vacancies" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">indiapost.gov.in</span></a>
       <a class="r" href="https://www.indiapost.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">indiapost.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">How many vacancies are available for India Post Staff Car Driver Recruitment 2024?</h3><p data-t="a0">There are a total of 25 vacant posts available.</p></div>
       <div class="qa"><h3 data-t="q1">What is the mode of recruitment for these posts?</h3><p data-t="a1">The recruitment is on a deputation or absorption basis.</p></div>
       <div class="qa"><h3 data-t="q2">Which circle has announced these vacancies?</h3><p data-t="a2">The vacancies are announced for the West Bengal Circle.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Read the official notification carefully</li><li data-t="chkH1">Ensure eligibility before applying</li></ul>
     </section>
     <section class="kv rel" id="exam" data-t-aria="exH">
-      <div class="h" data-t="exH">All updates for India Post Staff Car Driver 2026</div>
+      <h2 class="h" data-t="exH">All updates for India Post Staff Car Driver 2026</h2>
       <a class="r" href="/notice/india-post-staff-car-driver-recruitment-2026/"><span><span data-t="ex0">India Post Staff Car Driver Recruitment 2026</span> <small class="g" data-t="exs0">Recruitment</small></span><span class="v g num">1 Aug 2026</span></a>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/india-post-mms-kolkata-skilled-artisan-recruitment-2026-apply-fo/"><span data-t="rel0">India Post MMS Kolkata Skilled Artisan Recruitment 2026 – Apply for 19 Posts</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/nabard-specialists-on-contract-recruitment-2026-27/"><span data-t="rel1">NABARD Specialists on Contract Recruitment 2026-27</span><span class="v g num">27 Oct 2026</span></a>
       <a class="r" href="/notice/ugc-net-december-2026-last-date-extended/"><span data-t="rel2">UGC-NET December 2026 Last Date Extended – Apply Online</span><span class="v g num">27 Oct 2026</span></a>
@@ -374,7 +382,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">भारतीय डाक स्टाफ कार ड्राइवर भर्ती 2024 – 25 पदों के लिए आवेदन करें</h2>
       <p class="lead">भारतीय डाक ने पश्चिम बंगाल सर्किल में प्रतिनियुक्ति या आमेलन के आधार पर स्टाफ कार ड्राइवर के 25 रिक्त पदों को भरने के लिए आवेदन आमंत्रित किए हैं। योग्य और इच्छुक उम्मीदवार आधिकारिक अधिसूचना देखें और आवेदन करें।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >भारतीय डाक</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >30 अक्तूबर 2026</span></div>
       <div class="r"><span >पद</span><span class="v" >स्टाफ कार ड्राइवर (साधारण श्रेणी)</span></div>
@@ -384,59 +392,59 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >प्रतिनियुक्ति / आमेलन के नियमों के अनुसा → दस्तावेजों और पात्रता का सत्यापन</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >भारतीय डाक ने पश्चिम बंगाल सर्किल में स्टाफ कार ड्राइवर (साधारण श्रेणी) के 25 रिक्त पदों को भरने के लिए एक अधिसूचना जारी की है। भर्ती प्रतिनियुक्ति या आमेलन के आधार पर की जाएगी। आवश्यक मानदंडों को पूरा करने वाले योग्य उम्मीदवार अधिसूचना के विवरण की समीक्षा करें और निर्धारित अनुसार आवेदन जमा करें।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >प्रतिनियुक्ति या आमेलन के लिए संबंधित विभागों में काम करने वाले योग्य उम्मीदवार</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >स्टाफ कार ड्राइवर (साधारण श्रेणी)</span><span class="v" >25 · पश्चिम बंगाल सर्किल</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >माध्यम</span><span class="v" >प्रतिनियुक्ति / आमेलन के आधार पर</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >प्रतिनियुक्ति / आमेलन के नियमों के अनुसार आवेदनों की समीक्षा</li><li >दस्तावेजों और पात्रता का सत्यापन</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >आवेदन कैसे करें</div>
+      <h2 class="h" >आवेदन कैसे करें</h2>
       <ol class="steps"><li >विस्तृत अधिसूचना के लिए आधिकारिक भारतीय डाक वेबसाइट देखें</li><li >प्रतिनियुक्ति या आमेलन के लिए पात्रता की जांच करें</li><li >आवश्यक दस्तावेजों के साथ भरा हुआ आवेदन पत्र उचित माध्यम से भेजें</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >सेवा विवरण</li><li >शैक्षणिक प्रमाण पत्र</li><li >ड्राइविंग लाइसेंस</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >उचित माध्यम से आवेदन भेजने में देरी न करें</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >भारतीय डाक स्टाफ कार ड्राइवर भर्ती क्या है?</h3><p >यह भारतीय डाक द्वारा पश्चिम बंगाल सर्किल में स्टाफ कार ड्राइवर (साधारण श्रेणी) کے रिक्त पदों को प्रतिनियुक्ति या आमेलन के आधार पर भरने के लिए जारी की गई एक भर्ती अधिसूचना है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >दस्तावेज़ सत्यापन और अंतिम नियुक्ति</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://www.indiapost.gov.in/api/documents/file/10392z42m6853o1eh00ged3bvnq05ngs0s5c23mn2j38mj63afkt0joer3d9n0" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">indiapost.gov.in</span></a>
       <a class="r" href="https://www.indiapost.gov.in/vacancies" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">indiapost.gov.in</span></a>
       <a class="r" href="https://www.indiapost.gov.in" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">indiapost.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >भारतीय डाक स्टाफ कार ड्राइवर भर्ती 2024 के लिए कुल कितनी रिक्तियां उपलब्ध हैं?</h3><p >कुल 25 रिक्त पद उपलब्ध हैं।</p></div>
       <div class="qa"><h3 >इन पदों के लिए भर्ती का तरीका क्या है?</h3><p >भर्ती प्रतिनियुक्ति या आमेलन के आधार पर है।</p></div>
       <div class="qa"><h3 >किस सर्किल ने इन रिक्तियों की घोषणा की है?</h3><p >पश्चिम बंगाल सर्किल के लिए रिक्तियों की घोषणा की गई है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >आधिकारिक अधिसूचना को ध्यान से पढ़ें</li><li >आवेदन करने से पहले पात्रता सुनिश्चित करें</li></ul>
     </section>
     </details>

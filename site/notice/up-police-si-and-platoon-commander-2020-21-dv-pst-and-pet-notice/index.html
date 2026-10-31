@@ -20,7 +20,7 @@
 <title>UP Police SI and Platoon Commander 2020-21 DV PST and PET Notice | उत्तर प्रदेश पुलिस एसआई और प्लाटून कमांडर 2020-21 डीवी पीएसटी और पीईटी नोटिस</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Uttar Pradesh Police Recruitment and Promotion Board (UPPBPB)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">27 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Post Name</span><span class="v" data-t="r0v">Sub Inspector Civil Police, PAC Platoon Commander &amp; Fire Officer II (2020-21)</span></div>
@@ -302,64 +310,64 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The Uttar Pradesh Police Recruitment and Promotion Board (UPPBPB) has released a notice regarding the Document Verification, Physical Standard Test (DV/PST), and Physical Efficiency Test (PET) for the Direct Recruitment 2020-21 of Sub Inspector Civil Police, PAC Platoon Commander, and Fire Officer II. This is in compliance with the Hon&#x27;ble High Court, Allahabad orders in Special Appeal No. 651/2026. The DV/PST will be held on 02 November 2026 at Reserve Police Lines, Lucknow, and the PET will be held on 05 November 2026 at 35th Battalion PAC, Lucknow. Eligible candidates must check their registered email for admit cards.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates covered under High Court Special Appeal No. 651/2026 and Writ Petition No. 11427/2022 for UP Police SI 2020-21 recruitment.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">DV / PST Date</span><span class="v" data-t="datesH0v">02 Nov 2026</span></div>
       <div class="r"><span data-t="datesH1l">PET Date</span><span class="v" data-t="datesH1v">05 Nov 2026</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Document Verification and Physical Standard Test (DV/PST)</li><li data-t="selH1">Physical Efficiency Test (PET)</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Check your registered e-mail ID for the admit card.</li><li data-t="howH1">Download and print the admit card along with instructions.</li><li data-t="howH2">Report at Reserve Police Lines, Lucknow on 02 Nov 2026 at 08:00 AM for DV/PST with original documents, certified copies, and photographs.</li><li data-t="howH3">Report at 35th Battalion PAC, Lucknow on 05 Nov 2026 at 06:00 AM for PET if qualified.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Admit Card with instructions</li><li data-t="docH1">Original documents</li><li data-t="docH2">Certified photocopy of documents</li><li data-t="docH3">Photographs</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Do not miss the given date, time, and venue as no alternative opportunity will be provided.</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is this notice about?</h3><p data-t="ea0">This notice announces the schedule for Document Verification, Physical Standard Test (DV/PST), and Physical Efficiency Test (PET) for specific candidates of the UP Police Sub Inspector and Platoon Commander Recruitment 2020-21 in compliance with High Court orders.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Qualifying in DV/PST and PET stages for further recruitment process.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Contact Helpline</span><span class="v" data-t="extraH0v">0522-2235752 / sampark@uppbpb.gov.in</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://uppbpb.gov.in/FilesUploaded/Notice/Vigyapti SICP_2020_21_DT_27_10_2026ca44a77c-4c05-4483-9ca3-8f42a16394b1.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">uppbpb.gov.in</span></a>
       <a class="r" href="https://uppbpb.gov.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">uppbpb.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When is the DV/PST for UP Police SI 2020-21 scheduled?</h3><p data-t="a0">The DV/PST is scheduled for 02 November 2026 at Reserve Police Lines, Lucknow.</p></div>
       <div class="qa"><h3 data-t="q1">When is the PET scheduled?</h3><p data-t="a1">The Physical Efficiency Test (PET) is scheduled for 05 November 2026 at 35th Battalion PAC, Lucknow.</p></div>
       <div class="qa"><h3 data-t="q2">How can I download my admit card?</h3><p data-t="a2">Admit cards are being sent directly to the candidates&#x27; registered e-mail IDs.</p></div>
       <div class="qa"><h3 data-t="q3">What should I do if I face difficulty downloading the admit card?</h3><p data-t="a3">You can contact via helpline number 0522-2235752 or email at sampark@uppbpb.gov.in.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Keep your registered email active and check for the admit card.</li><li data-t="chkH1">Arrange all original and photocopied documents as required.</li><li data-t="chkH2">Reach the venue on time.</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/up-police-constable-pet-exam-date-rescheduled-notice-2025/"><span data-t="rel0">UP Police Constable PET Exam Date Rescheduled Notice 2025</span><span class="v g num">6 Oct 2026</span></a>
       <a class="r" href="/notice/up-police-homeguard-enrolment-2025-final-marks-notice/"><span data-t="rel1">UP Police Homeguard Enrolment 2025 Final Marks Notice 2026</span><span class="v g num">24 Oct 2026</span></a>
       <a class="r" href="/notice/cisf-constable-and-asi-exam-date-2024-cbt-schedule/"><span data-t="rel2">CISF Constable and ASI Exam Date 2024 – CBT Schedule</span><span class="v g num">31 Oct 2026</span></a>
@@ -373,7 +381,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">उत्तर प्रदेश पुलिस एसआई और प्लाटून कमांडर 2020-21 डीवी पीएसटी और पीईटी नोटिस</h2>
       <p class="lead">उच्च न्यायालय के आदेश के क्रम में उत्तर प्रदेश पुलिस उप निरीक्षक और प्लाटून कमांडर भर्ती 2020-21 के डीवी/पीएसटी और पीईटी परीक्षा की तिथि जारी कर दी गई है। प्रवेश पत्र पंजीकृत ईमेल पर भेजे जा रहे हैं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >उत्तर प्रदेश पुलिस भर्ती एवं प्रोन्नति बोर्ड</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >27 अक्तूबर 2026</span></div>
       <div class="r"><span >पद का नाम</span><span class="v" >उप निरीक्षक नागरिक पुलिस, पीएसी प्लाटून कमाण्डर एवं अग्निशमन द्वितीय अधिकारी (2020-21)</span></div>
@@ -384,60 +392,60 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >अभिलेखों की संवीक्षा एवं शारीरिक मानक पर → शारीरिक दक्षता परीक्षा</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >उत्तर प्रदेश पुलिस भर्ती एवं प्रोन्नति बोर्ड (UPPBPB) ने उप निरीक्षक नागरिक पुलिस, पीएसी प्लाटून कमाण्डर एवं अग्निशमन द्वितीय अधिकारी सीधी भर्ती-2020-21 के सम्बन्ध में अभिलेखों की संवीक्षा, शारीरिक मानक परीक्षण (डीवी/पीएसटी) और शारीरिक दक्षता परीक्षा (पीईटी) के आयोजन के सम्बन्ध में सूचना जारी की है। यह माननीय उच्च न्यायालय, इलाहाबाद द्वारा विशेष अपील संख्या 651/2026 में पारित निर्णय के क्रम में है। डीवी/पीएसटी दिनांक 02-11-2026 को रिजर्व पुलिस लाइन्स, लखनऊ में तथा पीईटी दिनांक 05-11-2026 को 35वीं वाहिनी पीएसी, लखनऊ में आयोजित की जायेगी। योग्य अभ्यर्थी अपने पंजीकृत ई-मेल पर प्रवेश पत्र देख सकते हैं।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >उत्तर प्रदेश पुलिस एसआई भर्ती 2020-21 के संबंध में उच्च न्यायालय की विशेष अपील संख्या 651/2026 और रिट याचिका संख्या 11427/2022 से आच्छादित अभ्यर्थी।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >डीवी / पीएसटी तिथि</span><span class="v" >02-11-2026</span></div>
       <div class="r"><span >पीईटी तिथि</span><span class="v" >05-11-2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >अभिलेखों की संवीक्षा एवं शारीरिक मानक परीक्षण (डीवी/पीएसटी)</li><li >शारीरिक दक्षता परीक्षा (पीईटी)</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >प्रवेश पत्र के लिए अपनी पंजीकृत ई-मेल आईडी चेक करें।</li><li >प्रवेश पत्र और निर्देश डाउनलोड करें और प्रिंट करें।</li><li >डीवी/पीएसटी के लिए 02-11-2026 को प्रातः 08:00 बजे रिजर्व पुलिस लाइन्स, लखनऊ में मूल दस्तावेजों, प्रमाणित प्रतियों और फोटो के साथ उपस्थित हों।</li><li >सफल होने पर पीईटी के लिए 05-11-2026 को प्रातः 06:00 बजे 35वीं वाहिनी पीएसी, लखनऊ में उपस्थित हों।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >निर्देश सहित प्रवेश पत्र</li><li >मूल दस्तावेज</li><li >दस्तावेजों की प्रमाणित छायाप्रति</li><li >फोटोग्राफ</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >दी गई तिथि, समय और स्थान पर उपस्थित होना अनिवार्य है, अन्यथा कोई अन्य अवसर नहीं दिया जाएगा।</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >यह नोटिस किस बारे में है?</h3><p >यह नोटिस उच्च न्यायालय के आदेश के अनुपालन में उत्तर प्रदेश पुलिस उप निरीक्षक और प्लाटून कमांडर भर्ती 2020-21 के विशिष्ट अभ्यर्थियों के लिए डीवी/पीएसटी और पीईटी परीक्षा की तिथि की घोषणा करता है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >आगे की भर्ती प्रक्रिया के लिए डीवी/पीएसटी और पीईटी चरणों में उत्तीर्ण होना।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >संपर्क हेल्पलाइन</span><span class="v" >0522-2235752 / sampark@uppbpb.gov.in</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://uppbpb.gov.in/FilesUploaded/Notice/Vigyapti SICP_2020_21_DT_27_10_2026ca44a77c-4c05-4483-9ca3-8f42a16394b1.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">uppbpb.gov.in</span></a>
       <a class="r" href="https://uppbpb.gov.in/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">uppbpb.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >यूपी पुलिस एसआई 2020-21 के लिए डीवी/पीएसटी कब है?</h3><p >डीवी/पीएसटी 02 नवंबर 2026 को रिजर्व पुलिस लाइन्स, लखनऊ में आयोजित होगी।</p></div>
       <div class="qa"><h3 >पीईटी परीक्षा कब है?</h3><p >शारीरिक दक्षता परीक्षा (पीईटी) 05 नवंबर 2026 को 35वीं वाहिनी पीएसी, लखनऊ में आयोजित होगी।</p></div>
       <div class="qa"><h3 >मैं अपना प्रवेश पत्र कैसे डाउनलोड कर सकता हूँ?</h3><p >प्रवेश पत्र सीधे अभ्यर्थियों की पंजीकृत ई-मेल आईडी पर भेजे जा रहे हैं।</p></div>
       <div class="qa"><h3 >प्रवेश पत्र डाउनलोड करने में कठिनाई होने पर क्या करें?</h3><p >आप हेल्पलाइन नंबर 0522-2235752 या ईमेल sampark@uppbpb.gov.in पर संपर्क कर सकते हैं।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >अपनी पंजीकृत ईमेल आईडी सक्रिय रखें और प्रवेश पत्र चेक करें।</li><li >आवश्यक सभी मूल और फोटोकॉपी दस्तावेज तैयार रखें।</li><li >निर्धारित समय पर केंद्र पहुंचे।</li></ul>
     </section>
     </details>

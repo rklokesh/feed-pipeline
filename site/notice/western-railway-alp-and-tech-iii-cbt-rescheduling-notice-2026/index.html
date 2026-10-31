@@ -20,7 +20,7 @@
 <title>RRC Western Railway ALP Tech III Exam Date 2026 – CBT Rescheduled | आरआरसी पश्चिमी रेलवे एएलपी टेक III परीक्षा तिथि 2026 – सीबीटी पुनर्चक्रित</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Railway Recruitment Cell, Western Railway (RRC WR)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">23 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">ALP / Tech. III</span></div>
@@ -303,70 +311,70 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#chgH" data-t="chgH">What changed</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#notH" data-t="notH">Who cannot apply</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">Railway Recruitment Cell, Western Railway (RRC WR) has released an official notice regarding the rescheduling of the Computer Based Test (CBT) for the post of Assistant Loco Pilot (ALP) and Technician-III under GDCE Notification No. 01/2023. As per the notice, the exam previously scheduled for 07-11-2026 has been postponed and will now be conducted on 13-11-2026. Candidates are advised to check the official website for call letter updates.</p>
     </section>
     <section class="kv" id="chgH" data-t-aria="chgH">
-      <div class="h" data-t="chgH">What changed</div>
+      <h2 class="h" data-t="chgH">What changed</h2>
       <div class="r"><span data-t="chgH0l">CBT Exam Date</span><span class="v" data-t="chgH0v">07 Nov 2026 → 13 Nov 2026</span></div>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Registered departmental candidates of Western Railway for ALP and Tech-III posts</li></ul>
     </section>
     <section class="kv" id="notH" data-t-aria="notH">
-      <div class="h" data-t="notH">Who cannot apply</div>
+      <h2 class="h" data-t="notH">Who cannot apply</h2>
       <ul class="steps dots"><li data-t="notH0">Employees who have been transferred from Western Railway to Other Zonal Railways / PUs are not eligible to appear in the CBT.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Original Exam Date</span><span class="v" data-t="datesH0v">07 Nov 2026</span></div>
       <div class="r"><span data-t="datesH1l">Rescheduled Exam Date</span><span class="v" data-t="datesH1v">13 Nov 2026</span></div>
       <div class="r"><span data-t="datesH2l">Admit Card Availability</span><span class="v" data-t="datesH2v">7 days before the exam date</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">ALP / Tech. III</span><span class="v" data-t="vacH0v">As per GDCE Notification No. 01/2023</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Employee Status</span><span class="v" data-t="eligH0v">Employees transferred from Western Railway to Other Zonal Railways/PUs are not eligible.</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Computer Based Test (CBT)</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official RRC Western Railway website at www.rrc-wr.com.</li><li data-t="howH1">Click on the call letter download link available 7 days before the exam.</li><li data-t="howH2">Log in using your credentials to download and print your admit card.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Printed copy of the CBT call letter</li><li data-t="docH1">Valid Photo ID proof</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Do not wait until the last day to download the admit card.</li><li data-t="mistH1">Ensure you are not transferred to another zone before appearing, as candidature will be rejected at the DV stage.</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is the RRC Western Railway ALP Tech III Exam Rescheduling?</h3><p data-t="ea0">The exam originally scheduled for 07 November 2026 has been postponed and is now rescheduled to take place on 13 November 2026.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Appear for the CBT on 13 Nov 2026</li><li data-t="aftH1">Qualify for subsequent stages and Document Verification</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Notice Reference</span><span class="v" data-t="extraH0v">GDCE Notification No. 01/2023</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://www.rrc-wr.com/rrwc/Files/5000775f-bdce-49e4-a0c9-4492738f8428.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rrc-wr.com</span></a>
       <a class="r" href="https://www.rrc-wr.com/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rrc-wr.com</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When is the rescheduled RRC Western Railway ALP/Tech-III CBT exam?</h3><p data-t="a0">The CBT exam is rescheduled to 13 November 2026.</p></div>
       <div class="qa"><h3 data-t="q1">What was the previous date of the RRC Western Railway ALP CBT?</h3><p data-t="a1">The exam was previously scheduled for 07 November 2026.</p></div>
       <div class="qa"><h3 data-t="q2">When can I download the call letter for the RRC Western Railway ALP exam?</h3><p data-t="a2">The call letter download link will be available 7 days before the date of the CBT exam on the official website.</p></div>
@@ -374,11 +382,11 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 data-t="q4">Are transferred employees eligible for the Western Railway ALP CBT?</h3><p data-t="a4">No, employees transferred from Western Railway to other zonal railways or production units are not eligible to appear.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check the revised exam date</li><li data-t="chkH1">Download call letter 7 days prior to the exam</li><li data-t="chkH2">Verify eligibility regarding current posting zone</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/western-railway-departmental-cbt-call-letter-2026/"><span data-t="rel0">Western Railway Departmental CBT Call Letter 2026</span><span class="v g num">27 Oct 2026</span></a>
       <a class="r" href="/notice/western-railway-sports-quota-2026-volleyball-amendment/"><span data-t="rel1">RRC Western Railway Sports Quota Volleyball Amendment 2026</span><span class="v g num">3 Sep 2026</span></a>
       <a class="r" href="/notice/rrc-western-railway-sports-quota-recruitment-2026/"><span data-t="rel2">RRC Western Railway Sports Quota Recruitment 2026</span><span class="v g num">27 Aug 2026</span></a>
@@ -392,7 +400,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">आरआरसी पश्चिमी रेलवे एएलपी टेक III परीक्षा तिथि 2026 – सीबीटी पुनर्चक्रित</h2>
       <p class="lead">पश्चिमी रेलवे ने जीडीसीई अधिसूचना संख्या 01/2023 के तहत एएलपी और टेक-III पदों के लिए कंप्यूटर आधारित परीक्षा को 13-11-2026 तक पुनर्चक्रित कर दिया है। उम्मीदवार परीक्षा से 7 दिन पहले आधिकारिक वेबसाइट से अपने प्रवेश पत्र डाउनलोड कर सकते हैं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >रेलवे भर्ती सेल, पश्चिमी रेलवे (आरआरसी डब्ल्यूआर)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >23 अक्तूबर 2026</span></div>
       <div class="r"><span >पद</span><span class="v" >सहायक लोको पायलट / तकनीशियन तृतीय</span></div>
@@ -404,70 +412,70 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >कंप्यूटर आधारित परीक्षा</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >रेलवे भर्ती सेल, पश्चिमी रेलवे (आरआरसी डब्ल्यूआर) ने जीडीसीई अधिसूचना संख्या 01/2023 के तहत सहायक लोको पायलट (एएलपी) और तकनीशियन-III के पद के लिए कंप्यूटर आधारित परीक्षा (सीबीटी) के पुनर्चक्रण के संबंध में एक आधिकारिक सूचना जारी की है। नोटिस के अनुसार, पहले 07-11-2026 को निर्धारित परीक्षा अब 13-11-2026 को आयोजित की जाएगी। उम्मीदवारों को सलाह दी जाती है कि वे प्रवेश पत्र के अपडेट के लिए आधिकारिक वेबसाइट देखें।</p>
     </section>
     <section class="kv">
-      <div class="h" >क्या बदला</div>
+      <h2 class="h" >क्या बदला</h2>
       <div class="r"><span >सीबीटी परीक्षा तिथि</span><span class="v" >07 नवंबर 2026 → 13 नवंबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >एएलपी और टेक-III पदों के लिए पश्चिमी रेलवे के पंजीकृत विभागीय उम्मीदवार</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >कौन आवेदन नहीं कर सकता</div>
+      <h2 class="h" >कौन आवेदन नहीं कर सकता</h2>
       <ul class="steps dots"><li >जो कर्मचारी पश्चिमी रेलवे से अन्य जोनल रेलवे / पीयू में स्थानांतरित हो चुके हैं, वे सीबीटी में उपस्थित होने के पात्र नहीं हैं।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >मूल परीक्षा तिथि</span><span class="v" >07 नवंबर 2026</span></div>
       <div class="r"><span >पुनर्चक्रित परीक्षा तिथि</span><span class="v" >13 नवंबर 2026</span></div>
       <div class="r"><span >प्रवेश पत्र की उपलब्धता</span><span class="v" >परीक्षा तिथि से 7 दिन पहले</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >सहायक लोको पायलट / तकनीशियन तृतीय</span><span class="v" >जीडीसीई अधिसूचना संख्या 01/2023 के अनुसार</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >कर्मचारी स्थिति</span><span class="v" >पश्चिमी रेलवे से अन्य जोनल रेलवे/पीयू में स्थानांतरित कर्मचारी पात्र नहीं हैं।</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >कंप्यूटर आधारित परीक्षा (सीबीटी)</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >आधिकारिक वेबसाइट www.rrc-wr.com पर जाएं।</li><li >परीक्षा से 7 दिन पहले उपलब्ध प्रवेश पत्र डाउनलोड लिंक पर क्लिक करें।</li><li >अपना प्रवेश पत्र डाउनलोड करने और प्रिंट करने के लिए अपने विवरण के साथ लॉगिन करें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >सीबीटी कॉल लेटर की मुद्रित प्रति</li><li >वैध फोटो पहचान प्रमाण</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >प्रवेश पत्र डाउनलोड करने के लिए अंतिम दिन तक प्रतीक्षा न करें।</li><li >यह सुनिश्चित करें कि आप उपस्थित होने से पहले किसी अन्य जोन में स्थानांतरित नहीं हुए हैं, अन्यथा दस्तावेज़ सत्यापन चरण में उम्मीदवारी खारिज कर दी जाएगी।</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >आरआरसी पश्चिमी रेलवे एएलपी टेक III परीक्षा पुनर्चक्रण क्या है?</h3><p >मूल रूप से 07 नवंबर 2026 को निर्धारित परीक्षा को स्थगित कर दिया गया है और अब यह 13 नवंबर 2026 को आयोजित की जाएगी।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >13 नवंबर 2026 को सीबीटी में उपस्थित हों</li><li >अगले चरणों और दस्तावेज़ सत्यापन के लिए अर्हता प्राप्त करें</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >सूचना संदर्भ</span><span class="v" >जीडीसीई अधिसूचना संख्या 01/2023</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://www.rrc-wr.com/rrwc/Files/5000775f-bdce-49e4-a0c9-4492738f8428.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">rrc-wr.com</span></a>
       <a class="r" href="https://www.rrc-wr.com/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">rrc-wr.com</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >पुनर्चक्रित आरआरसी पश्चिमी रेलवे एएलपी/टेक-III सीबीटी परीक्षा कब है?</h3><p >सीबीटी परीक्षा अब 13 नवंबर 2026 को होगी।</p></div>
       <div class="qa"><h3 >आरआरसी पश्चिमी रेलवे एएलपी सीबीटी की पिछली तारीख क्या थी?</h3><p >परीक्षा पहले 07 नवंबर 2026 को निर्धारित थी।</p></div>
       <div class="qa"><h3 >मैं आरआरसी पश्चिमी रेलवे एएलपी परीक्षा के लिए कॉल लेटर कब डाउनलोड कर सकता हूँ?</h3><p >कॉल लेटर डाउनलोड लिंक आधिकारिक वेबसाइट पर सीबीटी परीक्षा की तारीख से 7 दिन पहले उपलब्ध होगा।</p></div>
@@ -475,7 +483,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 >क्या स्थानांतरित कर्मचारी पश्चिमी रेलवे एएलपी सीबीटी के लिए पात्र हैं?</h3><p >नहीं, पश्चिमी रेलवे से अन्य जोनल रेलवे या उत्पादन इकाइयों में स्थानांतरित कर्मचारी उपस्थित होने के पात्र नहीं हैं।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >संशोधित परीक्षा तिथि की जाँच करें</li><li >परीक्षा से 7 दिन पहले कॉल लेटर डाउनलोड करें</li><li >वर्तमान पोस्टिंग ज़ोन के संबंध में पात्रता सत्यापित करें</li></ul>
     </section>
     </details>

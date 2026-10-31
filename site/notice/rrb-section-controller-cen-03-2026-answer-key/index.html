@@ -20,7 +20,7 @@
 <title>RRB Section Controller CEN 03/2026 Answer Key &amp; Objections | रेलवे भर्ती बोर्ड सेक्शन कंट्रोलर CEN 03/2026 उत्तर कुंजी और आपत्ति</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Railway Recruitment Boards (RRB)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">26 Oct 2026</span></div>
       <div class="r"><span data-t="gTot">Total vacancies</span><span class="v" data-t="gTotV">32,026 (Level 6 of 7th CPC Pay Matrix)</span></div>
@@ -304,74 +312,74 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#notH" data-t="notH">Who cannot apply</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#fee" data-t="fee">Application fee</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#payH" data-t="payH">Salary and pay level</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">Railway Recruitment Boards (RRB) has announced the availability of question papers, responses, and answer keys for the Computer Based Test (CBT) held under CEN 03/2026 for Section Controller posts in Level 6 of the 7th CPC Pay Matrix. The exam was conducted from 12.10.2026 to 13.10.2026. Candidates who appeared for the examination can view their response sheets and raise online objections along with the prescribed fee from 26.10.2026 to 03.11.2026. Read on to know the complete schedule, fee details, and procedure for raising objections.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who appeared for the RRB CEN 03/2026 Section Controller CBT.</li></ul>
     </section>
     <section class="kv" id="notH" data-t-aria="notH">
-      <div class="h" data-t="notH">Who cannot apply</div>
+      <h2 class="h" data-t="notH">Who cannot apply</h2>
       <ul class="steps dots"><li data-t="notH0">Candidates who did not appear in the CBT held from 12.10.2026 to 13.10.2026.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">CBT Exam Date</span><span class="v" data-t="datesH0v">12 Oct 2026 to 13 Oct 2026</span></div>
       <div class="r"><span data-t="datesH1l">Answer Key and Objection Window Start</span><span class="v" data-t="datesH1v">26 Oct 2026 (05:00 PM)</span></div>
       <div class="r"><span data-t="datesH2l">Closing of Objection Window</span><span class="v" data-t="datesH2v">03 Nov 2026 (05:00 PM)</span></div>
     </section>
     <section class="kv" id="fee" data-t-aria="fee">
-      <div class="h" data-t="fee">Application fee</div>
+      <h2 class="h" data-t="fee">Application fee</h2>
       <div class="r"><span data-t="f0">All Candidates (per question)</span><span class="v num">₹50</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Section Controller</span><span class="v" data-t="vacH0v">As per CEN 03/2026 · Level 6 of 7th CPC Pay Matrix</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">CBT Appearance</span><span class="v" data-t="eligH0v">Candidates who appeared in the CBT for CEN 03/2026 (Section Controller) held from 12.10.2026 to 13.10.2026.</span></div>
     </section>
     <section class="kv" id="payH" data-t-aria="payH">
-      <div class="h" data-t="payH">Salary and pay level</div>
+      <h2 class="h" data-t="payH">Salary and pay level</h2>
       <div class="r"><span data-t="payH0l">Pay Scale</span><span class="v" data-t="payH0v">Level 6 of 7th CPC Pay Matrix</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Computer Based Test (CBT)</li><li data-t="selH1">Viewing of Answer Key and Raising Objections</li><li data-t="selH2">Final Answer Key and Result</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official website of your respective Railway Recruitment Board (RRB).</li><li data-t="howH1">Click on the link for viewing question paper, responses, and answer keys / raising objections for CEN 03/2026.</li><li data-t="howH2">Log in using your credentials.</li><li data-t="howH3">View your response sheet and submit objections along with the prescribed fee before 03.11.2026 (05:00 PM).</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Candidate Login Credentials (Registration Number, Password/Date of Birth)</li><li data-t="docH1">Online Payment Details for Fee Submission (Debit Card, Credit Card, UPI, Net Banking)</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Do not wait until the last moment to raise objections; complete the process well before 03.11.2026 at 05:00 PM.</li><li data-t="mistH1">Ensure objections are supported with valid details as the decision of RRBs shall be final.</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is the RRB Section Controller CEN 03/2026 Objection Tracker?</h3><p data-t="ea0">It is an online portal provided by Railway Recruitment Boards allowing candidates who appeared for the Section Controller CBT to view their attempted answers, official answer keys, and submit objections against any discrepancies.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">RRBs will review all valid objections received from candidates.</li><li data-t="aftH1">Based on the reviewed objections, a final answer key will be prepared and the final result will be declared.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Fee Refund Rule</span><span class="v" data-t="extraH0v">If an objection is found correct, the fee paid is refunded after deducting applicable bank charges to the originating account.</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://rrb.indianrailways.gov.in/-/image/179299755991426.10.2026_ENG_OBJECTION_TRACKER_NOTICE_FOR_CEN_03_2026_SC.pdf/examsDocuments" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rrb.indianrailways.gov.in</span></a>
       <a class="r" href="https://rrb.indianrailways.gov.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rrb.indianrailways.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When was the RRB Section Controller CEN 03/2026 CBT conducted?</h3><p data-t="a0">The Computer Based Test was conducted from 12.10.2026 to 13.10.2026.</p></div>
       <div class="qa"><h3 data-t="q1">When can I view the question paper and raise objections?</h3><p data-t="a1">The link is active from 26.10.2026 (05:00 PM) to 03.11.2026 (05:00 PM).</p></div>
       <div class="qa"><h3 data-t="q2">What is the fee for raising objections?</h3><p data-t="a2">The prescribed fee is Rs. 50/- plus applicable bank service charges per question.</p></div>
@@ -382,15 +390,15 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 data-t="q7">Where can I find the objection tracker link?</h3><p data-t="a7">The link is provided on the official websites of the respective Railway Recruitment Boards (RRBs).</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check your responses against the official answer key.</li><li data-t="chkH1">Keep your online payment method ready if raising any objection.</li><li data-t="chkH2">Submit objections before 03.11.2026 (05:00 PM).</li></ul>
     </section>
     <section class="kv rel" id="exam" data-t-aria="exH">
-      <div class="h" data-t="exH">All updates for RRB Section Controller 2026</div>
+      <h2 class="h" data-t="exH">All updates for RRB Section Controller 2026</h2>
       <a class="r" href="/notice/rrb-cen-03-2026-section-controller-answer-key/"><span><span data-t="ex0">RRB CEN 03/2026 Section Controller Answer Key 2026 – Raise Objections</span> <small class="g" data-t="exs0">Objections Open</small></span><span class="v g num">26 Oct 2026</span></a>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/rrb-ntpc-cbt-2-result-2025-cbtst-shortlist-and-score-card-link/"><span data-t="rel0">RRB NTPC CBT-2 Result 2025 – CBTST Shortlist and Score Card Link</span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/rrb-ntpc-undergraduate-cen-07-2025-cut-off-2026-cbtst-marks-out/"><span data-t="rel1">RRB NTPC Undergraduate CEN 07/2025 Cut Off 2026 – CBTST Marks Out</span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/rrb-je-exam-date-2026-cbt-i-rescheduled-notice-admit-card/"><span data-t="rel2">RRB JE Exam Date 2026 – CBT-I Rescheduled Notice &amp; Admit Card</span><span class="v g num">28 Oct 2026</span></a>
@@ -403,7 +411,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">रेलवे भर्ती बोर्ड सेक्शन कंट्रोलर CEN 03/2026 उत्तर कुंजी और आपत्ति</h2>
       <p class="lead">रेलवे भर्ती बोर्ड ने सेक्शन कंट्रोलर CEN 03/2026 कंप्यूटर आधारित परीक्षा के लिए उत्तर कुंजी और आपत्ति ट्रैकर लिंक जारी कर दिया है। उम्मीदवार 03.11.2026 तक अपनी उत्तर पुस्तिका देख सकते हैं और ऑनलाइन आपत्तियां दर्ज कर सकते हैं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >रेलवे भर्ती बोर्ड (RRB)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >26 अक्तूबर 2026</span></div>
       <div class="r"><span >कुल पद</span><span class="v" >32,026 (7वें सीपीसी पे मैट्रिक्स का लेवल 6)</span></div>
@@ -416,74 +424,74 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >कंप्यूटर आधारित परीक्षा → उत्तर कुंजी देखना और आपत्तियां उठाना → अंतिम उत्तर कुंजी और परिणाम</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >रेलवे भर्ती बोर्ड (RRB) ने 7वें सीपीसी पे मैट्रिक्स के लेवल 6 में सेक्शन कंट्रोलर के पदों के लिए CEN 03/2026 के तहत आयोजित कंप्यूटर आधारित परीक्षा (CBT) के लिए प्रश्न पत्र, प्रतिक्रियाएं और उत्तर कुंजी की उपलब्धता की घोषणा कर दी है। परीक्षा 12.10.2026 से 13.10.2026 तक आयोजित की गई थी। परीक्षा में शामिल होने वाले उम्मीदवार 26.10.2026 से 03.11.2026 तक अपनी उत्तर पुस्तिका देख सकते हैं और निर्धारित शुल्क के साथ ऑनलाइन आपत्तियां दर्ज कर सकते हैं।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जो आरआरबी CEN 03/2026 सेक्शन कंट्रोलर सीबीटी परीक्षा में शामिल हुए थे।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >कौन आवेदन नहीं कर सकता</div>
+      <h2 class="h" >कौन आवेदन नहीं कर सकता</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जो 12.10.2026 से 13.10.2026 तक आयोजित सीबीटी में शामिल नहीं हुए थे।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >सीबीटी परीक्षा तिथि</span><span class="v" >12 अक्टूबर 2026 से 13 अक्टूबर 2026</span></div>
       <div class="r"><span >उत्तर कुंजी और आपत्ति विंडो शुरू</span><span class="v" >26 अक्टूबर 2026 (सायंकाल 05:00 बजे)</span></div>
       <div class="r"><span >आपत्ति विंडो बंद होने की तिथि</span><span class="v" >03 नवंबर 2026 (सायंकाल 05:00 बजे)</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आवेदन शुल्क</div>
+      <h2 class="h" >आवेदन शुल्क</h2>
       <div class="r"><span >सभी उम्मीदवार (प्रति प्रश्न)</span><span class="v num">₹50</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >सेक्शन कंट्रोलर</span><span class="v" >As per CEN 03/2026 · 7वें सीपीसी पे मैट्रिक्स का लेवल 6</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >सीबीटी उपस्थिति</span><span class="v" >वे उम्मीदवार जो 12.10.2026 से 13.10.2026 तक आयोजित CEN 03/2026 (सेक्शन कंट्रोलर) के लिए सीबीटी में शामिल हुए थे।</span></div>
     </section>
     <section class="kv">
-      <div class="h" >वेतन और पे लेवल</div>
+      <h2 class="h" >वेतन और पे लेवल</h2>
       <div class="r"><span >वेतनमान</span><span class="v" >7वें सीपीसी पे मैट्रिक्स का लेवल 6</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >कंप्यूटर आधारित परीक्षा (CBT)</li><li >उत्तर कुंजी देखना और आपत्तियां उठाना</li><li >अंतिम उत्तर कुंजी और परिणाम</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >अपने संबंधित रेलवे भर्ती बोर्ड (RRB) की आधिकारिक वेबसाइट पर जाएं।</li><li >CEN 03/2026 के लिए प्रश्न पत्र, प्रतिक्रियाएं और उत्तर कुंजी देखने / आपत्तियां दर्ज करने के लिंक पर क्लिक करें।</li><li >अपने विवरण का उपयोग करके लॉगिन करें।</li><li >अपनी उत्तर पुस्तिका देखें और 03.11.2026 (सायंकाल 05:00 बजे) से पहले निर्धारित शुल्क के साथ आपत्तियां प्रस्तुत करें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >उम्मीदवार लॉगिन विवरण (पंजीकरण संख्या, पासवर्ड / जन्म तिथि)</li><li >शुल्क जमा करने के लिए ऑनलाइन भुगतान विवरण (डेबिट कार्ड, क्रेडिट कार्ड, यूपीआई, नेट बैंकिंग)</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >आपत्तियां दर्ज करने के लिए अंतिम समय तक प्रतीक्षा न करें; 03.11.2026 को सायंकाल 05:00 बजे से पहले प्रक्रिया पूरी करें।</li><li >सुनिश्चित करें कि आपत्तियां वैध विवरण के साथ समर्थित हैं क्योंकि आरआरबी का निर्णय अंतिम होगा।</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >आरआरबी सेक्शन कंट्रोलर CEN 03/2026 आपत्ति ट्रैकर क्या है?</h3><p >यह रेलवे भर्ती बोर्ड द्वारा प्रदान किया गया एक ऑनलाइन पोर्टल है जो सेक्शन कंट्रोलर सीबीटी के लिए उपस्थित होने वाले उम्मीदवारों को उनके उत्तर, आधिकारिक उत्तर कुंजी देखने और किसी भी विसंगति के खिलाफ आपत्तियां दर्ज करने की अनुमति देता है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >आरआरबी उम्मीदवारों से प्राप्त सभी वैध आपत्तियों की समीक्षा करेगा।</li><li >समीक्षा की गई आपत्तियों के आधार पर, अंतिम उत्तर कुंजी तैयार की जाएगी और अंतिम परिणाम घोषित किया जाएगा।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >शुल्क वापसी नियम</span><span class="v" >यदि उठाई गई आपत्ति सही पाई जाती है, तो लागू बैंक शुल्क काटकर भुगतान किए गए खाते में शुल्क वापस कर दिया जाता है।</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://rrb.indianrailways.gov.in/-/image/179299755991426.10.2026_ENG_OBJECTION_TRACKER_NOTICE_FOR_CEN_03_2026_SC.pdf/examsDocuments" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">rrb.indianrailways.gov.in</span></a>
       <a class="r" href="https://rrb.indianrailways.gov.in/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">rrb.indianrailways.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >आरआरबी सेक्शन कंट्रोलर CEN 03/2026 सीबीटी कब आयोजित किया गया था?</h3><p >कंप्यूटर आधारित परीक्षा 12.10.2026 से 13.10.2026 तक आयोजित की गई थी।</p></div>
       <div class="qa"><h3 >मैं प्रश्न पत्र कब देख सकता हूँ और आपत्तियां कब उठा सकता हूँ?</h3><p >लिंक 26.10.2026 (सायंकाल 05:00 बजे) से 03.11.2026 (सायंकाल 05:00 बजे) तक सक्रिय है।</p></div>
       <div class="qa"><h3 >आपत्तियां दर्ज करने के लिए शुल्क क्या है?</h3><p >निर्धारित शुल्क प्रति प्रश्न 50 रुपये और लागू बैंक सेवा शुल्क है।</p></div>
@@ -494,7 +502,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 >मुझे आपत्ति ट्रैकर लिंक कहाँ मिल सकता है?</h3><p >यह लिंक संबंधित रेलवे भर्ती बोर्ड (RRB) की आधिकारिक वेबसाइटों पर उपलब्ध कराया गया है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >आधिकारिक उत्तर कुंजी के खिलाफ अपनी प्रतिक्रियाओं की जांच करें।</li><li >यदि कोई आपत्ति उठा रहे हैं तो अपना ऑनलाइन भुगतान तरीका तैयार रखें।</li><li >03.11.2026 (सायंकाल 05:00 बजे) से पहले आपत्तियां जमा करें।</li></ul>
     </section>
     </details>

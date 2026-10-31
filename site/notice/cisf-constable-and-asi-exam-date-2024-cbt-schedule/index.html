@@ -20,7 +20,7 @@
 <title>CISF Constable and ASI Exam Date 2024 – CBT Schedule | CISF कांस्टेबल और एएसआई परीक्षा तिथि 2024 – सीबीटी शेड्यूल</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Central Industrial Security Force (CISF)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">31 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Constable (Fire, TM, Driver &amp; DCPO) &amp; ASI/Exe (LDCE)</span></div>
@@ -299,53 +307,53 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The Central Industrial Security Force (CISF) has announced the schedule for the Computer Based Examination (CBE). This notice is for candidates who have applied for the Constable (Fire), Constable (Tradesman), Constable (Driver &amp; DCPO) 2024 recruitment and Assistant Sub Inspector / Executive (LDCE) 2023 examination. Candidates should check the official schedule and prepare for the upcoming examination.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who applied for CISF Constable (Fire, TM, Driver &amp; DCPO) 2024</li><li data-t="whoH1">Candidates who applied for CISF ASI/Exe (LDCE) 2023</li></ul>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Computer Based Examination (CBE)</li><li data-t="selH1">Physical Standards Test (PST) / Physical Efficiency Test (PET)</li><li data-t="selH2">Document Verification</li><li data-t="selH3">Medical Examination</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official CISF recruitment website: cisfrectt.cisf.gov.in</li><li data-t="howH1">Click on the exam schedule link for Constable or ASI/Exe (LDCE) posts</li><li data-t="howH2">Download or view the PDF notice containing the exam dates</li><li data-t="howH3">Log in with your registration details to check individual details and admit card when available</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Printed copy of Admit Card</li><li data-t="docH1">Valid Photo ID proof (Aadhaar Card, Voter ID, PAN Card, Driving Licence, etc.)</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Do not wait for the last day to download the admit card</li><li data-t="mistH1">Ensure all details on the admit card match your photo ID</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is the CISF Constable and ASI Exam Notice?</h3><p data-t="ea0">This notice announces the dates and schedule for the Computer Based Examination conducted by the Central Industrial Security Force for various Constable and ASI posts.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Appear for the Computer Based Examination on the scheduled date</li><li data-t="aftH1">Check results and merit list on the official website</li><li data-t="aftH2">Qualifying candidates will proceed to the next stages of recruitment</li></ol>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://cisfrectt.cisf.gov.in/file_open.php?fnm=D-iqzV6fzcktenGomEsloL0LYanhgL4-DUkY2fHuYU26YCi3MJWbwCOP19eltJq9JX8SxfXoZ0a6WBHavFP85_gXMXdIEaz8m2RVhpdyNWI" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">cisfrectt.cisf.gov.in</span></a>
       <a class="r" href="https://cisfrectt.cisf.gov.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">cisfrectt.cisf.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">Which posts are included in this CISF exam notice?</h3><p data-t="a0">The notice includes Constable (Fire), Constable (TM), Constable (Driver &amp; DCPO) - 2024 and ASI/Exe (LDCE) - 2023 posts.</p></div>
       <div class="qa"><h3 data-t="q1">Where can I check the CISF exam schedule?</h3><p data-t="a1">You can check the exam schedule on the official CISF recruitment website at cisfrectt.cisf.gov.in.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check your exam date and shift timing from the notice</li><li data-t="chkH1">Download the admit card using login credentials</li><li data-t="chkH2">Carry required identity proofs to the exam center</li></ul>
     </section>
     <section class="kv rel" id="exam" data-t-aria="exH">
-      <div class="h" data-t="exH">All updates for CISF Constable and ASI 2024</div>
+      <h2 class="h" data-t="exH">All updates for CISF Constable and ASI 2024</h2>
       <a class="r" href="/notice/cisf-constable-and-asi-exam-date-2024-cbt-notice-cb40/"><span><span data-t="ex0">CISF Constable and ASI Exam Date 2024 – CBT Notice</span> <small class="g" data-t="exs0">Exam Notice</small></span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/cisf-constable-and-asi-exam-date-2024-schedule-notice-out/"><span><span data-t="ex1">CISF Constable and ASI Exam Date 2024 – Schedule Notice Out</span> <small class="g" data-t="exs1">Exam Schedule Notice</small></span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/cisf-constable-and-asi-exam-date-2024-cbt-notice/"><span><span data-t="ex2">CISF Constable and ASI Exam Date 2024 – CBT Notice</span> <small class="g" data-t="exs2">Exam Notice</small></span><span class="v g num">28 Oct 2026</span></a>
@@ -353,7 +361,7 @@ html[lang="hi"] .hidet { display: none; }
       <a class="r" href="/notice/cisf-constable-and-asi-exam-date-notice-2024-cbe-schedule/"><span><span data-t="ex4">CISF Constable and ASI Exam Date Notice 2024 – CBE Schedule</span> <small class="g" data-t="exs4">Exam Schedule Notice</small></span><span class="v g num">28 Oct 2026</span></a>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/mppsc-veterinary-assistant-surgeon-interview-notice-2026/"><span data-t="rel0">MPPSC Veterinary Assistant Surgeon Interview Notice 2026</span><span class="v g num">30 Oct 2026</span></a>
     </section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Admit cards", "item": "https://sarkarichart.pages.dev/?cat=admit-cards"}, {"@type": "ListItem", "position": 3, "name": "CISF Constable and ASI Exam Date 2024 – CBT Schedule", "item": "https://sarkarichart.pages.dev/notice/cisf-constable-and-asi-exam-date-2024-cbt-schedule/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "CISF Constable and ASI Exam Date 2024 – CBT Schedule", "url": "https://sarkarichart.pages.dev/notice/cisf-constable-and-asi-exam-date-2024-cbt-schedule/", "inLanguage": ["en-IN", "hi-IN"], "description": "The Central Industrial Security Force (CISF) has announced the schedule for the Computer Based Examination (CBE). This notice is for candidates who have applied for the Constable (Fire), Constable (Tradesman), Constable (Driver & DCPO) 2024 recruitment and Assistant Sub Inspector / Executive (LDCE) 2023 examination. Candidates should check the official schedule and prepare for the upcoming examination.", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "isBasedOn": "https://cisfrectt.cisf.gov.in/file_open.php?fnm=D-iqzV6fzcktenGomEsloL0LYanhgL4-DUkY2fHuYU26YCi3MJWbwCOP19eltJq9JX8SxfXoZ0a6WBHavFP85_gXMXdIEaz8m2RVhpdyNWI", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.pages.dev/notice/cisf-constable-and-asi-exam-date-2024-cbt-schedule/og.png", "about": {"@type": "GovernmentOrganization", "name": "Central Industrial Security Force (CISF)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which posts are included in this CISF exam notice?", "acceptedAnswer": {"@type": "Answer", "text": "The notice includes Constable (Fire), Constable (TM), Constable (Driver & DCPO) - 2024 and ASI/Exe (LDCE) - 2023 posts."}}, {"@type": "Question", "name": "Where can I check the CISF exam schedule?", "acceptedAnswer": {"@type": "Answer", "text": "You can check the exam schedule on the official CISF recruitment website at cisfrectt.cisf.gov.in."}}]}]</script>
@@ -362,7 +370,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">CISF कांस्टेबल और एएसआई परीक्षा तिथि 2024 – सीबीटी शेड्यूल</h2>
       <p class="lead">CISF ने कांस्टेबल (फायर, ट्रेडमैन, ड्राइवर और डीसीपीओ) - 2024 और एएसआई/कार्यकारी (एलडीसीई) - 2023 पदों के लिए कंप्यूटर आधारित परीक्षा (CBE) का शेड्यूल जारी कर दिया है। इन पदों के लिए आवेदन करने वाले उम्मीदवार आधिकारिक वेबसाइट पर परीक्षा शेड्यूल देख सकते हैं। एडमिट कार्ड जारी होने पर डाउनलोड करने के लिए अपनी लॉगिन जानकारी तैयार रखें।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >केंद्रीय औद्योगिक सुरक्षा बल (CISF)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >31 अक्तूबर 2026</span></div>
       <div class="r"><span >पद</span><span class="v" >कांस्टेबल (फायर, ट्रेडमैन, ड्राइवर और डीसीपीओ) और एएसआई/कार्यकारी (एलडीसीई)</span></div>
@@ -370,49 +378,49 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >कंप्यूटर आधारित परीक्षा → शारीरिक मानक परीक्षण → दस्तावेज़ सत्यापन → चिकित्सा परीक्षा</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >केंद्रीय औद्योगिक सुरक्षा बल (CISF) ने कंप्यूटर आधारित परीक्षा (CBE) का शेड्यूल घोषित कर दिया है। यह नोटिस उन उम्मीदवारों के लिए है जिन्होंने कांस्टेबल (फायर), कांस्टेबल (ट्रेड्समैन), कांस्टेबल (ड्राइवर और डीसीपीओ) 2024 भर्ती और सहायक उप निरीक्षक / कार्यकारी (एलडीसीई) 2023 परीक्षा के लिए आवेदन किया है। उम्मीदवारों को आधिकारिक शेड्यूल देखना चाहिए और आगामी परीक्षा के लिए तैयारी करनी चाहिए।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जिन्होंने CISF कांस्टेबल (फायर, ट्रेडमैन, ड्राइवर और डीसीपीओ) 2024 के लिए आवेदन किया है</li><li >वे उम्मीदवार जिन्होंने CISF ASI/Exe (LDCE) 2023 के लिए आवेदन किया है</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >कंप्यूटर आधारित परीक्षा (CBE)</li><li >शारीरिक मानक परीक्षण (PST) / शारीरिक दक्षता परीक्षण (PET)</li><li >दस्तावेज़ सत्यापन</li><li >चिकित्सा परीक्षा</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >आधिकारिक CISF भर्ती वेबसाइट पर जाएं: cisfrectt.cisf.gov.in</li><li >कांस्टेबल या एएसआई/एलडीसीई पदों के लिए परीक्षा शेड्यूल लिंक पर क्लिक करें</li><li >परीक्षा तिथियों वाला पीडीएफ नोटिस डाउनलोड करें या देखें</li><li >उपलब्ध होने पर व्यक्तिगत विवरण और एडमिट कार्ड की जांच के लिए अपने पंजीकरण विवरण के साथ लॉगिन करें</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >एडमिट कार्ड की मुद्रित प्रति</li><li >वैध फोटो पहचान प्रमाण (आधार कार्ड, वोटर आईडी, पैन कार्ड, ड्राइविंग लाइसेंस, आदि)</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >एडमिट कार्ड डाउनलोड करने के लिए अंतिम दिन का इंतज़ार न करें</li><li >सुनिश्चित करें कि एडमिट कार्ड के सभी विवरण आपके फोटो आईडी से मेल खाते हैं</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >CISF कांस्टेबल और एएसआई परीक्षा नोटिस क्या है?</h3><p >यह नोटिस केंद्रीय औद्योगिक सुरक्षा बल द्वारा विभिन्न कांस्टेबल और एएसआई पदों के लिए आयोजित कंप्यूटर आधारित परीक्षा की तिथियों और शेड्यूल की घोषणा करता है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >निर्धारित तिथि पर कंप्यूटर आधारित परीक्षा में शामिल हों</li><li >आधिकारिक वेबसाइट पर परिणाम और मेरिट सूची देखें</li><li >योग्य उम्मीदवार भर्ती के अगले चरणों के लिए आगे बढ़ेंगे</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://cisfrectt.cisf.gov.in/file_open.php?fnm=D-iqzV6fzcktenGomEsloL0LYanhgL4-DUkY2fHuYU26YCi3MJWbwCOP19eltJq9JX8SxfXoZ0a6WBHavFP85_gXMXdIEaz8m2RVhpdyNWI" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">cisfrectt.cisf.gov.in</span></a>
       <a class="r" href="https://cisfrectt.cisf.gov.in/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">cisfrectt.cisf.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >इस CISF परीक्षा नोटिस में कौन से पद शामिल हैं?</h3><p >नोटिस में कांस्टेबल (फायर), कांस्टेबल (TM), कांस्टेबल (ड्राइवर और DCPO) - 2024 और ASI/Exe (LDCE) - 2023 पद शामिल हैं।</p></div>
       <div class="qa"><h3 >मैं CISF परीक्षा शेड्यूल कहां देख सकता हूं?</h3><p >आप आधिकारिक CISF भर्ती वेबसाइट cisfrectt.cisf.gov.in पर परीक्षा शेड्यूल देख सकते हैं।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >नोटिस से अपनी परीक्षा की तारीख और पाली के समय की जाँच करें</li><li >लॉगिन विवरण का उपयोग करके एडमिट कार्ड डाउनलोड करें</li><li >परीक्षा केंद्र पर आवश्यक पहचान प्रमाण ले जाएं</li></ul>
     </section>
     </details>

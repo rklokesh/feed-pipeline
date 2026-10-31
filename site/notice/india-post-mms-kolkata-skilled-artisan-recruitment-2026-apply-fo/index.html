@@ -20,7 +20,7 @@
 <title>India Post MMS Kolkata Skilled Artisan Recruitment 2026 – Apply for 19 Posts | इंडिया पोस्ट एमएमएस कोलकाता स्किल्ड आर्टिसन भर्ती 2026 – 19 पदों के लिए आवेदन करें</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">India Post, Mail Motor Services Kolkata (Department of Posts)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">29 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Skilled Artisan (Tradesmen)</span></div>
@@ -305,24 +313,24 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#notH" data-t="notH">Who cannot apply</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#ageH" data-t="ageH">Age limit</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#payH" data-t="payH">Salary and pay level</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">India Post, Mail Motor Services (MMS) Kolkata has released a notification for the direct recruitment of Skilled Artisan (Tradesmen) posts for the West Bengal Circle, totaling 19 vacancies. This notification acts as a corrigendum to previous notices. Eligible and interested candidates can send their offline applications in the prescribed format through Speed Post only by 30 November 2026 up to 17:00 hours. The selection will be based on a competitive trade test. Candidates should ensure they meet all educational, age, and trade requirements before applying.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates possessing ITI certificate or 8th pass with 1 year experience in the respective trade</li><li data-t="whoH1">Candidates aged between 18 and 30 years meeting the criteria</li></ul>
     </section>
     <section class="kv" id="notH" data-t-aria="notH">
-      <div class="h" data-t="notH">Who cannot apply</div>
+      <h2 class="h" data-t="notH">Who cannot apply</h2>
       <ul class="steps dots"><li data-t="notH0">Applications sent by courier or any transmission other than speed post</li><li data-t="notH1">Unsigned applications or those without self-attested documents</li><li data-t="notH2">Candidates without valid community or required certificates</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Notification date</span><span class="v" data-t="datesH0v">29 Oct 2026</span></div>
       <div class="r"><span data-t="datesH1l">Last date for receipt of application</span><span class="v" data-t="datesH1v">30 Nov 2026</span></div>
     </section>
     <section class="kv" id="ageH" data-t-aria="ageH">
-      <div class="h" data-t="ageH">Age limit</div>
+      <h2 class="h" data-t="ageH">Age limit</h2>
       <div class="r"><span data-t="ageH0l">Minimum age</span><span class="v" data-t="ageH0v">18 years</span></div>
       <div class="r"><span data-t="ageH1l">Maximum age</span><span class="v" data-t="ageH1v">30 years</span></div>
       <div class="r"><span data-t="ageH2l">As-on date for age calculation</span><span class="v" data-t="ageH2v">01 July 2018</span></div>
@@ -331,7 +339,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span data-t="ageH5l">Central Government Servant relaxation</span><span class="v" data-t="ageH5v">Up to 40 years</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">MV Mechanic</span><span class="v" data-t="vacH0v">8 · UR 4, OBC 2, SC 1, ST 1 (Includes 2 ESM)</span></div>
       <div class="r"><span data-t="vacH1l">MV Electrician</span><span class="v" data-t="vacH1v">4 · UR 2, OBC 1, SC 1</span></div>
       <div class="r"><span data-t="vacH2l">Tyreman</span><span class="v" data-t="vacH2v">2 · UR 1, OBC 1</span></div>
@@ -342,51 +350,51 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span data-t="vacH7l">Total</span><span class="v" data-t="vacH7v">19</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Educational Qualification</span><span class="v" data-t="eligH0v">A certificate in the respective trade from any Technical Institution recognized by Government OR VIII Std. passed with experience of one year in the respective trade.</span></div>
       <div class="r"><span data-t="eligH1l">Additional requirement for MV Mechanic</span><span class="v" data-t="eligH1v">Must possess a valid Driving Licence (HMV) to drive any vehicle in service in order to test it.</span></div>
     </section>
     <section class="kv" id="payH" data-t-aria="payH">
-      <div class="h" data-t="payH">Salary and pay level</div>
+      <h2 class="h" data-t="payH">Salary and pay level</h2>
       <div class="r"><span data-t="payH0l">Pay Scale</span><span class="v" data-t="payH0v">Level 2 in the pay matrix as per 7th CPC (₹19,900 to ₹63,200) + allowances</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Scrutiny of offline applications</li><li data-t="selH1">Competitive Trade Test (syllabus and details informed with hall permits)</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to apply</div>
+      <h2 class="h" data-t="howH">How to apply</h2>
       <ol class="steps"><li data-t="howH0">Download the application form and notification from the official website.</li><li data-t="howH1">Fill out the application form on plain paper in the prescribed format.</li><li data-t="howH2">Attach self-attested photocopies of all required certificates and a recent passport-size photograph.</li><li data-t="howH3">If applying for multiple trades, submit separate applications for each trade.</li><li data-t="howH4">Superscribe the envelope with &#x27;Application for the post of /Name of Trade: ...&#x27; and send it through Speed Post only to &#x27;The Senior Manager, Mail Motor Services, 139, Beleghata Road, Kolkata-700015&#x27;.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Age proof (Birth certificate/Class 10th certificate/School leaving certificate)</li><li data-t="docH1">Address proof</li><li data-t="docH2">Indian Citizenship proof (Voter ID, Passport, Domicile, etc.)</li><li data-t="docH3">Educational qualification certificates</li><li data-t="docH4">Technical qualification certificates (ITI/etc.)</li><li data-t="docH5">HMV Driving Licence/Licence Extract (for MV Mechanic only)</li><li data-t="docH6">One year trade experience certificate on firm&#x27;s letterhead with full postal address</li><li data-t="docH7">SC/ST/OBC(NCL)/ESM Certificate in proper format</li><li data-t="docH8">Two self-attested passport-size photographs</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Do not send applications through courier or normal post; use Speed Post only.</li><li data-t="mistH1">Do not forget to self-attest all attached documents.</li><li data-t="mistH2">Do not send original certificates, only send self-attested photocopies.</li><li data-t="mistH3">Ensure separate applications are sent for each trade if applying for more than one.</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is Skilled Artisan Recruitment in India Post MMS Kolkata?</h3><p data-t="ea0">It is a direct recruitment process to fill vacant artisan and tradesmen positions such as MV Mechanic, Electrician, Tyreman, Blacksmith, Painter, and Carpenter under Mail Motor Services, Kolkata in the West Bengal Circle.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Candidates shortlisted after application scrutiny will be called for a competitive trade test.</li><li data-t="aftH1">Final selection will lead to appointment on probation for one year.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Probation period</span><span class="v" data-t="extraH0v">One year</span></div>
       <div class="r"><span data-t="extraH1l">Previous applicants</span><span class="v" data-t="extraH1v">All previous applications in response to previous notifications (dated 08/08/2018 and 19.05.2020) will be considered, but fresh applications mentioning choices are preferable.</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://www.indiapost.gov.in/api/documents/file/10391xe2ox8w0is613k9jr369dy34fsw0s5ca3h16z08vuz04nku0gw9f35snp" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">indiapost.gov.in</span></a>
       <a class="r" href="https://www.indiapost.gov.in/api/documents/file/10391xe2ox8w0is613k9jr369dy34fsw0s5ca3h16z08vuz04nku0gw9f35snp" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">indiapost.gov.in</span></a>
       <a class="r" href="https://www.indiapost.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">indiapost.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">What is the last date to apply for India Post MMS Kolkata Skilled Artisan Recruitment 2026?</h3><p data-t="a0">The last date to receive applications is 30 November 2026 up to 17:00 hours.</p></div>
       <div class="qa"><h3 data-t="q1">How many total vacancies are available?</h3><p data-t="a1">There are a total of 19 vacancies available across various trades.</p></div>
       <div class="qa"><h3 data-t="q2">What is the mode of application?</h3><p data-t="a2">Applications must be sent offline through Speed Post only.</p></div>
@@ -395,11 +403,11 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 data-t="q5">Where should the application be sent?</h3><p data-t="a5">Applications should be sent to &#x27;The Senior Manager, Mail Motor Services, 139, Beleghata Road, Kolkata-700015&#x27;.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check eligibility regarding age and qualification.</li><li data-t="chkH1">Fill out the application form clearly in capital letters.</li><li data-t="chkH2">Enclose self-attested copies of required certificates and photos.</li><li data-t="chkH3">Superscribe the trade name on the envelope.</li><li data-t="chkH4">Send via Speed Post to the Senior Manager, MMS Kolkata before 30 November 2026.</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/india-post-staff-car-driver-recruitment-2024-apply-online-for-25/"><span data-t="rel0">India Post Staff Car Driver Recruitment 2024 – Apply Online for 25 Posts</span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/india-post-staff-car-driver-recruitment-2026/"><span data-t="rel1">India Post Staff Car Driver Recruitment 2026</span><span class="v g num">1 Aug 2026</span></a>
       <a class="r" href="/notice/nabard-specialists-on-contract-recruitment-2026-27/"><span data-t="rel2">NABARD Specialists on Contract Recruitment 2026-27</span><span class="v g num">27 Oct 2026</span></a>
@@ -413,7 +421,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">इंडिया पोस्ट एमएमएस कोलकाता स्किल्ड आर्टिसन भर्ती 2026 – 19 पदों के लिए आवेदन करें</h2>
       <p class="lead">इंडिया पोस्ट, मेल मोटर सर्विसेज कोलकाता ने सीधी भर्ती के माध्यम से स्किल्ड आर्टिसन के 19 रिक्त पदों के लिए आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 30 नवंबर 2026 या उससे पहले स्पीड पोस्ट के माध्यम से आवेदन भेज सकते हैं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >इंडिया पोस्ट, मेल मोटर सर्विसेज कोलकाता (डाक विभाग)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >29 अक्तूबर 2026</span></div>
       <div class="r"><span >पद</span><span class="v" >स्किल्ड आर्टिसन (tradesmen)</span></div>
@@ -426,24 +434,24 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >विज्ञापन संख्या</span><span class="v" >MMG/36/Sk. Artisan/DR/II/95</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >इंडिया पोस्ट, मेल मोटर सर्विसेज (MMS) कोलकाता ने पश्चिम बंगाल सर्कल के लिए स्किल्ड आर्टिसन (Tradesmen) के पदों पर सीधी भर्ती हेतु कुल 19 रिक्तियों के लिए अधिसूचना जारी की है। यह अधिसूचना पिछली सूचनाओं के संबंध में सुधार (Corrigendum) है। योग्य और इच्छुक उम्मीदवार निर्धारित प्रारूप में अपने आवेदन केवल स्पीड पोस्ट के माध्यम से 30 नवंबर 2026 को शाम 17:00 बजे तक या उससे पहले भेज सकते हैं। चयन प्रतियोगी ट्रेड टेस्ट के आधार पर किया जाएगा।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >संबंधित ट्रेड में आईटीआई प्रमाण पत्र या 1 वर्ष के अनुभव के साथ 8वीं पास उम्मीदवार</li><li >18 से 30 वर्ष की आयु के योग्य उम्मीदवार</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >कौन आवेदन नहीं कर सकता</div>
+      <h2 class="h" >कौन आवेदन नहीं कर सकता</h2>
       <ul class="steps dots"><li >कूरियर या स्पीड पोस्ट के अलावा अन्य माध्यमों से भेजे गए आवेदन</li><li >हस्ताक्षर रहित आवेदन या बिना स्व-सत्यापित दस्तावेजों के आवेदन</li><li >वैध समुदाय या आवश्यक प्रमाण पत्र के बिना उम्मीदवार</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >अधिसूचना तिथि</span><span class="v" >29 अक्टूबर 2026</span></div>
       <div class="r"><span >आवेदन प्राप्त होने की अंतिम तिथि</span><span class="v" >30 नवंबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आयु सीमा</div>
+      <h2 class="h" >आयु सीमा</h2>
       <div class="r"><span >न्यूनतम आयु</span><span class="v" >18 वर्ष</span></div>
       <div class="r"><span >अधिकतम आयु</span><span class="v" >30 वर्ष</span></div>
       <div class="r"><span >आयु गणना की तिथि</span><span class="v" >01 जुलाई 2018</span></div>
@@ -452,7 +460,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >केंद्रीय सरकारी कर्मचारी छूट</span><span class="v" >40 वर्ष तक</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >एमवी मैकेनिक</span><span class="v" >8 · सामान्य 4, अन्य पिछड़ा वर्ग 2, एससी 1, एसटी 1 (पूर्व सैनिकों के लिए 2 शामिल)</span></div>
       <div class="r"><span >एमवी इलेक्ट्रीशियन</span><span class="v" >4 · सामान्य 2, अन्य पिछड़ा वर्ग 1, एससी 1</span></div>
       <div class="r"><span >टायरमैन</span><span class="v" >2 · सामान्य 1, अन्य पिछड़ा वर्ग 1</span></div>
@@ -463,51 +471,51 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >कुल</span><span class="v" >19</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >शैक्षणिक योग्यता</span><span class="v" >सरकार द्वारा मान्यता प्राप्त किसी तकनीकी संस्थान से संबंधित ट्रेड में प्रमाण पत्र या संबंधित ट्रेड में एक वर्ष के अनुभव के साथ आठवीं कक्षा उत्तीर्ण।</span></div>
       <div class="r"><span >एमवी मैकेनिक के लिए अतिरिक्त आवश्यकता</span><span class="v" >परीक्षण के लिए सेवा में किसी भी वाहन को चलाने हेतु वैध ड्राइविंग लाइसेंस (HMV) होना आवश्यक है।</span></div>
     </section>
     <section class="kv">
-      <div class="h" >वेतन और पे लेवल</div>
+      <h2 class="h" >वेतन और पे लेवल</h2>
       <div class="r"><span >वेतनमान</span><span class="v" >सातवें वेतन आयोग के अनुसार पे मैट्रिक्स लेवल 2 (₹19,900 से ₹63,200) + भत्ते</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >ऑफ़लाइन आवेदनों की संवीक्षा</li><li >प्रतियोगी ट्रेड टेस्ट (सिलेबस और विवरण हॉल परमिट के साथ सूचित किया जाएगा)</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >आवेदन कैसे करें</div>
+      <h2 class="h" >आवेदन कैसे करें</h2>
       <ol class="steps"><li >आधिकारिक वेबसाइट से आवेदन पत्र और अधिसूचना डाउनलोड करें।</li><li >निर्धारित प्रारूप में सादे कागज पर आवेदन पत्र भरें।</li><li >सभी आवश्यक प्रमाण पत्रों की स्व-सत्यापित फोटोकॉपी और एक हालिया पासपोर्ट साइज फोटो संलग्न करें।</li><li >यदि आप कई ट्रेडों के लिए आवेदन कर रहे हैं, तो प्रत्येक ट्रेड के लिए अलग आवेदन भेजें।</li><li >लिफाफे के ऊपर &#x27;Application for the post of /Name of Trade: ...&#x27; लिखें और इसे केवल स्पीड पोस्ट द्वारा &#x27;The Senior Manager, Mail Motor Services, 139, Beleghata Road, Kolkata-700015&#x27; पर भेजें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >आयु प्रमाण (जन्म प्रमाण पत्र / 10वीं कक्षा का प्रमाण पत्र / स्कूल छोड़ने का प्रमाण पत्र)</li><li >पता प्रमाण</li><li >भारतीय नागरिकता प्रमाण (वोटर आईडी, पासपोर्ट, निवास प्रमाण पत्र, आदि)</li><li >शैक्षणिक योग्यता प्रमाण पत्र</li><li >तकनीकी योग्यता प्रमाण पत्र (आईटीआई आदि)</li><li >एचएमवी ड्राइविंग लाइसेंस / लाइसेंस एक्सट्रैक्ट (केवल एमवी मैकेनिक के लिए)</li><li >पूर्ण postal पते के साथ फर्म के लेटरहेड पर एक वर्ष का ट्रेड अनुभव प्रमाण पत्र</li><li >उचित प्रारूप में एससी / एसटी / ओबीसी (एनसीएल) / ईएसएम प्रमाण पत्र</li><li >दो स्व-सत्यापित पासपोर्ट साइज फोटोग्राफ</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >कूरियर या सामान्य डाक से आवेदन न भेजें; केवल स्पीड पोस्ट का उपयोग करें।</li><li >सभी संलग्न दस्तावेजों को स्व-सत्यापित करना न भूलें।</li><li >मूल प्रमाण पत्र न भेजें, केवल स्व-सत्यापित फोटोकॉपी भेजें।</li><li >यदि एक से अधिक ट्रेड के लिए आवेदन कर रहे हैं, तो सुनिश्चित करें कि प्रत्येक के लिए अलग आवेदन भेजा जाए।</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >इंडिया पोस्ट एमएमएस कोलकाता में स्किल्ड आर्टिसन भर्ती क्या है?</h3><p >यह पश्चिम बंगाल सर्कल में मेल मोटर सर्विसेज, कोलकाता के तहत एमवी मैकेनिक, इलेक्ट्रीशियन, टायरमैन, ब्लैकस्मिथ, पेंटर और कारपेंटर जैसे रिक्त कारीगर और ट्रेडसमेन पदों को भरने के लिए एक सीधी भर्ती प्रक्रिया है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >आवेदन संवीक्षा के बाद शॉर्टलिस्ट किए गए उम्मीदवारों को प्रतियोगी ट्रेड टेस्ट के लिए बुलाया जाएगा।</li><li >अंतिम चयन के बाद एक वर्ष के प्रोबेशन पर नियुक्ति की जाएगी।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >प्रोबेशन अवधि</span><span class="v" >एक वर्ष</span></div>
       <div class="r"><span >पिछले आवेदक</span><span class="v" >पिछली अधिसूचनाओं के संदर्भ में दिए गए सभी पिछले आवेदन माने जाएंगे, लेकिन अपनी पसंद बताते हुए नया आवेदन भेजना बेहतर है।</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://www.indiapost.gov.in/api/documents/file/10391xe2ox8w0is613k9jr369dy34fsw0s5ca3h16z08vuz04nku0gw9f35snp" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">indiapost.gov.in</span></a>
       <a class="r" href="https://www.indiapost.gov.in/api/documents/file/10391xe2ox8w0is613k9jr369dy34fsw0s5ca3h16z08vuz04nku0gw9f35snp" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">indiapost.gov.in</span></a>
       <a class="r" href="https://www.indiapost.gov.in" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">indiapost.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >इंडिया पोस्ट एमएमएस कोलकाता स्किल्ड आर्टिसन भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?</h3><p >आवेदन प्राप्त होने की अंतिम तिथि 30 नवंबर 2026 शाम 17:00 बजे तक है।</p></div>
       <div class="qa"><h3 >कुल कितनी रिक्तियां उपलब्ध हैं?</h3><p >विभिन्न ट्रेडों में कुल 19 रिक्तियां उपलब्ध हैं।</p></div>
       <div class="qa"><h3 >आवेदन का तरीका क्या है?</h3><p >आवेदन केवल स्पीड पोस्ट के माध्यम से ऑफलाइन भेजे जाने चाहिए।</p></div>
@@ -516,7 +524,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 >आवेदन कहाँ भेजा जाना चाहिए?</h3><p >आवेदन &#x27;The Senior Manager, Mail Motor Services, 139, Beleghata Road, Kolkata-700015&#x27; पर भेजा जाना चाहिए।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >आयु और योग्यता के संबंध में पात्रता की जाँच करें।</li><li >बड़े अक्षरों में स्पष्ट रूप से आवेदन पत्र भरें।</li><li >आवश्यक प्रमाण पत्रों और फोटो की स्व-सत्यापित प्रतियां संलग्न करें।</li><li >लिफाफे पर ट्रेड का नाम लिखें।</li><li >30 नवंबर 2026 से पहले सीनियर मैनेजर, एमएमएस कोलकाता को स्पीड पोस्ट द्वारा भेजें।</li></ul>
     </section>
     </details>

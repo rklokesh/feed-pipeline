@@ -20,7 +20,7 @@
 <title>ICG Assistant Commandant 2027 Batch | भारतीय तटरक्षक सहायक कमांडेंट 2027 बैच</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Indian Coast Guard (ICG)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">8 Jul 2025</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Assistant Commandant (General Duty &amp; Technical)</span></div>
@@ -304,25 +312,25 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#notH" data-t="notH">Who cannot apply</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#ageH" data-t="ageH">Age limit</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#patH" data-t="patH">Exam pattern</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">Indian Coast Guard has released the official notification for the recruitment of Assistant Commandant for the 2027 Batch (General Duty and Technical branches) as a Group &#x27;A&#x27; Gazetted Officer. A total of 170 vacancies are available for male candidates who meet the eligibility criteria. Online registration opens on 08 July 2025 and closes on 27 July 2025. Eligible and interested candidates must review the official notification and apply through the official website within the stipulated dates.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Male graduates aged 21-25 years wanting a career as an officer in the Indian Coast Guard</li></ul>
     </section>
     <section class="kv" id="notH" data-t-aria="notH">
-      <div class="h" data-t="notH">Who cannot apply</div>
+      <h2 class="h" data-t="notH">Who cannot apply</h2>
       <ul class="steps dots"><li data-t="notH0">Candidates withdrawn on disciplinary grounds from any other service training academy</li><li data-t="notH1">Candidates arrested, convicted, or prosecuted on criminal charges</li><li data-t="notH2">Candidates debarred from appearing in any public service exam</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Online application starts</span><span class="v" data-t="datesH0v">08 Jul 2025 (1600 HRS)</span></div>
       <div class="r"><span data-t="datesH1l">Last date to apply</span><span class="v" data-t="datesH1v">27 Jul 2025 (2330 HRS)</span></div>
       <div class="r"><span data-t="datesH2l">Proof of passing degree last date</span><span class="v" data-t="datesH2v">31 Oct 2026</span></div>
     </section>
     <section class="kv" id="ageH" data-t-aria="ageH">
-      <div class="h" data-t="ageH">Age limit</div>
+      <h2 class="h" data-t="ageH">Age limit</h2>
       <div class="r"><span data-t="ageH0l">Minimum age</span><span class="v" data-t="ageH0v">21 years</span></div>
       <div class="r"><span data-t="ageH1l">Maximum age</span><span class="v" data-t="ageH1v">25 years</span></div>
       <div class="r"><span data-t="ageH2l">As on date</span><span class="v" data-t="ageH2v">01 Jul 2026 (born between 01 Jul 2001 and 30 Jun 2005)</span></div>
@@ -331,53 +339,53 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span data-t="ageH5l">Serving Coast Guard personnel relaxation</span><span class="v" data-t="ageH5v">Up to 5 years</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">General Duty (GD)</span><span class="v" data-t="vacH0v">140 · UR 46, OBC 35, SC 25, ST 24, EWS 10</span></div>
       <div class="r"><span data-t="vacH1l">Tech (Engg/Elect)</span><span class="v" data-t="vacH1v">30 · UR 13, OBC 8, SC 3, ST 4, EWS 2</span></div>
       <div class="r"><span data-t="vacH2l">Total</span><span class="v" data-t="vacH2v">170</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">General Duty Education</span><span class="v" data-t="eligH0v">Graduate Degree from a recognised university with Physics and Mathematics up to class XII.</span></div>
       <div class="r"><span data-t="eligH1l">Technical Branch Education</span><span class="v" data-t="eligH1v">Engineering degree in relevant discipline (Naval Architecture, Mechanical, Marine, Automotive, Mechatronics, Industrial &amp; Production, Metallurgy, Design, Aeronautical, Aerospace, Electrical, Electronics, Telecommunication, Instrumentation, Power Engineering, etc.) with Physics and Mathematics up to class XII.</span></div>
       <div class="r"><span data-t="eligH2l">Gender</span><span class="v" data-t="eligH2v">Male candidates only</span></div>
     </section>
     <section class="kv" id="patH" data-t-aria="patH">
-      <div class="h" data-t="patH">Exam pattern</div>
+      <h2 class="h" data-t="patH">Exam pattern</h2>
       <div class="tw"><table class="tbl"><thead><tr><th data-t="patC1">Part / subject</th><th data-t="patC2">Questions</th><th data-t="patC3">Marks</th><th data-t="patC4">Time</th></tr></thead><tbody><tr><td data-t="pat0">English</td><td class="num">25</td><td class="num">100</td><td>2 Hours (Combined for all parts)</td></tr><tr><td data-t="pat1">Reasoning &amp; Numerical Ability</td><td class="num">25</td><td class="num">100</td><td>2 Hours (Combined for all parts)</td></tr><tr><td data-t="pat2">General Science &amp; Mathematical aptitude</td><td class="num">25</td><td class="num">100</td><td>2 Hours (Combined for all parts)</td></tr><tr><td data-t="pat3">General Knowledge</td><td class="num">25</td><td class="num">100</td><td>2 Hours (Combined for all parts)</td></tr><tr><td data-t="pat4">Negative marking</td><td class="num"></td><td class="num">One negative mark for each incorrect answer</td><td></td></tr></tbody></table></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Stage-I: Coast Guard Common Admission Test (CGCAT)</li><li data-t="selH1">Stage-II: Preliminary Selection Board (PSB)</li><li data-t="selH2">Stage-III: Final Selection Board (FSB)</li><li data-t="selH3">Stage-IV: Medical Examination</li><li data-t="selH4">Stage-V: Induction</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to apply</div>
+      <h2 class="h" data-t="howH">How to apply</h2>
       <ol class="steps"><li data-t="howH0">Visit the official Indian Coast Guard recruitment website: joinindiancoastguard.cdac.in</li><li data-t="howH1">Click on the Assistant Commandant 2027 Batch recruitment link and complete the registration.</li><li data-t="howH2">Fill out the online application form with accurate personal and educational details.</li><li data-t="howH3">Upload necessary documents, photograph, and signature as per prescribed specifications.</li><li data-t="howH4">Submit the application form before the last date and take a printout for future reference.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Original educational certificates and marksheets</li><li data-t="docH1">Proof of date of birth</li><li data-t="docH2">Valid photo ID proof</li><li data-t="docH3">Bonafide certificate for final year students signed by the Registrar/Controller of the University</li><li data-t="docH4">Caste certificate (if applicable)</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Entering incorrect date of birth or gender, as changes are not allowed at any subsequent stage</li><li data-t="mistH1">Failing to submit the final year degree pass proof by 31 Oct 2026 for final year students</li><li data-t="mistH2">Mismatch of biometrics during Stage-II verification compared to Stage-I</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is ICG Assistant Commandant Entry?</h3><p data-t="ea0">It is a direct entry scheme for dynamic Indian male candidates to join the Indian Coast Guard as a Group &#x27;A&#x27; Gazetted Officer in General Duty or Technical branches through a rigorous multi-stage selection process.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Candidates who clear CGCAT (Stage-I) will be called for Preliminary Selection Board (PSB) Stage-II.</li><li data-t="aftH1">Qualified candidates proceed to Final Selection Board (FSB) Stage-III, followed by Medical Examination (Stage-IV) and final induction (Stage-V).</li></ol>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://joinindiancoastguard.cdac.in/cgcat/assets/img/news/Advertisement_for_Asst_Comdt_2027_Batch.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">joinindiancoastguard.cdac.in</span></a>
       <a class="r" href="https://joinindiancoastguard.cdac.in" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">joinindiancoastguard.cdac.in</span></a>
       <a class="r" href="https://joinindiancoastguard.cdac.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">joinindiancoastguard.cdac.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">What is the last date to apply for ICG Assistant Commandant 2027 Batch?</h3><p data-t="a0">The last date to apply online is 27 July 2025 (2330 HRS).</p></div>
       <div class="qa"><h3 data-t="q1">Who can apply for ICG Assistant Commandant 2027 Batch?</h3><p data-t="a1">Indian male candidates holding a Graduate Degree for GD or an Engineering degree for Technical branches, aged between 21 to 25 years, can apply.</p></div>
       <div class="qa"><h3 data-t="q2">What is the total number of vacancies for ICG Assistant Commandant 2027 Batch?</h3><p data-t="a2">There are a total of 170 tentative vacancies available for this batch.</p></div>
@@ -388,11 +396,11 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 data-t="q7">What is the exam pattern for CGCAT Stage-I?</h3><p data-t="a7">CGCAT comprises 100 objective multiple-choice questions carrying 4 marks each across English, Reasoning &amp; Numerical Ability, General Science &amp; Mathematical Aptitude, and General Knowledge, with 1 mark negative marking for incorrect answers.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Verify your age eligibility (born between 01 Jul 2001 and 30 Jun 2005)</li><li data-t="chkH1">Ensure you possess the required educational qualifications</li><li data-t="chkH2">Keep scanned photograph, signature, and documents ready before applying</li><li data-t="chkH3">Note down your registration number after final submission</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/india-post-staff-car-driver-recruitment-2024-apply-online-for-25/"><span data-t="rel0">India Post Staff Car Driver Recruitment 2024 – Apply Online for 25 Posts</span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/india-post-mms-kolkata-skilled-artisan-recruitment-2026-apply-fo/"><span data-t="rel1">India Post MMS Kolkata Skilled Artisan Recruitment 2026 – Apply for 19 Posts</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/nabard-specialists-on-contract-recruitment-2026-27/"><span data-t="rel2">NABARD Specialists on Contract Recruitment 2026-27</span><span class="v g num">27 Oct 2026</span></a>
@@ -406,7 +414,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">भारतीय तटरक्षक सहायक कमांडेंट 2027 बैच</h2>
       <p class="lead">भारतीय तटरक्षक ने जनरल ड्यूटी और तकनीकी शाखाओं के लिए सहायक कमांडेंट 2027 बैच के वास्ते ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य पुरुष उम्मीदवार 08 जुलाई 2025 से 27 जुलाई 2025 तक ऑनलाइन आवेदन कर सकते हैं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >भारतीय तटरक्षक (आईसीजी)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >8 जुलाई 2025</span></div>
       <div class="r"><span >पद</span><span class="v" >सहायक कमांडेंट (जनरल ड्यूटी और तकनीकी)</span></div>
@@ -418,25 +426,25 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >विज्ञापन संख्या</span><span class="v" >सहायक कमांडेंट 2027 बैच</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >भारतीय तटरक्षक ने समूह &#x27;ए&#x27; राजपत्रित अधिकारी के रूप में सहायक कमांडेंट 2027 बैच (जनरल ड्यूटी और तकनीकी शाखाओं) की भर्ती के लिए आधिकारिक अधिसूचना जारी कर दी है। पात्रता मानदंडों को पूरा करने वाले पुरुष उम्मीदवारों के लिए कुल 170 रिक्तियां उपलब्ध हैं। ऑनलाइन पंजीकरण 08 जुलाई 2025 से शुरू होकर 27 जुलाई 2025 को समाप्त होगा। योग्य और इच्छुक उम्मीदवारों को आधिकारिक अधिसूचना की समीक्षा करनी चाहिए और निर्धारित तिथियों के भीतर आधिकारिक वेबसाइट के माध्यम से आवेदन करना चाहिए।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >21-25 वर्ष की आयु के पुरुष स्नातक जो भारतीय तटरक्षक बल में अधिकारी के रूप में करियर बनाना चाहते हैं</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >कौन आवेदन नहीं कर सकता</div>
+      <h2 class="h" >कौन आवेदन नहीं कर सकता</h2>
       <ul class="steps dots"><li >किसी अन्य सेवा प्रशिक्षण अकादमी से अनुशासनिक आधार पर हटाए गए उम्मीदवार</li><li >आपराधिक मामलों में गिरफ्तार, दोषी ठहराए गए या मुकदमे का सामना कर रहे उम्मीदवार</li><li >किसी भी लोक सेवा परीक्षा में बैठने से वंचित उम्मीदवार</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >ऑनलाइन आवेदन शुरू</span><span class="v" >08 जुलाई 2025 (1600 बजे)</span></div>
       <div class="r"><span >आवेदन करने की अंतिम तिथि</span><span class="v" >27 जुलाई 2025 (2330 बजे)</span></div>
       <div class="r"><span >डिग्री उत्तीर्ण करने का प्रमाण प्रस्तुत करने की अंतिम तिथि</span><span class="v" >31 अक्टूबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आयु सीमा</div>
+      <h2 class="h" >आयु सीमा</h2>
       <div class="r"><span >न्यूनतम आयु</span><span class="v" >21 वर्ष</span></div>
       <div class="r"><span >अधिकतम आयु</span><span class="v" >25 वर्ष</span></div>
       <div class="r"><span >आयु की गणना इस तिथि को होगी</span><span class="v" >01 जुलाई 2026 (जन्म 01 जुलाई 2001 और 30 जून 2005 के बीच)</span></div>
@@ -445,53 +453,53 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >सेवारत तटरक्षक कर्मियों के लिए छूट</span><span class="v" >अधिकतम 5 वर्ष</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >जनरल ड्यूटी (जीडी)</span><span class="v" >140 · अनारक्षित 46, अ पिछ वि 35, अजा 25, जजा 24, ईडब्ल्यूएस 10</span></div>
       <div class="r"><span >तकनीकी (इंजीनियरिंग/इलेक्ट्रिकल)</span><span class="v" >30 · अनारक्षित 13, अ पिछ वि 8, अजा 3, जजा 4, ईडब्ल्यूएस 2</span></div>
       <div class="r"><span >कुल</span><span class="v" >170</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >जनरल ड्यूटी शिक्षा</span><span class="v" >कक्षा 12 तक भौतिकी और गणित के साथ मान्यता प्राप्त विश्वविद्यालय से स्नातक डिग्री।</span></div>
       <div class="r"><span >तकनीकी शाखा शिक्षा</span><span class="v" >संबंधित अनुशासन में इंजीनियरिंग डिग्री (नौसेना वास्तुकला, मैकेनिकल, मरीन, ऑटोमोटिव, मेचैट्रॉनिक्स, औद्योगिक और उत्पादन, धातुकर्म, डिजाइन, एयरोनॉटिकल, एयरोस्पेस, इलेक्ट्रिकल, इलेक्ट्रॉनिक्स, दूरसंचार, इंस्ट्रुमेंटेशन, पावर इंजीनियरिंग, आदि) कक्षा 12 तक भौतिकी और गणित के साथ।</span></div>
       <div class="r"><span >लिंग</span><span class="v" >केवल पुरुष उम्मीदवार</span></div>
     </section>
     <section class="kv">
-      <div class="h" >परीक्षा पैटर्न</div>
+      <h2 class="h" >परीक्षा पैटर्न</h2>
       <div class="tw"><table class="tbl"><thead><tr><th >भाग / विषय</th><th >प्रश्न</th><th >अंक</th><th >समय</th></tr></thead><tbody><tr><td >अंग्रेजी</td><td class="num">25</td><td class="num">100</td><td>2 Hours (Combined for all parts)</td></tr><tr><td >तर्क और संख्यात्मक क्षमता</td><td class="num">25</td><td class="num">100</td><td>2 Hours (Combined for all parts)</td></tr><tr><td >सामान्य विज्ञान और गणितीय योग्यता</td><td class="num">25</td><td class="num">100</td><td>2 Hours (Combined for all parts)</td></tr><tr><td >सामान्य ज्ञान</td><td class="num">25</td><td class="num">100</td><td>2 Hours (Combined for all parts)</td></tr><tr><td >नकारात्मक अंकन</td><td class="num"></td><td class="num">One negative mark for each incorrect answer</td><td></td></tr></tbody></table></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >चरण-I: कोस्ट गार्ड कॉमन एडमिशन टेस्ट (सीजीकैट)</li><li >चरण-II: प्रारंभिक चयन बोर्ड (पीएसबी)</li><li >चरण-III: अंतिम चयन बोर्ड (एफएसबी)</li><li >चरण-IV: चिकित्सा परीक्षा</li><li >चरण-V: प्रेरण</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >आवेदन कैसे करें</div>
+      <h2 class="h" >आवेदन कैसे करें</h2>
       <ol class="steps"><li >भारतीय तटरक्षक की आधिकारिक भर्ती वेबसाइट पर जाएं: joinindiancoastguard.cdac.in</li><li >सहायक कमांडेंट 2027 बैच भर्ती लिंक पर क्लिक करें और पंजीकरण पूरा करें।</li><li >सटीक व्यक्तिगत और शैक्षणिक विवरण के साथ ऑनलाइन आवेदन पत्र भरें।</li><li >निर्दिष्ट विनिर्देशों के अनुसार आवश्यक दस्तावेज, फोटोग्राफ और हस्ताक्षर अपलोड करें।</li><li >अंतिम तिथि से पहले आवेदन पत्र जमा करें और भविष्य के संदर्भ के लिए प्रिंटआउट लें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >मूल शैक्षणिक प्रमाण पत्र और अंक तालिकाएं</li><li >जन्म तिथि का प्रमाण</li><li >वैध फोटो पहचान प्रमाण</li><li >विश्वविद्यालय के रजिस्ट्रार/नियंत्रक द्वारा हस्ताक्षरित अंतिम वर्ष के छात्रों के लिए बोनाफाइड प्रमाण पत्र</li><li >जाति प्रमाण पत्र (यदि लागू हो)</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >गलत जन्म तिथि या लिंग दर्ज करना, क्योंकि बाद के किसी भी चरण में बदलाव की अनुमति नहीं है</li><li >अंतिम वर्ष के छात्रों द्वारा 31 अक्टूबर 2026 तक डिग्री उत्तीर्ण करने का प्रमाण प्रस्तुत करने में विफल रहना</li><li >चरण-I की तुलना में चरण-II सत्यापन के दौरान बायोमेट्रिक का मेल न खाना</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >आईसीजी सहायक कमांडेंट प्रवेश क्या है?</h3><p >यह एक कठोर बहु-चरण चयन प्रक्रिया के माध्यम से जनरल ड्यूटी या तकनीकी शाखाओं में समूह &#x27;ए&#x27; राजपत्रित अधिकारी के रूप में भारतीय तटरक्षक बल में शामिल होने के लिए गतिशील भारतीय पुरुष उम्मीदवारों के लिए एक सीधी प्रवेश योजना है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >सीजीकैट (चरण-I) पास करने वाले उम्मीदवारों को प्रारंभिक चयन बोर्ड (पीएसबी) चरण-II के लिए बुलाया जाएगा।</li><li >योग्य उम्मीदवार अंतिम चयन बोर्ड (एफएसबी) चरण-III में आगे बढ़ते हैं, जिसके बाद चिकित्सा परीक्षा (चरण-IV) और अंतिम प्रेरण (चरण-V) होता है।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://joinindiancoastguard.cdac.in/cgcat/assets/img/news/Advertisement_for_Asst_Comdt_2027_Batch.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">joinindiancoastguard.cdac.in</span></a>
       <a class="r" href="https://joinindiancoastguard.cdac.in" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">joinindiancoastguard.cdac.in</span></a>
       <a class="r" href="https://joinindiancoastguard.cdac.in" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">joinindiancoastguard.cdac.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >आईसीजी सहायक कमांडेंट 2027 बैच के लिए आवेदन करने की अंतिम तिथि क्या है?</h3><p >ऑनलाइन आवेदन करने की अंतिम तिथि 27 जुलाई 2025 (2330 बजे) है।</p></div>
       <div class="qa"><h3 >आईसीजी सहायक कमांडेंट 2027 बैच के लिए कौन आवेदन कर सकता है?</h3><p >जीडी के लिए स्नातक की डिग्री या तकनीकी शाखाओं के लिए इंजीनियरिंग की डिग्री रखने वाले भारतीय पुरुष उम्मीदवार, जिनकी आयु 21 से 25 वर्ष के बीच है, आवेदन कर सकते हैं।</p></div>
       <div class="qa"><h3 >आईसीजी सहायक कमांडेंट 2027 बैच के लिए कुल रिक्तियों की संख्या क्या है?</h3><p >इस बैच के लिए कुल 170 संभावित रिक्तियां उपलब्ध हैं।</p></div>
@@ -502,7 +510,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 >सीजीकैट चरण-I के लिए परीक्षा पैटर्न क्या है?</h3><p >सीजीकैट में अंग्रेजी, तर्क और संख्यात्मक क्षमता, सामान्य विज्ञान और गणितीय योग्यता, और सामान्य ज्ञान पर प्रत्येक 4 अंक के 100 वस्तुनिष्ठ बहुविकल्पीय प्रश्न शामिल हैं, जिसमें गलत उत्तरों के लिए 1 अंक की नकारात्मक अंकन है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >अपनी आयु पात्रता सत्यापित करें (01 जुलाई 2001 और 30 जून 2005 के बीच जन्मे)</li><li >सुनिश्चित करें कि आपके पास आवश्यक शैक्षणिक योग्यताएं हैं</li><li >आवेदन करने से पहले स्कैन किया गया फोटो, हस्ताक्षर और दस्तावेज तैयार रखें</li><li >अंतिम जमा करने के बाद अपना पंजीकरण नंबर नोट कर लें</li></ul>
     </section>
     </details>

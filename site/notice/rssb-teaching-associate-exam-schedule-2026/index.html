@@ -20,7 +20,7 @@
 <title>RSSB Teaching Associate Exam Schedule 2026 – Dates Out for Raj-CES | राजस्थान कर्मचारी चयन बोर्ड टीचिंग असोसिएट परीक्षा कार्यक्रम 2026 – तिथियां जारी</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Rajasthan Staff Selection Board (RSSB)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">21 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Post Name</span><span class="v" data-t="r0v">Contractual Teaching Associate (Raj-CES)</span></div>
@@ -301,61 +309,61 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The Rajasthan Staff Selection Board (RSSB), Jaipur has released the official examination schedule for the Contractual Teaching Associate (Raj-CES) Direct Recruitment 2026. Paper-I (General Studies of Rajasthan) will be conducted on November 17, 2026. Paper-II (subject-wise exams for Physics, Botany, English, Chemistry, and other subjects) will be held from December 7, 2026, to December 21, 2026. Candidates must ensure they meet the eligibility criteria and follow the instructions regarding OMR sheet filling, 5 options, and identity proof.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who applied for the RSSB Contractual Teaching Associate Recruitment 2026.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Paper-I Exam Date</span><span class="v" data-t="datesH0v">17 Nov 2026</span></div>
       <div class="r"><span data-t="datesH1l">Paper-II Exam Dates</span><span class="v" data-t="datesH1v">07 Dec 2026 to 21 Dec 2026</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Teaching Associate (Contractual)</span><span class="v" data-t="vacH0v">Refer to original advertisement number 06/2026 dated 30.04.2026</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Educational Qualification</span><span class="v" data-t="eligH0v">As per board advertisement requirements for Teaching Associate</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Written Examination (Paper-I and Paper-II)</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official RSSB website to download the provisional e-admit card when released.</li><li data-t="howH1">Check your exam date, time, and centre details from the admit card.</li><li data-t="howH2">Carry a valid original photo ID whose photograph matches your face and admit card photo.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Provisional E-Admit Card</li><li data-t="docH1">Original Valid Photo ID (update photo if 3 years or older)</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Do not leave any question unattempted without darkening the 5th option &#x27;E&#x27;, otherwise 1/3 mark will be deducted.</li><li data-t="mistH1">If more than 10% of questions are left completely blank (no option darkened), the candidate will be disqualified.</li><li data-t="mistH2">Ensure your photo ID has a recent photograph (less than 3 years old) matching your appearance.</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is the RSSB Teaching Associate Exam 2026?</h3><p data-t="ea0">It is a direct recruitment examination conducted by the Rajasthan Staff Selection Board for contractual Teaching Associate (Raj-CES) posts.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Appearance in Paper-I and Paper-II examinations as per schedule.</li><li data-t="aftH1">Subsequent evaluation and further stages as per board guidelines.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Exam Pattern</span><span class="v" data-t="extraH0v">Each question will have 5 options/circles (A, B, C, D and E for unanswered). 1/3 mark will be deducted if no option is darkened. Candidates must darken one option for every question, using 10 extra minutes given for this check.</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://rssb.rajasthan.gov.in/storage/news_item/1792591103.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rssb.rajasthan.gov.in</span></a>
       <a class="r" href="https://rssb.rajasthan.gov.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rssb.rajasthan.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When is Paper-I of the RSSB Teaching Associate Exam 2026 scheduled?</h3><p data-t="a0">Paper-I (General studies of Rajasthan) is scheduled for November 17, 2026, from 11:00 AM to 12:00 PM.</p></div>
       <div class="qa"><h3 data-t="q1">When will the Paper-II exams take place?</h3><p data-t="a1">Paper-II subject-wise exams will be held from December 7, 2026, to December 21, 2026.</p></div>
       <div class="qa"><h3 data-t="q2">How many options will be there in each question in the exam?</h3><p data-t="a2">Each question will have 5 options: A, B, C, D and E (for unanswered questions).</p></div>
@@ -363,11 +371,11 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 data-t="q4">Where can I download the admit card?</h3><p data-t="a4">Provisional e-admit cards can be downloaded from the official RSSB website at rssb.rajasthan.gov.in when released.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check your subject-wise exam date and time from the official schedule.</li><li data-t="chkH1">Keep your original photo ID updated.</li><li data-t="chkH2">Download the e-admit card when available on the official website.</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/rssb-driver-recruitment-2024-document-verification-shortlist-out/"><span data-t="rel0">RSSB Driver DV Schedule 2024 – Scrutiny Form Dates Out</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/rssb-rajasthan-driver-result-2024-trade-test-dv-list-out/"><span data-t="rel1">RSSB Rajasthan Driver Result 2024 – Trade Test DV List Out</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/rssb-computer-instructor-recruitment-2026-amended-notification-f/"><span data-t="rel2">RSSB Computer Instructor Recruitment 2026 – Amended Notification 3,951 Posts</span><span class="v g num">28 Oct 2026</span></a>
@@ -381,7 +389,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">राजस्थान कर्मचारी चयन बोर्ड टीचिंग असोसिएट परीक्षा कार्यक्रम 2026 – तिथियां जारी</h2>
       <p class="lead">राजस्थान कर्मचारी चयन बोर्ड ने संविदा आधारित टीचिंग असोसिएट भर्ती 2026 की परीक्षा का कार्यक्रम जारी कर दिया है। पेपर-I की परीक्षा 17 नवंबर 2026 को और पेपर-II की परीक्षाएं 7 दिसंबर से 21 दिसंबर 2026 के बीच आयोजित होंगी। उम्मीदवार विस्तृत विषयवार कार्यक्रम और निर्देश देख सकते हैं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >राजस्थान कर्मचारी चयन बोर्ड</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >21 अक्तूबर 2026</span></div>
       <div class="r"><span >पद का नाम</span><span class="v" >टीचिंग असोसिएट (संविदा आधारित)</span></div>
@@ -391,61 +399,61 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >लिखित परीक्षा</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >राजस्थान कर्मचारी चयन बोर्ड (RSSB), जयपुर ने संविदा आधारित टीचिंग असोसिएट (राजसेस) सीधी भर्ती 2026 के लिए आधिकारिक परीक्षा कार्यक्रम जारी कर दिया है। पेपर-I (राजस्थान का सामान्य ज्ञान) की परीक्षा 17 नवंबर 2026 को आयोजित होगी। पेपर-II (भौतिकी, वनस्पति विज्ञान, अंग्रेजी, रसायन विज्ञान और अन्य विषयों की विषयवार परीक्षा) 7 दिसंबर 2026 से 21 दिसंबर 2026 तक आयोजित की जाएगी। उम्मीदवारों को यह सुनिश्चित करना होगा कि वे पात्रता मानदंडों को पूरा करते हैं और ओएमआर शीट भरने, 5 विकल्पों और पहचान प्रमाण से संबंधित निर्देशों का पालन करते हैं।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जिन्होंने आरएसएसबी संविदा टीचिंग असोसिएट भर्ती 2026 के लिए आवेदन किया है।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >पेपर-I परीक्षा तिथि</span><span class="v" >17 नवंबर 2026</span></div>
       <div class="r"><span >पेपर-II परीक्षा तिथियां</span><span class="v" >07 दिसंबर 2026 से 21 दिसंबर 2026 तक</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >टीचिंग असोसिएट (संविदा)</span><span class="v" >मूल विज्ञापन संख्या 06/2026 दिनांक 30.04.2026 देखें</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >शैक्षणिक योग्यता</span><span class="v" >टीचिंग असोसिएट हेतु बोर्ड के विज्ञापन की आवश्यकताओं के अनुसार</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >लिखित परीक्षा (पेपर-I और पेपर-II)</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >प्रवेश पत्र जारी होने पर बोर्ड की आधिकारिक वेबसाइट से प्रोविजनल ई-प्रवेश पत्र डाउनलोड करें।</li><li >प्रवेश पत्र से अपनी परीक्षा तिथि, समय और केंद्र का विवरण देखें।</li><li >एक वैध मूल फोटो पहचान पत्र साथ रखें जिसका फोटो आपके चेहरे और प्रवेश पत्र के फोटो से मेल खाता हो।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >प्रोविजनल ई-प्रवेश पत्र</li><li >मूल वैध फोटो पहचान पत्र (यदि फोटो 3 वर्ष या उससे अधिक पुरानी है तो अपडेट कराएं)</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >पाँचवें विकल्प &#x27;E&#x27; को गहरा किए बिना किसी भी प्रश्न को अनुत्तरित न छोड़ें, अन्यथा 1/3 अंक काट लिया जाएगा।</li><li >यदि 10 प्रतिशत से अधिक प्रश्नों में कोई भी विकल्प गहरा नहीं किया गया, तो अभ्यर्थी को अयोग्य घोषित कर दिया जाएगा।</li><li >सुनिश्चित करें कि आपके पहचान पत्र पर हाल ही का फोटो (3 वर्ष से कम पुराना) हो जो आपके स्वरूप से मेल खाता हो।</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >आरएसएसबी टीचिंग असोसिएट परीक्षा 2026 क्या है?</h3><p >यह राजस्थान कर्मचारी चयन बोर्ड द्वारा संविदा आधारित टीचिंग असोसिएट (राजसेस) पदों के लिए आयोजित की जाने वाली सीधी भर्ती परीक्षा है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >कार्यक्रम के अनुसार पेपर-I और पेपर-II परीक्षा में शामिल होना।</li><li >बोर्ड के दिशानिर्देशों के अनुसार आगे की मूल्यांकन और अन्य चरण।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >परीक्षा पैटर्न</span><span class="v" >प्रत्येक प्रश्न के 5 विकल्प/गोले (A, B, C, D और अनुत्तरित के लिए E) होंगे। यदि कोई विकल्प नहीं भरा गया तो 1/3 अंक काटा जाएगा। उम्मीदवारों को यह सुनिश्चित करने के लिए 10 मिनट का अतिरिक्त समय दिया जाएगा कि हर प्रश्न का एक विकल्प भरा गया है।</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://rssb.rajasthan.gov.in/storage/news_item/1792591103.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">rssb.rajasthan.gov.in</span></a>
       <a class="r" href="https://rssb.rajasthan.gov.in/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">rssb.rajasthan.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >आरएसएसबी टीचिंग असोसिएट परीक्षा 2026 का पेपर-I कब निर्धारित है?</h3><p >पेपर-I (राजस्थान का सामान्य ज्ञान) 17 नवंबर 2026 को प्रातः 11:00 बजे से दोपहर 12:00 बजे तक आयोजित होगा।</p></div>
       <div class="qa"><h3 >पेपर-II की परीक्षाएं कब होंगी?</h3><p >पेपर-II की विषयवार परीक्षाएं 7 दिसंबर 2026 से 21 दिसंबर 2026 तक आयोजित की जाएंगी।</p></div>
       <div class="qa"><h3 >परीक्षा में प्रत्येक प्रश्न में कितने विकल्प होंगे?</h3><p >प्रत्येक प्रश्न में 5 विकल्प होंगे: A, B, C, D और E (अनुत्तरित प्रश्न के लिए)।</p></div>
@@ -453,7 +461,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 >मैं प्रवेश पत्र कहाँ से डाउनलोड कर सकता हूँ?</h3><p >जारी होने पर प्रोविजनल ई-प्रवेश पत्र आधिकारिक आरएसएसबी वेबसाइट rssb.rajasthan.gov.in से डाउनलोड किए जा सकते हैं।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >आधिकारिक कार्यक्रम से अपनी विषयवार परीक्षा तिथि और समय की जाँच करें।</li><li >अपनी मूल फोटो आईडी अपडेट रखें।</li><li >आधिकारिक वेबसाइट पर उपलब्ध होने पर ई-प्रवेश पत्र डाउनलोड करें।</li></ul>
     </section>
     </details>

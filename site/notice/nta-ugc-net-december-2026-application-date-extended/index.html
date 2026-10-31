@@ -20,7 +20,7 @@
 <title>NTA UGC-NET December 2026 Last Date Extended – Apply Online Form | एनटीए यूजीसी-नेट दिसंबर 2026 अंतिम तिथि बढ़ाई गई – ऑनलाइन फॉर्म</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">National Testing Agency (NTA)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">27 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Junior Research Fellowship and Assistant Professor</span></div>
@@ -301,80 +309,80 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#chgH" data-t="chgH">What changed</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The National Testing Agency (NTA) has released a public notice regarding the extension of the last date for submission of online application forms for the UGC-NET December 2026 Examination. The examination is conducted for determining the eligibility of Indian nationals for Junior Research Fellowship (JRF), Assistant Professor, and admission to Ph.D. programmes. The revised last date to submit the online application and fee is 31 October 2026 up to 11:50 PM. Candidates who have not yet applied should complete their registration before the deadline.</p>
     </section>
     <section class="kv" id="chgH" data-t-aria="chgH">
-      <div class="h" data-t="chgH">What changed</div>
+      <h2 class="h" data-t="chgH">What changed</h2>
       <div class="r"><span data-t="chgH0l">Last date for submission of Online Application Form</span><span class="v" data-t="chgH0v">Not specified in notice → 31 Oct 2026</span></div>
       <div class="r"><span data-t="chgH1l">Last date for successful transaction of examination fee</span><span class="v" data-t="chgH1v">Not specified in notice → 31 Oct 2026</span></div>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates seeking Junior Research Fellowship, Assistant Professor positions, or Ph.D. admissions who have not yet applied</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Last date for submission of Online Application Form</span><span class="v" data-t="datesH0v">31 Oct 2026</span></div>
       <div class="r"><span data-t="datesH1l">Last date for successful transaction of examination fee</span><span class="v" data-t="datesH1v">31 Oct 2026</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Junior Research Fellowship and Assistant Professor</span><span class="v" data-t="vacH0v">Not Specified · Eligibility for JRF, Assistant Professor, and Ph.D. admission</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Examination Purpose</span><span class="v" data-t="eligH0v">Junior Research Fellowship, Assistant Professor, and Ph.D. admission in Indian Universities and Colleges</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">UGC-NET December 2026 Examination</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to apply</div>
+      <h2 class="h" data-t="howH">How to apply</h2>
       <ol class="steps"><li data-t="howH0">Visit the official website at https://nta.ac.in or https://ugcnet.nta.nic.in</li><li data-t="howH1">Click on the UGC-NET December 2026 online application link</li><li data-t="howH2">Fill out the application form and complete the fee payment before 31 October 2026</li><li data-t="howH3">Take a printout of the final confirmation page for future reference</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Educational qualification details</li><li data-t="docH1">Scanned photograph and signature</li><li data-t="docH2">Valid ID proof</li><li data-t="docH3">Payment details</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Do not wait until the last minute to avoid technical difficulties</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is UGC-NET December 2026?</h3><p data-t="ea0">UGC-NET is a national-level examination conducted by the National Testing Agency to determine the eligibility of Indian nationals for Junior Research Fellowship, Assistant Professor, and Ph.D. admissions in Indian universities.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Examination conduction as per schedule</li><li data-t="aftH1">Release of admit card</li><li data-t="aftH2">Answer key and result declaration</li></ol>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://nta.ac.in/Download/Notice/Notice_20261027235155.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">nta.ac.in</span></a>
       <a class="r" href="https://nta.ac.in" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">nta.ac.in</span></a>
       <a class="r" href="https://ugcnet.nta.nic.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">ugcnet.nta.nic.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">What is the last date to apply for UGC-NET December 2026?</h3><p data-t="a0">The last date to apply for UGC-NET December 2026 is 31 October 2026 up to 11:50 PM.</p></div>
       <div class="qa"><h3 data-t="q1">Who conducts the UGC-NET December 2026 examination?</h3><p data-t="a1">The examination is conducted by the National Testing Agency (NTA).</p></div>
       <div class="qa"><h3 data-t="q2">What is the last date for fee payment for UGC-NET December 2026?</h3><p data-t="a2">The last date for successful transaction of the examination fee is 31 October 2026 up to 11:50 PM.</p></div>
       <div class="qa"><h3 data-t="q3">Where can I apply online for UGC-NET December 2026?</h3><p data-t="a3">You can apply online through the official websites https://nta.ac.in and https://ugcnet.nta.nic.in.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check eligibility criteria</li><li data-t="chkH1">Keep documents ready</li><li data-t="chkH2">Submit application and fee before 31 October 2026</li></ul>
     </section>
     <section class="kv rel" id="exam" data-t-aria="exH">
-      <div class="h" data-t="exH">All updates for UGC-NET December 2026</div>
+      <h2 class="h" data-t="exH">All updates for UGC-NET December 2026</h2>
       <a class="r" href="/notice/ugc-net-december-2026-last-date-extended/"><span><span data-t="ex0">UGC-NET December 2026 Last Date Extended – Apply Online</span> <small class="g" data-t="exs0">Last Date Extended</small></span><span class="v g num">27 Oct 2026</span></a>
       <a class="r" href="/notice/ugc-net-december-2026-examination-corrigendum/"><span><span data-t="ex1">UGC-NET December 2026 Examination Corrigendum Released</span> <small class="g" data-t="exs1">Corrigendum Released</small></span><span class="v g num">16 Oct 2026</span></a>
       <a class="r" href="/notice/ugc-net-december-2026-examination-notice-released/"><span><span data-t="ex2">UGC-NET December 2026 Examination Notice Released</span> <small class="g" data-t="exs2">Examination Notice</small></span><span class="v g num">8 Oct 2026</span></a>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/nta-swayam-july-2026-exam-registration-last-date-extended/"><span data-t="rel0">NTA SWAYAM July 2026 Exam Registration Last Date Extended</span><span class="v g num">31 Oct 2026</span></a>
       <a class="r" href="/notice/jee-main-2027-session-1-fresh-application-notice-last-date-22-no/"><span data-t="rel1">JEE Main 2027 Session 1 Fresh Application Notice – Last Date 22 Nov</span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/nta-jee-main-2027-session-1-registration-advisory-and-instructio/"><span data-t="rel2">NTA JEE Main 2027 Session 1 Registration Advisory and Instructions</span><span class="v g num">28 Oct 2026</span></a>
@@ -387,7 +395,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">एनटीए यूजीसी-नेट दिसंबर 2026 अंतिम तिथि बढ़ाई गई – ऑनलाइन फॉर्म</h2>
       <p class="lead">राष्ट्रीय परीक्षण एजेंसी ने यूजीसी-नेट दिसंबर 2026 परीक्षा के लिए ऑनलाइन आवेदन जमा करने की अंतिम तिथि 31 अक्टूबर 2026 तक बढ़ा दी है। उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >राष्ट्रीय परीक्षण एजेंसी (एनटीए)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >27 अक्तूबर 2026</span></div>
       <div class="r"><span >पद</span><span class="v" >जूनियर रिसर्च फेलोशिप और सहायक प्रोफेसर</span></div>
@@ -397,70 +405,70 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >यूजीसी-नेट दिसंबर 2026 परीक्षा</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने यूजीसी-नेट दिसंबर 2026 परीक्षा के लिए ऑनलाइन आवेदन पत्र जमा करने की अंतिम तिथि बढ़ाने के संबंध में एक सार्वजनिक नोटिस जारी किया है। यह परीक्षा भारतीय नागरिकों के लिए जूनियर रिसर्च फेलोशिप (जेआरएफ), सहायक प्रोफेसर के रूप में नियुक्ति और पीएचडी कार्यक्रमों में प्रवेश के लिए पात्रता निर्धारित करने हेतु आयोजित की जाती है। ऑनलाइन आवेदन और शुल्क जमा करने की संशोधित अंतिम तिथि 31 अक्टूबर 2026 रात्रि 11:50 बजे तक है। जिन उम्मीदवारों ने अभी तक आवेदन नहीं किया है, वे समय सीमा से पहले अपना पंजीकरण पूरा कर लें।</p>
     </section>
     <section class="kv">
-      <div class="h" >क्या बदला</div>
+      <h2 class="h" >क्या बदला</h2>
       <div class="r"><span >ऑनलाइन आवेदन पत्र जमा करने की अंतिम तिथि</span><span class="v" >नोटिस में निर्दिष्ट नहीं → 31 अक्टूबर 2026</span></div>
       <div class="r"><span >परीक्षा शुल्क के सफल लेनदेन की अंतिम तिथि</span><span class="v" >नोटिस में निर्दिष्ट नहीं → 31 अक्टूबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >जूनियर रिसर्च फेलोशिप, सहायक प्रोफेसर पदों या पीएचडी प्रवेश के इच्छुक उम्मीदवार जिन्होंने अभी तक आवेदन नहीं किया है</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >ऑनलाइन आवेदन पत्र जमा करने की अंतिम तिथि</span><span class="v" >31 अक्टूबर 2026</span></div>
       <div class="r"><span >परीक्षा शुल्क के सफल लेनदेन की अंतिम तिथि</span><span class="v" >31 अक्टूबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >जूनियर रिसर्च फेलोशिप और सहायक प्रोफेसर</span><span class="v" >Not Specified · जेआरएफ, सहायक प्रोफेसर और पीएचडी प्रवेश के लिए पात्रता</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >परीक्षा का उद्देश्य</span><span class="v" >भारतीय विश्वविद्यालयों और कॉलेजों में जूनियर रिसर्च फेलोशिप, सहायक प्रोफेसर और पीएचडी प्रवेश</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >यूजीसी-नेट दिसंबर 2026 परीक्षा</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >आवेदन कैसे करें</div>
+      <h2 class="h" >आवेदन कैसे करें</h2>
       <ol class="steps"><li >आधिकारिक वेबसाइट https://nta.ac.in या https://ugcnet.nta.nic.in पर जाएं</li><li >यूजीसी-नेट दिसंबर 2026 ऑनलाइन आवेदन लिंक पर क्लिक करें</li><li >आवेदन पत्र भरें और 31 अक्टूबर 2026 से पहले शुल्क भुगतान पूरा करें</li><li >भविष्य के संदर्भ के लिए अंतिम पुष्टिकरण पृष्ठ का प्रिंटआउट लें</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >शैक्षणिक योग्यता विवरण</li><li >स्कैन की गई फोटो और हस्ताक्षर</li><li >वैध पहचान प्रमाण</li><li >भुगतान विवरण</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >तकनीकी कठिनाइयों से बचने के लिए अंतिम समय तक प्रतीक्षा न करें</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >यूजीसी-नेट दिसंबर 2026 क्या है?</h3><p >यूजीसी-नेट राष्ट्रीय परीक्षण एजेंसी द्वारा आयोजित एक राष्ट्रीय स्तर की परीक्षा है जो भारतीय विश्वविद्यालयों में जूनियर रिसर्च फेलोशिप, सहायक प्रोफेसर और पीएचडी प्रवेश के लिए भारतीय नागरिकों की पात्रता निर्धारित करती है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >निर्धारित कार्यक्रम के अनुसार परीक्षा का आयोजन</li><li >एडमिट कार्ड जारी करना</li><li >उत्तर कुंजी और परिणाम घोषणा</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://nta.ac.in/Download/Notice/Notice_20261027235155.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">nta.ac.in</span></a>
       <a class="r" href="https://nta.ac.in" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">nta.ac.in</span></a>
       <a class="r" href="https://ugcnet.nta.nic.in" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">ugcnet.nta.nic.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >यूजीसी-नेट दिसंबर 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?</h3><p >यूजीसी-नेट दिसंबर 2026 के लिए आवेदन करने की अंतिम तिथि 31 अक्टूबर 2026 रात्रि 11:50 बजे तक है।</p></div>
       <div class="qa"><h3 >यूजीसी-नेट दिसंबर 2026 परीक्षा कौन आयोजित करता है?</h3><p >यह परीक्षा राष्ट्रीय परीक्षण एजेंसी (एनटीए) द्वारा आयोजित की जाती है।</p></div>
       <div class="qa"><h3 >यूजीसी-नेट दिसंबर 2026 के लिए शुल्क भुगतान की अंतिम तिथि क्या है?</h3><p >परीक्षा शुल्क के सफल लेनदेन की अंतिम तिथि 31 अक्टूबर 2026 रात्रि 11:50 बजे तक है।</p></div>
       <div class="qa"><h3 >मैं यूजीसी-नेट दिसंबर 2026 के लिए ऑनलाइन आवेदन कहां कर सकता हूं?</h3><p >आप आधिकारिक वेबसाइटों https://nta.ac.in और https://ugcnet.nta.nic.in के माध्यम से ऑनलाइन आवेदन कर सकते हैं।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >पात्रता मापदंडों की जांच करें</li><li >दस्तावेज़ तैयार रखें</li><li >31 अक्टूबर 2026 से पहले आवेदन और शुल्क जमा करें</li></ul>
     </section>
     </details>

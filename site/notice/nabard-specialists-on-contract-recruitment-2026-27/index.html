@@ -20,7 +20,7 @@
 <title>NABARD Specialists on Contract Recruitment 2026-27 | नाबार्ड अनुबंध पर विशेषज्ञ भर्ती 2026-27</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,41 +298,41 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">National Bank for Agriculture and Rural Development (NABARD)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">27 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Specialists on contract (CISO &amp; DoS-CSITE)</span></div>
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">National Bank for Agriculture and Rural Development (NABARD) has issued a notification for the recruitment of Specialists on contract for 2026-27 for CISO and DoS-CSITE posts. Interested candidates should review the official notification details carefully. Eligible candidates can read further for requirements and application procedures.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates interested in contract specialist roles at NABARD</li></ul>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Specialists on contract - CISO &amp; DoS-CSITE</span><span class="v" data-t="vacH0v">CISO &amp; DoS-CSITE</span></div>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is NABARD Specialists on Contract Recruitment?</h3><p data-t="ea0">It is a recruitment process conducted by the National Bank for Agriculture and Rural Development to hire specialists on a contract basis for CISO and DoS-CSITE roles.</p></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://www.nabard.org/auth/writereaddata/CareerNotices/120281697Notification.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">nabard.org</span></a>
       <a class="r" href="https://www.nabard.org/careers-notices1.aspx?cid=693&amp;id=26" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">nabard.org</span></a>
       <a class="r" href="https://www.nabard.org" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">nabard.org</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">Who is conducting the NABARD Specialists on Contract Recruitment 2026-27?</h3><p data-t="a0">National Bank for Agriculture and Rural Development (NABARD) is conducting this recruitment.</p></div>
       <div class="qa"><h3 data-t="q1">Which posts are included in this NABARD recruitment notice?</h3><p data-t="a1">The notification is for Specialists on contract for CISO and DoS-CSITE posts.</p></div>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/nabard-development-assistant-prelims-cut-off-2026/"><span data-t="rel0">NABARD Development Assistant Prelims Cut-Off 2026</span><span class="v g num">23 Oct 2026</span></a>
       <a class="r" href="/notice/nabard-development-assistant-hindi-prelims-cut-off-2026/"><span data-t="rel1">NABARD Development Assistant Hindi Prelims Cut-Off 2026</span><span class="v g num">23 Oct 2026</span></a>
       <a class="r" href="/notice/nabard-development-assistant-hindi-mains-cut-off-2026/"><span data-t="rel2">NABARD Development Assistant Hindi Mains Cut-Off 2026</span><span class="v g num">23 Oct 2026</span></a>
@@ -338,35 +346,35 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">नाबार्ड अनुबंध पर विशेषज्ञ भर्ती 2026-27</h2>
       <p class="lead">राष्ट्रीय कृषि और ग्रामीण विकास बैंक ने सीआईएसओ और डीओएस-सीएसआईटीई पदों के लिए अनुबंध के आधार पर विशेषज्ञों की भर्ती हेतु अधिसूचना जारी की है।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >27 अक्तूबर 2026</span></div>
       <div class="r"><span >पद</span><span class="v" >अनुबंध पर विशेषज्ञ (सीआईएसओ और डीओएस-सीएसआईटीई)</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड) ने सीआईएसओ और डीओएस-सीएसआईटीई पदों के लिए 2026-27 के अनुबंध पर विशेषज्ञों की भर्ती के लिए अधिसूचना जारी की है। इच्छुक उम्मीदवार आधिकारिक अधिसूचना विवरण को ध्यान से देख सकते हैं। योग्य उम्मीदवार आवश्यकताओं और आवेदन प्रक्रियाओं के लिए आगे पढ़ सकते हैं।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >नाबार्ड में अनुबंध विशेषज्ञ भूमिकाओं में रुचि रखने वाले उम्मीदवार</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >अनुबंध पर विशेषज्ञ - सीआईएसओ और डीओएस-सीएसआईटीई</span><span class="v" >सीआईएसओ और डीओएस-सीएसआईटीई</span></div>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >नाबार्ड अनुबंध पर विशेषज्ञ भर्ती क्या है?</h3><p >यह सीआईएसओ और डीओएस-सीएसआईटीई भूमिकाओं के लिए अनुबंध के आधार पर विशेषज्ञों को काम पर रखने के लिए राष्ट्रीय कृषि और ग्रामीण विकास बैंक द्वारा आयोजित एक भर्ती प्रक्रिया है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://www.nabard.org/auth/writereaddata/CareerNotices/120281697Notification.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">nabard.org</span></a>
       <a class="r" href="https://www.nabard.org/careers-notices1.aspx?cid=693&amp;id=26" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">nabard.org</span></a>
       <a class="r" href="https://www.nabard.org" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">nabard.org</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >नाबार्ड अनुबंध पर विशेषज्ञ भर्ती 2026-27 कौन आयोजित कर रहा है?</h3><p >राष्ट्रीय कृषि और ग्रामीण विकास बैंक (नाबार्ड) इस भर्ती का आयोजन कर रहा है।</p></div>
       <div class="qa"><h3 >इस नाबार्ड भर्ती नोटिस में कौन से पद शामिल हैं?</h3><p >अधिसूचना सीआईएसओ और डीओएस-सीएसआईटीई पदों के लिए अनुबंध पर विशेषज्ञों के लिए है।</p></div>
     </section>

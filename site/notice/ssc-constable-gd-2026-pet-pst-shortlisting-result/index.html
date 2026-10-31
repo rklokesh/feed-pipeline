@@ -20,7 +20,7 @@
 <title>SSC Constable GD 2026 PET/PST Shortlisting Result | कर्मचारी चयन आयोग सिपाही जीडी 2026 शारीरिक दक्षता और मानक परीक्षण शॉर्टलिस्टिंग परिणाम</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Staff Selection Commission (SSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">12 Oct 2026</span></div>
       <div class="r"><span data-t="gTot">Total vacancies</span><span class="v" data-t="gTotV">215,677 (Female candidates: 15,782, Male candidates in SSF: 330, Male candidates in other forces: 1,81,251)</span></div>
@@ -304,67 +312,67 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#notH" data-t="notH">Who cannot apply</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The Staff Selection Commission has announced the results of the Computer Based Examination for Constable (GD) in Central Armed Police Forces (CAPFs) and SSF, and Rifleman (GD) in Assam Rifles Examination, 2026. The computer-based test was conducted from 27 April 2026 to 30 May 2026. A total of 21,56,776 candidates appeared in the examination. Candidates who have qualified have been provisionally shortlisted to appear in the next stage comprising the Physical Efficiency Test (PET) and Physical Standard Test (PST). Qualified candidates should check the lists published by the Commission and follow the CRPF website for further schedule.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who appeared in the SSC Constable GD Computer Based Examination 2026.</li></ul>
     </section>
     <section class="kv" id="notH" data-t-aria="notH">
-      <div class="h" data-t="notH">Who cannot apply</div>
+      <h2 class="h" data-t="notH">Who cannot apply</h2>
       <ul class="steps dots"><li data-t="notH0">Candidates who failed to secure the minimum qualifying marks or cut-off marks.</li><li data-t="notH1">Candidates whose results are withheld or debarred by the Commission.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Computer Based Examination dates</span><span class="v" data-t="datesH0v">27 Apr 2026 to 30 May 2026</span></div>
       <div class="r"><span data-t="datesH1l">Result declaration date</span><span class="v" data-t="datesH1v">12 Oct 2026</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Constable (GD) &amp; Rifleman (GD)</span><span class="v" data-t="vacH0v">215677 · Female candidates: 15,782, Male candidates in SSF: 330, Male candidates in other forces: 1,81,251</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Minimum qualifying marks for shortlisting</span><span class="v" data-t="eligH0v">UR: 30%, OBC/EWS: 25%, SC/ST/ESM: 20%</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Computer Based Examination (CBE)</li><li data-t="selH1">Physical Efficiency Test (PET) / Physical Standard Test (PST)</li><li data-t="selH2">Detailed Medical Examination (DME) / Review Medical Examination (RME)</li><li data-t="selH3">Document Verification</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official website of the Staff Selection Commission at https://ssc.gov.in.</li><li data-t="howH1">Go to the Notice Board or Result section for the Constable GD Examination 2026 shortlisting result.</li><li data-t="howH2">Check your roll number in the respective lists (List-I for female, List-II for male).</li><li data-t="howH3">Visit the nodal CRPF website at https://rect.crpf.gov.in for PET/PST call letters and updates.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Photo Identity Proof</li><li data-t="docH1">PET/PST Admit Card</li><li data-t="docH2">Educational and Category Certificates</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Do not forget to check the CRPF website for physical test schedules.</li><li data-t="mistH1">Ensure you check your correct category and state-wise lists.</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is SSC Constable GD PET/PST Shortlisting Result?</h3><p data-t="ea0">This is the result of the computer-based written examination for Constable GD and Rifleman GD, through which candidates are shortlisted to appear in the Physical Efficiency Test and Physical Standard Test.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Shortlisted candidates will appear for the Physical Efficiency Test (PET) and Physical Standard Test (PST) conducted by CRPF.</li><li data-t="aftH1">Qualified candidates in physical tests will proceed to Detailed Medical Examination and Document Verification.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Nodal CAPF for PET/PST</span><span class="v" data-t="extraH0v">Central Reserve Police Force (CRPF)</span></div>
       <div class="r"><span data-t="extraH1l">NCC Certificate bonus marks</span><span class="v" data-t="extraH1v">NCC &#x27;C&#x27;: 5%, NCC &#x27;B&#x27;: 3%, NCC &#x27;A&#x27;: 2% of maximum marks</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_12102026.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">ssc.gov.in</span></a>
       <a class="r" href="https://rect.crpf.gov.in" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">rect.crpf.gov.in</span></a>
       <a class="r" href="https://ssc.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">ssc.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When was the SSC Constable GD 2026 Computer Based Examination conducted?</h3><p data-t="a0">The examination was conducted from 27 April 2026 to 30 May 2026.</p></div>
       <div class="qa"><h3 data-t="q1">How many candidates have been shortlisted for PET/PST?</h3><p data-t="a1">A total of 2,15,677 candidates have been provisionally shortlisted for the Physical Efficiency Test and Physical Standard Test.</p></div>
       <div class="qa"><h3 data-t="q2">Where can I download the PET/PST admit card?</h3><p data-t="a2">Call letters and admit cards for the PET/PST will be issued by CRPF on their official website at https://rect.crpf.gov.in.</p></div>
@@ -375,11 +383,11 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 data-t="q7">What is the official website of SSC to check results?</h3><p data-t="a7">The official website of the Staff Selection Commission is https://ssc.gov.in.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check your roll number in the official result PDF.</li><li data-t="chkH1">Note your category, state, and cut-off marks.</li><li data-t="chkH2">Keep track of announcements on the CRPF recruitment portal for admit cards.</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/ssc-cpo-si-pet-pst-result-2025-out-paper-ii-exam-date/"><span data-t="rel0">SSC CPO SI PET PST Result 2025 Out – Paper II Exam Date</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/ssc-chsl-examination-2025-final-result-declared/"><span data-t="rel1">SSC CHSL Final Result 2025 Declared – 3515 Candidates Recommended</span><span class="v g num">7 Oct 2026</span></a>
       <a class="r" href="/notice/ssc-stenographer-grade-c-and-d-2025-final-marks-uploaded/"><span data-t="rel2">SSC Stenographer Grade C and D 2025 Final Marks Released – Check Scores</span><span class="v g num">7 Oct 2026</span></a>
@@ -393,7 +401,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">कर्मचारी चयन आयोग सिपाही जीडी 2026 शारीरिक दक्षता और मानक परीक्षण शॉर्टलिस्टिंग परिणाम</h2>
       <p class="lead">कर्मचारी चयन आयोग ने सिपाही जीडी और राइफलमैन जीडी परीक्षा 2026 के शारीरिक दक्षता और मानक परीक्षण के लिए शॉर्टलिस्ट किए गए उम्मीदवारों का परिणाम जारी कर दिया है। कुल 2,15,677 उम्मीदवारों को शॉर्टलिस्ट किया गया है। योग्य उम्मीदवार अपनी स्थिति की जांच करें और शारीरिक परीक्षण के अपडेट के लिए केंद्रीय रिजर्व पुलिस बल की वेबसाइट पर जाएं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >कर्मचारी चयन आयोग</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >12 अक्तूबर 2026</span></div>
       <div class="r"><span >कुल पद</span><span class="v" >215,677 (महिला उम्मीदवार: 15,782, सचिवालय सुरक्षा बल में पुरुष उम्मीदवार: 330, अन्य बलों में पुरुष उम्मीदवार: 1,81,251)</span></div>
@@ -406,67 +414,67 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >कंप्यूटर आधारित परीक्षा → शारीरिक दक्षता परीक्षण / शारीरिक मानक पर → विस्तृत चिकित्सा परीक्षा / समीक्षा चिकित → दस्तावेज़ सत्यापन</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >कर्मचारी चयन आयोग ने केंद्रीय सशस्त्र पुलिस बलों और सचिवालय सुरक्षा बल में सिपाही (जीडी) तथा असम राइफल्स में राइफलमैन (जीडी) परीक्षा 2026 के कंप्यूटर आधारित परीक्षा के परिणाम की घोषणा कर दी है। कंप्यूटर आधारित परीक्षा 27 अप्रैल 2026 से 30 मई 2026 तक आयोजित की गई थी। परीक्षा में कुल 21,56,776 उम्मीदवार शामिल हुए थे। जो उम्मीदवार उत्तीर्ण हुए हैं, उन्हें शारीरिक दक्षता परीक्षण और शारीरिक मानक परीक्षण के अगले चरण के लिए अस्थायी रूप से शॉर्टलिस्ट किया गया है। योग्य उम्मीदवारों को आयोग द्वारा प्रकाशित सूचियों की जांच करनी चाहिए और आगे के कार्यक्रम के लिए केंद्रीय रिजर्व पुलिस बल की वेबसाइट का अनुसरण करना चाहिए।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जो कर्मचारी चयन आयोग सिपाही जीडी कंप्यूटर आधारित परीक्षा 2026 में शामिल हुए थे।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >कौन आवेदन नहीं कर सकता</div>
+      <h2 class="h" >कौन आवेदन नहीं कर सकता</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जो न्यूनतम अर्हक अंक या कट-off अंक प्राप्त करने में असफल रहे।</li><li >वे उम्मीदवार जिनके परिणाम आयोग द्वारा रोके गए हैं या जिन्हें वंचित किया गया है।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >कंप्यूटर आधारित परीक्षा तिथियां</span><span class="v" >27 अप्रैल 2026 से 30 मई 2026</span></div>
       <div class="r"><span >परिणाम घोषणा की तिथि</span><span class="v" >12 अक्टूबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >सिपाही (जीडी) और राइफलमैन (जीडी)</span><span class="v" >215677 · महिला उम्मीदवार: 15,782, सचिवालय सुरक्षा बल में पुरुष उम्मीदवार: 330, अन्य बलों में पुरुष उम्मीदवार: 1,81,251</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >शॉर्टलिस्टिंग के लिए न्यूनतम अर्हक अंक</span><span class="v" >सामान्य: 30%, अन्य पिछड़ा वर्ग / आर्थिक रूप से कमजोर वर्ग: 25%, अनुसूचित जाति / अनुसूचित जनजाति / भूतपूर्व सैनिक: 20%</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >कंप्यूटर आधारित परीक्षा</li><li >शारीरिक दक्षता परीक्षण / शारीरिक मानक परीक्षण</li><li >विस्तृत चिकित्सा परीक्षा / समीक्षा चिकित्सा परीक्षा</li><li >दस्तावेज़ सत्यापन</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >कर्मचारी चयन आयोग की आधिकारिक वेबसाइट पर जाएं।</li><li >सिपाही जीडी परीक्षा परिणाम अनुभाग में जाएं।</li><li >संबंधित सूचियों में अपना अनुक्रमांक जांचें।</li><li >शारीरिक परीक्षण के बुलावा पत्र और अपडेट के लिए केंद्रीय रिजर्व पुलिस बल की वेबसाइट पर जाएं।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >फोटो पहचान प्रमाण</li><li >शारीरिक परीक्षण प्रवेश पत्र</li><li >शैक्षणिक और श्रेणी प्रमाण पत्र</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >शारीरिक परीक्षण कार्यक्रम के लिए केंद्रीय रिजर्व पुलिस बल की वेबसाइट देखना न भूलें।</li><li >सुनिश्चित करें कि आप अपनी सही श्रेणी और राज्यवार सूचियों की जांच करें।</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >कर्मचारी चयन आयोग सिपाही जीडी शारीरिक परीक्षण शॉर्टलिस्टिंग परिणाम क्या है?</h3><p >यह सिपाही जीडी और राइफलमैन जीडी के लिए कंप्यूटर आधारित लिखित परीक्षा का परिणाम है, जिसके माध्यम से उम्मीदवारों को शारीरिक दक्षता और मानक परीक्षण के लिए शॉर्टलिस्ट किया जाता है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >शॉर्टलिस्ट किए गए उम्मीदवार केंद्रीय रिजर्व पुलिस बल द्वारा आयोजित शारीरिक दक्षता और मानक परीक्षण में शामिल होंगे।</li><li >शारीरिक परीक्षण में सफल होने वाले उम्मीदवार विस्तृत चिकित्सा परीक्षा और दस्तावेज़ सत्यापन के लिए आगे बढ़ेंगे।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >श शारीरिक परीक्षण के लिए नोडल बल</span><span class="v" >केंद्रीय रिजर्व पुलिस बल</span></div>
       <div class="r"><span >एनसीसी प्रमाण पत्र बोनस अंक</span><span class="v" >एनसीसी &#x27;सी&#x27;: 5%, एनसीसी &#x27;बी&#x27;: 3%, एनसीसी &#x27;ए&#x27;: अधिकतम अंकों का 2%</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_12102026.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">ssc.gov.in</span></a>
       <a class="r" href="https://rect.crpf.gov.in" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">rect.crpf.gov.in</span></a>
       <a class="r" href="https://ssc.gov.in" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">ssc.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >कर्मचारी चयन आयोग सिपाही जीडी 2026 कंप्यूटर आधारित परीक्षा कब आयोजित की गई थी?</h3><p >परीक्षा 27 अप्रैल 2026 से 30 मई 2026 तक आयोजित की गई थी।</p></div>
       <div class="qa"><h3 >शारीरिक परीक्षण के लिए कुल कितने उम्मीदवारों को शॉर्टलिस्ट किया गया है?</h3><p >शारीरिक दक्षता और मानक परीक्षण के लिए कुल 2,15,677 उम्मीदवारों को अस्थायी रूप से शॉर्टलिस्ट किया गया है।</p></div>
       <div class="qa"><h3 >मैं शारीरिक परीक्षण का प्रवेश पत्र कहां से डाउनलोड कर सकता हूं?</h3><p >शारीरिक परीक्षण के बुलावा पत्र और प्रवेश पत्र केंद्रीय रिजर्व पुलिस बल द्वारा उनकी आधिकारिक वेबसाइट पर जारी किए जाएंगे।</p></div>
@@ -477,7 +485,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 >परिणाम जांचने के लिए कर्मचारी चयन आयोग की आधिकारिक वेबसाइट क्या है?</h3><p >कर्मचारी चयन आयोग की आधिकारिक वेबसाइट है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >आधिकारिक परिणाम पीडीएफ में अपना अनुक्रमांक जांचें।</li><li >अपनी श्रेणी, राज्य और कट-off अंकों को नोट करें।</li><li >प्रवेश पत्र के लिए केंद्रीय रिजर्व पुलिस बल के भर्ती पोर्टल पर घोषणाओं पर नजर रखें।</li></ul>
     </section>
     </details>

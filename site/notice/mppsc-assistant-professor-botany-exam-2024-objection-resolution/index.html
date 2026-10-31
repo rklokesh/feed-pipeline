@@ -20,7 +20,7 @@
 <title>MPPSC Assistant Professor Botany Exam 2024 Objection Resolution Notice | मप्र लोक सेवा आयोग सहायक प्राध्यापक वनस्पतिशास्त्र परीक्षा 2024 आपत्ति निराकरण सूचना</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Madhya Pradesh Public Service Commission (MPPSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">30 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Assistant Professor (Botany)</span></div>
@@ -302,77 +310,77 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#notH" data-t="notH">Who cannot apply</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">Madhya Pradesh Public Service Commission (MPPSC) has issued an official notification dated 30 October 2026 regarding the resolution of objections and representations submitted by candidates whose candidature was previously rejected for the Assistant Professor (Botany) Exam 2024. The examination is conducted for a total of 190 vacancies under the Higher Education Department. This notice contains the review results of documents submitted with late fees and academic qualification objections.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who applied for MPPSC Assistant Professor Botany Exam 2024 and submitted objections against candidature rejection.</li></ul>
     </section>
     <section class="kv" id="notH" data-t-aria="notH">
-      <div class="h" data-t="notH">Who cannot apply</div>
+      <h2 class="h" data-t="notH">Who cannot apply</h2>
       <ul class="steps dots"><li data-t="notH0">Candidates whose educational qualifications or subjects do not match the advertisement requirements.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Notice Date</span><span class="v" data-t="datesH0v">30 Oct 2026</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Assistant Professor (Botany)</span><span class="v" data-t="vacH0v">190 · UR 33, SC 30, ST 38, OBC 67, EWS 22</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Educational Qualification</span><span class="v" data-t="eligH0v">Post Graduate degree in relevant subject / allied subject as per advertisement requirements along with NET/SET/Ph.D. as applicable.</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Written Examination / Interview</li><li data-t="selH1">Document Verification</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official MPPSC website.</li><li data-t="howH1">Check the notification section for the Assistant Professor Botany exam objection resolution notice.</li><li data-t="howH2">Download and verify your application status and reasons for acceptance or rejection.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Post-graduation mark sheets and degree</li><li data-t="docH1">NET/SET/Ph.D. certificates</li><li data-t="docH2">Category and Domicile certificates</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Ensure all required educational documents match the exact subject name specified in the advertisement.</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is MPPSC Assistant Professor Botany Exam Objection Resolution?</h3><p data-t="ea0">It is an official notice by MPPSC declaring the final status of objections raised by candidates whose candidature was earlier rejected due to delayed document submission or qualification mismatches.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Further recruitment process and interview schedule for eligible candidates.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Department</span><span class="v" data-t="extraH0v">Madhya Pradesh Government Higher Education Department</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_Botany_Exam_2024_Dated_30_10_2026.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">mppsc.mp.gov.in</span></a>
       <a class="r" href="https://mppsc.mp.gov.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">mppsc.mp.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When was the MPPSC Assistant Professor Botany objection resolution notice released?</h3><p data-t="a0">The notice was released on 30 October 2026.</p></div>
       <div class="qa"><h3 data-t="q1">How many total vacancies are there for MPPSC Assistant Professor Botany Exam 2024?</h3><p data-t="a1">There are a total of 190 vacancies.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check your application ID in the official PDF notice.</li><li data-t="chkH1">Verify if your candidature is accepted provisionally or rejected.</li></ul>
     </section>
     <section class="kv rel" id="exam" data-t-aria="exH">
-      <div class="h" data-t="exH">All updates for MPPSC Assistant Professor 2025</div>
+      <h2 class="h" data-t="exH">All updates for MPPSC Assistant Professor 2025</h2>
       <a class="r" href="/notice/mppsc-assistant-professor-exam-2025-final-answer-key-released/"><span><span data-t="ex0">MPPSC Assistant Professor Final Answer Key 2025 – Physics, Chemistry, Maths, History</span> <small class="g" data-t="exs0">Final Answer Key Out</small></span><span class="v g num">23 Oct 2026</span></a>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/mppsc-veterinary-assistant-surgeon-interview-notice-2026/"><span data-t="rel0">MPPSC Veterinary Assistant Surgeon Interview Notice 2026</span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/mppsc-assistant-town-planner-exam-2026-result/"><span data-t="rel1">MPPSC Assistant Town Planner Result 2026 – Written Exam Shortlist</span><span class="v g num">27 Oct 2026</span></a>
       <a class="r" href="/notice/mppsc-assistant-professor-yogic-science-2025-interview-schedule/"><span data-t="rel2">MPPSC Assistant Professor Yogic Science Interview Schedule 2026</span><span class="v g num">23 Oct 2026</span></a>
@@ -385,7 +393,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">मप्र लोक सेवा आयोग सहायक प्राध्यापक वनस्पतिशास्त्र परीक्षा 2024 आपत्ति निराकरण सूचना</h2>
       <p class="lead">मध्य प्रदेश लोक सेवा आयोग ने सहायक प्राध्यापक (वनस्पतिशास्त्र) परीक्षा 2024 के लिए उम्मीदवारी निरस्त किए गए आवेदकों से प्राप्त आपत्ति अभ्यावेदनों के निराकरण की सूचना जारी कर दी है।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >मध्य प्रदेश लोक सेवा आयोग (मप्रलोसेआ)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >30 अक्तूबर 2026</span></div>
       <div class="r"><span >पद</span><span class="v" >सहायक प्राध्यापक (वनस्पतिशास्त्र)</span></div>
@@ -396,69 +404,69 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >लिखित परीक्षा / साक्षात्कार → दस्तावेज़ सत्यापन</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >मध्य प्रदेश लोक सेवा आयोग ने 30 अक्टूबर 2026 को सहायक प्राध्यापक (वनस्पतिशास्त्र) परीक्षा 2024 के लिए उम्मीदवारी निरस्त किए गए आवेदकों से प्राप्त आपत्ति अभ्यावेदनों के निराकरण के संबंध में आधिकारिक सूचना जारी की है। यह परीक्षा उच्च शिक्षा विभाग के अंतर्गत कुल 190 पदों के लिए आयोजित की जा रही है। इस सूचना में विलंब शुल्क के साथ जमा किए गए दस्तावेजों और शैक्षणिक अर्हता संबंधी आपत्तियों के परीक्षण के परिणाम शामिल हैं।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जिन्होंने मप्र लोक सेवा आयोग सहायक प्राध्यापक वनस्पतिशास्त्र परीक्षा 2024 के लिए आवेदन किया था और उम्मीदवारी अस्वीकृति के खिलाफ आपत्ति प्रस्तुत की थी।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >कौन आवेदन नहीं कर सकता</div>
+      <h2 class="h" >कौन आवेदन नहीं कर सकता</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जिनकी शैक्षणिक योग्यताएं या विषय विज्ञापन की आवश्यकताओं से मेल नहीं खाते हैं।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >सूचना दिनांक</span><span class="v" >30 अक्टूबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >सहायक प्राध्यापक (वनस्पतिशास्त्र)</span><span class="v" >190 · अनारक्षित 33, अजा 30, अजजा 38, अन्य पिछड़ा वर्ग 67, ईडब्ल्यूएस 22</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >शैक्षणिक योग्यता</span><span class="v" >विज्ञापन की शर्तों के अनुसार संबंधित विषय/सह-विषय में स्नातकोत्तर उपाधि तथा नेट/सेट/पीएच.डी.।</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >लिखित परीक्षा / साक्षात्कार</li><li >दस्तावेज़ सत्यापन</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >मप्र लोक सेवा आयोग की आधिकारिक वेबसाइट पर जाएं।</li><li >सहायक प्राध्यापक वनस्पतिशास्त्र परीक्षा आपत्ति निराकरण सूचना के लिए विज्ञप्ति अनुभाग देखें।</li><li >अपनी आवेदन स्थिति और स्वीकृति या अस्वीकृति के कारण डाउनलोड करके जांचें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >स्नातकोत्तर अंकसूची और उपाधि</li><li >नेट/सेट/पीएच.डी. प्रमाण पत्र</li><li >श्रेणी और मूल निवासी प्रमाण पत्र</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >सुनिश्चित करें कि सभी आवश्यक शैक्षणिक दस्तावेज विज्ञापन में निर्दिष्ट सटीक विषय नाम से मेल खाते हों।</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >मप्र लोक सेवा आयोग सहायक प्राध्यापक वनस्पतिशास्त्र परीक्षा आपत्ति निराकरण क्या है?</h3><p >यह मप्र लोक सेवा आयोग द्वारा जारी एक आधिकारिक सूचना है जिसमें उन उम्मीदवारों की आपत्तियों की अंतिम स्थिति घोषित की गई है जिनकी उम्मीदवारी पहले दस्तावेज जमा करने में देरी या योग्यता बेमेल के कारण अस्वीकार कर दी गई थी।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >पात्र उम्मीदवारों के लिए आगे की भर्ती प्रक्रिया और साक्षात्कार का कार्यक्रम।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >विभाग</span><span class="v" >मध्य प्रदेश शासन उच्च शिक्षा विभाग</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_Botany_Exam_2024_Dated_30_10_2026.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">mppsc.mp.gov.in</span></a>
       <a class="r" href="https://mppsc.mp.gov.in/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">mppsc.mp.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >मप्र लोक सेवा आयोग सहायक प्राध्यापक वनस्पतिशास्त्र आपत्ति निराकरण सूचना कब जारी की गई?</h3><p >यह सूचना 30 अक्टूबर 2026 को जारी की गई थी।</p></div>
       <div class="qa"><h3 >मप्र लोक सेवा आयोग सहायक प्राध्यापक वनस्पतिशास्त्र परीक्षा 2024 के लिए कुल कितने पद हैं?</h3><p >कुल 190 पद हैं।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >आधिकारिक पीडीएफ सूचना में अपनी आवेदन आईडी जांचें।</li><li >सत्यापित करें कि आपकी उम्मीदवारी अनंतिम रूप से स्वीकार की गई है या अस्वीकार।</li></ul>
     </section>
     </details>

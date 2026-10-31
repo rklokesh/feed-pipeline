@@ -20,7 +20,7 @@
 <title>JEE Main 2027 Session 1 Fresh Application Notice – Last Date 22 Nov | जेईई मेन 2027 सत्र 1 नया आवेदन सूचना – अंतिम तिथि 22 नवंबर</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">National Testing Agency (NTA)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">30 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Exam</span><span class="v" data-t="r0v">JEE (Main) – 2027 (Session 1)</span></div>
@@ -301,61 +309,61 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#notH" data-t="notH">Who cannot apply</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The National Testing Agency (NTA) has released an important public notice regarding the submission of a fresh Online Application Form for JEE (Main) – 2027 (Session 1). Candidates who have made mistakes in their previously submitted forms are allowed to submit a new application. The last date to submit a fresh application is 22nd November 2026, and with a late fee until 26th November 2026. Candidates should note that the fee paid for earlier forms will neither be refunded nor adjusted.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Engineering aspirants who made errors in their JEE Main 2027 Session 1 application form.</li></ul>
     </section>
     <section class="kv" id="notH" data-t-aria="notH">
-      <div class="h" data-t="notH">Who cannot apply</div>
+      <h2 class="h" data-t="notH">Who cannot apply</h2>
       <ul class="steps dots"><li data-t="notH0">Candidates submitting multiple forms without valid reasons to appear more than once in violation of UFM rules.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Public Notice Date</span><span class="v" data-t="datesH0v">30 Oct 2026</span></div>
       <div class="r"><span data-t="datesH1l">Fresh Application Last Date</span><span class="v" data-t="datesH1v">22 Nov 2026 (11:50 P.M.)</span></div>
       <div class="r"><span data-t="datesH2l">Fresh Application with Late Fee</span><span class="v" data-t="datesH2v">23 Nov 2026 to 26 Nov 2026</span></div>
       <div class="r"><span data-t="datesH3l">Correction Window</span><span class="v" data-t="datesH3v">27 Nov 2026 to 29 Nov 2026</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Submit fresh application or use correction facility</li><li data-t="selH1">Appear for JEE Main Session 1 examination</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official website at jeemain.nta.nic.in.</li><li data-t="howH1">Log in and fill out a fresh application form if you made major errors.</li><li data-t="howH2">Upload new photograph, signature, and documents.</li><li data-t="howH3">Complete the fee payment and generate the Confirmation Page.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Photograph</li><li data-t="docH1">Signature</li><li data-t="docH2">Required educational and personal documents</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Do not assume earlier fees will be adjusted for the fresh application.</li><li data-t="mistH1">Ensure the new application has fee payment completed and confirmation page generated, as incomplete fresh forms will revert validity to the older form.</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is the JEE Main 2027 Session 1 fresh application notice?</h3><p data-t="ea0">It is an official clarification by NTA allowing candidates who made errors in their initial application form to submit a completely fresh application for JEE Main 2027 Session 1.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Correction window will open from 27th November to 29th November 2026 for minor edits.</li><li data-t="aftH1">Admit card and exam date announcements will follow.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">NTA Help Desk</span><span class="v" data-t="extraH0v">011-40759000 / 011-69227700</span></div>
       <div class="r"><span data-t="extraH1l">Official Email</span><span class="v" data-t="extraH1v">jeemain@nta.nic.in</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://nta.ac.in/Download/Notice/Notice_20261030202143.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">nta.ac.in</span></a>
       <a class="r" href="https://jeemain.nta.nic.in/" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">jeemain.nta.nic.in</span></a>
       <a class="r" href="https://jeemain.nta.nic.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">jeemain.nta.nic.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">What is the last date to submit a fresh application for JEE Main 2027 Session 1?</h3><p data-t="a0">The last date to submit a fresh application is 22nd November 2026 up to 11:50 P.M.</p></div>
       <div class="qa"><h3 data-t="q1">Can I submit a fresh application with a late fee?</h3><p data-t="a1">Yes, fresh applications with a late fee can be submitted from 23rd November 2026 to 26th November 2026 up to 11:50 P.M.</p></div>
       <div class="qa"><h3 data-t="q2">Will my previous fee be refunded or adjusted?</h3><p data-t="a2">No, the examination fee paid against an earlier form will neither be refunded nor adjusted against the fresh application.</p></div>
@@ -363,16 +371,16 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 data-t="q4">What happens if I submit a fresh form but do not pay the fee?</h3><p data-t="a4">If you do not complete the fee payment and generate the confirmation page for the fresh form, your earlier form will remain valid.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check eligibility and details carefully before submitting.</li><li data-t="chkH1">Keep scanned copies of photo and signature ready.</li><li data-t="chkH2">Ensure fee payment is successfully done.</li></ul>
     </section>
     <section class="kv rel" id="exam" data-t-aria="exH">
-      <div class="h" data-t="exH">All updates for NTA JEE Main 2027</div>
+      <h2 class="h" data-t="exH">All updates for NTA JEE Main 2027</h2>
       <a class="r" href="/notice/nta-jee-main-2027-session-1-registration-advisory-and-instructio/"><span><span data-t="ex0">NTA JEE Main 2027 Session 1 Registration Advisory and Instructions</span> <small class="g" data-t="exs0">Registration Advisory</small></span><span class="v g num">28 Oct 2026</span></a>
       <a class="r" href="/notice/nta-joint-entrance-examination-jee-main-2027-session-1/"><span><span data-t="ex1">JEE Main 2027 Session 1 Online Form Open</span> <small class="g" data-t="exs1">Online Form Open</small></span><span class="v g num">24 Oct 2026</span></a>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/nta-swayam-july-2026-exam-registration-last-date-extended/"><span data-t="rel0">NTA SWAYAM July 2026 Exam Registration Last Date Extended</span><span class="v g num">31 Oct 2026</span></a>
       <a class="r" href="/notice/nta-nift-entrance-examination-niftee-2027/"><span data-t="rel1">NTA NIFT Entrance Examination NIFTEE 2027</span><span class="v g num">16 Oct 2026</span></a>
       <a class="r" href="/notice/nta-swayam-july-semester-examination-2026-online-form/"><span data-t="rel2">NTA SWAYAM July Semester Exam 2026 Online Form</span><span class="v g num">9 Oct 2026</span></a>
@@ -384,7 +392,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">जेईई मेन 2027 सत्र 1 नया आवेदन सूचना – अंतिम तिथि 22 नवंबर</h2>
       <p class="lead">राष्ट्रीय परीक्षा एजेंसी ने जेईई मेन 2027 सत्र 1 के फॉर्म में गलती करने वाले उम्मीदवारों के लिए 22 नवंबर 2026 तक नया ऑनलाइन आवेदन जमा करने की अनुमति दी है। नया आवेदन नंबर जनरेट होगा और सभी विवरण फिर से दर्ज करने होंगे।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >राष्ट्रीय परीक्षा एजेंसी (एनटीए)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >30 अक्तूबर 2026</span></div>
       <div class="r"><span >परीक्षा</span><span class="v" >संयुक्त प्रवेश परीक्षा मुख्य – 2027 (सत्र 1)</span></div>
@@ -394,61 +402,61 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >नया आवेदन जमा करें या सुधार सुविधा का उप → जेईई मेन सत्र 1 परीक्षा में शामिल हों</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने संयुक्त प्रवेश परीक्षा मुख्य – 2027 (सत्र 1) के लिए एक नया ऑनलाइन आवेदन पत्र जमा करने के संबंध में एक महत्वपूर्ण सार्वजनिक सूचना जारी की है। जिन उम्मीदवारों ने अपने पहले जमा किए गए फॉर्म में गलतियां की हैं, वे नया आवेदन जमा कर सकते हैं। नया आवेदन जमा करने की अंतिम तिथि 22 नवंबर 2026 है, और विलंब शुल्क के साथ 26 नवंबर 2026 तक है। उम्मीदवारों को यह ध्यान रखना चाहिए कि पहले के फॉर्म के लिए भुगतान किया गया शुल्क न तो वापस किया जाएगा और न ही समायोजित किया जाएगा।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >इंजीनियरिंग के वे उम्मीदवार जिन्होंने अपने जेईई मेन 2027 सत्र 1 आवेदन पत्र में गलतियां की हैं।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >कौन आवेदन नहीं कर सकता</div>
+      <h2 class="h" >कौन आवेदन नहीं कर सकता</h2>
       <ul class="steps dots"><li >यूएफएम नियमों के उल्लंघन में एक से अधिक बार उपस्थित होने के लिए बिना वैध कारणों के कई फॉर्म जमा करने वाले उम्मीदवार।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >सार्वजनिक सूचना तिथि</span><span class="v" >30 अक्टूबर 2026</span></div>
       <div class="r"><span >नया आवेदन करने की अंतिम तिथि</span><span class="v" >22 नवंबर 2026 (रात 11:50 बजे)</span></div>
       <div class="r"><span >विलंब शुल्क के साथ नया आवेदन</span><span class="v" >23 नवंबर 2026 से 26 नवंबर 2026</span></div>
       <div class="r"><span >सुधार विंडो</span><span class="v" >27 नवंबर 2026 से 29 नवंबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >नया आवेदन जमा करें या सुधार सुविधा का उपयोग करें</li><li >जेईई मेन सत्र 1 परीक्षा में शामिल हों</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >आधिकारिक वेबसाइट jeemain.nta.nic.in पर जाएं।</li><li >लॉग इन करें और यदि आपने बड़ी गलतियाँ की हैं तो नया आवेदन पत्र भरें।</li><li >नया फोटोग्राफ, हस्ताक्षर और दस्तावेज अपलोड करें।</li><li >शुल्क भुगतान पूरा करें और कन्फर्मेशन पेज जनरेट करें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >फोटोशूट</li><li >हस्ताक्षर</li><li >आवश्यक शैक्षणिक और व्यक्तिगत दस्तावेज</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >यह न मानें कि नए आवेदन के लिए पहले का शुल्क समायोजित किया जाएगा।</li><li >सुनिश्चित करें कि नए आवेदन का शुल्क भुगतान पूरा हो गया है और कन्फर्मेशन पेज जनरेट हो गया है, क्योंकि अधूरा नया फॉर्म पुराने फॉर्म की वैधता को बरकरार रखेगा।</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >जेईई मेन 2027 सत्र 1 नया आवेदन नोटिस क्या है?</h3><p >यह एनटीए द्वारा जारी एक आधिकारिक स्पष्टीकरण है जो उम्मीदवारों को अपने प्रारंभिक आवेदन पत्र में की गई गलतियों को सुधारने के लिए जेईई मेन 2027 सत्र 1 के लिए पूरी तरह से नया आवेदन जमा करने की अनुमति देता है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >छोटे-मोटे बदलावों के लिए सुधार विंडो 27 नवंबर से 29 नवंबर 2026 तक खुलेगी।</li><li >इसके बाद एडमिट कार्ड और परीक्षा तिथि की घोषणा की जाएगी।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >एनटीए हेल्प डेस्क</span><span class="v" >011-40759000 / 011-69227700</span></div>
       <div class="r"><span >आधिकारिक ईमेल</span><span class="v" >jeemain@nta.nic.in</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://nta.ac.in/Download/Notice/Notice_20261030202143.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">nta.ac.in</span></a>
       <a class="r" href="https://jeemain.nta.nic.in/" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">jeemain.nta.nic.in</span></a>
       <a class="r" href="https://jeemain.nta.nic.in/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">jeemain.nta.nic.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >जेईई मेन 2027 सत्र 1 के लिए नया आवेदन जमा करने की अंतिम तिथि क्या है?</h3><p >नया आवेदन जमा करने की अंतिम तिथि 22 नवंबर 2026 रात 11:50 बजे तक है।</p></div>
       <div class="qa"><h3 >क्या मैं विलंब शुल्क के साथ नया आवेदन जमा कर सकता हूँ?</h3><p >हाँ, विलंब शुल्क के साथ नए आवेदन 23 नवंबर 2026 से 26 नवंबर 2026 तक रात 11:50 बजे तक जमा किए जा सकते हैं।</p></div>
       <div class="qa"><h3 >क्या मेरा पिछلا शुल्क वापस या समायोजित किया जाएगा?</h3><p >नहीं, पिछले फॉर्म के लिए भुगतान किया गया परीक्षा शुल्क न तो वापस किया जाएगा और न ही नए आवेदन के खिलाफ समायोजित किया जाएगा।</p></div>
@@ -456,7 +464,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 >क्या होगा यदि मैं नया फॉर्म जमा करता हूँ लेकिन शुल्क भुगतान नहीं करता हूँ?</h3><p >यदि आप नए फॉर्म के लिए शुल्क भुगतान पूरा नहीं करते हैं और कन्फर्मेशन पेज जनरेट नहीं करते हैं, तो आपका पुराना फॉर्म ही वैध रहेगा।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >जमा करने से पहले पात्रता और विवरण की सावधानीपूर्वक जांच करें।</li><li >फोटो और हस्ताक्षर की स्कैन की गई प्रतियां तैयार रखें।</li><li >सुनिश्चित करें कि शुल्क भुगतान सफलतापूर्वक हो गया है।</li></ul>
     </section>
     </details>

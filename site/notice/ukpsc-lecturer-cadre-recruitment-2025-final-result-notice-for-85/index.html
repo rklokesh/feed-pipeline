@@ -20,7 +20,7 @@
 <title>UKPSC Lecturer Cadre Recruitment 2025 – Final Result Notice for 856 Posts | उत्तराखंड प्रवक्ता संवर्ग भर्ती 2025 – 856 पदों के लिए अंतिम परिणाम सूचना</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Uttarakhand Public Service Commission (UKPSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">24 Sep 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Lecturer (General &amp; Women Branch)</span></div>
@@ -301,60 +309,60 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The Uttarakhand Public Service Commission (UKPSC) has released an important notice regarding the Uttarakhand Special Subordinate Education (Lecturer Cadre Group-C) Service Examination 2025. Candidates have been sending representations requesting the declaration of results for subjects whose exams have already been conducted. The commission has clarified that since many candidates applied for multiple subjects, the final selection result for all 16 subjects will be declared together after all exams are completed, based on the post preference filled by candidates.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who applied for the UKPSC Lecturer Cadre Examination 2025</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Notice issuance date</span><span class="v" data-t="datesH0v">24 Sep 2026</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Lecturer (General &amp; Women Branch) - Fresh Posts</span><span class="v" data-t="vacH0v">808 · General Branch 725, Women Branch 83</span></div>
       <div class="r"><span data-t="vacH1l">Lecturer - PwD Backlog Posts (from 2020 exam)</span><span class="v" data-t="vacH1v">48 · General Branch 43, Women Branch 05</span></div>
       <div class="r"><span data-t="vacH2l">Total</span><span class="v" data-t="vacH2v">856</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Written Examination</li><li data-t="selH1">Answer key objections</li><li data-t="selH2">Document Verification</li><li data-t="selH3">Final combined selection result based on post preference</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Check official UKPSC website for subject-wise answer keys and raise objections if applicable.</li><li data-t="howH1">Wait for the completion of all 16 subject examinations.</li><li data-t="howH2">Check the final combined selection result once released by the commission.</li></ol>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">When will the UKPSC Lecturer Cadre 2025 final result be declared?</h3><p data-t="ea0">The final selection result for all 16 subjects will be declared together only after the examinations for all subjects are successfully completed.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Answer keys and objection handling</li><li data-t="aftH1">Document verification list issuance</li><li data-t="aftH2">Final selection result</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Total Subjects</span><span class="v" data-t="extraH0v">16</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://psc.uk.gov.in/public/uploads/recruitment/1433940324.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">psc.uk.gov.in</span></a>
       <a class="r" href="https://psc.uk.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">psc.uk.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When was the UKPSC Lecturer notice regarding results issued?</h3><p data-t="a0">The notice was issued on 24 September 2026 by UKPSC.</p></div>
       <div class="qa"><h3 data-t="q1">Why are the results of completed exams not declared immediately?</h3><p data-t="a1">Since many candidates applied for multiple subjects, the commission will declare the final selection result for all 16 subjects together after all exams are completed.</p></div>
       <div class="qa"><h3 data-t="q2">What is the total number of vacancies for the UKPSC Lecturer exam 2025?</h3><p data-t="a2">A total of 856 vacancies (808 fresh posts and 48 PwD backlog posts) will be filled through this examination.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Keep track of subject-wise answer keys</li><li data-t="chkH1">Ensure post preferences are correctly submitted</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/ukpsc-ro-aro-exam-2024-ineligible-candidates-list-out-2026/"><span data-t="rel0">UKPSC RO ARO Exam 2024 Ineligible Candidates List 2026 – Representation Notice</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/ukpsc-high-court-personal-assistant-english-shorthand-result-202/"><span data-t="rel1">UKPSC High Court Personal Assistant Result 2026 – English Shorthand Exam</span><span class="v g num">27 Oct 2026</span></a>
       <a class="r" href="/notice/ukpsc-high-court-personal-assistant-english-shorthand-result-202-7a9e/"><span data-t="rel2">UKPSC High Court Personal Assistant Result 2025 – English Shorthand</span><span class="v g num">27 Oct 2026</span></a>
@@ -368,7 +376,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">उत्तराखंड प्रवक्ता संवर्ग भर्ती 2025 – 856 पदों के लिए अंतिम परिणाम सूचना</h2>
       <p class="lead">उत्तराखंड लोक सेवा आयोग ने सूचना जारी की है कि प्रवक्ता संवर्ग परीक्षा 2025 के सभी 16 विषयों की परीक्षाएं आयोजित होने के बाद अंतिम चयन परिणाम एक साथ घोषित किया जाएगा।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >उत्तराखंड लोक सेवा आयोग (यूकेपीएससी)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >24 सितंबर 2026</span></div>
       <div class="r"><span >पद</span><span class="v" >प्रवक्ता (सामान्य एवं महिला शाखा)</span></div>
@@ -378,56 +386,56 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >लिखित परीक्षा → उत्तर कुंजी पर आपत्तियां → अभिलेख सत्यापन → पदों की वरीयता के आधार पर अंतिम संयुक्त </span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >उत्तराखंड लोक सेवा आयोग (यूकेपीएससी) ने उत्तराखंड विशेष अधीनस्थ शिक्षा (प्रवक्ता संवर्ग &#x27;समूह-ग&#x27; सेवा) परीक्षा-2025 के संबंध में एक महत्वपूर्ण सूचना जारी की है। जिन विषयों की परीक्षाएं आयोजित की जा चुकी हैं, उनके परिणाम घोषित करने के लिए अभ्यर्थियों द्वारा प्रत्यावेदन भेजे जा रहे थे। आयोग ने स्पष्ट किया है कि चूंकि कई अभ्यर्थियों ने एक से अधिक विषयों के लिए आवेदन किया है, इसलिए सभी 16 विषयों की परीक्षाएं पूरी होने के बाद, अभ्यर्थियों द्वारा भरी गई वरीयता के आधार पर अंतिम चयन परिणाम एक साथ घोषित किया जाएगा।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >वे अभ्यर्थी जिन्होंने उत्तराखंड प्रवक्ता संवर्ग परीक्षा 2025 के लिए आवेदन किया है</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >सूचना जारी होने की तिथि</span><span class="v" >24 सितंबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >प्रवक्ता (सामान्य एवं महिला शाखा) - नए पद</span><span class="v" >808 · सामान्य शाखा 725, महिला शाखा 83</span></div>
       <div class="r"><span >प्रवक्ता - दिव्यांगजन अग्रेनीत पद (2020 परीक्षा से)</span><span class="v" >48 · सामान्य शाखा 43, महिला शाखा 05</span></div>
       <div class="r"><span >कुल</span><span class="v" >856</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >लिखित परीक्षा</li><li >उत्तर कुंजी पर आपत्तियां</li><li >अभिलेख सत्यापन</li><li >पदों की वरीयता के आधार पर अंतिम संयुक्त चयन परिणाम</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >विषयवार उत्तर कुंजी के लिए आधिकारिक यूकेपीएससी वेबसाइट देखें और आपत्तियां दर्ज करें।</li><li >सभी 16 विषयों की परीक्षाओं के पूर्ण होने की प्रतीक्षा करें।</li><li >आयोग द्वारा जारी होने के बाद अंतिम संयुक्त चयन परिणाम देखें।</li></ol>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >उत्तराखंड प्रवक्ता संवर्ग 2025 का अंतिम परिणाम कब घोषित किया जाएगा?</h3><p >सभी 16 विषयों की परीक्षाएं सफलताપૂર્વक आयोजित होने के बाद ही सभी विषयों का अंतिम चयन परिणाम एक साथ घोषित किया जाएगा।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >उत्तर कुंजी और आपत्ति निस्तारण</li><li >अभिलेख सत्यापन सूची जारी करना</li><li >अंतिम चयन परिणाम</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >कुल विषय</span><span class="v" >16</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://psc.uk.gov.in/public/uploads/recruitment/1433940324.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">psc.uk.gov.in</span></a>
       <a class="r" href="https://psc.uk.gov.in" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">psc.uk.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >परिणाम के संबंध में यूकेपीएससी प्रवक्ता की सूचना कब जारी की गई थी?</h3><p >यह सूचना 24 सितंबर 2026 को यूकेपीएससी द्वारा जारी की गई थी।</p></div>
       <div class="qa"><h3 >पूर्ण हो चुकी परीक्षाओं के परिणाम तुरंत क्यों नहीं घोषित किए जा रहे हैं?</h3><p >चूंकि कई अभ्यर्थियों ने एक से अधिक विषयों के लिए आवेदन किया है, इसलिए आयोग सभी विषयों की परीक्षाएं पूरी होने के बाद सभी 16 विषयों का परिणाम एक साथ घोषित करेगा।</p></div>
       <div class="qa"><h3 >उत्तराखंड प्रवक्ता परीक्षा 2025 के लिए कुल कितनी वैकेंसी हैं?</h3><p >इस परीक्षा के माध्यम से कुल 856 पदों (808 नए पद और 48 दिव्यांग बैकलॉग पद) पर चयन किया जाएगा।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >विषयवार उत्तर कुंजी पर नजर रखें</li><li >सुनिश्चित करें कि पदों की वरीयता सही ढंग से भरी गई है</li></ul>
     </section>
     </details>

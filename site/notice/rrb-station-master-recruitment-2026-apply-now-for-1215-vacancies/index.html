@@ -20,7 +20,7 @@
 <title>RRB Station Master Recruitment 2026 | रेलवे भर्ती बोर्ड स्टेशन मास्टर भर्ती 2026</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Railway Recruitment Board (RRB)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">24 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Station Master</span></div>
@@ -304,19 +312,19 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#notH" data-t="notH">Who cannot apply</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#ageH" data-t="ageH">Age limit</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#payH" data-t="payH">Salary and pay level</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">Railway Recruitment Boards (RRBs) have issued Centralized Employment Notice CEN No. 08/2026 for the recruitment of Station Master across various Zonal Railways. A total of 1215 vacancies are announced with a pay level of 7th CPC Level 6. Online applications open on 27 October 2026 and will close on 25 November 2026. Candidates who meet the eligibility criteria should review the instructions and apply through the official website before the deadline.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Eligible Indian nationals meeting the age and other criteria specified in CEN 08/2026.</li></ul>
     </section>
     <section class="kv" id="notH" data-t-aria="notH">
-      <div class="h" data-t="notH">Who cannot apply</div>
+      <h2 class="h" data-t="notH">Who cannot apply</h2>
       <ul class="steps dots"><li data-t="notH0">Candidates waiting for final results of the prescribed educational qualification.</li><li data-t="notH1">Candidates attempting to submit more than one application.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Indicative notice date</span><span class="v" data-t="datesH0v">24 Oct 2026</span></div>
       <div class="r"><span data-t="datesH1l">Online application starts</span><span class="v" data-t="datesH1v">27 Oct 2026</span></div>
       <div class="r"><span data-t="datesH2l">Online application last date</span><span class="v" data-t="datesH2v">25 Nov 2026</span></div>
@@ -324,74 +332,74 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span data-t="datesH4l">Modification window</span><span class="v" data-t="datesH4v">28 Nov 2026 to 07 Dec 2026</span></div>
     </section>
     <section class="kv" id="ageH" data-t-aria="ageH">
-      <div class="h" data-t="ageH">Age limit</div>
+      <h2 class="h" data-t="ageH">Age limit</h2>
       <div class="r"><span data-t="ageH0l">Minimum age</span><span class="v" data-t="ageH0v">20 years</span></div>
       <div class="r"><span data-t="ageH1l">Maximum age</span><span class="v" data-t="ageH1v">33 years</span></div>
       <div class="r"><span data-t="ageH2l">As-on date</span><span class="v" data-t="ageH2v">01 Jan 2027</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Station Master</span><span class="v" data-t="vacH0v">1215 · Detailed distribution is given in Annexure-B of the official notice.</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Nationality</span><span class="v" data-t="eligH0v">Indian Nationals and other eligible categories as specified in the notice.</span></div>
     </section>
     <section class="kv" id="payH" data-t-aria="payH">
-      <div class="h" data-t="payH">Salary and pay level</div>
+      <h2 class="h" data-t="payH">Salary and pay level</h2>
       <div class="r"><span data-t="payH0l">Pay level</span><span class="v" data-t="payH0v">Level 6 (₹35,400 initial)</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Computer Based Test (CBT)</li><li data-t="selH1">Computer Based Aptitude Test (CBAT)</li><li data-t="selH2">Document Verification (DV)</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to apply</div>
+      <h2 class="h" data-t="howH">How to apply</h2>
       <ol class="steps"><li data-t="howH0">Visit the unified official RRB website.</li><li data-t="howH1">Create an account or log in using existing credentials from 2024/2025/2026.</li><li data-t="howH2">Choose a single RRB and submit one online application.</li><li data-t="howH3">Complete identity authentication using DigiLocker or Aadhaar.</li><li data-t="howH4">Pay the applicable examination fee.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Educational qualification certificates</li><li data-t="docH1">Age proof</li><li data-t="docH2">Caste / Category certificate in prescribed format</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Submitting applications to more than one RRB, which leads to rejection of all applications.</li><li data-t="mistH1">Failing to keep mobile number and email ID active throughout the recruitment process.</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is CEN 08/2026 Station Master Examination?</h3><p data-t="ea0">It is a centralized employment notice issued by Railway Recruitment Boards for recruiting Station Master posts across Indian Railways through a computer-based test, aptitude test, and document verification.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Appearance in Computer Based Test (CBT)</li><li data-t="aftH1">Computer Based Aptitude Test (CBAT) for qualified candidates</li><li data-t="aftH2">Document Verification and Medical Examination</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Medical Standard</span><span class="v" data-t="extraH0v">A-2</span></div>
       <div class="r"><span data-t="extraH1l">Modification fee</span><span class="v" data-t="extraH1v">₹250</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://rrb.indianrailways.gov.in/-/image/1793016771817CEN_08_2026_StationMaster.pdf/examsDocuments" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rrb.indianrailways.gov.in</span></a>
       <a class="r" href="https://www.rrbapply.gov.in" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">rrbapply.gov.in</span></a>
       <a class="r" href="https://rrb.indianrailways.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rrb.indianrailways.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">What is the last date to apply for RRB Station Master Recruitment 2026?</h3><p data-t="a0">The last date to submit online applications is 25 November 2026 up to 23:59 hrs.</p></div>
       <div class="qa"><h3 data-t="q1">How many vacancies are announced for Station Master under CEN 08/2026?</h3><p data-t="a1">A total of 1215 vacancies have been announced across all RRBs.</p></div>
       <div class="qa"><h3 data-t="q2">What is the age limit for RRB Station Master 2026?</h3><p data-t="a2">Candidates must be between 20 and 33 years of age as on 01 January 2027.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Verify eligibility criteria including age and qualifications.</li><li data-t="chkH1">Keep a valid mobile number and personal email ID ready.</li><li data-t="chkH2">Ensure correct details are filled during account creation as modifications are restricted.</li></ul>
     </section>
     <section class="kv rel" id="exam" data-t-aria="exH">
-      <div class="h" data-t="exH">All updates for RRB Station Master 2026</div>
+      <h2 class="h" data-t="exH">All updates for RRB Station Master 2026</h2>
       <a class="r" href="/notice/rrb-station-master-cen-08-2026-corrigendum-1/"><span><span data-t="ex0">RRB Station Master Recruitment 2026 – Vacancies Increased to 1,265</span> <small class="g" data-t="exs0">Vacancies Increased</small></span><span class="v g num">27 Oct 2026</span></a>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/rrb-non-technical-popular-categories-under-graduate-recruitment/"><span data-t="rel0">RRB NTPC Undergraduate Recruitment 2026</span><span class="v g num">14 Oct 2026</span></a>
       <a class="r" href="/notice/rrb-ntpc-cbt-2-result-2025-cbtst-shortlist-and-score-card-link/"><span data-t="rel1">RRB NTPC CBT-2 Result 2025 – CBTST Shortlist and Score Card Link</span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/rrb-ntpc-undergraduate-cen-07-2025-cut-off-2026-cbtst-marks-out/"><span data-t="rel2">RRB NTPC Undergraduate CEN 07/2025 Cut Off 2026 – CBTST Marks Out</span><span class="v g num">30 Oct 2026</span></a>
@@ -404,7 +412,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">रेलवे भर्ती बोर्ड स्टेशन मास्टर भर्ती 2026</h2>
       <p class="lead">रेलवे भर्ती बोर्ड ने केंद्रीय रोजगार सूचना 08/2026 के तहत 1215 स्टेशन मास्टर पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 25 नवंबर 2026 तक आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >रेलवे भर्ती बोर्ड (आरआरबी)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >24 अक्तूबर 2026</span></div>
       <div class="r"><span >पद</span><span class="v" >स्टेशन मास्टर</span></div>
@@ -416,19 +424,19 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >कंप्यूटर आधारित परीक्षा → कंप्यूटर आधारित एप्टीट्यूड टेस्ट → दस्तावेज़ सत्यापन</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >रेलवे भर्ती बोर्ड (आरआरबी) ने विभिन्न क्षेत्रीय रेलवे में स्टेशन मास्टर की भर्ती के लिए केंद्रीय रोजगार सूचना संख्या 08/2026 जारी की है। सातवें वेतन आयोग के लेवल 6 के वेतनमान के साथ कुल 1215 रिक्तियों की घोषणा की गई है। ऑनलाइन आवेदन 27 अक्तूबर 2026 से शुरू होंगे और 25 नवंबर 2026 को समाप्त होंगे। जो उम्मीदवार पात्रता मानदंडों को पूरा करते हैं, उन्हें निर्देशों की समीक्षा करनी चाहिए और समय सीमा से पहले आधिकारिक वेबसाइट के माध्यम से आवेदन करना चाहिए।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >सीईएन 08/2026 में निर्दिष्ट आयु और अन्य मानदंडों को पूरा करने वाले पात्र भारतीय नागरिक।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >कौन आवेदन नहीं कर सकता</div>
+      <h2 class="h" >कौन आवेदन नहीं कर सकता</h2>
       <ul class="steps dots"><li >निर्धारित शैक्षणिक योग्यता के अंतिम परिणामों की प्रतीक्षा कर रहे उम्मीदवार।</li><li >एक से अधिक आवेदन जमा करने का प्रयास करने वाले उम्मीदवार।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >संकेतक नोटिस तिथि</span><span class="v" >24 अक्तूबर 2026</span></div>
       <div class="r"><span >ऑनलाइन आवेदन शुरू</span><span class="v" >27 अक्तूबर 2026</span></div>
       <div class="r"><span >ऑनलाइन आवेदन की अंतिम तिथि</span><span class="v" >25 नवंबर 2026</span></div>
@@ -436,66 +444,66 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >संशोधन विंडो</span><span class="v" >28 नवंबर 2026 से 07 दिसंबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आयु सीमा</div>
+      <h2 class="h" >आयु सीमा</h2>
       <div class="r"><span >न्यूनतम आयु</span><span class="v" >20 वर्ष</span></div>
       <div class="r"><span >अधिकतम आयु</span><span class="v" >33 वर्ष</span></div>
       <div class="r"><span >आयु गणना की तिथि</span><span class="v" >01 जनवरी 2027</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >स्टेशन मास्टर</span><span class="v" >1215 · विस्तृत विवरण आधिकारिक सूचना के अनुलग्नक-बी में दिया गया है।</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >राष्ट्रीयता</span><span class="v" >भारतीय नागरिक और नोटिस में निर्दिष्ट अन्य पात्र श्रेणियां।</span></div>
     </section>
     <section class="kv">
-      <div class="h" >वेतन और पे लेवल</div>
+      <h2 class="h" >वेतन और पे लेवल</h2>
       <div class="r"><span >वेतन स्तर</span><span class="v" >लेवल 6 (₹35,400 प्रारंभिक)</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >कंप्यूटर आधारित परीक्षा (सीबीटी)</li><li >कंप्यूटर आधारित एप्टीट्यूड टेस्ट (सीबीएटी)</li><li >दस्तावेज़ सत्यापन</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >आवेदन कैसे करें</div>
+      <h2 class="h" >आवेदन कैसे करें</h2>
       <ol class="steps"><li >आधिकारिक आरआरबी वेबसाइट पर जाएं।</li><li >एक खाता बनाएं या 2024/2025/2026 के मौजूदा विवरण से लॉगिन करें।</li><li >एकल आरआरबी का चयन करें और एक ऑनलाइन आवेदन जमा करें।</li><li >डिजीलॉकर या आधार का उपयोग करके पहचान प्रमाणीकरण पूरा करें।</li><li >लागू परीक्षा शुल्क का भुगतान करें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >शैक्षणिक योग्यता प्रमाण पत्र</li><li >आयु प्रमाण</li><li >निर्धारित प्रारूप में जाति / श्रेणी प्रमाण पत्र</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >एक से अधिक आरआरबी में आवेदन करना, जिससे सभी आवेदन अस्वीकार हो जाते हैं।</li><li >भर्ती प्रक्रिया के दौरान मोबाइल नंबर और ईमेल आईडी को सक्रिय न रखना।</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >सीईएन 08/2026 स्टेशन मास्टर परीक्षा क्या है?</h3><p >यह भारतीय रेलवे में कंप्यूटर आधारित परीक्षा, एप्टीट्यूड टेस्ट और दस्तावेज़ सत्यापन के माध्यम से स्टेशन मास्टर के पदों पर भर्ती के लिए रेलवे भर्ती बोर्डों द्वारा जारी एक केंद्रीय रोजगार सूचना है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >कंप्यूटर आधारित परीक्षा (सीबीटी) में शामिल होना</li><li >योग्य उम्मीदवारों के लिए कंप्यूटर आधारित एप्टीट्यूड टेस्ट (सीबीएटी)</li><li >दस्तावेज़ सत्यापन और चिकित्सा परीक्षा</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >चिकित्सा मानक</span><span class="v" >ए-2</span></div>
       <div class="r"><span >संशोधन शुल्क</span><span class="v" >₹250</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://rrb.indianrailways.gov.in/-/image/1793016771817CEN_08_2026_StationMaster.pdf/examsDocuments" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">rrb.indianrailways.gov.in</span></a>
       <a class="r" href="https://www.rrbapply.gov.in" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">rrbapply.gov.in</span></a>
       <a class="r" href="https://rrb.indianrailways.gov.in" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">rrb.indianrailways.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >आरआरबी स्टेशन मास्टर भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?</h3><p >ऑनलाइन आवेदन जमा करने की अंतिम तिथि 25 नवंबर 2026 रात्रि 23:59 बजे तक है।</p></div>
       <div class="qa"><h3 >सीईएन 08/2026 के तहत स्टेशन मास्टर के लिए कुल कितनी रिक्तियों की घोषणा की गई है?</h3><p >सभी आरआरबी में कुल 1215 रिक्तियों की घोषणा की गई है।</p></div>
       <div class="qa"><h3 >आरआरबी स्टेशन मास्टर 2026 के लिए आयु सीमा क्या है?</h3><p >उम्मीदवारों की आयु 01 जनवरी 2027 के अनुसार 20 से 33 वर्ष के बीच होनी चाहिए।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >आयु और योग्यताओं सहित पात्रता मानदंडों की जाँच करें।</li><li >एक वैध मोबाइल नंबर और व्यक्तिगत ईमेल आईडी तैयार रखें।</li><li >सुनिश्चित करें कि खाता बनाते समय सही विवरण भरे गए हैं क्योंकि संशोधन प्रतिबंधित हैं।</li></ul>
     </section>
     </details>

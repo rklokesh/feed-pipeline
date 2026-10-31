@@ -20,7 +20,7 @@
 <title>RPSC Lecturer Ayurved 2025 Reserve List &amp; Cutoff | राजस्थान लोक सेवा आयोग व्याख्याता आयुर्वेद 2025 आरक्षित सूची और कटऑफ</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Rajasthan Public Service Commission (RPSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">26 Oct 2026</span></div>
       <div class="r"><span data-t="gTot">Total vacancies</span><span class="v" data-t="gTotV">1 (Gen. (UR) - 1 (Cut off: 92.33))</span></div>
@@ -302,63 +310,63 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The Rajasthan Public Service Commission (RPSC) has released the reserve list and cut-off marks for the Lecturer (Samhita Maulik Siddhant) Competitive Examination 2025 under the Ayurved Department. Following document verification, one candidate has been provisionally declared successful in the reserve list based on merit. The cut-off marks for the General category have also been published. Candidates who appeared for the examination can check the official notice for their roll number and merit status.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who appeared for the RPSC Lecturer Ayurved Exam 2025 and were included in the consideration list.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Notice Date</span><span class="v" data-t="datesH0v">26 Oct 2026</span></div>
       <div class="r"><span data-t="datesH1l">Provisional List Date</span><span class="v" data-t="datesH1v">03 Jul 2026</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Lecturer (Samhita Maulik Siddhant)</span><span class="v" data-t="vacH0v">1 · Gen. (UR) - 1 (Cut off: 92.33)</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Written Examination</li><li data-t="selH1">Document Verification and Eligibility Checking</li><li data-t="selH2">Reserve List / Recommendation for Appointment</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official RPSC website.</li><li data-t="howH1">Click on the results section for Lecturer (Samhita Maulik Siddhant) Ayurved Dept. 2025.</li><li data-t="howH2">Download the PDF notice containing the reserve list and cut-off marks.</li><li data-t="howH3">Check your roll number and merit rank.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Educational qualification certificates</li><li data-t="docH1">Identity proof</li><li data-t="docH2">Age proof</li><li data-t="docH3">Caste certificate (if applicable)</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is the RPSC Lecturer Ayurved Reserve List?</h3><p data-t="ea0">It is a secondary list of successful candidates released by the Rajasthan Public Service Commission for appointment recommendations after document verification.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">The department will process the recommendation for appointment upon receiving a formal requisition.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">General Cut-off Marks</span><span class="v" data-t="extraH0v">92.33 (DOB: 25-04-1996)</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://rpsc.rajasthan.gov.in/Static/Result/BFF0ACA3E1BC47C79FEB87A99BC3F284.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rpsc.rajasthan.gov.in</span></a>
       <a class="r" href="https://rpsc.rajasthan.gov.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rpsc.rajasthan.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When was the RPSC Lecturer Ayurved Reserve List released?</h3><p data-t="a0">The reserve list was released on 26 October 2026.</p></div>
       <div class="qa"><h3 data-t="q1">How many candidates are selected in the RPSC Lecturer Ayurved Reserve List?</h3><p data-t="a1">Only 1 candidate has been selected in the reserve list.</p></div>
       <div class="qa"><h3 data-t="q2">What is the cut-off marks for the General category in the reserve list?</h3><p data-t="a2">The cut-off marks for the General (UR) category is 92.33.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check the official RPSC notice for your roll number.</li><li data-t="chkH1">Verify cut-off marks and category details.</li></ul>
     </section>
     <section class="kv rel" id="exam" data-t-aria="exH">
-      <div class="h" data-t="exH">All updates for RPSC Lecturer Ayurved 2025</div>
+      <h2 class="h" data-t="exH">All updates for RPSC Lecturer Ayurved 2025</h2>
       <a class="r" href="/notice/rpsc-lecturer-agad-tantra-final-answer-key-2025-download-pdf/"><span><span data-t="ex0">RPSC Lecturer Agad Tantra Final Answer Key 2025 – Download PDF</span> <small class="g" data-t="exs0">Final Answer Key</small></span><span class="v g num">28 Oct 2026</span></a>
       <a class="r" href="/notice/rpsc-lecturer-ayurved-department-exam-2025-final-answer-key/"><span><span data-t="ex1">RPSC Lecturer Ayurved Department Exam 2025 Final Answer Key</span> <small class="g" data-t="exs1">Final Answer Key</small></span><span class="v g num">28 Oct 2026</span></a>
       <a class="r" href="/notice/rpsc-lecturer-ayurved-exam-2026-answer-key-kaumarbhritya-out/"><span><span data-t="ex2">RPSC Lecturer Ayurved Exam 2026 Answer Key – Kaumarbhritya Out</span> <small class="g" data-t="exs2">Final Answer Key</small></span><span class="v g num">28 Oct 2026</span></a>
@@ -367,7 +375,7 @@ html[lang="hi"] .hidet { display: none; }
       <a class="r" href="/notice/rpsc-lecturer-ayurved-dept-2025-reserve-list-cut-off/"><span><span data-t="ex5">RPSC Lecturer Ayurved Dept Result 2025 – Reserve List &amp; Cut Off</span> <small class="g" data-t="exs5">Reserve List &amp; Cut Off</small></span><span class="v g num">26 Oct 2026</span></a>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/rpsc-senior-teacher-punjabi-result-2025-cut-off-scrutiny-list/"><span data-t="rel0">RPSC Senior Teacher Punjabi Result 2025 – Cut Off &amp; Scrutiny List</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/rpsc-senior-teacher-gujarati-result-2025-exam-preamble-out/"><span data-t="rel1">RPSC Senior Teacher Gujarati Result 2025 – Exam Preamble Out</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/rpsc-senior-teacher-mathematics-result-2025-provisional-list/"><span data-t="rel2">RPSC Senior Teacher Mathematics Result 2025 – Provisional List</span><span class="v g num">28 Oct 2026</span></a>
@@ -381,7 +389,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">राजस्थान लोक सेवा आयोग व्याख्याता आयुर्वेद 2025 आरक्षित सूची और कटऑफ</h2>
       <p class="lead">राजस्थान लोक सेवा आयोग ने आयुर्वेद विभाग के अंतर्गत व्याख्याता संहिता मौलिक सिद्धांत परीक्षा 2025 के लिए आरक्षित सूची और कट-ऑफ अंक जारी कर दिए हैं। उम्मीदवार प्रकाशित सूची में अपना रोल नंबर और मेरिट रैंक देख सकते हैं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >राजस्थान लोक सेवा आयोग (आरपीएससी)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >26 अक्तूबर 2026</span></div>
       <div class="r"><span >कुल पद</span><span class="v" >1 (सामान्य - 1 (कट ऑफ: 92.33))</span></div>
@@ -392,59 +400,59 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >लिखित परीक्षा → दस्तावेज़ सत्यापन और पात्रता जांच → आरक्षित सूची / नियुक्ति के लिए सिफारिश</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >राजस्थान लोक सेवा आयोग (आरपीएससी) ने आयुर्वेद विभाग के अंतर्गत व्याख्याता (संहिता मौलिक सिद्धांत) प्रतियोगी परीक्षा 2025 के लिए आरक्षित सूची और कट-ऑफ अंक जारी कर दिए हैं। दस्तावेज़ सत्यापन के बाद, मेरिट के आधार पर आरक्षित सूची में एक उम्मीदवार को अनंतिम रूप से सफल घोषित किया गया है। सामान्य श्रेणी के लिए कट-ऑफ अंक भी प्रकाशित किए गए हैं। परीक्षा में शामिल होने वाले उम्मीदवार अपना रोल नंबर और मेरिट स्थिति आधिकारिक सूचना में देख सकते हैं।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जो आरपीएससी व्याख्याता आयुर्वेद परीक्षा 2025 में उपस्थित हुए थे और विचारित सूची में शामिल थे।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >26 अक्टू 2026</span></div>
       <div class="r"><span >विचारित सूची तिथि</span><span class="v" >03 जुला 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >व्याख्याता (संहिता मौलिक सिद्धांत)</span><span class="v" >1 · सामान्य - 1 (कट ऑफ: 92.33)</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >लिखित परीक्षा</li><li >दस्तावेज़ सत्यापन और पात्रता जांच</li><li >आरक्षित सूची / नियुक्ति के लिए सिफारिश</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >आधिकारिक आरपीएससी वेबसाइट पर जाएं।</li><li >व्याख्याता (संहिता मौलिक सिद्धांत) आयुर्वेद विभाग 2025 के परिणाम अनुभाग पर क्लिक करें।</li><li >आरक्षित सूची और कट-ऑफ अंकों वाली पीडीएफ सूचना डाउनलोड करें।</li><li >अपना रोल नंबर और मेरिट रैंक जांचें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >शैक्षणिक योग्यता प्रमाण पत्र</li><li >पहचान प्रमाण</li><li >आयु प्रमाण</li><li >जाति प्रमाण पत्र (यदि लागू हो)</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >आरक्षित सूची क्या है?</h3><p >यह दस्तावेज़ सत्यापन के बाद नियुक्ति की सिफारिश के लिए राजस्थान लोक सेवा आयोग द्वारा जारी सफल उम्मीदवारों की एक अतिरिक्त सूची है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >विभाग औपचारिक मांग प्राप्त होने पर नियुक्ति की सिफारिश की प्रक्रिया करेगा।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >सामान्य कट-ऑफ अंक</span><span class="v" >92.33 (जन्म तिथि: 25-04-1996)</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://rpsc.rajasthan.gov.in/Static/Result/BFF0ACA3E1BC47C79FEB87A99BC3F284.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">rpsc.rajasthan.gov.in</span></a>
       <a class="r" href="https://rpsc.rajasthan.gov.in/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">rpsc.rajasthan.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >आरपीएससी व्याख्याता आयुर्वेद आरक्षित सूची कब जारी की गई?</h3><p >आरक्षित सूची 26 अक्टूबर 2026 को जारी की गई थी।</p></div>
       <div class="qa"><h3 >आरपीएससी व्याख्याता आयुर्वेद आरक्षित सूची में कितने उम्मीदवार चुने गए हैं?</h3><p >आरक्षित सूची में केवल 1 उम्मीदवार का चयन किया गया है।</p></div>
       <div class="qa"><h3 >आरक्षित सूची में सामान्य श्रेणी के लिए कट-ऑफ अंक क्या है?</h3><p >सामान्य (अनारक्षित) श्रेणी के लिए कट-ऑफ अंक 92.33 है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >अपने रोल नंबर के लिए आधिकारिक आरपीएससी नोटिस की जांच करें।</li><li >कट-ऑफ अंक और श्रेणी विवरण सत्यापित करें।</li></ul>
     </section>
     </details>

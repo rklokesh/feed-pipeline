@@ -20,7 +20,7 @@
 <title>HSSC Group C Recruitment 2026 – Apply Online for CET Phase 2 Posts | हरियाणा कर्मचारी चयन आयोग समूह सी भर्ती 2026 – सीईटी फेज 2 पदों के लिए ऑनलाइन आवेदन</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Haryana Staff Selection Commission (HSSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">22 Jun 2026</span></div>
       <div class="r"><span data-t="r0l">Post Name</span><span class="v" data-t="r0v">Group-C Posts (CET Phase-II)</span></div>
@@ -305,19 +313,19 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#notH" data-t="notH">Who cannot apply</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#fee" data-t="fee">Application fee</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#patH" data-t="patH">Exam pattern</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">Haryana Staff Selection Commission (HSSC) has released Advertisement No. 06/2026 for direct recruitment to various Group-C posts under CET Phase-II. Candidates who are qualified in the Common Eligibility Test (CET) Advt. No. 01/2025 Group-C are eligible to apply. Online applications are open from 24 June 2026 to 30 June 2026. No application fee is required to be paid by any candidate.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates qualified in CET Advt. No. 01/2025 Group-C who want a Haryana government Group-C job.</li></ul>
     </section>
     <section class="kv" id="notH" data-t-aria="notH">
-      <div class="h" data-t="notH">Who cannot apply</div>
+      <h2 class="h" data-t="notH">Who cannot apply</h2>
       <ul class="steps dots"><li data-t="notH0">Candidates who have not qualified in the CET Advt. No. 01/2025 Group-C exam.</li><li data-t="notH1">Reserved category candidates from other states/UTs claiming reservation benefits (they will be considered under general category).</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Date of Publication</span><span class="v" data-t="datesH0v">22 Jun 2026</span></div>
       <div class="r"><span data-t="datesH1l">Online application starts</span><span class="v" data-t="datesH1v">24 Jun 2026</span></div>
       <div class="r"><span data-t="datesH2l">Closing date for application</span><span class="v" data-t="datesH2v">30 Jun 2026</span></div>
@@ -326,58 +334,58 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span data-t="datesH5l">Exam date</span><span class="v" data-t="datesH5v">Will be communicated separately</span></div>
     </section>
     <section class="kv" id="fee" data-t-aria="fee">
-      <div class="h" data-t="fee">Application fee</div>
+      <h2 class="h" data-t="fee">Application fee</h2>
       <div class="r"><span data-t="f0">All Categories</span><span class="v num">₹0</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Group-C Posts</span><span class="v" data-t="vacH0v">As per Advt · Various departments, boards, corporations, and commissions under Haryana Government.</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">CET Qualification</span><span class="v" data-t="eligH0v">Qualified in Common Eligibility Test (CET) Advt. No. 01/2025 Group-C</span></div>
     </section>
     <section class="kv" id="patH" data-t-aria="patH">
-      <div class="h" data-t="patH">Exam pattern</div>
+      <h2 class="h" data-t="patH">Exam pattern</h2>
       <div class="tw"><table class="tbl"><thead><tr><th data-t="patC1">Part / subject</th><th data-t="patC2">Questions</th><th data-t="patC3">Marks</th><th data-t="patC4">Time</th></tr></thead><tbody><tr><td data-t="pat0">Total Multiple Choice Questions</td><td class="num">100</td><td class="num">100</td><td>1 Hour 45 Minutes</td></tr><tr><td data-t="pat1">Negative Marking</td><td class="num">Unattempted questions</td><td class="num">Deduction of 1 mark if the fifth circle/bubble is not filled for an unattempted question. No negative marking for wrong answers.</td><td></td></tr></tbody></table></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Shortlisting of candidates based on CET marks (up to 10 times the number of vacancies, except for police/teaching posts).</li><li data-t="selH1">Written Examination (OMR based) / Skill Test.</li><li data-t="selH2">Scrutiny of Documents.</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to apply</div>
+      <h2 class="h" data-t="howH">How to apply</h2>
       <ol class="steps"><li data-t="howH0">Visit the official application website: https://adv062026.hryssc.com</li><li data-t="howH1">Read the detailed instructions and register or log in.</li><li data-t="howH2">Fill out the online application form and upload mandatory documents.</li><li data-t="howH3">Review the details carefully and submit the form before the closing date.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">CET score card</li><li data-t="docH1">Educational qualification certificates</li><li data-t="docH2">Category certificate (if claiming reservation, issued within specified dates)</li><li data-t="docH3">Bonafide resident certificate of Haryana (if applicable)</li><li data-t="docH4">Photograph and signature</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Failing to fill the fifth circle for unattempted questions, which leads to negative marking.</li><li data-t="mistH1">Submitting category certificates issued outside the stipulated validity dates.</li><li data-t="mistH2">Making errors in the online form as no changes are permitted after final submission (except during the correction window).</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is HSSC Group-C CET Phase-II Recruitment?</h3><p data-t="ea0">It is a recruitment process conducted by the Haryana Staff Selection Commission for filling various Group-C posts in state departments based on the Common Eligibility Test (CET) qualification.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Release of written examination admit cards.</li><li data-t="aftH1">Conduct of written examination / skill test.</li><li data-t="aftH2">Declaration of results and document verification.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Exam Type</span><span class="v" data-t="extraH0v">Offline OMR based written examination</span></div>
       <div class="r"><span data-t="extraH1l">Bilingual Paper</span><span class="v" data-t="extraH1v">English &amp; Hindi</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://hssc.gov.in/file/ac1f23cd-9d9c-1328-819e-ef25fa0a0061/advertisements" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">hssc.gov.in</span></a>
       <a class="r" href="https://adv062026.hryssc.com" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">adv062026.hryssc.com</span></a>
       <a class="r" href="https://hssc.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">hssc.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">What is the last date to apply for HSSC Group-C Advt. No. 06/2026?</h3><p data-t="a0">The last date to submit the online application is 30 June 2026 up to 11:59 PM.</p></div>
       <div class="qa"><h3 data-t="q1">What is the application fee for HSSC Group-C Recruitment 2026?</h3><p data-t="a1">No application fee is required to be paid by any candidate.</p></div>
       <div class="qa"><h3 data-t="q2">Who is eligible to apply for HSSC Advt. No. 06/2026?</h3><p data-t="a2">Candidates who are qualified in the Common Eligibility Test (CET) Advt. No. 01/2025 Group-C are eligible to apply.</p></div>
@@ -386,11 +394,11 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 data-t="q5">When is the correction window open?</h3><p data-t="a5">The application correction window is open from 01 July 2026 to 02 July 2026 up to 11:59 PM.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Verify your CET qualification status.</li><li data-t="chkH1">Keep your category and supporting certificates ready with correct issue dates.</li><li data-t="chkH2">Fill out the online application before 30 June 2026.</li><li data-t="chkH3">Print a copy of the final submitted application form.</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/hssc-group-d-cet-advt-05-2026-application-date-extension/"><span data-t="rel0">HSSC Group-D CET Recruitment 2026 – Last Date Extended to 05 Jul</span><span class="v g num">3 Jul 2026</span></a>
       <a class="r" href="/notice/hssc-primary-teacher-prt-advt-5-2024-final-answer-key/"><span data-t="rel1">HSSC PRT Advt 5/2024 Final Answer Key Released</span><span class="v g num">10 Sep 2026</span></a>
       <a class="r" href="/notice/hssc-primary-teacher-mewat-cadre-final-answer-key-2024/"><span data-t="rel2">HSSC Primary Teacher Mewat Cadre Final Answer Key 2024</span><span class="v g num">10 Sep 2026</span></a>
@@ -404,7 +412,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">हरियाणा कर्मचारी चयन आयोग समूह सी भर्ती 2026 – सीईटी फेज 2 पदों के लिए ऑनलाइन आवेदन</h2>
       <p class="lead">हरियाणा कर्मचारी चयन आयोग ने सीईटी फेज-2 के तहत समूह-सी के पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। सीईटी उत्तीर्ण उम्मीदवार 30 जून 2026 तक आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं। आवेदन के लिए कोई शुल्क नहीं है।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >हरियाणा कर्मचारी चयन आयोग (HSSC)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >22 जून 2026</span></div>
       <div class="r"><span >पद का नाम</span><span class="v" >समूह-सी पद (सीईटी फेज-2)</span></div>
@@ -418,19 +426,19 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >सीईटी अंकों के आधार पर उम्मीदवारों की शॉ → लिखित परीक्षा → दस्तावेजों की संवीक्षा।</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >हरियाणा कर्मचारी चयन आयोग (HSSC) ने सीईटी फेज-2 के तहत विभिन्न समूह-सी पदों पर सीधी भर्ती के लिए विज्ञापन संख्या 06/2026 जारी किया है। कॉमन एलिजिबिलिटी टेस्ट (CET) विज्ञापन संख्या 01/2025 समूह-C में उत्तीर्ण उम्मीदवार आवेदन करने के पात्र हैं। ऑनलाइन आवेदन 24 जून 2026 से 30 जून 2026 तक खुले हैं। किसी भी उम्मीदवार को कोई आवेदन शुल्क नहीं देना है।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >सीईटी विज्ञापन संख्या 01/2025 समूह-सी में उत्तीर्ण उम्मीदवार जो हरियाणा सरकार की समूह-सी नौकरी चाहते हैं।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >कौन आवेदन नहीं कर सकता</div>
+      <h2 class="h" >कौन आवेदन नहीं कर सकता</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जो सीईटी विज्ञापन संख्या 01/2025 समूह-सी परीक्षा में उत्तीर्ण नहीं हुए हैं।</li><li >अन्य राज्यों/केंद्र शासित प्रदेशों के आरक्षित श्रेणी के उम्मीदवार जो आरक्षण का दावा करते हैं ( उन्हें सामान्य श्रेणी के तहत माना जाएगा)।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >प्रकाशन की तिथि</span><span class="v" >22 जून 2026</span></div>
       <div class="r"><span >ऑनलाइन आवेदन शुरू</span><span class="v" >24 जून 2026</span></div>
       <div class="r"><span >आवेदन की अंतिम तिथि</span><span class="v" >30 जून 2026</span></div>
@@ -439,58 +447,58 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >परीक्षा की तिथि</span><span class="v" >अलग से सूचित किया जाएगा</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आवेदन शुल्क</div>
+      <h2 class="h" >आवेदन शुल्क</h2>
       <div class="r"><span >सभी श्रेणियां</span><span class="v num">₹0</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >समूह-सी पद</span><span class="v" >As per Advt · हरियाणा सरकार के विभिन्न विभाग, बोर्ड, निगम और आयोग।</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >सीईटी योग्यता</span><span class="v" >कॉमन एलिजिबिलिटी टेस्ट (CET) विज्ञापन संख्या 01/2025 समूह-C में उत्तीर्ण</span></div>
     </section>
     <section class="kv">
-      <div class="h" >परीक्षा पैटर्न</div>
+      <h2 class="h" >परीक्षा पैटर्न</h2>
       <div class="tw"><table class="tbl"><thead><tr><th >भाग / विषय</th><th >प्रश्न</th><th >अंक</th><th >समय</th></tr></thead><tbody><tr><td >कुल बहुविकल्पीय प्रश्न</td><td class="num">100</td><td class="num">100</td><td>1 Hour 45 Minutes</td></tr><tr><td >नकारात्मक अंकन</td><td class="num">Unattempted questions</td><td class="num">Deduction of 1 mark if the fifth circle/bubble is not filled for an unattempted question. No negative marking for wrong answers.</td><td></td></tr></tbody></table></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >सीईटी अंकों के आधार पर उम्मीदवारों की शॉर्टलिस्टिंग (रिक्तियों की संख्या से 10 गुना तक, पुलिस/शिक्षण पदों को छोड़कर)।</li><li >लिखित परीक्षा (ओएमआर आधारित) / कौशल परीक्षण।</li><li >दस्तावेजों की संवीक्षा।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >आवेदन कैसे करें</div>
+      <h2 class="h" >आवेदन कैसे करें</h2>
       <ol class="steps"><li >आधिकारिक आवेदन वेबसाइट पर जाएं: https://adv062026.hryssc.com</li><li >विस्तृत निर्देशों को पढ़ें और पंजीकरण करें या लॉगिन करें।</li><li >ऑनलाइन आवेदन पत्र भरें और अनिवार्य दस्तावेज अपलोड करें।</li><li >विवरण की सावधानीपूर्वक जांच करें और अंतिम तिथि से पहले फॉर्म जमा करें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >सीईटी स्कोर कार्ड</li><li >शैक्षणिक योग्यता प्रमाण पत्र</li><li >श्रेणी प्रमाण पत्र (यदि आरक्षण का दावा करते हैं, निर्धारित तिथियों के भीतर जारी किया गया)</li><li >हरियाणा का मूल निवासी प्रमाण पत्र (यदि लागू हो)</li><li >तस्वीर और हस्ताक्षर</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >अनुत्तरित प्रश्नों के लिए पांचवें गोले को न भरना, जिससे नकारात्मक अंकन होता है।</li><li >निर्धारित वैधता तिथियों के बाहर जारी किए गए श्रेणी प्रमाण पत्र जमा करना।</li><li >ऑनलाइन फॉर्म में त्रुटियां करना क्योंकि अंतिम सबमिशन के बाद किसी भी बदलाव की अनुमति नहीं है (सुधार विंडो को छोड़कर)।</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >हरियाणा कर्मचारी चयन आयोग समूह-सी सीईटी फेज-2 भर्ती क्या है?</h3><p >यह कॉमन एलिजिबिलिटी टेस्ट (CET) योग्यता के आधार पर राज्य के विभागों में विभिन्न समूह-सी पदों को भरने के लिए हरियाणा कर्मचारी चयन आयोग द्वारा आयोजित एक भर्ती प्रक्रिया है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >लिखित परीक्षा के एडमिट कार्ड जारी करना।</li><li >लिखित परीक्षा / कौशल परीक्षण का आयोजन।</li><li >परिणाम घोषणा और दस्तावेज सत्यापन।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >परीक्षा का प्रकार</span><span class="v" >ऑफ़लाइन ओएमआर आधारित लिखित परीक्षा</span></div>
       <div class="r"><span >द्विभाषी प्रश्न पत्र</span><span class="v" >अंग्रेजी और हिंदी</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://hssc.gov.in/file/ac1f23cd-9d9c-1328-819e-ef25fa0a0061/advertisements" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">hssc.gov.in</span></a>
       <a class="r" href="https://adv062026.hryssc.com" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">adv062026.hryssc.com</span></a>
       <a class="r" href="https://hssc.gov.in" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">hssc.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >HSSC समूह-C विज्ञापन संख्या 06/2026 के लिए आवेदन करने की अंतिम तिथि क्या है?</h3><p >ऑनलाइन आवेदन जमा करने की अंतिम तिथि 30 जून 2026 रात 11:59 बजे तक है।</p></div>
       <div class="qa"><h3 >HSSC समूह-C भर्ती 2026 के लिए आवेदन शुल्क क्या है?</h3><p >किसी भी उम्मीदवार को कोई आवेदन शुल्क नहीं देना है।</p></div>
       <div class="qa"><h3 >HSSC विज्ञापन संख्या 06/2026 के लिए आवेदन करने के लिए कौन पात्र है?</h3><p >कॉमन एलिजिबिलिटी टेस्ट (CET) विज्ञापन संख्या 01/2025 समूह-C में उत्तीर्ण उम्मीदवार आवेदन करने के पात्र हैं।</p></div>
@@ -499,7 +507,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 >सुधार विंडो कब खुली है?</h3><p >आवेदन सुधार विंडो 01 जुलाई 2026 से 02 जुलाई 2026 रात 11:59 बजे तक खुली है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >अपनी सीईटी योग्यता स्थिति की पुष्टि करें।</li><li >सही जारी तिथियों के साथ अपने श्रेणी और सहायक प्रमाण पत्र तैयार रखें।</li><li >30 जून 2026 से पहले ऑनलाइन आवेदन भरें।</li><li >अंतिम जमा किए गए आवेदन पत्र की एक प्रति प्रिंट करें।</li></ul>
     </section>
     </details>

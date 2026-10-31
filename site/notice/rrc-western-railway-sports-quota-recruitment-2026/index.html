@@ -20,7 +20,7 @@
 <title>RRC Western Railway Sports Quota Recruitment 2026 | आरआरसी पश्चिम रेलवे खेल कोटा भर्ती 2026</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Railway Recruitment Cell, Western Railway (RRC WR)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">27 Aug 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Group C and Group D</span></div>
@@ -304,94 +312,94 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#notH" data-t="notH">Who cannot apply</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#ageH" data-t="ageH">Age limit</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to apply</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">Railway Recruitment Cell, Western Railway (RRC WR) has released an employment notification for recruitment against Sports Quota for the year 2026-27. A total of 64 vacancies are available for Group C and Group D posts across various sports disciplines. Eligible sportsperson candidates can submit their online applications from 01 September 2026 to 30 September 2026. There is no reservation for SC, ST, OBC, EWS, PwBD, or Ex-SM categories in this recruitment.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Active sportsperson candidates meeting the age and educational criteria for RRC Western Railway Sports Quota 2026</li></ul>
     </section>
     <section class="kv" id="notH" data-t-aria="notH">
-      <div class="h" data-t="notH">Who cannot apply</div>
+      <h2 class="h" data-t="notH">Who cannot apply</h2>
       <ul class="steps dots"><li data-t="notH0">Candidates awaiting final results of the prescribed educational qualification are not eligible to apply</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Notification date</span><span class="v" data-t="datesH0v">27 Aug 2026</span></div>
       <div class="r"><span data-t="datesH1l">Online application starts</span><span class="v" data-t="datesH1v">01 Sep 2026 (10:00 AM)</span></div>
       <div class="r"><span data-t="datesH2l">Online application last date</span><span class="v" data-t="datesH2v">30 Sep 2026 (06:00 PM)</span></div>
     </section>
     <section class="kv" id="ageH" data-t-aria="ageH">
-      <div class="h" data-t="ageH">Age limit</div>
+      <h2 class="h" data-t="ageH">Age limit</h2>
       <div class="r"><span data-t="ageH0l">Minimum age</span><span class="v" data-t="ageH0v">18 years</span></div>
       <div class="r"><span data-t="ageH1l">Maximum age</span><span class="v" data-t="ageH1v">25 years</span></div>
       <div class="r"><span data-t="ageH2l">As-on date</span><span class="v" data-t="ageH2v">01 Jan 2027</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Group C (Level 5 / Level 4)</span><span class="v" data-t="vacH0v">5 · Athletics, Gymnastics, Hockey, Weightlifting, Wrestling</span></div>
       <div class="r"><span data-t="vacH1l">Group C (Level 3 / Level 2)</span><span class="v" data-t="vacH1v">16 · Athletics, Cricket, Diving, Football, Gymnastics, Hockey, Powerlifting, Swimming, Weightlifting, Wrestling</span></div>
       <div class="r"><span data-t="vacH2l">Group D (Level 1)</span><span class="v" data-t="vacH2v">43 · Athletics, Ball Badminton, Basketball, Boxing, Bodybuilding, Cycling, Hockey, Handball, Kho-Kho, Powerlifting, Swimming, Volleyball, Water Polo, Weightlifting</span></div>
       <div class="r"><span data-t="vacH3l">Total</span><span class="v" data-t="vacH3v">64</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Level 5/4 Education</span><span class="v" data-t="eligH0v">Graduation in any discipline from a recognized university</span></div>
       <div class="r"><span data-t="eligH1l">Level 3/2 Education</span><span class="v" data-t="eligH1v">12th (+2 stage) or equivalent, OR 10th + Course Completed Apprenticeship, OR 10th + ITI</span></div>
       <div class="r"><span data-t="eligH2l">Level 1 Education</span><span class="v" data-t="eligH2v">10th pass or ITI or equivalent or National Apprenticeship Certificate (NAC) granted by NCVT</span></div>
       <div class="r"><span data-t="eligH3l">Sports Achievements</span><span class="v" data-t="eligH3v">Candidates must have achieved required sports norms between 01/04/2024 and the date of notification and be active players</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Scrutiny of application forms</li><li data-t="selH1">Trial of candidates</li><li data-t="selH2">Assessment of sports achievements, educational qualifications, and general intelligence</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to apply</div>
+      <h2 class="h" data-t="howH">How to apply</h2>
       <ol class="steps"><li data-t="howH0">Visit the official website rrc-wr.com</li><li data-t="howH1">Check the sports quota notification and ensure eligibility</li><li data-t="howH2">Fill out the online application form with personal and sports details</li><li data-t="howH3">Upload required documents and submit the application before the last date</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Educational qualification certificates</li><li data-t="docH1">Sports achievement certificates</li><li data-t="docH2">Proof of date of birth</li><li data-t="docH3">Identity proof</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Do not wait until the last date to apply</li><li data-t="mistH1">Ensure all sports achievements fall within the valid period from 01.04.2024 to the notification date</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is RRC Western Railway Sports Quota Recruitment?</h3><p data-t="ea0">It is a direct recruitment drive conducted by Railway Recruitment Cell, Western Railway, to appoint meritorious sportspersons to Group C and Group D posts based on sports trials and achievements.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Trial and document verification for shortlisted candidates</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Reservation</span><span class="v" data-t="extraH0v">No reservation for SC/ST/OBC/EWS/PwBD/Ex-SM categories</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://www.rrc-wr.com/rrwc/Files/f5048247-0e91-4bdb-a29b-35c880e208bb.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rrc-wr.com</span></a>
       <a class="r" href="https://www.rrc-wr.com" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">rrc-wr.com</span></a>
       <a class="r" href="https://www.rrc-wr.com" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rrc-wr.com</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">What is the last date to apply for RRC Western Railway Sports Quota Recruitment 2026?</h3><p data-t="a0">The last date to submit online applications is 30 September 2026 up to 6:00 PM.</p></div>
       <div class="qa"><h3 data-t="q1">How many total vacancies are announced in this notification?</h3><p data-t="a1">A total of 64 vacancies are announced for Group C and Group D posts.</p></div>
       <div class="qa"><h3 data-t="q2">What is the age limit for RRC Western Railway Sports Quota 2026?</h3><p data-t="a2">Candidates must be between 18 and 25 years of age as on 01 January 2027.</p></div>
       <div class="qa"><h3 data-t="q3">What is the official website to apply online?</h3><p data-t="a3">Candidates can apply online through the official website rrc-wr.com.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check eligibility criteria including age, education, and sports achievements</li><li data-t="chkH1">Keep scanned copies of certificates ready before applying online</li><li data-t="chkH2">Submit application before 30 September 2026</li></ul>
     </section>
     <section class="kv rel" id="exam" data-t-aria="exH">
-      <div class="h" data-t="exH">All updates for RRC Western Railway Sports Quota 2026</div>
+      <h2 class="h" data-t="exH">All updates for RRC Western Railway Sports Quota 2026</h2>
       <a class="r" href="/notice/western-railway-sports-quota-2026-volleyball-amendment/"><span><span data-t="ex0">RRC Western Railway Sports Quota Volleyball Amendment 2026</span> <small class="g" data-t="exs0">Amendment Notice</small></span><span class="v g num">3 Sep 2026</span></a>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/western-railway-departmental-cbt-call-letter-2026/"><span data-t="rel0">Western Railway Departmental CBT Call Letter 2026</span><span class="v g num">27 Oct 2026</span></a>
       <a class="r" href="/notice/western-railway-alp-and-tech-iii-cbt-rescheduling-notice-2026/"><span data-t="rel1">RRC Western Railway ALP Tech III Exam Date 2026 – CBT Rescheduled</span><span class="v g num">23 Oct 2026</span></a>
       <a class="r" href="/notice/india-post-staff-car-driver-recruitment-2024-apply-online-for-25/"><span data-t="rel2">India Post Staff Car Driver Recruitment 2024 – Apply Online for 25 Posts</span><span class="v g num">30 Oct 2026</span></a>
@@ -404,7 +412,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">आरआरसी पश्चिम रेलवे खेल कोटा भर्ती 2026</h2>
       <p class="lead">आरआरसी पश्चिम रेलवे ने वर्ष 2026-27 के लिए खेल कोटे के अंतर्गत ग्रुप सी और ग्रुप डी के पदों पर भर्ती के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य राष्ट्रीय स्तर के खिलाड़ी उम्मीदवार 01.09.2026 से 30.09.2026 तक ऑनलाइन आवेदन कर सकते हैं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >रेलवे भर्ती सेल, पश्चिम रेलवे</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >27 अगस्त 2026</span></div>
       <div class="r"><span >पद</span><span class="v" >ग्रुप सी और ग्रुप डी</span></div>
@@ -416,86 +424,86 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >आवेदन पत्रों की संवीक्षा → उम्मीदवारों का ट्रायल → खेल उपलब्धियों, शैक्षणिक योग्यता और सामा</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >रेलवे भर्ती सेल, पश्चिम रेलवे ने वर्ष 2026-27 के लिए खेल कोटे के अंतर्गत भर्ती हेतु रोजगार सूचना जारी की है। विभिन्न खेल विधाओं में ग्रुप सी और ग्रुप डी के पदों के लिए कुल 64 रिक्तियां उपलब्ध हैं। योग्य खिलाड़ी उम्मीदवार 01 सितंबर 2026 से 30 सितंबर 2026 तक अपने ऑनलाइन आवेदन जमा कर सकते हैं। इस भर्ती में एससी, एसटी, ओबीसी, ईडब्ल्यूएस, दिव्यांग या भूतपूर्व सैनिक वर्ग के लिए कोई आरक्षण उपलब्ध नहीं है।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >आरआरसी पश्चिम रेलवे खेल कोटा 2026 के लिए आयु और शैक्षणिक मानदंडों को पूरा करने वाले सक्रिय खिलाड़ी उम्मीदवार</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >कौन आवेदन नहीं कर सकता</div>
+      <h2 class="h" >कौन आवेदन नहीं कर सकता</h2>
       <ul class="steps dots"><li >निर्धारित शैक्षणिक योग्यता की अंतिम परीक्षा के परिणाम की प्रतीक्षा कर रहे उम्मीदवार आवेदन करने के पात्र नहीं हैं</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >अधिसूचना तिथि</span><span class="v" >27 अग 2026</span></div>
       <div class="r"><span >ऑनलाइन आवेदन प्रारंभ</span><span class="v" >01 सितं 2026 (10:00 बजे)</span></div>
       <div class="r"><span >ऑनलाइन आवेदन अंतिम तिथि</span><span class="v" >30 सितं 2026 (18:00 बजे)</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आयु सीमा</div>
+      <h2 class="h" >आयु सीमा</h2>
       <div class="r"><span >न्यूनतम आयु</span><span class="v" >18 वर्ष</span></div>
       <div class="r"><span >अधिकतम आयु</span><span class="v" >25 वर्ष</span></div>
       <div class="r"><span >आयु गणना तिथि</span><span class="v" >01 जनवरी 2027</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >ग्रुप सी (लेवल 5 / लेवल 4)</span><span class="v" >5 · एथलेटिक्स, जिम्नास्टिक, हॉकी, भारोत्तोलन, कुश्ती</span></div>
       <div class="r"><span >ग्रुप सी (लेवल 3 / लेवल 2)</span><span class="v" >16 · एथलेटिक्स, क्रिकेट, डाइविंग, फुटबॉल, जिम्नास्टिक, हॉकी, पावरलिफ्टिंग, तैराकी, भारोत्तोलन, कुश्ती</span></div>
       <div class="r"><span >ग्रुप डी (लेवल 1)</span><span class="v" >43 · एथलेटिक्स, बॉल बैडमिंटन, बास्केटबॉल, बॉक्सिंग, बॉडी बिल्डिंग, साइकिलिंग, हॉकी, हैंडबॉल, खो-खो, पावरलिफ्टिंग, तैराकी, वॉलीबॉल, वाटर पोलो, भारोत्तोलन</span></div>
       <div class="r"><span >कुल</span><span class="v" >64</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >लेवल 5/4 शिक्षा</span><span class="v" >किसी मान्यता प्राप्त विश्वविद्यालय से किसी भी विधा में स्नातक की डिग्री</span></div>
       <div class="r"><span >लेवल 3/2 शिक्षा</span><span class="v" >12वीं या समकक्ष, अथवा 10वीं पास और कोर्स कंप्लीटेड अप्रेंटिसशिप, अथवा 10वीं पास और आईटीआई</span></div>
       <div class="r"><span >लेवल 1 शिक्षा</span><span class="v" >10वीं पास अथवा आईटीआई अथवा समकक्ष योग्यता अथवा राष्ट्रीय अप्रेंटिसशिप प्रमाण-पत्र</span></div>
       <div class="r"><span >खेल उपलब्धियां</span><span class="v" >उम्मीदवारों ने 01/04/2024 से अधिसूचना की तिथि तक निर्धारित खेल उपलब्धि मानदंड प्राप्त किए हों और वर्तमान में सक्रिय खिलाड़ी हों</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >आवेदन पत्रों की संवीक्षा</li><li >उम्मीदवारों का ट्रायल</li><li >खेल उपलब्धियों, शैक्षणिक योग्यता और सामान्य बुद्धिमत्ता का मूल्यांकन</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >आवेदन कैसे करें</div>
+      <h2 class="h" >आवेदन कैसे करें</h2>
       <ol class="steps"><li >आधिकारिक वेबसाइट rrc-wr.com पर जाएं</li><li >खेल कोटा अधिसूचना की जांच करें और पात्रता सुनिश्चित करें</li><li >व्यक्तिगत और खेल विवरण के साथ ऑनलाइन आवेदन पत्र भरें</li><li >आवश्यक दस्तावेज अपलोड करें और अंतिम तिथि से पहले आवेदन जमा करें</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >शैक्षणिक योग्यता प्रमाण पत्र</li><li >खेल उपलब्धि प्रमाण पत्र</li><li >जन्मतिथि प्रमाण</li><li >पहचान प्रमाण</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >आवेदन करने के लिए अंतिम तिथि का इंतजार न करें</li><li >सुनिश्चित करें कि सभी खेल उपलब्धियां 01.04.2024 से अधिसूचना तिथि के बीच की वैध अवधि की हैं</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >आरआरसी पश्चिम रेलवे खेल कोटा भर्ती क्या है?</h3><p >यह रेलवे भर्ती सेल, पश्चिम रेलवे द्वारा आयोजित एक सीधी भर्ती अभियान है, जिसके तहत खेल ट्रायल और उपलब्धियों के आधार पर उत्कृष्ट खिलाड़ियों को ग्रुप सी और ग्रुप डी के पदों पर नियुक्त किया जाता है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >शॉर्टलिस्ट किए गए उम्मीदवारों के लिए ट्रायल और दस्तावेज सत्यापन</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >आरक्षण</span><span class="v" >एससी/एसटी/ओबीसी/ईडब्ल्यूएस/दिव्यांग/भूतपूर्व सैनिक वर्ग के लिए कोई आरक्षण नहीं</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://www.rrc-wr.com/rrwc/Files/f5048247-0e91-4bdb-a29b-35c880e208bb.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">rrc-wr.com</span></a>
       <a class="r" href="https://www.rrc-wr.com" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">rrc-wr.com</span></a>
       <a class="r" href="https://www.rrc-wr.com" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">rrc-wr.com</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >आरआरसी पश्चिम रेलवे खेल कोटा भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?</h3><p >ऑनलाइन आवेदन जमा करने की अंतिम तिथि 30 सितंबर 2026 शाम 6:00 बजे तक है।</p></div>
       <div class="qa"><h3 >इस अधिसूचना में कुल कितनी रिक्तियां घोषित की गई हैं?</h3><p >ग्रुप सी और ग्रुप डी के पदों के लिए कुल 64 रिक्तियां घोषित की गई हैं।</p></div>
       <div class="qa"><h3 >आरआरसी पश्चिम रेलवे खेल कोटा 2026 के लिए आयु सीमा क्या है?</h3><p >उम्मीदवारों की आयु 01 जनवरी 2027 को 18 से 25 वर्ष के बीच होनी चाहिए।</p></div>
       <div class="qa"><h3 >ऑनलाइन आवेदन करने के लिए आधिकारिक वेबसाइट क्या है?</h3><p >उम्मीदवार आधिकारिक वेबसाइट rrc-wr.com के माध्यम से ऑनलाइन आवेदन कर सकते हैं।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >आयु, शिक्षा और खेल उपलब्धियों सहित पात्रता मानदंडों की जांच करें</li><li >ऑनलाइन आवेदन करने से पहले प्रमाण पत्रों की स्कैन की गई प्रतियां तैयार रखें</li><li >30 सितंबर 2026 से पहले आवेदन जमा करें</li></ul>
     </section>
     </details>

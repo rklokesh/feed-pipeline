@@ -20,7 +20,7 @@
 <title>WBPSC Assistant Engineer Electrical Interview Schedule 2025 | पश्चिम बंगाल लोक सेवा आयोग सहायक इंजीनियर इलेक्ट्रिकल साक्षात्कार कार्यक्रम 2025</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Public Service Commission, West Bengal (WBPSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">31 Oct 2025</span></div>
       <div class="r"><span data-t="r0l">Post</span><span class="v" data-t="r0v">Assistant Engineer (Electrical)</span></div>
@@ -302,72 +310,72 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The Public Service Commission, West Bengal (WBPSC) has announced the interview schedule for recruitment to the post of Assistant Engineer (Electrical) in the West Bengal Engineering Service (Electrical) under the Public Works Department (Advt. No. 21/2020). Candidates whose applications were found eligible after scrutiny can appear for the interview on 12 November 2025 and 13 November 2025. E-interview call letters will be available for download from the official website starting 6 November 2025. Candidates must check their allotted dates, times, and roll numbers in the notice.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates shortlisted for the interview of Assistant Engineer (Electrical) under Advt. No. 21/2020.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Interview Date</span><span class="v" data-t="datesH0v">12 Nov 2025 &amp; 13 Nov 2025</span></div>
       <div class="r"><span data-t="datesH1l">E-Call Letter Download Starts</span><span class="v" data-t="datesH1v">06 Nov 2025</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Assistant Engineer (Electrical)</span><span class="v" data-t="vacH0v">As per Advt. No. 21/2020</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Scrutiny Status</span><span class="v" data-t="eligH0v">Eligible on the basis of statements in applications</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Written Examination</li><li data-t="selH1">Interview</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official website of WBPSC.</li><li data-t="howH1">Click on the link to download the e-interview call letter for Assistant Engineer (Electrical).</li><li data-t="howH2">Enter your login credentials to download and print the call letter.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">E-Interview Call Letter</li><li data-t="docH1">Photo Identity Proof</li><li data-t="docH2">Educational and Category Certificates</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Failing to download the e-call letter on time.</li><li data-t="mistH1">Missing the scheduled reporting date and time.</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is the WBPSC Assistant Engineer Electrical Interview Schedule?</h3><p data-t="ea0">It is the official announcement detailing the dates, timings, and roll numbers of candidates shortlisted to appear for the interview for the Assistant Engineer (Electrical) recruitment under the Public Works Department.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Attend the interview as per the scheduled date and time.</li><li data-t="aftH1">Final recommendation based on written exam and interview performance.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Cut-off Marks (Last Candidate Called)</span><span class="v" data-t="extraH0v">UR: 150.50, ST: 80.50, PD (HI): 35.00</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://psc.wb.gov.in/Download?param1=20251031172549_ScheduleAsstEnggELec.pdf&amp;param2=advertisement" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">psc.wb.gov.in</span></a>
       <a class="r" href="https://psc.wb.gov.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">psc.wb.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When will the interview for WBPSC Assistant Engineer Electrical be held?</h3><p data-t="a0">The interviews will be held on 12 November 2025 and 13 November 2025.</p></div>
       <div class="qa"><h3 data-t="q1">When can I download the e-interview call letter?</h3><p data-t="a1">E-interview call letters can be downloaded from the official website starting 6 November 2025.</p></div>
       <div class="qa"><h3 data-t="q2">What is the advertisement number for this recruitment?</h3><p data-t="a2">This recruitment is being conducted under Advt. No. 21/2020.</p></div>
       <div class="qa"><h3 data-t="q3">What were the cut-off marks for the written examination for UR candidates?</h3><p data-t="a3">The marks obtained at the written examination by the last UR candidate called to interview was 150.50.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check your roll number in the official PDF notice.</li><li data-t="chkH1">Download the e-call letter starting from 06 Nov 2025.</li><li data-t="chkH2">Keep all required documents ready for the interview.</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/cisf-constable-and-asi-exam-date-2024-cbt-schedule/"><span data-t="rel0">CISF Constable and ASI Exam Date 2024 – CBT Schedule</span><span class="v g num">31 Oct 2026</span></a>
       <a class="r" href="/notice/mppsc-veterinary-assistant-surgeon-interview-notice-2026/"><span data-t="rel1">MPPSC Veterinary Assistant Surgeon Interview Notice 2026</span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/cisf-constable-and-asi-exam-date-2024-schedule-notice-out/"><span data-t="rel2">CISF Constable and ASI Exam Date 2024 – Schedule Notice Out</span><span class="v g num">29 Oct 2026</span></a>
@@ -381,7 +389,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">पश्चिम बंगाल लोक सेवा आयोग सहायक इंजीनियर इलेक्ट्रिकल साक्षात्कार कार्यक्रम 2025</h2>
       <p class="lead">विज्ञापन संख्या 21/2020 के अंतर्गत सहायक इंजीनियर (इलेक्ट्रिकल) के लिए साक्षात्कार कार्यक्रम पश्चिम बंगाल लोक सेवा आयोग द्वारा जारी कर दिया गया है। उम्मीदवार 6 नवंबर 2025 से अपने ई-साक्षात्कार कॉल लेटर डाउनलोड कर सकते हैं। आधिकारिक सूचना में अपना रोल नंबर, साक्षात्कार की तारीख और रिपोर्टिंग समय देखें।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >लोक सेवा आयोग, पश्चिम बंगाल</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >31 अक्तूबर 2025</span></div>
       <div class="r"><span >पद</span><span class="v" >सहायक इंजीनियर (इलेक्ट्रिकल)</span></div>
@@ -392,68 +400,68 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >लिखित परीक्षा → साक्षात्कार</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >लोक सेवा आयोग, पश्चिम बंगाल (डब्ल्यूबीपीएससी) ने लोक निर्माण विभाग के तहत पश्चिम बंगाल इंजीनियरिंग सेवा (इलेक्ट्रिकल) में सहायक इंजीनियर (इलेक्ट्रिकल) के पद पर भर्ती के लिए साक्षात्कार कार्यक्रम की घोषणा की है (विज्ञापन संख्या 21/2020)। जिन उम्मीदवारों के आवेदन संवीक्षा के बाद पात्र पाए गए हैं, वे 12 नवंबर 2025 और 13 नवंबर 2025 को साक्षात्कार में शामिल हो सकते हैं। ई-साक्षात्कार कॉल लेटर 6 नवंबर 2025 से आधिकारिक वेबसाइट से डाउनलोड के लिए उपलब्ध होंगे। उम्मीदवारों को सूचना में अपनी आवंटित तिथियां, समय और रोल नंबर देखना चाहिए।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >विज्ञापन संख्या 21/2020 के तहत सहायक इंजीनियर (इलेक्ट्रिकल) के साक्षात्कार के लिए शॉर्टलिस्ट किए गए उम्मीदवार।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >साक्षात्कार तिथि</span><span class="v" >12 नवंबर 2025 और 13 नवंबर 2025</span></div>
       <div class="r"><span >ई-कॉल लेटर डाउनलोड शुरू</span><span class="v" >06 नवंबर 2025</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >सहायक इंजीनियर (इलेक्ट्रिकल)</span><span class="v" >विज्ञापन संख्या 21/2020 के अनुसार</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >संवीक्षा स्थिति</span><span class="v" >आवेदनों में दिए गए विवरण के आधार पर पात्र</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >लिखित परीक्षा</li><li >साक्षात्कार</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >पश्चिम बंगाल लोक सेवा आयोग की आधिकारिक वेबसाइट पर जाएं।</li><li >सहायक इंजीनियर (इलेक्ट्रिकल) के लिए ई-साक्षात्कार कॉल लेटर डाउनलोड करने के लिंक पर क्लिक करें।</li><li >कॉल लेटर डाउनलोड करने और प्रिंट करने के लिए अपने लॉगिन विवरण दर्ज करें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >ई-साक्षात्कार कॉल लेटर</li><li >फोटो पहचान प्रमाण</li><li >शैक्षणिक और श्रेणी प्रमाण पत्र</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >समय पर ई-कॉल लेटर डाउनलोड करने में विफल रहना।</li><li >निर्धारित रिपोर्टिंग तिथि और समय चूक जाना।</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >पश्चिम बंगाल लोक सेवा आयोग सहायक इंजीनियर इलेक्ट्रिकल साक्षात्कार कार्यक्रम क्या है?</h3><p >यह लोक निर्माण विभाग के तहत सहायक इंजीनियर (इलेक्ट्रिकल) भर्ती के साक्षात्कार के लिए शॉर्टलिस्ट किए गए उम्मीदवारों की तिथियों, समय और रोल नंबर का विवरण देने वाली आधिकारिक घोषणा है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >निर्धारित तिथि और समय के अनुसार साक्षात्कार में शामिल हों।</li><li >लिखित परीक्षा और साक्षात्कार के प्रदर्शन के आधार पर अंतिम अनुशंसा।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >कट-ऑफ अंक (बुलाए गए अंतिम उम्मीदवार)</span><span class="v" >अनारक्षित: 150.50, एसटी: 80.50, पीडी (एचआई): 35.00</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://psc.wb.gov.in/Download?param1=20251031172549_ScheduleAsstEnggELec.pdf&amp;param2=advertisement" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">psc.wb.gov.in</span></a>
       <a class="r" href="https://psc.wb.gov.in/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">psc.wb.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >पश्चिम बंगाल लोक सेवा आयोग सहायक इंजीनियर इलेक्ट्रिकल का साक्षात्कार कब आयोजित किया जाएगा?</h3><p >साक्षात्कार 12 नवंबर 2025 और 13 नवंबर 2025 को आयोजित किया जाएगा।</p></div>
       <div class="qa"><h3 >मैं ई-साक्षात्कार कॉल लेटर कब डाउनलोड कर सकता हूं?</h3><p >ई-साक्षात्कार कॉल लेटर 6 नवंबर 2025 से आधिकारिक वेबसाइट से डाउनलोड किए जा सकते हैं।</p></div>
       <div class="qa"><h3 >इस भर्ती के लिए विज्ञापन संख्या क्या है?</h3><p >यह भर्ती विज्ञापन संख्या 21/2020 के अंतर्गत आयोजित की जा रही है।</p></div>
       <div class="qa"><h3 >अनारक्षित उम्मीदवारों के लिए लिखित परीक्षा के कट-ऑफ अंक क्या थे?</h3><p >साक्षात्कार के लिए बुलाए गए अंतिम अनारक्षित उम्मीदवार द्वारा लिखित परीक्षा में प्राप्त अंक 150.50 थे।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >आधिकारिक पीडीएफ सूचना में अपना रोल नंबर जांचें।</li><li >06 नवंबर 2025 से ई-कॉल लेटर डाउनलोड करें।</li><li >साक्षात्कार के लिए सभी आवश्यक दस्तावेज तैयार रखें।</li></ul>
     </section>
     </details>

@@ -20,7 +20,7 @@
 <title>NTA JEE Main 2027 Session 1 Registration Advisory and Instructions | एनटीए जेईई मेन 2027 सत्र 1 पंजीकरण सलाह और निर्देश</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">National Testing Agency (NTA)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">28 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Exam Name</span><span class="v" data-t="r0v">Joint Entrance Examination (Main) – 2027</span></div>
@@ -301,60 +309,60 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The National Testing Agency (NTA) has released an advisory and instructions regarding the online registration process for the Joint Entrance Examination (Main) – 2027 Session 1. NTA will conduct the JEE Main 2027 exam in two sessions: Session 1 in January 2027 and Session 2 in April 2027. Candidates planning to apply online are advised to follow specific guidelines regarding DigiLocker login, Re-KYC, and matching details with their Class 10 certificates. Read this notice carefully before filling out the application form.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Engineering aspirants wanting to appear for JEE Main 2027 Session 1</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Notice Date</span><span class="v" data-t="datesH0v">28 Oct 2026</span></div>
       <div class="r"><span data-t="datesH1l">Session 1 Exam</span><span class="v" data-t="datesH1v">January 2027</span></div>
       <div class="r"><span data-t="datesH2l">Session 2 Exam</span><span class="v" data-t="datesH2v">April 2027</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Name and DOB verification</span><span class="v" data-t="eligH0v">Must match Class 10th Certificate / Mark sheet</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Online Application with DigiLocker/JanParichay/e-Pramaan login</li><li data-t="selH1">Computer Based Test (CBT) for JEE Main 2027</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official website at https://jeemain.nta.nic.in/</li><li data-t="howH1">Perform Re-KYC through DigiLocker before filling out the form to fetch latest details</li><li data-t="howH2">Log in using your own DigiLocker, JanParichay, or e-Pramaan credentials</li><li data-t="howH3">Ensure candidate&#x27;s name and date of birth match the Class 10th certificate</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Class 10th Certificate or Mark sheet</li><li data-t="docH1">DigiLocker / JanParichay / e-Pramaan credentials</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Do not use someone else&#x27;s DigiLocker or login credentials</li><li data-t="mistH1">Do not enter name or date of birth differently from the Class 10th certificate</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is JEE Main 2027 Session 1 Advisory?</h3><p data-t="ea0">It is an official advisory issued by NTA detailing mandatory instructions regarding login credentials, DigiLocker Re-KYC, and personal details matching for the Joint Entrance Examination (Main) 2027 application process.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Successful submission of online application form</li><li data-t="aftH1">Issuance of admit card for the computer-based test</li><li data-t="aftH2">Appearance in JEE Main 2027 Session 1 exam</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Helpdesk Email</span><span class="v" data-t="extraH0v">jeemain@nta.ac.in</span></div>
       <div class="r"><span data-t="extraH1l">Contact Number</span><span class="v" data-t="extraH1v">011-40759000</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://nta.ac.in/Download/Notice/Notice_20261028220547.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">nta.ac.in</span></a>
       <a class="r" href="https://jeemain.nta.nic.in/" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">jeemain.nta.nic.in</span></a>
       <a class="r" href="https://jeemain.nta.nic.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">jeemain.nta.nic.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When will JEE Main 2027 Session 1 be conducted?</h3><p data-t="a0">JEE Main 2027 Session 1 will be conducted in January 2027 by NTA.</p></div>
       <div class="qa"><h3 data-t="q1">Where can I fill out the JEE Main 2027 application form?</h3><p data-t="a1">You can fill out the online application form on the official NTA website at https://jeemain.nta.nic.in/.</p></div>
       <div class="qa"><h3 data-t="q2">What login credentials are required for the application process?</h3><p data-t="a2">Candidates are advised to log in using their own DigiLocker, JanParichay, or e-Pramaan credentials.</p></div>
@@ -363,16 +371,16 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 data-t="q5">How many sessions will JEE Main 2027 have?</h3><p data-t="a5">JEE Main 2027 will be conducted in two sessions: Session 1 in January 2027 and Session 2 in April 2027.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Keep your DigiLocker account active and updated</li><li data-t="chkH1">Complete Re-KYC in DigiLocker before starting application</li><li data-t="chkH2">Keep Class 10 certificate ready for name and DOB verification</li></ul>
     </section>
     <section class="kv rel" id="exam" data-t-aria="exH">
-      <div class="h" data-t="exH">All updates for NTA JEE Main 2027</div>
+      <h2 class="h" data-t="exH">All updates for NTA JEE Main 2027</h2>
       <a class="r" href="/notice/jee-main-2027-session-1-fresh-application-notice-last-date-22-no/"><span><span data-t="ex0">JEE Main 2027 Session 1 Fresh Application Notice – Last Date 22 Nov</span> <small class="g" data-t="exs0">Fresh Application Notice</small></span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/nta-joint-entrance-examination-jee-main-2027-session-1/"><span><span data-t="ex1">JEE Main 2027 Session 1 Online Form Open</span> <small class="g" data-t="exs1">Online Form Open</small></span><span class="v g num">24 Oct 2026</span></a>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/nta-swayam-july-2026-exam-registration-last-date-extended/"><span data-t="rel0">NTA SWAYAM July 2026 Exam Registration Last Date Extended</span><span class="v g num">31 Oct 2026</span></a>
       <a class="r" href="/notice/nta-nift-entrance-examination-niftee-2027/"><span data-t="rel1">NTA NIFT Entrance Examination NIFTEE 2027</span><span class="v g num">16 Oct 2026</span></a>
       <a class="r" href="/notice/nta-swayam-july-semester-examination-2026-online-form/"><span data-t="rel2">NTA SWAYAM July Semester Exam 2026 Online Form</span><span class="v g num">9 Oct 2026</span></a>
@@ -384,7 +392,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">एनटीए जेईई मेन 2027 सत्र 1 पंजीकरण सलाह और निर्देश</h2>
       <p class="lead">एनटीए ने संयुक्त प्रवेश परीक्षा मुख्य 2027 सत्र 1 के लिए पंजीकरण निर्देश और सलाह जारी की है। उम्मीदवारों को सुचारू लॉगिन और सत्यापन के लिए अपने स्वयं के डिजिलॉकर, जनपरिचय या ई-प्रमाण क्रेडेंशियल का उपयोग करना चाहिए।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >राष्ट्रीय परीक्षण एजेंसी (एनटीए)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >28 अक्तूबर 2026</span></div>
       <div class="r"><span >परीक्षा का नाम</span><span class="v" >संयुक्त प्रवेश परीक्षा (मुख्य) – 2027</span></div>
@@ -394,60 +402,60 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >डिजिलॉकर/जनपरिचय/ई-प्रमाण लॉगिन के साथ ऑ → जेईई मेन 2027 के लिए कंप्यूटर आधारित परी</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने संयुक्त प्रवेश परीक्षा (मुख्य) – 2027 सत्र 1 के लिए ऑनलाइन पंजीकरण प्रक्रिया के संबंध में एक सलाह और निर्देश जारी किया है। एनटीए जेईई मेन 2027 परीक्षा दो सत्रों में आयोजित करेगा: सत्र 1 जनवरी 2027 में और सत्र 2 अप्रैल 2027 में। ऑनलाइन आवेदन करने की योजना बना रहे उम्मीदवारों को डिजिलॉकर लॉगिन, री-केवाईसी और कक्षा 10 के प्रमाण पत्र के साथ विवरण मिलान के संबंध में विशिष्ट दिशानिर्देशों का पालन करने की सलाह दी जाती है। आवेदन पत्र भरने से पहले इस नोटिस को ध्यान से पढ़ें।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >इंजीनियरिंग के उम्मीदवार जो जेईई मेन 2027 सत्र 1 में शामिल होना चाहते हैं</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >नोटिस की तिथि</span><span class="v" >28 अक्टू 2026</span></div>
       <div class="r"><span >सत्र 1 परीक्षा</span><span class="v" >जनवरी 2027</span></div>
       <div class="r"><span >सत्र 2 परीक्षा</span><span class="v" >अप्रैल 2027</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >नाम और जन्म तिथि सत्यापन</span><span class="v" >कक्षा 10वीं के प्रमाण पत्र / अंक पत्र से मेल खाना चाहिए</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >डिजिलॉकर/जनपरिचय/ई-प्रमाण लॉगिन के साथ ऑनलाइन आवेदन</li><li >जेईई मेन 2027 के लिए कंप्यूटर आधारित परीक्षा</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >आधिकारिक वेबसाइट https://jeemain.nta.nic.in/ पर जाएं</li><li >नवीनतम विवरण प्राप्त करने के लिए फॉर्म भरने से पहले डिजिलॉकर के माध्यम से री-केवाईसी करें</li><li >अपने स्वयं के डिजिलॉकर, जनपरिचय या ई-प्रमाण क्रेडेंशियल का उपयोग करके लॉगिन करें</li><li >सुनिश्चित करें कि उम्मीदवार का नाम और जन्म तिथि कक्षा 10वीं के प्रमाण पत्र से मेल खाती है</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >कक्षा 10वीं का प्रमाण पत्र या अंक पत्र</li><li >डिजिलॉकर / जनपरिचय / ई-प्रमाण क्रेडेंशियल</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >किसी अन्य के डिजिलॉकर या लॉगिन क्रेडेंशियल का उपयोग न करें</li><li >कक्षा 10वीं के प्रमाण पत्र से अलग नाम या जन्म तिथि दर्ज न करें</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >जेईई मेन 2027 सत्र 1 सलाह क्या है?</h3><p >यह एनटीए द्वारा जारी एक आधिकारिक सलाह है जिसमें संयुक्त प्रवेश परीक्षा (मुख्य) 2027 आवेदन प्रक्रिया के लिए लॉगिन क्रेडेंशियल, डिजिलॉकर री-केवाईसी और व्यक्तिगत विवरण मिलान से संबंधित अनिवार्य निर्देश दिए गए हैं।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >ऑनलाइन आवेदन पत्र की सफल प्रस्तुति</li><li >कंप्यूटर आधारित परीक्षा के लिए प्रवेश पत्र जारी होना</li><li >जेईई मेन 2027 सत्र 1 परीक्षा में उपस्थिति</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >हेल्पलाइन ईमेल</span><span class="v" >jeemain@nta.ac.in</span></div>
       <div class="r"><span >संपर्क नंबर</span><span class="v" >011-40759000</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://nta.ac.in/Download/Notice/Notice_20261028220547.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">nta.ac.in</span></a>
       <a class="r" href="https://jeemain.nta.nic.in/" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">jeemain.nta.nic.in</span></a>
       <a class="r" href="https://jeemain.nta.nic.in/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">jeemain.nta.nic.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >जेईई मेन 2027 सत्र 1 कब आयोजित किया जाएगा?</h3><p >जेईई मेन 2027 सत्र 1 का आयोजन जनवरी 2027 में एनटीए द्वारा किया जाएगा।</p></div>
       <div class="qa"><h3 >मैं जेईई मेन 2027 आवेदन पत्र कहां भर सकता हूं?</h3><p >आप आधिकारिक एनटीए वेबसाइट https://jeemain.nta.nic.in/ पर ऑनलाइन आवेदन पत्र भर सकते हैं।</p></div>
       <div class="qa"><h3 >आवेदन प्रक्रिया के लिए किन लॉगिन क्रेडेंशियल की आवश्यकता है?</h3><p >उम्मीदवारों को सलाह दी जाती है कि वे अपने स्वयं के डिजिलॉकर, जनपरिचय या ई-प्रमाण क्रेडेंशियल का उपयोग करके लॉगिन करें।</p></div>
@@ -456,7 +464,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 >जेईई मेन 2027 में कितने सत्र होंगे?</h3><p >जेईई मेन 2027 दो सत्रों में आयोजित किया जाएगा: सत्र 1 जनवरी 2027 में और सत्र 2 अप्रैल 2027 में।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >अपना डिजिलॉकर खाता सक्रिय और अपडेट रखें</li><li >आवेदन शुरू करने से पहले डिजिलॉकर में री-केवाईसी पूरा करें</li><li >नाम और जन्म तिथि सत्यापन के लिए कक्षा 10 का प्रमाण पत्र तैयार रखें</li></ul>
     </section>
     </details>

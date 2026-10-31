@@ -20,7 +20,7 @@
 <title>RRB JE CBT-I Exam 2026 Postponed for Andhra Pradesh Centres | रेलवे भर्ती बोर्ड कनिष्ठ अभियंता परीक्षा 2026 आंध्र प्रदेश केंद्रों के लिए स्थगित</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Railway Recruitment Boards (RRB)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">27 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Advertisement number</span><span class="v" data-t="r0v">CEN No. 04/2026</span></div>
@@ -300,47 +308,47 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The Railway Recruitment Boards (RRB) have officially announced the postponement of the 1st Stage Computer Based Test (CBT-I) for CEN No. 04/2026. The examination, which was originally scheduled for 28-10-2026, has been deferred exclusively for specific test centres in Andhra Pradesh due to the cyclonic storm &#x27;Arnab&#x27;. Affected candidates registered at centres in Srikakulam, Visakhapatnam, Rajahmundry, and Vijayawada must note that the exam will not take place on the original date. Revised dates and new venues for these candidates will be published shortly by the board. Candidates should check their registered mobile numbers and email addresses for official updates.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates whose CBT-I exam for RRB CEN 04/2026 was scheduled on 28 Oct 2026 at the specified Andhra Pradesh centres.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Notice Date</span><span class="v" data-t="datesH0v">27 Oct 2026</span></div>
       <div class="r"><span data-t="datesH1l">Original CBT-I Date</span><span class="v" data-t="datesH1v">28 Oct 2026</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Junior Engineer, Depot Material Superintendent, and Chemical &amp; Metallurgical Assistant</span><span class="v" data-t="vacH0v">Recruitment under CEN No. 04/2026</span></div>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Monitor the official RRB website for rescheduled exam dates and venue details.</li><li data-t="howH1">Check registered mobile number and email ID for SMS and email alerts from RRB.</li></ol>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">Why has the RRB JE CBT-I exam been postponed?</h3><p data-t="ea0">The exam has been postponed at specific centres in Andhra Pradesh due to the cyclonic storm &#x27;Arnab&#x27;. Exams at all other centres will proceed as per the original schedule.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">RRB will release the rescheduled exam dates and new venue details for affected candidates on the official website.</li><li data-t="aftH1">Individual notifications will also be sent via SMS and email to registered candidates.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Affected Test Centres</span><span class="v" data-t="extraH0v">Srikakulam (38141), Visakhapatnam (8827, 9208, 9417), Rajahmundry (7954), Vijayawada (8031)</span></div>
       <div class="r"><span data-t="extraH1l">Reason for Postponement</span><span class="v" data-t="extraH1v">Cyclonic storm &#x27;Arnab&#x27;</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://rrb.indianrailways.gov.in/-/image/1793110990951Notice_postponement_of_CBT-I_CEN-04-2026_JEs_English.pdf/examsDocuments" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rrb.indianrailways.gov.in</span></a>
       <a class="r" href="https://rrb.indianrailways.gov.in" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">rrb.indianrailways.gov.in</span></a>
       <a class="r" href="https://rrb.indianrailways.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rrb.indianrailways.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">Which exam has been postponed by RRB?</h3><p data-t="a0">The CBT-I exam for CEN No. 04/2026 (Junior Engineer, Depot Material Superintendent, and Chemical &amp; Metallurgical Assistant) has been postponed.</p></div>
       <div class="qa"><h3 data-t="q1">Which centres are affected by the postponement?</h3><p data-t="a1">The exam is postponed at centres in Srikakulam, Visakhapatnam, Rajahmundry, and Vijayawada in Andhra Pradesh.</p></div>
       <div class="qa"><h3 data-t="q2">What was the original date of the postponed exam?</h3><p data-t="a2">The exam was originally scheduled for 28 October 2026.</p></div>
@@ -351,15 +359,15 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 data-t="q7">What is the official website to check RRB notices?</h3><p data-t="a7">The official website is https://rrb.indianrailways.gov.in.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Keep your registration details handy.</li><li data-t="chkH1">Regularly check the official RRB website for rescheduling announcements.</li><li data-t="chkH2">Ensure your registered mobile number and email are active to receive direct alerts.</li></ul>
     </section>
     <section class="kv rel" id="exam" data-t-aria="exH">
-      <div class="h" data-t="exH">All updates for RRB JE 2026</div>
+      <h2 class="h" data-t="exH">All updates for RRB JE 2026</h2>
       <a class="r" href="/notice/rrb-je-exam-date-2026-cbt-i-rescheduled-notice-admit-card/"><span><span data-t="ex0">RRB JE Exam Date 2026 – CBT-I Rescheduled Notice &amp; Admit Card</span> <small class="g" data-t="exs0">Exam Rescheduled</small></span><span class="v g num">28 Oct 2026</span></a>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/rrb-cen-01-2026-assistant-loco-pilot-exam-city-intimation/"><span data-t="rel0">RRB CEN 01/2026 Assistant Loco Pilot Exam City Intimation</span><span class="v g num">23 Oct 2026</span></a>
       <a class="r" href="/notice/rrb-ntpc-cbt-2-result-2025-cbtst-shortlist-and-score-card-link/"><span data-t="rel1">RRB NTPC CBT-2 Result 2025 – CBTST Shortlist and Score Card Link</span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/rrb-ntpc-undergraduate-cen-07-2025-cut-off-2026-cbtst-marks-out/"><span data-t="rel2">RRB NTPC Undergraduate CEN 07/2025 Cut Off 2026 – CBTST Marks Out</span><span class="v g num">30 Oct 2026</span></a>
@@ -372,7 +380,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">रेलवे भर्ती बोर्ड कनिष्ठ अभियंता परीक्षा 2026 आंध्र प्रदेश केंद्रों के लिए स्थगित</h2>
       <p class="lead">रेलवे भर्ती बोर्ड ने चक्रवात के कारण आंध्र प्रदेश के कुछ केंद्रों पर 28-10-2026 को होने वाली परीक्षा स्थगित कर दी है। प्रभावित उम्मीदवारों को नई तारीखों की सूचना एसएमएस और ईमेल के जरिए दी जाएगी।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >रेलवे भर्ती बोर्ड (RRB)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >27 अक्तूबर 2026</span></div>
       <div class="r"><span >विज्ञापन संख्या</span><span class="v" >सीईएन संख्या 04/2026</span></div>
@@ -381,47 +389,47 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >न्यूनतम योग्यता</span><span class="v" >डिप्लोमा</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >रेलवे भर्ती बोर्ड (RRB) ने सीईएन संख्या 04/2026 के लिए प्रथम चरण कंप्यूटर आधारित परीक्षा (सीबीटी-I) के स्थगन की आधिकारिक घोषणा कर दी है। &#x27;अर्नाव&#x27; चक्रवात के कारण आंध्र प्रदेश के विशिष्ट परीक्षा केंद्रों पर 28-10-2026 को होने वाली परीक्षा को स्थगित कर दिया गया है। श्रीकाकुलम, विशाखापत्तनम, राजमुंदरी और विजयवाड़ा केंद्रों पर पंजीकृत प्रभावित उम्मीदवारों को ध्यान देना चाहिए कि परीक्षा मूल तिथि पर नहीं होगी। इन उम्मीदवारों के लिए संशोधित तिथियां और नए केंद्र जल्द ही बोर्ड द्वारा प्रकाशित किए जाएंगे। उम्मीदवारों को आधिकारिक अपडेट के लिए अपने पंजीकृत मोबाइल नंबर और ईमेल पते की जांच करनी चाहिए।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जिनकी आरआरबी सीईएन 04/2026 के लिए सीबीटी-I परीक्षा 28 अक्टू 2026 को निर्दिष्ट आंध्र प्रदेश केंद्रों पर निर्धारित थी।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >सूचना तिथि</span><span class="v" >27 अक्टू 2026</span></div>
       <div class="r"><span >मूल सीबीटी-I तिथि</span><span class="v" >28 अक्टू 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >कनिष्ठ अभियंता, डिपो सामग्री अधीक्षक, और रासायनिक एवं धातुकर्म सहायक</span><span class="v" >सीईएन संख्या 04/2026 के अंतर्गत भर्ती</span></div>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >पुनर्निर्धारित परीक्षा तिथियों और केंद्र विवरण के लिए आधिकारिक आरआरबी वेबसाइट पर नजर रखें।</li><li >आरआरबी से एसएमएस और ईमेल अलर्ट के लिए पंजीकृत मोबाइल नंबर और ईमेल आईडी की जांच करें।</li></ol>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >आरआरबी जेई सीबीटी-I परीक्षा क्यों स्थगित कर दी गई है?</h3><p >&#x27;अर्नाव&#x27; चक्रवात के कारण आंध्र प्रदेश के विशिष्ट केंद्रों पर परीक्षा स्थगित कर दी गई है। अन्य सभी केंद्रों पर परीक्षाएं मूल कार्यक्रम के अनुसार होंगी।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >आरआरबी आधिकारिक वेबसाइट पर प्रभावित उम्मीदवारों के लिए पुनर्निर्धारित परीक्षा तिथियों और नए केंद्र विवरण जारी करेगा।</li><li >पंजीकृत उम्मीदवारों को एसएमएस और ईमेल के माध्यम से व्यक्तिगत सूचनाएं भी भेजी जाएंगी।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >प्रभावित परीक्षा केंद्र</span><span class="v" >श्रीकाकुलम (38141), विशाखापत्तनम (8827, 9208, 9417), राजमुंदरी (7954), विजयवाड़ा (8031)</span></div>
       <div class="r"><span >स्थगन का कारण</span><span class="v" >चक्रवात &#x27;अर्नाव&#x27;</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://rrb.indianrailways.gov.in/-/image/1793110990951Notice_postponement_of_CBT-I_CEN-04-2026_JEs_English.pdf/examsDocuments" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">rrb.indianrailways.gov.in</span></a>
       <a class="r" href="https://rrb.indianrailways.gov.in" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">rrb.indianrailways.gov.in</span></a>
       <a class="r" href="https://rrb.indianrailways.gov.in" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">rrb.indianrailways.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >आरआरबी द्वारा कौन सी परीक्षा स्थगित की गई है?</h3><p >सीईएन संख्या 04/2026 (कनिष्ठ अभियंता, डिपो सामग्री अधीक्षक, और रासायनिक एवं धातुकर्म सहायक) के लिए सीबीटी-I परीक्षा स्थगित कर दी गई है।</p></div>
       <div class="qa"><h3 >स्थगन से कौन से केंद्र प्रभावित हुए हैं?</h3><p >आंध्र प्रदेश में श्रीकाकुलम, विशाखापत्तनम, राजमुंदरी और विजयवाड़ा के केंद्र परीक्षा स्थगित होने से प्रभावित हुए हैं।</p></div>
       <div class="qa"><h3 >स्थगित परीक्षा की मूल तिथि क्या थी?</h3><p >परीक्षा मूल रूप से 28 अक्टूबर 2026 के लिए निर्धारित थी।</p></div>
@@ -432,7 +440,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 >आरआरबी नोटिस की जांच करने के लिए आधिकारिक वेबसाइट क्या है?</h3><p >आधिकारिक वेबसाइट https://rrb.indianrailways.gov.in है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >अपने पंजीकरण विवरण को संभाल कर रखें।</li><li >पुनर्निर्धारित घोषणाओं के लिए आधिकारिक आरआरबी वेबसाइट की नियमित रूप से जांच करें।</li><li >प्रत्येक अलर्ट प्राप्त करने के लिए सुनिश्चित करें कि आपका पंजीकृत मोबाइल नंबर और ईमेल सक्रिय है।</li></ul>
     </section>
     </details>

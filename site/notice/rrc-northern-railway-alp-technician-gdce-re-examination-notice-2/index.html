@@ -20,7 +20,7 @@
 <title>RRC Northern Railway ALP Technician GDCE Re-examination Notice 2026 – Willingness Link | आरआरसी नॉर्दर्न रेलवे एएलपी टेक्निशियन जीडीसीई पुनः परीक्षा नोटिस 2026 – सहमति लिंक</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Railway Recruitment Cell, Northern Railway (RRC NR)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">28 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">ALP / Technician</span></div>
@@ -301,59 +309,59 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">Railway Recruitment Cell (RRC) Northern Railway has issued an important notice for candidates who appeared for the CBT under GDCE Notification No. 01/2023/GDCE for ALP and Technician posts held on 27.07.2026, 31.07.2026, and 07.08.2026. Due to discrepancies or mismatches found between the trade or examination group opted in the online application and what appeared during the CBT, an option for re-examination is being provided to identified candidates. Such candidates are required to submit their willingness or unwillingness through the online mode via the provided link by 12.11.2026. Candidates should carefully read the implications of opting for re-examination before submitting their consent.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who appeared for RRC Northern Railway ALP/Technician GDCE CBT on 27.07.2026, 31.07.2026, and 07.08.2026 and received communication regarding trade mismatch.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Initial CBT exam dates</span><span class="v" data-t="datesH0v">27 Jul 2026, 31 Jul 2026 &amp; 07 Aug 2026</span></div>
       <div class="r"><span data-t="datesH1l">Last date to submit consent/willingness</span><span class="v" data-t="datesH1v">12 Nov 2026</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">ALP / Technician</span><span class="v" data-t="vacH0v">Not specified · GDCE Notification No. 01/2023/GDCE</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Identified candidates</span><span class="v" data-t="eligH0v">Candidates who faced trade/examination group mismatch during the CBT held on 27.07.2026, 31.07.2026 &amp; 07.08.2026.</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Submission of willingness/unwillingness for re-examination by identified candidates</li><li data-t="selH1">Conduct of re-examination for willing candidates</li><li data-t="selH2">Further processing based on re-examination or previous examination marks as per consent rules</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Check your registered mobile number and email for the communication regarding the mismatch.</li><li data-t="howH1">Access the official link provided for submitting willingness/unwillingness.</li><li data-t="howH2">Submit your consent for re-examination online on or before 12.11.2026.</li></ol>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Failing to submit the consent form by 12.11.2026 if you wish to change your trade group through re-examination.</li><li data-t="mistH1">Submitting consent for re-examination and remaining absent, which results in losing the marks of the previous examination as well.</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is the RRC Northern Railway GDCE Re-examination Notice?</h3><p data-t="ea0">It is a notification issued for candidates who faced a mismatch in their trade or examination group during the computer-based test for ALP and Technician posts under GDCE Notification No. 01/2023/GDCE. Affected candidates are given a chance to opt for a re-examination by submitting their consent online.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Review of submitted willingness</li><li data-t="aftH1">Issuance of admit cards for the re-examination for willing candidates</li><li data-t="aftH2">Conduct of re-examination and final processing of results</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Consequence of non-submission</span><span class="v" data-t="extraH0v">Treated as not willing to appear for re-examination; previous exam marks will be considered.</span></div>
       <div class="r"><span data-t="extraH1l">Consequence of submission and absence</span><span class="v" data-t="extraH1v">If consent is given but the candidate remains absent, previous marks will also not be considered.</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://rrcnr.org/downloads/GDCE_Notice .pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rrcnr.org</span></a>
       <a class="r" href="https://rrcnr.org/" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">rrcnr.org</span></a>
       <a class="r" href="https://rrcnr.org/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rrcnr.org</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">What is the last date to submit consent for the RRC Northern Railway GDCE re-examination?</h3><p data-t="a0">The last date to submit the consent or willingness online is 12.11.2026.</p></div>
       <div class="qa"><h3 data-t="q1">Who is eligible to submit willingness for the re-examination?</h3><p data-t="a1">Only identified candidates who faced a mismatch between their opted trade in the online application and the trade reflected during the CBT held on 27.07.2026, 31.07.2026, and 07.08.2026 are eligible.</p></div>
       <div class="qa"><h3 data-t="q2">What happens if I do not submit my consent by 12.11.2026?</h3><p data-t="a2">If you do not submit your consent within the prescribed time, you will be treated as not willing to appear for re-examination, and your marks obtained in the earlier examination will be considered for further processing.</p></div>
@@ -361,11 +369,11 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 data-t="q4">How will I be informed about the re-examination process?</h3><p data-t="a4">Information regarding the identified candidates and the consent link is communicated through SMS and email at the mobile numbers and email addresses provided during application submission.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check your SMS and email for the direct link sent by RRC Northern Railway</li><li data-t="chkH1">Verify your original online application trade group details</li><li data-t="chkH2">Submit your consent online before the deadline of 12.11.2026</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/mppsc-assistant-professor-botany-exam-2024-objection-resolution/"><span data-t="rel0">MPPSC Assistant Professor Botany Exam 2024 Objection Resolution Notice</span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/uppsc-inspector-of-drugs-notice-2026-exam-pattern-and-syllabus-o/"><span data-t="rel1">UPPSC Inspector of Drugs Notice 2026 – Exam Pattern and Syllabus Out</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/rssb-computer-instructor-recruitment-2026-amended-notification-f/"><span data-t="rel2">RSSB Computer Instructor Recruitment 2026 – Amended Notification 3,951 Posts</span><span class="v g num">28 Oct 2026</span></a>
@@ -379,7 +387,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">आरआरसी नॉर्दर्न रेलवे एएलपी टेक्निशियन जीडीसीई पुनः परीक्षा नोटिस 2026 – सहमति लिंक</h2>
       <p class="lead">रेलवे भर्ती सेल (आरआरसी) नॉर्दर्न रेलवे ने ट्रेड बेमेल के कारण जीडीसीई अधिसूचना संख्या 01/2023/GDCE के तहत पहचाने गए उम्मीदवारों के लिए पुनः परीक्षा के लिए सहमति या असहमति के संबंध में एक नोटिस जारी किया है। पहचाने गए उम्मीदवारों को 12.11.2026 तक ऑनलाइन लिंक के माध्यम से अपनी सहमति जमा करनी होगी। योग्य उम्मीदवारों को एक अलग ईमेल और एसएमएस भेजा जाएगा।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >रेलवे भर्ती सेल, नॉर्दर्न रेलवे (आरआरसी एनआर)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >28 अक्तूबर 2026</span></div>
       <div class="r"><span >पद</span><span class="v" >सहायक लोको पायलट / तकनीशियन</span></div>
@@ -389,59 +397,59 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >पहचाने गए उम्मीदवारों द्वारा पुनः परीक्ष → इच्छुक उम्मीदवारों के लिए पुनः परीक्षा क → सहमति नियमों के अनुसार पुनः परीक्षा या प</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >रेलवे भर्ती सेल (आरआरसी) नॉर्दर्न रेलवे ने 27.07.2026, 31.07.2026 और 07.08.2026 को आयोजित एएलपी और तकनीशियन पदों के लिए जीडीसीई अधिसूचना संख्या 01/2023/GDCE के तहत सीबीटी में शामिल होने वाले उम्मीदवारों के लिए एक महत्वपूर्ण नोटिस जारी किया है। ऑनलाइन आवेदन में चुने गए ट्रेड या परीक्षा समूह और सीबीटी के दौरान प्रदर्शित ट्रेड के बीच बेमेल या विसंगतियों के कारण, पहचाने गए उम्मीदवारों को पुनः परीक्षा का विकल्प दिया जा रहा है। ऐसे उम्मीदवारों को 12.11.2026 तक दिए गए लिंक के माध्यम से ऑनलाइन मोड से अपनी सहमति या असहमति दर्ज करनी होगी। उम्मीदवारों को अपनी सहमति देने से पहले पुनः परीक्षा का विकल्प चुनने के परिणामों को ध्यान से पढ़ना चाहिए।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जो 27.07.2026, 31.07.2026 और 07.08.2026 को आरसीसी नॉर्दर्न रेलवे एएलपी/टेक्निशियन जीडीसीई सीबीटी में शामिल हुए थे और जिन्हें ट्रेड बेमेल के संबंध में सूचना मिली थी।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >प्रारंभिक सीबीटी परीक्षा तिथियां</span><span class="v" >27 जुलाई 2026, 31 जुलाई 2026 और 07 अगस्त 2026</span></div>
       <div class="r"><span >सहमति/इच्छा जमा करने की अंतिम तिथि</span><span class="v" >12 नवंबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >सहायक लोको पायलट / तकनीशियन</span><span class="v" >Not specified · जीडीसीई अधिसूचना संख्या 01/2023/GDCE</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >पहचाने गए उम्मीदवार</span><span class="v" >वे उम्मीदवार जिन्हें 27.07.2026, 31.07.2026 और 07.08.2026 को आयोजित सीबीटी के दौरान ट्रेड/परीक्षा समूह के बेमेल का सामना करना पड़ा।</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >पहचाने गए उम्मीदवारों द्वारा पुनः परीक्षा के लिए सहमति/असहमति प्रस्तुत करना</li><li >इच्छुक उम्मीदवारों के लिए पुनः परीक्षा का आयोजन</li><li >सहमति नियमों के अनुसार पुनः परीक्षा या पिछली परीक्षा के अंकों के आधार पर आगे की प्रक्रिया</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >बेमेल के संबंध में संचार के लिए अपना पंजीकृत मोबाइल नंबर और ईमेल देखें।</li><li >सहमति/असहमति जमा करने के लिए प्रदान किए गए आधिकारिक लिंक पर जाएं।</li><li >12.11.2026 को या उससे पहले ऑनलाइन मोड में पुनः परीक्षा के लिए अपनी सहमति दर्ज करें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >यदि आप पुनः परीक्षा के माध्यम से अपने ट्रेड ग्रुप को बदलना चाहते हैं तो 12.11.2026 तक सहमति फॉर्म जमा करने में विफल होना।</li><li >पुनः परीक्षा के लिए सहमति देना और अनुपस्थित रहना, जिसके परिणामस्वरूप पिछली परीक्षा के अंक भी समाप्त हो जाएंगे।</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >आरआरसी नॉर्दर्न रेलवे जीडीसीई पुनः परीक्षा नोटिस क्या है?</h3><p >यह जीडीसीई अधिसूचना संख्या 01/2023/GDCE के तहत एएलपी और तकनीशियन पदों के लिए कंप्यूटर आधारित परीक्षा के दौरान अपने ट्रेड या परीक्षा समूह में बेमेल का सामना करने वाले उम्मीदवारों के लिए जारी किया गया एक नोटिस है। प्रभावित उम्मीदवारों को ऑनलाइन अपनी सहमति जमा करके पुनः परीक्षा का विकल्प चुनने का मौका दिया जा रहा है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >प्रस्तुत सहमति की समीक्षा</li><li >इच्छुक उम्मीदवारों के लिए पुनः परीक्षा के प्रवेश पत्र जारी करना</li><li >पुनः परीक्षा का आयोजन और परिणामों की अंतिम प्रक्रिया</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >जमा न करने का परिणाम</span><span class="v" >पुनः परीक्षा के लिए अनिच्छुक माना जाएगा; पिछली परीक्षा के अंकों पर विचार किया जाएगा।</span></div>
       <div class="r"><span >सहमति देने और अनुपस्थित रहने का परिणाम</span><span class="v" >यदि सहमति दी जाती है लेकिन उम्मीदवार अनुपस्थित रहता है, तो पिछले अंकों पर भी विचार नहीं किया जाएगा।</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://rrcnr.org/downloads/GDCE_Notice .pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">rrcnr.org</span></a>
       <a class="r" href="https://rrcnr.org/" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">rrcnr.org</span></a>
       <a class="r" href="https://rrcnr.org/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">rrcnr.org</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >आरआरसी नॉर्दर्न रेलवे जीडीसीई पुनः परीक्षा के लिए सहमति जमा करने की अंतिम तिथि क्या है?</h3><p >सहमति या इच्छा ऑनलाइन जमा करने की अंतिम तिथि 12.11.2026 है।</p></div>
       <div class="qa"><h3 >पुनः परीक्षा के लिए सहमति देने के लिए कौन पात्र है?</h3><p >केवल वे पहचाने गए उम्मीदवार पात्र हैं जिन्हें 27.07.2026, 31.07.2026 और 07.08.2026 को आयोजित सीबीटी के दौरान ऑनलाइन आवेदन में चुने गए ट्रेड और प्रदर्शित ट्रेड के बीच बेमेल का सामना करना पड़ा था।</p></div>
       <div class="qa"><h3 >यदि मैं 12.11.2026 तक अपनी सहमति जमा नहीं करता हूँ तो क्या होगा?</h3><p >यदि आप निर्धारित समय के भीतर अपनी सहमति जमा नहीं करते हैं, तो आपको पुनः परीक्षा के लिए अनिच्छुक माना जाएगा, और आगे की प्रक्रिया के लिए आपकी पिछली परीक्षा में प्राप्त अंकों पर विचार किया जाएगा।</p></div>
@@ -449,7 +457,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 >मुझे पुनः परीक्षा प्रक्रिया के बारे में कैसे सूचित किया जाएगा?</h3><p >पहचाने गए उम्मीदवारों और सहमति लिंक के बारे में जानकारी आवेदन जमा करते समय दिए गए मोबाइल नंबरों और ईमेल पतों पर एसएमएस और ईमेल के माध्यम से दी जाती है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >आरआरसी नॉर्दर्न रेलवे द्वारा भेजे गए सीधे लिंक के लिए अपना एसएमएस और ईमेल जांचें</li><li >अपने मूल ऑनलाइन आवेदन ट्रेड ग्रुप विवरण को सत्यापित करें</li><li >12.11.2026 की समय सीमा से पहले ऑनलाइन अपनी सहमति दर्ज करें</li></ul>
     </section>
     </details>

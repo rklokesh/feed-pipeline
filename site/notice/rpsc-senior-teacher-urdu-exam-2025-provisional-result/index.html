@@ -20,7 +20,7 @@
 <title>RPSC Senior Teacher Urdu Result 2025 – Cut Off &amp; Provisional List | आरपीएससी वरिष्ठ अध्यापक उर्दू रिज़ल्ट 2025 – कट ऑफ और अनंतिम सूची</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Rajasthan Public Service Commission (RPSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">27 Oct 2026</span></div>
       <div class="r"><span data-t="gTot">Total vacancies</span><span class="v" data-t="gTotV">158 (Provisional list of 158 candidates released for document verification.)</span></div>
@@ -304,71 +312,71 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#notH" data-t="notH">Who cannot apply</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The Rajasthan Public Service Commission (RPSC) has published the provisional result and cut-off marks for the Senior Teacher (Sec. Edu.) Competitive Examination 2025 in Urdu subject. The written examination was conducted on 16 July and 17 July 2026. A total of 158 candidates have been provisionally included in the eligibility checking list. Candidates whose roll numbers are listed must fill out the detailed application form online via the SSO portal from 31 October 2026 to 6 November 2026.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who appeared in the RPSC Senior Teacher Urdu Exam 2025 held on 16 and 17 July 2026.</li></ul>
     </section>
     <section class="kv" id="notH" data-t-aria="notH">
-      <div class="h" data-t="notH">Who cannot apply</div>
+      <h2 class="h" data-t="notH">Who cannot apply</h2>
       <ul class="steps dots"><li data-t="notH0">36 candidates have been declared disqualified due to not filling options in more than 10 percent of questions in OMR sheets as per instructions.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Exam Date</span><span class="v" data-t="datesH0v">16 Jul 2026 &amp; 17 Jul 2026</span></div>
       <div class="r"><span data-t="datesH1l">Result Notice Date</span><span class="v" data-t="datesH1v">27 Oct 2026</span></div>
       <div class="r"><span data-t="datesH2l">Detailed Form Online Start Date</span><span class="v" data-t="datesH2v">31 Oct 2026</span></div>
       <div class="r"><span data-t="datesH3l">Detailed Form Last Date</span><span class="v" data-t="datesH3v">06 Nov 2026 (11:59 PM)</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Senior Teacher (Urdu) - Non-Scheduled Area</span><span class="v" data-t="vacH0v">158 (Provisional Candidates) · Provisional list of 158 candidates released for document verification.</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Educational Qualification</span><span class="v" data-t="eligH0v">As per service rules and advertisement dated 17 Jul 2025</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Written Examination (Paper I and Paper II)</li><li data-t="selH1">Provisional List for Eligibility Checking</li><li data-t="selH2">Online Detailed Application Form Submission</li><li data-t="selH3">Document Verification by Administrative Department (Secondary Education Department, Bikaner)</li><li data-t="selH4">Final Result and Recommendation for Appointment</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Log in to your SSO ID at the recruitment portal.</li><li data-t="howH1">Select &#x27;My Recruitment&#x27; and then &#x27;Detailed Form Cum Scrutiny&#x27;.</li><li data-t="howH2">Click on &#x27;Apply Now&#x27; for the Senior Teacher Urdu Exam 2025.</li><li data-t="howH3">Fill out the detailed online application form between 31 Oct 2026 and 06 Nov 2026.</li><li data-t="howH4">Take two printouts of the submitted detailed application form and keep them safely along with all original documents and self-attested copies for document verification.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Two printouts of the detailed application form</li><li data-t="docH1">All original documents</li><li data-t="docH2">Self-attested copies of all documents</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Do not miss the deadline of 06 Nov 2026 for filling the detailed application form.</li><li data-t="mistH1">Ensure all entries in the OMR sheet and application comply with guidelines to avoid disqualification.</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is the RPSC Senior Teacher Urdu Provisional List?</h3><p data-t="ea0">It is a list of candidates shortlisted provisionally on the basis of written exam marks for eligibility checking and document verification, not the final selection list.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Document verification will be conducted by the Secondary Education Department, Bikaner.</li><li data-t="aftH1">Final selection list will be issued by RPSC after document verification.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Cut Off General (UR)</span><span class="v" data-t="extraH0v">255.30</span></div>
       <div class="r"><span data-t="extraH1l">Cut Off OBC</span><span class="v" data-t="extraH1v">230.30</span></div>
       <div class="r"><span data-t="extraH2l">Cut Off EWS</span><span class="v" data-t="extraH2v">217.49</span></div>
       <div class="r"><span data-t="extraH3l">Cut Off SC / ST / MBC</span><span class="v" data-t="extraH3v">All Candidates who obtained minimum qualifying marks</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://rpsc.rajasthan.gov.in/Static/Result/3274CA3402EA44DEB703B253B96F3F5F.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rpsc.rajasthan.gov.in</span></a>
       <a class="r" href="https://sso.rajasthan.gov.in/" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">sso.rajasthan.gov.in</span></a>
       <a class="r" href="https://rpsc.rajasthan.gov.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rpsc.rajasthan.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When was the RPSC Senior Teacher Urdu Exam 2025 held?</h3><p data-t="a0">The exam was held on 16 July and 17 July 2026.</p></div>
       <div class="qa"><h3 data-t="q1">How many candidates are included in the provisional list?</h3><p data-t="a1">A total of 158 candidates are included in the provisional list for the non-scheduled area.</p></div>
       <div class="qa"><h3 data-t="q2">What is the last date to fill the detailed application form?</h3><p data-t="a2">The last date to fill the detailed application form is 06 November 2026 up to 11:59 PM.</p></div>
@@ -379,11 +387,11 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 data-t="q7">Why were 36 candidates declared disqualified?</h3><p data-t="a7">36 candidates were declared disqualified for not filling any option in more than 10 percent of questions in the OMR sheet.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check your roll number in the provisional list.</li><li data-t="chkH1">Log in to SSO portal and fill the detailed form between 31 Oct and 06 Nov 2026.</li><li data-t="chkH2">Take 2 printouts of the submitted form and arrange original documents.</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/rpsc-senior-teacher-punjabi-result-2025-cut-off-scrutiny-list/"><span data-t="rel0">RPSC Senior Teacher Punjabi Result 2025 – Cut Off &amp; Scrutiny List</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/rpsc-senior-teacher-gujarati-result-2025-exam-preamble-out/"><span data-t="rel1">RPSC Senior Teacher Gujarati Result 2025 – Exam Preamble Out</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/rpsc-senior-teacher-mathematics-result-2025-provisional-list/"><span data-t="rel2">RPSC Senior Teacher Mathematics Result 2025 – Provisional List</span><span class="v g num">28 Oct 2026</span></a>
@@ -397,7 +405,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">आरपीएससी वरिष्ठ अध्यापक उर्दू रिज़ल्ट 2025 – कट ऑफ और अनंतिम सूची</h2>
       <p class="lead">राजस्थान लोक सेवा आयोग ने वरिष्ठ अध्यापक (उर्दू) प्रतियोगी परीक्षा 2025 के पात्रता जांच हेतु अनंतिम परिणाम और कट-ऑफ अंक जारी कर दिए हैं। चयनित अभ्यर्थियों को 31 अक्टूबर 2026 से 06 नवंबर 2026 तक ऑनलाइन विस्तृत आवेदन पत्र भरना होगा।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >राजस्थान लोक सेवा आयोग</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >27 अक्तूबर 2026</span></div>
       <div class="r"><span >कुल पद</span><span class="v" >158 (दस्तावेज सत्यापन हेतु 158 अभ्यर्थियों की अनंतिम सूची जारी।)</span></div>
@@ -410,71 +418,71 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >लिखित परीक्षा → पात्रता जांच हेतु अनंतिम सूची → ऑनलाइन विस्तृत आवेदन पत्र जमा करना → प्रशासनिक विभाग → अंतिम परिणाम और नियुक्ति हेतु अनुशंसा</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >राजस्थान लोक सेवा आयोग (आरपीएससी) ने माध्यमिक शिक्षा विभाग के लिए वरिष्ठ अध्यापक (उर्दू) प्रतियोगी परीक्षा 2025 का अनंतिम परिणाम और कट-ऑफ अंक जारी कर दिए हैं। लिखित परीक्षा 16 जुलाई और 17 जुलाई 2026 को आयोजित की गई थी। पात्रता जांच के लिए अनंतिम सूची में कुल 158 अभ्यर्थियों को शामिल किया गया है। जिन अभ्यर्थियों के रोल नंबर सूची में हैं, उन्हें 31 अक्टूबर 2026 से 6 नवंबर 2026 तक एसएसओ पोर्टल के माध्यम से ऑनलाइन विस्तृत आवेदन पत्र भरना होगा।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >वे अभ्यर्थी जिन्होंने 16 और 17 जुलाई 2026 को आयोजित आरपीएससी वरिष्ठ अध्यापक उर्दू परीक्षा 2025 में भाग लिया था।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >कौन आवेदन नहीं कर सकता</div>
+      <h2 class="h" >कौन आवेदन नहीं कर सकता</h2>
       <ul class="steps dots"><li >निर्देशों के अनुसार ओएमआर शीट में 10 प्रतिशत से अधिक प्रश्नों में कोई विकल्प नहीं भरने के कारण 36 अभ्यर्थियों को अयोग्य घोषित किया गया है।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >परीक्षा तिथि</span><span class="v" >16 जुलाई 2026 और 17 जुलाई 2026</span></div>
       <div class="r"><span >परिणाम सूचना तिथि</span><span class="v" >27 अक्टूबर 2026</span></div>
       <div class="r"><span >विस्तृत आवेदन ऑनलाइन प्रारंभ तिथि</span><span class="v" >31 अक्टूबर 2026</span></div>
       <div class="r"><span >विस्तृत आवेदन की अंतिम तिथि</span><span class="v" >06 नवंबर 2026 (रात्रि 11:59)</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >वरिष्ठ अध्यापक (उर्दू) - गैर अनुसूचित क्षेत्र</span><span class="v" >158 (Provisional Candidates) · दस्तावेज सत्यापन हेतु 158 अभ्यर्थियों की अनंतिम सूची जारी।</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >शैक्षणिक योग्यता</span><span class="v" >सेवा नियमों और विज्ञापन दिनांक 17 जुलाई 2025 के अनुसार</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >लिखित परीक्षा (प्रथम और द्वितीय प्रश्न पत्र)</li><li >पात्रता जांच हेतु अनंतिम सूची</li><li >ऑनलाइन विस्तृत आवेदन पत्र जमा करना</li><li >प्रशासनिक विभाग (माध्यमिक शिक्षा विभाग, बीकानेर) द्वारा दस्तावेज सत्यापन</li><li >अंतिम परिणाम और नियुक्ति हेतु अनुशंसा</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >अपनी एसएसओ आईडी के माध्यम से रिक्रूटमेंट पोर्टल पर लॉगिन करें।</li><li >माई रिक्रूटमेंट के बाद डिटेल्ड फॉर्म कम स्क्रूटनी का चयन करें।</li><li >वरिष्ठ अध्यापक उर्दू परीक्षा 2025 के लिए अप्लाई नाउ का चयन करें।</li><li >31 अक्टूबर 2026 से 06 नवंबर 2026 के बीच ऑनलाइन विस्तृत आवेदन पत्र भरें।</li><li >जमा किए गए विस्तृत आवेदन पत्र की दो प्रतियों में प्रिंट निकालकर सुरक्षित रखें और दस्तावेज सत्यापन के समय सभी मूल दस्तावेजों और स्व-सत्यापित प्रतियों के साथ उपस्थित हों।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >विस्तृत आवेदन पत्र की दो प्रतियां</li><li >सभी मूल दस्तावेज</li><li >सभी दस्तावेजों की स्व-सत्यापित प्रतियां</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >विस्तृत आवेदन पत्र भरने की 06 नवंबर 2026 की समय सीमा न चूकें।</li><li >अयोग्यता से बचने के लिए सुनिश्चित करें कि ओएमआर शीट और आवेदन में सभी प्रविष्टियां दिशानिर्देशों के अनुरूप हों।</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >आरपीएससी वरिष्ठ अध्यापक उर्दू अनंतिम सूची क्या है?</h3><p >यह पात्रता जांच और दस्तावेज सत्यापन के लिए लिखित परीक्षा के अंकों के आधार पर अनंतिम रूप से शॉर्टलिस्ट किए गए अभ्यर्थियों की सूची है, न कि अंतिम चयन सूची।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >दस्तावेज सत्यापन माध्यमिक शिक्षा विभाग, बीकानेर द्वारा किया जाएगा।</li><li >दस्तावेज सत्यापन के बाद आरपीएससी द्वारा अंतिम चयन सूची जारी की जाएगी।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >कट ऑफ सामान्य (अनारक्षित)</span><span class="v" >255.30</span></div>
       <div class="r"><span >कट ऑफ ओबीसी</span><span class="v" >230.30</span></div>
       <div class="r"><span >कट ऑफ ईडब्ल्यूएस</span><span class="v" >217.49</span></div>
       <div class="r"><span >कट ऑफ एससी / एसटी / एमबीसी</span><span class="v" >न्यूनतम अर्हक अंक प्राप्त करने वाले सभी अभ्यर्थी</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://rpsc.rajasthan.gov.in/Static/Result/3274CA3402EA44DEB703B253B96F3F5F.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">rpsc.rajasthan.gov.in</span></a>
       <a class="r" href="https://sso.rajasthan.gov.in/" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">sso.rajasthan.gov.in</span></a>
       <a class="r" href="https://rpsc.rajasthan.gov.in/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">rpsc.rajasthan.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >आरपीएससी वरिष्ठ अध्यापक उर्दू परीक्षा 2025 कब आयोजित की गई थी?</h3><p >परीक्षा 16 जुलाई और 17 जुलाई 2026 को आयोजित की गई थी।</p></div>
       <div class="qa"><h3 >अनंतिम सूची में कुल कितने अभ्यर्थी शामिल हैं?</h3><p >गैर-अनुसूचित क्षेत्र के लिए अनंतिम सूची में कुल 158 अभ्यर्थी शामिल हैं।</p></div>
       <div class="qa"><h3 >विस्तृत आवेदन पत्र भरने की अंतिम तिथि क्या है?</h3><p >विस्तृत आवेदन पत्र भरने की अंतिम तिथि 06 नवंबर 2026 रात्रि 11:59 बजे तक है।</p></div>
@@ -485,7 +493,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 >36 अभ्यर्थियों को अयोग्य क्यों घोषित किया गया?</h3><p >ओएमआर शीट में 10 प्रतिशत से अधिक प्रश्नों में कोई विकल्प नहीं भरने के कारण 36 अभ्यर्थियों को अयोग्य घोषित किया गया।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >अनंतिम सूची में अपना रोल नंबर जांचें।</li><li >एसएसओ पोर्टल पर लॉगिन करें और 31 अक्टूबर से 06 नवंबर 2026 के बीच विस्तृत फॉर्म भरें।</li><li >जमा किए गए फॉर्म के 2 प्रिंटआउट लें और मूल दस्तावेज व्यवस्थित करें।</li></ul>
     </section>
     </details>

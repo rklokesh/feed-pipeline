@@ -20,7 +20,7 @@
 <title>Western Railway Departmental CBT Call Letter 2026 | पश्चिमी रेलवे विभागीय सीबीटी प्रवेश पत्र 2026</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Railway Recruitment Cell, Western Railway (RRC WR)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">27 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Departmental selection posts (including Dresser Gr-III, Junior Clerk cum Typist, Junior Engineer)</span></div>
@@ -301,72 +309,72 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">Railway Recruitment Cell, Western Railway (RRC WR) has released the call letter for the departmental computer-based test scheduled for 31st October 2026. Eligible departmental employees whose names appear in the list can download their admit cards using their Unique ID and HRMS ID from the official portal. Candidates must affix a recent passport-size photograph, get it attested by their Unit In-charge or Senior Supervisor, and bring the call letter to the exam venue. Read all instructions carefully before appearing for the test.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Western Railway departmental employees scheduled to appear for the CBT on 31 Oct 2026</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Exam date</span><span class="v" data-t="datesH0v">31 Oct 2026</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Departmental Selection Posts</span><span class="v" data-t="vacH0v">As per notification · Includes posts such as Dresser Gr-III, Junior Clerk cum Typist, and Junior Engineer (AC-TRS)</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Eligibility</span><span class="v" data-t="eligH0v">Serving departmental employees of Western Railway included in the list</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Computer Based Test (CBT)</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Click on the official call letter download link provided on the portal.</li><li data-t="howH1">Log in using your Unique ID as the Login ID and HRMS ID as the password.</li><li data-t="howH2">Download and print your CBT call letter.</li><li data-t="howH3">Affix a recent passport-size photograph on the designated space of the call letter.</li><li data-t="howH4">Get the photograph and candidate foil signed and stamped by your Unit In-charge or Senior Supervisor.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Printed CBT Call Letter with a recent passport-size photograph</li><li data-t="docH1">Signature and seal/stamp of Unit In-charge or Senior Supervisor on the photograph and candidate foil</li><li data-t="docH2">Valid photo identity proof</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Failing to get the photograph attested and signed by the Unit In-charge or Senior Supervisor</li><li data-t="mistH1">Entering incorrect Unique ID or HRMS ID during login</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is the Western Railway Departmental CBT?</h3><p data-t="ea0">It is a computer-based examination conducted by the Railway Recruitment Cell, Western Railway, for departmental employees appearing for selection to various posts such as Junior Clerk cum Typist, Dresser Gr-III, and Junior Engineer.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Appear for the Computer Based Test on 31st October 2026 as per instructions.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Issuing authority</span><span class="v" data-t="extraH0v">Chairman, Railway Recruitment Cell, Western Railway, Mumbai</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://www.rrc-wr.com/rrwc/Files/18a7b057-f718-45ae-83b6-a4744b4ab148.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rrc-wr.com</span></a>
       <a class="r" href="https://cdn.digialm.com/EForms/configuredHtml/33166/103145/pdoDypEZbI0DY3lxWU/login.html" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">cdn.digialm.com</span></a>
       <a class="r" href="https://www.rrc-wr.com/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rrc-wr.com</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When is the Western Railway Departmental CBT scheduled?</h3><p data-t="a0">The CBT is scheduled to be held on 31st October 2026.</p></div>
       <div class="qa"><h3 data-t="q1">How can I download my call letter?</h3><p data-t="a1">You can download your call letter from the official link by logging in with your Unique ID as the Login ID and HRMS ID as the password.</p></div>
       <div class="qa"><h3 data-t="q2">What credentials are required to log in to download the call letter?</h3><p data-t="a2">Your Unique ID serves as the Login ID and your HRMS ID serves as the Password.</p></div>
       <div class="qa"><h3 data-t="q3">What needs to be done after downloading the call letter?</h3><p data-t="a3">You must affix a recent passport-size photograph on the call letter and obtain the signature and seal/stamp of your Unit In-charge or Senior Supervisor.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Download the call letter using your Unique ID and HRMS ID</li><li data-t="chkH1">Affix a passport photograph and obtain attestation from your supervisor</li><li data-t="chkH2">Check exam date, time, and venue details on the call letter</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/western-railway-alp-and-tech-iii-cbt-rescheduling-notice-2026/"><span data-t="rel0">RRC Western Railway ALP Tech III Exam Date 2026 – CBT Rescheduled</span><span class="v g num">23 Oct 2026</span></a>
       <a class="r" href="/notice/western-railway-sports-quota-2026-volleyball-amendment/"><span data-t="rel1">RRC Western Railway Sports Quota Volleyball Amendment 2026</span><span class="v g num">3 Sep 2026</span></a>
       <a class="r" href="/notice/rrc-western-railway-sports-quota-recruitment-2026/"><span data-t="rel2">RRC Western Railway Sports Quota Recruitment 2026</span><span class="v g num">27 Aug 2026</span></a>
@@ -380,7 +388,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">पश्चिमी रेलवे विभागीय सीबीटी प्रवेश पत्र 2026</h2>
       <p class="lead">31 अक्टूबर 2026 को निर्धारित पश्चिमी रेलवे विभागीय कंप्यूटर आधारित परीक्षा के लिए अपनी विशिष्ट आईडी और मानव संसाधन प्रबंधन प्रणाली आईडी का उपयोग करके प्रवेश पत्र डाउनलोड करें। निर्देशानुसार प्रवेश पत्र पर हस्ताक्षर किया हुआ फोटो चिपकाएं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >रेलवे भर्ती प्रकोष्ठ, पश्चिमी रेलवे</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >27 अक्तूबर 2026</span></div>
       <div class="r"><span >पद</span><span class="v" >विभागीय चयन पद (ड्रेसर ग्रेड-III, जूनियर क्लर्क कम टाइपिस्ट, जूनियर इंजीनियर सहित)</span></div>
@@ -390,68 +398,68 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >कंप्यूटर आधारित परीक्षा</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >रेलवे भर्ती प्रकोष्ठ, पश्चिमी रेलवे ने 31 अक्टूबर 2026 को निर्धारित विभागीय कंप्यूटर आधारित परीक्षा के लिए प्रवेश पत्र जारी कर दिया है। जिन पात्र विभागीय कर्मचारियों के नाम सूची में हैं, वे अपने विशिष्ट आईडी और मानव संसाधन प्रबंधन प्रणाली आईडी का उपयोग करके आधिकारिक पोर्टल से अपना प्रवेश पत्र डाउनलोड कर सकते हैं। उम्मीदवारों को हाल ही में खींचा गया पासपोर्ट साइज फोटो चिपकाना होगा, उसे अपनी यूनिट के प्रभारी या वरिष्ठ पर्यवेक्षक से सत्यापित कराना होगा और परीक्षा केंद्र पर प्रवेश पत्र लाना होगा। परीक्षा में बैठने से पहले सभी निर्देशों को ध्यान से पढ़ें।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >पश्चिमी रेलवे के विभागीय कर्मचारी जो 31 अक्टूबर 2026 को सीबीटी में बैठने के लिए निर्धारित हैं</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >परीक्षा तिथि</span><span class="v" >31 अक्टूबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >विभागीय चयन पद</span><span class="v" >As per notification · ड्रेसर ग्रेड-III, जूनियर क्लर्क कम टाइपिस्ट और जूनियर इंजीनियर (एसी-टीआरएस) जैसे पद शामिल हैं</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >पात्रता</span><span class="v" >सूची में शामिल पश्चिमी रेलवे के सेवारत विभागीय कर्मचारी</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >कंप्यूटर आधारित परीक्षा</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >पोर्टल पर दिए गए आधिकारिक प्रवेश पत्र डाउनलोड लिंक पर क्लिक करें।</li><li >लॉगिन आईडी के रूप में अपनी विशिष्ट आईडी और पासवर्ड के रूप में मानव संसाधन प्रबंधन प्रणाली आईडी का उपयोग करके लॉगिन करें।</li><li >अपना सीबीटी प्रवेश पत्र डाउनलोड करें और प्रिंट करें।</li><li >प्रवेश पत्र के निर्धारित स्थान पर हाल ही का पासपोर्ट साइज फोटो चिपकाएं।</li><li >फोटो और उम्मीदवार के हिस्से पर अपनी यूनिट के प्रभारी या वरिष्ठ पर्यवेक्षक के हस्ताक्षर और मुहर लगवाएं।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >हाल ही के पासपोर्ट साइज फोटो के साथ मुद्रित सीबीटी प्रवेश पत्र</li><li >फोटो और उम्मीदवार के हिस्से पर यूनिट प्रभारी या वरिष्ठ पर्यवेक्षक के हस्ताक्षर और मुहर</li><li >वैध फोटो पहचान प्रमाण</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >यूनिट प्रभारी या वरिष्ठ पर्यवेक्षक से फोटो को सत्यापित और हस्ताक्षरित न कराना</li><li >लॉगिन के समय गलत विशिष्ट आईडी या मानव संसाधन प्रबंधन प्रणाली आईडी दर्ज करना</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >पश्चिमी रेलवे विभागीय सीबीटी क्या है?</h3><p >यह रेलवे भर्ती प्रकोष्ठ, पश्चिमी रेलवे द्वारा जूनियर क्लर्क कम टाइपिस्ट, ड्रेसर ग्रेड-III और जूनियर इंजीनियर जैसे विभिन्न पदों पर चयन के लिए उपस्थित होने वाले विभागीय कर्मचारियों के लिए आयोजित एक कंप्यूटर आधारित परीक्षा है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >निर्देशों के अनुसार 31 अक्टूबर 2026 को कंप्यूटर आधारित परीक्षा में शामिल हों।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >जारी करने वाला प्राधिकारी</span><span class="v" >अध्यक्ष, रेलवे भर्ती प्रकोष्ठ, पश्चिमी रेलवे, मुंबई</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://www.rrc-wr.com/rrwc/Files/18a7b057-f718-45ae-83b6-a4744b4ab148.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">rrc-wr.com</span></a>
       <a class="r" href="https://cdn.digialm.com/EForms/configuredHtml/33166/103145/pdoDypEZbI0DY3lxWU/login.html" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">cdn.digialm.com</span></a>
       <a class="r" href="https://www.rrc-wr.com/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">rrc-wr.com</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >पश्चिमी रेलवे विभागीय सीबीटी कब निर्धारित है?</h3><p >सीबीटी 31 अक्टूबर 2026 को आयोजित होने के लिए निर्धारित है।</p></div>
       <div class="qa"><h3 >मैं अपना प्रवेश पत्र कैसे डाउनलोड कर सकता हूं?</h3><p >आप अपनी विशिष्ट आईडी को लॉगिन आईडी और मानव संसाधन प्रबंधन प्रणाली आईडी को पासवर्ड के रूप में उपयोग करके आधिकारिक लिंक से अपना प्रवेश पत्र डाउनलोड कर सकते हैं।</p></div>
       <div class="qa"><h3 >प्रवेश पत्र डाउनलोड करने के लिए लॉगिन करने के लिए किन विवरणों की आवश्यकता होती है?</h3><p >आपकी विशिष्ट आईडी लॉगिन आईडी के रूप में और आपकी मानव संसाधन प्रबंधन प्रणाली आईडी पासवर्ड के रूप में काम करती है।</p></div>
       <div class="qa"><h3 >प्रवेश पत्र डाउनलोड करने के बाद क्या करना होगा?</h3><p >आपको प्रवेश पत्र पर हाल ही का पासपोर्ट साइज फोटो चिपकाना होगा और अपने यूनिट प्रभारी या वरिष्ठ पर्यवेक्षक के हस्ताक्षर और मुहर प्राप्त करनी होगी।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >अपनी विशिष्ट आईडी और मानव संसाधन प्रबंधन प्रणाली आईडी का उपयोग करके प्रवेश पत्र डाउनलोड करें</li><li >पासपोर्ट फोटो चिपकाएं और अपने पर्यवेक्षक से सत्यापन प्राप्त करें</li><li >प्रवेश पत्र पर परीक्षा की तारीख, समय और केंद्र का विवरण जांचें</li></ul>
     </section>
     </details>

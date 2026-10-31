@@ -20,7 +20,7 @@
 <title>Post Graduate Govt Jobs 2026: Latest Vacancy, Notification, Last Date | SarkariChart</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preload" as="image" href="/new-en.png">
 <meta name="theme-color" content="#FFFFFF">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -116,7 +116,7 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 
 .row { display: grid; grid-template-columns: 7.25rem minmax(0, 1fr) 7.25rem 5.75rem 7.5rem 4.25rem; gap: 0 16px; align-items: baseline; }
 main { margin-top: 36px; flex: 1; }
-.head { color: var(--grey); background: var(--soft); padding: 7px 8px; border-bottom: 1px solid color-mix(in srgb, var(--ink) 28%, var(--page)); }
+.head { color: color-mix(in srgb, var(--grey) 80%, var(--ink)); background: var(--soft); padding: 7px 8px; border-bottom: 1px solid color-mix(in srgb, var(--ink) 28%, var(--page)); }
 .fbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: -10px 0 26px; }
 .fbar .chip { display: inline-flex; align-items: stretch; border: 1px solid var(--line); border-radius: 8px; background: var(--page); box-shadow: 0 1px 2px rgba(0,0,0,.04); overflow: hidden; }
 .fbar .chip label { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; cursor: pointer; position: relative; }
@@ -284,6 +284,13 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
 .tabs .siren img { width: 16px; height: 16px; display: block; }
 footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-left: 6px; vertical-align: -6px; }
 @media (prefers-reduced-motion: reduce) { footer .pref .hand { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -298,7 +305,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
 <div class="sheet">
   <header class="top">
     <span class="g" data-t="tagline">Govt jobs, exams, results</span>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -607,12 +614,14 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   const isNew = i => !i.quiet && (i.posted === N_TODAY || i.posted === N_YDAY);
   const title = i => lang === "hi" ? i.hi : i.title;
   const org = i => lang === "hi" ? (ORG_HI[i.org] || i.org) : i.org;
-  const fmtText = iso => new Date(iso + "T00:00:00").toLocaleDateString(t("locale"), { day: "numeric", month: "short" });
+  const DF = {};   // date formatters are slow to create; make each one once
+  const monFmt = () => DF["m" + t("locale")] || (DF["m" + t("locale")] = new Intl.DateTimeFormat(t("locale"), { month: "short" }));
+  const fmtText = iso => (DF["d" + t("locale")] || (DF["d" + t("locale")] = new Intl.DateTimeFormat(t("locale"), { day: "numeric", month: "short" }))).format(new Date(iso + "T00:00:00"));
   // Dates line up: the day number sits in a fixed 2-digit slot, so the months form a straight column.
   const fmt = iso => {
     const d = new Date(iso + "T00:00:00");
     const day = d.getDate();
-    const mon = d.toLocaleDateString(t("locale"), { month: "short" });
+    const mon = monFmt().format(d);
     return `<span class="dd">${day}</span> ${mon}`;
   };
   const left = iso => Math.ceil((new Date(iso + "T23:59:59") - TODAY) / 864e5);
@@ -638,7 +647,8 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   const HUBS = /*HUBS:START*/[{"slug": "up-govt-jobs", "en": "UP", "hi": "यूपी", "kind": "state", "words": ["up", "यूपी", "up"]}, {"slug": "bihar-govt-jobs", "en": "Bihar", "hi": "बिहार", "kind": "state", "words": ["bihar", "बिहार", "bihar"]}, {"slug": "rajasthan-govt-jobs", "en": "Rajasthan", "hi": "राजस्थान", "kind": "state", "words": ["rajasthan", "राजस्थान", "rajasthan"]}, {"slug": "mp-govt-jobs", "en": "MP", "hi": "एमपी", "kind": "state", "words": ["mp", "एमपी", "mp"]}, {"slug": "haryana-govt-jobs", "en": "Haryana", "hi": "हरियाणा", "kind": "state", "words": ["haryana", "हरियाणा", "haryana"]}, {"slug": "delhi-govt-jobs", "en": "Delhi", "hi": "दिल्ली", "kind": "state", "words": ["delhi", "दिल्ली", "delhi"]}, {"slug": "uttarakhand-govt-jobs", "en": "Uttarakhand", "hi": "उत्तराखंड", "kind": "state", "words": ["uttarakhand", "उत्तराखंड", "uttarakhand"]}, {"slug": "west-bengal-govt-jobs", "en": "West Bengal", "hi": "पश्चिम बंगाल", "kind": "state", "words": ["west bengal", "पश्चिम बंगाल", "west bengal"]}, {"slug": "maharashtra-govt-jobs", "en": "Maharashtra", "hi": "महाराष्ट्र", "kind": "state", "words": ["maharashtra", "महाराष्ट्र", "maharashtra"]}, {"slug": "tamil-nadu-govt-jobs", "en": "Tamil Nadu", "hi": "तमिलनाडु", "kind": "state", "words": ["tamil nadu", "तमिलनाडु", "tamil nadu"]}, {"slug": "10th-pass-govt-jobs", "en": "10th Pass", "hi": "10वीं पास", "kind": "qual", "words": ["10th", "10 pass", "10th pass", "matric", "high school", "10वीं", "हाईस्कूल"]}, {"slug": "12th-pass-govt-jobs", "en": "12th Pass", "hi": "12वीं पास", "kind": "qual", "words": ["12th", "12 pass", "12th pass", "inter", "intermediate", "12वीं", "इंटर"]}, {"slug": "iti-govt-jobs", "en": "ITI", "hi": "आईटीआई", "kind": "qual", "words": ["iti", "आईटीआई"]}, {"slug": "diploma-govt-jobs", "en": "Diploma", "hi": "डिप्लोमा", "kind": "qual", "words": ["diploma", "polytechnic", "डिप्लोमा"]}, {"slug": "graduate-govt-jobs", "en": "Graduate", "hi": "स्नातक", "kind": "qual", "words": ["graduate", "graduation", "degree", "ba", "bsc", "bcom", "स्नातक", "ग्रेजुएट"]}, {"slug": "post-graduate-govt-jobs", "en": "Post Graduate", "hi": "स्नातकोत्तर", "kind": "qual", "words": ["post graduate", "pg", "postgraduate", "ma", "msc", "mba", "स्नातकोत्तर"]}]/*HUBS:END*/;
   let cat = "all", q = "";
   // search matches English and Hindi words alike, whichever language is showing
-  const words = i => [i.title, i.hi, i.org, ORG_HI[i.org] || "", i.type, T.hi[i.type], i.tags || ""].join(" ").toLowerCase();
+  const WORDS = new Map();   // built once per notice: search runs on every key press
+  const words = i => { let w = WORDS.get(i); if (w === undefined) WORDS.set(i, w = [i.title, i.hi, i.org, ORG_HI[i.org] || "", i.type, T.hi[i.type], i.tags || ""].join(" ").toLowerCase()); return w; };
 
   // How people actually type: abbreviations, nicknames and Hindi spellings point to the same notices.
   const SYN = [
@@ -913,7 +923,9 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   // actually have notices for right now (so typing the hint always finds something).
   const POPULAR = [["SSC GD", "एसएससी जीडी"], ["UP Police", "यूपी पुलिस"], ["Railway", "रेलवे"], ["SSC CGL", "एसएससी सीजीएल"],
     ["Bihar Police", "बिहार पुलिस"], ["Bank", "बैंक"], ["CTET", "सीटेट"], ["Agniveer", "अग्निवीर"], ["Teacher", "शिक्षक"], ["UPSC", "यूपीएससी"]];
-  const phWords = () => {
+  let phCache = null, phLang = "";
+  const phWords = () => { if (phCache && phLang === lang) return phCache; phLang = lang; return phCache = phWords0(); };
+  const phWords0 = () => {
     const today = new Date().toISOString().slice(0, 10);
     const jobs = ITEMS.filter(i => live(i) && !i.quiet && i.type === "Job" && (!i.last || i.last >= today))
       .sort((a, b) => b.posted.localeCompare(a.posted) || pubTime(b) - pubTime(a)).slice(0, 4).map(shortName);

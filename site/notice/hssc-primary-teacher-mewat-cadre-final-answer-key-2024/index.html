@@ -20,7 +20,7 @@
 <title>HSSC Primary Teacher Mewat Cadre Final Answer Key 2024 | हरियाणा कर्मचारी चयन आयोग प्राथमिक शिक्षक मेवात संवर्ग अंतिम उत्तर कुंजी 2024</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Haryana Staff Selection Commission (HSSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">10 Sep 2026</span></div>
       <div class="r"><span data-t="r0l">Post Name</span><span class="v" data-t="r0v">Primary Teacher (Mewat Cadre)</span></div>
@@ -302,59 +310,59 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The Haryana Staff Selection Commission (HSSC) has published the final answer key for the written examination held for the post of Primary Teacher (Mewat Cadre) against Advertisement Number 05/2024, Category Number 1. Candidates who participated in the examination conducted by the Elementary Education Department, Haryana can now view the official final answer keys. Applicants should visit the official HSSC website to access their evaluated responses and check the answers.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who appeared for the HSSC Primary Teacher Mewat Cadre written exam under Advt. No. 05/2024.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Notice Date</span><span class="v" data-t="datesH0v">10 Sep 2026</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Written Examination</li><li data-t="selH1">Final Answer Key</li><li data-t="selH2">Final Result</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Go to the official website of HSSC at www.hssc.gov.in.</li><li data-t="howH1">Navigate to the public notice section or click on the link for the Final Answer Key for Primary Teacher (Mewat Cadre) Advt. No. 05/2024 Cat. No. 1.</li><li data-t="howH2">Download the final answer key PDF and check your answers.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Registration details or Roll Number if required to log in on the portal</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Do not rely on unofficial answer keys circulating on social media.</li><li data-t="mistH1">Ensure you check the correct category and advertisement number before viewing the key.</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is the HSSC Primary Teacher Mewat Cadre Final Answer Key?</h3><p data-t="ea0">It is the officially released final list of correct answers by the Haryana Staff Selection Commission for the written examination conducted under Advt. No. 05/2024, which candidates can use to evaluate their performance.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Based on the final answer key, the commission will prepare and declare the final result of the examination.</li></ol>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a0-89ede0820007/publicNotice" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">hssc.gov.in</span></a>
       <a class="r" href="https://hssc.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">hssc.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">Has the HSSC Primary Teacher Mewat Cadre Final Answer Key 2024 been released?</h3><p data-t="a0">Yes, the Haryana Staff Selection Commission has released the final answer key on 10 September 2026.</p></div>
       <div class="qa"><h3 data-t="q1">Where can I download the HSSC Primary Teacher Final Answer Key?</h3><p data-t="a1">You can download it from the official website of HSSC at www.hssc.gov.in.</p></div>
       <div class="qa"><h3 data-t="q2">What is the Advertisement Number for this recruitment?</h3><p data-t="a2">The advertisement number is Advt. No. 05/2024, Cat. No. 1.</p></div>
       <div class="qa"><h3 data-t="q3">Which department conducted this recruitment?</h3><p data-t="a3">The recruitment is for the Elementary Education Department, Haryana.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Keep your exam details ready.</li><li data-t="chkH1">Visit the official HSSC website.</li><li data-t="chkH2">Download the final answer key PDF.</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/hssc-primary-teacher-prt-advt-5-2024-final-answer-key/"><span data-t="rel0">HSSC PRT Advt 5/2024 Final Answer Key Released</span><span class="v g num">10 Sep 2026</span></a>
       <a class="r" href="/notice/hssc-group-d-cet-advt-05-2026-application-date-extension/"><span data-t="rel1">HSSC Group-D CET Recruitment 2026 – Last Date Extended to 05 Jul</span><span class="v g num">3 Jul 2026</span></a>
       <a class="r" href="/notice/hssc-group-c-cet-phase-ii-recruitment-2026/"><span data-t="rel2">HSSC Group C Recruitment 2026 – Apply Online for CET Phase 2 Posts</span><span class="v g num">22 Jun 2026</span></a>
@@ -368,7 +376,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">हरियाणा कर्मचारी चयन आयोग प्राथमिक शिक्षक मेवात संवर्ग अंतिम उत्तर कुंजी 2024</h2>
       <p class="lead">हरियाणा कर्मचारी चयन आयोग ने विज्ञापन संख्या 05/2024 के तहत प्राथमिक शिक्षक मेवात संवर्ग परीक्षा के लिए अंतिम उत्तर कुंजी जारी कर दी है। लिखित परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक वेबसाइट से अंतिम उत्तर कुंजी देख और डाउनलोड कर सकते हैं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >हरियाणा कर्मचारी चयन आयोग (HSSC)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >10 सितंबर 2026</span></div>
       <div class="r"><span >पद का नाम</span><span class="v" >प्राथमिक शिक्षक (मेवात संवर्ग)</span></div>
@@ -379,55 +387,55 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >लिखित परीक्षा → अंतिम उत्तर कुंजी → अंतिम परिणाम</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >हरियाणा कर्मचारी चयन आयोग (HSSC) ने विज्ञापन संख्या 05/2024, श्रेणी संख्या 1 के अंतर्गत प्राथमिक शिक्षक (मेवात संवर्ग) के पद के लिए आयोजित लिखित परीक्षा की अंतिम उत्तर कुंजी प्रकाशित कर दी है। मौलिक शिक्षा विभाग, हरियाणा द्वारा आयोजित परीक्षा में भाग लेने वाले उम्मीदवार अब आधिकारिक अंतिम उत्तर कुंजी देख सकते हैं। आवेदकों को अपने उत्तरों की जांच करने के लिए आधिकारिक HSSC वेबसाइट पर जाना चाहिए।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >विज्ञापन संख्या 05/2024 के तहत HSSC प्राथमिक शिक्षक मेवात संवर्ग लिखित परीक्षा में शामिल होने वाले उम्मीदवार।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >नोटिस की तिथि</span><span class="v" >10 सितंबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >लिखित परीक्षा</li><li >अंतिम उत्तर कुंजी</li><li >अंतिम परिणाम</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >HSSC की आधिकारिक वेबसाइट www.hssc.gov.in पर जाएं।</li><li >सार्वजनिक सूचना अनुभाग पर जाएं या प्राथमिक शिक्षक (मेवात संवर्ग) विज्ञापन संख्या 05/2024 श्रेणी संख्या 1 की अंतिम उत्तर कुंजी के लिंक पर क्लिक करें।</li><li >अंतिम उत्तर कुंजी पीडीएफ डाउनलोड करें और अपने उत्तरों की जांच करें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >पोर्टल पर लॉगिन करने के लिए आवश्यक पंजीकरण विवरण या रोल नंबर</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >सोशल मीडिया पर प्रसारित होने वाली अनधिकृत उत्तर कुंजी पर भरोसा न करें।</li><li >कुंजी देखने से पहले सुनिश्चित करें कि आपने सही श्रेणी और विज्ञापन संख्या की जांच की है।</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >HSSC प्राथमिक शिक्षक मेवात संवर्ग अंतिम उत्तर कुंजी क्या है?</h3><p >यह विज्ञापन संख्या 05/2024 के तहत आयोजित लिखित परीक्षा के लिए हरियाणा कर्मचारी चयन आयोग द्वारा आधिकारिक रूप से जारी सही उत्तरों की अंतिम सूची है, जिसका उपयोग उम्मीदवार अपने प्रदर्शन का मूल्यांकन करने के लिए कर सकते हैं।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >अंतिम उत्तर कुंजी के आधार पर, आयोग परीक्षा का अंतिम परिणाम तैयार करेगा और घोषित करेगा।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a0-89ede0820007/publicNotice" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">hssc.gov.in</span></a>
       <a class="r" href="https://hssc.gov.in" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">hssc.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >क्या HSSC प्राथमिक शिक्षक मेवात संवर्ग अंतिम उत्तर कुंजी 2024 जारी कर दी गई है?</h3><p >हाँ, हरियाणा कर्मचारी चयन आयोग ने 10 सितंबर 2026 को अंतिम उत्तर कुंजी जारी कर दी है।</p></div>
       <div class="qa"><h3 >मैं HSSC प्राथमिक शिक्षक अंतिम उत्तर कुंजी कहाँ से डाउनलोड कर सकता हूँ?</h3><p >आप इसे HSSC की आधिकारिक वेबसाइट www.hssc.gov.in से डाउनलोड कर सकते हैं।</p></div>
       <div class="qa"><h3 >इस भर्ती के लिए विज्ञापन संख्या क्या है?</h3><p >विज्ञापन संख्या 05/2024, श्रेणी संख्या 1 है।</p></div>
       <div class="qa"><h3 >यह भर्ती किस विभाग द्वारा आयोजित की गई थी?</h3><p >यह भर्ती मौलिक शिक्षा विभाग, हरियाणा के लिए है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >अपने परीक्षा विवरण तैयार रखें।</li><li >आधिकारिक HSSC वेबसाइट पर जाएं।</li><li >अंतिम उत्तर कुंजी पीडीएफ डाउनलोड करें।</li></ul>
     </section>
     </details>

@@ -20,7 +20,7 @@
 <title>RSSB Fourth Class Employee 2024 DV Schedule &amp; Instructions | राजस्थान चतुर्थ श्रेणी कर्मचारी 2024 दस्तावेज सत्यापन शेड्यूल और निर्देश</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Rajasthan Staff Selection Board (RSSB)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">23 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Fourth Class Employee</span></div>
@@ -302,82 +310,82 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#notH" data-t="notH">Who cannot apply</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#ageH" data-t="ageH">Age limit</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The Office of the Joint Director, School Education, Jaipur Division has released the instructions and schedule for the document verification of provisionally selected candidates for the Fourth Class Employee Direct Recruitment 2024. Candidates who are in the merit list must appear in person at the office with two sets of detailed scrutiny forms and self-attested copies of all required original documents. All candidates should carefully read the notification and guidelines before attending the verification process.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates provisionally selected for the Fourth Class Employee Recruitment 2024</li></ul>
     </section>
     <section class="kv" id="notH" data-t-aria="notH">
-      <div class="h" data-t="notH">Who cannot apply</div>
+      <h2 class="h" data-t="notH">Who cannot apply</h2>
       <ul class="steps dots"><li data-t="notH0">Candidates who fail to appear on the scheduled date and time for document verification</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Original Advertisement Date</span><span class="v" data-t="datesH0v">12 Dec 2024</span></div>
       <div class="r"><span data-t="datesH1l">Notice Issuance Date</span><span class="v" data-t="datesH1v">23 Oct 2026</span></div>
     </section>
     <section class="kv" id="ageH" data-t-aria="ageH">
-      <div class="h" data-t="ageH">Age limit</div>
+      <h2 class="h" data-t="ageH">Age limit</h2>
       <div class="r"><span data-t="ageH0l">As on date</span><span class="v" data-t="ageH0v">01 Jan 2026</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Fourth Class Employee</span><span class="v" data-t="vacH0v">Refer to official notification for category-wise break-up</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Educational Qualification</span><span class="v" data-t="eligH0v">As per Fourth Class Employee Recruitment 2024 rules</span></div>
       <div class="r"><span data-t="eligH1l">Language &amp; Culture</span><span class="v" data-t="eligH1v">Knowledge of Hindi written in Devanagari script and Rajasthani culture</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Written Examination</li><li data-t="selH1">Document Verification and Scrutiny of Records</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Download the Detailed Form Cum Scrutiny Form from the RSSB website if not already filled online.</li><li data-t="howH1">Fill out the two sets of scrutiny forms and attach self-attested photocopies of all required educational, category, and residential documents in the specified order.</li><li data-t="howH2">Attach two passport-size photographs, a self-attested copy of e-Aadhaar with QR code, and valid photo ID.</li><li data-t="howH3">Present yourself in person at the designated office on the scheduled date and time with all original documents and two sets of files.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Detailed Form Cum Scrutiny Form (Two sets)</li><li data-t="docH1">Secondary mark sheet and certificate for date of birth verification</li><li data-t="docH2">Complete educational mark sheets and certificates</li><li data-t="docH3">Bonafide resident certificate (Special TSP resident certificate if applicable)</li><li data-t="docH4">Category certificate (SC, ST, OBC, MBC, EWS, Sahariya) issued by the last date of online application</li><li data-t="docH5">Handwritten sample sheet in Hindi and English</li><li data-t="docH6">Two passport-size photographs and self-attested photo ID (Aadhaar, Voter ID, Driving Licence, Passport)</li><li data-t="docH7">E-Aadhaar card containing QR code</li><li data-t="docH8">Character certificates (Two from different Gazetted Officers and one from the last attended educational institution)</li><li data-t="docH9">Marriage certificate and affidavit regarding dowry/no-dowry and children (if applicable)</li><li data-t="docH10">Widow/Divorced documents and self-declarations (if applicable)</li><li data-t="docH11">Disability certificate from a competent medical board (if applicable)</li><li data-t="docH12">Sports certificates from competent authorities (if applicable)</li><li data-t="docH13">Ex-servicemen discharge book/noc/self-declaration (if applicable)</li><li data-t="docH14">Notarized affidavit for self-verification of documents and non-involvement in criminal cases</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Failing to bring two complete sets of documents arranged in the specified order with page numbers</li><li data-t="mistH1">Submitting category certificates issued after the last date of online application without the required affidavit</li><li data-t="mistH2">Mismatch between photographs or signatures uploaded in the online form and those presented during verification</li><li data-t="mistH3">Failing to submit the handwritten sample matching the prescribed format</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is RSSB Fourth Class Employee Document Verification?</h3><p data-t="ea0">It is the final verification stage where provisionally selected candidates must present their original educational, category, and identity documents to prove their eligibility for appointment.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Final appointment orders will be issued by the competent authority after successful completion and verification of documents.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Offline Form Fee (if not filled online)</span><span class="v" data-t="extraH0v">₹100 Postal Order in favor of Secretary, RSSB Jaipur</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://rssb.rajasthan.gov.in/storage/news_item/1792756589.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rssb.rajasthan.gov.in</span></a>
       <a class="r" href="https://rssb.rajasthan.gov.in/" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">rssb.rajasthan.gov.in</span></a>
       <a class="r" href="https://rssb.rajasthan.gov.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rssb.rajasthan.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">What documents are required for RSSB Fourth Class Employee Document Verification?</h3><p data-t="a0">Candidates must bring two sets of detailed scrutiny forms, educational mark sheets, date of birth proof, caste certificate, bonafide resident certificate, character certificates, ID proof, and self-attested photocopies of all supporting documents.</p></div>
       <div class="qa"><h3 data-t="q1">What should I do if I have not filled the online Detailed Scrutiny Form?</h3><p data-t="a1">If you have not filled it online due to unavoidable reasons, you can download the form from the RSSB website, fill it manually, and submit it along with a ₹100 postal order in favor of the Secretary, RSSB Jaipur, explaining the reason.</p></div>
       <div class="qa"><h3 data-t="q2">How many sets of documents need to be submitted?</h3><p data-t="a2">Candidates must prepare and submit two complete sets of documents along with the detailed scrutiny forms.</p></div>
       <div class="qa"><h3 data-t="q3">Is a caste certificate issued after the last date of the online application valid?</h3><p data-t="a3">Caste certificates should ideally be issued by the last date of the online application. If issued later, an affidavit must be submitted.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Download and fill two sets of the Detailed Scrutiny Form.</li><li data-t="chkH1">Arrange all original certificates along with self-attested photocopies in two separate files.</li><li data-t="chkH2">Attach required affidavits, character certificates, and handwritten samples.</li><li data-t="chkH3">Carry valid photo ID, e-Aadhaar with QR code, and passport-size photographs to the venue on time.</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/rssb-driver-recruitment-2024-document-verification-shortlist-out/"><span data-t="rel0">RSSB Driver DV Schedule 2024 – Scrutiny Form Dates Out</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/rssb-rajasthan-driver-result-2024-trade-test-dv-list-out/"><span data-t="rel1">RSSB Rajasthan Driver Result 2024 – Trade Test DV List Out</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/rssb-computer-instructor-recruitment-2026-amended-notification-f/"><span data-t="rel2">RSSB Computer Instructor Recruitment 2026 – Amended Notification 3,951 Posts</span><span class="v g num">28 Oct 2026</span></a>
@@ -391,7 +399,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">राजस्थान चतुर्थ श्रेणी कर्मचारी 2024 दस्तावेज सत्यापन शेड्यूल और निर्देश</h2>
       <p class="lead">राजस्थान कर्मचारी चयन बोर्ड द्वारा चतुर्थ श्रेणी कर्मचारी भर्ती 2024 के अनंतिम रूप से चयनित अभ्यर्थियों के दस्तावेज सत्यापन हेतु शेड्यूल और निर्देश जारी किए गए हैं। अभ्यर्थियों को सभी मूल दस्तावेजों और प्रमाण पत्रों की स्व-प्रमाणित प्रतियों के साथ विस्तृत संवीक्षा प्रपत्र की दो प्रतियां जमा करनी होंगी।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >राजस्थान कर्मचारी चयन बोर्ड (RSSB)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >23 अक्तूबर 2026</span></div>
       <div class="r"><span >पद</span><span class="v" >चतुर्थ श्रेणी कर्मचारी</span></div>
@@ -402,78 +410,78 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >लिखित परीक्षा → दस्तावेज सत्यापन और अभिलेखों की संवीक्षा</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >संयुक्त निदेशक, स्कूल शिक्षा, जयपुर संभाग कार्यालय द्वारा चतुर्थ श्रेणी कर्मचारी सीधी भर्ती 2024 के अंतर्गत अनंतिम रूप से चयनित अभ्यर्थियों के दस्तावेज सत्यापन हेतु निर्देश एवं शेड्यूल जारी किए गए हैं। चयनित सूची में शामिल अभ्यर्थियों को सभी आवश्यक मूल दस्तावेजों, प्रमाण पत्रों और विस्तृत संवीक्षा प्रपत्र की दो स्व-प्रमाणित प्रतियों के साथ निर्धारित कार्यालय में उपस्थित होना होगा। अभ्यर्थियों को सलाह दी जाती है कि वे सत्यापन प्रक्रिया में भाग लेने से पहले दिशा-निर्देशों का अध्ययन अवश्य करें।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >चतुर्थ श्रेणी कर्मचारी भर्ती 2024 के लिए अनंतिम रूप से चयनित अभ्यर्थी</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >कौन आवेदन नहीं कर सकता</div>
+      <h2 class="h" >कौन आवेदन नहीं कर सकता</h2>
       <ul class="steps dots"><li >वे अभ्यर्थी जो दस्तावेज सत्यापन के लिए निर्धारित तिथि और समय पर उपस्थित होने में असफल रहते हैं</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >मूल विज्ञापन तिथि</span><span class="v" >12 दिसं 2024</span></div>
       <div class="r"><span >सूचना जारी होने की तिथि</span><span class="v" >23 अक्तू 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आयु सीमा</div>
+      <h2 class="h" >आयु सीमा</h2>
       <div class="r"><span >आयु की गणना तिथि</span><span class="v" >01 जन 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >चतुर्थ श्रेणी कर्मचारी</span><span class="v" >श्रेणी-वार विवरण के लिए आधिकारिक अधिसूचना देखें</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >शैक्षणिक योग्यता</span><span class="v" >चतुर्थ श्रेणी कर्मचारी भर्ती 2024 के नियमों के अनुसार</span></div>
       <div class="r"><span >भाषा एवं संस्कृति</span><span class="v" >देवनागरी लिपि में लिखित हिंदी तथा राजस्थानी संस्कृति का ज्ञान</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >लिखित परीक्षा</li><li >दस्तावेज सत्यापन और अभिलेखों की संवीक्षा</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >यदि ऑनलाइन विस्तृत संवीक्षा प्रपत्र नहीं भरा गया है, तो इसे बोर्ड की वेबसाइट से डाउनलोड करें।</li><li >संवीक्षा प्रपत्र की दो प्रतियां भरें और निर्धारित क्रम में सभी आवश्यक शैक्षणिक, श्रेणी और मूल निवास दस्तावेजों की स्व-प्रमाणित छायाप्रतियां संलग्न करें।</li><li >दो पासपोर्ट साइज फोटोग्राफ, क्यूआर कोड युक्त ई-आधार की स्व-प्रमाणित प्रति और वैध फोटो पहचान पत्र साथ रखें।</li><li >निर्धारित तिथि और समय पर सभी मूल दस्तावेजों और दो सेट फाइलों के साथ व्यक्तिगत रूप से कार्यालय में उपस्थित हों।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >विस्तृत संवीक्षा प्रपत्र (दो सेट)</li><li >जन्मतिथि सत्यापन हेतु माध्यमिक अंकसूची एवं प्रमाण पत्र</li><li >समस्त शैक्षणिक अंकसूचियां एवं प्रमाण पत्र</li><li >मूल निवास प्रमाण पत्र (टीएसपी क्षेत्र होने पर विशेष मूल निवास प्रमाण पत्र)</li><li >ऑनलाइन आवेदन की अंतिम तिथि तक जारी श्रेणी प्रमाण पत्र (एससी, एसटी, ओबीसी, एमबीसी, ईडब्ल्यूएस, सहरिया)</li><li >हिंदी और अंग्रेजी में हस्तलिखित नमूना पत्र</li><li >दो पासपोर्ट साइज फोटो और स्व-प्रमाणित फोटो आईडी (आधार, वोटर आईडी, ड्राइविंग लाइसेंस, पासपोर्ट)</li><li >क्यूआर कोड युक्त ई-आधार कार्ड</li><li >चरित्र प्रमाण पत्र (दो अलग-अलग राजपत्रित अधिकारियों द्वारा और एक अंतिम शिक्षण संस्थान द्वारा)</li><li >विवाह प्रमाण पत्र और दहेज/संतान संबंधी घोषणा पत्र (यदि लागू हो)</li><li >विधवा/परित्यक्ता दस्तावेज और स्व-घोषणा पत्र (यदि लागू हो)</li><li >सक्षम मेडिकल बोर्ड से विकलांगता प्रमाण पत्र (यदि लागू हो)</li><li >सक्षम प्राधिकारी से खेल प्रमाण पत्र (यदि लागू हो)</li><li >भूतपूर्व सैनिक डिस्चार्ज बुक/एनओसी/स्व-घोषणा पत्र (यदि लागू हो)</li><li >दस्तावेजों के सत्यापन और आपराधिक मामलों में संलिप्त न होने संबंधी नोटरी सत्यापित शपथ पत्र</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >निर्दिष्ट क्रम में पृष्ठ संख्या के साथ व्यवस्थित दस्तावेजों के दो पूरे सेट न लाना</li><li >आवश्यक शपथ पत्र के बिना ऑनलाइन आवेदन की अंतिम तिथि के बाद जारी श्रेणी प्रमाण पत्र प्रस्तुत करना</li><li >ऑनलाइन फॉर्म में अपलोड किए गए फोटो या हस्ताक्षर और सत्यापन के दौरान प्रस्तुत किए गए फोटो या हस्ताक्षर में अंतर होना</li><li >निर्धारित प्रारूप से मेल खाने वाला हस्तलिखित नमूना प्रस्तुत करने में विफल रहना</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >राजस्थान कर्मचारी चयन बोर्ड चतुर्थ श्रेणी कर्मचारी दस्तावेज सत्यापन क्या है?</h3><p >यह अंतिम सत्यापन चरण है जहां अनंतिम रूप से चयनित अभ्यर्थियों को नियुक्ति के लिए अपनी पात्रता साबित करने हेतु अपने मूल शैक्षणिक, श्रेणी और पहचान दस्तावेज प्रस्तुत करने होते हैं।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >दस्तावेजों के सफल सत्यापन के बाद सक्षम प्राधिकारी द्वारा अंतिम नियुक्ति आदेश जारी किए जाएंगे।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >ऑफ़लाइन फॉर्म शुल्क (यदि ऑनलाइन नहीं भरा गया)</span><span class="v" >₹100 का पोस्टल ऑर्डर (सचिव, राजस्थान कर्मचारी चयन बोर्ड, जयपुर के नाम)</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://rssb.rajasthan.gov.in/storage/news_item/1792756589.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">rssb.rajasthan.gov.in</span></a>
       <a class="r" href="https://rssb.rajasthan.gov.in/" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">rssb.rajasthan.gov.in</span></a>
       <a class="r" href="https://rssb.rajasthan.gov.in/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">rssb.rajasthan.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >राजस्थान चतुर्थ श्रेणी कर्मचारी दस्तावेज सत्यापन के लिए कौन से दस्तावेज आवश्यक हैं?</h3><p >अभ्यर्थियों को संवीक्षा प्रपत्र के दो सेट, शैक्षणिक अंकसूचियां, जन्मतिथि प्रमाण, जाति प्रमाण पत्र, मूल निवास प्रमाण पत्र, चरित्र प्रमाण पत्र, आईडी प्रूफ और सभी सहायक दस्तावेजों की स्व-प्रमाणित फोटो प्रतियां लानी होंगी।</p></div>
       <div class="qa"><h3 >यदि मैंने ऑनलाइन विस्तृत संवीक्षा प्रपत्र नहीं भरा है तो मुझे क्या करना चाहिए?</h3><p >यदि आपने अपरिहार्य कारणों से इसे ऑनलाइन नहीं भरा है, तो आप इसे बोर्ड की वेबसाइट से डाउनलोड कर सकते हैं, मैन्युअल रूप से भरकर सचिव, राजस्थान कर्मचारी चयन बोर्ड, जयपुर के पक्ष में ₹100 के पोस्टल ऑर्डर और कारण सहित जमा कर सकते हैं।</p></div>
       <div class="qa"><h3 >दस्तावेजों के कितने सेट जमा करने होंगे?</h3><p >अभ्यर्थियों को विस्तृत संवीक्षा प्रपत्र के साथ दस्तावेजों के दो पूरे सेट तैयार करके जमा करने होंगे।</p></div>
       <div class="qa"><h3 >क्या ऑनलाइन आवेदन की अंतिम तिथि के बाद जारी जाति प्रमाण पत्र मान्य है?</h3><p >जाति प्रमाण पत्र ऑनलाइन आवेदन की अंतिम तिथि तक जारी किया जाना चाहिए। यदि बाद में जारी किया गया है, तो एक शपथ पत्र प्रस्तुत करना होगा।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >विस्तृत संवीक्षा प्रपत्र की दो प्रतियां डाउनलोड करें और भरें।</li><li >सभी मूल प्रमाण पत्रों को स्व-प्रमाणित फोटो प्रतियों के साथ दो अलग-अलग फाइलों में व्यवस्थित करें।</li><li >आवश्यक शपथ पत्र, चरित्र प्रमाण पत्र और हस्तलिखित नमूना संलग्न करें।</li><li >वैध फोटो आईडी, क्यूआर कोड वाला ई-आधार और पासपोर्ट आकार के फोटो समय पर केंद्र पर लेकर जाएं।</li></ul>
     </section>
     </details>

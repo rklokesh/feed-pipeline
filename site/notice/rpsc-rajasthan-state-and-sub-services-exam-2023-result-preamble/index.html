@@ -20,7 +20,7 @@
 <title>RPSC State and Subordinate Services Exam 2023 Revised Result 2026 | आरपीएससी राज्य एवं अधीनस्थ सेवाएं परीक्षा 2023 संशोधित रिज़ल्ट 2026</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Rajasthan Public Service Commission (RPSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">23 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Exam Name</span><span class="v" data-t="r0v">Rajasthan State and Subordinate Services Combined Competitive Examination 2023</span></div>
@@ -301,60 +309,60 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The Rajasthan Public Service Commission (RPSC) has issued a revised result preamble notice for the Rajasthan State and Subordinate Services Combined Competitive Examination 2023. This notice is published in compliance with the order dated 28.09.2026 passed by the Hon&#x27;ble Rajasthan High Court, Jaipur in S.B. Civil Writ Petition No. 9253/2025. Candidates concerned with the examination can check the details of the revised merit allotment included in the official notice.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who appeared for the RPSC State and Subordinate Services Exam 2023</li><li data-t="whoH1">Petitioners involved in Writ Petition No. 9253/2025</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Result Notice Date</span><span class="v" data-t="datesH0v">23 Oct 2026</span></div>
       <div class="r"><span data-t="datesH1l">Court Order Date</span><span class="v" data-t="datesH1v">28 Sep 2026</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Preliminary Examination</li><li data-t="selH1">Main Examination</li><li data-t="selH2">Interview</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official website of RPSC</li><li data-t="howH1">Go to the News and Events or Result section</li><li data-t="howH2">Click on the revised result preamble link for Rajasthan State and Subordinate Services Combined Competitive Exam 2023</li><li data-t="howH3">Download and check the PDF notice for roll number and merit details</li></ol>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is RPSC State and Subordinate Services Exam?</h3><p data-t="ea0">It is a combined competitive examination conducted by the Rajasthan Public Service Commission to recruit candidates for various state and subordinate administrative positions in Rajasthan.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Final recommendation and appointment process based on the revised result.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Allotted Merit Rank</span><span class="v" data-t="extraH0v">Rank 718-A in Non-Scheduled Area Combined Merit List</span></div>
       <div class="r"><span data-t="extraH1l">Petitioner Roll Number</span><span class="v" data-t="extraH1v">1106835</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://rpsc.rajasthan.gov.in/Static/Result/B5EB37F4A8524D638793903E0A809AF1.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rpsc.rajasthan.gov.in</span></a>
       <a class="r" href="https://rpsc.rajasthan.gov.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rpsc.rajasthan.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When was the RPSC State and Subordinate Services Exam 2023 revised result preamble released?</h3><p data-t="a0">The revised result preamble was released on 23 October 2026.</p></div>
       <div class="qa"><h3 data-t="q1">Why was the RPSC 2023 result revised?</h3><p data-t="a1">The result was revised in compliance with the order dated 28.09.2026 passed by the Hon&#x27;ble Rajasthan High Court, Jaipur in S.B. Civil Writ Petition No. 9253/2025.</p></div>
       <div class="qa"><h3 data-t="q2">Which roll number has been included in the revised merit list?</h3><p data-t="a2">Candidate with roll number 1106835 has been allotted merit rank 718-A in the non-scheduled area combined merit list.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check official RPSC website for the notice</li><li data-t="chkH1">Verify roll number and merit rank from the PDF</li></ul>
     </section>
     <section class="kv rel" id="exam" data-t-aria="exH">
-      <div class="h" data-t="exH">All updates for RPSC State and Subordinate Services 2023</div>
+      <h2 class="h" data-t="exH">All updates for RPSC State and Subordinate Services 2023</h2>
       <a class="r" href="/notice/rpsc-assistant-professor-and-sub-inspector-interview-dates-2025/"><span><span data-t="ex0">RPSC Assistant Professor and SI Interview Schedule 2026 Out</span> <small class="g" data-t="exs0">Interview Dates</small></span><span class="v g num">23 Oct 2026</span></a>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/rpsc-senior-teacher-punjabi-result-2025-cut-off-scrutiny-list/"><span data-t="rel0">RPSC Senior Teacher Punjabi Result 2025 – Cut Off &amp; Scrutiny List</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/rpsc-senior-teacher-gujarati-result-2025-exam-preamble-out/"><span data-t="rel1">RPSC Senior Teacher Gujarati Result 2025 – Exam Preamble Out</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/rpsc-senior-teacher-mathematics-result-2025-provisional-list/"><span data-t="rel2">RPSC Senior Teacher Mathematics Result 2025 – Provisional List</span><span class="v g num">28 Oct 2026</span></a>
@@ -368,7 +376,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">आरपीएससी राज्य एवं अधीनस्थ सेवाएं परीक्षा 2023 संशोधित रिज़ल्ट 2026</h2>
       <p class="lead">राजस्थान लोक सेवा आयोग ने न्यायालय के आदेशों के पालन में राजस्थान राज्य एवं अधीनस्थ सेवाएं संयुक्त प्रतियोगी परीक्षा 2023 के संबंध में संशोधित परिणाम प्रस्तावना जारी कर दी है। इसमें मुख्य परीक्षा और साक्षात्कार के अंकों के आधार पर एक याची अभ्यर्थी को वरीयता दी गई है।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >राजस्थान लोक सेवा आयोग (आरपीएससी)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >23 अक्तूबर 2026</span></div>
       <div class="r"><span >परीक्षा का नाम</span><span class="v" >राजस्थान राज्य एवं अधीनस्थ सेवाएं संयुक्त प्रतियोगी परीक्षा 2023</span></div>
@@ -378,52 +386,52 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >प्रारंभिक परीक्षा → मुख्य परीक्षा → साक्षात्कार</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >राजस्थान लोक सेवा आयोग (आरपीएससी) ने राजस्थान राज्य एवं अधीनस्थ सेवाएं संयुक्त प्रतियोगी परीक्षा 2023 के लिए संशोधित परिणाम प्रस्तावना नोटिस जारी किया है। यह नोटिस माननीय राजस्थान उच्च न्यायालय, जयपुर द्वारा एस.बी. सिविल रिट याचिका संख्या 9253/2025 में पारित आदेश दिनांक 28.09.2026 की पालना में जारी किया गया है। परीक्षा से जुड़े अभ्यर्थी आधिकारिक नोटिस में संशोधित वरीयता आवंटन की जानकारी देख सकते हैं।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >आरपीएससी राज्य एवं अधीनस्थ सेवाएं परीक्षा 2023 में शामिल होने वाले अभ्यर्थी</li><li >रिट याचिका संख्या 9253/2025 से जुड़े याची</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >परिणाम नोटिस दिनांक</span><span class="v" >23 अक्टूबर 2026</span></div>
       <div class="r"><span >न्यायालय आदेश दिनांक</span><span class="v" >28 सितंबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >प्रारंभिक परीक्षा</li><li >मुख्य परीक्षा</li><li >साक्षात्कार</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >आरपीएससी की आधिकारिक वेबसाइट पर जाएं</li><li >न्यूज एंड इवेंट्स या रिज़ल्ट सेक्शन में जाएं</li><li >राजस्थान राज्य एवं अधीनस्थ सेवाएं संयुक्त प्रतियोगी परीक्षा 2023 के संशोधित परिणाम प्रस्तावना लिंक पर क्लिक करें</li><li >रोल नंबर और वरीयता विवरण के लिए पीडीएफ नोटिस डाउनलोड करें और देखें</li></ol>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >आरपीएससी राज्य एवं अधीनस्थ सेवाएं परीक्षा क्या है?</h3><p >यह राजस्थान लोक सेवा आयोग द्वारा राजस्थान में विभिन्न राज्य और अधीनस्थ प्रशासनिक पदों पर उम्मीदवारों की भर्ती के लिए आयोजित की जाने वाली एक संयुक्त प्रतियोगी परीक्षा है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >संशोधित परिणाम के आधार पर अंतिम अनुशंसा और नियुक्ति प्रक्रिया।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >आवंटित वरीयता क्रमांक</span><span class="v" >गैर अनुसूचित क्षेत्र संयुक्त वरीयता सूची में वरीयता क्रमांक 718-A</span></div>
       <div class="r"><span >याची अभ्यर्थी रोल नंबर</span><span class="v" >1106835</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://rpsc.rajasthan.gov.in/Static/Result/B5EB37F4A8524D638793903E0A809AF1.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">rpsc.rajasthan.gov.in</span></a>
       <a class="r" href="https://rpsc.rajasthan.gov.in/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">rpsc.rajasthan.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >आरपीएससी राज्य एवं अधीनस्थ सेवाएं परीक्षा 2023 का संशोधित परिणाम प्रस्तावना कब जारी किया गया?</h3><p >संशोधित परिणाम प्रस्तावना 23 अक्टूबर 2026 को जारी की गई।</p></div>
       <div class="qa"><h3 >आरपीएससी 2023 का परिणाम क्यों संशोधित किया गया?</h3><p >यह परिणाम माननीय राजस्थान उच्च न्यायालय, जयपुर द्वारा एस.बी. सिविल रिट याचिका संख्या 9253/2025 में पारित आदेश दिनांक 28.09.2026 की पालना में संशोधित किया गया है।</p></div>
       <div class="qa"><h3 >संशोधित वरीयता सूची में किस रोल नंबर को शामिल किया गया है?</h3><p >रोल नंबर 1106835 वाले अभ्यर्थी को गैर अनुसूचित क्षेत्र की संयुक्त वरीयता सूची में वरीयता क्रमांक 718-A आवंटित किया गया है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >नोटिस के लिए आधिकारिक आरपीएससी वेबसाइट देखें</li><li >पीडीएफ से रोल नंबर और वरीयता क्रमांक सत्यापित करें</li></ul>
     </section>
     </details>

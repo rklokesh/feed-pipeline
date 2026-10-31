@@ -20,7 +20,7 @@
 <title>NTA NIFT Entrance Examination NIFTEE 2027 | एनटीए एनआईएफटी प्रवेश परीक्षा एनआईएफटीईई 2027</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">National Testing Agency (NTA)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">16 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Programs</span><span class="v" data-t="r0v">UG, PG, NLEA, Artisans, Ph.D.</span></div>
@@ -303,19 +311,19 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#notH" data-t="notH">Who cannot apply</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The National Testing Agency (NTA) has released the notification for the National Institute of Fashion Technology Entrance Examination (NIFTEE) 2027 on behalf of NIFT. Online applications are invited for admissions to various Undergraduate (UG), Postgraduate (PG), NIFT Lateral Entry Admissions (NLEA), Artisans category, and Ph.D. programmes for the academic session 2027-28. The online registration process starts on 16th October 2026 and will conclude on 16th November 2026. Candidates aspiring to join NIFT must review the detailed eligibility criteria, age limits, and guidelines in the official information bulletin before submitting their applications.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Students seeking admission to UG, PG, NLEA, Artisans, and Ph.D. programmes at NIFT for the academic session 2027-28.</li></ul>
     </section>
     <section class="kv" id="notH" data-t-aria="notH">
-      <div class="h" data-t="notH">Who cannot apply</div>
+      <h2 class="h" data-t="notH">Who cannot apply</h2>
       <ul class="steps dots"><li data-t="notH0">Candidates who fail to meet the educational qualifications and age criteria specified in the NIFT Admissions Guidelines-2027.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Online registration starts</span><span class="v" data-t="datesH0v">16 Oct 2026</span></div>
       <div class="r"><span data-t="datesH1l">Last date for online application</span><span class="v" data-t="datesH1v">16 Nov 2026</span></div>
       <div class="r"><span data-t="datesH2l">Last date with late fees of ₹5000</span><span class="v" data-t="datesH2v">21 Nov 2026</span></div>
@@ -325,7 +333,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span data-t="datesH6l">Date of Entrance Examination</span><span class="v" data-t="datesH6v">10 Jan 2027</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Undergraduate (UG) Programmes</span><span class="v" data-t="vacH0v">As per rules · B.Des. and B.F.Tech.</span></div>
       <div class="r"><span data-t="vacH1l">Postgraduate (PG) Programmes</span><span class="v" data-t="vacH1v">As per rules · M.Des., M.F.M. and M.F.Tech.</span></div>
       <div class="r"><span data-t="vacH2l">NIFT Lateral Entry Admissions (NLEA)</span><span class="v" data-t="vacH2v">As per rules · B.Des. (Lateral Entry) and B.F.Tech. (Lateral Entry)</span></div>
@@ -333,45 +341,45 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span data-t="vacH4l">Ph.D. Programmes</span><span class="v" data-t="vacH4v">As per rules · Ph.D. admissions</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">General Eligibility</span><span class="v" data-t="eligH0v">Refer to the NIFT Admissions Guidelines–2027 and NIFTEE–2027 Information Bulletin for specific educational qualifications, age limits, and subject combinations.</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Stage 1 Entrance Examination (Computer Based Test / Pen-and-Paper Based Test)</li><li data-t="selH1">Subsequent selection stages as prescribed in NIFT Admissions Guidelines-2027 (including Research Proposal Presentation and Interview for Ph.D.)</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Go to the official NTA NIFTEE website at https://exams.nta.nic.in/niftee/</li><li data-t="howH1">Register using a valid email ID and mobile number to generate login credentials.</li><li data-t="howH2">Fill out the online application form and upload scanned documents including photograph, signature, and UDID card (if applicable).</li><li data-t="howH3">Complete Aadhaar-based e-KYC if required and submit the application fee.</li><li data-t="howH4">Download and print a copy of the confirmation page for future reference.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Recent photograph</li><li data-t="docH1">Signature</li><li data-t="docH2">Aadhaar-based e-KYC details</li><li data-t="docH3">UDID Card (for PwD/PwBD candidates)</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Submitting applications after the last date without factoring in the late fee window.</li><li data-t="mistH1">Uploading blurred or improperly formatted photographs and signatures.</li><li data-t="mistH2">Failing to check specific eligibility and subject combination requirements for chosen programmes.</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is NIFTEE 2027?</h3><p data-t="ea0">The National Institute of Fashion Technology Entrance Examination (NIFTEE) is conducted by the National Testing Agency for admissions to various design, management, and technology programmes offered by NIFT institutes across India.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Candidates will appear for the entrance examination on 10 January 2027.</li><li data-t="aftH1">NTA will release the recorded responses and answer keys, followed by the declaration of Stage 1 results on official websites.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Mode of Examination</span><span class="v" data-t="extraH0v">Computer Based Test (CBT) - GAT and Pen-and-Paper Based Test (PBT) – CAT</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://nta.ac.in/Download/Notice/Notice_20261016183525.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">nta.ac.in</span></a>
       <a class="r" href="https://exams.nta.nic.in/niftee/" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">exams.nta.nic.in</span></a>
       <a class="r" href="https://www.nta.ac.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">nta.ac.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">What is the last date to apply for NIFTEE 2027?</h3><p data-t="a0">The last date to submit the online application without late fee is 16th November 2026.</p></div>
       <div class="qa"><h3 data-t="q1">When will the NIFTEE 2027 exam be conducted?</h3><p data-t="a1">The entrance examination is scheduled to be held on 10th January 2027.</p></div>
       <div class="qa"><h3 data-t="q2">Who conducts the NIFTEE 2027 examination?</h3><p data-t="a2">The examination is conducted by the National Testing Agency (NTA) on behalf of NIFT.</p></div>
@@ -380,11 +388,11 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 data-t="q5">What are the official websites for NIFTEE 2027?</h3><p data-t="a5">The official websites are https://www.nta.ac.in and https://exams.nta.nic.in/niftee/</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check eligibility guidelines thoroughly.</li><li data-t="chkH1">Keep scanned documents ready in prescribed formats.</li><li data-t="chkH2">Note down registration credentials securely.</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/nta-swayam-july-2026-exam-registration-last-date-extended/"><span data-t="rel0">NTA SWAYAM July 2026 Exam Registration Last Date Extended</span><span class="v g num">31 Oct 2026</span></a>
       <a class="r" href="/notice/jee-main-2027-session-1-fresh-application-notice-last-date-22-no/"><span data-t="rel1">JEE Main 2027 Session 1 Fresh Application Notice – Last Date 22 Nov</span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/nta-jee-main-2027-session-1-registration-advisory-and-instructio/"><span data-t="rel2">NTA JEE Main 2027 Session 1 Registration Advisory and Instructions</span><span class="v g num">28 Oct 2026</span></a>
@@ -398,7 +406,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">एनटीए एनआईएफटी प्रवेश परीक्षा एनआईएफटीईई 2027</h2>
       <p class="lead">राष्ट्रीय परीक्षण एजेंसी ने स्नातक, स्नातकोत्तर, एनएलईए, कारीगर और पीएचडी कार्यक्रमों में प्रवेश के लिए एनआईएफटीईई 2027 के वास्ते ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 16 नवंबर 2026 तक आधिकारिक पोर्टल के माध्यम से ऑनलाइन आवेदन कर सकते हैं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >राष्ट्रीय परीक्षण एजेंसी (एनटीए)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >16 अक्तूबर 2026</span></div>
       <div class="r"><span >कार्यक्रम</span><span class="v" >स्नातक, स्नातकोत्तर, एनएलईए, कारीगर, पीएचडी</span></div>
@@ -410,19 +418,19 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >चरण 1 प्रवेश परीक्षा → एनआईएफटी प्रवेश दिशानिर्देश-2027 में निर</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने एनआईएफटी की ओर से राष्ट्रीय फैशन प्रौद्योगिकी संस्थान प्रवेश परीक्षा (एनआईएफटीईई) 2027 की अधिसूचना जारी कर दी है। शैक्षणिक सत्र 2027-28 के लिए विभिन्न स्नातक (यूजी), स्नातकोत्तर (पीजी), एनआईएफटी लेटरल एंट्री एडमिशन (एनएलईए), कारीगर श्रेणी और पीएचडी कार्यक्रमों में प्रवेश के लिए ऑनलाइन आवेदन आमंत्रित किए गए हैं। ऑनलाइन पंजीकरण प्रक्रिया 16 अक्तूबर 2026 से शुरू होकर 16 नवंबर 2026 को समाप्त होगी। एनआईएफटी में शामिल होने के इच्छुक उम्मीदवारों को आवेदन जमा करने से पहले आधिकारिक सूचना विवरणिका में विस्तृत पात्रता मानदंड, आयु सीमा और दिशानिर्देशों की समीक्षा करनी चाहिए।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >शैक्षणिक सत्र 2027-28 के लिए एनआईएफटी में यूजी, पीजी, एनएलईए, कारीगर और पीएचडी कार्यक्रमों में प्रवेश लेने के इच्छुक छात्र।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >कौन आवेदन नहीं कर सकता</div>
+      <h2 class="h" >कौन आवेदन नहीं कर सकता</h2>
       <ul class="steps dots"><li >जो उम्मीदवार एनआईएफटी प्रवेश दिशानिर्देश-2027 में निर्दिष्ट शैक्षणिक योग्यताओं और आयु मानदंडों को पूरा करने में विफल रहते हैं।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >ऑनलाइन पंजीकरण प्रारंभ</span><span class="v" >16 अक्तूबर 2026</span></div>
       <div class="r"><span >ऑनलाइन आवेदन की अंतिम तिथि</span><span class="v" >16 नवंबर 2026</span></div>
       <div class="r"><span >₹5000 के विलंब शुल्क के साथ अंतिम तिथि</span><span class="v" >21 नवंबर 2026</span></div>
@@ -432,7 +440,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >प्रवेश परीक्षा की तिथि</span><span class="v" >10 जनवरी 2027</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >स्नातक कार्यक्रम</span><span class="v" >As per rules · बी.डिज़ाइन और बी.एफ.टेक.</span></div>
       <div class="r"><span >स्नातकोत्तर कार्यक्रम</span><span class="v" >As per rules · एम.डिज़ाइन, एम.एफ.एम. और एम.एफ.टेक.</span></div>
       <div class="r"><span >एनआईएफटी लेटरल एंट्री एडमिशन</span><span class="v" >As per rules · बी.डिज़ाइन (लेटरल एंट्री) और बी.एफ.टेक. (लेटरल एंट्री)</span></div>
@@ -440,45 +448,45 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >पीएचडी कार्यक्रम</span><span class="v" >As per rules · पीएचडी प्रवेश</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >सामान्य पात्रता</span><span class="v" >विशिष्ट शैक्षणिक योग्यताओं, आयु सीमा और विषय संयोजनों के लिए एनआईएफटी प्रवेश दिशानिर्देश-2027 और एनआईएफटीईई-2027 सूचना विवरणिका देखें।</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >चरण 1 प्रवेश परीक्षा (कंप्यूटर आधारित परीक्षण / पेन-एंड-पेपर आधारित परीक्षण)</li><li >एनआईएफटी प्रवेश दिशानिर्देश-2027 में निर्धारित अनुसार बाद के चयन चरण (पीएचडी के लिए अनुसंधान प्रस्ताव प्रस्तुति और साक्षात्कार सहित)</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >आधिकारिक एनटीए एनआईएफटीईई वेबसाइट https://exams.nta.nic.in/niftee/ पर जाएं</li><li >लॉगिन विवरण उत्पन्न करने के लिए एक वैध ईमेल आईडी और मोबाइल नंबर का उपयोग करके पंजीकरण करें।</li><li >ऑनलाइन आवेदन पत्र भरें और फोटोग्राफ, हस्ताक्षर और यूडीआईडी कार्ड (यदि लागू हो) सहित स्कैन किए गए दस्तावेज़ अपलोड करें।</li><li >यदि आवश्यक हो तो आधार-आधारित ई-केवाईसी पूरा करें और आवेदन शुल्क का भुगतान करें।</li><li >भविष्य के संदर्भ के लिए पुष्टिकरण पृष्ठ की एक प्रति डाउनलोड करें और प्रिंट करें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >हाल का फोटोग्राफ</li><li >हस्ताक्षर</li><li >आधार-आधारित ई-केवाईसी विवरण</li><li >यूडीआईडी कार्ड (दिव्यांग उम्मीदवारों के लिए)</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >विलंब शुल्क विंडो को ध्यान में रखे बिना अंतिम तिथि के बाद आवेदन जमा करना।</li><li >धुंधली या अनुचित रूप से स्वरूपित तस्वीरें और हस्ताक्षर अपलोड करना।</li><li >चुने गए कार्यक्रमों के लिए विशिष्ट पात्रता और विषय संयोजन आवश्यकताओं की जांच करने में विफल रहना।</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >एनआईएफटीईई 2027 क्या है?</h3><p >राष्ट्रीय फैशन प्रौद्योगिकी संस्थान प्रवेश परीक्षा (एनआईएफटीईई) भारत भर के एनआईएफटी संस्थानों द्वारा पेश किए जाने वाले विभिन्न डिजाइन, प्रबंधन और प्रौद्योगिकी कार्यक्रमों में प्रवेश के लिए राष्ट्रीय परीक्षण एजेंसी द्वारा आयोजित की जाती है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >उम्मीदवार 10 जनवरी 2027 को प्रवेश परीक्षा में शामिल होंगे।</li><li >एनटीए आधिकारिक वेबसाइटों पर चरण 1 के परिणामों की घोषणा के बाद रिकॉर्ड की गई प्रतिक्रियाएं और उत्तर कुंजियां जारी करेगा।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >परीक्षा का तरीका</span><span class="v" >कंप्यूटर आधारित परीक्षण (सीबीटी) - जीएटी और पेन-एंड-पेपर आधारित परीक्षण (पीबीटी) – सीएटी</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://nta.ac.in/Download/Notice/Notice_20261016183525.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">nta.ac.in</span></a>
       <a class="r" href="https://exams.nta.nic.in/niftee/" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">exams.nta.nic.in</span></a>
       <a class="r" href="https://www.nta.ac.in/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">nta.ac.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >एनआईएफटीईई 2027 के लिए आवेदन करने की अंतिम तिथि क्या है?</h3><p >विलंब शुल्क के बिना ऑनलाइन आवेदन जमा करने की अंतिम तिथि 16 नवंबर 2026 है।</p></div>
       <div class="qa"><h3 >एनआईएफटीईई 2027 परीक्षा कब आयोजित की जाएगी?</h3><p >प्रवेश परीक्षा 10 जनवरी 2027 को आयोजित होने निर्धारित है।</p></div>
       <div class="qa"><h3 >एनआईएफटीईई 2027 परीक्षा कौन आयोजित करता है?</h3><p >यह परीक्षा एनआईएफटी की ओर से राष्ट्रीय परीक्षण एजेंसी (एनटीए) द्वारा आयोजित की जाती है।</p></div>
@@ -487,7 +495,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 >एनआईएफटीईई 2027 के लिए आधिकारिक वेबसाइटें कौन सी हैं?</h3><p >आधिकारिक वेबसाइटें https://www.nta.ac.in और https://exams.nta.nic.in/niftee/ हैं।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >पात्रता दिशानिर्देशों की अच्छी तरह से जाँच करें।</li><li >निर्धारित प्रारूपों में स्कैन किए गए दस्तावेज़ तैयार रखें।</li><li >पंजीकरण विवरण को सुरक्षित रूप से नोट कर लें।</li></ul>
     </section>
     </details>

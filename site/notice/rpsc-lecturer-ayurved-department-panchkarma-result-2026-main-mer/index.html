@@ -20,7 +20,7 @@
 <title>RPSC Lecturer Ayurved Department Panchkarma Result 2026 – Main Merit List | आरपीएससी व्याख्याता आयुर्वेद विभाग पंचकर्म रिजल्ट 2026 – मुख्य मेरिट लिस्ट</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Rajasthan Public Service Commission (RPSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">28 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Post Name</span><span class="v" data-t="r0v">Lecturer (Ayurved Dept.) - Panchkarma</span></div>
@@ -302,59 +310,59 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The Rajasthan Public Service Commission (RPSC) has published the main merit list for the Lecturer (Ayurved Department) 2025 recruitment for the Panchkarma discipline. Candidates who participated in the selection process can now check the official result notice issued on 28 October 2026. This notice includes the merit number, roll number, category, candidate name, and written examination marks of the qualified candidates.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who appeared for the RPSC Lecturer Ayurved Dept Panchkarma 2025 exam.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Result Declaration Date</span><span class="v" data-t="datesH0v">28 Oct 2026</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Written Examination</li><li data-t="selH1">Main Merit List / Document Verification</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official RPSC website.</li><li data-t="howH1">Go to the &#x27;News and Events&#x27; or &#x27;Result&#x27; section.</li><li data-t="howH2">Click on the link for &#x27;Main Merit List for the Post of Lecturer (Ayurved Dept.) 2025 (Panchkarma)&#x27;.</li><li data-t="howH3">Check your roll number and marks in the PDF.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Result PDF / Printout</li><li data-t="docH1">Valid ID Proof</li><li data-t="docH2">Educational Certificates for verification</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is the RPSC Lecturer Ayurved Dept Panchkarma Result?</h3><p data-t="ea0">It is the official main merit list released by the Rajasthan Public Service Commission for candidates who qualified the Lecturer recruitment exam in the Panchkarma discipline under the Ayurved Department.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Candidates selected in the main merit list will be called for further processing, including document verification and appointment by the department.</li></ol>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://rpsc.rajasthan.gov.in/Static/Result/349B44EF74AF49AE8ABA16F40EFE9A6A.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rpsc.rajasthan.gov.in</span></a>
       <a class="r" href="https://rpsc.rajasthan.gov.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rpsc.rajasthan.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When was the RPSC Lecturer Ayurved Panchkarma main merit list released?</h3><p data-t="a0">The main merit list was released on 28 October 2026.</p></div>
       <div class="qa"><h3 data-t="q1">Which board released the Lecturer Ayurved Dept Panchkarma result?</h3><p data-t="a1">The Rajasthan Public Service Commission (RPSC) released the result.</p></div>
       <div class="qa"><h3 data-t="q2">Where can I download the RPSC Lecturer Panchkarma result PDF?</h3><p data-t="a2">You can download the result PDF from the official RPSC website at rpsc.rajasthan.gov.in.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check your roll number in the official result PDF.</li><li data-t="chkH1">Keep your score and merit details saved for future reference.</li></ul>
     </section>
     <section class="kv rel" id="exam" data-t-aria="exH">
-      <div class="h" data-t="exH">All updates for RPSC Lecturer Panchkarma 2025</div>
+      <h2 class="h" data-t="exH">All updates for RPSC Lecturer Panchkarma 2025</h2>
       <a class="r" href="/notice/rpsc-lecturer-panchkarma-ayurved-2025-reserve-list-result/"><span><span data-t="ex0">RPSC Lecturer Panchkarma 2025 Reserve List Result Released</span> <small class="g" data-t="exs0">Reserve List Result</small></span><span class="v g num">26 Oct 2026</span></a>
       <a class="r" href="/notice/rpsc-lecturer-ayurved-dept-panchkarma-2025-result/"><span><span data-t="ex1">RPSC Lecturer Panchkarma 2025 Main List Result Declared</span> <small class="g" data-t="exs1">Main Result Declared</small></span><span class="v g num">26 Oct 2026</span></a>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/rpsc-senior-teacher-punjabi-result-2025-cut-off-scrutiny-list/"><span data-t="rel0">RPSC Senior Teacher Punjabi Result 2025 – Cut Off &amp; Scrutiny List</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/rpsc-senior-teacher-gujarati-result-2025-exam-preamble-out/"><span data-t="rel1">RPSC Senior Teacher Gujarati Result 2025 – Exam Preamble Out</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/rpsc-senior-teacher-mathematics-result-2025-provisional-list/"><span data-t="rel2">RPSC Senior Teacher Mathematics Result 2025 – Provisional List</span><span class="v g num">28 Oct 2026</span></a>
@@ -368,7 +376,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">आरपीएससी व्याख्याता आयुर्वेद विभाग पंचकर्म रिजल्ट 2026 – मुख्य मेरिट लिस्ट</h2>
       <p class="lead">राजस्थान लोक सेवा आयोग ने व्याख्याता (आयुर्वेद विभाग) 2025 पंचकर्म परीक्षा के लिए मुख्य मेरिट लिस्ट जारी कर दी है। जिन उम्मीदवारों के रोल नंबर सूची में हैं, वे अपना चयन परिणाम देख सकते हैं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >राजस्थान लोक सेवा आयोग (RPSC)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >28 अक्तूबर 2026</span></div>
       <div class="r"><span >पद का नाम</span><span class="v" >व्याख्याता (आयुर्वेद विभाग) - पंचकर्म</span></div>
@@ -379,50 +387,50 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >लिखित परीक्षा → मुख्य मेरिट लिस्ट / दस्तावेज़ सत्यापन</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >राजस्थान लोक सेवा आयोग (RPSC) ने पंचकर्म विषय के लिए व्याख्याता (आयुर्वेद विभाग) 2025 भर्ती की मुख्य मेरिट लिस्ट जारी कर दी है। चयन प्रक्रिया में भाग लेने वाले उम्मीदवार 28 अक्टूबर 2026 को जारी आधिकारिक परिणाम सूचना को देख सकते हैं। इस सूचना में योग्य उम्मीदवारों के मेरिट नंबर, रोल नंबर, श्रेणी, उम्मीदवार का नाम और लिखित परीक्षा के अंक शामिल हैं।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जिन्होंने आरपीएससी व्याख्याता आयुर्वेद विभाग पंचकर्म 2025 परीक्षा दी थी।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >परिणाम घोषणा तिथि</span><span class="v" >28 अक्टूबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >लिखित परीक्षा</li><li >मुख्य मेरिट लिस्ट / दस्तावेज़ सत्यापन</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >आधिकारिक आरपीएससी वेबसाइट पर जाएं।</li><li >नूज़ एंड इवेंट्स या रिज़ल्ट सेक्शन में जाएं।</li><li >&#x27;Main Merit List for the Post of Lecturer (Ayurved Dept.) 2025 (Panchkarma)&#x27; लिंक पर क्लिक करें।</li><li >पीडीएफ में अपना रोल नंबर और अंक जांचें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >परिणाम पीडीएफ / प्रिंटआउट</li><li >वैध पहचान पत्र</li><li >सत्यापन के लिए शैक्षणिक प्रमाण पत्र</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >आरपीएससी व्याख्याता आयुर्वेद विभाग पंचकर्म रिजल्ट क्या है?</h3><p >यह आयुर्वेद विभाग के तहत पंचकर्म विषय में व्याख्याता भर्ती परीक्षा में उत्तीर्ण होने वाले उम्मीदवारों के लिए राजस्थान लोक सेवा आयोग द्वारा जारी आधिकारिक मुख्य मेरिट लिस्ट है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >मुख्य मेरिट लिस्ट में चयनित उम्मीदवारों को विभाग द्वारा दस्तावेज़ सत्यापन और नियुक्ति सहित आगे की प्रक्रिया के लिए बुलाया जाएगा।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://rpsc.rajasthan.gov.in/Static/Result/349B44EF74AF49AE8ABA16F40EFE9A6A.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">rpsc.rajasthan.gov.in</span></a>
       <a class="r" href="https://rpsc.rajasthan.gov.in/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">rpsc.rajasthan.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >आरपीएससी व्याख्याता आयुर्वेद पंचकर्म मुख्य मेरिट लिस्ट कब जारी की गई?</h3><p >मुख्य मेरिट लिस्ट 28 अक्टूबर 2026 को जारी की गई थी।</p></div>
       <div class="qa"><h3 >व्याख्याता आयुर्वेद विभाग पंचकर्म परिणाम किस बोर्ड ने जारी किया?</h3><p >राजस्थान लोक सेवा आयोग (RPSC) ने परिणाम जारी किया है।</p></div>
       <div class="qa"><h3 >मैं आरपीएससी व्याख्याता पंचकर्म परिणाम पीडीएफ कहां से डाउनलोड कर सकता हूं?</h3><p >आप आधिकारिक आरपीएससी वेबसाइट rpsc.rajasthan.gov.in से परिणाम पीडीएफ डाउनलोड कर सकते हैं।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >आधिकारिक परिणाम पीडीएफ में अपना रोल नंबर जांचें।</li><li >भविष्य के संदर्भ के लिए अपना स्कोर और मेरिट विवरण सुरक्षित रखें।</li></ul>
     </section>
     </details>

@@ -20,7 +20,7 @@
 <title>SSC Phase-XIV 2026 Selection Posts Answer Key Released | कर्मचारी चयन आयोग चरण-14 2026 चयन पद उत्तर कुंजी जारी</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Staff Selection Commission (SSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">9 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Exam Name</span><span class="v" data-t="r0v">Phase-XIV/2026 Selection Posts Examination</span></div>
@@ -303,71 +311,71 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#notH" data-t="notH">Who cannot apply</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#fee" data-t="fee">Application fee</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The Staff Selection Commission (SSC) has successfully conducted the Phase-XIV/2026 Selection Posts Examination for various Matriculation, Higher Secondary (10+2), and Graduation &amp; Above level posts from 16.09.2026 to 26.09.2026. The Commission has now uploaded the candidate response sheets and tentative answer keys on its official website. Candidates can view their response sheets and raise online objections, if any, from 09.10.2026 to 12.10.2026. All candidates who appeared for the computer-based test should check their answers and submit challenges within the stipulated timeframe.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who appeared for the SSC Phase-XIV/2026 Selection Posts Computer Based Examination</li></ul>
     </section>
     <section class="kv" id="notH" data-t-aria="notH">
-      <div class="h" data-t="notH">Who cannot apply</div>
+      <h2 class="h" data-t="notH">Who cannot apply</h2>
       <ul class="steps dots"><li data-t="notH0">Candidates who did not appear in the Phase-XIV/2026 Examination</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Exam Dates</span><span class="v" data-t="datesH0v">16 Sep 2026 to 26 Sep 2026</span></div>
       <div class="r"><span data-t="datesH1l">Challenge Start Date</span><span class="v" data-t="datesH1v">09 Oct 2026 (04:00 PM)</span></div>
       <div class="r"><span data-t="datesH2l">Challenge Last Date</span><span class="v" data-t="datesH2v">12 Oct 2026 (04:00 PM)</span></div>
     </section>
     <section class="kv" id="fee" data-t-aria="fee">
-      <div class="h" data-t="fee">Application fee</div>
+      <h2 class="h" data-t="fee">Application fee</h2>
       <div class="r"><span data-t="f0">Per Question Challenge Fee</span><span class="v num">₹50</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Selection Posts Phase-XIV</span><span class="v" data-t="vacH0v">Multiple · Matriculation, Higher Secondary (10+2), and Graduation &amp; Above Level posts</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Requirement</span><span class="v" data-t="eligH0v">Appeared in Phase-XIV/2026 Selection Posts Examination</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Computer Based Examination</li><li data-t="selH1">Tentative Answer Key &amp; Objection Raising</li><li data-t="selH2">Final Answer Key &amp; Result Declaration</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Go to the official website of SSC at https://ssc.gov.in</li><li data-t="howH1">Click on the notification link for Phase-XIV/2026 Selection Posts Answer Key</li><li data-t="howH2">Log in using your Registration Number and Password</li><li data-t="howH3">View and download your response sheets and tentative answer keys</li><li data-t="howH4">Submit representations through the challenge module if you have any objections by paying ₹50 per question</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Registration Number</li><li data-t="docH1">Password</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Do not miss the deadline of 12 October 2026 (04:00 PM) for submitting representations</li><li data-t="mistH1">Do not use offline or any other mode for submitting representations, as only online mode is accepted</li><li data-t="mistH2">Do not forget to take a printout of your response sheets before the link expires</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is SSC Selection Posts Phase-XIV Exam?</h3><p data-t="ea0">The Staff Selection Commission conducts Selection Posts examinations to recruit eligible candidates for various categories of posts requiring Matriculation, Higher Secondary, and Graduation educational qualifications across various departments.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">The Commission will review all the challenges submitted by candidates</li><li data-t="aftH1">Final answer keys will be released after reviewing valid objections</li><li data-t="aftH2">Final results and cut-off marks will be declared based on the final answer keys</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Notice Date</span><span class="v" data-t="extraH0v">09 Oct 2026</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_rhq.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">ssc.gov.in</span></a>
       <a class="r" href="https://ssc.gov.in" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">ssc.gov.in</span></a>
       <a class="r" href="https://ssc.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">ssc.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When was the SSC Phase-XIV 2026 answer key released?</h3><p data-t="a0">The answer key was released on 09 October 2026.</p></div>
       <div class="qa"><h3 data-t="q1">What is the last date to challenge the SSC Phase-XIV answer key?</h3><p data-t="a1">The last date to submit online challenges is 12 October 2026 up to 04:00 PM.</p></div>
       <div class="qa"><h3 data-t="q2">What is the fee for challenging each question?</h3><p data-t="a2">A fee of ₹50 per question/answer challenged is applicable.</p></div>
@@ -378,11 +386,11 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 data-t="q7">What is the official website to check the SSC Phase-XIV answer key?</h3><p data-t="a7">The official website is https://ssc.gov.in.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Keep your login credentials ready</li><li data-t="chkH1">Check response sheets thoroughly</li><li data-t="chkH2">Note down question numbers for any discrepancies</li><li data-t="chkH3">Keep a debit/credit card or net banking ready for fee payment if challenging questions</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/ssc-cpo-si-pet-pst-result-2025-out-paper-ii-exam-date/"><span data-t="rel0">SSC CPO SI PET PST Result 2025 Out – Paper II Exam Date</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/ssc-je-and-si-exam-2026-revised-dates/"><span data-t="rel1">SSC JE and SI Exam 2026 Revised Dates – Schedule Notice</span><span class="v g num">26 Oct 2026</span></a>
       <a class="r" href="/notice/ssc-grade-c-stenographers-ldce-2025-tentative-vacancies/"><span data-t="rel2">SSC Grade C Stenographer Vacancy 2025 – LDCE Tentative Vacancies Out</span><span class="v g num">24 Oct 2026</span></a>
@@ -396,7 +404,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">कर्मचारी चयन आयोग चरण-14 2026 चयन पद उत्तर कुंजी जारी</h2>
       <p class="lead">कर्मचारी चयन आयोग ने चरण-14/2026 चयन पद परीक्षा के लिए संभावित उत्तर कुंजियां और प्रतिक्रिया पत्रक जारी कर दिए हैं। परीक्षा में शामिल होने वाले उम्मीदवार 12 अक्टूबर 2026 तक प्रति प्रश्न ₹50 शुल्क का भुगतान करके उत्तर कुंजी के खिलाफ ऑनलाइन आपत्तियां दर्ज करा सकते हैं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >कर्मचारी चयन आयोग (एसएससी)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >9 अक्तूबर 2026</span></div>
       <div class="r"><span >परीक्षा का नाम</span><span class="v" >चरण-14/2026 चयन पद परीक्षा</span></div>
@@ -408,71 +416,71 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >कंप्यूटर आधारित परीक्षा → संभावित उत्तर कुंजी और आपत्ति दर्ज करना → अंतिम उत्तर कुंजी और परिणाम घोषणा</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >कर्मचारी चयन आयोग (एसएससी) ने मैट्रिकुलेशन, उच्च माध्यमिक (10+2) और स्नातक एवं उससे ऊपर के स्तर के विभिन्न पदों के लिए चरण-14/2026 चयन पद परीक्षा का आयोजन 16.09.2026 से 26.09.2026 तक सफलतापूर्वक किया था। आयोग ने अब अपनी आधिकारिक वेबसाइट पर उम्मीदवार प्रतिक्रिया पत्रक और संभावित उत्तर कुंजी अपलोड कर दी है। परीक्षा में शामिल होने वाले उम्मीदवार 09.10.2026 से 12.10.2026 तक अपने प्रतिक्रिया पत्रक देख सकते हैं और ऑनलाइन आपत्तियां दर्ज करा सकते हैं। कंप्यूटर आधारित परीक्षा में शामिल सभी उम्मीदवारों को सलाह दी जाती है कि वे अपने उत्तरों की जांच करें और निर्धारित समय सीमा के भीतर आपत्तियां दर्ज करें।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जो एसएससी चरण-14/2026 चयन पद कंप्यूटर आधारित परीक्षा में शामिल हुए थे</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >कौन आवेदन नहीं कर सकता</div>
+      <h2 class="h" >कौन आवेदन नहीं कर सकता</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जो चरण-14/2026 परीक्षा में शामिल नहीं हुए थे</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >परीक्षा तिथियां</span><span class="v" >16 सितंबर 2026 से 26 सितंबर 2026</span></div>
       <div class="r"><span >आपत्ति शुरू होने की तिथि</span><span class="v" >09 अक्टूबर 2026 (शाम 04:00 बजे)</span></div>
       <div class="r"><span >आपत्ति की अंतिम तिथि</span><span class="v" >12 अक्टूबर 2026 (शाम 04:00 बजे)</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आवेदन शुल्क</div>
+      <h2 class="h" >आवेदन शुल्क</h2>
       <div class="r"><span >प्रति प्रश्न आपत्ति शुल्क</span><span class="v num">₹50</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >चयन पद चरण-14</span><span class="v" >Multiple · मैट्रिकुलेशन, उच्च माध्यमिक (10+2), और स्नातक एवं उससे ऊपर के स्तर के पद</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >आवश्यकता</span><span class="v" >चरण-14/2026 चयन पद परीक्षा में उपस्थित हुए</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >कंप्यूटर आधारित परीक्षा</li><li >संभावित उत्तर कुंजी और आपत्ति दर्ज करना</li><li >अंतिम उत्तर कुंजी और परिणाम घोषणा</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >एसएससी की आधिकारिक वेबसाइट https://ssc.gov.in पर जाएं</li><li >चरण-14/2026 चयन पद उत्तर कुंजी के लिए अधिसूचना लिंक पर क्लिक करें</li><li >अपने पंजीकरण नंबर और पासवर्ड का उपयोग करके लॉगिन करें</li><li >अपने प्रतिक्रिया पत्रक और संभावित उत्तर कुंजी देखें और डाउनलोड करें</li><li >यदि आपको कोई आपत्ति है तो प्रति प्रश्न ₹50 का भुगतान करके आपत्ति मॉड्यूल के माध्यम से अपनी प्रस्तुतियां दें</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >पंजीकरण संख्या</li><li >पासवर्ड</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >प्रस्तुतियां जमा करने के लिए 12 अक्टूबर 2026 (शाम 04:00 बजे) की समय सीमा न चूकें</li><li >प्रस्तुतियां जमा करने के लिए ऑफ़लाइन या किसी अन्य तरीके का उपयोग न करें, क्योंकि केवल ऑनलाइन तरीका स्वीकार किया जाता है</li><li >लिंक समाप्त होने से पहले अपने प्रतिक्रिया पत्रक का प्रिंटआउट लेना न भूलें</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >एसएससी चयन पद चरण-14 परीक्षा क्या है?</h3><p >कर्मचारी चयन आयोग विभिन्न विभागों में मैट्रिकुलेशन, उच्च माध्यमिक और स्नातक शैक्षणिक योग्यता की आवश्यकता वाले विभिन्न श्रेणियों के पदों के लिए योग्य उम्मीदवारों की भर्ती के लिए चयन पद परीक्षाओं का आयोजन करता है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >आयोग उम्मीदवारों द्वारा प्रस्तुत सभी आपत्तियों की समीक्षा करेगा</li><li >वैध आपत्तियों की समीक्षा के बाद अंतिम उत्तर कुंजी जारी की जाएगी</li><li >अंतिम उत्तर कुंजी के आधार पर अंतिम परिणाम और कट-ऑफ अंक घोषित किए जाएंगे</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >अधिसूचना तिथि</span><span class="v" >09 अक्टूबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_rhq.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">ssc.gov.in</span></a>
       <a class="r" href="https://ssc.gov.in" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">ssc.gov.in</span></a>
       <a class="r" href="https://ssc.gov.in" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">ssc.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >एसएससी चरण-14 2026 उत्तर कुंजी कब जारी की गई?</h3><p >उत्तर कुंजी 09 अक्टूबर 2026 को जारी की गई थी।</p></div>
       <div class="qa"><h3 >एसएससी चरण-14 उत्तर कुंजी को चुनौती देने की अंतिम तिथि क्या है?</h3><p >ऑनलाइन आपत्ति दर्ज करने की अंतिम तिथि 12 अक्टूबर 2026 को शाम 04:00 बजे तक है।</p></div>
       <div class="qa"><h3 >प्रत्येक प्रश्न को चुनौती देने के लिए शुल्क क्या है?</h3><p >चुनौती दिए गए प्रत्येक प्रश्न/उत्तर के लिए ₹50 का शुल्क लागू है।</p></div>
@@ -483,7 +491,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="qa"><h3 >एसएससी चरण-14 उत्तर कुंजी की जांच करने के लिए आधिकारिक वेबसाइट कौन सी है?</h3><p >आधिकारिक वेबसाइट https://ssc.gov.in है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >अपने लॉगिन विवरण तैयार रखें</li><li >प्रतिक्रिया पत्रक की अच्छी तरह से जांच करें</li><li >किसी भी विसंगति के लिए प्रश्न संख्या नोट करें</li><li >प्रश्नों को चुनौती देने पर शुल्क भुगतान के लिए डेबिट/क्रेडिट कार्ड या नेट बैंकिंग तैयार रखें</li></ul>
     </section>
     </details>

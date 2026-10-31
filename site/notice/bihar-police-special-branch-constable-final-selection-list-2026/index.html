@@ -20,7 +20,7 @@
 <title>Bihar Police Special Branch Constable Final Result 2026 – List of 83 Selected Candidates | बिहार पुलिस विशेष शाखा सिपाही अंतिम परिणाम 2026 – 83 चयनित उम्मीदवारों की सूची</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Central Selection Board of Constable (CSBC), Bihar</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">9 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Constable (General Duty Close Cadre) in Special Branch</span></div>
@@ -304,70 +312,70 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">Central Selection Board of Constable (CSBC), Bihar has released the final results for the recruitment of Constables (General Duty Close Cadre) in the Special Branch of Bihar Police under Advertisement No. 01/2026. A total of 83 candidates have been finally selected based on the written examination, physical standards test (PST), and document verification. The written exam was conducted on 24 June 2026, followed by the physical test on 12 September 2026. Candidates who took part in the selection process can check the official roll number-wise final recommendation list.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who appeared for the Bihar Police Special Branch Constable Recruitment 2026 selection stages</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Written exam date</span><span class="v" data-t="datesH0v">24 Jun 2026</span></div>
       <div class="r"><span data-t="datesH1l">Physical test date</span><span class="v" data-t="datesH1v">12 Sep 2026</span></div>
       <div class="r"><span data-t="datesH2l">Final result date</span><span class="v" data-t="datesH2v">09 Oct 2026</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Constable (General Duty Close Cadre)</span><span class="v" data-t="vacH0v">83 · UR 34, EWS 8, SC 13, ST 1, EBC 15, BC 10, BC Women 2</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Selection Basis</span><span class="v" data-t="eligH0v">Written Examination, Physical Standards Test (PST), and Document Verification</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Written Examination</li><li data-t="selH1">Physical Standards Test (PST) and Document Verification</li><li data-t="selH2">Final Merit List based on written exam marks</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official CSBC website at csbc.bihar.gov.in</li><li data-t="howH1">Click on the notice regarding the final selection list for Advt. No. 01/2026 in the Special Branch</li><li data-t="howH2">Download the PDF file and check your roll number in the list of selected candidates</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Photo ID proof</li><li data-t="docH1">Educational certificates</li><li data-t="docH2">Caste and category certificates</li><li data-t="docH3">Domicile certificate</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is Bihar Police Special Branch Constable Recruitment?</h3><p data-t="ea0">It is a direct recruitment process conducted by CSBC Bihar to fill Constable posts in the Special Branch of Bihar Police under Advertisement No. 01/2026.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Selected candidates will undergo medical examination and subsequent joining formalities as per Bihar Police guidelines.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Total candidates called for PST</span><span class="v" data-t="extraH0v">254</span></div>
       <div class="r"><span data-t="extraH1l">Candidates who appeared in PST</span><span class="v" data-t="extraH1v">250</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://csbc.bihar.gov.in/Advt/Results-01-2026-Final-09-10-2026.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">csbc.bihar.gov.in</span></a>
       <a class="r" href="https://csbc.bihar.gov.in" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">csbc.bihar.gov.in</span></a>
       <a class="r" href="https://csbc.bihar.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">csbc.bihar.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When was the final result declared for Bihar Police Special Branch Constable 2026?</h3><p data-t="a0">The final selection list was declared on 09 October 2026.</p></div>
       <div class="qa"><h3 data-t="q1">How many vacancies are filled under Advt. No. 01/2026?</h3><p data-t="a1">A total of 83 vacancies have been filled for the Constable post in the Special Branch.</p></div>
       <div class="qa"><h3 data-t="q2">Where can I check the final selection list?</h3><p data-t="a2">You can check the final selection list on the official website of CSBC Bihar at csbc.bihar.gov.in.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check your roll number in the official PDF</li><li data-t="chkH1">Keep all original certificates ready for appointment verification</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/rrb-ntpc-cbt-2-result-2025-cbtst-shortlist-and-score-card-link/"><span data-t="rel0">RRB NTPC CBT-2 Result 2025 – CBTST Shortlist and Score Card Link</span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/uppsc-regional-inspector-technical-document-verification-notice/"><span data-t="rel1">UPPSC Regional Inspector Technical Document Verification Notice 2026</span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/dsssb-pgt-maths-result-2026-post-code-825-24-final-list-out/"><span data-t="rel2">DSSSB PGT Maths Result 2026 – Post Code 825/24 Final List Out</span><span class="v g num">30 Oct 2026</span></a>
@@ -381,7 +389,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">बिहार पुलिस विशेष शाखा सिपाही अंतिम परिणाम 2026 – 83 चयनित उम्मीदवारों की सूची</h2>
       <p class="lead">केंद्रीय चयन बोर्ड सिपाही भर्ती (CSBC) बिहार ने विज्ञापन संख्या 01/2026 के अंतर्गत बिहार पुलिस विशेष शाखा में सिपाही (सामान्य बंद संवर्ग) के 83 पदों के लिए अंतिम चयन सूची जारी कर दी है। लिखित परीक्षा, शारीरिक परीक्षा और दस्तावेज सत्यापन में शामिल उम्मीदवार अंतिम मेधा सूची में अपना रोल नंबर देख सकते हैं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >केंद्रीय चयन पर्षद (सिपाही भर्ती), बिहार</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >9 अक्तूबर 2026</span></div>
       <div class="r"><span >पद</span><span class="v" >विशेष शाखा में सिपाही (सामान्य बंद संवर्ग)</span></div>
@@ -394,66 +402,66 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >लिखित परीक्षा → शारीरिक मानक परीक्षा → लिखित परीक्षा के अंकों के आधार पर अंतिम </span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >केंद्रीय चयन पर्षद (सिपाही भर्ती), बिहार ने विज्ञापन संख्या 01/2026 के तहत बिहार पुलिस की विशेष शाखा में सिपाही (सामान्य बंद संवर्ग) पदों पर भर्ती के लिए अंतिम परिणाम जारी कर दिया है। लिखित परीक्षा, शारीरिक मानक परीक्षा (PST) और दस्तावेज सत्यापन के आधार पर कुल 83 उम्मीदवारों को अंतिम रूप से चयनित किया गया है। लिखित परीक्षा 24 जून 2026 को आयोजित की गई थी, जिसके बाद 12 सितंबर 2026 को शारीरिक परीक्षा ली गई थी। चयन प्रक्रिया में भाग लेने वाले उम्मीदवार आधिकारिक रोल नंबर-वार अंतिम अनुशंसा सूची देख सकते हैं।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >बिहार पुलिस विशेष शाखा सिपाही भर्ती 2026 के चयन चरणों में शामिल होने वाले उम्मीदवार</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >लिखित परीक्षा की तिथि</span><span class="v" >24 जून 2026</span></div>
       <div class="r"><span >शारीरिक परीक्षा की तिथि</span><span class="v" >12 सितंबर 2026</span></div>
       <div class="r"><span >अंतिम परिणाम की तिथि</span><span class="v" >09 अक्टूबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >सिपाही (सामान्य बंद संवर्ग)</span><span class="v" >83 · अनारक्षित 34, ईडब्ल्यूएस 8, एससी 13, एसटी 1, ईबीसी 15, बीसी 10, बीसी महिला 2</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >चयन का आधार</span><span class="v" >लिखित परीक्षा, शारीरिक मानक परीक्षा (PST) और दस्तावेज सत्यापन</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >लिखित परीक्षा</li><li >शारीरिक मानक परीक्षा (PST) और दस्तावेज सत्यापन</li><li >लिखित परीक्षा के अंकों के आधार पर अंतिम मेधा सूची</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >आधिकारिक सीएसबीसी वेबसाइट csbc.bihar.gov.in पर जाएं</li><li >विशेष शाखा में विज्ञापन संख्या 01/2026 के लिए अंतिम चयन सूची से संबंधित नोटिस पर क्लिक करें</li><li >पीडीएफ फाइल डाउनलोड करें और चयनित उम्मीदवारों की सूची में अपना रोल नंबर जांचें</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >फोटो पहचान पत्र</li><li >शैक्षणिक प्रमाण पत्र</li><li >जाति और श्रेणी प्रमाण पत्र</li><li >निवास प्रमाण पत्र</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >बिहार पुलिस विशेष शाखा सिपाही भर्ती क्या है?</h3><p >यह विज्ञापन संख्या 01/2026 के तहत बिहार पुलिस की विशेष शाखा में सिपाही पदों को भरने के लिए सीएसबीसी बिहार द्वारा आयोजित एक सीधी भर्ती प्रक्रिया है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >चयनित उम्मीदवारों को बिहार पुलिस के दिशा-निर्देशों के अनुसार चिकित्सा परीक्षण और उसके बाद की ज्वाइनिंग औपचारिकताओं से गुजरना होगा।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >शारीरिक परीक्षा के लिए कुल बुलाए गए उम्मीदवार</span><span class="v" >254</span></div>
       <div class="r"><span >शारीरिक परीक्षा में उपस्थित उम्मीदवार</span><span class="v" >250</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://csbc.bihar.gov.in/Advt/Results-01-2026-Final-09-10-2026.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">csbc.bihar.gov.in</span></a>
       <a class="r" href="https://csbc.bihar.gov.in" target="_blank" rel="noopener"><span >ऑनलाइन आवेदन</span><span class="v">csbc.bihar.gov.in</span></a>
       <a class="r" href="https://csbc.bihar.gov.in" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">csbc.bihar.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >बिहार पुलिस विशेष शाखा सिपाही 2026 का अंतिम परिणाम कब घोषित किया गया था?</h3><p >अंतिम चयन सूची 09 अक्टूबर 2026 को घोषित की गई थी।</p></div>
       <div class="qa"><h3 >विज्ञापन संख्या 01/2026 के तहत कुल कितनी रिक्तियां भरी गई हैं?</h3><p >विशेष शाखा में सिपाही पद के लिए कुल 83 रिक्तियां भरी गई हैं।</p></div>
       <div class="qa"><h3 >मैं अंतिम चयन सूची कहां देख सकता हूं?</h3><p >आप सीएसबीसी बिहार की आधिकारिक वेबसाइट csbc.bihar.gov.in पर अंतिम चयन सूची देख सकते हैं।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >आधिकारिक पीडीएफ में अपना रोल नंबर जांचें</li><li >नियुक्ति सत्यापन के लिए सभी मूल प्रमाण पत्र तैयार रखें</li></ul>
     </section>
     </details>

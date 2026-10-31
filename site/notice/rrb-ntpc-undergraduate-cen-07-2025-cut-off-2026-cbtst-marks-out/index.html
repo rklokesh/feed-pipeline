@@ -20,7 +20,7 @@
 <title>RRB NTPC Undergraduate CEN 07/2025 Cut Off 2026 – CBTST Marks Out | आरआरबी एनटीपीसी अंडरग्रेजुएट सीईएन 07/2025 कट ऑफ 2026 – सीबीटीएसटी मार्क्स जारी</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Railway Recruitment Board Ahmedabad (RRB Ahmedabad)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">30 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Advertisement Number</span><span class="v" data-t="r0v">CEN No. 07/2025</span></div>
@@ -300,59 +308,59 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">Railway Recruitment Board (RRB) Ahmedabad has officially released the cut-off marks for candidates shortlisted for the Computer Based Aptitude Test (CBTST) under Centralised Employment Notice CEN 07/2025 for NTPC Under Graduate posts. The notice was issued on 30 October 2026. Candidates who appeared or awaited the shortlisting can check the category-wise cut-off marks out of 100 directly through the official RRB Ahmedabad website.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who appeared for RRB CEN 07/2025 NTPC Under Graduate exams and are awaiting CBTST shortlisting.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Notice Date</span><span class="v" data-t="datesH0v">30 Oct 2026</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Computer Based Test (CBT)</li><li data-t="selH1">Computer Based Aptitude Test (CBTST)</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official website of RRB Ahmedabad.</li><li data-t="howH1">Click on the link for CEN 07/2025 NTPC Under Graduate CBTST cut off marks.</li><li data-t="howH2">Download and check the category-wise cut off list.</li></ol>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is RRB NTPC Undergraduate CBTST Cut Off?</h3><p data-t="ea0">It is the minimum mark out of 100 required by candidates in the CBT stage to qualify and get shortlisted for the Computer Based Aptitude Test (CBTST) under CEN 07/2025.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Shortlisted candidates will appear for the Computer Based Aptitude Test (CBTST).</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Cut-Off Basis</span><span class="v" data-t="extraH0v">Out of 100 marks</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://rrb.indianrailways.gov.in/-/image/1793373415326Cut_off_30.10.2026_for_TST.pdf/examsDocuments" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rrb.indianrailways.gov.in</span></a>
       <a class="r" href="https://rrb.indianrailways.gov.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rrb.indianrailways.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When was the RRB CEN 07/2025 CBTST cut off released?</h3><p data-t="a0">The cut off was released on 30 October 2026.</p></div>
       <div class="qa"><h3 data-t="q1">Which board released the CEN 07/2025 NTPC UG cut off?</h3><p data-t="a1">RRB Ahmedabad released the cut off marks.</p></div>
       <div class="qa"><h3 data-t="q2">Out of how many marks is the cut-off calculated?</h3><p data-t="a2">The cut-off is calculated out of 100 marks.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check category-wise marks</li><li data-t="chkH1">Verify registration number</li></ul>
     </section>
     <section class="kv rel" id="exam" data-t-aria="exH">
-      <div class="h" data-t="exH">All updates for RRB NTPC Undergraduate 2026</div>
+      <h2 class="h" data-t="exH">All updates for RRB NTPC Undergraduate 2026</h2>
       <a class="r" href="/notice/rrb-ntpc-cbt-2-result-2025-cbtst-shortlist-and-score-card-link/"><span><span data-t="ex0">RRB NTPC CBT-2 Result 2025 – CBTST Shortlist and Score Card Link</span> <small class="g" data-t="exs0">CBT-2 Result &amp; Shortlist</small></span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/rrb-non-technical-popular-categories-under-graduate-recruitment/"><span><span data-t="ex1">RRB NTPC Undergraduate Recruitment 2026</span> <small class="g" data-t="exs1">Recruitment</small></span><span class="v g num">14 Oct 2026</span></a>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/rrb-je-exam-date-2026-cbt-i-rescheduled-notice-admit-card/"><span data-t="rel0">RRB JE Exam Date 2026 – CBT-I Rescheduled Notice &amp; Admit Card</span><span class="v g num">28 Oct 2026</span></a>
       <a class="r" href="/notice/rrb-je-cbt-i-exam-2026-postponed-for-andhra-pradesh-centres/"><span data-t="rel1">RRB JE CBT-I Exam 2026 Postponed for Andhra Pradesh Centres</span><span class="v g num">27 Oct 2026</span></a>
       <a class="r" href="/notice/rrb-station-master-cen-08-2026-corrigendum-1/"><span data-t="rel2">RRB Station Master Recruitment 2026 – Vacancies Increased to 1,265</span><span class="v g num">27 Oct 2026</span></a>
@@ -365,7 +373,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">आरआरबी एनटीपीसी अंडरग्रेजुएट सीईएन 07/2025 कट ऑफ 2026 – सीबीटीएसटी मार्क्स जारी</h2>
       <p class="lead">आरआरबी अहमदाबाद ने सीईएन 07/2025 (एनटीपीसी अंडर ग्रेजुएट) के तहत सीबीटीएसटी के लिए शॉर्टलिस्ट किए गए उम्मीदवारों के श्रेणी-वार कट-ऑफ अंक जारी कर दिए हैं। उम्मीदवार 100 अंकों में से कट-ऑफ देख सकते हैं।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >रेलवे भर्ती बोर्ड अहमदाबाद (आरआरबी अहमदाबाद)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >30 अक्तूबर 2026</span></div>
       <div class="r"><span >विज्ञापन संख्या</span><span class="v" >सीईएन सं. 07/2025</span></div>
@@ -374,50 +382,50 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >कंप्यूटर आधारित परीक्षा → कंप्यूटर आधारित एप्टीट्यूड टेस्ट</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >रेलवे भर्ती बोर्ड (आरआरबी) अहमदाबाद ने एनटीपीसी अंडर ग्रेजुएट पदों के लिए केंद्रीयकृत रोजगार सूचना संख्या सीईएन 07/2025 के तहत सीबीटीएसटी के लिए शॉर्टलिस्ट किए गए उम्मीदवारों के कट-ऑफ अंक आधिकारिक तौर पर जारी कर दिए हैं। यह नोटिस 30 अक्टूबर 2026 को जारी किया गया था। उम्मीदवार आधिकारिक वेबसाइट के माध्यम से 100 अंकों में से श्रेणी-वार कट-ऑफ अंक देख सकते हैं।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जिन्होंने आरआरबी सीईएन 07/2025 एनटीपीसी अंडर ग्रेजुएट परीक्षा दी है और सीबीटीएसटी शॉर्टलिस्टिंग का इंतजार कर रहे हैं।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >नोटिस की तिथि</span><span class="v" >30 अक्तूबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >कंप्यूटर आधारित परीक्षा (सीबीटी)</li><li >कंप्यूटर आधारित एप्टीट्यूड टेस्ट (सीबीटीएसटी)</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >आरआरबी अहमदाबाद की आधिकारिक वेबसाइट पर जाएं।</li><li >सीईएन 07/2025 एनटीपीसी अंडर ग्रेजुएट सीबीटीएसटी कट ऑफ मार्क्स के लिंक पर क्लिक करें।</li><li >श्रेणी-वार कट ऑफ सूची डाउनलोड करें और देखें।</li></ol>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >आरआरबी एनटीपीसी अंडरग्रेजुएट सीबीटीएसटी कट ऑफ क्या है?</h3><p >यह सीईएन 07/2025 के तहत कंप्यूटर आधारित एप्टीट्यूड टेस्ट (सीबीटीएसटी) के लिए अर्हता प्राप्त करने और शॉर्टलिस्ट होने के लिए सीबीटी चरण में उम्मीदवारों द्वारा आवश्यक 100 में से न्यूनतम अंक हैं।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >शॉर्टलिस्ट किए गए उम्मीदवार कंप्यूटर आधारित एप्टीट्यूड टेस्ट (सीबीटीएसटी) में शामिल होंगे।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >कट-ऑफ आधार</span><span class="v" >100 अंकों में से</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://rrb.indianrailways.gov.in/-/image/1793373415326Cut_off_30.10.2026_for_TST.pdf/examsDocuments" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">rrb.indianrailways.gov.in</span></a>
       <a class="r" href="https://rrb.indianrailways.gov.in/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">rrb.indianrailways.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >आरआरबी सीईएन 07/2025 सीबीटीएसटी कट ऑफ कब जारी किया गया था?</h3><p >कट ऑफ 30 अक्टूबर 2026 को जारी किया गया था।</p></div>
       <div class="qa"><h3 >किस बोर्ड ने सीईएन 07/2025 एनटीपीसी यूजी कट ऑफ जारी किया है?</h3><p >आरआरबी अहमदाबाद ने कट-ऑफ अंक जारी किए हैं।</p></div>
       <div class="qa"><h3 >कट-ऑफ कितने अंकों में से गणना की जाती है?</h3><p >कट-ऑफ 100 अंकों में से गणना की जाती है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >श्रेणी-वार अंक जांचें</li><li >पंजीकरण संख्या सत्यापित करें</li></ul>
     </section>
     </details>

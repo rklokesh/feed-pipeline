@@ -20,7 +20,7 @@
 <title>RPSC Senior Teacher English Result 2025 | आरपीएससी वरिष्ठ अध्यापक अंग्रेजी परिणाम 2025</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Rajasthan Public Service Commission (RPSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">27 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Posts</span><span class="v" data-t="r0v">Senior Teacher (English)</span></div>
@@ -302,69 +310,69 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">Rajasthan Public Service Commission (RPSC) has published the provisional result and cutoff marks for eligibility checking for the Senior Teacher Competitive Examination 2025 in English subject. The written examination for Group A (Paper I - General Knowledge and Paper II - English) was conducted on 16 July 2026 and 17 July 2026 respectively. Candidates who appeared in the examination and secured the minimum qualifying marks as per service rules have been provisionally included in the eligibility checking list by roll numbers. Such candidates must verify their eligibility as per the commission guidelines.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who appeared for the RPSC Senior Teacher English Exam 2025 held on 16-17 July 2026.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Exam Date (Paper I)</span><span class="v" data-t="datesH0v">16 Jul 2026</span></div>
       <div class="r"><span data-t="datesH1l">Exam Date (Paper II)</span><span class="v" data-t="datesH1v">17 Jul 2026</span></div>
       <div class="r"><span data-t="datesH2l">Result Release Date</span><span class="v" data-t="datesH2v">27 Oct 2026</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Senior Teacher (English)</span><span class="v" data-t="vacH0v">As per notification · Tsp and Non-Tsp areas</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Education</span><span class="v" data-t="eligH0v">Graduation with English as optional subject and Degree/Diploma in Education (B.Ed.) or equivalent as per service rules</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Written Examination (Objective Type)</li><li data-t="selH1">Provisional List for Eligibility Checking</li><li data-t="selH2">Document Verification / Detailed Scrutiny</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official RPSC website at rpsc.rajasthan.gov.in.</li><li data-t="howH1">Go to the &#x27;News and Events&#x27; or &#x27;Result&#x27; section.</li><li data-t="howH2">Click on the link for &#x27;Result Preamble and Cutoff Marks (Provisional List for Eligibility Checking) for Sr. Teacher (Sec. Edu.) Comp. Exam - 2025 (English)&#x27;.</li><li data-t="howH3">Download the PDF and check your roll number in the list.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Admit Card of written examination</li><li data-t="docH1">Educational qualification certificates and mark sheets</li><li data-t="docH2">B.Ed. or equivalent degree certificate</li><li data-t="docH3">Category certificate (if applicable)</li><li data-t="docH4">Identity proof (Aadhar Card, PAN Card, etc.)</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is the RPSC Senior Teacher English Result?</h3><p data-t="ea0">It is the provisional list of candidates shortlisted for eligibility checking based on their performance in the written examination held for the Senior Teacher position in English subject under Secondary Education Department.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Candidates whose roll numbers appear in the provisional list will be required to undergo document verification and detailed eligibility checking by the commission.</li></ol>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://rpsc.rajasthan.gov.in/Static/Result/6A2D78D6754F432081F2A372ACD862F2.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">rpsc.rajasthan.gov.in</span></a>
       <a class="r" href="https://rpsc.rajasthan.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">rpsc.rajasthan.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When was the RPSC Senior Teacher English Exam 2025 conducted?</h3><p data-t="a0">The written exam for Paper I and Paper II was conducted on 16 July 2026 and 17 July 2026 respectively.</p></div>
       <div class="qa"><h3 data-t="q1">When was the provisional result declared?</h3><p data-t="a1">The result was declared on 27 October 2026.</p></div>
       <div class="qa"><h3 data-t="q2">What is the next stage after the provisional result?</h3><p data-t="a2">Candidates included in the provisional list must go through eligibility checking and document verification.</p></div>
       <div class="qa"><h3 data-t="q3">Where can I check my roll number?</h3><p data-t="a3">You can check your roll number by downloading the result PDF from the official RPSC website at rpsc.rajasthan.gov.in.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check your roll number in the PDF list</li><li data-t="chkH1">Keep your educational and identity documents ready for verification</li></ul>
     </section>
     <section class="kv rel" id="exam" data-t-aria="exH">
-      <div class="h" data-t="exH">All updates for RPSC Senior Teacher English 2025</div>
+      <h2 class="h" data-t="exH">All updates for RPSC Senior Teacher English 2025</h2>
       <a class="r" href="/notice/rpsc-senior-teacher-english-exam-2025-disqualified-candidates-li/"><span><span data-t="ex0">RPSC Senior Teacher English Exam 2025 Disqualified List</span> <small class="g" data-t="exs0">Disqualified List</small></span><span class="v g num">27 Oct 2026</span></a>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/rpsc-senior-teacher-punjabi-result-2025-cut-off-scrutiny-list/"><span data-t="rel0">RPSC Senior Teacher Punjabi Result 2025 – Cut Off &amp; Scrutiny List</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/rpsc-senior-teacher-gujarati-result-2025-exam-preamble-out/"><span data-t="rel1">RPSC Senior Teacher Gujarati Result 2025 – Exam Preamble Out</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/rpsc-senior-teacher-mathematics-result-2025-provisional-list/"><span data-t="rel2">RPSC Senior Teacher Mathematics Result 2025 – Provisional List</span><span class="v g num">28 Oct 2026</span></a>
@@ -378,7 +386,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">आरपीएससी वरिष्ठ अध्यापक अंग्रेजी परिणाम 2025</h2>
       <p class="lead">राजस्थान लोक सेवा आयोग ने वरिष्ठ अध्यापक प्रतियोगी परीक्षा 2025 (अंग्रेजी विषय) के पात्रता की जांच के लिए प्रोविजनल परिणाम और कट ऑफ अंक जारी कर दिए हैं.</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >राजस्थान लोक सेवा आयोग (आरपीएससी)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >27 अक्तूबर 2026</span></div>
       <div class="r"><span >पद</span><span class="v" >वरिष्ठ अध्यापक (अंग्रेजी)</span></div>
@@ -389,61 +397,61 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >योग्यता</span><span class="v" >सेवा नियमों के अनुसार अंग्रेजी वैकल्पिक विषय के रूप में स्नातक और शिक्षा में डिग्री/डिप्लोमा (बी.एड.) या समकक्ष</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >राजस्थान लोक सेवा आयोग (आरपीएससी) ने अंग्रेजी विषय में वरिष्ठ अध्यापक प्रतियोगी परीक्षा 2025 के लिए पात्रता की जांच हेतु प्रोविजनल परिणाम और कट ऑफ अंक जारी कर दिए हैं। ग्रुप ए के अंतर्गत प्रथम प्रश्न पत्र (सामान्य ज्ञान) और द्वितीय प्रश्न पत्र (अंग्रेजी) की लिखित परीक्षा क्रमशः 16 जुलाई 2026 और 17 जुलाई 2026 को आयोजित की गई थी। परीक्षा में उपस्थित हुए और सेवा नियमों के अनुसार न्यूनतम उत्तीर्णांक प्राप्त करने वाले अभ्यर्थियों को रोल नंबर के आधार पर पात्रता जांच के लिए प्रोविजनल सूची में अस्थायी रूप से शामिल किया गया है।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >वे अभ्यर्थी जो 16-17 जुलाई 2026 को आयोजित आरपीएससी वरिष्ठ अध्यापक अंग्रेजी परीक्षा 2025 में शामिल हुए थे।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >परीक्षा तिथि (प्रथम प्रश्न पत्र)</span><span class="v" >16 जुलाई 2026</span></div>
       <div class="r"><span >परीक्षा तिथि (द्वितीय प्रश्न पत्र)</span><span class="v" >17 जुलाई 2026</span></div>
       <div class="r"><span >परिणाम जारी होने की तिथि</span><span class="v" >27 अक्टूबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >वरिष्ठ अध्यापक (अंग्रेजी)</span><span class="v" >As per notification · टीएसपी और गैर-टीएसपी क्षेत्र</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >शैक्षणिक योग्यता</span><span class="v" >सेवा नियमों के अनुसार अंग्रेजी वैकल्पिक विषय के रूप में स्नातक और शिक्षा में डिग्री/डिप्लोमा (बी.एड.) या समकक्ष</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >लिखित परीक्षा (वस्तुनिष्ठ प्रकार)</li><li >पात्रता जांच हेतु प्रोविजनल सूची</li><li >दस्तावेज सत्यापन / विस्तृत संवीक्षा</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >आधिकारिक आरपीएससी वेबसाइट rpsc.rajasthan.gov.in पर जाएं।</li><li >&#x27;समाचार और घटनाएं&#x27; या &#x27;परिणाम&#x27; अनुभाग पर जाएं।</li><li >&#x27;Sr. Teacher (Sec. Edu.) Comp. Exam - 2025 (English)&#x27; के परिणाम और कट ऑफ लिंक पर क्लिक करें।</li><li >पीडीएफ डाउनलोड करें और सूची में अपना रोल नंबर जांचें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >लिखित परीक्षा का प्रवेश पत्र</li><li >शैक्षणिक योग्यता प्रमाण पत्र और अंक तालिकाएं</li><li >बी.एड. या समकक्ष डिग्री प्रमाण पत्र</li><li >श्रेणी प्रमाण पत्र (यदि लागू हो)</li><li >पहचान प्रमाण (आधार कार्ड, पैन कार्ड, आदि)</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >आरपीएससी वरिष्ठ अध्यापक अंग्रेजी परिणाम क्या है?</h3><p >यह माध्यमिक शिक्षा विभाग के अंतर्गत अंग्रेजी विषय में वरिष्ठ अध्यापक पद के लिए आयोजित लिखित परीक्षा में प्रदर्शन के आधार पर पात्रता जांच के लिए शॉर्टलिस्ट किए गए अभ्यर्थियों की अनंतिम सूची है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >प्रोविजनल सूची में जिन अभ्यर्थियों के रोल नंबर हैं, उन्हें आयोग द्वारा दस्तावेज सत्यापन और विस्तृत पात्रता जांच से गुजरना होगा।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://rpsc.rajasthan.gov.in/Static/Result/6A2D78D6754F432081F2A372ACD862F2.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">rpsc.rajasthan.gov.in</span></a>
       <a class="r" href="https://rpsc.rajasthan.gov.in" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">rpsc.rajasthan.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >आरपीएससी वरिष्ठ अध्यापक अंग्रेजी परीक्षा 2025 कब आयोजित की गई थी?</h3><p >प्रथम और द्वितीय प्रश्न पत्र की लिखित परीक्षा क्रमशः 16 जुलाई 2026 और 17 जुलाई 2026 को आयोजित की गई थी।</p></div>
       <div class="qa"><h3 >प्रोविजनल परिणाम कब घोषित किया गया?</h3><p >परिणाम 27 अक्टूबर 2026 को घोषित किया गया।</p></div>
       <div class="qa"><h3 >प्रोविजनल परिणाम के बाद अगला चरण क्या है?</h3><p >प्रोविजनल सूची में शामिल अभ्यर्थियों को पात्रता जांच और दस्तावेज सत्यापन से गुजरना होगा।</p></div>
       <div class="qa"><h3 >मैं अपना रोल नंबर कहां देख सकता हूं?</h3><p >आप आधिकारिक आरपीएससी वेबसाइट rpsc.rajasthan.gov.in से परिणाम पीडीएफ डाउनलोड करके अपना रोल नंबर देख सकते हैं।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >पीडीएफ सूची में अपना रोल नंबर जांचें</li><li >सत्यापन के लिए अपने शैक्षणिक और पहचान दस्तावेज तैयार रखें</li></ul>
     </section>
     </details>

@@ -20,7 +20,7 @@
 <title>MPPSC Assistant Town Planner Result 2026 – Written Exam Shortlist | मध्य प्रदेश लोक सेवा आयोग सहायक नगर नियोजक रिजल्ट 2026 – लिखित परीक्षा शॉर्टलिस्ट</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Madhya Pradesh Public Service Commission (MPPSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">27 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Post Name</span><span class="v" data-t="r0v">Assistant Town Planner</span></div>
@@ -302,69 +310,69 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">Madhya Pradesh Public Service Commission (MPPSC) has announced the written examination result for the Assistant Town Planner Exam 2026 held on 20 Sep 2026. A total of 40 candidates have been provisionally shortlisted for the interview round based on Main Part A results. Candidates whose roll numbers appear in the list must submit their required documents and application formats to the commission office by 17 Nov 2026.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who appeared for the MPPSC Assistant Town Planner written exam held on 20 Sep 2026.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">Exam Date</span><span class="v" data-t="datesH0v">20 Sep 2026</span></div>
       <div class="r"><span data-t="datesH1l">Result Declaration Date</span><span class="v" data-t="datesH1v">27 Oct 2026</span></div>
       <div class="r"><span data-t="datesH2l">Last Date to Submit Documents</span><span class="v" data-t="datesH2v">17 Nov 2026</span></div>
       <div class="r"><span data-t="datesH3l">Late Fee Document Submission (1st phase)</span><span class="v" data-t="datesH3v">18 Nov 2026 to 25 Nov 2026</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Assistant Town Planner</span><span class="v" data-t="vacH0v">39 · UR 10, SC 6, ST 8, OBC 11, EWS 4</span></div>
     </section>
     <section class="kv" id="eligH" data-t-aria="eligH">
-      <div class="h" data-t="eligH">Eligibility</div>
+      <h2 class="h" data-t="eligH">Eligibility</h2>
       <div class="r"><span data-t="eligH0l">Shortlisting Criteria</span><span class="v" data-t="eligH0v">Candidates shortlisted for interview based on written exam merit (3 times vacancies + equal marks).</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Written Examination</li><li data-t="selH1">Interview</li><li data-t="selH2">Document Verification</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Check your roll number in the written exam result PDF.</li><li data-t="howH1">Arrange all required documents and certificates in the specified order as per Parishisht Prapatra-01.</li><li data-t="howH2">Send the self-attested documents by post or submit them to the MPPSC office by 17 Nov 2026.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Parishisht Prapatra-01 information sheet</li><li data-t="docH1">Copy of online application form</li><li data-t="docH2">Copy of admit card</li><li data-t="docH3">Attendance sheet and personal details sheet</li><li data-t="docH4">Attestation form</li><li data-t="docH5">High school and higher secondary marksheets</li><li data-t="docH6">Graduation/Post-graduation degree and marksheets</li><li data-t="docH7">MP employment registration certificate</li><li data-t="docH8">Local resident/domicile certificate</li><li data-t="docH9">Caste certificate (if applicable)</li><li data-t="docH10">EWS certificate (if applicable)</li><li data-t="docH11">Photo ID proof</li></ul>
     </section>
     <section class="kv" id="mistH" data-t-aria="mistH">
-      <div class="h" data-t="mistH">Common mistakes to avoid</div>
+      <h2 class="h" data-t="mistH">Common mistakes to avoid</h2>
       <ul class="steps dots"><li data-t="mistH0">Do not send documents after the last date 17 Nov 2026 without paying late fees, or your candidature may be cancelled.</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is the MPPSC Assistant Town Planner Result?</h3><p data-t="ea0">It is the written exam result and interview shortlist released by MPPSC for recruitment to Assistant Town Planner posts.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Document verification and interview schedule will be announced separately by MPPSC.</li></ol>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://mppsc.mp.gov.in/uploads/files/Written_Exam_Result_Assistant_Town_Planner_Exam_2026_Dated_27_10_2026.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">mppsc.mp.gov.in</span></a>
       <a class="r" href="https://mppsc.mp.gov.in/" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">mppsc.mp.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When was the MPPSC Assistant Town Planner written exam held?</h3><p data-t="a0">The written exam was conducted on 20 Sep 2026.</p></div>
       <div class="qa"><h3 data-t="q1">What is the last date to submit documents for the interview?</h3><p data-t="a1">The last date to submit documents to the MPPSC office is 17 Nov 2026.</p></div>
       <div class="qa"><h3 data-t="q2">How many candidates are shortlisted for the interview?</h3><p data-t="a2">A total of 40 candidates have been provisionally shortlisted for the interview.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Verify your roll number in the shortlist</li><li data-t="chkH1">Gather all mandatory certificates</li><li data-t="chkH2">Dispatch documents to reach the commission by 17 Nov 2026</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/mppsc-assistant-professor-botany-exam-2024-objection-resolution/"><span data-t="rel0">MPPSC Assistant Professor Botany Exam 2024 Objection Resolution Notice</span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/mppsc-veterinary-assistant-surgeon-interview-notice-2026/"><span data-t="rel1">MPPSC Veterinary Assistant Surgeon Interview Notice 2026</span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/mppsc-assistant-professor-exam-2025-final-answer-key-released/"><span data-t="rel2">MPPSC Assistant Professor Final Answer Key 2025 – Physics, Chemistry, Maths, History</span><span class="v g num">23 Oct 2026</span></a>
@@ -378,7 +386,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">मध्य प्रदेश लोक सेवा आयोग सहायक नगर नियोजक रिजल्ट 2026 – लिखित परीक्षा शॉर्टलिस्ट</h2>
       <p class="lead">मध्य प्रदेश लोक सेवा आयोग ने सहायक नगर नियोजक परीक्षा 2026 के लिए लिखित परीक्षा का परिणाम और साक्षात्कार हेतु अनंतिम रूप से चयनित उम्मीदवारों की अनुक्रमांकवार सूची जारी कर दी है। चयनित उम्मीदवार 17 नवंबर 2026 तक अपने दस्तावेज भेजें।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >मध्य प्रदेश लोक सेवा आयोग (एमपीपीएससी)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >27 अक्तूबर 2026</span></div>
       <div class="r"><span >पद का नाम</span><span class="v" >सहायक नगर नियोजक</span></div>
@@ -389,65 +397,65 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >लिखित परीक्षा → साक्षात्कार → दस्तावेज सत्यापन</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >मध्य प्रदेश लोक सेवा आयोग (एमपीपीएससी) ने 20 सितंबर 2026 को आयोजित सहायक नगर नियोजक परीक्षा 2026 का लिखित परीक्षा परिणाम घोषित कर दिया है। मुख्य भाग &#x27;अ&#x27; के परिणामों के आधार पर साक्षात्कार दौर के लिए कुल 40 उम्मीदवारों को अनंतिम रूप से शॉर्टलिस्ट किया गया है। जिन उम्मीदवारों के अनुक्रमांक सूची में हैं, उन्हें 17 नवंबर 2026 तक अपने आवश्यक दस्तावेज और आवेदन प्रारूप आयोग कार्यालय में भेजने होंगे।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जिन्होंने 20 सितंबर 2026 को आयोजित एमपीपीएससी सहायक नगर नियोजक लिखित परीक्षा दी थी।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >परीक्षा तिथि</span><span class="v" >20 सितंबर 2026</span></div>
       <div class="r"><span >परिणाम घोषणा तिथि</span><span class="v" >27 अक्टूबर 2026</span></div>
       <div class="r"><span >दस्तावेज जमा करने की अंतिम तिथि</span><span class="v" >17 नवंबर 2026</span></div>
       <div class="r"><span >विलंब शुल्क के साथ दस्तावेज जमा (प्रथम चरण)</span><span class="v" >18 नवंबर 2026 से 25 नवंबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >सहायक नगर नियोजक</span><span class="v" >39 · अनारक्षित 10, अ.जा. 6, अ.ज.जा. 8, अ.पि.व. 11, ई.डब्ल्यू.एस. 4</span></div>
     </section>
     <section class="kv">
-      <div class="h" >पात्रता</div>
+      <h2 class="h" >पात्रता</h2>
       <div class="r"><span >शॉर्टलिस्टिंग मानदंड</span><span class="v" >लिखित परीक्षा की मेरिट के आधार पर साक्षात्कार हेतु शॉर्टलिस्ट किए गए उम्मीदवार (रिक्तियों का 3 गुना + समान अंक)।</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >लिखित परीक्षा</li><li >साक्षात्कार</li><li >दस्तावेज सत्यापन</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >लिखित परीक्षा परिणाम पीडीएफ में अपना अनुक्रमांक जांचें।</li><li >परिशिष्ट प्रपत्र-01 के अनुसार सभी आवश्यक दस्तावेजों और प्रमाण पत्रों को निर्धारित क्रम में व्यवस्थित करें।</li><li >स्व-प्रमाणित दस्तावेजों को 17 नवंबर 2026 तक डाक द्वारा या एमपीपीएससी कार्यालय में भेजें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >परिशिष्ट प्रपत्र-01 सूचना पत्रक</li><li >ऑनलाइन आवेदन पत्र की प्रति</li><li >प्रवेश पत्र की प्रति</li><li >उपस्थिति पत्रक और व्यक्तिगत विवरण पत्रक</li><li >अनुप्रमाणन फॉर्म</li><li >हाई स्कूल और हायर सेकेंडरी अंकसूची</li><li >स्नातक/स्नातकोत्तर डिग्री और अंकसूचियां</li><li >म.प्र. रोजगार पंजीयन प्रमाण पत्र</li><li >मूल निवासी/स्थानीय निवासी प्रमाण-पत्र</li><li >जाति प्रमाण-पत्र (यदि लागू हो)</li><li >ई.डब्ल्यू.एस. प्रमाण-पत्र (यदि लागू हो)</li><li >फोटो पहचान पत्र</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >इन गलतियों से बचें</div>
+      <h2 class="h" >इन गलतियों से बचें</h2>
       <ul class="steps dots"><li >अंतिम तिथि 17 नवंबर 2026 के बाद बिना विलंब शुल्क के दस्तावेज न भेजें, अन्यथा आपकी उम्मीदवारी रद्द की जा सकती है।</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >एमपीपीएससी सहायक नगर नियोजक रिजल्ट क्या है?</h3><p >यह सहायक नगर नियोजक पदों पर भर्ती के लिए एमपीपीएससी द्वारा जारी लिखित परीक्षा परिणाम और साक्षात्कार शॉर्टलिस्ट है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >एमपीपीएससी द्वारा दस्तावेज सत्यापन और साक्षात्कार कार्यक्रम अलग से घोषित किया जाएगा।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://mppsc.mp.gov.in/uploads/files/Written_Exam_Result_Assistant_Town_Planner_Exam_2026_Dated_27_10_2026.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">mppsc.mp.gov.in</span></a>
       <a class="r" href="https://mppsc.mp.gov.in/" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">mppsc.mp.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >एमपीपीएससी सहायक नगर नियोजक लिखित परीक्षा कब आयोजित की गई थी?</h3><p >लिखित परीक्षा 20 सितंबर 2026 को आयोजित की गई थी।</p></div>
       <div class="qa"><h3 >साक्षात्कार के लिए दस्तावेज जमा करने की अंतिम तिथि क्या है?</h3><p >एमपीपीएससी कार्यालय में दस्तावेज जमा करने की अंतिम तिथि 17 नवंबर 2026 है।</p></div>
       <div class="qa"><h3 >साक्षात्कार के लिए कुल कितने उम्मीदवारों को शॉर्टलिस्ट किया गया है?</h3><p >साक्षात्कार के लिए कुल 40 उम्मीदवारों को अनंतिम रूप से शॉर्टलिस्ट किया गया है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >शॉर्टलिस्ट में अपना रोल नंबर सत्यापित करें</li><li >सभी अनिवार्य प्रमाण पत्र एकत्र करें</li><li >17 नवंबर 2026 तक आयोग को दस्तावेज प्रेषित करें</li></ul>
     </section>
     </details>

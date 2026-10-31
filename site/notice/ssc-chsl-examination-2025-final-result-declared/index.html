@@ -20,7 +20,7 @@
 <title>SSC CHSL Final Result 2025 Declared – 3515 Candidates Recommended | एसएससी सीएचएसएल अंतिम परिणाम 2025 घोषित – 3515 उम्मीदवार अनुशंसित</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Staff Selection Commission (SSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">7 Oct 2026</span></div>
       <div class="r"><span data-t="r0l">Total Vacancies</span><span class="v" data-t="r0v">3522</span></div>
@@ -301,71 +309,71 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#notH" data-t="notH">Who cannot apply</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#extraH" data-t="extraH">Other details</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The Staff Selection Commission (SSC) has released the final result for the Combined Higher Secondary (10+2) Level Examination, 2025. A total of 3515 candidates have been provisionally shortlisted against 3522 vacancies. The allocation of posts is based on merit, candidate preferences, and options exercised during the mandatory sliding and identity verification process held in September 2026. Candidates who appeared for the examination can check their final status and post-wise cut-offs through the official notice.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who appeared for the SSC CHSL Examination 2025 and participated in the sliding/identity verification process.</li></ul>
     </section>
     <section class="kv" id="notH" data-t-aria="notH">
-      <div class="h" data-t="notH">Who cannot apply</div>
+      <h2 class="h" data-t="notH">Who cannot apply</h2>
       <ul class="steps dots"><li data-t="notH0">Candidates who failed to attend the physical sliding and identity verification process.</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">First Round of Tentative Allocation Date</span><span class="v" data-t="datesH0v">17 Aug 2026</span></div>
       <div class="r"><span data-t="datesH1l">Sliding / Identity Verification Process</span><span class="v" data-t="datesH1v">01 Sep 2026 to 03 Sep 2026</span></div>
       <div class="r"><span data-t="datesH2l">Final Result Declaration Date</span><span class="v" data-t="datesH2v">07 Oct 2026</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Combined Higher Secondary Level (CHSL)</span><span class="v" data-t="vacH0v">3522 · EWS 337, SC 490, ST 252, OBC 768, UR 1675, ESM 301, OH 35, HH 43, VH 39, PwD-Others 37</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Tier-I Examination</li><li data-t="selH1">Tier-II Examination</li><li data-t="selH2">Sliding / Identity Verification Process</li><li data-t="selH3">Final Post Allocation based on Merit-cum-Preference</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official website of Staff Selection Commission (ssc.gov.in).</li><li data-t="howH1">Click on the Notice Board section or search for the CHSL 2025 final result link.</li><li data-t="howH2">Download the PDF result notice containing the list of shortlisted candidates and cut-off details.</li><li data-t="howH3">Check your roll number and name using Ctrl+F.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Photo Identity Proof</li><li data-t="docH1">Educational Certificates</li><li data-t="docH2">Caste / Category Certificate (if applicable)</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is SSC CHSL Examination?</h3><p data-t="ea0">The Staff Selection Commission Combined Higher Secondary Level Examination is a national-level competitive exam conducted to recruit candidates for various posts such as Lower Division Clerk (LDC), Junior Secretariat Assistant (JSA), and Data Entry Operator (DEO) across different ministries and departments of the Government of India.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Selected candidates will receive further instructions regarding document verification and appointment from their respective allocated departments.</li></ol>
     </section>
     <section class="kv" id="extraH" data-t-aria="extraH">
-      <div class="h" data-t="extraH">Other details</div>
+      <h2 class="h" data-t="extraH">Other details</h2>
       <div class="r"><span data-t="extraH0l">Fix Candidates</span><span class="v" data-t="extraH0v">2260</span></div>
       <div class="r"><span data-t="extraH1l">Float Candidates</span><span class="v" data-t="extraH1v">927</span></div>
       <div class="r"><span data-t="extraH2l">New Allocations</span><span class="v" data-t="extraH2v">328</span></div>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_final_chsl_2025_07102026.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">ssc.gov.in</span></a>
       <a class="r" href="https://ssc.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">ssc.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When was the SSC CHSL 2025 final result declared?</h3><p data-t="a0">The final result was declared on 07 October 2026.</p></div>
       <div class="qa"><h3 data-t="q1">How many candidates have been recommended in SSC CHSL Final Result 2025?</h3><p data-t="a1">A total of 3515 candidates have been provisionally recommended.</p></div>
       <div class="qa"><h3 data-t="q2">What was the total number of vacancies for SSC CHSL 2025?</h3><p data-t="a2">The total number of vacancies announced was 3522.</p></div>
       <div class="qa"><h3 data-t="q3">Where can I download the SSC CHSL Final Result PDF?</h3><p data-t="a3">You can download the result PDF from the official website of the Staff Selection Commission at ssc.gov.in.</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check your roll number in the recommended candidates list.</li><li data-t="chkH1">Verify your allocated post and department code.</li><li data-t="chkH2">Keep a printout of the result notice for future reference.</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/ssc-cpo-si-pet-pst-result-2025-out-paper-ii-exam-date/"><span data-t="rel0">SSC CPO SI PET PST Result 2025 Out – Paper II Exam Date</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/ssc-constable-gd-2026-pet-pst-shortlisting-result/"><span data-t="rel1">SSC Constable GD 2026 PET/PST Shortlisting Result</span><span class="v g num">12 Oct 2026</span></a>
       <a class="r" href="/notice/ssc-stenographer-grade-c-and-d-2025-final-marks-uploaded/"><span data-t="rel2">SSC Stenographer Grade C and D 2025 Final Marks Released – Check Scores</span><span class="v g num">7 Oct 2026</span></a>
@@ -379,7 +387,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">एसएससी सीएचएसएल अंतिम परिणाम 2025 घोषित – 3515 उम्मीदवार अनुशंसित</h2>
       <p class="lead">कर्मचारी चयन आयोग ने संयुक्त उच्च माध्यमिक (10+2) स्तर परीक्षा, 2025 के लिए अंतिम परिणाम घोषित कर दिया है, जिसमें मेरिट-सह-प्राथमिकता और स्लाइडिंग/पहचान सत्यापन के आधार पर 3515 उम्मीदवारों की अनंतिम रूप से सिफारिश की गई है।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >कर्मचारी चयन आयोग (एसएससी)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >7 अक्तूबर 2026</span></div>
       <div class="r"><span >कुल रिक्तियां</span><span class="v" >3522</span></div>
@@ -389,67 +397,67 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >टियर-I परीक्षा → टियर-II परीक्षा → स्लाइडिंग / पहचान सत्यापन प्रक्रिया → मेरिट-सह-प्राथमिकता के आधार पर अंतिम पद </span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >कर्मचारी चयन आयोग (एसएससी) ने संयुक्त उच्च माध्यमिक (10+2) स्तर परीक्षा, 2025 का अंतिम परिणाम जारी कर दिया है। 3522 रिक्तियों के विरुद्ध कुल 3515 उम्मीदवारों को अनंतिम रूप से शॉर्टलिस्ट किया गया है। पदों का आवंटन सितंबर 2026 में आयोजित अनिवार्य स्लाइडिंग और पहचान सत्यापन प्रक्रिया के दौरान दिए गए विकल्पों, मेरिट और उम्मीदवारों की प्राथमिकताओं के आधार पर किया गया है। परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक सूचना के माध्यम से अपनी अंतिम स्थिति और पद-वार कट-ऑफ देख सकते हैं।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जो एसएससी सीएचएसएल परीक्षा 2025 में उपस्थित हुए और स्लाइडिंग/पहचान सत्यापन प्रक्रिया में भाग लिया।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >कौन आवेदन नहीं कर सकता</div>
+      <h2 class="h" >कौन आवेदन नहीं कर सकता</h2>
       <ul class="steps dots"><li >जो उम्मीदवार भौतिक स्लाइडिंग और पहचान सत्यापन प्रक्रिया में शामिल होने में विफल रहे।</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >प्रथम दौर के अनंतिम आवंटन की तिथि</span><span class="v" >17 अगस्त 2026</span></div>
       <div class="r"><span >स्लाइडिंग / पहचान सत्यापन प्रक्रिया</span><span class="v" >01 सितंबर 2026 से 03 सितंबर 2026</span></div>
       <div class="r"><span >अंतिम परिणाम घोषणा की तिथि</span><span class="v" >07 अक्टूबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >संयुक्त उच्च माध्यमिक स्तर</span><span class="v" >3522 · आर्थिक रूप से कमजोर वर्ग 337, अनुसूचित जाति 490, अनुसूचित जनजाति 252, अन्य पिछड़ा वर्ग 768, अनारक्षित 1675, भूतपूर्व सैनिक 301, ओएच 35, एचएच 43, वीएच 39, दिव्यांग-अन्य 37</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >टियर-I परीक्षा</li><li >टियर-II परीक्षा</li><li >स्लाइडिंग / पहचान सत्यापन प्रक्रिया</li><li >मेरिट-सह-प्राथमिकता के आधार पर अंतिम पद आवंटन</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >कर्मचारी चयन आयोग की आधिकारिक वेबसाइट (ssc.gov.in) पर जाएं।</li><li >नोटिस बोर्ड अनुभाग पर क्लिक करें या सीएचएसएल 2025 अंतिम परिणाम लिंक खोजें।</li><li >शॉर्टलिस्ट किए गए उम्मीदवारों की सूची और कट-ऑफ विवरण वाले पीडीएफ परिणाम नोटिस को डाउनलोड करें।</li><li >कंट्रोल+एफ का उपयोग करके अपना रोल नंबर और नाम जांचें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >फोटो पहचान प्रमाण</li><li >शैक्षणिक प्रमाण पत्र</li><li >जाति / श्रेणी प्रमाण पत्र (यदि लागू हो)</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >एसएससी सीएचएसएल परीक्षा क्या है?</h3><p >कर्मचारी चयन आयोग संयुक्त उच्च माध्यमिक स्तर परीक्षा भारत सरकार के विभिन्न मंत्रालयों और विभागों में अवर श्रेणी लिपिक (एलडीसी), कनिष्ठ सचिवालय सहायक (जेएसए) और डेटा एंट्री ऑपरेटर (डीईओ) जैसे विभिन्न पदों पर उम्मीदवारों की भर्ती के लिए आयोजित एक राष्ट्रीय स्तर की प्रतियोगी परीक्षा है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >चयनित उम्मीदवारों को उनके संबंधित आवंटित विभागों से दस्तावेज़ सत्यापन और नियुक्ति के संबंध में आगे के निर्देश प्राप्त होंगे।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >अन्य जानकारी</div>
+      <h2 class="h" >अन्य जानकारी</h2>
       <div class="r"><span >फिक्स उम्मीदवार</span><span class="v" >2260</span></div>
       <div class="r"><span >फ्लोट उम्मीदवार</span><span class="v" >927</span></div>
       <div class="r"><span >नए आवंटन</span><span class="v" >328</span></div>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_final_chsl_2025_07102026.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">ssc.gov.in</span></a>
       <a class="r" href="https://ssc.gov.in" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">ssc.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >एसएससी सीएचएसएल 2025 का अंतिम परिणाम कब घोषित किया गया था?</h3><p >अंतिम परिणाम 07 अक्टूबर 2026 को घोषित किया गया था।</p></div>
       <div class="qa"><h3 >एसएससी सीएचएसएल अंतिम परिणाम 2025 में कुल कितने उम्मीदवारों की सिफारिश की गई है?</h3><p >कुल 3515 उम्मीदवारों की अनंतिम रूप से सिफारिश की गई है।</p></div>
       <div class="qa"><h3 >एसएससी सीएचएसएल 2025 के लिए कुल रिक्तियां कितनी थीं?</h3><p >घोषित कुल रिक्तियों की संख्या 3522 थी।</p></div>
       <div class="qa"><h3 >मैं एसएससी सीएचएसएल अंतिम परिणाम पीडीएफ कहां से डाउनलोड कर सकता हूं?</h3><p >आप कर्मचारी चयन आयोग की आधिकारिक वेबसाइट ssc.gov.in से परिणाम पीडीएफ डाउनलोड कर सकते हैं।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >अनुशंसित उम्मीदवारों की सूची में अपना रोल नंबर जांचें।</li><li >अपने आवंटित पद और विभाग कोड को सत्यापित करें।</li><li >भविष्य के संदर्भ के लिए परिणाम नोटिस का प्रिंटआउट अपने पास रखें।</li></ul>
     </section>
     </details>

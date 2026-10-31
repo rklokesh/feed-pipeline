@@ -20,7 +20,7 @@
 <title>SSC CPO SI PET PST Result 2025 Out – Paper II Exam Date | एसएससी सीपीओ एसआई पीईटी पीएसटी रिजल्ट 2025 जारी – पेपर II परीक्षा तिथि</title>
 <link rel="icon" type="image/png" sizes="64x64" href="/sarkarichart-logo-64.png">
 <link rel="apple-touch-icon" href="/sarkarichart-logo-180.png">
-<link rel="preload" as="image" href="/sarkarichart-logo-276.webp">
+<link rel="preload" as="image" href="/sarkarichart-logo-276.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&display=swap"></noscript>
@@ -189,7 +189,8 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
-.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: var(--grey); }
+.kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
+h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
 .kv .r { padding: 8px 14px; border-top: 0; }
 .kv .r + .r { border-top: 1px solid var(--line); }
 .kv .r:last-child { border-bottom: 0; }
@@ -239,7 +240,7 @@ html[lang="hi"] h1 { line-height: 1.3; letter-spacing: 0; }
 .kv.glance .h { color: var(--ink); font-weight: 600; }
 section[id], .toc { scroll-margin-top: 80px; }
 .toc { border: 1px solid var(--line); }
-.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: var(--grey); list-style: none; display: flex; justify-content: space-between; }
+.toc summary { padding: 8px 14px; background: var(--soft); cursor: pointer; color: color-mix(in srgb, var(--grey) 80%, var(--ink)); list-style: none; display: flex; justify-content: space-between; }
 .toc summary::-webkit-details-marker { display: none; }
 .toc summary::after { content: "+"; }
 .toc[open] summary::after { content: "–"; }
@@ -262,6 +263,13 @@ html[lang="hi"] .hidet { display: none; }
 @media print { .hidet { display: none; } }
 @media (max-width: 640px) { .hrow { gap: 12px; } .hrow .olg { width: 44px; height: 44px; align-self: flex-start; margin-top: 4px; } h1 { font-size: 1.8rem; } .toc ol { columns: 1; } .tbl th, .tbl td { padding: 8px 12px; } }
 @media print { .toc { display: none; } }
+/* Small phones (360px and under): the header keeps all its controls on screen */
+@media (max-width: 400px) {
+  .top { gap: 10px; }
+  .nav-r { gap: 14px; }
+  .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
+  .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -274,7 +282,7 @@ html[lang="hi"] .hidet { display: none; }
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
@@ -290,7 +298,7 @@ html[lang="hi"] .hidet { display: none; }
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
     </div>
     <section class="kv glance" id="glance" data-t-aria="key">
-      <div class="h" data-t="key">At a glance</div>
+      <h2 class="h" data-t="key">At a glance</h2>
       <div class="r"><span data-t="by">Conducted by</span><span class="v" data-t="byV">Staff Selection Commission (SSC)</span></div>
       <div class="r"><span data-t="postedL">Notice date</span><span class="v" data-t="postedV">29 Oct 2026</span></div>
       <div class="r"><span data-t="gTot">Total vacancies</span><span class="v" data-t="gTotV">10,816</span></div>
@@ -302,63 +310,63 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
-      <div class="h" data-t="aboutH">About this notice</div>
+      <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The Staff Selection Commission has released the result of the Physical Endurance Test (PET) and Physical Standard Test (PST) for the Sub-Inspector in Delhi Police and Central Armed Police Forces Examination, 2025. Out of 48,387 candidates called for the test, a total of 10,676 candidates have successfully qualified for the Paper-II examination. Paper-II is tentatively scheduled to be conducted on 28 Nov 2026. Qualified candidates should regularly check the official SSC website for admission certificates and further updates.</p>
     </section>
     <section class="kv" id="whoH" data-t-aria="whoH">
-      <div class="h" data-t="whoH">Who should read this</div>
+      <h2 class="h" data-t="whoH">Who should read this</h2>
       <ul class="steps dots"><li data-t="whoH0">Candidates who appeared for the SSC CPO 2025 PET/PST</li></ul>
     </section>
     <section class="kv" id="datesH" data-t-aria="datesH">
-      <div class="h" data-t="datesH">Important dates</div>
+      <h2 class="h" data-t="datesH">Important dates</h2>
       <div class="r"><span data-t="datesH0l">PET/PST Exam Date</span><span class="v" data-t="datesH0v">21 Jul 2026 to 30 Jul 2026</span></div>
       <div class="r"><span data-t="datesH1l">PET/PST Result Date</span><span class="v" data-t="datesH1v">29 Oct 2026</span></div>
       <div class="r"><span data-t="datesH2l">Paper-II Exam Date</span><span class="v" data-t="datesH2v">28 Nov 2026</span></div>
     </section>
     <section class="kv" id="vacH" data-t-aria="vacH">
-      <div class="h" data-t="vacH">Vacancy details</div>
+      <h2 class="h" data-t="vacH">Vacancy details</h2>
       <div class="r"><span data-t="vacH0l">Sub-Inspector (Female)</span><span class="v" data-t="vacH0v">518 · EWS 102, SC 73, ST 42, OBC 185, UR 116</span></div>
       <div class="r"><span data-t="vacH1l">Sub-Inspector (Male)</span><span class="v" data-t="vacH1v">10,298 · EWS 1779, SC 1733, ST 831, OBC 3932, UR 2023, ESM 1189</span></div>
       <div class="r"><span data-t="vacH2l">Total</span><span class="v" data-t="vacH2v">10,816</span></div>
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
-      <div class="h" data-t="selH">Selection process</div>
+      <h2 class="h" data-t="selH">Selection process</h2>
       <ol class="steps"><li data-t="selH0">Paper-I</li><li data-t="selH1">PET / PST</li><li data-t="selH2">Paper-II</li><li data-t="selH3">Detailed Medical Examination (DME)</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
-      <div class="h" data-t="howH">How to download</div>
+      <h2 class="h" data-t="howH">How to download</h2>
       <ol class="steps"><li data-t="howH0">Visit the official website of Staff Selection Commission (ssc.gov.in).</li><li data-t="howH1">Go to the Notice Board section and click on the PET/PST result link for Sub-Inspector in Delhi Police and CAPFs Examination, 2025.</li><li data-t="howH2">Check your Roll Number in the PDF result list.</li><li data-t="howH3">Download and save the result PDF for future reference.</li></ol>
     </section>
     <section class="kv" id="docH" data-t-aria="docH">
-      <div class="h" data-t="docH">Documents to keep ready</div>
+      <h2 class="h" data-t="docH">Documents to keep ready</h2>
       <ul class="steps dots"><li data-t="docH0">Admission Certificate for Paper-II</li><li data-t="docH1">Valid Photo Identity Proof</li></ul>
     </section>
     <section class="kv faq" id="expH" data-t-aria="expH">
-      <div class="h" data-t="expH">Good to know</div>
+      <h2 class="h" data-t="expH">Good to know</h2>
       <div class="qa"><h3 data-t="eq0">What is SSC CPO PET/PST Result?</h3><p data-t="ea0">It is the result of the Physical Endurance Test and Physical Standard Test conducted for candidates who qualified Paper-I of the Sub-Inspector in Delhi Police and CAPFs Examination.</p></div>
     </section>
     <section class="kv" id="aftH" data-t-aria="aftH">
-      <div class="h" data-t="aftH">What happens next</div>
+      <h2 class="h" data-t="aftH">What happens next</h2>
       <ol class="steps"><li data-t="aftH0">Qualified candidates will appear for Paper-II.</li><li data-t="aftH1">Admission certificates for Paper-II will be issued by the respective regional offices in due course.</li></ol>
     </section>
     <section class="kv" id="links" data-t-aria="links">
-      <div class="h" data-t="links">Official links</div>
+      <h2 class="h" data-t="links">Official links</h2>
       <a class="r" href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_29102026.pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">ssc.gov.in</span></a>
       <a class="r" href="https://ssc.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">ssc.gov.in</span></a>
     </section>
     <section class="kv faq" id="faq" data-t-aria="faqH">
-      <div class="h" data-t="faqH">Frequently asked questions</div>
+      <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When was the SSC CPO 2025 PET/PST result declared?</h3><p data-t="a0">The PET/PST result was declared on 29 Oct 2026.</p></div>
       <div class="qa"><h3 data-t="q1">How many candidates qualified for Paper-II?</h3><p data-t="a1">A total of 10,676 candidates have qualified for Paper-II.</p></div>
       <div class="qa"><h3 data-t="q2">When is the SSC CPO Paper-II exam scheduled?</h3><p data-t="a2">Paper-II is tentatively scheduled to be conducted on 28 Nov 2026.</p></div>
       <div class="qa"><h3 data-t="q3">Where can I download the result PDF?</h3><p data-t="a3">You can download the result PDF from the official website of the Staff Selection Commission (ssc.gov.in).</p></div>
     </section>
     <section class="kv" id="chkH" data-t-aria="chkH">
-      <div class="h" data-t="chkH">Final checklist</div>
+      <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Check your roll number in the qualified candidates list.</li><li data-t="chkH1">Note down the Paper-II exam date.</li><li data-t="chkH2">Keep checking the official regional website for admission certificates.</li></ul>
     </section>
     <section class="kv rel" data-t-aria="relH">
-      <div class="h" data-t="relH">More notices</div>
+      <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/ssc-constable-gd-2026-pet-pst-shortlisting-result/"><span data-t="rel0">SSC Constable GD 2026 PET/PST Shortlisting Result</span><span class="v g num">12 Oct 2026</span></a>
       <a class="r" href="/notice/ssc-chsl-examination-2025-final-result-declared/"><span data-t="rel1">SSC CHSL Final Result 2025 Declared – 3515 Candidates Recommended</span><span class="v g num">7 Oct 2026</span></a>
       <a class="r" href="/notice/ssc-stenographer-grade-c-and-d-2025-final-marks-uploaded/"><span data-t="rel2">SSC Stenographer Grade C and D 2025 Final Marks Released – Check Scores</span><span class="v g num">7 Oct 2026</span></a>
@@ -372,7 +380,7 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="hih">एसएससी सीपीओ एसआई पीईटी पीएसटी रिजल्ट 2025 जारी – पेपर II परीक्षा तिथि</h2>
       <p class="lead">कर्मचारी चयन आयोग ने दिल्ली पुलिस और सीएपीएफ परीक्षा 2025 के लिए उप-निरीक्षक के शारीरिक परीक्षण का परिणाम घोषित कर दिया है। कुल 10,676 उम्मीदवार पेपर-II के लिए योग्य घोषित किए गए हैं, जिसकी परीक्षा संभावित रूप से 28 नवंबर 2026 को आयोजित की जाएगी।</p>
     <section class="kv glance">
-      <div class="h" >एक नज़र में</div>
+      <h2 class="h" >एक नज़र में</h2>
       <div class="r"><span >आयोजक</span><span class="v" >कर्मचारी चयन आयोग (एसएससी)</span></div>
       <div class="r"><span >सूचना की तिथि</span><span class="v" >29 अक्तूबर 2026</span></div>
       <div class="r"><span >कुल पद</span><span class="v" >10,816</span></div>
@@ -383,59 +391,59 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >चयन प्रक्रिया</span><span class="v" >पेपर-I → पीईटी / पीएसटी → पेपर-II → विस्तृत चिकित्सा परीक्षा</span></div>
     </section>
     <section class="kv">
-      <div class="h" >इस सूचना के बारे में</div>
+      <h2 class="h" >इस सूचना के बारे में</h2>
       <p class="p" >कर्मचारी चयन आयोग ने दिल्ली पुलिस और केंद्रीय सशस्त्र पुलिस बल उप-निरीक्षक परीक्षा, 2025 के शारीरिक दक्षता परीक्षण और शारीरिक मानक परीक्षण का परिणाम जारी कर दिया है। इस परीक्षण के लिए कुल 48,387 उम्मीदवारों में से 10,676 उम्मीदवारों ने पेपर-II परीक्षा के लिए सफलतापूर्वक अर्हता प्राप्त की है। पेपर-II की परीक्षा संभावित रूप से 28 नवंबर 2026 को आयोजित की जाएगी। योग्य उम्मीदवारों को प्रवेश पत्र और अन्य अपडेट के लिए आधिकारिक एसएससी वेबसाइट पर नियमित रूप से जाना चाहिए।</p>
     </section>
     <section class="kv">
-      <div class="h" >यह किसके लिए है</div>
+      <h2 class="h" >यह किसके लिए है</h2>
       <ul class="steps dots"><li >वे उम्मीदवार जो एसएससी सीपीओ 2025 पीईटी/पीएसटी में शामिल हुए थे</li></ul>
     </section>
     <section class="kv">
-      <div class="h" >महत्वपूर्ण तिथियाँ</div>
+      <h2 class="h" >महत्वपूर्ण तिथियाँ</h2>
       <div class="r"><span >पीईटी/पीएसटी परीक्षा तिथि</span><span class="v" >21 जुलाई 2026 से 30 जुलाई 2026</span></div>
       <div class="r"><span >पीईटी/पीएसटी परिणाम तिथि</span><span class="v" >29 अक्टूबर 2026</span></div>
       <div class="r"><span >पेपर-II परीक्षा तिथि</span><span class="v" >28 नवंबर 2026</span></div>
     </section>
     <section class="kv">
-      <div class="h" >रिक्तियों का विवरण</div>
+      <h2 class="h" >रिक्तियों का विवरण</h2>
       <div class="r"><span >उप-निरीक्षक (महिला)</span><span class="v" >518 · आर्थिक रूप से कमजोर वर्ग 102, अनुसूचित जाति 73, अनुसूचित जनजाति 42, अन्य पिछड़ा वर्ग 185, अनारक्षित 116</span></div>
       <div class="r"><span >उप-निरीक्षक (पुरुष)</span><span class="v" >10,298 · आर्थिक रूप से कमजोर वर्ग 1779, अनुसूचित जाति 1733, अनुसूचित जनजाति 831, अन्य पिछड़ा वर्ग 3932, अनारक्षित 2023, भूतपूर्व सैनिक 1189</span></div>
       <div class="r"><span >कुल</span><span class="v" >10,816</span></div>
     </section>
     <section class="kv">
-      <div class="h" >चयन प्रक्रिया</div>
+      <h2 class="h" >चयन प्रक्रिया</h2>
       <ol class="steps"><li >पेपर-I</li><li >पीईटी / पीएसटी</li><li >पेपर-II</li><li >विस्तृत चिकित्सा परीक्षा</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >कैसे डाउनलोड करें</div>
+      <h2 class="h" >कैसे डाउनलोड करें</h2>
       <ol class="steps"><li >कर्मचारी चयन आयोग की आधिकारिक वेबसाइट (ssc.gov.in) पर जाएं।</li><li >निस नोटिस बोर्ड सेक्शन में जाएं और दिल्ली पुलिस और सीएपीएफ परीक्षा 2025 के लिए पीईटी/पीएसटी परिणाम लिंक पर क्लिक करें।</li><li >पीडीएफ परिणाम सूची में अपना रोल नंबर जांचें।</li><li >भविष्य के संदर्भ के लिए परिणाम पीडीएफ डाउनलोड करें और सहेजें।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >ज़रूरी दस्तावेज़</div>
+      <h2 class="h" >ज़रूरी दस्तावेज़</h2>
       <ul class="steps dots"><li >पेपर-II के लिए प्रवेश पत्र</li><li >मान्य फोटो पहचान प्रमाण</li></ul>
     </section>
     <section class="kv faq">
-      <div class="h" >जानने योग्य</div>
+      <h2 class="h" >जानने योग्य</h2>
       <div class="qa"><h3 >एसएससी सीपीओ पीईटी/पीएसटी परिणाम क्या है?</h3><p >यह दिल्ली पुलिस और सीएपीएफ परीक्षा के पेपर-I में उत्तीर्ण उम्मीदवारों के लिए आयोजित शारीरिक दक्षता परीक्षण और शारीरिक मानक परीक्षण का परिणाम है।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >आगे क्या होगा</div>
+      <h2 class="h" >आगे क्या होगा</h2>
       <ol class="steps"><li >योग्य उम्मीदवार पेपर-II के लिए उपस्थित होंगे।</li><li >पेपर-II के लिए प्रवेश पत्र संबंधित क्षेत्रीय कार्यालयों द्वारा समय पर जारी किए जाएंगे।</li></ol>
     </section>
     <section class="kv">
-      <div class="h" >आधिकारिक लिंक</div>
+      <h2 class="h" >आधिकारिक लिंक</h2>
       <a class="r" href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_29102026.pdf" target="_blank" rel="noopener"><span >आधिकारिक सूचना</span><span class="v">ssc.gov.in</span></a>
       <a class="r" href="https://ssc.gov.in" target="_blank" rel="noopener"><span >आधिकारिक वेबसाइट</span><span class="v">ssc.gov.in</span></a>
     </section>
     <section class="kv faq">
-      <div class="h" >अक्सर पूछे जाने वाले सवाल</div>
+      <h2 class="h" >अक्सर पूछे जाने वाले सवाल</h2>
       <div class="qa"><h3 >एसएससी सीपीओ 2025 पीईटी/पीएसटी परिणाम कब घोषित किया गया था?</h3><p >पीईटी/पीएसटी परिणाम 29 अक्टूबर 2026 को घोषित किया गया था।</p></div>
       <div class="qa"><h3 >पेपर-II के लिए कुल कितने उम्मीदवार योग्य हुए हैं?</h3><p >कुल 10,676 उम्मीदवार पेपर-II के लिए योग्य घोषित किए गए हैं।</p></div>
       <div class="qa"><h3 >एसएससी सीपीओ पेपर-II परीक्षा कब निर्धारित है?</h3><p >पेपर-II संभावित रूप से 28 नवंबर 2026 को आयोजित किया जाएगा।</p></div>
       <div class="qa"><h3 >मैं परिणाम पीडीएफ कहां से डाउनलोड कर सकता हूं?</h3><p >आप कर्मचारी चयन आयोग की आधिकारिक वेबसाइट (ssc.gov.in) से परिणाम पीडीएफ डाउनलोड कर सकते हैं।</p></div>
     </section>
     <section class="kv">
-      <div class="h" >अंतिम चेकलिस्ट</div>
+      <h2 class="h" >अंतिम चेकलिस्ट</h2>
       <ul class="steps dots"><li >योग्य उम्मीदवारों की सूची में अपना रोल नंबर जांचें।</li><li >पेपर-II परीक्षा की तारीख नोट करें।</li><li >प्रवेश पत्र के लिए आधिकारिक क्षेत्रीय वेबसाइट की जांच करते रहें।</li></ul>
     </section>
     </details>
