@@ -118,6 +118,20 @@ publish.yml (when the owner adds a label to an issue, open or closed):
   **Closing soon** leads with the Last date column (nearest first), Posted moves to the right (phones keep last date
   on the right); every other tab: newest official date first. Search hint shows newest open jobs + popular exams.
 
+## 3e. Added 31 Oct
+
+- **Am I eligible?** — `scripts/elig.py` (runs after pages.py) turns each job notice's age limits, as-on date, category
+  relaxations, minimum qualification and domicile into numbers (`n["elig"]`; nulls = not printed; as-on dates more than a
+  year away from the notice date are dropped). `site/elig.js` (shared by homepage + notice pages, carries its own CSS):
+  reader's DOB / category / qualification / PwD saved only in localStorage `sc-me`; homepage "Am I eligible?" link on the
+  right of the tab row; open jobs that fit get a small green ✓; each job's At a glance box answers "Yes / Not eligible /
+  Probably — check the notice" with the reason ("You are 24 on 1 Jan 2027 (limit 18–27 +3 OBC)"). Trace of the last AI run:
+  `data/debug-elig.txt` (CI logs can't be downloaded from the Mac VM). The AI sometimes answers with a bare JSON list.
+- **Permanent exam pages:** `/exam/<exam>/` without the year (e.g. `/exam/ugc-net-dec/`) shows the latest year's updates
+  and every year; yearly pages link up to it, so backlinks and ranking never split by year. 40 + 40 pages on 31 Oct.
+- **Press kit:** `/press/` (in info_pages.py; logo download, key facts).
+- **Employment News** turned off (no public job list). Exams tab removed from the homepage (30 Oct).
+
 ## 4. Board status (28 Oct 2026)
 
 - Working (47 sources): UPSC, SSC, NTA, RRB unified (follow mode), RRC NR/WR/CR, SBI, RBI, NABARD, Navy, BSF, ITBP,
