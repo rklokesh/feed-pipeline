@@ -1,9 +1,19 @@
-# Review queue — 360 pending
+# Review queue — 370 pending
 
-_Updated 2026-11-02T13:05:28+00:00_
+_Updated 2026-11-02T14:54:12+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-02 | SSC | other | Important Notice-Dates of CGEPT, 2027, Annual Skill Test, 2025 and SI in DP and CAPFs, Exa | — | — | — | — | [open](https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Exams_notice_02112026.pdf) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=67KkO5Jo6FdZhssoevm-kHLI45D7UD6wZrR8X-d9syE2tEZ7TOooYajvgcj9dGyEQJCUfYRxl9-kNpV0WKw4M9mzcXmWyOQRK7ZsNnMuZq0) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=CYnn5t2B3YCnL91CJOje9bP6R6NsoYvj4arf0OSXLMqtpMWgDJJq5joYNP1GbZVnrHJEB52CYElQYbwtk5hRhI2Ofri3eMrXOeJhBESjKMU) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=hGubv5lPCGC0q9NOXm6kMVjERxXqFU5vwKFqtQNgP4n5SVVSI3b-p6rTGPqBxdfuOXSAc5G0dTBe9vXkdL9zmw) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=Y20pOGs_rla4UaqfMYN1WaRUqPmFgSf5Pq6iBsa4BYQ3omL7TWSXaFUz5eqIw0asGuOEiHuIbygEqqNgUwVq3Y8eHjFKHA-SRRvzTEARmFc) |
+| 2026-11-02 | UPSSSC | notification | विज्ञापन संख्या-16-परीक्षा/2026, प्रारम्भिक अर्हता परीक्षा-2026 के अंतर्गत दि... | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?1F5YAssEjn6HFgMHRlcQg1lIJLJfyeNd7UUq2RcVmQY=) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=UOPcuhF-I8yg5WtUcvwDx0ZA3-_I-y0HcFea-EWXh1yLHE0BXJKkstxc_wuM4N2XezrhZvHfr3HHY8GeyTqaFNOvbbBrnY-uiWZl7wnVNSc) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=Tvvox2WLi7FLKFtXUMk887JlqEPuH0Zyqzdip3Mu6Hpd8OmrPKluQGoKtI-x2bg0etnSX3QieLCzsq5M0FbC6HK21mNt93TQJaL6zi2d2mg) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=obEzqSzA52dXiQjBxrJHgU5E1f51JeWtUFUAB8GAQXsPnKh9tywh8wFNP3O5kMxP68t3Du2z1SSdeFsK5Ti18bCxVgMcVnjwzRnxCVzzlMM) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=vxOcbCKLhrFtrwGAEddrN3cFUh9TICGlYRyUhsfeRLFMWiYt99yJYSn5rXOGxMPcedeA7EXIq83HKDq2qY5DQ8i9sjV4wt9WZHd581mJiXU) |
 | 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=qIphZMjTMftP8iYSEyhgu5pOhQzabvaFeNX_ZsfZhcZ_Btgl7X01_RGLjSV2cltf9j4sAyhRFvhyLHhfnhpI8BYNaeZk8DIHHGfzR1XEFlI) |
 | 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=CtXCgOE_MV3IpCThgmsR36tsIRTsyTYEVyNroEAAxN4p24iY1vmtPxfyKQ0F_iRiYI1_rimxibYqz_zggBDCVoTCaMxbzuKaeCtj-e2mKqs) |
 | 2026-11-02 | UPSSSC | notification | विज्ञापन संख्या-20-परीक्षा/2026, महाधिवक्ता कार्यालय (कम्प्यूटर संवर्ग) मुख्य पर... | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?TkC8ZsZcTGug9kOyEK2hNa1dulW7i8MRKIUh0C2a+UY=) |
