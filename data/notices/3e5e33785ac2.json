@@ -1,0 +1,59 @@
+{
+  "board_url": "https://nta.ac.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "stered candidates are advised to visit the official website https://ugcnet.nta.nic.in and verify the particulars in their respective Online Application Forms. Correc",
+      "source": "rule",
+      "value": "https://ugcnet.nta.nic.in"
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://ugcnet.nta.nic.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "https://ugcnet.nta.nic.in"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Junior Research Fellowship (JRF)",
+        "Assistant Professor",
+        "Ph.D. programmes"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "determining the eligibility of Indian nationals for the award of Junior Research Fellowship (JRF), appointment as Assistant Professor, and admission to Ph.D. programmes"
+      }
+    }
+  },
+  "first_seen": "2026-11-02T09:58:01+00:00",
+  "id": "3e5e33785ac2",
+  "kind": "notification",
+  "org": "NTA",
+  "pdf": {
+    "bytes": 345796,
+    "pages": 2,
+    "sha256": "46230e1c5d3d1e89e4045ce0f52503481e965b6e5924472b4ff0ea56526d68c1",
+    "text_kind": "text"
+  },
+  "source_id": "nta-home",
+  "status": "pending_review",
+  "title": "Public Notice regarding Correction in particulars of the Online Application Form for UGC-NET December 2026 Read More",
+  "url": "https://nta.ac.in/Download/Notice/Notice_20261102150155.pdf"
+}
