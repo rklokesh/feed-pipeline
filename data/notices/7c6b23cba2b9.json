@@ -1,0 +1,32 @@
+{
+  "board_url": "https://dsssb.delhi.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "PGT (History) in NDMC L. The DSSSB vide its vacancy notice/Advertisement No. 07123 dated 2211212023 with closing date 07/02124had adverLised 24 vacancies [UR-07, OBC(D)",
+      "source": "rule",
+      "value": "07123 dated"
+    },
+    "total_vacancies": {
+      "evidence": "3 dated 2211212023 with closing date 07/02124had adverLised 24 vacancies [UR-07, OBC(D)-o4, SC-06, ST:02, EWS-05 including PwBD {Cat(a)-o1, Cat(b)-o2, C",
+      "source": "rule",
+      "value": 24
+    }
+  },
+  "first_seen": "2026-11-02T11:21:41+00:00",
+  "id": "7c6b23cba2b9",
+  "kind": "result",
+  "org": "DSSSB",
+  "pdf": {
+    "bytes": 1144456,
+    "pages": 5,
+    "sha256": "96aad4e44ff5dd391ed0e0ed5e235976236a922d7ae4073d07135f8547b8d885",
+    "text_kind": "text"
+  },
+  "source_id": "dsssb-home",
+  "status": "pending_review",
+  "title": "SUPPLEMENTARY RESULT NOTICE NO_1669. Combined Examination Post Code: 811/23 Post Name PGT (History)-Male & PGT (History)-Female in DoE and PGT (History) in NDMC Date: 02-11-2026 | 1.09 MB Download",
+  "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/notice_1669.pdf"
+}
