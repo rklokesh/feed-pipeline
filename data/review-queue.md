@@ -1,9 +1,17 @@
-# Review queue — 394 pending
+# Review queue — 402 pending
 
-_Updated 2026-11-02T20:20:14+00:00_
+_Updated 2026-11-02T22:07:08+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=MUU7BrHTjr2cujUh54T8ivShU_LSdOPmYlst0F4I1dxk42lgk2CCfOMTcXcl8enBSKqhQJatg2BhCy6jHYNc8-36yrP6AaIuUktz2vAd8yA) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=DbA2yftru3_lf6seSuCyd22E0Fo1kD-MQBA-CQF-asy7sCl6H46dtNXNDrvZiOSIkgy1MCqeUOV5Tp_diuKLsetLU9ZS-iSpkDwl06oQsDA) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=yxr4kmWfq_vA8ynuZs6sjb_X6lJKQQ2vk8EyPvzg_Z_fFyuRg3tL97tucVyXKQFiU0dKcnCf_qMsGB5uOgepfATRHuzhdrTA_lDn1IH8FxE) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=RUFXdMtrGKk9XEJIOnfqqHA9LuSSmstfL88VZTw6yWOUBwVZGvViTcQLD0ugHgqn-0Koakc4LXF4DkXM2yGWavMZcQop-TSpo8QCM2X7i_U) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=O6nvAkOQOdQiJ5GxXLVLm1C2K86smG1cLN8jYSOyi_LBX0jzTAyZrL6-viFHJXpGSdaI4JU-pcqcpDVumV6_Wf335X15WBVXcblJ0vlX-Lg) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=CadUx_h9KjZPORsUpgL_iqkU-hn4jS61pL-swjtE5CbZLoyqp5jFAQ3YwYDOmrzIZ0VQWBIP981eCVxAdg6HKw) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=ZLdDCzAt5zhpCfkSdPvFzFW-VzcfatfHhpe8BRpCLjU_xScU7C_IIvMLhw3vQxr4GGUeGRUyNpusRme2T4Jnj3ETjH7pw1JesqT4hg7HHGk) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=_EZmlv-6OCJekm_Bl5Naq7QyD2hbB0hh_vuBb1ezG5CkTrBKAooutFiMPfm28o4rQwuo3TZx0SkyagDP1tnRoc2Z8xn7HkPc6rC_67AbrEs) |
 | 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=8kAYhdyAe1Gnax3_9RBELUSuGwGzZmZstlccyml-YOjDwkllo-4_p50NVyTqN3ixtpEGxadw5ZblLCvRGrpOFg) |
 | 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=0Ke0nG64vgN02pyShuRwOmxImi4Al80Vy7XhwABlHNLh6ryZLEbLTfpmSJw9MgGXCbKniiqTbJQZ2Srs-NEguySAQPvmB61HL7WZgARSrqA) |
 | 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=7sGxiNtoLRBHWxUEZKVOTHnjnLNk2nvbm_1jfzSa9dojCir20LY1iqzLcdMm3dRvMmib1biQ_kipR3MVvYDXROBDMJNCUpFhujkYNGnmeVI) |
