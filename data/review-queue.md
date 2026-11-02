@@ -1,9 +1,19 @@
-# Review queue — 341 pending
+# Review queue — 351 pending
 
-_Updated 2026-11-02T11:41:42+00:00_
+_Updated 2026-11-02T12:11:46+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=wlnWYlplmS2ryqkvRJ-RSiUJsKVooRyWvTN7b5AqduOXuq9Kkv05pYX4a-sXcMLypu5Rp9_IU_IRzS8Sin7ykwP6vhMefebXbKpH6UDzNto) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=P-LV905mMQ8bmguMIvd6R8Wx_xVlCdUw270_YiQD6tj8hlgPAA0Bg5sfeSONPUDWf7I_toC7SgcwTsgAwEPD-pE7ZpQDFVxiu63Y1lsEzRM) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=BdKqeTDqF5pPS5ACTgx01WWRwujGT-UJQ1lgrbKl-3fJaEpWUKv25qojRHhWWxZgdGRvEz7029N2ffMINnhYGO7s0c6GdvHFWynRh4UmVZY) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=nICJNnHslfUBFjortqvb_dItFDAA6MGjg_Q5gTjizIt85oVQCP9UdQRxrYucro5QEFjuuyhc9WJ56R4p7PTpxS47BPrSuI2Mq6didLrsSYw) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=OpwSRPLkidpWYeMDvYH3lt4IKh72AUk-Lbi2CxPjGeKyJoa2zznlzYph4XpdnY91YKi8c7uh_SRCTlztYy54rXaluepjJ5W0Xb5iI6WuBSU) |
+| 2026-11-02 | MPPSC | answer_key | Provisional Answer Key - Assistant District Public Prosecution Officer Exam 2026, Dated 02 | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/files/Provisional_Answer_Key_ADPPO_Exam_2026_Dated_02_11_2026.pdf) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=_GihGWupWJr0KlomXlsN8XRmMPtJrXdSbIprgZ7s7KIzH3vDISGNh-ymZWrFS0lb-5rqR1qBHGn2kGLmsf9KlpjC-MRKlmtrYUicsMpnKbY) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=OCtOpgC67N6kGzDf-5UwBneHE6U__Zxq0vw3BZrRf2bst5rYkmTnrSyGP8nVPePAfH8LoPz_DVH4PsBjaqe_i6W8u6VRYAMxCbi1_bJPOvc) |
+| 2026-11-02 | RRB | notification | RRB CEN 01/2026: POSTPONEMENT OF CBT1 AT ONGOLE | — | — | — | — | [open](https://rrb.indianrailways.gov.in/-/image/1793620397650POSTPONEMENT_OF_CBT1_AT_ONGOLE.pdf/examsDocuments) |
+| 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=Ic9GAZh-trerm7wiAaPuUtdHzrbx7ZszqOSxMKrDWwzqonyF8PKMHyDO8gyXH-TirqRNJcWeTFemnZHnCZxoUg) |
 | 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=-iFt1nLiNBmhV6lMspTjGOMWBKcJbJ4NH4J8VO0IUTGwJT6Ys9tJSCI9htDsR26HFYSs5ynmtmYZVOkqymccdw) |
 | 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=GhH_gJJbO4UlzZhISZwhJX38If2pHrPyaYS2jpuycYspgjjSF-noYPLLXhO7iwgZLZzzfWUVX6OQOI33JSkjJP3iaV11_KsqeKu3XfxwaMY) |
 | 2026-11-02 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=fkJWZ8nUcp8X0a2wjAZOPsD7S4GFbqmeSsER53LpcDMwagtXyT4vyJXkR6CD547rCUD-q4zu_AhsJjAnKXiS4MshG9QnvB7LNNdIIhXVF1U) |

@@ -1,0 +1,27 @@
+{
+  "board_url": "https://rrb.indianrailways.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest:429"
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": ") बोड(cid:330) /RAILWAY RECRUITMENT BOARDS वेबसाइट/Website: https://rrb.indianrailways.gov.in Notice on postponement of CBT1 examination at one centre of Ongole and, one cen",
+      "source": "rule",
+      "value": "https://rrb.indianrailways.gov.in"
+    }
+  },
+  "first_seen": "2026-11-02T12:05:04+00:00",
+  "id": "c0efb515d779",
+  "kind": "notification",
+  "org": "RRB",
+  "pdf": {
+    "bytes": 645255,
+    "pages": 1,
+    "sha256": "5aa6cb26c11148590accceeb3b869a0c14ce4caf35479aab6dc3357a62e5a2fa",
+    "text_kind": "text"
+  },
+  "source_id": "rrb-unified",
+  "status": "pending_review",
+  "title": "RRB CEN 01/2026: POSTPONEMENT OF CBT1 AT ONGOLE",
+  "url": "https://rrb.indianrailways.gov.in/-/image/1793620397650POSTPONEMENT_OF_CBT1_AT_ONGOLE.pdf/examsDocuments"
+}
