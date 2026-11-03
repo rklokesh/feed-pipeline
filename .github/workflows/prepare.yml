@@ -57,7 +57,22 @@ jobs:
           git diff --cached --quiet && { echo "no changes"; exit 0; }
           git commit -m "Prepare: cards + auto-publish $(date -u +%Y-%m-%dT%H:%MZ)"
           if git diff --name-only HEAD~1 | grep -q '^site/'; then echo "site=1" >> "$GITHUB_OUTPUT"; fi
-          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
+          ok=0
+          for i in 1 2 3; do
+            if git pull --rebase -q >push.log 2>&1 && git push -q >>push.log 2>&1; then ok=1; break; fi
+            git rebase --abort >/dev/null 2>&1 || true
+            sleep 5
+          done
+          if [ "$ok" != 1 ]; then
+            # make the failure visible without the Actions log: a comment on the newest open issue labelled "health"
+            body=$(tail -c 1500 push.log | python3 -c 'import json,sys;print(json.dumps({"body":"Prepare could not save its work:\n```\n"+sys.stdin.read()+"\n```"}))')
+            n=$(curl -s -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/repos/$GITHUB_REPOSITORY/issues?labels=health&state=open&per_page=1" | python3 -c 'import json,sys;d=json.load(sys.stdin);print(d[0]["number"] if d else "")')
+            if [ -n "$n" ]; then curl -s -o /dev/null -X POST -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/repos/$GITHUB_REPOSITORY/issues/$n/comments" -d "$body"
+            else curl -s -o /dev/null -X POST -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/repos/$GITHUB_REPOSITORY/issues" -d "$(echo "$body" | python3 -c 'import json,sys;d=json.load(sys.stdin);d.update(title="Prepare could not save",labels=["health"]);print(json.dumps(d))')"; fi
+            cat push.log; exit 1
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   deploy:
     needs: prepare
     if: (needs.prepare.outputs.published != '0' && needs.prepare.outputs.published != '') || needs.prepare.outputs.site == '1'
