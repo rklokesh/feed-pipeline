@@ -30,6 +30,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 NOTICES = ROOT / "data" / "notices"
 TEXT = ROOT / "data" / "text"
 REPO = os.environ.get("GITHUB_REPOSITORY", "rklokesh/feed-pipeline")
+LOG: list[str] = []
 TYPES = ["Job", "Result", "Admit card", "Answer key", "Update", "Admission"]
 
 PROMPT = """You prepare Indian government job notices for a calm, trustworthy listing site read by job aspirants.
@@ -84,7 +85,8 @@ def ai_card(n: dict) -> tuple[dict | None, str]:
             if r.status_code not in (429, 500, 502, 503):
                 break
         if r is None or r.status_code != 200:
-            reasons.append(f"{prov['name']}:{getattr(r, 'status_code', 'err')}")
+            reasons.append(f"{prov['name']}:{getattr(r, 'status_code', 'err')}"
+                           + (f" {r.text[:160]!r}" if r is not None else ""))
             continue
         try:
             card = _json_from(r.json()["choices"][0]["message"]["content"])
@@ -203,6 +205,7 @@ def main():
         card, how = ai_card(n)
         if not card:
             print(f"  {n['id']}: no card ({how})")
+            LOG.append(f"{n['id']} no card: {how}"[:400])
             continue
         n["card"] = card
         if not card.get("list", True):
@@ -229,6 +232,10 @@ def main():
         with open(out, "a") as fh:
             fh.write(f"published={published}\n")
     print(f"{published} notices went live")
+    # a short trace we can read without the Actions log (kept in the repo, overwritten each run)
+    LOG.insert(0, f"{time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}: {len(todo)} needed a card, {published} went live, providers: "
+               + ", ".join(p['name'] for p in _providers()))
+    (ROOT / "data" / "debug-prepare.txt").write_text("\n".join(LOG) + "\n")
 
 
 if __name__ == "__main__":
