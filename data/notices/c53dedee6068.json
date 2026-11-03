@@ -1,20 +1,6 @@
 {
   "board_url": "https://nta.ac.in/",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "Common Entrance Test",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "Correction window notice for an already submitted application form, not a new job opening, result, admit card, or answer key.",
-    "summary_en": "Notice regarding correction in particulars of the online application form for Rashtriya Military School Common Entrance Test 2026.",
-    "summary_hi": "राष्ट्रीय मिलिट्री स्कूल प्रवेश परीक्षा 2026 के ऑनलाइन आवेदन पत्र में विवरण सुधार के संबंध में सूचना।",
-    "title_en": "RMS CET 2026 Application Form Correction",
-    "title_hi": "राष्ट्रीय मिलिट्री स्कूल प्रवेश परीक्षा 2026 आवेदन पत्र सुधार",
-    "type": "Job",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -27,10 +13,10 @@
     "bytes": 915917,
     "pages": 2,
     "sha256": "588e5ef8b1e7658e1874f288523994bf5c3c48b99eaf2ace84c6400fe8061846",
-    "text_kind": "scanned"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "nta-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "Correction in Particulars of the Online Application Form of Rashtriya Military School Common Entrance Test (RMS CET) 2026 -Reg. Read More",
   "url": "https://nta.ac.in/Download/Notice/Notice_20261027133408.pdf"
 }

@@ -1,20 +1,6 @@
 {
   "board_url": "https://dsssb.delhi.gov.in/",
-  "card": {
-    "confidence": "medium",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "Junior Engineer (Mechanical)",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "Internal notice/circular without vacancy or application details",
-    "summary_en": "Notice regarding Junior Engineer Mechanical post code 54/24 under Irrigation and Flood Control Department.",
-    "summary_hi": "सिंचाई और बाढ़ नियंत्रण विभाग के तहत कनिष्ठ अभियंता मेकेनिकल पोस्ट कोड 54/24 के संबंध में नोटिस।",
-    "title_en": "DSSSB Junior Engineer Mechanical Post Code 54/24 Notice",
-    "title_hi": "DSSSB कनिष्ठ अभियंता मेकेनिकल पोस्ट कोड 54/24 नोटिस",
-    "type": "Job",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -27,10 +13,10 @@
     "bytes": 469892,
     "pages": 2,
     "sha256": "d236528ffe5a4e19728f438e8ba7123d5bb013b5f19821eacb8cca4d3f041a7a",
-    "text_kind": "scanned"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "dsssb-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "NOTICE NO: 206 POST: JUNIOR ENGINEER (MECHANICAL) POST CODE-54/24 DEPARTMENT:- IRRIGATION AND FLOOD CONTROL Date: 23-10-2026 | 458.88 KB Download",
   "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/notice_no_206.pdf"
 }

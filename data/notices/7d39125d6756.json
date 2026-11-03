@@ -1,21 +1,7 @@
 {
   "baseline_sample": true,
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
-  "card": {
-    "confidence": "low",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": null,
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "PDF text is empty, insufficient information to process notice",
-    "summary_en": "",
-    "summary_hi": "",
-    "title_en": "",
-    "title_hi": "",
-    "type": "Job",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -28,10 +14,10 @@
     "bytes": 2819080,
     "pages": 6,
     "sha256": "96a8cb8262dce988380f74aea9bc2ca74427e933f43962b2475dc66866ded197",
-    "text_kind": "scanned"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "upsssc-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?EnBiDam5l0HVSQl05dMHcAMjiB0yJem9ux0kHQ/HBhI="
 }

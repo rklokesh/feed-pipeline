@@ -1,30 +1,17 @@
 {
   "board_url": "https://www.ibps.in/",
-  "card": {
-    "confidence": "low",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "Server Administrator, Programming Assistant, Assistant",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "PDF text is empty, insufficient details to list the job notice.",
-    "summary_en": "The PDF content is empty. Please check the official IBPS website for details.",
-    "summary_hi": "पीडीएफ सामग्री खाली है। कृपया विवरण के लिए आधिकारिक आईबीपीएस वेबसाइट देखें।",
-    "title_en": "IBPS Server Administrator, Programming Assistant and Assistant",
-    "title_hi": "आईबीपीएस सर्वर प्रशासक, प्रोग्रामिंग सहायक और सहायक",
-    "type": "Job",
-    "vacancies": null
-  },
+  "card": null,
   "fields": {},
   "first_seen": "2026-11-03T16:16:29+00:00",
   "id": "36afd076ffe9",
   "kind": "notification",
   "org": "IBPS",
   "pdf": {
-    "error": "SSLError: HTTPSConnectionPool(host='www.ibps.in', port=443): Max retries exceeded with url: /wp-content/uploads/Advertisement-for-Server-Administrator-Programming-Assistant-and-Assistant-Oct._Nov.-202"
+    "error": "SSLError: HTTPSConnectionPool(host='www.ibps.in', port=443): Max retries exceeded with url: /wp-content/uploads/Advertisement-for-Server-Administrator-Programming-Assistant-and-Assistant-Oct._Nov.-202",
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "ibps-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "IBPS Advertisement Posted on 29 Oct, 2026",
   "url": "https://www.ibps.in/wp-content/uploads/Advertisement-for-Server-Administrator-Programming-Assistant-and-Assistant-Oct._Nov.-2026.pdf"
 }

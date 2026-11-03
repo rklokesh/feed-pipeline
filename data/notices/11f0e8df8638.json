@@ -1,31 +1,18 @@
 {
   "baseline_sample": true,
   "board_url": "https://www.ibps.in/",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "Specialist Officers",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "PwBD category guidelines and notices are not direct job application links for the main listing.",
-    "summary_en": "Important notice regarding PwBD category candidates for CRP SPL-XVI.",
-    "summary_hi": "सीआरपी एसपीएल-16 के लिए दिव्यांग श्रेणी के उम्मीदवारों से संबंधित महत्वपूर्ण सूचना।",
-    "title_en": "IBPS CRP SPL-XVI PwBD Category Notice",
-    "title_hi": "आईबीपीएस सीआरपी एसपीएल-16 दिव्यांग श्रेणी सूचना",
-    "type": "Job",
-    "vacancies": null
-  },
+  "card": null,
   "fields": {},
   "first_seen": "2026-10-27T22:24:34+00:00",
   "id": "11f0e8df8638",
   "kind": "other",
   "org": "IBPS",
   "pdf": {
-    "error": "SSLError: HTTPSConnectionPool(host='www.ibps.in', port=443): Max retries exceeded with url: /wp-content/uploads/Notice-clarification-for-PwD.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: "
+    "error": "SSLError: HTTPSConnectionPool(host='www.ibps.in', port=443): Max retries exceeded with url: /wp-content/uploads/Notice-clarification-for-PwD.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: ",
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "ibps-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "12 Aug 2026 Important Notice dated 12.08.2026 for PwBD Category Candidates for CRP SPL-XVI",
   "url": "https://www.ibps.in/wp-content/uploads/Notice-clarification-for-PwD.pdf"
 }

@@ -1,21 +1,7 @@
 {
   "baseline_sample": true,
   "board_url": "https://www.jpsc.gov.in/uni_notice.php",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": null,
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "RTI information document, not a job or recruitment notice",
-    "summary_en": "This notice contains information related to RTI. Aspirants do not need to take any action.",
-    "summary_hi": "यह सूचना सूचना के अधिकार से संबंधित है। अभ्यर्थियों को किसी कार्रवाई की आवश्यकता नहीं है।",
-    "title_en": "JPSC RTI Related Information",
-    "title_hi": "झारखंड लोक सेवा आयोग सूचना का अधिकार संबंधित जानकारी",
-    "type": "Update",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -28,10 +14,10 @@
     "bytes": 119189,
     "pages": 1,
     "sha256": "ad4fea770c6f385fa7b83bdde726334dc83cb66ee282a0a4881a0c5502c201a3",
-    "text_kind": "scanned"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "jpsc-notices",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "Public Notice",
   "url": "https://www.jpsc.gov.in/data/RTI Related Information-60 Days.pdf"
 }

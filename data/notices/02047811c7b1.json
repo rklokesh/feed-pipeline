@@ -1,30 +1,17 @@
 {
   "board_url": "https://rssb.rajasthan.gov.in/",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "Common Eligibility Test",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "Withdrawal candidates list is an internal notice/status update, not a job, result, admit card, or answer key.",
-    "summary_en": "List of candidates who have withdrawn their applications for the Common Eligibility Test (Senior Secondary Level).",
-    "summary_hi": "समान पात्रता परीक्षा उच्च माध्यमिक स्तर के लिए आवेदन वापस लेने वाले अभ्यर्थियों की सूची।",
-    "title_en": "RSSB CET Senior Secondary Level Withdrawal Candidates List",
-    "title_hi": "राजस्थान कर्मचारी चयन बोर्ड पात्रता परीक्षा उच्च माध्यमिक स्तर वापस लिए गए आवेदन सूची",
-    "type": "Job",
-    "vacancies": null
-  },
+  "card": null,
   "fields": {},
   "first_seen": "2026-10-27T12:16:40+00:00",
   "id": "02047811c7b1",
   "kind": "other",
   "org": "RSSB Rajasthan",
   "pdf": {
-    "error": "HTTPError: 404 Client Error: Not Found for url: https://rssb.rajasthan.gov.in/storage/news_item/1793099273.pdf"
+    "error": "HTTPError: 404 Client Error: Not Found for url: https://rssb.rajasthan.gov.in/storage/news_item/1793099273.pdf",
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "rssb-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "27-10-2026 - Common Eligibility Test(Senior Secondary Level) 2026 : List of Withdrawal Candidates Application Numbers",
   "url": "https://rssb.rajasthan.gov.in/storage/news_item/1793099273.pdf"
 }

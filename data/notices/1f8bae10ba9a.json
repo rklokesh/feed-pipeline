@@ -1,21 +1,7 @@
 {
   "baseline_sample": true,
   "board_url": "https://bssc.bihar.gov.in/NoticeBoard.htm",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "Inter Level Posts",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "document scrutiny and counselling notice for a specific court case order related to an old exam",
-    "summary_en": "Notice regarding scrutiny of documents and counselling for the 1st Inter Level Combined Competitive Exam 2014 in light of court orders.",
-    "summary_hi": "न्यायालय के आदेश के आलोक में प्रथम इंटर स्तरीय संयुक्त प्रतियोगिता परीक्षा 2014 के लिए दस्तावेजों की जांच और काउंसलिंग के संबंध में सूचना।",
-    "title_en": "BSSC Inter Level Combined Competitive Exam 2014 Document Scrutiny",
-    "title_hi": "बिहार कर्मचारी चयन आयोग इंटर स्तरीय संयुक्त प्रतियोगिता परीक्षा २०१४ दस्तावेज जांच",
-    "type": "Job",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -28,10 +14,10 @@
     "bytes": 2606232,
     "pages": 3,
     "sha256": "1cd125e63b58186720e38c03c39a147d1ffcdbf6f36ea0ad259e75910ff3daeb",
-    "text_kind": "scanned"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "bssc-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "16-10-2026 06060114 Notice Regarding Scrutiny of Documents (Counselling) for Adv. No.- 06060114, Post- 1st Inter Level Combined Competitive Exam-2014 (In the Light of Order Passed in CWJC No.- 2548/2022) Praptra-1 Form XVIIIB",
   "url": "https://bssc.bihar.gov.in/Advertisement/4607_06060114_notice.pdf"
 }
