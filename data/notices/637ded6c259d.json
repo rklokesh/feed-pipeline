@@ -1,0 +1,50 @@
+{
+  "board_url": "https://uppsc.up.nic.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "262/01 /-3/2o25--26"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "262/01 /-3/2o25--26"
+      }
+    },
+    "apply_last": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-10"
+    },
+    "apply_last_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_last": "10.11.2026"
+      }
+    }
+  },
+  "first_seen": "2026-11-03T12:36:06+00:00",
+  "id": "637ded6c259d",
+  "kind": "notification",
+  "org": "UPPSC",
+  "pdf": {
+    "bytes": 2312434,
+    "pages": 1,
+    "sha256": "1e132cd02231f32a21737eb130470a7d575da1a5ca193aba51a1022869b4c298",
+    "text_kind": "text"
+  },
+  "source_id": "uppsc-home",
+  "status": "pending_review",
+  "title": "10 Nov 2026 NOTICE REGARDING ADVT. NO. A-1/E-1/2025, COMBINED STATE/UPPER SUBORDINATE SERVICES EXAM.-2025",
+  "url": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagk3H4ltFfLCjlXyC4UwMTq6"
+}
