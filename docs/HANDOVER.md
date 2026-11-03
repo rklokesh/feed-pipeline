@@ -323,3 +323,14 @@ SEO shows 69 only because of the pre-launch noindex (the one failing check); go_
 3. Since retype.py (3h) wrote reports/retype.txt, prepare's Save step had an unsaved file and every `git pull --rebase` failed
    silently. Save now adds `reports/`, fails loudly, and posts the git error as a comment on the "Daily health report" issue.
    data/debug-prepare.txt shows each run's card count / failures.
+
+## 3m. Accuracy check (3 Nov 2026)
+- scripts/verify.py: every date, vacancy count and fee shown on a page must appear in the saved PDF text (many date formats,
+  Hindi months, Devanagari digits, ranges like "17th to 18th November", scanned "2O26"). Skips what it can't read (old Hindi
+  fonts, (cid:) junk, OCR'd or cut-off text for numbers) and the notice's own date. Report: reports/verify.txt.
+- Runs at the end of prepare.yml's page step with --act: 1st miss -> n["rewrite"]=True (page re-written from the PDF on the
+  next run); still missing a key fact (last date / apply from / vacancies) -> status "held" (off site, Telegram, sitemap) and
+  listed in the daily health report. A held page is released automatically once it passes.
+- First run: 182 live pages, 8 flagged (e.g. SBI/IBPS exam date shown as the 1st when the PDF gives only the month; a UPPSC
+  corrigendum showing 21 Oct where the PDF says 21.09.2026). pages.py prompt now forbids turning a month into the 1st.
+- retype.py: AI "Admission" that isn't a real entrance exam (UGC-NET, CTET) is judged by the job rules.
