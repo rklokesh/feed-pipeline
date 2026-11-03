@@ -306,3 +306,11 @@ SEO shows 69 only because of the pre-launch noindex (the one failing check); go_
 - Browse pages (/up-govt-jobs/, /12th-pass-govt-jobs/ ...) still narrow the list via window.SC_PRESET and show one grey line:
   "UP · 21 notices · All notices". State pages open on All (every notice for that state); education pages open on Jobs.
 - "Am I eligible?" stays on notice pages (At a glance row) and the ✓ marks on the homepage.
+
+## 3k. Public repo (3 Nov 2026)
+- Private repos get 2,000 free Actions minutes a month; we ran out on 31 Oct (deploy/prepare/telegram stopped). The repo is now
+  public (unlimited minutes) and renamed to `rklokesh/feed-pipeline` (no description, website, topics, wiki or projects).
+- History rewritten first: all commits use `rklokesh <rklokesh@users.noreply.github.com>`; the owner's name and company were
+  removed from every file in every commit. Secrets were never committed (scanned all history); they stay in GitHub secrets.
+- No licence file on purpose: public code without a licence stays all-rights-reserved.
+- setup-timer.sh / setup-runner.sh point at the new name; the Mac timer needs `bash setup-timer.sh` once to pick it up.
