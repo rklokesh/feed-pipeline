@@ -1,9 +1,20 @@
-# Review queue — 434 pending
+# Review queue — 445 pending
 
-_Updated 2026-11-03T05:14:49+00:00_
+_Updated 2026-11-03T07:02:51+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-03 | NTA | other | Procedure for Duplicate Score Card | — | — | — | — | [open](https://nta.ac.in/Download/Notice/Duplicate_Score_Card.pdf) |
+| 2026-11-03 | NTA | update | Corrigendum | — | — | — | — | [open](https://nta.ac.in/Download/Notice/NTA_Corrigendum_Duplicate_Scorecard.pdf) |
+| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=I8bQl711p8WaNq6AhPj2e8xhiq6iXmj6B0vI-thGJKkAJ50d7qkyYs8ppkGhTxUimrDuoIkkK9lA050d8FG7Sg) |
+| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=YT6IJQkDcI1cPhCw6CzxQWjVnPnChG7DbhE7TJl7N8ex5AeTBGtO3JaE4xQGOUTiqoHEqjoQpCaOgAIdOeKLbPbXR7OWv3kr9Y3KESdeR8s) |
+| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=2rjFxYRsKjSdK2t6tkpf0LDN2lHjvIKNU_EzEfArdTjuKK7Y-k85KKkQ_dwgXwh0ZCUv2TwhCQnnIFEG2fkE0zWmGXro9Bg2owLseuD6TcM) |
+| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=5lVTIltt6mCpj6OEFMBfubG5CQqqmVMyiXXKzResRhwC96B6FOr8HEAhG4n-rkP2jf9xip--yOU7rOV_hEJUSjD8VTpZkQdnWFR6VwO9yqI) |
+| 2026-11-03 | BSF | notification | OPENING OF OBJECTION MANAGEMENT PORTAL IN CONNECTION WITH COMPUTER BASED TEST (CBT) CONDUC | — | — | — | — | [open](https://d3t79nicn48uzj.cloudfront.net/bsf/custom/1793685688.pdf) |
+| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=uene91nCG5cRFSiGvzYcsm_8D8KCD_bcJHIzw2qTDjTB2f9yGl7tiuzf_jipaPeCaYOUFGvxS_fEE7JmYw4RyeTNeyPVNheph_KV-6o_GGY) |
+| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=qyXExZjzWaZhmwmmZA6Mx-6JyhHUN1H4bdQDhAYE_lNooEUC36mc1FubC3rQhvjVKdjgFq0yPJsdqGfnhFXDqfRpLXXn311XDrjVVVy233k) |
+| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=3xOI1nnsrXomilLIuJTcRoYMwB-teSlzzT5EQI7kjYmeDfuIf7mz2deuwBxfSkPtFT6raDnDXt6ZjRQov7a4vLGhXoo_27-hD1_MfAx2Tyg) |
+| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=CFVcPplZ3GnzZ8KVBa_ba8FH2XjWyiKJxv18wdAIRRkwRNUbvPRqHk7S1GP7DE00S7Ml7gKft0cFMfnGkiQC82rmjuGEFz-pXQ0xcq8C0nE) |
 | 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=9cQzFbz5v_JOFwjZX8Z719UyQqgqcbaMtxYmLne-MxmcR4XrTkrlDD69jT2kiY2EGE59kk_0r2Pd_OXSGWNGs9rdl0oo5iJ1bFJA8W1u5F0) |
 | 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=3W56_sA9qY5ffP3zSRw__1nm9M5rzXgiMsoxMT9ITCT14d-8NhwaH4EBDq4LOtSY4lvUuEKdOLRZHLhzkp4lmbSHQoniuUWarZmRNpc8nYo) |
 | 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=w3AYp45uOnzNOxs2dnQrZxSLNUpRhTUV1zy1_gubUp2Shn5iy9G6sIMVT4bSGjCpSdRmVheYerHPcSlX7d2iHEGVAjTaTO4g4H1di79acDY) |
