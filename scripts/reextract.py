@@ -8,6 +8,7 @@ Writes a short report to reports/reextract.txt.
 """
 from __future__ import annotations
 
+import datetime as dt
 import json
 import pathlib
 import shutil
@@ -23,15 +24,28 @@ NOTICES = ROOT / "data" / "notices"
 TEXT = ROOT / "data" / "text"
 
 
+def needs_ocr(n, t) -> bool:
+    """Gibberish text (old Hindi fonts), or a scanned PDF with no text at all (UPSSSC, many state boards).
+    Done once per notice, only for the last 30 days."""
+    if (n.get("pdf") or {}).get("text_kind") in ("ocr-legacy-font", "ocr") or n.get("ocr_tried"):
+        return False
+    if (n.get("first_seen") or "") < (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=30)).isoformat():
+        return False
+    txt = t.read_text(errors="ignore") if t.exists() else ""
+    return looks_garbled(txt) if txt.strip() else True
+
+
 def targets(ids):
     for f in sorted(NOTICES.glob("*.json")):
         n = json.loads(f.read_text())
         t = TEXT / f"{n['id']}.txt"
         if ids and n["id"] not in ids:
             continue
-        if not ids and not (t.exists() and looks_garbled(t.read_text(errors="ignore"))):
+        if not ids and not needs_ocr(n, t):
             continue
-        if n.get("status") not in ("approved", "skipped") or not str(n.get("url", "")).lower().split("?")[0].endswith(".pdf"):
+        pdf = n.get("pdf") or {}
+        is_pdf = str(n.get("url", "")).lower().split("?")[0].endswith(".pdf") or pdf.get("text_kind") in ("scanned", "text")
+        if n.get("status") not in ("approved", "skipped") or not is_pdf:
             continue
         yield f, n
 
@@ -40,7 +54,7 @@ def fetch(folder: pathlib.Path, ids):
     """Step 1 (Mac runner, Indian connection): download the PDFs into a folder."""
     folder.mkdir(parents=True, exist_ok=True)
     report, k = [], 0
-    for f, n in targets(ids):
+    for f, n in sorted(targets(ids), key=lambda fn: fn[1].get("first_seen") or "", reverse=True):   # newest first
         try:
             (folder / f"{n['id']}.pdf").write_bytes(download(n["url"], referer=n.get("board_url") or ""))
             k += 1
@@ -65,6 +79,8 @@ def ocr(folder: pathlib.Path):
         text = ocr_pdf(pdf.read_bytes(), pages=4)
         if len(text.strip()) < 200 or looks_garbled(text):
             report.append(f"{n['id']} {n.get('org')}: OCR gave too little text")
+            n["ocr_tried"] = True                 # don't download it again every 6 hours
+            f.write_text(json.dumps(n, ensure_ascii=False, indent=2, sort_keys=True))
             continue
         (TEXT / f"{n['id']}.txt").write_text(text)
         n.setdefault("pdf", {})["text_kind"] = "ocr-legacy-font"
