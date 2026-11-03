@@ -1,0 +1,5 @@
+# itbpmain https://www.itbpolice.nic.in/
+## plain fetch failed: HTTPSConnectionPool(host='www.itbpolice.nic.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.itbpolice.nic.in'. (_ssl.c:1010)")))
+## browser failed: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.itbpolice.nic.in/
+Call log:
+navigating to "https://www.itbpolice.nic.in/", waiting until "domcontentloaded"
