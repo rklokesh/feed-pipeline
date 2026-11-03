@@ -10,8 +10,8 @@
     "skip_reason": "",
     "summary_en": "IBPS has invited online applications for the Common Recruitment Process for Specialist Officers (CRP SPL-XVI) for vacancies of 2027-28. Eligible candidates can apply online through the official website.",
     "summary_hi": "आईबीपीएस ने वर्ष 2027-28 की रिक्तियों के लिए स्पेशलिस्ट ऑफिसर (सीआरपी एसपीएल-16) हेतु ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
-    "title_en": "IBPS CRP SPL XVI Recruitment 2027",
-    "title_hi": "आईबीपीएस सीआरपी एसपीएल 16 भर्ती 2027",
+    "title_en": "IBPS CRP SPL XVI Recruitment 2027 – Apply Online for Specialist Officers Posts",
+    "title_hi": "आईबीपीएस सीआरपी एसपीएल 16 भर्ती 2027 – स्पेशलिस्ट ऑफिसर पदों के लिए ऑनलाइन आवेदन करें",
     "type": "Job",
     "vacancies": null
   },
@@ -19,7 +19,7 @@
   "elig": {
     "age_max": 30,
     "age_min": 20,
-    "age_on": "2026-07-01",
+    "age_on": null,
     "domicile": null,
     "qual": null,
     "relax": {
@@ -43,10 +43,14 @@
   "org": "IBPS",
   "page": {
     "after_en": [
-      "Candidates qualifying in the Online Preliminary Examination will be called for the Online Main Examination. Shortlisted candidates from the Main exam will proceed to the Common Interview, followed by provisional allotment to participating banks."
+      "Qualify the preliminary examination to appear for the main examination",
+      "Qualify the main examination to be called for the common interview",
+      "Provisional allotment based on merit and vacancies"
     ],
     "after_hi": [
-      "ऑनलाइन प्रारंभिक परीक्षा में उत्तीर्ण होने वाले उम्मीदवारों को ऑनलाइन मुख्य परीक्षा के लिए बुलाया जाएगा। मुख्य परीक्षा से शॉर्टलिस्ट किए गए उम्मीदवार कॉमन इंटरव्यू में भाग लेंगे, जिसके बाद बैंकों में अनंतिम आवंटन होगा।"
+      "मुख्य परीक्षा में बैठने के लिए प्रारंभिक परीक्षा उत्तीर्ण करें",
+      "साक्षात्कार के लिए बुलाए जाने के लिए मुख्य परीक्षा उत्तीर्ण करें",
+      "मेरिट और रिक्तियों के आधार पर अनंतिम आवंटन"
     ],
     "age": [
       {
@@ -62,25 +66,19 @@
         "value_hi": "30 वर्ष"
       },
       {
-        "label_en": "As on date",
-        "label_hi": "इस तिथि के अनुसार",
-        "value_en": "01.07.2026",
-        "value_hi": "01.07.2026"
-      },
-      {
-        "label_en": "Scheduled Caste/Scheduled Tribe relaxation",
-        "label_hi": "अनुसूचित जाति/अनुसूचित जनजाति छूट",
+        "label_en": "SC / ST relaxation",
+        "label_hi": "अजा / अजजा छूट",
         "value_en": "5 years",
         "value_hi": "5 वर्ष"
       },
       {
-        "label_en": "Other Backward Classes relaxation",
+        "label_en": "OBC relaxation",
         "label_hi": "अन्य पिछड़ा वर्ग छूट",
         "value_en": "3 years",
         "value_hi": "3 वर्ष"
       },
       {
-        "label_en": "Persons With Benchmark Disability relaxation",
+        "label_en": "Persons with Benchmark Disabilities relaxation",
         "label_hi": "दिव्यांगजन छूट",
         "value_en": "10 years",
         "value_hi": "10 वर्ष"
@@ -91,39 +89,33 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Ensure scanned copy of photograph and signature adhere to guidelines.",
-      "Verify all entered details before final submission.",
-      "Keep application fee payment receipt safe."
+      "Verify age and educational qualifications",
+      "Keep scanned photograph, signature, and thumb impression ready",
+      "Submit online application before the last date"
     ],
     "checklist_hi": [
-      "सुनिश्चित करें कि फोटो और हस्ताक्षर की स्कैन की गई प्रति दिशानिर्देशों के अनुरूप हो।",
-      "अंतिम सबमिशन से पहले दर्ज किए गए सभी विवरणों की जांच करें।",
-      "आवेदन शुल्क भुगतान रसीद सुरक्षित रखें।"
+      "आयु और शैक्षणिक योग्यता सत्यापित करें",
+      "स्कैन की गई फोटो, हस्ताक्षर और अंगूठे का निशान तैयार रखें",
+      "अंतिम तिथि से पहले ऑनलाइन आवेदन जमा करें"
     ],
     "conducted_by_en": "Institute of Banking Personnel Selection (IBPS)",
     "conducted_by_hi": "इंस्टीट्यूट ऑफ बैंकिंग पर्सनल सिलेक्शन (आईबीपीएस)",
     "dates": [
       {
-        "label_en": "Online registration starts",
-        "label_hi": "ऑनलाइन पंजीकरण प्रारंभ",
-        "value_en": "01.07.2026",
-        "value_hi": "01.07.2026"
+        "label_en": "Online registration including Edit/Modification",
+        "label_hi": "ऑनलाइन पंजीकरण और संशोधन",
+        "value_en": "01.07.2026 to 21.07.2026",
+        "value_hi": "01.07.2026 से 21.07.2026"
       },
       {
-        "label_en": "Online registration last date",
-        "label_hi": "ऑनलाइन पंजीकरण की अंतिम तिथि",
-        "value_en": "21.07.2026",
-        "value_hi": "21.07.2026"
-      },
-      {
-        "label_en": "Download of Preliminary call letters",
-        "label_hi": "प्रारंभिक प्रवेश पत्र डाउनलोड",
+        "label_en": "Download of call letters for Preliminary Exam",
+        "label_hi": "प्रारंभिक परीक्षा के लिए कॉल लेटर डाउनलोड",
         "value_en": "August, 2026",
         "value_hi": "अगस्त, 2026"
       },
       {
         "label_en": "Online Examination – Preliminary",
-        "label_hi": "ऑनलाइन परीक्षा - प्रारंभिक",
+        "label_hi": "ऑनलाइन प्रारंभिक परीक्षा",
         "value_en": "August, 2026",
         "value_hi": "अगस्त, 2026"
       },
@@ -134,62 +126,62 @@
         "value_hi": "सितंबर/अक्टूबर, 2026"
       },
       {
-        "label_en": "Download of Main call letters",
-        "label_hi": "मुख्य परीक्षा प्रवेश पत्र डाउनलोड",
+        "label_en": "Download of Call letter for Main Examination",
+        "label_hi": "मुख्य परीक्षा के लिए कॉल लेटर डाउनलोड",
         "value_en": "October, 2026",
         "value_hi": "अक्टूबर, 2026"
       },
       {
         "label_en": "Online Examination – Main",
-        "label_hi": "ऑनलाइन परीक्षा - मुख्य",
+        "label_hi": "ऑनलाइन मुख्य परीक्षा",
         "value_en": "November, 2026",
         "value_hi": "नवंबर, 2026"
       },
       {
-        "label_en": "Declaration of Main Result",
+        "label_en": "Declaration of Result – Main Examination",
         "label_hi": "मुख्य परीक्षा परिणाम घोषणा",
         "value_en": "November, 2026",
         "value_hi": "नवंबर, 2026"
       },
       {
         "label_en": "Conduct of Interview",
-        "label_hi": "साक्षात्कार का आयोजन",
+        "label_hi": "साक्षात्कार",
         "value_en": "November/December, 2026",
         "value_hi": "नवंबर/दिसंबर, 2026"
       },
       {
         "label_en": "Provisional Allotment",
-        "label_hi": "अनअंतिम आवंटन",
+        "label_hi": "अनंतिम आवंटन",
         "value_en": "January, 2027",
         "value_hi": "जनवरी, 2027"
       }
     ],
     "documents_en": [
-      "Valid photo identity proof",
-      "Proof of date of birth",
-      "Mark sheets and degree certificates in support of educational qualifications",
-      "Caste/Category certificate if applicable"
+      "Original and photocopy of identity proof",
+      "Category certificate (if applicable)",
+      "Educational qualification certificates",
+      "Date of birth proof"
     ],
     "documents_hi": [
-      "वैध फोटो पहचान प्रमाण",
-      "जन्म तिथि का प्रमाण",
-      "शैक्षणिक योग्यताओं के समर्थन में अंक पत्र और डिग्री प्रमाण पत्र",
-      "जाति/श्रेणी प्रमाण पत्र यदि लागू हो"
+      "पहचान प्रमाण की मूल और फोटोकॉपी",
+      "श्रेणी प्रमाण पत्र (यदि लागू हो)",
+      "शैक्षणिक योग्यता प्रमाण पत्र",
+      "जन्म तिथि प्रमाण"
     ],
     "eligibility": [
       {
         "label_en": "Nationality",
         "label_hi": "राष्ट्रीयता",
-        "value_en": "Must be a citizen of India, subject of Nepal/Bhutan, Tibetan refugee, or person of Indian origin migrated from specified countries.",
-        "value_hi": "भारत का नागरिक, नेपाल/भूटान का प्रजाजन, तिब्बती शरणार्थी या निर्दिष्ट देशों से आया भारतीय मूल का व्यक्ति होना चाहिए।"
+        "value_en": "Citizen of India, subject of Nepal/Bhutan, Tibetan refugee, or person of Indian origin who migrated from specified countries.",
+        "value_hi": "भारत का नागरिक, नेपाल या भूटान का प्रजाजन, तिब्बती शरणार्थी, या भारत के मूल निवासी।"
       }
     ],
     "exam_date": "2026-08-01",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is a Common Recruitment Process conducted annually by the Institute of Banking Personnel Selection (IBPS) to select Specialist Officers for participating public sector banks.",
-        "a_hi": "यह भाग लेने वाले सार्वजनिक क्षेत्र के बैंकों के लिए स्पेशलिस्ट ऑफिसर का चयन करने हेतु इंस्टीट्यूट ऑफ बैंकर्स पर्सनल सिलेक्शन (आईबीपीएस) द्वारा आयोजित एक सामान्य भर्ती प्रक्रिया है।",
+        "a_en": "IBPS CRP SPL-XVI is a common recruitment process conducted annually by the Institute of Banking Personnel Selection to select Specialist Officers in participating public sector banks.",
+        "a_hi": "आईबीपीएस सीआरपी एसपीएल-16 भाग लेने वाले सार्वजनिक क्षेत्र के बैंकों में स्पेशलिस्ट ऑफिसर का चयन करने के लिए इंस्टीट्यूट ऑफ बैंकिंग पर्सनल सिलेक्शन द्वारा आयोजित एक सामान्य भर्ती प्रक्रिया है।",
         "q_en": "What is IBPS CRP SPL-XVI?",
         "q_hi": "आईबीपीएस सीआरपी एसपीएल-16 क्या है?"
       }
@@ -206,67 +198,58 @@
       {
         "a_en": "The last date to apply online is 21 July 2026.",
         "a_hi": "ऑनलाइन आवेदन करने की अंतिम तिथि 21 जुलाई 2026 है।",
-        "q_en": "What is the last date to apply for IBPS CRP SPL-XVI 2027?",
-        "q_hi": "आईबीपीएस सीआरपी एसपीएल-16 2027 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+        "q_en": "What is the last date to apply for IBPS CRP SPL XVI 2027?",
+        "q_hi": "आईबीपीएस सीआरपी एसपीएल 16 2027 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
         "a_en": "Candidates must be between 20 and 30 years of age as on 01.07.2026.",
-        "a_hi": "उम्मीदवारों की आयु 01.07.2026 के अनुसार 20 से 30 वर्ष के बीच होनी चाहिए।",
-        "q_en": "What is the age limit for IBPS Specialist Officers Recruitment?",
-        "q_hi": "आईबीपीएस स्पेशलिस्ट ऑफिसर भर्ती के लिए आयु सीमा क्या है?"
+        "a_hi": "उम्मीदवार की आयु 01.07.2026 के अनुसार 20 से 30 वर्ष के बीच होनी चाहिए।",
+        "q_en": "What is the age limit for IBPS Specialist Officers?",
+        "q_hi": "आईबीपीएस स्पेशलिस्ट ऑफिसर के लिए आयु सीमा क्या है?"
       },
       {
-        "a_en": "The posts include IT Officer, Agricultural Field Officer, Rajbhasha Adhikari, Law Officer, HR/Personnel Officer, and Marketing Officer.",
-        "a_hi": "पदों में आईटी ऑफिसर, एग्रीकल्चरल फील्ड ऑफिसर, राजभाषा अधिकारी, लॉ ऑफिसर, एचआर/पर्सनल ऑफिसर और मार्केटिंग ऑफिसर शामिल हैं।",
-        "q_en": "What are the posts available in IBPS CRP SPL-XVI?",
-        "q_hi": "आईबीपीएस सीआरपी एसपीएल-16 में कौन से पद उपलब्ध हैं?"
-      },
-      {
-        "a_en": "The Preliminary examination is scheduled for August 2026.",
-        "a_hi": "प्रारंभिक परीक्षा अगस्त 2026 में निर्धारित है।",
-        "q_en": "When will the IBPS CRP SPL-XVI Preliminary exam be conducted?",
-        "q_hi": "आईबीपीएस सीआरपी एसपीएल-16 प्रारंभिक परीक्षा कब आयोजित की जाएगी?"
-      },
-      {
-        "a_en": "The official website is www.ibps.in.",
-        "a_hi": "आधिकारिक वेबसाइट www.ibps.in है।",
-        "q_en": "What is the official website to apply for IBPS CRP SPL-XVI?",
-        "q_hi": "आईबीपीएस सीआरपी एसपीएल-16 के लिए आवेदन करने की आधिकारिक वेबसाइट क्या है?"
+        "a_en": "The Online Preliminary Examination is scheduled for August, 2026.",
+        "a_hi": "ऑनलाइन प्रारंभिक परीक्षा अगस्त 2026 में निर्धारित है।",
+        "q_en": "When will the Preliminary examination be conducted?",
+        "q_hi": "प्रारंभिक परीक्षा कब आयोजित की जाएगी?"
       }
     ],
     "fees": [],
-    "h1_en": "IBPS CRP SPL XVI Recruitment 2027",
-    "h1_hi": "आईबीपीएस सीआरपी एसपीएल 16 भर्ती 2027",
+    "h1_en": "IBPS CRP SPL XVI Recruitment 2027 – Apply Online for Specialist Officers Posts",
+    "h1_hi": "आईबीपीएस सीआरपी एसपीएल 16 भर्ती 2027 – स्पेशलिस्ट ऑफिसर पदों के लिए ऑनलाइन आवेदन करें",
+    "hindi_notice_url": null,
     "how_en": [
-      "Visit the official IBPS website at www.ibps.in.",
-      "Click on the Home page to open the link 'Click here to apply for CRP SPL XVI'.",
-      "Choose 'Click Here for New Registration' and enter basic details.",
-      "Upload photograph, signature, left thumb impression, and handwritten declaration.",
-      "Fill out the application form carefully and complete the online fee payment."
+      "Visit the official website www.ibps.in",
+      "Click on the link to apply for CRP SPL XVI",
+      "Register online and fill in the application form",
+      "Upload required documents and pay the application fee",
+      "Submit and take a printout of the application form"
     ],
     "how_hi": [
-      "आईबीपीएस की आधिकारिक वेबसाइट www.ibps.in पर जाएं।",
-      "होम पेज पर 'Click here to apply for CRP SPL XVI' लिंक पर क्लिक करें।",
-      "नया पंजीकरण विकल्प चुनें और बुनियादी विवरण दर्ज करें।",
-      "फोटो, हस्ताक्षर, बाएं अंगूठे का निशान और हस्तलिखित घोषणा अपलोड करें।",
-      "आवेदन पत्र सावधानी से भरें और ऑनलाइन शुल्क भुगतान पूरा करें।"
+      "आधिकारिक वेबसाइट www.ibps.in पर जाएं",
+      "सीआरपी एसपीएल 16 के लिए आवेदन लिंक पर क्लिक करें",
+      "ऑनलाइन पंजीकरण करें और आवेदन पत्र भरें",
+      "आवश्यक दस्तावेज अपलोड करें और शुल्क का भुगतान करें",
+      "सबमिट करें और आवेदन पत्र का प्रिंटआउट लें"
     ],
-    "intro_en": "The Institute of Banking Personnel Selection (IBPS) has released the official notification for the Common Recruitment Process for Specialist Officers (CRP SPL-XVI) for vacancies of the year 2027-28. Eligible candidates can apply online from 01 July 2026 to 21 July 2026. The recruitment process includes an Online Preliminary Examination, Online Main Examination, and a Common Interview. Prospective candidates should carefully read the notification and ensure they meet all eligibility criteria before applying.",
-    "intro_hi": "इंस्टीट्यूट ऑफ बैंकिंग पर्सनल सिलेक्शन (आईबीपीएस) ने वर्ष 2027-28 की रिक्तियों के लिए स्पेशलिस्ट ऑफिसर (सीआरपी एसपीएल-16) हेतु कॉमन रिक्रूटमेंट प्रोसेस का आधिकारिक नोटिफिकेशन जारी किया है। योग्य उम्मीदवार 01 जुलाई 2026 से 21 जुलाई 2026 तक ऑनलाइन आवेदन कर सकते हैं। चयन प्रक्रिया में ऑनलाइन प्रारंभिक परीक्षा, ऑनलाइन मुख्य परीक्षा और एक कॉमन इंटरव्यू शामिल है।",
+    "intro_en": "Institute of Banking Personnel Selection (IBPS) has released the notification for the Common Recruitment Process for Specialist Officers (CRP SPL-XVI) for vacancies of 2027-28. Eligible and interested candidates can register online through the official website from 01.07.2026 to 21.07.2026. The selection process includes an Online Preliminary Examination, Online Main Examination, and Common Interview. Candidates must verify their eligibility regarding age, nationality, and educational qualifications before applying.",
+    "intro_hi": "इंस्टीट्यूट ऑफ बैंकिंग पर्सनल सिलेक्शन (आईबीपीएस) ने वर्ष 2027-28 की रिक्तियों के लिए स्पेशलिस्ट ऑफिसर (सीआरपी एसपीएल-16) के सामान्य भर्ती प्रक्रिया की अधिसूचना जारी कर दी है। योग्य और इच्छुक उम्मीदवार आधिकारिक वेबसाइट के माध्यम से 01.07.2026 से 21.07.2026 तक ऑनलाइन पंजीकरण कर सकते हैं। चयन प्रक्रिया में ऑनलाइन प्रारंभिक परीक्षा, ऑनलाइन मुख्य परीक्षा और साक्षात्कार शामिल हैं।",
     "last_date": "2026-07-21",
     "mistakes_en": [
-      "Failing to check eligibility criteria before applying.",
-      "Submitting incorrect category details as category cannot be changed after the edit window."
+      "Do not wait until the last date to apply",
+      "Ensure details match original documents before final submission",
+      "Check eligibility criteria carefully before paying fees"
     ],
     "mistakes_hi": [
-      "आवेदन करने से पहले पात्रता मापदंडों की जांच न करना।",
-      "गलत श्रेणी विवरण जमा करना क्योंकि संपादन विंडो के बाद श्रेणी नहीं बदली जा सकती है।"
+      "अंतिम तिथि तक प्रतीक्षा न करें",
+      "अंतिम सबमिशन से पहले मूल दस्तावेजों से विवरण की जांच करें",
+      "शुल्क भुगतान से पहले पात्रता मानदंडों को ध्यान से जांचें"
     ],
     "not_en": [
-      "Candidates who do not meet the age limits or educational qualifications specified for the respective posts."
+      "Candidates not meeting the educational, age, or nationality criteria specified in the notification."
     ],
     "not_hi": [
-      "वे उम्मीदवार जो संबंधित पदों के लिए निर्धारित आयु सीमा या शैक्षणिक योग्यता को पूरा नहीं करते हैं।"
+      "अधिसूचना में निर्दिष्ट शैक्षणिक, आयु या राष्ट्रीयता मानदंडों को पूरा नहीं करने वाले उम्मीदवार।"
     ],
     "notice_date": "2026-06-30",
     "official_site": "https://www.ibps.in/",
@@ -276,40 +259,34 @@
       {
         "label_en": "Posts",
         "label_hi": "पद",
-        "value_en": "Specialist Officers (Scale I) - IT, Agricultural Field Officer, Rajbhasha Adhikari, Law Officer, HR/Personnel Officer, Marketing Officer",
-        "value_hi": "स्पेशलिस्ट ऑफिसर (स्केल I) - आईटी, एग्रीकल्चरल फील्ड ऑफिसर, राजभाषा अधिकारी, लॉ ऑफिसर, एचआर/पर्सनल ऑफिसर, मार्केटिंग ऑफिसर"
+        "value_en": "IT Officer, Agricultural Field Officer, Rajbhasha Adhikari, Law Officer, HR/Personnel Officer, Marketing Officer",
+        "value_hi": "आईटी ऑफिसर, एग्रीकल्चरल फील्ड ऑफिसर, राजभाषा अधिकारी, लॉ ऑफिसर, एचआर/पर्सनेल ऑफिसर, मार्केटिंग ऑफिसर"
       },
       {
-        "label_en": "Apply online",
+        "label_en": "Apply Online",
         "label_hi": "ऑनलाइन आवेदन",
         "value_en": "01 Jul 2026 to 21 Jul 2026",
-        "value_hi": "01 जुला 2026 से 21 जुला 2026"
+        "value_hi": "01 जुलाई 2026 से 21 जुलाई 2026"
       },
       {
-        "label_en": "Exam date",
-        "label_hi": "परीक्षा तिथि",
-        "value_en": "August, 2026 (Preliminary)",
-        "value_hi": "अगस्त, 2026 (प्रारंभिक)"
+        "label_en": "Prelims Exam Date",
+        "label_hi": "प्रारंभिक परीक्षा तिथि",
+        "value_en": "August, 2026",
+        "value_hi": "अगस्त, 2026"
       },
       {
-        "label_en": "Age limit",
+        "label_en": "Age Limit",
         "label_hi": "आयु सीमा",
-        "value_en": "20 to 30 years as on 01.07.2026",
-        "value_hi": "01.07.2026 के अनुसार 20 से 30 वर्ष"
-      },
-      {
-        "label_en": "Advertisement number",
-        "label_hi": "विज्ञापन संख्या",
-        "value_en": "CRP SPL-XVI",
-        "value_hi": "सीआरपी एसपीएल-16"
+        "value_en": "20 to 30 years (As on 01.07.2026)",
+        "value_hi": "20 से 30 वर्ष (01.07.2026 के अनुसार)"
       }
     ],
     "salary": [
       {
-        "label_en": "Scale of Pay (Scale I)",
-        "label_hi": "वेतनमान (स्केल I)",
-        "value_en": "₹ 48480-2000/7-62480-2340/2-67160-2680/7-85920",
-        "value_hi": "₹ 48480-2000/7-62480-2340/2-67160-2680/7-85920"
+        "label_en": "Specialist Officers – Scale I",
+        "label_hi": "स्पेशलिस्ट ऑफिसर – स्केल I",
+        "value_en": "Basic: ₹48480-2000/7-62480-2340/2-67160-2680/7-85920",
+        "value_hi": "मूल वेतन: ₹48480-2000/7-62480-2340/2-67160-2680/7-85920"
       }
     ],
     "selection_en": [
@@ -321,80 +298,77 @@
     "selection_hi": [
       "ऑनलाइन प्रारंभिक परीक्षा",
       "ऑनलाइन मुख्य परीक्षा",
-      "कॉमन इंटरव्यू",
-      "अनअंतिम आवंटन"
+      "साक्षात्कार",
+      "अनंतिम आवंटन"
     ],
     "share_card": {
       "headline_en": "Recruitment 2027",
       "headline_hi": "भर्ती 2027",
       "kind": "job",
-      "line_en": "Specialist Officers (CRP SPL-XVI)",
-      "line_hi": "स्पेशलिस्ट ऑफिसर (सीआरपी एसपीएल-16)",
+      "line_en": "CRP SPL-XVI Specialist Officers",
+      "line_hi": "सीआरपी एसपीएल-16 स्पेशलिस्ट ऑफिसर",
       "posts": null
     },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "IBPS invites online applications for the Common Recruitment Process for Specialist Officers (CRP SPL-XVI) for vacancies of 2027-28. Eligible candidates can apply online through the official website by 21 July 2026.",
-    "summary_hi": "आईबीपीएस ने वर्ष 2027-28 की रिक्तियों के लिए स्पेशलिस्ट ऑफिसर (सीआरपी एसपीएल-16) हेतु ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 21 जुलाई 2026 तक आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+    "summary_en": "IBPS has invited online applications for the Common Recruitment Process for Specialist Officers (CRP SPL-XVI) for vacancies of 2027-28. Eligible candidates can apply online from 01 July 2026 to 21 July 2026. Read the notification for eligibility, exam dates, and selection process.",
+    "summary_hi": "आईबीपीएस ने वर्ष 2027-28 की रिक्तियों के लिए स्पेशलिस्ट ऑफिसर (सीआरपी एसपीएल-16) हेतु ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 01 जुलाई 2026 से 21 जुलाई 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
     "vacancies": [
       {
-        "detail_en": "Refer to Annexure I of official notification for bank-wise vacancies.",
-        "detail_hi": "बैंक-वार रिक्तियों के लिए आधिकारिक अधिसूचना का अनुलग्नक I देखें।",
+        "detail_en": "Refer to official notification Annexure I",
+        "detail_hi": "आधिकारिक अधिसूचना का परिशिष्ट I देखें",
         "post_en": "IT Officer (Scale I)",
         "post_hi": "आईटी ऑफिसर (स्केल I)",
-        "total": null
+        "total": ""
       },
       {
-        "detail_en": "Refer to Annexure I of official notification for bank-wise vacancies.",
-        "detail_hi": "बैंक-वार रिक्तियों के लिए आधिकारिक अधिसूचना का अनुलग्नक I देखें।",
+        "detail_en": "Refer to official notification Annexure I",
+        "detail_hi": "आधिकारिक अधिसूचना का परिशिष्ट I देखें",
         "post_en": "Agricultural Field Officer (Scale I)",
         "post_hi": "एग्रीकल्चरल फील्ड ऑफिसर (स्केल I)",
-        "total": null
+        "total": ""
       },
       {
-        "detail_en": "Refer to Annexure I of official notification for bank-wise vacancies.",
-        "detail_hi": "बैंक-वार रिक्तियों के लिए आधिकारिक अधिसूचना का अनुलग्नक I देखें।",
+        "detail_en": "Refer to official notification Annexure I",
+        "detail_hi": "आधिकारिक अधिसूचना का परिशिष्ट I देखें",
         "post_en": "Rajbhasha Adhikari (Scale I)",
         "post_hi": "राजभाषा अधिकारी (स्केल I)",
-        "total": null
+        "total": ""
       },
       {
-        "detail_en": "Refer to Annexure I of official notification for bank-wise vacancies.",
-        "detail_hi": "बैंक-वार रिक्तियों के लिए आधिकारिक अधिसूचना का अनुलग्नक I देखें।",
+        "detail_en": "Refer to official notification Annexure I",
+        "detail_hi": "आधिकारिक अधिसूचना का परिशिष्ट I देखें",
         "post_en": "Law Officer (Scale I)",
         "post_hi": "लॉ ऑफिसर (स्केल I)",
-        "total": null
+        "total": ""
       },
       {
-        "detail_en": "Refer to Annexure I of official notification for bank-wise vacancies.",
-        "detail_hi": "बैंक-वार रिक्तियों के लिए आधिकारिक अधिसूचना का अनुलग्नक I देखें।",
+        "detail_en": "Refer to official notification Annexure I",
+        "detail_hi": "आधिकारिक अधिसूचना का परिशिष्ट I देखें",
         "post_en": "HR/Personnel Officer (Scale I)",
-        "post_hi": "एचआर/पर्सनल ऑफिसर (स्केल I)",
-        "total": null
+        "post_hi": "एचआर/पर्सनेल ऑफिसर (स्केल I)",
+        "total": ""
       },
       {
-        "detail_en": "Refer to Annexure I of official notification for bank-wise vacancies.",
-        "detail_hi": "बैंक-वार रिक्तियों के लिए आधिकारिक अधिसूचना का अनुलग्नक I देखें।",
+        "detail_en": "Refer to official notification Annexure I",
+        "detail_hi": "आधिकारिक अधिसूचना का परिशिष्ट I देखें",
         "post_en": "Marketing Officer (Scale I)",
         "post_hi": "मार्केटिंग ऑफिसर (स्केल I)",
-        "total": null
+        "total": ""
       }
     ],
+    "video_url": null,
     "who_en": [
-      "Graduates and Postgraduates meeting specific professional qualifications looking for Specialist Officer jobs in public sector banks."
+      "Candidates holding the required educational qualifications and aged between 20-30 years who want a banking sector job."
     ],
     "who_hi": [
-      "सार्वजनिक क्षेत्र के बैंकों में स्पेशलिस्ट ऑफिसर की नौकरी चाहने वाले विशिष्ट व्यावसायिक योग्यता रखने वाले स्नातक और स्नात्कोत्तर।"
+      "आवश्यक शैक्षणिक योग्यता रखने वाले और 20-30 वर्ष की आयु के उम्मीदवार जो बैंकिंग क्षेत्र में नौकरी चाहते हैं।"
     ]
   },
   "pdf": {
     "error": "SSLError: HTTPSConnectionPool(host='www.ibps.in', port=443): Max retries exceeded with url: /wp-content/uploads/Detailed-Notification-CRP-SPL-XVI_Final_V1_30.06.2026.pdf (Caused by SSLError(SSLError(1"
   },
   "published_at": "2026-10-22T13:42:40Z",
-  "qual": [
-    "graduate"
-  ],
-  "rewrite": true,
   "slug": "ibps-specialist-officers-crp-spl-xvi-recruitment-2027",
   "source_id": "ibps-home",
   "status": "approved",

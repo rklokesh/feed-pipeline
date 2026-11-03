@@ -1,5 +1,23 @@
 {
+  "auto_published": true,
   "board_url": "https://dsssb.delhi.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-07-01",
+    "last_date": null,
+    "list": true,
+    "posts": "Junior Environmental Engineer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "DSSSB has released Tier II exam marks and called e-dossiers for shortlisted candidates for Junior Environmental Engineer under Post Code 68/24. The e-dossier link is active from 06.11.2026 to 20.11.2026.",
+    "summary_hi": "DSSSB ने पोस्ट कोड 68/24 के तहत जूनियर पर्यावरण इंजीनियर पद के लिए टियर II परीक्षा के अंक जारी कर दिए हैं और शॉर्टलिस्ट किए गए उम्मीदवारों से ई-ड dossier मांगे हैं। ई-ड dossier लिंक 06.11.2026 से 20.11.2026 तक सक्रिय रहेगा।",
+    "title_en": "DSSSB Junior Environmental Engineer Tier 2 Marks & E-Dossier 2026",
+    "title_hi": "DSSSB जूनियर पर्यावरण इंजीनियर टियर 2 अंक और ई-ड dossier 2026",
+    "type": "Update",
+    "vacancies": 11
+  },
+  "editor_notes": [],
+  "exam": {},
   "extraction": {
     "ai": null
   },
@@ -12,16 +30,281 @@
   },
   "first_seen": "2026-11-03T09:02:17+00:00",
   "id": "515ad47529b6",
+  "issue": 939,
+  "issue_tidy": true,
   "kind": "result",
+  "notice_date": "2026-11-03",
   "org": "DSSSB",
+  "page": {
+    "after_en": [
+      "Document verification of e-dossiers by the board.",
+      "Declaration of final result and merit list."
+    ],
+    "after_hi": [
+      "बोर्ड द्वारा ई-ड dossier का दस्तावेज सत्यापन।",
+      "अंतिम परिणाम और मेधा सूची की घोषणा।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://www.dsssbonline.nic.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check your marks on the OARS portal.",
+      "Keep all educational and category certificates ready.",
+      "Upload documents before 20.11.2026."
+    ],
+    "checklist_hi": [
+      "OARS पोर्टल पर अपने अंक जांचें।",
+      "सभी शैक्षणिक और श्रेणी प्रमाण पत्र तैयार रखें।",
+      "20.11.2026 से पहले दस्तावेज अपलोड करें।"
+    ],
+    "conducted_by_en": "Delhi Subordinate Services Selection Board (DSSSB)",
+    "conducted_by_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB)",
+    "dates": [
+      {
+        "label_en": "Tier-I Exam Date",
+        "label_hi": "टियर-I परीक्षा तिथि",
+        "value_en": "06.06.2025 & 08.06.2025",
+        "value_hi": "06.06.2025 और 08.06.2025"
+      },
+      {
+        "label_en": "Tier-I Result Notice Date",
+        "label_hi": "टियर-I परिणाम नोटिस तिथि",
+        "value_en": "26.02.2026",
+        "value_hi": "26.02.2026"
+      },
+      {
+        "label_en": "Tier-II Exam Date",
+        "label_hi": "टियर-II परीक्षा तिथि",
+        "value_en": "01.07.2026",
+        "value_hi": "01.07.2026"
+      },
+      {
+        "label_en": "Notice Issue Date",
+        "label_hi": "नोटिस जारी होने की तिथि",
+        "value_en": "03.11.2026",
+        "value_hi": "03.11.2026"
+      },
+      {
+        "label_en": "E-Dossier Link Active From",
+        "label_hi": "ई-ड dossier लिंक सक्रिय होने की तिथि",
+        "value_en": "06.11.2026",
+        "value_hi": "06.11.2026"
+      },
+      {
+        "label_en": "E-Dossier Link Active Till",
+        "label_hi": "ई-ड dossier लिंक सक्रिय रहने की अंतिम तिथि",
+        "value_en": "20.11.2026",
+        "value_hi": "20.11.2026"
+      }
+    ],
+    "documents_en": [
+      "Educational certificates",
+      "Mark sheets",
+      "Caste certificate",
+      "Admit cards",
+      "Proof of Govt. servant / Ex-Serviceman / PH certificate",
+      "EWS certificate (if applicable)"
+    ],
+    "documents_hi": [
+      "शैक्षणिक प्रमाण पत्र",
+      "अंक तालिकाएं",
+      "जाति प्रमाण पत्र",
+      "प्रवेश पत्र",
+      "सरकारी सेवक / भूतपूर्व सैनिक / पीएच प्रमाण पत्र का प्रमाण",
+      "ईडब्ल्यूएस प्रमाण पत्र (यदि लागू हो)"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Essential Qualification As-On Date",
+        "label_hi": "आवश्यक योग्यता की तिथि",
+        "value_en": "17.04.2024",
+        "value_hi": "17.04.2024"
+      }
+    ],
+    "exam_date": "2026-07-01",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a process where candidates shortlisted from the Tier-II examination must upload their educational and category documents online for verification before final selection.",
+        "a_hi": "यह एक ऐसी प्रक्रिया है जहाँ टियर-II परीक्षा से शॉर्टलिस्ट किए गए उम्मीदवारों को अंतिम चयन से पहले सत्यापन के लिए अपने शैक्षणिक और श्रेणी के दस्तावेज ऑनलाइन अपलोड करने होते हैं।",
+        "q_en": "What is the DSSSB Junior Environmental Engineer Post Code 68/24 E-Dossier?",
+        "q_hi": "DSSSB जूनियर पर्यावरण इंजीनियर पोस्ट कोड 68/24 ई-ड dossier क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "05/24",
+        "value_hi": "05/24"
+      },
+      {
+        "label_en": "Notice Number",
+        "label_hi": "नोटिस संख्या",
+        "value_en": "209",
+        "value_hi": "209"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The e-dossier link is active from 06.11.2026 to 20.11.2026.",
+        "a_hi": "ई-ड dossier लिंक 06.11.2026 से 20.11.2026 तक सक्रिय है।",
+        "q_en": "When is the e-dossier link active for DSSSB Junior Environmental Engineer Post Code 68/24?",
+        "q_hi": "DSSSB जूनियर पर्यावरण इंजीनियर पोस्ट कोड 68/24 के लिए ई-ड dossier लिंक कब सक्रिय है?"
+      },
+      {
+        "a_en": "You can view your marks by logging into your account in the OARS module on www.dsssbonline.nic.in.",
+        "a_hi": "आप www.dsssbonline.nic.in पर OARS मॉड्यूल में अपने खाते में लॉगिन करके अपने अंक देख सकते हैं।",
+        "q_en": "How can I check my Tier-II marks for Post Code 68/24?",
+        "q_hi": "मैं पोस्ट कोड 68/24 के लिए अपने टियर-II अंक कैसे देख सकता हूँ?"
+      },
+      {
+        "a_en": "A total of 26 candidates have been shortlisted for uploading e-dossiers.",
+        "a_hi": "ई-ड dossier अपलोड करने के लिए कुल 26 उम्मीदवारों को शॉर्टलिस्ट किया गया है।",
+        "q_en": "How many candidates have been shortlisted for e-dossier for Post Code 68/24?",
+        "q_hi": "पोस्ट कोड 68/24 के लिए ई-ड dossier के वास्ते कितने उम्मीदवारों को शॉर्टलिस्ट किया गया है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "DSSSB Junior Environmental Engineer Tier 2 Marks & E-Dossier 2026",
+    "h1_hi": "DSSSB जूनियर पर्यावरण इंजीनियर टियर 2 अंक और ई-ड dossier 2026",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Log in to your account in the OARS module on www.dsssbonline.nic.in.",
+      "Check your Tier-II marks.",
+      "Go to the e-dossier module if shortlisted.",
+      "Upload all requisite documents such as educational certificates, mark sheets, caste certificate, admit cards, etc."
+    ],
+    "how_hi": [
+      "www.dsssbonline.nic.in पर OARS मॉड्यूल में अपने खाते में लॉगिन करें।",
+      "अपने टियर-II अंक देखें।",
+      "यदि शॉर्टलिस्ट किए गए हैं तो ई-ड dossier मॉड्यूल पर जाएं।",
+      "शैक्षणिक प्रमाण पत्र, अंक तालिका, जाति प्रमाण पत्र, एडमिट कार्ड आदि जैसे सभी आवश्यक दस्तावेज अपलोड करें।"
+    ],
+    "intro_en": "Delhi Subordinate Services Selection Board (DSSSB) has released the marks for the Tier-II examination and called for e-dossiers for the post of Junior Environmental Engineer under Post Code 68/24 in Delhi Pollution Control Committee. A total of 26 candidates have been shortlisted provisionally based on their performance in the online Tier-II examination. The shortlisted candidates must upload their requisite documents through the OARS module between 06.11.2026 and 20.11.2026. Candidates who fail to upload their documents within this stipulated time period will have their candidature rejected.",
+    "intro_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने दिल्ली प्रदूषण नियंत्रण समिति में पोस्ट कोड 68/24 के तहत जूनियर पर्यावरण इंजीनियर के पद के लिए टियर-II परीक्षा के अंक जारी कर दिए हैं और ई-ड dossier आमंत्रित किए हैं। ऑनलाइन टियर-II परीक्षा में उनके प्रदर्शन के आधार पर कुल 26 उम्मीदवारों को अस्थायी रूप से शॉर्टलिस्ट किया गया है। शॉर्टलिस्ट किए गए उम्मीदवारों को 06.11.2026 से 20.11.2026 के बीच OARS मॉड्यूल के माध्यम से अपने आवश्यक दस्तावेज अपलोड करने होंगे। निर्धारित समय अवधि के भीतर दस्तावेज अपलोड करने में विफल रहने वाले उम्मीदवारों की उम्मीदवारी रद्द कर दी जाएगी।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not miss the e-dossier upload window closing on 20.11.2026.",
+      "Ensure all required certificates and mark sheets are properly scanned and uploaded."
+    ],
+    "mistakes_hi": [
+      "20.11.2026 को समाप्त होने वाली ई-ड dossier अपलोड विंडो को न चूकें।",
+      "सुनिश्चित करें कि सभी आवश्यक प्रमाण पत्र और अंक तालिकाएं ठीक से स्कैन और अपलोड की गई हैं।"
+    ],
+    "not_en": [
+      "Candidates who fail to upload their e-dossier within the stipulated time period (06.11.2026 to 20.11.2026)."
+    ],
+    "not_hi": [
+      "जो उम्मीदवार निर्धारित समय अवधि (06.11.2026 से 20.11.2026) के भीतर अपना ई-ड dossier अपलोड करने में विफल रहते हैं।"
+    ],
+    "notice_date": "2026-11-03",
+    "official_site": "https://dsssb.delhi.gov.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Junior Environmental Engineer",
+        "value_hi": "जूनियर पर्यावरण इंजीनियर"
+      },
+      {
+        "label_en": "Post Code",
+        "label_hi": "पोस्ट कोड",
+        "value_en": "68/24",
+        "value_hi": "68/24"
+      },
+      {
+        "label_en": "Department",
+        "label_hi": "विभाग",
+        "value_en": "Delhi Pollution Control Committee",
+        "value_hi": "दिल्ली प्रदूषण नियंत्रण समिति"
+      },
+      {
+        "label_en": "Total Vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "11",
+        "value_hi": "11"
+      },
+      {
+        "label_en": "E-Dossier Upload Dates",
+        "label_hi": "ई-ड dossier अपलोड तिथियां",
+        "value_en": "06.11.2026 to 20.11.2026",
+        "value_hi": "06.11.2026 से 20.11.2026"
+      },
+      {
+        "label_en": "Tier-II Exam Date",
+        "label_hi": "टियर-II परीक्षा तिथि",
+        "value_en": "01 July 2026",
+        "value_hi": "01 जुलाई 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Tier-I Examination",
+      "Tier-II Examination",
+      "E-Dossier Verification",
+      "Final Selection based on Merit"
+    ],
+    "selection_hi": [
+      "टियर-I परीक्षा",
+      "टियर-II परीक्षा",
+      "ई-ड dossier सत्यापन",
+      "मेधा के आधार पर अंतिम चयन"
+    ],
+    "share_card": {
+      "headline_en": "Tier 2 Marks & E-Dossier",
+      "headline_hi": "टियर 2 अंक और ई-ड dossier",
+      "kind": "result",
+      "line_en": "Junior Environmental Engineer",
+      "line_hi": "जूनियर पर्यावरण इंजीनियर",
+      "posts": 11
+    },
+    "status_en": "Tier-II marks released and e-dossier link active till 20 Nov 2026",
+    "status_hi": "टियर-II के अंक जारी और ई-ड dossier लिंक 20 Nov 2026 तक सक्रिय",
+    "summary_en": "DSSSB has released Tier II exam marks and called e-dossiers for shortlisted candidates for Junior Environmental Engineer under Post Code 68/24. The e-dossier link is active from 06.11.2026 to 20.11.2026.",
+    "summary_hi": "DSSSB ने पोस्ट कोड 68/24 के तहत जूनियर पर्यावरण इंजीनियर पद के लिए टियर II परीक्षा के अंक जारी कर दिए हैं और शॉर्टलिस्ट किए गए उम्मीदवारों से ई-ड dossier मांगे हैं। ई-ड dossier लिंक 06.11.2026 से 20.11.2026 तक सक्रिय रहेगा।",
+    "vacancies": [
+      {
+        "detail_en": "OBC: 11",
+        "detail_hi": "अन्य पिछड़ा वर्ग: 11",
+        "post_en": "Junior Environmental Engineer",
+        "post_hi": "जूनियर पर्यावरण इंजीनियर",
+        "total": "11"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates who appeared for the Junior Environmental Engineer Tier-II examination under Post Code 68/24."
+    ],
+    "who_hi": [
+      "पोस्ट कोड 68/24 के तहत जूनियर पर्यावरण इंजीनियर टियर-II परीक्षा में शामिल होने वाले उम्मीदवार।"
+    ]
+  },
   "pdf": {
     "bytes": 508326,
     "pages": 2,
     "sha256": "f9203d47906b54a5fe506c62a777986c13230ba9545edf61fb6fef7d9bce1466",
     "text_kind": "text"
   },
+  "published_at": "2026-11-03T09:06:56Z",
+  "qual": [
+    "graduate"
+  ],
+  "rewrite": true,
+  "slug": "dsssb-junior-environmental-engineer-tier-2-marks-e-dossier-2026",
   "source_id": "dsssb-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Notice no. 209 :- Releasing of marks of Tier-ll examination and calling of e-dossiers for the post of Junior Environmental Engineer in Delhi Pollution control Committee under Post Code 68/24. Date: 03-11-2026 | 496.41 KB Download",
-  "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/68-24.pdf"
+  "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/68-24.pdf",
+  "verify": {
+    "at": "2026-11-03",
+    "missing": [
+      "Exam date: 2026-07-01"
+    ],
+    "tries": 1
+  }
 }

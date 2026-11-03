@@ -47,49 +47,51 @@
   "org": "DSSSB",
   "page": {
     "after_en": [
-      "The User Department (Directorate of Education) will verify original documents, caste certificates, and eligibility before issuing offers of appointment."
+      "The User Department (Directorate of Education) will verify original documents and eligibility criteria.",
+      "Successful candidates will receive the official offer of appointment."
     ],
     "after_hi": [
-      "उपयोगकर्ता विभाग (शिक्षा निदेशालय) नियुक्ति पत्र जारी करने से पहले मूल दस्तावेजों, जाति प्रमाण पत्र और पात्रता की जांच करेगा।"
+      "उपयोगकर्ता विभाग (शिक्षा निदेशालय) मूल दस्तावेजों और पात्रता मानदंडों का सत्यापन करेगा।",
+      "सफल उम्मीदवारों को आधिकारिक नियुक्ति प्रस्ताव प्राप्त होगा।"
     ],
     "age": [],
-    "apply_start": "2024-12-30",
-    "apply_url": null,
+    "apply_start": null,
+    "apply_url": "https://dsssb.delhi.gov.in/",
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check your roll number in the official result PDF.",
-      "Verify your category cut-off marks.",
-      "Keep original documents ready for verification by the user department."
+      "Check your roll number in the result PDF.",
+      "Keep all original educational, identity, and category certificates ready for verification.",
+      "Ensure all details submitted in the e-dossier match original documents."
     ],
     "checklist_hi": [
-      "आधिकारिक परिणाम पीडीएफ में अपना रोल नंबर जांचें।",
-      "अपनी श्रेणी के कट-ऑफ अंकों का मिलान करें।",
-      "उपयोगकर्ता विभाग द्वारा सत्यापन के लिए मूल दस्तावेज तैयार रखें।"
+      "परिणाम पीडीएफ में अपना रोल नंबर जांचें।",
+      "सत्यापन के लिए सभी मूल शैक्षणिक, पहचान और श्रेणी प्रमाण पत्र तैयार रखें।",
+      "सुनिश्चित करें कि ई-डोजियर में प्रस्तुत सभी विवरण मूल दस्तावेजों से मेल खाते हैं।"
     ],
     "conducted_by_en": "Delhi Subordinate Services Selection Board (DSSSB)",
     "conducted_by_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB)",
     "dates": [
       {
-        "label_en": "Advertisement Date",
+        "label_en": "Advertisement date",
         "label_hi": "विज्ञापन तिथि",
         "value_en": "30 Dec 2024",
         "value_hi": "30 दिसंबर 2024"
       },
       {
-        "label_en": "Closing Date",
-        "label_hi": "अंतिम तिथि",
+        "label_en": "Last date to apply",
+        "label_hi": "आवेदन करने की अंतिम तिथि",
         "value_en": "14 Feb 2025",
         "value_hi": "14 फरवरी 2025"
       },
       {
-        "label_en": "Exam Date",
+        "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "12 Apr & 13 Apr 2026",
         "value_hi": "12 अप्रैल और 13 अप्रैल 2026"
       },
       {
-        "label_en": "Result Notice Date",
+        "label_en": "Result notice date",
         "label_hi": "परिणाम नोटिस तिथि",
         "value_en": "30 Oct 2026",
         "value_hi": "30 अक्टूबर 2026"
@@ -98,65 +100,97 @@
     "documents_en": [
       "Educational qualification certificates",
       "Age proof certificates",
-      "Caste / Category certificates",
-      "E-dossier submission printout"
+      "Caste / Category certificate (SC/ST/OBC/EWS/PH if applicable)",
+      "Experience certificates (if claimed)",
+      "Original application form and e-dossier documents"
     ],
     "documents_hi": [
       "शैक्षणिक योग्यता प्रमाण पत्र",
       "आयु प्रमाण पत्र",
-      "जाति / श्रेणी प्रमाण पत्र",
-      "ई-ड dossier सबमिशन प्रिंटआउट"
+      "जाति / श्रेणी प्रमाण पत्र (लागू होने पर एससी/एसटी/ओबीसी/ईडब्ल्यूएस/पीएच)",
+      "अनुभव प्रमाण पत्र (यदि दावा किया गया है)",
+      "मूल आवेदन पत्र और ई-डोजियर दस्तावेज"
     ],
     "eligibility": [
       {
-        "label_en": "Cut-off Date for Eligibility",
-        "label_hi": "पात्रता के लिए कट-ऑफ तिथि",
-        "value_en": "14 Feb 2025",
-        "value_hi": "14 फरवरी 2025"
+        "label_en": "Cut-off PGT (Maths) - Male",
+        "label_hi": "कट-ऑफ PGT (गणित) - पुरुष",
+        "value_en": "UR: 223.25, EWS: 216.69, OBC: 175.61, SC: 205.22",
+        "value_hi": "सामान्य: 223.25, ईडब्ल्यूएस: 216.69, ओबीसी: 175.61, एससी: 205.22"
+      },
+      {
+        "label_en": "Cut-off PGT (Maths) - Female",
+        "label_hi": "कट-ऑफ PGT (गणित) - महिला",
+        "value_en": "UR: 238.52, EWS: 201.64, OBC: 185.07, ST: 167.61",
+        "value_hi": "सामान्य: 238.52, ईडब्ल्यूएस: 201.64, ओबीसी: 185.07, एसटी: 167.61"
       }
     ],
     "exam_date": "2026-04-12",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "This is the final provisional result notice released by DSSSB for the recruitment of PGT Mathematics (Male & Female) in the Directorate of Education, GNCTD.",
-        "a_hi": "यह शिक्षा निदेशालय, GNCTD में PGT गणित (पुरुष और महिला) की भर्ती के लिए DSSSB द्वारा जारी अंतिम अनंतिम परिणाम नोटिस है।",
-        "q_en": "What is DSSSB Post Code 825/24 Result?",
-        "q_hi": "DSSSB पोस्ट कोड 825/24 परिणाम क्या है?"
+        "a_en": "It is a recruitment process conducted by DSSSB for the post of Post Graduate Teacher (PGT) in Mathematics for Male and Female categories within the Directorate of Education, GNCTD.",
+        "a_hi": "यह शिक्षा निदेशालय, GNCTD के भीतर पुरुष और महिला श्रेणियों के लिए गणित में स्नातकोत्तर शिक्षक (PGT) के पद के लिए DSSSB द्वारा आयोजित एक भर्ती प्रक्रिया है।",
+        "q_en": "What is DSSSB PGT Maths Post Code 825/24?",
+        "q_hi": "DSSSB PGT गणित पोस्ट कोड 825/24 क्या है?"
       }
     ],
     "extra": [
       {
-        "label_en": "Cut-off PGT Maths Male",
-        "label_hi": "कट-ऑफ पीजीटी गणित पुरुष",
-        "value_en": "UR: 223.25, EWS: 216.69, OBC: 175.61, SC: 205.22",
-        "value_hi": "सामान्य: 223.25, ईडब्ल्यूएस: 216.69, ओबीसी: 175.61, एससी: 205.22"
-      },
-      {
-        "label_en": "Cut-off PGT Maths Female",
-        "label_hi": "कट-ऑफ पीजीटी गणित महिला",
-        "value_en": "UR: 238.52, EWS: 201.64, OBC: 185.07, ST: 167.61",
-        "value_hi": "सामान्य: 238.52, ईडब्ल्यूएस: 201.64, ओबीसी: 185.07, एसटी: 167.61"
+        "label_en": "Waiting Panel",
+        "label_hi": "प्रतीक्षा पैनल",
+        "value_en": "There is no waiting panel under the combined examination scheme.",
+        "value_hi": "संयुक्त परीक्षा योजना के तहत कोई प्रतीक्षा पैनल नहीं है।"
       }
     ],
     "faq": [
       {
-        "a_en": "The exam was conducted on 12 April 2026 and 13 April 2026.",
-        "a_hi": "परीक्षा 12 अप्रैल 2026 और 13 अप्रैल 2026 को आयोजित की गई थी।",
-        "q_en": "When was the DSSSB PGT Maths exam conducted?",
-        "q_hi": "DSSSB PGT गणित की परीक्षा कब आयोजित की गई थी?"
+        "a_en": "A total of 31 vacancies were advertised (21 for PGT Maths Male and 10 for PGT Maths Female).",
+        "a_hi": "कुल 31 रिक्तियों का विज्ञापन किया गया था (PGT गणित पुरुष के लिए 21 और PGT गणित महिला के लिए 10)।",
+        "q_en": "What is the total number of vacancies for DSSSB PGT Maths 825/24?",
+        "q_hi": "DSSSB PGT गणित 825/24 के लिए कुल रिक्तियों की संख्या क्या है?"
       },
       {
-        "a_en": "A total of 31 vacancies were advertised.",
-        "a_hi": "कुल 31 वैकेंसी विज्ञापित की गई थीं।",
-        "q_en": "How many vacancies were advertised for PGT Maths post code 825/24?",
-        "q_hi": "PGT गणित पोस्ट कोड 825/24 के लिए कुल कितनी वैकेंसी विज्ञापित की गई थीं?"
+        "a_en": "The written examination Tier-I was conducted on 12 April 2026 and 13 April 2026.",
+        "a_hi": "लिखित परीक्षा टियर-I 12 अप्रैल 2026 और 13 अप्रैल 2026 को आयोजित की गई थी।",
+        "q_en": "When was the DSSSB PGT Maths written exam conducted?",
+        "q_hi": "DSSSB PGT गणित लिखित परीक्षा कब आयोजित की गई थी?"
       },
       {
-        "a_en": "The cut-off for UR category in PGT Maths Male is 223.25.",
-        "a_hi": "PGT गणित पुरुष में सामान्य श्रेणी के लिए कट-off 223.25 है।",
+        "a_en": "A total of 31 candidates have been provisionally nominated.",
+        "a_hi": "कुल 31 उम्मीदवारों को अनंतिम रूप से नामांकित किया गया है।",
+        "q_en": "How many candidates are provisionally nominated in Result Notice No. 386?",
+        "q_hi": "परिणाम नोटिस संख्या 386 में कुल कितने उम्मीदवारों को अनंतिम रूप से नामांकित किया गया है?"
+      },
+      {
+        "a_en": "The cut-off marks for UR category in PGT Maths Male is 223.25.",
+        "a_hi": "PGT गणित पुरुष में सामान्य श्रेणी के लिए कट-ऑफ अंक 223.25 है।",
         "q_en": "What is the cut-off for UR category in PGT Maths Male?",
-        "q_hi": "PGT गणित पुरुष में सामान्य श्रेणी के लिए कट-off कितना है?"
+        "q_hi": "PGT गणित पुरुष में सामान्य श्रेणी के लिए कट-ऑफ क्या है?"
+      },
+      {
+        "a_en": "The cut-off marks for UR category in PGT Maths Female is 238.52.",
+        "a_hi": "PGT गणित महिला में सामान्य श्रेणी के लिए कट-ऑफ अंक 238.52 है।",
+        "q_en": "What is the cut-off for UR category in PGT Maths Female?",
+        "q_hi": "PGT गणित महिला में सामान्य श्रेणी के लिए कट-ऑफ क्या है?"
+      },
+      {
+        "a_en": "No, there is no waiting panel under the combined examination scheme.",
+        "a_hi": "नहीं, संयुक्त परीक्षा योजना के तहत कोई प्रतीक्षा पैनल नहीं है।",
+        "q_en": "Is there a waiting panel for this recruitment?",
+        "q_hi": "क्या इस भर्ती के लिए कोई प्रतीक्षा पैनल है?"
+      },
+      {
+        "a_en": "The User Department (Directorate of Education) will conduct thorough verification of documents, identity, and eligibility before issuing an offer of appointment.",
+        "a_hi": "उपयोगकर्ता विभाग (शिक्षा निदेशालय) नियुक्ति प्रस्ताव जारी करने से पहले दस्तावेजों, पहचान और पात्रता का गहन सत्यापन करेगा।",
+        "q_en": "What is the next step after provisional nomination?",
+        "q_hi": "अनंतिम नामांकन के बाद अगला कदम क्या है?"
+      },
+      {
+        "a_en": "You can check the result notice on the official DSSSB website.",
+        "a_hi": "आप आधिकारिक डीएसएसएसबी वेबसाइट पर परिणाम नोटिस देख सकते हैं।",
+        "q_en": "Where can I check the result notice?",
+        "q_hi": "मैं परिणाम नोटिस कहां देख सकता हूं?"
       }
     ],
     "fees": [],
@@ -165,21 +199,27 @@
     "hindi_notice_url": null,
     "how_en": [
       "Visit the official DSSSB website.",
-      "Navigate to the Result section.",
+      "Go to the 'Results' section.",
       "Click on Result Notice No. 386 for Post Code 825/24.",
-      "Download and check your roll number and cut-off marks."
+      "Download and check your roll number in the PDF notice."
     ],
     "how_hi": [
       "आधिकारिक डीएसएसएसबी वेबसाइट पर जाएं।",
-      "रिज़ल्ट सेक्शन में जाएं।",
-      "पोस्ट कोड 825/24 के लिए रिज़ल्ट नोटिस संख्या 386 पर क्लिक करें।",
-      "डाउनलोड करें और अपना रोल नंबर और कट-off अंक जांचें।"
+      "रिज़ल्ट सेक्शन पर जाएं।",
+      "पोस्ट कोड 825/24 के लिए परिणाम नोटिस संख्या 386 पर क्लिक करें।",
+      "पीडीएफ नोटिस डाउनलोड करें और अपना रोल नंबर जांचें।"
     ],
-    "intro_en": "The Delhi Subordinate Services Selection Board (DSSSB) has announced the final result notice no. 386 for PGT Mathematics Male and Female posts under post code 825/24 in the Directorate of Education, GNCTD. The written examination was conducted on 12 April 2026 and 13 April 2026. A total of 31 candidates have been provisionally nominated based on their performance and e-dossiers. Candidates can check their roll numbers and category-wise cut-off marks in the result notification.",
-    "intro_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने शिक्षा निदेशालय, GNCTD के अंतर्गत पोस्ट कोड 825/24 के PGT गणित पुरुष और महिला पदों के लिए अंतिम परिणाम नोटिस संख्या 386 की घोषणा कर दी है। लिखित परीक्षा 12 अप्रैल 2026 और 13 अप्रैल 2026 को आयोजित की गई थी। कुल 31 उम्मीदवारों को अनंतिम रूप से नामित किया गया है।",
+    "intro_en": "The Delhi Subordinate Services Selection Board (DSSSB) has released the result notice number 386 for PGT (Maths) Male and Female posts under post code 825/24 in the Directorate of Education, GNCTD. The written examination Tier-I was conducted on 12 April 2026 and 13 April 2026. A total of 31 candidates have been provisionally nominated based on their performance and details furnished in their online applications and e-dossiers. Selected candidates must undergo thorough document and eligibility verification by the User Department before the issuance of appointment letters.",
+    "intro_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने शिक्षा निदेशालय, GNCTD के तहत पोस्ट कोड 825/24 के PGT (गणित) पुरुष और महिला पदों के लिए परिणाम नोटिस संख्या 386 जारी कर दिया है। लिखित परीक्षा टियर-I 12 अप्रैल 2026 और 13 अप्रैल 2026 को आयोजित की गई थी। उनके प्रदर्शन और ऑनलाइन आवेदन और ई-डोजियर में दिए गए विवरण के आधार पर कुल 31 उम्मीदवारों को अनंतिम रूप से नामांकित किया गया है। चयनित उम्मीदवारों को नियुक्ति पत्र जारी होने से पहले उपयोगकर्ता विभाग द्वारा गहन दस्तावेज़ और पात्रता सत्यापन से गुजरना होगा।",
     "last_date": "2025-02-14",
-    "mistakes_en": [],
-    "mistakes_hi": [],
+    "mistakes_en": [
+      "Failing to provide genuine and verified caste or category certificates.",
+      "Inability to prove essential educational qualifications as of the cut-off date 14.02.2025."
+    ],
+    "mistakes_hi": [
+      "असली और सत्यापित जाति या श्रेणी प्रमाण पत्र प्रदान करने में विफल रहना।",
+      "14.02.2025 की कट-ऑफ तिथि के अनुसार आवश्यक शैक्षणिक योग्यताओं को साबित करने में असमर्थता।"
+    ],
     "not_en": [],
     "not_hi": [],
     "notice_date": "2026-10-30",
@@ -188,75 +228,79 @@
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Total Vacancies",
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "PGT (Maths) - Male & Female",
+        "value_hi": "PGT (गणित) - पुरुष और महिला"
+      },
+      {
+        "label_en": "Total vacancies",
         "label_hi": "कुल वैकेंसी",
         "value_en": "31",
         "value_hi": "31"
       },
       {
-        "label_en": "Post Code",
-        "label_hi": "पोस्ट कोड",
-        "value_en": "825/24",
-        "value_hi": "825/24"
-      },
-      {
-        "label_en": "Exam Date",
+        "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "12 Apr & 13 Apr 2026",
         "value_hi": "12 अप्रैल और 13 अप्रैल 2026"
       },
       {
-        "label_en": "Advertisement Number",
+        "label_en": "Advertisement number",
         "label_hi": "विज्ञापन संख्या",
-        "value_en": "1/24",
-        "value_hi": "1/24"
+        "value_en": "1/2024",
+        "value_hi": "1/2024"
       }
     ],
     "salary": [],
     "selection_en": [
-      "Tier-I Online Written Examination",
-      "E-dossier filling and document verification",
-      "Nomination to User Department"
+      "Written examination (Tier-I)",
+      "E-dossier filing and preference module",
+      "Provisional nomination",
+      "Document and eligibility verification by User Department",
+      "Issuance of offer of appointment"
     ],
     "selection_hi": [
-      "टियर-आई ऑनलाइन लिखित परीक्षा",
-      "ई-ड dossier भरना और दस्तावेज़ सत्यापन",
-      "उपयोगकर्ता विभाग को नामांकन"
+      "लिखित परीक्षा (टियर-I)",
+      "ई-डोजियर दाखिल करना और प्राथमिकता मॉड्यूल",
+      "अनंतिम नामांकन",
+      "उपयोगकर्ता विभाग द्वारा दस्तावेज़ और पात्रता सत्यापन",
+      "नियुक्ति प्रस्ताव जारी करना"
     ],
     "share_card": {
       "headline_en": "Final Result Out",
       "headline_hi": "अंतिम परिणाम जारी",
       "kind": "result",
-      "line_en": "PGT Maths Post Code 825/24",
-      "line_hi": "PGT गणित पोस्ट कोड 825/24",
+      "line_en": "PGT Maths (825/24)",
+      "line_hi": "PGT गणित (825/24)",
       "posts": 31
     },
     "status_en": "Final result declared",
     "status_hi": "अंतिम परिणाम घोषित",
-    "summary_en": "DSSSB has released the provisional nomination result for PGT Mathematics (Male and Female) posts under post code 825/24. A total of 31 candidates have been provisionally nominated. Check roll numbers and cut-off marks in the official notice.",
-    "summary_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड ने पोस्ट कोड 825/24 के तहत PGT गणित (पुरुष और महिला) पदों के लिए अनंतिम नामांकन परिणाम जारी कर दिया है। कुल 31 उम्मीदवारों को अनंतिम रूप से नामित किया गया है।",
+    "summary_en": "View the provisional nomination result for PGT Mathematics posts under post code 825/24 in the Directorate of Education.",
+    "summary_hi": "शिक्षा निदेशालय के अंतर्गत पोस्ट कोड 825/24 के लिए PGT गणित पदों का अनअंतिम नामांकन परिणाम देखें।",
     "vacancies": [
       {
-        "detail_en": "UR 10, EWS 02, OBC 07, SC 02",
-        "detail_hi": "सामान्य 10, ईडब्ल्यूएस 02, ओबीसी 07, एससी 02",
+        "detail_en": "UR 10, EWS 2, OBC 7, SC 2",
+        "detail_hi": "सामान्य 10, ईडब्ल्यूएस 2, ओबीसी 7, एससी 2",
         "post_en": "PGT (Maths) - Male",
-        "post_hi": "पीजीटी (गणित) - पुरुष",
+        "post_hi": "PGT (गणित) - पुरुष",
         "total": "21"
       },
       {
-        "detail_en": "UR 01, OBC 04, SC 01, ST 04",
-        "detail_hi": "सामान्य 01, ओबीसी 04, एससी 01, एसटी 04",
+        "detail_en": "UR 1, OBC 4, SC 1, ST 4",
+        "detail_hi": "सामान्य 1, ओबीसी 4, एससी 1, एसटी 4",
         "post_en": "PGT (Maths) - Female",
-        "post_hi": "पीजीटी (गणित) - महिला",
+        "post_hi": "PGT (गणित) - महिला",
         "total": "10"
       }
     ],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the PGT Mathematics Tier-I examination under post code 825/24"
+      "Candidates who appeared for the DSSSB PGT Maths exam under post code 825/24."
     ],
     "who_hi": [
-      "वे उम्मीदवार जो पोस्ट कोड 825/24 के तहत PGT गणित टियर-I परीक्षा में शामिल हुए थे"
+      "वे उम्मीदवार जो पोस्ट कोड 825/24 के तहत DSSSB PGT गणित परीक्षा में शामिल हुए थे।"
     ]
   },
   "pdf": {
@@ -266,11 +310,6 @@
     "text_kind": "text"
   },
   "published_at": "2026-10-30T10:48:39Z",
-  "qual": [
-    "graduate",
-    "postgraduate"
-  ],
-  "rewrite": true,
   "slug": "dsssb-pgt-maths-result-2026-post-code-825-24-final-list-out",
   "source_id": "dsssb-home",
   "status": "approved",

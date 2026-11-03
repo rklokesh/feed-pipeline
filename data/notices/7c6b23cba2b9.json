@@ -11,8 +11,8 @@
     "skip_reason": "",
     "summary_en": "DSSSB has released the supplementary result for PGT History under Post Code 811/23. Check the notice for provisionally nominated candidates.",
     "summary_hi": "DSSSB ने पोस्ट कोड 811/23 के तहत PGT इतिहास के लिए सप्लीमेंट्री परिणाम जारी कर दिया है। अनंतिम रूप से नामांकित उम्मीदवारों के लिए नोटिस देखें।",
-    "title_en": "DSSSB PGT History Supplementary Result 2026 – Post Code 811/23",
-    "title_hi": "DSSSB PGT इतिहास सप्लीमेंट्री रिज़ल्ट 2026 – पोस्ट कोड 811/23",
+    "title_en": "DSSSB PGT History Supplementary Result 2026 – Post Code 811/23 Out",
+    "title_hi": "DSSSB PGT इतिहास सप्लीमेंट्री रिज़ल्ट 2026 – पोस्ट कोड 811/23 जारी",
     "type": "Result",
     "vacancies": 24
   },
@@ -42,12 +42,10 @@
   "org": "DSSSB",
   "page": {
     "after_en": [
-      "Thorough verification of candidature and documents by the User Department (DoE / NDMC).",
-      "Issuance of appointment letters to eligible candidates."
+      "Provisional nominees must undergo thorough verification of their candidature, identity, and original documents by the User Department before the issuance of appointment letters."
     ],
     "after_hi": [
-      "उपयोगकर्ता विभाग (DoE / NDMC) द्वारा उम्मीदवारी और दस्तावेजों का गहन सत्यापन।",
-      "पात्र उम्मीदवारों को नियुक्ति पत्र जारी करना।"
+      "नियुक्ति पत्र जारी होने से पहले अनंतिम रूप से नामांकित उम्मीदवारों को उपयोगकर्ता विभाग द्वारा अपनी उम्मीदवारी, पहचान और मूल दस्तावेजों का गहन सत्यापन कराना होगा।"
     ],
     "age": [],
     "apply_start": null,
@@ -55,25 +53,33 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check the official supplementary result notice for your roll number.",
-      "Keep all original educational and category documents ready for verification."
+      "Check your roll number in the supplementary result notice",
+      "Review the category-wise cut-off marks",
+      "Keep original documents ready for User Department verification"
     ],
     "checklist_hi": [
-      "अपने रोल नंबर के लिए आधिकारिक सप्लीमेंट्री रिजल्ट नोटिस जांचें।",
-      "सत्यापन के लिए सभी मूल शैक्षणिक और श्रेणी के दस्तावेज तैयार रखें।"
+      "सप्लीमेंट्री रिजल्ट नोटिस में अपना रोल नंबर जांचें",
+      "श्रेणी-वार कट-ऑफ अंकों की समीक्षा करें",
+      "उपयोगकर्ता विभाग के सत्यापन के लिए मूल दस्तावेज तैयार रखें"
     ],
     "conducted_by_en": "Delhi Subordinate Services Selection Board (DSSSB)",
     "conducted_by_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB)",
     "dates": [
       {
-        "label_en": "Exam Date",
-        "label_hi": "परीक्षा तिथि",
-        "value_en": "31 Jul 2025 & 04 Aug 2025",
-        "value_hi": "31 जुलाई 2025 और 04 अगस्त 2025"
+        "label_en": "Advertisement Date",
+        "label_hi": "विज्ञापन तिथि",
+        "value_en": "22 Dec 2023",
+        "value_hi": "22 दिसंबर 2023"
       },
       {
-        "label_en": "Notice Date",
-        "label_hi": "नोटिस तिथि",
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "31 Jul 2025 & 01 Aug 2025",
+        "value_hi": "31 जुलाई 2025 और 01 अगस्त 2025"
+      },
+      {
+        "label_en": "Supplementary Result Notice Date",
+        "label_hi": "सप्लीमेंट्री रिजल्ट नोटिस तिथि",
         "value_en": "02 Nov 2026",
         "value_hi": "02 नवंबर 2026"
       }
@@ -81,74 +87,80 @@
     "documents_en": [
       "Educational qualification certificates",
       "Age proof",
-      "Category / Caste certificate (if applicable)",
-      "PwBD certificate (if applicable)",
-      "EWS certificate (if applicable)"
+      "Caste/Category certificate (if applicable)",
+      "Identity proof",
+      "Application form and admit card copy"
     ],
     "documents_hi": [
       "शैक्षणिक योग्यता प्रमाण पत्र",
       "आयु प्रमाण",
-      "श्रेणी / जाति प्रमाण पत्र (यदि लागू हो)",
-      "दिव्यांग प्रमाण पत्र (यदि लागू हो)",
-      "ईडब्ल्यूएस प्रमाण पत्र (यदि लागू हो)"
+      "जाति/श्रेणी प्रमाण पत्र (यदि लागू हो)",
+      "पहचान प्रमाण",
+      "आवेदन पत्र और प्रवेश पत्र की प्रति"
     ],
-    "eligibility": [],
+    "eligibility": [
+      {
+        "label_en": "Educational Qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "As per Recruitment Rules for PGT History",
+        "value_hi": "पीजीटी इतिहास के भर्ती नियमों के अनुसार"
+      }
+    ],
     "exam_date": "2025-07-31",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is a combined recruitment examination conducted by DSSSB for the post of Post Graduate Teacher (PGT) in History for male and female candidates in the Directorate of Education (DoE) and NDMC.",
-        "a_hi": "यह शिक्षा निदेशालय (DoE) और NDMC में पुरुष और महिला उम्मीदवारों के लिए इतिहास में पोस्ट ग्रेजुएट टीचर (PGT) के पद के लिए DSS द्वारा आयोजित एक संयुक्त भर्ती परीक्षा है।",
+        "a_en": "It is a combined examination conducted by DSSSB for the recruitment of Post Graduate Teachers (PGT) in History for male and female candidates in the Directorate of Education (DoE) and NDMC.",
+        "a_hi": "यह शिक्षा निदेशालय (DoE) और NDMC में पुरुष और महिला उम्मीदवारों के लिए इतिहास में पोस्ट ग्रेजुएट टीचर्स (PGT) की भर्ती के लिए DSSSB द्वारा आयोजित एक संयुक्त परीक्षा है।",
         "q_en": "What is DSSSB PGT History Post Code 811/23?",
         "q_hi": "DSSSB PGT इतिहास पोस्ट कोड 811/23 क्या है?"
       }
     ],
-    "extra": [
-      {
-        "label_en": "Advertisement Number",
-        "label_hi": "विज्ञापन संख्या",
-        "value_en": "07/23",
-        "value_hi": "07/23"
-      }
-    ],
+    "extra": [],
     "faq": [
       {
-        "a_en": "The online written examination was conducted on 31 July 2025 and 04 August 2025.",
-        "a_hi": "ऑनलाइन लिखित परीक्षा 31 जुलाई 2025 और 04 अगस्त 2025 को आयोजित की गई थी।",
-        "q_en": "When was the DSSSB PGT History exam conducted?",
-        "q_hi": "DSSSB PGT इतिहास की परीक्षा कब आयोजित की गई थी?"
+        "a_en": "The Post Code is 811/23.",
+        "a_hi": "पोस्ट कोड 811/23 है।",
+        "q_en": "What is the Post Code for DSSSB PGT History Supplementary Result 2026?",
+        "q_hi": "DSSSB PGT इतिहास सप्लीमेंट्री रिज़ल्ट 2026 के लिए पोस्ट कोड क्या है?"
+      },
+      {
+        "a_en": "The written exam was conducted on 31.07.2025 and 01.08.2025.",
+        "a_hi": "लिखित परीक्षा 31.07.2025 और 01.08.2025 को आयोजित की गई थी।",
+        "q_en": "When was the DSSSB PGT History written exam conducted?",
+        "q_hi": "DSSSB PGT इतिहास की लिखित परीक्षा कब आयोजित की गई थी?"
       },
       {
         "a_en": "A total of 24 vacancies were advertised.",
         "a_hi": "कुल 24 रिक्तियों की घोषणा की गई थी।",
-        "q_en": "How many vacancies were advertised for Post Code 811/23?",
-        "q_hi": "पोस्ट कोड 811/23 के लिए कुल कितनी रिक्तियों की घोषणा की गई थी?"
+        "q_en": "How many vacancies were advertised for PGT History under Post Code 811/23?",
+        "q_hi": "पोस्ट कोड 811/23 के तहत PGT इतिहास के लिए कुल कितनी रिक्तियों की घोषणा की गई थी?"
       },
       {
-        "a_en": "The supplementary result notice number is 1669.",
-        "a_hi": "सप्लीमेंट्री रिजल्ट नोटिस नंबर 1669 है।",
-        "q_en": "What is the notice number for the supplementary result?",
-        "q_hi": "सप्लीमेंट्री रिजल्ट के लिए नोटिस नंबर क्या है?"
+        "a_en": "No, there is no waiting list or reserve panel under the combined examination as per the notice.",
+        "a_hi": "नहीं, नोटिस के अनुसार संयुक्त परीक्षा के तहत कोई प्रतीक्षा सूची या रिजर्व पैनल नहीं है।",
+        "q_en": "Is there a waiting list for this examination?",
+        "q_hi": "क्या इस परीक्षा के लिए कोई प्रतीक्षा सूची है?"
       }
     ],
     "fees": [],
-    "h1_en": "DSSSB PGT History Supplementary Result 2026 – Post Code 811/23",
-    "h1_hi": "DSSSB PGT इतिहास सप्लीमेंट्री रिज़ल्ट 2026 – पोस्ट कोड 811/23",
+    "h1_en": "DSSSB PGT History Supplementary Result 2026 – Post Code 811/23 Out",
+    "h1_hi": "DSSSB PGT इतिहास सप्लीमेंट्री रिज़ल्ट 2026 – पोस्ट कोड 811/23 जारी",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official DSSSB website.",
-      "Go to the Result or Circulars section.",
-      "Click on the Supplementary Result Notice No. 1669 for Post Code 811/23.",
-      "Download the PDF and check your roll number and cut-off marks."
+      "Visit the official website of DSSSB.",
+      "Go to the 'Results' or 'Latest Notifications' section.",
+      "Click on Supplementary Result Notice No. 1669 for Post Code 811/23.",
+      "Download and check the PDF for roll numbers and cut-off marks."
     ],
     "how_hi": [
-      "आधिकारिक DSSSB वेबसाइट पर जाएं।",
-      "रिजल्ट या सर्कुलर सेक्शन में जाएं।",
-      "पोस्ट कोड 811/23 के लिए सप्लीमेंट्री रिजल्ट नोटिस नं. 1669 पर क्लिक करें।",
-      "PDF डाउनलोड करें और अपना रोल नंबर और कट-ऑफ अंक जांचें।"
+      "DSSSB की आधिकारिक वेबसाइट पर जाएं।",
+      "रिज़ल्ट या नवीनतम सूचना अनुभाग पर जाएं।",
+      "पोस्ट कोड 811/23 के लिए सप्लीमेंट्री रिजल्ट नोटिस नंबर 1669 पर क्लिक करें।",
+      "रोल नंबर और कट-ऑफ अंक देखने के लिए पीडीएफ डाउनलोड करें।"
     ],
-    "intro_en": "Delhi Subordinate Services Selection Board (DSSSB) has issued the supplementary result notice number 1669 for the post of PGT History (Male and Female) under Post Code 811/23. The written examination was conducted on 31 July 2025 and 04 August 2025. Based on the clarification from the user department, candidates have been provisionally nominated against pending vacancies. Candidates can check the notice for detailed category-wise cut-off marks and nomination details.",
-    "intro_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने पोस्ट कोड 811/23 के तहत PGT इतिहास (पुरुष और महिला) के पद के लिए सप्लीमेंट्री रिजल्ट नोटिस संख्या 1669 जारी कर दिया है। लिखित परीक्षा 31 जुलाई 2025 और 04 अगस्त 2025 को आयोजित की गई थी। यूजर डिपार्टमेंट से स्पष्टीकरण के आधार पर, उम्मीदवारों को लंबित रिक्तियों के विरुद्ध अन้तिम रूप से नामांकित किया गया है। उम्मीदवार विस्तृत श्रेणी-वार कट-ऑफ अंकों और नामांकन विवरण के लिए नोटिस देख सकते हैं।",
+    "intro_en": "Delhi Subordinate Services Selection Board (DSSSB) has published Supplementary Result Notice No. 1669 for the combined examination of PGT (History)-Male and PGT (History)-Female in DoE and PGT (History) in NDMC under Post Code 811/23. Candidates who appeared for the written examination held on 31.07.2025 and 01.08.2025 can check their provisional nomination status. The notice also includes the final category-wise cut-off marks for the candidates.",
+    "intro_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने पोस्ट कोड 811/23 के तहत शिक्षा निदेशालय में PGT (इतिहास)-पुरुष और PGT (इतिहास)-महिला तथा NDMC में PGT (इतिहास) की संयुक्त परीक्षा के लिए सप्लीमेंट्री रिजल्ट नोटिस नंबर 1669 जारी कर दिया है। 31.07.2025 और 01.08.2025 को आयोजित लिखित परीक्षा में शामिल होने वाले उम्मीदवार अपना अनंतिम नामांकन स्टेटस देख सकते हैं। नोटिस में श्रेणी-वार कट-ऑफ अंक भी दिए गए हैं।",
     "last_date": null,
     "mistakes_en": [],
     "mistakes_hi": [],
@@ -162,8 +174,8 @@
       {
         "label_en": "Post Name",
         "label_hi": "पद का नाम",
-        "value_en": "PGT (History) - Male & Female in DoE and PGT (History) in NDMC",
-        "value_hi": "शिक्षा निदेशालय में PGT (इतिहास) - पुरुष और महिला तथा NDMC में PGT (इतिहास)"
+        "value_en": "PGT (History) Male & Female",
+        "value_hi": "पीजीटी (इतिहास) पुरुष और महिला"
       },
       {
         "label_en": "Post Code",
@@ -172,64 +184,58 @@
         "value_hi": "811/23"
       },
       {
-        "label_en": "Total Vacancies",
-        "label_hi": "कुल रिक्तियां",
-        "value_en": "24",
-        "value_hi": "24"
+        "label_en": "Advertisement No.",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "07/23",
+        "value_hi": "07/23"
       },
       {
         "label_en": "Exam Date",
         "label_hi": "परीक्षा तिथि",
-        "value_en": "31 Jul 2025 & 04 Aug 2025",
-        "value_hi": "31 जुलाई 2025 और 04 अगस्त 2025"
-      },
-      {
-        "label_en": "Notice Number",
-        "label_hi": "नोटिस संख्या",
-        "value_en": "Supplementary Result Notice No. 1669",
-        "value_hi": "सप्लीमेंट्री रिजल्ट नोटिस नं. 1669"
+        "value_en": "31 Jul 2025 & 01 Aug 2025",
+        "value_hi": "31 जुलाई 2025 और 01 अगस्त 2025"
       }
     ],
     "salary": [],
     "selection_en": [
-      "Online Written Examination (One Tier)",
+      "One Tier (Technical/Teaching) Written Examination",
       "Document Upload in e-dossier module",
       "Provisional Nomination",
-      "Document and Eligibility Verification by User Department"
+      "Thorough verification of candidature and documents by User Department"
     ],
     "selection_hi": [
-      "ऑनलाइन लिखित परीक्षा (वन टियर)",
-      "ई-डोसियर मॉड्यूल में दस्तावेज़ अपलोड करना",
+      "वन टियर (तकनीकी/शिक्षण) लिखित परीक्षा",
+      "ई-ड dossier मॉड्यूल में दस्तावेज़ अपलोड",
       "अनंतिम नामांकन",
-      "उपयोगकर्ता विभाग द्वारा दस्तावेज़ और पात्रता सत्यापन"
+      "उपयोगकर्ता विभाग द्वारा उम्मीदवारी और दस्तावेजों का सत्यापन"
     ],
     "share_card": {
       "headline_en": "Supplementary Result",
-      "headline_hi": "सप्लीमेंट्री रिजल्ट",
+      "headline_hi": "सप्लीमेंट्री रिज़ल्ट",
       "kind": "result",
       "line_en": "PGT History Post Code 811/23",
-      "line_hi": "PGT इतिहास पोस्ट कोड 811/23",
+      "line_hi": "पीजीटी इतिहास पोस्ट कोड 811/23",
       "posts": 24
     },
     "status_en": "Supplementary result declared",
-    "status_hi": "सप्लीमेंट्री रिज़ल्ट घोषित",
-    "summary_en": "Delhi Subordinate Services Selection Board (DSSSB) has released the supplementary result for PGT History (Male & Female) under Post Code 811/23. Candidates can check the notice for provisionally nominated candidates and cut-off marks.",
-    "summary_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने पोस्ट कोड 811/23 के तहत PGT इतिहास (पुरुष और महिला) के लिए सप्लीमेंट्री परिणाम जारी कर दिया है। उम्मीदवार अनंतिम रूप से नामांकित उम्मीदवारों और कट-ऑफ अंकों के लिए नोटिस देख सकते हैं।",
+    "status_hi": "सप्लीमेंट्री परिणाम घोषित",
+    "summary_en": "Delhi Subordinate Services Selection Board (DSSSB) has released the supplementary result for PGT History (Male & Female) under Post Code 811/23. Check the notice for provisionally nominated candidates and category-wise cut-off marks.",
+    "summary_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने पोस्ट कोड 811/23 के तहत PGT इतिहास (पुरुष और महिला) के लिए सप्लीमेंट्री परिणाम जारी कर दिया है। अनंतिम रूप से नामांकित उम्मीदवारों और श्रेणी-वार कट-ऑफ अंकों के लिए नोटिस देखें।",
     "vacancies": [
       {
         "detail_en": "UR 07, OBC 04, SC 06, ST 02, EWS 05 (including PwBD)",
-        "detail_hi": "अनारक्षित 07, अन्य पिछड़ा वर्ग 04, अनुसूचित जाति 06, अनुसूचित जनजाति 02, आर्थिक रूप से कमजोर वर्ग 05 (दिव्यांग सहित)",
+        "detail_hi": "सामान्य 07, अन्य पिछड़ा वर्ग 04, एससी 06, एसटी 02, ईडब्ल्यूएस 05",
         "post_en": "PGT History (Male & Female)",
-        "post_hi": "PGT इतिहास (पुरुष और महिला)",
+        "post_hi": "पीजीटी इतिहास (पुरुष और महिला)",
         "total": "24"
       }
     ],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the DSSSB PGT History Post Code 811/23 examination."
+      "Candidates who appeared for DSSSB PGT History Post Code 811/23 examination"
     ],
     "who_hi": [
-      "वे उम्मीदवार जिन्होंने DSSSB PGT इतिहास पोस्ट कोड 811/23 परीक्षा दी थी।"
+      "वे उम्मीदवार जो DSSSB PGT इतिहास पोस्ट कोड 811/23 परीक्षा में शामिल हुए थे"
     ]
   },
   "pdf": {
@@ -239,10 +245,6 @@
     "text_kind": "text"
   },
   "published_at": "2026-11-03T08:32:07Z",
-  "qual": [
-    "postgraduate"
-  ],
-  "rewrite": true,
   "slug": "dsssb-pgt-history-supplementary-result-2026-post-code-811-23",
   "source_id": "dsssb-home",
   "status": "approved",
@@ -250,8 +252,10 @@
   "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/notice_1669.pdf",
   "verify": {
     "at": "2026-11-03",
+    "held": false,
     "missing": [
-      "Exam date: 2025-07-31"
+      "Exam date: 2025-07-31",
+      "Advertisement Date: 2023-12-22"
     ],
     "tries": 1
   }
