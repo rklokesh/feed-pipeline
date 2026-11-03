@@ -259,7 +259,17 @@ def process(src: dict, item: dict, ai_budget: list[int], hashes: dict) -> dict:
         rec["status"] = "ignored"
         return rec
     try:
-        data = download(item["url"], referer=src["url"])
+        try:
+            data = download(item["url"], referer=src["url"])
+        except Exception as e:  # noqa: BLE001
+            if item["url"].startswith("http://"):            # old http links whose port 80 is closed (JKPSC)
+                data = download("https://" + item["url"][7:], referer=src["url"])
+            elif src.get("download") == "browser":          # TLS the browser accepts but requests does not (IBPS)
+                data = browser_download(src["url"], item["url"]) or b""
+                if not data:
+                    raise e
+            else:
+                raise
         if not data.startswith(b"%PDF") and src.get("download") == "browser":
             data = browser_download(src["url"], item["url"]) or data
         if not data.startswith(b"%PDF") and b"%PDF-" in data[:2_000_000]:

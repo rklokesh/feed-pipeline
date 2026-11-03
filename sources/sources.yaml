@@ -30,6 +30,7 @@ sources:
     url: https://www.ibps.in/
     render: js             # Nov 2026: plain requests now fail the TLS handshake; the browser loads it and the
     runner: india          # homepage lists every notice PDF (wp-content/uploads)
+    download: browser
   - id: nta-home
     org: NTA
     url: https://nta.ac.in/
