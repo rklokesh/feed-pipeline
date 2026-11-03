@@ -1,0 +1,78 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://psc.cg.gov.in/Advertisement.php",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "05/2026/परीक्षा/दिनांक 08/09/2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "05/2026/परीक्षा/दिनांक 08/09/2026"
+    },
+    "age_limit": {
+      "evidence": "दिनांक 01.01.2026 को 25 वर्ष से कम तथा 35 वर्ष से अधिक न हो",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": "2026-01-01",
+        "max": 35,
+        "min": 25
+      }
+    },
+    "apply_last": {
+      "evidence": "09/10/2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-10-09"
+    },
+    "apply_start": {
+      "evidence": "10/09/2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-09-10"
+    },
+    "apply_url": {
+      "evidence": "www.psc.cg.gov.in",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "www.psc.cg.gov.in"
+    },
+    "post_names": {
+      "evidence": "माइक्रो बायोलॉजिस्ट (खाद्य प्रयोगशाला), माइक्रो बायोलॉजिस्ट (औषधि प्रयोगशाला)",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "माइक्रो बायोलॉजिस्ट (खाद्य प्रयोगशाला)",
+        "माइक्रो बायोलॉजिस्ट (औषधि प्रयोगशाला)"
+      ]
+    },
+    "qualification": {
+      "evidence": "एम.एस.सी. (माइक्रो बायोलॉजी) तथा मान्यता प्राप्त प्रयोगशाला में खाद्य परीक्षण का पांच वर्ष का अनुभव",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "एम.एस.सी. (माइक्रो बायोलॉजी) तथा मान्यता प्राप्त प्रयोगशाला में खाद्य/औषधि परीक्षण का पांच वर्ष का अनुभव"
+    },
+    "total_vacancies": {
+      "evidence": "कुल 5",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 5
+    }
+  },
+  "first_seen": "2026-11-03T16:16:29+00:00",
+  "id": "3c5a1f4cc8f9",
+  "kind": "notification",
+  "org": "CGPSC",
+  "pdf": {
+    "bytes": 2833316,
+    "pages": 24,
+    "sha256": "f4d11ad117523813004541cf434c162c303978805577f534c24da82694eefd6a",
+    "text_kind": "text"
+  },
+  "source_id": "cgpsc-adverts",
+  "status": "pending_review",
+  "title": "MICRO_BIOLOGIST-2026_ADVERTISEMENT (08-09-2026)",
+  "url": "https://psc.cg.gov.in/PDFs/advertisement/MICRO_BIOLOGIST-2026_ADVERTISEMENT (08-09-2026).pdf"
+}

@@ -1,0 +1,33 @@
+{
+  "board_url": "https://www.upsc.gov.in/whats-new",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "CER IN CANTEEN STORES DEPARTMENT, MINISTRY OF DEFENCE. VIDE ADVT. NO. 08/2025, VACANCY NO. 25060805428. THE COMMISSION HAD CONDUCTED RECRUITMENT TEST ON 27.0",
+      "source": "rule",
+      "value": "08/2025"
+    },
+    "total_vacancies": {
+      "evidence": "AFTER COMPLETION OF RECRUITMENT PROCESS. Annexure Rectt. to 19 Posts of Manager Gr. I / Section Officer in Canteen Stores Deptt. , Min. of Defence 1",
+      "source": "rule",
+      "value": 19
+    }
+  },
+  "first_seen": "2026-11-03T16:16:29+00:00",
+  "id": "8d316a6c7960",
+  "kind": "result",
+  "org": "UPSC",
+  "pdf": {
+    "bytes": 415492,
+    "pages": 2,
+    "sha256": "69eff601395728da2f05c0036a7a25a2c1006bd361bd01604f03f7275a62e60e",
+    "text_kind": "text",
+    "via": "https://www.upsc.gov.in/sites/default/files/RT-WR-19-ManagerGr-I-SO-Engl-231026.pdf"
+  },
+  "source_id": "upsc-whats-new",
+  "status": "pending_review",
+  "title": "Written Result: 19 Posts of Manager Grade - I - Section Officer, Ministry of Defence",
+  "url": "https://www.upsc.gov.in/whats-new/19 Posts of Manager Grade - I - Section Officer, Ministry of Defence/Written Result"
+}

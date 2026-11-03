@@ -1,0 +1,85 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://sssb.punjab.gov.in/vacancy-group-c/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "ਇਸ਼ਿਤਹਾਰ ਨੰ ਬਰ 12 ਆਫ 2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "12 ਆਫ 2026"
+    },
+    "apply_last": {
+      "conflict": {
+        "evidence": "ਆਨਲਾਈਨ ਅਰਜੀਆਂ ਸਬਿਮਟ/ਅਪਲਾਈ ਕਰਨ ਅਤੇ ਫੀਸ ਭਰਨ ਦੀ ਆਖਰੀ ਮਿਤੀ - 19-10-2026",
+        "provider": "gemini/gemini-flash-lite-latest",
+        "source": "ai",
+        "value": "2026-10-19"
+      },
+      "evidence": "e specifically provided in the relevant rules, shall be the last date for submission of application forms.” 7. ਉਮਰ ਸੀਮਾ :- ਉਪਰੋਕਤ ਅਸਾਮੀਆਂ ਲਈ ਉਮੀਦਵਾਰ(cid:127) ਦੀ ਉਮਰ ਸੀਮਾ ਪੰਜਾਬ ਸਰਕਾਰ ਦੀਆ ਂ ਹਦਾਇਤ(cid:127) ਅਨੁਸਾਰ ਿਮਤੀ 01.01.202",
+      "source": "rule",
+      "value": "2026-01-01"
+    },
+    "apply_or_official_url": {
+      "evidence": "ਡ, ਪੰਜਾਬ । ਵਣ ਭਵਨ, ਸੈਕਟਰ-68, ਐ(cid:123)ਸ.ਏ.ਐ(cid:123)ਸ. ਨਗਰ https://sssb.punjab.gov.in ਇਸ਼ਿਤਹਾਰ ਨੰ ਬਰ 12 ਆਫ 2026 ਅਸਾਮੀਆ ਂ ਦੀ ਿਗਣਤੀ - 70 . ਲੜੀ ਨੰ ਵੇਰਵਾ ਪੰਨਾ ਨੰ ਬਰ 1. ਮਹ",
+      "source": "rule",
+      "value": "https://sssb.punjab.gov.in"
+    },
+    "apply_start": {
+      "evidence": "ਆਨਲਾਈਨ ਅਪਲਾਈ ਕਰਨ ਦੀ ਸ਼ੁਰੂਆਤੀ ਮਿਤੀ: - 25-09-2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-09-25"
+    },
+    "apply_url": {
+      "evidence": "https://sssb.punjab.gov.in",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://sssb.punjab.gov.in"
+    },
+    "post_names": {
+      "evidence": {
+        "ਕਲਰਕ (ਅਕਾਉਂਟਸ)": "ਡਾਇਰੈਕਟੋਰੇਟ ਰੋਜ਼ਗਾਰ ਉਤਪਤੀ ਹੁਨਰ ਵਿਕਾਸ ਅਤੇ ਸਿਖਲਾਈ ਵਿਭਾਗ - ਕਲਰਕ (ਅਕਾਉਂਟਸ)",
+        "ਕਲਰਕ (ਆਈਟੀ)": "ਆਬਕਾਰੀ ਅਤੇ ਕਰ ਵਿਭਾਗ ਮੁੱਖ ਦਫਤਰ - ਕਲਰਕ (ਆਈ.ਟੀ.)",
+        "ਕਲਰਕ (ਲੀਗਲ)": "ਡਾਇਰੈਕਟੋਰੇਟ ਰੋਜ਼ਗਾਰ ਉਤਪਤੀ ਹੁਨਰ ਵਿਕਾਸ ਅਤੇ ਸਿਖਲਾਈ ਵਿਭਾਗ - ਕਲਰਕ (ਲੀਗਲ)",
+        "ਡਰਾਈਵਰ": "ਪੇਂਡੂ ਵਿਕਾਸ ਅਤੇ ਪੰਚਾਇਤ ਵਿਭਾਗ - ਡਰਾਈਵਰ"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "ਡਰਾਈਵਰ",
+        "ਕਲਰਕ (ਲੀਗਲ)",
+        "ਕਲਰਕ (ਅਕਾਉਂਟਸ)",
+        "ਕਲਰਕ (ਆਈਟੀ)"
+      ]
+    },
+    "qualification": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "Matric Standard Examination with valid driving licence for light and heavy vehicles and 3 years driving experience / Law Graduate / Graduation Degree with Statistics/Mathematics/Accounts / Commerce degree / BCA / B.Tech in IT etc."
+    },
+    "total_vacancies": {
+      "evidence": "ਅਸਾਮੀਆਂ ਦੀ ਗਿਣਤੀ - 70",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 70
+    }
+  },
+  "first_seen": "2026-11-03T16:16:29+00:00",
+  "id": "972d76dbb543",
+  "kind": "notification",
+  "org": "PSSSB",
+  "pdf": {
+    "bytes": 2333219,
+    "pages": 19,
+    "sha256": "ffd79f8e78855f3b69b1d6fce2ea2a51c42942beb3bdadb7c932f3167c1ba378",
+    "text_kind": "text"
+  },
+  "source_id": "psssb-group-c",
+  "status": "pending_review",
+  "title": "1 Advertisement No. 12 of 2026 for the Posts of Driver, Clerk (Legal), Clerk (Accounts), Clerk (I.T.), Translator, Field Artist View",
+  "url": "https://sssb.punjab.gov.in/wp-content/uploads/2026/09/Advt.-12-of-2026.pdf"
+}

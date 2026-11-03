@@ -1,0 +1,100 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://jkssb.nic.in/Advertisement.html",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "----------------------------------------------------------- Advertisement Notification No. 11 of 2026 Dated: 27.10.2026 Subject: Advertisement for the posts of Junior Engineer (Civi",
+      "source": "rule",
+      "value": "tification No. 11 of 2026"
+    },
+    "age_limit": {
+      "evidence": "The requirement of age for applying against these posts, as on 01.01.2026 for Open\nMerit & various Reserved Category Candidates, shall be as under:\nMax. Age Not Born Not Born\nS. No. Category\nLimit in Years Before After\n(i) 40 01.01.1986 01.01.2008\nOM",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": "2026-01-01",
+        "max": 40,
+        "min": null
+      }
+    },
+    "apply_last": {
+      "evidence": "r submission of Online a.) 30.11.2026 Applications: Cut-off/Last Date for submission of Online Application b.) 29.12.2026 Forms Name of the Post, Cadre, Pay Level, Category-wise break c.) up, Qualification and Criteria of Se",
+      "source": "rule",
+      "value": "2026-12-29"
+    },
+    "apply_start": {
+      "evidence": "regard to the posts being advertised are as under: Date of Commencement for submission of Online a.) 30.11.2026 Applications: Cut-off/Last Date for submission of Online Application b.) 29.12.2026 Forms Name of the Post, Cadre,",
+      "source": "rule",
+      "value": "2026-11-30"
+    },
+    "apply_url": {
+      "evidence": "(www.jkssb.nic.in)",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "www.jkssb.nic.in"
+    },
+    "fee": {
+      "evidence": "Fee payable: Rs. 600/- (Rupees Six Hundred only). In case of candidates\nbelonging to SC, ST-1, ST-2, EWS and PwBD category, the fee payable shall\nbe Rs. 500/- (Rupees Five Hundred only).",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "female": null,
+        "general": 600,
+        "obc": 600,
+        "pwd": 500,
+        "sc_st": 500
+      }
+    },
+    "fee_amounts": {
+      "evidence": "ot affect the level of performance by such candidates. 08.) APPLICATION FEE: a) Fee payable: Rs. 600/- (Rupees Six Hundred only). In case of candidates belonging to SC, ST-1, ST-2, EWS and PwBD category, the fee payable shall be Rs. 500/- (Rupees Five Hundred only). b) Fee can be paid only through online mode viz. Net Banking, Credit or D",
+      "source": "rule",
+      "value": [
+        500,
+        600
+      ]
+    },
+    "fee_last": {
+      "evidence": "Cut-off/Last Date for submission of Online Application\nb.) 29.12.2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-12-29"
+    },
+    "post_names": {
+      "evidence": "Subject: Advertisement for the posts of Junior Engineer (Civil) in Public Works",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Junior Engineer (Civil)"
+      ]
+    },
+    "qualification": {
+      "evidence": "Name of the Post, Cadre, Pay Level, Category-wise break\nc.) up, Qualification and Criteria of Selection for the Annexure-A",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "Annexure-A"
+    },
+    "total_vacancies": {
+      "evidence": "TOTAL 458",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 458
+    }
+  },
+  "first_seen": "2026-11-03T16:16:29+00:00",
+  "id": "4aa1253f02c5",
+  "kind": "notification",
+  "org": "JKSSB",
+  "pdf": {
+    "bytes": 1163421,
+    "pages": 16,
+    "sha256": "531fbd6ca3f1b26652947a6a36ab2f4d8206c67fa3a482c44310dfc3c71b943a",
+    "text_kind": "text"
+  },
+  "source_id": "jkssb-adverts",
+  "status": "pending_review",
+  "title": "11 of 2026 -- (27/10/2026)",
+  "url": "https://jkssb.nic.in/Pdf/Advertisement_11OF2026_27102026.pdf"
+}

@@ -1,0 +1,98 @@
+{
+  "board_url": "https://www.upsc.gov.in/whats-new",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "rovident Fund Organization (EPFO), M/o Labour & Employment [Advt No. 52/2025, Item No.2, Vacancy no. 25075202726] Sir/Madam, With reference to your applicat",
+      "source": "rule",
+      "value": "52/2025"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "Advt No. 52/2025"
+      }
+    },
+    "apply_or_official_url": {
+      "evidence": "pplication form for payment through NEFT (available at link https://upsc.gov.in/forms-download).  Bank pass book front page.  Copy of Bank cancelled cheque. (c) The candida",
+      "source": "rule",
+      "value": "https://upsc.gov.in/forms-download"
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "http//www.upsc.gov.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "http//www.upsc.gov.in"
+      }
+    },
+    "exam_date": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-16"
+    },
+    "exam_date_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "exam_date": "16.11.2026"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Assistant Provident Fund Commissioner (APFC) in Employees’ Provident Fund Organization (EPFO), M/o Labour & Employment"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "Recruitment to 74 Vacancies for the post of Assistant Provident Fund Commissioner (APFC) in Employees’ Provident Fund Organization (EPFO), M/o Labour & Employment"
+      }
+    },
+    "total_vacancies": {
+      "evidence": "te: 30.10.2026 To Dear candidate/s, Subject: Recruitment to 74 Vacancies for the post of Assistant Provident Fund Commissioner (APFC) in Employees’ Prov",
+      "source": "rule",
+      "value": 74
+    },
+    "total_vacancies_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "total_vacancies": "Recruitment to 74 Vacancies for the post of Assistant Provident Fund Commissioner (APFC)"
+      }
+    }
+  },
+  "first_seen": "2026-11-03T16:16:29+00:00",
+  "id": "b9037dc2c2a3",
+  "kind": "notification",
+  "org": "UPSC",
+  "pdf": {
+    "bytes": 445733,
+    "pages": 9,
+    "sha256": "66e1f125b783a70b0f659cdf47da23af9fd861c47c84fa76101f84ebd6273f9b",
+    "text_kind": "text",
+    "via": "https://www.upsc.gov.in/sites/default/files/RT-Intv-74-APFC-EPFO-Engl-301026.pdf"
+  },
+  "source_id": "upsc-whats-new",
+  "status": "pending_review",
+  "title": "Interview Details: 74 Posts of Assistant Provident Fund Commissioner, EPFO",
+  "url": "https://www.upsc.gov.in/whats-new/74 Posts of Assistant Provident Fund Commissioner, EPFO/Interview Details"
+}

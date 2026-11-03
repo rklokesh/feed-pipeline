@@ -1,0 +1,100 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://sssb.punjab.gov.in/vacancy-group-c/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "ਇਸ਼ਿਤਹਾਰ ਨੰ ਬਰ 10 ਆਫ 2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "10 ਆਫ 2026"
+    },
+    "age_limit": {
+      "evidence": "ਿਮਤੀ 01.01.2026 ਨੰ ੂ ਹੇਠ ਅਨੁਸਾਰ ਹਣੋ ੀ ਚਾਹੀਦੀ ਹੈ:- (i) ਿਕਸ ੇ ਵੀ ਸ਼(cid:135)ੇਣੀ ਦੇ ਉਮੀਦਵਾਰ ਦੀ ਉਮਰ 18 ਸਾਲ ਤ(cid:131) ਘੱਟ ਨਹ(cid:128) ਹਣੋ ੀ ਚਾਹੀਦੀ। (ii) ਜਨਰਲ ਸ਼(cid:135)ੇਣੀ ਦੇ ਉਮੀਦਵਾਰ(cid:127) ਦੀ ਉਪਰਲੀ ਉਮਰ 37 ਸਾਲ ਤ(cid:131) ਵੱਧ ਨਹ(cid:128) ਹਣੋ ੀ ਚਾਹੀਦੀ।",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": "2026-01-01",
+        "max": 37,
+        "min": 18
+      }
+    },
+    "apply_last": {
+      "evidence": "ਆਨਲਾਈਨ ਅਰਜੀਆਂ ਸਬਿਮਟ/ਅਪਲਾਈ ਕਰਨ ਅਤੇ ਫੀਸ ਭਰਨ ਦੀ ਆਖਰੀ ਿਮਤੀ - 25-05-2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-05-25"
+    },
+    "apply_or_official_url": {
+      "evidence": "ਡ, ਪੰਜਾਬ । ਵਣ ਭਵਨ, ਸੈਕਟਰ-68, ਐ(cid:123)ਸ.ਏ.ਐ(cid:123)ਸ. ਨਗਰ https://sssb.punjab.gov.in ਇਸ਼ਿਤਹਾਰ ਨੰ ਬਰ 10 ਆਫ 2026 ਅਸਾਮੀਆ ਂ ਦੀ ਿਗਣਤੀ - 150 ਲੜੀ ਨੰ . ਅਸਾਮੀ ਦਾ ਨਾਮ ਅਸਾਮੀਆਂ",
+      "source": "rule",
+      "value": "https://sssb.punjab.gov.in"
+    },
+    "apply_start": {
+      "evidence": "ਆਨਲਾਈਨ ਅਪਲਾਈ ਕਰਨ ਦੀ ਸ਼ੁਰੂਆਤੀ ਿਮਤੀ: - 04-05-2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-05-04"
+    },
+    "apply_url": {
+      "evidence": "https://sssb.punjab.gov.in",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://sssb.punjab.gov.in"
+    },
+    "fee": {
+      "evidence": "ਆਮ ਵਰਗ (General Category)/ਸਤੁ ੰਤਰਤਾ ਸੰਗਰਾਮੀ/ਿਖਡਾਰੀ - 1000/- ਰੁਪਏ ਐਸ.ਸੀ.(S.C)/ਬੀ.ਸੀ.(BC)/ਆਰਿਥਕ ਤੌਰ ਤ ੇ ਕਮਜ਼ੋਰ ਵਰਗ (EWS) - 250/- ਰਪੁ ਏ ਸਾਬਕਾ ਫੌਜੀ ਅਤੇ ਆਸ਼ਿਰਤ (Ex-Servicemen & Dependent) - 200/- ਰੁਪਏ ਿਦਿਵਆਗਂ (Physical Handicapped) - 500/- ਰੁਪਏ",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "female": null,
+        "general": 1000,
+        "obc": 250,
+        "pwd": 500,
+        "sc_st": 250
+      }
+    },
+    "fee_last": {
+      "evidence": "ਆਨਲਾਈਨ ਅਰਜੀਆਂ ਸਬਿਮਟ/ਅਪਲਾਈ ਕਰਨ ਅਤੇ ਫੀਸ ਭਰਨ ਦੀ ਆਖਰੀ ਿਮਤੀ - 25-05-2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-05-25"
+    },
+    "post_names": {
+      "evidence": "ਵੈਟਰਨਰੀ ਇੰਸਪੈਕਟਰ 150",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "ਵੈਟਰਨਰੀ ਇੰਸਪੈਕਟਰ"
+      ]
+    },
+    "qualification": {
+      "evidence": "10+2 with Physics, Chemistry and Biology subjects from a recognized University/Board; and Should possess a diploma in Veterinary Science and Animal Health Technology",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "10+2 with Physics, Chemistry and Biology subjects and a diploma in Veterinary Science and Animal Health Technology of two years duration or its equivalent"
+    },
+    "total_vacancies": {
+      "evidence": "ਅਸਾਮੀਆ ਂ ਦੀ ਿਗਣਤੀ - 150",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 150
+    }
+  },
+  "first_seen": "2026-11-03T16:16:29+00:00",
+  "id": "7e1627c8670c",
+  "kind": "notification",
+  "org": "PSSSB",
+  "pdf": {
+    "bytes": 1092869,
+    "pages": 12,
+    "sha256": "519ce6c9dd302a0217481c3a5e431a17ab1191fae7f0fe77e88b9cf69b51dfbf",
+    "text_kind": "text"
+  },
+  "source_id": "psssb-group-c",
+  "status": "pending_review",
+  "title": "3 Advertisement No. 10 of 2026 for the post of Veterinary Inspector. View",
+  "url": "https://sssb.punjab.gov.in/wp-content/uploads/2026/04/Advt.-No.-10-of-2026.pdf"
+}

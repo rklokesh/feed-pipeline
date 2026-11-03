@@ -1,0 +1,56 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://bpssc.bihar.gov.in/Notices.htm",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "05/2025"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "foKkiu la[;k&05@2025"
+      }
+    },
+    "apply_or_official_url": {
+      "evidence": "fcgkj iqfyl voj lsok vk;ksx] iVuk https://bpssc.bihar.gov.in ¼osclkbZV ½ lanHkZ % foKkiu la[;k&05@2025 eq[; fyf[kr ijh{kk dkss jnn~ fd;s tku",
+      "source": "rule",
+      "value": "https://bpssc.bihar.gov.in"
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://bpssc.bihar.gov.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "https://bpssc.bihar.gov.in"
+      }
+    }
+  },
+  "first_seen": "2026-11-03T16:16:29+00:00",
+  "id": "b0d9910aba27",
+  "kind": "notification",
+  "org": "BPSSC",
+  "pdf": {
+    "bytes": 302462,
+    "pages": 1,
+    "sha256": "f25c32798327724cb7473a162af8e79bd459e42d5be9f0f5cb698493ac81a251",
+    "text_kind": "text"
+  },
+  "source_id": "bpssc-notices",
+  "status": "pending_review",
+  "title": "23-09-2026 Important Notice-Ref.:Advt. No.-05/2025: Regarding Cancellation of Mains Written Examination",
+  "url": "https://bpssc.bihar.gov.in/Orders/Exam Cancel Pdf.pdf"
+}

@@ -1,0 +1,28 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://jkssb.nic.in/Results.html",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "Constable, (Photographer), Home Department advertised vide Notification No. 01 of 2024 conducted on 03-12-2025 at M.A Stadium, Jammu is hereby notified for the information of cand",
+      "source": "rule",
+      "value": "01 of 2024 conducted on"
+    }
+  },
+  "first_seen": "2026-11-03T16:16:29+00:00",
+  "id": "3aa462d7d9e3",
+  "kind": "result",
+  "org": "JKSSB",
+  "pdf": {
+    "bytes": 290100,
+    "pages": 3,
+    "sha256": "f9ba183862dc8396c91ab4e5c2af88a60af62ea4d944ee9ed5e06212ee34d88a",
+    "text_kind": "text"
+  },
+  "source_id": "jkssb-results",
+  "status": "pending_review",
+  "title": "Result of Physical Standard Test (PST)/Physical Endurance Test (PET) for the post of Constable (Photographer), Home Department, Conducted on 03.11.2025.",
+  "url": "https://jkssb.nic.in/Pdf/Result_PET_PST_PHOTOGRAPHER_03122025.pdf"
+}

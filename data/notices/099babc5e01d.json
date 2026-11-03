@@ -1,0 +1,56 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://bpssc.bihar.gov.in/Notices.htm",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "05/2025"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "foKkiu la[;k 05@2025"
+      }
+    },
+    "apply_or_official_url": {
+      "evidence": "iqfyl voj lsok vk;ksx] iVuk 5] gkfMZax jksM] iVuk & 800001 https://bpssc.bihar.gov.in ¼osclkbZV% ½ lanHkZ % foKkiu la[;k 05@2025 fo\"k;% Hkzked lwpuk ds [k.Mu ds laca",
+      "source": "rule",
+      "value": "https://bpssc.bihar.gov.in"
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://bpssc.bihar.gov.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "https://bpssc.bihar.gov.in"
+      }
+    }
+  },
+  "first_seen": "2026-11-03T16:16:29+00:00",
+  "id": "099babc5e01d",
+  "kind": "notification",
+  "org": "BPSSC",
+  "pdf": {
+    "bytes": 340516,
+    "pages": 1,
+    "sha256": "168a84b963c289d7514bbc71d84fd759c5f866f220ce5593d9bf0edc265f1a80",
+    "text_kind": "text"
+  },
+  "source_id": "bpssc-notices",
+  "status": "pending_review",
+  "title": "21-09-2026 Important Notice-Ref.:Advt. No.-05/2025: Regarding Rebuttal of Fake News Related to Post of Police Sub-Inspector in Home (Police) Dept., Govt. of Bihar",
+  "url": "https://bpssc.bihar.gov.in/Orders/notice 05-2025 pdf.pdf"
+}

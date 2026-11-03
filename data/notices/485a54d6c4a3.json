@@ -1,0 +1,33 @@
+{
+  "board_url": "https://www.upsc.gov.in/whats-new",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "DIRECTORATE OF CIVILIAN PERSONNEL, MINISTRY OF DEFENCE VIDE ADVT. NO. 08/2025, VACANCY NO. 25060803428. THE COMMISSION HAD CONDUCTED RECRUITMENT TEST ON 27.0",
+      "source": "rule",
+      "value": "08/2025"
+    },
+    "total_vacancies": {
+      "evidence": "AFTER COMPLETION OF RECRUITMENT PROCESS. Annexure Rectt. to 08 Posts of Administrative Officer Gr. I, Naval HQ / Dir. Of Civilian Personnel, Min. of",
+      "source": "rule",
+      "value": 8
+    }
+  },
+  "first_seen": "2026-11-03T16:16:29+00:00",
+  "id": "485a54d6c4a3",
+  "kind": "result",
+  "org": "UPSC",
+  "pdf": {
+    "bytes": 415393,
+    "pages": 2,
+    "sha256": "8376936eba6d63d1898f3bae42b91c1e5490a5a77defa7b41b2e431e857a444b",
+    "text_kind": "text",
+    "via": "https://www.upsc.gov.in/sites/default/files/RT-WR-08-AdmnstvOfcrGr-I-Engl-231026.pdf"
+  },
+  "source_id": "upsc-whats-new",
+  "status": "pending_review",
+  "title": "Written Result: 08 Posts of Administrative Officer Grade - I, Ministry of Defence",
+  "url": "https://www.upsc.gov.in/whats-new/08 Posts of Administrative Officer Grade - I, Ministry of Defence/Written Result"
+}

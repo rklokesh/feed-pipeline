@@ -1,0 +1,33 @@
+{
+  "board_url": "https://www.upsc.gov.in/whats-new",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "results w-ill also be availablc on the UPSC r.,n'ebsite at https://www. upsc.grr\\ in . However, marks of the candidates will be availatrle on the websi",
+      "source": "rule",
+      "value": "https://www"
+    },
+    "total_vacancies": {
+      "evidence": "he Government is 100 for Indian Military Academy [including 13 vacancies reserved for NCC 'C' Certificates (Army Wing) holders]. 26 lbr Indian Naval Aca",
+      "source": "rule",
+      "value": 13
+    }
+  },
+  "first_seen": "2026-11-03T16:16:29+00:00",
+  "id": "4fd428b74587",
+  "kind": "result",
+  "org": "UPSC",
+  "pdf": {
+    "bytes": 595090,
+    "pages": 8,
+    "sha256": "35aa07d4b34ce6301e2d5c52b831961a6bfd2a547b066f8fcfa2bbe33003ca51",
+    "text_kind": "text",
+    "via": "https://www.upsc.gov.in/sites/default/files/FR-CDSE-I-2026-Engl-021126.pdf"
+  },
+  "source_id": "upsc-whats-new",
+  "status": "pending_review",
+  "title": "Final Result: Combined Defence Services Examination (I), 2026",
+  "url": "https://www.upsc.gov.in/whats-new/Combined%20Defence%20Services%20Examination%20%28I%29%2C%202026/Final%20Result"
+}
