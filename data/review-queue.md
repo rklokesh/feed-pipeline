@@ -1,9 +1,19 @@
-# Review queue — 445 pending
+# Review queue — 455 pending
 
-_Updated 2026-11-03T07:02:51+00:00_
+_Updated 2026-11-03T07:45:14+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=Y7kQiHr9fCSLhVeNVgUskyXjYNSdBK55-KgDrg_0e9C5Q3QmVHARztUWraT2jjY9G6uTVgKYXumx99FXrdPAJvDud2m3MULS7KhcJ6WIMhs) |
+| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=zOvW1JxhA0VYxm_66LW6ZGJlfS0T6Ssska9xq6Ku9sswJtppvDbFLgWYeOLzJMcMJuZdThTsf_gnEM-6p7BvULGBmboFIBSyZISLfP8gueA) |
+| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=SgXk3GYMlgFB6gU229vqpALdtAx8loCYF53G-5ce4OHy2nR65PDWuw9Szhe8D2Zw4bmSn4KXaH0gxjstxPXXIUOk6p7MxMJuFD0zSvHcELk) |
+| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=zM4mveGAvDCXmcn42GyAnzlGKJd3piiZV7HNfpOrbikogzQ9Rj7Ct4y7Dgdbv60nBBCIvZesCASfWJJdfZ9zCohMMZi9kgvG6fLBwtXCDrA) |
+| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=rDLOBuRcyE2S3xiCVDvsesG0-rtP41vu2zriaOwY2PAXOCWPaYyHqJdbFIAFQ1ZfeCLz17zsbXFNbkAP937e95xhEMj8fdUHLPYff15_0Xk) |
+| 2026-11-03 | DSSSB | result | RESULT NOTICE NO: 208 POST: JUNIOR DRAFTSMAN (ELECTRIC) POST CODE-23/25 DEPARTMENT- NEW DE | — | — | — | — | [open](https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/notice_no_208.pdf) |
+| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=VkW6GpLhiZh-XicgWszuKjqPPMIzxG3iEf9Srv5QKvSToPmy2r6EOeRfSxSTfxLn-Afu28Mg4HoeMNBFCGyAvAUCwwbxeBm2EinAGdFMPyE) |
+| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=7-ggmRgkSiFnxchMR5liWyTO1_B0T2NNzK2fWpgyym0d0YquSD9dA2xjU-xbFiYSuKqA8psXR1bs8pi4MdY-3DjjkUVRSRJs9eZ-qtfgD4Q) |
+| 2026-11-03 | DSSSB | result | NOTICE NO: 207 :- Releasing of marks and calling of e-dossiers for the post of Ayurvedic P | — | — | — | — | [open](https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/notice_no_207.pdf) |
+| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=mRZpwnb5r2CbD-yuhQrtQr_YRsViH0rzBihz7os4VkbQJ-KwH3Jy_PAIhC4FyoMwTWy4Aex-P1LXalBFVgPEMw) |
 | 2026-11-03 | NTA | other | Procedure for Duplicate Score Card | — | — | — | — | [open](https://nta.ac.in/Download/Notice/Duplicate_Score_Card.pdf) |
 | 2026-11-03 | NTA | update | Corrigendum | — | — | — | — | [open](https://nta.ac.in/Download/Notice/NTA_Corrigendum_Duplicate_Scorecard.pdf) |
 | 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=I8bQl711p8WaNq6AhPj2e8xhiq6iXmj6B0vI-thGJKkAJ50d7qkyYs8ppkGhTxUimrDuoIkkK9lA050d8FG7Sg) |
