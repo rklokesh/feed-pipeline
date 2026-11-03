@@ -1,5 +1,20 @@
 {
   "board_url": "https://uppsc.up.nic.in/",
+  "card": {
+    "confidence": "medium",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Combined State Upper Subordinate Services",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "General notice or email submission notification rather than a direct job advertisement",
+    "summary_en": "Notice regarding advertisement for Combined State Upper Subordinate Services Examination 2025.",
+    "summary_hi": "सम्मिलित राज्य प्रवर अधीनस्थ सेवा परीक्षा 2025 के विज्ञापन से संबंधित सूचना।",
+    "title_en": "UPPSC Combined State Upper Subordinate Services 2025 Notice",
+    "title_hi": "उत्तर प्रदेश सम्मिलित राज्य प्रवर अधीनस्थ सेवा 2025 सूचना",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "uppsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "1. NOTICE REGARDING ADVT. NO. A-1/E-1/2025, COMBINED STATE/UPPER SUBORDINATE SERVIC.. Visible upto : 10/11/2026",
   "url": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjsv7tAk2LK46"
 }

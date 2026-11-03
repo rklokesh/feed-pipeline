@@ -1,5 +1,35 @@
 {
+  "auto_published": true,
   "board_url": "https://uppsc.up.nic.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-11-10",
+    "list": true,
+    "posts": "Combined State/Upper Subordinate Services",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Notice regarding advertisement number A-1/E-1/2025 for the Combined State/Upper Subordinate Services Examination 2025 with application last date of 10 November 2026.",
+    "summary_hi": "सम्मिलित राज्य प्रवर अधीनस्थ सेवा परीक्षा 2025 के विज्ञापन संख्या ए-1/ई-1/2025 के संबंध में सूचना, आवेदन की अंतिम तिथि 10 नवंबर 2026 है।",
+    "title_en": "UPPSC Combined State Upper Subordinate Services Recruitment 2025",
+    "title_hi": "उत्तर प्रदेश सम्मिलित राज्य प्रवर अधीनस्थ सेवा भर्ती 2025",
+    "type": "Job",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": null,
+    "age_min": null,
+    "age_on": null,
+    "domicile": null,
+    "qual": null,
+    "relax": {}
+  },
+  "exam": {
+    "key": "ukpsc-upper-subordinate-2026",
+    "name_en": "UPPSC Combined State Upper Subordinate Services Exam 2025",
+    "name_hi": "यूपीपीएससी संयुक्त राज्य ऊपरी अधीनस्थ सेवा परीक्षा 2025"
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -35,16 +65,197 @@
   },
   "first_seen": "2026-11-03T12:36:06+00:00",
   "id": "637ded6c259d",
+  "issue": 954,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-03",
   "org": "UPPSC",
+  "page": {
+    "after_en": [
+      "Examination conduct and subsequent stages as per selection process."
+    ],
+    "after_hi": [
+      "चयन प्रक्रिया के अनुसार परीक्षा का आयोजन और उसके बाद के चरण।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": null,
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Verify all eligibility conditions before proceeding.",
+      "Complete actions before 10 November 2026."
+    ],
+    "checklist_hi": [
+      "आगे बढ़ने से पहले सभी पात्रता शर्तों की पुष्टि करें।",
+      "10 नवंबर 2026 से पहले कार्रवाई पूरी करें।"
+    ],
+    "conducted_by_en": "Uttar Pradesh Public Service Commission (UPPSC)",
+    "conducted_by_hi": "उत्तर प्रदेश लोक सेवा आयोग (UPPSC)",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "सूचना तिथि",
+        "value_en": "03 Nov 2026",
+        "value_hi": "03 नवंबर 2026"
+      },
+      {
+        "label_en": "Last Date",
+        "label_hi": "अंतिम तिथि",
+        "value_en": "10 Nov 2026",
+        "value_hi": "10 नवंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Educational certificates",
+      "Identity proof",
+      "Photograph and signature"
+    ],
+    "documents_hi": [
+      "शैक्षणिक प्रमाण पत्र",
+      "पहचान प्रमाण",
+      "फ़ोटो और हस्ताक्षर"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Qualification",
+        "label_hi": "योग्यता",
+        "value_en": "Refer to official notification",
+        "value_hi": "आधिकारिक अधिसूचना देखें"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a prominent civil services examination conducted by the Uttar Pradesh Public Service Commission to recruit candidates for various administrative posts in the state government.",
+        "a_hi": "यह उत्तर प्रदेश लोक सेवा आयोग द्वारा राज्य सरकार में विभिन्न प्रशासनिक पदों पर उम्मीदवारों की भर्ती के लिए आयोजित की जाने वाली एक प्रमुख सिविल सेवा परीक्षा है।",
+        "q_en": "What is UPPSC Combined State/Upper Subordinate Services Exam?",
+        "q_hi": "यूपीपीएससी सम्मिलित राज्य/प्रवर अधीनस्थ सेवा परीक्षा क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Contact Email",
+        "label_hi": "संपर्क ईमेल",
+        "value_en": "notintforpcs25@gmail.com",
+        "value_hi": "notintforpcs25@gmail.com"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The last date mentioned in the notice is 10 November 2026.",
+        "a_hi": "सूचना में उल्लिखित अंतिम तिथि 10 नवंबर 2026 है।",
+        "q_en": "What is the last date for UPPSC Combined State/Upper Subordinate Services Exam 2025 notice?",
+        "q_hi": "यूपीपीएससी सम्मिलित राज्य/प्रवर अधीनस्थ सेवा परीक्षा 2025 सूचना के लिए अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "The advertisement number is A-1/E-1/2025 (262/01/-3/2o25--26).",
+        "a_hi": "विज्ञापन संख्या ए-1/ई-1/2025 (262/01/-3/2o25--26) है।",
+        "q_en": "What is the advertisement number for this exam?",
+        "q_hi": "इस परीक्षा के लिए विज्ञापन संख्या क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "UPPSC Combined State Upper Subordinate Services Recruitment 2025",
+    "h1_hi": "उत्तर प्रदेश सम्मिलित राज्य प्रवर अधीनस्थ सेवा भर्ती 2025",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official UPPSC website.",
+      "Check the notice related to Advertisement No. A-1/E-1/2025.",
+      "Follow the instructions provided in the notice."
+    ],
+    "how_hi": [
+      "आधिकारिक यूपीपीएससी वेबसाइट पर जाएं।",
+      "विज्ञापन संख्या ए-1/ई-1/2025 से संबंधित सूचना की जाँच करें।",
+      "सूचना में दिए गए निर्देशों का पालन करें।"
+    ],
+    "intro_en": "Uttar Pradesh Public Service Commission (UPPSC) has issued a notice for the Combined State/Upper Subordinate Services Examination 2025 under advertisement number A-1/E-1/2025 (262/01/-3/2o25--26). The notice outlines important instructions with the last date set as 10 November 2026. Applicants should review the official notification and ensure all requirements are met on time.",
+    "intro_hi": "उत्तर प्रदेश लोक सेवा आयोग (UPPSC) ने विज्ञापन संख्या ए-1/ई-1/2025 (262/01/-3/2o25--26) के तहत सम्मिलित राज्य प्रवर अधीनस्थ सेवा परीक्षा 2025 के लिए एक सूचना जारी की है। इस सूचना में महत्वपूर्ण निर्देश दिए गए हैं तथा आवेदन की अंतिम तिथि 10 नवंबर 2026 निर्धारित की गई है। आवेदक आधिकारिक अधिसूचना की समीक्षा करें और समय पर सभी आवश्यकताओं को पूरा करें।",
+    "last_date": "2026-11-10",
+    "mistakes_en": [
+      "Failing to complete requirements by 10 November 2026."
+    ],
+    "mistakes_hi": [
+      "10 नवंबर 2026 तक आवश्यकताओं को पूरा करने में विफल रहना।"
+    ],
+    "not_en": [
+      "Candidates not meeting the eligibility criteria."
+    ],
+    "not_hi": [
+      "पात्रता मापदंडों को पूरा न करने वाले उम्मीदवार।"
+    ],
+    "notice_date": "2026-11-03",
+    "official_site": "https://uppsc.up.nic.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "A-1/E-1/2025 (262/01/-3/2o25--26)",
+        "value_hi": "ए-1/ई-1/2025 (262/01/-3/2o25--26)"
+      },
+      {
+        "label_en": "Last Date",
+        "label_hi": "अंतिम तिथि",
+        "value_en": "10 Nov 2026",
+        "value_hi": "10 नवंबर 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Preliminary Examination",
+      "Main Examination",
+      "Viva-Voce / Interview"
+    ],
+    "selection_hi": [
+      "प्रारंभिक परीक्षा",
+      "मुख्य परीक्षा",
+      "साक्षात्कार"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2025",
+      "headline_hi": "भर्ती 2025",
+      "kind": "job",
+      "line_en": "UPPSC Upper Subordinate",
+      "line_hi": "यूपीपीएससी प्रवर अधीनस्थ",
+      "posts": null
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Uttar Pradesh Public Service Commission (UPPSC) has released a notice regarding the Combined State/Upper Subordinate Services Examination 2025. Candidates should check the details and complete necessary actions by the last date of 10 November 2026.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग (UPPSC) ने सम्मिलित राज्य प्रवर अधीनस्थ सेवा परीक्षा 2025 के संबंध में सूचना जारी की है। उम्मीदवार 10 नवंबर 2026 की अंतिम तिथि तक आवश्यक कार्रवाई पूरी करें।",
+    "vacancies": [
+      {
+        "detail_en": "Refer to official notification",
+        "detail_hi": "आधिकारिक अधिसूचना देखें",
+        "post_en": "Combined State/Upper Subordinate Services",
+        "post_hi": "सम्मिलित राज्य प्रवर अधीनस्थ सेवा",
+        "total": "Not Specified"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Eligible candidates aspiring for Uttar Pradesh state civil services."
+    ],
+    "who_hi": [
+      "उत्तर प्रदेश राज्य सिविल सेवाओं के इच्छुक योग्य उम्मीदवार।"
+    ]
+  },
   "pdf": {
     "bytes": 2312434,
     "pages": 1,
     "sha256": "1e132cd02231f32a21737eb130470a7d575da1a5ca193aba51a1022869b4c298",
     "text_kind": "text"
   },
+  "published_at": "2026-11-03T12:37:35Z",
+  "qual": [
+    "graduate"
+  ],
+  "slug": "uppsc-combined-state-upper-subordinate-services-recruitment-2025",
   "source_id": "uppsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "10 Nov 2026 NOTICE REGARDING ADVT. NO. A-1/E-1/2025, COMBINED STATE/UPPER SUBORDINATE SERVICES EXAM.-2025",
   "url": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagk3H4ltFfLCjlXyC4UwMTq6"
 }
