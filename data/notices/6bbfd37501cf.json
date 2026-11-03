@@ -1,22 +1,249 @@
 {
+  "auto_published": true,
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-22",
+    "last_date": null,
+    "list": true,
+    "posts": "हवलदार प्रशिक्षक",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Shortlisted candidates for the UPSSSC Hawaldar Instructor main exam must pay the required online examination fee to download their admit card later.",
+    "summary_hi": "यूपीएसएसएससी हवलदार प्रशिक्षक मुख्य परीक्षा के लिए शॉर्टलिस्ट किए गए अभ्यर्थियों को प्रवेश पत्र डाउनलोड करने के लिए ऑनलाइन शुल्क जमा करना होगा।",
+    "title_en": "UPSSSC Hawaldar Instructor Main Exam Fee 2026 – Online Payment Link",
+    "title_hi": "यूपीएसएसएससी हवलदार प्रशिक्षक मुख्य परीक्षा शुल्क 2026 – ऑनलाइन भुगतान लिंक",
+    "type": "Update",
+    "vacancies": 209
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-03T12:32:30+00:00",
   "id": "6bbfd37501cf",
+  "issue": 961,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-11-02",
   "org": "UPSSSC",
+  "page": {
+    "after_en": [
+      "Release of admit cards",
+      "Conduct of main examination on 22 Nov 2026",
+      "Declaration of results and subsequent stages"
+    ],
+    "after_hi": [
+      "प्रवेश पत्र जारी होना",
+      "22 नवंबर 2026 को मुख्य परीक्षा का आयोजन",
+      "परिणाम और आगामी चरण"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://upsssc.gov.in/AllNotifications.aspx",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Verify shortlisting status",
+      "Keep registration details ready",
+      "Pay online fee according to category"
+    ],
+    "checklist_hi": [
+      "शॉर्टलिस्टिंग स्थिति की जांच करें",
+      "पंजीकरण विवरण तैयार रखें",
+      "श्रेणी के अनुसार ऑनलाइन शुल्क का भुगतान करें"
+    ],
+    "conducted_by_en": "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC)",
+    "conducted_by_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग (यूपीएसएसएससी)",
+    "dates": [
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "22 Nov 2026",
+        "value_hi": "22 नवंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Fee payment receipt",
+      "Admit card (when released)",
+      "Valid photo ID proof"
+    ],
+    "documents_hi": [
+      "शुल्क भुगतान रसीद",
+      "प्रवेश पत्र (जारी होने पर)",
+      "वैध फोटो पहचान पत्र"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-11-22",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "This notice informs shortlisted candidates for the Hawaldar Instructor position under UPSSSC about the online fee payment required to be completed before downloading their admit cards for the main examination.",
+        "a_hi": "यह नोटिस यूपीएसएसएससी के तहत हवलदार प्रशिक्षक पद के लिए शॉर्टलिस्ट किए गए अभ्यर्थियों को मुख्य परीक्षा के लिए प्रवेश पत्र डाउनलोड करने से पहले आवश्यक ऑनलाइन शुल्क जमा करने के बारे में सूचित करता है।",
+        "q_en": "What is UPSSSC Hawaldar Instructor Main Exam Fee Notice?",
+        "q_hi": "यूपीएसएसएससी हवलदार प्रशिक्षक मुख्य परीक्षा शुल्क सूचना क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "The fee for General and OBC candidates is ₹200.",
+        "a_hi": "सामान्य और अन्य पिछड़ा वर्ग के अभ्यर्थियों के लिए शुल्क 200 ₹ है।",
+        "q_en": "What is the application fee for General/OBC candidates?",
+        "q_hi": "सामान्य/अन्य पिछड़ा वर्ग के अभ्यर्थियों के लिए शुल्क कितना है?"
+      },
+      {
+        "a_en": "The fee for SC and ST candidates is ₹80.",
+        "a_hi": "अनुसूचित जाति और अनुसूचित जनजाति के अभ्यर्थियों के लिए शुल्क 80 ₹ है।",
+        "q_en": "What is the fee for SC/ST candidates?",
+        "q_hi": "अनुसूचित जाति/अनुसूचित जनजाति के अभ्यर्थियों के लिए शुल्क कितना है?"
+      },
+      {
+        "a_en": "No, Divyang (PwD) candidates are exempted from paying the fee.",
+        "a_hi": "नहीं, दिव्यांग अभ्यर्थियों के लिए कोई शुल्क देय नहीं है।",
+        "q_en": "Is there any fee for PwD candidates?",
+        "q_hi": "क्या दिव्यांग अभ्यर्थियों के लिए कोई शुल्क है?"
+      },
+      {
+        "a_en": "The main exam is scheduled for 22 November 2026 from 03:00 PM to 05:00 PM.",
+        "a_hi": "मुख्य परीक्षा 22 नवंबर 2026 को अपराह्न 03:00 बजे से 05:00 बजे तक आयोजित की जाएगी।",
+        "q_en": "When is the UPSSSC Hawaldar Instructor Main Exam 2026 scheduled?",
+        "q_hi": "यूपीएसएसएससी हवलदार प्रशिक्षक मुख्य परीक्षा 2026 कब आयोजित होगी?"
+      },
+      {
+        "a_en": "Admit cards can be downloaded after successfully depositing the required main examination fee through the official website.",
+        "a_hi": "आवश्यक मुख्य परीक्षा शुल्क का सफलतापूर्वक भुगतान करने के बाद आधिकारिक वेबसाइट से प्रवेश पत्र डाउनलोड किए जा सकते हैं।",
+        "q_en": "How can I download the admit card?",
+        "q_hi": "प्रवेश पत्र कैसे डाउनलोड कर सकते हैं?"
+      }
+    ],
+    "fees": [
+      {
+        "amount": "₹200",
+        "cat_en": "General / OBC",
+        "cat_hi": "सामान्य / अन्य पिछड़ा वर्ग"
+      },
+      {
+        "amount": "₹80",
+        "cat_en": "SC / ST",
+        "cat_hi": "अनुसूचित जाति / अनुसूचित जनजाति"
+      },
+      {
+        "amount": "₹0",
+        "cat_en": "PwD (Divyang)",
+        "cat_hi": "दिव्यांग"
+      }
+    ],
+    "h1_en": "UPSSSC Hawaldar Instructor Main Exam Fee 2026 – Online Payment Link",
+    "h1_hi": "यूपीएसएसएससी हवलदार प्रशिक्षक मुख्य परीक्षा शुल्क 2026 – ऑनलाइन भुगतान लिंक",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official UPSSSC website.",
+      "Go to the Homepage and click on the 'Main Examination Fee Deposition' link.",
+      "Enter the required details to log in.",
+      "Pay the applicable exam fee online.",
+      "Keep a printout of the fee receipt for future reference."
+    ],
+    "how_hi": [
+      "यूपीएसएसएससी की आधिकारिक वेबसाइट पर जाएं।",
+      "होमपेज पर उपलब्ध 'Main Examination Fee Deposition' विकल्प पर क्लिक करें।",
+      "वांछित प्रविष्टियां दर्ज करें।",
+      "ऑनलाइन परीक्षा शुल्क का भुगतान करें।",
+      "शुल्क रसीद का प्रिंटआउट सुरक्षित रखें।"
+    ],
+    "intro_en": "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has released the fee deposition notice for the Hawaldar Instructor Main Exam 2026 under Advertisement Number 11-Exam/2026. A total of 209 vacancies under the Homeguard Headquarters, Uttar Pradesh will be filled through this selection process. Shortlisted candidates must pay the online examination fee through the official website to become eligible for downloading their admit card. The main examination is scheduled to be held on 22 November 2026 from 03:00 PM to 05:00 PM.",
+    "intro_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग (यूपीएसएसएससी) ने विज्ञापन संख्या 11-परीक्षा/2026 के अंतर्गत हवलदार प्रशिक्षक मुख्य परीक्षा 2026 के लिए शुल्क जमा करने की सूचना जारी कर दी है। होमगार्ड मुख्यालय, उत्तर प्रदेश के नियंत्रणाधीन कुल 209 पदों पर चयन किया जाएगा। शॉर्टलिस्ट किए गए अभ्यर्थियों को प्रवेश पत्र डाउनलोड करने के लिए आधिकारिक वेबसाइट पर ऑनलाइन परीक्षा शुल्क जमा करना होगा। मुख्य परीक्षा 22 नवंबर 2026 को अपराह्न 03:00 बजे से 05:00 बजे तक आयोजित की जाएगी।",
+    "last_date": null,
+    "mistakes_en": [
+      "Failing to pay the examination fee before downloading the admit card"
+    ],
+    "mistakes_hi": [
+      "प्रवेश पत्र डाउनलोड करने से पहले परीक्षा शुल्क जमा न करना"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-02",
+    "official_site": "https://upsssc.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Hawaldar Instructor",
+        "value_hi": "हवलदार प्रशिक्षक"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "209",
+        "value_hi": "209"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "22 Nov 2026",
+        "value_hi": "22 नवंबर 2026"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "11-Exam/2026",
+        "value_hi": "11-परीक्षा/2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Main Examination",
+      "Document Verification"
+    ],
+    "selection_hi": [
+      "मुख्य परीक्षा",
+      "दस्तावेज़ सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "Main Exam Fee 2026",
+      "headline_hi": "मुख्य परीक्षा शुल्क 2026",
+      "kind": "job",
+      "line_en": "Hawaldar Instructor",
+      "line_hi": "हवलदार प्रशिक्षक",
+      "posts": "209"
+    },
+    "status_en": "Main examination fee payment open, exam on 22 Nov 2026",
+    "status_hi": "मुख्य परीक्षा शुल्क भुगतान शुरू, परीक्षा 22 नवंबर 2026 को",
+    "summary_en": "Shortlisted candidates for the UPSSSC Hawaldar Instructor main exam must pay the required online examination fee to download their admit card later. The exam is scheduled for 22 November 2026.",
+    "summary_hi": "यूपीएसएसएससी हवलदार प्रशिक्षक मुख्य परीक्षा के लिए शॉर्टलिस्ट किए गए अभ्यर्थियों को प्रवेश पत्र डाउनलोड करने के लिए ऑनलाइन शुल्क जमा करना होगा। परीक्षा 22 नवंबर 2026 को आयोजित होगी।",
+    "vacancies": [
+      {
+        "detail_en": "Homeguard Headquarters, UP",
+        "detail_hi": "होमगार्ड मुख्यालय, उत्तर प्रदेश",
+        "post_en": "Hawaldar Instructor",
+        "post_hi": "हवलदार प्रशिक्षक",
+        "total": "209"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates shortlisted for the UPSSSC Hawaldar Instructor main exam"
+    ],
+    "who_hi": [
+      "यूपीएसएसएससी हवलदार प्रशिक्षक मुख्य परीक्षा के लिए शॉर्टलिस्ट किए गए अभ्यर्थी"
+    ]
+  },
   "pdf": {
     "bytes": 233039,
     "pages": 1,
     "sha256": "d58d94506d27f6949cc49f68177d862c91b093261434a7ecc821e179d21adcb2",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-03T15:38:53Z",
+  "qual": [
+    "10th"
+  ],
+  "slug": "upsssc-hawaldar-instructor-main-exam-fee-2026-online-payment-lin",
   "source_id": "upsssc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?LTC7ZDf/pYFkxMpEa8GStDGZHijDgp4tkVbSmSQ7/dw="
 }

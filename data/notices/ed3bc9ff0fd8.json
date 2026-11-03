@@ -1,22 +1,267 @@
 {
+  "auto_published": true,
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-22",
+    "last_date": null,
+    "list": true,
+    "posts": "Platoon Commander / Block Organizer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "UPSSSC has announced the main examination fee details for the Platoon Commander and Block Organizer recruitment 2026. Shortlisted candidates must deposit the required fee online to download their admit cards.",
+    "summary_hi": "यूपीएसएसएससी ने प्लाटून कमांडर और ब्लॉक ऑर्गेनाइजर भर्ती 2026 के लिए मुख्य परीक्षा शुल्क विवरण घोषित किया है। शॉर्टलिस्ट किए गए अभ्यर्थियों को प्रवेश पत्र डाउनलोड करने के लिए ऑनलाइन शुल्क जमा करना होगा।",
+    "title_en": "UPSSSC Platoon Commander and Block Organizer Main Exam Fee 2026",
+    "title_hi": "यूपीएसएसएससी प्लाटून कमांडर और ब्लॉक ऑर्गेनाइजर मुख्य परीक्षा शुल्क 2026",
+    "type": "Update",
+    "vacancies": 295
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-03T12:32:30+00:00",
   "id": "ed3bc9ff0fd8",
+  "issue": 964,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-11-02",
   "org": "UPSSSC",
+  "page": {
+    "after_en": [
+      "Release of Admit Card on the official website",
+      "Appearance in the Main Examination on 22 Nov 2026"
+    ],
+    "after_hi": [
+      "आधिकारिक वेबसाइट पर प्रवेश पत्र जारी किया जाना",
+      "22 नवंबर 2026 को मुख्य परीक्षा में शामिल होना"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": null,
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check shortlist status",
+      "Keep registration details ready",
+      "Pay the prescribed main exam fee online"
+    ],
+    "checklist_hi": [
+      "शॉर्टलिस्ट स्थिति की जांच करें",
+      "पंजीकरण विवरण तैयार रखें",
+      "निर्धारित मुख्य परीक्षा शुल्क ऑनलाइन जमा करें"
+    ],
+    "conducted_by_en": "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC)",
+    "conducted_by_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग (यूपीएसएसएससी)",
+    "dates": [
+      {
+        "label_en": "Notice date",
+        "label_hi": "सूचना तिथि",
+        "value_en": "02 Nov 2026",
+        "value_hi": "02 नवंबर 2026"
+      },
+      {
+        "label_en": "Main Exam Date",
+        "label_hi": "मुख्य परीक्षा तिथि",
+        "value_en": "22 Nov 2026",
+        "value_hi": "22 नवंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Main Exam Fee Receipt",
+      "Admit Card (to be released later)"
+    ],
+    "documents_hi": [
+      "मुख्य परीक्षा शुल्क रसीद",
+      "प्रवेश पत्र (बाद में जारी किया जाएगा)"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-11-22",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "This notice informs shortlisted candidates about the online fee required to be paid for the main examination of Platoon Commander and Block Organizer posts under Advertisement No. 10-Exam/2026.",
+        "a_hi": "यह नोटिस विज्ञापन संख्या 10-परीक्षा/2026 के तहत प्लाटून कमांडर और ब्लॉक ऑर्गेनाइजर पदों की मुख्य परीक्षा के लिए भुगतान किए जाने वाले आवश्यक ऑनलाइन शुल्क के बारे में शॉर्टलिस्ट किए गए अभ्यर्थियों को सूचित करता है।",
+        "q_en": "What is the UPSSSC Platoon Commander and Block Organizer Main Exam Fee notice about?",
+        "q_hi": "यूपीएसएसएससी प्लाटून कमांडर और ब्लॉक ऑर्गेनाइजर मुख्य परीक्षा शुल्क नोटिस किस बारे में है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Exam Timing",
+        "label_hi": "परीक्षा का समय",
+        "value_en": "10:00 AM to 12:00 PM",
+        "value_hi": "पूर्वाह्न 10:00 बजे से 12:00 बजे तक"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "General and OBC candidates must pay ₹200 as the main examination fee.",
+        "a_hi": "सामान्य और अन्य पिछड़ा वर्ग के उम्मीदवारों को मुख्य परीक्षा शुल्क के रूप में ₹200 का भुगतान करना होगा।",
+        "q_en": "What is the fee for General and OBC candidates for the UPSSSC Platoon Commander Main Exam?",
+        "q_hi": "यूपीएसएसएससी प्लाटून कमांडर मुख्य परीक्षा के लिए सामान्य और ओबीसी उम्मीदवारों के लिए शुल्क क्या है?"
+      },
+      {
+        "a_en": "SC and ST candidates must pay ₹80 as the main examination fee.",
+        "a_hi": "अनुसूचित जाति और अनुसूचित जनजाति के उम्मीदवारों को ₹80 शुल्क देना होगा।",
+        "q_en": "What is the fee for SC and ST candidates?",
+        "q_hi": "एससी और एसटी उम्मीदवारों के लिए शुल्क कितना है?"
+      },
+      {
+        "a_en": "No fee is required to be paid by Divyang (PWD) candidates.",
+        "a_hi": "दिव्यांग उम्मीदवारों द्वारा कोई शुल्क देय नहीं है।",
+        "q_en": "Is there any fee for Divyang candidates?",
+        "q_hi": "क्या दिव्यांग उम्मीदवारों के लिए कोई शुल्क है?"
+      },
+      {
+        "a_en": "The main exam is scheduled for 22 November 2026 from 10:00 AM to 12:00 PM.",
+        "a_hi": "मुख्य परीक्षा 22 नवंबर 2026 को सुबह 10:00 बजे से दोपहर 12:00 बजे तक आयोजित की जाएगी।",
+        "q_en": "When is the UPSSSC Platoon Commander and Block Organizer Main Exam 2026 scheduled?",
+        "q_hi": "यूपीएसएसएससी प्लाटून कमांडर और ब्लॉक ऑर्गेनाइजर मुख्य परीक्षा 2026 कब निर्धारित है?"
+      },
+      {
+        "a_en": "Candidates can pay the fee by visiting the official website homepage and selecting the 'Main Examination Fee Deposition' option.",
+        "a_hi": "उम्मीदवार आधिकारिक वेबसाइट के होमपेज पर जाकर और 'Main Examination Fee Deposition' विकल्प का चयन करके शुल्क का भुगतान कर सकते हैं।",
+        "q_en": "How can I pay the main examination fee?",
+        "q_hi": "मुख्य परीक्षा शुल्क का भुगतान कैसे करें?"
+      },
+      {
+        "a_en": "Admit cards can be downloaded only after depositing the main exam fee, and the release date will be notified separately on the website.",
+        "a_hi": "मुख्य परीक्षा शुल्क जमा करने के बाद ही प्रवेश पत्र डाउनलोड किए जा सकते हैं, और इसकी सूचना वेबसाइट पर अलग से दी जाएगी।",
+        "q_en": "When will the admit card be released?",
+        "q_hi": "प्रवेश पत्र कब जारी किया जाएगा?"
+      }
+    ],
+    "fees": [
+      {
+        "amount": "₹200",
+        "cat_en": "General / OBC",
+        "cat_hi": "सामान्य / अन्य पिछड़ा वर्ग"
+      },
+      {
+        "amount": "₹80",
+        "cat_en": "SC / ST",
+        "cat_hi": "अनुसूचित जाति / अनुसूचित जनजाति"
+      },
+      {
+        "amount": "₹0",
+        "cat_en": "Divyang (PWD)",
+        "cat_hi": "दिव्यांग"
+      }
+    ],
+    "h1_en": "UPSSSC Platoon Commander and Block Organizer Main Exam Fee 2026",
+    "h1_hi": "यूपीएसएसएससी प्लाटून कमांडर और ब्लॉक ऑर्गेनाइजर मुख्य परीक्षा शुल्क 2026",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official UPSSSC website homepage.",
+      "Click on the 'Main Examination Fee Deposition' option.",
+      "Enter the required details and complete the fee payment online."
+    ],
+    "how_hi": [
+      "यूपीएसएसएससी की आधिकारिक वेबसाइट के होमपेज पर जाएं।",
+      "Main Examination Fee Deposition विकल्प पर क्लिक करें।",
+      "वांछित विवरण दर्ज करें और ऑनलाइन शुल्क भुगतान की प्रक्रिया पूरी करें।"
+    ],
+    "intro_en": "The Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has released an important notice regarding the main examination fee for the Platoon Commander and Block Organizer Recruitment 2026. A total of 295 vacancies will be filled through this recruitment process under Advertisement No. 10-Exam/2026. Shortlisted candidates for the main examination must pay the prescribed online fee to be eligible for downloading their admit cards. The main exam is scheduled to be held on 22 November 2026.",
+    "intro_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग (यूपीएसएसएससी) ने प्लाटून कमांडर और ब्लॉक ऑर्गेनाइजर भर्ती 2026 के मुख्य परीक्षा शुल्क के संबंध में एक महत्वपूर्ण सूचना जारी की है। विज्ञापन संख्या 10-परीक्षा/2026 के अंतर्गत कुल 295 रिक्तियां भरी जानी हैं। मुख्य परीक्षा के लिए शॉर्टलिस्ट किए गए अभ्यर्थियों को अपना प्रवेश पत्र डाउनलोड करने के लिए निर्धारित ऑनलाइन शुल्क जमा करना होगा। मुख्य परीक्षा 22 नवंबर 2026 को आयोजित की जानी है।",
+    "last_date": null,
+    "mistakes_en": [
+      "Failing to deposit the main exam fee, which will prevent downloading the admit card."
+    ],
+    "mistakes_hi": [
+      "मुख्य परीक्षा शुल्क जमा न करना, जिससे प्रवेश पत्र डाउनलोड करने में बाधा आएगी।"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-02",
+    "official_site": "https://upsssc.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Platoon Commander & Block Organizer",
+        "value_hi": "प्लाटून कमांडर और ब्लॉक ऑर्गेनाइजर"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "295",
+        "value_hi": "295"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "22 Nov 2026",
+        "value_hi": "22 नवंबर 2026"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "10-Exam/2026",
+        "value_hi": "10-परीक्षा/2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Main Examination",
+      "Admit Card download after fee payment"
+    ],
+    "selection_hi": [
+      "मुख्य परीक्षा",
+      "शुल्क भुगतान के बाद प्रवेश पत्र डाउनलोड"
+    ],
+    "share_card": {
+      "headline_en": "Main Exam Fee 2026",
+      "headline_hi": "मुख्य परीक्षा शुल्क 2026",
+      "kind": "job",
+      "line_en": "Platoon Cmdr / Block Org",
+      "line_hi": "प्लाटून कमांडर / ब्लॉक ऑर्गेनाइजर",
+      "posts": 295
+    },
+    "status_en": "Main exam fee details announced, exam scheduled for 22 Nov 2026",
+    "status_hi": "मुख्य परीक्षा शुल्क विवरण घोषित, परीक्षा 22 नवंबर 2026 को निर्धारित",
+    "summary_en": "UPSSSC has announced the main examination fee details for the Platoon Commander and Block Organizer recruitment 2026. Shortlisted candidates must deposit the required fee online to download their admit cards.",
+    "summary_hi": "यूपीएसएसएससी ने प्लाटून कमांडर और ब्लॉक ऑर्गेनाइजर भर्ती 2026 के लिए मुख्य परीक्षा शुल्क विवरण घोषित किया है। शॉर्टलिस्ट किए गए अभ्यर्थियों को प्रवेश पत्र डाउनलोड करने के लिए ऑनलाइन शुल्क जमा करना होगा।",
+    "vacancies": [
+      {
+        "detail_en": "Homeguards Headquarters, UP, Lucknow",
+        "detail_hi": "होमगार्ड्स मुख्यालय, उत्तर प्रदेश, लखनऊ",
+        "post_en": "Platoon Commander",
+        "post_hi": "प्लाटून कमांडर",
+        "total": "52"
+      },
+      {
+        "detail_en": "Homeguards Headquarters, UP, Lucknow",
+        "detail_hi": "होमगार्ड्स मुख्यालय, उत्तर प्रदेश, लखनऊ",
+        "post_en": "Block Organizer",
+        "post_hi": "ब्लॉक ऑर्गेनाइजर",
+        "total": "243"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates shortlisted for the UPSSSC Platoon Commander and Block Organizer Main Exam 2026"
+    ],
+    "who_hi": [
+      "यूपीएसएसएससी प्लाटून कमांडर और ब्लॉक ऑर्गेनाइजर मुख्य परीक्षा 2026 के लिए शॉर्टलिस्ट किए गए अभ्यर्थी"
+    ]
+  },
   "pdf": {
     "bytes": 238659,
     "pages": 1,
     "sha256": "2fe8db562e966fd59df40e6cdd6fa52fe8b151c159bd100e8aa14f08439cad3e",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-03T15:41:00Z",
+  "qual": [
+    "graduate"
+  ],
+  "slug": "upsssc-platoon-commander-and-block-organizer-main-exam-fee-2026",
   "source_id": "upsssc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?LTC7ZDf/pYGhu/k9A/ych5qAMA1RO6XBN4jqgttrrAI="
 }

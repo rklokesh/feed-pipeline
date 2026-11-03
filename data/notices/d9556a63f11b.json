@@ -34,26 +34,18 @@
   "notice_date": "2026-11-03",
   "org": "DSSSB",
   "page": {
-    "after_en": [
-      "Candidates whose candidature is rejected can check the grounds for rejection as specified in the notice."
-    ],
-    "after_hi": [
-      "जिन उम्मीदवारों की उम्मीदवारी खारिज कर दी गई है, वे नोटिस में निर्दिष्ट अस्वीकृति के आधार की जांच कर सकते हैं।"
-    ],
+    "after_en": [],
+    "after_hi": [],
     "age": [],
     "apply_start": null,
     "apply_url": null,
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Download the official rejection notice PDF.",
-      "Search for your roll number or application details.",
-      "Read the specified reason for rejection carefully."
+      "Check your roll number in the rejection list."
     ],
     "checklist_hi": [
-      "आधिकारिक रिजेक्शन नोटिस पीडीएफ डाउनलोड करें।",
-      "अपना रोल नंबर या आवेदन विवरण खोजें।",
-      "अस्वीकृति के निर्दिष्ट कारण को ध्यान से पढ़ें।"
+      "रिजेक्शन सूची में अपना रोल नंबर जांचें।"
     ],
     "conducted_by_en": "Delhi Subordinate Services Selection Board (DSSSB)",
     "conducted_by_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB)",
@@ -72,25 +64,38 @@
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is an official notification released by DSSSB listing the candidates whose candidature has been cancelled or rejected for the PGT Biology posts under Post Code 828/24, along with the reasons for rejection.",
-        "a_hi": "यह DSSSB द्वारा जारी किया गया एक आधिकारिक नोटिफिकेशन है जिसमें पोस्ट कोड 828/24 के तहत PGT बायोलॉजी पदों के लिए अस्वीकृति के कारणों के साथ उन उम्मीदवारों की सूची दी गई है जिनकी उम्मीदवारी रद्द या खारिज कर दी गई है।",
-        "q_en": "What is DSSSB PGT Biology Rejection Notice?",
-        "q_hi": "DSSSB PGT बायोलॉजी रिजेक्शन नोटिस क्या है?"
+        "a_en": "It is an official notification issued by DSSSB announcing the cancellation of candidature for specific candidates who failed to upload their dossiers for the PGT Biology post under code 828/24.",
+        "a_hi": "यह DSSSB द्वारा जारी एक आधिकारिक अधिसूचना है जो कोड 828/24 के तहत PGT बायोलॉजी पद के लिए अपने डोजियर अपलोड करने में विफल रहने वाले विशिष्ट उम्मीदवारों की उम्मीदवारी को रद्द करने की घोषणा करती है।",
+        "q_en": "What is DSSSB Rejection Notice 389?",
+        "q_hi": "DSSSB रिजेक्शन नोटिस 389 क्या है?"
       }
     ],
-    "extra": [],
+    "extra": [
+      {
+        "label_en": "Department",
+        "label_hi": "विभाग",
+        "value_en": "Directorate of Education (DoE), GNCTD",
+        "value_hi": "शिक्षा निदेशालय (DoE), GNCTD"
+      }
+    ],
     "faq": [
       {
-        "a_en": "The post code for PGT Biology (Male & Female) is 828/24.",
-        "a_hi": "PGT बायोलॉजी (पुरुष और महिला) के लिए पोस्ट कोड 828/24 है।",
+        "a_en": "The post code is 828/24.",
+        "a_hi": "पोस्ट कोड 828/24 है।",
         "q_en": "What is the post code for DSSSB PGT Biology?",
         "q_hi": "DSSSB PGT बायोलॉजी के लिए पोस्ट कोड क्या है?"
       },
       {
-        "a_en": "You can check and download the rejection notice from the official website of DSSSB.",
-        "a_hi": "आप DSSSB की आधिकारिक वेबसाइट से रिजेक्शन नोटिस देख और डाउनलोड कर सकते हैं।",
-        "q_en": "Where can I check the rejection notice?",
-        "q_hi": "मैं रिjection नोटिस कहां देख सकता हूं?"
+        "a_en": "The candidature was rejected because the candidates did not upload their dossiers.",
+        "a_hi": "उम्मीदवारी इसलिए रद्द कर दी गई क्योंकि उम्मीदवारों ने अपने डोजियर अपलोड नहीं किए थे।",
+        "q_en": "Why was the candidature rejected in Notice 389?",
+        "q_hi": "नोटिस 389 में उम्मीदवारी क्यों रद्द की गई?"
+      },
+      {
+        "a_en": "This recruitment is for the Directorate of Education (DoE), GNCTD, conducted via DSSSB.",
+        "a_hi": "यह भर्ती DSSSB के माध्यम से शिक्षा निदेशालय (DoE), GNCTD के लिए है।",
+        "q_en": "Which department conducted this recruitment?",
+        "q_hi": "यह भर्ती किस विभाग ने आयोजित की थी?"
       }
     ],
     "fees": [],
@@ -98,19 +103,19 @@
     "h1_hi": "DSSSB पीजीटी बायोलॉजी रिजेक्शन नोटिस 2026 – पोस्ट कोड 828/24",
     "hindi_notice_url": null,
     "how_en": [
-      "Go to the official DSSSB website.",
-      "Navigate to the 'Circulars / Orders' or 'What's New' section.",
-      "Click on Rejection Notice No. 389 for Post Code 828/24 PGT Biology.",
-      "Download and check the PDF for candidate details and rejection reasons."
+      "Visit the official website of DSSSB.",
+      "Click on the circulars/orders section.",
+      "Download Rejection Notice No. 389 for Post Code 828/24.",
+      "Check your roll number and rejection reason."
     ],
     "how_hi": [
-      "आधिकारिक DSSSB वेबसाइट पर जाएं।",
-      "‘Circulars / Orders’ या ‘What's New’ सेक्शन पर जाएं।",
-      "पोस्ट कोड 828/24 PGT बायोलॉजी के लिए Rejection Notice No. 389 पर क्लिक करें।",
-      "उम्मीदवार के विवरण और अस्वीकृति के कारणों के लिए पीडीएफ डाउनलोड करें और जांचें।"
+      "DSSSB की आधिकारिक वेबसाइट पर जाएं।",
+      "सर्कुलर/ऑर्डर सेक्शन पर क्लिक करें।",
+      "पोस्ट कोड 828/24 के लिए रिजेक्शन नोटिस नंबर 389 डाउनलोड करें।",
+      "अपना रोल नंबर और रिजेक्शन का कारण जांचें।"
     ],
-    "intro_en": "The Delhi Subordinate Services Selection Board (DSSSB) has issued Rejection Notice No. 389 for candidates who applied for the PGT (Biology) Male and PGT (Biology) Female posts under Post Code 828/24 in the Directorate of Education, GNCTD. This notice lists the candidates whose candidatures have been rejected along with the specific reasons for rejection. Candidates who appeared for this recruitment process should check the official notice to verify their status.",
-    "intro_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने शिक्षा निदेशालय, GNCTD में पोस्ट कोड 828/24 के तहत PGT (जीव विज्ञान) पुरुष और PGT (जीव विज्ञान) महिला पदों के लिए आवेदन करने वाले उम्मीदवारों के लिए रिजेक्शन नोटिस नं. 389 जारी किया है। इस नोटिस में उन उम्मीदवारों की सूची है जिनकी उम्मीदवारी खारिज कर दी गई है, साथ ही अस्वीकृति के विशिष्ट कारण भी दिए गए हैं। इस भर्ती प्रक्रिया में शामिल होने वाले उम्मीदवारों को अपनी स्थिति की जांच करने के लिए आधिकारिक नोटिस देखना चाहिए।",
+    "intro_en": "The Delhi Subordinate Services Selection Board (DSSSB) has issued Rejection Notice No. 389 dated 03.11.2026 for the post of PGT (Biology) - Male and PGT (Biology) - Female under Post Code 828/24 in the Directorate of Education (DoE), GNCTD. The candidature of specific candidates has been rejected due to non-uploading of dossiers. Candidates who appeared for this recruitment process should check the notice to verify their candidature status.",
+    "intro_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने शिक्षा निदेशालय (DoE), GNCTD में पोस्ट कोड 828/24 के तहत PGT (बायोलॉजी) - पुरुष और PGT (बायोलॉजी) - महिला के पद के लिए 03.11.2026 का रिजेक्शन नोटिस नंबर 389 जारी किया है। डोजियर अपलोड न करने के कारण विशिष्ट उम्मीदवारों की उम्मीदवारी रद्द कर दी गई है। इस भर्ती प्रक्रिया में शामिल होने वाले उम्मीदवार अपनी उम्मीदवारी की स्थिति की जांच करने के लिए नोटिस देख सकते हैं।",
     "last_date": null,
     "mistakes_en": [],
     "mistakes_hi": [],
@@ -122,16 +127,16 @@
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "F.No.4 (133) /DSSSB/CC-IV/2026/ 1419-1426",
+        "value_hi": "F.No.4 (133) /DSSSB/CC-IV/2026/ 1419-1426"
+      },
+      {
         "label_en": "Notice Number",
         "label_hi": "नोटिस संख्या",
         "value_en": "Rejection Notice No. 389",
-        "value_hi": "रिजेक्शन नोटिस नं. 389"
-      },
-      {
-        "label_en": "Post Name",
-        "label_hi": "पद का नाम",
-        "value_en": "PGT (Biology) - Male & Female",
-        "value_hi": "पीजीएटी (बायोलॉजी) - पुरुष एवं महिला"
+        "value_hi": "रिजेक्शन नोटिस नंबर 389"
       },
       {
         "label_en": "Post Code",
@@ -140,10 +145,10 @@
         "value_hi": "828/24"
       },
       {
-        "label_en": "Department",
-        "label_hi": "विभाग",
-        "value_en": "Directorate of Education (DoE), GNCTD",
-        "value_hi": "शिक्षा निदेशालय (DoE), GNCTD"
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "PGT (Biology) - Male & PGT (Biology) - Female",
+        "value_hi": "पीजीएटी (बायोलॉजी) - पुरुष और पीजीटी (बायोलॉजी) - महिला"
       }
     ],
     "salary": [],
@@ -154,20 +159,20 @@
       "headline_hi": "रिजेक्शन नोटिस",
       "kind": "job",
       "line_en": "PGT Biology Post Code 828/24",
-      "line_hi": "PGT बायोलॉजी पोस्ट कोड 828/24",
+      "line_hi": "पीजीएटी बायोलॉजी पोस्ट कोड 828/24",
       "posts": null
     },
-    "status_en": "Rejection notice released",
-    "status_hi": "रिज़ेक्शन नोटिस जारी",
-    "summary_en": "Delhi Subordinate Services Selection Board (DSSSB) has released Rejection Notice No. 389 for PGT (Biology) Male and PGT (Biology) Female under Post Code 828/24 in the Directorate of Education, GNCTD. Candidates whose candidature has been rejected can check the notice for details regarding the reasons for rejection.",
-    "summary_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने शिक्षा निदेशालय, GNCTD में पोस्ट कोड 828/24 के तहत PGT (जीव विज्ञान) पुरुष और PGT (जीव विज्ञान) महिला के लिए rejection notice no. 389 जारी कर दिया है। जिन उम्मीदवारों की उम्मीदवारी खारिज कर दी गई है, वे अस्वीकृति के कारणों से संबंधित विवरण के लिए नोटिस देख सकते हैं।",
+    "status_en": "Rejection notice released for 2 candidates",
+    "status_hi": "2 उम्मीदवारों के लिए रिजेक्शन नोटिस जारी",
+    "summary_en": "DSSSB has released Rejection Notice No. 389 for PGT Biology (Male & Female) under Post Code 828/24. Candidates can check their rejection status and reasons in the notice.",
+    "summary_hi": "DSSSB ने पोस्ट कोड 828/24 के तहत पीजीटी बायोलॉजी (पुरुष और महिला) के लिए रिजेक्शन नोटिस नंबर 389 जारी कर दिया है। उम्मीदवार नोटिस में अपना रिजेक्शन स्टेटस और कारण देख सकते हैं।",
     "vacancies": [],
     "video_url": null,
     "who_en": [
       "Candidates who applied for DSSSB PGT Biology Post Code 828/24"
     ],
     "who_hi": [
-      "DSSSB PGT बायोलॉजी पोस्ट कोड 828/24 के लिए आवेदन करने वाले उम्मीदवार"
+      "वे उम्मीदवार जिन्होंने DSSSB PGT बायोलॉजी पोस्ट कोड 828/24 के लिए आवेदन किया था"
     ]
   },
   "pdf": {
@@ -177,10 +182,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-03T11:38:06Z",
-  "qual": [
-    "postgraduate"
-  ],
-  "rewrite": true,
   "slug": "dsssb-pgt-biology-rejection-notice-2026-post-code-828-24",
   "source_id": "dsssb-home",
   "status": "approved",

@@ -3,8 +3,8 @@
   "board_url": "https://dsssb.delhi.gov.in/",
   "card": {
     "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
+    "exam_date": "2026-07-14",
+    "last_date": "2026-11-21",
     "list": true,
     "posts": "Section Officer (Horticulture)",
     "provider": "gemini/gemini-flash-lite-latest",
@@ -31,74 +31,155 @@
   "org": "DSSSB",
   "page": {
     "after_en": [
-      "Document verification of the submitted e-dossiers",
-      "Declaration of final result and nomination of candidates"
+      "Verification of uploaded documents and eligibility by the User Department (MCD / NDMC)",
+      "Final appointment and nomination of candidates based on merit-cum-preference"
     ],
     "after_hi": [
-      "प्रस्तुत ई-डॉसिएर का दस्तावेज सत्यापन",
-      "अंतिम परिणाम की घोषणा और उम्मीदवारों का नामांकन"
+      "उपयोगकर्ता विभाग (एमसीडी / एनडीएमसी) द्वारा अपलोड किए गए दस्तावेजों और पात्रता का सत्यापन",
+      "मेरिट-सह-प्राथमिकता के आधार पर उम्मीदवारों का अंतिम चयन और नामांकन"
     ],
     "age": [],
     "apply_start": null,
-    "apply_url": "https://dsssbonline.nic.in",
+    "apply_url": "https://www.dsssbonline.nic.in",
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Keep your OARS login credentials ready.",
-      "Check your Tier-II marks.",
-      "Keep scanned copies of required documents ready if shortlisted."
+      "Check your Tier-II marks on the OARS portal",
+      "Download and fill out the Post Preference Form",
+      "Sign the preference form and keep digital copies of all required certificates ready",
+      "Upload the e-dossier on or before 21 November 2026"
     ],
     "checklist_hi": [
-      "अपने OARS लॉगिन क्रेडेंशियल तैयार रखें।",
-      "अपने टियर-2 अंक जांचें।",
-      "शॉर्टलिस्ट होने पर आवश्यक दस्तावेजों की स्कैन की गई प्रतियां तैयार रखें।"
+      "OARS पोर्टल पर अपने टियर-II अंक जांचें",
+      "पोस्ट प्रेफरेंस फॉर्म डाउनलोड करें और भरें",
+      "प्रेफरेंस फॉर्म पर हस्ताक्षर करें और सभी आवश्यक प्रमाण पत्रों की डिजिटल प्रतियां तैयार रखें",
+      "21 नवंबर 2026 को या उससे पहले ई-डॉसिएर अपलोड करें"
     ],
     "conducted_by_en": "Delhi Subordinate Services Selection Board (DSSSB)",
     "conducted_by_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB)",
     "dates": [
       {
-        "label_en": "Notice Date",
-        "label_hi": "नोटिस की तिथि",
-        "value_en": "03 Nov 2026",
-        "value_hi": "03 नवंबर 2026"
+        "label_en": "Tier-I Exam Dates",
+        "label_hi": "टियर-1 परीक्षा तिथियां",
+        "value_en": "16, 17, 21 & 22 April 2025",
+        "value_hi": "16, 17, 21 और 22 अप्रैल 2025"
+      },
+      {
+        "label_en": "Tier-I Result Notice Date",
+        "label_hi": "टियर-1 परिणाम नोटिस तिथि",
+        "value_en": "20 March 2026",
+        "value_hi": "20 मार्च 2026"
+      },
+      {
+        "label_en": "Tier-II Exam Date",
+        "label_hi": "टियर-2 परीक्षा तिथि",
+        "value_en": "14 July 2026",
+        "value_hi": "14 जुलाई 2026"
+      },
+      {
+        "label_en": "E-Dossier Link Active From",
+        "label_hi": "ई-डॉसिएर लिंक सक्रिय होने की तिथि",
+        "value_en": "07 November 2026",
+        "value_hi": "07 नवंबर 2026"
+      },
+      {
+        "label_en": "E-Dossier Link Active To (Last Date)",
+        "label_hi": "ई-डॉसिएर अंतिम तिथि",
+        "value_en": "21 November 2026",
+        "value_hi": "21 नवंबर 2026"
       }
     ],
     "documents_en": [
-      "Educational qualification certificates",
-      "Age proof",
-      "Category certificate (if applicable)",
-      "Tier-II scorecard/admit card"
+      "Educational Qualification Certificates",
+      "Experience Certificates",
+      "Caste Certificate (if applicable)",
+      "Proof of Govt. Servant / Ex-Servicemen",
+      "Admit Cards",
+      "Duly signed Post Preference Form",
+      "PwBD Certificate (if applicable)"
     ],
     "documents_hi": [
       "शैक्षणिक योग्यता प्रमाण पत्र",
-      "आयु प्रमाण",
-      "श्रेणी प्रमाण पत्र (यदि लागू हो)",
-      "टियर-2 स्कोरकार्ड/एडमिट कार्ड"
+      "अनुभव प्रमाण पत्र",
+      "जाति प्रमाण पत्र (यदि लागू हो)",
+      "सरकारी कर्मचारी / भूतपूर्व सैनिक का प्रमाण",
+      "प्रवेश पत्र",
+      "विधिवत हस्ताक्षरित पोस्ट प्रेफरेंस फॉर्म",
+      "दिव्यांग प्रमाण पत्र (यदि लागू हो)"
     ],
-    "eligibility": [],
-    "exam_date": null,
+    "eligibility": [
+      {
+        "label_en": "Minimum Qualifying Marks - General / EWS",
+        "label_hi": "न्यूनतम अर्हक अंक - सामान्य / ईडब्ल्यूएस",
+        "value_en": "40%",
+        "value_hi": "40%"
+      },
+      {
+        "label_en": "Minimum Qualifying Marks - OBC (Delhi)",
+        "label_hi": "न्यूनतम अर्हक अंक - अन्य पिछड़ा वर्ग (दिल्ली)",
+        "value_en": "35%",
+        "value_hi": "35%"
+      },
+      {
+        "label_en": "Minimum Qualifying Marks - SC / ST / PH (PwD)",
+        "label_hi": "न्यूनतम अर्हक अंक - एससी / एसटी / दिव्यांग",
+        "value_en": "30%",
+        "value_hi": "30%"
+      },
+      {
+        "label_en": "Minimum Qualifying Marks - Ex-Servicemen",
+        "label_hi": "न्यूनतम अर्हक अंक - भूतपूर्व सैनिक",
+        "value_en": "5% relaxation in respective categories subject to minimum 30%",
+        "value_hi": "संबंधित श्रेणियों में 5% की छूट, न्यूनतम 30% के अधीन"
+      }
+    ],
+    "exam_date": "2026-07-14",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is an electronic dossier where shortlisted candidates must upload their educational, category, and other supporting documents for verification by the board.",
-        "a_hi": "यह एक इलेक्ट्रॉनिक डॉसिएर है जहां शॉर्टलिस्ट किए गए उम्मीदवारों को बोर्ड द्वारा सत्यापन के लिए अपने शैक्षणिक, श्रेणी और अन्य सहायक दस्तावेज अपलोड करने होते हैं।",
-        "q_en": "What is DSSSB Section Officer Horticulture E-Dossier?",
-        "q_hi": "डीएसएसएसबी सेक्शन ऑफिसर हॉर्टिकल्चर ई-डॉसिएर क्या है?"
+        "a_en": "It is an online stage where provisionally shortlisted candidates must upload their scanned educational, category, and experience documents along with a signed post preference form. This allows the board and user departments to verify candidate details for final appointment.",
+        "a_hi": "यह एक ऑनलाइन चरण है जहाँ अनंतिम रूप से शॉर्टलिस्ट किए गए उम्मीदवारों को हस्ताक्षर किए गए पोस्ट प्रेफरेंस फॉर्म के साथ अपने स्कैन किए गए शैक्षणिक, श्रेणी और अनुभव दस्तावेज अपलोड करने होते हैं। इससे बोर्ड और उपयोगकर्ता विभागों को अंतिम नियुक्ति के लिए उम्मीदवारों के विवरण सत्यापित करने में मदद मिलती है।",
+        "q_en": "What is the DSSSB Section Officer Horticulture e-dossier process?",
+        "q_hi": "DSSSB सेक्शन ऑफिसर हॉर्टिकल्चर ई-डॉसिएर प्रक्रिया क्या है?"
       }
     ],
     "extra": [],
     "faq": [
       {
-        "a_en": "You can check your marks by logging into the official DSSSB OARS portal using your credentials.",
-        "a_hi": "आप अपने क्रेडेंशियल्स का उपयोग करके आधिकारिक डीएसएसएसबी OARS पोर्टल पर लॉगिन करके अपने अंक देख सकते हैं।",
-        "q_en": "How can I check my DSSSB Section Officer Horticulture Tier-II marks?",
-        "q_hi": "मैं अपने डीएसएसएसबी सेक्शन ऑफिसर हॉर्टिकल्चर टियर-2 के अंक कैसे देख सकता हूँ?"
+        "a_en": "The e-dossier link is active from 07 November 2026 to 21 November 2026.",
+        "a_hi": "ई-डॉसिएर लिंक 07 नवंबर 2026 से 21 नवंबर 2026 तक सक्रिय है।",
+        "q_en": "When can I upload the e-dossier for DSSSB Section Officer Horticulture Post Code 803/23?",
+        "q_hi": "मैं DSSSB सेक्शन ऑफिसर हॉर्टिकल्चर पोस्ट कोड 803/23 के लिए ई-डॉसिएर कब अपलोड कर सकता हूँ?"
       },
       {
-        "a_en": "This notice is associated with Post Code 803/23 for Section Officer (Horticulture).",
-        "a_hi": "यह नोटिस सेक्शन ऑफिसर (हॉर्टिकल्चर) के लिए पोस्ट कोड 803/23 से संबंधित है।",
-        "q_en": "Which post code is associated with this notice?",
-        "q_hi": "इस नोटिस से कौन सा पोस्ट कोड संबंधित है?"
+        "a_en": "You can view your marks by logging into your account in the OARS module on the official website www.dsssbonline.nic.in.",
+        "a_hi": "आप आधिकारिक वेबसाइट www.dsssbonline.nic.in पर OARS मॉड्यूल में अपने खाते में लॉगिन करके अपने अंक देख सकते हैं।",
+        "q_en": "How can I check my Tier-II marks for DSSSB Section Officer Horticulture?",
+        "q_hi": "मैं DSSSB सेक्शन ऑफिसर हॉर्टिकल्चर के लिए अपने टियर-II अंक कैसे देख सकता हूँ?"
+      },
+      {
+        "a_en": "There are a total of 108 vacancies advertised for this post code.",
+        "a_hi": "इस पोस्ट कोड के लिए कुल 108 वैकेंसी विज्ञापित की गई हैं।",
+        "q_en": "What is the total number of vacancies for Section Officer Horticulture Post Code 803/23?",
+        "q_hi": "सेक्शन ऑफिसर हॉर्टिकल्चर पोस्ट कोड 803/23 के लिए कुल वैकेंसी कितनी हैं?"
+      },
+      {
+        "a_en": "The cut-off mark for the UR category is 133.86 out of 200 marks.",
+        "a_hi": "UR श्रेणी के लिए कट-ऑफ अंक 200 में से 133.86 है।",
+        "q_en": "What is the cut-off mark for the UR category in the e-dossier shortlisting?",
+        "q_hi": "ई-डॉसिएर शॉर्टलिस्टिंग में UR श्रेणी के लिए कट-ऑफ अंक क्या है?"
+      },
+      {
+        "a_en": "If you fail to upload the e-dossier and preference form by 21 November 2026, your candidature will be rejected and no further opportunity will be given.",
+        "a_hi": "यदि आप 21 नवंबर 2026 तक ई-डॉसिएर और प्रेफरेंस फॉर्म अपलोड करने में विफल रहते हैं, तो आपकी उम्मीदवारी रद्द कर दी जाएगी और कोई अन्य अवसर नहीं दिया जाएगा।",
+        "q_en": "What happens if I fail to upload the e-dossier within the stipulated time?",
+        "q_hi": "यदि मैं निर्धारित समय के भीतर ई-डॉसिएर अपलोड करने में विफल रहता हूँ तो क्या होगा?"
+      },
+      {
+        "a_en": "Yes, candidates must compulsorily exercise at least one preference in the Preference Form, otherwise they will not be considered for any post or department.",
+        "a_hi": "हाँ, उम्मीदवारों को प्रेफरेंस फॉर्म में अनिवार्य रूप से कम से कम एक प्राथमिकता दर्ज करनी ہوگی, अन्यथा उन्हें किसी भी पद या विभाग के लिए नहीं माना जाएगा।",
+        "q_en": "Is filling out the Post Preference Form compulsory?",
+        "q_hi": "क्या पोस्ट प्रेफरेंस फॉर्म भरना अनिवार्य है?"
       }
     ],
     "fees": [],
@@ -106,27 +187,29 @@
     "h1_hi": "डीएसएसएसबी सेक्शन ऑफिसर हॉर्टिकल्चर टियर 2 मार्क्स 2026 – ई-डॉसिएर लिंक",
     "hindi_notice_url": null,
     "how_en": [
-      "Go to the official DSSSB OARS portal.",
-      "Log in using your credentials.",
-      "Check your Tier-II exam marks.",
-      "Upload the required e-dossier documents if shortlisted."
+      "Log in to your account on the OARS module at www.dsssbonline.nic.in.",
+      "Check your Tier-II marks in the dashboard.",
+      "Fill out the Post Preference Form carefully in the OARS module.",
+      "Take a printout of the filled Preference Form, sign it, and upload it along with all required valid documents (Educational Qualifications, Experience, Caste, PwBD certificates, etc.) in the e-dossier link between 07.11.2026 and 21.11.2026."
     ],
     "how_hi": [
-      "आधिकारिक डीएसएसएसबी OARS पोर्टल पर जाएं।",
-      "अपने क्रेडेंशियल्स का उपयोग करके लॉगिन करें।",
-      "अपने टियर-2 परीक्षा के अंक देखें।",
-      "शॉर्टलिस्ट होने पर आवश्यक ई-डॉसिएर दस्तावेज अपलोड करें।"
+      "www.dsssbonline.nic.in पर OARS मॉड्यूल में अपने खाते में लॉगिन करें।",
+      "डैशबोर्ड में अपने टियर-II अंक देखें।",
+      "OARS मॉड्यूल में पोस्ट प्रेफरेंस फॉर्म सावधानीपूर्वक भरें।",
+      "भरे हुए प्रेफरेंस फॉर्म का प्रिंटआउट लें, उस पर हस्ताक्षर करें और 07.11.2026 से 21.11.2026 के बीच ई-डॉसिएर लिंक में सभी आवश्यक वैध दस्तावेजों (शैक्षणिक योग्यता, अनुभव, जाति, दिव्यांग प्रमाण पत्र आदि) के साथ अपलोड करें।"
     ],
-    "intro_en": "The Delhi Subordinate Services Selection Board (DSSSB) has published Notice No. 211 announcing the release of Tier-II examination marks and the schedule for uploading e-dossiers for the Section Officer (Horticulture) post under Post Code 803/23 in MCD and NDMC. Candidates who participated in the Tier-II exam can view their marks by logging into the official OARS portal. Shortlisted candidates are required to submit their e-dossiers within the given timeframe.",
-    "intro_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने नोटिस नंबर 211 जारी किया है जिसके तहत पोस्ट कोड 803/23 के अंतर्गत एमसीडी और एनडीएमसी में सेक्शन ऑफिसर (हॉर्टिकल्चर) पद के लिए टियर-2 परीक्षा के अंक जारी किए गए हैं और ई-डॉसिएर अपलोड करने के लिए बुलाया गया है। टियर-2 परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक OARS पोर्टल पर लॉगिन करके अपने अंक देख सकते हैं।",
-    "last_date": null,
+    "intro_en": "The Delhi Subordinate Services Selection Board (DSSSB) has released the marks for the Tier-II examination and called for e-dossiers for the post of Section Officer (Horticulture) in MCD and NDMC under Post Code 803/23. A total of 267 candidates have been provisionally shortlisted based on their performance in the Tier-II examination. Shortlisted candidates must log in to the OARS module to check their marks, fill out the post preference form, and upload their e-dossiers along with valid documents between 07 November 2026 and 21 November 2026.",
+    "intro_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने एमसीडी और एनडीएमसी में पोस्ट कोड 803/23 के तहत सेक्शन ऑफिसर (हॉर्टिकल्चर) पद के लिए टियर-2 परीक्षा के अंक जारी कर दिए हैं और ई-डॉसिएर आमंत्रित किए हैं। टियर-2 परीक्षा में प्रदर्शन के आधार पर कुल 267 उम्मीदवारों को अनंतिम रूप से शॉर्टलिस्ट किया गया है। शॉर्टलिस्ट किए गए उम्मीदवारों को OARS मॉड्यूल में लॉगिन करके अपने अंक देखने, पोस्ट प्रेफरेंस फॉर्म भरने और 07 नवंबर 2026 से 21 नवंबर 2026 के बीच अपने वैध दस्तावेजों के साथ ई-डॉसिएर अपलोड करना होगा।",
+    "last_date": "2026-11-21",
     "mistakes_en": [
-      "Do not miss the deadline for uploading the e-dossier.",
-      "Ensure all uploaded documents are clear and valid."
+      "Do not miss the deadline of 21 November 2026 for uploading the e-dossier and preference form.",
+      "Do not forget to sign and upload the Post Preference Form, as failure to submit preferences will result in non-consideration for any post.",
+      "Ensure you meet all Recruitment Rules and eligibility criteria before submitting preferences, as post allocation once made is final and irreversible."
     ],
     "mistakes_hi": [
-      "ई-डॉसिएर अपलोड करने की अंतिम तिथि न चूकें।",
-      "सुनिश्चित करें कि सभी अपलोड किए गए दस्तावेज स्पष्ट और वैध हैं।"
+      "ई-डॉसिएर और प्रेफरेंस फॉर्म अपलोड करने के लिए 21 नवंबर 2026 की समय सीमा न चूकें।",
+      "पोस्ट प्रेफरेंस फॉर्म पर हस्ताक्षर करके अपलोड करना न भूलें, क्योंकि प्राथमिकताएं न जमा करने पर किसी भी पद के लिए विचार नहीं किया जाएगा।",
+      "प्राथमिकताएं जमा करने से पहले यह सुनिश्चित कर लें कि आप सभी भर्ती नियमों और पात्रता मानदंडों को पूरा करते हैं, क्योंकि एक बार आवंटित पद अंतिम और अपरिवर्तनीय होता है।"
     ],
     "not_en": [],
     "not_hi": [],
@@ -136,8 +219,8 @@
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Post Name",
-        "label_hi": "पद का नाम",
+        "label_en": "Posts",
+        "label_hi": "पद",
         "value_en": "Section Officer (Horticulture)",
         "value_hi": "सेक्शन ऑफिसर (हॉर्टिकल्चर)"
       },
@@ -148,48 +231,73 @@
         "value_hi": "803/23"
       },
       {
-        "label_en": "Department",
-        "label_hi": "विभाग",
-        "value_en": "MCD & NDMC",
-        "value_hi": "एमसीडी और एनडीएमसी"
+        "label_en": "Total Vacancies",
+        "label_hi": "कुल वैकेंसी",
+        "value_en": "108",
+        "value_hi": "108"
       },
       {
-        "label_en": "Notice Number",
-        "label_hi": "नोटिस संख्या",
-        "value_en": "211",
-        "value_hi": "211"
+        "label_en": "E-Dossier Dates",
+        "label_hi": "ई-डॉसिएर तिथियां",
+        "value_en": "07 Nov 2026 to 21 Nov 2026",
+        "value_hi": "07 Nov 2026 से 21 Nov 2026"
+      },
+      {
+        "label_en": "Tier-II Exam Date",
+        "label_hi": "टियर-2 परीक्षा तिथि",
+        "value_en": "14 July 2026",
+        "value_hi": "14 जुलाई 2026"
       }
     ],
     "salary": [],
     "selection_en": [
+      "Tier-I Examination",
       "Tier-II Examination",
-      "E-Dossier Verification",
-      "Final Selection"
+      "E-Dossier Upload and Document Verification by User Department",
+      "Final Selection based on Merit-cum-Preference"
     ],
     "selection_hi": [
-      "टियर-2 परीक्षा",
-      "ई-डॉसिएर सत्यापन",
-      "अंतिम चयन"
+      "टियर-I परीक्षा",
+      "टियर-II परीक्षा",
+      "ई-डॉसिएर अपलोड और उपयोगकर्ता विभाग द्वारा दस्तावेज सत्यापन",
+      "मेरिट-सह-प्राथमिकता के आधार पर अंतिम चयन"
     ],
     "share_card": {
-      "headline_en": "Tier-II Marks & Dossier",
-      "headline_hi": "टियर-2 मार्क्स और डॉसिएर",
+      "headline_en": "Tier 2 Marks & E-Dossier",
+      "headline_hi": "टियर 2 मार्क्स और ई-डॉसिएर",
       "kind": "result",
-      "line_en": "Section Officer Horticulture",
-      "line_hi": "सेक्शन ऑफिसर हॉर्टिकल्चर",
-      "posts": null
+      "line_en": "Section Officer (Horticulture)",
+      "line_hi": "सेक्शन ऑफिसर (हॉर्टिकल्चर)",
+      "posts": 108
     },
-    "status_en": "Tier-II marks released and e-dossier submission called",
-    "status_hi": "टियर-2 के अंक जारी और ई-डॉसिएर आमंत्रित",
-    "summary_en": "Delhi Subordinate Services Selection Board (DSSSB) has released the marks for the Tier-II exam and called for e-dossiers for the post of Section Officer (Horticulture) in MCD & NDMC under Post Code 803/23. Candidates who appeared for the exam can check their scores by logging into the OARS portal. Shortlisted candidates must upload their e-dossiers within the specified timeline.",
-    "summary_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने पोस्ट कोड 803/23 के तहत MCD और NDMC में सेक्शन ऑफिसर (हॉर्टिकल्चर) पद के लिए टियर-2 परीक्षा के अंक जारी कर दिए हैं और ई-डॉसिएर मंगाए हैं। परीक्षा में शामिल होने वाले उम्मीदवार OARS पोर्टल पर लॉगिन करके अपने अंक देख सकते हैं।",
-    "vacancies": [],
+    "status_en": "Tier-II marks released and e-dossier call active till 21 Nov 2026",
+    "status_hi": "टियर-2 मार्क्स जारी और ई-डॉसिएर आमंत्रण 21 Nov 2026 तक सक्रिय",
+    "summary_en": "DSSSB has released the Tier-II exam marks and called for e-dossiers and post preferences for the Section Officer (Horticulture) post under Post Code 803/23. Shortlisted candidates must upload their e-dossiers and preferences online from 07 November 2026 to 21 November 2026.",
+    "summary_hi": "डीएसएसएसबी ने पोस्ट कोड 803/23 के तहत सेक्शन ऑफिसर (हॉर्टिकल्चर) पद के लिए टियर-2 परीक्षा के अंक जारी कर दिए हैं और ई-डॉसिएर तथा पोस्ट प्रेफरेंस मंगाए हैं। शॉर्टलिस्ट किए गए उम्मीदवार 07 नवंबर 2026 से 21 नवंबर 2026 तक ऑनलाइन ई-डॉसिएर अपलोड कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "UR 40, OBC 25, SC 13, ST 06, EWS 05, PwBD 04",
+        "detail_hi": "UR 40, OBC 25, SC 13, ST 06, EWS 05, PwBD 04",
+        "post_en": "Section Officer (Horticulture) - MCD",
+        "post_hi": "सेक्शन ऑफिसर (हॉर्टिकल्चर) - एमसीडी",
+        "total": "89"
+      },
+      {
+        "detail_en": "UR 02, OBC 08, SC 04, ST 02, EWS 03, PwBD 00",
+        "detail_hi": "UR 02, OBC 08, SC 04, ST 02, EWS 03, PwBD 00",
+        "post_en": "Section Officer (Horticulture) - NDMC",
+        "post_hi": "सेक्शन ऑफिसर (हॉर्टिकल्चर) - एनडीएमसी",
+        "total": "19"
+      }
+    ],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the DSSSB Section Officer (Horticulture) Tier-II exam under Post Code 803/23."
+      "Candidates who appeared for the Tier-II examination for Section Officer (Horticulture) under Post Code 803/23",
+      "Candidates provisionally shortlisted for uploading e-dossiers based on Tier-II cut-off marks"
     ],
     "who_hi": [
-      "वे उम्मीदवार जो पोस्ट कोड 803/23 के तहत डीएसएसएसबी सेक्शन ऑफिसर (हॉर्टिकल्चर) टियर-2 परीक्षा में शामिल हुए थे।"
+      "वे उम्मीदवार जिन्होंने पोस्ट कोड 803/23 के तहत सेक्शन ऑफिसर (हॉर्टिकल्चर) के लिए टियर-II परीक्षा दी है",
+      "टियर-II कट-ऑफ अंकों के आधार पर ई-डॉसिएर अपलोड करने के लिए अनंतिम रूप से शॉर्टलिस्ट किए गए उम्मीदवार"
     ]
   },
   "pdf": {
@@ -199,10 +307,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-03T12:08:31Z",
-  "qual": [
-    "graduate"
-  ],
-  "rewrite": true,
   "slug": "dsssb-section-officer-horticulture-tier-2-marks-2026-e-dossier-l",
   "source_id": "dsssb-home",
   "status": "approved",

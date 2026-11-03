@@ -1,6 +1,20 @@
 {
   "board_url": "https://nta.ac.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal procedural corrigendum regarding duplicate scorecards",
+    "summary_en": "NTA has issued a corrigendum regarding the procedure and fee payment for obtaining a duplicate scorecard.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने डुप्लीकेट स्कोरकार्ड प्राप्त करने की प्रक्रिया और शुल्क भुगतान के संबंध में शुद्धिपत्र जारी किया है।",
+    "title_en": "NTA Duplicate Scorecard Procedure Corrigendum",
+    "title_hi": "राष्ट्रीय परीक्षा एजेंसी डुप्लीकेट स्कोरकार्ड प्रक्रिया शुद्धिपत्र",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +30,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Corrigendum",
   "url": "https://nta.ac.in/Download/Notice/NTA_Corrigendum_Duplicate_Scorecard.pdf"
 }

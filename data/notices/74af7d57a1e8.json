@@ -1,22 +1,250 @@
 {
+  "auto_published": true,
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-13",
+    "last_date": null,
+    "list": true,
+    "posts": "Junior Assistant",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "UPSSSC has released admit cards for the Junior Assistant typing test scheduled from November 13 to November 26, 2026. Eligible candidates should download their admit cards from the official website.",
+    "summary_hi": "यूपीएसएसएससी ने 13 नवंबर से 26 नवंबर 2026 तक आयोजित होने वाली कनिष्ठ सहायक टंकण परीक्षा के लिए प्रवेश पत्र जारी कर दिए हैं। योग्य अभ्यर्थी आधिकारिक वेबसाइट से अपना प्रवेश पत्र डाउनलोड करें।",
+    "title_en": "UPSSSC Junior Assistant Admit Card 2026 – Typing Test Out",
+    "title_hi": "यूपीएसएसएससी कनिष्ठ सहायक एडमिट कार्ड 2026 – टंकण परीक्षा जारी",
+    "type": "Admit card",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-03T10:02:19+00:00",
   "id": "74af7d57a1e8",
+  "issue": 962,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-11-03",
   "org": "UPSSSC",
+  "page": {
+    "after_en": [
+      "Candidates who qualify the typing test will proceed to the next stages of recruitment such as document verification as per commission rules."
+    ],
+    "after_hi": [
+      "टंकण परीक्षा उत्तीर्ण करने वाले अभ्यर्थी आयोग के नियमों के अनुसार दस्तावेज सत्यापन जैसे अगले चरणों के लिए आगे बढ़ेंगे।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://upsssc.gov.in/AllNotifications.aspx",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Download your admit card well before the exam date",
+      "Check reporting time and shift details",
+      "Verify the exam centre address in Lucknow",
+      "Carry required documents to the exam hall"
+    ],
+    "checklist_hi": [
+      "परीक्षा तिथि से काफी पहले अपना प्रवेश पत्र डाउनलोड करें",
+      "रिपोर्टिंग समय और पाली का विवरण जांचें",
+      "लखनऊ में परीक्षा केंद्र के पते की पुष्टि करें",
+      "परीक्षा हॉल में आवश्यक दस्तावेज साथ ले जाएं"
+    ],
+    "conducted_by_en": "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC)",
+    "conducted_by_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग",
+    "dates": [
+      {
+        "label_en": "Admit card download starts",
+        "label_hi": "प्रवेश पत्र डाउनलोड शुरू",
+        "value_en": "03 Nov 2026",
+        "value_hi": "03 नव 2026"
+      },
+      {
+        "label_en": "Typing test dates",
+        "label_hi": "टंकण परीक्षा तिथियां",
+        "value_en": "13 Nov 2026 to 26 Nov 2026",
+        "value_hi": "13 नवंबर 2026 से 26 नवंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Printed copy of the admit card",
+      "Valid photo identity proof"
+    ],
+    "documents_hi": [
+      "प्रवेश पत्र की मुद्रित प्रति",
+      "मान्य फोटो पहचान पत्र"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-11-13",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a skill test conducted for candidates who qualified the UPSSSC Junior Assistant main written examination to assess their typing speed.",
+        "a_hi": "यह यूपीएसएसएससी कनिष्ठ सहायक मुख्य लिखित परीक्षा उत्तीर्ण करने वाले अभ्यर्थियों की टंकण गति का मूल्यांकन करने के लिए आयोजित की जाने वाली एक कौशल परीक्षा है।",
+        "q_en": "What is the UPSSSC Junior Assistant Typing Test?",
+        "q_hi": "यूपीएसएसएससी कनिष्ठ सहायक टंकण परीक्षा क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Shift 1 Timing",
+        "label_hi": "प्रथम पाली का समय",
+        "value_en": "Reporting: 08:00 AM, Gate closes: 09:30 AM",
+        "value_hi": "रिपोर्टिंग: सुबह 08:00 बजे, गेट बंद: सुबह 09:30 बजे"
+      },
+      {
+        "label_en": "Shift 2 Timing",
+        "label_hi": "द्वितीय पाली का समय",
+        "value_en": "Reporting: 12:00 PM, Gate closes: 01:30 PM",
+        "value_hi": "रिपोर्टिंग: दोपहर 12:00 बजे, गेट बंद: दोपहर 01:30 बजे"
+      },
+      {
+        "label_en": "Exam Venue",
+        "label_hi": "परीक्षा स्थल",
+        "value_en": "Excellence Infotec, In Campus of Rajat Woman’s College of Education and Management, In front of Rajat P.G. College, New Panchvati, Kamta, Ayodhya Road, Lucknow-226028",
+        "value_hi": "एक्सीलेंस इन्फोटेक, रजत वुमंस कॉलेज ऑफ एजुकेशन एंड मैनेजमेंट के परिसर में, रजत पीजी कॉलेज के सामने, नई पंचवटी, कामता, अयोध्या रोड, लखनऊ-226028"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The admit card was released on November 3, 2026.",
+        "a_hi": "प्रवेश पत्र 3 नवंबर 2026 को जारी किया गया था।",
+        "q_en": "When did the UPSSSC Junior Assistant typing test admit card release?",
+        "q_hi": "यूपीएसएसएससी कनिष्ठ सहायक टंकण परीक्षा का एडमिट कार्ड कब जारी हुआ?"
+      },
+      {
+        "a_en": "The typing test will be held from November 13 to November 26, 2026.",
+        "a_hi": "टंकण परीक्षा 13 नवंबर से 26 नवंबर 2026 तक आयोजित की जाएगी।",
+        "q_en": "What are the exam dates for the UPSSSC Junior Assistant typing test?",
+        "q_hi": "यूपीएसएसएससी कनिष्ठ सहायक टंकण परीक्षा की तिथियां क्या हैं?"
+      },
+      {
+        "a_en": "The exam is conducted at Excellence Infotec, Kamta, Ayodhya Road, Lucknow.",
+        "a_hi": "परीक्षा एक्सीलेंस इन्फोटेक, कामता, अयोध्या रोड, लखनऊ में आयोजित की जा रही है।",
+        "q_en": "Where is the exam centre located?",
+        "q_hi": "परीक्षा केंद्र कहां स्थित है?"
+      },
+      {
+        "a_en": "You can download it from the official website upsssc.gov.in using your login credentials.",
+        "a_hi": "आप अपने लॉगिन विवरण का उपयोग करके आधिकारिक वेबसाइट upsssc.gov.in से इसे डाउनलोड कर सकते हैं।",
+        "q_en": "How can I download my admit card?",
+        "q_hi": "मैं अपना एडमिट कार्ड कैसे डाउनलोड कर सकता हूं?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "UPSSSC Junior Assistant Admit Card 2026 – Typing Test Out",
+    "h1_hi": "यूपीएसएसएससी कनिष्ठ सहायक एडमिट कार्ड 2026 – टंकण परीक्षा जारी",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Go to the official website upsssc.gov.in",
+      "Click on the admit card download link for the relevant advertisement",
+      "Enter your required credentials and submit",
+      "Download and print the admit card for the exam"
+    ],
+    "how_hi": [
+      "आधिकारिक वेबसाइट upsssc.gov.in पर जाएं",
+      "संबंधित विज्ञापन के प्रवेश पत्र लिंक पर क्लिक करें",
+      "अपनी आवश्यक जानकारियां दर्ज करें और सबमिट करें",
+      "परीक्षा के लिए प्रवेश पत्र डाउनलोड करें और प्रिंट करें"
+    ],
+    "intro_en": "The Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has released the admit cards for the Junior Assistant typing test under Advertisement No. 12-Exam/2024. A total of 46,282 candidates shortlisted based on the written main exam score are eligible to appear for the typing test. The test will be conducted from November 13 to November 26, 2026, in two shifts at Lucknow. Candidates must download their admit cards from the official website and check their reporting time.",
+    "intro_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग (यूपीएसएसएससी) ने विज्ञापन संख्या-12-परीक्षा/2024 के अंतर्गत कनिष्ठ सहायक टंकण परीक्षा के प्रवेश पत्र जारी कर दिए हैं। मुख्य लिखित परीक्षा के स्कोर के आधार पर टंकण परीक्षा के लिए कुल 46,282 अभ्यर्थी अर्ह पाए गए हैं। यह परीक्षा 13 नवंबर से 26 नवंबर 2026 तक लखनऊ में दो पालियों में आयोजित की जाएगी। अभ्यर्थी आधिकारिक वेबसाइट से अपना प्रवेश पत्र डाउनलोड करें।",
+    "last_date": null,
+    "mistakes_en": [
+      "Reaching the exam centre after the gate closing time",
+      "Failing to read detailed instructions mentioned on the admit card"
+    ],
+    "mistakes_hi": [
+      "गेट बंद होने के समय के बाद परीक्षा केंद्र पहुंचना",
+      "प्रवेश पत्र पर दिए गए विस्तृत निर्देशों को न पढ़ना"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-03",
+    "official_site": "https://upsssc.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Junior Assistant",
+        "value_hi": "कनिष्ठ सहायक"
+      },
+      {
+        "label_en": "Total candidates",
+        "label_hi": "कुल अभ्यर्थी",
+        "value_en": "46,282",
+        "value_hi": "46,282"
+      },
+      {
+        "label_en": "Typing exam date",
+        "label_hi": "टंकण परीक्षा तिथि",
+        "value_en": "13 Nov to 26 Nov 2026",
+        "value_hi": "13 नव 2026 से 26 नव 2026"
+      },
+      {
+        "label_en": "Exam centre",
+        "label_hi": "परीक्षा केंद्र",
+        "value_en": "Lucknow",
+        "value_hi": "लखनऊ"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Written Main Exam",
+      "Typing Test",
+      "Document Verification"
+    ],
+    "selection_hi": [
+      "लिखित मुख्य परीक्षा",
+      "टंकण परीक्षा",
+      "दस्तावेज़ सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "Admit Card 2026",
+      "headline_hi": "एडमिट कार्ड 2026",
+      "kind": "admit",
+      "line_en": "Junior Assistant Typing",
+      "line_hi": "कनिष्ठ सहायक टंकण",
+      "posts": "46282"
+    },
+    "status_en": "Admit card released",
+    "status_hi": "एडमिट कार्ड जारी",
+    "summary_en": "UPSSSC has released the admit cards for the Junior Assistant typing test. The exam will be conducted from November 13 to November 26, 2026, in two shifts daily at Lucknow. Eligible candidates should download their admit cards from the official website.",
+    "summary_hi": "यूपीएसएसएससी ने कनिष्ठ सहायक टंकण परीक्षा के लिए प्रवेश पत्र जारी कर दिए हैं। परीक्षा 13 नवंबर से 26 नवंबर 2026 तक प्रतिदिन दो पालियों में लखनऊ में आयोजित की जाएगी। योग्य अभ्यर्थी आधिकारिक वेबसाइट से अपना प्रवेश पत्र डाउनलोड करें।",
+    "vacancies": [
+      {
+        "detail_en": "Candidates qualified for typing test",
+        "detail_hi": "टंकण परीक्षा के लिए अर्ह अभ्यर्थी",
+        "post_en": "Junior Assistant",
+        "post_hi": "कनिष्ठ सहायक",
+        "total": "46282"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates who cleared the UPSSSC Junior Assistant main exam and are shortlisted for the typing test."
+    ],
+    "who_hi": [
+      "वे अभ्यर्थी जिन्होंने यूपीएसएसएससी कनिष्ठ सहायक मुख्य परीक्षा उत्तीर्ण की है और टंकण परीक्षा के लिए शॉर्टलिस्ट किए गए हैं।"
+    ]
+  },
   "pdf": {
     "bytes": 250053,
     "pages": 1,
     "sha256": "f8c65cc70d975fd4e3f45524f1b38f34e29a1384449b67715682c8df9cb0ed1e",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-03T15:39:11Z",
+  "qual": [
+    "12th"
+  ],
+  "slug": "upsssc-junior-assistant-admit-card-2026-typing-test-out",
   "source_id": "upsssc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?ac6O9w3lhlchc+l3v/OHF86ejpE2NV42YO5LdNhc9iI="
 }

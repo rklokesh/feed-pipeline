@@ -1,6 +1,20 @@
 {
   "board_url": "https://kvs.gov.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "None",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal circular regarding closure of employee transfer process, not for job aspirants",
+    "summary_en": "Kendriya Vidyalaya Sangathan has closed the annual transfer process for 2026. No further requests will be entertained.",
+    "summary_hi": "केन्द्रीय विद्यालय संगठन ने वर्ष 2026 की वार्षिक स्थानांतरण प्रक्रिया को बंद कर दिया है। अब किसी भी नए अनुरोध पर विचार नहीं किया जाएगा।",
+    "title_en": "KVS Annual Transfer Process 2026 Closure",
+    "title_hi": "केन्द्रीय विद्यालय संगठन वार्षिक स्थानांतरण प्रक्रिया 2026 समापन",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +30,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "kvs-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "वार्षिक स्थानांतरण प्रक्रिया 2026 के समापन संबंधी सूचना नई",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/10/2026103146.pdf"
 }

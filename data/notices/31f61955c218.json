@@ -1,22 +1,383 @@
 {
+  "auto_published": true,
   "board_url": "https://www.indiapost.gov.in/vacancies",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-11-30",
+    "list": true,
+    "posts": "Staff Car Driver (Ordinary Grade)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "India Post has invited applications for 24 Staff Car Driver posts in Tamil Nadu Circle. Eligible candidates can apply offline by 30.11.2026.",
+    "summary_hi": "India Post ने Tamil Nadu Circle में 24 Staff Car Driver के पदों के लिए आवेदन मांगे हैं। योग्य उम्मीदवार 30.11.2026 तक आवेदन कर सकते हैं।",
+    "title_en": "India Post Tamil Nadu Staff Car Driver Recruitment 2026 – Apply Offline for 24 Posts",
+    "title_hi": "India Post Tamil Nadu Staff Car Driver भर्ती 2026 – 24 पदों के लिए ऑफलाइन आवेदन करें",
+    "type": "Job",
+    "vacancies": 24
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": 27,
+    "age_min": 18,
+    "age_on": "2026-11-30",
+    "domicile": null,
+    "qual": "10th",
+    "relax": {
+      "ExSM": 3,
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5
+    }
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-30T05:10:48+00:00",
   "id": "31f61955c218",
+  "issue": 960,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-10-23",
   "org": "India Post",
+  "page": {
+    "after_en": [
+      "Issuance of Hall Permits to eligible candidates",
+      "Conduct of examination / skill test",
+      "Merit-based allotment to divisions and units"
+    ],
+    "after_hi": [
+      "पात्र उम्मीदवारों को हॉल परमिट जारी करना",
+      "परीक्षा / कौशल परीक्षण का आयोजन",
+      "डвиजनों और यूनिटों में मेरिट के आधार पर आवंटन"
+    ],
+    "age": [
+      {
+        "label_en": "Minimum age",
+        "label_hi": "न्यूनतम आयु",
+        "value_en": "18 years",
+        "value_hi": "18 वर्ष"
+      },
+      {
+        "label_en": "Maximum age (UR / EWS)",
+        "label_hi": "अधिकतम आयु (सामान्य / ईडब्ल्यूएस)",
+        "value_en": "27 years",
+        "value_hi": "27 वर्ष"
+      },
+      {
+        "label_en": "SC / ST relaxation",
+        "label_hi": "एससी / एसटी छूट",
+        "value_en": "Relaxable by 5 years",
+        "value_hi": "5 वर्ष की छूट"
+      },
+      {
+        "label_en": "OBC relaxation",
+        "label_hi": "अन्य पिछड़ा वर्ग छूट",
+        "value_en": "Relaxable by 3 years",
+        "value_hi": "3 वर्ष की छूट"
+      },
+      {
+        "label_en": "Government servants",
+        "label_hi": "सरकारी कर्मचारी",
+        "value_en": "Up to 40 years",
+        "value_hi": "40 वर्ष तक"
+      },
+      {
+        "label_en": "As-on date",
+        "label_hi": "आयु गणना की तिथि",
+        "value_en": "30 Nov 2026",
+        "value_hi": "30 Nov 2026"
+      }
+    ],
+    "apply_start": null,
+    "apply_url": null,
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Ensure you meet the age and educational requirements as of 30.11.2026",
+      "Keep your LMV & HMV driving license and 3-year experience certificate ready",
+      "Pay the ₹100 fee via e-challan at a computerized post office if not exempted",
+      "Send the application via Speed Post well before 30 November 2026"
+    ],
+    "checklist_hi": [
+      "सुनिश्चित करें कि आप 30.11.2026 तक आयु और शैक्षणिक आवश्यकताओं को पूरा करते हैं",
+      "अपना एलएमवी और एचएमवी ड्राइविंग लाइसेंस तथा 3 साल का अनुभव प्रमाण पत्र तैयार रखें",
+      "यदि छूट प्राप्त नहीं है, तो किसी कंप्यूटरीकृत डाकघर में ई-चालान के माध्यम से ₹100 का शुल्क भुगतान करें",
+      "30 नवंबर 2026 से पहले स्पीड पोस्ट के माध्यम से आवेदन भेजें"
+    ],
+    "conducted_by_en": "Department of Posts, India Post (Mail Motor Service, Chennai)",
+    "conducted_by_hi": "डाक विभाग, इंडिया पोस्ट (मेल मोटर सर्विस, चेन्नई)",
+    "dates": [
+      {
+        "label_en": "Notification date",
+        "label_hi": "अधिसूचना तिथि",
+        "value_en": "23 Oct 2026",
+        "value_hi": "23 Oct 2026"
+      },
+      {
+        "label_en": "Last date for receipt of application",
+        "label_hi": "आवेदन प्राप्त करने की अंतिम तिथि",
+        "value_en": "30 Nov 2026 (17:00 Hours)",
+        "value_hi": "30 Nov 2026 (17:00 Hours)"
+      }
+    ],
+    "documents_en": [
+      "Age proof certificate",
+      "Educational qualification certificates",
+      "Community / Caste certificate in prescribed format",
+      "Income & Asset certificate for EWS candidates (for year 2025-2026)",
+      "Valid driving license with date of first issue and expiry for LMV and HMV",
+      "Experience certificate from a Gazetted Officer or Head of a Registered Firm with full address and specific dates",
+      "Original post office receipt for fee payment (if applicable)"
+    ],
+    "documents_hi": [
+      "आयु प्रमाण पत्र",
+      "शैक्षणिक योग्यता प्रमाण पत्र",
+      "निर्धारित प्रारूप में जाति प्रमाण पत्र",
+      "ईडब्ल्यूएस उम्मीदवारों के लिए आय और संपत्ति प्रमाण पत्र",
+      "एलएमवी और एचएमवी के लिए वैध ड्राइविंग लाइसेंस",
+      "राजपत्रित अधिकारी या पंजीकृत फर्म के प्रमुख से अनुभव प्रमाण पत्र",
+      "शुल्क भुगतान के लिए मूल डाकघर रसीद"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Education",
+        "label_hi": "शिक्षा",
+        "value_en": "Pass in 10th Standard from a recognized Board or Institute",
+        "value_hi": "मान्यता प्राप्त बोर्ड या संस्थान से 10वीं कक्षा उत्तीर्ण"
+      },
+      {
+        "label_en": "Driving License",
+        "label_hi": "ड्राइविंग लाइसेंस",
+        "value_en": "Possession of a valid driving license for light and heavy motor vehicles",
+        "value_hi": "हल्के और भारी मोटर वाहनों के लिए वैध ड्राइविंग लाइसेंस"
+      },
+      {
+        "label_en": "Experience",
+        "label_hi": "अनुभव",
+        "value_en": "Experience of driving light and heavy motor vehicles for at least three years",
+        "value_hi": "कम से कम तीन साल के लिए हल्के और भारी मोटर वाहन चलाने का अनुभव"
+      },
+      {
+        "label_en": "Motor Mechanism",
+        "label_hi": "मोटर तंत्र",
+        "value_en": "Knowledge of Motor Mechanism (ability to remove minor defects in vehicle)",
+        "value_hi": "मोटर तंत्र का ज्ञान (वाहन में मामूली कमियों को दूर करने की क्षमता)"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "Staff Car Driver (Ordinary Grade) is a Group-C Non-Gazetted, Non-Ministerial post under the Department of Posts responsible for driving departmental staff cars and vehicles as per official requirements.",
+        "a_hi": "स्टाफ कार ड्राइवर (ऑर्डिनरी ग्रेड) डाक विभाग के तहत एक ग्रुप-सी गैर-राजपत्रित, गैर-मंत्रिस्तरीय पद है जो आधिकारिक आवश्यकताओं के अनुसार विभागीय स्टाफ कारों और वाहनों को चलाने के लिए जिम्मेदार है।",
+        "q_en": "What is the Staff Car Driver post in India Post?",
+        "q_hi": "इंडिया पोस्ट में स्टाफ कार ड्राइवर का पद क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Probation Period",
+        "label_hi": "परिक्षा काल",
+        "value_en": "2 years",
+        "value_hi": "2 वर्ष"
+      },
+      {
+        "label_en": "Desirable Qualification",
+        "label_hi": "वांछित योग्यता",
+        "value_en": "Three years' service as Home Guard or Civil Volunteers",
+        "value_hi": "होम गार्ड या सिविल वालंटियर के रूप में तीन साल की सेवा"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The last date to receive applications is 30 November 2026 by 17:00 Hours.",
+        "a_hi": "आवेदन प्राप्त होने की अंतिम तिथि 30 नवंबर 2026 शाम 17:00 बजे तक है।",
+        "q_en": "What is the last date to apply for India Post Tamil Nadu Staff Car Driver Recruitment 2026?",
+        "q_hi": "India Post Tamil Nadu Staff Car Driver Recruitment 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "There are a total of 24 vacancies for the Staff Car Driver post in Tamil Nadu Circle.",
+        "a_hi": "तमिलनाडु सर्कल में स्टाफ कार ड्राइवर के पद के लिए कुल 24 रिक्तियां हैं।",
+        "q_en": "What is the total number of vacancies?",
+        "q_hi": "कुल रिक्तियों की संख्या कितनी है?"
+      },
+      {
+        "a_en": "The age limit for UR and EWS candidates is 18 to 27 years as of 30.11.2026.",
+        "a_hi": "30.11.2026 के अनुसार सामान्य और ईडब्ल्यूएस उम्मीदवारों के लिए आयु सीमा 18 से 27 वर्ष है।",
+        "q_en": "What is the age limit for general candidates?",
+        "q_hi": "सामान्य उम्मीदवारों के लिए आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "The application fee is ₹100 for General, OBC, and EWS candidates. Women, SC, and ST applicants are exempted from the fee.",
+        "a_hi": "सामान्य, ओबीसी और ईडब्ल्यूएस उम्मीदवारों के लिए आवेदन शुल्क ₹100 है। महिला, एससी और एसटीApplicants को शुल्क से छूट दी गई है।",
+        "q_en": "What is the application fee?",
+        "q_hi": "आवेदन शुल्क कितना है?"
+      },
+      {
+        "a_en": "Applications must be sent in the prescribed format through Speed Post only to 'The Senior Manager, Mail Motor Service, No.37, Greams Road, Chennai — 600 006'.",
+        "a_hi": "आवेदन केवल स्पीड पोस्ट द्वारा निर्धारित प्रारूप में 'The Senior Manager, Mail Motor Service, No.37, Greams Road, Chennai — 600 006' पर भेजे जाने चाहिए।",
+        "q_en": "How should I submit the application form?",
+        "q_hi": "मुझे आवेदन पत्र कैसे जमा करना चाहिए?"
+      },
+      {
+        "a_en": "Candidates must have passed 10th Standard and possess a valid driving license for light and heavy motor vehicles with 3 years of driving experience.",
+        "a_hi": "उम्मीदवारों को 10वीं कक्षा उत्तीर्ण होना चाहिए और उनके पास 3 साल के ड्राइविंग अनुभव के साथ हल्के और भारी मोटर वाहनों का वैध ड्राइविंग लाइसेंस होना चाहिए।",
+        "q_en": "What educational qualifications are required?",
+        "q_hi": "कौन सी शैक्षणिक योग्यता आवश्यक है?"
+      }
+    ],
+    "fees": [
+      {
+        "amount": "₹100",
+        "cat_en": "General / OBC / EWS",
+        "cat_hi": "सामान्य / अन्य पिछड़ा वर्ग / ईडब्ल्यूएस"
+      },
+      {
+        "amount": "₹0",
+        "cat_en": "Women / SC / ST",
+        "cat_hi": "महिला / एससी / एसटी"
+      }
+    ],
+    "h1_en": "India Post Tamil Nadu Staff Car Driver Recruitment 2026 – Apply Offline for 24 Posts",
+    "h1_hi": "India Post Tamil Nadu Staff Car Driver भर्ती 2026 – 24 पदों के लिए ऑफलाइन आवेदन करें",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Download the application format and challan form from the official website www.indiapost.gov.in",
+      "Pay the application fee of ₹100 through e-payment at any computerized post office using the challan form (exempted for Women/SC/ST)",
+      "Fill out the application completely in Hindi, English, or Tamil without corrections",
+      "Affix a recent self-attested passport-size photograph and attach another recent photograph",
+      "Attach self-attested photocopies of age proof, educational certificates, community certificate, valid driving license, and experience certificate",
+      "Send the completed application by Speed Post only to 'The Senior Manager, Mail Motor Service, No.37, Greams Road, Chennai — 600 006' on or before 30.11.2026 by 17:00 Hours"
+    ],
+    "how_hi": [
+      "आधिकारिक वेबसाइट www.indiapost.gov.in से आवेदन पत्र और चालान फॉर्म डाउनलोड करें",
+      "चालान फॉर्म का उपयोग करके किसी भी कंप्यूटरीकृत डाकघर में ई-पेमेंट के माध्यम से ₹100 का आवेदन शुल्क जमा करें (महिला/एससी/एसटी के लिए छूट)",
+      "हिंदी, अंग्रेजी या तमिल में बिना किसी सुधार के आवेदन पत्र पूरी तरह से भरें",
+      "एक हालिया स्व-हस्ताक्षरित पासपोर्ट आकार का फोटो चिपकाएं और एक अन्य फोटो साथ रखें",
+      "आयु प्रमाण, शैक्षणिक प्रमाण पत्र, जाति प्रमाण पत्र, वैध ड्राइविंग लाइसेंस और अनुभव प्रमाण पत्र की स्व-हस्ताक्षरित फोटोकॉपी संलग्न करें",
+      "पूर्ण रूप से भरे हुए आवेदन को केवल स्पीड पोस्ट द्वारा 'The Senior Manager, Mail Motor Service, No.37, Greams Road, Chennai — 600 006' के पते पर 30.11.2026 को शाम 17:00 बजे या उससे पहले भेजें"
+    ],
+    "intro_en": "India Post, Office of the Senior Manager, Mail Motor Service, Chennai has released a recruitment notification for 24 Staff Car Driver (Ordinary Grade) posts in Tamil Nadu Circle. Eligible and interested candidates can send their offline applications through Speed Post up to 30 November 2026 by 17:00 Hours. The selection will be based on the prescribed examination pattern and syllabus. Candidates should check all eligibility criteria, age limits, and required documents before applying.",
+    "intro_hi": "इंडिया पोस्ट, वरिष्ठ प्रबंधक कार्यालय, मेल मोटर सेवा, चेन्नई ने तमिलनाडु सर्कल में 24 स्टाफ कार ड्राइवर (ऑर्डिनरी ग्रेड) पदों के लिए भर्ती अधिसूचना जारी की है। योग्य और इच्छुक उम्मीदवार 30 नवंबर 2026 को शाम 17:00 बजे तक स्पीड पोस्ट के माध्यम से अपने ऑफलाइन आवेदन भेज सकते हैं। चयन निर्धारित परीक्षा पैटर्न और पाठ्यक्रम के आधार पर किया जाएगा। उम्मीदवारों को आवेदन करने से पहले सभी पात्रता मापदंड, आयु सीमा और आवश्यक दस्तावेजों की जांच करनी चाहिए।",
+    "last_date": "2026-11-30",
+    "mistakes_en": [
+      "Sending the application by modes other than Speed Post",
+      "Failing to self-attest photographs or forgetting to enclose required self-attested document copies",
+      "Submitting experience certificates without complete address, pincode, and specific date ranges for light and heavy vehicles",
+      "Failing to pay the application fee or attaching an invalid fee receipt"
+    ],
+    "mistakes_hi": [
+      "स्पीड पोस्ट के अलावा अन्य माध्यमों से आवेदन भेजना",
+      "फोटो पर स्व-हस्ताक्षर न करना या आवश्यक दस्तावेजों की प्रतियां संलग्न करना भूल जाना",
+      "पूर्ण पता, पिनकोड और हल्के व भारी वाहनों के लिए विशिष्ट तिथि सीमा के बिना अनुभव प्रमाण पत्र जमा करना",
+      "आवेदन शुल्क का भुगतान न करना या अमान्य शुल्क रसीद संलग्न करना"
+    ],
+    "not_en": [
+      "Candidates applying through means other than Speed Post",
+      "Candidates lacking the required driving experience or valid driving license",
+      "Under-aged or over-aged candidates"
+    ],
+    "not_hi": [
+      "स्पीड पोस्ट के अलावा अन्य माध्यमों से आवेदन करने वाले उम्मीदवार",
+      "आवश्यक ड्राइविंग अनुभव या वैध ड्राइविंग लाइसेंस न रखने वाले उम्मीदवार",
+      "कम आयु या अधिक आयु वाले उम्मीदवार"
+    ],
+    "notice_date": "2026-10-23",
+    "official_site": "https://www.indiapost.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Staff Car Driver (Ordinary Grade)",
+        "value_hi": "स्टाफ कार ड्राइवर (ऑर्डिनरी ग्रेड)"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल वैकेंसी",
+        "value_en": "24",
+        "value_hi": "24"
+      },
+      {
+        "label_en": "Apply offline",
+        "label_hi": "ऑफलाइन आवेदन",
+        "value_en": "Up to 30 Nov 2026",
+        "value_hi": "30 Nov 2026 तक"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "18 to 27 years (as on 30.11.2026)",
+        "value_hi": "18 से 27 वर्ष (30.11.2026 के अनुसार)"
+      },
+      {
+        "label_en": "Salary",
+        "label_hi": "वेतन",
+        "value_en": "Level 2 (₹19,900–63,200)",
+        "value_hi": "लेवल 2 (₹19,900–63,200)"
+      }
+    ],
+    "salary": [
+      {
+        "label_en": "Pay Scale",
+        "label_hi": "वेतनमान",
+        "value_en": "Level 2 (₹19,900–63,200) plus admissible allowances",
+        "value_hi": "लेवल 2 (₹19,900–63,200) और स्वीकार्य भत्ते"
+      }
+    ],
+    "selection_en": [
+      "Written examination / skill test as per the prescribed annexure and syllabus",
+      "Allotment to divisions or units based on merit and candidate preference"
+    ],
+    "selection_hi": [
+      "निर्धारित पाठ्यक्रम के अनुसार लिखित परीक्षा / कौशल परीक्षण",
+      "मेधा और उम्मीदवार की पसंद के आधार पर डिवीजनों या यूनिटों का आवंटन"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Tamil Nadu Staff Car Driver",
+      "line_hi": "तमिलनाडु स्टाफ कार ड्राइवर",
+      "posts": "24"
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "India Post has invited applications for 24 Staff Car Driver posts in Tamil Nadu Circle. Eligible candidates can apply offline by 30.11.2026.",
+    "summary_hi": "India Post ने Tamil Nadu Circle में 24 Staff Car Driver के पदों के लिए आवेदन मांगे हैं। योग्य उम्मीदवार 30.11.2026 तक आवेदन कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "UR 13, SC 3, ST 0, OBC 7, EWS 1 (includes 2 Ex-Servicemen and 1 backlog vacancy)",
+        "detail_hi": "UR 13, SC 3, ST 0, OBC 7, EWS 1",
+        "post_en": "Staff Car Driver (Ordinary Grade)",
+        "post_hi": "स्टाफ कार ड्राइवर (ऑर्डिनरी ग्रेड)",
+        "total": "24"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "10th pass candidates aged 18-27 holding a valid LMV and HMV driving license with 3 years of driving experience"
+    ],
+    "who_hi": [
+      "10वीं पास उम्मीदवार जिनकी आयु 18-27 वर्ष है और जिनके पास वैध एलएमवी और एचएमवी ड्राइविंग लाइसेंस तथा 3 साल का ड्राइविंग अनुभव है"
+    ]
+  },
   "pdf": {
     "bytes": 4288015,
     "pages": 14,
     "sha256": "15323653bc540b144d978877bbb0a8aa36faea013f0e5ccdae11ae7ea48fe46d",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-03T15:38:30Z",
+  "qual": [
+    "10th"
+  ],
+  "slug": "india-post-tamil-nadu-staff-car-driver-recruitment-2026-apply-of",
   "source_id": "indiapost-vacancies",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Recruitment of 24 post of Staff Car (Ordinary Grade) under Direct Recruitment in Tamilnadu Circle",
   "url": "https://www.indiapost.gov.in/api/documents/file/100aafo2s64m0fy8p35t6z0iqrq3bvgv0sj5u0eiq33cu8h3a0kc0fh8h35s2f"
 }

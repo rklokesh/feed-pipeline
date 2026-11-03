@@ -3,16 +3,16 @@
   "board_url": "https://nta.ac.in/",
   "card": {
     "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
+    "exam_date": "2027-01-31",
+    "last_date": "2026-12-02",
     "list": true,
     "posts": "Sainik School Class 6 and Class 9 Admission",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
     "summary_en": "Online applications are invited for the All India Sainik Schools Entrance Examination 2027. Eligible candidates should apply online through the official website.",
     "summary_hi": "अखिल भारतीय सैनिक स्कूल प्रवेश परीक्षा 2027 के लिए ऑनलाइन आवेदन आमंत्रित किए गए हैं। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन करें।",
-    "title_en": "NTA AISSEE Admission 2027 – Online Form, Eligibility & Dates",
-    "title_hi": "एनटीए एआईएसएसईई एडमिशन 2027 – ऑनलाइन फॉर्म, योग्यता और तिथियां",
+    "title_en": "NTA AISSEE Admission 2027 – Online Form, Exam Date 31 Jan",
+    "title_hi": "एनटीए एआईएसएसईई एडमिशन 2027 – ऑनलाइन फॉर्म, परीक्षा तिथि 31 जन",
     "type": "Admission",
     "vacancies": null
   },
@@ -31,167 +31,271 @@
   "org": "NTA",
   "page": {
     "after_en": [
-      "Appearance in the AISSEE 2027 written exam",
-      "Declaration of results and release of merit list",
-      "Medical examination and counseling for qualified candidates"
+      "City of examination announcement",
+      "Admit card download",
+      "Written examination",
+      "Declaration of results and subsequent admission procedures"
     ],
     "after_hi": [
-      "एआईएसएसईई 2027 लिखित परीक्षा में शामिल होना",
-      "परिणामों की घोषणा और मेरिट सूची जारी करना",
-      "योग्य उम्मीदवारों के लिए चिकित्सा परीक्षण और परामर्श"
+      "परीक्षा शहर की घोषणा",
+      "एडमिट कार्ड डाउनलोड",
+      "लिखित परीक्षा",
+      "परिणाम की घोषणा और उसके बाद की प्रवेश प्रक्रिया"
     ],
     "age": [],
-    "apply_start": null,
-    "apply_url": "https://nta.ac.in/",
+    "apply_start": "2026-11-03",
+    "apply_url": "https://exams.nta.nic.in/sainik-school-society/",
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check age eligibility for Class 6 or Class 9",
-      "Keep scanned documents ready",
-      "Note down application number and password after registration"
+      "Check eligibility criteria in the bulletin",
+      "Keep documents ready before filling the form",
+      "Submit the online form before 02 December 2026"
     ],
     "checklist_hi": [
-      "कक्षा 6 या कक्षा 9 के लिए आयु पात्रता की जांच करें",
-      "स्कैन किए गए दस्तावेज तैयार रखें",
-      "पंजीकरण के बाद आवेदन संख्या और पासवर्ड नोट कर लें"
+      "बुलेटिन में पात्रता मापदंड जांचें",
+      "फॉर्म भरने से पहले दस्तावेज तैयार रखें",
+      "02 दिसंबर 2026 से पहले ऑनलाइन फॉर्म जमा करें"
     ],
     "conducted_by_en": "National Testing Agency (NTA)",
-    "conducted_by_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए)",
-    "dates": [],
+    "conducted_by_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए)",
+    "dates": [
+      {
+        "label_en": "Online application starts",
+        "label_hi": "ऑनलाइन आवेदन शुरू",
+        "value_en": "03 Nov 2026",
+        "value_hi": "03 नवंबर 2026"
+      },
+      {
+        "label_en": "Last date to apply",
+        "label_hi": "आवेदन करने की अंतिम तिथि",
+        "value_en": "02 Dec 2026",
+        "value_hi": "02 दिसंबर 2026"
+      },
+      {
+        "label_en": "Last date of fee transaction",
+        "label_hi": "शुल्क लेनदेन की अंतिम तिथि",
+        "value_en": "02 Dec 2026",
+        "value_hi": "02 दिसंबर 2026"
+      },
+      {
+        "label_en": "Late submission with late fee (₹500)",
+        "label_hi": "विलंब शुल्क (₹500) के साथ आवेदन",
+        "value_en": "03 Dec 2026 to 06 Dec 2026",
+        "value_hi": "03 दिसंबर 2026 से 06 दिसंबर 2026"
+      },
+      {
+        "label_en": "Last date of late fee transaction",
+        "label_hi": "विलंब शुल्क लेनदेन की अंतिम तिथि",
+        "value_en": "06 Dec 2026",
+        "value_hi": "06 दिसंबर 2026"
+      },
+      {
+        "label_en": "Correction window",
+        "label_hi": "सुधार विंडो",
+        "value_en": "07 Dec 2026 to 09 Dec 2026",
+        "value_hi": "07 दिसंबर 2026 से 09 दिसंबर 2026"
+      },
+      {
+        "label_en": "Announcement of exam city",
+        "label_hi": "परीक्षा शहर की घोषणा",
+        "value_en": "19 Jan 2027",
+        "value_hi": "19 जनवरी 2027"
+      },
+      {
+        "label_en": "Download admit card",
+        "label_hi": "एडमिट कार्ड डाउनलोड",
+        "value_en": "25 Jan 2027",
+        "value_hi": "25 जनवरी 2027"
+      },
+      {
+        "label_en": "Date of examination",
+        "label_hi": "परीक्षा की तिथि",
+        "value_en": "31 Jan 2027",
+        "value_hi": "31 जनवरी 2027"
+      }
+    ],
     "documents_en": [
-      "Scanned photograph",
-      "Scanned signature",
-      "Birth certificate",
-      "Domicile certificate",
-      "Category certificate (if applicable)"
+      "Scanned photograph and signature",
+      "Valid ID proof and certificates as specified in the bulletin"
     ],
     "documents_hi": [
-      "स्कैन की गई तस्वीर",
-      "स्कैन किए गए हस्ताक्षर",
-      "जन्म प्रमाण पत्र",
-      "निवास प्रमाण पत्र",
-      "श्रेणी प्रमाण पत्र (यदि लागू हो)"
+      "स्कैन की गई तस्वीर और हस्ताक्षर",
+      "बुलेटिन में निर्दिष्ट वैध आईडी प्रमाण और प्रमाण पत्र"
     ],
     "eligibility": [
       {
-        "label_en": "Admission Level",
-        "label_hi": "प्रवेश स्तर",
-        "value_en": "Class 6 and Class 9 in Sainik Schools",
-        "value_hi": "सैनिक स्कूलों में कक्षा 6 और कक्षा 9"
+        "label_en": "General Eligibility",
+        "label_hi": "सामान्य पात्रता",
+        "value_en": "Refer to the Information Bulletin for detailed eligibility criteria, age limits, and passing requirements.",
+        "value_hi": "विस्तृत पात्रता मानदंड, आयु सीमा और उत्तीर्ण आवश्यकताओं के लिए सूचना बुलेटिन देखें।"
       }
     ],
-    "exam_date": null,
-    "exam_pattern": [],
+    "exam_date": "2027-01-31",
+    "exam_pattern": [
+      {
+        "marks": "",
+        "part_en": "Test Type",
+        "part_hi": "परीक्षा का प्रकार",
+        "questions": "",
+        "time": ""
+      }
+    ],
     "explain": [
       {
-        "a_en": "The All India Sainik Schools Entrance Examination (AISSEE) is a national-level entrance exam conducted by the National Testing Agency (NTA) for admissions to Class 6 and Class 9 in Sainik Schools across India.",
-        "a_hi": "अखिल भारतीय सैनिक स्कूल प्रवेश परीक्षा (एआईएसएसईई) राष्ट्रीय परीक्षण एजेंसी (एनटीए) द्वारा भारत भर के सैनिक स्कूलों में कक्षा 6 और कक्षा 9 में प्रवेश के लिए आयोजित एक राष्ट्रीय स्तर की प्रवेश परीक्षा है।",
+        "a_en": "The All India Sainik Schools Entrance Examination (AISSEE) is a national-level entrance test conducted by the National Testing Agency for admission to Class 6 and Class 9 in Sainik Schools and New Sainik Schools across India.",
+        "a_hi": "अखिल भारतीय सैनिक स्कूल प्रवेश परीक्षा (एआईएसएसईई) भारत भर के सैनिक स्कूलों और नए सैनिक स्कूलों में कक्षा 6 और कक्षा 9 में प्रवेश के लिए राष्ट्रीय परीक्षा एजेंसी द्वारा आयोजित एक राष्ट्रीय स्तर की प्रवेश परीक्षा है।",
         "q_en": "What is AISSEE 2027?",
         "q_hi": "एआईएसएसईई 2027 क्या है?"
       }
     ],
-    "extra": [],
+    "extra": [
+      {
+        "label_en": "Mode of Test",
+        "label_hi": "परीक्षा का तरीका",
+        "value_en": "Pen & Paper (OMR Sheet based Multiple Choice Questions)",
+        "value_hi": "पेन और पेपर (ओएमआर शीट आधारित बहुविकल्पीय प्रश्न)"
+      },
+      {
+        "label_en": "Duration & Medium (Class VI)",
+        "label_hi": "अवधि और माध्यम (कक्षा VI)",
+        "value_en": "150 minutes in 13 Mediums",
+        "value_hi": "13 माध्यमों में 150 मिनट"
+      },
+      {
+        "label_en": "Duration & Medium (Class IX)",
+        "label_hi": "अवधि और माध्यम (कक्षा IX)",
+        "value_en": "180 minutes in English Medium",
+        "value_hi": "अंग्रेजी माध्यम में 180 मिनट"
+      }
+    ],
     "faq": [
       {
-        "a_en": "The National Testing Agency (NTA) conducts the All India Sainik Schools Entrance Examination.",
-        "a_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए) अखिल भारतीय सैनिक स्कूल प्रवेश परीक्षा आयोजित करती है।",
-        "q_en": "Who conducts AISSEE 2027?",
-        "q_hi": "एआईएसएसईई 2027 कौन आयोजित करता है?"
+        "a_en": "The last date to apply online for AISSEE 2027 is 02 December 2026 (up to 11:50 PM).",
+        "a_hi": "एआईएसएसईई 2027 के लिए ऑनलाइन आवेदन करने की अंतिम तिथि 02 दिसंबर 2026 (रात 11:50 बजे तक) है।",
+        "q_en": "What is the last date to apply for AISSEE 2027?",
+        "q_hi": "एआईएसएसईई 2027 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "Admissions are open for Class 6 and Class 9 in Sainik Schools.",
-        "a_hi": "सैनिक स्कूलों में कक्षा 6 और कक्षा 9 के लिए प्रवेश खुले हैं।",
-        "q_en": "Which classes are admissions open for through AISSEE 2027?",
-        "q_hi": "एआईएसएसईई 2027 के माध्यम से किन कक्षाओं के लिए प्रवेश खुले हैं?"
+        "a_en": "The AISSEE 2027 exam will be conducted on 31 January 2027.",
+        "a_hi": "एआईएसएसईई 2027 परीक्षा 31 जनवरी 2027 को आयोजित की जाएगी।",
+        "q_en": "When is the AISSEE 2027 exam scheduled?",
+        "q_hi": "एआईएसएसईई 2027 परीक्षा कब निर्धारित है?"
       },
       {
-        "a_en": "Eligible candidates can apply online through the official NTA website.",
-        "a_hi": "योग्य उम्मीदवार आधिकारिक एनटीए वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
-        "q_en": "How can I apply for AISSEE 2027?",
-        "q_hi": "मैं एआईएसएसईई 2027 के लिए आवेदन कैसे कर सकता हूं?"
+        "a_en": "The exam is conducted by the National Testing Agency (NTA).",
+        "a_hi": "परीक्षा राष्ट्रीय परीक्षा एजेंसी (एनटीए) द्वारा आयोजित की जाती है।",
+        "q_en": "Who conducts the AISSEE 2027 exam?",
+        "q_hi": "एआईएसएसईई 2027 परीक्षा कौन आयोजित करता है?"
+      },
+      {
+        "a_en": "Admissions are offered for Class VI and Class IX in Sainik Schools and New Sainik Schools.",
+        "a_hi": "सैनिक स्कूलों और नए सैनिक स्कूलों में कक्षा VI और कक्षा IX के लिए प्रवेश दिया जाता है।",
+        "q_en": "What classes are admissions offered for through AISSEE 2027?",
+        "q_hi": "एआईएसएसईई 2027 के माध्यम से किन कक्षाओं के लिए प्रवेश दिया जाता है?"
+      },
+      {
+        "a_en": "The exam is conducted in Pen & Paper mode using OMR sheets with Multiple Choice Questions.",
+        "a_hi": "परीक्षा बहुविकल्पीय प्रश्नों के साथ ओएमआर शीट का उपयोग करके पेन और पेपर मोड में आयोजित की जाती है।",
+        "q_en": "What is the mode of the AISSEE 2027 exam?",
+        "q_hi": "एआईएसएसईई 2027 परीक्षा का तरीका क्या है?"
       }
     ],
     "fees": [],
-    "h1_en": "NTA AISSEE Admission 2027 – Online Form, Eligibility & Dates",
-    "h1_hi": "एनटीए एआईएसएसईई एडमिशन 2027 – ऑनलाइन फॉर्म, योग्यता और तिथियां",
+    "h1_en": "NTA AISSEE Admission 2027 – Online Form, Exam Date 31 Jan",
+    "h1_hi": "एनटीए एआईएसएसईई एडमिशन 2027 – ऑनलाइन फॉर्म, परीक्षा तिथि 31 जन",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official NTA AISSEE website.",
-      "Click on the online application link for AISSEE 2027.",
-      "Register with basic details and generate login credentials.",
-      "Fill out the application form carefully and upload required documents.",
-      "Pay the application fee online and submit the form.",
-      "Download and print the confirmation page for future reference."
+      "Visit the official NTA AISSEE website: https://exams.nta.nic.in/sainik-school-society/",
+      "Read the Information Bulletin carefully before filling out the online application form.",
+      "Register and fill out the online application form with required details.",
+      "Upload necessary documents and pay the application fee online.",
+      "Submit the form and take a printout for future reference."
     ],
     "how_hi": [
-      "आधिकारिक एनटीए एआईएसएसईई वेबसाइट पर जाएं।",
-      "एआईएसएसईई 2027 के लिए ऑनलाइन आवेदन लिंक पर क्लिक करें।",
-      "बुनियादी विवरण के साथ पंजीकरण करें और लॉगिन क्रेडेंशियल जनरेट करें।",
-      "आवेदन पत्र सावधानी से भरें और आवश्यक दस्तावेज अपलोड करें।",
-      "ऑनलाइन आवेदन शुल्क का भुगतान करें और फॉर्म जमा करें।",
-      "भविष्य के संदर्भ के लिए पुष्टिकरण पृष्ठ डाउनलोड करें और प्रिंट करें।"
+      "आधिकारिक एनटीए एआईएसएसईई वेबसाइट पर जाएं: https://exams.nta.nic.in/sainik-school-society/",
+      "ऑनलाइन आवेदन पत्र भरने से पहले सूचना बुलेटिन को ध्यान से पढ़ें।",
+      "पंजीकरण करें और आवश्यक विवरण के साथ ऑनलाइन आवेदन पत्र भरें।",
+      "आवश्यक दस्तावेज अपलोड करें और ऑनलाइन आवेदन शुल्क का भुगतान करें।",
+      "फॉर्म जमा करें और भविष्य के संदर्भ के लिए प्रिंटआउट लें।"
     ],
-    "intro_en": "The National Testing Agency (NTA) has released the notification for the All India Sainik Schools Entrance Examination (AISSEE) 2027. This examination is conducted for admissions to Class 6 and Class 9 in Sainik Schools across the country. Interested and eligible students and parents should read the information bulletin and apply online through the official NTA portal before the last date. Make sure to check the eligibility criteria regarding age and education before submitting the application.",
-    "intro_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने अखिल भारतीय सैनिक स्कूल प्रवेश परीक्षा (एआईएसएसईई) 2027 के लिए अधिसूचना जारी कर दी है। यह परीक्षा देश भर के सैनिक स्कूलों में कक्षा 6 और कक्षा 9 में प्रवेश के लिए आयोजित की जाती है। इच्छुक और योग्य छात्र और अभिभावक अंतिम तिथि से पहले आधिकारिक एनटीए पोर्टल के माध्यम से सूचना विवरणिका पढ़ें और ऑनलाइन आवेदन करें। आवेदन जमा करने से पहले आयु और शिक्षा से संबंधित पात्रता मापदंडों की जांच अवश्य कर लें।",
-    "last_date": null,
+    "intro_en": "The National Testing Agency (NTA) has released a public notice inviting online applications for the All India Sainik Schools Entrance Examination (AISSEE) 2027. This entrance test is conducted for admission to Class VI and Class IX in Sainik Schools and New Sainik Schools across the country for the academic year 2027-28. Online application submission is open from 03 November 2026 to 02 December 2026. Interested candidates and parents should read the information bulletin and apply online through the official website within the stipulated dates.",
+    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने अखिल भारतीय सैनिक स्कूल प्रवेश परीक्षा (एआईएसएसईई) 2027 के लिए ऑनलाइन आवेदन आमंत्रित करते हुए एक सार्वजनिक नोटिस जारी किया है। यह प्रवेश परीक्षा शैक्षणिक वर्ष 2027-28 के लिए देश भर के सैनिक स्कूलों और नए सैनिक स्कूलों में कक्षा VI और कक्षा IX में प्रवेश के लिए आयोजित की जाती है। ऑनलाइन आवेदन जमा करने की प्रक्रिया 03 नवंबर 2026 से 02 दिसंबर 2026 तक खुली है। इच्छुक उम्मीदवारों और अभिभावकों को सूचना बुलेटिन पढ़ना चाहिए और निर्धारित तिथियों के भीतर आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन करना चाहिए।",
+    "last_date": "2026-12-02",
     "mistakes_en": [
-      "Do not wait until the last date to apply online.",
-      "Ensure all uploaded documents are clear and legible."
+      "Entering incorrect details during online submission",
+      "Failing to complete fee transaction before the deadline"
     ],
     "mistakes_hi": [
-      "ऑनलाइन आवेदन करने के लिए अंतिम तिथि तक प्रतीक्षा न करें।",
-      "सुनिश्चित करें कि सभी अपलोड किए गए दस्तावेज स्पष्ट और पठनीय हैं।"
+      "ऑनलाइन जमा करते समय गलत विवरण दर्ज करना",
+      "समय सीमा से पहले शुल्क लेनदेन पूरा करने में विफल रहना"
     ],
-    "not_en": [],
-    "not_hi": [],
-    "notice_date": null,
+    "not_en": [
+      "Candidates who do not meet the educational and age criteria specified in the Information Bulletin"
+    ],
+    "not_hi": [
+      "उम्मीदवार जो सूचना बुलेटिन में निर्दिष्ट शैक्षणिक और आयु मानदंडों को पूरा नहीं करते हैं"
+    ],
+    "notice_date": "2026-11-03",
     "official_site": "https://nta.ac.in/",
     "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Admission for",
-        "label_hi": "प्रवेश के लिए",
-        "value_en": "Class 6 and Class 9",
-        "value_hi": "कक्षा 6 और कक्षा 9"
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Sainik School Class 6 and Class 9 Admission",
+        "value_hi": "सैनिक स्कूल कक्षा 6 और कक्षा 9 प्रवेश"
       },
       {
-        "label_en": "Examination Name",
-        "label_hi": "परीक्षा का नाम",
-        "value_en": "All India Sainik Schools Entrance Examination (AISSEE) 2027",
-        "value_hi": "अखिल भारतीय सैनिक स्कूल प्रवेश परीक्षा (एआईएसएसईई) 2027"
+        "label_en": "Apply online",
+        "label_hi": "ऑनलाइन आवेदन",
+        "value_en": "03 Nov 2026 to 02 Dec 2026",
+        "value_hi": "03 नवंबर 2026 से 02 दिसंबर 2026"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "31 Jan 2027",
+        "value_hi": "31 जनवरी 2027"
       }
     ],
     "salary": [],
     "selection_en": [
-      "Written Entrance Examination (AISSEE 2027)",
-      "Medical Examination",
-      "Document Verification"
+      "All India Sainik Schools Entrance Examination (AISSEE)",
+      "Medical Examination / Counseling as per Sainik Schools Society norms"
     ],
     "selection_hi": [
-      "लिखित प्रवेश परीक्षा (एआईएसएसईई 2027)",
-      "चिकित्सा परीक्षण",
-      "दस्तावेज़ सत्यापन"
+      "अखिल भारतीय सैनिक स्कूल प्रवेश परीक्षा (एआईएसएसईई)",
+      "सैनिक स्कूल सोसाइटी के मानदंडों के अनुसार चिकित्सा परीक्षा / काउंसलिंग"
     ],
     "share_card": {
-      "headline_en": "Online Form",
-      "headline_hi": "ऑनलाइन फॉर्म",
+      "headline_en": "Admission 2027",
+      "headline_hi": "प्रवेश 2027",
       "kind": "job",
-      "line_en": "AISSEE 2027 Admission",
-      "line_hi": "एआईएसएसईई 2027 एडमिशन",
+      "line_en": "AISSEE Class 6 & 9 Admission",
+      "line_hi": "एआईएसएसईई कक्षा 6 और 9 प्रवेश",
       "posts": null
     },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "The National Testing Agency (NTA) has invited online applications for the All India Sainik Schools Entrance Examination (AISSEE) 2027. Eligible candidates seeking admission to Class 6 and Class 9 in Sainik Schools can apply online through the official website.",
-    "summary_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने अखिल भारतीय सैनिक स्कूल प्रवेश परीक्षा (एआईएसएसईई) 2027 के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। सैनिक स्कूलों में कक्षा 6 और कक्षा 9 में प्रवेश के इच्छुक योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
-    "vacancies": [],
+    "summary_en": "Online applications are invited for the All India Sainik Schools Entrance Examination 2027 for admission to Class 6 and Class 9. Eligible candidates should apply online through the official website by 02 December 2026. The exam will be held on 31 January 2027.",
+    "summary_hi": "कक्षा 6 और कक्षा 9 में प्रवेश के लिए अखिल भारतीय सैनिक स्कूल प्रवेश परीक्षा 2027 के लिए ऑनलाइन आवेदन आमंत्रित किए गए हैं। योग्य उम्मीदवार 02 दिसंबर 2026 तक आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन करें। परीक्षा 31 जनवरी 2027 को आयोजित की जाएगी।",
+    "vacancies": [
+      {
+        "detail_en": "Tentative intake is contained in the Information Bulletin hosted on the official website.",
+        "detail_hi": "अस्थायी सीटों का विवरण आधिकारिक वेबसाइट पर उपलब्ध सूचना बुलेटिन में दिया गया है।",
+        "post_en": "Sainik School Class VI and Class IX Admission",
+        "post_hi": "सैनिक स्कूल कक्षा VI और कक्षा IX प्रवेश",
+        "total": null
+      }
+    ],
     "video_url": null,
     "who_en": [
-      "Students seeking admission to Class 6 and Class 9 in Sainik Schools for the academic session 2027"
+      "Students seeking admission to Class 6 or Class 9 in Sainik Schools for the academic year 2027-28"
     ],
     "who_hi": [
-      "शैक्षणिक सत्र 2027 के लिए सैनिक स्कूलों में कक्षा 6 और कक्षा 9 में प्रवेश चाहने वाले छात्र"
+      "शैक्षणिक वर्ष 2027-28 के लिए सैनिक स्कूलों में कक्षा 6 या कक्षा 9 में प्रवेश पाने के इच्छुक छात्र"
     ]
   },
   "pdf": {
@@ -201,11 +305,18 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-03T10:07:34Z",
-  "qual": [],
   "rewrite": true,
   "slug": "nta-aissee-admission-2027-online-form-eligibility-dates",
   "source_id": "nta-home",
   "status": "approved",
   "title": "Inviting Online Application for All India Sainik Schools Entrance Examination(AISSEE)- 2027 reg. Read More",
-  "url": "https://nta.ac.in/Download/Notice/Notice_20261103151121.PDF"
+  "url": "https://nta.ac.in/Download/Notice/Notice_20261103151121.PDF",
+  "verify": {
+    "at": "2026-11-03",
+    "missing": [
+      "Last date: 2026-12-02",
+      "Announcement of exam city: 2027-01-19"
+    ],
+    "tries": 1
+  }
 }

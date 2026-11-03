@@ -1,6 +1,20 @@
 {
   "board_url": "https://kvs.gov.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal circular regarding revision of dearness allowance for existing employees, not a job vacancy or admission notice.",
+    "summary_en": "Kendriya Vidyalaya Sangathan has circulated the Ministry of Finance notification regarding the revision of Dearness Allowance rates for employees.",
+    "summary_hi": "केन्द्रीय विद्यालय संगठन ने कर्मचारियों के लिए महंगाई भत्ते की दरों में संशोधन के संबंध में वित्त मंत्रालय की अधिसूचना जारी की है।",
+    "title_en": "KVS Dearness Allowance Revision Notice",
+    "title_hi": "केन्द्रीय विद्यालय संगठन महंगाई भत्ता संशोधन सूचना",
+    "type": "Update",
+    "vacancies": null
+  },
   "fields": {},
   "first_seen": "2026-11-02T07:30:27+00:00",
   "id": "8975a4f4b667",
@@ -11,7 +25,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "kvs-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "महंगाई भत्ते की दरों में संशोधन के संबंध में। नई",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026110273.pdf"
 }

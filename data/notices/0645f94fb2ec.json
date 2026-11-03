@@ -3,7 +3,7 @@
   "board_url": "https://dsssb.delhi.gov.in/",
   "card": {
     "confidence": "high",
-    "exam_date": null,
+    "exam_date": "2025-11-06",
     "last_date": null,
     "list": true,
     "posts": "Programmer",
@@ -35,74 +35,115 @@
   "org": "DSSSB",
   "page": {
     "after_en": [
-      "Scrutiny of e-dossier documents by the board",
-      "Release of final result and nomination of candidates"
+      "Scrutiny of uploaded e-dossier documents by the board.",
+      "Final selection and declaration of final results based on merit and eligibility."
     ],
     "after_hi": [
-      "बोर्ड द्वारा ई-ड dossier दस्तावेजों की जांच",
-      "अंतिम परिणाम की घोषणा और उम्मीदवारों का नामांकन"
+      "बोर्ड द्वारा अपलोड किए गए ई-ड dossier दस्तावेजों की जांच।",
+      "मेधा और पात्रता के आधार पर अंतिम चयन और अंतिम परिणामों की घोषणा।"
     ],
     "age": [],
     "apply_start": null,
-    "apply_url": "https://dsssbonline.nic.in",
+    "apply_url": null,
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check your roll number in Notice No. 1671",
-      "Keep your OARS login credentials ready",
-      "Scan all required certificates as per guidelines"
+      "Keep scanned copies of all educational, professional, and category certificates ready.",
+      "Check your roll number in the qualified skill test candidates list.",
+      "Upload the e-dossier within the stipulated timeline."
     ],
     "checklist_hi": [
-      "नोटिस संख्या 1671 में अपना रोल नंबर जांचें",
-      "अपने OARS लॉगिन विवरण तैयार रखें",
-      "दिशानिर्देशों के अनुसार सभी आवश्यक प्रमाण पत्र स्कैन करें"
+      "सभी शैक्षणिक, व्यावसायिक और श्रेणी प्रमाण पत्रों की स्कैन की गई प्रतियां तैयार रखें।",
+      "योग्य कौशल परीक्षा उम्मीदवारों की सूची में अपना रोल नंबर जांचें।",
+      "निर्धारित समय सीमा के भीतर ई-ड dossier अपलोड करें।"
     ],
     "conducted_by_en": "Delhi Subordinate Services Selection Board (DSSSB)",
     "conducted_by_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB)",
     "dates": [
       {
-        "label_en": "Notice Date",
-        "label_hi": "नोटिस की तिथि",
+        "label_en": "Advertisement Date",
+        "label_hi": "विज्ञापन तिथि",
+        "value_en": "05 Mar 2024",
+        "value_hi": "05 मार्च 2024"
+      },
+      {
+        "label_en": "Closing Date of Application",
+        "label_hi": "आवेदन की अंतिम तिथि",
+        "value_en": "17 Apr 2024",
+        "value_hi": "17 अप्रैल 2024"
+      },
+      {
+        "label_en": "Tier-I Exam Date",
+        "label_hi": "टियर-I परीक्षा तिथि",
+        "value_en": "06 Nov 2025",
+        "value_hi": "06 नवंबर 2025"
+      },
+      {
+        "label_en": "Skill Test Date",
+        "label_hi": "कौशल परीक्षा तिथि",
+        "value_en": "25 Jul 2026",
+        "value_hi": "25 जुलाई 2026"
+      },
+      {
+        "label_en": "Notice Issue Date",
+        "label_hi": "नोटिस जारी होने की तिथि",
         "value_en": "03 Nov 2026",
-        "value_hi": "03 नवम् 2026"
+        "value_hi": "03 नवंबर 2026"
       }
     ],
     "documents_en": [
-      "Educational qualification certificates",
-      "Age proof",
-      "Category / Caste certificate if applicable",
-      "Identity proof"
+      "Educational Certificates",
+      "Professional / Experience Certificates",
+      "Degree and Mark Sheets",
+      "Caste Certificate",
+      "Proof of Govt. Servant / Ex-Servicemen",
+      "Admit Cards"
     ],
     "documents_hi": [
-      "शैक्षणिक योग्यता प्रमाण पत्र",
-      "आयु प्रमाण",
-      "श्रेणी / जाति प्रमाण पत्र यदि लागू हो",
-      "पहचान प्रमाण"
+      "शैक्षणिक प्रमाण पत्र",
+      "व्यावसायिक / अनुभव प्रमाण पत्र",
+      "डिग्री और अंक पत्र",
+      "जाति प्रमाण पत्र",
+      "सरकारी सेवक / भूतपूर्व सैनिक का प्रमाण",
+      "प्रवेश पत्र"
     ],
-    "eligibility": [],
-    "exam_date": null,
+    "eligibility": [
+      {
+        "label_en": "Skill Test Typing Speed",
+        "label_hi": "कौशल परीक्षा टंकण गति",
+        "value_en": "27 wpm in 10 minutes (15 minutes for PwBD category candidates)",
+        "value_hi": "10 मिनट में 27 शब्द प्रति मिनट (दिव्यांग श्रेणी के उम्मीदवारों के लिए 15 मिनट)"
+      }
+    ],
+    "exam_date": "2025-11-06",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "The e-dossier stage is where candidates shortlisted from the skill test must upload their educational, category, and identity documents online for scrutiny by the board before final selection.",
-        "a_hi": "ई-ड dossier चरण वह है जहाँ कौशल परीक्षा से शॉर्टलिस्ट किए गए उम्मीदवारों को अंतिम चयन से पहले बोर्ड द्वारा जांच के लिए अपने शैक्षणिक, श्रेणी और पहचान के दस्तावेज़ ऑनलाइन अपलोड करने होते हैं।",
-        "q_en": "What is the DSSSB Programmer e-Dossier stage?",
-        "q_hi": "DSSSB प्रोग्रामर ई-ड dossier चरण क्या है?"
+        "a_en": "It is a recruitment process conducted by the Delhi Subordinate Services Selection Board for the post of Programmer in Delhi State Civil Supplies Corporation Limited (DSCSC).",
+        "a_hi": "यह दिल्ली स्टेट सिविल सप्लाईज़ कॉरपोरेशन लिमिटेड (DSCSC) में प्रोग्रामर के पद के लिए दिल्ली अधीनस्थ सेवा चयन बोर्ड द्वारा आयोजित एक भर्ती प्रक्रिया है।",
+        "q_en": "What is DSSSB Programmer Post Code 63/24?",
+        "q_hi": "DSSSB प्रोग्रामर पोस्ट कोड 63/24 क्या है?"
       }
     ],
     "extra": [],
     "faq": [
       {
-        "a_en": "Yes, DSSSB has released the skill test result and shortlisted candidates for e-dossier on 03 November 2026 via Notice No. 1671.",
-        "a_hi": "हाँ, DSSSB ने 03 नवंबर 2026 को नोटिस संख्या 1671 के माध्यम से कौशल परीक्षा परिणाम और ई-ड dossier के लिए शॉर्टलिस्ट किए गए उम्मीदवारों की सूची जारी कर दी है।",
-        "q_en": "Has the DSSSB Programmer Post Code 63/24 skill test result been declared?",
-        "q_hi": "क्या DSSSB प्रोग्रामर पोस्ट कोड 63/24 कौशल परीक्षा परिणाम घोषित कर दिया गया है?"
+        "a_en": "A total of 05 vacancies were advertised for the Programmer post under Post Code 63/24.",
+        "a_hi": "पोस्ट कोड 63/24 के तहत प्रोग्रामर पद के लिए कुल 05 रिक्तियां विज्ञापित की गईं।",
+        "q_en": "How many vacancies were advertised for DSSSB Programmer Post Code 63/24?",
+        "q_hi": "DSSSB प्रोग्रामर पोस्ट कोड 63/24 के लिए कुल कितनी रिक्तियां विज्ञापित की गईं?"
       },
       {
-        "a_en": "You can check the list of shortlisted candidates in Notice No. 1671 available on the official DSSSB website.",
-        "a_hi": "आप आधिकारिक DSSSB वेबसाइट पर उपलब्ध नोटिस संख्या 1671 में शॉर्टलिस्ट किए गए उम्मीदवारों की सूची देख सकते हैं।",
-        "q_en": "Where can I check the list of shortlisted candidates?",
-        "q_hi": "मैं शॉर्टलिस्ट किए गए उम्मीदवारों की सूची कहाँ देख सकता हूँ?"
+        "a_en": "A total of 67 candidates have provisionally qualified the skill test.",
+        "a_hi": "कुल 67 उम्मीदवारों ने अनंतिम रूप से कौशल परीक्षा उत्तीर्ण की है।",
+        "q_en": "How many candidates qualified the skill test for Programmer Post Code 63/24?",
+        "q_hi": "प्रोग्रामर पोस्ट कोड 63/24 के लिए कितने उम्मीदवारों ने कौशल परीक्षा उत्तीर्ण की?"
+      },
+      {
+        "a_en": "The required typing speed is 27 wpm in 10 minutes (15 minutes for PwBD category candidates).",
+        "a_hi": "आवश्यक टंकण गति 10 मिनट में 27 शब्द प्रति मिनट है (दिव्यांग श्रेणी के उम्मीदवारों के लिए 15 मिनट)।",
+        "q_en": "What is the typing speed required for the skill test?",
+        "q_hi": "कौशल परीक्षा के लिए आवश्यक टंकण गति क्या है?"
       }
     ],
     "fees": [],
@@ -110,28 +151,34 @@
     "h1_hi": "DSSSB प्रोग्रामर रिज़ल्ट 2026 – पोस्ट कोड 63/24 कौशल परीक्षा सूची",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official DSSSB website at dsssb.delhi.gov.in",
-      "Click on the results or circulars section and open Notice No. 1671",
-      "Check your roll number in the shortlisted candidates list for e-dossier",
-      "Login to the OARS module to upload your e-dossier documents if shortlisted"
+      "Log in to your individual account in the OARS module on the official DSSSB website.",
+      "Access the e-dossier link during the active submission window.",
+      "Upload all requisite documents including educational certificates, professional/experience certificates, degrees, mark sheets, caste certificates, and admit cards.",
+      "Submit the e-dossier before the closing date to avoid rejection of candidature."
     ],
     "how_hi": [
-      "आधिकारिक DSSSB वेबसाइट dsssb.delhi.gov.in पर जाएं",
-      "परिणाम या परिपत्र अनुभाग पर क्लिक करें और नोटिस संख्या 1671 खोलें",
-      "ई-ड dossier के लिए शॉर्टलिस्ट किए गए उम्मीदवारों की सूची में अपना रोल नंबर जांचें",
-      "यदि शॉर्टलिस्ट किया गया है, तो अपने ई-ड dossier दस्तावेज़ अपलोड करने के लिए OARS मॉड्यूल में लॉगिन करें"
+      "आधिकारिक डीएसएसएसबी वेबसाइट पर ओएआरएस मॉड्यूल में अपने व्यक्तिगत खाते में लॉगिन करें।",
+      "सक्रिय सबमिशन विंडो के दौरान ई-ड dossier लिंक तक पहुंचें।",
+      "शैक्षणिक प्रमाण पत्र, व्यावसायिक/अनुभव प्रमाण पत्र, डिग्री, अंक पत्र, जाति प्रमाण पत्र और प्रवेश पत्र सहित सभी आवश्यक दस्तावेज अपलोड करें।",
+      "उम्मीदवारी की अस्वीकृति से बचने के लिए अंतिम तिथि से पहले ई-ड dossier जमा करें।"
     ],
-    "intro_en": "The Delhi Subordinate Services Selection Board (DSSSB) has announced the result of the skill test and shortlisted candidates for the e-dossier for the post of Programmer under Post Code 63/24 in DSCSC. Candidates who appeared for the skill test can verify their results and shortlisted status from the official notice. Shortlisted candidates are required to upload their e-dossiers within the stipulated time frame.",
-    "intro_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने DSCSC में पोस्ट कोड 63/24 के तहत प्रोग्रामर के पद के लिए कौशल परीक्षा का परिणाम और ई-ड dossier के लिए शॉर्टलिस्ट किए गए उम्मीदवारों की घोषणा कर दी है। कौशल परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक नोटिस से अपने परिणाम और शॉर्टलिस्ट किए गए स्टेटस की जांच कर सकते हैं।",
+    "intro_en": "The Delhi Subordinate Services Selection Board (DSSSB) has announced the result of the skill test and shortlisted candidates for e-dossier submission for the post of Programmer under Post Code 63/24 in Delhi State Civil Supplies Corporation Limited (DSCSC). A total of 67 candidates have qualified the skill test, and candidates meeting the cutoff have been provisionally shortlisted for e-dossier. Qualified candidates must upload their certificates and mark sheets through the OARS module within the active window.",
+    "intro_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने दिल्ली स्टेट सिविल सप्लाईज़ कॉरपोरेशन लिमिटेड (DSCSC) में पोस्ट कोड 63/24 के तहत प्रोग्रामर के पद के लिए कौशल परीक्षा का परिणाम और ई-ड dossier जमा करने के लिए शॉर्टलिस्ट किए गए उम्मीदवारों की घोषणा कर दी है। कुल 67 उम्मीदवारों ने कौशल परीक्षा उत्तीर्ण की है, और कटऑफ को पूरा करने वाले उम्मीदवारों को ई-ड dossier के लिए अनंतिम रूप से शॉर्टलिस्ट किया गया है। योग्य उम्मीदवारों को सक्रिय विंडो के भीतर ओएआरएस मॉड्यूल के माध्यम से अपने प्रमाण पत्र और अंक पत्र अपलोड करने होंगे।",
     "last_date": null,
     "mistakes_en": [
-      "Failing to upload the e-dossier within the specified timeline"
+      "Failing to upload all applicable documents within the active window.",
+      "Failing to report technical glitches in the OARS module within 48 hours of the expiry of the submission period with supporting screenshots."
     ],
     "mistakes_hi": [
-      "निर्धारित समय सीमा के भीतर ई-ड dossier अपलोड करने में विफल रहना"
+      "सक्रिय विंडो के भीतर सभी लागू दस्तावेजों को अपलोड करने में विफल रहना।",
+      "सहायक स्क्रीनशॉट के साथ सबमिशन अवधि समाप्त होने के 48 घंटों के भीतर ओएआरएस मॉड्यूल में तकनीकी खराबी की रिपोर्ट करने में विफल रहना।"
     ],
-    "not_en": [],
-    "not_hi": [],
+    "not_en": [
+      "Candidates who fail to upload their e-dossier documents within the stipulated time period will have their candidature rejected."
+    ],
+    "not_hi": [
+      "जो उम्मीदवार निर्धारित समय अवधि के भीतर अपने ई-ड dossier दस्तावेज अपलोड करने में विफल रहते हैं, उनकी उम्मीदवारी खारिज कर दी जाएगी।"
+    ],
     "notice_date": "2026-11-03",
     "official_site": "https://dsssb.delhi.gov.in/",
     "physical": [],
@@ -139,7 +186,7 @@
     "rows": [
       {
         "label_en": "Post Name",
-        "label_hi": "पद का नाम",
+        "label_hi": "प्रेड का नाम",
         "value_en": "Programmer",
         "value_hi": "प्रोग्रामर"
       },
@@ -152,18 +199,40 @@
       {
         "label_en": "Department",
         "label_hi": "विभाग",
-        "value_en": "DSCSC",
-        "value_hi": "DSCSC"
+        "value_en": "Delhi State Civil Supplies Corporation Limited (DSCSC)",
+        "value_hi": "दिल्ली स्टेट सिविल सप्लाईज़ कॉरपोरेशन लिमिटेड (DSCSC)"
+      },
+      {
+        "label_en": "Total Vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "05",
+        "value_hi": "05"
+      },
+      {
+        "label_en": "Tier-I Exam Date",
+        "label_hi": "टियर-I परीक्षा तिथि",
+        "value_en": "06 Nov 2025",
+        "value_hi": "06 नव 2025"
+      },
+      {
+        "label_en": "Skill Test Date",
+        "label_hi": "कौशल परीक्षा तिथि",
+        "value_en": "25 Jul 2026",
+        "value_hi": "25 जुला 2026"
       }
     ],
     "salary": [],
     "selection_en": [
-      "Skill Test",
-      "e-Dossier Verification"
+      "Online Tier-I Examination (Objective-MCQ)",
+      "Skill Test (Typing test)",
+      "Shortlisting for e-dossier based on Tier-I marks and skill test qualification",
+      "Document Verification / Final Selection"
     ],
     "selection_hi": [
-      "कौशल परीक्षा",
-      "ई-ड dossier सत्यापन"
+      "ऑनलाइन टियर-I परीक्षा (वस्तुनिष्ठ-एमसीक्यू)",
+      "कौशल परीक्षा (टंकण परीक्षा)",
+      "टियर-I अंकों और कौशल परीक्षा योग्यता के आधार पर ई-ड dossier के लिए शॉर्टलिस्टिंग",
+      "दस्तावेज़ सत्यापन / अंतिम चयन"
     ],
     "share_card": {
       "headline_en": "Skill Test Result",
@@ -171,19 +240,27 @@
       "kind": "result",
       "line_en": "Programmer Post Code 63/24",
       "line_hi": "प्रोग्रामर पोस्ट कोड 63/24",
-      "posts": null
+      "posts": 5
     },
-    "status_en": "Skill test result declared and candidates shortlisted for e-dossier",
-    "status_hi": "कौशल परीक्षा परिणाम घोषित और उम्मीदवार ई-ड dossier के लिए शॉर्टलिस्ट किए गए",
-    "summary_en": "DSSSB has released the skill test result and shortlisted candidates for e-dossier for the post of Programmer under Post Code 63/24 in DSCSC. Qualified candidates must submit their e-dossiers online through the official portal. Check your roll number and details in the official notice.",
-    "summary_hi": "DSSSB ने डीएसएससीएससी में पोस्ट कोड 63/24 के तहत प्रोग्रामर के पद के लिए कौशल परीक्षा का परिणाम और ई-ड dossier के लिए शॉर्टलिस्ट किए गए उम्मीदवारों को जारी कर दिया है। योग्य उम्मीदवारों को आधिकारिक पोर्टल के माध्यम से अपना ई-ड dossier ऑनलाइन जमा करना होगा।",
-    "vacancies": [],
+    "status_en": "Skill test result declared and e-dossier shortlisting announced",
+    "status_hi": "कौशल परीक्षा परिणाम घोषित और ई-ड dossier शॉर्टलिस्टिंग की घोषणा की गई",
+    "summary_en": "DSSSB has released the skill test result and shortlisted candidates for e-dossier for the post of Programmer under Post Code 63/24 in DSCSC. Qualified candidates must upload their e-dossier documents within the specified dates.",
+    "summary_hi": "DSSSB ने डीएसएससीएससी में पोस्ट कोड 63/24 के तहत प्रोग्रामर के पद के लिए कौशल परीक्षा का परिणाम और ई-ड dossier के लिए शॉर्टलिस्ट किए गए उम्मीदवारों को जारी कर दिया है। योग्य उम्मीदवारों को निर्धारित तिथियों के भीतर अपने ई-ड dossier दस्तावेज अपलोड करने होंगे।",
+    "vacancies": [
+      {
+        "detail_en": "UR 04, OBC 01 (including PwBD Cat (b) 01)",
+        "detail_hi": "सामान्य 04, अन्य पिछड़ा वर्ग 01 (दिव्यांग श्रेणी (b) 01 सहित)",
+        "post_en": "Programmer (Post Code 63/24)",
+        "post_hi": "प्रोग्रामर (पोस्ट कोड 63/24)",
+        "total": "05"
+      }
+    ],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the Programmer Post Code 63/24 skill test"
+      "Candidates who appeared for the Programmer Post Code 63/24 Tier-I exam and skill test."
     ],
     "who_hi": [
-      "प्रोग्रामर पोस्ट कोड 63/24 कौशल परीक्षा में शामिल होने वाले उम्मीदवार"
+      "वे उम्मीदवार जो प्रोग्रामर पोस्ट कोड 63/24 टियर-I परीक्षा और कौशल परीक्षा में शामिल हुए थे।"
     ]
   },
   "pdf": {
@@ -193,10 +270,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-03T11:37:17Z",
-  "qual": [
-    "graduate"
-  ],
-  "rewrite": true,
   "slug": "dsssb-programmer-result-2026-post-code-63-24-skill-test-list",
   "source_id": "dsssb-home",
   "status": "approved",
