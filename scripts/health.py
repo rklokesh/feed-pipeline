@@ -93,6 +93,14 @@ def main():
                       ", ".join(f"{g['board']} ({g['mentions']})" for g in gaps[:15]), ""]
         for n in r.get("notes") or []:
             lines.append(f"_radar: {n}_")
+    ver = ROOT / "reports/verify.txt"
+    if ver.exists():
+        v = ver.read_text().strip().split("\n")
+        lines += ["**Accuracy check:** " + v[0].split(": ", 1)[-1]]
+        held = [x for x in v[1:] if "HELD" in x]
+        if held:
+            lines += ["Held back (a key fact on the page is not in the official PDF) - fix and add **approve** to its issue:"] + held[:10]
+        lines.append("")
     body = "\n".join(lines)
     print(body)
 

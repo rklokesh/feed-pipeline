@@ -91,6 +91,8 @@ Answer with ONE JSON object:
  "notice_date": "YYYY-MM-DD: the date the board issued THIS notice (e.g. 'Dated: 08.10.2026', 'Date of publication', the date
                  printed at the top or bottom of the notice / press note). Not the exam date, not the last date. null if not printed.",
  "apply_start": "YYYY-MM-DD or null", "last_date": "YYYY-MM-DD or null (last date to apply)", "exam_date": "YYYY-MM-DD or null",
+                 // every date only when the notice prints that exact day. "September 2026" or "tentatively in August" -> null
+                 // (say the month in words in the dates list instead). Never turn a month into the 1st of that month.
  "apply_url": "official application URL or null", "official_site": "official website URL or null",
  "hindi_notice_url": "URL of the official Hindi version of this notice if it is printed in the text, else null",
  "video_url": "URL of an official how-to-apply / instructions video if it is printed in the text, else null",

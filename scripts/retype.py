@@ -46,6 +46,8 @@ def fix(n) -> str:
     typ, t = c.get("type") or "Job", title(n)
     if ADMISSION.search(t):
         return "Admission"
+    if typ == "Admission":                     # the AI sometimes files eligibility tests (UGC-NET, CTET) here:
+        typ = "Job"                            # judge them by the job rules below
     if typ != "Job":
         return typ
     if RESULT.search(t):
