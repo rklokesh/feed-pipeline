@@ -44,7 +44,7 @@
       "Candidates shortlisted in the recruitment test will be called for an interview based on eligibility and suitability standards."
     ],
     "after_hi": [
-      "भर्ती परीक्षा में शॉर्टलिस्ट किए गए उम्मीदवारों को पात्रता और उपयुक्तता मानकों के आधार पर साक्षात्कार के लिए बुलाया जाएगा।"
+      "भर्ती परीक्षा में शॉर्टलिस्ट किए जाने वाले और पात्रता शर्तों को पूरा करने वाले उम्मीदवारों को साक्षात्कार के लिए बुलाया जाएगा।"
     ],
     "age": [],
     "apply_start": null,
@@ -52,15 +52,17 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Download e-admit card three weeks before the exam.",
-      "Check allotted test center and reporting time."
+      "Note down your test centre code",
+      "Download e-admit card three weeks prior to exam",
+      "Review the syllabus including Constitution of India, Bharatiya Nyaya Sanhita, and other acts"
     ],
     "checklist_hi": [
-      "परीक्षा से तीन हफ्ते पहले ई-एडमिट कार्ड डाउनलोड करें।",
-      "आवंटित परीक्षा केंद्र और रिपोर्टिंग समय की जांच करें।"
+      "अपना परीक्षा केंद्र कोड नोट कर लें",
+      "परीक्षा से तीन सप्ताह पहले ई-एडमिट कार्ड डाउनलोड करें",
+      "भारत के संविधान, भारतीय न्याय संहिता और अन्य अधिनियमों सहित पाठ्यक्रम की समीक्षा करें"
     ],
     "conducted_by_en": "Union Public Service Commission (UPSC)",
-    "conducted_by_hi": "संघ लोक सेवा आयोग (UPSC)",
+    "conducted_by_hi": "संघ लोक सेवा आयोग",
     "dates": [
       {
         "label_en": "Recruitment test date",
@@ -69,9 +71,9 @@
         "value_hi": "09 जन 2027"
       },
       {
-        "label_en": "Admit card release",
-        "label_hi": "एडमिट कार्ड जारी होने की तिथि",
-        "value_en": "Three weeks prior to exam date",
+        "label_en": "Admit Card Release",
+        "label_hi": "एडमिट कार्ड जारी होना",
+        "value_en": "Three weeks prior to the exam date",
         "value_hi": "परीक्षा तिथि से तीन सप्ताह पहले"
       }
     ],
@@ -83,14 +85,6 @@
       "ई-एडमिट कार्ड",
       "फोटो पहचान प्रमाण"
     ],
-    "eligibility": [
-      {
-        "label_en": "Nationality / Eligibility",
-        "label_hi": "राष्ट्रीयता / पात्रता",
-        "value_en": "As per respective advertisement conditions",
-        "value_hi": "संबंधित विज्ञापन शर्तों के अनुसार"
-      }
-    ],
     "exam_date": "2027-01-09",
     "exam_pattern": [
       {
@@ -101,9 +95,9 @@
         "time": "2 hours"
       },
       {
-        "marks": "Equal marks for all",
-        "part_en": "Type of Questions",
-        "part_hi": "प्रश्न के प्रकार",
+        "marks": "",
+        "part_en": "Question Type",
+        "part_hi": "प्रश्न प्रकार",
         "questions": "",
         "time": ""
       },
@@ -124,44 +118,56 @@
     ],
     "explain": [
       {
-        "a_en": "It is an offline recruitment test conducted by the UPSC to shortlist candidates for various legal, adviser, prosecutor, and law officer posts across different ministries and departments.",
-        "a_hi": "यह विभिन्न मंत्रालयों और विभागों में विभिन्न विधिक, सलाहकार, अभियोजक और विधि अधिकारी पदों के लिए उम्मीदवारों को शॉर्टलिस्ट करने के लिए यूपीएससी द्वारा आयोजित एक ऑफलाइन भर्ती परीक्षा है।",
-        "q_en": "What is the UPSC Combined Legal Recruitment Test?",
-        "q_hi": "संघ लोक सेवा आयोग संयुक्त विधिक भर्ती परीक्षा क्या है?"
+        "a_en": "It is an offline pen-and-paper-based exam conducted by the Union Public Service Commission to shortlist candidates for various legal and prosecutor posts across different ministries and departments.",
+        "a_hi": "यह विभिन्न मंत्रालयों और विभागों में विभिन्न विधिक और अभियोजक पदों के लिए उम्मीदवारों को शॉर्टलिस्ट करने के लिए संघ लोक सेवा आयोग द्वारा आयोजित एक ऑफलाइन पेन-एंड-पेपर आधारित परीक्षा है।",
+        "q_en": "What is the UPSC Combined Legal Posts Recruitment Test?",
+        "q_hi": "यूपीएससी संयुक्त विधिक पद भर्ती परीक्षा क्या है?"
       }
     ],
     "extra": [
       {
         "label_en": "Weightage",
-        "label_hi": "वेटेज",
+        "label_hi": "वेवेटेज",
         "value_en": "Recruitment Test and Interview carry a 75:25 weightage",
         "value_hi": "भर्ती परीक्षा और साक्षात्कार का वेटेज 75:25 है"
+      },
+      {
+        "label_en": "Minimum Suitability for Interview",
+        "label_hi": "साक्षात्कार के लिए न्यूनतम उपयुक्तता",
+        "value_en": "General/EWS: 50+, OBC: 45+, SC/ST/PwBD: 40+",
+        "value_hi": "सामान्य/ईडब्ल्यूएस: 50+, ओबीसी: 45+, एससी/एसटी/दिव्यांग: 40+"
       }
     ],
     "faq": [
       {
         "a_en": "The recruitment test is scheduled for 09 January 2027 from 02:00 PM to 04:00 PM.",
         "a_hi": "भर्ती परीक्षा 09 जनवरी 2027 को दोपहर 02:00 बजे से शाम 04:00 बजे तक निर्धारित है।",
-        "q_en": "When is the UPSC Combined Legal Recruitment Test 2027 scheduled?",
-        "q_hi": "संघ लोक सेवा आयोग संयुक्त विधिक भर्ती परीक्षा 2027 कब निर्धारित है?"
+        "q_en": "When is the UPSC Combined Legal Posts Recruitment Test scheduled?",
+        "q_hi": "यूपीएससी संयुक्त विधिक पद भर्ती परीक्षा कब निर्धारित है?"
       },
       {
-        "a_en": "The test duration is 2 hours, and the medium of the test is English only.",
-        "a_hi": "परीक्षा की अवधि 2 घंटे है, और परीक्षा का माध्यम केवल अंग्रेजी है।",
-        "q_en": "What is the duration and medium of the test?",
-        "q_hi": "परीक्षा की अवधि और माध्यम क्या है?"
+        "a_en": "The medium of the test will be English only.",
+        "a_hi": "परीक्षा का माध्यम केवल अंग्रेजी होगा।",
+        "q_en": "What is the medium of the UPSC Combined Legal Posts examination?",
+        "q_hi": "यूपीएससी संयुक्त विधिक पद परीक्षा का माध्यम क्या होगा?"
       },
       {
         "a_en": "Yes, every wrong answer carries a deduction of one-third of the marks assigned to that question.",
-        "a_hi": "हाँ, प्रत्येक गलत उत्तर के लिए उस प्रश्न के लिए निर्धारित अंकों का एक तिहाई काटा जाएगा।",
-        "q_en": "Is there negative marking in the test?",
-        "q_hi": "क्या परीक्षा में नकारात्मक अंकन है?"
+        "a_hi": "हाँ, प्रत्येक गलत उत्तर के लिए उस प्रश्न के लिए निर्धारित अंकों का एक-तिहाई हिस्सा काटा जाएगा।",
+        "q_en": "Is there negative marking in the UPSC Combined Legal Posts exam?",
+        "q_hi": "क्या यूपीएससी संयुक्त विधिक पद परीक्षा में नकारात्मक अंकन है?"
       },
       {
         "a_en": "E-admit cards will be released three weeks prior to the date of the recruitment test.",
         "a_hi": "भर्ती परीक्षा की तिथि से तीन सप्ताह पहले ई-एडमिट कार्ड जारी किए जाएंगे।",
         "q_en": "When will the e-admit cards be released?",
         "q_hi": "ई-एडमिट कार्ड कब जारी किए जाएंगे?"
+      },
+      {
+        "a_en": "The Recruitment Test and Interview carry a weightage of 75:25 respectively.",
+        "a_hi": "भर्ती परीक्षा और साक्षात्कार का वेटेज क्रमशः 75:25 है।",
+        "q_en": "What is the weightage of the Recruitment Test and Interview?",
+        "q_hi": "भर्ती परीक्षा और साक्षात्कार का वेटेज क्या है?"
       }
     ],
     "fees": [],
@@ -169,21 +175,21 @@
     "h1_hi": "संघ लोक सेवा आयोग संयुक्त विधिक भर्ती परीक्षा तिथि 2027 – परीक्षा सूचना",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official UPSC website to download the e-admit card when released.",
-      "Check the exam center code and report to the allotted center on 09.01.2027."
+      "Download the e-admit card from the official UPSC website three weeks prior to the exam date.",
+      "Check the allotted test centre code and reach the exam venue on 09 January 2027."
     ],
     "how_hi": [
-      "जारी होने पर ई-एडमिट कार्ड डाउनलोड करने के लिए आधिकारिक यूपीएससी वेबसाइट पर जाएं।",
-      "परीक्षा केंद्र कोड की जांच करें और 09.01.2027 को आवंटित केंद्र पर रिपोर्ट करें।"
+      "परीक्षा तिथि से तीन सप्ताह पहले आधिकारिक यूपीएससी वेबसाइट से ई-एडमिट कार्ड डाउनलोड करें।",
+      "आवंटित परीक्षा केंद्र कोड की जांच करें और 09 जनवरी 2027 को परीक्षा केंद्र पर पहुंचें।"
     ],
-    "intro_en": "The Union Public Service Commission (UPSC) has issued an addendum notice regarding the Combined Recruitment Test for various legal posts including Legal Adviser, Public Prosecutor, Company Prosecutor, and Law Officer. The offline pen and paper based recruitment test is scheduled for 09 January 2027 from 02:00 PM to 04:00 PM. E-Admit cards will be released three weeks prior to the exam date. Candidates shortlisted in the recruitment test based on the 75:25 weightage criteria along with interview suitability standards will be called for the next stage.",
-    "intro_hi": "संघ लोक सेवा आयोग (UPSC) ने विधिक सलाहकार, लोक अभियोजक, कंपनी अभियोजक और विधि अधिकारी सहित विभिन्न विधिक पदों के लिए संयुक्त भर्ती परीक्षा के संबंध में एक नोटिस जारी किया है। ऑफलाइन पेन और पेपर आधारित भर्ती परीक्षा 09 जनवरी 2027 को दोपहर 02:00 बजे से शाम 04:00 बजे तक निर्धारित है। ई-एडमिट कार्ड परीक्षा की तिथि से तीन सप्ताह पहले जारी किए जाएंगे। भर्ती परीक्षा में शॉर्टलिस्ट किए गए उम्मीदवारों को साक्षात्कार के अगले चरण के लिए बुलाया जाएगा।",
+    "intro_en": "The Union Public Service Commission (UPSC) has released an addendum notice regarding the Combined Recruitment Test for various legal posts including Assistant Legal Adviser, Public Prosecutor, Law Officer, Examiner of Trade Marks, and other positions across different ministries and departments. The offline pen-and-paper-based recruitment test is scheduled to be held on 09 January 2027 from 02:00 PM to 04:00 PM. Candidates who have applied for these posts should check the exam scheme, syllabus, and test centres provided in the notice. E-admit cards will be released three weeks prior to the examination date.",
+    "intro_hi": "संघ लोक सेवा आयोग (UPSC) ने विभिन्न मंत्रालयों और विभागों के अंतर्गत सहायक विधिक सलाहकार, लोक अभियोजक, विधि अधिकारी, ट्रेड मार्क्स परीक्षक और अन्य पदों के लिए संयुक्त भर्ती परीक्षा के संबंध में एक एडेंडम नोटिस जारी किया है। ऑफलाइन पेन-एंड-पेपर आधारित भर्ती परीक्षा 09 जनवरी 2027 को दोपहर 02:00 बजे से शाम 04:00 बजे तक आयोजित की जाएगी। इन पदों के लिए आवेदन करने वाले उम्मीदवार नोटिस में दी गई परीक्षा योजना, पाठ्यक्रम और परीक्षा केंद्रों की जांच कर सकते हैं। परीक्षा की तारीख से तीन हफ्ते पहले ई-एडमिट कार्ड जारी किए जाएंगे।",
     "last_date": null,
     "mistakes_en": [
-      "Do not expect a change of test center, as requests will not be entertained."
+      "Do not expect requests for change of test centre to be entertained."
     ],
     "mistakes_hi": [
-      "परीक्षा केंद्र बदलने का अनुरोध स्वीकार नहीं किया जाएगा।"
+      "परीक्षा केंद्र बदलने के किसी भी अनुरोध पर विचार नहीं किया जाएगा।"
     ],
     "not_en": [],
     "not_hi": [],
@@ -199,89 +205,165 @@
         "value_hi": "09 जन 2027"
       },
       {
-        "label_en": "Exam timing",
-        "label_hi": "परीक्षा का समय",
+        "label_en": "Exam Time",
+        "label_hi": "परीक्षा समय",
         "value_en": "02:00 PM to 04:00 PM",
-        "value_hi": "दोपहर 02:00 बजे से शाम 04:00 बजे तक"
+        "value_hi": "दोपहर 02:00 से शाम 04:00 बजे तक"
       },
       {
-        "label_en": "Total posts",
-        "label_hi": "कुल पद",
-        "value_en": "Various legal posts across ministries",
-        "value_hi": "विभिन्न मंत्रालयों में विभिन्न विधिक पद"
+        "label_en": "Total Vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "313",
+        "value_hi": "313"
+      },
+      {
+        "label_en": "Selection Process",
+        "label_hi": "चयन प्रक्रिया",
+        "value_en": "Recruitment Test (75%) and Interview (25%)",
+        "value_hi": "भर्ती परीक्षा (75%) और साक्षात्कार (25%)"
       }
     ],
     "salary": [],
     "selection_en": [
-      "Offline Pen and Paper Based Recruitment Test (RT)",
+      "Offline Pen and Paper Based Combined Recruitment Test (RT)",
       "Interview"
     ],
     "selection_hi": [
-      "ऑफलाइन पेन और पेपर आधारित भर्ती परीक्षा",
+      "ऑफलाइन पेन और पेपर आधारित संयुक्त भर्ती परीक्षा",
       "साक्षात्कार"
     ],
     "share_card": {
       "headline_en": "Exam Date 2027",
       "headline_hi": "परीक्षा तिथि 2027",
       "kind": "job",
-      "line_en": "Legal Recruitment Test",
-      "line_hi": "विधिक भर्ती परीक्षा",
-      "posts": null
+      "line_en": "Combined Legal Posts",
+      "line_hi": "संयुक्त विधिक पद",
+      "posts": 313
     },
-    "status_en": "Exam date announced",
-    "status_hi": "परीक्षा तिथि घोषित",
-    "summary_en": "UPSC has announced the offline pen and paper based Combined Recruitment Test for various legal and prosecution posts to be held on 09.01.2027. Candidates who applied for these posts should check their exam date, timing, syllabus, and test centres.",
-    "summary_hi": "संघ लोक सेवा आयोग ने विभिन्न विधिक पदों के लिए 09.01.2027 को आयोजित होने वाली ऑफलाइन पेन और पेपर आधारित संयुक्त भर्ती परीक्षा की घोषणा कर दी है। इन पदों के लिए आवेदन करने वाले उम्मीदवार अपनी परीक्षा तिथि, समय, पाठ्यक्रम और परीक्षा केंद्र देख सकते हैं।",
+    "status_en": "Exam date and syllabus announced",
+    "status_hi": "परीक्षा तिथि और पाठ्यक्रम घोषित",
+    "summary_en": "The Union Public Service Commission has announced the exam date, syllabus, and scheme for the offline combined recruitment test for various legal posts to be held on 09.01.2027.",
+    "summary_hi": "संघ लोक सेवा आयोग ने विभिन्न विधिक पदों के लिए 09.01.2027 को आयोजित होने वाली संयुक्त भर्ती परीक्षा की तिथि, पाठ्यक्रम और परीक्षा योजना की घोषणा कर दी है।",
     "vacancies": [
       {
         "detail_en": "UR-02",
         "detail_hi": "अनारक्षित-02",
-        "post_en": "Additional Legal Adviser (Department of Legal Affairs)",
-        "post_hi": "अतिरिक्त विधिक सलाहकार (विधि और न्याय मंत्रालय)",
+        "post_en": "Additional Legal Adviser",
+        "post_hi": "अतिरिक्त विधिक सलाहकार",
         "total": "2"
       },
       {
-        "detail_en": "UR-09, EWS-02, OBC-03, SC-01, ST-01 (PwBD-01)",
-        "detail_hi": "अनारक्षित-09, ईडब्ल्यूएस-02, ओबीसी-03, एससी-01, एसटी-01 (दिव्यांग-01)",
-        "post_en": "Assistant Legal Adviser (Department of Legal Affairs)",
-        "post_hi": "सहायक विधिक सलाहकार (विधि और न्याय मंत्रालय)",
+        "detail_en": "UR-09, EWS-02, OBC-03, SC-01, ST-01, PwBD-01",
+        "detail_hi": "अनारक्षित-09, ईडब्ल्यूएस-02, ओबीसी-03, एससी-01, एसटी-01, दिव्यांग-01",
+        "post_en": "Assistant Legal Adviser (Dept of Legal Affairs)",
+        "post_hi": "सहायक विधिक सलाहकार (विधि मामलों का विभाग)",
         "total": "16"
       },
       {
-        "detail_en": "UR-08, EWS-01, OBC-01, SC-01, ST-01 (PwBD-01)",
-        "detail_hi": "अनारक्षित-08, ईडब्ल्यूएस-01, ओबीसी-01, एससी-01, एसटी-01 (दिव्यांग-01)",
-        "post_en": "Deputy Legal Adviser (Department of Legal Affairs)",
-        "post_hi": "उप विधिक सलाहकार (विधि और न्याय मंत्रालय)",
+        "detail_en": "UR-08, EWS-01, OBC-01, SC-01, ST-01, PwBD-01",
+        "detail_hi": "अनारक्षित-08, ईडब्ल्यूएस-01, ओबीसी-01, एससी-01, एसटी-01, दिव्यांग-01",
+        "post_en": "Deputy Legal Adviser",
+        "post_hi": "उप विधिक सलाहकार",
         "total": "12"
       },
       {
-        "detail_en": "UR-48, EWS-09, OBC-20, SC-17, ST-06 (PwBD-08)",
-        "detail_hi": "अनारक्षित-48, ईडब्ल्यूएस-09, ओबीसी-20, एससी-17, एसटी-06 (दिव्यांग-08)",
+        "detail_en": "UR-04, ST-01",
+        "detail_hi": "अनारक्षित-04, एसटी-01",
+        "post_en": "Additional Government Advocate",
+        "post_hi": "अतिरिक्त सरकारी अधिवक्ता",
+        "total": "5"
+      },
+      {
+        "detail_en": "UR-01",
+        "detail_hi": "अनारक्षित-01",
+        "post_en": "Assistant Government Advocate",
+        "post_hi": "सहायक सरकारी अधिवक्ता",
+        "total": "1"
+      },
+      {
+        "detail_en": "UR-02",
+        "detail_hi": "अनारक्षित-02",
+        "post_en": "Deputy Government Advocate",
+        "post_hi": "उप सरकारी अधिवक्ता",
+        "total": "2"
+      },
+      {
+        "detail_en": "UR-48, EWS-09, OBC-20, SC-17, ST-06, PwBD-08",
+        "detail_hi": "अनारक्षित-48, ईडब्ल्यूएस-09, ओबीसी-20, एससी-17, एसटी-06, दिव्यांग-08",
         "post_en": "Examiner of Trade Marks & Geographical Indications",
         "post_hi": "ट्रेड मार्क्स और भौगोलिक संकेत परीक्षक",
         "total": "100"
       },
       {
-        "detail_en": "UR-50, EWS-14, OBC-37, SC-30, ST-09 (PwBD-08)",
-        "detail_hi": "अनारक्षित-50, ईडब्ल्यूएस-14, ओबीसी-37, एससी-30, एसटी-09 (दिव्यांग-08)",
-        "post_en": "Assistant Public Prosecutor (Government of NCT of Delhi)",
-        "post_hi": "सहायक लोक अभियोजक (राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार)",
+        "detail_en": "OBC-01",
+        "detail_hi": "ओबीसी-01",
+        "post_en": "Prosecutor in SFIO",
+        "post_hi": "अभियोजक एसएफआईओ",
+        "total": "1"
+      },
+      {
+        "detail_en": "UR-06, EWS-01, OBC-03, SC-01, ST-01, PwBD-01",
+        "detail_hi": "अनारक्षित-06, ईडब्ल्यूएस-01, ओबीसी-03, एससी-01, एसटी-01, दिव्यांग-01",
+        "post_en": "Assistant Legal Adviser (Directorate of Enforcement)",
+        "post_hi": "सहायक विधिक सलाहकार (प्रवर्तन निदेशालय)",
+        "total": "12"
+      },
+      {
+        "detail_en": "UR-08, EWS-02, OBC-05, SC-02, ST-01, PwBD-01",
+        "detail_hi": "अनारक्षित-08, ईडब्ल्यूएस-02, ओबीसी-05, एससी-02, एसटी-01, दिव्यांग-01",
+        "post_en": "Company Prosecutor",
+        "post_hi": "कंपनी अभियोजक",
+        "total": "18"
+      },
+      {
+        "detail_en": "UR-08, EWS-02, OBC-05, SC-02, ST-01, PwBD-01",
+        "detail_hi": "अनारक्षित-08, ईडब्ल्यूएस-02, ओबीसी-05, एससी-02, एसटी-01, दिव्यांग-01",
+        "post_en": "Legal Officer (DGCA)",
+        "post_hi": "विधि अधिकारी (डीजीसीए)",
+        "total": "12"
+      },
+      {
+        "detail_en": "UR-04, OBC-01, PwBD-01",
+        "detail_hi": "अनारक्षित-04, ओबीसी-01, दिव्यांग-01",
+        "post_en": "Assistant Public Prosecutor (Puducherry)",
+        "post_hi": "सहायक लोक अभियोजक (पुडुचेरी)",
+        "total": "5"
+      },
+      {
+        "detail_en": "UR-01",
+        "detail_hi": "अनारक्षित-01",
+        "post_en": "Superintendent (Legal)",
+        "post_hi": "अधीक्षक (विधि)",
+        "total": "1"
+      },
+      {
+        "detail_en": "UR-03, OBC-01, SC-01, PwBD-01",
+        "detail_hi": "अनारक्षित-03, ओबीसी-01, एससी-01, दिव्यांग-01",
+        "post_en": "Assistant Public Prosecutor (CBI)",
+        "post_hi": "सहायक लोक अभियोजक (सीबीआई)",
+        "total": "5"
+      },
+      {
+        "detail_en": "UR-50, EWS-14, OBC-37, SC-30, ST-09, PwBD-08",
+        "detail_hi": "अनारक्षित-50, ईडब्ल्यूएस-14, ओबीसी-37, एससी-30, एसटी-09, दिव्यांग-08",
+        "post_en": "Assistant Public Prosecutor (GNCT of Delhi)",
+        "post_hi": "सहायक लोक अभियोजक (एनसीटी दिल्ली सरकार)",
         "total": "140"
       },
       {
-        "detail_en": "UR-02, OBC-01 (PwBD-01)",
-        "detail_hi": "अनारक्षित-02, ओबीसी-01 (दिव्यांग-01)",
-        "post_en": "Law Officer (Land and Building Department, Govt of NCT of Delhi)",
-        "post_hi": "विधि अधिकारी (भूमि और भवन विभाग, राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार)",
+        "detail_en": "UR-02, OBC-01, PwBD-01",
+        "detail_hi": "अनारक्षित-02, ओबीसी-01, दिव्यांग-01",
+        "post_en": "Law Officer (Land and Building Dept, GNCT of Delhi)",
+        "post_hi": "विधि अधिकारी (भूमि और भवन विभाग, एनसीटी दिल्ली सरकार)",
         "total": "3"
       }
     ],
     "video_url": null,
     "who_en": [
-      "Candidates who applied for UPSC legal and prosecution posts under various advertisements."
+      "Candidates who applied for the UPSC Combined Legal Posts under various advertisement numbers"
     ],
     "who_hi": [
-      "विभिन्न विज्ञापनों के तहत यूपीएससी विधिक और अभियोजन पदों के लिए आवेदन करने वाले उम्मीदवार।"
+      "विभिन्न विज्ञापन संख्याओं के तहत यूपीएससी संयुक्त विधिक पदों के लिए आवेदन करने वाले उम्मीदवार"
     ]
   },
   "pdf": {
@@ -291,20 +373,18 @@
     "text_kind": "text",
     "via": "https://www.upsc.gov.in/sites/default/files/AndmNotice-16-RTs-09012027-AN-Engl-281026_14.pdf"
   },
-  "published_at": "2026-11-03T17:00:27Z",
-  "qual": [
-    "graduate"
-  ],
-  "rewrite": true,
-  "slug": "upsc-combined-legal-recruitment-test-date-2027-exam-notice",
+  "published_at": "2026-11-03T16:39:53Z",
+  "slug": "upsc-combined-legal-posts-recruitment-test-date-2027-syllabus",
   "source_id": "upsc-whats-new",
-  "status": "approved",
+  "status": "held",
   "title": "Addendum Notice: 03 Posts of Law Officer, Government of NCT of Delhi",
   "url": "https://www.upsc.gov.in/whats-new/03 Posts of Law Officer, Government of NCT of Delhi/Addendum Notice",
   "verify": {
     "at": "2026-11-03",
+    "held": true,
     "missing": [
-      "Vacancies: Assistant Public Prosecutor (Government of NCT of: 140"
+      "Vacancies: Company Prosecutor: 18",
+      "Vacancies: Assistant Public Prosecutor (GNCT of Delhi): 140"
     ],
     "tries": 1
   }
