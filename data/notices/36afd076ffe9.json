@@ -1,5 +1,20 @@
 {
   "board_url": "https://www.ibps.in/",
+  "card": {
+    "confidence": "low",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Server Administrator, Programming Assistant, Assistant",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "PDF text is empty, cannot verify recruitment details",
+    "summary_en": "IBPS has released a recruitment notification for various posts. Check the official notice for details.",
+    "summary_hi": "आईबीपीएस ने विभिन्न पदों के लिए भर्ती अधिसूचना जारी की है। विवरण के लिए आधिकारिक सूचना देखें।",
+    "title_en": "IBPS Server Administrator and Programming Assistant Recruitment 2026",
+    "title_hi": "आईबीपीएस सर्वर प्रशासक और प्रोग्रामिंग सहायक भर्ती 2026",
+    "type": "Job",
+    "vacancies": null
+  },
   "fields": {},
   "first_seen": "2026-11-03T16:16:29+00:00",
   "id": "36afd076ffe9",
@@ -9,7 +24,7 @@
     "error": "SSLError: HTTPSConnectionPool(host='www.ibps.in', port=443): Max retries exceeded with url: /wp-content/uploads/Advertisement-for-Server-Administrator-Programming-Assistant-and-Assistant-Oct._Nov.-202"
   },
   "source_id": "ibps-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "IBPS Advertisement Posted on 29 Oct, 2026",
   "url": "https://www.ibps.in/wp-content/uploads/Advertisement-for-Server-Administrator-Programming-Assistant-and-Assistant-Oct._Nov.-2026.pdf"
 }

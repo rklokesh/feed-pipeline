@@ -1,6 +1,36 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://sssb.punjab.gov.in/vacancy-group-c/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-10-19",
+    "list": true,
+    "posts": "Driver, Clerk (Legal, Accounts, I.T.), Translator, Field Artist",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "PSSSB Punjab has invited online applications for 70 Group-C posts including Driver, Clerks, Translator, and Field Artist. Eligible candidates can apply online by October 19, 2026.",
+    "summary_hi": "PSSSB पंजाब ने ड्राइवर, क्लर्क, ट्रांसलेटर और फील्ड आर्टिस्ट सहित 70 ग्रुप-सी पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 19 अक्टूबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "title_en": "PSSSB Recruitment 2026 – Apply Online for 70 Driver and Clerk Posts",
+    "title_hi": "PSSSB भर्ती 2026 – 70 ड्राइवर और क्लर्क पदों के लिए ऑनलाइन आवेदन करें",
+    "type": "Job",
+    "vacancies": 70
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": null,
+    "age_min": null,
+    "age_on": null,
+    "domicile": "Punjab",
+    "qual": "10th",
+    "relax": {}
+  },
+  "exam": {
+    "key": "psssb-driver-and-clerk-2026",
+    "name_en": "PSSSB Driver and Clerk 2026",
+    "name_hi": "PSSSB ड्राइवर और क्लर्क 2026"
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -70,16 +100,276 @@
   },
   "first_seen": "2026-11-03T16:16:29+00:00",
   "id": "972d76dbb543",
+  "issue": 985,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-09-18",
   "org": "PSSSB",
+  "page": {
+    "after_en": [
+      "Appearance in the competitive written test",
+      "Qualifying the Punjabi and English typing test",
+      "Document verification and counseling for shortlisted candidates"
+    ],
+    "after_hi": [
+      "प्रतियोगी लिखित परीक्षा में उपस्थिति",
+      "पंजाबी और अंग्रेजी टाइपिंग टेस्ट उत्तीर्ण करना",
+      "शॉर्टलिस्ट किए गए उम्मीदवारों के लिए दस्तावेज सत्यापन और काउंसलिंग"
+    ],
+    "age": [],
+    "apply_start": "2026-09-25",
+    "apply_url": "https://sssb.punjab.gov.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Verify educational and technical eligibility for the chosen post",
+      "Keep scanned copies of photograph, signature, and certificates ready",
+      "Check category code carefully before submission",
+      "Complete fee payment and application submission by October 19, 2026"
+    ],
+    "checklist_hi": [
+      "चुने गए पद के लिए शैक्षणिक और तकनीकी पात्रता की जाँच करें",
+      "तस्वीर, हस्ताक्षर और प्रमाण पत्र की स्कैन की गई प्रतियाँ तैयार रखें",
+      "सबमिशन से पहले श्रेणी कोड की सावधानीपूर्वक जांच करें",
+      "19 अक्टूबर 2026 तक शुल्क भुगतान और आवेदन जमा करना पूरा करें"
+    ],
+    "conducted_by_en": "Subordinate Services Selection Board, Punjab (PSSSB)",
+    "conducted_by_hi": "अधीनस्थ सेवा चयन बोर्ड, पंजाब (PSSSB)",
+    "dates": [
+      {
+        "label_en": "Advertisement publication date",
+        "label_hi": "विज्ञापन प्रकाशन तिथि",
+        "value_en": "18 Sep 2026",
+        "value_hi": "18 सितंबर 2026"
+      },
+      {
+        "label_en": "Online application starts",
+        "label_hi": "ऑनलाइन आवेदन शुरू",
+        "value_en": "25 Sep 2026",
+        "value_hi": "25 सितंबर 2026"
+      },
+      {
+        "label_en": "Last date to apply and pay fee",
+        "label_hi": "आवेदन और शुल्क भुगतान की अंतिम तिथि",
+        "value_en": "19 Oct 2026",
+        "value_hi": "19 अक्टूबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Matriculation certificate for age proof",
+      "Educational and technical qualification marksheets and degrees",
+      "Valid driving licence and experience certificate (for Driver post)",
+      "Punjab Domicile / Residence Certificate (not older than 5 years)",
+      "Category / Reservation certificate issued by competent authority, if applicable"
+    ],
+    "documents_hi": [
+      "आयु प्रमाण के लिए मैट्रिकुलेशन प्रमाण पत्र",
+      "शैक्षणिक और तकनीकी योग्यता की मार्कशीट और डिग्री",
+      "वैध ड्राइविंग लाइसेंस और अनुभव प्रमाण पत्र (ड्राइवर पद के लिए)",
+      "पंजाब निवास प्रमाण पत्र (5 वर्ष से अधिक पुराना नहीं)",
+      "सक्षम प्राधिकारी द्वारा जारी श्रेणी / आरक्षण प्रमाण पत्र, यदि लागू हो"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Driver",
+        "label_hi": "ड्राइवर",
+        "value_en": "Matric Standard Examination, valid driving licence for light and heavy vehicles, and minimum 3 years of driving experience.",
+        "value_hi": "मैट्रिक मानक परीक्षा, हल्के और भारी वाहनों के लिए वैध ड्राइविंग लाइसेंस, और न्यूनतम 3 वर्ष का ड्राइविंग अनुभव।"
+      },
+      {
+        "label_en": "Clerk (Legal)",
+        "label_hi": "क्लर्क (लीगल)",
+        "value_en": "Law Graduate from a recognized university or institution, plus competitive test and Punjabi and English typing test at 30 words per minute.",
+        "value_hi": "मान्यता प्राप्त विश्वविद्यालय से लॉ ग्रेजुएट, साथ ही प्रतियोगी परीक्षा और 30 शब्द प्रति मिनट की गति से पंजाबी और अंग्रेजी टाइपिंग टेस्ट।"
+      },
+      {
+        "label_en": "Clerk (Accounts)",
+        "label_hi": "क्लर्क (अकाउंट्स)",
+        "value_en": "Graduation Degree with at least one subject of Statistics, Mathematics, or Accounts with Matric-standard Punjabi, plus competitive and typing tests.",
+        "value_hi": "सांख्यिकी, गणित या अकाउंट्स विषय के साथ ग्रेजुएशन की डिग्री और मैट्रिक स्तर की पंजाबी, साथ ही प्रतियोगी और टाइपिंग टेस्ट।"
+      },
+      {
+        "label_en": "Clerk (I.T.)",
+        "label_hi": "क्लर्क (आईटी)",
+        "value_en": "Graduate in Computer Application / IT / Computer Science / Computer Engineering / Computer Technology or B.Tech / PGDCA from a recognized university, plus competitive and typing tests.",
+        "value_hi": "मान्यता प्राप्त विश्वविद्यालय से कंप्यूटर एप्लीकेशन / आईटी / कंप्यूटर साइंस / कंप्यूटर इंजीनियरिंग / कंप्यूटर टेक्नोलॉजी में ग्रेजुएट या बी.टेक / पीजीडीसीए, साथ ही प्रतियोगी और टाइपिंग टेस्ट।"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a recruitment drive conducted by the Subordinate Services Selection Board, Punjab, to fill 70 Group-C vacancies including Driver, Clerks, Translator, and Field Artist across various government departments.",
+        "a_hi": "यह विभिन्न सरकारी विभागों में ड्राइवर, क्लर्क, ट्रांसलेटर और फील्ड आर्टिस्ट सहित 70 ग्रुप-सी रिक्तियों को भरने के लिए अधीनस्थ सेवा चयन बोर्ड, पंजाब द्वारा आयोजित एक भर्ती अभियान है।",
+        "q_en": "What is PSSSB Group-C Recruitment 2026?",
+        "q_hi": "PSSSB ग्रुप-सी भर्ती 2026 क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Domicile requirement",
+        "label_hi": "निवास आवश्यकता",
+        "value_en": "Reservation benefits applicable only to Punjab residents; Domicile certificate must not be older than 5 years.",
+        "value_hi": "आरक्षण का लाभ केवल पंजाब के निवासियों को देय है; निवास प्रमाण पत्र 5 वर्ष से अधिक पुराना नहीं होना चाहिए।"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The last date to submit online applications is October 19, 2026.",
+        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 19 अक्टूबर 2026 है।",
+        "q_en": "What is the last date to apply for PSSSB Recruitment 2026?",
+        "q_hi": "PSSSB भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "A total of 70 vacancies for Group-C posts have been announced.",
+        "a_hi": "ग्रुप-सी पदों के लिए कुल 70 रिक्तियों की घोषणा की गई है।",
+        "q_en": "How many vacancies are announced under PSSSB Advt. No. 12 of 2026?",
+        "q_hi": "PSSSB विज्ञापन संख्या 12 ऑफ़ 2026 के तहत कुल कितनी रिक्तियों की घोषणा की गई है?"
+      },
+      {
+        "a_en": "Online applications started on September 25, 2026.",
+        "a_hi": "ऑनलाइन आवेदन 25 सितंबर 2026 को शुरू हुए।",
+        "q_en": "What is the starting date for online application?",
+        "q_hi": "ऑनलाइन आवेदन की शुरुआत तिथि क्या है?"
+      },
+      {
+        "a_en": "Eligible candidates can apply through the official website at https://sssb.punjab.gov.in.",
+        "a_hi": "योग्य उम्मीदवार आधिकारिक वेबसाइट https://sssb.punjab.gov.in के माध्यम से आवेदन कर सकते हैं।",
+        "q_en": "What is the official website to apply for PSSSB jobs?",
+        "q_hi": "PSSSB नौकरियों के लिए आवेदन करने के लिए आधिकारिक वेबसाइट क्या है?"
+      },
+      {
+        "a_en": "Yes, a Punjab Domicile certificate (not older than 5 years) is mandatory to claim reservation benefits.",
+        "a_hi": "हाँ, आरक्षण का लाभ दावा करने के लिए पंजाब निवास प्रमाण पत्र (5 वर्ष से अधिक पुराना नहीं) अनिवार्य है।",
+        "q_en": "Is a Domicile certificate mandatory for reservation benefits?",
+        "q_hi": "क्या आरक्षण लाभ के लिए निवास प्रमाण पत्र अनिवार्य है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "PSSSB Recruitment 2026 – Apply Online for 70 Driver and Clerk Posts",
+    "h1_hi": "PSSSB भर्ती 2026 – 70 ड्राइवर और क्लर्क पदों के लिए ऑनलाइन आवेदन करें",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official PSSSB website at https://sssb.punjab.gov.in",
+      "Click on the online application link for Advt. No. 12 of 2026",
+      "Register and fill out the online application form with correct details and category code",
+      "Upload required documents including Punjab Domicile Certificate (not older than 5 years)",
+      "Submit the form and pay the application fee before the last date",
+      "Take a printout of the final submitted application form for future reference"
+    ],
+    "how_hi": [
+      "PSSSB की आधिकारिक वेबसाइट https://sssb.punjab.gov.in पर जाएं",
+      "विज्ञापन संख्या 12 ऑफ़ 2026 के लिए ऑनलाइन आवेदन लिंक पर क्लिक करें",
+      "पंजीकृत करें और सही विवरण और श्रेणी कोड के साथ ऑनलाइन आवेदन पत्र भरें",
+      "पंजाब निवास प्रमाण पत्र (5 साल से अधिक पुराना नहीं) सहित आवश्यक दस्तावेज अपलोड करें",
+      "अंतिम तिथि से पहले फॉर्म जमा करें और आवेदन शुल्क का भुगतान करें",
+      "भविष्य के संदर्भ के लिए अंतिम जमा किए गए आवेदन पत्र का प्रिंटआउट लें"
+    ],
+    "intro_en": "Subordinate Services Selection Board, Punjab (PSSSB) has released Advertisement No. 12 of 2026 for the recruitment of 70 Group-C posts, including Driver, Clerks in various departments, Translator, and Field Artist. Online applications start on September 25, 2026, and the last date to apply is October 19, 2026. Candidates must check the educational and technical qualifications required for each specific post before applying. Eligible candidates should submit their applications online through the official PSSSB website.",
+    "intro_hi": "अधीनस्थ सेवा चयन बोर्ड, पंजाब (PSSSB) ने ड्राइवर, विभिन्न विभागों में क्लर्क, ट्रांसलेटर और फील्ड आर्टिस्ट सहित 70 ग्रुप-सी पदों की भर्ती के लिए विज्ञापन संख्या 12 ऑफ़ 2026 जारी किया है। ऑनलाइन आवेदन 25 सितंबर 2026 से शुरू होंगे और आवेदन करने की अंतिम तिथि 19 अक्टूबर 2026 है। उम्मीदवारों को आवेदन करने से पहले प्रत्येक विशिष्ट पद के लिए आवश्यक शैक्षणिक और तकनीकी योग्यता की जांच करनी चाहिए। योग्य उम्मीदवार PSSSB की आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+    "last_date": "2026-10-19",
+    "mistakes_en": [
+      "Entering incorrect category or category code during online registration, as it cannot be changed later",
+      "Failing to upload a valid Punjab Domicile certificate issued within the last 5 years"
+    ],
+    "mistakes_hi": [
+      "ऑनलाइन पंजीकरण के दौरान गलत श्रेणी या श्रेणी कोड दर्ज करना, क्योंकि इसे बाद में बदला नहीं जा सकता है",
+      "पिछले 5 वर्षों के भीतर जारी वैध पंजाब निवास प्रमाण पत्र अपलोड करने में विफल रहना"
+    ],
+    "not_en": [
+      "Candidates without the required educational or technical qualifications for the specific post",
+      "Candidates unable to provide valid supporting documents during counseling"
+    ],
+    "not_hi": [
+      "विशिष्ट पद के लिए आवश्यक शैक्षणिक या तकनीकी योग्यता के बिना उम्मीदवार",
+      "काउंसलिंग के दौरान वैध सहायक दस्तावेज प्रदान करने में असमर्थ उम्मीदवार"
+    ],
+    "notice_date": "2026-09-18",
+    "official_site": "https://sssb.punjab.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Driver, Clerk (Legal, Accounts, I.T.), Translator, Field Artist",
+        "value_hi": "ड्राइवर, क्लर्क (लीगल, अकाउंट्स, आईटी), ट्रांसलेटर, फील्ड आर्टिस्ट"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल वैकेंसी",
+        "value_en": "70",
+        "value_hi": "70"
+      },
+      {
+        "label_en": "Apply online",
+        "label_hi": "ऑनलाइन आवेदन",
+        "value_en": "25 Sep 2026 to 19 Oct 2026",
+        "value_hi": "25 सितंबर 2026 से 19 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Advt. No. 12 of 2026",
+        "value_hi": "विज्ञापन संख्या 12 ऑफ़ 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Competitive written test",
+      "Punjabi and English typing test (30 words per minute)",
+      "Counseling and document verification"
+    ],
+    "selection_hi": [
+      "प्रतियोगी लिखित परीक्षा",
+      "पंजाबी और अंग्रेजी टाइपिंग टेस्ट (30 शब्द प्रति मिनट)",
+      "काउंसलिंग और दस्तावेज सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Driver & Clerk Posts",
+      "line_hi": "ड्राइवर और क्लर्क पद",
+      "posts": "70"
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Punjab Subordinate Services Selection Board (PSSSB) has invited online applications for 70 Group-C posts including Driver, Clerks (Legal, Accounts, I.T.), Translator, and Field Artist. Eligible candidates can apply online through the official website by October 19, 2026.",
+    "summary_hi": "पंजाब अधीनस्थ सेवा चयन बोर्ड (PSSSB) ने ड्राइवर, क्लर्क (लीगल, अकाउंट्स, आईटी), ट्रांसलेटर और फील्ड आर्टिस्ट सहित 70 ग्रुप-सी पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 19 अक्टूबर 2026 तक आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Category-wise classification is provided in Annexure-A of the official notification.",
+        "detail_hi": "श्रेणी-वार वर्गीकरण आधिकारिक अधिसूचना के एनेक्जर-ए में दिया गया है।",
+        "post_en": "Group-C Posts (Driver, Clerks, Translator, Field Artist)",
+        "post_hi": "ग्रुप-सी पद (ड्राइवर, क्लर्क, ट्रांसलेटर, फील्ड आर्टिस्ट)",
+        "total": "70"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Eligible candidates meeting the educational and technical qualifications for respective posts",
+      "Job seekers looking for Group-C positions under the Punjab Government"
+    ],
+    "who_hi": [
+      "संबंधित पदों के लिए शैक्षणिक और तकनीकी योग्यता पूरी करने वाले योग्य उम्मीदवार",
+      "पंजाब सरकार के तहत ग्रुप-सी पदों की तलाश कर रहे नौकरी के इच्छुक उम्मीदवार"
+    ]
+  },
   "pdf": {
     "bytes": 2333219,
     "pages": 19,
     "sha256": "ffd79f8e78855f3b69b1d6fce2ea2a51c42942beb3bdadb7c932f3167c1ba378",
     "text_kind": "text"
   },
+  "published_at": "2026-11-03T16:39:08Z",
+  "qual": [
+    "10th",
+    "graduate"
+  ],
+  "slug": "psssb-recruitment-2026-apply-online-for-70-driver-and-clerk-post",
   "source_id": "psssb-group-c",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1 Advertisement No. 12 of 2026 for the Posts of Driver, Clerk (Legal), Clerk (Accounts), Clerk (I.T.), Translator, Field Artist View",
   "url": "https://sssb.punjab.gov.in/wp-content/uploads/2026/09/Advt.-12-of-2026.pdf"
 }

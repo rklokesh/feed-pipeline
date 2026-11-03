@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://sssc.uk.gov.in/recruitment-notification/",
+  "card": {
+    "confidence": "low",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Garbled text, internal administrative notice or unparseable document",
+    "summary_en": "This is an internal administrative notice from UKSSSC with unclear content.",
+    "summary_hi": "यह यूकेएसएसएससी की ओर से एक आंतरिक प्रशासनिक सूचना है।",
+    "title_en": "UKSSSC Administrative Notice",
+    "title_hi": "UKSSSC प्रशासनिक सूचना",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +31,7 @@
     "text_kind": "text"
   },
   "source_id": "uksssc-recruitment",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Accessible Version : View (313 KB)",
   "url": "https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/10/202610182051341189.pdf"
 }

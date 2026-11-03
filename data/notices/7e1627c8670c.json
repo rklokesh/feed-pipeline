@@ -1,6 +1,42 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://sssb.punjab.gov.in/vacancy-group-c/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-05-25",
+    "list": true,
+    "posts": "Veterinary Inspector",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "PSSSB has invited online applications for 150 Veterinary Inspector posts. Eligible candidates can apply online up to 25 May 2026.",
+    "summary_hi": "पीएसएसएसबी ने 150 वेटरनरी इंस्पेक्टर पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 25 मई 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "title_en": "PSSSB Veterinary Inspector Recruitment 2026 – Apply Online for 150 Posts",
+    "title_hi": "पीएसएसएसबी वेटरनरी इंस्पेक्टर भर्ती 2026 – 150 पदों के लिए ऑनलाइन आवेदन",
+    "type": "Job",
+    "vacancies": 150
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": 37,
+    "age_min": 18,
+    "age_on": "2026-01-01",
+    "domicile": "Punjab",
+    "qual": "diploma",
+    "relax": {
+      "ExSM": 8,
+      "OBC": 5,
+      "PwD": 10,
+      "SC": 5,
+      "Women": 3
+    }
+  },
+  "exam": {
+    "key": "psssb-veterinary-inspector-2026",
+    "name_en": "PSSSB Veterinary Inspector 2026",
+    "name_hi": "PSSSB पशु चिकित्सा निरीक्षक 2026"
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -85,16 +121,352 @@
   },
   "first_seen": "2026-11-03T16:16:29+00:00",
   "id": "7e1627c8670c",
+  "issue": 982,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-04-24",
   "org": "PSSSB",
+  "page": {
+    "after_en": [
+      "Written examination",
+      "Counselling and document verification",
+      "Final merit list and recommendation for appointment"
+    ],
+    "after_hi": [
+      "लिखित परीक्षा",
+      "काउंसलिंग और दस्तावेज़ सत्यापन",
+      "अंतिम मेरिट सूची और नियुक्ति की सिफारिश"
+    ],
+    "age": [
+      {
+        "label_en": "Minimum age",
+        "label_hi": "न्यूनतम आयु",
+        "value_en": "18 years",
+        "value_hi": "18 वर्ष"
+      },
+      {
+        "label_en": "Maximum age (General)",
+        "label_hi": "अधिकतम आयु (सामान्य)",
+        "value_en": "37 years",
+        "value_hi": "37 वर्ष"
+      },
+      {
+        "label_en": "As-on date",
+        "label_hi": "इस तिथि के अनुसार",
+        "value_en": "01 Jan 2026",
+        "value_hi": "01 जनवरी 2026"
+      },
+      {
+        "label_en": "SC / BC (Punjab residents)",
+        "label_hi": "अनुसूचित जाति / पिछड़ा वर्ग (पंजाब निवासी)",
+        "value_en": "Up to 42 years",
+        "value_hi": "42 वर्ष तक"
+      },
+      {
+        "label_en": "State and Central Govt employees",
+        "label_hi": "राज्य और केंद्रीय सरकारी कर्मचारी",
+        "value_en": "Up to 45 years",
+        "value_hi": "45 वर्ष तक"
+      },
+      {
+        "label_en": "Divyang candidates (Punjab)",
+        "label_hi": "दिव्यांग उम्मीदवार (पंजाब)",
+        "value_en": "Up to 47 years",
+        "value_hi": "47 वर्ष तक"
+      },
+      {
+        "label_en": "Widows, divorcees and certain married women",
+        "label_hi": "विधवाएं, तलाकशुदा और कुछ अन्य विवाहित महिलाएं",
+        "value_en": "Up to 40 years",
+        "value_hi": "40 वर्ष तक"
+      }
+    ],
+    "apply_start": "2026-05-04",
+    "apply_url": "https://sssb.punjab.gov.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check your age against the cut-off date 01.01.2026.",
+      "Keep your category and domicile certificates ready.",
+      "Complete the online application and fee payment before 25 May 2026."
+    ],
+    "checklist_hi": [
+      "01.01.2026 की कट-ऑफ तिथि के विरुद्ध अपनी आयु की जाँच करें।",
+      "अपने श्रेणी और निवास प्रमाण पत्र तैयार रखें।",
+      "25 मई 2026 से पहले ऑनलाइन आवेदन और शुल्क भुगतान पूरा करें।"
+    ],
+    "conducted_by_en": "Subordinate Services Selection Board Punjab (PSSSB)",
+    "conducted_by_hi": "अधीन सेवाएं चयन बोर्ड, पंजाब",
+    "dates": [
+      {
+        "label_en": "Notification date",
+        "label_hi": "अधिसूचना तिथि",
+        "value_en": "24 Apr 2026",
+        "value_hi": "24 अप्रैल 2026"
+      },
+      {
+        "label_en": "Online application starts",
+        "label_hi": "ऑनलाइन आवेदन शुरू",
+        "value_en": "04 May 2026",
+        "value_hi": "04 मई 2026"
+      },
+      {
+        "label_en": "Last date to apply and pay fee",
+        "label_hi": "आवेदन और शुल्क भुगतान की अंतिम तिथि",
+        "value_en": "25 May 2026",
+        "value_hi": "25 मई 2026"
+      }
+    ],
+    "documents_en": [
+      "Matriculation certificate with Punjabi",
+      "10+2 marksheet and certificate",
+      "Veterinary Science & Animal Health Technology Diploma",
+      "Punjab Residence / Domicile Certificate (not older than 5 years)",
+      "Category certificate (SC/BC/EWS/Ex-Servicemen/Sports/etc.) if applicable",
+      "ID proof and passport size photographs"
+    ],
+    "documents_hi": [
+      "पंजाबी के साथ मैट्रिक प्रमाण पत्र",
+      "10+2 अंक तालिका और प्रमाण पत्र",
+      "वेटरनरी साइंस एंड एनिमल हेल्थ टेक्नोलॉजी डिप्लोमा",
+      "पंजाब निवास प्रमाण पत्र (5 वर्ष से अधिक पुराना नहीं)",
+      "श्रेणी प्रमाण पत्र (एससी/बीसी/ईडब्ल्यूएस/भूतपूर्व सैनिक/खेल/आदि) यदि लागू हो",
+      "पहचान प्रमाण और पासपोर्ट साइज फोटो"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Education",
+        "label_hi": "शिक्षा",
+        "value_en": "10+2 with Physics, Chemistry and Biology from a recognized Board/University, and a 2-year diploma in Veterinary Science and Animal Health Technology (or equivalent). Candidates currently enrolled or holding specified qualifications are also eligible as per rules.",
+        "value_hi": "मान्यता प्राप्त बोर्ड/विश्वविद्यालय से भौतिकी, रसायन विज्ञान और जीव विज्ञान के साथ 10+2, और वेटरनरी साइंस एंड एनिमल हेल्थ टेक्नोलॉजी में 2 साल का डिप्लोमा या समकक्ष।"
+      },
+      {
+        "label_en": "Punjabi Language",
+        "label_hi": "पंजाबी भाषा",
+        "value_en": "Must have passed Matriculation examination with Punjabi as one of the compulsory or elective subjects or equivalent.",
+        "value_hi": "मैट्रिक परीक्षा में अनिवार्य या वैकल्पिक विषयों में से एक के रूप में पंजाबी उत्तीर्ण होना चाहिए।"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "Subordinate Services Selection Board Punjab conducts this recruitment to select eligible candidates for the post of Veterinary Inspector in the Animal Husbandry Department, Punjab. Selected candidates are responsible for animal health care and allied duties.",
+        "a_hi": "अधीन सेवाएं चयन बोर्ड, पंजाब पशुपालन विभाग में वेटरनरी इंस्पेक्टर के पद के लिए योग्य उम्मीदवारों का चयन करने के लिए यह भर्ती आयोजित करता है। चयनित उम्मीदवार पशु स्वास्थ्य देखभाल और संबंधित कर्तव्यों के लिए जिम्मेदार होते हैं।",
+        "q_en": "What is PSSSB Veterinary Inspector Recruitment?",
+        "q_hi": "पीएसएसएसबी वेटरनरी इंस्पेक्टर भर्ती क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Pay Scale",
+        "label_hi": "वेतनमान",
+        "value_en": "Level-5 (₹29,200–92,300) as per 7th Central Pay Commission",
+        "value_hi": "7वें केंद्रीय वेतन आयोग के अनुसार लेवल-5 (₹29,200–92,300)"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The last date to apply online is 25 May 2026.",
+        "a_hi": "ऑनलाइन आवेदन करने की अंतिम तिथि 25 मई 2026 है।",
+        "q_en": "What is the last date to apply for PSSSB Veterinary Inspector Recruitment 2026?",
+        "q_hi": "पीएसएसएसबी वेटरनरी इंस्पेक्टर भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "A total of 150 vacancies have been announced.",
+        "a_hi": "कुल 150 वैकेंसी घोषित की गई हैं।",
+        "q_en": "How many vacancies are announced for PSSSB Veterinary Inspector?",
+        "q_hi": "पीएसएसएसबी वेटरनरी इंस्पेक्टर के लिए कुल कितनी वैकेंसी घोषित की गई हैं?"
+      },
+      {
+        "a_en": "Candidates must be between 18 and 37 years of age as on 01.01.2026. Age relaxations apply for reserved categories.",
+        "a_hi": "उम्मीदवारों की आयु 01.01.2026 के अनुसार 18 से 37 वर्ष के बीच होनी चाहिए। आरक्षित श्रेणियों के लिए आयु में छूट लागू है।",
+        "q_en": "What is the age limit for PSSSB Veterinary Inspector?",
+        "q_hi": "पीएसएसएसबी वेटरनरी इंस्पेक्टर के लिए आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "Candidates need 10+2 with Physics, Chemistry and Biology, along with a 2-year diploma in Veterinary Science and Animal Health Technology.",
+        "a_hi": "उम्मीदवारों के पास भौतिकी, रसायन विज्ञान और जीव विज्ञान के साथ 10+2 और वेटरनरी साइंस एंड एनिमल हेल्थ टेक्नोलॉजी में 2 साल का डिप्लोमा होना चाहिए।",
+        "q_en": "What is the educational qualification required?",
+        "q_hi": "आवश्यक शैक्षणिक योग्यता क्या है?"
+      },
+      {
+        "a_en": "The application fee for General category candidates is ₹1000.",
+        "a_hi": "सामान्य वर्ग के उम्मीदवारों के लिए आवेदन शुल्क ₹1000 है।",
+        "q_en": "What is the application fee for General category?",
+        "q_hi": "सामान्य वर्ग के लिए आवेदन शुल्क क्या है?"
+      },
+      {
+        "a_en": "Eligible candidates can apply through the official website at sssb.punjab.gov.in.",
+        "a_hi": "योग्य उम्मीदवार आधिकारिक वेबसाइट sssb.punjab.gov.in के माध्यम से आवेदन कर सकते हैं।",
+        "q_en": "What is the official website to apply?",
+        "q_hi": "आवेदन करने के लिए आधिकारिक वेबसाइट कौन सी है?"
+      }
+    ],
+    "fees": [
+      {
+        "amount": "₹1000",
+        "cat_en": "General / Freedom Fighter / Sports",
+        "cat_hi": "सामान्य / स्वतंत्रता सेनानी / खिलाड़ी"
+      },
+      {
+        "amount": "₹250",
+        "cat_en": "SC / BC / EWS",
+        "cat_hi": "अनुसूचित जाति / पिछड़ा वर्ग / आर्थिक रूप से कमजोर वर्ग"
+      },
+      {
+        "amount": "₹200",
+        "cat_en": "Ex-Servicemen & Dependent",
+        "cat_hi": "सैनिक और आश्रित"
+      },
+      {
+        "amount": "₹500",
+        "cat_en": "Physical Handicapped",
+        "cat_hi": "दिव्यांग"
+      }
+    ],
+    "h1_en": "PSSSB Veterinary Inspector Recruitment 2026 – Apply Online for 150 Posts",
+    "h1_hi": "पीएसएसएसबी वेटरनरी इंस्पेक्टर भर्ती 2026 – 150 पदों के लिए ऑनलाइन आवेदन",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official website at sssb.punjab.gov.in.",
+      "Click on the online application link for Advertisement No. 10 of 2026.",
+      "Register and fill out the online application form with correct details.",
+      "Upload necessary documents including category and domicile certificates.",
+      "Pay the required application fee online and submit the final form.",
+      "Take a printout of the submitted application form for future reference."
+    ],
+    "how_hi": [
+      "आधिकारिक वेबसाइट sssb.punjab.gov.in पर जाएं।",
+      "विज्ञापन संख्या 10 आफ 2026 के लिए ऑनलाइन आवेदन लिंक पर क्लिक करें।",
+      "पंजीकरण करें और सही विवरण के साथ ऑनलाइन आवेदन पत्र भरें।",
+      "श्रेणी और निवास प्रमाण पत्र सहित आवश्यक दस्तावेज अपलोड करें।",
+      "आवश्यक आवेदन शुल्क का ऑनलाइन भुगतान करें और अंतिम फॉर्म जमा करें।",
+      "भविष्य के संदर्भ के लिए जमा किए गए आवेदन पत्र का प्रिंटआउट लें।"
+    ],
+    "intro_en": "Subordinate Services Selection Board Punjab (PSSSB) has released Advertisement No. 10 of 2026 for the recruitment of 150 Veterinary Inspector posts in the Animal Husbandry Department. Eligible and interested candidates can submit their online applications from 04 May 2026 to 25 May 2026. Applicants should read the official notification carefully for category-wise distribution, qualification details, and reservation rules before applying.",
+    "intro_hi": "अधीन सेवाएं चयन बोर्ड, पंजाब (PSSSB) ने पशुपालन विभाग में 150 वेटरनरी इंस्पेक्टर के पदों पर भर्ती के लिए विज्ञापन संख्या 10 आफ 2026 जारी किया है। योग्य और इच्छुक उम्मीदवार 04 मई 2026 से 25 मई 2026 तक ऑनलाइन आवेदन कर सकते हैं। आवेदकों को आवेदन करने से पहले श्रेणी-वार वर्गीकरण, योग्यता विवरण और आरक्षण नियमों के लिए आधिकारिक अधिसूचना को ध्यान से पढ़ना चाहिए।",
+    "last_date": "2026-05-25",
+    "mistakes_en": [
+      "Do not enter incorrect category or category code, as it cannot be changed later.",
+      "Ensure the residence certificate is valid and not older than 5 years."
+    ],
+    "mistakes_hi": [
+      "गलत श्रेणी या श्रेणी कोड दर्ज न करें, क्योंकि इसे बाद में बदला नहीं जा सकता।",
+      "सुनिश्चित करें कि निवास प्रमाण पत्र वैध है और 5 वर्ष से अधिक पुराना नहीं है।"
+    ],
+    "not_en": [
+      "Candidates without the mandatory educational qualifications or those exceeding the age limit without relaxation."
+    ],
+    "not_hi": [
+      "अनिवार्य शैक्षणिक योग्यता के बिना या बिना छूट के आयु सीमा पार करने वाले उम्मीदवार।"
+    ],
+    "notice_date": "2026-04-24",
+    "official_site": "https://sssb.punjab.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Veterinary Inspector",
+        "value_hi": "वेटरनरी इंस्पेक्टर"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल वैकेंसी",
+        "value_en": "150",
+        "value_hi": "150"
+      },
+      {
+        "label_en": "Apply online",
+        "label_hi": "ऑनलाइन आवेदन",
+        "value_en": "04 May 2026 to 25 May 2026",
+        "value_hi": "04 मई 2026 से 25 मई 2026"
+      },
+      {
+        "label_en": "Last date for fee",
+        "label_hi": "फीस जमा करने की अंतिम तिथि",
+        "value_en": "25 May 2026",
+        "value_hi": "25 मई 2026"
+      },
+      {
+        "label_en": "Educational qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "10+2 with Physics, Chemistry and Biology and Veterinary Diploma",
+        "value_hi": "भौतिकी, रसायन विज्ञान और जीव विज्ञान के साथ 10+2 और वेटरनरी डिप्लोमा"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "18 to 37 years (as on 01.01.2026)",
+        "value_hi": "18 से 37 वर्ष (01.01.2026 के अनुसार)"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Advt. No. 10 of 2026",
+        "value_hi": "विज्ञापन संख्या 10 आफ 2026"
+      }
+    ],
+    "salary": [
+      {
+        "label_en": "Pay Scale",
+        "label_hi": "वेतनमान",
+        "value_en": "Level-5 (₹29,200–92,300)",
+        "value_hi": "लेवल-5 (₹29,200–92,300)"
+      }
+    ],
+    "selection_en": [
+      "Written Examination (Objective Type / MCQ)",
+      "Counselling and Document Verification"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा (वस्तुनिष्ठ प्रकार / बहुविकल्पीय प्रश्न)",
+      "काउंसलिंग और दस्तावेज़ सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Veterinary Inspector",
+      "line_hi": "वेटरनरी इंस्पेक्टर",
+      "posts": 150
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "PSSSB has invited online applications for 150 Veterinary Inspector posts. Eligible candidates can apply online up to 25 May 2026.",
+    "summary_hi": "पीएसएसएसबी ने 150 वेटरनरी इंस्पेक्टर पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 25 मई 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "General 14, SC (M&B) 7, SC (R&O) 6, BC 16, Ex-Servicemen Gen 17, Ex-Servicemen SC (M&B) 12, Ex-Servicemen SC (R&O) 11, Ex-Servicemen BC 12, Sports Gen 12, Sports SC (M&B) 3, Sports SC (R&O) 2, PH (Ortho) 15, PH (ID/MD) 14, Freedom Fighter 6, EWS 3",
+        "detail_hi": "सामान्य 14, एससी (एमएंडबी) 7, एससी (आरएंडओ) 6, बीसी 16, भूतपूर्व सैनिक सामान्य 17, भूतपूर्व सैनिक एससी (एमएंडबी) 12, भूतपूर्व सैनिक एससी (आरएंडओ) 11, भूतपूर्व सैनिक बीसी 12, स्पोर्ट्स सामान्य 12, स्पोर्ट्स एससी (एमएंडबी) 3, स्पोर्ट्स एससी (आरएंडओ) 2, दिव्यांग (ऑर्थो) 15, दिव्यांग (आईडी/एमडी) 14, स्वतंत्रता सेनानी 6, ईडब्ल्यूएस 3",
+        "post_en": "Veterinary Inspector",
+        "post_hi": "वेटरनरी इंस्पेक्टर",
+        "total": "150"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates aged 18-37 with 10+2 Science and a Veterinary Diploma wanting a Punjab government job"
+    ],
+    "who_hi": [
+      "18-37 वर्ष की आयु के 10+2 विज्ञान और वेटरनरी डिप्लोमा धारक जो पंजाब सरकार की नौकरी चाहते हैं"
+    ]
+  },
   "pdf": {
     "bytes": 1092869,
     "pages": 12,
     "sha256": "519ce6c9dd302a0217481c3a5e431a17ab1191fae7f0fe77e88b9cf69b51dfbf",
     "text_kind": "text"
   },
+  "published_at": "2026-11-03T16:38:38Z",
+  "qual": [
+    "graduate"
+  ],
+  "slug": "psssb-veterinary-inspector-recruitment-2026-apply-online-for-150",
   "source_id": "psssb-group-c",
-  "status": "pending_review",
+  "status": "approved",
   "title": "3 Advertisement No. 10 of 2026 for the post of Veterinary Inspector. View",
   "url": "https://sssb.punjab.gov.in/wp-content/uploads/2026/04/Advt.-No.-10-of-2026.pdf"
 }

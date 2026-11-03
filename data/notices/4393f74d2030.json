@@ -35,12 +35,12 @@
   "org": "NTA",
   "page": {
     "after_en": [
-      "Application correction window from 06 November to 07 November 2026",
-      "Admit card release and subsequent examination schedule updates"
+      "Correction window for modifying application details",
+      "Admit card release and examination"
     ],
     "after_hi": [
-      "06 नवंबर से 07 नवंबर 2026 तक आवेदन सुधार विंडो",
-      "प्रवेश पत्र जारी करना और उसके बाद परीक्षा कार्यक्रम के अपडेट"
+      "आवेदन विवरण संशोधित करने के लिए सुधार विंडो",
+      "प्रवेश पत्र जारी करना और परीक्षा"
     ],
     "age": [],
     "apply_start": "2026-10-09",
@@ -51,8 +51,8 @@
         "new_hi": "05 नवंबर 2026",
         "old_en": "31 October 2026",
         "old_hi": "31 अक्टूबर 2026",
-        "what_en": "Last date for online submission of application form",
-        "what_hi": "ऑनलाइन आवेदन पत्र जमा करने की अंतिम तिथि"
+        "what_en": "Online submission of Application Form",
+        "what_hi": "आवेदन पत्र ऑनलाइन जमा करना"
       },
       {
         "new_en": "05 November 2026",
@@ -73,60 +73,58 @@
     ],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check eligibility requirements for the chosen SWAYAM courses",
-      "Keep all personal and educational documents ready",
-      "Complete application and fee payment by 05 November 2026"
+      "Check eligibility for the chosen SWAYAM course",
+      "Submit application and fee before 05 November 2026"
     ],
     "checklist_hi": [
-      "चयनित स्वायं पाठ्यक्रमों के लिए पात्रता आवश्यकताओं की जाँच करें",
-      "सभी व्यक्तिगत और शैक्षणिक दस्तावेज तैयार रखें",
-      "05 नवंबर 2026 तक आवेदन और शुल्क भुगतान पूरा करें"
+      "चयनित स्वायं पाठ्यक्रम के लिए पात्रता की जांच करें",
+      "05 नवंबर 2026 से पहले आवेदन और शुल्क जमा करें"
     ],
     "conducted_by_en": "National Testing Agency (NTA)",
     "conducted_by_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए)",
     "dates": [
       {
-        "label_en": "Application start date",
-        "label_hi": "आवेदन शुरू होने की तिथि",
+        "label_en": "Online application starts",
+        "label_hi": "ऑनलाइन आवेदन शुरू",
         "value_en": "09 October 2026",
         "value_hi": "09 अक्टूबर 2026"
       },
       {
-        "label_en": "Revised last date for online application",
-        "label_hi": "ऑनलाइन आवेदन के लिए संशोधित अंतिम तिथि",
-        "value_en": "05 November 2026 (up to 11:50 PM)",
-        "value_hi": "05 नवंबर 2026 (रात 11:50 बजे तक)"
+        "label_en": "Revised last date to apply",
+        "label_hi": "आवेदन करने की संशोधित अंतिम तिथि",
+        "value_en": "05 November 2026 (upto 11:50 PM)",
+        "value_hi": "05 नवंबर 2026 (रात्रि 11:50 बजे तक)"
       },
       {
-        "label_en": "Revised last date for fee transaction",
-        "label_hi": "शुल्क लेनदेन के लिए संशोधित अंतिम तिथि",
-        "value_en": "05 November 2026 (up to 11:50 PM)",
-        "value_hi": "05 नवंबर 2026 (रात 11:50 बजे तक)"
+        "label_en": "Successful final transaction of fee",
+        "label_hi": "शुल्क का सफल अंतिम लेनदेन",
+        "value_en": "05 November 2026 (upto 11:50 PM)",
+        "value_hi": "05 नवंबर 2026 (रात्रि 11:50 बजे तक)"
       },
       {
-        "label_en": "Correction window",
-        "label_hi": "सुधार विंडो",
-        "value_en": "06 November to 07 November 2026 (up to 11:50 PM)",
-        "value_hi": "06 नवंबर से 07 नवंबर 2026 (रात 11:50 बजे तक)"
+        "label_en": "Correction in particulars",
+        "label_hi": "विवरण में सुधार",
+        "value_en": "06 November to 07 November 2026 (upto 11:50 PM)",
+        "value_hi": "06 नवंबर से 07 नवंबर 2026 (रात्रि 11:50 बजे तक)"
       }
     ],
     "documents_en": [
       "Scanned photograph and signature",
-      "Academic details",
-      "Valid email ID and mobile number"
+      "Valid email ID and mobile number",
+      "Academic details"
     ],
     "documents_hi": [
-      "स्कैन की गई तस्वीर और हस्ताक्षर",
-      "शैक्षणिक विवरण",
-      "वैध ईमेल आईडी और मोबाइल नंबर"
+      "स्कैन की गई फोटो और हस्ताक्षर",
+      "वैध ईमेल आईडी और मोबाइल नंबर",
+      "शैक्षणिक विवरण"
     ],
     "eligibility": [],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "SWAYAM is an indigenous platform of the Ministry of Education, Government of India, providing various online courses. NTA conducts the semester exams for certification of these courses.",
-        "a_hi": "स्वायं शिक्षा मंत्रालय, भारत सरकार का एक स्वदेशी मंच है जो विभिन्न ऑनलाइन पाठ्यक्रम प्रदान करता है। एनटीए इन पाठ्यक्रमों के प्रमाणन के लिए सत्र परीक्षा आयोजित करता है।",
+        "a_en": "SWAYAM is an indigenous platform of the Ministry of Education, Government of India, providing online courses. The NTA conducts certification exams for these courses every semester.",
+        "a_hi": "स्वायं भारत सरकार के शिक्षा मंत्रालय का एक ऑनलाइन पाठ्यक्रम मंच है। एनटीए हर सत्र में इन पाठ्यक्रमों के लिए प्रमाणन परीक्षा आयोजित करता है।",
         "q_en": "What is SWAYAM July 2026 Semester Exam?",
         "q_hi": "स्वायं जुलाई 2026 सत्र परीक्षा क्या है?"
       }
@@ -147,28 +145,34 @@
     ],
     "faq": [
       {
-        "a_en": "The revised last date to apply online is 05 November 2026 up to 11:50 PM.",
-        "a_hi": "ऑनलाइन आवेदन करने की संशोधित अंतिम तिथि 05 नवंबर 2026 रात 11:50 बजे तक है।",
-        "q_en": "What is the revised last date to apply for SWAYAM July 2026 Exam?",
-        "q_hi": "स्वायं जुलाई 2026 परीक्षा के लिए आवेदन करने की संशोधित अंतिम तिथि क्या है?"
+        "a_en": "The last date to apply online has been extended to 05 November 2026.",
+        "a_hi": "ऑनलाइन आवेदन करने की अंतिम तिथि बढ़ाकर 05 नवंबर 2026 कर दी गई है।",
+        "q_en": "What is the extended last date to apply for SWAYAM July 2026 Semester Exam?",
+        "q_hi": "स्वायं जुलाई 2026 सत्र परीक्षा के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "Yes, you can edit your application details during the correction window from 06 November to 07 November 2026.",
-        "a_hi": "हाँ, आप 06 नवंबर से 07 नवंबर 2026 तक सुधार विंडो के दौरान अपने आवेदन विवरण को संपादित कर सकते हैं।",
-        "q_en": "Can I edit my application form after submitting it?",
-        "q_hi": "क्या मैं जमा करने के बाद अपना आवेदन पत्र संपादित कर सकता हूँ?"
+        "a_en": "The final transaction of fee can be done up to 05 November 2026 (11:50 PM).",
+        "a_hi": "शुल्क का अंतिम लेनदेन 05 नवंबर 2026 (रात्रि 11:50 बजे) तक किया जा सकता है।",
+        "q_en": "When is the fee payment deadline?",
+        "q_hi": "शुल्क भुगतान की अंतिम समय सीमा क्या है?"
       },
       {
-        "a_en": "You can apply through the official website at https://exams.nta.nic.in/swayam/",
-        "a_hi": "आप आधिकारिक वेबसाइट https://exams.nta.nic.in/swayam/ के माध्यम से आवेदन कर सकते हैं।",
+        "a_en": "The correction window will open from 06 November to 07 November 2026.",
+        "a_hi": "सुधार विंडो 06 नवंबर से 07 नवंबर 2026 तक खुलेगी।",
+        "q_en": "When will the correction window open?",
+        "q_hi": "सुधार विंडो कब खुलेगी?"
+      },
+      {
+        "a_en": "Candidates can apply at https://exams.nta.nic.in/swayam/.",
+        "a_hi": "उम्मीदवार https://exams.nta.nic.in/swayam/ पर आवेदन कर सकते हैं।",
         "q_en": "What is the official website to apply for SWAYAM July 2026?",
         "q_hi": "स्वायं जुलाई 2026 के लिए आवेदन करने की आधिकारिक वेबसाइट क्या है?"
       },
       {
-        "a_en": "You can contact the NTA helpline at 011-40759000 or email at swayam@nta.ac.in.",
-        "a_hi": "आप एनटीए हेल्पलाइन 011-40759000 पर संपर्क कर सकते हैं या swayam@nta.ac.in पर ईमेल कर सकते हैं।",
+        "a_en": "You can contact NTA helpline at 011-40759000 or email at swayam@nta.ac.in.",
+        "a_hi": "आप 011-40759000 पर एनटीए हेल्पलाइन से संपर्क कर सकते हैं या swayam@nta.ac.in पर ईमेल कर सकते हैं।",
         "q_en": "Who should I contact in case of difficulty in applying?",
-        "q_hi": "आवेदन करने में कठिनाई होने पर किससे संपर्क करना चाहिए?"
+        "q_hi": "आवेदन करने में कठिनाई होने पर किससे संपर्क करें?"
       }
     ],
     "fees": [],
@@ -177,26 +181,26 @@
     "hindi_notice_url": null,
     "how_en": [
       "Visit the official SWAYAM NTA portal at https://exams.nta.nic.in/swayam/",
-      "Register and fill out the online application form with required details",
-      "Upload necessary documents and pay the application fee before 05 November 2026",
-      "Take a printout of the final submitted confirmation page"
+      "Register and fill out the online application form before the last date",
+      "Pay the examination fee successfully",
+      "Take a printout of the confirmation page for future reference"
     ],
     "how_hi": [
-      "आधिकारिक स्वायं एनटीए पोर्टल पर जाएं https://exams.nta.nic.in/swayam/",
-      "पंजीकरण करें और आवश्यक विवरण के साथ ऑनलाइन आवेदन पत्र भरें",
-      "आवश्यक दस्तावेज अपलोड करें और 05 नवंबर 2026 से पहले आवेदन शुल्क का भुगतान करें",
-      "अंतिम जमा किए गए पुष्टिकरण पृष्ठ का प्रिंटआउट लें"
+      "आधिकारिक स्वायं एनटीए पोर्टल पर जाएं",
+      "अंतिम तिथि से पहले ऑनलाइन आवेदन पत्र भरें",
+      "परीक्षा शुल्क का भुगतान करें",
+      "भविष्य के संदर्भ के लिए पुष्टिकरण पृष्ठ का प्रिंटआउट लें"
     ],
-    "intro_en": "The National Testing Agency (NTA) has released a public notice regarding the extension of registration dates for the Study Webs of Active Learning for Young Aspiring Minds (SWAYAM) July 2026 Semester Examination. Aspiring candidates who missed the earlier deadline can now submit their online application forms through the official website until 05 November 2026. This notice includes the revised schedule for online application submission, fee transaction, and the correction window. Candidates are advised to carefully review the changes and complete their process within the extended timelines.",
-    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने युवा आकांक्षी दिमागों के लिए सक्रिय सीखने के अध्ययन वेब्स (स्वायं) जुलाई 2026 सत्र परीक्षा के पंजीकरण की तिथियां बढ़ाने के संबंध में एक सार्वजनिक सूचना जारी की है। जो उम्मीदवार पहले की समय सीमा चूक गए थे, वे अब 05 नवंबर 2026 तक आधिकारिक वेबसाइट के माध्यम से अपने ऑनलाइन आवेदन पत्र जमा कर सकते हैं। इस सूचना में ऑनलाइन आवेदन जमा करने, शुल्क लेनदेन और सुधार विंडो के लिए संशोधित कार्यक्रम शामिल हैं। उम्मीदवारों को सलाह दी जाती है कि वे परिवर्तनों की सावधानीपूर्वक समीक्षा करें और विस्तारित समय सीमा के भीतर अपनी प्रक्रिया पूरी करें।",
+    "intro_en": "The National Testing Agency (NTA) has released a public notice regarding the extension of registration dates for the Study Webs of Active Learning for Young Aspiring Minds (SWAYAM) July 2026 Semester Examination. Candidates who have not yet applied can now submit their online applications until 05 November 2026. The fee transaction window has also been extended to the same date. A correction window will open from 06 November to 07 November 2026 for making changes to submitted forms.",
+    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने युवा आकांक्षी दिमागों के लिए सक्रिय सीखने के अध्ययन वेब्स (स्वायं) जुलाई 2026 सत्र परीक्षा के पंजीकरण की तिथियां बढ़ाने के संबंध में एक सार्वजनिक सूचना जारी की है। जिन उम्मीदवारों ने अभी तक आवेदन नहीं किया है, वे 05 नवंबर 2026 तक अपने ऑनलाइन आवेदन जमा कर सकते हैं।",
     "last_date": "2026-11-05",
     "mistakes_en": [
-      "Failing to complete the final fee transaction before the deadline",
-      "Missing the correction window dates as no further chance will be provided"
+      "Ensure to complete fee transaction before the deadline",
+      "Verify all particulars carefully as no further correction chance will be given after the correction window"
     ],
     "mistakes_hi": [
-      "समय सीमा से पहले अंतिम शुल्क लेनदेन पूरा करने में विफल होना",
-      "सुधार विंडो की तिथियों को चूक जाना क्योंकि कोई और मौका नहीं दिया जाएगा"
+      "समय सीमा से पहले शुल्क लेनदेन पूरा करना सुनिश्चित करें",
+      "सभी विवरणों को ध्यान से सत्यापित करें क्योंकि सुधार विंडो के बाद कोई और मौका नहीं दिया जाएगा"
     ],
     "not_en": [],
     "not_hi": [],
@@ -207,12 +211,12 @@
     "rows": [
       {
         "label_en": "Posts",
-        "label_hi": "पोस्ट",
-        "value_en": "SWAYAM July 2026 Semester Exam Courses",
-        "value_hi": "स्वायं जुलाई 2026 सत्र परीक्षा पाठ्यक्रम"
+        "label_hi": "पद",
+        "value_en": "SWAYAM July 2026 Semester Examination",
+        "value_hi": "स्वायं जुलाई 2026 सत्र परीक्षा"
       },
       {
-        "label_en": "Apply online (Revised)",
+        "label_en": "Apply Online (Revised)",
         "label_hi": "ऑनलाइन आवेदन (संशोधित)",
         "value_en": "09 October to 05 November 2026",
         "value_hi": "09 अक्टूबर से 05 नवंबर 2026"
@@ -226,33 +230,31 @@
     ],
     "salary": [],
     "selection_en": [
-      "Online registration and application form submission",
-      "Successful fee payment",
-      "Course examination by NTA"
+      "Online registration and application",
+      "Course examination"
     ],
     "selection_hi": [
-      "ऑनलाइन पंजीकरण और आवेदन पत्र जमा करना",
-      "सफल शुल्क भुगतान",
-      "एनटीए द्वारा पाठ्यक्रम परीक्षा"
+      "ऑनलाइन पंजीकरण और आवेदन",
+      "पाठ्यक्रम परीक्षा"
     ],
     "share_card": {
       "headline_en": "Last Date Extended",
-      "headline_hi": "अंतिम तिथि बढ़ी",
+      "headline_hi": "अंतिम तिथि बढ़ाई गई",
       "kind": "corr",
       "line_en": "SWAYAM July 2026 Exam",
       "line_hi": "स्वायं जुलाई 2026 परीक्षा",
       "posts": null
     },
-    "status_en": "Last date extended up to 05 November 2026",
-    "status_hi": "अंतिम तिथि बढ़ाकर 05 नवंबर 2026 कर दी गई है",
-    "summary_en": "NTA has extended the registration and fee submission dates for the SWAYAM July 2026 Semester Exam. Candidates can now apply online until 05 November 2026. Check the revised schedule and correction window details here.",
-    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी द्वारा स्वायं जुलाई 2026 सत्र परीक्षा के लिए पंजीकरण और शुल्क जमा करने की तिथियां बढ़ा दी गई हैं। उम्मीदवार अब 05 नवंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं। संशोधित कार्यक्रम और सुधार विंडो विवरण यहां देखें।",
+    "status_en": "Last date extended to 05 November 2026",
+    "status_hi": "अंतिम तिथि बढ़ाकर 05 नवंबर 2026 की गई",
+    "summary_en": "NTA has extended the registration and fee payment last date for the SWAYAM July 2026 semester exam to 05 November 2026. Aspiring candidates can now apply online through the official portal. Check the revised schedule for application and corrections inside.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने स्वायं जुलाई 2026 सत्र परीक्षा के लिए पंजीकरण और शुल्क भुगतान की अंतिम तिथि बढ़ाकर 05 नवंबर 2026 कर दी है। उम्मीदवार आधिकारिक पोर्टल के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
     "vacancies": [
       {
-        "detail_en": "Various SWAYAM certification courses for the July 2026 semester",
-        "detail_hi": "जुलाई 2026 सत्र के लिए विभिन्न स्वायं प्रमाणन पाठ्यक्रम",
-        "post_en": "SWAYAM July 2026 Semester Exam Courses",
-        "post_hi": "स्वायं जुलाई 2026 सत्र परीक्षा पाठ्यक्रम",
+        "detail_en": "Various SWAYAM Courses",
+        "detail_hi": "विभिन्न स्वायं पाठ्यक्रम",
+        "post_en": "SWAYAM Courses Certification (July 2026 Semester)",
+        "post_hi": "स्वायं पाठ्यक्रम प्रमाणन (जुलाई 2026 सत्र)",
         "total": "As per courses"
       }
     ],

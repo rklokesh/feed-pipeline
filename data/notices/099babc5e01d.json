@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://bpssc.bihar.gov.in/Notices.htm",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Police Sub-Inspector",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal circular or fake news rebuttal notice",
+    "summary_en": "The commission has issued a notice clarifying that news regarding the cancellation of the recruitment exam is fake and baseless.",
+    "summary_hi": "आयोग ने एक सूचना जारी कर स्पष्ट किया है कि भर्ती परीक्षा रद्द होने से संबंधित खबरें फर्जी और निराधार हैं।",
+    "title_en": "BPSSC Police Sub Inspector Advt 05/2025 Notice",
+    "title_hi": "बिहार पुलिस अवर सेवा आयोग विज्ञापन 05/2025 सूचना",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -50,7 +65,7 @@
     "text_kind": "text"
   },
   "source_id": "bpssc-notices",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "21-09-2026 Important Notice-Ref.:Advt. No.-05/2025: Regarding Rebuttal of Fake News Related to Post of Police Sub-Inspector in Home (Police) Dept., Govt. of Bihar",
   "url": "https://bpssc.bihar.gov.in/Orders/notice 05-2025 pdf.pdf"
 }

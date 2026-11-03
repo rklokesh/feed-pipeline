@@ -1,6 +1,28 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://bpssc.bihar.gov.in/Notices.htm",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Police Sub Inspector",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "The main written examination held on 27-05-2026 has been cancelled due to unavoidable reasons. A new exam date will be announced later.",
+    "summary_hi": "अवरिहार्य कारणों से 27-05-2026 को आयोजित मुख्य लिखित परीक्षा रद्द कर दी गई है। परीक्षा की नई तिथि की सूचना बाद में दी जाएगी।",
+    "title_en": "BPSSC Police Sub Inspector Mains Exam Cancelled 2026 – Advt 05/2025",
+    "title_hi": "बीपीएसएससी पुलिस सब इंस्पेक्टर मुख्य परीक्षा रद्द 2026 – विज्ञापन 05/2025",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "bpssc-police-sub-inspector-2025",
+    "name_en": "BPSSC Police Sub Inspector 2025",
+    "name_hi": "बीपीएसएससी पुलिस सब इंस्पेक्टर 2025"
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -41,16 +63,188 @@
   },
   "first_seen": "2026-11-03T16:16:29+00:00",
   "id": "b0d9910aba27",
+  "issue": 986,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-09-23",
   "org": "BPSSC",
+  "page": {
+    "after_en": [
+      "The commission will release a fresh schedule and admit card details for the re-examination on the official website."
+    ],
+    "after_hi": [
+      "आयोग पुन: परीक्षा के लिए आधिकारिक वेबसाइट पर एक नया कार्यक्रम और प्रवेश पत्र विवरण जारी करेगा।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://bpssc.bihar.gov.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Regularly check the official website bpssc.bihar.gov.in for updates",
+      "Beware of touts and report any suspicious individuals to the police"
+    ],
+    "checklist_hi": [
+      "अपडेट के लिए आधिकारिक वेबसाइट bpssc.bihar.gov.in की नियमित रूप से जांच करें",
+      "दलालों से सावधान रहें और ऐसे संदिग्धों के संबंध में पुलिस को सूचित करें"
+    ],
+    "conducted_by_en": "Bihar Police Subordinate Services Commission (BPSSC)",
+    "conducted_by_hi": "बिहार पुलिस अवर सेवा आयोग (बीपीएसएससी)",
+    "dates": [
+      {
+        "label_en": "Cancelled exam date",
+        "label_hi": "रद्द परीक्षा तिथि",
+        "value_en": "27 May 2026",
+        "value_hi": "27 मई 2026"
+      },
+      {
+        "label_en": "Notice issue date",
+        "label_hi": "सूचना जारी होने की तिथि",
+        "value_en": "23 Sep 2026",
+        "value_hi": "23 सितंबर 2026"
+      },
+      {
+        "label_en": "New exam date",
+        "label_hi": "नई परीक्षा तिथि",
+        "value_en": "To be announced later",
+        "value_hi": "बाद में घोषित की जाएगी"
+      }
+    ],
+    "documents_en": [],
+    "documents_hi": [],
+    "eligibility": [],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "The main written examination held on 27-05-2026 has been cancelled by the Bihar Police Subordinate Services Commission due to unavoidable reasons.",
+        "a_hi": "बिहार पुलिस अवर सेवा आयोग द्वारा अपरिहार्य कारणों से 27-05-2026 को आयोजित मुख्य लिखित परीक्षा को रद्द कर दिया गया है।",
+        "q_en": "Why was the BPSSC Police Sub Inspector Mains Exam cancelled?",
+        "q_hi": "बीपीएसएससी पुलिस अवर निरीक्षक मुख्य परीक्षा क्यों रद्द कर दी गई?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Notice Letter Number",
+        "label_hi": "पत्रांक संख्या",
+        "value_en": "1339",
+        "value_hi": "1339"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "Yes, the main written exam held on 27 May 2026 has been cancelled due to unavoidable reasons.",
+        "a_hi": "हाँ, अपरिहार्य कारणों से 27 मई 2026 को आयोजित मुख्य लिखित परीक्षा रद्द कर दी गई है।",
+        "q_en": "Is the BPSSC Police Sub Inspector Mains Exam cancelled?",
+        "q_hi": "क्या बीपीएसएससी पुलिस अवर निरीक्षक मुख्य परीक्षा रद्द हो गई है?"
+      },
+      {
+        "a_en": "The new exam date will be notified separately by the commission on its official website.",
+        "a_hi": "आयोग द्वारा अपनी आधिकारिक वेबसाइट पर नई परीक्षा तिथि की सूचना अलग से दी जाएगी।",
+        "q_en": "When will the new exam date be announced?",
+        "q_hi": "नई परीक्षा तिथि की घोषणा कब की जाएगी?"
+      },
+      {
+        "a_en": "The official website is bpssc.bihar.gov.in.",
+        "a_hi": "आधिकारिक वेबसाइट bpssc.bihar.gov.in है।",
+        "q_en": "What is the official website of BPSSC?",
+        "q_hi": "बीपीएसएससी की आधिकारिक वेबसाइट क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "BPSSC Police Sub Inspector Mains Exam Cancelled 2026 – Advt 05/2025",
+    "h1_hi": "बीपीएसएससी पुलिस सब इंस्पेक्टर मुख्य परीक्षा रद्द 2026 – विज्ञापन 05/2025",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official BPSSC website at bpssc.bihar.gov.in",
+      "Check the notices section for updates regarding the new exam date"
+    ],
+    "how_hi": [
+      "बीपीएसएससी की आधिकारिक वेबसाइट bpssc.bihar.gov.in पर जाएं",
+      "नई परीक्षा तिथि से संबंधित अपडेट के लिए नोटिस सेक्शन देखें"
+    ],
+    "intro_en": "The Bihar Police Subordinate Services Commission (BPSSC) has issued an important notice regarding Advertisement No. 05/2025. The main written examination, which was conducted in two shifts on 27-05-2026, has been cancelled due to unavoidable reasons. Candidates who appeared for the exam are advised that a new examination date will be notified separately on the official website.",
+    "intro_hi": "बिहार पुलिस अवर सेवा आयोग (बीपीएसएससी) ने विज्ञापन संख्या 05/2025 के संबंध में एक महत्वपूर्ण सूचना जारी की है। 27-05-2026 को दो पालियों में आयोजित मुख्य लिखित परीक्षा को अपरिहार्य कारणों से रद्द कर दिया गया है। परीक्षा में शामिल होने वाले उम्मीदवारों को सलाह दी जाती है कि नई परीक्षा तिथि की सूचना आधिकारिक वेबसाइट पर अलग से दी जाएगी।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not believe misleading information or rumours spread by antisocial elements through any medium"
+    ],
+    "mistakes_hi": [
+      "किसी भी माध्यम से असामाजिक तत्वों द्वारा फैलाई जा रही भ्रमित सूचनाओं पर ध्यान न दें"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-09-23",
+    "official_site": "https://bpssc.bihar.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "05/2025",
+        "value_hi": "05/2025"
+      },
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Police Sub Inspector",
+        "value_hi": "पुलिस अवर निरीक्षक"
+      },
+      {
+        "label_en": "Exam Date Cancelled",
+        "label_hi": "रद्द परीक्षा की तिथि",
+        "value_en": "27 May 2026",
+        "value_hi": "27 मई 2026"
+      },
+      {
+        "label_en": "Notice Date",
+        "label_hi": "सूचना दिनांक",
+        "value_en": "23 Sep 2026",
+        "value_hi": "23 सितंबर 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Main Written Examination (Cancelled & To Be Re-conducted)"
+    ],
+    "selection_hi": [
+      "मुख्य लिखित परीक्षा (रद्द और पुनः आयोजित की जाएगी)"
+    ],
+    "share_card": {
+      "headline_en": "Mains Exam Cancelled",
+      "headline_hi": "मुख्य परीक्षा रद्द",
+      "kind": "corr",
+      "line_en": "Police Sub Inspector",
+      "line_hi": "पुलिस अवर निरीक्षक",
+      "posts": null
+    },
+    "status_en": "Mains written examination cancelled",
+    "status_hi": "मुख्य लिखित परीक्षा रद्द",
+    "summary_en": "The main written examination held on 27-05-2026 for Police Sub Inspector under Advertisement No. 05/2025 has been cancelled due to unavoidable reasons. A new exam date will be announced later by the commission.",
+    "summary_hi": "विज्ञापन संख्या 05/2025 के अंतर्गत पुलिस अवर निरीक्षक के लिए 27-05-2026 को आयोजित मुख्य लिखित परीक्षा अपरिहार्य कारणों से रद्द कर दी गई है। आयोग द्वारा परीक्षा की नई तिथि की सूचना बाद में दी जाएगी।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Candidates who applied for BPSSC Police Sub Inspector Advt 05/2025 and appeared for the mains exam on 27 May 2026"
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जिन्होंने बीपीएसएससी पुलिस अवर निरीक्षक विज्ञापन 05/2025 के लिए आवेदन किया था और 27 मई 2026 को मुख्य परीक्षा में शामिल हुए थे"
+    ]
+  },
   "pdf": {
     "bytes": 302462,
     "pages": 1,
     "sha256": "f25c32798327724cb7473a162af8e79bd459e42d5be9f0f5cb698493ac81a251",
     "text_kind": "text"
   },
+  "published_at": "2026-11-03T16:39:15Z",
+  "qual": [
+    "graduate"
+  ],
+  "slug": "bpssc-police-sub-inspector-mains-exam-cancelled-2026-advt-05-202",
   "source_id": "bpssc-notices",
-  "status": "pending_review",
+  "status": "approved",
   "title": "23-09-2026 Important Notice-Ref.:Advt. No.-05/2025: Regarding Cancellation of Mains Written Examination",
   "url": "https://bpssc.bihar.gov.in/Orders/Exam Cancel Pdf.pdf"
 }

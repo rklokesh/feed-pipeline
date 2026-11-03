@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://sssc.uk.gov.in/recruitment-notification/",
+  "card": {
+    "confidence": "low",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Blank notice with no discernible recruitment or job details",
+    "summary_en": "This notice contains no recruitment details.",
+    "summary_hi": "इस नोटिस में कोई भर्ती विवरण नहीं है।",
+    "title_en": "UKSSSC Notice",
+    "title_hi": "UKSSSC नोटिस",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +31,7 @@
     "text_kind": "scanned"
   },
   "source_id": "uksssc-recruitment",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Accessible Version : View (1 MB)",
   "url": "https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/10/202610251345667448.pdf"
 }
