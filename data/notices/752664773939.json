@@ -32,67 +32,90 @@
   "page": {
     "after_en": [
       "Review of submitted objections by subject experts",
-      "Declaration of final answer key and result"
+      "Release of final answer key and written exam result"
     ],
     "after_hi": [
-      "विषय विशेषज्ञों द्वारा दर्ज कराई गई आपत्तियों की समीक्षा",
-      "अंतिम उत्तर कुंजी और परिणाम की घोषणा"
+      "विषय विशेषज्ञों द्वारा प्रस्तुत आपत्तियों की समीक्षा",
+      "अंतिम उत्तर कुंजी और लिखित परीक्षा परिणाम की घोषणा"
     ],
     "age": [],
     "apply_start": null,
-    "apply_url": null,
+    "apply_url": "https://mppsc.mp.gov.in/",
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Keep your exam question booklet handy to match set codes",
-      "Check answers set-wise (Set A, B, C, D)"
+      "Keep your question paper and set details ready",
+      "Note down the objection deadline from the date of publication"
     ],
     "checklist_hi": [
-      "सेट कोड का मिलान करने के लिए अपनी परीक्षा प्रश्न पुस्तिका साथ रखें",
-      "सेट-वार उत्तरों की जांच करें (सेट ए, बी, सी, डी)"
+      "अपना प्रश्न पत्र और सेट विवरण तैयार रखें",
+      "प्रकाशन की तिथि से आपत्ति की समय सीमा नोट कर लें"
     ],
     "conducted_by_en": "Madhya Pradesh Public Service Commission (MPPSC)",
     "conducted_by_hi": "मध्य प्रदेश लोक सेवा आयोग (एमपीपीएससी)",
     "dates": [
       {
-        "label_en": "Exam Date",
+        "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "01 Nov 2026",
-        "value_hi": "01 नव 2026"
+        "value_hi": "01 नवंबर 2026"
       },
       {
-        "label_en": "Notice Date",
-        "label_hi": "सूचना तिथि",
+        "label_en": "Notice date",
+        "label_hi": "नोटिस तिथि",
         "value_en": "02 Nov 2026",
-        "value_hi": "02 नव 2026"
+        "value_hi": "02 नवंबर 2026"
+      },
+      {
+        "label_en": "Objection last date",
+        "label_hi": "आपत्ति की अंतिम तिथि",
+        "value_en": "Within 5 days of publication",
+        "value_hi": "प्रकाशन के 5 दिन के भीतर"
       }
     ],
-    "documents_en": [],
-    "documents_hi": [],
+    "documents_en": [
+      "Reference book name",
+      "Author name",
+      "Relevant page of reference book",
+      "Publication year and edition"
+    ],
+    "documents_hi": [
+      "संदर्भ ग्रंथ का नाम",
+      "पुस्तक के लेखक का नाम",
+      "संदर्भ पुस्तक का संबंधित पृष्ठ",
+      "प्रकाशन वर्ष और संस्करण"
+    ],
     "eligibility": [],
     "exam_date": "2026-11-01",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "The provisional answer key contains the correct answers to the questions asked in the Assistant District Public Prosecution Officer Exam 2026, allowing candidates to estimate their scores and raise objections if they find any discrepancies.",
-        "a_hi": "अनंतिम उत्तर कुंजी में सहायक जिला लोक अभियोजन अधिकारी परीक्षा 2026 में पूछे गए प्रश्नों के सही उत्तर होते हैं, जिससे उम्मीदवार अपने अंकों का अनुमान लगा सकते हैं और यदि कोई त्रुटि पाई जाती है तो आपत्ति दर्ज करा सकते हैं।",
-        "q_en": "What is the MPPSC ADPPO Provisional Answer Key?",
-        "q_hi": "एमपीपीएससी एडीपीपीओ अनंतिम उत्तर कुंजी क्या है?"
+        "a_en": "It is the provisional list of correct answers released by the Madhya Pradesh Public Service Commission for the written examination. Candidates can use it to estimate their scores and raise objections against any discrepancy.",
+        "a_hi": "यह लिखित परीक्षा के लिए मध्य प्रदेश लोक सेवा आयोग द्वारा जारी किए गए सही उत्तरों की अनंतिम सूची है। उम्मीदवार इसका उपयोग अपने अंकों का अनुमान लगाने और किसी भी विसंगति के खिलाफ आपत्ति उठाने के लिए कर सकते हैं।",
+        "q_en": "What is the MPPSC Assistant District Public Prosecution Officer Answer Key?",
+        "q_hi": "एमपीपीएससी सहायक जिला लोक अभियोजन अधिकारी उत्तर कुंजी क्या है?"
       }
     ],
-    "extra": [],
+    "extra": [
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन क्रमांक",
+        "value_en": "03/2026",
+        "value_hi": "03/2026"
+      }
+    ],
     "faq": [
       {
-        "a_en": "The exam was conducted on 01 November 2026.",
+        "a_en": "The exam was held on 01 November 2026.",
         "a_hi": "परीक्षा 01 नवंबर 2026 को आयोजित की गई थी।",
-        "q_en": "When was the MPPSC ADPPO Exam 2026 conducted?",
-        "q_hi": "एमपीपीएससी एडीपीपीओ परीक्षा 2026 कब आयोजित की गई थी?"
+        "q_en": "When was the MPPSC Assistant District Public Prosecution Officer Exam 2026 held?",
+        "q_hi": "एमपीपीएससी सहायक जिला लोक अभियोजन अधिकारी परीक्षा 2026 कब आयोजित की गई थी?"
       },
       {
-        "a_en": "You can download the provisional answer key PDF from the official MPPSC website at www.mppsc.mp.gov.in.",
-        "a_hi": "आप आधिकारिक एमपीपीएससी वेबसाइट www.mppsc.mp.gov.in से अनंतिम उत्तर कुंजी पीडीएफ डाउनलोड कर सकते हैं।",
-        "q_en": "How can I check the provisional answer key?",
-        "q_hi": "मैं अनंतिम उत्तर कुंजी कैसे देख सकता हूं?"
+        "a_en": "Objections can be submitted online through the MPPSC website with valid references and prescribed fee within 5 days of publication.",
+        "a_hi": "प्रकाशन के 5 दिनों के भीतर वैध संदर्भों और निर्धारित शुल्क के साथ एमपीपीएससी वेबसाइट के माध्यम से ऑनलाइन आपत्तियां दर्ज की जा सकती हैं।",
+        "q_en": "How can I submit objections to the provisional answer key?",
+        "q_hi": "मैं अनंतिम उत्तर कुंजी पर आपत्तियां कैसे दर्ज कर सकता हूं?"
       }
     ],
     "fees": [],
@@ -100,20 +123,28 @@
     "h1_hi": "मध्य प्रदेश लोक सेवा आयोग सहायक जिला लोक अभियोजन अधिकारी आंसर की 2026",
     "hindi_notice_url": null,
     "how_en": [
-      "Go to the official MPPSC website: www.mppsc.mp.gov.in",
-      "Click on the provisional answer key link for Assistant District Public Prosecution Officer Exam 2026",
-      "Download the answer key PDF and match your answers according to your set (Set A, B, C, or D)"
+      "Visit the official MPPSC website at www.mppsc.mp.gov.in",
+      "Go to the answer key section for Assistant District Public Prosecution Officer Exam 2026",
+      "Download and check the provisional answer key for your respective set",
+      "Submit online objections with authentic references and fee within 5 days if required"
     ],
     "how_hi": [
-      "एमपीपीएससी की आधिकारिक वेबसाइट पर जाएं: www.mppsc.mp.gov.in",
-      "सहायक जिला लोक अभियोजन अधिकारी परीक्षा 2026 की अनंतिम उत्तर कुंजी लिंक पर क्लिक करें",
-      "उत्तर कुंजी पीडीएफ डाउनलोड करें और अपने सेट के अनुसार उत्तरों का मिलान करें"
+      "एमपीपीएससी की आधिकारिक वेबसाइट www.mppsc.mp.gov.in पर जाएं",
+      "सहायक जिला लोक अभियोजन अधिकारी परीक्षा 2026 के उत्तर कुंजी अनुभाग पर जाएं",
+      "अपने संबंधित सेट के लिए अनंतिम उत्तर कुंजी डाउनलोड करें और जांचें",
+      "यदि आवश्यक हो तो 5 दिनों के भीतर प्रामाणिक संदर्भों और शुल्क के साथ ऑनलाइन आपत्ति दर्ज करें"
     ],
-    "intro_en": "The Madhya Pradesh Public Service Commission (MPPSC) has published the provisional answer key for the Assistant District Public Prosecution Officer (ADPPO) Exam 2026. The examination was conducted on 01 November 2026 under Advertisement Number 03/2026. Candidates who appeared for the exam can check the provisional answer keys for all sets (Set A, B, C, D) through the official MPPSC website. Objections regarding the answer key can be submitted online within the stipulated time.",
-    "intro_hi": "मध्य प्रदेश लोक सेवा आयोग (एमपीपीएससी) ने सहायक जिला लोक अभियोजन अधिकारी (एडीपीपीओ) परीक्षा 2026 के लिए अनंतिम उत्तर कुंजी जारी कर दी है। यह परीक्षा विज्ञापन संख्या 03/2026 के तहत 01 नवंबर 2026 को आयोजित की गई थी। परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक वेबसाइट पर जाकर सभी सेट (सेट ए, बी, सी, डी) की उत्तर कुंजी देख सकते हैं।",
+    "intro_en": "The Madhya Pradesh Public Service Commission (MPPSC) has published the provisional answer key for the Assistant District Public Prosecution Officer Exam 2026. The examination was conducted in a single session on 01 November 2026 under advertisement number 03/2026. Candidates can review the answer key for sets A, B, C, and D of General Studies and Law. Objections, if any, can be submitted online with required documentary proof and prescribed fee within 5 days from the date of publication on the official website.",
+    "intro_hi": "मध्य प्रदेश लोक सेवा आयोग (एमपीपीएससी) ने सहायक जिला लोक अभियोजन अधिकारी परीक्षा 2026 के लिए अनंतिम उत्तर कुंजी प्रकाशित कर दी है। यह परीक्षा विज्ञापन क्रमांक 03/2026 के अंतर्गत 01 नवंबर 2026 को एक ही सत्र में आयोजित की गई थी। उम्मीदवार सामान्य अध्ययन और विधि के सेट A, सेट B, सेट C और सेट D के लिए उत्तर कुंजी की जांच कर सकते हैं। यदि कोई आपत्ति है, तो आधिकारिक वेबसाइट पर प्रकाशन की तिथि से 5 दिनों के भीतर आवश्यक दस्तावेजों के प्रमाण और निर्धारित शुल्क के साथ ऑनलाइन आपत्ति दर्ज कराई जा सकती है।",
     "last_date": null,
-    "mistakes_en": [],
-    "mistakes_hi": [],
+    "mistakes_en": [
+      "Submitting objections without proper documentary proof or reference books",
+      "Failing to submit objections within the 5-day window"
+    ],
+    "mistakes_hi": [
+      "उचित दस्तावेजी प्रमाण या संदर्भ पुस्तकों के बिना आपत्तियां दर्ज करना",
+      "5 दिन की समय सीमा के भीतर आपत्तियां जमा करने में विफल रहना"
+    ],
     "not_en": [],
     "not_hi": [],
     "notice_date": "2026-11-02",
@@ -122,60 +153,52 @@
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Exam Name",
-        "label_hi": "परीक्षा का नाम",
-        "value_en": "Assistant District Public Prosecution Officer Exam 2026",
-        "value_hi": "सहायक जिला लोक अभियोजन अधिकारी परीक्षा 2026"
-      },
-      {
-        "label_en": "Advertisement Number",
-        "label_hi": "विज्ञापन संख्या",
-        "value_en": "03/2026",
-        "value_hi": "03/2026"
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Assistant District Public Prosecution Officer",
+        "value_hi": "सहायक जिला लोक अभियोजन अधिकारी"
       },
       {
         "label_en": "Exam Date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "01 Nov 2026",
-        "value_hi": "01 नव 2026"
+        "value_hi": "01 नवंबर 2026"
       },
       {
         "label_en": "Notice Date",
-        "label_hi": "सूचना तिथि",
+        "label_hi": "नोटिस तिथि",
         "value_en": "02 Nov 2026",
-        "value_hi": "02 नव 2026"
+        "value_hi": "02 नवंबर 2026"
       }
     ],
     "salary": [],
     "selection_en": [
-      "Written Exam",
-      "Answer Key and Objections",
-      "Final Result"
+      "Written Examination",
+      "Document Verification and Interview"
     ],
     "selection_hi": [
       "लिखित परीक्षा",
-      "उत्तर कुंजी और आपत्तियां",
-      "अंतिम परिणाम"
+      "दस्तावेज़ सत्यापन और साक्षात्कार"
     ],
     "share_card": {
       "headline_en": "Answer Key Released",
-      "headline_hi": "उत्तर कुंजी जारी",
+      "headline_hi": "आंसर की जारी",
       "kind": "answer",
       "line_en": "ADPPO Exam 2026",
       "line_hi": "एडीपीपीओ परीक्षा 2026",
       "posts": null
     },
-    "status_en": "Provisional answer key released",
-    "status_hi": "अनंतिम उत्तर कुंजी जारी",
-    "summary_en": "The Madhya Pradesh Public Service Commission has released the provisional answer key for the Assistant District Public Prosecution Officer Exam 2026. Candidates can check the answer key and submit objections if any.",
-    "summary_hi": "मध्य प्रदेश लोक सेवा आयोग ने सहायक जिला लोक अभियोजन अधिकारी परीक्षा 2026 के लिए अनंतिम उत्तर कुंजी जारी कर दी है। उम्मीदवार उत्तर कुंजी की जांच कर सकते हैं और यदि कोई आपत्ति हो तो दर्ज करा सकते हैं।",
+    "status_en": "Provisional answer key released, objections open till 5 days from publication",
+    "status_hi": "अनंतिम उत्तर कुंजी जारी, प्रकाशन से 5 दिनों तक आपत्तियां खुली हैं",
+    "summary_en": "The Madhya Pradesh Public Service Commission has released the provisional answer key for the Assistant District Public Prosecution Officer Exam 2026. Candidates who appeared for the exam held on 01 Nov 2026 can check the answer key and submit online objections within 5 days.",
+    "summary_hi": "मध्य प्रदेश लोक सेवा आयोग ने सहायक जिला लोक अभियोजन अधिकारी परीक्षा 2026 के लिए अनंतिम उत्तर कुंजी जारी कर दी है। 01 नवंबर 2026 को आयोजित परीक्षा में शामिल होने वाले उम्मीदवार उत्तर कुंजी की जांच कर सकते हैं और 5 दिनों के भीतर ऑनलाइन आपत्ति दर्ज करा सकते हैं।",
     "vacancies": [],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the MPPSC ADPPO Exam 2026"
+      "Candidates who appeared for the MPPSC Assistant District Public Prosecution Officer Exam 2026"
     ],
     "who_hi": [
-      "वे उम्मीदवार जो एमपीपीएससी एडीपीपीओ परीक्षा 2026 में शामिल हुए थे"
+      "वे उम्मीदवार जो एमपीपीएससी सहायक जिला लोक अभियोजन अधिकारी परीक्षा 2026 में शामिल हुए थे"
     ]
   },
   "pdf": {
@@ -185,10 +208,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-03T08:32:00Z",
-  "qual": [
-    "graduate"
-  ],
-  "rewrite": true,
   "slug": "mppsc-assistant-district-public-prosecution-officer-answer-key-2",
   "source_id": "mppsc-home",
   "status": "approved",
