@@ -314,3 +314,12 @@ SEO shows 69 only because of the pre-launch noindex (the one failing check); go_
   removed from every file in every commit. Secrets were never committed (scanned all history); they stay in GitHub secrets.
 - No licence file on purpose: public code without a licence stays all-rights-reserved.
 - setup-timer.sh / setup-runner.sh point at the new name; the Mac timer needs `bash setup-timer.sh` once to pick it up.
+
+## 3l. Why nothing new appeared 31 Oct - 3 Nov (fixed 3 Nov)
+1. GitHub minutes ran out (fixed by going public, 3k).
+2. CISF puts a fresh encrypted token in every link, so each 30-minute check "found" its 2 notices again: 1,570 records,
+   ~430 waiting for an AI card, burning the free AI quota. Fix: `key: title` in sources.yaml (watch.py `ukey()`), PDFs pasted
+   inside CISF's viewer page are read directly, repeats folded into `duplicate`.
+3. Since retype.py (3h) wrote reports/retype.txt, prepare's Save step had an unsaved file and every `git pull --rebase` failed
+   silently. Save now adds `reports/`, fails loudly, and posts the git error as a comment on the "Daily health report" issue.
+   data/debug-prepare.txt shows each run's card count / failures.
