@@ -242,9 +242,17 @@
   "qual": [
     "postgraduate"
   ],
+  "rewrite": true,
   "slug": "dsssb-pgt-history-supplementary-result-2026-post-code-811-23",
   "source_id": "dsssb-home",
   "status": "approved",
   "title": "SUPPLEMENTARY RESULT NOTICE NO_1669. Combined Examination Post Code: 811/23 Post Name PGT (History)-Male & PGT (History)-Female in DoE and PGT (History) in NDMC Date: 02-11-2026 | 1.09 MB Download",
-  "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/notice_1669.pdf"
+  "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/notice_1669.pdf",
+  "verify": {
+    "at": "2026-11-03",
+    "missing": [
+      "Exam date: 2025-07-31"
+    ],
+    "tries": 1
+  }
 }

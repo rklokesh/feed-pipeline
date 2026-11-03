@@ -270,9 +270,18 @@
     "graduate",
     "postgraduate"
   ],
+  "rewrite": true,
   "slug": "dsssb-pgt-maths-result-2026-post-code-825-24-final-list-out",
   "source_id": "dsssb-home",
   "status": "approved",
   "title": "RESULT NOTICE No: 386 POST CODE: 825/24, PGT (Maths) - Male & PGT (Maths) - Female in Directorate of Education, GNCTD Date: 30-10-2026 | 1.28 MB Download",
-  "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/result_no_386-825_24.pdf"
+  "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/result_no_386-825_24.pdf",
+  "verify": {
+    "at": "2026-11-03",
+    "missing": [
+      "Exam date: 2026-04-12",
+      "Vacancies: PGT (Maths) - Male: 21"
+    ],
+    "tries": 1
+  }
 }

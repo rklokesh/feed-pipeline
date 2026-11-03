@@ -394,9 +394,17 @@
   "qual": [
     "graduate"
   ],
+  "rewrite": true,
   "slug": "ibps-specialist-officers-crp-spl-xvi-recruitment-2027",
   "source_id": "ibps-home",
   "status": "approved",
   "title": "CRP- SPL-XVI Posted on 01 Jul, 2026",
-  "url": "https://www.ibps.in/wp-content/uploads/Detailed-Notification-CRP-SPL-XVI_Final_V1_30.06.2026.pdf"
+  "url": "https://www.ibps.in/wp-content/uploads/Detailed-Notification-CRP-SPL-XVI_Final_V1_30.06.2026.pdf",
+  "verify": {
+    "at": "2026-11-03",
+    "missing": [
+      "Exam date: shown as 2026-08-01 but the PDF gives only the month"
+    ],
+    "tries": 1
+  }
 }

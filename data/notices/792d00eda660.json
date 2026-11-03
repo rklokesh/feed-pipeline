@@ -256,9 +256,17 @@
     "diploma",
     "graduate"
   ],
+  "rewrite": true,
   "slug": "dsssb-computer-lab-it-assistant-result-2026-post-code-96-23-out",
   "source_id": "dsssb-home",
   "status": "approved",
   "title": "RESULT NOTICE No: 384 For Post code: 96/23, Computer Lab/IT Assistant in New Delhi Municipal Council Date: 29-10-2026 | 1.65 MB Download",
-  "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/result_notice_384_96-23.pdf"
+  "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/result_notice_384_96-23.pdf",
+  "verify": {
+    "at": "2026-11-03",
+    "missing": [
+      "Application closing date: 2023-12-20"
+    ],
+    "tries": 1
+  }
 }

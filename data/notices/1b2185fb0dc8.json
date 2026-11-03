@@ -400,9 +400,17 @@
   "qual": [
     "graduate"
   ],
+  "rewrite": true,
   "slug": "sbi-junior-associate-recruitment-2026",
   "source_id": "sbi-careers",
   "status": "approved",
   "title": "DOWNLOAD ADVERTISEMENT( HINDI (645 KB) / English) (959 KB) (NEW)",
-  "url": "https://sbi.bank.in/webfiles/uploads/files_2627/08/JA_2026_Detailed_Advt_Eng.pdf"
+  "url": "https://sbi.bank.in/webfiles/uploads/files_2627/08/JA_2026_Detailed_Advt_Eng.pdf",
+  "verify": {
+    "at": "2026-11-03",
+    "missing": [
+      "Exam date: shown as 2026-09-01 but the PDF gives only the month"
+    ],
+    "tries": 1
+  }
 }

@@ -274,9 +274,17 @@
   },
   "published_at": "2026-10-24T11:13:06Z",
   "qual": [],
+  "rewrite": true,
   "slug": "ssc-grade-c-stenographers-ldce-2025-tentative-vacancies",
   "source_id": "ssc-notice-board",
   "status": "approved",
   "title": "Tentative Vacancy of Grade 'C' Stenographers Limited Departmental Competitive Examination, 2025",
-  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/tentative_vacancies_24102026.pdf"
+  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/tentative_vacancies_24102026.pdf",
+  "verify": {
+    "at": "2026-11-03",
+    "missing": [
+      "Total vacancies: 314"
+    ],
+    "tries": 1
+  }
 }

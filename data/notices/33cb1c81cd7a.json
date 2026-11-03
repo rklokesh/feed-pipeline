@@ -291,9 +291,17 @@
   "qual": [
     "10th"
   ],
+  "rewrite": true,
   "slug": "ssc-constable-gd-2026-pet-pst-shortlisting-result",
   "source_id": "ssc-notice-board",
   "status": "approved",
   "title": "Constable (GD) in Central Armed Police Forces (CAPFs) and SSF, and Rifleman (GD) in Assam Rifles Examination, 2026– Shortlisting of candidates to appear in Physical Efficiency Test (PET)/Physical Standard Test (PST)",
-  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_12102026.pdf"
+  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_12102026.pdf",
+  "verify": {
+    "at": "2026-11-03",
+    "missing": [
+      "Vacancies: Constable (GD) & Rifleman (GD): 215677"
+    ],
+    "tries": 1
+  }
 }
