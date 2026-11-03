@@ -1,5 +1,27 @@
 {
+  "auto_published": true,
   "board_url": "https://uppsc.up.nic.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-17",
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant Teacher, Trained Graduate Grade (Male/Female Branch)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Uttar Pradesh Public Service Commission has announced document verification dates and schedule for Assistant Teacher Trained Graduate Grade Exam 2025.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने सहायक अध्यापक प्रशिक्षित स्नातक श्रेणी परीक्षा 2025 के लिए दस्तावेज सत्यापन की तिथियां और शेड्यूल घोषित कर दिया है।",
+    "title_en": "UPPSC Assistant Teacher DV Schedule 2026 – Check Dates",
+    "title_hi": "यूपीपीएससी सहायक अध्यापक डीवी शेड्यूल 2026 – तिथियां देखें",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "uppsc-assistant-teacher-2025",
+    "name_en": "UPPSC Assistant Teacher 2025",
+    "name_hi": "यूपीपीएससी सहायक शिक्षक 2025"
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -43,16 +65,185 @@
   },
   "first_seen": "2026-11-03T08:28:22+00:00",
   "id": "6df143cf8a1e",
+  "issue": 930,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-03",
   "org": "UPPSC",
+  "page": {
+    "after_en": [
+      "Final merit list and appointment process"
+    ],
+    "after_hi": [
+      "अंतिम मेरिट सूची और नियुक्ति प्रक्रिया"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://uppsc.up.nic.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Authenticate using OTR on the official website",
+      "Print the complete form set and detail form",
+      "Keep all original certificates and self-attested photocopies ready"
+    ],
+    "checklist_hi": [
+      "आधिकारिक वेबसाइट पर ओटीआर का उपयोग करके प्रमाणीकरण करें",
+      "पूर्ण फॉर्म सेट और विवरण फॉर्म प्रिंट करें",
+      "सभी मूल प्रमाण पत्र और स्व-सत्यापित फोटोकॉपी तैयार रखें"
+    ],
+    "conducted_by_en": "Uttar Pradesh Public Service Commission (UPPSC)",
+    "conducted_by_hi": "उत्तर प्रदेश लोक सेवा आयोग (यूपीपीएससी)",
+    "dates": [
+      {
+        "label_en": "Document Verification Start Date",
+        "label_hi": "दस्तावेज़ सत्यापन प्रारंभ तिथि",
+        "value_en": "17 Nov 2026",
+        "value_hi": "17 नव 2026"
+      },
+      {
+        "label_en": "Document Verification End Date",
+        "label_hi": "दस्तावेज़ सत्यापन अंतिम तिथि",
+        "value_en": "20 Nov 2026",
+        "value_hi": "20 नव 2026"
+      }
+    ],
+    "documents_en": [
+      "Complete form set downloaded from the applicant dashboard",
+      "Educational qualification certificates and marksheets",
+      "Valid photo identity proof",
+      "Category certificates if applicable"
+    ],
+    "documents_hi": [
+      "आवेदक डैशबोर्ड से डाउनलोड किया गया पूर्ण फॉर्म सेट",
+      "शैक्षणिक योग्यता प्रमाण पत्र और अंक पत्र",
+      "वैध फोटो पहचान प्रमाण",
+      "श्रेणी प्रमाण पत्र यदि लागू हो"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-11-17",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is the document verification process for candidates who qualified the Assistant Teacher Trained Graduate Grade Exam 2025 conducted by UPPSC.",
+        "a_hi": "यह यूपीपीएससी द्वारा आयोजित सहायक अध्यापक प्रशिक्षित स्नातक श्रेणी परीक्षा 2025 में उत्तीर्ण उम्मीदवारों के लिए दस्तावेज सत्यापन प्रक्रिया है।",
+        "q_en": "What is UPPSC Assistant Teacher DV?",
+        "q_hi": "यूपीपीएससी सहायक अध्यापक डीवी क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "The document verification is scheduled from 17 November 2026 to 20 November 2026.",
+        "a_hi": "दस्तावेज़ सत्यापन 17 नवंबर 2026 से 20 नवंबर 2026 तक निर्धारित है।",
+        "q_en": "When is the UPPSC Assistant Teacher document verification scheduled?",
+        "q_hi": "यूपीपीएससी सहायक अध्यापक दस्तावेज सत्यापन कब निर्धारित है?"
+      },
+      {
+        "a_en": "You can download it from the official UPPSC website at https://uppsc.up.nic.in by logging into your applicant dashboard using your OTR number.",
+        "a_hi": "आप अपने ओटीआर नंबर का उपयोग करके अपने आवेदक डैशबोर्ड में लॉग इन करके आधिकारिक यूपीपीएससी वेबसाइट https://uppsc.up.nic.in से इसे डाउनलोड कर सकते हैं।",
+        "q_en": "Where can I download the document verification form set?",
+        "q_hi": "मैं दस्तावेज़ सत्यापन फॉर्म सेट कहां से डाउनलोड कर सकता हूं?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "UPPSC Assistant Teacher DV Schedule 2026 – Check Dates",
+    "h1_hi": "यूपीपीएससी सहायक अध्यापक डीवी शेड्यूल 2026 – तिथियां देखें",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official UPPSC website at https://uppsc.up.nic.in",
+      "Click on 'Click here for Advt. No. A-5/E-1/2025, Assistant Teacher... Exam-2025 Document Verification'",
+      "Click on 'Click here to Authenticate' and enter your OTR Number",
+      "Go to 'Applicant Dashboard', check latest status, and click 'Proceed to Print Complete Form Set for Document Verification'",
+      "Print the form set and attend the document verification on your scheduled date and shift with required documents"
+    ],
+    "how_hi": [
+      "आधिकारिक यूपीपीएससी वेबसाइट https://uppsc.up.nic.in पर जाएं",
+      "'Click here for Advt. No. A-5/E-1/2025, Assistant Teacher... Exam-2025 Document Verification' पर क्लिक करें",
+      "'Click here to Authenticate' पर क्लिक करें और अपना ओटीआर नंबर दर्ज करें",
+      "'Applicant Dashboard' पर जाएं, नवीनतम स्थिति की जांच करें और 'Proceed to Print Complete Form Set for Document Verification' पर क्लिक करें",
+      "फॉर्म सेट प्रिंट करें और निर्धारित तिथि व पाली में आवश्यक दस्तावेजों के साथ दस्तावेज सत्यापन में उपस्थित हों"
+    ],
+    "intro_en": "The Uttar Pradesh Public Service Commission (UPPSC) has announced the document verification dates for the Assistant Teacher Trained Graduate Grade (Male/Female Branch) Exam-2025. The verification process is scheduled from 17 November 2026 to 20 November 2026 in two shifts. Qualified candidates as per their roll numbers must authenticate via OTR on the official website and print their complete form set for document verification along with required documents.",
+    "intro_hi": "उत्तर प्रदेश लोक सेवा आयोग (यूपीपीएससी) ने सहायक अध्यापक प्रशिक्षित स्नातक श्रेणी (पुरुष/महिला शाखा) परीक्षा-2025 के लिए दस्तावेज सत्यापन तिथियों की घोषणा कर दी है। सत्यापन प्रक्रिया 17 नवंबर 2026 से 20 नवंबर 2026 तक दो पालियों में आयोजित की जाएगी। रोल नंबर के अनुसार योग्य उम्मीदवारों को आधिकारिक वेबसाइट पर ओटीआर के माध्यम से प्रमाणीकरण करना होगा और दस्तावेज सत्यापन के लिए अपना पूरा फॉर्म सेट प्रिंट करना होगा।",
+    "last_date": null,
+    "mistakes_en": [
+      "Failing to bring the required number of copies and sets of documents as specified in the instructions",
+      "Not authenticating via OTR before printing the form set"
+    ],
+    "mistakes_hi": [
+      "निर्देशों में निर्दिष्ट दस्तावेजों की आवश्यक प्रतियों और सेटों को लाने में विफल होना",
+      "फॉर्म सेट प्रिंट करने से पहले ओटीआर के माध्यम से प्रमाणीकरण न करना"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-06",
+    "official_site": "https://uppsc.up.nic.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Exam Name",
+        "label_hi": "परीक्षा का नाम",
+        "value_en": "Assistant Teacher Trained Graduate Grade Exam 2025",
+        "value_hi": "सहायक अध्यापक प्रशिक्षित स्नातक श्रेणी परीक्षा 2025"
+      },
+      {
+        "label_en": "Document Verification Dates",
+        "label_hi": "दस्तावेज़ सत्यापन तिथियां",
+        "value_en": "17 Nov 2026 to 20 Nov 2026",
+        "value_hi": "17 नव 2026 से 20 नव 2026"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "A-5/E-1/2025",
+        "value_hi": "A-5/E-1/2025"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Written Examination",
+      "Document Verification"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा",
+      "दस्तावेज़ सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "DV Schedule Out",
+      "headline_hi": "डीवी शेड्यूल जारी",
+      "kind": "sched",
+      "line_en": "Assistant Teacher DV 2025",
+      "line_hi": "सहायक अध्यापक डीवी 2025",
+      "posts": null
+    },
+    "status_en": "Document verification schedule released",
+    "status_hi": "दस्तावेज़ सत्यापन शेड्यूल जारी",
+    "summary_en": "Uttar Pradesh Public Service Commission has released the document verification schedule for Assistant Teacher Trained Graduate Grade Exam 2025. The verification will be held from 17 November 2026 to 20 November 2026. Candidates must check their roll number wise schedule and download their complete form set.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने सहायक अध्यापक प्रशिक्षित स्नातक श्रेणी परीक्षा 2025 के लिए दस्तावेज सत्यापन का शेड्यूल जारी कर दिया है। सत्यापन 17 नवंबर 2026 से 20 नवंबर 2026 तक आयोजित किया जाएगा। उम्मीदवार रोल नंबर के अनुसार अपना शेड्यूल देखें और फॉर्म सेट डाउनलोड करें।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Candidates who cleared the UPPSC Assistant Teacher Trained Graduate Grade Exam 2025"
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जिन्होंने यूपीपीएससी सहायक अध्यापक प्रशिक्षित स्नातक श्रेणी परीक्षा 2025 उत्तीर्ण की है"
+    ]
+  },
   "pdf": {
     "bytes": 9068413,
     "pages": 2,
     "sha256": "239bb9798f24ca183bb9743a781a3b146ac79cfb2ccac0db6cd23749bda0171f",
     "text_kind": "text"
   },
+  "published_at": "2026-11-03T08:31:53Z",
+  "qual": [
+    "graduate"
+  ],
+  "slug": "uppsc-assistant-teacher-dv-schedule-2026-check-dates",
   "source_id": "uppsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1. NOTICE REAGARDING DOCUMENT VERIFICATION FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TE.. Visible upto : 20/11/2026",
   "url": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnfpuRH59X6Aa5hvlYnkkej"
 }

@@ -1,5 +1,27 @@
 {
+  "auto_published": true,
   "board_url": "https://nta.ac.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-11-04",
+    "list": true,
+    "posts": "Junior Research Fellowship and Assistant Professor",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "National Testing Agency opened the application form correction window for UGC NET December 2026. Registered candidates can make corrections through the official website by 04 November 2026.",
+    "summary_hi": "राष्ट्रीय परीक्षण एजेंसी ने यूजीसी नेट दिसंबर 2026 के लिए आवेदन पत्र सुधार विंडो खोल दी है। पंजीकृत उम्मीदवार 04 नवंबर 2026 तक आधिकारिक वेबसाइट के माध्यम से सुधार कर सकते हैं।",
+    "title_en": "UGC NET December 2026 Application Form Correction Window Open",
+    "title_hi": "यूजीसी नेट दिसंबर 2026 आवेदन पत्र सुधार विंडो खुली",
+    "type": "Admission",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "ugc-net-dec-2026",
+    "name_en": "UGC-NET December 2026",
+    "name_hi": "यूजीसी-नेट दिसंबर 2026"
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -44,16 +66,229 @@
   },
   "first_seen": "2026-11-02T09:58:01+00:00",
   "id": "3e5e33785ac2",
+  "issue": 929,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-02",
   "org": "NTA",
+  "page": {
+    "after_en": [
+      "Successful submission of corrections will freeze the application form, and NTA will proceed with the examination schedule."
+    ],
+    "after_hi": [
+      "सुधारों का सफल सबमिशन आवेदन पत्र को फ्रीज कर देगा, और एनटीए परीक्षा कार्यक्रम के साथ आगे बढ़ेगा।"
+    ],
+    "age": [],
+    "apply_start": "2026-11-02",
+    "apply_url": "https://ugcnet.nta.nic.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check permitted fields before making changes.",
+      "Keep online payment ready for any extra fee.",
+      "Submit before 04 November 2026."
+    ],
+    "checklist_hi": [
+      "परिवर्तन करने से पहले अनुमति प्राप्त फ़ील्ड की जाँच करें।",
+      "किसी भी अतिरिक्त शुल्क के लिए ऑनलाइन भुगतान तैयार रखें।",
+      "04 नवंबर 2026 से पहले सबमिट करें।"
+    ],
+    "conducted_by_en": "National Testing Agency (NTA)",
+    "conducted_by_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए)",
+    "dates": [
+      {
+        "label_en": "Correction window starts",
+        "label_hi": "सुधार विंडो शुरू",
+        "value_en": "02 November 2026",
+        "value_hi": "02 नवंबर 2026"
+      },
+      {
+        "label_en": "Correction window ends",
+        "label_hi": "सुधार विंडो समाप्त",
+        "value_en": "04 November 2026 (11:50 P.M.)",
+        "value_hi": "04 नवंबर 2026 (रात 11:50 बजे)"
+      }
+    ],
+    "documents_en": [
+      "Application login credentials"
+    ],
+    "documents_hi": [
+      "आवेदन लॉगिन विवरण"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Applicable for",
+        "label_hi": "इसके लिए लागू",
+        "value_en": "Registered candidates of UGC-NET December 2026",
+        "value_hi": "यूजीसी-नेट दिसंबर 2026 के पंजीकृत उम्मीदवार"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a limited period provided by the National Testing Agency for registered candidates to rectify permissible errors in their submitted online application forms.",
+        "a_hi": "यह राष्ट्रीय परीक्षण एजेंसी द्वारा पंजीकृत उम्मीदवारों के लिए उनके जमा किए गए ऑनलाइन आवेदन पत्रों में स्वीकार्य त्रुटियों को सुधारने के लिए प्रदान की गई एक सीमित अवधि है।",
+        "q_en": "What is the UGC-NET December 2026 Correction Window?",
+        "q_hi": "यूजीसी-नेट दिसंबर 2026 सुधार विंडो क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Helpdesk Phone",
+        "label_hi": "हेल्पलाइन फोन",
+        "value_en": "011-40759000",
+        "value_hi": "011-40759000"
+      },
+      {
+        "label_en": "Helpdesk Email",
+        "label_hi": "हेल्पलाइन ईमेल",
+        "value_en": "ugcnet@nta.nic.in",
+        "value_hi": "ugcnet@nta.nic.in"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The last date to make corrections is 04 November 2026 up to 11:50 P.M.",
+        "a_hi": "सुधार करने की अंतिम तिथि 04 नवंबर 2026 रात 11:50 बजे तक है।",
+        "q_en": "When is the last date to correct the UGC-NET December 2026 application form?",
+        "q_hi": "यूजीसी-नेट दिसंबर 2026 आवेदन पत्र में सुधार करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "No, candidates are not allowed to change their mobile number, email address, address, uploaded photograph, and uploaded signature.",
+        "a_hi": "नहीं, उम्मीदवारों को अपना मोबाइल नंबर, ईमेल पता, पता, अपलोड की गई तस्वीर और अपलोड किए गए हस्ताक्षर बदलने की अनुमति नहीं है।",
+        "q_en": "Can I change my email address and mobile number?",
+        "q_hi": "क्या मैं अपना ईमेल पता और मोबाइल नंबर बदल सकता हूँ?"
+      },
+      {
+        "a_en": "Candidates can change any one of Candidate Name, Father Name, or Mother Name, along with Examination City Selection, Date of Birth, Gender, Category, Sub-category/PwBD, and Subject.",
+        "a_hi": "उम्मीदवार उम्मीदवार का नाम, पिता का नाम, या माता का नाम में से कोई एक, साथ ही परीक्षा शहर का चयन, जन्म तिथि, लिंग, श्रेणी, उप-श्रेणी/पीडब्ल्यूडी और विषय बदल सकते हैं।",
+        "q_en": "What fields are allowed to be changed?",
+        "q_hi": "किन फ़ील्ड को बदलने की अनुमति है?"
+      },
+      {
+        "a_en": "Any additional fee resulting from a correction must be paid by the candidate through Credit/Debit Card, Net Banking, or UPI.",
+        "a_hi": "सुधार के परिणामस्वरूप लगने वाले किसी भी अतिरिक्त शुल्क का भुगतान उम्मीदवार द्वारा क्रेडिट/डेबिट कार्ड, नेट बैंकिंग या यूपीआई के माध्यम से किया जाना चाहिए।",
+        "q_en": "Is there any fee for corrections?",
+        "q_hi": "क्या सुधार के लिए कोई शुल्क है?"
+      },
+      {
+        "a_en": "The official website is https://ugcnet.nta.nic.in.",
+        "a_hi": "आधिकारिक वेबसाइट https://ugcnet.nta.nic.in है।",
+        "q_en": "What is the official website for UGC-NET corrections?",
+        "q_hi": "यूजीसी-नेट सुधार के लिए आधिकारिक वेबसाइट क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "UGC NET December 2026 Application Form Correction Window Open",
+    "h1_hi": "यूजीसी नेट दिसंबर 2026 आवेदन पत्र सुधार विंडो खुली",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official website at https://ugcnet.nta.nic.in.",
+      "Log in using your application credentials.",
+      "Click on the correction link and review your application form.",
+      "Make the required changes in the permitted fields only.",
+      "Pay any additional fee if applicable and submit the form.",
+      "Download and save the confirmation page after final submission."
+    ],
+    "how_hi": [
+      "आधिकारिक वेबसाइट https://ugcnet.nta.nic.in पर जाएं।",
+      "अपने आवेदन विवरण का उपयोग करके लॉगिन करें।",
+      "सुधार लिंक पर क्लिक करें और अपने आवेदन पत्र की समीक्षा करें।",
+      "केवल अनुमति प्राप्त फ़ील्ड में आवश्यक परिवर्तन करें।",
+      "यदि लागू हो तो कोई अतिरिक्त शुल्क का भुगतान करें और फॉर्म जमा करें।",
+      "अंतिम सबमिशन के बाद पुष्टिकरण पृष्ठ को डाउनलोड और सहेजें।"
+    ],
+    "intro_en": "The National Testing Agency (NTA) has issued a public notice regarding the correction window for the UGC-NET December 2026 examination. Registered candidates who need to modify details in their submitted online application forms can do so from 02 November 2026 to 04 November 2026. This facility is available only once, and candidates are advised to verify their particulars carefully. Additional fees may apply depending on the changes made.",
+    "intro_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने यूजीसी-नेट दिसंबर 2026 परीक्षा के लिए आवेदन पत्र सुधार विंडो के संबंध में एक सार्वजनिक सूचना जारी की है। जिन पंजीकृत उम्मीदवारों को अपने जमा किए गए ऑनलाइन आवेदन पत्रों में विवरण संशोधित करने की आवश्यकता है, वे 02 नवंबर 2026 से 04 नवंबर 2026 तक ऐसा कर सकते हैं। यह सुविधा केवल एक बार उपलब्ध है, और उम्मीदवारों को सलाह दी जाती है कि वे अपने विवरणों की सावधानीपूर्वक जांच करें। किए गए परिवर्तनों के आधार पर अतिरिक्त शुल्क लागू हो सकता है।",
+    "last_date": "2026-11-04",
+    "mistakes_en": [
+      "Attempting to change non-editable fields like mobile number, email, or uploaded images.",
+      "Missing the final deadline of 04 November 2026 (11:50 P.M.).",
+      "Failing to pay additional fees if the corrections result in a fee increase."
+    ],
+    "mistakes_hi": [
+      "मोबाइल नंबर, ईमेल या अपलोड की गई छवियों जैसे गैर-संपादन योग्य फ़ील्ड को बदलने का प्रयास करना।",
+      "04 नवंबर 2026 (रात 11:50 बजे) की अंतिम समय सीमा से चूक जाना।",
+      "यदि सुधारों के परिणामस्वरूप शुल्क में वृद्धि होती है तो अतिरिक्त शुल्क का भुगतान करने में विफल रहना।"
+    ],
+    "not_en": [
+      "Candidates are not allowed to change Mobile Number, E-Mail address, Permanent and Present Address, Uploaded Photograph, and Uploaded Signature."
+    ],
+    "not_hi": [
+      "उम्मीदवारों को मोबाइल नंबर, ई-मेल पता, स्थायी और वर्तमान पता, अपलोड की गई तस्वीर और अपलोड किए गए हस्ताक्षर को बदलने की अनुमति नहीं है।"
+    ],
+    "notice_date": "2026-11-02",
+    "official_site": "https://ugcnet.nta.nic.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Correction Start Date",
+        "label_hi": "सुधार प्रारंभ तिथि",
+        "value_en": "02 November 2026",
+        "value_hi": "02 नवंबर 2026"
+      },
+      {
+        "label_en": "Correction Last Date",
+        "label_hi": "सुधार अंतिम तिथि",
+        "value_en": "04 November 2026 (11:50 PM)",
+        "value_hi": "04 नवंबर 2026 (रात 11:50 बजे तक)"
+      },
+      {
+        "label_en": "Official Website",
+        "label_hi": "आधिकारिक वेबसाइट",
+        "value_en": "ugcnet.nta.nic.in",
+        "value_hi": "ugcnet.nta.nic.in"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Online Application",
+      "Correction Window",
+      "Examination",
+      "Result / Award"
+    ],
+    "selection_hi": [
+      "ऑनलाइन आवेदन",
+      "सुधार विंडो",
+      "परीक्षा",
+      "परिणाम / पुरस्कार"
+    ],
+    "share_card": {
+      "headline_en": "Form Correction",
+      "headline_hi": "फॉर्म सुधार",
+      "kind": "corr",
+      "line_en": "UGC NET December 2026",
+      "line_hi": "यूजीसी नेट दिसंबर 2026",
+      "posts": null
+    },
+    "status_en": "Correction window open till 04 November 2026",
+    "status_hi": "सुधार विंडो 04 नवंबर 2026 तक खुली है",
+    "summary_en": "National Testing Agency has opened the application form correction window for UGC NET December 2026. Registered candidates can edit permitted particulars in their forms through the official website by 04 November 2026.",
+    "summary_hi": "राष्ट्रीय परीक्षण एजेंसी ने यूजीसी नेट दिसंबर 2026 के लिए आवेदन पत्र सुधार विंडो खोल दी है। पंजीकृत उम्मीदवार 04 नवंबर 2026 तक आधिकारिक वेबसाइट के माध्यम से अपने फॉर्म में अनुमति प्राप्त विवरणों में सुधार कर सकते हैं।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Registered candidates of UGC-NET December 2026 who need to correct errors in their application form."
+    ],
+    "who_hi": [
+      "यूजीसी-नेट दिसंबर 2026 के पंजीकृत उम्मीदवार जिन्हें अपने आवेदन पत्र में त्रुटियों को सुधारने की आवश्यकता है।"
+    ]
+  },
   "pdf": {
     "bytes": 345796,
     "pages": 2,
     "sha256": "46230e1c5d3d1e89e4045ce0f52503481e965b6e5924472b4ff0ea56526d68c1",
     "text_kind": "text"
   },
+  "published_at": "2026-11-03T08:31:41Z",
+  "qual": [
+    "postgraduate"
+  ],
+  "slug": "ugc-net-december-2026-application-form-correction-window-open",
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Public Notice regarding Correction in particulars of the Online Application Form for UGC-NET December 2026 Read More",
   "url": "https://nta.ac.in/Download/Notice/Notice_20261102150155.pdf"
 }

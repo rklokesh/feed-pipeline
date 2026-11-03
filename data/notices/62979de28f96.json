@@ -1,5 +1,20 @@
 {
   "board_url": "https://mppsc.mp.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "State Service",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "cancellation notice for an interview schedule related to an old recruitment exam (2019 court case order)",
+    "summary_en": "MPPSC has cancelled the interview schedule notice dated 17.10.2023 for the State Service Examination 2019 in compliance with court orders.",
+    "summary_hi": "मध्य प्रदेश लोक सेवा आयोग ने न्यायालय के आदेश के पालन में राज्य सेवा परीक्षा 2019 के लिए 17.10.2023 को जारी साक्षात्कार सूचना पत्र को निरस्त कर दिया है।",
+    "title_en": "MPPSC State Service Exam 2019 Interview Schedule Cancellation",
+    "title_hi": "मध्य प्रदेश राज्य सेवा परीक्षा 2019 साक्षात्कार कार्यक्रम निरस्तीकरण",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "mppsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "राज्‍य सेवा परीक्षा - 2019 में न्‍यायालयीन आदेश के परिपालन में साक्षात्‍कार आयोजन की सूूचना संबंधी सूचना पत्र दिनांक 17.10.2023 की निरस्‍ती के संबंध में, दिनांक 03/11/2026",
   "url": "https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_State_Service_Exam_2019_Dated_03_11_2026.pdf"
 }

@@ -1,5 +1,20 @@
 {
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
+  "card": {
+    "confidence": "low",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Computer Cadre",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Incomplete PDF text and missing recruitment details",
+    "summary_en": "Notification for UPSSSC Advocate General Office Computer Cadre main examination.",
+    "summary_hi": "यूपीएसएसएससी महाधिवक्ता कार्यालय कंप्यूटर संवर्ग मुख्य परीक्षा के लिए अधिसूचना।",
+    "title_en": "UPSSSC Advocate General Office Computer Cadre Main Exam 2026",
+    "title_hi": "यूपीएसएसएससी महाधिवक्ता कार्यालय कंप्यूटर संवर्ग मुख्य परीक्षा 2026",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "scanned"
   },
   "source_id": "upsssc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "विज्ञापन संख्या-20-परीक्षा/2026, महाधिवक्ता कार्यालय (कम्प्यूटर संवर्ग) मुख्य पर...",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?TkC8ZsZcTGug9kOyEK2hNa1dulW7i8MRKIUh0C2a+UY="
 }

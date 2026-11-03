@@ -1,5 +1,23 @@
 {
+  "auto_published": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-05",
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant Loco Pilot",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "RRB has postponed and rescheduled CBT1 exams for specific centres in Ongole and Nellore due to exigency situations. Affected candidates should check their updated schedule and SMS/email notifications.",
+    "summary_hi": "आरआरबी ने ओंगोल और नेल्लोर के विशिष्ट केंद्रों के लिए सीबीटी1 परीक्षाओं को स्थगित और पुनर्निर्धारित किया है। प्रभावित उम्मीदवार अपने संशोधित परीक्षा कार्यक्रम और संदेश की जाँच करें।",
+    "title_en": "RRB CEN 01/2026 CBT1 Exam Postponement and Rescheduling 2026",
+    "title_hi": "आरआरबी सीईएन 01/2026 सीबीटी1 परीक्षा स्थगन और पुनर्निर्धारण 2026",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest:429"
   },
@@ -12,16 +30,216 @@
   },
   "first_seen": "2026-11-02T12:05:04+00:00",
   "id": "c0efb515d779",
+  "issue": 937,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-02",
   "org": "RRB",
+  "page": {
+    "after_en": [
+      "Appear for the CBT1 exam at the newly allotted centre and date.",
+      "Wait for the declaration of CBT1 results and further stages of the recruitment process."
+    ],
+    "after_hi": [
+      "नए आवंटित केंद्र और तिथि पर सीबीटी1 परीक्षा में शामिल हों।",
+      "सीबीट1 परिणाम और भर्ती प्रक्रिया के अगले चरणों की घोषणा की प्रतीक्षा करें।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": null,
+    "changes": [
+      {
+        "new_en": "05 Nov 2026 at Tirupathi (TC Code: 9105)",
+        "new_hi": "05 नवंबर 2026 तिरुपति में (टीसी कोड: 9105)",
+        "old_en": "03 Nov 2026 & 04 Nov 2026 at Ongole",
+        "old_hi": "03 नवंबर 2026 और 04 नवंबर 2026 ओंगोल में",
+        "what_en": "CBT1 Exam Date and Centre at Ongole (TC code: 33430)",
+        "what_hi": "ओंगोल में सीबीटी1 परीक्षा तिथि और केंद्र (टीसी कोड: 33430)"
+      },
+      {
+        "new_en": "05 Nov 2026 at same centre",
+        "new_hi": "05 नवंबर 2026 उसी केंद्र पर",
+        "old_en": "03 Nov 2026",
+        "old_hi": "03 नवंबर 2026",
+        "what_en": "CBT1 Exam Date at Nellore (TC code: 35626)",
+        "what_hi": "नेल्लोर में सीबीटी1 परीक्षा तिथि (टीसी कोड: 35626)"
+      }
+    ],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check your SMS and email for official exam update alerts.",
+      "Verify your new test centre code and address.",
+      "Download the updated hall ticket before the exam date."
+    ],
+    "checklist_hi": [
+      "आधिकारिक परीक्षा अपडेट अलर्ट के लिए अपना एसएमएस और ईमेल जांचें।",
+      "अपने नए परीक्षा केंद्र कोड और पते का सत्यापन करें।",
+      "परीक्षा तिथि से पहले अपडेटेड हॉल टिकट डाउनलोड करें।"
+    ],
+    "conducted_by_en": "Railway Recruitment Boards (RRB)",
+    "conducted_by_hi": "रेलवे भर्ती बोर्ड (RRB)",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस की तिथि",
+        "value_en": "02 Nov 2026",
+        "value_hi": "02 नवंबर 2026"
+      },
+      {
+        "label_en": "Original Exam Dates (Affected)",
+        "label_hi": "मूल परीक्षा तिथियां (प्रभावित)",
+        "value_en": "03 Nov 2026 & 04 Nov 2026",
+        "value_hi": "03 नवंबर 2026 और 04 नवंबर 2026"
+      },
+      {
+        "label_en": "Revised Exam Date",
+        "label_hi": "संशोधित परीक्षा तिथि",
+        "value_en": "05 Nov 2026",
+        "value_hi": "05 नवंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Updated Admit Card",
+      "Original Photo ID Proof"
+    ],
+    "documents_hi": [
+      "अपडेटेड एडमिट कार्ड",
+      "मूल फोटो पहचान पत्र"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-11-05",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "The exam was postponed and rescheduled due to exigency situations at specific test centres in Ongole and Nellore.",
+        "a_hi": "ओंगोल और नेल्लोर के विशिष्ट परीक्षा केंद्रों पर अपरिहार्य परिस्थितियों के कारण परीक्षा को स्थगित और पुनर्निर्धारित किया गया है।",
+        "q_en": "Why was the RRB CBT1 exam postponed for these centres?",
+        "q_hi": "इन केंद्रों के लिए आरआरबी सीबीटी1 परीक्षा क्यों स्थगित की गई?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Ongole Center Change",
+        "label_hi": "ओंगोल केंद्र परिवर्तन",
+        "value_en": "Exams on 03-11-2026 & 04-11-2026 at TC code 33430 shifted to iON Digital Zone iDZ Zoo Park (TC Code: 9105) at Tirupathi for 05-11-2026.",
+        "value_hi": "03-11-2026 और 04-11-2026 को टीसी कोड 33430 पर होने वाली परीक्षाएं 05-11-2026 के लिए तिरुपति के iON Digital Zone iDZ Zoo Park (TC Code: 9105) में स्थानांतरित कर दी गई हैं।"
+      },
+      {
+        "label_en": "Nellore Center Change",
+        "label_hi": "नेल्लोर केंद्र परिवर्तन",
+        "value_en": "Exam on 03-11-2026 at TC code 35626 rescheduled to 05-11-2026 at the same centre.",
+        "value_hi": "टीसी कोड 35626 पर 03-11-2026 की परीक्षा उसी केंद्र पर 05-11-2026 को पुनर्निर्धारित की गई है।"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "CEN No. 01/2026 (ALP) CBT1 exams scheduled at specific centres in Ongole and Nellore are affected.",
+        "a_hi": "ओंगोल और नेल्लोर के विशिष्ट केंद्रों पर निर्धारित सीईएन संख्या 01/2026 (ALP) सीबीटी1 परीक्षाएं प्रभावित हुई हैं।",
+        "q_en": "Which exam notices are affected by this postponement?",
+        "q_hi": "इस स्थगन से कौन सी परीक्षा नोटिस प्रभावित हुई है?"
+      },
+      {
+        "a_en": "The postponed exams are rescheduled to 05 Nov 2026.",
+        "a_hi": "स्थगित परीक्षाएं 05 नवंबर 2026 को पुनर्निर्धारित की गई हैं।",
+        "q_en": "What is the new date for the postponed exams?",
+        "q_hi": "स्थगित परीक्षाओं की नई तिथि क्या है?"
+      },
+      {
+        "a_en": "Yes, SMS and email will be sent to the registered mobile number and email ID of the concerned candidates.",
+        "a_hi": "हां, संबंधित उम्मीदवारों के पंजीकृत मोबाइल नंबर और ईमेल आईडी पर एसएमएस और ईमेल भेजा जाएगा।",
+        "q_en": "Will candidates be informed personally about the change?",
+        "q_hi": "क्या उम्मीदवारों को बदलाव के बारे में व्यक्तिगत रूप से सूचित किया जाएगा?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "RRB CEN 01/2026 CBT1 Exam Postponement and Rescheduling 2026",
+    "h1_hi": "आरआरबी सीईएन 01/2026 सीबीटी1 परीक्षा स्थगन और पुनर्निर्धारण 2026",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Check your registered email ID and mobile number for SMS/email notifications regarding the venue change.",
+      "Visit the official RRB website to view the complete rescheduling details.",
+      "Download your updated admit card or check the revised exam city and date slip."
+    ],
+    "how_hi": [
+      "केंद्र परिवर्तन के संबंध में एसएमएस/ईमेल सूचनाओं के लिए अपनी पंजीकृत ईमेल आईडी और मोबाइल नंबर की जाँच करें।",
+      "पूरी पुनर्निर्धारण विवरण देखने के लिए आधिकारिक आरआरबी वेबसाइट पर जाएं।",
+      "अपना अपडेटेड एडमिट कार्ड डाउनलोड करें या संशोधित परीक्षा शहर और तिथि पर्ची की जाँच करें।"
+    ],
+    "intro_en": "Railway Recruitment Boards (RRB) has released a notice regarding the postponement and rescheduling of CBT1 exams under CEN No. 01/2026 (ALP) for specific centres in Ongole and Nellore due to exigency situations. The exams scheduled for 03 Nov 2026 and 04 Nov 2026 at certain venues have been moved. Candidates affected by this change are advised to check their revised exam dates, centres, and official communications sent via SMS and email.",
+    "intro_hi": "रेलवे भर्ती बोर्ड (RRB) ने अपरिहार्य परिस्थितियों के कारण ओंगोल और नेल्लोर के विशिष्ट केंद्रों के लिए सीईएन संख्या 01/2026 (ALP) के तहत सीबीटी1 परीक्षा के स्थगन और पुनर्निर्धारण के संबंध में नोटिस जारी किया है। कुछ केंद्रों पर 03 नवंबर 2026 और 04 नवंबर 2026 को निर्धारित परीक्षाएं बदल दी गई हैं। इस बदलाव से प्रभावित उम्मीदवारों को सलाह दी जाती है कि वे अपनी संशोधित परीक्षा तिथियों, केंद्रों और एसएमएस तथा ईमेल के माध्यम से भेजे गए आधिकारिक संदेशों की जाँच करें।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not go to the old exam centre if your exam was rescheduled.",
+      "Ignore notifications for centres where no changes were announced (e.g., 05 Nov exam at Ongole and 04 Nov exam at Nellore remain unchanged)."
+    ],
+    "mistakes_hi": [
+      "यदि आपकी परीक्षा पुनर्निर्धारित की गई है तो पुराने परीक्षा केंद्र पर न जाएं।",
+      "उन केंद्रों के लिए सूचनाओं को नजरअंदाज करें जहां कोई बदलाव घोषित नहीं किया गया है (जैसे ओंगोल में 05 नवंबर की परीक्षा और नेल्लोर में 04 नवंबर की परीक्षा अपरिवर्तित है)।"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-02",
+    "official_site": "https://rrb.indianrailways.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "CEN No. 01/2026 (ALP)",
+        "value_hi": "सीईएन संख्या 01/2026 (ALP)"
+      },
+      {
+        "label_en": "Exam Name",
+        "label_hi": "परीक्षा का नाम",
+        "value_en": "Assistant Loco Pilot (ALP) CBT1",
+        "value_hi": "सहायक लोको पायलट सीबीटी1"
+      },
+      {
+        "label_en": "Rescheduled Date",
+        "label_hi": "पुनर्निर्धारित तिथि",
+        "value_en": "05 Nov 2026",
+        "value_hi": "05 नवंबर 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [],
+    "selection_hi": [],
+    "share_card": {
+      "headline_en": "Exam Postponed 2026",
+      "headline_hi": "परीक्षा स्थगित 2026",
+      "kind": "corr",
+      "line_en": "CBT1 Exam Postponement",
+      "line_hi": "सीबीट1 परीक्षा स्थगन",
+      "posts": null
+    },
+    "status_en": "CBT1 exam postponed and rescheduled for specific centres",
+    "status_hi": "विशिष्ट केंद्रों के लिए सीबीटी1 परीक्षा स्थगित और पुनर्निर्धारित",
+    "summary_en": "RRB has postponed and rescheduled CBT1 exams for specific centres in Ongole and Nellore due to exigency situations. Affected candidates should check their updated schedule and SMS/email notifications.",
+    "summary_hi": "आरआरबी ने ओंगोल और नेल्लोर के विशिष्ट केंद्रों के लिए सीबीटी1 परीक्षाओं को स्थगित और पुनर्निर्धारित किया है। प्रभावित उम्मीदवार अपने संशोधित परीक्षा कार्यक्रम और संदेश की जाँच करें।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Candidates scheduled for RRB ALP CEN 01/2026 CBT1 at Ongole and Nellore centres on 03 and 04 November 2026."
+    ],
+    "who_hi": [
+      "03 और 04 नवंबर 2026 को ओंगोल और नेल्लोर केंद्रों पर आरआरबी एएलपी सीईएन 01/2026 सीबीटी1 के लिए निर्धारित उम्मीदवार।"
+    ]
+  },
   "pdf": {
     "bytes": 645255,
     "pages": 1,
     "sha256": "5aa6cb26c11148590accceeb3b869a0c14ce4caf35479aab6dc3357a62e5a2fa",
     "text_kind": "text"
   },
+  "published_at": "2026-11-03T08:32:56Z",
+  "qual": [
+    "iti",
+    "diploma"
+  ],
+  "slug": "rrb-cen-01-2026-cbt1-exam-postponement-and-rescheduling-2026",
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RRB CEN 01/2026: POSTPONEMENT OF CBT1 AT ONGOLE",
   "url": "https://rrb.indianrailways.gov.in/-/image/1793620397650POSTPONEMENT_OF_CBT1_AT_ONGOLE.pdf/examsDocuments"
 }

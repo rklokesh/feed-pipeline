@@ -1,5 +1,27 @@
 {
+  "auto_published": true,
   "board_url": "https://nta.ac.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-11-01",
+    "list": true,
+    "posts": "UGC-NET Examination",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "NTA has extended the last date for fee payment of UGC-NET December 2026 until 01 November 2026 for already submitted applications. Complete your payment before the deadline.",
+    "summary_hi": "एनटीए ने पहले से जमा किए गए आवेदनों के लिए यूजीसी-नेट दिसंबर 2026 शुल्क भुगतान की अंतिम तिथि 01 नवंबर 2026 तक बढ़ा दी है। समय सीमा से पहले अपना भुगतान पूरा करें।",
+    "title_en": "UGC-NET December 2026 Last Date Extended – Fee Payment Link",
+    "title_hi": "यूजीसी-नेट दिसंबर 2026 अंतिम तिथि विस्तारित – शुल्क भुगतान लिंक",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "ugc-net-dec-2026",
+    "name_en": "UGC-NET December 2026",
+    "name_hi": "यूजीसी-नेट दिसंबर 2026"
+  },
   "extraction": {
     "ai": null
   },
@@ -12,16 +34,203 @@
   },
   "first_seen": "2026-11-01T05:22:25+00:00",
   "id": "12480dfe7814",
+  "issue": 926,
+  "issue_tidy": true,
   "kind": "update",
+  "notice_date": "2026-11-01",
   "org": "NTA",
+  "page": {
+    "after_en": [
+      "Download the confirmation page",
+      "Wait for exam city slip and admit card release"
+    ],
+    "after_hi": [
+      "पुष्टिकरण पृष्ठ डाउनलोड करें",
+      "परीक्षा शहर पर्ची और प्रवेश पत्र जारी होने का इंतजार करें"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://nta.ac.in",
+    "changes": [
+      {
+        "new_en": "01 November 2026",
+        "new_hi": "01 नवंबर 2026",
+        "old_en": "31 October 2026",
+        "old_hi": "31 अक्टूबर 2026",
+        "what_en": "Last date for fee payment",
+        "what_hi": "शुल्क भुगतान की अंतिम तिथि"
+      }
+    ],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check payment status",
+      "Download confirmation page"
+    ],
+    "checklist_hi": [
+      "भुगतान की स्थिति जांचें",
+      "पुष्टिकरण पृष्ठ डाउनलोड करें"
+    ],
+    "conducted_by_en": "National Testing Agency (NTA)",
+    "conducted_by_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए)",
+    "dates": [
+      {
+        "label_en": "Application submission closed",
+        "label_hi": "आवेदन जमा होना बंद",
+        "value_en": "31 October 2026",
+        "value_hi": "31 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Revised fee payment last date",
+        "label_hi": "संशोधित शुल्क भुगतान अंतिम तिथि",
+        "value_en": "01 November 2026 (up to 11:50 PM)",
+        "value_hi": "01 नवंबर 2026 (रात 11:50 बजे तक)"
+      }
+    ],
+    "documents_en": [
+      "Confirmation Page after successful payment"
+    ],
+    "documents_hi": [
+      "सफल भुगतान के बाद पुष्टिकरण पृष्ठ"
+    ],
+    "eligibility": [],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is an official notification by NTA extending the deadline to pay examination fees for candidates who have already submitted their UGC-NET December 2026 application forms.",
+        "a_hi": "यह एनटीए द्वारा जारी एक आधिकारिक अधिसूचना है जो उन उम्मीदवारों के लिए परीक्षा शुल्क का भुगतान करने की समय सीमा बढ़ाती है जिन्होंने पहले ही अपने यूजीसी-नेट दिसंबर 2026 आवेदन पत्र जमा कर दिए हैं।",
+        "q_en": "What is the UGC-NET December 2026 fee extension notice?",
+        "q_hi": "यूजीसी-नेट दिसंबर 2026 शुल्क विस्तार सूचना क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Purpose of Exam",
+        "label_hi": "परीक्षा का उद्देश्य",
+        "value_en": "Junior Research Fellowship (JRF), Assistant Professor, and Ph.D. admission",
+        "value_hi": "जूनियर रिसर्च फेलोशिप (जेआरएफ), सहायक प्रोफेसर, और पीएचडी प्रवेश"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The extended last date for successful transaction of examination fee is 01 November 2026 up to 11:50 PM.",
+        "a_hi": "परीक्षा शुल्क के सफल लेनदेन की विस्तारित अंतिम तिथि 01 नवंबर 2026 रात 11:50 बजे तक है।",
+        "q_en": "What is the last date for fee payment of UGC-NET December 2026?",
+        "q_hi": "यूजीसी-नेट दिसंबर 2026 के शुल्क भुगतान की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "No, fresh registration and application submission closed on 31 October 2026. This extension is only for fee payment of already submitted applications.",
+        "a_hi": "नहीं, नया पंजीकरण और आवेदन जमा करना 31 अक्टूबर 2026 को बंद हो गया था। यह विस्तार केवल पहले से जमा किए गए आवेदनों के शुल्क भुगतान के लिए है।",
+        "q_en": "Can I submit a new application form now?",
+        "q_hi": "क्या मैं अब नया आवेदन पत्र जमा कर सकता हूँ?"
+      },
+      {
+        "a_en": "The National Testing Agency (NTA) conducts the UGC-NET examination.",
+        "a_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) यूजीसी-नेट परीक्षा का आयोजन करती है।",
+        "q_en": "Which organization conducts UGC-NET December 2026?",
+        "q_hi": "यूजीसी-नेट दिसंबर 2026 का आयोजन कौन सा संगठन करता है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "UGC-NET December 2026 Last Date Extended – Fee Payment Link",
+    "h1_hi": "यूजीसी-नेट दिसंबर 2026 अंतिम तिथि विस्तारित – शुल्क भुगतान लिंक",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official NTA website at nta.ac.in or ugcnet.nta.nic.in.",
+      "Log in using your application credentials.",
+      "Complete the pending fee payment transaction before 01 November 2026 (11:50 PM).",
+      "Download and retain the Confirmation Page for future reference."
+    ],
+    "how_hi": [
+      "आधिकारिक एनटीए वेबसाइट nta.ac.in या ugcnet.nta.nic.in पर जाएं।",
+      "अपने आवेदन विवरण का उपयोग करके लॉगिन करें।",
+      "01 नवंबर 2026 (रात 11:50 बजे) से पहले लंबित शुल्क भुगतान लेनदेन पूरा करें।",
+      "भविष्य के संदर्भ के लिए पुष्टिकरण पृष्ठ डाउनलोड करें और सुरक्षित रखें।"
+    ],
+    "intro_en": "The National Testing Agency (NTA) has issued a public notice on 01 November 2026 regarding the extension of the last date for successful transaction of examination fees for the UGC-NET December 2026 Examination. Candidates who have already successfully submitted their online application forms but could not complete their fee payment within the earlier timeline can now pay the fee up to 01 November 2026 (11:50 PM). Please note that no new registrations or submission of application forms are allowed, as those activities closed on 31 October 2026. Candidates are advised to complete their transactions and download the confirmation page.",
+    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने 01 नवंबर 2026 को यूजीसी-नेट दिसंबर 2026 परीक्षा के लिए परीक्षा शुल्क के सफल लेनदेन की अंतिम तिथि के विस्तार के संबंध में एक सार्वजनिक सूचना जारी की है। जिन उम्मीदवारों ने पहले ही अपने ऑनलाइन आवेदन पत्र सफलतापूर्वक जमा कर दिए हैं लेकिन पहले की समय सीमा के भीतर अपना शुल्क भुगतान पूरा नहीं कर सके, वे अब 01 नवंबर 2026 (रात 11:50 बजे) तक शुल्क का भुगतान कर सकते हैं। कृपया ध्यान दें कि नए पंजीकरण या आवेदन पत्र जमा करने की अनुमति नहीं है, क्योंकि वे गतिविधियां 31 अक्टूबर 2026 को बंद हो चुकी हैं। उम्मीदवारों को सलाह दी जाती है कि वे अपने लेनदेन को पूरा करें और पुष्टिकरण पृष्ठ डाउनलोड करें।",
+    "last_date": "2026-11-01",
+    "mistakes_en": [
+      "Do not miss the revised fee payment deadline of 01 November 2026 (11:50 PM).",
+      "Remember that fresh registrations are not allowed under this extension."
+    ],
+    "mistakes_hi": [
+      "01 नवंबर 2026 (रात 11:50 बजे) की संशोधित शुल्क भुगतान समय सीमा न चूकें।",
+      "याद रखें कि इस विस्तार के तहत नए पंजीकरण की अनुमति नहीं है।"
+    ],
+    "not_en": [
+      "Fresh candidates cannot register or submit new applications as registration is closed"
+    ],
+    "not_hi": [
+      "नए उम्मीदवार पंजीकरण या नए आवेदन जमा नहीं कर सकते क्योंकि पंजीकरण बंद हो चुका है"
+    ],
+    "notice_date": "2026-11-01",
+    "official_site": "https://nta.ac.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Examination Name",
+        "label_hi": "परीक्षा का नाम",
+        "value_en": "UGC-NET December 2026",
+        "value_hi": "यूजीसी-नेट दिसंबर 2026"
+      },
+      {
+        "label_en": "Extended Fee Payment Date",
+        "label_hi": "विस्तृत शुल्क भुगतान तिथि",
+        "value_en": "01 November 2026 (up to 11:50 PM)",
+        "value_hi": "01 नवंबर 2026 (रात 11:50 बजे तक)"
+      },
+      {
+        "label_en": "Application Submission Deadline",
+        "label_hi": "आवेदन जमा करने की अंतिम तिथि",
+        "value_en": "31 October 2026 (Closed)",
+        "value_hi": "31 अक्टूबर 2026 (समाप्त)"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Computer Based Test (CBT)",
+      "Award of JRF, Assistant Professor appointment, or Ph.D. admission based on merit"
+    ],
+    "selection_hi": [
+      "कंप्यूटर आधारित परीक्षा (सीबीटी)",
+      "मेधा के आधार पर जेआरएफ, सहायक प्रोफेसर नियुक्ति या पीएचडी प्रवेश"
+    ],
+    "share_card": {
+      "headline_en": "Fee Date Extended",
+      "headline_hi": "शुल्क तिथि बढ़ाई गई",
+      "kind": "corr",
+      "line_en": "UGC-NET December 2026",
+      "line_hi": "यूजीसी-नेट दिसंबर 2026",
+      "posts": null
+    },
+    "status_en": "Fee payment last date extended till 01 Nov 2026",
+    "status_hi": "शुल्क भुगतान की अंतिम तिथि 01 Nov 2026 तक बढ़ाई गई",
+    "summary_en": "National Testing Agency (NTA) has extended the last date for fee payment of UGC-NET December 2026 until 01 November 2026 (11:50 PM). This extension is only for candidates who have already submitted their online application forms. Complete your fee payment before the deadline.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने यूजीसी-नेट दिसंबर 2026 के शुल्क भुगतान की अंतिम तिथि 01 नवंबर 2026 (रात 11:50 बजे) तक बढ़ा दी है। यह विस्तार केवल उन उम्मीदवारों के लिए है जिन्होंने पहले ही अपने ऑनलाइन आवेदन पत्र जमा कर दिए हैं। समय सीमा से पहले अपना शुल्क भुगतान पूरा करें।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Candidates who already submitted the UGC-NET December 2026 application form but missed fee payment"
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जिन्होंने पहले ही यूजीसी-नेट दिसंबर 2026 आवेदन पत्र जमा कर दिया है लेकिन शुल्क भुगतान छूट गया है"
+    ]
+  },
   "pdf": {
     "bytes": 302261,
     "pages": 1,
     "sha256": "5124f76a27644e210e49d71be51a100e6536d8addc76768b7a451c84c92e7ebd",
     "text_kind": "text"
   },
+  "published_at": "2026-11-03T08:31:13Z",
+  "qual": [
+    "postgraduate"
+  ],
+  "slug": "ugc-net-december-2026-last-date-extended-fee-payment-link",
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Extension of Last Date for Successful Transaction of Examination Fee for UGC-NET December 2026 Examination – Reg. Read More",
   "url": "https://nta.ac.in/Download/Notice/Notice_20261101103301.pdf"
 }
