@@ -1,20 +1,6 @@
 {
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
-  "card": {
-    "confidence": "low",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "No PDF content or notice text available to process",
-    "summary_en": "",
-    "summary_hi": "",
-    "title_en": "",
-    "title_hi": "",
-    "type": "Update",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -27,10 +13,10 @@
     "bytes": 238659,
     "pages": 1,
     "sha256": "2fe8db562e966fd59df40e6cdd6fa52fe8b151c159bd100e8aa14f08439cad3e",
-    "text_kind": "scanned"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "upsssc-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?LTC7ZDf/pYGhu/k9A/ych5qAMA1RO6XBN4jqgttrrAI="
 }

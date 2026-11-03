@@ -1,20 +1,6 @@
 {
   "board_url": "https://nta.ac.in/",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": null,
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "Procedure for Duplicate Score Card is an administrative notice, not a job, result, or admit card",
-    "summary_en": "NTA has issued the procedure for obtaining a duplicate score card.",
-    "summary_hi": "एनटीए ने डुप्लीकेट स्कोर कार्ड प्राप्त करने की प्रक्रिया जारी की है।",
-    "title_en": "NTA Duplicate Score Card Procedure",
-    "title_hi": "एनटीए डुप्लीकेट स्कोर कार्ड प्रक्रिया",
-    "type": "Update",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -27,10 +13,10 @@
     "bytes": 2789391,
     "pages": 22,
     "sha256": "fc8b90ff3d3f330202017c5eb98c6bfa1d0863d049cfd52b63dc94832f4dbf25",
-    "text_kind": "scanned"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "nta-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "Procedure for Duplicate Score Card",
   "url": "https://nta.ac.in/Download/Notice/Duplicate_Score_Card.pdf"
 }

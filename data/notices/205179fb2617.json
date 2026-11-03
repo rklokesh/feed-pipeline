@@ -1,20 +1,6 @@
 {
   "board_url": "https://kvs.gov.in/",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "उपायुक्त (प्रशासन)",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "It is a selection list for an interview on deputation, not a direct job vacancy notice for the general public.",
-    "summary_en": "KVS has released the list of candidates selected for interview for the post of Deputy Commissioner (Administration) on deputation basis under advertisement number 02/2026.",
-    "summary_hi": "केन्द्रीय विद्यालय संगठन ने विज्ञापन संख्या 02/2026 के तहत प्रतिनियुक्ति के आधार पर उपायुक्त (प्रशासन) के पद के लिए साक्षात्कार हेतु चयनित उम्मीदवारों की सूची जारी कर दी है।",
-    "title_en": "KVS Deputy Commissioner Administration Interview List 2026",
-    "title_hi": "केन्द्रीय विद्यालय संगठन उपायुक्त प्रशासन साक्षात्कार सूची 2026",
-    "type": "Result",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -27,10 +13,10 @@
     "bytes": 240574,
     "pages": 1,
     "sha256": "0e4fc95c4ac0c4d14ac1904fc6741128e18f58a992a0e5763df5a6a696f2970f",
-    "text_kind": "scanned"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "kvs-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "विज्ञापन संख्या 02/2026 के तहत प्रतिनियुक्ति के आधार पर उपायुक्त (प्रशासन) पद के लिए साक्षात्कार के लिये चयनित उम्मीदवारों की सूची।",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/10/2026103038.pdf"
 }

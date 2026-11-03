@@ -1,20 +1,6 @@
 {
   "board_url": "https://nta.ac.in/",
-  "card": {
-    "confidence": "medium",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": null,
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "Corrigendum regarding duplicate scorecard notices is an internal administrative note not needed for the main job listing.",
-    "summary_en": "This is a corrigendum notice regarding scorecard details. Candidates can read the official notice for more information.",
-    "summary_hi": "यह स्कोरकार्ड विवरण से संबंधित एक शुद्धिपत्र सूचना है। उम्मीदवार अधिक जानकारी के लिए आधिकारिक सूचना देख सकते हैं।",
-    "title_en": "NTA Scorecard Corrigendum",
-    "title_hi": "एनटीए स्कोरकार्ड शुद्धिपत्र",
-    "type": "Update",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -27,10 +13,10 @@
     "bytes": 499603,
     "pages": 1,
     "sha256": "d61ef11d7725f45d6d67c5f000aed10e6bc769d479ddb240bc838eedaebafc07",
-    "text_kind": "scanned"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "nta-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "Corrigendum",
   "url": "https://nta.ac.in/Download/Notice/NTA_Corrigendum_Duplicate_Scorecard.pdf"
 }
