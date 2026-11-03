@@ -56,6 +56,12 @@ def nid(url: str) -> str:
     return hashlib.sha1(url.encode()).hexdigest()[:12]
 
 
+def ukey(src: dict, item: dict) -> str:
+    """What makes a link 'already seen'. Most boards: the URL. Boards whose links change on every visit
+    (CISF puts a fresh encrypted token in each link) set `key: title` in sources.yaml."""
+    return "t:" + clean(item["title"]).lower() if src.get("key") == "title" else item["url"]
+
+
 def clean(s: str) -> str:
     return re.sub(r"\s+", " ", s or "").strip()
 
@@ -243,7 +249,7 @@ def known_hashes() -> dict:
 
 def process(src: dict, item: dict, ai_budget: list[int], hashes: dict) -> dict:
     kind = classify(item["title"])
-    rec = {"id": nid(item["url"]), "source_id": src["id"], "org": src["org"], "title": item["title"],
+    rec = {"id": nid(src["id"] + "|" + ukey(src, item) if src.get("key") == "title" else item["url"]), "source_id": src["id"], "org": src["org"], "title": item["title"],
            "url": item["url"], "board_url": src["url"], "kind": kind, "first_seen": NOW,
            "status": "pending_review", "fields": {}, "pdf": {}}
     if kind == "noise":
@@ -253,6 +259,12 @@ def process(src: dict, item: dict, ai_budget: list[int], hashes: dict) -> dict:
         data = download(item["url"], referer=src["url"])
         if not data.startswith(b"%PDF") and src.get("download") == "browser":
             data = browser_download(src["url"], item["url"]) or data
+        if not data.startswith(b"%PDF") and b"%PDF-" in data[:2_000_000]:
+            # some boards (CISF) return a viewer page with the PDF bytes pasted inside it
+            start, end = data.index(b"%PDF-"), data.rfind(b"%%EOF")
+            if end > start:
+                rec["pdf"]["via"] = "inline"
+                data = data[start:end + 5]
         if not data.startswith(b"%PDF"):
             inner = embedded_pdf(data, item["url"])  # e.g. UPPSC's Open_PDF_DB viewer page
             if inner:
@@ -383,7 +395,7 @@ def main() -> int:
 
         known = set(seen.get(src["id"], []))
         first_run = src["id"] not in seen
-        new = [i for i in items if i["url"] not in known]
+        new = [i for i in items if ukey(src, i) not in known]
         if first_run:
             to_process = new[: a.baseline_sample]
         else:
@@ -397,7 +409,7 @@ def main() -> int:
                 rec["baseline_sample"] = True
             save(f"{DATA}/notices/{rec['id']}.json", rec)
 
-        seen[src["id"]] = sorted(known | {i["url"] for i in items})
+        seen[src["id"]] = sorted(known | {ukey(src, i) for i in items})
         summary.append(f"- {src['org']}: {len(items)} links, {len(new)} new"
                        f"{' (first run: baseline, ' + str(len(to_process)) + ' sampled)' if first_run else ''}")
 
