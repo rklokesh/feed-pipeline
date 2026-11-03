@@ -1,0 +1,58 @@
+{
+  "board_url": "https://uppsc.up.nic.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": ".2026 ii https://uppsc.up.nic.in c Home Page Click here for Advt. No. A-5/E-.1/2025, Assistant Teacher, Trained Graduate Grade (Male/Female Branch) Exam-2025 Docum",
+      "source": "rule",
+      "value": "A-5/E-.1/2025"
+    },
+    "apply_or_official_url": {
+      "evidence": "20-11-2026 2— 3M R1-I -Nc1 I)IcI 3TI1- R-iict 06.11.2026 ii https://uppsc.up.nic.in c Home Page Click here for Advt. No. A-5/E-.1/2025, Assistant Teacher, Trained",
+      "source": "rule",
+      "value": "https://uppsc.up.nic.in"
+    },
+    "apply_url": {
+      "evidence": {
+        "apply_url": "https://uppsc.up.nic.in"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://uppsc.up.nic.in"
+    },
+    "exam_date": {
+      "evidence": {
+        "exam_date": "17, 18, 19 20 Icll-N, 2026"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-17 to 2026-11-20"
+    },
+    "post_names": {
+      "evidence": {
+        "post_names": "Advt. No. A-5/E-.1/2025, Assistant Teacher, Trained Graduate Grade\n(Male/Female Branch) Exam-2025"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Assistant Teacher, Trained Graduate Grade (Male/Female Branch)"
+      ]
+    }
+  },
+  "first_seen": "2026-11-03T08:28:22+00:00",
+  "id": "13fa6491f79d",
+  "kind": "notification",
+  "org": "UPPSC",
+  "pdf": {
+    "bytes": 9068408,
+    "pages": 2,
+    "sha256": "b91d21ad39b79c39337b81ad1afe22ec718361699a8d10ae751edd5586ab4362",
+    "text_kind": "text"
+  },
+  "source_id": "uppsc-home",
+  "status": "pending_review",
+  "title": "20 Nov 2026 NOTICE REAGARDING DOCUMENT VERIFICATION FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER TRAINED GRADUATE (M./F.) EXAM 2025, (MATHS)",
+  "url": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnfpuRH59X6AeC6+KhmN26Z"
+}

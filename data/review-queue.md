@@ -1,21 +1,15 @@
-# Review queue — 25 pending
+# Review queue — 19 pending
 
-_Updated 2026-11-03T08:06:33+00:00_
+_Updated 2026-11-03T08:28:22+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-03 | UPPSC | notification | 20 Nov 2026 NOTICE REAGARDING DOCUMENT VERIFICATION FOR ADVT. NO. A-5/E-1/2025, ASSISTANT  | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnfpuRH59X6AeC6+KhmN26Z) |
+| 2026-11-03 | UPPSC | notification | 1. NOTICE REAGARDING DOCUMENT VERIFICATION FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TE.. Visi | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnfpuRH59X6Aa5hvlYnkkej) |
 | 2026-11-03 | MPPSC | other | राज्‍य सेवा परीक्षा - 2019 में न्‍यायालयीन आदेश के परिपालन में साक्षात्‍कार आयोजन की सूूचन | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_State_Service_Exam_2019_Dated_03_11_2026.pdf) |
 | 2026-11-03 | MPPSC | other | सहायक प्राध्‍यापक (वनस्‍पतिशास्‍त्र) परीक्षा - 2024 के पद हेतु उम्‍मीदवारी निरस्‍त किए आवे | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_Botany_Exam_2024_Dated_03_11_2026.pdf) |
-| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=Y7kQiHr9fCSLhVeNVgUskyXjYNSdBK55-KgDrg_0e9C5Q3QmVHARztUWraT2jjY9G6uTVgKYXumx99FXrdPAJvDud2m3MULS7KhcJ6WIMhs) |
-| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=zOvW1JxhA0VYxm_66LW6ZGJlfS0T6Ssska9xq6Ku9sswJtppvDbFLgWYeOLzJMcMJuZdThTsf_gnEM-6p7BvULGBmboFIBSyZISLfP8gueA) |
-| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=SgXk3GYMlgFB6gU229vqpALdtAx8loCYF53G-5ce4OHy2nR65PDWuw9Szhe8D2Zw4bmSn4KXaH0gxjstxPXXIUOk6p7MxMJuFD0zSvHcELk) |
-| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=zM4mveGAvDCXmcn42GyAnzlGKJd3piiZV7HNfpOrbikogzQ9Rj7Ct4y7Dgdbv60nBBCIvZesCASfWJJdfZ9zCohMMZi9kgvG6fLBwtXCDrA) |
-| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=rDLOBuRcyE2S3xiCVDvsesG0-rtP41vu2zriaOwY2PAXOCWPaYyHqJdbFIAFQ1ZfeCLz17zsbXFNbkAP937e95xhEMj8fdUHLPYff15_0Xk) |
 | 2026-11-03 | DSSSB | result | RESULT NOTICE NO: 208 POST: JUNIOR DRAFTSMAN (ELECTRIC) POST CODE-23/25 DEPARTMENT- NEW DE | — | — | — | — | [open](https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/notice_no_208.pdf) |
-| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=VkW6GpLhiZh-XicgWszuKjqPPMIzxG3iEf9Srv5QKvSToPmy2r6EOeRfSxSTfxLn-Afu28Mg4HoeMNBFCGyAvAUCwwbxeBm2EinAGdFMPyE) |
-| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=7-ggmRgkSiFnxchMR5liWyTO1_B0T2NNzK2fWpgyym0d0YquSD9dA2xjU-xbFiYSuKqA8psXR1bs8pi4MdY-3DjjkUVRSRJs9eZ-qtfgD4Q) |
 | 2026-11-03 | DSSSB | result | NOTICE NO: 207 :- Releasing of marks and calling of e-dossiers for the post of Ayurvedic P | — | — | — | — | [open](https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/notice_no_207.pdf) |
-| 2026-11-03 | CISF | other | Conduct of CBE for the Posts of CT (Fire), CT (TM) and CT (Driver & DCPO) -2024 (English)  | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=mRZpwnb5r2CbD-yuhQrtQr_YRsViH0rzBihz7os4VkbQJ-KwH3Jy_PAIhC4FyoMwTWy4Aex-P1LXalBFVgPEMw) |
 | 2026-11-03 | NTA | other | Procedure for Duplicate Score Card | — | — | — | — | [open](https://nta.ac.in/Download/Notice/Duplicate_Score_Card.pdf) |
 | 2026-11-03 | NTA | update | Corrigendum | — | — | — | — | [open](https://nta.ac.in/Download/Notice/NTA_Corrigendum_Duplicate_Scorecard.pdf) |
 | 2026-11-03 | BSF | notification | OPENING OF OBJECTION MANAGEMENT PORTAL IN CONNECTION WITH COMPUTER BASED TEST (CBT) CONDUC | — | — | — | — | [open](https://d3t79nicn48uzj.cloudfront.net/bsf/custom/1793685688.pdf) |
