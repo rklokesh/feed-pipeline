@@ -59,7 +59,9 @@ jobs:
           if git diff --name-only HEAD~1 | grep -q '^site/'; then echo "site=1" >> "$GITHUB_OUTPUT"; fi
           ok=0
           for i in 1 2 3; do
-            if git pull --rebase -q >push.log 2>&1 && git push -q >>push.log 2>&1; then ok=1; break; fi
+            # site/ is rebuilt every run, so on a clash our freshly built copy wins (-X theirs = the commit being replayed);
+            # the next run rebuilds it from everything that was merged
+            if git pull --rebase -X theirs -q >push.log 2>&1 && git push -q >>push.log 2>&1; then ok=1; break; fi
             git rebase --abort >/dev/null 2>&1 || true
             sleep 5
           done
