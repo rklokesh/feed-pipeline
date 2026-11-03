@@ -14,7 +14,7 @@ import requests
 import yaml
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-REPO = os.environ.get("GITHUB_REPOSITORY", "rklokesh/sarkarichart")
+REPO = os.environ.get("GITHUB_REPOSITORY", "rklokesh/feed-pipeline")
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 NOW = dt.datetime.now(dt.timezone.utc)
 

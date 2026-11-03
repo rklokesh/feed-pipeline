@@ -26,7 +26,7 @@ A calm, fast, trustworthy Indian govt-job alert site — a 10x better SarkariRes
 
 | Thing | Where |
 |---|---|
-| Code + data | GitHub `rklokesh/sarkarichart` (private); Mac copy: `/Volumes/Workspace/App idea/Sarkari Chart/sarkarichart` |
+| Code + data | GitHub `rklokesh/feed-pipeline` (private); Mac copy: `/Volumes/Workspace/App idea/Sarkari Chart/sarkarichart` |
 | Live site | Cloudflare Pages project `sarkarichart` → https://sarkarichart.pages.dev |
 | Test views | `?preview=returning` (returning-visitor view + demo rows), `?demo` (demo rows) |
 | GitHub secrets | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `GEMINI_API_KEY`, `TELEGRAM_BOT_TOKEN` (never ask for it in chat), `REPORT_GH_TOKEN` |

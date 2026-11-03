@@ -22,7 +22,7 @@ import requests
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 NOTICES = ROOT / "data" / "notices"
 INDEX = ROOT / "site" / "index.html"
-REPO = os.environ.get("GITHUB_REPOSITORY", "rklokesh/sarkarichart")
+REPO = os.environ.get("GITHUB_REPOSITORY", "rklokesh/feed-pipeline")
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 EDITABLE = {"title_en", "title_hi", "type", "last_date", "exam_date", "posts", "vacancies", "summary_en", "summary_hi"}
 TYPES = {"job": "Job", "result": "Result", "admit card": "Admit card", "answer key": "Answer key", "update": "Update", "admission": "Admission"}

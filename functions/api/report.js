@@ -1,6 +1,6 @@
 // "Report a mistake" form -> a GitHub issue labelled `user-report` (never mixed with notices; no notice-id,
 // so the publish workflow ignores it whatever label it gets). Screenshot is kept in D1 and linked from the issue.
-const REPO = "rklokesh/sarkarichart";
+const REPO = "rklokesh/feed-pipeline";
 const json = (o, s = 200) => new Response(JSON.stringify(o), { status: s, headers: { "content-type": "application/json", "cache-control": "no-store" } });
 const clean = (s, n) => String(s || "").replace(/[\u0000-\u0008\u000b-\u001f]/g, "").slice(0, n);
 const md = s => s.replace(/[<>]/g, c => (c === "<" ? "&lt;" : "&gt;")).replace(/@/g, "@​");   // no HTML, no @mentions

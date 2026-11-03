@@ -30,7 +30,7 @@ NOTICES = ROOT / "data" / "notices"
 TEXT = ROOT / "data" / "text"
 SITE = ROOT / "site"
 TEMPLATE = ROOT / "templates" / "notice.html"
-REPO = os.environ.get("GITHUB_REPOSITORY", "rklokesh/sarkarichart")
+REPO = os.environ.get("GITHUB_REPOSITORY", "rklokesh/feed-pipeline")
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 MONTHS_HI = ["जनवरी", "फ़रवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितंबर", "अक्तूबर", "नवंबर", "दिसंबर"]
 TYPE_LABEL = {"Job": ("Jobs", "नौकरियाँ"), "Result": ("Results", "रिज़ल्ट"), "Admit card": ("Admit cards", "एडमिट कार्ड"),

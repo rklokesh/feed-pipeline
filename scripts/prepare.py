@@ -29,7 +29,7 @@ from extract import _json_from, _providers, _throttle  # noqa: E402
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 NOTICES = ROOT / "data" / "notices"
 TEXT = ROOT / "data" / "text"
-REPO = os.environ.get("GITHUB_REPOSITORY", "rklokesh/sarkarichart")
+REPO = os.environ.get("GITHUB_REPOSITORY", "rklokesh/feed-pipeline")
 TYPES = ["Job", "Result", "Admit card", "Answer key", "Update", "Admission"]
 
 PROMPT = """You prepare Indian government job notices for a calm, trustworthy listing site read by job aspirants.
