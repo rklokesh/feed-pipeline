@@ -28,7 +28,7 @@ EDITABLE = {"title_en", "title_hi", "type", "last_date", "exam_date", "posts", "
 TYPES = {"job": "Job", "result": "Result", "admit card": "Admit card", "answer key": "Answer key", "update": "Update", "admission": "Admission"}
 ORG_HI = {"NTA": "एनटीए", "SSC": "एसएससी", "UPPSC": "यूपीपीएससी", "BPSC": "बीपीएससी", "SBI": "एसबीआई", "IBPS": "आईबीपीएस",
           "ISRO": "इसरो", "UPSC": "यूपीएससी", "RRB": "आरआरबी", "LIC": "एलआईसी", "BSSC": "बीएसएससी", "UPSSSC": "यूपीएसएसएससी",
-          "RPSC": "आरपीएससी", "MPPSC": "एमपीपीएससी", "DSSSB": "डीएसएसएसबी", "NCS": "एनसीएस",
+          "RPSC": "आरपीएससी", "MPPSC": "एमपीपीएससी", "DSSSB": "डीएसएसएसबी", "NCS": "एनसीएस", "UKSSSC": "यूकेएसएसएससी", "BPSSC": "बीपीएसएससी", "JKSSB": "जेकेएसएसबी", "JKPSC": "जेकेपीएससी", "CGPSC": "सीजीपीएससी", "PSSSB": "पीएसएसएसबी", "JPSC": "जेपीएससी",
           "RRB Chandigarh": "आरआरबी चंडीगढ़", "RRB (unified portal)": "आरआरबी", "RBI": "आरबीआई", "NABARD": "नाबार्ड",
           "Indian Army": "भारतीय सेना", "Indian Navy": "भारतीय नौसेना", "Indian Air Force": "भारतीय वायुसेना",
           "Indian Coast Guard": "भारतीय तटरक्षक बल", "BSF": "बीएसएफ", "CRPF": "सीआरपीएफ", "ITBP": "आईटीबीपी", "CISF": "सीआईएसएफ", "India Post": "इंडिया पोस्ट",

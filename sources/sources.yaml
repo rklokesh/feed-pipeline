@@ -9,7 +9,9 @@ sources:
   # ---- Central: commissions & exam bodies ----
   - id: upsc-whats-new
     org: UPSC
-    url: https://upsc.gov.in/whats-new
+    url: https://www.upsc.gov.in/whats-new
+    # each item opens its own page that holds the PDF (the browser is blocked, plain requests work)
+    links: "upsc\\.gov\\.in/whats-new/.+"
     render: static
     runner: india
   - id: upsc-active-exams
@@ -26,11 +28,8 @@ sources:
   - id: ibps-home
     org: IBPS
     url: https://www.ibps.in/
-    render: static
-    runner: india          # GitHub's servers hit a TLS error here; the Mac reads it fine
-    # each running exam cycle (CRP) has its own page; its notices/corrigenda are PDFs under wp-content/uploads
-    follow: "ibps\\.in/index\\.php/(specialist-officers|rural-bank|regional-rural-bank|clerical-cadre|management-trainees|po-mt|clerks?)-[a-z]+/?$"
-    follow_limit: 6
+    render: js             # Nov 2026: plain requests now fail the TLS handshake; the browser loads it and the
+    runner: india          # homepage lists every notice PDF (wp-content/uploads)
   - id: nta-home
     org: NTA
     url: https://nta.ac.in/
@@ -297,3 +296,54 @@ sources:
     render: static
     runner: india
     # documents are /api/documents/file/<id>; GDS has its own site (indiapostgdsonline.gov.in) which times out from India too
+  # --- added 3 Nov 2026 (coverage check): North India boards we were missing ---
+  - id: uksssc-recruitment
+    org: UKSSSC
+    url: https://sssc.uk.gov.in/recruitment-notification/
+    render: static
+    runner: india
+  - id: uksssc-results
+    org: UKSSSC
+    url: https://sssc.uk.gov.in/document-category/result-answer-keys/
+    render: static
+    runner: india
+  - id: bpssc-notices
+    org: BPSSC
+    url: https://bpssc.bihar.gov.in/Notices.htm
+    render: static
+    runner: india
+  - id: jkssb-adverts
+    org: JKSSB
+    url: https://jkssb.nic.in/Advertisement.html
+    render: static
+    runner: india
+  - id: jkssb-results
+    org: JKSSB
+    url: https://jkssb.nic.in/Results.html
+    render: static
+    runner: india
+  - id: jkpsc-home
+    org: JKPSC
+    url: https://jkpsc.nic.in/
+    render: static
+    runner: india
+  - id: cgpsc-adverts
+    org: CGPSC
+    url: https://psc.cg.gov.in/Advertisement.php
+    render: static
+    runner: india
+  - id: cgpsc-results
+    org: CGPSC
+    url: https://psc.cg.gov.in/Result.php
+    render: static
+    runner: india
+  - id: psssb-group-c
+    org: PSSSB
+    url: https://sssb.punjab.gov.in/vacancy-group-c/
+    render: static
+    runner: india
+  - id: jpsc-notices
+    org: JPSC
+    url: https://www.jpsc.gov.in/uni_notice.php
+    render: static
+    runner: india

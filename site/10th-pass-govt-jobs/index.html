@@ -356,7 +356,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
       locale: "hi-IN",
     },
   };
-  const ORG_HI = /*ORGHI:START*/{"NTA": "एनटीए", "SSC": "एसएससी", "UPPSC": "यूपीपीएससी", "BPSC": "बीपीएससी", "SBI": "एसबीआई", "IBPS": "आईबीपीएस", "ISRO": "इसरो", "UPSC": "यूपीएससी", "RRB": "आरआरबी", "LIC": "एलआईसी", "BSSC": "बीएसएससी", "UPSSSC": "यूपीएसएसएससी", "RPSC": "आरपीएससी", "MPPSC": "एमपीपीएससी", "DSSSB": "डीएसएसएसबी", "NCS": "एनसीएस", "RRB Chandigarh": "आरआरबी चंडीगढ़", "RRB (unified portal)": "आरआरबी", "RBI": "आरबीआई", "NABARD": "नाबार्ड", "Indian Army": "भारतीय सेना", "Indian Navy": "भारतीय नौसेना", "Indian Air Force": "भारतीय वायुसेना", "Indian Coast Guard": "भारतीय तटरक्षक बल", "BSF": "बीएसएफ", "CRPF": "सीआरपीएफ", "ITBP": "आईटीबीपी", "CISF": "सीआईएसएफ", "India Post": "इंडिया पोस्ट", "DRDO": "डीआरडीओ", "RSSB Rajasthan": "आरएसएसबी राजस्थान", "MPESB": "एमपीईएसबी", "UKPSC": "यूकेपीएससी", "Employment News": "रोज़गार समाचार", "UP Police": "यूपी पुलिस", "CSBC Bihar": "सीएसबीसी बिहार", "RRC Northern Railway": "आरआरसी उत्तर रेलवे", "RRC Western Railway": "आरआरसी पश्चिम रेलवे", "RRC Central Railway": "आरआरसी मध्य रेलवे", "CTET": "सीटेट", "KVS": "केवीएस", "WBPSC": "डब्ल्यूबीपीएससी", "HPSC": "एचपीएससी", "HSSC": "एचएसएससी", "MPSC": "एमपीएससी", "TNPSC": "टीएनपीएससी"}/*ORGHI:END*/;
+  const ORG_HI = /*ORGHI:START*/{"NTA": "एनटीए", "SSC": "एसएससी", "UPPSC": "यूपीपीएससी", "BPSC": "बीपीएससी", "SBI": "एसबीआई", "IBPS": "आईबीपीएस", "ISRO": "इसरो", "UPSC": "यूपीएससी", "RRB": "आरआरबी", "LIC": "एलआईसी", "BSSC": "बीएसएससी", "UPSSSC": "यूपीएसएसएससी", "RPSC": "आरपीएससी", "MPPSC": "एमपीपीएससी", "DSSSB": "डीएसएसएसबी", "NCS": "एनसीएस", "UKSSSC": "यूकेएसएसएससी", "BPSSC": "बीपीएसएससी", "JKSSB": "जेकेएसएसबी", "JKPSC": "जेकेपीएससी", "CGPSC": "सीजीपीएससी", "PSSSB": "पीएसएसएसबी", "JPSC": "जेपीएससी", "RRB Chandigarh": "आरआरबी चंडीगढ़", "RRB (unified portal)": "आरआरबी", "RBI": "आरबीआई", "NABARD": "नाबार्ड", "Indian Army": "भारतीय सेना", "Indian Navy": "भारतीय नौसेना", "Indian Air Force": "भारतीय वायुसेना", "Indian Coast Guard": "भारतीय तटरक्षक बल", "BSF": "बीएसएफ", "CRPF": "सीआरपीएफ", "ITBP": "आईटीबीपी", "CISF": "सीआईएसएफ", "India Post": "इंडिया पोस्ट", "DRDO": "डीआरडीओ", "RSSB Rajasthan": "आरएसएसबी राजस्थान", "MPESB": "एमपीईएसबी", "UKPSC": "यूकेपीएससी", "Employment News": "रोज़गार समाचार", "UP Police": "यूपी पुलिस", "CSBC Bihar": "सीएसबीसी बिहार", "RRC Northern Railway": "आरआरसी उत्तर रेलवे", "RRC Western Railway": "आरआरसी पश्चिम रेलवे", "RRC Central Railway": "आरआरसी मध्य रेलवे", "CTET": "सीटेट", "KVS": "केवीएस", "WBPSC": "डब्ल्यूबीपीएससी", "HPSC": "एचपीएससी", "HSSC": "एचएसएससी", "MPSC": "एमपीएससी", "TNPSC": "टीएनपीएससी"}/*ORGHI:END*/;
   let lang = "en";
   try { const saved = localStorage.getItem("sc-lang"); if (saved === "hi" || (!saved && /^hi\b/i.test(navigator.language || ""))) lang = "hi"; } catch (e) {}
   const t = k => T[lang][k];
@@ -674,12 +674,16 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   // a state's name finds every board of that state; a board's name still finds only that board
   const STATE = {
     up: ["uppsc", "upsssc", "up police", "uttar pradesh"], "uttar pradesh": ["uppsc", "upsssc", "up police"], "यूपी": ["uppsc", "upsssc", "up police"], "उत्तर प्रदेश": ["uppsc", "upsssc", "up police"],
-    bihar: ["bpsc", "bssc", "csbc", "bihar"], "बिहार": ["bpsc", "bssc", "csbc", "bihar"],
+    bihar: ["bpsc", "bssc", "csbc", "bpssc", "bihar"], "बिहार": ["bpsc", "bssc", "csbc", "bpssc", "bihar"],
     rajasthan: ["rpsc", "rssb", "rajasthan"], "राजस्थान": ["rpsc", "rssb", "rajasthan"],
     mp: ["mppsc", "mpesb", "madhya pradesh"], "madhya pradesh": ["mppsc", "mpesb"], "एमपी": ["mppsc", "mpesb"], "मध्य प्रदेश": ["mppsc", "mpesb"],
     haryana: ["hpsc", "hssc", "haryana"], "हरियाणा": ["hpsc", "hssc", "haryana"],
     delhi: ["dsssb", "delhi"], "दिल्ली": ["dsssb", "delhi"],
-    uttarakhand: ["ukpsc", "uttarakhand"], "उत्तराखंड": ["ukpsc", "uttarakhand"],
+    uttarakhand: ["ukpsc", "uksssc", "uttarakhand"], "उत्तराखंड": ["ukpsc", "uksssc", "uttarakhand"],
+    punjab: ["psssb", "ppsc", "punjab"], "पंजाब": ["psssb", "ppsc", "punjab"],
+    "j&k": ["jkssb", "jkpsc"], jk: ["jkssb", "jkpsc"], kashmir: ["jkssb", "jkpsc"], "जम्मू": ["jkssb", "jkpsc"], "कश्मीर": ["jkssb", "jkpsc"],
+    jharkhand: ["jpsc", "jssc", "jharkhand"], "झारखंड": ["jpsc", "jssc", "jharkhand"],
+    chhattisgarh: ["cgpsc", "chhattisgarh"], cg: ["cgpsc"], "छत्तीसगढ़": ["cgpsc", "chhattisgarh"],
   };
   const expand = w => {
     if (STATE[w]) return STATE[w];
@@ -773,7 +777,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   }
   // ---- Jobs tab filters (state, qualification, "only jobs I can apply for", sort); remembered on this device ----
   const STATES = [["up", "UP", "यूपी"], ["bihar", "Bihar", "बिहार"], ["rajasthan", "Rajasthan", "राजस्थान"], ["mp", "MP", "एमपी"], ["haryana", "Haryana", "हरियाणा"],
-                  ["delhi", "Delhi", "दिल्ली"], ["uttarakhand", "Uttarakhand", "उत्तराखंड"], ["west-bengal", "West Bengal", "पश्चिम बंगाल"], ["tamil-nadu", "Tamil Nadu", "तमिलनाडु"], ["maharashtra", "Maharashtra", "महाराष्ट्र"]];
+                  ["delhi", "Delhi", "दिल्ली"], ["uttarakhand", "Uttarakhand", "उत्तराखंड"], ["west-bengal", "West Bengal", "पश्चिम बंगाल"], ["tamil-nadu", "Tamil Nadu", "तमिलनाडु"], ["maharashtra", "Maharashtra", "महाराष्ट्र"], ["punjab", "Punjab", "पंजाब"], ["jammu-kashmir", "J&K", "जम्मू-कश्मीर"], ["jharkhand", "Jharkhand", "झारखंड"], ["chhattisgarh", "Chhattisgarh", "छत्तीसगढ़"]];
   const QS = [["10th", "10th pass", "10वीं पास"], ["12th", "12th pass", "12वीं पास"], ["iti", "ITI", "आईटीआई"], ["diploma", "Diploma", "डिप्लोमा"], ["graduate", "Graduate", "स्नातक"], ["postgraduate", "Post graduate", "स्नातकोत्तर"]];
   const QOK = { "10th": ["10th"], "12th": ["10th", "12th"], iti: ["10th", "iti"], diploma: ["10th", "12th", "diploma"],
                 graduate: ["10th", "12th", "graduate"], postgraduate: ["10th", "12th", "graduate", "postgraduate"] };

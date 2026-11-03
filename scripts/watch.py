@@ -66,13 +66,16 @@ def clean(s: str) -> str:
     return re.sub(r"\s+", " ", s or "").strip()
 
 
-def links_from_html(html: str, base: str) -> list[dict]:
+def links_from_html(html: str, base: str, extra: str | None = None) -> list[dict]:
+    """extra: a regex for notice pages that are not PDFs themselves (UPSC 'What's New' items open a page that holds
+    the PDF; process() then finds the PDF inside that page)."""
     soup = BeautifulSoup(html, "html.parser")
+    extra_re = re.compile(extra) if extra else None
     out, seen = [], set()
     for a in soup.find_all("a", href=True):
         # html.parser reads "&param2=" in a bare href as the entity "&para" + "m2" (WBPSC Download?param1=..&param2=..)
         url = urljoin(base, a["href"].strip().replace("\u00b6m", "&param"))
-        if not url.startswith("http") or url in seen or not PDF_HINTS.search(url):
+        if not url.startswith("http") or url in seen or not (PDF_HINTS.search(url) or (extra_re and extra_re.search(url))):
             continue
         seen.add(url)
         title = clean(a.get_text(" ")) or clean(a.get("title", ""))
@@ -265,6 +268,14 @@ def process(src: dict, item: dict, ai_budget: list[int], hashes: dict) -> dict:
             if end > start:
                 rec["pdf"]["via"] = "inline"
                 data = data[start:end + 5]
+        if not data.startswith(b"%PDF") and src.get("links"):
+            # a notice page (UPSC 'What's New' item): its own PDF is the first PDF link that is not in the site menus
+            soup = BeautifulSoup(data[:800_000].decode("utf-8", "replace"), "html.parser")
+            pdfs = [urljoin(item["url"], a["href"].strip()) for a in soup.find_all("a", href=True) if ".pdf" in a["href"].lower()]
+            own = [u for u in pdfs if u not in src.get("_sitewide", set())]
+            if own:
+                rec["pdf"]["via"] = own[0]
+                data = download(own[0], referer=item["url"])
         if not data.startswith(b"%PDF"):
             inner = embedded_pdf(data, item["url"])  # e.g. UPPSC's Open_PDF_DB viewer page
             if inner:
@@ -378,7 +389,9 @@ def main() -> int:
             else:
                 r = get(src["url"])
                 r.raise_for_status()
-                items = links_from_html(r.text, r.url)
+                items = links_from_html(r.text, r.url, src.get("links"))
+                if src.get("links"):   # PDFs on every page of the site (menus, footers) are never a notice's own PDF
+                    src["_sitewide"] = {urljoin(r.url, a["href"].strip()) for a in BeautifulSoup(r.text, "html.parser").find_all("a", href=True)}
             h.update({"last_ok": NOW, "last_links": len(items), "consecutive_failures": 0, "last_error": ""})
             if not items:
                 h["warning"] = "page loaded but no notice links found — layout may have changed"
