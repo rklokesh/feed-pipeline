@@ -17,8 +17,8 @@ concurrency:
 
 jobs:
   prepare:
-    # after a Mac check, prepare on the Mac too (free minutes); after the GitHub backup check, on GitHub
-    runs-on: ${{ github.event.workflow_run.name == 'Watch India-only sources' && fromJSON('["self-hosted","india"]') || 'ubuntu-latest' }}
+    # GitHub's runners (free now the repo is public): keeps the Mac free for checking boards every 30 minutes
+    runs-on: ubuntu-latest
     timeout-minutes: 50
     outputs:
       published: ${{ steps.cards.outputs.published }}
