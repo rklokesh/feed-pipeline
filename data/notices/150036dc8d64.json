@@ -7,13 +7,13 @@
     "exam_date": null,
     "last_date": "2026-09-15",
     "list": true,
-    "posts": "मनोरोग विशेषज्ञ",
+    "posts": "मनोरोग विशेषज्ञ (Psychiatrist)",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
-    "summary_en": "Chhattisgarh Public Service Commission has increased the number of vacancies for the Psychiatrist post and extended the online application dates to September 15, 2026.",
-    "summary_hi": "छत्तीसगढ़ लोक सेवा आयोग ने मनोरोग विशेषज्ञ पद के लिए रिक्तियों की संख्या बढ़ा दी है और ऑनलाइन आवेदन की अंतिम तिथि 15 सितंबर 2026 तक बढ़ा दी है।",
-    "title_en": "CGPSC Psychiatrist Recruitment 2026 Last Date Extended for 8 Posts",
-    "title_hi": "छत्तीसगढ़ लोक सेवा आयोग मनोरोग विशेषज्ञ भर्ती 2026 अंतिम तिथि बढ़ी",
+    "summary_en": "Chhattisgarh Public Service Commission has increased vacancies for the Psychiatrist position and extended the online application dates to September 15, 2026.",
+    "summary_hi": "छत्तीसगढ़ लोक सेवा आयोग ने मनोचिकित्सक के पदों की संख्या में वृद्धि करते हुए ऑनलाइन आवेदन की अंतिम तिथि 15 सितंबर 2026 तक बढ़ा दी है।",
+    "title_en": "CGPSC Psychiatrist Recruitment 2026 – Last Date Extended & Vacancy Increased",
+    "title_hi": "छत्तीसगढ़ लोक सेवा आयोग मनोचिकित्सक भर्ती 2026 – अंतिम तिथि बढ़ी एवं पद बढ़े",
     "type": "Update",
     "vacancies": 8
   },
@@ -21,7 +21,7 @@
   "exam": {
     "key": "cgpsc-psychiatrist-2026",
     "name_en": "CGPSC Psychiatrist 2026",
-    "name_hi": "सीजीपीएससी मनोoचिकित्सक 2026"
+    "name_hi": "सीजीपीएससी मनो-चिकित्सक 2026"
   },
   "extraction": {
     "ai": null
@@ -29,19 +29,17 @@
   "fields": {},
   "first_seen": "2026-11-03T16:16:29+00:00",
   "id": "150036dc8d64",
-  "issue": 974,
+  "issue": 994,
   "issue_tidy": true,
   "kind": "update",
   "notice_date": "2026-08-21",
   "org": "CGPSC",
   "page": {
     "after_en": [
-      "Application correction window",
-      "Further recruitment stages as notified by CGPSC"
+      "Application correction window will open from September 16 to September 17, 2026, and paid correction from September 18 to September 19, 2026."
     ],
     "after_hi": [
-      "आवेदन त्रुटि सुधार विंडो",
-      "सीजीपीएससी द्वारा सूचति अन्य भर्ती चरण"
+      "त्रुटि सुधार अवधि 16 सितंबर से 17 सितंबर 2026 तक तथा सशुल्क त्रुटि सुधार 18 सितंबर से 19 सितंबर 2026 तक खुलेगा।"
     ],
     "age": [],
     "apply_start": "2026-08-26",
@@ -61,18 +59,19 @@
         "old_en": "19 Aug 2026",
         "old_hi": "19 अगस्त 2026",
         "what_en": "Last Date to Apply",
-        "what_hi": "आवेदन करने की अंतिम तिथि"
+        "what_hi": "आवेदन की अंतिम तिथि"
       }
     ],
     "changes_from_notes": "",
     "checklist_en": [
-      "Verify your eligibility before applying",
-      "Note the revised dates for application and correction"
+      "Check the revised vacancy details.",
+      "Ensure application submission before September 15, 2026, if not applied earlier."
     ],
     "checklist_hi": [
-      "आवेदन करने से पहले अपनी पात्रता की जांच करें",
-      "आवेदन और सुधार के लिए संशोधित तिथियों को नोट करें"
+      "संशोधित रिक्ति विवरण की जाँच करें।",
+      "यदि पहले आवेदन नहीं किया है, तो 15 सितंबर 2026 से पहले आवेदन सुनिश्चित करें।"
     ],
+    "conduct_by_en": "Chhattisgarh Public Service Commission (CGPSC)",
     "conducted_by_en": "Chhattisgarh Public Service Commission (CGPSC)",
     "conducted_by_hi": "छत्तीसगढ़ लोक सेवा आयोग",
     "dates": [
@@ -91,17 +90,17 @@
       {
         "label_en": "Revised online application starts",
         "label_hi": "संशोधित ऑनलाइन आवेदन प्रारंभ",
-        "value_en": "26 Aug 2026 (12:00 PM)",
-        "value_hi": "26 अगस्त 2026 (मध्याह्न 12:00 बजे)"
+        "value_en": "26 Aug 2026",
+        "value_hi": "26 अगस्त 2026"
       },
       {
         "label_en": "Revised online application last date",
         "label_hi": "संशोधित ऑनलाइन आवेदन अंतिम तिथि",
-        "value_en": "15 Sep 2026 (11:59 PM)",
-        "value_hi": "15 सितंबर 2026 (रात्रि 11:59 बजे)"
+        "value_en": "15 Sep 2026",
+        "value_hi": "15 सितंबर 2026"
       },
       {
-        "label_en": "Correction window",
+        "label_en": "Application correction window",
         "label_hi": "त्रुटि सुधार अवधि",
         "value_en": "16 Sep 2026 to 17 Sep 2026",
         "value_hi": "16 सितंबर 2026 से 17 सितंबर 2026"
@@ -113,86 +112,72 @@
         "value_hi": "18 सितंबर 2026 से 19 सितंबर 2026"
       }
     ],
-    "documents_en": [
-      "Educational certificates",
-      "Registration documents",
-      "Identity proof"
-    ],
-    "documents_hi": [
-      "शैक्षणिक प्रमाण पत्र",
-      "पंजीकरण दस्तावेज",
-      "पहचान प्रमाण"
-    ],
+    "documents_en": [],
+    "documents_hi": [],
     "eligibility": [],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "This notice announces an increase in the number of vacancies for the Psychiatrist post from 6 to 8 and extends the application deadline to September 15, 2026.",
-        "a_hi": "यह नोटिस मनोरोग विशेषज्ञ पद के लिए रिक्तियों की संख्या 6 से बढ़ाकर 8 किए जाने और आवेदन की अंतिम तिथि 15 सितंबर 2026 तक बढ़ाए जाने की घोषणा करता है।",
-        "q_en": "What is the CGPSC Psychiatrist Recruitment Corrigendum?",
-        "q_hi": "सीजीपीएससी मनोरोग विशेषज्ञ भर्ती शुद्धि पत्र क्या है?"
+        "a_en": "This is a corrigendum notice issued by CGPSC which increases the total number of Psychiatrist vacancies to 8 and extends the online application deadline to September 15, 2026.",
+        "a_hi": "यह छत्तीसगढ़ लोक सेवा आयोग द्वारा जारी एक शुद्धि पत्र है जो मनोचिकित्सक के पदों की कुल संख्या बढ़ाकर 8 करता है और ऑनलाइन आवेदन की अंतिम तिथि 15 सितंबर 2026 तक बढ़ाता है।",
+        "q_en": "What is this CGPSC Psychiatrist notice about?",
+        "q_hi": "यह सीजीपीएससी मनोचिकित्सक नोटिस किसके बारे में है?"
       }
     ],
     "extra": [
       {
-        "label_en": "Pay Scale",
-        "label_hi": "वेतनमान",
-        "value_en": "Level-13 (₹67300-213100)",
-        "value_hi": "लेवल-13 (₹67300-213100)"
+        "label_en": "Pay Matrix",
+        "label_hi": "वेतन मैट्रिक्स",
+        "value_en": "Level 13 (67300-213100)",
+        "value_hi": "स्तर-13 (67300-213100)"
       }
     ],
     "faq": [
       {
-        "a_en": "The revised last date to apply online is September 15, 2026 (11:59 PM).",
-        "a_hi": "ऑनलाइन आवेदन करने की संशोधित अंतिम तिथि 15 सितंबर 2026 (रात्रि 11:59 बजे) है।",
-        "q_en": "What is the last date to apply for CGPSC Psychiatrist Recruitment 2026?",
-        "q_hi": "सीजीपीएससी मनोरोग विशेषज्ञ भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+        "a_en": "The extended last date to apply online is September 15, 2026 (up to 11:59 PM).",
+        "a_hi": "ऑनलाइन आवेदन करने की बढ़ी हुई अंतिम तिथि 15 सितंबर 2026 (रात्रि 11:59 बजे तक) है।",
+        "q_en": "What is the extended last date to apply for CGPSC Psychiatrist 2026?",
+        "q_hi": "CGPSC मनोचिकित्सक 2026 के लिए आवेदन करने की बढ़ी हुई अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "A total of 8 vacancies are available for the Psychiatrist post.",
-        "a_hi": "मनोरोग विशेषज्ञ पद के लिए कुल 8 रिक्तियां उपलब्ध हैं।",
-        "q_en": "How many total vacancies are available now?",
-        "q_hi": "अब कुल कितनी रिक्तियां उपलब्ध हैं?"
-      },
-      {
-        "a_en": "No, candidates who have already applied previously do not need to apply again.",
-        "a_hi": "नहीं, जो उम्मीदवार पहले ही आवेदन कर चुके हैं, उन्हें पुनः आवेदन करने की आवश्यकता नहीं है।",
+        "a_en": "No, candidates who have already applied earlier do not need to apply again.",
+        "a_hi": "नहीं, जो अभ्यर्थी पहले ही ऑनलाइन आवेदन कर चुके हैं, उन्हें पुनः आवेदन करने की आवश्यकता नहीं है।",
         "q_en": "Do candidates who applied earlier need to apply again?",
-        "q_hi": "क्या जो उम्मीदवार पहले आवेदन कर चुके हैं, उन्हें दोबारा आवेदन करना होगा?"
+        "q_hi": "क्या जो उम्मीदवार पहले आवेदन कर चुके हैं, उन्हें दोबारा आवेदन करने की आवश्यकता है?"
       },
       {
-        "a_en": "The application correction window is open from September 16, 2026, to September 17, 2026, and paid correction from September 18, 2026, to September 19, 2026.",
-        "a_hi": "आवेदन त्रुटि सुधार विंडो 16 सितंबर 2026 से 17 सितंबर 2026 तक और सशुल्क सुधार 18 सितंबर 2026 से 19 सितंबर 2026 तक खुला रहेगा।",
-        "q_en": "When is the correction window open?",
-        "q_hi": "त्रुटि सुधार विंडो कब खुली रहेगी?"
+        "a_en": "The total number of vacancies has been increased to 8.",
+        "a_hi": "संशोधन के बाद कुल रिक्तियों की संख्या बढ़ाकर 8 कर दी गई है।",
+        "q_en": "What is the total number of vacancies after the revision?",
+        "q_hi": "संशोधन के बाद कुल रिक्तियों की संख्या कितनी है?"
+      },
+      {
+        "a_en": "The correction window is from September 16 to September 17, 2026, and paid correction from September 18 to September 19, 2026.",
+        "a_hi": "त्रुटि सुधार 16 से 17 सितंबर 2026 तक और सशुल्क त्रुटि सुधार 18 से 19 सितंबर 2026 तक है।",
+        "q_en": "When is the application correction window?",
+        "q_hi": "आवेदन त्रुटि सुधार अवधि कब है?"
       }
     ],
     "fees": [],
-    "h1_en": "CGPSC Psychiatrist Recruitment 2026 Last Date Extended for 8 Posts",
-    "h1_hi": "छत्तीसगढ़ लोक सेवा आयोग मनोरोग विशेषज्ञ भर्ती 2026 अंतिम तिथि बढ़ी",
+    "h1_en": "CGPSC Psychiatrist Recruitment 2026 – Last Date Extended & Vacancy Increased",
+    "h1_hi": "छत्तीसगढ़ लोक सेवा आयोग मनोचिकित्सक भर्ती 2026 – अंतिम तिथि बढ़ी एवं पद बढ़े",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official website of CGPSC.",
-      "Check the revised dates and apply online if not applied earlier.",
-      "Make use of the correction window if any changes are required in the application."
+      "Visit the official CGPSC website.",
+      "Access the online application portal for the Psychiatrist recruitment.",
+      "Fill out or modify your application details within the extended dates if not already applied."
     ],
     "how_hi": [
       "छत्तीसगढ़ लोक सेवा आयोग की आधिकारिक वेबसाइट पर जाएं।",
-      "संशोधित तिथियों की जांच करें और यदि पहले आवेदन नहीं किया है तो ऑनलाइन आवेदन करें।",
-      "यदि आवेदन में किसी परिवर्तन की आवश्यकता है तो त्रुटि सुधार अवधि का उपयोग करें।"
+      "मनोरोग विशेषज्ञ भर्ती के ऑनलाइन आवेदन पोर्टल पर जाएं।",
+      "यदि पहले आवेदन नहीं किया है, तो बढ़ी हुई तिथियों के भीतर आवेदन भरें।"
     ],
-    "intro_en": "Chhattisgarh Public Service Commission (CGPSC) has released a corrigendum notice for the recruitment of Psychiatrist under the Health and Family Welfare Department. Through this notice, the total number of vacancies has been increased from 6 to 8. Additionally, the online application dates have been revised, and applications are now invited from August 26, 2026, to September 15, 2026. Candidates who have already applied previously are not required to submit a new application.",
-    "intro_hi": "छत्तीसगढ़ लोक सेवा आयोग (CGPSC) ने स्वास्थ्य एवं परिवार कल्याण विभाग के अंतर्गत मनोरोग विशेषज्ञ भर्ती के लिए शुद्धि पत्र जारी किया है। इस सूचना के माध्यम से कुल रिक्तियों की संख्या 6 से बढ़ाकर 8 कर दी गई है। इसके अतिरिक्त, ऑनलाइन आवेदन की तिथियों में संशोधन किया गया है और अब 26 अगस्त 2026 से 15 सितंबर 2026 तक आवेदन आमंत्रित किए गए हैं। जो उम्मीदवार पहले ही आवेदन कर चुके हैं, उन्हें पुनः आवेदन करने की आवश्यकता नहीं है।",
+    "intro_en": "Chhattisgarh Public Service Commission (CGPSC) has issued a corrigendum for the Psychiatrist recruitment under the Health and Family Welfare Department. The total number of vacancies has been increased from 6 to 8. Along with the vacancy increase, the online application dates have been revised. Candidates can now apply online from August 26, 2026, to September 15, 2026. Those who have already applied earlier do not need to apply again.",
+    "intro_hi": "छत्तीसगढ़ लोक सेवा आयोग (CGPSC) ने लोक स्वास्थ्य एवं परिवार कल्याण विभाग के अंतर्गत मनोचिकित्सक भर्ती के लिए शुद्धि पत्र जारी किया है। पदों की कुल संख्या 06 से बढ़ाकर 08 कर दी गई है। इसके साथ ही ऑनलाइन आवेदन की तिथियों में संशोधन किया गया है। अब उम्मीदवार 26 अगस्त 2026 से 15 सितंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं। जो अभ्यर्थी पहले आवेदन कर चुके हैं, उन्हें पुनः आवेदन करने की आवश्यकता नहीं है।",
     "last_date": "2026-09-15",
-    "mistakes_en": [
-      "Candidates who already applied do not need to apply again.",
-      "Ensure corrections are made within the specified dates if needed."
-    ],
-    "mistakes_hi": [
-      "जो उम्मीदवार पहले आवेदन कर चुके हैं, उन्हें दोबारा आवेदन करने की आवश्यकता नहीं है।",
-      "सुनिश्चित करें कि आवश्यकता होने पर निर्धारित तिथियों के भीतर त्रुटि सुधार कर लिया जाए।"
-    ],
+    "mistakes_en": [],
+    "mistakes_hi": [],
     "not_en": [],
     "not_hi": [],
     "notice_date": "2026-08-21",
@@ -201,26 +186,20 @@
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Posts",
-        "label_hi": "पद",
-        "value_en": "Psychiatrist",
-        "value_hi": "मनोरोग विशेषज्ञ"
-      },
-      {
         "label_en": "Total vacancies",
         "label_hi": "कुल रिक्तियां",
         "value_en": "8",
         "value_hi": "8"
       },
       {
-        "label_en": "Apply online",
-        "label_hi": "ऑनलाइन आवेदन",
+        "label_en": "Apply online (extended)",
+        "label_hi": "ऑनलाइन आवेदन (बढ़ी हुई तिथि)",
         "value_en": "26 Aug 2026 to 15 Sep 2026",
         "value_hi": "26 अगस्त 2026 से 15 सितंबर 2026"
       },
       {
         "label_en": "Correction window",
-        "label_hi": "त्रुटि सुधार",
+        "label_hi": "त्रुटि सुधार अवधि",
         "value_en": "16 Sep 2026 to 17 Sep 2026",
         "value_hi": "16 सितंबर 2026 से 17 सितंबर 2026"
       },
@@ -233,55 +212,47 @@
       {
         "label_en": "Advertisement number",
         "label_hi": "विज्ञापन क्रमांक",
-        "value_en": "04/2026/परीक्षा",
-        "value_hi": "04/2026/परीक्षा"
+        "value_en": "04/2026/परीक्षा/दिनांक 17/07/2026",
+        "value_hi": "04/2026/परीक्षा/दिनांक 17/07/2026"
       }
     ],
     "salary": [
       {
-        "label_en": "Pay Scale",
+        "label_en": "Pay Matrix",
         "label_hi": "वेतनमान",
-        "value_en": "Level-13 (₹67300-213100)",
-        "value_hi": "लेवल-13 (₹67300-213100)"
+        "value_en": "Level 13 (₹67,300–2,13,100)",
+        "value_hi": "स्तर-13 (₹67,300–2,13,100)"
       }
     ],
-    "selection_en": [
-      "Online Application",
-      "Correction Window",
-      "Further selection process as per original notification"
-    ],
-    "selection_hi": [
-      "ऑनलाइन आवेदन",
-      "त्रुटि सुधार विंडो",
-      "मूल विज्ञापन के अनुसार आगे की चयन प्रक्रिया"
-    ],
+    "selection_en": [],
+    "selection_hi": [],
     "share_card": {
-      "headline_en": "Vacancies & Date Extended",
-      "headline_hi": "पदों व तिथि में वृद्धि",
+      "headline_en": "Dates Extended",
+      "headline_hi": "तिथियां बढ़ीं",
       "kind": "corr",
-      "line_en": "Psychiatrist Post",
+      "line_en": "Psychiatrist Vacancy",
       "line_hi": "मनोरोग विशेषज्ञ पद",
       "posts": 8
     },
-    "status_en": "Last date extended & vacancies increased",
-    "status_hi": "अंतिम तिथि बढ़ाई गई एवं रिक्तियों में वृद्धि",
-    "summary_en": "Chhattisgarh Public Service Commission has increased the total vacancies for Psychiatrist to 8 and extended the online application last date to September 15, 2026. Candidates who applied earlier need not apply again.",
-    "summary_hi": "छत्तीसगढ़ लोक सेवा आयोग ने मनोरोग विशेषज्ञ के पदों की संख्या बढ़ाकर 8 कर दी है और ऑनलाइन आवेदन की अंतिम तिथि 15 सितंबर 2026 तक बढ़ा दी है। जो उम्मीदवार पहले आवेदन कर चुके हैं, उन्हें दोबारा आवेदन करने की आवश्यकता नहीं है।",
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Chhattisgarh Public Service Commission has increased vacancies for the Psychiatrist position and extended the online application dates to September 15, 2026.",
+    "summary_hi": "छत्तीसगढ़ लोक सेवा आयोग ने मनोचिकित्सक के पदों की संख्या में वृद्धि करते हुए ऑनलाइन आवेदन की अंतिम तिथि 15 सितंबर 2026 तक बढ़ा दी है।",
     "vacancies": [
       {
-        "detail_en": "Total posts: 8. Pay Matrix Level-13 (₹67300-213100).",
-        "detail_hi": "कुल पद: 8। वेतन मैट्रिक्स लेवल-13 (₹67300-213100)।",
-        "post_en": "Psychiatrist (Carry Forward / Backlog)",
-        "post_hi": "मनोरोग विशेषज्ञ (कैरीफारवर्ड/बैकलॉग)",
+        "detail_en": "Revised total vacancies: 8",
+        "detail_hi": "संशोधित कुल रिक्तियां: 8",
+        "post_en": "Psychiatrist (Backlog / Carryforward)",
+        "post_hi": "मनोरोग विशेषज्ञ (बैकलॉग)",
         "total": "8"
       }
     ],
     "video_url": null,
     "who_en": [
-      "Medical professionals holding qualifications for the Psychiatrist post in Chhattisgarh"
+      "Candidates eligible for the Psychiatrist position who missed applying earlier or wish to apply under the revised vacancy structure."
     ],
     "who_hi": [
-      "छत्तीसगढ़ में मनोरोग विशेषज्ञ पद के लिए योग्यता रखने वाले चिकित्सा पेशेवर"
+      "मनोरोग विशेषज्ञ पद के लिए पात्र उम्मीदवार जो पहले आवेदन करने से चूक गए थे या संशोधित रिक्ति संरचना के तहत आवेदन करना चाहते हैं।"
     ]
   },
   "pdf": {
@@ -290,11 +261,11 @@
     "sha256": "4f8057203c26efd5536a3ebefb934595d0c98ae76b318a78fa74d72365b540df",
     "text_kind": "text"
   },
-  "published_at": "2026-11-03T16:35:24Z",
+  "published_at": "2026-11-03T16:57:28Z",
   "qual": [
     "postgraduate"
   ],
-  "slug": "cgpsc-psychiatrist-recruitment-2026-last-date-extended-for-8-pos",
+  "slug": "cgpsc-psychiatrist-recruitment-2026-last-date-extended-vacancy-i",
   "source_id": "cgpsc-adverts",
   "status": "approved",
   "title": "PSYCHIATRIST-2026_CORRIGENDUM (21-08-2026)",

@@ -6,11 +6,11 @@
     "exam_date": null,
     "last_date": null,
     "list": true,
-    "posts": "Geologist, Scientist, Hydrogeologist, Geophysicist, Chemist, Assistant Chemist",
+    "posts": "Geologist, Scientist, Hydrogeologist, Geophysicist, Chemist",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
-    "summary_en": "The Union Public Service Commission has released the final result for the Combined Geo-Scientist Examination, 2026. Candidates can check their qualification status and recommended posts on the official website.",
-    "summary_hi": "संघ लोक सेवा आयोग ने संयुक्त भू-वैज्ञानिक परीक्षा 2026 का अंतिम परिणाम जारी कर दिया है। उम्मीदवार आधिकारिक वेबसाइट पर अपना परिणाम देख सकते हैं।",
+    "summary_en": "Union Public Service Commission has declared the final result for the Combined Geo-Scientist Examination 2026. Candidates can check their recommended status and merit list on the official website.",
+    "summary_hi": "संघ लोक सेवा आयोग ने संयुक्त भू-वैज्ञानिक परीक्षा 2026 का अंतिम परिणाम घोषित कर दिया है। उम्मीदवार आधिकारिक वेबसाइट पर अपनी अनुशंसित स्थिति और मेरिट सूची देख सकते हैं।",
     "title_en": "UPSC Combined Geo-Scientist Final Result 2026 – Merit List Out",
     "title_hi": "संघ लोक सेवा आयोग संयुक्त भू-वैज्ञानिक अंतिम परिणाम 2026 – मेरिट लिस्ट जारी",
     "type": "Result",
@@ -28,19 +28,21 @@
   "fields": {},
   "first_seen": "2026-11-03T16:16:29+00:00",
   "id": "c4fe119de1c3",
-  "issue": 991,
+  "issue": 1013,
   "issue_tidy": true,
   "kind": "result",
   "notice_date": "2026-10-16",
   "org": "UPSC",
   "page": {
     "after_en": [
-      "Offer of appointment by the Government based on vacancies, eligibility, and pre-appointment verification",
-      "Document verification for candidates with provisional results within three months"
+      "Candidates whose results are clear will receive offers of appointment from the Government based on available vacancies and fulfillment of eligibility conditions.",
+      "Provisional candidates must submit their pending original documents within 3 months.",
+      "Marks of the candidates will be made available on the UPSC website within 15 days from the date of publication of the result."
     ],
     "after_hi": [
-      "रिक्तियों, पात्रता और पूर्व-निय अपॉइंटमेंट सत्यापन के आधार पर सरकार द्वारा नियुक्ति प्रस्ताव",
-      "तीन महीने के भीतर अनंतिम परिणामों वाले उम्मीदवारों के लिए दस्तावेज सत्यापन"
+      "जिन उम्मीदवारों के परिणाम स्पष्ट हैं, उन्हें उपलब्ध रिक्तियों और पात्रता शर्तों की पूर्ति के आधार पर सरकार से नियुक्ति प्रस्ताव प्राप्त होंगे।",
+      "अनंतिम उम्मीदवारों को 3 महीने के भीतर अपने लंबित मूल दस्तावेज जमा करने होंगे।",
+      "परिणाम प्रकाशन की तिथि से 15 दिनों के भीतर उम्मीदवारों के अंक यूपीएससी वेबसाइट पर उपलब्ध करा दिए जाएंगे।"
     ],
     "age": [],
     "apply_start": null,
@@ -48,12 +50,14 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check your roll number in the merit list",
-      "Provisional candidates must submit pending documents within 3 months"
+      "Check your roll number in the official merit list PDF",
+      "Note if your result status is provisional and arrange for pending document verification",
+      "Keep track of the official website for marks release"
     ],
     "checklist_hi": [
-      "मेरिट सूची में अपना रोल नंबर जांचें",
-      "अनंतिम उम्मीदवारों को 3 महीने के भीतर लंबित दस्तावेज जमा करने होंगे"
+      "आधिकारिक मेरिट सूची पीडीएफ में अपना रोल नंबर जांचें",
+      "ध्यान दें कि क्या आपकी परिणाम स्थिति अनंतिम है और लंबित दस्तावेज सत्यापन की व्यवस्था करें",
+      "अंक जारी होने के लिए आधिकारिक वेबसाइट पर नजर रखें"
     ],
     "conducted_by_en": "Union Public Service Commission (UPSC)",
     "conducted_by_hi": "संघ लोक सेवा आयोग (यूपीएससी)",
@@ -77,54 +81,67 @@
         "value_hi": "सितंबर 2026"
       },
       {
-        "label_en": "Result Notice Date",
-        "label_hi": "परिणाम नोटिस तिथि",
+        "label_en": "Result Declaration Date",
+        "label_hi": "परिणाम घोषणा तिथि",
         "value_en": "16 Oct 2026",
         "value_hi": "16 अक्टूबर 2026"
       }
     ],
     "documents_en": [
-      "Original documents for verification (for provisional candidates)"
+      "Original documents for candidates whose results are provisional"
     ],
     "documents_hi": [
-      "सत्यापन के लिए मूल दस्तावेज (अनस्थायी उम्मीदवारों के लिए)"
+      "वे उम्मीदवार जिनके परिणाम अनंतिम हैं, उनके लिए मूल दस्तावेज"
     ],
     "eligibility": [],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is a national-level examination conducted by the Union Public Service Commission for recruitment to various Group A and Group B posts like Geologist, Geophysicist, Chemist, and Hydrogeologist in the Government of India.",
-        "a_hi": "यह भारत सरकार में भूवैज्ञानिक, भूभौतिकीविद्, रसायनज्ञ और जलविज्ञानी जैसे विभिन्न ग्रुप ए और ग्रुप बी पदों पर भर्ती के लिए संघ लोक सेवा आयोग द्वारा आयोजित एक राष्ट्रीय स्तर की परीक्षा है।",
+        "a_en": "It is a national-level competitive examination conducted by the Union Public Service Commission for recruitment to various Group A and Group B posts like Geologist, Geophysicist, Chemist, and Hydrogeologist in the Government of India.",
+        "a_hi": "यह भारत सरकार में भूवैज्ञानिक, भूभौतिकीविद्, रसायनज्ञ और जलभूवैज्ञानिक जैसे विभिन्न ग्रुप ए और ग्रुप बी पदों पर भर्ती के लिए संघ लोक सेवा आयोग द्वारा आयोजित एक राष्ट्रीय स्तर की प्रतियोगी परीक्षा है।",
         "q_en": "What is the UPSC Combined Geo-Scientist Examination?",
         "q_hi": "यूपीएससी संयुक्त भू-वैज्ञानिक परीक्षा क्या है?"
       }
     ],
-    "extra": [],
+    "extra": [
+      {
+        "label_en": "UPSC Call Centre Contact",
+        "label_hi": "यूपीएससी कॉल सेंटर संपर्क",
+        "value_en": "011-40303444 / 24041001",
+        "value_hi": "011-40303444 / 24041001"
+      }
+    ],
     "faq": [
       {
-        "a_en": "The final result was declared on 16th October 2026.",
-        "a_hi": "अंतिम परिणाम 16 अक्टूबर 2026 को घोषित किया गया था।",
+        "a_en": "The final result was declared on 16th October 2026 by the Union Public Service Commission.",
+        "a_hi": "अंतिम परिणाम 16 अक्टूबर 2026 को संघ लोक सेवा आयोग द्वारा घोषित किया गया था।",
         "q_en": "When was the UPSC Combined Geo-Scientist Final Result 2026 declared?",
         "q_hi": "यूपीएससी संयुक्त भू-वैज्ञानिक अंतिम परिणाम 2026 कब घोषित किया गया था?"
       },
       {
-        "a_en": "A total of 51 vacancies were reported by the Government.",
-        "a_hi": "सरकार द्वारा कुल 51 रिक्तियों की सूचना दी गई थी।",
-        "q_en": "How many vacancies were reported for the Combined Geo-Scientist Examination 2026?",
-        "q_hi": "संयुक्त भू-वैज्ञानिक परीक्षा 2026 के लिए कुल कितनी रिक्तियों की सूचना दी गई थी?"
+        "a_en": "A total of 51 vacancies were reported by the Government for various posts.",
+        "a_hi": "विभिन्न पदों के लिए सरकार द्वारा कुल 51 रिक्तियों की सूचना दी गई थी।",
+        "q_en": "How many total vacancies were announced for the 2026 examination?",
+        "q_hi": "2026 परीक्षा के लिए कुल कितनी रिक्तियों की घोषणा की गई थी?"
       },
       {
-        "a_en": "You can check the result on the official UPSC website at www.upsc.gov.in.",
-        "a_hi": "आप आधिकारिक यूपीएससी वेबसाइट www.upsc.gov.in पर परिणाम देख सकते हैं।",
+        "a_en": "You can check and download the result PDF from the official UPSC website at upsc.gov.in.",
+        "a_hi": "आप आधिकारिक यूपीएससी वेबसाइट upsc.gov.in से परिणाम पीडीएफ देख और डाउनलोड कर सकते हैं।",
         "q_en": "Where can I check the UPSC Combined Geo-Scientist Final Result?",
         "q_hi": "मैं यूपीएससी संयुक्त भू-वैज्ञानिक अंतिम परिणाम कहां देख सकता हूं?"
       },
       {
-        "a_en": "Provisional candidates must submit their requisite documents within a period of three months from the date of declaration of the final result.",
-        "a_hi": "अनंतिम उम्मीदवारों को अंतिम परिणाम घोषित होने की तिथि से तीन महीने की अवधि के भीतर अपने आवश्यक दस्तावेज जमा करने होंगे।",
-        "q_en": "What is the deadline for provisional candidates to submit documents?",
-        "q_hi": "अनंतिम उम्मीदवारों के लिए दस्तावेज जमा करने की अंतिम तिथि क्या है?"
+        "a_en": "The marks of the candidates are likely to be made available on the UPSC website within 15 days from the date of publication of the result.",
+        "a_hi": "परिणाम प्रकाशन की तिथि से 15 दिनों के भीतर उम्मीदवारों के अंक यूपीएससी वेबसाइट पर उपलब्ध कराए जाने की संभावना है।",
+        "q_en": "When will the marks of the candidates be released?",
+        "q_hi": "उम्मीदवारों के अंक कब जारी किए जाएंगे?"
+      },
+      {
+        "a_en": "Provisional candidates must submit their required original documents within a period of three months from the date of declaration of the final result.",
+        "a_hi": "अनंतिम उम्मीदवारों को अंतिम परिणाम घोषित होने की तारीख से तीन महीने की अवधि के भीतर अपने आवश्यक मूल दस्तावेज जमा करने होंगे।",
+        "q_en": "What is the time limit for provisional candidates to submit documents?",
+        "q_hi": "अनंतिम उम्मीदवारों के लिए दस्तावेज जमा करने की समय सीमा क्या है?"
       }
     ],
     "fees": [],
@@ -132,20 +149,26 @@
     "h1_hi": "संघ लोक सेवा आयोग संयुक्त भू-वैज्ञानिक अंतिम परिणाम 2026 – मेरिट लिस्ट जारी",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official UPSC website at upsc.gov.in",
-      "Check the 'What's New' section for Combined Geo-Scientist (Main) Examination, 2026 Final Result",
-      "Download the PDF notice to view recommended candidates and roll numbers"
+      "Go to the official UPSC website at upsc.gov.in",
+      "Click on the 'What's New' section or the Combined Geo-Scientist Examination 2026 final result link.",
+      "Download the PDF notice containing the list of recommended candidates.",
+      "Check your roll number and name in the merit list."
     ],
     "how_hi": [
       "आधिकारिक यूपीएससी वेबसाइट upsc.gov.in पर जाएं",
-      "संयुक्त भू-वैज्ञानिक (मुख्य) परीक्षा, 2026 के अंतिम परिणाम के लिए 'व्हाट्स न्यू' अनुभाग देखें",
-      "अनुशंसित उम्मीदवारों और रोल नंबर देखने के लिए पीडीएफ नोटिस डाउनलोड करें"
+      "'व्हाट्स न्यू' अनुभाग या संयुक्त भू-वैज्ञानिक परीक्षा 2026 अंतिम परिणाम लिंक पर क्लिक करें।",
+      "अनुशंसित उम्मीदवारों की सूची वाला पीडीएफ नोटिस डाउनलोड करें।",
+      "मेरिट सूची में अपना रोल नंबर और नाम जांचें।"
     ],
-    "intro_en": "The Union Public Service Commission (UPSC) has announced the final result of the Combined Geo-Scientist Examination, 2026. The selection process included Stage-I (Preliminary) Examination held on 8th February 2026, Stage-II (Main) Examination on 20th and 21st June 2026, followed by the Personality Test in September 2026. Candidates can view the merit list of recommended candidates for Group A and Group B positions on the official UPSC website.",
-    "intro_hi": "संघ लोक सेवा आयोग (यूपीएससी) ने संयुक्त भू-वैज्ञानिक परीक्षा, 2026 का अंतिम परिणाम घोषित कर दिया है। चयन प्रक्रिया में 8 फरवरी 2026 को आयोजित चरण-I (प्रारंभिक) परीक्षा, 20 और 21 जून 2026 को चरण-II (मुख्य) परीक्षा और उसके बाद सितंबर 2026 में व्यक्तित्व परीक्षण शामिल था। उम्मीदवार आधिकारिक यूपीएससी वेबसाइट पर ग्रुप ए और ग्रुप बी पदों के लिए अनुशंसित उम्मीदवारों की मेरिट सूची देख सकते हैं।",
+    "intro_en": "The Union Public Service Commission (UPSC) has released the final result for the Combined Geo-Scientist Examination 2026. The selection was based on the Stage-I (Preliminary) Examination held on 8th February 2026, Stage-II (Main) Examination held on 20th and 21st June 2026, and the subsequent Personality Test held in September 2026. A total of 51 vacancies were reported by the Government for various Group A and Group B posts including Geologist, Scientist, Hydrogeologist, Geophysicist, and Chemist. Candidates who appeared for the examination can check their recommended status and merit list on the official UPSC website.",
+    "intro_hi": "संघ लोक सेवा आयोग (यूपीएससी) ने संयुक्त भू-वैज्ञानिक परीक्षा 2026 का अंतिम परिणाम जारी कर दिया है। चयन 8 फरवरी 2026 को आयोजित चरण-I (प्रारंभिक) परीक्षा, 20 और 21 जून 2026 को आयोजित चरण-II (मुख्य) परीक्षा और सितंबर 2026 के महीनों में आयोजित व्यक्तित्व परीक्षण के आधार पर किया गया है। भूवैज्ञानिक, वैज्ञानिक, जलभूवैज्ञानिक, भूभौतिकीविद् और रसायनज्ञ सहित विभिन्न ग्रुप ए और ग्रुप बी पदों के लिए सरकार द्वारा कुल 51 रिक्तियों की सूचना दी गई थी। परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक यूपीएससी वेबसाइट पर अपनी अनुशंसित स्थिति और मेरिट सूची देख सकते हैं।",
     "last_date": null,
-    "mistakes_en": [],
-    "mistakes_hi": [],
+    "mistakes_en": [
+      "Provisional candidates must submit missing original documents within three months from the date of result declaration to avoid cancellation of candidature."
+    ],
+    "mistakes_hi": [
+      "अनंतिम उम्मीदवारों को उम्मीदवारी रद्द होने से बचाने के लिए परिणाम घोषणा की तारीख से तीन महीने के भीतर लापता मूल दस्तावेज जमा करने होंगे।"
+    ],
     "not_en": [],
     "not_hi": [],
     "notice_date": "2026-10-16",
@@ -156,8 +179,8 @@
       {
         "label_en": "Posts",
         "label_hi": "पद",
-        "value_en": "Geologist, Scientist, Hydrogeologist, Geophysicist, Chemist, Assistant Chemist",
-        "value_hi": "भूवैज्ञानिक, वैज्ञानिक, जलविज्ञानी, भूभौतिकीविद्, रसायनज्ञ, सहायक रसायनज्ञ"
+        "value_en": "Geologist, Scientist, Hydrogeologist, Geophysicist, Chemist",
+        "value_hi": "भूवैज्ञानिक, वैज्ञानिक, जलभूवैज्ञानिक, भूभौतिकीविद्, रसायनज्ञ"
       },
       {
         "label_en": "Total vacancies",
@@ -180,77 +203,100 @@
     ],
     "salary": [],
     "selection_en": [
-      "Stage-I (Preliminary) Examination",
-      "Stage-II (Main) Examination",
-      "Personality Test"
+      "Stage-I: Preliminary Examination",
+      "Stage-II: Main Examination",
+      "Personality Test / Interview",
+      "Document Verification and Medical Examination"
     ],
     "selection_hi": [
-      "चरण-I (प्रारंभिक) परीक्षा",
-      "चरण-II (मुख्य) परीक्षा",
-      "व्यक्तित्व परीक्षण"
+      "चरण-I: प्रारंभिक परीक्षा",
+      "चरण-II: मुख्य परीक्षा",
+      "व्यक्तित्व परीक्षण / साक्षात्कार",
+      "दस्तावेज़ सत्यापन और चिकित्सा परीक्षा"
     ],
     "share_card": {
-      "headline_en": "Final Result Declared",
-      "headline_hi": "अंतिम परिणाम घोषित",
+      "headline_en": "Final Result 2026",
+      "headline_hi": "अंतिम परिणाम 2026",
       "kind": "result",
-      "line_en": "Geo-Scientist Exam 2026",
-      "line_hi": "भू-वैज्ञानिक परीक्षा 2026",
+      "line_en": "Geo-Scientist Exam",
+      "line_hi": "भू-वैज्ञानिक परीक्षा",
       "posts": 51
     },
     "status_en": "Final result declared",
     "status_hi": "अंतिम परिणाम घोषित",
-    "summary_en": "The Union Public Service Commission has released the final result for the Combined Geo-Scientist Examination, 2026. Candidates can check the merit list of recommended candidates for various Group A and Group B posts.",
-    "summary_hi": "संघ लोक सेवा आयोग ने संयुक्त भू-वैज्ञानिक परीक्षा 2026 का अंतिम परिणाम जारी कर दिया है। उम्मीदवार विभिन्न ग्रुप ए और ग्रुप बी पदों के लिए अनुशंसित उम्मीदवारों की मेरिट लिस्ट देख सकते हैं।",
+    "summary_en": "Union Public Service Commission has declared the final result for the Combined Geo-Scientist Examination 2026. Candidates can check their recommended status, roll numbers, and merit list on the official website.",
+    "summary_hi": "संघ लोक सेवा आयोग ने संयुक्त भू-वैज्ञानिक परीक्षा 2026 का अंतिम परिणाम घोषित कर दिया है। उम्मीदवार आधिकारिक वेबसाइट पर अपनी अनुशंसित स्थिति, रोल नंबर और मेरिट सूची देख सकते हैं।",
     "vacancies": [
       {
         "detail_en": "GEN 10, EWS 01, OBC 06, SC 03, ST 01",
         "detail_hi": "सामान्य 10, ईडब्ल्यूएस 01, ओबीसी 06, एससी 03, एसटी 01",
-        "post_en": "Geologist Group A",
-        "post_hi": "भूवैज्ञानिक ग्रुप ए",
+        "post_en": "Geologist Group ‘A’",
+        "post_hi": "भूवैज्ञानिक ग्रुप ‘ए’",
         "total": "21"
       },
       {
-        "detail_en": "GEN 11, EWS 02, OBC 05, SC 04, ST 01",
-        "detail_hi": "सामान्य 11, ईडब्ल्यूएस 02, ओबीसी 05, एससी 04, एसटी 01",
-        "post_en": "Scientist B (Hydrogeology) Group A / Assistant Hydrogeologist Group B",
-        "post_hi": "वैज्ञानिक बी (हाइड्रोजियोलॉजी) ग्रुप ए / सहायक हाइड्रोजियोलॉजिस्ट ग्रुप बी",
-        "total": "23"
+        "detail_en": "GEN 03, EWS 00, OBC 01, SC 01, ST 00",
+        "detail_hi": "सामान्य 03, ईडब्ल्यूएस 00, ओबीसी 01, एससी 01, एसटी 00",
+        "post_en": "Scientist ‘B’ (Hydrogeology) Group ‘A’",
+        "post_hi": "वैज्ञानिक ‘बी’ (हाइड्रोजियोलॉजी) ग्रुप ‘ए’",
+        "total": "05"
       },
       {
-        "detail_en": "GEN 04, EWS 00, OBC 01, SC 00, ST 00",
-        "detail_hi": "सामान्य 04, ईडब्ल्यूएस 00, ओबीसी 01, एससी 00, एसटी 00",
-        "post_en": "Geophysicist Group A / Scientist B (Geophysics) Group A / Assistant Geophysicist Group B",
-        "post_hi": "भूभौतिकीविद् ग्रुप ए / वैज्ञानिक बी (भूभौतिकी) ग्रुप ए / सहायक भूभौतिकीविद् ग्रुप बी",
-        "total": "05"
+        "detail_en": "GEN 08, EWS 02, OBC 04, SC 03, ST 01",
+        "detail_hi": "सामान्य 08, ईडब्ल्यूएस 02, ओबीसी 04, एससी 03, एसटी 01",
+        "post_en": "Assistant Hydrogeologist Group ‘B’",
+        "post_hi": "सहायक हाइड्रोजियोलॉजिस्ट ग्रुप ‘बी’",
+        "total": "18"
+      },
+      {
+        "detail_en": "GEN 03, EWS 00, OBC 00, SC 00, ST 00",
+        "detail_hi": "सामान्य 03, ईडब्ल्यूएस 00, ओबीसी 00, एससी 00, एसटी 00",
+        "post_en": "Geophysicist Group ‘A’",
+        "post_hi": "भूभौतिकीविद् ग्रुप ‘ए’",
+        "total": "03"
+      },
+      {
+        "detail_en": "GEN 00, EWS 00, OBC 01, SC 00, ST 00",
+        "detail_hi": "सामान्य 00, ईडब्ल्यूएस 00, ओबीसी 01, एससी 00, एसटी 00",
+        "post_en": "Scientist ‘B’ (Geophysics) Group ‘A’",
+        "post_hi": "वैज्ञानिक ‘बी’ (भूभौतिकी) ग्रुप ‘ए’",
+        "total": "01"
+      },
+      {
+        "detail_en": "GEN 01, EWS 00, OBC 00, SC 00, ST 00",
+        "detail_hi": "सामान्य 01, ईडब्ल्यूएस 00, ओबीसी 00, एससी 00, एसटी 00",
+        "post_en": "Assistant Geophysicist Group ‘B’",
+        "post_hi": "सहायक भूभौतिकीविद् ग्रुप ‘बी’",
+        "total": "01"
       },
       {
         "detail_en": "GEN 07, EWS 01, OBC 05, SC 02, ST 01",
         "detail_hi": "सामान्य 07, ईडब्ल्यूएस 01, ओबीसी 05, एससी 02, एसटी 01",
-        "post_en": "Chemist Group A",
-        "post_hi": "रसायनज्ञ ग्रुप ए",
+        "post_en": "Chemist Group ‘A’",
+        "post_hi": "रसायनज्ञ ग्रुप ‘ए’",
         "total": "16"
       },
       {
         "detail_en": "GEN 01, EWS 00, OBC 01, SC 00, ST 00",
         "detail_hi": "सामान्य 01, ईडब्ल्यूएस 00, ओबीसी 01, एससी 00, एसटी 00",
-        "post_en": "Scientist B (Chemical) Group A",
-        "post_hi": "वैज्ञानिक बी (केमिकल) ग्रुप ए",
+        "post_en": "Scientist ‘B’ (Chemical) Group ‘A’",
+        "post_hi": "वैज्ञानिक ‘बी’ (केमिकल) ग्रुप ‘ए’",
         "total": "02"
       },
       {
         "detail_en": "GEN 02, EWS 00, OBC 00, SC 00, ST 00",
         "detail_hi": "सामान्य 02, ईडब्ल्यूएस 00, ओबीसी 00, एससी 00, एसटी 00",
-        "post_en": "Assistant Chemist Group B",
-        "post_hi": "सहायक रसायनज्ञ ग्रुप बी",
+        "post_en": "Assistant Chemist Group ‘B’",
+        "post_hi": "सहायक रसायनज्ञ ग्रुप ‘बी’",
         "total": "02"
       }
     ],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the UPSC Combined Geo-Scientist Examination 2026 stages"
+      "Candidates who appeared for the UPSC Combined Geo-Scientist Examination 2026"
     ],
     "who_hi": [
-      "वे उम्मीदवार जो यूपीएससी संयुक्त भू-वैज्ञानिक परीक्षा 2026 के चरणों में उपस्थित हुए थे"
+      "वे उम्मीदवार जो यूपीएससी संयुक्त भू-वैज्ञानिक परीक्षा 2026 में शामिल हुए थे"
     ]
   },
   "pdf": {
@@ -260,9 +306,10 @@
     "text_kind": "text",
     "via": "https://www.upsc.gov.in/sites/default/files/FR-CGeoScnstM-2026-Engl-16102026.pdf"
   },
-  "published_at": "2026-11-03T16:40:00Z",
+  "published_at": "2026-11-03T17:00:34Z",
   "qual": [
-    "graduate"
+    "graduate",
+    "postgraduate"
   ],
   "rewrite": true,
   "slug": "upsc-combined-geo-scientist-final-result-2026-merit-list-out",

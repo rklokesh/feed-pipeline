@@ -6,21 +6,21 @@
     "exam_date": "2026-09-27",
     "last_date": null,
     "list": true,
-    "posts": "Manager Grade - I / Section Officer",
+    "posts": "Manager Grade - I - Section Officer",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
-    "summary_en": "UPSC has released the written test result for 19 posts of Manager Grade - I / Section Officer in the Ministry of Defence. Candidates can check their roll numbers in the notice.",
-    "summary_hi": "संघ लोक सेवा आयोग ने रक्षा मंत्रालय में मैनेजर ग्रेड - I / अनुभाग अधिकारी के 19 पदों के लिए लिखित परीक्षा का परिणाम जारी कर दिया है। उम्मीदवार नोटिस में अपने रोल नंबर देख सकते हैं।",
-    "title_en": "UPSC Manager Grade I Section Officer Result 2026 – Written Test",
-    "title_hi": "संघ लोक सेवा आयोग मैनेजर ग्रेड I अनुभाग अधिकारी रिजल्ट 2026 – लिखित परीक्षा",
+    "summary_en": "The Union Public Service Commission has released the written exam result for Manager Grade I / Section Officer in the Ministry of Defence. Candidates can check their roll numbers in the notice.",
+    "summary_hi": "संघ लोक सेवा आयोग ने रक्षा मंत्रालय में मैनेजर ग्रेड I / सेक्शन ऑफिसर के लिए लिखित परीक्षा का परिणाम जारी कर दिया है। उम्मीदवार नोटिस में अपने रोल नंबर की जाँच कर सकते हैं।",
+    "title_en": "UPSC Manager Grade I Result 2026 – Written Exam Shortlist Out",
+    "title_hi": "संघ लोक सेवा आयोग मैनेजर ग्रेड I रिज़ल्ट 2026 – लिखित परीक्षा शॉर्टलिस्ट जारी",
     "type": "Result",
     "vacancies": 19
   },
   "editor_notes": [],
   "exam": {
-    "key": "upsc-manager-grade-i-section-officer-2026",
-    "name_en": "UPSC Manager Grade I Section Officer 2026",
-    "name_hi": "यूपीएससी मैनेजर ग्रेड I सेक्शन ऑफिसर 2026"
+    "key": "upsc-manager-grade-i-and-section-officer-2026",
+    "name_en": "UPSC Manager Grade I and Section Officer 2026",
+    "name_hi": "यूपीएससी प्रबंधक ग्रेड I और अनुभाग अधिकारी 2026"
   },
   "extraction": {
     "ai": null
@@ -39,19 +39,21 @@
   },
   "first_seen": "2026-11-03T16:16:29+00:00",
   "id": "8d316a6c7960",
-  "issue": 983,
+  "issue": 1005,
   "issue_tidy": true,
   "kind": "result",
   "notice_date": "2026-10-23",
   "org": "UPSC",
   "page": {
     "after_en": [
-      "Shortlisted candidates will be called for an interview after scrutiny of their eligibility conditions.",
-      "Marks of unsuccessful candidates will be published on the UPSC website after the completion of the recruitment process."
+      "Shortlisted candidates will be called for an interview by the UPSC.",
+      "Final selection will be made after checking all eligibility conditions and completion of the interview process.",
+      "Marks of unsuccessful candidates will be published after the final recruitment process concludes."
     ],
     "after_hi": [
-      "पात्रता शर्तों की जांच के बाद शॉर्टलिस्ट किए गए उम्मीदवारों को साक्षात्कार के लिए बुलाया जाएगा।",
-      "भर्ती प्रक्रिया पूरी होने के बाद असफल उम्मीदवारों के अंक यूपीएससी वेबसाइट पर प्रकाशित किए जाएंगे।"
+      "शॉर्टलिस्ट किए गए उम्मीदवारों को यूपीएससी द्वारा साक्षात्कार के लिए बुलाया जाएगा।",
+      "सभी पात्रता शर्तों की जाँच और साक्षात्कार प्रक्रिया पूरी होने के बाद अंतिम चयन किया जाएगा।",
+      "अंतिम भर्ती प्रक्रिया समाप्त होने के बाद असफल उम्मीदवारों के अंक प्रकाशित किए जाएंगे।"
     ],
     "age": [],
     "apply_start": null,
@@ -59,111 +61,115 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Find your roll number in the official PDF result file.",
-      "Keep your documents ready for the upcoming interview stage."
+      "Check your roll number in the official result list.",
+      "Keep your application documents ready for the upcoming interview stage."
     ],
     "checklist_hi": [
-      "आधिकारिक पीडीएफ परिणाम फ़ाइल में अपना रोल नंबर खोजें।",
-      "आगामी साक्षात्कार चरण के लिए अपने दस्तावेजों को तैयार रखें।"
+      "आधिकारिक परिणाम सूची में अपना रोल नंबर जाँचें।",
+      "आगामी साक्षात्कार चरण के लिए अपने आवेदन के दस्तावेज़ तैयार रखें।"
     ],
     "conducted_by_en": "Union Public Service Commission (UPSC)",
     "conducted_by_hi": "संघ लोक सेवा आयोग (यूपीएससी)",
     "dates": [
       {
-        "label_en": "Recruitment test date",
+        "label_en": "Recruitment Test Date",
         "label_hi": "भर्ती परीक्षा तिथि",
         "value_en": "27 Sep 2026",
         "value_hi": "27 सितंबर 2026"
       },
       {
-        "label_en": "Result notice date",
+        "label_en": "Result Notice Date",
         "label_hi": "परिणाम नोटिस तिथि",
         "value_en": "23 Oct 2026",
         "value_hi": "23 अक्टूबर 2026"
       }
     ],
     "documents_en": [
-      "Proof of educational qualifications",
+      "Proof of educational qualification",
       "Age proof",
-      "Category certificates (if applicable)",
-      "Other eligibility documents for the interview stage"
+      "Caste/Category certificates (if applicable)",
+      "Photo ID proof"
     ],
     "documents_hi": [
       "शैक्षणिक योग्यता का प्रमाण",
       "आयु प्रमाण",
-      "श्रेणी प्रमाण पत्र (यदि लागू हो)",
-      "साक्षात्कार के चरण के लिए अन्य पात्रता दस्तावेज"
+      "जाति/श्रेणी प्रमाण पत्र (यदि लागू हो)",
+      "फोटो पहचान प्रमाण"
     ],
     "eligibility": [
       {
-        "label_en": "Condition",
-        "label_hi": "शर्त",
-        "value_en": "Fulfillment of all eligibility conditions required for the post",
-        "value_hi": "पद के लिए आवश्यक सभी पात्रता शर्तों को पूरा करना"
+        "label_en": "General Condition",
+        "label_hi": "सामान्य शर्त",
+        "value_en": "Candidates must satisfy/fulfill all eligibility conditions as per advertisement 08/2025.",
+        "value_hi": "उम्मीदवारों को विज्ञापन संख्या 08/2025 के अनुसार सभी पात्रता शर्तों को पूरा करना होगा।"
       }
     ],
     "exam_date": "2026-09-27",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is the list of candidates shortlisted provisionally for the interview round based on their performance in the written recruitment test conducted by UPSC.",
-        "a_hi": "यह यूपीएससी द्वारा आयोजित लिखित भर्ती परीक्षा में उनके प्रदर्शन के आधार पर साक्षात्कार दौर के लिए अनंतिम रूप से शॉर्टलिस्ट किए गए उम्मीदवारों की सूची है।",
-        "q_en": "What is the UPSC Manager Grade - I / Section Officer Result?",
-        "q_hi": "यूपीएससी मैनेजर ग्रेड - I / अनुभाग अधिकारी रिजल्ट क्या है?"
+        "a_en": "It is the list of candidates provisionally shortlisted for interview based on their performance in the recruitment test conducted on 27 September 2026 for the Ministry of Defence.",
+        "a_hi": "यह रक्षा मंत्रालय के लिए 27 सितंबर 2026 को आयोजित भर्ती परीक्षा में उनके प्रदर्शन के आधार पर साक्षात्कार के लिए अनंतिम रूप से शॉर्टलिस्ट किए गए उम्मीदवारों की सूची है।",
+        "q_en": "What is the UPSC Manager Grade I / Section Officer Result?",
+        "q_hi": "यूपीएससी मैनेजर ग्रेड I / सेक्शन ऑफिसर परिणाम क्या है?"
       }
     ],
     "extra": [
       {
-        "label_en": "Vacancy Number",
-        "label_hi": "वैकेंसी नंबर",
-        "value_en": "25060805428",
-        "value_hi": "25060805428"
+        "label_en": "Marks of Unsuccessful Candidates",
+        "label_hi": "असफल उम्मीदवारों के अंक",
+        "value_en": "Will be uploaded on the Commission's website after completion of the recruitment process.",
+        "value_hi": "भर्ती प्रक्रिया पूरी होने के बाद आयोग की वेबसाइट पर अपलोड किए जाएंगे।"
       }
     ],
     "faq": [
       {
         "a_en": "The recruitment test was conducted on 27 September 2026.",
         "a_hi": "भर्ती परीक्षा 27 सितंबर 2026 को आयोजित की गई थी।",
-        "q_en": "When was the UPSC Manager Grade - I written test conducted?",
-        "q_hi": "यूपीएससी मैनेजर ग्रेड - I लिखित परीक्षा कब आयोजित की गई थी?"
+        "q_en": "When was the UPSC Manager Grade I written exam conducted?",
+        "q_hi": "यूपीएससी मैनेजर ग्रेड I की लिखित परीक्षा कब आयोजित की गई थी?"
       },
       {
-        "a_en": "There are a total of 19 vacancies.",
-        "a_hi": "कुल 19 वैकेंसी हैं।",
-        "q_en": "How many vacancies are there for Manager Grade - I / Section Officer?",
-        "q_hi": "मैनेजर ग्रेड - I / अनुभाग अधिकारी के लिए कुल कितनी वैकेंसी हैं?"
+        "a_en": "A total of 19 vacancies were advertised under Advt. No. 08/2025.",
+        "a_hi": "विज्ञापन संख्या 08/2025 के तहत कुल 19 वैकेंसी विज्ञापित की गई थीं।",
+        "q_en": "How many vacancies were advertised for Manager Grade I in the Ministry of Defence?",
+        "q_hi": "रक्षा मंत्रालय में मैनेजर ग्रेड I के लिए कुल कितनी वैकेंसी विज्ञापित की गई थीं?"
       },
       {
-        "a_en": "No, the candidates have been shortlisted provisionally, and only those who fulfill all eligibility conditions will be called for the interview.",
-        "a_hi": "नहीं, उम्मीदवारों को अनंतिम रूप से शॉर्टलिस्ट किया गया है, और साक्षात्कार के लिए केवल वे ही बुलाए जाएंगे जो सभी पात्रता शर्तों को पूरा करते हैं।",
-        "q_en": "Are these selections final?",
-        "q_hi": "क्या ये चयन अंतिम हैं?"
+        "a_en": "No, the candidates have been shortlisted provisionally. Only those who satisfy all eligibility conditions will be called for an interview.",
+        "a_hi": "नहीं, उम्मीदवारों को अनंतिम रूप से शॉर्टलिस्ट किया गया है। केवल वे ही जो सभी पात्रता शर्तों को पूरा करते हैं, साक्षात्कार के लिए बुलाए जाएंगे।",
+        "q_en": "Are the shortlisted candidates finally selected?",
+        "q_hi": "क्या शॉर्टलिस्ट किए गए उम्मीदवारों का अंतिम चयन हो गया है?"
+      },
+      {
+        "a_en": "The marks of unsuccessful candidates will be uploaded on the UPSC website after the entire recruitment process is completed.",
+        "a_hi": "पूरी भर्ती प्रक्रिया पूरी होने के बाद असफल उम्मीदवारों के अंक यूपीएससी की वेबसाइट पर अपलोड किए जाएंगे।",
+        "q_en": "When will the marks of unsuccessful candidates be released?",
+        "q_hi": "असफल उम्मीदवारों के अंक कब जारी किए जाएंगे?"
       }
     ],
     "fees": [],
-    "h1_en": "UPSC Manager Grade I Section Officer Result 2026 – Written Test",
-    "h1_hi": "संघ लोक सेवा आयोग मैनेजर ग्रेड I अनुभाग अधिकारी रिजल्ट 2026 – लिखित परीक्षा",
+    "h1_en": "UPSC Manager Grade I Result 2026 – Written Exam Shortlist Out",
+    "h1_hi": "संघ लोक सेवा आयोग मैनेजर ग्रेड I रिज़ल्ट 2026 – लिखित परीक्षा शॉर्टलिस्ट जारी",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official UPSC website.",
-      "Go to the 'What's New' section and click on the written result notice for Manager Grade - I / Section Officer.",
-      "Check your roll number in the PDF annexure."
+      "Visit the official UPSC website or check the official notice PDF.",
+      "Look for the roll numbers of shortlisted candidates in the Annexure.",
+      "Download and save the result notice for future reference."
     ],
     "how_hi": [
-      "आधिकारिक यूपीएससी वेबसाइट पर जाएं।",
-      "नया क्या है (व्हाट्स न्यू) सेक्शन में जाएं और मैनेजर ग्रेड - I / अनुभाग अधिकारी के लिखित परिणाम नोटिस पर क्लिक करें।",
-      "पीडीएफ अनुभाग में अपना रोल नंबर जांचें।"
+      "आधिकारिक यूपीएससी वेबसाइट पर जाएं या आधिकारिक नोटिस पीडीएफ देखें।",
+      "परिशिष्ट (एनेक्सीयर) में शॉर्टलिस्ट किए गए उम्मीदवारों के रोल नंबर देखें।",
+      "भविष्य के संदर्भ के लिए परिणाम नोटिस डाउनलोड करें और सहेजें।"
     ],
-    "intro_en": "The Union Public Service Commission (UPSC) has announced the written test result for recruitment to 19 posts of Manager Grade - I / Section Officer in the Canteen Stores Department, Ministry of Defence. The recruitment test was conducted on 27.09.2026 under Advt. No. 08/2025. Candidates bearing the specified roll numbers have been shortlisted provisionally. Only those candidates who satisfy all eligibility conditions will be called for the interview stage.",
-    "intro_hi": "संघ लोक सेवा आयोग (यूपीएससी) ने रक्षा मंत्रालय के कैंटीन स्टोर्स डिपार्टमेंट में मैनेजर ग्रेड - I / अनुभाग अधिकारी के 19 पदों पर भर्ती के लिए लिखित परीक्षा का परिणाम घोषित कर दिया है। यह भर्ती परीक्षा विज्ञापन संख्या 08/2025 के तहत 27.09.2026 को आयोजित की गई थी। निर्धारित रोल नंबर वाले उम्मीदवारों को अनंतिम रूप से शॉर्टलिस्ट किया गया है। साक्षात्कार के चरण के लिए केवल वे ही उम्मीदवार बुलाए जाएंगे जो सभी पात्रता शर्तों को पूरा करते हैं।",
+    "intro_en": "The Union Public Service Commission (UPSC) has announced the written test result for recruitment to 19 vacancies of Manager Grade – I / Section Officer in the Canteen Stores Department, Ministry of Defence. The recruitment test was successfully conducted on 27 September 2026. Based on the performance in the test, the Commission has provisionally shortlisted candidates bearing specific roll numbers for the interview stage. Candidates must satisfy all eligibility conditions to appear for the interview.",
+    "intro_hi": "संघ लोक सेवा आयोग (यूपीएससी) ने रक्षा मंत्रालय के कैंटीन स्टोर्स विभाग में मैनेजर ग्रेड – I / सेक्शन ऑफिसर के 19 पदों पर भर्ती के लिए लिखित परीक्षा का परिणाम घोषित कर दिया है। भर्ती परीक्षा 27 सितंबर 2026 को आयोजित की गई थी। परीक्षा में प्रदर्शन के आधार पर, आयोग ने साक्षात्कार चरण के लिए विशिष्ट रोल नंबर वाले उम्मीदवारों को अनंतिम रूप से शॉर्टलिस्ट किया है। साक्षात्कार के लिए उपस्थित होने के लिए उम्मीदवारों को सभी पात्रता शर्तों को पूरा करना होगा।",
     "last_date": null,
     "mistakes_en": [
-      "Do not assume final selection; the candidature is provisional.",
-      "Do not skip verifying all eligibility conditions before the interview."
+      "Do not assume final selection based on provisional shortlisting; eligibility verification is pending."
     ],
     "mistakes_hi": [
-      "अंतिम चयन न समझें; उम्मीदवारी अनंतिम है।",
-      "साक्षात्कार से पहले सभी पात्रता शर्तों को सत्यापित करना न भूलें।"
+      "अनंतिम शॉर्टलिस्टिंग के आधार पर अंतिम चयन न मानें; पात्रता सत्यापन लंबित है।"
     ],
     "not_en": [],
     "not_hi": [],
@@ -173,25 +179,31 @@
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Posts",
-        "label_hi": "पद",
-        "value_en": "Manager Grade - I / Section Officer",
-        "value_hi": "मैनेजर ग्रेड - I / अनुभाग अधिकारी"
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Manager Grade – I / Section Officer",
+        "value_hi": "मैनेजर ग्रेड – I / सेक्शन ऑफिसर"
       },
       {
-        "label_en": "Total vacancies",
+        "label_en": "Department",
+        "label_hi": "विभाग",
+        "value_en": "Canteen Stores Department, Ministry of Defence",
+        "value_hi": "कैंटीन स्टोर्स विभाग, रक्षा मंत्रालय"
+      },
+      {
+        "label_en": "Total Vacancies",
         "label_hi": "कुल वैकेंसी",
         "value_en": "19",
         "value_hi": "19"
       },
       {
-        "label_en": "Exam date",
-        "label_hi": "परीक्षा तिथि",
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा की तिथि",
         "value_en": "27 Sep 2026",
         "value_hi": "27 सितंबर 2026"
       },
       {
-        "label_en": "Advertisement number",
+        "label_en": "Advertisement No.",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "08/2025",
         "value_hi": "08/2025"
@@ -199,42 +211,42 @@
     ],
     "salary": [],
     "selection_en": [
-      "Recruitment Test",
-      "Interview for shortlisted candidates",
+      "Recruitment Test (Written Exam)",
+      "Interview",
       "Document Verification"
     ],
     "selection_hi": [
-      "भर्ती परीक्षा",
-      "शॉर्टलिस्ट किए गए उम्मीदवारों के लिए साक्षात्कार",
+      "भर्ती परीक्षा (लिखित परीक्षा)",
+      "साक्षात्कार",
       "दस्तावेज़ सत्यापन"
     ],
     "share_card": {
-      "headline_en": "Written Result 2026",
-      "headline_hi": "लिखित परिणाम 2026",
+      "headline_en": "Written Result Out",
+      "headline_hi": "लिखित परीक्षा रिज़ल्ट जारी",
       "kind": "result",
-      "line_en": "Manager Grade-I / Section Officer",
-      "line_hi": "मैनेजर ग्रेड-I / अनुभाग अधिकारी",
+      "line_en": "Manager Grade I / Section Officer",
+      "line_hi": "मैनेजर ग्रेड I / सेक्शन ऑफिसर",
       "posts": 19
     },
-    "status_en": "Written test result declared",
-    "status_hi": "लिखित परीक्षा का परिणाम घोषित",
-    "summary_en": "UPSC has released the written test result for 19 posts of Manager Grade - I / Section Officer in the Ministry of Defence. Candidates can check their roll numbers in the notice.",
-    "summary_hi": "संघ लोक सेवा आयोग ने रक्षा मंत्रालय में मैनेजर ग्रेड - I / अनुभाग अधिकारी के 19 पदों के लिए लिखित परीक्षा का परिणाम जारी कर दिया है। उम्मीदवार नोटिस में अपने रोल नंबर देख सकते हैं।",
+    "status_en": "Written result declared, shortlisted candidates called for interview subject to eligibility",
+    "status_hi": "लिखित परीक्षा परिणाम घोषित, शॉर्टलिस्ट किए गए उम्मीदवारों को पात्रता के अधीन साक्षात्कार के लिए बुलाया जाएगा",
+    "summary_en": "The Union Public Service Commission has released the written exam result for Manager Grade I / Section Officer in the Ministry of Defence. Candidates who appeared for the recruitment test on 27 Sep 2026 can check their roll numbers in the provisional shortlist.",
+    "summary_hi": "संघ लोक सेवा आयोग ने रक्षा मंत्रालय में मैनेजर ग्रेड I / सेक्शन ऑफिसर के लिए लिखित परीक्षा का परिणाम जारी कर दिया है। 27 सितंबर 2026 को भर्ती परीक्षा में शामिल होने वाले उम्मीदवार अनंतिम शॉर्टलिस्ट में अपने रोल नंबर की जाँच कर सकते हैं।",
     "vacancies": [
       {
         "detail_en": "Canteen Stores Department, Ministry of Defence",
-        "detail_hi": "कैंटीन स्टोर्स डिपार्टमेंट, रक्षा मंत्रालय",
-        "post_en": "Manager Grade - I / Section Officer",
-        "post_hi": "मैनेजर ग्रेड - I / अनुभाग अधिकारी",
+        "detail_hi": "कैंटीन स्टोर्स विभाग, रक्षा मंत्रालय",
+        "post_en": "Manager Grade – I / Section Officer",
+        "post_hi": "मैनेजर ग्रेड – I / सेक्शन ऑफिसर",
         "total": "19"
       }
     ],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the UPSC Manager Grade - I / Section Officer recruitment test held on 27.09.2026"
+      "Candidates who appeared for the UPSC Manager Grade I recruitment test held on 27 Sep 2026."
     ],
     "who_hi": [
-      "वे उम्मीदवार जिन्होंने 27.09.2026 को आयोजित यूपीएससी मैनेजर ग्रेड - I / अनुभाग अधिकारी भर्ती परीक्षा दी थी"
+      "वे उम्मीदवार जो 27 सितंबर 2026 को आयोजित यूपीएससी मैनेजर ग्रेड I भर्ती परीक्षा में शामिल हुए थे।"
     ]
   },
   "pdf": {
@@ -244,11 +256,11 @@
     "text_kind": "text",
     "via": "https://www.upsc.gov.in/sites/default/files/RT-WR-19-ManagerGr-I-SO-Engl-231026.pdf"
   },
-  "published_at": "2026-11-03T16:38:58Z",
+  "published_at": "2026-11-03T16:59:07Z",
   "qual": [
     "graduate"
   ],
-  "slug": "upsc-manager-grade-i-section-officer-result-2026-written-test",
+  "slug": "upsc-manager-grade-i-result-2026-written-exam-shortlist-out",
   "source_id": "upsc-whats-new",
   "status": "approved",
   "title": "Written Result: 19 Posts of Manager Grade - I - Section Officer, Ministry of Defence",

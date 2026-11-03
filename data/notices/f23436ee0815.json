@@ -10,10 +10,10 @@
     "posts": "Various Posts",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
-    "summary_en": "View the roll numbers of selected candidates declared by the commission. Check the notification for details.",
-    "summary_hi": "आयोग द्वारा घोषित चयनित उम्मीदवारों के रोल नंबर देखें। विवरण के लिए अधिसूचना जांचें।",
-    "title_en": "UKSSSC Examination Result 2026 – Check Roll Numbers and Selected Candidates List",
-    "title_hi": "UKSSSC परीक्षा परिणाम 2026 – रोल नंबर और चयनित उम्मीदवारों की सूची देखें",
+    "summary_en": "View the roll numbers of qualified candidates released by the UKSSSC.",
+    "summary_hi": "उत्तराखंड अधीनस्थ सेवा चयन आयोग द्वारा जारी सफल उम्मीदवारों के अनुक्रमांक देखें।",
+    "title_en": "UKSSSC Examination Result 2026 – Roll Numbers List Out",
+    "title_hi": "उत्तराखंड अधीनस्थ सेवा चयन आयोग परीक्षा परिणाम 2026 – रोल नंबर सूची जारी",
     "type": "Result",
     "vacancies": null
   },
@@ -25,17 +25,17 @@
   "fields": {},
   "first_seen": "2026-11-03T16:16:29+00:00",
   "id": "f23436ee0815",
-  "issue": 992,
+  "issue": 1014,
   "issue_tidy": true,
   "kind": "other",
-  "notice_date": "2026-10-22",
+  "notice_date": "2026-10-23",
   "org": "UKSSSC",
   "page": {
     "after_en": [
-      "Further verification and document check as per commission guidelines."
+      "Qualified candidates will proceed to the next stage of the recruitment process as per commission guidelines."
     ],
     "after_hi": [
-      "आयोग के दिशा-निर्देशों के अनुसार आगे की जाँच और दस्तावेज़ सत्यापन।"
+      "योग्य उम्मीदवार आयोग के दिशानिर्देशों के अनुसार भर्ती प्रक्रिया के अगले चरण में आगे बढ़ेंगे।"
     ],
     "age": [],
     "apply_start": null,
@@ -43,99 +43,118 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check your roll number in the PDF",
-      "Keep your admit card details handy"
+      "Keep your roll number ready",
+      "Check the PDF for your specific roll number"
     ],
     "checklist_hi": [
-      "पीडीएफ में अपना रोल नंबर जांचें",
-      "अपना एडमिट कार्ड विवरण तैयार रखें"
+      "अपना रोल नंबर तैयार रखें",
+      "अपने विशिष्ट रोल नंबर के लिए पीडीएफ की जाँच करें"
     ],
     "conducted_by_en": "Uttarakhand Subordinate Service Selection Commission (UKSSSC)",
     "conducted_by_hi": "उत्तराखंड अधीनस्थ सेवा चयन आयोग (UKSSSC)",
-    "dates": [],
-    "documents_en": [],
-    "documents_hi": [],
+    "dates": [
+      {
+        "label_en": "Result declaration date",
+        "label_hi": "परिणाम घोषणा तिथि",
+        "value_en": "23 Oct 2026",
+        "value_hi": "23 अक्टूबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Roll number or registration details"
+    ],
+    "documents_hi": [
+      "रोल नंबर या पंजीकरण विवरण"
+    ],
     "eligibility": [],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "This notice declares the roll numbers of candidates selected through the UKSSSC examination.",
-        "a_hi": "यह नोटिस यूकेएसएसएससी परीक्षा के माध्यम से चुने गए उम्मीदवारों के रोल नंबर घोषित करता है।",
-        "q_en": "What is this UKSSSC result notice about?",
-        "q_hi": "यह यूकेएसएसएससी परिणाम नोटिस किस बारे में है?"
+        "a_en": "It is the official announcement of qualified candidates by the Uttarakhand Subordinate Service Selection Commission based on their performance in the examination.",
+        "a_hi": "यह परीक्षा में उनके प्रदर्शन के आधार पर उत्तराखंड अधीनस्थ सेवा चयन आयोग द्वारा योग्य उम्मीदवारों की आधिकारिक घोषणा है।",
+        "q_en": "What is the UKSSSC Examination Result?",
+        "q_hi": "UKSSSC परीक्षा परिणाम क्या है?"
       }
     ],
     "extra": [],
     "faq": [
       {
-        "a_en": "You can check your roll number in the official result PDF released by UKSSSC.",
-        "a_hi": "आप यूकेएसएसएससी द्वारा जारी आधिकारिक परिणाम पीडीएफ में अपना रोल नंबर देख सकते हैं।",
-        "q_en": "How can I check my result?",
-        "q_hi": "मैं अपना परिणाम कैसे देख सकता हूँ?"
+        "a_en": "You can check the result on the official UKSSSC website or view the roll numbers list provided on this page.",
+        "a_hi": "आप आधिकारिक UKSSSC वेबसाइट पर परिणाम देख सकते हैं या इस पृष्ठ पर दी गई रोल नंबर सूची देख सकते हैं।",
+        "q_en": "Where can I check the UKSSSC examination result?",
+        "q_hi": "मैं UKSSSC परीक्षा परिणाम कहाँ देख सकता हूँ?"
+      },
+      {
+        "a_en": "The result notice contains the roll numbers of the candidates who have successfully qualified the examination.",
+        "a_hi": "परिणाम सूचना में उन उम्मीदवारों के रोल नंबर शामिल हैं जिन्होंने परीक्षा सफलतापूर्वक उत्तीर्ण कर ली है।",
+        "q_en": "What details are available in the result notice?",
+        "q_hi": "परिणाम सूचना में कौन सा विवरण उपलब्ध है?"
       }
     ],
     "fees": [],
-    "h1_en": "UKSSSC Examination Result 2026 – Check Roll Numbers and Selected Candidates List",
-    "h1_hi": "UKSSSC परीक्षा परिणाम 2026 – रोल नंबर और चयनित उम्मीदवारों की सूची देखें",
+    "h1_en": "UKSSSC Examination Result 2026 – Roll Numbers List Out",
+    "h1_hi": "उत्तराखंड अधीनस्थ सेवा चयन आयोग परीक्षा परिणाम 2026 – रोल नंबर सूची जारी",
     "hindi_notice_url": null,
     "how_en": [
-      "Open the official UKSSSC result notice.",
-      "Check your roll number from the listed numbers in the PDF.",
-      "Save or download the page for future reference."
+      "Click on the official result link or view the PDF notice.",
+      "Search your roll number in the provided list of qualified candidates."
     ],
     "how_hi": [
-      "आधिकारिक यूकेएसएसएससी परिणाम नोटिस खोलें।",
-      "पीडीएफ में सूचीबद्ध नंबरों में से अपना रोल नंबर जांचें।",
-      "भविष्य के संदर्भ के लिए पेज को सहेजें या डाउनलोड करें।"
+      "आधिकारिक परिणाम लिंक पर क्लिक करें या पीडीएफ नोटिस देखें।",
+      "योग्य उम्मीदवारों की दी गई सूची में अपना रोल नंबर खोजें।"
     ],
-    "intro_en": "The Uttarakhand Subordinate Service Selection Commission (UKSSSC) has published the official examination result. This notice contains the roll numbers of candidates who have been successfully selected. Candidates are advised to check the roll number list provided in the official notice to confirm their qualification status.",
-    "intro_hi": "उत्तराखंड अधीनस्थ सेवा चयन आयोग (UKSSSC) ने आधिकारिक परीक्षा परिणाम प्रकाशित किया है। इस नोटिस में उन उम्मीदवारों के रोल नंबर शामिल हैं जिन्हें सफलतापूर्वक चुना गया है। उम्मीदवारों को सलाह दी जाती है कि वे अपनी योग्यता स्थिति की पुष्टि करने के लिए आधिकारिक नोटिस में दी गई रोल नंबर सूची देखें।",
+    "intro_en": "The Uttarakhand Subordinate Service Selection Commission (UKSSSC) has announced the examination result. This notice lists the roll numbers of candidates who have qualified the examination. Candidates can view the published list of roll numbers on this page or through the official website. Check your roll number to know your qualification status.",
+    "intro_hi": "उत्तराखंड अधीनस्थ सेवा चयन आयोग (UKSSSC) ने परीक्षा परिणाम घोषित कर दिया है। इस सूचना में परीक्षा में सफल होने वाले उम्मीदवारों के रोल नंबर सूचीबद्ध हैं। उम्मीदवार इस पृष्ठ पर या आधिकारिक वेबसाइट के माध्यम से प्रकाशित रोल नंबर सूची देख सकते हैं। अपनी योग्यता स्थिति जानने के लिए अपना रोल नंबर जांचें।",
     "last_date": null,
-    "mistakes_en": [],
-    "mistakes_hi": [],
+    "mistakes_en": [
+      "Do not panic if you cannot find your roll number immediately; use the search feature (Ctrl+F) in the PDF reader."
+    ],
+    "mistakes_hi": [
+      "यदि आपको अपना रोल नंबर तुरंत नहीं मिलता है तो घबराएं नहीं; पीडीएफ रीडर में खोज सुविधा (Ctrl+F) का उपयोग करें।"
+    ],
     "not_en": [],
     "not_hi": [],
-    "notice_date": "2026-10-22",
+    "notice_date": "2026-10-23",
     "official_site": "https://sssc.uk.gov.in",
     "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Conducting Body",
-        "label_hi": "आयोजक संस्था",
-        "value_en": "UKSSSC",
-        "value_hi": "यूकेएसएसएससी"
-      },
-      {
-        "label_en": "Notice Type",
-        "label_hi": "नोटिस प्रकार",
-        "value_en": "Examination Result / Selected Candidates Roll Numbers",
-        "value_hi": "परीक्षा परिणाम / चयनित उम्मीदवारों के रोल नंबर"
+        "label_en": "Result status",
+        "label_hi": "परिणाम स्थिति",
+        "value_en": "Declared",
+        "value_hi": "घोषित"
       }
     ],
     "salary": [],
-    "selection_en": [],
-    "selection_hi": [],
+    "selection_en": [
+      "Written Examination",
+      "Result Declaration"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा",
+      "परिणाम घोषणा"
+    ],
     "share_card": {
       "headline_en": "Result Declared",
       "headline_hi": "परिणाम घोषित",
       "kind": "result",
-      "line_en": "Examination Result",
-      "line_hi": "परीक्षा परिणाम",
+      "line_en": "UKSSSC Exam Result",
+      "line_hi": "UKSSSC परीक्षा परिणाम",
       "posts": null
     },
     "status_en": "Result declared",
     "status_hi": "परिणाम घोषित",
-    "summary_en": "Uttarakhand Subordinate Service Selection Commission has released the examination result. Candidates who appeared for the exam can check their roll numbers in the official list. View the notification for complete details.",
-    "summary_hi": "उत्तराखंड अधीनस्थ सेवा चयन आयोग ने परीक्षा परिणाम जारी कर दिया है। परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक सूची में अपने रोल नंबर देख सकते हैं। पूरी जानकारी के लिए अधिसूचना देखें।",
+    "summary_en": "Uttarakhand Subordinate Service Selection Commission has released the examination result containing roll numbers of qualified candidates. Candidates who appeared for the exam can check their roll numbers in the list. View the official notice for more details.",
+    "summary_hi": "उत्तराखंड अधीनस्थ सेवा चयन आयोग ने सफल उम्मीदवारों के अनुक्रमांक वाला परीक्षा परिणाम जारी कर दिया है। परीक्षा में शामिल होने वाले उम्मीदवार सूची में अपना रोल नंबर देख सकते हैं। अधिक विवरण के लिए आधिकारिक सूचना देखें।",
     "vacancies": [],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the UKSSSC examination."
+      "Candidates who appeared for the UKSSSC examination"
     ],
     "who_hi": [
-      "यूकेएसएसएससी परीक्षा में शामिल होने वाले उम्मीदवार।"
+      "वे उम्मीदवार जो यूकेएसएसएससी परीक्षा में शामिल हुए थे"
     ]
   },
   "pdf": {
@@ -144,9 +163,9 @@
     "sha256": "a961842ccb72454fcbb31e5faec5a3649ed387a6aaf720f09aef1ebda466b53b",
     "text_kind": "text"
   },
-  "published_at": "2026-11-03T16:40:23Z",
+  "published_at": "2026-11-03T17:00:54Z",
   "qual": [],
-  "slug": "uksssc-examination-result-2026-check-roll-numbers-and-selected-c",
+  "slug": "uksssc-examination-result-2026-roll-numbers-list-out",
   "source_id": "uksssc-results",
   "status": "approved",
   "title": "Accessible Version : View (752 KB)",

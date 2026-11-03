@@ -4,16 +4,16 @@
   "board_url": "https://psc.cg.gov.in/Result.php",
   "card": {
     "confidence": "high",
-    "exam_date": null,
+    "exam_date": "2026-06-06",
     "last_date": null,
     "list": true,
-    "posts": "State Service Exam",
+    "posts": "State Service",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
-    "summary_en": "Chhattisgarh Public Service Commission has released the written exam result for the State Service Mains Examination 2025. Candidates who appeared can check their roll numbers in the result list.",
-    "summary_hi": "छत्तीसगढ़ लोक सेवा आयोग ने राज्य सेवा मुख्य परीक्षा 2025 के लिए लिखित परीक्षा का परिणाम जारी कर दिया है। शामिल होने वाले उम्मीदवार परिणाम सूची में अपने रोल नंबर देख सकते हैं।",
-    "title_en": "CGPSC State Service Mains Exam Result 2025 – Written List Out",
-    "title_hi": "छगपिएससी राज्य सेवा मुख्य परीक्षा 2025 रिज़ल्ट – लिखित परीक्षा परिणाम जारी",
+    "summary_en": "CGPSC has released the written exam result for the State Service Mains Examination 2025. Candidates can check their roll numbers in the notification.",
+    "summary_hi": "छत्तीसगढ़ लोक सेवा आयोग ने राज्य सेवा मुख्य परीक्षा 2025 का लिखित परीक्षा परिणाम जारी कर दिया है। उम्मीदवार अधिसूचना में अपने रोल नंबर देख सकते हैं।",
+    "title_en": "CGPSC State Service Mains Result 2025 – Written Exam List",
+    "title_hi": "छत्तीसगढ़ लोक सेवा आयोग राज्य सेवा मुख्य परीक्षा 2025 लिखित परीक्षा रिज़ल्ट",
     "type": "Result",
     "vacancies": null
   },
@@ -29,19 +29,17 @@
   "fields": {},
   "first_seen": "2026-11-03T16:16:29+00:00",
   "id": "0b5fc152bcda",
-  "issue": 973,
+  "issue": 993,
   "issue_tidy": true,
   "kind": "other",
   "notice_date": "2026-08-31",
   "org": "CGPSC",
   "page": {
     "after_en": [
-      "Qualified candidates will be called for the interview round.",
-      "Final merit list will be prepared after the interview stage."
+      "Qualified candidates will be called for the interview round."
     ],
     "after_hi": [
-      "योग्य उम्मीदवारों को साक्षात्कार दौर के लिए बुलाया जाएगा।",
-      "साक्षात्कार चरण के बाद अंतिम मेरिट सूची तैयार की जाएगी।"
+      "योग्य उम्मीदवारों को साक्षात्कार के दौर के लिए बुलाया जाएगा।"
     ],
     "age": [],
     "apply_start": null,
@@ -49,73 +47,87 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Keep your roll number ready to search in the PDF",
-      "Check the official website for further interview schedule updates"
+      "Check your roll number in the PDF",
+      "Save a copy of the result for future reference"
     ],
     "checklist_hi": [
-      "पीडीएफ में खोजने के लिए अपना रोल नंबर तैयार रखें",
-      "अगले साक्षात्कार कार्यक्रम के अपडेट के लिए आधिकारिक वेबसाइट देखें"
+      "पीडीएफ में अपना रोल नंबर जांचें",
+      "भविष्य के संदर्भ के लिए रिज़ल्ट की एक प्रति सहेजें"
     ],
     "conducted_by_en": "Chhattisgarh Public Service Commission (CGPSC)",
-    "conducted_by_hi": "छत्तीसगढ़ लोक सेवा आयोग (छगपिएससी)",
+    "conducted_by_hi": "छत्तीसगढ़ लोक सेवा आयोग (सीजीपीएससी)",
     "dates": [
       {
-        "label_en": "Result Declaration Date",
-        "label_hi": "परिणाम घोषणा तिथि",
-        "value_en": "31 Aug 2026",
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "06, 07, 08 and 09 June 2026",
+        "value_hi": "06, 07, 08 और 09 जून 2026"
+      },
+      {
+        "label_en": "Result Date",
+        "label_hi": "रिज़ल्ट तिथि",
+        "value_en": "31 August 2026",
         "value_hi": "31 अगस्त 2026"
       }
     ],
     "documents_en": [
-      "Roll number or registration details for checking the result"
+      "Roll number",
+      "Admit card details"
     ],
     "documents_hi": [
-      "परिणाम देखने के लिए रोल नंबर या पंजीकरण विवरण"
+      "रोल नंबर",
+      "प्रवेश पत्र विवरण"
     ],
     "eligibility": [],
-    "exam_date": null,
+    "exam_date": "2026-06-06",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "The Chhattisgarh Public Service Commission State Service Exam is a provincial-level civil services examination conducted annually to recruit officers for various administrative posts in the state government departments.",
-        "a_hi": "छत्तीसगढ़ लोक सेवा आयोग राज्य सेवा परीक्षा एक प्रांतीय स्तर की सिविल सेवा परीक्षा है जो राज्य सरकार के विभागों में विभिन्न प्रशासनिक पदों पर अधिकारियों की भर्ती के लिए प्रतिवर्ष आयोजित की जाती है।",
-        "q_en": "What is CGPSC State Service Exam?",
-        "q_hi": "छगपिएससी राज्य सेवा परीक्षा क्या है?"
+        "a_en": "It is the list of qualified candidates who cleared the written mains examination conducted by the Chhattisgarh Public Service Commission for the State Service Exam 2025.",
+        "a_hi": "यह छत्तीसगढ़ लोक सेवा आयोग द्वारा राज्य सेवा परीक्षा 2025 के लिए आयोजित लिखित मुख्य परीक्षा में सफल होने वाले योग्य उम्मीदवारों की सूची है।",
+        "q_en": "What is the CGPSC State Service Mains Result?",
+        "q_hi": "छत्तीसगढ़ लोक सेवा आयोग राज्य सेवा मुख्य रिज़ल्ट क्या है?"
       }
     ],
     "extra": [],
     "faq": [
       {
-        "a_en": "The result was released on 31 August 2026.",
-        "a_hi": "परिणाम 31 अगस्त 2026 को जारी किया गया था।",
-        "q_en": "When was the CGPSC State Service Mains Exam 2025 result released?",
-        "q_hi": "छगपिएससी राज्य सेवा मुख्य परीक्षा 2025 का परिणाम कब जारी किया गया?"
+        "a_en": "The result was declared on 31 August 2026.",
+        "a_hi": "रिज़ल्ट 31 अगस्त 2026 को घोषित किया गया था।",
+        "q_en": "When was the CGPSC State Service Mains written exam result declared?",
+        "q_hi": "छत्तीसगढ़ लोक सेवा आयोग राज्य सेवा मुख्य लिखित परीक्षा का रिज़ल्ट कब घोषित किया गया?"
       },
       {
-        "a_en": "You can check the result on the official website of CGPSC at www.psc.cg.gov.in.",
-        "a_hi": "आप www.psc.cg.gov.in पर छगपिएससी की आधिकारिक वेबसाइट पर परिणाम देख सकते हैं।",
-        "q_en": "Where can I check the CGPSC Mains result?",
-        "q_hi": "मैं छगपिएससी मुख्य परीक्षा का परिणाम कहां देख सकता हूं?"
+        "a_en": "The exam was conducted on 06, 07, 08 and 09 June 2026.",
+        "a_hi": "परीक्षा 06, 07, 08 और 09 जून 2026 को आयोजित की गई थी।",
+        "q_en": "When was the CGPSC State Service Mains Exam conducted?",
+        "q_hi": "छत्तीसगढ़ लोक सेवा आयोग राज्य सेवा मुख्य परीक्षा कब आयोजित की गई थी?"
+      },
+      {
+        "a_en": "You can check your result by downloading the PDF from the official CGPSC website at www.psc.cg.gov.in and searching for your roll number.",
+        "a_hi": "आप आधिकारिक छत्तीसगढ़ लोक सेवा आयोग वेबसाइट www.psc.cg.gov.in से पीडीएफ डाउनलोड करके और अपना रोल नंबर खोजकर अपना रिज़ल्ट देख सकते हैं।",
+        "q_en": "How can I check my result?",
+        "q_hi": "मैं अपना रिज़ल्ट कैसे देख सकता हूँ?"
       }
     ],
     "fees": [],
-    "h1_en": "CGPSC State Service Mains Exam Result 2025 – Written List Out",
-    "h1_hi": "छगपिएससी राज्य सेवा मुख्य परीक्षा 2025 रिज़ल्ट – लिखित परीक्षा परिणाम जारी",
+    "h1_en": "CGPSC State Service Mains Result 2025 – Written Exam List",
+    "h1_hi": "छत्तीसगढ़ लोक सेवा आयोग राज्य सेवा मुख्य परीक्षा 2025 लिखित परीक्षा रिज़ल्ट",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official website of CGPSC.",
-      "Click on the results section on the homepage.",
-      "Click on the link for State Service Mains Examination 2025 Written Exam Result.",
-      "Download the PDF list and search for your roll number."
+      "Go to the official CGPSC website at www.psc.cg.gov.in.",
+      "Click on the results section.",
+      "Open the State Service Mains Exam 2025 written result link.",
+      "Check your roll number in the PDF file."
     ],
     "how_hi": [
-      "छगपिएससी की आधिकारिक वेबसाइट पर जाएं।",
-      "होमपेज पर परिणाम अनुभाग पर क्लिक करें।",
-      "राज्य सेवा मुख्य परीक्षा 2025 लिखित परीक्षा परिणाम के लिंक पर क्लिक करें।",
-      "पीडीएफ सूची डाउनलोड करें और अपना रोल नंबर खोजें।"
+      "छत्तीसगढ़ लोक सेवा आयोग की आधिकारिक वेबसाइट www.psc.cg.gov.in पर जाएं।",
+      "रिज़ल्ट अनुभाग पर क्लिक करें।",
+      "राज्य सेवा मुख्य परीक्षा 2025 लिखित परीक्षा रिज़ल्ट लिंक खोलें।",
+      "पीडीएफ फाइल में अपना रोल नंबर जांचें।"
     ],
-    "intro_en": "Chhattisgarh Public Service Commission (CGPSC) has officially released the written examination result for the State Service Mains Examination 2025. Candidates who appeared for the mains written exam held on designated dates can now check their roll numbers in the published result list. The notice provides the list of qualified candidates for the next stage of the selection process. Aspirants can download the complete PDF list from the official website.",
-    "intro_hi": "छत्तीसगढ़ लोक सेवा आयोग (छगपिएससी) ने राज्य सेवा मुख्य परीक्षा 2025 के लिए लिखित परीक्षा का परिणाम आधिकारिक रूप से जारी कर दिया है। निर्धारित तिथियों पर मुख्य परीक्षा में शामिल होने वाले उम्मीदवार अब प्रकाशित परिणाम सूची में अपने रोल नंबर देख सकते हैं। यह नोटिस चयन प्रक्रिया के अगले चरण के लिए योग्य उम्मीदवारों की सूची प्रदान करता है। उम्मीदवार आधिकारिक वेबसाइट से पूरी पीडीएफ सूची डाउनलोड कर सकते हैं।",
+    "intro_en": "The Chhattisgarh Public Service Commission (CGPSC) has announced the written examination result for the State Service Mains Examination 2025. The mains exam was conducted from 06 June 2026 to 09 June 2026. Candidates who appeared in the examination can check their roll numbers and details in the official result PDF available on the commission website.",
+    "intro_hi": "छत्तीसगढ़ लोक सेवा आयोग (सीजीपीएससी) ने राज्य सेवा मुख्य परीक्षा 2025 के लिए लिखित परीक्षा परिणाम की घोषणा कर दी है। मुख्य परीक्षा का आयोजन 06 जून 2026 से 09 जून 2026 तक किया गया था। परीक्षा में शामिल होने वाले उम्मीदवार आयोग की वेबसाइट पर उपलब्ध आधिकारिक रिज़ल्ट पीडीएफ में अपने रोल नंबर देख सकते हैं।",
     "last_date": null,
     "mistakes_en": [],
     "mistakes_hi": [],
@@ -129,26 +141,26 @@
       {
         "label_en": "Exam Name",
         "label_hi": "परीक्षा का नाम",
-        "value_en": "State Service Mains Examination 2025",
+        "value_en": "State Service Mains Exam 2025",
         "value_hi": "राज्य सेवा मुख्य परीक्षा 2025"
       },
       {
         "label_en": "Result Type",
-        "label_hi": "परिणाम प्रकार",
+        "label_hi": "रिज़ल्ट का प्रकार",
         "value_en": "Written Exam Result",
-        "value_hi": "लिखित परीक्षा परिणाम"
+        "value_hi": "लिखित परीक्षा रिज़ल्ट"
       },
       {
-        "label_en": "Result Date",
-        "label_hi": "परिणाम तिथि",
-        "value_en": "31 Aug 2026",
-        "value_hi": "31 अगस्त 2026"
+        "label_en": "Exam Dates",
+        "label_hi": "परीक्षा तिथियाँ",
+        "value_en": "06, 07, 08 and 09 June 2026",
+        "value_hi": "06, 07, 08 और 09 जून 2026"
       }
     ],
     "salary": [],
     "selection_en": [
-      "Preliminary Examination",
-      "Mains Examination",
+      "Prelims Exam",
+      "Mains Exam",
       "Interview"
     ],
     "selection_hi": [
@@ -158,23 +170,23 @@
     ],
     "share_card": {
       "headline_en": "Written Result 2025",
-      "headline_hi": "लिखित परीक्षा परिणाम 2025",
+      "headline_hi": "लिखित परीक्षा रिज़ल्ट",
       "kind": "result",
-      "line_en": "State Service Mains Exam",
-      "line_hi": "राज्य सेवा मुख्य परीक्षा",
+      "line_en": "State Service Mains Exam 2025",
+      "line_hi": "राज्य सेवा मुख्य परीक्षा 2025",
       "posts": null
     },
     "status_en": "Written exam result declared",
-    "status_hi": "लिखित परीक्षा का परिणाम घोषित",
-    "summary_en": "Chhattisgarh Public Service Commission has released the written exam result for the State Service Mains Examination 2025. Candidates who appeared can check their roll numbers in the result list.",
-    "summary_hi": "छत्तीसगढ़ लोक सेवा आयोग ने राज्य सेवा मुख्य परीक्षा 2025 के लिए लिखित परीक्षा का परिणाम जारी कर दिया है। शामिल होने वाले उम्मीदवार परिणाम सूची में अपने रोल नंबर देख सकते हैं।",
+    "status_hi": "लिखित परीक्षा रिज़ल्ट घोषित",
+    "summary_en": "CGPSC has released the written exam result for the State Service Mains Examination 2025. Candidates who appeared for the exam can check their roll numbers in the official notification.",
+    "summary_hi": "छत्तीसगढ़ लोक सेवा आयोग ने राज्य सेवा मुख्य परीक्षा 2025 का लिखित परीक्षा परिणाम जारी कर दिया है। परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक अधिसूचना में अपने रोल नंबर देख सकते हैं।",
     "vacancies": [],
     "video_url": null,
     "who_en": [
       "Candidates who appeared for the CGPSC State Service Mains Exam 2025"
     ],
     "who_hi": [
-      "वे उम्मीदवार जो छगपिएससी राज्य सेवा मुख्य परीक्षा 2025 में शामिल हुए थे"
+      "वे उम्मीदवार जो छत्तीसगढ़ लोक सेवा आयोग राज्य सेवा मुख्य परीक्षा 2025 में शामिल हुए थे"
     ]
   },
   "pdf": {
@@ -183,11 +195,11 @@
     "sha256": "f87a1b1055c4cfd507368ab4306e7f9ba12ca691f9a0d444da3c73176e655b6a",
     "text_kind": "text"
   },
-  "published_at": "2026-11-03T16:35:16Z",
+  "published_at": "2026-11-03T16:57:23Z",
   "qual": [
     "graduate"
   ],
-  "slug": "cgpsc-state-service-mains-exam-result-2025-written-list-out",
+  "slug": "cgpsc-state-service-mains-result-2025-written-exam-list",
   "source_id": "cgpsc-results",
   "status": "approved",
   "title": "STATE_SERVICE_EXAMINATION-2025_MAINS_WRITTEN_EXAM_RESULT (31-08-2026)",

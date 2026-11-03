@@ -6,13 +6,13 @@
     "exam_date": null,
     "last_date": null,
     "list": true,
-    "posts": "Geologist, Hydrogeologist, Geophysicist, Chemist, Assistant Chemist",
+    "posts": "Geologist, Hydrogeologist, Geophysicist, Chemist",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
-    "summary_en": "Marks of recommended candidates for the Combined Geo-Scientist Examination 2026 have been released by UPSC. Check your scores using the official notice.",
-    "summary_hi": "संघ लोक सेवा आयोग द्वारा संयुक्त भू-वैज्ञानिक परीक्षा 2026 के अनुशंसित उम्मीदवारों के अंक जारी कर दिए गए हैं। आधिकारिक सूचना से अपने अंक देखें।",
-    "title_en": "UPSC Combined Geo-Scientist Result 2026 – Marks Released",
-    "title_hi": "संघ लोक सेवा आयोग संयुक्त भू-वैज्ञानिक रिज़ल्ट 2026 – अंक जारी",
+    "summary_en": "View the list of recommended candidates for the Combined Geo-Scientist Examination 2026 released by UPSC.",
+    "summary_hi": "संघ लोक सेवा आयोग द्वारा जारी संयुक्त भू-वैज्ञानिक परीक्षा 2026 के अनुशंसित उम्मीदवारों की सूची देखें।",
+    "title_en": "UPSC Combined Geo-Scientist Result 2026 – Recommended Candidates List",
+    "title_hi": "संघ लोक सेवा आयोग संयुक्त भू-वैज्ञानिक रिजल्ट 2026 – अनुशंसित उम्मीदवार सूची",
     "type": "Result",
     "vacancies": null
   },
@@ -28,17 +28,17 @@
   "fields": {},
   "first_seen": "2026-11-03T16:16:29+00:00",
   "id": "b316ace57104",
-  "issue": 987,
+  "issue": 1009,
   "issue_tidy": true,
   "kind": "result",
   "notice_date": "2026-11-03",
   "org": "UPSC",
   "page": {
     "after_en": [
-      "Candidates whose marks have been released can proceed with further appointment processes as per UPSC guidelines."
+      "Service allocation and document verification by the administering ministry."
     ],
     "after_hi": [
-      "जिन उम्मीदवारों के अंक जारी कर दिए गए हैं, वे यूपीएससी के दिशा-निर्देशों के अनुसार आगे की नियुक्ति प्रक्रिया के साथ आगे बढ़ सकते हैं।"
+      "प्रशासनिक मंत्रालय द्वारा सेवा आवंटन और दस्तावेज़ सत्यापन।"
     ],
     "age": [],
     "apply_start": null,
@@ -46,15 +46,15 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check your roll number and name in the official marks list.",
-      "Verify your total marks across written and personality test stages."
+      "Check the official result PDF for your roll number and name.",
+      "Verify your marks and category details."
     ],
     "checklist_hi": [
-      "आधिकारिक अंक सूची में अपना रोल नंबर और नाम जांचें।",
-      "लिखित और व्यक्तित्व परीक्षण चरणों में अपने कुल अंकों का मिलान करें।"
+      "अपने रोल नंबर और नाम के लिए आधिकारिक परिणाम पीडीएफ की जांच करें।",
+      "अपने अंक और श्रेणी विवरण सत्यापित करें।"
     ],
     "conducted_by_en": "Union Public Service Commission (UPSC)",
-    "conducted_by_hi": "संघ लोक सेवा आयोग (UPSC)",
+    "conducted_by_hi": "संघ लोक सेवा आयोग",
     "dates": [],
     "documents_en": [],
     "documents_hi": [],
@@ -63,8 +63,8 @@
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is a national-level competitive examination conducted by the UPSC for recruitment to various Group A and Group B posts in geological and related departments of the Government of India.",
-        "a_hi": "यह भारत सरकार के भूवैज्ञानिक और संबंधित विभागों में विभिन्न ग्रुप ए और ग्रुप बी पदों पर भर्ती के लिए यूपीएससी द्वारा आयोजित एक राष्ट्रीय स्तर की प्रतियोगी परीक्षा है।",
+        "a_en": "It is a national-level examination conducted by the Union Public Service Commission for recruitment to various Group A and Group B posts in geological and scientific departments of the Government of India.",
+        "a_hi": "यह भारत सरकार के भूवैज्ञानिक और वैज्ञानिक विभागों में विभिन्न ग्रुप ए और ग्रुप बी पदों पर भर्ती के लिए संघ लोक सेवा आयोग द्वारा आयोजित एक राष्ट्रीय स्तर की परीक्षा है।",
         "q_en": "What is the UPSC Combined Geo-Scientist Examination?",
         "q_hi": "संघ लोक सेवा आयोग संयुक्त भू-वैज्ञानिक परीक्षा क्या है?"
       }
@@ -72,34 +72,28 @@
     "extra": [],
     "faq": [
       {
-        "a_en": "The Union Public Service Commission (UPSC) released the marks.",
-        "a_hi": "संघ लोक सेवा आयोग (UPSC) ने अंक जारी किए हैं।",
-        "q_en": "Who released the marks for the Combined Geo-Scientist Examination 2026?",
-        "q_hi": "संयुक्त भू-वैज्ञानिक परीक्षा 2026 के अंक किसने जारी किए?"
-      },
-      {
-        "a_en": "Posts include Geologist, Hydrogeologist, Geophysicist, Chemist, and Assistant Chemist.",
-        "a_hi": "पदों में भूवैज्ञानिक, हाइड्रोजियोलॉजिस्ट, भूभौतिकीविद्, रसायनज्ञ और सहायक रसायनज्ञ शामिल हैं।",
-        "q_en": "Which posts are included in the UPSC Combined Geo-Scientist Examination 2026?",
-        "q_hi": "संघ लोक सेवा आयोग संयुक्त भू-वैज्ञानिक परीक्षा 2026 में कौन से पद शामिल हैं?"
+        "a_en": "You can check the list by downloading the official PDF from the UPSC website or through the direct result link provided on trusted job portals.",
+        "a_hi": "आप संघ लोक सेवा आयोग की वेबसाइट से आधिकारिक पीडीएफ डाउनलोड करके या विश्वसनीय जॉब पोर्टल्स पर दिए गए सीधे परिणाम लिंक के माध्यम से सूची देख सकते हैं।",
+        "q_en": "How can I check the UPSC Combined Geo-Scientist recommended candidates list?",
+        "q_hi": "मैं संघ लोक सेवा आयोग संयुक्त भू-वैज्ञानिक अनुशंसित उम्मीदवारों की सूची कैसे देख सकता हूँ?"
       }
     ],
     "fees": [],
-    "h1_en": "UPSC Combined Geo-Scientist Result 2026 – Marks Released",
-    "h1_hi": "संघ लोक सेवा आयोग संयुक्त भू-वैज्ञानिक रिज़ल्ट 2026 – अंक जारी",
+    "h1_en": "UPSC Combined Geo-Scientist Result 2026 – Recommended Candidates List",
+    "h1_hi": "संघ लोक सेवा आयोग संयुक्त भू-वैज्ञानिक रिजल्ट 2026 – अनुशंसित उम्मीदवार सूची",
     "hindi_notice_url": null,
     "how_en": [
       "Visit the official UPSC website.",
-      "Click on the Combined Geo-Scientist Examination 2026 marks link.",
-      "View and download the list of recommended candidates with their marks."
+      "Click on the Combined Geo-Scientist Main Examination recommended candidates result link.",
+      "Check your roll number and name in the PDF list."
     ],
     "how_hi": [
-      "आधिकारिक यूपीएससी वेबसाइट पर जाएं।",
-      "संयुक्त भू-वैज्ञानिक परीक्षा 2026 अंक लिंक पर क्लिक करें।",
-      "अपने अंकों के साथ अनुशंसित उम्मीदवारों की सूची देखें और डाउनलोड करें।"
+      "आधिकारिक संघ लोक सेवा आयोग वेबसाइट पर जाएं।",
+      "संयुक्त भू-वैज्ञानिक मुख्य परीक्षा अनुशंसित उम्मीदवार परिणाम लिंक पर क्लिक करें।",
+      "पीडीएफ सूची में अपना रोल नंबर और नाम जांचें।"
     ],
-    "intro_en": "The Union Public Service Commission (UPSC) has released the marks of recommended candidates for the Combined Geo-Scientist Examination 2026. Candidates who appeared for the exam can check their written total, personality test marks, and final total scores. The list includes details of candidates recommended for various services including Geologist, Hydrogeologist, Geophysicist, Chemist, and Assistant Chemist.",
-    "intro_hi": "संघ लोक सेवा आयोग (UPSC) ने संयुक्त भू-वैज्ञानिक परीक्षा 2026 के अनुशंसित उम्मीदवारों के अंक जारी कर दिए हैं। परीक्षा में शामिल होने वाले उम्मीदवार अपने लिखित कुल अंक, व्यक्तित्व परीक्षण अंक और अंतिम कुल स्कोर देख सकते हैं। सूची में भूवैज्ञानिक, हाइड्रोजियोलॉजिस्ट, भूभौतिकीविद्, रसायनज्ञ और सहायक रसायनज्ञ सहित विभिन्न सेवाओं के लिए अनुशंसित उम्मीदवारों का विवरण शामिल है।",
+    "intro_en": "The Union Public Service Commission (UPSC) has released the list of recommended candidates for the Combined Geo-Scientist Examination 2026. Candidates who appeared for the main examination can now check their results and recommended status across multiple services including Geologist, Hydrogeologist, Geophysicist, Chemist, Scientist B, and Assistant Chemist.",
+    "intro_hi": "संघ लोक सेवा आयोग (UPSC) ने संयुक्त भू-वैज्ञानिक परीक्षा 2026 के लिए अनुशंसित उम्मीदवारों की सूची जारी कर दी है। मुख्य परीक्षा में शामिल होने वाले उम्मीदवार अब भूवैज्ञानिक, हाइड्रोजियोलॉजिस्ट, भूभौतिकीविद्, केमिस्ट, साइंटिस्ट बी और सहायक केमिस्ट सहित कई सेवाओं में अपने परिणाम और अनुशंसित स्थिति की जांच कर सकते हैं।",
     "last_date": null,
     "mistakes_en": [],
     "mistakes_hi": [],
@@ -113,32 +107,40 @@
       {
         "label_en": "Posts",
         "label_hi": "पद",
-        "value_en": "Geologist, Hydrogeologist, Geophysicist, Chemist, Assistant Chemist",
-        "value_hi": "भूवैज्ञानिक, हाइड्रोजियोलॉजिस्ट, भूभौतिकीविद्, रसायनज्ञ, सहायक रसायनज्ञ"
+        "value_en": "Geologist, Hydrogeologist, Geophysicist, Chemist, Scientist B, Assistant Chemist",
+        "value_hi": "भूवैज्ञानिक, हाइड्रोजियोलॉजिस्ट, भूभौतिकीविद्, केमिस्ट, साइंटिस्ट बी, सहायक केमिस्ट"
       }
     ],
     "salary": [],
-    "selection_en": [],
-    "selection_hi": [],
+    "selection_en": [
+      "Main Examination",
+      "Personality Test",
+      "Final Recommendation"
+    ],
+    "selection_hi": [
+      "मुख्य परीक्षा",
+      "व्यक्तित्व परीक्षण",
+      "अंतिम अनुशंसा"
+    ],
     "share_card": {
-      "headline_en": "Marks Released",
-      "headline_hi": "अंक जारी",
+      "headline_en": "Recommended List",
+      "headline_hi": "अनुशंसित सूची",
       "kind": "result",
       "line_en": "Geo-Scientist Exam",
       "line_hi": "भू-वैज्ञानिक परीक्षा",
       "posts": null
     },
-    "status_en": "Marks released",
-    "status_hi": "अंक जारी किए गए",
-    "summary_en": "Marks of recommended candidates for the Combined Geo-Scientist Examination 2026 have been released by UPSC. Check your scores using the official notice.",
-    "summary_hi": "संघ लोक सेवा आयोग द्वारा संयुक्त भू-वैज्ञानिक परीक्षा 2026 के अनुशंसित उम्मीदवारों के अंक जारी कर दिए गए हैं। आधिकारिक सूचना से अपने अंक देखें।",
+    "status_en": "Recommended candidates list declared",
+    "status_hi": "अनुशंसित उम्मीदवारों की सूची घोषित",
+    "summary_en": "View the list of recommended candidates for the UPSC Combined Geo-Scientist Examination 2026. Candidates can check their roll numbers, names, and marks obtained across various services.",
+    "summary_hi": "संघ लोक सेवा आयोग संयुक्त भू-वैज्ञानिक परीक्षा 2026 के अनुशंसित उम्मीदवारों की सूची देखें। उम्मीदवार विभिन्न सेवाओं में अपने रोल नंबर, नाम और प्राप्त अंक देख सकते हैं।",
     "vacancies": [],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the UPSC Combined Geo-Scientist Examination 2026."
+      "Candidates who appeared for the UPSC Combined Geo-Scientist Main Examination 2026."
     ],
     "who_hi": [
-      "संघ लोक सेवा आयोग संयुक्त भू-वैज्ञानिक परीक्षा 2026 में शामिल होने वाले उम्मीदवार।"
+      "वे उम्मीदवार जो संघ लोक सेवा आयोग संयुक्त भू-वैज्ञानिक मुख्य परीक्षा 2026 में शामिल हुए थे।"
     ]
   },
   "pdf": {
@@ -148,11 +150,12 @@
     "text_kind": "text",
     "via": "https://www.upsc.gov.in/sites/default/files/MksRcdCndtsCGeoSnstM-2026-Engl-30102026.pdf"
   },
-  "published_at": "2026-11-03T16:39:23Z",
+  "published_at": "2026-11-03T16:59:57Z",
   "qual": [
-    "graduate"
+    "graduate",
+    "postgraduate"
   ],
-  "slug": "upsc-combined-geo-scientist-result-2026-marks-released",
+  "slug": "upsc-combined-geo-scientist-result-2026-recommended-candidates-l",
   "source_id": "upsc-whats-new",
   "status": "approved",
   "title": "Marks of Recommended Candidates: Combined Geo-Scientist (Main) Examination, 2026",

@@ -10,10 +10,10 @@
     "posts": "Junior Engineer (Civil)",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
-    "summary_en": "Jammu and Kashmir Services Selection Board (JKSSB) has invited online applications for 458 Junior Engineer (Civil) posts. Eligible candidates can apply online from 30.11.2026 to 29.12.2026.",
-    "summary_hi": "जम्मू और कश्मीर सेवा चयन बोर्ड (JKSSB) ने 458 कनिष्ठ अभियंता (सिविल) पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 30.11.2026 से 29.12.2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "summary_en": "Jammu and Kashmir Services Selection Board (JKSSB) has invited online applications for 458 Junior Engineer (Civil) posts. Eligible candidates can apply online from 30 November 2026 to 29 December 2026.",
+    "summary_hi": "जम्मू और कश्मीर सेवा चयन बोर्ड (JKSSB) ने 458 कनिष्ठ अभियंता (सिविल) पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 30 नवंबर 2026 से 29 दिसंबर 2026 तक ऑनलाइन आवेदन कर سکتے हैं।",
     "title_en": "JKSSB Junior Engineer Civil Recruitment 2026 – Apply Online for 458 Posts",
-    "title_hi": "JKSSB कनिष्ठ अभियंता सिविल भर्ती 2026 – 458 पदों के लिए ऑनलाइन आवेदन करें",
+    "title_hi": "JKSSB कनिष्ठ अभियंता सिविल भर्ती 2026 – 458 पदों के लिए ऑनलाइन आवेदन",
     "type": "Job",
     "vacancies": 458
   },
@@ -22,7 +22,7 @@
     "age_max": 40,
     "age_min": null,
     "age_on": "2026-01-01",
-    "domicile": "Jammu and Kashmir",
+    "domicile": "Jammu & Kashmir",
     "qual": null,
     "relax": {
       "EWS": 3,
@@ -35,7 +35,7 @@
   "exam": {
     "key": "jkssb-junior-engineer-civil-2026",
     "name_en": "JKSSB Junior Engineer Civil 2026",
-    "name_hi": "JKSSB कनिष्ठ अभियंता सिविल 2026"
+    "name_hi": "जेकेएसएसबी कनिष्ठ अभियंता सिविल 2026"
   },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
@@ -121,40 +121,48 @@
   },
   "first_seen": "2026-11-03T16:16:29+00:00",
   "id": "4aa1253f02c5",
-  "issue": 980,
+  "issue": 1002,
   "issue_tidy": true,
   "kind": "notification",
   "notice_date": "2026-10-27",
   "org": "JKSSB",
   "page": {
     "after_en": [
-      "Written examination conducted by the board.",
-      "Shortlisting of candidates for Document Verification.",
-      "Final selection and appointment by the appointing authority."
+      "Release of exam date and admit cards",
+      "Conduct of written examination",
+      "Declaration of result and shortlisting for document verification",
+      "Final selection and appointment"
     ],
     "after_hi": [
-      "बोर्ड द्वारा आयोजित लिखित परीक्षा।",
-      "दस्तावेज़ सत्यापन के लिए उम्मीदवारों की शॉर्टलिस्टिंग।",
-      "नियुक्ति प्राधिकारी द्वारा अंतिम चयन और नियुक्ति।"
+      "परीक्षा तिथि और एडमिट कार्ड जारी करना",
+      "लिखित परीक्षा का आयोजन",
+      "परिणाम की घोषणा और दस्तावेज़ सत्यापन के लिए शॉर्टलिस्टिंग",
+      "अंतिम चयन और नियुक्ति"
     ],
     "age": [
       {
-        "label_en": "Open Merit (OM)",
-        "label_hi": "ओपन मेरिट",
-        "value_en": "40 years (not born before 01.01.1986 and after 01.01.2008)",
-        "value_hi": "40 वर्ष (01.01.1986 से पहले और 01.01.2008 के बाद का नहीं होना चाहिए)"
+        "label_en": "Open Merit (OM) max age",
+        "label_hi": "ओपन मेरिट अधिकतम आयु",
+        "value_en": "40 years (born between 01.01.1986 and 01.01.2008)",
+        "value_hi": "40 वर्ष (01.01.1986 और 01.01.2008 के बीच जन्मे)"
       },
       {
-        "label_en": "SC / ST / RBA / ALC/IB / EWS / OBC",
-        "label_hi": "एससी / एसटी / आरबीए / एएलसी/आईबी / ईडब्ल्यूएस / ओबीसी",
-        "value_en": "43 years (not born before 01.01.1983 and after 01.01.2008)",
-        "value_hi": "43 वर्ष (01.01.1983 से पहले और 01.01.2008 के बाद का नहीं होना चाहिए)"
+        "label_en": "SC / ST / RBA / ALC/IB / EWS / OBC max age",
+        "label_hi": "एससी / एसटी / आरबीए / एएलसी/आईबी / ईडब्ल्यूएस / ओबीसी अधिकतम आयु",
+        "value_en": "43 years (born between 01.01.1983 and 01.01.2008)",
+        "value_hi": "43 वर्ष (01.01.1983 और 01.01.2008 के बीच जन्मे)"
       },
       {
-        "label_en": "Physically Challenged Person",
-        "label_hi": "दिव्यांग व्यक्ति",
-        "value_en": "42 years (not born before 01.01.1984 and after 01.01.2008)",
-        "value_hi": "42 वर्ष (01.01.1984 से पहले और 01.01.2008 के बाद का नहीं होना चाहिए)"
+        "label_en": "Physically Challenged Person max age",
+        "label_hi": "शारीरिक रूप से विकलांग व्यक्ति अधिकतम आयु",
+        "value_en": "42 years (born between 01.01.1984 and 01.01.2008)",
+        "value_hi": "42 वर्ष (01.01.1984 और 01.01.2008 के बीच जन्मे)"
+      },
+      {
+        "label_en": "As-on date for age",
+        "label_hi": "आयु गणना की तिथि",
+        "value_en": "01 Jan 2026",
+        "value_hi": "01 जन 2026"
       }
     ],
     "apply_start": "2026-11-30",
@@ -162,16 +170,14 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check eligibility including age and educational qualification.",
-      "Keep scanned copy of J&K Domicile Certificate ready.",
-      "Keep category certificate in prescribed format ready if claiming reservation.",
-      "Ensure fee payment is successfully completed before the last date."
+      "Check eligibility and age limit as on 01.01.2026",
+      "Keep J&K Domicile Certificate and category certificates ready",
+      "Submit online application before 29 December 2026"
     ],
     "checklist_hi": [
-      "आयु और शैक्षणिक योग्यता सहित पात्रता की जांच करें।",
-      "जेएंडके डोमीसाइल प्रमाण पत्र की स्कैन की गई प्रति तैयार रखें।",
-      "आरक्षण का दावा करने पर निर्धारित प्रारूप में श्रेणी प्रमाण पत्र तैयार रखें।",
-      "सुनिश्चित करें कि अंतिम तिथि से पहले शुल्क का भुगतान सफलतापूर्वक पूरा हो गया है।"
+      "01.01.2026 के अनुसार पात्रता और आयु सीमा की जांच करें",
+      "जम्मू-कश्मीर अधिवास प्रमाण पत्र और श्रेणी प्रमाण पत्र तैयार रखें",
+      "29 दिसंबर 2026 से पहले ऑनलाइन आवेदन जमा करें"
     ],
     "conducted_by_en": "Jammu and Kashmir Services Selection Board (JKSSB)",
     "conducted_by_hi": "जम्मू और कश्मीर सेवा चयन बोर्ड (JKSSB)",
@@ -180,103 +186,97 @@
         "label_en": "Notification date",
         "label_hi": "अधिसूचना तिथि",
         "value_en": "27 Oct 2026",
-        "value_hi": "27 अक्टूबर 2026"
+        "value_hi": "27 अक्तू 2026"
       },
       {
         "label_en": "Online application starts",
         "label_hi": "ऑनलाइन आवेदन शुरू",
         "value_en": "30 Nov 2026",
-        "value_hi": "30 नवंबर 2026"
+        "value_hi": "30 नवं 2026"
       },
       {
         "label_en": "Last date to apply",
         "label_hi": "आवेदन की अंतिम तिथि",
         "value_en": "29 Dec 2026",
-        "value_hi": "29 दिसंबर 2026"
+        "value_hi": "29 दिसं 2026"
       }
     ],
     "documents_en": [
-      "Domicile Certificate",
-      "Educational Qualification Certificates",
-      "Reserved Category Certificate (if applicable)",
-      "Ex-Servicemen Certificate (Form-XIV, if applicable)"
+      "Valid Domicile Certificate",
+      "Educational Qualification Certificates and Marksheets",
+      "Reserved Category Certificate in prescribed format (if applicable)",
+      "Date of Birth proof"
     ],
     "documents_hi": [
-      "डोमीसाइल प्रमाण पत्र",
-      "शैक्षणिक योग्यता प्रमाण पत्र",
-      "आरक्षित श्रेणी प्रमाण पत्र (यदि लागू हो)",
-      "भूतपूर्व सैनिक प्रमाण पत्र (फॉर्म-XIV, यदि लागू हो)"
+      "वैध अधिवास प्रमाण पत्र",
+      "शैक्षणिक योग्यता प्रमाण पत्र और मार्कशीट",
+      "निर्धारित प्रारूप में आरक्षित श्रेणी प्रमाण पत्र (यदि लागू हो)",
+      "जन्म तिथि प्रमाण"
     ],
     "eligibility": [
       {
-        "label_en": "Domicile",
-        "label_hi": "डोमीसाइल",
-        "value_en": "Candidates must be Domiciles of the Union Territory of Jammu and Kashmir and possess a valid Domicile Certificate issued on or before 29.12.2026.",
-        "value_hi": "उम्मीदवारों को जम्मू और कश्मीर केंद्र शासित प्रदेश का मूल निवासी होना चाहिए और 29.12.2026 को या उससे पहले जारी वैध डोमीसाइल प्रमाण पत्र होना चाहिए।"
-      },
-      {
         "label_en": "Education",
         "label_hi": "शिक्षा",
-        "value_en": "As prescribed in Annexure-A of the notification, acquired strictly on or before the cut-off date.",
-        "value_hi": "अधिसूचना के Annexure-A में निर्धारित, जो कट-ऑफ तिथि को या उससे पहले प्राप्त की गई हो।"
+        "value_en": "As prescribed in Annexure-A of the official notification for the respective posts.",
+        "value_hi": "संबंधित पदों के लिए आधिकारिक अधिसूचना के अनुलग्नक-ए में निर्धारित अनुसार।"
+      },
+      {
+        "label_en": "Domicile",
+        "label_hi": "अधिवास",
+        "value_en": "Candidates must be Domiciles of the Union Territory of Jammu & Kashmir and possess a valid Domicile Certificate issued on or before the cut-off date (29 Dec 2026).",
+        "value_hi": "उम्मीदवारों को जम्मू और कश्मीर केंद्र शासित प्रदेश का मूल निवासी होना चाहिए और कट-ऑफ तिथि (29 दिसं 2026) या उससे पहले जारी वैध अधिवास प्रमाण पत्र होना चाहिए।"
       }
     ],
     "exam_date": null,
     "exam_pattern": [
       {
-        "marks": "",
-        "part_en": "Objective Type Multiple Choice Questions",
-        "part_hi": "वस्तुनिष्ठ प्रकार के बहुविकल्पीय प्रश्न",
-        "questions": "",
+        "marks": "0.25 per wrong answer",
+        "part_en": "Negative marking",
+        "part_hi": "नकारात्मक अंकन",
+        "questions": "1/4th of marks assigned to the question",
         "time": ""
       }
     ],
     "explain": [
       {
-        "a_en": "It is a direct recruitment drive conducted by the Jammu and Kashmir Services Selection Board to fill Junior Engineer (Civil) vacancies in the Public Works (R&B) and Jal Shakti Departments.",
-        "a_hi": "यह लोक निर्माण (आरएंडबी) और जल शक्ति विभागों में कनिष्ठ अभियंता (सिविल) के पदों को भरने के लिए जम्मू और कश्मीर सेवा चयन बोर्ड द्वारा आयोजित एक सीधी भर्ती अभियान है।",
-        "q_en": "What is the JKSSB Junior Engineer Civil Recruitment?",
+        "a_en": "It is a direct recruitment drive conducted by the Jammu and Kashmir Services Selection Board to fill Junior Engineer (Civil) vacancies in various departments like Public Works (R&B) and Jal Shakti.",
+        "a_hi": "यह लोक निर्माण (R&B) और जल शक्ति जैसे विभिन्न विभागों में कनिष्ठ अभियंता (सिविल) रिक्तियों को भरने के लिए जम्मू और कश्मीर सेवा चयन बोर्ड द्वारा आयोजित एक सीधी भर्ती अभियान है।",
+        "q_en": "What is JKSSB Junior Engineer Civil Recruitment?",
         "q_hi": "JKSSB कनिष्ठ अभियंता सिविल भर्ती क्या है?"
       }
     ],
     "extra": [
       {
-        "label_en": "Negative Marking",
-        "label_hi": "नेगेटिव मार्किंग",
-        "value_en": "One-fourth (1/4th) of the marks assigned to that question will be deducted for each wrong answer.",
-        "value_hi": "प्रत्येक गलत उत्तर के लिए उस प्रश्न के लिए निर्धारित अंकों का एक चौथाई (1/4) काटा जाएगा।"
+        "label_en": "Exam mode",
+        "label_hi": "परीक्षा मोड",
+        "value_en": "Objective Type, Multiple Choice Questions (English language only)",
+        "value_hi": "वस्तुनिष्ठ प्रकार, बहुविकल्पीय प्रश्न (केवल अंग्रेजी भाषा)"
       }
     ],
     "faq": [
       {
-        "a_en": "A total of 458 vacancies have been advertised under Advertisement Notification No. 11 of 2026.",
-        "a_hi": "विज्ञापन अधिसूचना संख्या 11 of 2026 के तहत कुल 458 रिक्तियों की घोषणा की गई है।",
-        "q_en": "What is the total number of vacancies for JKSSB Junior Engineer Civil Recruitment 2026?",
-        "q_hi": "JKSSB कनिष्ठ अभियंता सिविल भर्ती 2026 के लिए कुल रिक्तियां कितनी हैं?"
+        "a_en": "A total of 458 vacancies have been advertised under Notification No. 11 of 2026.",
+        "a_hi": "अधिसूचना संख्या 11 of 2026 के तहत कुल 458 रिक्तियों की घोषणा की गई है।",
+        "q_en": "What is the total number of vacancies in JKSSB JE Civil Recruitment 2026?",
+        "q_hi": "JKSSB जेई सिविल भर्ती 2026 में कुल रिक्तियां कितनी हैं?"
       },
       {
-        "a_en": "The online application process starts on 30 November 2026.",
-        "a_hi": "ऑनलाइन आवेदन प्रक्रिया 30 नवंबर 2026 से शुरू होगी।",
-        "q_en": "When will the online application process start?",
-        "q_hi": "ऑनलाइन आवेदन प्रक्रिया कब शुरू होगी?"
+        "a_en": "Online applications open on 30 November 2026 and close on 29 December 2026.",
+        "a_hi": "ऑनलाइन आवेदन 30 नवंबर 2026 से शुरू होंगे और 29 दिसंबर 2026 को समाप्त होंगे।",
+        "q_en": "What are the start and last dates to apply online?",
+        "q_hi": "ऑनलाइन आवेदन शुरू होने और अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "The last date to submit online applications is 29 December 2026.",
-        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 29 दिसंबर 2026 है।",
-        "q_en": "What is the last date to apply online?",
-        "q_hi": "ऑनलाइन आवेदन करने की अंतिम तिथि क्या है?"
+        "a_en": "The application fee for General / Open Merit candidates is ₹600.",
+        "a_hi": "सामान्य / ओपन मेरिट उम्मीदवारों के लिए आवेदन शुल्क ₹600 है।",
+        "q_en": "What is the application fee for General category candidates?",
+        "q_hi": "सामान्य श्रेणी के उम्मीदवारों के लिए आवेदन शुल्क क्या है?"
       },
       {
-        "a_en": "The application fee for Open Merit (General) candidates is ₹600.",
-        "a_hi": "ओपन मेरिट (सामान्य) उम्मीदवारों के लिए आवेदन शुल्क ₹600 है।",
-        "q_en": "What is the application fee for Open Merit candidates?",
-        "q_hi": "ओपन मेरिट उम्मीदवारों के लिए आवेदन शुल्क क्या है?"
-      },
-      {
-        "a_en": "The application fee for SC, ST, EWS, and PwBD candidates is ₹500.",
-        "a_hi": "एससी, एसटी, ईडब्ल्यूएस और दिव्यांग उम्मीदवारों के लिए आवेदन शुल्क ₹500 है।",
+        "a_en": "The application fee for SC, ST-1, ST-2, EWS, and PwBD candidates is ₹500.",
+        "a_hi": "एससी, एसटी-1, एसटी-2, ईडब्ल्यूएस और पीडब्ल्यूडी उम्मीदवारों के लिए आवेदन शुल्क ₹500 है।",
         "q_en": "What is the application fee for SC, ST, EWS, and PwBD candidates?",
-        "q_hi": "एससी, एसटी, ईडब्ल्यूएस और दिव्यांग उम्मीदवारों के लिए आवेदन शुल्क क्या है?"
+        "q_hi": "एससी, एसटी, ईडब्ल्यूएस और पीडब्ल्यूडी उम्मीदवारों के लिए आवेदन शुल्क क्या है?"
       },
       {
         "a_en": "The maximum age limit for Open Merit candidates is 40 years as on 01.01.2026.",
@@ -285,16 +285,22 @@
         "q_hi": "ओपन मेरिट उम्मीदवारों के लिए अधिकतम आयु सीमा क्या है?"
       },
       {
-        "a_en": "No, applicants must be Domiciles of the Union Territory of Jammu and Kashmir.",
-        "a_hi": "नहीं, आवेदकों को जम्मू और कश्मीर केंद्र शासित प्रदेश का मूल निवासी होना चाहिए।",
-        "q_en": "Are candidates from outside Jammu and Kashmir eligible to apply?",
-        "q_hi": "क्या जम्मू और कश्मीर के बाहर के उम्मीदवार आवेदन करने के पात्र हैं?"
+        "a_en": "Candidates who are domiciles of Jammu & Kashmir and possess the prescribed educational qualifications for Junior Engineer (Civil) can apply.",
+        "a_hi": "जो उम्मीदवार जम्मू और कश्मीर के मूल निवासी हैं और कनिष्ठ अभियंता (सिविल) के लिए निर्धारित शैक्षणिक योग्यता रखते हैं, वे आवेदन कर सकते हैं।",
+        "q_en": "Who is eligible to apply for these posts?",
+        "q_hi": "इन पदों के लिए आवेदन करने के लिए कौन पात्र है?"
       },
       {
-        "a_en": "Candidates can apply online through the official website at www.jkssb.nic.in.",
-        "a_hi": "उम्मीदवार आधिकारिक वेबसाइट www.jkssb.nic.in के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
-        "q_en": "What is the official website to apply for JKSSB Junior Engineer Civil Recruitment?",
-        "q_hi": "JKSSB कनिष्ठ अभियंता सिविल भर्ती के लिए आवेदन करने के लिए आधिकारिक वेबसाइट क्या है?"
+        "a_en": "Yes, candidates must possess a valid J&K Domicile Certificate issued on or before 29 December 2026.",
+        "a_hi": "हाँ, उम्मीदवारों के पास 29 दिसंबर 2026 को या उससे पहले जारी वैध जम्मू-कश्मीर अधिवास प्रमाण पत्र होना चाहिए।",
+        "q_en": "Is domicile certificate mandatory?",
+        "q_hi": "क्या अधिवास प्रमाण पत्र अनिवार्य है?"
+      },
+      {
+        "a_en": "The selection process comprises a written examination (objective type) followed by document verification.",
+        "a_hi": "चयन प्रक्रिया में लिखित परीक्षा (वस्तुनिष्ठ प्रकार) और उसके बाद दस्तावेज़ सत्यापन शामिल है।",
+        "q_en": "What is the selection process?",
+        "q_hi": "चयन प्रक्रिया क्या है?"
       }
     ],
     "fees": [
@@ -306,44 +312,46 @@
       {
         "amount": "₹500",
         "cat_en": "SC, ST, EWS, PwBD",
-        "cat_hi": "एससी, एसटी, ईडब्ल्यूएस, दिव्यांग"
+        "cat_hi": "एससी, एसटी, ईडब्ल्यूएस, पीडब्ल्यूडी"
       }
     ],
     "h1_en": "JKSSB Junior Engineer Civil Recruitment 2026 – Apply Online for 458 Posts",
-    "h1_hi": "JKSSB कनिष्ठ अभियंता सिविल भर्ती 2026 – 458 पदों के लिए ऑनलाइन आवेदन करें",
+    "h1_hi": "JKSSB कनिष्ठ अभियंता सिविल भर्ती 2026 – 458 पदों के लिए ऑनलाइन आवेदन",
     "hindi_notice_url": null,
     "how_en": [
       "Visit the official website of JKSSB at www.jkssb.nic.in.",
-      "Register and fill out the online application form for Advertisement No. 11 of 2026.",
-      "Upload the required documents including Domicile Certificate and Category Certificate in the prescribed format.",
-      "Pay the application fee online through Net Banking, Credit, or Debit card.",
-      "Submit the final application and take a printout for future reference."
+      "Go to the recruitment section and click on the online application link for Advertisement No. 11 of 2026.",
+      "Register and fill out the online application form with accurate details.",
+      "Upload the required documents, category certificates, and a valid domicile certificate in the prescribed format.",
+      "Pay the application fee through online mode (Net Banking, Credit, or Debit card).",
+      "Submit the final application form and take a printout for future reference."
     ],
     "how_hi": [
       "JKSSB की आधिकारिक वेबसाइट www.jkssb.nic.in पर जाएं।",
-      "विज्ञापन संख्या 11 of 2026 के लिए ऑनलाइन आवेदन फॉर्म पंजीकृत करें और भरें।",
-      "निर्धारित प्रारूप में डोमीसाइल प्रमाण पत्र और श्रेणी प्रमाण पत्र सहित आवश्यक दस्तावेज अपलोड करें।",
-      "नेट बैंकिंग, क्रेडिट या डेबिट कार्ड के माध्यम से ऑनलाइन आवेदन शुल्क का भुगतान करें।",
-      "अंतिम आवेदन जमा करें और भविष्य के संदर्भ के लिए प्रिंटआउट लें।"
+      "भर्ती अनुभाग पर जाएं और विज्ञापन संख्या 11 of 2026 के लिए ऑनलाइन आवेदन लिंक पर क्लिक करें।",
+      "पंजीकरण करें और सटीक विवरण के साथ ऑनलाइन आवेदन पत्र भरें।",
+      "निर्धारित प्रारूप में आवश्यक दस्तावेज, श्रेणी प्रमाण पत्र और वैध अधिवास प्रमाण पत्र अपलोड करें।",
+      "ऑनलाइन मोड (नेट बैंकिंग, क्रेडिट या डेबिट कार्ड) के माध्यम से आवेदन शुल्क का भुगतान करें।",
+      "अंतिम आवेदन पत्र जमा करें और भविष्य के संदर्भ के लिए प्रिंटआउट लें।"
     ],
-    "intro_en": "Jammu and Kashmir Services Selection Board (JKSSB) has released Advertisement Notification No. 11 of 2026 for the recruitment of Junior Engineer (Civil) posts in the Public Works (R&B) Department and Jal Shakti Department. A total of 458 vacancies are to be filled through direct recruitment. Interested and eligible candidates who are domiciles of the Union Territory of Jammu and Kashmir can submit their online applications from 30 November 2026 to 29 December 2026. Applicants should ensure they meet all educational qualification and age limit requirements as on the prescribed cut-off date.",
-    "intro_hi": "जम्मू और कश्मीर सेवा चयन बोर्ड (JKSSB) ने लोक निर्माण (आरएंडबी) विभाग और जल शक्ति विभाग में कनिष्ठ अभियंता (सिविल) पदों की भर्ती के लिए विज्ञापन अधिसूचना संख्या 11 ऑफ 2026 जारी की है। सीधी भर्ती के माध्यम से कुल 458 रिक्तियों को भरा जाना है। जम्मू और कश्मीर केंद्र शासित प्रदेश के मूल निवासी इच्छुक और योग्य उम्मीदवार 30 नवंबर 2026 से 29 दिसंबर 2026 तक अपने ऑनलाइन आवेदन जमा कर सकते हैं। आवेदकों को यह सुनिश्चित करना चाहिए कि वे निर्धारित कट-ऑफ तिथि के अनुसार सभी शैक्षणिक योग्यता और आयु सीमा आवश्यकताओं को पूरा करते हैं।",
+    "intro_en": "The Jammu and Kashmir Services Selection Board (JKSSB) has released Advertisement Notification No. 11 of 2026 for the recruitment of Junior Engineer (Civil) posts in the Public Works (R&B) Department and Jal Shakti Department. A total of 458 vacancies are available under direct recruitment. Online applications will be accepted from 30 November 2026 to 29 December 2026. Eligible candidates who are domiciles of the Union Territory of Jammu & Kashmir and possess the required educational qualifications can apply online on the official website.",
+    "intro_hi": "जम्मू और कश्मीर सेवा चयन बोर्ड (JKSSB) ने लोक निर्माण (R&B) विभाग और जल शक्ति विभाग में कनिष्ठ अभियंता (सिविल) पदों की भर्ती के लिए विज्ञापन अधिसूचना संख्या 11 of 2026 जारी की है। सीधी भर्ती के तहत कुल 458 रिक्तियां उपलब्ध हैं। ऑनलाइन आवेदन 30 नवंबर 2026 से 29 दिसंबर 2026 तक स्वीकार किए जाएंगे। जम्मू और कश्मीर केंद्र शासित प्रदेश के मूल निवासी और आवश्यक शैक्षणिक योग्यता रखने वाले योग्य उम्मीदवार आधिकारिक वेबसाइट पर ऑनलाइन आवेदन कर सकते हैं।",
     "last_date": "2026-12-29",
     "mistakes_en": [
-      "Failing to upload valid category or domicile certificates in the prescribed format before the cut-off date.",
-      "Entering incorrect details during online registration as no correction window is mentioned."
+      "Failing to upload category or domicile certificates in the prescribed format before the cut-off date.",
+      "Entering incorrect details during online registration which cannot be corrected later."
     ],
     "mistakes_hi": [
-      "कट-ऑफ तिथि से पहले निर्धारित प्रारूप में वैध श्रेणी या डोमीसाइल प्रमाण पत्र अपलोड करने में विफल रहना।",
-      "ऑनलाइन पंजीकरण के दौरान गलत विवरण दर्ज करना।"
+      "कट-ऑफ तिथि से पहले निर्धारित प्रारूप में श्रेणी या अधिवास प्रमाण पत्र अपलोड करने में विफल रहना.",
+      "ऑनलाइन पंजीकरण के दौरान गलत विवरण दर्ज करना जिसे बाद में सुधारा नहीं जा सकता है।"
     ],
     "not_en": [
-      "Candidates who do not possess a valid J&K domicile certificate by the last date.",
-      "Candidates without the prescribed educational qualification on or before the cut-off date."
+      "Candidates who do not possess a valid J&K Domicile Certificate on or before the last date of application.",
+      "Applicants with educational qualifications other than those prescribed in the notification."
     ],
     "not_hi": [
-      "अंतिम तिथि तक वैध जेएंडके डोमीसाइल प्रमाण पत्र न रखने वाले उम्मीदवार।",
-      "कट-ऑफ तिथि को या उससे पहले निर्धारित शैक्षणिक योग्यता के बिना उम्मीदवार।"
+      "वे उम्मीदवार जिनके पास आवेदन की अंतिम तिथि या उससे पहले वैध जम्मू-कश्मीर अधिवास प्रमाण पत्र नहीं है।",
+      "अधिसूचना में निर्धारित के अलावा अन्य शैक्षणिक योग्यता वाले आवेदक।"
     ],
     "notice_date": "2026-10-27",
     "official_site": "https://www.jkssb.nic.in",
@@ -358,33 +366,39 @@
       },
       {
         "label_en": "Total vacancies",
-        "label_hi": "कुल वैकेंसी",
+        "label_hi": "कुल रिक्तियां",
         "value_en": "458",
         "value_hi": "458"
       },
       {
         "label_en": "Apply online",
         "label_hi": "ऑनलाइन आवेदन",
-        "value_en": "30 Nov 2026 to 29 Dec 2026",
-        "value_hi": "30 नवंबर 2026 से 29 दिसंबर 2026"
+        "value_en": "30 Nov 2026 – 29 Dec 2026",
+        "value_hi": "30 नवं 2026 – 29 दिसं 2026"
       },
       {
         "label_en": "Last date for fee",
-        "label_hi": "फीस जमा करने की अंतिम तिथि",
+        "label_hi": "शुल्क की अंतिम तिथि",
         "value_en": "29 Dec 2026",
-        "value_hi": "29 दिसंबर 2026"
+        "value_hi": "29 दिसं 2026"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "To be notified separately",
+        "value_hi": "अलग से अधिसूचित की जाएगी"
       },
       {
         "label_en": "Age limit",
         "label_hi": "आयु सीमा",
-        "value_en": "Up to 40 years (as on 01.01.2026)",
+        "value_en": "Max 40 years (as on 01.01.2026)",
         "value_hi": "अधिकतम 40 वर्ष (01.01.2026 के अनुसार)"
       },
       {
         "label_en": "Advertisement number",
         "label_hi": "विज्ञापन संख्या",
-        "value_en": "11 of 2026",
-        "value_hi": "11 of 2026"
+        "value_en": "Advertisement Notification No. 11 of 2026",
+        "value_hi": "विज्ञापन अधिसूचना संख्या 11 of 2026"
       }
     ],
     "salary": [],
@@ -406,12 +420,12 @@
     },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "Jammu and Kashmir Services Selection Board (JKSSB) has invited online applications for 458 Junior Engineer (Civil) posts. Eligible candidates can apply online from 30 November 2026 to 29 December 2026.",
-    "summary_hi": "जम्मू और कश्मीर सेवा चयन बोर्ड (JKSSB) ने 458 कनिष्ठ अभियंता (सिविल) पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 30 नवंबर 2026 से 29 दिसंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "summary_en": "Jammu and Kashmir Services Selection Board (JKSSB) has invited online applications for 458 Junior Engineer (Civil) posts in Public Works (R&B) and Jal Shakti Departments. Eligible candidates can apply online from 30 November 2026 to 29 December 2026.",
+    "summary_hi": "जम्मू और कश्मीर सेवा चयन बोर्ड (JKSSB) ने लोक निर्माण (R&B) और जल शक्ति विभागों में 458 कनिष्ठ अभियंता (सिविल) पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 30 नवंबर 2026 से 29 दिसंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
     "vacancies": [
       {
         "detail_en": "Jal Shakti Department: 282 posts, Public Works (R&B) Department: 176 posts",
-        "detail_hi": "जल शक्ति विभाग: 282 पद, लोक निर्माण (आरएंडबी) विभाग: 176 पद",
+        "detail_hi": "जल शक्ति विभाग: 282 पद, लोक निर्माण (R&B) विभाग: 176 पद",
         "post_en": "Junior Engineer (Civil)",
         "post_hi": "कनिष्ठ अभियंता (सिविल)",
         "total": "458"
@@ -419,10 +433,10 @@
     ],
     "video_url": null,
     "who_en": [
-      "Civil Engineering candidates holding the required educational qualifications and valid J&K domicile."
+      "Engineering diploma or degree holders in Civil Engineering who are domiciles of J&K and aged between 18-40 years."
     ],
     "who_hi": [
-      "आवश्यक शैक्षणिक योग्यता और वैध जेएंडके डोमीसाइल रखने वाले सिविल इंजीनियरिंग उम्मीदवार।"
+      "सिविल इंजीनियरिंग में डिप्लोमा या डिग्री धारक जो जम्मू-कश्मीर के मूल निवासी हैं और जिनकी आयु 18-40 वर्ष के बीच है।"
     ]
   },
   "pdf": {
@@ -431,9 +445,10 @@
     "sha256": "531fbd6ca3f1b26652947a6a36ab2f4d8206c67fa3a482c44310dfc3c71b943a",
     "text_kind": "text"
   },
-  "published_at": "2026-11-03T16:37:54Z",
+  "published_at": "2026-11-03T16:58:31Z",
   "qual": [
-    "diploma"
+    "diploma",
+    "graduate"
   ],
   "slug": "jkssb-junior-engineer-civil-recruitment-2026-apply-online-for-45",
   "source_id": "jkssb-adverts",

@@ -7,7 +7,7 @@
     "exam_date": null,
     "last_date": "2026-10-09",
     "list": true,
-    "posts": "Microbiologist (Food & Drug Laboratory)",
+    "posts": "माइक्रो बायोलॉजिस्ट (खाद्य प्रयोगशाला / औषधि प्रयोगशाला)",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
     "summary_en": "Chhattisgarh Public Service Commission has invited online applications for 5 Microbiologist posts. Eligible candidates can apply online from 10 September 2026 to 9 October 2026.",
@@ -22,7 +22,7 @@
     "age_max": 35,
     "age_min": 25,
     "age_on": "2026-01-01",
-    "domicile": "Chhattisgarh",
+    "domicile": null,
     "qual": "postgraduate",
     "relax": {
       "OBC": 5,
@@ -97,17 +97,19 @@
   },
   "first_seen": "2026-11-03T16:16:29+00:00",
   "id": "3c5a1f4cc8f9",
-  "issue": 978,
+  "issue": 1000,
   "issue_tidy": true,
   "kind": "notification",
   "notice_date": "2026-09-08",
   "org": "CGPSC",
   "page": {
     "after_en": [
-      "Selection process involving written examination or interview followed by document verification and final appointment on a 3-year probation period."
+      "Screening of candidates for written examination or interview",
+      "Document verification and final appointment"
     ],
     "after_hi": [
-      "लिखित परीक्षा या साक्षात्कार के बाद दस्तावेज़ सत्यापन और 3 वर्ष की परवीक्षा अवधि पर अंतिम नियुक्ति।"
+      "लिखित परीक्षा या साक्षात्कार हेतु उम्मीदवारों का छंटनी/चित्र्हांकन",
+      "दस्तावेज़ सत्यापन और अंतिम नियुक्ति"
     ],
     "age": [
       {
@@ -123,134 +125,158 @@
         "value_hi": "35 वर्ष"
       },
       {
-        "label_en": "As-on date",
+        "label_en": "As on date",
         "label_hi": "आयु की गणना तिथि",
         "value_en": "01 Jan 2026",
         "value_hi": "01 जनवरी 2026"
       }
     ],
     "apply_start": "2026-09-10",
-    "apply_url": "https://psc.cg.gov.in",
+    "apply_url": "https://www.psc.cg.gov.in",
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check eligibility and age limits",
-      "Keep scanned documents ready",
-      "Apply online before the last date"
+      "Verify your eligibility including age and experience before applying",
+      "Keep scanned copies of photo, signature, and required documents ready",
+      "Complete the payment through online mode only"
     ],
     "checklist_hi": [
-      "योग्यता और आयु सीमा की जांच करें",
-      "स्कैन किए गए दस्तावेज़ तैयार रखें",
-      "अंतिम तिथि से पहले ऑनलाइन आवेदन करें"
+      "आवेदन करने से पहले आयु और अनुभव सहित अपनी पात्रता की जांच करें।",
+      "फोटो, हस्ताक्षर और आवश्यक दस्तावेजों की स्कैन की गई प्रतियां तैयार रखें।",
+      "केवल ऑनलाइन माध्यम से शुल्क भुगतान पूरा करें।"
     ],
     "conducted_by_en": "Chhattisgarh Public Service Commission (CGPSC)",
-    "conducted_by_hi": "छत्तीसगढ़ लोक सेवा आयोग",
+    "conducted_by_hi": "छत्तीसगढ़ लोक सेवा आयोग (CGPSC)",
     "dates": [
       {
         "label_en": "Notification date",
-        "label_hi": "विज्ञापित तिथि",
+        "label_hi": "विज्ञापन तिथि",
         "value_en": "08 Sep 2026",
         "value_hi": "08 सितंबर 2026"
       },
       {
-        "label_en": "Employment newspaper publication date",
-        "label_hi": "रोजगार समाचार प्रकाशन तिथि",
+        "label_en": "Employment News publication date",
+        "label_hi": "रोजगार नियोजन में प्रकाशन तिथि",
         "value_en": "09 Sep 2026",
         "value_hi": "09 सितंबर 2026"
       },
       {
         "label_en": "Online application starts",
         "label_hi": "ऑनलाइन आवेदन प्रारंभ",
-        "value_en": "10 Sep 2026",
-        "value_hi": "10 सितंबर 2026"
+        "value_en": "10 Sep 2026 (12:00 PM)",
+        "value_hi": "10 सितंबर 2026 (मध्याह्न 12:00 बजे)"
       },
       {
-        "label_en": "Online application last date",
-        "label_hi": "ऑनलाइन आवेदन की अंतिम तिथि",
-        "value_en": "09 Oct 2026",
-        "value_hi": "09 अक्टूबर 2026"
+        "label_en": "Last date to apply",
+        "label_hi": "आवेदन की अंतिम तिथि",
+        "value_en": "09 Oct 2026 (11:59 PM)",
+        "value_hi": "09 अक्टूबर 2026 (रात्रि 11:59 बजे)"
       },
       {
         "label_en": "Free correction window",
-        "label_hi": "निःशुल्क त्रुटि सुधार अवधि",
-        "value_en": "10 Oct 2026 – 12 Oct 2026",
-        "value_hi": "10 अक्टूबर 2026 – 12 अक्टूबर 2026"
+        "label_hi": "निःशुल्क त्रुटि सुधार",
+        "value_en": "10 Oct 2026 to 12 Oct 2026",
+        "value_hi": "10 अक्टूबर 2026 से 12 अक्टूबर 2026"
       },
       {
         "label_en": "Paid correction window",
-        "label_hi": "सशुल्क त्रुटि सुधार अवधि",
-        "value_en": "13 Oct 2026 – 15 Oct 2026",
-        "value_hi": "13 अक्टूबर 2026 – 15 अक्टूबर 2026"
+        "label_hi": "सशुल्क त्रुटि सुधार",
+        "value_en": "13 Oct 2026 to 15 Oct 2026",
+        "value_hi": "13 अक्टूबर 2026 से 15 अक्टूबर 2026"
       }
     ],
     "documents_en": [
       "Educational certificates and mark sheets",
-      "Experience certificate",
-      "Caste certificate (if applicable)",
+      "Experience certificates",
+      "Caste/Category certificate (if applicable)",
       "Domicile certificate (if applicable)"
     ],
     "documents_hi": [
       "शैक्षणिक प्रमाण पत्र और अंकसूची",
       "अनुभव प्रमाण पत्र",
-      "जाति प्रमाण पत्र (यदि लागू हो)",
-      "मूल निवासी प्रमाण पत्र (यदि लागू हो)"
+      "जाति/श्रेणी प्रमाण पत्र (यदि लागू हो)",
+      "मूल निवास प्रमाण पत्र (यदि लागू हो)"
     ],
     "eligibility": [
       {
-        "label_en": "Education (Food Lab)",
+        "label_en": "Education (Food Laboratory)",
         "label_hi": "शैक्षणिक योग्यता (खाद्य प्रयोगशाला)",
-        "value_en": "M.Sc. in Microbiology and 5 years experience in food testing in a recognized laboratory, or prescribed qualifications as Public Analyst under Food Safety and Standards Rules, 2011.",
-        "value_hi": "एम.एस.सी. (माइक्रोबायोलॉजी) तथा मान्यता प्राप्त प्रयोगशाला में खाद्य परीक्षण का पांच वर्ष का अनुभव, अथवा खाद्य सुरक्षा एवं मानक नियम, 2011 के अधीन खाद्य विश्लेषक के रूप में नियुक्ति हेतु विहित अर्हता।"
+        "value_en": "Must possess qualifications for appointment as Public Analyst under Food Safety and Standards Rules, 2011 with 5 years experience as Public Analyst or in food testing in a recognized laboratory; OR M.Sc. (Microbiology) with 5 years experience in food testing in a recognized laboratory.",
+        "value_hi": "खाद्य सुरक्षा एवं मानक नियम, 2011 के उपबंधों के अधीन खाद्य विश्लेषक के रूप में नियुक्ति के लिए विहित अर्हता तथा पांच वर्ष का अनुभव, अथवा एम.एस.सी. (माइक्रो बायोलॉजी) तथा मान्यता प्राप्त प्रयोगशाला में खाद्य परीक्षण का पांच वर्ष का अनुभव।"
       },
       {
-        "label_en": "Education (Drug Lab)",
+        "label_en": "Education (Drug Laboratory)",
         "label_hi": "शैक्षणिक योग्यता (औषधि प्रयोगशाला)",
-        "value_en": "M.Sc. in Microbiology and 5 years experience in drug testing in a recognized laboratory, or prescribed qualifications as Government Analyst under Drugs and Cosmetics Rules, 1945.",
-        "value_hi": "एम.एस.सी. (माइक्रोबायोलॉजी) तथा मान्यता प्राप्त प्रयोगशाला में औषधि परीक्षण का पांच वर्ष का अनुभव, अथवा ड्रग्स एवं कॉस्मेटिक्स रूल्स, 1945 के अधीन शासकीय विश्लेषक के रूप में नियुक्ति हेतु विहित अर्हता।"
+        "value_en": "Must possess qualifications for appointment as Government Analyst under Drugs and Cosmetics Rules, 1945 with 5 years experience as Government Analyst or in drug testing in a recognized laboratory; OR M.Sc. (Microbiology) with 5 years experience in drug testing in a recognized laboratory.",
+        "value_hi": "ड्रग्स एवं कॉस्मेटिक्स रूल्स, 1945 के उपबंधों के अधीन शासकीय विश्लेषक के रूप में नियुक्ति के लिए विहित अर्हता तथा पांच वर्ष का अनुभव, अथवा एम.एस.सी. (माइक्रो बायोलॉजी) तथा मान्यता प्राप्त प्रयोगशाला में औषधि परीक्षण का पांच वर्ष का अनुभव।"
+      },
+      {
+        "label_en": "Nationality",
+        "label_hi": "राष्ट्रीयता",
+        "value_en": "Indian citizen and other categories recognized by the Government of India.",
+        "value_hi": "भारतीय नागरिक और भारत शासन द्वारा मान्य श्रेणियों के अभ्यार्थी।"
       }
     ],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "Chhattisgarh Public Service Commission conducts this recruitment for selecting Microbiologists for Food and Drug Laboratories under the Health and Family Welfare Department.",
-        "a_hi": "छत्तीसगढ़ लोक सेवा आयोग स्वास्थ्य एवं परिवार कल्याण विभाग के अंतर्गत खाद्य और औषधि प्रयोगशालाओं में माइक्रोबायोलॉजिस्ट पदों पर चयन के लिए यह भर्ती आयोजित करता है।",
+        "a_en": "Chhattisgarh Public Service Commission conducts this recruitment for selecting Microbiologists in Food and Drug Laboratories under the Health and Family Welfare Department.",
+        "a_hi": "छत्तीसगढ़ लोक सेवा आयोग स्वास्थ्य एवं परिवार कल्याण विभाग के अंतर्गत खाद्य और औषधि प्रयोगशालाओं में माइक्रोबायोलॉजिस्ट के पदों पर चयन के लिए यह भर्ती आयोजित करता है।",
         "q_en": "What is CGPSC Microbiologist Recruitment?",
-        "q_hi": "छत्तीसगढ़ लोक सेवा आयोग माइक्रोबायोलॉजिस्ट भर्ती क्या है?"
+        "q_hi": "CGPSC माइक्रोबायोलॉजिस्ट भर्ती क्या है?"
       }
     ],
     "extra": [
       {
-        "label_en": "Probation Period",
-        "label_hi": "परवीक्षा अवधि",
-        "value_en": "3 years",
-        "value_hi": "3 वर्ष"
+        "label_en": "Service category",
+        "label_hi": "सेवा श्रेणी",
+        "value_en": "Gazetted – Second Class",
+        "value_hi": "राजपत्रित – द्वितीय श्रेणी"
       },
       {
-        "label_en": "Pay Scale",
-        "label_hi": "वेतनमान",
-        "value_en": "Pay Matrix Level-12 (₹56,100–1,77,500)",
-        "value_hi": "वेतन मैट्रिक्स लेवल-12 (₹56,100–1,77,500)"
+        "label_en": "Probation period",
+        "label_hi": "परिक्षा अवधि",
+        "value_en": "3 years",
+        "value_hi": "3 वर्ष"
       }
     ],
     "faq": [
       {
-        "a_en": "The last date to apply online is 9 October 2026.",
-        "a_hi": "ऑनलाइन आवेदन करने की अंतिम तिथि 9 अक्टूबर 2026 है।",
+        "a_en": "The last date to apply online is 9 October 2026 up to 11:59 PM.",
+        "a_hi": "ऑनलाइन आवेदन करने की अंतिम तिथि 9 अक्टूबर 2026 रात्रि 11:59 बजे तक है।",
         "q_en": "What is the last date to apply for CGPSC Microbiologist Recruitment 2026?",
         "q_hi": "CGPSC माइक्रोबायोलॉजिस्ट भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "There are a total of 5 vacancies.",
-        "a_hi": "कुल 5 रिक्तियां उपलब्ध हैं।",
-        "q_en": "How many vacancies are available?",
-        "q_hi": "कुल कितनी रिक्तियां उपलब्ध हैं?"
+        "a_en": "A total of 5 vacancies have been announced for Microbiologist posts.",
+        "a_hi": "माइक्रोबायोलॉजिस्ट पदों के लिए कुल 5 रिक्तियां घोषित की गई हैं।",
+        "q_en": "How many vacancies are announced in CGPSC Microbiologist Notification 2026?",
+        "q_hi": "CGPSC माइक्रोबायोलॉजिस्ट अधिसूचना 2026 में कुल कितनी रिक्तियां घोषित की गई हैं?"
       },
       {
-        "a_en": "Candidates must be between 25 and 35 years of age as of 1 January 2026.",
+        "a_en": "Candidates must be between 25 and 35 years of age as on 1 January 2026.",
         "a_hi": "उम्मीदवारों की आयु 1 जनवरी 2026 के अनुसार 25 से 35 वर्ष के बीच होनी चाहिए।",
-        "q_en": "What is the age limit for this recruitment?",
-        "q_hi": "इस भर्ती के लिए आयु सीमा क्या है?"
+        "q_en": "What is the age limit for CGPSC Microbiologist 2026?",
+        "q_hi": "CGPSC माइक्रोबायोलॉजिस्ट 2026 के लिए आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "Candidates must have an M.Sc. in Microbiology along with 5 years of experience in food or drug testing in a recognized laboratory, or equivalent statutory qualifications.",
+        "a_hi": "उम्मीदवार के पास मान्यता प्राप्त प्रयोगशाला में खाद्य या औषधि परीक्षण के 5 वर्ष के अनुभव के साथ माइक्रोबायोलॉजी में एम.एससी. या समकक्ष वैधानिक अर्हता होनी चाहिए।",
+        "q_en": "What is the educational qualification required?",
+        "q_hi": "आवश्यक शैक्षणिक योग्यता क्या है?"
+      },
+      {
+        "a_en": "Eligible candidates can apply online through the official website www.psc.cg.gov.in.",
+        "a_hi": "योग्य उम्मीदवार आधिकारिक वेबसाइट www.psc.cg.gov.in के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+        "q_en": "What is the official website to apply online?",
+        "q_hi": "ऑनलाइन आवेदन करने के लिए आधिकारिक वेबसाइट कौन सी है?"
+      },
+      {
+        "a_en": "Yes, free correction can be done from 10 to 12 October 2026, and paid correction with a fee of ₹500 can be done from 13 to 15 October 2026.",
+        "a_hi": "हाँ, 10 से 12 अक्टूबर 2026 तक निःशुल्क त्रुटि सुधार और 13 से 15 अक्टूबर 2026 तक ₹500 शुल्क के साथ सशुल्क त्रुटि सुधार किया जा सकता है।",
+        "q_en": "Is there a correction window for the application form?",
+        "q_hi": "क्या आवेदन पत्र के लिए त्रुटि सुधार विंडो उपलब्ध है?"
       }
     ],
     "fees": [],
@@ -258,33 +284,35 @@
     "h1_hi": "छत्तीसगढ़ लोक सेवा आयोग माइक्रोबायोलॉजिस्ट भर्ती 2026 – 5 पदों के लिए ऑनलाइन आवेदन",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official CGPSC website at www.psc.cg.gov.in",
+      "Go to the official website at www.psc.cg.gov.in",
       "Click on the online application link for Microbiologist Recruitment 2026",
-      "Fill in the required details and upload necessary information",
-      "Pay the exam and portal fees online",
-      "Submit the application form and take a printout for future reference"
+      "Fill out the application form with correct details",
+      "Pay the examination and portal fees online",
+      "Submit the application and take a printout for future reference"
     ],
     "how_hi": [
-      "आधिकारिक वेबसाइट www.psc.cg.gov.in पर जाएं",
-      "माइक्रोबायोलॉजिस्ट भर्ती 2026 के लिए ऑनलाइन आवेदन लिंक पर क्लिक करें",
-      "आवश्यक विवरण भरें और जानकारी दर्ज करें",
-      "परीक्षा और पोर्टल शुल्क का ऑनलाइन भुगतान करें",
-      "आवेदन पत्र जमा करें और भविष्य के संदर्भ के लिए प्रिंटआउट सुरक्षित रखें"
+      "आधिकारिक वेबसाइट www.psc.cg.gov.in पर जाएं।",
+      "माइक्रोबायोलॉजिस्ट भर्ती 2026 के लिए ऑनलाइन आवेदन लिंक पर क्लिक करें।",
+      "सही विवरण के साथ आवेदन पत्र भरें।",
+      "ऑनलाइन माध्यम से परीक्षा शुल्क और पोर्टल शुल्क का भुगतान करें।",
+      "आवेदन जमा करें और भविष्य के संदर्भ के लिए प्रिंटआउट सुरक्षित रखें।"
     ],
-    "intro_en": "Chhattisgarh Public Service Commission (CGPSC) has released an advertisement for the recruitment of Microbiologists under the Health and Family Welfare Department. There are a total of 5 vacancies for Microbiologist posts in Food and Drug Laboratories. Eligible and interested candidates can apply online through the official website from 10 September 2026 to 9 October 2026. Applicants must ensure they fulfill all eligibility criteria before applying.",
-    "intro_hi": "छत्तीसगढ़ लोक सेवा आयोग (CGPSC) ने स्वास्थ्य एवं परिवार कल्याण विभाग के अंतर्गत माइक्रोबायोलॉजिस्ट के पदों पर भर्ती के लिए विज्ञापन जारी किया है। खाद्य एवं औषधि प्रयोगशाला में माइक्रोबायोलॉजिस्ट के कुल 5 पदों पर भर्ती की जानी है। योग्य और इच्छुक उम्मीदवार 10 सितंबर 2026 से 9 अक्टूबर 2026 तक आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+    "intro_en": "Chhattisgarh Public Service Commission (CGPSC) has released advertisement number 05/2026 for the direct recruitment of Microbiologists under the Health and Family Welfare Department for State Food and Drug Testing Laboratories. There are a total of 5 vacancies available for Food Laboratory and Drug Laboratory. Eligible and interested candidates can submit their online applications through the official website www.psc.cg.gov.in from 10 September 2026 to 9 October 2026. Applicants should ensure they meet all eligibility criteria before applying.",
+    "intro_hi": "छत्तीसगढ़ लोक सेवा आयोग (CGPSC) ने राज्य खाद्य एवं औषधि परीक्षण प्रयोगशाला हेतु लोक स्वास्थ्य एवं परिवार कल्याण विभाग के अंतर्गत माइक्रोबायोलॉजिस्ट के रिक्त पदों पर सीधी भर्ती के लिए विज्ञापन क्रमांक 05/2026 जारी किया है। खाद्य प्रयोगशाला और औषधि प्रयोगशाला के लिए कुल 5 रिक्तियां उपलब्ध हैं। योग्य और इच्छुक उम्मीदवार 10 सितंबर 2026 से 9 अक्टूबर 2026 तक आधिकारिक वेबसाइट www.psc.cg.gov.in के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
     "last_date": "2026-10-09",
     "mistakes_en": [
-      "Ensure all experience and qualification certificates are acquired on or before the last date of online application."
+      "Do not send manual or postal applications as only online submissions are accepted",
+      "Ensure all required educational and experience certificates are possessed by the last date of application"
     ],
     "mistakes_hi": [
-      "सुनिश्चित करें कि सभी अनुभव और योग्यता प्रमाण पत्र ऑनलाइन आवेदन की अंतिम तिथि या उससे पहले के प्राप्त किए गए हों।"
+      "मैनुअल या डाक द्वारा भेजे गए आवेदन स्वीकार नहीं किए जाएंगे, केवल ऑनलाइन आवेदन करें।",
+      "सुनिश्चित करें कि आवेदन की अंतिम तिथि तक आपके पास सभी आवश्यक शैक्षणिक और अनुभव प्रमाण पत्र मौजूद हों।"
     ],
     "not_en": [
-      "Candidates without the required educational qualifications and experience as of the last date of application."
+      "Candidates without the required educational qualifications and experience as of the last date of application"
     ],
     "not_hi": [
-      "आवेदन की अंतिम तिथि तक आवश्यक शैक्षणिक योग्यता और अनुभव न रखने वाले उम्मीदवार।"
+      "आवेदन की अंतिम तिथि तक आवश्यक शैक्षणिक योग्यता और अनुभव न रखने वाले उम्मीदवार"
     ],
     "notice_date": "2026-09-08",
     "official_site": "https://psc.cg.gov.in",
@@ -294,8 +322,8 @@
       {
         "label_en": "Posts",
         "label_hi": "पद",
-        "value_en": "Microbiologist (Food & Drug Laboratory)",
-        "value_hi": "माइक्रोबायोलॉजिस्ट (खाद्य एवं औषधि प्रयोगशाला)"
+        "value_en": "Microbiologist (Food Laboratory / Drug Laboratory)",
+        "value_hi": "माइक्रो बायोलॉजिस्ट (खाद्य प्रयोगशाला / औषधि प्रयोगशाला)"
       },
       {
         "label_en": "Total vacancies",
@@ -306,42 +334,48 @@
       {
         "label_en": "Apply online",
         "label_hi": "ऑनलाइन आवेदन",
-        "value_en": "10 Sep 2026 – 09 Oct 2026",
-        "value_hi": "10 सितंबर 2026 – 09 अक्टूबर 2026"
+        "value_en": "10 Sep 2026 to 09 Oct 2026",
+        "value_hi": "10 सितंबर 2026 से 09 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Correction window",
+        "label_hi": "त्रुटि सुधार",
+        "value_en": "10 Oct 2026 to 12 Oct 2026 (Free), 13 Oct 2026 to 15 Oct 2026 (Paid)",
+        "value_hi": "10 अक्टूबर 2026 से 12 अक्टूबर 2026 (निःशुल्क), 13 अक्टूबर 2026 से 15 अक्टूबर 2026 (सशुल्क)"
       },
       {
         "label_en": "Educational qualification",
         "label_hi": "शैक्षणिक योग्यता",
         "value_en": "M.Sc. in Microbiology with 5 years experience in food/drug testing in a recognized laboratory",
-        "value_hi": "माइक्रोबायोलॉजी में एम.एस.सी. तथा मान्यता प्राप्त प्रयोगशाला में खाद्य/औषधि परीक्षण का पांच वर्ष का अनुभव"
+        "value_hi": "एम.एस.सी. (माइक्रो बायोलॉजी) तथा मान्यता प्राप्त प्रयोगशाला में खाद्य/औषधि परीक्षण का पांच वर्ष का अनुभव"
       },
       {
         "label_en": "Age limit",
         "label_hi": "आयु सीमा",
-        "value_en": "25–35 years (as on 01 Jan 2026)",
-        "value_hi": "25–35 वर्ष (01 जनवरी 2026 के अनुसार)"
+        "value_en": "25 to 35 years as on 01 Jan 2026",
+        "value_hi": "25 से 35 वर्ष, 01 जनवरी 2026 के अनुसार"
       },
       {
         "label_en": "Advertisement number",
         "label_hi": "विज्ञापन क्रमांक",
         "value_en": "05/2026/परीक्षा/दिनांक 08/09/2026",
-        "value_en_hi": "05/2026/परीक्षा/दिनांक 08/09/2026"
+        "value_hi": "05/2026/परीक्षा/दिनांक 08/09/2026"
       }
     ],
     "salary": [
       {
-        "label_en": "Pay Scale",
-        "label_hi": "वेतनमान",
+        "label_en": "Pay Matrix",
+        "label_hi": "वेतन मैट्रिक्स",
         "value_en": "Pay Matrix Level-12 (₹56,100–1,77,500)",
         "value_hi": "वेतन मैट्रिक्स लेवल-12 (₹56,100–1,77,500)"
       }
     ],
     "selection_en": [
-      "Written Exam / Interview (as applicable)",
+      "Written Exam / Interview screening",
       "Document Verification"
     ],
     "selection_hi": [
-      "लिखित परीक्षा / साक्षात्कार",
+      "लिखित परीक्षा / साक्षात्कार हेतु चित्र्हांकन",
       "दस्तावेज़ सत्यापन"
     ],
     "share_card": {
@@ -354,30 +388,30 @@
     },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "Chhattisgarh Public Service Commission has invited online applications for 5 Microbiologist posts. Eligible candidates can apply online from 10 September 2026 to 9 October 2026.",
-    "summary_hi": "छत्तीसगढ़ लोक सेवा आयोग ने माइक्रोबायोलॉजिस्ट के 5 पदों पर भर्ती के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 10 सितंबर 2026 से 9 अक्टूबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "summary_en": "Chhattisgarh Public Service Commission has invited online applications for 5 Microbiologist posts in Food and Drug Laboratories. Eligible candidates can apply online from 10 September 2026 to 9 October 2026.",
+    "summary_hi": "छत्तीसगढ़ लोक सेवा आयोग ने खाद्य और औषधि प्रयोगशालाओं में माइक्रोबायोलॉजिस्ट के 5 पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 10 सितंबर 2026 से 9 अक्टूबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
     "vacancies": [
       {
         "detail_en": "UR: 2, SC: 0, ST: 1, OBC: 0",
         "detail_hi": "अनारक्षित: 2, अजजा: 1",
         "post_en": "Microbiologist (Food Laboratory)",
-        "post_hi": "माइक्रोबायोलॉजिस्ट (खाद्य प्रयोगशाला)",
+        "post_hi": "माइक्रो बायोलॉजिस्ट (खाद्य प्रयोगशाला)",
         "total": "3"
       },
       {
         "detail_en": "UR: 1, SC: 0, ST: 1, OBC: 0",
         "detail_hi": "अनारक्षित: 1, अजजा: 1",
         "post_en": "Microbiologist (Drug Laboratory)",
-        "post_hi": "माइक्रोबायोलॉजिस्ट (औषधि प्रयोगशाला)",
+        "post_hi": "माइक्रो बायोलॉजिस्ट (औषधि प्रयोगशाला)",
         "total": "2"
       }
     ],
     "video_url": null,
     "who_en": [
-      "Postgraduates in Microbiology with 5 years of laboratory testing experience who meet the age and criteria requirements."
+      "Candidates holding M.Sc. in Microbiology with 5 years of relevant laboratory testing experience"
     ],
     "who_hi": [
-      "माइक्रोबायोलॉजी में स्नातकोत्तर और 5 साल के प्रयोगशाला परीक्षण अनुभव वाले योग्य उम्मीदवार।"
+      "एम.एस.सी. (माइक्रोबायोलॉजी) और 5 वर्ष के प्रयोगशाला परीक्षण अनुभव वाले उम्मीदवार"
     ]
   },
   "pdf": {
@@ -386,9 +420,9 @@
     "sha256": "f4d11ad117523813004541cf434c162c303978805577f534c24da82694eefd6a",
     "text_kind": "text"
   },
-  "published_at": "2026-11-03T16:37:33Z",
+  "published_at": "2026-11-03T16:58:17Z",
   "qual": [
-    "graduate"
+    "postgraduate"
   ],
   "slug": "cgpsc-microbiologist-recruitment-2026-apply-online-for-5-posts",
   "source_id": "cgpsc-adverts",

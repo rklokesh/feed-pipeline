@@ -1,31 +1,207 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://jkpsc.nic.in/",
   "card": {
     "confidence": "high",
     "exam_date": "2026-08-12",
     "last_date": null,
-    "list": false,
+    "list": true,
     "posts": "Gazetted Posts",
     "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "Question paper release notice, not a job, result or admit card",
-    "summary_en": "JKPSC has released the question papers for the written examination held for Gazetted posts in various disciplines.",
-    "summary_hi": "जेकेपीएससी ने विभिन्न विषयों में राजपत्रित पदों के लिए आयोजित लिखित परीक्षा के प्रश्न पत्र जारी कर दिए हैं।",
-    "title_en": "JKPSC GMC and SKIMS Gazetted Posts Question Paper 2026",
-    "title_hi": "JKPSC जीएमसी और स्किम्स राजपत्रित पद प्रश्न पत्र 2026",
+    "skip_reason": "",
+    "summary_en": "JKPSC has released the question papers for the written examination held for gazetted posts in various disciplines in GMCs and SKIMS Soura.",
+    "summary_hi": "JKPSC ने जीएमसी और स्किम्स सौरा में विभिन्न विषयों में राजपत्रित पदों के लिए आयोजित लिखित परीक्षा के प्रश्न पत्र जारी कर दिए हैं।",
+    "title_en": "JKPSC GMC and SKIMS Gazetted Posts Question Papers 2025",
+    "title_hi": "JKPSC जीएमसी और स्किम्स राजपत्रित पद प्रश्न पत्र 2025",
     "type": "Answer key",
     "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "jkpsc-gmc-and-skims-gazetted-posts-2025",
+    "name_en": "JKPSC GMC and SKIMS Gazetted Posts 2025",
+    "name_hi": "जेकेपीएससी जीएमसी और स्किम्स राजपत्रित पद 2025"
   },
   "fields": {},
   "first_seen": "2026-11-03T16:16:29+00:00",
   "id": "342ce39a5e23",
+  "issue": 997,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-08-12",
   "org": "JKPSC",
+  "page": {
+    "after_en": [
+      "Release of official answer keys",
+      "Submission of objections",
+      "Declaration of results"
+    ],
+    "after_hi": [
+      "आधिकारिक उत्तर कुंजी जारी होना",
+      "आपत्तियां प्रस्तुत करना",
+      "परिणाम की घोषणा"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": null,
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check the question paper series (Series A)",
+      "Verify the exam session (Afternoon Session)",
+      "Download the PDF for future reference"
+    ],
+    "checklist_hi": [
+      "प्रश्न पत्र श्रृंखला (सीरीज ए) की जांच करें",
+      "परीक्षा सत्र (दोपहर का सत्र) सत्यापित करें",
+      "भविष्य के संदर्भ के लिए पीडीएफ डाउनलोड करें"
+    ],
+    "conducted_by_en": "Jammu and Kashmir Public Service Commission (JKPSC)",
+    "conducted_by_hi": "जम्मू और कश्मीर लोक सेवा आयोग (JKPSC)",
+    "dates": [
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "12 Aug 2026",
+        "value_hi": "12 अगस्त 2026"
+      }
+    ],
+    "documents_en": [],
+    "documents_hi": [],
+    "eligibility": [],
+    "exam_date": "2026-08-12",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "These are the official question booklets (Series A) released by the Jammu and Kashmir Public Service Commission for the written examination conducted to fill gazetted posts across various disciplines in Government Medical Colleges and SKIMS, Soura.",
+        "a_hi": "यह जम्मू और कश्मीर लोक सेवा आयोग द्वारा सरकारी मेडिकल कॉलेजों और स्किम्स, सौरा में विभिन्न विषयों में राजपत्रित पदों को भरने के लिए आयोजित लिखित परीक्षा के लिए जारी आधिकारिक प्रश्न पुस्तिकाएं (सीरीज ए) हैं।",
+        "q_en": "What are the JKPSC GMC and SKIMS Gazetted Posts Question Papers?",
+        "q_hi": "JKPSC GMC और SKIMS राजपत्रित पद प्रश्न पत्र क्या हैं?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Department",
+        "label_hi": "विभाग",
+        "value_en": "Health and Medical Education Department (HME)",
+        "value_hi": "स्वास्थ्य और चिकित्सा शिक्षा विभाग (HME)"
+      },
+      {
+        "label_en": "Institutions",
+        "label_hi": "संस्थान",
+        "value_en": "GMCs / SKIMS, Soura",
+        "value_hi": "जीएमसी / स्किम्स, सौरा"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The written examination was held on 12 August 2026.",
+        "a_hi": "लिखित परीक्षा 12 अगस्त 2026 को आयोजित की गई थी।",
+        "q_en": "When was the JKPSC written examination for gazetted posts in GMCs/SKIMS held?",
+        "q_hi": "GMCs/SKIMS में राजपत्रित पदों के लिए JKPSC की लिखित परीक्षा कब आयोजित की गई थी?"
+      },
+      {
+        "a_en": "You can download the question papers from the official website of JKPSC at jkpsc.nic.in.",
+        "a_hi": "आप JKPSC की आधिकारिक वेबसाइट jkpsc.nic.in से प्रश्न पत्र डाउनलोड कर सकते हैं।",
+        "q_en": "How can I download the JKPSC question papers?",
+        "q_hi": "मैं JKPSC प्रश्न पत्र कैसे डाउनलोड कर सकता हूँ?"
+      },
+      {
+        "a_en": "Question papers for Series A (Afternoon Session) have been released.",
+        "a_hi": "सीरीज ए (दोपहर का सत्र) के प्रश्न पत्र जारी किए गए हैं।",
+        "q_en": "Which question paper series has been released?",
+        "q_hi": "कौन सी प्रश्न पत्र श्रृंखला जारी की गई है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "JKPSC GMC and SKIMS Gazetted Posts Question Papers 2025",
+    "h1_hi": "JKPSC जीएमसी और स्किम्स राजपत्रित पद प्रश्न पत्र 2025",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official website of JKPSC at jkpsc.nic.in.",
+      "Navigate to the notification or question paper section for the relevant exam.",
+      "Click on the link for the written examination question papers for gazetted posts in GMCs/SKIMS, Soura (Series A - Afternoon Session).",
+      "Download and save the PDF for reference."
+    ],
+    "how_hi": [
+      "JKPSC की आधिकारिक वेबसाइट jkpsc.nic.in पर जाएं।",
+      "संबंधित परीक्षा के लिए अधिसूचना या प्रश्न पत्र अनुभाग पर जाएं।",
+      "GMC/SKIMS, सौरा (सीरीज ए - दोपहर का सत्र) में राजपत्रित पदों के लिए लिखित परीक्षा के प्रश्न पत्रों के लिंक पर क्लिक करें।",
+      "संदर्भ के लिए पीडीएफ डाउनलोड करें और सहेजें।"
+    ],
+    "intro_en": "Jammu and Kashmir Public Service Commission (JKPSC) has released the Question Papers (Series A, Afternoon Session) for the written examination held on 12 August 2026. The examination was conducted for filling up gazetted posts in various disciplines in Government Medical Colleges (GMCs) and SKIMS, Soura in the Health and Medical Education Department (HME). Candidates who appeared for the exam can now check and download the official question booklet from the provided link.",
+    "intro_hi": "जम्मू और कश्मीर लोक सेवा आयोग (JKPSC) ने 12 अगस्त 2026 को आयोजित लिखित परीक्षा के लिए प्रश्न पत्र (सीरीज ए, दोपहर का सत्र) जारी कर दिया है। यह परीक्षा स्वास्थ्य और चिकित्सा शिक्षा विभाग (HME) के तहत GMCs और SKIMS, सौरा में विभिन्न विषयों में राजपत्रित पदों को भरने के लिए आयोजित की गई थी। परीक्षा में शामिल होने वाले उम्मीदवार अब आधिकारिक लिंक से आधिकारिक प्रश्न पुस्तिका देख और डाउनलोड कर सकते हैं।",
+    "last_date": null,
+    "mistakes_en": [],
+    "mistakes_hi": [],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-08-12",
+    "official_site": "https://jkpsc.nic.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Gazetted Posts",
+        "value_hi": "राजपत्रित पद"
+      },
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "12 Aug 2026",
+        "value_hi": "12 अगस्त 2026"
+      },
+      {
+        "label_en": "Session",
+        "label_hi": "सत्र",
+        "value_en": "Afternoon Session",
+        "value_hi": "दोपहर का सत्र"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Written Examination",
+      "Interview / Document Verification"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा",
+      "साक्षात्कार / दस्तावेज सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "Question Papers 2025",
+      "headline_hi": "प्रश्न पत्र 2025",
+      "kind": "answer",
+      "line_en": "GMC/SKIMS Gazetted Posts",
+      "line_hi": "जीएमसी/स्किम्स राजपत्रित पद",
+      "posts": null
+    },
+    "status_en": "Question papers (Series A) released for the exam held on 12 Aug 2026",
+    "status_hi": "12 अगस्त 2026 को आयोजित परीक्षा के लिए प्रश्न पत्र (सीरीज ए) जारी किए गए",
+    "summary_en": "Jammu and Kashmir Public Service Commission (JKPSC) has released the Question Papers (Series A) for the written examination held on 12 August 2026 for filling up gazetted posts in various disciplines in GMCs and SKIMS, Soura (HME). Candidates who appeared in the afternoon session examination can download the question booklet from the official website.",
+    "summary_hi": "जम्मू और कश्मीर लोक सेवा आयोग (JKPSC) ने GMCs और SKIMS, सौरा (HME) में विभिन्न विषयों में राजपत्रित पदों को भरने के लिए 12 अगस्त 2026 को आयोजित लिखित परीक्षा के लिए प्रश्न पत्र (सीरीज ए) जारी कर दिए हैं। दोपहर के सत्र की परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक वेबसाइट से प्रश्न पुस्तिका डाउनलोड कर सकते हैं।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Candidates who appeared in the JKPSC gazetted posts written examination held on 12 August 2026 (Afternoon Session)."
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जो 12 अगस्त 2026 (दोपहर के सत्र) को आयोजित JKPSC राजपत्रित पदों की लिखित परीक्षा में शामिल हुए थे।"
+    ]
+  },
   "pdf": {
     "error": "ConnectTimeout: HTTPConnectionPool(host='jkpsc.nic.in', port=80): Max retries exceeded with url: /pdf/Question_Booklet_AN.pdf (Caused by ConnectTimeoutError(<HTTPConnection(host='jkpsc.nic.in', port=8"
   },
+  "published_at": "2026-11-03T16:57:54Z",
+  "qual": [
+    "graduate",
+    "postgraduate"
+  ],
+  "slug": "jkpsc-gmc-and-skims-gazetted-posts-question-papers-2025",
   "source_id": "jkpsc-home",
-  "status": "skipped",
+  "status": "approved",
   "title": "12/08/2026 Written Examination for filling up of Gazetted posts in various disciplines in GMCs/SKIMS, Soura in HME, 2025, Question Papers (Series A) (Afternoon Session)",
   "url": "http://jkpsc.nic.in/pdf/Question_Booklet_AN.pdf"
 }
