@@ -1,0 +1,5 @@
+# btsc https://btsc.bih.nic.in/
+## plain fetch failed: HTTPSConnectionPool(host='btsc.bih.nic.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='btsc.bih.nic.in', port=443) at 0x10d565d30>, 'Connection to btsc.bih.nic.in timed out. (connect timeout=30)'))
+## browser failed: Page.goto: Timeout 45000ms exceeded.
+Call log:
+navigating to "https://btsc.bih.nic.in/", waiting until "domcontentloaded"
