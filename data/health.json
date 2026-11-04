@@ -11,7 +11,7 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 9,
-    "last_ok": "2026-11-04T03:07:07+00:00"
+    "last_ok": "2026-11-04T06:09:35+00:00"
   },
   "bpssc-notices": {
     "consecutive_failures": 0,
@@ -30,7 +30,7 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 904,
-    "last_ok": "2026-11-04T03:07:07+00:00"
+    "last_ok": "2026-11-04T06:09:35+00:00"
   },
   "cgpsc-adverts": {
     "consecutive_failures": 0,
@@ -129,7 +129,7 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 1,
-    "last_ok": "2026-11-04T03:07:07+00:00"
+    "last_ok": "2026-11-04T06:09:35+00:00"
   },
   "itbp-recruitment": {
     "consecutive_failures": 0,
@@ -169,8 +169,8 @@
     "last_ok": "2026-11-04T03:03:37+00:00"
   },
   "lic-careers": {
-    "consecutive_failures": 0,
-    "last_error": "",
+    "consecutive_failures": 1,
+    "last_error": "Error: Page.goto: net::ERR_TIMED_OUT at https://licindia.in/careers\nCall log:\nnavigating to \"https://licindia.in/careers\", waiting until \"domcontentloaded\"\n",
     "last_links": 67,
     "last_ok": "2026-11-04T03:07:07+00:00"
   },
@@ -219,7 +219,7 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 833,
-    "last_ok": "2026-11-04T03:07:07+00:00"
+    "last_ok": "2026-11-04T06:09:35+00:00"
   },
   "psssb-group-c": {
     "consecutive_failures": 0,
@@ -280,13 +280,13 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 20,
-    "last_ok": "2026-11-04T03:07:07+00:00"
+    "last_ok": "2026-11-04T06:09:35+00:00"
   },
   "ssc-notice-board": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 11,
-    "last_ok": "2026-11-04T03:07:07+00:00"
+    "last_ok": "2026-11-04T06:09:35+00:00"
   },
   "tnpsc-home": {
     "consecutive_failures": 0,
@@ -328,7 +328,7 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 35,
-    "last_ok": "2026-11-04T03:07:07+00:00"
+    "last_ok": "2026-11-04T06:09:35+00:00"
   },
   "upsc-active-exams": {
     "consecutive_failures": 0,
