@@ -4,18 +4,19 @@
   "card": {
     "confidence": "high",
     "exam_date": null,
-    "last_date": null,
+    "last_date": "2026-11-12",
     "list": true,
     "posts": "Stenographer",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
     "summary_en": "UPSSSC has released the skill test result and notice for document verification and online post preference for the Stenographer Exam 2024. Qualified candidates can upload their documents from 29.10.2026 to 12.11.2026.",
     "summary_hi": "यूपीएसएसएससी ने आशुलिपिक परीक्षा 2024 के लिए टंकण परीक्षा परिणाम और अभिलेख परीक्षण तथा ऑनलाइन पद वरीयता हेतु सूचना जारी कर दी है। सफल अभ्यर्थी 29.10.2026 से 12.11.2026 तक अपने अभिलेख अपलोड कर सकते हैं।",
-    "title_en": "UPSSSC Stenographer Exam 2024 Document Verification Notice",
-    "title_hi": "यूपीएसएसएससी आशुलिपिक परीक्षा 2024 अभिलेख परीक्षण सूचना",
+    "title_en": "UPSSSC Stenographer Result 2024 – DV & Post Preference Notice",
+    "title_hi": "यूपीएसएसएससी आशुलिपिक परीक्षा 2024 – डीवी और पोस्ट प्रेफरेंस नोटिस",
     "type": "Update",
     "vacancies": 1224
   },
+  "editor_notes": [],
   "exam": {},
   "extraction": {
     "ai": null
@@ -26,7 +27,257 @@
   "issue": 1019,
   "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-10-29",
   "org": "UPSSSC",
+  "page": {
+    "after_en": [
+      "Scrutiny of uploaded documents by the commission",
+      "Final merit list preparation and department allocation based on marks and preferences",
+      "Recommendation for appointment"
+    ],
+    "after_hi": [
+      "आयोग द्वारा अपलोड किए गए दस्तावेजों की जांच",
+      "अंकों और वरीयता के आधार पर अंतिम मेरिट सूची तैयार करना और विभाग आवंटन",
+      "नियुक्ति के लिए संस्तुति"
+    ],
+    "age": [],
+    "apply_start": "2026-10-29",
+    "apply_url": "https://upsssc.gov.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check your registration number and keep your mobile handy for OTP.",
+      "Scan marksheets and certificates into proper PDF format under 2 MB.",
+      "Prepare your passport size photo as per the required specifications.",
+      "Complete document upload and submit before 12 November 2026.",
+      "Download and print the final submission form."
+    ],
+    "checklist_hi": [
+      "अपना पंजीकरण नंबर जांचें और ओटीपी के लिए अपना मोबाइल तैयार रखें।",
+      "अंकपत्रों और प्रमाण पत्रों को 2 एमबी से कम के उचित पीडीएफ फॉर्मेट में स्कैन करें।",
+      "आवश्यक विनिर्देशों के अनुसार अपनी पासपोर्ट साइज फोटो तैयार रखें।",
+      "12 नवंबर 2026 से पहले दस्तावेज अपलोड और सबमिट करना पूरा करें।",
+      "अंतिम सबमिशन फॉर्म डाउनलोड और प्रिंट करें।"
+    ],
+    "conducted_by_en": "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC)",
+    "conducted_by_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग (यूपीएसएसएससी)",
+    "dates": [
+      {
+        "label_en": "Skill test result declared",
+        "label_hi": "कौशल परीक्षा परिणाम घोषित",
+        "value_en": "22 Jul 2026",
+        "value_hi": "22.07.2026"
+      },
+      {
+        "label_en": "Skill test held on",
+        "label_hi": "कौशल परीक्षा आयोजित",
+        "value_en": "05 Sep 2026 to 16 Sep 2026",
+        "value_hi": "05.09.2026 से 16.09.2026 तक"
+      },
+      {
+        "label_en": "Document upload starts",
+        "label_hi": "दस्तावेज अपलोड प्रारंभ",
+        "value_en": "29 Oct 2026",
+        "value_hi": "29.10.2026"
+      },
+      {
+        "label_en": "Document upload last date",
+        "label_hi": "दस्तावेज अपलोड अंतिम तिथि",
+        "value_en": "12 Nov 2026",
+        "value_hi": "12.11.2026"
+      }
+    ],
+    "documents_en": [
+      "Educational marksheets and certificates",
+      "Category / Reservation certificates",
+      "Recent color photograph (50 KB to 100 KB)",
+      "Valid ID proof and other relevant documents"
+    ],
+    "documents_hi": [
+      "शैक्षणिक अंकपत्र और प्रमाण पत्र",
+      "श्रेणी / आरक्षण प्रमाण पत्र",
+      "नवीनतम रंगीन फोटो (50 केबी से 100 केबी)",
+      "वैध पहचान पत्र और अन्य प्रासंगिक दस्तावेज"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Qualification",
+        "label_hi": "योग्यता",
+        "value_en": "Qualified in Written Exam and Hindi Shorthand & Typing Skill Test for Stenographer Exam 2024",
+        "value_hi": "आशुलिपिक परीक्षा 2024 की लिखित परीक्षा तथा हिंदी आशुलेखन एवं टंकण दक्षता परीक्षा में सफल"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a mandatory process where candidates who qualified the stenography skill test must upload their original educational and category certificates online and fill their department preferences before final selection.",
+        "a_hi": "यह एक अनिवार्य प्रक्रिया है जहां आशुलिपिक कौशल परीक्षा में सफल अभ्यर्थियों को अंतिम चयन से पहले ऑनलाइन अपने मूल शैक्षिक और श्रेणी प्रमाण पत्र अपलोड करने होते हैं और अपनी विभाग वरीयता भरनी होती है।",
+        "q_en": "What is UPSSSC Stenographer Document Verification?",
+        "q_hi": "यूपीएसएसएससी आशुलिपिक अभिलेख परीक्षण क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Photograph size",
+        "label_hi": "फोटो का आकार",
+        "value_en": "50 KB to 100 KB in JPG/JPEG format with light background and neutral expression",
+        "value_hi": "50 केबी से 100 केबी जेपीजी/जेपीईजी फॉर्मेट में, हल्के बैकग्राउंड और सामान्य अभिव्यक्ति के साथ"
+      },
+      {
+        "label_en": "PDF Document size",
+        "label_hi": "पीडीएफ दस्तावेज का आकार",
+        "value_en": "Minimum 200 KB and Maximum 2 MB per PDF file",
+        "value_hi": "न्यूनतम 200 केबी और अधिकतम 2 एमबी प्रति पीडीएफ फाइल"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The last date to upload documents and fill post preferences is 12 November 2026.",
+        "a_hi": "दस्तावेज अपलोड करने और पद वरीयता भरने की अंतिम तिथि 12 नवंबर 2026 है।",
+        "q_en": "What is the last date to upload documents for UPSSSC Stenographer Exam 2024?",
+        "q_hi": "यूपीएसएसएससी आशुलिपिक परीक्षा 2024 के लिए दस्तावेज अपलोड करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "Candidates who have been declared qualified in the Hindi Shorthand and Typing Skill Test for the Stenographer Exam 2024 are eligible.",
+        "a_hi": "आशुलिपिक परीक्षा 2024 की हिंदी आशुलेखन और टंकण दक्षता परीक्षा में सफल घोषित किए गए अभ्यर्थी पात्र हैं।",
+        "q_en": "Who is eligible to upload documents?",
+        "q_hi": "दस्तावेज अपलोड करने के लिए कौन पात्र है?"
+      },
+      {
+        "a_en": "You can log in using your registration number and the OTP received on your registered mobile number or email ID.",
+        "a_hi": "आप अपने पंजीकरण नंबर और अपने पंजीकृत मोबाइल नंबर या ईमेल आईडी पर प्राप्त ओटीपी का उपयोग करके लॉगिन कर सकते हैं।",
+        "q_en": "How can I log in to upload documents?",
+        "q_hi": "मैं दस्तावेज अपलोड करने के लिए कैसे लॉगिन कर सकता हूँ?"
+      },
+      {
+        "a_en": "No, documents will only be accepted through the official website portal https://upsssc.gov.in.",
+        "a_hi": "नहीं, दस्तावेज केवल आधिकारिक वेबसाइट पोर्टल https://upsssc.gov.in के माध्यम से ही स्वीकार किए जाएंगे।",
+        "q_en": "Can I send documents through post or email?",
+        "q_hi": "क्या मैं डाक या ईमेल के माध्यम से दस्तावेज भेज सकता हूँ?"
+      },
+      {
+        "a_en": "The minimum size of the PDF file should be 200 KB and the maximum size should not exceed 2 MB.",
+        "a_hi": "पीडीएफ फाइल का न्यूनतम आकार 200 केबी और अधिकतम आकार 2 एमबी से अधिक नहीं होना चाहिए।",
+        "q_en": "What is the allowed size for uploaded PDF files?",
+        "q_hi": "अपलोड की गई पीडीएफ फाइलों के लिए अनुमति प्राप्त आकार क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "UPSSSC Stenographer Result 2024 – DV & Post Preference Notice",
+    "h1_hi": "यूपीएसएसएससी आशुलिपिक परीक्षा 2024 – डीवी और पोस्ट प्रेफरेंस नोटिस",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Go to the official UPSSSC website at https://upsssc.gov.in.",
+      "Click on the link to upload documents for the Stenographer exam.",
+      "Log in using your registration number and OTP sent to your registered mobile number or email.",
+      "Fill in your department/post preferences online.",
+      "Upload scanned copies of required educational certificates, reservation certificates, and a recent passport-size color photograph as per specifications.",
+      "Verify details, enter the verification code, agree to the declaration, and click Submit.",
+      "Take a printout of the final application form and uploaded documents."
+    ],
+    "how_hi": [
+      "यूपीएसएसएससी की आधिकारिक वेबसाइट https://upsssc.gov.in पर जाएं।",
+      "आशुलिपिक परीक्षा के लिए दस्तावेज अपलोड करने के लिंक पर क्लिक करें।",
+      "अपने पंजीकरण नंबर और पंजीकृत मोबाइल नंबर/ईमेल पर प्राप्त ओटीपी का उपयोग करके लॉगिन करें।",
+      "ऑनलाइन अपने विभाग/पद की वरीयता दर्ज करें।",
+      "आवश्यक शैक्षिक प्रमाण पत्र, आरक्षण प्रमाण पत्र और निर्देशानुसार नवीनतम रंगीन फोटो की स्कैन की गई प्रतियां अपलोड करें।",
+      "विवरण की जांच करें, वेरीफिकेशन कोड दर्ज करें, घोषणा से सहमत हों और सबमिट बटन पर क्लिक करें।",
+      "अंतिम आवेदन पत्र और अपलोड किए गए दस्तावेजों का प्रिंटआउट ले लें।"
+    ],
+    "intro_en": "The Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has announced the document verification and online post preference notice for the Stenographer Main Exam 2024 under Advertisement No. 13-Exam/2024. Out of 10,813 candidates who appeared in the Hindi shorthand and typing skill test, 1,329 candidates have qualified. Shortlisted candidates must fill their post preferences and upload their required certificates and documents on the official website from 29 October 2026 to 12 November 2026.",
+    "intro_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग (यूपीएसएसएससी) ने विज्ञापन संख्या-13-परीक्षा/2024 के अंतर्गत आशुलिपिक मुख्य परीक्षा 2024 के लिए अभिलेख परीक्षण और ऑनलाइन पद वरीयता हेतु सूचना जारी कर दी है। हिंदी आशुलेखन और टंकण दक्षता परीक्षा में उपस्थित 10,813 अभ्यर्थियों में से 1,329 अभ्यर्थियों को सफल घोषित किया गया है। सफल अभ्यर्थी 29 अक्टूबर 2026 से 12 नवंबर 2026 तक आधिकारिक वेबसाइट पर अपने अभिलेख अपलोड कर सकते हैं और पद वरीयता दर्ज कर सकते हैं।",
+    "last_date": "2026-11-12",
+    "mistakes_en": [
+      "Do not wait until the last date to upload documents to avoid server congestion.",
+      "Ensure marksheets and certificates combined into a single PDF do not exceed 2 MB.",
+      "Ensure details in uploaded documents match the information provided in the original application form.",
+      "Do not send documents via email, post, or physical submission, as only online mode is accepted."
+    ],
+    "mistakes_hi": [
+      "सर्वर की भीड़ से बचने के लिए दस्तावेज अपलोड करने के लिए अंतिम तिथि का इंतजार न करें।",
+      "सुनिश्चित करें कि एक ही पीडीएफ में संयुक्त अंकपत्र और प्रमाण पत्र 2 एमबी से अधिक न हों।",
+      "सुनिश्चित करें कि अपलोड किए गए दस्तावेजों में विवरण मूल आवेदन पत्र में दिए गए विवरण से मेल खाते हों।",
+      "ईमेल, डाक या व्यक्तिगत रूप से दस्तावेज न भेजें, क्योंकि केवल ऑनलाइन माध्यम ही स्वीकार्य है।"
+    ],
+    "not_en": [
+      "Candidates who failed to qualify the skill test or fail to upload documents by 12 November 2026."
+    ],
+    "not_hi": [
+      "वे अभ्यर्थी जो कौशल परीक्षा में सफल नहीं हुए हैं या 12 नवंबर 2026 तक दस्तावेज अपलोड करने में विफल रहते हैं।"
+    ],
+    "notice_date": "2026-10-29",
+    "official_site": "https://upsssc.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Stenographer",
+        "value_hi": "आशुलिपिक"
+      },
+      {
+        "label_en": "Total Vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "1224",
+        "value_hi": "1224"
+      },
+      {
+        "label_en": "Skill Test Qualified",
+        "label_hi": "कौशल परीक्षा सफल",
+        "value_en": "1329 candidates",
+        "value_hi": "1329 अभ्यर्थी"
+      },
+      {
+        "label_en": "Document Upload Dates",
+        "label_hi": "दस्तावेज अपलोड तिथियां",
+        "value_en": "29 Oct 2026 to 12 Nov 2026",
+        "value_hi": "29.10.2026 से 12.11.2026 तक"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Written Exam (Main)",
+      "Hindi Shorthand and Typing Skill Test",
+      "Document Verification and Online Post Preference",
+      "Final Selection"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा (मुख्य)",
+      "हिंदी आशुलेखन और टंकण दक्षता परीक्षा",
+      "अभिलेख परीक्षण और ऑनलाइन पद वरीयता",
+      "अंतिम चयन"
+    ],
+    "share_card": {
+      "headline_en": "DV Notice Out",
+      "headline_hi": "डीवी नोटिस जारी",
+      "kind": "job",
+      "line_en": "Stenographer Exam 2024",
+      "line_hi": "आशुलिपिक परीक्षा 2024",
+      "posts": 1224
+    },
+    "status_en": "Document verification and post preference online upload open till 12 Nov 2026",
+    "status_hi": "अभिलेख परीक्षण और ऑनलाइन पद वरीयता हेतु दस्तावेज अपलोड 12 नवंबर 2026 तक खुले हैं",
+    "summary_en": "UPSSSC has released the skill test result and notice for document verification and online post preference for the Stenographer Exam 2024. Qualified candidates can upload their documents online from 29 October 2026 to 12 November 2026.",
+    "summary_hi": "यूपीएसएसएससी ने आशुलिपिक परीक्षा 2024 के लिए टंकण परीक्षा परिणाम और अभिलेख परीक्षण तथा ऑनलाइन पद वरीयता हेतु सूचना जारी कर दी है। सफल अभ्यर्थी 29.10.2026 से 12.11.2026 तक अपने अभिलेख अपलोड कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Various departments under UP Government",
+        "detail_hi": "उत्तर प्रदेश सरकार के विभिन्न विभाग",
+        "post_en": "Stenographer",
+        "post_hi": "आशुलिपिक",
+        "total": "1224"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates who qualified the Hindi Shorthand and Typing Skill Test for UPSSSC Stenographer Exam 2024."
+    ],
+    "who_hi": [
+      "वे अभ्यर्थी जो यूपीएसएसएससी आशुलिपिक परीक्षा 2024 की हिंदी आशुलेखन और टंकण दक्षता परीक्षा में सफल हुए हैं।"
+    ]
+  },
   "pdf": {
     "bytes": 953559,
     "pages": 3,
@@ -37,6 +288,7 @@
   "qual": [
     "12th"
   ],
+  "slug": "upsssc-stenographer-result-2024-dv-post-preference-notice",
   "source_id": "upsssc-home",
   "status": "approved",
   "title": "",
