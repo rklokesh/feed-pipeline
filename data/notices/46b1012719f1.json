@@ -4,18 +4,19 @@
   "card": {
     "confidence": "high",
     "exam_date": null,
-    "last_date": null,
+    "last_date": "2026-11-03",
     "list": true,
     "posts": "Senior Teacher",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
     "summary_en": "RPSC has opened a second opportunity for shortlisted candidates of Social Science and Hindi subjects to submit their online detailed application form from October 30, 2026 to November 3, 2026.",
     "summary_hi": "आरपीएससी ने सामाजिक विज्ञान और हिंदी विषयों के शॉर्टलिस्ट किए गए अभ्यर्थियों के लिए 30 अक्टूबर 2026 से 3 नवंबर 2026 तक ऑनलाइन विस्तृत आवेदन पत्र जमा करने का दूसरा अवसर प्रदान किया है।",
-    "title_en": "RPSC Sr Teacher 2025 Detailed Application Notice",
-    "title_hi": "आरपीएससी वरिष्ठ अध्यापक परीक्षा विस्तृत आवेदन नोटिस",
+    "title_en": "RPSC Sr Teacher 2025 Detailed Application Form – Second Chance Notice",
+    "title_hi": "आरपीएससी वरिष्ठ अध्यापक 2025 विस्तृत आवेदन पत्र – दूसरा अवसर नोटिस",
     "type": "Update",
     "vacancies": null
   },
+  "editor_notes": [],
   "exam": {},
   "extraction": {
     "ai": null
@@ -26,7 +27,215 @@
   "issue": 1020,
   "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-10-28",
   "org": "RPSC",
+  "page": {
+    "after_en": [
+      "Scrutiny of eligibility by the Commission based on the submitted detailed application form.",
+      "Further stages of recruitment as per RPSC guidelines."
+    ],
+    "after_hi": [
+      "प्रस्तुत विस्तृत आवेदन पत्र के आधार पर आयोग द्वारा पात्रता की संवीक्षा।",
+      "आरपीएससी के दिशा-निर्देशों के अनुसार भर्ती के अगले चरण।"
+    ],
+    "age": [],
+    "apply_start": "2026-10-30",
+    "apply_url": "https://rpsc.rajasthan.gov.in/",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check your roll number in the list published on the RPSC website.",
+      "Keep required documents ready.",
+      "Submit the detailed application form before 03 Nov 2026."
+    ],
+    "checklist_hi": [
+      "आरपीएससी वेबसाइट पर जारी सूची में अपना रोल नंबर जांचें।",
+      "आवश्यक दस्तावेज तैयार रखें।",
+      "03 नवंबर 2026 से पहले विस्तृत आवेदन पत्र जमा करें।"
+    ],
+    "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
+    "conducted_by_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी)",
+    "dates": [
+      {
+        "label_en": "Social Science initial apply dates",
+        "label_hi": "सामाजिक विज्ञान प्रारंभिक आवेदन तिथियां",
+        "value_en": "15 Oct 2026 to 21 Oct 2026",
+        "value_hi": "15 अक्टूबर 2026 से 21 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Hindi initial apply dates",
+        "label_hi": "हिंदी प्रारंभिक आवेदन तिथियां",
+        "value_en": "17 Oct 2026 to 23 Oct 2026",
+        "value_hi": "17 अक्टूबर 2026 से 23 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Second chance apply start date",
+        "label_hi": "दूसरे अवसर के आवेदन की प्रारंभ तिथि",
+        "value_en": "30 Oct 2026",
+        "value_hi": "30 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Second chance apply last date",
+        "label_hi": "दूसरे अवसर के आवेदन की अंतिम तिथि",
+        "value_en": "03 Nov 2026 (11:59 PM)",
+        "value_hi": "03 नवंबर 2026 (रात्रि 11:59 बजे तक)"
+      }
+    ],
+    "documents_en": [
+      "Educational qualification certificates",
+      "Identity proof",
+      "Category certificates if applicable"
+    ],
+    "documents_hi": [
+      "शैक्षणिक योग्यता प्रमाण पत्र",
+      "पहचान प्रमाण",
+      "श्रेणी प्रमाण पत्र यदि लागू हो"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Status",
+        "label_hi": "स्थिति",
+        "value_en": "Shortlisted candidates included in the consideration list for Social Science and Hindi subjects",
+        "value_hi": "सामाजिक विज्ञान और हिंदी विषयों की विचारित सूची में शामिल शॉर्टलिस्ट किए गए अभ्यर्थी"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a notification giving a final second chance to shortlisted candidates of Social Science and Hindi subjects who missed filling out their online detailed application forms during the original schedule.",
+        "a_hi": "यह सामाजिक विज्ञान और हिंदी विषयों के उन शॉर्टलिस्ट किए गए अभ्यर्थियों को अंतिम दूसरा अवसर देने के लिए एक अधिसूचना है, जो मूल कार्यक्रम के दौरान अपने ऑनलाइन विस्तृत आवेदन पत्र भरने से चूक गए थे।",
+        "q_en": "What is the RPSC Sr. Teacher Detailed Application Notice?",
+        "q_hi": "आरपीएससी वरिष्ठ अध्यापक विस्तृत आवेदन नोटिस क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "Only those shortlisted candidates of Social Science and Hindi subjects whose roll numbers are listed and who missed submitting their detailed form earlier can apply.",
+        "a_hi": "केवल सामाजिक विज्ञान और हिंदी विषयों के वे शॉर्टलिस्ट किए गए अभ्यर्थी जिनके रोल नंबर सूचीबद्ध हैं और जो पहले अपना विस्तृत फॉर्म जमा करने से चूक गए थे, आवेदन कर सकते हैं।",
+        "q_en": "Who can apply for this second chance detailed application?",
+        "q_hi": "इस दूसरे अवसर के विस्तृत आवेदन के लिए कौन आवेदन कर सकता है?"
+      },
+      {
+        "a_en": "The last date to submit the online detailed application form is 03 November 2026 up to 11:59 PM.",
+        "a_hi": "ऑनलाइन विस्तृत आवेदन पत्र जमा करने की अंतिम तिथि 03 नवंबर 2026 रात्रि 11:59 बजे तक है।",
+        "q_en": "What is the last date to submit the detailed application form?",
+        "q_hi": "विस्तृत आवेदन पत्र जमा करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "No, the commission has stated that no other opportunity will be provided to fill the online detailed application form.",
+        "a_hi": "नहीं, आयोग ने स्पष्ट किया है कि ऑनलाइन विस्तृत आवेदन पत्र भरने का कोई अन्य अवसर प्रदान नहीं किया जाएगा।",
+        "q_en": "Will there be any other opportunity to fill the form?",
+        "q_hi": "क्या फॉर्म भरने का कोई अन्य अवसर मिलेगा?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "RPSC Sr Teacher 2025 Detailed Application Form – Second Chance Notice",
+    "h1_hi": "आरपीएससी वरिष्ठ अध्यापक 2025 विस्तृत आवेदन पत्र – दूसरा अवसर नोटिस",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official RPSC website.",
+      "Log in to your account through the recruitment portal.",
+      "Fill out the online detailed application form for Sr. Teacher Comp. Exam - 2025.",
+      "Submit the form on or before 03 November 2026 (11:59 PM)."
+    ],
+    "how_hi": [
+      "आरपीएससी की आधिकारिक वेबसाइट पर जाएं।",
+      "भर्ती पोर्टल के माध्यम से अपने खाते में लॉगिन करें।",
+      "वरिष्ठ अध्यापक प्रतियोगी परीक्षा - 2025 के लिए ऑनलाइन विस्तृत आवेदन पत्र भरें।",
+      "03 नवंबर 2026 (रात्रि 11:59 बजे तक) या उससे पहले फॉर्म जमा करें।"
+    ],
+    "intro_en": "The Rajasthan Public Service Commission (RPSC) has issued a press note regarding the online detailed application form for the Senior Teacher (Secondary Education) Competitive Examination, 2025 for Social Science and Hindi subjects. A total of 31 candidates in Social Science and 115 candidates in Hindi failed to submit their online detailed application forms during the initial period. RPSC has now granted a final second opportunity for these candidates to fill and submit their forms between October 30, 2026, and November 3, 2026 (up to 11:59 PM). No further opportunities will be provided.",
+    "intro_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी) ने माध्यमिक शिक्षा विभाग हेतु वरिष्ठ अध्यापक प्रतियोगी परीक्षा, 2025 के अंतर्गत सामाजिक विज्ञान एवं हिंदी विषयों के लिए ऑनलाइन विस्तृत आवेदन पत्र के संबंध में एक प्रेस नोट जारी किया है। सामाजिक विज्ञान के 31 और हिंदी के 115 अभ्यर्थियों द्वारा निर्धारित अवधि के दौरान अपना ऑनलाइन विस्तृत आवेदन पत्र भरकर प्रस्तुत नहीं किया गया था। आरपीएससी ने अब ऐसे अभ्यर्थियों को अपना ऑनलाइन विस्तृत आवेदन पत्र 30 अक्टूबर 2026 से 3 नवंबर 2026 (रात्रि 11:59 बजे तक) भरने और प्रस्तुत करने का दूसरा अंतिम अवसर प्रदान किया है। इसके बाद कोई अन्य अवसर प्रदान नहीं किया जाएगा।",
+    "last_date": "2026-11-03",
+    "mistakes_en": [
+      "Do not wait until the last date to submit the online detailed application form.",
+      "Ensure all details are correctly filled as no further opportunities will be provided."
+    ],
+    "mistakes_hi": [
+      "ऑनलाइन विस्तृत आवेदन पत्र जमा करने के लिए अंतिम तिथि का इंतजार न करें।",
+      "सुनिश्चित करें कि सभी विवरण सही ढंग से भरे गए हैं क्योंकि कोई अन्य अवसर प्रदान नहीं किया जाएगा।"
+    ],
+    "not_en": [
+      "Candidates not included in the initial consideration list.",
+      "Candidates who fail to submit the form by 03 November 2026 will not be considered in the selection process."
+    ],
+    "not_hi": [
+      "प्रारंभिक विचारित सूची में शामिल न होने वाले अभ्यर्थी।",
+      "जो अभ्यर्थी 03 नवंबर 2026 तक फॉर्म जमा करने में विफल रहते हैं, उन्हें चयन प्रक्रिया में शामिल नहीं किया जाएगा।"
+    ],
+    "notice_date": "2026-10-28",
+    "official_site": "https://rpsc.rajasthan.gov.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post name",
+        "label_hi": "पद का नाम",
+        "value_en": "Senior Teacher (Secondary Education) - 2025",
+        "value_hi": "वरिष्ठ अध्यापक (माध्यमिक शिक्षा) - 2025"
+      },
+      {
+        "label_en": "Subjects",
+        "label_hi": "विषय",
+        "value_en": "Social Science and Hindi",
+        "value_hi": "सामाजिक विज्ञान एवं हिंदी"
+      },
+      {
+        "label_en": "Detailed Form Dates",
+        "label_hi": "विस्तृत फॉर्म की तिथियां",
+        "value_en": "30 Oct 2026 to 03 Nov 2026",
+        "value_hi": "30 अक्टूबर 2026 से 03 नवंबर 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Written Examination",
+      "Eligibility checking through online detailed application form",
+      "Final Selection"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा",
+      "ऑनलाइन विस्तृत आवेदन पत्र के माध्यम से पात्रता जांच",
+      "अंतिम चयन"
+    ],
+    "share_card": {
+      "headline_en": "Detailed Form Notice",
+      "headline_hi": "विस्तृत आवेदन नोटिस",
+      "kind": "job",
+      "line_en": "Sr Teacher (Sec. Edu.) 2025",
+      "line_hi": "वरिष्ठ अध्यापक (माध्यमिक शिक्षा) 2025",
+      "posts": null
+    },
+    "status_en": "Detailed application second chance notice released",
+    "status_hi": "विस्तृत आवेदन के लिए दूसरा अवसर नोटिस जारी",
+    "summary_en": "RPSC has provided a second opportunity for shortlisted candidates of Social Science and Hindi subjects to submit their online detailed application form from October 30, 2026 to November 3, 2026. Candidates who failed to apply earlier must submit their forms within this period.",
+    "summary_hi": "आरपीएससी ने सामाजिक विज्ञान और हिंदी विषयों के शॉर्टलिस्ट किए गए अभ्यर्थियों के लिए 30 अक्टूबर 2026 से 3 नवंबर 2026 तक ऑनलाइन विस्तृत आवेदन पत्र जमा करने का दूसरा अवसर प्रदान किया है। जिन अभ्यर्थियों ने पहले आवेदन नहीं किया था, वे इस अवधि के भीतर अपने फॉर्म जमा करें।",
+    "vacancies": [
+      {
+        "detail_en": "Candidates who missed initial submission",
+        "detail_hi": "प्रारंभिक सबमिशन से चूकने वाले अभ्यर्थी",
+        "post_en": "Senior Teacher (Social Science)",
+        "post_hi": "वरिष्ठ अध्यापक (सामाजिक विज्ञान)",
+        "total": "31"
+      },
+      {
+        "detail_en": "Candidates who missed initial submission",
+        "detail_hi": "प्रारंभिक सबमिशन से चूकने वाले अभ्यर्थी",
+        "post_en": "Senior Teacher (Hindi)",
+        "post_hi": "वरिष्ठ अध्यापक (हिंदी)",
+        "total": "115"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Shortlisted candidates for RPSC Sr. Teacher Exam 2025 (Social Science and Hindi) who missed submitting their detailed form earlier."
+    ],
+    "who_hi": [
+      "आरपीएससी वरिष्ठ अध्यापक परीक्षा 2025 (सामाजिक विज्ञान और हिंदी) के वे शॉर्टलिस्ट किए गए अभ्यर्थी जिन्होंने पहले अपना विस्तृत फॉर्म जमा नहीं किया था।"
+    ]
+  },
   "pdf": {
     "bytes": 107800,
     "pages": 1,
@@ -37,6 +246,7 @@
   "qual": [
     "graduate"
   ],
+  "slug": "rpsc-sr-teacher-2025-detailed-application-form-second-chance-not",
   "source_id": "rpsc-home",
   "status": "approved",
   "title": "29/10/2026 Press Note Regarding Online Detailed Application Form for Sr. Teacher (Sec. Edu.) Comp. Exam - 2025 (Social Science, Hindi)",
