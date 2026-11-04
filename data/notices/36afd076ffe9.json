@@ -1,17 +1,35 @@
 {
+  "auto_published": true,
   "board_url": "https://www.ibps.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-11-12",
+    "list": true,
+    "posts": "Server Administrator, Assistant, Programming Assistant",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Institute of Banking Personnel Selection invites online applications for direct recruitment to Server Administrator, Assistant and Programming Assistant posts. Eligible candidates can apply online by 12 November 2026.",
+    "summary_hi": "इंस्टीट्यूट ऑफ बैंकिंग पर्सोनेल सिलेक्शन ने सर्वर प्रशासक, सहायक और प्रोग्रामिंग सहायक पदों पर सीधी भर्ती के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 12 नवंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "title_en": "IBPS Server Administrator, Assistant and Programming Assistant Recruitment 2026",
+    "title_hi": "आईबीपीएस सर्वर प्रशासक, सहायक और प्रोग्रामिंग सहायक भर्ती 2026",
+    "type": "Job",
+    "vacancies": null
+  },
   "fields": {},
   "first_seen": "2026-11-03T16:16:29+00:00",
   "id": "36afd076ffe9",
+  "issue": 1018,
+  "issue_tidy": true,
   "kind": "notification",
   "org": "IBPS",
   "pdf": {
     "error": "SSLError: HTTPSConnectionPool(host='www.ibps.in', port=443): Max retries exceeded with url: /wp-content/uploads/Advertisement-for-Server-Administrator-Programming-Assistant-and-Assistant-Oct._Nov.-202",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-03T23:41:13Z",
   "source_id": "ibps-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "IBPS Advertisement Posted on 29 Oct, 2026",
   "url": "https://www.ibps.in/wp-content/uploads/Advertisement-for-Server-Administrator-Programming-Assistant-and-Assistant-Oct._Nov.-2026.pdf"
 }

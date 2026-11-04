@@ -1,12 +1,29 @@
 {
+  "auto_published": true,
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Stenographer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "UPSSSC has announced the stenographer skill test results and started the document uploading process for eligible candidates from October 28 to November 11, 2026.",
+    "summary_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग ने आशुलिपिक टंकण दक्षता परीक्षा का परिणाम घोषित कर दिया है तथा सफल अभ्यर्थी 28 अक्टूबर से 11 नवंबर 2026 तक अपने अभिलेख अपलोड कर सकते हैं।",
+    "title_en": "UPSSSC Stenographer 2023 Skill Test Result and Document Upload Notice",
+    "title_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग आशुलिपिक मुख्य परीक्षा परिणाम एवं अभिलेख अपलोड सूचना",
+    "type": "Update",
+    "vacancies": 333
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-28T13:18:33+00:00",
   "id": "5940941e3af7",
+  "issue": 1021,
+  "issue_tidy": true,
   "kind": "other",
   "org": "UPSSSC",
   "pdf": {
@@ -15,8 +32,9 @@
     "sha256": "6c9130beba1870ca28811d5db8d8cbdeaa3c2664f1d672b16c09d1bbae5de4dc",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-03T23:41:34Z",
   "source_id": "upsssc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?RBnrgi6ru/ycE0xIsinJjCWz6C3wn3kCvpnTLWyGSnE="
 }

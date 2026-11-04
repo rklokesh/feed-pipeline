@@ -1,12 +1,29 @@
 {
+  "auto_published": true,
   "board_url": "https://nta.ac.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "RMS CET 2026",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Candidates who applied for the Rashtriya Military School Common Entrance Test 2026 can correct their application form details by 28 October 2026.",
+    "summary_hi": "राष्ट्रीय मिलिट्री स्कूल कॉमन एंट्रेंस टेस्ट 2026 के लिए आवेदन करने वाले उम्मीदवार 28 अक्टूबर 2026 तक अपने आवेदन पत्र में सुधार कर सकते हैं।",
+    "title_en": "RMS CET 2026 Application Form Correction",
+    "title_hi": "राष्ट्रीय मिलिट्री स्कूल प्रवेश परीक्षा 2026 आवेदन पत्र सुधार",
+    "type": "Admission",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-27T08:51:10+00:00",
   "id": "c53dedee6068",
+  "issue": 1024,
+  "issue_tidy": true,
   "kind": "notification",
   "org": "NTA",
   "pdf": {
@@ -15,8 +32,9 @@
     "sha256": "588e5ef8b1e7658e1874f288523994bf5c3c48b99eaf2ace84c6400fe8061846",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-03T23:42:09Z",
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Correction in Particulars of the Online Application Form of Rashtriya Military School Common Entrance Test (RMS CET) 2026 -Reg. Read More",
   "url": "https://nta.ac.in/Download/Notice/Notice_20261027133408.pdf"
 }

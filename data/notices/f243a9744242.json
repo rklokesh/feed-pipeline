@@ -1,13 +1,30 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://sssc.uk.gov.in/recruitment-notification/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-01",
+    "last_date": null,
+    "list": true,
+    "posts": "Tourist Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Uttarakhand Subordinate Service Selection Commission has released the admit card for the Tourist Officer written examination scheduled for 1 November 2026.",
+    "summary_hi": "उत्तराखंड अधीनस्थ सेवा चयन आयोग ने 1 नवंबर 2026 को होने वाली पर्यटक अधिकारी लिखित परीक्षा के लिए प्रवेश पत्र जारी कर दिया है।",
+    "title_en": "UKSSSC Tourist Officer Exam Admit Card 2026",
+    "title_hi": "यूकेएसएसएससी पर्यटक अधिकारी परीक्षा प्रवेश पत्र 2026",
+    "type": "Admit card",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-03T16:16:29+00:00",
   "id": "f243a9744242",
+  "issue": 1029,
+  "issue_tidy": true,
   "kind": "other",
   "org": "UKSSSC",
   "pdf": {
@@ -16,8 +33,9 @@
     "sha256": "8287186975c4f215e5ef5e71f3f2cdee71b0f480cf0301e015c1343525b42a3d",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-03T23:42:59Z",
   "source_id": "uksssc-recruitment",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Accessible Version : View (1 MB)",
   "url": "https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/10/202610251345667448.pdf"
 }

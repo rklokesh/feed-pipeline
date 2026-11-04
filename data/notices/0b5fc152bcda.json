@@ -204,5 +204,12 @@
   "source_id": "cgpsc-results",
   "status": "approved",
   "title": "STATE_SERVICE_EXAMINATION-2025_MAINS_WRITTEN_EXAM_RESULT (31-08-2026)",
-  "url": "https://psc.cg.gov.in/PDFs/Result/STATE_SERVICE_EXAMINATION-2025_MAINS_WRITTEN_EXAM_RESULT (31-08-2026).pdf"
+  "url": "https://psc.cg.gov.in/PDFs/Result/STATE_SERVICE_EXAMINATION-2025_MAINS_WRITTEN_EXAM_RESULT (31-08-2026).pdf",
+  "verify": {
+    "at": "2026-11-04",
+    "missing": [
+      "Exam date: 2026-06-06"
+    ],
+    "tries": 1
+  }
 }

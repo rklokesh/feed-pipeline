@@ -1,12 +1,29 @@
 {
+  "auto_published": true,
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Stenographer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "UPSSSC has released the skill test result and notice for document verification and online post preference for the Stenographer Exam 2024. Qualified candidates can upload their documents from 29.10.2026 to 12.11.2026.",
+    "summary_hi": "यूपीएसएसएससी ने आशुलिपिक परीक्षा 2024 के लिए टंकण परीक्षा परिणाम और अभिलेख परीक्षण तथा ऑनलाइन पद वरीयता हेतु सूचना जारी कर दी है। सफल अभ्यर्थी 29.10.2026 से 12.11.2026 तक अपने अभिलेख अपलोड कर सकते हैं।",
+    "title_en": "UPSSSC Stenographer Exam 2024 Document Verification Notice",
+    "title_hi": "यूपीएसएसएससी आशुलिपिक परीक्षा 2024 अभिलेख परीक्षण सूचना",
+    "type": "Update",
+    "vacancies": 1224
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-29T11:56:12+00:00",
   "id": "44d84f5ca4f1",
+  "issue": 1019,
+  "issue_tidy": true,
   "kind": "other",
   "org": "UPSSSC",
   "pdf": {
@@ -15,8 +32,9 @@
     "sha256": "d6a74e95047076a177ba4ea1a2b560f8b672d2e543610e206351327898dd45a1",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-03T23:41:20Z",
   "source_id": "upsssc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?RBnrgi6ru/wKufNF4bNYm3CoPuyVCIW8vBW4jhpFJ+0="
 }

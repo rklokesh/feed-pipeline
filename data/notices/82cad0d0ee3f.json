@@ -1,12 +1,28 @@
 {
+  "auto_published": true,
   "board_url": "https://bpsc.bihar.gov.in/",
-  "card": null,
+  "card": {
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant Professor",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "BPSC has cancelled advertisements 04/2025 to 28/2025 for Assistant Professor posts as the requisition was withdrawn by the Health Department. A new advertisement will be issued later.",
+    "summary_hi": "बिहार लोक सेवा आयोग ने स्वास्थ्य विभाग द्वारा अधियाचना वापस लेने के कारण सहायक प्राध्यापक पदों के लिए विज्ञापन संख्या 04/2025 से 28/2025 को रद्द कर दिया है। नया विज्ञापन बाद में जारी किया जाएगा।",
+    "title_en": "BPSC Assistant Professor Medical College Vacancies Cancelled",
+    "title_hi": "बिहार लोक सेवा आयोग सहायक प्राध्यापक चिकित्सा महाविद्यालय विज्ञापन रद्द",
+    "type": "Update",
+    "vacancies": 1741
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-29T12:02:31+00:00",
   "id": "82cad0d0ee3f",
+  "issue": 1023,
+  "issue_tidy": true,
   "kind": "notification",
   "org": "BPSC",
   "pdf": {
@@ -15,8 +31,9 @@
     "sha256": "8a9877b226b897777ca33358aae49636a57a9487f835dae7ab6373c8c5791065",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-03T23:42:02Z",
   "source_id": "bpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Important Notice:- Advertisement for the Posts of Assistant Professor in various Departments (Speciality) of State Medical College & Hospitals has been cancelled. (Advt. Nos. 04/2025 to 28/2025)",
   "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Important-Notice-04-282025-Advertisement-cancelled_BPSC-20261029-wh9ep8.pdf"
 }

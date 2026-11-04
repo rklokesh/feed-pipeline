@@ -1,7 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://licindia.in/careers",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "This is a certificate of registration for LIC as a Point of Presence with PFRDA, not a government job or recruitment notice.",
+    "summary_en": "LIC has received the certificate of registration as a Point of Presence with PFRDA for the National Pension System.",
+    "summary_hi": "भारतीय जीवन बीमा निगम को राष्ट्रीय पेंशन प्रणाली के लिए पीएफआरडीए के साथ उपस्थिति अस्तित्व के रूप में पंजीकरण प्रमाणपत्र प्राप्त हुआ है।",
+    "title_en": "LIC PFRDA Point of Presence Certificate of Registration",
+    "title_hi": "भारतीय जीवन बीमा निगम पीएफआरडीए पंजीकरण प्रमाणपत्र",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -17,7 +31,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "lic-careers",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Certificate of Registration (PoP) with PFRDA",
   "url": "https://licindia.in/documents/d/guest/certificate-of-registration-pop"
 }

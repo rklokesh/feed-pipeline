@@ -1,18 +1,36 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://www.ibps.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Specialist Officers (IT, Agricultural Field Officer, Rajbhasha Adhikari, Law Officer, HR, Marketing)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "IBPS has issued a clarification notice regarding PwBD category candidate eligibility and functional requirements for the CRP SPL-XVI recruitment.",
+    "summary_hi": "आईबीपीएस ने सीआरपी एसपीएल-16 भर्ती के लिए दिव्यांग श्रेणी के उम्मीदवारों की पात्रता और कार्यात्मक आवश्यकताओं के संबंध में स्पष्टीकरण नोटिस जारी किया है।",
+    "title_en": "IBPS CRP SPL-XVI Specialist Officers PwBD Eligibility Notice 2026",
+    "title_hi": "आईबीपीएस सीआरपी एसपीएल-सोलह विशेष अधिकारी दिव्यांग श्रेणी पात्रता सूचना 2026",
+    "type": "Update",
+    "vacancies": null
+  },
   "fields": {},
   "first_seen": "2026-10-27T22:24:34+00:00",
   "id": "11f0e8df8638",
+  "issue": 1016,
+  "issue_tidy": true,
   "kind": "other",
   "org": "IBPS",
   "pdf": {
     "error": "SSLError: HTTPSConnectionPool(host='www.ibps.in', port=443): Max retries exceeded with url: /wp-content/uploads/Notice-clarification-for-PwD.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: ",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-03T23:40:59Z",
   "source_id": "ibps-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "12 Aug 2026 Important Notice dated 12.08.2026 for PwBD Category Candidates for CRP SPL-XVI",
   "url": "https://www.ibps.in/wp-content/uploads/Notice-clarification-for-PwD.pdf"
 }

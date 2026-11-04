@@ -1,13 +1,30 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://sssc.uk.gov.in/document-category/result-answer-keys/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-10-11",
+    "last_date": null,
+    "list": true,
+    "posts": "सहायक कृषि अधिकारी वर्ग-01/03, चारा सहायक ग्रुप-03",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "UKSSSC has released the provisional answer key for the written exam held on October 11, 2026. Candidates can submit online objections till October 27, 2026.",
+    "summary_hi": "उत्तराखण्ड अधीनस्थ सेवा चयन आयोग ने 11 अक्टूबर 2026 को आयोजित लिखित परीक्षा के लिए औपबंधिक उत्तर-कुंजी जारी कर दी है। अभ्यर्थी 27 अक्टूबर 2026 तक ऑनलाइन आपत्ति दर्ज करा सकते हैं।",
+    "title_en": "UKSSSC Assistant Agriculture Officer and Other Posts Answer Key 2026",
+    "title_hi": "उत्तराखण्ड अधीनस्थ सेवा चयन आयोग सहायक कृषि अधिकारी और अन्य पद उत्तर कुंजी 2026",
+    "type": "Answer key",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-03T16:16:29+00:00",
   "id": "dc057b51f451",
+  "issue": 1026,
+  "issue_tidy": true,
   "kind": "other",
   "org": "UKSSSC",
   "pdf": {
@@ -16,8 +33,9 @@
     "sha256": "0ecbced0cd62e87b7f63fe22b36ba8fc1fa4aabb345b7271a06376483255afe3",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-03T23:42:23Z",
   "source_id": "uksssc-results",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Accessible Version : View (1 MB)",
   "url": "https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/10/202610231635461748.pdf"
 }

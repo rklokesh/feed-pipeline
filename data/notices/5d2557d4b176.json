@@ -1,7 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://www.jpsc.gov.in/uni_notice.php",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal rule notice regarding RTI and re-totaling timeframes, not a recruitment or job notice",
+    "summary_en": "Jharkhand Public Service Commission has issued a notice stating that requests for re-totaling or perusal of answer scripts must be made within 60 days of result publication.",
+    "summary_hi": "झारखंड लोक सेवा आयोग ने एक सूचना जारी कर कहा है कि उत्तर पुस्तिका के पुनर्मूल्यांकन या अवलोकन के लिए परिणाम प्रकाशन के 60 दिनों के भीतर आवेदन करना होगा।",
+    "title_en": "JPSC Rules on Answer Script Perusal",
+    "title_hi": "झारखंड लोक सेवा आयोग उत्तर पुस्तिका अवलोकन नियम",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -17,7 +31,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "jpsc-notices",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Public Notice",
   "url": "https://www.jpsc.gov.in/data/RTI Related Information-60 Days.pdf"
 }

@@ -1,13 +1,30 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Junior Assistant, Junior Clerk, Assistant Grade-III",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Department allocation for the final selected candidates of the Junior Assistant and Clerk main exam 2023 has been released. Candidates can check their allotted department on the official website.",
+    "summary_hi": "कनिष्ठ सहायक एवं लिपिक मुख्य परीक्षा 2023 के अंतिम चयनित अभ्यर्थियों के लिए विभाग आवंटन जारी कर दिया गया है। अभ्यर्थी आधिकारिक वेबसाइट पर अपना आवंटित विभाग देख सकते हैं।",
+    "title_en": "UPSSSC Junior Assistant and Clerk Advt 08-Exam/2023 Department Allocation",
+    "title_hi": "यूपीएसएसएससी कनिष्ठ सहायक एवं लिपिक विज्ञापन 08-परीक्षा/2023 विभाग आवंटन",
+    "type": "Result",
+    "vacancies": 5339
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-27T22:24:34+00:00",
   "id": "e96850fd14d9",
+  "issue": 1027,
+  "issue_tidy": true,
   "kind": "other",
   "org": "UPSSSC",
   "pdf": {
@@ -16,8 +33,9 @@
     "sha256": "44a9a4f2850eaf89bf6179557805d96af99401c104f4acd9132d4e7bed541492",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-03T23:42:30Z",
   "source_id": "upsssc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?evFXMMW2wlJXFv66E9dR/2aD2Xa9BYuPahAGjQZmFX8="
 }
