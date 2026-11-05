@@ -274,7 +274,7 @@ html[lang="hi"] .hidet { display: none; }
 .fback { display: none; }
 @media (max-width: 640px) {
   .fback { display: grid; place-items: center; position: fixed; z-index: 40; width: 44px; height: 44px; border-radius: 50%;
-    top: calc(env(safe-area-inset-top, 0px) + 12px); right: max(12px, env(safe-area-inset-right, 0px));
+    top: calc(env(safe-area-inset-top, 0px) + 12px); left: max(12px, env(safe-area-inset-left, 0px));
     color: var(--ink); background: color-mix(in srgb, var(--page) 55%, transparent);
     -webkit-backdrop-filter: blur(18px) saturate(180%); backdrop-filter: blur(18px) saturate(180%);
     border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
@@ -668,7 +668,7 @@ html[lang="hi"] .hidet { display: none; }
 <script src="/elig.js" defer></script>
 <a class="fback" id="fback" href="/" data-t-aria="allNotices" aria-label="All notices"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6C15 6 9 10.4189 9 12C9 13.5812 15 18 15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 <script>(function(){
-  // Phones: a round glass back button stays in the top corner once the page header has scrolled away.
+  // Phones: a round glass back button stays in the top-left corner once the page header has scrolled away.
   var b=document.getElementById("fback"),h=document.querySelector("header.top");
   if(h&&"IntersectionObserver"in window)new IntersectionObserver(function(e){b.classList.toggle("on",!e[0].isIntersecting)}).observe(h);
   b.addEventListener("click",function(ev){
