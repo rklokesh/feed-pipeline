@@ -1,20 +1,6 @@
 {
   "board_url": "https://rpsc.rajasthan.gov.in/",
-  "card": {
-    "confidence": "high",
-    "exam_date": "2026-10-23",
-    "last_date": null,
-    "list": false,
-    "posts": "Senior Scientific Officer",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "Question paper document, not a job vacancy, result, admit card, or answer key",
-    "summary_en": "View the question paper for the Senior Scientific Officer 2026 examination in the Toxicology Division.",
-    "summary_hi": "टॉक्सिकोलॉजी डिवीजन में सीनियर साइंटिफिक ऑफिसर 2026 परीक्षा के लिए प्रश्न पत्र देखें।",
-    "title_en": "RPSC Senior Scientific Officer Toxicology Division Question Paper 2026",
-    "title_hi": "आरपीएससी सीनियर साइंटिफिक ऑफिसर टॉक्सिकोलॉजी डिवीजन प्रश्न पत्र 2026",
-    "type": "Answer key",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -27,10 +13,10 @@
     "bytes": 11733155,
     "pages": 32,
     "sha256": "56dc99ac4743551e6e9e629da37287a937e6c0000ae2ba4aaf64b5264def10f0",
-    "text_kind": "scanned"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "rpsc-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "23/10/2026 Question Paper for Sr. Scientific Officer - 2026 (Toxicology Division)",
   "url": "https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/562BB132-0902-4007-BE62-D7CB83BC5C46.pdf"
 }

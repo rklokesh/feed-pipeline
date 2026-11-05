@@ -1,20 +1,6 @@
 {
   "board_url": "https://rpsc.rajasthan.gov.in/",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "Senior Scientific Officer",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "Previous year question paper, not a job vacancy, result, admit card, or answer key",
-    "summary_en": "Question paper for the Senior Scientific Officer - 2025 (DNA Division) examination conducted by RPSC.",
-    "summary_hi": "आरपीएससी द्वारा आयोजित सीनियर साइंटिफिक ऑफिसर - 2025 (डीएनए डिवीजन) परीक्षा का प्रश्न पत्र।",
-    "title_en": "RPSC Senior Scientific Officer DNA Division Question Paper 2025",
-    "title_hi": "आरपीएससी सीनियर साइंटिफिक ऑफिसर डीएनए डिवीजन प्रश्न पत्र 2025",
-    "type": "Answer key",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -27,10 +13,10 @@
     "bytes": 15704323,
     "pages": 40,
     "sha256": "fd2641f201a7cab8ed362125158c8f50f361aff4cbae5d2139adee309e98cb84",
-    "text_kind": "scanned"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "rpsc-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "23/10/2026 Question Paper for Senior Scientific Officer - 2025 (DNA Division)",
   "url": "https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/05E5DB49-2245-4C8B-881C-910B31B7047B.pdf"
 }

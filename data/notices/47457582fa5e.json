@@ -1,21 +1,7 @@
 {
   "baseline_sample": true,
   "board_url": "https://rrcnr.org/",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "Level-1 Posts",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "Internal notice regarding Document Verification and Medical Examination for an existing recruitment, not a new job, result, admit card, or answer key.",
-    "summary_en": "Notice regarding document verification and medical examination for Level-1 posts under CEN No. 08/2024.",
-    "summary_hi": "सीईएन संख्या 08/2024 के तहत लेवल-1 पदों के लिए दस्तावेज सत्यापन और चिकित्सा परीक्षा के संबंध में नोटिस।",
-    "title_en": "RRC Northern Railway Level-1 Document Verification Notice",
-    "title_hi": "आरआरसी उत्तर रेलवे लेवल-1 दस्तावेज सत्यापन नोटिस",
-    "type": "Result",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -28,10 +14,10 @@
     "bytes": 3182622,
     "pages": 15,
     "sha256": "406246b3e22c33ed8dc76182b99cfc2337a6071958ddde64f10107454e6904f9",
-    "text_kind": "scanned"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "rrc-nr",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "20.10.2026 Kind Attention: Employment Notification No. CEN NO.-08/2024: NOTICE NO. 07 dated 20.10.2026 regarding Documents Verification and Medical Examination for recruitment of various posts of level-1. Click here for DV Notice Click here for Annexures Click here for DV cutoff Click here for DV Ca",
   "url": "https://rrcnr.org/downloads/Annexures.pdf"
 }

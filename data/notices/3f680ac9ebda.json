@@ -1,31 +1,18 @@
 {
   "baseline_sample": true,
   "board_url": "https://rssb.rajasthan.gov.in/",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "LDC Grade II / Junior Assistant",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "It is an instruction notice for Phase-II exam guidelines rather than a new job, result, admit card, or answer key.",
-    "summary_en": "Important instructions regarding the online Phase-II typing speed and efficiency test for LDC Grade II and Junior Assistant 2026.",
-    "summary_hi": "एलडीसी श्रेणी दो और कनिष्ठ सहायक दो हजार छब्बीस की ऑनलाइन द्वितीय चरण टंकण गति और दक्षता परीक्षा के संबंध में महत्वपूर्ण निर्देश।",
-    "title_en": "RSSB LDC Grade II and Junior Assistant Phase II Exam Instructions",
-    "title_hi": "राजस्थान कर्मचारी चयन बोर्ड एलडीसी श्रेणी दो और कनिष्ठ सहायक द्वितीय चरण परीक्षा निर्देश",
-    "type": "Admit card",
-    "vacancies": null
-  },
+  "card": null,
   "fields": {},
   "first_seen": "2026-10-22T17:28:07+00:00",
   "id": "3f680ac9ebda",
   "kind": "other",
   "org": "RSSB Rajasthan",
   "pdf": {
-    "error": "HTTPError: 404 Client Error: Not Found for url: https://rssb.rajasthan.gov.in/storage/news_item/1792682309.pdf"
+    "error": "HTTPError: 404 Client Error: Not Found for url: https://rssb.rajasthan.gov.in/storage/news_item/1792682309.pdf",
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "rssb-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "22-10-2026 - LDC Grade II / Junior Assistant 2026 : Important Instructions regarding Online Phase-II Exam (Typing Speed and Efficiency Test)",
   "url": "https://rssb.rajasthan.gov.in/storage/news_item/1792682309.pdf"
 }
