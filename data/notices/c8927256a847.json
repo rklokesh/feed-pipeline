@@ -1,0 +1,82 @@
+{
+  "board_url": "https://rrb.indianrailways.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "CENTRALISED EMPLOYMENT NOTIFICATION (CEN) No . 09/2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "CEN No. 09/2026"
+    },
+    "age_limit": {
+      "evidence": "ard 01-01-2027) 1 Chief Law Assistant Personnel 7 44,900 C1 18-40 years 17 2 Public Prosecutor Personnel 7 44,900 C1 18-32 years 21 3 Senior Publicity",
+      "source": "rule",
+      "value": {
+        "max": 40,
+        "min": 18
+      }
+    },
+    "apply_last": {
+      "evidence": "ws 24.10.2026 Opening date of Online application 05.11.2026 Closing date for Submission of Online Application 04.12.2026 (23:59 hours) Last Date for Application fee payment for the submitted applications 06.12.2026 (23:59 hours",
+      "source": "rule",
+      "value": "2026-12-04"
+    },
+    "apply_or_official_url": {
+      "evidence": "/2026 will be uploaded on unified official RRB website i.e. https://rrb.indianrailways.gov.in. Candidates can navigate to webpages of individual RRBs from this common website",
+      "source": "rule",
+      "value": "https://rrb.indianrailways.gov.in"
+    },
+    "apply_start": {
+      "evidence": "ES: Date of Indicative Notice in Employment News 24.10.2026 Opening date of Online application 05.11.2026 Closing date for Submission of Online Application 04.12.2026 (23:59 hours) Last Date for Application fee payment for the submitt",
+      "source": "rule",
+      "value": "2026-11-05"
+    },
+    "apply_url": {
+      "evidence": "The link for submission of the online application will be made live on https://www.rrbapply.gov.in.",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://www.rrbapply.gov.in"
+    },
+    "fee_last": {
+      "evidence": "Last Date for Application fee payment for the submitted applications 06.12.2026 (23:59 hours)",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-12-06"
+    },
+    "post_names": {
+      "evidence": "CAT NO Post Name Department Vacancies... 1 Chief Law Assistant... 2 Public Prosecutor... 3 Senior Publicity Inspector... 4 Junior Translator / Hindi... 5 Staff and Welfare Inspector... 6 Scientific Assistant (Training)... 7 Lab Assistant Gr. III (Chemist & Metallurgist)",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Chief Law Assistant",
+        "Public Prosecutor",
+        "Senior Publicity Inspector",
+        "Junior Translator / Hindi",
+        "Staff and Welfare Inspector",
+        "Scientific Assistant (Training)",
+        "Lab Assistant Gr. III (Chemist & Metallurgist)"
+      ]
+    },
+    "total_vacancies": {
+      "evidence": "- Important Instructions 4 3 1.0 General Instructions 6 4 2.0 Vacancies 8 5 3.0 Standards of Medical Fitness 8 6 4.0 Nationality / Citizenship 9 7 5.0",
+      "source": "rule",
+      "value": 0
+    }
+  },
+  "first_seen": "2026-11-05T07:13:21+00:00",
+  "id": "c8927256a847",
+  "kind": "notification",
+  "org": "RRB",
+  "pdf": {
+    "bytes": 2732694,
+    "pages": 59,
+    "sha256": "225c689897effa5351d5fce154c7fd7e435f4206c4eca56890467da8d7210738",
+    "text_kind": "text"
+  },
+  "source_id": "rrb-unified",
+  "status": "pending_review",
+  "title": "RRB CEN 09/2026: CEN 09-2026 English Version 04 11 2026 (18-30-PM)",
+  "url": "https://rrb.indianrailways.gov.in/-/image/1793861105153CEN_09-2026_English_Version_04_11_2026_(18-30-PM).pdf/examsDocuments"
+}

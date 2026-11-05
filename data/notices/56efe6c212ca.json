@@ -1,0 +1,37 @@
+{
+  "board_url": "https://rrb.indianrailways.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_last": {
+      "evidence": "opening date of application is 05.11.2026. 02. What is the closing date for submission of Application for CEN No. 09/2026? The closing date for submission of online application is 04.12.2026 @23.59Hrs. And the last date for pa",
+      "source": "rule",
+      "value": "2026-12-04"
+    },
+    "apply_start": {
+      "evidence": "Categories under CEN No. 09/2026 (English) 01. What is the opening date of application for CEN No. 09/2026? The opening date of application is 05.11.2026. 02. What is the closing date for submission of Application for CEN No.",
+      "source": "rule",
+      "value": "2026-11-05"
+    },
+    "fee_last": {
+      "evidence": "sion of online application is 04.12.2026 @23.59Hrs. And the last date for payment of the application fee for submitted applications is 06.12.2026. 03. What are the dates for modification of application? Modification windo",
+      "source": "rule",
+      "value": "2026-12-06"
+    }
+  },
+  "first_seen": "2026-11-05T07:13:21+00:00",
+  "id": "56efe6c212ca",
+  "kind": "info",
+  "org": "RRB",
+  "pdf": {
+    "bytes": 105640,
+    "pages": 14,
+    "sha256": "ec3953dee13bfc9b306f4cdce28b5edbcfb0c748c81f7fec33d0e0ecc8bfb6e7",
+    "text_kind": "text"
+  },
+  "source_id": "rrb-unified",
+  "status": "pending_review",
+  "title": "RRB CEN 09/2026: FAQs Isolated CategoriesCEN 09 2026 (English)",
+  "url": "https://rrb.indianrailways.gov.in/-/image/1793861357883FAQs_Isolated_CategoriesCEN_09_2026_(English).pdf/examsDocuments"
+}
