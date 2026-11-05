@@ -1,5 +1,20 @@
 {
   "board_url": "https://sssc.uk.gov.in/document-category/result-answer-keys/",
+  "card": {
+    "confidence": "low",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Not a valid job notice or relevant document for aspirants",
+    "summary_en": "The notice does not contain any readable content or job details.",
+    "summary_hi": "सूचना में कोई पठनीय सामग्री या नौकरी का विवरण नहीं है।",
+    "title_en": "UKSSSC Notice",
+    "title_hi": "UKSSSC सूचना",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "scanned"
   },
   "source_id": "uksssc-results",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Accessible Version : View (9 MB)",
   "url": "https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/202611051440070328.pdf"
 }

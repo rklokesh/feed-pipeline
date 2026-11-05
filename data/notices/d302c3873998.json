@@ -1,11 +1,29 @@
 {
+  "auto_published": true,
   "board_url": "https://dsssb.delhi.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "PGT Geography",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "DSSSB has released the marks and called for e-dossiers for the PGT Geography (Male & Female) post under code 832/24. Qualified candidates should check their status.",
+    "summary_hi": "DSSSB ने पोस्ट कोड 832/24 के तहत पीजीटी भूगोल (पुरुष और महिला) पद के लिए अंक जारी किए हैं और ई-डोजियर आमंत्रित किए हैं। योग्य उम्मीदवार अपना स्टेटस चेक करें।",
+    "title_en": "DSSSB PGT Geography Post Code 832/24 E-Dossier and Marks",
+    "title_hi": "DSSSB पीजीटी भूगोल पोस्ट कोड 832/24 ई-ड Dossier और अंक",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-05T11:38:37+00:00",
   "id": "d302c3873998",
+  "issue": 1083,
+  "issue_tidy": true,
   "kind": "result",
   "org": "DSSSB",
   "pdf": {
@@ -14,8 +32,12 @@
     "sha256": "29e03980cbbac3cec54fd619aa767457f9626015ad8f534cc76c14eaf138efd1",
     "text_kind": "scanned"
   },
+  "published_at": "2026-11-05T12:15:36Z",
+  "qual": [
+    "postgraduate"
+  ],
   "source_id": "dsssb-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "NOTICE NO. 1672 :- Release of marks and calling of e-dossier to the post of PGT Geography (Male & Female) under post code 832/24 in DoE. Date: 05-11-2026 | 934.08 KB Download",
   "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/notice_1672.pdf"
 }
