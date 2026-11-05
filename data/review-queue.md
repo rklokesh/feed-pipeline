@@ -1,9 +1,10 @@
-# Review queue — 8 pending
+# Review queue — 9 pending
 
-_Updated 2026-11-05T15:54:55+00:00_
+_Updated 2026-11-05T16:14:05+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-05 | WBPSC | update | CORRIGENDUM NOTICE IN CONNECTION WITH RECRUITMENT TO THE POSTS OF ASSISTANT TRANSLATOR IN  | — | — | — | — | [open](https://psc.wb.gov.in/Download?param1=Cur_20261105212424_DetailedAdvtIDO152024.pdf&param2=advertisement) |
 | 2026-11-05 | UPPSC | result | 05 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagk3H4ltFfLCjk5eFIB8Ab41) |
 | 2026-11-05 | UPPSC | result | 1. RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/.. Visi | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjpK9HT4ZBX4T) |
 | 2026-11-05 | WBPSC | update | CORRIGENDUM NOTICE IN CONNECTION WITH RECRUITMENT TO THE POSTS OF ASSISTANT TRANSLATOR IN  | — | — | — | — | [open](https://psc.wb.gov.in/Download?param1=Cur_20261105203611_DetailedAdvtIDO152024.pdf&param2=advertisement) |
