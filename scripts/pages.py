@@ -119,7 +119,12 @@ def gh_comments(issue: int | None) -> list[str]:
         return []
 
 
-def ai_page(n: dict, notes: list[str]) -> dict | None:
+PLOG: list[str] = []   # why a page could not be written (data/debug-pages.txt; the Actions log is hard to reach)
+SHORT = ("\n\nKEEP IT SHORT: the full answer must stay well under 6000 words. At most 6 FAQ, at most 5 items in any list, "
+         "one-sentence values. Same JSON shape.")
+
+
+def ai_page(n: dict, notes: list[str], short: bool = False) -> dict | None:
     text = ""
     p = TEXT / f"{n['id']}.txt"
     if p.exists():
@@ -131,7 +136,7 @@ def ai_page(n: dict, notes: list[str]) -> dict | None:
     for prov in _providers():
         headers = {"Authorization": f"Bearer {prov['key']}", "Content-Type": "application/json", **prov.get("headers", {})}
         body = {"model": prov["model"], "temperature": 0, "response_format": {"type": "json_object"},
-                "messages": [{"role": "system", "content": PROMPT}, {"role": "user", "content": user}]}
+                "messages": [{"role": "system", "content": PROMPT + (SHORT if short else "")}, {"role": "user", "content": user}]}
         r = None
         for wait in (0, 15, 45):
             if wait:
@@ -145,10 +150,15 @@ def ai_page(n: dict, notes: list[str]) -> dict | None:
             if r.status_code not in (429, 500, 502, 503):
                 break
         if r is None or r.status_code != 200:
+            PLOG.append(f"{n['id']} {prov['name']}: HTTP {getattr(r, 'status_code', 'error')} {(r.text[:150] if r is not None else '')!r}")
             continue
         try:
             page = _json_from(r.json()["choices"][0]["message"]["content"])
         except Exception:  # noqa: BLE001
+            # usually an answer cut off by the output limit (long FAQ-style notices): try once more, shorter
+            PLOG.append(f"{n['id']} {prov['name']}: unreadable answer{' (short mode)' if short else ''}")
+            if not short:
+                return ai_page(n, notes, short=True)
             continue
         page["provider"] = prov["name"]
         return page
@@ -632,3 +642,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    if PLOG:
+        (ROOT / "data" / "debug-pages.txt").write_text(time.strftime("%Y-%m-%d %H:%M UTC\n", time.gmtime()) + "\n".join(PLOG) + "\n")
