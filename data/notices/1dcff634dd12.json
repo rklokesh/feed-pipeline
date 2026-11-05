@@ -1,0 +1,33 @@
+{
+  "board_url": "https://www.upsc.gov.in/whats-new",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_last": {
+      "evidence": "c., must also produce original certificate(s) issued by the closing date of the application of the Civil Services (Preliminary) Examination, 2026 i.e. 27.02.2026. 3. Dates of Personality Tests (Interviews) of these c",
+      "source": "rule",
+      "value": "2026-02-27"
+    },
+    "apply_or_official_url": {
+      "evidence": "urse, which may be downloaded from the Commission’s Website https://www.upsc.gov.in & https://upsconline.nic.in. The candidates, who may not be able to download th",
+      "source": "rule",
+      "value": "https://www.upsc.gov.in"
+    }
+  },
+  "first_seen": "2026-11-05T13:08:35+00:00",
+  "id": "1dcff634dd12",
+  "kind": "result",
+  "org": "UPSC",
+  "pdf": {
+    "bytes": 483254,
+    "pages": 99,
+    "sha256": "9dd435b50ab0d6c0c206554cd931639a0e7bb0f57e06f1352ed68df5c88f46cd",
+    "text_kind": "text",
+    "via": "https://www.upsc.gov.in/sites/default/files/WR-CSM-2026-Engl-NameList-05112026.pdf"
+  },
+  "source_id": "upsc-whats-new",
+  "status": "pending_review",
+  "title": "Written Result (with name): Civil Services (Main) Examination, 2026",
+  "url": "https://www.upsc.gov.in/whats-new/Civil%20Services%20%28Main%29%20Examination%2C%202026/Written%20Result%20%28with%20name%29"
+}
