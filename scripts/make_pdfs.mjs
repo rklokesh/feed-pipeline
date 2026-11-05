@@ -3,7 +3,8 @@
 // Usage: node scripts/make_pdfs.mjs [siteDir]   (needs the `playwright` package and Chromium)
 import { chromium } from "playwright";
 import { createServer } from "node:http";
-import { readdirSync, existsSync, readFileSync } from "node:fs";
+import { readdirSync, existsSync, readFileSync, writeFileSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { join, extname, normalize } from "node:path";
 
 const SITE = process.argv[2] || "site";
@@ -22,7 +23,15 @@ const port = server.address().port;
 const dir = join(SITE, "notice");
 const slugs = existsSync(dir) ? readdirSync(dir).filter(d => existsSync(join(dir, d, "index.html"))) : [];
 const browser = await chromium.launch();
+// Only pages whose content changed are printed again: the fingerprint ignores <style>/<script> (screen-only design
+// tweaks), so a phone-layout change no longer reprints all ~300 pages. Bump PDF_V to force a full reprint.
+const PDF_V = "1";
+const fp = html => createHash("sha1").update(PDF_V + html.replace(/<style[\s\S]*?<\/style>/g, "").replace(/<script[\s\S]*?<\/script>/g, "")).digest("hex");
+let skipped = 0;
 for (const slug of slugs) {
+  const hashFile = join(dir, slug, ".pdfhash"), h = fp(readFileSync(join(dir, slug, "index.html"), "utf8"));
+  if (existsSync(hashFile) && readFileSync(hashFile, "utf8") === h &&
+      ["en", "hi"].every(l => existsSync(join(dir, slug, `sarkarichart-${slug}-${l}.pdf`)))) { skipped++; continue; }
   for (const lang of ["en", "hi"]) {
     const page = await browser.newPage();
     await page.addInitScript(l => { try { localStorage.setItem("sc-lang", l); } catch (e) {} }, lang);
@@ -34,6 +43,8 @@ for (const slug of slugs) {
     console.log("made", out);
     await page.close();
   }
+  writeFileSync(hashFile, h);
 }
+console.log("unchanged, kept:", skipped);
 await browser.close();
 server.close();

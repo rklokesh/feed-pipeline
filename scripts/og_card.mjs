@@ -3,6 +3,8 @@
 // organisation logo + name · post/exam line · headline · call to action. Shown as the link preview on
 // WhatsApp/Telegram/X and posted to the Telegram channel. Usage: node scripts/og_card.mjs [siteDir]
 import { chromium } from "playwright";
+import { createHash } from "node:crypto";
+import { writeFileSync as _wf } from "node:fs";
 import { readdirSync, existsSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -83,9 +85,12 @@ for (const slug of existsSync(dir) ? readdirSync(dir) : []) {
   if (!existsSync(f)) continue;
   const o = JSON.parse(readFileSync(f, "utf8"));
   if (!o.en) continue;               // og.json from before the new cards: rewritten by pages.py on its next run
+  const hf = join(dir, slug, ".oghash"), h = createHash("sha1").update("og2" + readFileSync(f, "utf8")).digest("hex");
+  if (existsSync(hf) && readFileSync(hf, "utf8") === h && existsSync(join(dir, slug, "og.png")) && existsSync(join(dir, slug, "og-hi.png"))) continue;
   try {
     await shot(card(o.en, o, false), join(dir, slug, "og.png"));
     await shot(card(o.hi, o, true), join(dir, slug, "og-hi.png"));
+    _wf(hf, h);
     made++;
   } catch (e) { console.log("og failed", slug, e.message); }
 }

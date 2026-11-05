@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: deploy
-  cancel-in-progress: true
+  cancel-in-progress: false   # finish the running deploy; the newest waiting one runs next (a busy day never starves deploys)
 
 jobs:
   deploy:
@@ -40,7 +40,10 @@ jobs:
             site/notice/**/og.png
             site/notice/**/og-hi.png
             site/og.png
+            site/notice/**/.pdfhash
+            site/notice/**/.oghash
           key: pdfs-og2-${{ hashFiles('site/notice/**/*.html', 'site/notice/**/og.json', 'scripts/make_pdfs.mjs', 'scripts/og_card.mjs', 'scripts/fonts/**', 'assets/org/**', 'site/sarkarichart-logo.png') }}
+          restore-keys: pdfs-og2-        # start from the last set; only changed pages are made again
       - name: Install PDF printer
         if: steps.pdfcache.outputs.cache-hit != 'true'
         timeout-minutes: 8          # a stuck apt mirror must never block the site deploy
