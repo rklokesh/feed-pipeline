@@ -1,11 +1,29 @@
 {
+  "auto_published": true,
   "board_url": "https://kvs.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "अधीक्षण अभियंता",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Kendriya Vidyalaya Sangathan has extended the last date to apply for the post of Superintending Engineer on deputation basis under Advertisement Number 04/2026.",
+    "summary_hi": "केन्द्रीय विद्यालय संगठन ने विज्ञापन संख्या 04/2026 के अंतर्गत प्रतिनियुक्ति के आधार पर अधीक्षण अभियंता के पद के लिए आवेदन करने की अंतिम तिथि बढ़ा दी है।",
+    "title_en": "KVS Superintending Engineer Deputation Recruitment 2026",
+    "title_hi": "केन्द्रीय विद्यालय संगठन अधीक्षण अभियंता प्रतिनियुक्ति भर्ती 2026",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-05T11:38:37+00:00",
   "id": "0065814a20a0",
+  "issue": 1079,
+  "issue_tidy": true,
   "kind": "notification",
   "org": "KVS",
   "pdf": {
@@ -14,8 +32,12 @@
     "sha256": "ab6a2b4113858809fdd2408a159e6e4fe2df908dd0bfe079a13aeacdaa1f65dc",
     "text_kind": "scanned"
   },
+  "published_at": "2026-11-05T11:45:05Z",
+  "qual": [
+    "graduate"
+  ],
   "source_id": "kvs-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "विज्ञापन संख्या 04/2026 के अंतर्गत प्रतिनियुक्ति के आधार पर अधीक्षण अभियंता के पद भरने के लिए आवेदन की तिथि बढ़ाने की सूचना।",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026110583.pdf"
 }

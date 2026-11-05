@@ -1,5 +1,21 @@
 {
+  "auto_published": true,
   "board_url": "https://www.upsc.gov.in/whats-new",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-09-27",
+    "last_date": null,
+    "list": true,
+    "posts": "Accounts Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Union Public Service Commission has released the written test result for the Accounts Officer post in the Administration of UT of Ladakh. Candidates can check their shortlisted roll numbers.",
+    "summary_hi": "संघ लोक सेवा आयोग ने लद्दाख केंद्र शासित प्रदेश प्रशासन में लेखा अधिकारी पद के लिए लिखित परीक्षा का परिणाम जारी कर दिया है। उम्मीदवार अपने चयनित रोल नंबर देख सकते हैं।",
+    "title_en": "UPSC Accounts Officer UT of Ladakh Written Test Result",
+    "title_hi": "संघ लोक सेवा आयोग लेखा अधिकारी लद्दाख परिणाम",
+    "type": "Result",
+    "vacancies": 32
+  },
   "extraction": {
     "ai": null
   },
@@ -12,6 +28,8 @@
   },
   "first_seen": "2026-11-05T11:16:09+00:00",
   "id": "c28b04d1b35b",
+  "issue": 1081,
+  "issue_tidy": true,
   "kind": "result",
   "org": "UPSC",
   "pdf": {
@@ -21,8 +39,12 @@
     "text_kind": "text",
     "via": "https://www.upsc.gov.in/sites/default/files/RT-WR-32-AcntsOfcrLadakh-Engl-051126.pdf"
   },
+  "published_at": "2026-11-05T11:45:27Z",
+  "qual": [
+    "graduate"
+  ],
   "source_id": "upsc-whats-new",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Written Result: 32 Posts of Accounts Officer, Administration of Union Territory of Ladakh",
   "url": "https://www.upsc.gov.in/whats-new/32 Posts of Accounts Officer, Administration of Union Territory of Ladakh/Written Result"
 }

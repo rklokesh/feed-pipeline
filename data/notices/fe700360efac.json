@@ -1,11 +1,29 @@
 {
+  "auto_published": true,
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant Professor",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Rajasthan Public Service Commission has issued a corrigendum regarding the Assistant Professor (College Education) Examination 2025. Candidates should check the notice for updated details.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने सहायक आचार्य (कॉलेज शिक्षा) परीक्षा 2025 के संबंध में शुद्धिपत्र जारी किया है। उम्मीदवार अद्यतन विवरण के लिए नोटिस देखें।",
+    "title_en": "RPSC Assistant Professor College Education Exam 2025 Corrigendum",
+    "title_hi": "आरपीएससी सहायक आचार्य कॉलेज शिक्षा परीक्षा 2025 शुद्धिपत्र",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-05T11:16:09+00:00",
   "id": "fe700360efac",
+  "issue": 1082,
+  "issue_tidy": true,
   "kind": "update",
   "org": "RPSC",
   "pdf": {
@@ -14,8 +32,12 @@
     "sha256": "b739c78f7bc0622555cd81bc5ae883e7c434498680f9c181156df67bcda030c7",
     "text_kind": "scanned"
   },
+  "published_at": "2026-11-05T11:47:02Z",
+  "qual": [
+    "postgraduate"
+  ],
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "05/11/2026 Press Note Regarding Corrigendum No. 16/2026-27 for Asst. Prof. (College Education) Exam- 2025",
   "url": "https://rpsc.rajasthan.gov.in/Static/PressNotes/84A388F2-0589-4C83-AF23-CB7C5D703AC7.pdf"
 }
