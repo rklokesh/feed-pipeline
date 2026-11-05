@@ -1,9 +1,12 @@
-# Review queue — 6 pending
+# Review queue — 9 pending
 
-_Updated 2026-11-05T19:15:18+00:00_
+_Updated 2026-11-05T19:30:40+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-05 | BSF | other | Download | — | — | — | — | [open](https://d3t79nicn48uzj.cloudfront.net/bsf/custom/1791202979.pdf) |
+| 2026-11-05 | Rate Card | notification | Rate Card | — | — | — | — | [open](http://employmentnews.gov.in/rate%20card01Jan.pdf) |
+| 2026-11-05 | New Advertisement Policy | notification | New Advertisement Policy | — | — | — | — | [open](http://employmentnews.gov.in/writereaddata/Modified%20Policy%20Guidelines%20for%20Publication%20of%20Advertisement%20in%20Employment%20News%20and%20Rozgar%20Samachar.pdf) |
 | 2026-11-05 | Central Warehousing Corporation | other | Engagement of Consultant at Corporate Office, New Delhi Click here to know more | — | — | — | — | [open](https://cwceportal.com/Careers/Guidelines/44/44_Notice%20for%20Engagement%20of%20Consultant_482c03e5-ba5f-47ba-8a35-d40667a0c446.pdf) |
 | 2026-11-05 | Central Warehousing Corporation | notification | Advertisement No CWC/I-Manpower/DR/Rectt/2026/01 Click here to know more | 2026-11-15 | 267 (AI) | None–28 (AI) | — | [open](https://cwceportal.com/Careers/Guidelines/45/45_Detailed%20Advertisement_7109fe46-7e18-4b68-84a5-8b6d6708e571.pdf) |
 | 2026-11-05 | WBPSC | update | CORRIGENDUM NOTICE IN CONNECTION WITH RECRUITMENT TO THE POSTS OF ASSISTANT TRANSLATOR IN  | — | — | — | — | [open](https://psc.wb.gov.in/Download?param1=Cur_20261105212424_DetailedAdvtIDO152024.pdf&param2=advertisement) |

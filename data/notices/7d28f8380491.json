@@ -1,0 +1,22 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://employmentnews.gov.in/NewEmp/MoreContentS.aspx?n=WebAdvertisement",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest:429"
+  },
+  "fields": {},
+  "first_seen": "2026-11-05T19:20:15+00:00",
+  "id": "7d28f8380491",
+  "kind": "notification",
+  "org": "Rate Card",
+  "pdf": {
+    "bytes": 30430,
+    "pages": 1,
+    "sha256": "76f5acdca0d3d41975206b2d87e318d931dc836d1bba9254dc678dec90e0f996",
+    "text_kind": "text"
+  },
+  "source_id": "employment-news-ads",
+  "status": "pending_review",
+  "title": "Rate Card",
+  "url": "http://employmentnews.gov.in/rate%20card01Jan.pdf"
+}
