@@ -432,6 +432,29 @@ html[lang="hi"] .hidet { display: none; }
   html.v2[lang="hi"] #lang::before { -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M5.43 19.25 10.59 4.75H13.31L18.57 19.25H16.17L14.83 15.43H9.13L7.83 19.25ZM14.18 13.58 13.34 11.18Q13.01 10.2 12.62 8.87Q12.31 7.83 11.94 6.49Q11.57 7.85 11.27 8.9Q10.87 10.25 10.57 11.18L9.76 13.58Z'/></svg>") center / contain no-repeat !important; mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M5.43 19.25 10.59 4.75H13.31L18.57 19.25H16.17L14.83 15.43H9.13L7.83 19.25ZM14.18 13.58 13.34 11.18Q13.01 10.2 12.62 8.87Q12.31 7.83 11.94 6.49Q11.57 7.85 11.27 8.9Q10.87 10.25 10.57 11.18L9.76 13.58Z'/></svg>") center / contain no-repeat !important; }
   html.v2 #lang::after { content: none; }
 }
+/* v2 motion (iOS-style): controls shrink while you read down, come back when you scroll up; icons morph when switched */
+@media (max-width: 640px) {
+  html.v2 { --gel: cubic-bezier(.34, 1.36, .64, 1); }
+  html.v2 .top { transition: padding .4s var(--gel); }
+  html.v2 .top .logo img, html.v2 .top .logo .mark { transition: width .4s var(--gel), height .4s var(--gel); }
+  html.v2 .top .nav-r { transition: transform .4s var(--gel); transform-origin: right center; }
+  html.v2 .fback { transition: transform .4s var(--gel); transform-origin: left center; }
+  html.v2.bar-compact .top .nav-r, html.v2.bar-compact .fback { transform: scale(.86); }
+  html.v2.bar-compact .top .nav-r button:active, html.v2.bar-compact .fback:active { transform: scale(.94); }
+  html.v2 .nav-r button.swap svg, html.v2 #lang.swap::before { animation: sc-morph .42s var(--gel); }
+  html.v2 .top .nav-r:active { transform: scale(.97, .94); }
+}
+@media (max-width: 640px) {
+  /* homepage only: the sticky bar itself gets slimmer (its logo shrinks) */
+  html.v2.bar-compact .top:has(> .g) { padding-top: 4px; padding-bottom: 4px; }
+  html.v2.bar-compact .top:has(> .g) .logo img, html.v2.bar-compact .top:has(> .g) .logo .mark { width: 34px; height: 34px; }
+}
+@keyframes sc-morph { 0% { transform: scale(.45) rotate(-70deg); opacity: 0; filter: blur(3px); } 60% { opacity: 1; filter: blur(0); } 100% { transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  html.v2 .top, html.v2 .top .logo img, html.v2 .top .nav-r, html.v2 .fback { transition: none !important; }
+  html.v2 .nav-r button.swap svg, html.v2 #lang.swap::before { animation: none !important; }
+  html.v2.bar-compact .top .nav-r, html.v2.bar-compact .fback { transform: none; }
+}
 </style>
 <script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */
 try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")==="1")document.documentElement.classList.add("v2")}catch(e){}</script>
@@ -1041,6 +1064,19 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
   b.addEventListener("touchstart",function(e){var t=e.touches[0];sx=t.clientX;sy=t.clientY;touched=true;},{passive:true});
   b.addEventListener("touchend",function(e){var t=e.changedTouches[0];if(touched&&Math.abs(t.clientX-sx)<12&&Math.abs(t.clientY-sy)<12){e.preventDefault();go();}touched=false;});
   b.addEventListener("click",function(e){e.preventDefault();go();});
+})();</script>
+<script>(function(){
+  // iOS-style: shrink the controls while reading down, bring them back on any scroll up (ignores small jitters)
+  var r=document.documentElement,last=scrollY,acc=0;
+  addEventListener("scroll",function(){var y=scrollY,d=y-last;last=y;
+    if(y<80){r.classList.remove("bar-compact");acc=0;return;}
+    acc=(acc*d>0)?acc+d:d;
+    if(acc>24)r.classList.add("bar-compact");else if(acc<-16)r.classList.remove("bar-compact");},{passive:true});
+  // icon morph + a light tick on Android (iPhones ignore vibrate) when switching language or theme
+  ["theme","lang"].forEach(function(id){var b=document.getElementById(id);if(!b)return;
+    b.addEventListener("click",function(){requestAnimationFrame(function(){b.classList.remove("swap");void b.offsetWidth;b.classList.add("swap");});
+      try{if(navigator.vibrate)navigator.vibrate(8);}catch(e){}});
+    b.addEventListener("animationend",function(){b.classList.remove("swap");});});
 })();</script>
 </body>
 </html>
