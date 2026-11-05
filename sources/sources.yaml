@@ -365,4 +365,5 @@ sources:
     render: static
     runner: india
     org_from_title: true   # each PDF is one employer's advert ("SAINIK SCHOOL NAGROTA, ... (Issue no 31 ...)")
+    title_must: "Issue no"   # adverts carry the issue number; menu PDFs (rate card, policy) do not
     # Government of India's weekly; carries central ministries, institutes and bodies whose own sites we can't read

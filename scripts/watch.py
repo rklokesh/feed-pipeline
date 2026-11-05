@@ -81,8 +81,16 @@ def links_from_html(html: str, base: str, extra: str | None = None) -> list[dict
         title = clean(a.get_text(" ")) or clean(a.get("title", ""))
         if len(title) < 25 or GENERIC.match(title) or FRAGMENT.search(title) or not title[:1].isalnum():
             # "Click here", "English) (959 KB)" -> use the whole row/item text instead
-            parent = a.find_parent(["tr", "li", "p", "div"])
-            title = clean(parent.get_text(" ")) if parent else title
+            # walk up until there is a real title (BSF puts "Download" in its own box next to the title box)
+            node = a
+            for _ in range(5):
+                node = node.find_parent(["tr", "li", "p", "div", "article", "section"])
+                if not node:
+                    break
+                t = re.sub(r"^(download|view|click here)\b\s*|\s*\b(download|view|click here)$", "", clean(node.get_text(" ")), flags=re.I)
+                if len(t) >= 25:
+                    title = t
+                    break
         out.append({"url": url, "title": title[:300] or os.path.basename(urlparse(url).path)})
     return out
 
@@ -421,6 +429,8 @@ def main() -> int:
             summary.append(f"- {src['org']}: FAILED ({h['last_error'][:80]})")
             continue
 
+        if src.get("title_must"):   # aggregator pages also link their own rate cards / policies: keep real adverts only
+            items = [i for i in items if re.search(src["title_must"], i["title"], re.I)]
         known = set(seen.get(src["id"], []))
         first_run = src["id"] not in seen
         new = [i for i in items if ukey(src, i) not in known]
