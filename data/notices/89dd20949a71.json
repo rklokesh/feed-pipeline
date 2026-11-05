@@ -1,5 +1,21 @@
 {
+  "auto_published": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-12-04",
+    "list": true,
+    "posts": "Chief Law Assistant, Public Prosecutor, Senior Publicity Inspector, Junior Translator, Staff and Welfare Inspector, Scientific Assistant, Lab Assistant",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Railway Recruitment Boards has invited online applications for various posts of Isolated Categories under CEN 09/2026. Eligible candidates can apply online up to 4 December 2026.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने केंद्रीय रोजगार अधिसूचना संख्या 09/2026 के तहत पृथक श्रेणियों के विभिन्न पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 4 दिसंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "title_en": "RRB Isolated Categories Recruitment 2026",
+    "title_hi": "आरआरबी पृथक श्रेणियां भर्ती 2026",
+    "type": "Job",
+    "vacancies": 191
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest:503"
   },
@@ -35,6 +51,8 @@
   },
   "first_seen": "2026-11-05T11:16:09+00:00",
   "id": "89dd20949a71",
+  "issue": 1076,
+  "issue_tidy": true,
   "kind": "notification",
   "org": "RRB",
   "pdf": {
@@ -43,8 +61,13 @@
     "sha256": "4deda92fabaca184137555858069b07d470d2dc5a3c92735b2055042b5eb5156",
     "text_kind": "text"
   },
+  "published_at": "2026-11-05T11:26:51Z",
+  "qual": [
+    "graduate",
+    "postgraduate"
+  ],
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RRB CEN 09/2026: CEN 09-2026 English Version 05 11 2026 (16-23-PM)",
   "url": "https://rrb.indianrailways.gov.in/-/image/1793876199488CEN_09-2026_English_Version_05_11_2026_(16-23-PM).pdf/examsDocuments"
 }

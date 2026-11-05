@@ -1,5 +1,21 @@
 {
+  "auto_published": true,
   "board_url": "https://psc.wb.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "West Bengal Civil Service (Exe.) etc.",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "West Bengal Public Service Commission has released the preliminary examination result for Civil Services Examination 2024. Candidates can check their roll numbers in the notice.",
+    "summary_hi": "पश्चिम बंगाल लोक सेवा आयोग ने सिविल सेवा परीक्षा 2024 के लिए प्रारंभिक परीक्षा का परिणाम जारी कर दिया है। उम्मीदवार नोटिस में अपने रोल नंबर की जाँच कर सकते हैं।",
+    "title_en": "WBPSC Civil Services Preliminary Examination 2024 Result",
+    "title_hi": "पश्चिम बंगाल लोक सेवा आयोग सिविल सेवा प्रारंभिक परीक्षा परिणाम",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -12,6 +28,8 @@
   },
   "first_seen": "2026-11-05T11:16:09+00:00",
   "id": "7ef3e2b7ae35",
+  "issue": 1075,
+  "issue_tidy": true,
   "kind": "update",
   "org": "WBPSC",
   "pdf": {
@@ -20,8 +38,12 @@
     "sha256": "294d7c0f5699e3e42625ff3d0c19a16bcbcb0dafb6083d2cd87ac9a97cce59f7",
     "text_kind": "text"
   },
+  "published_at": "2026-11-05T11:25:31Z",
+  "qual": [
+    "graduate"
+  ],
   "source_id": "wbpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "CORRIGENDUM NOTICE IN CONNECTION WITH RECRUITMENT TO THE POSTS OF ASSISTANT TRANSLATOR IN BENGALI, NEPALI AND SANTHALI VIDE COMMISSION'S ADVT. NO. 9(1)/2023, 9(2)/2023 AND 9(3)/2023 RESPECTIVELY. IMPORTANT NOTICE FOR RECRUITMENT TO THE POST OF DEPUTY DIRECTOR OF TECHNICAL EDUCATION AND TRAINING IN W",
   "url": "https://psc.wb.gov.in/Download?param1=20261105145652_WBCS_2024_PRELI_RESULT.pdf&param2=advertisement"
 }

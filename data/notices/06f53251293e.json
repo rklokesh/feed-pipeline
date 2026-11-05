@@ -1,5 +1,21 @@
 {
+  "auto_published": true,
   "board_url": "https://ssc.gov.in/home/notice-board",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Junior Hindi Translator, Senior Hindi Translator, and Hindi Translator",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Staff Selection Commission has declared the first round of tentative allocation for the Combined Hindi Translators Examination, 2025, recommending 532 candidates.",
+    "summary_hi": "कर्मचारी चयन आयोग ने संयुक्त हिंदी अनुवादक परीक्षा, 2025 के लिए अनवंती आवंटन का पहला दौर घोषित कर दिया है, जिसमें 532 उम्मीदवारों की सिफारिश की गई है।",
+    "title_en": "SSC Combined Hindi Translator Examination 2025 First Allocation Result",
+    "title_hi": "एसएससी संयुक्त हिंदी अनुवादक परीक्षा 2025 प्रथम आवंटन परिणाम",
+    "type": "Result",
+    "vacancies": 532
+  },
   "extraction": {
     "ai": null
   },
@@ -12,6 +28,8 @@
   },
   "first_seen": "2026-11-05T11:21:58+00:00",
   "id": "06f53251293e",
+  "issue": 1073,
+  "issue_tidy": true,
   "kind": "result",
   "org": "SSC",
   "pdf": {
@@ -20,8 +38,13 @@
     "sha256": "070fbd2e9daa1a824093de9a7cff56acde6c1e885cee79d1442c88c6cc5d1235",
     "text_kind": "text"
   },
+  "published_at": "2026-11-05T11:23:02Z",
+  "qual": [
+    "graduate",
+    "postgraduate"
+  ],
   "source_id": "ssc-notice-board",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Combined Hindi Translators Examination, 2025 - Declaration of First Round of Tentative Allocation (FRTA)",
   "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_05112026.pdf"
 }

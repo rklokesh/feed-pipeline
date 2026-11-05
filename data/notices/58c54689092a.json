@@ -1,5 +1,21 @@
 {
+  "auto_published": true,
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-15",
+    "last_date": null,
+    "list": true,
+    "posts": "Protection Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Rajasthan Public Service Commission has released the exam district information and admit card schedule for the Protection Officer Examination 2025. Candidates can check their district details from 08-11-2026 and download admit cards from 12-11-2026 onwards using the SSO portal or official website.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने संरक्षण अधिकारी प्रतियोगी परीक्षा 2025 के लिए परीक्षा जिला और प्रवेश पत्र की जानकारी जारी कर दी है। अभ्यर्थी 08-11-2026 से परीक्षा जिला देख सकेंगे और 12-11-2026 से प्रवेश पत्र डाउनलोड कर सकते हैं।",
+    "title_en": "RPSC Protection Officer Examination 2025 Admit Card",
+    "title_hi": "आरपीएससी संरक्षण अधिकारी परीक्षा 2025 प्रवेश पत्र",
+    "type": "Admit card",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -17,6 +33,8 @@
   },
   "first_seen": "2026-11-05T11:16:09+00:00",
   "id": "58c54689092a",
+  "issue": 1074,
+  "issue_tidy": true,
   "kind": "admit_card",
   "org": "RPSC",
   "pdf": {
@@ -25,8 +43,12 @@
     "sha256": "903b9202674d3d4a84a53b3ca633fc37807fa31c76b4e6743061f1c2bc0df03b",
     "text_kind": "text"
   },
+  "published_at": "2026-11-05T11:24:19Z",
+  "qual": [
+    "graduate"
+  ],
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "05/11/2026 Press Note Regarding Exam District Information and Admit Card for Protection Officer - 2025",
   "url": "https://rpsc.rajasthan.gov.in/Static/PressNotes/20D762A0-0656-46C5-95E2-8AC965EAE696.pdf"
 }
