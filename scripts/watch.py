@@ -252,7 +252,12 @@ def known_hashes() -> dict:
 
 def process(src: dict, item: dict, ai_budget: list[int], hashes: dict) -> dict:
     kind = classify(item["title"])
-    rec = {"id": nid(src["id"] + "|" + ukey(src, item) if src.get("key") == "title" else item["url"]), "source_id": src["id"], "org": src["org"], "title": item["title"],
+    org = src["org"]
+    if src.get("org_from_title"):   # aggregators (Employment News): the employer is the first part of the title
+        first = clean(re.split(r"\s*\(|,|\s+-\s+", item["title"])[0])
+        if 3 <= len(first) <= 90:
+            org = first.title() if first.isupper() else first
+    rec = {"id": nid(src["id"] + "|" + ukey(src, item) if src.get("key") == "title" else item["url"]), "source_id": src["id"], "org": org, "title": item["title"],
            "url": item["url"], "board_url": src["url"], "kind": kind, "first_seen": NOW,
            "status": "pending_review", "fields": {}, "pdf": {}}
     if kind == "noise":

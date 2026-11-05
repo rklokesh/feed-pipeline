@@ -359,3 +359,10 @@ sources:
     render: static
     runner: india
     # deputation / Air Wing / contractual posts appear here, not on the rectt.bsf.gov.in portal
+  - id: employment-news-ads
+    org: Employment News
+    url: https://employmentnews.gov.in/NewEmp/MoreContentS.aspx?n=WebAdvertisement
+    render: static
+    runner: india
+    org_from_title: true   # each PDF is one employer's advert ("SAINIK SCHOOL NAGROTA, ... (Issue no 31 ...)")
+    # Government of India's weekly; carries central ministries, institutes and bodies whose own sites we can't read
