@@ -312,20 +312,37 @@ html[lang="hi"] .hidet { display: none; }
   html.v2 h1 { font-size: 1.6rem; line-height: 1.22; text-align: left; }
   html.v2 .title .meta, html.v2 .title .lead, html.v2 .title .exjump, html.v2 .status, html.v2 .title { text-align: left !important; justify-content: flex-start !important; justify-items: start; }
   html.v2 .top .nav-r a[href="/about/"] { display: none; }
-  /* sections: rounded cards; each fact as a small grey label above its value */
-  html.v2 .kv { border: 0 !important; border-radius: 16px; background: var(--soft); overflow: hidden; }
-  html.v2 .kv .h { background: none !important; border: 0 !important; padding: 14px 16px 4px !important; font-weight: 600; color: var(--ink) !important; }
-  html.v2 .kv .r { grid-template-columns: 1fr !important; gap: 2px !important; padding: 10px 16px !important; border: 0 !important;
-    border-top: 1px solid color-mix(in srgb, var(--ink) 7%, transparent) !important; }
+  /* heading: title first, then one quiet line of facts; no breadcrumb (the back button does that job) */
+  html.v2 .title .crumb { display: none; }
+  html.v2 main { margin-top: 20px; gap: 36px; }
+  html.v2 .title { gap: 8px; }
+  html.v2 .title .meta { font-size: .8125rem; color: var(--grey); order: 2; }
+  html.v2 .status { order: 1; gap: 6px 10px; margin-top: 2px; }
+  html.v2 #state { font-size: .875rem; color: color-mix(in srgb, var(--ink) 80%, var(--page)); }
+  html.v2 #left:empty, html.v2 #views[hidden] { display: none; }
+  html.v2 .exjump { order: 3; font-size: .875rem; }
+  html.v2 .title .lead { order: 4; margin-top: 6px; font-size: 1rem; line-height: 1.5; color: color-mix(in srgb, var(--ink) 75%, var(--page)); }
+  html.v2 .ogimg { order: 5; margin-top: 10px; }
+  html.v2 h1 { order: 0; }
+  /* sections: no boxes, no tint - a clear heading, then facts separated by hairlines */
+  html.v2 .kv { border: 0 !important; border-radius: 0; background: none !important; overflow: visible; }
+  html.v2 .kv .h { background: none !important; border: 0 !important; padding: 0 0 6px !important; font-weight: 600; font-size: 1.0625rem; color: var(--ink) !important; }
+  html.v2 .kv .r { grid-template-columns: 1fr !important; gap: 2px !important; padding: 12px 0 !important; border: 0 !important;
+    border-top: 1px solid color-mix(in srgb, var(--ink) 8%, transparent) !important; }
+  html.v2 .kv .r:last-child { border-bottom: 0 !important; }
   html.v2 .kv .r > :first-child { font-size: .8125rem; }
-  html.v2 .kv .p, html.v2 .kv .steps, html.v2 .kv .qa, html.v2 .kv .tbl { padding-left: 16px; padding-right: 16px; }
-  html.v2 .kv > :last-child { padding-bottom: 14px; }
-  html.v2 .toc { border-radius: 16px; overflow: hidden; border: 0 !important; background: var(--soft); }
-  html.v2 .toc summary { background: none !important; padding: 14px 16px !important; }
-  html.v2 .ogimg { border-radius: 16px; }
+  html.v2 .kv .tbl th, html.v2 .kv .tbl td { padding-left: 0; }
+  html.v2 .kv .p, html.v2 .kv .steps, html.v2 .kv .qa, html.v2 .kv > ol, html.v2 .kv > ul, html.v2 .kv > p { padding-left: 0 !important; padding-right: 0 !important; }
+  html.v2 .kv .steps { padding-left: 1.2em !important; }
+  html.v2 .actions { justify-items: stretch; }
+  html.v2 .kv a.r:active { background: color-mix(in srgb, var(--ink) 4%, transparent) !important; }
+  html.v2 .toc { border: 0 !important; border-top: 1px solid color-mix(in srgb, var(--ink) 8%, transparent) !important;
+    border-bottom: 1px solid color-mix(in srgb, var(--ink) 8%, transparent) !important; background: none; border-radius: 0; }
+  html.v2 .toc summary { background: none !important; padding: 14px 0 !important; }
+  html.v2 .hidet { border-top: 1px solid color-mix(in srgb, var(--ink) 8%, transparent); }
   /* actions: full-width pill buttons */
   html.v2 .actions { display: grid !important; gap: 10px !important; }
-  html.v2 .actions a { justify-content: center; padding: 13px 16px; border-radius: 999px; background: var(--soft); text-decoration: none; }
+  html.v2 .actions a { justify-content: center; padding: 13px 16px; border-radius: 999px; background: none; border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent); text-decoration: none; }
   html.v2 .actions a.share { background: #1FA855; color: #fff; }
   html.v2 .actions a.share svg path:first-child { fill: #fff; }
   html.v2 .actions a.share svg path:last-child { fill: #1FA855; }
@@ -433,8 +450,8 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
       <a class="r" href="/notice/cgpsc-microbiologist-recruitment-2026-apply-online-for-5-posts/"><span data-t="rel1">CGPSC Microbiologist Recruitment 2026 – Apply Online for 5 Posts</span><span class="v g num">8 Sep 2026</span></a>
       <a class="r" href="/notice/cgpsc-psychiatrist-recruitment-2026-last-date-extended-vacancy-i/"><span data-t="rel2">CGPSC Psychiatrist Recruitment 2026 – Last Date Extended &amp; Vacancy Increased</span><span class="v g num">21 Aug 2026</span></a>
       <a class="r" href="/notice/upsc-civil-services-main-exam-2026-written-result-out/"><span data-t="rel3">UPSC Civil Services Main Exam 2026 Written Result Out</span><span class="v g num">5 Nov 2026</span></a>
-      <a class="r" href="/notice/rpsc-programmer-result-2024-additional-candidate-list/"><span data-t="rel4">RPSC Programmer Result 2024 – Additional Candidate List</span><span class="v g num">4 Nov 2026</span></a>
-      <a class="r" href="/notice/rpsc-assistant-professor-yoga-vigyan-revised-result-2024-check/"><span data-t="rel5">RPSC Assistant Professor Yoga Vigyan Revised Result 2024 – Check</span><span class="v g num">4 Nov 2026</span></a>
+      <a class="r" href="/notice/uppsc-professor-cardiology-result-2026-medical-education-dept/"><span data-t="rel4">UPPSC Professor Cardiology Result 2026 – Medical Education Dept</span><span class="v g num">5 Nov 2026</span></a>
+      <a class="r" href="/notice/rpsc-programmer-result-2024-additional-candidate-list/"><span data-t="rel5">RPSC Programmer Result 2024 – Additional Candidate List</span><span class="v g num">4 Nov 2026</span></a>
     </section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Results", "item": "https://sarkarichart.pages.dev/?cat=results"}, {"@type": "ListItem", "position": 3, "name": "CGPSC State Engineering Service Result 2026 – Written Exam Merit List", "item": "https://sarkarichart.pages.dev/notice/cgpsc-state-engineering-service-written-exam-result-2026-out/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "CGPSC State Engineering Service Result 2026 – Written Exam Merit List", "url": "https://sarkarichart.pages.dev/notice/cgpsc-state-engineering-service-written-exam-result-2026-out/", "inLanguage": ["en-IN", "hi-IN"], "description": "Chhattisgarh Public Service Commission (CGPSC) has published the written exam result for the State Engineering Service Exam 2026. The written exam was conducted on 16 August 2026 for a total of 46 Assistant Engineer vacancies. Based on the performance and availability of eligible candidates, a total of 142 candidates have been shortlisted for the interview round. Candidates who appeared for the exam can check their roll numbers in the official result notice.", "datePublished": "2026-09-03", "dateModified": "2026-11-03", "isBasedOn": "https://psc.cg.gov.in/PDFs/Result/STATE_ENGINEERING_SERVICE_EXAM-2026_WRITTEN_EXAM_RESULT (03-09-2026).pdf", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.pages.dev/notice/cgpsc-state-engineering-service-written-exam-result-2026-out/og.png", "about": {"@type": "GovernmentOrganization", "name": "Chhattisgarh Public Service Commission (CGPSC)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When was the CGPSC State Engineering Service Written Exam 2026 conducted?", "acceptedAnswer": {"@type": "Answer", "text": "The written exam was conducted on 16 August 2026."}}, {"@type": "Question", "name": "How many candidates have been shortlisted for the interview?", "acceptedAnswer": {"@type": "Answer", "text": "A total of 142 candidates have been shortlisted for the interview."}}, {"@type": "Question", "name": "Where can I check the CGPSC State Engineering Service result?", "acceptedAnswer": {"@type": "Answer", "text": "You can check the result on the official website of CGPSC at psc.cg.gov.in."}}, {"@type": "Question", "name": "When will the interview dates be announced?", "acceptedAnswer": {"@type": "Answer", "text": "Interview dates will be announced separately by CGPSC in due course."}}]}]</script>
     <details class="hidet" lang="hi">
@@ -621,8 +638,8 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
       rel1: "CGPSC Microbiologist Recruitment 2026 – Apply Online for 5 Posts",
       rel2: "CGPSC Psychiatrist Recruitment 2026 – Last Date Extended & Vacancy Increased",
       rel3: "UPSC Civil Services Main Exam 2026 Written Result Out",
-      rel4: "RPSC Programmer Result 2024 – Additional Candidate List",
-      rel5: "RPSC Assistant Professor Yoga Vigyan Revised Result 2024 – Check",
+      rel4: "UPPSC Professor Cardiology Result 2026 – Medical Education Dept",
+      rel5: "RPSC Programmer Result 2024 – Additional Candidate List",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -719,8 +736,8 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
       rel1: "छत्तीसगढ़ लोक सेवा आयोग माइक्रोबायोलॉजिस्ट भर्ती 2026 – 5 पदों के लिए ऑनलाइन आवेदन",
       rel2: "छत्तीसगढ़ लोक सेवा आयोग मनोचिकित्सक भर्ती 2026 – अंतिम तिथि बढ़ी एवं पद बढ़े",
       rel3: "संघ लोक सेवा आयोग सिविल सेवा मुख्य परीक्षा 2026 लिखित परिणाम जारी",
-      rel4: "आरपीएससी प्रोग्रामर परिणाम 2024 – अतिरिक्त अभ्यर्थी सूची",
-      rel5: "आरपीएससी सहायक आचार्य योग विज्ञान संशोधित परिणाम 2024 – देखें",
+      rel4: "यूपीपीएससी प्रोफेसर कार्डियोलॉजी रिजल्ट 2026 – चिकित्सा शिक्षा विभाग",
+      rel5: "आरपीएससी प्रोग्रामर परिणाम 2024 – अतिरिक्त अभ्यर्थी सूची",
     },
   };
   let lang = "en";

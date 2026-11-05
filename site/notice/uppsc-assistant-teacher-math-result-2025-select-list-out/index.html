@@ -312,20 +312,37 @@ html[lang="hi"] .hidet { display: none; }
   html.v2 h1 { font-size: 1.6rem; line-height: 1.22; text-align: left; }
   html.v2 .title .meta, html.v2 .title .lead, html.v2 .title .exjump, html.v2 .status, html.v2 .title { text-align: left !important; justify-content: flex-start !important; justify-items: start; }
   html.v2 .top .nav-r a[href="/about/"] { display: none; }
-  /* sections: rounded cards; each fact as a small grey label above its value */
-  html.v2 .kv { border: 0 !important; border-radius: 16px; background: var(--soft); overflow: hidden; }
-  html.v2 .kv .h { background: none !important; border: 0 !important; padding: 14px 16px 4px !important; font-weight: 600; color: var(--ink) !important; }
-  html.v2 .kv .r { grid-template-columns: 1fr !important; gap: 2px !important; padding: 10px 16px !important; border: 0 !important;
-    border-top: 1px solid color-mix(in srgb, var(--ink) 7%, transparent) !important; }
+  /* heading: title first, then one quiet line of facts; no breadcrumb (the back button does that job) */
+  html.v2 .title .crumb { display: none; }
+  html.v2 main { margin-top: 20px; gap: 36px; }
+  html.v2 .title { gap: 8px; }
+  html.v2 .title .meta { font-size: .8125rem; color: var(--grey); order: 2; }
+  html.v2 .status { order: 1; gap: 6px 10px; margin-top: 2px; }
+  html.v2 #state { font-size: .875rem; color: color-mix(in srgb, var(--ink) 80%, var(--page)); }
+  html.v2 #left:empty, html.v2 #views[hidden] { display: none; }
+  html.v2 .exjump { order: 3; font-size: .875rem; }
+  html.v2 .title .lead { order: 4; margin-top: 6px; font-size: 1rem; line-height: 1.5; color: color-mix(in srgb, var(--ink) 75%, var(--page)); }
+  html.v2 .ogimg { order: 5; margin-top: 10px; }
+  html.v2 h1 { order: 0; }
+  /* sections: no boxes, no tint - a clear heading, then facts separated by hairlines */
+  html.v2 .kv { border: 0 !important; border-radius: 0; background: none !important; overflow: visible; }
+  html.v2 .kv .h { background: none !important; border: 0 !important; padding: 0 0 6px !important; font-weight: 600; font-size: 1.0625rem; color: var(--ink) !important; }
+  html.v2 .kv .r { grid-template-columns: 1fr !important; gap: 2px !important; padding: 12px 0 !important; border: 0 !important;
+    border-top: 1px solid color-mix(in srgb, var(--ink) 8%, transparent) !important; }
+  html.v2 .kv .r:last-child { border-bottom: 0 !important; }
   html.v2 .kv .r > :first-child { font-size: .8125rem; }
-  html.v2 .kv .p, html.v2 .kv .steps, html.v2 .kv .qa, html.v2 .kv .tbl { padding-left: 16px; padding-right: 16px; }
-  html.v2 .kv > :last-child { padding-bottom: 14px; }
-  html.v2 .toc { border-radius: 16px; overflow: hidden; border: 0 !important; background: var(--soft); }
-  html.v2 .toc summary { background: none !important; padding: 14px 16px !important; }
-  html.v2 .ogimg { border-radius: 16px; }
+  html.v2 .kv .tbl th, html.v2 .kv .tbl td { padding-left: 0; }
+  html.v2 .kv .p, html.v2 .kv .steps, html.v2 .kv .qa, html.v2 .kv > ol, html.v2 .kv > ul, html.v2 .kv > p { padding-left: 0 !important; padding-right: 0 !important; }
+  html.v2 .kv .steps { padding-left: 1.2em !important; }
+  html.v2 .actions { justify-items: stretch; }
+  html.v2 .kv a.r:active { background: color-mix(in srgb, var(--ink) 4%, transparent) !important; }
+  html.v2 .toc { border: 0 !important; border-top: 1px solid color-mix(in srgb, var(--ink) 8%, transparent) !important;
+    border-bottom: 1px solid color-mix(in srgb, var(--ink) 8%, transparent) !important; background: none; border-radius: 0; }
+  html.v2 .toc summary { background: none !important; padding: 14px 0 !important; }
+  html.v2 .hidet { border-top: 1px solid color-mix(in srgb, var(--ink) 8%, transparent); }
   /* actions: full-width pill buttons */
   html.v2 .actions { display: grid !important; gap: 10px !important; }
-  html.v2 .actions a { justify-content: center; padding: 13px 16px; border-radius: 999px; background: var(--soft); text-decoration: none; }
+  html.v2 .actions a { justify-content: center; padding: 13px 16px; border-radius: 999px; background: none; border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent); text-decoration: none; }
   html.v2 .actions a.share { background: #1FA855; color: #fff; }
   html.v2 .actions a.share svg path:first-child { fill: #fff; }
   html.v2 .actions a.share svg path:last-child { fill: #1FA855; }
@@ -426,11 +443,11 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
     </section>
     <section class="kv rel" data-t-aria="relH">
       <h2 class="h" data-t="relH">More notices</h2>
-      <a class="r" href="/notice/uppsc-prashikshak-bee-keeping-result-2026-check-selection-list/"><span data-t="rel0">UPPSC Prashikshak Bee Keeping Result 2026 – Check Selection List</span><span class="v g num">3 Nov 2026</span></a>
-      <a class="r" href="/notice/uppsc-regional-inspector-technical-document-verification-notice/"><span data-t="rel1">UPPSC Regional Inspector Technical Document Verification Notice 2026</span><span class="v g num">30 Oct 2026</span></a>
-      <a class="r" href="/notice/uppsc-medical-officer-result-2026-homoeopathic-dept-screening-ex/"><span data-t="rel2">UPPSC Medical Officer Result 2026 – Homoeopathic Dept Revised List</span><span class="v g num">30 Oct 2026</span></a>
-      <a class="r" href="/notice/uppsc-lecturer-homoeopathic-pharmacy-result-2026-check-final-lis/"><span data-t="rel3">UPPSC Lecturer Homoeopathic Pharmacy Result 2026 – Check Final List</span><span class="v g num">30 Oct 2026</span></a>
-      <a class="r" href="/notice/uppsc-lecturer-textile-technology-final-result-2021/"><span data-t="rel4">UPPSC Lecturer Textile Technology Final Result 2021</span><span class="v g num">22 Oct 2026</span></a>
+      <a class="r" href="/notice/uppsc-professor-cardiology-result-2026-medical-education-dept/"><span data-t="rel0">UPPSC Professor Cardiology Result 2026 – Medical Education Dept</span><span class="v g num">5 Nov 2026</span></a>
+      <a class="r" href="/notice/uppsc-prashikshak-bee-keeping-result-2026-check-selection-list/"><span data-t="rel1">UPPSC Prashikshak Bee Keeping Result 2026 – Check Selection List</span><span class="v g num">3 Nov 2026</span></a>
+      <a class="r" href="/notice/uppsc-regional-inspector-technical-document-verification-notice/"><span data-t="rel2">UPPSC Regional Inspector Technical Document Verification Notice 2026</span><span class="v g num">30 Oct 2026</span></a>
+      <a class="r" href="/notice/uppsc-medical-officer-result-2026-homoeopathic-dept-screening-ex/"><span data-t="rel3">UPPSC Medical Officer Result 2026 – Homoeopathic Dept Revised List</span><span class="v g num">30 Oct 2026</span></a>
+      <a class="r" href="/notice/uppsc-lecturer-homoeopathic-pharmacy-result-2026-check-final-lis/"><span data-t="rel4">UPPSC Lecturer Homoeopathic Pharmacy Result 2026 – Check Final List</span><span class="v g num">30 Oct 2026</span></a>
     </section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Results", "item": "https://sarkarichart.pages.dev/?cat=results"}, {"@type": "ListItem", "position": 3, "name": "UPPSC Assistant Teacher Math Result 2025 – Select List Out", "item": "https://sarkarichart.pages.dev/notice/uppsc-assistant-teacher-math-result-2025-select-list-out/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "UPPSC Assistant Teacher Math Result 2025 – Select List Out", "url": "https://sarkarichart.pages.dev/notice/uppsc-assistant-teacher-math-result-2025-select-list-out/", "inLanguage": ["en-IN", "hi-IN"], "description": "The Uttar Pradesh Public Service Commission (UPPSC) has published the provisional selection list for the Assistant Teacher Trained Graduate (M./F.) Examination 2025 in Math. The list corresponds to Advertisement No. A-5/E-1/2025. Candidates who participated in the recruitment process can view the notice to verify their roll numbers, names, categories, and remarks.", "datePublished": "2026-10-28", "dateModified": "2026-10-28", "isBasedOn": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnfpuRH59X6AccoBLogdbR7", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.pages.dev/notice/uppsc-assistant-teacher-math-result-2025-select-list-out/og.png", "about": {"@type": "GovernmentOrganization", "name": "Uttar Pradesh Public Service Commission (UPPSC)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When was the UPPSC Assistant Teacher Math provisional select list released?", "acceptedAnswer": {"@type": "Answer", "text": "The list was released on 28 November 2026."}}, {"@type": "Question", "name": "Which advertisement number corresponds to this exam?", "acceptedAnswer": {"@type": "Answer", "text": "The advertisement number is A-5/E-1/2025."}}]}]</script>
     <details class="hidet" lang="hi">
@@ -593,11 +610,11 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
       ex4: "UPPSC Assistant Teacher Document Verification 2025",
       exs4: "Document Verification",
       relH: "More notices",
-      rel0: "UPPSC Prashikshak Bee Keeping Result 2026 – Check Selection List",
-      rel1: "UPPSC Regional Inspector Technical Document Verification Notice 2026",
-      rel2: "UPPSC Medical Officer Result 2026 – Homoeopathic Dept Revised List",
-      rel3: "UPPSC Lecturer Homoeopathic Pharmacy Result 2026 – Check Final List",
-      rel4: "UPPSC Lecturer Textile Technology Final Result 2021",
+      rel0: "UPPSC Professor Cardiology Result 2026 – Medical Education Dept",
+      rel1: "UPPSC Prashikshak Bee Keeping Result 2026 – Check Selection List",
+      rel2: "UPPSC Regional Inspector Technical Document Verification Notice 2026",
+      rel3: "UPPSC Medical Officer Result 2026 – Homoeopathic Dept Revised List",
+      rel4: "UPPSC Lecturer Homoeopathic Pharmacy Result 2026 – Check Final List",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -681,11 +698,11 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
       ex4: "उत्तर प्रदेश लोक सेवा आयोग सहायक अध्यापक अभिलेख सत्यापन 2025",
       exs4: "अभिलेख सत्यापन",
       relH: "और सूचनाएँ",
-      rel0: "यूपीपीएससी प्रशिक्षक मधुमक्खी पालन रिजल्ट 2026 – चयन सूची देखें",
-      rel1: "उत्तर प्रदेश लोक सेवा आयोग प्रादेशिक निरीक्षक तकनीकी अभिलेख सत्यापन नोटिस 2026",
-      rel2: "यूपीपीएससी मेडिकल ऑफिसर रिजल्ट 2026 – होम्योपैथिक विभाग संशोधित सूची",
-      rel3: "यूपीपीएससी लेक्चरर होम्योपैथिक फार्मेसी रिजल्ट 2026 – चयन सूची जारी",
-      rel4: "उत्तर प्रदेश लोक सेवा आयोग प्राध्यापक वस्त्र प्रौद्योगिकी अंतिम परिणाम 2021",
+      rel0: "यूपीपीएससी प्रोफेसर कार्डियोलॉजी रिजल्ट 2026 – चिकित्सा शिक्षा विभाग",
+      rel1: "यूपीपीएससी प्रशिक्षक मधुमक्खी पालन रिजल्ट 2026 – चयन सूची देखें",
+      rel2: "उत्तर प्रदेश लोक सेवा आयोग प्रादेशिक निरीक्षक तकनीकी अभिलेख सत्यापन नोटिस 2026",
+      rel3: "यूपीपीएससी मेडिकल ऑफिसर रिजल्ट 2026 – होम्योपैथिक विभाग संशोधित सूची",
+      rel4: "यूपीपीएससी लेक्चरर होम्योपैथिक फार्मेसी रिजल्ट 2026 – चयन सूची जारी",
     },
   };
   let lang = "en";
