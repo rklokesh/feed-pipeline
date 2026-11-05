@@ -1,30 +1,11 @@
 {
-  "auto_published": true,
   "board_url": "https://nta.ac.in/",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": true,
-    "posts": "Junior Research Fellowship and Lectureship",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "",
-    "summary_en": "NTA has extended the last date for submitting online applications for the Joint CSIR-UGC NET December 2026. Candidates should check the updated schedule and apply on the official portal.",
-    "summary_hi": "एनटीए ने संयुक्त सीएसआईआर यूजीसी नेट दिसंबर 2026 के लिए ऑनलाइन आवेदन जमा करने की अंतिम तिथि बढ़ा दी है। उम्मीदवार संशोधित शेड्यूल देखें और आधिकारिक पोर्टल पर आवेदन करें।",
-    "title_en": "Joint CSIR UGC NET December 2026 Application Date Extension",
-    "title_hi": "संयुक्त सीएसआईआर यूजीसी नेट दिसंबर 2026 आवेदन तिथि विस्तार",
-    "type": "Job",
-    "vacancies": null
-  },
-  "exam": {},
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-05T12:43:48+00:00",
   "id": "4621daf07177",
-  "issue": 1087,
-  "issue_tidy": true,
   "kind": "update",
   "org": "NTA",
   "pdf": {
@@ -33,13 +14,8 @@
     "sha256": "30c1394c520cae2fe6dc5bcede10e3c0ff18c07aa39783d9581841b104e6b7aa",
     "text_kind": "scanned"
   },
-  "published_at": "2026-11-05T13:16:28Z",
-  "qual": [
-    "graduate",
-    "postgraduate"
-  ],
   "source_id": "nta-home",
-  "status": "approved",
+  "status": "pending_review",
   "title": "Public Notice for Extension of Last Date for Submission of Online Application Form for Joint CSIR-UGC NET December 2026 Read More",
   "url": "https://nta.ac.in/Download/Notice/Notice_20261105175642.pdf"
 }

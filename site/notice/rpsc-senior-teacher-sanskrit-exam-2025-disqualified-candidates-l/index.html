@@ -271,18 +271,22 @@ html[lang="hi"] .hidet { display: none; }
   .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 }
 /* Floating back button (phones only): round frosted glass, iOS-style chevron (Hugeicons arrow-left-01, stroke rounded) */
+/* Phones: ONE round glass back button. It starts where the header's back link sits, scrolls up with the header
+   and then stays pinned in the top-left corner (same button the whole time, no swap). Hugeicons arrow-left-01. */
 .fback { display: none; }
 @media (max-width: 640px) {
+  .top .hback { visibility: hidden; width: 44px; height: 44px; }   /* keeps the header's left slot so the logo stays centred */
   .fback { display: grid; place-items: center; position: fixed; z-index: 40; width: 44px; height: 44px; border-radius: 50%;
-    top: calc(env(safe-area-inset-top, 0px) + 12px); left: max(12px, env(safe-area-inset-left, 0px));
+    top: max(calc(env(safe-area-inset-top, 0px) + 12px), var(--fb-y, 64px)); left: max(16px, env(safe-area-inset-left, 0px));
     color: var(--ink); background: color-mix(in srgb, var(--page) 55%, transparent);
     -webkit-backdrop-filter: blur(18px) saturate(180%); backdrop-filter: blur(18px) saturate(180%);
     border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
-    box-shadow: 0 4px 18px color-mix(in srgb, #000 14%, transparent), inset 0 1px 0 color-mix(in srgb, #fff 45%, transparent);
-    opacity: 0; transform: scale(.85); pointer-events: none; transition: opacity .2s ease, transform .2s ease; }
-  .fback.on { opacity: 1; transform: none; pointer-events: auto; }
+    box-shadow: 0 4px 18px color-mix(in srgb, #000 12%, transparent), inset 0 1px 0 color-mix(in srgb, #fff 45%, transparent);
+    touch-action: manipulation; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none;
+    transition: transform .12s ease; }
   .fback:active { transform: scale(.92); }
-  .fback svg { margin-left: -2px; }
+  .fback svg { margin-left: -2px; pointer-events: none; }
+  .fback:hover { text-decoration: none; }
 }
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .fback { background: var(--soft); } }
 @media (prefers-reduced-motion: reduce) { .fback { transition: none; } }
@@ -690,13 +694,22 @@ html[lang="hi"] .hidet { display: none; }
 <script src="/elig.js" defer></script>
 <a class="fback" id="fback" href="/" data-t-aria="allNotices" aria-label="All notices"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6C15 6 9 10.4189 9 12C9 13.5812 15 18 15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 <script>(function(){
-  // Phones: a round glass back button stays in the top-left corner once the page header has scrolled away.
-  var b=document.getElementById("fback"),h=document.querySelector("header.top");
-  if(h&&"IntersectionObserver"in window)new IntersectionObserver(function(e){b.classList.toggle("on",!e[0].isIntersecting)}).observe(h);
-  b.addEventListener("click",function(ev){
+  var b=document.getElementById("fback"),slot=document.querySelector(".top .hback"),root=document.documentElement,raf=0;
+  // follow the header's back slot while it is on screen; CSS max() pins it at the top once the slot scrolls past
+  function place(){raf=0;if(slot){var r=slot.getBoundingClientRect();root.style.setProperty("--fb-y",(r.top+(r.height-44)/2)+"px");}}
+  function ask(){if(!raf)raf=requestAnimationFrame(place);}
+  place();addEventListener("scroll",ask,{passive:true});addEventListener("resize",ask);addEventListener("load",place);
+  if(document.fonts)document.fonts.ready.then(place);
+  function go(){
     // came from our own list: go back so the list keeps its place; otherwise open the home page
-    try{var r=document.referrer&&new URL(document.referrer);if(r&&r.origin===location.origin&&history.length>1){ev.preventDefault();history.back();}}catch(e){}
-  });
+    try{var r=document.referrer&&new URL(document.referrer);if(r&&r.origin===location.origin&&history.length>1){history.back();return;}}catch(e){}
+    location.href="/";
+  }
+  // act on the first tap: iOS can swallow the click right after a scroll, so a finger lifting on the button counts
+  var sx=0,sy=0,touched=false;
+  b.addEventListener("touchstart",function(e){var t=e.touches[0];sx=t.clientX;sy=t.clientY;touched=true;},{passive:true});
+  b.addEventListener("touchend",function(e){var t=e.changedTouches[0];if(touched&&Math.abs(t.clientX-sx)<12&&Math.abs(t.clientY-sy)<12){e.preventDefault();go();}touched=false;});
+  b.addEventListener("click",function(e){e.preventDefault();go();});
 })();</script>
 </body>
 </html>
