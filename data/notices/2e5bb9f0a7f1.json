@@ -1,15 +1,37 @@
 {
+  "auto_published": true,
   "board_url": "https://psc.wb.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant Translator and Deputy Director",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "WBPSC has issued a corrigendum notice regarding the recruitment to the posts of Assistant Translator and Deputy Director. Candidates should check the official notice for updated details.",
+    "summary_hi": "पश्चिम बंगाल लोक सेवा आयोग ने सहायक अनुवादक और उप निदेशक के पदों पर भर्ती के संबंध में एक शुद्धिपत्र जारी किया है। उम्मीदवार अद्यतन विवरण के लिए आधिकारिक सूचना देखें।",
+    "title_en": "WBPSC Assistant Translator and Deputy Director Recruitment Corrigendum",
+    "title_hi": "पप्रि बंगाल लोक सेवा आयोग सहायक अनुवादक और उप निदेशक भर्ती शुद्धिपत्र",
+    "type": "Update",
+    "vacancies": null
+  },
   "fields": {},
   "first_seen": "2026-11-05T14:38:43+00:00",
   "id": "2e5bb9f0a7f1",
+  "issue": 1092,
+  "issue_tidy": true,
   "kind": "update",
   "org": "WBPSC",
   "pdf": {
     "error": "HTTPError: 404 Client Error:  for url: https://psc.wb.gov.in/error-page.jsp/data1/data1/datadisk/WBPSC_DATA/advertisement/An_20261105201218_IDO_short_announcement_15_2024.pdf%20(No%20such%20file%20or%"
   },
+  "published_at": "2026-11-05T14:58:16Z",
+  "qual": [
+    "graduate"
+  ],
   "source_id": "wbpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "CORRIGENDUM NOTICE IN CONNECTION WITH RECRUITMENT TO THE POSTS OF ASSISTANT TRANSLATOR IN BENGALI, NEPALI AND SANTHALI VIDE COMMISSION'S ADVT. NO. 9(1)/2023, 9(2)/2023 AND 9(3)/2023 RESPECTIVELY. IMPORTANT NOTICE FOR RECRUITMENT TO THE POST OF DEPUTY DIRECTOR OF TECHNICAL EDUCATION AND TRAINING IN W",
   "url": "https://psc.wb.gov.in/Download?param1=An_20261105201218_IDO_short_announcement_15_2024.pdf&param2=advertisement"
 }
