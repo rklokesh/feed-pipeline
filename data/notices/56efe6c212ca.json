@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-12-04",
+    "list": true,
+    "posts": "Isolated Categories",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Frequently asked questions and application instructions for Railway Recruitment Board CEN 09/2026 for isolated categories. Read the guidelines and apply online.",
+    "summary_hi": "रेलवे भर्ती बोर्ड केंद्रीय रोजगार सूचना संख्या 09/2026 के अंतर्गत पृथक्कृत श्रेणियों की भर्ती के लिए अक्सर पूछे जाने वाले प्रश्न और निर्देश।",
+    "title_en": "RRB Isolated Categories Examination 2026",
+    "title_hi": "रेलवे भर्ती बोर्ड पृथक्कृत श्रेणियां परीक्षा 2026",
+    "type": "Job",
+    "vacancies": null
+  },
+  "exam": {},
   "extraction": {
     "ai": null
   },
@@ -22,6 +39,8 @@
   },
   "first_seen": "2026-11-05T07:13:21+00:00",
   "id": "56efe6c212ca",
+  "issue": 1070,
+  "issue_tidy": true,
   "kind": "info",
   "org": "RRB",
   "pdf": {
@@ -30,8 +49,17 @@
     "sha256": "ec3953dee13bfc9b306f4cdce28b5edbcfb0c748c81f7fec33d0e0ecc8bfb6e7",
     "text_kind": "text"
   },
+  "published_at": "2026-11-05T07:33:56Z",
+  "qual": [
+    "10th",
+    "12th",
+    "iti",
+    "diploma",
+    "graduate",
+    "postgraduate"
+  ],
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RRB CEN 09/2026: FAQs Isolated CategoriesCEN 09 2026 (English)",
   "url": "https://rrb.indianrailways.gov.in/-/image/1793861357883FAQs_Isolated_CategoriesCEN_09_2026_(English).pdf/examsDocuments"
 }

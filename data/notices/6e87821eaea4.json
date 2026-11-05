@@ -1,5 +1,20 @@
 {
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Refund or chargeback notice",
+    "summary_en": "Notice regarding the application fee refund for RRB CEN 09/2025.",
+    "summary_hi": "आरआरबी सीईएन 09/2025 के लिए आवेदन शुल्क रिफंड के संबंध में सूचना।",
+    "title_en": "RRB CEN 09/2025 Application Fee Refund Notice",
+    "title_hi": "आरआरबी सीईएन 09/2025 आवेदन शुल्क रिफंड सूचना",
+    "type": "Update",
+    "vacancies": null
+  },
   "fields": {},
   "first_seen": "2026-11-05T07:13:21+00:00",
   "id": "6e87821eaea4",
@@ -12,7 +27,7 @@
     "text_kind": "not-pdf"
   },
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "RRB CEN 09/2025: Notice on Application Fee Fund (CEN 09-2025) 04 11 26",
   "url": "https://rrb.indianrailways.gov.in/-/image/1793862812933Notice_on_Application_Fee_Fund_(CEN_09-2025)_04_11_26.pdf/examsDocuments"
 }
