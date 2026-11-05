@@ -1,0 +1,94 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://cwceportal.com/cwc_careers.html",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "___________________________________________________________ Advertisement No CWC/I-Manpower/DR/Rectt/2026/01 Date: 17.10.2026 Central Warehousing Corporation, a Navratna, Central Public Sector",
+      "source": "rule",
+      "value": "CWC/I-Manpower/DR/Rectt/2026/01 Date"
+    },
+    "age_limit": {
+      "evidence": {
+        "as_on": "15.11.2026",
+        "max": "28 Years (i.e. candidates should not have been born earlier than 16.11.1998 and later than 15.11.2008; both days inclusive)"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": "2026-11-15",
+        "max": 28,
+        "min": null
+      }
+    },
+    "apply_last": {
+      "evidence": "S No Post Name of the No. of vacancies Scale of AGE (As on last date of Code Post Pay (IDA) submission of Application i.e. 15.11.2026) Current Backlog Total (Rs.) 1 01 Assistant SC-09 - 70 40000- 28 Years (i.e. c",
+      "source": "rule",
+      "value": "2026-11-15"
+    },
+    "apply_start": {
+      "evidence": "17.10.2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-10-17"
+    },
+    "apply_url": {
+      "evidence": "www.cewacor.nic.in",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "www.cewacor.nic.in"
+    },
+    "fee_last": {
+      "evidence": "15.11.2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-15"
+    },
+    "post_names": {
+      "evidence": {
+        "Assistant Manager (Engineering)-Civil": "Assistant Manager (Engineering)-Civil",
+        "Assistant Manager (Engineering)-Electrical": "Assistant Manager (Engineering)-Electrical",
+        "Assistant Manager (Engineering)-Mechanical": "Assistant Manager (Engineering)-Mechanical",
+        "Assistant Manager (Finance)": "Assistant Manager (Finance)",
+        "Assistant Manager (General)": "Assistant Manager (General)",
+        "Assistant Manager (Technical)": "Assistant Manager (Technical)",
+        "Junior Executive (General)": "Junior Executive (General)",
+        "Junior Executive (Technical)": "Junior Executive (Technical)"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Assistant Manager (General)",
+        "Assistant Manager (Technical)",
+        "Assistant Manager (Finance)",
+        "Assistant Manager (Engineering)-Civil",
+        "Assistant Manager (Engineering)-Electrical",
+        "Assistant Manager (Engineering)-Mechanical",
+        "Junior Executive (General)",
+        "Junior Executive (Technical)"
+      ]
+    },
+    "total_vacancies": {
+      "evidence": "70 + 60 + 10 + 22 + 05 + 04 + 78 + 78 = 267",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 267
+    }
+  },
+  "first_seen": "2026-11-05T18:09:02+00:00",
+  "id": "fad536b37237",
+  "kind": "notification",
+  "org": "Central Warehousing Corporation",
+  "pdf": {
+    "bytes": 1724645,
+    "pages": 52,
+    "sha256": "f5f975bf19cf9be99a917aa6d164fd7c110024cb070b52f56679d68b25527e96",
+    "text_kind": "text"
+  },
+  "source_id": "cwc-careers",
+  "status": "pending_review",
+  "title": "Advertisement No CWC/I-Manpower/DR/Rectt/2026/01 Click here to know more",
+  "url": "https://cwceportal.com/Careers/Guidelines/45/45_Detailed%20Advertisement_7109fe46-7e18-4b68-84a5-8b6d6708e571.pdf"
+}

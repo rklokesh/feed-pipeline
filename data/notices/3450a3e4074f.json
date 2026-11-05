@@ -1,0 +1,28 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://cwceportal.com/cwc_careers.html",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "ble candidates shall have to apply Online through the link: https://www.cwceportal.com/Careers. The Link for Online Application shall remain active from 09.10.2026 to 23.10.20",
+      "source": "rule",
+      "value": "https://www.cwceportal.com/Careers"
+    }
+  },
+  "first_seen": "2026-11-05T18:09:02+00:00",
+  "id": "3450a3e4074f",
+  "kind": "other",
+  "org": "Central Warehousing Corporation",
+  "pdf": {
+    "bytes": 301301,
+    "pages": 4,
+    "sha256": "043993f79e3563cb43d1fa7abf0de44f0179407796118c51b84f27c7be941bd2",
+    "text_kind": "text"
+  },
+  "source_id": "cwc-careers",
+  "status": "pending_review",
+  "title": "Engagement of Consultant at Corporate Office, New Delhi Click here to know more",
+  "url": "https://cwceportal.com/Careers/Guidelines/44/44_Notice%20for%20Engagement%20of%20Consultant_482c03e5-ba5f-47ba-8a35-d40667a0c446.pdf"
+}
