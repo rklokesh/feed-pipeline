@@ -103,6 +103,43 @@ except Exception:  # noqa: BLE001
     STATE_BOARDS = []
 
 
+# Trending: open jobs people chase - many posts, plenty of time left to apply, big national boards first.
+POPULAR = re.compile(r"^(SSC|RRB|RRC|UPSC|IBPS|SBI|LIC|RBI|NABARD|BSF|CISF|CRPF|ITBP|India Post|UPPSC|UPSSSC|UP Police|BPSC|BSSC|CSBC|BPSSC|"
+                     r"RPSC|RSSB|MPPSC|MPESB|HSSC|DSSSB|UKSSSC|JKSSB|PSSSB|NTA|KVS)", re.I)
+
+
+def vacancies(n) -> int:
+    c, pg = n.get("card") or {}, n.get("page") or {}
+    tot = 0
+    for v in pg.get("vacancies") or []:
+        t = re.sub(r"[^0-9]", "", str((v or {}).get("total", "")) if isinstance(v, dict) else "")
+        tot += int(t) if t and len(t) < 7 else 0
+    try:
+        card = int(re.sub(r"[^0-9]", "", str(c.get("vacancies") or "")) or 0)
+    except ValueError:
+        card = 0
+    return max(tot, card)
+
+
+def mark_trending(items, top=8):
+    import math
+    today = dt.datetime.now(IST).date()
+    scored = []
+    for i in items:
+        if i["type"] != "Job" or not i.get("last") or not i.get("page"):
+            continue
+        days = (dt.date.fromisoformat(i["last"]) - today).days
+        vac = i.get("_vac") or 0
+        if days < 7 or vac < 50:            # needs real time to apply and a real number of posts
+            continue
+        score = math.log10(vac + 1) + (0.6 if POPULAR.match(i.get("org") or "") else 0) + min(days, 60) / 60
+        scored.append((score, i))
+    for rank, (_, i) in enumerate(sorted(scored, key=lambda x: -x[0])[:top], 1):
+        i["tr"] = rank
+    for i in items:
+        i.pop("_vac", None)
+
+
 def build():
     items = []
     for f in sorted(NOTICES.glob("*.json")):
@@ -137,8 +174,10 @@ def build():
         if it["type"] == "Job" and (el.get("age_max") or el.get("age_min") or el.get("qual")):
             it["e"] = {k: v for k, v in {"min": el.get("age_min"), "max": el.get("age_max"), "on": el.get("age_on"), "relax": el.get("relax") or None,
                                          "qual": el.get("qual"), "dom": el.get("domicile")}.items() if v}
+        it["_vac"] = vacancies(n)
         items.append(it)
     items.sort(key=lambda i: i["publishedAt"], reverse=True)
+    mark_trending(items)
     html = INDEX.read_text(encoding="utf-8")
     if not items:
         print("no approved notices yet: homepage keeps its sample list"); return
