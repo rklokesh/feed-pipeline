@@ -1,11 +1,30 @@
 {
+  "auto_published": true,
   "board_url": "https://rssb.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Supervisor Woman",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Rajasthan Staff Selection Board has released the document verification schedule and online scrutiny form dates for the Supervisor Woman exam 2026. Selected candidates must fill the form from 12-11-2026 to 21-11-2026.",
+    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने पर्यवेक्षक महिला परीक्षा 2026 के लिए दस्तावेज सत्यापन अनुसूची और ऑनलाइन संवीक्षा फॉर्म भरने की तिथियां जारी कर दी हैं। चयनित उम्मीदवार 12-11-2026 से 21-11-2026 तक फॉर्म भरें।",
+    "title_en": "RSSB Supervisor Woman DV Schedule 2026",
+    "title_hi": "राजस्थान कर्मचारी चयन बोर्ड पर्यवेक्षक महिला दस्तावेज सत्यापन अनुसूची",
+    "type": "Update",
+    "vacancies": 72
+  },
+  "exam": {},
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-05T12:08:32+00:00",
   "id": "d7e345a94dbe",
+  "issue": 1088,
+  "issue_tidy": true,
   "kind": "result",
   "org": "RSSB Rajasthan",
   "pdf": {
@@ -14,8 +33,12 @@
     "sha256": "4a095aa71dd26c44adfb57b12ecfda8a14c6b5eccc47b9fd4b67bd074e429493",
     "text_kind": "text"
   },
+  "published_at": "2026-11-05T13:16:52Z",
+  "qual": [
+    "graduate"
+  ],
   "source_id": "rssb-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "05-11-2026 - Supervisor (Woman) 2026 : Online Scrutiny Form and DV Schedule for Selected Candidates",
   "url": "https://rssb.rajasthan.gov.in/storage/news_item/1793879153.pdf"
 }

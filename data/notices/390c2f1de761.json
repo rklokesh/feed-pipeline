@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://www.upsc.gov.in/whats-new",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Civil Services",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "The Union Public Service Commission has released the written result for the Civil Services Main Examination 2026. Qualified candidates must update and submit their detailed application form online.",
+    "summary_hi": "संघ लोक सेवा आयोग ने सिविल सेवा मुख्य परीक्षा 2026 का लिखित परिणाम जारी कर दिया है। सफल उम्मीदवारों को अपना विस्तृत आवेदन पत्र ऑनलाइन अपडेट और जमा करना होगा।",
+    "title_en": "UPSC Civil Services Main Examination 2026 Written Result",
+    "title_hi": "संघ लोक सेवा आयोग सिविल सेवा मुख्य परीक्षा 2026 लिखित परीक्षा परिणाम",
+    "type": "Result",
+    "vacancies": null
+  },
+  "exam": {},
   "extraction": {
     "ai": null
   },
@@ -17,6 +34,8 @@
   },
   "first_seen": "2026-11-05T13:08:35+00:00",
   "id": "390c2f1de761",
+  "issue": 1086,
+  "issue_tidy": true,
   "kind": "result",
   "org": "UPSC",
   "pdf": {
@@ -26,8 +45,12 @@
     "text_kind": "text",
     "via": "https://www.upsc.gov.in/sites/default/files/WR-CSM-2026-Engl-RollList-05112026.pdf"
   },
+  "published_at": "2026-11-05T13:16:23Z",
+  "qual": [
+    "graduate"
+  ],
   "source_id": "upsc-whats-new",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Written Result: Civil Services (Main) Examination, 2026",
   "url": "https://www.upsc.gov.in/whats-new/Civil%20Services%20%28Main%29%20Examination%2C%202026/Written%20Result"
 }

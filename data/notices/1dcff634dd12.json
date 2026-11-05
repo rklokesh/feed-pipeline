@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://www.upsc.gov.in/whats-new",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Civil Services (IAS, IPS, IFS and other Central Services)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Union Public Service Commission has declared the written result for Civil Services Main Examination 2026. Qualified candidates are eligible for the personality test and must submit details online.",
+    "summary_hi": "संघ लोक सेवा आयोग ने सिविल सेवा मुख्य परीक्षा 2026 का लिखित परिणाम घोषित कर दिया है। सफल उम्मीदवार व्यक्तित्व परीक्षण के लिए पात्र हैं और उन्हें ऑनलाइन विवरण जमा करना होगा।",
+    "title_en": "UPSC Civil Services Main Exam 2026 Written Result",
+    "title_hi": "संघ लोक सेवा आयोग सिविल सेवा मुख्य परीक्षा 2026 लिखित परिणाम",
+    "type": "Result",
+    "vacancies": null
+  },
+  "exam": {},
   "extraction": {
     "ai": null
   },
@@ -17,6 +34,8 @@
   },
   "first_seen": "2026-11-05T13:08:35+00:00",
   "id": "1dcff634dd12",
+  "issue": 1085,
+  "issue_tidy": true,
   "kind": "result",
   "org": "UPSC",
   "pdf": {
@@ -26,8 +45,12 @@
     "text_kind": "text",
     "via": "https://www.upsc.gov.in/sites/default/files/WR-CSM-2026-Engl-NameList-05112026.pdf"
   },
+  "published_at": "2026-11-05T13:15:08Z",
+  "qual": [
+    "graduate"
+  ],
   "source_id": "upsc-whats-new",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Written Result (with name): Civil Services (Main) Examination, 2026",
   "url": "https://www.upsc.gov.in/whats-new/Civil%20Services%20%28Main%29%20Examination%2C%202026/Written%20Result%20%28with%20name%29"
 }
