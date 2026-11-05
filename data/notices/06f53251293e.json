@@ -1,0 +1,27 @@
+{
+  "board_url": "https://ssc.gov.in/home/notice-board",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "e designated login module on the website of the Commission (https://ssc.gov.in/) with effect from 13.11.2026 (05:00 PM onwards). Any candidate failing to atten",
+      "source": "rule",
+      "value": "https://ssc.gov.in/"
+    }
+  },
+  "first_seen": "2026-11-05T11:21:58+00:00",
+  "id": "06f53251293e",
+  "kind": "result",
+  "org": "SSC",
+  "pdf": {
+    "bytes": 255180,
+    "pages": 7,
+    "sha256": "070fbd2e9daa1a824093de9a7cff56acde6c1e885cee79d1442c88c6cc5d1235",
+    "text_kind": "text"
+  },
+  "source_id": "ssc-notice-board",
+  "status": "pending_review",
+  "title": "Combined Hindi Translators Examination, 2025 - Declaration of First Round of Tentative Allocation (FRTA)",
+  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_05112026.pdf"
+}

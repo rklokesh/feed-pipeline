@@ -1,7 +1,15 @@
-# Review queue — 1 pending
+# Review queue — 9 pending
 
-_Updated 2026-11-05T08:47:40+00:00_
+_Updated 2026-11-05T11:21:58+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-11-05 | RRC Northern Railway | notification | 04.11.2026 Kind Attention: Employment Notification No.: RRC/NR 01/2026/S&G dated 04/11/202 | — | — | — | — | [open](https://rrcnr.org/downloads/S&G_QuotaNotification_2026.pdf) |
+| 2026-11-05 | SSC | result | Combined Hindi Translators Examination, 2025 - Declaration of First Round of Tentative All | — | — | — | — | [open](https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_05112026.pdf) |
+| 2026-11-05 | CISF | syllabus | Recruitment of Paramedical Staff in CISF: Syllabus for Written Examination: Reg Conduct of | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=QtbidJ3o5L4QSttBg6JNJX1TyDfEgHzzksmzSHrgb5IFGzKoSpWzagQAtIB3AOdkWjeedLD7IcQrDkOldCG11g) |
+| 2026-11-05 | RPSC | admit_card | 05/11/2026 Press Note Regarding Exam District Information and Admit Card for Protection Of | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/PressNotes/20D762A0-0656-46C5-95E2-8AC965EAE696.pdf) |
+| 2026-11-05 | WBPSC | update | CORRIGENDUM NOTICE IN CONNECTION WITH RECRUITMENT TO THE POSTS OF ASSISTANT TRANSLATOR IN  | — | — | — | — | [open](https://psc.wb.gov.in/Download?param1=20261105145652_WBCS_2024_PRELI_RESULT.pdf&param2=advertisement) |
+| 2026-11-05 | RRB | notification | RRB CEN 09/2026: CEN 09-2026 English Version 05 11 2026 (16-23-PM) | 2026-12-04 | 0 | 18–40 | — | [open](https://rrb.indianrailways.gov.in/-/image/1793876199488CEN_09-2026_English_Version_05_11_2026_(16-23-PM).pdf/examsDocuments) |
+| 2026-11-05 | DSSSB | result | MAIN RESULT NOTICE NO:1072 DATED: 05/11/2026 FOR THE POST OF PGT (SANSKRIT) FEMALE ONLY UN | — | — | — | — | [open](https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/notice_no_1072.pdf) |
+| 2026-11-05 | UPSC | result | Written Result: 32 Posts of Accounts Officer, Administration of Union Territory of Ladakh | — | 32 | — | — | [open](https://www.upsc.gov.in/whats-new/32 Posts of Accounts Officer, Administration of Union Territory of Ladakh/Written Result) |
+| 2026-11-05 | RPSC | update | 05/11/2026 Corrigendum No. 16/2026-27 for Asst. Prof. (College Education) Exam- 2025 | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/RecruitmentAdvertisements/3BEAC790A0D94DAEB741C0AA8F026DE8.pdf) |
+| 2026-11-05 | RPSC | update | 05/11/2026 Press Note Regarding Corrigendum No. 16/2026-27 for Asst. Prof. (College Educat | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/PressNotes/84A388F2-0589-4C83-AF23-CB7C5D703AC7.pdf) |
