@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://www.rrc-wr.com/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-12",
+    "last_date": null,
+    "list": true,
+    "posts": "Level 1 Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "RRC Western Railway has released the revised schedule for Document Verification for Level 1 posts under CEN 08/2024. Candidates should check their revised dates and report to the allotted venue.",
+    "summary_hi": "आरआरसी पश्चिमी रेलवे ने सीईएन 08/2024 के तहत लेवल 1 पदों के लिए दस्तावेज सत्यापन का संशोधित कार्यक्रम जारी कर दिया है। उम्मीदवार अपनी संशोधित तिथियां जांच लें और निर्धारित केंद्र पर रिपोर्ट करें।",
+    "title_en": "RRC Western Railway Level 1 Revised Document Verification Schedule",
+    "title_hi": "आरआरसी पश्चिमी रेलवे लेवल 1 संशोधित दस्तावेज सत्यापन अनुसूची",
+    "type": "Update",
+    "vacancies": null
+  },
+  "exam": {},
   "extraction": {
     "ai": null
   },
@@ -17,6 +34,8 @@
   },
   "first_seen": "2026-11-05T14:08:41+00:00",
   "id": "405006cb1f6b",
+  "issue": 1090,
+  "issue_tidy": true,
   "kind": "update",
   "org": "RRC Western Railway",
   "pdf": {
@@ -25,8 +44,13 @@
     "sha256": "563dbd5099356e3791e7aad4af0318a8aacc338b4f52484a358a4abaa2074118",
     "text_kind": "text"
   },
+  "published_at": "2026-11-05T14:23:48Z",
+  "qual": [
+    "10th",
+    "iti"
+  ],
   "source_id": "rrc-wr",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Click here to view/download Notice regarding revised schedule of Document Verification along with the revised dates.",
   "url": "https://www.rrc-wr.com/rrwc/Files/8a484803-14f3-4c7e-bff5-a37b3938c416.pdf"
 }

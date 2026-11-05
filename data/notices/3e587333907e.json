@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://www.upsc.gov.in/whats-new",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-04-12",
+    "last_date": null,
+    "list": true,
+    "posts": "National Defence Academy and Naval Academy",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "UPSC has declared the final result for the National Defence Academy and Naval Academy Examination (I), 2026. Candidates can check their merit list and qualification status on the official website.",
+    "summary_hi": "संघ लोक सेवा आयोग ने राष्ट्रीय रक्षा अकादमी और नौसेना अकादमी परीक्षा (प्रथम) 2026 के अंतिम परिणाम की घोषणा कर दी है। उम्मीदवार आधिकारिक वेबसाइट पर अपनी योग्यता स्थिति देख सकते हैं।",
+    "title_en": "UPSC National Defence Academy and Naval Academy Examination I 2026 Final Result",
+    "title_hi": "संघ लोक सेवा आयोग राष्ट्रीय रक्षा अकादमी और नौसेना अकादमी परीक्षा 1 अंतिम परिणाम",
+    "type": "Result",
+    "vacancies": 617
+  },
+  "exam": {},
   "extraction": {
     "ai": null
   },
@@ -12,6 +29,8 @@
   },
   "first_seen": "2026-11-05T13:38:38+00:00",
   "id": "3e587333907e",
+  "issue": 1089,
+  "issue_tidy": true,
   "kind": "result",
   "org": "UPSC",
   "pdf": {
@@ -21,8 +40,12 @@
     "text_kind": "text",
     "via": "https://www.upsc.gov.in/sites/default/files/FR-NDANA-I-2026-Engl-05112026.pdf"
   },
+  "published_at": "2026-11-05T14:23:41Z",
+  "qual": [
+    "12th"
+  ],
   "source_id": "upsc-whats-new",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Final Result: National Defence Academy and Naval Academy Examination (I), 2026",
   "url": "https://www.upsc.gov.in/whats-new/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28I%29%2C%202026/Final%20Result"
 }

@@ -1,15 +1,38 @@
 {
+  "auto_published": true,
   "board_url": "https://rssb.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Supervisor (Woman)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "The Rajasthan Staff Selection Board has released an office order regarding the online scrutiny form for provisionally shortlisted candidates for the Woman Supervisor 2026 recruitment.",
+    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने महिला पर्यवेक्षक 2026 भर्ती के लिए अनंतिम रूप से शॉर्टलिस्ट किए गए उम्मीदवारों के ऑनलाइन संवीक्षा प्रपत्र के संबंध में कार्यालय आदेश जारी किया है।",
+    "title_en": "RSSB Rajasthan Supervisor Woman 2026 Scrutiny Form Update",
+    "title_hi": "आरएसएसबी राजस्थान महिला पर्यवेक्षक 2026 संवीक्षा प्रपत्र अपडेट",
+    "type": "Update",
+    "vacancies": null
+  },
+  "exam": {},
   "fields": {},
   "first_seen": "2026-11-05T14:08:41+00:00",
   "id": "ceac1647c776",
+  "issue": 1091,
+  "issue_tidy": true,
   "kind": "other",
   "org": "RSSB Rajasthan",
   "pdf": {
     "error": "HTTPError: 404 Client Error: Not Found for url: https://rssb.rajasthan.gov.in/storage/news_item/1793880187.pdf"
   },
+  "published_at": "2026-11-05T14:24:14Z",
+  "qual": [
+    "graduate"
+  ],
   "source_id": "rssb-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "05-11-2026 - Supervisor (Woman) 2026 : Office Order Regarding Online Scrutiny Form For Provisionally Shortlisted Candidates",
   "url": "https://rssb.rajasthan.gov.in/storage/news_item/1793880187.pdf"
 }
