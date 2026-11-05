@@ -1,0 +1,32 @@
+{
+  "board_url": "https://www.rrc-wr.com/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "admit_card": {
+      "evidence": "ote and report to the given venue as per the revised dates. Call letter already issued only is to be brought at the time of document verification. Date: 05/11/2026 ( Manish N Mehta ) Chairman ( RRC ) CEN RRC 08/",
+      "source": "rule",
+      "value": "2026-11-05"
+    },
+    "total_vacancies": {
+      "evidence": "( Manish N Mehta ) Chairman ( RRC ) CEN RRC 08/2024 – Level-1 Posts: Revised DV Schedule for the Remaining Dates SR. REVISED REPORTING RollNumber V",
+      "source": "rule",
+      "value": 1
+    }
+  },
+  "first_seen": "2026-11-05T14:08:41+00:00",
+  "id": "405006cb1f6b",
+  "kind": "update",
+  "org": "RRC Western Railway",
+  "pdf": {
+    "bytes": 1413582,
+    "pages": 123,
+    "sha256": "563dbd5099356e3791e7aad4af0318a8aacc338b4f52484a358a4abaa2074118",
+    "text_kind": "text"
+  },
+  "source_id": "rrc-wr",
+  "status": "pending_review",
+  "title": "Click here to view/download Notice regarding revised schedule of Document Verification along with the revised dates.",
+  "url": "https://www.rrc-wr.com/rrwc/Files/8a484803-14f3-4c7e-bff5-a37b3938c416.pdf"
+}
