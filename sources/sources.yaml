@@ -353,3 +353,9 @@ sources:
     url: https://cwceportal.com/cwc_careers.html
     render: static
     runner: india
+  - id: bsf-vacancies
+    org: BSF
+    url: https://bsf.mha.gov.in/announcement.html?category=Vacancies
+    render: static
+    runner: india
+    # deputation / Air Wing / contractual posts appear here, not on the rectt.bsf.gov.in portal
