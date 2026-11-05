@@ -1,7 +1,3 @@
-# empnews https://employmentnews.gov.in/
-## plain fetch: HTTP 200, 2920 bytes, final https://employmentnews.gov.in/
- | https://employmentnews.gov.in/NewEmp/Home.aspx
- | https://rojgarsamachar.gov.in/NewRS/Home.aspx
-## browser: final https://employmentnews.gov.in/, title 'emp-news-intro', 2839 chars
- | https://employmentnews.gov.in/NewEmp/Home.aspx
- | https://rojgarsamachar.gov.in/NewRS/Home.aspx
+# empnews https://www.employmentnews.gov.in/newemp/MoreContentNew.aspx?n=Jobs
+## plain fetch: HTTP 404, 624 bytes, final https://www.employmentnews.gov.in/newemp/MoreContentNew.aspx?n=Jobs
+## browser: final https://www.employmentnews.gov.in/newemp/MoreContentNew.aspx?n=Jobs, title '', 124 chars
