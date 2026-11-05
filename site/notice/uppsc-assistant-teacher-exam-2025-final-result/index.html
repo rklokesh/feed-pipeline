@@ -369,6 +369,32 @@ html[lang="hi"] .hidet { display: none; }
   html.v2 .top .nav-r { position: fixed; z-index: 40; right: max(16px, env(safe-area-inset-right, 0px));
     top: max(calc(env(safe-area-inset-top, 0px) + 8px), var(--fb-y, 8px)); }
 }
+@media (max-width: 640px) {
+  /* v2 "liquid glass" (iOS style): हिंदी + theme share one pill; the back button uses the same glass */
+  html.v2 .top .nav-r, html.v2 .fback {
+    background: linear-gradient(180deg, color-mix(in srgb, #fff 55%, transparent), color-mix(in srgb, #fff 22%, transparent)), color-mix(in srgb, var(--page) 55%, transparent);
+    -webkit-backdrop-filter: blur(22px) saturate(190%) brightness(1.04); backdrop-filter: blur(22px) saturate(190%) brightness(1.04);
+    border: 1px solid color-mix(in srgb, #fff 70%, transparent);
+    box-shadow: 0 10px 30px -6px color-mix(in srgb, #000 22%, transparent), 0 2px 6px color-mix(in srgb, #000 8%, transparent),
+      inset 0 1px 1px color-mix(in srgb, #fff 90%, transparent), inset 0 -1px 2px color-mix(in srgb, #000 6%, transparent); }
+  html.v2 .top .nav-r { gap: 2px !important; padding: 3px; border-radius: 999px; }
+  html.v2 .top .nav-r button { background: none !important; border: 0 !important; box-shadow: none !important;
+    -webkit-backdrop-filter: none !important; backdrop-filter: none !important; width: 46px !important; height: 40px !important; border-radius: 999px !important; }
+  html.v2 .top .nav-r button:active { background: color-mix(in srgb, var(--ink) 8%, transparent) !important; transform: scale(.94); }
+  html.v2 .fback { width: 46px; height: 46px; }
+}
+@media (max-width: 640px) {
+  :root[data-theme="dark"].v2 .top .nav-r, :root[data-theme="dark"].v2 .fback {
+    background: linear-gradient(180deg, color-mix(in srgb, #fff 14%, transparent), color-mix(in srgb, #fff 4%, transparent)), color-mix(in srgb, var(--page) 55%, transparent);
+    border-color: color-mix(in srgb, #fff 16%, transparent);
+    box-shadow: 0 10px 30px -6px color-mix(in srgb, #000 55%, transparent), inset 0 1px 1px color-mix(in srgb, #fff 22%, transparent); }
+}
+@media (max-width: 640px) and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]).v2 .top .nav-r, :root:not([data-theme="light"]).v2 .fback {
+    background: linear-gradient(180deg, color-mix(in srgb, #fff 14%, transparent), color-mix(in srgb, #fff 4%, transparent)), color-mix(in srgb, var(--page) 55%, transparent);
+    border-color: color-mix(in srgb, #fff 16%, transparent);
+    box-shadow: 0 10px 30px -6px color-mix(in srgb, #000 55%, transparent), inset 0 1px 1px color-mix(in srgb, #fff 22%, transparent); }
+}
 </style>
 <script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */
 try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")==="1")document.documentElement.classList.add("v2")}catch(e){}</script>
@@ -462,11 +488,10 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
     </section>
     <section class="kv rel" data-t-aria="relH">
       <h2 class="h" data-t="relH">More notices</h2>
-      <a class="r" href="/notice/uppsc-professor-cardiology-result-2026-medical-education-dept/"><span data-t="rel0">UPPSC Professor Cardiology Result 2026 – Medical Education Dept</span><span class="v g num">5 Nov 2026</span></a>
-      <a class="r" href="/notice/uppsc-prashikshak-bee-keeping-result-2026-check-selection-list/"><span data-t="rel1">UPPSC Prashikshak Bee Keeping Result 2026 – Check Selection List</span><span class="v g num">3 Nov 2026</span></a>
-      <a class="r" href="/notice/uppsc-regional-inspector-technical-document-verification-notice/"><span data-t="rel2">UPPSC Regional Inspector Technical Document Verification Notice 2026</span><span class="v g num">30 Oct 2026</span></a>
-      <a class="r" href="/notice/uppsc-medical-officer-result-2026-homoeopathic-dept-screening-ex/"><span data-t="rel3">UPPSC Medical Officer Result 2026 – Homoeopathic Dept Revised List</span><span class="v g num">30 Oct 2026</span></a>
-      <a class="r" href="/notice/uppsc-lecturer-homoeopathic-pharmacy-result-2026-check-final-lis/"><span data-t="rel4">UPPSC Lecturer Homoeopathic Pharmacy Result 2026 – Check Final List</span><span class="v g num">30 Oct 2026</span></a>
+      <a class="r" href="/notice/uppsc-prashikshak-bee-keeping-result-2026-check-selection-list/"><span data-t="rel0">UPPSC Prashikshak Bee Keeping Result 2026 – Check Selection List</span><span class="v g num">3 Nov 2026</span></a>
+      <a class="r" href="/notice/uppsc-regional-inspector-technical-document-verification-notice/"><span data-t="rel1">UPPSC Regional Inspector Technical Document Verification Notice 2026</span><span class="v g num">30 Oct 2026</span></a>
+      <a class="r" href="/notice/uppsc-medical-officer-result-2026-homoeopathic-dept-screening-ex/"><span data-t="rel2">UPPSC Medical Officer Result 2026 – Homoeopathic Dept Revised List</span><span class="v g num">30 Oct 2026</span></a>
+      <a class="r" href="/notice/uppsc-lecturer-homoeopathic-pharmacy-result-2026-check-final-lis/"><span data-t="rel3">UPPSC Lecturer Homoeopathic Pharmacy Result 2026 – Check Final List</span><span class="v g num">30 Oct 2026</span></a>
     </section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Results", "item": "https://sarkarichart.pages.dev/?cat=results"}, {"@type": "ListItem", "position": 3, "name": "UPPSC Assistant Teacher Exam 2025 Final Result", "item": "https://sarkarichart.pages.dev/notice/uppsc-assistant-teacher-exam-2025-final-result/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "UPPSC Assistant Teacher Exam 2025 Final Result", "url": "https://sarkarichart.pages.dev/notice/uppsc-assistant-teacher-exam-2025-final-result/", "inLanguage": ["en-IN", "hi-IN"], "description": "The Uttar Pradesh Public Service Commission (UPPSC) has released the final list of provisionally selected candidates for the Assistant Teacher Trained Graduate (Male/Female) Exam 2025. This selection is for Advertisement Number A-5/E-1/2025. Candidates who appeared for the examination can check the official selection list to verify their roll numbers and names. The result is subject to the final decisions of the Hon'ble High Court in Writ Petition No. 7267/2026 and 14451/2026.", "datePublished": "2026-10-22", "dateModified": "2026-10-22", "isBasedOn": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmzNJIRVKnDRwIQMjGyuh7N", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.pages.dev/notice/uppsc-assistant-teacher-exam-2025-final-result/og.png", "about": {"@type": "GovernmentOrganization", "name": "Uttar Pradesh Public Service Commission (UPPSC)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How can I check the UPPSC Assistant Teacher Exam 2025 result?", "acceptedAnswer": {"@type": "Answer", "text": "You can check the result by downloading the PDF list of provisionally selected candidates from the official UPPSC website."}}, {"@type": "Question", "name": "What is the advertisement number for the UPPSC Assistant Teacher Exam 2025?", "acceptedAnswer": {"@type": "Answer", "text": "The advertisement number is A-5/E-1/2025."}}, {"@type": "Question", "name": "Is the UPPSC Assistant Teacher result final?", "acceptedAnswer": {"@type": "Answer", "text": "The result is provisional and is subject to the final decisions of the Hon'ble High Court in Writ Petition No. 7267/2026 and 14451/2026."}}]}]</script>
     <details class="hidet" lang="hi">
@@ -627,11 +652,10 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
       ex4: "UPPSC Assistant Teacher Document Verification 2025",
       exs4: "Document Verification",
       relH: "More notices",
-      rel0: "UPPSC Professor Cardiology Result 2026 – Medical Education Dept",
-      rel1: "UPPSC Prashikshak Bee Keeping Result 2026 – Check Selection List",
-      rel2: "UPPSC Regional Inspector Technical Document Verification Notice 2026",
-      rel3: "UPPSC Medical Officer Result 2026 – Homoeopathic Dept Revised List",
-      rel4: "UPPSC Lecturer Homoeopathic Pharmacy Result 2026 – Check Final List",
+      rel0: "UPPSC Prashikshak Bee Keeping Result 2026 – Check Selection List",
+      rel1: "UPPSC Regional Inspector Technical Document Verification Notice 2026",
+      rel2: "UPPSC Medical Officer Result 2026 – Homoeopathic Dept Revised List",
+      rel3: "UPPSC Lecturer Homoeopathic Pharmacy Result 2026 – Check Final List",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -716,11 +740,10 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
       ex4: "उत्तर प्रदेश लोक सेवा आयोग सहायक अध्यापक अभिलेख सत्यापन 2025",
       exs4: "अभिलेख सत्यापन",
       relH: "और सूचनाएँ",
-      rel0: "यूपीपीएससी प्रोफेसर कार्डियोलॉजी रिजल्ट 2026 – चिकित्सा शिक्षा विभाग",
-      rel1: "यूपीपीएससी प्रशिक्षक मधुमक्खी पालन रिजल्ट 2026 – चयन सूची देखें",
-      rel2: "उत्तर प्रदेश लोक सेवा आयोग प्रादेशिक निरीक्षक तकनीकी अभिलेख सत्यापन नोटिस 2026",
-      rel3: "यूपीपीएससी मेडिकल ऑफिसर रिजल्ट 2026 – होम्योपैथिक विभाग संशोधित सूची",
-      rel4: "यूपीपीएससी लेक्चरर होम्योपैथिक फार्मेसी रिजल्ट 2026 – चयन सूची जारी",
+      rel0: "यूपीपीएससी प्रशिक्षक मधुमक्खी पालन रिजल्ट 2026 – चयन सूची देखें",
+      rel1: "उत्तर प्रदेश लोक सेवा आयोग प्रादेशिक निरीक्षक तकनीकी अभिलेख सत्यापन नोटिस 2026",
+      rel2: "यूपीपीएससी मेडिकल ऑफिसर रिजल्ट 2026 – होम्योपैथिक विभाग संशोधित सूची",
+      rel3: "यूपीपीएससी लेक्चरर होम्योपैथिक फार्मेसी रिजल्ट 2026 – चयन सूची जारी",
     },
   };
   let lang = "en";

@@ -375,6 +375,32 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   html.v2 #lang::before { content: ""; width: 22px; height: 22px; background: currentColor;
     -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' ><circle cx='12' cy='12' r='10' stroke='black' stroke-width='1.5'/><path d='M7 8.37931H11.5M17 8.37931H14.5M11.5 8.37931H14.5M11.5 8.37931V7M14.5 8.37931C13.9725 10.2656 12.8679 12.0487 11.6071 13.6158M8.39286 17C9.41205 16.0628 10.5631 14.9134 11.6071 13.6158M11.6071 13.6158C10.9643 12.8621 10.0643 11.6426 9.80714 11.0909M11.6071 13.6158L13.5357 15.6207' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5'/></svg>") center / contain no-repeat; mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' ><circle cx='12' cy='12' r='10' stroke='black' stroke-width='1.5'/><path d='M7 8.37931H11.5M17 8.37931H14.5M11.5 8.37931H14.5M11.5 8.37931V7M14.5 8.37931C13.9725 10.2656 12.8679 12.0487 11.6071 13.6158M8.39286 17C9.41205 16.0628 10.5631 14.9134 11.6071 13.6158M11.6071 13.6158C10.9643 12.8621 10.0643 11.6426 9.80714 11.0909M11.6071 13.6158L13.5357 15.6207' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5'/></svg>") center / contain no-repeat; }
 }
+@media (max-width: 640px) {
+  /* v2 "liquid glass" (iOS style): हिंदी + theme share one pill; the back button uses the same glass */
+  html.v2 .top .nav-r, html.v2 .fback {
+    background: linear-gradient(180deg, color-mix(in srgb, #fff 55%, transparent), color-mix(in srgb, #fff 22%, transparent)), color-mix(in srgb, var(--page) 55%, transparent);
+    -webkit-backdrop-filter: blur(22px) saturate(190%) brightness(1.04); backdrop-filter: blur(22px) saturate(190%) brightness(1.04);
+    border: 1px solid color-mix(in srgb, #fff 70%, transparent);
+    box-shadow: 0 10px 30px -6px color-mix(in srgb, #000 22%, transparent), 0 2px 6px color-mix(in srgb, #000 8%, transparent),
+      inset 0 1px 1px color-mix(in srgb, #fff 90%, transparent), inset 0 -1px 2px color-mix(in srgb, #000 6%, transparent); }
+  html.v2 .top .nav-r { gap: 2px !important; padding: 3px; border-radius: 999px; }
+  html.v2 .top .nav-r button { background: none !important; border: 0 !important; box-shadow: none !important;
+    -webkit-backdrop-filter: none !important; backdrop-filter: none !important; width: 46px !important; height: 40px !important; border-radius: 999px !important; }
+  html.v2 .top .nav-r button:active { background: color-mix(in srgb, var(--ink) 8%, transparent) !important; transform: scale(.94); }
+  html.v2 .fback { width: 46px; height: 46px; }
+}
+@media (max-width: 640px) {
+  :root[data-theme="dark"].v2 .top .nav-r, :root[data-theme="dark"].v2 .fback {
+    background: linear-gradient(180deg, color-mix(in srgb, #fff 14%, transparent), color-mix(in srgb, #fff 4%, transparent)), color-mix(in srgb, var(--page) 55%, transparent);
+    border-color: color-mix(in srgb, #fff 16%, transparent);
+    box-shadow: 0 10px 30px -6px color-mix(in srgb, #000 55%, transparent), inset 0 1px 1px color-mix(in srgb, #fff 22%, transparent); }
+}
+@media (max-width: 640px) and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]).v2 .top .nav-r, :root:not([data-theme="light"]).v2 .fback {
+    background: linear-gradient(180deg, color-mix(in srgb, #fff 14%, transparent), color-mix(in srgb, #fff 4%, transparent)), color-mix(in srgb, var(--page) 55%, transparent);
+    border-color: color-mix(in srgb, #fff 16%, transparent);
+    box-shadow: 0 10px 30px -6px color-mix(in srgb, #000 55%, transparent), inset 0 1px 1px color-mix(in srgb, #fff 22%, transparent); }
+}
 </style>
 <script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */
 try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")==="1")document.documentElement.classList.add("v2")}catch(e){}</script>
@@ -474,6 +500,7 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
   // posted = date on the official notice where known, otherwise the day we found it.
   const ITEMS = [
     /*ITEMS:START*/
+    {"type": "Result", "title": "UPPSC Professor Cardiology Medical Education Department Result 2026", "hi": "उत्तर प्रदेश लोक सेवा आयोग प्रोफेसर कार्डियोलॉजी चिकित्सा शिक्षा विभाग परिणाम 2026", "org": "UPPSC", "posted": "2026-11-05", "publishedAt": "2026-11-05T15:49:20Z", "url": "/notice/uppsc-professor-cardiology-medical-education-department-result-2/", "id": "877970fd7d3b", "page": true, "st": "up", "q": ["postgraduate"]},
     {"type": "Result", "title": "UPSC Civil Services Main Exam 2026 Written Result Out", "hi": "संघ लोक सेवा आयोग सिविल सेवा मुख्य परीक्षा 2026 लिखित परिणाम जारी", "org": "UPSC", "posted": "2026-11-05", "publishedAt": "2026-11-05T13:15:08Z", "url": "/notice/upsc-civil-services-main-exam-2026-written-result-out/", "id": "1dcff634dd12", "page": true, "q": ["graduate"]},
     {"type": "Job", "title": "RRC Northern Railway Scouts & Guides Recruitment 2026 – Apply Online", "hi": "आरआरसी नॉर्दन रेलवे स्काउट्स एंड गाइड्स भर्ती 2026 – ऑनलाइन आवेदन", "org": "RRC Northern Railway", "posted": "2026-11-04", "publishedAt": "2026-11-05T08:48:37Z", "url": "/notice/rrc-northern-railway-scouts-guides-recruitment-2026-apply-online/", "id": "9eefa7b1371a", "page": true, "q": ["10th", "12th"]},
     {"type": "Job", "title": "RRB Isolated Categories Recruitment 2026 – Apply Online for 191 Posts", "hi": "रेलवे भर्ती बोर्ड पृथक श्रेणियां भर्ती 2026 – 191 पदों के लिए ऑनलाइन आवेदन करें", "org": "RRB", "posted": "2026-11-04", "publishedAt": "2026-11-05T07:34:11Z", "url": "/notice/rrb-isolated-categories-recruitment-2026-apply-online-for-191-po/", "id": "c8927256a847", "page": true, "last": "2026-12-04", "q": ["12th", "graduate", "postgraduate"], "e": {"min": 18, "max": 40, "on": "2027-01-01"}},

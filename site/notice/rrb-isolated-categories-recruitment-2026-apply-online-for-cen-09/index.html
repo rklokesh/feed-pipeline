@@ -278,7 +278,7 @@ html[lang="hi"] .hidet { display: none; }
   .top .hback { visibility: hidden; width: 44px; height: 44px; }   /* keeps the header's left slot so the logo stays centred */
   .fback { display: grid; place-items: center; position: fixed; z-index: 40; width: 44px; height: 44px; border-radius: 50%;
     top: max(calc(env(safe-area-inset-top, 0px) + 12px), var(--fb-y, 64px)); left: max(16px, env(safe-area-inset-left, 0px));
-    color: var(--ink); background: color-mix(in srgb, var(--page) 55%, transparent);
+    color: var(--ink); background: color-mix(in srgb, var(--page) 72%, transparent);
     -webkit-backdrop-filter: blur(18px) saturate(180%); backdrop-filter: blur(18px) saturate(180%);
     border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
     box-shadow: 0 4px 18px color-mix(in srgb, #000 12%, transparent), inset 0 1px 0 color-mix(in srgb, #fff 45%, transparent);
@@ -368,6 +368,32 @@ html[lang="hi"] .hidet { display: none; }
     grid-template-columns: 1fr auto 1fr; }
   html.v2 .top .nav-r { position: fixed; z-index: 40; right: max(16px, env(safe-area-inset-right, 0px));
     top: max(calc(env(safe-area-inset-top, 0px) + 8px), var(--fb-y, 8px)); }
+}
+@media (max-width: 640px) {
+  /* v2 "liquid glass" (iOS style): हिंदी + theme share one pill; the back button uses the same glass */
+  html.v2 .top .nav-r, html.v2 .fback {
+    background: linear-gradient(180deg, color-mix(in srgb, #fff 55%, transparent), color-mix(in srgb, #fff 22%, transparent)), color-mix(in srgb, var(--page) 55%, transparent);
+    -webkit-backdrop-filter: blur(22px) saturate(190%) brightness(1.04); backdrop-filter: blur(22px) saturate(190%) brightness(1.04);
+    border: 1px solid color-mix(in srgb, #fff 70%, transparent);
+    box-shadow: 0 10px 30px -6px color-mix(in srgb, #000 22%, transparent), 0 2px 6px color-mix(in srgb, #000 8%, transparent),
+      inset 0 1px 1px color-mix(in srgb, #fff 90%, transparent), inset 0 -1px 2px color-mix(in srgb, #000 6%, transparent); }
+  html.v2 .top .nav-r { gap: 2px !important; padding: 3px; border-radius: 999px; }
+  html.v2 .top .nav-r button { background: none !important; border: 0 !important; box-shadow: none !important;
+    -webkit-backdrop-filter: none !important; backdrop-filter: none !important; width: 46px !important; height: 40px !important; border-radius: 999px !important; }
+  html.v2 .top .nav-r button:active { background: color-mix(in srgb, var(--ink) 8%, transparent) !important; transform: scale(.94); }
+  html.v2 .fback { width: 46px; height: 46px; }
+}
+@media (max-width: 640px) {
+  :root[data-theme="dark"].v2 .top .nav-r, :root[data-theme="dark"].v2 .fback {
+    background: linear-gradient(180deg, color-mix(in srgb, #fff 14%, transparent), color-mix(in srgb, #fff 4%, transparent)), color-mix(in srgb, var(--page) 55%, transparent);
+    border-color: color-mix(in srgb, #fff 16%, transparent);
+    box-shadow: 0 10px 30px -6px color-mix(in srgb, #000 55%, transparent), inset 0 1px 1px color-mix(in srgb, #fff 22%, transparent); }
+}
+@media (max-width: 640px) and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]).v2 .top .nav-r, :root:not([data-theme="light"]).v2 .fback {
+    background: linear-gradient(180deg, color-mix(in srgb, #fff 14%, transparent), color-mix(in srgb, #fff 4%, transparent)), color-mix(in srgb, var(--page) 55%, transparent);
+    border-color: color-mix(in srgb, #fff 16%, transparent);
+    box-shadow: 0 10px 30px -6px color-mix(in srgb, #000 55%, transparent), inset 0 1px 1px color-mix(in srgb, #fff 22%, transparent); }
 }
 </style>
 <script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */

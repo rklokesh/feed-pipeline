@@ -369,6 +369,32 @@ html[lang="hi"] .hidet { display: none; }
   html.v2 .top .nav-r { position: fixed; z-index: 40; right: max(16px, env(safe-area-inset-right, 0px));
     top: max(calc(env(safe-area-inset-top, 0px) + 8px), var(--fb-y, 8px)); }
 }
+@media (max-width: 640px) {
+  /* v2 "liquid glass" (iOS style): हिंदी + theme share one pill; the back button uses the same glass */
+  html.v2 .top .nav-r, html.v2 .fback {
+    background: linear-gradient(180deg, color-mix(in srgb, #fff 55%, transparent), color-mix(in srgb, #fff 22%, transparent)), color-mix(in srgb, var(--page) 55%, transparent);
+    -webkit-backdrop-filter: blur(22px) saturate(190%) brightness(1.04); backdrop-filter: blur(22px) saturate(190%) brightness(1.04);
+    border: 1px solid color-mix(in srgb, #fff 70%, transparent);
+    box-shadow: 0 10px 30px -6px color-mix(in srgb, #000 22%, transparent), 0 2px 6px color-mix(in srgb, #000 8%, transparent),
+      inset 0 1px 1px color-mix(in srgb, #fff 90%, transparent), inset 0 -1px 2px color-mix(in srgb, #000 6%, transparent); }
+  html.v2 .top .nav-r { gap: 2px !important; padding: 3px; border-radius: 999px; }
+  html.v2 .top .nav-r button { background: none !important; border: 0 !important; box-shadow: none !important;
+    -webkit-backdrop-filter: none !important; backdrop-filter: none !important; width: 46px !important; height: 40px !important; border-radius: 999px !important; }
+  html.v2 .top .nav-r button:active { background: color-mix(in srgb, var(--ink) 8%, transparent) !important; transform: scale(.94); }
+  html.v2 .fback { width: 46px; height: 46px; }
+}
+@media (max-width: 640px) {
+  :root[data-theme="dark"].v2 .top .nav-r, :root[data-theme="dark"].v2 .fback {
+    background: linear-gradient(180deg, color-mix(in srgb, #fff 14%, transparent), color-mix(in srgb, #fff 4%, transparent)), color-mix(in srgb, var(--page) 55%, transparent);
+    border-color: color-mix(in srgb, #fff 16%, transparent);
+    box-shadow: 0 10px 30px -6px color-mix(in srgb, #000 55%, transparent), inset 0 1px 1px color-mix(in srgb, #fff 22%, transparent); }
+}
+@media (max-width: 640px) and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]).v2 .top .nav-r, :root:not([data-theme="light"]).v2 .fback {
+    background: linear-gradient(180deg, color-mix(in srgb, #fff 14%, transparent), color-mix(in srgb, #fff 4%, transparent)), color-mix(in srgb, var(--page) 55%, transparent);
+    border-color: color-mix(in srgb, #fff 16%, transparent);
+    box-shadow: 0 10px 30px -6px color-mix(in srgb, #000 55%, transparent), inset 0 1px 1px color-mix(in srgb, #fff 22%, transparent); }
+}
 </style>
 <script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */
 try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")==="1")document.documentElement.classList.add("v2")}catch(e){}</script>
@@ -451,7 +477,7 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
     </section>
     <section class="kv rel" data-t-aria="relH">
       <h2 class="h" data-t="relH">More notices</h2>
-      <a class="r" href="/notice/uppsc-professor-cardiology-result-2026-medical-education-dept/"><span data-t="rel0">UPPSC Professor Cardiology Result 2026 – Medical Education Dept</span><span class="v g num">5 Nov 2026</span></a>
+      <a class="r" href="/notice/uppsc-professor-cardiology-medical-education-department-result-2/"><span data-t="rel0">UPPSC Professor Cardiology Medical Education Department Result 2026</span><span class="v g num">5 Nov 2026</span></a>
       <a class="r" href="/notice/uppsc-prashikshak-bee-keeping-result-2026-check-selection-list/"><span data-t="rel1">UPPSC Prashikshak Bee Keeping Result 2026 – Check Selection List</span><span class="v g num">3 Nov 2026</span></a>
       <a class="r" href="/notice/uppsc-regional-inspector-technical-document-verification-notice/"><span data-t="rel2">UPPSC Regional Inspector Technical Document Verification Notice 2026</span><span class="v g num">30 Oct 2026</span></a>
       <a class="r" href="/notice/uppsc-medical-officer-result-2026-homoeopathic-dept-screening-ex/"><span data-t="rel3">UPPSC Medical Officer Result 2026 – Homoeopathic Dept Revised List</span><span class="v g num">30 Oct 2026</span></a>
@@ -591,7 +617,7 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
       ex4: "UPPSC Assistant Teacher Document Verification 2025",
       exs4: "Document Verification",
       relH: "More notices",
-      rel0: "UPPSC Professor Cardiology Result 2026 – Medical Education Dept",
+      rel0: "UPPSC Professor Cardiology Medical Education Department Result 2026",
       rel1: "UPPSC Prashikshak Bee Keeping Result 2026 – Check Selection List",
       rel2: "UPPSC Regional Inspector Technical Document Verification Notice 2026",
       rel3: "UPPSC Medical Officer Result 2026 – Homoeopathic Dept Revised List",
@@ -666,7 +692,7 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
       ex4: "उत्तर प्रदेश लोक सेवा आयोग सहायक अध्यापक अभिलेख सत्यापन 2025",
       exs4: "अभिलेख सत्यापन",
       relH: "और सूचनाएँ",
-      rel0: "यूपीपीएससी प्रोफेसर कार्डियोलॉजी रिजल्ट 2026 – चिकित्सा शिक्षा विभाग",
+      rel0: "उत्तर प्रदेश लोक सेवा आयोग प्रोफेसर कार्डियोलॉजी चिकित्सा शिक्षा विभाग परिणाम 2026",
       rel1: "यूपीपीएससी प्रशिक्षक मधुमक्खी पालन रिजल्ट 2026 – चयन सूची देखें",
       rel2: "उत्तर प्रदेश लोक सेवा आयोग प्रादेशिक निरीक्षक तकनीकी अभिलेख सत्यापन नोटिस 2026",
       rel3: "यूपीपीएससी मेडिकल ऑफिसर रिजल्ट 2026 – होम्योपैथिक विभाग संशोधित सूची",

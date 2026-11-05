@@ -369,6 +369,32 @@ html[lang="hi"] .hidet { display: none; }
   html.v2 .top .nav-r { position: fixed; z-index: 40; right: max(16px, env(safe-area-inset-right, 0px));
     top: max(calc(env(safe-area-inset-top, 0px) + 8px), var(--fb-y, 8px)); }
 }
+@media (max-width: 640px) {
+  /* v2 "liquid glass" (iOS style): हिंदी + theme share one pill; the back button uses the same glass */
+  html.v2 .top .nav-r, html.v2 .fback {
+    background: linear-gradient(180deg, color-mix(in srgb, #fff 55%, transparent), color-mix(in srgb, #fff 22%, transparent)), color-mix(in srgb, var(--page) 55%, transparent);
+    -webkit-backdrop-filter: blur(22px) saturate(190%) brightness(1.04); backdrop-filter: blur(22px) saturate(190%) brightness(1.04);
+    border: 1px solid color-mix(in srgb, #fff 70%, transparent);
+    box-shadow: 0 10px 30px -6px color-mix(in srgb, #000 22%, transparent), 0 2px 6px color-mix(in srgb, #000 8%, transparent),
+      inset 0 1px 1px color-mix(in srgb, #fff 90%, transparent), inset 0 -1px 2px color-mix(in srgb, #000 6%, transparent); }
+  html.v2 .top .nav-r { gap: 2px !important; padding: 3px; border-radius: 999px; }
+  html.v2 .top .nav-r button { background: none !important; border: 0 !important; box-shadow: none !important;
+    -webkit-backdrop-filter: none !important; backdrop-filter: none !important; width: 46px !important; height: 40px !important; border-radius: 999px !important; }
+  html.v2 .top .nav-r button:active { background: color-mix(in srgb, var(--ink) 8%, transparent) !important; transform: scale(.94); }
+  html.v2 .fback { width: 46px; height: 46px; }
+}
+@media (max-width: 640px) {
+  :root[data-theme="dark"].v2 .top .nav-r, :root[data-theme="dark"].v2 .fback {
+    background: linear-gradient(180deg, color-mix(in srgb, #fff 14%, transparent), color-mix(in srgb, #fff 4%, transparent)), color-mix(in srgb, var(--page) 55%, transparent);
+    border-color: color-mix(in srgb, #fff 16%, transparent);
+    box-shadow: 0 10px 30px -6px color-mix(in srgb, #000 55%, transparent), inset 0 1px 1px color-mix(in srgb, #fff 22%, transparent); }
+}
+@media (max-width: 640px) and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]).v2 .top .nav-r, :root:not([data-theme="light"]).v2 .fback {
+    background: linear-gradient(180deg, color-mix(in srgb, #fff 14%, transparent), color-mix(in srgb, #fff 4%, transparent)), color-mix(in srgb, var(--page) 55%, transparent);
+    border-color: color-mix(in srgb, #fff 16%, transparent);
+    box-shadow: 0 10px 30px -6px color-mix(in srgb, #000 55%, transparent), inset 0 1px 1px color-mix(in srgb, #fff 22%, transparent); }
+}
 </style>
 <script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */
 try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")==="1")document.documentElement.classList.add("v2")}catch(e){}</script>
@@ -474,9 +500,9 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
       <a class="r" href="/notice/up-police-si-and-platoon-commander-2020-21-dv-pst-and-pet-notice/"><span data-t="rel0">UP Police SI and Platoon Commander 2020-21 DV PST and PET Notice</span><span class="v g num">27 Oct 2026</span></a>
       <a class="r" href="/notice/up-police-constable-pet-exam-date-rescheduled-notice-2025/"><span data-t="rel1">UP Police Constable PET Exam Date Rescheduled Notice 2025</span><span class="v g num">6 Oct 2026</span></a>
       <a class="r" href="/notice/upsc-civil-services-main-exam-2026-written-result-out/"><span data-t="rel2">UPSC Civil Services Main Exam 2026 Written Result Out</span><span class="v g num">5 Nov 2026</span></a>
-      <a class="r" href="/notice/uppsc-professor-cardiology-result-2026-medical-education-dept/"><span data-t="rel3">UPPSC Professor Cardiology Result 2026 – Medical Education Dept</span><span class="v g num">5 Nov 2026</span></a>
-      <a class="r" href="/notice/rpsc-programmer-result-2024-additional-candidate-list/"><span data-t="rel4">RPSC Programmer Result 2024 – Additional Candidate List</span><span class="v g num">4 Nov 2026</span></a>
-      <a class="r" href="/notice/rpsc-assistant-professor-yoga-vigyan-revised-result-2024-check/"><span data-t="rel5">RPSC Assistant Professor Yoga Vigyan Revised Result 2024 – Check</span><span class="v g num">4 Nov 2026</span></a>
+      <a class="r" href="/notice/rpsc-programmer-result-2024-additional-candidate-list/"><span data-t="rel3">RPSC Programmer Result 2024 – Additional Candidate List</span><span class="v g num">4 Nov 2026</span></a>
+      <a class="r" href="/notice/rpsc-assistant-professor-yoga-vigyan-revised-result-2024-check/"><span data-t="rel4">RPSC Assistant Professor Yoga Vigyan Revised Result 2024 – Check</span><span class="v g num">4 Nov 2026</span></a>
+      <a class="r" href="/notice/rssb-prahari-2024-final-cut-off-marks-amended-order/"><span data-t="rel5">RSSB Prahari 2024 Final Cut-off Marks Amended Order</span><span class="v g num">4 Nov 2026</span></a>
     </section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Results", "item": "https://sarkarichart.pages.dev/?cat=results"}, {"@type": "ListItem", "position": 3, "name": "UP Police Homeguard Enrolment 2025 Final Marks Notice 2026", "item": "https://sarkarichart.pages.dev/notice/up-police-homeguard-enrolment-2025-final-marks-notice/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "UP Police Homeguard Enrolment 2025 Final Marks Notice 2026", "url": "https://sarkarichart.pages.dev/notice/up-police-homeguard-enrolment-2025-final-marks-notice/", "inLanguage": ["en-IN", "hi-IN"], "description": "Uttar Pradesh Police Recruitment and Promotion Board (UPPBPB) has published the notice regarding the final marks for Homeguard Enrolment 2025. The final selection result was earlier declared on 03 Oct 2026 for a total of 41,424 vacancies. Candidates who participated in the enrolment process can view their final marks by logging in with their registration number and date of birth on the official website between 24 Oct 2026 and 23 Nov 2026. Applicants should keep their registered email active to receive the score details.", "datePublished": "2026-10-24", "dateModified": "2026-10-24", "isBasedOn": "https://uppbpb.gov.in/FilesUploaded/Notice/HG2025_Marks_Notice602be8cf-8ca2-47a1-9c85-b03cb41d37e0.pdf", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.pages.dev/notice/up-police-homeguard-enrolment-2025-final-marks-notice/og.png", "about": {"@type": "GovernmentOrganization", "name": "Uttar Pradesh Police Recruitment and Promotion Board (UPPBPB)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When can I check my final marks for UP Police Homeguard Enrolment 2025?", "acceptedAnswer": {"@type": "Answer", "text": "You can check your final marks from 24 Oct 2026 to 23 Nov 2026 on the official website."}}, {"@type": "Question", "name": "What details are required to check the final marks?", "acceptedAnswer": {"@type": "Answer", "text": "You need your Registration Number and Date of Birth to log in to the portal."}}, {"@type": "Question", "name": "How will I receive my final marks?", "acceptedAnswer": {"@type": "Answer", "text": "After logging in to the portal and clicking on the 'Click here for Final Score' tab, the final marks will be sent to your registered email ID."}}, {"@type": "Question", "name": "What is the last date to download the final marks?", "acceptedAnswer": {"@type": "Answer", "text": "The last date to access the final marks link is 23 Nov 2026."}}, {"@type": "Question", "name": "What is the total number of vacancies for Homeguard Enrolment 2025?", "acceptedAnswer": {"@type": "Answer", "text": "There are a total of 41,424 vacancies across various districts."}}, {"@type": "Question", "name": "Where can I check the final marks?", "acceptedAnswer": {"@type": "Answer", "text": "You can check the final marks on the official UPPBPB website at https://uppbpb.gov.in."}}]}]</script>
     <details class="hidet" lang="hi">
@@ -665,9 +691,9 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
       rel0: "UP Police SI and Platoon Commander 2020-21 DV PST and PET Notice",
       rel1: "UP Police Constable PET Exam Date Rescheduled Notice 2025",
       rel2: "UPSC Civil Services Main Exam 2026 Written Result Out",
-      rel3: "UPPSC Professor Cardiology Result 2026 – Medical Education Dept",
-      rel4: "RPSC Programmer Result 2024 – Additional Candidate List",
-      rel5: "RPSC Assistant Professor Yoga Vigyan Revised Result 2024 – Check",
+      rel3: "RPSC Programmer Result 2024 – Additional Candidate List",
+      rel4: "RPSC Assistant Professor Yoga Vigyan Revised Result 2024 – Check",
+      rel5: "RSSB Prahari 2024 Final Cut-off Marks Amended Order",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -763,9 +789,9 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
       rel0: "उत्तर प्रदेश पुलिस एसआई और प्लाटून कमांडर 2020-21 डीवी पीएसटी और पीईटी नोटिस",
       rel1: "उत्तर प्रदेश पुलिस आरक्षी शारीरिक दक्षता परीक्षा तिथि परिवर्तन सूचना 2025",
       rel2: "संघ लोक सेवा आयोग सिविल सेवा मुख्य परीक्षा 2026 लिखित परिणाम जारी",
-      rel3: "यूपीपीएससी प्रोफेसर कार्डियोलॉजी रिजल्ट 2026 – चिकित्सा शिक्षा विभाग",
-      rel4: "आरपीएससी प्रोग्रामर परिणाम 2024 – अतिरिक्त अभ्यर्थी सूची",
-      rel5: "आरपीएससी सहायक आचार्य योग विज्ञान संशोधित परिणाम 2024 – देखें",
+      rel3: "आरपीएससी प्रोग्रामर परिणाम 2024 – अतिरिक्त अभ्यर्थी सूची",
+      rel4: "आरपीएससी सहायक आचार्य योग विज्ञान संशोधित परिणाम 2024 – देखें",
+      rel5: "राजस्थान कर्मचारी चयन बोर्ड प्रहरी 2024 अंतिम कट-ऑफ अंक संशोधित आदेश",
     },
   };
   let lang = "en";
