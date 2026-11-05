@@ -291,7 +291,48 @@ html[lang="hi"] .hidet { display: none; }
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .fback { background: var(--soft); } }
 @media (prefers-reduced-motion: reduce) { .fback { transition: none; } }
 @media print { .fback { display: none !important; } }
+/* ===== v2: app-style phone design (preview; html.v2, phones only) ===== */
+@media (max-width: 640px) {
+  html.v2 body { -webkit-tap-highlight-color: transparent; }
+  html.v2 .top { position: sticky; top: 0; z-index: 30; margin: 0 -16px 18px; padding: 8px 16px; grid-template-columns: auto 1fr auto; gap: 12px;
+    background: color-mix(in srgb, var(--page) 80%, transparent); -webkit-backdrop-filter: blur(18px) saturate(180%); backdrop-filter: blur(18px) saturate(180%);
+    border-bottom: 1px solid color-mix(in srgb, var(--ink) 7%, transparent); }
+  html.v2 .top .logo { grid-column: 1; }
+  html.v2 .top .logo img, html.v2 .top .logo .mark { width: 44px; height: 44px; }
+  html.v2 .top .nav-r { grid-column: 3; gap: 6px; }
+  html.v2 .top .nav-r button { display: inline-grid; place-items: center; min-width: 40px; height: 40px; padding: 0 12px; border-radius: 999px; background: var(--soft); box-sizing: border-box; }
+  html.v2 .sheet { padding-top: 0; }
+}
+@media (max-width: 640px) {
+  html.v2 .fback { top: max(calc(env(safe-area-inset-top, 0px) + 8px), var(--fb-y, 8px)); }
+  html.v2 .top .hback { width: 44px; height: 44px; }
+  html.v2 .top .logo { grid-column: 2; justify-self: center; }
+  html.v2 .title { gap: 10px; text-align: left; }
+  html.v2 .title .crumb { justify-content: flex-start; }
+  html.v2 h1 { font-size: 1.6rem; line-height: 1.22; text-align: left; }
+  html.v2 .title .meta, html.v2 .title .lead, html.v2 .title .exjump, html.v2 .status, html.v2 .title { text-align: left !important; justify-content: flex-start !important; justify-items: start; }
+  html.v2 .top .nav-r a[href="/about/"] { display: none; }
+  /* sections: rounded cards; each fact as a small grey label above its value */
+  html.v2 .kv { border: 0 !important; border-radius: 16px; background: var(--soft); overflow: hidden; }
+  html.v2 .kv .h { background: none !important; border: 0 !important; padding: 14px 16px 4px !important; font-weight: 600; color: var(--ink) !important; }
+  html.v2 .kv .r { grid-template-columns: 1fr !important; gap: 2px !important; padding: 10px 16px !important; border: 0 !important;
+    border-top: 1px solid color-mix(in srgb, var(--ink) 7%, transparent) !important; }
+  html.v2 .kv .r > :first-child { font-size: .8125rem; }
+  html.v2 .kv .p, html.v2 .kv .steps, html.v2 .kv .qa, html.v2 .kv .tbl { padding-left: 16px; padding-right: 16px; }
+  html.v2 .kv > :last-child { padding-bottom: 14px; }
+  html.v2 .toc { border-radius: 16px; overflow: hidden; border: 0 !important; background: var(--soft); }
+  html.v2 .toc summary { background: none !important; padding: 14px 16px !important; }
+  html.v2 .ogimg { border-radius: 16px; }
+  /* actions: full-width pill buttons */
+  html.v2 .actions { display: grid !important; gap: 10px !important; }
+  html.v2 .actions a { justify-content: center; padding: 13px 16px; border-radius: 999px; background: var(--soft); text-decoration: none; }
+  html.v2 .actions a.share { background: #1FA855; color: #fff; }
+  html.v2 .actions a.share svg path:first-child { fill: #fff; }
+  html.v2 .actions a.share svg path:last-child { fill: #1FA855; }
+}
 </style>
+<script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */
+try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")==="1")document.documentElement.classList.add("v2")}catch(e){}</script>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
 </head>
@@ -389,9 +430,9 @@ html[lang="hi"] .hidet { display: none; }
       <a class="r" href="/notice/rssb-prahari-2024-final-cut-off-marks-amended-order/"><span data-t="rel0">RSSB Prahari 2024 Final Cut-off Marks Amended Order</span><span class="v g num">4 Nov 2026</span></a>
       <a class="r" href="/notice/rssb-driver-recruitment-2024-document-verification-shortlist-out/"><span data-t="rel1">RSSB Driver DV Schedule 2024 – Scrutiny Form Dates Out</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/rssb-fourth-class-employee-2024-dv-schedule-instructions/"><span data-t="rel2">RSSB Fourth Class Employee 2024 DV Schedule &amp; Instructions</span><span class="v g num">23 Oct 2026</span></a>
-      <a class="r" href="/notice/rssb-supervisor-woman-dv-schedule-2026-scrutiny-form-dates/"><span data-t="rel3">RSSB Supervisor Woman DV Schedule 2026 – Scrutiny Form Dates</span><span class="v g num">5 Nov 2026</span></a>
-      <a class="r" href="/notice/rssb-rajasthan-driver-scrutiny-form-notice-2024-dv-dates/"><span data-t="rel4">RSSB Rajasthan Driver Scrutiny Form Notice 2024 – DV Dates</span><span class="v g num">29 Oct 2026</span></a>
-      <a class="r" href="/notice/rssb-computer-instructor-recruitment-2026-amended-notification-f/"><span data-t="rel5">RSSB Computer Instructor Recruitment 2026 – Amended Notification 3,951 Posts</span><span class="v g num">28 Oct 2026</span></a>
+      <a class="r" href="/notice/rssb-rajasthan-driver-scrutiny-form-notice-2024-dv-dates/"><span data-t="rel3">RSSB Rajasthan Driver Scrutiny Form Notice 2024 – DV Dates</span><span class="v g num">29 Oct 2026</span></a>
+      <a class="r" href="/notice/rssb-computer-instructor-recruitment-2026-amended-notification-f/"><span data-t="rel4">RSSB Computer Instructor Recruitment 2026 – Amended Notification 3,951 Posts</span><span class="v g num">28 Oct 2026</span></a>
+      <a class="r" href="/notice/rssb-cet-senior-secondary-level-2026-withdrawal-candidates-list/"><span data-t="rel5">RSSB CET Senior Secondary Level 2026 Withdrawal Candidates List</span><span class="v g num">27 Oct 2026</span></a>
     </section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Results", "item": "https://sarkarichart.pages.dev/?cat=results"}, {"@type": "ListItem", "position": 3, "name": "RSSB Rajasthan Driver Result 2024 – Trade Test DV List Out", "item": "https://sarkarichart.pages.dev/notice/rssb-rajasthan-driver-result-2024-trade-test-dv-list-out/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "RSSB Rajasthan Driver Result 2024 – Trade Test DV List Out", "url": "https://sarkarichart.pages.dev/notice/rssb-rajasthan-driver-result-2024-trade-test-dv-list-out/", "inLanguage": ["en-IN", "hi-IN"], "description": "The Rajasthan Staff Selection Board (RSSB) has published the list of provisionally selected candidates for document verification following the trade test for the Direct Recruitment of Driver - 2024 (NTSP/TSP). Candidates can check their rank, application number, roll number, and personal details in the official list. Shortlisted candidates are required to attend the document verification process as per the board guidelines.", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "isBasedOn": "https://rssb.rajasthan.gov.in/storage/news_item/1793273784.pdf", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.pages.dev/notice/rssb-rajasthan-driver-result-2024-trade-test-dv-list-out/og.png", "about": {"@type": "GovernmentOrganization", "name": "Rajasthan Staff Selection Board (RSSB)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When was the RSSB Driver 2024 trade test DV list released?", "acceptedAnswer": {"@type": "Answer", "text": "The list was released on 29 October 2026."}}, {"@type": "Question", "name": "Which board conducted the Driver 2024 recruitment?", "acceptedAnswer": {"@type": "Answer", "text": "The recruitment is conducted by the Rajasthan Staff Selection Board (RSSB)."}}, {"@type": "Question", "name": "What is the next stage after the trade test for RSSB Driver?", "acceptedAnswer": {"@type": "Answer", "text": "The next stage is document verification for provisionally selected candidates."}}]}]</script>
     <details class="hidet" lang="hi">
@@ -567,9 +608,9 @@ html[lang="hi"] .hidet { display: none; }
       rel0: "RSSB Prahari 2024 Final Cut-off Marks Amended Order",
       rel1: "RSSB Driver DV Schedule 2024 – Scrutiny Form Dates Out",
       rel2: "RSSB Fourth Class Employee 2024 DV Schedule & Instructions",
-      rel3: "RSSB Supervisor Woman DV Schedule 2026 – Scrutiny Form Dates",
-      rel4: "RSSB Rajasthan Driver Scrutiny Form Notice 2024 – DV Dates",
-      rel5: "RSSB Computer Instructor Recruitment 2026 – Amended Notification 3,951 Posts",
+      rel3: "RSSB Rajasthan Driver Scrutiny Form Notice 2024 – DV Dates",
+      rel4: "RSSB Computer Instructor Recruitment 2026 – Amended Notification 3,951 Posts",
+      rel5: "RSSB CET Senior Secondary Level 2026 Withdrawal Candidates List",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -657,9 +698,9 @@ html[lang="hi"] .hidet { display: none; }
       rel0: "राजस्थान कर्मचारी चयन बोर्ड प्रहरी 2024 अंतिम कट-ऑफ अंक संशोधित आदेश",
       rel1: "राजस्थान कर्मचारी चयन बोर्ड चालक डीवी 2024 – संवीक्षा फॉर्म तिथियां जारी",
       rel2: "राजस्थान चतुर्थ श्रेणी कर्मचारी 2024 दस्तावेज सत्यापन शेड्यूल और निर्देश",
-      rel3: "आरएसएसबी पर्यवेक्षक महिला डीवी शेड्यूल 2026 – संवीक्षा फॉर्म तिथियां",
-      rel4: "राजस्थान कर्मचारी चयन बोर्ड वाहन चालक संवीक्षा प्रपत्र सूचना 2024",
-      rel5: "राजस्थान कर्मचारी चयन बोर्ड कंप्यूटर अनुदेशक भर्ती 2026 – संशोधित विज्ञप्ति 3,951 पद",
+      rel3: "राजस्थान कर्मचारी चयन बोर्ड वाहन चालक संवीक्षा प्रपत्र सूचना 2024",
+      rel4: "राजस्थान कर्मचारी चयन बोर्ड कंप्यूटर अनुदेशक भर्ती 2026 – संशोधित विज्ञप्ति 3,951 पद",
+      rel5: "आरएसएसबी सीईटी सीनियर सेकेंडरी स्तर 2026 आवेदन वापसी सूची",
     },
   };
   let lang = "en";

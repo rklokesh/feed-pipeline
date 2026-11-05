@@ -291,7 +291,48 @@ html[lang="hi"] .hidet { display: none; }
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .fback { background: var(--soft); } }
 @media (prefers-reduced-motion: reduce) { .fback { transition: none; } }
 @media print { .fback { display: none !important; } }
+/* ===== v2: app-style phone design (preview; html.v2, phones only) ===== */
+@media (max-width: 640px) {
+  html.v2 body { -webkit-tap-highlight-color: transparent; }
+  html.v2 .top { position: sticky; top: 0; z-index: 30; margin: 0 -16px 18px; padding: 8px 16px; grid-template-columns: auto 1fr auto; gap: 12px;
+    background: color-mix(in srgb, var(--page) 80%, transparent); -webkit-backdrop-filter: blur(18px) saturate(180%); backdrop-filter: blur(18px) saturate(180%);
+    border-bottom: 1px solid color-mix(in srgb, var(--ink) 7%, transparent); }
+  html.v2 .top .logo { grid-column: 1; }
+  html.v2 .top .logo img, html.v2 .top .logo .mark { width: 44px; height: 44px; }
+  html.v2 .top .nav-r { grid-column: 3; gap: 6px; }
+  html.v2 .top .nav-r button { display: inline-grid; place-items: center; min-width: 40px; height: 40px; padding: 0 12px; border-radius: 999px; background: var(--soft); box-sizing: border-box; }
+  html.v2 .sheet { padding-top: 0; }
+}
+@media (max-width: 640px) {
+  html.v2 .fback { top: max(calc(env(safe-area-inset-top, 0px) + 8px), var(--fb-y, 8px)); }
+  html.v2 .top .hback { width: 44px; height: 44px; }
+  html.v2 .top .logo { grid-column: 2; justify-self: center; }
+  html.v2 .title { gap: 10px; text-align: left; }
+  html.v2 .title .crumb { justify-content: flex-start; }
+  html.v2 h1 { font-size: 1.6rem; line-height: 1.22; text-align: left; }
+  html.v2 .title .meta, html.v2 .title .lead, html.v2 .title .exjump, html.v2 .status, html.v2 .title { text-align: left !important; justify-content: flex-start !important; justify-items: start; }
+  html.v2 .top .nav-r a[href="/about/"] { display: none; }
+  /* sections: rounded cards; each fact as a small grey label above its value */
+  html.v2 .kv { border: 0 !important; border-radius: 16px; background: var(--soft); overflow: hidden; }
+  html.v2 .kv .h { background: none !important; border: 0 !important; padding: 14px 16px 4px !important; font-weight: 600; color: var(--ink) !important; }
+  html.v2 .kv .r { grid-template-columns: 1fr !important; gap: 2px !important; padding: 10px 16px !important; border: 0 !important;
+    border-top: 1px solid color-mix(in srgb, var(--ink) 7%, transparent) !important; }
+  html.v2 .kv .r > :first-child { font-size: .8125rem; }
+  html.v2 .kv .p, html.v2 .kv .steps, html.v2 .kv .qa, html.v2 .kv .tbl { padding-left: 16px; padding-right: 16px; }
+  html.v2 .kv > :last-child { padding-bottom: 14px; }
+  html.v2 .toc { border-radius: 16px; overflow: hidden; border: 0 !important; background: var(--soft); }
+  html.v2 .toc summary { background: none !important; padding: 14px 16px !important; }
+  html.v2 .ogimg { border-radius: 16px; }
+  /* actions: full-width pill buttons */
+  html.v2 .actions { display: grid !important; gap: 10px !important; }
+  html.v2 .actions a { justify-content: center; padding: 13px 16px; border-radius: 999px; background: var(--soft); text-decoration: none; }
+  html.v2 .actions a.share { background: #1FA855; color: #fff; }
+  html.v2 .actions a.share svg path:first-child { fill: #fff; }
+  html.v2 .actions a.share svg path:last-child { fill: #1FA855; }
+}
 </style>
+<script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */
+try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")==="1")document.documentElement.classList.add("v2")}catch(e){}</script>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
 </head>
@@ -375,8 +416,8 @@ html[lang="hi"] .hidet { display: none; }
       <a class="r" href="/notice/bpsc-assistant-professor-recruitment-2025-vacancies-cancelled/"><span data-t="rel0">BPSC Assistant Professor Recruitment 2025 – Vacancies Cancelled</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/bpsc-stenographer-exam-date-2026/"><span data-t="rel1">BPSC Stenographer Exam Date 2026 Notice Released</span><span class="v g num">22 Oct 2026</span></a>
       <a class="r" href="/notice/rrc-western-railway-sports-quota-weightlifting-weight-categories/"><span data-t="rel2">RRC Western Railway Sports Quota Weightlifting Weight Categories Update 2026</span><span class="v g num">5 Nov 2026</span></a>
-      <a class="r" href="/notice/rssb-supervisor-woman-dv-schedule-2026-scrutiny-form-dates/"><span data-t="rel3">RSSB Supervisor Woman DV Schedule 2026 – Scrutiny Form Dates</span><span class="v g num">5 Nov 2026</span></a>
-      <a class="r" href="/notice/rrb-ntpc-undergraduate-cen-07-2025-cbtst-instructions-2026/"><span data-t="rel4">RRB NTPC Undergraduate CEN 07/2025 CBTST Instructions 2026</span><span class="v g num">4 Nov 2026</span></a>
+      <a class="r" href="/notice/rrb-ntpc-undergraduate-cen-07-2025-cbtst-instructions-2026/"><span data-t="rel3">RRB NTPC Undergraduate CEN 07/2025 CBTST Instructions 2026</span><span class="v g num">4 Nov 2026</span></a>
+      <a class="r" href="/notice/uppsc-assistant-teacher-maths-document-verification-schedule-202/"><span data-t="rel4">UPPSC Assistant Teacher Maths Document Verification Schedule 2026</span><span class="v g num">3 Nov 2026</span></a>
     </section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Updates", "item": "https://sarkarichart.pages.dev/?cat=all"}, {"@type": "ListItem", "position": 3, "name": "BPSC 72nd CCE Recruitment 2026 – Vacancies Revised Corrigendum", "item": "https://sarkarichart.pages.dev/notice/bpsc-72nd-cce-2026-sugarcane-officer-vacancies-deleted/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "BPSC 72nd CCE Recruitment 2026 – Vacancies Revised Corrigendum", "url": "https://sarkarichart.pages.dev/notice/bpsc-72nd-cce-2026-sugarcane-officer-vacancies-deleted/", "inLanguage": ["en-IN", "hi-IN"], "description": "The Bihar Public Service Commission (BPSC) has released an official corrigendum regarding the Integrated 72nd Combined Preliminary Examination. As per the notice, 44 vacancies for the post of Sugarcane Officer under the Sugarcane Industry Department have been deleted from the examination advertisement. According to the Bihar Sugarcane Development Rules 2025, these vacancies belong to Assistant Director Sugarcane Development and equivalent posts, which have different educational qualifications and exam structures. Consequently, the total number of vacancies for the 72nd CCE has been revised from 1,230 to 1,186.", "datePublished": "2026-05-06", "dateModified": "2026-10-22", "isBasedOn": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Corrigendum-Integrated-72nd-CCE-Pre-Advt.-44-vacancies-of-Sugarcane-Officer-deleted_BPSC-20260506-0jupsy.pdf", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.pages.dev/notice/bpsc-72nd-cce-2026-sugarcane-officer-vacancies-deleted/og.png", "about": {"@type": "GovernmentOrganization", "name": "Bihar Public Service Commission (BPSC)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many vacancies are there now in BPSC 72nd CCE?", "acceptedAnswer": {"@type": "Answer", "text": "The total number of vacancies has been revised to 1,186 after deleting 44 posts."}}, {"@type": "Question", "name": "Why were the Sugarcane Officer vacancies deleted?", "acceptedAnswer": {"@type": "Answer", "text": "They were deleted as per the Bihar Sugarcane Development Rules 2025 because they belong to Assistant Director Sugarcane Development and equivalent posts, which have different educational qualifications and exam structures."}}]}]</script>
     <details class="hidet" lang="hi">
@@ -517,8 +558,8 @@ html[lang="hi"] .hidet { display: none; }
       rel0: "BPSC Assistant Professor Recruitment 2025 – Vacancies Cancelled",
       rel1: "BPSC Stenographer Exam Date 2026 Notice Released",
       rel2: "RRC Western Railway Sports Quota Weightlifting Weight Categories Update 2026",
-      rel3: "RSSB Supervisor Woman DV Schedule 2026 – Scrutiny Form Dates",
-      rel4: "RRB NTPC Undergraduate CEN 07/2025 CBTST Instructions 2026",
+      rel3: "RRB NTPC Undergraduate CEN 07/2025 CBTST Instructions 2026",
+      rel4: "UPPSC Assistant Teacher Maths Document Verification Schedule 2026",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -589,8 +630,8 @@ html[lang="hi"] .hidet { display: none; }
       rel0: "बीपीएससी सहायक प्राध्यापक भर्ती 2025 – विज्ञापन रद्द",
       rel1: "बिहार लोक सेवा आयोग आशुलिपिक परीक्षा तिथि 2026 सूचना जारी",
       rel2: "आरआरसी पश्चिमी रेलवे खेल कोटा भारोत्तोलन वजन श्रेणियां अद्यतन 2026",
-      rel3: "आरएसएसबी पर्यवेक्षक महिला डीवी शेड्यूल 2026 – संवीक्षा फॉर्म तिथियां",
-      rel4: "आरआरबी एनटीपीसी स्नातक CEN 07/2025 सीबीटीस्ट निर्देश 2026",
+      rel3: "आरआरबी एनटीपीसी स्नातक CEN 07/2025 सीबीटीस्ट निर्देश 2026",
+      rel4: "उत्तर प्रदेश लोक सेवा आयोग सहायक अध्यापक गणित दस्तावेज सत्यापन कार्यक्रम 2026",
     },
   };
   let lang = "en";

@@ -300,8 +300,21 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
                 en["gQ"], hi["gQ"] = "Minimum qualification", "न्यूनतम योग्यता"
                 en["gQV"], hi["gQV"] = QN[q]
                 rows.append(("gQ", "gQV"))
-    sel_en = [str(x).strip() for x in (pg.get("selection_en") or []) if str(x).strip()]
-    sel_hi = [str(x).strip() for x in (pg.get("selection_hi") or []) if str(x).strip()]
+    # selection steps come as plain text or as {"label_en": ..., "label_hi": ...} rows (sometimes as that dict's text)
+    def undict(x):
+        if isinstance(x, str) and x.strip().startswith("{'"):
+            try:
+                import ast
+                v = ast.literal_eval(x.strip())
+                return v if isinstance(v, dict) else x
+            except (ValueError, SyntaxError):
+                return x
+        return x
+    pg["selection_en"] = [undict(x) for x in (pg.get("selection_en") or [])] if isinstance(pg.get("selection_en"), list) else pg.get("selection_en")
+    pg["selection_hi"] = [undict(x) for x in (pg.get("selection_hi") or [])] if isinstance(pg.get("selection_hi"), list) else pg.get("selection_hi")
+    stage = lambda x, k: (x.get(f"label_{k}") or x.get("label_en") or x.get(f"value_{k}") or "") if isinstance(x, dict) else str(x)
+    sel_en = [stage(x, "en").strip() for x in (pg.get("selection_en") or []) if stage(x, "en").strip()]
+    sel_hi = [stage(x, "hi").strip() for x in (pg.get("selection_hi") or pg.get("selection_en") or []) if stage(x, "hi").strip()]
     if sel_en and not re.search(r"selection", labels):
         en["gSel"], hi["gSel"] = "Selection process", "चयन प्रक्रिया"
         short = lambda xs: " → ".join(re.sub(r"\s*[:(].*$", "", x)[:40] for x in xs[:6])
@@ -389,8 +402,17 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
         main.append(f'    <section class="kv" id="{key}" data-t-aria="{key}">\n      <div class="h" data-t="{key}">{esc(label_en)}</div>\n{body}    </section>')
 
     def sec_list(key, label_en, label_hi, items_en, items_hi, ordered=True):
-        items_en = [S(x) for x in (items_en if isinstance(items_en, list) else [items_en] if items_en else [])]
-        items_hi = [S(x) for x in (items_hi if isinstance(items_hi, list) else [])]
+        raw = items_en if isinstance(items_en, list) else [items_en] if items_en else []
+        if not items_hi and any(isinstance(x, dict) for x in raw):      # rows like {"label_en", "value_en", "label_hi", ...}
+            items_hi = raw
+        def one(x, k):
+            if isinstance(x, dict):
+                lab = S(x.get(f"label_{k}")) or S(x.get("label_en"))
+                val = S(x.get(f"value_{k}")) or S(x.get("value_en"))
+                return f"{lab}: {val}" if lab and val else lab or val
+            return S(x)
+        items_en = [one(x, "en") for x in raw]
+        items_hi = [one(x, "hi") for x in (items_hi if isinstance(items_hi, list) else [])]
         items = [(e, (items_hi[k] if k < len(items_hi) and items_hi[k] else e)) for k, e in enumerate(items_en) if e]
         if not items:
             return

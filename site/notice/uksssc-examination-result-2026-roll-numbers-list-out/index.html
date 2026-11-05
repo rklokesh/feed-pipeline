@@ -291,7 +291,48 @@ html[lang="hi"] .hidet { display: none; }
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .fback { background: var(--soft); } }
 @media (prefers-reduced-motion: reduce) { .fback { transition: none; } }
 @media print { .fback { display: none !important; } }
+/* ===== v2: app-style phone design (preview; html.v2, phones only) ===== */
+@media (max-width: 640px) {
+  html.v2 body { -webkit-tap-highlight-color: transparent; }
+  html.v2 .top { position: sticky; top: 0; z-index: 30; margin: 0 -16px 18px; padding: 8px 16px; grid-template-columns: auto 1fr auto; gap: 12px;
+    background: color-mix(in srgb, var(--page) 80%, transparent); -webkit-backdrop-filter: blur(18px) saturate(180%); backdrop-filter: blur(18px) saturate(180%);
+    border-bottom: 1px solid color-mix(in srgb, var(--ink) 7%, transparent); }
+  html.v2 .top .logo { grid-column: 1; }
+  html.v2 .top .logo img, html.v2 .top .logo .mark { width: 44px; height: 44px; }
+  html.v2 .top .nav-r { grid-column: 3; gap: 6px; }
+  html.v2 .top .nav-r button { display: inline-grid; place-items: center; min-width: 40px; height: 40px; padding: 0 12px; border-radius: 999px; background: var(--soft); box-sizing: border-box; }
+  html.v2 .sheet { padding-top: 0; }
+}
+@media (max-width: 640px) {
+  html.v2 .fback { top: max(calc(env(safe-area-inset-top, 0px) + 8px), var(--fb-y, 8px)); }
+  html.v2 .top .hback { width: 44px; height: 44px; }
+  html.v2 .top .logo { grid-column: 2; justify-self: center; }
+  html.v2 .title { gap: 10px; text-align: left; }
+  html.v2 .title .crumb { justify-content: flex-start; }
+  html.v2 h1 { font-size: 1.6rem; line-height: 1.22; text-align: left; }
+  html.v2 .title .meta, html.v2 .title .lead, html.v2 .title .exjump, html.v2 .status, html.v2 .title { text-align: left !important; justify-content: flex-start !important; justify-items: start; }
+  html.v2 .top .nav-r a[href="/about/"] { display: none; }
+  /* sections: rounded cards; each fact as a small grey label above its value */
+  html.v2 .kv { border: 0 !important; border-radius: 16px; background: var(--soft); overflow: hidden; }
+  html.v2 .kv .h { background: none !important; border: 0 !important; padding: 14px 16px 4px !important; font-weight: 600; color: var(--ink) !important; }
+  html.v2 .kv .r { grid-template-columns: 1fr !important; gap: 2px !important; padding: 10px 16px !important; border: 0 !important;
+    border-top: 1px solid color-mix(in srgb, var(--ink) 7%, transparent) !important; }
+  html.v2 .kv .r > :first-child { font-size: .8125rem; }
+  html.v2 .kv .p, html.v2 .kv .steps, html.v2 .kv .qa, html.v2 .kv .tbl { padding-left: 16px; padding-right: 16px; }
+  html.v2 .kv > :last-child { padding-bottom: 14px; }
+  html.v2 .toc { border-radius: 16px; overflow: hidden; border: 0 !important; background: var(--soft); }
+  html.v2 .toc summary { background: none !important; padding: 14px 16px !important; }
+  html.v2 .ogimg { border-radius: 16px; }
+  /* actions: full-width pill buttons */
+  html.v2 .actions { display: grid !important; gap: 10px !important; }
+  html.v2 .actions a { justify-content: center; padding: 13px 16px; border-radius: 999px; background: var(--soft); text-decoration: none; }
+  html.v2 .actions a.share { background: #1FA855; color: #fff; }
+  html.v2 .actions a.share svg path:first-child { fill: #fff; }
+  html.v2 .actions a.share svg path:last-child { fill: #1FA855; }
+}
 </style>
+<script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */
+try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")==="1")document.documentElement.classList.add("v2")}catch(e){}</script>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
 </head>
@@ -381,9 +422,9 @@ html[lang="hi"] .hidet { display: none; }
       <a class="r" href="/notice/uksssc-assistant-agriculture-officer-answer-key-2026-objection-l/"><span data-t="rel0">UKSSSC Assistant Agriculture Officer Answer Key 2026 – Objection Link</span><span class="v g num">25 Oct 2026</span></a>
       <a class="r" href="/notice/uksssc-tourist-officer-admit-card-2026-exam-date-out-link/"><span data-t="rel1">UKSSSC Tourist Officer Admit Card 2026 – Exam Date Out Link</span><span class="v g num">25 Oct 2026</span></a>
       <a class="r" href="/notice/upsc-civil-services-main-exam-2026-written-result-out/"><span data-t="rel2">UPSC Civil Services Main Exam 2026 Written Result Out</span><span class="v g num">5 Nov 2026</span></a>
-      <a class="r" href="/notice/wbpsc-wbcs-prelims-result-2024-merit-list-and-cut-off/"><span data-t="rel3">WBPSC WBCS Prelims Result 2024 – Merit List and Cut Off</span><span class="v g num">5 Nov 2026</span></a>
-      <a class="r" href="/notice/rpsc-programmer-result-2024-additional-candidate-list/"><span data-t="rel4">RPSC Programmer Result 2024 – Additional Candidate List</span><span class="v g num">4 Nov 2026</span></a>
-      <a class="r" href="/notice/rpsc-assistant-professor-yoga-vigyan-revised-result-2024-check/"><span data-t="rel5">RPSC Assistant Professor Yoga Vigyan Revised Result 2024 – Check</span><span class="v g num">4 Nov 2026</span></a>
+      <a class="r" href="/notice/rpsc-programmer-result-2024-additional-candidate-list/"><span data-t="rel3">RPSC Programmer Result 2024 – Additional Candidate List</span><span class="v g num">4 Nov 2026</span></a>
+      <a class="r" href="/notice/rpsc-assistant-professor-yoga-vigyan-revised-result-2024-check/"><span data-t="rel4">RPSC Assistant Professor Yoga Vigyan Revised Result 2024 – Check</span><span class="v g num">4 Nov 2026</span></a>
+      <a class="r" href="/notice/rssb-prahari-2024-final-cut-off-marks-amended-order/"><span data-t="rel5">RSSB Prahari 2024 Final Cut-off Marks Amended Order</span><span class="v g num">4 Nov 2026</span></a>
     </section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Results", "item": "https://sarkarichart.pages.dev/?cat=results"}, {"@type": "ListItem", "position": 3, "name": "UKSSSC Examination Result 2026 – Roll Numbers List Out", "item": "https://sarkarichart.pages.dev/notice/uksssc-examination-result-2026-roll-numbers-list-out/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "UKSSSC Examination Result 2026 – Roll Numbers List Out", "url": "https://sarkarichart.pages.dev/notice/uksssc-examination-result-2026-roll-numbers-list-out/", "inLanguage": ["en-IN", "hi-IN"], "description": "The Uttarakhand Subordinate Service Selection Commission (UKSSSC) has announced the examination result. This notice lists the roll numbers of candidates who have qualified the examination. Candidates can view the published list of roll numbers on this page or through the official website. Check your roll number to know your qualification status.", "datePublished": "2026-10-23", "dateModified": "2026-11-03", "isBasedOn": "https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/10/202610281814230036.pdf", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.pages.dev/notice/uksssc-examination-result-2026-roll-numbers-list-out/og.png", "about": {"@type": "GovernmentOrganization", "name": "Uttarakhand Subordinate Service Selection Commission (UKSSSC)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where can I check the UKSSSC examination result?", "acceptedAnswer": {"@type": "Answer", "text": "You can check the result on the official UKSSSC website or view the roll numbers list provided on this page."}}, {"@type": "Question", "name": "What details are available in the result notice?", "acceptedAnswer": {"@type": "Answer", "text": "The result notice contains the roll numbers of the candidates who have successfully qualified the examination."}}]}]</script>
     <details class="hidet" lang="hi">
@@ -532,9 +573,9 @@ html[lang="hi"] .hidet { display: none; }
       rel0: "UKSSSC Assistant Agriculture Officer Answer Key 2026 – Objection Link",
       rel1: "UKSSSC Tourist Officer Admit Card 2026 – Exam Date Out Link",
       rel2: "UPSC Civil Services Main Exam 2026 Written Result Out",
-      rel3: "WBPSC WBCS Prelims Result 2024 – Merit List and Cut Off",
-      rel4: "RPSC Programmer Result 2024 – Additional Candidate List",
-      rel5: "RPSC Assistant Professor Yoga Vigyan Revised Result 2024 – Check",
+      rel3: "RPSC Programmer Result 2024 – Additional Candidate List",
+      rel4: "RPSC Assistant Professor Yoga Vigyan Revised Result 2024 – Check",
+      rel5: "RSSB Prahari 2024 Final Cut-off Marks Amended Order",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -603,9 +644,9 @@ html[lang="hi"] .hidet { display: none; }
       rel0: "उत्तराखण्ड अधीनस्थ सेवा चयन आयोग सहायक कृषि अधिकारी उत्तर कुंजी 2026",
       rel1: "यूकेएसएसएससी पर्यटक अधिकारी एडमिट कार्ड 2026 – परीक्षा तिथि और प्रवेश पत्र लिंक",
       rel2: "संघ लोक सेवा आयोग सिविल सेवा मुख्य परीक्षा 2026 लिखित परिणाम जारी",
-      rel3: "पश्चिम बंगाल लोक सेवा आयोग सिविल सेवा प्रारंभिक परीक्षा परिणाम 2024 – मेरिट लिस्ट",
-      rel4: "आरपीएससी प्रोग्रामर परिणाम 2024 – अतिरिक्त अभ्यर्थी सूची",
-      rel5: "आरपीएससी सहायक आचार्य योग विज्ञान संशोधित परिणाम 2024 – देखें",
+      rel3: "आरपीएससी प्रोग्रामर परिणाम 2024 – अतिरिक्त अभ्यर्थी सूची",
+      rel4: "आरपीएससी सहायक आचार्य योग विज्ञान संशोधित परिणाम 2024 – देखें",
+      rel5: "राजस्थान कर्मचारी चयन बोर्ड प्रहरी 2024 अंतिम कट-ऑफ अंक संशोधित आदेश",
     },
   };
   let lang = "en";

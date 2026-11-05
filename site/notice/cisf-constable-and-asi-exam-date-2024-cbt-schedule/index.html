@@ -291,7 +291,48 @@ html[lang="hi"] .hidet { display: none; }
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .fback { background: var(--soft); } }
 @media (prefers-reduced-motion: reduce) { .fback { transition: none; } }
 @media print { .fback { display: none !important; } }
+/* ===== v2: app-style phone design (preview; html.v2, phones only) ===== */
+@media (max-width: 640px) {
+  html.v2 body { -webkit-tap-highlight-color: transparent; }
+  html.v2 .top { position: sticky; top: 0; z-index: 30; margin: 0 -16px 18px; padding: 8px 16px; grid-template-columns: auto 1fr auto; gap: 12px;
+    background: color-mix(in srgb, var(--page) 80%, transparent); -webkit-backdrop-filter: blur(18px) saturate(180%); backdrop-filter: blur(18px) saturate(180%);
+    border-bottom: 1px solid color-mix(in srgb, var(--ink) 7%, transparent); }
+  html.v2 .top .logo { grid-column: 1; }
+  html.v2 .top .logo img, html.v2 .top .logo .mark { width: 44px; height: 44px; }
+  html.v2 .top .nav-r { grid-column: 3; gap: 6px; }
+  html.v2 .top .nav-r button { display: inline-grid; place-items: center; min-width: 40px; height: 40px; padding: 0 12px; border-radius: 999px; background: var(--soft); box-sizing: border-box; }
+  html.v2 .sheet { padding-top: 0; }
+}
+@media (max-width: 640px) {
+  html.v2 .fback { top: max(calc(env(safe-area-inset-top, 0px) + 8px), var(--fb-y, 8px)); }
+  html.v2 .top .hback { width: 44px; height: 44px; }
+  html.v2 .top .logo { grid-column: 2; justify-self: center; }
+  html.v2 .title { gap: 10px; text-align: left; }
+  html.v2 .title .crumb { justify-content: flex-start; }
+  html.v2 h1 { font-size: 1.6rem; line-height: 1.22; text-align: left; }
+  html.v2 .title .meta, html.v2 .title .lead, html.v2 .title .exjump, html.v2 .status, html.v2 .title { text-align: left !important; justify-content: flex-start !important; justify-items: start; }
+  html.v2 .top .nav-r a[href="/about/"] { display: none; }
+  /* sections: rounded cards; each fact as a small grey label above its value */
+  html.v2 .kv { border: 0 !important; border-radius: 16px; background: var(--soft); overflow: hidden; }
+  html.v2 .kv .h { background: none !important; border: 0 !important; padding: 14px 16px 4px !important; font-weight: 600; color: var(--ink) !important; }
+  html.v2 .kv .r { grid-template-columns: 1fr !important; gap: 2px !important; padding: 10px 16px !important; border: 0 !important;
+    border-top: 1px solid color-mix(in srgb, var(--ink) 7%, transparent) !important; }
+  html.v2 .kv .r > :first-child { font-size: .8125rem; }
+  html.v2 .kv .p, html.v2 .kv .steps, html.v2 .kv .qa, html.v2 .kv .tbl { padding-left: 16px; padding-right: 16px; }
+  html.v2 .kv > :last-child { padding-bottom: 14px; }
+  html.v2 .toc { border-radius: 16px; overflow: hidden; border: 0 !important; background: var(--soft); }
+  html.v2 .toc summary { background: none !important; padding: 14px 16px !important; }
+  html.v2 .ogimg { border-radius: 16px; }
+  /* actions: full-width pill buttons */
+  html.v2 .actions { display: grid !important; gap: 10px !important; }
+  html.v2 .actions a { justify-content: center; padding: 13px 16px; border-radius: 999px; background: var(--soft); text-decoration: none; }
+  html.v2 .actions a.share { background: #1FA855; color: #fff; }
+  html.v2 .actions a.share svg path:first-child { fill: #fff; }
+  html.v2 .actions a.share svg path:last-child { fill: #1FA855; }
+}
 </style>
+<script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */
+try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")==="1")document.documentElement.classList.add("v2")}catch(e){}</script>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
 </head>
@@ -383,7 +424,7 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <section class="kv rel" data-t-aria="relH">
       <h2 class="h" data-t="relH">More notices</h2>
-      <a class="r" href="/notice/rpsc-protection-officer-admit-card-2025-exam-date-district-info/"><span data-t="rel0">RPSC Protection Officer Admit Card 2025 – Exam Date &amp; District Info</span><span class="v g num">5 Nov 2026</span></a>
+      <a class="r" href="/notice/upsssc-junior-assistant-admit-card-2026-typing-test-out/"><span data-t="rel0">UPSSSC Junior Assistant Admit Card 2026 – Typing Test Out</span><span class="v g num">3 Nov 2026</span></a>
     </section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Admit cards", "item": "https://sarkarichart.pages.dev/?cat=admit-cards"}, {"@type": "ListItem", "position": 3, "name": "CISF Constable and ASI Exam Date 2024 – CBT Schedule", "item": "https://sarkarichart.pages.dev/notice/cisf-constable-and-asi-exam-date-2024-cbt-schedule/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "CISF Constable and ASI Exam Date 2024 – CBT Schedule", "url": "https://sarkarichart.pages.dev/notice/cisf-constable-and-asi-exam-date-2024-cbt-schedule/", "inLanguage": ["en-IN", "hi-IN"], "description": "The Central Industrial Security Force (CISF) has announced the schedule for the Computer Based Examination (CBE). This notice is for candidates who have applied for the Constable (Fire), Constable (Tradesman), Constable (Driver & DCPO) 2024 recruitment and Assistant Sub Inspector / Executive (LDCE) 2023 examination. Candidates should check the official schedule and prepare for the upcoming examination.", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "isBasedOn": "https://cisfrectt.cisf.gov.in/file_open.php?fnm=D-iqzV6fzcktenGomEsloL0LYanhgL4-DUkY2fHuYU26YCi3MJWbwCOP19eltJq9JX8SxfXoZ0a6WBHavFP85_gXMXdIEaz8m2RVhpdyNWI", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.pages.dev/notice/cisf-constable-and-asi-exam-date-2024-cbt-schedule/og.png", "about": {"@type": "GovernmentOrganization", "name": "Central Industrial Security Force (CISF)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which posts are included in this CISF exam notice?", "acceptedAnswer": {"@type": "Answer", "text": "The notice includes Constable (Fire), Constable (TM), Constable (Driver & DCPO) - 2024 and ASI/Exe (LDCE) - 2023 posts."}}, {"@type": "Question", "name": "Where can I check the CISF exam schedule?", "acceptedAnswer": {"@type": "Answer", "text": "You can check the exam schedule on the official CISF recruitment website at cisfrectt.cisf.gov.in."}}]}]</script>
     <details class="hidet" lang="hi">
@@ -547,7 +588,7 @@ html[lang="hi"] .hidet { display: none; }
       ex4: "CISF Constable and ASI Exam Date Notice 2024 – CBE Schedule",
       exs4: "Exam Schedule Notice",
       relH: "More notices",
-      rel0: "RPSC Protection Officer Admit Card 2025 – Exam Date & District Info",
+      rel0: "UPSSSC Junior Assistant Admit Card 2026 – Typing Test Out",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -634,7 +675,7 @@ html[lang="hi"] .hidet { display: none; }
       ex4: "CISF कांस्टेबल और ASI परीक्षा तिथि सूचना 2024 – सीबीई शेड्यूल",
       exs4: "परीक्षा शेड्यूल सूचना",
       relH: "और सूचनाएँ",
-      rel0: "आरपीएससी संरक्षण अधिकारी एडमिट कार्ड 2025 – परीक्षा तिथि और जिला सूचना",
+      rel0: "यूपीएसएसएससी कनिष्ठ सहायक एडमिट कार्ड 2026 – टंकण परीक्षा जारी",
     },
   };
   let lang = "en";

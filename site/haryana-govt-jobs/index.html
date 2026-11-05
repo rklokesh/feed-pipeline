@@ -302,7 +302,67 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   .tscroll li.lr:hover > a.row > span.t, .tscroll li.lr.sel > a.row > span.t { background: var(--hover); }
   .tscroll .t .newtag.show-sm, .tscroll .t .rsiren.show-sm { display: inline-block; }   /* NEW + siren stay visible beside the title */
 }
+/* ===== v2: app-style phone design (preview; html.v2, phones only) ===== */
+@media (max-width: 640px) {
+  html.v2 body { -webkit-tap-highlight-color: transparent; }
+  html.v2 .top { position: sticky; top: 0; z-index: 30; margin: 0 -16px 18px; padding: 8px 16px; grid-template-columns: auto 1fr auto; gap: 12px;
+    background: color-mix(in srgb, var(--page) 80%, transparent); -webkit-backdrop-filter: blur(18px) saturate(180%); backdrop-filter: blur(18px) saturate(180%);
+    border-bottom: 1px solid color-mix(in srgb, var(--ink) 7%, transparent); }
+  html.v2 .top .logo { grid-column: 1; }
+  html.v2 .top .logo img, html.v2 .top .logo .mark { width: 44px; height: 44px; }
+  html.v2 .top .nav-r { grid-column: 3; gap: 6px; }
+  html.v2 .top .nav-r button { display: inline-grid; place-items: center; min-width: 40px; height: 40px; padding: 0 12px; border-radius: 999px; background: var(--soft); box-sizing: border-box; }
+  html.v2 .sheet { padding-top: 0; }
+}
+@media (max-width: 640px) {
+  /* search: rounded grey pill */
+  html.v2 .search { margin-bottom: 14px; }
+  html.v2 .search input { background: var(--soft); border: 1px solid transparent; border-radius: 999px; padding: 13px 92px 13px 46px; }
+  html.v2 .search input:focus { border-color: color-mix(in srgb, var(--ink) 25%, transparent); background: var(--page); }
+  html.v2 .sicon { left: 16px; }
+  html.v2 .ph { left: 46px; right: 92px; }
+  html.v2 .sx { right: 14px; }
+  /* categories: pills, the chosen one filled */
+  html.v2 .tabrow { margin-bottom: 10px; }
+  html.v2 .top { margin-bottom: 10px; }
+  html.v2 .tscroll .dd { min-width: 0; display: inline; }
+  html.v2 .tabs { gap: 8px; padding-bottom: 4px; -webkit-mask-image: none; mask-image: none; }
+  html.v2 .tabs .ink { display: none; }
+  html.v2 .tabs button { padding: 8px 14px; border-radius: 999px; background: var(--soft); color: var(--ink); font-size: .9375rem; }
+  html.v2 .tabs button[aria-pressed="true"] { background: var(--ink); color: var(--page); }
+  html.v2 .tabs button.zero { opacity: .45; }
+  html.v2 .newline { margin: 6px 0 4px; }
+  html.v2 .preset { margin: 4px 0 10px; }
+  /* list: two-line rows - full title, then board · type · posted, and the last date on the right */
+  html.v2 .tscroll { overflow: visible; margin: 0; padding: 0; }
+  html.v2 .tscroll .row.head { display: none; }
+  html.v2 .tscroll .list { min-width: 0; }
+  html.v2 .tscroll .list li.lr { display: grid; grid-template-columns: auto auto minmax(0, 1fr) auto; grid-template-areas: "t t t t" "o y p l";
+    gap: 4px 0; padding: 12px 2px; align-items: baseline; }
+  html.v2 .tscroll a.row > span { order: 0 !important; position: static !important; background: none !important; margin: 0 !important; padding: 0 !important; }
+  html.v2 .tscroll a.row > span.t { grid-area: t; white-space: normal; overflow: visible; text-overflow: clip; font-weight: 500; line-height: 1.35; }
+  html.v2 .tscroll a.row > :nth-child(3) { grid-area: o; display: inline !important; font-size: .8125rem; max-width: 8.5rem; }
+  html.v2 .tscroll a.row > :nth-child(4) { grid-area: y; display: inline !important; font-size: .8125rem; }
+  html.v2 .tscroll a.row > :nth-child(4)::before { content: "·"; margin: 0 6px; }
+  html.v2 .tscroll a.row > :nth-child(1) { grid-area: p; display: inline !important; font-size: .8125rem; }
+  html.v2 .tscroll a.row > :nth-child(1)::before { content: "·"; margin: 0 6px; color: var(--grey); }
+  html.v2 .tscroll a.row > :nth-child(1) .pc { display: inline; }
+  html.v2 .tscroll a.row > :nth-child(1) .slot, html.v2 .tscroll a.row > :nth-child(1) .siren-r { display: none; }
+  html.v2 .tscroll a.row > :nth-child(5) { grid-area: l; text-align: right; font-size: .875rem; padding-left: 10px !important; }
+  html.v2 .tscroll a.row > :nth-child(5) .nil { visibility: hidden; }
+  html.v2 .tscroll.soon a.row > :nth-child(1) { grid-area: l; }
+  html.v2 .tscroll.soon a.row > :nth-child(5) { grid-area: p; text-align: left; padding-left: 0 !important; }
+  html.v2 .tscroll.soon a.row > :nth-child(5)::before { content: "·"; margin: 0 6px; color: var(--grey); }
+  html.v2 .tscroll.soon a.row > :nth-child(1)::before { content: none; }
+  html.v2 .tscroll li.lr > .pdf { display: none !important; }
+  html.v2 .tscroll .t .newtag.show-sm, html.v2 .tscroll .t .rsiren.show-sm { display: inline-block; }
+  html.v2 .list li.lr:hover, html.v2 .list li.lr.sel { background: none; }
+  html.v2 .list li.lr:active { background: var(--hover); }
+  html.v2 .list li.lr.sel .t, html.v2 .list li.lr:hover .t { text-decoration: none; }
+}
 </style>
+<script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */
+try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")==="1")document.documentElement.classList.add("v2")}catch(e){}</script>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "SarkariChart", "alternateName": "सरकारी चार्ट", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png", "sameAs": ["https://t.me/sarkarichart"], "description": "Govt jobs, admit cards, results and answer keys from official notices, in English and Hindi."}, {"@context": "https://schema.org", "@type": "WebSite", "name": "SarkariChart", "alternateName": "सरकारी चार्ट", "url": "https://sarkarichart.pages.dev/", "inLanguage": ["en-IN", "hi-IN"], "potentialAction": {"@type": "SearchAction", "target": "https://sarkarichart.pages.dev/?q={search_term_string}", "query-input": "required name=search_term_string"}}]</script>

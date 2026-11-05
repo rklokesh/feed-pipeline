@@ -291,7 +291,48 @@ html[lang="hi"] .hidet { display: none; }
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .fback { background: var(--soft); } }
 @media (prefers-reduced-motion: reduce) { .fback { transition: none; } }
 @media print { .fback { display: none !important; } }
+/* ===== v2: app-style phone design (preview; html.v2, phones only) ===== */
+@media (max-width: 640px) {
+  html.v2 body { -webkit-tap-highlight-color: transparent; }
+  html.v2 .top { position: sticky; top: 0; z-index: 30; margin: 0 -16px 18px; padding: 8px 16px; grid-template-columns: auto 1fr auto; gap: 12px;
+    background: color-mix(in srgb, var(--page) 80%, transparent); -webkit-backdrop-filter: blur(18px) saturate(180%); backdrop-filter: blur(18px) saturate(180%);
+    border-bottom: 1px solid color-mix(in srgb, var(--ink) 7%, transparent); }
+  html.v2 .top .logo { grid-column: 1; }
+  html.v2 .top .logo img, html.v2 .top .logo .mark { width: 44px; height: 44px; }
+  html.v2 .top .nav-r { grid-column: 3; gap: 6px; }
+  html.v2 .top .nav-r button { display: inline-grid; place-items: center; min-width: 40px; height: 40px; padding: 0 12px; border-radius: 999px; background: var(--soft); box-sizing: border-box; }
+  html.v2 .sheet { padding-top: 0; }
+}
+@media (max-width: 640px) {
+  html.v2 .fback { top: max(calc(env(safe-area-inset-top, 0px) + 8px), var(--fb-y, 8px)); }
+  html.v2 .top .hback { width: 44px; height: 44px; }
+  html.v2 .top .logo { grid-column: 2; justify-self: center; }
+  html.v2 .title { gap: 10px; text-align: left; }
+  html.v2 .title .crumb { justify-content: flex-start; }
+  html.v2 h1 { font-size: 1.6rem; line-height: 1.22; text-align: left; }
+  html.v2 .title .meta, html.v2 .title .lead, html.v2 .title .exjump, html.v2 .status, html.v2 .title { text-align: left !important; justify-content: flex-start !important; justify-items: start; }
+  html.v2 .top .nav-r a[href="/about/"] { display: none; }
+  /* sections: rounded cards; each fact as a small grey label above its value */
+  html.v2 .kv { border: 0 !important; border-radius: 16px; background: var(--soft); overflow: hidden; }
+  html.v2 .kv .h { background: none !important; border: 0 !important; padding: 14px 16px 4px !important; font-weight: 600; color: var(--ink) !important; }
+  html.v2 .kv .r { grid-template-columns: 1fr !important; gap: 2px !important; padding: 10px 16px !important; border: 0 !important;
+    border-top: 1px solid color-mix(in srgb, var(--ink) 7%, transparent) !important; }
+  html.v2 .kv .r > :first-child { font-size: .8125rem; }
+  html.v2 .kv .p, html.v2 .kv .steps, html.v2 .kv .qa, html.v2 .kv .tbl { padding-left: 16px; padding-right: 16px; }
+  html.v2 .kv > :last-child { padding-bottom: 14px; }
+  html.v2 .toc { border-radius: 16px; overflow: hidden; border: 0 !important; background: var(--soft); }
+  html.v2 .toc summary { background: none !important; padding: 14px 16px !important; }
+  html.v2 .ogimg { border-radius: 16px; }
+  /* actions: full-width pill buttons */
+  html.v2 .actions { display: grid !important; gap: 10px !important; }
+  html.v2 .actions a { justify-content: center; padding: 13px 16px; border-radius: 999px; background: var(--soft); text-decoration: none; }
+  html.v2 .actions a.share { background: #1FA855; color: #fff; }
+  html.v2 .actions a.share svg path:first-child { fill: #fff; }
+  html.v2 .actions a.share svg path:last-child { fill: #1FA855; }
+}
 </style>
+<script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */
+try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")==="1")document.documentElement.classList.add("v2")}catch(e){}</script>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
 </head>
@@ -327,7 +368,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span data-t="r2l">Document Verification Dates</span><span class="v" data-t="r2v">17 Nov 2026 to 20 Nov 2026</span></div>
       <div class="r"><span data-t="r3l">Exam Name</span><span class="v" data-t="r3v">Assistant Teacher Trained Graduate Exam 2025</span></div>
       <div class="r"><span data-t="gQ">Minimum qualification</span><span class="v" data-t="gQV">Graduate (any degree, see notice)</span></div>
-      <div class="r"><span data-t="gSel">Selection process</span><span class="v" data-t="gSelV">{&#x27;label_en&#x27; → {&#x27;label_en&#x27;</span></div>
+      <div class="r"><span data-t="gSel">Selection process</span><span class="v" data-t="gSelV">Written Exam → Document Verification</span></div>
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#eligH" data-t="eligH">Eligibility</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
     <section class="kv" id="about" data-t-aria="aboutH">
@@ -349,7 +390,7 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <section class="kv" id="selH" data-t-aria="selH">
       <h2 class="h" data-t="selH">Selection process</h2>
-      <ol class="steps"><li data-t="selH0">{&#x27;label_en&#x27;: &#x27;Written Exam&#x27;, &#x27;label_hi&#x27;: &#x27;लिखित परीक्षा&#x27;}</li><li data-t="selH1">{&#x27;label_en&#x27;: &#x27;Document Verification&#x27;, &#x27;label_hi&#x27;: &#x27;दस्तावेज सत्यापन&#x27;}</li></ol>
+      <ol class="steps"><li data-t="selH0">Written Exam</li><li data-t="selH1">Document Verification</li></ol>
     </section>
     <section class="kv" id="howH" data-t-aria="howH">
       <h2 class="h" data-t="howH">How to download</h2>
@@ -416,7 +457,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span >दस्तावेज सत्यापन तिथियां</span><span class="v" >17 नवंबर 2026 से 20 नवंबर 2026</span></div>
       <div class="r"><span >परीक्षा का नाम</span><span class="v" >सहायक अध्यापक प्रशिक्षित स्नातक परीक्षा 2025</span></div>
       <div class="r"><span >न्यूनतम योग्यता</span><span class="v" >स्नातक (सूचना देखें)</span></div>
-      <div class="r"><span >चयन प्रक्रिया</span><span class="v" >{&#x27;label_en&#x27; → {&#x27;label_en&#x27;</span></div>
+      <div class="r"><span >चयन प्रक्रिया</span><span class="v" >लिखित परीक्षा → दस्तावेज सत्यापन</span></div>
     </section>
     <section class="kv">
       <h2 class="h" >इस सूचना के बारे में</h2>
@@ -437,7 +478,7 @@ html[lang="hi"] .hidet { display: none; }
     </section>
     <section class="kv">
       <h2 class="h" >चयन प्रक्रिया</h2>
-      <ol class="steps"><li >{&#x27;label_en&#x27;: &#x27;Written Exam&#x27;, &#x27;label_hi&#x27;: &#x27;लिखित परीक्षा&#x27;}</li><li >{&#x27;label_en&#x27;: &#x27;Document Verification&#x27;, &#x27;label_hi&#x27;: &#x27;दस्तावेज सत्यापन&#x27;}</li></ol>
+      <ol class="steps"><li >लिखित परीक्षा</li><li >दस्तावेज सत्यापन</li></ol>
     </section>
     <section class="kv">
       <h2 class="h" >कैसे डाउनलोड करें</h2>
@@ -530,7 +571,7 @@ html[lang="hi"] .hidet { display: none; }
       gQ: "Minimum qualification",
       gQV: "Graduate (any degree, see notice)",
       gSel: "Selection process",
-      gSelV: "{'label_en' → {'label_en'",
+      gSelV: "Written Exam → Document Verification",
       metaV: "Updated 3 Nov 2026 · Source: uppsc.up.nic.in",
       exJump: "5 more updates for UPPSC Assistant Teacher 2025 ↓",
       aboutH: "About this notice",
@@ -546,8 +587,8 @@ html[lang="hi"] .hidet { display: none; }
       eligH0l: "Eligible Candidates",
       eligH0v: "Candidates qualified in the Assistant Teacher Trained Graduate Exam 2025 for Maths",
       selH: "Selection process",
-      selH0: "{'label_en': 'Written Exam', 'label_hi': 'लिखित परीक्षा'}",
-      selH1: "{'label_en': 'Document Verification', 'label_hi': 'दस्तावेज सत्यापन'}",
+      selH0: "Written Exam",
+      selH1: "Document Verification",
       howH: "How to download",
       howH0: "Visit the official UPPSC website at https://uppsc.up.nic.in",
       howH1: "Click on 'Click here to Advt. No. A-5/E-.1/2025, Assistant Teacher... Document Verification'.",
@@ -633,7 +674,7 @@ html[lang="hi"] .hidet { display: none; }
       gQ: "न्यूनतम योग्यता",
       gQV: "स्नातक (सूचना देखें)",
       gSel: "चयन प्रक्रिया",
-      gSelV: "{'label_en' → {'label_en'",
+      gSelV: "लिखित परीक्षा → दस्तावेज सत्यापन",
       metaV: "अपडेट 3 नवंबर 2026 · स्रोत: uppsc.up.nic.in",
       exJump: "यूपीपीएससी सहायक शिक्षक 2025 के 5 और अपडेट ↓",
       aboutH: "इस सूचना के बारे में",
@@ -649,8 +690,8 @@ html[lang="hi"] .hidet { display: none; }
       eligH0l: "पात्र उम्मीदवार",
       eligH0v: "गणित के लिए सहायक अध्यापक प्रशिक्षित स्नातक परीक्षा 2025 में सफल उम्मीदवार",
       selH: "चयन प्रक्रिया",
-      selH0: "{'label_en': 'Written Exam', 'label_hi': 'लिखित परीक्षा'}",
-      selH1: "{'label_en': 'Document Verification', 'label_hi': 'दस्तावेज सत्यापन'}",
+      selH0: "लिखित परीक्षा",
+      selH1: "दस्तावेज सत्यापन",
       howH: "कैसे डाउनलोड करें",
       howH0: "आधिकारिक यूपीपीएससी वेबसाइट https://uppsc.up.nic.in पर जाएं।",
       howH1: "'Click here to Advt. No. A-5/E-.1/2025, Assistant Teacher... Document Verification' पर क्लिक करें।",

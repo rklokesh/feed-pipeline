@@ -271,23 +271,68 @@ html[lang="hi"] .hidet { display: none; }
   .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 }
 /* Floating back button (phones only): round frosted glass, iOS-style chevron (Hugeicons arrow-left-01, stroke rounded) */
+/* Phones: ONE round glass back button. It starts where the header's back link sits, scrolls up with the header
+   and then stays pinned in the top-left corner (same button the whole time, no swap). Hugeicons arrow-left-01. */
 .fback { display: none; }
 @media (max-width: 640px) {
+  .top .hback { visibility: hidden; width: 44px; height: 44px; }   /* keeps the header's left slot so the logo stays centred */
   .fback { display: grid; place-items: center; position: fixed; z-index: 40; width: 44px; height: 44px; border-radius: 50%;
-    top: calc(env(safe-area-inset-top, 0px) + 12px); left: max(12px, env(safe-area-inset-left, 0px));
+    top: max(calc(env(safe-area-inset-top, 0px) + 12px), var(--fb-y, 64px)); left: max(16px, env(safe-area-inset-left, 0px));
     color: var(--ink); background: color-mix(in srgb, var(--page) 55%, transparent);
     -webkit-backdrop-filter: blur(18px) saturate(180%); backdrop-filter: blur(18px) saturate(180%);
     border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
-    box-shadow: 0 4px 18px color-mix(in srgb, #000 14%, transparent), inset 0 1px 0 color-mix(in srgb, #fff 45%, transparent);
-    opacity: 0; transform: scale(.85); pointer-events: none; transition: opacity .2s ease, transform .2s ease; }
-  .fback.on { opacity: 1; transform: none; pointer-events: auto; }
+    box-shadow: 0 4px 18px color-mix(in srgb, #000 12%, transparent), inset 0 1px 0 color-mix(in srgb, #fff 45%, transparent);
+    touch-action: manipulation; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none;
+    transition: transform .12s ease; }
   .fback:active { transform: scale(.92); }
-  .fback svg { margin-left: -2px; }
+  .fback svg { margin-left: -2px; pointer-events: none; }
+  .fback:hover { text-decoration: none; }
 }
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .fback { background: var(--soft); } }
 @media (prefers-reduced-motion: reduce) { .fback { transition: none; } }
 @media print { .fback { display: none !important; } }
+/* ===== v2: app-style phone design (preview; html.v2, phones only) ===== */
+@media (max-width: 640px) {
+  html.v2 body { -webkit-tap-highlight-color: transparent; }
+  html.v2 .top { position: sticky; top: 0; z-index: 30; margin: 0 -16px 18px; padding: 8px 16px; grid-template-columns: auto 1fr auto; gap: 12px;
+    background: color-mix(in srgb, var(--page) 80%, transparent); -webkit-backdrop-filter: blur(18px) saturate(180%); backdrop-filter: blur(18px) saturate(180%);
+    border-bottom: 1px solid color-mix(in srgb, var(--ink) 7%, transparent); }
+  html.v2 .top .logo { grid-column: 1; }
+  html.v2 .top .logo img, html.v2 .top .logo .mark { width: 44px; height: 44px; }
+  html.v2 .top .nav-r { grid-column: 3; gap: 6px; }
+  html.v2 .top .nav-r button { display: inline-grid; place-items: center; min-width: 40px; height: 40px; padding: 0 12px; border-radius: 999px; background: var(--soft); box-sizing: border-box; }
+  html.v2 .sheet { padding-top: 0; }
+}
+@media (max-width: 640px) {
+  html.v2 .fback { top: max(calc(env(safe-area-inset-top, 0px) + 8px), var(--fb-y, 8px)); }
+  html.v2 .top .hback { width: 44px; height: 44px; }
+  html.v2 .top .logo { grid-column: 2; justify-self: center; }
+  html.v2 .title { gap: 10px; text-align: left; }
+  html.v2 .title .crumb { justify-content: flex-start; }
+  html.v2 h1 { font-size: 1.6rem; line-height: 1.22; text-align: left; }
+  html.v2 .title .meta, html.v2 .title .lead, html.v2 .title .exjump, html.v2 .status, html.v2 .title { text-align: left !important; justify-content: flex-start !important; justify-items: start; }
+  html.v2 .top .nav-r a[href="/about/"] { display: none; }
+  /* sections: rounded cards; each fact as a small grey label above its value */
+  html.v2 .kv { border: 0 !important; border-radius: 16px; background: var(--soft); overflow: hidden; }
+  html.v2 .kv .h { background: none !important; border: 0 !important; padding: 14px 16px 4px !important; font-weight: 600; color: var(--ink) !important; }
+  html.v2 .kv .r { grid-template-columns: 1fr !important; gap: 2px !important; padding: 10px 16px !important; border: 0 !important;
+    border-top: 1px solid color-mix(in srgb, var(--ink) 7%, transparent) !important; }
+  html.v2 .kv .r > :first-child { font-size: .8125rem; }
+  html.v2 .kv .p, html.v2 .kv .steps, html.v2 .kv .qa, html.v2 .kv .tbl { padding-left: 16px; padding-right: 16px; }
+  html.v2 .kv > :last-child { padding-bottom: 14px; }
+  html.v2 .toc { border-radius: 16px; overflow: hidden; border: 0 !important; background: var(--soft); }
+  html.v2 .toc summary { background: none !important; padding: 14px 16px !important; }
+  html.v2 .ogimg { border-radius: 16px; }
+  /* actions: full-width pill buttons */
+  html.v2 .actions { display: grid !important; gap: 10px !important; }
+  html.v2 .actions a { justify-content: center; padding: 13px 16px; border-radius: 999px; background: var(--soft); text-decoration: none; }
+  html.v2 .actions a.share { background: #1FA855; color: #fff; }
+  html.v2 .actions a.share svg path:first-child { fill: #fff; }
+  html.v2 .actions a.share svg path:last-child { fill: #1FA855; }
+}
 </style>
+<script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */
+try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")==="1")document.documentElement.classList.add("v2")}catch(e){}</script>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
 </head>
@@ -852,13 +897,22 @@ html[lang="hi"] .hidet { display: none; }
 <script src="/elig.js" defer></script>
 <a class="fback" id="fback" href="/" data-t-aria="allNotices" aria-label="All notices"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6C15 6 9 10.4189 9 12C9 13.5812 15 18 15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 <script>(function(){
-  // Phones: a round glass back button stays in the top-left corner once the page header has scrolled away.
-  var b=document.getElementById("fback"),h=document.querySelector("header.top");
-  if(h&&"IntersectionObserver"in window)new IntersectionObserver(function(e){b.classList.toggle("on",!e[0].isIntersecting)}).observe(h);
-  b.addEventListener("click",function(ev){
+  var b=document.getElementById("fback"),slot=document.querySelector(".top .hback"),root=document.documentElement,raf=0;
+  // follow the header's back slot while it is on screen; CSS max() pins it at the top once the slot scrolls past
+  function place(){raf=0;if(slot){var r=slot.getBoundingClientRect();root.style.setProperty("--fb-y",(r.top+(r.height-44)/2)+"px");}}
+  function ask(){if(!raf)raf=requestAnimationFrame(place);}
+  place();addEventListener("scroll",ask,{passive:true});addEventListener("resize",ask);addEventListener("load",place);
+  if(document.fonts)document.fonts.ready.then(place);
+  function go(){
     // came from our own list: go back so the list keeps its place; otherwise open the home page
-    try{var r=document.referrer&&new URL(document.referrer);if(r&&r.origin===location.origin&&history.length>1){ev.preventDefault();history.back();}}catch(e){}
-  });
+    try{var r=document.referrer&&new URL(document.referrer);if(r&&r.origin===location.origin&&history.length>1){history.back();return;}}catch(e){}
+    location.href="/";
+  }
+  // act on the first tap: iOS can swallow the click right after a scroll, so a finger lifting on the button counts
+  var sx=0,sy=0,touched=false;
+  b.addEventListener("touchstart",function(e){var t=e.touches[0];sx=t.clientX;sy=t.clientY;touched=true;},{passive:true});
+  b.addEventListener("touchend",function(e){var t=e.changedTouches[0];if(touched&&Math.abs(t.clientX-sx)<12&&Math.abs(t.clientY-sy)<12){e.preventDefault();go();}touched=false;});
+  b.addEventListener("click",function(e){e.preventDefault();go();});
 })();</script>
 </body>
 </html>
