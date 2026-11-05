@@ -461,9 +461,18 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   html.v2 .nav-r button.swap svg, html.v2 #lang.swap::before { animation: none !important; }
   html.v2.bar-compact .top .nav-r, html.v2.bar-compact .fback { transform: none; }
 }
+@media (max-width: 640px) {
+  /* homepage bar: the logo big and in the middle; it shrinks smoothly while you read down */
+  html.v2 .top:has(> .g) { grid-template-columns: 1fr auto 1fr; padding-top: 10px; padding-bottom: 10px; }
+  html.v2 .top:has(> .g) .logo { grid-column: 2; justify-self: center; }
+  html.v2 .top:has(> .g) .logo img, html.v2 .top:has(> .g) .logo .mark { width: 76px; height: 76px; }
+  html.v2 .top:has(> .g) .nav-r { grid-column: 3; justify-self: end; }
+  html.v2.bar-compact .top:has(> .g) { padding-top: 6px; padding-bottom: 6px; }
+  html.v2.bar-compact .top:has(> .g) .logo img, html.v2.bar-compact .top:has(> .g) .logo .mark { width: 40px; height: 40px; }
+}
 </style>
 <script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */
-try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")==="1")document.documentElement.classList.add("v2")}catch(e){}</script>
+try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")!=="0")document.documentElement.classList.add("v2")}catch(e){document.documentElement.classList.add("v2")}</script>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "SarkariChart", "alternateName": "सरकारी चार्ट", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png", "sameAs": ["https://t.me/sarkarichart"], "description": "Govt jobs, admit cards, results and answer keys from official notices, in English and Hindi."}, {"@context": "https://schema.org", "@type": "WebSite", "name": "SarkariChart", "alternateName": "सरकारी चार्ट", "url": "https://sarkarichart.pages.dev/", "inLanguage": ["en-IN", "hi-IN"], "potentialAction": {"@type": "SearchAction", "target": "https://sarkarichart.pages.dev/?q={search_term_string}", "query-input": "required name=search_term_string"}}]</script>
@@ -1357,11 +1366,14 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
 <script src="/elig.js" defer></script>
 <script>(function(){
   // iOS-style: shrink the controls while reading down, bring them back on any scroll up (ignores small jitters)
-  var r=document.documentElement,last=scrollY,acc=0;
+  // the bar changing height moves the page a little; those moves are ignored for a moment so it never flickers back
+  var r=document.documentElement,last=scrollY,acc=0,hold=0;
+  function set(on){if(r.classList.contains("bar-compact")===on)return;r.classList.toggle("bar-compact",on);hold=Date.now()+450;acc=0;}
   addEventListener("scroll",function(){var y=scrollY,d=y-last;last=y;
-    if(y<80){r.classList.remove("bar-compact");acc=0;return;}
+    if(y<80){set(false);return;}
+    if(Date.now()<hold)return;
     acc=(acc*d>0)?acc+d:d;
-    if(acc>24)r.classList.add("bar-compact");else if(acc<-16)r.classList.remove("bar-compact");},{passive:true});
+    if(acc>30)set(true);else if(acc<-24)set(false);},{passive:true});
   // icon morph + a light tick on Android (iPhones ignore vibrate) when switching language or theme
   ["theme","lang"].forEach(function(id){var b=document.getElementById(id);if(!b)return;
     b.addEventListener("click",function(){requestAnimationFrame(function(){b.classList.remove("swap");void b.offsetWidth;b.classList.add("swap");});

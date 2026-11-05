@@ -960,18 +960,24 @@ try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setIt
     location.href="/";
   }
   // act on the first tap: iOS can swallow the click right after a scroll, so a finger lifting on the button counts
-  var sx=0,sy=0,touched=false;
-  b.addEventListener("touchstart",function(e){var t=e.touches[0];sx=t.clientX;sy=t.clientY;touched=true;},{passive:true});
+  var sx=0,sy=0,touched=false,lastScroll=0;
+  addEventListener("scroll",function(){lastScroll=Date.now();},{passive:true});
+  // while the page is still gliding, iOS uses the first touch to stop the glide and drops the tap: go straight away
+  b.addEventListener("touchstart",function(e){var t=e.touches[0];sx=t.clientX;sy=t.clientY;touched=true;
+    if(Date.now()-lastScroll<180){if(e.cancelable)e.preventDefault();touched=false;go();}},{passive:false});
   b.addEventListener("touchend",function(e){var t=e.changedTouches[0];if(touched&&Math.abs(t.clientX-sx)<12&&Math.abs(t.clientY-sy)<12){e.preventDefault();go();}touched=false;});
   b.addEventListener("click",function(e){e.preventDefault();go();});
 })();</script>
 <script>(function(){
   // iOS-style: shrink the controls while reading down, bring them back on any scroll up (ignores small jitters)
-  var r=document.documentElement,last=scrollY,acc=0;
+  // the bar changing height moves the page a little; those moves are ignored for a moment so it never flickers back
+  var r=document.documentElement,last=scrollY,acc=0,hold=0;
+  function set(on){if(r.classList.contains("bar-compact")===on)return;r.classList.toggle("bar-compact",on);hold=Date.now()+450;acc=0;}
   addEventListener("scroll",function(){var y=scrollY,d=y-last;last=y;
-    if(y<80){r.classList.remove("bar-compact");acc=0;return;}
+    if(y<80){set(false);return;}
+    if(Date.now()<hold)return;
     acc=(acc*d>0)?acc+d:d;
-    if(acc>24)r.classList.add("bar-compact");else if(acc<-16)r.classList.remove("bar-compact");},{passive:true});
+    if(acc>30)set(true);else if(acc<-24)set(false);},{passive:true});
   // icon morph + a light tick on Android (iPhones ignore vibrate) when switching language or theme
   ["theme","lang"].forEach(function(id){var b=document.getElementById(id);if(!b)return;
     b.addEventListener("click",function(){requestAnimationFrame(function(){b.classList.remove("swap");void b.offsetWidth;b.classList.add("swap");});
