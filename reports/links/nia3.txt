@@ -1,0 +1,5 @@
+# nia3 http://nia.gov.in/
+## plain fetch failed: HTTPSConnectionPool(host='nia.gov.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nia.gov.in'. (_ssl.c:1010)")))
+## browser failed: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at http://nia.gov.in/
+Call log:
+navigating to "http://nia.gov.in/", waiting until "domcontentloaded"
