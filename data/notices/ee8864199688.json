@@ -1,5 +1,20 @@
 {
   "board_url": "https://ssc.gov.in/home/notice-board",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Consultant",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal circular for engagement of retired government officers as consultants, not a public job opening for aspirants.",
+    "summary_en": "Staff Selection Commission issued a notice regarding the engagement of retired Central Government officers as consultants.",
+    "summary_hi": "कर्मचारी चयन आयोग ने सेवानिवृत्त केंद्रीय सरकारी अधिकारियों को सलाहकार के रूप में नियुक्त करने के संबंध में नोटिस जारी किया है।",
+    "title_en": "SSC Engagement of Retired Government Officers as Consultants",
+    "title_hi": "एसएससी सेवानिवृत्त सरकारी अधिकारियों की सलाहकार के रूप में नियुक्ति",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "scanned"
   },
   "source_id": "ssc-notice-board",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Engagement of retired Central Government Officer as Consultant in Staff Selection Commission (HQ)",
   "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/circular_04112026.pdf"
 }

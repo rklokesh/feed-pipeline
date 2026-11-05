@@ -1,7 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://rrcnr.org/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Level 1 Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Certificate formats and annexures document rather than a primary recruitment notice or result listing.",
+    "summary_en": "View the document verification formats and annexures for RRC Northern Railway CEN 08/2024 recruitment.",
+    "summary_hi": "आरआरसी उत्तरी रेलवे CEN 08/2024 भर्ती के लिए दस्तावेज़ सत्यापन प्रारूप और अनुलग्नक देखें।",
+    "title_en": "RRC Northern Railway Level 1 Document Verification Annexures",
+    "title_hi": "आरआरसी उत्तरी रेलवे लेवल 1 दस्तावेज़ सत्यापन अनुलग्नक",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -17,7 +31,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "rrc-nr",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "20.10.2026 Kind Attention: Employment Notification No. CEN NO.-08/2024: NOTICE NO. 07 dated 20.10.2026 regarding Documents Verification and Medical Examination for recruitment of various posts of level-1. Click here for DV Notice Click here for Annexures Click here for DV cutoff Click here for DV Ca",
   "url": "https://rrcnr.org/downloads/Annexures.pdf"
 }

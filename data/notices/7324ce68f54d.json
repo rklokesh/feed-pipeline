@@ -1,5 +1,26 @@
 {
+  "auto_published": true,
   "board_url": "https://ssc.gov.in/home/notice-board",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Combined Graduate Level",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "The Staff Selection Commission has released the tentative answer keys and response sheets for the Combined Graduate Level Examination 2026 Tier-I. Candidates can submit challenges online by 07.11.2026.",
+    "summary_hi": "कर्मचारी चयन आयोग ने संयुक्त स्नातक स्तर परीक्षा 2026 प्रथम चरण के लिए संभावित उत्तर कुंजी और प्रतिक्रिया पत्रक जारी कर दिए हैं। उम्मीदवार 07.11.2026 तक ऑनलाइन आपत्ति दर्ज करा सकते हैं।",
+    "title_en": "SSC Combined Graduate Level Examination 2026 Tier-I Answer Key",
+    "title_hi": "कर्मचारी चयन आयोग संयुक्त स्नातक स्तर परीक्षा 2026 प्रथम चरण उत्तर कुंजी",
+    "type": "Answer key",
+    "vacancies": null
+  },
+  "exam": {
+    "key": "ssc-cgl-2026",
+    "name_en": "SSC CGL 2026",
+    "name_hi": "एसएससी सीजीएल 2026"
+  },
   "extraction": {
     "ai": null
   },
@@ -12,6 +33,8 @@
   },
   "first_seen": "2026-11-05T06:34:44+00:00",
   "id": "7324ce68f54d",
+  "issue": 1037,
+  "issue_tidy": true,
   "kind": "answer_key",
   "org": "SSC",
   "pdf": {
@@ -20,8 +43,12 @@
     "sha256": "ace3291a6c175b9a30db4af0e85567cc854b3fbcd9b025caaf51399b2722bd64",
     "text_kind": "text"
   },
+  "published_at": "2026-11-05T06:37:47Z",
+  "qual": [
+    "graduate"
+  ],
   "source_id": "ssc-notice-board",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Combined Graduate Level Examination, 2026 (Tier-I):Uploading of Candidate’s Response Sheet(s) along with Tentative Answer Keys and inviting challenges thereon",
   "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_04112026.pdf"
 }

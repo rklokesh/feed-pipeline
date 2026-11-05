@@ -1,5 +1,20 @@
 {
   "board_url": "https://rrcnr.org/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Level-1 Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "document verification cancellation notice for debarred candidates",
+    "summary_en": "RRC Northern Railway has released a notice regarding the non-conduct of document verification for debarred candidates shortlisted under CEN-08/2024.",
+    "summary_hi": "आरआरसी नॉर्दर्न रेलवे ने CEN-08/2024 के तहत शॉर्टलिस्ट किए गए डिबार्ड उम्मीदवारों के लिए दस्तावेज सत्यापन न किए जाने के संबंध में नोटिस जारी किया है।",
+    "title_en": "RRC Northern Railway Level-1 CEN-08/2024 DV Update",
+    "title_hi": "आरआरसी नॉर्दर्न रेलवे लेवल-1 CEN-08/2024 DV अपडेट",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "scanned"
   },
   "source_id": "rrc-nr",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "03.11.2026 Kind Attention: Addendum to notice no.09 regarding Non Conduct of Document Verification (DV) in respect of debarred candidates shortlisted under CEN-08/2024 (Level-1) Click here for Notice",
   "url": "https://rrcnr.org/downloads/Notification_03112026.pdf"
 }

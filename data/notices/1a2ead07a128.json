@@ -1,6 +1,20 @@
 {
   "board_url": "https://rrcnr.org/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Level-1 Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Debarment list for specific candidates, not useful for general job aspirants",
+    "summary_en": "RRC Northern Railway has released a list of 71 candidates debarred from document verification and medical examination under CEN 08/2024.",
+    "summary_hi": "आरआरसी उत्तर रेलवे ने सीईएन 08/2024 के तहत दस्तावेज़ सत्यापन और चिकित्सा परीक्षा से वंचित 71 उम्मीदवारों की सूची जारी की है।",
+    "title_en": "RRC Northern Railway CEN-08/2024 Debarred Candidates Notice",
+    "title_hi": "आरआरसी उत्तर रेलवे सीईएन-08/2024 विवर्जित उम्मीदवार सूचना",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +30,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "rrc-nr",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "30.10.2026 Kind Attention: List of candidates who are debarred from document verification and medical examination against CEN-08/2024. Click here for Notice",
   "url": "https://rrcnr.org/downloads/Notice_CEN-08-2024_30102026.pdf"
 }

@@ -1,21 +1,215 @@
 {
+  "auto_published": true,
   "board_url": "https://rssb.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Prahari",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Rajasthan Staff Selection Board has issued an amended order regarding the final cut-off marks for Prahari Recruitment 2024.",
+    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने प्रहरी भर्ती 2024 के लिए अंतिम कट-ऑफ अंकों के संबंध में संशोधित आदेश जारी किया है।",
+    "title_en": "RSSB Prahari Result 2024 – Cut Off Marks Amended Order",
+    "title_hi": "राजस्थान कर्मचारी चयन बोर्ड प्रहरी 2024 कट ऑफ मार्क्स संशोधित आदेश",
+    "type": "Result",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "rssb-prahari-2024",
+    "name_en": "RSSB Prahari 2024",
+    "name_hi": "आरएसएसबी प्रहरी 2024"
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-05T06:28:53+00:00",
   "id": "70677f28bd96",
+  "issue": 1036,
+  "issue_tidy": true,
   "kind": "result",
+  "notice_date": "2026-11-04",
   "org": "RSSB Rajasthan",
+  "page": {
+    "after_en": [
+      "Selected candidates should proceed with the further selection and joining formalities as directed by the Prisons Department, Rajasthan."
+    ],
+    "after_hi": [
+      "चयनित उम्मीदवारों को कारागार विभाग, राजस्थान के निर्देशानुसार आगे की चयन और ज्वाइनिंग औपचारिकताएं पूरी करनी चाहिए।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": null,
+    "changes": [
+      {
+        "new_en": "306.8735",
+        "new_hi": "306.8735",
+        "old_en": "305.8735",
+        "old_hi": "305.8735",
+        "what_en": "Non-Scheduled Area ST (General) Cut-Off Marks",
+        "what_hi": "गैर अनुसूचित क्षेत्र एसटी (सामान्य) कट-ऑफ अंक"
+      }
+    ],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check the official amended order PDF for accurate cut-off marks.",
+      "Verify your category score against the revised cut-off."
+    ],
+    "checklist_hi": [
+      "सटीक कट-ऑफ अंकों के लिए आधिकारिक संशोधित आदेश पीडीएफ देखें।",
+      "संशोधित कट-ऑफ के मुकाबले अपने श्रेणी के स्कोर की जांच करें।"
+    ],
+    "conducted_by_en": "Rajasthan Staff Selection Board (RSSB)",
+    "conducted_by_hi": "राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी)",
+    "dates": [
+      {
+        "label_en": "Original Result Date",
+        "label_hi": "मूल परिणाम दिनांक",
+        "value_en": "27 Oct 2026",
+        "value_hi": "27 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Amended Order Date",
+        "label_hi": "संशोधित आदेश दिनांक",
+        "value_en": "04 Nov 2026",
+        "value_hi": "04 नवंबर 2026"
+      }
+    ],
+    "documents_en": [],
+    "documents_hi": [],
+    "eligibility": [],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "This notice is an amended order issued by RSSB correcting a minor error in the final cut-off marks for the Non-Scheduled Area Scheduled Tribe (General) category in the Prahari Recruitment 2024 waitlist result.",
+        "a_hi": "यह नोटिस आरएसएसबी द्वारा जारी एक संशोधित आदेश है जो प्रहरी भर्ती 2024 प्रतीक्षा सूची परिणाम में गैर अनुसूचित क्षेत्र अनुसूचित जनजाति (सामान्य) श्रेणी के लिए अंतिम कट-ऑफ अंकों में एक छोटी सी त्रुटि को सुधारता है।",
+        "q_en": "What is this notice about?",
+        "q_hi": "यह नोटिस किस बारे में है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Revised Cut-off (Non-Scheduled Area ST General)",
+        "label_hi": "संशोधित कट-ऑफ (गैर अनुसूचित क्षेत्र एसटी सामान्य)",
+        "value_en": "306.8735 (Read in place of 305.8735)",
+        "value_hi": "306.8735 (305.8735 के स्थान पर पढ़ें)"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The Rajasthan Staff Selection Board (RSSB), Jaipur issued the order.",
+        "a_hi": "राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी), जयपुर ने यह आदेश जारी किया है।",
+        "q_en": "Which board issued the Prahari 2024 amended cut-off order?",
+        "q_hi": "प्रहरी 2024 का संशोधित कट-ऑफ आदेश किस बोर्ड ने जारी किया है?"
+      },
+      {
+        "a_en": "The revised cut-off is 306.8735, which has been corrected from the earlier 305.8735.",
+        "a_hi": "संशोधित कट-ऑफ 306.8735 है, जिसे पहले के 305.8735 से संशोधित किया गया है।",
+        "q_en": "What is the revised cut-off for Non-Scheduled Area ST General category?",
+        "q_hi": "गैर अनुसूचित क्षेत्र एसटी सामान्य श्रेणी के लिए संशोधित कट-ऑफ क्या है?"
+      },
+      {
+        "a_en": "No, all other cut-off marks remain unchanged.",
+        "a_hi": "नहीं, अन्य सभी कट-ऑफ अंक यथावत रहेंगे।",
+        "q_en": "Are other cut-off marks changed in this notice?",
+        "q_hi": "क्या इस नोटिस में अन्य कट-ऑफ अंक बदले गए हैं?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "RSSB Prahari Result 2024 – Cut Off Marks Amended Order",
+    "h1_hi": "राजस्थान कर्मचारी चयन बोर्ड प्रहरी 2024 कट ऑफ मार्क्स संशोधित आदेश",
+    "hindi_notice_url": "https://rssb.rajasthan.gov.in/storage/news_item/1793771032.pdf",
+    "how_en": [
+      "Visit the official RSSB website.",
+      "Go to the News & Notifications or Result section.",
+      "Click on the Prahari 2024 amended cut-off marks order link.",
+      "Check and download the revised cut-off details."
+    ],
+    "how_hi": [
+      "आधिकारिक आरएसएसबी वेबसाइट पर जाएं।",
+      "न्यूज़ और नोटिफिकेशन या रिज़ल्ट सेक्शन में जाएं।",
+      "प्रहरी 2024 संशोधित कट-ऑफ अंक आदेश लिंक पर क्लिक करें।",
+      "संशोधित कट-ऑफ विवरण देखें और डाउनलोड करें।"
+    ],
+    "intro_en": "Rajasthan Staff Selection Board (RSSB) has published an amended order for the final cut-off marks of Prahari Direct Recruitment 2024. The final result was earlier declared on 27 October 2026 for selection from the waitlist. Through this notice, the board has revised the final cut-off marks for the Non-Scheduled Area Scheduled Tribe (General) category. Candidates who appeared for the exam can check the revised cut-off details on the official RSSB website.",
+    "intro_hi": "राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी) ने प्रहरी सीधी भर्ती 2024 के अंतिम कट-ऑफ अंकों के लिए एक संशोधित आदेश जारी किया है। प्रतीक्षा सूची से चयन के संबंध में अंतिम परिणाम पहले 27 अक्टूबर 2026 को जारी किया गया था। इस नोटिस के माध्यम से बोर्ड ने गैर अनुसूचित क्षेत्र अनुसूचित जनजाति (सामान्य) श्रेणी के लिए अंतिम कट-ऑफ अंकों में संशोधन किया है। परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक वेबसाइट पर संशोधित कट-ऑफ विवरण देख सकते हैं।",
+    "last_date": null,
+    "mistakes_en": [],
+    "mistakes_hi": [],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-04",
+    "official_site": "https://rssb.rajasthan.gov.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Prahari",
+        "value_hi": "प्रहरी"
+      },
+      {
+        "label_en": "Recruitment Year",
+        "label_hi": "भर्ती वर्ष",
+        "value_en": "2024",
+        "value_hi": "2024"
+      },
+      {
+        "label_en": "Department",
+        "label_hi": "विभाग",
+        "value_en": "Prisons Department",
+        "value_hi": "कारागार विभाग"
+      },
+      {
+        "label_en": "Notice Type",
+        "label_hi": "नोटिस प्रकार",
+        "value_en": "Amended Cut-Off Order",
+        "value_hi": "संशोधित कट-ऑफ आदेश"
+      }
+    ],
+    "salary": [],
+    "selection_en": [],
+    "selection_hi": [],
+    "share_card": {
+      "headline_en": "Amended Order",
+      "headline_hi": "संशोधित आदेश",
+      "kind": "corr",
+      "line_en": "Prahari 2024 Cut-Off",
+      "line_hi": "प्रहरी 2024 कट-ऑफ",
+      "posts": null
+    },
+    "status_en": "Amended final cut-off marks order released",
+    "status_hi": "संशोधित अंतिम कट-ऑफ अंक आदेश जारी",
+    "summary_en": "Rajasthan Staff Selection Board has issued an amended order regarding the final cut-off marks for Prahari Recruitment 2024. The cut-off marks for Non-Scheduled Area Scheduled Tribe (General) have been revised.",
+    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने प्रहरी भर्ती 2024 के लिए अंतिम कट-ऑफ अंकों के संबंध में संशोधित आदेश जारी किया है। गैर अनुसूचित क्षेत्र अनुसूचित जनजाति (सामान्य) के कट-ऑफ अंकों में संशोधन किया गया है।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Candidates who applied and appeared for RSSB Prahari Recruitment 2024"
+    ],
+    "who_hi": [
+      "आरएसएसबी प्रहरी भर्ती 2024 के लिए आवेदन करने और परीक्षा में शामिल होने वाले उम्मीदवार"
+    ]
+  },
   "pdf": {
     "bytes": 52612,
     "pages": 1,
     "sha256": "f8f7f87d110d80def43cb1601e2c45de65df8336487ece11b1c6297d0406cefb",
     "text_kind": "text"
   },
+  "published_at": "2026-11-05T06:37:40Z",
+  "qual": [
+    "10th",
+    "12th"
+  ],
+  "slug": "rssb-prahari-result-2024-cut-off-marks-amended-order",
   "source_id": "rssb-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "04-11-2026 - Prahari 2024 : Amended order of Final Cut-off Marks for regarding result dated 27.10.2026",
   "url": "https://rssb.rajasthan.gov.in/storage/news_item/1793771032.pdf"
 }

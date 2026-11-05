@@ -1,5 +1,26 @@
 {
+  "auto_published": true,
   "board_url": "https://www.upsc.gov.in/whats-new",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant Public Prosecutor",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Union Public Service Commission has released the supplementary final result for Assistant Public Prosecutor posts in Delhi.",
+    "summary_hi": "संघ लोक सेवा आयोग ने दिल्ली में सहायक लोक अभियोजक पदों के लिए अनुपूरक अंतिम परिणाम जारी कर दिया है।",
+    "title_en": "UPSC Assistant Public Prosecutor Final Result",
+    "title_hi": "संघ लोक सेवा आयोग सहायक लोक अभियोजक अंतिम परिणाम",
+    "type": "Result",
+    "vacancies": 80
+  },
+  "exam": {
+    "key": "upsc-assistant-public-prosecutor-2026",
+    "name_en": "UPSC Assistant Public Prosecutor 2026",
+    "name_hi": "यूपीएससी असिस्टेंट पब्लिक प्रोसिक्यूटर 2026"
+  },
   "extraction": {
     "ai": null
   },
@@ -17,6 +38,8 @@
   },
   "first_seen": "2026-11-05T06:28:53+00:00",
   "id": "7a4066623aa9",
+  "issue": 1039,
+  "issue_tidy": true,
   "kind": "result",
   "org": "UPSC",
   "pdf": {
@@ -26,8 +49,12 @@
     "text_kind": "text",
     "via": "https://www.upsc.gov.in/sites/default/files/RT-AdddnlFR-80-AsstPublProseGNCTD-Engl-041126.pdf"
   },
+  "published_at": "2026-11-05T06:38:17Z",
+  "qual": [
+    "graduate"
+  ],
   "source_id": "upsc-whats-new",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Final Result: 80 Posts of Assistant Public Prosecutor, GNCTD",
   "url": "https://www.upsc.gov.in/whats-new/80 Posts of Assistant Public Prosecutor, GNCTD/Final Result"
 }

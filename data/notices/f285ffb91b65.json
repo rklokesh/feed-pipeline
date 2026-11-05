@@ -36,104 +36,132 @@
   "org": "BSF",
   "page": {
     "after_en": [
-      "Appear for the computer-based test on the scheduled date.",
-      "Wait for the declaration of written exam results and further selection stages."
+      "Objection management link will be opened 3-4 days after the CBT for raising queries",
+      "Shortlisting of candidates up to six times the number of vacancies for the next phase"
     ],
     "after_hi": [
-      "निर्धारित तिथि पर कंप्यूटर आधारित परीक्षा में शामिल हों।",
-      "लिखित परीक्षा के परिणामों और आगे के चयन चरणों की घोषणा की प्रतीक्षा करें।"
+      "प्रश्नों को उठाने के लिए सीबीटी के 3-4 दिन बाद आपत्ति प्रबंधन लिंक खोला जाएगा",
+      "अगले चरण के लिए रिक्तियों की संख्या से छह गुना तक उम्मीदवारों को शॉर्टलिस्ट किया जाएगा"
     ],
     "age": [],
     "apply_start": null,
-    "apply_url": "https://rectt.bsf.gov.in/",
+    "apply_url": "https://rectt.bsf.gov.in",
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Verify exam date, time, and test centre address on the admit card.",
-      "Keep login details handy.",
-      "Print the admit card well in advance."
+      "Check exam date, shift, and reporting time on the admit card",
+      "Keep login credentials ready to download the admit card from 22 October 2026"
     ],
     "checklist_hi": [
-      "एडमिट कार्ड पर परीक्षा की तारीख, समय और परीक्षा केंद्र के पते की पुष्टि करें।",
-      "लogin विवरण तैयार रखें।",
-      "समय रहते एडमिट कार्ड का प्रिंट निकाल लें।"
+      "एडमिट कार्ड पर परीक्षा की तारीख, शिफ्ट और रिपोर्टिंग समय की जांच करें",
+      "22 अक्टूबर 2026 से एडमिट कार्ड डाउनलोड करने के लिए लॉगिन क्रेडेंशियल तैयार रखें"
     ],
     "conducted_by_en": "Border Security Force (BSF)",
     "conducted_by_hi": "सीमा सुरक्षा बल (बीएसएफ)",
     "dates": [
       {
-        "label_en": "Exam Date",
+        "label_en": "Admit card release date",
+        "label_hi": "एडमिट कार्ड जारी होने की तिथि",
+        "value_en": "22 Oct 2026",
+        "value_hi": "22 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "02 Nov 2026",
         "value_hi": "02 नवंबर 2026"
       }
     ],
     "documents_en": [
-      "Printed copy of BSF HC RO/RM e-Admit Card",
-      "Original photo ID proof (Aadhaar Card, Voter ID, PAN Card, Driving Licence, etc.)",
-      "Passport size photographs"
+      "Printout of E-Admit Card",
+      "Original ID proof as mentioned in the admit card"
     ],
     "documents_hi": [
-      "बीएसएफ एचसी आरओ/आरएम ई-एडमिट कार्ड की मुद्रित प्रति",
-      "मूल फोटो पहचान प्रमाण (आधार कार्ड, मतदाता पहचान पत्र, पैन कार्ड, ड्राइविंग लाइसेंस, आदि)",
-      "पासपोर्ट साइज फोटोग्राफ"
+      "ई-एडमिट कार्ड का प्रिंटआउट",
+      "एडमिट कार्ड में उल्लिखित मूल आईडी प्रमाण"
     ],
     "eligibility": [],
     "exam_date": "2026-11-02",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is a computer-based recruitment examination conducted by the Border Security Force to select eligible candidates for the posts of Head Constable (Radio Operator) and Head Constable (Radio Mechanic) in the BSF Communication Setup.",
-        "a_hi": "यह बीएसएफ संचार सेटअप में हेड कांस्टेबल (रेडियो ऑपरेटर) और हेड कांस्टेबल (रेडियो मैकेनिक) के पदों के लिए योग्य उम्मीदवारों का चयन करने के लिए सीमा सुरक्षा बल द्वारा आयोजित एक कंप्यूटर आधारित भर्ती परीक्षा है।",
-        "q_en": "What is the BSF HC RO & RM Exam?",
+        "a_en": "It is a computer-based recruitment examination conducted by the Border Security Force for selecting eligible candidates for Head Constable posts in Radio Operator and Radio Mechanic trades.",
+        "a_hi": "यह रेडियो ऑपरेटर और रेडियो मैकेनिक ट्रेडों में हेड कांस्टेबल के पदों के लिए योग्य उम्मीदवारों का चयन करने के लिए सीमा सुरक्षा बल द्वारा आयोजित एक कंप्यूटर आधारित भर्ती परीक्षा है।",
+        "q_en": "What is BSF HC RO and RM Exam?",
         "q_hi": "बीएसएफ एचसी आरओ और आरएम परीक्षा क्या है?"
       }
     ],
-    "extra": [],
-    "faq": [
+    "extra": [
       {
-        "a_en": "The written examination (CBT) is scheduled to be held on 2nd November 2026.",
-        "a_hi": "लिखित परीक्षा (सीबीटी) 2 नवंबर 2026 को आयोजित होने वाली है।",
-        "q_en": "When is the BSF HC RO & RM CBT exam scheduled?",
-        "q_hi": "बीएसएफ एचसी आरओ और आरएम सीबीटी परीक्षा कब निर्धारित है?"
+        "label_en": "CBT Shift 1 (HC RO)",
+        "label_hi": "सीबीटी शिफ्ट 1 (एचसी आरओ)",
+        "value_en": "09:00 AM to 11:00 AM (Reporting: 07:30 hrs, Closure: 08:30 hrs)",
+        "value_hi": "सुबह 09:00 बजे से सुबह 11:00 बजे तक"
       },
       {
-        "a_en": "You can download your e-admit card from the official BSF recruitment website by logging in with your registration credentials.",
-        "a_hi": "आप अपने पंजीकरण विवरण के साथ लॉगिन करके आधिकारिक बीएसएफ भर्ती वेबसाइट से अपना ई-एडमिट कार्ड डाउनलोड कर सकते हैं।",
-        "q_en": "How can I download my BSF HC RO & RM admit card?",
-        "q_hi": "मैं अपना बीएसएफ एचसी आरओ और आरएम एडमिट कार्ड कैसे डाउनलोड कर सकता हूँ?"
+        "label_en": "CBT Shift 2 (HC RM)",
+        "label_hi": "सीबीटी शिफ्ट 2 (एचसी आरएम)",
+        "value_en": "01:00 PM to 03:00 PM (Reporting: 11:30 hrs, Closure: 12:30 hrs)",
+        "value_hi": "दोपहर 01:00 बजे से दोपहर 03:00 बजे तक"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The CBT exam is scheduled to be conducted on 02 November 2026.",
+        "a_hi": "सीबीटी परीक्षा 02 नवंबर 2026 को आयोजित होने निर्धारित है।",
+        "q_en": "When is the BSF HC RO and RM CBT exam scheduled?",
+        "q_hi": "बीएसएफ एचसी आरओ और आरएम सीबीटी परीक्षा कब आयोजित होगी?"
+      },
+      {
+        "a_en": "The e-admit cards will go live on 22 October 2026 at 09:00 hrs.",
+        "a_hi": "ई-एडमिट कार्ड 22 अक्टूबर 2026 को सुबह 09:00 बजे लाइव होंगे।",
+        "q_en": "When will the BSF HC RO and RM admit card be released?",
+        "q_hi": "बीएसएफ एचसी आरओ और आरएम एडमिट कार्ड कब जारी किया जाएगा?"
+      },
+      {
+        "a_en": "You can download the admit card from the official BSF Recruitment Portal at https://rectt.bsf.gov.in.",
+        "a_hi": "आप आधिकारिक बीएसएफ भर्ती पोर्टल https://rectt.bsf.gov.in से एडमिट कार्ड डाउनलोड कर सकते हैं।",
+        "q_en": "Where can I download the BSF HC RO and RM admit card?",
+        "q_hi": "मैं बीएसएफ एचसी आरओ और आरएम एडमिट कार्ड कहां से डाउनलोड कर सकता हूं?"
       }
     ],
     "fees": [],
     "h1_en": "BSF HC RO RM Admit Card 2025 Out – CBT Exam Date 2026",
     "h1_hi": "बीएसएफ हेड कांस्टेबल आरओ और आरएम एडमिट कार्ड 2025 जारी – सीबीटी परीक्षा तिथि 2026",
+    "hindi_notice_url": null,
     "how_en": [
-      "Go to the official BSF recruitment portal or click the admit card download link.",
-      "Enter your login credentials such as Roll Number or Registration ID and Date of Birth.",
-      "Click on submit to view your e-admit card.",
-      "Download and print a hard copy of the admit card to carry to the exam centre."
+      "Visit the official BSF Recruitment Portal at https://rectt.bsf.gov.in",
+      "Click on the link for downloading the e-admit card for HC(RO) and HC(RM)",
+      "Log in using your registered credentials",
+      "Download and take a printout of the e-admit card"
     ],
     "how_hi": [
-      "आधिकारिक बीएसएफ भर्ती पोर्टल पर जाएं या एडमिट कार्ड डाउनलोड लिंक पर क्लिक करें।",
-      "रोल नंबर या पंजीकरण आईडी और जन्म तिथि जैसे अपने लॉगिन विवरण दर्ज करें।",
-      "अपना ई-एडमिट कार्ड देखने के लिए सबमिट पर क्लिक करें।",
-      "परीक्षा केंद्र पर ले जाने के लिए एडमिट कार्ड की एक हार्ड कॉपी डाउनलोड करें और प्रिंट करें।"
+      "आधिकारिक बीएसएफ भर्ती पोर्टल https://rectt.bsf.gov.in पर जाएं",
+      "एचसी (आरओ) और एचसी (आरएम) के लिए ई-एडमिट कार्ड डाउनलोड करने के लिंक पर क्लिक करें",
+      "अपने पंजीकृत क्रेडेंशियल का उपयोग करके लॉगिन करें",
+      "ई-एडमिट कार्ड डाउनलोड करें और उसका प्रिंट आउट लें"
     ],
-    "intro_en": "The Border Security Force (BSF) has announced the schedule and e-admit card download link for the written examination (CBT) for Head Constable (Radio Operator) and Head Constable (Radio Mechanic) in BSF Communication Setup 2025. The examination is scheduled to be held on 2nd November 2026. All eligible applicants who applied for this recruitment must download their e-admit cards from the official website using their credentials.",
-    "intro_hi": "सीमा सुरक्षा बल (बीएसएफ) ने बीएसएफ संचार सेटअप 2025 में हेड कांस्टेबल (रेडियो ऑपरेटर) और हेड कांस्टेबल (रेडियो मैकेनिक) के लिए लिखित परीक्षा (सीबीटी) का कार्यक्रम और ई-एडमिट कार्ड डाउनलोड लिंक घोषित कर दिया है। परीक्षा 2 नवंबर 2026 को आयोजित होने वाली है। इस भर्ती के लिए आवेदन करने वाले सभी योग्य आवेदकों को अपने विवरण का उपयोग करके आधिकारिक वेबसाइट से अपने ई-एडमिट कार्ड डाउनलोड करने होंगे।",
+    "intro_en": "The Border Security Force (BSF) has released the notice for the Computer Based Test (CBT) written examination for Head Constable (Radio Operator) and Head Constable (Radio Mechanic) in BSF Communication Setup-2025. The CBT is scheduled to be conducted on 02.11.2026 in two shifts. E-admit cards will go live on 22.10.2026 on the official BSF recruitment portal. Candidates appearing for both posts will be issued separate e-admit cards.",
+    "intro_hi": "सीमा सुरक्षा बल (बीएसएफ) ने बीएसएफ कम्युनिकेशन सेटअप-2025 में हेड कांस्टेबल (रेडियो ऑपरेटर) और हेड कांस्टेबल (रेडियो मैकेनिक) के पदों के लिए कंप्यूटर आधारित टेस्ट (सीबीटी) लिखित परीक्षा का नोटिस जारी कर दिया है। सीबीटी 02.11.2026 को दो पालियों में आयोजित होने निर्धारित है। ई-एडमिट कार्ड 22.10.2026 को आधिकारिक बीएसएफ भर्ती पोर्टल पर लाइव होंगे। दोनों पदों के लिए आवेदन करने वाले उम्मीदवारों को अलग-अलग ई-एडमिट कार्ड जारी किए जाएंगे।",
     "last_date": null,
     "mistakes_en": [
-      "Do not forget to carry a valid original photo ID along with the printout of the admit card.",
-      "Check all details on the admit card carefully and report any discrepancies to the board well before the exam date."
+      "Do not forget to carry the printout of the e-admit card and original ID proof",
+      "Do not report late; reach by the reporting time mentioned on the admit card"
     ],
     "mistakes_hi": [
-      "एडमिट कार्ड के प्रिंटआउट के साथ एक वैध मूल फोटो आईडी ले जाना न भूलें।",
-      "एडमिट कार्ड पर सभी विवरणों की सावधानीपूर्वक जांच करें और परीक्षा तिथि से पहले बोर्ड को किसी भी विसंगति की सूचना दें।"
+      "ई-एडमिट कार्ड का प्रिंटआउट और मूल आईडी प्रमाण ले जाना न भूलें",
+      "देर से न पहुंचें; एडमिट कार्ड पर बताए गए रिपोर्टिंग समय पर पहुंचें"
     ],
-    "not_en": [],
-    "not_hi": [],
+    "not_en": [
+      "Candidates reporting late after the gate closing time will not be allowed",
+      "Candidates without a printout of the e-admit card and original ID proof will not be permitted"
+    ],
+    "not_hi": [
+      "गेट बंद होने के समय के बाद देर से रिपोर्ट करने वाले उम्मीदवारों को अनुमति नहीं दी जाएगी",
+      "ई-एडमिट कार्ड के प्रिंटआउट और मूल आईडी प्रमाण के बिना उम्मीदवारों को अनुमति नहीं दी जाएगी"
+    ],
     "notice_date": null,
-    "official_site": "https://rectt.bsf.gov.in/",
+    "official_site": "https://rectt.bsf.gov.in",
     "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
@@ -144,34 +172,26 @@
         "value_hi": "हेड कांस्टेबल (आरओ) और हेड कांस्टेबल (आरएम)"
       },
       {
-        "label_en": "Organization",
-        "label_hi": "संस्था",
-        "value_en": "Border Security Force (BSF)",
-        "value_hi": "सीमा सुरक्षा बल (बीएसएफ)"
+        "label_en": "Admit card live date",
+        "label_hi": "एडमिट कार्ड लाइव होने की तिथि",
+        "value_en": "22 Oct 2026",
+        "value_hi": "22 अक्टूबर 2026"
       },
       {
-        "label_en": "Exam Date",
+        "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "02 Nov 2026",
         "value_hi": "02 नवंबर 2026"
-      },
-      {
-        "label_en": "Exam Type",
-        "label_hi": "परीक्षा का प्रकार",
-        "value_en": "Computer Based Test (CBT)",
-        "value_hi": "कंप्यूटर आधारित परीक्षा (सीबीटी)"
       }
     ],
     "salary": [],
     "selection_en": [
-      "Written Examination (CBT)",
-      "Physical Standards Test / Medical Examination",
-      "Final Merit"
+      "Computer Based Test (CBT)",
+      "Subsequent phases of recruitment as per rules"
     ],
     "selection_hi": [
-      "लिखित परीक्षा (सीबीटी)",
-      "शारीरिक मानक परीक्षण / चिकित्सा परीक्षा",
-      "अंतिम मेरिट"
+      "कंप्यूटर आधारित परीक्षा (सीबीटी)",
+      "नियमों के अनुसार भर्ती के अगले चरण"
     ],
     "share_card": {
       "headline_en": "Admit Card 2025 Out",
@@ -181,16 +201,32 @@
       "line_hi": "एचसी (आरओ) और एचसी (आरएम)",
       "posts": null
     },
-    "status_en": "Admit card released for CBT exam scheduled on 2 Nov 2026",
-    "status_hi": "2 नवंबर 2026 को निर्धारित सीबीटी परीक्षा के लिए एडमिट कार्ड जारी",
-    "summary_en": "The Border Security Force (BSF) has released the e-admit card download link for the written examination (CBT) for the post of Head Constable (RO) and Head Constable (RM) in BSF Comn Setup 2025. The computer-based test is scheduled for 2nd November 2026. Candidates can download their admit card using their login credentials.",
-    "summary_hi": "सीमा सुरक्षा बल (बीएसएफ) ने बीएसएफ संचार सेटअप 2025 में हेड कांस्टेबल (आरओ) और हेड कांस्टेबल (आरएम) के पद के लिए लिखित परीक्षा (सीबीटी) के लिए ई-एडमिट कार्ड डाउनलोड लिंक जारी कर दिया है। कंप्यूटर आधारित परीक्षा 2 नवंबर 2026 को निर्धारित है। उम्मीदवार अपने लॉगिन विवरण का उपयोग करके अपना एडमिट कार्ड डाउनलोड कर सकते हैं।",
-    "vacancies": [],
+    "status_en": "Admit card released, CBT exam scheduled on 02 Nov 2026",
+    "status_hi": "एडमिट कार्ड जारी, सीबीटी परीक्षा 02 नवंबर 2026 को आयोजित होगी",
+    "summary_en": "Download the e-admit card for the written examination (CBT) scheduled on 2nd November 2026 for the BSF Head Constable RO and RM recruitment.",
+    "summary_hi": "बीएसएफ हेड कांस्टेबल आरओ और आरएम भर्ती के लिए 2 नवंबर 2026 को आयोजित होने वाली लिखित परीक्षा (सीबीटी) के लिए ई-एडमिट कार्ड डाउनलोड करें।",
+    "vacancies": [
+      {
+        "detail_en": "",
+        "detail_hi": "",
+        "post_en": "Head Constable (Radio Operator / RO)",
+        "post_hi": "हेड कांस्टेबल (रेडियो ऑपरेटर)",
+        "total": ""
+      },
+      {
+        "detail_en": "",
+        "detail_hi": "",
+        "post_en": "Head Constable (Radio Mechanic / RM)",
+        "post_hi": "हेड कांस्टेबल (रेडियो मैकेनिक)",
+        "total": ""
+      }
+    ],
+    "video_url": null,
     "who_en": [
-      "Candidates who successfully applied for BSF HC (RO) & HC (RM) 2025 recruitment."
+      "Candidates who applied for BSF HC (RO) and HC (RM) recruitment 2025"
     ],
     "who_hi": [
-      "उम्मीदवार जिन्होंने बीएसएफ एचसी (आरओ) और एचसी (आरएम) 2025 भर्ती के लिए सफलतापूर्वक आवेदन किया है।"
+      "वे उम्मीदवार जिन्होंने बीएसएफ एचसी (आरओ) और एचसी (आरएम) भर्ती 2025 के लिए आवेदन किया है"
     ]
   },
   "pdf": {
@@ -200,10 +236,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-10-22T18:08:58Z",
-  "qual": [
-    "12th"
-  ],
-  "rewrite": true,
   "slug": "bsf-hc-ro-rm-admit-card-2025",
   "source_id": "bsf-recruitment",
   "status": "approved",

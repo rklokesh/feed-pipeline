@@ -1,5 +1,20 @@
 {
   "board_url": "https://kvs.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal financial FAQs and guidelines for Kendriya Vidyalaya Sangathan, not a job notice.",
+    "summary_en": "Kendriya Vidyalaya Sangathan has published FAQs on procurement, GFR, GeM, and other financial matters for internal guidance.",
+    "summary_hi": "केन्द्रीय विद्यालय संगठन ने खरीद, जीएफआर, जीईएम और अन्य वित्तीय मामलों पर आंतरिक मार्गदर्शन के लिए अक्सर पूछे जाने वाले प्रश्न जारी किए हैं।",
+    "title_en": "Kendriya Vidyalaya Sangathan FAQs on Procurement and Financial Matters",
+    "title_hi": "केन्द्रीय विद्यालय संगठन खरीद और वित्तीय मामलों पर अक्सर पूछे जाने वाले प्रश्न",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "kvs-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "खरीद और अन्य वित्तीय मामलों पर अक्सर पूछे जाने वाले प्रश्न (FAQ)",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026110470.pdf"
 }

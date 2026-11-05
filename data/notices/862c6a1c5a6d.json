@@ -1,23 +1,320 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://rrcnr.org/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-02",
+    "last_date": null,
+    "list": true,
+    "posts": "Level-1 Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "RRC Northern Railway has released the document verification and medical examination schedule for Level-1 posts starting from November 2, 2026. Shortlisted candidates should download their call letters and check the required documents.",
+    "summary_hi": "आरआरसी उत्तरी रेलवे ने 2 नवंबर 2026 से शुरू होने वाले लेवल-1 पदों के लिए दस्तावेज सत्यापन और चिकित्सा परीक्षा का कार्यक्रम जारी कर दिया है। शॉर्टलिस्ट किए गए उम्मीदवार अपने कॉल लेटर डाउनलोड करें और आवश्यक दस्तावेज जांचें।",
+    "title_en": "RRC Northern Railway Level 1 DV Schedule 2024 – Call Letter Out",
+    "title_hi": "आरआरसी उत्तरी रेलवे लेवल 1 डीवी शेड्यूल 2024 – कॉल लेटर जारी",
+    "type": "Update",
+    "vacancies": 4749
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "rrc-northern-railway-level-1-2024",
+    "name_en": "RRC Northern Railway Level 1 2024",
+    "name_hi": "आरआरसी नॉर्दर्न रेलवे लेवल 1 2024"
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-10-22T21:08:30+00:00",
   "id": "862c6a1c5a6d",
+  "issue": 1040,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-10-20",
   "org": "RRC Northern Railway",
+  "page": {
+    "after_en": [
+      "Candidates found eligible in Document Verification will be directed to a nominated Railway Hospital for a Medical Examination.",
+      "Final panel for appointment will be prepared based on medical fitness and merit."
+    ],
+    "after_hi": [
+      "दस्तावेज सत्यापन में योग्य पाए गए उम्मीदवारों को चिकित्सा परीक्षा के लिए एक नामित रेलवे अस्पताल भेजा जाएगा।",
+      "चिकित्सा फिटनेस और योग्यता के आधार पर नियुक्ति के लिए अंतिम पैनल तैयार किया जाएगा।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://rrcnr.org/",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Download your E-Call Letter from the official RRC website.",
+      "Gather all original certificates and two sets of self-attested photocopies.",
+      "Keep 12 photographs ready (6 matching uploaded photo + 6 latest).",
+      "Make your own arrangement for a 3-4 day stay at the venue."
+    ],
+    "checklist_hi": [
+      "आधिकारिक आरआरसी वेबसाइट से अपना ई-कॉल लेटर डाउनलोड करें।",
+      "सभी मूल प्रमाण पत्र और स्व-सत्यापित फोटोकॉपी के दो सेट एकत्र करें।",
+      "12 तस्वीरें तैयार रखें (अपलोड की गई फोटो से मेल खाने वाली 6 + 6 नवीनतम)।",
+      "केंद्र पर 3-4 दिन ठहरने की अपनी व्यवस्था स्वयं करें।"
+    ],
+    "conducted_by_en": "Railway Recruitment Cell, Northern Railway (RRC NR)",
+    "conducted_by_hi": "रेलवे भर्ती सेल, उत्तरी रेलवे (आरआरसी एनआर)",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस तिथि",
+        "value_en": "20 Oct 2026",
+        "value_hi": "20 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Document Verification Starts",
+        "label_hi": "दस्तावेज सत्यापन शुरू",
+        "value_en": "02 Nov 2026",
+        "value_hi": "02 नवंबर 2026"
+      },
+      {
+        "label_en": "Block Date for Supplementary DV",
+        "label_hi": "पूरक डीवी के लिए ब्लॉक तिथि",
+        "value_en": "03 Dec 2026",
+        "value_hi": "03 दिसंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Mark sheets and certificates of all educational/technical qualifications",
+      "Gazette notification or legal document for change of name",
+      "NCVT/SCVT certificate and mark sheets for CCAA candidates",
+      "Certificate for proof of Date of Birth",
+      "Caste Certificate for SC/ST/OBC in prescribed format (OBC not older than one year with non-creamy layer status)",
+      "Income and Asset Certificate for EWS",
+      "NOC from current employer for serving employees",
+      "Disability Certificate for PwBD candidates",
+      "Photo ID card and self-attested photocopy of both sides of Aadhaar Card",
+      "Receipt of payment if made through SBI challan or post office pay-in-slip",
+      "Income certificate for waiving examination fee for Economically Backward Classes",
+      "Minority community declaration on non-judicial stamp paper",
+      "Self-certification by transgender candidates",
+      "J&K domicile certificate if applicable",
+      "Decree of divorce/judicial separation and remarriage affidavit if applicable",
+      "Death certificate of spouse and remarriage affidavit for widows",
+      "Half portion of E-admit card of CBT and PET",
+      "6 copies of photos matching the uploaded application photo and 6 latest photographs"
+    ],
+    "documents_hi": [
+      "सभी शैक्षणिक/तकनीकी योग्यताओं की अंक तालिकाएं और प्रमाण पत्र",
+      "नाम परिवर्तन के लिए गजट अधिसूचना या कानूनी दस्तावेज",
+      "सीसीएए उम्मीदवारों के लिए एनसीवीटी/एससीवीटी प्रमाण पत्र और अंक तालिकाएं",
+      "जन्म तिथि के प्रमाण के लिए प्रमाण पत्र",
+      "निर्धारित प्रारूप में एससी/एसटी/ओबीसी के लिए जाति प्रमाण पत्र (ओबीसी एक वर्ष से अधिक पुराना नहीं होना चाहिए और नॉन-क्रीमी लेयर स्थिति होनी चाहिए)",
+      "ईडब्ल्यूएस के लिए आय और परिसंपत्ति प्रमाण पत्र",
+      "सेवारत कर्मचारियों के लिए वर्तमान नियोक्ता से एनओसी",
+      "पीडब्ल्यूबीडी उम्मीदवारों के लिए विकलांगता प्रमाण पत्र",
+      "फोटो आईडी कार्ड और आधार कार्ड के दोनों तरफ की स्व-सत्यापित फोटोकॉपी",
+      "एसबीआई चालान या पोस्ट ऑफिस पे-इन-स्लिप के माध्यम से किए गए भुगतान की रसीद",
+      "आर्थिक रूप से पिछड़े वर्ग के लिए परीक्षा शुल्क माफ करने हेतु आय प्रमाण पत्र",
+      "गैर-न्यायिक स्टैंप पेपर पर अल्पसंख्यक समुदाय घोषणा",
+      "ट्रांसजेंडर उम्मीदवारों द्वारा स्व-प्रमाणन",
+      "यदि लागू हो तो जम्मू-कश्मीर अधिवास प्रमाण पत्र",
+      "यदि लागू हो तो तलाक/न्यायिक अलगाव की डिक्री और पुनर्विवाह का हलफनामा",
+      "विधवाओं के लिए पति/पत्नी का मृत्यु प्रमाण पत्र और पुनर्विवाह का हलफनामा",
+      "सीबीटी और पीईटी के ई-एडमिट कार्ड का आधा हिस्सा",
+      "अपलोड की गई आवेदन फोटो से मिलती जुलती 6 प्रतियां और 6 नवीनतम तस्वीरें"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Shortlist criteria",
+        "label_hi": "शॉर्टलिस्ट मानदंड",
+        "value_en": "Candidates shortlisted based on previous recruitment stages (CBT, PET) under CEN No. RRC-08/2024",
+        "value_hi": "सीईएन संख्या आरआरसी-08/2024 के तहत पिछली भर्ती चरणों (सीबीटी, पीईटी) के आधार पर शॉर्टलिस्ट किए गए उम्मीदवार"
+      }
+    ],
+    "exam_date": "2026-11-02",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "Document Verification is the final stage of recruitment where shortlisted candidates must present their original educational, category, and identity documents to verify their eligibility before being sent for a medical examination.",
+        "a_hi": "दस्तावेज सत्यापन भर्ती का अंतिम चरण है जहाँ शॉर्टलिस्ट किए गए उम्मीदवारों को चिकित्सा परीक्षा के लिए भेजे जाने से पहले अपनी पात्रता सत्यापित करने के लिए अपने मूल शैक्षणिक, श्रेणी और पहचान दस्तावेज प्रस्तुत करने होते हैं।",
+        "q_en": "What is RRC Northern Railway Level-1 Document Verification?",
+        "q_hi": "आरआरसी उत्तरी रेलवे लेवल-1 दस्तावेज सत्यापन क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Medical Examination",
+        "label_hi": "चिकित्सा परीक्षा",
+        "value_en": "Conducted at nominated Railway Hospital after successful Document Verification",
+        "value_hi": "सफल दस्तावेज सत्यापन के बाद नामित रेलवे अस्पताल में आयोजित किया जाएगा"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The document verification starts on November 2, 2026.",
+        "a_hi": "दस्तावेज सत्यापन 2 नवंबर 2026 से शुरू होता है।",
+        "q_en": "When does the RRC Northern Railway Level-1 Document Verification start?",
+        "q_hi": "आरआरसी उत्तरी रेलवे लेवल-1 दस्तावेज सत्यापन कब शुरू होता है?"
+      },
+      {
+        "a_en": "A total of 4,749 candidates have been shortlisted for Document Verification.",
+        "a_hi": "दस्तावेज सत्यापन के लिए कुल 4,749 उम्मीदवारों को शॉर्टलिस्ट किया गया है।",
+        "q_en": "How many candidates are shortlisted for Level-1 DV?",
+        "q_hi": "लेवल-1 डीवी के लिए कुल कितने उम्मीदवारों को शॉर्टलिस्ट किया गया है?"
+      },
+      {
+        "a_en": "The block date for supplementary Document Verification is December 3, 2026.",
+        "a_hi": "पूरक दस्तावेज सत्यापन के लिए ब्लॉक तिथि 3 दिसंबर 2026 है।",
+        "q_en": "What is the block date for DV if I miss my scheduled date?",
+        "q_hi": "यदि मैं अपनी निर्धारित तिथि भूल जाऊं तो डीवी के लिए ब्लॉक तिथि क्या है?"
+      },
+      {
+        "a_en": "No, candidates must report on the block date using the e-call letter already issued.",
+        "a_hi": "नहीं, उम्मीदवारों को पहले से जारी ई-कॉल लेटर का उपयोग करके ब्लॉक तिथि पर रिपोर्ट करना होगा।",
+        "q_en": "Will a separate e-call letter be issued for the block date?",
+        "q_hi": "क्या ब्लॉक तिथि के लिए कोई अलग ई-कॉल लेटर जारी किया जाएगा?"
+      },
+      {
+        "a_en": "No request for change of venue or DV date will be entertained under any circumstances.",
+        "a_hi": "किसी भी परिस्थिति में स्थान या डीवी तिथि परिवर्तन के अनुरोध पर विचार नहीं किया जाएगा।",
+        "q_en": "Can I request a change of DV venue or date?",
+        "q_hi": "क्या मैं डीवी स्थान या तिथि में परिवर्तन का अनुरोध कर सकता हूँ?"
+      },
+      {
+        "a_en": "OBC candidates must produce an OBC Caste Certificate in the prescribed format not older than one year from the date of DV, clearly mentioning Non-Creamy Layer status.",
+        "a_hi": "ओबीसी उम्मीदवारों को डीवी की तारीख से एक साल से अधिक पुराना नहीं होना चाहिए, निर्धारित प्रारूप में ओबीसी जाति प्रमाण पत्र पेश करना होगा, जिसमें नॉन-क्रीमियन लेयर की स्थिति स्पष्ट रूप से उल्लेखित हो।",
+        "q_en": "What documents are required for OBC candidates?",
+        "q_hi": "ओबीसी उम्मीदवारों के लिए कौन से दस्तावेज आवश्यक हैं?"
+      },
+      {
+        "a_en": "Candidates found eligible in Document Verification will be directed for a medical examination at a nominated Railway Hospital.",
+        "a_hi": "दस्तावेज सत्यापन में योग्य पाए गए उम्मीदवारों को नामित रेलवे अस्पताल में चिकित्सा परीक्षा के लिए भेजा जाएगा।",
+        "q_en": "What happens after Document Verification?",
+        "q_hi": "दस्तावेज सत्यापन के बाद क्या होता है?"
+      },
+      {
+        "a_en": "Candidates must bring two sets of photocopies of all documents, duly self-attested.",
+        "a_hi": "उम्मीदवारों को सभी दस्तावेजों की फोटोकॉपी के दो सेट, विधिवत स्व-सत्यापित, लाने होंगे।",
+        "q_en": "How many sets of photocopies are required during DV?",
+        "q_hi": "डीवी के दौरान फोटोकॉपी के कितने सेट आवश्यक हैं?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "RRC Northern Railway Level 1 DV Schedule 2024 – Call Letter Out",
+    "h1_hi": "आरआरसी उत्तरी रेलवे लेवल 1 डीवी शेड्यूल 2024 – कॉल लेटर जारी",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official RRC Northern Railway website.",
+      "Click on the link to download the E-Call Letter for Document Verification.",
+      "Log in using your registration details.",
+      "Download and print the e-call letter along with the instructions."
+    ],
+    "how_hi": [
+      "आरआरसी उत्तरी रेलवे की आधिकारिक वेबसाइट पर जाएं।",
+      "दस्तावेज सत्यापन के लिए ई-कॉल लेटर डाउनलोड करने के लिंक पर क्लिक करें।",
+      "अपने पंजीकरण विवरण का उपयोग करके लॉगिन करें।",
+      "निर्देशों के साथ ई-कॉल लेटर डाउनलोड करें और प्रिंट करें।"
+    ],
+    "intro_en": "Railway Recruitment Cell (RRC), Northern Railway has issued the notice regarding Document Verification (DV) and Medical Examination for CEN No. RRC-08/2024 Level-1 posts. A total of 4,749 candidates have been shortlisted. The document verification process will commence on November 2, 2026, at the respective venues. Candidates who miss their scheduled date can appear on the block date of December 3, 2026. Shortlisted candidates must download their e-call letters from the official website and report with all required original documents and photocopies.",
+    "intro_hi": "रेलवे भर्ती सेल (आरआरसी), उत्तरी रेलवे ने सीईएन संख्या आरआरसी-08/2024 लेवल-1 पदों के लिए दस्तावेज सत्यापन (डीवी) और चिकित्सा परीक्षा के संबंध में नोटिस जारी किया है। कुल 4,749 उम्मीदवारों को शॉर्टलिस्ट किया गया है। दस्तावेज सत्यापन प्रक्रिया 2 नवंबर 2026 से संबंधित केंद्रों पर शुरू होगी। जो उम्मीदवार अपनी निर्धारित तिथि पर अनुपस्थित रहेंगे, वे 3 दिसंबर 2026 की ब्लॉक तिथि को उपस्थित हो सकते हैं। शॉर्टलिस्ट किए गए उम्मीदवारों को आधिकारिक वेबसाइट से अपने ई-कॉल लेटर डाउनलोड करने होंगे और सभी आवश्यक मूल दस्तावेजों तथा फोटोकॉपी के साथ रिपोर्ट करना होगा।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not miss the scheduled DV date; request for change of venue or date will not be entertained.",
+      "Do not bring birth certificates as proof of date of birth, as they are not considered valid documentary proof for this purpose.",
+      "Ensure OBC certificates are not older than one year from the date of document verification."
+    ],
+    "mistakes_hi": [
+      "निर्धारित डीवी तिथि न चूकें; स्थान या तिथि परिवर्तन के अनुरोध पर विचार नहीं किया जाएगा।",
+      "जन्म तिथि के प्रमाण के रूप में जन्म प्रमाण पत्र न लाएं, क्योंकि इन्हें इस उद्देश्य के लिए वैध दस्तावेज प्रमाण नहीं माना जाता है।",
+      "सुनिश्चित करें कि ओबीसी प्रमाण पत्र दस्तावेज सत्यापन की तिथि से एक वर्ष से अधिक पुराना न हो।"
+    ],
+    "not_en": [
+      "Candidates not meeting eligibility criteria or failing to produce required original documents during DV"
+    ],
+    "not_hi": [
+      "जो उम्मीदवार पात्रता मानदंडों को पूरा नहीं करते हैं या डीवी के दौरान आवश्यक मूल दस्तावेज पेश करने में विफल रहते हैं"
+    ],
+    "notice_date": "2026-10-20",
+    "official_site": "https://rrcnr.org/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Level-1 Posts",
+        "value_hi": "लेवल-1 पद"
+      },
+      {
+        "label_en": "Total Vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "4,749",
+        "value_hi": "4,749"
+      },
+      {
+        "label_en": "DV Start Date",
+        "label_hi": "डीवी प्रारंभ तिथि",
+        "value_en": "02 Nov 2026",
+        "value_hi": "02 नवंबर 2026"
+      },
+      {
+        "label_en": "Block Date for DV",
+        "label_hi": "डीवी के लिए ब्लॉक तिथि",
+        "value_en": "03 Dec 2026",
+        "value_hi": "03 दिसंबर 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Document Verification (DV)",
+      "Medical Examination"
+    ],
+    "selection_hi": [
+      "दस्तावेज सत्यापन",
+      "चिकित्सा परीक्षा"
+    ],
+    "share_card": {
+      "headline_en": "DV Schedule Out",
+      "headline_hi": "डीवी शेड्यूल जारी",
+      "kind": "sched",
+      "line_en": "Level-1 Posts",
+      "line_hi": "लेवल-1 पद",
+      "posts": 4749
+    },
+    "status_en": "Document Verification schedule released, starts 02 Nov 2026",
+    "status_hi": "दस्तावेज सत्यापन शेड्यूल जारी, 02 नवंबर 2026 से शुरू",
+    "summary_en": "RRC Northern Railway has released the document verification and medical examination schedule for 4,749 Level-1 posts starting from November 2, 2026. Shortlisted candidates should download their call letters and bring original certificates along with two sets of self-attested photocopies.",
+    "summary_hi": "आरआरसी उत्तरी रेलवे ने 2 नवंबर 2026 से शुरू होने वाले 4,749 लेवल-1 पदों के लिए दस्तावेज सत्यापन और चिकित्सा परीक्षा का कार्यक्रम जारी कर दिया है। शॉर्टलिस्ट किए गए उम्मीदवार अपने कॉल लेटर डाउनलोड करें और सभी मूल प्रमाण पत्रों के साथ दो सेट स्व-सत्यापित फोटोकॉपी लाएं।",
+    "vacancies": [
+      {
+        "detail_en": "GEN 3343, CCAA 953, ESM 289, PwBD 164",
+        "detail_hi": "सामान्य 3343, सीसीएए 953, ईएसएम 289, पीडब्ल्यूबीडी 164",
+        "post_en": "Level-1 Posts",
+        "post_hi": "लेवल-1 पद",
+        "total": "4749"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates shortlisted for Level-1 posts under RRC Northern Railway CEN No. RRC-08/2024"
+    ],
+    "who_hi": [
+      "आरआरसी उत्तरी रेलवे सीईएन संख्या आरआरसी-08/2024 के तहत लेवल-1 पदों के लिए शॉर्टलिस्ट किए गए उम्मीदवार"
+    ]
+  },
   "pdf": {
     "bytes": 5845992,
     "pages": 5,
     "sha256": "c3d92d23c4cf9fc5d128edaf6af9c19efb1c0507f5bb4215a302bfe62ba4c757",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-05T06:38:48Z",
+  "qual": [
+    "10th",
+    "iti"
+  ],
+  "slug": "rrc-northern-railway-level-1-dv-schedule-2024-call-letter-out",
   "source_id": "rrc-nr",
-  "status": "pending_review",
+  "status": "approved",
   "title": "20.10.2026 Kind Attention: Employment Notification No. CEN NO.-08/2024: NOTICE NO. 07 dated 20.10.2026 regarding Documents Verification and Medical Examination for recruitment of various posts of level-1. Click here for DV Notice Click here for Annexures Click here for DV cutoff Click here for DV Ca",
   "url": "https://rrcnr.org/downloads/DV_notice.pdf"
 }

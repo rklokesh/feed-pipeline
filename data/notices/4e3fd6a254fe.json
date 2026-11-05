@@ -1,6 +1,20 @@
 {
   "board_url": "https://rpsc.rajasthan.gov.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Question paper PDF, not a job notice",
+    "summary_en": "",
+    "summary_hi": "",
+    "title_en": "",
+    "title_hi": "",
+    "type": "Answer key",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +30,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "23/10/2026 Question Paper for Sr. Scientific Officer - 2026 (Toxicology Division)",
   "url": "https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/562BB132-0902-4007-BE62-D7CB83BC5C46.pdf"
 }

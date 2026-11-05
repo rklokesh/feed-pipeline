@@ -1,5 +1,20 @@
 {
   "board_url": "https://kvs.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal circular regarding mandatory police verification of employees via NCRC portal, not a job notice.",
+    "summary_en": "Kendriya Vidyalaya Sangathan issued a circular regarding mandatory police verification of teachers and non-teaching personnel through the National Crime Records Check Portal.",
+    "summary_hi": "केन्द्रीय विद्यालय संगठन ने राष्ट्रीय अपराध रिकॉर्ड जाँच पोर्टल के माध्यम से शिक्षकों और गैर-शिक्षण कर्मचारियों के अनिवार्य पुलिस सत्यापन के संबंध में एक सर्कुलर जारी किया है।",
+    "title_en": "KVS Verification of Criminal Antecedents of Employees via NCRC Portal",
+    "title_hi": "केन्द्रीय विद्यालय संगठन कर्मचारियों के आपराधिक पूर्ववृत्त के सत्यापन के संबंध में",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "kvs-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "राष्ट्रीय अपराध रिकॉर्ड जाँच (NCRC) पोर्टल के माध्यम से शिक्षकों एवं गैर-शिक्षण कर्मचारियों के आपराधिक पूर्ववृत्त का सत्यापन – संबंध में। नई",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026110542.pdf"
 }
