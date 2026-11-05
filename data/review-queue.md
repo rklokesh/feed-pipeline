@@ -1,9 +1,11 @@
-# Review queue — 9 pending
+# Review queue — 11 pending
 
-_Updated 2026-11-05T11:21:58+00:00_
+_Updated 2026-11-05T11:44:04+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-05 | KVS | notification | विज्ञापन संख्या 04/2026 के अंतर्गत प्रतिनियुक्ति के आधार पर अधीक्षण अभियंता के पद भरने के  | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026110583.pdf) |
+| 2026-11-05 | DSSSB | result | NOTICE NO. 1672 :- Release of marks and calling of e-dossier to the post of PGT Geography  | — | — | — | — | [open](https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/notice_1672.pdf) |
 | 2026-11-05 | SSC | result | Combined Hindi Translators Examination, 2025 - Declaration of First Round of Tentative All | — | — | — | — | [open](https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_05112026.pdf) |
 | 2026-11-05 | CISF | syllabus | Recruitment of Paramedical Staff in CISF: Syllabus for Written Examination: Reg Conduct of | — | — | — | — | [open](https://cisfrectt.cisf.gov.in/file_open.php?fnm=QtbidJ3o5L4QSttBg6JNJX1TyDfEgHzzksmzSHrgb5IFGzKoSpWzagQAtIB3AOdkWjeedLD7IcQrDkOldCG11g) |
 | 2026-11-05 | RPSC | admit_card | 05/11/2026 Press Note Regarding Exam District Information and Admit Card for Protection Of | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/PressNotes/20D762A0-0656-46C5-95E2-8AC965EAE696.pdf) |
