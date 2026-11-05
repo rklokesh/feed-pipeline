@@ -401,6 +401,12 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     border-color: color-mix(in srgb, #fff 16%, transparent);
     box-shadow: 0 10px 30px -6px color-mix(in srgb, #000 55%, transparent), inset 0 1px 1px color-mix(in srgb, #fff 22%, transparent); }
 }
+@media (max-width: 640px) {
+  /* language switch shows the letter of the language it switches TO: "अ" for Hindi, "A" for English */
+  html.v2 #lang::before { content: "अ"; -webkit-mask: none !important; mask: none !important; background: none !important; width: auto; height: auto;
+    font: 500 20px/1 "Noto Sans Devanagari", var(--font), sans-serif; color: currentColor; transform: translateY(3px); }
+  html.v2[lang="hi"] #lang::before { content: "A"; font: 500 19px/1 var(--font), sans-serif; transform: translateY(4px); }
+}
 </style>
 <script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */
 try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")==="1")document.documentElement.classList.add("v2")}catch(e){}</script>
