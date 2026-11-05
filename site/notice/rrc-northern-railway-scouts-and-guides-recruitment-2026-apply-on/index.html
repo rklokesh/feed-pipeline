@@ -270,6 +270,23 @@ html[lang="hi"] .hidet { display: none; }
   .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
   .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 }
+/* Floating back button (phones only): round frosted glass, iOS-style chevron (Hugeicons arrow-left-01, stroke rounded) */
+.fback { display: none; }
+@media (max-width: 640px) {
+  .fback { display: grid; place-items: center; position: fixed; z-index: 40; width: 44px; height: 44px; border-radius: 50%;
+    top: calc(env(safe-area-inset-top, 0px) + 12px); right: max(12px, env(safe-area-inset-right, 0px));
+    color: var(--ink); background: color-mix(in srgb, var(--page) 55%, transparent);
+    -webkit-backdrop-filter: blur(18px) saturate(180%); backdrop-filter: blur(18px) saturate(180%);
+    border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+    box-shadow: 0 4px 18px color-mix(in srgb, #000 14%, transparent), inset 0 1px 0 color-mix(in srgb, #fff 45%, transparent);
+    opacity: 0; transform: scale(.85); pointer-events: none; transition: opacity .2s ease, transform .2s ease; }
+  .fback.on { opacity: 1; transform: none; pointer-events: auto; }
+  .fback:active { transform: scale(.92); }
+  .fback svg { margin-left: -2px; }
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .fback { background: var(--soft); } }
+@media (prefers-reduced-motion: reduce) { .fback { transition: none; } }
+@media print { .fback { display: none !important; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -291,7 +308,7 @@ html[lang="hi"] .hidet { display: none; }
       <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat=jobs" data-t="crumbType">Jobs</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">RRC Northern Railway</span></nav>
       <h1 data-t="h1">RRC Northern Railway Scouts and Guides Recruitment 2026 – Apply Online</h1>
       <p class="meta g" data-t="metaV">Updated 5 Nov 2026 · Source: rrcnr.org</p>
-      
+      <p class="exjump"><a href="#exam" data-t="exJump">1 more update for RRC Northern Railway Scouts and Guides 2026 ↓</a></p>
       <p class="status"><span id="state">Notice published</span><span id="left"></span><span id="views" class="g" hidden></span></p>
       <p class="lead" data-t="summary">RRC Northern Railway has released the notification for recruitment against Scouts and Guides Quota for the year 2026-27 under Level 1 and Level 2 of the Pay Matrix. Eligible candidates can check the notification and apply.</p>
       <img class="ogimg" id="ogimg" src="/notice/rrc-northern-railway-scouts-and-guides-recruitment-2026-apply-on/og.png" data-en="/notice/rrc-northern-railway-scouts-and-guides-recruitment-2026-apply-on/og.png" data-hi="/notice/rrc-northern-railway-scouts-and-guides-recruitment-2026-apply-on/og-hi.png" width="1200" height="675" alt="RRC Northern Railway Scouts and Guides Recruitment 2026 – Apply Online — summary card" decoding="async" onerror="this.hidden=true">
@@ -375,6 +392,10 @@ html[lang="hi"] .hidet { display: none; }
       <h2 class="h" data-t="chkH">Final checklist</h2>
       <ul class="steps dots"><li data-t="chkH0">Read the official notification RRC/NR 01/2026/S&amp;G thoroughly.</li><li data-t="chkH1">Keep all required Scouts and Guides certificates ready.</li></ul>
     </section>
+    <section class="kv rel" id="exam" data-t-aria="exH">
+      <h2 class="h" data-t="exH">All updates for RRC Northern Railway Scouts and Guides 2026</h2>
+      <a class="r" href="/notice/rrc-northern-railway-scouts-guides-recruitment-2026-apply-online/"><span><span data-t="ex0">RRC Northern Railway Scouts &amp; Guides Recruitment 2026 – Apply Online</span> <small class="g" data-t="exs0">Recruitment</small></span><span class="v g num">4 Nov 2026</span></a>
+    </section>
     <section class="kv rel" data-t-aria="relH">
       <h2 class="h" data-t="relH">More notices</h2>
       <a class="r" href="/notice/rrc-northern-railway-cultural-quota-recruitment-2026/"><span data-t="rel0">RRC Northern Railway Cultural Quota Recruitment 2026</span><span class="v g num">4 Nov 2026</span></a>
@@ -382,7 +403,6 @@ html[lang="hi"] .hidet { display: none; }
       <a class="r" href="/notice/rrc-northern-railway-alp-technician-gdce-re-examination-notice-2/"><span data-t="rel2">RRC Northern Railway ALP Technician GDCE Re-examination Notice 2026 – Willingness Link</span><span class="v g num">28 Oct 2026</span></a>
       <a class="r" href="/notice/rrb-cen-08-2024-document-verification-upload-instructions/"><span data-t="rel3">RRB CEN 08/2024 Document Verification Upload Instructions</span><span class="v g num">26 Oct 2026</span></a>
       <a class="r" href="/notice/rrc-northern-railway-level-1-dv-schedule-2026-notice-out-for-4-7/"><span data-t="rel4">RRC Northern Railway Level 1 DV Schedule 2026 – Notice Out for 4,749 Posts</span><span class="v g num">20 Oct 2026</span></a>
-      <a class="r" href="/notice/mppsc-law-officer-recruitment-2026-apply-online-for-1-vacancy/"><span data-t="rel5">MPPSC Law Officer Recruitment 2026 – Apply Online for 1 Vacancy</span><span class="v g num">4 Nov 2026</span></a>
     </section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Jobs", "item": "https://sarkarichart.pages.dev/?cat=jobs"}, {"@type": "ListItem", "position": 3, "name": "RRC Northern Railway Scouts and Guides Recruitment 2026 – Apply Online", "item": "https://sarkarichart.pages.dev/notice/rrc-northern-railway-scouts-and-guides-recruitment-2026-apply-on/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "RRC Northern Railway Scouts and Guides Recruitment 2026 – Apply Online", "url": "https://sarkarichart.pages.dev/notice/rrc-northern-railway-scouts-and-guides-recruitment-2026-apply-on/", "inLanguage": ["en-IN", "hi-IN"], "description": "Railway Recruitment Cell (RRC), Northern Railway has issued Employment Notification No. RRC/NR 01/2026/S&G dated 04.11.2026 for recruitment against Scouts and Guides Quota for the year 2026-27. The recruitment is for Level 1 and Level 2 posts of the 7th CPC Pay Matrix in Northern Railway. Eligible and interested candidates should review the official notification for complete details on eligibility, criteria, and the application process.", "datePublished": "2026-11-04", "dateModified": "2026-11-05", "isBasedOn": "https://rrcnr.org/downloads/S&G_Quota_Notification_2026.pdf", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.pages.dev/notice/rrc-northern-railway-scouts-and-guides-recruitment-2026-apply-on/og.png", "about": {"@type": "GovernmentOrganization", "name": "Railway Recruitment Cell, Northern Railway (RRC NR)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the notification number for RRC Northern Railway Scouts & Guides Recruitment 2026?", "acceptedAnswer": {"@type": "Answer", "text": "The notification number is RRC/NR 01/2026/S&G dated 04/11/2026."}}, {"@type": "Question", "name": "Which pay levels are applicable for this recruitment?", "acceptedAnswer": {"@type": "Answer", "text": "Level 1 and Level 2 of the Pay Matrix 7th CPC are applicable."}}, {"@type": "Question", "name": "Where can I read the official notification?", "acceptedAnswer": {"@type": "Answer", "text": "You can read the official notification on the RRC Northern Railway official website or via the provided notification link."}}]}]</script>
     <details class="hidet" lang="hi">
@@ -520,6 +540,7 @@ html[lang="hi"] .hidet { display: none; }
       gSel: "Selection process",
       gSelV: "Written Test → Certificates Verification",
       metaV: "Updated 5 Nov 2026 · Source: rrcnr.org",
+      exJump: "1 more update for RRC Northern Railway Scouts and Guides 2026 ↓",
       aboutH: "About this notice",
       intro: "Railway Recruitment Cell (RRC), Northern Railway has issued Employment Notification No. RRC/NR 01/2026/S&G dated 04.11.2026 for recruitment against Scouts and Guides Quota for the year 2026-27. The recruitment is for Level 1 and Level 2 posts of the 7th CPC Pay Matrix in Northern Railway. Eligible and interested candidates should review the official notification for complete details on eligibility, criteria, and the application process.",
       whoH: "Who should read this",
@@ -568,13 +589,15 @@ html[lang="hi"] .hidet { display: none; }
       chkH0: "Read the official notification RRC/NR 01/2026/S&G thoroughly.",
       chkH1: "Keep all required Scouts and Guides certificates ready.",
       tocH: "On this page",
+      exH: "All updates for RRC Northern Railway Scouts and Guides 2026",
+      ex0: "RRC Northern Railway Scouts & Guides Recruitment 2026 – Apply Online",
+      exs0: "Recruitment",
       relH: "More notices",
       rel0: "RRC Northern Railway Cultural Quota Recruitment 2026",
       rel1: "RRC Northern Railway Level 1 Debarred List 2026 – CEN 08/2024 Notice",
       rel2: "RRC Northern Railway ALP Technician GDCE Re-examination Notice 2026 – Willingness Link",
       rel3: "RRB CEN 08/2024 Document Verification Upload Instructions",
       rel4: "RRC Northern Railway Level 1 DV Schedule 2026 – Notice Out for 4,749 Posts",
-      rel5: "MPPSC Law Officer Recruitment 2026 – Apply Online for 1 Vacancy",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -612,6 +635,7 @@ html[lang="hi"] .hidet { display: none; }
       gSel: "चयन प्रक्रिया",
       gSelV: "लिखित परीक्षा → प्रमाण पत्र सत्यापन",
       metaV: "अपडेट 5 नवंबर 2026 · स्रोत: rrcnr.org",
+      exJump: "आरआरसी नॉर्दर्न रेलवे स्काउट्स एंड गाइड्स 2026 के 1 और अपडेट ↓",
       aboutH: "इस सूचना के बारे में",
       intro: "रेलवे भर्ती प्रकोष्ठ (आरआरसी), नॉर्दन रेलवे ने वर्ष 2026-27 के लिए स्काउट्स एंड गाइड्स कोटा के तहत भर्ती के लिए रोजगार अधिसूचना संख्या RRC/NR 01/2026/S&G दिनांक 04.11.2026 जारी की है। यह भर्ती नॉर्दन रेलवे में 7वें सीपीसी पे मैट्रिक्स के लेवल 1 और लेवल 2 के पदों के लिए है। योग्य और इच्छुक उम्मीदवार पात्रता, मानदंडों और आवेदन प्रक्रिया के पूर्ण विवरण के लिए आधिकारिक अधिसूचना की जांच करें।",
       whoH: "यह किसके लिए है",
@@ -660,13 +684,15 @@ html[lang="hi"] .hidet { display: none; }
       chkH0: "आधिकारिक अधिसूचना RRC/NR 01/2026/S&G को अच्छी तरह पढ़ें।",
       chkH1: "सभी आवश्यक स्काउट्स और गाइड्स प्रमाण पत्र तैयार रखें।",
       tocH: "इस पेज पर",
+      exH: "आरआरसी नॉर्दर्न रेलवे स्काउट्स एंड गाइड्स 2026 के सभी अपडेट",
+      ex0: "आरआरसी नॉर्दन रेलवे स्काउट्स एंड गाइड्स भर्ती 2026 – ऑनलाइन आवेदन",
+      exs0: "भर्ती",
       relH: "और सूचनाएँ",
       rel0: "आरआरसी नॉर्दन रेलवे सांस्कृतिक कोटा भर्ती 2026",
       rel1: "आरआरसी उत्तर रेलवे लेवल 1 निष्कासित सूची 2026 – CEN 08/2024 नोटिस",
       rel2: "आरआरसी नॉर्दर्न रेलवे एएलपी टेक्निशियन जीडीसीई पुनः परीक्षा नोटिस 2026 – सहमति लिंक",
       rel3: "रेलवे भर्ती केंद्रीय रोजगार सूचना 08/2024 दस्तावेज सत्यापन अपलोड निर्देश",
       rel4: "आरआरसी उत्तरी रेलवे लेवल 1 दस्तावेज़ सत्यापन अनुसूची 2026 – 4,749 पदों के लिए नोटिस जारी",
-      rel5: "MPPSC विधि अधिकारी भर्ती 2026 – 1 पद के लिए ऑनलाइन आवेदन करें",
     },
   };
   let lang = "en";
@@ -751,5 +777,15 @@ html[lang="hi"] .hidet { display: none; }
 <button type="button" class="totop" id="totop" aria-label="Back to top" title="Back to top"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
 <script>(function(){var b=document.getElementById("totop"),hi=document.documentElement.lang==="hi";function lab(){var h=document.documentElement.lang==="hi";b.setAttribute("aria-label",h?"ऊपर जाएँ":"Back to top");b.title=h?"ऊपर जाएँ":"Back to top";}function f(){b.classList.toggle("on",scrollY>innerHeight*0.8);}addEventListener("scroll",f,{passive:true});f();new MutationObserver(lab).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});lab();b.addEventListener("click",function(){var still=matchMedia("(prefers-reduced-motion: reduce)").matches;scrollTo({top:0,behavior:still?"auto":"smooth"});});})();</script>
 <script src="/elig.js" defer></script>
+<a class="fback" id="fback" href="/" data-t-aria="allNotices" aria-label="All notices"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6C15 6 9 10.4189 9 12C9 13.5812 15 18 15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<script>(function(){
+  // Phones: a round glass back button stays in the top corner once the page header has scrolled away.
+  var b=document.getElementById("fback"),h=document.querySelector("header.top");
+  if(h&&"IntersectionObserver"in window)new IntersectionObserver(function(e){b.classList.toggle("on",!e[0].isIntersecting)}).observe(h);
+  b.addEventListener("click",function(ev){
+    // came from our own list: go back so the list keeps its place; otherwise open the home page
+    try{var r=document.referrer&&new URL(document.referrer);if(r&&r.origin===location.origin&&history.length>1){ev.preventDefault();history.back();}}catch(e){}
+  });
+})();</script>
 </body>
 </html>

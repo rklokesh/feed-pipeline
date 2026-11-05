@@ -270,6 +270,23 @@ html[lang="hi"] .hidet { display: none; }
   .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
   .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 }
+/* Floating back button (phones only): round frosted glass, iOS-style chevron (Hugeicons arrow-left-01, stroke rounded) */
+.fback { display: none; }
+@media (max-width: 640px) {
+  .fback { display: grid; place-items: center; position: fixed; z-index: 40; width: 44px; height: 44px; border-radius: 50%;
+    top: calc(env(safe-area-inset-top, 0px) + 12px); right: max(12px, env(safe-area-inset-right, 0px));
+    color: var(--ink); background: color-mix(in srgb, var(--page) 55%, transparent);
+    -webkit-backdrop-filter: blur(18px) saturate(180%); backdrop-filter: blur(18px) saturate(180%);
+    border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+    box-shadow: 0 4px 18px color-mix(in srgb, #000 14%, transparent), inset 0 1px 0 color-mix(in srgb, #fff 45%, transparent);
+    opacity: 0; transform: scale(.85); pointer-events: none; transition: opacity .2s ease, transform .2s ease; }
+  .fback.on { opacity: 1; transform: none; pointer-events: auto; }
+  .fback:active { transform: scale(.92); }
+  .fback svg { margin-left: -2px; }
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .fback { background: var(--soft); } }
+@media (prefers-reduced-motion: reduce) { .fback { transition: none; } }
+@media print { .fback { display: none !important; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -734,5 +751,15 @@ html[lang="hi"] .hidet { display: none; }
 <button type="button" class="totop" id="totop" aria-label="Back to top" title="Back to top"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
 <script>(function(){var b=document.getElementById("totop"),hi=document.documentElement.lang==="hi";function lab(){var h=document.documentElement.lang==="hi";b.setAttribute("aria-label",h?"ऊपर जाएँ":"Back to top");b.title=h?"ऊपर जाएँ":"Back to top";}function f(){b.classList.toggle("on",scrollY>innerHeight*0.8);}addEventListener("scroll",f,{passive:true});f();new MutationObserver(lab).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});lab();b.addEventListener("click",function(){var still=matchMedia("(prefers-reduced-motion: reduce)").matches;scrollTo({top:0,behavior:still?"auto":"smooth"});});})();</script>
 <script src="/elig.js" defer></script>
+<a class="fback" id="fback" href="/" data-t-aria="allNotices" aria-label="All notices"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6C15 6 9 10.4189 9 12C9 13.5812 15 18 15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<script>(function(){
+  // Phones: a round glass back button stays in the top corner once the page header has scrolled away.
+  var b=document.getElementById("fback"),h=document.querySelector("header.top");
+  if(h&&"IntersectionObserver"in window)new IntersectionObserver(function(e){b.classList.toggle("on",!e[0].isIntersecting)}).observe(h);
+  b.addEventListener("click",function(ev){
+    // came from our own list: go back so the list keeps its place; otherwise open the home page
+    try{var r=document.referrer&&new URL(document.referrer);if(r&&r.origin===location.origin&&history.length>1){ev.preventDefault();history.back();}}catch(e){}
+  });
+})();</script>
 </body>
 </html>

@@ -270,6 +270,23 @@ html[lang="hi"] .hidet { display: none; }
   .top .logo img, .top .logo .mark { width: 92px; height: 93px; }
   .hback span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 }
+/* Floating back button (phones only): round frosted glass, iOS-style chevron (Hugeicons arrow-left-01, stroke rounded) */
+.fback { display: none; }
+@media (max-width: 640px) {
+  .fback { display: grid; place-items: center; position: fixed; z-index: 40; width: 44px; height: 44px; border-radius: 50%;
+    top: calc(env(safe-area-inset-top, 0px) + 12px); right: max(12px, env(safe-area-inset-right, 0px));
+    color: var(--ink); background: color-mix(in srgb, var(--page) 55%, transparent);
+    -webkit-backdrop-filter: blur(18px) saturate(180%); backdrop-filter: blur(18px) saturate(180%);
+    border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+    box-shadow: 0 4px 18px color-mix(in srgb, #000 14%, transparent), inset 0 1px 0 color-mix(in srgb, #fff 45%, transparent);
+    opacity: 0; transform: scale(.85); pointer-events: none; transition: opacity .2s ease, transform .2s ease; }
+  .fback.on { opacity: 1; transform: none; pointer-events: auto; }
+  .fback:active { transform: scale(.92); }
+  .fback svg { margin-left: -2px; }
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .fback { background: var(--soft); } }
+@media (prefers-reduced-motion: reduce) { .fback { transition: none; } }
+@media print { .fback { display: none !important; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -413,7 +430,7 @@ html[lang="hi"] .hidet { display: none; }
       <a class="r" href="/notice/india-post-staff-car-driver-recruitment-2026/"><span data-t="rel2">India Post Staff Car Driver Recruitment 2026</span><span class="v g num">1 Aug 2026</span></a>
       <a class="r" href="/notice/rrc-northern-railway-scouts-and-guides-recruitment-2026-apply-on/"><span data-t="rel3">RRC Northern Railway Scouts and Guides Recruitment 2026 – Apply Online</span><span class="v g num">4 Nov 2026</span></a>
       <a class="r" href="/notice/mppsc-law-officer-recruitment-2026-apply-online-for-1-vacancy/"><span data-t="rel4">MPPSC Law Officer Recruitment 2026 – Apply Online for 1 Vacancy</span><span class="v g num">4 Nov 2026</span></a>
-      <a class="r" href="/notice/rrc-northern-railway-cultural-quota-recruitment-2026/"><span data-t="rel5">RRC Northern Railway Cultural Quota Recruitment 2026</span><span class="v g num">4 Nov 2026</span></a>
+      <a class="r" href="/notice/rrc-northern-railway-scouts-guides-recruitment-2026-apply-online/"><span data-t="rel5">RRC Northern Railway Scouts &amp; Guides Recruitment 2026 – Apply Online</span><span class="v g num">4 Nov 2026</span></a>
     </section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Jobs", "item": "https://sarkarichart.pages.dev/?cat=jobs"}, {"@type": "ListItem", "position": 3, "name": "India Post MMS Kolkata Skilled Artisan Recruitment 2026 – Apply for 19 Posts", "item": "https://sarkarichart.pages.dev/notice/india-post-mms-kolkata-skilled-artisan-recruitment-2026-apply-fo/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "India Post MMS Kolkata Skilled Artisan Recruitment 2026 – Apply for 19 Posts", "url": "https://sarkarichart.pages.dev/notice/india-post-mms-kolkata-skilled-artisan-recruitment-2026-apply-fo/", "inLanguage": ["en-IN", "hi-IN"], "description": "India Post, Mail Motor Services (MMS) Kolkata has released a notification for the direct recruitment of Skilled Artisan (Tradesmen) posts for the West Bengal Circle, totaling 19 vacancies. This notification acts as a corrigendum to previous notices. Eligible and interested candidates can send their offline applications in the prescribed format through Speed Post only by 30 November 2026 up to 17:00 hours. The selection will be based on a competitive trade test. Candidates should ensure they meet all educational, age, and trade requirements before applying.", "datePublished": "2026-10-29", "dateModified": "2026-10-30", "isBasedOn": "https://www.indiapost.gov.in/api/documents/file/10391xe2ox8w0is613k9jr369dy34fsw0s5ca3h16z08vuz04nku0gw9f35snp", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.pages.dev/notice/india-post-mms-kolkata-skilled-artisan-recruitment-2026-apply-fo/og.png", "about": {"@type": "GovernmentOrganization", "name": "India Post, Mail Motor Services Kolkata (Department of Posts)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the last date to apply for India Post MMS Kolkata Skilled Artisan Recruitment 2026?", "acceptedAnswer": {"@type": "Answer", "text": "The last date to receive applications is 30 November 2026 up to 17:00 hours."}}, {"@type": "Question", "name": "How many total vacancies are available?", "acceptedAnswer": {"@type": "Answer", "text": "There are a total of 19 vacancies available across various trades."}}, {"@type": "Question", "name": "What is the mode of application?", "acceptedAnswer": {"@type": "Answer", "text": "Applications must be sent offline through Speed Post only."}}, {"@type": "Question", "name": "What is the educational qualification required?", "acceptedAnswer": {"@type": "Answer", "text": "Candidates need an ITI certificate in the respective trade OR 8th standard pass with one year of experience in the respective trade."}}, {"@type": "Question", "name": "What is the age limit for this recruitment?", "acceptedAnswer": {"@type": "Answer", "text": "The age limit is 18 to 30 years as on 01.07.2018, with relaxations for reserved categories as per rules."}}, {"@type": "Question", "name": "Where should the application be sent?", "acceptedAnswer": {"@type": "Answer", "text": "Applications should be sent to 'The Senior Manager, Mail Motor Services, 139, Beleghata Road, Kolkata-700015'."}}]}, {"@context": "https://schema.org", "@type": "JobPosting", "title": "India Post MMS Kolkata Skilled Artisan Recruitment 2026 – Apply for 19 Posts", "description": "<p>India Post, Mail Motor Services (MMS) Kolkata has released a notification for the direct recruitment of Skilled Artisan (Tradesmen) posts for the West Bengal Circle, totaling 19 vacancies. This notification acts as a corrigendum to previous notices. Eligible and interested candidates can send their offline applications in the prescribed format through Speed Post only by 30 November 2026 up to 17:00 hours. The selection will be based on a competitive trade test. Candidates should ensure they meet all educational, age, and trade requirements before applying.<\/p>", "datePosted": "2026-10-29", "validThrough": "2026-11-30T23:59:59+05:30", "employmentType": "FULL_TIME", "hiringOrganization": {"@type": "Organization", "name": "India Post, Mail Motor Services Kolkata (Department of Posts)", "sameAs": "https://www.indiapost.gov.in"}, "jobLocation": {"@type": "Place", "address": {"@type": "PostalAddress", "addressCountry": "IN"}}, "applicantLocationRequirements": {"@type": "Country", "name": "India"}, "directApply": false, "url": "https://sarkarichart.pages.dev/notice/india-post-mms-kolkata-skilled-artisan-recruitment-2026-apply-fo/", "totalJobOpenings": 19}]</script>
     <details class="hidet" lang="hi">
@@ -704,7 +721,7 @@ html[lang="hi"] .hidet { display: none; }
       rel2: "India Post Staff Car Driver Recruitment 2026",
       rel3: "RRC Northern Railway Scouts and Guides Recruitment 2026 – Apply Online",
       rel4: "MPPSC Law Officer Recruitment 2026 – Apply Online for 1 Vacancy",
-      rel5: "RRC Northern Railway Cultural Quota Recruitment 2026",
+      rel5: "RRC Northern Railway Scouts & Guides Recruitment 2026 – Apply Online",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -865,7 +882,7 @@ html[lang="hi"] .hidet { display: none; }
       rel2: "भारतीय डाक स्टाफ कार चालक भर्ती 2026",
       rel3: "आरआरसी नॉर्दन रेलवे स्काउट्स एंड गाइड्स भर्ती 2026 – ऑनलाइन आवेदन",
       rel4: "MPPSC विधि अधिकारी भर्ती 2026 – 1 पद के लिए ऑनलाइन आवेदन करें",
-      rel5: "आरआरसी नॉर्दन रेलवे सांस्कृतिक कोटा भर्ती 2026",
+      rel5: "आरआरसी नॉर्दन रेलवे स्काउट्स एंड गाइड्स भर्ती 2026 – ऑनलाइन आवेदन",
     },
   };
   let lang = "en";
@@ -950,5 +967,15 @@ html[lang="hi"] .hidet { display: none; }
 <button type="button" class="totop" id="totop" aria-label="Back to top" title="Back to top"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
 <script>(function(){var b=document.getElementById("totop"),hi=document.documentElement.lang==="hi";function lab(){var h=document.documentElement.lang==="hi";b.setAttribute("aria-label",h?"ऊपर जाएँ":"Back to top");b.title=h?"ऊपर जाएँ":"Back to top";}function f(){b.classList.toggle("on",scrollY>innerHeight*0.8);}addEventListener("scroll",f,{passive:true});f();new MutationObserver(lab).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});lab();b.addEventListener("click",function(){var still=matchMedia("(prefers-reduced-motion: reduce)").matches;scrollTo({top:0,behavior:still?"auto":"smooth"});});})();</script>
 <script src="/elig.js" defer></script>
+<a class="fback" id="fback" href="/" data-t-aria="allNotices" aria-label="All notices"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6C15 6 9 10.4189 9 12C9 13.5812 15 18 15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<script>(function(){
+  // Phones: a round glass back button stays in the top corner once the page header has scrolled away.
+  var b=document.getElementById("fback"),h=document.querySelector("header.top");
+  if(h&&"IntersectionObserver"in window)new IntersectionObserver(function(e){b.classList.toggle("on",!e[0].isIntersecting)}).observe(h);
+  b.addEventListener("click",function(ev){
+    // came from our own list: go back so the list keeps its place; otherwise open the home page
+    try{var r=document.referrer&&new URL(document.referrer);if(r&&r.origin===location.origin&&history.length>1){ev.preventDefault();history.back();}}catch(e){}
+  });
+})();</script>
 </body>
 </html>
