@@ -1,0 +1,27 @@
+{
+  "board_url": "https://ssc.gov.in/home/notice-board",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "can be accessed through the website of the Commission (i.e. https://ssc.gov.in). The candidates may log in by using their Registration Number and Password dur",
+      "source": "rule",
+      "value": "https://ssc.gov.in"
+    }
+  },
+  "first_seen": "2026-11-05T06:34:44+00:00",
+  "id": "7324ce68f54d",
+  "kind": "answer_key",
+  "org": "SSC",
+  "pdf": {
+    "bytes": 267025,
+    "pages": 2,
+    "sha256": "ace3291a6c175b9a30db4af0e85567cc854b3fbcd9b025caaf51399b2722bd64",
+    "text_kind": "text"
+  },
+  "source_id": "ssc-notice-board",
+  "status": "pending_review",
+  "title": "Combined Graduate Level Examination, 2026 (Tier-I):Uploading of Candidate’s Response Sheet(s) along with Tentative Answer Keys and inviting challenges thereon",
+  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_04112026.pdf"
+}

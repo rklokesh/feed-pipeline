@@ -1,0 +1,33 @@
+{
+  "board_url": "https://www.upsc.gov.in/whats-new",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "PROSECUTION, DEPARTMENT OF HOME, GOVT. OF NCT OF DELHI VIDE ADVT. NO. 02/2021 AND VACANCY NO. 21010211223. IN COMPLIANCE OF THE HON’BLE HIGH COURT OF DELHI’S ORDER DT. 06-04-2026, IN WRI",
+      "source": "rule",
+      "value": "02/2021 AND VACANCY NO. 21010211223"
+    },
+    "total_vacancies": {
+      "evidence": "I-110 069 NOTICE UNION PUBLIC SERVICE COMMISSION ADVERTISED 80 POSTS OF ASSISTANT PUBLIC PROSECUTOR IN DIRECTORATE OF PROSECUTION, DEPARTMENT OF HOM",
+      "source": "rule",
+      "value": 80
+    }
+  },
+  "first_seen": "2026-11-05T06:28:53+00:00",
+  "id": "7a4066623aa9",
+  "kind": "result",
+  "org": "UPSC",
+  "pdf": {
+    "bytes": 618627,
+    "pages": 3,
+    "sha256": "c65b4431189b5e9648db7f96d85532781752ac868ce73e5f125d825e77bb342c",
+    "text_kind": "text",
+    "via": "https://www.upsc.gov.in/sites/default/files/RT-AdddnlFR-80-AsstPublProseGNCTD-Engl-041126.pdf"
+  },
+  "source_id": "upsc-whats-new",
+  "status": "pending_review",
+  "title": "Final Result: 80 Posts of Assistant Public Prosecutor, GNCTD",
+  "url": "https://www.upsc.gov.in/whats-new/80 Posts of Assistant Public Prosecutor, GNCTD/Final Result"
+}
