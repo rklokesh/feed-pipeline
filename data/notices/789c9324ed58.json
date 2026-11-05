@@ -1,16 +1,22 @@
 {
   "baseline_sample": true,
   "board_url": "https://bsf.mha.gov.in/announcement.html?category=Vacancies",
-  "duplicate_of": "789c9324ed58",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest:429"
+  },
   "fields": {},
-  "first_seen": "2026-11-05T19:20:15+00:00",
+  "first_seen": "2026-11-05T19:56:51+00:00",
   "id": "789c9324ed58",
-  "ignored_reason": "menu PDF / no title (fixed 5 Nov)",
-  "kind": "other",
+  "kind": "notification",
   "org": "BSF",
-  "pdf": {},
+  "pdf": {
+    "bytes": 432335,
+    "pages": 1,
+    "sha256": "d97985e84f29611be7944da889e928024cb2b2fa4f091592d389f6abd2621013",
+    "text_kind": "text"
+  },
   "source_id": "bsf-vacancies",
-  "status": "ignored",
-  "title": "Download",
+  "status": "pending_review",
+  "title": "Title: //NOTICE// RECRUITMENT FOR THE POST OF CONSTABLE (TRADESMAN) IN BSF - 2024 &ampamp 25 REGARDING WRITTEN EXAMINATION (CBT) Category: Vacancies Posted Date: 14.10.2026",
   "url": "https://d3t79nicn48uzj.cloudfront.net/bsf/custom/1791964439.pdf"
 }
