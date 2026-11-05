@@ -121,6 +121,10 @@ def build():
               "org": n.get("org"), "posted": posted, "publishedAt": pub, "url": n.get("url"), "id": n["id"]}
         if n.get("slug") and (ROOT / "site" / "notice" / n["slug"] / "index.html").exists():
             it["url"], it["page"] = f"/notice/{n['slug']}/", True   # our own clean page (with PDF)
+        else:
+            # no page yet (the AI could not write it this run): stay off the list until it exists, so a row never
+            # dumps a reader on a raw board PDF (some, like RRB's, will not even open on iPhone)
+            continue
         if it["type"] == "Job" and c.get("last_date"):
             it["last"] = c["last_date"]
         sid = n.get("source_id") or ""
