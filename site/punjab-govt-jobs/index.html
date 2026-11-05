@@ -408,6 +408,21 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   html.v2[lang="hi"] #lang::before { content: ""; width: 22px; height: 22px; transform: none; background: currentColor !important;
     -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'><path d='M6 19.5L12 4.5L18 19.5M8.4 13.8H15.6' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'/></svg>") center / contain no-repeat !important; mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'><path d='M6 19.5L12 4.5L18 19.5M8.4 13.8H15.6' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'/></svg>") center / contain no-repeat !important; }   /* drawn, not typed: centres the same on every phone */
 }
+@media (max-width: 640px) {
+  /* iOS guidance: 44pt touch targets, softer shadow (depth comes from the glass edge, not a heavy drop shadow) */
+  html.v2 .top .nav-r { padding: 2px; }
+  html.v2 .top .nav-r button { height: 44px !important; }
+  html.v2 .top .nav-r, html.v2 .fback { box-shadow: 0 6px 20px -8px color-mix(in srgb, #000 20%, transparent),
+      inset 0 1px 1px color-mix(in srgb, #fff 90%, transparent), inset 0 -1px 2px color-mix(in srgb, #000 5%, transparent); }
+}
+/* Reduce Transparency: solid controls instead of glass */
+@media (max-width: 640px) and (prefers-reduced-transparency: reduce) {
+  html.v2 .top, html.v2 .top .nav-r, html.v2 .fback { background: var(--page) !important; -webkit-backdrop-filter: none !important; backdrop-filter: none !important; }
+}
+/* Increase Contrast: clear edges on the floating controls */
+@media (max-width: 640px) and (prefers-contrast: more) {
+  html.v2 .top .nav-r, html.v2 .fback { border: 1.5px solid var(--ink) !important; background: var(--page) !important; }
+}
 </style>
 <script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */
 try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")==="1")document.documentElement.classList.add("v2")}catch(e){}</script>
