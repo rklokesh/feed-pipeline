@@ -456,8 +456,7 @@ html[lang="hi"] .hidet { display: none; }
   html.v2.bar-compact .top .nav-r, html.v2.bar-compact .fback { transform: none; }
 }
 </style>
-<script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */
-try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")==="1")document.documentElement.classList.add("v2")}catch(e){}</script>
+<script>document.documentElement.classList.add("v2");try{localStorage.removeItem("sc-v2")}catch(e){}</script>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
 </head>

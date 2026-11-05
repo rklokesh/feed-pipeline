@@ -471,8 +471,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   html.v2.bar-compact .top:has(> .g) .logo img, html.v2.bar-compact .top:has(> .g) .logo .mark { width: 40px; height: 40px; }
 }
 </style>
-<script>/* Phone design preview: ?v2 turns the app-style phone design on (remembered on this device), ?v2=0 turns it off */
-try{var q=new URLSearchParams(location.search);if(q.has("v2"))localStorage.setItem("sc-v2",q.get("v2")==="0"?"0":"1");if(localStorage.getItem("sc-v2")!=="0")document.documentElement.classList.add("v2")}catch(e){document.documentElement.classList.add("v2")}</script>
+<script>document.documentElement.classList.add("v2");try{localStorage.removeItem("sc-v2")}catch(e){}</script>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "SarkariChart", "alternateName": "सरकारी चार्ट", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png", "sameAs": ["https://t.me/sarkarichart"], "description": "Govt jobs, admit cards, results and answer keys from official notices, in English and Hindi."}, {"@context": "https://schema.org", "@type": "WebSite", "name": "SarkariChart", "alternateName": "सरकारी चार्ट", "url": "https://sarkarichart.pages.dev/", "inLanguage": ["en-IN", "hi-IN"], "potentialAction": {"@type": "SearchAction", "target": "https://sarkarichart.pages.dev/?q={search_term_string}", "query-input": "required name=search_term_string"}}]</script>
