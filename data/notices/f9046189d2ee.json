@@ -3,16 +3,16 @@
   "board_url": "https://rpsc.rajasthan.gov.in/",
   "card": {
     "confidence": "high",
-    "exam_date": "2026-10-23",
+    "exam_date": "2026-03-10",
     "last_date": null,
     "list": true,
-    "posts": "Senior Scientific Officer (Chemistry Division)",
+    "posts": "Senior Scientific Officer",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
-    "summary_en": "Rajasthan Public Service Commission has released the question paper for Senior Scientific Officer 2025 Chemistry Division examination held on 23 October 2026.",
-    "summary_hi": "राजस्थान लोक सेवा आयोग ने 23 अक्टूबर 2026 को आयोजित सीनियर साइंटिफिक ऑफिसर 2025 रसायन विज्ञान परीक्षा का प्रश्न पत्र जारी कर दिया है।",
-    "title_en": "RPSC Senior Scientific Officer Question Paper 2025 Chemistry",
-    "title_hi": "आरपीएससी सीनियर साइंटिफिक ऑफिसर प्रश्न पत्र 2025 रसायन विज्ञान",
+    "summary_en": "Download the question paper for RPSC Senior Scientific Officer 2025 Chemistry Division examination.",
+    "summary_hi": "आरपीएससी सीनियर साइंटिफिक ऑफिसर 2025 रसायन विज्ञान संभाग परीक्षा के लिए प्रश्न पत्र डाउनलोड करें।",
+    "title_en": "RPSC Senior Scientific Officer Exam 2025 Chemistry Question Paper",
+    "title_hi": "आरपीएससी सीनियर साइंटिफिक ऑफिसर परीक्षा 2025 रसायन विज्ञान प्रश्न पत्र",
     "type": "Answer key",
     "vacancies": null
   },
@@ -28,19 +28,17 @@
   "fields": {},
   "first_seen": "2026-10-23T10:03:34+00:00",
   "id": "f9046189d2ee",
-  "issue": 1047,
+  "issue": 1068,
   "issue_tidy": true,
   "kind": "other",
   "notice_date": "2026-10-23",
   "org": "RPSC",
   "page": {
     "after_en": [
-      "Release of official answer key and inviting objections",
-      "Declaration of results based on performance"
+      "Release of official answer key and result based on the written examination."
     ],
     "after_hi": [
-      "आधिकारिक उत्तर कुंजी जारी करना और आपत्तियां आमंत्रित करना",
-      "प्रदर्शन के आधार पर परिणाम घोषित करना"
+      "लिखित परीक्षा के आधार पर आधिकारिक उत्तर कुंजी और परिणाम जारी करना।"
     ],
     "age": [],
     "apply_start": null,
@@ -48,12 +46,12 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Verify question booklet code and matching OMR details",
-      "Check all 150 printed questions and pages"
+      "Download the question paper PDF",
+      "Cross-verify answers with official answer keys"
     ],
     "checklist_hi": [
-      "प्रश्न पुस्तिका कोड और ओएमआर विवरण का मिलान करें",
-      "सभी 150 मुद्रित प्रश्नों और पृष्ठों की जाँच करें"
+      "प्रश्न पत्र पीडीएफ डाउनलोड करें",
+      "आधिकारिक उत्तर कुंजियों के साथ उत्तरों का मिलान करें"
     ],
     "conducted_by_en": "Rajasthan Public Service Commission (RPSC)",
     "conducted_by_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी)",
@@ -61,108 +59,97 @@
       {
         "label_en": "Exam Date",
         "label_hi": "परीक्षा तिथि",
-        "value_en": "23 Oct 2026",
-        "value_hi": "23 अक्टूबर 2026"
+        "value_en": "10 Mar 2026",
+        "value_hi": "10 मार्च 2026"
       }
     ],
     "documents_en": [],
     "documents_hi": [],
     "eligibility": [],
-    "exam_date": "2026-10-23",
+    "exam_date": "2026-03-10",
     "exam_pattern": [
       {
         "marks": "150",
-        "part_en": "Chemistry Division",
-        "part_hi": "रसायन विज्ञान खंड",
+        "part_en": "Chemistry Division Subject Questions",
+        "part_hi": "रसायन विज्ञान संभाग विषय प्रश्न",
         "questions": "150",
-        "time": "2.5 Hours"
+        "time": "02:30 Hours"
+      },
+      {
+        "marks": "1/3 mark deducted for wrong answers or if more than 10% questions have no bubbles darkened",
+        "part_en": "Negative marking",
+        "part_hi": "नकारात्मक अंकन",
+        "questions": "",
+        "time": ""
       }
     ],
     "explain": [
       {
-        "a_en": "It is the official question booklet containing all 150 objective questions asked in the Senior Scientific Officer Chemistry Division examination conducted by RPSC on 23 October 2026.",
-        "a_hi": "यह आधिकारिक प्रश्न पुस्तिका है जिसमें 23 अक्टूबर 2026 को आरपीएससी द्वारा आयोजित सीनियर साइंटिफिक ऑफिसर केमेस्ट्री डिविजन परीक्षा में पूछे गए सभी 150 वस्तुनिष्ठ प्रश्न शामिल हैं।",
-        "q_en": "What is the RPSC SSO Chemistry Question Paper?",
-        "q_hi": "आरपीएससी एसएसओ केमेस्ट्री प्रश्न पत्र क्या है?"
+        "a_en": "It is a recruitment examination conducted by the Rajasthan Public Service Commission to select candidates for the post of Senior Scientific Officer in various divisions such as Chemistry.",
+        "a_hi": "यह रसायन विज्ञान जैसे विभिन्न संभागों में सीनियर साइंटिफिक ऑफिसर के पद के लिए उम्मीदवारों का चयन करने के लिए राजस्थान लोक सेवा आयोग द्वारा आयोजित एक भर्ती परीक्षा है।",
+        "q_en": "What is the RPSC Senior Scientific Officer Exam?",
+        "q_hi": "आरपीएससी सीनियर साइंटिफिक ऑफिसर परीक्षा क्या है?"
       }
     ],
     "extra": [
       {
         "label_en": "Negative Marking",
         "label_hi": "नकारात्मक अंकन",
-        "value_en": "1/3rd of the marks for each wrong answer",
-        "value_hi": "प्रत्येक गलत उत्तर के लिए 1/3 अंक"
-      },
-      {
-        "label_en": "Number of Options",
-        "label_hi": "विकल्पों की संख्या",
-        "value_en": "5 options per question (including option 5 for unattempted)",
-        "value_hi": "प्रति प्रश्न 5 विकल्प (अनुत्तरित प्रश्न के लिए विकल्प 5 सहित)"
+        "value_en": "1/3rd of the mark for each wrong answer or unattempted question without bubble 5",
+        "value_hi": "प्रत्येक गलत उत्तर या बिना गोला 5 के अनुत्तरित प्रश्न के लिए अंक का 1/3 भाग"
       }
     ],
     "faq": [
       {
-        "a_en": "The exam was held on 23 October 2026.",
-        "a_hi": "परीक्षा 23 अक्टूबर 2026 को आयोजित की गई थी।",
-        "q_en": "When was the RPSC Senior Scientific Officer Chemistry exam held?",
-        "q_hi": "आरपीएससी सीनियर साइंटिफिक ऑफिसर केमेस्ट्री परीक्षा कब आयोजित की गई थी?"
+        "a_en": "The exam was conducted on 10 March 2026.",
+        "a_hi": "परीक्षा 10 मार्च 2026 को आयोजित की गई थी।",
+        "q_en": "When was the RPSC Senior Scientific Officer Chemistry Exam 2025 held?",
+        "q_hi": "आरपीएससी सीनियर साइंटिफिक ऑफिसर केमिस्ट्री परीक्षा 2025 कब आयोजित की गई थी?"
       },
       {
         "a_en": "There were 150 questions in the question booklet.",
         "a_hi": "प्रश्न पुस्तिका में 150 प्रश्न थे।",
-        "q_en": "How many questions were there in the RPSC SSO Chemistry paper?",
-        "q_hi": "आरपीएससी एसएसओ केमेस्ट्री पेपर में कितने प्रश्न थे?"
-      },
-      {
-        "a_en": "The paper code is 46.",
-        "a_hi": "पेपर कोड 46 है।",
-        "q_en": "What is the paper code for RPSC SSO Chemistry exam?",
-        "q_hi": "आरपीएससी एसएसओ केमेस्ट्री परीक्षा का पेपर कोड क्या है?"
-      },
-      {
-        "a_en": "Yes, 1/3rd of the marks for a question is deducted for a wrong answer or if more than one option is marked or if no circle is darkened for a question.",
-        "a_hi": "हाँ, गलत उत्तर के लिए या एक से अधिक विकल्प चुनने पर या कोई गोला न भरने पर प्रश्न के अंकों का 1/3 भाग काटा जाता है।",
-        "q_en": "Is there negative marking in RPSC SSO exam?",
-        "q_hi": "क्या आरपीएससी एसएसओ परीक्षा में नेगेटिव मार्किंग है?"
+        "q_en": "How many questions were there in the RPSC Senior Scientific Officer Chemistry question paper?",
+        "q_hi": "आरपीएससी सीनियर साइंटिफिक ऑफिसर केमिस्ट्री प्रश्न पत्र में कितने प्रश्न थे?"
       }
     ],
     "fees": [],
-    "h1_en": "RPSC Senior Scientific Officer Question Paper 2025 Chemistry",
-    "h1_hi": "आरपीएससी सीनियर साइंटिफिक ऑफिसर प्रश्न पत्र 2025 रसायन विज्ञान",
+    "h1_en": "RPSC Senior Scientific Officer Exam 2025 Chemistry Question Paper",
+    "h1_hi": "आरपीएससी सीनियर साइंटिफिक ऑफिसर परीक्षा 2025 रसायन विज्ञान प्रश्न पत्र",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official RPSC website.",
-      "Navigate to the Candidate Information or Previous Question Papers section.",
-      "Download the Senior Scientific Officer Chemistry Division question paper PDF."
+      "Visit the official RPSC website or use the direct link provided on this page.",
+      "Click on the question paper link for Senior Scientific Officer Chemistry Division 2025.",
+      "Download and save the PDF for reference."
     ],
     "how_hi": [
-      "आरपीएससी की आधिकारिक वेबसाइट पर जाएं।",
-      "अभ्यर्थी सूचना या पिछले प्रश्न पत्र अनुभाग पर जाएं।",
-      "सीनियर साइंटिफिक ऑफिसर केमेस्ट्री डिविजन प्रश्न पत्र पीडीएफ डाउनलोड करें।"
+      "आधिकारिक आरपीएससी वेबसाइट पर जाएं या इस पृष्ठ पर दिए गए सीधे लिंक का उपयोग करें।",
+      "सीनियर साइंटिफिक ऑफिसर केमिस्ट्री डिवीजन 2025 के लिए प्रश्न पत्र लिंक पर क्लिक करें।",
+      "संदर्भ के लिए पीडीएफ डाउनलोड करें और सहेजें।"
     ],
-    "intro_en": "The Rajasthan Public Service Commission (RPSC) has published the official question paper for the Senior Scientific Officer (Chemistry Division) recruitment examination 2025. The examination was conducted on 23 October 2026. The question booklet contains 150 multiple-choice questions carrying equal marks with paper code 46. Candidates preparing for or reviewing the exam can access the official question paper to verify questions, options, and marking schemes.",
-    "intro_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी) ने सीनियर साइंटिफिक ऑफिसर (केमेस्ट्री डिविजन) भर्ती परीक्षा 2025 के लिए आधिकारिक प्रश्न पत्र जारी कर दिया है। यह परीक्षा 23 अक्टूबर 2026 को आयोजित की गई थी। प्रश्न पुस्तिका में पेपर कोड 46 के साथ समान अंकों वाले 150 बहुविकल्पीय प्रश्न शामिल हैं।",
+    "intro_en": "The Rajasthan Public Service Commission (RPSC) has released the question paper for the Senior Scientific Officer 2025 Chemistry Division examination. The exam was conducted on 10 March 2026. Candidates who appeared for the exam or are preparing for future cycles can download the official question booklet containing 150 multiple-choice questions.",
+    "intro_hi": "राजस्थान लोक सेवा आयोग (आरपीएससी) ने सीनियर साइंटिफिक ऑफिसर 2025 रसायन विज्ञान संभाग परीक्षा के लिए प्रश्न पत्र जारी कर दिया है। परीक्षा 10 मार्च 2026 को आयोजित की गई थी। परीक्षा में शामिल होने वाले या आगामी परीक्षाओं की तैयारी करने वाले उम्मीदवार 150 बहुविकल्पीय प्रश्नों वाली आधिकारिक प्रश्न पुस्तिका डाउनलोड कर सकते हैं।",
     "last_date": null,
     "mistakes_en": [],
     "mistakes_hi": [],
     "not_en": [],
     "not_hi": [],
-    "notice_date": "2026-10-23",
+    "notice_date": null,
     "official_site": "https://rpsc.rajasthan.gov.in/",
     "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Exam Name",
-        "label_hi": "परीक्षा का नाम",
-        "value_en": "Senior Scientific Officer (Chemistry Division) - 2025",
-        "value_hi": "सीनियर साइंटिफिक ऑफिसर (केमेस्ट्री डिविजन) - 2025"
+        "label_en": "Post Name",
+        "label_hi": "पदों का नाम",
+        "value_en": "Senior Scientific Officer (Chemistry Division)",
+        "value_hi": "सीनियर साइंटिफिक ऑफिसर (रसायन विज्ञान संभाग)"
       },
       {
         "label_en": "Exam Date",
         "label_hi": "परीक्षा तिथि",
-        "value_en": "23 Oct 2026",
-        "value_hi": "23 अक्टूबर 2026"
+        "value_en": "10 Mar 2026",
+        "value_hi": "10 मार्च 2026"
       },
       {
         "label_en": "Paper Code",
@@ -183,8 +170,8 @@
         "value_hi": "150"
       },
       {
-        "label_en": "Exam Duration",
-        "label_hi": "परीक्षा अवधि",
+        "label_en": "Duration",
+        "label_hi": "अवधि",
         "value_en": "02:30 Hours + 10 Minutes Extra",
         "value_hi": "02:30 घंटे + 10 मिनट अतिरिक्त"
       }
@@ -200,21 +187,23 @@
       "headline_en": "Question Paper 2025",
       "headline_hi": "प्रश्न पत्र 2025",
       "kind": "answer",
-      "line_en": "SSO Chemistry Question Paper",
-      "line_hi": "एसएसओ केमेस्ट्री प्रश्न पत्र",
+      "line_en": "Senior Scientific Officer",
+      "line_hi": "सीनियर साइंटिफिक ऑफिसर",
       "posts": null
     },
-    "status_en": "Question paper released for exam held on 23 Oct 2026",
-    "status_hi": "23 अक्टूबर 2026 को आयोजित परीक्षा के लिए प्रश्न पत्र जारी",
-    "summary_en": "Rajasthan Public Service Commission has released the official question paper for the Senior Scientific Officer (Chemistry Division) Exam 2025 held on 23 October 2026. Candidates can check the exam questions, paper code 46, and examination instructions.",
-    "summary_hi": "राजस्थान लोक सेवा आयोग ने 23 अक्टूबर 2026 को आयोजित सीनियर साइंटिफिक ऑफिसर (केमेस्ट्री डिविजन) परीक्षा 2025 का आधिकारिक प्रश्न पत्र जारी कर दिया है। उम्मीदवार परीक्षा के प्रश्न, पेपर कोड 46 और निर्देश देख सकते हैं।",
+    "status_en": "Question paper released",
+    "status_hi": "प्रश्न पत्र जारी किया गया",
+    "summary_en": "Download the official question paper for the RPSC Senior Scientific Officer 2025 Chemistry Division examination held on 10 March 2026.",
+    "summary_hi": "10 मार्च 2026 को आयोजित आरपीएससी सीनियर साइंटिफिक ऑफिसर 2025 रसायन विज्ञान संभाग परीक्षा के लिए आधिकारिक प्रश्न पत्र डाउनलोड करें।",
     "vacancies": [],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the RPSC Senior Scientific Officer Chemistry exam 2025."
+      "Candidates who appeared for the RPSC Senior Scientific Officer 2025 Chemistry exam",
+      "Aspirants preparing for upcoming RPSC scientific examinations"
     ],
     "who_hi": [
-      "आरपीएससी सीनियर साइंटिफिक ऑफिसर केमेस्ट्री परीक्षा 2025 में शामिल होने वाले उम्मीदवार।"
+      "आरपीएससी सीनियर साइंटिफिक ऑफिसर 2025 रसायन विज्ञान परीक्षा में शामिल होने वाले उम्मीदवार",
+      "आगामी आरपीएससी वैज्ञानिक परीक्षाओं की तैयारी करने वाले अभ्यर्थी"
     ]
   },
   "pdf": {
@@ -223,12 +212,12 @@
     "sha256": "e3c66df40358a403a370fd22a43a9637ab76c637e9d2a802de15950a03a659dd",
     "text_kind": "ocr-legacy-font"
   },
-  "published_at": "2026-11-05T06:40:06Z",
+  "published_at": "2026-11-05T07:09:55Z",
   "qual": [
     "postgraduate"
   ],
   "rewrite": true,
-  "slug": "rpsc-senior-scientific-officer-question-paper-2025-chemistry",
+  "slug": "rpsc-senior-scientific-officer-exam-2025-chemistry-question-pape",
   "source_id": "rpsc-home",
   "status": "approved",
   "title": "23/10/2026 Question Paper for Senior Scientific Officer – 2025 (Chemistry Division)",
@@ -236,7 +225,7 @@
   "verify": {
     "at": "2026-11-05",
     "missing": [
-      "Exam date: 2026-10-23"
+      "Exam date: 2026-03-10"
     ],
     "tries": 1
   }

@@ -9,13 +9,14 @@
     "posts": "CEN-08/2024 Posts",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
-    "summary_en": "Northern Railway issued instructions for candidates to upload required documents on the OIRMS portal for CEN-08/2024 document verification.",
-    "summary_hi": "उत्तरी रेलवे ने केंद्रीय रोजगार सूचना 08 2024 के दस्तावेज़ सत्यापन हेतु ओआईआरएमएस पोर्टल पर आवश्यक दस्तावेज़ अपलोड करने के निर्देश जारी किए हैं।",
-    "title_en": "RRB CEN 08 2024 Document Verification Upload Instructions",
-    "title_hi": "रेलवे भर्ती केंद्रीय रोजगार सूचना 08 2024 दस्तावेज़ अपलोड निर्देश",
+    "summary_en": "Northern Railway has released instructions and guidelines for candidates to upload required documents on the OIRMS portal for CEN-08/2024 document verification.",
+    "summary_hi": "उत्तरी रेलवे ने केंद्रीय रोजगार सूचना 08/2024 के दस्तावेज सत्यापन हेतु ओआईआरएमएस पोर्टल पर आवश्यक दस्तावेज अपलोड करने के लिए निर्देश जारी किए हैं।",
+    "title_en": "RRB CEN 08/2024 Document Verification Upload Instructions",
+    "title_hi": "रेलवे भर्ती केंद्रीय रोजगार सूचना 08/2024 दस्तावेज सत्यापन अपलोड निर्देश",
     "type": "Update",
     "vacancies": null
   },
+  "editor_notes": [],
   "exam": {
     "key": "rrc-northern-railway-level-1-2024",
     "name_en": "RRC Northern Railway Level 1 2024",
@@ -27,23 +28,250 @@
   "fields": {},
   "first_seen": "2026-10-27T13:16:44+00:00",
   "id": "7050eedfe30d",
-  "issue": 1035,
+  "issue": 1056,
   "issue_tidy": true,
   "kind": "info",
+  "notice_date": "2026-10-26",
   "org": "RRC Northern Railway",
+  "page": {
+    "after_en": [
+      "Successful document verification on the portal and in person",
+      "Medical examination",
+      "Final empanelment and joining"
+    ],
+    "after_hi": [
+      "पोर्टल और व्यक्तिगत रूप से सफल दस्तावेज सत्यापन",
+      "चिकित्सा परीक्षण",
+      "अंतिम पैनल में चयन और नियुक्ति"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://oirms-ir.gov.in/rrbdv/",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Keep scanned copies of all certificates in English or Hindi (or translated versions)",
+      "Ensure separate PDF files are created as per instructions (e.g. 10th marksheet and certificate together)",
+      "Keep backups of all scanned documents in Google Drive",
+      "Complete uploads between 7 days prior to your DV date and the DV date itself"
+    ],
+    "checklist_hi": [
+      "सभी प्रमाण-पत्रों की स्कैन की गई प्रतियां अंग्रेजी या हिंदी में (या अनूदित संस्करण) रखें",
+      "सुनिश्चित करें कि निर्देशों के अनुसार अलग-अलग पीडीएफ फाइलें बनाई गई हैं (जैसे 10वीं की अंकतालिका और प्रमाण-पत्र एक साथ)",
+      "गूगल ड्राइव में सभी स्कैन किए गए दस्तावेजों का बैकअप रखें",
+      "अपनी डीवी तिथि से 7 दिन पहले और डीवी तिथि के बीच अपलोड पूरा करें"
+    ],
+    "conducted_by_en": "Railway Recruitment Cell, Northern Railway (RRC NR)",
+    "conducted_by_hi": "रेलवे भर्ती प्रकोष्ठ, उत्तरी रेलवे",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस तिथि",
+        "value_en": "26 Oct 2026",
+        "value_hi": "26 अक्टू 2026"
+      },
+      {
+        "label_en": "Portal Active Period",
+        "label_hi": "पोर्टल सक्रिय अवधि",
+        "value_en": "07 days prior to DV date till DV date",
+        "value_hi": "डीवी तिथि से 07 दिन पहले से डीवी तिथि तक"
+      }
+    ],
+    "documents_en": [
+      "Candidate's copy of e-call letters issued during CBT and PET in a single PDF file",
+      "Matriculation (10th) certificate and mark sheet in a single PDF file",
+      "Community Certificate (SC/ST/OBC/EWS/EX.SM) valid as on online application submission date and current valid certificate in a single PDF file",
+      "Affidavit if there is any discrepancy in spelling of candidate's name, father's name, mother's name or other documents",
+      "Disability certificate and Unique Disability ID Card (UDID) in a combined PDF file for Divyang candidates",
+      "Mark sheets and certificates related to educational/technical qualifications in a single PDF file",
+      "Additional documents if any under 'Additional Documents' category",
+      "Aadhaar card, passport size photograph, signature, and two identification marks (excluding moles)"
+    ],
+    "documents_hi": [
+      "सीबीटी और पीईटी के दौरान जारी ई-कॉल लेटर की प्रति एक ही पीडीएफ फाइल में",
+      "मैट्रिक (10वीं) प्रमाण-पत्र और अंकतालिका एक ही पीडीएफ फाइल में",
+      "ऑनलाइन आवेदन जमा करने की तिथि पर मान्य और वर्तमान वैध समुदाय प्रमाण-पत्र (एससी/एसटी/ओबीसी/ईडब्ल्यूएस/एक्स.एसएम) एक ही पीडीएफ फाइल में",
+      "उम्मीदवार के नाम, पिता के नाम, माता के नाम या अन्य दस्तावेजों में वर्तनी की विसंगति होने पर शपथ-पत्र",
+      "दिव्यांग उम्मीदवारों के लिए दिव्यांगता प्रमाण-पत्र और यूनिक डिसेबिलिटी आईडी कार्ड (यूडीआईडी) संयुक्त पीडीएफ फाइल में",
+      "शैक्षणिक/तकनीकी योग्यताओं से संबंधित अंकतालिकाएं और प्रमाण-पत्र एक पीडीएफ फाइल में",
+      "'अतिरिक्त दस्तावेज' श्रेणी के तहत कोई अन्य प्रमाण-पत्र",
+      "आधार कार्ड, पासपोर्ट आकार का फोटो, हस्ताक्षर और दो पहचान चिह्न (तिल/मस्से को छोड़कर)"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Language Requirement",
+        "label_hi": "भाषा आवश्यकता",
+        "value_en": "All certificates must be in English or Hindi, or self-attested translated versions must be provided.",
+        "value_hi": "सभी प्रमाण-पत्र केवल अंग्रेजी या हिंदी में होने चाहिए, या स्व-प्रमाणित अनूदित संस्करण प्रस्तुत किया जाना चाहिए।"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "The OIRMS portal is the official online platform where shortlisted candidates of CEN-08/2024 must upload their scanned educational certificates, identity proofs, photographs, and other required documents prior to their document verification appointment.",
+        "a_hi": "ओआईआरएमएस पोर्टल आधिकारिक ऑनलाइन मंच है जहां सीईएन-08/2024 के शॉर्टलिस्ट किए गए उम्मीदवारों को अपनी दस्तावेज सत्यापन नियुक्ति से पहले अपने स्कैन किए गए शैक्षणिक प्रमाण-पत्र, पहचान प्रमाण, फोटोग्राफ और अन्य आवश्यक दस्तावेज अपलोड करने होते हैं।",
+        "q_en": "What is the OIRMS portal for CEN-08/2024 document verification?",
+        "q_hi": "सीईएन-08/2024 दस्तावेज सत्यापन के लिए ओआईआरएमएस पोर्टल क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Portal Link",
+        "label_hi": "पोर्टल लिंक",
+        "value_en": "https://oirms-ir.gov.in/rrbdv/",
+        "value_hi": "https://oirms-ir.gov.in/rrbdv/"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The portal will be active for uploading required documents starting from 07 days prior to your document verification date up to your document verification date.",
+        "a_hi": "यह पोर्टल आपकी दस्तावेज सत्यापन तिथि से 07 दिन पहले से लेकर आपकी दस्तावेज सत्यापन तिथि तक आवश्यक दस्तावेज अपलोड करने के लिए सक्रिय रहेगा।",
+        "q_en": "When can I upload my documents on the OIRMS portal for CEN-08/2024?",
+        "q_hi": "मैं सीईएन-08/2024 के लिए ओआईआरएमएस पोर्टल पर अपने दस्तावेज कब अपलोड कर सकता हूं?"
+      },
+      {
+        "a_en": "Candidates can upload documents on the RRB Document Verification portal at https://oirms-ir.gov.in/rrbdv/.",
+        "a_hi": "उम्मीदवार आरआरबी दस्तावेज सत्यापन पोर्टल https://oirms-ir.gov.in/rrbdv/ पर दस्तावेज अपलोड कर सकते हैं।",
+        "q_en": "What is the official URL for document verification upload?",
+        "q_hi": "दस्तावेज सत्यापन अपलोड के लिए आधिकारिक यूआरएल क्या है?"
+      },
+      {
+        "a_en": "Candidates will first upload their Aadhaar card, passport size photograph, signature, and two identification marks.",
+        "a_hi": "उम्मीदवार सबसे पहले अपना आधार कार्ड, पासपोर्ट आकार का फोटो, हस्ताक्षर और दो पहचान चिह्न अपलोड करेंगे।",
+        "q_en": "What documents need to be uploaded first on the portal?",
+        "q_hi": "पोर्टल पर सबसे पहले कौन से दस्तावेज अपलोड करने होंगे?"
+      },
+      {
+        "a_en": "OBC and EWS candidates must combine their community certificate valid as on the online application submission date and the current valid certificate into a single PDF file.",
+        "a_hi": "ओबीसी और ईडब्ल्यूएस उम्मीदवारों को ऑनलाइन आवेदन जमा करने की तिथि पर मान्य समुदाय प्रमाण-पत्र और वर्तमान वैध प्रमाण-पत्र को एक ही पीडीएफ फाइल में संयुक्त करके अपलोड करना होगा।",
+        "q_en": "How should OBC and EWS certificates be uploaded?",
+        "q_hi": "ओबीसी और ईडब्ल्यूएस प्रमाण-पत्र कैसे अपलोड किए जाने चाहिए?"
+      },
+      {
+        "a_en": "If documents are not uploaded in the prescribed format given in CEN-08/2024, your candidature will be withheld and you will not be eligible for the medical exam.",
+        "a_hi": "यदि सीईएन-08/2024 में दिए गए निर्धारित प्रारूप में दस्तावेज अपलोड नहीं किए जाते हैं, तो आपकी उम्मीदवारी रोक दी जाएगी और आप चिकित्सा परीक्षण के पात्र नहीं होंगे।",
+        "q_en": "What happens if I do not upload documents in the prescribed format?",
+        "q_hi": "यदि मैं निर्धारित प्रारूप में दस्तावेज अपलोड नहीं करता हूं तो क्या होगा?"
+      },
+      {
+        "a_en": "All certificates should be in English or Hindi only. If not available in English or Hindi, a self-attested translated version must be submitted.",
+        "a_hi": "सभी प्रमाण-पत्र केवल अंग्रेजी या हिंदी में होने चाहिए। अंग्रेजी या हिंदी में उपलब्ध न होने की स्थिति में, स्व-प्रमाणित अनूदित संस्करण प्रस्तुत किया जाना चाहिए।",
+        "q_en": "Can certificates be in languages other than English or Hindi?",
+        "q_hi": "क्या प्रमाण-पत्र अंग्रेजी या हिंदी के अलावा अन्य भाषाओं में हो सकते हैं?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "RRB CEN 08/2024 Document Verification Upload Instructions",
+    "h1_hi": "रेलवे भर्ती केंद्रीय रोजगार सूचना 08/2024 दस्तावेज सत्यापन अपलोड निर्देश",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official RRB Document Verification portal at https://oirms-ir.gov.in/rrbdv/.",
+      "Read all instructions and FAQs carefully.",
+      "First upload your Aadhaar card, passport size photograph, signature, and two identification marks.",
+      "Upload other required documents in specified PDF formats as per instructions.",
+      "Keep all scanned copies safe in Google Drive as well."
+    ],
+    "how_hi": [
+      "आधिकारिक आरआरबी दस्तावेज सत्यापन पोर्टल https://oirms-ir.gov.in/rrbdv/ पर जाएं।",
+      "सभी निर्देशों और अक्सर पूछे जाने वाले प्रश्नों को ध्यान से पढ़ें।",
+      "सबसे पहले अपना आधार कार्ड, पासपोर्ट आकार का फोटो, हस्ताक्षर और दो पहचान चिह्न अपलोड करें।",
+      "निर्देशों के अनुसार अन्य आवश्यक दस्तावेज निर्दिष्ट पीडीएफ प्रारूप में अपलोड करें।",
+      "सभी स्कैन की गई प्रतियों को गूगल ड्राइव में भी सुरक्षित रखें।"
+    ],
+    "intro_en": "Railway Recruitment Cell (RRC) Northern Railway has issued Notice No. 8 containing important instructions for candidates appearing under CEN-08/2024. Candidates must upload clear and legible scanned images of their educational and technical certificates, NOCs, identification marks, passport-size photographs, and full signatures on the official OIRMS portal. The portal remains active for uploading documents starting from 7 days prior to the candidate's document verification date up to the date of document verification. Candidates must follow the prescribed formats strictly to avoid withholding of their candidature.",
+    "intro_hi": "रेलवे भर्ती प्रकोष्ठ (आरआरसी) उत्तरी रेलवे ने सीईएन-08/2024 के अंतर्गत आने वाले उम्मीदवारों के लिए महत्वपूर्ण निर्देश वाला नोटिस संख्या 8 जारी किया है। उम्मीदवारों को आधिकारिक ओआईआरएमएस पोर्टल पर अपने शैक्षिक और तकनीकी प्रमाण-पत्र, एनओसी, पहचान चिह्न, पासपोर्ट आकार के फोटो और पूर्ण हस्ताक्षर की स्पष्ट और सुपाठ्य स्कैन की गई छवियां अपलोड करनी होंगी। यह पोर्टल उम्मीदवार की दस्तावेज सत्यापन तिथि से 7 दिन पहले से लेकर दस्तावेज सत्यापन की तिथि तक दस्तावेज अपलोड करने के लिए सक्रिय रहेगा। उम्मीदवारी रोके जाने से बचने के लिए उम्मीदवारों को निर्धारित प्रारूपों का सख्ती से पालन करना चाहिए।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not upload documents in formats other than those prescribed in CEN-08/2024.",
+      "Do not forget to combine community certificates valid as on application date and current valid certificate into a single PDF file for OBC/EWS.",
+      "Avoid missing the upload window which opens only 7 days prior to your specific document verification date."
+    ],
+    "mistakes_hi": [
+      "सीईएन-08/2024 में निर्धारित प्रारूप के अलावा अन्य प्रारूपों में दस्तावेज अपलोड न करें।",
+      "ओबीसी/ईडब्ल्यूएस के लिए आवेदन तिथि पर मान्य और वर्तमान वैध समुदाय प्रमाण-पत्र को एक ही पीडीएफ फाइल में मिलाना न भूलें।",
+      "अपलोड विंडो से न चूकें जो आपकी विशिष्ट दस्तावेज सत्यापन तिथि से केवल 7 दिन पहले खुलती है।"
+    ],
+    "not_en": [
+      "Candidates who fail to upload documents in the prescribed format given in CEN-08/2024"
+    ],
+    "not_hi": [
+      "जो उम्मीदवार सीईएन-08/2024 में दिए गए निर्धारित प्रारूप में दस्तावेज अपलोड करने में विफल रहते हैं"
+    ],
+    "notice_date": "2026-10-26",
+    "official_site": "https://rrcnr.org/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Notice Number",
+        "label_hi": "नोटिस संख्या",
+        "value_en": "Notice No - 8",
+        "value_hi": "नोटिस संख्या - 8"
+      },
+      {
+        "label_en": "Recruitment",
+        "label_hi": "भर्ती",
+        "value_en": "CEN-08/2024",
+        "value_hi": "सीईएन-08/2024"
+      },
+      {
+        "label_en": "Upload Portal",
+        "label_hi": "अपलोड पोर्टल",
+        "value_en": "https://oirms-ir.gov.in/rrbdv/",
+        "value_hi": "https://oirms-ir.gov.in/rrbdv/"
+      },
+      {
+        "label_en": "Upload Window",
+        "label_hi": "अपलोड अवधि",
+        "value_en": "07 days prior to DV date till DV date",
+        "value_hi": "डीवी तिथि से 07 दिन पहले से डीवी तिथि तक"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "CBT & PET",
+      "Document Verification & Upload on OIRMS Portal",
+      "Medical Examination"
+    ],
+    "selection_hi": [
+      "सीबीटी और पीईटी",
+      "ओआईआरएमएस पोर्टल पर दस्तावेज सत्यापन और अपलोड",
+      "चिकित्सा परीक्षण"
+    ],
+    "share_card": {
+      "headline_en": "Instructions Released",
+      "headline_hi": "दस्तावेज अपलोड निर्देश",
+      "kind": "sched",
+      "line_en": "CEN-08/2024 DV Upload",
+      "line_hi": "सीईएन-08/2024 डीवी अपलोड",
+      "posts": null
+    },
+    "status_en": "Document verification upload instructions released",
+    "status_hi": "दस्तावेज सत्यापन अपलोड निर्देश जारी",
+    "summary_en": "Northern Railway has released instructions and guidelines for candidates to upload required documents on the OIRMS portal for CEN-08/2024 document verification.",
+    "summary_hi": "उत्तरी रेलवे ने केंद्रीय रोजगार सूचना 08/2024 के दस्तावेज सत्यापन हेतु ओआईआरएमएस पोर्टल पर आवश्यक दस्तावेज अपलोड करने के लिए निर्देश जारी किए हैं।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Candidates shortlisted for document verification under CEN-08/2024 by Northern Railway"
+    ],
+    "who_hi": [
+      "उत्तरी रेलवे द्वारा सीईएन-08/2024 के तहत दस्तावेज सत्यापन के लिए शॉर्टलिस्ट किए गए उम्मीदवार"
+    ]
+  },
   "pdf": {
     "bytes": 1733804,
     "pages": 2,
     "sha256": "20a3c84d682aa422410f99430b408e6582f21efc2b4d1a19602cf3fdcf3120dc",
     "text_kind": "ocr-legacy-font"
   },
-  "published_at": "2026-11-05T06:37:33Z",
+  "published_at": "2026-11-05T07:07:39Z",
   "qual": [
-    "10th",
-    "iti",
     "diploma",
     "graduate"
   ],
+  "slug": "rrb-cen-08-2024-document-verification-upload-instructions",
   "source_id": "rrc-nr",
   "status": "approved",
   "title": "27.10.2026 Kind Attention: Instructions to candidates to upload documents on OIRMS Portal against CEN-08/2024. Click here for Notice",

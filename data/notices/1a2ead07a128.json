@@ -1,19 +1,26 @@
 {
+  "auto_published": true,
   "board_url": "https://rrcnr.org/",
   "card": {
     "confidence": "high",
     "exam_date": null,
     "last_date": null,
-    "list": false,
-    "posts": "Level-1 Posts",
+    "list": true,
+    "posts": "Level-1",
     "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "Debarment list for specific candidates, not useful for general job aspirants",
-    "summary_en": "RRC Northern Railway has released a list of 71 candidates debarred from document verification and medical examination under CEN 08/2024.",
-    "summary_hi": "आरआरसी उत्तर रेलवे ने सीईएन 08/2024 के तहत दस्तावेज़ सत्यापन और चिकित्सा परीक्षा से वंचित 71 उम्मीदवारों की सूची जारी की है।",
-    "title_en": "RRC Northern Railway CEN-08/2024 Debarred Candidates Notice",
-    "title_hi": "आरआरसी उत्तर रेलवे सीईएन-08/2024 विवर्जित उम्मीदवार सूचना",
+    "skip_reason": "",
+    "summary_en": "RRC Northern Railway has released a notice regarding the debarment of 71 candidates from document verification and medical examination under CEN 08/2024. Check the list of debarred candidates in the notice.",
+    "summary_hi": "आरआरसी उत्तर रेलवे ने विज्ञापन संख्या CEN 08/2024 के तहत दस्तावेज़ सत्यापन और चिकित्सा परीक्षा से 71 उम्मीदवारों के निष्कासन के संबंध में नोटिस जारी किया है। नोटिस में निष्कासित उम्मीदवारों की सूची देखें।",
+    "title_en": "RRC Northern Railway Level 1 Debarred List 2026 – CEN 08/2024 Notice",
+    "title_hi": "आरआरसी उत्तर रेलवे लेवल 1 निष्कासित सूची 2026 – CEN 08/2024 नोटिस",
     "type": "Update",
     "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "rrc-northern-railway-level-1-2024",
+    "name_en": "RRC Northern Railway Level 1 2024",
+    "name_hi": "आरआरसी नॉर्दर्न रेलवे लेवल 1 2024"
   },
   "extraction": {
     "ai": null
@@ -21,16 +28,150 @@
   "fields": {},
   "first_seen": "2026-10-30T16:11:36+00:00",
   "id": "1a2ead07a128",
+  "issue": 1051,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-10-30",
   "org": "RRC Northern Railway",
+  "page": {
+    "after_en": [
+      "The recruitment process continues for eligible candidates as per the schedule."
+    ],
+    "after_hi": [
+      "योग्य उम्मीदवारों के लिए निर्धारित कार्यक्रम के अनुसार भर्ती प्रक्रिया जारी रहेगी।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": null,
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check your registration number in the debarred list PDF."
+    ],
+    "checklist_hi": [
+      "निष्कासित सूची पीडीएफ में अपना पंजीकरण नंबर जांचें।"
+    ],
+    "conducted_by_en": "Railway Recruitment Cell, Northern Railway (RRC NR)",
+    "conducted_by_hi": "रेलवे भर्ती सेल, उत्तर रेलवे (आरआरसी एनआर)",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस की तिथि",
+        "value_en": "30 Oct 2026",
+        "value_hi": "30 अक्तूबर 2026"
+      }
+    ],
+    "documents_en": [],
+    "documents_hi": [],
+    "eligibility": [],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "This is an official notification issued by RRC Northern Railway listing 71 candidates who have been debarred from RRB and RRC examinations, and whose candidature for Level-1 posts under CEN-08/2024 has been cancelled.",
+        "a_hi": "यह आरआरसी उत्तर रेलवे द्वारा जारी एक आधिकारिक अधिसूचना है जिसमें 71 ऐसे उम्मीदवारों की सूची है जिन्हें आरआरबी और आरआरसी परीक्षाओं से निष्कासित कर दिया गया है, और CEN-08/2024 के तहत लेवल-1 पदों के लिए जिनकी उम्मीदवारी रद्द कर दी गई है।",
+        "q_en": "What is the RRC NR CEN-08/2024 Debarred Candidates Notice?",
+        "q_hi": "आरआरसी एनआर CEN-08/2024 निष्कासित उम्मीदवार नोटिस क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "A total of 71 candidates have been debarred.",
+        "a_hi": "कुल 71 उम्मीदवारों को निष्कासित किया गया है।",
+        "q_en": "How many candidates are debarred in the RRC NR CEN-08/2024 notice?",
+        "q_hi": "आरआरसी एनआर CEN-08/2024 नोटिस में कितने उम्मीदवारों को निष्कासित किया गया है?"
+      },
+      {
+        "a_en": "No, the candidature of debarred candidates will not be considered for further stages of the recruitment process.",
+        "a_hi": "नहीं, निष्कासित उम्मीदवारों की उम्मीदवारी पर भर्ती प्रक्रिया के अगले चरणों के लिए विचार नहीं किया जाएगा।",
+        "q_en": "Can debarred candidates appear for further stages under CEN-08/2024?",
+        "q_hi": "क्या निष्कासित उम्मीदवार CEN-08/2024 के तहत आगे के चरणों में शामिल हो सकते हैं?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "RRC Northern Railway Level 1 Debarred List 2026 – CEN 08/2024 Notice",
+    "h1_hi": "आरआरसी उत्तर रेलवे लेवल 1 निष्कासित सूची 2026 – CEN 08/2024 नोटिस",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official website of RRC Northern Railway.",
+      "Click on the link for the debarred candidates notice under CEN-08/2024.",
+      "Download and check the PDF for registration and roll numbers."
+    ],
+    "how_hi": [
+      "आरआरसी उत्तर रेलवे की आधिकारिक वेबसाइट पर जाएं।",
+      "CEN-08/2024 के तहत निष्कासित उम्मीदवारों के नोटिस के लिंक पर क्लिक करें।",
+      "पंजीकरण और रोल नंबर के लिए पीडीएफ डाउनलोड करें और जांच करें।"
+    ],
+    "intro_en": "Railway Recruitment Cell, Northern Railway (RRC NR) has published a notice under CEN-08/2024 regarding the debarment of candidates shortlisted for Document Verification (DV). A total of 71 candidates have been identified as debarred from RRB/RRC examinations by the concerned Railway Recruitment Boards/Cells for various reasons. The candidature of these candidates will not be considered for further stages of the recruitment process. Candidates can check the official notice and the list of debarred candidates.",
+    "intro_hi": "रेलवे भर्ती सेल, उत्तर रेलवे (आरआरसी एनआर) ने दस्तावेज़ सत्यापन (DV) के लिए शॉर्टलिस्ट किए गए उम्मीदवारों के निष्कासन के संबंध में CEN-08/2024 के तहत एक नोटिस प्रकाशित किया है। विभिन्न कारणों से रेलवे भर्ती बोर्डों/सेलों द्वारा आरआरबी/आरआरसी परीक्षाओं से कुल 71 उम्मीदवारों को निष्कासित किया गया है। इन उम्मीदवारों की उम्मीदवारी पर भर्ती प्रक्रिया के अगले चरणों के लिए विचार नहीं किया जाएगा। उम्मीदवार आधिकारिक नोटिस और निष्कासित उम्मीदवारों की सूची देख सकते हैं।",
+    "last_date": null,
+    "mistakes_en": [],
+    "mistakes_hi": [],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-10-30",
+    "official_site": "https://rrcnr.org/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Level-1 Posts",
+        "value_hi": "लेवल-1 पद"
+      },
+      {
+        "label_en": "Advertisement No.",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "CEN-08/2024",
+        "value_hi": "CEN-08/2024"
+      },
+      {
+        "label_en": "Total Debarred",
+        "label_hi": "कुल निष्कासित",
+        "value_en": "71 Candidates",
+        "value_hi": "71 उम्मीदवार"
+      }
+    ],
+    "salary": [],
+    "selection_en": [],
+    "selection_hi": [],
+    "share_card": {
+      "headline_en": "Debarred List Released",
+      "headline_hi": "निष्कासित सूची जारी",
+      "kind": "list",
+      "line_en": "Level-1 CEN-08/2024",
+      "line_hi": "लेवल-1 CEN-08/2024",
+      "posts": null
+    },
+    "status_en": "Debarred candidates list released",
+    "status_hi": "निष्कासित उम्मीदवारों की सूची जारी",
+    "summary_en": "RRC Northern Railway has released a notice regarding the debarment of 71 candidates from document verification and medical examination under CEN 08/2024. Check the list of debarred candidates in the notice.",
+    "summary_hi": "आरआरसी उत्तर रेलवे ने विज्ञापन संख्या CEN 08/2024 के तहत दस्तावेज़ सत्यापन और चिकित्सा परीक्षा से 71 उम्मीदवारों के निष्कासन के संबंध में नोटिस जारी किया है। नोटिस में निष्कासित उम्मीदवारों की सूची देखें।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Candidates who applied for RRC Northern Railway Level-1 CEN-08/2024 recruitment."
+    ],
+    "who_hi": [
+      "आरआरसी उत्तर रेलवे लेवल-1 CEN-08/2024 भर्ती के लिए आवेदन करने वाले उम्मीदवार।"
+    ]
+  },
   "pdf": {
     "bytes": 1408905,
     "pages": 3,
     "sha256": "5dfcbf5628126230a9d17c848de77e1431052e594b1f4cc22cc1507ff7250a43",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-05T07:06:39Z",
+  "qual": [
+    "10th",
+    "iti"
+  ],
+  "slug": "rrc-northern-railway-level-1-debarred-list-2026-cen-08-2024-noti",
   "source_id": "rrc-nr",
-  "status": "skipped",
+  "status": "approved",
   "title": "30.10.2026 Kind Attention: List of candidates who are debarred from document verification and medical examination against CEN-08/2024. Click here for Notice",
   "url": "https://rrcnr.org/downloads/Notice_CEN-08-2024_30102026.pdf"
 }

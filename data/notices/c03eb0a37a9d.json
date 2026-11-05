@@ -6,13 +6,13 @@
     "exam_date": "2026-08-01",
     "last_date": "2026-07-21",
     "list": true,
-    "posts": "Probationary Officer / Management Trainee",
+    "posts": "Probationary Officer, Management Trainee",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
-    "summary_en": "IBPS has released the notification for Common Recruitment Process CRP-PO/MT-XVI for Probationary Officers and Management Trainees in participating banks. Eligible candidates can apply online through the official website.",
-    "summary_hi": "आईबीपीएस ने सहभागी बैंकों में परिवीक्षाधीन अधिकारियों और प्रबंधन प्रशिक्षुओं के लिए सामान्य भर्ती प्रक्रिया की अधिसूचना जारी कर दी है। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
-    "title_en": "IBPS PO Recruitment 2026 – Apply Online for CRP-PO/MT-XVI",
-    "title_hi": "आईबीपीएस पीओ भर्ती 2026 – सीआरपी-पीओ/एमटी-XVI ऑनलाइन आवेदन",
+    "summary_en": "IBPS invites online applications for the Common Recruitment Process for Probationary Officers and Management Trainees in participating banks. Eligible candidates should apply online before the last date.",
+    "summary_hi": "आईबीपीएस ने प्रतिभागी बैंकों में परिवीक्षाधीन अधिकारियों और प्रबंधन प्रशिक्षुओं के पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार अंतिम तिथि से पहले आवेदन करें।",
+    "title_en": "IBPS CRP PO MT XVI Recruitment 2026 – Apply Online for Posts",
+    "title_hi": "आईबीपीएस सीआरपी पीओ एमटी 16 भर्ती 2026 – पदों के लिए ऑनलाइन आवेदन करें",
     "type": "Job",
     "vacancies": null
   },
@@ -24,6 +24,7 @@
     "domicile": null,
     "qual": "graduate",
     "relax": {
+      "ExSM": 5,
       "OBC": 3,
       "PwD": 10,
       "SC": 5,
@@ -32,8 +33,8 @@
   },
   "exam": {
     "key": "ibps-crp-po-mt-xvi-2027",
-    "name_en": "IBPS CRP PO/MT XVI 2027",
-    "name_hi": "आईबीपीएस सीआरपी पीओ/एमटी XVI 2027"
+    "name_en": "IBPS CRP PO MT XVI 2027",
+    "name_hi": "आईबीपीएस सीआरपी पीओ एमटी XVI 2027"
   },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
@@ -123,21 +124,21 @@
   },
   "first_seen": "2026-11-05T06:28:53+00:00",
   "id": "c03eb0a37a9d",
-  "issue": 1044,
+  "issue": 1065,
   "issue_tidy": true,
   "kind": "notification",
-  "notice_date": "2026-07-21",
+  "notice_date": "2026-06-30",
   "org": "IBPS",
   "page": {
     "after_en": [
-      "Qualify Preliminary Examination to appear for Main Examination",
-      "Qualify Main Examination to attend Personality Test and Interview",
-      "Provisional Allotment based on merit and vacancies"
+      "Qualifying candidates in the Preliminary exam will appear for the Main examination.",
+      "Candidates shortlisted from the Main exam will be called for a personality test and common interview.",
+      "Final provisional allotment is based on merit and actual vacancies reported by participating banks."
     ],
     "after_hi": [
-      "मुख्य परीक्षा में बैठने के लिए प्रारंभिक परीक्षा उत्तीर्ण करें",
-      "पर्सनलिटी टेस्ट और साक्षात्कार में भाग लेने के लिए मुख्य परीक्षा उत्तीर्ण करें",
-      "मेरिट और रिक्तियों के आधार पर अस्थायी आवंटन"
+      "प्रारंभिक परीक्षा में उत्तीर्ण होने वाले उम्मीदवार मुख्य परीक्षा में शामिल होंगे।",
+      "मुख्य परीक्षा से शॉर्टलिस्ट किए गए उम्मीदवारों को व्यक्तित्व परीक्षण और साझा साक्षात्कार के लिए बुलाया जाएगा।",
+      "अंतिम अनंतिम आवंटन योग्यता और प्रतिभागी बैंकों द्वारा रिपोर्ट की गई वास्तविक रिक्तियों पर आधारित है।"
     ],
     "age": [
       {
@@ -154,61 +155,75 @@
       },
       {
         "label_en": "As on date",
-        "label_hi": "इस तिथि के अनुसार",
-        "value_en": "01.07.2026",
-        "value_hi": "01.07.2026"
+        "label_hi": "आयु गणना की तिथि",
+        "value_en": "01 Jul 2026",
+        "value_hi": "01 जुला 2026"
       },
       {
-        "label_en": "Scheduled Caste/Scheduled Tribe relaxation",
-        "label_hi": "अनुसूचित जाति/अनुसूचित जनजाति छूट",
+        "label_en": "Scheduled Caste / Scheduled Tribe",
+        "label_hi": "अनुसूचित जाति / अनुसूचित जनजाति",
         "value_en": "5 years",
         "value_hi": "5 वर्ष"
       },
       {
-        "label_en": "Other Backward Classes relaxation",
-        "label_hi": "अन्य पिछड़ा वर्ग छूट",
+        "label_en": "Other Backward Classes (Non-Creamy Layer)",
+        "label_hi": "अन्य पिछड़ा वर्ग (नॉन-क्रीमी लेयर)",
         "value_en": "3 years",
         "value_hi": "3 वर्ष"
       },
       {
-        "label_en": "Persons With Benchmark Disabilities relaxation",
-        "label_hi": "दिव्यांगजन छूट",
+        "label_en": "Persons With Benchmark Disabilities",
+        "label_hi": "दिव्यांगजन",
         "value_en": "10 years",
         "value_hi": "10 वर्ष"
+      },
+      {
+        "label_en": "Ex-Servicemen",
+        "label_hi": "भूतपूर्व सैनिक",
+        "value_en": "5 years",
+        "value_hi": "5 वर्ष"
       }
     ],
     "apply_start": "2026-07-01",
-    "apply_url": "www.ibps.in",
+    "apply_url": "https://www.ibps.in",
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check eligibility criteria including age and qualification",
-      "Keep scanned copies of photo, signature, thumb impression and declaration ready",
-      "Verify all details before final fee payment"
+      "Verify age eligibility as on 01 Jul 2026",
+      "Keep graduation degree and marksheets ready",
+      "Ensure scanned documents meet prescribed specifications",
+      "Complete online fee payment before 21 Jul 2026"
     ],
     "checklist_hi": [
-      "आयु और योग्यता सहित पात्रता मापदंडों की जांच करें",
-      "फोटो, हस्ताक्षर, अंगूठे के निशान और घोषणा की स्कैन की गई प्रतियां तैयार रखें",
-      "अंतिम शुल्क भुगतान से पहले सभी विवरण सत्यापित करें"
+      "01 जुलाई 2026 को आयु पात्रता सत्यापित करें",
+      "स्नातक डिग्री और अंकतालिकाएं तैयार रखें",
+      "सुनिश्चित करें कि स्कैन किए गए दस्तावेज़ निर्धारित विनिर्देशों को पूरा करते हैं",
+      "21 जुलाई 2026 से पहले ऑनलाइन शुल्क भुगतान पूरा करें"
     ],
     "conducted_by_en": "Institute of Banking Personnel Selection (IBPS)",
     "conducted_by_hi": "इंस्टीट्यूट ऑफ बैंकिंग पर्सनल सिलेक्शन (आईबीपीएस)",
     "dates": [
       {
-        "label_en": "Online Registration including Edit/Modification",
-        "label_hi": "ऑनलाइन पंजीकरण और संशोधन",
-        "value_en": "01 Jul 2026 to 21 Jul 2026",
-        "value_hi": "01 जुलाई 2026 से 21 जुलाई 2026"
+        "label_en": "Online registration starts",
+        "label_hi": "ऑनलाइन पंजीकरण शुरू",
+        "value_en": "01 Jul 2026",
+        "value_hi": "01 जुला 2026"
       },
       {
-        "label_en": "Payment of Application Fees",
-        "label_hi": "आवेदन शुल्क का भुगतान",
-        "value_en": "01 Jul 2026 to 21 Jul 2026",
-        "value_hi": "01 जुलाई 2026 से 21 जुलाई 2026"
+        "label_en": "Last date for online registration and fee payment",
+        "label_hi": "ऑनलाइन पंजीकरण और शुल्क भुगतान की अंतिम तिथि",
+        "value_en": "21 Jul 2026",
+        "value_hi": "21 जुला 2026"
       },
       {
-        "label_en": "Conduct of Pre-Examination Training (PET)",
-        "label_hi": "पूर्व परीक्षा प्रशिक्षण (पीईटी)",
+        "label_en": "Pre-Examination Training (PET)",
+        "label_hi": "पूर्व-परीक्षा प्रशिक्षण",
+        "value_en": "August, 2026",
+        "value_hi": "अगस्त, 2026"
+      },
+      {
+        "label_en": "Download of Preliminary exam call letters",
+        "label_hi": "प्रारंभिक परीक्षा बुलावा पत्र डाउनलोड",
         "value_en": "August, 2026",
         "value_hi": "अगस्त, 2026"
       },
@@ -220,7 +235,13 @@
       },
       {
         "label_en": "Result of Online examination – Preliminary",
-        "label_hi": "ऑनलाइन परीक्षा परिणाम – प्रारंभिक",
+        "label_hi": "ऑनलाइन परीक्षा का परिणाम – प्रारंभिक",
+        "value_en": "September, 2026",
+        "value_hi": "सितंबर, 2026"
+      },
+      {
+        "label_en": "Download of Main exam call letter",
+        "label_hi": "मुख्य परीक्षा बुलावा पत्र डाउनलोड",
         "value_en": "September, 2026",
         "value_hi": "सितंबर, 2026"
       },
@@ -231,143 +252,158 @@
         "value_hi": "अक्टूबर, 2026"
       },
       {
-        "label_en": "Declaration of Result- Main Examination",
-        "label_hi": "मुख्य परीक्षा परिणाम घोषणा",
+        "label_en": "Declaration of Main Exam Result",
+        "label_hi": "मुख्य परीक्षा परिणाम की घोषणा",
+        "value_en": "November, 2026",
+        "value_hi": "नवंबर, 2026"
+      },
+      {
+        "label_en": "Personality Test",
+        "label_hi": "व्यक्तित्व परीक्षण",
         "value_en": "November, 2026",
         "value_hi": "नवंबर, 2026"
       },
       {
         "label_en": "Conduct of Interview",
         "label_hi": "साक्षात्कार का आयोजन",
-        "value_en": "November/ December, 2026",
-        "value_hi": "नवंबर/ दिसंबर, 2026"
+        "value_en": "November / December, 2026",
+        "value_hi": "नवंबर / दिसंबर, 2026"
       },
       {
         "label_en": "Provisional Allotment",
-        "label_hi": "अस्थायी आवंटन",
+        "label_hi": "अनअंतिम आवंटन",
         "value_en": "January, 2027",
         "value_hi": "जनवरी, 2027"
       }
     ],
     "documents_en": [
-      "Photograph",
-      "Signature",
-      "Left thumb impression",
-      "Hand-written declaration",
-      "Photo ID proof",
-      "Educational certificates"
+      "Graduation marksheets and degree certificates",
+      "Photo ID proof (Aadhaar, PAN, Voter ID, etc.)",
+      "Proof of date of birth",
+      "Caste/Category certificate if claiming reservation",
+      "Scanned photograph, signature, left thumb impression, and handwritten declaration"
     ],
     "documents_hi": [
-      "फोटो",
-      "हस्ताक्षर",
-      "बाएं अंगूठे का निशान",
-      "हस्तलिखित घोषणा",
-      "फोटो पहचान पत्र",
-      "शैक्षणिक प्रमाण पत्र"
+      "स्नातक की अंकतालिकाएं और डिग्री प्रमाण पत्र",
+      "फोटो पहचान प्रमाण (आधार, पैन, वोटर आईडी, आदि)",
+      "जन्म तिथि का प्रमाण",
+      "जाति/श्रेणी प्रमाण पत्र यदि आरक्षण का दावा कर रहे हैं",
+      "स्कैन की गई फोटोग्राफ, हस्ताक्षर, बाएं अंगूठे का निशान और हस्तलिखित घोषणा"
     ],
     "eligibility": [
       {
+        "label_en": "Education",
+        "label_hi": "शिक्षा",
+        "value_en": "A Degree (Graduation) in any discipline from a University recognized by the Govt. Of India or any equivalent qualification recognized as such by the Central Government.",
+        "value_hi": "भारत सरकार द्वारा मान्यता प्राप्त विश्वविद्यालय से किसी भी विषय में स्नातक डिग्री या केंद्र सरकार द्वारा मान्यता प्राप्त कोई समकक्ष योग्यता।"
+      },
+      {
         "label_en": "Nationality",
         "label_hi": "राष्ट्रीयता",
-        "value_en": "Must be a citizen of India or a subject of Nepal/Bhutan or Tibetan refugee / person of Indian origin who migrated with the intention of permanently settling in India.",
-        "value_hi": "भारत का नागरिक या नेपाल/भूटान का प्रजाजन या तिब्बती शरणार्थी / भारतीय मूल का व्यक्ति होना चाहिए जिसने भारत में स्थायी रूप से बसने के इरादे से प्रवास किया हो।"
+        "value_en": "Must be a citizen of India, subject of Nepal/Bhutan, Tibetan refugee, or person of Indian origin who migrated from specified countries with intention of permanently settling in India.",
+        "value_hi": "भारत का नागरिक, नेपाल या भूटान की प्रजा, तिब्बती शरणार्थी, या भारतीय मूल का व्यक्ति होना चाहिए।"
       }
     ],
-    "exam_date": null,
+    "exam_date": "2026-08-01",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "IBPS CRP PO/MT is a Common Recruitment Process conducted annually by the Institute of Banking Personnel Selection to select Probationary Officers and Management Trainees for participating public sector banks.",
-        "a_hi": "आईबीपीएस सीआरपी पीओ/एमटी सहभागी सार्वजनिक क्षेत्र के बैंकों के लिए परिवीक्षाधीन अधिकारियों और प्रबंधन प्रशिक्षुओं का चयन करने के वास्ते इंस्टीट्यूट ऑफ बैंकर्स पर्सनल सिलेक्शन द्वारा प्रतिवर्ष आयोजित एक सामान्य भर्ती प्रक्रिया है।",
+        "a_en": "IBPS CRP PO/MT is a Common Recruitment Process conducted annually by the Institute of Banking Personnel Selection to recruit Probationary Officers and Management Trainees in participating public sector banks.",
+        "a_hi": "आईबीपीएस सीआरपी पीओ/एमटी प्रतिभागी सार्वजनिक क्षेत्र के बैंकों में परिवीक्षाधीन अधिकारियों और प्रबंधन प्रशिक्षुओं की भर्ती के लिए इंस्टीट्यूट ऑफ बैंकिंग पर्सनल सिलेक्शन द्वारा सालाना आयोजित की जाने वाली एक सामान्य भर्ती प्रक्रिया है।",
         "q_en": "What is IBPS CRP PO/MT?",
         "q_hi": "आईबीपीएस सीआरपी पीओ/एमटी क्या है?"
       }
     ],
-    "extra": [
-      {
-        "label_en": "Pay Scale",
-        "label_hi": "वेतनमान",
-        "value_en": "Basic: ₹48480-2000/7-62480-2340/2-67160-2680/7-85920",
-        "value_hi": "बेसिक: ₹48480-2000/7-62480-2340/2-67160-2680/7-85920"
-      }
-    ],
+    "extra": [],
     "faq": [
       {
         "a_en": "The last date to apply online is 21 July 2026.",
         "a_hi": "ऑनलाइन आवेदन करने की अंतिम तिथि 21 जुलाई 2026 है।",
-        "q_en": "What is the last date to apply for IBPS PO CRP-PO/MT-XVI?",
-        "q_hi": "आईबीपीएस पीओ सीआरपी-पीओ/एमटी-XVI के लिए आवेदन करने की अंतिम तिथि क्या है?"
+        "q_en": "What is the last date to apply for IBPS CRP PO/MT XVI 2026?",
+        "q_hi": "आईबीपीएस सीआरपी पीओ/एमटी 16 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "Candidates must be between 20 and 30 years of age as on 01.07.2026.",
-        "a_hi": "उम्मीदवारों की आयु 01.07.2026 के अनुसार 20 से 30 वर्ष के बीच होनी चाहिए।",
-        "q_en": "What is the age limit for IBPS PO recruitment?",
-        "q_hi": "आईबीपीएस पीओ भर्ती के लिए आयु सीमा क्या है?"
+        "a_en": "Candidates must hold a graduation degree in any discipline from a recognized university.",
+        "a_hi": "उम्मीदवारों के पास किसी मान्यता प्राप्त विश्वविद्यालय से किसी भी विषय में स्नातक की डिग्री होनी चाहिए।",
+        "q_en": "What is the educational qualification required for IBPS PO?",
+        "q_hi": "आईबीपीएस पीओ के लिए आवश्यक शैक्षणिक योग्यता क्या है?"
       },
       {
-        "a_en": "The Preliminary Exam is scheduled to be conducted in August 2026.",
+        "a_en": "Candidates must be between 20 and 30 years of age as on 01 July 2026, with age relaxations applicable for reserved categories.",
+        "a_hi": "आरक्षित श्रेणियों के लिए लागू आयु में छूट के साथ, 01 जुलाई 2026 को उम्मीदवारों की आयु 20 से 30 वर्ष के बीच होनी चाहिए।",
+        "q_en": "What is the age limit for IBPS PO/MT exam?",
+        "q_hi": "आईबीपीएस पीओ/एमटी परीक्षा के लिए आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "The Preliminary examination is scheduled to be conducted in August 2026.",
         "a_hi": "प्रारंभिक परीक्षा अगस्त 2026 में आयोजित होने निर्धारित है।",
-        "q_en": "When will the IBPS PO Preliminary Exam be conducted?",
+        "q_en": "When will the IBPS PO Preliminary examination be conducted?",
         "q_hi": "आईबीपीएस पीओ प्रारंभिक परीक्षा कब आयोजित की जाएगी?"
+      },
+      {
+        "a_en": "Candidates can apply online through the official website www.ibps.in.",
+        "a_hi": "उम्मीदवार आधिकारिक वेबसाइट www.ibps.in के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+        "q_en": "Which website is used to apply for IBPS CRP PO/MT XVI?",
+        "q_hi": "आईबीपीएस सीआरपी पीओ/एमटी 16 के लिए आवेदन करने के लिए किस वेबसाइट का उपयोग किया जाता है?"
       }
     ],
     "fees": [],
-    "h1_en": "IBPS PO Recruitment 2026 – Apply Online for CRP-PO/MT-XVI",
-    "h1_hi": "आईबीपीएस पीओ भर्ती 2026 – सीआरपी-पीओ/एमटी-XVI ऑनलाइन आवेदन",
+    "h1_en": "IBPS CRP PO MT XVI Recruitment 2026 – Apply Online for Posts",
+    "h1_hi": "आईबीपीएस सीआरपी पीओ एमटी 16 भर्ती 2026 – पदों के लिए ऑनलाइन आवेदन करें",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official website www.ibps.in",
-      "Click on the Home page to open the link 'CRP PO/MT'",
-      "Click on 'CLICK HERE TO APPLY ONLINE FOR CRP-Probationary Officers/Management Trainees (CRP-PO/MT-XVI)' to open the On-Line Application Form",
-      "Choose 'CLICK HERE FOR NEW REGISTRATION' and enter basic details",
-      "Upload photograph, signature, left thumb impression and a hand-written declaration",
-      "Proceed to pay the application fee online",
-      "Submit and take a printout of the final application form"
+      "Go to the official website of IBPS at www.ibps.in",
+      "Click on the Home page to open the link 'CRP PO/MT' and then click on the option 'CRP-PO/MT-XVI' to open the Online Application Form.",
+      "Register by entering basic details and obtain a provisional registration number and password.",
+      "Upload photograph, signature, left thumb impression, and a handwritten declaration as per the guidelines.",
+      "Fill in the rest of the application form carefully and verify details before submission.",
+      "Pay the application fee online and save the generated e-receipt and final application form."
     ],
     "how_hi": [
-      "आधिकारिक वेबसाइट www.ibps.in पर जाएं",
-      "होम पेज पर 'CRP PO/MT' लिंक खोलें",
-      "ऑनलाइन आवेदन फॉर्म खोलने के लिए 'CLICK HERE TO APPLY ONLINE FOR CRP-Probationary Officers/Management Trainees (CRP-PO/MT-XVI)' पर क्लिक करें",
-      "नया पंजीकरण करने के लिए 'CLICK HERE FOR NEW REGISTRATION' चुनें और बुनियादी विवरण दर्ज करें",
-      "तस्वीर, हस्ताक्षर, बाएं अंगूठे का निशान और हस्तलिखित घोषणा अपलोड करें",
-      "ऑनलाइन आवेदन शुल्क का भुगतान करें",
-      "सबमिट करें और अंतिम आवेदन फॉर्म का प्रिंटआउट लें"
+      "आईबीपीएस की आधिकारिक वेबसाइट www.ibps.in पर जाएं।",
+      "होम पेज पर 'CRP PO/MT' लिंक पर क्लिक करें और ऑनलाइन आवेदन फॉर्म खोलने के लिए 'CRP-PO/MT-XVI' विकल्प पर क्लिक करें।",
+      "बुनियादी विवरण दर्ज करके पंजीकरण करें और अनंतिम पंजीकरण संख्या और पासवर्ड प्राप्त करें।",
+      "दिशानिर्देशों के अनुसार फोटोग्राफ, हस्ताक्षर, बाएं अंगूठे का निशान और हस्तलिखित घोषणा अपलोड करें।",
+      "आवेदन पत्र के बाकी हिस्सों को सावधानी से भरें और सबमिट करने से पहले विवरण सत्यापित करें।",
+      "ऑनलाइन आवेदन शुल्क का भुगतान करें और जेनरेट की गई ई-रसीद और अंतिम आवेदन पत्र को सुरक्षित रखें।"
     ],
-    "intro_en": "The Institute of Banking Personnel Selection (IBPS) has issued the notification for the Common Recruitment Process CRP-PO/MT-XVI for recruitment of Probationary Officers and Management Trainees in Participating Public Sector Banks for the vacancies of 2027-28. Online registration starts on 01 July 2026 and closes on 21 July 2026. Eligible candidates who meet the age and educational criteria should read the complete notification and apply online at the official website.",
-    "intro_hi": "इंस्टीट्यूट ऑफ बैंकिंग पर्सनल सिलेक्शन (आईबीपीएस) ने वर्ष 2027-28 की रिक्तियों के लिए सहभागी सार्वजनिक क्षेत्र के बैंकों में परिवीक्षाधीन अधिकारियों और प्रबंधन प्रशिक्षुओं की भर्ती हेतु सामान्य भर्ती प्रक्रिया (सीआरपी-पीओ/एमटी-XVI) की अधिसूचना जारी कर दी है। ऑनलाइन पंजीकरण 01 जुलाई 2026 से शुरू होकर 21 जुलाई 2026 को समाप्त होगा। योग्य उम्मीदवार जो आयु और शैक्षणिक मानदंडों को पूरा करते हैं, वे पूरी अधिसूचना पढ़कर आधिकारिक वेबसाइट पर ऑनलाइन आवेदन कर सकते हैं।",
+    "intro_en": "The Institute of Banking Personnel Selection (IBPS) has invited online applications for the Common Recruitment Process for Probationary Officers and Management Trainees (CRP PO/MT-XVI) for vacancies of 2027-28 in participating public sector banks. Candidates meeting the eligibility criteria can submit their applications online from 01 July 2026 to 21 July 2026. The selection process includes Preliminary and Main online examinations, followed by a personality test and interview. Aspirants should read the detailed notification carefully before applying.",
+    "intro_hi": "इंस्टीट्यूट ऑफ बैंकिंग पर्सनल सिलेक्शन (आईबीपीएस) ने प्रतिभागी सार्वजनिक क्षेत्र के बैंकों में वर्ष 2027-28 की रिक्तियों के लिए परिवीक्षाधीन अधिकारियों और प्रबंधन प्रशिक्षुओं (सीआरपी पीओ/एमटी-16) की सामान्य भर्ती प्रक्रिया के वास्ते ऑनलाइन आवेदन आमंत्रित किए हैं। पात्रता मापदंड को पूरा करने वाले उम्मीदवार 01 जुलाई 2026 से 21 जुलाई 2026 तक ऑनलाइन आवेदन कर सकते हैं। चयन प्रक्रिया में प्रारंभिक और मुख्य ऑनलाइन परीक्षाएं शामिल हैं, जिसके बाद व्यक्तित्व परीक्षण और साक्षात्कार होगा।",
     "last_date": "2026-07-21",
     "mistakes_en": [
-      "Do not wait till the last date to apply online.",
-      "Ensure category and details filled match original documents as changes are not allowed after the edit window closes."
+      "Submitting applications without uploading clear scanned copies of documents.",
+      "Entering incorrect category details since category changes are not permitted after the edit window closes.",
+      "Failing to complete fee payment before the last date."
     ],
     "mistakes_hi": [
-      "ऑनलाइन आवेदन करने के लिए अंतिम तिथि तक प्रतीक्षा न करें।",
-      "सुनिश्चित करें कि भरे गए श्रेणी और विवरण मूल दस्तावेजों से मेल खाते हैं क्योंकि संपादन विंडो बंद होने के बाद बदलाव की अनुमति नहीं है।"
+      "दस्तावेजों की स्पष्ट स्कैन की गई प्रतियां अपलोड किए बिना आवेदन जमा करना।",
+      "गलत श्रेणी विवरण दर्ज करना क्योंकि संपादन विंडो बंद होने के बाद श्रेणी परिवर्तन की अनुमति नहीं है।",
+      "अंतिम तिथि से पहले शुल्क भुगतान पूरा करने में विफल रहना।"
     ],
-    "not_en": [],
-    "not_hi": [],
-    "notice_date": null,
-    "official_site": "www.ibps.in",
+    "not_en": [
+      "Candidates who do not possess the required graduation degree as on the stipulated date.",
+      "Candidates exceeding the maximum age limit without applicable relaxation."
+    ],
+    "not_hi": [
+      "वे उम्मीदवार जिनके पास निर्धारित तिथि पर आवश्यक स्नातक की डिग्री नहीं है।",
+      "लागू छूट के बिना अधिकतम आयु सीमा पार करने वाले उम्मीदवार।"
+    ],
+    "notice_date": "2026-06-30",
+    "official_site": "https://www.ibps.in",
     "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
         "label_en": "Posts",
         "label_hi": "पद",
-        "value_en": "Probationary Officer / Management Trainee",
-        "value_hi": "परिवीक्षाधीन अधिकारी / प्रबंधन प्रशिक्षु"
+        "value_en": "Probationary Officer, Management Trainee",
+        "value_hi": "परिवीक्षाधीन अधिकारी, प्रबंधन प्रशिक्षु"
       },
       {
         "label_en": "Apply online",
         "label_hi": "ऑनलाइन आवेदन",
         "value_en": "01 Jul 2026 to 21 Jul 2026",
-        "value_hi": "01 जुलाई 2026 से 21 जुलाई 2026"
-      },
-      {
-        "label_en": "Last date for fee",
-        "label_hi": "शुल्क भुगतान की अंतिम तिथि",
-        "value_en": "21 Jul 2026",
-        "value_hi": "21 जुलाई 2026"
+        "value_hi": "01 जुला 2026 से 21 जुला 2026"
       },
       {
         "label_en": "Exam date",
@@ -376,54 +412,62 @@
         "value_hi": "अगस्त, 2026 (प्रारंभिक)"
       },
       {
+        "label_en": "Educational qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "Degree (Graduation) in any discipline from a recognized University",
+        "value_hi": "मान्यता प्राप्त विश्वविद्यालय से किसी भी विषय में स्नातक डिग्री"
+      },
+      {
         "label_en": "Age limit",
         "label_hi": "आयु सीमा",
-        "value_en": "20 to 30 years (As on 01.07.2026)",
-        "value_hi": "20 से 30 वर्ष (01.07.2026 के अनुसार)"
+        "value_en": "20 to 30 years as on 01 Jul 2026",
+        "value_hi": "01 जुला 2026 को 20 से 30 वर्ष"
       },
       {
         "label_en": "Advertisement number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "CRP PO/MT -XVI",
-        "value_hi": "सीआरपी पीओ/एमटी -XVI"
+        "value_hi": "सीआरपी पीओ/एमटी-16"
       }
     ],
     "salary": [
       {
         "label_en": "Pay Scale",
         "label_hi": "वेतनमान",
-        "value_en": "Basic: ₹48480-2000/7-62480-2340/2-67160-2680/7-85920",
-        "value_hi": "बेसिक: ₹48480-2000/7-62480-2340/2-67160-2680/7-85920"
+        "value_en": "₹ 48480-2000/7-62480-2340/2-67160-2680/7-85920",
+        "value_hi": "₹ 48480-2000/7-62480-2340/2-67160-2680/7-85920"
       }
     ],
     "selection_en": [
-      "Online Examination – Preliminary",
-      "Online Examination – Main",
-      "Personality Test and Common Interview",
+      "Online Preliminary Examination",
+      "Online Main Examination",
+      "Personality Test",
+      "Common Interview",
       "Provisional Allotment"
     ],
     "selection_hi": [
-      "ऑनलाइन परीक्षा – प्रारंभिक",
-      "ऑनलाइन परीक्षा – मुख्य",
-      "पर्सनलिटी टेस्ट और कॉमन इंटरव्यू",
-      "अस्थायी आवंटन"
+      "ऑनलाइन प्रारंभिक परीक्षा",
+      "ऑनलाइन मुख्य परीक्षा",
+      "व्यक्तित्व परीक्षण",
+      "साझा साक्षात्कार",
+      "अनंतिम आवंटन"
     ],
     "share_card": {
       "headline_en": "Recruitment 2026",
       "headline_hi": "भर्ती 2026",
       "kind": "job",
-      "line_en": "Probationary Officer",
-      "line_hi": "परिवीक्षाधीन अधिकारी",
+      "line_en": "Probationary Officer / MT",
+      "line_hi": "परिवीक्षाधीन अधिकारी / एमटी",
       "posts": null
     },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "IBPS has released the notification for Common Recruitment Process CRP-PO/MT-XVI for Probationary Officers and Management Trainees in participating banks. Eligible candidates can apply online through the official website.",
-    "summary_hi": "आईबीपीएस ने सहभागी बैंकों में परिवीक्षाधीन अधिकारियों और प्रबंधन प्रशिक्षुओं के लिए सामान्य भर्ती प्रक्रिया की अधिसूचना जारी कर दी है। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+    "summary_en": "IBPS has released the notification for the Common Recruitment Process for Probationary Officers and Management Trainees (CRP PO/MT-XVI) for vacancies of 2027-28 in participating banks. Eligible candidates can apply online through the official IBPS website. Check eligibility, important dates, and selection process details below.",
+    "summary_hi": "आईबीपीएस ने प्रतिभागी बैंकों में वर्ष 2027-28 की रिक्तियों के लिए परिवीक्षाधीन अधिकारियों और प्रबंधन प्रशिक्षुओं (सीआरपी पीओ/एमटी-16) हेतु सामान्य भर्ती प्रक्रिया की अधिसूचना जारी कर दी है। योग्य उम्मीदवार आईबीपीएस की आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
     "vacancies": [
       {
-        "detail_en": "Bank-wise vacancies are given in Annexure I of the notification.",
-        "detail_hi": "बैंक-वार रिक्तियां अधिसूचना के अनुबंध I में दी गई हैं।",
+        "detail_en": "Vacancies are tentative and indicative as reported by participating banks for 2027-28.",
+        "detail_hi": "रिक्तियां 2027-28 के लिए प्रतिभागी बैंकों द्वारा दी गई जानकारी के अनुसार अस्थायी और सांकेतिक हैं।",
         "post_en": "Probationary Officer / Management Trainee",
         "post_hi": "परिवीक्षाधीन अधिकारी / प्रबंधन प्रशिक्षु",
         "total": null
@@ -431,10 +475,10 @@
     ],
     "video_url": null,
     "who_en": [
-      "Graduates aged 20-30 years aspiring for a banking career as Probationary Officers"
+      "Graduates aged 20-30 looking for banking sector jobs in participating public sector banks."
     ],
     "who_hi": [
-      "20-30 वर्ष की आयु के स्नातक जो परिवीक्षाधीन अधिकारियों के रूप में बैंकिंग करियर की इच्छा रखते हैं"
+      "प्रतिभागी सार्वजनिक क्षेत्र के बैंकों में बैंकिंग क्षेत्र की नौकरियां चाहने वाले 20-30 वर्ष की आयु के स्नातक।"
     ]
   },
   "pdf": {
@@ -443,13 +487,21 @@
     "sha256": "9379acfcad5750585ead182b5b0660fde89b324a8a2fa79dce9a9a9e69f73ebe",
     "text_kind": "text"
   },
-  "published_at": "2026-11-05T06:39:31Z",
+  "published_at": "2026-11-05T07:09:04Z",
   "qual": [
     "graduate"
   ],
-  "slug": "ibps-po-recruitment-2026-apply-online-for-crp-po-mt-xvi",
+  "rewrite": true,
+  "slug": "ibps-crp-po-mt-xvi-recruitment-2026-apply-online-for-posts",
   "source_id": "ibps-home",
   "status": "approved",
   "title": "CRP-PO/MTs-XVI Posted on 01 Jul, 2026",
-  "url": "https://www.ibps.in/wp-content/uploads/Detailed-Notification_CRP-PO-XVI_Final_V1_30.06.2026.pdf"
+  "url": "https://www.ibps.in/wp-content/uploads/Detailed-Notification_CRP-PO-XVI_Final_V1_30.06.2026.pdf",
+  "verify": {
+    "at": "2026-11-05",
+    "missing": [
+      "Exam date: shown as 2026-08-01 but the PDF gives only the month"
+    ],
+    "tries": 1
+  }
 }

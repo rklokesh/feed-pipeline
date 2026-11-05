@@ -10,10 +10,10 @@
     "posts": "Bailiff",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
-    "summary_en": "DSSSB has released a rejection notice for the post of Bailiff under Post Code 25/25 as candidates failed to submit e-dossiers.",
-    "summary_hi": "DSSSB ने Bailiff पद के लिए अस्वीकृति नोटिस जारी किया है क्योंकि उम्मीदवारों ने ई-ड Dossier जमा नहीं किया।",
-    "title_en": "DSSSB Bailiff Post Code 25/25 Rejection Notice 2026 – Check List",
-    "title_hi": "DSSSB Bailiff पोस्ट कोड 25/25 रिज़ेक्ट नोटिस 2026 – सूची देखें",
+    "summary_en": "DSSSB has released a rejection notice for the post of Bailiff under Post Code 25/25 due to non-submission of e-dossiers. Check the notice for details.",
+    "summary_hi": "DSSSB ने ई-डोसिया जमा न करने के कारण बैलिफ पद के लिए अस्वीकृति नोटिस जारी किया है। विवरण के लिए नोटिस देखें।",
+    "title_en": "DSSSB Bailiff Post Code 25/25 Rejection Notice 2026",
+    "title_hi": "DSSSB बैलिफ पोस्ट कोड 25/25 अस्वीकृति नोटिस 2026",
     "type": "Update",
     "vacancies": null
   },
@@ -21,7 +21,7 @@
   "exam": {
     "key": "dsssb-bailiff-2025",
     "name_en": "DSSSB Bailiff 2025",
-    "name_hi": "डीएसएसएसबी बेलीफ 2025"
+    "name_hi": "डीएसएसएसबी बैलिफ 2025"
   },
   "extraction": {
     "ai": null
@@ -29,102 +29,128 @@
   "fields": {},
   "first_seen": "2026-10-22T17:22:23+00:00",
   "id": "bbda0f7f5f7f",
-  "issue": 1042,
+  "issue": 1063,
   "issue_tidy": true,
   "kind": "other",
   "notice_date": "2026-10-22",
   "org": "DSSSB",
   "page": {
-    "after_en": [],
-    "after_hi": [],
+    "after_en": [
+      "The candidature of the listed candidates is cancelled, and further processing for other qualified candidates will continue."
+    ],
+    "after_hi": [
+      "सूचीबद्ध उम्मीदवारों की उम्मीदवारी रद्द कर दी जाती है, और अन्य योग्य उम्मीदवारों के लिए आगे की प्रक्रिया जारी रहेगी।"
+    ],
     "age": [],
     "apply_start": null,
     "apply_url": null,
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check the official PDF for rejected roll numbers",
-      "Keep your application details ready for future correspondence"
+      "Verify your roll number against the rejected candidates list in Notice No. 1666."
     ],
     "checklist_hi": [
-      "रद्द किए गए रोल नंबर के लिए आधिकारिक पीडीएफ देखें",
-      "भविष्य के पत्राचार के लिए अपने आवेदन विवरण तैयार रखें"
+      "नोटिस संख्या 1666 में अस्वीकृत उम्मीदवारों की सूची के मुकाबले अपने रोल नंबर की पुष्टि करें।"
     ],
     "conducted_by_en": "Delhi Subordinate Services Selection Board (DSSSB)",
     "conducted_by_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB)",
     "dates": [
       {
-        "label_en": "E-dossier upload period",
-        "label_hi": "ई-डोजियर अपलोड अवधि",
-        "value_en": "20 Jul 2026 to 03 Aug 2026",
-        "value_hi": "20 जुल 2026 से 03 अग 2026"
+        "label_en": "E-dossier upload start date",
+        "label_hi": "ई-डोसिया अपलोड प्रारंभ तिथि",
+        "value_en": "20 Jul 2026",
+        "value_hi": "20 जुलाई 2026"
       },
       {
-        "label_en": "Rejection notice date",
-        "label_hi": "रिजेक्शन नोटिस की तिथि",
+        "label_en": "E-dossier upload last date",
+        "label_hi": "ई-डोसिया अपलोड अंतिम तिथि",
+        "value_en": "03 Aug 2026",
+        "value_hi": "03 अगस्त 2026"
+      },
+      {
+        "label_en": "Notice date",
+        "label_hi": "नोटिस की तारीख",
         "value_en": "22 Oct 2026",
-        "value_hi": "22 अक्तू 2026"
+        "value_hi": "22 अक्टूबर 2026"
       }
     ],
-    "documents_en": [],
-    "documents_hi": [],
+    "documents_en": [
+      "Tier-I Exam Admit Card / Score Details",
+      "Educational qualification certificates",
+      "Identity proof"
+    ],
+    "documents_hi": [
+      "टियर-I परीक्षा प्रवेश पत्र / स्कोर विवरण",
+      "शैक्षणिक योग्यता प्रमाण पत्र",
+      "पहचान प्रमाण"
+    ],
     "eligibility": [],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is an official notice released by DSSSB announcing the cancellation of candidature for candidates who failed to submit their e-dossiers for the Bailiff post under Post Code 25/25.",
-        "a_hi": "यह DSSSB द्वारा जारी किया गया एक आधिकारिक नोटिस है जो Bailiff पद (पोस्ट कोड 25/25) के लिए ई-डोजियर जमा करने में विफल रहने वाले उम्मीदवारों की उम्मीदवारी रद्द किए जाने की घोषणा करता है।",
-        "q_en": "What is DSSSB Rejection Notice No. 1666?",
-        "q_hi": "DSSSB रिजेक्शन नोटिस संख्या 1666 क्या है?"
+        "a_en": "It is an official notification issued by DSSSB listing candidates whose candidature for the Bailiff post has been cancelled because they did not submit their e-dossiers within the given time.",
+        "a_hi": "यह DSSSB द्वारा जारी किया गया एक आधिकारिक नोटिफिकेशन है जिसमें उन उम्मीदवारों की सूची है जिनकी बैलिफ पद के लिए उम्मीदवारी रद्द कर दी गई है क्योंकि उन्होंने दिए गए समय के भीतर अपने ई-डोसिया जमा नहीं किए थे।",
+        "q_en": "What is DSSSB Rejection Notice for Bailiff Post Code 25/25?",
+        "q_hi": "बैलिफ पोस्ट कोड 25/25 के लिए DSSSB अस्वीकृति नोटिस क्या है?"
       }
     ],
     "extra": [
       {
         "label_en": "File Number",
-        "label_hi": "फाइल संख्या",
+        "label_hi": "फ़ाइल संख्या",
         "value_en": "DSSSB-CCII0C21/3/2026/2116-2122",
         "value_hi": "DSSSB-CCII0C21/3/2026/2116-2122"
       }
     ],
     "faq": [
       {
-        "a_en": "The notice covers the Bailiff post under Post Code 25/25 in Registrar Cooperative Societies.",
-        "a_hi": "इस नोटिस में रजिस्ट्रार कोऑपरेटिव सोसायटीज में Bailiff पद (पोस्ट कोड 25/25) शामिल है।",
-        "q_en": "Which post is covered under DSSSB Rejection Notice No. 1666?",
-        "q_hi": "DSSSB रिजेक्शन नोटिस संख्या 1666 के अंतर्गत कौन सा पद शामिल है?"
+        "a_en": "The post name is Bailiff under Post Code 25/25 in Registrar Cooperative Societies.",
+        "a_hi": "पद का नाम रजिस्ट्रार कोऑपरेटिव सोसाइटीज में पोस्ट कोड 25/25 के तहत बैलिफ है।",
+        "q_en": "What is the post name for DSSSB Notice No. 1666?",
+        "q_hi": "DSSSB नोटिस संख्या 1666 के लिए पद का नाम क्या है?"
       },
       {
-        "a_en": "The candidature was rejected because the candidates did not submit their e-dossiers during the scheduled period from 20/07/2026 to 03/08/2026.",
-        "a_hi": "उम्मीदवारी इसलिए रद्द कर दी गई क्योंकि उम्मीदवारों ने 20/07/2026 से 03/08/2026 की निर्धारित अवधि के दौरान अपने ई-डोजियर जमा नहीं किए थे।",
-        "q_en": "Why was the candidature rejected?",
-        "q_hi": "उम्मीदवारी क्यों रद्द कर दी गई?"
+        "a_en": "The candidature was rejected because the candidates did not submit their e-dossiers during the scheduled period.",
+        "a_hi": "उम्मीदवारी इसलिए खारिज कर दी गई क्योंकि उम्मीदवारों ने निर्धारित अवधि के दौरान अपने ई-डोसिया जमा नहीं किए थे।",
+        "q_en": "Why was the candidature rejected in DSSSB Notice No. 1666?",
+        "q_hi": "DSSSB नोटिस संख्या 1666 में उम्मीदवारी क्यों खारिज कर दी गई?"
+      },
+      {
+        "a_en": "Candidates were given the opportunity to upload documents from 20/07/2026 to 03/08/2026.",
+        "a_hi": "उम्मीदवारों को 20/07/2026 से 03/08/2026 तक दस्तावेज अपलोड करने का अवसर दिया गया था।",
+        "q_en": "What was the e-dossier upload window?",
+        "q_hi": "ई-डोसिया अपलोड विंडो क्या थी?"
       }
     ],
     "fees": [],
-    "h1_en": "DSSSB Bailiff Post Code 25/25 Rejection Notice 2026 – Check List",
-    "h1_hi": "DSSSB Bailiff पोस्ट कोड 25/25 रिज़ेक्ट नोटिस 2026 – सूची देखें",
+    "h1_en": "DSSSB Bailiff Post Code 25/25 Rejection Notice 2026",
+    "h1_hi": "DSSSB बैलिफ पोस्ट कोड 25/25 अस्वीकृति नोटिस 2026",
     "hindi_notice_url": null,
     "how_en": [
       "Visit the official DSSSB website.",
-      "Check the circulars or orders section for Rejection Notice No. 1666.",
-      "Download the PDF and check your roll number for candidature status."
+      "Check the circulars and orders section for Rejection Notice No. 1666.",
+      "Download the PDF and check your roll number in the rejected candidates list."
     ],
     "how_hi": [
-      "DSSSB की आधिकारिक वेबसाइट पर जाएं।",
-      "रिजेक्शन नोटिस संख्या 1666 के लिए सर्कुलर या आर्डर अनुभाग की जाँच करें।",
-      "PDF डाउनलोड करें और उम्मीदवारी की स्थिति के लिए अपना रोल नंबर देखें।"
+      "आधिकारिक DSSSB वेबसाइट पर जाएं।",
+      "अस्वीकृति नोटिस संख्या 1666 के लिए परिपत्र और आदेश अनुभाग देखें।",
+      "पीडीएफ डाउनलोड करें और अस्वीकृत उम्मीदवारों की सूची में अपना रोल नंबर जांचें।"
     ],
-    "intro_en": "The Delhi Subordinate Services Selection Board (DSSSB) has issued Rejection Notice No. 1666 on 22 October 2026 for the Bailiff post under Post Code 25/25 in Registrar Cooperative Societies. Candidates who were shortlisted for the post were given an opportunity from 20 July 2026 to 03 August 2026 to upload their documents via the e-dossier link on the OARS module. As the listed candidates failed to submit the e-dossiers within the stipulated period, their candidature has been officially rejected by the board.",
-    "intro_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने रजिस्ट्रार कोऑपरेटिव सोसायटीज में Bailiff पद (पोस्ट कोड 25/25) के लिए 22 अक्टूबर 2026 को रिजेक्शन नोटिस संख्या 1666 जारी किया है। शॉर्टलिस्ट किए गए उम्मीदवारों को OARS मॉड्यूल पर ई-डोजियर लिंक के माध्यम से 20 जुलाई 2026 से 03 अगस्त 2026 तक दस्तावेज अपलोड करने का अवसर दिया गया था। निर्धारित अवधि के भीतर ई-डोजियर जमा न करने के कारण, सूचीबद्ध उम्मीदवारों की उम्मीदवारी बोर्ड द्वारा रद्द कर दी गई है।",
+    "intro_en": "The Delhi Subordinate Services Selection Board (DSSSB) has issued Rejection Notice No. 1666 dated 22/10/2026 for the post of Bailiff under Post Code 25/25 in Registrar Cooperative Societies. Candidates who were shortlisted for the Tier-I exam were previously given an opportunity from 20/07/2026 to 03/08/2026 to upload their documents via the e-dossier link on the OARS module. Due to the non-submission of e-dossiers within this period, the candidature of the listed candidates stands rejected.",
+    "intro_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने रजिस्ट्रार कोऑपरेटिव सोसाइटीज में बैलिफ पद (पोस्ट कोड 25/25) के लिए 22/10/2026 का अस्वीकृति नोटिस संख्या 1666 जारी किया है। टियर-I परीक्षा के लिए शॉर्टलिस्ट किए गए उम्मीदवारों को ओएआरएस मॉड्यूल पर ई-डोसिया लिंक के माध्यम से अपने दस्तावेज अपलोड करने के लिए 20/07/2026 से 03/08/2026 तक का अवसर दिया गया था। इस अवधि के भीतर ई-डोसिया जमा न करने के कारण, सूचीबद्ध उम्मीदवारों की उम्मीदवारी रद्द कर दी जाती है।",
     "last_date": null,
-    "mistakes_en": [],
-    "mistakes_hi": [],
+    "mistakes_en": [
+      "Failing to upload required documents in the e-dossier link within the active window."
+    ],
+    "mistakes_hi": [
+      "सक्रिय विंडो के भीतर ई-डोसिया लिंक में आवश्यक दस्तावेज अपलोड करने में विफल रहना।"
+    ],
     "not_en": [
-      "Candidates who failed to upload e-dossiers within the scheduled timeline"
+      "Candidates who failed to submit e-dossiers within the scheduled period"
     ],
     "not_hi": [
-      "निर्धारित समय सीमा के भीतर ई-डोजियर अपलोड करने में विफल रहने वाले उम्मीदवार"
+      "जो उम्मीदवार निर्धारित अवधि के भीतर ई-डोसिया जमा करने में विफल रहे"
     ],
     "notice_date": "2026-10-22",
     "official_site": "https://dsssb.delhi.gov.in/",
@@ -132,10 +158,16 @@
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
+        "label_en": "Notice Number",
+        "label_hi": "नोटिस संख्या",
+        "value_en": "Notice No. 1666",
+        "value_hi": "नोटिस संख्या 1666"
+      },
+      {
         "label_en": "Post Name",
         "label_hi": "पद का नाम",
         "value_en": "Bailiff",
-        "value_hi": "बेलिफ"
+        "value_hi": "बैलिफ"
       },
       {
         "label_en": "Post Code",
@@ -147,37 +179,39 @@
         "label_en": "Department",
         "label_hi": "विभाग",
         "value_en": "Registrar Cooperative Societies",
-        "value_hi": "रजिस्ट्रार कोऑपरेटिव सोसायटीज"
-      },
-      {
-        "label_en": "Notice Number",
-        "label_hi": "नोटिस संख्या",
-        "value_en": "Rejection Notice No. 1666",
-        "value_hi": "रिजेक्शन नोटिस संख्या 1666"
+        "value_hi": "रजिस्ट्रार कोऑपरेटिव सोसाइटीज"
       }
     ],
     "salary": [],
-    "selection_en": [],
-    "selection_hi": [],
+    "selection_en": [
+      "Tier-I Exam",
+      "E-dossier Submission",
+      "Final Selection"
+    ],
+    "selection_hi": [
+      "टियर-I परीक्षा",
+      "ई-डोसिया प्रस्तुतीकरण",
+      "अंतिम चयन"
+    ],
     "share_card": {
-      "headline_en": "Rejection Notice Out",
-      "headline_hi": "रिजेक्शन नोटिस जारी",
+      "headline_en": "Rejection Notice",
+      "headline_hi": "अस्वीकृति नोटिस",
       "kind": "job",
       "line_en": "Bailiff Post Code 25/25",
-      "line_hi": "Bailiff पोस्ट कोड 25/25",
+      "line_hi": "बैलिफ पोस्ट कोड 25/25",
       "posts": null
     },
-    "status_en": "Rejection notice released",
-    "status_hi": "रिजेक्शन नोटिस जारी",
-    "summary_en": "DSSSB has released Rejection Notice No. 1666 for the Bailiff post under Post Code 25/25 in Registrar Cooperative Societies. The candidature of candidates who failed to upload e-dossiers has been rejected.",
-    "summary_hi": "DSSSB ने रजिस्ट्रार कोऑपरेटिव सोसायटीज में Bailiff पद (पोस्ट कोड 25/25) के लिए अस्वीकृति नोटिस संख्या 1666 जारी कर दिया है। ई-डोजियर अपलोड न करने वाले उम्मीदवारों की उम्मीदवारी रद्द कर दी गई है।",
+    "status_en": "Rejection notice declared",
+    "status_hi": "अस्वीकृति नोटिस घोषित",
+    "summary_en": "Delhi Subordinate Services Selection Board (DSSSB) has released Rejection Notice No. 1666 for the Bailiff post under Post Code 25/25 in Registrar Cooperative Societies. The candidature of candidates who failed to upload e-dossiers within the given time has been rejected. Check the notice for roll numbers.",
+    "summary_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने रजिस्ट्रार कोऑपरेटिव सोसाइटीज में बैलिफ पद (पोस्ट कोड 25/25) के लिए अस्वीकृति नोटिस संख्या 1666 जारी किया है। निर्धारित समय के भीतर ई-डोसिया अपलोड करने में विफल रहने वाले उम्मीदवारों की उम्मीदवारी रद्द कर दी गई है। रोल नंबर देखने के लिए नोटिस देखें।",
     "vacancies": [],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the DSSSB Bailiff Post Code 25/25 Tier-I exam"
+      "Candidates who appeared for the Bailiff Post Code 25/25 Tier-I exam"
     ],
     "who_hi": [
-      "DSSSB Bailiff पोस्ट कोड 25/25 टियर-I परीक्षा में शामिल होने वाले उम्मीदवार"
+      "बैलिफ पोस्ट कोड 25/25 टियर-I परीक्षा में शामिल होने वाले उम्मीदवार"
     ]
   },
   "pdf": {
@@ -186,11 +220,11 @@
     "sha256": "400181c5f4f8e088daa25cfd765cee940ed7c4aa6d13f13585c0aa771af643e8",
     "text_kind": "ocr-legacy-font"
   },
-  "published_at": "2026-11-05T06:39:01Z",
+  "published_at": "2026-11-05T07:08:34Z",
   "qual": [
     "graduate"
   ],
-  "slug": "dsssb-bailiff-post-code-25-25-rejection-notice-2026-check-list",
+  "slug": "dsssb-bailiff-post-code-25-25-rejection-notice-2026",
   "source_id": "dsssb-home",
   "status": "approved",
   "title": "Rejection Notice No. 1666 Post Name: - Bailiff under Post Code 25/25 in Registrar Cooperative Societies Date: 22-10-2026 | 193.54 KB Download",
