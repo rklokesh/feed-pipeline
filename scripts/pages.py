@@ -375,6 +375,10 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
             '    <section class="kv glance" id="glance" data-t-aria="key">\n      <div class="h" data-t="key">At a glance</div>\n' +
             "".join(f'      <div class="r"><span data-t="{lk}">{esc(en[lk])}</span><span class="v" data-t="{vk}">{esc(en[vk])}</span></div>\n'
                     for lk, vk in rows) + elig_row + "    </section>"]
+    AD = lambda kind: ('    <div class="adslot" data-ad="' + kind + '"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox">'
+                       '<a class="house" href="https://t.me/sarkarichart" target="_blank" rel="noopener"><img src="/telegram.svg" alt="" width="22" height="22">'
+                       '<span data-t="adHouse">Get every new govt job alert on Telegram, free</span></a></div></div>')
+    main.append(AD("notice-top"))      # after "At a glance": the reader already has the key facts
     def fee_section():
         if not fees:
             return
@@ -500,6 +504,7 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
             en[f"a{k}"], hi[f"a{k}"] = q["a_en"], q.get("a_hi") or q["a_en"]
             body += f'      <div class="qa"><h3 data-t="q{k}">{esc(q["q_en"])}</h3><p data-t="a{k}">{esc(q["a_en"])}</p></div>\n'
         toc.append(("faq", "faqH"))
+        main.append(AD("notice-mid"))   # before the FAQ
         main.append(f'    <section class="kv faq" id="faq" data-t-aria="faqH">\n      <div class="h" data-t="faqH">Frequently asked questions</div>\n{body}    </section>')
     sec_list("chkH", "Final checklist", "अंतिम चेकलिस्ट", pg.get("checklist_en"), pg.get("checklist_hi"), ordered=False)
     if len(toc) >= 4:

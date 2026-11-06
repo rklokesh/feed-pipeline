@@ -455,6 +455,28 @@ html[lang="hi"] .hidet { display: none; }
   html.v2 .nav-r button.swap svg, html.v2 #lang.swap::before { animation: none !important; }
   html.v2.bar-compact .top .nav-r, html.v2.bar-compact .fback { transform: none; }
 }
+/* ===== Ad spaces: fixed-size grey boxes. Nothing inside can grow, float or leave the box (overflow hidden, fixed height,
+   contain: strict). Only manual Google AdSense units go here; Auto ads, anchor and vignette ads stay OFF in AdSense.
+   Until AdSense is approved each box shows our own Telegram card. ===== */
+.adslot { margin: 32px auto; width: 100%; max-width: 728px; }
+.adslot .adl { font-size: .6875rem; letter-spacing: .04em; color: var(--grey); text-align: center; margin: 0 0 6px; }
+.adslot .adbox { position: relative; height: 90px; width: 100%; margin: 0 auto; border-radius: 12px; overflow: hidden; contain: strict;
+  background: var(--soft); display: grid; place-items: center; }
+.adslot .adbox > * { max-width: 100%; max-height: 100%; }
+.adslot .house { display: flex; align-items: center; gap: 10px; padding: 0 16px; color: var(--ink); text-decoration: none; font-size: .9375rem; text-align: center; }
+.adslot .house:hover { text-decoration: underline; text-underline-offset: 4px; }
+.adslot .house img { width: 22px; height: 22px; flex: none; }
+@media (max-width: 640px) {
+  .adslot { margin: 28px auto; }
+  .adslot .adbox { width: 300px; height: 250px; }           /* in-content: 300x250 */
+  .adslot.slim .adbox { width: 320px; height: 100px; }      /* footer: 320x100 */
+  .adslot .house { flex-direction: column; gap: 12px; padding: 0 24px; }
+  .adslot .house img { width: 34px; height: 34px; }
+}
+li.adrow { display: block !important; list-style: none; border: 0 !important; padding: 0 !important; background: none !important; cursor: default; }
+li.adrow .adslot { margin: 20px auto; }
+@media print { .adslot, li.adrow { display: none !important; } }
+@media (max-width: 640px) { html, body { overflow-x: clip; } }   /* never a sideways wobble on phones (clip keeps sticky bars working) */
 </style>
 <script>document.documentElement.classList.add("v2");try{localStorage.removeItem("sc-v2")}catch(e){}</script>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
@@ -494,6 +516,7 @@ html[lang="hi"] .hidet { display: none; }
       <div class="r"><span data-t="gSel">Selection process</span><span class="v" data-t="gSelV">Computer Based Test → Mock test practice</span></div>
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#mistH" data-t="mistH">Common mistakes to avoid</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
+    <div class="adslot" data-ad="notice-top"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox"><a class="house" href="https://t.me/sarkarichart" target="_blank" rel="noopener"><img src="/telegram.svg" alt="" width="22" height="22"><span data-t="adHouse">Get every new govt job alert on Telegram, free</span></a></div></div>
     <section class="kv" id="about" data-t-aria="aboutH">
       <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">The Border Security Force (BSF) has issued the notice regarding the mock test link and e-admit cards for the Computer Based Test (CBT) for the recruitment of Head Constable (Radio Operator) and Head Constable (Radio Mechanic) in BSF Communication Setup 2025. The mock test link was uploaded on the BSF recruitment portal on 23 October 2026. Candidates appearing for the examination should utilize the mock test to familiarize themselves with the online exam format.</p>
@@ -536,6 +559,7 @@ html[lang="hi"] .hidet { display: none; }
       <a class="r" href="https://rectt.bsf.gov.in/" target="_blank" rel="noopener"><span data-t="lApply">Apply online</span><span class="v">rectt.bsf.gov.in</span></a>
       <a class="r" href="https://bsf.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">bsf.gov.in</span></a>
     </section>
+    <div class="adslot" data-ad="notice-mid"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox"><a class="house" href="https://t.me/sarkarichart" target="_blank" rel="noopener"><img src="/telegram.svg" alt="" width="22" height="22"><span data-t="adHouse">Get every new govt job alert on Telegram, free</span></a></div></div>
     <section class="kv faq" id="faq" data-t-aria="faqH">
       <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When was the BSF HC RO and RM mock test link released?</h3><p data-t="a0">The mock test link was uploaded on the official BSF website on 23 October 2026.</p></div>
@@ -632,6 +656,7 @@ html[lang="hi"] .hidet { display: none; }
     </div>
   </main>
 
+  <div class="adslot slim" data-ad="footer"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox"><a class="house" href="https://t.me/sarkarichart" target="_blank" rel="noopener"><img src="/telegram.svg" alt="" width="22" height="22"><span data-t="adHouse">Get every new govt job alert on Telegram, free</span></a></div></div>
   <footer>
     <p class="pref"><a href="https://www.google.com/preferences/source?q=sarkarichart.com" target="_blank" rel="noopener"><span data-t="prefSrc">Add SarkariChart as a preferred source on Google</span></a><img class="hand" src="/hand.webp" width="24" height="24" alt="" aria-hidden="true" loading="lazy" decoding="async"></p>
     <p class="g" data-t="disclaimer">SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.</p>
@@ -645,7 +670,7 @@ html[lang="hi"] .hidet { display: none; }
   const T = {
     en: {
       brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", logoAlt: "SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices", about: "About",
-      allNotices: "All notices", open: "Applications open", closed: "Applications closed", lastDay: "Last day",
+      allNotices: "All notices", adLabel: "Advertisement", adHouse: "Get every new govt job alert on Telegram, free", open: "Applications open", closed: "Applications closed", lastDay: "Last day",
       daysLeft: d => `${d} day${d === 1 ? "" : "s"} left`, locale: "en-IN", views: n => `${n.toLocaleString("en-IN")} views`,
       reportPage: "Report a mistake on this page", copyLink: "Copy link", copied: "Link copied ✓", dlPdf: "Download this page as PDF", share: "Share on WhatsApp",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
@@ -733,7 +758,7 @@ html[lang="hi"] .hidet { display: none; }
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
-      allNotices: "सभी सूचनाएँ", open: "आवेदन जारी हैं", closed: "आवेदन बंद हो चुके हैं", lastDay: "आज अंतिम दिन",
+      allNotices: "सभी सूचनाएँ", adLabel: "विज्ञापन", adHouse: "हर नई सरकारी नौकरी की सूचना टेलीग्राम पर, मुफ़्त", open: "आवेदन जारी हैं", closed: "आवेदन बंद हो चुके हैं", lastDay: "आज अंतिम दिन",
       daysLeft: d => `${d} दिन बाकी`, locale: "hi-IN", views: n => `${n.toLocaleString("en-IN")} बार देखा गया`,
       reportPage: "इस पेज पर गलती बताएँ", copyLink: "लिंक कॉपी करें", copied: "लिंक कॉपी हो गया ✓", dlPdf: "यह पेज पीडीएफ में डाउनलोड करें", share: "व्हाट्सऐप पर भेजें",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",

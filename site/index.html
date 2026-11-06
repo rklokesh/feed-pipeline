@@ -474,6 +474,28 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   html.v2.bar-compact .top:has(> .g) { padding-top: 6px; padding-bottom: 6px; }
   html.v2.bar-compact .top:has(> .g) .logo img, html.v2.bar-compact .top:has(> .g) .logo .mark { width: 40px; height: 40px; }
 }
+/* ===== Ad spaces: fixed-size grey boxes. Nothing inside can grow, float or leave the box (overflow hidden, fixed height,
+   contain: strict). Only manual Google AdSense units go here; Auto ads, anchor and vignette ads stay OFF in AdSense.
+   Until AdSense is approved each box shows our own Telegram card. ===== */
+.adslot { margin: 32px auto; width: 100%; max-width: 728px; }
+.adslot .adl { font-size: .6875rem; letter-spacing: .04em; color: var(--grey); text-align: center; margin: 0 0 6px; }
+.adslot .adbox { position: relative; height: 90px; width: 100%; margin: 0 auto; border-radius: 12px; overflow: hidden; contain: strict;
+  background: var(--soft); display: grid; place-items: center; }
+.adslot .adbox > * { max-width: 100%; max-height: 100%; }
+.adslot .house { display: flex; align-items: center; gap: 10px; padding: 0 16px; color: var(--ink); text-decoration: none; font-size: .9375rem; text-align: center; }
+.adslot .house:hover { text-decoration: underline; text-underline-offset: 4px; }
+.adslot .house img { width: 22px; height: 22px; flex: none; }
+@media (max-width: 640px) {
+  .adslot { margin: 28px auto; }
+  .adslot .adbox { width: 300px; height: 250px; }           /* in-content: 300x250 */
+  .adslot.slim .adbox { width: 320px; height: 100px; }      /* footer: 320x100 */
+  .adslot .house { flex-direction: column; gap: 12px; padding: 0 24px; }
+  .adslot .house img { width: 34px; height: 34px; }
+}
+li.adrow { display: block !important; list-style: none; border: 0 !important; padding: 0 !important; background: none !important; cursor: default; }
+li.adrow .adslot { margin: 20px auto; }
+@media print { .adslot, li.adrow { display: none !important; } }
+@media (max-width: 640px) { html, body { overflow-x: clip; } }   /* never a sideways wobble on phones (clip keeps sticky bars working) */
 </style>
 <script>document.documentElement.classList.add("v2");try{localStorage.removeItem("sc-v2")}catch(e){}</script>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
@@ -516,10 +538,12 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     <div class="tscroll" id="tscroll">
     <div class="row head"><span class="hide-sm" data-t="hPosted">Posted</span><span data-t="hNotice">Notice</span><span class="hide-sm" data-t="hOrg">Organisation</span><span class="hide-sm" data-t="hType">Type</span><span data-t="hLast">Last date</span><span class="hide-sm" data-t="hPdf">PDF</span></div>
     <ul class="list" id="list"></ul>
+    <template id="adtpl"><div class="adslot" data-ad="home-feed"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox"><a class="house" href="https://t.me/sarkarichart" target="_blank" rel="noopener"><img src="/telegram.svg" alt="" width="22" height="22"><span data-t="adHouse">Get every new govt job alert on Telegram, free</span></a></div></div></template>
     </div>
     <div class="more" id="more" hidden></div>
   </main>
 
+  <div class="adslot slim" data-ad="footer"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox"><a class="house" href="https://t.me/sarkarichart" target="_blank" rel="noopener"><img src="/telegram.svg" alt="" width="22" height="22"><span data-t="adHouse">Get every new govt job alert on Telegram, free</span></a></div></div>
   <footer>
     <p class="pref"><a href="https://www.google.com/preferences/source?q=sarkarichart.com" target="_blank" rel="noopener"><span data-t="prefSrc">Add SarkariChart as a preferred source on Google</span></a><img class="hand" src="/hand.webp" width="24" height="24" alt="" aria-hidden="true" loading="lazy" decoding="async"></p>
     <p class="g" data-t="disclaimer">SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.</p>
@@ -534,7 +558,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   const T = {
     en: {
       title: "SarkariChart – Latest Govt Jobs, Admit Card, Result 2026 | सरकारी नौकरी", brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", logoAlt: "SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices", about: "About", show: "Show",
-      newTip: "Newly posted", all: "All", trend: "Trending", jobs: "Jobs", soon: "Closing soon", prefSrc: "Add SarkariChart as a preferred source on Google", admits: "Admit cards", results: "Results", keys: "Answer keys", browse: "Jobs by state", fState: "State", fCat: "Category", fQual: "Education", fSort: "Sort", fMe: "Jobs I can apply for", fAll: "All", fCentral: "Central (all India)", fNewest: "Newest", fClosing: "Last date first", fJobs: (n, a) => `${n} job${n === 1 ? "" : "s"}${a ? ` · ${a} with a last date ahead` : ""}`, fClear: "Clear filters", fNone: "Nothing matches these filters.", fOldest: "Oldest first", fItems: n => `${n} notice${n === 1 ? "" : "s"}`, exams: "Exams", hExam: "Exam", hUpdated: "Updated", hLatest: "Latest", hUpdates: "Updates", nUpd: n => `${n} update${n === 1 ? "" : "s"}`,
+      newTip: "Newly posted", adLabel: "Advertisement", adHouse: "Get every new govt job alert on Telegram, free", all: "All", trend: "Trending", jobs: "Jobs", soon: "Closing soon", prefSrc: "Add SarkariChart as a preferred source on Google", admits: "Admit cards", results: "Results", keys: "Answer keys", browse: "Jobs by state", fState: "State", fCat: "Category", fQual: "Education", fSort: "Sort", fMe: "Jobs I can apply for", fAll: "All", fCentral: "Central (all India)", fNewest: "Newest", fClosing: "Last date first", fJobs: (n, a) => `${n} job${n === 1 ? "" : "s"}${a ? ` · ${a} with a last date ahead` : ""}`, fClear: "Clear filters", fNone: "Nothing matches these filters.", fOldest: "Oldest first", fItems: n => `${n} notice${n === 1 ? "" : "s"}`, exams: "Exams", hExam: "Exam", hUpdated: "Updated", hLatest: "Latest", hUpdates: "Updates", nUpd: n => `${n} update${n === 1 ? "" : "s"}`,
       searchLabel: "Search notices", showing: (a, b) => `Showing ${a} of ${b}`, showMore: n => `Show ${n} more`, phLead: "Search : ", searchPh: "Search : SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
       hPosted: "Posted", hNotice: "Notice", hOrg: "Organisation", hType: "Type", hLast: "Last date", hPostedR: "Posted", nil: "NIL", hPdf: "PDF",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
@@ -548,7 +572,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     },
     hi: {
       title: "सरकारी चार्ट – सरकारी नौकरी, एडमिट कार्ड, रिज़ल्ट 2026", logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में", show: "दिखाएँ",
-      newTip: "नई सूचना", all: "सभी", trend: "ट्रेंडिंग", jobs: "नौकरियाँ", soon: "जल्द बंद", prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की", browse: "राज्य अनुसार नौकरी", fState: "राज्य", fCat: "श्रेणी", fQual: "शिक्षा", fSort: "क्रम", fMe: "जिनमें मैं आवेदन कर सकूँ", fAll: "सभी", fCentral: "केंद्रीय (पूरा भारत)", fNewest: "नई पहले", fClosing: "अंतिम तिथि पहले", fJobs: (n, a) => `${n} नौकरियाँ${a ? ` · ${a} की अंतिम तिथि बाकी` : ""}`, fClear: "फ़िल्टर हटाएँ", fNone: "इन फ़िल्टर से कुछ नहीं मिला।", fOldest: "पुरानी पहले", fItems: n => `${n} सूचनाएँ`, exams: "परीक्षाएँ", hExam: "परीक्षा", hUpdated: "अपडेट", hLatest: "ताज़ा", hUpdates: "अपडेट", nUpd: n => `${n} अपडेट`,
+      newTip: "नई सूचना", adLabel: "विज्ञापन", adHouse: "हर नई सरकारी नौकरी की सूचना टेलीग्राम पर, मुफ़्त", all: "सभी", trend: "ट्रेंडिंग", jobs: "नौकरियाँ", soon: "जल्द बंद", prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की", browse: "राज्य अनुसार नौकरी", fState: "राज्य", fCat: "श्रेणी", fQual: "शिक्षा", fSort: "क्रम", fMe: "जिनमें मैं आवेदन कर सकूँ", fAll: "सभी", fCentral: "केंद्रीय (पूरा भारत)", fNewest: "नई पहले", fClosing: "अंतिम तिथि पहले", fJobs: (n, a) => `${n} नौकरियाँ${a ? ` · ${a} की अंतिम तिथि बाकी` : ""}`, fClear: "फ़िल्टर हटाएँ", fNone: "इन फ़िल्टर से कुछ नहीं मिला।", fOldest: "पुरानी पहले", fItems: n => `${n} सूचनाएँ`, exams: "परीक्षाएँ", hExam: "परीक्षा", hUpdated: "अपडेट", hLatest: "ताज़ा", hUpdates: "अपडेट", nUpd: n => `${n} अपडेट`,
       searchLabel: "सूचनाएँ खोजें", showing: (a, b) => `${b} में से ${a} दिख रहीं`, showMore: n => `${n} और दिखाएँ`, phLead: "खोजें : ", searchPh: "खोजें : एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
       hPosted: "जारी", hNotice: "सूचना", hOrg: "संस्था", hType: "प्रकार", hLast: "अंतिम तिथि", hPostedR: "जारी", nil: "निरंक", hPdf: "पीडीएफ",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
@@ -1116,6 +1140,9 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     document.getElementById("list").innerHTML = rows.slice(0, shown).map(i =>
       `<li class="lr${isNew(i) ? " fresh" : ""}"${i.e && i.type === "Job" && i.last && left(i.last) >= 0 ? ` data-e="${esc(JSON.stringify(i.e))}"` : ""}><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm"><span class="pc"><span>${soonView ? lastCell(i) : fmt(i.posted)}</span><span class="slot">${isNew(i) ? `<img class="newtag" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" data-tip="${t("newTip")}" width="23" height="14">` : ""}</span><span class="siren-r">${inCat(i, "soon") ? SIREN() : ""}</span></span></span><span class="t" data-full="${esc(title(i))}">${i.tr ? FIRE() : ""}${inCat(i, "soon") ? SIREN().replace('class="rsiren"', 'class="rsiren show-sm"') : ""}${isNew(i) ? `<img class="newtag show-sm" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" data-tip="${t("newTip")}" width="23" height="14">` : ""}${esc(title(i))}</span><span class="hide-sm g cut" data-full="${esc(org(i) || "")}">${esc(org(i) || "")}</span><span class="hide-sm g cut" data-full="${esc(t(i.type))}">${t(i.type)}</span><span class="num" style="white-space:nowrap">${soonView ? `<span class="hide-sm g">${fmt(i.posted)}</span><span class="show-sm">${lastCell(i)}</span>` : lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
     ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
+    // one ad space inside the list, after the 10th notice (never at the top, never between tabs and the first rows)
+    const L = document.getElementById("list"), lrs = L.querySelectorAll("li.lr");
+    if (lrs.length > 14) lrs[9].insertAdjacentHTML("afterend", `<li class="adrow">${document.getElementById("adtpl").innerHTML}</li>`);
     // One long page, revealed 50 rows at a time (no "page 2"): Ctrl+F, search and the back button keep working.
     const more = document.getElementById("more");
     more.hidden = allRows.length <= shown;
