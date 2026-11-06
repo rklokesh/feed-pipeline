@@ -257,7 +257,7 @@ footer a::after, .crumbs a::after { inset: -10px -5px; }
 /* Full-title tooltip for cut-off notice titles: same look as the days-left tooltip, but floats above the row so it is never clipped */
 .ftip { position: fixed; z-index: 20; max-width: min(640px, calc(100vw - 32px)); font-size: .75rem; line-height: 1.3; padding: 3px 7px; border-radius: 4px;
   background: color-mix(in srgb, var(--page) 94%, var(--ink)); color: var(--ink); border: 1px solid color-mix(in srgb, var(--ink) 16%, transparent); box-shadow: 0 2px 8px color-mix(in srgb, var(--ink) 14%, transparent); pointer-events: none; opacity: 0; transform: translateY(3px); transition: opacity .12s ease, transform .12s ease; }
-.ftip.on { opacity: 1; transform: none; transition-delay: 60ms; }
+.ftip.on { opacity: 1; transform: none; transition-delay: 0ms; }
 .tabs .fire { display: inline-block; margin-left: 5px; line-height: 0; vertical-align: -2px; }
 .tabs .fire img { width: 16px; height: 16px; display: block; }
 .tabs .siren { display: inline-block; margin-left: 5px; line-height: 0; vertical-align: -2px; }  /* flashing siren beside "Closing soon"; still image for reduced-motion users */
@@ -1040,8 +1040,8 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   const DL = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>';
   // Closing-soon rows carry the same flashing siren as the tab (same slot and size as the NEW arrow)
   // small icons in rows; hovering shows what they mean
-  const SIREN = () => `<picture class="rsiren"><source srcset="/siren-still.png" media="(prefers-reduced-motion: reduce)"><img src="/siren.webp" width="14" height="14" alt="${esc(t("soon"))}" title="${esc(t("soon"))}" decoding="async"></picture>`;
-  const FIRE = () => `<picture class="rfire"><source srcset="/fire-2-still.png" media="(prefers-reduced-motion: reduce)"><img src="/fire-2.webp" width="14" height="14" alt="${esc(t("trend"))}" title="${esc(t("trend"))}" decoding="async"></picture>`;
+  const SIREN = () => `<picture class="rsiren"><source srcset="/siren-still.png" media="(prefers-reduced-motion: reduce)"><img src="/siren.webp" width="14" height="14" alt="${esc(t("soon"))}" data-tip="${esc(t("soon"))}" decoding="async"></picture>`;
+  const FIRE = () => `<picture class="rfire"><source srcset="/fire-2-still.png" media="(prefers-reduced-motion: reduce)"><img src="/fire-2.webp" width="14" height="14" alt="${esc(t("trend"))}" data-tip="${esc(t("trend"))}" decoding="async"></picture>`;
   // "Closing soon" = open jobs whose last date is within a week (listed newest first, like every tab; the days-left column shows urgency).
   const SOON_DAYS = 7;
   const inCat = (i, c) => c === "all" ? true : c === "trend" ? !!i.tr : c === "soon" ? i.type === "Job" && !!i.last && left(i.last) <= SOON_DAYS : i.type === c;
@@ -1105,8 +1105,8 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     moveInk();
     const soonView = cat === "soon" && !q;
     document.getElementById("tscroll").classList.toggle("soon", soonView);
-    document.querySelectorAll(".tabs .fire img").forEach(x => { x.title = t("trend"); x.alt = t("trend"); });
-    document.querySelectorAll(".tabs .siren img").forEach(x => { x.title = t("soon"); x.alt = t("soon"); });
+    document.querySelectorAll(".tabs .fire img").forEach(x => { x.dataset.tip = t("trend"); x.alt = t("trend"); });
+    document.querySelectorAll(".tabs .siren img").forEach(x => { x.dataset.tip = t("soon"); x.alt = t("soon"); });
     const hd = document.querySelector(".row.head").children;
     hd[0].dataset.t = soonView ? "hLast" : "hPosted"; hd[0].textContent = t(hd[0].dataset.t);
     // phones hide the first column, so there the right column keeps showing the last date
@@ -1116,7 +1116,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     hubHint();
     const showNl = false;   // "N new since your last visit" retired: New is now the same for everyone nl.classList.toggle("off", !showNl); nl.textContent = showNl ? t("sinceLast")(nNew) : "\u00a0";
     document.getElementById("list").innerHTML = rows.slice(0, shown).map(i =>
-      `<li class="lr${isNew(i) ? " fresh" : ""}"${i.e && i.type === "Job" && i.last && left(i.last) >= 0 ? ` data-e="${esc(JSON.stringify(i.e))}"` : ""}><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm"><span class="pc"><span>${soonView ? lastCell(i) : fmt(i.posted)}</span><span class="slot">${isNew(i) ? `<img class="newtag" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" title="${t("newTip")}" width="23" height="14">` : ""}</span><span class="siren-r">${inCat(i, "soon") ? SIREN() : ""}</span></span></span><span class="t" data-full="${esc(title(i))}">${i.tr ? FIRE() : ""}${inCat(i, "soon") ? SIREN().replace('class="rsiren"', 'class="rsiren show-sm"') : ""}${isNew(i) ? `<img class="newtag show-sm" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" title="${t("newTip")}" width="23" height="14">` : ""}${esc(title(i))}</span><span class="hide-sm g cut" data-full="${esc(org(i) || "")}">${esc(org(i) || "")}</span><span class="hide-sm g cut" data-full="${esc(t(i.type))}">${t(i.type)}</span><span class="num" style="white-space:nowrap">${soonView ? `<span class="hide-sm g">${fmt(i.posted)}</span><span class="show-sm">${lastCell(i)}</span>` : lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
+      `<li class="lr${isNew(i) ? " fresh" : ""}"${i.e && i.type === "Job" && i.last && left(i.last) >= 0 ? ` data-e="${esc(JSON.stringify(i.e))}"` : ""}><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm"><span class="pc"><span>${soonView ? lastCell(i) : fmt(i.posted)}</span><span class="slot">${isNew(i) ? `<img class="newtag" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" data-tip="${t("newTip")}" width="23" height="14">` : ""}</span><span class="siren-r">${inCat(i, "soon") ? SIREN() : ""}</span></span></span><span class="t" data-full="${esc(title(i))}">${i.tr ? FIRE() : ""}${inCat(i, "soon") ? SIREN().replace('class="rsiren"', 'class="rsiren show-sm"') : ""}${isNew(i) ? `<img class="newtag show-sm" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" data-tip="${t("newTip")}" width="23" height="14">` : ""}${esc(title(i))}</span><span class="hide-sm g cut" data-full="${esc(org(i) || "")}">${esc(org(i) || "")}</span><span class="hide-sm g cut" data-full="${esc(t(i.type))}">${t(i.type)}</span><span class="num" style="white-space:nowrap">${soonView ? `<span class="hide-sm g">${fmt(i.posted)}</span><span class="show-sm">${lastCell(i)}</span>` : lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
     ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
     // One long page, revealed 50 rows at a time (no "page 2"): Ctrl+F, search and the back button keep working.
     const more = document.getElementById("more");
@@ -1156,6 +1156,17 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     return r.getBoundingClientRect().width > box + 0.01;
   };
   const tipOn = e => {
+    // icons (flame, siren, NEW arrow): our own tooltip, shown at once (the browser's built-in one waits about a second)
+    const ic = e.target.closest("[data-tip]");
+    if (ic) {
+      if (ic === ftipFor) return;
+      ftipFor = ic; ftip.classList.remove("on"); ftip.textContent = ic.dataset.tip;
+      const r = ic.getBoundingClientRect();
+      ftip.style.left = Math.max(16, Math.min(r.left + r.width / 2 - ftip.offsetWidth / 2, innerWidth - ftip.offsetWidth - 16)) + "px";
+      ftip.style.top = (r.top - ftip.offsetHeight - 6) + "px";
+      requestAnimationFrame(() => ftip.classList.add("on"));
+      return;
+    }
     const t = e.target.closest(".t[data-full], .cut[data-full]");
     if (t === ftipFor) return;
     ftipFor = t; ftip.classList.remove("on");
@@ -1170,6 +1181,13 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   listEl.addEventListener("mouseover", tipOn);
   listEl.addEventListener("mousemove", tipOn, { passive: true });
   document.getElementById("list").addEventListener("mouseleave", () => { ftipFor = null; ftip.classList.remove("on"); });
+  // tab icons sit under each tab's larger touch area, so find the icon by pointer position
+  const tabsEl = document.querySelector(".tabs");
+  tabsEl.addEventListener("mousemove", e => {
+    const ic = [...tabsEl.querySelectorAll("[data-tip]")].find(x => { const r = x.getBoundingClientRect(); return e.clientX >= r.left - 3 && e.clientX <= r.right + 3 && e.clientY >= r.top - 3 && e.clientY <= r.bottom + 3; });
+    if (ic) tipOn({ target: ic }); else if (ftipFor && tabsEl.contains(ftipFor)) { ftipFor = null; ftip.classList.remove("on"); }
+  }, { passive: true });
+  tabsEl.addEventListener("mouseleave", () => { ftipFor = null; ftip.classList.remove("on"); });
   // the list is re-drawn on tab switch/search: forget the old row so the next hover always shows the tooltip
   new MutationObserver(() => { ftipFor = null; ftip.classList.remove("on"); }).observe(document.getElementById("list"), { childList: true });
   addEventListener("scroll", () => { ftipFor = null; ftip.classList.remove("on"); }, { passive: true });
