@@ -34,13 +34,13 @@
   "page": {
     "after_en": [
       "Release of official answer keys",
-      "Submission of objections",
-      "Declaration of written test results"
+      "Submission of representations or objections",
+      "Declaration of written test results followed by interviews"
     ],
     "after_hi": [
       "आधिकारिक उत्तर कुंजी जारी करना",
-      "आपत्तियां प्रस्तुत करना",
-      "लिखित परीक्षा के परिणामों की घोषणा"
+      "आपत्तियों या अभ्यावेदन प्रस्तुत करना",
+      "साक्षात्कार के बाद लिखित परीक्षा के परिणामों की घोषणा"
     ],
     "age": [],
     "apply_start": null,
@@ -48,25 +48,31 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Verify the test booklet series and subject code.",
-      "Check questions against the official syllabus and responses."
+      "Match your marked answers with the Series A question paper",
+      "Verify scores using the official marking scheme"
     ],
     "checklist_hi": [
-      "परीक्षा पुस्तिका श्रृंखला और विषय कोड सत्यापित करें।",
-      "आधिकारिक पाठ्यक्रम और प्रतिक्रियाओं के विरुद्ध प्रश्नों की जाँच करें।"
+      "सीरीज ए प्रश्न पत्र के साथ अपने चिह्नित उत्तरों का मिलान करें",
+      "आधिकारिक अंकन योजना का उपयोग करके अंकों सत्यापित करें"
     ],
     "conducted_by_en": "Jammu and Kashmir Public Service Commission (JKPSC)",
     "conducted_by_hi": "जम्मू और कश्मीर लोक सेवा आयोग (JKPSC)",
     "dates": [
       {
-        "label_en": "Exam Date",
+        "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "12 Aug 2026",
-        "value_hi": "12 अग 2026"
+        "value_hi": "12 अगस्त 2026"
       }
     ],
-    "documents_en": [],
-    "documents_hi": [],
+    "documents_en": [
+      "Admission Certificate",
+      "Ball point pen"
+    ],
+    "documents_hi": [
+      "प्रवेश प्रमाण पत्र",
+      "बॉल पॉइंट पेन"
+    ],
     "eligibility": [],
     "exam_date": "2026-08-12",
     "exam_pattern": [
@@ -78,59 +84,59 @@
         "time": "2 Hours"
       },
       {
-        "marks": "0.25 penalty for wrong answers",
+        "marks": "0.25",
         "part_en": "Negative marking",
         "part_hi": "नकारात्मक अंकन",
         "questions": null,
-        "time": null
+        "time": ""
       }
     ],
     "explain": [
       {
-        "a_en": "These are the official question booklets released by the Jammu and Kashmir Public Service Commission for the written tests conducted for recruitment to gazetted positions in Government Medical Colleges and SKIMS Soura.",
-        "a_hi": "ये सरकारी मेडिकल कॉलेजों और स्किम्स सौरा में राजपत्रित पदों पर भर्ती के लिए आयोजित लिखित परीक्षाओं के लिए जम्मू और कश्मीर लोक सेवा आयोग द्वारा जारी आधिकारिक प्रश्न पुस्तिकाएं हैं।",
-        "q_en": "What are JKPSC Gazetted Posts Question Papers?",
-        "q_hi": "जेकेपीएससी राजपत्रित पद प्रश्न पत्र क्या हैं?"
+        "a_en": "It is a recruitment examination conducted by the Jammu and Kashmir Public Service Commission to fill gazetted posts across various disciplines in Government Medical Colleges and SKIMS, Soura.",
+        "a_hi": "यह सरकारी मेडिकल कॉलेजों और स्किम्स, सौरा में विभिन्न विषयों में राजपत्रित पदों को भरने के लिए जम्मू और कश्मीर लोक सेवा आयोग द्वारा आयोजित एक भर्ती परीक्षा है।",
+        "q_en": "What is the JKPSC Gazetted Written Examination?",
+        "q_hi": "जेकेपीएससी राजपत्रित लिखित परीक्षा क्या है?"
       }
     ],
     "extra": [
       {
-        "label_en": "Time Allowed",
+        "label_en": "Negative marking",
+        "label_hi": "नकारात्मक अंकन",
+        "value_en": "0.25 marks for every wrong answer",
+        "value_hi": "प्रत्येक गलत उत्तर के लिए 0.25 अंक"
+      },
+      {
+        "label_en": "Time allowed",
         "label_hi": "निर्धारित समय",
         "value_en": "Two Hours",
         "value_hi": "दो घंटे"
       },
       {
-        "label_en": "Maximum Marks",
+        "label_en": "Maximum marks",
         "label_hi": "अधिकतम अंक",
         "value_en": "100",
         "value_hi": "100"
-      },
-      {
-        "label_en": "Negative Marking",
-        "label_hi": "नकारात्मक अंकन",
-        "value_en": "One-fourth (0.25) of the marks assigned to that question",
-        "value_hi": "उस प्रश्न के लिए निर्धारित अंकों का एक चौथाई (0.25)"
       }
     ],
     "faq": [
       {
         "a_en": "The written examination was held on 12 August 2026.",
         "a_hi": "लिखित परीक्षा 12 अगस्त 2026 को आयोजित की गई थी।",
-        "q_en": "When was the JKPSC written examination for gazetted posts held?",
-        "q_hi": "राजपत्रित पदों के लिए जेकेपीएससी की लिखित परीक्षा कब आयोजित की गई थी?"
+        "q_en": "When was the JKPSC Gazetted written examination held?",
+        "q_hi": "जेकेपीएससी राजपत्रित लिखित परीक्षा कब आयोजित की गई थी?"
       },
       {
-        "a_en": "You can download the question papers from the official JKPSC website at jkpsc.nic.in.",
-        "a_hi": "आप आधिकारिक जेकेपीएससी वेबसाइट jkpsc.nic.in से प्रश्न पत्र डाउनलोड कर सकते हैं।",
-        "q_en": "Where can I download the JKPSC question papers?",
-        "q_hi": "मैं जेकेपीएससी प्रश्न पत्र कहां से डाउनलोड कर सकता हूं?"
+        "a_en": "The test booklet contained 100 objective-type items.",
+        "a_hi": "टेस्ट बुकलेट में 100 वस्तुनिष्ठ प्रकार के प्रश्न थे।",
+        "q_en": "How many questions were there in the test booklet?",
+        "q_hi": "टेस्ट बुकलेट में कितने प्रश्न थे?"
       },
       {
-        "a_en": "The time allowed for the examination was two hours.",
-        "a_hi": "परीक्षा के लिए निर्धारित समय दो घंटे था।",
-        "q_en": "What was the duration of the examination?",
-        "q_hi": "परीक्षा की अवधि क्या थी?"
+        "a_en": "Yes, one-fourth (0.25) of the marks assigned to a question is deducted for a wrong answer.",
+        "a_hi": "हां, गलत उत्तर के लिए किसी प्रश्न के निर्धारित अंकों का एक चौथाई (0.25) काटा जाता है।",
+        "q_en": "Is there negative marking in the exam?",
+        "q_hi": "क्या परीक्षा में नकारात्मक अंकन है?"
       }
     ],
     "fees": [],
@@ -139,19 +145,25 @@
     "hindi_notice_url": null,
     "how_en": [
       "Visit the official JKPSC website at jkpsc.nic.in.",
-      "Navigate to the notification or question papers section.",
-      "Click on the link for the written examination question papers for gazetted posts in GMCs/SKIMS Soura (Forenoon Session)."
+      "Navigate to the notification or question paper section for the respective exam.",
+      "Download and save the Series A test booklet PDF for reference."
     ],
     "how_hi": [
       "आधिकारिक जेकेपीएससी वेबसाइट jkpsc.nic.in पर जाएं।",
-      "अधिसूचना या प्रश्न पत्र अनुभाग पर जाएं।",
-      "जीएमसी/स्किम्स सौरा में राजपत्रित पदों के लिए लिखित परीक्षा प्रश्न पत्रों (पूर्वाह्न सत्र) के लिंक पर क्लिक करें।"
+      "संबंधित परीक्षा के लिए अधिसूचना या प्रश्न पत्र खंड पर जाएं।",
+      "संदर्भ के लिए सीरीज ए टेस्ट बुकलेट पीडीएफ डाउनलोड और सहेजें।"
     ],
-    "intro_en": "The Jammu and Kashmir Public Service Commission (JKPSC) has released the question papers (Series A, Forenoon Session) for the written examination conducted on 12 August 2026 for filling up gazetted posts in various disciplines in Government Medical Colleges (GMCs) and SKIMS, Soura in the Health and Medical Education (HME) Department. Candidates who appeared for the examination can view the test booklet containing 100 objective-type questions and instructions.",
-    "intro_hi": "जम्मू और कश्मीर लोक सेवा आयोग (JKPSC) ने स्वास्थ्य और चिकित्सा शिक्षा (HME) विभाग के तहत सरकारी मेडिकल कॉलेजों (GMC) और स्किम्स, सौरा में विभिन्न विषयों में राजपत्रित पदों को भरने के लिए 12 अगस्त 2026 को आयोजित लिखित परीक्षा के लिए प्रश्न पत्र (सीरीज ए, पूर्वाह्न सत्र) जारी कर दिया है। परीक्षा में शामिल होने वाले उम्मीदवार 100 वस्तुनिष्ठ प्रकार के प्रश्नों और निर्देशों वाली परीक्षा पुस्तिका देख सकते हैं।",
+    "intro_en": "The Jammu and Kashmir Public Service Commission (JKPSC) has released the question papers for the written examination held on 12 August 2026 for gazetted posts in various disciplines in GMCs and SKIMS, Soura in HME. Candidates who appeared for the examination can check the Series A question booklet to review their answers and prepare for subsequent stages. The test booklet contains objective-type questions with a negative marking scheme of 0.25 marks for incorrect answers.",
+    "intro_hi": "जम्मू और कश्मीर लोक सेवा आयोग (JKPSC) ने एचएमई में जीएमसी और स्किम्स, सौरा में विभिन्न विषयों में राजपत्रित पदों के लिए 12 अगस्त 2026 को आयोजित लिखित परीक्षा के प्रश्न पत्र जारी कर दिए हैं। परीक्षा में शामिल होने वाले उम्मीदवार अपने उत्तरों की समीक्षा करने और आगे के चरणों की तैयारी के लिए सीरीज ए प्रश्न पुस्तिका देख सकते हैं। परीक्षा पुस्तिका में गलत उत्तरों के लिए 0.25 अंकों की नकारात्मक अंकन योजना के साथ वस्तुनिष्ठ प्रकार के प्रश्न शामिल हैं।",
     "last_date": null,
-    "mistakes_en": [],
-    "mistakes_hi": [],
+    "mistakes_en": [
+      "Do not open the test booklet until instructed.",
+      "Ensure correct encoding of Roll Number and Test Booklet Series Code on the OMR sheet."
+    ],
+    "mistakes_hi": [
+      "निर्देश मिलने तक टेस्ट बुकलेट न खोलें।",
+      "ओएमआर शीट पर रोल नंबर और टेस्ट बुकलेट सीरीज कोड को सही ढंग से दर्ज करना सुनिश्चित करें।"
+    ],
     "not_en": [],
     "not_hi": [],
     "notice_date": "2026-08-12",
@@ -160,31 +172,19 @@
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Exam Name",
-        "label_hi": "परीक्षा का नाम",
-        "value_en": "Written Examination for Gazetted Posts in GMCs/SKIMS, Soura",
-        "value_hi": "जीएमसी/स्किम्स, सौरा में राजपत्रित पदों के लिए लिखित परीक्षा"
-      },
-      {
-        "label_en": "Exam Date",
+        "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "12 Aug 2026",
-        "value_hi": "12 अग 2026"
+        "value_hi": "12 अगस्त 2026"
       },
       {
-        "label_en": "Post Name",
-        "label_hi": "पद का नाम",
-        "value_en": "Gazetted Posts (Assistant Professor Dermatology, etc.) in GMCs/SKIMS Soura",
-        "value_hi": "जीएमसी/स्किम्स सौरा में राजपत्रित पद (सहायक प्राध्यापक त्वचाविज्ञान, आदि)"
+        "label_en": "Exam type",
+        "label_hi": "परीक्षा प्रकार",
+        "value_en": "Written Examination (Objective Type)",
+        "value_hi": "लिखित परीक्षा (वस्तुनिष्ठ प्रकार)"
       },
       {
-        "label_en": "Session",
-        "label_hi": "सत्र",
-        "value_en": "Forenoon",
-        "value_hi": "पूर्वाह्न"
-      },
-      {
-        "label_en": "Test Booklet Series",
+        "label_en": "Question booklet series",
         "label_hi": "प्रश्न पुस्तिका सीरीज",
         "value_en": "Series A",
         "value_hi": "सीरीज ए"
@@ -192,38 +192,40 @@
     ],
     "salary": [],
     "selection_en": [
-      "Written Test (Objective Type)"
+      "Written Examination (Objective Type)",
+      "Interview / Document Verification"
     ],
     "selection_hi": [
-      "लिखित परीक्षा (वस्तुनिष्ठ प्रकार)"
+      "लिखित परीक्षा (वस्तुनिष्ठ प्रकार)",
+      "साक्षात्कार / दस्तावेज़ सत्यापन"
     ],
     "share_card": {
-      "headline_en": "Question Papers Series A",
-      "headline_hi": "प्रश्न पत्र सीरीज ए",
+      "headline_en": "Question Papers",
+      "headline_hi": "प्रश्न पत्र",
       "kind": "answer",
       "line_en": "Gazetted Posts Exam 2025",
       "line_hi": "राजपत्रित पद परीक्षा 2025",
       "posts": null
     },
-    "status_en": "Question papers released",
-    "status_hi": "प्रश्न पत्र जारी किए गए",
-    "summary_en": "View and download the question papers for the written examination held by JKPSC for gazetted posts in GMCs and SKIMS Soura.",
-    "summary_hi": "जीएमसी और स्किम्स सौरा में राजपत्रित पदों के लिए जेकेपीएससी द्वारा आयोजित लिखित परीक्षा के प्रश्न पत्र देखें और डाउनलोड करें।",
+    "status_en": "Question papers released for the written examination held on 12 Aug 2026",
+    "status_hi": "12 अगस्त 2026 को आयोजित लिखित परीक्षा के लिए प्रश्न पत्र जारी कर दिए गए हैं",
+    "summary_en": "View and download the official question papers (Series A) for the written examination held for gazetted posts in GMCs and SKIMS Soura by JKPSC.",
+    "summary_hi": "जीएमसी और स्किम्स सौरा में राजपत्रित पदों के लिए आयोजित लिखित परीक्षा के आधिकारिक प्रश्न पत्र (सीरीज ए) देखें और डाउनलोड करें।",
     "vacancies": [
       {
-        "detail_en": "Various disciplines including Assistant Professor Dermatology",
-        "detail_hi": "सहायक प्राध्यापक त्वचाविज्ञान सहित विभिन्न विषय",
-        "post_en": "Gazetted Posts in GMCs/SKIMS Soura",
-        "post_hi": "जीएमसी/स्किम्स सौरा में राजपत्रित पद",
+        "detail_en": "As per notification",
+        "detail_hi": "अधिसूचना के अनुसार",
+        "post_en": "Gazetted Posts in various disciplines in GMCs/SKIMS, Soura",
+        "post_hi": "जीएमसी/स्किम्स, सौरा में विभिन्न विषयों में राजपत्रित पद",
         "total": null
       }
     ],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the JKPSC written examination for gazetted posts on 12 August 2026"
+      "Candidates who appeared for the JKPSC Gazetted written examination 2026."
     ],
     "who_hi": [
-      "वे उम्मीदवार जो 12 अगस्त 2026 को राजपत्रित पदों के लिए जेकेपीएससी की लिखित परीक्षा में शामिल हुए थे"
+      "वे उम्मीदवार जो जेकेपीएससी राजपत्रित लिखित परीक्षा 2026 में शामिल हुए थे।"
     ]
   },
   "pdf": {
@@ -231,7 +233,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-03T16:57:56Z",
-  "rewrite": true,
   "slug": "jkpsc-gazetted-posts-exam-question-papers-2025-download-series-a",
   "source_id": "jkpsc-home",
   "status": "approved",
