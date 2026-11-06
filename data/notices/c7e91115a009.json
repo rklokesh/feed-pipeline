@@ -1,0 +1,71 @@
+{
+  "board_url": "https://www.rrc-wr.com/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "CEN RRC 08/2024"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "CEN RRC 08/2024 dt 22.01.25"
+      }
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "www.rrc.wr.com"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "Website:www.rrc.wr.com"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Level-1 posts"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "CEN RRC 08/2024 dt 22.01.25 for Level-1 posts"
+      }
+    },
+    "total_vacancies": {
+      "evidence": "ebsite:www.rrc.wr.com CEN RRC 08/2024 dt 22.01.25 for Level-1 posts Ref:- This office notice dated 21-10-26 regarding Document verification and Med",
+      "source": "rule",
+      "value": 1
+    }
+  },
+  "first_seen": "2026-11-06T19:15:09+00:00",
+  "id": "c7e91115a009",
+  "kind": "notification",
+  "org": "RRC Western Railway",
+  "pdf": {
+    "bytes": 424151,
+    "pages": 1,
+    "sha256": "b468c6cb4286d293e5d6776060151ed0e376dc1188a395fc7d75875d939e14c8",
+    "text_kind": "text"
+  },
+  "source_id": "rrc-wr",
+  "status": "pending_review",
+  "title": "to view/download Notice regarding Document Verification and Medical Examination - Uploaded on 06-11-2026",
+  "url": "https://www.rrc-wr.com/rrwc/Files/1a0afae9-8065-49aa-9234-be717d4500e7.pdf"
+}
