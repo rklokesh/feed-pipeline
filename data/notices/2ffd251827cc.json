@@ -1,5 +1,23 @@
 {
+  "auto_published": true,
   "board_url": "https://ssc.gov.in/home/notice-board",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-17",
+    "last_date": null,
+    "list": true,
+    "posts": "Enrolled Persons",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Examination city details for Coast Guard Enrolled Persons Test batches 01/2027 and 02/2027 are now available. Candidates should log in to the portal to check their exam city and download the admit card 2 to 3 days before the exam.",
+    "summary_hi": "तटरक्षक नामांकित व्यक्ति परीक्षा बैच 01/2027 और 02/2027 के लिए परीक्षा शहर का विवरण उपलब्ध है। उम्मीदवार पोर्टल पर लॉगिन करके अपने परीक्षा शहर की जांच करें और परीक्षा से 2 से 3 दिन पहले प्रवेश पत्र डाउनलोड करें।",
+    "title_en": "SSC Coast Guard Admit Card 2026 – Exam City Slip Link CGEPT",
+    "title_hi": "एसएससी कोस्ट गार्ड एडमिट कार्ड 2026 – परीक्षा शहर स्लिप लिंक सीजीईपीटी",
+    "type": "Admit card",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {},
   "extraction": {
     "ai": null
   },
@@ -12,16 +30,184 @@
   },
   "first_seen": "2026-11-06T11:44:23+00:00",
   "id": "2ffd251827cc",
+  "issue": 1147,
+  "issue_tidy": true,
   "kind": "admit_card",
+  "notice_date": "2026-11-06",
   "org": "SSC",
+  "page": {
+    "after_en": [
+      "Appear for the Computer Based Examination on the scheduled date and venue."
+    ],
+    "after_hi": [
+      "निर्धारित तिथि और स्थान पर कंप्यूटर आधारित परीक्षा में शामिल हों।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://ssc.gov.in/",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check your exam city on the portal",
+      "Download the admit card 2-3 days prior to exam",
+      "Read all instructions on the admit card"
+    ],
+    "checklist_hi": [
+      "पोर्टल पर अपने परीक्षा शहर की जांच करें",
+      "परीक्षा से 2-3 दिन पहले प्रवेश पत्र डाउनलोड करें",
+      "प्रवेश पत्र पर सभी निर्देशों को पढ़ें"
+    ],
+    "conducted_by_en": "Staff Selection Commission (SSC)",
+    "conducted_by_hi": "कर्मचारी चयन आयोग (एसएससी)",
+    "dates": [
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "17 Nov 2026 to 18 Nov 2026",
+        "value_hi": "17 नव 2026 से 18 नव 2026"
+      },
+      {
+        "label_en": "Admit card download",
+        "label_hi": "प्रवेश पत्र डाउनलोड",
+        "value_en": "2-3 days before exam date",
+        "value_hi": "परीक्षा तिथि से 2-3 दिन पहले"
+      }
+    ],
+    "documents_en": [
+      "E-Admit Card",
+      "Valid photo ID proof"
+    ],
+    "documents_hi": [
+      "ई-प्रवेश पत्र",
+      "वैध फोटो पहचान प्रमाण"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-11-17",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "Coast Guard Enrolled Persons Test (CGEPT) is an examination conducted for recruitment of Enrolled Persons in the Indian Coast Guard.",
+        "a_hi": "तटरक्षक नामांकित व्यक्ति परीक्षा (सीजीईपीटी) भारतीय तटरक्षक बल में नामांकित व्यक्तियों की भर्ती के लिए आयोजित की जाने वाली परीक्षा है।",
+        "q_en": "What is CGEPT?",
+        "q_hi": "सीजीईपीटी क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "The exam is scheduled to be held from 17 November 2026 to 18 November 2026.",
+        "a_hi": "परीक्षा 17 नवंबर 2026 से 18 नवंबर 2026 तक आयोजित होने निर्धारित है।",
+        "q_en": "When is the CGEPT 01/2027 and 02/2027 exam scheduled?",
+        "q_hi": "सीजीईपीटी 01/2027 और 02/2027 की परीक्षा कब निर्धारित है?"
+      },
+      {
+        "a_en": "You can check your exam city by logging into the Indian Coast Guard examination portal through the SSC website.",
+        "a_hi": "आप एसएससी वेबसाइट के माध्यम से भारतीय तटरक्षक परीक्षा पोर्टल पर लॉगिन करके अपने परीक्षा शहर की जांच कर सकते हैं।",
+        "q_en": "How can I check my exam city?",
+        "q_hi": "मैं अपने परीक्षा शहर की जांच कैसे कर सकता हूँ?"
+      },
+      {
+        "a_en": "The admit card will tentatively be available for download 2 to 3 days prior to the respective examination date.",
+        "a_hi": "प्रवेश पत्र संबंधित परीक्षा तिथि से 2 से 3 दिन पहले डाउनलोड के लिए उपलब्ध होने की संभावना है।",
+        "q_en": "When will the admit card be available for download?",
+        "q_hi": "प्रवेश पत्र डाउनलोड के लिए कब उपलब्ध होगा?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "SSC Coast Guard Admit Card 2026 – Exam City Slip Link CGEPT",
+    "h1_hi": "एसएससी कोस्ट गार्ड एडमिट कार्ड 2026 – परीक्षा शहर स्लिप लिंक सीजीईपीटी",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official website of SSC at https://ssc.gov.in/.",
+      "Click on the hyperlink titled 'JOIN INDIAN COAST GUARD' available on the website.",
+      "You will be redirected to the Indian Coast Guard examination portal.",
+      "Login to the portal using your registered login credentials to view your exam city and download the admit card."
+    ],
+    "how_hi": [
+      "एसएससी की आधिकारिक वेबसाइट https://ssc.gov.in/ पर जाएं।",
+      "वेबसाइट पर उपलब्ध 'JOIN INDIAN COAST GUARD' शीर्षक वाले हाइपरलिंक पर क्लिक करें।",
+      "आपको भारतीय तटरक्षक परीक्षा पोर्टल पर रीडायरेक्ट कर दिया जाएगा।",
+      "अपना परीक्षा शहर देखने और प्रवेश पत्र डाउनलोड करने के लिए अपने पंजीकृत लॉगिन क्रेडेंशियल का उपयोग करके पोर्टल पर लॉगिन करें।"
+    ],
+    "intro_en": "The Staff Selection Commission (SSC) has released the examination city details for the Coast Guard Enrolled Persons Test (CGEPT) for batches 01/2027 and 02/2027 (CBE). The computer-based examination is scheduled to be held from 17 November 2026 to 18 November 2026. Registered candidates can now log in to the official examination portal using their credentials to check their respective examination city. The E-Admit Card for the examination will tentatively become available for download 2 to 3 days prior to the respective examination date.",
+    "intro_hi": "कर्मचारी चयन आयोग (एसएससी) ने बैच 01/2027 और 02/2027 (सीबीई) के लिए तटरक्षक नामांकित व्यक्ति परीक्षा (सीजीईपीटी) के परीक्षा शहर का विवरण जारी कर दिया है। कंप्यूटर आधारित परीक्षा 17 नवंबर 2026 से 18 नवंबर 2026 तक आयोजित होने निर्धारित है। पंजीकृत उम्मीदवार अब अपने संबंधित परीक्षा शहर की जांच करने के लिए अपने क्रेडेंशियल का उपयोग करके आधिकारिक परीक्षा पोर्टल पर लॉगिन कर सकते हैं। परीक्षा के लिए ई-प्रवेश पत्र संबंधित परीक्षा तिथि से 2 से 3 दिन पहले डाउनलोड के लिए उपलब्ध होने की संभावना है।",
+    "last_date": null,
+    "mistakes_en": [
+      "Failing to check exam city in advance",
+      "Not reading instructions given on the E-Admit Card"
+    ],
+    "mistakes_hi": [
+      "पहले से परीक्षा शहर की जांच करने में विफल रहना",
+      "ई-प्रवेश पत्र पर दिए गए निर्देशों को न पढ़ना"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": null,
+    "official_site": "https://ssc.gov.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "17 Nov 2026 to 18 Nov 2026",
+        "value_hi": "17 नव 2026 से 18 नव 2026"
+      },
+      {
+        "label_en": "Batches",
+        "label_hi": "बैच",
+        "value_en": "01/2027 and 02/2027",
+        "value_hi": "01/2027 और 02/2027"
+      },
+      {
+        "label_en": "Status",
+        "label_hi": "स्थिति",
+        "value_en": "Exam City Available",
+        "value_hi": "परीक्षा शहर उपलब्ध"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Computer Based Examination (CBE)"
+    ],
+    "selection_hi": [
+      "कंप्यूटर आधारित परीक्षा (सीबीई)"
+    ],
+    "share_card": {
+      "headline_en": "Exam City & Admit Card",
+      "headline_hi": "परीक्षा शहर और एडमिट कार्ड",
+      "kind": "admit",
+      "line_en": "Coast Guard CGEPT 01/27 & 02/27",
+      "line_hi": "कोस्ट गार्ड CGEPT 01/27 और 02/27",
+      "posts": null
+    },
+    "status_en": "Exam city details released, admit card available 2-3 days before exam",
+    "status_hi": "परीक्षा शहर का विवरण जारी, प्रवेश पत्र परीक्षा से 2-3 दिन पहले उपलब्ध होगा",
+    "summary_en": "Examination city details for Coast Guard Enrolled Persons Test batches 01/2027 and 02/2027 are now available. Candidates should log in to the portal to check their exam city and download the admit card 2 to 3 days before the exam.",
+    "summary_hi": "तटरक्षक नामांकित व्यक्ति परीक्षा बैच 01/2027 और 02/2027 के लिए परीक्षा शहर का विवरण उपलब्ध है। उम्मीदवार पोर्टल पर लॉगिन करके अपने परीक्षा शहर की जांच करें और परीक्षा से 2 से 3 दिन पहले प्रवेश पत्र डाउनलोड करें।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Candidates who applied for Coast Guard Enrolled Persons Test (CGEPT) batches 01/2027 and 02/2027"
+    ],
+    "who_hi": [
+      "तटरक्षक नामांकित व्यक्ति परीक्षा (सीजीईपीटी) बैच 01/2027 और 02/2027 के लिए आवेदन करने वाले उम्मीदवार"
+    ]
+  },
   "pdf": {
     "bytes": 239730,
     "pages": 1,
     "sha256": "69bae419209f0b696160781520f74448d87c315c6b0e56e5b45f005922508368",
     "text_kind": "text"
   },
+  "published_at": "2026-11-06T11:45:41Z",
+  "qual": [
+    "10th",
+    "12th"
+  ],
+  "slug": "ssc-coast-guard-admit-card-2026-exam-city-slip-link-cgept",
   "source_id": "ssc-notice-board",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Information regarding city of examination and Admit Card for the candidates of CGEPT-01/27 and 02/27 batches",
   "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Englishnotice_06112026.pdf"
 }

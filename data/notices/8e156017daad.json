@@ -1,5 +1,20 @@
 {
   "board_url": "https://psc.uk.gov.in/candidate-corner/recruitment",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Various",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Attestation form and application format for final stage selection, not a new recruitment notice or result.",
+    "summary_en": "Uttarakhand Public Service Commission released the attestation form and application format required for the final stage of selection.",
+    "summary_hi": "उत्तराखंड लोक सेवा आयोग ने चयन के अंतिम चरण के लिए आवश्यक अटेस्टेशन फॉर्म और आवेदन पत्र जारी किया है।",
+    "title_en": "UKPSC Attestation and Application Form for Final Selection",
+    "title_hi": "उत्तराखंड लोक सेवा आयोग अंतिम चयन हेतु attestation और आवेदन पत्र",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "ukpsc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "1 {\"meta_value\":\"Uttarakhand Public Service Commission\"} 06-11-2026 06-11-2026 29-11-2026 29-11-2026",
   "url": "https://psc.uk.gov.in/public/uploads/recruitment/1329737746.pdf"
 }
