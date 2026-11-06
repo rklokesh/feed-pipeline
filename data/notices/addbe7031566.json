@@ -1,20 +1,6 @@
 {
   "board_url": "https://psc.uk.gov.in/candidate-corner/recruitment",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "Additional Private Secretary",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "representation/representation disposal notice regarding representations submitted by candidates against APS examination 2024",
-    "summary_en": "UKPSC released the disposal notice regarding representations submitted by candidates for the Additional Private Secretary Examination 2024.",
-    "summary_hi": "उत्तराखंड लोक सेवा आयोग ने अपर निजी सचिव परीक्षा 2024 के संबंध में अभ्यर्थियों द्वारा प्रस्तुत प्रस्तुतीकरण और अभ्यावेदनों के निस्तारण की सूचना जारी की है।",
-    "title_en": "UKPSC Additional Private Secretary 2024 Representation Disposal Notice",
-    "title_hi": "उत्तराखंड लोक सेवा आयोग अपर निजी सचिव परीक्षा प्रतिनिधित्व निस्तारण सूचना",
-    "type": "Update",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -27,10 +13,10 @@
     "bytes": 236893,
     "pages": 3,
     "sha256": "75fdc9d6c0851acdcea8d9168960da53e99c139f7963fc5809d155a63c91d908",
-    "text_kind": "text"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "ukpsc-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "1 {\"meta_value\":\"Uttarakhand Public Service Commission\"} 06-11-2026 05-12-2026",
   "url": "https://psc.uk.gov.in/public/uploads/recruitment/1966650247.pdf"
 }

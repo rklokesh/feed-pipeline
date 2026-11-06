@@ -1,20 +1,6 @@
 {
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
-  "card": {
-    "confidence": "low",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": null,
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "No PDF content or notice details provided",
-    "summary_en": "The notice details are not available.",
-    "summary_hi": "सूचना का विवरण उपलब्ध नहीं है।",
-    "title_en": "UPSSSC Notice",
-    "title_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग सूचना",
-    "type": "Update",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -27,10 +13,10 @@
     "bytes": 1459739,
     "pages": 3,
     "sha256": "87bace0ff891de51bd5777fecd9e03dd7f370cede587f6f506d8853c972eef97",
-    "text_kind": "scanned"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "upsssc-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?D+YIgFTQHc/jg+JcveJWVtNygmpVBm9hyZfnC7C8yZQ="
 }
