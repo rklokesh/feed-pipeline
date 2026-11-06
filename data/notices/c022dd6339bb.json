@@ -4,25 +4,30 @@
   "card": {
     "confidence": "medium",
     "exam_date": null,
-    "last_date": null,
+    "last_date": "2026-12-06",
     "list": true,
     "posts": "Cultural Quota Posts",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
     "summary_en": "RRC Northern Railway has announced recruitment against the cultural quota for 2026-27. Eligible candidates should check the notification for details.",
     "summary_hi": "आरआरसी नॉर्दन रेलवे ने वर्ष 2026-27 के लिए सांस्कृतिक कोटा के तहत भर्ती की घोषणा की है। योग्य उम्मीदवार विवरण के लिए अधिसूचना देखें।",
-    "title_en": "RRC Northern Railway Cultural Quota Recruitment 2026",
-    "title_hi": "आरआरसी नॉर्दन रेलवे सांस्कृतिक कोटा भर्ती 2026",
+    "title_en": "RRC Northern Railway Cultural Quota Recruitment 2026 – Apply Online",
+    "title_hi": "आरआरसी नॉर्दन रेलवे सांस्कृतिक कोटा भर्ती 2026 – ऑनलाइन आवेदन करें",
     "type": "Job",
     "vacancies": null
   },
+  "editor_notes": [],
   "elig": {
-    "age_max": null,
-    "age_min": null,
-    "age_on": null,
+    "age_max": 30,
+    "age_min": 18,
+    "age_on": "2027-01-01",
     "domicile": null,
-    "qual": null,
-    "relax": {}
+    "qual": "10th",
+    "relax": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5
+    }
   },
   "exam": {
     "key": "rrc-northern-railway-cultural-quota-2026",
@@ -42,179 +47,332 @@
   "org": "RRC Northern Railway",
   "page": {
     "after_en": [
-      "Candidates who qualify the selection stages will be called for Document Verification and subsequent medical examination before joining."
+      "Candidates who qualify the written test will be called for a practical demonstration and document verification.",
+      "Selected candidates must undergo a medical fitness examination before final appointment."
     ],
     "after_hi": [
-      "चयन चरणों को उत्तीर्ण करने वाले उम्मीदवारों को शामिल होने से पहले दस्तावेज़ सत्यापन और उसके बाद के चिकित्सा परीक्षण के लिए बुलाया जाएगा।"
+      "लिखित परीक्षा उत्तीर्ण करने वाले उम्मीदवारों को प्रायोगिक प्रदर्शन और दस्तावेज सत्यापन के लिए बुलाया जाएगा।",
+      "चयनित उम्मीदवारों को अंतिम नियुक्ति से पहले चिकित्सा परीक्षण से गुजरना होगा।"
     ],
-    "age": [],
-    "apply_start": null,
-    "apply_url": "https://rrcnr.org/downloads/Cultural_Quota_Notification_2026.pdf",
+    "age": [
+      {
+        "label_en": "Minimum age",
+        "label_hi": "न्यूनतम आयु",
+        "value_en": "18 years",
+        "value_hi": "18 वर्ष"
+      },
+      {
+        "label_en": "Maximum age",
+        "label_hi": "अधिकतम आयु",
+        "value_en": "30 years",
+        "value_hi": "30 वर्ष"
+      },
+      {
+        "label_en": "As-on date for age limit",
+        "label_hi": "आयु सीमा के लिए निर्धारित तिथि",
+        "value_en": "01 Jan 2027",
+        "value_hi": "01 जन 2027"
+      },
+      {
+        "label_en": "SC/ST candidates relaxation",
+        "label_hi": "एससी/एसटी उम्मीदवारों के लिए छूट",
+        "value_en": "5 years",
+        "value_hi": "5 वर्ष"
+      },
+      {
+        "label_en": "OBC-Non Creamy Layer candidates relaxation",
+        "label_hi": "ओबीसी-नॉन क्रीमी लेयर उम्मीदवारों के लिए छूट",
+        "value_en": "3 years",
+        "value_hi": "3 वर्ष"
+      }
+    ],
+    "apply_start": "2026-11-06",
+    "apply_url": "https://www.rrcnr.org",
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check eligibility criteria",
-      "Keep required certificates ready",
-      "Visit the official website for updates"
+      "Verify age eligibility as of 01.01.2027.",
+      "Keep scanned copies of photo, signature, and certificates ready.",
+      "Submit the online application before 06 December 2026."
     ],
     "checklist_hi": [
-      "पात्रता मापदंड की जांच करें",
-      "आवश्यक प्रमाण पत्र तैयार रखें",
-      "अपडेट के लिए आधिकारिक वेबसाइट पर जाएं"
+      "01.01.2027 के अनुसार आयु पात्रता की जांच करें।",
+      "फोटो, हस्ताक्षर और प्रमाण पत्रों की स्कैन की गई प्रतियां तैयार रखें।",
+      "06 दिसंबर 2026 से पहले ऑनलाइन आवेदन जमा करें।"
     ],
     "conducted_by_en": "Railway Recruitment Cell, Northern Railway (RRC NR)",
-    "conducted_by_hi": "रेलवे भर्ती सेल, उत्तरी रेलवे (आरआरसी एनआर)",
+    "conducted_by_hi": "रेलवे भर्ती सेल, नॉर्दन रेलवे (आरआरसी एनआर)",
     "dates": [
       {
-        "label_en": "Notification Date",
-        "label_hi": "अधिसूचना तिथि",
+        "label_en": "Date of Publication",
+        "label_hi": "प्रकाशन तिथि",
         "value_en": "04 Nov 2026",
         "value_hi": "04 नव 2026"
+      },
+      {
+        "label_en": "Online application starts",
+        "label_hi": "ऑनलाइन आवेदन शुरू",
+        "value_en": "06 Nov 2026",
+        "value_hi": "06 नव 2026"
+      },
+      {
+        "label_en": "Last date to apply",
+        "label_hi": "आवेदन की अंतिम तिथि",
+        "value_en": "06 Dec 2026",
+        "value_hi": "06 दिस 2026"
+      },
+      {
+        "label_en": "Expected Written Examination",
+        "label_hi": "अपेक्षित लिखित परीक्षा",
+        "value_en": "January 2027",
+        "value_hi": "जनवरी 2027"
       }
     ],
     "documents_en": [
-      "Educational certificates",
-      "Cultural qualification certificates",
-      "Identity proof",
-      "Category certificate (if applicable)"
+      "Educational qualification certificates",
+      "Professional qualification certificates in cultural discipline",
+      "Age proof certificate",
+      "Caste/community certificate if claiming relaxation",
+      "Income certificate for fee concession / EBC status"
     ],
     "documents_hi": [
-      "शैक्षणिक प्रमाण पत्र",
-      "सांस्कृतिक योग्यता प्रमाण पत्र",
-      "पहचान प्रमाण",
-      "श्रेणी प्रमाण पत्र (यदि लागू हो)"
+      "शैक्षणिक योग्यता प्रमाण पत्र",
+      "सांस्कृतिक विषय में व्यावसायिक योग्यता प्रमाण पत्र",
+      "आयु प्रमाण पत्र",
+      "छूट का दावा करने पर जाति/श्रेणी प्रमाण पत्र",
+      "फीस छूट / ईबीसी स्थिति के लिए आय प्रमाण पत्र"
     ],
     "eligibility": [
       {
-        "label_en": "Pay Scale",
-        "label_hi": "वेतनमान",
-        "value_en": "Level 2 of Pay Matrix (7th CPC)",
-        "value_hi": "वेतन मैट्रिक्स का लेवल 2 (7वां सीपीसी)"
+        "label_en": "Education",
+        "label_hi": "शिक्षा",
+        "value_en": "Passed 12th (+2 stage) or equivalent with 50% marks (50% not insisted for SC/ST/Ex-Servicemen/PwD or higher qualifications) OR Matriculation plus Course Completed Act Apprenticeship OR Matriculation plus ITI.",
+        "value_hi": "12वीं या समकक्ष परीक्षा 50% अंकों के साथ उत्तीर्ण (एससी/एसटी/भूतपूर्व सैनिक/पीडब्ल्यूबीडी या उच्च योग्यता वालों के लिए 50% अनिवार्य नहीं) अथवा मैट्रिकुलेशन के साथ एक्ट अप्रेंटिसशिप या आईटीआई।"
+      },
+      {
+        "label_en": "Professional Qualification",
+        "label_hi": "व्यावसायिक योग्यता",
+        "value_en": "Possession of degree/diploma/certificate in the respective discipline from a recognized university/institution.",
+        "value_hi": "मान्यता प्राप्त विश्वविद्यालय/संस्थान से संबंधित विषय में डिग्री/डिपार्टमेंट/सर्टिफिकेट।"
       }
     ],
     "exam_date": null,
-    "exam_pattern": [],
+    "exam_pattern": [
+      {
+        "marks": "50",
+        "part_en": "Written Test (General Awareness, Mathematics, General Intelligence, Reasoning and General Knowledge on Cultural Activities)",
+        "part_hi": "लिखित परीक्षा (सामान्य जागरूकता, गणित, सामान्य बुद्धिमत्ता, रीजनिंग और सांस्कृतिक गतिविधियों पर सामान्य ज्ञान)",
+        "questions": "50",
+        "time": "60 Minutes"
+      },
+      {
+        "marks": "1/3 marks deducted for every wrong answer",
+        "part_en": "Negative Marking",
+        "part_hi": "नकारात्मक अंकन",
+        "questions": "",
+        "time": ""
+      },
+      {
+        "marks": "35",
+        "part_en": "Practical Demonstration / Talent Test",
+        "part_hi": "प्रायोगिक प्रदर्शन / टैलेंट टेस्ट",
+        "questions": "",
+        "time": ""
+      },
+      {
+        "marks": "15",
+        "part_en": "Testimonials / Prizes",
+        "part_hi": "प्रमाणपत्र / पुरस्कार",
+        "questions": "",
+        "time": ""
+      }
+    ],
     "explain": [
       {
-        "a_en": "It is a special recruitment drive conducted by Northern Railway to hire eligible candidates with cultural talents under Level 2 of the Pay Matrix for the year 2026-27.",
-        "a_hi": "यह वर्ष 2026-27 के लिए वेतन मैट्रिक्स के लेवल 2 के तहत सांस्कृतिक प्रतिभा वाले योग्य उम्मीदवारों को नियुक्त करने के लिए उत्तरी रेलवे द्वारा आयोजित एक विशेष भर्ती अभियान है।",
+        "a_en": "It is a special recruitment drive conducted by Railway Recruitment Cell, Northern Railway, to hire talented individuals in cultural fields like drama and dance into Level 2 posts of the 7th CPC Pay Matrix.",
+        "a_hi": "यह रेलवे भर्ती सेल, नॉर्दन रेलवे द्वारा आयोजित एक विशेष भर्ती अभियान है, जिसके माध्यम से नाटक और नृत्य जैसे सांस्कृतिक क्षेत्रों में प्रतिभाशाली व्यक्तियों को 7वें सीपीसी पे मैट्रिक्स के लेवल 2 पदों पर नियुक्त किया जाता है।",
         "q_en": "What is RRC Northern Railway Cultural Quota Recruitment?",
-        "q_hi": "आरआरसी उत्तरी रेलवे सांस्कृतिक कोटा भर्ती क्या है?"
+        "q_hi": "आरआरसी नॉर्दन रेलवे सांस्कृतिक कोटा भर्ती क्या है?"
       }
     ],
-    "extra": [],
+    "extra": [
+      {
+        "label_en": "Typing requirement for Clerk-cum-Typist",
+        "label_hi": "क्लर्क-सह-टाइपिस्ट के लिए टाइपिंग आवश्यकता",
+        "value_en": "Should acquire typing proficiency of 30 w.p.m. in English or 25 w.p.m. in Hindi within two years of appointment.",
+        "value_hi": "नियुक्ति के दो साल के भीतर अंग्रेजी में 30 शब्द प्रति मिनट या हिंदी में 25 शब्द प्रति मिनट की टाइपिंग दक्षता प्राप्त करनी होगी।"
+      }
+    ],
     "faq": [
       {
-        "a_en": "The advertisement number is RRC/NR 02/2026/CQ.",
-        "a_hi": "विज्ञापन संख्या RRC/NR 02/2026/CQ है।",
-        "q_en": "What is the advertisement number for Northern Railway Cultural Quota Recruitment 2026?",
-        "q_hi": "उत्तरी रेलवे सांस्कृतिक कोटा भर्ती 2026 के लिए विज्ञापन संख्या क्या है?"
+        "a_en": "The last date to submit the online application is 06 December 2026.",
+        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 06 दिसंबर 2026 है।",
+        "q_en": "What is the last date to apply for RRC NR Cultural Quota Recruitment 2026?",
+        "q_hi": "आरआरसी एनआर सांस्कृतिक कोटा भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "These posts come under Level 2 of the 7th CPC Pay Matrix.",
-        "a_hi": "ये पद 7वें सीपीसी वेतन मैट्रिक्स के लेवल 2 के अंतर्गत आते हैं।",
-        "q_en": "Which pay level applies to these posts?",
-        "q_hi": "इन पदों पर कौन सा वेतन स्तर लागू होता है?"
+        "a_en": "Candidates must be between 18 and 30 years of age as of 01 January 2027.",
+        "a_hi": "उम्मीदवारों की आयु 01 जनवरी 2027 के अनुसार 18 से 30 वर्ष के बीच होनी चाहिए।",
+        "q_en": "What is the age limit for this recruitment?",
+        "q_hi": "इस भर्ती के लिए आयु सीमा क्या है?"
       },
       {
-        "a_en": "You can read the official notification on the RRC Northern Railway website at rrcnr.org.",
-        "a_hi": "आप आरआरसी उत्तरी रेलवे की वेबसाइट rrcnr.org पर आधिकारिक अधिसूचना पढ़ सकते हैं।",
-        "q_en": "Where can I read the official notification?",
-        "q_hi": "मैं आधिकारिक अधिसूचना कहाँ पढ़ सकता हूँ?"
+        "a_en": "The fee is ₹500 for general candidates (with ₹400 refundable) and ₹250 for reserved/minority/women candidates (fully refundable upon appearing in the exam).",
+        "a_hi": "सामान्य उम्मीदवारों के लिए शुल्क ₹500 (₹400 वापसी योग्य) है और आरक्षित/अल्पसंख्यक/महिला उम्मीदवारों के लिए ₹250 (परीक्षा में शामिल होने पर पूरी तरह वापसी योग्य) है।",
+        "q_en": "What is the application fee?",
+        "q_hi": "आवेदन शुल्क क्या है?"
+      },
+      {
+        "a_en": "The selection includes a written test, a practical demonstration/talent test, document verification, and a medical examination.",
+        "a_hi": "चयन में लिखित परीक्षा, प्रायोगिक प्रदर्शन/टैलेंट टेस्ट, दस्तावेज सत्यापन और चिकित्सा परीक्षण शामिल हैं।",
+        "q_en": "What is the selection process?",
+        "q_hi": "चयन प्रक्रिया क्या है?"
       }
     ],
-    "fees": [],
-    "h1_en": "Northern Railway Cultural Quota Recruitment 2026 – Notification",
-    "h1_hi": "उत्तरी रेलवे सांस्कृतिक कोटा भर्ती 2026 – अधिसूचना",
+    "fees": [
+      {
+        "amount": "₹500 (₹400 refunded after appearing in written exam)",
+        "cat_en": "All candidates except those mentioned below",
+        "cat_hi": "नीचे दिए गए उम्मीदवारों को छोड़कर सभी उम्मीदवार"
+      },
+      {
+        "amount": "₹250 (₹250 refunded after appearing in written exam)",
+        "cat_en": "SC / ST, Ex-Serviceman, PWBD, Women, Minorities and EBC",
+        "cat_hi": "एससी / एसटी, भूतपूर्व सैनिक, पीडब्ल्यूबीडी, महिलाएं, अल्पसंख्यक और ईबीसी"
+      }
+    ],
+    "h1_en": "RRC Northern Railway Cultural Quota Recruitment 2026 – Apply Online",
+    "h1_hi": "आरआरसी नॉर्दन रेलवे सांस्कृतिक कोटा भर्ती 2026 – ऑनलाइन आवेदन करें",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official RRC Northern Railway website at rrcnr.org.",
-      "Click on the Cultural Quota recruitment notification link.",
-      "Read all instructions carefully to check eligibility.",
-      "Follow the prescribed application procedure mentioned in the notice."
+      "Visit the official RRC Northern Railway website at www.rrcnr.org.",
+      "Click on the recruitment notification link for Cultural Quota 2026-27.",
+      "Register and fill out the online application form with correct details.",
+      "Upload necessary certificates and pay the application fee online.",
+      "Submit the form and take a printout of the final application for future reference."
     ],
     "how_hi": [
-      "आरआरसी उत्तरी रेलवे की आधिकारिक वेबसाइट rrcnr.org पर जाएं।",
-      "सांस्कृतिक कोटा भर्ती अधिसूचना लिंक पर क्लिक करें।",
-      "पात्रता की जांच के लिए सभी निर्देशों को ध्यान से पढ़ें।",
-      "नोटिस में उल्लिखित निर्धारित आवेदन प्रक्रिया का पालन करें।"
+      "आरआरसी नॉर्दन रेलवे की आधिकारिक वेबसाइट www.rrcnr.org पर जाएं।",
+      "सांस्कृतिक कोटा 2026-27 के लिए भर्ती अधिसूचना लिंक पर क्लिक करें।",
+      "पंजीकरण करें और सही विवरण के साथ ऑनलाइन आवेदन पत्र भरें।",
+      "आवश्यक प्रमाण पत्र अपलोड करें और ऑनलाइन आवेदन शुल्क का भुगतान करें।",
+      "फॉर्म जमा करें और भविष्य के संदर्भ के लिए प्रिंटआउट सुरक्षित रखें।"
     ],
-    "intro_en": "Railway Recruitment Cell, Northern Railway (RRC NR) has issued Employment Notification No. RRC/NR 02/2026/CQ for recruitment against the Cultural Quota for the year 2026-27. The positions are offered under Level 2 of the 7th CPC Pay Matrix. Eligible and interested candidates are advised to read the official notification carefully before applying. All updates regarding the recruitment process will be published on the official RRC Northern Railway website.",
-    "intro_hi": "रेलवे भर्ती सेल, उत्तरी रेलवे (आरआरसी एनआर) ने वर्ष 2026-27 के लिए सांस्कृतिक कोटे के तहत भर्ती के लिए रोजगार अधिसूचना संख्या RRC/NR 02/2026/CQ जारी कर दी है। पद 7वें सीपीसी वेतन मैट्रिक्स के लेवल 2 के अंतर्गत आते हैं। योग्य और इच्छुक उम्मीदवारों को सलाह दी जाती है कि वे आवेदन करने से पहले आधिकारिक अधिसूचना को ध्यान से पढ़ें। भर्ती प्रक्रिया से संबंधित सभी अपडेट आधिकारिक आरआरसी उत्तरी रेलवे वेबसाइट पर प्रकाशित किए जाएंगे।",
-    "last_date": null,
+    "intro_en": "Railway Recruitment Cell, Northern Railway (RRC NR) has released Employment Notice No. RRC/NR/02/2026/CQ for direct recruitment against the Cultural Quota for the year 2026-27 in Level 2 of Pay Matrix 7th CPC. Online applications are open from 06 November 2026 to 06 December 2026. Eligible candidates who possess the required educational and professional qualifications in disciplines like Drama and Classical Kathak can apply through the official website. The selection involves a written test, practical demonstration, and document verification.",
+    "intro_hi": "रेलवे भर्ती सेल, नॉर्दन रेलवे (आरआरसी एनआर) ने वर्ष 2026-27 के लिए सांस्कृतिक कोटा के अंतर्गत लेवल 2 पे मैट्रिक्स में सीधी भर्ती हेतु रोजगार सूचना संख्या RRC/NR/02/2026/CQ जारी की है। ऑनलाइन आवेदन 06 नवंबर 2026 से 06 दिसंबर 2026 तक स्वीकार किए जाएंगे। ड्रामा और क्लासिकल कथक जैसे विषयों में योग्यता रखने वाले उम्मीदवार आधिकारिक वेबसाइट के माध्यम से आवेदन कर सकते हैं। चयन प्रक्रिया में लिखित परीक्षा, प्रायोगिक प्रदर्शन और दस्तावेज सत्यापन शामिल हैं।",
+    "last_date": "2026-12-06",
     "mistakes_en": [
-      "Do not apply without reading the official notification details.",
-      "Ensure all required cultural certificates are attached as per format."
+      "Do not wait until the closing date to apply to avoid website traffic issues.",
+      "Ensure all uploaded certificates are clear and valid."
     ],
     "mistakes_hi": [
-      "आधिकारिक अधिसूचना विवरण को पढ़े बिना आवेदन न करें।",
-      "सुनिश्चित करें कि प्रारूप के अनुसार सभी आवश्यक सांस्कृतिक प्रमाण पत्र संलग्न हैं।"
+      "वेबसाइट ट्रैफिक की समस्याओं से बचने के लिए अंतिम तिथि तक प्रतीक्षा न करें।",
+      "सुनिश्चित करें कि सभी अपलोड किए गए प्रमाण पत्र स्पष्ट और वैध हैं।"
     ],
-    "not_en": [],
-    "not_hi": [],
+    "not_en": [
+      "Candidates not meeting the age limits or lacking the prescribed educational and professional qualifications."
+    ],
+    "not_hi": [
+      "जो उम्मीदवार आयु सीमा को पूरा नहीं करते हैं या जिनके पास निर्धारित शैक्षणिक और व्यावसायिक योग्यताएं नहीं हैं।"
+    ],
     "notice_date": "2026-11-04",
-    "official_site": "https://rrcnr.org/",
+    "official_site": "https://www.rrcnr.org",
     "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Advertisement Number",
-        "label_hi": "विज्ञापन संख्या",
-        "value_en": "RRC/NR 02/2026/CQ",
-        "value_hi": "RRC/NR 02/2026/CQ"
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Cultural Quota (Drama Artist, Classical Kathak Dancer)",
+        "value_hi": "सांस्कृतिक कोटा (ड्रामा आर्टिस्ट, क्लासिकल कथक डांसर)"
       },
       {
-        "label_en": "Recruitment Year",
-        "label_hi": "भर्ती वर्ष",
-        "value_en": "2026-27",
-        "value_hi": "2026-27"
+        "label_en": "Total vacancies",
+        "label_hi": "कुल वैकेंसी",
+        "value_en": "Not specified",
+        "value_hi": "निर्दिष्ट नहीं"
+      },
+      {
+        "label_en": "Apply online",
+        "label_hi": "ऑनलाइन आवेदन",
+        "value_en": "06 Nov 2026 to 06 Dec 2026",
+        "value_hi": "06 नव 2026 से 06 दिस 2026"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "January 2027 (Expected)",
+        "value_hi": "जनवरी 2027 (अपेक्षित)"
+      },
+      {
+        "label_en": "Pay level",
+        "label_hi": "वेतन स्तर",
+        "value_en": "Level 2 of Pay Matrix 7th CPC",
+        "value_hi": "पे मैट्रिक्स 7वें सीपीसी का लेवल 2"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "RRC/NR/02/2026/CQ",
+        "value_hi": "RRC/NR/02/2026/CQ"
       }
     ],
     "salary": [
       {
-        "label_en": "Pay Level",
-        "label_hi": "वेतन स्तर",
-        "value_en": "Level 2 of Pay Matrix",
-        "value_hi": "वेतन मैट्रिक्स का लेवल 2"
+        "label_en": "Pay Scale",
+        "label_hi": "वेतनमान",
+        "value_en": "Level 2 of Pay Matrix 7th CPC",
+        "value_hi": "पे मैट्रिक्स 7वें सीपीसी का लेवल 2"
       }
     ],
     "selection_en": [
-      "Written Test",
-      "Audience / Practical Test",
-      "Document Verification"
+      "Written Test / Computer/Tablet Based Test (CBT/TBT)",
+      "Talent test in relevant field with practical demonstration",
+      "Testimonials / Prizes evaluation",
+      "Document Verification",
+      "Medical Examination"
     ],
     "selection_hi": [
-      "लिखित परीक्षा",
-      "ऑडिशन / प्रायोगिक परीक्षा",
-      "दस्तावेज़ सत्यापन"
+      "लिखित परीक्षा / सीबीटी / टीबीटी",
+      "प्रायोगिक प्रदर्शन के साथ टैलेंट टेस्ट",
+      "प्रमाणपत्र / पुरस्कार मूल्यांकन",
+      "दस्तावेज सत्यापन",
+      "चिकित्सा परीक्षण"
     ],
     "share_card": {
       "headline_en": "Recruitment 2026",
       "headline_hi": "भर्ती 2026",
       "kind": "job",
-      "line_en": "Cultural Quota Posts",
-      "line_hi": "सांस्कृतिक कोटा पद",
-      "posts": null
+      "line_en": "Cultural Quota Recruitment",
+      "line_hi": "सांस्कृतिक कोटा भर्ती",
+      "posts": 2
     },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "RRC Northern Railway has released the notification for cultural quota recruitment for the year 2026-27 under Level 2 of the Pay Matrix. Eligible candidates can check the official notification for details regarding eligibility and application process.",
-    "summary_hi": "आरआरसी उत्तरी रेलवे ने वेतन मैट्रिक्स के लेवल 2 के तहत वर्ष 2026-27 के लिए सांस्कृतिक कोटा भर्ती की अधिसूचना जारी कर दी है। योग्य उम्मीदवार पात्रता और आवेदन प्रक्रिया के विवरण के लिए आधिकारिक अधिसूचना देख सकते हैं।",
+    "summary_en": "RRC Northern Railway has invited online applications for recruitment against the Cultural Quota for the year 2026-27 in Level 2 of Pay Matrix. Eligible candidates can apply online from 06 November 2026 to 06 December 2026. Read the notification for complete details on eligibility, posts, and selection process.",
+    "summary_hi": "आरआरसी नॉर्दन रेलवे ने वर्ष 2026-27 के लिए सांस्कृतिक कोटा के तहत पे मैट्रिक्स के लेवल 2 में भर्ती के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 06 नवंबर 2026 से 06 दिसंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
     "vacancies": [
       {
-        "detail_en": "Level 2 of Pay Matrix",
-        "detail_hi": "वेतन मैट्रिक्स का लेवल 2",
-        "post_en": "Cultural Quota Posts",
-        "post_hi": "सांस्कृतिक कोटा पद",
-        "total": "As per Notification"
+        "detail_en": "Drama Artist (Male/Female) for Acting",
+        "detail_hi": "एक्टिंग के लिए ड्रामा आर्टिस्ट (पुरुष/महिला)",
+        "post_en": "Drama Artist",
+        "post_hi": "ड्रामा आर्टिस्ट",
+        "total": "01"
+      },
+      {
+        "detail_en": "For Classical Kathak Dancer",
+        "detail_hi": "क्लासिकल कथक डांसर के लिए",
+        "post_en": "Classical Kathak Dancer",
+        "post_hi": "क्लासिकल कथक डांसर",
+        "total": "01"
       }
     ],
     "video_url": null,
     "who_en": [
-      "Eligible candidates interested in railway cultural quota recruitment for 2026-27."
+      "Eligible candidates aged 18-30 years with required educational and cultural qualifications wanting a railway job."
     ],
     "who_hi": [
-      "वर्ष 2026-27 के लिए रेलवे सांस्कृतिक कोटा भर्ती में रुचि रखने वाले योग्य उम्मीदवार।"
+      "आवश्यक शैक्षणिक और सांस्कृतिक योग्यताओं वाले 18-30 वर्ष की आयु के योग्य उम्मीदवार जो रेलवे की नौकरी चाहते हैं।"
     ]
   },
   "pdf": {
@@ -224,11 +382,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-05T07:08:57Z",
-  "qual": [
-    "10th",
-    "12th"
-  ],
-  "rewrite": true,
   "slug": "rrc-northern-railway-cultural-quota-recruitment-2026",
   "source_id": "rrc-nr",
   "status": "approved",

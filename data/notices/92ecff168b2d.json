@@ -11,15 +11,15 @@
     "skip_reason": "",
     "summary_en": "Madhya Pradesh Public Service Commission (MPPSC) has released the recruitment advertisement for the Law Officer Exam 2026. Eligible candidates can apply online from 23.11.2026 to 22.12.2026.",
     "summary_hi": "मध्य प्रदेश लोक सेवा आयोग (MPPSC) ने विधि अधिकारी परीक्षा 2026 के लिए भर्ती विज्ञापन जारी किया है। योग्य उम्मीदवार 23.11.2026 से 22.12.2026 तक ऑनलाइन आवेदन कर सकते हैं।",
-    "title_en": "MPPSC Law Officer Recruitment 2026 – Apply Online for 1 Vacancy",
+    "title_en": "MPPSC Law Officer Recruitment 2026 – Apply Online for 1 Post",
     "title_hi": "MPPSC विधि अधिकारी भर्ती 2026 – 1 पद के लिए ऑनलाइन आवेदन करें",
     "type": "Job",
     "vacancies": 1
   },
   "editor_notes": [],
   "elig": {
-    "age_max": 40,
-    "age_min": 21,
+    "age_max": null,
+    "age_min": null,
     "age_on": "2027-01-01",
     "domicile": null,
     "qual": "graduate",
@@ -43,59 +43,47 @@
   "org": "MPPSC",
   "page": {
     "after_en": [
-      "Candidates qualifying the written examination will be called for an interview.",
-      "Final selection is based on written test and interview performance followed by document verification."
+      "Document verification and interview stages will be conducted by MPPSC for eligible candidates."
     ],
     "after_hi": [
-      "लिखित परीक्षा उत्तीर्ण करने वाले उम्मीदवारों को साक्षात्कार के लिए बुलाया जाएगा।",
-      "अंतिम चयन लिखित परीक्षा और साक्षात्कार के प्रदर्शन के बाद दस्तावेज सत्यापन के आधार पर किया जाता है।"
+      "योग्य उम्मीदवारों के लिए MPPSC द्वारा अभिलेख सत्यापन और साक्षात्कार आयोजित किए जाएंगे।"
     ],
     "age": [
       {
-        "label_en": "Minimum age",
-        "label_hi": "न्यूनतम आयु",
-        "value_en": "21 years",
-        "value_hi": "21 वर्ष"
-      },
-      {
-        "label_en": "Maximum age",
-        "label_hi": "अधिकतम आयु",
-        "value_en": "40 years",
-        "value_hi": "40 वर्ष"
-      },
-      {
-        "label_en": "As-on date",
-        "label_hi": "इस तिथि के अनुसार",
+        "label_en": "As-on date for age calculation",
+        "label_hi": "आयु की गणना हेतु संदर्भ तिथि",
         "value_en": "01 Jan 2027",
         "value_hi": "01 जन 2027"
       }
     ],
     "apply_start": "2026-11-23",
-    "apply_url": "https://www.mponline.gov.in",
+    "apply_url": "https://www.mponiline.gov.in",
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check eligibility criteria including age limit and educational qualification.",
-      "Keep scanned copies of photograph, signature, and certificates ready.",
-      "Verify fee payment status after submission."
+      "Check eligibility including educational qualification and 5 years High Court experience.",
+      "Keep scanned photo, signature, and required documents ready.",
+      "Apply online before 22 Dec 2026.",
+      "Submit printed application and documents to MPPSC office by 28 Dec 2026."
     ],
     "checklist_hi": [
-      "आयु सीमा और शैक्षणिक योग्यता सहित पात्रता मापदंडों की जाँच करें।",
-      "फोटो, हस्ताक्षर और प्रमाण पत्रों की स्कैन की गई प्रतियां तैयार रखें।",
-      "जमा करने के बाद शुल्क भुगतान स्थिति की पुष्टि करें।"
+      "शैक्षणिक योग्यता और 5 वर्ष के उच्च न्यायालय के अनुभव की पात्रता जांच लें।",
+      "स्कैन की गई फोटो, हस्ताक्षर और आवश्यक दस्तावेज तैयार रखें।",
+      "22 दिस 2026 से पहले ऑनलाइन आवेदन करें।",
+      "प्रिंटेड आवेदन और दस्तावेज 28 दिस 2026 तक MPPSC कार्यालय में जमा करें।"
     ],
     "conducted_by_en": "Madhya Pradesh Public Service Commission (MPPSC)",
     "conducted_by_hi": "मध्य प्रदेश लोक सेवा आयोग (MPPSC)",
     "dates": [
       {
-        "label_en": "Date of notification",
-        "label_hi": "अधिसूचना की तिथि",
+        "label_en": "Notification date",
+        "label_hi": "अधिूचना तिथि",
         "value_en": "04 Nov 2026",
         "value_hi": "04 नव 2026"
       },
       {
-        "label_en": "Online application start date",
-        "label_hi": "ऑनलाइन आवेदन प्रारंभ तिथि",
+        "label_en": "Online application starts",
+        "label_hi": "ऑनलाइन आवेदन शुरू",
         "value_en": "23 Nov 2026",
         "value_hi": "23 नव 2026"
       },
@@ -106,117 +94,143 @@
         "value_hi": "22 दिस 2026"
       },
       {
-        "label_en": "Application form correction start date",
-        "label_hi": "आवेदन पत्र सुधार प्रारंभ तिथि",
-        "value_en": "25 Nov 2026",
-        "value_hi": "25 नव 2026"
+        "label_en": "Correction window",
+        "label_hi": "त्रुटि सुधार विंडो",
+        "value_en": "25 Nov 2026 to 24 Dec 2026",
+        "value_hi": "25 नव 2026 से 24 दिस 2026"
       },
       {
-        "label_en": "Application form correction last date",
-        "label_hi": "आवेदन पत्र सुधार अंतिम तिथि",
-        "value_en": "24 Dec 2026",
-        "value_hi": "24 दिस 2026"
+        "label_en": "Last date to submit documents at office",
+        "label_hi": "कार्यालय में दस्तावेज जमा करने की अंतिम तिथि",
+        "value_en": "28 Dec 2026",
+        "value_hi": "28 दिस 2026"
+      },
+      {
+        "label_en": "Documents submission with late fee",
+        "label_hi": "विलंब शुल्क के साथ दस्तावेज जमा करने की तिथि",
+        "value_en": "29 Dec 2026 to 04 Jan 2027",
+        "value_hi": "29 दिस 2026 से 04 जन 2027"
       }
     ],
     "documents_en": [
-      "Educational certificates",
-      "Proof of date of birth",
-      "Category certificate (if applicable)",
-      "Aadhaar card or identity proof"
+      "10th marksheet for date of birth verification",
+      "Law graduation marksheet and degree",
+      "Affidavit and relevant university documents for grading system if applicable",
+      "High Court advocacy experience certificate countersigned by Oath Commissioner in prescribed format (Appendix-3)"
     ],
     "documents_hi": [
-      "शैक्षणिक प्रमाण पत्र",
-      "जन्म तिथि का प्रमाण",
-      "श्रेणी प्रमाण पत्र (यदि लागू हो)",
-      "आधार कार्ड या पहचान प्रमाण"
+      "जन्मतिथि सत्यापन हेतु 10वीं की अंक-सूची",
+      "विधि स्नातक अंक-सूची और उपाधि",
+      "ग्रेडिंग प्रणाली होने पर शपथ-पत्र और विश्वविद्यालय के प्रासंगिक अभिलेख",
+      "शपथ आयुक्त द्वारा प्रतिहस्ताक्षरित उच्च न्यायालय वकालत अनुभव प्रमाण-पत्र (परिशिष्ट-3)"
     ],
     "eligibility": [
       {
         "label_en": "Education",
         "label_hi": "शिक्षा",
-        "value_en": "Degree in Law from a recognized University.",
-        "value_hi": "मान्यता प्राप्त विश्वविद्यालय से विधि में स्नातक की डिग्री।"
+        "value_en": "Graduation degree in Law with a minimum of 60% marks from a recognized university.",
+        "value_hi": "मान्यता प्राप्त विश्वविद्यालय से विधि में न्यूनतम 60 प्रतिशत अंकों के साथ स्नातक उपाधि।"
+      },
+      {
+        "label_en": "Experience",
+        "label_hi": "अनुभव",
+        "value_en": "Minimum 5 years of advocacy experience in service matters handling legal responsibilities in the High Court, including experience in at least 50 different decided and pending cases.",
+        "value_hi": "माननीय उच्च न्यायालय में सेवा संबंधित मामलों के विधिक दायित्व का न्यूनतम पाँच वर्षों का वकालत अनुभव, जिसमें कम से कम विभिन्न 50 पृथक-पृथक निर्णित तथा लंबित प्रकरणों का अनुभव अनिवार्य है।"
       }
     ],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is a competitive recruitment examination conducted by the Madhya Pradesh Public Service Commission to select eligible candidates for the post of Law Officer.",
-        "a_hi": "यह मध्य प्रदेश लोक सेवा आयोग द्वारा विधि अधिकारी के पद के लिए योग्य उम्मीदवारों का चयन करने के लिए आयोजित की जाने वाली एक प्रतियोगी भर्ती परीक्षा है।",
-        "q_en": "What is the MPPSC Law Officer Exam?",
-        "q_hi": "MPPSC विधि अधिकारी परीक्षा क्या है?"
+        "a_en": "MPPSC Law Officer Recruitment is a state-level selection process conducted by the Madhya Pradesh Public Service Commission to appoint a Law Officer for the commission. Candidates with a law degree and High Court advocacy experience are eligible to apply.",
+        "a_hi": "MPPSC विधि अधिकारी भर्ती मध्य प्रदेश लोक सेवा आयोग द्वारा आयोग के लिए विधि अधिकारी की नियुक्ति हेतु आयोजित की जाने वाली राज्य स्तरीय चयन प्रक्रिया है। विधि डिग्री और उच्च न्यायालय के वकालत अनुभव वाले उम्मीदवार आवेदन करने के पात्र हैं।",
+        "q_en": "What is MPPSC Law Officer Recruitment?",
+        "q_hi": "MPPSC विधि अधिकारी भर्ती क्या है?"
       }
     ],
-    "extra": [],
+    "extra": [
+      {
+        "label_en": "Pay Scale",
+        "label_hi": "वेतनमान",
+        "value_en": "₹15,600–39,100 with Grade Pay ₹6,600",
+        "value_hi": "रुपए 15600-39100 (ग्रेड पे 6600)"
+      },
+      {
+        "label_en": "Probation Period",
+        "label_hi": "परिवीक्षा अवधि",
+        "value_en": "2 years",
+        "value_hi": "दो वर्ष"
+      }
+    ],
     "faq": [
       {
         "a_en": "The last date to apply online is 22 December 2026.",
         "a_hi": "ऑनलाइन आवेदन करने की अंतिम तिथि 22 दिसंबर 2026 है।",
-        "q_en": "What is the last date to apply for MPPSC Law Officer Recruitment 2026?",
-        "q_hi": "MPPSC विधि अधिकारी भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+        "q_en": "What is the last date to apply online for MPPSC Law Officer Recruitment 2026?",
+        "q_hi": "MPPSC विधि अधिकारी भर्ती 2026 के लिए ऑनलाइन आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "A total of 1 vacancy has been announced.",
-        "a_hi": "कुल 1 रिक्ति की घोषणा की गई है।",
-        "q_en": "How many vacancies are announced for MPPSC Law Officer Exam 2026?",
-        "q_hi": "MPPSC विधि अधिकारी परीक्षा 2026 के लिए कुल कितनी रिक्तियों की घोषणा की गई है?"
+        "a_en": "A total of 1 vacancy has been announced for the Law Officer post.",
+        "a_hi": "विधि अधिकारी पद के लिए कुल 1 वैकेंसी घोषित की गई है।",
+        "q_en": "How many vacancies are announced for MPPSC Law Officer 2026?",
+        "q_hi": "MPPSC विधि अधिकारी 2026 के लिए कुल कितनी वैकेंसी घोषित की गई हैं?"
       },
       {
-        "a_en": "Candidates must possess a degree in Law from a recognized University.",
-        "a_hi": "उम्मीदवार के पास मान्यता प्राप्त विश्वविद्यालय से विधि में स्नातक की डिग्री होनी चाहिए।",
+        "a_en": "Candidates must have a graduation degree in law with a minimum of 60% marks from a recognized university, along with 5 years of High Court service matters advocacy experience.",
+        "a_hi": "उम्मीदवारों के पास मान्यता प्राप्त विश्वविद्यालय से न्यूनतम 60% अंकों के साथ विधि में स्नातक की डिग्री और उच्च न्यायालय में सेवा मामलों का 5 वर्ष का वकालत अनुभव होना चाहिए।",
         "q_en": "What is the educational qualification required for MPPSC Law Officer?",
         "q_hi": "MPPSC विधि अधिकारी के लिए आवश्यक शैक्षणिक योग्यता क्या है?"
       },
       {
-        "a_en": "Candidates must be between 21 and 40 years of age as on 01 January 2027.",
-        "a_hi": "01 जनवरी 2027 के अनुसार उम्मीदवारों की आयु 21 से 40 वर्ष के बीच होनी चाहिए।",
-        "q_en": "What is the age limit for MPPSC Law Officer Exam 2026?",
-        "q_hi": "MPPSC विधि अधिकारी परीक्षा 2026 के लिए आयु सीमा क्या है?"
-      }
-    ],
-    "fees": [
-      {
-        "amount": "₹250",
-        "cat_en": "MP Domicile SC / ST / OBC (Non-Creamy Layer) / PwD / EWS",
-        "cat_hi": "म.प्र. के मूल निवासी अ.जा. / अ.ज.जा. / अ.पि.व. (क्रीमी लेयर छोड़कर) / दिव्यांग / ई.डब्ल्यू.एस."
+        "a_en": "The last date to submit documents at the commission office without late fee is 28 December 2026.",
+        "a_hi": "बिना विलंब शुल्क के आयोग कार्यालय में दस्तावेज जमा करने की अंतिम तिथि 28 दिसंबर 2026 है।",
+        "q_en": "What is the last date to submit documents at the MPPSC office?",
+        "q_hi": "MPPSC कार्यालय में दस्तावेज जमा करने की अंतिम तिथि क्या है?"
       },
       {
-        "amount": "₹500",
-        "cat_en": "All Other Categories & Out of Madhya Pradesh Candidates",
-        "cat_hi": "अन्य सभी श्रेणियां और मध्य प्रदेश से बाहर के उम्मीदवार"
+        "a_en": "Applications can be filled on www.mponiline.gov.in and www.mppsc.mp.gov.in.",
+        "a_hi": "आवेदन www.mponiline.gov.in और www.mppsc.mp.gov.in पर भरे जा सकते हैं।",
+        "q_en": "What is the official website for MPPSC Law Officer application?",
+        "q_hi": "MPPSC विधि अधिकारी आवेदन के लिए आधिकारिक वेबसाइट कौन सी है?"
       }
     ],
-    "h1_en": "MPPSC Law Officer Recruitment 2026 – Apply Online for 1 Vacancy",
+    "fees": [],
+    "h1_en": "MPPSC Law Officer Recruitment 2026 – Apply Online for 1 Post",
     "h1_hi": "MPPSC विधि अधिकारी भर्ती 2026 – 1 पद के लिए ऑनलाइन आवेदन करें",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official MPPSC website at mponline.gov.in or mppsc.mp.gov.in.",
-      "Click on apply online for Law Officer Exam 2026.",
-      "Fill in the required details and upload necessary documents.",
-      "Pay the application fee and submit the form.",
-      "Take a printout of the final submitted application form."
+      "Visit the official website www.mppsc.mp.gov.in or www.mponiline.gov.in.",
+      "Fill out the online application form carefully between 23.11.2026 and 22.12.2026.",
+      "Pay the required application fee through credit card, debit card, or internet banking.",
+      "Take a printout of the application form and submit it along with all necessary documents to the commission office by 28.12.2026."
     ],
     "how_hi": [
-      "आधिकारिक वेबसाइट mponline.gov.in या mppsc.mp.gov.in पर जाएं।",
-      "विधि अधिकारी परीक्षा 2026 के लिए ऑनलाइन आवेदन पर क्लिक करें।",
-      "आवश्यक विवरण भरें और जरूरी दस्तावेज अपलोड करें।",
-      "आवेदन शुल्क का भुगतान करें और फॉर्म जमा करें।",
-      "अंतिम रूप से जमा किए गए आवेदन पत्र का प्रिंटआउट लें।"
+      "आधिकारिक वेबसाइट www.mppsc.mp.gov.in या www.mponiline.gov.in पर जाएं।",
+      "दिनांक 23.11.2026 से 22.12.2026 के बीच ऑनलाइन आवेदन पत्र सावधानीपूर्वक भरें।",
+      "क्रेडिट कार्ड, डेबिट कार्ड या इंटरनेट बैंकिंग के माध्यम से निर्धारित आवेदन शुल्क का भुगतान करें।",
+      "आवेदन पत्र का प्रिंटआउट लें और सभी आवश्यक दस्तावेजों के साथ 28.12.2026 तक आयोग कार्यालय में जमा करें।"
     ],
-    "intro_en": "Madhya Pradesh Public Service Commission (MPPSC) has invited applications for the Law Officer Exam 2026 under Advertisement No. 14/2026. There is a total of 1 vacancy available for the post of Law Officer. Online applications can be submitted from 23 November 2026 to 22 December 2026. Interested and eligible candidates should read the official notification carefully before applying online.",
-    "intro_hi": "मध्य प्रदेश लोक सेवा आयोग (MPPSC) ने विज्ञापन संख्या 14/2026 के अंतर्गत विधि अधिकारी परीक्षा 2026 के लिए आवेदन आमंत्रित किए हैं। विधि अधिकारी के पद के लिए कुल 1 रिक्ति उपलब्ध है। ऑनलाइन आवेदन 23 नवंबर 2026 से 22 दिसंबर 2026 तक जमा किए जा सकते हैं। इच्छुक और योग्य उम्मीदवार ऑनलाइन आवेदन करने से पहले आधिकारिक अधिसूचना को ध्यान से पढ़ें।",
+    "intro_en": "Madhya Pradesh Public Service Commission (MPPSC) has issued the notification for the Law Officer Exam 2026 under Advt. No. 14/2026. Online applications are invited from eligible candidates starting from 23.11.2026 until 22.12.2026. Candidates must submit their printed application along with necessary documents to the commission office by 28.12.2026. This is a permanent gazetted first-class post under the Madhya Pradesh Public Service Commission.",
+    "intro_hi": "मध्य प्रदेश लोक सेवा आयोग (MPPSC) ने विज्ञापन क्रमांक 14/2026 के तहत विधि अधिकारी परीक्षा 2026 का विज्ञापन जारी किया है। योग्य उम्मीदवार 23.11.2026 से 22.12.2026 तक ऑनलाइन आवेदन कर सकते हैं। उम्मीदवारों को अपने आवेदन और सभी आवश्यक दस्तावेज 28.12.2026 तक आयोग कार्यालय में जमा करना अनिवार्य है। यह मध्य प्रदेश लोक सेवा आयोग के अंतर्गत स्थायी राजपत्रित प्रथम श्रेणी का पद है।",
     "last_date": "2026-12-22",
     "mistakes_en": [
-      "Do not wait until the last date to apply.",
-      "Ensure all details entered match your official documents before final submission."
+      "Do not make mistakes in name, as name correction is not allowed during the correction window.",
+      "Ensure the application fee payment status shows 'Payment Done' clearly.",
+      "Make sure to submit hard copies of the application and documents to the commission office by 28.12.2026 to avoid late fees."
     ],
     "mistakes_hi": [
-      "आवेदन करने के लिए अंतिम तिथि तक प्रतीक्षा न करें।",
-      "अंतिम जमा करने से पहले सुनिश्चित करें कि दर्ज किए गए सभी विवरण आपके आधिकारिक दस्तावेजों से मेल खाते हैं।"
+      "नाम में कोई त्रुटि सुधार नहीं किया जा सकेगा, अतः नाम सावधानीपूर्वक भरें।",
+      "सुनिश्चित करें कि ऑनलाइन आवेदन में 'Payment Done' स्पष्ट रूप से उल्लेखित हो।",
+      "विलंब शुल्क से बचने के लिए 28.12.2026 तक आयोग कार्यालय में आवेदन और दस्तावेजों की हार्ड कॉपी अवश्य जमा करें।"
     ],
-    "not_en": [],
-    "not_hi": [],
+    "not_en": [
+      "Candidates convicted of an offence against women.",
+      "Candidates having more than two living children (born on or after 26 January 2001)."
+    ],
+    "not_hi": [
+      "महिला के विरुद्ध किसी अपराध के लिए सिद्ध-दोष ठहराए गए उम्मीदवार।",
+      "दो से अधिक जीवित संतान वाले उम्मीदवार (जिनमें से एक का जन्म 26 जनवरी 2001 को या उसके बाद हुआ हो)।"
+    ],
     "notice_date": "2026-11-04",
     "official_site": "https://mppsc.mp.gov.in",
     "physical": [],
@@ -230,7 +244,7 @@
       },
       {
         "label_en": "Total vacancies",
-        "label_hi": "कुल रिक्तियां",
+        "label_hi": "कुल वैकेंसी",
         "value_en": "1",
         "value_hi": "1"
       },
@@ -239,6 +253,18 @@
         "label_hi": "ऑनलाइन आवेदन",
         "value_en": "23 Nov 2026 to 22 Dec 2026",
         "value_hi": "23 नव 2026 से 22 दिस 2026"
+      },
+      {
+        "label_en": "Last date to submit hard copy",
+        "label_hi": "हार्ड कॉपी जमा करने की अंतिम तिथि",
+        "value_en": "28 Dec 2026",
+        "value_hi": "28 दिस 2026"
+      },
+      {
+        "label_en": "Educational qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "Law Degree (min 60%) + 5 years High Court practice experience",
+        "value_hi": "विधि में स्नातक (न्यूनतम 60%) + उच्च न्यायालय में 5 वर्ष का वकालत अनुभव"
       },
       {
         "label_en": "Advertisement number",
@@ -251,16 +277,16 @@
       {
         "label_en": "Pay Scale",
         "label_hi": "वेतनमान",
-        "value_en": "₹15,600–39,100 + Grade Pay ₹6,600 (Pay Matrix Level not specified further)",
-        "value_hi": "₹15,600–39,100 + ग्रेड पे ₹6,600"
+        "value_en": "₹15,600–39,100 (Grade Pay ₹6,600)",
+        "value_hi": "रुपए 15600-39100 (ग्रेड पे 6600)"
       }
     ],
     "selection_en": [
-      "Written Examination",
+      "Online Application and Document Verification",
       "Interview"
     ],
     "selection_hi": [
-      "लिखित परीक्षा",
+      "ऑनलाइन आवेदन और अभिलेख सत्यापन",
       "साक्षात्कार"
     ],
     "share_card": {
@@ -273,12 +299,12 @@
     },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "Madhya Pradesh Public Service Commission (MPPSC) has released the recruitment notification for the Law Officer Exam 2026. Eligible candidates can apply online from 23.11.2026 to 22.12.2026 through the official website.",
-    "summary_hi": "मध्य प्रदेश लोक सेवा आयोग (MPPSC) ने विधि अधिकारी परीक्षा 2026 के लिए भर्ती अधिसूचना जारी की है। योग्य उम्मीदवार आधिकारिक वेबसाइट के माध्यम से 23.11.2026 से 22.12.2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "summary_en": "Madhya Pradesh Public Service Commission (MPPSC) has released the recruitment advertisement for the Law Officer Exam 2026. Eligible candidates can apply online from 23.11.2026 to 22.12.2026.",
+    "summary_hi": "मध्य प्रदेश लोक सेवा आयोग (MPPSC) ने विधि अधिकारी परीक्षा 2026 के लिए भर्ती विज्ञापन जारी किया है। योग्य उम्मीदवार 23.11.2026 से 22.12.2026 तक ऑनलाइन आवेदन कर सकते हैं।",
     "vacancies": [
       {
-        "detail_en": "UR: 1",
-        "detail_hi": "अनारक्षित: 1",
+        "detail_en": "UR: 1, Total: 1",
+        "detail_hi": "अनारक्षित: 1, कुल: 1",
         "post_en": "Law Officer",
         "post_hi": "विधि अधिकारी",
         "total": "1"
@@ -286,10 +312,10 @@
     ],
     "video_url": null,
     "who_en": [
-      "Law graduates aged 21 to 40 seeking a government job in Madhya Pradesh."
+      "Law graduates with at least 60% marks and 5 years of High Court practice experience."
     ],
     "who_hi": [
-      "मध्य प्रदेश में सरकारी नौकरी चाहने वाले 21 से 40 वर्ष की आयु के विधि स्नातक।"
+      "विधि स्नातक जिनके पास कम से कम 60% अंक और उच्च न्यायालय में 5 वर्ष का वकालत अनुभव हो।"
     ]
   },
   "pdf": {
@@ -299,10 +325,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-05T07:08:28Z",
-  "qual": [
-    "graduate"
-  ],
-  "rewrite": true,
   "slug": "mppsc-law-officer-recruitment-2026-apply-online-for-1-vacancy",
   "source_id": "mppsc-home",
   "status": "approved",

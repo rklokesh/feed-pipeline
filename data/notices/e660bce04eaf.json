@@ -1,5 +1,20 @@
 {
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Level 1 Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "bank account refund update notice for existing candidates",
+    "summary_en": "Candidates who appeared for the RRB Level 1 exam can update their bank account details for exam fee refund until 11 November 2026.",
+    "summary_hi": "आरआरबी लेवल 1 परीक्षा में शामिल होने वाले उम्मीदवार 11 नवंबर 2026 तक परीक्षा शुल्क वापसी के लिए अपने बैंक खाता विवरण को अपडेट कर सकते हैं।",
+    "title_en": "RRB Level 1 Exam 2025 Fee Refund Bank Account Update",
+    "title_hi": "आरआरबी लेवल 1 परीक्षा 2025 शुल्क वापसी बैंक खाता अपडेट",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "RRB CEN 09/2025: pdf",
   "url": "https://rrb.indianrailways.gov.in/-/image/1793938461668123456.pdf/examsDocuments"
 }

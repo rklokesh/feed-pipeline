@@ -11,11 +11,21 @@
     "skip_reason": "",
     "summary_en": "Railway Recruitment Boards has invited online applications for various posts of Isolated Categories under CEN 09/2026. Eligible candidates can apply online up to 4 December 2026.",
     "summary_hi": "रेलवे भर्ती बोर्ड ने केंद्रीय रोजगार अधिसूचना संख्या 09/2026 के तहत पृथक श्रेणियों के विभिन्न पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 4 दिसंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
-    "title_en": "RRB Isolated Categories Recruitment 2026",
-    "title_hi": "आरआरबी पृथक श्रेणियां भर्ती 2026",
+    "title_en": "RRB Isolated Categories Recruitment 2026 – Apply Online for 191 Posts",
+    "title_hi": "आरआरबी पृथक श्रेणियां भर्ती 2026 – 191 पदों के लिए ऑनलाइन आवेदन करें",
     "type": "Job",
     "vacancies": 191
   },
+  "editor_notes": [],
+  "elig": {
+    "age_max": 40,
+    "age_min": 18,
+    "age_on": "2027-01-01",
+    "domicile": null,
+    "qual": null,
+    "relax": {}
+  },
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest:503"
   },
@@ -54,7 +64,312 @@
   "issue": 1076,
   "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-05",
   "org": "RRB",
+  "page": {
+    "after_en": [
+      "Computer Based Test (CBT)",
+      "Document Verification",
+      "Medical Examination"
+    ],
+    "after_hi": [
+      "कंप्यूटर आधारित परीक्षा (सीबीटी)",
+      "दस्तावेज़ सत्यापन",
+      "चिकित्सा परीक्षण"
+    ],
+    "age": [
+      {
+        "label_en": "Age limit (as on 01.01.2027)",
+        "label_hi": "आयु सीमा (01.01.2027 के अनुसार)",
+        "value_en": "18 to 40 years (varies by post)",
+        "value_hi": "18 से 40 वर्ष (पद के अनुसार भिन्न)"
+      }
+    ],
+    "apply_start": "2026-11-05",
+    "apply_url": "https://www.rrbapply.gov.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check eligibility criteria and medical standards",
+      "Keep active mobile number and email ID ready",
+      "Authenticate identity using Aadhaar or DigiLocker",
+      "Submit application before the last date"
+    ],
+    "checklist_hi": [
+      "पात्रता मापदंड और चिकित्सा मानकों की जाँच करें",
+      "सक्रिय मोबाइल नंबर और ईमेल आईडी तैयार रखें",
+      "आधार या डिजिलॉकर का उपयोग करके पहचान सत्यापित करें",
+      "अंतिम तिथि से पहले आवेदन जमा करें"
+    ],
+    "conducted_by_en": "Railway Recruitment Boards (RRB)",
+    "conducted_by_hi": "रेलवे भर्ती बोर्ड (आरआरबी)",
+    "dates": [
+      {
+        "label_en": "Date of Indicative Notice in Employment News",
+        "label_hi": "रोजगार समाचार में सांकेतिक नोटिस की तिथि",
+        "value_en": "24 Oct 2026",
+        "value_hi": "24 अक्तूबर 2026"
+      },
+      {
+        "label_en": "Opening date of Online application",
+        "label_hi": "ऑनलाइन आवेदन शुरू होने की तिथि",
+        "value_en": "05 Nov 2026",
+        "value_hi": "05 नवंबर 2026"
+      },
+      {
+        "label_en": "Closing date for Submission of Online Application",
+        "label_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि",
+        "value_en": "04 Dec 2026",
+        "value_hi": "04 दिसंबर 2026"
+      },
+      {
+        "label_en": "Last Date for Application fee payment",
+        "label_hi": "आवेदन शुल्क भुगतान की अंतिम तिथि",
+        "value_en": "06 Dec 2026",
+        "value_hi": "06 दिसंबर 2026"
+      },
+      {
+        "label_en": "Modification window for corrections",
+        "label_hi": "सुधार के लिए संशोधन विंडो",
+        "value_en": "07 Dec 2026 to 16 Dec 2026",
+        "value_hi": "07 दिसंबर 2026 से 16 दिसंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Educational qualification certificates",
+      "Age proof certificates",
+      "Caste / Category certificate (SC/ST/OBC-NCL/EWS) if applicable",
+      "Scanned photograph and signature",
+      "Aadhaar card or DigiLocker verification details"
+    ],
+    "documents_hi": [
+      "शैक्षणिक योग्यता प्रमाण पत्र",
+      "आयु प्रमाण पत्र",
+      "जाति / श्रेणी प्रमाण पत्र (एससी/एसटी/ओबीसी-एनसीएल/ईडब्ल्यूएस) यदि लागू हो",
+      "स्कैन की गई तस्वीर और हस्ताक्षर",
+      "आधार कार्ड या डिजिलॉकर सत्यापन विवरण"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Educational Qualifications",
+        "label_hi": "शैक्षणिक योग्यताएं",
+        "value_en": "Must possess prescribed educational qualifications on or before the closing date. Candidates waiting for final results are NOT eligible.",
+        "value_hi": "अंतिम तिथि पर या उससे पहले निर्धारित शैक्षणिक योग्यता होनी चाहिए। अंतिम परिणामों का इंतजार कर रहे उम्मीदवार पात्र नहीं हैं।"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "Railway Recruitment Boards conduct recruitment for various isolated category posts such as Law Assistants, Translators, Inspectors, and Lab Assistants across Indian Railways.",
+        "a_hi": "रेलवे भर्ती बोर्ड भारतीय रेलवे में लॉ असिस्टेंट, ट्रांसलेटर, इंस्पेक्टर और लैब असिस्टेंट जैसे विभिन्न पृथक श्रेणी के पदों के लिए भर्ती आयोजित करता है।",
+        "q_en": "What is RRB Isolated Categories Recruitment?",
+        "q_hi": "आरआरबी आइसोलेटेड कैटेगरी भर्ती क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "The last date to submit online applications is 4 December 2026.",
+        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 4 दिसंबर 2026 है।",
+        "q_en": "What is the last date to apply for RRB Isolated Categories Recruitment 2026?",
+        "q_hi": "आरआरबी आइसोलेटेड कैटेगरी भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "A total of 191 vacancies are notified under this CEN.",
+        "a_hi": "इस सीईएन के तहत कुल 191 रिक्तियों की अधिसूचना दी गई है।",
+        "q_en": "What is the total number of vacancies under CEN 09/2026?",
+        "q_hi": "सीईएन 09/2026 के तहत कुल रिक्तियां कितनी हैं?"
+      },
+      {
+        "a_en": "Candidates can apply online through the link provided on https://rrb.indianrailways.gov.in or https://www.rrbapply.gov.in.",
+        "a_hi": "उम्मीदवार https://rrb.indianrailways.gov.in या https://www.rrbapply.gov.in पर दिए गए लिंक के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+        "q_en": "What is the official website to apply online?",
+        "q_hi": "ऑनलाइन आवेदन करने के लिए आधिकारिक वेबसाइट क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "RRB Isolated Categories Recruitment 2026 – Apply Online for 191 Posts",
+    "h1_hi": "आरआरबी पृथक श्रेणियां भर्ती 2026 – 191 पदों के लिए ऑनलाइन आवेदन करें",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the unified official RRB website or the direct application link at rrbapply.gov.in.",
+      "Create an account or use existing account credentials from earlier RRB CENs.",
+      "Fill out the online application form with personal and educational details.",
+      "Upload mandatory scanned documents including live photo.",
+      "Pay the required examination fee and submit the final application."
+    ],
+    "how_hi": [
+      "एकीकृत आधिकारिक आरआरबी वेबसाइट या सीधे आवेदन लिंक rrbapply.gov.in पर जाएं।",
+      "एक खाता बनाएं या पहले के आरआरबी सीईएन से मौजूदा खाता क्रेडेंशियल का उपयोग करें।",
+      "व्यक्तिगत और शैक्षणिक विवरण के साथ ऑनलाइन आवेदन पत्र भरें।",
+      "लाइव फोटो सहित आवश्यक स्कैन किए गए दस्तावेज़ अपलोड करें।",
+      "आवश्यक परीक्षा शुल्क का भुगतान करें और अंतिम आवेदन जमा करें।"
+    ],
+    "intro_en": "Railway Recruitment Boards (RRB) has released Centralised Employment Notification (CEN) No. 09/2026 for the recruitment of various posts of Isolated Categories. A total of 191 vacancies are available across various departments such as Personnel, Commercial, RDSO, and Mechanical (CMT). Online applications start on 5 November 2026 and will remain open until 4 December 2026. Eligible and interested candidates should check post-wise parameters, educational qualifications, and medical standards before applying through the official RRB application portal.",
+    "intro_hi": "रेलवे भर्ती बोर्ड (आरआरबी) ने पृथक श्रेणियों के विभिन्न पदों की भर्ती के लिए केंद्रीय रोजगार अधिसूचना (CEN) संख्या 09/2026 जारी की है। कार्मिक, वाणिज्यिक, आरडीएसओ और मैकेनिकल जैसे विभिन्न विभागों में कुल 191 रिक्तियां उपलब्ध हैं। ऑनलाइन आवेदन 5 नवंबर 2026 से शुरू होंगे और 4 दिसंबर 2026 तक खुले रहेंगे। योग्य और इच्छुक उम्मीदवारों को आधिकारिक आरआरबी आवेदन पोर्टल के माध्यम से आवेदन करने से पहले पद-वार मानकों, शैक्षणिक योग्यता और चिकित्सा मानकों की जांच करनी चाहिए।",
+    "last_date": "2026-12-04",
+    "mistakes_en": [
+      "Do not submit multiple applications, as it leads to rejection and debarment.",
+      "Ensure correct details are filled in the 'Create an Account' form as it cannot be modified later."
+    ],
+    "mistakes_hi": [
+      "कई आवेदन जमा न करें, क्योंकि इससे अस्वीकृति और डिबारमेंट हो सकता है।",
+      "सुनिश्चित करें कि 'खाता बनाएं' फॉर्म में सही विवरण भरे गए हैं क्योंकि बाद में इसमें संशोधन नहीं किया जा सकता है।"
+    ],
+    "not_en": [
+      "Candidates waiting for final results of prescribed educational qualifications.",
+      "Candidates submitting multiple applications to different or same RRBs."
+    ],
+    "not_hi": [
+      "निर्धारित शैक्षणिक योग्यता के अंतिम परिणामों का इंतजार कर रहे उम्मीदवार।",
+      "विभिन्न या समान आरआरबी में कई आवेदन जमा करने वाले उम्मीदवार।"
+    ],
+    "notice_date": "2026-11-05",
+    "official_site": "https://rrb.indianrailways.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Chief Law Assistant, Public Prosecutor, Senior Publicity Inspector, Junior Translator, Staff and Welfare Inspector, Scientific Assistant, Lab Assistant",
+        "value_hi": "चीफ लॉ असिस्टेंट, पब्लिक प्रॉसिक्यूटर, सीनियर पब्लिसिटी इंस्पेक्टर, जूनियर ट्रांसलेटर, स्टाफ एंड वेलफेयर इंस्पेक्टर, साइंटिफिक असिस्टेंट, लैब असिस्टेंट"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल वैकेंसी",
+        "value_en": "191",
+        "value_hi": "191"
+      },
+      {
+        "label_en": "Apply online",
+        "label_hi": "ऑनलाइन आवेदन",
+        "value_en": "05 Nov 2026 to 04 Dec 2026",
+        "value_hi": "05 नव 2026 से 04 दिस 2026"
+      },
+      {
+        "label_en": "Last date for fee",
+        "label_hi": "फीस भरने की अंतिम तिथि",
+        "value_en": "06 Dec 2026",
+        "value_hi": "06 दिस 2026"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "18-40 years (as on 01.01.2027)",
+        "value_hi": "18-40 वर्ष (01.01.2027 के अनुसार)"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "CEN No. 09/2026",
+        "value_hi": "सीईएन संख्या 09/2026"
+      }
+    ],
+    "salary": [
+      {
+        "label_en": "Pay Level 7",
+        "label_hi": "वेतन स्तर 7",
+        "value_en": "Initial Pay ₹44,900",
+        "value_hi": "प्रारंभिक वेतन ₹44,900"
+      },
+      {
+        "label_en": "Pay Level 6",
+        "label_hi": "वेतन स्तर 6",
+        "value_en": "Initial Pay ₹35,400",
+        "value_hi": "प्रारंभिक वेतन ₹35,400"
+      },
+      {
+        "label_en": "Pay Level 2",
+        "label_hi": "वेतन स्तर 2",
+        "value_en": "Initial Pay ₹19,900",
+        "value_hi": "प्रारंभिक वेतन ₹19,900"
+      }
+    ],
+    "selection_en": [
+      "Computer Based Test (CBT)",
+      "Translation Test (as applicable)",
+      "Document Verification",
+      "Medical Examination"
+    ],
+    "selection_hi": [
+      "कंप्यूटर आधारित परीक्षा (सीबीटी)",
+      "अनुवाद परीक्षा (जहां लागू हो)",
+      "दस्तावेज़ सत्यापन",
+      "चिकित्सा परीक्षण"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Isolated Categories",
+      "line_hi": "पृथक श्रेणियां",
+      "posts": 191
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Railway Recruitment Boards has invited online applications for various posts of Isolated Categories under CEN 09/2026. Eligible candidates can apply online up to 4 December 2026.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने केंद्रीय रोजगार अधिसूचना संख्या 09/2026 के तहत पृथक श्रेणियों के विभिन्न पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 4 दिसंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Pay Level 7, Initial Pay ₹44,900, Medical C1, Age 18-40",
+        "detail_hi": "वेतन स्तर 7, प्रारंभिक वेतन ₹44,900, मेडिकल C1, आयु 18-40",
+        "post_en": "Chief Law Assistant",
+        "post_hi": "चीफ लॉ असिस्टेंट",
+        "total": "17"
+      },
+      {
+        "detail_en": "Pay Level 7, Initial Pay ₹44,900, Medical C1, Age 18-32",
+        "detail_hi": "वेतन स्तर 7, प्रारंभिक वेतन ₹44,900, मेडिकल C1, आयु 18-32",
+        "post_en": "Public Prosecutor",
+        "post_hi": "पब्लिक प्रॉसिक्यूटर",
+        "total": "21"
+      },
+      {
+        "detail_en": "Pay Level 6, Initial Pay ₹35,400, Medical C1, Age 18-33",
+        "detail_hi": "वेतन स्तर 6, प्रारंभिक वेतन ₹35,400, मेडिकल C1, आयु 18-33",
+        "post_en": "Senior Publicity Inspector",
+        "post_hi": "सीनियर पब्लिसिटी इंस्पेक्टर",
+        "total": "8"
+      },
+      {
+        "detail_en": "Pay Level 6, Initial Pay ₹35,400, Medical C2, Age 18-33",
+        "detail_hi": "वेतन स्तर 6, प्रारंभिक वेतन ₹35,400, मेडिकल C2, आयु 18-33",
+        "post_en": "Junior Translator / Hindi",
+        "post_hi": "जूनियर ट्रांसलेटर / हिंदी",
+        "total": "79"
+      },
+      {
+        "detail_en": "Pay Level 6, Initial Pay ₹35,400, Medical C1, Age 18-33",
+        "detail_hi": "वेतन स्तर 6, प्रारंभिक वेतन ₹35,400, मेडिकल C1, आयु 18-33",
+        "post_en": "Staff and Welfare Inspector",
+        "post_hi": "स्टाफ एंड वेलफेयर इंस्पेक्टर",
+        "total": "27"
+      },
+      {
+        "detail_en": "Pay Level 6, Initial Pay ₹35,400, Medical B1, Age 18-35",
+        "detail_hi": "वेतन स्तर 6, प्रारंभिक वेतन ₹35,400, मेडिकल B1, आयु 18-35",
+        "post_en": "Scientific Assistant (Training)",
+        "post_hi": "साइंटिफिक असिस्टेंट (ट्रेनिंग)",
+        "total": "3"
+      },
+      {
+        "detail_en": "Pay Level 2, Initial Pay ₹19,900, Medical B1, Age 18-30",
+        "detail_hi": "वेतन स्तर 2, प्रारंभिक वेतन ₹19,900, मेडिकल B1, आयु 18-30",
+        "post_en": "Lab Assistant Gr. III (Chemist & Metallurgist)",
+        "post_hi": "लैब असिस्टेंट ग्रेड III (केमिस्ट एंड मेटलर्जिस्ट)",
+        "total": "36"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Eligible candidates meeting the age and educational criteria for isolated category posts in railways."
+    ],
+    "who_hi": [
+      "रेलवे में पृथक श्रेणी के पदों के लिए आयु और शैक्षणिक मानदंडों को पूरा करने वाले योग्य उम्मीदवार।"
+    ]
+  },
   "pdf": {
     "bytes": 1860816,
     "pages": 59,
@@ -66,6 +381,7 @@
     "graduate",
     "postgraduate"
   ],
+  "slug": "rrb-isolated-categories-recruitment-2026-apply-online-for-191-po-89dd",
   "source_id": "rrb-unified",
   "status": "approved",
   "title": "RRB CEN 09/2026: CEN 09-2026 English Version 05 11 2026 (16-23-PM)",
