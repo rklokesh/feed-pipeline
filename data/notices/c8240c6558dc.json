@@ -1,0 +1,163 @@
+{
+  "board_url": "https://rrcnr.org/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "WAY, LAJPAT NAGAR, NEW DELHI-110024, Website: www.rrcnr.org Notification No.: RRC/NR/03/2026/Act Apprentice dated: 06/11/2026 Engagement of 4651 Apprentices under the Apprentices Act 1961 over",
+      "source": "rule",
+      "value": "RRC/NR/03/2026/Act Apprentice dated"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "Notification No.: RRC/NR/03/2026/Act Apprentice"
+      }
+    },
+    "age_limit": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": "2026-12-11",
+        "max": 24,
+        "min": 15
+      }
+    },
+    "age_limit_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "age_limit": "The candidates should have completed 15 years of age and should not have completed 24 years of age as on 11/12/2026."
+      }
+    },
+    "apply_last": {
+      "evidence": "tification are NOT eligible to apply. 3.0 Age Limit: (as on closing date of Online Application i.e. 11/12/2026) 23:59 HOURS 3.1 The candidates should have completed 15 years of age and should not have completed 24 years of age as on 1",
+      "source": "rule",
+      "value": "2026-12-11"
+    },
+    "apply_last_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_last": "Date & time of Closing of Online Application 11/12/2026 (At 23:59 Hrs.)"
+      }
+    },
+    "apply_start": {
+      "conflict": {
+        "evidence": "",
+        "provider": "gemini/gemini-flash-lite-latest",
+        "source": "ai",
+        "value": "2026-11-11"
+      },
+      "evidence": "asons or any other reason. IMPORTANT DATES Date and time of opening of Online Application 11 /11/2026 Date & time of Closing of Online Application 11/12/2026 (At 23:59 Hrs.) Expected Date of Display of Merit February 2027 1.0 Det",
+      "source": "rule",
+      "value": "2026-12-11"
+    },
+    "apply_start_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_start": "Date and time of opening of Online Application 11 /11/2026"
+      }
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "www.rrcnr.org"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "Website: www.rrcnr.org"
+      }
+    },
+    "fee": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "female": 0,
+        "general": 100,
+        "obc": 100,
+        "pwd": 0,
+        "sc_st": 0
+      }
+    },
+    "fee_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "fee": "APPLICATION FEE (NON-REFUNDABLE) Rs. 100/- ... No fee is required to be paid by SC/ST/PwBD/Women candidates."
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Act Apprentice"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "Engagement of 4651 Apprentices under the Apprentices Act 1961 over Northern Railway."
+      }
+    },
+    "qualification": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "SSC/Matriculation/10th class examination with minimum 50% marks and ITI in relevant trade issued by NCVT/SCVT."
+    },
+    "qualification_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "qualification": "The candidate must have passed SSC/Matriculation/10th class examination or its equivalent (under 10+2 examination system) with minimum 50% marks, in aggregate, from recognized Board and must have passed ITI in relevant trade issued by NCVT/SCVT recognized by Government of India."
+      }
+    },
+    "total_vacancies": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 4651
+    },
+    "total_vacancies_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "total_vacancies": "Engagement of 4651 Apprentices under the Apprentices Act 1961 over Northern Railway."
+      }
+    }
+  },
+  "first_seen": "2026-11-06T17:15:06+00:00",
+  "id": "c8240c6558dc",
+  "kind": "notification",
+  "org": "RRC Northern Railway",
+  "pdf": {
+    "bytes": 1204847,
+    "pages": 18,
+    "sha256": "771fd66bc692cb8fe640b10d8b2ae1f151f1f663267e6832506fabfb0541e7c9",
+    "text_kind": "text"
+  },
+  "source_id": "rrc-nr",
+  "status": "pending_review",
+  "title": "06.11.2026 Kind Attention: Notification for Engagement of 4651 Apprentices under the Apprentices Act 1961 over Northern Railway for the year 2026-27 Click here for Notification",
+  "url": "https://rrcnr.org/downloads/Notification_Act_Appretice_2026.pdf"
+}
