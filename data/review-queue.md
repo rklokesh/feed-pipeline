@@ -1,9 +1,13 @@
-# Review queue — 18 pending
+# Review queue — 22 pending
 
-_Updated 2026-11-06T07:29:49+00:00_
+_Updated 2026-11-06T08:01:41+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-06 | RPSC | answer_key | 06/11/2026 Model Answer Key for Asst. Director (Home Dept.) Comp. Exam- 2025 -DNA Division | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/AnswerKeys/DCAC0669-EA44-4265-A400-945D5B3F321D.pdf) |
+| 2026-11-06 | WBPSC | update | CORRIGENDUM NOTICE IN CONNECTION WITH RECRUITMENT TO THE POSTS OF ASSISTANT TRANSLATOR IN  | — | — | — | — | [open](https://psc.wb.gov.in/Download?param1=An_20261106130115_Edit_22_2024.pdf&param2=advertisement) |
+| 2026-11-06 | RPSC | answer_key | 06/11/2026 Model Answer Key for Sr. Scientific Officer (Home Dept.) Comp. Exam- 2025 - Che | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/AnswerKeys/BC677D55-978A-4F3E-BD38-1D222898DB0E.pdf) |
+| 2026-11-06 | RPSC | answer_key | 06/11/2026 Model Answer Key for Sr. Scientific Officer (Home Dept.) Comp. Exam- 2025 - Nar | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/AnswerKeys/CE66A070-D792-4B84-B7BF-25DC2BC70188.pdf) |
 | 2026-11-06 | UKPSC | other | 1 {"meta_value":"Uttarakhand Public Service Commission"} 06-11-2026 05-12-2026 | — | — | — | — | [open](https://psc.uk.gov.in/public/uploads/recruitment/1966650247.pdf) |
 | 2026-11-06 | MPPSC | other | सहायक प्राध्‍यापक (भौतिकशास्‍त्र) परीक्षा - 2024 के पद हेतु उम्‍मीदवारी निरस्‍त किए जाने स | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Candidature_Rejection_Assistant_Professor_Physics_Exam_2024_Dated_05_11_20261.pdf) |
 | 2026-11-06 | ITBP | notification | FOR WEBSITE FUNCTIONALITY TEST ONLY (DO NOT APPLY)- IT IS ONLY FOR WEBSITE TESTING | — | — | — | — | [open](https://recruitment.itbpolice.nic.in/noticeboards/downloadpdf/369.pdf) |

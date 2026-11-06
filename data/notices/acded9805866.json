@@ -1,0 +1,27 @@
+{
+  "board_url": "https://rpsc.rajasthan.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "exam_date": {
+      "evidence": "(Home Dept.) Comp. Exam - 2025 Subject : Chemistry Division Exam Date : 14-10-2026 Model Answer Key Issue Date : 06-11-2026 Answer key as per the Question Paper uploaded on Website Q. No. RES Q. No. RES Q. No.",
+      "source": "rule",
+      "value": "2026-10-14"
+    }
+  },
+  "first_seen": "2026-11-06T07:57:54+00:00",
+  "id": "acded9805866",
+  "kind": "answer_key",
+  "org": "RPSC",
+  "pdf": {
+    "bytes": 218213,
+    "pages": 1,
+    "sha256": "17698d338c54653f5dfb7a689c5d6430a0f3780d4d65f8383904874a6282c008",
+    "text_kind": "text"
+  },
+  "source_id": "rpsc-home",
+  "status": "pending_review",
+  "title": "06/11/2026 Model Answer Key for Sr. Scientific Officer (Home Dept.) Comp. Exam- 2025 - Chemistry Division",
+  "url": "https://rpsc.rajasthan.gov.in/Static/AnswerKeys/BC677D55-978A-4F3E-BD38-1D222898DB0E.pdf"
+}

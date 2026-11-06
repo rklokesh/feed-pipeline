@@ -1,0 +1,27 @@
+{
+  "board_url": "https://rpsc.rajasthan.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "exam_date": {
+      "evidence": "(Home Dept.) Comp. Exam -2025 Subject : Narcotics Division Exam Date : 15-10-2026 Model Answer Key Issue Date : 06-11-2026 Answer key as per the Question Paper uploaded on Website Q. No. RES Q. No. RES Q. No.",
+      "source": "rule",
+      "value": "2026-10-15"
+    }
+  },
+  "first_seen": "2026-11-06T07:57:54+00:00",
+  "id": "b0066df1920c",
+  "kind": "answer_key",
+  "org": "RPSC",
+  "pdf": {
+    "bytes": 218228,
+    "pages": 1,
+    "sha256": "dcd2b10cb923853d17b13e93696b9935a6202bd45392f0948a2a8a5351b37b01",
+    "text_kind": "text"
+  },
+  "source_id": "rpsc-home",
+  "status": "pending_review",
+  "title": "06/11/2026 Model Answer Key for Sr. Scientific Officer (Home Dept.) Comp. Exam- 2025 - Narcotics Division",
+  "url": "https://rpsc.rajasthan.gov.in/Static/AnswerKeys/CE66A070-D792-4B84-B7BF-25DC2BC70188.pdf"
+}
