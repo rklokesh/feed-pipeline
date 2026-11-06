@@ -1,5 +1,36 @@
 {
+  "auto_published": true,
   "board_url": "https://rrcnr.org/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-12-11",
+    "list": true,
+    "posts": "Act Apprentice",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "RRC Northern Railway has invited online applications for 4651 Act Apprentice positions. Eligible candidates with 10th and ITI qualifications can apply online by 11 December 2026.",
+    "summary_hi": "आरआरसी उत्तरी रेलवे ने 4651 एक्ट अपरेंटिस पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। 10वीं और आईटीआई योग्यता वाले योग्य उम्मीदवार 11 दिसंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "title_en": "RRC Northern Railway Act Apprentice Recruitment 2026 – Online Form",
+    "title_hi": "आरआरसी उत्तरी रेलवे एक्ट अपरेंटिस भर्ती 2026 – ऑनलाइन फॉर्म",
+    "type": "Job",
+    "vacancies": 4651
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": 24,
+    "age_min": 15,
+    "age_on": "2026-12-11",
+    "domicile": null,
+    "qual": "iti",
+    "relax": {
+      "OBC": 3,
+      "PwD": 10,
+      "SC": 5,
+      "ST": 5
+    }
+  },
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -148,16 +179,327 @@
   },
   "first_seen": "2026-11-06T17:15:06+00:00",
   "id": "c8240c6558dc",
+  "issue": 1160,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-06",
   "org": "RRC Northern Railway",
+  "page": {
+    "after_en": [
+      "Shortlisting of candidates based on merit",
+      "Call for Document Verification and submission of medical fitness certificates",
+      "Engagement for apprenticeship training upon successful verification"
+    ],
+    "after_hi": [
+      "मेरिट के आधार पर उम्मीदवारों की शॉर्टलिस्टिंग",
+      "दस्तावेज़ सत्यापन और चिकित्सा फिटनेस प्रमाण पत्र प्रस्तुत करने के लिए बुलावा",
+      "सफल सत्यापन के बाद अप्रेंटिसशिप प्रशिक्षण के लिए सगाई"
+    ],
+    "age": [
+      {
+        "label_en": "Minimum age",
+        "label_hi": "न्यूनतम आयु",
+        "value_en": "15 years",
+        "value_hi": "15 वर्ष"
+      },
+      {
+        "label_en": "Maximum age",
+        "label_hi": "अधिकतम आयु",
+        "value_en": "24 years",
+        "value_hi": "24 वर्ष"
+      },
+      {
+        "label_en": "As on date",
+        "label_hi": "इस तिथि के अनुसार",
+        "value_en": "11 Dec 2026",
+        "value_hi": "11 दिसंबर 2026"
+      },
+      {
+        "label_en": "SC / ST relaxation",
+        "label_hi": "एससी / एसटी छूट",
+        "value_en": "5 years",
+        "value_hi": "5 वर्ष"
+      },
+      {
+        "label_en": "OBC relaxation",
+        "label_hi": "अन्य पिछड़ा वर्ग छूट",
+        "value_en": "3 years",
+        "value_hi": "3 वर्ष"
+      },
+      {
+        "label_en": "PwBD relaxation",
+        "label_hi": "दिव्यांग छूट",
+        "value_en": "10 years",
+        "value_hi": "10 वर्ष"
+      }
+    ],
+    "apply_start": "2026-11-11",
+    "apply_url": "https://www.rrcnr.org",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Verify your 10th aggregate percentage is at least 50%",
+      "Ensure you hold an ITI certificate in the correct trade",
+      "Keep scanned copies of your photo, signature, and certificates ready",
+      "Note down registration details and print the final submitted application"
+    ],
+    "checklist_hi": [
+      "सत्यापित करें कि आपका 10वीं का कुल प्रतिशत कम से कम 50% है",
+      "सुनिश्चित करें कि आपके पास सही ट्रेड में आईटीआई प्रमाण पत्र है",
+      "अपनी फोटो, हस्ताक्षर और प्रमाण पत्रों की स्कैन की गई प्रतियां तैयार रखें",
+      "पंजीकरण विवरण नोट करें और अंतिम रूप से जमा किए गए आवेदन का प्रिंट लें"
+    ],
+    "conducted_by_en": "Railway Recruitment Cell, Northern Railway (RRC NR)",
+    "conducted_by_hi": "रेलवे भर्ती सेल, उत्तरी रेलवे",
+    "dates": [
+      {
+        "label_en": "Notification date",
+        "label_hi": "अधिसूचना तिथि",
+        "value_en": "06 Nov 2026",
+        "value_hi": "06 नवंबर 2026"
+      },
+      {
+        "label_en": "Online application starts",
+        "label_hi": "ऑनलाइन आवेदन शुरू",
+        "value_en": "11 Nov 2026",
+        "value_hi": "11 नवंबर 2026"
+      },
+      {
+        "label_en": "Online application last date",
+        "label_hi": "ऑनलाइन आवेदन की अंतिम तिथि",
+        "value_en": "11 Dec 2026",
+        "value_hi": "11 दिसंबर 2026"
+      },
+      {
+        "label_en": "Expected display of merit",
+        "label_hi": "मेरिट प्रदर्शित होने की संभावित तिथि",
+        "value_en": "February 2027",
+        "value_hi": "फरवरी 2027"
+      }
+    ],
+    "documents_en": [
+      "Matriculation/10th marksheet and certificate",
+      "ITI consolidated marksheet and National Trade Certificate (NCVT/SCVT)",
+      "Caste certificate in Central Government format (if applicable)",
+      "Disability certificate (if applicable)",
+      "Medical fitness certificate signed by a government authorized doctor"
+    ],
+    "documents_hi": [
+      "मैट्रिकुलेशन/10वीं की अंकतालिका और प्रमाण पत्र",
+      "आईटीआई समेकित अंकतालिका और राष्ट्रीय व्यापार प्रमाण पत्र (एनसीवीटी/एससीवीटी)",
+      "केंद्र सरकार के प्रारूप में जाति प्रमाण पत्र (यदि लागू हो)",
+      "दिव्यांगता प्रमाण पत्र (यदि लागू हो)",
+      "सरकार द्वारा अधिकृत डॉक्टर द्वारा हस्ताक्षरित चिकित्सा फिटनेस प्रमाण पत्र"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Education",
+        "label_hi": "शिक्षा",
+        "value_en": "Passed SSC/Matriculation/10th class examination with minimum 50% marks and ITI in relevant trade issued by NCVT/SCVT.",
+        "value_hi": "न्यूनतम 50% अंकों के साथ 10वीं कक्षा उत्तीर्ण और एनसीवीटी/एससीवीटी से संबंधित ट्रेड में आईटीआई।"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is an apprenticeship training program offered by Northern Railway under the Apprentices Act 1961. Selected candidates receive training in various trades at different divisions and workshops without a guarantee of regular government employment afterwards.",
+        "a_hi": "यह अप्रेंटिसशिप अधिनियम 1961 के तहत उत्तरी रेलवे द्वारा प्रदान किया जाने वाला एक अप्रेंटिसशिप प्रशिक्षण कार्यक्रम है। चयनित उम्मीदवारों को विभिन्न डिवीजनों और कार्यशालाओं में प्रशिक्षण मिलता है, जिसके बाद नियमित सरकारी रोजगार की कोई गारंटी नहीं होती है।",
+        "q_en": "What is RRC Northern Railway Act Apprentice Recruitment?",
+        "q_hi": "आरआरसी उत्तरी रेलवे एक्ट अपरेंटिस भर्ती क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "The last date to submit the online application is 11 December 2026 up to 23:59 hours.",
+        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 11 दिसंबर 2026 रात 23:59 बजे तक है।",
+        "q_en": "What is the last date to apply for RRC NR Act Apprentice 2026?",
+        "q_hi": "आरआरसी एनआर एक्ट अपरेंटिस 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "The application fee is ₹100 for General and OBC candidates. SC, ST, PwBD, and women candidates are exempted from paying the fee.",
+        "a_hi": "सामान्य और अन्य पिछड़ा वर्ग के उम्मीदवारों के लिए आवेदन शुल्क ₹100 है। एससी, एसटी, दिव्यांग और महिला उम्मीदवारों को शुल्क भुगतान से छूट दी गई है।",
+        "q_en": "What is the application fee for RRC Northern Railway Apprentice?",
+        "q_hi": "आरआरसी उत्तरी रेलवे अपरेंटिस के लिए आवेदन शुल्क क्या है?"
+      },
+      {
+        "a_en": "Candidates must have passed 10th class examination with a minimum of 50% marks and possess an ITI in the relevant trade from NCVT/SCVT.",
+        "a_hi": "उम्मीदवारों को न्यूनतम 50% अंकों के साथ 10वीं कक्षा की परीक्षा उत्तीर्ण होनी चाहिए और एनसीवीटी/एससीवीटी से संबंधित ट्रेड में आईटीआई होना चाहिए।",
+        "q_en": "What is the educational qualification required?",
+        "q_hi": "आवश्यक शैक्षणिक योग्यता क्या है?"
+      },
+      {
+        "a_en": "Candidates must be between 15 and 24 years of age as on 11 December 2026, with age relaxations applicable for reserved categories.",
+        "a_hi": "11 दिसंबर 2026 के अनुसार उम्मीदवारों की आयु 15 से 24 वर्ष के बीच होनी चाहिए, जिसमें आरक्षित श्रेणियों के लिए आयु में छूट लागू है।",
+        "q_en": "What is the age limit for RRC NR Apprentice Recruitment 2026?",
+        "q_hi": "आरआरसी एनआर अपरेंटिस भर्ती 2026 के लिए आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "No, there is no written test or viva. Selection is based on the merit list prepared by taking the average of marks obtained in 10th and ITI examinations.",
+        "a_hi": "नहीं, कोई लिखित परीक्षा या मौखिक परीक्षा नहीं है। चयन 10वीं और आईटीआई परीक्षाओं में प्राप्त अंकों के औसत को लेकर तैयार की गई मेरिट सूची के आधार पर होता है।",
+        "q_en": "Is there any written exam for selection?",
+        "q_hi": "क्या चयन के लिए कोई लिखित परीक्षा है?"
+      }
+    ],
+    "fees": [
+      {
+        "amount": "₹100",
+        "cat_en": "General / OBC",
+        "cat_hi": "सामान्य / अन्य पिछड़ा वर्ग"
+      },
+      {
+        "amount": "₹0",
+        "cat_en": "SC / ST / PwBD / Women",
+        "cat_hi": "एससी / एसटी / दिव्यांग / महिला"
+      }
+    ],
+    "h1_en": "RRC Northern Railway Act Apprentice Recruitment 2026 – Online Form",
+    "h1_hi": "आरआरसी उत्तरी रेलवे एक्ट अपरेंटिस भर्ती 2026 – ऑनलाइन फॉर्म",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official RRC Northern Railway website at www.rrcnr.org",
+      "Read the notification instructions carefully before filling out the form",
+      "Register and fill in personal, educational, and trade details accurately",
+      "Pay the application fee of ₹100 online (if applicable)",
+      "Submit the final application and take a printout of the e-receipt and application form"
+    ],
+    "how_hi": [
+      "आरआरसी उत्तरी रेलवे की आधिकारिक वेबसाइट www.rrcnr.org पर जाएं",
+      "फॉर्म भरने से पहले अधिसूचना के निर्देशों को ध्यान से पढ़ें",
+      "पंजीकरण करें और व्यक्तिगत, शैक्षणिक और ट्रेड विवरण सटीक रूप से भरें",
+      "ऑनलाइन माध्यम से ₹100 का आवेदन शुल्क भुगतान करें (यदि लागू हो)",
+      "अंतिम आवेदन जमा करें और ई-रसीद तथा आवेदन पत्र का प्रिंटआउट लें"
+    ],
+    "intro_en": "Railway Recruitment Cell (RRC), Northern Railway has released the official notification for the engagement of 4651 Act Apprentices under the Apprentices Act 1961 for the year 2026-27. Candidates who have passed class 10th with at least 50% marks and hold an ITI certificate in the relevant trade can apply online. The online application process starts on 11 November 2026 and will close on 11 December 2026. Read the notification carefully to ensure eligibility before submitting your application.",
+    "intro_hi": "रेलवे भर्ती सेल (आरआरसी), उत्तरी रेलवे ने वर्ष 2026-27 के लिए अप्रेंटिसशिप अधिनियम 1961 के तहत 4,651 एक्ट अपरेंटिस के पदों पर नियुक्ति के लिए आधिकारिक अधिसूचना जारी की है। जिन उम्मीदवारों ने कम से कम 50% अंकों के साथ 10वीं कक्षा उत्तीर्ण की है और संबंधित ट्रेड में आईटीआई प्रमाण पत्र रखते हैं, वे ऑनलाइन आवेदन कर सकते हैं। ऑनलाइन आवेदन प्रक्रिया 11 नवंबर 2026 से शुरू होगी और 11 दिसंबर 2026 को समाप्त होगी। आवेदन करने से पहले योग्यता सुनिश्चित करने के लिए अधिसूचना को ध्यान से पढ़ें।",
+    "last_date": "2026-12-11",
+    "mistakes_en": [
+      "Entering incorrect marks or CGPA conversion errors during online application",
+      "Submitting multiple applications, which leads to summary rejection of all applications",
+      "Failing to check whether training slots for your specific ITI trade are available in the chosen unit or cluster"
+    ],
+    "mistakes_hi": [
+      "ऑनलाइन आवेदन के दौरान गलत अंक या सीजीपीए रूपांतरण त्रुटियां दर्ज करना",
+      "एक से अधिक आवेदन जमा करना, जिससे सभी आवेदन खारिज हो जाते हैं",
+      "यह जांचने में विफल रहना कि चुने गए यूनिट या क्लस्टर में आपके आईटीआई ट्रेड के लिए सीटें उपलब्ध हैं या नहीं"
+    ],
+    "not_en": [
+      "Candidates whose 10th or ITI results were awaited as on the date of notification",
+      "Applicants who apply for a cluster or unit where training slots for their specific trade are not notified"
+    ],
+    "not_hi": [
+      "वे उम्मीदवार जिनके 10वीं या आईटीआई के परिणाम अधिसूचना की तिथि पर प्रतीक्षित थे",
+      "वे आवेदक जो ऐसे क्लस्टर या यूनिट के लिए आवेदन करते हैं जहाँ उनके ट्रेड के लिए रिक्तियां नहीं हैं"
+    ],
+    "notice_date": "2026-11-06",
+    "official_site": "https://www.rrcnr.org",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Act Apprentice",
+        "value_hi": "एक्ट अपरेंटिस"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "4,651",
+        "value_hi": "4,651"
+      },
+      {
+        "label_en": "Apply online",
+        "label_hi": "ऑनलाइन आवेदन",
+        "value_en": "11 Nov 2026 to 11 Dec 2026",
+        "value_hi": "11 नवंबर 2026 से 11 दिसंबर 2026"
+      },
+      {
+        "label_en": "Last date for fee",
+        "label_hi": "शुल्क भुगतान की अंतिम तिथि",
+        "value_en": "11 Dec 2026",
+        "value_hi": "11 दिसंबर 2026"
+      },
+      {
+        "label_en": "Educational qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "10th (50% marks) + ITI in relevant trade",
+        "value_hi": "10वीं (50% अंक) + संबंधित ट्रेड में आईटीआई"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "15 to 24 years (as on 11 Dec 2026)",
+        "value_hi": "15 से 24 वर्ष (11 दिसंबर 2026 के अनुसार)"
+      },
+      {
+        "label_en": "Selection process",
+        "label_hi": "चयन प्रक्रिया",
+        "value_en": "Merit based on 10th and ITI marks",
+        "value_hi": "10वीं और आईटीआई के अंकों के आधार पर मेरिट"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "RRC/NR/03/2026/Act Apprentice",
+        "value_hi": "RRC/NR/03/2026/Act Apprentice"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Screening and scrutiny of online applications",
+      "Preparation of merit list based on average of marks obtained in Matriculation/10th and ITI examination",
+      "Document Verification and Medical Examination"
+    ],
+    "selection_hi": [
+      "ऑनलाइन आवेदनों की जाँच और स्क्रूटनी",
+      "मैट्रिकुलेशन/10वीं और आईटीआई परीक्षा में प्राप्त अंकों के औसत के आधार पर मेरिट लिस्ट तैयार करना",
+      "दस्तावेज़ सत्यापन और चिकित्सा परीक्षा"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Act Apprentice",
+      "line_hi": "एक्ट अपरेंटिस",
+      "posts": 4651
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "RRC Northern Railway has invited online applications for 4651 Act Apprentice positions. Eligible candidates with 10th and ITI qualifications can apply online by 11 December 2026.",
+    "summary_hi": "आरआरसी उत्तरी रेलवे ने 4651 एक्ट अपरेंटिस पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। 10वीं और आईटीआई योग्यता वाले योग्य उम्मीदवार 11 दिसंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Various divisions, units, and workshops over Northern Railway.",
+        "detail_hi": "उत्तरी रेलवे के विभिन्न डिवीजन, यूनिट और वर्कशॉप।",
+        "post_en": "Act Apprentice",
+        "post_hi": "एक्ट अपरेंटिस",
+        "total": "4651"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates who have passed 10th and ITI and are aged between 15 and 24 years"
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जिन्होंने 10वीं और आईटीआई पास किया है और जिनकी आयु 15 से 24 वर्ष के बीच है"
+    ]
+  },
   "pdf": {
     "bytes": 1204847,
     "pages": 18,
     "sha256": "771fd66bc692cb8fe640b10d8b2ae1f151f1f663267e6832506fabfb0541e7c9",
     "text_kind": "text"
   },
+  "published_at": "2026-11-06T17:22:25Z",
+  "qual": [
+    "10th",
+    "iti"
+  ],
+  "slug": "rrc-northern-railway-act-apprentice-recruitment-2026-online-form",
   "source_id": "rrc-nr",
-  "status": "pending_review",
+  "status": "approved",
   "title": "06.11.2026 Kind Attention: Notification for Engagement of 4651 Apprentices under the Apprentices Act 1961 over Northern Railway for the year 2026-27 Click here for Notification",
   "url": "https://rrcnr.org/downloads/Notification_Act_Appretice_2026.pdf"
 }
