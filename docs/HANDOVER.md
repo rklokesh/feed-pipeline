@@ -334,3 +334,28 @@ SEO shows 69 only because of the pre-launch noindex (the one failing check); go_
 - First run: 182 live pages, 8 flagged (e.g. SBI/IBPS exam date shown as the 1st when the PDF gives only the month; a UPPSC
   corrigendum showing 21 Oct where the PDF says 21.09.2026). pages.py prompt now forbids turning a month into the 1st.
 - retype.py: AI "Admission" that isn't a real entrance exam (UGC-NET, CTET) is judged by the job rules.
+
+## 3n. 5-6 Nov 2026: phone design, Trending, ads, sources, deploy speed
+- **Design** (always on; `html.v2` class is added by an inline script, no preview switch):
+  - Phones: sticky glass top bar (homepage: big centred logo 76px -> 40px while reading down), liquid-glass pill with अ/A
+    (drawn from font outlines, flex-centred) + Hugeicons moon/sun, pill search + pill category chips, two-line rows.
+  - Notice pages (phone): no boxes, left-aligned heading without breadcrumb, glass back button that rides the header and
+    pins top-left (works on the first touch even mid-glide), same glass pill top-right. Shrink on scroll, icon morph.
+  - Desktop: same chrome (sticky glass bar, pill tabs/search, glass pill) but the sarkari table and beige-headed info
+    boxes stay, in rounded frames. Accessibility: Reduce Transparency / Increase Contrast / Reduce Motion handled.
+- **Trending tab** (publish.py `mark_trending`): open jobs with >= 50 posts and >= 7 days left, scored by
+  log(posts) + big-board bonus + time left; top 8; flame `site/fire-2.webp` (user's GIF). Instant icon tooltips
+  (flame/siren/NEW) via `data-tip` + the site's own `.ftip`.
+- **Ad spaces**: fixed boxes `.adslot` (728x90 desktop; 300x250 / 320x100 phone), `overflow:hidden; contain:strict`,
+  labelled Advertisement. Homepage: inside the list after the 10th row (template `#adtpl`), footer. Notice pages: after
+  At a glance (`notice-top`), before FAQ (`notice-mid`), footer. Info pages: footer. They show our Telegram card until
+  AdSense. When approved: put manual fixed-size AdSense units in each `.adbox`; keep Auto ads / anchor / vignette OFF.
+- **Sources added**: UPSC What's New (item pages), UKSSSC x2, BPSSC, JKSSB x2, JKPSC, CGPSC x2, PSSSB, JPSC, CWC,
+  BSF vacancies (bsf.mha.gov.in), Employment News web adverts (`org_from_title`, `title_must: "Issue no"`). New watch.py
+  options: `links`, `key: title`, `org_from_title`, `title_must`, `download: browser`. Scanned PDFs with no text go
+  through reextract OCR (newest first, once each). Notices without their own page never appear in the list.
+- **Deploys**: no longer cancelled by newer pushes; PDFs/share cards only re-made for pages whose content changed
+  (`.pdfhash`/`.oghash`, cache restore-keys). Images cached 1 day; rename a file when its picture changes.
+- **AI quota**: Gemini free tier can run out on busy days (429 in data/debug-prepare.txt). prepare.yml now sets
+  GEMINI_MODELS to three models, each with its own free allowance, tried in order.
+- Unreachable: NIA (cert), DGQA, OPSC, HPPSC, BTSC, MPESB, HPRCA, ITPO careers page; UPSESSB domain hijacked.

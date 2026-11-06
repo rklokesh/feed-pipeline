@@ -15,6 +15,10 @@ concurrency:
   group: data-writes
   cancel-in-progress: false
 
+env:
+  # when the first model's free daily allowance runs out, the next one (its own free allowance) takes over
+  GEMINI_MODELS: "gemini-flash-lite-latest,gemini-flash-latest,gemini-2.0-flash"
+
 jobs:
   prepare:
     # GitHub's runners (free now the repo is public): keeps the Mac free for checking boards every 30 minutes
