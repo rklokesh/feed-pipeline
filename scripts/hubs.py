@@ -183,6 +183,11 @@ def build():
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(h, encoding="utf-8")
         hubs.append({"kind": kind, "slug": s_, "en": en, "hi": hi, "n": 0, "words": words})
+    # Desktop A/B: version B (phone-style chrome) at /v2/ - same homepage, never indexed, canonical to /.
+    v2 = re.sub(r'<link rel="canonical" href="[^"]*">', f'<link rel="canonical" href="{SITE_URL}/">', home, count=1)
+    v2 = re.sub(r'<meta name="robots" content="[^"]*">', '<meta name="robots" content="noindex, follow">', v2, count=1)
+    (SITE / "v2").mkdir(exist_ok=True)
+    (SITE / "v2" / "index.html").write_text(v2, encoding="utf-8")
     homepage_hints(hubs)
     print(f"hubs: {len(hubs)} browse pages (homepage with a filter set)")
 
