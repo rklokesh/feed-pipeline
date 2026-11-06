@@ -496,6 +496,49 @@ li.adrow { display: block !important; list-style: none; border: 0 !important; pa
 li.adrow .adslot { margin: 20px auto; }
 @media print { .adslot, li.adrow { display: none !important; } }
 @media (max-width: 640px) { html, body { overflow-x: clip; } }   /* never a sideways wobble on phones (clip keeps sticky bars working) */
+/* ===== Desktop (Nov 2026): the phone's app-style chrome, but the sarkari table stays - columns, beige header, dense rows ===== */
+@media (min-width: 641px) {
+  html.v2 .top { position: sticky; top: 0; z-index: 30; margin-inline: calc(50% - 50vw); padding: 10px calc(50vw - 50% + 0px);
+    background: color-mix(in srgb, var(--page) 82%, transparent); -webkit-backdrop-filter: blur(18px) saturate(180%); backdrop-filter: blur(18px) saturate(180%);
+    border-bottom: 1px solid color-mix(in srgb, var(--ink) 7%, transparent); transition: padding .4s cubic-bezier(.34, 1.36, .64, 1); }
+  html.v2 .top .logo img, html.v2 .top .logo .mark { width: 72px; height: 72px; transition: width .4s cubic-bezier(.34, 1.36, .64, 1), height .4s cubic-bezier(.34, 1.36, .64, 1); }
+  html.v2.bar-compact .top { padding-top: 6px; padding-bottom: 6px; }
+  html.v2.bar-compact .top .logo img, html.v2.bar-compact .top .logo .mark { width: 44px; height: 44px; }
+  /* हिंदी + theme: one liquid-glass pill (two halves), About stays a plain link */
+  html.v2 .nav-r { gap: 14px; }
+  html.v2 .nav-r button { width: 44px; height: 40px; display: inline-grid !important; place-items: center; box-sizing: border-box; cursor: pointer;
+    background: linear-gradient(180deg, color-mix(in srgb, #fff 55%, transparent), color-mix(in srgb, #fff 22%, transparent)), color-mix(in srgb, var(--page) 55%, transparent);
+    border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent); color: var(--ink);
+    box-shadow: inset 0 1px 1px color-mix(in srgb, #fff 90%, transparent); transition: background .15s ease; }
+  html.v2 .nav-r #lang { border-radius: 999px 0 0 999px; border-right: 0; margin-right: -14px; }
+  html.v2 .nav-r #theme { border-radius: 0 999px 999px 0; }
+  html.v2 .nav-r button:hover { background: color-mix(in srgb, var(--ink) 6%, var(--page)); }
+  :root[data-theme="dark"].v2 .nav-r button { background: color-mix(in srgb, #fff 8%, var(--page)); box-shadow: none; }
+}
+@media (min-width: 641px) and (prefers-color-scheme: dark) { :root:not([data-theme="light"]).v2 .nav-r button { background: color-mix(in srgb, #fff 8%, var(--page)); box-shadow: none; } }
+@media (min-width: 641px) {
+  html.v2 #lang { font-size: 0 !important; display: flex !important; align-items: center; justify-content: center; }
+  html.v2 #lang::before { content: ""; display: block; width: 22px; height: 22px; background: currentColor; -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M18.14 7.24V18.75H16.05V12.79Q15.92 12.81 15.81 12.83Q15.09 12.96 14.36 12.96Q13.87 12.96 13.36 12.9Q13.4 13.03 13.46 13.17Q13.59 13.62 13.59 14.11Q13.59 15.72 12.54 16.61Q11.5 17.51 9.81 17.51Q8.49 17.51 7.44 16.95Q6.39 16.38 5.48 15.05Q4.58 13.73 3.7 11.44L5.45 10.68Q6.35 13.17 7.31 14.44Q8.27 15.7 9.6 15.7Q10.49 15.7 11.03 15.23Q11.56 14.76 11.56 13.88Q11.56 13 10.94 12.34Q10.64 12.02 10.3 11.77Q9.45 12 8.34 12.09L7.99 10.36Q9.26 10.21 9.95 9.96Q10.64 9.71 10.92 9.34Q11.2 8.97 11.2 8.43Q11.2 7.77 10.78 7.41Q10.37 7.04 9.55 7.04Q8.85 7.04 8.17 7.25Q7.48 7.45 6.82 7.86L6.2 6.13Q6.95 5.7 7.82 5.47Q8.7 5.25 9.7 5.25Q10.96 5.25 11.75 5.68Q12.54 6.1 12.9 6.82Q13.25 7.54 13.25 8.41Q13.25 9.95 12.1 10.91Q12.03 10.95 11.97 11Q11.99 11.02 11.99 11.02Q12.37 11.1 12.78 11.15Q13.36 11.23 13.93 11.23Q14.7 11.23 15.51 11.06Q15.77 11.02 16.05 10.93V7.24H14.55V5.46H20.3V7.24Z'/></svg>") center / contain no-repeat !important; mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M18.14 7.24V18.75H16.05V12.79Q15.92 12.81 15.81 12.83Q15.09 12.96 14.36 12.96Q13.87 12.96 13.36 12.9Q13.4 13.03 13.46 13.17Q13.59 13.62 13.59 14.11Q13.59 15.72 12.54 16.61Q11.5 17.51 9.81 17.51Q8.49 17.51 7.44 16.95Q6.39 16.38 5.48 15.05Q4.58 13.73 3.7 11.44L5.45 10.68Q6.35 13.17 7.31 14.44Q8.27 15.7 9.6 15.7Q10.49 15.7 11.03 15.23Q11.56 14.76 11.56 13.88Q11.56 13 10.94 12.34Q10.64 12.02 10.3 11.77Q9.45 12 8.34 12.09L7.99 10.36Q9.26 10.21 9.95 9.96Q10.64 9.71 10.92 9.34Q11.2 8.97 11.2 8.43Q11.2 7.77 10.78 7.41Q10.37 7.04 9.55 7.04Q8.85 7.04 8.17 7.25Q7.48 7.45 6.82 7.86L6.2 6.13Q6.95 5.7 7.82 5.47Q8.7 5.25 9.7 5.25Q10.96 5.25 11.75 5.68Q12.54 6.1 12.9 6.82Q13.25 7.54 13.25 8.41Q13.25 9.95 12.1 10.91Q12.03 10.95 11.97 11Q11.99 11.02 11.99 11.02Q12.37 11.1 12.78 11.15Q13.36 11.23 13.93 11.23Q14.7 11.23 15.51 11.06Q15.77 11.02 16.05 10.93V7.24H14.55V5.46H20.3V7.24Z'/></svg>") center / contain no-repeat !important; }
+  html.v2[lang="hi"] #lang::before { -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M5.43 19.25 10.59 4.75H13.31L18.57 19.25H16.17L14.83 15.43H9.13L7.83 19.25ZM14.18 13.58 13.34 11.18Q13.01 10.2 12.62 8.87Q12.31 7.83 11.94 6.49Q11.57 7.85 11.27 8.9Q10.87 10.25 10.57 11.18L9.76 13.58Z'/></svg>") center / contain no-repeat !important; mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M5.43 19.25 10.59 4.75H13.31L18.57 19.25H16.17L14.83 15.43H9.13L7.83 19.25ZM14.18 13.58 13.34 11.18Q13.01 10.2 12.62 8.87Q12.31 7.83 11.94 6.49Q11.57 7.85 11.27 8.9Q10.87 10.25 10.57 11.18L9.76 13.58Z'/></svg>") center / contain no-repeat !important; }
+}
+@media (min-width: 641px) {
+  html.v2 .search input { background: var(--soft); border: 1px solid transparent; border-radius: 999px; padding: 12px 110px 12px 48px; }
+  html.v2 .search input:focus { border-color: color-mix(in srgb, var(--ink) 25%, transparent); background: var(--page); }
+  html.v2 .sicon { left: 18px; } html.v2 .ph { left: 48px; } html.v2 .sx { right: 16px; }
+  html.v2 .search { margin-bottom: 24px; }
+  html.v2 .tabs { gap: 8px; }
+  html.v2 .tabs .ink { display: none; }
+  html.v2 .tabs button { padding: 7px 14px; border-radius: 999px; background: var(--soft); color: var(--ink); }
+  html.v2 .tabs button[aria-pressed="true"] { background: var(--ink); color: var(--page); }
+  html.v2 .tabs button:not([aria-pressed="true"]):hover { background: color-mix(in srgb, var(--ink) 9%, var(--page)); }
+  html.v2 .tabs button.zero { opacity: .45; }
+  /* the table: same columns and beige header (the sarkari feel), in a rounded frame with roomier rows */
+  html.v2 .tscroll { border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+  html.v2 .tscroll .row.head { border-bottom: 1px solid var(--line); padding: 10px 14px; }
+  html.v2 .tscroll .list li.lr { padding: 9px 14px; }
+  html.v2 .tscroll .list li:last-child { border-bottom: 0; }
+  html.v2 .tscroll li.adrow { border-top: 1px solid var(--line) !important; }
+}
 </style>
 <script>document.documentElement.classList.add("v2");try{localStorage.removeItem("sc-v2")}catch(e){}</script>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
