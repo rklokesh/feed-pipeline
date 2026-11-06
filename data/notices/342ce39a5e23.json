@@ -192,13 +192,15 @@
     ]
   },
   "pdf": {
-    "error": "ConnectTimeout: HTTPConnectionPool(host='jkpsc.nic.in', port=80): Max retries exceeded with url: /pdf/Question_Booklet_AN.pdf (Caused by ConnectTimeoutError(<HTTPConnection(host='jkpsc.nic.in', port=8"
+    "error": "ConnectTimeout: HTTPConnectionPool(host='jkpsc.nic.in', port=80): Max retries exceeded with url: /pdf/Question_Booklet_AN.pdf (Caused by ConnectTimeoutError(<HTTPConnection(host='jkpsc.nic.in', port=8",
+    "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-03T16:57:54Z",
   "qual": [
     "graduate",
     "postgraduate"
   ],
+  "rewrite": true,
   "slug": "jkpsc-gmc-and-skims-gazetted-posts-question-papers-2025",
   "source_id": "jkpsc-home",
   "status": "approved",
