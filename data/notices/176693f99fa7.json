@@ -1,0 +1,27 @@
+{
+  "board_url": "https://recruitment.itbpolice.nic.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "Inc. Sample PDF Prepared By Chadwick Hilarity +123-456-7890 https://sample-files.com Sample PDF Content Introduction Lorem ipsum dolor sit amet, consectetur adipisc",
+      "source": "rule",
+      "value": "https://sample-files.com"
+    }
+  },
+  "first_seen": "2026-11-06T06:27:35+00:00",
+  "id": "176693f99fa7",
+  "kind": "notification",
+  "org": "ITBP",
+  "pdf": {
+    "bytes": 66156,
+    "pages": 5,
+    "sha256": "218153c8efc4ca42887779acaf6a641da7a2d1f8dea8c8bba3789ccbc68c2847",
+    "text_kind": "text"
+  },
+  "source_id": "itbp-recruitment",
+  "status": "pending_review",
+  "title": "FOR WEBSITE FUNCTIONALITY TEST ONLY (DO NOT APPLY)- IT IS ONLY FOR WEBSITE TESTING",
+  "url": "https://recruitment.itbpolice.nic.in/noticeboards/downloadpdf/369.pdf"
+}
