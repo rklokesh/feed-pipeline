@@ -1,6 +1,21 @@
 {
   "baseline_sample": true,
   "board_url": "https://bsf.mha.gov.in/announcement.html?category=Vacancies",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "ASI (Steno) and HC (Min)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Compassionate appointment quota is restricted to dependents of deceased employees and is not a general open recruitment",
+    "summary_en": "Compassionate appointment recruitment for ASI and Head Constable posts in BSF for 2024.",
+    "summary_hi": "सीमा सुरक्षा बल में 2024 के लिए अनुकंपा नियुक्ति के आधार पर सहायक उपनिरीक्षक और मुख्य आरक्षी पदों के लिए भर्ती।",
+    "title_en": "BSF ASI Steno and Head Constable Ministerial Compassionate 2024",
+    "title_hi": "सीमा सुरक्षा बल सहायक उपनिरीक्षक आशुलिपिक और मुख्य आरक्षी अनुभाग कनिष्ठ अनुकंपा 2024",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +31,7 @@
     "text_kind": "failed"
   },
   "source_id": "bsf-vacancies",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Title: RECRUITMENT TO THE POST OF ASI(STENO) AND HC(MIN) AGAINST COMPASSIONATE APPOINTMENT QUOTA - 2024 Category: Vacancies Posted Date: 05.10.2026",
   "url": "https://d3t79nicn48uzj.cloudfront.net/bsf/custom/1791202979.pdf"
 }

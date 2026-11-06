@@ -11,13 +11,17 @@
     "skip_reason": "",
     "summary_en": "DSSSB has released the marks and called for e-dossiers for the PGT Geography (Male & Female) post under code 832/24. Qualified candidates should check their status.",
     "summary_hi": "DSSSB ने पोस्ट कोड 832/24 के तहत पीजीटी भूगोल (पुरुष और महिला) पद के लिए अंक जारी किए हैं और ई-डोजियर आमंत्रित किए हैं। योग्य उम्मीदवार अपना स्टेटस चेक करें।",
-    "title_en": "DSSSB PGT Geography Marks and E-Dossier 2026 – Post Code 832/24",
-    "title_hi": "DSSSB पीजीटी भूगोल अंक और ई-डोजियर 2026 – पोस्ट कोड 832/24",
+    "title_en": "DSSSB PGT Geography Post Code 832/24 Result 2026 – Marks and E-Dossier Link",
+    "title_hi": "DSSSB पीजीटी भूगोल पोस्ट कोड 832/24 रिज़ल्ट 2026 – अंक और ई-डोजियर लिंक",
     "type": "Update",
     "vacancies": null
   },
   "editor_notes": [],
-  "exam": {},
+  "exam": {
+    "key": "dsssb-pgt-geography-2024",
+    "name_en": "DSSSB PGT Geography 2024",
+    "name_hi": "डीएसएसएसबी पीजीटी भूगोल 2024"
+  },
   "extraction": {
     "ai": null
   },
@@ -31,12 +35,12 @@
   "org": "DSSSB",
   "page": {
     "after_en": [
-      "Scrutiny of documents and eligibility by the User Department (DoE)",
-      "Final appointment and nomination"
+      "Verification of e-dossier documents by the User Department (Directorate of Education).",
+      "Final result declaration and nomination of candidates."
     ],
     "after_hi": [
-      "उपयोगकर्ता विभाग (DoE) द्वारा दस्तावेजों और पात्रता की जांच",
-      "अंतिम नियुक्ति और नामांकन"
+      "उपयोगकर्ता विभाग (शिक्षा निदेशालय) द्वारा ई-डोजियर दस्तावेजों का सत्यापन।",
+      "अंतिम परिणाम घोषणा और उम्मीदवारों का नामांकन।"
     ],
     "age": [],
     "apply_start": null,
@@ -44,143 +48,126 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check your normalized marks in the OARS module",
-      "Keep digital copies of all certificates ready",
-      "Submit post preferences carefully",
-      "Upload documents before 20 Nov 2026"
+      "Check normalized marks on the OARS portal.",
+      "Verify if shortlisted for e-dossier.",
+      "Keep digital copies of all academic and category certificates ready.",
+      "Submit e-dossier and post preferences before 20 Nov 2026."
     ],
     "checklist_hi": [
-      "OARS मॉड्यूल में अपने सामान्यीकृत अंक जांचें",
-      "सभी प्रमाण पत्रों की डिजिटल प्रतियां तैयार रखें",
-      "पोस्ट प्राथमिकताएं सावधानी से जमा करें",
-      "20 नवंबर 2026 से पहले दस्तावेज अपलोड करें"
+      "OARS पोर्टल पर सामान्यीकृत अंक जांचें।",
+      "सत्यापित करें कि ई-डोजियर के लिए शॉर्टलिस्ट किया गया है या नहीं।",
+      "सभी शैक्षणिक और श्रेणी प्रमाण पत्रों की डिजिटल प्रतियां तैयार रखें।",
+      "20 नवंबर 2026 से पहले ई-डोजियर और पोस्ट प्राथमिकताएं जमा करें।"
     ],
     "conducted_by_en": "Delhi Subordinate Services Selection Board (DSSSB)",
     "conducted_by_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB)",
     "dates": [
       {
-        "label_en": "Advertisement Date",
-        "label_hi": "विज्ञापन तिथि",
-        "value_en": "30 Dec 2024",
-        "value_hi": "30 दिसंबर 2024"
-      },
-      {
-        "label_en": "Application Closing Date",
-        "label_hi": "आवेदन की अंतिम तिथि",
-        "value_en": "14 Feb 2025",
-        "value_hi": "14 फरवरी 2025"
-      },
-      {
-        "label_en": "Written Exam Date",
-        "label_hi": "लिखित परीक्षा तिथि",
+        "label_en": "Written exam date",
+        "label_hi": "लिखित परीक्षा की तिथि",
         "value_en": "16 Jul 2026",
-        "value_hi": "16 जुलाई 2026"
+        "value_hi": "16 जुला 2026"
       },
       {
-        "label_en": "E-Dossier Upload Start Date",
-        "label_hi": "ई-डोजियर अपलोड शुरू होने की तिथि",
+        "label_en": "E-dossier submission starts",
+        "label_hi": "ई-डोजियर जमा होना शुरू",
         "value_en": "06 Nov 2026",
-        "value_hi": "06 नवंबर 2026"
+        "value_hi": "06 नवम् 2026"
       },
       {
-        "label_en": "E-Dossier Upload Last Date",
-        "label_hi": "ई-डोजियर अपलोड करने की अंतिम तिथि",
+        "label_en": "E-dossier submission last date",
+        "label_hi": "ई-डोजियर जमा करने की अंतिम तिथि",
         "value_en": "20 Nov 2026",
-        "value_hi": "20 नवंबर 2026"
+        "value_hi": "20 नवम् 2026"
       }
     ],
     "documents_en": [
       "Educational Certificates",
-      "Professional / Experience Certificates",
-      "Degree and Mark sheets",
+      "Professional/Experience Certificates",
+      "Degree and Mark Sheets",
       "Caste Certificate",
-      "Proof of Govt. Servant / Ex-Servicemen",
+      "Proof of Govt. Servant/Ex-Servicemen",
       "Admit Cards"
     ],
     "documents_hi": [
       "शैक्षणिक प्रमाण पत्र",
-      "पेशेवर / अनुभव प्रमाण पत्र",
+      "पेशेवर/अनुभव प्रमाण पत्र",
       "डिग्री और अंक पत्र",
       "जाति प्रमाण पत्र",
-      "सरकारी सेवक / भूतपूर्व सैनिक का प्रमाण",
+      "सरकारी सेवक/भूतपूर्व सैनिक का प्रमाण",
       "प्रवेश पत्र"
     ],
-    "eligibility": [
-      {
-        "label_en": "Written Exam",
-        "label_hi": "लिखित परीक्षा",
-        "value_en": "Candidates who appeared in the written exam held on 16 Jul 2026",
-        "value_hi": "वे उम्मीदवार जिन्होंने 16 जुलाई 2026 को आयोजित लिखित परीक्षा दी थी"
-      }
-    ],
+    "eligibility": [],
     "exam_date": "2026-07-16",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is an online process where provisionally shortlisted candidates must upload their educational and category documents for verification by the board before final selection.",
-        "a_hi": "यह एक ऑनलाइन प्रक्रिया है जहाँ अनंतिम रूप से शॉर्टलिस्ट किए गए उम्मीदवारों को अंतिम चयन से पहले सत्यापन के लिए अपने शैक्षणिक और श्रेणी के दस्तावेज अपलोड करने होते हैं।",
-        "q_en": "What is DSSSB PGT Geography Post Code 832/24 E-Dossier?",
-        "q_hi": "DSSSB पीजीटी भूगोल पोस्ट कोड 832/24 ई-डोजियर क्या है?"
+        "a_en": "It is an online process where provisionally shortlisted candidates must upload their educational and category documents to verify their eligibility for the PGT Geography post code 832/24.",
+        "a_hi": "यह एक ऑनलाइन प्रक्रिया है जहाँ अनंतिम रूप से शॉर्टलिस्ट किए गए उम्मीदवारों को PGT भूगोल पोस्ट कोड 832/24 के लिए अपनी पात्रता सत्यापित करने हेतु अपने शैक्षणिक और श्रेणी के दस्तावेज़ अपलोड करने होते हैं।",
+        "q_en": "What is DSSSB PGT Geography E-Dossier?",
+        "q_hi": "DSSSB PGT Geography E-Dossier क्या है?"
       }
     ],
     "extra": [],
     "faq": [
       {
-        "a_en": "The e-dossier link is active from 06 Nov 2026 to 20 Nov 2026.",
+        "a_en": "The written exam was conducted on 16 July 2026.",
+        "a_hi": "लिखित परीक्षा 16 जुलाई 2026 को आयोजित की गई थी।",
+        "q_en": "When was the DSSSB PGT Geography written exam conducted?",
+        "q_hi": "DSSSB PGT भूगोल की लिखित परीक्षा कब आयोजित की गई थी?"
+      },
+      {
+        "a_en": "You can check your normalized marks by logging into your account in the OARS module on the official website www.dsssbonline.nic.in.",
+        "a_hi": "आप आधिकारिक वेबसाइट www.dsssbonline.nic.in पर OARS मॉड्यूल में अपने खाते में लॉगिन करके अपने सामान्यीकृत अंक देख सकते हैं।",
+        "q_en": "How can I check my normalized marks for post code 832/24?",
+        "q_hi": "मैं पोस्ट कोड 832/24 के लिए अपने सामान्यीकृत अंक कैसे देख सकता हूँ?"
+      },
+      {
+        "a_en": "The e-dossier link is active from 06 November 2026 to 20 November 2026.",
         "a_hi": "ई-डोजियर लिंक 06 नवंबर 2026 से 20 नवंबर 2026 तक सक्रिय है।",
-        "q_en": "When is the e-dossier uploading window open for DSSSB PGT Geography 832/24?",
-        "q_hi": "DSSSB पीजीटी भूगोल 832/24 के लिए ई-डोजियर अपलोड करने की विंडो कब खुली है?"
+        "q_en": "What are the dates for uploading the e-dossier?",
+        "q_hi": "ई-डोजियर अपलोड करने की तिथियां क्या हैं?"
       },
       {
-        "a_en": "Candidates can view their marks by logging into their account in the OARS module on www.dsssbonline.nic.in.",
-        "a_hi": "उम्मीदवार www.dsssbonline.nic.in पर OARS मॉड्यूल में अपने खाते में लॉगिन करके अपने अंक देख सकते हैं।",
-        "q_en": "How can I check my normalized marks for PGT Geography post code 832/24?",
-        "q_hi": "मैं पीजीटी भूगोल पोस्ट कोड 832/24 के लिए अपने सामान्यीकृत अंक कैसे देख सकता हूँ?"
-      },
-      {
-        "a_en": "The normalized cut-off mark out of 300 for male UR candidates is 198.53.",
-        "a_hi": "पुरुष सामान्य उम्मीदवारों के लिए 300 में से सामान्यीकृत कट-ऑफ अंक 198.53 है।",
-        "q_en": "What is the cut-off mark for male UR candidates in PGT Geography?",
-        "q_hi": "पीजीटी भूगोल में पुरुष सामान्य उम्मीदवारों के लिए कट-ऑफ अंक क्या है?"
+        "a_en": "There are a total of 22 vacancies (21 for Male and 1 for Female).",
+        "a_hi": "कुल 22 वैकेंसी हैं (पुरुष के लिए 21 और महिला के लिए 1)।",
+        "q_en": "What is the total number of vacancies for PGT Geography under post code 832/24?",
+        "q_hi": "पोस्ट कोड 832/24 के तहत PGT भूगोल के लिए कुल कितनी वैकेंसी हैं?"
       }
     ],
     "fees": [],
-    "h1_en": "DSSSB PGT Geography Marks and E-Dossier 2026 – Post Code 832/24",
-    "h1_hi": "DSSSB पीजीटी भूगोल अंक और ई-डोजियर 2026 – पोस्ट कोड 832/24",
+    "h1_en": "DSSSB PGT Geography Post Code 832/24 Result 2026 – Marks and E-Dossier Link",
+    "h1_hi": "DSSSB पीजीटी भूगोल पोस्ट कोड 832/24 रिज़ल्ट 2026 – अंक और ई-डोजियर लिंक",
     "hindi_notice_url": null,
     "how_en": [
       "Visit the official DSSSB OARS portal at www.dsssbonline.nic.in.",
       "Log in using your credentials to view your normalized marks.",
       "If shortlisted, navigate to the e-dossier module.",
-      "Fill in your post preferences carefully (preference once submitted is final).",
-      "Upload all required educational, professional, experience, caste, and other applicable certificates before 20 Nov 2026."
+      "Upload all required educational, professional, and category documents within the given timeline.",
+      "Exercise post preferences carefully before final submission."
     ],
     "how_hi": [
-      "आधिकारिक DSSSB OARS पोर्टल www.dsssbonline.nic.in पर जाएं।",
+      "आधिकारिक डीएसएसएसबी ओएआरएस पोर्टल www.dsssbonline.nic.in पर जाएं।",
       "अपने सामान्यीकृत अंक देखने के लिए अपने क्रेडेंशियल्स का उपयोग करके लॉगिन करें।",
       "यदि शॉर्टलिस्ट किया गया है, तो ई-डोजियर मॉड्यूल पर जाएं।",
-      "अपनी पोस्ट प्राथमिकताएं सावधानी से भरें (एक बार जमा की गई प्राथमिकता अंतिम होगी)।",
-      "20 नवंबर 2026 से पहले सभी आवश्यक शैक्षणिक, व्यावसायिक, अनुभव, जाति और अन्य लागू प्रमाण पत्र अपलोड करें।"
+      "निर्धारित समय सीमा के भीतर सभी आवश्यक शैक्षणिक, पेशेवर और श्रेणी दस्तावेज़ अपलोड करें।",
+      "अंतिम सबमिशन से पहले पोस्ट प्राथमिकताओं का सावधानीपूर्वक चयन करें।"
     ],
-    "intro_en": "The Delhi Subordinate Services Selection Board (DSSSB) has released the normalized marks of candidates who appeared for the One Tier (Technical) written examination for PGT Geography (Male & Female) under post code 832/24 held on 16 July 2026. Based on performance, candidates have been provisionally shortlisted to upload their e-dossiers. The e-dossier link is active from 06 November 2026 to 20 November 2026. Shortlisted candidates must log in to the OARS module to view their marks, exercise post preferences, and upload all requisite documents.",
-    "intro_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने 16 जुलाई 2026 को आयोजित पीजीटी भूगोल (पुरुष और महिला) पोस्ट कोड 832/24 के लिए वन टियर (तकनीकी) लिखित परीक्षा के सामान्यीकृत अंक जारी कर दिए हैं। प्रदर्शन के आधार पर, उम्मीदवारों को ई-डोजियर अपलोड करने के लिए अनंतिम रूप से शॉर्टलिस्ट किया गया है। ई-डोजियर लिंक 06 नवंबर 2026 से 20 नवंबर 2026 तक सक्रिय है। शॉर्टलिस्ट किए गए उम्मीदवारों को अपने अंक देखने, पोस्ट प्राथमिकताएं दर्ज करने और सभी आवश्यक दस्तावेज अपलोड करने के लिए OARS मॉड्यूल में लॉगिन करना होगा।",
+    "intro_en": "The Delhi Subordinate Services Selection Board (DSSSB) has released the normalized marks of the written examination and called for e-dossiers for the post of PGT Geography (Male & Female) under post code 832/24 in the Directorate of Education. The written exam was conducted on 16 July 2026. Candidates who appeared in the examination can view their marks by logging into the OARS module on the official website. Provisionally shortlisted candidates must upload their e-dossier along with required educational, professional, and category certificates between 06 November 2026 and 20 November 2026.",
+    "intro_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने शिक्षा निदेशालय में पोस्ट कोड 832/24 के तहत पीजीटी भूगोल (पुरुष और महिला) के पद के लिए लिखित परीक्षा के सामान्यीकृत अंक जारी कर दिए हैं और ई-डोजियर आमंत्रित किए हैं। लिखित परीक्षा 16 जुलाई 2026 को आयोजित की गई थी। परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक वेबसाइट पर ओएआरएस मॉड्यूल में लॉगिन करके अपने अंक देख सकते हैं। अनंतिम रूप से शॉर्टलिस्ट किए गए उम्मीदवारों को 06 नवंबर 2026 से 20 नवंबर 2026 के बीच आवश्यक शैक्षणिक, पेशेवर और श्रेणी प्रमाण पत्र के साथ अपना ई-डोजियर अपलोड करना होगा।",
     "last_date": null,
     "mistakes_en": [
-      "Do not miss the e-dossier submission deadline of 20 Nov 2026.",
-      "Ensure post preferences are filled carefully, as changes are not allowed once submitted.",
-      "Check eligibility criteria as per Recruitment Rules before submitting preferences."
+      "Do not miss the e-dossier upload deadline of 20 Nov 2026.",
+      "Ensure post preferences are exercised carefully as choices once submitted are final and irreversible.",
+      "Do not upload documents for posts/departments for which you do not fulfill the eligibility criteria."
     ],
     "mistakes_hi": [
-      "20 नवंबर 2026 की ई-डोजियर जमा करने की समय सीमा न चूकें।",
-      "पोस्ट प्राथमिकताएं सावधानी से भरें, क्योंकि एक बार जमा होने के बाद परिवर्तन की अनुमति नहीं है।",
-      "प्राथमिकताएं जमा करने से पहले भर्ती नियमों के अनुसार पात्रता मानदंडों की जांच करें।"
+      "20 नवंबर 2026 की ई-डोजियर अपलोड करने की अंतिम तिथि न चूकें।",
+      "पोस्ट प्राथमिकताओं का सावधानीपूर्वक चयन करें क्योंकि एक बार सबमिट किए जाने के बाद विकल्प अंतिम और अपरिवर्तनीय होते हैं।",
+      "उन पदों/विभागों के लिए दस्तावेज़ अपलोड न करें जिनके लिए आप पात्रता मापदंडों को पूरा नहीं करते हैं।"
     ],
-    "not_en": [
-      "Candidates who failed to secure the minimum cut-off marks in their respective categories."
-    ],
-    "not_hi": [
-      "वे उम्मीदवार जो अपनी संबंधित श्रेणियों में न्यूनतम कट-ऑफ अंक प्राप्त करने में विफल रहे।"
-    ],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": "2026-11-05",
     "official_site": "https://dsssb.delhi.gov.in/",
     "physical": [],
@@ -205,63 +192,69 @@
         "value_hi": "शिक्षा निदेशालय (DoE)"
       },
       {
-        "label_en": "Exam Date",
-        "label_hi": "परीक्षा तिथि",
-        "value_en": "16 Jul 2026",
-        "value_hi": "16 जुलाई 2026"
+        "label_en": "Total Vacancies",
+        "label_hi": "कुल वैकेंसी",
+        "value_en": "22 Posts",
+        "value_hi": "22 पद"
       },
       {
-        "label_en": "E-Dossier Dates",
-        "label_hi": "ई-डोजियर तिथियां",
+        "label_en": "Written Exam Date",
+        "label_hi": "लिखित परीक्षा की तिथि",
+        "value_en": "16 Jul 2026",
+        "value_hi": "16 जुला 2026"
+      },
+      {
+        "label_en": "E-Dossier Submission Dates",
+        "label_hi": "ई-डोजियर जमा करने की तिथियां",
         "value_en": "06 Nov 2026 to 20 Nov 2026",
-        "value_hi": "06 नवंबर 2026 से 20 नवंबर 2026"
+        "value_hi": "06 नवम् 2026 से 20 नवम् 2026"
       }
     ],
     "salary": [],
     "selection_en": [
       "One Tier (Technical) written examination",
-      "Shortlisting based on normalized marks for e-dossier upload",
-      "Document verification and final selection by the User Department"
+      "Shortlisting for e-dossier based on normalized marks",
+      "E-dossier document verification by user department"
     ],
     "selection_hi": [
       "वन टियर (तकनीकी) लिखित परीक्षा",
-      "ई-डोजियर अपलोड के लिए सामान्यीकृत अंकों के आधार पर शॉर्टलिस्टिंग",
-      "उपयोगकर्ता विभाग द्वारा दस्तावेज सत्यापन और अंतिम चयन"
+      "सामान्यीकृत अंकों के आधार पर ई-डोजियर के लिए शॉर्टलिस्टिंग",
+      "उपयोगकर्ता विभाग द्वारा ई-डोजियर दस्तावेज़ सत्यापन"
     ],
     "share_card": {
-      "headline_en": "E-Dossier & Marks Out",
-      "headline_hi": "ई-डोजियर और अंक जारी",
-      "kind": "job",
+      "headline_en": "Marks & E-Dossier Out",
+      "headline_hi": "अंक और ई-डोजियर जारी",
+      "kind": "result",
       "line_en": "PGT Geography 832/24",
       "line_hi": "पीजीटी भूगोल 832/24",
       "posts": 22
     },
-    "status_en": "Marks released and e-dossier calling started, active from 06 Nov 2026 to 20 Nov 2026",
-    "status_hi": "अंक जारी और ई-डोजियर आमंत्रण शुरू, 06 नवंबर 2026 से 20 नवंबर 2026 तक सक्रिय",
-    "summary_en": "DSSSB has released the written exam marks and called shortlisted candidates to upload e-dossiers for PGT Geography (Male & Female) under post code 832/24 in DoE. Shortlisted candidates must submit their documents and post preferences online.",
-    "summary_hi": "DSSSB ने DoE में पोस्ट कोड 832/24 के तहत पीजीटी भूगोल (पुरुष और महिला) के लिए लिखित परीक्षा के अंक जारी कर दिए हैं और शॉर्टलिस्ट किए गए उम्मीदवारों को ई-डोजियर अपलोड करने के लिए बुलाया है।",
+    "status_en": "Marks released and e-dossier call open",
+    "status_hi": "अंक जारी और ई-डोजियर आमंत्रण खुला",
+    "summary_en": "DSSSB has released the normalized marks and called for e-dossiers for the PGT Geography (Male & Female) post under post code 832/24. Shortlisted candidates must upload their documents through the OARS module within the stipulated dates.",
+    "summary_hi": "DSSSB ने पोस्ट कोड 832/24 के तहत पीजीटी भूगोल (पुरुष और महिला) पद के लिए सामान्यीकृत अंक जारी कर दिए हैं और ई-डोजियर आमंत्रित किए हैं। शॉर्टलिस्ट किए गए उम्मीदवार निर्धारित तिथियों के भीतर अपने दस्तावेज़ अपलोड करें।",
     "vacancies": [
       {
-        "detail_en": "UR 14, OBC 01, SC 02, ST 02, EWS 02 (including PwBD Cat(d&e) 01)",
-        "detail_hi": "सामान्य 14, अन्य पिछड़ा वर्ग 01, अनुसूचित जाति 02, अनुसूचित जनजाति 02, ईडब्ल्यूएस 02 (दिव्यांग श्रेणी d&e 01 सहित)",
-        "post_en": "PGT Geography Male (DoE)",
-        "post_hi": "पीजीटी भूगोल पुरुष (DoE)",
+        "detail_en": "UR 14, OBC 01, SC 02, ST 02, EWS 02 (Including PwBD-Cat(d&e)-01)",
+        "detail_hi": "सामान्य 14, अन्य पिछड़ा वर्ग 01, अनुसूचित जाति 02, अनुसूचित जनजाति 02, ईडब्ल्यूएस 02",
+        "post_en": "PGT Geography (Male)",
+        "post_hi": "पीजीटी भूगोल (पुरुष)",
         "total": "21"
       },
       {
-        "detail_en": "UR 01 (reserved for PwBD Cat(c) sub category)",
-        "detail_hi": "सामान्य 01 (दिव्यांग श्रेणी c उप-श्रेणी के लिए आरक्षित)",
-        "post_en": "PGT Geography Female (DoE)",
-        "post_hi": "पीजीटी भूगोल महिला (DoE)",
+        "detail_en": "UR 01 (Reserved for PwBD-Cat(c) sub category)",
+        "detail_hi": "सामान्य 01",
+        "post_en": "PGT Geography (Female)",
+        "post_hi": "पीजीटी भूगोल (महिला)",
         "total": "01"
       }
     ],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the DSSSB PGT Geography exam under post code 832/24 on 16 Jul 2026."
+      "Candidates who appeared for the DSSSB PGT Geography (Post Code 832/24) written exam held on 16 Jul 2026."
     ],
     "who_hi": [
-      "वे उम्मीदवार जिन्होंने 16 जुलाई 2026 को पोस्ट कोड 832/24 के तहत DSSSB पीजीटी भूगोल परीक्षा दी थी।"
+      "वे उम्मीदवार जो 16 जुलाई 2026 को आयोजित डीएसएसएसबी पीजीटी भूगोल (पोस्ट कोड 832/24) की लिखित परीक्षा में शामिल हुए थे।"
     ]
   },
   "pdf": {
@@ -271,9 +264,18 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-05T12:15:36Z",
-  "slug": "dsssb-pgt-geography-marks-and-e-dossier-2026-post-code-832-24",
+  "rewrite": true,
+  "slug": "dsssb-pgt-geography-post-code-832-24-result-2026-marks-and-e-dos",
   "source_id": "dsssb-home",
   "status": "approved",
   "title": "NOTICE NO. 1672 :- Release of marks and calling of e-dossier to the post of PGT Geography (Male & Female) under post code 832/24 in DoE. Date: 05-11-2026 | 934.08 KB Download",
-  "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/notice_1672.pdf"
+  "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/notice_1672.pdf",
+  "verify": {
+    "at": "2026-11-06",
+    "missing": [
+      "E-dossier submission starts: 2026-11-06",
+      "E-dossier submission last date: 2026-11-20"
+    ],
+    "tries": 1
+  }
 }

@@ -20,7 +20,7 @@
   "elig": {
     "age_max": 33,
     "age_min": 18,
-    "age_on": null,
+    "age_on": "2027-01-01",
     "domicile": null,
     "qual": "10th",
     "relax": {
@@ -47,51 +47,47 @@
   "org": "RRC Northern Railway",
   "page": {
     "after_en": [
-      "Written examination",
-      "Document verification",
-      "Final panel formation and appointment"
+      "Candidates who qualify the written examination will be called for Document Verification and final panel formation based on merit."
     ],
     "after_hi": [
-      "लिखित परीक्षा",
-      "दस्तावेज़ सत्यापन",
-      "अंतिम पैनल गठन और नियुक्ति"
+      "लिखित परीक्षा उत्तीर्ण करने वाले उम्मीदवारों को दस्तावेज़ सत्यापन और मेरिट के आधार पर अंतिम पैनल के गठन के लिए बुलाया जाएगा।"
     ],
     "age": [
       {
-        "label_en": "Level 2 (UR)",
-        "label_hi": "लेवल 2 (सामान्य)",
-        "value_en": "18 to 30 Years",
-        "value_hi": "18 से 30 वर्ष"
+        "label_en": "Level 2 Age Limit (General)",
+        "label_hi": "लेवल 2 आयु सीमा (सामान्य)",
+        "value_en": "18 to 30 Years (As on 01.01.2027)",
+        "value_hi": "18 से 30 वर्ष (01.01.2027 के अनुसार)"
       },
       {
-        "label_en": "Level 2 (OBC)",
-        "label_hi": "लेवल 2 (अन्य पिछड़ा वर्ग)",
-        "value_en": "18 to 33 Years",
-        "value_hi": "18 से 33 वर्ष"
+        "label_en": "Level 2 Age Limit (OBC)",
+        "label_hi": "लेवल 2 आयु सीमा (अन्य पिछड़ा वर्ग)",
+        "value_en": "18 to 33 Years (As on 01.01.2027)",
+        "value_hi": "18 से 33 वर्ष (01.01.2027 के अनुसार)"
       },
       {
-        "label_en": "Level 2 (SC/ST)",
-        "label_hi": "लेवल 2 (एससी/एसटी)",
-        "value_en": "18 to 35 Years",
-        "value_hi": "18 से 35 वर्ष"
+        "label_en": "Level 2 Age Limit (SC/ST)",
+        "label_hi": "लेवल 2 आयु सीमा (अजा/अजजा)",
+        "value_en": "18 to 35 Years (As on 01.01.2027)",
+        "value_hi": "18 से 35 वर्ष (01.01.2027 के अनुसार)"
       },
       {
-        "label_en": "Level 1 (UR)",
-        "label_hi": "लेवल 1 (सामान्य)",
-        "value_en": "18 to 33 Years",
-        "value_hi": "18 से 33 वर्ष"
+        "label_en": "Level 1 Age Limit (General)",
+        "label_hi": "लेवल 1 आयु सीमा (सामान्य)",
+        "value_en": "18 to 33 Years (As on 01.01.2027)",
+        "value_hi": "18 से 33 वर्ष (01.01.2027 के अनुसार)"
       },
       {
-        "label_en": "Level 1 (OBC)",
-        "label_hi": "लेवल 1 (अन्य पिछड़ा वर्ग)",
-        "value_en": "18 to 36 Years",
-        "value_hi": "18 से 36 वर्ष"
+        "label_en": "Level 1 Age Limit (OBC)",
+        "label_hi": "लेवल 1 आयु सीमा (अन्य पिछड़ा वर्ग)",
+        "value_en": "18 to 36 Years (As on 01.01.2027)",
+        "value_hi": "18 से 36 वर्ष (01.01.2027 के अनुसार)"
       },
       {
-        "label_en": "Level 1 (SC/ST)",
-        "label_hi": "लेवल 1 (एससी/एसटी)",
-        "value_en": "18 to 38 Years",
-        "value_hi": "18 से 38 वर्ष"
+        "label_en": "Level 1 Age Limit (SC/ST)",
+        "label_hi": "लेवल 1 आयु सीमा (अजा/अजजा)",
+        "value_en": "18 to 38 Years (As on 01.01.2027)",
+        "value_hi": "18 से 38 वर्ष (01.01.2027 के अनुसार)"
       }
     ],
     "apply_start": "2026-11-06",
@@ -99,81 +95,83 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Verify age limit as on 01.01.2027",
-      "Keep scanned copy of photo, signature, and certificates ready",
-      "Ensure separate fee payment for separate applications"
+      "Verify age as on 01.01.2027",
+      "Keep scanned copies of photograph, signature, and certificates ready",
+      "Ensure fee is paid using your own bank account"
     ],
     "checklist_hi": [
-      "01.01.2027 के अनुसार आयु सीमा सत्यापित करें",
-      "फोटो, हस्ताक्षर और प्रमाण पत्र तैयार रखें",
-      "अलग-अलग आवेदनों के लिए अलग शुल्क भुगतान सुनिश्चित करें"
+      "01.01.2027 के अनुसार आयु सत्यापित करें",
+      "फोटो, हस्ताक्षर और प्रमाण पत्र की स्कैन की गई प्रतियां तैयार रखें",
+      "सुनिश्चित करें कि शुल्क आपके अपने बैंक खाते से भुगतान किया गया है"
     ],
     "conducted_by_en": "Railway Recruitment Cell, Northern Railway (RRC/NR)",
     "conducted_by_hi": "रेलवे भर्ती सेल, नॉर्दन रेलवे",
     "dates": [
       {
-        "label_en": "Date of Publication of Detailed Notification",
-        "label_hi": "विस्तृत अधिसूचना प्रकाशन तिथि",
+        "label_en": "Date of publication of detailed notification",
+        "label_hi": "विस्तृत अधिसूचना के प्रकाशन की तिथि",
         "value_en": "04 Nov 2026",
-        "value_hi": "04 Nov 2026"
+        "value_hi": "04 नव 2026"
       },
       {
         "label_en": "Online application starts",
         "label_hi": "ऑनलाइन आवेदन शुरू",
         "value_en": "06 Nov 2026",
-        "value_hi": "06 Nov 2026"
+        "value_hi": "06 नव 2026"
       },
       {
-        "label_en": "Closing of Online Application",
+        "label_en": "Closing of online application",
         "label_hi": "ऑनलाइन आवेदन की अंतिम तिथि",
         "value_en": "06 Dec 2026",
-        "value_hi": "06 Dec 2026"
+        "value_hi": "06 दिस 2026"
       },
       {
-        "label_en": "Expected Date of Written Examination",
-        "label_hi": "लिखित परीक्षा की संभावित तिथि",
+        "label_en": "Expected date of online written examination",
+        "label_hi": "ऑनलाइन लिखित परीक्षा की अपेक्षित तिथि",
         "value_en": "January 2027",
         "value_hi": "जनवरी 2027"
       }
     ],
     "documents_en": [
-      "Educational certificates",
-      "Scouting qualification certificates",
-      "Category certificate (if applicable)",
-      "Income certificate for EBC (if applicable)"
+      "10th / Matriculation Certificate for Date of Birth",
+      "Educational Qualification Certificates",
+      "Scouts & Guides Certificates (President Scout/Guide/Rover/Ranger or HWB, Active Membership, Event Certificates)",
+      "Caste / Community Certificate if seeking age relaxation",
+      "Income Certificate for EBC candidates (if applicable)"
     ],
     "documents_hi": [
-      "शैक्षिक प्रमाण पत्र",
-      "स्काउटिंग योग्यता प्रमाण पत्र",
-      "श्रेणी प्रमाण पत्र (यदि लागू हो)",
-      "ईबीसी के लिए आय प्रमाण पत्र (यदि लागू हो)"
+      "जन्म तिथि के लिए 10वीं / मैट्रिकुलेशन प्रमाण पत्र",
+      "शैक्षणिक योग्यता प्रमाण पत्र",
+      "स्काउट्स एंड गाइड्स प्रमाण पत्र",
+      "जाति प्रमाण पत्र",
+      "आर्थिक रूप से पिछड़ा वर्ग के लिए आय प्रमाण पत्र"
     ],
     "eligibility": [
       {
         "label_en": "Level 2 Education",
         "label_hi": "लेवल 2 शिक्षा",
-        "value_en": "Passed 12th (+2 stage) with 50% marks (50% not insisted for SC/ST/Ex-servicemen/Graduates) OR Matriculation plus ITI/Act Apprenticeship.",
-        "value_hi": "50% अंकों के साथ 12वीं उत्तीर्ण या मैट्रिकुलेशन के साथ आईटीआई/अप्रेंटिसशिप।"
+        "value_en": "Passed 12th (+2 stage) with 50% marks (50% not insisted for SC/ST/Ex-servicemen/Graduates) OR Matriculation plus Course Completed Act Apprenticeship/ITI for technician categories.",
+        "value_hi": "50% अंकों के साथ 12वीं उत्तीर्ण या मैट्रिकुलेशन के साथ आईटीआई / अप्रेंटिसशिप।"
       },
       {
         "label_en": "Level 1 Education",
         "label_hi": "लेवल 1 शिक्षा",
-        "value_en": "10th passed + NAC granted by NCVT OR 10th pass + ITI OR 8th pass or ITI or equivalent.",
-        "value_hi": "10वीं उत्तीर्ण + एनएसी या 10वीं + आईटीआई या 8वीं उत्तीर्ण।"
+        "value_en": "10th passed + NAC granted by NCVT OR 10th pass + ITI OR 10th pass or ITI or equivalent or NAC.",
+        "value_hi": "10वीं उत्तीर्ण + आईटीआई या राष्ट्रीय शिक्षुता प्रमाण पत्र।"
       },
       {
-        "label_en": "Scouting Qualification",
-        "label_hi": "स्काउटिंग योग्यता",
-        "value_en": "President Scout/Guide/Rover/Ranger or HWB holder, active member for last 5 years, attended two National/Railway level and two State level events.",
-        "value_hi": "प्रेसीडेंट स्काउट/गाइड/रोवर/रेंजर या एचडब्ल्यूबी धारक, पिछले 5 वर्षों से सक्रिय सदस्य।"
+        "label_en": "Scouting Qualification (Level 1 & 2)",
+        "label_hi": "स्काउटिंग योग्यता (लेवल 1 और 2)",
+        "value_en": "President Scouts/Guide/Rover/Ranger or Himalaya Wood Badge (HWB) holder; active member of a Scouts organization for the last 5 years; attended two events at National/All Indian Railway level and two events at State level.",
+        "value_hi": "प्रेसिडेंट स्काउट/गाइड/रोवर/रेंजर या हिमालय वुड बैडज धारक; पिछले 5 वर्षों से सक्रिय सदस्य; राष्ट्रीय/रेलवे स्तर पर दो और राज्य स्तर पर दो कार्यक्रमों में भाग लिया हो।"
       }
     ],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is a special recruitment drive conducted by Railway Recruitment Cell, Northern Railway, to fill posts in Level 1 and Level 2 under the Scouts and Guides quota for eligible candidates possessing specific scouting credentials.",
-        "a_hi": "यह रेलवे भर्ती सेल, नॉर्दन रेलवे द्वारा स्काउट्स एंड गाइड्स कोटा के तहत लेवल 1 और लेवल 2 के पदों को भरने के लिए आयोजित एक विशेष भर्ती अभियान है।",
+        "a_en": "It is a special recruitment drive conducted by Railway Recruitment Cell, Northern Railway to fill Level 1 and Level 2 posts against the Scouts and Guides quota for eligible candidates possessing required scouting credentials.",
+        "a_hi": "यह रेलवे भर्ती सेल, नॉर्दन रेलवे द्वारा स्काउट्स और गाइड्स कोटा के तहत लेवल 1 और लेवल 2 के पदों को भरने के लिए आयोजित एक विशेष भर्ती अभियान है।",
         "q_en": "What is RRC Northern Railway Scouts & Guides Recruitment?",
         "q_hi": "आरआरसी नॉर्दन रेलवे स्काउट्स एंड गाइड्स भर्ती क्या है?"
       }
@@ -183,20 +181,20 @@
       {
         "a_en": "The last date to submit online applications is 06 December 2026.",
         "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 06 दिसंबर 2026 है।",
-        "q_en": "What is the last date to apply for RRC NR Scouts & Guides Recruitment 2026?",
-        "q_hi": "आरआरसी एनआर स्काउट्स एंड गाइड्स भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+        "q_en": "What is the last date to apply for RRC Northern Railway Scouts & Guides Recruitment 2026?",
+        "q_hi": "आरआरसी नॉर्दन रेलवे स्काउट्स एंड गाइड्स भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "The examination fee for General and other candidates is ₹500, out of which ₹400 is refundable upon appearing in the written exam.",
-        "a_hi": "सामान्य और अन्य उम्मीदवारों के लिए परीक्षा शुल्क ₹500 है, जिसमें से लिखित परीक्षा में शामिल होने पर ₹400 वापस कर दिए जाते हैं।",
-        "q_en": "What is the application fee for General candidates?",
+        "a_en": "The application fee for general and other candidates is ₹500, out of which ₹400 is refunded after appearing in the written exam.",
+        "a_hi": "सामान्य और अन्य उम्मीदवारों के लिए आवेदन शुल्क ₹500 है, जिसमें से लिखित परीक्षा में उपस्थित होने के बाद ₹400 वापस कर दिए जाते हैं।",
+        "q_en": "What is the application fee for general candidates?",
         "q_hi": "सामान्य उम्मीदवारों के लिए आवेदन शुल्क क्या है?"
       },
       {
-        "a_en": "Yes, applicants can apply for both categories subject to fulfilling eligibility conditions, but must submit separate application forms and fees for each.",
-        "a_hi": "हाँ, उम्मीदवार पात्रता शर्तों को पूरा करने के अधीन दोनों श्रेणियों के लिए आवेदन कर सकते हैं, लेकिन प्रत्येक के लिए अलग आवेदन पत्र और शुल्क जमा करना होगा।",
-        "q_en": "Can I apply for both Level 1 and Level 2 posts?",
-        "q_hi": "क्या मैं लेवल 1 और लेवल 2 दोनों पदों के लिए आवेदन कर सकता हूँ?"
+        "a_en": "For General candidates, the age limit is 18 to 30 years as on 01.01.2027, with relaxations for reserved categories.",
+        "a_hi": "सामान्य उम्मीदवारों के लिए 01.01.2027 के अनुसार आयु सीमा 18 से 30 वर्ष है, जिसमें आरक्षित श्रेणियों के लिए छूट दी गई है।",
+        "q_en": "What is the age limit for Level 2 posts?",
+        "q_hi": "लेवल 2 के पदों के लिए आयु सीमा क्या है?"
       }
     ],
     "fees": [
@@ -207,8 +205,8 @@
       },
       {
         "amount": "₹250",
-        "cat_en": "SC / ST / Ex-Serviceman / PWBD / Transgender / Women / Minorities / EBC",
-        "cat_hi": "एससी / एसटी / भूतपूर्व सैनिक / पीडब्ल्यूडी / ट्रांसजेंडर / महिलाएं / अल्पसंख्यक / ईबीसी"
+        "cat_en": "SC / ST / Ex-Serviceman / PwBD / Transgender / Women / Minorities / EBC",
+        "cat_hi": "अजा / अजजा / भूतपूर्व सैनिक / दिव्यांग / ट्रांसजेंडर / महिला / अल्पसंख्यक / आर्थिक रूप से पिछड़ा वर्ग"
       }
     ],
     "h1_en": "RRC Northern Railway Scouts & Guides Recruitment 2026 – Apply Online",
@@ -216,28 +214,34 @@
     "hindi_notice_url": null,
     "how_en": [
       "Check eligibility criteria from the official notification.",
-      "Visit the RRC Northern Railway official website.",
-      "Fill out the online application form for Level 1 or Level 2 separately.",
-      "Pay the required examination fee online.",
-      "Submit the application and keep a printout for future reference."
+      "Visit the official RRC Northern Railway website.",
+      "Fill out the online application form for Level 1 and/or Level 2 separately.",
+      "Pay the required examination fee online through your own account.",
+      "Submit the application and keep a printout of the confirmation page."
     ],
     "how_hi": [
-      "आधिकारिक अधिसूचना से पात्रता मानदंड की जांच करें।",
-      "आरआरसी नॉर्दन रेलवे की आधिकारिक वेबसाइट पर जाएं।",
-      "लेवल 1 या लेवल 2 के लिए अलग से ऑनलाइन आवेदन पत्र भरें।",
-      "आवश्यक परीक्षा शुल्क का ऑनलाइन भुगतान करें।",
-      "आवेदन जमा करें और प्रिंटआउट सुरक्षित रखें।"
+      "आधिकारिक अधिसूचना से पात्रता मानदंडों की जांच करें।",
+      "आधिकारिक आरआरसी नॉर्दन रेलवे वेबसाइट पर जाएं।",
+      "लेवल 1 और/या लेवल 2 के लिए अलग से ऑनलाइन आवेदन फॉर्म भरें।",
+      "अपने स्वयं के खाते से ऑनलाइन माध्यम से आवश्यक परीक्षा शुल्क का भुगतान करें।",
+      "आवेदन जमा करें और पुष्टिकरण पृष्ठ का प्रिंटआउट अपने पास रखें।"
     ],
-    "intro_en": "Railway Recruitment Cell, Northern Railway (RRC/NR) has invited online applications for recruitment against Scouts and Guides Quota for the year 2026-27. Eligible Indian citizens can apply for Level 1 and Level 2 posts. The online application process starts on 06 November 2026 and will close on 06 December 2026. Candidates must review the educational and scouting qualifications before applying.",
-    "intro_hi": "रेलवे भर्ती सेल, नॉर्दन रेलवे (आरआरसी/एनआर) ने वर्ष 2026-27 के लिए स्काउट्स एंड गाइड्स कोटा के तहत भर्ती के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य भारतीय नागरिक लेवल 1 और लेवल 2 पदों के लिए आवेदन कर सकते हैं। ऑनलाइन आवेदन प्रक्रिया 06 नवंबर 2026 से शुरू होगी और 06 दिसंबर 2026 को समाप्त होगी।",
+    "intro_en": "Railway Recruitment Cell (RRC), Northern Railway has issued Employment Notification No. RRC/NR 01/2026/S&G for recruitment against Scouts & Guides Quota for the year 2026-27. Eligible and interested candidates can submit their online applications from 06.11.2026 to 06.12.2026. The posts are open to all communities with age relaxations applicable for reserved categories. Candidates can apply for both Level 1 and Level 2 categories separately.",
+    "intro_hi": "रेलवे भर्ती सेल (आरआरसी), नॉर्दन रेलवे ने वर्ष 2026-27 के लिए स्काउट्स एंड गाइड्स कोटा के तहत भर्ती हेतु रोजगार अधिसूचना संख्या RRC/NR 01/2026/S&G जारी की है। योग्य और इच्छुक उम्मीदवार 06.11.2026 से 06.12.2026 तक अपने ऑनलाइन आवेदन जमा कर सकते हैं। ये पद सभी समुदायों के लिए खुले हैं और आरक्षित श्रेणियों के लिए आयु में छूट लागू है। उम्मीदवार लेवल 1 और लेवल 2 दोनों श्रेणियों के लिए अलग-अलग आवेदन कर सकते हैं।",
     "last_date": "2026-12-06",
     "mistakes_en": [
-      "Submitting a single application for both categories (separate applications are required for Level 1 and Level 2).",
-      "Failing to pay the fee using own account, which may affect fee refund."
+      "Submitting fee from someone else's account (refund is transferred back to the source account).",
+      "Failing to submit separate applications for Level 1 and Level 2 if applying for both."
     ],
     "mistakes_hi": [
-      "दोनों श्रेणियों के लिए एक ही आवेदन जमा करना (लेवल 1 और लेवल 2 के लिए अलग आवेदन आवश्यक हैं)।",
-      "अपने खाते से शुल्क का भुगतान न करना।"
+      "किसी अन्य के खाते से शुल्क का भुगतान करना (रिफंड उसी स्रोत खाते में भेजा जाता है)।",
+      "दोनों के लिए आवेदन करने पर लेवल 1 और लेवल 2 के वास्ते अलग-अलग आवेदन जमा न करना।"
+    ],
+    "not_en": [
+      "Candidates not meeting the age, educational, or scouting criteria."
+    ],
+    "not_hi": [
+      "जो उम्मीदवार आयु, शैक्षणिक या स्काउटिंग मानदंडों को पूरा नहीं करते हैं।"
     ],
     "not_en": [],
     "not_hi": [],
@@ -249,30 +253,29 @@
       {
         "label_en": "Posts",
         "label_hi": "पद",
-        "value_en": "Level 1 & Level 2 Posts",
+        "value_en": "Level 1 and Level 2 Posts",
         "value_hi": "लेवल 1 और लेवल 2 पद"
       },
       {
         "label_en": "Apply online",
         "label_hi": "ऑनलाइन आवेदन",
         "value_en": "06 Nov 2026 to 06 Dec 2026",
-        "value_hi": "06 Nov 2026 से 06 Dec 2026"
+        "value_hi": "06 नव 2026 से 06 दिस 2026"
       },
       {
         "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "January 2027 (Expected)",
-        "value_hi": "जनवरी 2027 (संभावित)"
-      }
-    ],
-    "salary": [
+        "value_hi": "जनवरी 2027 (अपेक्षित)"
+      },
       {
-        "label_en": "Pay Matrix",
-        "label_hi": "वेतन मैट्रिक्स",
-        "value_en": "Level 1 & Level 2 of 7th CPC",
-        "value_hi": "सातवें सीपीसी का लेवल 1 और लेवल 2"
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "RRC/NR 01/2026/S&G",
+        "value_hi": "RRC/NR 01/2026/S&G"
       }
     ],
+    "salary": [],
     "selection_en": [
       "Written Examination (Computer Based Test / Tablet Based Test)",
       "Document Verification"
@@ -291,30 +294,30 @@
     },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "RRC Northern Railway has released the notification for recruitment against the Scouts & Guides quota for the year 2026-27. Eligible candidates should check the official notification for details and apply online.",
-    "summary_hi": "आरआरसी नॉर्दन रेलवे ने वर्ष 2026-27 के लिए स्काउट्स एंड गाइड्स कोटा के तहत भर्ती की अधिसूचना जारी कर दी है। योग्य उम्मीदवार आधिकारिक अधिसूचना देखें और ऑनलाइन आवेदन करें।",
+    "summary_en": "RRC Northern Railway has released the notification for recruitment against the Scouts & Guides quota for the year 2026-27 for Level 1 and Level 2 posts. Eligible Indian citizens can apply online from 06 November 2026 to 06 December 2026. Check details on educational qualification, age limit, fees, and selection process.",
+    "summary_hi": "आरआरसी नॉर्दन रेलवे ने वर्ष 2026-27 के लिए स्काउट्स एंड गाइड्स कोटा के तहत लेवल 1 और लेवल 2 के पदों पर भर्ती की अधिसूचना जारी कर दी है। योग्य भारतीय नागरिक 06 नवंबर 2026 से 06 दिसंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं। शैक्षणिक योग्यता, आयु सीमा, शुल्क और चयन प्रक्रिया की जानकारी देखें।",
     "vacancies": [
       {
-        "detail_en": "Refer to official notification",
-        "detail_hi": "आधिकारिक अधिसूचना देखें",
+        "detail_en": "Refer to official notification for category-wise distribution",
+        "detail_hi": "श्रेणी-वार विवरण के लिए आधिकारिक अधिसूचना देखें",
         "post_en": "Level 2 Posts",
         "post_hi": "लेवल 2 पद",
-        "total": ""
+        "total": "As per notification"
       },
       {
-        "detail_en": "Refer to official notification",
-        "detail_hi": "आधिकारिक अधिसूचना देखें",
+        "detail_en": "Refer to official notification for category-wise distribution",
+        "detail_hi": "श्रेणी-वार विवरण के लिए आधिकारिक अधिसूचना देखें",
         "post_en": "Level 1 Posts",
         "post_hi": "लेवल 1 पद",
-        "total": ""
+        "total": "As per notification"
       }
     ],
     "video_url": null,
     "who_en": [
-      "Eligible Indian citizens with required scouting and educational qualifications."
+      "Eligible Indian citizens possessing required educational and scouting qualifications aged between 18 to 30/33 years."
     ],
     "who_hi": [
-      "आवश्यक स्काउटिंग और शैक्षिक योग्यताओं वाले योग्य भारतीय नागरिक।"
+      "आवश्यक शैक्षणिक और स्काउटिंग योग्यताओं वाले 18 से 30/33 वर्ष की आयु के योग्य भारतीय नागरिक।"
     ]
   },
   "pdf": {

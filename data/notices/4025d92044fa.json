@@ -17,7 +17,11 @@
     "vacancies": 24
   },
   "editor_notes": [],
-  "exam": {},
+  "exam": {
+    "key": "cisf-paramedical-staff-2026",
+    "name_en": "CISF Paramedical Staff 2026",
+    "name_hi": "सीआईएसएफ पैरामेडिकल स्टाफ 2026"
+  },
   "fields": {},
   "first_seen": "2026-11-05T11:16:09+00:00",
   "id": "4025d92044fa",
@@ -28,21 +32,35 @@
   "org": "CISF",
   "page": {
     "after_en": [
-      "Shortlisted candidates will be called for subsequent stages including physical tests, document verification, trade test, and medical examination."
+      "Candidates who qualify the written exam will be called for PST, document verification, skill test, and medical examination.",
+      "Final selection will be based on written examination performance."
     ],
     "after_hi": [
-      "शॉर्टलिस्ट किए गए उम्मीदवारों को शारीरिक परीक्षण, दस्तावेज सत्यापन, ट्रेड टेस्ट और चिकित्सा परीक्षा सहित अगले चरणों के लिए बुलाया जाएगा।"
+      "लिखित परीक्षा में उत्तीर्ण होने वाले उम्मीदवारों को पीएसटी, दस्तावेज सत्यापन, कौशल परीक्षण और चिकित्सा परीक्षा के लिए बुलाया जाएगा।",
+      " अंतिम चयन लिखित परीक्षा के प्रदर्शन के आधार पर होगा।"
     ],
     "age": [
       {
-        "label_en": "Age limit for ASI (Pharmacist, X-Ray Technician, Lab Technician)",
-        "label_hi": "सहायक उप निरीक्षक (फार्मासिस्ट, एक्स-रे टेक्नीशियन, लैब टेक्नीशियन) के लिए आयु सीमा",
-        "value_en": "18 to 28 years as on 07 Jul 2026",
-        "value_hi": "07 जुलाई 2026 को 18 से 28 वर्ष"
+        "label_en": "Minimum age",
+        "label_hi": "न्यूनतम आयु",
+        "value_en": "18 years",
+        "value_hi": "18 वर्ष"
+      },
+      {
+        "label_en": "Maximum age",
+        "label_hi": "अधिकतम आयु",
+        "value_en": "28 years",
+        "value_hi": "28 वर्ष"
+      },
+      {
+        "label_en": "As on date",
+        "label_hi": "इस तिथि के अनुसार",
+        "value_en": "07 Jul 2026",
+        "value_hi": "07 जुलाई 2026"
       },
       {
         "label_en": "SC / ST relaxation",
-        "label_hi": "अनुसूचति जाति / जनजाति छूट",
+        "label_hi": "अनुसूचित जाति / अनुसूचित जनजाति छूट",
         "value_en": "5 years",
         "value_hi": "5 वर्ष"
       },
@@ -58,14 +76,14 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Verify educational eligibility and age limit",
-      "Keep scanned copies of documents ready",
-      "Submit the online application before 07 July 2026"
+      "Check eligibility criteria and age limit before applying",
+      "Keep scanned copies of photograph, signature, and certificates ready",
+      "Submit the online form well before 07 July 2026"
     ],
     "checklist_hi": [
-      "शैक्षणिक पात्रता और आयु सीमा सत्यापित करें",
-      "दस्तावेजों की स्कैन की गई प्रतियां तैयार रखें",
-      "07 जुलाई 2026 से पहले ऑनलाइन आवेदन जमा करें"
+      "आवेदन करने से पहले पात्रता मानदंड और आयु सीमा की जांच करें",
+      "फोटो, हस्ताक्षर और प्रमाण पत्र की स्कैन की गई प्रतियां तैयार रखें",
+      "07 जुलाई 2026 से काफी पहले ऑनलाइन फॉर्म जमा करें"
     ],
     "conducted_by_en": "Central Industrial Security Force (CISF)",
     "conducted_by_hi": "केंद्रीय औद्योगिक सुरक्षा बल (CISF)",
@@ -80,85 +98,101 @@
         "label_en": "Last date to apply",
         "label_hi": "अंतिम तिथि",
         "value_en": "07 Jul 2026 (23:59 hrs)",
-        "value_hi": "07 जुलाई 2026 (2359 बजे तक)"
+        "value_hi": "07 जुलाई 2026 (23:59 बजे तक)"
+      },
+      {
+        "label_en": "Age cutoff date",
+        "label_hi": "आयु कट-ऑफ तिथि",
+        "value_en": "07 Jul 2026",
+        "value_hi": "07 जुलाई 2026"
       }
     ],
     "documents_en": [
-      "Educational certificates and marksheets",
-      "Diploma or degree certificates",
-      "Pharmacy registration certificate",
-      "Identity proof",
-      "Category certificate (if applicable)"
+      "10th and 12th mark sheets and certificates",
+      "Diploma or Degree certificate in relevant trade",
+      "Valid Pharmacy registration certificate (for Pharmacist)",
+      "Category certificate (SC/ST/OBC/EWS) if applicable"
     ],
     "documents_hi": [
-      "शैक्षणिक प्रमाण पत्र और अंक तालिका",
-      "डिप्लोमा या डिग्री प्रमाण पत्र",
-      "फार्मेसी पंजीकरण प्रमाण पत्र",
-      "पहचान प्रमाण",
-      "श्रेणी प्रमाण पत्र (यदि लागू हो)"
+      "10वीं और 12वीं की अंक तालिका और प्रमाण पत्र",
+      "संबंधित ट्रेड में डिप्लोमा या डिग्री प्रमाण पत्र",
+      "वैध फ़ार्मेसी पंजीकरण प्रमाण पत्र (फ़ार्मासिस्ट के लिए)",
+      "श्रेणी प्रमाण पत्र (एससी/एसटी/ओबीसी/ईडब्ल्यूएस) यदि लागू हो"
     ],
     "eligibility": [
       {
         "label_en": "ASI (Pharmacist)",
-        "label_hi": "सहायक उप निरीक्षक (फार्मासिस्ट)",
-        "value_en": "Passed 12th class with Diploma or Degree in Pharmacy from a recognized institution and registered as a Pharmacist under the Pharmacy Act, 1948.",
-        "value_hi": "मान्यता प्राप्त बोर्ड या विश्वविद्यालय से 12वीं कक्षा उत्तीर्ण और मान्यता प्राप्त संस्थान से फार्मेसी में डिप्लोमा या डिग्री तथा फार्मेसी अधिनियम, 1948 के तहत फार्मासिस्ट के रूप में पंजीकृत।"
+        "label_hi": "सहायक उप निरीक्षक (फ़ार्मासिस्ट)",
+        "value_en": "Passed 12th class with Diploma or Degree in Pharmacy from a recognized institution and registered as a Pharmacist under Pharmacy Act, 1948.",
+        "value_hi": "मान्यता प्राप्त बोर्ड से 12वीं कक्षा उत्तीर्ण और फार्मेसी में डिप्लोमा या डिग्री तथा फार्मेसी अधिनियम 1948 के तहत फ़ार्मासिस्ट के रूप में पंजीकृत।"
       },
       {
         "label_en": "ASI (X-Ray Technician)",
-        "label_hi": "सहायक उप निरीक्षक (एक्स-रे टेक्नीशियन)",
-        "value_en": "Passed 12th class with 2 years Diploma in Radiography from a recognized institution.",
-        "value_hi": "मान्यता प्राप्त बोर्ड या विश्वविद्यालय से 12वीं कक्षा उत्तीर्ण और मान्यता प्राप्त संस्थान से रेडियोग्राफी में 02 साल का डिप्लोमा।"
+        "label_hi": "सहायक उप निरीक्षक (एक्स-रे तकनीशियन)",
+        "value_en": "Passed 12th class with 02 years Diploma in Radiography from a recognized institution.",
+        "value_hi": "मान्यता प्राप्त संस्थान से 12वीं कक्षा उत्तीर्ण और रेडियोग्राफी में 02 साल का डिप्लोमा।"
       },
       {
         "label_en": "ASI (Lab Technician)",
-        "label_hi": "सहायक उप निरीक्षक (लैब टेक्नीशियन)",
-        "value_en": "Passed 12th class with 2 years Diploma in Medical Laboratory Technology (MLT) from a recognized institution.",
-        "value_hi": "मान्यता प्राप्त बोर्ड या विश्वविद्यालय से 12वीं कक्षा उत्तीर्ण और मान्यता प्राप्त संस्थान से मेडिकल लेबोरेटरी टेक्नोलॉजी में 02 साल का डिप्लोमा।"
+        "label_hi": "सहायक उप निरीक्षक (लैब तकनीशियन)",
+        "value_en": "Passed 12th class with 02 years Diploma in Medical Laboratory Technology (MLT) from a recognized institution.",
+        "value_hi": "मान्यता प्राप्त संस्थान से 12वीं कक्षा उत्तीर्ण और मेडिकल लेबोरेटरी टेक्नोलॉजी में 02 साल का डिप्लोमा।"
+      },
+      {
+        "label_en": "Nationality",
+        "label_hi": "राष्ट्रीयता",
+        "value_en": "Candidate must be a citizen of India.",
+        "value_hi": "उम्मीदवार को भारत का नागरिक होना चाहिए।"
       }
     ],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is a direct recruitment drive conducted by the Central Industrial Security Force to select qualified candidates for Assistant Sub Inspector posts in trades like Pharmacist, X-Ray Technician, and Lab Technician.",
-        "a_hi": "यह फार्मासिस्ट, एक्स-रे टेक्नीशियन और लैब टेक्नीशियन जैसे ट्रेडों में सहायक उप निरीक्षक के पदों के लिए योग्य उम्मीदवारों का चयन करने हेतु केंद्रीय औद्योगिक सुरक्षा बल द्वारा आयोजित एक सीधी भर्ती अभियान है।",
+        "a_en": "It is a national-level recruitment drive conducted by the Central Industrial Security Force to fill Assistant Sub Inspector (ASI) posts in trades like Pharmacist, X-Ray Technician, and Lab Technician.",
+        "a_hi": "यह केंद्रीय औद्योगिक सुरक्षा बल द्वारा फार्मासिस्ट, एक्स-रे तकनीशियन और लैब तकनीशियन जैसे ट्रेडों में सहायक उप निरीक्षक (एएसआई) के पदों को भरने के लिए आयोजित एक राष्ट्रीय स्तर की भर्ती अभियान है।",
         "q_en": "What is CISF Paramedical Staff Recruitment?",
         "q_hi": "CISF पैरामेडिकल स्टाफ भर्ती क्या है?"
       }
     ],
     "extra": [
       {
-        "label_en": "Pay Level",
-        "label_hi": "वेतन स्तर",
-        "value_en": "Level-5 (₹29,200 – 92,300) plus allowances",
-        "value_hi": "स्तर-5 (₹29,200 – 92,300) और भत्ते"
+        "label_en": "Job nature",
+        "label_hi": "नौकरी की प्रकृति",
+        "value_en": "Temporary but likely to become permanent",
+        "value_hi": "अस्थायी लेकिन स्थायी होने की संभावना"
+      },
+      {
+        "label_en": "Service liability",
+        "label_hi": "सेवा दायित्व",
+        "value_en": "Liable to serve anywhere in India and abroad",
+        "value_hi": "भारत और विदेश में कहीं भी सेवा देने के लिए उत्तरदायी"
       }
     ],
     "faq": [
       {
-        "a_en": "The last date to submit online applications is 07 July 2026.",
-        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 07 जुलाई 2026 है।",
+        "a_en": "The last date to apply online is 07 July 2026 up to 23:59 hrs.",
+        "a_hi": "ऑनलाइन आवेदन करने की अंतिम तिथि 07 जुलाई 2026 (23:59 बजे तक) है।",
         "q_en": "What is the last date to apply for CISF Paramedical Staff Recruitment 2026?",
         "q_hi": "CISF पैरामेडिकल स्टाफ भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "A total of 24 vacancies are announced for various ASI posts.",
-        "a_hi": "विभिन्न ASI पदों के लिए कुल 24 रिक्तियां घोषित की गई हैं।",
-        "q_en": "How many total vacancies are announced in this notification?",
-        "q_hi": "इस अधिसूचना में कुल कितनी रिक्तियां घोषित की गई हैं?"
+        "a_en": "A total of 24 vacancies are announced for Assistant Sub Inspector posts.",
+        "a_hi": "सहायक उप निरीक्षक पदों के लिए कुल 24 रिक्तियां घोषित की गई हैं।",
+        "q_en": "How many vacancies are announced in this recruitment?",
+        "q_hi": "इस भर्ती में कुल कितनी रिक्तियां घोषित की गई हैं?"
       },
       {
         "a_en": "Candidates must be between 18 to 28 years of age as on 07 July 2026.",
         "a_hi": "उम्मीदवारों की आयु 07 जुलाई 2026 के अनुसार 18 से 28 वर्ष के बीच होनी चाहिए।",
-        "q_en": "What is the age limit for CISF ASI posts?",
-        "q_hi": "CISF ASI पदों के लिए आयु सीमा क्या है?"
+        "q_en": "What is the age limit for CISF Paramedical Recruitment?",
+        "q_hi": "CISF पैरामेडिकल भर्ती के लिए आयु सीमा क्या है?"
       },
       {
-        "a_en": "Eligible candidates can apply online through https://cisfrectt.cisf.gov.in.",
-        "a_hi": "योग्य उम्मीदवार https://cisfrectt.cisf.gov.in के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
-        "q_en": "What is the official website to apply online?",
-        "q_hi": "ऑनलाइन आवेदन करने के लिए आधिकारिक वेबसाइट क्या है?"
+        "a_en": "You can apply online through the official website https://cisfrectt.cisf.gov.in.",
+        "a_hi": "आप आधिकारिक वेबसाइट https://cisfrectt.cisf.gov.in के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+        "q_en": "Where can I apply online for CISF Paramedical Staff?",
+        "q_hi": "मैं CISF पैरामेडिकल स्टाफ के लिए ऑनलाइन आवेदन कहाँ कर सकता हूँ?"
       }
     ],
     "fees": [],
@@ -166,56 +200,72 @@
     "h1_hi": "CISF पैरामेडिकल स्टाफ भर्ती 2026 – 24 पदों के लिए ऑनलाइन आवेदन",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official CISF recruitment website at https://cisfrectt.cisf.gov.in.",
-      "Register and fill out the online application form with required details.",
-      "Upload necessary scanned documents and photographs as per instructions.",
-      "Submit the application form before the last date and take a printout for future reference."
+      "Visit the official CISF recruitment website: https://cisfrectt.cisf.gov.in",
+      "Register and fill out the online application form with correct details.",
+      "Upload necessary educational and category documents as specified.",
+      "Submit the online application before the last date and save a copy for future reference."
     ],
     "how_hi": [
-      "आधिकारिक सीआईएसएफ भर्ती वेबसाइट https://cisfrectt.cisf.gov.in पर जाएं।",
-      "पंजीकृत करें और आवश्यक विवरण के साथ ऑनलाइन आवेदन पत्र भरें।",
-      "निर्देशों के अनुसार आवश्यक स्कैन किए गए दस्तावेज और फोटोग्राफ अपलोड करें।",
-      "अंतिम तिथि से पहले आवेदन पत्र जमा करें और भविष्य के संदर्भ के लिए प्रिंटआउट लें।"
+      "आधिकारिक सीआईएसएफ भर्ती वेबसाइट पर जाएं: https://cisfrectt.cisf.gov.in",
+      "पंजीकृत करें और सही विवरण के साथ ऑनलाइन आवेदन पत्र भरें।",
+      "निर्दिष्ट आवश्यक शैक्षणिक और श्रेणी दस्तावेज अपलोड करें।",
+      "अंतिम तिथि से पहले ऑनलाइन आवेदन जमा करें और भविष्य के संदर्भ के लिए एक प्रति सहेजें।"
     ],
-    "intro_en": "Central Industrial Security Force (CISF) has released the recruitment notification for Paramedical Staff posts for the year 2026. A total of 24 temporary yet pensionable vacancies for Assistant Sub Inspector posts in Pharmacist, X-Ray Technician, and Lab Technician trades are to be filled. Online applications are open from 08 June 2026 and will close on 07 July 2026. Eligible male and Indian citizen candidates meeting the required educational qualifications and physical standards can apply online through the CISF recruitment website.",
-    "intro_hi": "केंद्रीय औद्योगिक सुरक्षा बल (CISF) ने वर्ष 2026 के लिए पैरामेडिकल स्टाफ पदों हेतु भर्ती अधिसूचना जारी की है। फार्मासिस्ट, एक्स-रे टेक्नीशियन और लैब टेक्नीशियन ट्रेडों में सहायक उप निरीक्षक के पदों के लिए कुल 24 अस्थायी लेकिन पेंशन योग्य रिक्तियां भरी जानी हैं। ऑनलाइन आवेदन 08 जून 2026 से शुरू होंगे और 07 जुलाई 2026 को समाप्त होंगे। आवश्यक शैक्षणिक योग्यता और शारीरिक मानकों को पूरा करने वाले योग्य पुरुष और महिला भारतीय नागरिक उम्मीदवार CISF भर्ती वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+    "intro_en": "Central Industrial Security Force (CISF) has released the official notification for the recruitment of Paramedical Staff under Pay Level-5 (₹29,200 – ₹92,300) for 24 vacancies. Eligible Indian citizens (male and female) can submit online applications from 08 June 2026 to 07 July 2026. The selection process includes a written examination, physical standards test, document verification, skill test, and medical examination. Candidates should read the official notification carefully before applying online through the CISF recruitment portal.",
+    "intro_hi": "केंद्रीय औद्योगिक सुरक्षा बल (CISF) ने वेतन मैट्रिक्स के स्तर-5 (₹29,200 – ₹92,300) के तहत पैरामेडिकल स्टाफ के 24 पदों पर भर्ती के लिए आधिकारिक अधिसूचना जारी की है। योग्य भारतीय नागरिक (पुरुष और महिला) 08 जून 2026 से 07 जुलाई 2026 तक ऑनलाइन आवेदन कर सकते हैं। चयन प्रक्रिया में लिखित परीक्षा, शारीरिक मानक परीक्षण, दस्तावेज सत्यापन, कौशल परीक्षण और चिकित्सा परीक्षा शामिल है। उम्मीदवारों को ऑनलाइन आवेदन करने से पहले आधिकारिक अधिसूचना को ध्यान से पढ़ना चाहिए।",
     "last_date": "2026-07-07",
     "mistakes_en": [
       "Submitting applications through any mode other than online",
-      "Failing to check eligibility criteria before applying",
-      "Providing incorrect personal or educational details"
+      "Applying for more than one post"
     ],
     "mistakes_hi": [
       "ऑनलाइन के अलावा किसी अन्य माध्यम से आवेदन जमा करना",
-      "आवेदन करने से पहले पात्रता मानदंडों की जांच न करना",
-      "गलत व्यक्तिगत या शैक्षणिक विवरण प्रदान करना"
+      "एक से अधिक पद के लिए आवेदन करना"
     ],
     "not_en": [
-      "Candidates who do not possess the required educational qualifications or age criteria as on the cut-off date."
+      "Candidates with bigamous marriages or those dismissed from government service"
     ],
     "not_hi": [
-      "वे उम्मीदवार जिनके पास कट-ऑफ तिथि पर आवश्यक शैक्षणिक योग्यता या आयु मापदंड नहीं हैं।"
+      "द्वि-विवाह वाले उम्मीदवार या सरकारी सेवा से बर्खास्त किए गए उम्मीदवार"
     ],
     "notice_date": null,
     "official_site": "https://cisfrectt.cisf.gov.in",
     "physical": [
       {
-        "label_en": "Height (Male - UR, EWS, SC, OBC)",
-        "label_hi": "लंबाई (पुरुष - सामान्य, ईडब्ल्यूएस, एससी, ओबीसी)",
+        "label_en": "Height (Male - General/OBC/SC/EWS)",
+        "label_hi": "लंबाई (पुरुष - सामान्य/ओबीसी/एससी/ईडब्ल्यूएस)",
         "value_en": "170 cm",
         "value_hi": "170 सेमी"
       },
       {
-        "label_en": "Chest (Male - UR, EWS, SC, OBC)",
-        "label_hi": "सीना (पुरुष - सामान्य, ईडब्ल्यूएस, एससी, ओबीसी)",
-        "value_en": "80 - 85 cm",
-        "value_hi": "80 - 85 सेमी"
+        "label_en": "Chest (Male - General/OBC/SC/EWS)",
+        "label_hi": "सीना (पुरुष - सामान्य/ओबीसी/एससी/ईडब्ल्यूएस)",
+        "value_en": "80 – 85 cm",
+        "value_hi": "80 – 85 सेमी"
       },
       {
-        "label_en": "Height (Female - UR, EWS, SC, OBC)",
-        "label_hi": "लंबाई (महिला - सामान्य, ईडब्ल्यूएस, एससी, ओबीसी)",
+        "label_en": "Height (Female - General/OBC/SC/EWS)",
+        "label_hi": "लंबाई (महिला - सामान्य/ओबीसी/एससी/ईडब्ल्यूएस)",
         "value_en": "157 cm",
         "value_hi": "157 सेमी"
+      },
+      {
+        "label_en": "Height (Male - ST)",
+        "label_hi": "लंबाई (पुरुष - एसटी)",
+        "value_en": "162.5 cm",
+        "value_hi": "162.5 सेमी"
+      },
+      {
+        "label_en": "Chest (Male - ST)",
+        "label_hi": "सीना (पुरुष - एसटी)",
+        "value_en": "77 – 82 cm",
+        "value_hi": "77 – 82 सेमी"
+      },
+      {
+        "label_en": "Height (Female - ST)",
+        "label_hi": "लंबाई (महिला - एसटी)",
+        "value_en": "154 cm",
+        "value_hi": "154 सेमी"
       }
     ],
     "provider": "gemini/gemini-flash-lite-latest",
@@ -223,8 +273,8 @@
       {
         "label_en": "Posts",
         "label_hi": "पद",
-        "value_en": "Assistant Sub Inspector (Pharmacist, X-Ray Technician, Lab Technician)",
-        "value_hi": "सहायक उप निरीक्षक (फार्मासिस्ट, एक्स-रे टेक्नीशियन, लैब टेक्नीशियन)"
+        "value_en": "ASI (Pharmacist, X-Ray Technician, Lab Technician)",
+        "value_hi": "सहायक उप निरीक्षक (फ़армаसिस्ट, एक्स-रे तकनीशियन, लैब तकनीशियन)"
       },
       {
         "label_en": "Total vacancies",
@@ -239,81 +289,81 @@
         "value_hi": "08 जून 2026 से 07 जुलाई 2026"
       },
       {
-        "label_en": "Selection process",
-        "label_hi": "चयन प्रक्रिया",
-        "value_en": "CBT / OMR Written Exam, PST, Document Verification, Trade Test (BOHV), Medical Exam",
-        "value_hi": "कंप्यूटर आधारित परीक्षा / ओएमआर लिखित परीक्षा, शारीरिक मानक परीक्षण, दस्तावेज सत्यापन, ट्रेड टेस्ट, चिकित्सा परीक्षा"
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "18 to 28 years (as on 07 Jul 2026)",
+        "value_hi": "18 से 28 वर्ष (07 जुलाई 2026 के अनुसार)"
       },
       {
-        "label_en": "Pay Scale",
-        "label_hi": "वेतनमान",
-        "value_en": "Level-5 (₹29,200 – 92,300)",
-        "value_hi": "स्तर-5 (₹29,200 – 92,300)"
+        "label_en": "Selection process",
+        "label_hi": "चयन प्रक्रिया",
+        "value_en": "CBT/OMR Written Exam, PST, Document Verification, Skill Test, Medical Exam",
+        "value_hi": "लिखित परीक्षा (सीबीटी/ओएमआर), शारीरिक मानक परीक्षण, दस्तावेज सत्यापन, कौशल परीक्षण, चिकित्सा परीक्षा"
       }
     ],
     "salary": [
       {
         "label_en": "Pay Scale",
         "label_hi": "वेतनमान",
-        "value_en": "Level-5 (₹29,200 – 92,300)",
-        "value_hi": "स्तर-5 (₹29,200 – 92,300)"
+        "value_en": "Level 5 (₹29,200 – ₹92,300) plus allowances",
+        "value_hi": "स्तर 5 (₹29,200 – ₹92,300) और भत्ते"
       }
     ],
     "selection_en": [
-      "CBT / OMR Based Written Examination",
+      "Written Examination (CBT / OMR based)",
       "Physical Standards Test (PST)",
       "Document Verification",
-      "Trade Test (BOHV)",
-      "Detailed Medical Examination (DME) / Review Medical Examination (RME)"
+      "Skill Test (Common Aptitude Test / BHVT)",
+      "Medical Examination (Detailed Medical Review)"
     ],
     "selection_hi": [
-      "कंप्यूटर आधारित परीक्षा / ओएमआर आधारित लिखित परीक्षा",
-      "शारीरिक मानक परीक्षण",
-      "दस्तावेज सत्यापन",
-      "व्यावसायिक अभिरुचि परीक्षा (ट्रेड टेस्ट)",
-      "विस्तृत चिकित्सा परीक्षा / समीक्षा चिकित्सा परीक्षा"
+      "लिखित परीक्षा (सीबीटी / ओएमआर आधारित)",
+      "शारीरिक मानक परीक्षण (पीएसटी)",
+      "दस्तावेज़ सत्यापन",
+      "कौशल परीक्षण (सामान्य व्यावसायिक अभिरुचि परीक्षा)",
+      "चिकित्सा परीक्षा (विस्तृत चिकित्सा परीक्षा)"
     ],
     "share_card": {
       "headline_en": "Recruitment 2026",
       "headline_hi": "भर्ती 2026",
       "kind": "job",
       "line_en": "Paramedical Staff (ASI)",
-      "line_hi": "पैरामेडिकल स्टाफ (एएसआई)",
+      "line_hi": "पैरामेडिकल स्टाफ (ASI)",
       "posts": 24
     },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "Central Industrial Security Force (CISF) has invited online applications for the recruitment of Paramedical Staff (ASI posts) for 24 vacancies. Eligible candidates can apply online through the official website by 07 July 2026.",
-    "summary_hi": "केंद्रीय औद्योगिक सुरक्षा बल (CISF) ने पैरामेडिकल स्टाफ (ASI पदों) के लिए 24 रिक्तियों हेतु ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 07 जुलाई 2026 तक आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+    "summary_en": "Central Industrial Security Force (CISF) has invited online applications for recruitment of Paramedical Staff (Assistant Sub Inspector posts) for 24 vacancies. Eligible male and female candidates can apply online by 07 July 2026.",
+    "summary_hi": "केंद्रीय औद्योगिक सुरक्षा बल (CISF) ने पैरामेडिकल स्टाफ (सहायक उप निरीक्षक पदों) के लिए 24 रिक्तियों हेतु ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य पुरुष और महिला उम्मीदवार 07 जुलाई 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
     "vacancies": [
       {
         "detail_en": "UR 10, EWS 01, OBC 04, SC 02, ST 01, Ex-Servicemen 02",
-        "detail_hi": "सामान्य 10, आर्थिक रूप से कमजोर वर्ग 01, अन्य पिछड़ा वर्ग 04, अनुसूचित जाति 02, अनुसूचित जनजाति 01, भूतपूर्व सैनिक 02",
+        "detail_hi": "सामान्य 10, ईडब्ल्यूएस 01, अन्य पिछड़ा वर्ग 04, अनुसूचित जाति 02, अनुसूचित जनजाति 01, भूतपूर्व सैनिक 02",
         "post_en": "Assistant Sub Inspector (Pharmacist)",
-        "post_hi": "सहायक उप निरीक्षक (फार्मासिस्ट)",
+        "post_hi": "सहायक उप निरीक्षक (फ़ार्मासिस्ट)",
         "total": "18"
       },
       {
         "detail_en": "UR 01, EWS 00, OBC 00, SC 00, ST 00, Ex-Servicemen 00",
-        "detail_hi": "सामान्य 01, आर्थिक रूप से कमजोर वर्ग 00, अन्य पिछड़ा वर्ग 00, अनुसूचित जाति 00, अनुसूचित जनजाति 00, भूतपूर्व सैनिक 00",
+        "detail_hi": "सामान्य 01, ईडब्ल्यूएस 00, अन्य पिछड़ा वर्ग 00, अनुसूचित जाति 00, अनुसूचित जनजाति 00, भूतपूर्व सैनिक 00",
         "post_en": "Assistant Sub Inspector (X-Ray Technician)",
-        "post_hi": "सहायक उप निरीक्षक (एक्स-रे टेक्नीशियन)",
+        "post_hi": "सहायक उप निरीक्षक (एक्स-रे तकनीशियन)",
         "total": "01"
       },
       {
         "detail_en": "UR 04, EWS 00, OBC 01, SC 00, ST 00, Ex-Servicemen 00",
-        "detail_hi": "सामान्य 04, आर्थिक रूप से कमजोर वर्ग 00, अन्य पिछड़ा वर्ग 01, अनुसूचित जाति 00, अनुसूचित जनजाति 00, भूतपूर्व सैनिक 00",
+        "detail_hi": "सामान्य 04, ईडब्ल्यूएस 00, अन्य पिछड़ा वर्ग 01, अनुसूचित जाति 00, अनुसूचित जनजाति 00, भूतपूर्व सैनिक 00",
         "post_en": "Assistant Sub Inspector (Lab Technician)",
-        "post_hi": "सहायक उप निरीक्षक (लैब टेक्नीशियन)",
+        "post_hi": "सहायक उप निरीक्षक (लैब तकनीशियन)",
         "total": "05"
       }
     ],
     "video_url": null,
     "who_en": [
-      "Eligible Indian citizens holding required qualifications in Pharmacy, Radiography or Medical Laboratory Technology aged 18-28 years."
+      "Eligible Indian citizens aged 18-28 years with required pharmacy or technical diplomas"
     ],
     "who_hi": [
-      "फार्मेसी, रेडियोग्राफी या मेडिकल लेबोरेटरी टेक्नोलॉजी में आवश्यक योग्यता रखने वाले और 18-28 वर्ष की आयु के योग्य भारतीय नागरिक।"
+      "18-28 वर्ष की आयु के योग्य भारतीय नागरिक जिनके पास आवश्यक फ़ार्मेसी या तकनीकी डिप्लोमा है"
     ]
   },
   "pdf": {

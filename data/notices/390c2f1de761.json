@@ -11,8 +11,8 @@
     "skip_reason": "",
     "summary_en": "The Union Public Service Commission has released the written result for the Civil Services Main Examination 2026. Qualified candidates must update and submit their detailed application form online.",
     "summary_hi": "संघ लोक सेवा आयोग ने सिविल सेवा मुख्य परीक्षा 2026 का लिखित परिणाम जारी कर दिया है। सफल उम्मीदवारों को अपना विस्तृत आवेदन पत्र ऑनलाइन अपडेट और जमा करना होगा।",
-    "title_en": "UPSC Civil Services Result 2026 – Main Exam Marks and List",
-    "title_hi": "संघ लोक सेवा आयोग सिविल सेवा रिज़ल्ट 2026 – मुख्य परीक्षा परिणाम और सूची",
+    "title_en": "UPSC Civil Services Main Exam Result 2026 – Written Result Out",
+    "title_hi": "संघ लोक सेवा आयोग सिविल सेवा मुख्य परीक्षा रिज़ल्ट 2026 – लिखित परीक्षा परिणाम जारी",
     "type": "Result",
     "vacancies": null
   },
@@ -42,12 +42,16 @@
   "org": "UPSC",
   "page": {
     "after_en": [
-      "Personality Test (Interview) schedule and e-summon letters will be released in due course.",
-      "Candidates must fill out the Attestation Form on the DoP&T website during the interview period."
+      "Personality Test (Interview) schedule announcement",
+      "Download of e-Summon Letters for Interview",
+      "Attestation Form submission via DoP&T portal",
+      "Final result and marks sheet publication"
     ],
     "after_hi": [
-      "व्यक्तित्व परीक्षण (साक्षात्कार) अनुसूची और ई-समकन पत्र उचित समय पर जारी किए जाएंगे।",
-      "उम्मीदवारों को साक्षात्कार अवधि के दौरान कार्मिक और प्रशिक्षण विभाग की वेबसाइट पर attestation फॉर्म भरना होगा।"
+      "व्यक्तित्व परीक्षण (साक्षात्कार) अनुसूची की घोषणा",
+      "साक्षात्कार के लिए ई-समन पत्र डाउनलोड करना",
+      "डीओपीएंडटी पोर्टल के माध्यम से अटेस्टेशन फॉर्म जमा करना",
+      "अ अंतिम परिणाम और अंक पत्र का प्रकाशन"
     ],
     "age": [],
     "apply_start": "2026-11-11",
@@ -55,125 +59,133 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check roll number in the result list",
-      "Keep original eligibility certificates ready",
-      "Submit DAF online before 25 Nov 2026"
+      "Check your roll number in the result PDF",
+      "Keep original educational and category certificates ready",
+      "Submit the online DAF before 25th November 2026"
     ],
     "checklist_hi": [
-      "परिणाम सूची में रोल नंबर जांचें",
-      "मूल पात्रता प्रमाण पत्र तैयार रखें",
+      "परिणाम पीडीएफ में अपना रोल नंबर जांचें",
+      "मूल शैक्षणिक और श्रेणी प्रमाण पत्र तैयार रखें",
       "25 नवंबर 2026 से पहले ऑनलाइन डीएएफ जमा करें"
     ],
     "conducted_by_en": "Union Public Service Commission (UPSC)",
-    "conducted_by_hi": "संघ लोक सेवा आयोग",
+    "conducted_by_hi": "संघ लोक सेवा आयोग (यूपीएससी)",
     "dates": [
       {
-        "label_en": "Main Exam Date",
-        "label_hi": "मुख्य परीक्षा तिथि",
+        "label_en": "Main exam dates",
+        "label_hi": "मुख्य परीक्षा की तिथियां",
         "value_en": "21 Aug 2026 to 30 Aug 2026",
-        "value_hi": "21 अग 2026 से 30 अग 2026"
+        "value_hi": "21 अगस्त 2026 से 30 अगस्त 2026"
       },
       {
-        "label_en": "Result Notice Date",
-        "label_hi": "परिणाम नोटिस तिथि",
+        "label_en": "Result notice date",
+        "label_hi": "परिणाम नोटिस की तिथि",
         "value_en": "05 Nov 2026",
-        "value_hi": "05 नवं 2026"
+        "value_hi": "05 नवंबर 2026"
       },
       {
-        "label_en": "Online DAF Submission Starts",
-        "label_hi": "ऑनलाइन डीएएफ सबमिशन शुरू",
+        "label_en": "Online DAF submission starts",
+        "label_hi": "ऑनलाइन आवेदन पत्र जमा करने की शुरुआत",
         "value_en": "11 Nov 2026",
-        "value_hi": "11 नवं 2026"
+        "value_hi": "11 नवंबर 2026"
       },
       {
-        "label_en": "Online DAF Submission Last Date",
-        "label_hi": "ऑनलाइन डीएएफ सबमिशन अंतिम तिथि",
+        "label_en": "Online DAF submission last date",
+        "label_hi": "ऑनलाइन आवेदन पत्र जमा करने की अंतिम तिथि",
         "value_en": "25 Nov 2026 (6:00 PM)",
-        "value_hi": "25 नवं 2026 (शाम 6:00 बजे)"
+        "value_hi": "25 नवंबर 2026 (शाम 6:00 बजे)"
       }
     ],
     "documents_en": [
-      "Original certificates in support of age, educational qualifications, community, EWS, and PwBD",
+      "Original certificates in support of age, educational qualifications, community, EWS, PwBD",
       "TA Form",
-      "Category certificates issued by the closing date of Civil Services (Preliminary) Examination 2026 (27.02.2026)"
+      "Original category/reservation certificates issued by the closing date of Civil Services (Preliminary) Examination 2026 (i.e. 27.02.2026)"
     ],
     "documents_hi": [
-      "आयु, शैक्षणिक योग्यता, समुदाय, ईडब्ल्यूएस और पीडब्ल्यूबीडी के समर्थन में मूल प्रमाण पत्र",
+      "आयु, शैक्षणिक योग्यता, समुदाय, ईडब्ल्यूएस, पीडब्ल्यूडी के समर्थन में मूल प्रमाण पत्र",
       "टीए फॉर्म",
-      "सिविल सेवा (प्रारंभिक) परीक्षा 2026 की अंतिम तिथि (27.02.2026) तक जारी श्रेणी प्रमाण पत्र"
+      "सिविल सेवा (प्रारंभिक) परीक्षा 2026 की अंतिम तिथि यानी 27.02.2026 तक जारी मूल श्रेणी/आरक्षण प्रमाण पत्र"
     ],
     "eligibility": [
       {
-        "label_en": "Educational Qualification",
-        "label_hi": "शैक्षणिक योग्यता",
-        "value_en": "Passed Civil Services (Main) Examination 2026",
-        "value_hi": "सिविल सेवा (मुख्य) परीक्षा 2026 उत्तीर्ण"
+        "label_en": "Qualification",
+        "label_hi": "योग्यता",
+        "value_en": "Qualified in Civil Services (Main) Examination 2026",
+        "value_hi": "सिविल सेवा (मुख्य) परीक्षा 2026 में उत्तीर्ण"
       }
     ],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is the list of candidates who have successfully qualified the written main examination conducted by UPSC and are eligible to appear for the Personality Test (Interview) stage.",
-        "a_hi": "यह उन उम्मीदवारों की सूची है जिन्होंने यूपीएससी द्वारा आयोजित लिखित मुख्य परीक्षा सफलतापूर्वक उत्तीर्ण कर ली है और व्यक्तित्व परीक्षण (साक्षात्कार) चरण के लिए उपस्थित होने के पात्र हैं।",
+        "a_en": "It is the list of candidates who have qualified the written main examination conducted by UPSC and are shortlisted for the Personality Test (Interview) round for recruitment to IAS, IFS, IPS, and other central services.",
+        "a_hi": "यह उन उम्मीदवारों की सूची है जिन्होंने यूपीएससी द्वारा आयोजित लिखित मुख्य परीक्षा उत्तीर्ण कर ली है और आईएएस, आईएफएस, आईपीएस और अन्य केंद्रीय सेवाओं में भर्ती के लिए व्यक्तित्व परीक्षण (साक्षात्कार) दौर के लिए शॉर्टलिस्ट किए गए हैं।",
         "q_en": "What is the UPSC Civil Services Main Exam Result?",
         "q_hi": "यूपीएससी सिविल सेवा मुख्य परीक्षा परिणाम क्या है?"
       }
     ],
     "extra": [
       {
-        "label_en": "Interview Venue",
-        "label_hi": "साक्षात्कार स्थल",
-        "value_en": "UPSC Office, Dholpur House, Shahjahan Road, New Delhi-110069",
-        "value_hi": "यूपीएससी कार्यालय, धौलपुर हाउस, शाहजहाँ रोड, नई दिल्ली-110069"
+        "label_en": "Interview Location",
+        "label_hi": "साक्षात्कार का स्थान",
+        "value_en": "Office of the Union Public Service Commission, Dholpur House, Shahjahan Road, New Delhi-110069",
+        "value_hi": "संघ लोक सेवा आयोग का कार्यालय, धौलपुर हाउस, शाहजहाँ रोड, नई दिल्ली-110069"
       }
     ],
     "faq": [
       {
-        "a_en": "The result was declared on 05th November 2026.",
-        "a_hi": "परिणाम 05 नवंबर 2026 को घोषित किया गया था।",
+        "a_en": "The written result was declared on 5th November 2026.",
+        "a_hi": "लिखित परिणाम 5 नवंबर 2026 को घोषित किया गया था।",
         "q_en": "When was the UPSC Civil Services Main Exam Result 2026 declared?",
         "q_hi": "यूपीएससी सिविल सेवा मुख्य परीक्षा परिणाम 2026 कब घोषित किया गया था?"
       },
       {
-        "a_en": "The last date to submit the online Detailed Application Form (DAF) is 25th November 2026 till 6:00 PM.",
-        "a_hi": "ऑनलाइन विस्तृत आवेदन पत्र (डीएएफ) जमा करने की अंतिम तिथि 25 नवंबर 2026 शाम 6:00 बजे तक है।",
-        "q_en": "What is the last date to submit the online DAF?",
-        "q_hi": "ऑनलाइन डीएएफ जमा करने की अंतिम तिथि क्या है?"
+        "a_en": "The last date to fill and submit the online Detailed Application Form is 25th November 2026 till 6:00 PM.",
+        "a_hi": "ऑनलाइन विस्तृत आवेदन पत्र भरने और जमा करने की अंतिम तिथि 25 नवंबर 2026 शाम 6:00 बजे तक है।",
+        "q_en": "What is the last date to submit the online DAF for qualified candidates?",
+        "q_hi": "योग्य उम्मीदवारों के लिए ऑनलाइन डीएएफ जमा करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "The e-Summon Letters will be available on the official UPSC websites https://www.upsc.gov.in and https://upsconline.nic.in in due course.",
-        "a_hi": "ई-समकन पत्र उचित समय पर आधिकारिक यूपीएससी वेबसाइटों https://www.upsc.gov.in और https://upsconline.nic.in पर उपलब्ध होंगे।",
-        "q_en": "Where can I download the e-Summon Letter for the interview?",
-        "q_hi": "मैं साक्षात्कार के लिए ई-समकन पत्र कहां से डाउनलोड कर सकता हूं?"
+        "a_en": "You can check your roll number in the official result PDF available on the UPSC website https://www.upsc.gov.in.",
+        "a_hi": "आप यूपीएससी की आधिकारिक वेबसाइट https://www.upsc.gov.in पर उपलब्ध आधिकारिक परिणाम पीडीएफ में अपना रोल नंबर देख सकते हैं।",
+        "q_en": "Where can I check my roll number for the UPSC Civil Services Main Result?",
+        "q_hi": "मैं यूपीएससी सिविल सेवा मुख्य परिणाम के लिए अपना रोल नंबर कहाँ देख सकता हूँ?"
+      },
+      {
+        "a_en": "Candidates who qualified the written result have to appear for the Personality Test (Interview).",
+        "a_hi": "लिखित परिणाम उत्तीर्ण करने वाले उम्मीदवारों को व्यक्तित्व परीक्षण (साक्षात्कार) के लिए उपस्थित होना होगा।",
+        "q_en": "What is the next stage after the written result?",
+        "q_hi": "लिखित परिणाम के बाद अगला चरण क्या है?"
       }
     ],
     "fees": [],
-    "h1_en": "UPSC Civil Services Result 2026 – Main Exam Marks and List",
-    "h1_hi": "संघ लोक सेवा आयोग सिविल सेवा रिज़ल्ट 2026 – मुख्य परीक्षा परिणाम और सूची",
+    "h1_en": "UPSC Civil Services Main Exam Result 2026 – Written Result Out",
+    "h1_hi": "संघ लोक सेवा आयोग सिविल सेवा मुख्य परीक्षा रिज़ल्ट 2026 – लिखित परीक्षा परिणाम जारी",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official UPSC website at upsc.gov.in or upsconline.nic.in.",
+      "Visit the official UPSC website at https://www.upsc.gov.in or https://upsconline.nic.in.",
       "Check your roll number in the written result PDF.",
-      "Login to the online application portal between 11 Nov 2026 and 25 Nov 2026.",
-      "Fill up and submit the requisite DAF details and upload necessary documents."
+      "Log in to the online application portal between 11th November 2026 and 25th November 2026.",
+      "Fill/update the requisite details, educational qualifications, and submit the application form online.",
+      "Download and save the acknowledgement with the unique reference number."
     ],
     "how_hi": [
-      "आधिकारिक यूपीएससी वेबसाइट upsc.gov.in या upsconline.nic.in पर जाएं।",
+      "आधिकारिक यूपीएससी वेबसाइट https://www.upsc.gov.in या https://upsconline.nic.in पर जाएं।",
       "लिखित परिणाम पीडीएफ में अपना रोल नंबर जांचें।",
       "11 नवंबर 2026 से 25 नवंबर 2026 के बीच ऑनलाइन आवेदन पोर्टल पर लॉगिन करें।",
-      "आवश्यक डीएएफ विवरण भरें और जमा करें तथा आवश्यक दस्तावेज़ अपलोड करें।"
+      "आवश्यक विवरण, शैक्षणिक योग्यता भरें/अपडेट करें और ऑनलाइन आवेदन पत्र जमा करें।",
+      "अनूठे संदर्भ संख्या के साथ पावती को डाउनलोड करें और सुरक्षित रखें।"
     ],
-    "intro_en": "The Union Public Service Commission (UPSC) has announced the written result of the Civil Services (Main) Examination, 2026 held from 21st August 2026 to 30th August 2026. Candidates whose roll numbers appear in the merit list have qualified for the Personality Test (Interview). All qualified candidates are required to fill out and submit their detailed application form online through the official portal between 11th November 2026 and 25th November 2026.",
-    "intro_hi": "संघ लोक सेवा आयोग (यूपीएससी) ने 21 अगस्त 2026 से 30 अगस्त 2026 तक आयोजित सिविल सेवा (मुख्य) परीक्षा, 2026 का लिखित परिणाम घोषित कर दिया है। जिन उम्मीदवारों के रोल नंबर सूची में हैं, वे व्यक्तित्व परीक्षण (साक्षात्कार) के लिए सफल हुए हैं। सभी सफल उम्मीदवारों को 11 नवंबर 2026 से 25 नवंबर 2026 के बीच आधिकारिक पोर्टल के माध्यम से अपना विस्तृत आवेदन पत्र ऑनलाइन भरना और जमा करना आवश्यक है।",
+    "intro_en": "The Union Public Service Commission (UPSC) has announced the written result for the Civil Services (Main) Examination, 2026, which was conducted from 21st August to 30th August 2026. Candidates who appeared for the main examination can check their roll numbers in the result notice. Qualified candidates are provisionally selected for the Personality Test (Interview) round. All shortlisted candidates must fill and submit their detailed application form online on the official website between 11th November 2026 and 25th November 2026.",
+    "intro_hi": "संघ लोक सेवा आयोग (यूपीएससी) ने सिविल सेवा (मुख्य) परीक्षा, 2026 का लिखित परिणाम घोषित कर दिया है, जो 21 अगस्त से 30 अगस्त 2026 तक आयोजित की गई थी। मुख्य परीक्षा में शामिल होने वाले उम्मीदवार परिणाम नोटिस में अपने रोल नंबर देख सकते हैं। सफल उम्मीदवारों को व्यक्तित्व परीक्षण (साक्षात्कार) दौर के लिए अनंतिम रूप से चुना गया है। सभी शॉर्टलिस्ट किए गए उम्मीदवारों को 11 नवंबर 2026 से 25 नवंबर 2026 के बीच आधिकारिक वेबसाइट पर अपना विस्तृत आवेदन पत्र ऑनलाइन भरना और जमा करना होगा।",
     "last_date": "2026-11-25",
     "mistakes_en": [
-      "Failing to submit the online DAF by 25 November 2026 (6:00 PM) will lead to cancellation of candidature.",
-      "Not updating mandatory fields such as educational qualification status and uploading proof."
+      "Do not miss the online DAF submission deadline of 25th November 2026 (6:00 PM).",
+      "Appearing candidates must update their educational qualification status and upload passing proofs to avoid cancellation of candidature."
     ],
     "mistakes_hi": [
-      "25 नवंबर 2026 (शाम 6:00 बजे) तक ऑनलाइन डीएएफ जमा करने में विफलता से उम्मीदवारी रद्द कर दी जाएगी।",
-      "शैक्षणिक योग्यता की स्थिति जैसे अनिवार्य क्षेत्रों को अपडेट न करना और प्रमाण अपलोड न करना।"
+      "25 नवंबर 2026 (शाम 6:00 बजे) की ऑनलाइन डीएएफ जमा करने की अंतिम तिथि न चूकें।",
+      "अपीयरिंग उम्मीदवारों को अपनी शैक्षणिक योग्यता की स्थिति को अपडेट करना चाहिए और उम्मीदवारी रद्द होने से बचने के लिए उत्तीर्ण प्रमाण अपलोड करना चाहिए।"
     ],
     "not_en": [],
     "not_hi": [],
@@ -191,48 +203,60 @@
       {
         "label_en": "Result Status",
         "label_hi": "परिणाम स्थिति",
-        "value_en": "Written Result Declared",
-        "value_hi": "लिखित परिणाम घोषित"
+        "value_en": "Written Result Declared for Personality Test",
+        "value_hi": "व्यक्तित्व परीक्षण के लिए लिखित परिणाम घोषित"
       },
       {
-        "label_en": "DAF Online Dates",
-        "label_hi": "डीएएफ ऑनलाइन तिथियां",
-        "value_en": "11 Nov 2026 to 25 Nov 2026",
-        "value_hi": "11 नवं 2026 से 25 नवं 2026"
+        "label_en": "Main Exam Dates",
+        "label_hi": "मुख्य परीक्षा तिथियां",
+        "value_en": "21 Aug 2026 to 30 Aug 2026",
+        "value_hi": "21 अगस्त 2026 से 30 अगस्त 2026"
+      },
+      {
+        "label_en": "DAF Submission Dates",
+        "label_hi": "डीएफ जमा करने की तिथियां",
+        "value_en": "11 Nov 2026 to 25 Nov 2026 (upto 6:00 PM)",
+        "value_hi": "11 नवंबर 2026 से 25 नवंबर 2026 (शाम 6:00 बजे तक)"
       }
     ],
     "salary": [],
     "selection_en": [
       "Civil Services Preliminary Examination",
       "Civil Services Main Examination (Written)",
-      "Personality Test (Interview)",
-      "Document Verification"
+      "Personality Test (Interview)"
     ],
     "selection_hi": [
       "सिविल सेवा प्रारंभिक परीक्षा",
       "सिविल सेवा मुख्य परीक्षा (लिखित)",
-      "व्यक्तित्व परीक्षण (साक्षात्कार)",
-      "दस्तावेज़ सत्यापन"
+      "व्यक्तित्व परीक्षण (साक्षात्कार)"
     ],
     "share_card": {
-      "headline_en": "Written Result 2026",
-      "headline_hi": "लिखित परिणाम 2026",
+      "headline_en": "Written Result Out",
+      "headline_hi": "लिखित परिणाम जारी",
       "kind": "result",
-      "line_en": "Civil Services Main Exam",
-      "line_hi": "सिविल सेवा मुख्य परीक्षा",
+      "line_en": "Civil Services Main 2026",
+      "line_hi": "सिविल सेवा मुख्य 2026",
       "posts": null
     },
-    "status_en": "Written result declared, DAF online submission open",
-    "status_hi": "लिखित परिणाम घोषित, डीएएफ ऑनलाइन सबमिशन खुला",
-    "summary_en": "The Union Public Service Commission has released the written result for the Civil Services Main Examination 2026. Qualified candidates must update and submit their detailed application form online.",
-    "summary_hi": "संघ लोक सेवा आयोग ने सिविल सेवा मुख्य परीक्षा 2026 का लिखित परिणाम जारी कर दिया है। सफल उम्मीदवारों को अपना विस्तृत आवेदन पत्र ऑनलाइन अपडेट और जमा करना होगा।",
-    "vacancies": [],
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "The Union Public Service Commission has released the written result for the Civil Services Main Examination 2026. Qualified candidates must fill and submit their detailed application form online from 11th November to 25th November 2026.",
+    "summary_hi": "संघ लोक सेवा आयोग ने सिविल सेवा मुख्य परीक्षा 2026 का लिखित परिणाम जारी कर दिया है। सफल उम्मीदवारों को 11 नवंबर से 25 नवंबर 2026 तक अपना विस्तृत आवेदन पत्र ऑनलाइन भरना और जमा करना होगा।",
+    "vacancies": [
+      {
+        "detail_en": "Selection to Indian Administrative Service, Indian Foreign Service, Indian Police Service, and other Central Services Group A and Group B.",
+        "detail_hi": "भारतीय प्रशासनिक सेवा, भारतीय विदेश सेवा, भारतीय पुलिस सेवा और अन्य केंद्रीय सेवाओं ग्रुप ए और ग्रुप बी में चयन।",
+        "post_en": "Civil Services (IAS, IFS, IPS, and other Group A & B Services)",
+        "post_hi": "सिविल सेवा (आईएएस, आईएफएस, आईपीएस और अन्य ग्रुप ए और बी सेवाएं)",
+        "total": "Not specified"
+      }
+    ],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the UPSC Civil Services Main Examination 2026"
+      "Candidates who appeared for the UPSC Civil Services Main Exam 2026 and are looking for their result."
     ],
     "who_hi": [
-      "वे उम्मीदवार जिन्होंने यूपीएससी सिविल सेवा मुख्य परीक्षा 2026 दी है"
+      "वे उम्मीदवार जो यूपीएससी सिविल सेवा मुख्य परीक्षा 2026 में शामिल हुए थे और अपने परिणाम की तलाश कर रहे हैं।"
     ]
   },
   "pdf": {
@@ -246,7 +270,7 @@
   "qual": [
     "graduate"
   ],
-  "slug": "upsc-civil-services-result-2026-main-exam-marks-and-list",
+  "slug": "upsc-civil-services-main-exam-result-2026-written-result-out",
   "source_id": "upsc-whats-new",
   "status": "approved",
   "title": "Written Result: Civil Services (Main) Examination, 2026",

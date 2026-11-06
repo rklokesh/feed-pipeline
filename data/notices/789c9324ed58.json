@@ -7,35 +7,39 @@
     "exam_date": null,
     "last_date": null,
     "list": true,
-    "posts": "Constable (Tradesmen)",
+    "posts": "Constable Tradesman",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
-    "summary_en": "Border Security Force has released a correction notice for roll numbers shortlisted for the second phase of examination for Constable Tradesmen recruitment 2024-25. Candidates should check the updated roll number details.",
-    "summary_hi": "सीमा सुरक्षा बल ने कांस्टेबल ट्रेडसमेन भर्ती 2024-25 के लिए दूसरे चरण की परीक्षा के लिए शॉर्टलिस्ट किए गए रोल नंबरों के संबंध में सुधार सूचना जारी की है। उम्मीदवार संशोधित रोल नंबर विवरण की जांच करें।",
-    "title_en": "BSF Constable Tradesman 2024-25 Result Correction Notice",
-    "title_hi": "बीएसएफ कांस्टेबल ट्रेडसमेन 2024-25 परिणाम सुधार नोटिस",
+    "summary_en": "Border Security Force has issued a correction notice regarding roll numbers for the second phase of examination for Constable Tradesman 2024-25.",
+    "summary_hi": "सीमा सुरक्षा बल ने कांस्टेबल ट्रेडसमेन 2024-25 के लिए परीक्षा के दूसरे चरण के संबंध में रोल नंबर संशोधन नोटिस जारी किया है।",
+    "title_en": "BSF Constable Tradesman 2024-25 PET PST Result Correction Notice",
+    "title_hi": "सीमा सुरक्षा बल कांस्टेबल ट्रेडसमेन 2024-25 शारीरिक परीक्षा परिणाम संशोधन नोटिस",
     "type": "Update",
     "vacancies": null
   },
   "editor_notes": [],
-  "exam": {},
+  "exam": {
+    "key": "bsf-constable-tradesman-2024",
+    "name_en": "BSF Constable Tradesman 2024",
+    "name_hi": "बीएसएफ कांस्टेबल ट्रेड्समैन 2024"
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest:429"
   },
   "fields": {},
   "first_seen": "2026-11-05T19:56:51+00:00",
   "id": "789c9324ed58",
-  "issue": 1110,
+  "issue": 1121,
   "issue_tidy": true,
   "kind": "notification",
   "notice_date": "2026-10-14",
   "org": "BSF",
   "page": {
     "after_en": [
-      "Shortlisted candidates must prepare for the second phase of the examination as per the schedule provided by BSF."
+      "Candidates with corrected roll numbers should prepare for the next phase of the examination."
     ],
     "after_hi": [
-      "शॉर्टलिस्ट किए गए उम्मीदवारों को बीएसएफ द्वारा प्रदान किए गए कार्यक्रम के अनुसार परीक्षा के दूसरे चरण की तैयारी करनी चाहिए।"
+      "संशोधित रोल नंबर वाले उम्मीदवारों को परीक्षा के अगले चरण की तैयारी करनी चाहिए।"
     ],
     "age": [],
     "apply_start": null,
@@ -68,99 +72,87 @@
     ],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check the corrected roll numbers in the official notice.",
-      "Keep your registration details safe for future stages."
+      "Check your roll number against the corrected list if you appeared for the BSF Constable Tradesman PET/PST."
     ],
     "checklist_hi": [
-      "आधिकारिक सूचना में संशोधित रोल नंबरों की जाँच करें।",
-      "भविष्य के चरणों के लिए अपने पंजीकरण विवरण सुरक्षित रखें।"
+      "यदि आपने बीएसएफ कांस्टेबल ट्रेडसमेन पीईटी/पीएसटी दिया है तो संशोधित सूची के मुकाबले अपने रोल नंबर की जांच करें।"
     ],
     "conducted_by_en": "Border Security Force (BSF)",
     "conducted_by_hi": "सीमा सुरक्षा बल (बीएसएफ)",
     "dates": [
       {
-        "label_en": "Original PET/PST result date",
-        "label_hi": "मूल शारीरिक परीक्षा परिणाम तिथि",
+        "label_en": "Original Result Date",
+        "label_hi": "मूल परिणाम तिथि",
         "value_en": "10 Jun 2026",
         "value_hi": "10 जून 2026"
       },
       {
-        "label_en": "Notice date",
+        "label_en": "Notice Date",
         "label_hi": "नोटिस तिथि",
         "value_en": "Oct 2026",
         "value_hi": "अक्टूबर 2026"
       }
     ],
-    "documents_en": [
-      "Admit card for the next phase",
-      "Valid photo ID proof"
-    ],
-    "documents_hi": [
-      "अगले चरण के लिए एडमिट कार्ड",
-      "वैध फोटो पहचान प्रमाण"
-    ],
+    "documents_en": [],
+    "documents_hi": [],
     "eligibility": [],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "This is a correction notice issued by BSF to rectify minor technical errors in the last digits of three roll numbers shortlisted for the second phase of examination for Constable Tradesmen recruitment 2024-25.",
-        "a_hi": "यह कांस्टेबल ट्रेडसमेन भर्ती 2024-25 के लिए परीक्षा के दूसरे चरण के लिए शॉर्टलिस्ट किए गए तीन रोल नंबरों के अंतिम अंकों में मामूली तकनीकी त्रुटियों को सुधारने के लिए बीएसएफ द्वारा जारी एक सुधार नोटिस है।",
+        "a_en": "This notice corrects three roll numbers that were published incorrectly due to a technical glitch in the PET and PST result for the BSF Constable Tradesman 2024-25 examination.",
+        "a_hi": "यह नोटिस बीएसएफ कांस्टेबल ट्रेडसमेन 2024-25 परीक्षा के पीईटी और पीएसटी परिणाम में तकनीकी गड़बड़ी के कारण गलत प्रकाशित किए गए तीन रोल नंबरों को सुधारता है।",
         "q_en": "What is this BSF Constable Tradesman notice about?",
         "q_hi": "यह बीएसएफ कांस्टेबल ट्रेडसमेन नोटिस किस बारे में है?"
       }
     ],
     "extra": [
       {
-        "label_en": "Publishing Authority",
-        "label_hi": "जारी करने वाला प्राधिकरण",
-        "value_en": "HQ DG BSF, New Delhi",
-        "value_hi": "मुख्यालय महानिदेशक बीएसएफ, नई दिल्ली"
+        "label_en": "Original Result Publication Date",
+        "label_hi": "मूल परिणाम प्रकाशन तिथि",
+        "value_en": "10 June 2026",
+        "value_hi": "10 जून 2026"
       }
     ],
     "faq": [
       {
-        "a_en": "The Border Security Force (BSF) issued the notice.",
-        "a_hi": "सीमा सुरक्षा बल (बीएसएफ) ने नोटिस जारी किया है।",
-        "q_en": "Which board issued the Constable Tradesmen result correction notice?",
-        "q_hi": "कांस्टेबल ट्रेडसमेन परिणाम सुधार नोटिस किस बोर्ड ने जारी किया है?"
+        "a_en": "Three roll numbers shortlisted for the 2nd phase of examination were corrected due to a technical glitch in the earlier result.",
+        "a_hi": "पूर्व परिणाम में तकनीकी गड़बड़ी के कारण परीक्षा के दूसरे चरण के लिए शॉर्टलिस्ट किए गए तीन रोल नंबरों को संशोधित किया गया है।",
+        "q_en": "What was corrected in the BSF Constable Tradesman notice?",
+        "q_hi": "बीएसएफ कांस्टेबल ट्रेडसमेन नोटिस में क्या संशोधित किया गया था?"
       },
       {
-        "a_en": "A total of three (03) roll numbers were corrected due to technical glitches.",
-        "a_hi": "तकनीकी खराबी के कारण कुल तीन (03) रोल नंबरों में सुधार किया गया है।",
-        "q_en": "How many roll numbers were corrected in this notice?",
-        "q_hi": "इस नोटिस में कितने रोल नंबरों में सुधार किया गया है?"
+        "a_en": "The original result was published on 10 June 2026.",
+        "a_hi": "मूल परिणाम 10 जून 2026 को प्रकाशित किया गया था।",
+        "q_en": "When was the original BSF Constable Tradesman PET/PST result published?",
+        "q_hi": "मूल बीएसएफ कांस्टेबल ट्रेडसमेन पीईटी/पीएसटी परिणाम कब प्रकाशित किया गया था?"
       },
       {
-        "a_en": "You can check the notice on the official BSF recruitment website at rectt.bsf.gov.in.",
-        "a_hi": "आप आधिकारिक बीएसएफ भर्ती वेबसाइट rectt.bsf.gov.in पर नोटिस देख सकते हैं।",
-        "q_en": "Where can I check the official BSF notice?",
+        "a_en": "Official notices can be checked on the BSF recruitment portal at rectt.bsf.gov.in.",
+        "a_hi": "आधिकारिक नोटिस बीएसएफ भर्ती पोर्टल rectt.bsf.gov.in पर देखे जा सकते हैं।",
+        "q_en": "Where can I check the official BSF notices?",
         "q_hi": "मैं आधिकारिक बीएसएफ नोटिस कहां देख सकता हूं?"
       }
     ],
     "fees": [],
-    "h1_en": "BSF Constable Tradesman 2024-25 Result Correction Notice",
-    "h1_hi": "बीएसएफ कांस्टेबल ट्रेडसमेन 2024-25 परिणाम सुधार नोटिस",
+    "h1_en": "BSF Constable Tradesman 2024-25 PET PST Result Correction Notice",
+    "h1_hi": "सीमा सुरक्षा बल कांस्टेबल ट्रेडसमेन 2024-25 शारीरिक परीक्षा परिणाम संशोधन नोटिस",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official BSF recruitment website rectt.bsf.gov.in.",
-      "Check the notice section for Constable Tradesmen 2024-25 result correction.",
-      "Verify your roll number against the corrected list provided in the official notice."
+      "Visit the official BSF recruitment website at rectt.bsf.gov.in.",
+      "Check the notice section for the Constable Tradesman 2024-25 roll number correction notice.",
+      "Verify your roll number against the corrected list provided in the notice."
     ],
     "how_hi": [
-      "आधिकारिक बीएसएफ भर्ती वेबसाइट rectt.bsf.gov.in पर जाएं।",
-      "कांस्टेबल ट्रेडसमेन 2024-25 परिणाम सुधार के लिए नोटिस अनुभाग की जाँच करें।",
-      "आधिकारिक सूचना में दी गई संशोधित सूची के मुकाबले अपने रोल नंबर की जाँच करें।"
+      "बीएसएफ की आधिकारिक भर्ती वेबसाइट rectt.bsf.gov.in पर जाएं।",
+      "कांस्टेबल ट्रेडसमेन 2024-25 रोल नंबर संशोधन नोटिस के लिए नोटिस अनुभाग की जाँच करें।",
+      "नोटिस में दी गई संशोधित सूची के मुकाबले अपने रोल नंबर का मिलान करें।"
     ],
-    "intro_en": "The Border Security Force (BSF) has issued a correction notice regarding the roll numbers of candidates shortlisted for the 2nd phase of examination for direct recruitment to the post of Constable (Tradesmen) for the recruitment years 2024 and 2025. Due to technical issues, three roll numbers published earlier on 10.06.2026 have been corrected. Candidates who appeared for the PET/PST can verify their updated roll numbers from the official notice.",
-    "intro_hi": "सीमा सुरक्षा बल (बीएसएफ) ने भर्ती वर्ष 2024 और 2025 के लिए कांस्टेबल (ट्रेडसमेन) के पद पर सीधी भर्ती के लिए परीक्षा के दूसरे चरण के लिए शॉर्टलिस्ट किए गए उम्मीदवारों के रोल नंबर के संबंध में एक सुधार नोटिस जारी किया है। तकनीकी खराबी के कारण, 10.06.2026 को पहले प्रकाशित तीन रोल नंबरों में सुधार किया गया है। शारीरिक परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक नोटिस से अपने संशोधित रोल नंबर की जांच कर सकते हैं।",
+    "intro_en": "The Border Security Force (BSF) has released a correction notice for the roll numbers shortlisted for the 2nd phase of examination for direct recruitment to the post of Constable (Tradesmen) for the recruitment exam year 2024 & 2025. Due to a technical glitch, three roll numbers published earlier on 10.06.2026 have been corrected. Candidates affected by this correction can verify their updated roll numbers from the official notice.",
+    "intro_hi": "सीमा सुरक्षा बल (बीएसएफ) ने भर्ती परीक्षा वर्ष 2024 और 2025 के लिए कांस्टेबल (ट्रेड्समैन) के पद पर सीधी भर्ती के लिए परीक्षा के दूसरे चरण के लिए शॉर्टलिस्ट किए गए रोल नंबरों के वास्ते एक संशोधन नोटिस जारी किया है। एक तकनीकी गड़बड़ी के कारण, 10.06.2026 को पहले प्रकाशित तीन रोल नंबरों में संशोधन किया गया है। इस संशोधन से प्रभावित उम्मीदवार आधिकारिक नोटिस से अपने अपडेट किए गए रोल नंबर की जांच कर सकते हैं।",
     "last_date": null,
-    "mistakes_en": [
-      "Ignoring the corrected roll numbers if you appeared in the PET/PST."
-    ],
-    "mistakes_hi": [
-      "यदि आप शारीरिक परीक्षा में शामिल हुए थे, तो संशोधित रोल नंबरों की उपेक्षा करना।"
-    ],
+    "mistakes_en": [],
+    "mistakes_hi": [],
     "not_en": [],
     "not_hi": [],
     "notice_date": "2026-10-14",
@@ -169,54 +161,48 @@
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Post Name",
-        "label_hi": "पॉस्ट का नाम",
-        "value_en": "Constable (Tradesmen)",
-        "value_hi": "कांस्टेबल (ट्रेडसमेन)"
-      },
-      {
-        "label_en": "Recruitment Year",
-        "label_hi": "भर्ती वर्ष",
-        "value_en": "2024 & 2025",
-        "value_hi": "2024 और 2025"
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Constable Tradesman 2024-25",
+        "value_hi": "कांस्टेबल ट्रेडसमेन 2024-25"
       },
       {
         "label_en": "Notice Type",
         "label_hi": "नोटिस का प्रकार",
-        "value_en": "PET/PST Result Roll Number Correction",
-        "value_hi": "शारीरिक परीक्षा परिणाम रोल नंबर सुधार"
+        "value_en": "Result Correction",
+        "value_hi": "परिणाम संशोधन"
       }
     ],
     "salary": [],
     "selection_en": [
-      "PET / PST (Physical Efficiency Test & Physical Standard Test)",
+      "Physical Efficiency Test (PET) & Physical Standard Test (PST)",
       "Written Examination (CBT)",
-      "Detailed Medical Examination (DME) / Review Medical Examination (RME)"
+      "Medical Examination"
     ],
     "selection_hi": [
-      "शारीरिक दक्षता परीक्षा और शारीरिक मानक परीक्षा",
-      "लिखित परीक्षा",
-      "विस्तृत चिकित्सा परीक्षा"
+      "शारीरिक दक्षता परीक्षा (पीईटी) और शारीरिक मानक परीक्षा (पीएसटी)",
+      "लिखित परीक्षा (सीबीटी)",
+      "चिकित्सा परीक्षण"
     ],
     "share_card": {
       "headline_en": "Result Correction",
-      "headline_hi": "परिणाम सुधार",
+      "headline_hi": "परिणाम संशोधन",
       "kind": "corr",
-      "line_en": "Constable Tradesmen 2024-25",
+      "line_en": "Constable Tradesman 2024-25",
       "line_hi": "कांस्टेबल ट्रेडसमेन 2024-25",
       "posts": null
     },
-    "status_en": "Result correction notice released",
-    "status_hi": "परिणाम सुधार नोटिस जारी",
-    "summary_en": "Border Security Force has released a correction notice regarding the roll numbers shortlisted for the second phase of examination for Constable Tradesmen recruitment 2024-25. Candidates can check the corrected roll number details in the notice.",
-    "summary_hi": "सीमा सुरक्षा बल ने कांस्टेबल ट्रेडसमेन भर्ती 2024-25 के लिए परीक्षा के दूसरे चरण के लिए शॉर्टलिस्ट किए गए रोल नंबरों के संबंध में सुधार सूचना जारी की है। उम्मीदवार नोटिस में संशोधित रोल नंबर विवरण की जांच कर सकते हैं।",
+    "status_en": "PET PST result roll numbers corrected",
+    "status_hi": "शारीरिक परीक्षा परिणाम रोल नंबर संशोधित",
+    "summary_en": "Border Security Force has issued a correction notice regarding roll numbers for the second phase of examination for Constable Tradesman 2024-25. Candidates shortlisted for the PET and PST can check the corrected roll numbers in the notice.",
+    "summary_hi": "सीमा सुरक्षा बल ने कांस्टेबल ट्रेडसमेन 2024-25 के लिए परीक्षा के दूसरे चरण के संबंध में रोल नंबर संशोधन नोटिस जारी किया है। शारीरिक परीक्षा के लिए शॉर्टलिस्ट किए गए उम्मीदवार नोटिस में संशोधित रोल नंबर देख सकते हैं।",
     "vacancies": [],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for BSF Constable Tradesmen PET/PST 2024-25"
+      "Candidates who appeared for BSF Constable Tradesman 2024-25 PET and PST."
     ],
     "who_hi": [
-      "वे उम्मीदवार जो बीएसएफ कांस्टेबल ट्रेडसमेन शारीरिक परीक्षा 2024-25 में शामिल हुए थे"
+      "वे उम्मीदवार जिन्होंने बीएसएफ कांस्टेबल ट्रेडसमेन 2024-25 पीईटी और पीएसटी दिया था।"
     ]
   },
   "pdf": {
@@ -225,11 +211,12 @@
     "sha256": "d97985e84f29611be7944da889e928024cb2b2fa4f091592d389f6abd2621013",
     "text_kind": "text"
   },
-  "published_at": "2026-11-06T08:04:41Z",
+  "published_at": "2026-11-06T08:22:51Z",
   "qual": [
-    "10th"
+    "10th",
+    "iti"
   ],
-  "slug": "bsf-constable-tradesman-2024-25-result-correction-notice",
+  "slug": "bsf-constable-tradesman-2024-25-pet-pst-result-correction-notice",
   "source_id": "bsf-vacancies",
   "status": "approved",
   "title": "Title: //NOTICE// RECRUITMENT FOR THE POST OF CONSTABLE (TRADESMAN) IN BSF - 2024 &ampamp 25 REGARDING WRITTEN EXAMINATION (CBT) Category: Vacancies Posted Date: 14.10.2026",

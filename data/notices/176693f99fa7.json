@@ -1,5 +1,20 @@
 {
   "board_url": "https://recruitment.itbpolice.nic.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Website functionality test notice, not a genuine recruitment notice",
+    "summary_en": "This is a website functionality test notice and should not be used for job applications.",
+    "summary_hi": "यह एक वेबसाइट कार्यक्षमता परीक्षण सूचना है और इसके माध्यम से आवेदन न करें।",
+    "title_en": "ITBP Website Testing Notice",
+    "title_hi": "आईटीबीपी वेबसाइट परीक्षण सूचना",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -21,7 +36,7 @@
     "text_kind": "text"
   },
   "source_id": "itbp-recruitment",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "FOR WEBSITE FUNCTIONALITY TEST ONLY (DO NOT APPLY)- IT IS ONLY FOR WEBSITE TESTING",
   "url": "https://recruitment.itbpolice.nic.in/noticeboards/downloadpdf/369.pdf"
 }
