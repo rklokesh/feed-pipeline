@@ -1,5 +1,23 @@
 {
+  "auto_published": true,
   "board_url": "https://www.rrc-wr.com/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-12-21",
+    "last_date": null,
+    "list": true,
+    "posts": "Level-1 posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Western Railway has released an update regarding the medical examination schedule for Level-1 posts due to administrative changes. Affected candidates should check the notice for revised reporting dates.",
+    "summary_hi": "पश्चिमी रेलवे ने प्रशासनिक कारणों से लेवल-1 पदों के लिए चिकित्सा परीक्षा अनुसूची के संबंध में एक अपडेट जारी किया है। प्रभावित उम्मीदवार संशोधित रिपोर्टिंग तिथियों के लिए नोटिस देखें।",
+    "title_en": "Western Railway Level-1 Medical Exam Schedule 2026 – Notice Out",
+    "title_hi": "पश्चिमी रेलवे लेवल-1 चिकित्सा परीक्षा अनुसूची 2026 – नोटिस जारी",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -56,16 +74,207 @@
   },
   "first_seen": "2026-11-06T19:15:09+00:00",
   "id": "c7e91115a009",
+  "issue": 1161,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-06",
   "org": "RRC Western Railway",
+  "page": {
+    "after_en": [
+      "Completion of Medical Examination",
+      "Final Empanelment and Joining"
+    ],
+    "after_hi": [
+      "चिकित्सा परीक्षा का पूरा होना",
+      "अंतिम पैनल और जॉइनिंग"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://www.rrc.wr.com",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Note your new reporting dates (21-23 Dec 2026).",
+      "Plan for a 4-5 day stay in Mumbai.",
+      "Carry all required identity and call letters."
+    ],
+    "checklist_hi": [
+      "अपनी नई रिपोर्टिंग तिथियों (21-23 दिसंबर 2026) को नोट करें।",
+      "मुंबई में 4-5 दिन रहने की योजना बनाएं।",
+      "सभी आवश्यक पहचान और बुलावा पत्र साथ रखें।"
+    ],
+    "conducted_by_en": "RRC Western Railway (RRC WR)",
+    "conducted_by_hi": "आरआरसी पश्चिमी रेलवे",
+    "dates": [
+      {
+        "label_en": "Previous DV Dates at Dahod Workshop",
+        "label_hi": "दाहोद वर्कशॉप में पिछली डीवी तिथियां",
+        "value_en": "02.11.26, 03.11.26 and 04.11.26",
+        "value_hi": "02.11.26, 03.11.26 और 04.11.26"
+      },
+      {
+        "label_en": "New Medical Exam Reporting Dates",
+        "label_hi": "नई चिकित्सा परीक्षा रिपोर्टिंग तिथियां",
+        "value_en": "21.12.26, 22.12.26 & 23.12.26",
+        "value_hi": "21.12.26, 22.12.26 और 23.12.26"
+      },
+      {
+        "label_en": "Notice Issued Date",
+        "label_hi": "नोटिस जारी होने की तिथि",
+        "value_en": "06.11.26",
+        "value_hi": "06.11.26"
+      }
+    ],
+    "documents_en": [
+      "Original Identity Proof",
+      "Call Letter / Admit Card",
+      "Relevant DV and Medical documents"
+    ],
+    "documents_hi": [
+      "मूल पहचान प्रमाण",
+      "बुलावा पत्र / एडमिट कार्ड",
+      "संबंधित डीवी और चिकित्सा दस्तावेज"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-12-21",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "Due to administrative reasons, the medical examinations for candidates who completed their document verification at Dahod Workshop on 02, 03, and 04 Nov 2026 could not take place and have been shifted to the RRC Office in Mumbai.",
+        "a_hi": "प्रशासनिक कारणों से, जिन उम्मीदवारों ने 02, 03 और 04 नवंबर 2026 को दाहोद वर्कशॉप में अपना दस्तावेज सत्यापन पूरा किया था, उनकी चिकित्सा परीक्षा आयोजित नहीं हो सकी और इसे मुंबई में आरआरसी कार्यालय में स्थानांतरित कर दिया गया है।",
+        "q_en": "Why was the medical exam rescheduled?",
+        "q_hi": "चिकित्सा परीक्षा क्यों पुनर्निर्धारित की गई?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Medical Exam Venue",
+        "label_hi": "चिकित्सा परीक्षा स्थल",
+        "value_en": "RRC Office, Parcel Depot, Alibhai Premji Marg, Grant Road (East), Mumbai – 400007",
+        "value_hi": "आरआरसी कार्यालय, पार्सल डिपो, अलीभाई प्रेमजी मार्ग, ग्रांट रोड (पूर्व), मुंबई - 400007"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The medical examinations are scheduled for 21.12.26, 22.12.26, and 23.12.26.",
+        "a_hi": "चिकित्सा परीक्षा 21.12.26, 22.12.26 और 23.12.26 को निर्धारित है।",
+        "q_en": "What are the new dates for the medical examination?",
+        "q_hi": "चिकित्सा परीक्षा के लिए नई तिथियां क्या हैं?"
+      },
+      {
+        "a_en": "You need to report to the RRC Office, Grant Road (East), Mumbai.",
+        "a_hi": "आपको आरआरसी कार्यालय, ग्रांट रोड (पूर्व), मुंबई में रिपोर्ट करना होगा।",
+        "q_en": "Where do I need to report for the rescheduled medical exam?",
+        "q_hi": "पुनर्निर्धारित चिकित्सा परीक्षा के लिए मुझे कहां रिपोर्ट करना होगा?"
+      },
+      {
+        "a_en": "No, CCAA and PWBD candidates already scheduled for DV at the RRC office must report as per their original dates mentioned in their call letters.",
+        "a_hi": "नहीं, CCAA और PWBD उम्मीदवार जिनका DV पहले से आरआरसी कार्यालय में निर्धारित है, वे अपने बुलावा पत्र में उल्लिखित मूल तिथियों के अनुसार रिपोर्ट करें।",
+        "q_en": "Is there any change in DV schedule for CCAA and PWBD candidates?",
+        "q_hi": "क्या CCAA और PWBD उम्मीदवारों के लिए DV शेड्यूल में कोई बदलाव है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "Western Railway Level-1 Medical Exam Schedule 2026 – Notice Out",
+    "h1_hi": "पश्चिमी रेलवे लेवल-1 चिकित्सा परीक्षा अनुसूची 2026 – नोटिस जारी",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Check the official notice for your reporting schedule.",
+      "Report to the RRC Office, Grant Road (East), Mumbai on the assigned dates (21, 22, or 23 Dec 2026).",
+      "Ensure you make arrangements to stay in Mumbai for 4-5 days as required by the medical department."
+    ],
+    "how_hi": [
+      "अपनी रिपोर्टिंग अनुसूची के लिए आधिकारिक नोटिस देखें।",
+      "निर्धारित तिथियों (21, 22 या 23 दिसंबर 2026) पर आरआरसी कार्यालय, ग्रांट रोड (पूर्व), मुंबई में रिपोर्ट करें।",
+      "सुनिश्चित करें कि आप चिकित्सा विभाग की आवश्यकतानुसार मुंबई में 4-5 दिन रुकने की व्यवस्था करते हैं।"
+    ],
+    "intro_en": "RRC Western Railway has issued an important notice for candidates shortlisted for Level-1 posts under CEN RRC 08/2024. Due to administrative reasons, the medical examination for candidates who reported for Document Verification at Dahod Workshop on 02.11.2026, 03.11.2026, and 04.11.2026 could not be conducted. These candidates are now required to report to the RRC Office in Mumbai on 21.12.2026, 22.12.2026, and 23.12.2026 for their medical examination. Candidates should note that they may need to stay in Mumbai for 4-5 days. Meanwhile, CCAA and PWBD candidates whose DV is scheduled at the RRC office should follow their original call letter dates.",
+    "intro_hi": "आरआरसी पश्चिमी रेलवे ने CEN RRC 08/2024 के तहत लेवल-1 पदों के लिए शॉर्टलिस्ट किए गए उम्मीदवारों के लिए एक महत्वपूर्ण नोटिस जारी किया है। प्रशासनिक कारणों से, जिन उम्मीदवारों ने 02.11.2026, 03.11.2026 और 04.11.2026 को दाहोद वर्कशॉप में दस्तावेज सत्यापन के लिए रिपोर्ट किया था, उनकी चिकित्सा परीक्षा आयोजित नहीं की जा सकी। अब इन उम्मीदवारों को अपनी चिकित्सा परीक्षा के लिए 21.12.2026, 22.12.2026 और 23.12.2026 को मुंबई में आरआरसी कार्यालय में रिपोर्ट करना आवश्यक है। उम्मीदवारों को ध्यान देना चाहिए कि उन्हें मुंबई में 4-5 दिन रुकना पड़ सकता है। इस बीच, CCAA और PWBD उम्मीदवार जिनका DV आरआरसी कार्यालय में निर्धारित है, वे अपने मूल बुलावा पत्र की तिथियों का पालन करें।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not report to Dahod Workshop for the rescheduled medical exam; report directly to the RRC Office in Mumbai."
+    ],
+    "mistakes_hi": [
+      "पुनर्निर्धारित चिकित्सा परीक्षा के लिए दाहोद वर्कशॉप में रिपोर्ट न करें; सीधे मुंबई में आरआरसी कार्यालय में रिपोर्ट करें।"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-06",
+    "official_site": "https://www.rrc.wr.com",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Level-1 posts",
+        "value_hi": "लेवल-1 पद"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "CEN RRC 08/2024",
+        "value_hi": "CEN RRC 08/2024"
+      },
+      {
+        "label_en": "New Medical Exam Dates",
+        "label_hi": "नई चिकित्सा परीक्षा तिथियां",
+        "value_en": "21, 22 & 23 Dec 2026",
+        "value_hi": "21, 22 और 23 दिसंबर 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Document Verification (DV)",
+      "Medical Examination"
+    ],
+    "selection_hi": [
+      "दस्तावेज सत्यापन",
+      "चिकित्सा परीक्षा"
+    ],
+    "share_card": {
+      "headline_en": "Medical Exam Update",
+      "headline_hi": "चिकित्सा परीक्षा अपडेट",
+      "kind": "sched",
+      "line_en": "Level-1 Medical Schedule",
+      "line_hi": "लेवल-1 चिकित्सा अनुसूची",
+      "posts": 1
+    },
+    "status_en": "Medical examination schedule updated for candidates who reported on 02, 03, and 04 Nov 2026",
+    "status_hi": "02, 03 और 04 नवंबर 2026 को रिपोर्ट करने वाले उम्मीदवारों के लिए चिकित्सा परीक्षा अनुसूची अपडेट की गई",
+    "summary_en": "Western Railway has released a notice regarding rescheduled medical examinations for Level-1 posts due to administrative reasons. Candidates who reported for DV at Dahod Workshop on 02.11.26, 03.11.26, and 04.11.26 must report to the RRC Office on 21.12.26, 22.12.26, and 23.12.26. Please check the notice for your revised reporting schedule and guidelines.",
+    "summary_hi": "पश्चिमी रेलवे ने प्रशासनिक कारणों से लेवल-1 पदों के लिए पुनर्निर्धारित चिकित्सा परीक्षाओं के संबंध में एक नोटिस जारी किया है। जिन उम्मीदवारों ने 02.11.26, 03.11.26 और 04.11.26 को दाहोद वर्कशॉप में डीवी के लिए रिपोर्ट किया था, उन्हें 21.12.26, 22.12.26 और 23.12.26 को आरआरसी कार्यालय में रिपोर्ट करना होगा। कृपया अपनी संशोधित रिपोर्टिंग अनुसूची और दिशानिर्देशों के लिए नोटिस देखें।",
+    "vacancies": [
+      {
+        "detail_en": "CEN RRC 08/2024",
+        "detail_hi": "CEN RRC 08/2024",
+        "post_en": "Level-1 posts",
+        "post_hi": "लेवल-1 पद",
+        "total": "As per notification"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates who reported for DV at Dahod Workshop on 02, 03, and 04 Nov 2026"
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जिन्होंने 02, 03 और 04 नवंबर 2026 को दाहोद वर्कशॉप में डीवी के लिए रिपोर्ट किया था"
+    ]
+  },
   "pdf": {
     "bytes": 424151,
     "pages": 1,
     "sha256": "b468c6cb4286d293e5d6776060151ed0e376dc1188a395fc7d75875d939e14c8",
     "text_kind": "text"
   },
+  "published_at": "2026-11-06T19:22:58Z",
+  "qual": [
+    "10th",
+    "iti"
+  ],
+  "slug": "western-railway-level-1-medical-exam-schedule-2026-notice-out",
   "source_id": "rrc-wr",
-  "status": "pending_review",
+  "status": "approved",
   "title": "to view/download Notice regarding Document Verification and Medical Examination - Uploaded on 06-11-2026",
   "url": "https://www.rrc-wr.com/rrwc/Files/1a0afae9-8065-49aa-9234-be717d4500e7.pdf"
 }
