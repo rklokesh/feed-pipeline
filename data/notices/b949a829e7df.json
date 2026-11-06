@@ -11,8 +11,8 @@
     "skip_reason": "",
     "summary_en": "Office order regarding document verification of absent candidates under the PH category for the Conductor 2024 exam.",
     "summary_hi": "कंडक्टर 2024 परीक्षा के तहत दिव्यांग श्रेणी के अनुपस्थित उम्मीदवारों के दस्तावेज सत्यापन के संबंध में कार्यालय आदेश।",
-    "title_en": "RSSB Conductor 2024 Document Verification Notice for Absent Candidates",
-    "title_hi": "आरएसएसबी कंडक्टर 2024 अनुपस्थित उम्मीदवारों के लिए दस्तावेज सत्यापन नोटिस",
+    "title_en": "RSSB Conductor DV Notice 2024 – Absent Candidates List Out",
+    "title_hi": "आरएसएसबी कंडक्टर डीवी नोटिस 2024 – अनुपस्थित उम्मीदवारों की सूची जारी",
     "type": "Update",
     "vacancies": null
   },
@@ -31,10 +31,10 @@
   "org": "RSSB Rajasthan",
   "page": {
     "after_en": [
-      "Final selection and posting after successful document verification."
+      "Final selection list after document verification."
     ],
     "after_hi": [
-      "सफल दस्तावेज सत्यापन के बाद अंतिम चयन और पोस्टिंग।"
+      "दस्तावेज सत्यापन के बाद अंतिम चयन सूची।"
     ],
     "age": [],
     "apply_start": null,
@@ -42,85 +42,106 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check your roll number in the notice",
-      "Keep all original documents ready"
+      "सूची में अपना रोल नंबर सत्यापित करें",
+      "सभी दस्तावेज तैयार रखें",
+      "समय पर जयपुर मुख्यालय पहुंचें"
     ],
-    "checklist_hi": [
-      "नोटिस में अपना रोल नंबर जांचें",
-      "सभी मूल दस्तावेज तैयार रखें"
-    ],
-    "conducted_by_en": "Rajasthan Staff Selection Board (RSSB)",
-    "conducted_by_hi": "राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी)",
+    "conducted_by_en": "Rajasthan Subordinate and Ministerial Services Selection Board (RSSB) / Rajasthan State Road Transport Corporation (RSRTC)",
+    "conducted_by_hi": "राजस्थान कर्मचारी चयन बोर्ड (RSSB) / राजस्थान राज्य पथ परिवहन निगम (RSRTC)",
     "dates": [
       {
-        "label_en": "Notice Date",
-        "label_hi": "नोटिस की तिथि",
-        "value_en": "06 Nov 2026",
-        "value_hi": "06 नव 2026"
+        "label_en": "Previous DV Dates",
+        "label_hi": "पिछली डीवी तिथियां",
+        "value_en": "02 Nov 2026 & 03 Nov 2026",
+        "value_hi": "02 Nov 2026 और 03 Nov 2026"
+      },
+      {
+        "label_en": "Rescheduled DV Date",
+        "label_hi": "पुनर्निर्धारित डीवी तिथि",
+        "value_en": "12 Nov 2026",
+        "value_hi": "12 Nov 2026"
       }
     ],
     "documents_en": [
-      "Original identity proof",
-      "Educational certificates",
-      "PH category certificate",
-      "Copy of application form"
+      "All original documents as specified in previous order dated 13.10.2026",
+      "Photo ID proof",
+      "Copy of application form and call letter"
     ],
     "documents_hi": [
-      "मूल पहचान प्रमाण",
-      "शैक्षणिक प्रमाण पत्र",
-      "दिव्यांग श्रेणी प्रमाण पत्र",
-      "आवेदन पत्र की प्रति"
+      "पिछले आदेश दिनांक 13.10.2026 में उल्लिखित सभी मूल दस्तावेज",
+      "फोटो पहचान पत्र",
+      "आवेदन पत्र और बुलावा पत्र की प्रति"
     ],
-    "eligibility": [],
+    "eligibility": [
+      {
+        "label_en": "Category",
+        "label_hi": "श्रेणी",
+        "value_en": "PH (LDCP / AAV) category candidates absent on previous dates",
+        "value_hi": "दिव्यांग (LDCP / AAV) श्रेणी के उम्मीदवार जो पिछली तिथियों पर अनुपस्थित थे"
+      }
+    ],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "This notice is an office order regarding the document verification of absent candidates under the PH category for the Conductor 2024 recruitment.",
-        "a_hi": "यह नोटिस कंडक्टर 2024 भर्ती के लिए दिव्यांग श्रेणी के तहत अनुपस्थित उम्मीदवारों के दस्तावेज सत्यापन के संबंध में एक कार्यालय आदेश है।",
-        "q_en": "What is this RSSB Conductor 2024 notice about?",
-        "q_hi": "यह आरएसएसबी कंडक्टर 2024 नोटिस किस बारे में है?"
+        "a_en": "This notice provides a second and final opportunity for absent PH category candidates of the Conductor 2024 exam to attend their document verification on 12 Nov 2026.",
+        "a_hi": "यह नोटिस कंडक्टर 2024 परीक्षा के अनुपस्थित दिव्यांग श्रेणी के उम्मीदवारों को 12 Nov 2026 को अपने दस्तावेज सत्यापन में शामिल होने का दूसरा और अंतिम अवसर प्रदान करता है।",
+        "q_en": "What is this RSSB Conductor DV notice about?",
+        "q_hi": "यह आरएसएसबी कंडक्टर डीवी नोटिस किसके बारे में है?"
       }
     ],
-    "extra": [],
+    "extra": [
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Conductor Recruitment 2024",
+        "value_hi": "परिचालक सीधी भर्ती 2024"
+      }
+    ],
     "faq": [
       {
-        "a_en": "This notice is for absent candidates under the PH category for the RSSB Conductor 2024 exam.",
-        "a_hi": "यह नोटिस आरएसएसबी कंडक्टर 2024 परीक्षा के लिए दिव्यांग श्रेणी के अंतर्गत अनुपस्थित उम्मीदवारों के लिए है।",
-        "q_en": "Who is this document verification notice for?",
-        "q_hi": "यह दस्तावेज सत्यापन नोटिस किसके लिए है?"
+        "a_en": "The document verification is scheduled for 12 Nov 2026.",
+        "a_hi": "दस्तावेज सत्यापन 12 Nov 2026 को निर्धारित है।",
+        "q_en": "When is the rescheduled document verification for absent candidates?",
+        "q_hi": "अनुपस्थित उम्मीदवारों के लिए पुनर्निर्धारित दस्तावेज सत्यापन कब है?"
       },
       {
-        "a_en": "The notice was released by the Rajasthan Staff Selection Board (RSSB).",
-        "a_hi": "यह नोटिस राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी) द्वारा जारी किया गया है।",
-        "q_en": "Which board released this notice?",
-        "q_hi": "यह नोटिस किस बोर्ड ने जारी किया है?"
+        "a_en": "Candidates must report at 10:00 AM.",
+        "a_hi": "उम्मीदवारों को प्रातः 10:00 बजे रिपोर्ट करना होगा।",
+        "q_en": "What is the reporting time for the DV?",
+        "q_hi": "डीवी के लिए रिपोर्टिंग समय क्या है?"
+      },
+      {
+        "a_en": "It is being held at Rajasthan State Road Transport Corporation, Headquarters, Transport Marg, Chomu House, Jaipur.",
+        "a_hi": "यह राजस्थान राज्य पथ परिवहन निगम, मुख्यालय, परिवहन मार्ग, चौमू हाउस, जयपुर में आयोजित किया जा रहा है।",
+        "q_en": "Where is the document verification being held?",
+        "q_hi": "दस्तावेज सत्यापन कहाँ आयोजित किया जा रहा है?"
       }
     ],
     "fees": [],
-    "h1_en": "RSSB Conductor 2024 Document Verification Notice for Absent Candidates",
-    "h1_hi": "आरएसएसबी कंडक्टर 2024 अनुपस्थित उम्मीदवारों के लिए दस्तावेज सत्यापन नोटिस",
+    "h1_en": "RSSB Conductor DV Notice 2024 – Absent Candidates List Out",
+    "h1_hi": "आरएसएसबी कंडक्टर डीवी नोटिस 2024 – अनुपस्थित उम्मीदवारों की सूची जारी",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official RSSB website.",
-      "Click on the Conductor 2024 document verification office order link for absent PH candidates.",
-      "Check the notice for your roll number and instructions."
+      "Check your roll number in the official absent candidates list.",
+      "Report at the RSRTC Headquarters, Jaipur on 12 Nov 2026 at 10:00 AM.",
+      "Carry all original documents and copies as mentioned in the previous order dated 13.10.2026."
     ],
     "how_hi": [
-      "आधिकारिक आरएसएसबी वेबसाइट पर जाएं।",
-      "अनुपस्थित दिव्यांग उम्मीदवारों के लिए कंडक्टर 2024 दस्तावेज सत्यापन कार्यालय आदेश लिंक पर क्लिक करें।",
-      "अपने रोल नंबर और निर्देशों के लिए नोटिस की जाँच करें।"
+      "आधिकारिक अनुपस्थित उम्मीदवारों की सूची में अपना रोल नंबर जांचें।",
+      "12 Nov 2026 को प्रातः 10:00 बजे रासपपनि मुख्यालय, जयपुर में रिपोर्ट करें।",
+      "पिछले आदेश दिनांक 13.10.2026 में उल्लिखित सभी मूल दस्तावेज और प्रतियां साथ लेकर आएं।"
     ],
-    "intro_en": "The Rajasthan Staff Selection Board (RSSB) has issued an office order concerning the document verification for absent candidates who belong to the PH category for the Conductor 2024 examination. Candidates who missed their previous schedule can check the official notification for further details regarding the verification process.",
-    "intro_hi": "राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी) ने कंडक्टर 2024 परीक्षा के लिए दिव्यांग श्रेणी के अंतर्गत अनुपस्थित रहने वाले उम्मीदवारों के दस्तावेज सत्यापन के संबंध में कार्यालय आदेश जारी किया है। जो उम्मीदवार अपने पिछले शेड्यूल में उपस्थित नहीं हो पाए थे, वे सत्यापन प्रक्रिया से संबंधित अधिक जानकारी के लिए आधिकारिक अधिसूचना देख सकते हैं।",
+    "intro_en": "Rajasthan Subordinate and Ministerial Services Selection Board (RSSB) has issued an office order regarding document verification of absent candidates under the PH category for the Conductor 2024 recruitment. Candidates who failed to attend the document verification on 02.11.2026 and 03.11.2026 are given a final opportunity to appear on 12.11.2026. Eligible candidates must report at the RSRTC Headquarters in Jaipur with all required documents.",
+    "intro_hi": "राजस्थान कर्मचारी चयन बोर्ड (RSSB) ने कंडक्टर 2024 भर्ती के लिए दिव्यांग (PH) श्रेणी के अनुपस्थित उम्मीदवारों के दस्तावेज सत्यापन के संबंध में कार्यालय आदेश जारी किया है। जो उम्मीदवार 02.11.2026 और 03.11.2026 को दस्तावेज सत्यापन के लिए उपस्थित नहीं हो सके थे, उन्हें 12.11.2026 को उपस्थित होने का एक और अवसर दिया गया है।",
     "last_date": null,
     "mistakes_en": [
-      "Do not miss the specified date and time for document verification.",
-      "Ensure all required documents are carried in original."
+      "Do not miss the reporting time of 10:00 AM.",
+      "Ensure all documents required in the previous order are carried."
     ],
     "mistakes_hi": [
-      "दस्तावेज सत्यापन के लिए निर्धारित तिथि और समय न चूकें।",
-      "सुनिश्चित करें कि सभी आवश्यक दस्तावेज मूल रूप में साथ हों।"
+      "प्रातः 10:00 बजे के रिपोर्टिंग समय से न चूकें।",
+      "सुनिश्चित करें कि पिछले आदेश में आवश्यक सभी दस्तावेज साथ हों।"
     ],
     "not_en": [],
     "not_hi": [],
@@ -136,44 +157,60 @@
         "value_hi": "कंडक्टर"
       },
       {
-        "label_en": "Category",
-        "label_hi": "श्रेणी",
-        "value_en": "PH Category (Absent Candidates)",
-        "value_hi": "दिव्यांग श्रेणी (अनुपस्थित उम्मीदवार)"
+        "label_en": "DV Date for Absent Candidates",
+        "label_hi": "अनुपस्थित उम्मीदवारों के लिए डीवी तिथि",
+        "value_en": "12 Nov 2026",
+        "value_hi": "12 Nov 2026"
       },
       {
-        "label_en": "Notice Type",
-        "label_hi": "नोटिस का प्रकार",
-        "value_en": "Document Verification Office Order",
-        "value_hi": "दस्तावेज सत्यापन कार्यालय आदेश"
+        "label_en": "Reporting Time",
+        "label_hi": "रिपोर्टिंग समय",
+        "value_en": "10:00 AM",
+        "value_hi": "प्रातः 10:00 बजे"
+      },
+      {
+        "label_en": "Venue",
+        "label_hi": "स्थान",
+        "value_en": "Rajasthan State Road Transport Corporation, Headquarters, Transport Marg, Chomu House, Jaipur",
+        "value_hi": "राजस्थान राज्य पथ परिवहन निगम, मुख्यालय, परिवहन मार्ग, चौमू हाउस, जयपुर"
       }
     ],
     "salary": [],
     "selection_en": [
-      "Document Verification"
+      "Written Examination",
+      "Document Verification (DV)"
     ],
     "selection_hi": [
-      "दस्तावेज सत्यापन"
+      "लिखित परीक्षा",
+      "दस्तावेज सत्यापन (DV)"
     ],
     "share_card": {
-      "headline_en": "DV Notice Out",
-      "headline_hi": "डीवी नोटिस जारी",
+      "headline_en": "Absent Candidates DV",
+      "headline_hi": "अनुपस्थित उम्मीदवारों का डीवी",
       "kind": "sched",
       "line_en": "Conductor 2024 DV",
       "line_hi": "कंडक्टर 2024 डीवी",
       "posts": null
     },
-    "status_en": "Document verification schedule released for absent PH category candidates",
-    "status_hi": "दिव्यांग श्रेणी के अनुपस्थित उम्मीदवारों के लिए दस्तावेज सत्यापन शेड्यूल जारी",
-    "summary_en": "Rajasthan Staff Selection Board has released an office order regarding the document verification of absent candidates under the PH category for the Conductor 2024 exam.",
-    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने कंडक्टर 2024 परीक्षा के तहत दिव्यांग श्रेणी के अनुपस्थित उम्मीदवारों के दस्तावेज सत्यापन के संबंध में एक कार्यालय आदेश जारी किया है।",
-    "vacancies": [],
+    "status_en": "Document verification date announced for absent candidates",
+    "status_hi": "अनुपस्थित उम्मीदवारों के लिए दस्तावेज सत्यापन की तिथि घोषित",
+    "summary_en": "Office order regarding document verification of absent candidates under the PH category for the Conductor 2024 exam. Candidates who missed earlier dates can attend on 12 Nov 2026.",
+    "summary_hi": "कंडक्टर 2024 परीक्षा के तहत दिव्यांग श्रेणी के अनुपस्थित उम्मीदवारों के दस्तावेज सत्यापन के संबंध में कार्यालय आदेश। जो उम्मीदवार पहले तिथियों पर अनुपस्थित रहे, वे 12 Nov 2026 को उपस्थित हो सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "List of 96 absent PH category candidates released for DV",
+        "detail_hi": "डीवी के लिए 96 अनुपस्थित दिव्यांग श्रेणी के उम्मीदवारों की सूची जारी",
+        "post_en": "Conductor",
+        "post_hi": "कंडक्टर",
+        "total": "96"
+      }
+    ],
     "video_url": null,
     "who_en": [
-      "Absent PH category candidates of RSSB Conductor 2024 exam"
+      "PH category candidates who missed the Conductor 2024 document verification on 02-03 Nov 2026."
     ],
     "who_hi": [
-      "आरएसएसबी कंडक्टर 2024 परीक्षा के दिव्यांग श्रेणी के अनुपस्थित उम्मीदवार"
+      "वे दिव्यांग श्रेणी के उम्मीदवार जो 02-03 Nov 2026 को कंडक्टर 2024 दस्तावेज सत्यापन से चूक गए थे।"
     ]
   },
   "pdf": {
@@ -183,10 +220,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-06T10:04:22Z",
-  "qual": [
-    "12th"
-  ],
-  "rewrite": true,
   "slug": "rssb-conductor-2024-document-verification-notice-for-absent-cand",
   "source_id": "rssb-home",
   "status": "approved",

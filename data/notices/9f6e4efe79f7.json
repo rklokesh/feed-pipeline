@@ -11,8 +11,8 @@
     "skip_reason": "",
     "summary_en": "UKPSC has released a notification regarding fee payment and document submission for qualified candidates of the English shorthand exam for the High Court Personal Assistant Examination 2025.",
     "summary_hi": "UKPSC ने उच्च न्यायालय वैक्तिक सहायक परीक्षा 2025 की अंग्रेजी आशुलिपि परीक्षा में सफल अभ्यर्थियों के लिए शुल्क भुगतान और दस्तावेज जमा करने से संबंधित अधिसूचना जारी की है।",
-    "title_en": "UKPSC High Court Personal Assistant Exam 2025 Second Paper Fee and Doc Notice 2026",
-    "title_hi": "UKPSC उच्च न्यायालय वैक्तिक सहायक परीक्षा 2025 द्वितीय पेपर शुल्क एवं दस्तावेज नोटिस 2026",
+    "title_en": "UKPSC Personal Assistant Exam 2025 Mains Fee & Doc Notice 2026",
+    "title_hi": "UKPSC पर्सनल असिस्टेंट परीक्षा 2025 मुख्य परीक्षा शुल्क और दस्तावेज नोटिस 2026",
     "type": "Update",
     "vacancies": null
   },
@@ -35,10 +35,14 @@
   "org": "UKPSC",
   "page": {
     "after_en": [
-      "Scrutiny of documents and subsequent stages of the examination process as notified by the Commission."
+      "Scrutiny of documents by the commission",
+      "Conduct of the main examination (General Knowledge and English Language)",
+      "Final selection and appointment"
     ],
     "after_hi": [
-      "दस्तावेजों की जांच और आयोग द्वारा अधिसूचित परीक्षा प्रक्रिया के आगामी चरण।"
+      "आयोग द्वारा दस्तावेजों की जांच",
+      "मुख्य परीक्षा (सामान्य ज्ञान और अंग्रेजी भाषा) का आयोजन",
+      "अ अंतिम चयन और नियुक्ति"
     ],
     "age": [],
     "apply_start": "2026-11-09",
@@ -46,170 +50,174 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Pay the fee online through the official portal.",
-      "Download Form 2, Form 3, and Form 4.",
-      "Attach self-attested copies of all educational and category documents.",
-      "Send the package to the UKPSC office before 29 Nov 2026."
+      "Pay the exam fee online between 09 Nov and 29 Nov 2026",
+      "Download Form 2, 3, 4 and the checklist from the website",
+      "Attach self-attested photocopies of all required certificates",
+      "Send via Speed Post or submit by hand before 29 Nov 2026, 6:00 PM"
     ],
     "checklist_hi": [
-      "आधिकारिक पोर्टल के माध्यम से ऑनलाइन शुल्क का भुगतान करें।",
-      "प्रपत्र-2, प्रपत्र-3 और प्रपत्र-4 डाउनलोड करें।",
-      "सभी शैक्षणिक और श्रेणी दस्तावेजों की स्व-प्रमाणित प्रतियां संलग्न करें।",
-      "29 नवंबर 2026 से पहले UKPSC कार्यालय में दस्तावेज भेजें।"
+      "09 नवंबर से 29 नवंबर 2026 के बीच ऑनलाइन परीक्षा शुल्क जमा करें",
+      "वेबसाइट से प्रपत्र 2, 3, 4 और चेकलिस्ट डाउनलोड करें",
+      "सभी आवश्यक प्रमाण-पत्रों की स्वप्रमाणित फोटोकॉपी संलग्न करें",
+      "29 नवंबर 2026, सायं 6:00 बजे से पहले स्पीड पोस्ट द्वारा भेजें या जमा करें"
     ],
     "conducted_by_en": "Uttarakhand Public Service Commission (UKPSC)",
-    "conducted_by_hi": "उत्तराखंड लोक सेवा आयोग (UKPSC)",
+    "conducted_by_hi": "उत्तराखण्ड लोक सेवा आयोग (UKPSC)",
     "dates": [
       {
-        "label_en": "English Shorthand Exam Date",
-        "label_hi": "अंग्रेजी आशुलिपि परीक्षा तिथि",
-        "value_en": "22 Jul 2026",
-        "value_hi": "22 जुलाई 2026"
-      },
-      {
-        "label_en": "Result Declaration Date",
-        "label_hi": "परिणाम घोषणा तिथि",
+        "label_en": "English shorthand exam result declared",
+        "label_hi": "अंग्रेजी आशुलेखन परीक्षा परिणाम घोषित",
         "value_en": "27 Oct 2026",
-        "value_hi": "27 अक्टूबर 2026"
+        "value_hi": "27 अक्तूबर 2026"
       },
       {
-        "label_en": "Fee Payment Start Date",
-        "label_hi": "शुल्क भुगतान की प्रारंभिक तिथि",
+        "label_en": "Fee payment start date",
+        "label_hi": "शुल्क भुगतान प्रारंभ तिथि",
         "value_en": "09 Nov 2026",
         "value_hi": "09 नवंबर 2026"
       },
       {
-        "label_en": "Fee Payment & Document Submission Last Date",
-        "label_hi": "शुल्क भुगतान एवं दस्तावेज जमा करने की अंतिम तिथि",
+        "label_en": "Fee payment last date",
+        "label_hi": "शुल्क भुगतान अंतिम तिथि",
+        "value_en": "29 Nov 2026",
+        "value_hi": "29 नवंबर 2026"
+      },
+      {
+        "label_en": "Last date to submit application and documents",
+        "label_hi": "आवेदन और दस्तावेज जमा करने की अंतिम तिथि",
         "value_en": "29 Nov 2026",
         "value_hi": "29 नवंबर 2026"
       }
     ],
     "documents_en": [
-      "Printout of Online Application Form (Form 2)",
-      "Authentication Form (Form 3)",
-      "Declaration Form (Form 4)",
-      "Self-attested photocopies of essential educational qualification certificates",
-      "Reservation / Category certificates as applicable"
+      "Printed copy of online application form",
+      "Filled Form 2, Form 3, and Form 4",
+      "Checklist",
+      "Self-attested copies of educational qualification certificates",
+      "Reservation or category certificates",
+      "Fee payment receipt"
     ],
     "documents_hi": [
-      "ऑनलाइन आवेदन पत्र का प्रिंटआउट (प्रपत्र-2)",
-      "प्रमाणीकरण प्रपत्र (प्रपत्र-3)",
-      "देशना प्रपत्र (प्रपत्र-4)",
-      "अनिवार्य शैक्षणिक अर्हता प्रमाण पत्रों की स्व-प्रमाणित छायाप्रतियां",
-      "आरक्षण / श्रेणी से संबंधित प्रमाण पत्र"
+      "ऑनलाइन आवेदन पत्र का प्रिंट आउट",
+      "भरे हुए प्रपत्र-2, प्रपत्र-3 और प्रपत्र-4",
+      "चेकलिस्ट",
+      "शैक्षणिक योग्यता प्रमाण-पत्रों की स्वप्रमाणित प्रतियां",
+      "आरक्षण या श्रेणी प्रमाण-पत्र",
+      "शुल्क भुगतान रसीद"
     ],
     "eligibility": [
       {
-        "label_en": "Qualified Exam",
-        "label_hi": "सफल परीक्षा",
-        "value_en": "English Shorthand Exam for High Court Personal Assistant Exam 2025",
-        "value_hi": "उच्च न्यायालय वैक्तिक सहायक परीक्षा 2025 की अंग्रेजी आशुलिपि परीक्षा"
+        "label_en": "Qualification",
+        "label_hi": "योग्यता",
+        "value_en": "Qualified the English shorthand exam for High Court Personal Assistant Examination 2025",
+        "value_hi": "उच्च न्यायालय वैयक्तिक सहायक परीक्षा 2025 की अंग्रेजी आशुलेखन परीक्षा में सफल"
       }
     ],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "This notice is for candidates who qualified the English shorthand exam for the High Court Personal Assistant Examination 2025. It instructs them to pay the exam fee for the first paper and submit their documents to the UKPSC office.",
-        "a_hi": "यह नोटिस उच्च न्यायालय वैक्तिक सहायक परीक्षा 2025 की अंग्रेजी आशुलिपि परीक्षा में सफल अभ्यर्थियों के लिए है। इसमें उन्हें प्रथम प्रश्न पत्र के लिए परीक्षा शुल्क जमा करने और आयोग कार्यालय में अपने दस्तावेज जमा करने का निर्देश दिया गया है।",
-        "q_en": "What is this UKPSC notice about?",
-        "q_hi": "यह UKPSC नोटिस किसके बारे में है?"
+        "a_en": "This is a notice issued by the Uttarakhand Public Service Commission for candidates who passed the English shorthand test. They must pay the main exam fee and submit their physical documents to the commission office.",
+        "a_hi": "यह उत्तराखण्ड लोक सेवा आयोग द्वारा अंग्रेजी आशुलेखन परीक्षा पास करने वाले अभ्यर्थियों के लिए जारी किया गया नोटिस है। इन्हें मुख्य परीक्षा का शुल्क जमा करना होगा और अपने भौतिक दस्तावेज आयोग कार्यालय में भेजने होंगे।",
+        "q_en": "What is the UKPSC High Court Personal Assistant Exam 2025 Main Fee Notice?",
+        "q_hi": "UKPSC उच्च न्यायालय वैयक्तिक सहायक परीक्षा मुख्य शुल्क नोटिस क्या है?"
       }
     ],
     "extra": [
       {
         "label_en": "Envelope Details",
         "label_hi": "लिफाफे पर विवरण",
-        "value_en": "Candidates must mention Exam Name, Own Name, Roll Number, Reserved Category/Sub-Category, Registered Mobile Number, and Registered E-mail on top of the envelope.",
-        "value_hi": "अभ्यर्थियों को लिफाफे के ऊपर परीक्षा का नाम, स्वयं का नाम, अनुक्रमांक, आरक्षित श्रेणी/उपश्रेणी का विवरण, पंजीकृत मोबाइल नंबर और रजिस्टर्ड ई-मेल का उल्लेख करना होगा।"
+        "value_en": "Mention name of the exam, candidate name, roll number, category/subcategory, mobile number, and email ID on top of the envelope",
+        "value_hi": "लिफाफे के ऊपर परीक्षा का नाम, अपना नाम, अनुक्रमांक, आरक्षित श्रेणी, मोबाइल नंबर और ईमेल आईडी लिखें"
       }
     ],
     "faq": [
       {
-        "a_en": "The last date to pay the examination fee is 29 November 2026.",
-        "a_hi": "परीक्षा शुल्क भुगतान की अंतिम तिथि 29 नवंबर 2026 है।",
-        "q_en": "What is the last date to pay the fee for UKPSC High Court Personal Assistant Exam 2025?",
-        "q_hi": "UKPSC उच्च न्यायालय वैक्तिक सहायक परीक्षा 2025 के लिए शुल्क भुगतान की अंतिम तिथि क्या है?"
+        "a_en": "The last date to pay the fee online is 29 November 2026.",
+        "a_hi": "ऑनलाइन शुल्क भुगतान की अंतिम तिथि 29 नवंबर 2026 है।",
+        "q_en": "What is the last date to pay the fee for UKPSC High Court PA Main Exam 2025?",
+        "q_hi": "UKPSC उच्च न्यायालय पीए मुख्य परीक्षा 2025 के लिए शुल्क भुगतान की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "The last date to submit documents by post or in person is 29 November 2026 up to 6:00 PM.",
-        "a_hi": "डाक द्वारा या व्यक्तिगत रूप से दस्तावेज जमा करने की अंतिम तिथि 29 नवंबर 2026 शाम 6:00 बजे तक है।",
+        "a_en": "The last date to submit hard copies of application forms and documents is 29 November 2026 up to 6:00 PM.",
+        "a_hi": "आवेदन पत्र और दस्तावेजों की हार्ड कॉपी जमा करने की अंतिम तिथि 29 नवंबर 2026 सायं 6:00 बजे तक है।",
         "q_en": "What is the last date to submit documents to the UKPSC office?",
         "q_hi": "UKPSC कार्यालय में दस्तावेज जमा करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "Candidates who were declared provisionally successful in the English Shorthand Examination held on 22 July 2026 are eligible.",
-        "a_hi": "22 जुलाई 2026 को आयोजित अंग्रेजी आशुलिपि परीक्षा में औपबंधिक रूप से सफल घोषित अभ्यर्थी पात्र हैं।",
-        "q_en": "Who is eligible to pay this fee and submit documents?",
-        "q_hi": "यह शुल्क भुगतान करने और दस्तावेज जमा करने के लिए कौन पात्र है?"
+        "a_en": "Candidates who have been declared provisionally successful in the English shorthand examination held on 22 July 2026 are eligible.",
+        "a_hi": "22 जुलाई 2026 को आयोजित अंग्रेजी आशुलेखन परीक्षा में औपबन्धिक रूप से सफल घोषित अभ्यर्थी पात्र हैं।",
+        "q_en": "Who is eligible to pay the fee and submit documents?",
+        "q_hi": "शुल्क भुगतान और दस्तावेज जमा करने के लिए कौन पात्र है?"
+      },
+      {
+        "a_en": "The total fee including tax for General, OBC, and EWS candidates is ₹166.36.",
+        "a_hi": "सामान्य, अन्य पिछड़ा वर्ग और आर्थिक रूप से कमजोर वर्ग के लिए कर सहित कुल शुल्क ₹166.36 है।",
+        "q_en": "What is the application fee for General and OBC candidates?",
+        "q_hi": "सामान्य और अन्य पिछड़ा वर्ग के अभ्यर्थियों के लिए आवेदन शुल्क कितना है?"
+      },
+      {
+        "a_en": "You must send them to the office of the Secretary, Uttarakhand Public Service Commission, Haridwar-249404.",
+        "a_hi": "आपको इन्हें सचिव, उत्तराखण्ड लोक सेवा आयोग, हरिद्वार-249404 के कार्यालय में भेजना होगा।",
+        "q_en": "Where should I send the printed application and documents?",
+        "q_hi": "मुद्रित आवेदन और दस्तावेज कहाँ भेजने हैं?"
       }
     ],
     "fees": [
       {
-        "amount": "₹166.36",
-        "cat_en": "Unreserved",
-        "cat_hi": "अनारक्षित"
+        "amount": "₹166.36 (Fee ₹150 + Tax ₹16.36)",
+        "cat_en": "Unreserved / OBC / EWS",
+        "cat_hi": "अनारक्षित / अन्य पिछड़ा वर्ग / आर्थिक रूप से कमजोर वर्ग"
       },
       {
-        "amount": "₹166.36",
-        "cat_en": "Uttarakhand OBC",
-        "cat_hi": "उत्तराखंड अन्य पिछड़ा वर्ग"
+        "amount": "₹76.36 (Fee ₹60 + Tax ₹16.36)",
+        "cat_en": "SC / ST",
+        "cat_hi": "अनुसूचित जाति / अनुसूचित जनजाति"
       },
       {
-        "amount": "₹76.36",
-        "cat_en": "Uttarakhand SC / ST",
-        "cat_hi": "उत्तराखंड अनुसूचित जाति / अनुसूचित जनजाति"
-      },
-      {
-        "amount": "₹166.36",
-        "cat_en": "Uttarakhand EWS",
-        "cat_hi": "उत्तराखंड आर्थिक रूप से कमजोर वर्ग"
-      },
-      {
-        "amount": "₹16.36",
+        "amount": "₹16.36 (Processing Fee Only)",
         "cat_en": "Physical Disabled",
         "cat_hi": "शारीरिक दिव्यांग"
       },
       {
-        "amount": "₹0",
-        "cat_en": "Orphans in State Homes",
-        "cat_hi": "राजकीय गृहों में निवासरत अनाथ बच्चे"
+        "amount": "Nil",
+        "cat_en": "Orphan Children in State Homes",
+        "cat_hi": "राज्य के स्वैच्छिक राजकीय गृहों में निवासरत अनाथ बच्चे"
       }
     ],
-    "h1_en": "UKPSC High Court Personal Assistant Exam 2025 Second Paper Fee and Doc Notice 2026",
-    "h1_hi": "UKPSC उच्च न्यायालय वैक्तिक सहायक परीक्षा 2025 द्वितीय पेपर शुल्क एवं दस्तावेज नोटिस 2026",
-    "hindi_notice_url": null,
+    "h1_en": "UKPSC Personal Assistant Exam 2025 Mains Fee & Doc Notice 2026",
+    "h1_hi": "UKPSC पर्सनल असिस्टेंट परीक्षा 2025 मुख्य परीक्षा शुल्क और दस्तावेज नोटिस 2026",
+    "hindi_notice_url": "https://psc.uk.gov.in/public/uploads/recruitment/1943065271.pdf",
     "how_en": [
-      "Visit the official UKPSC website at www.psc.uk.gov.in.",
-      "Click on the link to pay the examination fee using Net Banking, Debit Card, Credit Card, or UPI.",
-      "Download the application form (Form 2), authentication form (Form 3), and declaration form (Form 4) from the website.",
-      "Attach self-attested photocopies of all educational and reservation certificates along with the application printout.",
-      "Send the complete documents via Registered Post, Speed Post, Courier, or submit in person to the UKPSC office by 29 Nov 2026."
+      "Visit the official UKPSC website at www.psc.uk.gov.in",
+      "Use the provided link to pay the main exam fee via Net Banking, Debit Card, Credit Card, or UPI",
+      "Download the application form (Form 2), authentication form (Form 3), and declaration form (Form 4) along with the checklist",
+      "Fill out the forms and attach self-attested copies of educational, preferential, and reservation certificates",
+      "Send the complete documents by Registered / Speed Post / Courier or submit by hand to the office of the Secretary, Uttarakhand Public Service Commission, Haridwar by 29 Nov 2026 (6:00 PM)"
     ],
     "how_hi": [
-      "आधिकारिक वेबसाइट www.psc.uk.gov.in पर जाएं।",
-      "नेट बैंकिंग, डेबिट कार्ड, क्रेडिट कार्ड या यूपीआई के माध्यम से परीक्षा शुल्क जमा करने के लिए दिए गए लिंक का उपयोग करें।",
-      "वेबसाइट से मुख्य परीक्षा हेतु उपलब्ध आवेदन पत्र (2), प्रमाणीकरण प्रपत्र (3) और देशना प्रपत्र (4) को डाउनलोड करके भरें।",
-      "आवेदन के प्रिंटआउट के साथ सभी शैक्षणिक और आरक्षण प्रमाण पत्रों की स्व-प्रमाणित छायाप्रतियां संलग्न करें।",
-      "पूर्ण दस्तावेजों को रजिस्टर्ड/स्पीड पोस्ट, कूरियर के माध्यम से या आयोग कार्यालय में व्यक्तिगत रूप से 29 नवंबर 2026 तक जमा करें।"
+      "आधिकारिक वेबसाइट www.psc.uk.gov.in पर जाएं",
+      "दिए गए लिंक का उपयोग करके नेट बैंकिंग, डेबिट कार्ड, क्रेडिट कार्ड या यूपीआई के माध्यम से मुख्य परीक्षा शुल्क जमा करें",
+      "आवेदन पत्र (प्रपत्र-2), प्रमाणीकरण प्रपत्र (प्रपत्र-3), देशना प्रपत्र (प्रपत्र-4) और चेकलिस्ट डाउनलोड करें",
+      "फॉर्म भरें और अनिवार्य शैक्षिक योग्यता, अधिमानी अर्हता तथा आरक्षण संबंधी प्रमाण-पत्रों की स्वप्रमाणित प्रतियां संलग्न करें",
+      "पूर्ण रूप से भरे हुए दस्तावेजों को रजिस्टर्ड/स्पीड पोस्ट/कूरियर या व्यक्तिगत रूप से सचिव, उत्तराखण्ड लोक सेवा आयोग, हरिद्वार के कार्यालय में 29 नवंबर 2026 (सायं 6:00 बजे तक) जमा करें"
     ],
-    "intro_en": "Uttarakhand Public Service Commission (UKPSC) has issued a detailed notification for candidates who qualified in the English shorthand examination held on 22 July 2026 under the High Court Personal Assistant Examination 2025. Qualified candidates are required to pay the examination fee for the first paper and submit self-attested copies of all required educational, reservation, and other certificates along with the application printouts to the commission office by 29 November 2026.",
-    "intro_hi": "उत्तराखंड लोक सेवा आयोग (UKPSC) ने उच्च न्यायालय वैक्तिक सहायक परीक्षा 2025 के अंतर्गत 22 जुलाई 2026 को आयोजित अंग्रेजी आशुलिपि परीक्षा में सफल अभ्यर्थियों के लिए एक विस्तृत अधिसूचना जारी की है। सफल अभ्यर्थियों को प्रथम प्रश्न पत्र हेतु परीक्षा शुल्क जमा करना होगा और 29 नवंबर 2026 तक आयोग कार्यालय में सभी आवश्यक शैक्षणिक, आरक्षण और अन्य प्रमाण पत्र की स्व-प्रमाणित प्रतियों के साथ आवेदन का प्रिंटआउट भेजना होगा।",
+    "intro_en": "Uttarakhand Public Service Commission (UKPSC) has issued a detailed notification for candidates who qualified the English shorthand exam for the High Court Personal Assistant Examination 2025. Qualified candidates are required to pay the main examination fee online and send the hard copy of their application form along with self-attested copies of educational and reservation certificates to the commission office. The online fee payment window is open from 09 November 2026 to 29 November 2026. The last date to submit the physical application and documents by post or in person is 29 November 2026 up to 6:00 PM.",
+    "intro_hi": "उत्तराखण्ड लोक सेवा आयोग (UKPSC) ने उच्च न्यायालय वैयक्तिक सहायक परीक्षा 2025 की अंग्रेजी आशुलेखन परीक्षा में सफल अभ्यर्थियों के लिए विस्तृत अधिसूचना जारी की है। सफल अभ्यर्थियों को मुख्य परीक्षा के लिए ऑनलाइन शुल्क जमा करना होगा और अपने आवेदन पत्र का प्रिंट आउट तथा शैक्षणिक व आरक्षण संबंधी सभी प्रमाण-पत्रों की स्वप्रमाणित प्रतियां आयोग कार्यालय को भेजनी होंगी। ऑनलाइन शुल्क भुगतान 09 नवंबर 2026 से 29 नवंबर 2026 तक किया जा सकता है। आवेदन पत्र और दस्तावेज डाक या अन्य माध्यम से आयोग कार्यालय में जमा करने की अंतिम तिथि 29 नवंबर 2026 सायं 6:00 बजे तक है।",
     "last_date": "2026-11-29",
     "mistakes_en": [
-      "Do not forget to write exam name, roll number and category on top of the envelope.",
-      "Ensure reservation certificates are issued on or before the original closing date of 14 January 2026 as per rules."
+      "Do not forget to mention the exam name, roll number, and category on top of the postal envelope",
+      "Ensure reservation certificates are valid and issued by the competent authority up to the last date of initial online application (14 Jan 2026)"
     ],
     "mistakes_hi": [
-      "लिफाफे के ऊपर परीक्षा का नाम, अनुक्रमांक और श्रेणी लिखना न भूलें।",
-      "सुनिश्चित करें कि आरक्षण प्रमाण पत्र नियमानुसार 14 जनवरी 2026 तक या उससे पहले जारी किए गए हों।"
+      "डाक के लिफाफे के ऊपर परीक्षा का नाम, अनुक्रमांक और श्रेणी लिखना न भूलें",
+      "यह सुनिश्चित करें कि आपके आरक्षण प्रमाण-पत्र प्रारंभिक ऑनलाइन आवेदन की अंतिम तिथि (14 जनवरी 2026) तक के वैध हों"
     ],
     "not_en": [
-      "Candidates who fail to pay the examination fee will have their candidature cancelled automatically."
+      "Candidates who fail to pay the main exam fee will have their candidature cancelled automatically without further notice."
     ],
     "not_hi": [
-      "जो अभ्यर्थी परीक्षा शुल्क जमा करने में असफल रहेंगे, उनका अभ्यर्थित्व स्वतः निरस्त माना जाएगा।"
+      "जो अभ्यर्थी मुख्य परीक्षा का शुल्क जमा नहीं करेंगे, उनका अभ्यर्थन स्वतः निरस्त माना जाएगा।"
     ],
     "notice_date": "2026-11-06",
     "official_site": "https://psc.uk.gov.in",
@@ -219,56 +227,74 @@
       {
         "label_en": "Post Name",
         "label_hi": "पद का नाम",
-        "value_en": "Personal Assistant (Private Secretary) High Court",
-        "value_hi": "वैक्तिक सहायक (निजी सचिव) उच्च न्यायालय"
+        "value_en": "Personal Assistant (Private Secretary)",
+        "value_hi": "वैयक्तिक सहायक (प्राइवेट সেক্রেটারি)"
       },
       {
-        "label_en": "Fee Payment Start Date",
-        "label_hi": "शुल्क भुगतान की प्रारंभिक तिथि",
-        "value_en": "09 Nov 2026",
-        "value_hi": "09 नवंबर 2026"
+        "label_en": "Total Vacancies",
+        "label_hi": "कुल वैकेंसी",
+        "value_en": "As per notification",
+        "value_hi": "अधिसूचना के अनुसार"
       },
       {
-        "label_en": "Last Date for Fee Payment",
-        "label_hi": "शुल्क भुगतान की अंतिम तिथि",
-        "value_en": "29 Nov 2026",
-        "value_hi": "29 नवंबर 2026"
+        "label_en": "Fee Payment Dates",
+        "label_hi": "शुल्क भुगतान तिथियां",
+        "value_en": "09 Nov 2026 to 29 Nov 2026",
+        "value_hi": "09 नव 2026 से 29 नव 2026"
       },
       {
-        "label_en": "Last Date for Document Submission",
-        "label_hi": "दस्तावेज जमा करने की अंतिम तिथि",
-        "value_en": "29 Nov 2026 (6:00 PM)",
-        "value_hi": "29 नवंबर 2026 (शाम 6:00 बजे)"
+        "label_en": "Last Date for Hard Copy Submission",
+        "label_hi": "हार्ड कॉपी जमा करने की अंतिम तिथि",
+        "value_en": "29 Nov 2026 (06:00 PM)",
+        "value_hi": "29 नव 2026 (सायं 06:00 बजे)"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "A-4/E-3/97(P.A.H.C.)/2024-25",
+        "value_en_hi": "A-4/E-3/97(P.A.H.C.)/2024-25"
       }
     ],
     "salary": [],
     "selection_en": [
-      "English Shorthand Exam (Completed)",
-      "First Paper (Objective General Knowledge & English Language) Fee Payment and Document Verification"
+      "English shorthand exam (Completed)",
+      "Main exam fee payment and document submission",
+      "Main examination (General Knowledge and English Language)",
+      "Document verification"
     ],
     "selection_hi": [
-      "अंग्रेजी आशुलिपि परीक्षा (संपन्न)",
-      "प्रथम प्रश्न पत्र (सामान्य ज्ञान और अंग्रेजी भाषा) शुल्क भुगतान और दस्तावेज सत्यापन"
+      "अंग्रेजी आशुलेखन परीक्षा (संपन्न)",
+      "मुख्य परीक्षा शुल्क भुगतान और दस्तावेज जमा करना",
+      "मुख्य परीक्षा (सामान्य ज्ञान और अंग्रेजी भाषा)",
+      "दस्तावेज़ सत्यापन"
     ],
     "share_card": {
       "headline_en": "Fee & Doc Notice 2026",
       "headline_hi": "शुल्क एवं दस्तावेज नोटिस",
       "kind": "job",
-      "line_en": "HC Personal Assistant",
-      "line_hi": "उच्च न्यायालय वैक्तिक सहायक",
-      "posts": null
+      "line_en": "High Court PA Exam 2025",
+      "line_hi": "उच्च न्यायालय वैयक्तिक सहायक परीक्षा",
+      "posts": 5
     },
-    "status_en": "Second paper fee payment and document submission notice released",
-    "status_hi": "द्वितीय पेपर शुल्क भुगतान और दस्तावेज जमा करने का नोटिस जारी",
-    "summary_en": "UKPSC has released a notification regarding fee payment and document submission for qualified candidates of the English shorthand exam for the High Court Personal Assistant Examination 2025. Candidates must pay the exam fee and submit self-attested documents by 29 Nov 2026.",
-    "summary_hi": "UKPSC ने उच्च न्यायालय वैक्तिक सहायक परीक्षा 2025 की अंग्रेजी आशुलिपि परीक्षा में सफल अभ्यर्थियों के लिए शुल्क भुगतान और दस्तावेज जमा करने से संबंधित अधिसूचना जारी की है। अभ्यर्थियों को 29 नवबंर 2026 तक परीक्षा शुल्क का भुगतान करना होगा और स्व-प्रमाणित दस्तावेज जमा करने होंगे।",
-    "vacancies": [],
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "UKPSC has released a notification regarding fee payment and document submission for qualified candidates of the English shorthand exam for the High Court Personal Assistant Examination 2025. Qualified candidates must pay the exam fee and submit hard copies of their application form along with self-attested documents by 29 November 2026.",
+    "summary_hi": "UKPSC ने उच्च न्यायालय वैयक्तिक सहायक परीक्षा 2025 की अंग्रेजी आशुलिपि परीक्षा में सफल अभ्यर्थियों के लिए शुल्क भुगतान और दस्तावेज जमा करने से संबंधित अधिसूचना जारी कर दी है। सफल अभ्यर्थियों को 29 नवंबर 2026 तक परीक्षा शुल्क का भुगतान करना होगा और अपने दस्तावेजों की स्वप्रमाणित प्रतियों के साथ आवेदन पत्र आयोग कार्यालय में जमा करना होगा।",
+    "vacancies": [
+      {
+        "detail_en": "Provisionally qualified candidates in English shorthand test",
+        "detail_hi": "अंग्रेजी आशुलेखन परीक्षा में औपबन्धिक रूप से सफल अभ्यर्थी",
+        "post_en": "Personal Assistant (Private Secretary) - High Court",
+        "post_hi": "वैयक्तिक सहायक (प्राइवेट সেক্রেটারি) - उच्च न्यायालय",
+        "total": "05 (Provisionally Qualified)"
+      }
+    ],
     "video_url": null,
     "who_en": [
-      "Candidates provisionally declared successful in the English Shorthand Examination of High Court Personal Assistant Exam 2025."
+      "Candidates who have provisionally qualified the English shorthand exam for the UKPSC High Court Personal Assistant Exam 2025"
     ],
     "who_hi": [
-      "उच्च न्यायालय वैक्तिक सहायक परीक्षा 2025 की अंग्रेजी आशुलिपि परीक्षा में औपबंधिक रूप से सफल घोषित अभ्यर्थी।"
+      "वे अभ्यर्थी जो UKPSC उच्च न्यायालय वैयक्तिक सहायक परीक्षा 2025 की अंग्रेजी आशुलेखन परीक्षा में औपबन्धिक रूप से सफल हुए हैं"
     ]
   },
   "pdf": {
@@ -278,10 +304,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-06T11:47:05Z",
-  "qual": [
-    "graduate"
-  ],
-  "rewrite": true,
   "slug": "ukpsc-high-court-personal-assistant-exam-2025-second-paper-fee-a",
   "source_id": "ukpsc-home",
   "status": "approved",

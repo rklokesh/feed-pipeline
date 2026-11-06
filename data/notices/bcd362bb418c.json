@@ -35,12 +35,10 @@
   "org": "MPPSC",
   "page": {
     "after_en": [
-      "Check the rejection lists for your roll number.",
-      "Follow further instructions from MPPSC if any representation window is provided."
+      "The commission will proceed with the remaining eligible candidates for interviews."
     ],
     "after_hi": [
-      "अपने रोल नंबर के लिए निरस्तीकरण सूचियाँ देखें।",
-      "यदि कोई अभ्यावेदन अवधि दी गई है तो मप्रलोसे के निर्देशों का पालन करें।"
+      "आयोग साक्षात्कार के लिए शेष पात्र अभ्यर्थियों के साथ आगे की प्रक्रिया जारी रखेगा।"
     ],
     "age": [],
     "apply_start": null,
@@ -48,21 +46,39 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Keep your application number and roll number ready.",
-      "Verify your candidature status from the official PDF."
+      "Check the official notice PDF for your roll number",
+      "Verify application numbers of rejected candidates"
     ],
     "checklist_hi": [
-      "अपना आवेदन क्रमांक और रोल नंबर तैयार रखें।",
-      "आधिकारिक पीडीएफ से अपनी उम्मीदवारी की स्थिति की जांच करें।"
+      "अपने अनुक्रमांक के लिए आधिकारिक सूचना पीडीएफ देखें",
+      "निरस्त किए गए अभ्यर्थियों के आवेदन क्रमांक का मिलान करें"
     ],
     "conducted_by_en": "Madhya Pradesh Public Service Commission (MPPSC)",
     "conducted_by_hi": "मध्य प्रदेश लोक सेवा आयोग (मप्रलोसे)",
     "dates": [
       {
-        "label_en": "Notice issuance date",
+        "label_en": "Original application last date",
+        "label_hi": "मूल आवेदन की अंतिम तिथि",
+        "value_en": "10 Apr 2025",
+        "value_hi": "10 अप्रै 2025"
+      },
+      {
+        "label_en": "Written exam result date",
+        "label_hi": "लिखित परीक्षा परिणाम दिनांक",
+        "value_en": "31 Oct 2025",
+        "value_hi": "31 अक्तू 2025"
+      },
+      {
+        "label_en": "Document submission last date",
+        "label_hi": "दस्तावेज़ जमा करने की अंतिम तिथि",
+        "value_en": "21 Nov 2025",
+        "value_hi": "21 नवम् 2025"
+      },
+      {
+        "label_en": "Notice issue date",
         "label_hi": "सूचना जारी होने की तिथि",
         "value_en": "05 Nov 2026",
-        "value_hi": "05.11.2026"
+        "value_hi": "05 नवम् 2026"
       }
     ],
     "documents_en": [],
@@ -72,45 +88,57 @@
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is an official notification by MPPSC listing the candidates whose applications for the Assistant Professor Physics Exam 2024 have been rejected along with the specific reasons for rejection.",
-        "a_hi": "यह मप्रलोसे द्वारा जारी एक आधिकारिक सूचना है जिसमें सहायक प्राध्यापक भौतिकशास्त्र परीक्षा 2024 के लिए उन उम्मीदवारों की सूची दी गई है जिनके आवेदन निरस्तीकरण के कारणों के साथ खारिज कर दिए गए हैं।",
-        "q_en": "What is MPPSC Assistant Professor Physics Exam 2024 Candidature Rejection Notice?",
-        "q_hi": "मप्रलोसे सहायक प्राध्यापक भौतिकशास्त्र परीक्षा 2024 उम्मीदवारी निरस्तीकरण सूचना क्या है?"
+        "a_en": "It is an official notification issued by the Madhya Pradesh Public Service Commission listing the candidates whose candidatures have been cancelled because they failed to submit their documents within the stipulated time after the written exam result.",
+        "a_hi": "यह मध्य प्रदेश लोक सेवा आयोग द्वारा जारी एक आधिकारिक सूचना है जिसमें उन अभ्यर्थियों की सूची दी गई है जिनकी उम्मीदवारी लिखित परीक्षा परिणाम के बाद तय समय सीमा के भीतर दस्तावेज जमा न करने के कारण रद्द कर दी गई है।",
+        "q_en": "What is the MPPSC Assistant Professor Physics Candidature Rejection Notice?",
+        "q_hi": "मप्रलोसे सहायक प्राध्यापक भौतिकशास्त्र उम्मीदवारी निरस्तीकरण सूचना क्या है?"
       }
     ],
     "extra": [],
     "faq": [
       {
-        "a_en": "The notice was released on 05 November 2026.",
-        "a_hi": "यह सूचना 05 नवंबर 2026 को जारी की गई थी।",
-        "q_en": "When was the MPPSC Assistant Professor Physics rejection notice released?",
-        "q_hi": "मप्रलोसे सहायक प्राध्यापक भौतिकशास्त्र निरस्तीकरण सूचना कब जारी की गई थी?"
+        "a_en": "The candidature was rejected because the candidates either did not submit their required documents to the MPPSC office or submitted them after the last date.",
+        "a_hi": "उम्मीदवारी इसलिए निरस्त की गई क्योंकि अभ्यर्थियों ने या तो मप्रलोसे कार्यालय में अपने आवश्यक दस्तावेज जमा नहीं किए या अंतिम तिथि के बाद भेजे।",
+        "q_en": "Why was the candidature rejected for these candidates?",
+        "q_hi": "इन अभ्यर्थियों की उम्मीदवारी क्यों निरस्त की गई?"
       },
       {
-        "a_en": "This notice pertains to the Assistant Professor (Physics) Exam 2024 under Advertisement No. 20/2024.",
-        "a_hi": "यह सूचना विज्ञापन क्रमांक 20/2024 के अंतर्गत सहायक प्राध्यापक (भौतिकशास्त्र) परीक्षा - 2024 से संबंधित है।",
-        "q_en": "Which exam does this notice pertain to?",
-        "q_hi": "यह सूचना किस परीक्षा से संबंधित है?"
+        "a_en": "A total of 32 candidates' candidatures have been rejected in this notice.",
+        "a_hi": "इस सूचना में कुल 32 अभ्यर्थियों की उम्मीदवारी निरस्त की गई है।",
+        "q_en": "How many candidates' candidatures were rejected?",
+        "q_hi": "इस सूचना में कुल कितने अभ्यर्थियों की उम्मीदवारी निरस्त की गई है?"
+      },
+      {
+        "a_en": "The last date to submit documents to the commission office was 21 November 2025.",
+        "a_hi": "आयोग कार्यालय में दस्तावेज जमा करने की अंतिम तिथि 21 नवंबर 2025 थी।",
+        "q_en": "What was the last date to submit documents for the exam?",
+        "q_hi": "परीक्षा के लिए दस्तावेज जमा करने की अंतिम तिथि क्या थी?"
+      },
+      {
+        "a_en": "The notice was issued by the Madhya Pradesh Public Service Commission (MPPSC).",
+        "a_hi": "यह सूचना मध्य प्रदेश लोक सेवा आयोग (मप्रलोसे) द्वारा जारी की गई है।",
+        "q_en": "Which board issued this rejection notice?",
+        "q_hi": "यह निरस्तीकरण सूचना किस बोर्ड ने जारी की है?"
       }
     ],
     "fees": [],
     "h1_en": "MPPSC Assistant Professor Physics Exam 2024 Candidature Rejection Notice",
     "h1_hi": "मप्रलोसे सहायक प्राध्यापक भौतिकशास्त्र परीक्षा 2024 उम्मीदवारी निरस्तीकरण सूचना",
-    "hindi_notice_url": null,
+    "hindi_notice_url": "https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Candidature_Rejection_Assistant_Professor_Physics_Exam_2024_Dated_05_11_20261.pdf",
     "how_en": [
       "Visit the official MPPSC website.",
-      "Go to the Notifications/Advertisement section.",
-      "Click on the Candidature Rejection Notice for Assistant Professor Physics Exam 2024.",
-      "Check your roll number and application number in the provided lists."
+      "Go to the notices or advertisements section.",
+      "Download the Assistant Professor Physics Exam 2024 Candidature Rejection Notice dated 05.11.2026.",
+      "Check your roll number and application number in the list of rejected candidates."
     ],
     "how_hi": [
       "मप्रलोसे की आधिकारिक वेबसाइट पर जाएं।",
-      "नोटिफिकेशन/विज्ञापन अनुभाग में जाएं।",
-      "सहायक प्राध्यापक भौतिकशास्त्र परीक्षा 2024 उम्मीदवारी निरस्तीकरण सूचना पर क्लिक करें।",
-      "दी गई सूचियों में अपना रोल नंबर और आवेदन क्रमांक देखें।"
+      "सूचना या विज्ञापन अनुभाग में जाएं।",
+      "दिनांक 05.11.2026 की सहायक प्राध्यापक भौतिकशास्त्र परीक्षा 2024 उम्मीदवारी निरस्तीकरण सूचना डाउनलोड करें।",
+      "निरस्त किए गए अभ्यर्थियों की सूची में अपना अनुक्रमांक और आवेदन क्रमांक जांचें।"
     ],
-    "intro_en": "The Madhya Pradesh Public Service Commission (MPPSC) has published an official notice regarding the rejection of candidature for the Assistant Professor (Physics) Exam 2024. Candidates who applied under Advertisement No. 20/2024 can check their candidature status. The notice details the lists of candidates whose applications were rejected due to various deficiencies such as lack of required educational qualifications, age limits, or failure to submit necessary documents within the stipulated time.",
-    "intro_hi": "मध्य प्रदेश लोक सेवा आयोग (मप्रलोसे) ने सहायक प्राध्यापक (भौतिकशास्त्र) परीक्षा - 2024 के पदों हेतु उम्मीदवारी निरस्त किए जाने के संबंध में आधिकारिक सूचना जारी की है। विज्ञापन क्रमांक 20/2024 के अंतर्गत आवेदन करने वाले उम्मीदवार अपना उम्मीदवारी स्टेटस देख सकते हैं। इस सूचना में उन उम्मीदवारों की सूचियाँ दी गई हैं जिनके आवेदन आवश्यक शैक्षणिक योग्यता, आयु सीमा या तय समय में दस्तावेज जमा न करने के कारण निरस्त कर दिए गए हैं।",
+    "intro_en": "The Madhya Pradesh Public Service Commission (MPPSC) has issued a notification regarding the rejection of candidature for the Assistant Professor (Physics) Exam 2024. A total of 32 candidates have had their candidature cancelled because they either failed to submit their required documents to the commission office or submitted them after the prescribed deadline of 21 November 2025. Candidates who appeared in the written exam result can check the official notice for the list of rejected roll numbers and application numbers.",
+    "intro_hi": "मध्य प्रदेश लोक सेवा आयोग (मप्रलोसे) ने सहायक प्राध्यापक (भौतिकशास्त्र) परीक्षा 2024 के लिए उम्मीदवारी निरस्त किए जाने संबंधी सूचना जारी की है। कुल 32 अभ्यर्थियों की उम्मीदवारी रद्द कर दी गई है क्योंकि उन्होंने या तो आयोग कार्यालय में अपने आवश्यक दस्तावेज प्रस्तुत नहीं किए या निर्धारित अंतिम तिथि 21 नवंबर 2025 के बाद भेजे। लिखित परीक्षा परिणाम में शामिल अभ्यर्थी निरस्त किए गए अनुक्रमांक और आवेदन क्रमांक की सूची देखने के लिए आधिकारिक सूचना देख सकते हैं।",
     "last_date": null,
     "mistakes_en": [],
     "mistakes_hi": [],
@@ -122,46 +150,66 @@
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Exam Name",
-        "label_hi": "परीक्षा का नाम",
-        "value_en": "Assistant Professor (Physics) Exam 2024",
-        "value_hi": "सहायक प्राध्यापक (भौतिकशास्त्र) परीक्षा - 2024"
+        "label_en": "Post name",
+        "label_hi": "पद का नाम",
+        "value_en": "Assistant Professor (Physics)",
+        "value_hi": "सहायक प्राध्यापक (भौतिकशास्त्र)"
       },
       {
-        "label_en": "Notice Date",
-        "label_hi": "सूचना दिनांक",
-        "value_en": "05 Nov 2026",
-        "value_hi": "05.11.2026"
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "186",
+        "value_hi": "186"
       },
       {
-        "label_en": "Advertisement Number",
+        "label_en": "Advertisement number",
         "label_hi": "विज्ञापन क्रमांक",
         "value_en": "20/2024",
         "value_hi": "20/2024"
+      },
+      {
+        "label_en": "Notice date",
+        "label_hi": "सूचना दिनांक",
+        "value_en": "05 Nov 2026",
+        "value_hi": "05 नवम् 2026"
       }
     ],
     "salary": [],
-    "selection_en": [],
-    "selection_hi": [],
+    "selection_en": [
+      "Written Examination",
+      "Document Verification / Interview"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा",
+      "दस्तावेज़ सत्यापन / साक्षात्कार"
+    ],
     "share_card": {
       "headline_en": "Candidature Rejected",
       "headline_hi": "उम्मीदवारी निरस्त",
-      "kind": "job",
+      "kind": "corr",
       "line_en": "Assistant Professor Physics",
       "line_hi": "सहायक प्राध्यापक भौतिकशास्त्र",
-      "posts": null
+      "posts": 186
     },
-    "status_en": "Candidature rejection lists released",
-    "status_hi": "उम्मीदवारी निरस्तीकरण सूचियाँ जारी",
-    "summary_en": "MPPSC has released a notice regarding the rejection of candidature for the Assistant Professor Physics Exam 2024. Candidates can check the lists of rejected applications and reasons for rejection.",
-    "summary_hi": "मप्रलोसे द्वारा सहायक प्राध्यापक भौतिकशास्त्र परीक्षा 2024 के लिए उम्मीदवारी निरस्त किए जाने संबंधी सूचना जारी की गई है। उम्मीदवार निरस्त आवेदनों की सूची और कारण देख सकते हैं।",
-    "vacancies": [],
+    "status_en": "Candidature rejected for 32 candidates",
+    "status_hi": "32 अभ्यर्थियों की उम्मीदवारी निरस्त",
+    "summary_en": "MPPSC has released a notice regarding the rejection of candidature for 32 candidates in the Assistant Professor Physics Exam 2024 due to non-submission of documents or late submission after the deadline.",
+    "summary_hi": "मध्य प्रदेश लोक सेवा आयोग ने दस्तावेज प्रस्तुत न करने या निर्धारित तिथि के बाद भेजने के कारण सहायक प्राध्यापक भौतिकशास्त्र परीक्षा 2024 के 32 अभ्यर्थियों की उम्मीदवारी निरस्त किए जाने संबंधी सूचना जारी की है।",
+    "vacancies": [
+      {
+        "detail_en": "UR 73, SC 30, ST 49, OBC 52, EWS 19",
+        "detail_hi": "अनारक्षित 73, अजा 30, अजजा 49, अन्य पिछड़ा वर्ग 52, ईडब्ल्यूएस 19",
+        "post_en": "Assistant Professor (Physics)",
+        "post_hi": "सहायक प्राध्यापक (भौतिकशास्त्र)",
+        "total": "186"
+      }
+    ],
     "video_url": null,
     "who_en": [
-      "Candidates who applied for the MPPSC Assistant Professor Physics Exam 2024."
+      "Candidates who applied for MPPSC Assistant Professor Physics Exam 2024"
     ],
     "who_hi": [
-      "मप्रलोसे सहायक प्राध्यापक भौतिकशास्त्र परीक्षा 2024 के लिए आवेदन करने वाले उम्मीदवार।"
+      "मप्रलोसे सहायक प्राध्यापक भौतिकशास्त्र परीक्षा 2024 के लिए आवेदन करने वाले अभ्यर्थी"
     ]
   },
   "pdf": {
@@ -171,10 +219,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-06T08:23:40Z",
-  "qual": [
-    "postgraduate"
-  ],
-  "rewrite": true,
   "slug": "mppsc-assistant-professor-physics-exam-2024-candidature-rejectio",
   "source_id": "mppsc-home",
   "status": "approved",
