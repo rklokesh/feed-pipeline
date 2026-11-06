@@ -1,8 +1,15 @@
-# Review queue — 2 pending
+# Review queue — 9 pending
 
-_Updated 2026-11-06T10:03:19+00:00_
+_Updated 2026-11-06T11:14:15+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-11-06 | DSSSB | result | Notice: - Declaration of Result for Skill Test (Typing Test) held on 26.07.2026 for the po | — | — | — | — | [open](https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/42_24.pdf) |
-| 2026-11-06 | RSSB Rajasthan | other | 06-11-2026 - Conductor 2024 : Office Order Regarding Document Verification of Absent Candi | — | — | — | — | [open](https://rssb.rajasthan.gov.in/storage/news_item/1793957326.pdf) |
+| 2026-11-06 | UKPSC | other | 1 {"meta_value":"Uttarakhand Public Service Commission"} 06-11-2026 06-11-2026 06-11-2026  | — | — | — | — | [open](https://psc.uk.gov.in/public/uploads/results/1511636470.pdf) |
+| 2026-11-06 | WBPSC | update | CORRIGENDUM NOTICE IN CONNECTION WITH RECRUITMENT TO THE POSTS OF ASSISTANT TRANSLATOR IN  | — | — | — | — | [open](https://psc.wb.gov.in/Download?param1=20261106162857_Schedule_PhaseI_MSRE23.pdf&param2=advertisement) |
+| 2026-11-06 | UKPSC | other | 1 {"meta_value":"Uttarakhand Public Service Commission"} 06-11-2026 06-11-2026 06-11-2026  | — | — | — | — | [open](https://psc.uk.gov.in/public/uploads/results/530698351.pdf) |
+| 2026-11-06 | UKPSC | other | 1 {"meta_value":"Uttarakhand Public Service Commission"} 06-11-2026 06-11-2026 26-11-2026  | — | — | — | — | [open](https://psc.uk.gov.in/public/uploads/recruitment/1491761318.pdf) |
+| 2026-11-06 | WBPSC | update | CORRIGENDUM NOTICE IN CONNECTION WITH RECRUITMENT TO THE POSTS OF ASSISTANT TRANSLATOR IN  | — | — | — | — | [open](https://psc.wb.gov.in/Download?param1=An_20261106163344_MSRE23_IM.pdf&param2=advertisement) |
+| 2026-11-06 | UKPSC | other | 1 {"meta_value":"Uttarakhand Public Service Commission"} 06-11-2026 06-11-2026 26-11-2026  | — | — | — | — | [open](https://psc.uk.gov.in/public/uploads/recruitment/2028872574.pdf) |
+| 2026-11-06 | UKPSC | other | 1 {"meta_value":"Uttarakhand Public Service Commission"} 06-11-2026 06-11-2026 06-11-2026  | — | — | — | — | [open](https://psc.uk.gov.in/public/uploads/results/646750463.pdf) |
+| 2026-11-06 | RSSB Rajasthan | other | 06-11-2026 - Basic and Senior Computer Instructor 2026 : Office Order Regarding Online Scr | — | — | — | — | [open](https://rssb.rajasthan.gov.in/storage/news_item/1793962912.pdf) |
+| 2026-11-06 | UKPSC | result | 1 {"meta_value":"Uttarakhand Public Service Commission"} 06-11-2026 06-11-2026 06-11-2026  | — | — | — | — | [open](https://psc.uk.gov.in/public/uploads/results/1555266049.pdf) |
