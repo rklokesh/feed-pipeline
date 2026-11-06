@@ -478,8 +478,9 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
    contain: strict). Only manual Google AdSense units go here; Auto ads, anchor and vignette ads stay OFF in AdSense.
    Until AdSense is approved each box shows our own Telegram card. ===== */
 .adslot { margin: 32px auto; width: 100%; max-width: 728px; }
+.adslot.atop { margin: 8px auto 28px; }
 .adslot .adl { font-size: .6875rem; letter-spacing: .04em; color: var(--grey); text-align: center; margin: 0 0 6px; }
-.adslot .adbox { position: relative; height: 90px; width: 100%; margin: 0 auto; border-radius: 12px; overflow: hidden; contain: strict;
+.adslot .adbox { position: relative; height: 90px; width: 100%; margin: 0 auto; border-radius: 0; overflow: hidden; contain: strict;
   background: var(--soft); display: grid; place-items: center; }
 .adslot .adbox > * { max-width: 100%; max-height: 100%; }
 .adslot .house { display: flex; align-items: center; gap: 10px; padding: 0 16px; color: var(--ink); text-decoration: none; font-size: .9375rem; text-align: center; }
@@ -565,6 +566,7 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
     <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
+  <div class="adslot slim atop" data-ad="home-top"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox"><a class="house" href="https://t.me/sarkarichart" target="_blank" rel="noopener"><img src="/telegram.svg" alt="" width="22" height="22"><span data-t="adHouse">Get every new govt job alert on Telegram, free</span></a></div></div>
 
   <main>
     <h1 class="hubh"><span class="x-en">UP govt jobs 2026</span><span class="x-hi" lang="hi">यूपी सरकारी नौकरी 2026</span></h1>
@@ -591,7 +593,6 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
     <div class="tscroll" id="tscroll">
     <div class="row head"><span class="hide-sm" data-t="hPosted">Posted</span><span data-t="hNotice">Notice</span><span class="hide-sm" data-t="hOrg">Organisation</span><span class="hide-sm" data-t="hType">Type</span><span data-t="hLast">Last date</span><span class="hide-sm" data-t="hPdf">PDF</span></div>
     <ul class="list" id="list"></ul>
-    <template id="adtpl"><div class="adslot" data-ad="home-feed"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox"><a class="house" href="https://t.me/sarkarichart" target="_blank" rel="noopener"><img src="/telegram.svg" alt="" width="22" height="22"><span data-t="adHouse">Get every new govt job alert on Telegram, free</span></a></div></div></template>
     </div>
     <div class="more" id="more" hidden></div>
   </main>
@@ -1252,9 +1253,6 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
     document.getElementById("list").innerHTML = rows.slice(0, shown).map(i =>
       `<li class="lr${isNew(i) ? " fresh" : ""}"${i.e && i.type === "Job" && i.last && left(i.last) >= 0 ? ` data-e="${esc(JSON.stringify(i.e))}"` : ""}><a class="row" href="${i.url}"${i.page ? "" : ' target="_blank" rel="noopener"'}><span class="num hide-sm"><span class="pc"><span>${soonView ? lastCell(i) : fmt(i.posted)}</span><span class="slot">${isNew(i) ? `<img class="newtag" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" data-tip="${t("newTip")}" width="23" height="14">` : ""}</span><span class="siren-r">${inCat(i, "soon") ? SIREN() : ""}</span></span></span><span class="t" data-full="${esc(title(i))}">${i.tr ? FIRE() : ""}${inCat(i, "soon") ? SIREN().replace('class="rsiren"', 'class="rsiren show-sm"') : ""}${isNew(i) ? `<img class="newtag show-sm" src="/new-${lang === "hi" ? "hi" : "en"}.png" alt="${t("newBadge")}" data-tip="${t("newTip")}" width="23" height="14">` : ""}${esc(title(i))}</span><span class="hide-sm g cut" data-full="${esc(org(i) || "")}">${esc(org(i) || "")}</span><span class="hide-sm g cut" data-full="${esc(t(i.type))}">${t(i.type)}</span><span class="num" style="white-space:nowrap">${soonView ? `<span class="hide-sm g">${fmt(i.posted)}</span><span class="show-sm">${lastCell(i)}</span>` : lastCell(i)}</span></a>${pdfOf(i) ? `<a class="pdf hide-sm" href="${pdfOf(i)}" download aria-label="${t("pdfAria")}: ${esc(title(i))}">${DL}${PDFICON}</a>` : '<span class="pdf hide-sm g">—</span>'}</li>`
     ).join("") || `<li class="empty">${q ? esc(t("none")(q)) : t("empty")}</li>`;
-    // one ad space inside the list, after the 10th notice (never at the top, never between tabs and the first rows)
-    const L = document.getElementById("list"), lrs = L.querySelectorAll("li.lr");
-    if (lrs.length > 14) lrs[9].insertAdjacentHTML("afterend", `<li class="adrow">${document.getElementById("adtpl").innerHTML}</li>`);
     // One long page, revealed 50 rows at a time (no "page 2"): Ctrl+F, search and the back button keep working.
     const more = document.getElementById("more");
     more.hidden = allRows.length <= shown;
