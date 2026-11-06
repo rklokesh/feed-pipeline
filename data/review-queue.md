@@ -1,9 +1,11 @@
-# Review queue — 16 pending
+# Review queue — 18 pending
 
-_Updated 2026-11-06T07:01:18+00:00_
+_Updated 2026-11-06T07:29:49+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-06 | UKPSC | other | 1 {"meta_value":"Uttarakhand Public Service Commission"} 06-11-2026 05-12-2026 | — | — | — | — | [open](https://psc.uk.gov.in/public/uploads/recruitment/1966650247.pdf) |
+| 2026-11-06 | MPPSC | other | सहायक प्राध्‍यापक (भौतिकशास्‍त्र) परीक्षा - 2024 के पद हेतु उम्‍मीदवारी निरस्‍त किए जाने स | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Candidature_Rejection_Assistant_Professor_Physics_Exam_2024_Dated_05_11_20261.pdf) |
 | 2026-11-06 | ITBP | notification | FOR WEBSITE FUNCTIONALITY TEST ONLY (DO NOT APPLY)- IT IS ONLY FOR WEBSITE TESTING | — | — | — | — | [open](https://recruitment.itbpolice.nic.in/noticeboards/downloadpdf/369.pdf) |
 | 2026-11-06 | NTA | notification | Correction in the particulars of the Online Application Form of Study Webs of Active Learn | — | — | — | — | [open](https://nta.ac.in/Download/Notice/Notice_20261106103320.pdf) |
 | 2026-11-06 | RRB | other | RRB CEN 09/2025: pdf | — | — | — | — | [open](https://rrb.indianrailways.gov.in/-/image/1793938461668123456.pdf/examsDocuments) |
