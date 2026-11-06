@@ -1,0 +1,27 @@
+{
+  "board_url": "https://ssc.gov.in/home/notice-board",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "mentioned below: - 3.1. Visit the official website of SSC: https://ssc.gov.in/. 3.2. Click on the hyperlink titled “JOIN INDIAN COAST GUARD” available on the w",
+      "source": "rule",
+      "value": "https://ssc.gov.in/"
+    }
+  },
+  "first_seen": "2026-11-06T11:44:23+00:00",
+  "id": "2ffd251827cc",
+  "kind": "admit_card",
+  "org": "SSC",
+  "pdf": {
+    "bytes": 239730,
+    "pages": 1,
+    "sha256": "69bae419209f0b696160781520f74448d87c315c6b0e56e5b45f005922508368",
+    "text_kind": "text"
+  },
+  "source_id": "ssc-notice-board",
+  "status": "pending_review",
+  "title": "Information regarding city of examination and Admit Card for the candidates of CGEPT-01/27 and 02/27 batches",
+  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Englishnotice_06112026.pdf"
+}
