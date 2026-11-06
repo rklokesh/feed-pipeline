@@ -498,7 +498,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
     <div class="tabrow">
     <div class="tabs" role="group" data-t-aria="show">
       <button type="button" data-cat="all" aria-pressed="true"><span data-t="all">All</span><span class="c"></span></button>
-      <button type="button" data-cat="trend" aria-pressed="false"><span data-t="trend">Trending</span><picture class="fire" aria-hidden="true"><source srcset="/fire-still.png" media="(prefers-reduced-motion: reduce)"><img src="/fire.webp" width="16" height="16" alt=""></picture><span class="c"></span></button>
+      <button type="button" data-cat="trend" aria-pressed="false"><span data-t="trend">Trending</span><picture class="fire" aria-hidden="true"><source srcset="/fire-2-still.png" media="(prefers-reduced-motion: reduce)"><img src="/fire-2.webp" width="16" height="16" alt=""></picture><span class="c"></span></button>
       <button type="button" data-cat="Job" aria-pressed="false"><span data-t="jobs">Jobs</span><span class="c"></span></button>
       <button type="button" data-cat="soon" aria-pressed="false"><span data-t="soon">Closing soon</span><picture class="siren" aria-hidden="true"><source srcset="/siren-still.png" media="(prefers-reduced-motion: reduce)"><img src="/siren.webp" width="16" height="16" alt="" decoding="async"></picture><span class="c"></span></button>
       <button type="button" data-cat="Admit card" aria-pressed="false"><span data-t="admits">Admit cards</span><span class="c"></span></button>
@@ -1041,7 +1041,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
   // Closing-soon rows carry the same flashing siren as the tab (same slot and size as the NEW arrow)
   // small icons in rows; hovering shows what they mean
   const SIREN = () => `<picture class="rsiren"><source srcset="/siren-still.png" media="(prefers-reduced-motion: reduce)"><img src="/siren.webp" width="14" height="14" alt="${esc(t("soon"))}" title="${esc(t("soon"))}" decoding="async"></picture>`;
-  const FIRE = () => `<picture class="rfire"><source srcset="/fire-still.png" media="(prefers-reduced-motion: reduce)"><img src="/fire.webp" width="14" height="14" alt="${esc(t("trend"))}" title="${esc(t("trend"))}" decoding="async"></picture>`;
+  const FIRE = () => `<picture class="rfire"><source srcset="/fire-2-still.png" media="(prefers-reduced-motion: reduce)"><img src="/fire-2.webp" width="14" height="14" alt="${esc(t("trend"))}" title="${esc(t("trend"))}" decoding="async"></picture>`;
   // "Closing soon" = open jobs whose last date is within a week (listed newest first, like every tab; the days-left column shows urgency).
   const SOON_DAYS = 7;
   const inCat = (i, c) => c === "all" ? true : c === "trend" ? !!i.tr : c === "soon" ? i.type === "Job" && !!i.last && left(i.last) <= SOON_DAYS : i.type === c;

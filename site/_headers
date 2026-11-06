@@ -7,10 +7,10 @@
 # Static images/icons: cache for a week (names are stable; HTML stays no-cache so changes show at once)
 /*.png
   ! Cache-Control
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
 /*.webp
   ! Cache-Control
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
 /*.svg
   ! Cache-Control
   Cache-Control: public, max-age=604800
