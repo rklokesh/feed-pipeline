@@ -1,21 +1,235 @@
 {
+  "auto_published": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "medium",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Various Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Railway Recruitment Board has extended the closing date for online applications under CEN 06/2026. Check the official notification for details.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने सीईएन 06/2026 के तहत ऑनलाइन आवेदन की अंतिम तिथि बढ़ा दी है। विवरण के लिए आधिकारिक अधिसूचना देखें।",
+    "title_en": "RRB CEN 06/2026 Last Date Extended 2026 – Apply Online",
+    "title_hi": "आरआरबी सीईएन 06/2026 अंतिम तिथि बढ़ाई गई 2026 – ऑनलाइन आवेदन",
+    "type": "Job",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": null,
+    "age_min": null,
+    "age_on": null,
+    "domicile": null,
+    "qual": null,
+    "relax": {}
+  },
+  "exam": {
+    "key": "rrb-section-controller-2026",
+    "name_en": "RRB Section Controller 2026",
+    "name_hi": "आरआरबी सेक्शन कंट्रोलर 2026"
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-06T13:44:47+00:00",
   "id": "3494f676a84c",
+  "issue": 1158,
+  "issue_tidy": true,
   "kind": "update",
+  "notice_date": "2026-11-06",
   "org": "RRB",
+  "page": {
+    "after_en": [
+      "Processing of applications",
+      "Release of exam schedule or admit card"
+    ],
+    "after_hi": [
+      "आवेदन की प्रक्रिया",
+      "परीक्षा कार्यक्रम या एडमिट कार्ड जारी होना"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://rrb.indianrailways.gov.in/",
+    "changes": [
+      {
+        "new_en": "Extended (Refer official PDF)",
+        "new_hi": "बढ़ाई गई (आधिकारिक पीडीएफ देखें)",
+        "old_en": "As per initial notice",
+        "old_hi": "प्रारंभिक सूचना के अनुसार",
+        "what_en": "Closing date for online applications",
+        "what_hi": "ऑनलाइन आवेदन के लिए अंतिम तिथि"
+      }
+    ],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Verify eligibility criteria",
+      "Keep scanned documents ready",
+      "Submit online application before the extended deadline"
+    ],
+    "checklist_hi": [
+      "पात्रता मापदंडों को सत्यापित करें",
+      "स्कैन किए गए दस्तावेज तैयार रखें",
+      "बढ़ी हुई समय सीमा से पहले ऑनलाइन आवेदन जमा करें"
+    ],
+    "conducted_by_en": "Railway Recruitment Board (RRB)",
+    "conducted_by_hi": "रेलवे भर्ती बोर्ड (आरआरबी)",
+    "dates": [
+      {
+        "label_en": "Notice regarding date extension",
+        "label_hi": "तिथि विस्तार से संबंधित सूचना",
+        "value_en": "As per official notification",
+        "value_hi": "आधिकारिक अधिसूचना के अनुसार"
+      }
+    ],
+    "documents_en": [
+      "Educational certificates",
+      "Identity proof",
+      "Category certificate (if applicable)",
+      "Photograph and signature"
+    ],
+    "documents_hi": [
+      "शैक्षिक प्रमाण पत्र",
+      "पहचान प्रमाण",
+      "श्रेणी प्रमाण पत्र (यदि लागू हो)",
+      "फोटो और हस्ताक्षर"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Qualification",
+        "label_hi": "योग्यता",
+        "value_en": "As per original CEN 06/2026 notification",
+        "value_hi": "मूल सीईएन 06/2026 अधिसूचना के अनुसार"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is an official notice issued by the Railway Recruitment Board extending the final deadline for candidates to submit their online applications for CEN 06/2026.",
+        "a_hi": "यह रेलवे द्वारा जारी एक आधिकारिक सूचना है जो उम्मीदवारों को सीईएन 06/2026 के लिए अपने ऑनलाइन आवेदन जमा करने की अंतिम समय सीमा को बढ़ाती है।",
+        "q_en": "What is RRB CEN 06/2026 application extension?",
+        "q_hi": "आरआरबी सीईएन 06/2026 आवेदन विस्तार क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "This notice announces the extension of the closing date for online applications under CEN 06/2026.",
+        "a_hi": "यह सूचना सीईएन 06/2026 के तहत ऑनलाइन आवेदन की अंतिम तिथि बढ़ाए जाने की घोषणा करती है।",
+        "q_en": "What is the notice about for RRB CEN 06/2026?",
+        "q_hi": "आरआरबी सीईएन 06/2026 के लिए सूचना किस बारे में है?"
+      },
+      {
+        "a_en": "The notice has been issued by the Railway Recruitment Board (RRB).",
+        "a_hi": "यह विस्तार सूचना रेलवे भर्ती बोर्ड (आरआरबी) द्वारा जारी की गई है।",
+        "q_en": "Who has issued this extension notice?",
+        "q_hi": "यह विस्तार सूचना किसने जारी की है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "RRB CEN 06/2026 Last Date Extended 2026 – Apply Online",
+    "h1_hi": "आरआरबी सीईएन 06/2026 अंतिम तिथि बढ़ाई गई 2026 – ऑनलाइन आवेदन",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official RRB website.",
+      "Click on the CEN 06/2026 application link.",
+      "Fill out the application form before the extended last date.",
+      "Submit the required fee and take a printout for future reference."
+    ],
+    "how_hi": [
+      "आधिकारिक आरआरबी वेबसाइट पर जाएं।",
+      "सीईएन 06/2026 आवेदन लिंक पर क्लिक करें।",
+      "बढ़ी हुई अंतिम तिथि से पहले आवेदन पत्र भरें।",
+      "आवश्यक शुल्क जमा करें और भविष्य के संदर्भ के लिए प्रिंटआउट लें।"
+    ],
+    "intro_en": "Railway Recruitment Board (RRB) has officially announced the extension of the closing date for online applications under CEN 06/2026. This notice is applicable for candidates seeking employment under this specific employment notification. Applicants should review the revised schedule and complete their online submissions on time. Only official RRB guidelines apply to this recruitment process.",
+    "intro_hi": "रेलवे भर्ती बोर्ड (आरआरबी) ने आधिकारिक तौर पर सीईएन 06/2026 के तहत ऑनलाइन आवेदन की अंतिम तिथि बढ़ाने की घोषणा की है। यह सूचना इस विशिष्ट रोजगार अधिसूचना के तहत रोजगार चाहने वाले उम्मीदवारों के लिए लागू है। आवेदकों को संशोधित अनुसूची की समीक्षा करनी चाहिए और समय पर अपने ऑनलाइन सबमिशन पूरे करने चाहिए। इस भर्ती प्रक्रिया पर केवल आधिकारिक आरआरबी दिशानिर्देश लागू होते हैं।",
+    "last_date": null,
+    "mistakes_en": [
+      "Waiting until the last day to submit the online application"
+    ],
+    "mistakes_hi": [
+      "ऑनलाइन आवेदन जमा करने के लिए अंतिम दिन तक प्रतीक्षा करना"
+    ],
+    "not_en": [
+      "Candidates who do not meet the educational and age criteria specified in the original notification"
+    ],
+    "not_hi": [
+      "जो उम्मीदवार मूल अधिसूचना में निर्दिष्ट शैक्षिक और आयु मापदंडों को पूरा नहीं करते हैं"
+    ],
+    "notice_date": null,
+    "official_site": "https://rrb.indianrailways.gov.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "CEN 06/2026",
+        "value_hi": "सीईएन 06/2026"
+      },
+      {
+        "label_en": "Notice Type",
+        "label_hi": "सूचना का प्रकार",
+        "value_en": "Extension of Closing Date",
+        "value_hi": "अंतिमत तिथि का विस्तार"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Check official RRB notification for selection stages"
+    ],
+    "selection_hi": [
+      "चयन चरणों के लिए आधिकारिक आरआरबी अधिसूचना देखें"
+    ],
+    "share_card": {
+      "headline_en": "Last Date Extended",
+      "headline_hi": "अंतिम तिथि बढ़ाई गई",
+      "kind": "corr",
+      "line_en": "CEN 06/2026",
+      "line_hi": "सीईएन 06/2026",
+      "posts": null
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Railway Recruitment Board has issued a notice for the extension of the closing date for online applications under CEN 06/2026. Candidates who have not yet applied can submit their forms by the revised last date. Check the official website for application links and further details.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने सीईएन 06/2026 के तहत ऑनलाइन आवेदन की अंतिम तिथि बढ़ाने की सूचना जारी की है। जिन उम्मीदवारों ने अभी तक आवेदन नहीं किया है, वे संशोधित अंतिम तिथि तक अपने फॉर्म जमा कर सकते हैं। आवेदन लिंक और आगे के विवरण के लिए आधिकारिक वेबसाइट देखें।",
+    "vacancies": [
+      {
+        "detail_en": "Refer to official notification",
+        "detail_hi": "आधिकारिक अधिसूचना देखें",
+        "post_en": "Various Posts under CEN 06/2026",
+        "post_hi": "सीईएन 06/2026 के तहत विभिन्न पद",
+        "total": "Various"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Eligible candidates aspiring for Railway Recruitment Board posts under CEN 06/2026"
+    ],
+    "who_hi": [
+      "सीईएन 06/2026 के तहत रेलवे भर्ती बोर्ड के पदों के इच्छुक योग्य उम्मीदवार"
+    ]
+  },
   "pdf": {
     "bytes": 82008,
     "pages": 1,
     "sha256": "0cb334786dfd1d7cd9cf9396231ac9ef4002de8b96aafdc3639f740e06599beb",
     "text_kind": "scanned"
   },
+  "published_at": "2026-11-06T13:51:38Z",
+  "qual": [
+    "10th",
+    "iti",
+    "diploma",
+    "graduate"
+  ],
+  "slug": "rrb-cen-06-2026-last-date-extended-2026-apply-online",
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RRB CEN 06/2026: Extension of Closing date for online application under CEN 06 2026",
   "url": "https://rrb.indianrailways.gov.in/-/image/1793972299088Extension_of_Closing_date_for_online_application_under_CEN_06_2026.pdf/examsDocuments"
 }
