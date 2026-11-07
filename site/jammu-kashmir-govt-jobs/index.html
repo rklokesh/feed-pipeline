@@ -577,7 +577,7 @@ main > .adslot { margin: 0 !important; }   /* inside an article the page's own s
   html.v2.ab-old .top, html.v2.ab-old .top:has(> .g), html.v2.ab-old.bar-compact .top:has(> .g) { margin: 0 0 10px; padding: 0 0 6px; grid-template-columns: 1fr auto 1fr; gap: 16px; }
   html.v2.ab-old .top .logo img, html.v2.ab-old .top .logo .mark, html.v2.ab-old .top:has(> .g) .logo img, html.v2.ab-old .top:has(> .g) .logo .mark,
   html.v2.ab-old.bar-compact .top:has(> .g) .logo img, html.v2.ab-old.bar-compact .top:has(> .g) .logo .mark { width: 108px; height: 109px; transition: none; }
-  html.v2.ab-old .top .nav-r a[href="/about/"] { display: inline; color: var(--ink); }
+  html.v2.ab-old .top .nav-r a[href="/about/"] { display: inline; color: var(--ink); position: absolute; left: 0; top: 50%; transform: translateY(-50%); }   /* About on the left, balancing हिंदी + moon */
 }
 @media (max-width: 400px) {
   html.v2.ab-old .top, html.v2.ab-old .top:has(> .g), html.v2.ab-old.bar-compact .top:has(> .g) { gap: 10px; }

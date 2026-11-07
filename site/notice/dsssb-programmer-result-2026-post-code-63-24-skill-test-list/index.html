@@ -528,7 +528,47 @@ main > .adslot { margin: 0 !important; }   /* inside an article the page's own s
   html.v2 .actions a.share svg path:first-child { fill: #fff; } html.v2 .actions a.share svg path:last-child { fill: #1FA855; }
   html.v2 .actions a:not(.share):hover { background: var(--soft); }
 }
+/* ===== Notice A/B, version B "Read" (html.nb): reads like the Privacy page - one calm column, left-aligned, plain headings,
+   no boxes or shaded headers. Same content and order; only the look changes. Preview with ?read, classic with ?classic. ===== */
+html.nb main { max-width: 42rem; gap: 34px; }
+html.nb .title { justify-items: start; text-align: left; }
+html.nb .title .crumb, html.nb .status { justify-content: flex-start; }
+html.nb h1 { font-size: clamp(1.9rem, 1.3rem + 2vw, 2.5rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; text-align: left; margin: 0; max-width: none; }
+html.nb .hrow { justify-content: flex-start; }
+html.nb .lead { margin: 10px 0 0; text-align: left; color: var(--grey); font-size: 1.06rem; line-height: 1.55; }
+html.nb .doit { margin: 14px 0 4px; max-width: 100%; }
+html.nb .ogimg { margin: 14px 0 0; }
+html.nb .kv, html.nb .toc { border: 0 !important; border-radius: 0 !important; background: none !important; overflow: visible !important; gap: 10px; }
+html.nb .kv .h { background: none !important; border: 0 !important; padding: 0 !important; color: var(--ink) !important; font-size: 1.2rem; font-weight: 700; }
+html.nb .kv .r { border: 0 !important; padding: 2px 0 !important; grid-template-columns: 12rem 1fr; }
+html.nb .kv .r + .r { border-top: 0 !important; }
+html.nb .kv .r > :first-child { color: var(--grey); }
+html.nb .kv a.r:hover { background: none; }
+html.nb .kv .p { padding: 0 !important; line-height: 1.55; }
+html.nb .kv .steps { padding: 0 0 0 1.4rem !important; display: grid; gap: 8px; line-height: 1.55; }
+html.nb .kv .steps li + li { margin-top: 0; }
+html.nb .tbl th, html.nb .tbl td { padding: 6px 12px 6px 0; }
+html.nb .tbl thead th { border-bottom: 1px solid var(--line); }
+html.nb .tbl tbody tr:hover { background: none; }
+html.nb .faq .qa + .qa { border-top: 0; }
+html.nb .faq .qa h3 { padding: 6px 0 2px; font-weight: 600; }
+html.nb .faq .qa p { padding: 0 0 6px; }
+html.nb .toc summary { background: none !important; padding: 0 !important; color: var(--grey); justify-content: flex-start; gap: 8px; }
+html.nb .toc summary::after { content: "+"; }
+html.nb .toc[open] summary::after { content: "–"; }
+html.nb .toc ol { padding: 8px 0 0 1.4rem; columns: 1; }
+html.nb .note { margin: 0; justify-items: start; text-align: left; border-top: 1px solid var(--line); padding-top: 16px; }
+html.nb .hidet > summary { margin: 0; }
+@media (max-width: 640px) {
+  html.nb .kv .r { grid-template-columns: 1fr !important; padding: 4px 0 !important; }
+  html.nb .kv .r > :first-child { font-size: .875rem; }
+}
 </style>
+<script>/* Notice A/B: ?read = version B (calm reading layout), ?classic = A. NB_SPLIT=true at launch = 50/50 per browser, with counts. */
+(function(){var NB_SPLIT=false,h=document.documentElement,q=location.search,v="a",f=1;
+if(/[?&]read(&|=|$)/.test(q))v="b";else if(/[?&]classic(&|=|$)/.test(q))v="a";
+else if(NB_SPLIT){f=0;try{v=localStorage.getItem("sc-abn")}catch(e){}if(v!=="a"&&v!=="b"){v=Math.random()<.5?"a":"b";try{localStorage.setItem("sc-abn",v)}catch(e){}}}
+if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
 <script>/* notice pages use the classic design (no v2 app-style); v2 CSS stays dormant */try{localStorage.removeItem("sc-v2")}catch(e){}</script>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
@@ -1117,5 +1157,8 @@ main > .adslot { margin: 0 !important; }   /* inside an article the page's own s
       try{if(navigator.vibrate)navigator.vibrate(8);}catch(e){}});
     b.addEventListener("animationend",function(){b.classList.remove("swap");});});
 })();</script>
+<script>/* Notice A/B counts (split visitors only): page views and taps on the main buttons, per version, in the views DB */
+(function(){var v=window.SC_ABN;if(!v||!navigator.sendBeacon||!document.getElementById("doit"))return;var b=function(e){try{navigator.sendBeacon("/api/views?slug=zz-abn-"+v+"-"+e)}catch(x){}};b("view");
+document.getElementById("doit").addEventListener("click",function(e){if(e.target.closest("a"))b("act")},true)})()</script>
 </body>
 </html>
