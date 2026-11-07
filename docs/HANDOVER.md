@@ -359,3 +359,13 @@ SEO shows 69 only because of the pre-launch noindex (the one failing check); go_
 - **AI quota**: Gemini free tier can run out on busy days (429 in data/debug-prepare.txt). prepare.yml now sets
   GEMINI_MODELS to three models, each with its own free allowance, tried in order.
 - Unreachable: NIA (cert), DGQA, OPSC, HPPSC, BTSC, MPESB, HPRCA, ITPO careers page; UPSESSB domain hijacked.
+
+## 3o. 7-8 Nov 2026: calm first
+- Rule from the owner: clean, neat, calm. Anything that adds noise is pushed back on before it is built.
+- Desktop homepage: original design on `/` (class `ab-old`), phone-style chrome kept at `/v2/` (noindex). `AB_SPLIT` in site/index.html switches on a 50/50 split with visit/open counters (views DB slugs `zz-ab-*`) - for after launch.
+- Notice pages back to the classic boxed design (html.v2 no longer added). Two calmer, box-free directions (A Notebook with Kalam headings, B Calm letter) were mocked up; owner said wait.
+- Notice "do it" box under the last date: main action (Apply / Download admit card / Check result / Official website), Official notice, WhatsApp (bilingual text with posts + last date), calendar reminder (remind.ics on iPhone/Mac, Google Calendar elsewhere; files written by pages.py).
+- Hindi copy for Google: one small grey "हिंदी में पढ़ें" line at the very end. Proper /hi/ pages suggested before launch.
+- Ads: hidden for everyone until AdSense (add class `ads-on`); preview any page with `?ads`. Boxes are full column width, square, 90px desktop, 100/250px phone. Homepage: under logo + footer; notice: after At a glance, before FAQ, footer.
+- Phone back button placed once level with the header and never moves.
+- Later (owner said yes, after launch): A/B test Trending vs All as the default homepage tab.
