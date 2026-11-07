@@ -543,6 +543,15 @@ main > .adslot { margin: 0 !important; }   /* inside an article the page's own s
   html.v2:not(.ab-old) .tscroll .list li:last-child { border-bottom: 0; }
   html.v2:not(.ab-old) .tscroll li.adrow { border-top: 1px solid var(--line) !important; }
 }
+/* Phones on the normal site: हिंदी and the moon as plain header links, same as the notice pages (sarkari, clean). The glass pill stays on /v2/. */
+@media (max-width: 640px) {
+  html.v2.ab-old .top .nav-r { background: none !important; border: 0 !important; box-shadow: none !important; -webkit-backdrop-filter: none !important; backdrop-filter: none !important;
+    padding: 0 !important; gap: 18px !important; border-radius: 0 !important; transform: none !important; }
+  html.v2.ab-old .top .nav-r button { width: auto !important; height: 40px !important; min-width: 0 !important; padding: 0 !important; margin: 0 !important; background: none !important; border: 0 !important;
+    box-shadow: none !important; border-radius: 0 !important; color: var(--ink); display: inline-flex !important; align-items: center; transform: none !important; }
+  html.v2.ab-old #lang { font-size: 1rem !important; line-height: 1.2 !important; font-weight: 400 !important; }
+  html.v2.ab-old #lang::before, html.v2.ab-old #lang::after { content: none !important; display: none !important; }
+}
 </style>
 <script>document.documentElement.classList.add("v2");try{localStorage.removeItem("sc-v2")}catch(e){}</script>
 <script>/* Desktop A/B. Version A (original desktop) is the default everywhere; version B (phone-style chrome) lives at /v2/ (or ?new).
@@ -555,8 +564,8 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "SarkariChart", "alternateName": "सरकारी चार्ट", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png", "sameAs": ["https://t.me/sarkarichart"], "description": "Govt jobs, admit cards, results and answer keys from official notices, in English and Hindi."}, {"@context": "https://schema.org", "@type": "WebSite", "name": "SarkariChart", "alternateName": "सरकारी चार्ट", "url": "https://sarkarichart.pages.dev/", "inLanguage": ["en-IN", "hi-IN"], "potentialAction": {"@type": "SearchAction", "target": "https://sarkarichart.pages.dev/?q={search_term_string}", "query-input": "required name=search_term_string"}}]</script>
-<script>window.SC_PRESET = {"q": "12th"};</script>
 <script>if(/[?&]ads(&|=|$)/.test(location.search))document.documentElement.classList.add("ads-on")</script>
+<script>window.SC_PRESET = {"q": "12th"};</script>
 </head>
 <body>
 

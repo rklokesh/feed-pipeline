@@ -543,6 +543,15 @@ main > .adslot { margin: 0 !important; }   /* inside an article the page's own s
   html.v2:not(.ab-old) .tscroll .list li:last-child { border-bottom: 0; }
   html.v2:not(.ab-old) .tscroll li.adrow { border-top: 1px solid var(--line) !important; }
 }
+/* Phones on the normal site: हिंदी and the moon as plain header links, same as the notice pages (sarkari, clean). The glass pill stays on /v2/. */
+@media (max-width: 640px) {
+  html.v2.ab-old .top .nav-r { background: none !important; border: 0 !important; box-shadow: none !important; -webkit-backdrop-filter: none !important; backdrop-filter: none !important;
+    padding: 0 !important; gap: 18px !important; border-radius: 0 !important; transform: none !important; }
+  html.v2.ab-old .top .nav-r button { width: auto !important; height: 40px !important; min-width: 0 !important; padding: 0 !important; margin: 0 !important; background: none !important; border: 0 !important;
+    box-shadow: none !important; border-radius: 0 !important; color: var(--ink); display: inline-flex !important; align-items: center; transform: none !important; }
+  html.v2.ab-old #lang { font-size: 1rem !important; line-height: 1.2 !important; font-weight: 400 !important; }
+  html.v2.ab-old #lang::before, html.v2.ab-old #lang::after { content: none !important; display: none !important; }
+}
 </style>
 <script>document.documentElement.classList.add("v2");try{localStorage.removeItem("sc-v2")}catch(e){}</script>
 <script>/* Desktop A/B. Version A (original desktop) is the default everywhere; version B (phone-style chrome) lives at /v2/ (or ?new).
