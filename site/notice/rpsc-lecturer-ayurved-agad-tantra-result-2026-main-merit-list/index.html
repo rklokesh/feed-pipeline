@@ -516,7 +516,7 @@ li.adrow .adslot { margin: 20px auto; }
   html.v2 .actions a:not(.share):hover { background: var(--soft); }
 }
 </style>
-<script>document.documentElement.classList.add("v2");try{localStorage.removeItem("sc-v2")}catch(e){}</script>
+<script>/* notice pages use the classic design (no v2 app-style); v2 CSS stays dormant */try{localStorage.removeItem("sc-v2")}catch(e){}</script>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
 </head>
