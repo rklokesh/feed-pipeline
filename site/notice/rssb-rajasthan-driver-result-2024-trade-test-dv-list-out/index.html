@@ -265,9 +265,10 @@ ul.steps.dots { list-style: disc; }
 .tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
 .tbl tbody tr:hover { background: var(--row-hover); }
 html[lang="hi"] .hidet { display: none; }
-.hidet { border-top: 1px solid var(--line); padding-top: 14px; }
-.hidet > summary { cursor: pointer; color: var(--grey); list-style-position: inside; }
-.hidet > summary:hover { color: inherit; }
+.hidet { max-width: 46rem; margin-top: -8px; }
+.hidet > summary { cursor: pointer; color: var(--grey); font-size: .875rem; list-style: none; width: fit-content; margin: 0 auto; }
+.hidet > summary::-webkit-details-marker { display: none; }
+.hidet > summary:hover { color: inherit; text-decoration: underline; text-underline-offset: 4px; }
 .hidet[open] > summary { margin-bottom: 14px; }
 .hidet .hih { font-size: 1.35rem; line-height: 1.35; margin: 0 0 10px; }
 .hidet > section.kv { margin: 0 0 26px; }
@@ -350,7 +351,6 @@ html[lang="hi"] .hidet { display: none; }
   html.v2 .toc { border: 0 !important; border-top: 1px solid color-mix(in srgb, var(--ink) 8%, transparent) !important;
     border-bottom: 1px solid color-mix(in srgb, var(--ink) 8%, transparent) !important; background: none; border-radius: 0; }
   html.v2 .toc summary { background: none !important; padding: 14px 0 !important; }
-  html.v2 .hidet { border-top: 1px solid color-mix(in srgb, var(--ink) 8%, transparent); }
   /* actions: full-width pill buttons */
   html.v2 .actions { display: grid !important; gap: 10px !important; }
   html.v2 .actions a { justify-content: center; padding: 13px 16px; border-radius: 999px; background: none; border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent); text-decoration: none; }
@@ -638,8 +638,12 @@ li.adrow .adslot { margin: 20px auto; }
       <a class="r" href="/notice/rssb-supervisor-woman-2026-online-scrutiny-form-notice-out/"><span data-t="rel5">RSSB Supervisor Woman 2026 – Online Scrutiny Form Notice Out</span><span class="v g num">5 Nov 2026</span></a>
     </section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.pages.dev/"}, {"@type": "ListItem", "position": 2, "name": "Results", "item": "https://sarkarichart.pages.dev/?cat=results"}, {"@type": "ListItem", "position": 3, "name": "RSSB Rajasthan Driver Result 2024 – Trade Test DV List Out", "item": "https://sarkarichart.pages.dev/notice/rssb-rajasthan-driver-result-2024-trade-test-dv-list-out/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "RSSB Rajasthan Driver Result 2024 – Trade Test DV List Out", "url": "https://sarkarichart.pages.dev/notice/rssb-rajasthan-driver-result-2024-trade-test-dv-list-out/", "inLanguage": ["en-IN", "hi-IN"], "description": "The Rajasthan Staff Selection Board (RSSB) has published the list of provisionally selected candidates for document verification following the trade test for the Direct Recruitment of Driver - 2024 (NTSP/TSP). Candidates can check their rank, application number, roll number, and personal details in the official list. Shortlisted candidates are required to attend the document verification process as per the board guidelines.", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "isBasedOn": "https://rssb.rajasthan.gov.in/storage/news_item/1793273784.pdf", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.pages.dev/notice/rssb-rajasthan-driver-result-2024-trade-test-dv-list-out/og.png", "about": {"@type": "GovernmentOrganization", "name": "Rajasthan Staff Selection Board (RSSB)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When was the RSSB Driver 2024 trade test DV list released?", "acceptedAnswer": {"@type": "Answer", "text": "The list was released on 29 October 2026."}}, {"@type": "Question", "name": "Which board conducted the Driver 2024 recruitment?", "acceptedAnswer": {"@type": "Answer", "text": "The recruitment is conducted by the Rajasthan Staff Selection Board (RSSB)."}}, {"@type": "Question", "name": "What is the next stage after the trade test for RSSB Driver?", "acceptedAnswer": {"@type": "Answer", "text": "The next stage is document verification for provisionally selected candidates."}}]}]</script>
+    <div class="note">
+      <p class="g" data-t="checked">Details are taken from the official notice. Checked on 29 Oct 2026. If anything here differs from the official notice, the official notice is correct.</p>
+      <p class="actions"><a class="share js-share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/rssb-rajasthan-driver-result-2024-trade-test-dv-list-out/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
+    </div>
     <details class="hidet" lang="hi">
-      <summary>हिंदी में पूरी जानकारी पढ़ें</summary>
+      <summary>हिंदी में पढ़ें</summary>
       <h2 class="hih">आरएसएसबी राजस्थान ड्राइवर रिजल्ट 2024 – ट्रेड टेस्ट डीवी सूची जारी</h2>
       <p class="lead">राजस्थान कर्मचारी चयन बोर्ड ने ड्राइवर 2024 भर्ती के लिए ट्रेड टेस्ट के बाद दस्तावेज़ सत्यापन हेतु अनंतिम रूप से चयनित उम्मीदवारों की सूची जारी कर दी है। ट्रेड टेस्ट में शामिल होने वाले उम्मीदवार चयन सूची में अपने रोल नंबर देख सकते हैं।</p>
     <section class="kv glance">
@@ -708,10 +712,6 @@ li.adrow .adslot { margin: 20px auto; }
       <ul class="steps dots"><li >आधिकारिक पीडीएफ में अपना रोल नंबर जांचें</li><li >सत्यापन के लिए सभी मूल दस्तावेज और फोटोकॉपी तैयार रखें</li></ul>
     </section>
     </details>
-    <div class="note">
-      <p class="g" data-t="checked">Details are taken from the official notice. Checked on 29 Oct 2026. If anything here differs from the official notice, the official notice is correct.</p>
-      <p class="actions"><a class="share js-share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/rssb-rajasthan-driver-result-2024-trade-test-dv-list-out/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
-    </div>
   </main>
 
   <div class="adslot slim" data-ad="footer"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox"><a class="house" href="https://t.me/sarkarichart" target="_blank" rel="noopener"><img src="/telegram.svg" alt="" width="22" height="22"><span data-t="adHouse">Get every new govt job alert on Telegram, free</span></a></div></div>

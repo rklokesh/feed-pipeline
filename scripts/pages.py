@@ -630,16 +630,19 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
         h = "\n".join(x for x in h.split("\n") if 'id="elig"' not in x)   # the eligibility check lives in the main copy
         h = re.sub(r'data-t="([^"]+)">([^<]*)<', lambda m: f'>{esc(str(hi.get(m.group(1), m.group(2))))}<', h)
         return re.sub(r'\s(?:id|data-t-aria|data-t)="[^"]*"', "", h)
+    hidet = ""
     hi_secs = [to_hi(x) for x in main[1:] if 'class="kv' in x and 'class="kv rel' not in x]
     if hi_secs and hi.get("h1") and hi["h1"] != en["h1"]:
         lead = f'      <p class="lead">{esc(hi["summary"])}</p>\n' if hi.get("summary") and hi["summary"] != en["summary"] else ""
-        main.append(f'    <details class="hidet" lang="hi">\n      <summary>हिंदी में पूरी जानकारी पढ़ें</summary>\n'
-                    f'      <h2 class="hih">{esc(hi["h1"])}</h2>\n{lead}' + "\n".join(hi_secs) + "\n    </details>")
+        hidet = (f'    <details class="hidet" lang="hi">\n      <summary>हिंदी में पढ़ें</summary>\n'
+                 f'      <h2 class="hih">{esc(hi["h1"])}</h2>\n{lead}' + "\n".join(hi_secs) + "\n    </details>")
     main.append(f'''    <div class="note">
       <p class="g" data-t="checked">{esc(en["checked"])}</p>
       <p class="actions"><a class="share js-share" href="#">{wa}<span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/{slug}/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
     </div>''')
 
+    if hidet:   # full Hindi copy for Google: one quiet grey line at the very end, under "Report a mistake"
+        main.append(hidet)
     tpl = TEMPLATE.read_text(encoding="utf-8")
     if hi["h1"] != en["h1"]:   # Google title in both languages, so Hindi searches find the same page
         en["title"] = f'{en["h1"]} | {hi["h1"]}'
