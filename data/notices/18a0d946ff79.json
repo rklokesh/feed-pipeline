@@ -1,21 +1,7 @@
 {
   "baseline_sample": true,
   "board_url": "https://employmentnews.gov.in/NewEmp/MoreContentS.aspx?n=WebAdvertisement",
-  "card": {
-    "confidence": "low",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": null,
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "No PDF text or job details provided for an active notice",
-    "summary_en": "This notice does not contain sufficient details for listing.",
-    "summary_hi": "इस सूचना में सूची के लिए पर्याप्त विवरण नहीं है।",
-    "title_en": "Institute of Hotel Management and Catering Technology Recruitment",
-    "title_hi": "इंस्टीट्यूट ऑफ होटल मैनेजमेंट एंड कैटरिंग टेक्नोलॉजी भर्ती",
-    "type": "Job",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -28,10 +14,10 @@
     "bytes": 102167,
     "pages": 1,
     "sha256": "a9298fbb33bbfcf334d9521d57187278c9477fef5752573410f8309a594ce920",
-    "text_kind": "scanned"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "employment-news-ads",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "INSTITUTE OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY, MINISTRY OF TOURISM ( Issue no 31 , 31 October - 06 November 2026 )",
   "url": "https://employmentnews.gov.in/writereaddata/021120262944503112.pdf"
 }

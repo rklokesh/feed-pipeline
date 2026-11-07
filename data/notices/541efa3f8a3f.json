@@ -1,21 +1,7 @@
 {
   "baseline_sample": true,
   "board_url": "https://employmentnews.gov.in/NewEmp/MoreContentS.aspx?n=WebAdvertisement",
-  "card": {
-    "confidence": "low",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": null,
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "The provided text is empty and lacks sufficient information about a job or recruitment notice.",
-    "summary_en": "Notice details are missing from the source.",
-    "summary_hi": "स्रोत से नोटिस का विवरण गायब है।",
-    "title_en": "Sainik School Nagrota Recruitment",
-    "title_hi": "सैनिक स्कूल नग्रोटा भर्ती",
-    "type": "Update",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -28,10 +14,10 @@
     "bytes": 217876,
     "pages": 1,
     "sha256": "493174a93ad24f4b27f9c34eada02dcfacc39b18e0e2f45b0d911afbab869bf3",
-    "text_kind": "scanned"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "employment-news-ads",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "SAINIK SCHOOL NAGROTA, SAINIK SCHOOLS SOCIETY, MINISTRY OF DEFENCE ( Issue no 31 , 31 October - 06 November 2026 )",
   "url": "https://employmentnews.gov.in/writereaddata/021120269307053161.pdf"
 }
