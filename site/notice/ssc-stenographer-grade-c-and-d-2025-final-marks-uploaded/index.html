@@ -108,10 +108,6 @@ h1 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; text-wrap: b
 .doit .btn.pri, .doit #remind { grid-column: 1 / -1; }
 .doit .btn.pri { background: var(--ink); color: var(--page); border-color: var(--ink); font-weight: 600; font-size: 1.0625rem; }
 .doit .btn.pri:hover { opacity: .9; background: var(--ink); }
-.doit .btn.wa { background: #1FA855; color: #fff; border-color: #1FA855; font-weight: 600; }
-.doit .btn.wa:hover { background: #1b964c; }
-.doit .btn.wa svg path:first-child { fill: #fff; }
-.doit .btn.wa svg path:last-child { fill: #1FA855; }
 .doit .btn[hidden] { display: none; }
 @media print { .doit { display: none !important; } }
 .note { display: grid; gap: 18px; max-width: 46rem; }
@@ -474,6 +470,7 @@ html[lang="hi"] .hidet { display: none; }
    contain: strict). Only manual Google AdSense units go here; Auto ads, anchor and vignette ads stay OFF in AdSense.
    Until AdSense is approved each box shows our own Telegram card. ===== */
 .adslot { margin: 32px auto; width: 100%; max-width: 728px; }
+html:not(.ads-on) .adslot { display: none !important; }   /* ad spaces stay out of sight until AdSense is live (add class ads-on to <html>) */
 .adslot .adl { font-size: .6875rem; letter-spacing: .04em; color: var(--grey); text-align: center; margin: 0 0 6px; }
 .adslot .adbox { position: relative; height: 90px; width: 100%; margin: 0 auto; border-radius: 0; overflow: hidden; contain: strict;
   background: var(--soft); display: grid; place-items: center; }

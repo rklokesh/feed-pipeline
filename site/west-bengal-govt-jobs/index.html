@@ -478,6 +478,7 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
    contain: strict). Only manual Google AdSense units go here; Auto ads, anchor and vignette ads stay OFF in AdSense.
    Until AdSense is approved each box shows our own Telegram card. ===== */
 .adslot { margin: 32px auto; width: 100%; max-width: 728px; }
+html:not(.ads-on) .adslot { display: none !important; }   /* ad spaces stay out of sight until AdSense is live (add class ads-on to <html>) */
 .adslot.atop { margin: 8px auto 28px; }
 .adslot .adl { font-size: .6875rem; letter-spacing: .04em; color: var(--grey); text-align: center; margin: 0 0 6px; }
 .adslot .adbox { position: relative; height: 90px; width: 100%; margin: 0 auto; border-radius: 0; overflow: hidden; contain: strict;
