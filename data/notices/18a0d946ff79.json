@@ -1,23 +1,231 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://employmentnews.gov.in/NewEmp/MoreContentS.aspx?n=WebAdvertisement",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Lower Division Clerk",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Institute of Hotel Management and Catering Technology, Thiruvananthapuram invites applications for Lower Division Clerk. Eligible candidates should visit the official website for details and apply within 30 days.",
+    "summary_hi": "प्रबंध और खानपान प्रौद्योगिकी संस्थान, तिरुवनंतपुरम ने अवर श्रेणी लिपिक के लिए आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार विवरण के लिए आधिकारिक वेबसाइट पर जाएं और 30 दिनों के भीतर आवेदन करें।",
+    "title_en": "IHM Thiruvananthapuram Lower Division Clerk Recruitment 2026",
+    "title_hi": "आईएचएम तिरुवनंतपुरम अवर श्रेणी लिपिक भर्ती 2026",
+    "type": "Job",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": null,
+    "age_min": null,
+    "age_on": null,
+    "domicile": null,
+    "qual": null,
+    "relax": {}
+  },
+  "exam": {},
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-05T19:56:51+00:00",
   "id": "18a0d946ff79",
+  "issue": 1167,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-10-31",
   "org": "Institute Of Hotel Management And Catering Technology",
+  "page": {
+    "after_en": [
+      "Shortlisting and communication regarding further selection stages"
+    ],
+    "after_hi": [
+      "आगे के चयन चरणों के संबंध में शॉर्टलिस्टिंग और सूचना"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://www.cmd.kerala.gov.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Verify eligibility before applying",
+      "Keep required documents ready",
+      "Submit application well before the last date"
+    ],
+    "checklist_hi": [
+      "आवेदन करने से पहले पात्रता सत्यापित करें",
+      "आवश्यक दस्तावेज तैयार रखें",
+      "अंतिम तिथि से पहले आवेदन जमा करें"
+    ],
+    "conducted_by_en": "Institute of Hotel Management and Catering Technology (IHM Thiruvananthapuram)",
+    "conducted_by_hi": "प्रबंध और खानपान प्रौद्योगिकी संस्थान (आईएचएम तिरुवनंतपुरम)",
+    "dates": [
+      {
+        "label_en": "Notification date",
+        "label_hi": "अधिसूचना तिथि",
+        "value_en": "31 October 2026",
+        "value_hi": "31 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Last date for application",
+        "label_hi": "आवेदन की अंतिम तिथि",
+        "value_en": "30 days from publication",
+        "value_hi": "प्रकाशन से 30 दिन"
+      }
+    ],
+    "documents_en": [
+      "Educational certificates",
+      "Identity proof"
+    ],
+    "documents_hi": [
+      "शैक्षणिक प्रमाण पत्र",
+      "पहचान प्रमाण"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Details",
+        "label_hi": "विवरण",
+        "value_en": "Check official website for detailed eligibility criteria.",
+        "value_hi": "विस्तृत पात्रता मानदंड के लिए आधिकारिक वेबसाइट देखें।"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a direct recruitment drive conducted by the Institute of Hotel Management and Catering Technology, Thiruvananthapuram for filling up the Lower Division Clerk position.",
+        "a_hi": "यह प्रबंध और खानपान प्रौद्योगिकी संस्थान, तिरुवनंतपुरम द्वारा अवर श्रेणी लिपिक के पद को भरने के लिए आयोजित एक सीधी भर्ती अभियान है।",
+        "q_en": "What is IHM Thiruvananthapuram Lower Division Clerk Recruitment?",
+        "q_hi": "आईएचएम तिरुवनंतपुरम अवर श्रेणी लिपिक भर्ती क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Organisation Type",
+        "label_hi": "संगठन का प्रकार",
+        "value_en": "Autonomous body under Ministry of Tourism, Government of India",
+        "value_hi": "पर्यटन मंत्रालय, भारत सरकार के अधीन स्वायत्त निकाय"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The last date to apply is 30 days from the publication of the advertisement in Employment News (31 October - 06 November 2026).",
+        "a_hi": "आवेदन करने की अंतिम तिथि रोजगार समाचार (31 अक्टूबर - 06 नवंबर 2026) में विज्ञापन के प्रकाशन से 30 दिन है।",
+        "q_en": "What is the last date to apply for IHM Thiruvananthapuram LDC Recruitment?",
+        "q_hi": "आईएचएम तिरुवनंतपुरम एलडीसी भर्ती के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "Candidates can visit www.cmd.kerala.gov.in or www.ihmcetkovalam.ac.in for details and application.",
+        "a_hi": "उम्मीदवार विवरण और आवेदन के लिए www.cmd.kerala.gov.in या www.ihmcetkovalam.ac.in पर जा सकते हैं।",
+        "q_en": "Where can I apply for this recruitment?",
+        "q_hi": "मैं इस भर्ती के लिए कहां आवेदन कर सकता हूं?"
+      },
+      {
+        "a_en": "The recruitment is conducted by the Institute of Hotel Management and Catering Technology, Kovalam, Thiruvananthapuram.",
+        "a_hi": "यह भर्ती प्रबंध और खानपान प्रौद्योगिकी संस्थान, कोवलम, तिरुवनंतपुरम द्वारा आयोजित की जा रही है।",
+        "q_en": "Which organization is conducting this recruitment?",
+        "q_hi": "यह भर्ती कौन सा संगठन आयोजित कर रहा है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "IHM Thiruvananthapuram Lower Division Clerk Recruitment 2026",
+    "h1_hi": "आईएचएम तिरुवनंतपुरम अवर श्रेणी लिपिक भर्ती 2026",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official website at www.cmd.kerala.gov.in or www.ihmcetkovalam.ac.in",
+      "Read the detailed recruitment notification",
+      "Submit the application as per instructions within 30 days"
+    ],
+    "how_hi": [
+      "आधिकारिक वेबसाइट www.cmd.kerala.gov.in या www.ihmcetkovalam.ac.in पर जाएं",
+      "विस्तृत भर्ती अधिसूचना पढ़ें",
+      "30 दिनों के भीतर निर्देशों के अनुसार आवेदन जमा करें"
+    ],
+    "intro_en": "Institute of Hotel Management and Catering Technology (IHM), Thiruvananthapuram, an autonomous body under the Ministry of Tourism, Government of India, has released a direct recruitment notification for the Lower Division Clerk post. Interested candidates who fulfill the eligibility criteria should check the official website for detailed information regarding qualifications, age limit, and the application procedure. Applications must be submitted within 30 days of the publication of this advertisement in Employment News (Issue No. 31, 31 October - 06 November 2026).",
+    "intro_hi": "प्रबंध और खानपान प्रौद्योगिकी संस्थान (आईएचएम), तिरुवनंतपुरम, जो भारत सरकार के पर्यटन मंत्रालय के अधीन एक स्वायत्त निकाय है, ने अवर श्रेणी लिपिक के पद के लिए सीधी भर्ती अधिसूचना जारी की है। जो इच्छुक उम्मीदवार पात्रता मापदंड को पूरा करते हैं, वे योग्यता, आयु सीमा और आवेदन प्रक्रिया के संबंध में विस्तृत जानकारी के लिए आधिकारिक वेबसाइट देख सकते हैं। रोजगार समाचार (अंक संख्या 31, 31 अक्टूबर - 06 नवंबर 2026) में इस विज्ञापन के प्रकाशन से 30 दिनों के भीतर आवेदन प्रस्तुत किए जाने चाहिए।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not submit applications after the 30-day window closes."
+    ],
+    "mistakes_hi": [
+      "30 दिन की अवधि समाप्त होने के बाद आवेदन जमा न करें।"
+    ],
+    "not_en": [
+      "Candidates applying after the 30-day deadline"
+    ],
+    "not_hi": [
+      "30 दिन की समय सीमा के बाद आवेदन करने वाले उम्मीदवार"
+    ],
+    "notice_date": "2026-10-31",
+    "official_site": "https://www.ihmcetkovalam.ac.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Lower Division Clerk",
+        "value_hi": "अवर श्रेणी लिपिक"
+      },
+      {
+        "label_en": "Last date",
+        "label_hi": "अंतिम तिथि",
+        "value_en": "30 days from advertisement",
+        "value_hi": "विज्ञापन से 30 दिन"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Check official website for selection process details"
+    ],
+    "selection_hi": [
+      "चयन प्रक्रिया के विवरण के लिए आधिकारिक वेबसाइट देखें"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Lower Division Clerk",
+      "line_hi": "अवर श्रेणी लिपिक",
+      "posts": null
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Institute of Hotel Management and Catering Technology (IHM), Thiruvananthapuram invites direct recruitment applications for the post of Lower Division Clerk. Eligible candidates can visit the official website to view details and apply within 30 days from the publication of the advertisement.",
+    "summary_hi": "प्रबंध और खानपान प्रौद्योगिकी संस्थान (आईएचएम), तिरुवनंतपुरम ने अवर श्रेणी लिपिक के पद के लिए सीधी भर्ती के लिए आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार विवरण देखने और विज्ञापन के प्रकाशन से 30 दिनों के भीतर आवेदन करने के लिए आधिकारिक वेबसाइट पर जा सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Direct recruitment",
+        "detail_hi": "सीधी भर्ती",
+        "post_en": "Lower Division Clerk",
+        "post_hi": "अवर श्रेणी लिपिक",
+        "total": null
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Eligible candidates looking for a government job at IHM Thiruvananthapuram"
+    ],
+    "who_hi": [
+      "आईएचएम तिरुवनंतपुरम में सरकारी नौकरी की तलाश कर रहे योग्य उम्मीदवार"
+    ]
+  },
   "pdf": {
     "bytes": 102167,
     "pages": 1,
     "sha256": "a9298fbb33bbfcf334d9521d57187278c9477fef5752573410f8309a594ce920",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-07T06:25:35Z",
+  "qual": [
+    "12th"
+  ],
+  "slug": "ihm-thiruvananthapuram-lower-division-clerk-recruitment-2026",
   "source_id": "employment-news-ads",
-  "status": "pending_review",
+  "status": "approved",
   "title": "INSTITUTE OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY, MINISTRY OF TOURISM ( Issue no 31 , 31 October - 06 November 2026 )",
   "url": "https://employmentnews.gov.in/writereaddata/021120262944503112.pdf"
 }

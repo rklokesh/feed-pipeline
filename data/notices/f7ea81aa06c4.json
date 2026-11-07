@@ -3,7 +3,7 @@
   "board_url": "https://nta.ac.in/",
   "card": {
     "confidence": "high",
-    "exam_date": null,
+    "exam_date": "2026-12-08",
     "last_date": null,
     "list": true,
     "posts": "SWAYAM July 2026 Semester Exam",
@@ -35,57 +35,109 @@
   "org": "NTA",
   "page": {
     "after_en": [
-      "After corrections are saved, download the updated confirmation page for your records."
+      "Examination will be conducted on 08, 09, 10, 11 and 12 December 2026 in CBT mode"
     ],
     "after_hi": [
-      "सुधार सहेजे जाने के बाद, अपने रिकॉर्ड के लिए अपडेट किया गया पुष्टिकरण पृष्ठ डाउनलोड करें।"
+      "परीक्षा 08, 09, 10, 11 और 12 दिसंबर 2026 को सीबीटी मोड में आयोजित की जाएगी"
     ],
     "age": [],
     "apply_start": null,
-    "apply_url": "https://nta.ac.in/",
+    "apply_url": "https://exams.nta.nic.in/swayam/",
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Keep application login details ready",
-      "Check allowed fields for correction"
+      "Check allowed fields for correction",
+      "Keep payment mode ready for any additional fee",
+      "Submit before 07 November 2026"
     ],
     "checklist_hi": [
-      "आवेदन लॉगिन विवरण तैयार रखें",
-      "सुधार के लिए अनुमति प्राप्त क्षेत्रों की जांच करें"
+      "सुधार के लिए अनुमति प्राप्त क्षेत्रों की जांच करें",
+      "किसी भी अतिरिक्त शुल्क के लिए भुगतान मोड तैयार रखें",
+      "07 नवंबर 2026 से पहले सबमिट करें"
     ],
     "conducted_by_en": "National Testing Agency (NTA)",
-    "conducted_by_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए)",
-    "dates": [],
+    "conducted_by_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए)",
+    "dates": [
+      {
+        "label_en": "Correction window starts",
+        "label_hi": "करेक्शन विंडो शुरू",
+        "value_en": "06 November 2026",
+        "value_hi": "06 नवंबर 2026"
+      },
+      {
+        "label_en": "Correction window ends",
+        "label_hi": "करेक्शन विंडो समाप्त",
+        "value_en": "07 November 2026 (11:50 P.M.)",
+        "value_hi": "07 नवंबर 2026 (रात 11:50 बजे)"
+      },
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "08, 09, 10, 11 and 12 December 2026",
+        "value_hi": "08, 09, 10, 11 और 12 दिसंबर 2026"
+      }
+    ],
     "documents_en": [
-      "Application login credentials"
+      "Corrected details/documents for upload if changing photograph or signature"
     ],
     "documents_hi": [
-      "आवेदन लॉगिन विवरण"
+      "यदि फोटोग्राफ या हस्ताक्षर बदल रहे हैं तो अपलोड करने के لیے सही विवरण/दस्तावेज़"
     ],
     "eligibility": [],
-    "exam_date": null,
+    "exam_date": "2026-12-08",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is an opportunity provided by NTA for registered candidates to correct any inadvertent mistakes made in their online application forms for the SWAYAM July 2026 semester exam.",
-        "a_hi": "यह स्वाध्याय जुलाई 2026 सेमेस्टर परीक्षा के लिए अपने ऑनलाइन आवेदन पत्र में की गई किसी भी अनजाने गलती को सुधारने के लिए पंजीकृत उम्मीदवारों को एनटीए द्वारा प्रदान किया गया एक अवसर है।",
-        "q_en": "What is the SWAYAM July 2026 Semester Exam Correction?",
-        "q_hi": "स्वाध्याय जुलाई 2026 सेमेस्टर परीक्षा सुधार क्या है?"
+        "a_en": "It is a limited-period online facility provided by NTA allowing registered candidates to correct mistakes or update particulars in their submitted application forms.",
+        "a_hi": "यह एनटीए द्वारा प्रदान की जाने वाली एक सीमित अवधि की ऑनलाइन सुविधा है जो पंजीकृत उम्मीदवारों को उनके जमा किए गए आवेदन पत्र में गलतियों को सुधारने या विवरण अपडेट करने की अनुमति देती है।",
+        "q_en": "What is the SWAYAM July 2026 Semester Exam Correction Window?",
+        "q_hi": "स्वाध्याय जुलाई 2026 सेमेस्टर परीक्षा करेक्शन विंडो क्या है?"
       }
     ],
-    "extra": [],
-    "faq": [
+    "extra": [
       {
-        "a_en": "Candidates who have successfully registered and submitted their online application form for the SWAYAM July 2026 semester exam can make corrections.",
-        "a_hi": "स्वाध्याय जुलाई 2026 सेमेस्टर परीक्षा के लिए सफलतापूर्वक पंजीकरण करने और अपना ऑनलाइन आवेदन पत्र जमा करने वाले उम्मीदवार सुधार कर सकते हैं।",
-        "q_en": "Who can make corrections in the SWAYAM July 2026 application form?",
-        "q_hi": "स्वाध्याय जुलाई 2026 आवेदन पत्र में कौन सुधार कर सकता है?"
+        "label_en": "Helpline Number",
+        "label_hi": "हेल्पलाइन नंबर",
+        "value_en": "+91-11-40759000",
+        "value_hi": "+91-11-40759000"
       },
       {
-        "a_en": "Candidates need to log in to the official NTA SWAYAM portal using their application credentials and edit the allowed particulars.",
-        "a_hi": "उम्मीदवारों को अपने आवेदन विवरण का उपयोग करके आधिकारिक एनटीए स्वाध्याय पोर्टल पर लॉगिन करना होगा और अनुमति प्राप्त विवरणों को संपादित करना होगा।",
-        "q_en": "How to make corrections in the SWAYAM application form?",
-        "q_hi": "स्वाध्याय आवेदन पत्र में सुधार कैसे करें?"
+        "label_en": "Email Support",
+        "label_hi": "ईमेल समर्थन",
+        "value_en": "swayam@nta.ac.in",
+        "value_hi": "swayam@nta.ac.in"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The correction window is open from 06 November to 07 November 2026 (up to 11:50 P.M.).",
+        "a_hi": "करेक्शन विंडो 06 नवंबर से 07 नवंबर 2026 (रात 11:50 बजे तक) खुली है।",
+        "q_en": "When is the correction window open for SWAYAM July 2026 Semester Exam?",
+        "q_hi": "स्वाध्याय जुलाई 2026 सेमेस्टर परीक्षा के लिए करेक्शन विंडो कब खुली है?"
+      },
+      {
+        "a_en": "Candidates cannot change their registered Mobile Number and E-Mail address.",
+        "a_hi": "उम्मीदवार अपना पंजीकृत मोबाइल नंबर और ईमेल पता नहीं बदल सकते हैं।",
+        "q_en": "Which fields cannot be changed during the correction process?",
+        "q_hi": "सुधार प्रक्रिया के दौरान कौन से फ़ील्ड नहीं बदले जा सकते हैं?"
+      },
+      {
+        "a_en": "Yes, if there is an impact on the fee due to changes in category, PwD status, or courses, an additional fee will be charged as applicable.",
+        "a_hi": "हाँ, श्रेणी, दिव्यांगता स्थिति या पाठ्यक्रमों में परिवर्तन के कारण शुल्क पर प्रभाव पड़ने पर, लागू होने पर अतिरिक्त शुल्क लिया जाएगा।",
+        "q_en": "Will I be charged an additional fee for corrections?",
+        "q_hi": "क्या मुझसे सुधार के لیے अतिरिक्त शुल्क लिया जाएगा?"
+      },
+      {
+        "a_en": "Yes, candidates are allowed to change examination city selection (all 04 preferences).",
+        "a_hi": "हाँ, उम्मीदवारों को परीक्षा शहर चयन (सभी 04 प्राथमिकताएं) बदलने की अनुमति है।",
+        "q_en": "Can I edit my exam cities?",
+        "q_hi": "क्या मैं अपने परीक्षा शहर बदल सकता हूँ?"
+      },
+      {
+        "a_en": "No, only one-time correction is allowed, and once submitted, the form shall be frozen.",
+        "a_hi": "नहीं, केवल एक बार सुधार की अनुमति है, और एक बार जमा करने के बाद, फॉर्म फ्रीज हो जाएगा।",
+        "q_en": "Is multiple-time correction allowed?",
+        "q_hi": "क्या कई बार सुधार की अनुमति है?"
       }
     ],
     "fees": [],
@@ -93,32 +145,36 @@
     "h1_hi": "एनटीए स्वाध्याय जुलाई 2026 सेमेस्टर परीक्षा करेक्शन विंडो खुली",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official SWAYAM portal.",
-      "Click on the application correction link.",
-      "Log in using your credentials.",
-      "Make the necessary changes and submit."
+      "Visit the official website at https://exams.nta.nic.in/swayam/",
+      "Click on the application correction link and login using your credentials",
+      "Verify your details and make the required corrections",
+      "Pay any additional fee if applicable and submit the form"
     ],
     "how_hi": [
-      "आधिकारिक स्वाध्याय पोर्टल पर जाएं।",
-      "आवेदन सुधार लिंक पर क्लिक करें।",
-      "अपने विवरण का उपयोग करके लॉगिन करें।",
-      "आवश्यक परिवर्तन करें और सबमिट करें।"
+      "आधिकारिक वेबसाइट https://exams.nta.nic.in/swayam/ पर जाएं",
+      "एप्लिकेशन करेक्शन लिंक पर क्लिक करें और अपने विवरण का उपयोग करके लॉगिन करें",
+      "अपने विवरण की जांच करें और आवश्यक सुधार करें",
+      "यदि लागू हो तो अतिरिक्त शुल्क का भुगतान करें और फॉर्म जमा करें"
     ],
-    "intro_en": "The National Testing Agency (NTA) has opened the online application form correction window for the Study Webs of Active Learning for Young Aspiring Minds (SWAYAM) July 2026 Semester Exam. Registered candidates who need to make changes to their submitted particulars can do so through the official website. Read the notice carefully to check which fields are editable and ensure all information is correct.",
-    "intro_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने स्टडी वेब्स ऑफ एक्टिव लर्निंग फॉर यंग आस्पायरींग माइंड्स (स्वाध्याय) जुलाई 2026 सेमेस्टर परीक्षा के लिए ऑनलाइन आवेदन पत्र सुधार विंडो खोल दी है। जिन पंजीकृत उम्मीदवारों को अपने जमा किए गए विवरण में परिवर्तन करने की आवश्यकता है, वे आधिकारिक वेबसाइट के माध्यम से ऐसा कर सकते हैं। यह देखने के लिए कि कौन से फ़ील्ड संपादित करने योग्य हैं और यह सुनिश्चित करने के लिए कि सभी जानकारी सही है, सूचना को ध्यान से पढ़ें।",
+    "intro_en": "The National Testing Agency has provided a one-time facility for candidates to make corrections in the particulars of their online application form for the SWAYAM July 2026 semester exam. Registered candidates can visit the official website to verify and edit their details. The correction window is active from 06 November to 07 November 2026 (up to 11:50 P.M.). Additional fees may apply for certain modifications such as category, PwD status, or course changes.",
+    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी ने स्वाध्याय जुलाई 2026 सेमेस्टर परीक्षा के लिए ऑनलाइन आवेदन पत्र के विवरण में सुधार करने के लिए उम्मीदवारों को एक बार की सुविधा प्रदान की है। पंजीकृत उम्मीदवार अपने विवरण की जांच करने और उनमें सुधार करने के लिए आधिकारिक वेबसाइट पर जा सकते हैं। करेक्शन विंडो 06 नवंबर से 07 नवंबर 2026 (रात 11:50 बजे तक) सक्रिय है। श्रेणी, दिव्यांगता स्थिति या पाठ्यक्रम परिवर्तन जैसे कुछ संशोधनों के लिए अतिरिक्त शुल्क लागू हो सकता है।",
     "last_date": null,
     "mistakes_en": [
-      "Do not miss the correction deadline.",
-      "Verify all details before final submission as further chances may not be provided."
+      "Do not miss the deadline of 07 November 2026 (11:50 P.M.)",
+      "Ensure careful review since only a one-time correction facility is allowed and the form freezes after submission"
     ],
     "mistakes_hi": [
-      "सुधार की समय सीमा न चूकें।",
-      "अंतिम सबमिशन से पहले सभी विवरणों की जांच करें क्योंकि आगे के अवसर प्रदान नहीं किए जा सकते हैं।"
+      "07 नवंबर 2026 (रात 11:50 बजे) की समय सीमा न चूकें",
+      "सावधानीपूर्वक समीक्षा सुनिश्चित करें क्योंकि केवल एक बार सुधार की अनुमति है और सबमिशन के बाद फॉर्म फ्रीज हो जाता है"
     ],
-    "not_en": [],
-    "not_hi": [],
-    "notice_date": null,
-    "official_site": "https://nta.ac.in/",
+    "not_en": [
+      "Candidates cannot change their registered Mobile Number and E-Mail address"
+    ],
+    "not_hi": [
+      "उम्मीदवार अपना पंजीकृत मोबाइल नंबर और ईमेल पता नहीं बदल सकते हैं"
+    ],
+    "notice_date": "2026-11-06",
+    "official_site": "https://nta.ac.in",
     "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
@@ -129,31 +185,41 @@
         "value_hi": "स्वाध्याय जुलाई 2026 सेमेस्टर परीक्षा"
       },
       {
-        "label_en": "Notice Type",
-        "label_hi": "सूचना का प्रकार",
-        "value_en": "Application Form Correction",
-        "value_hi": "आवेदन पत्र सुधार"
+        "label_en": "Correction Window",
+        "label_hi": "करेक्शन विंडो",
+        "value_en": "06 Nov to 07 Nov 2026 (up to 11:50 P.M.)",
+        "value_hi": "06 नवंबर से 07 नवंबर 2026 (रात 11:50 बजे तक)"
+      },
+      {
+        "label_en": "Exam Dates",
+        "label_hi": "परीक्षा तिथियां",
+        "value_en": "08, 09, 10, 11 and 12 December 2026",
+        "value_hi": "08, 09, 10, 11 और 12 दिसंबर 2026"
       }
     ],
     "salary": [],
-    "selection_en": [],
-    "selection_hi": [],
+    "selection_en": [
+      "CBT Mode Examination"
+    ],
+    "selection_hi": [
+      "सीबीटी मोड परीक्षा"
+    ],
     "share_card": {
-      "headline_en": "Application Correction",
-      "headline_hi": "आवेदन सुधार",
+      "headline_en": "Correction Window Open",
+      "headline_hi": "करेक्शन विंडो खुली",
       "kind": "corr",
       "line_en": "SWAYAM July 2026 Exam",
       "line_hi": "स्वाध्याय जुलाई 2026 परीक्षा",
       "posts": null
     },
-    "status_en": "Application form correction window open",
-    "status_hi": "आवेदन पत्र सुधार विंडो खुली",
-    "summary_en": "Candidates can now make corrections in the particulars of their online application form for the SWAYAM July 2026 semester exam. Review the notice for allowed correction fields and dates.",
-    "summary_hi": "उम्मीदवार अब स्वाध्याय जुलाई 2026 सेमेस्टर परीक्षा के लिए अपने ऑनलाइन आवेदन पत्र के विवरण में सुधार कर सकते हैं। अनुमति प्राप्त सुधार क्षेत्रों और तिथियों के लिए सूचना देखें।",
+    "status_en": "Correction window open till 07 Nov 2026",
+    "status_hi": "करेक्शन विंडो 07 नवंबर 2026 तक खुली है",
+    "summary_en": "National Testing Agency has opened the correction window for the SWAYAM July 2026 semester exam. Registered candidates can edit their application forms until 07 November 2026 (11:50 P.M.). Check details and make corrections online.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने स्वाध्याय जुलाई 2026 सेमेस्टर परीक्षा के लिए करेक्शन विंडो खोल दी है। पंजीकृत उम्मीदवार 07 नवंबर 2026 (रात 11:50 बजे) तक अपने आवेदन पत्र में सुधार कर सकते हैं। विवरण जांचें और ऑनलाइन सुधार करें।",
     "vacancies": [],
     "video_url": null,
     "who_en": [
-      "Registered candidates of SWAYAM July 2026 Semester Exam who need to edit their application forms"
+      "Registered candidates of SWAYAM July 2026 Semester Exam who need to edit their application form"
     ],
     "who_hi": [
       "स्वाध्याय जुलाई 2026 सेमेस्टर परीक्षा के पंजीकृत उम्मीदवार जिन्हें अपने आवेदन पत्र में सुधार करने की आवश्यकता है"
@@ -166,11 +232,17 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-06T08:24:15Z",
-  "qual": [],
   "rewrite": true,
   "slug": "nta-swayam-july-2026-semester-exam-correction-window-open",
   "source_id": "nta-home",
   "status": "approved",
   "title": "Correction in the particulars of the Online Application Form of Study Webs of Active Learning for Young Aspiring Minds (SWAYAM) July 2026 Semester Exam Read More",
-  "url": "https://nta.ac.in/Download/Notice/Notice_20261106103320.pdf"
+  "url": "https://nta.ac.in/Download/Notice/Notice_20261106103320.pdf",
+  "verify": {
+    "at": "2026-11-07",
+    "missing": [
+      "Exam date: 2026-12-08"
+    ],
+    "tries": 1
+  }
 }
