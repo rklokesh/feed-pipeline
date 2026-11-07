@@ -477,10 +477,10 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
 /* ===== Ad spaces: fixed-size grey boxes. Nothing inside can grow, float or leave the box (overflow hidden, fixed height,
    contain: strict). Only manual Google AdSense units go here; Auto ads, anchor and vignette ads stay OFF in AdSense.
    Until AdSense is approved each box shows our own Telegram card. ===== */
-.adslot { margin: 32px auto; width: 100%; max-width: 728px; }
+.adslot { margin: 32px 0; width: 100%; }   /* full width of the page column: same edges as the tabs, list and info boxes */
 html:not(.ads-on) .adslot { display: none !important; }   /* ad spaces stay out of sight until AdSense is live (add class ads-on to <html>) */
-.adslot.atop { margin: 8px auto 28px; }
-.adslot .adl { font-size: .6875rem; letter-spacing: .04em; color: var(--grey); text-align: center; margin: 0 0 6px; }
+.adslot.atop { margin: 8px 0 28px; }
+.adslot .adl { font-size: .6875rem; letter-spacing: .04em; color: var(--grey); text-align: left; margin: 0 0 6px; }
 .adslot .adbox { position: relative; height: 90px; width: 100%; margin: 0 auto; border-radius: 0; overflow: hidden; contain: strict;
   background: var(--soft); display: grid; place-items: center; }
 .adslot .adbox > * { max-width: 100%; max-height: 100%; }
@@ -488,14 +488,15 @@ html:not(.ads-on) .adslot { display: none !important; }   /* ad spaces stay out 
 .adslot .house:hover { text-decoration: underline; text-underline-offset: 4px; }
 .adslot .house img { width: 22px; height: 22px; flex: none; }
 @media (max-width: 640px) {
-  .adslot { margin: 28px auto; }
-  .adslot .adbox { width: 300px; height: 250px; }           /* in-content: 300x250 */
-  .adslot.slim .adbox { width: 320px; height: 100px; }      /* footer: 320x100 */
+  .adslot { margin: 28px 0; }
+  .adslot .adbox { height: 250px; }           /* in-content: full width x 250 (fits a 300x250 or a responsive unit) */
+  .adslot.slim .adbox { height: 100px; }      /* top / footer: full width x 100 */
   .adslot .house { flex-direction: column; gap: 12px; padding: 0 24px; }
   .adslot .house img { width: 34px; height: 34px; }
 }
 li.adrow { display: block !important; list-style: none; border: 0 !important; padding: 0 !important; background: none !important; cursor: default; }
-li.adrow .adslot { margin: 20px auto; }
+li.adrow .adslot { margin: 20px 0; }
+main > .adslot { margin: 0 !important; }   /* inside an article the page's own section spacing is enough */
 @media print { .adslot, li.adrow { display: none !important; } }
 @media (max-width: 640px) { html, body { overflow-x: clip; } }   /* never a sideways wobble on phones (clip keeps sticky bars working) */
 /* A/B: html.ab-old switches this whole desktop block off, giving the pre-restyle desktop. */
@@ -555,6 +556,7 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "SarkariChart", "alternateName": "सरकारी चार्ट", "url": "https://sarkarichart.pages.dev/", "logo": "https://sarkarichart.pages.dev/sarkarichart-logo.png", "sameAs": ["https://t.me/sarkarichart"], "description": "Govt jobs, admit cards, results and answer keys from official notices, in English and Hindi."}, {"@context": "https://schema.org", "@type": "WebSite", "name": "SarkariChart", "alternateName": "सरकारी चार्ट", "url": "https://sarkarichart.pages.dev/", "inLanguage": ["en-IN", "hi-IN"], "potentialAction": {"@type": "SearchAction", "target": "https://sarkarichart.pages.dev/?q={search_term_string}", "query-input": "required name=search_term_string"}}]</script>
 <script>window.SC_PRESET = {"st": "jammu-kashmir"};</script>
+<script>if(/[?&]ads(&|=|$)/.test(location.search))document.documentElement.classList.add("ads-on")</script>
 </head>
 <body>
 
