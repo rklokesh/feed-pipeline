@@ -543,6 +543,20 @@ main > .adslot { margin: 0 !important; }   /* inside an article the page's own s
   html.v2:not(.ab-old) .tscroll .list li:last-child { border-bottom: 0; }
   html.v2:not(.ab-old) .tscroll li.adrow { border-top: 1px solid var(--line) !important; }
 }
+/* Phones on the normal site: the plain sarkari header, text tabs with an underline, a simple search line (same as desktop). /v2/ keeps the app look. */
+@media (max-width: 640px) {
+  html.v2.ab-old .top { position: relative; background: none; -webkit-backdrop-filter: none; backdrop-filter: none; border-bottom: 0; }
+  html.v2.ab-old.bar-compact .top:has(> .g) { padding-top: 10px; padding-bottom: 10px; }
+  html.v2.ab-old.bar-compact .top:has(> .g) .logo img, html.v2.ab-old.bar-compact .top:has(> .g) .logo .mark { width: 76px; height: 76px; }
+  html.v2.ab-old .tabs { gap: 4px 22px; padding-bottom: 2px; -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent); }
+  html.v2.ab-old .tabs .ink { display: block; }
+  html.v2.ab-old .tabs button { padding: 4px 0 7px; border-radius: 0; background: none; color: var(--grey); font-size: 1rem; }
+  html.v2.ab-old .tabs button[aria-pressed="true"] { background: none; color: var(--ink); }
+  html.v2.ab-old .search { margin-bottom: 18px; }
+  html.v2.ab-old .search input { background: none; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; padding: 10px 92px 10px 28px; }
+  html.v2.ab-old .search input:focus { background: none; border-bottom-color: var(--ink); }
+  html.v2.ab-old .sicon { left: 0; } html.v2.ab-old .ph { left: 28px; } html.v2.ab-old .sx { right: 0; }
+}
 /* Phones on the normal site: हिंदी and the moon as plain header links, same as the notice pages (sarkari, clean). The glass pill stays on /v2/. */
 @media (max-width: 640px) {
   html.v2.ab-old .top .nav-r { background: none !important; border: 0 !important; box-shadow: none !important; -webkit-backdrop-filter: none !important; backdrop-filter: none !important;
