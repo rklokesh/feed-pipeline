@@ -33,132 +33,116 @@
   "page": {
     "after_en": [
       "Shortlisted candidates will be called for selection tests/interviews.",
-      "Selected candidates will be appointed on regular or contractual terms as specified."
+      "Selected candidates will undergo document verification and appointment."
     ],
     "after_hi": [
       "शॉर्टलिस्ट किए गए उम्मीदवारों को चयन परीक्षा/साक्षात्कार के लिए बुलाया जाएगा।",
-      "चयनित उम्मीदवारों को निर्दिष्ट के अनुसार नियमित या संविदा शर्तों पर नियुक्त किया जाएगा।"
+      "चयनित उम्मीदवारों का दस्तावेज सत्यापन और नियुक्ति की जाएगी।"
     ],
     "age": [
       {
-        "label_en": "TGT (Computer Science) age limit",
-        "label_hi": "टीजीटी (कंप्यूटर साइंस) आयु सीमा",
-        "value_en": "21 to 35 years as on date of receipt of application",
-        "value_hi": "आवेदन प्राप्ति की तिथि को 21 से 35 वर्ष"
+        "label_en": "Age limit for TGT",
+        "label_hi": "टीजीटी के लिए आयु सीमा",
+        "value_en": "21 to 35 years",
+        "value_hi": "21 से 35 वर्ष"
       }
     ],
     "apply_start": null,
-    "apply_url": "https://www.sainikschoolnagrota.com",
+    "apply_url": "https://www.sainikschoolnagrota.nic.in",
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check eligibility criteria for the desired post",
-      "Download the official application form",
-      "Fill out all details accurately",
-      "Post the application to the school before 23 November 2026"
+      "Check eligibility criteria",
+      "Download and fill the offline application form",
+      "Attach self-attested documents",
+      "Send via post before the last date"
     ],
     "checklist_hi": [
-      "वांछित पद के लिए पात्रता मानदंड की जाँच करें",
-      "आधिकारिक आवेदन पत्र डाउनलोड करें",
-      "सभी विवरणों को सही ढंग से भरें",
-      "23 नवंबर 2026 से पहले स्कूल में आवेदन डाक से भेजें"
+      "पात्रता मापदंडों की जांच करें",
+      "ऑफ़लाइन आवेदन पत्र डाउनलोड करें और भरें",
+      "स्व-प्रमाणित दस्तावेज संलग्न करें",
+      "अंतिम तिथि से पहले डाक से भेजें"
     ],
     "conducted_by_en": "Sainik School Nagrota (SS Nagrota)",
     "conducted_by_hi": "सैनिक स्कूल नग्रोटा",
     "dates": [
       {
-        "label_en": "Employment News issue date",
-        "label_hi": "रोजगार समाचार अंक तिथि",
-        "value_en": "31 Oct 2026",
-        "value_hi": "31 अक्तूबर 2026"
-      },
-      {
-        "label_en": "Last date for receiving applications",
-        "label_hi": "आवेदन प्राप्त होने की अंतिम तिथि",
+        "label_en": "Last date to apply",
+        "label_hi": "आवेदन की अंतिम तिथि",
         "value_en": "23 Nov 2026",
         "value_hi": "23 नवम् 2026"
       }
     ],
     "documents_en": [
-      "Educational certificates and mark sheets",
+      "Educational certificates",
       "Experience certificates",
-      "Caste / Identity proof",
-      "Application form as prescribed by the school"
+      "CTET/STET certificate (for TGT)",
+      "ID proof",
+      "Passport size photographs"
     ],
     "documents_hi": [
-      "शैक्षणिक प्रमाण पत्र और अंक तालिका",
+      "शैक्षणिक प्रमाण पत्र",
       "अनुभव प्रमाण पत्र",
-      "जाति / पहचान प्रमाण",
-      "स्कूल द्वारा निर्धारित आवेदन पत्र"
+      "सीटीईटी/एसटीईटी प्रमाण पत्र (टीजीटी के लिए)",
+      "पहचान प्रमाण",
+      "पासपोर्ट साइज फोटोग्राफ"
     ],
     "eligibility": [
       {
         "label_en": "TGT (Computer Science)",
         "label_hi": "टीजीटी (कंप्यूटर साइंस)",
-        "value_en": "Graduation in Computer Science/BCA/B.Sc/B.Tech in IT with at least 50% marks, plus CTET/STET-II, and Bachelor's degree in Education (B.Ed.) from a recognized institution.",
-        "value_hi": "कंप्यूटर साइंस में स्नातक/बीसीए/बी.एससी/आईटी में बी.टेक कम से कम 50% अंकों के साथ, साथ ही सीटीईटी/एसटीईटी-II, और मान्यता प्राप्त संस्थान से शिक्षा में स्नातक (बी.एड.)।"
+        "value_en": "Graduation in Computer Science/BCA/B.Tech or equivalent with CTET-II/STET qualification and B.Ed.",
+        "value_hi": "कंप्यूटर साइंस में स्नातक/बीसीए/बी.टेक या समकक्ष, सीटीईटी-द्वितीय/एसटीईटी योग्यता और बीएड।"
       },
       {
         "label_en": "Art Master",
         "label_hi": "आर्ट मास्टर",
-        "value_en": "Higher Secondary/Intermediate with 5 years (full time) / 7 years (part time) diploma in Painting/Drawing and Painting from a recognized University/Institute, OR Graduate with Fine Arts/Art/Painting.",
-        "value_hi": "मान्यता प्राप्त विश्वविद्यालय/संस्थान से पेंटिंग/ड्राइंग और पेंटिंग में 5 साल (पूर्णकालिक) / 7 साल (अंशकालिक) डिप्लोमा के साथ उच्च माध्यमिक/इंटरमीडिएट, या ललित कला/कला/पेंटिंग के साथ स्नातक।"
+        "value_en": "Higher Secondary/Intermediate with Graduate/Diploma in Fine Arts/Painting/Drawing.",
+        "value_hi": "हायर सेकेंडरी/इंटरमीडिएट के साथ फाइन आर्ट्स/पेंटिंग/ड्राइंग में स्नातक या डिप्लोमा।"
       },
       {
         "label_en": "Nursing Sister",
         "label_hi": "नर्सिंग सिस्टर",
-        "value_en": "Nursing Diploma/Degree from a recognized Indian/State Nursing Council with experience in hospital or clinic.",
-        "value_hi": "मान्यता प्राप्त भारतीय/राज्य नर्सिंग काउंसिल से नर्सिंग डिप्लोमा/डिग्री और अस्पताल या诊क्linic में कार्य करने का अनुभव।"
+        "value_en": "Nursing Diploma/Degree from a recognized institution with hospital/clinic experience.",
+        "value_hi": "मान्यता प्राप्त संस्थान से नर्सिंग डिप्लोमा/डिग्री और अस्पताल/क्लीनिक का अनुभव।"
       }
     ],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "Sainik School Nagrota recruits qualified teaching and support staff on regular and contractual bases to support residential school operations under the Ministry of Defence.",
-        "a_hi": "सैनिक स्कूल नग्रोटा रक्षा मंत्रालय के तहत आवासीय स्कूल के संचालन के लिए नियमित और संविदा के आधार पर योग्य शिक्षण और सहायता कर्मचारियों की भर्ती करता है।",
+        "a_en": "It is a recruitment drive conducted by Sainik School Nagrota, Jammu and Kashmir for filling up teaching and non-teaching positions such as TGT, Art Master, and Nursing Sister.",
+        "a_hi": "यह सैनिक स्कूल नग्रोटा, जम्मू और कश्मीर द्वारा टीजीटी, आर्ट मास्टर और नर्सिंग सिस्टर जैसे शिक्षण और गैर-शिक्षण पदों को भरने के लिए आयोजित एक भर्ती अभियान है।",
         "q_en": "What is Sainik School Nagrota Recruitment?",
         "q_hi": "सैनिक स्कूल नग्रोटा भर्ती क्या है?"
       }
     ],
     "extra": [
       {
-        "label_en": "TGT Pay Scale",
-        "label_hi": "टीजीटी वेतनमान",
-        "value_en": "Pay Level 7 (₹44,900) as per 7th CPC",
-        "value_hi": "सातवें वेतन आयोग के अनुसार वेतन स्तर 7 (₹44,900)"
-      },
-      {
-        "label_en": "Art Master Salary",
-        "label_hi": "आर्ट मास्टर वेतन",
-        "value_en": "₹35,000 per month consolidated (with rent free accommodation and free messing)",
-        "value_hi": "₹35,000 प्रति माह समेकित (किराया मुक्त आवास और मुफ्त मेसिंग के साथ)"
+        "label_en": "Accommodation",
+        "label_hi": "आवास",
+        "value_en": "Rent free suitable accommodation and free messing with cadets for contractual posts.",
+        "value_hi": "संविदात्मक पदों के लिए किराया मुक्त उपयुक्त आवास और कैडेटों के साथ निःशुल्क मेसिंग।"
       }
     ],
     "faq": [
       {
-        "a_en": "The last date to apply is within 21 days from the date of advertisement publication, which is 23 November 2026.",
-        "a_hi": "आवेदन करने की अंतिम तिथि विज्ञापन प्रकाशन की तिथि से 21 दिन यानी 23 नवंबर 2026 है।",
-        "q_en": "What is the last date to apply for Sainik School Nagrota Recruitment 2026?",
-        "q_hi": "सैनिक स्कूल नग्रोटा भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+        "a_en": "The last date to apply is within 21 days from the date of publication of the advertisement in Employment News (23 November 2026).",
+        "a_hi": "आवेदन करने की अंतिम तिथि रोजगार समाचार में विज्ञापन प्रकाशित होने की तिथि से 21 दिन (23 नवंबर 2026) के भीतर है।",
+        "q_en": "What is the last date to apply for Sainik School Nagrota Recruitment?",
+        "q_hi": "सैनिक स्कूल नग्रोटा भर्ती के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "A total of 3 vacancies are announced for TGT, Art Master, and Nursing Sister posts.",
-        "a_hi": "टीजीटी, आर्ट मास्टर और नर्सिंग सिस्टर के पदों के लिए कुल 3 रिक्तियों की घोषणा की गई है।",
-        "q_en": "How many vacancies are available in this recruitment?",
-        "q_hi": "इस भर्ती में कुल कितने पद उपलब्ध हैं?"
+        "a_en": "The posts available are TGT (Computer Science), Art Master, and Nursing Sister.",
+        "a_hi": "उपलब्ध पद टीजीटी (कंप्यूटर साइंस), आर्ट मास्टर और नर्सिंग सिस्टर हैं।",
+        "q_en": "What posts are available in Sainik School Nagrota Recruitment?",
+        "q_hi": "सैनिक स्कूल नग्रोटा भर्ती में कौन से पद उपलब्ध हैं?"
       },
       {
-        "a_en": "Applications must be submitted offline by post to the school address.",
-        "a_hi": "आवेदन डाक द्वारा ऑफलाइन स्कूल के पते पर भेजे जाने चाहिए।",
-        "q_en": "What is the mode of application?",
-        "q_hi": "आवेदन का माध्यम क्या है?"
-      },
-      {
-        "a_en": "You can download the application form from the official website www.sainikschoolnagrota.com under the 'Notices' section.",
-        "a_hi": "आप आधिकारिक वेबसाइट www.sainikschoolnagrota.com से 'नोटिस' अनुभाग के तहत आवेदन पत्र डाउनलोड कर सकते हैं।",
-        "q_en": "Where can I download the application form?",
-        "q_hi": "मैं आवेदन पत्र कहाँ से डाउनलोड कर सकता हूँ?"
+        "a_en": "The application mode is offline.",
+        "a_hi": "आवेदन का तरीका ऑफलाइन है।",
+        "q_en": "Is the application mode online or offline?",
+        "q_hi": "आवेदन का तरीका ऑनलाइन है या ऑफलाइन?"
       }
     ],
     "fees": [],
@@ -166,57 +150,48 @@
     "h1_hi": "सैनिक स्कूल नग्रोटा भर्ती 2026 – टीजीटी, आर्ट मास्टर, नर्सिंग सिस्टर पदों के लिए ऑफलाइन आवेदन करें",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official website www.sainikschoolnagrota.com",
-      "Download the application form under the head Notices",
-      "Fill out the application form carefully and attach required documents",
-      "Send the application to the school address before the last date"
+      "Download the application form from the official website www.sainikschoolnagrota.nic.in under the 'Notices' head.",
+      "Fill up the application form carefully with required details.",
+      "Attach self-attested copies of certificates and send the application to the Principal, Sainik School Nagrota by post within 21 days of advertisement."
     ],
     "how_hi": [
-      "आधिकारिक वेबसाइट www.sainikschoolnagrota.com पर जाएं",
-      "नोटिस के तहत आवेदन पत्र डाउनलोड करें",
-      "आवेदन पत्र को ध्यान से भरें और आवश्यक दस्तावेज संलग्न करें",
-      "अंतिम तिथि से पहले स्कूल के पते पर आवेदन भेजें"
+      "आधिकारिक वेबसाइट www.sainikschoolnagrota.nic.in पर 'Notices' सेक्शन से आवेदन पत्र डाउनलोड करें।",
+      "आवश्यक विवरण के साथ आवेदन पत्र को ध्यान से भरें।",
+      "प्रमाण पत्र की स्व-प्रमाणित प्रतियां संलग्न करें और विज्ञापन के 21 दिनों के भीतर प्रिंसिपल, सैनिक स्कूल नग्रोटा को डाक द्वारा भेजें।"
     ],
-    "intro_en": "Sainik School Nagrota (Jammu and Kashmir), operating under the Sainik Schools Society, Ministry of Defence, has released a recruitment notification for teaching and support staff. The notification invites applications for 3 posts including TGT (Computer Science), Art Master, and Nursing Sister. The last date for receiving applications is 21 days from the date of publication of the advertisement in Employment News (31 October - 06 November 2026 issue). Candidates should check eligibility criteria and download the application form from the official website.",
-    "intro_hi": "रक्षा मंत्रालय के सैनिक स्कूल सोसाइटी के तहत संचालित सैनिक स्कूल नग्रोटा (जम्मू और कश्मीर) ने शिक्षण और सहायता कर्मचारियों के लिए एक भर्ती अधिसूचना जारी की है। इस अधिसूचना के तहत टीजीटी (कंप्यूटर साइंस), आर्ट मास्टर और नर्सिंग सिस्टर सहित 3 पदों पर आवेदन मांगे गए हैं। आवेदन प्राप्त करने की अंतिम तिथि रोजगार समाचार (31 अक्टूबर - 06 नवंबर 2026 अंक) में विज्ञापन प्रकाशन की तिथि से 21 दिन है। उम्मीदवार पात्रता मानदंड की जांच करें और आधिकारिक वेबसाइट से आवेदन पत्र डाउनलोड करें।",
+    "intro_en": "Sainik School Nagrota, Jammu and Kashmir has released a recruitment notification for teaching and non-teaching posts including TGT (Computer Science), Art Master, and Nursing Sister on regular and contractual bases under the aegis of Sainik Schools Society, Ministry of Defence, Government of India. There are a total of 3 vacancies available. Interested and eligible candidates must submit their offline applications within 21 days from the date of publication of the advertisement in Employment News. Candidates should read the official notification carefully before applying.",
+    "intro_hi": "सैनिक स्कूल नग्रोटा, जम्मू और कश्मीर ने भारत सरकार के रक्षा मंत्रालय के सैनिक स्कूल सोसाइटी के तहत टीजीटी (कंप्यूटर साइंस), आर्ट मास्टर और नर्सिंग सिस्टर सहित शिक्षण और गैर-शिक्षण पदों के लिए भर्ती विज्ञापन जारी किया है। कुल 3 वैकेंसी उपलब्ध हैं। योग्य और इच्छुक उम्मीदवार रोजगार समाचार में विज्ञापन प्रकाशित होने की तिथि से 21 दिनों के भीतर अपने ऑफलाइन आवेदन भेज सकते हैं।",
     "last_date": "2026-11-23",
     "mistakes_en": [
-      "Sending applications after the 21-day deadline",
-      "Providing incomplete information or missing required certificates"
+      "Submitting the application after the last date.",
+      "Failing to attach required documents and self-attestations."
     ],
     "mistakes_hi": [
-      "21 दिन की समय सीमा के बाद आवेदन भेजना",
-      "अपूर्ण जानकारी देना या आवश्यक प्रमाण पत्र गायब होना"
+      "अंतिम तिथि के बाद आवेदन जमा करना।",
+      "आवश्यक दस्तावेज और स्व-प्रमाणन संलग्न करना भूल जाना।"
     ],
     "not_en": [
-      "Applications received after the last date will not be considered."
+      "Candidates who fail to submit applications within 21 days of the advertisement or do not possess the required qualifications."
     ],
     "not_hi": [
-      "अंतिम तिथि के बाद प्राप्त आवेदनों पर विचार नहीं किया जाएगा।"
+      "जो उम्मीदवार विज्ञापन के 21 दिनों के भीतर आवेदन जमा करने में असफल रहते हैं या जिनके पास आवश्यक योग्यता नहीं है।"
     ],
     "notice_date": "2026-10-31",
-    "official_site": "https://www.sainikschoolnagrota.com",
-    "physical": [
-      {
-        "label_en": "General Fitness",
-        "label_hi": "सामान्य फिटनेस",
-        "value_en": "Candidates should be physically fit",
-        "value_hi": "उम्मीदवार शारीरिक रूप से स्वस्थ होने चाहिए"
-      }
-    ],
+    "official_site": "https://www.sainikschoolnagrota.nic.in",
+    "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Total vacancies",
-        "label_hi": "कुल रिक्तियां",
-        "value_en": "3",
-        "value_hi": "3"
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "TGT, Art Master, Nursing Sister",
+        "value_hi": "टीजीटी, आर्ट मास्टर, नर्सिंग सिस्टर"
       },
       {
-        "label_en": "Post names",
-        "label_hi": "पद के नाम",
-        "value_en": "TGT (Computer Science), Art Master, Nursing Sister",
-        "value_hi": "टीजीटी (कंप्यूटर साइंस), आर्ट मास्टर, नर्सिंग सिस्टर"
+        "label_en": "Total vacancies",
+        "label_hi": "कुल वैकेंसी",
+        "value_en": "3",
+        "value_hi": "3"
       },
       {
         "label_en": "Last date to apply",
@@ -225,24 +200,24 @@
         "value_hi": "23 नवम् 2026"
       },
       {
-        "label_en": "Mode of application",
-        "label_hi": "आवेदन का माध्यम",
-        "value_en": "Offline",
-        "value_hi": "ऑफ़लाइन"
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "21 to 35 years",
+        "value_hi": "21 से 35 वर्ष"
       },
       {
-        "label_en": "Official website",
-        "label_hi": "आधिकारिक वेबसाइट",
-        "value_en": "www.sainikschoolnagrota.com",
-        "value_hi": "www.sainikschoolnagrota.com"
+        "label_en": "Mode of application",
+        "label_hi": "आवेदन का तरीका",
+        "value_en": "Offline",
+        "value_hi": "ऑफ़लाइन"
       }
     ],
     "salary": [
       {
-        "label_en": "TGT Pay Level",
-        "label_hi": "टीजीटी वेतन स्तर",
-        "value_en": "Pay Level 7 (₹44,900) + allowances",
-        "value_hi": "वेतन स्तर 7 (₹44,900) + भत्ते"
+        "label_en": "TGT Pay",
+        "label_hi": "टीजीटी वेतन",
+        "value_en": "Pay Level 7 (₹44,900 to ₹1,42,400) or as per rules",
+        "value_hi": "वेतन स्तर 7 (₹44,900 से ₹1,42,400)"
       },
       {
         "label_en": "Art Master Consolidated Salary",
@@ -252,43 +227,45 @@
       }
     ],
     "selection_en": [
-      "Verification of applications and documents",
-      "Interview / Skill test as per school selection procedure"
+      "Scrutiny of offline applications",
+      "Written test / Interview / Skill test as applicable",
+      "Document verification"
     ],
     "selection_hi": [
-      "आवेदन और दस्तावेजों का सत्यापन",
-      "स्कूल चयन प्रक्रिया के अनुसार साक्षात्कार / कौशल परीक्षण"
+      "ऑफ़लाइन आवेदनों की संवीक्षा",
+      "लिखित परीक्षा / साक्षात्कार / कौशल परीक्षण",
+      "दस्तावेज़ सत्यापन"
     ],
     "share_card": {
       "headline_en": "Recruitment 2026",
       "headline_hi": "भर्ती 2026",
       "kind": "job",
-      "line_en": "TGT, Art Master & Nursing Sister",
-      "line_hi": "टीजीटी, आर्ट मास्टर और नर्सिंग सिस्टर",
+      "line_en": "TGT, Art Master, Nursing Sister",
+      "line_hi": "टीजीटी, आर्ट मास्टर, नर्सिंग सिस्टर",
       "posts": 3
     },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "Sainik School Nagrota has issued a recruitment notice for TGT (Computer Science), Art Master, and Nursing Sister posts. Eligible candidates must apply within 21 days of advertisement publication in Employment News. Read the details for qualifications, age limit, and application process.",
-    "summary_hi": "सैनिक स्कूल नग्रोटा ने टीजीटी (कंप्यूटर साइंस), आर्ट मास्टर और नर्सिंग सिस्टर पदों के लिए भर्ती सूचना जारी की है। योग्य उम्मीदवार रोजगार समाचार में विज्ञापन प्रकाशन के 21 दिनों के भीतर आवेदन करें।",
+    "summary_en": "Sainik School Nagrota has issued a recruitment notice for TGT, Art Master, and Nursing Sister posts. Eligible candidates should apply offline within 21 days of the advertisement.",
+    "summary_hi": "सैनिक स्कूल नग्रोटा ने टीजीटी, आर्ट मास्टर और नर्सिंग सिस्टर पदों के लिए भर्ती सूचना जारी है। योग्य उम्मीदवार विज्ञापन के 21 दिनों के भीतर ऑफलाइन आवेदन करें।",
     "vacancies": [
       {
-        "detail_en": "UR Category, Regular/Contractual",
-        "detail_hi": "अनारक्षित श्रेणी, नियमित/संविदा",
+        "detail_en": "UR Category",
+        "detail_hi": "सामान्य वर्ग",
         "post_en": "TGT (Computer Science)",
         "post_hi": "टीजीटी (कंप्यूटर साइंस)",
         "total": "1"
       },
       {
-        "detail_en": "UR Category, Contractual",
-        "detail_hi": "अनारक्षित श्रेणी, संविदा",
+        "detail_en": "UR Category",
+        "detail_hi": "सामान्य वर्ग",
         "post_en": "Art Master",
         "post_hi": "आर्ट मास्टर",
         "total": "1"
       },
       {
         "detail_en": "Contractual",
-        "detail_hi": "संविदा",
+        "detail_hi": "संविदात्मक",
         "post_en": "Nursing Sister (Female)",
         "post_hi": "नर्सिंग सिस्टर (महिला)",
         "total": "1"
@@ -296,10 +273,10 @@
     ],
     "video_url": null,
     "who_en": [
-      "Candidates possessing required educational qualifications and age limits for TGT, Art Master, or Nursing Sister posts."
+      "Eligible candidates meeting the educational and age criteria for TGT, Art Master, or Nursing Sister posts."
     ],
     "who_hi": [
-      "टीजीटी, आर्ट मास्टर या नर्सिंग सिस्टर पदों के लिए आवश्यक शैक्षणिक योग्यता और आयु सीमा रखने वाले उम्मीदवार।"
+      "टीजीटी, आर्ट मास्टर या नर्सिंग सिस्टर पदों के लिए शैक्षणिक और आयु मानदंडों को पूरा करने वाले योग्य उम्मीदवार।"
     ]
   },
   "pdf": {
@@ -309,11 +286,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-07T06:25:42Z",
-  "qual": [
-    "diploma",
-    "graduate"
-  ],
-  "rewrite": true,
   "slug": "sainik-school-nagrota-recruitment-2026-apply-offline-for-tgt-art",
   "source_id": "employment-news-ads",
   "status": "approved",
