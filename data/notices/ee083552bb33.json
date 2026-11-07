@@ -1,5 +1,20 @@
 {
   "board_url": "https://sssc.uk.gov.in/recruitment-notification/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Accessibility or internal notice not relevant for job listing",
+    "summary_en": "This is an internal or accessibility notice and is not listed for applicants.",
+    "summary_hi": "यह एक आंतरिक या पहुंच सूचना है और आवेदकों के लिए सूचीबद्ध नहीं है।",
+    "title_en": "UKSSSC Notice",
+    "title_hi": "UKSSSC सूचना",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "uksssc-recruitment",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Accessible Version : View (385 KB)",
   "url": "https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/202611041544129192.pdf"
 }
