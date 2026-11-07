@@ -483,7 +483,8 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
    Until AdSense is approved each box shows our own Telegram card. ===== */
 .adslot { margin: 32px 0; width: 100%; }   /* full width of the page column: same edges as the tabs, list and info boxes */
 html:not(.ads-on) .adslot { display: none !important; }   /* ad spaces stay out of sight until AdSense is live (add class ads-on to <html>) */
-.adslot.atop { margin: 8px 0 28px; }
+.adslot.atop { margin: 8px 0 24px; }
+html.ads-on .adslot.atop + main { margin-top: 0; }   /* top ad: one even gap down to the tabs, not two stacked */
 .adslot .adl { font-size: .6875rem; letter-spacing: .04em; color: var(--grey); text-align: left; margin: 0 0 6px; }
 .adslot .adbox { position: relative; height: 90px; width: 100%; margin: 0 auto; border-radius: 0; overflow: hidden; contain: strict;
   background: var(--soft); display: grid; place-items: center; }
