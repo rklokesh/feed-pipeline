@@ -1,0 +1,27 @@
+{
+  "board_url": "https://ssc.gov.in/home/notice-board",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "ated module available on the Commission’s official website (https://ssc.gov.in/) starting from 13.11.2026 at 05:00 PM onwards. 3. Candidates must note that phy",
+      "source": "rule",
+      "value": "https://ssc.gov.in/"
+    }
+  },
+  "first_seen": "2026-11-07T15:57:00+00:00",
+  "id": "98137f410a7f",
+  "kind": "result",
+  "org": "SSC",
+  "pdf": {
+    "bytes": 322952,
+    "pages": 1,
+    "sha256": "5e57ef5f1b4d977c57cb614aeee1f937d13c811aec8b456bdce6dcbe33e85cc3",
+    "text_kind": "text"
+  },
+  "source_id": "ssc-notice-board",
+  "status": "pending_review",
+  "title": "Identity Verification (IV) for the candidates shortlisted in FRTA of Combined Hindi Translators Examination, 2025 - reg.",
+  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/CHT 2025 FRTA notice 07112026.pdf"
+}
