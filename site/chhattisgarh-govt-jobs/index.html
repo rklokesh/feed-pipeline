@@ -1481,7 +1481,13 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
   });
   try {
     const startQ = new URL(location.href).searchParams.get("q");
-    if (startQ) { const qi = document.getElementById("q"); qi.value = startQ; q = startQ.trim().toLowerCase(); }
+    if (startQ) { const qi = document.getElementById("q"); qi.value = startQ; q = startQ.trim().toLowerCase(); qi.dispatchEvent(new Event("input")); }
+    // Coming back from a notice (back button / swipe): the browser may restore the page with the filter still on but the
+    // search box emptied (or the other way round). The box and the list must always agree: take the word from the address.
+    addEventListener("pageshow", () => {
+      const qi = document.getElementById("q"), want = new URL(location.href).searchParams.get("q") || "";
+      if (qi.value.trim().toLowerCase() !== q || (want && qi.value !== want && !qi.value)) { qi.value = want; qi.dispatchEvent(new Event("input")); }
+    });
     // ?cat=jobs|closing-soon|admit-cards|results|answer-keys opens that tab (used by notice-page breadcrumbs)
     // categories without a tab of their own (Closing soon, Answer keys) still open from links: the list filters, no tab lights up
     const openCat = c => { const b = document.querySelector(`.tabs button[data-cat="${c}"]`); if (b) b.click(); else { setCat(c); update(); } };
