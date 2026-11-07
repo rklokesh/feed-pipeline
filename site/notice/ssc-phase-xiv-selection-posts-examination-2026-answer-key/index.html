@@ -1031,7 +1031,7 @@ li.adrow .adslot { margin: 20px auto; }
     },
   };
   let lang = "en";
-  try { const saved = localStorage.getItem("sc-lang"); if (saved === "hi" || (!saved && /^hi\b/i.test(navigator.language || ""))) lang = "hi"; } catch (e) {}
+  try { const saved = localStorage.getItem("sc-lang"); if (saved === "hi" || (!saved && (navigator.languages || [navigator.language || ""]).some(l => /^hi\b/i.test(l)))) lang = "hi"; } catch (e) {}
   const t = k => T[lang][k];
   const last = null;
 

@@ -31,40 +31,40 @@
   "issue": 1174,
   "issue_tidy": true,
   "kind": "update",
-  "notice_date": "2026-11-08",
+  "notice_date": "2026-11-04",
   "org": "BSF",
   "page": {
     "after_en": [
-      "Review of submitted objections by subject matter experts",
+      "Review of objections by subject experts",
       "Declaration of final results based on revised answer keys"
     ],
     "after_hi": [
-      "विषय विशेषज्ञों द्वारा प्रस्तुत आपत्तियों की समीक्षा",
-      "संशोधित उत्तर कुंजियों के आधार पर अंतिम परिणामों की घोषणा"
+      "विषय विशेषज्ञों द्वारा आपत्तियों की समीक्षा",
+      "संशोधित उत्तर कुंजी के आधार पर अंतिम परिणाम की घोषणा"
     ],
     "age": [],
     "apply_start": null,
-    "apply_url": "https://rectt.bsf.gov.in/",
+    "apply_url": null,
     "changes": [
       {
-        "new_en": "Extended closing date",
-        "new_hi": "बढ़ाई गई अंतिम तिथि",
-        "old_en": "Previous closing date",
-        "old_hi": "पिछली अंतिम तिथि",
-        "what_en": "Objection portal closing date",
-        "what_hi": "आपत्ति पोर्टल की अंतिम तिथि"
+        "new_en": "09 Nov 2026 (up to 11:55 PM)",
+        "new_hi": "09 नवंबर 2026 (रात 11:55 बजे तक)",
+        "old_en": "Not specified in this notice (extended from previous schedule)",
+        "old_hi": "इस नोटिस में निर्दिष्ट नहीं",
+        "what_en": "Closing date for objection management portal",
+        "what_hi": "आपत्ति प्रबंधन पोर्टल की अंतिम तिथि"
       }
     ],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check official website for the extended deadline notice",
-      "Keep login details ready",
-      "Submit valid proofs for any question challenged"
+      "Keep your login credentials ready",
+      "Check response sheets against answer keys",
+      "Gather documentary proof for objections"
     ],
     "checklist_hi": [
-      "विस्तारित समय सीमा के नोटिस के लिए आधिकारिक वेबसाइट देखें",
-      "लॉगिन विवरण तैयार रखें",
-      "चुनौती दिए गए किसी भी प्रश्न के लिए वैध प्रमाण प्रस्तुत करें"
+      "अपने लॉगिन विवरण तैयार रखें",
+      "उत्तर कुंजी के मुकाबले रिस्पांस शीट की जांच करें",
+      "आपत्तियों के लिए दस्तावेजी प्रमाण एकत्र करें"
     ],
     "conducted_by_en": "Border Security Force (BSF)",
     "conducted_by_hi": "सीमा सुरक्षा बल (बीएसएफ)",
@@ -73,47 +73,57 @@
         "label_en": "CBT Exam Date",
         "label_hi": "सीबीटी परीक्षा तिथि",
         "value_en": "02 Nov 2026",
-        "value_hi": "02 नव 2026"
+        "value_hi": "02 नवंबर 2026"
+      },
+      {
+        "label_en": "Initial Notice Date for Objections",
+        "label_hi": "आपत्तियों के लिए प्रारंभिक नोटिस तिथि",
+        "value_en": "04 Nov 2026",
+        "value_hi": "04 नवंबर 2026"
+      },
+      {
+        "label_en": "Extended Last Date for Objection",
+        "label_hi": "आपत्ति के लिए अंतिम तिथि बढ़ाई गई",
+        "value_en": "09 Nov 2026",
+        "value_hi": "09 नवंबर 2026"
       }
     ],
     "documents_en": [
-      "Login credentials (Roll Number, Password)",
-      "Supporting documentary proof for objections"
+      "Relevant supporting documents for raising objections"
     ],
     "documents_hi": [
-      "लॉगिन विवरण (रोल नंबर, पासवर्ड)",
-      "आपत्तियों के लिए सहायक दस्तावेजी प्रमाण"
+      "आपत्ति दर्ज कराने के लिए प्रासंगिक सहायक दस्तावेज"
     ],
     "eligibility": [],
     "exam_date": "2026-11-02",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is an online facility provided by the Border Security Force allowing candidates to raise objections against provisional answer keys of the CBT exam held on 02.11.2026 for Head Constable (RO) and Head Constable (RM) posts.",
-        "a_hi": "यह सीमा सुरक्षा बल द्वारा प्रदान की जाने वाली एक ऑनलाइन सुविधा है जो उम्मीदवारों को हेड कांस्टेबल (आरओ) और हेड कांस्टेबल (आरएम) पदों के लिए 02.11.2026 को आयोजित सीबीटी परीक्षा की अनंतिम उत्तर कुंजी के खिलाफ आपत्तियां उठाने की अनुमति देती है।",
-        "q_en": "What is the BSF HC RO/RM Objection Portal?",
-        "q_hi": "बीएसएफ एचसी आरओ/आरएम आपत्ति पोर्टल क्या है?"
+        "a_en": "It is an online window provided by the Border Security Force where candidates who appeared for the Head Constable (Radio Operator) and Head Constable (Radio Mechanic) CBT exam can review their answer keys and submit objections if they find any discrepancies.",
+        "a_hi": "यह सीमा सुरक्षा बल द्वारा प्रदान किया गया एक ऑनलाइन पोर्टल है जहाँ हेड कांस्टेबल (रेडियो ऑपरेटर) और हेड कांस्टेबल (रेडियो मैकेनिक) सीबीटी परीक्षा में शामिल होने वाले उम्मीदवार अपनी उत्तर कुंजी की समीक्षा कर सकते हैं और विसंगतियां मिलने पर आपत्तियां दर्ज करा सकते हैं।",
+        "q_en": "What is the BSF HC RO & RM Objection Portal?",
+        "q_hi": "बीएसएफ एचसी आरओ और आरएम आपत्ति पोर्टल क्या है?"
       }
     ],
     "extra": [],
     "faq": [
       {
-        "a_en": "The CBT exam was conducted on 02.11.2026.",
-        "a_hi": "सीबीटी परीक्षा 02.11.2026 को आयोजित की गई थी।",
-        "q_en": "When was the BSF HC RO/RM CBT exam conducted?",
-        "q_hi": "बीएसएफ एचसी आरओ/आरएम सीबीटी परीक्षा कब आयोजित की गई थी?"
+        "a_en": "The extended last date to submit objections is 09 November 2026 up to 11:55 PM.",
+        "a_hi": "आपत्तियां दर्ज कराने की बढ़ी हुई अंतिम तिथि 09 नवंबर 2026 रात 11:55 बजे तक है।",
+        "q_en": "What is the extended last date to submit objections for BSF HC RO & RM CBT exam?",
+        "q_hi": "बीएसएफ एचसी आरओ और आरएम सीबीटी परीक्षा के लिए आपत्तियां दर्ज कराने की बढ़ी हुई अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "Candidates can use the portal to submit objections against provisional answers from the CBT exam.",
-        "a_hi": "उम्मीदवार सीबीटी परीक्षा के अनंतिम उत्तरों के खिलाफ आपत्तियां दर्ज करने के लिए पोर्टल का उपयोग कर सकते हैं।",
-        "q_en": "What is the purpose of the objection portal?",
-        "q_hi": "आपत्ति पोर्टल का उद्देश्य क्या है?"
+        "a_en": "The Computer Based Test (CBT) was conducted on 02 November 2026.",
+        "a_hi": "कंप्यूटर आधारित परीक्षा (सीबीटी) 02 नवंबर 2026 को आयोजित की गई थी।",
+        "q_en": "When was the BSF HC RO & RM CBT exam conducted?",
+        "q_hi": "बीएसएफ एचसी आरओ और आरएम सीबीटी परीक्षा कब आयोजित की गई थी?"
       },
       {
-        "a_en": "You can access it on the official BSF recruitment website at rectt.bsf.gov.in.",
-        "a_hi": "आप इसे आधिकारिक बीएसएफ भर्ती वेबसाइट rectt.bsf.gov.in पर एक्सेस कर सकते हैं।",
-        "q_en": "Where can I access the objection management portal?",
-        "q_hi": "मैं आपत्ति प्रबंधन पोर्टल तक कहां पहुंच सकता हूं?"
+        "a_en": "Candidates who appeared in the CBT exam held on 02.11.2026 for Head Constable (RO) and Head Constable (RM) can raise objections.",
+        "a_hi": "हेड कांस्टेबल (आरओ) और हेड कांस्टेबल (आरएम) के लिए 02.11.2026 को आयोजित सीबीटी परीक्षा में शामिल होने वाले उम्मीदवार आपत्तियां उठा सकते हैं।",
+        "q_en": "Who can raise objections on the BSF HC RO & RM answer key?",
+        "q_hi": "बीएसएफ एचसी आरओ और आरएम उत्तर कुंजी पर कौन आपत्तियां उठा सकता है?"
       }
     ],
     "fees": [],
@@ -121,76 +131,90 @@
     "h1_hi": "बीएसएफ एचसी आरओ और आरएम आंसर की आपत्ति 2026 – अंतिम तिथि बढ़ाई गई",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official BSF recruitment website rectt.bsf.gov.in.",
-      "Click on the objection management portal link for HC(RO) and HC(RM).",
-      "Login with your credentials.",
-      "Submit your objections along with necessary proofs before the extended deadline."
+      "Visit the official BSF recruitment portal.",
+      "Log in using your credentials to view your response sheets and answer keys.",
+      "Submit objections along with relevant supporting documents before 09 Nov 2026 (11:55 PM)."
     ],
     "how_hi": [
-      "आधिकारिक बीएसएफ भर्ती वेबसाइट rectt.bsf.gov.in पर जाएं।",
-      "एचसी (आरओ) और एचसी (आरएम) के लिए आपत्ति प्रबंधन पोर्टल लिंक पर क्लिक करें।",
-      "अपने विवरण के साथ लॉगिन करें।",
-      "विस्तारित समय सीमा से पहले आवश्यक प्रमाणों के साथ अपनी आपत्तियां दर्ज करें।"
+      "आधिकारिक बीएसएफ भर्ती पोर्टल पर जाएं।",
+      "अपनी रिस्पांस शीट और उत्तर कुंजी देखने के लिए अपने विवरण का उपयोग करके लॉगिन करें।",
+      "09 नवंबर 2026 (रात 11:55 बजे) से पहले प्रासंगिक सहायक दस्तावेजों के साथ आपत्तियां दर्ज करें।"
     ],
-    "intro_en": "The Border Security Force (BSF) has issued a notice regarding the extension of the closing date for the objection management portal. This portal is for candidates who appeared in the Computer Based Test (CBT) conducted on 02.11.2026 for Head Constable (RO) and Head Constable (RM) posts. Candidates who wish to raise objections against the provisional answers can use the extended window to submit their queries through the official website.",
-    "intro_hi": "सीमा सुरक्षा बल (बीएसएफ) ने आपत्ति प्रबंधन पोर्टल की अंतिम तिथि बढ़ाने के संबंध में एक नोटिस जारी किया है। यह पोर्टल हेड कांस्टेबल (आरओ) और हेड कांस्टेबल (आरएम) पदों के लिए 02.11.2026 को आयोजित कंप्यूटर आधारित परीक्षा (सीबीटी) में शामिल होने वाले उम्मीदवारों के लिए है। जो उम्मीदवार अनंतिम उत्तरों के खिलाफ आपत्तियां उठाना चाहते हैं, वे आधिकारिक वेबसाइट के माध्यम से अपने प्रश्न जमा करने के लिए विस्तारित अवधि का उपयोग कर सकते हैं।",
+    "intro_en": "The Border Security Force (BSF) has issued a notice regarding the extension of the closing date for the objection management portal. This is for candidates who appeared in the Computer Based Test (CBT) conducted on 02.11.2026 for the posts of Head Constable (Radio Operator) and Head Constable (Radio Mechanic) in BSF Communication Setup-2025. The deadline has been extended to 09 November 2026 up to 11:55 PM to allow candidates more time to review their response sheets, answer keys, and submit objections with supporting documents.",
+    "intro_hi": "सीमा सुरक्षा बल (बीएसएफ) ने आपत्ति प्रबंधन पोर्टल की अंतिम तिथि बढ़ाने के संबंध में एक नोटिस जारी किया है। यह उन उम्मीदवारों के लिए है जो बीएसएफ कम्युनिकेशन सेटअप-2025 में हेड कांस्टेबल (रेडियो ऑपरेटर) और हेड कांस्टेबल (रेडियो मैकेनिक) के पदों के लिए 02.11.2026 को आयोजित कंप्यूटर आधारित परीक्षा (सीबीटी) में शामिल हुए थे। उम्मीदवारों को अपने रिस्पांस शीट, उत्तर कुंजी की समीक्षा करने और समर्थन दस्तावेजों के साथ आपत्तियां प्रस्तुत करने के लिए अधिक समय देने के लिए समय सीमा 09 नवंबर 2026 को रात 11:55 बजे तक बढ़ा दी गई है।",
     "last_date": null,
     "mistakes_en": [
-      "Do not wait until the last moment to submit objections.",
-      "Ensure proper supporting documents are attached for each objection."
+      "Do not wait until the last minute to submit objections.",
+      "Ensure correct supporting documents are attached for any objections raised."
     ],
     "mistakes_hi": [
       "आपत्तियां दर्ज करने के लिए अंतिम समय तक प्रतीक्षा न करें।",
-      "सुनिश्चित करें कि प्रत्येक आपत्ति के साथ उचित सहायक दस्तावेज संलग्न हैं।"
+      "सुनिश्चित करें कि उठाई गई किसी भी आपत्ति के लिए सही सहायक दस्तावेज संलग्न हैं।"
     ],
     "not_en": [],
     "not_hi": [],
-    "notice_date": null,
+    "notice_date": "2026-11-04",
     "official_site": "https://rectt.bsf.gov.in/",
     "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Exam date",
-        "label_hi": "परीक्षा तिथि",
-        "value_en": "02 Nov 2026",
-        "value_hi": "02 नव 2026"
-      },
-      {
         "label_en": "Posts",
         "label_hi": "पद",
-        "value_en": "Head Constable (RO) & Head Constable (RM)",
-        "value_hi": "हेड कांस्टेबल (आरओ) और हेड कांस्टेबल (आरएम)"
+        "value_en": "Head Constable (Radio Operator) & Head Constable (Radio Mechanic)",
+        "value_hi": "हेड कांस्टेबल (रेडियो ऑपरेटर) और हेड कांस्टेबल (रेडियो मैकेनिक)"
+      },
+      {
+        "label_en": "CBT Exam Date",
+        "label_hi": "सीबीटी परीक्षा तिथि",
+        "value_en": "02 Nov 2026",
+        "value_hi": "02 नवंबर 2026"
+      },
+      {
+        "label_en": "Extended Last Date for Objection",
+        "label_hi": "आपत्ति के लिए अंतिम तिथि बढ़ाई गई",
+        "value_en": "09 Nov 2026 (up to 11:55 PM)",
+        "value_hi": "09 नवंबर 2026 (रात 11:55 बजे तक)"
       }
     ],
     "salary": [],
     "selection_en": [
       "Computer Based Test (CBT)",
-      "Objection submission"
+      "Objection Management",
+      "Further recruitment stages as per BSF guidelines"
     ],
     "selection_hi": [
       "कंप्यूटर आधारित परीक्षा (सीबीटी)",
-      "आपत्ति जमा करना"
+      "आपत्ति प्रबंधन",
+      "बीएसएफ दिशानिर्देशों के अनुसार आगे के भर्ती चरण"
     ],
     "share_card": {
-      "headline_en": "Date Extended",
-      "headline_hi": "अंतिमतिति बढ़ाई गई",
+      "headline_en": "Objection Date Extended",
+      "headline_hi": "आपत्ति तिथि बढ़ाई गई",
       "kind": "corr",
-      "line_en": "HC RO & RM Objection Portal",
-      "line_hi": "एचसी आरओ और आरएम आपत्ति पोर्टल",
+      "line_en": "HC (RO & RM) Answer Key",
+      "line_hi": "एचसी (आरओ और आरएम) आंसर की",
       "posts": null
     },
-    "status_en": "Objection management portal closing date extended",
-    "status_hi": "आपत्ति प्रबंधन पोर्टल की अंतिम तिथि बढ़ाई गई",
-    "summary_en": "Border Security Force (BSF) has extended the closing date for the objection management portal related to the CBT exam held on 02.11.2026 for Head Constable (RO) and Head Constable (RM) posts. Candidates can submit their objections online through the official portal.",
-    "summary_hi": "सीमा सुरक्षा बल (बीएसएफ) ने हेड कांस्टेबल (आरओ) और हेड कांस्टेबल (आरएम) पदों के लिए 02.11.2026 को आयोजित सीबीटी परीक्षा से संबंधित आपत्ति प्रबंधन पोर्टल की अंतिम तिथि बढ़ा दी है। उम्मीदवार आधिकारिक पोर्टल के माध्यम से ऑनलाइन आपत्तियां दर्ज करा सकते हैं।",
-    "vacancies": [],
+    "status_en": "Objection management portal closing date extended till 09 Nov 2026",
+    "status_hi": "आपत्ति प्रबंधन पोर्टल की अंतिम तिथि 09 नवंबर 2026 तक बढ़ाई गई",
+    "summary_en": "Border Security Force (BSF) has extended the closing date for submitting objections on the answer key for the Head Constable (RO) & (RM) CBT exam held on 02.11.2026. Candidates can now submit their objections until 09 November 2026.",
+    "summary_hi": "सीमा सुरक्षा बल (बीएसएफ) ने 02.11.2026 को आयोजित हेड कांस्टेबल (आरओ) और (आरएम) सीबीटी परीक्षा के लिए उत्तर कुंजी पर आपत्तियां दर्ज कराने की अंतिम तिथि बढ़ा दी है। उम्मीदवार अब 09 नवंबर 2026 तक अपनी आपत्तियां दर्ज करा सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "BSF Communication Setup-2025",
+        "detail_hi": "बीएसएफ कम्युनिकेशन सेटअप-2025",
+        "post_en": "Head Constable (Radio Operator) & Head Constable (Radio Mechanic)",
+        "post_hi": "हेड कांस्टेबल (रेडियो ऑपरेटर) और हेड कांस्टेबल (रेडियो मैकेनिक)",
+        "total": null
+      }
+    ],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for BSF HC (RO) and HC (RM) CBT exam held on 02.11.2026."
+      "Candidates who appeared for the BSF Head Constable (RO & RM) CBT exam held on 02 Nov 2026."
     ],
     "who_hi": [
-      "02.11.2026 को आयोजित बीएसएफ एचसी (आरओ) और एचसी (आरएम) सीबीटी परीक्षा में शामिल होने वाले उम्मीदवार।"
+      "वे उम्मीदवार जो 02 नवंबर 2026 को आयोजित बीएसएफ हेड कांस्टेबल (आरओ और आरएम) सीबीटी परीक्षा में शामिल हुए थे।"
     ]
   },
   "pdf": {
@@ -200,11 +224,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-07T19:56:08Z",
-  "qual": [
-    "12th",
-    "iti"
-  ],
-  "rewrite": true,
   "slug": "bsf-hc-ro-rm-answer-key-objection-2026-last-date-extended",
   "source_id": "bsf-recruitment",
   "status": "approved",
