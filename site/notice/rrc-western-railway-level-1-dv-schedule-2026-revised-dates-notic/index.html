@@ -283,8 +283,8 @@ html[lang="hi"] .hidet { display: none; }
     border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
     box-shadow: 0 4px 18px color-mix(in srgb, #000 12%, transparent), inset 0 1px 0 color-mix(in srgb, #fff 45%, transparent);
     touch-action: manipulation; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none;
-    transition: transform .12s ease; }
-  .fback:active { transform: scale(.92); }
+    transition: transform .12s ease; transform: translateZ(0); -webkit-transform: translateZ(0); will-change: transform; z-index: 1000; }
+  .fback:active { transform: translateZ(0) scale(.92); }
   .fback svg { margin-left: -2px; pointer-events: none; }
   .fback:hover { text-decoration: none; }
 }
@@ -1021,9 +1021,10 @@ li.adrow .adslot { margin: 20px auto; }
 <script>(function(){
   var b=document.getElementById("fback"),slot=document.querySelector(".top .hback"),root=document.documentElement,raf=0;
   // follow the header's back slot while it is on screen; CSS max() pins it at the top once the slot scrolls past
-  function place(){raf=0;if(slot){var r=slot.getBoundingClientRect();root.style.setProperty("--fb-y",(r.top+(r.height-44)/2)+"px");}}
+  // placed once, level with the header (measured as if the page were at the top), then it never moves: always on screen
+  function place(){raf=0;if(slot){var r=slot.getBoundingClientRect();root.style.setProperty("--fb-y",Math.max(0,r.top+scrollY+(r.height-44)/2)+"px");}}
   function ask(){if(!raf)raf=requestAnimationFrame(place);}
-  place();addEventListener("scroll",ask,{passive:true});addEventListener("resize",ask);addEventListener("load",place);
+  place();addEventListener("resize",ask);addEventListener("load",place);
   if(document.fonts)document.fonts.ready.then(place);
   function go(){
     // came from our own list: go back so the list keeps its place; otherwise open the home page
