@@ -181,7 +181,11 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 .search:focus-within .sicon { color: var(--ink); }
 .search input::-webkit-search-cancel-button, .search input::-webkit-search-decoration { -webkit-appearance: none; appearance: none; display: none; }
 .sx { position: absolute; right: 0; top: 50%; transform: translateY(-50%); all: unset; position: absolute; right: 0; top: 50%; transform: translateY(-50%); cursor: pointer; color: var(--grey); }
-.sx:hover { color: var(--ink); }
+.sx { color: #1A5FB4; font-weight: 500; }   /* Clear: a blue text link, easy to spot */
+.sx:hover { color: #144a8c; text-decoration: underline; text-underline-offset: 4px; }
+.sx .kc { color: var(--grey); font-weight: 400; }
+:root[data-theme="dark"] .sx { color: #8AB4F8; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sx { color: #8AB4F8; } }
 .sx { display: inline-flex; align-items: center; gap: 7px; }
 .sx[hidden] { display: none; }
 /* keycap hint: the Esc key also clears; hidden on touch screens with no keyboard */
