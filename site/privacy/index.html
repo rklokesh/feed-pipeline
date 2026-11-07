@@ -265,9 +265,10 @@ ul.steps.dots { list-style: disc; }
 .tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
 .tbl tbody tr:hover { background: var(--row-hover); }
 html[lang="hi"] .hidet { display: none; }
-.hidet { border-top: 1px solid var(--line); padding-top: 14px; }
-.hidet > summary { cursor: pointer; color: var(--grey); list-style-position: inside; }
-.hidet > summary:hover { color: inherit; }
+.hidet { max-width: 46rem; margin-top: -8px; }
+.hidet > summary { cursor: pointer; color: var(--grey); font-size: .875rem; list-style: none; width: fit-content; margin: 0 auto; }
+.hidet > summary::-webkit-details-marker { display: none; }
+.hidet > summary:hover { color: inherit; text-decoration: underline; text-underline-offset: 4px; }
 .hidet[open] > summary { margin-bottom: 14px; }
 .hidet .hih { font-size: 1.35rem; line-height: 1.35; margin: 0 0 10px; }
 .hidet > section.kv { margin: 0 0 26px; }
@@ -350,7 +351,6 @@ html[lang="hi"] .hidet { display: none; }
   html.v2 .toc { border: 0 !important; border-top: 1px solid color-mix(in srgb, var(--ink) 8%, transparent) !important;
     border-bottom: 1px solid color-mix(in srgb, var(--ink) 8%, transparent) !important; background: none; border-radius: 0; }
   html.v2 .toc summary { background: none !important; padding: 14px 0 !important; }
-  html.v2 .hidet { border-top: 1px solid color-mix(in srgb, var(--ink) 8%, transparent); }
   /* actions: full-width pill buttons */
   html.v2 .actions { display: grid !important; gap: 10px !important; }
   html.v2 .actions a { justify-content: center; padding: 13px 16px; border-radius: 999px; background: none; border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent); text-decoration: none; }
