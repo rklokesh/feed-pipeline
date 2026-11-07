@@ -99,6 +99,21 @@ h1 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; text-wrap: b
 .kv a.r .v::after { content: " ↗"; color: var(--grey); }
 .kv .r .v small { display: block; color: var(--grey); font-size: inherit; }
 
+/* "Do it" box under the title: the few things most readers came for, as big buttons */
+.doit { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; width: 100%; max-width: 560px; margin: 14px auto 4px; }
+.doit .btn { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 50px; padding: 10px 14px; box-sizing: border-box;
+  border: 1px solid var(--line); border-radius: 8px; background: var(--page); color: var(--ink); text-decoration: none; font-weight: 500; line-height: 1.25; text-align: center; }
+.doit .btn svg { flex: none; }
+.doit .btn:hover { background: var(--soft); text-decoration: none; }
+.doit .btn.pri, .doit #remind { grid-column: 1 / -1; }
+.doit .btn.pri { background: var(--ink); color: var(--page); border-color: var(--ink); font-weight: 600; font-size: 1.0625rem; }
+.doit .btn.pri:hover { opacity: .9; background: var(--ink); }
+.doit .btn.wa { background: #1FA855; color: #fff; border-color: #1FA855; font-weight: 600; }
+.doit .btn.wa:hover { background: #1b964c; }
+.doit .btn.wa svg path:first-child { fill: #fff; }
+.doit .btn.wa svg path:last-child { fill: #1FA855; }
+.doit .btn[hidden] { display: none; }
+@media print { .doit { display: none !important; } }
 .note { display: grid; gap: 18px; max-width: 46rem; }
 .actions { row-gap: 12px !important; column-gap: 28px !important; }
 .actions .act { display: inline-flex; align-items: center; gap: 6px; }
@@ -539,6 +554,11 @@ li.adrow .adslot { margin: 20px auto; }
       <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: rpsc.rajasthan.gov.in</p>
       <p class="exjump"><a href="#exam" data-t="exJump">2 more updates for RPSC Senior Scientific Officer Biology 2025 ↓</a></p>
       <p class="status"><span id="state">Question paper released</span><span id="left"></span><span id="views" class="g" hidden></span></p>
+      <div class="doit" id="doit">
+        <a class="btn pri" href="https://rpsc.rajasthan.gov.in/" target="_blank" rel="noopener"><span data-t="aGo">Official website</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        <a class="btn" href="https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/379B4D7F-75F7-4EB1-81C1-9D0368A5F685.pdf" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg><span data-t="aPdf">Official notice (PDF)</span></a>
+        <a class="btn wa js-share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a>
+      </div>
       <p class="lead" data-t="summary">Rajasthan Public Service Commission has released the question paper for Senior Scientific Officer - 2026 (Ballistics Division). Candidates who appeared for the exam can download the official question paper PDF from the link provided. Use this question paper to review questions and check answers.</p>
       <img class="ogimg" id="ogimg" src="/notice/rpsc-sr-scientific-officer-2026-ballistics-question-paper/og.png" data-en="/notice/rpsc-sr-scientific-officer-2026-ballistics-question-paper/og.png" data-hi="/notice/rpsc-sr-scientific-officer-2026-ballistics-question-paper/og-hi.png" width="1200" height="675" alt="RPSC Sr Scientific Officer Question Paper 2026 – Ballistics — summary card" decoding="async" onerror="this.hidden=true">
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
@@ -654,7 +674,7 @@ li.adrow .adslot { margin: 20px auto; }
     </details>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 23 Oct 2026. If anything here differs from the official notice, the official notice is correct.</p>
-      <p class="actions"><a class="share" id="share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/rpsc-sr-scientific-officer-2026-ballistics-question-paper/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
+      <p class="actions"><a class="share js-share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/rpsc-sr-scientific-officer-2026-ballistics-question-paper/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
     </div>
   </main>
 
@@ -707,6 +727,10 @@ li.adrow .adslot { margin: 20px auto; }
       gQV: "Graduate (any degree, see notice)",
       metaV: "Updated 23 Oct 2026 · Source: rpsc.rajasthan.gov.in",
       exJump: "2 more updates for RPSC Senior Scientific Officer Biology 2025 ↓",
+      aGo: "Official website",
+      aPdf: "Official notice (PDF)",
+      aRemind: "Remind me before the last date",
+      waText: "*RPSC Sr Scientific Officer Question Paper 2026 – Ballistics*\nआरपीएससी वरिष्ठ वैज्ञानिक अधिकारी प्रश्न पत्र 2026 – बॉलजिस्टिक्स\nOfficial links and full details:",
       aboutH: "About this notice",
       intro: "The Rajasthan Public Service Commission (RPSC) has published the official question paper for the Senior Scientific Officer - 2026 examination, specifically for the Ballistics Division. Candidates preparing for or who appeared in this exam can access the question paper to understand the exam pattern and types of questions asked. The document is available directly on the official RPSC website and can be downloaded through the provided link.",
       whoH: "Who should read this",
@@ -779,6 +803,10 @@ li.adrow .adslot { margin: 20px auto; }
       gQV: "स्नातक (सूचना देखें)",
       metaV: "अपडेट 23 अक्तूबर 2026 · स्रोत: rpsc.rajasthan.gov.in",
       exJump: "आरपीएससी सीनियर साइंटिफिक ऑफिसर बायोलॉजी 2025 के 2 और अपडेट ↓",
+      aGo: "आधिकारिक वेबसाइट",
+      aPdf: "आधिकारिक सूचना (PDF)",
+      aRemind: "अंतिम तिथि से पहले याद दिलाएँ",
+      waText: "*आरपीएससी वरिष्ठ वैज्ञानिक अधिकारी प्रश्न पत्र 2026 – बॉलजिस्टिक्स*\nRPSC Sr Scientific Officer Question Paper 2026 – Ballistics\nआधिकारिक लिंक और पूरी जानकारी:",
       aboutH: "इस सूचना के बारे में",
       intro: "राजस्थान लोक सेवा आयोग (आरपीएससी) ने वरिष्ठ वैज्ञानिक अधिकारी - 2026 परीक्षा के लिए, विशेष रूप से बॉलजिस्टिक्स डिवीजन के वास्ते आधिकारिक प्रश्न पत्र प्रकाशित किया है। इस परीक्षा की तैयारी करने वाले या इसमें शामिल होने वाले उम्मीदवार परीक्षा पैटर्न और पूछे गए प्रश्नों के प्रकार को समझने के लिए प्रश्न पत्र प्राप्त कर सकते हैं। यह दस्तावेज़ सीधे आरपीएससी की आधिकारिक वेबसाइट पर उपलब्ध है और इसे दिए गए लिंक के माध्यम से डाउनलोड किया जा सकता है।",
       whoH: "यह किसके लिए है",
@@ -848,8 +876,11 @@ li.adrow .adslot { margin: 20px auto; }
         el.innerHTML = t("lastDate") + '<span class="dl"><span class="gap"></span><span class="tag ' + cls + '">' + (d === 0 ? t("lastDay") : t("daysLeft")(d)) + "</span>" + (d <= 7 ? '<picture aria-hidden="true"><source srcset="/siren-still.png" media="(prefers-reduced-motion: reduce)"><img class="dsiren" src="/siren.webp" width="14" height="14" alt=""></picture>' : "") + "</span>";
       }
     }
-    const sh = document.getElementById("share");
-    if (sh) sh.href = "https://wa.me/?text=" + encodeURIComponent(t("h1") + "\n" + location.origin + location.pathname);
+    const wtxt = (t("waText") || t("h1")) + "\n" + location.origin + location.pathname;
+    document.querySelectorAll(".js-share").forEach(a => { a.href = "https://wa.me/?text=" + encodeURIComponent(wtxt); a.target = "_blank"; a.rel = "noopener"; });
+    const rm = document.getElementById("remind");   // calendar reminder: only while the last date is ahead; iPhone/Mac get the .ics, others Google Calendar
+    if (rm) { rm.hidden = !(last && last - new Date() > 0);
+      if (!/iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent) && rm.dataset.gcal) { rm.href = rm.dataset.gcal; rm.removeAttribute("download"); rm.target = "_blank"; rm.rel = "noopener"; } }
     const btn = document.getElementById("lang");
     btn.textContent = t("switchTo"); btn.lang = t("switchLang");
     paintTheme();

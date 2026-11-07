@@ -573,10 +573,8 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
       <button type="button" data-cat="all" aria-pressed="true"><span data-t="all">All</span><span class="c"></span></button>
       <button type="button" data-cat="trend" aria-pressed="false"><span data-t="trend">Trending</span><picture class="fire" aria-hidden="true"><source srcset="/fire-2-still.png" media="(prefers-reduced-motion: reduce)"><img src="/fire-2.webp" width="16" height="16" alt=""></picture><span class="c"></span></button>
       <button type="button" data-cat="Job" aria-pressed="false"><span data-t="jobs">Jobs</span><span class="c"></span></button>
-      <button type="button" data-cat="soon" aria-pressed="false"><span data-t="soon">Closing soon</span><picture class="siren" aria-hidden="true"><source srcset="/siren-still.png" media="(prefers-reduced-motion: reduce)"><img src="/siren.webp" width="16" height="16" alt="" decoding="async"></picture><span class="c"></span></button>
       <button type="button" data-cat="Admit card" aria-pressed="false"><span data-t="admits">Admit cards</span><span class="c"></span></button>
       <button type="button" data-cat="Result" aria-pressed="false"><span data-t="results">Results</span><span class="c"></span></button>
-      <button type="button" data-cat="Answer key" aria-pressed="false"><span data-t="keys">Answer keys</span><span class="c"></span></button>
       <span class="ink still" aria-hidden="true"></span>
     </div>
     </div>
@@ -639,7 +637,7 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
   };
   const ORG_HI = /*ORGHI:START*/{"NTA": "एनटीए", "SSC": "एसएससी", "UPPSC": "यूपीपीएससी", "BPSC": "बीपीएससी", "SBI": "एसबीआई", "IBPS": "आईबीपीएस", "ISRO": "इसरो", "UPSC": "यूपीएससी", "RRB": "आरआरबी", "LIC": "एलआईसी", "BSSC": "बीएसएससी", "UPSSSC": "यूपीएसएसएससी", "RPSC": "आरपीएससी", "MPPSC": "एमपीपीएससी", "DSSSB": "डीएसएसएसबी", "NCS": "एनसीएस", "UKSSSC": "यूकेएसएसएससी", "BPSSC": "बीपीएसएससी", "JKSSB": "जेकेएसएसबी", "JKPSC": "जेकेपीएससी", "CGPSC": "सीजीपीएससी", "PSSSB": "पीएसएसएसबी", "JPSC": "जेपीएससी", "RRB Chandigarh": "आरआरबी चंडीगढ़", "RRB (unified portal)": "आरआरबी", "RBI": "आरबीआई", "NABARD": "नाबार्ड", "Indian Army": "भारतीय सेना", "Indian Navy": "भारतीय नौसेना", "Indian Air Force": "भारतीय वायुसेना", "Indian Coast Guard": "भारतीय तटरक्षक बल", "BSF": "बीएसएफ", "CRPF": "सीआरपीएफ", "ITBP": "आईटीबीपी", "CISF": "सीआईएसएफ", "India Post": "इंडिया पोस्ट", "DRDO": "डीआरडीओ", "RSSB Rajasthan": "आरएसएसबी राजस्थान", "MPESB": "एमपीईएसबी", "UKPSC": "यूकेपीएससी", "Employment News": "रोज़गार समाचार", "UP Police": "यूपी पुलिस", "CSBC Bihar": "सीएसबीसी बिहार", "RRC Northern Railway": "आरआरसी उत्तर रेलवे", "RRC Western Railway": "आरआरसी पश्चिम रेलवे", "RRC Central Railway": "आरआरसी मध्य रेलवे", "CTET": "सीटेट", "KVS": "केवीएस", "WBPSC": "डब्ल्यूबीपीएससी", "HPSC": "एचपीएससी", "HSSC": "एचएसएससी", "MPSC": "एमपीएससी", "TNPSC": "टीएनपीएससी"}/*ORGHI:END*/;
   let lang = "en";
-  try { const saved = localStorage.getItem("sc-lang"); if (saved === "hi" || (!saved && /^hi\b/i.test(navigator.language || ""))) lang = "hi"; } catch (e) {}
+  try { const saved = localStorage.getItem("sc-lang"); if (saved === "hi" || (!saved && (navigator.languages || [navigator.language || ""]).some(l => /^hi\b/i.test(l)))) lang = "hi"; } catch (e) {}
   const t = k => T[lang][k];
 
   // Sample entries from the watcher's test runs (Oct 2026). Only extracted values; not verified.
@@ -1455,14 +1453,16 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
     const startQ = new URL(location.href).searchParams.get("q");
     if (startQ) { const qi = document.getElementById("q"); qi.value = startQ; q = startQ.trim().toLowerCase(); }
     // ?cat=jobs|closing-soon|admit-cards|results|answer-keys opens that tab (used by notice-page breadcrumbs)
+    // categories without a tab of their own (Closing soon, Answer keys) still open from links: the list filters, no tab lights up
+    const openCat = c => { const b = document.querySelector(`.tabs button[data-cat="${c}"]`); if (b) b.click(); else { setCat(c); update(); } };
     const CATS = { trending: "trend", jobs: "Job", "closing-soon": "soon", "admit-cards": "Admit card", results: "Result", "answer-keys": "Answer key" };
     document.querySelector("footer .browse").addEventListener("click", e => {
       const a = e.target.closest('a[href^="/?cat="]'); if (!a || window.SC_PRESET) return;
       const c = CATS[new URL(a.href).searchParams.get("cat")]; if (!c) return;
-      e.preventDefault(); document.querySelector(`.tabs button[data-cat="${c}"]`)?.click(); history.replaceState(null, "", a.getAttribute("href")); scrollTo({ top: 0, behavior: "smooth" });
+      e.preventDefault(); openCat(c); history.replaceState(null, "", a.getAttribute("href")); scrollTo({ top: 0, behavior: "smooth" });
     });
     const startCat = window.SC_PRESET ? (window.SC_PRESET.st ? "all" : "Job") : CATS[new URL(location.href).searchParams.get("cat")];
-    if (startCat) requestAnimationFrame(() => document.querySelector(`.tabs button[data-cat="${startCat}"]`)?.click());
+    if (startCat) requestAnimationFrame(() => openCat(startCat));
   } catch (e) {}
   document.getElementById("lang").addEventListener("click", () => {
     lang = lang === "hi" ? "en" : "hi";

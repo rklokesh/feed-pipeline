@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SarkariChart//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:rrb-station-master-recruitment-2026-apply-now-for-1215-vacancies-last@sarkarichart
+DTSTAMP:20261107T220353Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Last date: RRB Station Master Recruitment 2026
+DESCRIPTION:https://sarkarichart.pages.dev/notice/rrb-station-master-recruitment-2026-apply-now-for-1215-vacancies/
+URL:https://sarkarichart.pages.dev/notice/rrb-station-master-recruitment-2026-apply-now-for-1215-vacancies/
+BEGIN:VALARM
+TRIGGER:-P1DT15H
+ACTION:DISPLAY
+DESCRIPTION:Last date: RRB Station Master Recruitment 2026
+END:VALARM
+END:VEVENT
+END:VCALENDAR

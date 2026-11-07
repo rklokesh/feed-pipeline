@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SarkariChart//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:hssc-group-d-cet-advt-05-2026-application-date-extension-last@sarkarichart
+DTSTAMP:20261107T220354Z
+DTSTART;VALUE=DATE:20260705
+DTEND;VALUE=DATE:20260706
+SUMMARY:Last date: HSSC Group-D CET Recruitment 2026 – Last Date Extended to 05 Jul
+DESCRIPTION:https://sarkarichart.pages.dev/notice/hssc-group-d-cet-advt-05-2026-application-date-extension/
+URL:https://sarkarichart.pages.dev/notice/hssc-group-d-cet-advt-05-2026-application-date-extension/
+BEGIN:VALARM
+TRIGGER:-P1DT15H
+ACTION:DISPLAY
+DESCRIPTION:Last date: HSSC Group-D CET Recruitment 2026 – Last Date Extended to 05 Jul
+END:VALARM
+END:VEVENT
+END:VCALENDAR

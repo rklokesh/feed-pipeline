@@ -228,6 +228,28 @@ SITE_URL = os.environ.get("SITE_URL", "https://sarkarichart.pages.dev")   # chan
 CAT_SLUG = {"Job": "jobs", "Result": "results", "Admit card": "admit-cards", "Answer key": "answer-keys", "Update": "all", "Admission": "all"}
 
 
+def gcal_url(title: str, last: str, slug: str) -> str:
+    """Google Calendar 'add event' link for the last date (all-day), used on Android; iPhones get the .ics file."""
+    import urllib.parse
+    d0 = dt.date.fromisoformat(last)
+    q = {"action": "TEMPLATE", "text": f"Last date: {title}", "dates": f"{d0:%Y%m%d}/{d0 + dt.timedelta(days=1):%Y%m%d}",
+         "details": f"{SITE_URL}/notice/{slug}/"}
+    return "https://calendar.google.com/calendar/render?" + urllib.parse.urlencode(q)
+
+
+def ics(title: str, last: str, slug: str) -> str:
+    """Calendar file for the last date: all-day event with a reminder at 9 am two days before."""
+    d0 = dt.date.fromisoformat(last)
+    t = title.replace("\\", "\\\\").replace(",", "\\,").replace(";", "\\;")[:150]
+    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//SarkariChart//EN", "CALSCALE:GREGORIAN", "BEGIN:VEVENT",
+             f"UID:{slug}-last@sarkarichart", f"DTSTAMP:{dt.datetime.utcnow():%Y%m%dT%H%M%SZ}",
+             f"DTSTART;VALUE=DATE:{d0:%Y%m%d}", f"DTEND;VALUE=DATE:{d0 + dt.timedelta(days=1):%Y%m%d}",
+             f"SUMMARY:Last date: {t}", f"DESCRIPTION:{SITE_URL}/notice/{slug}/", f"URL:{SITE_URL}/notice/{slug}/",
+             "BEGIN:VALARM", "TRIGGER:-P1DT15H", "ACTION:DISPLAY", f"DESCRIPTION:Last date: {t}", "END:VALARM",
+             "END:VEVENT", "END:VCALENDAR"]
+    return "\r\n".join(lines) + "\r\n"
+
+
 def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | None = None) -> str:
     c, pg = n.get("card") or {}, n.get("page") or {}
     typ = c.get("type", "Job")
@@ -375,6 +397,46 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
             '    <section class="kv glance" id="glance" data-t-aria="key">\n      <div class="h" data-t="key">At a glance</div>\n' +
             "".join(f'      <div class="r"><span data-t="{lk}">{esc(en[lk])}</span><span class="v" data-t="{vk}">{esc(en[vk])}</span></div>\n'
                     for lk, vk in rows) + elig_row + "    </section>"]
+    wa = ('<svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>')
+    # "Do it" box, right under the title: the 3-4 things most readers came for, as big buttons (apply / official notice /
+    # WhatsApp / calendar reminder). Everything else on the page is for people who want the detail.
+    PRIMARY = {"Job": ("Apply online", "ऑनलाइन आवेदन करें"), "Admit card": ("Download admit card", "एडमिट कार्ड डाउनलोड करें"),
+               "Result": ("Check result", "रिज़ल्ट देखें"), "Answer key": ("Check answer key", "आंसर की देखें"),
+               "Admission": ("Apply online", "ऑनलाइन आवेदन करें")}
+    p_url, p_lab = None, None
+    if pg.get("apply_url") and str(pg["apply_url"]).startswith("http"):
+        p_url, p_lab = pg["apply_url"], PRIMARY.get(typ)
+    if p_url and not p_lab:
+        p_url, p_lab = None, None
+    if not p_url and site and str(site).startswith("http") and typ != "Update":
+        p_url, p_lab = site, ("Official website", "आधिकारिक वेबसाइट")
+    en["aGo"], hi["aGo"] = p_lab or ("", "")
+    is_pdf = bool(re.search(r"\.pdf($|[?#/])|/pdf", str(n.get("url") or ""), re.I))
+    en["aPdf"], hi["aPdf"] = ("Official notice (PDF)", "आधिकारिक सूचना (PDF)") if is_pdf else ("Official notice", "आधिकारिक सूचना")
+    en["aRemind"], hi["aRemind"] = "Remind me before the last date", "अंतिम तिथि से पहले याद दिलाएँ"
+    facts_en, facts_hi = [], []
+    if total:
+        facts_en.append(f"{total:,} posts"); facts_hi.append(f"{total:,} पद")
+    if last:
+        facts_en.append(f"Last date {d_en(last)}"); facts_hi.append(f"अंतिम तिथि {d_hi(last)}")
+    en["waText"] = "*" + en["h1"] + "*" + ("\n" + hi["h1"] if hi["h1"] != en["h1"] else "") + ("\n" + " · ".join(facts_en) if facts_en else "") + "\nOfficial links and full details:"
+    hi["waText"] = "*" + hi["h1"] + "*" + ("\n" + en["h1"] if hi["h1"] != en["h1"] else "") + ("\n" + " · ".join(facts_hi) if facts_hi else "") + "\nआधिकारिक लिंक और पूरी जानकारी:"
+    ext = ' target="_blank" rel="noopener"'
+    arrow = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>'
+    doc = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>'
+    bell = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg>'
+    btns = []
+    if p_url:
+        btns.append(f'<a class="btn pri" href="{esc(p_url)}"{ext}><span data-t="aGo">{esc(en["aGo"])}</span>{arrow}</a>')
+    if n.get("url"):
+        btns.append(f'<a class="btn" href="{esc(n["url"])}"{ext}>{doc}<span data-t="aPdf">{esc(en["aPdf"])}</span></a>')
+    btns.append(f'<a class="btn wa js-share" href="#">{wa}<span data-t="share">Share on WhatsApp</span></a>')
+    if last:
+        btns.append(f'<a class="btn" id="remind" href="/notice/{slug}/remind.ics" download="last-date-{slug[:40]}.ics" data-gcal="{esc(gcal_url(en["h1"], last, slug))}" hidden>{bell}<span data-t="aRemind">{esc(en["aRemind"])}</span></a>')
+    box = '      <div class="doit" id="doit">\n        ' + "\n        ".join(btns) + '\n      </div>\n'
+    i_ = main[0].index('<p class="status">')
+    j_ = main[0].index("\n", i_) + 1      # right after the status / last-date line, before the summary
+    main[0] = main[0][:j_] + box + main[0][j_:]
     AD = lambda kind: ('    <div class="adslot" data-ad="' + kind + '"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox">'
                        '<a class="house" href="https://t.me/sarkarichart" target="_blank" rel="noopener"><img src="/telegram.svg" alt="" width="22" height="22">'
                        '<span data-t="adHouse">Get every new govt job alert on Telegram, free</span></a></div></div>')
@@ -562,7 +624,6 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
             jp["totalJobOpenings"] = total
         ld.append(jp)
     main.append('    <script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>")
-    wa = ('<svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>')
     # Full Hindi copy of the article, built into the same page so Google can read the Hindi too (one page per notice, no
     # duplicate URL). Closed by default; hidden when the reader has already switched the page to Hindi.
     def to_hi(h):
@@ -576,7 +637,7 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
                     f'      <h2 class="hih">{esc(hi["h1"])}</h2>\n{lead}' + "\n".join(hi_secs) + "\n    </details>")
     main.append(f'''    <div class="note">
       <p class="g" data-t="checked">{esc(en["checked"])}</p>
-      <p class="actions"><a class="share" id="share" href="#">{wa}<span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/{slug}/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
+      <p class="actions"><a class="share js-share" href="#">{wa}<span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/{slug}/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
     </div>''')
 
     tpl = TEMPLATE.read_text(encoding="utf-8")
@@ -660,6 +721,11 @@ def main():
         except Exception as e:  # noqa: BLE001 — keep going; this page keeps its previous version
             print(f"  {n['id']}: render failed ({type(e).__name__}: {e})"[:300])
             continue
+        c_, pg_ = n.get("card") or {}, n.get("page") or {}
+        last_ = valid_date(pg_.get("last_date") or c_.get("last_date")) if c_.get("type", "Job") == "Job" else None
+        if last_:
+            t_ = pg_.get("h1_en") or c_.get("title_en") or n.get("title") or ""
+            (out.parent / "remind.ics").write_text(ics(t_, last_, slug), encoding="utf-8", newline="")
         # data for the share images (site/notice/<slug>/og.png + og-hi.png, drawn by scripts/og_card.mjs at deploy)
         og = share_data(n, d_en, d_hi, valid_date)
         (out.parent / "og.json").write_text(json.dumps(og, ensure_ascii=False), encoding="utf-8")

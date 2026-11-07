@@ -99,6 +99,21 @@ h1 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; text-wrap: b
 .kv a.r .v::after { content: " ↗"; color: var(--grey); }
 .kv .r .v small { display: block; color: var(--grey); font-size: inherit; }
 
+/* "Do it" box under the title: the few things most readers came for, as big buttons */
+.doit { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; width: 100%; max-width: 560px; margin: 14px auto 4px; }
+.doit .btn { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 50px; padding: 10px 14px; box-sizing: border-box;
+  border: 1px solid var(--line); border-radius: 8px; background: var(--page); color: var(--ink); text-decoration: none; font-weight: 500; line-height: 1.25; text-align: center; }
+.doit .btn svg { flex: none; }
+.doit .btn:hover { background: var(--soft); text-decoration: none; }
+.doit .btn.pri, .doit #remind { grid-column: 1 / -1; }
+.doit .btn.pri { background: var(--ink); color: var(--page); border-color: var(--ink); font-weight: 600; font-size: 1.0625rem; }
+.doit .btn.pri:hover { opacity: .9; background: var(--ink); }
+.doit .btn.wa { background: #1FA855; color: #fff; border-color: #1FA855; font-weight: 600; }
+.doit .btn.wa:hover { background: #1b964c; }
+.doit .btn.wa svg path:first-child { fill: #fff; }
+.doit .btn.wa svg path:last-child { fill: #1FA855; }
+.doit .btn[hidden] { display: none; }
+@media print { .doit { display: none !important; } }
 .note { display: grid; gap: 18px; max-width: 46rem; }
 .actions { row-gap: 12px !important; column-gap: 28px !important; }
 .actions .act { display: inline-flex; align-items: center; gap: 6px; }
@@ -539,6 +554,12 @@ li.adrow .adslot { margin: 20px auto; }
       <p class="meta g" data-t="metaV">Updated 23 Oct 2026 · Source: hssc.gov.in</p>
       
       <p class="status"><span id="state">Notice published</span><span id="left"></span><span id="views" class="g" hidden></span></p>
+      <div class="doit" id="doit">
+        <a class="btn pri" href="https://adv062026.hryssc.com" target="_blank" rel="noopener"><span data-t="aGo">Apply online</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        <a class="btn" href="https://hssc.gov.in/file/ac1f23cd-9d9c-1328-819e-ef25fa0a0061/advertisements" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg><span data-t="aPdf">Official notice</span></a>
+        <a class="btn wa js-share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a>
+        <a class="btn" id="remind" href="/notice/hssc-group-c-cet-phase-ii-recruitment-2026/remind.ics" download="last-date-hssc-group-c-cet-phase-ii-recruitment-20.ics" data-gcal="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Last+date%3A+HSSC+Group+C+Recruitment+2026+%E2%80%93+Apply+Online+for+CET+Phase+2+Posts&amp;dates=20260630%2F20260701&amp;details=https%3A%2F%2Fsarkarichart.pages.dev%2Fnotice%2Fhssc-group-c-cet-phase-ii-recruitment-2026%2F" hidden><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg><span data-t="aRemind">Remind me before the last date</span></a>
+      </div>
       <p class="lead" data-t="summary">Haryana Staff Selection Commission invites online applications for Group-C posts under CET Phase-II. CET-qualified candidates can apply online through the official website by 30 June 2026. No application fee is required.</p>
       <img class="ogimg" id="ogimg" src="/notice/hssc-group-c-cet-phase-ii-recruitment-2026/og.png" data-en="/notice/hssc-group-c-cet-phase-ii-recruitment-2026/og.png" data-hi="/notice/hssc-group-c-cet-phase-ii-recruitment-2026/og-hi.png" width="1200" height="675" alt="HSSC Group C Recruitment 2026 – Apply Online for CET Phase 2 Posts — summary card" decoding="async" onerror="this.hidden=true">
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
@@ -761,7 +782,7 @@ li.adrow .adslot { margin: 20px auto; }
     </details>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 23 Oct 2026. If anything here differs from the official notice, the official notice is correct.</p>
-      <p class="actions"><a class="share" id="share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/hssc-group-c-cet-phase-ii-recruitment-2026/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
+      <p class="actions"><a class="share js-share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/hssc-group-c-cet-phase-ii-recruitment-2026/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
     </div>
   </main>
 
@@ -825,6 +846,10 @@ li.adrow .adslot { margin: 20px auto; }
       gSelV: "Shortlisting of candidates based on CET  → Written Examination → Scrutiny of Documents.",
       f0: "All Categories",
       metaV: "Updated 23 Oct 2026 · Source: hssc.gov.in",
+      aGo: "Apply online",
+      aPdf: "Official notice",
+      aRemind: "Remind me before the last date",
+      waText: "*HSSC Group C Recruitment 2026 – Apply Online for CET Phase 2 Posts*\nहरियाणा कर्मचारी चयन आयोग समूह सी भर्ती 2026 – सीईटी फेज 2 पदों के लिए ऑनलाइन आवेदन\nLast date 30 Jun 2026\nOfficial links and full details:",
       aboutH: "About this notice",
       intro: "Haryana Staff Selection Commission (HSSC) has released Advertisement No. 06/2026 for direct recruitment to various Group-C posts under CET Phase-II. Candidates who are qualified in the Common Eligibility Test (CET) Advt. No. 01/2025 Group-C are eligible to apply. Online applications are open from 24 June 2026 to 30 June 2026. No application fee is required to be paid by any candidate.",
       whoH: "Who should read this",
@@ -964,6 +989,10 @@ li.adrow .adslot { margin: 20px auto; }
       gSelV: "सीईटी अंकों के आधार पर उम्मीदवारों की शॉ → लिखित परीक्षा → दस्तावेजों की संवीक्षा।",
       f0: "सभी श्रेणियां",
       metaV: "अपडेट 23 अक्तूबर 2026 · स्रोत: hssc.gov.in",
+      aGo: "ऑनलाइन आवेदन करें",
+      aPdf: "आधिकारिक सूचना",
+      aRemind: "अंतिम तिथि से पहले याद दिलाएँ",
+      waText: "*हरियाणा कर्मचारी चयन आयोग समूह सी भर्ती 2026 – सीईटी फेज 2 पदों के लिए ऑनलाइन आवेदन*\nHSSC Group C Recruitment 2026 – Apply Online for CET Phase 2 Posts\nअंतिम तिथि 30 जून 2026\nआधिकारिक लिंक और पूरी जानकारी:",
       aboutH: "इस सूचना के बारे में",
       intro: "हरियाणा कर्मचारी चयन आयोग (HSSC) ने सीईटी फेज-2 के तहत विभिन्न समूह-सी पदों पर सीधी भर्ती के लिए विज्ञापन संख्या 06/2026 जारी किया है। कॉमन एलिजिबिलिटी टेस्ट (CET) विज्ञापन संख्या 01/2025 समूह-C में उत्तीर्ण उम्मीदवार आवेदन करने के पात्र हैं। ऑनलाइन आवेदन 24 जून 2026 से 30 जून 2026 तक खुले हैं। किसी भी उम्मीदवार को कोई आवेदन शुल्क नहीं देना है।",
       whoH: "यह किसके लिए है",
@@ -1089,8 +1118,11 @@ li.adrow .adslot { margin: 20px auto; }
         el.innerHTML = t("lastDate") + '<span class="dl"><span class="gap"></span><span class="tag ' + cls + '">' + (d === 0 ? t("lastDay") : t("daysLeft")(d)) + "</span>" + (d <= 7 ? '<picture aria-hidden="true"><source srcset="/siren-still.png" media="(prefers-reduced-motion: reduce)"><img class="dsiren" src="/siren.webp" width="14" height="14" alt=""></picture>' : "") + "</span>";
       }
     }
-    const sh = document.getElementById("share");
-    if (sh) sh.href = "https://wa.me/?text=" + encodeURIComponent(t("h1") + "\n" + location.origin + location.pathname);
+    const wtxt = (t("waText") || t("h1")) + "\n" + location.origin + location.pathname;
+    document.querySelectorAll(".js-share").forEach(a => { a.href = "https://wa.me/?text=" + encodeURIComponent(wtxt); a.target = "_blank"; a.rel = "noopener"; });
+    const rm = document.getElementById("remind");   // calendar reminder: only while the last date is ahead; iPhone/Mac get the .ics, others Google Calendar
+    if (rm) { rm.hidden = !(last && last - new Date() > 0);
+      if (!/iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent) && rm.dataset.gcal) { rm.href = rm.dataset.gcal; rm.removeAttribute("download"); rm.target = "_blank"; rm.rel = "noopener"; } }
     const btn = document.getElementById("lang");
     btn.textContent = t("switchTo"); btn.lang = t("switchLang");
     paintTheme();

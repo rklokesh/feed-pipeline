@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SarkariChart//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:icg-assistant-commandant-2027-batch-last@sarkarichart
+DTSTAMP:20261107T220353Z
+DTSTART;VALUE=DATE:20250727
+DTEND;VALUE=DATE:20250728
+SUMMARY:Last date: ICG Assistant Commandant 2027 Batch
+DESCRIPTION:https://sarkarichart.pages.dev/notice/icg-assistant-commandant-2027-batch/
+URL:https://sarkarichart.pages.dev/notice/icg-assistant-commandant-2027-batch/
+BEGIN:VALARM
+TRIGGER:-P1DT15H
+ACTION:DISPLAY
+DESCRIPTION:Last date: ICG Assistant Commandant 2027 Batch
+END:VALARM
+END:VEVENT
+END:VCALENDAR

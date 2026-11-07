@@ -17,3 +17,5 @@
 /notice/*.pdf
   ! Cache-Control
   Cache-Control: public, max-age=86400
+/notice/*/remind.ics
+  Content-Type: text/calendar; charset=utf-8

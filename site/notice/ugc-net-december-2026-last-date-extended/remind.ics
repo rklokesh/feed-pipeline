@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SarkariChart//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:ugc-net-december-2026-last-date-extended-last@sarkarichart
+DTSTAMP:20261107T220354Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Last date: UGC-NET December 2026 Last Date Extended – Apply Online
+DESCRIPTION:https://sarkarichart.pages.dev/notice/ugc-net-december-2026-last-date-extended/
+URL:https://sarkarichart.pages.dev/notice/ugc-net-december-2026-last-date-extended/
+BEGIN:VALARM
+TRIGGER:-P1DT15H
+ACTION:DISPLAY
+DESCRIPTION:Last date: UGC-NET December 2026 Last Date Extended – Apply Online
+END:VALARM
+END:VEVENT
+END:VCALENDAR

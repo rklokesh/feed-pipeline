@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SarkariChart//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:ukpsc-combined-state-civil-upper-subordinate-recruitment-2026-last@sarkarichart
+DTSTAMP:20261107T220353Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Last date: UKPSC Combined State Civil Upper Subordinate Recruitment 2026
+DESCRIPTION:https://sarkarichart.pages.dev/notice/ukpsc-combined-state-civil-upper-subordinate-recruitment-2026/
+URL:https://sarkarichart.pages.dev/notice/ukpsc-combined-state-civil-upper-subordinate-recruitment-2026/
+BEGIN:VALARM
+TRIGGER:-P1DT15H
+ACTION:DISPLAY
+DESCRIPTION:Last date: UKPSC Combined State Civil Upper Subordinate Recruitment 2026
+END:VALARM
+END:VEVENT
+END:VCALENDAR

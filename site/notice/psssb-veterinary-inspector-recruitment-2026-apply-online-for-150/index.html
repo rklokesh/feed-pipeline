@@ -99,6 +99,21 @@ h1 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; text-wrap: b
 .kv a.r .v::after { content: " ↗"; color: var(--grey); }
 .kv .r .v small { display: block; color: var(--grey); font-size: inherit; }
 
+/* "Do it" box under the title: the few things most readers came for, as big buttons */
+.doit { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; width: 100%; max-width: 560px; margin: 14px auto 4px; }
+.doit .btn { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 50px; padding: 10px 14px; box-sizing: border-box;
+  border: 1px solid var(--line); border-radius: 8px; background: var(--page); color: var(--ink); text-decoration: none; font-weight: 500; line-height: 1.25; text-align: center; }
+.doit .btn svg { flex: none; }
+.doit .btn:hover { background: var(--soft); text-decoration: none; }
+.doit .btn.pri, .doit #remind { grid-column: 1 / -1; }
+.doit .btn.pri { background: var(--ink); color: var(--page); border-color: var(--ink); font-weight: 600; font-size: 1.0625rem; }
+.doit .btn.pri:hover { opacity: .9; background: var(--ink); }
+.doit .btn.wa { background: #1FA855; color: #fff; border-color: #1FA855; font-weight: 600; }
+.doit .btn.wa:hover { background: #1b964c; }
+.doit .btn.wa svg path:first-child { fill: #fff; }
+.doit .btn.wa svg path:last-child { fill: #1FA855; }
+.doit .btn[hidden] { display: none; }
+@media print { .doit { display: none !important; } }
 .note { display: grid; gap: 18px; max-width: 46rem; }
 .actions { row-gap: 12px !important; column-gap: 28px !important; }
 .actions .act { display: inline-flex; align-items: center; gap: 6px; }
@@ -539,6 +554,12 @@ li.adrow .adslot { margin: 20px auto; }
       <p class="meta g" data-t="metaV">Updated 3 Nov 2026 · Source: sssb.punjab.gov.in</p>
       
       <p class="status"><span id="state">Notice published</span><span id="left"></span><span id="views" class="g" hidden></span></p>
+      <div class="doit" id="doit">
+        <a class="btn pri" href="https://sssb.punjab.gov.in" target="_blank" rel="noopener"><span data-t="aGo">Apply online</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        <a class="btn" href="https://sssb.punjab.gov.in/wp-content/uploads/2026/04/Advt.-No.-10-of-2026.pdf" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg><span data-t="aPdf">Official notice (PDF)</span></a>
+        <a class="btn wa js-share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a>
+        <a class="btn" id="remind" href="/notice/psssb-veterinary-inspector-recruitment-2026-apply-online-for-150/remind.ics" download="last-date-psssb-veterinary-inspector-recruitment-2.ics" data-gcal="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Last+date%3A+PSSSB+Veterinary+Inspector+Recruitment+2026+%E2%80%93+Apply+Online+for+150+Posts&amp;dates=20260525%2F20260526&amp;details=https%3A%2F%2Fsarkarichart.pages.dev%2Fnotice%2Fpsssb-veterinary-inspector-recruitment-2026-apply-online-for-150%2F" hidden><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg><span data-t="aRemind">Remind me before the last date</span></a>
+      </div>
       <p class="lead" data-t="summary">Punjab Subordinate Services Selection Board (PSSSB) has invited online applications for 150 Veterinary Inspector posts. Eligible candidates can apply online up to May 25, 2026.</p>
       <img class="ogimg" id="ogimg" src="/notice/psssb-veterinary-inspector-recruitment-2026-apply-online-for-150/og.png" data-en="/notice/psssb-veterinary-inspector-recruitment-2026-apply-online-for-150/og.png" data-hi="/notice/psssb-veterinary-inspector-recruitment-2026-apply-online-for-150/og-hi.png" width="1200" height="675" alt="PSSSB Veterinary Inspector Recruitment 2026 – Apply Online for 150 Posts — summary card" decoding="async" onerror="this.hidden=true">
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
@@ -772,7 +793,7 @@ li.adrow .adslot { margin: 20px auto; }
     </details>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 3 Nov 2026. If anything here differs from the official notice, the official notice is correct.</p>
-      <p class="actions"><a class="share" id="share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/psssb-veterinary-inspector-recruitment-2026-apply-online-for-150/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
+      <p class="actions"><a class="share js-share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/psssb-veterinary-inspector-recruitment-2026-apply-online-for-150/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
     </div>
   </main>
 
@@ -838,6 +859,10 @@ li.adrow .adslot { margin: 20px auto; }
       f3: "Physical Handicapped",
       eligL: "Are you eligible?",
       metaV: "Updated 3 Nov 2026 · Source: sssb.punjab.gov.in",
+      aGo: "Apply online",
+      aPdf: "Official notice (PDF)",
+      aRemind: "Remind me before the last date",
+      waText: "*PSSSB Veterinary Inspector Recruitment 2026 – Apply Online for 150 Posts*\nपीएसएसएसबी वेटरनरी इंस्पेक्टर भर्ती 2026 – 150 पदों के लिए ऑनलाइन आवेदन\n150 posts · Last date 25 May 2026\nOfficial links and full details:",
       aboutH: "About this notice",
       intro: "Punjab Subordinate Services Selection Board (PSSSB) has released Advertisement No. 10 of 2026 for the recruitment of 150 Veterinary Inspector posts under the Department of Animal Husbandry, Punjab. The online application process starts on May 4, 2026, and concludes on May 25, 2026. Interested and eligible candidates must check their eligibility, age limit, and fee details before submitting their online forms on the official website.",
       whoH: "Who should read this",
@@ -978,6 +1003,10 @@ li.adrow .adslot { margin: 20px auto; }
       f3: "दिव्यांग",
       eligL: "क्या आप योग्य हैं?",
       metaV: "अपडेट 3 नवंबर 2026 · स्रोत: sssb.punjab.gov.in",
+      aGo: "ऑनलाइन आवेदन करें",
+      aPdf: "आधिकारिक सूचना (PDF)",
+      aRemind: "अंतिम तिथि से पहले याद दिलाएँ",
+      waText: "*पीएसएसएसबी वेटरनरी इंस्पेक्टर भर्ती 2026 – 150 पदों के लिए ऑनलाइन आवेदन*\nPSSSB Veterinary Inspector Recruitment 2026 – Apply Online for 150 Posts\n150 पद · अंतिम तिथि 25 मई 2026\nआधिकारिक लिंक और पूरी जानकारी:",
       aboutH: "इस सूचना के बारे में",
       intro: "अधीन सेवाएं चयन बोर्ड, पंजाब (पीएसएसएसबी) ने पशुपालन विभाग, पंजाब के अंतर्गत वेटरनरी इंस्पेक्टर के 150 पदों पर भर्ती के लिए विज्ञापन संख्या 10 ऑफ़ 2026 जारी किया है। ऑनलाइन आवेदन प्रक्रिया 04 मई 2026 से शुरू होकर 25 मई 2026 तक चलेगी। योग्य और इच्छुक उम्मीदवारों को सलाह दी जाती है कि वे ऑनलाइन फॉर्म भरने से पहले अपनी योग्यता, आयु सीमा और फीस की पूरी जानकारी देख लें।",
       whoH: "यह किसके लिए है",
@@ -1102,8 +1131,11 @@ li.adrow .adslot { margin: 20px auto; }
         el.innerHTML = t("lastDate") + '<span class="dl"><span class="gap"></span><span class="tag ' + cls + '">' + (d === 0 ? t("lastDay") : t("daysLeft")(d)) + "</span>" + (d <= 7 ? '<picture aria-hidden="true"><source srcset="/siren-still.png" media="(prefers-reduced-motion: reduce)"><img class="dsiren" src="/siren.webp" width="14" height="14" alt=""></picture>' : "") + "</span>";
       }
     }
-    const sh = document.getElementById("share");
-    if (sh) sh.href = "https://wa.me/?text=" + encodeURIComponent(t("h1") + "\n" + location.origin + location.pathname);
+    const wtxt = (t("waText") || t("h1")) + "\n" + location.origin + location.pathname;
+    document.querySelectorAll(".js-share").forEach(a => { a.href = "https://wa.me/?text=" + encodeURIComponent(wtxt); a.target = "_blank"; a.rel = "noopener"; });
+    const rm = document.getElementById("remind");   // calendar reminder: only while the last date is ahead; iPhone/Mac get the .ics, others Google Calendar
+    if (rm) { rm.hidden = !(last && last - new Date() > 0);
+      if (!/iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent) && rm.dataset.gcal) { rm.href = rm.dataset.gcal; rm.removeAttribute("download"); rm.target = "_blank"; rm.rel = "noopener"; } }
     const btn = document.getElementById("lang");
     btn.textContent = t("switchTo"); btn.lang = t("switchLang");
     paintTheme();
