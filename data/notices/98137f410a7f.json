@@ -1,5 +1,27 @@
 {
+  "auto_published": true,
   "board_url": "https://ssc.gov.in/home/notice-board",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-18",
+    "last_date": null,
+    "list": true,
+    "posts": "Hindi Translator",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Identity verification and sliding process for candidates shortlisted in FRTA of the Combined Hindi Translators Examination 2025 will be held on 18.11.2026. Eligible candidates should download their verification slip from the official website.",
+    "summary_hi": "सम्मिलित हिंदी अनुवादक परीक्षा 2025 के लिए चयनित उम्मीदवारों का पहचान सत्यापन और स्लाइडिंग प्रक्रिया 18.11.2026 को आयोजित की जाएगी। योग्य उम्मीदवार आधिकारिक वेबसाइट से अपनी पर्ची डाउनलोड करें।",
+    "title_en": "SSC Combined Hindi Translators Exam 2025 Identity Verification Notice",
+    "title_hi": "कर्मचारी चयन आयोग सम्मिलित हिंदी अनुवादक परीक्षा 2025 पहचान सत्यापन नोटिस",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "ssc-combined-hindi-translator-2025",
+    "name_en": "SSC Combined Hindi Translator 2025",
+    "name_hi": "एसएससी संयुक्त हिंदी अनुवादक 2025"
+  },
   "extraction": {
     "ai": null
   },
@@ -12,16 +34,216 @@
   },
   "first_seen": "2026-11-07T15:57:00+00:00",
   "id": "98137f410a7f",
+  "issue": 1173,
+  "issue_tidy": true,
   "kind": "result",
+  "notice_date": "2026-11-07",
   "org": "SSC",
+  "page": {
+    "after_en": [
+      "Final result declaration based on identity verification and sliding process."
+    ],
+    "after_hi": [
+      "पहचान सत्यापन और स्लाइडिंग प्रक्रिया के आधार पर अंतिम परिणाम की घोषणा।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://ssc.gov.in/",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Download the IV slip from the official website.",
+      "Check your designated regional office venue.",
+      "Ensure physical presence on 18.11.2026."
+    ],
+    "checklist_hi": [
+      "आधिकारिक वेबसाइट से आईडीवी पर्ची डाउनलोड करें।",
+      "अपने निर्धारित क्षेत्रीय कार्यालय के स्थान की जाँच करें।",
+      "18.11.2026 को भौतिक उपस्थिति सुनिश्चित करें।"
+    ],
+    "conducted_by_en": "Staff Selection Commission (SSC)",
+    "conducted_by_hi": "कर्मचारी चयन आयोग (एसएससी)",
+    "dates": [
+      {
+        "label_en": "FRTA result declared",
+        "label_hi": "एफआरटीए परिणाम घोषित",
+        "value_en": "05 Nov 2026",
+        "value_hi": "05 नवंबर 2026"
+      },
+      {
+        "label_en": "Identity verification slip download starts",
+        "label_hi": "पहचान सत्यापन पर्ची डाउनलोड शुरू",
+        "value_en": "13 Nov 2026",
+        "value_hi": "13 नवंबर 2026"
+      },
+      {
+        "label_en": "Identity verification and sliding process date",
+        "label_hi": "पहचान सत्यापन और स्लाइडिंग प्रक्रिया तिथि",
+        "value_en": "18 Nov 2026",
+        "value_hi": "18 नवंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Identity Verification Slip",
+      "Valid photo identity proof"
+    ],
+    "documents_hi": [
+      "पहचान सत्यापन पर्ची",
+      "वैध फोटो पहचान प्रमाण"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-11-18",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a mandatory physical verification process for candidates shortlisted in the First Round of Tentative Allocation (FRTA) of the Combined Hindi Translators Examination, 2025 to verify their credentials before the final selection.",
+        "a_hi": "यह अंतिम चयन से पहले उम्मीदवारों के विवरण को सत्यापित करने के लिए सम्मिलित हिंदी अनुवादक परीक्षा, 2025 के प्रथम दौर के अनंतिम आवंटन में शॉर्टलिस्ट किए गए उम्मीदवारों के लिए एक अनिवार्य भौतिक सत्यापन प्रक्रिया है।",
+        "q_en": "What is the Identity Verification for SSC CHT 2025?",
+        "q_hi": "एसएससी सीएटी 2025 के लिए पहचान सत्यापन क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस तिथि",
+        "value_en": "07 Nov 2026",
+        "value_hi": "07 नवंबर 2026"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The identity verification and sliding process will be conducted on 18.11.2026.",
+        "a_hi": "पहचान सत्यापन और स्लाइडिंग प्रक्रिया 18.11.2026 को आयोजित की जाएगी।",
+        "q_en": "When is the Identity Verification for SSC Combined Hindi Translators Exam 2025?",
+        "q_hi": "एसएससी सम्मिलित हिंदी अनुवादक परीक्षा 2025 के लिए पहचान सत्यापन कब है?"
+      },
+      {
+        "a_en": "You can download the slip from the official website starting from 13.11.2026 at 05:00 PM.",
+        "a_hi": "आप 13.11.2026 को शाम 05:00 बजे से आधिकारिक वेबसाइट से पर्ची डाउनलोड कर सकते हैं।",
+        "q_en": "When can I download the Identity Verification slip?",
+        "q_hi": "मैं पहचान सत्यापन पर्ची कब डाउनलोड कर सकता हूँ?"
+      },
+      {
+        "a_en": "Yes, physical presence at the designated venue on the scheduled date is strictly mandatory.",
+        "a_hi": "हाँ, निर्धारित तिथि पर निर्दिष्ट स्थल पर भौतिक उपस्थिति अनिवार्य है।",
+        "q_en": "Is physical presence mandatory for the verification process?",
+        "q_hi": "क्या सत्यापन प्रक्रिया के लिए भौतिक उपस्थिति अनिवार्य है?"
+      },
+      {
+        "a_en": "No, any representation regarding change or allotment of venue or date of IV will not be entertained.",
+        "a_hi": "नहीं, स्थल या तिथि के परिवर्तन या आवंटन से संबंधित किसी भी अभ्यावेदन पर विचार नहीं किया जाएगा।",
+        "q_en": "Can I request a change of venue or date for Identity Verification?",
+        "q_hi": "क्या मैं पहचान सत्यापन के लिए स्थल या तिथि में परिवर्तन का अनुरोध कर सकता हूँ?"
+      },
+      {
+        "a_en": "The official website is https://ssc.gov.in/.",
+        "a_hi": "आधिकारिक वेबसाइट https://ssc.gov.in/ है।",
+        "q_en": "What is the official website to download the SSC CHT 2025 IV slip?",
+        "q_hi": "एसएससी सीएटी 2025 आईडीवी पर्ची डाउनलोड करने के लिए आधिकारिक वेबसाइट क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "SSC Combined Hindi Translators Exam 2025 Identity Verification Notice",
+    "h1_hi": "कर्मचारी चयन आयोग सम्मिलित हिंदी अनुवादक परीक्षा 2025 पहचान सत्यापन नोटिस",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Go to the official website of Staff Selection Commission (ssc.gov.in).",
+      "Log in to the designated candidate module using your credentials.",
+      "Download and print your Sliding Process/Identity Verification slip starting from 13.11.2026.",
+      "Report physically at the designated venue on 18.11.2026."
+    ],
+    "how_hi": [
+      "कर्मचारी चयन आयोग की आधिकारिक वेबसाइट (ssc.gov.in) पर जाएं।",
+      "अपने विवरण का उपयोग करके उम्मीदवार मॉड्यूल में लॉगिन करें।",
+      "13.11.2026 से अपनी स्लाइडिंग प्रक्रिया/पहचान सत्यापन पर्ची डाउनलोड और प्रिंट करें।",
+      "18.11.2026 को निर्धारित स्थल पर भौतिक रूप से उपस्थित हों।"
+    ],
+    "intro_en": "The Staff Selection Commission (SSC) has released the notice regarding Identity Verification (IV) and Sliding Process for candidates shortlisted in the First Round of Tentative Allocation (FRTA) of the Combined Hindi Translators Examination, 2025. The process is scheduled to be conducted on 18.11.2026 at the respective Regional Offices. Candidates who are provisionally shortlisted must download their identity verification slip from the official website starting 13.11.2026. Physical presence at the designated venue is strictly mandatory.",
+    "intro_hi": "कर्मचारी चयन आयोग (एसएससी) ने सम्मिलित हिंदी अनुवादक परीक्षा, 2025 के लिए पहचान सत्यापन और स्लाइडिंग प्रक्रिया के संबंध में नोटिस जारी किया है। यह प्रक्रिया 18.11.2026 को संबंधित क्षेत्रीय कार्यालयों में आयोजित की जाएगी। अनंतिम रूप से शॉर्टलिस्ट किए गए उम्मीदवार 13.11.2026 से अपनी पहचान सत्यापन पर्ची डाउनलोड कर सकते हैं। निर्धारित स्थल पर भौतिक रूप से उपस्थित होना अनिवार्य है।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not miss the physical attendance at the designated venue on 18.11.2026.",
+      "Do not expect any change of venue or date as representations will not be entertained."
+    ],
+    "mistakes_hi": [
+      "18.11.2026 को निर्धारित स्थल पर भौतिक उपस्थिति न चूकें।",
+      "स्थल या तिथि में बदलाव की उम्मीद न करें क्योंकि किसी भी अभ्यावेदन पर विचार नहीं किया जाएगा।"
+    ],
+    "not_en": [
+      "Candidates who fail to attend the identity verification process in person will be treated as absent and will not be considered for the final result."
+    ],
+    "not_hi": [
+      "जो उम्मीदवार व्यक्तिगत रूप से पहचान सत्यापन प्रक्रिया में शामिल होने में विफल रहते हैं, उन्हें अनुपस्थित माना जाएगा और अंतिम परिणाम के लिए विचार नहीं किया जाएगा।"
+    ],
+    "notice_date": "2026-11-07",
+    "official_site": "https://ssc.gov.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Exam Name",
+        "label_hi": "परीक्षा का नाम",
+        "value_en": "Combined Hindi Translators Examination, 2025",
+        "value_hi": "सम्मिलित हिंदी अनुवादक परीक्षा, 2025"
+      },
+      {
+        "label_en": "Identity Verification Date",
+        "label_hi": "पहचान सत्यापन तिथि",
+        "value_en": "18 Nov 2026",
+        "value_hi": "18 नवंबर 2026"
+      },
+      {
+        "label_en": "Download Slip From",
+        "label_hi": "पर्ची डाउनलोड शुरू",
+        "value_en": "13 Nov 2026 (05:00 PM)",
+        "value_hi": "13 नवंबर 2026 (शाम 05:00 बजे)"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "First Round of Tentative Allocation (FRTA)",
+      "Identity Verification (IV) and Sliding Process",
+      "Final Result"
+    ],
+    "selection_hi": [
+      "प्रथम दौर का अनंतिम आवंटन",
+      "पहचान सत्यापन और स्लाइडिंग प्रक्रिया",
+      "अंतिम परिणाम"
+    ],
+    "share_card": {
+      "headline_en": "Identity Verification",
+      "headline_hi": "पहचान सत्यापन",
+      "kind": "sched",
+      "line_en": "Hindi Translator Exam 2025",
+      "line_hi": "हिंदी अनुवादक परीक्षा 2025",
+      "posts": null
+    },
+    "status_en": "Identity verification schedule released, process on 18 Nov 2026",
+    "status_hi": "पहचान सत्यापन कार्यक्रम जारी, प्रक्रिया 18 नवंबर 2026 को",
+    "summary_en": "Staff Selection Commission has announced the Identity Verification (IV) and Sliding Process schedule for candidates shortlisted in FRTA of the Combined Hindi Translators Examination 2025. The verification will be held on 18.11.2026. Eligible candidates can download their verification slip from 13.11.2026.",
+    "summary_hi": "कर्मचारी चयन आयोग ने सम्मिलित हिंदी अनुवादक परीक्षा 2025 के लिए पहचान सत्यापन और स्लाइडिंग प्रक्रिया की तिथि घोषित कर दी है। सत्यापन 18.11.2026 को आयोजित किया जाएगा। योग्य उम्मीदवार 13.11.2026 से अपनी पर्ची डाउनलोड कर सकते हैं।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Candidates shortlisted in FRTA of Combined Hindi Translators Examination, 2025"
+    ],
+    "who_hi": [
+      "सम्मिलित हिंदी अनुवादक परीक्षा, 2025 के एफआरटीए में शॉर्टलिस्ट किए गए उम्मीदवार"
+    ]
+  },
   "pdf": {
     "bytes": 322952,
     "pages": 1,
     "sha256": "5e57ef5f1b4d977c57cb614aeee1f937d13c811aec8b456bdce6dcbe33e85cc3",
     "text_kind": "text"
   },
+  "published_at": "2026-11-07T15:57:52Z",
+  "qual": [
+    "graduate"
+  ],
+  "slug": "ssc-combined-hindi-translators-exam-2025-identity-verification-n",
   "source_id": "ssc-notice-board",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Identity Verification (IV) for the candidates shortlisted in FRTA of Combined Hindi Translators Examination, 2025 - reg.",
   "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/CHT 2025 FRTA notice 07112026.pdf"
 }
