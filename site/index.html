@@ -631,14 +631,17 @@ main > .adslot { margin: 0 !important; }   /* inside an article the page's own s
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .f-link { color: #8AB4F8; } }
 @media (max-width: 640px) { .search:has(.sf) input { padding-right: 110px !important; } .search:has(.sf) .sx { right: 44px !important; } .search:has(.sf) .ph { right: 110px !important; } .kc { display: none; } }
 
-/* links turn the logo red on hover (also the notice titles in the list) */
-.kv a.r:hover > span, .kv a.r:hover .v, .kv a.r:hover small, .kv.rel a.r:hover span { color: #E8312F !important; }
-:root[data-theme="dark"] .kv a.r:hover > span, :root[data-theme="dark"] .kv a.r:hover .v { color: #E8312F !important; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .kv a.r:hover > span, :root:not([data-theme="light"]) .kv a.r:hover .v { color: #E8312F !important; } }
+/* links turn dark maroon on hover (also the notice titles in the list) */
+.kv a.r:hover > span, .kv a.r:hover .v, .kv a.r:hover small, .kv.rel a.r:hover span { color: #8E1B1E !important; }
+:root[data-theme="dark"] .kv a.r:hover > span, :root[data-theme="dark"] .kv a.r:hover .v { color: #8E1B1E !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .kv a.r:hover > span, :root:not([data-theme="light"]) .kv a.r:hover .v { color: #8E1B1E !important; } }
 
-a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .list li.lr.sel .t { color: #E8312F; }
-:root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t { color: #E8312F; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t { color: #E8312F; } }
+a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .list li.lr.sel .t { color: #8E1B1E; }
+:root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t { color: #8E1B1E; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t { color: #8E1B1E; } }
+:root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t, :root[data-theme="dark"] .kv a.r:hover > span, :root[data-theme="dark"] .kv a.r:hover .v { color: #F2A7A1 !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t, :root:not([data-theme="light"]) .kv a.r:hover > span, :root:not([data-theme="light"]) .kv a.r:hover .v { color: #F2A7A1 !important; } }
+
 /* panel polish: roomier rows, softer card, smooth open */
 .sugg { top: calc(100% + 8px); padding: 8px; border-radius: 14px; opacity: 0; transform: translateY(-6px) scale(.985); transform-origin: top center;
   transition: opacity .16s ease, transform .22s cubic-bezier(.2, .8, .2, 1); box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 18px 40px -16px rgba(0,0,0,.28); }
@@ -674,6 +677,19 @@ a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .l
 .f-foot { margin: 12px -12px -12px; padding: 14px 18px; border-radius: 0 0 16px 16px; }
 .fpanel { padding-bottom: 12px; }
 @media (max-width: 640px) { .sugg { padding: 10px; } .sg-h { margin: 16px 10px 8px; } .sg-i { padding: 11px 10px; } .sg-chips { padding: 2px 10px 10px; } .f-me { padding: 4px 10px 10px; } }
+/* eligibility: one tidy switch row */
+.f-sw { display: flex; align-items: center; gap: 14px; margin: 14px 14px 6px; padding: 14px 0 4px; border-top: 1px solid var(--line); cursor: pointer; position: relative; }
+.f-swt { flex: 1; display: grid; gap: 3px; min-width: 0; }
+.f-swt b { font-weight: 500; color: var(--ink); }
+.f-swt small { color: var(--grey); font-size: .8125rem; }
+.f-swt .f-link { font-size: .8125rem; }
+.f-sw input { position: absolute; left: 0; top: 0; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+.f-knob { flex: none; width: 42px; height: 24px; border-radius: 999px; background: color-mix(in srgb, var(--ink) 18%, var(--page)); position: relative; transition: background .2s ease; }
+.f-knob::after { content: ""; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.25); transition: transform .2s cubic-bezier(.2,.8,.2,1); }
+.f-sw input:checked + .f-knob { background: #1FA855; }
+.f-sw input:checked + .f-knob::after { transform: translateX(18px); }
+.f-sw input:focus-visible + .f-knob { outline: 2px solid var(--ink); outline-offset: 2px; }
+@media (max-width: 640px) { .f-sw { margin: 12px 10px 4px; } }
 </style>
 <script>document.documentElement.classList.add("v2");try{localStorage.removeItem("sc-v2")}catch(e){}</script>
 <script>/* Desktop A/B. Version A (original desktop) is the default everywhere; version B (phone-style chrome) lives at /v2/ (or ?new).
@@ -1822,11 +1838,10 @@ w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},2
     let h = `<p class="sg-h">${LL("State", "राज्य")}</p><div class="sg-chips">` + chip("st", "", LL("All India", "पूरा भारत"), !F.st) + chip("st", "central", LL("Central only", "केवल केंद्र"), F.st === "central") +
       STATES.map(s => chip("st", s[0], s[H], F.st === s[0])).join("") + "</div>";
     h += `<p class="sg-h">${LL("Your qualification", "आपकी योग्यता")}</p><div class="sg-chips">` + chip("q", "", LL("Any", "कोई भी"), !F.q) + QS.map(x => chip("q", x[0], x[H], F.q === x[0])).join("") + "</div>";
-    h += `<p class="sg-h">${LL("Am I eligible?", "क्या मैं योग्य हूँ?")}</p><div class="f-me">` +
-      `<label class="f-tg"><input type="checkbox" id="fMe"${F.me ? " checked" : ""}> <span>${LL("Only jobs I can apply for (age and qualification)", "सिर्फ़ वो नौकरियाँ जिनके लिए मैं योग्य हूँ (आयु और योग्यता)")}</span></label>` +
-      `<button type="button" class="f-link" id="fMeSet">${me ? LL("Change my details", "मेरी जानकारी बदलें") : LL("Add my date of birth", "जन्म तिथि जोड़ें")}</button>` +
-      `<p class="f-note">${LL("Always confirm in the official notice. Your details stay on this device.", "आधिकारिक सूचना में ज़रूर जाँचें। आपकी जानकारी इसी डिवाइस पर रहती है।")}</p></div>`;
-    h += `<div class="f-foot"><button type="button" class="f-link" id="fClear">${LL("Clear all", "सब हटाएँ")}</button><button type="button" class="f-done" id="fDone">${LL("Show", "दिखाएँ")} ${allRows.length}</button></div>`;
+    h += `<div class="f-sw"><span class="f-swt"><b>${LL("Only jobs I can apply for", "सिर्फ़ मेरे लायक नौकरियाँ")}</b>` +
+      `<small>${me ? LL("Checked with your age and qualification", "आपकी आयु और योग्यता से जाँचा गया") : LL("Add your date of birth once", "एक बार जन्म तिथि जोड़ें")} · <button type="button" class="f-link" id="fMeSet">${me ? LL("Edit", "बदलें") : LL("Add", "जोड़ें")}</button></small></span>` +
+      `<input type="checkbox" id="fMe" role="switch"${F.me ? " checked" : ""}><span class="f-knob" aria-hidden="true"></span></div>`;
+    h += `<div class="f-foot"><button type="button" class="f-link" id="fClear">${LL("Clear all", "सब हटाएँ")}</button><button type="button" class="f-done" id="fDone">${LL("Show", "दिखाएँ")} ${ITEMS.filter(i => live(i) && inCat(i, cat) && qmatch(i) && jobFilter(i)).length}</button></div>`;
     FP.innerHTML = h;
   }
   function fApply() { fSave(); fPaintBtn(); update(); if (isOpen(FP)) fRender(); }
@@ -1839,11 +1854,12 @@ w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},2
     });
     FP.addEventListener("mousedown", e => { if (!e.target.closest("input, label")) e.preventDefault(); });
     FP.addEventListener("click", e => {
-      e.stopPropagation();
-      if (!e.target.closest(".f-tg")) e.preventDefault();
+      e.stopPropagation(); e.preventDefault();
+      const sw = e.target.closest(".f-sw");
+      if (sw && !e.target.closest("#fMeSet")) { const cb = sw.querySelector("#fMe"); cb.checked = !cb.checked; cb.dispatchEvent(new Event("change", { bubbles: true })); return; }
       const c = e.target.closest(".sg-chip[data-g]");
       if (c) { e.preventDefault(); F[c.dataset.g] = c.dataset.v; fApply(); return; }
-      if (e.target.closest("#fClear")) { e.preventDefault(); F.st = ""; F.q = ""; F.me = false; fApply(); return; }
+      if (e.target.closest("#fClear")) { e.preventDefault(); F.st = ""; F.q = ""; F.me = false; fApply(); pClose(FP); return; }
       if (e.target.closest("#fDone")) { e.preventDefault(); pClose(FP); return; }
       if (e.target.closest("#fMeSet")) { e.preventDefault(); window.scElig.form(() => { if (window.scElig.load()) F.me = true; fApply(); }); return; }
     });

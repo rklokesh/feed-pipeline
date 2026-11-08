@@ -279,14 +279,17 @@ html[lang="hi"] .hidet { display: none; }
 .top .logo img { -webkit-user-drag: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
 .search, .search input { cursor: text; }
 
-/* links turn the logo red on hover (also the notice titles in the list) */
-.kv a.r:hover > span, .kv a.r:hover .v, .kv a.r:hover small, .kv.rel a.r:hover span { color: #E8312F !important; }
-:root[data-theme="dark"] .kv a.r:hover > span, :root[data-theme="dark"] .kv a.r:hover .v { color: #E8312F !important; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .kv a.r:hover > span, :root:not([data-theme="light"]) .kv a.r:hover .v { color: #E8312F !important; } }
+/* links turn dark maroon on hover (also the notice titles in the list) */
+.kv a.r:hover > span, .kv a.r:hover .v, .kv a.r:hover small, .kv.rel a.r:hover span { color: #8E1B1E !important; }
+:root[data-theme="dark"] .kv a.r:hover > span, :root[data-theme="dark"] .kv a.r:hover .v { color: #8E1B1E !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .kv a.r:hover > span, :root:not([data-theme="light"]) .kv a.r:hover .v { color: #8E1B1E !important; } }
 
-a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .list li.lr.sel .t { color: #E8312F; }
-:root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t { color: #E8312F; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t { color: #E8312F; } }
+a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .list li.lr.sel .t { color: #8E1B1E; }
+:root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t { color: #8E1B1E; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t { color: #8E1B1E; } }
+
+:root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t, :root[data-theme="dark"] .kv a.r:hover > span, :root[data-theme="dark"] .kv a.r:hover .v { color: #F2A7A1 !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t, :root:not([data-theme="light"]) .kv a.r:hover > span, :root:not([data-theme="light"]) .kv a.r:hover .v { color: #F2A7A1 !important; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});</script>
