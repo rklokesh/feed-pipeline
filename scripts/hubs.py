@@ -202,11 +202,11 @@ def build():
                   "Bank PO Clerk SI ASI Driver Nurse Pharmacist Anganwadi Steno Typist JE AE GD CHSL CGL MTS NTPC Group-D").split()
         import random
         rnd = random.Random(7)
-        words = " ".join(rnd.choice(boards) for _ in range(900))
+        words = " ".join(f"<span>{rnd.choice(boards)}</span>" for _ in range(900))
         hero = ('    <section class="hero" aria-label="Search">\n'
                 f'      <div class="hero-bg" aria-hidden="true">{words}</div>\n'
-                '      <h2 class="hero-h"><span class="x-en">Every government job,<br>straight from the official notice</span>'
-                '<span class="x-hi" lang="hi">हर सरकारी नौकरी,<br>सीधे आधिकारिक सूचना से</span></h2>\n'
+                '      <h2 class="hero-h"><span class="x-en">Govt jobs, admit cards and results,<br>straight from the official notice</span>'
+                '<span class="x-hi" lang="hi">सरकारी नौकरी, एडमिट कार्ड और रिज़ल्ट,<br>सीधे आधिकारिक सूचना से</span></h2>\n'
                 + search.replace("    <label", "      <label", 1) +
                 '      <p class="hero-sub g"><span class="x-en">50+ official boards · checked every 30 minutes</span>'
                 '<span class="x-hi" lang="hi">50+ आधिकारिक बोर्ड · हर 30 मिनट में जाँच</span></p>\n'
@@ -214,22 +214,36 @@ def build():
         hv = hv.replace("  <main>\n", "  <main>\n" + hero, 1)
         css = """<style>
 html.hv body { overflow-x: clip; }
-html.hv .hero { position: relative; margin: 0 calc(50% - 50vw) 30px; padding: 84px 16px 64px; text-align: center; overflow: hidden; border-bottom: 1px solid var(--line); }
-html.hv .hero-bg { position: absolute; inset: 0; padding: 10px; overflow: hidden; pointer-events: none; user-select: none; -webkit-user-select: none; text-align: left;
-  font: 12px/24px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: .02em; word-spacing: 16px; color: var(--grey); opacity: .22;
-  -webkit-mask-image: radial-gradient(ellipse at center, transparent 0, transparent 42%, #000 88%); mask-image: radial-gradient(ellipse at center, transparent 0, transparent 42%, #000 88%); }
-html.hv .hero-h { position: relative; margin: 0 auto 30px; max-width: 15em; font-size: clamp(1.75rem, 1.1rem + 3.6vw, 3.5rem); font-weight: 600; line-height: 1.06; letter-spacing: -0.03em; color: var(--ink); text-wrap: balance; }
+html.hv .hero { position: relative; margin: 0 calc(50% - 50vw) 30px; padding: 88px 16px 72px; text-align: center; overflow: hidden; }
+html.hv .hero-bg { position: absolute; inset: -10px 0; padding: 10px; overflow: hidden; pointer-events: none; user-select: none; -webkit-user-select: none; text-align: left;
+  font: 12px/24px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: .02em; word-spacing: 16px;
+  /* one soft fade: clear in the middle, easing out to every edge (no hard top, bottom or side) */
+  -webkit-mask-image: radial-gradient(ellipse 62% 58% at 50% 50%, transparent 0, transparent 40%, rgba(0,0,0,.25) 58%, rgba(0,0,0,.7) 78%, #000 100%),
+                      linear-gradient(to bottom, transparent 0, #000 22%, #000 72%, transparent 100%),
+                      linear-gradient(to right, transparent 0, #000 12%, #000 88%, transparent 100%);
+  -webkit-mask-composite: source-in, source-in;
+          mask-image: radial-gradient(ellipse 62% 58% at 50% 50%, transparent 0, transparent 40%, rgba(0,0,0,.25) 58%, rgba(0,0,0,.7) 78%, #000 100%),
+                      linear-gradient(to bottom, transparent 0, #000 22%, #000 72%, transparent 100%),
+                      linear-gradient(to right, transparent 0, #000 12%, #000 88%, transparent 100%);
+          mask-composite: intersect, intersect; }
+html.hv .hero-bg span { color: color-mix(in srgb, var(--grey) 30%, transparent); transition: color 1.6s ease, opacity 1.6s ease; }
+html.hv .hero-bg span.on { color: color-mix(in srgb, #E8312F 75%, transparent); transition-duration: .35s; }
+html.hv .hero-bg span.dim { opacity: .25; transition-duration: .35s; }
+html.hv .hero-h { position: relative; margin: 0 auto 30px; max-width: 22em; font-size: clamp(1.6rem, 1rem + 3.2vw, 3.25rem); font-weight: 600; line-height: 1.06; letter-spacing: -0.03em; color: var(--ink); text-wrap: balance; }
 html.hv .hero .search { position: relative; max-width: 560px; margin: 0 auto !important; text-align: left; }
 html.hv .hero .search input { background: var(--page) !important; border: 1px solid color-mix(in srgb, var(--ink) 28%, transparent) !important; border-radius: 10px !important;
   padding: 13px 92px 13px 44px !important; box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px -12px rgba(0,0,0,.18); }
 html.hv .hero .search input:focus { border-color: var(--ink) !important; }
 html.hv .hero .sicon { left: 14px !important; } html.hv .hero .ph { left: 44px !important; right: 92px !important; } html.hv .hero .sx { right: 14px !important; }
 html.hv .hero-sub { position: relative; margin: 16px 0 0; font-size: .875rem; }
-html.hv .hero .eligline { position: relative; margin: 12px 0 0 !important; text-align: center; }
 html.hv .tabrow { margin-top: 0; }
-@media (max-width: 640px) { html.hv .hero { padding: 48px 16px 40px; margin-bottom: 22px; } html.hv .hero-h { margin-bottom: 22px; } html.hv .hero-bg { font-size: 10px; line-height: 20px; word-spacing: 10px; opacity: .16; -webkit-mask-image: radial-gradient(ellipse at center, transparent 0, transparent 55%, #000 95%); mask-image: radial-gradient(ellipse at center, transparent 0, transparent 55%, #000 95%); } html.hv .hero .eligline { font-size: .8125rem; } }
+@media (max-width: 640px) { html.hv .hero { padding: 52px 16px 44px; margin-bottom: 18px; } html.hv .hero-h { margin-bottom: 22px; } html.hv .hero-h br { display: none; } html.hv .hero-bg { font-size: 10px; line-height: 20px; word-spacing: 10px; } html.hv .hero-bg span { color: color-mix(in srgb, var(--grey) 22%, transparent); } }
 </style>
 <script>document.documentElement.classList.add("hv")</script>
+<script>addEventListener("DOMContentLoaded",function(){var bg=document.querySelector(".hero-bg");if(!bg||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+var ws=bg.children,vis=true;if("IntersectionObserver"in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(bg);
+setInterval(function(){if(!vis||document.hidden)return;var n=1+(Math.random()<.4);for(var k=0;k<n;k++){var w=ws[Math.random()*ws.length|0],c=Math.random()<.65?"on":"dim";
+w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},300+Math.random()*900)})(w,c)}},380)});</script>
 """
         hv = hv.replace("</head>", css + "</head>", 1)
     (SITE / "b").mkdir(exist_ok=True)
