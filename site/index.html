@@ -661,6 +661,20 @@ a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .l
 .sg-none { margin: 12px; }
 :root[data-theme="dark"] .sg-clr { color: #8AB4F8; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sg-clr { color: #8AB4F8; } }
+/* panels v2: always on top of the heading/sub line, calmer spacing */
+.search { z-index: 20; }
+.hero .search { z-index: 20 !important; }
+.sugg { z-index: 80; padding: 12px; border-radius: 16px; top: calc(100% + 10px); }
+.sg-h { margin: 18px 14px 8px; font-size: .75rem; color: var(--grey); }
+.sg-h:first-child { margin-top: 6px; }
+.sg-i { padding: 11px 14px; border-radius: 10px; }
+.sg-rrow .sg-del { width: 38px; height: 38px; margin-right: 4px; }
+.sg-chips { padding: 2px 14px 10px; gap: 8px 8px; }
+.sg-chip { padding: 7px 14px; font-size: .875rem; }
+.f-me { padding: 4px 14px 10px; gap: 10px; }
+.f-foot { margin: 12px -12px -12px; padding: 14px 18px; border-radius: 0 0 16px 16px; }
+.fpanel { padding-bottom: 12px; }
+@media (max-width: 640px) { .sugg { padding: 10px; } .sg-h { margin: 16px 10px 8px; } .sg-i { padding: 11px 10px; } .sg-chips { padding: 2px 10px 10px; } .f-me { padding: 4px 10px 10px; } }
 </style>
 <script>document.documentElement.classList.add("v2");try{localStorage.removeItem("sc-v2")}catch(e){}</script>
 <script>/* Desktop A/B. Version A (original desktop) is the default everywhere; version B (phone-style chrome) lives at /v2/ (or ?new).
