@@ -606,6 +606,26 @@ main > .adslot { margin: 0 !important; }   /* inside an article the page's own s
 
 .top .logo img { -webkit-user-drag: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
 .search, .search input { cursor: text; }
+/* Filters button inside the search bar, and its panel */
+.search .sf { all: unset; position: absolute; right: 0; top: 50%; transform: translateY(-50%); display: inline-flex; align-items: center; gap: 6px; cursor: pointer; color: var(--ink); font-size: .9375rem; padding: 6px 2px 6px 10px; }
+.search .sf svg { flex: none; }
+.search .sf .fn:not(:empty) { min-width: 18px; height: 18px; padding: 0 5px; box-sizing: border-box; border-radius: 9px; background: #E8312F; color: #fff; font-size: .7rem; display: inline-grid; place-items: center; }
+.search .sf.on { color: #E8312F; }
+.search:has(.sf) input { padding-right: 190px !important; }
+.search:has(.sf) .sx { right: 96px !important; }
+.search:has(.sf) .ph { right: 190px !important; }
+.fpanel { max-height: min(78vh, 620px); }
+.sg-chip.sel { background: var(--ink); color: var(--page); border-color: var(--ink); }
+.f-me { padding: 2px 8px 6px; display: grid; gap: 8px; justify-items: start; }
+.f-tg { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; color: var(--ink); line-height: 1.4; }
+.search .fpanel .f-tg input[type=checkbox] { all: revert; appearance: auto; -webkit-appearance: checkbox; margin: 3px 0 0 !important; padding: 0 !important; width: 16px !important; height: 16px !important; border: revert !important; background: revert !important; box-shadow: none !important; flex: none; accent-color: #E8312F; cursor: pointer; }
+.f-link { all: unset; cursor: pointer; color: #1A5FB4; font-weight: 500; font-size: .9rem; }
+.f-note { margin: 0; color: var(--grey); font-size: .8125rem; }
+.f-foot { position: sticky; bottom: -6px; display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 8px -6px -6px; padding: 10px 14px; background: var(--page); border-top: 1px solid var(--line); }
+.f-done { all: unset; cursor: pointer; background: var(--ink); color: var(--page); padding: 8px 16px; border-radius: 999px; font-weight: 500; font-size: .9rem; }
+:root[data-theme="dark"] .f-link { color: #8AB4F8; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .f-link { color: #8AB4F8; } }
+@media (max-width: 640px) { .search .sf .fl { display: none; } .search:has(.sf) input { padding-right: 140px !important; } .search:has(.sf) .sx { right: 52px !important; } .search:has(.sf) .ph { right: 140px !important; } .kc { display: none; } }
 </style>
 <script>document.documentElement.classList.add("v2");try{localStorage.removeItem("sc-v2")}catch(e){}</script>
 <script>/* Desktop A/B. Version A (original desktop) is the default everywhere; version B (phone-style chrome) lives at /v2/ (or ?new).
@@ -655,7 +675,8 @@ html.hv .hero .search { position: relative; max-width: 560px; margin: 0 auto !im
 html.hv .hero .search input { background: var(--page) !important; border: 1px solid color-mix(in srgb, var(--ink) 28%, transparent) !important; border-radius: 10px !important;
   padding: 13px 92px 13px 44px !important; box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px -12px rgba(0,0,0,.18); }
 html.hv .hero .search input:focus { border-color: var(--ink) !important; }
-html.hv .hero .sicon { left: 14px !important; } html.hv .hero .ph { left: 44px !important; right: 92px !important; } html.hv .hero .sx { right: 14px !important; }
+html.hv .hero .sicon { left: 14px !important; } html.hv .hero .ph { left: 44px !important; right: 200px !important; } html.hv .hero .sx { right: 112px !important; } html.hv .hero .sf { right: 14px; } html.hv .hero .search input { padding-right: 200px !important; }
+@media (max-width: 640px) { html.hv .hero .sx { right: 58px !important; } html.hv .hero .ph { right: 150px !important; } html.hv .hero .search input { padding-right: 150px !important; } }
 html.hv .hero-sub { position: relative; margin: 16px 0 0; font-size: .875rem; }
 html.hv .tabrow { margin-top: 0; }
 @media (max-width: 640px) { html.hv .hero { padding: 52px 16px 44px; margin-bottom: 18px; } html.hv .hero-h { margin-bottom: 22px; } html.hv .hero-h br { display: none; } html.hv .hero-bg { font-size: 10px; line-height: 20px; word-spacing: 10px; } html.hv .hero-bg span { color: color-mix(in srgb, var(--grey) 22%, transparent); } }
@@ -721,6 +742,7 @@ w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},2
       <svg class="sicon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 20.5 20.5"/></svg>
       <input id="q" type="search" placeholder="Search : SSC, UGC NET, 12th pass, Bihar…" autocomplete="off" data-t-ph="searchPh">
       <span class="ph" id="ph" aria-hidden="true" hidden><span class="ph-lead"></span><span class="ph-word"></span><span class="ph-caret"></span></span>
+      <button type="button" class="sf" id="fBtn" aria-label="Filters"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg><span class="fl" data-t="filters">Filters</span><span class="fn"></span></button>
       <button type="button" class="sx" id="kHint" hidden><span data-t="clear">Clear</span><kbd class="kc" aria-hidden="true">Esc</kbd></button>
     </label>
       <p class="hero-sub g" id="heroSub" data-ts="2026-11-07T19:56:08Z"><span class="x-en">Free · No sign-up · English &amp; हिंदी</span><span class="x-hi" lang="hi">मुफ़्त · बिना साइन-अप · हिंदी और English</span></p>
@@ -761,7 +783,7 @@ w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},2
   const T = {
     en: {
       title: "SarkariChart – Latest Govt Jobs, Admit Card, Result 2026 | सरकारी नौकरी", brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", logoAlt: "SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices", about: "About", show: "Show",
-      newTip: "Newly posted", adLabel: "Advertisement", adHouse: "Get every new govt job alert on Telegram, free", all: "All", trend: "Trending", jobs: "Jobs", soon: "Closing soon", prefSrc: "Add SarkariChart as a preferred source on Google", admits: "Admit cards", results: "Results", keys: "Answer keys", browse: "Jobs by state", fState: "State", fCat: "Category", fQual: "Education", fSort: "Sort", fMe: "Jobs I can apply for", fAll: "All", fCentral: "Central (all India)", fNewest: "Newest", fClosing: "Last date first", fJobs: (n, a) => `${n} job${n === 1 ? "" : "s"}${a ? ` · ${a} with a last date ahead` : ""}`, fClear: "Clear filters", fNone: "Nothing matches these filters.", fOldest: "Oldest first", fItems: n => `${n} notice${n === 1 ? "" : "s"}`, exams: "Exams", hExam: "Exam", hUpdated: "Updated", hLatest: "Latest", hUpdates: "Updates", nUpd: n => `${n} update${n === 1 ? "" : "s"}`,
+      newTip: "Newly posted", filters: "Filters", adLabel: "Advertisement", adHouse: "Get every new govt job alert on Telegram, free", all: "All", trend: "Trending", jobs: "Jobs", soon: "Closing soon", prefSrc: "Add SarkariChart as a preferred source on Google", admits: "Admit cards", results: "Results", keys: "Answer keys", browse: "Jobs by state", fState: "State", fCat: "Category", fQual: "Education", fSort: "Sort", fMe: "Jobs I can apply for", fAll: "All", fCentral: "Central (all India)", fNewest: "Newest", fClosing: "Last date first", fJobs: (n, a) => `${n} job${n === 1 ? "" : "s"}${a ? ` · ${a} with a last date ahead` : ""}`, fClear: "Clear filters", fNone: "Nothing matches these filters.", fOldest: "Oldest first", fItems: n => `${n} notice${n === 1 ? "" : "s"}`, exams: "Exams", hExam: "Exam", hUpdated: "Updated", hLatest: "Latest", hUpdates: "Updates", nUpd: n => `${n} update${n === 1 ? "" : "s"}`,
       searchLabel: "Search notices", showing: (a, b) => `Showing ${a} of ${b}`, showMore: n => `Show ${n} more`, phLead: "Search : ", searchPh: "Search : SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
       hPosted: "Posted", hNotice: "Notice", hOrg: "Organisation", hType: "Type", hLast: "Last date", hPostedR: "Posted", nil: "NIL", hPdf: "PDF",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
@@ -775,7 +797,7 @@ w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},2
     },
     hi: {
       title: "सरकारी चार्ट – सरकारी नौकरी, एडमिट कार्ड, रिज़ल्ट 2026", logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में", show: "दिखाएँ",
-      newTip: "नई सूचना", adLabel: "विज्ञापन", adHouse: "हर नई सरकारी नौकरी की सूचना टेलीग्राम पर, मुफ़्त", all: "सभी", trend: "ट्रेंडिंग", jobs: "नौकरियाँ", soon: "जल्द बंद", prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की", browse: "राज्य अनुसार नौकरी", fState: "राज्य", fCat: "श्रेणी", fQual: "शिक्षा", fSort: "क्रम", fMe: "जिनमें मैं आवेदन कर सकूँ", fAll: "सभी", fCentral: "केंद्रीय (पूरा भारत)", fNewest: "नई पहले", fClosing: "अंतिम तिथि पहले", fJobs: (n, a) => `${n} नौकरियाँ${a ? ` · ${a} की अंतिम तिथि बाकी` : ""}`, fClear: "फ़िल्टर हटाएँ", fNone: "इन फ़िल्टर से कुछ नहीं मिला।", fOldest: "पुरानी पहले", fItems: n => `${n} सूचनाएँ`, exams: "परीक्षाएँ", hExam: "परीक्षा", hUpdated: "अपडेट", hLatest: "ताज़ा", hUpdates: "अपडेट", nUpd: n => `${n} अपडेट`,
+      newTip: "नई सूचना", filters: "फ़िल्टर", adLabel: "विज्ञापन", adHouse: "हर नई सरकारी नौकरी की सूचना टेलीग्राम पर, मुफ़्त", all: "सभी", trend: "ट्रेंडिंग", jobs: "नौकरियाँ", soon: "जल्द बंद", prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ", admits: "एडमिट कार्ड", results: "रिज़ल्ट", keys: "आंसर की", browse: "राज्य अनुसार नौकरी", fState: "राज्य", fCat: "श्रेणी", fQual: "शिक्षा", fSort: "क्रम", fMe: "जिनमें मैं आवेदन कर सकूँ", fAll: "सभी", fCentral: "केंद्रीय (पूरा भारत)", fNewest: "नई पहले", fClosing: "अंतिम तिथि पहले", fJobs: (n, a) => `${n} नौकरियाँ${a ? ` · ${a} की अंतिम तिथि बाकी` : ""}`, fClear: "फ़िल्टर हटाएँ", fNone: "इन फ़िल्टर से कुछ नहीं मिला।", fOldest: "पुरानी पहले", fItems: n => `${n} सूचनाएँ`, exams: "परीक्षाएँ", hExam: "परीक्षा", hUpdated: "अपडेट", hLatest: "ताज़ा", hUpdates: "अपडेट", nUpd: n => `${n} अपडेट`,
       searchLabel: "सूचनाएँ खोजें", showing: (a, b) => `${b} में से ${a} दिख रहीं`, showMore: n => `${n} और दिखाएँ`, phLead: "खोजें : ", searchPh: "खोजें : एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
       hPosted: "जारी", hNotice: "सूचना", hOrg: "संस्था", hType: "प्रकार", hLast: "अंतिम तिथि", hPostedR: "जारी", nil: "निरंक", hPdf: "पीडीएफ",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
@@ -1386,7 +1408,17 @@ w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},2
     return true;
   }
   function paintFilters(rows) {   // browse pages: one quiet line saying what this list is
-    const el = document.getElementById("preset"); if (!window.SC_PRESET) return;
+    const el = document.getElementById("preset");
+    if (!window.SC_PRESET) {
+      const H = lang === "hi" ? 2 : 1, st = STATES.find(x => x[0] === F.st), qq = QS.find(x => x[0] === F.q), parts = [];
+      if (F.st === "central") parts.push(lang === "hi" ? "केवल केंद्र" : "Central only"); else if (st) parts.push(st[H]);
+      if (qq) parts.push(qq[H]);
+      if (F.me) parts.push(lang === "hi" ? "मैं योग्य हूँ" : "I can apply");
+      el.hidden = !parts.length;
+      if (parts.length) { el.innerHTML = esc(parts.join(" · ") + (lang === "hi" ? ` · ${rows.length} सूचनाएँ` : ` · ${rows.length} ${rows.length === 1 ? "notice" : "notices"}`)) + ` · <a href="#" id="fClr2">${lang === "hi" ? "फ़िल्टर हटाएँ" : "Clear filters"}</a>`;
+        el.querySelector("#fClr2").onclick = e => { e.preventDefault(); F.st = ""; F.q = ""; F.me = false; try { localStorage.removeItem("sc-filt"); } catch (x) {} const b = document.getElementById("fBtn"); if (b) { b.querySelector(".fn").textContent = ""; b.classList.remove("on"); } update(); }; }
+      return;
+    }
     const H = lang === "hi" ? 2 : 1, st = STATES.find(x => x[0] === F.st), qq = QS.find(x => x[0] === F.q);
     const name = st ? st[H] : qq ? qq[H] : "";
     el.hidden = false;
@@ -1704,6 +1736,59 @@ w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},2
     else if (e.key === "Escape") sgClose();
   });
   addEventListener("pageshow", sgClose);
+
+  // ---- Filters (button inside the search bar): state, qualification, and "only jobs I can apply for" by age.
+  // Remembered on this device. The age check uses the reader's own details (saved only in this browser). ----
+  const FKEY = "sc-filt", fBtn = document.getElementById("fBtn");
+  if (fBtn && !window.SC_PRESET) { try { const v = JSON.parse(localStorage.getItem(FKEY) || "null"); if (v) F = Object.assign(F, { st: v.st || "", q: v.q || "", me: !!v.me }); } catch (e) {} }
+  const FP = document.createElement("div"); FP.className = "sugg fpanel"; FP.hidden = true; if (fBtn) searchBox.appendChild(FP);
+  let eligLoaded = !!window.scElig;
+  const needElig = cb => { if (window.scElig) return cb(); const s = document.createElement("script"); s.src = "/elig.js"; s.onload = () => { eligLoaded = true; cb(); }; document.head.appendChild(s); };
+  const fCount = () => (F.st ? 1 : 0) + (F.q ? 1 : 0) + (F.me ? 1 : 0);
+  function fSave() { if (!window.SC_PRESET) try { localStorage.setItem(FKEY, JSON.stringify({ st: F.st, q: F.q, me: F.me })); } catch (e) {} }
+  function fPaintBtn() { if (!fBtn) return; const n = fCount(); fBtn.querySelector(".fn").textContent = n ? n : ""; fBtn.classList.toggle("on", !!n); }
+  function fRender() {
+    const H = lang === "hi" ? 2 : 1, me = window.scElig && window.scElig.load();
+    const chip = (grp, val, label, on) => `<button type="button" class="sg-chip${on ? " sel" : ""}" data-g="${grp}" data-v="${val}">${esc(label)}</button>`;
+    let h = `<p class="sg-h">${LL("State", "राज्य")}</p><div class="sg-chips">` + chip("st", "", LL("All India", "पूरा भारत"), !F.st) + chip("st", "central", LL("Central only", "केवल केंद्र"), F.st === "central") +
+      STATES.map(s => chip("st", s[0], s[H], F.st === s[0])).join("") + "</div>";
+    h += `<p class="sg-h">${LL("Your qualification", "आपकी योग्यता")}</p><div class="sg-chips">` + chip("q", "", LL("Any", "कोई भी"), !F.q) + QS.map(x => chip("q", x[0], x[H], F.q === x[0])).join("") + "</div>";
+    h += `<p class="sg-h">${LL("Am I eligible?", "क्या मैं योग्य हूँ?")}</p><div class="f-me">` +
+      `<label class="f-tg"><input type="checkbox" id="fMe"${F.me ? " checked" : ""}> <span>${LL("Only jobs I can apply for (age and qualification)", "सिर्फ़ वो नौकरियाँ जिनके लिए मैं योग्य हूँ (आयु और योग्यता)")}</span></label>` +
+      `<button type="button" class="f-link" id="fMeSet">${me ? LL("Change my details", "मेरी जानकारी बदलें") : LL("Add my date of birth", "जन्म तिथि जोड़ें")}</button>` +
+      `<p class="f-note">${LL("Always confirm in the official notice. Your details stay on this device.", "आधिकारिक सूचना में ज़रूर जाँचें। आपकी जानकारी इसी डिवाइस पर रहती है।")}</p></div>`;
+    h += `<div class="f-foot"><button type="button" class="f-link" id="fClear">${LL("Clear all", "सब हटाएँ")}</button><button type="button" class="f-done" id="fDone">${LL("Show", "दिखाएँ")} ${allRows.length}</button></div>`;
+    FP.innerHTML = h;
+  }
+  function fApply() { fSave(); fPaintBtn(); update(); if (!FP.hidden) fRender(); }
+  if (fBtn) {
+    fBtn.addEventListener("mousedown", e => e.preventDefault());
+    fBtn.addEventListener("click", e => {
+      e.preventDefault(); e.stopPropagation();
+      if (!FP.hidden) { FP.hidden = true; return; }
+      sgClose(); needElig(() => { fRender(); FP.hidden = false; });
+    });
+    FP.addEventListener("mousedown", e => { if (!e.target.closest("input, label")) e.preventDefault(); });
+    FP.addEventListener("click", e => {
+      e.stopPropagation();
+      if (!e.target.closest(".f-tg")) e.preventDefault();
+      const c = e.target.closest(".sg-chip[data-g]");
+      if (c) { e.preventDefault(); F[c.dataset.g] = c.dataset.v; fApply(); return; }
+      if (e.target.closest("#fClear")) { e.preventDefault(); F.st = ""; F.q = ""; F.me = false; fApply(); return; }
+      if (e.target.closest("#fDone")) { e.preventDefault(); FP.hidden = true; return; }
+      if (e.target.closest("#fMeSet")) { e.preventDefault(); window.scElig.form(() => { if (window.scElig.load()) F.me = true; fApply(); }); return; }
+    });
+    FP.addEventListener("change", e => {
+      if (e.target.id !== "fMe") return;
+      if (e.target.checked && !window.scElig.load()) { e.target.checked = false; window.scElig.form(() => { if (window.scElig.load()) { F.me = true; fApply(); } }); return; }
+      F.me = e.target.checked; fApply();
+    });
+    document.addEventListener("click", e => { if (!FP.hidden && !e.target.closest(".fpanel, #fBtn, dialog")) FP.hidden = true; });
+    document.addEventListener("keydown", e => { if (e.key === "Escape" && !document.querySelector("dialog[open]")) FP.hidden = true; });
+    qIn.addEventListener("focus", () => { FP.hidden = true; });
+    if (F.me) needElig(() => update());
+    fPaintBtn();
+  }
 
   // Start typing anywhere and the letters go straight into the search line.
   document.addEventListener("keydown", e => {
