@@ -202,7 +202,7 @@ def build():
                   "Bank PO Clerk SI ASI Driver Nurse Pharmacist Anganwadi Steno Typist JE AE GD CHSL CGL MTS NTPC Group-D").split()
         import random
         rnd = random.Random(7)
-        words = " ".join(f"<span>{rnd.choice(boards)}</span>" for _ in range(900))
+        words = " ".join(f"<span>{rnd.choice(boards)}</span>" for _ in range(560))
         stamps = re.findall(r'"publishedAt": "([^"]+)"', hv)
         latest = max(stamps) if stamps else ""
         count = len(re.findall(r'\{"type": "', hv)) // 50 * 50 or len(re.findall(r'\{"type": "', hv))
@@ -266,7 +266,9 @@ html.hv .hero .sicon { left: 14px !important; } html.hv .hero .ph { left: 44px !
 @media (max-width: 640px) { html.hv .hero .sx { right: 54px !important; } html.hv .hero .ph { right: 120px !important; } html.hv .hero .search input { padding-right: 120px !important; } }
 html.hv .hero-sub { position: relative; margin: 16px 0 0; font-size: .875rem; }
 html.hv .tabrow { margin-top: 0; }
-@media (max-width: 640px) { html.hv .hero { padding: 52px 16px 44px; margin-bottom: 18px; } html.hv .hero-h { margin-bottom: 22px; } html.hv .hero-h br { display: none; } html.hv .hero-bg { font-size: 10px; line-height: 20px; word-spacing: 10px; } html.hv .hero-bg span { color: color-mix(in srgb, var(--grey) 22%, transparent); } }
+@media (max-width: 640px) { html.hv .hero { padding: 52px 16px 44px; margin-bottom: 18px; } html.hv .hero-h { margin-bottom: 22px; } html.hv .hero-h br { display: none; } html.hv .hero-bg { font-size: 10px; line-height: 22px; word-spacing: 12px;
+    -webkit-mask-image: radial-gradient(ellipse 70% 62% at 50% 50%, transparent 0, transparent 45%, rgba(0,0,0,.5) 72%, #000 100%); mask-image: radial-gradient(ellipse 70% 62% at 50% 50%, transparent 0, transparent 45%, rgba(0,0,0,.5) 72%, #000 100%);
+    -webkit-mask-composite: source-over; mask-composite: add; } html.hv .hero-bg span { color: color-mix(in srgb, var(--grey) 22%, transparent); } }
 </style>
 <script>document.documentElement.classList.add("hv")</script>
 
@@ -279,7 +281,7 @@ addEventListener("DOMContentLoaded",function(){if(matchMedia("(prefers-reduced-m
 var EASE="cubic-bezier(.65,0,.35,1)",DEV="कखगचजटडतदनपबमयरलवसह".split(""),LAT="abcdefghiklmnoprstuvwyz".split(""),
 SEG=window.Intl&&Intl.Segmenter?new Intl.Segmenter(undefined,{granularity:"grapheme"}):null,
 G=function(w){return SEG?Array.from(SEG.segment(w),function(x){return x.segment}):Array.from(w)};
-var h=document.querySelector(".hero-h");if(!h)return;var vis=true,busy=false,meas=document.createElement("span");
+var h=document.querySelector(".hero-h");if(!h)return;var vis=true,busy=false,last=null,meas=document.createElement("span");
 meas.style.cssText="position:absolute;visibility:hidden;white-space:nowrap;pointer-events:none";
 function widthOf(el,txt){el.appendChild(meas);meas.textContent=txt;var w=meas.getBoundingClientRect().width;meas.remove();return w}
 function lines(el){var y=Math.round(el.getBoundingClientRect().top);return [].map.call(el.parentNode.getClientRects(),function(r){return [Math.round(r.top),Math.round(r.width),Math.abs(Math.round(r.top)-y)<12]})}
@@ -300,13 +302,14 @@ inn.style.transition="opacity 500ms "+EASE+" 180ms,transform 700ms "+EASE+" 120m
 el.style.width=widthOf(el,txt)+"px";setTimeout(function(){scramble(inn,txt)},120)}
 if("IntersectionObserver"in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(h);
 function tick(){if(busy||!vis||document.hidden)return;var ws=[].filter.call(h.querySelectorAll(".rx"),function(e){return e.offsetParent&&fits(e,e.dataset.alt)});
-if(!ws.length)return;var el=ws[Math.random()*ws.length|0];build(el);busy=true;var w=el.querySelectorAll(".rx-w");
+if(!ws.length)return;if(ws.length>1)ws=ws.filter(function(e){return e!==last});var el=ws[Math.random()*ws.length|0];last=el;build(el);busy=true;var w=el.querySelectorAll(".rx-w");
 show(el,w[0],w[1],el.dataset.alt);setTimeout(function(){show(el,w[1],w[0],el.dataset.orig);setTimeout(function(){busy=false},900)},2600)}
 setTimeout(function(){tick();setInterval(tick,5600)},1500)});</script>
 <script>addEventListener("DOMContentLoaded",function(){var bg=document.querySelector(".hero-bg");if(!bg||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
-var ws=bg.children,vis=true;if("IntersectionObserver"in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(bg);
-setInterval(function(){if(!vis||document.hidden)return;var n=2+(Math.random()*3|0);for(var k=0;k<n;k++){var w=ws[Math.random()*ws.length|0],c=Math.random()<.7?"on":"dim";
-w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},250+Math.random()*1100)})(w,c)}},150)});</script>
+var B=bg.clientHeight+24;[].slice.call(bg.children).forEach(function(s){if(s.offsetTop>B)s.remove()});
+var ws=bg.children,vis=true,phone=matchMedia("(max-width: 640px)").matches;if("IntersectionObserver"in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(bg);
+setInterval(function(){if(!vis||document.hidden)return;var n=phone?1+(Math.random()<.35):2+(Math.random()*3|0);for(var k=0;k<n;k++){var w=ws[Math.random()*ws.length|0],c=Math.random()<.7?"on":"dim";
+w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},250+Math.random()*1100)})(w,c)}},phone?300:150)});</script>
 """
         hv = hv.replace("</head>", css + "</head>", 1)
     (SITE / "b").mkdir(exist_ok=True)
