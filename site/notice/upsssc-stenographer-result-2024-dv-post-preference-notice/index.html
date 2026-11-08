@@ -582,12 +582,12 @@ html.nb .kv.glance .r .v { font-weight: 500; }
   html.nb .kv .r { grid-template-columns: 1fr !important; padding: 4px 0 !important; }
   html.nb .kv .r > :first-child { font-size: .875rem; }
 }
-/* "Applications open": a small green light that gently pulses (still for people who turn motion off) */
-#state.live { display: inline-flex; align-items: center; gap: 8px; }
-#state.live::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #1FA855; flex: none; box-shadow: 0 0 0 0 rgba(31, 168, 85, .55); animation: sc-live 1.8s ease-out infinite; }
-@keyframes sc-live { 0% { box-shadow: 0 0 0 0 rgba(31, 168, 85, .55); } 70% { box-shadow: 0 0 0 7px rgba(31, 168, 85, 0); } 100% { box-shadow: 0 0 0 0 rgba(31, 168, 85, 0); } }
-@media (prefers-reduced-motion: reduce) { #state.live::before { animation: none; } }
-@media print { #state.live::before { display: none; } }
+/* Status light: green (applications open) and red (closed), our own animated dots; still images for people who turn motion off */
+#state.live, #state.shut { display: inline-flex; align-items: center; gap: 8px; }
+#state.live::before, #state.shut::before { content: ""; width: 16px; height: 16px; flex: none; background: url(/live-open.webp) center / contain no-repeat; }
+#state.shut::before { background-image: url(/live-closed.webp); }
+@media (prefers-reduced-motion: reduce) { #state.live::before { background-image: url(/live-open-still.png); } #state.shut::before { background-image: url(/live-closed-still.png); } }
+@media print { #state.live::before, #state.shut::before { display: none; } }
 </style>
 <script>/* Notice A/B: version B (calm reading layout) is the default; ?classic shows A (boxed). NB_SPLIT=true at launch = 50/50 per browser, with counts. */
 (function(){var NB_SPLIT=false,h=document.documentElement,q=location.search,v="b",f=1;
@@ -1102,11 +1102,11 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
     document.querySelectorAll("[data-t-alt]").forEach(el => el.alt = t(el.dataset.tAlt));
     document.querySelectorAll("[data-d]").forEach(el => el.textContent = new Date(el.dataset.d + "T00:00:00").toLocaleDateString(t("locale"), { day: "numeric", month: "short", year: "numeric" }));
     const el = document.getElementById("left"), st = document.getElementById("state");
-    st.classList.remove("live");
+    st.classList.remove("live", "shut");
     if (!last) { st.textContent = t("statusV"); el.textContent = ""; }
     else {
       const d = Math.ceil((last - new Date()) / 864e5);
-      if (d < 0) { st.textContent = t("closed"); el.textContent = ""; }
+      if (d < 0) { st.textContent = t("closed"); st.classList.add("shut"); el.textContent = ""; }
       else {
         st.textContent = t("open"); st.classList.add("live");
         const cls = d <= 3 ? "hot" : d <= 7 ? "warm" : "calm";
