@@ -585,6 +585,24 @@ main > .adslot { margin: 0 !important; }   /* inside an article the page's own s
   html.v2.ab-old .top .logo img, html.v2.ab-old .top .logo .mark, html.v2.ab-old .top:has(> .g) .logo img, html.v2.ab-old .top:has(> .g) .logo .mark,
   html.v2.ab-old.bar-compact .top:has(> .g) .logo img, html.v2.ab-old.bar-compact .top:has(> .g) .logo .mark { width: 92px; height: 93px; }
 }
+/* Search suggestions panel (opens on tap) */
+.sugg { position: absolute; left: 0; right: 0; top: calc(100% + 6px); z-index: 60; box-sizing: border-box; padding: 6px; text-align: left;
+  background: var(--page); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 14px 36px -14px rgba(0,0,0,.25);
+  max-height: min(68vh, 520px); overflow: auto; overscroll-behavior: contain; font-size: .9375rem; }
+.sugg[hidden] { display: none; }
+.sg-h { margin: 12px 8px 4px; font-size: .75rem; color: var(--grey); letter-spacing: .03em; }
+.sg-h:first-child { margin-top: 6px; }
+.sg-i { all: unset; box-sizing: border-box; display: flex; align-items: baseline; justify-content: space-between; gap: 14px; width: 100%; padding: 9px 8px; border-radius: 6px; cursor: pointer; color: var(--ink); }
+.sg-i:hover, .sg-i.on { background: var(--soft); text-decoration: none; }
+.sg-t { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sg-t b { font-weight: 600; }
+.sg-m { flex: none; color: var(--grey); font-size: .8125rem; }
+.sg-chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 4px 8px 8px; }
+.sg-chip { all: unset; cursor: pointer; padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: .875rem; color: var(--ink); line-height: 1.4; }
+.sg-chip:hover, .sg-chip.on { background: var(--soft); text-decoration: none; }
+.sg-none { margin: 10px 8px; color: var(--grey); font-size: .875rem; line-height: 1.5; }
+@media (max-width: 640px) { .sg-m { display: none; } .sugg { max-height: 60vh; } }
+@media print { .sugg { display: none !important; } }
 </style>
 <script>document.documentElement.classList.add("v2");try{localStorage.removeItem("sc-v2")}catch(e){}</script>
 <script>/* Desktop A/B. Version A (original desktop) is the default everywhere; version B (phone-style chrome) lives at /v2/ (or ?new).
@@ -1535,6 +1553,71 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
   kHint.addEventListener("click", e => { e.preventDefault(); qIn.value = ""; qIn.dispatchEvent(new Event("input")); qIn.focus(); });
   qIn.addEventListener("input", syncHint);
   syncHint();
+
+  // ---- Search suggestions: open the moment the box is tapped. Empty box: recent searches, popular searches, jobs closing
+  // soon, browse by qualification / state. While typing: matching browse pages and the best matching notices. ----
+  const SG = document.createElement("div");
+  SG.className = "sugg"; SG.id = "sugg"; SG.hidden = true;
+  searchBox.appendChild(SG);
+  const RK = "sc-recent";
+  const recent = () => { try { const r = JSON.parse(localStorage.getItem(RK) || "[]"); return Array.isArray(r) ? r : []; } catch (e) { return []; } };
+  function saveRecent(v) {
+    v = (v || "").trim(); if (v.length < 2) return;
+    const r = [v, ...recent().filter(x => x.toLowerCase() !== v.toLowerCase())].slice(0, 5);
+    try { localStorage.setItem(RK, JSON.stringify(r)); } catch (e) {}
+  }
+  const LL = (en, hi) => lang === "hi" ? hi : en;
+  const lastTxt = i => i.last ? LL("Last date ", "अंतिम तिथि ") + String(fmt(i.last)).replace(/<[^>]+>/g, "") : "";
+  const sgRow = (href, label, meta, ext) => `<a class="sg-i" href="${href}"${ext ? ' target="_blank" rel="noopener"' : ""}><span class="sg-t">${label}</span>${meta ? `<span class="sg-m">${meta}</span>` : ""}</a>`;
+  const sgFill = (w, label) => `<button type="button" class="sg-i sg-q" data-q="${esc(w)}"><span class="sg-t">${esc(label || w)}</span></button>`;
+  const mark = (s, q) => { const k = s.toLowerCase().indexOf(q); return k < 0 ? esc(s) : esc(s.slice(0, k)) + "<b>" + esc(s.slice(k, k + q.length)) + "</b>" + esc(s.slice(k + q.length)); };
+  let sgSel = -1;
+  function sgRender() {
+    const v = qIn.value.trim(), q = v.toLowerCase();
+    let h = "";
+    if (!v) {
+      const r = recent();
+      if (r.length) h += `<p class="sg-h">${LL("Recent searches", "हाल की खोज")}</p>` + r.map(w => sgFill(w)).join("");
+      const pop = POPULAR.filter(([en]) => ITEMS.some(i => live(i) && words(i).includes(en.toLowerCase()))).slice(0, 8);
+      if (pop.length) h += `<p class="sg-h">${LL("Popular searches", "लोकप्रिय खोज")}</p><div class="sg-chips">` + pop.map(([en, hi]) => `<button type="button" class="sg-chip sg-q" data-q="${esc(en)}">${esc(LL(en, hi))}</button>`).join("") + "</div>";
+      const soon = ITEMS.filter(i => i.type === "Job" && i.page && i.last && left(i.last) >= 0 && !i.quiet).sort((a, b) => a.last.localeCompare(b.last)).slice(0, 3);
+      if (soon.length) h += `<p class="sg-h">${LL("Closing soon", "जल्द बंद हो रहे")}</p>` + soon.map(i => sgRow(i.url, esc(title(i)), esc(lastTxt(i)))).join("");
+      const hb = HUBS.filter(x => x.kind === "qual").slice(0, 5).concat(HUBS.filter(x => x.kind === "state").slice(0, 5));
+      if (hb.length) h += `<p class="sg-h">${LL("Browse", "देखें")}</p><div class="sg-chips">` + hb.map(x => `<a class="sg-chip" href="/${x.slug}/">${esc(LL(x.en, x.hi))}</a>`).join("") + "</div>";
+    } else {
+      const hub = HUBS.filter(x => x.words.some(w => w && (w.startsWith(q) || q === w))).slice(0, 2);
+      h += hub.map(x => sgRow(`/${x.slug}/`, esc(LL(`${x.en} govt jobs`, `${x.hi} सरकारी नौकरी`)), LL("Browse all →", "सभी देखें →"))).join("");
+      const m = ITEMS.filter(i => !i.quiet && words(i).includes(q))
+        .sort((a, b) => (live(b) - live(a)) || b.posted.localeCompare(a.posted)).slice(0, 6);
+      if (m.length) h += m.map(i => sgRow(i.url, mark(title(i), q), esc([T[lang][i.type] || i.type, lastTxt(i)].filter(Boolean).join(" · ")), !i.page)).join("");
+      else if (!hub.length) h += `<p class="sg-none">${LL("Nothing yet for this. Try a board (SSC, RRB), a post (Clerk, Constable) or a state.", "अभी इसके लिए कुछ नहीं। बोर्ड (SSC, RRB), पद (क्लर्क, कांस्टेबल) या राज्य लिखें।")}</p>`;
+    }
+    SG.innerHTML = h; sgSel = -1;
+    SG.hidden = !h || document.activeElement !== qIn;
+  }
+  const sgItems = () => [...SG.querySelectorAll(".sg-i, .sg-chip")];
+  const sgClose = () => { SG.hidden = true; sgSel = -1; };
+  qIn.addEventListener("focus", sgRender);
+  qIn.addEventListener("input", () => { if (document.activeElement === qIn) sgRender(); });
+  qIn.addEventListener("blur", () => setTimeout(() => { if (document.activeElement !== qIn) sgClose(); }, 150));
+  SG.addEventListener("mousedown", e => e.preventDefault());           // tapping a suggestion never steals focus first
+  SG.addEventListener("click", e => {
+    const b = e.target.closest(".sg-q");
+    if (b) { e.preventDefault(); qIn.value = b.dataset.q; qIn.dispatchEvent(new Event("input")); saveRecent(b.dataset.q); sgClose(); qIn.blur(); return; }
+    if (e.target.closest("a")) { saveRecent(qIn.value); sgClose(); }
+  });
+  qIn.addEventListener("keydown", e => {
+    if (SG.hidden) return;
+    const it = sgItems();
+    if ((e.key === "ArrowDown" || e.key === "ArrowUp") && it.length) {
+      e.preventDefault(); e.stopPropagation();
+      sgSel = e.key === "ArrowDown" ? Math.min(sgSel + 1, it.length - 1) : Math.max(sgSel - 1, -1);
+      it.forEach((x, k) => x.classList.toggle("on", k === sgSel));
+      if (it[sgSel]) it[sgSel].scrollIntoView({ block: "nearest" });
+    } else if (e.key === "Enter" && sgSel >= 0 && it[sgSel]) { e.preventDefault(); e.stopPropagation(); it[sgSel].click(); }
+    else if (e.key === "Escape") sgClose();
+  });
+  addEventListener("pageshow", sgClose);
 
   // Start typing anywhere and the letters go straight into the search line.
   document.addEventListener("keydown", e => {

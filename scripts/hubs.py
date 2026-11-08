@@ -203,19 +203,26 @@ def build():
         import random
         rnd = random.Random(7)
         words = " ".join(f"<span>{rnd.choice(boards)}</span>" for _ in range(900))
+        stamps = re.findall(r'"publishedAt": "([^"]+)"', hv)
+        latest = max(stamps) if stamps else ""
+        count = len(re.findall(r'\{"type": "', hv)) // 50 * 50 or len(re.findall(r'\{"type": "', hv))
         hero = ('    <section class="hero" aria-label="Search">\n'
                 f'      <div class="hero-bg" aria-hidden="true">{words}</div>\n'
-                '      <h2 class="hero-h"><span class="x-en">Govt jobs, admit cards and results,<br>straight from the official notice</span>'
-                '<span class="x-hi" lang="hi">सरकारी नौकरी, एडमिट कार्ड और रिज़ल्ट,<br>सीधे आधिकारिक सूचना से</span></h2>\n'
+                '      <h2 class="hero-h"><span class="x-en" aria-label="Govt jobs, admit cards and results, without the clutter">'
+                '<span aria-hidden="true">Govt <span class="rx" data-alt="नौकरी">jobs</span>, admit cards and <span class="rx" data-alt="रिज़ल्ट">results</span>, <br>'
+                'without the <span class="rx" data-alt="झंझट">clutter</span></span></span>'
+                '<span class="x-hi" lang="hi" aria-label="सरकारी नौकरी, एडमिट कार्ड और रिज़ल्ट, बिना किसी झंझट के"><span aria-hidden="true">'
+                'सरकारी <span class="rx" data-alt="jobs">नौकरी</span>, एडमिट कार्ड और <span class="rx" data-alt="results">रिज़ल्ट</span>, <br>'
+                'बिना किसी <span class="rx" data-alt="clutter">झंझट</span> के</span></span></h2>\n'
                 + search.replace("    <label", "      <label", 1) +
-                '      <p class="hero-sub g"><span class="x-en">50+ official boards · checked every 30 minutes</span>'
-                '<span class="x-hi" lang="hi">50+ आधिकारिक बोर्ड · हर 30 मिनट में जाँच</span></p>\n'
+                f'      <p class="hero-sub g" id="heroSub" data-ts="{latest}" data-n="{count}"><span class="x-en">{count}+ notices · free, no sign-up</span>'
+                f'<span class="x-hi" lang="hi">{count}+ सूचनाएँ · मुफ़्त, बिना साइन-अप</span></p>\n'
                 '    </section>\n')
         hv = hv.replace("  <main>\n", "  <main>\n" + hero, 1)
         css = """<style>
 html.hv body { overflow-x: clip; }
-html.hv .hero { position: relative; margin: 0 calc(50% - 50vw) 30px; padding: 88px 16px 72px; text-align: center; overflow: hidden; }
-html.hv .hero-bg { position: absolute; inset: -10px 0; padding: 10px; overflow: hidden; pointer-events: none; user-select: none; -webkit-user-select: none; text-align: left;
+html.hv .hero { position: relative; margin: 0 calc(50% - 50vw) 30px; padding: 88px 16px 72px; text-align: center; }
+html.hv .hero-bg { position: absolute; inset: 0; padding: 10px; overflow: hidden; pointer-events: none; user-select: none; -webkit-user-select: none; text-align: left;
   font: 12px/24px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: .02em; word-spacing: 16px;
   /* one soft fade: clear in the middle, easing out to every edge (no hard top, bottom or side) */
   -webkit-mask-image: radial-gradient(ellipse 62% 58% at 50% 50%, transparent 0, transparent 40%, rgba(0,0,0,.25) 58%, rgba(0,0,0,.7) 78%, #000 100%),
@@ -226,10 +233,13 @@ html.hv .hero-bg { position: absolute; inset: -10px 0; padding: 10px; overflow: 
                       linear-gradient(to bottom, transparent 0, #000 22%, #000 72%, transparent 100%),
                       linear-gradient(to right, transparent 0, #000 12%, #000 88%, transparent 100%);
           mask-composite: intersect, intersect; }
-html.hv .hero-bg span { color: color-mix(in srgb, var(--grey) 30%, transparent); transition: color 1.6s ease, opacity 1.6s ease; }
-html.hv .hero-bg span.on { color: color-mix(in srgb, #E8312F 75%, transparent); transition-duration: .35s; }
+html.hv .hero-bg span { color: color-mix(in srgb, var(--grey) 30%, transparent); transition: color 1.1s ease, opacity 1.1s ease; }
+html.hv .hero-bg span.on { color: color-mix(in srgb, #E8312F 75%, transparent); transition-duration: .2s; }
 html.hv .hero-bg span.dim { opacity: .25; transition-duration: .35s; }
 html.hv .hero-h { position: relative; margin: 0 auto 30px; max-width: 22em; font-size: clamp(1.6rem, 1rem + 3.2vw, 3.25rem); font-weight: 600; line-height: 1.06; letter-spacing: -0.03em; color: var(--ink); text-wrap: balance; }
+html.hv .rx { position: relative; display: inline-block; }
+html.hv .rx .o { visibility: hidden; }
+html.hv .rx .a { position: absolute; left: 50%; top: 0; transform: translateX(-50%); white-space: nowrap; color: #E8312F; transition: color .8s ease; }
 html.hv .hero .search { position: relative; max-width: 560px; margin: 0 auto !important; text-align: left; }
 html.hv .hero .search input { background: var(--page) !important; border: 1px solid color-mix(in srgb, var(--ink) 28%, transparent) !important; border-radius: 10px !important;
   padding: 13px 92px 13px 44px !important; box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px -12px rgba(0,0,0,.18); }
@@ -240,10 +250,31 @@ html.hv .tabrow { margin-top: 0; }
 @media (max-width: 640px) { html.hv .hero { padding: 52px 16px 44px; margin-bottom: 18px; } html.hv .hero-h { margin-bottom: 22px; } html.hv .hero-h br { display: none; } html.hv .hero-bg { font-size: 10px; line-height: 20px; word-spacing: 10px; } html.hv .hero-bg span { color: color-mix(in srgb, var(--grey) 22%, transparent); } }
 </style>
 <script>document.documentElement.classList.add("hv")</script>
+<script>addEventListener("DOMContentLoaded",function(){var p=document.getElementById("heroSub");if(!p||!p.dataset.ts)return;
+function paint(){var m=Math.max(1,Math.round((Date.now()-Date.parse(p.dataset.ts))/6e4)),n=p.dataset.n,
+en=m<60?m+" min ago":Math.round(m/60)+" h ago",hi=m<60?m+" मिनट पहले":Math.round(m/60)+" घंटे पहले";if(m>=1440)return;
+p.children[0].textContent="Updated "+en+" · "+n+"+ notices · free, no sign-up";p.children[1].textContent=hi+" अपडेट · "+n+"+ सूचनाएँ · मुफ़्त, बिना साइन-अप"}
+paint();setInterval(paint,60000)});</script>
+<script>/* Heading "remix": now and then one word scrambles through Devanagari / Latin letters into its other-language twin
+   (jobs -> नौकरी), holds a moment in the logo red, then scrambles back. The line never moves (the twin is drawn over the
+   word's own space). One word at a time; off when motion is off. */
+addEventListener("DOMContentLoaded",function(){if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+var POOL="कखगघचजटडतदनपबमयरलवशसहअआइउएओ".split("").concat("ABCDEFGHJKLMNPRSTUVWXYZ".split("")),
+SEG=window.Intl&&Intl.Segmenter?new Intl.Segmenter(undefined,{granularity:"grapheme"}):null,
+G=function(w){return SEG?Array.from(SEG.segment(w),function(x){return x.segment}):Array.from(w)};
+function scramble(a,to,done){var g=G(to),n=0,steps=9;var iv=setInterval(function(){n++;var k=Math.floor(g.length*n/steps),s="";
+for(var i=0;i<g.length;i++)s+=i<k?g[i]:POOL[Math.random()*POOL.length|0];a.textContent=s;if(n>=steps){clearInterval(iv);a.textContent=to;done&&done()}},50)}
+var h=document.querySelector(".hero-h");if(!h)return;var vis=true,busy=false;
+if("IntersectionObserver"in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(h);
+function tick(){if(busy||!vis||document.hidden)return;var ws=[].filter.call(h.querySelectorAll(".rx"),function(e){return e.offsetParent});if(!ws.length)return;
+var el=ws[Math.random()*ws.length|0],orig=el.dataset.orig||(el.dataset.orig=el.textContent);busy=true;
+el.innerHTML='<span class="o"></span><span class="a"></span>';el.firstChild.textContent=orig;var a=el.lastChild;
+scramble(a,el.dataset.alt,function(){setTimeout(function(){scramble(a,orig,function(){a.style.color="inherit";setTimeout(function(){el.textContent=orig;busy=false},800)})},1700)})}
+setTimeout(function(){tick();setInterval(tick,5600)},1500)});</script>
 <script>addEventListener("DOMContentLoaded",function(){var bg=document.querySelector(".hero-bg");if(!bg||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
 var ws=bg.children,vis=true;if("IntersectionObserver"in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(bg);
-setInterval(function(){if(!vis||document.hidden)return;var n=1+(Math.random()<.4);for(var k=0;k<n;k++){var w=ws[Math.random()*ws.length|0],c=Math.random()<.65?"on":"dim";
-w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},300+Math.random()*900)})(w,c)}},380)});</script>
+setInterval(function(){if(!vis||document.hidden)return;var n=2+(Math.random()*3|0);for(var k=0;k<n;k++){var w=ws[Math.random()*ws.length|0],c=Math.random()<.7?"on":"dim";
+w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},250+Math.random()*1100)})(w,c)}},150)});</script>
 """
         hv = hv.replace("</head>", css + "</head>", 1)
     (SITE / "b").mkdir(exist_ok=True)
