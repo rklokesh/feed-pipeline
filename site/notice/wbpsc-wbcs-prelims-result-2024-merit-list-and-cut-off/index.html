@@ -753,5 +753,8 @@ a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .l
     try{var r=document.referrer&&new URL(document.referrer);if(r&&r.origin===location.origin&&history.length>1){ev.preventDefault();history.back();}}catch(e){}
   });
 })();</script>
+<script>/* aspirant counter: each browser is counted once a month (just a number, nothing about you is stored) */
+(function(){try{var m=new Date().toISOString().slice(0,7).replace("-",""),k="sc-vm";if(localStorage.getItem(k)===m)return;localStorage.setItem(k,m);
+if(navigator.sendBeacon)navigator.sendBeacon("/api/views?slug=zz-visitors-"+m);}catch(e){}})();</script>
 </body>
 </html>

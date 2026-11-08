@@ -269,6 +269,13 @@ html.hv .tabrow { margin-top: 0; }
     -webkit-mask-composite: source-over; mask-composite: add; } html.hv .hero-bg span { color: color-mix(in srgb, var(--grey) 22%, transparent); } }
 </style>
 <script>document.documentElement.classList.add("hv")</script>
+<script>/* trust line: shows the real number of aspirants this month (and last month) once it passes 10,000 */
+addEventListener("DOMContentLoaded",function(){var p=document.getElementById("heroSub");if(!p)return;var d=new Date(),m=d.toISOString().slice(0,7).replace("-",""),
+pm=new Date(d.getFullYear(),d.getMonth()-1,15).toISOString().slice(0,7).replace("-","");
+function get(x){return fetch("/api/views?slug=zz-visitors-"+x).then(function(r){return r.json()}).then(function(j){return +j.n||0}).catch(function(){return 0})}
+Promise.all([get(m),get(pm)]).then(function(v){var n=Math.max(v[0],v[1]);if(n<10000)return;
+var en=n.toLocaleString("en-IN"),r=n>=1e6?(Math.floor(n/1e5)/10)+"M+":n>=1e5?Math.floor(n/1e3)+"K+":en;
+p.children[0].textContent="Trusted by "+r+" aspirants this month";p.children[1].textContent="इस महीने "+r+" अभ्यर्थियों का भरोसा";})});</script>
 
 
 <script>/* Heading "remix": now and then one word turns into its other-language twin (jobs -> नौकरी) in the logo red, holds,

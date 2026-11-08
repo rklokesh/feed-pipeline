@@ -1113,5 +1113,8 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
 <script>/* Notice A/B counts (split visitors only): page views and taps on the main buttons, per version, in the views DB */
 (function(){var v=window.SC_ABN;if(!v||!navigator.sendBeacon||!document.getElementById("doit"))return;var b=function(e){try{navigator.sendBeacon("/api/views?slug=zz-abn-"+v+"-"+e)}catch(x){}};b("view");
 document.getElementById("doit").addEventListener("click",function(e){if(e.target.closest("a"))b("act")},true)})()</script>
+<script>/* aspirant counter: each browser is counted once a month (just a number, nothing about you is stored) */
+(function(){try{var m=new Date().toISOString().slice(0,7).replace("-",""),k="sc-vm";if(localStorage.getItem(k)===m)return;localStorage.setItem(k,m);
+if(navigator.sendBeacon)navigator.sendBeacon("/api/views?slug=zz-visitors-"+m);}catch(e){}})();</script>
 </body>
 </html>
