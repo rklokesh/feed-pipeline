@@ -564,6 +564,18 @@ html.nb .toc[open] summary::after { content: "–"; }
 html.nb .toc ol { padding: 8px 0 0 1.4rem; columns: 1; }
 html.nb .note { margin: 0; justify-items: start; text-align: left; border-top: 1px solid var(--line); padding-top: 16px; }
 html.nb .hidet > summary { margin: 0; }
+/* Top of the page: centred, a big heading, nothing extra. The "N more updates" jump is dropped here (the full list stays at the bottom). */
+html.nb .title { justify-items: center; text-align: center; gap: 8px; }
+html.nb .title .crumb, html.nb .status { justify-content: center; }
+html.nb h1 { font-size: clamp(2.1rem, 1.35rem + 2.8vw, 3rem); line-height: 1.1; text-align: center; max-width: 16em; margin: 0 auto; text-wrap: balance; }
+html.nb .hrow { justify-content: center; }
+html.nb .title .exjump { display: none; }
+html.nb .title .meta { font-size: .875rem; }
+html.nb .status { font-size: 1.0625rem; margin-top: 4px; }
+html.nb .lead { text-align: center; margin: 6px auto 0; max-width: 36rem; }
+html.nb .doit { margin: 16px auto 4px; max-width: 30rem; width: 100%; }
+html.nb .ogimg { margin: 14px auto 0; }
+
 /* At a glance: the most-scanned part - a faint rule above and slightly stronger labels, still no box */
 html.nb .kv.glance { border-top: 1px solid var(--line) !important; padding-top: 18px !important; }
 html.nb .kv.glance .r > :first-child { color: color-mix(in srgb, var(--grey) 70%, var(--ink)); }
