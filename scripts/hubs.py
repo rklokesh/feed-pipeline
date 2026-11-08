@@ -214,8 +214,8 @@ def build():
         hero = ('    <section class="hero" aria-label="Search">\n'
                 f'      <div class="hero-bg" aria-hidden="true">{words}</div>\n'
                 '      <h2 class="hero-h"><span class="x-en" aria-label="Govt jobs, admit cards and results, straight from the official notice">'
-                '<span aria-hidden="true"><span class="rx" data-alt="सरकारी">Govt</span> <span class="rx" data-alt="नौकरी">jobs</span>, <span class="rx" data-alt="एडमिट कार्ड">admit cards</span> and <span class="rx" data-alt="रिज़ल्ट">results</span>, <br>straight from the <span class="rx" data-alt="आधिकारिक">official</span> <span class="rx" data-alt="सूचना">notice</span></span></span>'
-                '<span class="x-hi" lang="hi" aria-label="सरकारी नौकरी, एडमिट कार्ड और रिज़ल्ट, सीधे आधिकारिक सूचना से"><span aria-hidden="true"><span class="rx" data-alt="Govt">सरकारी</span> <span class="rx" data-alt="jobs">नौकरी</span>, <span class="rx" data-alt="admit cards">एडमिट कार्ड</span> और <span class="rx" data-alt="results">रिज़ल्ट</span>, <br>सीधे <span class="rx" data-alt="official">आधिकारिक</span> <span class="rx" data-alt="notice">सूचना</span> से</span></span></h2>\n'
+                '<span aria-hidden="true"><span class="rx" data-alt="सरकारी">Govt</span> <span class="nw"><span class="rx" data-alt="नौकरी">jobs</span>,</span> <span class="rx" data-alt="एडमिट कार्ड">admit cards</span> and <span class="nw"><span class="rx" data-alt="रिज़ल्ट">results</span>,</span> straight from the <span class="rx" data-alt="आधिकारिक">official</span> <span class="rx" data-alt="सूचना">notice</span></span></span>'
+                '<span class="x-hi" lang="hi" aria-label="सरकारी नौकरी, एडमिट कार्ड और रिज़ल्ट, सीधे आधिकारिक सूचना से"><span aria-hidden="true"><span class="rx" data-alt="Govt">सरकारी</span> <span class="nw"><span class="rx" data-alt="jobs">नौकरी</span>,</span> <span class="rx" data-alt="admit cards">एडमिट कार्ड</span> और <span class="nw"><span class="rx" data-alt="results">रिज़ल्ट</span>,</span> सीधे <span class="rx" data-alt="official">आधिकारिक</span> <span class="rx" data-alt="notice">सूचना</span> से</span></span></h2>\n'
                 + search.replace("    <label", "      <label", 1) +
                 f'      <p class="hero-sub g" id="heroSub" data-ts="{latest}"><span class="x-en">Only official notices · 50+ boards checked daily · never paid listings</span>'
                 f'<span class="x-hi" lang="hi">सिर्फ़ आधिकारिक सूचनाएँ · 50+ बोर्ड रोज़ जाँचे जाते हैं · कोई पेड लिस्टिंग नहीं</span></p>\n'
@@ -240,7 +240,7 @@ html.hv .hero-bg { position: absolute; inset: -110px 0 -70px; padding: 10px; ove
 html.hv .hero-bg span { color: color-mix(in srgb, var(--grey) 30%, transparent); transition: color 1.1s ease, opacity 1.1s ease; }
 html.hv .hero-bg span.on { color: color-mix(in srgb, #E8312F 75%, transparent); transition-duration: .2s; }
 html.hv .hero-bg span.dim { opacity: .25; transition-duration: .35s; }
-html.hv .hero-h { position: relative; margin: 0 auto 30px; max-width: 22em; font-size: clamp(1.6rem, 1rem + 3.2vw, 3.25rem); font-weight: 600; line-height: 1.06; letter-spacing: -0.03em; color: var(--ink); text-wrap: balance; }
+html.hv .hero-h { position: relative; margin: 0 auto 30px; max-width: 18em; text-wrap: balance; font-size: clamp(1.6rem, 1rem + 3.2vw, 3.25rem); font-weight: 600; line-height: 1.06; letter-spacing: -0.03em; color: var(--ink); text-wrap: balance; }
 html.hv .hero-live { position: relative; display: inline-flex; align-items: center; gap: 9px; margin: 0 0 22px; padding: 6px 14px 6px 12px; border-radius: 999px;
   background: color-mix(in srgb, var(--page) 85%, transparent); border: 1px solid var(--line); font-size: .875rem; color: var(--ink); }
 html.hv .hero-live .dot { position: relative; width: 8px; height: 8px; border-radius: 50%; background: #1FA855; flex: none; }
@@ -250,6 +250,7 @@ html.hv .hero-live .dot::after { content: ""; position: absolute; inset: 0; bord
 @media (max-width: 640px) { html.hv .hero-live { font-size: .8125rem; margin-bottom: 16px; padding: 5px 12px 5px 10px; } }
 html.hv .hero-live .tick { position: relative; display: inline-block; transition: width .6s cubic-bezier(.65, 0, .35, 1); white-space: nowrap; }
 html.hv .hero-live .tick > span { white-space: nowrap; }
+html.hv .hero-h .nw { white-space: nowrap; }
 html.hv .rx { position: relative; display: inline-block; white-space: nowrap; vertical-align: baseline; }
 html.hv .rx.slot { transition: width .7s cubic-bezier(.65, 0, .35, 1); }
 html.hv .rx .rx-base { visibility: hidden; }
@@ -281,7 +282,7 @@ G=function(w){return SEG?Array.from(SEG.segment(w),function(x){return x.segment}
 var h=document.querySelector(".hero-h");if(!h)return;var vis=true,busy=false,last=null,meas=document.createElement("span");
 meas.style.cssText="position:absolute;visibility:hidden;white-space:nowrap;pointer-events:none";
 function widthOf(el,txt){el.appendChild(meas);meas.textContent=txt;var w=meas.getBoundingClientRect().width;meas.remove();return w}
-function lines(el){var y=Math.round(el.getBoundingClientRect().top);return [].map.call(el.parentNode.getClientRects(),function(r){return [Math.round(r.top),Math.round(r.width),Math.abs(Math.round(r.top)-y)<12]})}
+function lines(el){var y=Math.round(el.getBoundingClientRect().top);return [].map.call(el.closest("[aria-hidden]").getClientRects(),function(r){return [Math.round(r.top),Math.round(r.width),Math.abs(Math.round(r.top)-y)<12]})}
 function fits(el,to){var A=lines(el),keep=el.style.width,kt=el.style.transition;el.style.transition="none";el.style.width=widthOf(el,to)+"px";
 var B=lines(el),ok=A.length===B.length&&A.every(function(a,i){return a[0]===B[i][0]&&(a[2]||a[1]===B[i][1])});
 el.style.width=keep;el.getBoundingClientRect();el.style.transition=kt;return ok}
