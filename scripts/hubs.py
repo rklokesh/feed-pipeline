@@ -213,9 +213,9 @@ def build():
         soon = sum(1 for x in lasts if 0 <= (_dt.date.fromisoformat(x) - _d).days <= 7)
         hero = ('    <section class="hero" aria-label="Search">\n'
                 f'      <div class="hero-bg" aria-hidden="true">{words}</div>\n'
-                '      <h2 class="hero-h"><span class="x-en" aria-label="Govt jobs, admit cards and results, straight from the official notice">'
+                '      <h1 class="hero-h"><span class="x-en" aria-label="Govt jobs, admit cards and results, straight from the official notice">'
                 '<span aria-hidden="true"><span class="rx" data-alt="सरकारी">Govt</span> <span class="nw"><span class="rx" data-alt="नौकरी">jobs</span>,</span> <span class="rx" data-alt="एडमिट कार्ड">admit cards</span> and <span class="nw"><span class="rx" data-alt="रिज़ल्ट">results</span>,</span> straight from the <span class="rx" data-alt="आधिकारिक">official</span> <span class="rx" data-alt="सूचना">notice</span></span></span>'
-                '<span class="x-hi" lang="hi" aria-label="सरकारी नौकरी, एडमिट कार्ड और रिज़ल्ट, सीधे आधिकारिक सूचना से"><span aria-hidden="true"><span class="rx" data-alt="Govt">सरकारी</span> <span class="nw"><span class="rx" data-alt="jobs">नौकरी</span>,</span> <span class="rx" data-alt="admit cards">एडमिट कार्ड</span> और <span class="nw"><span class="rx" data-alt="results">रिज़ल्ट</span>,</span> सीधे <span class="rx" data-alt="official">आधिकारिक</span> <span class="rx" data-alt="notice">सूचना</span> से</span></span></h2>\n'
+                '<span class="x-hi" lang="hi" aria-label="सरकारी नौकरी, एडमिट कार्ड और रिज़ल्ट, सीधे आधिकारिक सूचना से"><span aria-hidden="true"><span class="rx" data-alt="Govt">सरकारी</span> <span class="nw"><span class="rx" data-alt="jobs">नौकरी</span>,</span> <span class="rx" data-alt="admit cards">एडमिट कार्ड</span> और <span class="nw"><span class="rx" data-alt="results">रिज़ल्ट</span>,</span> सीधे <span class="rx" data-alt="official">आधिकारिक</span> <span class="rx" data-alt="notice">सूचना</span> से</span></span></h1>\n'
                 + search.replace("    <label", "      <label", 1) +
                 f'      <p class="hero-sub g" id="heroSub" data-ts="{latest}" hidden><span class="x-en"></span>'
                 f'<span class="x-hi" lang="hi"></span></p>\n'

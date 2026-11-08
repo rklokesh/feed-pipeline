@@ -122,7 +122,20 @@ PAGES = [
        ["हर नई नौकरी की सूचना मुफ़्त पाने के लिए हमारे टेलीग्राम चैनल @sarkarichart से जुड़ें।"], False)]),
 ]
 
-LINKS = {"press": [("/sarkarichart-logo.png", "Download the logo (PNG) →", "लोगो डाउनलोड करें (PNG) →"),
+NOT_FOUND = ("404", ("Page not found", "पेज नहीं मिला"),
+     ("This page has moved, or the notice was joined with a newer one. Every notice is still on the homepage.",
+      "यह पेज हट गया है, या सूचना किसी नई सूचना के साथ जोड़ दी गई है। सभी सूचनाएँ होमपेज पर हैं।"),
+     [("What you can do", "आप क्या कर सकते हैं",
+       ["Search the job, exam or board name on the homepage.",
+        "Browse by type: central govt, railway, police, bank, teacher or defence jobs.",
+        "If a link on our site brought you here, tell us with the Report a mistake form."],
+       ["होमपेज पर नौकरी, परीक्षा या बोर्ड का नाम खोजें।",
+        "प्रकार से देखें: केंद्र सरकार, रेलवे, पुलिस, बैंक, शिक्षक या रक्षा नौकरियाँ।",
+        "अगर हमारी साइट के किसी लिंक से आप यहाँ आए, तो \"गलती बताएँ\" फ़ॉर्म से बताएँ।"], False)])
+
+LINKS = {"404": [("/", "Go to the homepage →", "होमपेज पर जाएँ →"), ("/railway-jobs/", "Railway jobs", "रेलवे नौकरियाँ"),
+                 ("/central-govt-jobs/", "Central govt jobs", "केंद्र सरकार नौकरियाँ"), ("/report/", "Report a mistake", "गलती बताएँ")],
+         "press": [("/sarkarichart-logo.png", "Download the logo (PNG) →", "लोगो डाउनलोड करें (PNG) →"),
                    ("/report/", "Press request form →", "प्रेस अनुरोध फ़ॉर्म →")],
          "contact": [("/report/", "Report a mistake form →", "गलती बताएँ फ़ॉर्म →"),
                      ("https://t.me/sarkarichart", "Join on Telegram →", "टेलीग्राम पर जुड़ें →")]}
@@ -184,6 +197,12 @@ def build(slug, title, lead, sections):
            .replace("{{T_HI}}", "\n".join(f"      {k}: {js(v)}," for k, v in hi.items()))
            .replace("{{SLUG}}", slug).replace("{{OGIMG}}", f"{SITE_URL}/og.png").replace("{{URL}}", url)
            .replace("{{OGALT}}", esc(f"SarkariChart — {title[0]}")).replace("{{LAST}}", "null"))
+    if slug == "404":   # Cloudflare Pages serves site/404.html (with a real 404 status) for any unknown URL
+        out = out.replace(f'<link rel="canonical" href="{url}">', '<meta name="robots" content="noindex">', 1)
+        out = out.replace(f'<p class="upd" data-t="upd">{esc(en["upd"])}</p>', "", 1)
+        (ROOT / "site" / "404.html").write_text(out, encoding="utf-8")
+        print("wrote site/404.html")
+        return
     d = ROOT / "site" / slug
     d.mkdir(parents=True, exist_ok=True)
     (d / "index.html").write_text(out, encoding="utf-8")
@@ -193,6 +212,7 @@ def build(slug, title, lead, sections):
 def main():
     for p in PAGES:
         build(*p)
+    build(*NOT_FOUND)
 
 
 if __name__ == "__main__":
