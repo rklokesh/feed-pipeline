@@ -528,7 +528,9 @@ html.nb .lead { margin: 10px 0 0; text-align: left; color: var(--grey); font-siz
 html.nb .doit { margin: 14px 0 4px; max-width: 100%; }
 html.nb .ogimg { margin: 14px 0 0; }
 html.nb .kv, html.nb .toc { border: 0 !important; border-radius: 0 !important; background: none !important; overflow: visible !important; gap: 10px; }
-html.nb .kv .h { background: none !important; border: 0 !important; padding: 0 !important; color: var(--ink) !important; font-size: 1.2rem; font-weight: 700; }
+html.nb .kv .h { background: none !important; border: 0 !important; padding: 0 !important; color: #8E1B1E !important; font-size: 1.2rem; font-weight: 700; }   /* section headings in maroon */
+:root[data-theme="dark"].nb .kv .h { color: #F2A7A1 !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]).nb .kv .h { color: #F2A7A1 !important; } }
 html.nb .kv .r { border: 0 !important; padding: 2px 0 !important; grid-template-columns: 12rem 1fr; }
 html.nb .kv .r + .r { border-top: 0 !important; }
 html.nb .kv .r > :first-child { color: var(--grey); }
