@@ -311,6 +311,21 @@ w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},2
         hv = hv.replace("</head>", css + "</head>", 1)
     (SITE / "b").mkdir(exist_ok=True)
     (SITE / "b" / "index.html").write_text(hv, encoding="utf-8")
+    # Homepage test version "C" at /c/: the same heading + search, but plain and left-aligned, sitting on top of the
+    # classic list (no background words, no big hero block). Never indexed, canonical to /.
+    hc = hv.replace('<script>document.documentElement.classList.add("hv")</script>',
+                    '<script>document.documentElement.classList.add("hv","hc")</script>', 1)
+    hc = hc.replace("</head>", """<style>
+html.hc .hero { margin: 0 0 20px; padding: 4px 0 0; text-align: left; overflow: visible; }
+html.hc .hero-bg { display: none !important; }
+html.hc .hero-h { margin: 0 0 18px; max-width: 22em; text-align: left; font-size: clamp(1.5rem, 1rem + 2.2vw, 2.5rem); line-height: 1.12; }
+html.hc .hero .search { max-width: none; margin: 0 !important; }
+html.hc .hero-sub { text-align: left; margin-top: 12px; }
+@media (max-width: 640px) { html.hc .hero { padding-top: 0; margin-bottom: 14px; } html.hc .hero-sub { font-size: .8125rem; } html.hc .hero-h br { display: none; } }
+</style>
+</head>""", 1)
+    (SITE / "c").mkdir(exist_ok=True)
+    (SITE / "c" / "index.html").write_text(hc, encoding="utf-8")
     homepage_hints(hubs)
     print(f"hubs: {len(hubs)} browse pages (homepage with a filter set)")
 
