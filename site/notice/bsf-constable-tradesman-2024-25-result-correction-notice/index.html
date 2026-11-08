@@ -528,6 +528,9 @@ html.nb .lead { margin: 10px 0 0; text-align: left; color: var(--grey); font-siz
 html.nb .doit { margin: 14px 0 4px; max-width: 100%; }
 html.nb .ogimg { margin: 14px 0 0; }
 html.nb .kv, html.nb .toc { border: 0 !important; border-radius: 0 !important; background: none !important; overflow: visible !important; gap: 10px; }
+/* "On this page" links glide to their section (instantly for people who turn motion off); headings stop a little below the top */
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+main > section[id], main > .kv[id] { scroll-margin-top: 24px; }
 html.nb .kv .h { background: none !important; border: 0 !important; padding: 0 !important; color: #8E1B1E !important; font-size: 1.2rem; font-weight: 700; }   /* section headings in maroon */
 :root[data-theme="dark"].nb .kv .h { color: #F2A7A1 !important; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]).nb .kv .h { color: #F2A7A1 !important; } }
