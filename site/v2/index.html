@@ -608,13 +608,15 @@ main > .adslot { margin: 0 !important; }   /* inside an article the page's own s
 .top .logo img { -webkit-user-drag: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
 .search, .search input { cursor: text; }
 /* Filters button inside the search bar, and its panel */
-.search .sf { all: unset; position: absolute; right: 0; top: 50%; transform: translateY(-50%); display: inline-flex; align-items: center; gap: 6px; cursor: pointer; color: var(--ink); font-size: .9375rem; padding: 6px 2px 6px 10px; }
+.search .sf { all: unset; position: absolute; right: 0; top: 50%; transform: translateY(-50%); display: inline-grid; place-items: center; cursor: pointer; color: var(--ink); width: 36px; height: 36px; border-radius: 10px; transition: background .15s ease, color .15s ease; }
+.search .sf:hover { background: var(--soft); }
+.search .sf .fn:not(:empty) { position: absolute; top: 2px; right: 0; min-width: 15px !important; height: 15px !important; padding: 0 4px !important; font-size: .625rem !important; line-height: 1; box-shadow: 0 0 0 2px var(--page); }
 .search .sf svg { flex: none; }
 .search .sf .fn:not(:empty) { min-width: 18px; height: 18px; padding: 0 5px; box-sizing: border-box; border-radius: 9px; background: #E8312F; color: #fff; font-size: .7rem; display: inline-grid; place-items: center; }
-.search .sf.on { color: #E8312F; }
-.search:has(.sf) input { padding-right: 190px !important; }
-.search:has(.sf) .sx { right: 96px !important; }
-.search:has(.sf) .ph { right: 190px !important; }
+.search .sf.on { color: var(--ink); }
+.search:has(.sf) input { padding-right: 150px !important; }
+.search:has(.sf) .sx { right: 46px !important; }
+.search:has(.sf) .ph { right: 150px !important; }
 .fpanel { max-height: min(78vh, 620px); }
 .sg-chip.sel { background: var(--ink); color: var(--page); border-color: var(--ink); }
 .f-me { padding: 2px 8px 6px; display: grid; gap: 8px; justify-items: start; }
@@ -626,7 +628,7 @@ main > .adslot { margin: 0 !important; }   /* inside an article the page's own s
 .f-done { all: unset; cursor: pointer; background: var(--ink); color: var(--page); padding: 8px 16px; border-radius: 999px; font-weight: 500; font-size: .9rem; }
 :root[data-theme="dark"] .f-link { color: #8AB4F8; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .f-link { color: #8AB4F8; } }
-@media (max-width: 640px) { .search .sf .fl { display: none; } .search:has(.sf) input { padding-right: 140px !important; } .search:has(.sf) .sx { right: 52px !important; } .search:has(.sf) .ph { right: 140px !important; } .kc { display: none; } }
+@media (max-width: 640px) { .search:has(.sf) input { padding-right: 110px !important; } .search:has(.sf) .sx { right: 44px !important; } .search:has(.sf) .ph { right: 110px !important; } .kc { display: none; } }
 
 /* links turn the logo red on hover (also the notice titles in the list) */
 a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .list li.lr.sel .t { color: #E8312F; }
@@ -697,7 +699,7 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
       <svg class="sicon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 20.5 20.5"/></svg>
       <input id="q" type="search" placeholder="Search : SSC, UGC NET, 12th pass, Bihar…" autocomplete="off" data-t-ph="searchPh">
       <span class="ph" id="ph" aria-hidden="true" hidden><span class="ph-lead"></span><span class="ph-word"></span><span class="ph-caret"></span></span>
-      <button type="button" class="sf" id="fBtn" aria-label="Filters"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg><span class="fl" data-t="filters">Filters</span><span class="fn"></span></button>
+      <button type="button" class="sf" id="fBtn" aria-label="Filters" title="Filters"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 5.75C4.5 4.92 5.17 4.25 6 4.25h12c.83 0 1.5.67 1.5 1.5 0 .38-.14.74-.4 1.02l-4.6 5.02v5.21c0 .5-.25.97-.67 1.25l-2 1.33c-.66.44-1.55-.03-1.55-.83v-6.96L4.9 6.77a1.5 1.5 0 0 1-.4-1.02Z"/></svg><span class="fn"></span></button>
       <button type="button" class="sx" id="kHint" hidden><span data-t="clear">Clear</span><kbd class="kc" aria-hidden="true">Esc</kbd></button>
     </label>
     <p class="preset g" id="preset" hidden></p>
