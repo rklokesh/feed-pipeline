@@ -602,6 +602,15 @@ a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .l
 
 :root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t, :root[data-theme="dark"] .kv a.r:hover > span, :root[data-theme="dark"] .kv a.r:hover .v { color: #F2A7A1 !important; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t, :root:not([data-theme="light"]) .kv a.r:hover > span, :root:not([data-theme="light"]) .kv a.r:hover .v { color: #F2A7A1 !important; } }
+
+/* "Browse similar jobs": quiet pill links to the landing pages */
+.browsep { display: grid; gap: 10px; }
+.browsep .h { color: var(--ink); font-weight: 600; }
+.browsep .bp { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
+.browsep .bp a { padding: 6px 13px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-size: .9rem; text-decoration: none; }
+.browsep .bp a:hover { background: var(--soft); }
+html.nb .browsep .h { font-size: 1.2rem; font-weight: 700; }
+@media print { .browsep { display: none; } }
 </style>
 <script>/* Notice A/B: version B (calm reading layout) is the default; ?classic shows A (boxed). NB_SPLIT=true at launch = 50/50 per browser, with counts. */
 (function(){var NB_SPLIT=false,h=document.documentElement,q=location.search,v="b",f=1;
@@ -716,6 +725,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       <a class="r" href="/notice/ukpsc-ro-aro-exam-2024-ineligible-candidates-list-out-2026/"><span data-t="rel4">UKPSC RO ARO Exam 2024 Ineligible Candidates List 2026 – Representation Notice</span><span class="v g num">29 Oct 2026</span></a>
       <a class="r" href="/notice/ukpsc-high-court-personal-assistant-english-shorthand-result-202/"><span data-t="rel5">UKPSC High Court Personal Assistant Result 2026 – English Shorthand Exam</span><span class="v g num">27 Oct 2026</span></a>
     </section>
+    <section class="browsep" data-t-aria="browseH"><h2 class="h" data-t="browseH">Browse similar jobs</h2><p class="bp"><a href="/teacher-jobs/" data-t="br0">Teacher Jobs 2026</a><a href="/uttarakhand-govt-jobs/" data-t="br1">Uttarakhand Govt Jobs 2026</a></p></section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.com/"}, {"@type": "ListItem", "position": 2, "name": "Results", "item": "https://sarkarichart.com/?cat=results"}, {"@type": "ListItem", "position": 3, "name": "UKPSC Lecturer Cadre Recruitment 2025 – Final Result Notice for 856 Posts", "item": "https://sarkarichart.com/notice/ukpsc-lecturer-cadre-recruitment-2025-final-result-notice-for-85/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "UKPSC Lecturer Cadre Recruitment 2025 – Final Result Notice for 856 Posts", "url": "https://sarkarichart.com/notice/ukpsc-lecturer-cadre-recruitment-2025-final-result-notice-for-85/", "inLanguage": ["en-IN", "hi-IN"], "description": "The Uttarakhand Public Service Commission (UKPSC) has released an important notice regarding the Uttarakhand Special Subordinate Education (Lecturer Cadre Group-C) Service Examination 2025. Candidates have been sending representations requesting the declaration of results for subjects whose exams have already been conducted. The commission has clarified that since many candidates applied for multiple subjects, the final selection result for all 16 subjects will be declared together after all exams are completed, based on the post preference filled by candidates.", "datePublished": "2026-09-24", "dateModified": "2026-10-31", "isBasedOn": "https://psc.uk.gov.in/public/uploads/recruitment/1433940324.pdf", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.com/", "logo": "https://sarkarichart.com/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.com/notice/ukpsc-lecturer-cadre-recruitment-2025-final-result-notice-for-85/og.png", "about": {"@type": "GovernmentOrganization", "name": "Uttarakhand Public Service Commission (UKPSC)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When was the UKPSC Lecturer notice regarding results issued?", "acceptedAnswer": {"@type": "Answer", "text": "The notice was issued on 24 September 2026 by UKPSC."}}, {"@type": "Question", "name": "Why are the results of completed exams not declared immediately?", "acceptedAnswer": {"@type": "Answer", "text": "Since many candidates applied for multiple subjects, the commission will declare the final selection result for all 16 subjects together after all exams are completed."}}, {"@type": "Question", "name": "What is the total number of vacancies for the UKPSC Lecturer exam 2025?", "acceptedAnswer": {"@type": "Answer", "text": "A total of 856 vacancies (808 fresh posts and 48 PwD backlog posts) will be filled through this examination."}}]}]</script>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 31 Oct 2026. If anything here differs from the official notice, the official notice is correct.</p>
@@ -896,6 +906,9 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel3: "UKPSC Civil Judge Junior Division Main Marks List 2023 Out",
       rel4: "UKPSC RO ARO Exam 2024 Ineligible Candidates List 2026 – Representation Notice",
       rel5: "UKPSC High Court Personal Assistant Result 2026 – English Shorthand Exam",
+      browseH: "Browse similar jobs",
+      br0: "Teacher Jobs 2026",
+      br1: "Uttarakhand Govt Jobs 2026",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -990,6 +1003,9 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel3: "UKPSC सिविल जज जूनियर डिवीजन मुख्य अंक सूची 2023 जारी",
       rel4: "उत्तराखंड लोक सेवा आयोग समीक्षा अधिकारी और सहायक समीक्षा अधिकारी परीक्षा 2024 अनर्ह सूची",
       rel5: "उत्तराखंड उच्च न्यायालय वैयक्तिक सहायक रिजल्ट 2026 – अंग्रेजी आशुलेखन परीक्षा",
+      browseH: "ऐसी और नौकरियाँ देखें",
+      br0: "शिक्षक भर्ती 2026",
+      br1: "उत्तराखंड सरकारी नौकरी 2026",
     },
   };
   let lang = "en";

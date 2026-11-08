@@ -602,6 +602,15 @@ a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .l
 
 :root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t, :root[data-theme="dark"] .kv a.r:hover > span, :root[data-theme="dark"] .kv a.r:hover .v { color: #F2A7A1 !important; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t, :root:not([data-theme="light"]) .kv a.r:hover > span, :root:not([data-theme="light"]) .kv a.r:hover .v { color: #F2A7A1 !important; } }
+
+/* "Browse similar jobs": quiet pill links to the landing pages */
+.browsep { display: grid; gap: 10px; }
+.browsep .h { color: var(--ink); font-weight: 600; }
+.browsep .bp { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
+.browsep .bp a { padding: 6px 13px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-size: .9rem; text-decoration: none; }
+.browsep .bp a:hover { background: var(--soft); }
+html.nb .browsep .h { font-size: 1.2rem; font-weight: 700; }
+@media print { .browsep { display: none; } }
 </style>
 <script>/* Notice A/B: version B (calm reading layout) is the default; ?classic shows A (boxed). NB_SPLIT=true at launch = 50/50 per browser, with counts. */
 (function(){var NB_SPLIT=false,h=document.documentElement,q=location.search,v="b",f=1;
@@ -741,6 +750,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       <a class="r" href="/notice/rpsc-sr-teacher-2025-detailed-application-form-second-chance-not/"><span data-t="rel3">RPSC Sr Teacher 2025 Detailed Application Form – Second Chance Notice</span><span class="v g num">28 Oct 2026</span></a>
       <a class="r" href="/notice/rpsc-assistant-director-answer-key-2025-dna-division-out/"><span data-t="rel4">RPSC Assistant Director Answer Key 2025 – DNA Division Out</span><span class="v g num">6 Nov 2026</span></a>
     </section>
+    <section class="browsep" data-t-aria="browseH"><h2 class="h" data-t="browseH">Browse similar jobs</h2><p class="bp"><a href="/rajasthan-govt-jobs/" data-t="br0">Rajasthan Govt Jobs 2026</a><a href="/post-graduate-govt-jobs/" data-t="br1">Post Graduate Govt Jobs 2026</a></p></section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.com/"}, {"@type": "ListItem", "position": 2, "name": "Updates", "item": "https://sarkarichart.com/?cat=all"}, {"@type": "ListItem", "position": 3, "name": "RPSC SSO and Assistant Director Answer Key 2026 – Objection Window", "item": "https://sarkarichart.com/notice/rpsc-sso-and-assistant-director-answer-key-2026-objection-window/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "RPSC SSO and Assistant Director Answer Key 2026 – Objection Window", "url": "https://sarkarichart.com/notice/rpsc-sso-and-assistant-director-answer-key-2026-objection-window/", "inLanguage": ["en-IN", "hi-IN"], "description": "The Rajasthan Public Service Commission (RPSC) has published the model answer keys for the Assistant Director and Senior Scientific Officer Comp. Exams held from October 13 to October 16, 2026. Candidates who appeared in these examinations can raise online objections from November 8, 2026, until November 10, 2026 (midnight). A fee of ₹100 per question is applicable along with standard proof.", "datePublished": "2026-11-06", "dateModified": "2026-11-06", "isBasedOn": "https://rpsc.rajasthan.gov.in/Static/PressNotes/16BBF4AE-211C-4AE8-8706-5F2F26536D1C.pdf", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.com/", "logo": "https://sarkarichart.com/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.com/notice/rpsc-sso-and-assistant-director-answer-key-2026-objection-window/og.png", "about": {"@type": "GovernmentOrganization", "name": "Rajasthan Public Service Commission (RPSC)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When can I submit objections for the RPSC SSO Model Answer Key 2026?", "acceptedAnswer": {"@type": "Answer", "text": "You can submit online objections from November 8, 2026, to November 10, 2026."}}, {"@type": "Question", "name": "What is the objection fee per question?", "acceptedAnswer": {"@type": "Answer", "text": "The objection fee is ₹100 per question, plus applicable service charges."}}, {"@type": "Question", "name": "Can anyone submit an objection?", "acceptedAnswer": {"@type": "Answer", "text": "No, only candidates who actually appeared in the respective examination can submit objections."}}, {"@type": "Question", "name": "What documents are required to support objections?", "acceptedAnswer": {"@type": "Answer", "text": "Objections must be supported by proofs from standard and authentic books."}}, {"@type": "Question", "name": "How can I contact technical support for objections?", "acceptedAnswer": {"@type": "Answer", "text": "You can email recruitmenthelpdesk@rajasthan.gov.in or call 9352323625 and 7340557555."}}]}]</script>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 6 Nov 2026. If anything here differs from the official notice, the official notice is correct.</p>
@@ -965,6 +975,9 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel2: "RPSC Statistical Officer 2025 Detailed Application Form Notice",
       rel3: "RPSC Sr Teacher 2025 Detailed Application Form – Second Chance Notice",
       rel4: "RPSC Assistant Director Answer Key 2025 – DNA Division Out",
+      browseH: "Browse similar jobs",
+      br0: "Rajasthan Govt Jobs 2026",
+      br1: "Post Graduate Govt Jobs 2026",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -1082,6 +1095,9 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel2: "आरपीएससी सांख्यिकी अधिकारी 2025 विस्तृत आवेदन पत्र नोटिस",
       rel3: "आरपीएससी वरिष्ठ अध्यापक 2025 विस्तृत आवेदन पत्र – दूसरा अवसर नोटिस",
       rel4: "आरपीएससी सहायक निदेशक आंसर की 2025 – डीएनए संभाग जारी",
+      browseH: "ऐसी और नौकरियाँ देखें",
+      br0: "राजस्थान सरकारी नौकरी 2026",
+      br1: "स्नातकोत्तर सरकारी नौकरी 2026",
     },
   };
   let lang = "en";

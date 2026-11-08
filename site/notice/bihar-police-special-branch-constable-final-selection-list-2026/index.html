@@ -602,6 +602,15 @@ a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .l
 
 :root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t, :root[data-theme="dark"] .kv a.r:hover > span, :root[data-theme="dark"] .kv a.r:hover .v { color: #F2A7A1 !important; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t, :root:not([data-theme="light"]) .kv a.r:hover > span, :root:not([data-theme="light"]) .kv a.r:hover .v { color: #F2A7A1 !important; } }
+
+/* "Browse similar jobs": quiet pill links to the landing pages */
+.browsep { display: grid; gap: 10px; }
+.browsep .h { color: var(--ink); font-weight: 600; }
+.browsep .bp { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
+.browsep .bp a { padding: 6px 13px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-size: .9rem; text-decoration: none; }
+.browsep .bp a:hover { background: var(--soft); }
+html.nb .browsep .h { font-size: 1.2rem; font-weight: 700; }
+@media print { .browsep { display: none; } }
 </style>
 <script>/* Notice A/B: version B (calm reading layout) is the default; ?classic shows A (boxed). NB_SPLIT=true at launch = 50/50 per browser, with counts. */
 (function(){var NB_SPLIT=false,h=document.documentElement,q=location.search,v="b",f=1;
@@ -729,6 +738,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       <a class="r" href="/notice/ukpsc-civil-judge-result-2026-final-merit-list-declared/"><span data-t="rel4">UKPSC Civil Judge Result 2026 – Final Merit List Declared</span><span class="v g num">6 Nov 2026</span></a>
       <a class="r" href="/notice/upsc-combined-stenographers-ldce-final-result-2026-check-merit-l/"><span data-t="rel5">UPSC Combined Stenographers LDCE Final Result 2026 – Check Merit List</span><span class="v g num">6 Nov 2026</span></a>
     </section>
+    <section class="browsep" data-t-aria="browseH"><h2 class="h" data-t="browseH">Browse similar jobs</h2><p class="bp"><a href="/police-jobs/" data-t="br0">Police Jobs 2026</a><a href="/bihar-govt-jobs/" data-t="br1">Bihar Govt Jobs 2026</a><a href="/12th-pass-govt-jobs/" data-t="br2">12th Pass Govt Jobs 2026</a></p></section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.com/"}, {"@type": "ListItem", "position": 2, "name": "Results", "item": "https://sarkarichart.com/?cat=results"}, {"@type": "ListItem", "position": 3, "name": "Bihar Police Special Branch Constable Final Result 2026 – List of 83 Selected Candidates", "item": "https://sarkarichart.com/notice/bihar-police-special-branch-constable-final-selection-list-2026/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "Bihar Police Special Branch Constable Final Result 2026 – List of 83 Selected Candidates", "url": "https://sarkarichart.com/notice/bihar-police-special-branch-constable-final-selection-list-2026/", "inLanguage": ["en-IN", "hi-IN"], "description": "Central Selection Board of Constable (CSBC), Bihar has released the final results for the recruitment of Constables (General Duty Close Cadre) in the Special Branch of Bihar Police under Advertisement No. 01/2026. A total of 83 candidates have been finally selected based on the written examination, physical standards test (PST), and document verification. The written exam was conducted on 24 June 2026, followed by the physical test on 12 September 2026. Candidates who took part in the selection process can check the official roll number-wise final recommendation list.", "datePublished": "2026-10-09", "dateModified": "2026-10-22", "isBasedOn": "https://csbc.bihar.gov.in/Advt/Results-01-2026-Final-09-10-2026.pdf", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.com/", "logo": "https://sarkarichart.com/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.com/notice/bihar-police-special-branch-constable-final-selection-list-2026/og.png", "about": {"@type": "GovernmentOrganization", "name": "Central Selection Board of Constable (CSBC), Bihar"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When was the final result declared for Bihar Police Special Branch Constable 2026?", "acceptedAnswer": {"@type": "Answer", "text": "The final selection list was declared on 09 October 2026."}}, {"@type": "Question", "name": "How many vacancies are filled under Advt. No. 01/2026?", "acceptedAnswer": {"@type": "Answer", "text": "A total of 83 vacancies have been filled for the Constable post in the Special Branch."}}, {"@type": "Question", "name": "Where can I check the final selection list?", "acceptedAnswer": {"@type": "Answer", "text": "You can check the final selection list on the official website of CSBC Bihar at csbc.bihar.gov.in."}}]}]</script>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 23 Oct 2026. If anything here differs from the official notice, the official notice is correct.</p>
@@ -935,6 +945,10 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel3: "UPPSC Medical Education Department Result 2026 – Allopathy Faculty",
       rel4: "UKPSC Civil Judge Result 2026 – Final Merit List Declared",
       rel5: "UPSC Combined Stenographers LDCE Final Result 2026 – Check Merit List",
+      browseH: "Browse similar jobs",
+      br0: "Police Jobs 2026",
+      br1: "Bihar Govt Jobs 2026",
+      br2: "12th Pass Govt Jobs 2026",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -1042,6 +1056,10 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel3: "यूपीपीएससी चिकित्सा शिक्षा विभाग रिज़ल्ट 2026 – एलोपैथी फैकल्टी परीक्षा परिणाम",
       rel4: "UKPSC सिविल जज रिज़ल्ट 2026 – अंतिम चयन परिणाम घोषित",
       rel5: "संघ लोक सेवा आयोग सम्मिलित आशुलिपिक सीमित विभागीय परीक्षा अंतिम परिणाम 2026 – मेरिट सूची देखें",
+      browseH: "ऐसी और नौकरियाँ देखें",
+      br0: "पुलिस भर्ती 2026",
+      br1: "बिहार सरकारी नौकरी 2026",
+      br2: "12वीं पास सरकारी नौकरी 2026",
     },
   };
   let lang = "en";

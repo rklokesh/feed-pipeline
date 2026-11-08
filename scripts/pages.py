@@ -596,6 +596,23 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
             en[f"rel{k}"], hi[f"rel{k}"] = r["en"], r["hi"] or r["en"]
             body += f'      <a class="r" href="/notice/{r["slug"]}/"><span data-t="rel{k}">{esc(r["en"])}</span><span class="v g num">{esc(d_en(r["posted"]))}</span></a>\n'
         main.append(f'    <section class="kv rel" data-t-aria="relH">\n      <div class="h" data-t="relH">More notices</div>\n{body}    </section>')
+    # links up to the matching landing pages (job type, state, qualification): one quiet line of pills
+    try:
+        import seo_pages as _sp
+        from hubs import STATES as _ST
+        sid = n.get("source_id") or ""
+        st = next((x[0] for x in _ST if any(sid == p_ or sid.startswith(p_ + "-") for p_ in x[3])), "")
+        it = {"title": en["h1"], "org": n.get("org") or "", "st": st, "q": n.get("qual") or []}
+        hits = [(sl, nm) for sl, nm, mt, _i, _f in _sp.PAGES + _sp.STATE_PAGES + _sp.QUAL_PAGES if mt(it)]
+        if hits:
+            en["browseH"], hi["browseH"] = "Browse similar jobs", "ऐसी और नौकरियाँ देखें"
+            pills = ""
+            for k, (sl, nm) in enumerate(hits[:5]):
+                en[f"br{k}"], hi[f"br{k}"] = f"{nm[0]} {dt.date.today().year}", f"{nm[1]} {dt.date.today().year}"
+                pills += f'<a href="/{sl}/" data-t="br{k}">{esc(en[f"br{k}"])}</a>'
+            main.append(f'    <section class="browsep" data-t-aria="browseH"><div class="h" data-t="browseH">{esc(en["browseH"])}</div><p class="bp">{pills}</p></section>')
+    except Exception as _e:  # noqa: BLE001 - a missing link line must never stop a page
+        PLOG.append(f"browse links: {_e}")
     # structured data for Google and AI search
     url = f"{SITE_URL}/notice/{slug}/"
     ld = [{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [

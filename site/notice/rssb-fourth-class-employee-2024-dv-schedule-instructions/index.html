@@ -602,6 +602,15 @@ a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .l
 
 :root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t, :root[data-theme="dark"] .kv a.r:hover > span, :root[data-theme="dark"] .kv a.r:hover .v { color: #F2A7A1 !important; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t, :root:not([data-theme="light"]) .kv a.r:hover > span, :root:not([data-theme="light"]) .kv a.r:hover .v { color: #F2A7A1 !important; } }
+
+/* "Browse similar jobs": quiet pill links to the landing pages */
+.browsep { display: grid; gap: 10px; }
+.browsep .h { color: var(--ink); font-weight: 600; }
+.browsep .bp { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
+.browsep .bp a { padding: 6px 13px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-size: .9rem; text-decoration: none; }
+.browsep .bp a:hover { background: var(--soft); }
+html.nb .browsep .h { font-size: 1.2rem; font-weight: 700; }
+@media print { .browsep { display: none; } }
 </style>
 <script>/* Notice A/B: version B (calm reading layout) is the default; ?classic shows A (boxed). NB_SPLIT=true at launch = 50/50 per browser, with counts. */
 (function(){var NB_SPLIT=false,h=document.documentElement,q=location.search,v="b",f=1;
@@ -739,6 +748,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       <a class="r" href="/notice/rssb-conductor-2024-document-verification-notice-for-absent-cand/"><span data-t="rel4">RSSB Conductor DV Notice 2024 – Absent Candidates List Out</span><span class="v g num">6 Nov 2026</span></a>
       <a class="r" href="/notice/rssb-supervisor-woman-2026-online-scrutiny-form-notice-out/"><span data-t="rel5">RSSB Supervisor Woman 2026 – Online Scrutiny Form Notice Out</span><span class="v g num">5 Nov 2026</span></a>
     </section>
+    <section class="browsep" data-t-aria="browseH"><h2 class="h" data-t="browseH">Browse similar jobs</h2><p class="bp"><a href="/rajasthan-govt-jobs/" data-t="br0">Rajasthan Govt Jobs 2026</a><a href="/10th-pass-govt-jobs/" data-t="br1">10th Pass Govt Jobs 2026</a></p></section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.com/"}, {"@type": "ListItem", "position": 2, "name": "Results", "item": "https://sarkarichart.com/?cat=results"}, {"@type": "ListItem", "position": 3, "name": "RSSB Fourth Class Employee 2024 DV Schedule & Instructions", "item": "https://sarkarichart.com/notice/rssb-fourth-class-employee-2024-dv-schedule-instructions/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "RSSB Fourth Class Employee 2024 DV Schedule & Instructions", "url": "https://sarkarichart.com/notice/rssb-fourth-class-employee-2024-dv-schedule-instructions/", "inLanguage": ["en-IN", "hi-IN"], "description": "The Office of the Joint Director, School Education, Jaipur Division has released the instructions and schedule for the document verification of provisionally selected candidates for the Fourth Class Employee Direct Recruitment 2024. Candidates who are in the merit list must appear in person at the office with two sets of detailed scrutiny forms and self-attested copies of all required original documents. All candidates should carefully read the notification and guidelines before attending the verification process.", "datePublished": "2026-10-23", "dateModified": "2026-10-23", "isBasedOn": "https://rssb.rajasthan.gov.in/storage/news_item/1792756589.pdf", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.com/", "logo": "https://sarkarichart.com/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.com/notice/rssb-fourth-class-employee-2024-dv-schedule-instructions/og.png", "about": {"@type": "GovernmentOrganization", "name": "Rajasthan Staff Selection Board (RSSB)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What documents are required for RSSB Fourth Class Employee Document Verification?", "acceptedAnswer": {"@type": "Answer", "text": "Candidates must bring two sets of detailed scrutiny forms, educational mark sheets, date of birth proof, caste certificate, bonafide resident certificate, character certificates, ID proof, and self-attested photocopies of all supporting documents."}}, {"@type": "Question", "name": "What should I do if I have not filled the online Detailed Scrutiny Form?", "acceptedAnswer": {"@type": "Answer", "text": "If you have not filled it online due to unavoidable reasons, you can download the form from the RSSB website, fill it manually, and submit it along with a ₹100 postal order in favor of the Secretary, RSSB Jaipur, explaining the reason."}}, {"@type": "Question", "name": "How many sets of documents need to be submitted?", "acceptedAnswer": {"@type": "Answer", "text": "Candidates must prepare and submit two complete sets of documents along with the detailed scrutiny forms."}}, {"@type": "Question", "name": "Is a caste certificate issued after the last date of the online application valid?", "acceptedAnswer": {"@type": "Answer", "text": "Caste certificates should ideally be issued by the last date of the online application. If issued later, an affidavit must be submitted."}}]}]</script>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 23 Oct 2026. If anything here differs from the official notice, the official notice is correct.</p>
@@ -974,6 +984,9 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel3: "RSSB Computer Instructor Online Scrutiny Form 2026 – Last Date Extended",
       rel4: "RSSB Conductor DV Notice 2024 – Absent Candidates List Out",
       rel5: "RSSB Supervisor Woman 2026 – Online Scrutiny Form Notice Out",
+      browseH: "Browse similar jobs",
+      br0: "Rajasthan Govt Jobs 2026",
+      br1: "10th Pass Govt Jobs 2026",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -1100,6 +1113,9 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel3: "राजस्थान कर्मचारी चयन बोर्ड कंप्यूटर अनुदेशक ऑनलाइन संवीक्षा फॉर्म 2026 – तिथियां जारी",
       rel4: "आरएसएसबी कंडक्टर डीवी नोटिस 2024 – अनुपस्थित उम्मीदवारों की सूची जारी",
       rel5: "आरएसएसबी महिला पर्यवेक्षक 2026 – ऑनलाइन संवीक्षा प्रपत्र नोटिस जारी",
+      browseH: "ऐसी और नौकरियाँ देखें",
+      br0: "राजस्थान सरकारी नौकरी 2026",
+      br1: "10वीं पास सरकारी नौकरी 2026",
     },
   };
   let lang = "en";

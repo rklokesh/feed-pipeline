@@ -602,6 +602,15 @@ a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .l
 
 :root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t, :root[data-theme="dark"] .kv a.r:hover > span, :root[data-theme="dark"] .kv a.r:hover .v { color: #F2A7A1 !important; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t, :root:not([data-theme="light"]) .kv a.r:hover > span, :root:not([data-theme="light"]) .kv a.r:hover .v { color: #F2A7A1 !important; } }
+
+/* "Browse similar jobs": quiet pill links to the landing pages */
+.browsep { display: grid; gap: 10px; }
+.browsep .h { color: var(--ink); font-weight: 600; }
+.browsep .bp { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
+.browsep .bp a { padding: 6px 13px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-size: .9rem; text-decoration: none; }
+.browsep .bp a:hover { background: var(--soft); }
+html.nb .browsep .h { font-size: 1.2rem; font-weight: 700; }
+@media print { .browsep { display: none; } }
 </style>
 <script>/* Notice A/B: version B (calm reading layout) is the default; ?classic shows A (boxed). NB_SPLIT=true at launch = 50/50 per browser, with counts. */
 (function(){var NB_SPLIT=false,h=document.documentElement,q=location.search,v="b",f=1;
@@ -724,6 +733,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       <a class="r" href="/notice/rpsc-sr-scientific-officer-answer-key-2025-narcotics-division/"><span data-t="rel2">RPSC Sr Scientific Officer Answer Key 2025 – Narcotics Division</span><span class="v g num">6 Nov 2026</span></a>
       <a class="r" href="/notice/rpsc-lecturer-agad-tantra-final-answer-key-2025-download-pdf/"><span data-t="rel3">RPSC Lecturer Agad Tantra Final Answer Key 2025 – Download PDF</span><span class="v g num">28 Oct 2026</span></a>
     </section>
+    <section class="browsep" data-t-aria="browseH"><h2 class="h" data-t="browseH">Browse similar jobs</h2><p class="bp"><a href="/rajasthan-govt-jobs/" data-t="br0">Rajasthan Govt Jobs 2026</a><a href="/post-graduate-govt-jobs/" data-t="br1">Post Graduate Govt Jobs 2026</a></p></section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.com/"}, {"@type": "ListItem", "position": 2, "name": "Answer keys", "item": "https://sarkarichart.com/?cat=answer-keys"}, {"@type": "ListItem", "position": 3, "name": "RPSC Sr. Scientific Officer Question Paper 2026 – Toxicology Division PDF", "item": "https://sarkarichart.com/notice/rpsc-sr-scientific-officer-toxicology-division-question-paper-20/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "RPSC Sr. Scientific Officer Question Paper 2026 – Toxicology Division PDF", "url": "https://sarkarichart.com/notice/rpsc-sr-scientific-officer-toxicology-division-question-paper-20/", "inLanguage": ["en-IN", "hi-IN"], "description": "The Rajasthan Public Service Commission (RPSC) conducted the examination for Sr. Scientific Officer - 2026 in the Toxicology Division on 16 October 2026. The commission has now officially released the question paper booklet for candidates. The examination consisted of 150 questions carrying a maximum of 150 marks with a duration of 2 hours and 30 minutes, plus 10 minutes extra time. Candidates can refer to the official question paper for review and reference purposes.", "datePublished": "2026-10-16", "dateModified": "2026-11-05", "isBasedOn": "https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/562BB132-0902-4007-BE62-D7CB83BC5C46.pdf", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.com/", "logo": "https://sarkarichart.com/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.com/notice/rpsc-sr-scientific-officer-toxicology-division-question-paper-20/og.png", "about": {"@type": "GovernmentOrganization", "name": "Rajasthan Public Service Commission (RPSC)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When was the RPSC Sr. Scientific Officer Toxicology Division exam held?", "acceptedAnswer": {"@type": "Answer", "text": "The exam was held on 16 October 2026."}}, {"@type": "Question", "name": "How many questions were there in the RPSC Sr. Scientific Officer Toxicology Division exam?", "acceptedAnswer": {"@type": "Answer", "text": "There were 150 objective-type questions in the question paper."}}, {"@type": "Question", "name": "Is there negative marking in the RPSC Sr. Scientific Officer exam?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, 1/3rd of the marks for a question will be deducted for each wrong answer."}}]}]</script>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 5 Nov 2026. If anything here differs from the official notice, the official notice is correct.</p>
@@ -918,6 +928,9 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel1: "RPSC Sr Scientific Officer Answer Key 2025 – Chemistry Exam",
       rel2: "RPSC Sr Scientific Officer Answer Key 2025 – Narcotics Division",
       rel3: "RPSC Lecturer Agad Tantra Final Answer Key 2025 – Download PDF",
+      browseH: "Browse similar jobs",
+      br0: "Rajasthan Govt Jobs 2026",
+      br1: "Post Graduate Govt Jobs 2026",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -1022,6 +1035,9 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel1: "आरपीएससी सीनियर साइंटिफिक ऑफिसर आंसर की 2025 – केमिस्ट्री",
       rel2: "आरपीएससी वरिष्ठ वैज्ञानिक अधिकारी उत्तर कुंजी 2025 – नारकोटिक्स डिवीजन",
       rel3: "आरपीएससी व्याख्याता आगत तंत्र अंतिम उत्तर कुंजी 2025 – पीडीएफ डाउनलोड करें",
+      browseH: "ऐसी और नौकरियाँ देखें",
+      br0: "राजस्थान सरकारी नौकरी 2026",
+      br1: "स्नातकोत्तर सरकारी नौकरी 2026",
     },
   };
   let lang = "en";

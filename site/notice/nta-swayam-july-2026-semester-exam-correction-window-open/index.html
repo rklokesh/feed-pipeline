@@ -602,6 +602,15 @@ a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .l
 
 :root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t, :root[data-theme="dark"] .kv a.r:hover > span, :root[data-theme="dark"] .kv a.r:hover .v { color: #F2A7A1 !important; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t, :root:not([data-theme="light"]) .kv a.r:hover > span, :root:not([data-theme="light"]) .kv a.r:hover .v { color: #F2A7A1 !important; } }
+
+/* "Browse similar jobs": quiet pill links to the landing pages */
+.browsep { display: grid; gap: 10px; }
+.browsep .h { color: var(--ink); font-weight: 600; }
+.browsep .bp { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
+.browsep .bp a { padding: 6px 13px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-size: .9rem; text-decoration: none; }
+.browsep .bp a:hover { background: var(--soft); }
+html.nb .browsep .h { font-size: 1.2rem; font-weight: 700; }
+@media print { .browsep { display: none; } }
 </style>
 <script>/* Notice A/B: version B (calm reading layout) is the default; ?classic shows A (boxed). NB_SPLIT=true at launch = 50/50 per browser, with counts. */
 (function(){var NB_SPLIT=false,h=document.documentElement,q=location.search,v="b",f=1;
@@ -733,6 +742,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       <a class="r" href="/notice/nta-rms-cet-2026-application-form-correction-window-open/"><span data-t="rel3">NTA RMS CET 2026 Application Form Correction Window Open</span><span class="v g num">27 Oct 2026</span></a>
       <a class="r" href="/notice/nta-joint-entrance-examination-jee-main-2027-session-1/"><span data-t="rel4">JEE Main 2027 Session 1 Online Form Open</span><span class="v g num">24 Oct 2026</span></a>
     </section>
+    <section class="browsep" data-t-aria="browseH"><h2 class="h" data-t="browseH">Browse similar jobs</h2><p class="bp"><a href="/central-govt-jobs/" data-t="br0">Central Govt Jobs 2026</a></p></section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.com/"}, {"@type": "ListItem", "position": 2, "name": "Admissions", "item": "https://sarkarichart.com/?cat=all"}, {"@type": "ListItem", "position": 3, "name": "NTA SWAYAM July 2026 Semester Exam Correction Window 2026", "item": "https://sarkarichart.com/notice/nta-swayam-july-2026-semester-exam-correction-window-open/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "NTA SWAYAM July 2026 Semester Exam Correction Window 2026", "url": "https://sarkarichart.com/notice/nta-swayam-july-2026-semester-exam-correction-window-open/", "inLanguage": ["en-IN", "hi-IN"], "description": "The National Testing Agency (NTA) has announced a one-time correction facility for the registered candidates of the SWAYAM July 2026 Semester Examination. Candidates can modify specific details in their online application forms from 06 November to 07 November 2026 up to 11:50 P.M. The examination is scheduled to be conducted on 08, 09, 10, 11, and 12 December 2026 in CBT mode across various cities in India. Registered candidates are advised to visit the official website and verify their particulars to avoid any discrepancies.", "datePublished": "2026-11-06", "dateModified": "2026-11-06", "isBasedOn": "https://nta.ac.in/Download/Notice/Notice_20261106103320.pdf", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.com/", "logo": "https://sarkarichart.com/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.com/notice/nta-swayam-july-2026-semester-exam-correction-window-open/og.png", "about": {"@type": "GovernmentOrganization", "name": "National Testing Agency (NTA)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When is the correction window open for SWAYAM July 2026 exam?", "acceptedAnswer": {"@type": "Answer", "text": "The correction window is open from 06 November to 07 November 2026 up to 11:50 P.M."}}, {"@type": "Question", "name": "Can I change my mobile number and email address?", "acceptedAnswer": {"@type": "Answer", "text": "No, mobile numbers and email addresses cannot be changed."}}, {"@type": "Question", "name": "What fields are allowed to be changed?", "acceptedAnswer": {"@type": "Answer", "text": "Candidates can change candidate name, father's name, mother's name, photograph, signature, date of birth, gender, category, sub-category/PwD status, university & college details, examination cities, and courses."}}, {"@type": "Question", "name": "When will the SWAYAM July 2026 semester exam be conducted?", "acceptedAnswer": {"@type": "Answer", "text": "The exam will be conducted on 08, 09, 10, 11, and 12 December 2026."}}, {"@type": "Question", "name": "Will I have to pay an additional fee for corrections?", "acceptedAnswer": {"@type": "Answer", "text": "An additional fee will be charged if changes in category, PwD status, or courses impact the fee amount."}}]}]</script>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 6 Nov 2026. If anything here differs from the official notice, the official notice is correct.</p>
@@ -944,6 +954,8 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel2: "NTA JEE Main 2027 Session 1 Registration Advisory and Instructions",
       rel3: "NTA RMS CET 2026 Application Form Correction Window Open",
       rel4: "JEE Main 2027 Session 1 Online Form Open",
+      browseH: "Browse similar jobs",
+      br0: "Central Govt Jobs 2026",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -1056,6 +1068,8 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel2: "एनटीए जेईई मेन 2027 सत्र 1 पंजीकरण सलाह और निर्देश",
       rel3: "एनटीए आरएमएस सीईटी 2026 आवेदन पत्र सुधार विंडो खुली",
       rel4: "संयुक्त प्रवेश परीक्षा मुख्य 2027 सत्र 1 ऑनलाइन फॉर्म खुला",
+      browseH: "ऐसी और नौकरियाँ देखें",
+      br0: "केंद्र सरकार की नौकरियाँ 2026",
     },
   };
   let lang = "en";

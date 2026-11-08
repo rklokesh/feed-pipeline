@@ -602,6 +602,15 @@ a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .l
 
 :root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t, :root[data-theme="dark"] .kv a.r:hover > span, :root[data-theme="dark"] .kv a.r:hover .v { color: #F2A7A1 !important; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t, :root:not([data-theme="light"]) .kv a.r:hover > span, :root:not([data-theme="light"]) .kv a.r:hover .v { color: #F2A7A1 !important; } }
+
+/* "Browse similar jobs": quiet pill links to the landing pages */
+.browsep { display: grid; gap: 10px; }
+.browsep .h { color: var(--ink); font-weight: 600; }
+.browsep .bp { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
+.browsep .bp a { padding: 6px 13px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-size: .9rem; text-decoration: none; }
+.browsep .bp a:hover { background: var(--soft); }
+html.nb .browsep .h { font-size: 1.2rem; font-weight: 700; }
+@media print { .browsep { display: none; } }
 </style>
 <script>/* Notice A/B: version B (calm reading layout) is the default; ?classic shows A (boxed). NB_SPLIT=true at launch = 50/50 per browser, with counts. */
 (function(){var NB_SPLIT=false,h=document.documentElement,q=location.search,v="b",f=1;
@@ -716,6 +725,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       <a class="r" href="/notice/upsssc-junior-assistant-admit-card-2026-typing-test-out/"><span data-t="rel4">UPSSSC Junior Assistant Admit Card 2026 – Typing Test Out</span><span class="v g num">3 Nov 2026</span></a>
       <a class="r" href="/notice/upsssc-computer-cadre-exam-syllabus-2026-pattern-and-details/"><span data-t="rel5">UPSSSC Computer Cadre Exam Syllabus 2026 – Pattern and Details</span><span class="v g num">2 Nov 2026</span></a>
     </section>
+    <section class="browsep" data-t-aria="browseH"><h2 class="h" data-t="browseH">Browse similar jobs</h2><p class="bp"><a href="/up-govt-jobs/" data-t="br0">UP Govt Jobs 2026</a><a href="/12th-pass-govt-jobs/" data-t="br1">12th Pass Govt Jobs 2026</a></p></section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.com/"}, {"@type": "ListItem", "position": 2, "name": "Results", "item": "https://sarkarichart.com/?cat=results"}, {"@type": "ListItem", "position": 3, "name": "UPSSSC Stenographer Skill Test Result 2024 – Check 1,329 Qualified List", "item": "https://sarkarichart.com/notice/upsssc-stenographer-skill-test-result-2024-check-1-329-qualified/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "UPSSSC Stenographer Skill Test Result 2024 – Check 1,329 Qualified List", "url": "https://sarkarichart.com/notice/upsssc-stenographer-skill-test-result-2024-check-1-329-qualified/", "inLanguage": ["en-IN", "hi-IN"], "description": "The Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has declared the Hindi Shorthand and Typewriting skill test result for the Stenographer Main Exam 2024. The skill test was conducted from 05 September 2026 to 16 September 2026, where 10,813 candidates appeared. A total of 1,329 candidates have been declared successful for document verification. Candidates who appeared in the skill test can check their roll numbers in the official result PDF.", "datePublished": "2026-10-24", "dateModified": "2026-11-03", "isBasedOn": "https://upsssc.gov.in/ViewPdf.aspx?EnBiDam5l0HVSQl05dMHcAMjiB0yJem9ux0kHQ/HBhI=", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.com/", "logo": "https://sarkarichart.com/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.com/notice/upsssc-stenographer-skill-test-result-2024-check-1-329-qualified/og.png", "about": {"@type": "GovernmentOrganization", "name": "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When was the UPSSSC Stenographer skill test result declared?", "acceptedAnswer": {"@type": "Answer", "text": "The skill test result was declared on 24 October 2026."}}, {"@type": "Question", "name": "How many candidates qualified the UPSSSC Stenographer skill test?", "acceptedAnswer": {"@type": "Answer", "text": "A total of 1,329 candidates have successfully qualified the skill test."}}, {"@type": "Question", "name": "Where can I check the UPSSSC Stenographer skill test result?", "acceptedAnswer": {"@type": "Answer", "text": "You can check the result on the official website upsssc.gov.in."}}]}]</script>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 4 Nov 2026. If anything here differs from the official notice, the official notice is correct.</p>
@@ -893,6 +903,9 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel3: "UPSSSC Junior Analyst Food DV Schedule 2026 – Supplementary List",
       rel4: "UPSSSC Junior Assistant Admit Card 2026 – Typing Test Out",
       rel5: "UPSSSC Computer Cadre Exam Syllabus 2026 – Pattern and Details",
+      browseH: "Browse similar jobs",
+      br0: "UP Govt Jobs 2026",
+      br1: "12th Pass Govt Jobs 2026",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -984,6 +997,9 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel3: "यूपीएसएसएससी कनिष्ठ विश्लेषक खाद्य अभिलेख परीक्षण 2026 – अनुपूरक सूची",
       rel4: "यूपीएसएसएससी कनिष्ठ सहायक एडमिट कार्ड 2026 – टंकण परीक्षा जारी",
       rel5: "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग कम्प्यूटर संवर्ग परीक्षा पाठ्यक्रम 2026",
+      browseH: "ऐसी और नौकरियाँ देखें",
+      br0: "यूपी सरकारी नौकरी 2026",
+      br1: "12वीं पास सरकारी नौकरी 2026",
     },
   };
   let lang = "en";

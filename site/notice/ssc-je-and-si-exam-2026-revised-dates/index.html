@@ -602,6 +602,15 @@ a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .l
 
 :root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t, :root[data-theme="dark"] .kv a.r:hover > span, :root[data-theme="dark"] .kv a.r:hover .v { color: #F2A7A1 !important; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t, :root:not([data-theme="light"]) .kv a.r:hover > span, :root:not([data-theme="light"]) .kv a.r:hover .v { color: #F2A7A1 !important; } }
+
+/* "Browse similar jobs": quiet pill links to the landing pages */
+.browsep { display: grid; gap: 10px; }
+.browsep .h { color: var(--ink); font-weight: 600; }
+.browsep .bp { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
+.browsep .bp a { padding: 6px 13px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-size: .9rem; text-decoration: none; }
+.browsep .bp a:hover { background: var(--soft); }
+html.nb .browsep .h { font-size: 1.2rem; font-weight: 700; }
+@media print { .browsep { display: none; } }
 </style>
 <script>/* Notice A/B: version B (calm reading layout) is the default; ?classic shows A (boxed). NB_SPLIT=true at launch = 50/50 per browser, with counts. */
 (function(){var NB_SPLIT=false,h=document.documentElement,q=location.search,v="b",f=1;
@@ -710,6 +719,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       <a class="r" href="/notice/ssc-coast-guard-admit-card-2026-exam-city-slip-link-cgept/"><span data-t="rel3">SSC Coast Guard Admit Card 2026 – Exam City Slip Link CGEPT</span><span class="v g num">6 Nov 2026</span></a>
       <a class="r" href="/notice/ssc-chte-2025-first-allocation-result-out-532-candidates-recomme/"><span data-t="rel4">SSC CHTE 2025 First Allocation Result Out – 532 Candidates Recommended</span><span class="v g num">5 Nov 2026</span></a>
     </section>
+    <section class="browsep" data-t-aria="browseH"><h2 class="h" data-t="browseH">Browse similar jobs</h2><p class="bp"><a href="/central-govt-jobs/" data-t="br0">Central Govt Jobs 2026</a><a href="/police-jobs/" data-t="br1">Police Jobs 2026</a></p></section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.com/"}, {"@type": "ListItem", "position": 2, "name": "Updates", "item": "https://sarkarichart.com/?cat=all"}, {"@type": "ListItem", "position": 3, "name": "SSC JE and SI Exam 2026 Revised Dates – Schedule Notice", "item": "https://sarkarichart.com/notice/ssc-je-and-si-exam-2026-revised-dates/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "SSC JE and SI Exam 2026 Revised Dates – Schedule Notice", "url": "https://sarkarichart.com/notice/ssc-je-and-si-exam-2026-revised-dates/", "inLanguage": ["en-IN", "hi-IN"], "description": "The Staff Selection Commission has issued a corrigendum notice dated 26 October 2026 regarding the revision of examination dates for two major recruitments: Junior Engineer Examination, 2026 (Paper-I) and Sub-Inspector in Delhi Police and Central Armed Police Forces Examination, 2026. As per the notice, the Junior Engineer Paper-I will now be conducted from 02nd to 06th November, 2026 and 30th November to 01st December, 2026. The Sub-Inspector examination will be held from 23rd to 28th November, 2026. Candidates are advised to check the official website regularly for further updates.", "datePublished": "2026-10-26", "dateModified": "2026-10-26", "isBasedOn": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Important notice_revised_dated_26_10_2026.pdf", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.com/", "logo": "https://sarkarichart.com/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.com/notice/ssc-je-and-si-exam-2026-revised-dates/og.png", "about": {"@type": "GovernmentOrganization", "name": "Staff Selection Commission (SSC)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What are the revised dates for SSC Junior Engineer Exam 2026 Paper-I?", "acceptedAnswer": {"@type": "Answer", "text": "The Junior Engineer Exam 2026 Paper-I will be conducted from 02nd to 06th November, 2026 and 30th November to 01st December, 2026."}}, {"@type": "Question", "name": "What are the revised dates for Delhi Police and CAPF Sub-Inspector Exam 2026?", "acceptedAnswer": {"@type": "Answer", "text": "The Sub-Inspector in Delhi Police and CAPFs Examination 2026 will be held from 23rd to 28th November, 2026."}}, {"@type": "Question", "name": "Which organization issued the exam date revision notice?", "acceptedAnswer": {"@type": "Answer", "text": "The notice was issued by the Staff Selection Commission (SSC)."}}, {"@type": "Question", "name": "When was the SSC exam revision notice published?", "acceptedAnswer": {"@type": "Answer", "text": "The notice was published on 26th October 2026."}}]}]</script>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 26 Oct 2026. If anything here differs from the official notice, the official notice is correct.</p>
@@ -876,6 +886,9 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel2: "SSC Grade C Stenographer Vacancy 2025 – LDCE Tentative Vacancies Out",
       rel3: "SSC Coast Guard Admit Card 2026 – Exam City Slip Link CGEPT",
       rel4: "SSC CHTE 2025 First Allocation Result Out – 532 Candidates Recommended",
+      browseH: "Browse similar jobs",
+      br0: "Central Govt Jobs 2026",
+      br1: "Police Jobs 2026",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -965,6 +978,9 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel2: "कर्मचारी चयन आयोग श्रेणी ग आशुलिपिक वैकेंसी 2025 – एलडीसीई संभावित रिक्तियां जारी",
       rel3: "एसएससी कोस्ट गार्ड एडमिट कार्ड 2026 – परीक्षा शहर स्लिप लिंक सीजीईपीटी",
       rel4: "एसएससी संयुक्त हिंदी अनुवादक परीक्षा 2025 प्रथम आवंटन परिणाम जारी – 532 उम्मीदवार अनुशंसित",
+      browseH: "ऐसी और नौकरियाँ देखें",
+      br0: "केंद्र सरकार की नौकरियाँ 2026",
+      br1: "पुलिस भर्ती 2026",
     },
   };
   let lang = "en";

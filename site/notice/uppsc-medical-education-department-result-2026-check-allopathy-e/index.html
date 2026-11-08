@@ -602,6 +602,15 @@ a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .l
 
 :root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t, :root[data-theme="dark"] .kv a.r:hover > span, :root[data-theme="dark"] .kv a.r:hover .v { color: #F2A7A1 !important; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t, :root:not([data-theme="light"]) .kv a.r:hover > span, :root:not([data-theme="light"]) .kv a.r:hover .v { color: #F2A7A1 !important; } }
+
+/* "Browse similar jobs": quiet pill links to the landing pages */
+.browsep { display: grid; gap: 10px; }
+.browsep .h { color: var(--ink); font-weight: 600; }
+.browsep .bp { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
+.browsep .bp a { padding: 6px 13px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-size: .9rem; text-decoration: none; }
+.browsep .bp a:hover { background: var(--soft); }
+html.nb .browsep .h { font-size: 1.2rem; font-weight: 700; }
+@media print { .browsep { display: none; } }
 </style>
 <script>/* Notice A/B: version B (calm reading layout) is the default; ?classic shows A (boxed). NB_SPLIT=true at launch = 50/50 per browser, with counts. */
 (function(){var NB_SPLIT=false,h=document.documentElement,q=location.search,v="b",f=1;
@@ -722,6 +731,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       <a class="r" href="/notice/uppsc-professor-microbiology-result-2026-medical-education-dept/"><span data-t="rel2">UPPSC Professor Microbiology Result 2026 – Medical Education Dept</span><span class="v g num">6 Nov 2026</span></a>
       <a class="r" href="/notice/uppsc-professor-anatomy-result-2026-check-selection-list/"><span data-t="rel3">UPPSC Professor Anatomy Result 2026 – Check Selection List</span><span class="v g num">5 Nov 2026</span></a>
     </section>
+    <section class="browsep" data-t-aria="browseH"><h2 class="h" data-t="browseH">Browse similar jobs</h2><p class="bp"><a href="/up-govt-jobs/" data-t="br0">UP Govt Jobs 2026</a><a href="/graduate-govt-jobs/" data-t="br1">Graduate Govt Jobs 2026</a></p></section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.com/"}, {"@type": "ListItem", "position": 2, "name": "Results", "item": "https://sarkarichart.com/?cat=results"}, {"@type": "ListItem", "position": 3, "name": "UPPSC Medical Education Department Result 2026 – Allopathy Faculty", "item": "https://sarkarichart.com/notice/uppsc-medical-education-department-result-2026-check-allopathy-e/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "UPPSC Medical Education Department Result 2026 – Allopathy Faculty", "url": "https://sarkarichart.com/notice/uppsc-medical-education-department-result-2026-check-allopathy-e/", "inLanguage": ["en-IN", "hi-IN"], "description": "Uttar Pradesh Public Service Commission (UPPSC) has announced the final selection result for the Professor Microbiology post in the Medical Education Department (Allopathy). The interview for this direct recruitment under Advertisement No. D-1/E-1/2026 was conducted on 29 October 2026. One candidate has been declared successful for appointment. Candidates who appeared for the interview can check their result details in the notice.", "datePublished": "2026-11-06", "dateModified": "2026-11-06", "isBasedOn": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjjLGzSSzDMLp", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.com/", "logo": "https://sarkarichart.com/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.com/notice/uppsc-medical-education-department-result-2026-check-allopathy-e/og.png", "about": {"@type": "GovernmentOrganization", "name": "Uttar Pradesh Public Service Commission (UPPSC)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When was the UPPSC Medical Education Department interview held?", "acceptedAnswer": {"@type": "Answer", "text": "The interview was held on 29 October 2026."}}, {"@type": "Question", "name": "How many vacancies were announced for Professor Microbiology?", "acceptedAnswer": {"@type": "Answer", "text": "A total of 1 unreserved vacancy was announced."}}, {"@type": "Question", "name": "Who has been selected for the Professor Microbiology post?", "acceptedAnswer": {"@type": "Answer", "text": "Reena Sachan has been selected for the post."}}]}]</script>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 6 Nov 2026. If anything here differs from the official notice, the official notice is correct.</p>
@@ -907,6 +917,9 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel1: "UPPSC Professor Emergency Medicine Result 2026 – Cut Off & Merit List",
       rel2: "UPPSC Professor Microbiology Result 2026 – Medical Education Dept",
       rel3: "UPPSC Professor Anatomy Result 2026 – Check Selection List",
+      browseH: "Browse similar jobs",
+      br0: "UP Govt Jobs 2026",
+      br1: "Graduate Govt Jobs 2026",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -1006,6 +1019,9 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel1: "यूपीपीएससी प्रोफेसर इमरजेंसी मेडिसिन रिज़ल्ट 2026 – कट ऑफ और मेरिट लिस्ट",
       rel2: "यूपीपीएससी प्रोफेसर माइक्रोबायोलॉजी रिज़ल्ट 2026 – चिकित्सा शिक्षा विभाग",
       rel3: "उत्तर प्रदेश लोक सेवा आयोग प्रोफेसर एनाटॉमी रिज़ल्ट 2026 – चयन सूची जारी",
+      browseH: "ऐसी और नौकरियाँ देखें",
+      br0: "यूपी सरकारी नौकरी 2026",
+      br1: "स्नातक सरकारी नौकरी 2026",
     },
   };
   let lang = "en";

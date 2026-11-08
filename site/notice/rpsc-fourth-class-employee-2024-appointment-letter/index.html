@@ -602,6 +602,15 @@ a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .l
 
 :root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t, :root[data-theme="dark"] .kv a.r:hover > span, :root[data-theme="dark"] .kv a.r:hover .v { color: #F2A7A1 !important; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t, :root:not([data-theme="light"]) .kv a.r:hover > span, :root:not([data-theme="light"]) .kv a.r:hover .v { color: #F2A7A1 !important; } }
+
+/* "Browse similar jobs": quiet pill links to the landing pages */
+.browsep { display: grid; gap: 10px; }
+.browsep .h { color: var(--ink); font-weight: 600; }
+.browsep .bp { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
+.browsep .bp a { padding: 6px 13px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-size: .9rem; text-decoration: none; }
+.browsep .bp a:hover { background: var(--soft); }
+html.nb .browsep .h { font-size: 1.2rem; font-weight: 700; }
+@media print { .browsep { display: none; } }
 </style>
 <script>/* Notice A/B: version B (calm reading layout) is the default; ?classic shows A (boxed). NB_SPLIT=true at launch = 50/50 per browser, with counts. */
 (function(){var NB_SPLIT=false,h=document.documentElement,q=location.search,v="b",f=1;
@@ -699,6 +708,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       <a class="r" href="/notice/rpsc-assistant-professor-sanskrit-college-exam-2024-bhasha-vigya/"><span data-t="rel4">RPSC Assistant Professor Sanskrit College Result 2026 – Bhasha Vigyan</span><span class="v g num">4 Nov 2026</span></a>
       <a class="r" href="/notice/rpsc-assistant-agriculture-officer-2018-pickup-list-non-joiners/"><span data-t="rel5">RPSC Assistant Agriculture Officer 2018 Pickup List – Non-Joiners</span><span class="v g num">2 Nov 2026</span></a>
     </section>
+    <section class="browsep" data-t-aria="browseH"><h2 class="h" data-t="browseH">Browse similar jobs</h2><p class="bp"><a href="/rajasthan-govt-jobs/" data-t="br0">Rajasthan Govt Jobs 2026</a><a href="/10th-pass-govt-jobs/" data-t="br1">10th Pass Govt Jobs 2026</a></p></section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.com/"}, {"@type": "ListItem", "position": 2, "name": "Results", "item": "https://sarkarichart.com/?cat=results"}, {"@type": "ListItem", "position": 3, "name": "RPSC Fourth Class Employee 2024 Appointment Letter", "item": "https://sarkarichart.com/notice/rpsc-fourth-class-employee-2024-appointment-letter/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "RPSC Fourth Class Employee 2024 Appointment Letter", "url": "https://sarkarichart.com/notice/rpsc-fourth-class-employee-2024-appointment-letter/", "inLanguage": ["en-IN", "hi-IN"], "description": "The Rajasthan Public Service Commission (RPSC) has issued the appointment letter regarding the Direct Recruitment of Fourth Class Employee 2024. Candidates who participated in this recruitment process can check the official release for their appointment details. This notice contains important information regarding the final selection and appointment of candidates. All qualified individuals are advised to review the official RPSC notification for further instructions.", "datePublished": "2026-08-17", "dateModified": "2026-10-26", "isBasedOn": "https://rpsc.rajasthan.gov.in/~/Static/News/A3A52409810D46A0A2A0262947DCED36.pdf", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.com/", "logo": "https://sarkarichart.com/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.com/notice/rpsc-fourth-class-employee-2024-appointment-letter/og.png", "about": {"@type": "GovernmentOrganization", "name": "Rajasthan Public Service Commission (RPSC)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Who has released the appointment letter?", "acceptedAnswer": {"@type": "Answer", "text": "The Rajasthan Public Service Commission (RPSC) has released the appointment letter."}}, {"@type": "Question", "name": "Which recruitment is this appointment letter for?", "acceptedAnswer": {"@type": "Answer", "text": "This is for the Direct Recruitment of Fourth Class Employee 2024."}}]}]</script>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 26 Oct 2026. If anything here differs from the official notice, the official notice is correct.</p>
@@ -839,6 +849,9 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel3: "RPSC Assistant Professor Yoga Vigyan Revised Result 2024 – Cut Off",
       rel4: "RPSC Assistant Professor Sanskrit College Result 2026 – Bhasha Vigyan",
       rel5: "RPSC Assistant Agriculture Officer 2018 Pickup List – Non-Joiners",
+      browseH: "Browse similar jobs",
+      br0: "Rajasthan Govt Jobs 2026",
+      br1: "10th Pass Govt Jobs 2026",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -910,6 +923,9 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel3: "आरपीएससी सहायक आचार्य योग विज्ञान संशोधित परिणाम 2024 – कट ऑफ",
       rel4: "आरपीएससी सहायक आचार्य संस्कृत कॉलेज रिज़ल्ट 2026 – भाषा विज्ञान",
       rel5: "आरपीएससी सहायक कृषि अधिकारी 2018 पिकअप सूची – गैर-सम्मिलित अभ्यर्थी",
+      browseH: "ऐसी और नौकरियाँ देखें",
+      br0: "राजस्थान सरकारी नौकरी 2026",
+      br1: "10वीं पास सरकारी नौकरी 2026",
     },
   };
   let lang = "en";

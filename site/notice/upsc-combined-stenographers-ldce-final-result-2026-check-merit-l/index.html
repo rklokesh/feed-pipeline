@@ -602,6 +602,15 @@ a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .l
 
 :root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t, :root[data-theme="dark"] .kv a.r:hover > span, :root[data-theme="dark"] .kv a.r:hover .v { color: #F2A7A1 !important; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t, :root:not([data-theme="light"]) .kv a.r:hover > span, :root:not([data-theme="light"]) .kv a.r:hover .v { color: #F2A7A1 !important; } }
+
+/* "Browse similar jobs": quiet pill links to the landing pages */
+.browsep { display: grid; gap: 10px; }
+.browsep .h { color: var(--ink); font-weight: 600; }
+.browsep .bp { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
+.browsep .bp a { padding: 6px 13px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font-size: .9rem; text-decoration: none; }
+.browsep .bp a:hover { background: var(--soft); }
+html.nb .browsep .h { font-size: 1.2rem; font-weight: 700; }
+@media print { .browsep { display: none; } }
 </style>
 <script>/* Notice A/B: version B (calm reading layout) is the default; ?classic shows A (boxed). NB_SPLIT=true at launch = 50/50 per browser, with counts. */
 (function(){var NB_SPLIT=false,h=document.documentElement,q=location.search,v="b",f=1;
@@ -727,6 +736,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       <a class="r" href="/notice/upsc-combined-geo-scientist-result-2026-recommended-candidates-l/"><span data-t="rel4">UPSC Combined Geo-Scientist Result 2026 – Recommended Candidates List</span><span class="v g num">3 Nov 2026</span></a>
       <a class="r" href="/notice/upsc-combined-defence-services-examination-i-2026-final-result/"><span data-t="rel5">UPSC Combined Defence Services Examination I 2026 Final Result</span><span class="v g num">2 Nov 2026</span></a>
     </section>
+    <section class="browsep" data-t-aria="browseH"><h2 class="h" data-t="browseH">Browse similar jobs</h2><p class="bp"><a href="/central-govt-jobs/" data-t="br0">Central Govt Jobs 2026</a><a href="/12th-pass-govt-jobs/" data-t="br1">12th Pass Govt Jobs 2026</a><a href="/graduate-govt-jobs/" data-t="br2">Graduate Govt Jobs 2026</a></p></section>
     <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": "https://sarkarichart.com/"}, {"@type": "ListItem", "position": 2, "name": "Results", "item": "https://sarkarichart.com/?cat=results"}, {"@type": "ListItem", "position": 3, "name": "UPSC Combined Stenographers LDCE Final Result 2026 – Check Merit List", "item": "https://sarkarichart.com/notice/upsc-combined-stenographers-ldce-final-result-2026-check-merit-l/"}]}, {"@context": "https://schema.org", "@type": "WebPage", "name": "UPSC Combined Stenographers LDCE Final Result 2026 – Check Merit List", "url": "https://sarkarichart.com/notice/upsc-combined-stenographers-ldce-final-result-2026-check-merit-l/", "inLanguage": ["en-IN", "hi-IN"], "description": "The Union Public Service Commission (UPSC) has released the final result for the Combined Stenographers' (Grade 'B'/Grade-'I') Limited Departmental Competitive Examination, 2019, 2020 and 2021 (Select List Year 2020). The written examination was held in December 2025 and evaluation of service records was conducted in November 2026. Candidates recommended for inclusion in the select list can view their category-wise results and merit list on the official UPSC website.", "datePublished": "2026-11-06", "dateModified": "2026-11-06", "isBasedOn": "https://www.upsc.gov.in/whats-new/Combined%20Section%20Officers%27%20%28Grade%20%27B%27%29%20LDCE-2025%20and%20Combined%20Stenographers%27%20%28Grade%20%27B%27-Grade-%27I%27%29%20LDCE-2019%2C%202020%20%26%202021/Final%20Result", "publisher": {"@type": "Organization", "name": "SarkariChart", "url": "https://sarkarichart.com/", "logo": "https://sarkarichart.com/sarkarichart-logo.png"}, "primaryImageOfPage": "https://sarkarichart.com/notice/upsc-combined-stenographers-ldce-final-result-2026-check-merit-l/og.png", "about": {"@type": "GovernmentOrganization", "name": "Union Public Service Commission (UPSC)"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When was the UPSC Combined Stenographers LDCE 2020 final result declared?", "acceptedAnswer": {"@type": "Answer", "text": "The final result was declared on 06 November 2026."}}, {"@type": "Question", "name": "Where can I check the UPSC Combined Stenographers LDCE final result?", "acceptedAnswer": {"@type": "Answer", "text": "You can check the result on the official UPSC website at upsc.gov.in."}}, {"@type": "Question", "name": "When will the marks and cut-off marks be released?", "acceptedAnswer": {"@type": "Answer", "text": "The marks and cut-offs will be available on the UPSC website within fifteen days from the date of declaration of the final results."}}, {"@type": "Question", "name": "Whom should I contact for clarifications regarding the examination?", "acceptedAnswer": {"@type": "Answer", "text": "Candidates can contact the Commission's Call Centre at 011-40303444 or 24041001 between 09:00 AM and 08:00 PM."}}]}]</script>
     <div class="note">
       <p class="g" data-t="checked">Details are taken from the official notice. Checked on 6 Nov 2026. If anything here differs from the official notice, the official notice is correct.</p>
@@ -935,6 +945,10 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel3: "UPSC Assistant Public Prosecutor Final Result 2026 – 80 Posts",
       rel4: "UPSC Combined Geo-Scientist Result 2026 – Recommended Candidates List",
       rel5: "UPSC Combined Defence Services Examination I 2026 Final Result",
+      browseH: "Browse similar jobs",
+      br0: "Central Govt Jobs 2026",
+      br1: "12th Pass Govt Jobs 2026",
+      br2: "Graduate Govt Jobs 2026",
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
@@ -1046,6 +1060,10 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       rel3: "संघ लोक सेवा आयोग सहायक लोक अभियोजक अंतिम परिणाम 2026 – 80 पद",
       rel4: "संघ लोक सेवा आयोग संयुक्त भू-वैज्ञानिक रिजल्ट 2026 – अनुशंसित उम्मीदवार सूची",
       rel5: "संघ लोक सेवा आयोग सम्मिलित रक्षा सेवा परीक्षा प्रथम 2026 अंतिम परिणाम",
+      browseH: "ऐसी और नौकरियाँ देखें",
+      br0: "केंद्र सरकार की नौकरियाँ 2026",
+      br1: "12वीं पास सरकारी नौकरी 2026",
+      br2: "स्नातक सरकारी नौकरी 2026",
     },
   };
   let lang = "en";
