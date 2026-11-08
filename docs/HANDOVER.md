@@ -369,3 +369,12 @@ SEO shows 69 only because of the pre-launch noindex (the one failing check); go_
 - Ads: hidden for everyone until AdSense (add class `ads-on`); preview any page with `?ads`. Boxes are full column width, square, 90px desktop, 100/250px phone. Homepage: under logo + footer; notice: after At a glance, before FAQ, footer.
 - Phone back button placed once level with the header and never moves.
 - Later (owner said yes, after launch): A/B test Trending vs All as the default homepage tab.
+
+## 3p. 8 Nov 2026: LAUNCHED on https://sarkarichart.com
+- Domain bought on Cloudflare (owner's account); sarkarichart.com + www added as Pages custom domains (SSL auto). go_live.py run: every URL is sarkarichart.com, noindex removed, robots open, sitemap ~380 URLs.
+- functions/_middleware.js: www.sarkarichart.com and sarkarichart.pages.dev 301 to sarkarichart.com (same path).
+- Homepage = the "hero" design (hubs.py rebuilds it every run between HERO markers; idempotent). Test pages /b/ /c/ /v2/ removed and redirected.
+- SEO landing pages (scripts/seo_pages.py, runs after hubs): 6 job types, 14 states, 6 qualifications; empty ones noindex. Every notice links to its matching pages ("Browse similar jobs").
+- IndexNow (scripts/indexnow.py, key file in site/) pings Bing/Yandex after each publish (runs on GitHub, not the Mac VM).
+- Aspirant counter: views DB slug zz-visitors-YYYYMM, one per browser per month; homepage trust line switches to the real number past 10,000. Never show an invented number.
+- Still to do: Google Search Console (Domain property, TXT in Cloudflare DNS) + sitemap; Bing import from GSC; contact@ via Cloudflare Email Routing; AdSense in 2-4 weeks (ads-on class).
