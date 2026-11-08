@@ -690,6 +690,10 @@ a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .l
 .f-sw input:checked + .f-knob::after { transform: translateX(18px); }
 .f-sw input:focus-visible + .f-knob { outline: 2px solid var(--ink); outline-offset: 2px; }
 @media (max-width: 640px) { .f-sw { margin: 12px 10px 4px; } }
+/* panels grow to their full height and the page scrolls through them (no trapped inner scrolling) */
+.sugg, .fpanel { max-height: none !important; overflow: visible !important; overscroll-behavior: auto !important; }
+@media (max-width: 640px) { .sugg { max-height: none !important; } }
+.f-foot { position: static !important; }
 </style>
 <script>document.documentElement.classList.add("v2");try{localStorage.removeItem("sc-v2")}catch(e){}</script>
 <script>/* Desktop A/B. Version A (original desktop) is the default everywhere; version B (phone-style chrome) lives at /v2/ (or ?new).
