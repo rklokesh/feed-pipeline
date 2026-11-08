@@ -215,15 +215,15 @@ def build():
         soon = sum(1 for x in lasts if 0 <= (_dt.date.fromisoformat(x) - _d).days <= 7)
         hero = ('    <section class="hero" aria-label="Search">\n'
                 f'      <div class="hero-bg" aria-hidden="true">{words}</div>\n'
-                '      <h2 class="hero-h"><span class="x-en" aria-label="Govt jobs, admit cards and results, the moment they are out">'
+                '      <h2 class="hero-h"><span class="x-en" aria-label="Govt jobs, admit cards and results, straight from the official notice">'
                 '<span aria-hidden="true">Govt <span class="rx" data-alt="नौकरी">jobs</span>, admit cards and <span class="rx" data-alt="रिज़ल्ट">results</span>, <br>'
-                'the moment they\'re out</span></span>'
-                '<span class="x-hi" lang="hi" aria-label="सरकारी नौकरी, एडमिट कार्ड और रिज़ल्ट, जारी होते ही"><span aria-hidden="true">'
+                'straight from the official notice</span></span>'
+                '<span class="x-hi" lang="hi" aria-label="सरकारी नौकरी, एडमिट कार्ड और रिज़ल्ट, सीधे आधिकारिक सूचना से"><span aria-hidden="true">'
                 'सरकारी <span class="rx" data-alt="jobs">नौकरी</span>, एडमिट कार्ड और <span class="rx" data-alt="results">रिज़ल्ट</span>, <br>'
-                'जारी होते ही</span></span></h2>\n'
+                'सीधे आधिकारिक सूचना से</span></span></h2>\n'
                 + search.replace("    <label", "      <label", 1) +
-                f'      <p class="hero-sub g" id="heroSub" data-ts="{latest}"><span class="x-en">Free · No sign-up · English &amp; हिंदी</span>'
-                f'<span class="x-hi" lang="hi">मुफ़्त · बिना साइन-अप · हिंदी और English</span></p>\n'
+                f'      <p class="hero-sub g" id="heroSub" data-ts="{latest}"><span class="x-en">Only official notices · 50+ boards checked daily · never paid listings</span>'
+                f'<span class="x-hi" lang="hi">सिर्फ़ आधिकारिक सूचनाएँ · 50+ बोर्ड रोज़ जाँचे जाते हैं · कोई पेड लिस्टिंग नहीं</span></p>\n'
                 '    </section>\n')
         hv = hv.replace("  <main>\n", "  <main>\n" + hero, 1)
         css = """<style>

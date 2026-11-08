@@ -26,7 +26,8 @@ const browser = await chromium.launch();
 // Only pages whose content changed are printed again: the fingerprint ignores <style>/<script> (screen-only design
 // tweaks), so a phone-layout change no longer reprints all ~300 pages. Bump PDF_V to force a full reprint.
 const PDF_V = "1";
-const fp = html => createHash("sha1").update(PDF_V + html.replace(/<style[\s\S]*?<\/style>/g, "").replace(/<script[\s\S]*?<\/script>/g, "")).digest("hex");
+// only the article itself counts: header/footer/link changes on every page no longer re-print all PDFs (bump PDF_V for print-style changes)
+const fp = html => { const m = html.match(/<main[\s\S]*?<\/main>/); return createHash("sha1").update(PDF_V + (m ? m[0] : html).replace(/<style[\s\S]*?<\/style>/g, "").replace(/<script[\s\S]*?<\/script>/g, "").replace(/ draggable="false"/g, "")).digest("hex"); };
 let skipped = 0;
 for (const slug of slugs) {
   const hashFile = join(dir, slug, ".pdfhash"), h = fp(readFileSync(join(dir, slug, "index.html"), "utf8"));

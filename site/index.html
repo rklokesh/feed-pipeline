@@ -632,6 +632,27 @@ main > .adslot { margin: 0 !important; }   /* inside an article the page's own s
 a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .list li.lr.sel .t { color: #E8312F; }
 :root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t { color: #FF6B66; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t { color: #FF6B66; } }
+/* panel polish: roomier rows, softer card, smooth open */
+.sugg { top: calc(100% + 8px); padding: 8px; border-radius: 14px; opacity: 0; transform: translateY(-6px) scale(.985); transform-origin: top center;
+  transition: opacity .16s ease, transform .22s cubic-bezier(.2, .8, .2, 1); box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 18px 40px -16px rgba(0,0,0,.28); }
+.sugg.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .sugg { transition: none; transform: none; } }
+.sg-h { margin: 14px 12px 6px; font-size: .75rem; font-weight: 500; letter-spacing: .04em; }
+.sg-h:first-child { margin-top: 8px; }
+.sg-hrow { display: flex; justify-content: space-between; align-items: center; }
+.sg-clr { all: unset; cursor: pointer; color: #1A5FB4; font-size: .75rem; font-weight: 500; letter-spacing: 0; }
+.sg-i { padding: 10px 12px; border-radius: 9px; gap: 10px; align-items: center; justify-content: flex-start; }
+.sg-i .sg-m { margin-left: auto; }
+.sg-ic { flex: none; color: var(--grey); }
+.sg-rrow { display: flex; align-items: center; gap: 2px; }
+.sg-rrow .sg-i { flex: 1; min-width: 0; }
+.sg-del { all: unset; flex: none; cursor: pointer; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 9px; color: var(--grey); }
+.sg-del:hover { background: var(--soft); color: var(--ink); }
+.sg-chips { padding: 4px 12px 10px; gap: 8px; }
+.sg-chip { padding: 6px 13px; }
+.sg-none { margin: 12px; }
+:root[data-theme="dark"] .sg-clr { color: #8AB4F8; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sg-clr { color: #8AB4F8; } }
 </style>
 <script>document.documentElement.classList.add("v2");try{localStorage.removeItem("sc-v2")}catch(e){}</script>
 <script>/* Desktop A/B. Version A (original desktop) is the default everywhere; version B (phone-style chrome) lives at /v2/ (or ?new).
@@ -1594,6 +1615,10 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
 
   // ---- Search suggestions: open the moment the box is tapped. Empty box: recent searches, popular searches, jobs closing
   // soon, browse by qualification / state. While typing: matching browse pages and the best matching notices. ----
+  // panels open and close with a short fade + lift (no sudden pop); "in" = open
+  const pOpen = el => { clearTimeout(el._t); el.hidden = false; if (!el.classList.contains("in")) requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("in"))); };
+  const pClose = el => { if (el.hidden) return; el.classList.remove("in"); clearTimeout(el._t); el._t = setTimeout(() => { el.hidden = true; }, 170); };
+  const isOpen = el => !el.hidden && el.classList.contains("in");
   const SG = document.createElement("div");
   SG.className = "sugg"; SG.id = "sugg"; SG.hidden = true;
   searchBox.appendChild(SG);
@@ -1615,7 +1640,9 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
     let h = "";
     if (!v) {
       const r = recent();
-      if (r.length) h += `<p class="sg-h">${LL("Recent searches", "हाल की खोज")}</p>` + r.map(w => sgFill(w)).join("");
+      const clock = '<svg class="sg-ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>';
+      if (r.length) h += `<p class="sg-h sg-hrow"><span>${LL("Recent searches", "हाल की खोज")}</span><button type="button" class="sg-clr">${LL("Clear all", "सब हटाएँ")}</button></p>` +
+        r.map(w => `<div class="sg-rrow"><button type="button" class="sg-i sg-q" data-q="${esc(w)}">${clock}<span class="sg-t">${esc(w)}</span></button><button type="button" class="sg-del" data-del="${esc(w)}" aria-label="${LL("Remove", "हटाएँ")}"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>`).join("");
       const pop = POPULAR.filter(([en]) => ITEMS.some(i => live(i) && words(i).includes(en.toLowerCase()))).slice(0, 8);
       if (pop.length) h += `<p class="sg-h">${LL("Popular searches", "लोकप्रिय खोज")}</p><div class="sg-chips">` + pop.map(([en, hi]) => `<button type="button" class="sg-chip sg-q" data-q="${esc(en)}">${esc(LL(en, hi))}</button>`).join("") + "</div>";
       const soon = ITEMS.filter(i => i.type === "Job" && i.page && i.last && left(i.last) >= 0 && !i.quiet).sort((a, b) => a.last.localeCompare(b.last)).slice(0, 3);
@@ -1631,21 +1658,28 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
       else if (!hub.length) h += `<p class="sg-none">${LL("Nothing yet for this. Try a board (SSC, RRB), a post (Clerk, Constable) or a state.", "अभी इसके लिए कुछ नहीं। बोर्ड (SSC, RRB), पद (क्लर्क, कांस्टेबल) या राज्य लिखें।")}</p>`;
     }
     SG.innerHTML = h; sgSel = -1;
-    SG.hidden = !h || document.activeElement !== qIn;
+    if (!h || document.activeElement !== qIn) pClose(SG); else pOpen(SG);
   }
   const sgItems = () => [...SG.querySelectorAll(".sg-i, .sg-chip")];
-  const sgClose = () => { SG.hidden = true; sgSel = -1; };
+  const sgClose = () => { pClose(SG); sgSel = -1; };
   qIn.addEventListener("focus", sgRender);
   qIn.addEventListener("input", () => { if (document.activeElement === qIn) sgRender(); });
   qIn.addEventListener("blur", () => setTimeout(() => { if (document.activeElement !== qIn) sgClose(); }, 150));
   SG.addEventListener("mousedown", e => e.preventDefault());           // tapping a suggestion never steals focus first
   SG.addEventListener("click", e => {
+    const del = e.target.closest(".sg-del"), clr = e.target.closest(".sg-clr");
+    if (del || clr) {
+      e.preventDefault(); e.stopPropagation();
+      const left = clr ? [] : recent().filter(x => x !== del.dataset.del);
+      try { left.length ? localStorage.setItem(RK, JSON.stringify(left)) : localStorage.removeItem(RK); } catch (x) {}
+      sgRender(); return;
+    }
     const b = e.target.closest(".sg-q");
     if (b) { e.preventDefault(); qIn.value = b.dataset.q; qIn.dispatchEvent(new Event("input")); saveRecent(b.dataset.q); sgClose(); qIn.blur(); return; }
     if (e.target.closest("a")) { saveRecent(qIn.value); sgClose(); }
   });
   qIn.addEventListener("keydown", e => {
-    if (SG.hidden) return;
+    if (!isOpen(SG)) return;
     const it = sgItems();
     if ((e.key === "ArrowDown" || e.key === "ArrowUp") && it.length) {
       e.preventDefault(); e.stopPropagation();
@@ -1680,13 +1714,13 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
     h += `<div class="f-foot"><button type="button" class="f-link" id="fClear">${LL("Clear all", "सब हटाएँ")}</button><button type="button" class="f-done" id="fDone">${LL("Show", "दिखाएँ")} ${allRows.length}</button></div>`;
     FP.innerHTML = h;
   }
-  function fApply() { fSave(); fPaintBtn(); update(); if (!FP.hidden) fRender(); }
+  function fApply() { fSave(); fPaintBtn(); update(); if (isOpen(FP)) fRender(); }
   if (fBtn) {
     fBtn.addEventListener("mousedown", e => e.preventDefault());
     fBtn.addEventListener("click", e => {
       e.preventDefault(); e.stopPropagation();
-      if (!FP.hidden) { FP.hidden = true; return; }
-      sgClose(); needElig(() => { fRender(); FP.hidden = false; });
+      if (isOpen(FP)) { pClose(FP); return; }
+      sgClose(); needElig(() => { fRender(); pOpen(FP); });
     });
     FP.addEventListener("mousedown", e => { if (!e.target.closest("input, label")) e.preventDefault(); });
     FP.addEventListener("click", e => {
@@ -1695,7 +1729,7 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
       const c = e.target.closest(".sg-chip[data-g]");
       if (c) { e.preventDefault(); F[c.dataset.g] = c.dataset.v; fApply(); return; }
       if (e.target.closest("#fClear")) { e.preventDefault(); F.st = ""; F.q = ""; F.me = false; fApply(); return; }
-      if (e.target.closest("#fDone")) { e.preventDefault(); FP.hidden = true; return; }
+      if (e.target.closest("#fDone")) { e.preventDefault(); pClose(FP); return; }
       if (e.target.closest("#fMeSet")) { e.preventDefault(); window.scElig.form(() => { if (window.scElig.load()) F.me = true; fApply(); }); return; }
     });
     FP.addEventListener("change", e => {
@@ -1703,9 +1737,9 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
       if (e.target.checked && !window.scElig.load()) { e.target.checked = false; window.scElig.form(() => { if (window.scElig.load()) { F.me = true; fApply(); } }); return; }
       F.me = e.target.checked; fApply();
     });
-    document.addEventListener("click", e => { if (!FP.hidden && !e.target.closest(".fpanel, #fBtn, dialog")) FP.hidden = true; });
-    document.addEventListener("keydown", e => { if (e.key === "Escape" && !document.querySelector("dialog[open]")) FP.hidden = true; });
-    qIn.addEventListener("focus", () => { FP.hidden = true; });
+    document.addEventListener("click", e => { if (isOpen(FP) && !e.target.closest(".fpanel, #fBtn, dialog")) pClose(FP); });
+    document.addEventListener("keydown", e => { if (e.key === "Escape" && !document.querySelector("dialog[open]")) pClose(FP); });
+    qIn.addEventListener("focus", () => pClose(FP));
     if (F.me) needElig(() => update());
     fPaintBtn();
   }

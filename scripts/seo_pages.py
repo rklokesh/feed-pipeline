@@ -65,6 +65,35 @@ PAGES = [
        "क्या रक्षा क्षेत्र में सिविलियन नौकरियाँ भी हैं?", "हाँ। रक्षा संगठन अपनी सूचनाओं से सिविलियन (क्लर्क, तकनीशियन, वैज्ञानिक) भी भर्ती करते हैं; इनमें शारीरिक परीक्षा नहीं होती जब तक सूचना में न लिखा हो।")]),
 ]
 
+import sys
+sys.path.insert(0, str(ROOT / "scripts"))
+from hubs import STATES, QUALS  # noqa: E402
+
+
+def state_page(slug, en_name, hi_name, boards):
+    b = ", ".join(x.upper() for x in boards)
+    return (f"{slug}-govt-jobs", (f"{en_name} Govt Jobs", f"{hi_name} सरकारी नौकरी"), lambda i, s=slug: i.get("st") == s,
+            (f"Every open {en_name} government job in one list: {b} and other {en_name} departments, with last dates, admit cards, results and official links.",
+             f"{hi_name} की हर खुली सरकारी भर्ती एक जगह: {b} और {hi_name} के अन्य विभाग, अंतिम तिथि, एडमिट कार्ड, रिज़ल्ट और आधिकारिक लिंक के साथ।"),
+            [(f"Do I need to be a resident of {en_name}?", f"Many {en_name} state jobs give reservation, and sometimes eligibility, only to residents (domicile). Check the domicile line in each notice. Central government jobs are open to every state.",
+              f"क्या {hi_name} का निवासी होना ज़रूरी है?", f"{hi_name} की कई राज्य भर्तियों में आरक्षण, और कभी-कभी पात्रता, सिर्फ़ निवासियों (डोमिसाइल) को मिलती है। हर सूचना में निवास वाली पंक्ति देखें। केंद्र सरकार की नौकरियाँ हर राज्य के लिए खुली हैं।"),
+             (f"Where do I apply for {en_name} government jobs?", "Only on the official website named in the notice. Each notice on SarkariChart links to it directly.",
+              f"{hi_name} की सरकारी नौकरियों के लिए आवेदन कहाँ करें?", "सिर्फ़ सूचना में दी गई आधिकारिक वेबसाइट पर। सरकारी चार्ट पर हर सूचना में उसका सीधा लिंक है।")])
+
+
+def qual_page(slug, tag, en_name, hi_name):
+    return (f"{slug}-govt-jobs", (f"{en_name} Govt Jobs", f"{hi_name} सरकारी नौकरी"), lambda i, t=tag: t in (i.get("q") or []),
+            (f"Open government jobs where the minimum qualification is {en_name}, from central and state boards, with last dates and official apply links.",
+             f"वे खुली सरकारी नौकरियाँ जिनमें न्यूनतम योग्यता {hi_name} है, केंद्र और राज्य बोर्डों से, अंतिम तिथि और आधिकारिक आवेदन लिंक के साथ।"),
+            [(f"Can someone with a higher qualification apply for {en_name} jobs?", "In most notices yes, unless the notice sets a maximum qualification. Check the eligibility section of each notice.",
+              f"क्या ज़्यादा योग्यता वाले {hi_name} वाली नौकरियों में आवेदन कर सकते हैं?", "ज़्यादातर सूचनाओं में हाँ, जब तक सूचना में अधिकतम योग्यता तय न हो। हर सूचना का पात्रता वाला भाग देखें।"),
+             ("How is the qualification on this page decided?", "From the minimum qualification printed in each official notice. If a notice has posts at different levels, it appears on each matching page.",
+              "इस पेज पर योग्यता कैसे तय होती है?", "हर आधिकारिक सूचना में छपी न्यूनतम योग्यता से। अगर एक सूचना में अलग-अलग स्तर के पद हैं, तो वह हर मिलते पेज पर दिखती है।")])
+
+
+STATE_PAGES = [state_page(s[0], s[1], s[2], s[3]) for s in STATES]
+QUAL_PAGES = [qual_page(q[0], q[1], q[2], q[3]) for q in QUALS]
+
 MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 MONH = ["जन", "फ़र", "मार्च", "अप्रै", "मई", "जून", "जुला", "अग", "सित", "अक्तू", "नव", "दिस"]
 TYPE_HI = {"Job": "नौकरी", "Admit card": "एडमिट कार्ड", "Result": "रिज़ल्ट", "Answer key": "आंसर की", "Update": "अपडेट", "Admission": "प्रवेश"}
@@ -108,7 +137,7 @@ def fd(iso, hi=False):
     return f"{d.day} {(MONH if hi else MON)[d.month - 1]}"
 
 
-def build(slug, name, match, intro, faq, all_items, links):
+def build(slug, name, match, intro, faq, all_items, links, links2=()):
     esc = html.escape
     today = dt.datetime.now(IST).date()
     mine = [i for i in all_items if i.get("page") and match(i)]
@@ -151,6 +180,12 @@ def build(slug, name, match, intro, faq, all_items, links):
         if s2 != slug:
             en[f"lk{k2}"], hi[f"lk{k2}"] = n2[0], n2[1]
             more += f'<a href="/{s2}/" data-t="lk{k2}">{esc(n2[0])}</a>'
+    more2 = ""
+    for k2, (s2, n2) in enumerate(links2):
+        if s2 != slug:
+            en[f"lz{k2}"], hi[f"lz{k2}"] = n2[0], n2[1]
+            more2 += f'<a href="/{s2}/" data-t="lz{k2}">{esc(n2[0])}</a>'
+    en["more2H"], hi["more2H"] = ("More pages like this", "ऐसे और पेज")
     url = f"{SITE_URL}/{slug}/"
     ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": en["h1"], "description": intro[0], "url": url,
            "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": n + 1, "url": SITE_URL + i["url"], "name": i["title"]} for n, i in enumerate(open_jobs[:20])]}},
@@ -163,7 +198,8 @@ def build(slug, name, match, intro, faq, all_items, links):
             f'      <section><h2 data-t="openH">{esc(en["openH"])}</h2><div class="jl">{rows_open}</div></section>\n'
             + (f'      <section><h2 data-t="otherH">{esc(en["otherH"])}</h2><div class="jl">{rows_other}</div></section>\n' if rows_other else "")
             + f'      <section><h2 data-t="faqH">{esc(en["faqH"])}</h2>{qa}</section>\n'
-            f'      <section><h2 data-t="moreH">{esc(en["moreH"])}</h2><p class="more">{more}</p><p><a class="all" href="/" data-t="allL">{esc(en["allL"])}</a></p></section>\n'
+            + (f'      <section><h2 data-t="more2H">{esc(en["more2H"])}</h2><p class="more">{more2}</p></section>\n' if more2 else "")
+            + f'      <section><h2 data-t="moreH">{esc(en["moreH"])}</h2><p class="more">{more}</p><p><a class="all" href="/" data-t="allL">{esc(en["allL"])}</a></p></section>\n'
             '    </article>\n'
             '    <script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>\n"
             '    <span id="state" hidden></span><span id="left" hidden></span><span id="views" hidden></span><a id="dlPdf" hidden></a>')
@@ -177,6 +213,8 @@ def build(slug, name, match, intro, faq, all_items, links):
            .replace("{{T_HI}}", "\n".join(f"      {k}: {js(v)}," for k, v in hi.items()))
            .replace("{{SLUG}}", slug).replace("{{OGIMG}}", f"{SITE_URL}/og.png").replace("{{URL}}", url)
            .replace("{{OGALT}}", esc(f"SarkariChart — {en['h1']}")).replace("{{LAST}}", "null"))
+    if not open_jobs and not other:   # nothing to show yet: keep it out of Google until it has notices (no thin pages)
+        out = re.sub(r'<meta name="robots" content="[^"]*">', '<meta name="robots" content="noindex, follow">', out, count=1)
     d = SITE / slug
     d.mkdir(parents=True, exist_ok=True)
     (d / "index.html").write_text(out, encoding="utf-8")
@@ -186,9 +224,11 @@ def build(slug, name, match, intro, faq, all_items, links):
 def main():
     all_items = items()
     links = [(p[0], p[1]) for p in PAGES]
-    for slug, name, match, intro, faq in PAGES:
-        n, m = build(slug, name, match, intro, faq, all_items, links)
-        print(f"seo: /{slug}/ {n} open, {m} updates")
+    groups = [(PAGES, ()), (STATE_PAGES, [(p[0], p[1]) for p in STATE_PAGES]), (QUAL_PAGES, [(p[0], p[1]) for p in QUAL_PAGES])]
+    for pages, links2 in groups:
+        for slug, name, match, intro, faq in pages:
+            n, m = build(slug, name, match, intro, faq, all_items, links, links2)
+            print(f"seo: /{slug}/ {n} open, {m} updates")
 
 
 if __name__ == "__main__":
