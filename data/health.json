@@ -11,7 +11,7 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 9,
-    "last_ok": "2026-11-08T07:27:07+00:00"
+    "last_ok": "2026-11-08T10:12:33+00:00"
   },
   "bpssc-notices": {
     "consecutive_failures": 0,
@@ -32,9 +32,9 @@
     "last_ok": "2026-11-08T07:20:46+00:00"
   },
   "bssc-home": {
-    "cert_repair": ": Max retries exceeded with url: /NoticeBoard.htm (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)')))",
-    "consecutive_failures": 128,
-    "last_error": ": Max retries exceeded with url: /NoticeBoard.htm (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)')))",
+    "cert_repair": ": Max retries exceeded with url: /NoticeBoard.htm (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)')))",
+    "consecutive_failures": 129,
+    "last_error": ": Max retries exceeded with url: /NoticeBoard.htm (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)')))",
     "last_links": 904,
     "last_ok": "2026-11-04T06:09:35+00:00"
   },
@@ -147,7 +147,7 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 1,
-    "last_ok": "2026-11-08T07:27:07+00:00"
+    "last_ok": "2026-11-08T10:12:33+00:00"
   },
   "itbp-recruitment": {
     "consecutive_failures": 86,
@@ -188,8 +188,9 @@
   "lic-careers": {
     "consecutive_failures": 0,
     "last_error": "",
-    "last_links": 67,
-    "last_ok": "2026-11-08T07:27:07+00:00"
+    "last_links": 0,
+    "last_ok": "2026-11-08T10:12:33+00:00",
+    "warning": "page loaded but no notice links found — layout may have changed"
   },
   "mpesb-home": {
     "cert_repair": "certificate has no AIA issuer link",
@@ -236,7 +237,7 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 841,
-    "last_ok": "2026-11-08T07:27:07+00:00"
+    "last_ok": "2026-11-08T10:12:33+00:00"
   },
   "psssb-group-c": {
     "consecutive_failures": 0,
@@ -297,13 +298,13 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 20,
-    "last_ok": "2026-11-08T07:27:07+00:00"
+    "last_ok": "2026-11-08T10:12:33+00:00"
   },
   "ssc-notice-board": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 11,
-    "last_ok": "2026-11-08T07:27:07+00:00"
+    "last_ok": "2026-11-08T10:12:33+00:00"
   },
   "tnpsc-home": {
     "consecutive_failures": 0,
@@ -345,7 +346,7 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 36,
-    "last_ok": "2026-11-08T07:27:07+00:00"
+    "last_ok": "2026-11-08T10:12:33+00:00"
   },
   "upsc-active-exams": {
     "consecutive_failures": 0,
