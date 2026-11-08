@@ -41,7 +41,7 @@ def sitemap(items):
     urls += [(f"{SITE_URL}/{p}/", "2026-10-28", "monthly", "0.3") for p in ("about", "contact", "privacy", "terms", "press")]
     urls += [(f"{SITE_URL}/notice/{i['slug']}/", i["lastmod"], "weekly", "0.8") for i in items]
     urls += [(f"{SITE_URL}/{d.name}/", today, "daily", "0.8") for d in sorted(SITE.iterdir())
-             if d.is_dir() and d.name.endswith("govt-jobs") and (d / "index.html").exists()]
+             if d.is_dir() and (d.name.endswith("govt-jobs") or d.name in ("railway-jobs", "police-jobs", "bank-jobs", "teacher-jobs", "defence-jobs")) and (d / "index.html").exists()]
     exam_dir = SITE / "exam"
     if exam_dir.exists():
         urls.append((f"{SITE_URL}/exam/", today, "daily", "0.7"))

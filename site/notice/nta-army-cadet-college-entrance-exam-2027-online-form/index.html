@@ -650,6 +650,11 @@ html.nc .note { justify-items: start; text-align: left; }
   html.nc .kv.glance .h, html.nc .kv.glance .r { padding-left: 20px !important; padding-right: 20px !important; }
   html.nc .kv.rel a.r { min-height: 0; }
 }
+
+/* links turn the logo red on hover (also the notice titles in the list) */
+a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .list li.lr.sel .t { color: #E8312F; }
+:root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t { color: #FF6B66; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t { color: #FF6B66; } }
 </style>
 <script>/* Notice A/B: version B (calm reading layout) is the default; ?classic shows A (boxed). NB_SPLIT=true at launch = 50/50 per browser, with counts. */
 (function(){var NB_SPLIT=false,h=document.documentElement,q=location.search,v="b",f=1;
@@ -917,7 +922,7 @@ if(/[?&]docs(&|=|$)/.test(q)){v="b";f=1;h.classList.add("nc")}if(v==="b")h.class
   <footer>
     <p class="pref"><a href="https://www.google.com/preferences/source?q=sarkarichart.com" target="_blank" rel="noopener"><span data-t="prefSrc">Add SarkariChart as a preferred source on Google</span></a><img class="hand" src="/hand.webp" width="24" height="24" alt="" aria-hidden="true" loading="lazy" decoding="async"></p>
     <p class="g" data-t="disclaimer">SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.</p>
-    <p class="browse g"><span><a href="/up-govt-jobs/" data-t="qlUp">UP Jobs</a> ·</span> <span><a href="/bihar-govt-jobs/" data-t="qlBihar">Bihar Jobs</a> ·</span> <span><a href="/rajasthan-govt-jobs/" data-t="qlRaj">Rajasthan Jobs</a> ·</span> <span><a href="/mp-govt-jobs/" data-t="qlMp">MP Jobs</a> ·</span> <span><a href="/10th-pass-govt-jobs/" data-t="ql10">10th Pass</a> ·</span> <span><a href="/12th-pass-govt-jobs/" data-t="ql12">12th Pass</a> ·</span> <span><a href="/graduate-govt-jobs/" data-t="qlGrad">Graduate</a> ·</span> <span><a href="/?cat=admit-cards" data-t="qlAdmit">Admit Card</a> ·</span> <span><a href="/?cat=results" data-t="qlRes">Result</a> ·</span> <span><a href="/?cat=answer-keys" data-t="qlKey">Answer Key</a></span></p>
+    <p class="browse g"><span><a href="/central-govt-jobs/" data-t="qlCen">Central Govt Jobs</a> ·</span> <span><a href="/railway-jobs/" data-t="qlRail">Railway</a> ·</span> <span><a href="/police-jobs/" data-t="qlPol">Police</a> ·</span> <span><a href="/bank-jobs/" data-t="qlBank">Bank</a> ·</span> <span><a href="/teacher-jobs/" data-t="qlTeach">Teacher</a> ·</span> <span><a href="/defence-jobs/" data-t="qlDef">Defence</a> ·</span> <span><a href="/up-govt-jobs/" data-t="qlUp">UP Jobs</a> ·</span> <span><a href="/bihar-govt-jobs/" data-t="qlBihar">Bihar Jobs</a> ·</span> <span><a href="/rajasthan-govt-jobs/" data-t="qlRaj">Rajasthan Jobs</a> ·</span> <span><a href="/mp-govt-jobs/" data-t="qlMp">MP Jobs</a> ·</span> <span><a href="/10th-pass-govt-jobs/" data-t="ql10">10th Pass</a> ·</span> <span><a href="/12th-pass-govt-jobs/" data-t="ql12">12th Pass</a> ·</span> <span><a href="/graduate-govt-jobs/" data-t="qlGrad">Graduate</a> ·</span> <span><a href="/?cat=admit-cards" data-t="qlAdmit">Admit Card</a> ·</span> <span><a href="/?cat=results" data-t="qlRes">Result</a> ·</span> <span><a href="/?cat=answer-keys" data-t="qlKey">Answer Key</a></span></p>
     <p><a href="/about/" data-t="about">About</a> · <a href="/report/" data-t="report">Report a mistake</a> · <a href="/privacy/" data-t="privacy">Privacy</a> · <a href="/terms/" data-t="terms">Terms</a> · <a href="/contact/" data-t="contact">Contact</a></p>
   </footer>
 </div>
@@ -931,7 +936,7 @@ if(/[?&]docs(&|=|$)/.test(q)){v="b";f=1;h.classList.add("nc")}if(v==="b")h.class
       daysLeft: d => `${d} day${d === 1 ? "" : "s"} left`, locale: "en-IN", views: n => `${n.toLocaleString("en-IN")} views`,
       reportPage: "Report a mistake on this page", copyLink: "Copy link", copied: "Link copied ✓", dlPdf: "Download this page as PDF", share: "Share on WhatsApp",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
-      report: "Report a mistake", privacy: "Privacy", qlUp: "UP Jobs", qlBihar: "Bihar Jobs", qlRaj: "Rajasthan Jobs", qlMp: "MP Jobs", ql10: "10th Pass", ql12: "12th Pass", qlGrad: "Graduate", qlAdmit: "Admit Card", qlRes: "Result", qlKey: "Answer Key", terms: "Terms", contact: "Contact", exams: "Exams", browse: "Jobs by state", switchTo: "हिंदी", switchLang: "hi", toDark: "Switch to dark mode", toLight: "Switch to light mode",
+      report: "Report a mistake", privacy: "Privacy", qlCen: "Central Govt Jobs", qlRail: "Railway", qlPol: "Police", qlBank: "Bank", qlTeach: "Teacher", qlDef: "Defence", qlUp: "UP Jobs", qlBihar: "Bihar Jobs", qlRaj: "Rajasthan Jobs", qlMp: "MP Jobs", ql10: "10th Pass", ql12: "12th Pass", qlGrad: "Graduate", qlAdmit: "Admit Card", qlRes: "Result", qlKey: "Answer Key", terms: "Terms", contact: "Contact", exams: "Exams", browse: "Jobs by state", switchTo: "हिंदी", switchLang: "hi", toDark: "Switch to dark mode", toLight: "Switch to light mode",
       prefSrc: "Add SarkariChart as a preferred source on Google",
       title: "NTA Army Cadet College Entrance Exam 2027 – Online Form | एनटीए आर्मी कैडेट कॉलेज प्रवेश परीक्षा 2027 – ऑनलाइन फॉर्म",
       h1: "NTA Army Cadet College Entrance Exam 2027 – Online Form",
@@ -1069,7 +1074,7 @@ if(/[?&]docs(&|=|$)/.test(q)){v="b";f=1;h.classList.add("nc")}if(v==="b")h.class
       daysLeft: d => `${d} दिन बाकी`, locale: "hi-IN", views: n => `${n.toLocaleString("en-IN")} बार देखा गया`,
       reportPage: "इस पेज पर गलती बताएँ", copyLink: "लिंक कॉपी करें", copied: "लिंक कॉपी हो गया ✓", dlPdf: "यह पेज पीडीएफ में डाउनलोड करें", share: "व्हाट्सऐप पर भेजें",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
-      report: "गलती बताएँ", privacy: "गोपनीयता", qlUp: "यूपी नौकरी", qlBihar: "बिहार नौकरी", qlRaj: "राजस्थान नौकरी", qlMp: "एमपी नौकरी", ql10: "10वीं पास", ql12: "12वीं पास", qlGrad: "स्नातक", qlAdmit: "एडमिट कार्ड", qlRes: "रिज़ल्ट", qlKey: "आंसर की", terms: "नियम", contact: "संपर्क", exams: "परीक्षाएँ", browse: "राज्य अनुसार नौकरी", switchTo: "अंग्रेज़ी", switchLang: "en", toDark: "गहरा रंग चुनें", toLight: "हल्का रंग चुनें",
+      report: "गलती बताएँ", privacy: "गोपनीयता", qlCen: "केंद्र सरकार नौकरी", qlRail: "रेलवे", qlPol: "पुलिस", qlBank: "बैंक", qlTeach: "शिक्षक", qlDef: "रक्षा", qlUp: "यूपी नौकरी", qlBihar: "बिहार नौकरी", qlRaj: "राजस्थान नौकरी", qlMp: "एमपी नौकरी", ql10: "10वीं पास", ql12: "12वीं पास", qlGrad: "स्नातक", qlAdmit: "एडमिट कार्ड", qlRes: "रिज़ल्ट", qlKey: "आंसर की", terms: "नियम", contact: "संपर्क", exams: "परीक्षाएँ", browse: "राज्य अनुसार नौकरी", switchTo: "अंग्रेज़ी", switchLang: "en", toDark: "गहरा रंग चुनें", toLight: "हल्का रंग चुनें",
       prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ",
       title: "एनटीए आर्मी कैडेट कॉलेज प्रवेश परीक्षा 2027 – ऑनलाइन फॉर्म",
       h1: "एनटीए आर्मी कैडेट कॉलेज प्रवेश परीक्षा 2027 – ऑनलाइन फॉर्म",

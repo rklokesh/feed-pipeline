@@ -215,11 +215,12 @@ def build():
         soon = sum(1 for x in lasts if 0 <= (_dt.date.fromisoformat(x) - _d).days <= 7)
         hero = ('    <section class="hero" aria-label="Search">\n'
                 f'      <div class="hero-bg" aria-hidden="true">{words}</div>\n'
-                '      <h2 class="hero-h"><span class="x-en" aria-label="Find your next sarkari job before the last date">'
-                '<span aria-hidden="true">Find your next <span class="rx" data-alt="सरकारी">sarkari</span> <span class="rx" data-alt="नौकरी">job</span> <br>'
-                'before the <span class="rx" data-alt="अंतिम तिथि">last date</span></span></span>'
-                '<span class="x-hi" lang="hi" aria-label="अंतिम तिथि से पहले अपनी अगली सरकारी नौकरी पाएँ"><span aria-hidden="true">'
-                '<span class="rx" data-alt="last date">अंतिम तिथि</span> से पहले <br>अपनी अगली <span class="rx" data-alt="sarkari">सरकारी</span> <span class="rx" data-alt="job">नौकरी</span> पाएँ</span></span></h2>\n'
+                '      <h2 class="hero-h"><span class="x-en" aria-label="Govt jobs, admit cards and results, the moment they are out">'
+                '<span aria-hidden="true">Govt <span class="rx" data-alt="नौकरी">jobs</span>, admit cards and <span class="rx" data-alt="रिज़ल्ट">results</span>, <br>'
+                'the moment they\'re out</span></span>'
+                '<span class="x-hi" lang="hi" aria-label="सरकारी नौकरी, एडमिट कार्ड और रिज़ल्ट, जारी होते ही"><span aria-hidden="true">'
+                'सरकारी <span class="rx" data-alt="jobs">नौकरी</span>, एडमिट कार्ड और <span class="rx" data-alt="results">रिज़ल्ट</span>, <br>'
+                'जारी होते ही</span></span></h2>\n'
                 + search.replace("    <label", "      <label", 1) +
                 f'      <p class="hero-sub g" id="heroSub" data-ts="{latest}"><span class="x-en">Free · No sign-up · English &amp; हिंदी</span>'
                 f'<span class="x-hi" lang="hi">मुफ़्त · बिना साइन-अप · हिंदी और English</span></p>\n'
@@ -261,7 +262,8 @@ html.hv .hero .search { position: relative; max-width: 560px; margin: 0 auto !im
 html.hv .hero .search input { background: var(--page) !important; border: 1px solid color-mix(in srgb, var(--ink) 28%, transparent) !important; border-radius: 10px !important;
   padding: 13px 92px 13px 44px !important; box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px -12px rgba(0,0,0,.18); }
 html.hv .hero .search input:focus { border-color: var(--ink) !important; }
-html.hv .hero .sicon { left: 14px !important; } html.hv .hero .ph { left: 44px !important; right: 92px !important; } html.hv .hero .sx { right: 14px !important; }
+html.hv .hero .sicon { left: 14px !important; } html.hv .hero .ph { left: 44px !important; right: 200px !important; } html.hv .hero .sx { right: 112px !important; } html.hv .hero .sf { right: 14px; } html.hv .hero .search input { padding-right: 200px !important; }
+@media (max-width: 640px) { html.hv .hero .sx { right: 58px !important; } html.hv .hero .ph { right: 150px !important; } html.hv .hero .search input { padding-right: 150px !important; } }
 html.hv .hero-sub { position: relative; margin: 16px 0 0; font-size: .875rem; }
 html.hv .tabrow { margin-top: 0; }
 @media (max-width: 640px) { html.hv .hero { padding: 52px 16px 44px; margin-bottom: 18px; } html.hv .hero-h { margin-bottom: 22px; } html.hv .hero-h br { display: none; } html.hv .hero-bg { font-size: 10px; line-height: 20px; word-spacing: 10px; } html.hv .hero-bg span { color: color-mix(in srgb, var(--grey) 22%, transparent); } }

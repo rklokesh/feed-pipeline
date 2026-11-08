@@ -132,6 +132,11 @@ footer .pref .hand { display: inline-block; width: 24px; height: 24px; margin-le
 
 .top .logo img { -webkit-user-drag: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
 .search, .search input { cursor: text; }
+
+/* links turn the logo red on hover (also the notice titles in the list) */
+a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .list li.lr.sel .t { color: #E8312F; }
+:root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t { color: #FF6B66; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t { color: #FF6B66; } }
 </style>
 <script>try{var m=localStorage.getItem("sc-theme");if(m==="dark"||m==="light")document.documentElement.setAttribute("data-theme",m)}catch(e){}</script>
 </head>

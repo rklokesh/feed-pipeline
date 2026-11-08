@@ -183,7 +183,8 @@ footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-al
 .sx { position: absolute; right: 0; top: 50%; transform: translateY(-50%); all: unset; position: absolute; right: 0; top: 50%; transform: translateY(-50%); cursor: pointer; color: var(--grey); }
 .sx { color: #1A5FB4; font-weight: 500; }   /* Clear: a blue text link, easy to spot */
 .sx:hover { color: #144a8c; }
-.sx .kc { color: var(--grey); font-weight: 400; }
+.sx .kc { color: var(--grey); font-weight: 400; display: inline-flex; align-items: center; height: 20px; box-sizing: border-box; padding: 0 5px; border-bottom-width: 1px; box-shadow: 0 1px 0 var(--line); }
+.sx > span { display: inline-flex; align-items: center; height: 20px; line-height: 1; }
 :root[data-theme="dark"] .sx { color: #8AB4F8; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sx { color: #8AB4F8; } }
 .sx { display: inline-flex; align-items: center; gap: 7px; }
@@ -626,6 +627,11 @@ main > .adslot { margin: 0 !important; }   /* inside an article the page's own s
 :root[data-theme="dark"] .f-link { color: #8AB4F8; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .f-link { color: #8AB4F8; } }
 @media (max-width: 640px) { .search .sf .fl { display: none; } .search:has(.sf) input { padding-right: 140px !important; } .search:has(.sf) .sx { right: 52px !important; } .search:has(.sf) .ph { right: 140px !important; } .kc { display: none; } }
+
+/* links turn the logo red on hover (also the notice titles in the list) */
+a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, .list li.lr:hover .t, .list li.lr.sel .t { color: #E8312F; }
+:root[data-theme="dark"] a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root[data-theme="dark"] .list li.lr:hover .t { color: #FF6B66; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a:not(.btn):not(.sg-chip):not(.logo):not(.house):hover, :root:not([data-theme="light"]) .list li.lr:hover .t { color: #FF6B66; } }
 </style>
 <script>document.documentElement.classList.add("v2");try{localStorage.removeItem("sc-v2")}catch(e){}</script>
 <script>/* Desktop A/B. Version A (original desktop) is the default everywhere; version B (phone-style chrome) lives at /v2/ (or ?new).
@@ -688,7 +694,7 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
   <footer>
     <p class="pref"><a href="https://www.google.com/preferences/source?q=sarkarichart.com" target="_blank" rel="noopener"><span data-t="prefSrc">Add SarkariChart as a preferred source on Google</span></a><img class="hand" src="/hand.webp" width="24" height="24" alt="" aria-hidden="true" loading="lazy" decoding="async"></p>
     <p class="g" data-t="disclaimer">SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.</p>
-    <p class="browse g"><span><a href="/up-govt-jobs/" data-t="qlUp">UP Jobs</a> ·</span> <span><a href="/bihar-govt-jobs/" data-t="qlBihar">Bihar Jobs</a> ·</span> <span><a href="/rajasthan-govt-jobs/" data-t="qlRaj">Rajasthan Jobs</a> ·</span> <span><a href="/mp-govt-jobs/" data-t="qlMp">MP Jobs</a> ·</span> <span><a href="/10th-pass-govt-jobs/" data-t="ql10">10th Pass</a> ·</span> <span><a href="/12th-pass-govt-jobs/" data-t="ql12">12th Pass</a> ·</span> <span><a href="/graduate-govt-jobs/" data-t="qlGrad">Graduate</a> ·</span> <span><a href="/?cat=admit-cards" data-t="qlAdmit">Admit Card</a> ·</span> <span><a href="/?cat=results" data-t="qlRes">Result</a> ·</span> <span><a href="/?cat=answer-keys" data-t="qlKey">Answer Key</a></span></p>
+    <p class="browse g"><span><a href="/central-govt-jobs/" data-t="qlCen">Central Govt Jobs</a> ·</span> <span><a href="/railway-jobs/" data-t="qlRail">Railway</a> ·</span> <span><a href="/police-jobs/" data-t="qlPol">Police</a> ·</span> <span><a href="/bank-jobs/" data-t="qlBank">Bank</a> ·</span> <span><a href="/teacher-jobs/" data-t="qlTeach">Teacher</a> ·</span> <span><a href="/defence-jobs/" data-t="qlDef">Defence</a> ·</span> <span><a href="/up-govt-jobs/" data-t="qlUp">UP Jobs</a> ·</span> <span><a href="/bihar-govt-jobs/" data-t="qlBihar">Bihar Jobs</a> ·</span> <span><a href="/rajasthan-govt-jobs/" data-t="qlRaj">Rajasthan Jobs</a> ·</span> <span><a href="/mp-govt-jobs/" data-t="qlMp">MP Jobs</a> ·</span> <span><a href="/10th-pass-govt-jobs/" data-t="ql10">10th Pass</a> ·</span> <span><a href="/12th-pass-govt-jobs/" data-t="ql12">12th Pass</a> ·</span> <span><a href="/graduate-govt-jobs/" data-t="qlGrad">Graduate</a> ·</span> <span><a href="/?cat=admit-cards" data-t="qlAdmit">Admit Card</a> ·</span> <span><a href="/?cat=results" data-t="qlRes">Result</a> ·</span> <span><a href="/?cat=answer-keys" data-t="qlKey">Answer Key</a></span></p>
     <p><a href="/about/" data-t="about">About</a> · <a href="/report/" data-t="report">Report a mistake</a> · <a href="/privacy/" data-t="privacy">Privacy</a> · <a href="/terms/" data-t="terms">Terms</a> · <a href="/contact/" data-t="contact">Contact</a></p>
   </footer>
 </div>
@@ -703,7 +709,7 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
       searchLabel: "Search notices", showing: (a, b) => `Showing ${a} of ${b}`, showMore: n => `Show ${n} more`, phLead: "Search : ", searchPh: "Search : SSC, UGC NET, 12th pass, Bihar…", clear: "Clear",
       hPosted: "Posted", hNotice: "Notice", hOrg: "Organisation", hType: "Type", hLast: "Last date", hPostedR: "Posted", nil: "NIL", hPdf: "PDF",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
-      report: "Report a mistake", privacy: "Privacy", qlUp: "UP Jobs", qlBihar: "Bihar Jobs", qlRaj: "Rajasthan Jobs", qlMp: "MP Jobs", ql10: "10th Pass", ql12: "12th Pass", qlGrad: "Graduate", qlAdmit: "Admit Card", qlRes: "Result", qlKey: "Answer Key", terms: "Terms", contact: "Contact", switchTo: "हिंदी", toDark: "Switch to dark mode", toLight: "Switch to light mode", switchLang: "hi",
+      report: "Report a mistake", privacy: "Privacy", qlCen: "Central Govt Jobs", qlRail: "Railway", qlPol: "Police", qlBank: "Bank", qlTeach: "Teacher", qlDef: "Defence", qlUp: "UP Jobs", qlBihar: "Bihar Jobs", qlRaj: "Rajasthan Jobs", qlMp: "MP Jobs", ql10: "10th Pass", ql12: "12th Pass", qlGrad: "Graduate", qlAdmit: "Admit Card", qlRes: "Result", qlKey: "Answer Key", terms: "Terms", contact: "Contact", switchTo: "हिंदी", toDark: "Switch to dark mode", toLight: "Switch to light mode", switchLang: "hi",
       Job: "Job", Result: "Result", "Answer key": "Answer key", "Admit card": "Admit card", Update: "Update", Admission: "Admission",
       available: "Available", newBadge: "New", dToday: "Today", dYday: "Yesterday", dEarlier: "Earlier", sinceLast: n => `${n} new since your last visit`, inNotice: "In notice", lastDay: "Last day", pdfAria: "Download this notice as PDF",
       daysLeft: d => `${d} day${d === 1 ? "" : "s"} left`, daysShort: d => `${d} day${d === 1 ? "" : "s"}`,
@@ -717,7 +723,7 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
       searchLabel: "सूचनाएँ खोजें", showing: (a, b) => `${b} में से ${a} दिख रहीं`, showMore: n => `${n} और दिखाएँ`, phLead: "खोजें : ", searchPh: "खोजें : एसएससी, यूजीसी नेट, 12वीं पास, बिहार…", clear: "हटाएँ",
       hPosted: "जारी", hNotice: "सूचना", hOrg: "संस्था", hType: "प्रकार", hLast: "अंतिम तिथि", hPostedR: "जारी", nil: "निरंक", hPdf: "पीडीएफ",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",
-      report: "गलती बताएँ", privacy: "गोपनीयता", qlUp: "यूपी नौकरी", qlBihar: "बिहार नौकरी", qlRaj: "राजस्थान नौकरी", qlMp: "एमपी नौकरी", ql10: "10वीं पास", ql12: "12वीं पास", qlGrad: "स्नातक", qlAdmit: "एडमिट कार्ड", qlRes: "रिज़ल्ट", qlKey: "आंसर की", terms: "नियम", contact: "संपर्क", switchTo: "अंग्रेज़ी", toDark: "गहरा रंग चुनें", toLight: "हल्का रंग चुनें", switchLang: "en",
+      report: "गलती बताएँ", privacy: "गोपनीयता", qlCen: "केंद्र सरकार नौकरी", qlRail: "रेलवे", qlPol: "पुलिस", qlBank: "बैंक", qlTeach: "शिक्षक", qlDef: "रक्षा", qlUp: "यूपी नौकरी", qlBihar: "बिहार नौकरी", qlRaj: "राजस्थान नौकरी", qlMp: "एमपी नौकरी", ql10: "10वीं पास", ql12: "12वीं पास", qlGrad: "स्नातक", qlAdmit: "एडमिट कार्ड", qlRes: "रिज़ल्ट", qlKey: "आंसर की", terms: "नियम", contact: "संपर्क", switchTo: "अंग्रेज़ी", toDark: "गहरा रंग चुनें", toLight: "हल्का रंग चुनें", switchLang: "en",
       Job: "नौकरी", Result: "रिज़ल्ट", "Answer key": "आंसर की", "Admit card": "एडमिट कार्ड", Update: "अपडेट", Admission: "प्रवेश",
       available: "उपलब्ध", newBadge: "नया", dToday: "आज", dYday: "कल", dEarlier: "पहले", sinceLast: n => `पिछली बार के बाद ${n} नई सूचनाएँ`, inNotice: "सूचना में देखें", lastDay: "आज अंतिम दिन", pdfAria: "यह सूचना पीडीएफ में डाउनलोड करें",
       daysLeft: d => `${d} दिन बाकी`, daysShort: d => `${d} दिन`,
