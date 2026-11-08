@@ -179,19 +179,17 @@ def build():
         h = h.replace('document.title = t("title");', f'document.title = lang === "hi" ? {json.dumps(hi_title, ensure_ascii=False)} : {json.dumps(title)};', 1)
         h = h.replace("</head>", f"<script>window.SC_PRESET = {json.dumps(preset)};</script>\n</head>", 1)
         h = h.replace("  <main>\n", f'  <main>\n    <h1 class="hubh"><span class="x-en">{html.escape(en)} govt jobs {YEAR}</span><span class="x-hi" lang="hi">{html.escape(hi)} सरकारी नौकरी {YEAR}</span></h1>\n', 1)
-        d = SITE / s_
-        d.mkdir(parents=True, exist_ok=True)
-        (d / "index.html").write_text(h, encoding="utf-8")
         hubs.append({"kind": kind, "slug": s_, "en": en, "hi": hi, "n": 0, "words": words})
-    # Desktop A/B: version B (phone-style chrome) at /v2/ - same homepage, never indexed, canonical to /.
-    v2 = re.sub(r'<link rel="canonical" href="[^"]*">', f'<link rel="canonical" href="{SITE_URL}/">', home, count=1)
-    v2 = re.sub(r'<meta name="robots" content="[^"]*">', '<meta name="robots" content="noindex, follow">', v2, count=1)
-    (SITE / "v2").mkdir(exist_ok=True)
-    (SITE / "v2" / "index.html").write_text(v2, encoding="utf-8")
-    # Homepage A/B, version "hero" at /b/ (never indexed, canonical to /): a calm search-first top - a big line, one search box,
+    # The homepage top (Nov 2026): a calm search-first hero - a big line, one search box,
     # a faint background of board names - then the same tabs and list. The live homepage is not touched.
-    hv = re.sub(r'<link rel="canonical" href="[^"]*">', f'<link rel="canonical" href="{SITE_URL}/">', home, count=1)
-    hv = re.sub(r'<meta name="robots" content="[^"]*">', '<meta name="robots" content="noindex, follow">', hv, count=1)
+    hv = home
+    old = re.search(r'    <section class="hero".*?</section>\n', hv, flags=re.S)
+    if old:   # put the search line back where it lives on a plain page, drop the old hero, then build it fresh
+        lab = re.search(r'      <label class="search" for="q">.*?</label>\n', old.group(0), flags=re.S)
+        hv = hv.replace(old.group(0), "", 1)
+        if lab:
+            hv = hv.replace('    <p class="preset g" id="preset"', lab.group(0).replace("      <label", "    <label", 1) + '    <p class="preset g" id="preset"', 1)
+    hv = re.sub(r'<!--HERO:START-->.*?<!--HERO:END-->\n?', "", hv, flags=re.S)
     m = re.search(r'    <label class="search" for="q">.*?</label>\n', hv, flags=re.S)
     if m and "  <main>\n" in hv:
         search = m.group(0)
@@ -226,7 +224,9 @@ def build():
         css = """<style>
 html.hv body { overflow-x: clip; }
 html.hv .hero { position: relative; margin: 0 calc(50% - 50vw) 30px; padding: 88px 16px 72px; text-align: center; }
-html.hv .hero-bg { position: absolute; inset: 0; padding: 10px; overflow: hidden; contain: strict; pointer-events: none; user-select: none; -webkit-user-select: none; text-align: left;
+html.hv .hero > :not(.hero-bg) { position: relative; z-index: 1; }
+html.hv .top { position: relative; z-index: 2; }
+html.hv .hero-bg { position: absolute; inset: -110px 0 -70px; padding: 10px; overflow: hidden; contain: strict; pointer-events: none; user-select: none; -webkit-user-select: none; text-align: left;
   font: 12px/24px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: .02em; word-spacing: 16px;
   /* one soft fade: clear in the middle, easing out to every edge (no hard top, bottom or side) */
   -webkit-mask-image: radial-gradient(ellipse 62% 58% at 50% 50%, transparent 0, transparent 40%, rgba(0,0,0,.25) 58%, rgba(0,0,0,.7) 78%, #000 100%),
@@ -263,7 +263,7 @@ html.hv .hero .sicon { left: 14px !important; } html.hv .hero .ph { left: 44px !
 @media (max-width: 640px) { html.hv .hero .sx { right: 54px !important; } html.hv .hero .ph { right: 120px !important; } html.hv .hero .search input { padding-right: 120px !important; } }
 html.hv .hero-sub { position: relative; margin: 16px 0 0; font-size: .875rem; }
 html.hv .tabrow { margin-top: 0; }
-@media (max-width: 640px) { html.hv .hero { padding: 52px 16px 44px; margin-bottom: 18px; } html.hv .hero-h { margin-bottom: 22px; } html.hv .hero-h br { display: none; } html.hv .hero-bg { font-size: 10px; line-height: 22px; word-spacing: 12px;
+@media (max-width: 640px) { html.hv .hero { padding: 52px 16px 44px; margin-bottom: 18px; } html.hv .hero-h { margin-bottom: 22px; } html.hv .hero-h br { display: none; } html.hv .hero-bg { top: -80px; bottom: -40px; font-size: 10px; line-height: 22px; word-spacing: 12px;
     -webkit-mask-image: radial-gradient(ellipse 70% 62% at 50% 50%, transparent 0, transparent 45%, rgba(0,0,0,.5) 72%, #000 100%); mask-image: radial-gradient(ellipse 70% 62% at 50% 50%, transparent 0, transparent 45%, rgba(0,0,0,.5) 72%, #000 100%);
     -webkit-mask-composite: source-over; mask-composite: add; } html.hv .hero-bg span { color: color-mix(in srgb, var(--grey) 22%, transparent); } }
 </style>
@@ -308,37 +308,11 @@ var ws=bg.children,vis=true,phone=matchMedia("(max-width: 640px)").matches;if("I
 setInterval(function(){if(!vis||document.hidden)return;var n=phone?1+(Math.random()<.35):2+(Math.random()*3|0);for(var k=0;k<n;k++){var w=ws[Math.random()*ws.length|0],c=Math.random()<.7?"on":"dim";
 w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},250+Math.random()*1100)})(w,c)}},phone?300:150)});</script>
 """
-        hv = hv.replace("</head>", css + "</head>", 1)
-    (SITE / "b").mkdir(exist_ok=True)
-    (SITE / "b" / "index.html").write_text(hv, encoding="utf-8")
-    # Homepage test version "C" at /c/: the same heading + search, but plain and left-aligned, sitting on top of the
-    # classic list (no background words, no big hero block). Never indexed, canonical to /.
-    hc = hv.replace('<script>document.documentElement.classList.add("hv")</script>',
-                    '<script>document.documentElement.classList.add("hv","hc")</script>', 1)
-    hc = hc.replace("</head>", """<style>
-/* C: the big logo header is replaced by the heading itself; a slim top row keeps a small logo (home) and the language/theme links */
-html.hc .sheet { padding-top: 10px; }
-html.hc .top, html.hc .top:has(> .g), html.hc.bar-compact .top:has(> .g) { display: flex !important; align-items: center; justify-content: space-between; gap: 16px; margin: 0 0 6px !important; padding: 6px 0 !important;
-  position: static !important; background: none !important; border: 0 !important; -webkit-backdrop-filter: none !important; backdrop-filter: none !important; }
-html.hc .top > .g { display: none !important; }
-html.hc .top .logo { order: 0; }
-html.hc .top .logo img, html.hc .top .logo .mark, html.hc .top:has(> .g) .logo img, html.hc .top:has(> .g) .logo .mark,
-html.hc.bar-compact .top:has(> .g) .logo img, html.hc.bar-compact .top:has(> .g) .logo .mark { width: 44px !important; height: 44px !important; }
-html.hc .top .nav-r { order: 1; position: static !important; }
-html.hc .top .nav-r a[href="/about/"] { position: static !important; transform: none !important; display: inline !important; }
-html.hc .hero { margin: 0 0 20px; padding: 18px 0 0; text-align: left; overflow: visible; }
-html.hc .hero-bg { display: none !important; }
-html.hc .hero-h { margin: 0 0 18px; max-width: 22em; text-align: left; font-size: clamp(1.75rem, 1.05rem + 2.6vw, 2.9rem); line-height: 1.1; }
-html.hc .hero .search { max-width: none; margin: 0 !important; }
-html.hc .hero-sub { text-align: left; margin-top: 12px; }
-@media (max-width: 640px) { html.hc .hero { padding-top: 10px; margin-bottom: 14px; } html.hc .hero-h br { display: none; } html.hc .hero-sub { font-size: .8125rem; }
-  html.hc .top .logo img, html.hc .top .logo .mark, html.hc .top:has(> .g) .logo img, html.hc .top:has(> .g) .logo .mark { width: 40px !important; height: 40px !important; } }
-</style>
-</head>""", 1)
-    (SITE / "c").mkdir(exist_ok=True)
-    (SITE / "c" / "index.html").write_text(hc, encoding="utf-8")
+        hv = hv.replace("</head>", "<!--HERO:START-->" + css + "<!--HERO:END-->\n</head>", 1)
+    if hv != home:
+        (SITE / "index.html").write_text(hv, encoding="utf-8")
     homepage_hints(hubs)
-    print(f"hubs: {len(hubs)} browse pages (homepage with a filter set)")
+    print(f"hubs: {len(hubs)} search hints; homepage hero {'added' if hv != home else 'in place'}")
 
 
 def homepage_hints(hubs):
