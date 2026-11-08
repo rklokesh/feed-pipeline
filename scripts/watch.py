@@ -15,6 +15,7 @@ State lives in data/:
 from __future__ import annotations
 
 import argparse
+import base64
 import hashlib
 import json
 import os
@@ -234,6 +235,9 @@ def browser_download(board: str, url: str) -> bytes | None:
 
 def embedded_pdf(data: bytes, base: str) -> str | None:
     """If a 'PDF' link returned an HTML viewer page, find the real PDF inside it."""
+    m = re.search(rb"data:application/pdf;base64,([A-Za-z0-9+/=]+)", data)   # CISF pastes the whole PDF into the page
+    if m:
+        return "data:application/pdf;base64," + m.group(1).decode()
     try:
         soup = BeautifulSoup(data[:500_000].decode("utf-8", "replace"), "html.parser")
     except Exception:  # noqa: BLE001
@@ -301,7 +305,10 @@ def process(src: dict, item: dict, ai_budget: list[int], hashes: dict) -> dict:
                 data = download(own[0], referer=item["url"])
         if not data.startswith(b"%PDF"):
             inner = embedded_pdf(data, item["url"])  # e.g. UPPSC's Open_PDF_DB viewer page
-            if inner:
+            if inner and inner.startswith("data:"):
+                rec["pdf"]["via"] = "inline"
+                data = base64.b64decode(inner.split(",", 1)[1])
+            elif inner:
                 rec["pdf"]["via"] = inner
                 data = download(inner)
         rec["pdf"]["sha256"] = hashlib.sha256(data).hexdigest()

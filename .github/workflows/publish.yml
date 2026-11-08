@@ -45,7 +45,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/pages.py ${{ inputs.rebuild_pages && '--all' || '' }}
+        run: python scripts/dedupe.py && python scripts/pages.py ${{ inputs.rebuild_pages && '--all' || '' }}
       - name: Rebuild homepage list
         run: python scripts/exams.py build && python scripts/publish.py build && python scripts/hubs.py build && python scripts/seo_pages.py && python scripts/report_page.py && python scripts/info_pages.py && python scripts/seo_files.py && python scripts/indexnow.py
       - name: Save
