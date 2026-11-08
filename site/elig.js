@@ -38,6 +38,21 @@
     .eligdlg input[type=date] { cursor: text; }
     .eligdlg input[type=date]::-webkit-calendar-picker-indicator { cursor: pointer; }
     .eligdlg select, .eligdlg label.ck, .eligdlg input[type=checkbox] { cursor: pointer; }
+    .eligdlg .dob { display: grid; grid-template-columns: 1fr 1.5fr 1.2fr; gap: 8px; }
+    .eligdlg .dob select { width: 100%; min-width: 0; padding: 10px 8px; }
+    .eligdlg fieldset { all: unset; display: grid; gap: 4px; margin-bottom: 14px; }
+    .eligdlg legend { color: var(--grey); padding: 0; margin-bottom: 4px; }
+    #elig .elink { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; margin-top: 6px; padding: 7px 14px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); font-weight: 500; text-decoration: none; }
+    #elig .elink:hover { background: var(--soft); }
+    .eligline { margin: 0 0 14px; color: var(--grey); font-size: .9375rem; }
+    .eligline[hidden] { display: none; }
+    .list .t .eok { float: right; margin: 0 0 0 12px; }   /* ticks line up at the right edge of the notice column */
+    .search + .eligline { margin-top: -26px; margin-bottom: 24px; }
+    @media (max-width: 640px) { .search + .eligline { margin-top: -4px; margin-bottom: 14px; font-size: .875rem; } }
+    .eligline .eok { margin-right: 4px; }
+    .eligline button { all: unset; cursor: pointer; color: #1A5FB4; font-weight: 500; }
+    :root[data-theme="dark"] .eligline button { color: #8AB4F8; }
+    @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .eligline button { color: #8AB4F8; } }
     .eligdlg .btns { display: flex; gap: 18px; margin: 6px 0 0; }
     .eligdlg .btns button { all: unset; cursor: pointer; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; color: var(--ink); }
     .eligdlg .btns button.g { color: var(--grey); }`;
@@ -100,11 +115,16 @@
     }
     dlg.returnValue = "";
     const me = load() || {};
+    const [yy, mm, dd] = (me.dob || "").split("-").map(Number);
     dlg.innerHTML = `<form method="dialog">
       <button value="cancel" class="x" formnovalidate aria-label="${L("Close", "बंद करें")}" title="${L("Close", "बंद करें")}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
       <h2>${L("Am I eligible?", "क्या मैं योग्य हूँ?")}</h2>
       <p class="g">${L("Saved only on this device. We check age and qualification against each official notice.", "सिर्फ़ इसी डिवाइस पर सेव होता है। हम हर आधिकारिक सूचना से आयु और योग्यता मिलाते हैं।")}</p>
-      <label>${L("Date of birth", "जन्म तिथि")}<input type="date" name="dob" required value="${me.dob || ""}" min="1950-01-01" max="2015-12-31"></label>
+      <fieldset><legend>${L("Date of birth", "जन्म तिथि")}</legend><span class="dob">
+        <select name="d" required aria-label="${L("Day", "दिन")}"><option value="">${L("Day", "दिन")}</option>${Array.from({length: 31}, (_, i) => i + 1).map(d => `<option value="${d}"${dd === d ? " selected" : ""}>${d}</option>`).join("")}</select>
+        <select name="m" required aria-label="${L("Month", "महीना")}"><option value="">${L("Month", "महीना")}</option>${MON.map((m, i) => `<option value="${i + 1}"${mm === i + 1 ? " selected" : ""}>${L(m, MONH[i])}</option>`).join("")}</select>
+        <select name="y" required aria-label="${L("Year", "वर्ष")}"><option value="">${L("Year", "वर्ष")}</option>${Array.from({length: 2012 - 1955 + 1}, (_, i) => 2012 - i).map(y => `<option value="${y}"${yy === y ? " selected" : ""}>${y}</option>`).join("")}</select>
+      </span></fieldset>
       <label>${L("Category", "श्रेणी")}<select name="cat">${CATS.map(c => `<option value="${c}"${me.cat === c ? " selected" : ""}>${L(CN[c][0], CN[c][1])}</option>`).join("")}</select></label>
       <label>${L("Highest qualification", "सबसे ऊँची योग्यता")}<select name="qual">${Object.keys(QN).map(q => `<option value="${q}"${me.qual === q ? " selected" : ""}>${L(QN[q][0], QN[q][1])}</option>`).join("")}</select></label>
       <label class="ck"><input type="checkbox" name="pwd"${me.pwd ? " checked" : ""}> ${L("Person with disability (PwD)", "दिव्यांग (PwD)")}</label>
@@ -113,8 +133,10 @@
     dlg.onclose = () => {
       if (dlg.returnValue === "save") {
         const f = dlg.querySelector("form");
-        if (!f.dob.value) return;
-        save({ dob: f.dob.value, cat: f.cat.value, qual: f.qual.value, pwd: f.pwd.checked });
+        if (!f.d.value || !f.m.value || !f.y.value) return;
+        const y = +f.y.value, m = +f.m.value, d = Math.min(+f.d.value, new Date(y, m, 0).getDate());   // 31 Feb -> 28/29 Feb
+        const dob = `${y}-${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+        save({ dob, cat: f.cat.value, qual: f.qual.value, pwd: f.pwd.checked });
       } else if (dlg.returnValue === "clear") save(null);
       onDone && onDone();
     };
@@ -133,14 +155,24 @@
       if (r && r.s === "yes") {
         n++;
         const t = li.querySelector(".t");
-        if (t) t.insertAdjacentHTML("afterbegin", `<span class="eok" title="${L("You are eligible: ", "आप योग्य हैं: ")}${r.why.replace(/"/g, "&quot;")}" aria-label="${L("You are eligible", "आप योग्य हैं")}">✓</span>`);
+        const tip = (L("You are eligible", "आप योग्य हैं") + (r.why ? ": " + r.why : "")).replace(/"/g, "&quot;");
+        if (t) t.insertAdjacentHTML("afterbegin", `<span class="eok" data-tip="${tip}" aria-label="${tip}">✓</span>`);
       }
     });
     if (btn) btn.textContent = me ? L("Eligibility: on · edit", "योग्यता: चालू · बदलें") : L("Am I eligible?", "क्या मैं योग्य हूँ?");
+    const line = document.getElementById("eligLine");
+    if (line) {
+      line.hidden = false;
+      line.innerHTML = me
+        ? `<span class="eok">✓</span>${L("= jobs you can apply for", "= जिन नौकरियों के लिए आप योग्य हैं")} · <button type="button">${L("Change my details", "मेरी जानकारी बदलें")}</button>`
+        : `${L("Which jobs can you apply for?", "आप किन नौकरियों के लिए योग्य हैं?")} <button type="button">${L("Check with your date of birth", "अपनी जन्म तिथि से जाँचें")} →</button>`;
+      line.querySelector("button").addEventListener("click", () => form(markList));
+    }
   }
   function initHome() {
     const btn = document.getElementById("eligBtn"), list = document.getElementById("list");
     if (!list) return;
+    if (!document.getElementById("eligLine")) { const p = document.createElement("p"); p.className = "eligline"; p.id = "eligLine"; p.hidden = true; const s = document.querySelector(".search"); if (s) s.after(p); }
     if (btn) btn.addEventListener("click", () => form(markList));
     // the list is re-drawn on every tab / search change: mark again (the ✓ goes inside rows, so this does not loop)
     new MutationObserver(markList).observe(list, { childList: true });
@@ -155,11 +187,11 @@
     let e; try { e = JSON.parse(box.dataset.e); } catch (x) { return; }
     function paint() {
       const me = load();
-      if (!me) { box.innerHTML = `<button type="button" class="elink">${L("Check with your date of birth →", "अपनी जन्म तिथि से जाँचें →")}</button>`; }
+      if (!me) { box.innerHTML = `<button type="button" class="elink">${L("Check with your date of birth", "अपनी जन्म तिथि से जाँचें")} →</button>`; }
       else {
         const r = check(e, me);
         const head = { yes: L("✓ Yes, you are eligible", "✓ हाँ, आप योग्य हैं"), no: L("✗ Not eligible", "✗ योग्य नहीं"), maybe: L("Probably — check the notice", "शायद — सूचना देखें") }[r.s];
-        box.innerHTML = `<span class="er ${r.s}">${head}</span>${r.why ? `<small class="g">${r.why}</small>` : ""}<button type="button" class="elink">${L("edit", "बदलें")}</button>`;
+        box.innerHTML = `<span class="er ${r.s}">${head}</span>${r.why ? `<small class="g">${r.why}</small>` : ""}<button type="button" class="elink"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16v4z"/></svg>${L("Change my details", "मेरी जानकारी बदलें")}</button>`;
       }
       const b = box.querySelector(".elink"); if (b) b.addEventListener("click", () => form(paint));
     }
