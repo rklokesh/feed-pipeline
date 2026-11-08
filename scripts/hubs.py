@@ -206,19 +206,23 @@ def build():
         stamps = re.findall(r'"publishedAt": "([^"]+)"', hv)
         latest = max(stamps) if stamps else ""
         count = len(re.findall(r'\{"type": "', hv)) // 50 * 50 or len(re.findall(r'\{"type": "', hv))
+        import datetime as _dt
+        _today = _dt.datetime.utcnow() + _dt.timedelta(hours=5, minutes=30)
+        _d = _today.date()
+        posted = re.findall(r'"posted": "(\d{4}-\d\d-\d\d)"', hv)
+        week = sum(1 for x in posted if 0 <= (_d - _dt.date.fromisoformat(x)).days < 7)
+        lasts = re.findall(r'\{"type": "Job"[^}]*?"last": "(\d{4}-\d\d-\d\d)"', hv)
+        soon = sum(1 for x in lasts if 0 <= (_dt.date.fromisoformat(x) - _d).days <= 7)
         hero = ('    <section class="hero" aria-label="Search">\n'
                 f'      <div class="hero-bg" aria-hidden="true">{words}</div>\n'
-                '      <p class="hero-live"><span class="dot" aria-hidden="true"></span><span class="x-en">Never miss a last date again</span>'
-                '<span class="x-hi" lang="hi">अब कोई अंतिम तिथि नहीं छूटेगी</span></p>\n'
-                '      <h2 class="hero-h"><span class="x-en" aria-label="Govt jobs, admit cards and results, without the clutter">'
-                '<span aria-hidden="true">Govt <span class="rx" data-alt="नौकरी">jobs</span>, admit cards and <span class="rx" data-alt="रिज़ल्ट">results</span>, <br>'
-                'without the <span class="rx" data-alt="झंझट">clutter</span></span></span>'
-                '<span class="x-hi" lang="hi" aria-label="सरकारी नौकरी, एडमिट कार्ड और रिज़ल्ट, बिना किसी झंझट के"><span aria-hidden="true">'
-                'सरकारी <span class="rx" data-alt="jobs">नौकरी</span>, एडमिट कार्ड और <span class="rx" data-alt="results">रिज़ल्ट</span>, <br>'
-                'बिना किसी <span class="rx" data-alt="clutter">झंझट</span> के</span></span></h2>\n'
+                '      <h2 class="hero-h"><span class="x-en" aria-label="Find your next sarkari job before the last date">'
+                '<span aria-hidden="true">Find your next <span class="rx" data-alt="सरकारी">sarkari</span> <span class="rx" data-alt="नौकरी">job</span> <br>'
+                'before the <span class="rx" data-alt="अंतिम तिथि">last date</span></span></span>'
+                '<span class="x-hi" lang="hi" aria-label="अंतिम तिथि से पहले अपनी अगली सरकारी नौकरी पाएँ"><span aria-hidden="true">'
+                '<span class="rx" data-alt="last date">अंतिम तिथि</span> से पहले <br>अपनी अगली <span class="rx" data-alt="sarkari">सरकारी</span> <span class="rx" data-alt="job">नौकरी</span> पाएँ</span></span></h2>\n'
                 + search.replace("    <label", "      <label", 1) +
-                f'      <p class="hero-sub g" id="heroSub" data-ts="{latest}" data-n="{count}"><span class="x-en">For everyone whose family is counting on that sarkari job · free</span>'
-                f'<span class="x-hi" lang="hi">हर उस अभ्यर्थी के लिए जिस पर परिवार की उम्मीद है · मुफ़्त</span></p>\n'
+                f'      <p class="hero-sub g" id="heroSub" data-ts="{latest}"><span class="x-en">Free · No sign-up · English &amp; हिंदी</span>'
+                f'<span class="x-hi" lang="hi">मुफ़्त · बिना साइन-अप · हिंदी और English</span></p>\n'
                 '    </section>\n')
         hv = hv.replace("  <main>\n", "  <main>\n" + hero, 1)
         css = """<style>
@@ -246,8 +250,13 @@ html.hv .hero-live .dot::after { content: ""; position: absolute; inset: 0; bord
 @keyframes hv-ping { 0% { transform: scale(1); opacity: .6; } 80%, 100% { transform: scale(2.8); opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { html.hv .hero-live .dot::after { animation: none; } }
 @media (max-width: 640px) { html.hv .hero-live { font-size: .8125rem; margin-bottom: 16px; padding: 5px 12px 5px 10px; } }
-html.hv .rx { display: inline-block; white-space: nowrap; transition: width .45s cubic-bezier(.4, 0, .2, 1), color .6s ease; }
-html.hv .rx.mix { color: #E8312F; transition: width .45s cubic-bezier(.4, 0, .2, 1), color .15s ease; }
+html.hv .hero-live .tick { position: relative; display: inline-block; transition: width .6s cubic-bezier(.65, 0, .35, 1); white-space: nowrap; }
+html.hv .hero-live .tick > span { white-space: nowrap; }
+html.hv .rx { position: relative; display: inline-block; white-space: nowrap; vertical-align: baseline; }
+html.hv .rx.slot { transition: width .7s cubic-bezier(.65, 0, .35, 1); }
+html.hv .rx .rx-base { visibility: hidden; }
+html.hv .rx .rx-w { position: absolute; left: 0; top: 0; white-space: nowrap; will-change: opacity, transform; }
+html.hv .rx .rx-w.alt { color: #E8312F; }
 html.hv .hero .search { position: relative; max-width: 560px; margin: 0 auto !important; text-align: left; }
 html.hv .hero .search input { background: var(--page) !important; border: 1px solid color-mix(in srgb, var(--ink) 28%, transparent) !important; border-radius: 10px !important;
   padding: 13px 92px 13px 44px !important; box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px -12px rgba(0,0,0,.18); }
@@ -258,37 +267,39 @@ html.hv .tabrow { margin-top: 0; }
 @media (max-width: 640px) { html.hv .hero { padding: 52px 16px 44px; margin-bottom: 18px; } html.hv .hero-h { margin-bottom: 22px; } html.hv .hero-h br { display: none; } html.hv .hero-bg { font-size: 10px; line-height: 20px; word-spacing: 10px; } html.hv .hero-bg span { color: color-mix(in srgb, var(--grey) 22%, transparent); } }
 </style>
 <script>document.documentElement.classList.add("hv")</script>
-<script>addEventListener("DOMContentLoaded",function(){var p=document.getElementById("heroSub");if(!p||!p.dataset.ts)return;
-function paint(){var m=Math.max(1,Math.round((Date.now()-Date.parse(p.dataset.ts))/6e4)),n=p.dataset.n,
-en=m<60?m+" min ago":Math.round(m/60)+" h ago",hi=m<60?m+" मिनट पहले":Math.round(m/60)+" घंटे पहले";if(m>=1440)return;
-p.children[0].textContent="For everyone whose family is counting on that sarkari job · updated "+en;p.children[1].textContent="हर उस अभ्यर्थी के लिए जिस पर परिवार की उम्मीद है · "+hi+" अपडेट"}
-paint();setInterval(paint,60000)});</script>
-<script>/* Heading "remix": now and then one word scrambles into its other-language twin (jobs -> नौकरी), holds a moment in the
-   logo red, then scrambles back. The word's own space eases wider first (or narrower after), so the words around it glide
-   aside and nothing ever overlaps; gaps stay the normal word space. A word is only swapped when its twin fits on the same
-   line (no line jumps). One word at a time; off when motion is off; paused off screen or in a background tab. */
+
+
+<script>/* Heading "remix": now and then one word turns into its other-language twin (jobs -> नौकरी) in the logo red, holds,
+   then turns back. The word's slot glides to the new word's exact width while the old word lifts away and the new one
+   settles in with a quick letter scramble, so the words around it slide over smoothly and the gaps stay normal.
+   Only swapped when the twin fits on the same line. One at a time; off when motion is off; paused off screen. */
 addEventListener("DOMContentLoaded",function(){if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;
-var DEV="कखगचजटडतदनपबमयरलवसह".split(""),LAT="abcdefghiklmnoprstuvwyz".split(""),
+var EASE="cubic-bezier(.65,0,.35,1)",DEV="कखगचजटडतदनपबमयरलवसह".split(""),LAT="abcdefghiklmnoprstuvwyz".split(""),
 SEG=window.Intl&&Intl.Segmenter?new Intl.Segmenter(undefined,{granularity:"grapheme"}):null,
 G=function(w){return SEG?Array.from(SEG.segment(w),function(x){return x.segment}):Array.from(w)};
 var h=document.querySelector(".hero-h");if(!h)return;var vis=true,busy=false,meas=document.createElement("span");
 meas.style.cssText="position:absolute;visibility:hidden;white-space:nowrap;pointer-events:none";
 function widthOf(el,txt){el.appendChild(meas);meas.textContent=txt;var w=meas.getBoundingClientRect().width;meas.remove();return w}
-function scramble(el,to,maxW,done){var g=G(to),pool=/[ऀ-ॿ]/.test(to)?DEV:LAT,n=0,steps=9;
-var iv=setInterval(function(){n++;var k=Math.floor(g.length*n/steps),r=[];for(var i=k;i<g.length;i++)r.push(pool[Math.random()*pool.length|0]);
-var s=g.slice(0,k).join("")+r.join("");while(r.length&&widthOf(el,s)>maxW){r.pop();s=g.slice(0,k).join("")+r.join("")}
-el.firstChild.nodeValue=s;if(n>=steps){clearInterval(iv);el.firstChild.nodeValue=to;done&&done()}},50)}
-function fits(el,to){var H=h.getBoundingClientRect().height,tops=[].map.call(h.querySelectorAll(".rx"),function(x){return x.offsetTop});
-el.style.transition="none";el.style.width=widthOf(el,to)+"px";
-var ok=h.getBoundingClientRect().height===H&&[].every.call(h.querySelectorAll(".rx"),function(x,i){return x.offsetTop===tops[i]});
-el.style.width="";el.getBoundingClientRect();el.style.transition="";return ok}
-function swap(el,to,done){var w0=el.getBoundingClientRect().width,w1=widthOf(el,to);el.style.width=w0+"px";el.getBoundingClientRect();
-if(w1>w0){requestAnimationFrame(function(){el.style.width=w1+"px"});setTimeout(function(){scramble(el,to,w1,done)},470)}
-else scramble(el,to,w0,function(){el.style.width=w1+"px";setTimeout(done,470)})}
+function lines(el){var y=Math.round(el.getBoundingClientRect().top);return [].map.call(el.parentNode.getClientRects(),function(r){return [Math.round(r.top),Math.round(r.width),Math.abs(Math.round(r.top)-y)<12]})}
+function fits(el,to){var A=lines(el),keep=el.style.width,kt=el.style.transition;el.style.transition="none";el.style.width=widthOf(el,to)+"px";
+var B=lines(el),ok=A.length===B.length&&A.every(function(a,i){return a[0]===B[i][0]&&(a[2]||a[1]===B[i][1])});
+el.style.width=keep;el.getBoundingClientRect();el.style.transition=kt;return ok}
+function build(el){if(el.dataset.ready)return;var o=el.textContent;el.dataset.orig=o;el.textContent="";
+var base=document.createElement("span");base.className="rx-base";base.textContent=o;
+var a=document.createElement("span");a.className="rx-w";a.textContent=o;var b=document.createElement("span");b.className="rx-w alt";b.style.opacity="0";
+el.append(base,a,b);el.style.width=widthOf(el,o)+"px";el.getBoundingClientRect();el.classList.add("slot");el.dataset.ready="1"}
+function scramble(node,to){var g=G(to),pool=/[ऀ-ॿ]/.test(to)?DEV:LAT,n=0,steps=7;
+var iv=setInterval(function(){n++;var k=Math.floor(g.length*n/steps),s=g.slice(0,k).join("");for(var i=k;i<g.length;i++)s+=pool[Math.random()*pool.length|0];
+node.textContent=n>=steps?to:s;if(n>=steps)clearInterval(iv)},55)}
+function show(el,out,inn,txt){inn.textContent=txt;
+out.style.transition="opacity 350ms "+EASE+",transform 500ms "+EASE+",filter 350ms "+EASE;out.style.opacity="0";out.style.transform="translateY(-.28em)";out.style.filter="blur(4px)";
+inn.style.transition="none";inn.style.opacity="0";inn.style.transform="translateY(.28em)";inn.style.filter="blur(4px)";inn.getBoundingClientRect();
+inn.style.transition="opacity 500ms "+EASE+" 180ms,transform 700ms "+EASE+" 120ms,filter 500ms "+EASE+" 180ms";inn.style.opacity="1";inn.style.transform="none";inn.style.filter="none";
+el.style.width=widthOf(el,txt)+"px";setTimeout(function(){scramble(inn,txt)},120)}
 if("IntersectionObserver"in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(h);
 function tick(){if(busy||!vis||document.hidden)return;var ws=[].filter.call(h.querySelectorAll(".rx"),function(e){return e.offsetParent&&fits(e,e.dataset.alt)});
-if(!ws.length)return;var el=ws[Math.random()*ws.length|0],orig=el.dataset.orig||(el.dataset.orig=el.textContent);busy=true;el.classList.add("mix");
-swap(el,el.dataset.alt,function(){setTimeout(function(){swap(el,orig,function(){el.classList.remove("mix");el.style.width="";busy=false})},1700)})}
+if(!ws.length)return;var el=ws[Math.random()*ws.length|0];build(el);busy=true;var w=el.querySelectorAll(".rx-w");
+show(el,w[0],w[1],el.dataset.alt);setTimeout(function(){show(el,w[1],w[0],el.dataset.orig);setTimeout(function(){busy=false},900)},2600)}
 setTimeout(function(){tick();setInterval(tick,5600)},1500)});</script>
 <script>addEventListener("DOMContentLoaded",function(){var bg=document.querySelector(".hero-bg");if(!bg||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
 var ws=bg.children,vis=true;if("IntersectionObserver"in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(bg);

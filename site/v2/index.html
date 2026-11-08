@@ -603,6 +603,9 @@ main > .adslot { margin: 0 !important; }   /* inside an article the page's own s
 .sg-none { margin: 10px 8px; color: var(--grey); font-size: .875rem; line-height: 1.5; }
 @media (max-width: 640px) { .sg-m { display: none; } .sugg { max-height: 60vh; } }
 @media print { .sugg { display: none !important; } }
+
+.top .logo img { -webkit-user-drag: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+.search, .search input { cursor: text; }
 </style>
 <script>document.documentElement.classList.add("v2");try{localStorage.removeItem("sc-v2")}catch(e){}</script>
 <script>/* Desktop A/B. Version A (original desktop) is the default everywhere; version B (phone-style chrome) lives at /v2/ (or ?new).
@@ -625,7 +628,7 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
 <div class="sheet">
   <header class="top">
     <span class="g" data-t="tagline">Govt jobs, exams, results</span>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img draggable="false" class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
   <div class="adslot slim atop" data-ad="home-top"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox"><a class="house" href="https://t.me/sarkarichart" target="_blank" rel="noopener"><img src="/telegram.svg" alt="" width="22" height="22"><span data-t="adHouse">Get every new govt job alert on Telegram, free</span></a></div></div>

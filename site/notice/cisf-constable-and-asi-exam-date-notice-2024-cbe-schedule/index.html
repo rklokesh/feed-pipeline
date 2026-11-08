@@ -588,6 +588,9 @@ html.nb .kv.glance .r .v { font-weight: 500; }
 #state.shut::before { background-image: url(/live-closed.webp); }
 @media (prefers-reduced-motion: reduce) { #state.live::before { background-image: url(/live-open-still.png); } #state.shut::before { background-image: url(/live-closed-still.png); } }
 @media print { #state.live::before, #state.shut::before { display: none; } }
+
+.top .logo img { -webkit-user-drag: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+.search, .search input { cursor: text; }
 </style>
 <script>/* Notice A/B: version B (calm reading layout) is the default; ?classic shows A (boxed). NB_SPLIT=true at launch = 50/50 per browser, with counts. */
 (function(){var NB_SPLIT=false,h=document.documentElement,q=location.search,v="b",f=1;
@@ -607,7 +610,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
 <div class="sheet">
   <header class="top">
     <a class="hback" href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-t="allNotices">All notices</span></a>
-    <a class="logo" href="/" data-t-aria="home"><img class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><img draggable="false" class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
 
