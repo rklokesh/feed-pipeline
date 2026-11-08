@@ -316,12 +316,23 @@ w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},2
     hc = hv.replace('<script>document.documentElement.classList.add("hv")</script>',
                     '<script>document.documentElement.classList.add("hv","hc")</script>', 1)
     hc = hc.replace("</head>", """<style>
-html.hc .hero { margin: 0 0 20px; padding: 4px 0 0; text-align: left; overflow: visible; }
+/* C: the big logo header is replaced by the heading itself; a slim top row keeps a small logo (home) and the language/theme links */
+html.hc .sheet { padding-top: 10px; }
+html.hc .top, html.hc .top:has(> .g), html.hc.bar-compact .top:has(> .g) { display: flex !important; align-items: center; justify-content: space-between; gap: 16px; margin: 0 0 6px !important; padding: 6px 0 !important;
+  position: static !important; background: none !important; border: 0 !important; -webkit-backdrop-filter: none !important; backdrop-filter: none !important; }
+html.hc .top > .g { display: none !important; }
+html.hc .top .logo { order: 0; }
+html.hc .top .logo img, html.hc .top .logo .mark, html.hc .top:has(> .g) .logo img, html.hc .top:has(> .g) .logo .mark,
+html.hc.bar-compact .top:has(> .g) .logo img, html.hc.bar-compact .top:has(> .g) .logo .mark { width: 44px !important; height: 44px !important; }
+html.hc .top .nav-r { order: 1; position: static !important; }
+html.hc .top .nav-r a[href="/about/"] { position: static !important; transform: none !important; display: inline !important; }
+html.hc .hero { margin: 0 0 20px; padding: 18px 0 0; text-align: left; overflow: visible; }
 html.hc .hero-bg { display: none !important; }
-html.hc .hero-h { margin: 0 0 18px; max-width: 22em; text-align: left; font-size: clamp(1.5rem, 1rem + 2.2vw, 2.5rem); line-height: 1.12; }
+html.hc .hero-h { margin: 0 0 18px; max-width: 22em; text-align: left; font-size: clamp(1.75rem, 1.05rem + 2.6vw, 2.9rem); line-height: 1.1; }
 html.hc .hero .search { max-width: none; margin: 0 !important; }
 html.hc .hero-sub { text-align: left; margin-top: 12px; }
-@media (max-width: 640px) { html.hc .hero { padding-top: 0; margin-bottom: 14px; } html.hc .hero-sub { font-size: .8125rem; } html.hc .hero-h br { display: none; } }
+@media (max-width: 640px) { html.hc .hero { padding-top: 10px; margin-bottom: 14px; } html.hc .hero-h br { display: none; } html.hc .hero-sub { font-size: .8125rem; }
+  html.hc .top .logo img, html.hc .top .logo .mark, html.hc .top:has(> .g) .logo img, html.hc .top:has(> .g) .logo .mark { width: 40px !important; height: 40px !important; } }
 </style>
 </head>""", 1)
     (SITE / "c").mkdir(exist_ok=True)
