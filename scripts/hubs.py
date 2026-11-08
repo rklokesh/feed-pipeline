@@ -217,8 +217,8 @@ def build():
                 '<span aria-hidden="true"><span class="rx" data-alt="सरकारी">Govt</span> <span class="nw"><span class="rx" data-alt="नौकरी">jobs</span>,</span> <span class="rx" data-alt="एडमिट कार्ड">admit cards</span> and <span class="nw"><span class="rx" data-alt="रिज़ल्ट">results</span>,</span> straight from the <span class="rx" data-alt="आधिकारिक">official</span> <span class="rx" data-alt="सूचना">notice</span></span></span>'
                 '<span class="x-hi" lang="hi" aria-label="सरकारी नौकरी, एडमिट कार्ड और रिज़ल्ट, सीधे आधिकारिक सूचना से"><span aria-hidden="true"><span class="rx" data-alt="Govt">सरकारी</span> <span class="nw"><span class="rx" data-alt="jobs">नौकरी</span>,</span> <span class="rx" data-alt="admit cards">एडमिट कार्ड</span> और <span class="nw"><span class="rx" data-alt="results">रिज़ल्ट</span>,</span> सीधे <span class="rx" data-alt="official">आधिकारिक</span> <span class="rx" data-alt="notice">सूचना</span> से</span></span></h2>\n'
                 + search.replace("    <label", "      <label", 1) +
-                f'      <p class="hero-sub g" id="heroSub" data-ts="{latest}"><span class="x-en">Only official notices · 50+ boards checked daily · never paid listings</span>'
-                f'<span class="x-hi" lang="hi">सिर्फ़ आधिकारिक सूचनाएँ · 50+ बोर्ड रोज़ जाँचे जाते हैं · कोई पेड लिस्टिंग नहीं</span></p>\n'
+                f'      <p class="hero-sub g" id="heroSub" data-ts="{latest}" hidden><span class="x-en"></span>'
+                f'<span class="x-hi" lang="hi"></span></p>\n'
                 '    </section>\n')
         hv = hv.replace("  <main>\n", "  <main>\n" + hero, 1)
         css = """<style>
@@ -275,7 +275,7 @@ pm=new Date(d.getFullYear(),d.getMonth()-1,15).toISOString().slice(0,7).replace(
 function get(x){return fetch("/api/views?slug=zz-visitors-"+x).then(function(r){return r.json()}).then(function(j){return +j.n||0}).catch(function(){return 0})}
 Promise.all([get(m),get(pm)]).then(function(v){var n=Math.max(v[0],v[1]);if(n<10000)return;
 var en=n.toLocaleString("en-IN"),r=n>=1e6?(Math.floor(n/1e5)/10)+"M+":n>=1e5?Math.floor(n/1e3)+"K+":en;
-p.children[0].textContent="Trusted by "+r+" aspirants this month";p.children[1].textContent="इस महीने "+r+" अभ्यर्थियों का भरोसा";})});</script>
+p.children[0].textContent="Trusted by "+r+" aspirants this month";p.children[1].textContent="इस महीने "+r+" अभ्यर्थियों का भरोसा";p.hidden=false;})});</script>
 
 
 <script>/* Heading "remix": now and then one word turns into its other-language twin (jobs -> नौकरी) in the logo red, holds,
