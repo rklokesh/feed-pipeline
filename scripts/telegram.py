@@ -19,7 +19,7 @@ import requests
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CHANNEL = os.environ.get("TELEGRAM_CHANNEL", "@sarkarichart")
-SITE = os.environ.get("SITE_URL", "https://sarkarichart.pages.dev")
+SITE = os.environ.get("SITE_URL", "https://sarkarichart.com")
 STATE = ROOT / "data/telegram.json"
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 REPORT = ROOT / "reports/telegram.txt"

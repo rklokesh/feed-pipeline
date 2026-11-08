@@ -26,7 +26,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 NOTICES = ROOT / "data" / "notices"
 SITE = ROOT / "site"
 TPL = ROOT / "templates" / "notice.html"
-SITE_URL = os.environ.get("SITE_URL", "https://sarkarichart.pages.dev")
+SITE_URL = os.environ.get("SITE_URL", "https://sarkarichart.com")
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 YEAR = dt.datetime.now(IST).year
 MONTHS_HI = ["जनवरी", "फ़रवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितंबर", "अक्तूबर", "नवंबर", "दिसंबर"]

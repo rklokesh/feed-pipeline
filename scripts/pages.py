@@ -224,7 +224,7 @@ def official_date(n: dict) -> str:
     return seen.isoformat()
 
 
-SITE_URL = os.environ.get("SITE_URL", "https://sarkarichart.pages.dev")   # change to https://sarkarichart.com at launch
+SITE_URL = os.environ.get("SITE_URL", "https://sarkarichart.com")   # change to https://sarkarichart.com at launch
 CAT_SLUG = {"Job": "jobs", "Result": "results", "Admit card": "admit-cards", "Answer key": "answer-keys", "Update": "all", "Admission": "all"}
 
 

@@ -117,7 +117,7 @@ def main():
     t_en = "\n".join(f"      {k}: {js(v)}," for k, v in EN.items())
     t_hi = "\n".join(f"      {k}: {js(v)}," for k, v in HI.items())
     out = (TPL.replace("{{TITLE}}", EN["title"]).replace("{{DESC}}", "Report a mistake on SarkariChart").replace("{{MAIN}}", main_html)
-           .replace("{{T_EN}}", t_en).replace("{{T_HI}}", t_hi).replace("{{SLUG}}", "report").replace("{{OGIMG}}", "https://sarkarichart.pages.dev/og.png").replace("{{URL}}", "https://sarkarichart.pages.dev/report/").replace("{{OGALT}}", "SarkariChart — report a mistake").replace("{{LAST}}", "null"))
+           .replace("{{T_EN}}", t_en).replace("{{T_HI}}", t_hi).replace("{{SLUG}}", "report").replace("{{OGIMG}}", "https://sarkarichart.com/og.png").replace("{{URL}}", "https://sarkarichart.com/report/").replace("{{OGALT}}", "SarkariChart — report a mistake").replace("{{LAST}}", "null"))
     d = ROOT / "site/report"
     d.mkdir(parents=True, exist_ok=True)
     (d / "index.html").write_text(out, encoding="utf-8")

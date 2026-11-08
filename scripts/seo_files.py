@@ -1,6 +1,6 @@
 """Search-engine files, rebuilt on every publish: site/sitemap.xml, site/robots.txt, site/llms.txt.
 
-Before launch robots.txt keeps every crawler out (LAUNCHED = False). On domain day run scripts/go_live.py, which
+Before launch robots.txt keeps every crawler out (LAUNCHED = True). On domain day run scripts/go_live.py, which
 flips LAUNCHED, switches the address to the real domain and removes the noindex tags.
 """
 from __future__ import annotations
@@ -13,8 +13,8 @@ import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
-SITE_URL = os.environ.get("SITE_URL", "https://sarkarichart.pages.dev")
-LAUNCHED = False   # go_live.py sets this to True
+SITE_URL = os.environ.get("SITE_URL", "https://sarkarichart.com")
+LAUNCHED = True   # go_live.py sets this to True
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 TYPE_EN = {"Job": "Job", "Result": "Result", "Admit card": "Admit card", "Answer key": "Answer key", "Update": "Update", "Admission": "Admission"}
 

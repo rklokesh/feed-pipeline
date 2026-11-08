@@ -11,7 +11,7 @@ import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 TPL = (ROOT / "templates/notice.html").read_text(encoding="utf-8")
-SITE_URL = os.environ.get("SITE_URL", "https://sarkarichart.pages.dev")
+SITE_URL = os.environ.get("SITE_URL", "https://sarkarichart.com")
 UPDATED = ("28 Oct 2026", "28 अक्तूबर 2026")
 
 # each page: slug, (title EN, HI), (lead EN, HI), sections [(heading EN, HI, [items EN], [items HI], list?)]
