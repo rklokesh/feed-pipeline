@@ -1680,6 +1680,7 @@ if(v==="old")h.classList.add("ab-old");if(!f)window.SC_AB=v})()</script>
       e.preventDefault(); e.stopPropagation();
       const left = clr ? [] : recent().filter(x => x !== del.dataset.del);
       try { left.length ? localStorage.setItem(RK, JSON.stringify(left)) : localStorage.removeItem(RK); } catch (x) {}
+      if (clr) { sgClose(); qIn.blur(); return; }   // "Clear all" is a finishing action: close the panel
       sgRender(); return;
     }
     const b = e.target.closest(".sg-q");

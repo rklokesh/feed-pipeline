@@ -1764,6 +1764,7 @@ w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},2
       e.preventDefault(); e.stopPropagation();
       const left = clr ? [] : recent().filter(x => x !== del.dataset.del);
       try { left.length ? localStorage.setItem(RK, JSON.stringify(left)) : localStorage.removeItem(RK); } catch (x) {}
+      if (clr) { sgClose(); qIn.blur(); return; }   // "Clear all" is a finishing action: close the panel
       sgRender(); return;
     }
     const b = e.target.closest(".sg-q");
