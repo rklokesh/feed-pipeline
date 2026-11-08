@@ -46,6 +46,7 @@
     #elig .elink:hover { background: var(--soft); }
     .eligline { margin: 0 0 14px; color: var(--grey); font-size: .9375rem; }
     .eligline[hidden] { display: none; }
+    @media print { .kv .r:has(#elig), #elig { display: none !important; } }   /* a printout never carries someone's own date of birth result */
     .list .t .eok { float: right; margin: 0 0 0 12px; }   /* ticks line up at the right edge of the notice column */
     .search + .eligline { margin-top: -26px; margin-bottom: 24px; }
     @media (max-width: 640px) { .search + .eligline { margin-top: -4px; margin-bottom: 14px; font-size: .875rem; } }
@@ -199,6 +200,7 @@
     paint();
   }
   window.scElig = { check, load, form };
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", () => { initHome(); initNotice(); });
-  else { initHome(); initNotice(); }
+  // eligibility is shown only on notice pages, next to the official details (not as ticks on the shared homepage list)
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initNotice);
+  else initNotice();
 })();
