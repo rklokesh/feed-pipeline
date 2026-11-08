@@ -208,6 +208,8 @@ def build():
         count = len(re.findall(r'\{"type": "', hv)) // 50 * 50 or len(re.findall(r'\{"type": "', hv))
         hero = ('    <section class="hero" aria-label="Search">\n'
                 f'      <div class="hero-bg" aria-hidden="true">{words}</div>\n'
+                '      <p class="hero-live"><span class="dot" aria-hidden="true"></span><span class="x-en">Live · watching 50+ official boards</span>'
+                '<span class="x-hi" lang="hi">लाइव · 50+ आधिकारिक बोर्ड पर नज़र</span></p>\n'
                 '      <h2 class="hero-h"><span class="x-en" aria-label="Govt jobs, admit cards and results, without the clutter">'
                 '<span aria-hidden="true">Govt <span class="rx" data-alt="नौकरी">jobs</span>, admit cards and <span class="rx" data-alt="रिज़ल्ट">results</span>, <br>'
                 'without the <span class="rx" data-alt="झंझट">clutter</span></span></span>'
@@ -237,6 +239,13 @@ html.hv .hero-bg span { color: color-mix(in srgb, var(--grey) 30%, transparent);
 html.hv .hero-bg span.on { color: color-mix(in srgb, #E8312F 75%, transparent); transition-duration: .2s; }
 html.hv .hero-bg span.dim { opacity: .25; transition-duration: .35s; }
 html.hv .hero-h { position: relative; margin: 0 auto 30px; max-width: 22em; font-size: clamp(1.6rem, 1rem + 3.2vw, 3.25rem); font-weight: 600; line-height: 1.06; letter-spacing: -0.03em; color: var(--ink); text-wrap: balance; }
+html.hv .hero-live { position: relative; display: inline-flex; align-items: center; gap: 9px; margin: 0 0 22px; padding: 6px 14px 6px 12px; border-radius: 999px;
+  background: color-mix(in srgb, var(--page) 85%, transparent); border: 1px solid var(--line); font-size: .875rem; color: var(--ink); }
+html.hv .hero-live .dot { position: relative; width: 8px; height: 8px; border-radius: 50%; background: #1FA855; flex: none; }
+html.hv .hero-live .dot::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: #1FA855; animation: hv-ping 1.8s cubic-bezier(0, 0, .2, 1) infinite; }
+@keyframes hv-ping { 0% { transform: scale(1); opacity: .6; } 80%, 100% { transform: scale(2.8); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { html.hv .hero-live .dot::after { animation: none; } }
+@media (max-width: 640px) { html.hv .hero-live { font-size: .8125rem; margin-bottom: 16px; padding: 5px 12px 5px 10px; } }
 html.hv .rx { position: relative; display: inline-block; }
 html.hv .rx .o { visibility: hidden; }
 html.hv .rx .a { position: absolute; left: 50%; top: 0; transform: translateX(-50%); white-space: nowrap; color: #E8312F; transition: color .8s ease; }
