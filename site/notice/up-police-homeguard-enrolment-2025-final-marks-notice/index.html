@@ -559,13 +559,17 @@ html.nb .toc[open] summary::after { content: "–"; }
 html.nb .toc ol { padding: 8px 0 0 1.4rem; columns: 1; }
 html.nb .note { margin: 0; justify-items: start; text-align: left; border-top: 1px solid var(--line); padding-top: 16px; }
 html.nb .hidet > summary { margin: 0; }
+/* At a glance: the most-scanned part - a faint rule above and slightly stronger labels, still no box */
+html.nb .kv.glance { border-top: 1px solid var(--line) !important; padding-top: 18px !important; }
+html.nb .kv.glance .r > :first-child { color: color-mix(in srgb, var(--grey) 70%, var(--ink)); }
+html.nb .kv.glance .r .v { font-weight: 500; }
 @media (max-width: 640px) {
   html.nb .kv .r { grid-template-columns: 1fr !important; padding: 4px 0 !important; }
   html.nb .kv .r > :first-child { font-size: .875rem; }
 }
 </style>
-<script>/* Notice A/B: ?read = version B (calm reading layout), ?classic = A. NB_SPLIT=true at launch = 50/50 per browser, with counts. */
-(function(){var NB_SPLIT=false,h=document.documentElement,q=location.search,v="a",f=1;
+<script>/* Notice A/B: version B (calm reading layout) is the default; ?classic shows A (boxed). NB_SPLIT=true at launch = 50/50 per browser, with counts. */
+(function(){var NB_SPLIT=false,h=document.documentElement,q=location.search,v="b",f=1;
 if(/[?&]read(&|=|$)/.test(q))v="b";else if(/[?&]classic(&|=|$)/.test(q))v="a";
 else if(NB_SPLIT){f=0;try{v=localStorage.getItem("sc-abn")}catch(e){}if(v!=="a"&&v!=="b"){v=Math.random()<.5?"a":"b";try{localStorage.setItem("sc-abn",v)}catch(e){}}}
 if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
