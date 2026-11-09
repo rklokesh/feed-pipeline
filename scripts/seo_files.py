@@ -80,7 +80,7 @@ def llms(items):
     lines = ["# SarkariChart (सरकारी चार्ट)", "",
              "> Every new Indian government job, admit card, result and answer key from official websites, "
              "in English and Hindi. Each notice page is written from the official notice PDF and links to it.", "",
-             "- Checks about 50 official recruitment boards every 30 minutes (UPSC, SSC, RRB, IBPS, state PSCs, police boards, banks, defence).",
+             "- Covers official notices from UPSC, SSC, railways, banks, state public service commissions, police, defence, teaching and more, soon after they are published.",
              "- Dates shown are the dates the board issued the notice. If anything differs, the official notice is correct.",
              "- Independent website, not a government website. Free; never asks for money.", "",
              "## Pages", f"- [Home: latest notices]({SITE_URL}/)", f"- [About]({SITE_URL}/about/)",

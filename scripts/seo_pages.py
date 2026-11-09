@@ -71,8 +71,8 @@ TYPE_PAGES = [
     ("latest-jobs", ("Latest Govt Jobs", "नई सरकारी नौकरी"), "Job",
      ("Every open government job from official notices, closing soonest first: central, railway, police, bank, teacher, defence and state jobs, with last dates and official apply links.",
       "आधिकारिक सूचनाओं से हर खुली सरकारी नौकरी, सबसे पहले बंद होने वाली ऊपर: केंद्र, रेलवे, पुलिस, बैंक, शिक्षक, रक्षा और राज्य की भर्तियाँ, अंतिम तिथि और आधिकारिक आवेदन लिंक के साथ।"),
-     [("How often is this list updated?", "Official recruitment websites are checked every 30 minutes; a new notice appears here soon after it is published.",
-       "यह सूची कितनी बार अपडेट होती है?", "आधिकारिक भर्ती वेबसाइटें हर 30 मिनट में जाँची जाती हैं; नई सूचना जारी होने के कुछ ही देर बाद यहाँ दिखती है।"),
+     [("How often is this list updated?", "Throughout the day; a new notice appears here soon after the board publishes it.",
+       "यह सूची कितनी बार अपडेट होती है?", "पूरे दिन; बोर्ड के सूचना जारी करने के कुछ ही देर बाद नई सूचना यहाँ दिखती है।"),
       ("Where do I apply?", "Only on the official website named in the notice. Each job here links to it directly.",
        "आवेदन कहाँ करें?", "सिर्फ़ सूचना में दी गई आधिकारिक वेबसाइट पर। यहाँ हर नौकरी में उसका सीधा लिंक है।")],
      ("Latest Govt Jobs 2026: Sarkari Naukri, Last Date, Apply Online | SarkariChart", "सरकारी नौकरी 2026: नई भर्ती, अंतिम तिथि | सरकारी चार्ट")),
@@ -184,11 +184,11 @@ def build(slug, name, match, intro, faq, all_items, links, links2=(), kind=None,
     en = {"h1": f"{name[0]} {YEAR}", "lead": intro[0], "openH": "Open now", "otherH": "Latest admit cards, results and updates",
           "faqH": "Common questions", "moreH": "More job pages", "allL": "See every notice on the homepage →",
           "stat1": f"{len(open_jobs)} open {'job' if len(open_jobs) == 1 else 'jobs'}", "stat2": f"{soon} closing this week",
-          "none": "No open jobs right now. New notices appear here within 30 minutes of being published."}
+          "none": "No open jobs right now. New notices appear here soon after they are published."}
     hi = {"h1": f"{name[1]} {YEAR}", "lead": intro[1], "openH": "अभी खुली भर्तियाँ", "otherH": "ताज़ा एडमिट कार्ड, रिज़ल्ट और अपडेट",
           "faqH": "आम सवाल", "moreH": "और नौकरी पेज", "allL": "होमपेज पर सभी सूचनाएँ देखें →",
           "stat1": f"{len(open_jobs)} खुली भर्तियाँ", "stat2": f"{soon} इस हफ़्ते बंद होंगी",
-          "none": "अभी कोई खुली भर्ती नहीं। नई सूचनाएँ जारी होने के 30 मिनट के अंदर यहाँ दिखती हैं।"}
+          "none": "अभी कोई खुली भर्ती नहीं। नई सूचनाएँ जारी होने के कुछ ही देर बाद यहाँ दिखती हैं।"}
     if kind and kind != "Job":   # a plain newest-first list: "Latest admit cards", no "open now" section
         en.update(otherH=f"Latest {name[0].lower()}s" if not name[0].endswith("Result") else "Latest results", stat1=f"{n30} in the last 30 days", stat2="")
         hi.update(otherH=f"ताज़ा {name[1]}", stat1=f"पिछले 30 दिनों में {n30}", stat2="")
