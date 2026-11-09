@@ -38,7 +38,7 @@ STATES = [
     ("rajasthan", "Rajasthan", "राजस्थान", ["rpsc", "rssb", "rajasthan-hc"]),
     ("mp", "MP", "एमपी", ["mppsc", "mpesb"]),
     ("haryana", "Haryana", "हरियाणा", ["hpsc", "hssc", "haryana-police"]),
-    ("delhi", "Delhi", "दिल्ली", ["dsssb"]),
+    ("delhi", "Delhi", "दिल्ली", ["dsssb", "delhi-police"]),
     ("punjab", "Punjab", "पंजाब", ["psssb", "ppsc"]),
     ("jammu-kashmir", "J&K", "जम्मू-कश्मीर", ["jkssb", "jkpsc"]),
     ("jharkhand", "Jharkhand", "झारखंड", ["jpsc", "jssc"]),

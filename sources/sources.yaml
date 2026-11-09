@@ -82,6 +82,7 @@ sources:
     url: https://joinindianarmy.nic.in/
     render: js
     runner: india
+    enabled: false      # Nov 2026: login wall on the home page, no public notice list
   - id: navy-home
     org: Indian Navy
     url: https://www.joinindiannavy.gov.in/
@@ -104,9 +105,10 @@ sources:
     runner: india
   - id: crpf-recruitment
     org: CRPF
-    url: https://rectt.crpf.gov.in/  # CRPF recruitment portal (old crpf.gov.in/recruitment.htm is 404)
+    url: https://rect.crpf.gov.in/  # CRPF recruitment portal (old crpf.gov.in/recruitment.htm is 404)
     render: static
     runner: india
+    url_must: "/Upload/Recruitment/"   # Nov 2026: moved from rectt. to rect.crpf.gov.in
   - id: itbp-recruitment
     org: ITBP
     url: https://recruitment.itbpolice.nic.in/
@@ -114,11 +116,13 @@ sources:
     runner: india
 
   # ---- Research / PSU ----
+    enabled: false      # Nov 2026: site down / wrong certificate
   - id: drdo-careers
     org: DRDO
     url: https://rac.gov.in/  # DRDO Recruitment & Assessment Centre (old careers page is 404)
     render: static
     runner: india
+    enabled: false      # Nov 2026: site down for weeks
   - id: isro-careers
     org: ISRO
     url: https://www.isro.gov.in/Careers.html
@@ -165,7 +169,7 @@ sources:
     runner: india
   - id: mpesb-home
     org: MPESB
-    url: https://esb.mp.gov.in/
+    url: https://esb.mp.gov.in/e_default.html   # Nov 2026: the home page is a frame; notices are here
     render: static
     runner: india
   - id: dsssb-home
@@ -414,3 +418,16 @@ sources:
     render: static
     runner: india
     title_must: "recruit|vacanc|exam|result|selection|interview|admit|answer key|post of|posts of|appointment|merit|shortlist|भर्ती|परीक्षा|परिणाम"
+  - id: ppsc-notices
+    org: PPSC
+    url: https://ppsc.gov.in/index.aspx
+    render: static
+    runner: india
+    links: "ppsc\\.gov\\.in/index\\.aspx\\?page=\\d+"   # each notice opens its own page that holds the PDF
+    title_must: "recruit|vacanc|exam|result|selection|interview|admit|answer key|post of|posts of|appointment|merit|shortlist|भर्ती|परीक्षा|परिणाम|public notice"
+  - id: delhi-police
+    org: Delhi Police
+    url: https://delhipolice.gov.in/recruitments.html
+    render: static
+    runner: india
+    title_must: "recruit|vacanc|exam|result|selection|interview|admit|answer key|post of|posts of|appointment|merit|shortlist|भर्ती|परीक्षा|परिणाम|constable|head constable|sub-inspector"
