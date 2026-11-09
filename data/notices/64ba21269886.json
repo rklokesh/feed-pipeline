@@ -1,5 +1,20 @@
 {
   "board_url": "https://dsssb.delhi.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Welfare Officer / Probation Officer / Prison Welfare Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Rejection notice for individual candidates",
+    "summary_en": "DSSSB has released a rejection notice for candidates who applied for the Welfare Officer, Probation Officer, and Prison Welfare Officer posts under post code 801/23.",
+    "summary_hi": "डीएसएसएसबी ने पोस्ट कोड 801/23 के तहत कल्याण अधिकारी, प्रोबेशन अधिकारी और जेल कल्याण अधिकारी पदों के लिए आवेदन करने वाले उम्मीदवारों के लिए अस्वीकृति सूचना जारी की है।",
+    "title_en": "DSSSB Welfare Officer Post Code 801/23 Rejection Notice",
+    "title_hi": "DSSSB कल्याण अधिकारी पोस्ट कोड 801/23 अस्वीकृति सूचना",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "scanned"
   },
   "source_id": "dsssb-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "REJECTION NOTICE NO. 1075 WELFARE OFFICER/PROBATION OFFICER/PRISON WELFARE OFFICER IN DEPARTMENT OF WOMEN & CHILD DEVELOPMENT AND WELFARE OFFICER/PROBATION OFFICER/PRISON WELFARE OFFICER IN DEPARTMENT OF SOCIAL WELFARE UNDER POST CODE 801/23 Date: 09-11-2026 | 552.63 KB",
   "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/1075.pdf"
 }
