@@ -1916,11 +1916,17 @@ w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},2
         const n = rowsEls().length;
         if (e.key === "ArrowDown" && n) { e.preventDefault(); sel = Math.min(sel + 1, n - 1); markSel(); }
         else if (e.key === "ArrowUp" && n) { e.preventDefault(); sel = Math.max(sel - 1, 0); markSel(); }
-        else if (e.key === "Enter" && n) {
+        else if (e.key === "Enter") {
           e.preventDefault();
-          const row = rowsEls()[sel < 0 ? 0 : sel].querySelector("a.row");
           saveRecent(qIn.value);
-          if (row) row.click();
+          if (sel >= 0 && n) {   // a row picked with ↑ / ↓ opens; plain Enter just shows the matching rows
+            const row = rowsEls()[sel].querySelector("a.row");
+            if (row) row.click();
+          } else {
+            sgClose(); qIn.blur();
+            const list = document.getElementById("list");
+            if (list && list.getBoundingClientRect().top > innerHeight * .6) list.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
         }
         else if (e.key === "Escape") { qIn.value = ""; qIn.dispatchEvent(new Event("input")); qIn.blur(); }
       }
