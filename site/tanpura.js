@@ -27,11 +27,11 @@
   }
   // one string: rich harmonics (the tanpura's buzzing "jawari"), a filter that opens and slowly closes, a long fade
   var real = new Float32Array(24), imag = new Float32Array(24);
-  for (var h = 1; h < 24; h++) imag[h] = (h % 2 ? 1 : 0.8) / Math.pow(h, 0.85);
+  for (var h = 1; h < 24; h++) imag[h] = (h % 2 ? 1 : 0.85) / Math.pow(h, 0.6);
   function pluck(f, t, v) {
     var wave = ctx.createPeriodicWave(real, imag), g = ctx.createGain(), lp = ctx.createBiquadFilter();
     lp.type = "lowpass"; lp.Q.value = 2.2;
-    lp.frequency.setValueAtTime(f * 3, t); lp.frequency.linearRampToValueAtTime(f * 14, t + 0.9); lp.frequency.exponentialRampToValueAtTime(f * 2.2, t + 7);
+    lp.frequency.setValueAtTime(f * 4, t); lp.frequency.linearRampToValueAtTime(f * 18, t + 0.8); lp.frequency.exponentialRampToValueAtTime(f * 4, t + 7);
     g.gain.setValueAtTime(0.0001, t); g.gain.linearRampToValueAtTime(v, t + 0.04); g.gain.exponentialRampToValueAtTime(0.0001, t + 7.5);
     [-2.5, 2.5].forEach(function (cents) {
       var o = ctx.createOscillator(); o.setPeriodicWave(wave); o.frequency.value = f; o.detune.value = cents;
@@ -39,7 +39,7 @@
     });
     lp.connect(g); g.connect(master);
   }
-  var SA = 130.81;   // C3, a comfortable tanpura pitch
+  var SA = 196;   // G3: low enough to feel like a tanpura, high enough for phone and laptop speakers
   var CYCLE = [[SA * 0.75, 0.16], [SA, 0.13], [SA, 0.13], [SA / 2, 0.2]];   // Pa, Sa, Sa, low Sa
   function schedule() {
     while (next < ctx.currentTime + 1.5) {
@@ -50,10 +50,10 @@
   function start() {
     if (!ctx) setup();
     ctx.resume();
-    next = Math.max(next, ctx.currentTime + 0.1);
+    next = Math.max(next, ctx.currentTime + 0.05);
     master.gain.cancelScheduledValues(ctx.currentTime);
     master.gain.setValueAtTime(master.gain.value, ctx.currentTime);
-    master.gain.linearRampToValueAtTime(0.12, ctx.currentTime + 2.5);
+    master.gain.linearRampToValueAtTime(0.32, ctx.currentTime + 0.8);
     schedule(); clearInterval(timer); timer = setInterval(schedule, 500);
   }
   function stop() {
