@@ -1,0 +1,53 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://haryanapolice.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "age_limit": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": null,
+        "max": 50,
+        "min": 25
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Special Police Officers (SPOs)"
+      ]
+    },
+    "qualification": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "10+2 from recognized boards and minimum service in the Armed Forces/Central Armed Police Forces (CAPFs) should be five years."
+    },
+    "total_vacancies": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 400
+    }
+  },
+  "first_seen": "2026-11-09T11:59:45+00:00",
+  "id": "fa5149c162bb",
+  "kind": "notification",
+  "org": "Haryana Police",
+  "pdf": {
+    "bytes": 3716136,
+    "pages": 8,
+    "sha256": "86de6718f8f4f09a802be9229f15de4ec9d5865d6d67bf07f355b757c1f7fa9a",
+    "text_kind": "text"
+  },
+  "source_id": "haryana-police",
+  "status": "pending_review",
+  "title": "Engagement of scientific and support staff on purely contractual basis in the DNA division of Haryana FSL, Madhuban | Engagement of 170 SPOs in Haryana Police Telecommunication Wing | Missing person may be reported online on this portal after login Missing person may be reported online on this porta",
+  "url": "https://haryanapolice.gov.in/pdf/Engagement of 170 SPOs in Haryana Police Telecommunication Wing.pdf"
+}

@@ -1,0 +1,31 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://www.esic.gov.in/recruitments",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": {
+        "advt_no": "No. A-12011/1/2026-EXAM 9.11.2026"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "A-12011/1/2026-EXAM"
+    }
+  },
+  "first_seen": "2026-11-09T11:59:45+00:00",
+  "id": "7166d6a82b51",
+  "kind": "notification",
+  "org": "ESIC",
+  "pdf": {
+    "bytes": 1044000,
+    "pages": 7,
+    "sha256": "b0a5848a21e7135745ac726dd917c4bc1300bfd0b223882470b4dfceb376cac8",
+    "text_kind": "text"
+  },
+  "source_id": "esic-recruitment",
+  "status": "pending_review",
+  "title": "1 Recruitment Branch Recruitment of Professor in ESIC PGIMSRS & ESIC Medical Colleges on direct recruitment basis (Advertisement dated 19.05.2026)- PDF size:(1,019.53 KB) . 2026-11-09 Interview(2026-11-27) 12735/2026",
+  "url": "https://esic.gov.in/attachments/recruitmentfile/Recruitment_of_Professor_in_ESIC_PGIMSRS_amp_ESIC_Medical_Colleges_on_direct_recruitment_basis_Advertisement_dated_19_05_2026_1794215881.pdf"
+}

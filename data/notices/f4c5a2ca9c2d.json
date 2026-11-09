@@ -1,0 +1,22 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://upessc.up.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest:bad-response:'{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\\n  \\\\\"post_names\\\\\": [\\\\n    \\\\\"lgk;d v/;kid, “kgjh (URBAN)\\\\\",\\\\n    \\\\\"lgk;d v/;kid lEc) izkbej'"
+  },
+  "fields": {},
+  "first_seen": "2026-11-09T11:59:45+00:00",
+  "id": "f4c5a2ca9c2d",
+  "kind": "notification",
+  "org": "UPESSC",
+  "pdf": {
+    "bytes": 3000144,
+    "pages": 24,
+    "sha256": "71d39fff426b9d5a09ee7131893a14e0385ab4b9c860bda922d63a20605fd768",
+    "text_kind": "text"
+  },
+  "source_id": "upessc-home",
+  "status": "pending_review",
+  "title": "विस्तृत विज्ञापन 2026-09-16",
+  "url": "https://upessc.up.gov.in/Notice/4f85-4bbd-4ae9-d8e5-869d.pdf"
+}

@@ -1,0 +1,71 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://www.esic.gov.in/recruitments",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "03/2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "03/2026"
+    },
+    "age_limit": {
+      "evidence": "Not exceeding 69 years on the date of Walk-in-Interview",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": "2026-11-13",
+        "max": 69,
+        "min": null
+      }
+    },
+    "apply_url": {
+      "evidence": "www.esic.gov.in/recruitments",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "www.esic.gov.in/recruitments"
+    },
+    "exam_date": {
+      "evidence": "13-11-2026 @ 11 : 00 AM",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-13"
+    },
+    "post_names": {
+      "evidence": "Professor",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Professor"
+      ]
+    },
+    "qualification": {
+      "evidence": "1. Should possess the Postgraduate degree as prescribed or a recognized qualification equivalent thereto in Neuro-Surgery.\n2. A minimum of 8 years of work experience in the Dept. of Neuro-Surgery after obtaining the postgraduate degree.",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "Should possess the Postgraduate degree as prescribed or a recognized qualification equivalent thereto in Neuro-Surgery. A minimum of 8 years of work experience in the Dept. of Neuro-Surgery after obtaining the postgraduate degree."
+    },
+    "total_vacancies": {
+      "evidence": "1",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 1
+    }
+  },
+  "first_seen": "2026-11-09T11:59:45+00:00",
+  "id": "6ac07fa639d3",
+  "kind": "notification",
+  "org": "ESIC",
+  "pdf": {
+    "bytes": 790392,
+    "pages": 4,
+    "sha256": "6c1cb4885751d0e4bc37b475e1da2ae05ef4d649f921df06104dc1da4022bd7c",
+    "text_kind": "text"
+  },
+  "source_id": "esic-recruitment",
+  "status": "pending_review",
+  "title": "2 ईएसआईसी सुपर स्पेशलिटी अस्पताल , सनथनगर, हैदराबाद / ESIC Super Speciality Hospital Sanathnagar, Hyderabad, Telangana Walk-in Interview for Recruitment of Visiting Faculty/Adjunct Faculty for the post of Professor, Department of Neurosurgery- PDF size:(771.87 KB) . Application Form -Annexure-IV - P",
+  "url": "https://esic.gov.in/attachments/recruitmentfile/Walk_in_Interview_for_Recruitment_of_Visiting_Faculty_Adjunct_Faculty_for_the_post_of_Professor_Department_of_Neurosurgery_1794209410.pdf"
+}

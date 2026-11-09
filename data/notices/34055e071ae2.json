@@ -1,0 +1,28 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://delhipolice.gov.in/recruitments.html",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "d/e-Admission Certificate by clicking the link given below: https://sscnr.nic.in/newlook/ssc/dphcm/index.html ✓ Candidates are advised to read the instructions given on the e-Admit Card/e-A",
+      "source": "rule",
+      "value": "https://sscnr.nic.in/newlook/ssc/dphcm/index.html"
+    }
+  },
+  "first_seen": "2026-11-09T11:59:45+00:00",
+  "id": "34055e071ae2",
+  "kind": "admit_card",
+  "org": "Delhi Police",
+  "pdf": {
+    "bytes": 152782,
+    "pages": 1,
+    "sha256": "256e789c0d070184dbf5289bd72820a4b28b8552ac785b31ba1028c182898a5c",
+    "text_kind": "text"
+  },
+  "source_id": "delhi-police",
+  "status": "pending_review",
+  "title": "2 DOWNLOAD LINK FOR PEMT AND DV ADMIT CARD FOR THE POST OF HEAD CONSTABLE MINISTERIAL IN DELHI POLICE EXAMINATION 2025 PROVISIONALLY ALLOWED BY THE HONBLE CAT 07 Oct, 2026 07 Oct, 2027 View (165 KB)",
+  "url": "https://delhipolice.gov.in/assets/img/21520_Notice for PEMT Admit Card Head Const Ministerial CAT Allowed.pdf"
+}

@@ -1,0 +1,28 @@
+{
+  "baseline_sample": true,
+  "board_url": "https://delhipolice.gov.in/recruitments.html",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "d/e-Admission Certificate by clicking the link given below: https://sscnr.nic.in/newlook/ssc/dpawotpo/index.html ✓ Candidates are advised to read the instructions given on the e-Admit Card/e-A",
+      "source": "rule",
+      "value": "https://sscnr.nic.in/newlook/ssc/dpawotpo/index.html"
+    }
+  },
+  "first_seen": "2026-11-09T11:59:45+00:00",
+  "id": "e57f75a91102",
+  "kind": "admit_card",
+  "org": "Delhi Police",
+  "pdf": {
+    "bytes": 153550,
+    "pages": 1,
+    "sha256": "a22dc8b96e95410b33a182df3a1af920f6c8825b44b0f9a2de1b3cea3cf5c5ba",
+    "text_kind": "text"
+  },
+  "source_id": "delhi-police",
+  "status": "pending_review",
+  "title": "1 DOWNLOAD LINK FOR PEMT AND DV ADMIT CARD FOR THE POST OF HEAD CONSTABLE AWO TPO IN DELHI POLICE EXAMINATION 2025 PROVISIONALLY ALLOWED BY THE HONBLE CAT 07 Oct, 2026 07 Oct, 2027 View (165 KB)",
+  "url": "https://delhipolice.gov.in/assets/img/69428_Notice for PEMT Admit Card Head Const AWO TPO CAT Allowed.pdf"
+}
