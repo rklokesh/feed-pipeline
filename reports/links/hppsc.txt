@@ -1,5 +1,90 @@
-# hppsc https://www.hppsc.hp.gov.in/hppsc/
-## plain fetch failed: HTTPSConnectionPool(host='www.hppsc.hp.gov.in', port=443): Max retries exceeded with url: /hppsc/ (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.hppsc.hp.gov.in'. (_ssl.c:1010)")))
-## browser failed: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.hppsc.hp.gov.in/hppsc/
-Call log:
-navigating to "https://www.hppsc.hp.gov.in/hppsc/", waiting until "domcontentloaded"
+# hppsc https://hppsc.hp.gov.in/hppsc/
+## plain fetch: HTTP 200, 40689 bytes, final https://hppsc.hp.gov.in/Home/Exception?ErrorCode=400&IsAjaxRequest=N
+ | https://hppsc.hp.gov.in/
+Himachal Pradesh Public Service Commission | https://hppsc.hp.gov.in/
+ | https://hppsc.hp.gov.in/
+Historical Background | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLdB%2Fp7jeIi%2FvoSpAqxq8flKw7JmnUpWSTaHFVw%2FzBx5S
+Former Chairpersons | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLeS4O0FrLfjQ2DpND%2FMuwmVkkzaTkiE3KJ0nT6jikxQs
+Former Members | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLdm%2BQmm6WPx8eHDClGzRrV6zcfwXhkxbK4xiZXnKRx0g
+Constitutional Provisions | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLfh2bdBONCK%2FOOpBjB2FSaPVZkfEYIdss3ZINWzNHchi
+Chairman / Members | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLTSwbh2gYi%2B21rHgaltzXgxy7l%2F91n5wI6xHUjrCa75A
+Organization Structure | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLcHTtC7gOFakUg6tS6lyf1jXPI1PFXHzUrfiZ2dmNrFH
+Functions | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLedN%2BpCT6LJCHynJONPNDiNrCOTzU3jxXHgZ%2Bg3hUyYM
+Regulations, Rules & Acts | https://hppsc.hp.gov.in/Home/TableEntryPage?ms=h%2Fyhm1mKjnC9mpzNJfOfLQgD%2FAopfdtdzWW9S2L42Sv0%2BPATBKT17bZ8Iwzwk2mv
+Recruitment Methods | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLbqExl%2BQGMz8LQKLbD58%2B03oEJ3cZsscsGl6GRN3BDia
+Record Retention | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLXDl7GbcEvzTMRJ1deOQrajTQzz%2BsYn%2FhT7dwNnCp5fw
+Forms & Proforma | https://hppsc.hp.gov.in/Home/TableEntryPage?ms=h%2Fyhm1mKjnC9mpzNJfOfLdyakxz44BNs1cd%2FxtBhM2MoTCX8ej72hVIA8x5ADClA
+Office Order | https://hppsc.hp.gov.in/Home/TableEntryPage?ms=h%2Fyhm1mKjnC9mpzNJfOfLb4vw8%2BI5%2FJ1mpQYVbwdEykdF9UNc0vlyoQQGfTVZiPK
+Annual Report | https://hppsc.hp.gov.in/Home/TableEntryPage?ms=h%2Fyhm1mKjnC9mpzNJfOfLdCHRp8sBptr7994n82xFoi0GwP%2B%2FjWImoTOyqjssenv
+Media Gallery | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLcNI1ZIWRZ3UXMb1cMF%2BI9gns4nnoeQVOhjOCUsYc%2BVr
+Advertisement | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMItGo46f60VBXX8%2B1SQ83OzVLj9MfDScpvboDSdMygkK4iLV47Bu%2FJzMpJLanI%2BihrK9p8W6JsSQUgHTy39NyiuO%2BFtbEmiPQyc%3D
+Corrigendum | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMIu4hIgd%2ByqKQcY2Lm1nByNMRN5uFJjuKJVNdev3jIaa4nuysHF%2FLGzJM7tQzzAypQppYTJak5crG594hDwZRWy0W%2B9dKsJhYPg%3D
+Addendum | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMIuAlHSj9PWfLzMz4q1UHoDXzjitYxGsGKaiBWKGycrpaF5FPVETu%2FcAtHVSKjT1mpIwugp6BuQXf2nD%2FVaJoyj3i%2BysO9aYrlM%3D
+Press Note/Notice | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMIs8EEr8lZxERNMoHNx55ZkbIcwiRzGGx7anL%2Fmy725XOVnAneHEkz383luV85qKude70bFLtkm562v5EMUWAP9HistzrAJJYbg%3D
+Screening Test and Subject Aptitude Test / Written Exams | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMItVMGhRDsyS0o9BLNYQIjeTEAm3mUehgljI1tOy3DwliQiu5o6Xkc2EtIosyAMOvoYUzjpfBm%2FI4oaHF3IDkic397STjY1nlxs%3D
+Personality Test / Viva-Voce | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMIveW0iAADPEiC57R27%2BGya8ay4kbm0dJkcnlKHGzV4U5%2BQlrRl1TG3OQWWkf93oLxROjrnFX90ov6IhjjgH2qZXMgsT6KqPbJM%3D
+FAQs | https://hppsc.hp.gov.in/Home/FAQs?qs=h%2Fyhm1mKjnB%2B07%2Bf5sXrO9MWRIpsYbDms2vfRhgaaq%2B3HJ30abApdkJKePJyE0vx
+Contact Us | https://hppsc.hp.gov.in/Home/ContentPage?qs=EFjSG8GfYpAQEqBvsNmwmUuDcfV2s2nacBgtE%2BNUt2beax42e1fJcg%3D%3D
+Homepage | https://hppsc.hp.gov.in/
+Sitemap | https://hppsc.hp.gov.in/Home/SiteMap
+Disclaimer | https://hppsc.hp.gov.in/Home/BottomMenuContentPage?qs=EFjSG8GfYpAmbH3jQ8y%2F8Q%3D%3D
+Copyright Policy | https://hppsc.hp.gov.in/Home/BottomMenuContentPage?qs=h%2Fyhm1mKjnA1dPZdI9AvPQ%3D%3D
+Website Policy | https://hppsc.hp.gov.in/Home/BottomMenuContentPage?qs=mooAeLYbRuRDheocEmvdlQ%3D%3D
+Help | https://hppsc.hp.gov.in/Home/BottomMenuContentPage?qs=h%2Fyhm1mKjnDdCT4TKNe2sg%3D%3D
+## browser: final https://hppsc.hp.gov.in/Home/Exception?ErrorCode=400&IsAjaxRequest=N, title 'HP Public Service Commission: Error', 79168 chars
+ | https://hppsc.hp.gov.in/
+Himachal Pradesh Public Service Commission | https://hppsc.hp.gov.in/
+ | https://hppsc.hp.gov.in/
+Historical Background | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLdB%2Fp7jeIi%2FvoSpAqxq8flKw7JmnUpWSTaHFVw%2FzBx5S
+Former Chairpersons | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLeS4O0FrLfjQ2DpND%2FMuwmVkkzaTkiE3KJ0nT6jikxQs
+Former Members | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLdm%2BQmm6WPx8eHDClGzRrV6zcfwXhkxbK4xiZXnKRx0g
+Constitutional Provisions | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLfh2bdBONCK%2FOOpBjB2FSaPVZkfEYIdss3ZINWzNHchi
+Chairman / Members | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLTSwbh2gYi%2B21rHgaltzXgxy7l%2F91n5wI6xHUjrCa75A
+Organization Structure | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLcHTtC7gOFakUg6tS6lyf1jXPI1PFXHzUrfiZ2dmNrFH
+Functions | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLedN%2BpCT6LJCHynJONPNDiNrCOTzU3jxXHgZ%2Bg3hUyYM
+Regulations, Rules & Acts | https://hppsc.hp.gov.in/Home/TableEntryPage?ms=h%2Fyhm1mKjnC9mpzNJfOfLQgD%2FAopfdtdzWW9S2L42Sv0%2BPATBKT17bZ8Iwzwk2mv
+Recruitment Methods | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLbqExl%2BQGMz8LQKLbD58%2B03oEJ3cZsscsGl6GRN3BDia
+Record Retention | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLXDl7GbcEvzTMRJ1deOQrajTQzz%2BsYn%2FhT7dwNnCp5fw
+Forms & Proforma | https://hppsc.hp.gov.in/Home/TableEntryPage?ms=h%2Fyhm1mKjnC9mpzNJfOfLdyakxz44BNs1cd%2FxtBhM2MoTCX8ej72hVIA8x5ADClA
+Office Order | https://hppsc.hp.gov.in/Home/TableEntryPage?ms=h%2Fyhm1mKjnC9mpzNJfOfLb4vw8%2BI5%2FJ1mpQYVbwdEykdF9UNc0vlyoQQGfTVZiPK
+Annual Report | https://hppsc.hp.gov.in/Home/TableEntryPage?ms=h%2Fyhm1mKjnC9mpzNJfOfLdCHRp8sBptr7994n82xFoi0GwP%2B%2FjWImoTOyqjssenv
+Media Gallery | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLcNI1ZIWRZ3UXMb1cMF%2BI9gns4nnoeQVOhjOCUsYc%2BVr
+Advertisement | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMItGo46f60VBXX8%2B1SQ83OzVLj9MfDScpvboDSdMygkK4iLV47Bu%2FJzMpJLanI%2BihrK9p8W6JsSQUgHTy39NyiuO%2BFtbEmiPQyc%3D
+Corrigendum | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMIu4hIgd%2ByqKQcY2Lm1nByNMRN5uFJjuKJVNdev3jIaa4nuysHF%2FLGzJM7tQzzAypQppYTJak5crG594hDwZRWy0W%2B9dKsJhYPg%3D
+Addendum | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMIuAlHSj9PWfLzMz4q1UHoDXzjitYxGsGKaiBWKGycrpaF5FPVETu%2FcAtHVSKjT1mpIwugp6BuQXf2nD%2FVaJoyj3i%2BysO9aYrlM%3D
+Press Note/Notice | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMIs8EEr8lZxERNMoHNx55ZkbIcwiRzGGx7anL%2Fmy725XOVnAneHEkz383luV85qKude70bFLtkm562v5EMUWAP9HistzrAJJYbg%3D
+Screening Test and Subject Aptitude Test / Written Exams | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMItVMGhRDsyS0o9BLNYQIjeTEAm3mUehgljI1tOy3DwliQiu5o6Xkc2EtIosyAMOvoYUzjpfBm%2FI4oaHF3IDkic397STjY1nlxs%3D
+Personality Test / Viva-Voce | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMIveW0iAADPEiC57R27%2BGya8ay4kbm0dJkcnlKHGzV4U5%2BQlrRl1TG3OQWWkf93oLxROjrnFX90ov6IhjjgH2qZXMgsT6KqPbJM%3D
+FAQs | https://hppsc.hp.gov.in/Home/FAQs?qs=h%2Fyhm1mKjnB%2B07%2Bf5sXrO9MWRIpsYbDms2vfRhgaaq%2B3HJ30abApdkJKePJyE0vx
+Contact Us | https://hppsc.hp.gov.in/Home/ContentPage?qs=EFjSG8GfYpAQEqBvsNmwmUuDcfV2s2nacBgtE%2BNUt2beax42e1fJcg%3D%3D
+ | https://hppsc.hp.gov.in/
+Himachal Pradesh Public Service Commission | https://hppsc.hp.gov.in/
+ | https://hppsc.hp.gov.in/
+Historical Background | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLdB%2Fp7jeIi%2FvoSpAqxq8flKw7JmnUpWSTaHFVw%2FzBx5S
+Former Chairpersons | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLeS4O0FrLfjQ2DpND%2FMuwmVkkzaTkiE3KJ0nT6jikxQs
+Former Members | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLdm%2BQmm6WPx8eHDClGzRrV6zcfwXhkxbK4xiZXnKRx0g
+Constitutional Provisions | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLfh2bdBONCK%2FOOpBjB2FSaPVZkfEYIdss3ZINWzNHchi
+Chairman / Members | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLTSwbh2gYi%2B21rHgaltzXgxy7l%2F91n5wI6xHUjrCa75A
+Organization Structure | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLcHTtC7gOFakUg6tS6lyf1jXPI1PFXHzUrfiZ2dmNrFH
+Functions | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLedN%2BpCT6LJCHynJONPNDiNrCOTzU3jxXHgZ%2Bg3hUyYM
+Regulations, Rules & Acts | https://hppsc.hp.gov.in/Home/TableEntryPage?ms=h%2Fyhm1mKjnC9mpzNJfOfLQgD%2FAopfdtdzWW9S2L42Sv0%2BPATBKT17bZ8Iwzwk2mv
+Recruitment Methods | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLbqExl%2BQGMz8LQKLbD58%2B03oEJ3cZsscsGl6GRN3BDia
+Record Retention | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLXDl7GbcEvzTMRJ1deOQrajTQzz%2BsYn%2FhT7dwNnCp5fw
+Forms & Proforma | https://hppsc.hp.gov.in/Home/TableEntryPage?ms=h%2Fyhm1mKjnC9mpzNJfOfLdyakxz44BNs1cd%2FxtBhM2MoTCX8ej72hVIA8x5ADClA
+Office Order | https://hppsc.hp.gov.in/Home/TableEntryPage?ms=h%2Fyhm1mKjnC9mpzNJfOfLb4vw8%2BI5%2FJ1mpQYVbwdEykdF9UNc0vlyoQQGfTVZiPK
+Annual Report | https://hppsc.hp.gov.in/Home/TableEntryPage?ms=h%2Fyhm1mKjnC9mpzNJfOfLdCHRp8sBptr7994n82xFoi0GwP%2B%2FjWImoTOyqjssenv
+Media Gallery | https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLcNI1ZIWRZ3UXMb1cMF%2BI9gns4nnoeQVOhjOCUsYc%2BVr
+Advertisement | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMItGo46f60VBXX8%2B1SQ83OzVLj9MfDScpvboDSdMygkK4iLV47Bu%2FJzMpJLanI%2BihrK9p8W6JsSQUgHTy39NyiuO%2BFtbEmiPQyc%3D
+Corrigendum | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMIu4hIgd%2ByqKQcY2Lm1nByNMRN5uFJjuKJVNdev3jIaa4nuysHF%2FLGzJM7tQzzAypQppYTJak5crG594hDwZRWy0W%2B9dKsJhYPg%3D
+Addendum | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMIuAlHSj9PWfLzMz4q1UHoDXzjitYxGsGKaiBWKGycrpaF5FPVETu%2FcAtHVSKjT1mpIwugp6BuQXf2nD%2FVaJoyj3i%2BysO9aYrlM%3D
+Press Note/Notice | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMIs8EEr8lZxERNMoHNx55ZkbIcwiRzGGx7anL%2Fmy725XOVnAneHEkz383luV85qKude70bFLtkm562v5EMUWAP9HistzrAJJYbg%3D
+Screening Test and Subject Aptitude Test / Written Exams | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMItVMGhRDsyS0o9BLNYQIjeTEAm3mUehgljI1tOy3DwliQiu5o6Xkc2EtIosyAMOvoYUzjpfBm%2FI4oaHF3IDkic397STjY1nlxs%3D
+Personality Test / Viva-Voce | https://hppsc.hp.gov.in/CommonControls/ViewContinuousLinkPage?qs=mhlKjiXMMIveW0iAADPEiC57R27%2BGya8ay4kbm0dJkcnlKHGzV4U5%2BQlrRl1TG3OQWWkf93oLxROjrnFX90ov6IhjjgH2qZXMgsT6KqPbJM%3D
+FAQs | https://hppsc.hp.gov.in/Home/FAQs?qs=h%2Fyhm1mKjnB%2B07%2Bf5sXrO9MWRIpsYbDms2vfRhgaaq%2B3HJ30abApdkJKePJyE0vx
+Contact Us | https://hppsc.hp.gov.in/Home/ContentPage?qs=EFjSG8GfYpAQEqBvsNmwmUuDcfV2s2nacBgtE%2BNUt2beax42e1fJcg%3D%3D
+Homepage | https://hppsc.hp.gov.in/
+Sitemap | https://hppsc.hp.gov.in/Home/SiteMap
+Disclaimer | https://hppsc.hp.gov.in/Home/BottomMenuContentPage?qs=EFjSG8GfYpAmbH3jQ8y%2F8Q%3D%3D
+Copyright Policy | https://hppsc.hp.gov.in/Home/BottomMenuContentPage?qs=h%2Fyhm1mKjnA1dPZdI9AvPQ%3D%3D
+Website Policy | https://hppsc.hp.gov.in/Home/BottomMenuContentPage?qs=mooAeLYbRuRDheocEmvdlQ%3D%3D
+Help | https://hppsc.hp.gov.in/Home/BottomMenuContentPage?qs=h%2Fyhm1mKjnDdCT4TKNe2sg%3D%3D

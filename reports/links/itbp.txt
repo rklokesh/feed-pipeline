@@ -1,39 +1,5 @@
 # itbp https://recruitment.itbpolice.nic.in/
-## plain fetch: HTTP 200, 95466 bytes, final https://recruitment.itbpolice.nic.in/
-COMPASSIONATE RECRUITMENT | https://recruitment.itbpolice.nic.in/statics/government-orders
-FAQS | https://recruitment.itbpolice.nic.in/statics/faqs
-REFUND POLICY | https://recruitment.itbpolice.nic.in/statics/refundpolicy
-HOW TO REGISTER | https://recruitment.itbpolice.nic.in/statics/howtoregister
-LOGIN FOR OLD RECRUITMENT | https://recruitment.itbpolice.nic.in/applicant-profile-details/applicant-login
-NEW USER REGISTRATION | https://recruitment.itbpolice.nic.in/registrations/applicant-signup
-LOGIN | https://recruitment.itbpolice.nic.in/applicant-profile-details/applicant-login
-Download Admit Card for PET/PST - 2025 | https://recruitment.itbpolice.nic.in/rect/OpenAdmitCard/openAdmitCardLoginO
-Download Admit Card for PET/PST -2025 (Only for AC/GD) | https://recruitment.itbpolice.nic.in/rect/upsc/upsc-admit-card-login
-ITB Police Website | https://www.itbpolice.nic.in/
-Pay Matrix | https://recruitment.itbpolice.nic.in/statics/payscale
-Recruitment Schemes | https://recruitment.itbpolice.nic.in/statics/scheme
-Frontier Locations | https://recruitment.itbpolice.nic.in/statics/locations
-Medical Standards | https://recruitment.itbpolice.nic.in/statics/medical
- | https://itbpolice.nic.in/VideoGallery/slides/ITBP%20Status%20Movie%202021.mp4
-VIEW ALL NEWS | https://recruitment.itbpolice.nic.in/statics/news
-VIEW ALL RESULTS | https://recruitment.itbpolice.nic.in/statics/results
-Admin Login | https://recruitment.itbpolice.nic.in/users/login
-## browser: final https://recruitment.itbpolice.nic.in/, title 'ITBP - INDO TIBETAN BORDER POLICE FORCE', 94141 chars
-COMPASSIONATE RECRUITMENT | https://recruitment.itbpolice.nic.in/statics/government-orders
-FAQS | https://recruitment.itbpolice.nic.in/statics/faqs
-REFUND POLICY | https://recruitment.itbpolice.nic.in/statics/refundpolicy
-HOW TO REGISTER | https://recruitment.itbpolice.nic.in/statics/howtoregister
-LOGIN FOR OLD RECRUITMENT | https://recruitment.itbpolice.nic.in/applicant-profile-details/applicant-login
-NEW USER REGISTRATION | https://recruitment.itbpolice.nic.in/registrations/applicant-signup
-LOGIN | https://recruitment.itbpolice.nic.in/applicant-profile-details/applicant-login
-Download Admit Card for PET/PST - 2025 | https://recruitment.itbpolice.nic.in/rect/OpenAdmitCard/openAdmitCardLoginO
-Download Admit Card for PET/PST -2025 (Only for AC/GD) | https://recruitment.itbpolice.nic.in/rect/upsc/upsc-admit-card-login
-ITB Police Website | https://www.itbpolice.nic.in/
-Pay Matrix | https://recruitment.itbpolice.nic.in/statics/payscale
-Recruitment Schemes | https://recruitment.itbpolice.nic.in/statics/scheme
-Frontier Locations | https://recruitment.itbpolice.nic.in/statics/locations
-Medical Standards | https://recruitment.itbpolice.nic.in/statics/medical
- | https://itbpolice.nic.in/VideoGallery/slides/ITBP%20Status%20Movie%202021.mp4
-VIEW ALL NEWS | https://recruitment.itbpolice.nic.in/statics/news
-VIEW ALL RESULTS | https://recruitment.itbpolice.nic.in/statics/results
-Admin Login | https://recruitment.itbpolice.nic.in/users/login
+## plain fetch failed: HTTPSConnectionPool(host='recruitment.itbpolice.nic.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='recruitment.itbpolice.nic.in', port=443) at 0x107e03f80>, 'Connection to recruitment.itbpolice.nic.in timed out. (connect timeout=30)'))
+## browser failed: Page.goto: Timeout 45000ms exceeded.
+Call log:
+navigating to "https://recruitment.itbpolice.nic.in/", waiting until "domcontentloaded"

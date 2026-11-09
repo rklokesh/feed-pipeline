@@ -1,0 +1,5 @@
+# shsb https://shsb.bihar.gov.in/
+## plain fetch failed: HTTPSConnectionPool(host='shsb.bihar.gov.in', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='shsb.bihar.gov.in', port=443): Failed to resolve 'shsb.bihar.gov.in' ([Errno 8] nodename nor servname provided, or not known)"))
+## browser failed: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://shsb.bihar.gov.in/
+Call log:
+navigating to "https://shsb.bihar.gov.in/", waiting until "domcontentloaded"
