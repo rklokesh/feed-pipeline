@@ -22,7 +22,7 @@
     "age_max": null,
     "age_min": null,
     "age_on": null,
-    "domicile": "Uttar Pradesh",
+    "domicile": null,
     "qual": null,
     "relax": {}
   },
@@ -40,153 +40,108 @@
   "org": "UPESSC",
   "page": {
     "after_en": [
-      "Candidates who qualify the written examination will be called for document verification.",
-      "Selected candidates must submit two sets of printed application copies along with required documents at the commission office during verification."
+      "Document verification and final appointment based on written exam merit and preference choices."
     ],
     "after_hi": [
-      "लिखित परीक्षा उत्तीर्ण करने वाले उम्मीदवारों को अभिलेख सत्यापन के लिए बुलाया जाएगा.",
-      "चयनित उम्मीदवारों को सत्यापन के दौरान आयोग कार्यालय में आवश्यक दस्तावेजों के साथ आवेदन पत्र की मुद्रित प्रतियों के दो सेट जमा करने होंगे।"
+      "लिखित परीक्षा की मेरिट और वरीयता विकल्पों के आधार पर दस्तावेज सत्यापन और अंतिम नियुक्ति।"
     ],
     "age": [],
     "apply_start": "2026-09-16",
-    "apply_url": "https://www.upessc.up.gov.in",
+    "apply_url": "https://upessc.up.gov.in",
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Verify your eligibility before starting the application",
-      "Keep scanned photo, signature, and certificates ready as per specified dimensions",
-      "Complete OTR and verify all filled details before final submission",
-      "Pay the application fee and save the payment confirmation",
-      "Print three copies of the submitted application form"
+      "Complete OTR registration",
+      "Check scanned file sizes and resolutions",
+      "Keep 3 printouts of the final submitted application form"
     ],
     "checklist_hi": [
-      "आवेदन शुरू करने से पहले अपनी पात्रता सत्यापित करें",
-      "निर्दिष्टीकरण के अनुसार स्कैन की गई फोटो, हस्ताक्षर और प्रमाण-पत्र तैयार रखें",
-      "अंतिम सबमिशन से पहले OTR पूरा करें और सभी भरे हुए विवरणों की जांच करें",
-      "परीक्षा शुल्क का भुगतान करें और भुगतान की पुष्टि सहेजें",
-      "जमा किए गए आवेदन पत्र की तीन प्रतियां प्रिंट करें"
+      "ओटीआर पंजीकरण पूरा करें",
+      "स्कैन की गई फ़ाइल का आकार और रेजोल्यूशन जांचें",
+      "अंतिम जमा किए गए आवेदन पत्र के 3 प्रिंटआउट रखें"
     ],
     "conducted_by_en": "Uttar Pradesh Education Services Selection Commission (UPESSC)",
     "conducted_by_hi": "उत्तर प्रदेश शिक्षा सेवा चयन आयोग (यूपीईएसएससी)",
     "dates": [
       {
-        "label_en": "Notification publication date",
+        "label_en": "Advertisement publication date",
         "label_hi": "विज्ञापन प्रकाशन की तिथि",
         "value_en": "15 Sep 2026",
-        "value_hi": "15 सितं 2026"
+        "value_hi": "15.09.2026"
       },
       {
         "label_en": "Online application starts",
         "label_hi": "ऑनलाइन आवेदन प्रारम्भ होने की तिथि",
         "value_en": "16 Sep 2026",
-        "value_hi": "16 सितं 2026"
+        "value_hi": "16.09.2026"
       },
       {
         "label_en": "Last date to apply and pay fee",
         "label_hi": "ऑनलाइन आवेदन शुल्क जमा करने की अन्तिम तिथि",
         "value_en": "15 Oct 2026",
-        "value_hi": "15 अक्तू 2026"
+        "value_hi": "15.10.2026"
       },
       {
-        "label_en": "Correction window last date",
+        "label_en": "Application correction window last date",
         "label_hi": "ऑनलाइन आवेदन में संशोधन की अंतिम तिथि",
         "value_en": "19 Oct 2026",
-        "value_hi": "19 अक्तू 2026"
+        "value_hi": "19.10.2026"
       },
       {
         "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "03 & 04 Dec 2026",
-        "value_hi": "03 और 04 दिसं 2026"
+        "value_hi": "03 व 04 दिसम्बर, 2026"
       }
     ],
     "documents_en": [
-      "High School pass certificate for date of birth",
+      "High School or equivalent passing certificate for date of birth verification",
       "Scanned photograph (30 KB to 300 KB, 300 to 600 Pixel Resolution)",
       "Scanned signature on white background (10 KB to 200 KB, 140x110 Pixel Resolution)",
-      "Required educational and category certificates in PDF format (50 KB to 500 KB)",
-      "Two sets of printed copies of application form along with documents for document verification"
+      "Category/Caste certificates in PDF format (50 KB to 500 KB)"
     ],
     "documents_hi": [
-      "जन्मतिथि हेतु हाईस्कूल उत्तीर्ण प्रमाण-पत्र",
+      "जन्म तिथि सत्यापन के लिए हाईस्कूल या समकक्ष उत्तीर्ण प्रमाण-पत्र",
       "स्कैन की गई पासपोर्ट साइज फोटो (30 KB से 300 KB, 300 से 600 पिक्सेल रेजोल्यूशन)",
       "सफेद पृष्ठभूमि पर स्कैन किए गए हस्ताक्षर (10 KB से 200 KB, 140x110 पिक्सेल रेजोल्यूशन)",
-      "PDF फॉर्मेट में आवश्यक शैक्षणिक और श्रेणी प्रमाण-पत्र (50 KB से 500 KB)",
-      "अभिलेख सत्यापन के लिए दस्तावेजों के साथ आवेदन पत्र की मुद्रित प्रतियों के दो सेट"
+      "पीडीएफ प्रारूप में श्रेणी/जाति प्रमाण-पत्र (50 KB से 500 KB)"
     ],
-    "eligibility": [
-      {
-        "label_en": "Nationality",
-        "label_hi": "राष्ट्रीयता",
-        "value_en": "Citizen of India",
-        "value_hi": "भारत का नागरिक"
-      },
-      {
-        "label_en": "Date of Birth Proof",
-        "label_hi": "जन्मतिथि का प्रमाण",
-        "value_en": "High School or equivalent examination pass certificate",
-        "value_hi": "हाईस्कूल अथवा समकक्ष उत्तीर्ण परीक्षा का प्रमाण-पत्र"
-      }
-    ],
+    "eligibility": [],
     "exam_date": "2026-12-03",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is a recruitment process conducted by the Uttar Pradesh Education Services Selection Commission to select eligible candidates for Assistant Teacher posts in primary urban schools and associated primary aided schools across the state.",
-        "a_hi": "यह उत्तर प्रदेश शिक्षा सेवा चयन आयोग द्वारा राज्य भर के शहरी प्राथमिक विद्यालयों और संबद्ध प्राथमिक सहायता प्राप्त विद्यालयों में सहायक अध्यापक पदों के लिए योग्य उम्मीदवारों का चयन करने के लिए आयोजित की जाने वाली भर्ती प्रक्रिया है।",
-        "q_en": "What is UPESSC Assistant Teacher Recruitment?",
-        "q_hi": "यूपीईएसएससी सहायक अध्यापक भर्ती क्या है?"
+        "a_en": "It is a recruitment drive conducted by the Uttar Pradesh Education Services Selection Commission to select Assistant Teachers for primary and associated primary schools in Uttar Pradesh.",
+        "a_hi": "यह उत्तर प्रदेश शिक्षा सेवा चयन आयोग द्वारा उत्तर प्रदेश के प्राथमिक और संबद्ध प्राथमिक विद्यालयों के लिए सहायक शिक्षकों का चयन करने के लिए आयोजित एक भर्ती अभियान है।",
+        "q_en": "What is UPESSC Assistant Teacher Recruitment 2026?",
+        "q_hi": "यूपीईएसएससी सहायक अध्यापक भर्ती 2026 क्या है?"
       }
     ],
     "extra": [],
     "faq": [
       {
-        "a_en": "There are a total of 12,405 vacancies, including 11,508 posts for Primary Urban schools and 897 posts for Associated Primary schools.",
-        "a_hi": "कुल 12,405 रिक्तियां हैं, जिनमें प्राथमिक शहरी विद्यालयों के लिए 11,508 पद और संबद्ध प्राथमिक विद्यालयों के लिए 897 पद शामिल हैं।",
-        "q_en": "What is the total number of vacancies for UPESSC Assistant Teacher Recruitment 2026?",
-        "q_hi": "यूपीईएसएससी सहायक अध्यापक भर्ती 2026 के लिए कुल रिक्तियां कितनी हैं?"
+        "a_en": "The last date to apply and pay the fee online is 15 October 2026.",
+        "a_hi": "ऑनलाइन आवेदन करने और शुल्क भुगतान करने की अंतिम तिथि 15 अक्टूबर 2026 है।",
+        "q_en": "What is the last date to apply for UPESSC Assistant Teacher Recruitment 2026?",
+        "q_hi": "यूपीईएसएससी सहायक अध्यापक भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "Online applications start on 16 September 2026.",
-        "a_hi": "ऑनलाइन आवेदन 16 सितंबर 2026 से शुरू होते हैं।",
-        "q_en": "When do online applications start for UPESSC Assistant Teacher 2026?",
-        "q_hi": "यूपीईएसएससी सहायक अध्यापक 2026 के लिए ऑनलाइन आवेदन कब शुरू होते हैं?"
-      },
-      {
-        "a_en": "The last date to submit online applications and pay the fee is 15 October 2026.",
-        "a_hi": "ऑनलाइन आवेदन करने और शुल्क का भुगतान करने की अंतिम तिथि 15 अक्टूबर 2026 है।",
-        "q_en": "What is the last date to apply online for UPESSC Assistant Teacher Recruitment 2026?",
-        "q_hi": "यूपीईएसएससी सहायक अध्यापक भर्ती 2026 के लिए ऑनलाइन आवेदन करने की अंतिम तिथि क्या है?"
-      },
-      {
-        "a_en": "The written examination is scheduled to be held on 03 and 04 December 2026.",
+        "a_en": "The written exam is scheduled to be held on 03 and 04 December 2026.",
         "a_hi": "लिखित परीक्षा 03 और 04 दिसंबर 2026 को आयोजित होने निर्धारित है।",
-        "q_en": "When is the UPESSC Assistant Teacher exam scheduled?",
-        "q_hi": "यूपीईएसएससी सहायक अध्यापक परीक्षा कब निर्धारित है?"
+        "q_en": "When is the UPESSC Assistant Teacher Exam 2026 scheduled?",
+        "q_hi": "यूपीईएसएससी सहायक अध्यापक परीक्षा 2026 कब आयोजित होने वाली है?"
       },
       {
-        "a_en": "Yes, all candidates must complete One Time Registration (OTR) before filling out the online application form.",
-        "a_hi": "हाँ, ऑनलाइन आवेदन पत्र भरने से पहले सभी उम्मीदवारों को वन टाइम रजिस्ट्रेशन (OTR) पूरा करना होगा।",
-        "q_en": "Is One Time Registration (OTR) mandatory for applying?",
-        "q_hi": "क्या आवेदन करने के लिए वन टाइम रजिस्ट्रेशन (OTR) अनिवार्य है?"
+        "a_en": "A total of 12,405 vacancies have been announced under Advertisement No. 05/2026.",
+        "a_hi": "विज्ञापन संख्या 05/2026 के तहत कुल 12,405 रिक्तियों की घोषणा की गई है।",
+        "q_en": "What is the total number of vacancies announced?",
+        "q_hi": "घोषित कुल रिक्तियों की संख्या क्या है?"
       },
       {
-        "a_en": "The advertisement number is 05 / 2026.",
-        "a_hi": "विज्ञापन संख्या 05 / 2026 है।",
-        "q_en": "What is the advertisement number for this recruitment?",
-        "q_hi": "इस भर्ती के लिए विज्ञापन संख्या क्या है?"
-      },
-      {
-        "a_en": "The last date to make corrections in the online application is 19 October 2026.",
-        "a_hi": "ऑनलाइन आवेदन में संशोधन करने की अंतिम तिथि 19 अक्टूबर 2026 है।",
-        "q_en": "What is the last date for correction in the online application?",
-        "q_hi": "ऑनलाइन आवेदन में संशोधन की अंतिम तिथि क्या है?"
-      },
-      {
-        "a_en": "The pass certificate of High School or equivalent examination is the only valid document for date of birth.",
-        "a_hi": "हाईस्कूल या समकक्ष उत्तीर्ण परीक्षा का प्रमाण-पत्र जन्मतिथि के लिए एकमात्र वैध दस्तावेज है।",
-        "q_en": "What documents are required to prove date of birth?",
-        "q_hi": "जन्मतिथि साबित करने के लिए कौन से दस्तावेज की आवश्यकता है?"
+        "a_en": "Yes, OTR based online application system is mandatory for all applicants.",
+        "a_hi": "हाँ, सभी आवेदकों के लिए ओटीआर आधारित ऑनलाइन आवेदन प्रणाली अनिवार्य है।",
+        "q_en": "Is One Time Registration (OTR) mandatory?",
+        "q_hi": "क्या वन टाइम रजिस्ट्रेशन (ओटीआर) अनिवार्य है?"
       }
     ],
     "fees": [],
@@ -194,52 +149,50 @@
     "h1_hi": "यूपीईएसएससी सहायक अध्यापक भर्ती 2026 – 12,405 पदों के लिए ऑनलाइन आवेदन",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official website at www.upessc.up.gov.in",
-      "Complete the One Time Registration (OTR)",
-      "Fill out the OTR based online application form in English",
-      "Upload scanned photograph, signature, and required certificates in specified format and size",
-      "Pay the application fee through Credit/Debit card or Net Banking",
-      "Submit the final application and print three copies for future records"
+      "Visit the official website at www.upessc.up.gov.in.",
+      "Complete the One Time Registration (OTR) process before applying.",
+      "Fill out the online application form in English.",
+      "Upload scanned photograph, signature, and required certificates as per specified dimensions.",
+      "Pay the examination fee through Credit/Debit Card or Net Banking.",
+      "Submit the final application and take three printouts for future reference."
     ],
     "how_hi": [
-      "आधिकारिक वेबसाइट www.upessc.up.gov.in पर जाएं",
-      "वन टाइम रजिस्ट्रेशन (OTR) पूरा करें",
-      "अंग्रेजी भाषा में OTR आधारित ऑनलाइन आवेदन पत्र भरें",
-      "निर्धारित फॉर्मेट और साइज में स्कैन की गई फोटो, हस्ताक्षर और आवश्यक प्रमाण-पत्र अपलोड करें",
-      "क्रेडिट/डेबिट कार्ड या नेट बैंकिंग के माध्यम से परीक्षा शुल्क का भुगतान करें",
-      "अंतिम आवेदन सबमिट करें और भविष्य के रिकॉर्ड के लिए तीन प्रतियां प्रिंट करें"
+      "आधिकारिक वेबसाइट www.upessc.up.gov.in पर जाएं।",
+      "आवेदन करने से पहले वन टाइम रजिस्ट्रेशन (ओटीआर) प्रक्रिया पूरी करें।",
+      "अंग्रेजी भाषा में ऑनलाइन आवेदन पत्र भरें।",
+      "निर्दिष्ट आयामों के अनुसार स्कैन की गई फोटो, हस्ताक्षर और आवश्यक प्रमाण पत्र अपलोड करें।",
+      "क्रेडिट/डेबिट कार्ड या नेट बैंकिंग के माध्यम से परीक्षा शुल्क का भुगतान करें।",
+      "अंतिम आवेदन जमा करें और भविष्य के संदर्भ के लिए तीन प्रिंटआउट सुरक्षित रखें।"
     ],
-    "intro_en": "The Uttar Pradesh Education Services Selection Commission (UPESSC), Prayagraj has released Advertisement No. 05 / 2026 for the recruitment of Assistant Teachers in primary urban schools and associated primary (aided) schools. A total of 12,405 vacancies are available. Online applications are open from 16 September 2026 to 15 October 2026. Eligible and interested candidates should review the official notification and apply online through the official website.",
-    "intro_hi": "उत्तर प्रदेश शिक्षा सेवा चयन आयोग (यूपीईएसएससी), प्रयागराज ने शहरी प्राथमिक विद्यालयों और संबद्ध प्राथमिक (अशासकीय सहायता प्राप्त) विद्यालयों में सहायक अध्यापकों की भर्ती के लिए विज्ञापन संख्या 05 / 2026 जारी किया है। कुल 12,405 रिक्तियां उपलब्ध हैं। ऑनलाइन आवेदन 16 सितंबर 2026 से 15 अक्टूबर 2026 तक खुले हैं। योग्य और इच्छुक उम्मीदवार आधिकारिक अधिसूचना की समीक्षा करें और आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन करें।",
+    "intro_en": "The Uttar Pradesh Education Services Selection Commission (UPESSC) has released Advertisement No. 05/2026 for the recruitment of 12,405 Assistant Teacher posts in urban primary schools and associated aided primary schools under the Basic Education Department and Secondary Education Department. Online applications open on 16 September 2026 and will close on 15 October 2026. Interested and eligible candidates must apply online through the official website using the OTR-based application system. The written examination is scheduled to be held on 03 and 04 December 2026.",
+    "intro_hi": "उत्तर प्रदेश शिक्षा सेवा चयन आयोग (यूपीईएसएससी) ने बेसिक शिक्षा विभाग और माध्यमिक शिक्षा विभाग के अंतर्गत शहरी प्राथमिक विद्यालयों और संबद्ध सहायता प्राप्त प्राथमिक विद्यालयों में सहायक अध्यापक के 12,405 पदों पर भर्ती के लिए विज्ञापन संख्या 05/2026 जारी किया है। ऑनलाइन आवेदन 16 सितंबर 2026 से शुरू होंगे और 15 अक्टूबर 2026 को समाप्त होंगे। इच्छुक और योग्य उम्मीदवार वन टाइम रजिस्ट्रेशन (ओटीआर) आधारित आवेदन प्रणाली का उपयोग करके आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं। लिखित परीक्षा 03 और 04 दिसंबर 2026 को आयोजित होने निर्धारित है।",
     "last_date": "2026-10-15",
     "mistakes_en": [
-      "Do not submit multiple applications; if multiple applications are submitted, only the last final application will be accepted and others will be rejected",
-      "Ensure all details such as category, sub-category, date of birth, and gender are filled correctly as no changes are permitted after final submission",
-      "Do not upload blurry photos or incorrect signature formats"
+      "Do not fill applications in any language other than English.",
+      "Ensure final submission is done carefully as category, gender, and date of birth cannot be changed after submission.",
+      "Do not upload blur photographs or incorrect signature formats."
     ],
     "mistakes_hi": [
-      "एक से अधिक आवेदन जमा न करें; यदि कई आवेदन जमा किए जाते हैं, तो केवल अंतिम आवेदन स्वीकार किया जाएगा और शेष निरस्त कर दिए जाएंगे",
-      "सुनिश्चित करें कि श्रेणी, उप-श्रेणी, जन्मतिथि और लिंग जैसे सभी विवरण सही ढंग से भरे गए हैं क्योंकि अंतिम सबमिशन के बाद कोई बदलाव की अनुमति नहीं है",
-      "धुंधली तस्वीरें या गलत हस्ताक्षर प्रारूप अपलोड न करें"
+      "अंग्रेजी के अलावा किसी अन्य भाषा में आवेदन न भरें।",
+      "सबमिट करने से पहले सावधानी बरतें क्योंकि सबमिट होने के बाद श्रेणी, लिंग और जन्मतिथि में बदलाव नहीं किया जा सकता है।",
+      "धुंधली तस्वीरें या गलत हस्ताक्षर प्रारूप अपलोड न करें।"
     ],
     "not_en": [
-      "Candidates who do not possess the mandatory qualifications by the last date of application",
-      "Applications submitted through any medium other than the online OTR system"
+      "Candidates who do not possess the mandatory qualifications by the last date of application."
     ],
     "not_hi": [
-      "वे उम्मीदवार जिनके पास आवेदन की अंतिम तिथि तक अनिवार्य योग्यताएं नहीं हैं",
-      "ऑनलाइन OTR प्रणाली के अलावा किसी अन्य माध्यम से भेजे गए आवेदन"
+      "वे उम्मीदवार जिनके पास आवेदन की अंतिम तिथि तक अनिवार्य योग्यताएं नहीं हैं।"
     ],
     "notice_date": "2026-09-15",
-    "official_site": "https://www.upessc.up.gov.in",
+    "official_site": "https://upessc.up.gov.in",
     "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
         "label_en": "Posts",
         "label_hi": "पद",
-        "value_en": "Assistant Teacher (Primary Urban & Associated Primary)",
-        "value_hi": "सहायक अध्यापक (प्राथमिक शहरी एवं संबद्ध प्राथमिक)"
+        "value_en": "Assistant Teacher (Primary & Associated Primary)",
+        "value_hi": "सहायक अध्यापक (प्राथमिक और संबद्ध प्राथमिक)"
       },
       {
         "label_en": "Total vacancies",
@@ -251,19 +204,13 @@
         "label_en": "Apply online",
         "label_hi": "ऑनलाइन आवेदन",
         "value_en": "16 Sep 2026 to 15 Oct 2026",
-        "value_hi": "16 सितं 2026 से 15 अक्तू 2026"
-      },
-      {
-        "label_en": "Last date for fee",
-        "label_hi": "शुल्क की अंतिम तिथि",
-        "value_en": "15 Oct 2026",
-        "value_hi": "15 अक्तू 2026"
+        "value_hi": "16 सितंबर 2026 से 15 अक्टूबर 2026"
       },
       {
         "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "03 & 04 Dec 2026",
-        "value_hi": "03 और 04 दिसं 2026"
+        "value_hi": "03 और 04 दिसंबर 2026"
       },
       {
         "label_en": "Advertisement number",
@@ -274,12 +221,10 @@
     ],
     "salary": [],
     "selection_en": [
-      "Written Examination",
-      "Document Verification"
+      "Written Examination"
     ],
     "selection_hi": [
-      "लिखित परीक्षा",
-      "अभिलेख सत्यापन"
+      "लिखित परीक्षा"
     ],
     "share_card": {
       "headline_en": "Recruitment 2026",
@@ -311,10 +256,10 @@
     ],
     "video_url": null,
     "who_en": [
-      "Indian citizens who meet the educational and other eligibility criteria for Assistant Teacher posts"
+      "Eligible Indian citizens aspiring to become Assistant Teachers in Uttar Pradesh primary schools."
     ],
     "who_hi": [
-      "भारतीय नागरिक जो सहायक अध्यापक पदों के लिए शैक्षणिक और अन्य पात्रता मानदंडों को पूरा करते हैं"
+      "उत्तर प्रदेश के प्राथमिक विद्यालयों में सहायक अध्यापक बनने के इच्छुक योग्य भारतीय नागरिक।"
     ]
   },
   "pdf": {
@@ -324,7 +269,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-09T12:05:34Z",
-  "rewrite": true,
   "slug": "upessc-assistant-teacher-recruitment-2026-apply-online-for-12-40",
   "source_id": "upessc-home",
   "status": "approved",
