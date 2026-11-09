@@ -117,6 +117,8 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 .themeb { display: inline-flex; color: var(--grey); }
 .themeb svg { display: block; transform: translateY(-0.5px); } /* optical centre with the words beside it */
 .top .themeb:hover { color: var(--ink); text-decoration: none; }
+/* logo drawn as a background, not an <img>: no "Save image" on right-click or long-press, no dragging */
+.top .logo .mark { background: url("/sarkarichart-logo-276.webp") center / contain no-repeat; -webkit-touch-callout: none; user-select: none; -webkit-user-drag: none; }
 /* the language and theme buttons in the header turn maroon on hover, like every link (soft pink in dark mode) */
 @media (hover: hover) { .top .nav-r button:hover, .top .nav-r button:hover::before { color: #8E1B1E !important; }
   :root[data-theme="dark"] .top .nav-r button:hover { color: #F2A7A1 !important; } }
@@ -827,7 +829,7 @@ w.classList.add(c);(function(w,c){setTimeout(function(){w.classList.remove(c)},2
 <div class="sheet">
   <header class="top">
     <span class="g" data-t="tagline">Govt jobs, exams, results</span>
-    <a class="logo" href="/" data-t-aria="home"><img draggable="false" class="mark" src="/sarkarichart-logo-276.webp" width="138" height="138" fetchpriority="high" alt="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-alt="logoAlt" fetchpriority="high" decoding="async"></a>
+    <a class="logo" href="/" data-t-aria="home"><span class="mark" role="img" aria-label="SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices" data-t-aria="logoAlt"></span></a>
     <span class="nav-r"><a href="/about/" data-t="about">About</a><button type="button" id="lang" lang="hi">हिंदी</button><button type="button" id="theme" class="themeb"></button></span>
   </header>
   <div class="adslot slim atop" data-ad="home-top"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox"><a class="house" href="https://t.me/sarkarichart" target="_blank" rel="noopener"><img src="/telegram.svg" alt="" width="22" height="22"><span data-t="adHouse">Get every new govt job alert on Telegram, free</span></a></div></div>
