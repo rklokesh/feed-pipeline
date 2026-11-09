@@ -1,6 +1,32 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://haryanapolice.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Special Police Officers (SPOs)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Haryana Police invites applications for the engagement of 400 Special Police Officers (SPOs) on a contractual basis in the Telecommunication Wing.",
+    "summary_hi": "हरियाणा पुलिस ने दूरसंचार विंग में अनुबंध के आधार पर 400 विशेष पुलिस अधिकारियों के पदों पर भर्ती के लिए आवेदन आमंत्रित किए हैं।",
+    "title_en": "Haryana Police SPO Recruitment 2026 – Apply for 400 Posts",
+    "title_hi": "हरियाणा पुलिस एसपीओ भर्ती 2026 – 400 पदों के लिए आवेदन करें",
+    "type": "Job",
+    "vacancies": 400
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": 50,
+    "age_min": 25,
+    "age_on": null,
+    "domicile": null,
+    "qual": "12th",
+    "relax": {}
+  },
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -38,16 +64,310 @@
   },
   "first_seen": "2026-11-09T11:59:45+00:00",
   "id": "fa5149c162bb",
+  "issue": 1189,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-09",
   "org": "Haryana Police",
+  "page": {
+    "after_en": [
+      "Document verification and medical examination of selected candidates",
+      "Verification of character and antecedents by district police authorities",
+      "Issuance of appointment letters and 15 days capsule training course"
+    ],
+    "after_hi": [
+      "चयनित उम्मीदवारों का दस्तावेज़ सत्यापन और चिकित्सा परीक्षण",
+      "जिला पुलिस अधिकारियों द्वारा चरित्र और पूर्ववृत्त का सत्यापन",
+      "नियुक्ति पत्र जारी करना और 15 दिनों का कैप्सूल प्रशिक्षण पाठ्यक्रम"
+    ],
+    "age": [
+      {
+        "label_en": "Minimum age",
+        "label_hi": "न्यूनतम आयु",
+        "value_en": "25 years",
+        "value_hi": "25 वर्ष"
+      },
+      {
+        "label_en": "Maximum age",
+        "label_hi": "अधिकतम आयु",
+        "value_en": "50 years",
+        "value_hi": "50 वर्ष"
+      },
+      {
+        "label_en": "As on date",
+        "label_hi": "आयु की गणना",
+        "value_en": "As on the date of advertisement",
+        "value_hi": "विज्ञापन की तिथि को"
+      }
+    ],
+    "apply_start": null,
+    "apply_url": null,
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Ensure you meet the age criteria of 25-50 years",
+      "Verify that your discharge medical category is 'A'",
+      "Check that your service in Armed Forces/CAPFs is at least 5 years",
+      "Fill out the application form in CAPITAL LETTERS completely"
+    ],
+    "checklist_hi": [
+      "सुनिश्चित करें कि आप 25-50 वर्ष की आयु सीमा को पूरा करते हैं",
+      "सत्यापित करें कि आपकी डिस्चार्ज मेडिकल श्रेणी 'A' है",
+      "जांच करें कि सशस्त्र बलों/CAPF में आपकी सेवा कम से कम 5 वर्ष है",
+      "आवेदन पत्र को पूरी तरह से बड़े अक्षरों में भरें"
+    ],
+    "conducted_by_en": "Haryana Police Telecommunication Wing (Haryana Police)",
+    "conducted_by_hi": "हरियाणा पुलिस दूरसंचार विंग (हरियाणा पुलिस)",
+    "dates": [],
+    "documents_en": [
+      "Educational certificates (10+2 and above)",
+      "Discharge certificate indicating medical category 'A' and exemplary/outstanding character",
+      "Aadhaar card photocopy",
+      "PAN card photocopy",
+      "Bank passbook photocopy",
+      "Caste / category certificate",
+      "Affidavit as per prescribed format"
+    ],
+    "documents_hi": [
+      "शैक्षणिक प्रमाण पत्र (10+2 और उससे ऊपर)",
+      "डिस्चार्ज प्रमाण पत्र जिसमें मेडिकल श्रेणी 'A' और उत्कृष्ट चरित्र का उल्लेख हो",
+      "आधार कार्ड की फोटोकॉपी",
+      "पैन कार्ड की फोटोकॉपी",
+      "बैंक पासबुक की फोटोकॉपी",
+      "जाति / श्रेणी प्रमाण पत्र",
+      "निर्धारित प्रारूप के अनुसार शपथ पत्र"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Education",
+        "label_hi": "शिक्षा",
+        "value_en": "Minimum 10+2 from recognized boards.",
+        "value_hi": "मान्यता प्राप्त बोर्डों से न्यूनतम 10+2।"
+      },
+      {
+        "label_en": "Service experience",
+        "label_hi": "सेवा अनुभव",
+        "value_en": "Minimum service in Armed Forces / Central Armed Police Forces (CAPFs) should be 5 years, or ex-constables of disbanded HSISF / HAP Battalions.",
+        "value_hi": "सशस्त्र बलों / केंद्रीय सशस्त्र पुलिस बलों (CAPFs) में न्यूनतम सेवा 5 वर्ष होनी चाहिए, या विघटित HSISF / HAP बटालियन के पूर्व कांस्टेबल।"
+      },
+      {
+        "label_en": "Medical and character",
+        "label_hi": "चिकित्सा और चरित्र",
+        "value_en": "Medical category at discharge should be 'A' and character certificate should be 'exemplary / outstanding'.",
+        "value_hi": "सेवानिवृत्ति के समय मेडिकल श्रेणी 'A' होनी चाहिए और चरित्र प्रमाण पत्र 'exemplary / outstanding' होना चाहिए।"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "Special Police Officers (SPOs) are engaged on a contractual basis to assist the police department during emergent situations and routine duties. This recruitment specifically fills 400 vacancies in the Telecommunication Wing.",
+        "a_hi": "विशेष पुलिस अधिकारियों (SPOs) को आपातकालीन स्थितियों और नियमित कर्तव्यों के दौरान पुलिस विभाग की सहायता के लिए अनुबंध के आधार पर नियुक्त किया जाता है। यह भर्ती विशेष रूप से दूरसंचार विंग में 400 रिक्तियों को भरती है।",
+        "q_en": "What is an SPO in Haryana Police?",
+        "q_hi": "हरियाणा पुलिस में SPO क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Monthly honorarium",
+        "label_hi": "मासिक मानदेय",
+        "value_en": "₹20,000 per month deposited directly to bank account",
+        "value_hi": "₹20,000 प्रति माह सीधे बैंक खाते में जमा किया जाएगा"
+      },
+      {
+        "label_en": "Uniform allowance",
+        "label_hi": "वर्दी भत्ता",
+        "value_en": "One-time uniform allowance of ₹3,000",
+        "value_hi": "₹3,000 का एकमुश्त वर्दी भत्ता"
+      },
+      {
+        "label_en": "Training",
+        "label_hi": "प्रशिक्षण",
+        "value_en": "15 days capsule course after selection",
+        "value_hi": "चयन के बाद 15 दिनों का कैप्सूल कोर्स"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "There are a total of 400 vacancies for Special Police Officers (SPOs) in the Telecommunication Wing.",
+        "a_hi": "दूरसंचार विंग में विशेष पुलिस अधिकारियों (SPOs) के लिए कुल 400 रिक्तियां हैं।",
+        "q_en": "How many vacancies are available for Haryana Police SPO Recruitment?",
+        "q_hi": "हरियाणा पुलिस SPO भर्ती के लिए कितनी रिक्तियां उपलब्ध हैं?"
+      },
+      {
+        "a_en": "Candidates must be between 25 and 50 years of age as on the date of advertisement.",
+        "a_hi": "विज्ञापन की तिथि को उम्मीदवारों की आयु 25 से 50 वर्ष के बीच होनी चाहिए।",
+        "q_en": "What is the age limit for Haryana Police SPOs?",
+        "q_hi": "हरियाणा पुलिस SPO के लिए आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "Candidates must have passed 10+2 from a recognized board along with a minimum of 5 years of service in the Armed Forces or CAPFs.",
+        "a_hi": "उम्मीदवारों को मान्यता प्राप्त बोर्ड से 10+2 उत्तीर्ण होना चाहिए और सशस्त्र बलों या CAPF में न्यूनतम 5 वर्ष की सेवा होनी चाहिए।",
+        "q_en": "What is the educational qualification required?",
+        "q_hi": "आवश्यक शैक्षणिक योग्यता क्या है?"
+      },
+      {
+        "a_en": "Selected SPOs will receive a monthly honorarium of ₹20,000, deposited directly into their bank accounts.",
+        "a_hi": "चयनित SPOs को ₹20,000 का मासिक मानदेय मिलेगा, जो सीधे उनके बैंक खातों में जमा किया जाएगा।",
+        "q_en": "What is the monthly salary/honorarium for these SPO posts?",
+        "q_hi": "इन SPO पदों के लिए मासिक वेतन/मानदेय कितना है?"
+      },
+      {
+        "a_en": "No written or physical test will be conducted for the engagement of Special Police Officers (SPOs).",
+        "a_hi": "विशेष पुलिस अधिकारियों (SPOs) की नियुक्ति के लिए कोई लिखित या शारीरिक परीक्षा आयोजित नहीं की जाएगी।",
+        "q_en": "Is there any written exam for this recruitment?",
+        "q_hi": "क्या इस भर्ती के लिए कोई लिखित परीक्षा है?"
+      },
+      {
+        "a_en": "The engagement is for a period of one year or up to the date of regular appointments, whichever is earlier.",
+        "a_hi": "नियुक्ति एक वर्ष की अवधि के लिए या नियमित नियुक्तियों की तिथि तक, जो भी पहले हो, के लिए है।",
+        "q_en": "What is the duration of engagement?",
+        "q_hi": "नियुक्ति की अवधि क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "Haryana Police SPO Recruitment 2026 – Apply for 400 Posts",
+    "h1_hi": "हरियाणा पुलिस एसपीओ भर्ती 2026 – 400 पदों के लिए आवेदन करें",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Download the application form and read all instructions carefully.",
+      "Fill out the application form in CAPITAL LETTERS with correct details.",
+      "Attach self-attested photocopies of required documents including Aadhaar, PAN, Bank Passbook, and discharge certificates.",
+      "Submit the completed application form to the designated office."
+    ],
+    "how_hi": [
+      "आवेदन पत्र डाउनलोड करें और सभी निर्देशों को ध्यान से पढ़ें।",
+      "सही विवरण के साथ बड़े अक्षरों (CAPITAL LETTERS) में आवेदन पत्र भरें।",
+      "आधार, पैन, बैंक पासबुक और डिस्चार्ज प्रमाण पत्र सहित आवश्यक दस्तावेजों की स्व-सत्यापित फोटोकॉपी संलग्न करें।",
+      "पूर्ण रूप से भरा हुआ आवेदन पत्र संबंधित कार्यालय में जमा करें।"
+    ],
+    "intro_en": "The Office of the Superintendent of Police, Telecommunication, Haryana, Panchkula has released a notification for the engagement of 400 Special Police Officers (SPOs) under Section 21 of the Haryana Police Act, 2007. The positions are purely on a contractual basis for a period of one year or until regular appointments are made. Ex-servicemen from the Armed Forces or Central Armed Police Forces (CAPFs), as well as ex-constables of disbanded Haryana State Industrial Security Force (HSISF) or Haryana Armed Police (HAP) Battalions, are eligible to apply. Interested and eligible candidates should review the terms and conditions and submit their applications as per the prescribed format.",
+    "intro_hi": "पुलिस अधीक्षक कार्यालय, दूरसंचार, हरियाणा, पंचकूला ने हरियाणा पुलिस अधिनियम, 2007 की धारा 21 के प्रावधानों के अंतर्गत 400 विशेष पुलिस अधिकारियों (SPOs) के अनुबंध के आधार पर चयन के लिए अधिसूचना जारी की है। ये पद विशुद्ध रूप से एक वर्ष की अवधि के लिए या नियमित आधार पर नियुक्तियों के होने तक, जो भी पहले हो, अनुबंध के आधार पर हैं। सशस्त्र बलों या केंद्रीय सशस्त्र पुलिस बलों (CAPFs) के पूर्व सैनिक और विघटित हरियाणा राज्य औद्योगिक सुरक्षा बल (HSISF) या हरियाणा सशस्त्र पुलिस (HAP) बटालियन के पूर्व कांस्टेबल आवेदन करने के पात्र हैं। इच्छुक और योग्य उम्मीदवार नियमों और शर्तों की समीक्षा कर निर्धारित प्रारूप में आवेदन जमा कर सकते हैं।",
+    "last_date": null,
+    "mistakes_en": [
+      "Submitting incomplete application forms without required certificates",
+      "Failing to attach bank account details or Aadhaar/PAN photocopies",
+      "Providing incorrect discharge details regarding medical category or character"
+    ],
+    "mistakes_hi": [
+      "आवश्यक प्रमाण पत्र के बिना अधूरा आवेदन पत्र जमा करना",
+      "बैंक खाता विवरण या आधार/पैन फोटोकॉपी संलग्न करने में विफल रहना",
+      "चिकित्सा श्रेणी या चरित्र के संबंध में गलत डिस्चार्ज विवरण प्रदान करना"
+    ],
+    "not_en": [
+      "Candidates removed or dismissed from service on grounds of indiscipline, misconduct, or medical unfitness",
+      "Candidates with less than 5 years of service in Armed Forces or CAPFs",
+      "Candidates having medical category other than 'A' at discharge"
+    ],
+    "not_hi": [
+      "अनुशासनहीनता, कदाचार या चिकित्सा अयोग्यता के आधार पर सेवा से हटाए गए या बर्खास्त किए गए उम्मीदवार",
+      "सशस्त्र बलों या CAPF में 5 वर्ष से कम सेवा वाले उम्मीदवार",
+      "सेवानिवृत्ति के समय 'A' के अलावा अन्य मेडिकल श्रेणी वाले उम्मीदवार"
+    ],
+    "notice_date": null,
+    "official_site": "https://haryanapolice.gov.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Special Police Officers (SPOs)",
+        "value_hi": "विशेष पुलिस अधिकारी (SPOs)"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "400",
+        "value_hi": "400"
+      },
+      {
+        "label_en": "Educational qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "10+2 with 5 years service in Armed Forces / CAPFs / disbanded HSISF / HAP",
+        "value_hi": "मान्यता प्राप्त बोर्ड से 10+2 और सशस्त्र बलों / CAPF / विघटित HSISF / HAP में 5 वर्ष की सेवा"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "25 to 50 years",
+        "value_hi": "25 से 50 वर्ष"
+      },
+      {
+        "label_en": "Selection process",
+        "label_hi": "चयन प्रक्रिया",
+        "value_en": "Document Verification and Medical Examination",
+        "value_hi": "दस्तावेज़ सत्यापन और चिकित्सा परीक्षण"
+      },
+      {
+        "label_en": "Monthly honorarium",
+        "label_hi": "मासिक मानदेय",
+        "value_en": "₹20,000 per month",
+        "value_hi": "₹20,000 प्रति माह"
+      }
+    ],
+    "salary": [
+      {
+        "label_en": "Honorarium",
+        "label_hi": "मानदेय",
+        "value_en": "₹20,000 per month",
+        "value_hi": "₹20,000 प्रति माह"
+      }
+    ],
+    "selection_en": [
+      "Verification of documents pertaining to qualification, age, caste/category, and certificates",
+      "Medical examination before appointment",
+      "Character and antecedents verification from concerned district police authority"
+    ],
+    "selection_hi": [
+      "योग्यता, आयु, जाति/श्रेणी और प्रमाण पत्र से संबंधित दस्तावेजों का सत्यापन",
+      "नियुक्ति से पहले चिकित्सा परीक्षण",
+      "संबंधित जिला पुलिस प्राधिकारी से चरित्र और पूर्ववृत्त का सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Special Police Officers (SPOs)",
+      "line_hi": "विशेष पुलिस अधिकारी (SPOs)",
+      "posts": 400
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Haryana Police invites applications for the engagement of 400 Special Police Officers (SPOs) on a contractual basis in the Telecommunication Wing from ex-servicemen and ex-constables. Eligible candidates can apply by submitting the offline application form.",
+    "summary_hi": "हरियाणा पुलिस ने पूर्व सैनिकों और पूर्व कांस्टेबलों में से दूरसंचार विंग में अनुबंध के आधार पर 400 विशेष पुलिस अधिकारियों (SPOs) के पदों पर भर्ती के लिए आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार ऑफ़लाइन आवेदन पत्र जमा करके आवेदन कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Engagement in the Telecommunication Wing of Haryana Police",
+        "detail_hi": "हरियाणा पुलिस के दूरसंचार विंग में अनुबंध",
+        "post_en": "Special Police Officers (SPOs)",
+        "post_hi": "विशेष पुलिस अधिकारी (SPOs)",
+        "total": "400"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Ex-servicemen from Armed Forces or CAPFs aged between 25 and 50 years",
+      "Ex-constables of disbanded HSISF or HAP Battalions"
+    ],
+    "who_hi": [
+      "25 से 50 वर्ष की आयु के सशस्त्र बलों या CAPF के पूर्व सैनिक",
+      "विघटित HSISF या HAP बटालियन के पूर्व कांस्टेबल"
+    ]
+  },
   "pdf": {
     "bytes": 3716136,
     "pages": 8,
     "sha256": "86de6718f8f4f09a802be9229f15de4ec9d5865d6d67bf07f355b757c1f7fa9a",
     "text_kind": "text"
   },
+  "published_at": "2026-11-09T12:05:41Z",
+  "qual": [
+    "10th"
+  ],
+  "slug": "haryana-police-spo-recruitment-2026-apply-for-400-posts",
   "source_id": "haryana-police",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Engagement of scientific and support staff on purely contractual basis in the DNA division of Haryana FSL, Madhuban | Engagement of 170 SPOs in Haryana Police Telecommunication Wing | Missing person may be reported online on this portal after login Missing person may be reported online on this porta",
   "url": "https://haryanapolice.gov.in/pdf/Engagement of 170 SPOs in Haryana Police Telecommunication Wing.pdf"
 }

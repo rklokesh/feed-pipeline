@@ -1,6 +1,24 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://delhipolice.gov.in/recruitments.html",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-10-12",
+    "last_date": null,
+    "list": true,
+    "posts": "Head Constable (AWO/TPO)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Delhi Police has released the admit card for the Physical Endurance and Measurement Test and Document Verification for candidates allowed by CAT. Download your admit card using the provided link.",
+    "summary_hi": "दिल्ली पुलिस ने सीएटी द्वारा अनुमति प्राप्त उम्मीदवारों के लिए शारीरिक सहनशक्ति और माप परीक्षण तथा दस्तावेज सत्यापन के लिए प्रवेश पत्र जारी कर दिया है। दिए गए लिंक का उपयोग करके अपना प्रवेश पत्र डाउनलोड करें।",
+    "title_en": "Delhi Police Head Constable AWO TPO Admit Card 2025 – PE&MT Date",
+    "title_hi": "दिल्ली पुलिस हेड कांस्टेबल ए डब्ल्यू ओ टी पी ओ एडमिट कार्ड 2025 – पीई एंड एमटी तिथि",
+    "type": "Admit card",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {},
   "extraction": {
     "ai": null
   },
@@ -13,16 +31,197 @@
   },
   "first_seen": "2026-11-09T11:59:45+00:00",
   "id": "e57f75a91102",
+  "issue": 1187,
+  "issue_tidy": true,
   "kind": "admit_card",
+  "notice_date": "2026-10-07",
   "org": "Delhi Police",
+  "page": {
+    "after_en": [
+      "Appear for the Physical Endurance and Measurement Test and Document Verification on the scheduled date."
+    ],
+    "after_hi": [
+      "निर्धारित तिथि पर शारीरिक सहनशक्ति और माप परीक्षण तथा दस्तावेज सत्यापन के लिए उपस्थित हों।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://sscnr.nic.in/newlook/ssc/dpawotpo/index.html",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Download the e-admit card well before the exam date.",
+      "Check reporting time and venue details carefully.",
+      "Keep required documents ready."
+    ],
+    "checklist_hi": [
+      "परीक्षा तिथि से पहले ई-प्रवेश पत्र डाउनलोड करें।",
+      "रिपोर्टिंग समय और स्थल के विवरण की सावधानीपूर्वक जांच करें।",
+      "आवश्यक दस्तावेज तैयार रखें।"
+    ],
+    "conducted_by_en": "Delhi Police",
+    "conducted_by_hi": "दिल्ली पुलिस",
+    "dates": [
+      {
+        "label_en": "PE&MT Date",
+        "label_hi": "पीई एंड एमटी तिथि",
+        "value_en": "12 Oct 2026",
+        "value_hi": "12 अक्टूबर 2026"
+      }
+    ],
+    "documents_en": [
+      "e-Admit Card",
+      "Valid photo identity proof"
+    ],
+    "documents_hi": [
+      "ई-प्रवेश पत्र",
+      "वैध फोटो पहचान प्रमाण"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-10-12",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is the Physical Endurance and Measurement Test conducted for candidates shortlisted or allowed by the court for the Head Constable (Assistant Wireless Operator / Tele-Printer Operator) recruitment in Delhi Police.",
+        "a_hi": "यह दिल्ली पुलिस में हेड कांस्टेबल (सहायक वायरलेस ऑपरेटर / टेली-प्रिंटर ऑपरेटर) भर्ती के लिए शॉर्टलिस्ट किए गए या अदालत द्वारा अनुमति प्राप्त उम्मीदवारों के लिए आयोजित शारीरिक सहनशक्ति और माप परीक्षण है।",
+        "q_en": "What is Delhi Police Head Constable AWO/TPO PE&MT?",
+        "q_hi": "दिल्ली पुलिस हेड कांस्टेबल ए डब्ल्यू ओ/टी पी ओ पीई एंड एमटी क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "The PE&MT is scheduled to be conducted on 12 October 2026.",
+        "a_hi": "पीई एंड एमटी 12 अक्टूबर 2026 को आयोजित किया जाना निर्धारित है।",
+        "q_en": "When is the Delhi Police Head Constable AWO/TPO PE&MT scheduled?",
+        "q_hi": "दिल्ली पुलिस हेड कांस्टेबल ए डब्ल्यू ओ/टी पी ओ पीई एंड एमटी कब निर्धारित है?"
+      },
+      {
+        "a_en": "Candidates who have been provisionally permitted to participate in the PE&MT by the Hon’ble CAT, Principal Bench, New Delhi, can download the admit card.",
+        "a_hi": "माननीय सीएटी, प्रिंसिपल बेंच, नई दिल्ली द्वारा पीई एंड एमटी में भाग लेने के लिए अनंतिम रूप से अनुमति प्राप्त उम्मीदवार एडमिट कार्ड डाउनलोड कर सकते हैं।",
+        "q_en": "Who can download this admit card?",
+        "q_hi": "इस एडमिट कार्ड को कौन डाउनलोड कर सकता है?"
+      },
+      {
+        "a_en": "You can download it from https://sscnr.nic.in/newlook/ssc/dpawotpo/index.html",
+        "a_hi": "आप इसे https://sscnr.nic.in/newlook/ssc/dpawotpo/index.html से डाउनलोड कर सकते हैं।",
+        "q_en": "What is the official link to download the admit card?",
+        "q_hi": "एडमिट कार्ड डाउनलोड करने का आधिकारिक लिंक क्या है?"
+      },
+      {
+        "a_en": "No, request for change of date, reporting time, or venue will not be entertained under any circumstances.",
+        "a_hi": "नहीं, किसी भी परिस्थिति में तिथि, रिपोर्टिंग समय या स्थल को बदलने के अनुरोध पर विचार नहीं किया जाएगा।",
+        "q_en": "Can I change my PE&MT date or venue?",
+        "q_hi": "क्या मैं अपनी पीई एंड एमटी तिथि या स्थल बदल सकता हूं?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "Delhi Police Head Constable AWO TPO Admit Card 2025 – PE&MT Date",
+    "h1_hi": "दिल्ली पुलिस हेड कांस्टेबल ए डब्ल्यू ओ टी पी ओ एडमिट कार्ड 2025 – पीई एंड एमटी तिथि",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Click on the official admit card download link provided.",
+      "Enter your required credentials to log in.",
+      "Download and print your e-Admit Card/e-Admission Certificate.",
+      "Read and strictly follow all instructions mentioned on the admit card."
+    ],
+    "how_hi": [
+      "दिए गए आधिकारिक प्रवेश पत्र डाउनलोड लिंक पर क्लिक करें।",
+      "लॉगिन करने के लिए अपने आवश्यक विवरण दर्ज करें।",
+      "अपना ई-प्रवेश पत्र डाउनलोड करें और प्रिंट करें।",
+      "प्रवेश पत्र पर उल्लिखित सभी निर्देशों को ध्यान से पढ़ें और उनका सख्ती से पालन करें।"
+    ],
+    "intro_en": "Delhi Police has issued the notice regarding the Physical Endurance and Measurement Test (PE&MT) and Document Verification for candidates who have been provisionally permitted to participate by the Hon’ble CAT, Principal Bench, New Delhi, vide interim order dated 20.08.2026 in O.A. No. 2671/2026. The PE&MT will be conducted on 12 October 2026. Eligible candidates can download their e-admit card from the official link provided in the notice.",
+    "intro_hi": "दिल्ली पुलिस ने माननीय सीएटी, प्रिंसिपल बेंच, नई दिल्ली द्वारा 20.08.2026 के अंतरिम आदेश ओ.ए. संख्या 2671/2026 के तहत पीई एंड एमटी में भाग लेने के लिए अनंतिम रूप से अनुमति प्राप्त उम्मीदवारों के लिए शारीरिक सहनशक्ति और माप परीक्षण (पीई एंड एमटी) और दस्तावेज सत्यापन के संबंध में नोटिस जारी किया है। पीई एंड एमटी 12 अक्टूबर 2026 को आयोजित किया जाएगा। पात्र उम्मीदवार नोटिस में दिए गए आधिकारिक लिंक से अपना ई-प्रवेश पत्र डाउनलोड कर सकते हैं।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not miss the reporting date and time; requests for change of schedule will not be entertained."
+    ],
+    "mistakes_hi": [
+      "रिपोर्टिंग तिथि और समय न चूकें; समय सारिणी बदलने के किसी भी अनुरोध पर विचार नहीं किया जाएगा।"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-10-07",
+    "official_site": "https://delhipolice.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Head Constable (AWO/TPO)",
+        "value_hi": "हेड कांस्टेबल (ए डब्ल्यू ओ/टी पी ओ)"
+      },
+      {
+        "label_en": "Exam Name",
+        "label_hi": "परीक्षा का नाम",
+        "value_en": "Delhi Police Head Constable (AWO/TPO) Examination 2025",
+        "value_hi": "दिल्ली पुलिस हेड कांस्टेबल (ए डब्ल्यू ओ/टी पी ओ) परीक्षा 2025"
+      },
+      {
+        "label_en": "PE&MT Date",
+        "label_hi": "पीई एंड एमटी तिथि",
+        "value_en": "12 Oct 2026",
+        "value_hi": "12 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Admit Card",
+        "label_hi": "प्रवेश पत्र",
+        "value_en": "Available Now",
+        "value_hi": "अब उपलब्ध है"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Physical Endurance and Measurement Test (PE&MT)",
+      "Document Verification"
+    ],
+    "selection_hi": [
+      "शारीरिक सहनशक्ति और माप परीक्षण (पीई एंड एमटी)",
+      "दस्तावेज सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "Admit Card 2025",
+      "headline_hi": "प्रवेश पत्र 2025",
+      "kind": "admit",
+      "line_en": "Head Constable AWO/TPO",
+      "line_hi": "हेड कांस्टेबल ए डब्ल्यू ओ/टी पी ओ",
+      "posts": null
+    },
+    "status_en": "Admit card released for CAT allowed candidates",
+    "status_hi": "सीएटी द्वारा अनुमति प्राप्त उम्मीदवारों के लिए एडमिट कार्ड जारी",
+    "summary_en": "Delhi Police has released the e-admit card for the Physical Endurance and Measurement Test (PE&MT) and Document Verification for candidates provisionally allowed by the Hon'ble CAT for the Head Constable (AWO/TPO) Exam 2025. The test is scheduled for 12 October 2026. Download your admit card using the official link provided.",
+    "summary_hi": "दिल्ली पुलिस ने हेड कांस्टेबल (ए डब्ल्यू ओ/टी पी ओ) परीक्षा 2025 के लिए माननीय सीएटी द्वारा अनंतिम रूप से अनुमति प्राप्त उम्मीदवारों के लिए शारीरिक सहनशक्ति और माप परीक्षण (पीई एंड एमटी) और दस्तावेज सत्यापन के लिए ई-प्रवेश पत्र जारी कर दिया है। यह परीक्षा 12 अक्टूबर 2026 को निर्धारित है। दिए गए आधिकारिक लिंक का उपयोग करके अपना प्रवेश पत्र डाउनलोड करें।",
+    "vacancies": [
+      {
+        "detail_en": "For candidates provisionally allowed by Hon'ble CAT",
+        "detail_hi": "माननीय सीएटी द्वारा अनंतिम रूप से अनुमति प्राप्त उम्मीदवारों के लिए",
+        "post_en": "Head Constable (AWO/TPO)",
+        "post_hi": "हेड कांस्टेबल (ए डब्ल्यू ओ/टी पी ओ)",
+        "total": null
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates who are provisionally allowed by the Hon'ble CAT for the Delhi Police Head Constable (AWO/TPO) Examination 2025."
+    ],
+    "who_hi": [
+      "दिल्ली पुलिस हेड कांस्टेबल (ए डब्ल्यू ओ/टी पी ओ) परीक्षा 2025 के लिए माननीय सीएटी द्वारा अनंतिम रूप से अनुमति प्राप्त उम्मीदवार।"
+    ]
+  },
   "pdf": {
     "bytes": 153550,
     "pages": 1,
     "sha256": "a22dc8b96e95410b33a182df3a1af920f6c8825b44b0f9a2de1b3cea3cf5c5ba",
     "text_kind": "text"
   },
+  "published_at": "2026-11-09T12:05:27Z",
+  "qual": [
+    "12th"
+  ],
+  "slug": "delhi-police-head-constable-awo-tpo-admit-card-2025-pe-mt-date",
   "source_id": "delhi-police",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1 DOWNLOAD LINK FOR PEMT AND DV ADMIT CARD FOR THE POST OF HEAD CONSTABLE AWO TPO IN DELHI POLICE EXAMINATION 2025 PROVISIONALLY ALLOWED BY THE HONBLE CAT 07 Oct, 2026 07 Oct, 2027 View (165 KB)",
   "url": "https://delhipolice.gov.in/assets/img/69428_Notice for PEMT Admit Card Head Const AWO TPO CAT Allowed.pdf"
 }

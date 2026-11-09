@@ -1,6 +1,24 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://www.esic.gov.in/recruitments",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-16",
+    "last_date": null,
+    "list": true,
+    "posts": "Professor",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "ESIC has released the status of candidates and interview schedule for the Professor recruitment after re-scrutiny of representations.",
+    "summary_hi": "ईएसआईसी ने अभ्यावेदन की पुन: जांच के बाद प्रोफेसर भर्ती के लिए उम्मीदवारों की स्थिति और साक्षात्कार अनुसूची जारी कर दी है।",
+    "title_en": "ESIC Professor Candidate Status & Interview Schedule 2026",
+    "title_hi": "ईएसआईसी प्रोफेसर उम्मीदवार स्थिति और साक्षात्कार अनुसूची 2026",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -16,16 +34,228 @@
   },
   "first_seen": "2026-11-09T11:59:45+00:00",
   "id": "7166d6a82b51",
+  "issue": 1183,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-09",
   "org": "ESIC",
+  "page": {
+    "after_en": [
+      "Conduct of interview",
+      "Final result declaration"
+    ],
+    "after_hi": [
+      "साक्षात्कार का आयोजन",
+      " अंतिम परिणाम घोषणा"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": null,
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Verify your name in the eligible list",
+      "Note the interview date and reporting time",
+      "Keep all required qualification and publication documents ready"
+    ],
+    "checklist_hi": [
+      "योग्य सूची में अपना नाम सत्यापित करें",
+      "साक्षात्कार की तिथि और रिपोर्टिंग समय नोट करें",
+      "सभी आवश्यक योग्यता और प्रकाशन दस्तावेज तैयार रखें"
+    ],
+    "conducted_by_en": "Employees' State Insurance Corporation (ESIC)",
+    "conducted_by_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईसी)",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस की तिथि",
+        "value_en": "09 Nov 2026",
+        "value_hi": "09 नवंबर 2026"
+      },
+      {
+        "label_en": "Interview Dates",
+        "label_hi": "साक्षात्कार की तिथियां",
+        "value_en": "16 Nov 2026 to 27 Nov 2026",
+        "value_hi": "16 नवंबर 2026 से 27 नवंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Interview call letter",
+      "Documents as mentioned in the specimen interview letter available in the Notice dated 31.10.2026"
+    ],
+    "documents_hi": [
+      "साक्षात्कार बुलावा पत्र",
+      "31.10.2026 के नोटिस में उपलब्ध नमूना साक्षात्कार पत्र में उल्लिखित दस्तावेज"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-11-16",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is the official notification detailing the status of candidates after re-scrutiny of representations and the dates for the Professor recruitment interview.",
+        "a_hi": "यह अभ्यावेदन की पुन: जांच के बाद उम्मीदवारों की स्थिति और प्रोफेसर भर्ती साक्षात्कार की तिथियों का विवरण देने वाला आधिकारिक नोटिस है।",
+        "q_en": "What is the ESIC Professor Interview Schedule?",
+        "q_hi": "ईएसआईसी प्रोफेसर साक्षात्कार अनुसूची क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Interview Venue",
+        "label_hi": "साक्षात्कार स्थल",
+        "value_en": "Directorate (Medical) Delhi, 3rd Floor, ESIC Dispensary-cum-Diagnostic Centre Complex, Mayur Vihar Phase-I, New Delhi - 110091",
+        "value_hi": "डिफेक्टो निदेशालय (चिकित्सा) दिल्ली, तीसरी मंजिल, ईएसआईसी डिस्पेंसरी-सह-डायग्नोस्टिक सेंटर कॉम्प्लेक्स, मयूर विहार फेज-I, नई दिल्ली - 110091"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "A total of 6 candidates are eligible and called for the interview.",
+        "a_hi": "कुल 6 उम्मीदवार योग्य हैं और साक्षात्कार के लिए बुलाए गए हैं।",
+        "q_en": "How many candidates are eligible for the ESIC Professor interview?",
+        "q_hi": "ईएसआईसी प्रोफेसर साक्षात्कार के लिए कितने उम्मीदवार योग्य हैं?"
+      },
+      {
+        "a_en": "The interviews are scheduled from 16 November 2026 to 27 November 2026.",
+        "a_hi": "साक्षात्कार 16 नवंबर 2026 से 27 नवंबर 2026 तक निर्धारित हैं।",
+        "q_en": "What are the interview dates for ESIC Professor recruitment?",
+        "q_hi": "ईएसआईसी प्रोफेसर भर्ती के लिए साक्षात्कार की तिथियां क्या हैं?"
+      },
+      {
+        "a_en": "The reporting time is 9:30 AM.",
+        "a_hi": "रिपोर्टिंग का समय सुबह 9:30 बजे है।",
+        "q_en": "What is the reporting time for the interview?",
+        "q_hi": "साक्षात्कार के लिए रिपोर्टिंग का समय क्या है?"
+      },
+      {
+        "a_en": "The interview will be held at Directorate (Medical) Delhi, 3rd Floor, ESIC Dispensary-cum-Diagnostic Centre Complex, Mayur Vihar Phase-I, New Delhi - 110091.",
+        "a_hi": "साक्षात्कार निदेशालय (चिकित्सा) दिल्ली, तीसरी मंजिल, ईएसआईसी डिस्पेंसरी-सह-डायग्नोस्टिक सेंटर कॉम्प्लेक्स, मयूर विहार फेज-I, नई दिल्ली - 110091 में आयोजित किया जाएगा।",
+        "q_en": "Where will the ESIC Professor interview be held?",
+        "q_hi": "ईएसआईसी प्रोफेसर का साक्षात्कार कहाँ आयोजित किया जाएगा?"
+      },
+      {
+        "a_en": "Candidates who do not receive the call letter can report for the interview at the scheduled date, time, and venue along with the required documents.",
+        "a_hi": "जिन उम्मीदवारों को बुलावा पत्र प्राप्त नहीं होता है, वे आवश्यक दस्तावेजों के साथ निर्धारित तिथि, समय और स्थान पर साक्षात्कार के लिए उपस्थित हो सकते हैं।",
+        "q_en": "What should I do if I do not receive the interview call letter?",
+        "q_hi": "यदि मुझे साक्षात्कार बुलावा पत्र प्राप्त न हो तो मुझे क्या करना चाहिए?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "ESIC Professor Candidate Status & Interview Schedule 2026",
+    "h1_hi": "ईएसआईसी प्रोफेसर उम्मीदवार स्थिति और साक्षात्कार अनुसूची 2026",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Check your eligibility status and interview date from the official PDF notice.",
+      "Download the interview call letter sent via email or Speed Post.",
+      "Report for the interview at the scheduled date, time, and venue with required documents if the call letter is not received."
+    ],
+    "how_hi": [
+      "आधिकारिक पीडीएफ नोटिस से अपनी पात्रता स्थिति और साक्षात्कार की तिथि जांचें।",
+      "ईमेल या स्पीड पोस्ट के माध्यम से भेजे गए साक्षात्कार बुलावा पत्र को डाउनलोड करें।",
+      "यदि बुलावा पत्र प्राप्त नहीं होता है, तो आवश्यक दस्तावेजों के साथ निर्धारित तिथि, समय और स्थान पर साक्षात्कार के लिए रिपोर्ट करें।"
+    ],
+    "intro_en": "Employees' State Insurance Corporation (ESIC) has published the notice regarding the re-scrutiny of representations for the Professor recruitment under advertisement dated 19.05.2026. A total of 49 representations were examined by a committee. Based on this, 6 candidates have been found eligible and called for interviews, while others are listed as ineligible with reasons. The interviews will be held between 16 November 2026 and 27 November 2026 at New Delhi.",
+    "intro_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईसी) ने 19.05.2026 के विज्ञापन के तहत प्रोफेसर भर्ती के लिए अभ्यावेदन की पुन: जांच के संबंध में नोटिस प्रकाशित किया है। एक समिति द्वारा कुल 49 अभ्यावेदनों की जांच की गई। इसके आधार पर, 6 उम्मीदवारों को योग्य पाया गया है और साक्षात्कार के लिए बुलाया गया है, जबकि अन्य को कारणों के साथ अयोग्य सूचीबद्ध किया गया है। साक्षात्कार 16 नवंबर 2026 से 27 नवंबर 2026 के बीच नई दिल्ली में आयोजित किए जाएंगे।",
+    "last_date": null,
+    "mistakes_en": [
+      "Failing to check the updated candidate status list.",
+      "Missing the designated reporting time and venue for the interview."
+    ],
+    "mistakes_hi": [
+      "अद्यतन उम्मीदवार स्थिति सूची की जांच करने में विफल रहना।",
+      "साक्षात्कार के लिए निर्धारित रिपोर्टिंग समय और स्थान से चूक जाना।"
+    ],
+    "not_en": [
+      "Candidates whose representations were rejected due to non-fulfilment of required publications, lack of first-author papers, or late receipt."
+    ],
+    "not_hi": [
+      "वे उम्मीदवार जिनके अभ्यावेदन आवश्यक प्रकाशनों को पूरा न करने, प्रथम-लेखक पत्रों की कमी या देर से प्राप्ति के कारण अस्वीकार कर दिए गए थे।"
+    ],
+    "notice_date": "2026-11-09",
+    "official_site": "https://www.esic.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Professor",
+        "value_hi": "प्रोफेसर"
+      },
+      {
+        "label_en": "Eligible Candidates",
+        "label_hi": "योग्य उम्मीदवार",
+        "value_en": "6",
+        "value_hi": "6"
+      },
+      {
+        "label_en": "Interview Dates",
+        "label_hi": "साक्षात्कार की तिथियां",
+        "value_en": "16 Nov 2026 to 27 Nov 2026",
+        "value_hi": "16 नवंबर 2026 से 27 नवंबर 2026"
+      },
+      {
+        "label_en": "Reporting Time",
+        "label_hi": "रिपोर्टिंग समय",
+        "value_en": "9:30 AM",
+        "value_hi": "सुबह 9:30 बजे"
+      },
+      {
+        "label_en": "Advertisement No.",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "A-12011/1/2026-EXAM",
+        "value_hi": "A-12011/1/2026-EXAM"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Document and representation re-scrutiny",
+      "Interview"
+    ],
+    "selection_hi": [
+      "दस्तावेज़ और अभ्यावेदन की पुन: जांच",
+      "साक्षात्कार"
+    ],
+    "share_card": {
+      "headline_en": "Interview Schedule 2026",
+      "headline_hi": "साक्षात्कार अनुसूची 2026",
+      "kind": "sched",
+      "line_en": "ESIC Professor Interview",
+      "line_hi": "ईएसआईसी प्रोफेसर साक्षात्कार",
+      "posts": null
+    },
+    "status_en": "Candidate status and interview schedule released after re-scrutiny of representations",
+    "status_hi": "अभ्यावेदन की पुन: जांच के बाद उम्मीदवार की स्थिति और साक्षात्कार अनुसूची जारी",
+    "summary_en": "Employees' State Insurance Corporation (ESIC) has released the candidate status and interview schedule for Professor recruitment following the re-scrutiny of representations. A total of 6 candidates are eligible and called for interviews from 16 to 27 November 2026.",
+    "summary_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईसी) ने अभ्यावेदन की पुन: जांच के बाद प्रोफेसर भर्ती के लिए उम्मीदवारों की स्थिति और साक्षात्कार अनुसूची जारी कर दी है। कुल 6 उम्मीदवार योग्य हैं और 16 से 27 नवंबर 2026 तक साक्षात्कार के लिए बुलाए गए हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Eligible candidates called for interview: 6",
+        "detail_hi": "साक्षात्कार के लिए बुलाए गए योग्य उम्मीदवार: 6",
+        "post_en": "Professor",
+        "post_hi": "प्रोफेसर",
+        "total": ""
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates who applied for ESIC Professor recruitment under advertisement dated 19.05.2026 and submitted representations."
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जिन्होंने 19.05.2026 के विज्ञापन के तहत ईएसआईसी प्रोफेसर भर्ती के लिए आवेदन किया था और अभ्यावेदन प्रस्तुत किए थे।"
+    ]
+  },
   "pdf": {
     "bytes": 1044000,
     "pages": 7,
     "sha256": "b0a5848a21e7135745ac726dd917c4bc1300bfd0b223882470b4dfceb376cac8",
     "text_kind": "text"
   },
+  "published_at": "2026-11-09T12:04:52Z",
+  "qual": [
+    "postgraduate"
+  ],
+  "slug": "esic-professor-candidate-status-interview-schedule-2026",
   "source_id": "esic-recruitment",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1 Recruitment Branch Recruitment of Professor in ESIC PGIMSRS & ESIC Medical Colleges on direct recruitment basis (Advertisement dated 19.05.2026)- PDF size:(1,019.53 KB) . 2026-11-09 Interview(2026-11-27) 12735/2026",
   "url": "https://esic.gov.in/attachments/recruitmentfile/Recruitment_of_Professor_in_ESIC_PGIMSRS_amp_ESIC_Medical_Colleges_on_direct_recruitment_basis_Advertisement_dated_19_05_2026_1794215881.pdf"
 }

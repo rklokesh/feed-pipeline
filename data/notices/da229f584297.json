@@ -1,22 +1,344 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://www.mha.gov.in/en/notifications/vacancies",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Consultant (Retired Senior Accountant/Accountant)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Ministry of Home Affairs has extended the last date for submitting applications for 30 retired government official consultant posts. Eligible retired personnel should apply as per the notification details.",
+    "summary_hi": "गृह मंत्रालय ने 30 सेवानिवृत्त सरकारी अधिकारी सलाहकार पदों के लिए आवेदन जमा करने की अंतिम तिथि बढ़ा दी है। योग्य सेवानिवृत्त कर्मी अधिसूचना विवरण के अनुसार आवेदन करें।",
+    "title_en": "MHA Consultant Recruitment 2026 – Last Date Extended for 30 Posts",
+    "title_hi": "गृह मंत्रालय सलाहकार भर्ती 2026 – 30 पदों के लिए अंतिम तिथि बढ़ी",
+    "type": "Job",
+    "vacancies": 30
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": 64,
+    "age_min": null,
+    "age_on": null,
+    "domicile": null,
+    "qual": "graduate",
+    "relax": {}
+  },
+  "exam": {},
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-09T11:59:45+00:00",
   "id": "da229f584297",
+  "issue": 1186,
+  "issue_tidy": true,
   "kind": "update",
+  "notice_date": "2026-07-31",
   "org": "MHA",
+  "page": {
+    "after_en": [
+      "Shortlisted candidates will be called for a personal interview",
+      "Original documents will be verified during the interview",
+      "Selected candidates will be engaged initially for a period of one year"
+    ],
+    "after_hi": [
+      "शॉर्टलिस्ट किए गए उम्मीदवारों को व्यक्तिगत साक्षात्कार के लिए बुलाया जाएगा",
+      "साक्षात्कार के दौरान मूल दस्तावेजों का सत्यापन किया जाएगा",
+      "चयनित उम्मीदवारों को शुरू में एक वर्ष की अवधि के लिए नियुक्त किया जाएगा"
+    ],
+    "age": [
+      {
+        "label_en": "Maximum age",
+        "label_hi": "अधिकतम आयु",
+        "value_en": "Less than 64 years as on last date of application",
+        "value_hi": "आवेदन की अंतिम तिथि के अनुसार 64 वर्ष से कम"
+      }
+    ],
+    "apply_start": "2026-07-10",
+    "apply_url": null,
+    "changes": [
+      {
+        "new_en": "07 working days from issuance of extension circular",
+        "new_hi": "विस्तार परिपत्र जारी होने से 07 कार्य दिवस",
+        "old_en": "31 July 2026",
+        "old_hi": "31 जुलाई 2026",
+        "what_en": "Last date for receipt of applications",
+        "what_hi": "आवेदन प्राप्त करने की अंतिम तिथि"
+      }
+    ],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check eligibility regarding retirement cadre and age",
+      "Fill out the application and bio-data proforma completely",
+      "Attach PPO, LPC, and educational certificates",
+      "Post or submit the application to the MHA Principal Accounts Office address"
+    ],
+    "checklist_hi": [
+      "सेवानिवृत्ति संवर्ग और आयु के संबंध में पात्रता की जांच करें",
+      "आवेदन और बायो-डेटा प्रोफर्मा पूरी तरह से भरें",
+      "पीपीओ, एलपीसी और शैक्षणिक प्रमाण पत्र संलग्न करें",
+      "एमएचए प्रधान लेखा कार्यालय के पते पर आवेदन भेजें या जमा करें"
+    ],
+    "conducted_by_en": "Ministry of Home Affairs (MHA)",
+    "conducted_by_hi": "गृह मंत्रालय (एम.एच.ए.)",
+    "dates": [
+      {
+        "label_en": "Notification date",
+        "label_hi": "अधिसूचना तिथि",
+        "value_en": "10 July 2026",
+        "value_hi": "10 जुलाई 2026"
+      },
+      {
+        "label_en": "Extension circular date",
+        "label_hi": "विस्तार परिपत्र तिथि",
+        "value_en": "31 July 2026",
+        "value_hi": "31 जुलाई 2026"
+      },
+      {
+        "label_en": "Last date for receipt of applications",
+        "label_hi": "आवेदन प्राप्त करने की अंतिम तिथि",
+        "value_en": "07 working days from extension circular",
+        "value_hi": "विस्तार परिपत्र से 07 कार्य दिवस"
+      }
+    ],
+    "documents_en": [
+      "Bio-data / application form",
+      "Self-attested copy of PPO",
+      "Educational qualification certificates",
+      "Last Pay Certificate (LPC) with transport allowance proof",
+      "Original certificates for verification at interview"
+    ],
+    "documents_hi": [
+      "बायो-डेटा / आवेदन पत्र",
+      "पीपीओ की स्व-प्रमाणित प्रति",
+      "शैक्षणिक योग्यता प्रमाण पत्र",
+      "परिवहन भत्ता प्रमाण के साथ अंतिम वेतन प्रमाण पत्र (एलपीसी)",
+      "साक्षात्कार के समय सत्यापन के लिए मूल प्रमाण पत्र"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Retirement Cadre",
+        "label_hi": "सेवानिवृत्ति संवर्ग",
+        "value_en": "Retired Senior Accountant/Accountant of accounting cadre in Central Govt. Departments/PSUs",
+        "value_hi": "केंद्रीय सरकार के विभागों/सार्वजनिक उपक्रमों के लेखा संवर्ग के सेवानिवृत्त वरिष्ठ लेखाकार/लेखाकार"
+      },
+      {
+        "label_en": "Education",
+        "label_hi": "शिक्षा",
+        "value_en": "Graduate Degree in any discipline or CA/ICWA",
+        "value_hi": "किसी भी विषय में स्नातक की डिग्री या सीए/आईसीडब्ल्यूए"
+      },
+      {
+        "label_en": "Experience",
+        "label_hi": "अनुभव",
+        "value_en": "Conversant with functioning of Ministries/Departments, proficient in noting and drafting, well acquainted with Govt rules, computer knowledge, e-Office experience, and experience in pension cases/NPS/UPS/GPF cases",
+        "value_hi": "मंत्रालय/विभागों के कामकाज से परिचित, नोटिंग और ड्राफ्टिंग में कुशल, सरकारी नियमों से अच्छी तरह परिचित, कंप्यूटर ज्ञान, ई-ऑफिस अनुभव, और पेंशन मामलों/एनपीएस/यूपीएस/जीपीएफ मामलों का अनुभव"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is an engagement process by the Ministry of Home Affairs to hire retired Senior Accountants and Accountants from Central Government Departments or PSUs as Consultants on a contractual basis for PAO CRPF and PAOs of Delhi Police.",
+        "a_hi": "यह पीएओ सीआरपीएफ और दिल्ली पुलिस के पीएओ के लिए अनुबंध के आधार पर केंद्रीय सरकार के विभागों या सार्वजनिक उपक्रमों से सेवानिवृत्त वरिष्ठ लेखाकारों और लेखाकारों को सलाहकार के रूप में नियुक्त करने की गृह मंत्रालय की एक प्रक्रिया है।",
+        "q_en": "What is the MHA Consultant Recruitment?",
+        "q_hi": "गृह मंत्रालय सलाहकार भर्ती क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Period of engagement",
+        "label_hi": "सगाई की अवधि",
+        "value_en": "Initially for a period of one year or attaining the age of 65 years, whichever is earlier",
+        "value_hi": "शुरुआत में एक वर्ष की अवधि के लिए या 65 वर्ष की आयु प्राप्त करने तक, जो भी पहले हो"
+      },
+      {
+        "label_en": "Working hours",
+        "label_hi": "कार्य समय",
+        "value_en": "09:30 AM to 06:00 PM",
+        "value_hi": "सुबह 09:30 बजे से शाम 06:00 बजे तक"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "There are a total of 30 vacancies for consultants.",
+        "a_hi": "सलाहकारों के लिए कुल 30 रिक्तियां हैं।",
+        "q_en": "How many vacancies are available in MHA Consultant Recruitment?",
+        "q_hi": "गृह मंत्रालय सलाहकार भर्ती में कुल कितनी रिक्तियां उपलब्ध हैं?"
+      },
+      {
+        "a_en": "Retired Senior Accountants and Accountants from the accounting cadre of Central Government Departments or PSUs who are below 64 years of age can apply.",
+        "a_hi": "केंद्रीय सरकार के विभागों या सार्वजनिक उपक्रमों के लेखा संवर्ग के सेवानिवृत्त वरिष्ठ लेखाकार और लेखाकार जिनकी आयु 64 वर्ष से कम है, आवेदन कर सकते हैं।",
+        "q_en": "Who is eligible to apply for MHA Consultant posts?",
+        "q_hi": "गृह मंत्रालय सलाहकार पदों के लिए आवेदन करने के लिए कौन पात्र है?"
+      },
+      {
+        "a_en": "The last date has been extended up to 07 working days from the issuance of the extension circular dated 31 July 2026.",
+        "a_hi": "31 जुलाई 2026 के विस्तार परिपत्र जारी होने से 07 कार्य दिवस तक अंतिम तिथि बढ़ा दी गई है।",
+        "q_en": "What is the last date to apply for MHA Consultant Recruitment?",
+        "q_hi": "गृह मंत्रालय सलाहकार भर्ती के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "The job location is Delhi.",
+        "a_hi": "नौकरी का स्थान दिल्ली है।",
+        "q_en": "What is the job location for MHA Consultants?",
+        "q_hi": "गृह मंत्रालय सलाहकारों के लिए नौकरी का स्थान क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "MHA Consultant Recruitment 2026 – Last Date Extended for 30 Posts",
+    "h1_hi": "गृह मंत्रालय सलाहकार भर्ती 2026 – 30 पदों के लिए अंतिम तिथि बढ़ी",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Download the application format from the notification",
+      "Fill out the bio-data completely in all respects",
+      "Attach self-attested copies of PPO, educational qualification certificates, and Last Pay Certificate (LPC)",
+      "Send the application to the Senior Accounts Officer (Admn.), Principal Accounts Office (Admn.), Ministry of Home Affairs, Room No. 6, 2nd Floor, Major Dhyan Chand National Stadium, New Delhi - 110002"
+    ],
+    "how_hi": [
+      "अधिसूचना से आवेदन प्रारूप डाउनलोड करें",
+      "सभी प्रकार से बायो-डेटा को पूरी तरह से भरें",
+      "पीपीओ, शैक्षणिक योग्यता प्रमाण पत्र और अंतिम वेतन प्रमाण पत्र (एलपीसी) की स्व-प्रमाणित प्रतियां संलग्न करें",
+      "वरिष्ठ लेखा अधिकारी (प्रशासन), प्रधान लेखा कार्यालय (प्रशासन), गृह मंत्रालय, कमरा नंबर 6, दूसरी मंजिल, मेजर ध्यानचंद नेशनल स्टेडियम, नई दिल्ली - 110002 पते पर आवेदन भेजें"
+    ],
+    "intro_en": "The Ministry of Home Affairs (MHA) has released a notification for the engagement of 30 retired government officials as Consultants on a contractual basis in PAO CRPF, New Delhi, and PAOs of Delhi Police (DAO MHA). The position is open for retired Senior Accountants and Accountants from the accounting cadre of Central Government Departments or PSUs. The last date for receipt of applications has been extended. Eligible and interested candidates must submit their applications in the prescribed format before the closing date.",
+    "intro_hi": "गृह मंत्रालय (एम.एच.ए.) ने पीएओ सीआरपीएफ, नई दिल्ली और दिल्ली पुलिस के पीएओ (डीएओ एमएचए) में अनुबंध के आधार पर सलाहकारों के रूप में 30 सेवानिवृत्त सरकारी अधिकारियों की नियुक्ति के लिए एक अधिसूचना जारी की है। यह पद केंद्रीय सरकार के विभागों या सार्वजनिक उपक्रमों के लेखा संवर्ग के सेवानिवृत्त वरिष्ठ लेखाकारों और लेखाकारों के लिए खुला है। आवेदन प्राप्त करने की अंतिम तिथि बढ़ा दी गई है। योग्य और इच्छुक उम्मीदवार अंतिम तिथि से पहले निर्धारित प्रारूप में अपना आवेदन जमा करें।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not submit incomplete application forms",
+      "Ensure dispatch reaches the office before the closing date",
+      "Do not forget to attach self-attested copies of PPO, education certificates, and LPC"
+    ],
+    "mistakes_hi": [
+      "अपूर्ण आवेदन पत्र जमा न करें",
+      "सुनिश्चित करें कि प्रेषण अंतिम तिथि से पहले कार्यालय पहुंच जाए",
+      "पीपीओ, शिक्षा प्रमाण पत्र और एलपीसी की स्व-प्रमाणित प्रतियां संलग्न करना न भूलें"
+    ],
+    "not_en": [
+      "Candidates with incomplete information or applications received after the closing date"
+    ],
+    "not_hi": [
+      "अपूर्ण जानकारी वाले उम्मीदवार या अंतिम तिथि के बाद प्राप्त आवेदन"
+    ],
+    "notice_date": "2026-07-31",
+    "official_site": "https://www.mha.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Consultant (Retired Senior Accountant/Accountant)",
+        "value_hi": "सलाहकार (सेवानिवृत्त वरिष्ठ लेखाकार/लेखाकार)"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "30",
+        "value_hi": "30"
+      },
+      {
+        "label_en": "Apply online",
+        "label_hi": "ऑनलाइन आवेदन",
+        "value_en": "Offline mode",
+        "value_hi": "ऑफलाइन मोड"
+      },
+      {
+        "label_en": "Job Location",
+        "label_hi": "नौकरी का स्थान",
+        "value_en": "Delhi",
+        "value_hi": "दिल्ली"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "Less than 64 years",
+        "value_hi": "64 वर्ष से कम"
+      },
+      {
+        "label_en": "Selection process",
+        "label_hi": "चयन प्रक्रिया",
+        "value_en": "Shortlisting and Personal Interview",
+        "value_hi": "शॉर्टलिस्टिंग और व्यक्तिगत साक्षात्कार"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "No. 600/02/Pr.AO(Admn)/MHA/Consultant/2026-27",
+        "value_hi": "संख्या 600/02/Pr.AO(Admn)/MHA/Consultant/2026-27"
+      }
+    ],
+    "salary": [
+      {
+        "label_en": "Remuneration",
+        "label_hi": "पारिश्रमिक",
+        "value_en": "Last pay drawn minus pension plus applicable fixed transport allowances",
+        "value_hi": "प्राप्त अंतिम वेतन घटा पेंशन और लागू निश्चित परिवहन भत्ते"
+      }
+    ],
+    "selection_en": [
+      "Shortlisting of applications on the basis of experience and qualification",
+      "Personal interview by a designated committee",
+      "Original document and certificate verification at the time of interview"
+    ],
+    "selection_hi": [
+      "अनुभव और योग्यता के आधार पर आवेदनों की शॉर्टलिस्टिंग",
+      "नामित समिति द्वारा व्यक्तिगत साक्षात्कार",
+      "साक्षात्कार के समय मूल दस्तावेज और प्रमाण पत्र सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "MHA Consultant",
+      "line_hi": "गृह मंत्रालय सलाहकार",
+      "posts": 30
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Ministry of Home Affairs has extended the last date for submitting applications for 30 retired government official consultant posts. Eligible retired personnel should apply as per the notification details.",
+    "summary_hi": "गृह मंत्रालय ने 30 सेवानिवृत्त सरकारी अधिकारी सलाहकार पदों के लिए आवेदन जमा करने की अंतिम तिथि बढ़ा दी है। योग्य सेवानिवृत्त कर्मी अधिसूचना विवरण के अनुसार आवेदन करें।",
+    "vacancies": [
+      {
+        "detail_en": "PAO CRPF, New Delhi and PAOs of Delhi Police (DAO MHA)",
+        "detail_hi": "पीएओ सीआरपीएफ, नई दिल्ली और दिल्ली पुलिस के पीएओ (डीएओ एमएचए)",
+        "post_en": "Consultant (Retd. Senior Accountant / Accountant)",
+        "post_hi": "सलाहकार (सेवानिवृत्त वरिष्ठ लेखाकार / लेखाकार)",
+        "total": "30"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Retired Senior Accountants and Accountants from Central Government Departments or PSUs aged below 64 years"
+    ],
+    "who_hi": [
+      "64 वर्ष से कम आयु के केंद्रीय सरकार के विभागों या सार्वजनिक उपक्रमों के सेवानिवृत्त वरिष्ठ लेखाकार और लेखाकार"
+    ]
+  },
   "pdf": {
     "bytes": 1660070,
     "pages": 6,
     "sha256": "bc593d52d636ed533684178c39211296b3ebd7b1a928b766f30e168205a78ce3",
     "text_kind": "text"
   },
+  "published_at": "2026-11-09T12:05:20Z",
+  "qual": [
+    "graduate"
+  ],
+  "rewrite": true,
+  "slug": "mha-consultant-recruitment-2026-last-date-extended-for-30-posts",
   "source_id": "mha-vacancies",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Engagement of 30 Nos. retired government Official (Retd. Senior Accountan UAccountant of accounting cadre in Central Govt. Departments/PSUs) as Consultants in PAO CRPF, New Delhi and PAOs of Delhi Police (DAO MHA) - reg.",
-  "url": "https://www.mha.gov.in/files/vacancies_documents/scan_1085.pdf"
+  "url": "https://www.mha.gov.in/files/vacancies_documents/scan_1085.pdf",
+  "verify": {
+    "at": "2026-11-09",
+    "missing": [
+      "Extension circular date: 2026-07-31"
+    ],
+    "tries": 1
+  }
 }

@@ -1,6 +1,32 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://www.esic.gov.in/recruitments",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-13",
+    "last_date": null,
+    "list": true,
+    "posts": "Professor (Neuro-Surgery)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "ESIC Super Speciality Hospital, Sanathnagar, Hyderabad is conducting a walk-in interview for 1 Professor post in the Department of Neuro-Surgery on contractual basis. Eligible candidates should report for document verification and interview on 13-11-2026.",
+    "summary_hi": "ईएसआईसी सुपर स्पेशलिटी अस्पताल, सनथनगर, हैदराबाद न्यूरो-सर्जरी विभाग में प्रोफेसर के 1 पद के लिए वॉक-इन इंटरव्यू आयोजित कर रहा है। योग्य उम्मीदवार 13-11-2026 को इंटरव्यू के लिए उपस्थित हों।",
+    "title_en": "ESIC Hyderabad Professor Walk-in Interview 2026 – 1 Vacancy",
+    "title_hi": "ईएसआईसी हैदराबाद प्रोफेसर वॉक-इन इंटरव्यू 2026 – 1 वैकेंसी",
+    "type": "Job",
+    "vacancies": 1
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": 69,
+    "age_min": null,
+    "age_on": "2026-11-13",
+    "domicile": null,
+    "qual": "postgraduate",
+    "relax": {}
+  },
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -56,16 +82,317 @@
   },
   "first_seen": "2026-11-09T11:59:45+00:00",
   "id": "6ac07fa639d3",
+  "issue": 1182,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-07",
   "org": "ESIC",
+  "page": {
+    "after_en": [
+      "Document verification of eligible candidates at the venue",
+      "Selection based on interview performance",
+      "Display of results on the official ESIC website",
+      "Execution of a contract agreement on ₹100/- Non-Judicial Bond Paper upon joining"
+    ],
+    "after_hi": [
+      "स्थल पर योग्य उम्मीदवारों का दस्तावेज सत्यापन",
+      "इंटरव्यू के प्रदर्शन के आधार पर चयन",
+      "आधिकारिक ईएसआईसी वेबसाइट पर परिणामों का प्रदर्शन",
+      "शामिल होने पर ₹100/- के गैर-न्यायिक बॉंड पेपर पर अनुबंध समझौते का निष्पादन"
+    ],
+    "age": [
+      {
+        "label_en": "Maximum age",
+        "label_hi": "अधिकतम आयु",
+        "value_en": "69 years",
+        "value_hi": "69 वर्ष"
+      },
+      {
+        "label_en": "As-on date",
+        "label_hi": "इस तिथि को",
+        "value_en": "13 Nov 2026 (Date of Walk-in-Interview)",
+        "value_hi": "13 नवम् 2026 (वॉक-इन-इंटरव्यू की तिथि)"
+      }
+    ],
+    "apply_start": null,
+    "apply_url": "https://www.esic.gov.in/recruitments",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check eligibility criteria including age and educational qualifications",
+      "Download and fill out the application form (Annexure-IV)",
+      "Keep original and self-attested copies of all required certificates ready",
+      "Report to the venue one hour prior to the interview time"
+    ],
+    "checklist_hi": [
+      "आयु और शैक्षणिक योग्यताओं सहित पात्रता मानदंडों की जांच करें",
+      "आवेदन पत्र (एनेक्जर-IV) डाउनलोड करें और भरें",
+      "सभी आवश्यक प्रमाण पत्रों की मूल और स्व-सत्यापित प्रतियां तैयार रखें",
+      "इंटरव्यू के समय से एक घंटे पहले स्थल पर रिपोर्ट करें"
+    ],
+    "conducted_by_en": "Employees' State Insurance Corporation (ESIC)",
+    "conducted_by_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईसी)",
+    "dates": [
+      {
+        "label_en": "Notification date",
+        "label_hi": "अधिसूचना तिथि",
+        "value_en": "07 Nov 2026",
+        "value_hi": "07 नवम् 2026"
+      },
+      {
+        "label_en": "Walk-in interview date & time",
+        "label_hi": "वॉक-इन इंटरव्यू तिथि और समय",
+        "value_en": "13 Nov 2026 at 11:00 AM (Reporting 1 hour prior)",
+        "value_hi": "13 नवम् 2026 को सुबह 11:00 बजे (रिपोर्टिंग 1 घंटे पहले)"
+      }
+    ],
+    "documents_en": [
+      "Filled application form in prescribed format (Annexure-IV)",
+      "Two passport size photographs",
+      "Proof of age (10th Certificate / Birth certificate)",
+      "Identity Proof (PAN Card, Passport, Driving License, Voter Card, Aadhar Card, etc.)",
+      "Address Proof (Ration Card, Passport, Driving License, Voter Card, Aadhar Card, etc.)",
+      "Educational Qualifications, Experience Certificate & Research Publications",
+      "Valid certificate of registration with concerned Medical Council",
+      "Reservation category certificate (SC/ST/OBC/EWS/PH) if applicable",
+      "No Objection Certificate from present employer (if applicable)"
+    ],
+    "documents_hi": [
+      "निर्धारित प्रारूप में भरा हुआ आवेदन पत्र",
+      "दो पासपोर्ट आकार के फोटोग्राफ",
+      "आयु का प्रमाण (10वीं का प्रमाण पत्र / जन्म प्रमाण पत्र)",
+      "पहचान प्रमाण (पैन कार्ड, पासपोर्ट, ड्राइविंग लाइसेंस, वोटर कार्ड, आधार कार्ड, आदि)",
+      "पता प्रमाण (राशन कार्ड, पासपोर्ट, ड्राइविंग लाइसेंस, वोटर कार्ड, आधार कार्ड, आदि)",
+      "शैक्षणिक योग्यता, अनुभव प्रमाण पत्र और शोध प्रकाशन",
+      "संबंधित मेडिकल काउंसिल के साथ पंजीकरण का वैध प्रमाण पत्र",
+      "आरक्षण श्रेणी प्रमाण पत्र (एससी/एसटी/ओबीसी/ईडब्ल्यूएस/पीएच) यदि लागू हो",
+      "वर्तमान नियोक्ता से अनापत्ति प्रमाण पत्र (यदि लागू हो)"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Education",
+        "label_hi": "शिक्षा",
+        "value_en": "Postgraduate degree as prescribed or a recognized qualification equivalent thereto in Neuro-Surgery.",
+        "value_hi": "न्यूरो-सर्जरी में निर्धारित स्नातकोत्तर डिग्री या इसके समकक्ष मान्यता प्राप्त योग्यता।"
+      },
+      {
+        "label_en": "Experience",
+        "label_hi": "अनुभव",
+        "value_en": "Minimum of 8 years of work experience in the Dept. of Neuro-Surgery after obtaining the postgraduate degree.",
+        "value_hi": "स्नातकोत्तर डिग्री प्राप्त करने के बाद न्यूरो-सर्जरी विभाग में न्यूनतम 8 वर्ष का कार्य अनुभव।"
+      }
+    ],
+    "exam_date": "2026-11-13",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a direct walk-in recruitment process conducted by ESIC Super Speciality Hospital, Sanathnagar, Hyderabad to engage a Professor (Visiting or Adjunct Faculty) in the Department of Neuro-Surgery on a contractual basis.",
+        "a_hi": "यह ईएसआईसी सुपर स्पेशलिटी अस्पताल, सनथनगर, हैदराबाद द्वारा न्यूरो-सर्जरी विभाग में संविदा के आधार पर प्रोफेसर (विजिटिंग या एडजंकट फैकल्टी) को नियुक्त करने के लिए आयोजित की जाने वाली एक सीधी वॉक-इन भर्ती प्रक्रिया है।",
+        "q_en": "What is ESIC Hyderabad Professor Walk-in Interview?",
+        "q_hi": "ईएसआईसी हैदराबाद प्रोफेसर वॉक-इन इंटरव्यू क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Venue of Interview",
+        "label_hi": "इंटरव्यू का स्थल",
+        "value_en": "Conference Hall, 2nd floor, ESIC Super Speciality Hospital, Sanathnagar, Hyderabad",
+        "value_hi": "कॉन्फ्रेंस हॉल, दूसरी मंजिल, ईएसआईसी सुपर स्पेशलिटी अस्पताल, सनथनगर, हैदराबाद"
+      },
+      {
+        "label_en": "Honorarium",
+        "label_hi": "मानदेय",
+        "value_en": "₹6,000/- per day",
+        "value_hi": "₹6,000/- प्रति दिन"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The walk-in interview is scheduled for 13 November 2026 at 11:00 AM.",
+        "a_hi": "वॉक-इन इंटरव्यू 13 नवंबर 2026 को सुबह 11:00 बजे निर्धारित है।",
+        "q_en": "What is the date of the ESIC Hyderabad Professor walk-in interview?",
+        "q_hi": "ईएसआईसी हैदराबाद प्रोफेसर वॉक-इन इंटरव्यू की तिथि क्या है?"
+      },
+      {
+        "a_en": "The interview will be held at the Conference Hall, 2nd floor, ESIC Super Speciality Hospital, Sanathnagar, Hyderabad.",
+        "a_hi": "इंटरव्यू कॉन्फ्रेंस हॉल, दूसरी मंजिल, ईएसआईसी सुपर स्पेशलिटी अस्पताल, सनथनगर, हैदराबाद में आयोजित किया जाएगा।",
+        "q_en": "What is the venue for the interview?",
+        "q_hi": "इंटरव्यू का स्थल क्या है?"
+      },
+      {
+        "a_en": "There is 1 vacancy available for the Professor post in the Department of Neuro-Surgery.",
+        "a_hi": "न्यूरो-सर्जरी विभाग में प्रोफेसर पद के लिए 1 वैकेंसी उपलब्ध है।",
+        "q_en": "What is the total number of vacancies?",
+        "q_hi": "कुल वैकेंसी की संख्या कितनी है?"
+      },
+      {
+        "a_en": "The maximum age limit is 69 years as on the date of the walk-in interview (13 November 2026).",
+        "a_hi": "वॉक-इन इंटरव्यू की तिथि (13 नवंबर 2026) को अधिकतम आयु सीमा 69 वर्ष है।",
+        "q_en": "What is the maximum age limit to apply?",
+        "q_hi": "आवेदन करने के लिए अधिकतम आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "Candidates must possess a postgraduate degree in Neuro-Surgery with a minimum of 8 years of work experience in the department after obtaining the postgraduate degree.",
+        "a_hi": "उम्मीदवारों के पास न्यूरो-सर्जरी में स्नातकोत्तर डिग्री और स्नातकोत्तर डिग्री प्राप्त करने के बाद विभाग में न्यूनतम 8 वर्ष का कार्य अनुभव होना चाहिए।",
+        "q_en": "What is the educational qualification required?",
+        "q_hi": "आवश्यक शैक्षणिक योग्यता क्या है?"
+      },
+      {
+        "a_en": "Selected candidates are entitled to an honorarium of ₹6,000/- per day.",
+        "a_hi": "चयनित उम्मीदवारों को ₹6,000/- प्रति दिन का मानदेय मिलता है।",
+        "q_en": "What is the honorarium provided for this post?",
+        "q_hi": "इस पद के लिए कितना मानदेय दिया जाता है?"
+      },
+      {
+        "a_en": "No, candidates need to bring the filled application form in the prescribed format along with documents directly to the walk-in interview.",
+        "a_hi": "नहीं, उम्मीदवारों को निर्धारित प्रारूप में भरा हुआ आवेदन पत्र दस्तावेजों के साथ सीधे वॉक-इन इंटरव्यू में लाना होगा।",
+        "q_en": "Do I need to submit an application form in advance?",
+        "q_hi": "क्या मुझे पहले से आवेदन पत्र जमा करना होगा?"
+      },
+      {
+        "a_en": "Updates can be checked on the official website www.esic.gov.in/recruitments.",
+        "a_hi": "अपडेट आधिकारिक वेबसाइट www.esic.gov.in/recruitments पर देखे जा सकते हैं।",
+        "q_en": "What is the official website to check updates?",
+        "q_hi": "अपडेट देखने के लिए आधिकारिक वेबसाइट कौन सी है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "ESIC Hyderabad Professor Walk-in Interview 2026 – 1 Vacancy",
+    "h1_hi": "ईएसआईसी हैदराबाद प्रोफेसर वॉक-इन इंटरव्यू 2026 – 1 वैकेंसी",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Download the application form (Annexure-IV) from the official website www.esic.gov.in/recruitments.",
+      "Fill out the application form properly in the prescribed pro-forma.",
+      "Attend the walk-in interview on 13 November 2026 at the designated venue along with the filled application, two passport size photographs, and original and self-attested copies of all required documents."
+    ],
+    "how_hi": [
+      "आधिकारिक वेबसाइट www.esic.gov.in/recruitments से आवेदन पत्र (एनेक्जर-IV) डाउनलोड करें।",
+      "निर्धारित प्रोफार्मा में आवेदन पत्र को ठीक से भरें।",
+      "13 नवंबर 2026 को भरे हुए आवेदन, दो पासपोर्ट साइज फोटो और सभी आवश्यक दस्तावेजों की मूल व स्व-सत्यापित प्रतियों के साथ निर्धारित स्थल पर वॉक-इन इंटरव्यू में भाग लें।"
+    ],
+    "intro_en": "Employees' State Insurance Corporation (ESIC) Super Speciality Hospital, Sanathnagar, Hyderabad has released a notification for the recruitment of Visiting Faculty or Adjunct Faculty to the post of Professor in the Department of Neuro-Surgery on a contractual basis. There is 1 vacancy available. Eligible candidates possessing the required postgraduate degree and experience can attend the walk-in interview on 13 November 2026 along with the prescribed application form and original documents.",
+    "intro_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईसी) सुपर स्पेशलिटी अस्पताल, सनथनगर, हैदराबाद ने न्यूरो-सर्जरी विभाग में प्रोफेसर के पद पर विजिटिंग फैकल्टी या एडजंकट फैकल्टी के रूप में संविदा आधार पर भर्ती के लिए अधिसूचना जारी की है। कुल 1 वैकेंसी उपलब्ध है। योग्य उम्मीदवार जो आवश्यक स्नातकोत्तर डिग्री और अनुभव रखते हैं, वे निर्धारित आवेदन पत्र और मूल दस्तावेजों के साथ 13 नवंबर 2026 को वॉक-इन इंटरव्यू में शामिल हो सकते हैं।",
+    "last_date": null,
+    "mistakes_en": [
+      "Reporting after the scheduled time for document verification and interview",
+      "Submitting incomplete applications or applications in formats other than the prescribed pro-forma"
+    ],
+    "mistakes_hi": [
+      "दस्तावेज सत्यापन और इंटरव्यू के लिए निर्धारित समय के बाद पहुंचना",
+      "अधूरे आवेदन या निर्धारित प्रोफार्मा के अलावा अन्य प्रारूपों में आवेदन जमा करना"
+    ],
+    "not_en": [
+      "Candidates reporting after the scheduled time for the interview will not be allowed"
+    ],
+    "not_hi": [
+      "इंटरव्यू के लिए निर्धारित समय के बाद रिपोर्ट करने वाले उम्मीदवारों को अनुमति नहीं दी जाएगी"
+    ],
+    "notice_date": "2026-11-07",
+    "official_site": "https://www.esic.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Visiting Faculty / Adjunct Faculty (Professor - Neuro-Surgery)",
+        "value_hi": "विजिटिंग फैकल्टी / एडजंकट फैकल्टी (प्रोफेसर - न्यूरो-सर्जरी)"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल वैकेंसी",
+        "value_en": "1",
+        "value_hi": "1"
+      },
+      {
+        "label_en": "Walk-in interview date",
+        "label_hi": "वॉक-इन इंटरव्यू की तिथि",
+        "value_en": "13 Nov 2026 at 11:00 AM",
+        "value_hi": "13 नवम् 2026 को सुबह 11:00 बजे"
+      },
+      {
+        "label_en": "Educational qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "Postgraduate degree in Neuro-Surgery with 8 years of experience",
+        "value_hi": "न्यूरो-सर्जरी में स्नातकोत्तर डिग्री और 8 वर्ष का अनुभव"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "Not exceeding 69 years as on 13 Nov 2026",
+        "value_hi": "13 नवम् 2026 को 69 वर्ष से अधिक नहीं"
+      },
+      {
+        "label_en": "Selection process",
+        "label_hi": "चयन प्रक्रिया",
+        "value_en": "Document verification and Interview",
+        "value_hi": "दस्तावेज़ सत्यापन और इंटरव्यू"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "03/2026",
+        "value_hi": "03/2026"
+      }
+    ],
+    "salary": [
+      {
+        "label_en": "Honorarium",
+        "label_hi": "मानदेय",
+        "value_en": "₹6,000/- per day",
+        "value_hi": "₹6,000/- प्रति दिन"
+      }
+    ],
+    "selection_en": [
+      "Document verification of candidates reporting at the venue",
+      "Interview before the Selection Board for verified candidates"
+    ],
+    "selection_hi": [
+      "समीप आने वाले उम्मीदवारों का दस्तावेज सत्यापन",
+      "सत्यापित उम्मीदवारों के लिए चयन बोर्ड के समक्ष इंटरव्यू"
+    ],
+    "share_card": {
+      "headline_en": "Walk-in Interview 2026",
+      "headline_hi": "वॉक-इन इंटरव्यू 2026",
+      "kind": "job",
+      "line_en": "Professor (Neuro-Surgery)",
+      "line_hi": "प्रोफेसर (न्यूरो-सर्जरी)",
+      "posts": 1
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "ESIC Super Speciality Hospital, Sanathnagar, Hyderabad is conducting a walk-in interview for 1 Professor post in the Department of Neuro-Surgery on a contractual basis. Eligible and qualified candidates should report for document verification and interview on 13 November 2026.",
+    "summary_hi": "ईएसआईसी सुपर स्पेशलिटी अस्पताल, सनथनगर, हैदराबाद न्यूरो-सर्जरी विभाग में प्रोफेसर के 1 पद के लिए संविदा के आधार पर वॉक-इन इंटरव्यू आयोजित कर रहा है। योग्य उम्मीदवार 13 नवंबर 2026 को दस्तावेज सत्यापन और इंटरव्यू के लिए उपस्थित हों।",
+    "vacancies": [
+      {
+        "detail_en": "Visiting Faculty / Adjunct Faculty",
+        "detail_hi": "विजिटिंग फैकल्टी / एडजंकट फैकल्टी",
+        "post_en": "Professor (Neuro-Surgery)",
+        "post_hi": "प्रोफेसर (न्यूरो-सर्जरी)",
+        "total": "1"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Medical professionals with a postgraduate degree in Neuro-Surgery and 8 years of experience"
+    ],
+    "who_hi": [
+      "न्यूरो-सर्जरी में स्नातकोत्तर डिग्री और 8 वर्ष के अनुभव वाले चिकित्सा पेशेवर"
+    ]
+  },
   "pdf": {
     "bytes": 790392,
     "pages": 4,
     "sha256": "6c1cb4885751d0e4bc37b475e1da2ae05ef4d649f921df06104dc1da4022bd7c",
     "text_kind": "text"
   },
+  "published_at": "2026-11-09T12:04:45Z",
+  "qual": [
+    "postgraduate"
+  ],
+  "slug": "esic-hyderabad-professor-walk-in-interview-2026-1-vacancy",
   "source_id": "esic-recruitment",
-  "status": "pending_review",
+  "status": "approved",
   "title": "2 ईएसआईसी सुपर स्पेशलिटी अस्पताल , सनथनगर, हैदराबाद / ESIC Super Speciality Hospital Sanathnagar, Hyderabad, Telangana Walk-in Interview for Recruitment of Visiting Faculty/Adjunct Faculty for the post of Professor, Department of Neurosurgery- PDF size:(771.87 KB) . Application Form -Annexure-IV - P",
   "url": "https://esic.gov.in/attachments/recruitmentfile/Walk_in_Interview_for_Recruitment_of_Visiting_Faculty_Adjunct_Faculty_for_the_post_of_Professor_Department_of_Neurosurgery_1794209410.pdf"
 }
