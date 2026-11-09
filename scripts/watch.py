@@ -28,6 +28,7 @@ import yaml
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.dirname(__file__))
+import common  # noqa: E402
 from common import USER_AGENT, download, get, last_repair_error  # noqa: E402
 from extract import classify, extract, pdf_text  # noqa: E402
 
@@ -411,6 +412,10 @@ def main() -> int:
 
     for src in sources:
         h = health.setdefault(src["id"], {})
+        if src.get("insecure_tls"):   # an expired certificate on a board's own site: read it anyway (only that host)
+            import urllib3
+            urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+            common.INSECURE_HOSTS.add(urlparse(src["url"]).hostname or "")
         try:
             if src.get("follow"):
                 items = links_following(src)
@@ -438,6 +443,8 @@ def main() -> int:
 
         if src.get("title_must"):   # aggregator pages also link their own rate cards / policies: keep real adverts only
             items = [i for i in items if re.search(src["title_must"], i["title"], re.I)]
+        if src.get("url_must"):     # boards whose pages also link annual reports, forms and policies: keep notice files only
+            items = [i for i in items if re.search(src["url_must"], i["url"], re.I)]
         known = set(seen.get(src["id"], []))
         first_run = src["id"] not in seen
         new = [i for i in items if ukey(src, i) not in known]

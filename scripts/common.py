@@ -124,13 +124,16 @@ def _legacy(host: str) -> None:
         _legacy_hosts.add(host)
 
 
+INSECURE_HOSTS: set[str] = set()   # boards whose certificate has simply expired (sources.yaml: insecure_tls: true)
+
+
 def get(url: str, attempts: int = 3, stream: bool = False) -> requests.Response:
     """GET with polite retries/back-off and certificate-chain repair. Raises on final failure."""
     last: Exception | None = None
     host = urlparse(url).hostname or ""
     for i in range(1, attempts + 1):
         try:
-            verify = _bundles.get(host, True)
+            verify = False if host in INSECURE_HOSTS else _bundles.get(host, True)
             r = session.get(url, timeout=TIMEOUT, stream=stream, verify=verify)
             if r.status_code == 403:  # some boards' firewalls reject non-browser visitors
                 r = session.get(url, timeout=TIMEOUT, stream=stream, verify=verify,

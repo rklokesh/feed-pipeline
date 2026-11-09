@@ -33,11 +33,11 @@ MONTHS_HI = ["जनवरी", "फ़रवरी", "मार्च", "अप
 
 # slug, EN name, HI name, source-id prefixes (the state's own boards)
 STATES = [
-    ("up", "UP", "यूपी", ["uppsc", "upsssc", "uppbpb"]),
+    ("up", "UP", "यूपी", ["uppsc", "upsssc", "uppbpb", "upessc", "allahabad-hc"]),
     ("bihar", "Bihar", "बिहार", ["bpsc", "bssc", "csbc", "bpssc"]),
-    ("rajasthan", "Rajasthan", "राजस्थान", ["rpsc", "rssb"]),
+    ("rajasthan", "Rajasthan", "राजस्थान", ["rpsc", "rssb", "rajasthan-hc"]),
     ("mp", "MP", "एमपी", ["mppsc", "mpesb"]),
-    ("haryana", "Haryana", "हरियाणा", ["hpsc", "hssc"]),
+    ("haryana", "Haryana", "हरियाणा", ["hpsc", "hssc", "haryana-police"]),
     ("delhi", "Delhi", "दिल्ली", ["dsssb"]),
     ("punjab", "Punjab", "पंजाब", ["psssb", "ppsc"]),
     ("jammu-kashmir", "J&K", "जम्मू-कश्मीर", ["jkssb", "jkpsc"]),

@@ -41,6 +41,7 @@ sources:
     url: https://rrbcdg.gov.in/
     render: static
     runner: india
+    enabled: false      # Nov 2026: certificate for another name; every RRB now posts on the unified RRB portal (rrb-unified)
   - id: rrb-unified
     org: RRB
     url: https://rrb.indianrailways.gov.in/
@@ -144,6 +145,7 @@ sources:
   - id: bssc-home
     org: BSSC
     url: https://bssc.bihar.gov.in/NoticeBoard.htm
+    insecure_tls: true   # Nov 2026: the board's certificate has expired; its notices are still public
     render: static
     runner: github
   - id: rpsc-home
@@ -367,3 +369,48 @@ sources:
     org_from_title: true   # each PDF is one employer's advert ("SAINIK SCHOOL NAGROTA, ... (Issue no 31 ...)")
     title_must: "Issue no"   # adverts carry the issue number; menu PDFs (rate card, policy) do not
     # Government of India's weekly; carries central ministries, institutes and bodies whose own sites we can't read
+
+  # --- added 9 Nov 2026 (coverage): boards that publish many North India / central notices ---
+  - id: upessc-home
+    org: UPESSC
+    url: https://upessc.up.gov.in/
+    render: static
+    runner: india
+    url_must: "/Notice/"           # the home page also links calendars and forms; notices live under /Notice/
+  - id: sci-recruitment
+    org: Supreme Court of India
+    url: https://www.sci.gov.in/recruitments/
+    render: static
+    runner: india
+    url_must: "/uploads/"
+  - id: mha-vacancies
+    org: MHA
+    url: https://www.mha.gov.in/en/notifications/vacancies
+    render: static
+    runner: india
+    url_must: "vacancies_documents"
+  - id: esic-recruitment
+    org: ESIC
+    url: https://www.esic.gov.in/recruitments
+    render: static
+    runner: india
+    url_must: "recruitmentfile"
+  - id: haryana-police
+    org: Haryana Police
+    url: https://haryanapolice.gov.in/
+    render: static
+    runner: india
+    url_must: "/pdf/"
+    title_must: "recruit|vacanc|exam|result|selection|interview|admit|answer key|post of|posts of|appointment|merit|shortlist|भर्ती|परीक्षा|परिणाम|engagement|constable|SPO"
+  - id: allahabad-hc
+    org: Allahabad High Court
+    url: https://www.allahabadhighcourt.in/
+    render: static
+    runner: india
+    title_must: "recruit|vacanc|exam|result|selection|interview|admit|answer key|post of|posts of|appointment|merit|shortlist|भर्ती|परीक्षा|परिणाम"
+  - id: rajasthan-hc
+    org: Rajasthan High Court
+    url: https://hcraj.nic.in/hcraj/
+    render: static
+    runner: india
+    title_must: "recruit|vacanc|exam|result|selection|interview|admit|answer key|post of|posts of|appointment|merit|shortlist|भर्ती|परीक्षा|परिणाम"
