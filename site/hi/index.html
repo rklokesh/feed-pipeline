@@ -159,6 +159,10 @@ html[lang="hi"] .x-en, html:not([lang="hi"]) .x-hi { display: none; }
 /* every column stays on one line: long text ends in "…" and shows in full in the tooltip */
 .list .cut, .row.head > span { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .list li.lr:hover, .list li.lr.sel { background: var(--hover); }
+/* hovering a row turns every column the same maroon as the notice title (light) / soft pink (dark) */
+.list li.lr:hover a.row, .list li.lr:hover a.row *:not(svg):not(path), .list li.lr.sel a.row, .list li.lr.sel a.row *:not(svg):not(path) { color: #8E1B1E !important; }
+:root[data-theme="dark"] .list li.lr:hover a.row, :root[data-theme="dark"] .list li.lr:hover a.row *:not(svg):not(path), :root[data-theme="dark"] .list li.lr.sel a.row, :root[data-theme="dark"] .list li.lr.sel a.row *:not(svg):not(path) { color: #F2A7A1 !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .list li.lr:hover a.row, :root:not([data-theme="light"]) .list li.lr:hover a.row *:not(svg):not(path), :root:not([data-theme="light"]) .list li.lr.sel a.row, :root:not([data-theme="light"]) .list li.lr.sel a.row *:not(svg):not(path) { color: #F2A7A1 !important; } }
 .list li.lr.sel .t, .list li.lr:hover .t { text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
 .list .pdf { color: var(--ink); white-space: nowrap; }
 .list a.pdf:hover { text-decoration: underline; text-underline-offset: 5px; }
