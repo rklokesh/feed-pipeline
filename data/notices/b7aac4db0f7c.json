@@ -1,0 +1,27 @@
+{
+  "board_url": "https://kvs.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "d, the notification issued by the Government of Odisha vide Notification No. RDM-DRC-POLICY-0003-2025-26277 /R&D.M., Dated 22 June 2026, the English spellings of the name of Districts, Sub-d",
+      "source": "rule",
+      "value": "RDM-DRC-POLICY-0003-2025-26277 /R"
+    }
+  },
+  "first_seen": "2026-11-09T08:29:30+00:00",
+  "id": "b7aac4db0f7c",
+  "kind": "notification",
+  "org": "KVS",
+  "pdf": {
+    "bytes": 142691,
+    "pages": 3,
+    "sha256": "c72cb256acd35b52e4168b21ed97828f51d948e9ca0ba077074efb903ca6a044",
+    "text_kind": "text"
+  },
+  "source_id": "kvs-home",
+  "status": "pending_review",
+  "title": "ओडिशा राज्य में स्थित केंद्रीय विद्यालयों के नाम की अंग्रेजी वर्तनी में संशोधन के संबंध में ज्ञापन। नई",
+  "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026110969.pdf"
+}
