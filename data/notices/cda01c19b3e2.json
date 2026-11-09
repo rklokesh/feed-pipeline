@@ -3,7 +3,7 @@
   "board_url": "https://dsssb.delhi.gov.in/",
   "card": {
     "confidence": "high",
-    "exam_date": null,
+    "exam_date": "2026-05-05",
     "last_date": null,
     "list": true,
     "posts": "Assistant Librarian",
@@ -31,10 +31,10 @@
   "org": "DSSSB",
   "page": {
     "after_en": [
-      "Candidates whose roll numbers are listed in the main result will proceed to the next stage of document verification or appointment as per DSSSB guidelines."
+      "The User Department will conduct thorough verification of eligibility, caste certificates, and original documents before issuing the final offer of appointment."
     ],
     "after_hi": [
-      "वे उम्मीदवार जिनके अनुक्रमांक मुख्य परिणाम में सूचीबद्ध हैं, वे DSSSB दिशानिर्देशों के अनुसार दस्तावेज़ सत्यापन या नियुक्ति के अगले चरण में आगे बढ़ेंगे।"
+      "अंतिम नियुक्ति प्रस्ताव जारी करने से पहले उपयोगकर्ता विभाग पात्रता, जाति प्रमाण पत्र और मूल दस्तावेजों का गहन सत्यापन करेगा।"
     ],
     "age": [],
     "apply_start": null,
@@ -42,63 +42,115 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check the result PDF thoroughly for your roll number.",
-      "Note down any further instructions provided in the notice."
+      "Check your roll number in the result PDF.",
+      "Keep your original documents ready for departmental verification."
     ],
     "checklist_hi": [
-      "अपने अनुक्रमांक के लिए परिणाम पीडीएफ की अच्छी तरह से जांच करें।",
-      "नोटिस में दिए गए किसी भी अन्य निर्देश को नोट कर लें।"
+      "परिणाम पीडीएफ में अपना रोल नंबर जांचें।",
+      "विभागीय सत्यापन के लिए अपने मूल दस्तावेज तैयार रखें।"
     ],
     "conducted_by_en": "Delhi Subordinate Services Selection Board (DSSSB)",
     "conducted_by_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB)",
     "dates": [
       {
-        "label_en": "Result Notice Date",
+        "label_en": "Advertisement date",
+        "label_hi": "विज्ञापन तिथि",
+        "value_en": "31 Jul 2025",
+        "value_hi": "31 जुलाई 2025"
+      },
+      {
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "05 May 2026",
+        "value_hi": "05 मई 2026"
+      },
+      {
+        "label_en": "e-dossier upload start date",
+        "label_hi": "ई-ड Dossier अपलोड शुरू होने की तिथि",
+        "value_en": "07 Aug 2026",
+        "value_hi": "07 अगस्त 2026"
+      },
+      {
+        "label_en": "e-dossier upload last date",
+        "label_hi": "ई-ड Dossier अपलोड करने की अंतिम तिथि",
+        "value_en": "21 Aug 2026",
+        "value_hi": "21 अगस्त 2026"
+      },
+      {
+        "label_en": "Result notice date",
         "label_hi": "परिणाम नोटिस तिथि",
         "value_en": "09 Nov 2026",
-        "value_hi": "09 नवम् 2026"
+        "value_hi": "09 नवंबर 2026"
       }
     ],
     "documents_en": [
-      "Copy of Result Notice",
-      "Admit Card of the exam",
-      "Educational and Identity Proof documents for further verification"
+      "Educational qualification certificates",
+      "Age proof certificates",
+      "Caste/Category certificate (if applicable)",
+      "Identity proof"
     ],
     "documents_hi": [
-      "परिणाम नोटिस की प्रति",
-      "परीक्षा का एडमिट कार्ड",
-      "आगे के सत्यापन के लिए शैक्षणिक और पहचान प्रमाण दस्तावेज"
+      "शैक्षणिक योग्यता प्रमाण पत्र",
+      "आयु प्रमाण पत्र",
+      "जाति/श्रेणी प्रमाण पत्र (यदि लागू हो)",
+      "पहचान प्रमाण"
     ],
-    "eligibility": [],
-    "exam_date": null,
+    "eligibility": [
+      {
+        "label_en": "Cutoff date for eligibility",
+        "label_hi": "पात्रता के लिए कटऑफ तिथि",
+        "value_en": "16 Sep 2025",
+        "value_hi": "16 सितंबर 2025"
+      }
+    ],
+    "exam_date": "2026-05-05",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is the official announcement of selected candidates by the Delhi Subordinate Services Selection Board for the Assistant Librarian position under Post Code 34/25 in Urdu Academy.",
-        "a_hi": "यह दिल्ली अधीनस्थ सेवा चयन बोर्ड द्वारा उर्दू अकादमी में सहायक लाइब्रेरियन पद (पोस्ट कोड 34/25) के लिए चयनित उम्मीदवारों की आधिकारिक घोषणा है।",
+        "a_en": "It is the official notice released by Delhi Subordinate Services Selection Board containing the roll numbers of provisionally selected candidates and waitlisted candidates for the post of Assistant Librarian under post code 34/25.",
+        "a_hi": "यह दिल्ली अधीनस्थ सेवा चयन बोर्ड द्वारा जारी आधिकारिक नोटिस है जिसमें पोस्ट कोड 34/25 के तहत सहायक लाइब्रेरियन के पद के लिए अनंतिम रूप से चयनित उम्मीदवारों और प्रतीक्षा सूची के उम्मीदवारों के रोल नंबर शामिल हैं।",
         "q_en": "What is DSSSB Assistant Librarian Result?",
-        "q_hi": "DSSSB सहायक लाइब्रेरियन रिजल्ट क्या है?"
+        "q_hi": "DSSSB सहायक लाइब्रेरियन परिणाम क्या है?"
       }
     ],
-    "extra": [],
+    "extra": [
+      {
+        "label_en": "UR Category Cutoff Marks (Main)",
+        "label_hi": "अनारक्षित श्रेणी कटऑफ अंक (मुख्य)",
+        "value_en": "131.75",
+        "value_hi": "131.75"
+      },
+      {
+        "label_en": "UR Category Cutoff Marks (Waiting Panel)",
+        "label_hi": "अनारक्षित श्रेणी कटऑफ अंक (प्रतीक्षा पैनल)",
+        "value_en": "123.75",
+        "value_hi": "123.75"
+      }
+    ],
     "faq": [
       {
-        "a_en": "The main result was declared on 09 November 2026 via Notice No. 1073.",
-        "a_hi": "मुख्य परिणाम 09 नवंबर 2026 को नोटिस संख्या 1073 के माध्यम से घोषित किया गया था।",
-        "q_en": "When was the DSSSB Assistant Librarian Result 2026 declared?",
-        "q_hi": "DSSSB सहायक लाइब्रेरियन रिजल्ट 2026 कब घोषित किया गया था?"
+        "a_en": "The Tier-I written examination was held on 05 May 2026.",
+        "a_hi": "टियर-I लिखित परीक्षा 05 मई 2026 को आयोजित की गई थी।",
+        "q_en": "When was the DSSSB Assistant Librarian Tier-I exam held?",
+        "q_hi": "DSSSB सहायक लाइब्रेरियन टियर-I परीक्षा कब आयोजित की गई थी?"
       },
       {
-        "a_en": "The post code is 34/25.",
-        "a_hi": "पोस्ट कोड 34/25 है।",
-        "q_en": "What is the Post Code for DSSSB Assistant Librarian?",
-        "q_hi": "DSSSB सहायक लाइब्रेरियन के लिए पोस्ट कोड क्या है?"
+        "a_en": "A total of 01 vacancy was advertised under the UR category.",
+        "a_hi": "अनारक्षित श्रेणी के तहत कुल 01 वैकेंसी विज्ञापित की गई थी।",
+        "q_en": "How many vacancies were advertised for DSSSB Assistant Librarian Post Code 34/25?",
+        "q_hi": "DSSSB सहायक लाइब्रेरियन पोस्ट कोड 34/25 के लिए कुल कितनी वैकेंसी विज्ञापित की गई थीं?"
       },
       {
-        "a_en": "The vacancy is under the Urdu Academy.",
-        "a_hi": "यह रिक्ति उर्दू अकादमी के अंतर्गत है।",
-        "q_en": "Which department has announced this Assistant Librarian vacancy?",
-        "q_hi": "किस विभाग ने इस सहायक लाइब्रेरियन रिक्ति की घोषणा की है?"
+        "a_en": "The cutoff mark for the UR category in the main result is 131.75.",
+        "a_hi": "मुख्य परिणाम में अनारक्षित श्रेणी के लिए कटऑफ अंक 131.75 है।",
+        "q_en": "What is the cutoff mark for UR category in the main result?",
+        "q_hi": "मुख्य परिणाम में अनारक्षित श्रेणी के लिए कटऑफ अंक क्या है?"
+      },
+      {
+        "a_en": "The cutoff mark for the waiting panel under the UR category is 123.75.",
+        "a_hi": "अनारक्षित श्रेणी के तहत प्रतीक्षा पैनल के लिए कटऑफ अंक 123.75 है।",
+        "q_en": "What is the cutoff mark for the waiting panel under the UR category?",
+        "q_hi": "अनारक्षित श्रेणी के तहत प्रतीक्षा पैनल के लिए कटऑफ अंक क्या है?"
       }
     ],
     "fees": [],
@@ -106,25 +158,23 @@
     "h1_hi": "DSSSB सहायक लाइब्रेरियन रिज़ल्ट 2026 – पोस्ट कोड 34/25 मेरिट लिस्ट",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official website of DSSSB.",
-      "Go to the 'Latest Results' or 'Circulars' section.",
-      "Click on the link for Main Result Notice No. 1073 for Assistant Librarian Post Code 34/25.",
-      "Download the PDF file and check your roll number."
+      "Visit the official DSSSB website.",
+      "Go to the Results section or click on Result Notice No. 1073.",
+      "Download the PDF notice and check your roll number and marks."
     ],
     "how_hi": [
-      "DSSSB की आधिकारिक वेबसाइट पर जाएं।",
-      "लेटेस्ट रिजल्ट या सर्कुलर सेक्शन में जाएं।",
-      "सहायक लाइब्रेरियन पोस्ट कोड 34/25 के लिए मुख्य परिणाम नोटिस संख्या 1073 के लिंक पर क्लिक करें।",
-      "पीडीएफ फ़ाइल डाउनलोड करें और अपना अनुक्रमांक जांचें।"
+      "आधिकारिक डीएसएसएसबी वेबसाइट पर जाएं।",
+      "परिणाम अनुभाग पर जाएं या परिणाम नोटिस संख्या 1073 पर क्लिक करें।",
+      "पीडीएफ नोटिस डाउनलोड करें और अपना रोल नंबर और अंक जांचें।"
     ],
-    "intro_en": "Delhi Subordinate Services Selection Board (DSSSB) has announced the main result for the recruitment of Assistant Librarian under Post Code 34/25 in Urdu Academy. This page provides details regarding the declared result notice number 1073 issued on 09 Nov 2026. Candidates can check the official notification to view the roll numbers of shortlisted candidates.",
-    "intro_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने उर्दू अकादमी में सहायक लाइब्रेरियन पद (पोस्ट कोड 34/25) के लिए मुख्य परिणाम की घोषणा कर दी है। यह पृष्ठ 09 नवम् 2026 को जारी किए गए परिणाम नोटिस संख्या 1073 से संबंधित विवरण प्रदान करता है। उम्मीदवार शॉर्टलिस्ट किए गए उम्मीदवारों के अनुक्रमांक देखने के लिए आधिकारिक अधिसूचना देख सकते हैं।",
+    "intro_en": "Delhi Subordinate Services Selection Board (DSSSB) has announced the main result notice no. 1073 for the recruitment of Assistant Librarian in Urdu Academy under post code 34/25. The online written examination was conducted on 05 May 2026. Candidates have been provisionally nominated based on their performance in the Tier-I examination. The final appointment will be subject to document verification by the User Department.",
+    "intro_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने पोस्ट कोड 34/25 के तहत उर्दू अकादमी में सहायक लाइब्रेरियन की भर्ती के लिए मुख्य परिणाम नोटिस संख्या 1073 घोषित कर दिया है। ऑनलाइन लिखित परीक्षा 05 मई 2026 को आयोजित की गई थी। टियर-I परीक्षा में उनके प्रदर्शन के आधार पर उम्मीदवारों को अनंतिम रूप से नामित किया गया है। अंतिम नियुक्ति उपयोगकर्ता विभाग द्वारा दस्तावेज़ सत्यापन के अधीन होगी।",
     "last_date": null,
     "mistakes_en": [
-      "Do not panic if your roll number is not found; verify the post code and category carefully against the official cutoff criteria."
+      "Failing to produce original documents during verification by the User Department will lead to cancellation of candidature."
     ],
     "mistakes_hi": [
-      "यदि आपका अनुक्रमांक नहीं मिलता है तो घबराएं नहीं; आधिकारिक कटऑफ मानदंडों के खिलाफ पोस्ट कोड और श्रेणी की सावधानीपूर्वक जांच करें।"
+      "उपयोगकर्ता विभाग द्वारा सत्यापन के दौरान मूल दस्तावेज प्रस्तुत करने में विफल रहने पर उम्मीदवारी रद्द कर दी जाएगी।"
     ],
     "not_en": [],
     "not_hi": [],
@@ -134,10 +184,16 @@
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Post Name",
-        "label_hi": "पद का नाम",
+        "label_en": "Posts",
+        "label_hi": "पद",
         "value_en": "Assistant Librarian",
         "value_hi": "सहायक लाइब्रेरियन"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल वैकेंसी",
+        "value_en": "1",
+        "value_hi": "1"
       },
       {
         "label_en": "Post Code",
@@ -146,46 +202,56 @@
         "value_hi": "34/25"
       },
       {
-        "label_en": "Department",
-        "label_hi": "विभाग",
-        "value_en": "Urdu Academy",
-        "value_hi": "उर्दू अकादमी"
+        "label_en": "Exam date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "05 May 2026",
+        "value_hi": "05 मई 2026"
       },
       {
-        "label_en": "Notice Number",
-        "label_hi": "नोटिस संख्या",
-        "value_en": "1073",
-        "value_hi": "1073"
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "02/25",
+        "value_hi": "02/25"
       }
     ],
     "salary": [],
     "selection_en": [
-      "Written Exam / Tier Examination",
-      "Main Result / Shortlisting"
+      "Tier-I written examination",
+      "e-dossier upload",
+      "Provisional nomination and document verification by User Department"
     ],
     "selection_hi": [
-      "लिखित परीक्षा / टीयर परीक्षा",
-      "मुख्य परिणाम / शॉर्टलिस्टिंग"
+      "टियर-I लिखित परीक्षा",
+      "ई-डॉसियर अपलोड",
+      "उपयोगकर्ता विभाग द्वारा अनंतिम नामांकन और दस्तावेज़ सत्यापन"
     ],
     "share_card": {
       "headline_en": "Main Result Declared",
       "headline_hi": "मुख्य परिणाम घोषित",
       "kind": "result",
-      "line_en": "Assistant Librarian (34/25)",
-      "line_hi": "सहायक लाइब्रेरियन (34/25)",
-      "posts": null
+      "line_en": "Assistant Librarian 34/25",
+      "line_hi": "सहायक लाइब्रेरियन 34/25",
+      "posts": 1
     },
     "status_en": "Main result declared",
     "status_hi": "मुख्य परिणाम घोषित",
-    "summary_en": "Delhi Subordinate Services Selection Board (DSSSB) has released the main result for the Assistant Librarian post under Post Code 34/25 in Urdu Academy. Candidates who appeared for the exam can check their results in the notice. Download the PDF to view selected roll numbers.",
-    "summary_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) ने उर्दू अकादमी में सहायक लाइब्रेरियन पद (पोस्ट कोड 34/25) के लिए मुख्य परिणाम जारी कर दिया है। परीक्षा में शामिल होने वाले उम्मीदवार नोटिस में अपना परिणाम देख सकते हैं। चयनित अनुक्रमांक देखने के लिए पीडीएफ डाउनलोड करें।",
-    "vacancies": [],
+    "summary_en": "DSSSB has released the main result and waiting panel for the Assistant Librarian post under post code 34/25 in Urdu Academy. Candidates can check their roll number and marks in the notice.",
+    "summary_hi": "DSSSB ने उर्दू अकादमी में सहायक लाइब्रेरियन पद (पोस्ट कोड 34/25) के लिए मुख्य परिणाम और प्रतीक्षा पैनल जारी कर दिया है। उम्मीदवार नोटिस में अपना रोल नंबर और अंक देख सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "UR 1, EWS 0, OBC 0, SC 0, ST 0, PwBD 0, ExSM 0",
+        "detail_hi": "अनारक्षित 1, ईडब्ल्यूएस 0, ओबीसी 0, एससी 0, एसटी 0, दिव्यांग 0, भूतपूर्व सैनिक 0",
+        "post_en": "Assistant Librarian",
+        "post_hi": "सहायक लाइब्रेरियन",
+        "total": "1"
+      }
+    ],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the DSSSB Assistant Librarian Post Code 34/25 exam"
+      "Candidates who appeared for the DSSSB Assistant Librarian exam under post code 34/25."
     ],
     "who_hi": [
-      "वे उम्मीदवार जो DSSSB सहायक लाइब्रेरियन पोस्ट कोड 34/25 परीक्षा में शामिल हुए थे"
+      "वे उम्मीदवार जिन्होंने पोस्ट कोड 34/25 के तहत डीएसएसएसबी सहायक लाइब्रेरियन परीक्षा दी थी।"
     ]
   },
   "pdf": {
@@ -195,10 +261,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-09T11:05:49Z",
-  "qual": [
-    "graduate"
-  ],
-  "rewrite": true,
   "slug": "dsssb-assistant-librarian-result-2026-post-code-34-25-merit-list",
   "source_id": "dsssb-home",
   "status": "approved",

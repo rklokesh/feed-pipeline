@@ -1,23 +1,340 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://haryanapolice.gov.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Senior Scientific Officer, Senior Scientific Assistant, Scientific Assistant, Lab Attendant",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Haryana Police has invited applications for scientific and support staff positions on a contractual basis in the DNA division of Forensic Science Laboratory, Madhuban.",
+    "summary_hi": "हरियाणा पुलिस ने फॉरेंसिक साइंस लेबोरेटरी, मधुबन के डीएनए डिवीजन में संविदा के आधार पर वैज्ञानिक और सहायक स्टाफ के पदों के लिए आवेदन आमंत्रित किए हैं।",
+    "title_en": "Haryana FSL Scientific & Support Staff Recruitment 2024 – Apply for 20 Posts",
+    "title_hi": "हरियाणा एफएसएल वैज्ञानिक और सहायक स्टाफ भर्ती 2024 – 20 पदों के लिए आवेदन",
+    "type": "Job",
+    "vacancies": 20
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": 50,
+    "age_min": 18,
+    "age_on": null,
+    "domicile": null,
+    "qual": "10th",
+    "relax": {}
+  },
+  "exam": {},
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-09T11:59:45+00:00",
   "id": "1b41a9c616e6",
+  "issue": 1191,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-11-09",
   "org": "Haryana Police",
+  "page": {
+    "after_en": [
+      "Shortlisted candidates will be called for an interview.",
+      "Selected candidates will be engaged purely on a temporary and contractual basis for a period of one year."
+    ],
+    "after_hi": [
+      "शॉर्टलिस्ट किए गए उम्मीदवारों को साक्षात्कार के लिए बुलाया जाएगा।",
+      "चयनित उम्मीदवारों को एक वर्ष की अवधि के लिए पूरी तरह से अस्थायी और संविदा के आधार पर नियुक्त किया जाएगा।"
+    ],
+    "age": [
+      {
+        "label_en": "Senior Scientific Officer",
+        "label_hi": "सीनियर साइंटिफिक ऑफिसर",
+        "value_en": "21 to 50 years",
+        "value_hi": "21 से 50 वर्ष"
+      },
+      {
+        "label_en": "Senior Scientific Assistant",
+        "label_hi": "सीनियर साइंटिफिक असिस्टेंट",
+        "value_en": "21 to 45 years",
+        "value_hi": "21 से 45 वर्ष"
+      },
+      {
+        "label_en": "Scientific Assistant",
+        "label_hi": "साइंटिफिक असिस्टेंट",
+        "value_en": "21 to 40 years",
+        "value_hi": "21 से 40 वर्ष"
+      },
+      {
+        "label_en": "Lab Attendant",
+        "label_hi": "लैब अटेंडेंट",
+        "value_en": "18 to 40 years",
+        "value_hi": "18 से 40 वर्ष"
+      }
+    ],
+    "apply_start": null,
+    "apply_url": null,
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check eligibility criteria for the specific post.",
+      "Prepare separate application sets if applying for multiple posts.",
+      "Ensure all certificates are self-attested."
+    ],
+    "checklist_hi": [
+      "विशिष्ट पद के लिए पात्रता मानदंड की जांच करें।",
+      "यदि कई पदों کے लिए आवेदन कर रहे हैं तो अलग आवेदन सेट तैयार करें।",
+      "सुनिश्चित करें कि सभी प्रमाण पत्र स्व-सत्यापित हैं।"
+    ],
+    "conducted_by_en": "Forensic Science Laboratory, Haryana (Haryana Police)",
+    "conducted_by_hi": "फोरेंसिक साइंस लेबोरेटरी, हरियाणा (हरियाणा पुलिस)",
+    "dates": [],
+    "documents_en": [
+      "Prescribed application form",
+      "Self-attested copies of educational certificates (10+2, Bachelor's, Master's, Ph.D.)",
+      "Grade to percentage conversion certificate (if applicable)",
+      "Post-qualification experience certificates issued by the Head of the Laboratory / competent authority",
+      "Caste / category certificate (if claiming reservation under Haryana state policy)"
+    ],
+    "documents_hi": [
+      "निर्धारित आवेदन पत्र",
+      "शैक्षणिक प्रमाण पत्र (10+2, स्नातक, स्नातकोत्तर, पीएच.डी.) की स्व-सत्यापित प्रतियां",
+      "ग्रेड से प्रतिशत रूपांतरण प्रमाण पत्र (यदि लागू हो)",
+      "प्रयोगशाला प्रमुख / सक्षम प्राधिकारी द्वारा जारी अनुभव प्रमाण पत्र",
+      "जाति / श्रेणी प्रमाण पत्र (यदि हरियाणा राज्य नीति के तहत आरक्षण का दावा कर रहे हैं)"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Senior Scientific Officer (DNA)",
+        "label_hi": "सीनियर साइंटिफिक ऑफिसर (डीएनए)",
+        "value_en": "M.Sc. (1st Division) or Ph.D. in Zoology / Physical Anthropology / Genetics / Biochemistry / Biotechnology / Microbiology / Molecular Biology / Forensic Science with Zoology/Botany at B.Sc. level + 5 years post-qualification hands-on experience of Forensic DNA casework.",
+        "value_hi": "प्राणीशास्त्र / भौतिक मानवविज्ञान / आनुवंशिकी / जैव रसायन / जैव प्रौद्योगिकी / सूक्ष्म जीव विज्ञान / आणविक जीव विज्ञान / फोरेंसिक साइंस में एम.एससी. (प्रथम श्रेणी) या पीएच.डी. + 5 वर्ष का फोरेंसिक डीएनए कैसवर्क का अनुभव।"
+      },
+      {
+        "label_en": "Senior Scientific Assistant (DNA)",
+        "label_hi": "सीनियर साइंटिफिक असिस्टेंट (डीएनए)",
+        "value_en": "M.Sc. (1st Division) or Ph.D. in relevant subjects with Zoology/Botany at B.Sc. level + 3 years post-qualification hands-on experience of Forensic DNA casework.",
+        "value_hi": "संबंधित विषयों में एम.एससी. (प्रथम श्रेणी) या पीएच.डी. + 3 वर्ष का फोरेंसिक डीएनए कैसवर्क का अनुभव।"
+      },
+      {
+        "label_en": "Scientific Assistant (DNA)",
+        "label_hi": "साइंटिफिक असिस्टेंट (डीएनए)",
+        "value_en": "M.Sc. (at least 2nd Division) in relevant subjects with Zoology/Botany at B.Sc. level + 1 year post-qualification hands-on experience of Forensic DNA casework.",
+        "value_hi": "संबंधित विषयों में एम.एससी. (कम से कम द्वितीय श्रेणी) + 1 वर्ष का फोरेंसिक डीएनए कैसवर्क का अनुभव।"
+      },
+      {
+        "label_en": "Lab Attendant",
+        "label_hi": "लैब अटेंडेंट",
+        "value_en": "Matriculation (10th) pass from a recognized Board (10+2 with Science preferred).",
+        "value_hi": "मान्यता प्राप्त बोर्ड से मैट्रिक (10वीं) पास (साइंस के साथ 10+2 को प्राथमिकता)।"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a recruitment drive by Forensic Science Laboratory, Haryana, Madhuban to engage scientific and support staff on a purely contractual basis for one year in the DNA Division to clear case pendency.",
+        "a_hi": "यह पेंडेंसी को साफ़ करने के लिए डीएनए डिवीजन में एक वर्ष के लिए पूरी तरह से संविदा के आधार पर वैज्ञानिक और सहायक स्टाफ को नियुक्त करने के लिए फॉरेंसिक साइंस लेबोरेटरी, हरियाणा, मधुबन द्वारा एक भर्ती अभियान है।",
+        "q_en": "What is Haryana FSL Scientific and Support Staff Recruitment?",
+        "q_hi": "हरियाणा एफएसएल वैज्ञानिक और सहायक स्टाफ भर्ती क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "A total of 20 vacancies have been announced for scientific and support staff in the DNA division.",
+        "a_hi": "डीएनए डिवीजन में वैज्ञानिक और सहायक स्टाफ के लिए कुल 20 रिक्तियां घोषित की गई हैं।",
+        "q_en": "How many total vacancies are announced in Haryana FSL Recruitment?",
+        "q_hi": "हरियाणा एफएसएल भर्ती में कुल कितनी रिक्तियां घोषित की गई हैं?"
+      },
+      {
+        "a_en": "Selection is based on screening of essential educational qualifications and experience, followed by an interview before a Selection Committee.",
+        "a_hi": "चयन आवश्यक शैक्षणिक योग्यता और अनुभव की स्क्रीनिंग, उसके बाद चयन समिति के समक्ष साक्षात्कार पर आधारित है।",
+        "q_en": "What is the mode of selection for these posts?",
+        "q_hi": "इन पदों के लिए चयन का तरीका क्या है?"
+      },
+      {
+        "a_en": "No, these posts are purely temporary, contractual, and time-bound for a period of one year.",
+        "a_hi": "नहीं, ये पद एक वर्ष की अवधि के लिए पूरी तरह से अस्थायी, संविदात्मक और समयबद्ध हैं।",
+        "q_en": "Are these regular government posts?",
+        "q_hi": "क्या ये नियमित सरकारी पद हैं?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "Haryana FSL Scientific & Support Staff Recruitment 2024 – Apply for 20 Posts",
+    "h1_hi": "हरियाणा एफएसएल वैज्ञानिक और सहायक स्टाफ भर्ती 2024 – 20 पदों के लिए आवेदन",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Read the official notification and instructions carefully before applying.",
+      "Fill out the application form in the prescribed format.",
+      "Attach self-attested copies of all supporting educational and experience documents.",
+      "Submit a separate application along with a separate complete set of documents for each post if applying for multiple posts.",
+      "Send the application to the designated address as per the official notification."
+    ],
+    "how_hi": [
+      "आवेदन करने से पहले आधिकारिक अधिसूचना और निर्देशों को ध्यान से पढ़ें।",
+      "निर्धारित प्रारूप में आवेदन पत्र भरें।",
+      "सभी सहायक शैक्षणिक और अनुभव दस्तावेजों की स्व-सत्यापित प्रतियां संलग्न करें।",
+      "यदि कई पदों के लिए आवेदन कर रहे हैं, तो प्रत्येक पद के लिए दस्तावेजों के एक अलग पूर्ण सेट के साथ एक अलग आवेदन जमा करें।",
+      "आधिकारिक अधिसूचना के अनुसार निर्दिष्ट पते पर आवेदन भेजें।"
+    ],
+    "intro_en": "Forensic Science Laboratory, Haryana, Madhuban has released a recruitment notice for engaging scientific and support staff on a purely contractual basis in the DNA Division for a period of one year. A total of 20 vacancies are available across various posts including Senior Scientific Officer, Senior Scientific Assistant, Scientific Assistant, and Lab Attendant. Eligible candidates can apply by submitting their applications in the prescribed format along with self-attested supporting documents. Selection will be based on screening of essential qualifications and experience, followed by an interview before a Selection Committee.",
+    "intro_hi": "फोरेंसिक साइंस लेबोरेटरी, हरियाणा, मधुबन ने एक वर्ष की अवधि के लिए डीएनए डिवीजन में पूरी तरह से संविदा के आधार पर वैज्ञानिक और सहायक स्टाफ को शामिल करने के लिए एक भर्ती सूचना जारी की है। सीनियर साइंटिफिक ऑफिसर, सीनियर साइंटिफिक असिस्टेंट, साइंटिफिक असिस्टेंट और लैब अटेंडेंट सहित विभिन्न पदों पर कुल 20 रिक्तियां उपलब्ध हैं। योग्य उम्मीदवार निर्धारित प्रारूप में स्व-सत्यापित सहायक दस्तावेजों के साथ अपने आवेदन जमा करके आवेदन कर सकते हैं। चयन आवश्यक योग्यता और अनुभव की स्क्रीनिंग और उसके बाद चयन समिति के समक्ष साक्षात्कार पर आधारित होगा।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not submit a single application for more than one post; a separate application with separate documents must be submitted for each post.",
+      "Do not forget to attach self-attested supporting documents and grade-to-percentage conversion certificates if applicable."
+    ],
+    "mistakes_hi": [
+      "एक से अधिक पद के लिए एक ही आवेदन न भेजें; प्रत्येक पद के लिए अलग दस्तावेजों के साथ अलग आवेदन भेजना होगा।",
+      "स्व-सत्यापित सहायक दस्तावेज और ग्रेड-टू-परसेंटेज रूपांतरण प्रमाण पत्र (यदि लागू हो) संलग्न करना न भूलें।"
+    ],
+    "not_en": [
+      "Candidates with incomplete applications, applications not in the prescribed format, or without self-attested supporting documents.",
+      "Candidates submitting a single application for more than one post."
+    ],
+    "not_hi": [
+      "अधूरे आवेदन, निर्धारित प्रारूप में न होने वाले आवेदन, या बिना स्व-सत्यापित सहायक दस्तावेजों वाले उम्मीदवार।",
+      "एक से अधिक पद के लिए एक ही आवेदन जमा करने वाले उम्मीदवार।"
+    ],
+    "notice_date": null,
+    "official_site": "https://haryanapolice.gov.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Senior Scientific Officer, Senior Scientific Assistant, Scientific Assistant, Lab Attendant",
+        "value_hi": "सीनियर साइंटिफिक ऑफिसर, सीनियर साइंटिफिक असिस्टेंट, साइंटिफिक असिस्टेंट, लैब अटेंडेंट"
+      },
+      {
+        "label_en": "Total Vacancies",
+        "label_hi": "कुल वैकेंसी",
+        "value_en": "20",
+        "value_hi": "20"
+      },
+      {
+        "label_en": "Selection Process",
+        "label_hi": "चयन प्रक्रिया",
+        "value_en": "Screening of qualifications/experience followed by Interview",
+        "value_hi": "योग्यता और अनुभव की स्क्रीनिंग के बाद इंटरव्यू"
+      },
+      {
+        "label_en": "Job Type",
+        "label_hi": "नौकरी का प्रकार",
+        "value_en": "Purely contractual (1 year)",
+        "value_hi": "पूरी तरह से संविदा आधारित (1 वर्ष)"
+      },
+      {
+        "label_en": "Location",
+        "label_hi": "स्थान",
+        "value_en": "Madhuban, Karnal, Haryana",
+        "value_hi": "मधुबन, करनाल, हरियाणा"
+      }
+    ],
+    "salary": [
+      {
+        "label_en": "Senior Scientific Officer (DNA)",
+        "label_hi": "सीनियर साइंटिफिक ऑफिसर (डीएनए)",
+        "value_en": "₹53,100/- per month (consolidated)",
+        "value_hi": "₹53,100/- प्रति माह (consolidated)"
+      },
+      {
+        "label_en": "Senior Scientific Assistant (DNA)",
+        "label_hi": "सीनियर साइंटिफिक असिस्टेंट (डीएनए)",
+        "value_en": "₹44,900/- per month (consolidated)",
+        "value_hi": "₹44,900/- प्रति माह (consolidated)"
+      },
+      {
+        "label_en": "Scientific Assistant (DNA)",
+        "label_hi": "साइंटिफिक असिस्टेंट (डीएनए)",
+        "value_en": "₹35,400/- per month (consolidated)",
+        "value_hi": "₹35,400/- प्रति माह (consolidated)"
+      },
+      {
+        "label_en": "Lab Attendant",
+        "label_hi": "लैब अटेंडेंट",
+        "value_en": "₹16,900/- per month (consolidated)",
+        "value_hi": "₹16,900/- प्रति माह (consolidated)"
+      }
+    ],
+    "selection_en": [
+      "Screening of all applications on the basis of essential educational qualifications and requisite post-qualification experience.",
+      "Shortlisting based on the average of the percentage of marks obtained in 10+2, Bachelor's and Master's examinations (if the number of applicants is large).",
+      "Interview before a Selection Committee constituted by the Director, FSL (Haryana)."
+    ],
+    "selection_hi": [
+      "आवश्यक शैक्षणिक योग्यता और अपेक्षित अनुभव के आधार पर सभी आवेदनों की स्क्रीनिंग।",
+      "10+2, स्नातक और स्नातकोत्तर परीक्षाओं में प्राप्त अंकों के प्रतिशत के औसत के आधार पर शॉर्टलिस्टिंग।",
+      "निदेशक, एफएसएल (हरियाणा) द्वारा गठित चयन समिति के समक्ष साक्षात्कार।"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2024",
+      "headline_hi": "भर्ती 2024",
+      "kind": "job",
+      "line_en": "Haryana FSL Staff",
+      "line_hi": "हरियाणा एफएसएल स्टाफ",
+      "posts": 20
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Haryana Police has invited applications for scientific and support staff positions on a purely contractual basis in the DNA division of Forensic Science Laboratory, Madhuban, Karnal.",
+    "summary_hi": "हरियाणा पुलिस ने फॉरेंसिक साइंस लेबोरेटरी, मधुबन, करनाल के डीएनए डिवीजन में संविदा के आधार पर वैज्ञानिक और सहायक स्टाफ के पदों के लिए आवेदन आमंत्रित किए हैं।",
+    "vacancies": [
+      {
+        "detail_en": "",
+        "detail_hi": "",
+        "post_en": "Senior Scientific Officer (DNA)",
+        "post_hi": "सीनियर साइंटिफिक ऑफिसर (डीएनए)",
+        "total": "05"
+      },
+      {
+        "detail_en": "",
+        "detail_hi": "",
+        "post_en": "Senior Scientific Assistant (DNA)",
+        "post_hi": "सीनियर साइंटिफिक असिस्टेंट (डीएनए)",
+        "total": "05"
+      },
+      {
+        "detail_en": "",
+        "detail_hi": "",
+        "post_en": "Scientific Assistant (DNA)",
+        "post_hi": "साइंटिफिक असिस्टेंट (डीएनए)",
+        "total": "05"
+      },
+      {
+        "detail_en": "",
+        "detail_hi": "",
+        "post_en": "Lab Attendant (Support Staff, DNA Division)",
+        "post_hi": "लैब अटेंडेंट (सपोर्ट स्टाफ, डीएनए डिवीजन)",
+        "total": "05"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates possessing the required M.Sc./Ph.D. or 10th qualifications with relevant forensic DNA experience who want a contractual job in Haryana FSL."
+    ],
+    "who_hi": [
+      "हरियाणा एफएसएल में संविदा की नौकरी चाहने वाले आवश्यक एम.एससी./पीएच.डी. या 10वीं योग्यता और प्रासंगिक फोरेंसिक डीएनए अनुभव वाले उम्मीदवार।"
+    ]
+  },
   "pdf": {
     "bytes": 4805247,
     "pages": 11,
     "sha256": "a2624865fb138a26872f328bda917f5586fc452456b9759bff05883c0463a472",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-09T22:51:32Z",
+  "qual": [
+    "10th",
+    "graduate",
+    "postgraduate"
+  ],
+  "slug": "haryana-fsl-scientific-support-staff-recruitment-2024-apply-for",
   "source_id": "haryana-police",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Engagement of scientific and support staff on purely contractual basis in the DNA division of Haryana FSL, Madhuban | Engagement of 170 SPOs in Haryana Police Telecommunication Wing | Missing person may be reported online on this portal after login Missing person may be reported online on this porta",
   "url": "https://haryanapolice.gov.in/pdf/Engagement of scientific and support staff on purely contractual basis in the DNA division of Haryana FSL, Madhuban.pdf"
 }

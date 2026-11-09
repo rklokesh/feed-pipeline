@@ -1,6 +1,20 @@
 {
   "board_url": "https://dsssb.delhi.gov.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Welfare Officer / Probation Officer / Prison Welfare Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Individual candidate speaking order and rejection notice",
+    "summary_en": "Individual candidate speaking order regarding rejection of candidature for post code 801/23.",
+    "summary_hi": "पोस्ट कोड 801/23 के लिए उम्मीदवारी की अस्वीकृति के संबंध में व्यक्तिगत उम्मीदवार का स्पीकिंग ऑर्डर।",
+    "title_en": "DSSSB Welfare Officer Post Code 801/23 Speaking Order",
+    "title_hi": "DSSSB कल्याण अधिकारी पोस्ट कोड 801/23 स्पीकिंग ऑर्डर",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +30,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "dsssb-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Speaking Order :- In respect of Vacancy Notice/Advertisement No. 04/23 dated 20.11.2023, advertised vacancies for recruitment to the post of Welfare Officer under post code-801/23. Date: 09-11-2026 | 821.34 KB",
   "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/speaking_order_2.pdf"
 }

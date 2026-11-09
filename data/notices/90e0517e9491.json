@@ -1,23 +1,202 @@
 {
+  "auto_published": true,
   "baseline_sample": true,
   "board_url": "https://upessc.up.gov.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "UPTET 2026",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "UPESSC released decisions on UPTET 2026 result representations and announced online applications for certificate corrections.",
+    "summary_hi": "उत्तर प्रदेश शिक्षा सेवा चयन आयोग ने शिक्षक पात्रता परीक्षा 2026 के परिणामों पर प्राप्त प्रत्यावेदनों पर निर्णय जारी किया और प्रमाण पत्र में सुधार के लिए ऑनलाइन आवेदन की घोषणा की।",
+    "title_en": "UPTET 2026 Certificate Correction and Representation Notice Out",
+    "title_hi": "उत्तर प्रदेश शिक्षक पात्रता परीक्षा 2026 प्रमाण पत्र संशोधन सूचना जारी",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "uptet-2026",
+    "name_en": "UPTET 2026",
+    "name_hi": "यूपीटीईटी 2026"
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-09T11:59:45+00:00",
   "id": "90e0517e9491",
+  "issue": 1193,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-09-16",
   "org": "UPESSC",
+  "page": {
+    "after_en": [
+      "Online portal activation for certificate corrections",
+      "Issuance of corrected certificates to eligible successful candidates"
+    ],
+    "after_hi": [
+      "प्रमाण पत्र संशोधन के लिए ऑनलाइन पोर्टल का सक्रिय होना",
+      "पात्र सफल अभ्यर्थियों को संशोधित प्रमाण पत्र जारी किया जाना"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://upessc.up.gov.in/",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check official updates on the UPESSC website regarding certificate correction dates."
+    ],
+    "checklist_hi": [
+      "प्रमाण पत्र संशोधन तिथियों के संबंध में आयोग की वेबसाइट पर आधिकारिक अपडेट देखें।"
+    ],
+    "conducted_by_en": "Uttar Pradesh Education Services Selection Commission (UPESSC)",
+    "conducted_by_hi": "उत्तर प्रदेश शिक्षा सेवा चयन आयोग",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "सूचना दिनांक",
+        "value_en": "16 Sep 2026",
+        "value_hi": "16 सितंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "UPTET 2026 Scorecard / Certificate",
+      "Valid ID Proof",
+      "Details for correction"
+    ],
+    "documents_hi": [
+      "यूपीटीईटी 2026 स्कोरकार्ड / प्रमाण पत्र",
+      "वैध पहचान पत्र",
+      "संशोधन हेतु विवरण"
+    ],
+    "eligibility": [],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "This notice details the commission's decisions on candidate representations regarding OMR errors, normalization scores, and certificate corrections for UPTET 2026.",
+        "a_hi": "यह नोटिस यूपीटीईटी 2026 के लिए ओएमआर त्रुटियों, नॉर्मलाइजेशन स्कोर और प्रमाण पत्र संशोधन पर उम्मीदवारों के प्रत्यावेदनों पर आयोग के निर्णयों का विवरण देता है।",
+        "q_en": "What is this UPTET 2026 notice about?",
+        "q_hi": "यह यूपीटीईटी 2026 नोटिस किस बारे में है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "2608 / 2026-27 / UPTET / 2026-27",
+        "value_hi": "2608 / 2026-27 / UPTET / 2026-27"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "Requests regarding wrong filling of roll numbers or booklet numbers on OMR sheets were rejected because evaluation is fully automated and instructions were clearly given prior to the exam.",
+        "a_hi": "ओएमआर शीट पर अनुक्रमांक या पुस्तिका क्रमांक गलत भरने के संबंध में अनुरोधों को अस्वीकार कर दिया गया है क्योंकि मूल्यांकन पूरी तरह से स्वचालित है।",
+        "q_en": "What are the decisions on OMR sheet error representations?",
+        "q_hi": "ओएमआर शीट त्रुटि प्रत्यावेदनों पर क्या निर्णय लिया गया है?"
+      },
+      {
+        "a_en": "No, the commission stated that normalization is a scientific process and requests to alter scores based on it are not acceptable.",
+        "a_hi": "नहीं, आयोग ने कहा है कि नॉर्मलाइजेशन एक वैज्ञानिक प्रक्रिया है और इसके आधार पर स्कोर में बदलाव के अनुरोध स्वीकार्य नहीं हैं।",
+        "q_en": "Can normalization scores be changed based on representations?",
+        "q_hi": "क्या प्रत्यावेदनों के आधार पर नॉर्मलाइजेशन स्कोर बदला जा सकता है?"
+      },
+      {
+        "a_en": "Online applications will soon be invited through the commission's portal for correcting names, parent's names, date of birth, or category in certificates of successful candidates.",
+        "a_hi": "सफल अभ्यर्थियों के प्रमाण पत्र में नाम, माता-पिता का नाम, जन्मतिथि या वर्ग में सुधार के लिए जल्द ही आयोग के पोर्टल के माध्यम से ऑनलाइन आवेदन आमंत्रित किए जाएंगे।",
+        "q_en": "How can successful candidates correct errors in their certificates?",
+        "q_hi": "सफल अभ्यर्थी अपने प्रमाण पत्र में त्रुटियों को कैसे सुधार सकते हैं?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "UPTET 2026 Certificate Correction and Representation Notice Out",
+    "h1_hi": "उत्तर प्रदेश शिक्षक पात्रता परीक्षा 2026 प्रमाण पत्र संशोधन सूचना जारी",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official UPESSC portal.",
+      "Look for the UPTET 2026 certificate correction link once active.",
+      "Submit online application for correcting name, parent's name, date of birth, or category if applicable."
+    ],
+    "how_hi": [
+      "उत्तर प्रदेश शिक्षा सेवा चयन आयोग की आधिकारिक वेबसाइट पर जाएं।",
+      "सक्रिय होने पर यूपीटीईटी 2026 प्रमाण पत्र संशोधन लिंक पर क्लिक करें।",
+      "नाम, माता-पिता का नाम, जन्मतिथि या वर्ग में सुधार के लिए ऑनलाइन आवेदन करें।"
+    ],
+    "intro_en": "The Uttar Pradesh Education Services Selection Commission (UPESSC) has issued an official press release regarding representations received against the UPTET 2026 results. An expert committee examined all representations and categorized them into four groups. The commission has decided to reject requests related to OMR filling errors and normalization score grievances. However, online applications will soon be invited through the official portal to correct minor details such as name, parent's name, date of birth, or category in certificates for successful candidates.",
+    "intro_hi": "उत्तर प्रदेश शिक्षा सेवा चयन आयोग ने यूपीटीईटी 2026 के परिणामों के संबंध में प्राप्त प्रत्यावेदनों पर आधिकारिक विज्ञप्ति जारी की है। एक विशेष समिति ने सभी प्रत्यावेदनों की जांच कर उन्हें चार श्रेणियों में बांटा है। आयोग ने ओएमआर भरने की त्रुटियों और नॉर्मलाइजेशन स्कोर से संबंधित आपत्तियों को अस्वीकार कर दिया है। हालांकि, सफल अभ्यर्थियों के प्रमाण पत्र में नाम, माता-पिता का नाम, जन्मतिथि या वर्ग में सुधार के लिए पोर्टल के माध्यम से जल्द ही ऑनलाइन आवेदन आमंत्रित किए जाएंगे।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not expect changes in OMR evaluation errors as they are automated and rejected as per rules.",
+      "Do not expect modifications in normalization scores as it is a scientific process."
+    ],
+    "mistakes_hi": [
+      "ओएमआर मूल्यांकन त्रुटियों में सुधार की उम्मीद न करें क्योंकि यह स्वचालित है और नियमानुसार अस्वीकार कर दिया गया है।",
+      "नॉर्मलाइजेशन स्कोर में बदलाव की उम्मीद न करें क्योंकि यह एक वैज्ञानिक प्रक्रिया है।"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-09-16",
+    "official_site": "https://upessc.up.gov.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "सूचना दिनांक",
+        "value_en": "16 Sep 2026",
+        "value_hi": "16 सितंबर 2026"
+      },
+      {
+        "label_en": "Exam Name",
+        "label_hi": "परीक्षा का नाम",
+        "value_en": "UP Teacher Eligibility Test (UPTET) 2026",
+        "value_hi": "उत्तर प्रदेश शिक्षक पात्रता परीक्षा (यूपीटीईटी) 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [],
+    "selection_hi": [],
+    "share_card": {
+      "headline_en": "Correction Notice",
+      "headline_hi": "संशोधन सूचना",
+      "kind": "corr",
+      "line_en": "UPTET 2026 Representation",
+      "line_hi": "यूपीटीईटी 2026 प्रत्यावेदन",
+      "posts": null
+    },
+    "status_en": "Representation decisions announced, online portal for certificate correction to open soon",
+    "status_hi": "प्रत्यावेदन निर्णय घोषित, प्रमाण पत्र संशोधन हेतु ऑनलाइन पोर्टल जल्द खुलेगा",
+    "summary_en": "UPESSC has released decisions on UPTET 2026 result representations. Candidates who requested certificate corrections can apply online soon.",
+    "summary_hi": "उत्तर प्रदेश शिक्षा सेवा चयन आयोग ने यूपीटीईटी 2026 के परिणामों पर प्राप्त प्रत्यावेदनों पर निर्णय जारी कर दिया है। प्रमाण पत्र में संशोधन चाहने वाले अभ्यर्थी जल्द ऑनलाइन आवेदन कर सकेंगे।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Candidates who appeared for UPTET 2026",
+      "Successful candidates requiring corrections in their score/certificates"
+    ],
+    "who_hi": [
+      "यूपीटीईटी 2026 परीक्षा में शामिल होने वाले अभ्यर्थी",
+      "सफल अभ्यर्थी जिन्हें अपने प्रमाण पत्र में संशोधन की आवश्यकता है"
+    ]
+  },
   "pdf": {
     "bytes": 495898,
     "pages": 1,
     "sha256": "916289e917642407a40d20c692e2bbe2ef56c5b0d1095f8fc00432afd1449e33",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-09T22:51:53Z",
+  "qual": [
+    "graduate"
+  ],
+  "slug": "uptet-2026-certificate-correction-and-representation-notice-out",
   "source_id": "upessc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "ALL DEPARTMENT | Press Vigyapti: विज्ञप्ति 2026-09-16 , | News",
   "url": "https://upessc.up.gov.in/Notice/945b-376d-4700-9db7-8225.pdf"
 }
