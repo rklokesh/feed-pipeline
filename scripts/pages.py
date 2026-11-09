@@ -699,6 +699,7 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
     h = out.replace(f'<link rel="canonical" href="{eurl}">', alt.replace(f'canonical" href="{eurl}"', f'canonical" href="{hurl}"', 1), 1)
     h = h.replace('<html lang="en">', '<html lang="hi" data-pl="hi">', 1).replace(LD_MARK, ld_tag(ld_hi))
     h = h.replace(f'<meta property="og:url" content="{eurl}">', f'<meta property="og:url" content="{hurl}">', 1)
+    h = h.replace(f'<meta property="og:image" content="{SITE_URL}/notice/{slug}/og.png">', f'<meta property="og:image" content="{SITE_URL}/notice/{slug}/og-hi.png">', 1)
     ht = hi.get("title") or hi.get("h1") or en["h1"]
     hd = cut(hi.get("summary") or hi.get("h1") or desc, 155)
     h = re.sub(r"<title>[^<]*</title>", lambda m: f"<title>{esc(ht)}</title>", h, 1)
