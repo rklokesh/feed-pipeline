@@ -48,11 +48,15 @@ def sitemap(items):
     if exam_dir.exists():
         urls.append((f"{SITE_URL}/exam/", today, "daily", "0.7"))
         urls += [(f"{SITE_URL}/exam/{d.name}/", today, "daily", "0.9") for d in sorted(exam_dir.iterdir()) if (d / "index.html").exists()]
+    hubs_hi = [(f"{SITE_URL}/hi/", today, "hourly", "0.9")] if (SITE / "hi" / "index.html").exists() else []
+    hubs_hi += [(f"{SITE_URL}/hi/{d.name}/", today, "daily", "0.8") for d in sorted((SITE / "hi").iterdir())
+                if d.is_dir() and d.name.endswith("-jobs") and (d / "index.html").exists()] if (SITE / "hi").exists() else []
+    urls += hubs_hi
+
     def alts(u):
-        if "/notice/" not in u:
-            return ""
-        e = u.replace(f"{SITE_URL}/hi/notice/", f"{SITE_URL}/notice/")
-        h = e.replace(f"{SITE_URL}/notice/", f"{SITE_URL}/hi/notice/")
+        path = u[len(SITE_URL):]
+        e = SITE_URL + (path[3:] if path.startswith("/hi/") else path)
+        h = SITE_URL + "/hi" + e[len(SITE_URL):]
         if not (SITE / h[len(SITE_URL) + 1:] / "index.html").exists():
             return ""
         return (f'<xhtml:link rel="alternate" hreflang="en" href="{html.escape(e)}"/>'
