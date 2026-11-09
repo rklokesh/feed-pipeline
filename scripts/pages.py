@@ -226,6 +226,7 @@ def official_date(n: dict) -> str:
 
 SITE_URL = os.environ.get("SITE_URL", "https://sarkarichart.com")   # change to https://sarkarichart.com at launch
 CAT_SLUG = {"Job": "jobs", "Result": "results", "Admit card": "admit-cards", "Answer key": "answer-keys", "Update": "all", "Admission": "all"}
+CAT_PAGE = {"Job": "/latest-jobs/", "Result": "/result/", "Admit card": "/admit-card/", "Answer key": "/answer-key/"}   # the section page of each kind
 
 
 def gcal_url(title: str, last: str, slug: str) -> str:
@@ -385,7 +386,7 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
         en["exJump"] = f'{n_other} more update{"s" if n_other > 1 else ""} for {exam_g["name_en"]}\u00a0↓'
         hi["exJump"] = f'{exam_g["name_hi"] or exam_g["name_en"]} के {n_other} और अपडेट\u00a0↓'
     main = [f'''    <div class="title">
-      <nav class="crumb" aria-label="Breadcrumb"><a href="/?cat={CAT_SLUG.get(typ, "jobs")}" data-t="crumbType">{esc(en["crumbType"])}</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">{esc(en["org"])}</span></nav>
+      <nav class="crumb" aria-label="Breadcrumb"><a href="{CAT_PAGE.get(typ) or "/?cat=" + CAT_SLUG.get(typ, "jobs")}" data-t="crumbType">{esc(en["crumbType"])}</a><span class="sep" aria-hidden="true">/</span><span class="here" aria-current="page" data-t="org">{esc(en["org"])}</span></nav>
       <h1 data-t="h1">{esc(en["h1"])}</h1>
       <p class="meta g" data-t="metaV">{esc(en["metaV"])}</p>
       {f'<p class="exjump"><a href="#exam" data-t="exJump">{esc(en["exJump"])}</a></p>' if n_other else ""}
@@ -618,7 +619,7 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
     url = f"{SITE_URL}/notice/{slug}/"
     ld = [{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": f"{SITE_URL}/"},
-              {"@type": "ListItem", "position": 2, "name": en["crumbType"], "item": f"{SITE_URL}/?cat={CAT_SLUG.get(typ, 'jobs')}"},
+              {"@type": "ListItem", "position": 2, "name": en["crumbType"], "item": SITE_URL + (CAT_PAGE.get(typ) or f"/?cat={CAT_SLUG.get(typ, 'jobs')}")},
               {"@type": "ListItem", "position": 3, "name": en["h1"], "item": url}]},
           {"@context": "https://schema.org", "@type": "WebPage", "name": en["h1"], "url": url, "inLanguage": ["en-IN", "hi-IN"],
            "description": en.get("intro") or en["summary"], "datePublished": posted,

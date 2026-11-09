@@ -32,7 +32,7 @@ def main():
     if hi_dir.exists() and not flag.exists():
         urls += [f"{SITE_URL}/hi/notice/{d.name}/" for d in sorted(hi_dir.iterdir()) if (d / "index.html").exists()]
         flag.write_text(dt.datetime.utcnow().isoformat() + "\n")
-    urls += [f"{SITE_URL}/{d.name}/" for d in sorted((ROOT / "site").iterdir()) if d.is_dir() and d.name.endswith("-jobs")]
+    urls += [f"{SITE_URL}/{d.name}/" for d in sorted((ROOT / "site").iterdir()) if d.is_dir() and (d.name.endswith("-jobs") or d.name in ("admit-card", "result", "answer-key"))]
     body = {"host": SITE_URL.split("//")[1], "key": KEY, "keyLocation": f"{SITE_URL}/{KEY}.txt", "urlList": urls[:10000]}
     try:
         r = requests.post("https://api.indexnow.org/indexnow", json=body, timeout=20)

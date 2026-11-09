@@ -65,6 +65,37 @@ PAGES = [
        "क्या रक्षा क्षेत्र में सिविलियन नौकरियाँ भी हैं?", "हाँ। रक्षा संगठन अपनी सूचनाओं से सिविलियन (क्लर्क, तकनीशियन, वैज्ञानिक) भी भर्ती करते हैं; इनमें शारीरिक परीक्षा नहीं होती जब तक सूचना में न लिखा हो।")]),
 ]
 
+# One page per kind of notice (the sections Google can show as sitelinks under the site's result).
+# (slug, (name EN, HI), type, (lead EN, HI), faq, (title EN, title HI))
+TYPE_PAGES = [
+    ("latest-jobs", ("Latest Govt Jobs", "नई सरकारी नौकरी"), "Job",
+     ("Every open government job from official notices, closing soonest first: central, railway, police, bank, teacher, defence and state jobs, with last dates and official apply links.",
+      "आधिकारिक सूचनाओं से हर खुली सरकारी नौकरी, सबसे पहले बंद होने वाली ऊपर: केंद्र, रेलवे, पुलिस, बैंक, शिक्षक, रक्षा और राज्य की भर्तियाँ, अंतिम तिथि और आधिकारिक आवेदन लिंक के साथ।"),
+     [("How often is this list updated?", "Official recruitment websites are checked every 30 minutes; a new notice appears here soon after it is published.",
+       "यह सूची कितनी बार अपडेट होती है?", "आधिकारिक भर्ती वेबसाइटें हर 30 मिनट में जाँची जाती हैं; नई सूचना जारी होने के कुछ ही देर बाद यहाँ दिखती है।"),
+      ("Where do I apply?", "Only on the official website named in the notice. Each job here links to it directly.",
+       "आवेदन कहाँ करें?", "सिर्फ़ सूचना में दी गई आधिकारिक वेबसाइट पर। यहाँ हर नौकरी में उसका सीधा लिंक है।")],
+     ("Latest Govt Jobs 2026: Sarkari Naukri, Last Date, Apply Online | SarkariChart", "सरकारी नौकरी 2026: नई भर्ती, अंतिम तिथि | सरकारी चार्ट")),
+    ("admit-card", ("Admit Card", "एडमिट कार्ड"), "Admit card",
+     ("Latest admit cards and exam city slips from official websites: UPSC, SSC, RRB, IBPS, state PSCs, police boards and more, newest first.",
+      "आधिकारिक वेबसाइटों से ताज़ा एडमिट कार्ड और परीक्षा शहर सूचना: यूपीएससी, एसएससी, आरआरबी, आईबीपीएस, राज्य लोक सेवा आयोग, पुलिस बोर्ड और अन्य, सबसे नए ऊपर।"),
+     [("How do I download my admit card?", "Open the notice, use the official link and log in with your registration number and date of birth or password. Admit cards are only issued on the official website.",
+       "एडमिट कार्ड कैसे डाउनलोड करें?", "सूचना खोलें, आधिकारिक लिंक पर जाएँ और अपने पंजीकरण नंबर और जन्मतिथि या पासवर्ड से लॉग इन करें। एडमिट कार्ड सिर्फ़ आधिकारिक वेबसाइट पर जारी होते हैं।")],
+     ("Admit Card 2026: Download Latest Sarkari Admit Card | SarkariChart", "एडमिट कार्ड 2026: नए एडमिट कार्ड डाउनलोड करें | सरकारी चार्ट")),
+    ("result", ("Sarkari Result", "सरकारी रिज़ल्ट"), "Result",
+     ("Latest government exam results, merit lists and cut-offs from official websites, newest first.",
+      "आधिकारिक वेबसाइटों से ताज़ा सरकारी परीक्षा रिज़ल्ट, मेरिट सूची और कट-ऑफ, सबसे नए ऊपर।"),
+     [("Where is the official result?", "On the board's own website. Each result here links to the official PDF or result page.",
+       "आधिकारिक रिज़ल्ट कहाँ है?", "भर्ती बोर्ड की अपनी वेबसाइट पर। यहाँ हर रिज़ल्ट में आधिकारिक पीडीएफ़ या रिज़ल्ट पेज का लिंक है।")],
+     ("Sarkari Result 2026: Latest Exam Results, Merit List | SarkariChart", "सरकारी रिज़ल्ट 2026: नए परीक्षा रिज़ल्ट, मेरिट सूची | सरकारी चार्ट")),
+    ("answer-key", ("Answer Key", "आंसर की"), "Answer key",
+     ("Latest official answer keys and objection windows for government exams, newest first.",
+      "सरकारी परीक्षाओं की ताज़ा आधिकारिक आंसर की और आपत्ति की तिथियाँ, सबसे नई ऊपर।"),
+     [("Can I object to an answer?", "Usually yes, within the dates in the notice and often for a fee per question. Objections are filed only on the official website.",
+       "क्या किसी उत्तर पर आपत्ति कर सकते हैं?", "आमतौर पर हाँ, सूचना में दी गई तिथियों में और अक्सर प्रति प्रश्न शुल्क के साथ। आपत्ति सिर्फ़ आधिकारिक वेबसाइट पर दर्ज होती है।")],
+     ("Answer Key 2026: Latest Official Answer Keys | SarkariChart", "आंसर की 2026: नई आधिकारिक आंसर की | सरकारी चार्ट")),
+]
+
 import sys
 sys.path.insert(0, str(ROOT / "scripts"))
 from hubs import STATES, QUALS  # noqa: E402
@@ -137,15 +168,19 @@ def fd(iso, hi=False):
     return f"{d.day} {(MONH if hi else MON)[d.month - 1]}"
 
 
-def build(slug, name, match, intro, faq, all_items, links, links2=()):
+def build(slug, name, match, intro, faq, all_items, links, links2=(), kind=None, titles=None):
     esc = html.escape
     today = dt.datetime.now(IST).date()
     mine = [i for i in all_items if i.get("page") and match(i)]
     open_jobs = [i for i in mine if i["type"] == "Job" and (not i.get("last") or dt.date.fromisoformat(i["last"]) >= today)]
     open_jobs.sort(key=lambda i: (i.get("last") or "9999", ))
     open_jobs = [i for i in open_jobs if i.get("last")][:40] + [i for i in open_jobs if not i.get("last")][:10]
-    other = sorted([i for i in mine if i["type"] != "Job"], key=lambda i: i.get("posted", ""), reverse=True)[:12]
+    other = sorted([i for i in mine if i["type"] != "Job"], key=lambda i: i.get("posted", ""), reverse=True)[:50 if kind else 12]
+    if kind and kind != "Job":
+        open_jobs = []
     soon = sum(1 for i in open_jobs if i.get("last") and (dt.date.fromisoformat(i["last"]) - today).days <= 7)
+    if kind and kind != "Job":
+        n30 = sum(1 for i in mine if i.get("posted", "") >= (today - dt.timedelta(days=30)).isoformat())
     en = {"h1": f"{name[0]} {YEAR}", "lead": intro[0], "openH": "Open now", "otherH": "Latest admit cards, results and updates",
           "faqH": "Common questions", "moreH": "More job pages", "allL": "See every notice on the homepage →",
           "stat1": f"{len(open_jobs)} open {'job' if len(open_jobs) == 1 else 'jobs'}", "stat2": f"{soon} closing this week",
@@ -154,6 +189,9 @@ def build(slug, name, match, intro, faq, all_items, links, links2=()):
           "faqH": "आम सवाल", "moreH": "और नौकरी पेज", "allL": "होमपेज पर सभी सूचनाएँ देखें →",
           "stat1": f"{len(open_jobs)} खुली भर्तियाँ", "stat2": f"{soon} इस हफ़्ते बंद होंगी",
           "none": "अभी कोई खुली भर्ती नहीं। नई सूचनाएँ जारी होने के 30 मिनट के अंदर यहाँ दिखती हैं।"}
+    if kind and kind != "Job":   # a plain newest-first list: "Latest admit cards", no "open now" section
+        en.update(otherH=f"Latest {name[0].lower()}s" if not name[0].endswith("Result") else "Latest results", stat1=f"{n30} in the last 30 days", stat2="")
+        hi.update(otherH=f"ताज़ा {name[1]}", stat1=f"पिछले 30 दिनों में {n30}", stat2="")
 
     def row(k, i, pre):
         en[f"{pre}{k}"], hi[f"{pre}{k}"] = i["title"], i.get("hi") or i["title"]
@@ -195,7 +233,7 @@ def build(slug, name, match, intro, faq, all_items, links, links2=()):
     main = (STYLE + '\n    <article class="sp">\n'
             f'      <div><h1 data-t="h1">{esc(en["h1"])}</h1><p class="lead" data-t="lead">{esc(intro[0])}</p>'
             f'<p class="stats"><b data-t="stat1">{esc(en["stat1"])}</b><span class="g" data-t="stat2">{esc(en["stat2"])}</span></p></div>\n'
-            f'      <section><h2 data-t="openH">{esc(en["openH"])}</h2><div class="jl">{rows_open}</div></section>\n'
+            + ("" if kind and kind != "Job" else f'      <section><h2 data-t="openH">{esc(en["openH"])}</h2><div class="jl">{rows_open}</div></section>\n')
             + (f'      <section><h2 data-t="otherH">{esc(en["otherH"])}</h2><div class="jl">{rows_other}</div></section>\n' if rows_other else "")
             + f'      <section><h2 data-t="faqH">{esc(en["faqH"])}</h2>{qa}</section>\n'
             + (f'      <section><h2 data-t="more2H">{esc(en["more2H"])}</h2><p class="more">{more2}</p></section>\n' if more2 else "")
@@ -205,8 +243,12 @@ def build(slug, name, match, intro, faq, all_items, links, links2=()):
             '    <span id="state" hidden></span><span id="left" hidden></span><span id="views" hidden></span><a id="dlPdf" hidden></a>')
     title_en = f"{name[0]} {YEAR}: Latest Vacancy, Last Date, Apply Online | SarkariChart"
     title_hi = f"{name[1]} {YEAR} | सरकारी चार्ट"
+    if titles:
+        title_en, title_hi = titles
     en["title"], hi["title"] = title_en, title_hi
     desc = f"{len(open_jobs)} open {name[0].lower()} {YEAR} with last dates and official apply links. {intro[0]}"[:158]
+    if kind and kind != "Job":
+        desc = intro[0][:158]
     js = lambda v: json.dumps(v, ensure_ascii=False)
     out = (TPL.replace("{{TITLE}}", esc(title_en)).replace("{{DESC}}", esc(desc)).replace("{{MAIN}}", main)
            .replace("{{T_EN}}", "\n".join(f"      {k}: {js(v)}," for k, v in en.items()))
@@ -225,6 +267,10 @@ def main():
     all_items = items()
     links = [(p[0], p[1]) for p in PAGES]
     groups = [(PAGES, ()), (STATE_PAGES, [(p[0], p[1]) for p in STATE_PAGES]), (QUAL_PAGES, [(p[0], p[1]) for p in QUAL_PAGES])]
+    tlinks = [(p[0], p[1]) for p in TYPE_PAGES]
+    for slug, name, typ, intro, faq, titles in TYPE_PAGES:
+        n, m = build(slug, name, lambda i, t=typ: i["type"] == t, intro, faq, all_items, links, tlinks, kind=typ, titles=titles)
+        print(f"seo: /{slug}/ {n} open, {m} listed")
     for pages, links2 in groups:
         for slug, name, match, intro, faq in pages:
             n, m = build(slug, name, match, intro, faq, all_items, links, links2)

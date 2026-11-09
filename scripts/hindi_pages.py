@@ -37,10 +37,10 @@ def local_links(h: str) -> str:
     """Point links at the Hindi copy of a page when there is one."""
     def fix(m):
         path = m.group(2)
-        if path == "/" or (path.startswith("/notice/") or re.fullmatch(r"/[a-z0-9-]+-jobs/", path)) and (SITE / "hi" / path.strip("/") / "index.html").exists():
+        if path == "/" or (path.startswith("/notice/") or re.fullmatch(r"/(?:[a-z0-9-]+-jobs|admit-card|result|answer-key)/", path)) and (SITE / "hi" / path.strip("/") / "index.html").exists():
             return f'{m.group(1)}"/hi{path}"'
         return m.group(0)
-    return re.sub(r'(href=)"(/(?:notice/[a-z0-9-]+/|[a-z0-9-]+-jobs/)?)"', fix, h)
+    return re.sub(r'(href=)"(/(?:notice/[a-z0-9-]+/|[a-z0-9-]+-jobs/|admit-card/|result/|answer-key/)?)"', fix, h)
 
 
 def to_hindi(s: str, path: str, title: str, desc: str) -> str:
@@ -71,7 +71,7 @@ def add_alts(f: pathlib.Path, path: str) -> None:
 
 def main() -> None:
     n = 0
-    hubs = [d for d in sorted(SITE.iterdir()) if d.is_dir() and d.name.endswith("-jobs") and (d / "index.html").exists()]
+    hubs = [d for d in sorted(SITE.iterdir()) if d.is_dir() and (d.name.endswith("-jobs") or d.name in ("admit-card", "result", "answer-key")) and (d / "index.html").exists()]
     for d in hubs:                      # job-type, state and qualification pages
         s = (d / "index.html").read_text(encoding="utf-8")
         hi = hi_dict(s)
