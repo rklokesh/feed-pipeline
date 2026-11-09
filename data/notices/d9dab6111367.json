@@ -1,5 +1,20 @@
 {
   "board_url": "https://dsssb.delhi.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Welfare Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Speaking order for an older recruitment",
+    "summary_en": "DSSSB has released a speaking order in respect of vacancy notice advertisement number 04/23 for the post of Welfare Officer under post code 801/23.",
+    "summary_hi": "DSSSB ने कल्याण अधिकारी पद कोड 801/23 के संबंध में रिक्ति सूचना विज्ञापन संख्या 04/23 के तहत स्पीकिंग ऑर्डर जारी किया है।",
+    "title_en": "DSSSB Welfare Officer Post Code 801/23 Speaking Order",
+    "title_hi": "DSSSB कल्याण अधिकारी पद कोड 801/23 स्पीकिंग आर्डर",
+    "type": "Update",
+    "vacancies": null
+  },
   "fields": {},
   "first_seen": "2026-11-09T10:59:41+00:00",
   "id": "d9dab6111367",
@@ -13,7 +28,7 @@
     "via": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.4553939677035!2d77.2976628150829!3d28.646080182412437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb4215555555%3A0xfb8c90dedb783db3!2sDelhi%20Subordinate%20Services%20Selection%20Board%20(DSSSB)!5e0!3m2!1sen!2sin!4v1662543451052!5m2!1sen!2sin"
   },
   "source_id": "dsssb-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Speaking Order :- In respect of Vacancy Notice/Advertisement No. 04/23 dated 20.11.2023, advertised vacancies for recruitment to the post of Welfare Officer under post code-801/23. Date: 09-11-2026 | 821.34 KB",
   "url": "https://dsssb.delhi.gov.in/system/temporary?file=filefield_paths/speaking_order_1.pdf"
 }
