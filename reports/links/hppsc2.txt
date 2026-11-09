@@ -1,0 +1,5 @@
+# hppsc2 https://www.hppsc.hp.gov.in/hppsc/
+## plain fetch failed: HTTPSConnectionPool(host='www.hppsc.hp.gov.in', port=443): Max retries exceeded with url: /hppsc/ (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.hppsc.hp.gov.in'. (_ssl.c:1010)")))
+## browser failed: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.hppsc.hp.gov.in/hppsc/
+Call log:
+navigating to "https://www.hppsc.hp.gov.in/hppsc/", waiting until "domcontentloaded"
