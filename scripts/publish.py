@@ -145,10 +145,10 @@ def build():
     for f in sorted(NOTICES.glob("*.json")):
         n = json.loads(f.read_text())
         if n.get("status") != "approved":
-            page = ROOT / "site" / "notice" / n["slug"] if n.get("slug") else None
-            if page and page.is_dir():   # taken down: remove its page too
-                shutil.rmtree(page)
-                print(f"removed page {n['slug']}")
+            for page in ((ROOT / "site" / "notice" / n["slug"], ROOT / "site" / "hi" / "notice" / n["slug"]) if n.get("slug") else ()):
+                if page.is_dir():   # taken down: remove its page (and its Hindi copy) too
+                    shutil.rmtree(page)
+                    print(f"removed page {page.relative_to(ROOT)}")
             continue
         c = n.get("card") or {}
         pub = n.get("published_at") or n.get("first_seen")

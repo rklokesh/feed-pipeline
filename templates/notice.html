@@ -264,7 +264,8 @@ ul.steps.dots { list-style: disc; }
 .tbl th, .tbl td { padding: 8px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: baseline; }
 .tbl thead th { border-top: 0; color: var(--grey); font-weight: normal; }
 .tbl tbody tr:hover { background: var(--row-hover); }
-html[lang="hi"] .hidet { display: none; }
+html[lang="hi"]:not([data-pl]) .hidet { display: none; }
+.hidet a { color: var(--grey); font-size: .875rem; }
 .hidet { max-width: 46rem; margin-top: -8px; }
 .hidet > summary { cursor: pointer; color: var(--grey); font-size: .875rem; list-style: none; width: fit-content; margin: 0 auto; }
 .hidet > summary::-webkit-details-marker { display: none; }
@@ -672,8 +673,9 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
 {{T_HI}}
     },
   };
-  let lang = "en";
-  try { const saved = localStorage.getItem("sc-lang"); if (saved === "hi" || (!saved && (navigator.languages || [navigator.language || ""]).some(l => /^hi\b/i.test(l)))) lang = "hi"; } catch (e) {}
+  const PL = document.documentElement.dataset.pl;   // set on the Hindi copy of a page (/hi/...): it always opens in Hindi
+  let lang = PL || "en";
+  if (!PL) try { const saved = localStorage.getItem("sc-lang"); if (saved === "hi" || (!saved && (navigator.languages || [navigator.language || ""]).some(l => /^hi\b/i.test(l)))) lang = "hi"; } catch (e) {}
   const t = k => T[lang][k];
   const last = {{LAST}};
 
@@ -734,6 +736,8 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
   document.getElementById("lang").addEventListener("click", () => {
     lang = lang === "hi" ? "en" : "hi";
     try { localStorage.setItem("sc-lang", lang); } catch (e) {}
+    const alt = document.querySelector('link[rel="alternate"][hreflang="' + lang + '"]');   // the page has its own copy in that language
+    if (alt && alt.href !== location.href.split("#")[0].split("?")[0]) { location.href = new URL(alt.href).pathname; return; }
     apply();
   });
   apply();

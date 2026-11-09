@@ -629,7 +629,7 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
     if faq:
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q["q_en"], "acceptedAnswer": {"@type": "Answer", "text": q["a_en"]}} for q in faq]})
-    if typ == "Job" and last:
+    if typ == "Job" and last and last >= dt.date.today().isoformat():   # only while applications are open
         total = sum(int(re.sub(r"\D", "", str(v.get("total") or "")) or 0) for v in g("vacancies"))
         jp = {"@context": "https://schema.org", "@type": "JobPosting", "title": en["h1"],
               "description": "<p>" + esc(en.get("intro") or en["summary"]) + "</p>",
@@ -641,7 +641,19 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
         if total:
             jp["totalJobOpenings"] = total
         ld.append(jp)
-    main.append('    <script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>")
+    ld[1]["inLanguage"] = "en-IN"
+    hurl = f"{SITE_URL}/hi/notice/{slug}/"
+    ld_hi = [{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+                 {"@type": "ListItem", "position": 1, "name": "सरकारी चार्ट", "item": f"{SITE_URL}/"},
+                 {"@type": "ListItem", "position": 2, "name": hi.get("h1") or en["h1"], "item": hurl}]},
+             dict(ld[1], name=hi.get("h1") or en["h1"], url=hurl, inLanguage="hi-IN",
+                  description=hi.get("intro") or hi.get("summary") or ld[1]["description"])]
+    faq_hi = [q for q in (faq or []) if q.get("q_hi") and q.get("a_hi")]
+    if faq_hi:
+        ld_hi.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q["q_hi"], "acceptedAnswer": {"@type": "Answer", "text": q["a_hi"]}} for q in faq_hi]})
+    LD_MARK = "<!--LD-->"
+    main.append(LD_MARK)
     # Full Hindi copy of the article, built into the same page so Google can read the Hindi too (one page per notice, no
     # duplicate URL). Closed by default; hidden when the reader has already switched the page to Hindi.
     def to_hi(h):
@@ -659,28 +671,44 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
       <p class="actions"><a class="share js-share" href="#">{wa}<span data-t="share">Share on WhatsApp</span></a><a class="act" id="dlPdf" href="#" download><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="dlPdf">Download this page as PDF</span></a><a class="act" href="/report/?page=/notice/{slug}/"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span data-t="reportPage">Report a mistake on this page</span></a></p>
     </div>''')
 
-    if hidet:   # full Hindi copy for Google: one quiet grey line at the very end, under "Report a mistake"
-        main.append(hidet)
+    has_hi = bool(hidet)   # a real Hindi page exists at /hi/notice/<slug>/ (its own address, title and description)
+    if has_hi:
+        main.append(f'    <p class="hidet"><a href="/hi/notice/{slug}/" lang="hi" hreflang="hi">हिंदी में पढ़ें</a></p>')
     tpl = TEMPLATE.read_text(encoding="utf-8")
-    if hi["h1"] != en["h1"]:   # Google title in both languages, so Hindi searches find the same page
-        en["title"] = f'{en["h1"]} | {hi["h1"]}'
     for d_, brand in ((en, "SarkariChart"), (hi, "सरकारी चार्ट")):   # browser tab / Google title: heading + brand when it fits
         if len(f'{d_["title"]} | {brand}') <= 72:
             d_["title"] = f'{d_["title"]} | {brand}'
     t_en = "\n".join(f"      {k}: {js(v)}," for k, v in en.items())
     t_hi = "\n".join(f"      {k}: {js(v)}," for k, v in hi.items())
     cut = lambda t, k: t if len(t) <= k else t[:k - 1].rsplit(" ", 1)[0] + "…"
-    desc = cut(en["summary"] or en["h1"], 158)
-    hd = hi.get("summary") or ""
-    if hd and hd != en.get("summary"):   # English + Hindi in the Google snippet
-        desc = cut(en["summary"] or en["h1"], 100) + " | " + cut(hd, 110)
+    desc = cut(en["summary"] or en["h1"], 155)
     out = (tpl.replace("{{TITLE}}", esc(en["title"])).replace("{{DESC}}", esc(desc)).replace("{{MAIN}}", "\n".join(main))
            .replace("{{T_EN}}", t_en).replace("{{T_HI}}", t_hi).replace("{{SLUG}}", slug)
            .replace("{{OGIMG}}", f"{SITE_URL}/notice/{slug}/og.png").replace("{{OGALT}}", esc(f"{en['h1']} — {en['org']} {typ} notice summary card by SarkariChart")).replace("{{URL}}", f"{SITE_URL}/notice/{slug}/")
            .replace("{{LAST}}", f'new Date("{last}T23:59:59+05:30")' if last else "null"))
     # section titles are real h2 headings (outline for Google and screen readers); styled exactly like before
     out = re.sub(r'<div class="h"([^>]*)>([^<]*)</div>', r'<h2 class="h"\1>\2</h2>', out)
-    return out
+    eurl = f"{SITE_URL}/notice/{slug}/"
+    ld_tag = lambda v: '    <script type="application/ld+json">' + json.dumps(v, ensure_ascii=False).replace("</", "<\\/") + "</script>"
+    if not has_hi:
+        return out.replace(LD_MARK, ld_tag(ld)), None
+    alt = (f'<link rel="canonical" href="{eurl}">\n<link rel="alternate" hreflang="en" href="{eurl}">\n'
+           f'<link rel="alternate" hreflang="hi" href="{hurl}">\n<link rel="alternate" hreflang="x-default" href="{eurl}">')
+    out_en = out.replace(f'<link rel="canonical" href="{eurl}">', alt, 1).replace(LD_MARK, ld_tag(ld))
+    # Hindi page: same layout, Hindi text already in the HTML (not only after the script runs), its own title and snippet
+    h = out.replace(f'<link rel="canonical" href="{eurl}">', alt.replace(f'canonical" href="{eurl}"', f'canonical" href="{hurl}"', 1), 1)
+    h = h.replace('<html lang="en">', '<html lang="hi" data-pl="hi">', 1).replace(LD_MARK, ld_tag(ld_hi))
+    h = h.replace(f'<meta property="og:url" content="{eurl}">', f'<meta property="og:url" content="{hurl}">', 1)
+    ht = hi.get("title") or hi.get("h1") or en["h1"]
+    hd = cut(hi.get("summary") or hi.get("h1") or desc, 155)
+    h = re.sub(r"<title>[^<]*</title>", lambda m: f"<title>{esc(ht)}</title>", h, 1)
+    h = re.sub(r'(<meta (?:name="description"|property="og:description") content=")[^"]*"', lambda m: m.group(1) + esc(hd) + '"', h)
+    h = re.sub(r'(<meta property="og:title" content=")[^"]*"', lambda m: m.group(1) + esc(ht) + '"', h, 1)
+    h = re.sub(r'(data-t="([^"]+)"[^>]*>)([^<]*)<',
+               lambda m: m.group(1) + (esc(hi[m.group(2)]) if isinstance(hi.get(m.group(2)), str) else m.group(3)) + "<", h)
+    h = h.replace(f'<p class="hidet"><a href="/hi/notice/{slug}/" lang="hi" hreflang="hi">हिंदी में पढ़ें</a></p>',
+                  f'<p class="hidet"><a href="/notice/{slug}/" lang="en" hreflang="en">Read in English</a></p>', 1)
+    return out_en, h
 
 
 def related_for(n: dict, notices: list) -> list:
@@ -738,7 +766,12 @@ def main():
         out = SITE / "notice" / slug / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
         try:
-            out.write_text(render(n, slug, related_for(n, notices), exam_groups), encoding="utf-8")
+            page_en, page_hi = render(n, slug, related_for(n, notices), exam_groups)
+            out.write_text(page_en, encoding="utf-8")
+            if page_hi:
+                hout = SITE / "hi" / "notice" / slug / "index.html"
+                hout.parent.mkdir(parents=True, exist_ok=True)
+                hout.write_text(page_hi, encoding="utf-8")
         except Exception as e:  # noqa: BLE001 — keep going; this page keeps its previous version
             print(f"  {n['id']}: render failed ({type(e).__name__}: {e})"[:300])
             continue

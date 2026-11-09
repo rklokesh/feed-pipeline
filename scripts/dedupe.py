@@ -51,14 +51,25 @@ def main() -> None:
             changed += 1
         if n.get("slug") and n["slug"] != kept["slug"]:
             redirects.append((n["slug"], kept["slug"]))
-            old = SITE / "notice" / n["slug"]
-            if old.is_dir():
+            for old in (SITE / "notice" / n["slug"], SITE / "hi" / "notice" / n["slug"]):
+                if old.is_dir():
+                    shutil.rmtree(old)
+    # pages whose address changed when their text was rewritten (old address -> current one; null = no longer live)
+    ren = ROOT / "data" / "renamed.json"
+    live = {json.loads(x.read_text()).get("slug") for x in NOTICES.glob("*.json")}
+    for a, b in (json.loads(ren.read_text()).items() if ren.exists() else []):
+        if a in live:   # the old address belongs to a notice again: leave it alone
+            continue
+        if b and (SITE / "notice" / b / "index.html").exists():
+            redirects.append((a, b))
+        for old in (SITE / "notice" / a, SITE / "hi" / "notice" / a):
+            if old.is_dir() and a != b:
                 shutil.rmtree(old)
     rf = SITE / "_redirects"
     text = rf.read_text() if rf.exists() else ""
     if START in text:
         text = text[:text.index(START)].rstrip("\n") + "\n" + text[text.index(END) + len(END):].lstrip("\n")
-    block = [START] + [f"/notice/{a}{s} /notice/{b}/ 301" for a, b in sorted(redirects) for s in ("", "/", "/*")] + [END]
+    block = [START] + [f"{L}/notice/{a}{s} {L}/notice/{b}/ 301" for a, b in sorted(redirects) for L in ("", "/hi") for s in ("", "/", "/*")] + [END]
     rf.write_text(text.rstrip("\n") + "\n" + "\n".join(block) + "\n")
     print(f"dedupe: {changed} newly merged, {len(redirects)} old addresses redirect")
 

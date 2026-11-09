@@ -40,16 +40,27 @@ def sitemap(items):
     urls = [(f"{SITE_URL}/", today, "hourly", "1.0")]
     urls += [(f"{SITE_URL}/{p}/", "2026-10-28", "monthly", "0.3") for p in ("about", "contact", "privacy", "terms", "press")]
     urls += [(f"{SITE_URL}/notice/{i['slug']}/", i["lastmod"], "weekly", "0.8") for i in items]
+    urls += [(f"{SITE_URL}/hi/notice/{i['slug']}/", i["lastmod"], "weekly", "0.8") for i in items
+             if (SITE / "hi" / "notice" / i["slug"] / "index.html").exists()]
     urls += [(f"{SITE_URL}/{d.name}/", today, "daily", "0.8") for d in sorted(SITE.iterdir())
              if d.is_dir() and (d.name.endswith("govt-jobs") or d.name in ("railway-jobs", "police-jobs", "bank-jobs", "teacher-jobs", "defence-jobs")) and (d / "index.html").exists()]
     exam_dir = SITE / "exam"
     if exam_dir.exists():
         urls.append((f"{SITE_URL}/exam/", today, "daily", "0.7"))
         urls += [(f"{SITE_URL}/exam/{d.name}/", today, "daily", "0.9") for d in sorted(exam_dir.iterdir()) if (d / "index.html").exists()]
-    body = "".join(f"  <url><loc>{html.escape(u)}</loc><lastmod>{m}</lastmod><changefreq>{c}</changefreq><priority>{p}</priority></url>\n"
+    def alts(u):
+        if "/notice/" not in u:
+            return ""
+        e = u.replace(f"{SITE_URL}/hi/notice/", f"{SITE_URL}/notice/")
+        h = e.replace(f"{SITE_URL}/notice/", f"{SITE_URL}/hi/notice/")
+        if not (SITE / h[len(SITE_URL) + 1:] / "index.html").exists():
+            return ""
+        return (f'<xhtml:link rel="alternate" hreflang="en" href="{html.escape(e)}"/>'
+                f'<xhtml:link rel="alternate" hreflang="hi" href="{html.escape(h)}"/>')
+    body = "".join(f"  <url><loc>{html.escape(u)}</loc><lastmod>{m}</lastmod><changefreq>{c}</changefreq><priority>{p}</priority>{alts(u)}</url>\n"
                    for u, m, c, p in urls)
     (SITE / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n'
-                                       '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + body + "</urlset>\n", encoding="utf-8")
+                                       '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + body + "</urlset>\n", encoding="utf-8")
 
 
 def robots():

@@ -25,6 +25,13 @@ def main():
     for m in re.finditer(r'"publishedAt": "([^"]+)", "url": "(/notice/[^"]+)"', s):
         if m.group(1) >= cut:
             urls.append(SITE_URL + m.group(2))
+            if (ROOT / "site" / "hi" / m.group(2).strip("/") / "index.html").exists():
+                urls.append(SITE_URL + "/hi" + m.group(2))
+    flag = ROOT / "data" / "indexnow-hi-sent.txt"   # first run after the Hindi pages launched: announce all of them once
+    hi_dir = ROOT / "site" / "hi" / "notice"
+    if hi_dir.exists() and not flag.exists():
+        urls += [f"{SITE_URL}/hi/notice/{d.name}/" for d in sorted(hi_dir.iterdir()) if (d / "index.html").exists()]
+        flag.write_text(dt.datetime.utcnow().isoformat() + "\n")
     urls += [f"{SITE_URL}/{d.name}/" for d in sorted((ROOT / "site").iterdir()) if d.is_dir() and d.name.endswith("-jobs")]
     body = {"host": SITE_URL.split("//")[1], "key": KEY, "keyLocation": f"{SITE_URL}/{KEY}.txt", "urlList": urls[:10000]}
     try:
