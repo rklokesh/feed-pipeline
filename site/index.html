@@ -117,6 +117,10 @@ ul, p { margin: 0; padding: 0; list-style: none; }
 .themeb { display: inline-flex; color: var(--grey); }
 .themeb svg { display: block; transform: translateY(-0.5px); } /* optical centre with the words beside it */
 .top .themeb:hover { color: var(--ink); text-decoration: none; }
+/* the language and theme buttons in the header turn maroon on hover, like every link (soft pink in dark mode) */
+@media (hover: hover) { .top .nav-r button:hover, .top .nav-r button:hover::before { color: #8E1B1E !important; }
+  :root[data-theme="dark"] .top .nav-r button:hover { color: #F2A7A1 !important; } }
+@media (hover: hover) and (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .top .nav-r button:hover { color: #F2A7A1 !important; } }
 .top button { all: unset; cursor: pointer; }
 .top button:hover { text-decoration: underline; text-underline-offset: 5px; }
 

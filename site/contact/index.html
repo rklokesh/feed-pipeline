@@ -68,6 +68,10 @@ h1, h2, p, ul { margin: 0; padding: 0; font: inherit; list-style: none; }
 .themeb { display: inline-flex; color: var(--grey); }
 .themeb svg { display: block; transform: translateY(-0.5px); }
 .top .themeb:hover { color: var(--ink); text-decoration: none; }
+/* the language and theme buttons in the header turn maroon on hover, like every link (soft pink in dark mode) */
+@media (hover: hover) { .top .nav-r button:hover, .top .nav-r button:hover::before { color: #8E1B1E !important; }
+  :root[data-theme="dark"] .top .nav-r button:hover { color: #F2A7A1 !important; } }
+@media (hover: hover) and (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .top .nav-r button:hover { color: #F2A7A1 !important; } }
 footer .pref { margin-bottom: 0; }
 footer .browse { margin-bottom: 8px; line-height: 1.7; }
 footer .browse a { color: inherit; }
