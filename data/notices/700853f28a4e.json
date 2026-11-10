@@ -1,5 +1,31 @@
 {
+  "auto_published": true,
   "board_url": "https://www.esic.gov.in/recruitments",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-19",
+    "last_date": "2026-11-18",
+    "list": true,
+    "posts": "Professor, Associate Professor, Assistant Professor",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Employees' State Insurance Corporation has invited applications for Teaching Faculty posts on a contract basis. Eligible candidates must apply via email by 18 November 2026 and attend the interview.",
+    "summary_hi": "कर्मचारी राज्य बीमा निगम ने अनुबंध के आधार पर शिक्षण संकाय के पदों के लिए आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 18 नवंबर 2026 तक ईमेल के माध्यम से आवेदन करें और साक्षात्कार में उपस्थित हों।",
+    "title_en": "ESIC Bihta Teaching Faculty Recruitment 2026 – Walk-in Interview",
+    "title_hi": "ईएसआईसी बिहटा शिक्षण संकाय भर्ती 2026 – वॉक-इन इंटरव्यू",
+    "type": "Job",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": 69,
+    "age_min": null,
+    "age_on": "2026-11-18",
+    "domicile": null,
+    "qual": "postgraduate",
+    "relax": {}
+  },
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -90,16 +116,285 @@
   },
   "first_seen": "2026-11-10T06:18:04+00:00",
   "id": "700853f28a4e",
+  "issue": 1197,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-10",
   "org": "ESIC",
+  "page": {
+    "after_en": [
+      "Selected candidates will be issued an offer of appointment via email and must join according to the instructions provided."
+    ],
+    "after_hi": [
+      "चयनित उम्मीदवारों को ईमेल के माध्यम से नियुक्ति प्रस्ताव भेजा जाएगा।"
+    ],
+    "age": [
+      {
+        "label_en": "Maximum age limit",
+        "label_hi": "अधिकतम आयु सीमा",
+        "value_en": "69 years",
+        "value_hi": "69 वर्ष"
+      }
+    ],
+    "apply_start": null,
+    "apply_url": "www.mcpatna.esic.gov.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check eligibility criteria and age limit.",
+      "Send application via email before 18 Nov 2026.",
+      "Keep original documents and demand draft ready for the interview."
+    ],
+    "checklist_hi": [
+      "पात्रता मानदंड और आयु सीमा की जांच करें।",
+      "18 नवंबर 2026 से पहले ईमेल के माध्यम से आवेदन भेजें।",
+      "साक्षात्कार के लिए मूल दस्तावेज और डिमांड ड्राफ्ट तैयार रखें।"
+    ],
+    "conducted_by_en": "Employees' State Insurance Corporation (ESIC)",
+    "conducted_by_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईसी)",
+    "dates": [
+      {
+        "label_en": "Application submission last date",
+        "label_hi": "आवेदन जमा करने की अंतिम तिथि",
+        "value_en": "18 Nov 2026 (12:00 Noon)",
+        "value_hi": "18 नवंबर 2026 (दोपहर 12:00 बजे)"
+      },
+      {
+        "label_en": "Date of interview (Pre and Para Clinical)",
+        "label_hi": "साक्षात्कार की तिथि (प्री और पैरा клиниकल)",
+        "value_en": "19 Nov 2026",
+        "value_hi": "19 नवंबर 2026"
+      },
+      {
+        "label_en": "Date of interview (Clinical Department)",
+        "label_hi": "साक्षात्कार की तिथि (क्लिनिकल विभाग)",
+        "value_en": "20 Oct 2026",
+        "value_hi": "20 अक्टूबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Admit Card/Certificate of Class 10th for Date of Birth",
+      "MBBS Mark sheets, Attempt, and Degree Certificates",
+      "MD/MS/DNB/Other Exam Mark sheets, Attempt, and Degree Certificates",
+      "Valid EWS/OBC/SC/ST/EBC Certificate",
+      "Updated State/NMC Medical Registration Certificate",
+      "Experience Certificate and Proof of Publication",
+      "Relieving Certificate from previous employer",
+      "Aadhaar Card"
+    ],
+    "documents_hi": [
+      "जन्म तिथि के लिए 10वीं कक्षा का प्रमाण पत्र",
+      "एमबीबीएस अंक पत्र और डिग्री",
+      "एमडी/एमएस/डीएनबी अंक पत्र और डिग्री",
+      "वैध जाति/आरक्षण प्रमाण पत्र",
+      "अद्यतन मेडिकल पंजीकरण प्रमाण पत्र",
+      "अनुभव प्रमाण पत्र",
+      "आधार कार्ड"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Education Qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "As per NMC (MCI) guidelines with updated Medical Registration.",
+        "value_hi": "एनएमसी (एमसीआई) दिशानिर्देशों के अनुसार अद्यतन मेडिकल रजिस्ट्रेशन।"
+      }
+    ],
+    "exam_date": "2026-11-19",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a contractual recruitment drive conducted by ESIC Medical College & Hospital, Bihta, Patna to fill Teaching Faculty positions including Professor, Associate Professor, and Assistant Professor.",
+        "a_hi": "यह ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, बिहटा, पटना द्वारा प्रोफेसर, सह प्रोफेसर और सहायक प्रोफेसर के पदों को भरने के लिए अनुबंध के आधार पर आयोजित एक भर्ती प्रक्रिया है।",
+        "q_en": "What is ESIC Bihta Teaching Faculty Recruitment?",
+        "q_hi": "ईएसआईसी बिहटा शिक्षण संकाय भर्ती क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Pay Scale - Professor",
+        "label_hi": "वेतनमान - प्रोफेसर",
+        "value_en": "Fixed Basic ₹1,18,500/- & other allowances",
+        "value_hi": "नियत मूल वेतन ₹1,18,500/- और अन्य भत्ते"
+      },
+      {
+        "label_en": "Pay Scale - Associate Professor",
+        "label_hi": "वेतनमान - सह प्रोफेसर",
+        "value_en": "Fixed Basic ₹78,800/- & other allowances",
+        "value_hi": "नियत मूल वेतन ₹78,800/- और अन्य भत्ते"
+      },
+      {
+        "label_en": "Pay Scale - Assistant Professor",
+        "label_hi": "वेतनमान - सहायक प्रोफेसर",
+        "value_en": "Fixed Basic ₹67,700/- & other allowances",
+        "value_hi": "नियत मूल वेतन ₹67,700/- और अन्य भत्ते"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The last date to send the scanned application via email is 18 November 2026 up to 12:00 Noon.",
+        "a_hi": "ईमेल के माध्यम से आवेदन भेजने की अंतिम तिथि 18 नवंबर 2026 को दोपहर 12:00 बजे तक है।",
+        "q_en": "What is the last date to apply for ESIC Bihta Teaching Faculty Recruitment 2026?",
+        "q_hi": "ईएसआईसी बिहटा शिक्षण संकाय भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "The application fee is ₹500 for general and other eligible categories, payable via Demand Draft in favor of ESIC HOSPITAL BIHTA SB ACC- 2, payable at Bihta, Patna.",
+        "a_hi": "सामान्य और अन्य श्रेणियों के लिए आवेदन शुल्क ₹500 है, जो डिमांड ड्राफ्ट के माध्यम से देय है।",
+        "q_en": "What is the application fee for general candidates?",
+        "q_hi": "सामान्य वर्ग के उम्मीदवारों के लिए आवेदन शुल्क क्या है?"
+      }
+    ],
+    "fees": [
+      {
+        "amount": "₹0",
+        "cat_en": "SC / ST / Female / ESIC Regular Employee / Ex-Servicemen / PH",
+        "cat_hi": "एससी / एसटी / महिला / ईएसआईसी नियमित कर्मचारी / भूतपूर्व सैनिक / दिव्यांग"
+      },
+      {
+        "amount": "₹500",
+        "cat_en": "All Other Categories",
+        "cat_hi": "अन्य सभी वर्ग"
+      }
+    ],
+    "h1_en": "ESIC Bihta Teaching Faculty Recruitment 2026 – Walk-in Interview",
+    "h1_hi": "ईएसआईसी बिहटा शिक्षण संकाय भर्ती 2026 – वॉक-इन इंटरव्यू",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Send a scanned copy of the application form with supporting documents to email: dean-bihta.bh@esic.gov.in by 12:00 Noon on 18.11.2026.",
+      "Attend the offline interview carrying the original application form, supporting documents, and original Demand Draft (if applicable) to The Dean, ESIC Medical College & Hospital, Bihta, Patna - 801103."
+    ],
+    "how_hi": [
+      "आवेदन पत्र की स्कैन की गई प्रति और सहायक दस्तावेज 18.11.2026 को दोपहर 12:00 बजे तक ईमेल dean-bihta.bh@esic.gov.in पर भेजें।",
+      "मूल आवेदन पत्र, दस्तावेजों और डिमांड ड्राफ्ट के साथ साक्षात्कार स्थल पर उपस्थित हों।"
+    ],
+    "intro_en": "Employees' State Insurance Corporation (ESIC) Medical College & Hospital, Bihta, Patna has released Advertisement No. 15 of 2026 for the recruitment of Teaching Faculty (Professor, Associate Professor, and Assistant Professor) on a contract basis for a period of one year. Eligible candidates must submit their scanned application via email by 12:00 Noon on 18 November 2026 and appear for an offline interview with the original application and demand draft. The interviews are scheduled for 19 November 2026 and 20 October 2026. Applicants should review the eligibility criteria, required documents, and departmental vacancies before applying.",
+    "intro_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईसी) मेडिकल कॉलेज एंड हॉस्पिटल, बिहटा, पटना ने एक वर्ष की अवधि के लिए अनुबंध के आधार पर शिक्षण संकाय (प्रोफेसर, सह प्रोफेसर और सहायक प्रोफेसर) के पदों की भर्ती के लिए विज्ञापन संख्या 15/2026 जारी किया है। योग्य उम्मीदवारों को 18 नवंबर 2026 को दोपहर 12:00 बजे तक ईमेल के माध्यम से अपने आवेदन की स्कैन कॉपी भेजनी होगी और मूल आवेदन तथा डिमांड ड्राफ्ट के साथ ऑफ़लाइन साक्षात्कार में उपस्थित होना होगा। साक्षात्कार 19 नवंबर 2026 और 20 अक्टूबर 2026 को निर्धारित हैं।",
+    "last_date": "2026-11-18",
+    "mistakes_en": [
+      "Submitting applications after the deadline of 18 November 2026 (12:00 Noon).",
+      "Failing to bring original documents and demand draft at the time of the interview."
+    ],
+    "mistakes_hi": [
+      "18 नवंबर 2026 (दोपहर 12:00 बजे) की समय सीमा के बाद आवेदन भेजना।",
+      "साक्षात्कार के समय मूल दस्तावेज और डिमांड ड्राफ्ट साथ न लाना।"
+    ],
+    "not_en": [
+      "Candidates who do not possess updated medical council registration or required post-MBBS/MD/MS qualifications."
+    ],
+    "not_hi": [
+      "वे उम्मीदवार जिनके पास अद्यतन मेडिकल काउंसिल पंजीकरण या आवश्यक योग्यता नहीं है।"
+    ],
+    "notice_date": null,
+    "official_site": "www.mcpatna.esic.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Professor, Associate Professor, Assistant Professor",
+        "value_hi": "प्रोफेसर, सह प्रोफेसर, सहायक प्रोफेसर"
+      },
+      {
+        "label_en": "Apply Online",
+        "label_hi": "ऑनलाइन आवेदन",
+        "value_en": "By email up to 18 Nov 2026",
+        "value_hi": "18 नवंबर 2026 तक ईमेल द्वारा"
+      },
+      {
+        "label_en": "Interview Date",
+        "label_hi": "साक्षात्कार की तिथि",
+        "value_en": "19 Nov 2026 & 20 Oct 2026",
+        "value_hi": "19 नवंबर 2026 और 20 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Educational Qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "As per NMC (MCI) guidelines",
+        "value_hi": "एनएमसी (एमसीआई) दिशानिर्देशों के अनुसार"
+      },
+      {
+        "label_en": "Age Limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "Max 69 years as on 18 Nov 2026",
+        "value_hi": "अधिकतम 69 वर्ष 18 नवंबर 2026 तक"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "15 of 2026",
+        "value_hi": "15 of 2026"
+      }
+    ],
+    "salary": [
+      {
+        "label_en": "Professor",
+        "label_hi": "प्रोफेसर",
+        "value_en": "Fixed Basic ₹1,18,500/- plus allowances",
+        "value_hi": "नियत मूल वेतन ₹1,18,500/- और भत्ते"
+      },
+      {
+        "label_en": "Associate Professor",
+        "label_hi": "सह प्रोफेसर",
+        "value_en": "Fixed Basic ₹78,800/- plus allowances",
+        "value_hi": "नियत मूल वेतन ₹78,800/- और भत्ते"
+      },
+      {
+        "label_en": "Assistant Professor",
+        "label_hi": "सहायक प्रोफेसर",
+        "value_en": "Fixed Basic ₹67,700/- plus allowances",
+        "value_hi": "नियत मूल वेतन ₹67,700/- और भत्ते"
+      }
+    ],
+    "selection_en": [
+      "Acquired academic credentials",
+      "Performance in interview before the Selection Board"
+    ],
+    "selection_hi": [
+      "प्राप्त शैक्षणिक योग्यताएं",
+      "चयन बोर्ड के समक्ष साक्षात्कार में प्रदर्शन"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "ESIC Bihta Teaching Faculty",
+      "line_hi": "ईएसआईसी बिहटा शिक्षण संकाय",
+      "posts": null
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Employees' State Insurance Corporation has invited applications for Teaching Faculty posts on a contract basis at ESIC Medical College & Hospital, Bihta, Patna. Eligible candidates must send scanned copies of their application via email by 18 November 2026 and attend the offline interview.",
+    "summary_hi": "कर्मचारी राज्य बीमा निगम ने ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, बिहटा, पटना में अनुबंध के आधार पर शिक्षण संकाय के पदों के लिए आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 18 नवंबर 2026 तक ईमेल के माध्यम से अपने आवेदन की स्कैन कॉपी भेजें और ऑफ़लाइन साक्षात्कार में भाग लें।",
+    "vacancies": [
+      {
+        "detail_en": "Various disciplines including Anaesthesiology, Biochemistry, Pathology, Microbiology, Chest, Dermatology, ENT, Eye, Gen. Medicine, OBGY, Paediatrics, Radio-Diagnosis, Gen. Surgery, Dental, PMR, Comm. Med., Anatomy, Physiology, Pharmacology, FMT, Accident & Emergency, ICU, and Blood Bank Centre.",
+        "detail_hi": "विभिन्न विभाग उपलब्ध हैं।",
+        "post_en": "Teaching Faculty (Professor, Associate Professor, Assistant Professor)",
+        "post_hi": "शिक्षण संकाय",
+        "total": ""
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Medical professionals holding requisite qualifications for Professor, Associate Professor, and Assistant Professor posts."
+    ],
+    "who_hi": [
+      "प्रोफेसर, सह प्रोफेसर और सहायक प्रोफेसर के पदों के लिए आवश्यक योग्यता रखने वाले चिकित्सा पेशेवर।"
+    ]
+  },
   "pdf": {
     "bytes": 483338,
     "pages": 3,
     "sha256": "56cecb4df04b8abfeefddb3fcd1c9ed9b3bf63d898bcabca9e26540cad4c4176",
     "text_kind": "text"
   },
+  "published_at": "2026-11-10T06:21:19Z",
+  "qual": [
+    "postgraduate"
+  ],
+  "slug": "esic-bihta-teaching-faculty-recruitment-2026-walk-in-interview",
   "source_id": "esic-recruitment",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1 ESIC Medical College and Hospital, Bihta, Patna- 801103 Recruitment of Teaching Faculty on contract basis at ESIC Medical College & Hospital, Bihta, Patna- PDF size:(472.01 KB) . 2026-11-10 Interview(2026-11-19) 12738/2026",
   "url": "https://esic.gov.in/attachments/recruitmentfile/Recruitment_of_Teaching_Faculty_on_contract_basis_at_ESIC_Medical_College_amp_Hospital_Bihta_Patna_1794290802.pdf"
 }
