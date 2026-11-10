@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SarkariChart//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:mha-member-finance-lpai-recruitment-2026-apply-online-last@sarkarichart
+DTSTAMP:20261110T195437Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Last date: MHA Member Finance LPAI Recruitment 2026 – Last Date Extended
+DESCRIPTION:https://sarkarichart.com/notice/mha-member-finance-lpai-recruitment-2026-apply-online/
+URL:https://sarkarichart.com/notice/mha-member-finance-lpai-recruitment-2026-apply-online/
+BEGIN:VALARM
+TRIGGER:-P1DT15H
+ACTION:DISPLAY
+DESCRIPTION:Last date: MHA Member Finance LPAI Recruitment 2026 – Last Date Extended
+END:VALARM
+END:VEVENT
+END:VCALENDAR

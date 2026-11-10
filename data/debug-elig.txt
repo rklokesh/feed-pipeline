@@ -1,2 +1,5 @@
-2026-11-10T19:24:11.948260
-nothing to tag
+2026-11-10T19:56:00.383850
+providers: ['gemini/gemini-flash-lite-latest', 'gemini/gemini-flash-latest', 'gemini/gemini-2.0-flash']
+gemini/gemini-flash-lite-latest: HTTP 503 '[{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",\n    "status": "UNAVAILABLE"\n  }\n}\n]'
+gemini/gemini-flash-lite-latest: HTTP 503 '[{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",\n    "status": "UNAVAILABLE"\n  }\n}\n]'
+gemini/gemini-flash-lite-latest: HTTP 200
