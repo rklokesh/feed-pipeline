@@ -11,8 +11,8 @@
     "skip_reason": "",
     "summary_en": "Correction window is open for the Joint CSIR-UGC NET December 2026 online application form. Candidates should check their details and make necessary edits if required.",
     "summary_hi": "संयुक्त सीएसआईआर-यूजीसी नेट दिसंबर 2026 ऑनलाइन आवेदन पत्र के लिए सुधार विंडो खुली है। उम्मीदवारों को अपने विवरण की जांच करनी चाहिए और यदि आवश्यक हो तो संशोधन करना चाहिए।",
-    "title_en": "CSIR UGC NET December 2026 Application Correction – Form Edit",
-    "title_hi": "सीएसआईआर यूजीसी नेट दिसंबर 2026 आवेदन पत्र सुधार विंडो",
+    "title_en": "CSIR NET December 2026 Application Correction Window Open",
+    "title_hi": "सीएसआईआर नेट दिसंबर 2026 आवेदन सुधार विंडो खुली",
     "type": "Update",
     "vacancies": null
   },
@@ -35,128 +35,180 @@
   "org": "NTA",
   "page": {
     "after_en": [
-      "City intimation slip release",
-      "Admit card release",
-      "Examination"
+      "Final submission of corrected application form",
+      "Release of exam admit cards by NTA"
     ],
     "after_hi": [
-      "शहर की सूचना पर्ची जारी होना",
-      "प्रवेश पत्र जारी होना",
-      "परीक्षा"
+      "सुधारे गए आवेदन पत्र का अंतिम सबमिशन",
+      "एनटीए द्वारा परीक्षा प्रवेश पत्र जारी किया जाना"
     ],
     "age": [],
     "apply_start": null,
-    "apply_url": "https://nta.ac.in/",
+    "apply_url": "https://csirnet.nta.nic.in/",
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check login credentials",
-      "Review all sections before final submission"
+      "Check all particulars carefully before final submission",
+      "Keep payment details ready if category or PwBD changes require an extra fee"
     ],
     "checklist_hi": [
-      "लॉगिन विवरण जांचें",
-      "अंतिम सबमिशन से पहले सभी खंडों की समीक्षा करें"
+      "अंतिम सबमिशन से पहले सभी विवरणों की सावधानीपूर्वक जांच करें",
+      "श्रेणी या दिव्यांगता परिवर्तन के लिए अतिरिक्त शुल्क की आवश्यकता होने पर भुगतान विवरण तैयार रखें"
     ],
     "conducted_by_en": "National Testing Agency (NTA)",
     "conducted_by_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए)",
-    "dates": [],
+    "dates": [
+      {
+        "label_en": "Correction window starts",
+        "label_hi": "सुधार विंडो शुरू",
+        "value_en": "10 Nov 2026",
+        "value_hi": "10 नवंबर 2026"
+      },
+      {
+        "label_en": "Correction window closes",
+        "label_hi": "सुधार विंडो बंद",
+        "value_en": "12 Nov 2026 (11:50 PM)",
+        "value_hi": "12 नवंबर 2026 (रात्रि 11:50 बजे)"
+      }
+    ],
     "documents_en": [
-      "Application Number",
-      "Password"
+      "Application Number and Password for login"
     ],
     "documents_hi": [
-      "आवेदन संख्या",
-      "पासवर्ड"
+      "लॉगिन के लिए आवेदन संख्या और पासवर्ड"
     ],
     "eligibility": [],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is a limited period provided by NTA allowing registered candidates to edit or rectify errors made in their submitted online application forms.",
-        "a_hi": "यह एनटीए द्वारा प्रदान की जाने वाली एक सीमित अवधि है जो पंजीकृत उम्मीदवारों को उनके जमा किए गए ऑनलाइन आवेदन पत्रों में की गई त्रुटियों को संपादित करने या सुधारने की अनुमति देती है।",
-        "q_en": "What is the CSIR UGC NET Application Correction Window?",
-        "q_hi": "सीएसआईआर यूजीसी नेट आवेदन सुधार विंडो क्या है?"
+        "a_en": "It is a one-time facility provided by NTA allowing registered candidates to correct specific particulars in their submitted online application forms.",
+        "a_hi": "यह एनटीए द्वारा प्रदान की जाने वाली एक बार की सुविधा है जो पंजीकृत उम्मीदवारों को उनके जमा किए गए ऑनलाइन आवेदन पत्रों में विशिष्ट विवरणों को ठीक करने की अनुमति देती है।",
+        "q_en": "What is the Joint CSIR-UGC NET December 2026 Correction Window?",
+        "q_hi": "संयुक्त सीएसआईआर-यूजीसी नेट दिसंबर 2026 सुधार विंडो क्या है?"
       }
     ],
-    "extra": [],
+    "extra": [
+      {
+        "label_en": "Helpline Numbers",
+        "label_hi": "हेल्पलाइन नंबर",
+        "value_en": "011-40759000, 011-69227700",
+        "value_hi": "011-40759000, 011-69227700"
+      },
+      {
+        "label_en": "Email",
+        "label_hi": "ईमेल",
+        "value_en": "csirnet@nta.ac.in",
+        "value_hi": "csirnet@nta.ac.in"
+      }
+    ],
     "faq": [
       {
-        "a_en": "Candidates who have successfully submitted their online application form for Joint CSIR-UGC NET December 2026 can use the correction window.",
-        "a_hi": "वे उम्मीदवार जिन्होंने संयुक्त सीएसआईआर-यूजीसी नेट दिसंबर 2026 के लिए अपना ऑनलाइन आवेदन पत्र सफलतापूर्वक जमा कर दिया है, वे सुधार विंडो का उपयोग कर सकते हैं।",
-        "q_en": "Who can use the CSIR UGC NET correction window?",
-        "q_hi": "सीएसआईआर यूजीसी नेट सुधार विंडो का उपयोग कौन कर सकता है?"
+        "a_en": "The correction window is open from 10 November 2026 to 12 November 2026 (up to 11:50 PM).",
+        "a_hi": "सुधार विंडो 10 नवंबर 2026 से 12 नवंबर 2026 (रात्रि 11:50 बजे तक) खुली है।",
+        "q_en": "When is the correction window open for CSIR UGC NET December 2026?",
+        "q_hi": "सीएसआईआर यूजीसी नेट दिसंबर 2026 के लिए सुधार विंडो कब खुली है?"
+      },
+      {
+        "a_en": "Candidates can make corrections at the official website csirnet.nta.nic.in.",
+        "a_hi": "उम्मीदवार आधिकारिक वेबसाइट csirnet.nta.nic.in पर सुधार कर सकते हैं।",
+        "q_en": "What is the official website for CSIR NET corrections?",
+        "q_hi": "सीएसआईआर नेट सुधार के लिए आधिकारिक वेबसाइट क्या है?"
+      },
+      {
+        "a_en": "No, changes to mobile number, email address, permanent/present address, photograph, and signature are not allowed.",
+        "a_hi": "नहीं, मोबाइल नंबर, ईमेल पता, स्थायी/वर्तमान पता, फोटोग्राफ और हस्ताक्षर में बदलाव की अनुमति नहीं है।",
+        "q_en": "Can I change my mobile number and email address?",
+        "q_hi": "क्या मैं अपना मोबाइल नंबर और ईमेल पता बदल सकता हूँ?"
+      },
+      {
+        "a_en": "An additional fee will be charged if changes in category or PwBD status impact the total fee amount.",
+        "a_hi": "यदि श्रेणी या दिव्यांगता स्थिति में परिवर्तन से कुल शुल्क राशि प्रभावित होती है तो अतिरिक्त शुल्क लिया जाएगा।",
+        "q_en": "Will I be charged an additional fee for corrections?",
+        "q_hi": "क्या मुझसे सुधार के लिए अतिरिक्त शुल्क लिया जाएगा?"
       }
     ],
     "fees": [],
-    "h1_en": "CSIR UGC NET December 2026 Application Correction – Form Edit",
-    "h1_hi": "सीएसआईआर यूजीसी नेट दिसंबर 2026 आवेदन पत्र सुधार विंडो",
+    "h1_en": "CSIR NET December 2026 Application Correction Window Open",
+    "h1_hi": "सीएसआईआर नेट दिसंबर 2026 आवेदन सुधार विंडो खुली",
     "hindi_notice_url": null,
     "how_en": [
-      "Go to the official CSIR NET website.",
-      "Click on the application correction link for December 2026.",
-      "Log in using your application number and password.",
-      "Make the necessary corrections in the allowed fields and submit."
+      "Visit the official website at csirnet.nta.nic.in",
+      "Click on the application correction link for Joint CSIR-UGC NET December 2026",
+      "Log in using your application number and password",
+      "Make the necessary corrections in the permitted fields",
+      "Pay any additional fee if applicable and submit the form"
     ],
     "how_hi": [
-      "आधिकारिक सीएसआईआर नेट वेबसाइट पर जाएं।",
-      "दिसंबर 2026 के लिए आवेदन सुधार लिंक पर क्लिक करें।",
-      "अपने आवेदन नंबर और पासवर्ड का उपयोग करके लॉगिन करें।",
-      "अनुमत फ़ील्ड में आवश्यक सुधार करें और सबमिट करें।"
+      "आधिकारिक वेबसाइट csirnet.nta.nic.in पर जाएं",
+      "संयुक्त सीएसआईआर-यूजीसी नेट दिसंबर 2026 के लिए आवेदन सुधार लिंक पर क्लिक करें",
+      "अपने आवेदन संख्या और पासवर्ड का उपयोग करके लॉग इन करें",
+      "अनुमत क्षेत्रों में आवश्यक सुधार करें",
+      "यदि लागू हो तो कोई अतिरिक्त शुल्क भुगतान करें और फॉर्म जमा करें"
     ],
-    "intro_en": "The National Testing Agency (NTA) has announced the opening of the correction window for the Joint CSIR-UGC NET December 2026 application form. Registered candidates can review and edit their particulars in the online application form as per the schedule. Candidates should verify all details carefully to avoid any discrepancies in future stages of the examination.",
-    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने संयुक्त सीएसआईआर-यूजीसी नेट दिसंबर 2026 आवेदन पत्र के लिए सुधार विंडो खोलने की घोषणा की है। पंजीकृत उम्मीदवार शेड्यूल के अनुसार ऑनलाइन आवेदन पत्र में अपने विवरण की समीक्षा और संपादन कर सकते हैं। परीक्षा के अगले चरणों में किसी भी असंगति से बचने के लिए उम्मीदवारों को सभी विवरणों की सावधानीपूर्वक जांच करनी चाहिए।",
+    "intro_en": "The National Testing Agency (NTA) has opened the application form correction window for the Joint CSIR-UGC NET December 2026 examination. Registered candidates can make corrections to their online forms from 10 November 2026 to 12 November 2026 up to 11:50 PM. Candidates are advised to review their particulars carefully, as this is a one-time facility. Additional fees may apply if changes impact the category or fee structure.",
+    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने संयुक्त सीएसआईआर-यूजीसी नेट दिसंबर 2026 परीक्षा के लिए आवेदन पत्र सुधार विंडो खोल दी है। पंजीकृत उम्मीदवार 10 नवंबर 2026 से 12 नवंबर 2026 को रात्रि 11:50 बजे तक अपने ऑनलाइन फॉर्म में सुधार कर सकते हैं। उम्मीदवारों को सलाह दी जाती है कि वे अपने विवरण की सावधानीपूर्वक जांच करें, क्योंकि यह एक बार की सुविधा है। श्रेणी या शुल्क संरचना में बदलाव होने पर अतिरिक्त शुल्क लागू हो सकता है।",
     "last_date": null,
     "mistakes_en": [
-      "Do not miss the correction window deadline.",
-      "Ensure all edited details match your original valid documents."
+      "Do not miss the deadline of 12 November 2026.",
+      "Ensure correct payment if additional fees are required due to category changes."
     ],
     "mistakes_hi": [
-      "सुधार विंडो की समय सीमा न चूकें।",
-      "सुनिश्चित करें कि सभी संपादित विवरण आपके मूल वैध दस्तावेजों से मेल खाते हैं।"
+      "12 नवंबर 2026 की समय सीमा न चूकें।",
+      "श्रेणी परिवर्तन के कारण अतिरिक्त शुल्क आवश्यक होने पर सही भुगतान सुनिश्चित करें।"
     ],
-    "not_en": [],
-    "not_hi": [],
-    "notice_date": null,
+    "not_en": [
+      "Candidates are not allowed to change Mobile Number, E-Mail address, Address, Photograph, and Signature."
+    ],
+    "not_hi": [
+      "उम्मीदवारों को मोबाइल नंबर, ई-मेल पता, पता, फोटोग्राफ और हस्ताक्षर बदलने की अनुमति नहीं है।"
+    ],
+    "notice_date": "2026-11-10",
     "official_site": "https://nta.ac.in/",
     "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Exam Name",
-        "label_hi": "परीक्षा का नाम",
-        "value_en": "Joint CSIR-UGC NET December 2026",
-        "value_hi": "संयुक्त सीएसआईआर-यूजीसी नेट दिसंबर 2026"
+        "label_en": "Correction Dates",
+        "label_hi": "सुधार तिथियां",
+        "value_en": "10 Nov 2026 to 12 Nov 2026 (11:50 PM)",
+        "value_hi": "10 नवंबर 2026 से 12 नवंबर 2026 (रात्रि 11:50 बजे तक)"
       },
       {
-        "label_en": "Notice Type",
-        "label_hi": "सूचना का प्रकार",
-        "value_en": "Application Form Correction",
-        "value_hi": "आवेदन पत्र सुधार"
+        "label_en": "Official Website",
+        "label_hi": "आधिकारिक वेबसाइट",
+        "value_en": "csirnet.nta.nic.in",
+        "value_hi": "csirnet.nta.nic.in"
       }
     ],
     "salary": [],
-    "selection_en": [],
-    "selection_hi": [],
+    "selection_en": [
+      "Computer Based Test (CBT)",
+      "Eligibility determination for JRF and Assistant Professor / Ph.D. admission"
+    ],
+    "selection_hi": [
+      "कंप्यूटर आधारित परीक्षा (सीबीटी)",
+      "जेआरएफ और सहायक प्रोफेसर / पीएचडी प्रवेश के लिए पात्रता निर्धारण"
+    ],
     "share_card": {
-      "headline_en": "Form Correction",
-      "headline_hi": "फॉर्म सुधार",
+      "headline_en": "Correction Window Open",
+      "headline_hi": "सुधार विंडो खुली",
       "kind": "corr",
-      "line_en": "CSIR UGC NET Dec 2026",
-      "line_hi": "सीएसआईआर यूजीसी नेट दिस 2026",
+      "line_en": "CSIR NET December 2026",
+      "line_hi": "सीएसआईआर नेट दिसंबर 2026",
       "posts": null
     },
-    "status_en": "Application correction window open",
-    "status_hi": "आवेदन सुधार विंडो खुली है",
-    "summary_en": "The National Testing Agency (NTA) has opened the correction window for the Joint CSIR-UGC NET December 2026 application form. Candidates who need to modify their details can do so on the official website.",
-    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने संयुक्त सीएसआईआर-यूजीसी नेट दिसंबर 2026 आवेदन पत्र के लिए सुधार विंडो खोल दी है। जिन उम्मीदवारों को अपने विवरण में संशोधन करने की आवश्यकता है, वे आधिकारिक वेबसाइट पर कर सकते हैं।",
+    "status_en": "Correction window open till 12 November 2026",
+    "status_hi": "सुधार विंडो 12 नवंबर 2026 तक खुली है",
+    "summary_en": "The correction window for the Joint CSIR-UGC NET December 2026 online application form is now open. Registered candidates can edit permitted particulars on the official website until November 2026.",
+    "summary_hi": "संयुक्त सीएसआईआर-यूजीसी नेट दिसंबर 2026 ऑनलाइन आवेदन पत्र के लिए सुधार विंडो अब खुली है। पंजीकृत उम्मीदवार आधिकारिक वेबसाइट पर अनुमत विवरणों में संशोधन कर सकते हैं।",
     "vacancies": [],
     "video_url": null,
     "who_en": [
-      "Candidates who have already registered for Joint CSIR-UGC NET December 2026 and need to edit their details."
+      "Candidates who have already registered for Joint CSIR-UGC NET December 2026 and need to edit their application details"
     ],
     "who_hi": [
-      "वे उम्मीदवार जिन्होंने संयुक्त सीएसआईआर-यूजीसी नेट दिसंबर 2026 के लिए पहले ही पंजीकरण कर लिया है और अपने विवरण को संपादित करना चाहते हैं।"
+      "वे उम्मीदवार जिन्होंने संयुक्त सीएसआईआर-यूजीसी नेट दिसंबर 2026 के लिए पहले ही पंजीकरण कर लिया है और अपने आवेदन विवरण को संपादित करना चाहते हैं"
     ]
   },
   "pdf": {
@@ -166,11 +218,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-10T06:52:23Z",
-  "qual": [
-    "graduate",
-    "postgraduate"
-  ],
-  "rewrite": true,
   "slug": "csir-ugc-net-december-2026-application-correction-form-edit",
   "source_id": "nta-home",
   "status": "approved",

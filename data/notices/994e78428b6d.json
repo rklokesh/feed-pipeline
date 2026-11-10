@@ -1,6 +1,20 @@
 {
   "board_url": "https://kvs.gov.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal circular regarding pension Dearness Relief payment to banks, not a job notice or recruitment update for aspirants.",
+    "summary_en": "Kendriya Vidyalaya Sangathan issued an internal notification regarding the revision of dearness relief for pensioners.",
+    "summary_hi": "केन्द्रीय विद्यालय संगठन ने पेंशनभोगियों के लिए महंगाई राहत में संशोधन के संबंध में आंतरिक सूचना जारी की है।",
+    "title_en": "KVS Pension Dearness Relief Revision",
+    "title_hi": "केन्द्रीय विद्यालय संगठन पेंशन महंगाई राहत संशोधन",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +30,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "kvs-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "दिनांक 01.07.2026 से परिशोधित महंगाई रहाट के भुगतान के संबंध में । नई",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111058.pdf"
 }
