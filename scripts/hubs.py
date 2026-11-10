@@ -260,8 +260,10 @@ html.hv .rx .rx-w.alt { color: #E8312F; }
 html.hv .hero .search { position: relative; max-width: 560px; margin: 0 auto !important; text-align: left; }
 html.hv .hero .search input { background: var(--page) !important; border: 1px solid color-mix(in srgb, var(--ink) 28%, transparent) !important; border-radius: 10px !important;
   padding: 13px 92px 13px 44px !important; box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px -12px rgba(0,0,0,.18); }
-html.hv .hero .search input:focus { border-color: var(--ink) !important; }
-html.hv .hero .sicon { left: 14px !important; } html.hv .hero .ph { left: 44px !important; right: 160px !important; } html.hv .hero .sx { right: 58px !important; } html.hv .hero .sf { right: 10px; } html.hv .hero .search input { padding-right: 160px !important; }
+html.hv .hero .search input:focus { border-color: color-mix(in srgb, var(--ink) 45%, transparent) !important; box-shadow: 0 0 0 3px color-mix(in srgb, var(--ink) 7%, transparent), 0 8px 24px -12px rgba(0,0,0,.18) !important; }
+/* the Esc key hint is for keyboards only: never on phones or touch screens */
+@media (max-width: 640px), (hover: none) { .search .sx .kc { display: none !important; } }
+html.hv .hero .sicon { left: 14px !important; } html.hv .hero .ph { left: 44px !important; right: 160px !important; } html.hv .hero .sx { right: 58px !important; } html.hv .hero .sf { right: 6px; } html.hv .hero .search input { padding-right: 160px !important; }
 @media (max-width: 640px) { html.hv .hero .sx { right: 54px !important; } html.hv .hero .ph { right: 120px !important; } html.hv .hero .search input { padding-right: 120px !important; } }
 html.hv .hero-sub { position: relative; margin: 16px 0 0; font-size: .875rem; }
 html.hv .tabrow { margin-top: 0; }
