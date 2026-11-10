@@ -1,5 +1,20 @@
 {
   "board_url": "https://www.mha.gov.in/en/notifications/vacancies",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Member (P&D)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal deputation circular for a specific high-level post, not a general public job listing",
+    "summary_en": "Notice regarding appointment to the post of Member (P&D) in LPAI on a deputation basis.",
+    "summary_hi": "प्रतिनियुक्ति के आधार पर एलपीएआई में सदस्य के पद पर नियुक्ति से संबंधित सूचना।",
+    "title_en": "MHA Member P and D Deputation Appointment",
+    "title_hi": "गृह मंत्रालय सदस्य पद प्रतिनियुक्ति नियुक्ति",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "scanned"
   },
   "source_id": "mha-vacancies",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Appointment to the post of Member (P&D) in LPAI on deputation basis-reg.",
   "url": "https://www.mha.gov.in/files/vacancies_documents/LPAIVacancies_06112026.pdf"
 }
