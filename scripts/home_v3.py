@@ -1,8 +1,7 @@
 """Test homepage /v3/ (Nov 2026): a utility-first top for daily visitors, built from the live homepage.
 
-Instead of the big hero: the compact header, the search box, a row of popular searches, a live "Today" strip
-(new today, closing this week, results, admit cards, each one tap to its list) with "updated N min ago", then the
-same tabs and list straight away. The live homepage is not touched; /v3/ is noindex and points Google at /.
+Instead of the big hero: the compact header, the search box, then the same tabs and list straight away.
+(A "Today" strip and popular-search chips were tried on 10 Nov and cut on 11 Nov as noise.) The live homepage is not touched; /v3/ is noindex and points Google at /.
 Run after hubs.py: python3 scripts/home_v3.py
 """
 from __future__ import annotations
@@ -114,13 +113,10 @@ def main() -> None:
         return sum(1 for i in items if t in (i.get("title", "") + " " + i.get("org", "") + " " + " ".join(map(str, i.get("q") or [])) if isinstance(i.get("q"), list) else i.get("title", "") + " " + i.get("org", "") + " " + str(i.get("q") or "")).lower())
     chips = [p for p in POPULAR if hits(p) > 0][:8]
     chip_html = '<span class="lbl" data-t="v3pop">Popular:</span>' + "".join(f'<button type="button" data-q="{o}">{o}</button>' for o in chips)
-    top = ('    <section class="v3top" aria-label="Search and today">\n' + search +
-           f'      <div class="v3chips" id="v3chips">{chip_html}</div>\n'
-           '      <p class="v3fresh" id="v3fresh"></p>\n'
-           '      <div class="v3today" id="v3today"></div>\n'
-           '    </section>\n')
+    # Nov 11: cut to the bone - people come to search or to see the newest notices; counts and chips were noise
+    top = '    <section class="v3top" aria-label="Search">\n' + search + '    </section>\n'
     s = s.replace("  <main>\n", "  <main>\n" + top, 1)
-    s = s.replace("</head>", CSS + f"\n<script>window.SC_V3 = {json.dumps(data, separators=(',', ':'))};</script>\n" + JS + "\n</head>", 1)
+    s = s.replace("</head>", CSS + "\n</head>", 1)
     s = s.replace('v3pop', 'v3pop', 1)
     s = s.replace('      newTip:', '      v3pop: "Popular:", newTip:', 1)
     s = re.sub(r'(\n\s+hi: \{\n)', r'\1      v3pop: "लोकप्रिय:",\n', s, count=1)
