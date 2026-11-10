@@ -1,0 +1,57 @@
+{
+  "board_url": "https://psc.wb.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "admit_card": {
+      "evidence": "nt Announcement Personality Test (Phase-I) Downloading of e-Call Letters for The first Phase of Personality Test from Commission’s website at https://psc.wb.gov.in/ will commence on and from the 18th November, 2",
+      "source": "rule",
+      "value": "2026-11-18"
+    },
+    "advt_no": {
+      "evidence": "2026. MISCELLANEOUS SERVICES RECRUITMENT EXAMINATION, 2023 (Advt. No.- 11/2023) Important Announcement Personality Test (Phase-I) Downloading of e-Call Letters",
+      "source": "rule",
+      "value": "11/2023)"
+    },
+    "apply_or_official_url": {
+      "evidence": "irst Phase of Personality Test from Commission’s website at https://psc.wb.gov.in/ will commence on and from the 18th November, 2026. Candidates are requested to",
+      "source": "rule",
+      "value": "https://psc.wb.gov.in/"
+    },
+    "apply_url": {
+      "evidence": "https://psc.wb.gov.in/",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://psc.wb.gov.in/"
+    },
+    "exam_date": {
+      "evidence": "Date of Personality Test 25-11-2026 to 27-11-2026 ... 07-12-2026 to 31-12-2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "25-11-2026 to 31-12-2026"
+    },
+    "post_names": {
+      "evidence": "MISCELLANEOUS SERVICES RECRUITMENT EXAMINATION, 2023",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Miscellaneous Services"
+      ]
+    }
+  },
+  "first_seen": "2026-11-10T12:48:32+00:00",
+  "id": "1e7d390341b1",
+  "kind": "notification",
+  "org": "WBPSC",
+  "pdf": {
+    "bytes": 246621,
+    "pages": 1,
+    "sha256": "df8541be4be2b2dc2ca90bf6ddd5970b41485ebf8ddb20447c26fe30a169efae",
+    "text_kind": "text"
+  },
+  "source_id": "wbpsc-home",
+  "status": "pending_review",
+  "title": "IMPORTANT NOTICE FOR RECRUITMENT TO THE POST OF DEPUTY DIRECTOR OF TECHNICAL EDUCATION AND TRAINING IN WEST BENGAL GENERAL SERVICE IN THE DIRECTORATE OF TECHNICAL EDUCATION AND TRAINING UNDER THE DEPARTMENT OF TECHNICAL EDUCATION, TRAINING AND SKILL DEVELOPMENT, GOVT. OF W.B. (VIDE COMMISSION'S ADVT",
+  "url": "https://psc.wb.gov.in/Download?param1=An_20261110180757_Announcement_downloading_CallLetters_MSRE.pdf&param2=advertisement"
+}
