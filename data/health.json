@@ -3,7 +3,7 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 8,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "army-home": {
     "consecutive_failures": 0,
@@ -17,23 +17,23 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 9,
-    "last_ok": "2026-11-10T15:52:29+00:00"
+    "last_ok": "2026-11-10T16:24:25+00:00"
   },
   "bpssc-notices": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 8,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "bsf-recruitment": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 14,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "bsf-vacancies": {
-    "consecutive_failures": 0,
-    "last_error": "",
+    "consecutive_failures": 1,
+    "last_error": "ReadTimeout: HTTPSConnectionPool(host='bsf.mha.gov.in', port=443): Read timed out. (read timeout=30)",
     "last_links": 30,
     "last_ok": "2026-11-10T15:48:45+00:00"
   },
@@ -42,62 +42,62 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 906,
-    "last_ok": "2026-11-10T15:52:29+00:00"
+    "last_ok": "2026-11-10T16:24:25+00:00"
   },
   "cgpsc-adverts": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 128,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "cgpsc-results": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 241,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "cisf-recruitment": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 9,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "coast-guard": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 2,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "crpf-recruitment": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 67,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "csbc-home": {
     "cert_repair": "SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)",
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 185,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "ctet-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 13,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "cwc-careers": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 2,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "delhi-police": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 5,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "drdo-careers": {
     "consecutive_failures": 578,
@@ -107,7 +107,7 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 10,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "employment-news": {
     "consecutive_failures": 0,
@@ -120,40 +120,40 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 54,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "esic-recruitment": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 14,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "haryana-police": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 2,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "hpsc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 25,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "hssc-adverts": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 10,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "hssc-notices": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 10,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "iaf-agniveer": {
-    "consecutive_failures": 633,
+    "consecutive_failures": 634,
     "last_error": "HTTPError: 503 Server Error: Service Unavailable for url: https://agnipathvayu.cdac.in/AV"
   },
   "ibps-home": {
@@ -161,19 +161,19 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 2,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "indiapost-vacancies": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 1,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "isro-careers": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 1,
-    "last_ok": "2026-11-10T15:52:29+00:00"
+    "last_ok": "2026-11-10T16:24:25+00:00"
   },
   "itbp-recruitment": {
     "consecutive_failures": 1,
@@ -186,70 +186,70 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 8,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "jkssb-adverts": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 47,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "jkssb-results": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 116,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "jpsc-notices": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 16,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "kvs-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 36,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "lic-careers": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 67,
-    "last_ok": "2026-11-10T15:52:29+00:00"
+    "last_ok": "2026-11-10T16:24:25+00:00"
   },
   "mha-vacancies": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 17,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "mpesb-home": {
     "cert_repair": "certificate has no AIA issuer link",
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 0,
-    "last_ok": "2026-11-10T15:48:45+00:00",
+    "last_ok": "2026-11-10T16:18:48+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
   },
   "mppsc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 35,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "mpsc-adverts": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 0,
-    "last_ok": "2026-11-10T15:48:45+00:00",
+    "last_ok": "2026-11-10T16:18:48+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
   },
   "mpsc-results": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 0,
-    "last_ok": "2026-11-10T15:48:45+00:00",
+    "last_ok": "2026-11-10T16:18:48+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
   },
   "nabard-careers": {
@@ -257,50 +257,50 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 225,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "navy-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 1,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "nta-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 842,
-    "last_ok": "2026-11-10T15:52:29+00:00"
+    "last_ok": "2026-11-10T16:24:25+00:00"
   },
   "ppsc-notices": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 687,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "psssb-group-c": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 5,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "rajasthan-hc": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 36,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "rbi-opportunities": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 0,
-    "last_ok": "2026-11-10T15:48:45+00:00",
+    "last_ok": "2026-11-10T16:18:48+00:00",
     "warning": "page loaded but no notice links found — layout may have changed"
   },
   "rpsc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 197,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "rrb-cdg": {
     "cert_repair": "h url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'rrbcdg.gov.in'. (_ssl.c:1010)\")))",
@@ -311,16 +311,16 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 71,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "rrc-cr": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 1,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "rrc-nr": {
-    "consecutive_failures": 8,
+    "consecutive_failures": 9,
     "last_error": "HTTPError: 403 Client Error: Forbidden for url: https://rrcnr.org/",
     "last_links": 297,
     "last_ok": "2026-11-10T11:18:25+00:00"
@@ -329,104 +329,104 @@
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 512,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "rssb-home": {
     "cert_repair": "SSLError: [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1010)",
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 10,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "sbi-careers": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 20,
-    "last_ok": "2026-11-10T15:52:29+00:00"
+    "last_ok": "2026-11-10T16:24:25+00:00"
   },
   "sci-recruitment": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 112,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "ssc-notice-board": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 11,
-    "last_ok": "2026-11-10T15:52:29+00:00"
+    "last_ok": "2026-11-10T16:24:25+00:00"
   },
   "tnpsc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 20,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "ukpsc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 21,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "ukpsc-results": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 29,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "uksssc-recruitment": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 12,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "uksssc-results": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 12,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "upessc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 6,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "uppbpb-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 4,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "uppsc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 36,
-    "last_ok": "2026-11-10T15:52:29+00:00"
+    "last_ok": "2026-11-10T16:24:25+00:00"
   },
   "upsc-active-exams": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 2,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "upsc-whats-new": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 40,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "upsssc-home": {
     "cert_repair": "SSLError: [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1010)",
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 27,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   },
   "wbpsc-home": {
     "consecutive_failures": 0,
     "last_error": "",
     "last_links": 188,
-    "last_ok": "2026-11-10T15:48:45+00:00"
+    "last_ok": "2026-11-10T16:18:48+00:00"
   }
 }
