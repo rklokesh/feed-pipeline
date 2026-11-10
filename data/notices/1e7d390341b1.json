@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://psc.wb.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-25",
+    "last_date": null,
+    "list": true,
+    "posts": "Miscellaneous Services",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "WBPSC has announced the e-call letters and document verification schedule for the first phase of the Miscellaneous Services Examination 2023 personality test. Candidates should download their call letters and submit required documents on time.",
+    "summary_hi": "डब्ल्यूबीपीएससी ने मिसलेनियस सर्विसेज परीक्षा 2023 के पहले चरण के व्यक्तित्व परीक्षण के लिए ई-कॉल लेटर और दस्तावेज सत्यापन अनुसूची की घोषणा कर दी है। उम्मीदवारों को समय पर अपने कॉल लेटर डाउनलोड करने चाहिए और आवश्यक दस्तावेज जमा करने चाहिए।",
+    "title_en": "WBPSC Miscellaneous Services Exam Admit Card 2026 – PT Schedule",
+    "title_hi": "डब्ल्यूबीपीएससी मिसलेनियस सर्विसेज परीक्षा 2026 एडमिट कार्ड – साक्षात्कार अनुसूची",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -42,16 +59,234 @@
   },
   "first_seen": "2026-11-10T12:48:32+00:00",
   "id": "1e7d390341b1",
+  "issue": 1202,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-10",
   "org": "WBPSC",
+  "page": {
+    "after_en": [
+      "Appearance for the Personality Test on the assigned date and time",
+      "Final merit list preparation and recommendation for appointment"
+    ],
+    "after_hi": [
+      "निर्धारित तिथि और समय पर व्यक्तित्व परीक्षण के लिए उपस्थित होना",
+      "अंतिम मेरिट सूची तैयार करना और नियुक्ति के लिए सिफारिश करना"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://psc.wb.gov.in/",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check your interview date and note the corresponding document submission period.",
+      "Download the e-call letter starting 18 November 2026.",
+      "Compile all necessary documents into a single PDF file.",
+      "Email the PDF to dsconpscmsredocuments@gmail.com well before the deadline."
+    ],
+    "checklist_hi": [
+      "अपनी साक्षात्कार तिथि की जांच करें और संबंधित दस्तावेज जमा करने की अवधि को नोट करें।",
+      "18 नवंबर 2026 से ई-कॉल लेटर डाउनलोड करें।",
+      "सभी आवश्यक दस्तावेजों को एक ही पीडीएफ फाइल में संकलित करें।",
+      "अंतिम तिथि से पहले dsconpscmsredocuments@gmail.com पर पीडीएफ ईमेल करें।"
+    ],
+    "conducted_by_en": "Public Service Commission, West Bengal (WBPSC)",
+    "conducted_by_hi": "लोक सेवा आयोग, पश्चिम बंगाल",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस तिथि",
+        "value_en": "10 Nov 2026",
+        "value_hi": "10 नवंबर 2026"
+      },
+      {
+        "label_en": "E-Call Letter Available From",
+        "label_hi": "ई-कॉल लेटर उपलब्ध होने की तिथि",
+        "value_en": "18 Nov 2026",
+        "value_hi": "18 नवंबर 2026"
+      },
+      {
+        "label_en": "Personality Test Dates",
+        "label_hi": "व्यक्तित्व परीक्षण तिथियां",
+        "value_en": "25 Nov 2026 to 31 Dec 2026",
+        "value_hi": "25 नवंबर 2026 से 31 दिसंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "All required certificates and documents combined into a single PDF file for online verification"
+    ],
+    "documents_hi": [
+      "ऑनलाइन सत्यापन के लिए सभी आवश्यक प्रमाण पत्र और दस्तावेज एक ही पीडीएफ फाइल में संयुक्त किए गए"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-11-25",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is the final stage of selection for candidates who cleared the written examinations for various posts under the Miscellaneous Services Recruitment Examination conducted by the Public Service Commission, West Bengal.",
+        "a_hi": "यह पश्चिम बंगाल लोक सेवा आयोग द्वारा आयोजित मिसलेनियस सर्विसेज भर्ती परीक्षा के तहत विभिन्न पदों के लिए लिखित परीक्षा पास करने वाले उम्मीदवारों के चयन का अंतिम चरण है।",
+        "q_en": "What is the WBPSC Miscellaneous Services Examination Personality Test?",
+        "q_hi": "डब्ल्यूबीपीएससी मिसलेनियस सर्विसेज परीक्षा व्यक्तित्व परीक्षण क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Document Submission Email",
+        "label_hi": "दस्तावेज़ जमा करने का ईमेल",
+        "value_en": "dsconpscmsredocuments@gmail.com",
+        "value_hi": "dsconpscmsredocuments@gmail.com"
+      },
+      {
+        "label_en": "Commission Office Address",
+        "label_hi": "आयोग कार्यालय का पता",
+        "value_en": "161-A, S. P. Mukherjee Road, Kolkata – 700 026 (9th floor)",
+        "value_hi": "161-ए, एस. पी. मुखर्जी रोड, कोलकाता – 700 026 (9वीं मंजिल)"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The e-call letters for the Phase-I personality test can be downloaded from the official website starting 18 November 2026.",
+        "a_hi": "प्रथम चरण के व्यक्तित्व परीक्षण के लिए ई-कॉल लेटर 18 नवंबर 2026 से आधिकारिक वेबसाइट से डाउनलोड किए जा सकते हैं।",
+        "q_en": "When can I download the WBPSC Miscellaneous Services Exam e-call letter?",
+        "q_hi": "मैं डब्ल्यूबीपीएससी मिसलेनियस सर्विसेज परीक्षा का ई-कॉल लेटर कब डाउनलोड कर सकता हूं?"
+      },
+      {
+        "a_en": "The Phase-I Personality Test is scheduled to be held from 25 November 2026 to 31 December 2026.",
+        "a_hi": "प्रथम चरण का व्यक्तित्व परीक्षण 25 नवंबर 2026 से 31 दिसंबर 2026 तक आयोजित होने निर्धारित है।",
+        "q_en": "What are the dates for the Phase-I Personality Test?",
+        "q_hi": "प्रथम चरण के व्यक्तित्व परीक्षण की तिथियां क्या हैं?"
+      },
+      {
+        "a_en": "You must send your documents in a single PDF file to the email address dsconpscmsredocuments@gmail.com.",
+        "a_hi": "आपको अपने दस्तावेज एक ही पीडीएफ फाइल में ईमेल पते dsconpscmsredocuments@gmail.com पर भेजने होंगे।",
+        "q_en": "Where should I send my documents for online verification?",
+        "q_hi": "मुझे ऑनलाइन सत्यापन के लिए अपने दस्तावेज कहां भेजने चाहिए?"
+      },
+      {
+        "a_en": "If you fail to send the required documents within the stipulated time, you will not be interviewed, and your candidature will be liable to be cancelled.",
+        "a_hi": "यदि आप निर्धारित समय के भीतर आवश्यक दस्तावेज भेजने में विफल रहते हैं, तो आपका साक्षात्कार नहीं लिया जाएगा और आपकी उम्मीदवारी रद्द की जा सकती है।",
+        "q_en": "What happens if I fail to submit documents within the given time?",
+        "q_hi": "यदि मैं दिए गए समय के भीतर दस्तावेज जमा करने में विफल रहता हूं तो क्या होगा?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "WBPSC Miscellaneous Services Exam Admit Card 2026 – PT Schedule",
+    "h1_hi": "डब्ल्यूबीपीएससी मिसलेनियस सर्विसेज परीक्षा 2026 एडमिट कार्ड – साक्षात्कार अनुसूची",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Go to the official website at https://psc.wb.gov.in/",
+      "Click on the link to download the e-Call Letter for the Miscellaneous Services Recruitment Examination, 2023 Personality Test.",
+      "Enter your login credentials to access and download your call letter.",
+      "Prepare your documents in a single PDF file and email it to dsconpscmsredocuments@gmail.com within the specified date range based on your interview date."
+    ],
+    "how_hi": [
+      "आधिकारिक वेबसाइट https://psc.wb.gov.in/ पर जाएं।",
+      "मिसलेनियस सर्विसेज भर्ती परीक्षा, 2023 व्यक्तित्व परीक्षण के लिए ई-कॉल लेटर डाउनलोड करने के लिंक पर क्लिक करें।",
+      "अपना कॉल लेटर देखने और डाउनलोड करने के लिए अपनी लॉगिन जानकारी दर्ज करें।",
+      "अपने दस्तावेजों को एक ही पीडीएफ फाइल में तैयार करें और अपनी साक्षात्कार तिथि के आधार पर निर्धारित तिथि सीमा के भीतर dsconpscmsredocuments@gmail.com पर ईमेल करें।"
+    ],
+    "intro_en": "The Public Service Commission, West Bengal (WBPSC) has issued an important notice regarding the Phase-I Personality Test for the Miscellaneous Services Recruitment Examination, 2023 (Advt. No. 11/2023). Candidates appearing for the personality test scheduled between 25 November 2026 and 31 December 2026 can download their e-call letters from the official website starting 18 November 2026. Candidates are also strictly required to submit their documents in a single PDF file to the designated email address according to their interview date batch.",
+    "intro_hi": "पश्चिम बंगाल लोक सेवा आयोग (डब्ल्यूबीपीएससी) ने मिसलेनियस सर्विसेज भर्ती परीक्षा, 2023 (विज्ञापन संख्या 11/2023) के प्रथम चरण के व्यक्तित्व परीक्षण के संबंध में एक महत्वपूर्ण नोटिस जारी किया है। 25 नवंबर 2026 से 31 दिसंबर 2026 के बीच निर्धारित व्यक्तित्व परीक्षण के लिए उपस्थित होने वाले उम्मीदवार 18 नवंबर 2026 से आधिकारिक वेबसाइट से अपने ई-कॉल लेटर डाउनलोड कर सकते हैं। उम्मीदवारों को यह भी निर्देश दिया जाता है कि वे अपनी साक्षात्कार तिथि के अनुसार निर्धारित ईमेल पते पर एक ही पीडीएफ फाइल में अपने दस्तावेज अवश्य भेजें।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not miss the deadline for emailing your documents in a single PDF file according to your specific interview date batch."
+    ],
+    "mistakes_hi": [
+      "अपनी विशिष्ट साक्षात्कार तिथि बैच के अनुसार अपने दस्तावेजों को एक ही पीडीएफ फाइल में ईमेल करने की अंतिम तिथि न चूकें।"
+    ],
+    "not_en": [
+      "Candidates who fail to send the required documents via email within the stipulated time period will not be interviewed and their candidature will be cancelled straightway."
+    ],
+    "not_hi": [
+      "जो उम्मीदवार निर्धारित समय सीमा के भीतर ईमेल के माध्यम से आवश्यक दस्तावेज भेजने में विफल रहते हैं, उनका साक्षात्कार नहीं लिया जाएगा और उनकी उम्मीदवारी सीधे रद्द कर दी जाएगी।"
+    ],
+    "notice_date": "2026-11-10",
+    "official_site": "https://psc.wb.gov.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post / Exam",
+        "label_hi": "पद / परीक्षा",
+        "value_en": "Miscellaneous Services Recruitment Examination, 2023",
+        "value_hi": "मिसलेनियस सर्विसेज भर्ती परीक्षा, 2023"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "11/2023",
+        "value_hi": "11/2023"
+      },
+      {
+        "label_en": "Stage",
+        "label_hi": "चरण",
+        "value_en": "Personality Test (Phase-I)",
+        "value_hi": "व्यक्तित्व परीक्षण (प्रथम चरण)"
+      },
+      {
+        "label_en": "E-Call Letter Download Date",
+        "label_hi": "ई-कॉल लेटर डाउनलोड तिथि",
+        "value_en": "From 18 Nov 2026",
+        "value_hi": "18 नवंबर 2026 से"
+      },
+      {
+        "label_en": "Personality Test Dates",
+        "label_hi": "व्यक्तित्व परीक्षण तिथियां",
+        "value_en": "25 Nov 2026 to 31 Dec 2026",
+        "value_hi": "25 नवंबर 2026 से 31 दिसंबर 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Written Examination",
+      "Personality Test (Phase-I)"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा",
+      "व्यक्तित्व परीक्षण (प्रथम चरण)"
+    ],
+    "share_card": {
+      "headline_en": "PT Schedule 2026",
+      "headline_hi": "साक्षात्कार अनुसूची 2026",
+      "kind": "sched",
+      "line_en": "Miscellaneous Services PT",
+      "line_hi": "मिसलेनियस सर्विसेज पीटी",
+      "posts": null
+    },
+    "status_en": "Personality test schedule and e-call letter notice released",
+    "status_hi": "व्यक्तित्व परीक्षण अनुसूची और ई-कॉल लेटर नोटिस जारी",
+    "summary_en": "West Bengal Public Service Commission has released the e-call letter download date and document verification instructions for the Phase-I personality test of the Miscellaneous Services Examination 2023. Candidates can download their call letters from 18 November 2026 and must submit their required documents via email within the specified schedule.",
+    "summary_hi": "पश्चिम बंगाल लोक सेवा आयोग ने मिसलेनियस सर्विसेज परीक्षा 2023 के प्रथम चरण के व्यक्तित्व परीक्षण के लिए ई-कॉल लेटर डाउनलोड करने की तिथि और दस्तावेज सत्यापन के निर्देश जारी कर दिए हैं। उम्मीदवार 18 नवंबर 2026 से अपने कॉल लेटर डाउनलोड कर सकते हैं और निर्धारित समय-सारणी के भीतर अपने आवश्यक दस्तावेज ईमेल के माध्यम से भेज सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Phase-I Personality Test",
+        "detail_hi": "प्रथम चरण व्यक्तित्व परीक्षण",
+        "post_en": "Miscellaneous Services",
+        "post_hi": "मिसलेनियस सर्विसेज",
+        "total": ""
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates who qualified for the Phase-I Personality Test of WBPSC Miscellaneous Services Examination 2023"
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जिन्होंने डब्ल्यूबीपीएससी मिसलेनियस सर्विसेज परीक्षा 2023 के प्रथम चरण के व्यक्तित्व परीक्षण के लिए क्वालीफाई किया है"
+    ]
+  },
   "pdf": {
     "bytes": 246621,
     "pages": 1,
     "sha256": "df8541be4be2b2dc2ca90bf6ddd5970b41485ebf8ddb20447c26fe30a169efae",
     "text_kind": "text"
   },
+  "published_at": "2026-11-10T12:54:33Z",
+  "qual": [
+    "graduate"
+  ],
+  "slug": "wbpsc-miscellaneous-services-exam-admit-card-2026-pt-schedule",
   "source_id": "wbpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "IMPORTANT NOTICE FOR RECRUITMENT TO THE POST OF DEPUTY DIRECTOR OF TECHNICAL EDUCATION AND TRAINING IN WEST BENGAL GENERAL SERVICE IN THE DIRECTORATE OF TECHNICAL EDUCATION AND TRAINING UNDER THE DEPARTMENT OF TECHNICAL EDUCATION, TRAINING AND SKILL DEVELOPMENT, GOVT. OF W.B. (VIDE COMMISSION'S ADVT",
   "url": "https://psc.wb.gov.in/Download?param1=An_20261110180757_Announcement_downloading_CallLetters_MSRE.pdf&param2=advertisement"
 }
