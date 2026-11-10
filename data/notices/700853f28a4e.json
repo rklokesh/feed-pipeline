@@ -1,0 +1,105 @@
+{
+  "board_url": "https://www.esic.gov.in/recruitments",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "……..…………………………. 423-A/12/28/2026(T.F.) Date: #Approved date Advertisement No. 15 of 2026 Recruitment of Teaching Faculty on contract basis at ESIC Medical College & Hos",
+      "source": "rule",
+      "value": "15 of 2026"
+    },
+    "age_limit": {
+      "evidence": {
+        "age_limit": "Age Limit as on 18.11.2026: 69 Years (Not Exceeding)"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": "2026-11-18",
+        "max": 69,
+        "min": null
+      }
+    },
+    "apply_last": {
+      "evidence": {
+        "apply_last": "by 12:00 Noon of 18.11.2026."
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-18"
+    },
+    "apply_url": {
+      "evidence": {
+        "apply_url": "www.mcpatna.esic.gov.in"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "www.mcpatna.esic.gov.in"
+    },
+    "exam_date": {
+      "evidence": {
+        "exam_date": "Date of interview: 19.11.2026 (Pre and Para Clinical), 20.10.2026 (Clinical Department)"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "19.11.2026 & 20.10.2026"
+    },
+    "fee": {
+      "evidence": {
+        "fee": "SC /ST/ Female/ ESIC (Regular Employee), Defence Ex-Servicemen & PH Candidate: Nil\nAll Other categories: Rs. 500/-"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "female": 0,
+        "general": 500,
+        "obc": 500,
+        "pwd": 0,
+        "sc_st": 0
+      }
+    },
+    "fee_last": {
+      "evidence": {
+        "fee_last": "by 12:00 Noon of 18.11.2026."
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-18"
+    },
+    "post_names": {
+      "evidence": {
+        "post_names": "Recruitment of Teaching Faculty on contract basis at ESIC Medical College & Hospital, Bihta, Patna."
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Professor",
+        "Associate Professor",
+        "Assistant Professor"
+      ]
+    },
+    "qualification": {
+      "evidence": {
+        "qualification": "Educational Qualifications: As per NMC (MCI) guidelines."
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "As per NMC (MCI) guidelines."
+    }
+  },
+  "first_seen": "2026-11-10T06:18:04+00:00",
+  "id": "700853f28a4e",
+  "kind": "notification",
+  "org": "ESIC",
+  "pdf": {
+    "bytes": 483338,
+    "pages": 3,
+    "sha256": "56cecb4df04b8abfeefddb3fcd1c9ed9b3bf63d898bcabca9e26540cad4c4176",
+    "text_kind": "text"
+  },
+  "source_id": "esic-recruitment",
+  "status": "pending_review",
+  "title": "1 ESIC Medical College and Hospital, Bihta, Patna- 801103 Recruitment of Teaching Faculty on contract basis at ESIC Medical College & Hospital, Bihta, Patna- PDF size:(472.01 KB) . 2026-11-10 Interview(2026-11-19) 12738/2026",
+  "url": "https://esic.gov.in/attachments/recruitmentfile/Recruitment_of_Teaching_Faculty_on_contract_basis_at_ESIC_Medical_College_amp_Hospital_Bihta_Patna_1794290802.pdf"
+}

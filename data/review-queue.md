@@ -1,9 +1,9 @@
 # Review queue — 3 pending
 
-_Updated 2026-11-10T05:53:36+00:00_
+_Updated 2026-11-10T06:20:20+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-11-10 | KVS | other | दिनांक 01.07.2026 से परिशोधित महंगाई रहाट के भुगतान के संबंध में । नई | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111037.pdf) |
-| 2026-11-10 | ESIC | result | 2 Recruitment Branch NOTICE - Recruitment of Assistant Professors in ESIC PGIMSRS & ESIC M | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/NOTICE_Recruitment_of_Assistant_Professors_in_ESIC_PGIMSRS_amp_ESIC_Medical_Colleges_on_direct_recruitment_basis_Advertisement_dated_24_07_2025_Release_of_Result_of_a_Withheld_candidate_1794289494.pdf) |
-| 2026-11-10 | ESIC | result | 1 ESIC MCH Faridabad Result for recruitment of Faculty (Broad Specialty) on contractual ba | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/Result_for_recruitment_of_Faculty_Broad_Specialty_on_contractual_basis_for_ESIC_Medical_College_Hospital_Faridabad_1794289666.pdf) |
+| 2026-11-10 | KVS | other | ई-पेंशन पोर्टल के माध्यम से पेंशन प्रकरणों का निपटान कराने वाले भारतीय बैंक से पेंशन प्राप | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111040.pdf) |
+| 2026-11-10 | ESIC | notification | 1 ESIC Medical College and Hospital, Bihta, Patna- 801103 Recruitment of Teaching Faculty  | 2026-11-18 (AI) | — | None–69 (AI) | female 0, general 500, obc 500, pwd 0, sc_st 0 (AI) | [open](https://esic.gov.in/attachments/recruitmentfile/Recruitment_of_Teaching_Faculty_on_contract_basis_at_ESIC_Medical_College_amp_Hospital_Bihta_Patna_1794290802.pdf) |
+| 2026-11-10 | KVS | other | दिनांक 01.07.2026 से परिशोधित महंगाई रहाट के भुगतान के संबंध में । नई | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111058.pdf) |
