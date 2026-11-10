@@ -1,0 +1,90 @@
+{
+  "board_url": "https://www.esic.gov.in/recruitments",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": {
+        "advt_no": "07/2026"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "07/2026"
+    },
+    "age_limit": {
+      "evidence": {
+        "age_limit": "Not exceeding 45 years as on the date of interview."
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": "2026-11-20",
+        "max": 45,
+        "min": null
+      }
+    },
+    "apply_or_official_url": {
+      "evidence": "notification and instructions are available on our website https://www.esic.gov.in/recruitments. Corrigenda, if any, will be published only on our website. वि(cid:10)वि(cid:11)",
+      "source": "rule",
+      "value": "https://www.esic.gov.in/recruitments"
+    },
+    "apply_url": {
+      "evidence": {
+        "apply_url": "https://www.esic.gov.in/recruitments"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://www.esic.gov.in/recruitments"
+    },
+    "exam_date": {
+      "evidence": {
+        "exam_date": "DATE OF INTERVIEW: 20-11-2026"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-20"
+    },
+    "post_names": {
+      "evidence": {
+        "post_names": "WALK IN INTERVIEW ON 20-11-2026 FOR ENGAGEMENT OF SPECIALISTS (FULL TIME/PART TIME) & SENIOR RESIDENTS (1 YEAR)"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Specialist (Full time/Part time)",
+        "Senior Residents (1 Year)"
+      ]
+    },
+    "qualification": {
+      "evidence": {
+        "qualification": "Post Graduate Degree/DNB, or Diploma in concerned specialty after MBBS with TCMC registration is required."
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "Post Graduate Degree/DNB, or Diploma in concerned specialty after MBBS with TCMC registration."
+    },
+    "total_vacancies": {
+      "evidence": {
+        "total_vacancies": "Total 9+1* (for Senior Residents) and 06 (for Specialists)"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 16
+    }
+  },
+  "first_seen": "2026-11-10T10:18:21+00:00",
+  "id": "3a4c5a955554",
+  "kind": "notification",
+  "org": "ESIC",
+  "pdf": {
+    "bytes": 225438,
+    "pages": 8,
+    "sha256": "e521a384585787c283faf1498b2b92ebcf0ee230ea5d4d0fc3245ca208496de4",
+    "text_kind": "text"
+  },
+  "source_id": "esic-recruitment",
+  "status": "pending_review",
+  "title": "1 ESIC Hospital Ezhukone,Kerala WALK IN INTERVIEW ON 20-11-2026 FOR ENGAGEMENT OF SPECIALISTS (FULL TIME/PART TIME) & SENIOR RESIDENTS (1 YEAR) ON CONTRACTUAL BASIS FOR ESIC HOSPITAL, EZHUKONE, KOLLAM- PDF size:(220.15 KB) . 2026-11-10 Interview(2026-11-20) 12739/2026",
+  "url": "https://esic.gov.in/attachments/recruitmentfile/WALK_IN_INTERVIEW_ON_20_11_2026_FOR_ENGAGEMENT_OF_SPECIALISTS_FULL_TIME_PART_TIME_amp_SENIOR_RESIDENTS_1_YEAR_ON_CONTRACTUAL_BASIS_FOR_ESIC_HOSPITAL_EZHUKONE_KOLLAM_1794305819.pdf"
+}
