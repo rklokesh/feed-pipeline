@@ -1,9 +1,8 @@
-# Review queue — 3 pending
+# Review queue — 2 pending
 
-_Updated 2026-11-10T06:20:20+00:00_
+_Updated 2026-11-10T06:51:11+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-11-10 | KVS | other | ई-पेंशन पोर्टल के माध्यम से पेंशन प्रकरणों का निपटान कराने वाले भारतीय बैंक से पेंशन प्राप | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111040.pdf) |
-| 2026-11-10 | ESIC | notification | 1 ESIC Medical College and Hospital, Bihta, Patna- 801103 Recruitment of Teaching Faculty  | 2026-11-18 (AI) | — | None–69 (AI) | female 0, general 500, obc 500, pwd 0, sc_st 0 (AI) | [open](https://esic.gov.in/attachments/recruitmentfile/Recruitment_of_Teaching_Faculty_on_contract_basis_at_ESIC_Medical_College_amp_Hospital_Bihta_Patna_1794290802.pdf) |
-| 2026-11-10 | KVS | other | दिनांक 01.07.2026 से परिशोधित महंगाई रहाट के भुगतान के संबंध में । नई | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111058.pdf) |
+| 2026-11-10 | NTA | notification | Correction in the particulars of the online Application Form of Joint CSIR-UGC NET Decembe | — | — | — | — | [open](https://nta.ac.in/Download/Notice/Notice_20261110115638.pdf) |
+| 2026-11-10 | UPSC | result | Examination Time Table: Engineering Services (Preliminary) Examination, 2027 | — | — | — | — | [open](https://www.upsc.gov.in/whats-new/Engineering%20Services%20%28Preliminary%29%20Examination%2C%202027/Examination%20Time%20Table) |
