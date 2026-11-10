@@ -1,5 +1,20 @@
 {
   "board_url": "https://kvs.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal circular regarding life certificate submission procedure for KVS pensioners, not a job vacancy or recruitment notice",
+    "summary_en": "KVS issued a notice regarding the procedure and options for submitting the Annual Life Certificate for pensioners getting pension through Indian Bank.",
+    "summary_hi": "केन्द्रीय विद्यालय संगठन ने इंडियन बैंक के माध्यम से पेंशन प्राप्त करने वाले पेंशनभोगियों के लिए वार्षिक जीवन प्रमाण पत्र जमा करने की प्रक्रिया के संबंध में सूचना जारी की है।",
+    "title_en": "KVS Pensioners Life Certificate Submission Procedure",
+    "title_hi": "केन्द्रीय विद्यालय संगठन पेंशनभोगियों के लिए जीवन प्रमाण पत्र जमा करने की प्रक्रिया",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -21,7 +36,7 @@
     "text_kind": "text"
   },
   "source_id": "kvs-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "दिनांक 01.07.2026 से परिशोधित महंगाई रहाट के भुगतान के संबंध में । नई",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111037.pdf"
 }
