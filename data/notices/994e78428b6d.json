@@ -1,20 +1,6 @@
 {
   "board_url": "https://kvs.gov.in/",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": null,
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "Internal circular regarding dearness relief payment for existing employees/pensioners, not a recruitment or admission notice",
-    "summary_en": "Kendriya Vidyalaya Sangathan issued a circular regarding the payment of revised dearness relief.",
-    "summary_hi": "केन्द्रीय विद्यालय संगठन ने संशोधित महंगाई राहत के भुगतान के संबंध में परिपत्र जारी किया है।",
-    "title_en": "KVS Dearness Relief Payment Notice",
-    "title_hi": "केन्द्रीय विद्यालय संगठन महंगाई राहत भुगतान सूचना",
-    "type": "Update",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -27,10 +13,10 @@
     "bytes": 43238,
     "pages": 1,
     "sha256": "c93477936d9677a17a6c8f9b29db0c877ceea895c0f4f3e63be311f149a477e7",
-    "text_kind": "text"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "kvs-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "दिनांक 01.07.2026 से परिशोधित महंगाई रहाट के भुगतान के संबंध में । नई",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111058.pdf"
 }
