@@ -1,5 +1,27 @@
 {
+  "auto_published": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-10-27",
+    "last_date": "2026-11-17",
+    "list": true,
+    "posts": "Junior Engineer, Depot Material Superintendent, Chemical & Metallurgical Assistant",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "RRB has released the CBT-I answer keys and objection tracker for Junior Engineer and other posts. Candidates can view question papers and raise objections online.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने कनिष्ठ अभियंता और अन्य पदों के लिए सीबीटी-1 की उत्तर कुंजी और आपत्ति ट्रैकर जारी कर दिया है। उम्मीदवार ऑनलाइन आपत्ति दर्ज करा सकते हैं।",
+    "title_en": "RRB JE Answer Key 2026 – CBT-1 Objection Tracker Link",
+    "title_hi": "आरआरबी जेई आंसर की 2026 – सीबीटी-1 आपत्ति ट्रैकर लिंक",
+    "type": "Answer key",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "rrb-je-2026",
+    "name_en": "RRB JE 2026",
+    "name_hi": "आरआरबी जेई 2026"
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -84,16 +106,263 @@
   },
   "first_seen": "2026-11-10T13:18:34+00:00",
   "id": "6af1e838e840",
+  "issue": 1204,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-10",
   "org": "RRB",
+  "page": {
+    "after_en": [
+      "Review of candidate objections by experts",
+      "Release of final answer key and subsequent result declaration based on performance"
+    ],
+    "after_hi": [
+      "विशेषज्ञों द्वारा उम्मीदवार की आपत्तियों की समीक्षा",
+      "अंतिम उत्तर कुंजी जारी करना और प्रदर्शन के आधार पर परिणाम की घोषणा"
+    ],
+    "age": [],
+    "apply_start": "2026-11-11",
+    "apply_url": "https://rrb.indianrailways.gov.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check your responses and question paper carefully",
+      "Ensure objections are supported by valid facts",
+      "Complete fee payment before 17.11.2026"
+    ],
+    "checklist_hi": [
+      "अपने उत्तरों और प्रश्न पत्र की सावधानीपूर्वक जांच करें",
+      "सुनिश्चित करें कि आपत्तियां वैध तथ्यों पर आधारित हैं",
+      "17.11.2026 से पहले शुल्क भुगतान पूरा करें"
+    ],
+    "conducted_by_en": "Railway Recruitment Boards (RRB)",
+    "conducted_by_hi": "रेलवे भर्ती बोर्ड (आरआरबी)",
+    "dates": [
+      {
+        "label_en": "CBT-I Exam Dates",
+        "label_hi": "सीबीटी-1 परीक्षा तिथियां",
+        "value_en": "27.10.2026, 28.10.2026 & 02.11.2026",
+        "value_hi": "27.10.2026, 28.10.2026 और 02.11.2026"
+      },
+      {
+        "label_en": "Answer Key & Objection Window Starts",
+        "label_hi": "उत्तर कुंजी और आपत्ति विंडो शुरू",
+        "value_en": "11.11.2026",
+        "value_hi": "11.11.2026"
+      },
+      {
+        "label_en": "Closing Date for Objections & Payment",
+        "label_hi": "आपत्तियों और भुगतान की अंतिम तिथि",
+        "value_en": "17.11.2026 at 23:59 hrs",
+        "value_hi": "17.11.2026 को 23:59 बजे तक"
+      }
+    ],
+    "documents_en": [
+      "Login credentials (Registration Number and Password/Date of Birth)",
+      "Online payment mode details (Debit/Credit Card, UPI, Net Banking)"
+    ],
+    "documents_hi": [
+      "लॉगिन विवरण (पंजीकरण संख्या और पासवर्ड/जन्म तिथि)",
+      "ऑनलाइन भुगतान मोड विवरण (डेबिट/क्रेडिट कार्ड, यूपीआई, नेट बैंकिंग)"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-10-27",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is an online facility provided by Railway Recruitment Boards that allows candidates to check their answers against the official answer keys of the CBT-I exam and submit objections if they find any discrepancies.",
+        "a_hi": "यह रेलवे भर्ती बोर्ड द्वारा प्रदान की जाने वाली एक ऑनलाइन सुविधा है जो उम्मीदवारों को सीबीटी-1 परीक्षा की आधिकारिक उत्तर कुंजी के मुकाबले अपने उत्तरों की जांच करने और किसी भी विसंगति के मामले में आपत्ति दर्ज करने की अनुमति देती है।",
+        "q_en": "What is the RRB JE Answer Key Objection Tracker?",
+        "q_hi": "आरआरबी जेई उत्तर कुंजी आपत्ति ट्रैकर क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Fee Refund Rule",
+        "label_hi": "शुल्क वापसी का नियम",
+        "value_en": "Refunded after deduction of bank charges if objection is found correct",
+        "value_hi": "आपत्ति सही पाए जाने पर बैंक शुल्क काटकर वापस कर दिया जाएगा"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "You can view the answer key and raise objections from 11.11.2026 to 17.11.2026.",
+        "a_hi": "आप 11.11.2026 से 17.11.2026 तक उत्तर कुंजी देख सकते हैं और आपत्ति दर्ज करा सकते हैं।",
+        "q_en": "When can I view the RRB JE CBT-I answer key 2026?",
+        "q_hi": "मैं आरआरबी जेई सीबीटी-1 उत्तर कुंजी 2026 कब देख सकता हूँ?"
+      },
+      {
+        "a_en": "The fee is ₹50 plus applicable bank service charges per question.",
+        "a_hi": "शुल्क ₹50 और प्रति प्रश्न लागू बैंक सेवा शुल्क है।",
+        "q_en": "What is the fee for raising objections?",
+        "q_hi": "आपत्ति दर्ज कराने का शुल्क क्या है?"
+      },
+      {
+        "a_en": "Yes, if the objection raised is found to be correct, the fee will be refunded after deduction of applicable bank charges.",
+        "a_hi": "हाँ, यदि दर्ज की गई आपत्ति सही पाई जाती है, तो लागू बैंक शुल्क काटकर शुल्क वापस कर दिया जाएगा।",
+        "q_en": "Will my objection fee be refunded?",
+        "q_hi": "क्या मेरा आपत्ति शुल्क वापस किया जाएगा?"
+      },
+      {
+        "a_en": "The last date to raise objections is 17.11.2026 up to 23:59 hrs.",
+        "a_hi": "आपत्ति दर्ज कराने की अंतिम तिथि 17.11.2026 को 23:59 बजे तक है।",
+        "q_en": "What is the last date to raise objections?",
+        "q_hi": "आपत्ति दर्ज कराने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "Junior Engineer (JE), Depot Material Superintendent (DMS), and Chemical & Metallurgical Assistant (CMA) posts.",
+        "a_hi": "कनिष्ठ अभियंता (जेई), डिपो सामग्री अधीक्षक (डीएमएस), और रासायनिक एवं धातुकर्म सहायक (सीएमए) पद।",
+        "q_en": "Which posts are covered under CEN 04/2026 CBT-I answer key?",
+        "q_hi": "सीईएन 04/2026 सीबीटी-1 उत्तर कुंजी के अंतर्गत कौन से पद शामिल हैं?"
+      },
+      {
+        "a_en": "Payments can be made via Debit Cards, Credit Cards, UPI, and Net Banking.",
+        "a_hi": "भुगतान डेबिट कार्ड, क्रेडिट कार्ड, यूपीआई और नेट बैंकिंग के माध्यम से किया जा सकता है।",
+        "q_en": "What are the modes of payment available for objection fees?",
+        "q_hi": "आपत्ति शुल्क के लिए भुगतान के कौन से तरीके उपलब्ध हैं?"
+      },
+      {
+        "a_en": "The CBT-I exam was conducted on 27.10.2026, 28.10.2026, and 02.11.2026.",
+        "a_hi": "सीबीटी-1 परीक्षा 27.10.2026, 28.10.2026 और 02.11.2026 को आयोजित की गई थी।",
+        "q_en": "When was the CBT-I exam conducted?",
+        "q_hi": "सीबीटी-1 परीक्षा कब आयोजित की गई थी?"
+      },
+      {
+        "a_en": "The link is available on the official websites of the Railway Recruitment Boards (RRB).",
+        "a_hi": "यह लिंक रेलवे भर्ती बोर्ड (आरआरबी) की आधिकारिक वेबसाइटों पर उपलब्ध है।",
+        "q_en": "Where can I access the objection tracker link?",
+        "q_hi": "मैं आपत्ति ट्रैकर लिंक कहाँ से प्राप्त कर सकता हूँ?"
+      }
+    ],
+    "fees": [
+      {
+        "amount": "₹50",
+        "cat_en": "All Candidates (per question objection fee)",
+        "cat_hi": "सभी उम्मीदवार (प्रति प्रश्न आपत्ति शुल्क)"
+      }
+    ],
+    "h1_en": "RRB JE Answer Key 2026 – CBT-1 Objection Tracker Link",
+    "h1_hi": "आरआरबी जेई आंसर की 2026 – सीबीटी-1 आपत्ति ट्रैकर लिंक",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official website of RRB.",
+      "Click on the link for viewing question papers, responses and raising objections for CEN No. 04/2026.",
+      "Log in using your credentials.",
+      "View your question paper and answer keys.",
+      "Select the question(s) you wish to object to, provide justification, and pay the fee of ₹50 per question online."
+    ],
+    "how_hi": [
+      "आरआरबी की आधिकारिक वेबसाइट पर जाएं।",
+      "सीईएन संख्या 04/2026 के लिए प्रश्न पत्र, प्रतिक्रियाएं देखने और आपत्ति दर्ज करने के लिंक पर क्लिक करें।",
+      "अपने विवरण का उपयोग करके लॉगिन करें।",
+      "अपना प्रश्न पत्र और उत्तर कुंजी देखें।",
+      "जिस प्रश्न पर आप आपत्ति करना चाहते हैं उसे चुनें, उचित कारण दें और प्रति प्रश्न ₹50 का शुल्क ऑनलाइन भुगतान करें।"
+    ],
+    "intro_en": "Railway Recruitment Boards (RRB) has activated the link for viewing question papers, responses, and answer keys, and raising objections for the 1st Stage Computer Based Test (CBT-I) under CEN No. 04/2026. The CBT-I examination for Junior Engineer (JE), Depot Material Superintendent (DMS), and Chemical & Metallurgical Assistant (CMA) posts was conducted on 27.10.2026, 28.10.2026, and 02.11.2026. Candidates can view their details and raise objections through the official website from 11.11.2026 to 17.11.2026. A prescribed fee of ₹50 per question is applicable, which will be refunded if the objection is found correct.",
+    "intro_hi": "रेलवे भर्ती बोर्ड (आरआरबी) ने सीईएन संख्या 04/2026 के अंतर्गत प्रथम चरण कंप्यूटर आधारित परीक्षा (सीबीटी-1) के लिए प्रश्न पत्र, प्रतिक्रियाएं, उत्तर कुंजी देखने और आपत्तियां दर्ज कराने का लिंक सक्रिय कर दिया है। कनिष्ठ अभियंता (जेई), डिपो सामग्री अधीक्षक (डीएमएस) और रासायनिक एवं धातुकर्म सहायक (सीएमए) पदों के लिए सीबीटी-1 परीक्षा 27.10.2026, 28.10.2026 और 02.11.2026 को आयोजित की गई थी। उम्मीदवार 11.11.2026 से 17.11.2026 तक आधिकारिक वेबसाइट के माध्यम से अपने विवरण देख सकते हैं और आपत्ति दर्ज करा सकते हैं। प्रति प्रश्न ₹50 का निर्धारित शुल्क लागू है, जो आपत्ति सही पाए जाने पर वापस कर दिया जाएगा।",
+    "last_date": "2026-11-17",
+    "mistakes_en": [
+      "Raising objections after the closing date of 17.11.2026 (23:59 hrs)",
+      "Failing to pay the correct fee of ₹50 per question"
+    ],
+    "mistakes_hi": [
+      "17.11.2026 (23:59 बजे) की अंतिम तिथि के बाद आपत्ति दर्ज कराना",
+      "प्रति प्रश्न ₹50 का सही शुल्क भुगतान करने में विफल रहना"
+    ],
+    "not_en": [
+      "Candidates who did not appear in the CBT-I exam held on 27.10.2026, 28.10.2026 & 02.11.2026"
+    ],
+    "not_hi": [
+      "जो उम्मीदवार 27.10.2026, 28.10.2026 और 02.11.2026 को आयोजित सीबीटी-1 परीक्षा में शामिल नहीं हुए थे"
+    ],
+    "notice_date": "2026-11-10",
+    "official_site": "https://rrb.indianrailways.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पदों",
+        "value_en": "Junior Engineer, Depot Material Superintendent, Chemical & Metallurgical Assistant",
+        "value_hi": "कनिष्ठ अभियंता, डिपो सामग्री अधीक्षक, रासायनिक और धातुओं के सहायक"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "CEN No. 04/2026",
+        "value_hi": "सीईएन संख्या 04/2026"
+      },
+      {
+        "label_en": "CBT-I Exam Dates",
+        "label_hi": "सीबीटी-1 परीक्षा तिथियां",
+        "value_en": "27.10.2026, 28.10.2026 & 02.11.2026",
+        "value_hi": "27.10.2026, 28.10.2026 और 02.11.2026"
+      },
+      {
+        "label_en": "Answer Key Window",
+        "label_hi": "उत्तर कुंजी विंडो",
+        "value_en": "11.11.2026 to 17.11.2026",
+        "value_hi": "11.11.2026 से 17.11.2026"
+      },
+      {
+        "label_en": "Objection Fee",
+        "label_hi": "आपत्ति शुल्क",
+        "value_en": "₹50 plus bank charges per question",
+        "value_hi": "₹50 और बैंक शुल्क प्रति प्रश्न"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "1st Stage Computer Based Test (CBT-I)",
+      "Raising objections and final answer key evaluation"
+    ],
+    "selection_hi": [
+      "प्रथम चरण कंप्यूटर आधारित परीक्षा (सीबीटी-1)",
+      "आपत्ति दर्ज कराना और अंतिम उत्तर कुंजी मूल्यांकन"
+    ],
+    "share_card": {
+      "headline_en": "Answer Key 2026",
+      "headline_hi": "उत्तर कुंजी 2026",
+      "kind": "answer",
+      "line_en": "Junior Engineer CBT-1",
+      "line_hi": "कनिष्ठ अभियंता सीबीटी-1",
+      "posts": null
+    },
+    "status_en": "Answer key released, objections open till 17 Nov 2026",
+    "status_hi": "उत्तर कुंजी जारी, 17 नवंबर 2026 तक आपत्तियां खुली हैं",
+    "summary_en": "RRB has released the CBT-I answer keys, responses, and objection tracker for Junior Engineer (JE), DMS, and CMA posts under CEN 04/2026. Candidates who appeared for the exam can view their question papers and raise objections online from 11.11.2026 to 17.11.2026.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने सीईएन 04/2026 के तहत कनिष्ठ अभियंता (जेई), डीएमएस और सीएमए पदों के लिए सीबीटी-1 उत्तर कुंजी, प्रतिक्रियाएं और आपत्ति ट्रैकर जारी कर दिया है। परीक्षा में शामिल होने वाले उम्मीदवार 11.11.2026 से 17.11.2026 तक ऑनलाइन आपत्ति दर्ज करा सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Recruitment for various posts under CEN No. 04/2026",
+        "detail_hi": "सीईएन संख्या 04/2026 के तहत विभिन्न पदों के लिए भर्ती",
+        "post_en": "Junior Engineer, Depot Material Superintendent, Chemical & Metallurgical Assistant",
+        "post_hi": "कनिष्ठ अभियंता, डिपो सामग्री अधीक्षक, रासायनिक और धातुओं के सहायक",
+        "total": null
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates who appeared for RRB CBT-I CEN 04/2026 Junior Engineer and other posts"
+    ],
+    "who_hi": [
+      "आरआरबी सीबीटी-1 सीईएन 04/2026 कनिष्ठ अभियंता और अन्य पदों की परीक्षा में शामिल होने वाले उम्मीदवार"
+    ]
+  },
   "pdf": {
     "bytes": 681773,
     "pages": 1,
     "sha256": "e1fb4131b357df2ffb0d140f7be3cd0d17c04f63be6b4c370a170b41f67adc96",
     "text_kind": "text"
   },
+  "published_at": "2026-11-10T13:23:47Z",
+  "qual": [
+    "diploma",
+    "graduate"
+  ],
+  "slug": "rrb-je-answer-key-2026-cbt-1-objection-tracker-link",
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RRB CEN 04/2026: Notice Objection Tracker CBT-I CEN 04-2026 (JE)",
   "url": "https://rrb.indianrailways.gov.in/-/image/1794316405987Notice_Objection_Tracker_CBT-I_CEN_04-2026_(JE).pdf/examsDocuments"
 }
