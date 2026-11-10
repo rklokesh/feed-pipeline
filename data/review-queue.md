@@ -1,8 +1,7 @@
-# Review queue — 2 pending
+# Review queue — 1 pending
 
-_Updated 2026-11-10T06:51:11+00:00_
+_Updated 2026-11-10T07:20:30+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-11-10 | NTA | notification | Correction in the particulars of the online Application Form of Joint CSIR-UGC NET Decembe | — | — | — | — | [open](https://nta.ac.in/Download/Notice/Notice_20261110115638.pdf) |
-| 2026-11-10 | UPSC | result | Examination Time Table: Engineering Services (Preliminary) Examination, 2027 | — | — | — | — | [open](https://www.upsc.gov.in/whats-new/Engineering%20Services%20%28Preliminary%29%20Examination%2C%202027/Examination%20Time%20Table) |
+| 2026-11-10 | RRB | update | RRB CEN 09/2026: Notice on CEN 09-2026 Iso- ENG | — | 1 | — | — | [open](https://rrb.indianrailways.gov.in/-/image/1794293702501Notice_on_CEN_09-2026_Iso-_ENG.pdf/examsDocuments) |

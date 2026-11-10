@@ -1,0 +1,32 @@
+{
+  "board_url": "https://rrb.indianrailways.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "lated Categories published on unified official RRB website (https://rrb.indianrailways.gov.in) on 05.11.2026 In partial modification of the Centralised Employment Notificati",
+      "source": "rule",
+      "value": "https://rrb.indianrailways.gov.in"
+    },
+    "total_vacancies": {
+      "evidence": "Notification (CEN) No. 09/2026, it is hereby notified that 01 (One) vacancy for Ex-Servicemen (Ex- SM) is being included against the post of Lab Assistant",
+      "source": "rule",
+      "value": 1
+    }
+  },
+  "first_seen": "2026-11-10T07:18:08+00:00",
+  "id": "7dc37dccfc58",
+  "kind": "update",
+  "org": "RRB",
+  "pdf": {
+    "bytes": 128884,
+    "pages": 1,
+    "sha256": "2e411d164b5d8dbd1bfcd04121615f82675ad5309bbced2c804e327e6b07a0ff",
+    "text_kind": "text"
+  },
+  "source_id": "rrb-unified",
+  "status": "pending_review",
+  "title": "RRB CEN 09/2026: Notice on CEN 09-2026 Iso- ENG",
+  "url": "https://rrb.indianrailways.gov.in/-/image/1794293702501Notice_on_CEN_09-2026_Iso-_ENG.pdf/examsDocuments"
+}
