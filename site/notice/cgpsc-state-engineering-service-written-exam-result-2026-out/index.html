@@ -213,6 +213,17 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .lead { margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
+/* phones: Share / PDF / Report as full-width pill buttons (WhatsApp one green) */
+@media (max-width: 640px) {
+  html body .actions { display: grid !important; grid-template-columns: 1fr; gap: 10px !important; width: 100%; justify-items: stretch; }
+  html body .actions a { display: flex; justify-content: center; align-items: center; gap: 8px; padding: 13px 16px; border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent); background: none; text-decoration: none; font-weight: 500; }
+  html body .actions a:active { background: var(--soft); }
+  html body .actions a.share { background: #1FA855; color: #fff; border-color: #1FA855; }
+  html body .actions a.share svg path:first-child { fill: #fff; }
+  html body .actions a.share svg path:last-child { fill: #1FA855; }
+  html body .actions a.act svg { color: currentColor; }
+}
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
 .kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
 h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
@@ -641,7 +652,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
 <body>
 
 
-<div class="strip" id="strip" data-id="tg-channel-1" data-href="https://t.me/sarkarichart" role="region" aria-label="Announcement" hidden><svg class="wa" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11.5" fill="#29A9EB"/><path fill="#fff" d="M5.2 11.7 16.8 7.2c.5-.2 1 .1.8 .9l-2 9.3c-.1.6-.5.8-1 .5l-2.9-2.2-1.4 1.4c-.2.2-.3.3-.6.3l.2-3 5.4-4.9c.2-.2 0-.3-.3-.1l-6.7 4.2-2.9-.9c-.6-.2-.6-.6.1-.9z"/></svg><span id="stripText" data-en="Get every new govt job alert on Telegram, free." data-hi="हर नई सरकारी नौकरी की सूचना टेलीग्राम पर पाएँ, मुफ़्त।" data-en-s="Job alerts on Telegram, free." data-hi-s="नौकरी की सूचना टेलीग्राम पर, मुफ़्त।">Get every new govt job alert on Telegram, free.</span><a id="stripLink" class="cta" href="#" target="_blank" rel="noopener" data-en="Join the channel →" data-hi="चैनल से जुड़ें →" data-en-s="Join →" data-hi-s="जुड़ें →">Join the channel →</a><button type="button" class="strip-x" id="stripX" aria-label="Close" data-en="Close" data-hi="बंद करें"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+<div class="strip" id="strip" data-id="tg-channel-1" data-href="https://t.me/sarkarichart" role="region" aria-label="Announcement" hidden><svg class="wa" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11.5" fill="#29A9EB"/><path fill="#fff" d="M5.2 11.7 16.8 7.2c.5-.2 1 .1.8 .9l-2 9.3c-.1.6-.5.8-1 .5l-2.9-2.2-1.4 1.4c-.2.2-.3.3-.6.3l.2-3 5.4-4.9c.2-.2 0-.3-.3-.1l-6.7 4.2-2.9-.9c-.6-.2-.6-.6.1-.9z"/></svg><span id="stripText" data-en="Get every new govt job alert on WhatsApp, free." data-hi="हर नई सरकारी नौकरी की सूचना टेलीग्राम पर पाएँ, मुफ़्त।" data-en-s="Job alerts on Telegram, free." data-hi-s="नौकरी की सूचना टेलीग्राम पर, मुफ़्त।">Get every new govt job alert on WhatsApp, free.</span><a id="stripLink" class="cta" href="#" target="_blank" rel="noopener" data-en="Join the channel →" data-hi="चैनल से जुड़ें →" data-en-s="Join →" data-hi-s="जुड़ें →">Join the channel →</a><button type="button" class="strip-x" id="stripX" aria-label="Close" data-en="Close" data-hi="बंद करें"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
 <script>(function(){var s=document.getElementById("strip"),h=s.dataset.href,id=s.dataset.id,d=null;try{d=localStorage.getItem("sc-strip-closed")}catch(e){}if(!h||d===id)return; s.hidden=false; document.getElementById("stripLink").href=h;function lang(){var l=document.documentElement.lang==="hi"?"hi":"en",sm=matchMedia("(max-width: 640px)").matches;["stripText","stripLink"].forEach(function(k){var e=document.getElementById(k);e.textContent=(sm&&e.dataset[l+"S"])||e.dataset[l]});var x=document.getElementById("stripX");x.setAttribute("aria-label",x.dataset[l]);}try{var sl=localStorage.getItem("sc-lang");if(sl==="hi"||(!sl&&/^hi\b/i.test(navigator.language||"")))document.documentElement.lang="hi"}catch(e){} lang();addEventListener("resize",lang);new MutationObserver(lang).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});document.getElementById("stripX").addEventListener("click",function(){s.hidden=true;try{localStorage.setItem("sc-strip-closed",id)}catch(e){}});})();</script>
 <div class="sheet">
   <header class="top">
@@ -677,7 +688,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       <div class="r"><span data-t="gSel">Selection process</span><span class="v" data-t="gSelV">Written Exam → Interview</span></div>
     </section>
     <details class="toc"><summary data-t="tocH">On this page</summary><ol><li><a href="#about" data-t="aboutH">About this notice</a></li><li><a href="#whoH" data-t="whoH">Who should read this</a></li><li><a href="#datesH" data-t="datesH">Important dates</a></li><li><a href="#vacH" data-t="vacH">Vacancy details</a></li><li><a href="#selH" data-t="selH">Selection process</a></li><li><a href="#howH" data-t="howH">How to download</a></li><li><a href="#docH" data-t="docH">Documents to keep ready</a></li><li><a href="#expH" data-t="expH">Good to know</a></li><li><a href="#aftH" data-t="aftH">What happens next</a></li><li><a href="#links" data-t="links">Official links</a></li><li><a href="#faq" data-t="faqH">Frequently asked questions</a></li><li><a href="#chkH" data-t="chkH">Final checklist</a></li></ol></details>
-    <div class="adslot" data-ad="notice-top"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox"><a class="house" href="https://t.me/sarkarichart" target="_blank" rel="noopener"><img src="/telegram.svg" alt="" width="22" height="22"><span data-t="adHouse">Get every new govt job alert on Telegram, free</span></a></div></div>
+    <div class="adslot" data-ad="notice-top"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox"><a class="house" href="https://whatsapp.com/channel/0029Vb9M2x930LKIvmiBrY2s" target="_blank" rel="noopener"><img src="/whatsapp.svg" alt="" width="22" height="22"><span data-t="adHouse">Get every new govt job alert on WhatsApp, free</span></a></div></div>
     <section class="kv" id="about" data-t-aria="aboutH">
       <h2 class="h" data-t="aboutH">About this notice</h2>
       <p class="p" data-t="intro">Chhattisgarh Public Service Commission (CGPSC) has published the written exam result for the State Engineering Service Exam 2026. The written exam was conducted on 16 August 2026 for a total of 46 Assistant Engineer vacancies. Based on the performance and availability of eligible candidates, a total of 142 candidates have been shortlisted for the interview round. Candidates who appeared for the exam can check their roll numbers in the official result notice.</p>
@@ -724,7 +735,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       <a class="r" href="https://psc.cg.gov.in/PDFs/Result/STATE_ENGINEERING_SERVICE_EXAM-2026_WRITTEN_EXAM_RESULT (03-09-2026).pdf" target="_blank" rel="noopener"><span data-t="lNotice">Official notice</span><span class="v">psc.cg.gov.in</span></a>
       <a class="r" href="https://psc.cg.gov.in" target="_blank" rel="noopener"><span data-t="lSite">Official website</span><span class="v">psc.cg.gov.in</span></a>
     </section>
-    <div class="adslot" data-ad="notice-mid"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox"><a class="house" href="https://t.me/sarkarichart" target="_blank" rel="noopener"><img src="/telegram.svg" alt="" width="22" height="22"><span data-t="adHouse">Get every new govt job alert on Telegram, free</span></a></div></div>
+    <div class="adslot" data-ad="notice-mid"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox"><a class="house" href="https://whatsapp.com/channel/0029Vb9M2x930LKIvmiBrY2s" target="_blank" rel="noopener"><img src="/whatsapp.svg" alt="" width="22" height="22"><span data-t="adHouse">Get every new govt job alert on WhatsApp, free</span></a></div></div>
     <section class="kv faq" id="faq" data-t-aria="faqH">
       <h2 class="h" data-t="faqH">Frequently asked questions</h2>
       <div class="qa"><h3 data-t="q0">When was the CGPSC State Engineering Service Written Exam 2026 conducted?</h3><p data-t="a0">The written exam was conducted on 16 August 2026.</p></div>
@@ -754,7 +765,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
     <p class="hidet"><a href="/hi/notice/cgpsc-state-engineering-service-written-exam-result-2026-out/" lang="hi" hreflang="hi">हिंदी में पढ़ें</a></p>
   </main>
 
-  <div class="adslot slim" data-ad="footer"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox"><a class="house" href="https://t.me/sarkarichart" target="_blank" rel="noopener"><img src="/telegram.svg" alt="" width="22" height="22"><span data-t="adHouse">Get every new govt job alert on Telegram, free</span></a></div></div>
+  <div class="adslot slim" data-ad="footer"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox"><a class="house" href="https://whatsapp.com/channel/0029Vb9M2x930LKIvmiBrY2s" target="_blank" rel="noopener"><img src="/whatsapp.svg" alt="" width="22" height="22"><span data-t="adHouse">Get every new govt job alert on WhatsApp, free</span></a></div></div>
   <footer>
     <p class="pref"><a href="https://www.google.com/preferences/source?q=sarkarichart.com" target="_blank" rel="noopener"><span data-t="prefSrc">Add SarkariChart as a preferred source on Google</span></a><img class="hand" src="/hand.webp" width="24" height="24" alt="" aria-hidden="true" loading="lazy" decoding="async"></p>
     <p class="g" data-t="disclaimer">SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.</p>
@@ -768,7 +779,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
   const T = {
     en: {
       brand: "SarkariChart", home: "SarkariChart home", tagline: "Govt jobs, exams, results", logoAlt: "SarkariChart (सरकारी चार्ट) logo — govt jobs, results and admit cards from official notices", about: "About",
-      allNotices: "All notices", adLabel: "Advertisement", adHouse: "Get every new govt job alert on Telegram, free", open: "Applications open", closed: "Applications closed", applyClosed: "Apply link (applications closed)", lastDay: "Last day",
+      allNotices: "All notices", adLabel: "Advertisement", adHouse: "Get every new govt job alert on WhatsApp, free", open: "Applications open", closed: "Applications closed", applyClosed: "Apply link (applications closed)", lastDay: "Last day",
       daysLeft: d => `${d} day${d === 1 ? "" : "s"} left`, locale: "en-IN", views: n => `${n.toLocaleString("en-IN")} views`,
       reportPage: "Report a mistake on this page", copyLink: "Copy link", copied: "Link copied ✓", dlPdf: "Download this page as PDF", share: "Share on WhatsApp",
       disclaimer: "SarkariChart is not a government website. If anything here differs from the official notice, the official notice is correct.",
@@ -873,7 +884,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
     },
     hi: {
       logoAlt: "सरकारी चार्ट का लोगो — आधिकारिक सूचनाओं से सरकारी नौकरी, रिज़ल्ट और एडमिट कार्ड", brand: "सरकारी चार्ट", home: "सरकारी चार्ट मुखपृष्ठ", tagline: "सरकारी नौकरी, परीक्षा, रिज़ल्ट", about: "हमारे बारे में",
-      allNotices: "सभी सूचनाएँ", adLabel: "विज्ञापन", adHouse: "हर नई सरकारी नौकरी की सूचना टेलीग्राम पर, मुफ़्त", open: "आवेदन जारी हैं", closed: "आवेदन बंद हो चुके हैं", applyClosed: "आवेदन लिंक (आवेदन बंद)", lastDay: "आज अंतिम दिन",
+      allNotices: "सभी सूचनाएँ", adLabel: "विज्ञापन", adHouse: "हर नई सरकारी नौकरी की सूचना व्हाट्सऐप पर, मुफ़्त", open: "आवेदन जारी हैं", closed: "आवेदन बंद हो चुके हैं", applyClosed: "आवेदन लिंक (आवेदन बंद)", lastDay: "आज अंतिम दिन",
       daysLeft: d => `${d} दिन बाकी`, locale: "hi-IN", views: n => `${n.toLocaleString("en-IN")} बार देखा गया`,
       reportPage: "इस पेज पर गलती बताएँ", copyLink: "लिंक कॉपी करें", copied: "लिंक कॉपी हो गया ✓", dlPdf: "यह पेज पीडीएफ में डाउनलोड करें", share: "व्हाट्सऐप पर भेजें",
       disclaimer: "सरकारी चार्ट कोई सरकारी वेबसाइट नहीं है। यहाँ दी गई कोई जानकारी आधिकारिक सूचना से अलग हो, तो आधिकारिक सूचना को ही सही मानें।",

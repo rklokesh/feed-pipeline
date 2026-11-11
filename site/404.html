@@ -210,6 +210,17 @@ main { width: 100%; max-width: 760px; margin-left: auto; margin-right: auto; }
 .lead { margin-left: auto; margin-right: auto; }
 .note { margin: 0 auto; justify-items: center; text-align: center; }
 .actions { justify-content: center; }
+/* phones: Share / PDF / Report as full-width pill buttons (WhatsApp one green) */
+@media (max-width: 640px) {
+  html body .actions { display: grid !important; grid-template-columns: 1fr; gap: 10px !important; width: 100%; justify-items: stretch; }
+  html body .actions a { display: flex; justify-content: center; align-items: center; gap: 8px; padding: 13px 16px; border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent); background: none; text-decoration: none; font-weight: 500; }
+  html body .actions a:active { background: var(--soft); }
+  html body .actions a.share { background: #1FA855; color: #fff; border-color: #1FA855; }
+  html body .actions a.share svg path:first-child { fill: #fff; }
+  html body .actions a.share svg path:last-child { fill: #1FA855; }
+  html body .actions a.act svg { color: currentColor; }
+}
 .kv { border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
 .kv .h { padding: 8px 14px; background: var(--soft); border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--grey) 80%, var(--ink)); }
 h2.h { font: inherit; margin: 0; letter-spacing: inherit; }
