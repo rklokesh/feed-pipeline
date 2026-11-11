@@ -161,7 +161,9 @@ def main() -> None:
     top = '    <section class="v3top" aria-label="Search">\n' + h1 + search + '    </section>\n'
     s = s.replace("  <main>\n", "  <main>\n" + top, 1)
     css = CSS.replace("<style>", "<style>\n.vh { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; margin: 0; }", 1)
-    css = css.replace("</style>", BG_CSS + "</style>", 1) + BG_JS
+    BOARD_NAMES = False   # 11 Nov: the board-name background was tried again and judged distracting
+    if BOARD_NAMES:
+        css = css.replace("</style>", BG_CSS + "</style>", 1) + BG_JS
     # the board names (fixed order, so the page does not change between builds)
     import random
     boards = ("SSC UPSC RRB IBPS SBI UPPSC BPSC RPSC MPPSC HPSC UKPSC JPSC CGPSC WBPSC PSSSB HSSC UPSSSC BSSC RSSB DSSSB NTA CTET "
@@ -170,7 +172,8 @@ def main() -> None:
     rnd = random.Random(7)
     words = " ".join(f"<span>{rnd.choice(boards)}</span>" for _ in range(460))
     s = re.sub(r'  <div class="v3bg" aria-hidden="true">.*?</div>\n', "", s, flags=re.S)
-    s = s.replace('<div class="sheet">\n', '<div class="sheet">\n  <div class="v3bg" aria-hidden="true">' + words + '</div>\n', 1)
+    if BOARD_NAMES:
+        s = s.replace('<div class="sheet">\n', '<div class="sheet">\n  <div class="v3bg" aria-hidden="true">' + words + '</div>\n', 1)
     s = s.replace("</head>", "<!--V3:START-->" + css + "<!--V3:END-->\n</head>", 1)
     (SITE / "index.html").write_text(s, encoding="utf-8")
     print("home: simple top (search, then the list)")
