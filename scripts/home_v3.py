@@ -88,6 +88,50 @@ addEventListener("DOMContentLoaded", function () {
 </script>"""
 
 
+BG_CSS = '''
+/* faint board names behind the header and search (not behind the list); a few light up now and then */
+.sheet { position: relative; isolation: isolate; }
+body { overflow-x: clip; }
+.v3bg { position: absolute; z-index: -1; top: 0; left: 50%; width: 100vw; height: 300px; transform: translateX(-50%); overflow: hidden; contain: strict;
+  pointer-events: none; user-select: none; -webkit-user-select: none; padding: 6px 10px; box-sizing: border-box; text-align: left;
+  font: 12px/24px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: .02em; word-spacing: 16px;
+  /* clear around the logo and search in the middle, fading out at the bottom and the sides */
+  -webkit-mask-image: radial-gradient(ellipse 34% 46% at 50% 46%, transparent 0, transparent 55%, #000 100%), linear-gradient(to bottom, #000 0, #000 62%, transparent 100%), linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%);
+  -webkit-mask-composite: source-in, source-in;
+  mask-image: radial-gradient(ellipse 34% 46% at 50% 46%, transparent 0, transparent 55%, #000 100%), linear-gradient(to bottom, #000 0, #000 62%, transparent 100%), linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%);
+  mask-composite: intersect, intersect; }
+/* the header words and tabs keep a soft page-coloured halo so they always read clearly over the names */
+.top .g, .top .nav-r a, .top .nav-r button, .tabs button { text-shadow: 0 0 2px var(--page), 0 0 6px var(--page), 0 0 10px var(--page); }
+.v3bg span { color: color-mix(in srgb, var(--grey) 22%, transparent); transition: color 1.1s ease, opacity 1.1s ease; }
+.v3bg span.on { color: color-mix(in srgb, #E8312F 70%, transparent); transition-duration: .2s; }
+.v3bg span.dim { opacity: .25; transition-duration: .35s; }
+@media (max-width: 640px) { .v3bg { font-size: 10px; line-height: 22px; word-spacing: 12px; -webkit-mask-image: linear-gradient(to bottom, #000 0, #000 60%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0, #000 60%, transparent 100%); } .v3bg span { color: color-mix(in srgb, var(--grey) 20%, transparent); } }
+'''
+BG_JS = '''<script>
+/* board-name background: sized to the header + search (+ a little of the tab row), a couple of names flicker at a time;
+   paused when off screen or in a background tab; still for reduced motion */
+addEventListener("DOMContentLoaded", function () {
+  var bg = document.querySelector(".v3bg"), sheet = document.querySelector(".sheet"), tr = document.querySelector(".tabrow");
+  if (!bg || !sheet || !tr) return;
+  function size() { bg.style.height = Math.round(tr.getBoundingClientRect().top - sheet.getBoundingClientRect().top + 44) + "px"; }
+  size(); addEventListener("resize", size);
+  var B = bg.clientHeight + 24; [].slice.call(bg.children).forEach(function (s) { if (s.offsetTop > B) s.remove(); });
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var ws = bg.children, vis = true, phone = matchMedia("(max-width: 640px)").matches;
+  if ("IntersectionObserver" in window) new IntersectionObserver(function (e) { vis = e[0].isIntersecting; }).observe(bg);
+  setInterval(function () {
+    if (!vis || document.hidden || !ws.length) return;
+    var n = phone ? 1 : 1 + (Math.random() < .5);
+    for (var k = 0; k < n; k++) {
+      var w = ws[Math.random() * ws.length | 0], c = Math.random() < .7 ? "on" : "dim";
+      w.classList.add(c);
+      (function (w, c) { setTimeout(function () { w.classList.remove(c); }, 300 + Math.random() * 1000); })(w, c);
+    }
+  }, phone ? 420 : 260);
+});
+</script>'''
+
+
 def main() -> None:
     s = (SITE / "index.html").read_text(encoding="utf-8")
     # rebuildable: undo an earlier run first
@@ -117,6 +161,16 @@ def main() -> None:
     top = '    <section class="v3top" aria-label="Search">\n' + h1 + search + '    </section>\n'
     s = s.replace("  <main>\n", "  <main>\n" + top, 1)
     css = CSS.replace("<style>", "<style>\n.vh { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; margin: 0; }", 1)
+    css = css.replace("</style>", BG_CSS + "</style>", 1) + BG_JS
+    # the board names (fixed order, so the page does not change between builds)
+    import random
+    boards = ("SSC UPSC RRB IBPS SBI UPPSC BPSC RPSC MPPSC HPSC UKPSC JPSC CGPSC WBPSC PSSSB HSSC UPSSSC BSSC RSSB DSSSB NTA CTET "
+              "KVS NVS BSF CRPF CISF ITBP AIIMS ESIC ISRO NIA RRC LIC NABARD RBI JKSSB UKSSSC BPSSC JSSC UPESSC Railway Police "
+              "Teacher Clerk Constable Patwari Lekhpal Bank PO SI ASI Driver Nurse Anganwadi Steno Typist JE GD CHSL CGL MTS NTPC Group-D").split()
+    rnd = random.Random(7)
+    words = " ".join(f"<span>{rnd.choice(boards)}</span>" for _ in range(460))
+    s = re.sub(r'  <div class="v3bg" aria-hidden="true">.*?</div>\n', "", s, flags=re.S)
+    s = s.replace('<div class="sheet">\n', '<div class="sheet">\n  <div class="v3bg" aria-hidden="true">' + words + '</div>\n', 1)
     s = s.replace("</head>", "<!--V3:START-->" + css + "<!--V3:END-->\n</head>", 1)
     (SITE / "index.html").write_text(s, encoding="utf-8")
     print("home: simple top (search, then the list)")
