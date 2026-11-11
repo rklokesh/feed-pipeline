@@ -16,6 +16,9 @@ def main() -> None:
     if last and NOW - last < dt.timedelta(hours=LIMIT_H):
         print(f"ok: last India board check {last.astimezone(IST):%d %b %H:%M} IST")
         return
+    # while the Mac is away, check the boards GitHub can reach (SSC, NTA, UPPSC, BPSC, BSSC, SBI, LIC, ISRO) every hour
+    # instead of every 3 hours, so the biggest central boards keep flowing
+    gh("POST", "/actions/workflows/watch.yml/dispatches", json={"ref": "main"})
     found = gh("GET", "/issues", params={"state": "open", "labels": "health", "per_page": 1}) or []
     if not found:
         print("no health issue"); return
