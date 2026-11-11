@@ -25,7 +25,7 @@ const slugs = existsSync(dir) ? readdirSync(dir).filter(d => existsSync(join(dir
 const browser = await chromium.launch();
 // Only pages whose content changed are printed again: the fingerprint ignores <style>/<script> (screen-only design
 // tweaks), so a phone-layout change no longer reprints all ~300 pages. Bump PDF_V to force a full reprint.
-const PDF_V = "1";
+const PDF_V = "2";   // 2: links in the PDF point to sarkarichart.com, not the local print server
 // only the article itself counts: header/footer/link changes on every page no longer re-print all PDFs (bump PDF_V for print-style changes)
 const fp = html => { const m = html.match(/<main[\s\S]*?<\/main>/); return createHash("sha1").update(PDF_V + (m ? m[0] : html).replace(/<style[\s\S]*?<\/style>/g, "").replace(/<script[\s\S]*?<\/script>/g, "").replace(/ draggable="false"/g, "")).digest("hex"); };
 let skipped = 0;
@@ -39,6 +39,11 @@ for (const slug of slugs) {
     await page.goto(`http://127.0.0.1:${port}/notice/${slug}/`, { waitUntil: "networkidle" });
     await page.evaluate(() => document.fonts.ready);   // logo wordmark font must be in before printing
     await page.emulateMedia({ media: "print" });
+    // links printed in the PDF must open the real site, not the temporary print server on this machine
+    await page.evaluate(() => document.querySelectorAll("a[href]").forEach(a => {
+      try { const u = new URL(a.href, location.href);
+        if (u.hostname === "127.0.0.1" || u.hostname === "localhost") a.href = "https://sarkarichart.com" + u.pathname + u.search + u.hash;
+      } catch (e) {} }));
     const out = join(dir, slug, `sarkarichart-${slug}-${lang}.pdf`);
     await page.pdf({ path: out, format: "A4", printBackground: true, margin: { top: "16mm", bottom: "16mm", left: "14mm", right: "14mm" } });
     console.log("made", out);
