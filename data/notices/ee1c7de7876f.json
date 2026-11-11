@@ -35,16 +35,14 @@
   "issue": 1208,
   "issue_tidy": true,
   "kind": "notification",
-  "notice_date": "2026-11-11",
+  "notice_date": "2026-11-10",
   "org": "ESIC",
   "page": {
     "after_en": [
-      "Document verification during the walk-in interview",
-      "Selection and issuance of offer of appointment for contractual engagement"
+      "Selected candidates will be called for document verification and joining formalities upon successful interview performance."
     ],
     "after_hi": [
-      "वॉक-इन इंटरव्यू के दौरान दस्तावेज सत्यापन",
-      "संविदात्मक नियुक्ति के लिए चयन और प्रस्ताव पत्र जारी करना"
+      "चयनित उम्मीदवारों को सफल साक्षात्कार प्रदर्शन पर दस्तावेज़ सत्यापन और जॉइनिंग औपचारिकताओं के लिए बुलाया जाएगा।"
     ],
     "age": [],
     "apply_start": null,
@@ -52,89 +50,113 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Verify your eligibility against the official notification.",
-      "Keep all original certificates and copies ready.",
-      "Note the interview date as 23 November 2026."
+      "Check eligibility criteria as per NMC guidelines.",
+      "Compile application form and all certificates into one PDF.",
+      "Email documents before the 19th of the month.",
+      "Attend the interview on 23 November 2026 with originals."
     ],
     "checklist_hi": [
-      "आधिकारिक अधिसूचना के मुकाबले अपनी पात्रता सत्यापित करें।",
-      "सभी मूल प्रमाण पत्र और प्रतियां तैयार रखें।",
-      "इंटरव्यू की तारीख 23 नवंबर 2026 नोट करें।"
+      "राष्ट्रीय आयुर्विज्ञान आयोग के दिशानिर्देशों के अनुसार पात्रता मानदंड की जांच करें।",
+      "आवेदन पत्र और सभी प्रमाण पत्र एक पीडीएफ में संकलित करें।",
+      "महीने की 19 तारीख से पहले दस्तावेज ईमेल करें।",
+      "मूल प्रतियों के साथ 23 नवंबर 2026 को इंटरव्यू में शामिल हों।"
     ],
     "conducted_by_en": "Employees' State Insurance Corporation (ESIC)",
-    "conducted_by_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईसी)",
+    "conducted_by_hi": "कर्मचारी राज्य बीमा निगम",
     "dates": [
       {
-        "label_en": "Interview date",
-        "label_hi": "इंटरव्यू की तिथि",
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस की तिथि",
+        "value_en": "10 Nov 2026",
+        "value_hi": "10 नव 2026"
+      },
+      {
+        "label_en": "Last date to submit application",
+        "label_hi": "आवेदन जमा करने की अंतिम तिथि",
+        "value_en": "19th of each month",
+        "value_hi": "प्रत्येक महीने की 19 तारीख"
+      },
+      {
+        "label_en": "Eligibility list date",
+        "label_hi": "पात्रता सूची की तिथि",
+        "value_en": "20th of each month",
+        "value_hi": "प्रत्येक महीने की 20 तारीख"
+      },
+      {
+        "label_en": "Walk-in Interview Date",
+        "label_hi": "वॉक-इन इंटरव्यू की तिथि",
         "value_en": "23 Nov 2026",
-        "value_hi": "23 नवंबर 2026"
+        "value_hi": "23 नव 2026"
       }
     ],
     "documents_en": [
-      "Educational qualification certificates",
-      "Experience certificates",
-      "Registration certificates",
-      "Passport size photographs",
-      "Proof of identity"
+      "Duly filled Application Form",
+      "Scanned copy of all supporting educational and experience documents",
+      "Research publications and proof of indexing agency",
+      "Demand Draft (if applicable)"
     ],
     "documents_hi": [
-      "शैक्षणिक योग्यता प्रमाण पत्र",
-      "अनुभव प्रमाण पत्र",
-      "पंजीकरण प्रमाण पत्र",
-      "पासपोर्ट साइज फोटोग्राफ",
-      "पहचान का प्रमाण"
+      "ठीक से भरा हुआ आवेदन पत्र",
+      "सभी समर्थक शैक्षणिक और अनुभव दस्तावेजों की स्कैन की गई प्रति",
+      "अनुसंधान प्रकाशन और इंडेक्सिंग एजेंसी का प्रमाण",
+      "डिमांड ड्राफ्ट (यदि लागू हो)"
     ],
     "eligibility": [
       {
-        "label_en": "Qualification",
-        "label_hi": "योग्यता",
-        "value_en": "As per NMC/ESIC norms for Teaching Faculty, Tutors, and Senior Residents",
-        "value_hi": "शिक्षण संकाय, ट्यूटर और सीनियर रेजिडेंट के लिए राष्ट्रीय आयुर्विज्ञान आयोग / ईएसआईसी मानदंडों के अनुसार"
+        "label_en": "Qualification / Experience",
+        "label_hi": "योग्यता / अनुभव",
+        "value_en": "As per NMC guidelines for respective posts",
+        "value_hi": "संबंधित पदों के लिए राष्ट्रीय आयुर्विज्ञान आयोग के दिशा-निर्देशों के अनुसार"
       }
     ],
     "exam_date": "2026-11-23",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is a recruitment drive by ESIC Medical College and Hospital, Ludhiana to engage doctors and medical professionals as Teaching Faculty, Tutors, and Senior Residents on a contractual basis through walk-in interviews.",
-        "a_hi": "यह वॉक-इन इंटरव्यू के माध्यम से संविदा के आधार पर डॉक्टरों और चिकित्सा पेशेवरों को शिक्षण संकाय, ट्यूटर और सीनियर रेजिडेंट के रूप में नियुक्त करने के लिए ईएसआईसी मेडिकल कॉलेज और अस्पताल, लुधियाना का एक भर्ती अभियान है।",
+        "a_en": "It is a monthly rolling recruitment drive conducted by ESIC Medical College & Hospital, Ludhiana, to fill vacant posts of Teaching Faculty, Tutors, and Senior Residents on a contractual basis through walk-in interviews.",
+        "a_hi": "यह वॉक-इन इंटरव्यू के माध्यम से संविदा के आधार पर शिक्षण संकाय, ट्यूटर और सीनियर रेजिडेंट के रिक्त पदों को भरने के लिए ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, लुधियाना द्वारा आयोजित एक मासिक रोलिंग भर्ती अभियान है।",
         "q_en": "What is ESIC Ludhiana Teaching Faculty Recruitment?",
         "q_hi": "ईएसआईसी लुधियाना शिक्षण संकाय भर्ती क्या है?"
       }
     ],
     "extra": [
       {
-        "label_en": "Organization",
-        "label_hi": "संस्थान",
-        "value_en": "ESIC Medical College and Hospital, Ludhiana, Punjab",
-        "value_hi": "ईएसआईसी मेडिकल कॉलेज और अस्पताल, लुधियाना, पंजाब"
+        "label_en": "Reporting Time",
+        "label_hi": "रिपोर्टिंग समय",
+        "value_en": "09:00 AM to 10:00 AM",
+        "value_hi": "सुबह 09:00 बजे से सुबह 10:00 बजे तक"
+      },
+      {
+        "label_en": "Interview Venue",
+        "label_hi": "इंटरव्यू स्थल",
+        "value_en": "2nd Floor, Dean's Office, ESIC Medical College & Hospital, Ludhiana - 141001, Punjab",
+        "value_hi": "दूसरी मंजिल, डीन कार्यालय, ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, लुधियाना - 141001, पंजाब"
       }
     ],
     "faq": [
       {
+        "a_en": "The last date to submit the online application is the 19th of each month for the respective interview cycle.",
+        "a_hi": "संबंधित साक्षात्कार चक्र के लिए ऑनलाइन आवेदन जमा करने की अंतिम तिथि प्रत्येक माह की 19 तारीख है।",
+        "q_en": "What is the last date to apply for ESIC Ludhiana Recruitment?",
+        "q_hi": "ईएसआईसी लुधियाना भर्ती के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
         "a_en": "The walk-in interview is scheduled for 23 November 2026.",
         "a_hi": "वॉक-इन इंटरव्यू 23 नवंबर 2026 को निर्धारित है।",
-        "q_en": "What is the interview date for ESIC Ludhiana Recruitment 2026?",
-        "q_hi": "ईएसआईसी लुधियाना भर्ती 2026 के लिए इंटरव्यू की तिथि क्या है?"
+        "q_en": "When is the walk-in interview scheduled?",
+        "q_hi": "वॉक-इन इंटरव्यू कब निर्धारित है?"
       },
       {
-        "a_en": "ESIC Ludhiana is recruiting Teaching Faculty, Tutors, and Senior Residents.",
-        "a_hi": "ईएसआईसी लुधियाना शिक्षण संकाय, ट्यूटर और सीनियर रेजिडेंट की भर्ती कर रहा है।",
-        "q_en": "What posts are being recruited by ESIC Ludhiana?",
-        "q_hi": "ईएसआईसी लुधियाना द्वारा किन पदों पर भर्ती की जा रही है?"
+        "a_en": "Applications should be emailed to dean-ludhiana.pb@esic.gov.in.",
+        "a_hi": "आवेदन dean-ludhiana.pb@esic.gov.in पर ईमेल किया जाना चाहिए।",
+        "q_en": "Where should the application be emailed?",
+        "q_hi": "आवेदन किस ईमेल पर भेजा जाना चाहिए?"
       },
       {
-        "a_en": "No, these positions are offered on a contractual basis.",
-        "a_hi": "नहीं, ये पद संविदा के आधार पर पेश किए जाते हैं।",
-        "q_en": "Is this a permanent job?",
-        "q_hi": "क्या यह स्थायी नौकरी है?"
-      },
-      {
-        "a_en": "Candidates need to appear directly for the walk-in interview on the specified date with required documents.",
-        "a_hi": "उम्मीदवारों को आवश्यक दस्तावेजों के साथ निर्धारित तिथि पर सीधे वॉक-इन इंटरव्यू के लिए उपस्थित होना होगा।",
-        "q_en": "How can I apply for ESIC Ludhiana Teaching Faculty Recruitment?",
-        "q_hi": "मैं ईएसआईसी लुधियाना शिक्षण संकाय भर्ती के लिए कैसे आवेदन कर सकता हूँ?"
+        "a_en": "The interview is held at the 2nd Floor, Dean's Office, ESIC Medical College & Hospital, Ludhiana - 141001, Punjab.",
+        "a_hi": "इंटरव्यू दूसरी मंजिल, डीन कार्यालय, ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, लुधियाना - 141001, पंजाब में आयोजित किया जाता है।",
+        "q_en": "What is the venue for the interview?",
+        "q_hi": "इंटरव्यू का स्थल क्या है?"
       }
     ],
     "fees": [],
@@ -142,32 +164,34 @@
     "h1_hi": "ईएसआईसी लुधियाना शिक्षण संकाय भर्ती 2026 – वॉक-इन इंटरव्यू",
     "hindi_notice_url": null,
     "how_en": [
-      "Check the official notification for details on eligibility and required documents.",
-      "Attend the walk-in interview on 23 November 2026 at the designated venue with filled application form and originals."
+      "Fill out the application form and compile all supporting documents, research publications, proof of indexing agency, and demand draft into a single PDF file.",
+      "Send the compiled PDF via email to dean-ludhiana.pb@esic.gov.in mentioning the Name, Post applied, and department in the subject line.",
+      "Attend the walk-in interview on the scheduled date with original documents."
     ],
     "how_hi": [
-      "पात्रता और आवश्यक दस्तावेजों के विवरण के लिए आधिकारिक अधिसूचना देखें।",
-      "भरा हुआ आवेदन पत्र और मूल दस्तावेजों के साथ 23 नवंबर 2026 को निर्धारित स्थल पर वॉक-इन इंटरव्यू में उपस्थित हों।"
+      "आवेदन पत्र भरें और सभी सहायक दस्तावेजों, अनुसंधान प्रकाशनों, इंडेक्सिंग एजेंसी के प्रमाण और डिमांड ड्राफ्ट को एक ही पीडीएफ फाइल में संकलित करें।",
+      "विषय पंक्ति में नाम, पद और विभाग का उल्लेख करते हुए dean-ludhiana.pb@esic.gov.in पर ईमेल के माध्यम से संकलित पीडीएफ भेजें।",
+      "मूल दस्तावेजों के साथ निर्धारित तिथि पर वॉक-इन इंटरव्यू में शामिल हों।"
     ],
-    "intro_en": "ESIC Medical College and Hospital, Ludhiana, Punjab has released a rolling advertisement for the recruitment of Teaching Faculty, Tutors, and Senior Residents on a contractual basis. Interested and eligible candidates must attend the walk-in interview on 23 November 2026 along with necessary documents. This page covers the essential details including interview schedule, venue, eligibility, and instructions for applicants.",
-    "intro_hi": "ईएसआईसी मेडिकल कॉलेज और अस्पताल, लुधियाना, पंजाब ने संविदा के आधार पर शिक्षण संकाय, ट्यूटर और सीनियर रेजिडेंट की भर्ती के लिए एक रोलिंग विज्ञापन जारी किया है। इच्छुक और योग्य उम्मीदवार आवश्यक दस्तावेजों के साथ 23 नवंबर 2026 को वॉक-इन इंटरव्यू में भाग ले सकते हैं।",
+    "intro_en": "Employees' State Insurance Corporation (ESIC) Medical College & Hospital, Ludhiana has released a rolling advertisement for the recruitment of Teaching Faculty, Tutors, and Senior Residents on a contractual basis. Eligible candidates can submit their applications via email to dean-ludhiana.pb@esic.gov.in. The walk-in interview for the current cycle is scheduled for 23 November 2026. This recruitment drive runs monthly until vacant positions are filled.",
+    "intro_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईसी) मेडिकल कॉलेज एंड हॉस्पिटल, लुधियाना ने संविदा के आधार पर शिक्षण संकाय, ट्यूटर और सीनियर रेजिडेंट के पदों पर भर्ती के लिए एक रोलिंग विज्ञापन जारी किया है। योग्य उम्मीदवार dean-ludhiana.pb@esic.gov.in पर ईमेल के माध्यम से अपने आवेदन जमा कर सकते हैं। वर्तमान चक्र के लिए वॉक-इन इंटरव्यू 23 नवंबर 2026 को निर्धारित है। यह भर्ती अभियान रिक्त पद भरे जाने तक हर महीने चलता है।",
     "last_date": null,
     "mistakes_en": [
-      "Reporting late for the walk-in interview.",
-      "Failing to bring original documents and self-attested photocopies."
+      "Do not send multiple files; all documents must be compiled into a single PDF file.",
+      "Do not forget to mention Name, Post applied, and department in the subject of the email."
     ],
     "mistakes_hi": [
-      "वॉक-इन इंटरव्यू के लिए देर से पहुँचना।",
-      "मूल दस्तावेज और स्व-सत्यापित फोटोकॉपी लाने में विफल रहना।"
+      "कई फाइलें न भेजें; सभी दस्तावेजों को एक ही पीडीएफ फाइल में संकलित किया जाना चाहिए।",
+      "ईमेल के विषय में नाम, पद और विभाग का उल्लेख करना न भूलें।"
     ],
     "not_en": [
-      "Candidates who do not meet the educational qualifications and experience as per ESIC/NMC norms."
+      "Candidates who fail to submit documents in a single PDF format or miss the application deadline."
     ],
     "not_hi": [
-      "जो उम्मीदवार ईएसआईसी मानदंडों के अनुसार शैक्षणिक योग्यता और अनुभव पूरा नहीं करते हैं।"
+      "जो उम्मीदवार एक ही पीडीएफ प्रारूप में दस्तावेज जमा करने में विफल रहते हैं या आवेदन की समय सीमा चूक जाते हैं।"
     ],
-    "notice_date": "2026-11-11",
-    "official_site": "https://www.esic.gov.in/recruitments",
+    "notice_date": "2026-11-10",
+    "official_site": "https://ludhianahospitalesicgov.in",
     "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
@@ -178,58 +202,54 @@
         "value_hi": "शिक्षण संकाय, ट्यूटर और सीनियर रेजिडेंट"
       },
       {
-        "label_en": "Recruitment type",
-        "label_hi": "भर्ती का प्रकार",
-        "value_en": "Contractual Basis",
-        "value_hi": "संविदा के आधार पर"
-      },
-      {
-        "label_en": "Interview date",
-        "label_hi": "इंटरव्यू की तिथि",
+        "label_en": "Walk-in Interview Date",
+        "label_hi": "वॉक-इन इंटरव्यू की तिथि",
         "value_en": "23 Nov 2026",
-        "value_hi": "23 नवंबर 2026"
+        "value_hi": "23 नव 2026"
       },
       {
-        "label_en": "Location",
-        "label_hi": "स्थान",
-        "value_en": "Ludhiana, Punjab",
-        "value_hi": "लुधियाना, पंजाब"
+        "label_en": "Application Deadline",
+        "label_hi": "आवेदन की अंतिम तिथि",
+        "value_en": "19th of each month",
+        "value_hi": "प्रत्येक महीने की 19 तारीख"
       }
     ],
     "salary": [],
     "selection_en": [
+      "Document verification based on emailed applications",
       "Walk-in Interview"
     ],
     "selection_hi": [
+      "ईमेल किए गए आवेदनों के आधार पर दस्तावेज़ सत्यापन",
       "वॉक-इन इंटरव्यू"
     ],
     "share_card": {
       "headline_en": "Walk-In Interview 2026",
       "headline_hi": "वॉक-इन इंटरव्यू 2026",
       "kind": "job",
-      "line_en": "ESIC Ludhiana Faculty",
-      "line_hi": "ईएसआईसी लुधियाना फैकल्टी",
+      "line_en": "Teaching Faculty & Residents",
+      "line_hi": "शिक्षण संकाय और रेजिडेंट",
       "posts": null
     },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "ESIC Medical College and Hospital, Ludhiana invites applications for Teaching Faculty, Tutors, and Senior Residents on a contractual basis. Eligible candidates can appear for a walk-in interview scheduled for 23 November 2026. Read the details below for eligibility, interview venue, and other requirements.",
-    "summary_hi": "ईएसआईसी मेडिकल कॉलेज और अस्पताल, लुधियाना ने संविदा के आधार पर शिक्षण संकाय, ट्यूटर और सीनियर रेजिडेंट के लिए आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 23 नवंबर 2026 को होने वाले वॉक-इन इंटरव्यू में शामिल हो सकते हैं।",
+    "summary_en": "ESIC Medical College and Hospital, Ludhiana invites applications for teaching faculty, tutors, and senior residents on a contractual basis through walk-in interviews scheduled for 23 November 2026.",
+    "summary_hi": "ईएसआईसी मेडिकल कॉलेज और अस्पताल, लुधियाना ने 23 नवंबर 2026 को निर्धारित वॉक-इन इंटरव्यू के माध्यम से संविदा के आधार पर शिक्षण संकाय, ट्यूटर और सीनियर रेजिडेंट के लिए आवेदन आमंत्रित किए हैं।",
     "vacancies": [
       {
-        "detail_en": "Contractual positions at ESIC Medical College and Hospital, Ludhiana",
-        "detail_hi": "ईएसआईसी मेडिकल कॉलेज और अस्पताल, लुधियाना में संविदा पद",
-        "post_en": "Teaching Faculty, Tutors and Senior Residents",
-        "post_hi": "शिक्षण संकाय, ट्यूटर और सीनियर रेजिडेंट",
-        "total": "As per rules"
+        "detail_en": "Various Medical and Surgical disciplines",
+        "detail_hi": "विभिन्न चिकित्सा और शल्य चिकित्सा विषय",
+        "post_en": "Teaching Faculty and Senior Residents",
+        "post_hi": "शिक्षण संकाय और सीनियर रेजिडेंट",
+        "total": "Various"
       }
     ],
     "video_url": null,
     "who_en": [
-      "Medical professionals with required qualifications looking for teaching faculty or resident posts on a contract basis at ESIC Ludhiana."
+      "Medical professionals meeting NMC criteria for teaching faculty and senior residents wanting contractual employment at ESIC Ludhiana."
     ],
     "who_hi": [
-      "ईएसआईसी लुधियाना में अनुबंध के आधार पर शिक्षण संकाय या रेजिडेंट पदों की तलाश कर रहे आवश्यक योग्यता वाले चिकित्सा पेशेवर।"
+      "ईएसआईसी लुधियाना में संविदा रोजगार चाहने वाले शिक्षण संकाय और सीनियर रेजिडेंट के लिए राष्ट्रीय आयुर्विज्ञान आयोग मानदंडों को पूरा करने वाले चिकित्सा पेशेवर।"
     ]
   },
   "pdf": {
@@ -239,11 +259,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-11T05:45:49Z",
-  "qual": [
-    "graduate",
-    "postgraduate"
-  ],
-  "rewrite": true,
   "slug": "esic-ludhiana-teaching-faculty-recruitment-2026-walk-in-intervie",
   "source_id": "esic-recruitment",
   "status": "approved",
