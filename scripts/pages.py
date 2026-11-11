@@ -440,8 +440,8 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
     j_ = main[0].index("\n", i_) + 1      # right after the status / last-date line, before the summary
     main[0] = main[0][:j_] + box + main[0][j_:]
     AD = lambda kind: ('    <div class="adslot" data-ad="' + kind + '"><p class="adl" data-t="adLabel">Advertisement</p><div class="adbox">'
-                       '<a class="house" href="https://t.me/sarkarichart" target="_blank" rel="noopener"><img src="/telegram.svg" alt="" width="22" height="22">'
-                       '<span data-t="adHouse">Get every new govt job alert on Telegram, free</span></a></div></div>')
+                       '<a class="house" href="https://whatsapp.com/channel/0029Vb9M2x930LKIvmiBrY2s" target="_blank" rel="noopener"><img src="/whatsapp.svg" alt="" width="22" height="22">'
+                       '<span data-t="adHouse">Get every new govt job alert on WhatsApp, free</span></a></div></div>')
     main.append(AD("notice-top"))      # after "At a glance": the reader already has the key facts
     def fee_section():
         if not fees:

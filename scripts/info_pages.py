@@ -147,6 +147,7 @@ LINKS = {"404": [("/", "Go to the homepage →", "होमपेज पर ज�
          "press": [("/sarkarichart-logo.png", "Download the logo (PNG) →", "लोगो डाउनलोड करें (PNG) →"),
                    ("/report/", "Press request form →", "प्रेस अनुरोध फ़ॉर्म →")],
          "contact": [("/report/", "Report a mistake form →", "गलती बताएँ फ़ॉर्म →"),
+                     ("https://whatsapp.com/channel/0029Vb9M2x930LKIvmiBrY2s", "Join on WhatsApp →", "व्हाट्सऐप पर जुड़ें →"),
                      ("https://t.me/sarkarichart", "Join on Telegram →", "टेलीग्राम पर जुड़ें →")]}
 
 STYLE = """    <style>
