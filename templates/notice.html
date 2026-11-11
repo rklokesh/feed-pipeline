@@ -77,6 +77,9 @@ h1, h2, p, ul { margin: 0; padding: 0; font: inherit; list-style: none; }
 footer .pref { margin-bottom: 0; }
 footer .browse { margin-bottom: 8px; line-height: 1.7; }
 footer .browse a { color: inherit; }
+/* footer: the job links read darker, the small site links (About · Privacy …) lighter */
+footer .browse.g { color: var(--ink); }
+footer > p:last-child, footer > p:last-child a { color: var(--grey); }
 footer .browse span { white-space: nowrap; }
 footer .pref .star { color: var(--warm); }
 .top button { all: unset; cursor: pointer; }

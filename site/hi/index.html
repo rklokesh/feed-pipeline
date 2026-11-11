@@ -183,6 +183,9 @@ html[lang="hi"] .x-en, html:not([lang="hi"]) .x-hi { display: none; }
 footer .pref { margin-bottom: 0; }
 footer .browse { margin-bottom: 8px; line-height: 1.7; }
 footer .browse a { color: inherit; }
+/* footer: the job links read darker, the small site links (About · Privacy …) lighter */
+footer .browse.g { color: var(--ink); }
+footer > p:last-child, footer > p:last-child a { color: var(--grey); }
 footer .browse span { white-space: nowrap; }
 footer .pref .star { color: var(--warm); }
 footer { margin: 64px auto 0; display: grid; gap: 4px; max-width: 34rem; text-align: center; justify-items: center; }
