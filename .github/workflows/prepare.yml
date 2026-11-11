@@ -51,7 +51,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/dedupe.py && python scripts/retype.py && python scripts/exams.py tag && python scripts/hubs.py tag && python scripts/pages.py && python scripts/elig.py && python scripts/exams.py build && python scripts/verify.py --act
       - name: Rebuild homepage list
-        run: python scripts/publish.py build && python scripts/hubs.py build && python scripts/seo_pages.py && python scripts/hindi_pages.py && python scripts/home_v3.py && python scripts/report_page.py && python scripts/info_pages.py && python scripts/seo_files.py && python scripts/indexnow.py
+        run: python scripts/publish.py build && python scripts/hubs.py build && python scripts/seo_pages.py && python scripts/home_v3.py && python scripts/hindi_pages.py && python scripts/report_page.py && python scripts/info_pages.py && python scripts/seo_files.py && python scripts/indexnow.py
       - name: Save
         id: save
         run: |

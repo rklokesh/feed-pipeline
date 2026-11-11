@@ -1,7 +1,7 @@
-"""Test homepage /v3/ (Nov 2026): a utility-first top for daily visitors, built from the live homepage.
+"""The homepage top (since 11 Nov 2026): the compact header, the search box, then the tabs and list.
 
 Instead of the big hero: the compact header, the search box, then the same tabs and list straight away.
-(A "Today" strip and popular-search chips were tried on 10 Nov and cut on 11 Nov as noise.) The live homepage is not touched; /v3/ is noindex and points Google at /.
+(A "Today" strip and popular-search chips were tried on 10 Nov and cut on 11 Nov as noise.)
 Run after hubs.py: python3 scripts/home_v3.py
 """
 from __future__ import annotations
@@ -90,44 +90,36 @@ addEventListener("DOMContentLoaded", function () {
 
 def main() -> None:
     s = (SITE / "index.html").read_text(encoding="utf-8")
-    # take the hero out, put the search box back at the top of the page
+    # rebuildable: undo an earlier run first
+    s = re.sub(r'<!--V3:START-->.*?<!--V3:END-->\n?', "", s, flags=re.S)
+    prev = re.search(r'    <section class="v3top".*?</section>\n', s, flags=re.S)
+    search = ""
+    if prev:
+        m0 = re.search(r'  <label class="search" for="q">.*?</label>\n', prev.group(0), flags=re.S)
+        search = m0.group(0) if m0 else ""
+        s = s.replace(prev.group(0), "", 1)
+    # take the hero out (hubs.py still builds it; the homepage no longer shows it)
     old = re.search(r'    <section class="hero".*?</section>\n', s, flags=re.S)
-    lab = re.search(r'      <label class="search" for="q">.*?</label>\n', old.group(0), flags=re.S) if old else None
     if old:
+        lab = re.search(r'      <label class="search" for="q">.*?</label>\n', old.group(0), flags=re.S)
+        if lab:
+            search = "\n".join(("  " + x[6:] if x.startswith("      ") else x) for x in lab.group(0).split("\n"))
         s = s.replace(old.group(0), "", 1)
     s = re.sub(r'<!--HERO:START-->.*?<!--HERO:END-->\n?', "", s, flags=re.S)
-    search = lab.group(0) if lab else ""
     m = re.search(r'    <label class="search" for="q">.*?</label>\n', s, flags=re.S)
-    if m:   # (a homepage without the hero already has it in place)
+    if m:   # a homepage that never had the hero keeps its search line here
         search = m.group(0); s = s.replace(search, "", 1)
-    search = "\n".join(("  " + x[6:] if x.startswith("      ") else x) for x in search.split("\n"))
-    # data for the strip: type, published, issued, last date (small)
-    a = s.index("/*ITEMS:START*/") + len("/*ITEMS:START*/"); b = s.index("/*ITEMS:END*/")
-    items = json.loads("[" + s[a:b].strip().rstrip(",").strip("[]") + "]")
-    data = [{"t": i["type"], "p": i.get("publishedAt") or "", "d": i.get("posted") or "", "l": i.get("last") or ""} for i in items]
-    # popular searches: the boards with the most live jobs and trending notices right now
-    # what most aspirants look for; a chip shows only when there is something for it right now
-    POPULAR = ["SSC", "Railway", "UP Police", "Bank", "Teacher", "UPSC", "CTET", "Bihar", "Rajasthan", "Army", "12th pass"]
-    def hits(term):
-        t = term.lower()
-        return sum(1 for i in items if t in (i.get("title", "") + " " + i.get("org", "") + " " + " ".join(map(str, i.get("q") or [])) if isinstance(i.get("q"), list) else i.get("title", "") + " " + i.get("org", "") + " " + str(i.get("q") or "")).lower())
-    chips = [p for p in POPULAR if hits(p) > 0][:8]
-    chip_html = '<span class="lbl" data-t="v3pop">Popular:</span>' + "".join(f'<button type="button" data-q="{o}">{o}</button>' for o in chips)
-    # Nov 11: cut to the bone - people come to search or to see the newest notices; counts and chips were noise
-    top = '    <section class="v3top" aria-label="Search">\n' + search + '    </section>\n'
+    if not search:
+        raise SystemExit("home: search box not found")
+    # one main heading for Google and screen readers (not shown: the list is the page)
+    h1 = ('      <h1 class="vh"><span class="x-en">Sarkari Naukri 2026: latest govt jobs, admit cards and results</span>'
+          '<span class="x-hi" lang="hi">सरकारी नौकरी 2026: नई भर्तियाँ, एडमिट कार्ड और रिज़ल्ट</span></h1>\n')
+    top = '    <section class="v3top" aria-label="Search">\n' + h1 + search + '    </section>\n'
     s = s.replace("  <main>\n", "  <main>\n" + top, 1)
-    s = s.replace("</head>", CSS + "\n</head>", 1)
-    s = s.replace('v3pop', 'v3pop', 1)
-    s = s.replace('      newTip:', '      v3pop: "Popular:", newTip:', 1)
-    s = re.sub(r'(\n\s+hi: \{\n)', r'\1      v3pop: "लोकप्रिय:",\n', s, count=1)
-    # a test page: keep it out of Google, point at the real homepage
-    s = re.sub(r'<meta name="robots" content="[^"]*">', "", s)
-    s = s.replace("<head>", '<head>\n<meta name="robots" content="noindex, follow">', 1)
-    s = re.sub(r'\n<link rel="alternate" hreflang="[^"]*" href="[^"]*">', "", s)
-    out = SITE / "v3" / "index.html"
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(s, encoding="utf-8")
-    print(f"home v3: /v3/ built ({len(data)} notices, chips: {', '.join(chips)})")
+    css = CSS.replace("<style>", "<style>\n.vh { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; margin: 0; }", 1)
+    s = s.replace("</head>", "<!--V3:START-->" + css + "<!--V3:END-->\n</head>", 1)
+    (SITE / "index.html").write_text(s, encoding="utf-8")
+    print("home: simple top (search, then the list)")
 
 
 if __name__ == "__main__":
