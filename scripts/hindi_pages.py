@@ -14,7 +14,7 @@ import re
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
 SITE_URL = os.environ.get("SITE_URL", "https://sarkarichart.com")
-HOME_TITLE = "सरकारी नौकरी 2026 – नई भर्ती, एडमिट कार्ड, रिज़ल्ट | सरकारी चार्ट"
+HOME_TITLE = "सरकारी चार्ट – सरकारी नौकरी 2026, नई भर्ती, एडमिट कार्ड, रिज़ल्ट"
 HOME_DESC = ("सरकारी नौकरी 2026: हर नई सरकारी भर्ती, एडमिट कार्ड, आंसर की और रिज़ल्ट सीधे आधिकारिक वेबसाइटों से, हिंदी में। "
              "अंतिम तिथि, फीस और आवेदन के सीधे लिंक।")
 
