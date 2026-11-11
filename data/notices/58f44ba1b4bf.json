@@ -3,7 +3,7 @@
   "board_url": "https://rectt.bsf.gov.in/",
   "card": {
     "confidence": "high",
-    "exam_date": "2026-11-02",
+    "exam_date": "2026-12-02",
     "last_date": null,
     "list": true,
     "posts": "Constable (Tradesmen)",
@@ -11,8 +11,8 @@
     "skip_reason": "",
     "summary_en": "BSF has extended the closing date for the objection management portal related to the CBT conducted on 02.11.2026 for Constable Tradesmen recruitment.",
     "summary_hi": "बीएसएफ ने कांस्टेबल ट्रेड्समैन भर्ती के लिए 02.11.2026 को आयोजित सीबीटी से संबंधित आपत्ति प्रबंधन पोर्टल की अंतिम तिथि बढ़ा दी है।",
-    "title_en": "BSF Constable Tradesmen Answer Key Objection 2024 – Last Date Extended",
-    "title_hi": "बीएसएफ कांस्टेबल ट्रेड्समैन आंसर की आपत्ति 2024 – अंतिम तिथि बढ़ाई गई",
+    "title_en": "BSF Constable Tradesmen Exam Date 2024 Notice – CBT Schedule",
+    "title_hi": "बीएसएफ कांस्टेबल ट्रेड्समैन परीक्षा तिथि 2024 नोटिस – सीबीटी शेड्यूल",
     "type": "Update",
     "vacancies": null
   },
@@ -35,162 +35,209 @@
   "org": "BSF",
   "page": {
     "after_en": [
-      "Review of objections by subject experts",
-      "Declaration of final result"
+      "Appear for the Computer Based Test on the scheduled date.",
+      "Wait for the answer key and subsequent result/medical examination stages."
     ],
     "after_hi": [
-      "विषय विशेषज्ञों द्वारा आपत्तियों की समीक्षा",
-      "अंतिम परिणाम की घोषणा"
+      "निर्धारित तिथि पर कंप्यूटर आधारित परीक्षा में शामिल हों।",
+      "उत्तर कुंजी और उसके बाद के परिणाम/चिकित्सा परीक्षा चरणों की प्रतीक्षा करें।"
     ],
     "age": [],
     "apply_start": null,
     "apply_url": null,
-    "changes": [
-      {
-        "new_en": "Extended",
-        "new_hi": "बढ़ाई गई",
-        "old_en": "As per previous schedule",
-        "old_hi": "पिछले शेड्यूल के अनुसार",
-        "what_en": "Objection portal closing date",
-        "what_hi": "आपत्ति पोर्टल की अंतिम तिथि"
-      }
-    ],
+    "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Keep your login credentials ready",
-      "Check the official notice for exact extended dates"
+      "Note your shift timing and exam center address from the admit card.",
+      "Keep the helpdesk number handy in case of technical issues with downloading."
     ],
     "checklist_hi": [
-      "अपने लॉगिन विवरण तैयार रखें",
-      "सटीक बढ़ी हुई तिथियों के लिए आधिकारिक नोटिस देखें"
+      "प्रवेश पत्र से अपनी पाली के समय और परीक्षा केंद्र के पते को नोट करें।",
+      "डाउनलोड करने में तकनीकी समस्या होने पर हेल्पलाईन नंबर तैयार रखें।"
     ],
     "conducted_by_en": "Border Security Force (BSF)",
     "conducted_by_hi": "सीमा सुरक्षा बल (बीएसएफ)",
     "dates": [
       {
-        "label_en": "Exam Date",
-        "label_hi": "परीक्षा तिथि",
-        "value_en": "02 Nov 2026",
-        "value_hi": "02 नव 2026"
+        "label_en": "E-admit card live from",
+        "label_hi": "ई-प्रवेश पत्र लाइव तिथि",
+        "value_en": "17 Nov 2026",
+        "value_hi": "17 नवंबर 2026"
+      },
+      {
+        "label_en": "E-admit card live up to",
+        "label_hi": "ई-प्रवेश पत्र अंतिम तिथि",
+        "value_en": "02 Dec 2026",
+        "value_hi": "02 दिसंबर 2026"
+      },
+      {
+        "label_en": "Written Examination (CBT)",
+        "label_hi": "लिखित परीक्षा (सीबीटी)",
+        "value_en": "02 Dec 2026",
+        "value_hi": "02 दिसंबर 2026"
       }
     ],
     "documents_en": [
-      "Login credentials (Roll Number / Password)",
-      "Supporting proof for objections"
+      "E-Admit Card",
+      "Valid Photo ID Proof"
     ],
     "documents_hi": [
-      "लॉगिन विवरण (रोल नंबर / पासवर्ड)",
-      "आपत्तियों के लिए सहायक प्रमाण"
+      "ई-प्रवेश पत्र",
+      "वैध फोटो पहचान पत्र"
     ],
-    "eligibility": [],
-    "exam_date": "2026-11-02",
+    "eligibility": [
+      {
+        "label_en": "Stage required",
+        "label_hi": "आवश्यक चरण",
+        "value_en": "Qualified candidates of 1st Phase (PET & PST)",
+        "value_hi": "प्रथम चरण (पीईटी और पीएसटी) में सफल उम्मीदवार"
+      }
+    ],
+    "exam_date": "2026-12-02",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is an online window provided by the Border Security Force allowing candidates to raise objections against questions or answers in the Computer Based Test (CBT) for Constable Tradesmen recruitment.",
-        "a_hi": "यह सीमा सुरक्षा बल द्वारा प्रदान किया गया एक ऑनलाइन माध्यम है जो उम्मीदवारों को कांस्टेबल ट्रेड्समैन भर्ती के लिए कंप्यूटर आधारित परीक्षा (सीबीटी) में प्रश्नों या उत्तरों के खिलाफ आपत्तियां उठाने की अनुमति देता है।",
-        "q_en": "What is the BSF Constable Tradesmen Objection Portal?",
-        "q_hi": "बीएसएफ कांस्टेबल ट्रेड्समैन आपत्ति पोर्टल क्या है?"
+        "a_en": "It is the second phase computer-based written examination for candidates who have successfully cleared the Physical Efficiency Test (PET) and Physical Standard Test (PST) for the Constable Tradesmen recruitment in BSF.",
+        "a_hi": "यह बीएसएफ में कांस्टेबल ट्रेड्समैन भर्ती के लिए शारीरिक दक्षता परीक्षा (पीईटी) और शारीरिक मानक परीक्षा (पीएसटी) सफलतापूर्वक पास करने वाले उम्मीदवारों के लिए दूसरे चरण की कंप्यूटर आधारित लिखित परीक्षा है।",
+        "q_en": "What is BSF Constable Tradesmen CBT Exam?",
+        "q_hi": "बीएसएफ कांस्टेबल ट्रेड्समैन सीबीटी परीक्षा क्या है?"
       }
     ],
-    "extra": [],
-    "faq": [
+    "extra": [
       {
-        "a_en": "The CBT was conducted on 02 November 2026.",
-        "a_hi": "सीबीटी 02 नवंबर 2026 को आयोजित किया गया था।",
-        "q_en": "When was the BSF Constable Tradesmen CBT conducted?",
-        "q_hi": "बीएसएफ कांस्टेबल ट्रेड्समैन सीबीटी कब आयोजित किया गया था?"
+        "label_en": "Exam Duration",
+        "label_hi": "परीक्षा की अवधि",
+        "value_en": "120 Minutes",
+        "value_hi": "120 मिनट"
       },
       {
-        "a_en": "The notice has been issued to inform candidates about the extension of the closing date for the objection management portal.",
-        "a_hi": "यह नोटिस उम्मीदवारों को आपत्ति प्रबंधन पोर्टल की अंतिम तिथि में विस्तार के बारे में सूचित करने के लिए जारी किया गया है।",
-        "q_en": "Why is the objection portal notice issued?",
-        "q_hi": "आपत्ति पोर्टल नोटिस क्यों जारी किया गया है?"
+        "label_en": "Shift Timings",
+        "label_hi": "पाली का समय",
+        "value_en": "1st Shift: 0900 hrs to 1100 hrs, 2nd Shift: 1300 hrs to 1500 hrs, 3rd Shift: 1700 hrs to 1900 hrs",
+        "value_hi": "प्रथम पाली: 0900 से 1100 बजे, द्वितीय पाली: 1300 से 1500 बजे, तृतीय पाली: 1700 से 1900 बजे"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The CBT exam is scheduled to be conducted on 02 December 2026.",
+        "a_hi": "सीबीटी परीक्षा 02 दिसंबर 2026 को आयोजित होने निर्धारित है।",
+        "q_en": "When is the BSF Constable Tradesmen CBT exam scheduled?",
+        "q_hi": "बीएसएफ कांस्टेबल ट्रेड्समैन सीबीटी परीक्षा कब निर्धारित है?"
+      },
+      {
+        "a_en": "E-admit cards will be live from 17 November 2026 to 02 December 2026.",
+        "a_hi": "ई-प्रवेश पत्र 17 नवंबर 2026 से 02 दिसंबर 2026 तक लाइव रहेंगे।",
+        "q_en": "When can I download the BSF Constable Tradesmen e-admit card?",
+        "q_hi": "मैं बीएसएफ कांस्टेबल ट्रेड्समैन ई-प्रवेश पत्र कब डाउनलोड कर सकता हूं?"
+      },
+      {
+        "a_en": "The link to download the e-admit card has been sent to the candidates' registered email and mobile numbers.",
+        "a_hi": "ई-प्रवेश पत्र डाउनलोड करने का लिंक उम्मीदवारों के पंजीकृत ईमेल और मोबाइल नंबर पर भेजा गया है।",
+        "q_en": "How will I receive my BSF Constable Tradesmen admit card?",
+        "q_hi": "मुझे मेरा बीएसएफ कांस्टेबल ट्रेड्समैन प्रवेश पत्र कैसे मिलेगा?"
+      },
+      {
+        "a_en": "The duration of the examination is 120 minutes.",
+        "a_hi": "परीक्षा की अवधि 120 मिनट है।",
+        "q_en": "What is the duration of the BSF Constable Tradesmen written exam?",
+        "q_hi": "बीएसएफ कांस्टेबल ट्रेड्समैन लिखित परीक्षा की अवधि क्या है?"
+      },
+      {
+        "a_en": "Only candidates who qualified the 1st phase i.e. PET and PST are eligible to appear for this exam.",
+        "a_hi": "केवल वे उम्मीदवार पात्र हैं जिन्होंने प्रथम चरण यानी पीईटी और पीएसटी उत्तीर्ण किया है।",
+        "q_en": "Who is eligible to appear for this BSF CBT exam?",
+        "q_hi": "इस बीएसएफ सीबीटी परीक्षा में शामिल होने के लिए कौन पात्र है?"
       }
     ],
     "fees": [],
-    "h1_en": "BSF Constable Tradesmen Answer Key Objection 2024 – Last Date Extended",
-    "h1_hi": "बीएसएफ कांस्टेबल ट्रेड्समैन आंसर की आपत्ति 2024 – अंतिम तिथि बढ़ाई गई",
+    "h1_en": "BSF Constable Tradesmen Exam Date 2024 Notice – CBT Schedule",
+    "h1_hi": "बीएसएफ कांस्टेबल ट्रेड्समैन परीक्षा तिथि 2024 नोटिस – सीबीटी शेड्यूल",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official BSF recruitment website.",
-      "Click on the objection management portal link for Constable Tradesmen CBT 2024.",
-      "Log in using your credentials.",
-      "Submit your objections along with supporting documents if applicable before the extended closing date."
+      "Check your registered email or mobile number for the direct link to download the e-admit card.",
+      "Visit the official BSF website rectt.bsf.gov.in if needed.",
+      "Download and print your E-Admit Card between 17 Nov 2026 and 02 Dec 2026.",
+      "Carry the printed admit card along with valid photo ID to the exam center."
     ],
     "how_hi": [
-      "बीएसएफ की आधिकारिक भर्ती वेबसाइट पर जाएं।",
-      "कांस्टेबल ट्रेड्समैन सीबीटी 2024 के लिए आपत्ति प्रबंधन पोर्टल लिंक पर क्लिक करें।",
-      "अपने विवरण का उपयोग करके लॉगिन करें।",
-      "बढ़ी हुई अंतिम तिथि से पहले अपनी आपत्तियां दर्ज करें।"
+      "ई-प्रवेश पत्र डाउनलोड करने के लिए सीधे लिंक हेतु अपना पंजीकृत ईमेल या मोबाइल नंबर जांचें।",
+      "यदि आवश्यक हो तो आधिकारिक बीएसएफ वेबसाइट rectt.bsf.gov.in पर जाएं।",
+      "17 नवंबर 2026 से 02 दिसंबर 2026 के बीच अपना ई-प्रवेश पत्र डाउनलोड और प्रिंट करें।",
+      "परीक्षा केंद्र पर वैध फोटो आईडी के साथ मुद्रित प्रवेश पत्र ले जाएं।"
     ],
-    "intro_en": "The Border Security Force (BSF) has released an important notice regarding the extension of the closing date for the objection management portal. This portal is for candidates who appeared in the Computer Based Test (CBT) conducted on 02 November 2026 for the recruitment of Constable (Tradesmen) Exam-2024. Candidates can log in to the official portal to raise objections against the provisional answer key. Read further for details on how to submit your queries.",
-    "intro_hi": "सीमा सुरक्षा बल (बीएसएफ) ने आपत्ति प्रबंधन पोर्टल की अंतिम तिथि बढ़ाने के संबंध में एक महत्वपूर्ण नोटिस जारी किया है। यह पोर्टल उन उम्मीदवारों के लिए है जो कांस्टेबल (ट्रेड्समैन) भर्ती-2024 के लिए 02 नवंबर 2026 को आयोजित कंप्यूटर आधारित परीक्षा (सीबीटी) में शामिल हुए थे। उम्मीदवार अनंतिम उत्तर कुंजी के खिलाफ आपत्तियां दर्ज करने के लिए आधिकारिक पोर्टल पर लॉगिन कर सकते हैं।",
+    "intro_en": "The Border Security Force (BSF) has released the official notice for the conduct of the 2nd Phase Written Examination (Computer Based Test) for the recruitment of Constable (Tradesmen) in BSF Exam 2024-25. Candidates who have qualified the 1st phase (PET & PST) are eligible to appear for the CBT. The examination will be held on 02 December 2026 across various centers in India in three shifts. E-admit cards can be downloaded from 17 November 2026 onwards.",
+    "intro_hi": "सीमा सुरक्षा बल (बीएसएफ) ने बीएसएफ परीक्षा 2024-25 में कांस्टेबल (ट्रेड्समैन) के पद के लिए दूसरे चरण की लिखित परीक्षा (कंप्यूटर आधारित टेस्ट) के आयोजन के लिए आधिकारिक नोटिस जारी कर दिया है। जो उम्मीदवार पहले चरण (पीईटी और पीएसटी) में सफल हुए हैं, वे सीबीटी में शामिल होने के पात्र हैं। परीक्षा 02 दिसंबर 2026 को पूरे भारत में विभिन्न केंद्रों पर तीन पालियों में आयोजित की जाएगी। ई-प्रवेश पत्र 17 नवंबर 2026 से डाउनलोड किए जा सकते हैं।",
     "last_date": null,
     "mistakes_en": [
-      "Do not wait until the last moment to submit objections.",
-      "Ensure correct supporting documents are referenced."
+      "Do not wait until the last day to download the admit card.",
+      "Ensure your email and mobile number details are checked properly as admit cards are sent directly."
     ],
     "mistakes_hi": [
-      "आपत्तियां दर्ज करने के लिए अंतिम समय तक प्रतीक्षा न करें।",
-      "सुनिश्चित करें कि सही सहायक दस्तावेजों का संदर्भ दिया गया है।"
+      "प्रवेश पत्र डाउनलोड करने के लिए अंतिम दिन तक प्रतीक्षा न करें।",
+      "सुनिश्चित करें कि आपके ईमेल और मोबाइल नंबर के विवरण की ठीक से जांच की गई है क्योंकि प्रवेश पत्र सीधे भेजे जाते हैं।"
     ],
     "not_en": [],
     "not_hi": [],
-    "notice_date": null,
+    "notice_date": "2026-11-00",
     "official_site": "https://rectt.bsf.gov.in/",
     "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Post Name",
-        "label_hi": "पद का नाम",
+        "label_en": "Posts",
+        "label_hi": "पद",
         "value_en": "Constable (Tradesmen)",
         "value_hi": "कांस्टेबल (ट्रेड्समैन)"
       },
       {
-        "label_en": "Exam Date",
+        "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
-        "value_en": "02 Nov 2026",
-        "value_hi": "02 नव 2026"
+        "value_en": "02 Dec 2026",
+        "value_hi": "02 दिसंबर 2026"
       },
       {
-        "label_en": "Notice Type",
-        "label_hi": "नोटिस का प्रकार",
-        "value_en": "Objection Portal Date Extension",
-        "value_hi": "आपत्ति पोर्टल तिथि विस्तार"
+        "label_en": "Admit card date",
+        "label_hi": "प्रवेश पत्र तिथि",
+        "value_en": "17 Nov 2026 to 02 Dec 2026",
+        "value_hi": "17 नवंबर 2026 से 02 दिसंबर 2026"
+      },
+      {
+        "label_en": "Helpdesk number",
+        "label_hi": "हेल्पलाइन नंबर",
+        "value_en": "+91-9513251955",
+        "value_hi": "+91-9513251955"
       }
     ],
     "salary": [],
     "selection_en": [
-      "Computer Based Test (CBT)",
-      "Objection Management",
-      "Further Selection Stages"
+      "Phase I: PET & PST",
+      "Phase II: Written Examination (Computer Based Test)",
+      "Medical Examination / Final Merit"
     ],
     "selection_hi": [
-      "कंप्यूटर आधारित परीक्षा (सीबीटी)",
-      "आपत्ति प्रबंधन",
-      "आगे के चयन चरण"
+      "चरण I: पीईटी और पीएसटी",
+      "चरण II: लिखित परीक्षा (कंप्यूटर आधारित टेस्ट)",
+      "चिकित्सा परीक्षा / अंतिम मेरिट"
     ],
     "share_card": {
-      "headline_en": "Date Extended",
-      "headline_hi": "अंतिम तिथि बढ़ाई गई",
-      "kind": "corr",
-      "line_en": "Tradesmen CBT Objection",
-      "line_hi": "ट्रेड्समैन सीबीटी आपत्ति",
+      "headline_en": "Exam Date Notice",
+      "headline_hi": "परीक्षा तिथि नोटिस",
+      "kind": "admit",
+      "line_en": "Constable (Tradesmen)",
+      "line_hi": "कांस्टेबल (ट्रेड्समैन)",
       "posts": null
     },
-    "status_en": "Objection management portal closing date extended",
-    "status_hi": "आपत्ति प्रबंधन पोर्टल की अंतिम तिथि बढ़ाई गई",
-    "summary_en": "Border Security Force (BSF) has extended the closing date for the objection management portal regarding the Computer Based Test (CBT) held on 02.11.2026 for Constable (Tradesmen) recruitment 2024. Candidates who appeared for the exam can submit their objections through the official portal. Check the updated closing date and follow the necessary steps to raise objections.",
-    "summary_hi": "सीमा सुरक्षा बल (बीएसएफ) ने कांस्टेबल (ट्रेड्समैन) भर्ती 2024 के लिए 02.11.2026 को आयोजित कंप्यूटर आधारित परीक्षा (सीबीटी) के संबंध में आपत्ति प्रबंधन पोर्टल की अंतिम तिथि बढ़ा दी है। परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक पोर्टल के माध्यम से अपनी आपत्तियां दर्ज करा सकते हैं।",
+    "status_en": "Exam date announced, CBT scheduled for 02 Dec 2026",
+    "status_hi": "परीक्षा तिथि घोषित, सीबीटी 02 दिसंबर 2026 को निर्धारित",
+    "summary_en": "Border Security Force (BSF) has announced the written examination (CBT) date for Constable (Tradesmen) Recruitment 2024-25. The exam is scheduled for 02 Dec 2026, and e-admit cards will be available from 17.11.2026 to 02.12.2026.",
+    "summary_hi": "सीमा सुरक्षा बल (बीएसएफ) ने कांस्टेबल (ट्रेड्समैन) भर्ती 2024-25 के लिए लिखित परीक्षा (सीबीटी) की तिथि की घोषणा कर दी है। परीक्षा 02 दिसंबर 2026 को निर्धारित है, और ई-प्रवेश पत्र 17.11.2026 से 02.12.2026 तक उपलब्ध होंगे।",
     "vacancies": [],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the BSF Constable Tradesmen CBT held on 02.11.2026"
+      "Candidates who qualified the 1st phase (PET & PST) for BSF Constable Tradesmen 2024-25."
     ],
     "who_hi": [
-      "वे उम्मीदवार जो 02.11.2026 को आयोजित बीएसएफ कांस्टेबल ट्रेड्समैन सीबीटी में शामिल हुए थे"
+      "बीएसएफ कांस्टेबल ट्रेड्समैन 2024-25 के लिए प्रथम चरण (पीईटी और पीएसटी) उत्तीर्ण करने वाले उम्मीदवार।"
     ]
   },
   "pdf": {
@@ -200,11 +247,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-11T07:49:59Z",
-  "qual": [
-    "10th",
-    "iti"
-  ],
-  "rewrite": true,
   "slug": "bsf-constable-tradesmen-answer-key-objection-2024-last-date-exte",
   "source_id": "bsf-recruitment",
   "status": "approved",
