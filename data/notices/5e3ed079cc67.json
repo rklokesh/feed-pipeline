@@ -1,0 +1,83 @@
+{
+  "board_url": "https://ppsc.gov.in/index.aspx",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "SUPPLY AND SANITATION, GOVT. OF PUNJAB 1. With reference to Advertisement No. 202231 dated 13.06.2022 for recruitment of Senior Assistants in department of Water Supply and Sanitation, Govt. of Punja",
+      "source": "rule",
+      "value": "202231 dated 13.06.2022 for recruitment o"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "With reference to Advertisement No. 202231 dated 13.06.2022"
+      }
+    },
+    "apply_or_official_url": {
+      "evidence": "RVICE COMMISSION BARADARI GARDEN, PATIALA- 147001 WEBSITE : http://ppsc.gov.in PUBLIC NOTICE RECRUITMENT TO 13 POSTS OF SENIOR ASSISTANT (GROUP B) IN THE DEPA",
+      "source": "rule",
+      "value": "http://ppsc.gov.in"
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "http://ppsc.gov.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "WEBSITE : http://ppsc.gov.in"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "SENIOR ASSISTANT (GROUP B)"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "RECRUITMENT TO 13 POSTS OF SENIOR ASSISTANT (GROUP B) IN THE"
+      }
+    },
+    "total_vacancies": {
+      "evidence": "1 WEBSITE : http://ppsc.gov.in PUBLIC NOTICE RECRUITMENT TO 13 POSTS OF SENIOR ASSISTANT (GROUP B) IN THE DEPARTMENT OF WATER SUPPLY AND SANITATION,",
+      "source": "rule",
+      "value": 13
+    },
+    "total_vacancies_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "total_vacancies": "So, now the total number of posts of Senior Assistant will be 12 in department of Water Supply and Sanitation, Govt. of Punjab."
+      }
+    }
+  },
+  "first_seen": "2026-11-11T10:12:54+00:00",
+  "id": "5e3ed079cc67",
+  "kind": "notification",
+  "org": "PPSC",
+  "pdf": {
+    "bytes": 160126,
+    "pages": 1,
+    "sha256": "ab2a95203384686ac2117d011cffbf7e310782c4dd0c0c89af508bb056d7a13d",
+    "text_kind": "text"
+  },
+  "source_id": "ppsc-notices",
+  "status": "pending_review",
+  "title": "PUBLIC NOTICE REGARDING REDUCTION OF 01 POST OF SENIOR ASSISTANT GROUP-B IN VARIOUS DEPARTMENTS UPLOADED ON 11-11-2026",
+  "url": "https://ppsc.gov.in/index.aspx?page=2808&tabid=10&tablinkid=6847"
+}
