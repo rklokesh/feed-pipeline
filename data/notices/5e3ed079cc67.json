@@ -1,5 +1,23 @@
 {
+  "auto_published": true,
   "board_url": "https://ppsc.gov.in/index.aspx",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Senior Assistant",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Punjab Public Service Commission has reduced one post for the Senior Assistant recruitment, bringing the total number of posts to 12.",
+    "summary_hi": "पंजाब लोक सेवा आयोग ने सीनियर असिस्टेंट भर्ती के लिए एक पद कम कर दिया है, जिससे कुल पदों की संख्या 12 हो गई है।",
+    "title_en": "PPSC Senior Assistant Vacancy Reduction Notice 2026 – 1 Post Reduced",
+    "title_hi": "पीपीएससी सीनियर असिस्टेंट वैकेंसी कमी सूचना 2026 – 1 पद कम",
+    "type": "Update",
+    "vacancies": 12
+  },
+  "editor_notes": [],
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -68,16 +86,208 @@
   },
   "first_seen": "2026-11-11T10:12:54+00:00",
   "id": "5e3ed079cc67",
+  "issue": 1213,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-11",
   "org": "PPSC",
+  "page": {
+    "after_en": [
+      "The recruitment process will continue for the remaining 12 revised posts as per the original terms and conditions."
+    ],
+    "after_hi": [
+      "मूल नियमों और शर्तों के अनुसार शेष 12 संशोधित पदों के लिए भर्ती प्रक्रिया जारी रहेगी।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "http://ppsc.gov.in",
+    "changes": [
+      {
+        "new_en": "12 posts",
+        "new_hi": "12 पद",
+        "old_en": "13 posts",
+        "old_hi": "13 पद",
+        "what_en": "Total number of posts",
+        "what_hi": "कुल पदों की संख्या"
+      }
+    ],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Read the official notice to understand the category-wise vacancy adjustment."
+    ],
+    "checklist_hi": [
+      "श्रेणी-वार रिक्ति समायोजन को समझने के लिए आधिकारिक सूचना पढ़ें।"
+    ],
+    "conducted_by_en": "Punjab Public Service Commission (PPSC)",
+    "conducted_by_hi": "पंजाब लोक सेवा आयोग (पीपीएससी)",
+    "dates": [
+      {
+        "label_en": "Original advertisement date",
+        "label_hi": "मूल विज्ञापन तिथि",
+        "value_en": "13 Jun 2022",
+        "value_hi": "13 जून 2022"
+      },
+      {
+        "label_en": "Notice issue date",
+        "label_hi": "सूचना जारी होने की तिथि",
+        "value_en": "11 Nov 2026",
+        "value_hi": "11 नवंबर 2026"
+      }
+    ],
+    "documents_en": [],
+    "documents_hi": [],
+    "eligibility": [
+      {
+        "label_en": "Conditions",
+        "label_hi": "शर्तें",
+        "value_en": "All other conditions such as age criteria, eligibility, and essential qualification remain same as the original advertisement.",
+        "value_hi": "आयु मानदंड, पात्रता और आवश्यक योग्यता जैसी अन्य सभी शर्तें मूल विज्ञापन के समान रहेंगी।"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "This notice informs candidates about the reduction of one post for the Senior Assistant (Group B) recruitment in the Department of Water Supply and Sanitation, bringing the total number of available posts from 13 down to 12.",
+        "a_hi": "यह नोटिस उम्मीदवारों को जल आपूर्ति और स्वच्छता विभाग में सीनियर असिस्टेंट (ग्रुप बी) भर्ती के लिए एक पद कम करने की सूचना देता है, जिससे उपलब्ध कुल पदों की संख्या 13 से घटकर 12 हो गई है।",
+        "q_en": "What is this PPSC notice about?",
+        "q_hi": "यह पीपीएससी नोटिस किसके बारे में है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Department",
+        "label_hi": "विभाग",
+        "value_en": "Department of Water Supply and Sanitation, Govt. of Punjab",
+        "value_hi": "जल आपूर्ति और स्वच्छता विभाग, पंजाब सरकार"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "PPSC has reduced 1 post for Senior Assistant (Group B) in the Department of Water Supply and Sanitation.",
+        "a_hi": "पीपीएससी ने जल आपूर्ति और स्वच्छता विभाग में सीनियर असिस्टेंट (ग्रुप बी) के लिए 1 पद कम कर दिया है।",
+        "q_en": "How many posts have been reduced by PPSC for Senior Assistant?",
+        "q_hi": "पीपीएससी द्वारा सीनियर असिस्टेंट के कितने पद कम किए गए हैं?"
+      },
+      {
+        "a_en": "The total number of posts is now 12, revised from the earlier 13 posts.",
+        "a_hi": "पहले के 13 पदों से संशोधित होकर कुल पदों की संख्या अब 12 हो गई है।",
+        "q_en": "What is the total number of posts now available?",
+        "q_hi": "अब कुल कितने पद उपलब्ध हैं?"
+      },
+      {
+        "a_en": "One post reserved for Scheduled Castes (Others), Punjab (Category Code: 77) has been withdrawn.",
+        "a_hi": "अनुसूचित जाति (अन्य), पंजाब (श्रेणी कोड: 77) के लिए आरक्षित एक पद वापस ले लिया गया है।",
+        "q_en": "Which category post has been withdrawn?",
+        "q_hi": "किस श्रेणी का पद वापस लिया गया है?"
+      },
+      {
+        "a_en": "No, all other conditions such as age criteria, eligibility, and essential qualifications remain the same as mentioned in the original advertisement.",
+        "a_hi": "नहीं, आयु मानदंड, पात्रता और आवश्यक योग्यता जैसी अन्य सभी शर्तें मूल विज्ञापन के समान ही रहेंगी।",
+        "q_en": "Have the eligibility criteria or age limits changed?",
+        "q_hi": "क्या पात्रता मापदंड या आयु सीमा बदल गई है?"
+      },
+      {
+        "a_en": "The original advertisement number is 202231 dated 13.06.2022.",
+        "a_hi": "मूल विज्ञापन संख्या 202231 दिनांक 13.06.2022 है।",
+        "q_en": "What is the original advertisement number for this recruitment?",
+        "q_hi": "इस भर्ती के लिए मूल विज्ञापन संख्या क्या है?"
+      },
+      {
+        "a_en": "You can read the official notice on the PPSC website at http://ppsc.gov.in.",
+        "a_hi": "आप पीपीएससी की वेबसाइट http://ppsc.gov.in पर आधिकारिक नोटिस पढ़ सकते हैं।",
+        "q_en": "Where can I read the official notice?",
+        "q_hi": "मैं आधिकारिक नोटिस कहां पढ़ सकता हूं?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "PPSC Senior Assistant Vacancy Reduction Notice 2026 – 1 Post Reduced",
+    "h1_hi": "पीपीएससी सीनियर असिस्टेंट वैकेंसी कमी सूचना 2026 – 1 पद कम",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official PPSC website at http://ppsc.gov.in",
+      "Check the public notices section to read the complete vacancy reduction notice."
+    ],
+    "how_hi": [
+      "आधिकारिक पीपीएससी वेबसाइट http://ppsc.gov.in पर जाएं",
+      "पूरी रिक्ति कमी सूचना पढ़ने के लिए पब्लिक नोटिस अनुभाग देखें।"
+    ],
+    "intro_en": "The Punjab Public Service Commission (PPSC) has released a public notice regarding the reduction of 01 post of Senior Assistant Group-B in the Department of Water Supply and Sanitation, Govt. of Punjab. With reference to Advertisement No. 202231 dated 13.06.2022, one post reserved for Scheduled Castes (Others), Punjab (Category Code: 77) has been withdrawn as per the department's letter dated 29.09.2026. Consequently, the total number of vacancies is now reduced from 13 to 12 posts. Candidates are advised to note that all other terms, conditions, age criteria, and essential qualifications mentioned in the original advertisement remain unchanged.",
+    "intro_hi": "पंजाब लोक सेवा आयोग (पीपीएससी) ने जल आपूर्ति और स्वच्छता विभाग, पंजाब सरकार में सीनियर असिस्टेंट ग्रुप-बी के 01 पद को कम करने के संबंध में एक सार्वजनिक सूचना जारी की है। विज्ञापन संख्या 202231 दिनांक 13.06.2022 के संदर्भ में, विभाग के दिनांक 29.09.2026 के पत्र के अनुसार अनुसूचित जाति (अन्य), पंजाब (श्रेणी कोड: 77) के लिए आरक्षित एक पद वापस ले लिया गया है। परिणामस्वरूप, कुल रिक्तियों की संख्या अब 13 से घटकर 12 पद कर दी गई है। उम्मीदवारों को सलाह दी जाती है कि वे ध्यान दें कि मूल विज्ञापन में उल्लिखित अन्य सभी नियम, शर्तें, आयु मानदंड और आवश्यक योग्यताएं अपरिवर्तित रहेंगी।",
+    "last_date": null,
+    "mistakes_en": [],
+    "mistakes_hi": [],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-11",
+    "official_site": "http://ppsc.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Senior Assistant (Group-B)",
+        "value_hi": "सीनियर असिस्टेंट (ग्रुप-बी)"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल वैकेंसी",
+        "value_en": "12 posts (revised from 13)",
+        "value_hi": "12 पद (13 से संशोधित)"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "202231 dated 13.06.2022",
+        "value_hi": "202231 दिनांक 13.06.2022"
+      }
+    ],
+    "salary": [],
+    "selection_en": [],
+    "selection_hi": [],
+    "share_card": {
+      "headline_en": "Vacancy Reduced",
+      "headline_hi": "पदों में कमी",
+      "kind": "corr",
+      "line_en": "Senior Assistant Group-B",
+      "line_hi": "सीनियर असिस्टेंट ग्रुप-बी",
+      "posts": 12
+    },
+    "status_en": "Vacancy reduction notice released, total posts revised to 12",
+    "status_hi": "रिक्ति कमी की सूचना जारी, कुल पद संशोधित होकर 12 हुए",
+    "summary_en": "Punjab Public Service Commission has issued a public notice reducing 1 post for Senior Assistant (Group B) recruitment in the Department of Water Supply and Sanitation. The total number of posts is now revised to 12. All other conditions of the original advertisement remain unchanged.",
+    "summary_hi": "पंजाब लोक सेवा आयोग ने जल आपूर्ति और स्वच्छता विभाग में सीनियर असिस्टेंट (ग्रुप बी) भर्ती के लिए 1 पद कम करने की सार्वजनिक सूचना जारी की है। कुल पदों की संख्या अब संशोधित होकर 12 हो गई है। मूल विज्ञापन की अन्य सभी शर्तें यथावत रहेंगी।",
+    "vacancies": [
+      {
+        "detail_en": "Total posts revised from 13 to 12 after withdrawal of 1 post under Scheduled Castes (Others), Punjab (Category Code: 77)",
+        "detail_hi": "अनुसूचित जाति (अन्य), पंजाब (श्रेणी कोड: 77) के तहत 1 पद वापस लेने के बाद कुल पद 13 से संशोधित कर 12 किए गए",
+        "post_en": "Senior Assistant (Group-B)",
+        "post_hi": "सीनियर असिस्टेंट (ग्रुप-बी)",
+        "total": "12"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates who applied for Senior Assistant Group-B under Advertisement No. 202231"
+    ],
+    "who_hi": [
+      "विज्ञापन संख्या 202231 के तहत सीनियर असिस्टेंट ग्रुप-बी के लिए आवेदन करने वाले उम्मीदवार"
+    ]
+  },
   "pdf": {
     "bytes": 160126,
     "pages": 1,
     "sha256": "ab2a95203384686ac2117d011cffbf7e310782c4dd0c0c89af508bb056d7a13d",
     "text_kind": "text"
   },
+  "published_at": "2026-11-11T10:18:15Z",
+  "qual": [
+    "graduate"
+  ],
+  "slug": "ppsc-senior-assistant-vacancy-reduction-notice-2026-1-post-reduc",
   "source_id": "ppsc-notices",
-  "status": "pending_review",
+  "status": "approved",
   "title": "PUBLIC NOTICE REGARDING REDUCTION OF 01 POST OF SENIOR ASSISTANT GROUP-B IN VARIOUS DEPARTMENTS UPLOADED ON 11-11-2026",
   "url": "https://ppsc.gov.in/index.aspx?page=2808&tabid=10&tablinkid=6847"
 }
