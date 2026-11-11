@@ -24,7 +24,7 @@ jobs:
   decide:
     if: github.event_name == 'workflow_dispatch' || github.event.label.name == 'approve' || github.event.label.name == 'reject'
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 90   # a full rewrite of every page takes longer than 30 min
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
