@@ -11,7 +11,7 @@ on:
         description: "Send a test message only (true/false)"
         default: "false"
       whatsapp_test:
-        description: "WhatsApp only: find the channel and send one test post (true/false)"
+        description: "WhatsApp only: send the newest open job notice once as a sample post (true/false)"
         default: "false"
 
 permissions:

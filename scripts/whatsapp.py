@@ -6,7 +6,7 @@ only records the existing notices (no flood). Kept gentle for WhatsApp and the f
   - only notices published in the last 48 hours are posted one by one; anything older (e.g. after the Mac was off)
     is marked as done without posting.
   python scripts/whatsapp.py            # post new notices
-  python scripts/whatsapp.py --test     # find the channel and send one test post
+  python scripts/whatsapp.py --test     # send the newest open job notice once (sample post)
 """
 from __future__ import annotations
 
@@ -95,13 +95,18 @@ def main():
     chan = find_channel(state)
     if not chan:
         return finish(state)
-    if "--test" in sys.argv:
-        code, j = call("POST", "/messages/text", json={"to": chan, "body":
-            "✅ SarkariChart alerts are connected. New govt job notices will appear here automatically.\n"
-            "सरकारी चार्ट अलर्ट जुड़ गए हैं। नई सरकारी नौकरी की सूचनाएँ यहाँ अपने-आप आएँगी।\n\nhttps://sarkarichart.com"})
-        log.append(f"test -> {code} {'sent' if j.get('sent') else 'not sent: ' + str(j.get('error') or '')[:120]}")
-        return finish(state)
     notices = [json.loads(f.read_text()) for f in (ROOT / "data/notices").glob("*.json")]
+    if "--test" in sys.argv:   # send the newest open job notice once, exactly as a real post looks
+        today_s = dt.date.today().isoformat()
+        jobs = [n for n in notices if n.get("status") == "approved" and n.get("slug")
+                and (n.get("card") or {}).get("type", "Job") == "Job"
+                and ((n.get("card") or {}).get("last_date") or "9999") >= today_s]
+        jobs.sort(key=lambda n: n.get("published_at") or "", reverse=True)
+        if jobs:
+            post(chan, jobs[0])
+        else:
+            log.append("test: no open job notice found")
+        return finish(state)
     live = [n for n in notices if n.get("status") == "approved" and n.get("slug")]
     done = set(state.get("posted", []))
     if "posted" not in state:   # first run: remember what is already live, post nothing
