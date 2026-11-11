@@ -18,12 +18,15 @@
   },
   "editor_notes": [],
   "elig": {
-    "age_max": null,
+    "age_max": 32,
     "age_min": null,
-    "age_on": null,
+    "age_on": "2026-12-31",
     "domicile": null,
-    "qual": null,
-    "relax": {}
+    "qual": "graduate",
+    "relax": {
+      "SC": 5,
+      "ST": 5
+    }
   },
   "exam": {},
   "extraction": {
@@ -35,96 +38,159 @@
   "issue": 1215,
   "issue_tidy": true,
   "kind": "notification",
-  "notice_date": "2026-11-12",
+  "notice_date": "2026-11-10",
   "org": "BSF",
   "page": {
     "after_en": [
-      "Appearance in the competitive examination",
-      "Document verification and medical examination",
-      "Final selection and posting"
+      "Written examination",
+      "Physical standards and efficiency tests",
+      "Medical examination and document verification"
     ],
     "after_hi": [
-      "प्रतियोगी परीक्षा में उपस्थिति",
-      "दस्तावेज़ सत्यापन और चिकित्सा परीक्षा",
-      "अंतिम चयन और पोस्टिंग"
+      "लिखित परीक्षा",
+      "शारीरिक मानक और दक्षता परीक्षण",
+      "चिकित्सा परीक्षा और दस्तावेज़ सत्यापन"
     ],
-    "age": [],
+    "age": [
+      {
+        "label_en": "Upper age limit",
+        "label_hi": "अधिकतम आयु सीमा",
+        "value_en": "32 years",
+        "value_hi": "32 वर्ष"
+      },
+      {
+        "label_en": "As on date",
+        "label_hi": "इस तिथि के अनुसार",
+        "value_en": "Closing date of submission of applications (31 Dec 2026)",
+        "value_hi": "आवेदन जमा करने की अंतिम तिथि (31 दिसं 2026)"
+      },
+      {
+        "label_en": "SC/ST relaxation",
+        "label_hi": "अजा/जजा छूट",
+        "value_en": "5 years relaxation in upper age limit",
+        "value_hi": "ऊपरी आयु सीमा में 5 वर्ष की छूट"
+      }
+    ],
     "apply_start": "2026-11-12",
-    "apply_url": "https://rectt.bsf.gov.in/",
+    "apply_url": "https://bsf.mha.gov.in",
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check eligibility criteria before applying",
-      "Keep service and educational documents ready",
-      "Submit the online form before 31 Dec 2026"
+      "Verify service eligibility and APAR records",
+      "Check physical standard requirements",
+      "Submit online application before December 31, 2026"
     ],
     "checklist_hi": [
-      "आवेदन करने से पहले पात्रता मापदंड जांचें",
-      "सेवा और शैक्षणिक दस्तावेज तैयार रखें",
-      "31 दिसंबर 2026 से पहले ऑनलाइन फॉर्म जमा करें"
+      "सेवा पात्रता और एपीएआर रिकॉर्ड सत्यापित करें",
+      "शारीरिक मानक आवश्यकताओं की जांच करें",
+      "31 दिसंबर 2026 से पहले ऑनलाइन आवेदन जमा करें"
     ],
     "conducted_by_en": "Border Security Force (BSF)",
     "conducted_by_hi": "सीमा सुरक्षा बल (बीएसएफ)",
     "dates": [
       {
+        "label_en": "Notification date",
+        "label_hi": "अधिसूचना तिथि",
+        "value_en": "10 Nov 2026",
+        "value_hi": "10 नवं 2026"
+      },
+      {
         "label_en": "Online application starts",
         "label_hi": "ऑनलाइन आवेदन शुरू",
         "value_en": "12 Nov 2026",
-        "value_hi": "12 नवंबर 2026"
+        "value_hi": "12 नवं 2026"
       },
       {
-        "label_en": "Last date to apply",
-        "label_hi": "आवेदन की अंतिम तिथि",
+        "label_en": "Last date for submission of applications",
+        "label_hi": "आवेदन जमा करने की अंतिम तिथि",
         "value_en": "31 Dec 2026",
-        "value_hi": "31 दिसंबर 2026"
+        "value_hi": "31 दिसं 2026"
       }
     ],
     "documents_en": [
-      "Service records",
-      "Educational certificates",
-      "ID proof"
+      "Graduation certificate and marksheet",
+      "Service records and APAR gradings",
+      "Medical fitness certificate (SHAPE-I)"
     ],
     "documents_hi": [
-      "सेवा रिकॉर्ड",
-      "शैक्षणिक प्रमाण पत्र",
-      "पहचान प्रमाण"
+      "स्नातक प्रमाण पत्र और अंक पत्र",
+      "सेवा रिकॉर्ड और एपीएआर ग्रेडिंग",
+      "चिकित्सा फिटनेस प्रमाण पत्र (शेप-आई)"
     ],
-    "eligibility": [],
+    "eligibility": [
+      {
+        "label_en": "Service eligibility",
+        "label_hi": "सेवा पात्रता",
+        "value_en": "Completed four years regular service including basic training in respective forces (BSF, CRPF, ITBP, SSB)",
+        "value_hi": "संबंधित बलों (बीएसएफ, सीआरपीएफ, आईटीबीपी, एसएसबी) में बुनियादी प्रशिक्षण सहित चार वर्ष की नियमित सेवा पूरी की हो"
+      },
+      {
+        "label_en": "Education",
+        "label_hi": "शिक्षा",
+        "value_en": "Graduation from a recognized university or equivalent",
+        "value_hi": "मान्यता प्राप्त विश्वविद्यालय से स्नातक या समकक्ष"
+      },
+      {
+        "label_en": "Clean record",
+        "label_hi": "स्वच्छ रिकॉर्ड",
+        "value_en": "Minimum Good APARs grading of last 5 years (or 4 years if 4 years service completed) and unblemished clean record of entire service until issue of offer of appointment",
+        "value_hi": "पिछले 5 वर्षों की न्यूनतम अच्छी एपीएआर ग्रेडिंग (या 4 वर्ष की सेवा होने पर 4 वर्ष की) और नियुक्ति पत्र जारी होने तक संपूर्ण सेवा का निर्दोष स्वच्छ रिकॉर्ड"
+      },
+      {
+        "label_en": "Medical category",
+        "label_hi": "मेडिकल श्रेणी",
+        "value_en": "SHAPE-I (Applications of candidates having Low Medical Category will not be entertained)",
+        "value_hi": "शेप-आई (कम मेडिकल श्रेणी वाले उम्मीदवारों के आवेदन स्वीकार नहीं किए जाएंगे)"
+      }
+    ],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is a Limited Departmental Competitive Examination conducted by the Border Security Force to recruit eligible personnel for the post of Sub-Inspector (GD).",
-        "a_hi": "यह सब-इंस्पेक्टर (जीडी) के पद के लिए योग्य कर्मियों की भर्ती के लिए सीमा सुरक्षा बल द्वारा आयोजित एक सीमित विभागीय प्रतियोगी परीक्षा है।",
-        "q_en": "What is BSF Sub-Inspector (GD) LDCE 2026?",
-        "q_hi": "बीएसएफ सब-इंस्पेक्टर (जीडी) एलडीसीई 2026 क्या है?"
+        "a_en": "It is a Limited Departmental Competitive Examination conducted to promote eligible serving personnel (Constables, Head Constables, and ASIs) of CAPFs (BSF, CRPF, ITBP, SSB) to the post of Sub-Inspector (GD).",
+        "a_hi": "यह सीएपीएफ (बीएसएफ, सीआरपीएफ, आईटीबीपी, एसएसबी) के योग्य सेवारत कर्मियों (कांस्टेबल, हेड कांस्टेबल और एएसआई) को सब-inspector (जीडी) के पद पर पदोन्नत करने के लिए आयोजित की जाने वाली एक सीमित विभागीय प्रतियोगी परीक्षा है।",
+        "q_en": "What is BSF SI LDCE Recruitment?",
+        "q_hi": "बीएसएफ एसआई एलडीसीई भर्ती क्या है?"
       }
     ],
-    "extra": [],
+    "extra": [
+      {
+        "label_en": "Helpline numbers",
+        "label_hi": "हेल्पलाइन नंबर",
+        "value_en": "011-24364851, 011-24364852",
+        "value_hi": "011-24364851, 011-24364852"
+      }
+    ],
     "faq": [
       {
-        "a_en": "The last date to apply online is 31 Dec 2026.",
-        "a_hi": "ऑनलाइन आवेदन करने की अंतिम तिथि 31 दिसंबर 2026 है।",
-        "q_en": "What is the last date to apply for BSF SI GD LDCE 2026?",
-        "q_hi": "बीएसएफ एसआई जीडी एलडीसीई 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+        "a_en": "The last date to submit online applications is December 31, 2026.",
+        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 31 दिसंबर 2026 है।",
+        "q_en": "What is the last date to apply for BSF SI LDCE 2026?",
+        "q_hi": "बीएसएफ एसआई एलडीसीई 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "Eligible departmental candidates as per the BSF guidelines can apply for the Sub-Inspector (GD) LDCE 2026.",
-        "a_hi": "बीएसएफ दिशानिर्देशों के अनुसार योग्य विभागीय उम्मीदवार सब-इंस्पेक्टर (जीडी) एलडीसीई 2026 के लिए आवेदन कर सकते हैं।",
-        "q_en": "Who can apply for this examination?",
-        "q_hi": "इस परीक्षा के लिए कौन आवेदन कर सकता है?"
+        "a_en": "Serving Constables (GD/Tradesmen), Head Constables (GD), and ASIs (GD) of BSF, CRPF, ITBP, and SSB who have completed 4 years of regular service, possess a graduation degree, and meet medical and APAR criteria are eligible.",
+        "a_hi": "बीएसएफ, सीआरपीएफ, आईटीबीपी और एसएसबी के सेवारत कांस्टेबल (जीडी/ट्रेड्समैन), हेड कांस्टेबल (जीडी) और एएसआई (जीडी) जिन्होंने 4 वर्ष की नियमित सेवा पूरी कर ली है, जिनके पास स्नातक की डिग्री है और जो चिकित्सा व एपीएआर मानदंडों को पूरा करते हैं, पात्र हैं।",
+        "q_en": "Who is eligible to apply for BSF SI LDCE 2026?",
+        "q_hi": "बीएसएफ एसआई एलडीसीई 2026 के लिए कौन आवेदन करने के पात्र हैं?"
       },
       {
-        "a_en": "A total of 1 vacancy has been announced for Sub-Inspector (GD).",
-        "a_hi": "सब-इंस्पेक्टर (जीडी) के लिए कुल 1 रिक्ति की घोषणा की गई है।",
-        "q_en": "How many vacancies are announced?",
-        "q_hi": "कितनी रिक्तियों की घोषणा की गई है?"
+        "a_en": "The upper age limit is 32 years as on December 31, 2026, with a 5-year relaxation for SC/ST candidates.",
+        "a_hi": "31 दिसंबर 2026 के अनुसार अधिकतम आयु सीमा 32 वर्ष है, जिसमें अनुसूचित जाति/अनुसूचित जनजाति के उम्मीदवारों के लिए 5 वर्ष की छूट है।",
+        "q_en": "What is the upper age limit for BSF SI LDCE?",
+        "q_hi": "बीएसएफ एसआई एलडीसीई के लिए अधिकतम आयु सीमा क्या है?"
       },
       {
-        "a_en": "The online application process started on 12 Nov 2026.",
-        "a_hi": "ऑनलाइन आवेदन प्रक्रिया 12 नवंबर 2026 को शुरू हुई।",
-        "q_en": "When did the application process start?",
-        "q_hi": "आवेदन प्रक्रिया कब शुरू हुई?"
+        "a_en": "There are a total of 1,167 vacancies across BSF, CRPF, SSB, and ITBP.",
+        "a_hi": "बीएसएफ, सीआरपीएफ, एसएसबी और आईटीबीपी में कुल 1,167 रिक्तियां हैं।",
+        "q_en": "What is the total number of vacancies?",
+        "q_hi": "रिक्तियों की कुल संख्या कितनी है?"
+      },
+      {
+        "a_en": "The post carries a pay scale of Pay Matrix Level-6 (₹35,400–1,12,400).",
+        "a_hi": "इस पद का वेतनमान पे मैट्रिक्स लेवल-6 (₹35,400–1,12,400) है।",
+        "q_en": "What is the pay scale for Sub-Inspector (GD)?",
+        "q_hi": "सब-इंस्पेक्टर (जीडी) के लिए वेतनमान क्या है?"
       }
     ],
     "fees": [],
@@ -132,33 +198,104 @@
     "h1_hi": "बीएसएफ सब-इंस्पेक्टर भर्ती 2026 – एलडीसीई के लिए ऑनलाइन आवेदन करें",
     "hindi_notice_url": null,
     "how_en": [
-      "Go to the official BSF recruitment website.",
-      "Click on the Sub-Inspector (GD) LDCE 2026 application link.",
-      "Fill out the online application form with required details.",
-      "Submit the form before December 31, 2026, and take a printout for records."
+      "Visit the official BSF recruitment website at bsf.mha.gov.in.",
+      "Check the advertisement and instructions available online.",
+      "Eligible serving personnel should submit their online applications through the BSF website before the last date."
     ],
     "how_hi": [
-      "आधिकारिक बीएसएफ भर्ती वेबसाइट पर जाएं।",
-      "सब-इंस्पेक्टर (जीडी) एलडीसीई 2026 आवेदन लिंक पर क्लिक करें।",
-      "आवश्यक विवरण के साथ ऑनलाइन आवेदन पत्र भरें।",
-      "31 दिसंबर 2026 से पहले फॉर्म जमा करें और रिकॉर्ड के लिए प्रिंटआउट लें।"
+      "आधिकारिक बीएसएफ भर्ती वेबसाइट bsf.mha.gov.in पर जाएं।",
+      "ऑनलाइन उपलब्ध विज्ञापन और निर्देशों की जांच करें।",
+      "योग्य सेवारत कर्मी अंतिम तिथि से पहले बीएसएफ वेबसाइट के माध्यम से अपना ऑनलाइन आवेदन जमा करें।"
     ],
-    "intro_en": "The Border Security Force (BSF) has released the recruitment notification for Sub-Inspector (GD) through Limited Departmental Competitive Examination (LDCE) 2026. Eligible departmental candidates can submit their online applications from 12 November 2026 to 31 December 2026. Interested applicants should review the eligibility criteria and complete the application process before the last date.",
-    "intro_hi": "सीमा सुरक्षा बल (बीएसएफ) ने सीमित विभागीय प्रतियोगी परीक्षा (एलडीसीई) 2026 के माध्यम से सब-इंस्पेक्टर (जीडी) के लिए भर्ती अधिसूचना जारी की है। योग्य विभागीय उम्मीदवार 12 नवंबर 2026 से 31 दिसंबर 2026 तक अपने ऑनलाइन आवेदन जमा कर सकते हैं। इच्छुक आवेदक अंतिम तिथि से पहले पात्रता मानदंडों की समीक्षा करें और आवेदन प्रक्रिया पूरी करें।",
+    "intro_en": "Border Security Force (BSF) has released the notification for the recruitment of Sub-Inspector (GD) through the Limited Departmental Competitive Examination (LDCE) 2026. A total of 1,167 vacancies are available for eligible serving personnel across BSF, CRPF, ITBP, and SSB. Online applications are open from November 12, 2026, and the last date to apply is December 31, 2026. Serving Constables, Head Constables, and Assistant Sub-Inspectors meeting the service and educational criteria should read the notification before applying.",
+    "intro_hi": "सीमा सुरक्षा बल (बीएसएफ) ने सीमित विभागीय प्रतियोगी परीक्षा (एलडीसीई) 2026 के माध्यम से सब-इंस्पेक्टर (जीडी) के पदों पर भर्ती के लिए अधिसूचना जारी की है। बीएसएफ, सीआरपीएफ, आईटीबीपी और एसएसबी के योग्य सेवारत कर्मियों के लिए कुल 1,167 रिक्तियां उपलब्ध हैं। ऑनलाइन आवेदन 12 नवंबर 2026 से शुरू हैं और आवेदन करने की अंतिम तिथि 31 दिसंबर 2026 है। सेवा और शैक्षणिक मानदंडों को पूरा करने वाले सेवारत कांस्टेबल, हेड कांस्टेबल और सहायक उप-निरीक्षक आवेदन करने से पहले अधिसूचना पढ़ सकते हैं।",
     "last_date": "2026-12-31",
     "mistakes_en": [
-      "Submitting the online application after the last date of 31 Dec 2026.",
-      "Entering incorrect details from service records."
+      "Ensure you belong to SHAPE-I medical category before applying.",
+      "Check that you have completed 4 years of regular service including basic training."
     ],
     "mistakes_hi": [
-      "31 दिसंबर 2026 की अंतिम तिथि के बाद ऑनलाइन आवेदन जमा करना।",
-      "सेवा रिकॉर्ड से गलत विवरण दर्ज करना।"
+      "आवेदन करने से पहले सुनिश्चित करें कि आप शेप-आई मेडिकल श्रेणी में आते हैं।",
+      "जांच लें कि आपने बुनियादी प्रशिक्षण सहित 4 वर्ष की नियमित सेवा पूरी कर ली है।"
     ],
-    "not_en": [],
-    "not_hi": [],
-    "notice_date": "2026-11-12",
-    "official_site": "https://rectt.bsf.gov.in/",
-    "physical": [],
+    "not_en": [
+      "Candidates belonging to Low Medical Category (not SHAPE-I).",
+      "Personnel who have not completed 4 years of regular service."
+    ],
+    "not_hi": [
+      "कम मेडिकल श्रेणी वाले उम्मीदवार (शेप-आई नहीं)।",
+      "वे कर्मी जिन्होंने 4 वर्ष की नियमित सेवा पूरी नहीं की है।"
+    ],
+    "notice_date": "2026-11-10",
+    "official_site": "https://bsf.mha.gov.in",
+    "physical": [
+      {
+        "label_en": "Height (Male - General)",
+        "label_hi": "लंबाई (पुरुष - सामान्य)",
+        "value_en": "170 cm",
+        "value_hi": "170 सेमी"
+      },
+      {
+        "label_en": "Chest (Male - General)",
+        "label_hi": "सीना (पुरुष - सामान्य)",
+        "value_en": "80 cm (Unexpanded) / 85 cm (Expanded)",
+        "value_hi": "80 सेमी (बिना फुलाए) / 85 सेमी (फुलाकर)"
+      },
+      {
+        "label_en": "Height (Male - Garhwalis, Kumaonis, Gorkhas, Dogras, Marathas, Sikkim, HP, Kashmir, Leh & Ladakh)",
+        "label_hi": "लंबाई (पुरुष - गढ़वाली, कुमाऊँनी, गोरखा, डोगरा, मराठा, सिक्किम, हिमाचल प्रदेश, कश्मीर, लेह और लद्दाख)",
+        "value_en": "165 cm",
+        "value_hi": "165 सेमी"
+      },
+      {
+        "label_en": "Chest (Male - Garhwalis, Kumaonis, Gorkhas, Dogras, Marathas, Sikkim, HP, Kashmir, Leh & Ladakh)",
+        "label_hi": "सीना (पुरुष - गढ़वाली, कुमाऊँनी, गोरखा, डोगरा, मराठा, सिक्किम, हिमाचल प्रदेश, कश्मीर, लेह और लद्दाख)",
+        "value_en": "80 cm (Unexpanded) / 85 cm (Expanded)",
+        "value_hi": "80 सेमी (बिना फुलाए) / 85 सेमी (फुलाकर)"
+      },
+      {
+        "label_en": "Height (Male - ST)",
+        "label_hi": "लंबाई (पुरुष - अनुसूचित जनजाति)",
+        "value_en": "162.5 cm",
+        "value_hi": "162.5 सेमी"
+      },
+      {
+        "label_en": "Chest (Male - ST)",
+        "label_hi": "सीना (पुरुष - अनुसूचित जनजाति)",
+        "value_en": "77 cm (Unexpanded) / 82 cm (Expanded)",
+        "value_hi": "77 सेमी (बिना फुलाए) / 82 सेमी (फुलाकर)"
+      },
+      {
+        "label_en": "Height (Male - ST of NE region)",
+        "label_hi": "लंबाई (पुरुष - उत्तर पूर्व क्षेत्र के अनुसूचित जनजाति)",
+        "value_en": "157.5 cm",
+        "value_hi": "157.5 सेमी"
+      },
+      {
+        "label_en": "Chest (Male - ST of NE region)",
+        "label_hi": "सीना (पुरुष - उत्तर पूर्व क्षेत्र के अनुसूचित जनजाति)",
+        "value_en": "77 cm (Unexpanded) / 82 cm (Expanded)",
+        "value_hi": "77 सेमी (बिना फुलाए) / 82 सेमी (फुलाकर)"
+      },
+      {
+        "label_en": "Height (Female - General)",
+        "label_hi": "लंबाई (महिला - सामान्य)",
+        "value_en": "157 cm",
+        "value_hi": "157 सेमी"
+      },
+      {
+        "label_en": "Height (Female - Garhwalis, Kumaonis, Gorkhas, Dogras, Marathas, Sikkim, Nagaland, Arunachal Pradesh, Tripura, Mizoram, Meghalaya, Assam, Manipur, HP, Kashmir, Leh & Ladakh)",
+        "label_hi": "लंबाई (महिला - गढ़वाली, कुमाऊँनी, गोरखा, डोगरा, मराठा, सिक्किम, नागालैंड, अरुणाचल प्रदेश, त्रिपुरा, मिजोरम, मेघालय, असम, मणिपुर, हिमाचल प्रदेश, कश्मीर, लेह और लद्दाख)",
+        "value_en": "155 cm",
+        "value_hi": "155 सेमी"
+      },
+      {
+        "label_en": "Height (Female - ST)",
+        "label_hi": "लंबाई (महिला - अनुसूचित जनजाति)",
+        "value_en": "154 cm",
+        "value_hi": "154 सेमी"
+      }
+    ],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
@@ -170,56 +307,102 @@
       {
         "label_en": "Total vacancies",
         "label_hi": "कुल रिक्तियां",
-        "value_en": "1",
-        "value_hi": "1"
+        "value_en": "1,167",
+        "value_hi": "1,167"
       },
       {
         "label_en": "Apply online",
         "label_hi": "ऑनलाइन आवेदन",
         "value_en": "12 Nov 2026 to 31 Dec 2026",
-        "value_hi": "12 नवंबर 2026 से 31 दिसंबर 2026"
+        "value_hi": "12 नवं 2026 से 31 दिसं 2026"
+      },
+      {
+        "label_en": "Educational qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "Graduation from a recognized university or equivalent",
+        "value_hi": "मान्यता प्राप्त विश्वविद्यालय से स्नातक या समकक्ष"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "Up to 32 years (as on 31 Dec 2026)",
+        "value_hi": "अधिकतम 32 वर्ष (31 दिसं 2026 के अनुसार)"
       },
       {
         "label_en": "Advertisement number",
         "label_hi": "विज्ञापन संख्या",
-        "value_en": "SI(GD)/2026",
-        "value_hi": "एसआई(जीडी)/2026"
+        "value_en": "No.A.2/SI (LDCE)/CAPFs Exam-2026/Pers(Rectt)/BSF/2026",
+        "value_hi": "सं. ए.2/एसआई (एलडीसीई)/सीएपीएफ परीक्षा-2026/कार्मिक(भर्ती)/बीएसएफ/2026"
       }
     ],
-    "salary": [],
+    "salary": [
+      {
+        "label_en": "Pay scale",
+        "label_hi": "वेतनमान",
+        "value_en": "Pay Matrix Level-6 (₹35,400–1,12,400) with allowances",
+        "value_hi": "पे मैट्रिक्स लेवल-6 (₹35,400–1,12,400) भत्तों के साथ"
+      }
+    ],
     "selection_en": [
-      "Limited Departmental Competitive Examination"
+      "Written Examination",
+      "Physical Standards Test (PST) / Physical Efficiency Test (PET)",
+      "Medical Examination",
+      "Documentation"
     ],
     "selection_hi": [
-      "सीमित विभागीय प्रतियोगी परीक्षा"
+      "लिखित परीक्षा",
+      "शारीरिक मानक परीक्षण (पीएसटी) / शारीरिक दक्षता परीक्षण (पेट)",
+      "चिकित्सा परीक्षा",
+      "दस्तावेज़ सत्यापन"
     ],
     "share_card": {
       "headline_en": "Recruitment 2026",
       "headline_hi": "भर्ती 2026",
       "kind": "job",
-      "line_en": "Sub-Inspector (GD)",
-      "line_hi": "सब-इंस्पेक्टर (जीडी)",
-      "posts": 1
+      "line_en": "Sub-Inspector (GD) LDCE",
+      "line_hi": "सब-इंस्पेक्टर (जीडी) एलडीसीई",
+      "posts": 1167
     },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "Border Security Force has invited applications for Sub-Inspector (GD) through Limited Departmental Competitive Examination 2026. Eligible candidates can apply online by December 31, 2026.",
-    "summary_hi": "सीमा सुरक्षा बल ने सीमित विभागीय प्रतियोगी परीक्षा 2026 के माध्यम से सब-इंस्पेक्टर (जीडी) के लिए आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 31 दिसंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",
+    "summary_en": "Border Security Force has invited online applications for Sub-Inspector (GD) through Limited Departmental Competitive Examination 2026. Eligible serving personnel of BSF, CRPF, ITBP, and SSB can apply by December 31, 2026.",
+    "summary_hi": "सीमा सुरक्षा बल ने सीमित विभागीय प्रतियोगी परीक्षा 2026 के माध्यम से सब-इंस्पेक्टर (जीडी) के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। बीएसएफ, सीआरपीएफ, आईटीबीपी और एसएसबी के योग्य सेवारत कर्मी 31 दिसंबर 2026 तक आवेदन कर सकते हैं।",
     "vacancies": [
       {
-        "detail_en": "Limited Departmental Competitive Examination 2026",
-        "detail_hi": "सीमित विभागीय प्रतियोगी परीक्षा 2026",
-        "post_en": "Sub-Inspector (GD)",
-        "post_hi": "सब-इंस्पेक्टर (जीडी)",
-        "total": "1"
+        "detail_en": "Male: UR 173, SC 33, ST 17; Female: UR 9, SC 2, ST 1",
+        "detail_hi": "पुरुष: अनारक्षित 173, अजा 33, जजा 17; महिला: अनारक्षित 9, अजा 2, जजा 1",
+        "post_en": "Sub-Inspector (GD) - BSF",
+        "post_hi": "सब-इंस्पेक्टर (जीडी) - बीएसएफ",
+        "total": "235"
+      },
+      {
+        "detail_en": "Male: UR 269, SC 52, ST 26; Female: UR 23, SC 5, ST 2",
+        "detail_hi": "पुरुष: अनारक्षित 269, अजा 52, जजा 26; महिला: अनारक्षित 23, अजा 5, जजा 2",
+        "post_en": "Sub-Inspector (GD) - CRPF",
+        "post_hi": "सब-इंस्पेक्टर (जीडी) - सीआरपीएफ",
+        "total": "377"
+      },
+      {
+        "detail_en": "Male: UR 97, SC 19, ST 8; Female: Nil",
+        "detail_hi": "पुरुष: अनारक्षित 97, अजा 19, जजा 8; महिला: शून्य",
+        "post_en": "Sub-Inspector (GD) - SSB",
+        "post_hi": "सब-इंस्पेक्टर (जीडी) - एसएसबी",
+        "total": "125"
+      },
+      {
+        "detail_en": "Male: UR 342, SC 32, ST 32; Female: UR 19, SC 3, ST 2",
+        "detail_hi": "पुरुष: अनारक्षित 342, अजा 32, जजा 32; महिला: अनारक्षित 19, अजा 3, जजा 2",
+        "post_en": "Sub-Inspector (GD) - ITBP",
+        "post_hi": "सब-इंस्पेक्टर (जीडी) - आईटीबीपी",
+        "total": "430"
       }
     ],
     "video_url": null,
     "who_en": [
-      "Eligible departmental candidates aspiring for a Sub-Inspector post in BSF through LDCE 2026."
+      "Serving Constables (GD), Constables (Tradesmen), Head Constables (GD), and ASIs (GD) of BSF, CRPF, ITBP, and SSB who have completed 4 years of regular service."
     ],
     "who_hi": [
-      "एलडीसीई 2026 के माध्यम से बीएसएफ में सब-इंस्पेक्टर पद के इच्छुक योग्य विभागीय उम्मीदवार।"
+      "बीएसएफ, सीआरपीएफ, आईटीबीपी और एसएसबी के सेवारत कांस्टेबल (जीडी), कांस्टेबल (ट्रेंड्समैन), हेड कांस्टेबल (जीडी) और एएसआई (जीडी) जिन्होंने 4 वर्ष की नियमित सेवा पूरी कर ली है।"
     ]
   },
   "pdf": {
@@ -229,10 +412,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-11T18:47:46Z",
-  "qual": [
-    "graduate"
-  ],
-  "rewrite": true,
   "slug": "bsf-sub-inspector-recruitment-2026-apply-online-for-ldce",
   "source_id": "bsf-recruitment",
   "status": "approved",
