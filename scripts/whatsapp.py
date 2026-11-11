@@ -56,7 +56,7 @@ def find_channel(state):
         if name.strip().lower() == CHANNEL_NAME.lower():
             state["channel_id"] = n.get("id")
             return n.get("id")
-    log.append(f"channel '{CHANNEL_NAME}' not found (HTTP {code}); channels this number sees: {names or j}"[:600])
+    log.append(f"channel '{CHANNEL_NAME}' not found (HTTP {code}); channels this number manages: {names}"[:600])
     return None
 
 
@@ -83,7 +83,7 @@ def post(chan, n):
     if code >= 300 or not (j.get("sent") or j.get("message")):
         code, j = call("POST", "/messages/text", json={"to": chan, "body": text})
     ok = code < 300 and bool(j.get("sent") or j.get("message"))
-    log.append(f"{n['id']} -> {code} {'ok' if ok else str(j)[:200]}")
+    log.append(f"{n['id']} -> {code} {'ok' if ok else 'failed: ' + str(j.get('error') or '')[:120]}")   # never log full replies: they hold the phone number
     return ok
 
 
@@ -99,7 +99,7 @@ def main():
         code, j = call("POST", "/messages/text", json={"to": chan, "body":
             "✅ SarkariChart alerts are connected. New govt job notices will appear here automatically.\n"
             "सरकारी चार्ट अलर्ट जुड़ गए हैं। नई सरकारी नौकरी की सूचनाएँ यहाँ अपने-आप आएँगी।\n\nhttps://sarkarichart.com"})
-        log.append(f"test -> {code} {str(j)[:300]}")
+        log.append(f"test -> {code} {'sent' if j.get('sent') else 'not sent: ' + str(j.get('error') or '')[:120]}")
         return finish(state)
     notices = [json.loads(f.read_text()) for f in (ROOT / "data/notices").glob("*.json")]
     live = [n for n in notices if n.get("status") == "approved" and n.get("slug")]
