@@ -1,5 +1,31 @@
 {
+  "auto_published": true,
   "board_url": "https://rect.crpf.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Sub-Inspector",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Central Reserve Police Force has announced the recruitment of Sub-Inspector (LDCE) in CAPFs for 2026. Eligible candidates should check the details and apply through the official website.",
+    "summary_hi": "केंद्रीय रिजर्व पुलिस बल ने सीएपीएफ में उप-निरीक्षक (एलडीसीई) भर्ती 2026 की घोषणा की है। पात्र उम्मीदवार विवरण देखें और आधिकारिक वेबसाइट के माध्यम से आवेदन करें।",
+    "title_en": "CRPF Sub-Inspector LDCE Recruitment 2026 – Apply Online",
+    "title_hi": "सीआरपीएफ उप-निरीक्षक एलडीसीई भर्ती 2026 – ऑनलाइन आवेदन",
+    "type": "Job",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": null,
+    "age_min": null,
+    "age_on": null,
+    "domicile": null,
+    "qual": null,
+    "relax": {}
+  },
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -38,16 +64,217 @@
   },
   "first_seen": "2026-11-12T13:44:47+00:00",
   "id": "fca1cd616935",
+  "issue": 1227,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-10",
   "org": "CRPF",
+  "page": {
+    "after_en": [
+      "Appearing for the written examination",
+      "Qualifying physical and medical tests",
+      "Final selection and training"
+    ],
+    "after_hi": [
+      "लिखित परीक्षा में शामिल होना",
+      "शारीरिक और चिकित्सा परीक्षाओं को उत्तीर्ण करना",
+      "अंतिम चयन और प्रशिक्षण"
+    ],
+    "age": [],
+    "apply_start": "2026-11-12",
+    "apply_url": "https://bsf.mha.gov.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Verify departmental eligibility before applying",
+      "Keep scanned copies of required documents ready",
+      "Submit the application online via the BSF portal"
+    ],
+    "checklist_hi": [
+      "आवेदन करने से पहले विभागीय पात्रता की जाँच करें",
+      "आवश्यक दस्तावेजों की स्कैन की गई प्रतियाँ तैयार रखें",
+      "बीएसएफ पोर्टल के माध्यम से ऑनलाइन आवेदन जमा करें"
+    ],
+    "conducted_by_en": "Central Reserve Police Force (CRPF)",
+    "conducted_by_hi": "केंद्रीय रिजर्व पुलिस बल (सीआरपीएफ)",
+    "dates": [
+      {
+        "label_en": "Notification date",
+        "label_hi": "अधिसूचना तिथि",
+        "value_en": "10 Nov 2026",
+        "value_hi": "10 नव 2026"
+      },
+      {
+        "label_en": "Online application starts",
+        "label_hi": "ऑनलाइन आवेदन शुरू",
+        "value_en": "12 Nov 2026",
+        "value_hi": "12 नव 2026"
+      }
+    ],
+    "documents_en": [
+      "Service records",
+      "Educational certificates",
+      "Identity proof"
+    ],
+    "documents_hi": [
+      "सेवा रिकॉर्ड",
+      "शैक्षणिक प्रमाण पत्र",
+      "पहचान प्रमाण"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Candidate type",
+        "label_hi": "उम्मीदवार का प्रकार",
+        "value_en": "Departmental candidates (LDCE)",
+        "value_hi": "विभागीय उम्मीदवार (एलडीसीई)"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "The Sub-Inspector Limited Departmental Competitive Examination (LDCE) is conducted for eligible serving personnel within the Central Armed Police Forces to be promoted or appointed as Sub-Inspectors.",
+        "a_hi": "उप-निरीक्षक सीमित विभागीय प्रतियोगी परीक्षा (एलडीसीई) केंद्रीय सशस्त्र पुलिस बल के भीतर पात्र सेवारत कर्मियों को उप-निरीक्षक के रूप में पदोन्नत या नियुक्त करने के लिए आयोजित की जाती है।",
+        "q_en": "What is CRPF SI LDCE Exam?",
+        "q_hi": "सीआरपीएफ एसआई एलडीसीई परीक्षा क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Nodal Force",
+        "label_hi": "नोडल बल",
+        "value_en": "Border Security Force (BSF)",
+        "value_hi": "सीमा सुरक्षा बल (बीएसएफ)"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The application process started on 12 November 2026.",
+        "a_hi": "आवेदन प्रक्रिया 12 नवंबर 2026 को शुरू हुई।",
+        "q_en": "When did the application process start for CRPF SI LDCE Exam 2026?",
+        "q_hi": "सीआरपीएफ एसआई एलडीसीई परीक्षा 2026 के लिए आवेदन प्रक्रिया कब शुरू हुई?"
+      },
+      {
+        "a_en": "Candidates can apply online through the official BSF website at bsf.mha.gov.in.",
+        "a_hi": "उम्मीदवार आधिकारिक बीएसएफ वेबसाइट bsf.mha.gov.in के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+        "q_en": "Where can I apply for CRPF Sub-Inspector LDCE Recruitment 2026?",
+        "q_hi": "मैं सीआरपीएफ उप-निरीक्षक एलडीसीई भर्ती 2026 के लिए कहाँ आवेदन कर सकता हूँ?"
+      },
+      {
+        "a_en": "Border Security Force (BSF) is acting as the nodal force for the recruitment of Sub-Inspector (LDCE) Exam 2026.",
+        "a_hi": "सीमा सुरक्षा बल (बीएसएफ) उप-निरीक्षक (एलडीसीई) परीक्षा 2026 की भर्ती के लिए नोडल बल के रूप में कार्य कर रहा है।",
+        "q_en": "Which organization is acting as the nodal force for this recruitment?",
+        "q_hi": "इस भर्ती के लिए कौन सा संगठन नोडल बल के रूप में कार्य कर रहा है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "CRPF Sub-Inspector LDCE Recruitment 2026 – Apply Online",
+    "h1_hi": "सीआरपीएफ उप-निरीक्षक एलडीसीई भर्ती 2026 – ऑनलाइन आवेदन",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Go to the official BSF website at bsf.mha.gov.in.",
+      "Check the recruitment advertisement for SI (LDCE) Exam 2026.",
+      "Fill out the application form with correct details.",
+      "Submit the form and take a printout for future reference."
+    ],
+    "how_hi": [
+      "आधिकारिक बीएसएफ वेबसाइट bsf.mha.gov.in पर जाएं।",
+      "एसआई (एलडीसीई) परीक्षा 2026 के लिए भर्ती विज्ञापन की जाँच करें।",
+      "सही विवरण के साथ आवेदन पत्र भरें।",
+      "फॉर्म जमा करें और भविष्य के संदर्भ के लिए प्रिंटआउट लें।"
+    ],
+    "intro_en": "The Central Reserve Police Force (CRPF) has issued a notification regarding the Recruitment of Sub-Inspector (LDCE) Examination 2026 in Central Armed Police Forces (CAPFs). The nodal force for this recruitment is BSF, and the advertisement has been published on the BSF website starting from 12 November 2026. Departmental candidates who meet the eligibility criteria should review the instructions and apply through the official online portal.",
+    "intro_hi": "केंद्रीय रिजर्व पुलिस बल (सीआरपीएफ) ने केंद्रीय सशस्त्र पुलिस बल (सीएपीएफ) में उप-निरीक्षक (एलडीसीई) परीक्षा 2026 की भर्ती के संबंध में अधिसूचना जारी की है। इस भर्ती के लिए नोडल बल बीएसएफ है, और विज्ञापन 12 नवंबर 2026 से बीएसएफ वेबसाइट पर प्रकाशित किया गया है। पात्रता मापदंडों को पूरा करने वाले विभागीय उम्मीदवार निर्देशों की समीक्षा कर सकते हैं और आधिकारिक ऑनलाइन पोर्टल के माध्यम से आवेदन कर सकते हैं।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not submit incomplete application forms.",
+      "Ensure all service details are filled correctly as per official records."
+    ],
+    "mistakes_hi": [
+      "अधूरे आवेदन पत्र जमा न करें।",
+      "सुनिश्चित करें कि सभी सेवा विवरण आधिकारिक रिकॉर्ड के अनुसार सही ढंग से भरे गए हैं।"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-10",
+    "official_site": "https://bsf.mha.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Sub-Inspector (LDCE)",
+        "value_hi": "उप-निरीक्षक (एलडीसीई)"
+      },
+      {
+        "label_en": "Apply online starts",
+        "label_hi": "ऑनलाइन आवेदन शुरू",
+        "value_en": "12 Nov 2026",
+        "value_hi": "12 नव 2026"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "A.2/SI(LDCE)/CAPFs Exam-2026/Pers(Rectt)/BSF/2026/7179-98",
+        "value_hi": "A.2/SI(LDCE)/CAPFs Exam-2026/Pers(Rectt)/BSF/2026/7179-98"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Written Examination",
+      "Physical Standards Test / Physical Efficiency Test",
+      "Medical Examination",
+      "Document Verification"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा",
+      "शारीरिक मानक परीक्षण / शारीरिक दक्षता परीक्षण",
+      "चिकित्सा परीक्षा",
+      "दस्तावेज़ सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Sub-Inspector (LDCE)",
+      "line_hi": "उप-निरीक्षक (एलडीसीई)",
+      "posts": null
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Central Reserve Police Force has released the recruitment notification for Sub-Inspector (LDCE) Examination 2026 in CAPFs. Eligible and interested candidates can check the details and apply online through the BSF official website.",
+    "summary_hi": "केंद्रीय रिजर्व पुलिस बल ने सीएपीएफ में उप-निरीक्षक (एलडीसीई) परीक्षा 2026 के लिए भर्ती अधिसूचना जारी कर दी है। पात्र और इच्छुक उम्मीदवार विवरण देख सकते हैं और बीएसएफ की आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "As per CAPFs recruitment rules",
+        "detail_hi": "सीएपीएफ भर्ती नियमों के अनुसार",
+        "post_en": "Sub-Inspector (LDCE)",
+        "post_hi": "उप-निरीक्षक (एलडीसीई)",
+        "total": null
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Eligible departmental personnel aspiring for Sub-Inspector posts in CAPFs"
+    ],
+    "who_hi": [
+      "सीएपीएफ में उप-निरीक्षक पदों के इच्छुक पात्र विभागीय कर्मी"
+    ]
+  },
   "pdf": {
     "bytes": 136412,
     "pages": 1,
     "sha256": "d07c3863c403e9cad7b5964bd28f3bca3c00c3877354e22db83d2e53e34758da",
     "text_kind": "text"
   },
+  "published_at": "2026-11-12T13:48:09Z",
+  "qual": [
+    "graduate"
+  ],
+  "slug": "crpf-sub-inspector-ldce-recruitment-2026-apply-online",
   "source_id": "crpf-recruitment",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1 Recruitment of Sub-Inspector (LDCE)Exam-2026 in CAPFs 12-Nov-2026 (133 KB)",
   "url": "https://rect.crpf.gov.in/Upload/Recruitment/Recruitment_of_Sub-Inspector_LDCE_Exam-2026_in_CAPFs-923.pdf"
 }
