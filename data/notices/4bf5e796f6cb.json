@@ -1,0 +1,42 @@
+{
+  "board_url": "https://rrb.indianrailways.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "CEN 01/2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "CEN 01/2026"
+    },
+    "exam_date": {
+      "evidence": "The Computer Based Test against CEN 01/2026 (Assistant Loco Pilot) CBT-1 was conducted from 03.11.2026 to 05.11.2026.",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-03 to 2026-11-05"
+    },
+    "post_names": {
+      "evidence": "CEN 01/2026 (ASSISTANT LOCO PILOT)",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "ASSISTANT LOCO PILOT"
+      ]
+    }
+  },
+  "first_seen": "2026-11-12T08:44:27+00:00",
+  "id": "4bf5e796f6cb",
+  "kind": "notification",
+  "org": "RRB",
+  "pdf": {
+    "bytes": 212565,
+    "pages": 1,
+    "sha256": "79dcb700f6fa85743662a5a53f35aca2c2f933c41ef9958d3a2aaf5ab46e156e",
+    "text_kind": "text"
+  },
+  "source_id": "rrb-unified",
+  "status": "pending_review",
+  "title": "RRB CEN 01/2026: english objection notice final",
+  "url": "https://rrb.indianrailways.gov.in/-/image/1794472337264english_objection_notice_final.pdf/examsDocuments"
+}
