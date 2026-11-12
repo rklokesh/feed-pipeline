@@ -112,10 +112,14 @@ def main():
                 and (n.get("card") or {}).get("type", "Job") == "Job"
                 and ((n.get("card") or {}).get("last_date") or "9999") >= today_s]
         jobs.sort(key=lambda n: n.get("published_at") or "", reverse=True)
-        if jobs:
-            post(chan, jobs[0])
-        else:
-            log.append("test: no open job notice found")
+        fresh = [n for n in jobs if n["id"] not in set(state.get("posted", []))]
+        if fresh:   # never repeat something the channel already has
+            if post(chan, fresh[0]):
+                state["posted"] = sorted(set(state.get("posted", [])) | {fresh[0]["id"]})
+        else:       # everything is already posted: send a short check message instead of a repeat
+            code, j = call("POST", "/messages/text", json={"to": chan, "body":
+                "✅ SarkariChart alerts are connected. नई सरकारी नौकरी की सूचनाएँ यहाँ अपने-आप आएँगी।\nhttps://sarkarichart.com"})
+            log.append(f"test (all notices already posted, sent a check message) -> {code} {'sent' if j.get('sent') else 'not sent'}")
         return finish(state)
     live = [n for n in notices if n.get("status") == "approved" and n.get("slug")]
     done = set(state.get("posted", []))
