@@ -1,5 +1,20 @@
 {
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
+  "card": {
+    "confidence": "medium",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Platoon Commander / Block Organizer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Incomplete notice without PDF text or application details",
+    "summary_en": "Notification for UPSSSC Platoon Commander and Block Organizer main examination. Please check the official website for updates.",
+    "summary_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग प्लाटून कमांडर और ब्लॉक ऑर्गेनाइज़र मुख्य परीक्षा के लिए अधिसूचना। कृपया आधिकारिक वेबसाइट पर अपडेट देखें।",
+    "title_en": "UPSSSC Platoon Commander and Block Organizer Main Exam 2026",
+    "title_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग प्लाटून कमांडर और ब्लॉक ऑर्गेनाइज़र मुख्य परीक्षा 2026",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "scanned"
   },
   "source_id": "upsssc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "विज्ञापन संख्या-10-परीक्षा/2026, प्लाटून कमाण्डर / ब्लाक आर्गनाइजर मुख्य परीक्षा...",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?8gFyyKfR64qVwmHyHohSvVgIePwSxOV976bhdQNOdeQ="
 }

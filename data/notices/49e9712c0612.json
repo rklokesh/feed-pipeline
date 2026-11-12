@@ -1,5 +1,20 @@
 {
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
+  "card": {
+    "confidence": "low",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "गन्ना पर्यवेक्षक",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "PDF text is empty, insufficient details to list.",
+    "summary_en": "Notice for UPSSSC Cane Supervisor Main Examination 2026.",
+    "summary_hi": "यूपीएसएसएससी गन्ना पर्यवेक्षक मुख्य परीक्षा 2026 के लिए सूचना।",
+    "title_en": "UPSSSC Cane Supervisor Main Examination 2026",
+    "title_hi": "यूपीएसएसएससी गन्ना पर्यवेक्षक मुख्य परीक्षा 2026",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "scanned"
   },
   "source_id": "upsssc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "विज्ञापन संख्या-13-परीक्षा/2026, गन्ना पर्यवेक्षक मुख्य परीक्षा (प्रा0अ0प0-2025)...",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?8gFyyKfR64ozfVGjo8VoWWTccJN0jmvizHv3+Srq3SI="
 }
