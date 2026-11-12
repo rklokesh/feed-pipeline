@@ -1,5 +1,20 @@
 {
   "board_url": "https://kvs.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Pensioners",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal circular regarding life certificate submission procedure for existing KVS pensioners",
+    "summary_en": "Kendriya Vidyalaya Sangathan issued guidelines and procedure for uploading annual life certificates for pensioners getting pension through Indian Bank.",
+    "summary_hi": "केंद्रीय विद्यालय संगठन ने इंडियन बैंक के माध्यम से पेंशन प्राप्त करने वाले पेंशनभोगियों के लिए वार्षिक जीवन प्रमाण पत्र अपलोड करने की प्रक्रिया और दिशानिर्देश जारी किए हैं।",
+    "title_en": "KVS Life Certificate Submission Guidelines for Pensioners",
+    "title_hi": "केवीएस पेंशनभोगियों के लिए जीवन प्रमाण पत्र जमा करने के दिशानिर्देश",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -21,7 +36,7 @@
     "text_kind": "text"
   },
   "source_id": "kvs-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "ई-पेंशन पोर्टल के माध्यम से पेंशन प्रकरणों का निपटान कराने वाले भारतीय बैंक से पेंशन प्राप्त कर रहे केवीएस पेंशनभोगियों हेतु जीवन प्रमाण पत्र अपलोड करने की प्रक्रिया के संबंध में।",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111230.pdf"
 }

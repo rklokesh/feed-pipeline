@@ -1,11 +1,30 @@
 {
+  "auto_published": true,
   "board_url": "https://www.esic.gov.in/recruitments",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Senior Resident / Medical Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "View the provisional result for the recruitment of Senior Residents and Medical Officers on a contract basis at ESIC Medical College and PGIMSR, Rajajinagar, Bangalore.",
+    "summary_hi": "ईएसआई मेडिकल कॉलेज और पीजीआईएमएसआर, राजाजीनगर, बैंगलोर में अनुबंध के आधार पर सीनियर रेजिडेंट और मेडिकल ऑफिसर की भर्ती के लिए अनंतिम परिणाम देखें।",
+    "title_en": "ESIC Bangalore Senior Resident and Medical Officer Result",
+    "title_hi": "ईएसआईएफ बैंगलोर सीनियर रेजिडेंट और मेडिकल ऑफिसर रिजल्ट",
+    "type": "Result",
+    "vacancies": null
+  },
+  "exam": {},
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-12T11:14:38+00:00",
   "id": "37a2f848a354",
+  "issue": 1219,
+  "issue_tidy": true,
   "kind": "result",
   "org": "ESIC",
   "pdf": {
@@ -14,8 +33,12 @@
     "sha256": "cf07861fd63fa4b5353b7420ab03dadaeb0ee0f0414fa21d2db8199f6afc3ca6",
     "text_kind": "text"
   },
+  "published_at": "2026-11-12T11:25:01Z",
+  "qual": [
+    "graduate"
+  ],
   "source_id": "esic-recruitment",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1 ESIC MEDICAL COLLEGE AND HOSPITAL RAJAJI NAGAR BANGALORE DECLARATION OF RESULT FOR RECRUITMENT OF SENIOR RESIDENTS/MEDICAL OFFICER HELD ON 04.11.2026, 5.11.2026 and 6.11.2026 FOR ESIC MEDICAL COLLEGE AND PGIMSR, RAJAJINAGAR, BANGALORE ON CONTRACT BASIS- PDF size:(158.48 KB) . 2026-11-12 Result 127",
   "url": "https://esic.gov.in/attachments/recruitmentfile/DECLARATION_OF_RESULT_FOR_RECRUITMENT_OF_SENIOR_RESIDENTS_MEDICAL_OFFICER_HELD_ON_04_11_2026_5_11_2026_and_6_11_2026_FOR_ESIC_MEDICAL_COLLEGE_AND_PGIMSR_RAJAJINAGAR_BANGALORE_ON_CONTRACT_BASIS_1794481990.pdf"
 }
