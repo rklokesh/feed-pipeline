@@ -1,7 +1,7 @@
-2026-11-12 16:27 UTC
-7e504674b1cf gemini/gemini-flash-lite-latest: HTTP 503 '[{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try '
+2026-11-12 16:35 UTC
+7e504674b1cf gemini/gemini-flash-lite-latest: HTTP 429 '[{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your plan and billing details. For more information on '
 7e504674b1cf gemini/gemini-flash-latest: HTTP 429 '[{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your plan and billing details. For more information on '
 7e504674b1cf gemini/gemini-2.0-flash: HTTP 404 '[{\n  "error": {\n    "code": 404,\n    "message": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemi'
-c25c05262dcb gemini/gemini-flash-lite-latest: HTTP 429 '[{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your plan and billing details. For more information on '
+c25c05262dcb gemini/gemini-flash-lite-latest: HTTP 503 '[{\n  "error": {\n    "code": 503,\n    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try '
 c25c05262dcb gemini/gemini-flash-latest: HTTP 429 '[{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your plan and billing details. For more information on '
 c25c05262dcb gemini/gemini-2.0-flash: HTTP 404 '[{\n  "error": {\n    "code": 404,\n    "message": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemi'
