@@ -10,6 +10,9 @@ on:
       test:
         description: "Send a test message only (true/false)"
         default: "false"
+      whatsapp_status:
+        description: "WhatsApp only: check the Whapi connection, post nothing (true/false)"
+        default: "false"
       whatsapp_test:
         description: "WhatsApp only: send the newest open job notice once as a sample post (true/false)"
         default: "false"
@@ -39,13 +42,13 @@ jobs:
       - name: Post
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-        if: inputs.whatsapp_test != 'true'
+        if: inputs.whatsapp_test != 'true' && inputs.whatsapp_status != 'true'
         run: python scripts/telegram.py ${{ inputs.test == 'true' && '--test' || '' }}
       - name: Post to WhatsApp channel
         continue-on-error: true   # WhatsApp trouble must never stop Telegram
         env:
           WHAPI_TOKEN: ${{ secrets.WHAPI_TOKEN }}
-        run: python scripts/whatsapp.py ${{ inputs.whatsapp_test == 'true' && '--test' || '' }}
+        run: python scripts/whatsapp.py ${{ inputs.whatsapp_status == 'true' && '--status' || '' }} ${{ inputs.whatsapp_test == 'true' && '--test' || '' }}
       - name: Save
         run: |
           git config user.name "github-actions[bot]"

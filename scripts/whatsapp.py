@@ -6,6 +6,7 @@ only records the existing notices (no flood). Kept gentle for WhatsApp and the f
   - only notices published in the last 48 hours are posted one by one; anything older (e.g. after the Mac was off)
     is marked as done without posting.
   python scripts/whatsapp.py            # post new notices
+  python scripts/whatsapp.py --status   # check the connection, posts nothing
   python scripts/whatsapp.py --test     # send the newest open job notice once (sample post)
 """
 from __future__ import annotations
@@ -92,6 +93,15 @@ def main():
         log.append("WHAPI_TOKEN secret is missing in GitHub; nothing posted.")
         return finish({})
     state = json.loads(STATE.read_text()) if STATE.exists() else {}
+    if "--status" in sys.argv:   # check the Whapi link without posting anything
+        code, j = call("GET", "/health")
+        st = (j.get("status") or {}) if isinstance(j, dict) else {}
+        log.append(f"health -> {code} status={st.get('text') or st} channel={'known' if state.get('channel_id') else 'not found yet'}")
+        code2, j2 = call("GET", "/newsletters", params={"count": 100})
+        items = (j2.get("newsletters") if isinstance(j2, dict) else j2) or []
+        names = [(n.get("name") or (n.get("metadata") or {}).get("name") or "?") for n in items]
+        log.append(f"channels -> {code2} {names}"[:300])
+        return finish(state)
     chan = find_channel(state)
     if not chan:
         return finish(state)
