@@ -1,0 +1,73 @@
+{
+  "board_url": "https://rrb.indianrailways.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "CEN No. 04/2026"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "CEN No. 04/2026"
+      }
+    },
+    "apply_or_official_url": {
+      "evidence": "ेलवे भती बोर्ड /RAILWAY RECRUITMENT BOARDS वेबसाइट/Website: https://rrb.indianrailways.gov.in CEN No. 04/2026 (Recruitment for various posts of Junior Engineer, Depot Materi",
+      "source": "rule",
+      "value": "https://rrb.indianrailways.gov.in"
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://rrb.indianrailways.gov.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "वेबसाइट/Website: https://rrb.indianrailways.gov.in"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Junior Engineer",
+        "Depot Material Superintendent",
+        "Chemical & Metallurgical Assistant"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "(Recruitment for various posts of Junior Engineer, Depot Material Superintendent and Chemical & Metallurgical Assistant)"
+      }
+    }
+  },
+  "first_seen": "2026-11-12T12:14:42+00:00",
+  "id": "aafa56b8aa5b",
+  "kind": "notification",
+  "org": "RRB",
+  "pdf": {
+    "bytes": 947453,
+    "pages": 1,
+    "sha256": "aa1d256eefac89698dd5d762b9d8a680f903bc092d51eb974b37b88ad7c79990",
+    "text_kind": "text"
+  },
+  "source_id": "rrb-unified",
+  "status": "pending_review",
+  "title": "RRB CEN 04/2026: RRB wise submitted applications CEN 04-2026 (JE) 12.11.2026",
+  "url": "https://rrb.indianrailways.gov.in/-/image/1794485594348RRB_wise_submitted__applications_CEN_04-2026_(JE)_12.11.2026.pdf/examsDocuments"
+}

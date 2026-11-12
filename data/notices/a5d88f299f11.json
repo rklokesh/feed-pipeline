@@ -1,0 +1,85 @@
+{
+  "board_url": "https://www.esic.gov.in/recruitments",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "age_limit": {
+      "evidence": {
+        "age_limit": "Age not to exceed 69 years as on date of interview"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": "2026-11-19",
+        "max": 69,
+        "min": null
+      }
+    },
+    "apply_last": {
+      "evidence": {
+        "apply_last": "till 12:30 PM on 14.11.2026."
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-14"
+    },
+    "apply_url": {
+      "evidence": {
+        "apply_url": "www.esic.gov.in"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "www.esic.gov.in"
+    },
+    "exam_date": {
+      "evidence": {
+        "exam_date": "19.11.2026 at 11:00 AM"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-19"
+    },
+    "post_names": {
+      "evidence": {
+        "post_names": "(A) 13 vacant posts of Contractual Full Time Specialist / Part Time Specialist at ESIC Hospital, Korba, CG"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Contractual Full Time Specialist / Part Time Specialist",
+        "Contractual Senior Resident"
+      ]
+    },
+    "qualification": {
+      "evidence": {
+        "qualification": "MBBS with PG Degree or equivalent/ PG Diploma in concerned specialty from recognized university and registered with Medical Council of India/ State Medical Councils"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "MBBS with PG Degree or equivalent/ PG Diploma in concerned specialty from recognized university and registered with Medical Council of India/ State Medical Councils"
+    },
+    "total_vacancies": {
+      "evidence": {
+        "total_vacancies": "TOTAL 16 03 06 03 02 01 01 13"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 31
+    }
+  },
+  "first_seen": "2026-11-12T12:14:42+00:00",
+  "id": "a5d88f299f11",
+  "kind": "notification",
+  "org": "ESIC",
+  "pdf": {
+    "bytes": 836815,
+    "pages": 8,
+    "sha256": "87b7f47568ebe8d78fcffeec62fdfebd8e45959450a708010942b732ab79c1b5",
+    "text_kind": "text"
+  },
+  "source_id": "esic-recruitment",
+  "status": "pending_review",
+  "title": "1 ESIC Hospital Korba Upload of Recruitment notice for Senior resident and Contractual Full/Part time Specialist- PDF size:(817.20 KB) . 2026-11-12 Interview(2026-11-19) 12747/2026",
+  "url": "https://esic.gov.in/attachments/recruitmentfile/Upload_of_Recruitment_notice_for_Senior_resident_and_Contractual_Full_Part_time_Specialist_1794484150.pdf"
+}
