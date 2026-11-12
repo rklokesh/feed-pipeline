@@ -1,11 +1,34 @@
 {
+  "auto_published": true,
   "board_url": "https://uppsc.up.nic.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Allopathy Post",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "The Uttar Pradesh Public Service Commission has released the result for the Medical Education Department Allopathy examination. Candidates can check their result on the official website.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने चिकित्सा शिक्षा विभाग एलोपैथी परीक्षा का परिणाम जारी कर दिया है। उम्मीदवार आधिकारिक वेबसाइट पर अपना परिणाम देख सकते हैं।",
+    "title_en": "UPPSC Medical Education Department Allopathy Exam 2026 Result",
+    "title_hi": "यूपीपीएससी चिकित्सा शिक्षा विभाग एलोपैथी परीक्षा 2026 परिणाम",
+    "type": "Result",
+    "vacancies": null
+  },
+  "exam": {
+    "key": "uppsc-medical-education-department-allopathy-2026",
+    "name_en": "UPPSC Medical Education Department Allopathy 2026",
+    "name_hi": "यूपीपीएससी मीडिकल एड्युकेशन डिपार्टमेंट एलोपैथी 2026"
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-12T15:18:01+00:00",
   "id": "c25c05262dcb",
+  "issue": 1231,
+  "issue_tidy": true,
   "kind": "result",
   "org": "UPPSC",
   "pdf": {
@@ -14,8 +37,12 @@
     "sha256": "8fa89f951979e274355c45f302334f903ee5531f808927975c2cdce87ac60680",
     "text_kind": "scanned"
   },
+  "published_at": "2026-11-12T15:49:33Z",
+  "qual": [
+    "graduate"
+  ],
   "source_id": "uppsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1. RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) .. Visible upto : 12/12/2026",
   "url": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq9A2tZjX6yGV"
 }
