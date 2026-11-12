@@ -1,0 +1,53 @@
+{
+  "board_url": "https://rect.crpf.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "A.2/SI(LDCE)/CAPFs Exam-2026/Pers(Rectt)/BSF/2026/7179-98",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "A.2/SI(LDCE)/CAPFs Exam-2026/Pers(Rectt)/BSF/2026/7179-98"
+    },
+    "apply_or_official_url": {
+      "evidence": "subject cited above has been published on BSF website i.e. https://bsf.mha.gov.in tentatively from TODAY i.e. 12/11/2026 (.) Above info may be disseminated among",
+      "source": "rule",
+      "value": "https://bsf.mha.gov.in"
+    },
+    "apply_start": {
+      "evidence": "12/11/2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-12"
+    },
+    "apply_url": {
+      "evidence": "https://bsf.mha.gov.in",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://bsf.mha.gov.in"
+    },
+    "post_names": {
+      "evidence": "Recruitment of Sub-Inspector (LDCE)Exam.-2026 in CAPFs",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Sub-Inspector (LDCE)"
+      ]
+    }
+  },
+  "first_seen": "2026-11-12T13:44:47+00:00",
+  "id": "fca1cd616935",
+  "kind": "notification",
+  "org": "CRPF",
+  "pdf": {
+    "bytes": 136412,
+    "pages": 1,
+    "sha256": "d07c3863c403e9cad7b5964bd28f3bca3c00c3877354e22db83d2e53e34758da",
+    "text_kind": "text"
+  },
+  "source_id": "crpf-recruitment",
+  "status": "pending_review",
+  "title": "1 Recruitment of Sub-Inspector (LDCE)Exam-2026 in CAPFs 12-Nov-2026 (133 KB)",
+  "url": "https://rect.crpf.gov.in/Upload/Recruitment/Recruitment_of_Sub-Inspector_LDCE_Exam-2026_in_CAPFs-923.pdf"
+}
