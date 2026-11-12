@@ -1,12 +1,29 @@
 {
+  "auto_published": true,
   "board_url": "https://nta.ac.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-12-01",
+    "list": true,
+    "posts": "Director, Joint Director, Research Scientist, Deputy Director, Sr. Superintendent",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Applications are invited for various posts on a deputation basis at the National Testing Agency. Eligible candidates should send their applications through the proper channel by 1st December 2026.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी में प्रतिनियुक्ति के आधार पर विभिन्न पदों के लिए आवेदन आमंत्रित किए जाते हैं। योग्य उम्मीदवार 1 दिसंबर 2026 तक उचित माध्यम से अपना आवेदन भेजें।",
+    "title_en": "National Testing Agency Various Posts Recruitment 2026",
+    "title_hi": "राष्ट्रीय परीक्षा एजेंसी विभिन्न पद भर्ती 2026",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-12T12:47:30+00:00",
   "id": "4a653b5412e2",
+  "issue": 1240,
+  "issue_tidy": true,
   "kind": "notification",
   "org": "NTA",
   "pdf": {
@@ -15,8 +32,9 @@
     "sha256": "e03b5048fff1f1d16289522b62d1f7b61ad958c25fcdc74bdebb755c2e71e24b",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-12T22:42:30Z",
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Publication of Vacancy Notification for Various Posts in the NTA Read More",
   "url": "https://nta.ac.in/Download/Notice/Notice_20261112175300.pdf"
 }

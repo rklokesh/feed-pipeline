@@ -1,12 +1,29 @@
 {
+  "auto_published": true,
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-29",
+    "last_date": null,
+    "list": true,
+    "posts": "गन्ना पर्यवेक्षक",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "UPSSSC has announced that candidates shortlisted for the Cane Supervisor main exam must pay the required examination fee online to download their admit cards.",
+    "summary_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग ने घोषणा की है कि गन्ना पर्यवेक्षक मुख्य परीक्षा के लिए शॉर्टलिस्ट किए गए उम्मीदवारों को प्रवेश पत्र डाउनलोड करने के लिए ऑनलाइन परीक्षा शुल्क जमा करना होगा।",
+    "title_en": "UPSSSC Cane Supervisor Main Exam 2026 Fee Notice",
+    "title_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग गन्ना पर्यवेक्षक मुख्य परीक्षा शुल्क सूचना",
+    "type": "Update",
+    "vacancies": 1182
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-12T09:14:29+00:00",
   "id": "49e9712c0612",
+  "issue": 1239,
+  "issue_tidy": true,
   "kind": "notification",
   "org": "UPSSSC",
   "pdf": {
@@ -15,8 +32,9 @@
     "sha256": "efe4318c808013cd4edeadc72db868d2f2a693767c1766831c72a7f53c4fd665",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-12T22:42:08Z",
   "source_id": "upsssc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "विज्ञापन संख्या-13-परीक्षा/2026, गन्ना पर्यवेक्षक मुख्य परीक्षा (प्रा0अ0प0-2025)...",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?8gFyyKfR64ozfVGjo8VoWWTccJN0jmvizHv3+Srq3SI="
 }

@@ -1,6 +1,20 @@
 {
   "board_url": "https://kvs.gov.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Assistant Section Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "internal circular regarding withdrawal of promotion for specific employees",
+    "summary_en": "Kendriya Vidyalaya Sangathan issued an order regarding the withdrawal of promotion for employees who failed to join as Assistant Section Officer.",
+    "summary_hi": "केन्द्रीय विद्यालय संगठन ने सहायक अनुभाग अधिकारी के पद पर कार्यभार ग्रहण न करने वाले कर्मचारियों की पदोन्नति निरस्त करने का आदेश जारी किया है।",
+    "title_en": "KVS Assistant Section Officer Promotion Devaluation Order",
+    "title_hi": "केन्द्रीय विद्यालय संगठन सहायक अनुभाग अधिकारी पदोन्नति आदेश",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -16,7 +30,7 @@
     "text_kind": "ocr-legacy-font"
   },
   "source_id": "kvs-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "कार्यालय आदेश – पदोन्नति से वंचित किए जाने संबंधी आदेश (वरिष्ठ सचिवालय सहायक से सहायक अनुभाग अधिकारी, मुख्य पैनल–2026) नई",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111219.pdf"
 }
