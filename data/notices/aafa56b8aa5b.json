@@ -1,5 +1,27 @@
 {
+  "auto_published": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Junior Engineer, Depot Material Superintendent, Chemical & Metallurgical Assistant",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Railway Recruitment Boards has released the RRB-wise number of tentative submitted applications for Junior Engineer and other posts under CEN 04/2026.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने सीइएन 04/2026 के अंतर्गत कनिष्ठ अभियंता और अन्य पदों के लिए आरआरबी-वार अनंतिम रूप से जमा किए गए आवेदनों की संख्या जारी कर दी है।",
+    "title_en": "RRB JE CEN 04/2026 Submitted Applications Data 2026 – Check RRB Wise Data",
+    "title_hi": "आरआरबी कनिष्ठ अभियंता सीइएन 04/2026 जमा आवेदन डेटा 2026 – आरआरबी वार डेटा देखें",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "rrb-je-2026",
+    "name_en": "RRB JE 2026",
+    "name_hi": "आरआरबी जी २०२६"
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -58,16 +80,179 @@
   },
   "first_seen": "2026-11-12T12:14:42+00:00",
   "id": "aafa56b8aa5b",
+  "issue": 1225,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-12",
   "org": "RRB",
+  "page": {
+    "after_en": [
+      "Further updates regarding exam dates, city intimation slips, and admit cards will be announced on official RRB websites."
+    ],
+    "after_hi": [
+      "परीक्षा तिथियों, शहर की सूचना पर्ची और प्रवेश पत्र के संबंध में आगे के अपडेट आधिकारिक आरआरबी वेबसाइटों पर घोषित किए जाएंगे।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://rrb.indianrailways.gov.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check your applied RRB region in the official PDF notice.",
+      "Verify the community-wise application statistics."
+    ],
+    "checklist_hi": [
+      "आधिकारिक पीडीएफ नोटिस में अपने आवेदन किए गए आरआरबी क्षेत्र की जाँच करें।",
+      "समुदाय-वार आवेदन आँकड़ों का सत्यापन करें।"
+    ],
+    "conducted_by_en": "Railway Recruitment Boards (RRB)",
+    "conducted_by_hi": "रेलवे भर्ती बोर्ड (आरआरबी)",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस की तिथि",
+        "value_en": "12 Nov 2026",
+        "value_hi": "12 नव 2026"
+      }
+    ],
+    "documents_en": [],
+    "documents_hi": [],
+    "eligibility": [],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is an official notification released by Railway Recruitment Boards showing the total number of tentative applications submitted by candidates across different RRB regions for Junior Engineer and allied posts under Centralised Employment Notice CEN 04/2026.",
+        "a_hi": "यह रेलवे भर्ती बोर्ड द्वारा जारी एक आधिकारिक सूचना है जिसमें केंद्रीकृत रोजगार सूचना सीइएन 04/2026 के तहत कनिष्ठ अभियंता और संबंधित पदों के लिए विभिन्न आरआरबी क्षेत्रों में उम्मीदवारों द्वारा जमा किए गए अनंतिम आवेदनों की कुल संख्या दिखाई गई है।",
+        "q_en": "What is RRB CEN 04/2026 Submitted Applications Data?",
+        "q_hi": "आरआरबी सीइएन 04/2026 जमा आवेदन डेटा क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Total Tentative Applications",
+        "label_hi": "कुल अनंतिम आवेदन",
+        "value_en": "5,64,350",
+        "value_hi": "5,64,350"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "A total of 5,64,350 tentative applications were submitted across all RRBs.",
+        "a_hi": "सभी आरआरबी में कुल 5,64,350 अनंतिम आवेदन जमा किए गए।",
+        "q_en": "How many total tentative applications were submitted for RRB CEN 04/2026?",
+        "q_hi": "आरआरबी सीइएन 04/2026 के लिए कुल कितने अनंतिम आवेदन जमा किए गए?"
+      },
+      {
+        "a_en": "The notification covers Junior Engineer, Depot Material Superintendent, and Chemical & Metallurgical Assistant posts.",
+        "a_hi": "इस अधिसूचना में कनिष्ठ अभियंता, डिपो सामग्री अधीक्षक और रासायनिक एवं धातुकर्मा सहायक पद शामिल हैं।",
+        "q_en": "Which posts are covered under RRB CEN 04/2026?",
+        "q_hi": "आरआरबी सीइएन 04/2026 के अंतर्गत कौन से पद शामिल हैं?"
+      },
+      {
+        "a_en": "The official notice can be downloaded from the official website of Railway Recruitment Boards (rrb.indianrailways.gov.in).",
+        "a_hi": "आधिकारिक नोटिस रेलवे भर्ती बोर्ड की आधिकारिक वेबसाइट (rrb.indianrailways.gov.in) से डाउनलोड किया जा सकता है।",
+        "q_en": "Where can I check the official RRB-wise application data notice?",
+        "q_hi": "मैं आधिकारिक आरआरबी-वार आवेदन डेटा नोटिस कहाँ देख सकता हूँ?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "RRB JE CEN 04/2026 Submitted Applications Data 2026 – Check RRB Wise Data",
+    "h1_hi": "आरआरबी कनिष्ठ अभियंता सीइएन 04/2026 जमा आवेदन डेटा 2026 – आरआरबी वार डेटा देखें",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official website of Railway Recruitment Boards.",
+      "Click on the link for RRB-wise submitted applications for CEN 04/2026 (JE).",
+      "View or download the PDF notice to check the regional and community-wise application numbers."
+    ],
+    "how_hi": [
+      "रेलवे भर्ती बोर्ड की आधिकारिक वेबसाइट पर जाएं।",
+      "सीइएन 04/2026 (जेई) के लिए आरआरबी-वार जमा किए गए आवेदनों के लिंक पर क्लिक करें।",
+      "क्षेत्रीय और समुदाय-वार आवेदन संख्या की जांच के लिए पीडीएफ नोटिस देखें या डाउनलोड करें।"
+    ],
+    "intro_en": "Railway Recruitment Boards (RRB) has published the official notice regarding the RRB-wise number of tentative submitted applications for CEN 04/2026 covering Junior Engineer, Depot Material Superintendent, and Chemical & Metallurgical Assistant posts. The notice provides a comprehensive breakdown of applications received across all RRBs categorized by community and PwBD status. A total of 5,64,350 tentative applications have been submitted across various boards. Candidates who applied for these posts can check the complete regional data through the official website.",
+    "intro_hi": "रेलवे भर्ती बोर्ड (आरआरबी) ने सीइएन 04/2026 के तहत कनिष्ठ अभियंता, डिपो सामग्री अधीक्षक और रासायनिक एवं धातुकर्मा सहायक पदों के लिए आरआरबी-वार अनंतिम रूप से जमा किए गए आवेदनों की संख्या के संबंध में आधिकारिक सूचना जारी कर दी है। नोटिस में समुदाय और दिव्यांग श्रेणी के अनुसार सभी आरआरबी में प्राप्त आवेदनों का विस्तृत विवरण दिया गया है। विभिन्न बोर्डों में कुल 5,64,350 अनंतिम आवेदन जमा किए गए हैं। इन पदों के लिए आवेदन करने वाले उम्मीदवार आधिकारिक वेबसाइट के माध्यम से पूरा क्षेत्रीय डेटा देख सकते हैं।",
+    "last_date": null,
+    "mistakes_en": [],
+    "mistakes_hi": [],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-12",
+    "official_site": "https://rrb.indianrailways.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "CEN No. 04/2026",
+        "value_hi": "सीइएन संख्या 04/2026"
+      },
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Junior Engineer, Depot Material Superintendent, Chemical & Metallurgical Assistant",
+        "value_hi": "कनिष्ठ अभियंता, डिपो सामग्री अधीक्षक, रासायनिक एवं धातुकर्मा सहायक"
+      },
+      {
+        "label_en": "Total Tentative Applications",
+        "label_hi": "कुल अनंतिम आवेदन",
+        "value_en": "5,64,350",
+        "value_hi": "5,64,350"
+      },
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस की तारीख",
+        "value_en": "12 Nov 2026",
+        "value_hi": "12 नव 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [],
+    "selection_hi": [],
+    "share_card": {
+      "headline_en": "Application Data Out",
+      "headline_hi": "आवेदन डेटा जारी",
+      "kind": "job",
+      "line_en": "RRB JE CEN 04/2026",
+      "line_hi": "आरआरबी जेई सीइएन 04/2026",
+      "posts": null
+    },
+    "status_en": "RRB-wise tentative submitted applications data released",
+    "status_hi": "आरआरबी-वार अनंतिम रूप से जमा किए गए आवेदन डेटा जारी",
+    "summary_en": "Railway Recruitment Boards has released the RRB-wise number of tentative submitted applications for Junior Engineer, Depot Material Superintendent, and Chemical & Metallurgical Assistant posts under CEN 04/2026. Candidates can check the community-wise break up of applications submitted across different RRBs.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने सीइएन 04/2026 के अंतर्गत कनिष्ठ अभियंता, डिपो सामग्री अधीक्षक और रासायनिक एवं धातुकर्मा सहायक पदों के लिए आरआरबी-वार अनंतिम रूप से जमा किए गए आवेदनों की संख्या जारी कर दी है। उम्मीदवार विभिन्न आरआरबी में जमा किए गए आवेदनों का समुदाय-वार विवरण देख सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Recruitment for various posts under CEN 04/2026",
+        "detail_hi": "सीइएन 04/2026 के तहत विभिन्न पदों के लिए भर्ती",
+        "post_en": "Junior Engineer, Depot Material Superintendent, Chemical & Metallurgical Assistant",
+        "post_hi": "कनिष्ठ अभियंता, डिपो सामग्री अधीक्षक, रासायनिक एवं धातुकर्मा सहायक",
+        "total": "Not Specified"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates who applied for RRB CEN 04/2026 Junior Engineer and other posts"
+    ],
+    "who_hi": [
+      "आरआरबी सीइएन 04/2026 कनिष्ठ अभियंता और अन्य पदों के लिए आवेदन करने वाले उम्मीदवार"
+    ]
+  },
   "pdf": {
     "bytes": 947453,
     "pages": 1,
     "sha256": "aa1d256eefac89698dd5d762b9d8a680f903bc092d51eb974b37b88ad7c79990",
     "text_kind": "text"
   },
+  "published_at": "2026-11-12T12:20:05Z",
+  "qual": [
+    "diploma",
+    "graduate"
+  ],
+  "slug": "rrb-je-cen-04-2026-submitted-applications-data-2026-check-rrb-wi",
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RRB CEN 04/2026: RRB wise submitted applications CEN 04-2026 (JE) 12.11.2026",
   "url": "https://rrb.indianrailways.gov.in/-/image/1794485594348RRB_wise_submitted__applications_CEN_04-2026_(JE)_12.11.2026.pdf/examsDocuments"
 }

@@ -1,5 +1,26 @@
 {
+  "auto_published": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-03",
+    "last_date": null,
+    "list": true,
+    "posts": "ASSISTANT LOCO PILOT",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "RRB has released the answer key notice for the Assistant Loco Pilot CBT-1 exam held in November 2026. Candidates can view question papers, responses, and raise objections online.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने सहायक लोको पायलट प्रथम चरण परीक्षा के लिए उत्तर कुंजी और आपत्ति दर्ज कराने की सूचना जारी कर दी है। उम्मीदवार अपने प्रश्न पत्र और उत्तर देखकर आपत्ति दर्ज करा सकते हैं।",
+    "title_en": "RRB Assistant Loco Pilot CBT-1 Answer Key 2026",
+    "title_hi": "रेलवे भर्ती बोर्ड सहायक लोको पायलट परीक्षा प्रथम चरण उत्तर कुंजी 2026",
+    "type": "Answer key",
+    "vacancies": null
+  },
+  "exam": {
+    "key": "rrb-alp-2026",
+    "name_en": "RRB Assistant Loco Pilot 2026",
+    "name_hi": "आरआरबी एलपी २०२६"
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -27,6 +48,8 @@
   },
   "first_seen": "2026-11-12T12:14:42+00:00",
   "id": "7b44ca9d536b",
+  "issue": 1223,
+  "issue_tidy": true,
   "kind": "notification",
   "org": "RRB",
   "pdf": {
@@ -35,8 +58,14 @@
     "sha256": "217380dc5aa79649119c7d3e2742f18e4a8c91278cb80e19c492bb1b2a47072c",
     "text_kind": "text"
   },
+  "published_at": "2026-11-12T12:19:49Z",
+  "qual": [
+    "iti",
+    "diploma",
+    "graduate"
+  ],
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RRB CEN 01/2026: english objection notice final",
   "url": "https://rrb.indianrailways.gov.in/-/image/1794485173686english_objection_notice_final.pdf/examsDocuments"
 }
