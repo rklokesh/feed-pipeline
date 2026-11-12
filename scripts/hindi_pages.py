@@ -37,10 +37,10 @@ def local_links(h: str) -> str:
     """Point links at the Hindi copy of a page when there is one."""
     def fix(m):
         path = m.group(2)
-        if path == "/" or (path.startswith("/notice/") or re.fullmatch(r"/(?:[a-z0-9-]+-jobs|admit-card|result|answer-key)/", path)) and (SITE / "hi" / path.strip("/") / "index.html").exists():
+        if path == "/" or (path.startswith("/notice/") or path.startswith("/exam/") or re.fullmatch(r"/(?:[a-z0-9-]+-jobs|admit-card|result|answer-key)/", path)) and (SITE / "hi" / path.strip("/") / "index.html").exists():
             return f'{m.group(1)}"/hi{path}"'
         return m.group(0)
-    return re.sub(r'(href=)"(/(?:notice/[a-z0-9-]+/|[a-z0-9-]+-jobs/|admit-card/|result/|answer-key/)?)"', fix, h)
+    return re.sub(r'(href=)"(/(?:notice/[a-z0-9-]+/|exam/(?:[a-z0-9-]+/)?|[a-z0-9-]+-jobs/|admit-card/|result/|answer-key/)?)"', fix, h)
 
 
 def to_hindi(s: str, path: str, title: str, desc: str) -> str:
@@ -82,6 +82,20 @@ def main() -> None:
         title = hi.get("title") or f'{hi["h1"]} | सरकारी चार्ट'
         out.write_text(to_hindi(s, f"{d.name}/", title, (hi.get("lead") or hi["h1"])[:158]), encoding="utf-8")
         add_alts(d / "index.html", f"{d.name}/")
+        n += 1
+    # exam pages (/exam/ and /exam/<exam>/), written by seo_pages.py
+    import shutil
+    if (SITE / "hi" / "exam").exists():
+        shutil.rmtree(SITE / "hi" / "exam")
+    ex = [SITE / "exam"] + sorted(d for d in (SITE / "exam").iterdir() if d.is_dir()) if (SITE / "exam" / "index.html").exists() else []
+    for d in ex:
+        path = d.relative_to(SITE).as_posix() + "/"
+        s = (d / "index.html").read_text(encoding="utf-8")
+        hi = hi_dict(s)
+        out = SITE / "hi" / path / "index.html"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(to_hindi(s, path, hi.get("title") or f'{hi.get("h1", "")} | सरकारी चार्ट', (hi.get("lead") or hi.get("h1") or "")[:158]), encoding="utf-8")
+        add_alts(d / "index.html", path)
         n += 1
     # the homepage (its list is drawn by the page script; in Hindi it links to the Hindi notice pages)
     s = (SITE / "index.html").read_text(encoding="utf-8")

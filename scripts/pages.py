@@ -588,6 +588,11 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
             xd = x.get("notice_date") or (x.get("first_seen") or "")[:10]
             body += (f'      <a class="r" href="/notice/{x["slug"]}/"><span><span data-t="ex{k}">{esc(en[f"ex{k}"])}</span> <small class="g" data-t="exs{k}">{esc(xe)}</small></span>'
                      f'<span class="v g num">{esc(d_en(xd))}</span></a>\n')
+        from exams import series as _series
+        _ek = _series(exam_g["key"])
+        if (ROOT / "site" / "exam" / _ek / "index.html").exists():   # the exam's permanent page (every year), made by seo_pages.py
+            en["exAll"], hi["exAll"] = "Exam page: every year and stage →", "परीक्षा पेज: हर साल और हर चरण →"
+            body += f'      <a class="r" href="/exam/{_ek}/"><span data-t="exAll">{esc(en["exAll"])}</span><span></span></a>\n'
         main.append(f'    <section class="kv rel" id="exam" data-t-aria="exH">\n      <div class="h" data-t="exH">{esc(en["exH"])}</div>\n{body}    </section>')
         rel_ids = {x["id"] for x in others}
         related = [r for r in (related or []) if r.get("id") not in rel_ids]

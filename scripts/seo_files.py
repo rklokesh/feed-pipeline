@@ -45,9 +45,13 @@ def sitemap(items):
     urls += [(f"{SITE_URL}/{d.name}/", today, "daily", "0.8") for d in sorted(SITE.iterdir())
              if d.is_dir() and (d.name.endswith("govt-jobs") or d.name in ("railway-jobs", "police-jobs", "bank-jobs", "teacher-jobs", "defence-jobs", "latest-jobs", "admit-card", "result", "answer-key")) and (d / "index.html").exists()]
     exam_dir = SITE / "exam"
-    if exam_dir.exists():
+    if (exam_dir / "index.html").exists():
         urls.append((f"{SITE_URL}/exam/", today, "daily", "0.7"))
         urls += [(f"{SITE_URL}/exam/{d.name}/", today, "daily", "0.9") for d in sorted(exam_dir.iterdir()) if (d / "index.html").exists()]
+    hi_exam = SITE / "hi" / "exam"
+    if (hi_exam / "index.html").exists():
+        urls.append((f"{SITE_URL}/hi/exam/", today, "daily", "0.7"))
+        urls += [(f"{SITE_URL}/hi/exam/{d.name}/", today, "daily", "0.9") for d in sorted(hi_exam.iterdir()) if (d / "index.html").exists()]
     hubs_hi = [(f"{SITE_URL}/hi/", today, "hourly", "0.9")] if (SITE / "hi" / "index.html").exists() else []
     hubs_hi += [(f"{SITE_URL}/hi/{d.name}/", today, "daily", "0.8") for d in sorted((SITE / "hi").iterdir())
                 if d.is_dir() and (d.name.endswith("-jobs") or d.name in ("admit-card", "result", "answer-key")) and (d / "index.html").exists()] if (SITE / "hi").exists() else []

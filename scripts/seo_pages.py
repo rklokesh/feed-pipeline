@@ -168,7 +168,7 @@ def fd(iso, hi=False):
     return f"{d.day} {(MONH if hi else MON)[d.month - 1]}"
 
 
-def build(slug, name, match, intro, faq, all_items, links, links2=(), kind=None, titles=None):
+def build(slug, name, match, intro, faq, all_items, links, links2=(), kind=None, titles=None, noyear=False, crumb=None):
     esc = html.escape
     today = dt.datetime.now(IST).date()
     mine = [i for i in all_items if i.get("page") and match(i)]
@@ -192,6 +192,8 @@ def build(slug, name, match, intro, faq, all_items, links, links2=(), kind=None,
     if kind and kind != "Job":   # a plain newest-first list: "Latest admit cards", no "open now" section
         en.update(otherH=f"Latest {name[0].lower()}s" if not name[0].endswith("Result") else "Latest results", stat1=f"{n30} in the last 30 days", stat2="")
         hi.update(otherH=f"ताज़ा {name[1]}", stat1=f"पिछले 30 दिनों में {n30}", stat2="")
+    if noyear:
+        en["h1"], hi["h1"] = name
 
     def row(k, i, pre):
         en[f"{pre}{k}"], hi[f"{pre}{k}"] = i["title"], i.get("hi") or i["title"]
@@ -229,7 +231,8 @@ def build(slug, name, match, intro, faq, all_items, links, links2=(), kind=None,
            "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": n + 1, "url": SITE_URL + i["url"], "name": i["title"]} for n, i in enumerate(open_jobs[:20])]}},
           {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a, _, _ in faq]},
           {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": SITE_URL + "/"},
-                                                                                          {"@type": "ListItem", "position": 2, "name": en["h1"], "item": url}]}]
+                                                                                          *([{"@type": "ListItem", "position": 2, "name": crumb[0], "item": SITE_URL + crumb[1]}] if crumb else []),
+                                                                                          {"@type": "ListItem", "position": 3 if crumb else 2, "name": en["h1"], "item": url}]}]
     main = (STYLE + '\n    <article class="sp">\n'
             f'      <div><h1 data-t="h1">{esc(en["h1"])}</h1><p class="lead" data-t="lead">{esc(intro[0])}</p>'
             f'<p class="stats"><b data-t="stat1">{esc(en["stat1"])}</b><span class="g" data-t="stat2">{esc(en["stat2"])}</span></p></div>\n'
@@ -263,6 +266,71 @@ def build(slug, name, match, intro, faq, all_items, links, links2=(), kind=None,
     return len(open_jobs), len(other)
 
 
+EXAM_MIN = 3   # an exam page only once the exam has 3+ notices on the site (no thin pages)
+
+
+def exam_pages(all_items, links):
+    """One permanent page per exam at /exam/<exam>/ (no year in the address, so it keeps its Google rank every cycle):
+    the latest cycle's name as heading, open jobs, then every admit card / answer key / result / update, newest first."""
+    import shutil
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from exams import series
+    ex = {}
+    for f in (ROOT / "data/notices").glob("*.json"):
+        n = json.loads(f.read_text(encoding="utf-8"))
+        e = n.get("exam") or {}
+        if n.get("status") == "approved" and e.get("key"):
+            ex[n["id"]] = (series(e["key"]), e.get("name_en") or e["key"], e.get("name_hi") or e.get("name_en") or e["key"], e["key"])
+    groups = {}
+    for i in all_items:
+        if i.get("page") and i["id"] in ex:
+            groups.setdefault(ex[i["id"]][0], []).append(i)
+    out = SITE / "exam"
+    if out.exists():
+        shutil.rmtree(out)
+    made = []
+    for key, its in groups.items():
+        if len(its) < EXAM_MIN:
+            continue
+        newest = max(its, key=lambda i: i.get("publishedAt") or "")
+        _, en_name, hi_name, _ = ex[newest["id"]]
+        ids = {i["id"] for i in its}
+        intro = (f"Every official update for {en_name} in one place: notification, important dates, admit card, answer key and result, newest first, each with the official link.",
+                 f"{hi_name} का हर आधिकारिक अपडेट एक जगह: अधिसूचना, ज़रूरी तिथियाँ, एडमिट कार्ड, आंसर की और रिज़ल्ट, सबसे नया पहले, हर एक आधिकारिक लिंक के साथ।")
+        faq = [(f"When will the {en_name} admit card or result come?", "Only the board decides the date. It appears on this page within minutes of the board publishing it, and on our free WhatsApp and Telegram channels.",
+                f"{hi_name} का एडमिट कार्ड या रिज़ल्ट कब आएगा?", "तारीख़ सिर्फ़ बोर्ड तय करता है। बोर्ड के जारी करते ही कुछ मिनटों में यह इस पेज पर और हमारे मुफ़्त व्हाट्सऐप और टेलीग्राम चैनल पर आ जाता है।"),
+               (f"Where do I apply or download for {en_name}?", "Only on the official website named in the notice. Each update here links to it directly.",
+                f"{hi_name} के लिए आवेदन या डाउनलोड कहाँ करें?", "सिर्फ़ सूचना में दी गई आधिकारिक वेबसाइट पर। यहाँ हर अपडेट में उसका सीधा लिंक है।")]
+        titles = (f"{en_name}: Notification, Admit Card, Result, Answer Key | SarkariChart",
+                  f"{hi_name}: अधिसूचना, एडमिट कार्ड, रिज़ल्ट, आंसर की | सरकारी चार्ट")
+        build(f"exam/{key}", (en_name, hi_name), lambda i, s=ids: i["id"] in s, intro, faq, all_items, links,
+              titles=titles, noyear=True, crumb=("Exams", "/exam/"))
+        made.append((key, en_name, hi_name, len(its), newest.get("publishedAt") or ""))
+    made.sort(key=lambda m: m[4], reverse=True)
+    # /exam/ index: every exam page, latest activity first
+    esc = html.escape
+    en, hi = {"h1": "Exams", "lead": "Every exam with its full timeline: notification, admit card, answer key and result, from official notices."}, {"h1": "परीक्षाएँ", "lead": "हर परीक्षा की पूरी टाइमलाइन: अधिसूचना, एडमिट कार्ड, आंसर की और रिज़ल्ट, आधिकारिक सूचनाओं से।"}
+    rows = ""
+    for k, (key, en_name, hi_name, cnt, _) in enumerate(made):
+        en[f"x{k}"], hi[f"x{k}"] = en_name, hi_name
+        en[f"n{k}"], hi[f"n{k}"] = f"{cnt} updates", f"{cnt} अपडेट"
+        rows += f'<a href="/exam/{key}/"><span class="t" data-t="x{k}">{esc(en_name)}</span><span class="d g" data-t="n{k}">{esc(en[f"n{k}"])}</span></a>'
+    main = (STYLE + '\n    <article class="sp">\n'
+            f'      <div><h1 data-t="h1">{esc(en["h1"])}</h1><p class="lead" data-t="lead">{esc(en["lead"])}</p></div>\n'
+            f'      <section><div class="jl">{rows}</div></section>\n    </article>\n'
+            '    <span id="state" hidden></span><span id="left" hidden></span><span id="views" hidden></span><a id="dlPdf" hidden></a>')
+    en["title"], hi["title"] = f"All Exams {YEAR}: Admit Card, Result, Answer Key | SarkariChart", f"सभी परीक्षाएँ {YEAR}: एडमिट कार्ड, रिज़ल्ट, आंसर की | सरकारी चार्ट"
+    js = lambda v: json.dumps(v, ensure_ascii=False)
+    page = (TPL.replace("{{TITLE}}", esc(en["title"])).replace("{{DESC}}", esc(en["lead"])).replace("{{MAIN}}", main)
+            .replace("{{T_EN}}", "\n".join(f"      {k}: {js(v)}," for k, v in en.items()))
+            .replace("{{T_HI}}", "\n".join(f"      {k}: {js(v)}," for k, v in hi.items()))
+            .replace("{{SLUG}}", "exam").replace("{{OGIMG}}", f"{SITE_URL}/og.png").replace("{{URL}}", f"{SITE_URL}/exam/")
+            .replace("{{OGALT}}", "SarkariChart — Exams").replace("{{LAST}}", "null"))
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "index.html").write_text(page, encoding="utf-8")
+    print(f"seo: {len(made)} exam pages + /exam/")
+
+
 def main():
     all_items = items()
     links = [(p[0], p[1]) for p in PAGES]
@@ -275,6 +343,7 @@ def main():
         for slug, name, match, intro, faq in pages:
             n, m = build(slug, name, match, intro, faq, all_items, links, links2)
             print(f"seo: /{slug}/ {n} open, {m} updates")
+    exam_pages(all_items, links)
 
 
 if __name__ == "__main__":
