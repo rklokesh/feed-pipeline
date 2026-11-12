@@ -1,11 +1,29 @@
 {
+  "auto_published": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Level 1 Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Railway Recruitment Board has released the normalised cut-off marks for candidates shortlisted for the Physical Efficiency Test under CEN 09/2025.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने केंद्रीकृत रोजगार अधिसूचना 09/2025 के तहत शारीरिक दक्षता परीक्षा के लिए शॉर्टलिस्ट किए गए उम्मीदवारों के नॉर्मलाइज्ड कट-ऑफ अंक जारी कर दिए हैं।",
+    "title_en": "RRB Level 1 Posts CEN 09/2025 PET Cut-Off Marks",
+    "title_hi": "रेलवे लेवल १ पद केंद्रीकृत रोजगार अधिसूचना 09/2025 पीईटी कट-ऑफ अंक",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-12T19:18:59+00:00",
   "id": "ad8e2c2467d9",
+  "issue": 1233,
+  "issue_tidy": true,
   "kind": "result",
   "org": "RRB",
   "pdf": {
@@ -14,8 +32,13 @@
     "sha256": "be06e37a0d942b64eaeef7dee2d54fbb8e177a6ee2eef8051e0678b75601d3ae",
     "text_kind": "text"
   },
+  "published_at": "2026-11-12T19:55:50Z",
+  "qual": [
+    "10th",
+    "iti"
+  ],
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RRB CEN 09/2025: cut off",
   "url": "https://rrb.indianrailways.gov.in/-/image/1794508580369cut_off.pdf/examsDocuments"
 }

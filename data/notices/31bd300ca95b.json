@@ -1,5 +1,21 @@
 {
+  "auto_published": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Various Posts in Level-1",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Railway Recruitment Board has released the list of candidates shortlisted for the Physical Efficiency Test (PET) under CEN 09/2025 level 1 posts. Candidates can check their scorecard and normalized marks using the provided link.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने केंद्रीय रोजगार सूचना 09/2025 के लेवल 1 पदों के तहत शारीरिक दक्षता परीक्षा के लिए शॉर्टलिस्ट किए गए उम्मीदवारों की सूची जारी कर दी है। उम्मीदवार अपना स्कोरकार्ड देख सकते हैं।",
+    "title_en": "RRB Level 1 CEN 09/2025 PET Shortlist Result",
+    "title_hi": "आरआरबी लेवल 1 केंद्रीय रोजगार सूचना 09/2025 शारीरिक दक्षता परीक्षा शॉर्टलिस्ट रिजल्ट",
+    "type": "Result",
+    "vacancies": 1
+  },
   "extraction": {
     "ai": null
   },
@@ -12,6 +28,8 @@
   },
   "first_seen": "2026-11-12T19:18:59+00:00",
   "id": "31bd300ca95b",
+  "issue": 1232,
+  "issue_tidy": true,
   "kind": "result",
   "org": "RRB",
   "pdf": {
@@ -20,8 +38,13 @@
     "sha256": "ef38d0fde2d45233ace8d3185a3cad6ff0a8b5baeb78675cb2645e842ad362e7",
     "text_kind": "text"
   },
+  "published_at": "2026-11-12T19:53:07Z",
+  "qual": [
+    "10th",
+    "iti"
+  ],
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RRB CEN 09/2025: Result new",
   "url": "https://rrb.indianrailways.gov.in/-/image/1794508483166Result_new.pdf/examsDocuments"
 }
