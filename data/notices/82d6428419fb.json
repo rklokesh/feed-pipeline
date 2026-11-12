@@ -1,0 +1,58 @@
+{
+  "board_url": "https://www.upsc.gov.in/whats-new",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "lic Grievances and Pensions (UR-09, EWS-01, OBC-07, SC-02) [Advt. No. 12/2025, Vacancy No. 25081201223] Sir/Madam, With reference to your application for the",
+      "source": "rule",
+      "value": "12/2025"
+    },
+    "apply_or_official_url": {
+      "evidence": "pplication form for payment through NEFT (available at link https://upsc.gov.in/forms-download).  Bank pass book front page.  Copy of Bank cancelled cheque. (c) The candida",
+      "source": "rule",
+      "value": "https://upsc.gov.in/forms-download"
+    },
+    "apply_url": {
+      "evidence": "(http//www.upsc.gov.in)",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "http//www.upsc.gov.in"
+    },
+    "exam_date": {
+      "evidence": "30.11.2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-30"
+    },
+    "post_names": {
+      "evidence": "Subject: Recruitment to Nineteen vacancies for the post of Assistant Public\nProsecutor in Central Bureau of Investigation, Department of Personnel\nand Training, Ministry of Personnel, Public Grievances and Pensions",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Assistant Public Prosecutor in Central Bureau of Investigation, Department of Personnel and Training, Ministry of Personnel, Public Grievances and Pensions"
+      ]
+    },
+    "total_vacancies": {
+      "evidence": "nel, Public Grievances and Pensions. ADVERTISEMENT NO. : 12/2025 VACANCY NUMBER : 25081201223 VENUE OF INTERVIEW : UPSC, DHOLPUR HOUSE, SHAHJAHAN ROAD,",
+      "source": "rule",
+      "value": 2025
+    }
+  },
+  "first_seen": "2026-11-12T11:44:42+00:00",
+  "id": "82d6428419fb",
+  "kind": "notification",
+  "org": "UPSC",
+  "pdf": {
+    "bytes": 358565,
+    "pages": 7,
+    "sha256": "c5f072135f616ca45f2cbdeec47f19b263187a2957d6ed2d9a3696f3dc950d9c",
+    "text_kind": "text",
+    "via": "https://www.upsc.gov.in/sites/default/files/RT-Intv-19-AstPblcPrsctrCBI-Engl-121126.pdf"
+  },
+  "source_id": "upsc-whats-new",
+  "status": "pending_review",
+  "title": "Interview Details: 19 Posts of Assistant Public Prosecutor in CBI",
+  "url": "https://www.upsc.gov.in/whats-new/19 Posts of Assistant Public Prosecutor in CBI/Interview Details"
+}
