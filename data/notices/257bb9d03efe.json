@@ -1,22 +1,249 @@
 {
+  "auto_published": true,
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-29",
+    "last_date": null,
+    "list": true,
+    "posts": "मोहर्रिर",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "UPSSSC has announced the main exam date and fee deposition details for the Moharrir recruitment 2022. Shortlisted candidates should pay the required exam fee online.",
+    "summary_hi": "यूपीएसएसएससी ने मोहर्रिर भर्ती 2022 के लिए मुख्य परीक्षा तिथि और शुल्क जमा करने का विवरण घोषित किया है। शॉर्टलिस्ट किए गए अभ्यर्थी ऑनलाइन परीक्षा शुल्क जमा करें।",
+    "title_en": "UPSSSC Moharrir Exam Fee Notice 2026 – Main Exam Date Out",
+    "title_hi": "यूपीएसएसएससी मोहर्रिर परीक्षा शुल्क नोटिस 2026 – मुख्य परीक्षा तिथि जारी",
+    "type": "Admit card",
+    "vacancies": 92
+  },
+  "editor_notes": [],
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-12T09:14:29+00:00",
   "id": "257bb9d03efe",
+  "issue": 1235,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-12",
   "org": "UPSSSC",
+  "page": {
+    "after_en": [
+      "Download the admit card once released on the official website.",
+      "Appear for the main examination on the scheduled date."
+    ],
+    "after_hi": [
+      "आधिकारिक वेबसाइट पर प्रवेश पत्र जारी होने के बाद डाउनलोड करें।",
+      "निर्धारित तिथि पर मुख्य परीक्षा में शामिल हों।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://upsssc.gov.in/AllNotifications.aspx",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Verify shortlist status",
+      "Pay the online examination fee",
+      "Check exam timing and date"
+    ],
+    "checklist_hi": [
+      "शॉर्टलिस्ट स्थिति की जांच करें",
+      "ऑनलाइन परीक्षा शुल्क जमा करें",
+      "परीक्षा तिथि और समय की जांच करें"
+    ],
+    "conducted_by_en": "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC)",
+    "conducted_by_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग (UPSSSC)",
+    "dates": [
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "29 Nov 2026",
+        "value_hi": "29 नवंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Fee payment receipt",
+      "Admit card (when released)"
+    ],
+    "documents_hi": [
+      "शुल्क भुगतान रसीद",
+      "प्रवेश पत्र (जारी होने पर)"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-11-29",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is the main examination conducted by the Uttar Pradesh Subordinate Services Selection Commission for recruiting eligible candidates to the post of Moharrir under the Directorate of Geology and Mining, UP.",
+        "a_hi": "यह उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग द्वारा भूतत्व एवं खनिकर्म निदेशालय के अधीन मोहर्रिर के पदों पर चयन के लिए आयोजित की जाने वाली मुख्य परीक्षा है।",
+        "q_en": "What is UPSSSC Moharrir Main Exam?",
+        "q_hi": "यूपीएसएसएससी मोहर्रिर मुख्य परीक्षा क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Exam Timing",
+        "label_hi": "परीक्षा समय",
+        "value_en": "03:00 PM to 05:00 PM",
+        "value_hi": "अपराह्न 03:00 बजे से 05:00 बजे तक"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The main examination is scheduled for 29 November 2026.",
+        "a_hi": "मुख्य परीक्षा 29 नवंबर 2026 को आयोजित की जाएगी।",
+        "q_en": "What is the examination date for UPSSSC Moharrir?",
+        "q_hi": "यूपीएसएसएससी मोहर्रिर की परीक्षा तिथि क्या है?"
+      },
+      {
+        "a_en": "General and OBC candidates must pay an online fee of ₹200.",
+        "a_hi": "सामान्य और अन्य पिछड़ा वर्ग के अभ्यर्थियों को ₹200 ऑनलाइन शुल्क देना होगा।",
+        "q_en": "How much is the examination fee for General and OBC candidates?",
+        "q_hi": "सामान्य और अन्य पिछड़ा वर्ग के लिए परीक्षा शुल्क कितना है?"
+      },
+      {
+        "a_en": "SC and ST candidates must pay an online fee of ₹80.",
+        "a_hi": "अनुसूचित जाति और अनुसूचित जनजाति के अभ्यर्थियों को ₹80 ऑनलाइन शुल्क देना होगा।",
+        "q_en": "How much is the examination fee for SC and ST candidates?",
+        "q_hi": "अनुसूचित जाति और अनुसूचित जनजाति के लिए परीक्षा शुल्क कितना है?"
+      },
+      {
+        "a_en": "No, PwD candidates are not required to pay any examination fee.",
+        "a_hi": "नहीं, दिव्यांग अभ्यर्थियों द्वारा कोई शुल्क देय नहीं है।",
+        "q_en": "Is there any fee for PwD candidates?",
+        "q_hi": "क्या दिव्यांग अभ्यर्थियों के लिए कोई शुल्क है?"
+      },
+      {
+        "a_en": "Candidates will be notified separately via the website regarding the release of admit cards after fee deposition.",
+        "a_hi": "शुल्क जमा करने के बाद प्रवेश पत्र जारी करने के संबंध में वेबसाइट के माध्यम से अलग से सूचित किया जाएगा।",
+        "q_en": "When will the admit cards be released?",
+        "q_hi": "प्रवेश पत्र कब जारी किए जाएंगे?"
+      }
+    ],
+    "fees": [
+      {
+        "amount": "₹200",
+        "cat_en": "General / OBC",
+        "cat_hi": "सामान्य / अन्य पिछड़ा वर्ग"
+      },
+      {
+        "amount": "₹80",
+        "cat_en": "SC / ST",
+        "cat_hi": "अनुसूचित जाति / अनुसूचित जनजाति"
+      },
+      {
+        "amount": "₹0",
+        "cat_en": "PwD (Divyang)",
+        "cat_hi": "दिव्यांग"
+      }
+    ],
+    "h1_en": "UPSSSC Moharrir Exam Fee Notice 2026 – Main Exam Date Out",
+    "h1_hi": "यूपीएसएसएससी मोहर्रिर परीक्षा शुल्क नोटिस 2026 – मुख्य परीक्षा तिथि जारी",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official UPSSSC website homepage.",
+      "Click on the 'Main Examination Fee Deposition' link.",
+      "Enter the required details to log in.",
+      "Pay the prescribed examination fee online.",
+      "Keep the fee receipt safe for future reference."
+    ],
+    "how_hi": [
+      "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग की आधिकारिक वेबसाइट के होमपेज पर जाएं।",
+      "‘Main Examination Fee Deposition’ विकल्प पर क्लिक करें।",
+      "वांछित प्रविष्टियां (डिटेल्स) दर्ज करें।",
+      "निर्धारित परीक्षा शुल्क ऑनलाइन जमा करें।",
+      "रसीद को भविष्य के लिए सुरक्षित रखें।"
+    ],
+    "intro_en": "The Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has released an important notice regarding the Moharrir Main Examination under Advertisement No. 07-Exam/2022. A total of 92 vacancies for Moharrir under the Director of Geology and Mining, UP, will be filled through this selection process. Shortlisted candidates are required to deposit the prescribed online examination fee to be eligible for the main exam. The main examination is scheduled to be held on 29 November 2026 from 03:00 PM to 05:00 PM.",
+    "intro_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग (UPSSSC) ने विज्ञापन संख्या-07-परीक्षा/2022 के अंतर्गत मोहर्रिर मुख्य परीक्षा के संबंध में आवश्यक सूचना जारी की है। निदेशक भूतत्व एवं खनिकर्म निदेशालय उत्तर प्रदेश के नियंत्रणाधीन मोहर्रिर के कुल 92 पदों पर चयन किया जाना है। मुख्य परीक्षा हेतु शार्टलिस्ट किए गए अभ्यर्थियों को निर्धारित ऑनलाइन परीक्षा शुल्क जमा करना होगा। मुख्य परीक्षा दिनांक 29 नवंबर 2026 को अपराह्न 03:00 बजे से 05:00 बजे तक आयोजित की जाएगी।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not forget to pay the main examination fee, as admit cards can only be downloaded after fee deposition."
+    ],
+    "mistakes_hi": [
+      "मुख्य परीक्षा शुल्क जमा करना न भूलें, क्योंकि शुल्क जमा करने के बाद ही अभ्यर्थी अपना प्रवेश पत्र डाउनलोड कर सकेंगे।"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-12",
+    "official_site": "https://upsssc.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Moharrir",
+        "value_hi": "मोहर्रिर"
+      },
+      {
+        "label_en": "Total Vacancies",
+        "label_hi": "कुल पद",
+        "value_en": "92",
+        "value_hi": "92"
+      },
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "29 Nov 2026",
+        "value_hi": "29 नवम् 2026"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "07-Exam/2022",
+        "value_hi": "07-परीक्षा/2022"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Main Examination",
+      "Further selection stages as per rules"
+    ],
+    "selection_hi": [
+      "मुख्य परीक्षा",
+      "नियमानुसार आगामी चयन चरण"
+    ],
+    "share_card": {
+      "headline_en": "Exam Fee Notice 2026",
+      "headline_hi": "परीक्षा शुल्क नोटिस 2026",
+      "kind": "job",
+      "line_en": "Moharrir Main Exam",
+      "line_hi": "मोहर्रिर मुख्य परीक्षा",
+      "posts": 92
+    },
+    "status_en": "Main exam date announced and fee submission open",
+    "status_hi": "मुख्य परीक्षा तिथि घोषित और शुल्क जमा करने की प्रक्रिया शुरू",
+    "summary_en": "UPSSSC has announced the main exam date and fee details for the Moharrir recruitment 2022. Shortlisted candidates must pay the required examination fee online. The exam is scheduled for 29 November 2026.",
+    "summary_hi": "यूपीएसएसएससी ने मोहर्रिर भर्ती 2022 के लिए मुख्य परीक्षा तिथि और शुल्क विवरण घोषित किया है। शॉर्टलिस्ट किए गए अभ्यर्थी ऑनलाइन परीक्षा शुल्क जमा करें। परीक्षा 29 नवंबर 2026 को आयोजित होगी।",
+    "vacancies": [
+      {
+        "detail_en": "Directorate of Geology and Mining, UP",
+        "detail_hi": "भूतत्व एवं खनिकर्म निदेशालय, उत्तर प्रदेश",
+        "post_en": "Moharrir",
+        "post_hi": "मोहर्रिर",
+        "total": "92"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates shortlisted for the UPSSSC Moharrir Main Exam 2022"
+    ],
+    "who_hi": [
+      "यूपीएसएसएससी मोहर्रिर मुख्य परीक्षा 2022 के लिए शॉर्टलिस्ट किए गए अभ्यर्थी"
+    ]
+  },
   "pdf": {
     "bytes": 230529,
     "pages": 1,
     "sha256": "816b41b32c3341ab5f5c85f9ef47289e30308cc56d771f972ef22eafd50ce818",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-12T20:26:56Z",
+  "slug": "upsssc-moharrir-exam-fee-notice-2026-main-exam-date-out",
   "source_id": "upsssc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "विज्ञापन संख्या-07-परीक्षा/2022, मोहर्रिर मुख्य परीक्षा-(प्रा०अ०प0-2021)/07 के अ...",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?8gFyyKfR64rV2zXWBtyVU52R8C8ldCNKQkjUtPIP2VQ="
 }

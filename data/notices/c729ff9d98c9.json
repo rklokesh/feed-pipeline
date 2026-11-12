@@ -1,12 +1,29 @@
 {
+  "auto_published": true,
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-22",
+    "last_date": null,
+    "list": true,
+    "posts": "Platoon Commander, Block Organizer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "UPSSSC has released the advance exam city notification for the Platoon Commander and Block Organizer main exam 2026. Candidates must pay the prescribed exam fee to view and download their exam city details.",
+    "summary_hi": "यूपीएसएसएससी ने प्लाटून कमांडर और ब्लॉक ऑर्गेनाइजर मुख्य परीक्षा 2026 के लिए अग्रिम परीक्षा शहर की सूचना जारी कर दी है। उम्मीदवारों को अपने परीक्षा शहर का विवरण देखने और डाउनलोड करने के लिए निर्धारित परीक्षा शुल्क का भुगतान करना होगा।",
+    "title_en": "UPSSSC Platoon Commander and Block Organizer Exam City 2026",
+    "title_hi": "यूपीएसएसएससी प्लाटून कमांडर और ब्लॉक ऑर्गेनाइजर परीक्षा शहर 2026",
+    "type": "Update",
+    "vacancies": 295
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-12T09:14:29+00:00",
   "id": "c729ff9d98c9",
+  "issue": 1238,
+  "issue_tidy": true,
   "kind": "notification",
   "org": "UPSSSC",
   "pdf": {
@@ -15,8 +32,9 @@
     "sha256": "678b3164422c57b1a016a52b6467c6a3edc154944dd111392919523184e947f1",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-12T20:39:18Z",
   "source_id": "upsssc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "विज्ञापन संख्या-10-परीक्षा/2026, प्लाटून कमाण्डर / ब्लाक आर्गनाइजर मुख्य परीक्षा...",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?8gFyyKfR64qVwmHyHohSvVgIePwSxOV976bhdQNOdeQ="
 }

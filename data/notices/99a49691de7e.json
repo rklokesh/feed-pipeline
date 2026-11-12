@@ -1,12 +1,29 @@
 {
+  "auto_published": true,
   "board_url": "https://kvs.gov.in/",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Junior Secretariat Assistant (JSA) to Senior Secretariat Assistant (SSA)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Kendriya Vidyalaya Sangathan has issued an office order withdrawing promotion offers for employees who failed to join as Senior Secretariat Assistant within the stipulated time.",
+    "summary_hi": "केन्द्रीय विद्यालय संगठन ने वरिष्ठ सचिवालय सहायक के पद पर कार्यभार ग्रहण करने में विफल रहने वाले कर्मचारियों के पदोन्नति प्रस्ताव को वापस लेने का कार्यालय आदेश जारी किया है।",
+    "title_en": "KVS Junior to Senior Secretariat Assistant Promotion Withdrawn Notice",
+    "title_hi": "केन्द्रीय विद्यालय संगठन कनिष्ठ से वरिष्ठ सचिवालय सहायक पदोन्नति निरस्त आदेश",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-12T11:44:42+00:00",
   "id": "99a49691de7e",
+  "issue": 1237,
+  "issue_tidy": true,
   "kind": "other",
   "org": "KVS",
   "pdf": {
@@ -15,8 +32,9 @@
     "sha256": "e30303b21473d9b185f3651f9a7db74f5194cba70939b0727234eb3dbabe877b",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-12T20:38:55Z",
   "source_id": "kvs-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "कार्यालय आदेश – पदोन्नति से वंचित किए जाने संबंधी आदेश (कनिष्ठ सचिवालय सहायक से वरिष्ठ सचिवालय सहायक, मुख्य पैनल–2026) नई",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111271.pdf"
 }
