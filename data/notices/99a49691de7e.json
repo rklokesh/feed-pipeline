@@ -1,20 +1,6 @@
 {
   "board_url": "https://kvs.gov.in/",
-  "card": {
-    "confidence": "high",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "Junior Secretariat Assistant, Senior Secretariat Assistant",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "Internal departmental promotion and exclusion order, not a public job opening or relevant exam update.",
-    "summary_en": "Kendriya Vidyalaya Sangathan issued an order regarding the denial of promotion for certain candidates from Junior Secretariat Assistant to Senior Secretariat Assistant.",
-    "summary_hi": "केन्द्रीय विद्यालय संगठन ने कनिष्ठ सचिवालय सहायक से वरिष्ठ सचिवालय सहायक पदोन्नति से वंचित किए जाने के संबंध में आदेश जारी किया है।",
-    "title_en": "KVS Junior to Senior Secretariat Assistant Promotion Order",
-    "title_hi": "केन्द्रीय विद्यालय संगठन कनिष्ठ से वरिष्ठ सचिवालय सहायक पदोन्नति आदेश",
-    "type": "Update",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -27,10 +13,10 @@
     "bytes": 1011587,
     "pages": 2,
     "sha256": "e30303b21473d9b185f3651f9a7db74f5194cba70939b0727234eb3dbabe877b",
-    "text_kind": "scanned"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "kvs-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "कार्यालय आदेश – पदोन्नति से वंचित किए जाने संबंधी आदेश (कनिष्ठ सचिवालय सहायक से वरिष्ठ सचिवालय सहायक, मुख्य पैनल–2026) नई",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111271.pdf"
 }
