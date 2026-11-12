@@ -1,5 +1,20 @@
 {
   "board_url": "https://kvs.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Assistant Section Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal order regarding denial of promotion, not a job vacancy or recruitment update.",
+    "summary_en": "Kendriya Vidyalaya Sangathan has issued an internal office order regarding promotion denial from Senior Secretariat Assistant to Assistant Section Officer.",
+    "summary_hi": "केन्द्रीय विद्यालय संगठन ने वरिष्ठ सचिवालय सहायक से सहायक अनुभाग अधिकारी पदोन्नति के संबंध में कार्यालय आदेश जारी किया है।",
+    "title_en": "KVS Senior Secretariat Assistant Promotion Order",
+    "title_hi": "केन्द्रीय विद्यालय संगठन वरिष्ठ सचिवालय सहायक पदोन्नति आदेश",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "scanned"
   },
   "source_id": "kvs-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "कार्यालय आदेश – पदोन्नति से वंचित किए जाने संबंधी आदेश (वरिष्ठ सचिवालय सहायक से सहायक अनुभाग अधिकारी, मुख्य पैनल–2026) नई",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111219.pdf"
 }
