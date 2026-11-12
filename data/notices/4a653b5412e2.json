@@ -1,5 +1,20 @@
 {
   "board_url": "https://nta.ac.in/",
+  "card": {
+    "confidence": "low",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Various Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "No PDF text provided and insufficient notice details to process",
+    "summary_en": "The notification details are not available at this time.",
+    "summary_hi": "अधिसूचना का विवरण इस समय उपलब्ध नहीं है।",
+    "title_en": "NTA Various Posts Recruitment",
+    "title_hi": "एनटीए विभिन्न पद भर्ती",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "scanned"
   },
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Publication of Vacancy Notification for Various Posts in the NTA Read More",
   "url": "https://nta.ac.in/Download/Notice/Notice_20261112175300.pdf"
 }
