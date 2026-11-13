@@ -1,11 +1,29 @@
 {
+  "auto_published": true,
   "board_url": "https://hpsc.gov.in/en-us/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant Director and Senior Scientific Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "HPSC has released the final rejection notice for Assistant Director and Senior Scientific Officer posts. Candidates can check the notice for details.",
+    "summary_hi": "हरियाणा लोक सेवा आयोग ने सहायक निदेशक और वरिष्ठ वैज्ञानिक अधिकारी पदों के लिए अंतिम अस्वीकृति सूचना जारी कर दी है। उम्मीदवार विवरण के लिए सूचना देख सकते हैं।",
+    "title_en": "HPSC Assistant Director and Senior Scientific Officer Final Rejection",
+    "title_hi": "हरियाणा लोक सेवा आयोग सहायक निदेशक और वरिष्ठ वैज्ञानिक अधिकारी अंतिम अस्वीकृति",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-13T06:27:59+00:00",
   "id": "05dbee09363f",
+  "issue": 1242,
+  "issue_tidy": true,
   "kind": "notification",
   "org": "HPSC",
   "pdf": {
@@ -14,8 +32,12 @@
     "sha256": "c3553b2f702759dc156e55fd6ac22779ddcb771a1ca4ea9250c7bfa152d02e55",
     "text_kind": "scanned"
   },
+  "published_at": "2026-11-13T06:33:00Z",
+  "qual": [
+    "graduate"
+  ],
   "source_id": "hpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Announcement dated 13.11.2026 regarding Final Rejection for the Posts of Assistant Director and Senior Scientific Officer in FSL Madhuban Karnal, Haryana (Advt. No. 07, 08, 09, 11 & 16 of 2025)",
   "url": "https://hpsc.gov.in/Portals/0/Ann_final_Rej_AD_SSO_Advt7_8_9_11_16_2025.pdf"
 }
