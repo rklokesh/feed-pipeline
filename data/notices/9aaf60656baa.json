@@ -1,8 +1,31 @@
 {
+  "auto_published": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Various Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "View the cut-off marks for RRB CEN 09/2025 examination by downloading the official PDF.",
+    "summary_hi": "आधिकारिक पीडीएफ डाउनलोड करके आरआरबी सीईएन 09/2025 परीक्षा के कट-ऑफ अंक देखें।",
+    "title_en": "RRB CEN 09/2025 Cut Off Marks",
+    "title_hi": "आरआरबी सीईएन 09/2025 कट ऑफ अंक",
+    "type": "Result",
+    "vacancies": null
+  },
+  "exam": {
+    "key": "rrb-cen-01-2026",
+    "name_en": "RRB CEN 01 2026",
+    "name_hi": "आरआरबी सीईएन 01 2026"
+  },
   "fields": {},
   "first_seen": "2026-11-13T06:57:58+00:00",
   "id": "9aaf60656baa",
+  "issue": 1244,
+  "issue_tidy": true,
   "kind": "other",
   "org": "RRB",
   "pdf": {
@@ -11,8 +34,10 @@
     "sha256": "a51f8176bdb9630263ba199c2db6861920d0b3bc45b6c10edf0be130a8482a09",
     "text_kind": "not-pdf"
   },
+  "published_at": "2026-11-13T07:03:25Z",
+  "qual": [],
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RRB CEN 09/2025: cut off",
   "url": "https://rrb.indianrailways.gov.in/-/image/1794551619780cut_off.pdf/examsDocuments"
 }

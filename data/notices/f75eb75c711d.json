@@ -1,8 +1,31 @@
 {
+  "auto_published": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "medium",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "CEN 09/2025 Posts",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "The Railway Recruitment Board has released the result for CEN 09/2025. Candidates can check their status using the link.",
+    "summary_hi": "रेलवे भर्ती बोर्ड ने सीईएन 09/2025 के लिए परिणाम जारी कर दिया है। उम्मीदवार दिए गए लिंक से अपना परिणाम देख सकते हैं।",
+    "title_en": "RRB CEN 09/2025 Examination Result",
+    "title_hi": "आरआरबी सीईएन 09/2025 परीक्षा परिणाम",
+    "type": "Result",
+    "vacancies": null
+  },
+  "exam": {
+    "key": "rrb-cen-01-2026",
+    "name_en": "RRB CEN 01 2026",
+    "name_hi": "आरआरबी सीईएन 01 2026"
+  },
   "fields": {},
   "first_seen": "2026-11-13T06:57:58+00:00",
   "id": "f75eb75c711d",
+  "issue": 1245,
+  "issue_tidy": true,
   "kind": "result",
   "org": "RRB",
   "pdf": {
@@ -11,8 +34,10 @@
     "sha256": "110813bbac84379e5e68e414cef219d4af507231b6dac7122de507b66ed96eac",
     "text_kind": "not-pdf"
   },
+  "published_at": "2026-11-13T07:03:28Z",
+  "qual": [],
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RRB CEN 09/2025: Result new",
   "url": "https://rrb.indianrailways.gov.in/-/image/1794551546237Result_new.pdf/examsDocuments"
 }
