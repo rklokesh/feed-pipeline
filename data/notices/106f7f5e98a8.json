@@ -31,10 +31,10 @@
   "org": "RSSB Rajasthan",
   "page": {
     "after_en": [
-      "Final merit list and appointment recommendations will be issued after successful document verification."
+      "Final selection and appointment by the Transport and Road Safety Department based on successful document verification."
     ],
     "after_hi": [
-      "सफल दस्तावेज सत्यापन के बाद अंतिम मेरिट सूची और नियुक्ति की सिफारिशें जारी की जाएंगी।"
+      "सफल दस्तावेज सत्यापन के आधार पर परिवहन एवं सड़क सुरक्षा विभाग द्वारा अंतिम चयन और नियुक्ति।"
     ],
     "age": [],
     "apply_start": null,
@@ -42,61 +42,121 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check your roll number in the DV schedule PDF.",
-      "Keep original documents and self-attested photocopies ready.",
-      "Report to the designated venue on time."
+      "Download and fill the scrutiny form",
+      "Keep 2 sets of self-attested copies ready",
+      "Arrange all original educational and experience certificates",
+      "Carry valid LMV driving license and ID proof"
     ],
     "checklist_hi": [
-      "डीवी अनुसूची पीडीएफ में अपना रोल नंबर जांचें।",
-      "मूल दस्तावेज और स्व-सत्यापित फोटोकॉपी तैयार रखें।",
-      "निर्धारित स्थल पर समय पर रिपोर्ट करें।"
+      "संवीक्षा फॉर्म डाउनलोड करें और भरें",
+      "स्व-प्रमाणित प्रतियों के 2 सेट तैयार रखें",
+      "सभी मूल शैक्षणिक और अनुभव प्रमाण पत्र व्यवस्थित करें",
+      "वैध एलएमवी ड्राइविंग लाइसेंस और आईडी प्रूफ साथ रखें"
     ],
     "conducted_by_en": "Rajasthan Staff Selection Board (RSSB)",
     "conducted_by_hi": "राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी)",
     "dates": [
       {
-        "label_en": "Notice Date",
-        "label_hi": "नोटिस की तारीख",
-        "value_en": "13 Nov 2026",
-        "value_hi": "13 नव 2026"
+        "label_en": "Document Verification Dates",
+        "label_hi": "दस्तावेज सत्यापन तिथियां",
+        "value_en": "16 Nov 2026 to 21 Nov 2026",
+        "value_hi": "16 नवम्बर 2026 से 21 नवम्बर 2026"
+      },
+      {
+        "label_en": "Reserved Day",
+        "label_hi": "आरक्षित दिवस",
+        "value_en": "21 Nov 2026",
+        "value_hi": "21 नवम्बर 2026"
       }
     ],
     "documents_en": [
-      "Educational qualification certificates",
-      "Identity proof",
-      "Category certificate if applicable",
-      "Printout of application form and document verification form"
+      "Secondary mark sheet and certificate for date of birth verification",
+      "3-year Mechanical or Automobile Engineering diploma certificate",
+      "1-year work experience certificate from a reputed automobile workshop",
+      "Light Motor Vehicle driving license",
+      "Original residence and category certificates",
+      "Detailed application-cum-scrutiny form (2 sets)",
+      "Character certificates from two different gazetted officers and last educational institution",
+      "Photo ID proof and 2 latest passport size photographs"
     ],
     "documents_hi": [
-      "शैक्षणिक योग्यता प्रमाण पत्र",
-      "पहचान प्रमाण",
-      "श्रेणी प्रमाण पत्र यदि लागू हो",
-      "आवेदन पत्र और दस्तावेज सत्यापन पत्र का प्रिंटआउट"
+      "जन्म तिथि सत्यापन के लिए माध्यमिक अंकतालिका और प्रमाण पत्र",
+      "3 वर्षीय मैकेनिकल या ऑटोमोबाइल इंजीनियरिंग डिप्लोमा प्रमाण पत्र",
+      "प्रतिष्ठित ऑटोमोबाइल कार्यशाला से 1 वर्ष का कार्य अनुभव प्रमाण पत्र",
+      "हल्का मोटर यान ड्राइविंग लाइसेंस",
+      "मूल निवास और जाति प्रमाण पत्र",
+      "विस्तृत आवेदन-सह-संवीक्षा प्रपत्र (2 सेट)",
+      "दो अलग-अलग राजपत्रित अधिकारियों और अंतिम शिक्षण संस्थान से चरित्र प्रमाण पत्र",
+      "फोटो आईडी प्रूफ और 2 नवीनतम पासपोर्ट साइज फोटो"
     ],
-    "eligibility": [],
+    "eligibility": [
+      {
+        "label_en": "Technical Qualification",
+        "label_hi": "तकनीकी योग्यता",
+        "value_en": "3-year Diploma in Mechanical Engineering or Automobile Engineering",
+        "value_hi": "मैकेनिकल इंजीनियरिंग या ऑटोमोबाइल इंजीनियरिंग में 3 वर्षीय डिप्लोमा"
+      },
+      {
+        "label_en": "Experience",
+        "label_hi": "अनुभव",
+        "value_en": "At least 1 year experience in repair of light motor vehicles, heavy goods vehicles and heavy passenger vehicles in a reputed automobile workshop",
+        "value_hi": "प्रतिष्ठित ऑटोमोबाइल कार्यशाला में हल्के मोटर वाहन, भारी माल वाहनों और भारी यात्री वाहनों की मरम्मत का कम से कम 1 वर्ष का अनुभव"
+      },
+      {
+        "label_en": "Driving License",
+        "label_hi": "ड्राइविंग लाइसेंस",
+        "value_en": "Valid Light Motor Vehicle (LMV) Driving License",
+        "value_hi": "वैध हल्का मोटर यान श्रेणी का ड्राइविंग लाइसेंस"
+      }
+    ],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is the process where shortlisted candidates must present their original documents and certificates to verify their eligibility for the Motor Vehicle Sub Inspector post.",
-        "a_hi": "यह वह प्रक्रिया है जहाँ शॉर्टलिस्ट किए गए उम्मीदवारों को मोटर वाहन उप निरीक्षक पद के लिए अपनी पात्रता सत्यापित करने के लिए अपने मूल दस्तावेज और प्रमाण पत्र प्रस्तुत करने होते हैं।",
-        "q_en": "What is RSSB Motor Vehicle Sub Inspector 2021 Document Verification?",
-        "q_hi": "आरएसएसबी मोटर वाहन उप निरीक्षक 2021 दस्तावेज सत्यापन क्या है?"
+        "a_en": "It is the process where provisionally selected candidates for the Motor Vehicle Sub Inspector 2021 exam must present their original educational, technical, and category documents to verify their eligibility.",
+        "a_hi": "यह वह प्रक्रिया है जिसमें मोटर वाहन उप निरीक्षक 2021 परीक्षा के लिए अनं रूप से चयनित उम्मीदवारों को अपनी पात्रता सत्यापित करने के लिए अपने मूल शैक्षणिक, तकनीकी और श्रेणी के दस्तावेज प्रस्तुत करने होते हैं।",
+        "q_en": "What is the RSSB Motor Vehicle SI Document Verification?",
+        "q_hi": "आरएसएसबी मोटर वाहन एसआई दस्तावेज सत्यापन क्या है?"
       }
     ],
-    "extra": [],
+    "extra": [
+      {
+        "label_en": "Reporting Venue",
+        "label_hi": "रिपोर्टिंग स्थल",
+        "value_en": "Transport and Road Safety Department office",
+        "value_hi": "परिवहन एवं सड़क सुरक्षा विभाग कार्यालय"
+      }
+    ],
     "faq": [
       {
-        "a_en": "The document verification schedule notice was released on 13 November 2026.",
-        "a_hi": "दस्तावेज सत्यापन अनुसूची नोटिस 13 नवंबर 2026 को जारी किया गया था।",
-        "q_en": "When was the RSSB Motor Vehicle Sub Inspector 2021 DV schedule released?",
-        "q_hi": "आरएसएसबी मोटर वाहन उप निरीक्षक 2021 डीवी अनुसूची कब जारी की गई थी?"
+        "a_en": "The document verification is scheduled from 16 November 2026 to 20 November 2026, with a reserved day on 21 November 2026.",
+        "a_hi": "दस्तावेज सत्यापन 16 नवंबर 2026 से 20 नवंबर 2026 तक निर्धारित है, जिसमें 21 नवंबर 2026 को आरक्षित दिन रखा गया है।",
+        "q_en": "When is the RSSB Motor Vehicle SI document verification scheduled?",
+        "q_hi": "आरएसएसबी मोटर वाहन एसआई दस्तावेज सत्यापन कब निर्धारित है?"
       },
       {
-        "a_en": "You can check your verification date and instructions by downloading the official office order PDF from the RSSB website.",
-        "a_hi": "आप आरएसएसबी वेबसाइट से आधिकारिक कार्यालय आदेश पीडीएफ डाउनलोड करके अपनी सत्यापन तिथि और निर्देशों की जांच कर सकते हैं।",
-        "q_en": "How can I check my document verification date?",
-        "q_hi": "मैं अपनी दस्तावेज सत्यापन तिथि कैसे देख सकता हूँ?"
+        "a_en": "Candidates must report in person at 11:00 AM on their scheduled date.",
+        "a_hi": "उम्मीदवारों को अपनी निर्धारित तिथि पर सुबह 11:00 बजे व्यक्तिगत रूप से उपस्थित होना होगा।",
+        "q_en": "What is the reporting time for document verification?",
+        "q_hi": "दस्तावेज सत्यापन के लिए रिपोर्टिंग समय क्या है?"
+      },
+      {
+        "a_en": "Candidates must have a 3-year diploma in Mechanical Engineering or Automobile Engineering obtained before the last date of application.",
+        "a_hi": "उम्मीदवारों के पास आवेदन की अंतिम तिथि से पूर्व प्राप्त मैकेनिकल इंजीनियरिंग या ऑटोमोबाइल इंजीनियरिंग में 3 वर्षीय डिप्लोमा होना चाहिए।",
+        "q_en": "What technical qualifications are required for Motor Vehicle SI?",
+        "q_hi": "मोटर वाहन एसआई के लिए क्या तकनीकी योग्यता आवश्यक है?"
+      },
+      {
+        "a_en": "Yes, candidates must possess at least 1 year of work experience in the repair of light motor vehicles, heavy goods vehicles, and heavy passenger vehicles in a reputed automobile workshop.",
+        "a_hi": "हाँ, उम्मीदवारों के पास प्रतिष्ठित ऑटोमोबाइल कार्यशाला में हल्के मोटर वाहन, भारी माल वाहनों और भारी यात्री वाहनों की मरम्मत का कम से कम 1 वर्ष का कार्य अनुभव होना चाहिए।",
+        "q_en": "Is work experience mandatory for this post?",
+        "q_hi": "क्या इस पद के लिए कार्य अनुभव अनिवार्य है?"
+      },
+      {
+        "a_en": "Candidates must submit 2 sets of self-attested photocopies of all required documents along with the filled detailed application-cum-scrutiny form and 2 passport-size photographs.",
+        "a_hi": "उम्मीदवारों को भरे हुए विस्तृत आवेदन-सह-संवीक्षा फॉर्म और 2 पासपोर्ट साइज फोटो के साथ सभी आवश्यक दस्तावेजों की स्व-प्रमाणित प्रतियों के 2 सेट जमा करने होंगे।",
+        "q_en": "What documents need to be submitted along with original certificates?",
+        "q_hi": "मूल प्रमाण पत्र के साथ कौन से दस्तावेज जमा करने होंगे?"
       }
     ],
     "fees": [],
@@ -104,30 +164,32 @@
     "h1_hi": "आरएसएसबी मोटर वाहन एसआई डीवी अनुसूची 2021 – दस्तावेज सत्यापन तिथि",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official website of RSSB Rajasthan.",
-      "Click on the notification link for Motor Vehicle Sub Inspector 2021 Document Verification Schedule.",
-      "Download the PDF notice and check your roll number and verification date.",
-      "Print the document verification form and instructions for future use."
+      "Download the detailed application-cum-scrutiny form from the RSSB website.",
+      "Fill out the form and attach two sets of self-attested photocopies of all required original documents.",
+      "Report in person at the office on the scheduled date and time with all original documents, ID proof, and 2 passport size photographs."
     ],
     "how_hi": [
-      "आरएसएसबी राजस्थान की आधिकारिक वेबसाइट पर जाएं।",
-      "मोटर वाहन उप निरीक्षक 2021 दस्तावेज सत्यापन अनुसूची के लिए अधिसूचना लिंक पर क्लिक करें।",
-      "पीडीएफ नोटिस डाउनलोड करें और अपना रोल नंबर और सत्यापन तिथि जांचें।",
-      "भविष्य के उपयोग के लिए दस्तावेज सत्यापन फॉर्म और निर्देश प्रिंट करें।"
+      "आरएसएसबी की वेबसाइट से विस्तृत आवेदन-सह-संवीक्षा फॉर्म डाउनलोड करें।",
+      "फॉर्म भरें और सभी आवश्यक मूल दस्तावेजों की स्व-प्रमाणित प्रतियों के 2 सेट संलग्न करें।",
+      "निर्धारित तिथि और समय पर सभी मूल दस्तावेजों, आईडी प्रूफ और 2 पासपोर्ट साइज फोटो के साथ कार्यालय में व्यक्तिगत रूप से उपस्थित हों।"
     ],
-    "intro_en": "The Rajasthan Staff Selection Board (RSSB) has published an office order detailing the document verification schedule and guidelines for the Motor Vehicle Sub Inspector 2021 recruitment. Candidates who appeared for the exam and qualified for the next stage can view the schedule and instructions. It is important to read the guidelines carefully and keep all necessary documents ready for verification.",
-    "intro_hi": "राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी) ने मोटर वाहन उप निरीक्षक 2021 भर्ती के लिए दस्तावेज सत्यापन कार्यक्रम और दिशा-निर्देशों का विवरण देते हुए एक कार्यालय आदेश जारी किया है। जिन उम्मीदवारों ने परीक्षा दी है और अगले चरण के लिए अर्हता प्राप्त की है, वे अनुसूची और निर्देशों को देख सकते हैं। दिशा-निर्देशों को ध्यान से पढ़ना और सत्यापन के लिए सभी आवश्यक दस्तावेजों को तैयार रखना महत्वपूर्ण है।",
+    "intro_en": "The Rajasthan Staff Selection Board (RSSB) has announced the document verification schedule for the Motor Vehicle Sub Inspector Recruitment 2021. Candidates provisionally selected in the result dated 06.04.2022 are required to appear for document verification from 16 November 2026 to 20 November 2026, with a reserved day on 21 November 2026. Candidates must bring their original educational, technical, experience, and category certificates along with two sets of self-attested photocopies and the detailed scrutiny form.",
+    "intro_hi": "राजस्थान कर्मचारी चयन बोर्ड (आरएसएसबी) ने मोटर वाहन उप निरीक्षक भर्ती 2021 के लिए दस्तावेज सत्यापन अनुसूची की घोषणा कर दी है। 06.04.2022 को जारी परिणाम में अनं रूप से चयनित उम्मीदवारों को 16 नवंबर 2026 से 20 नवंबर 2026 तक दस्तावेज सत्यापन के लिए उपस्थित होना होगा, जिसमें 21 नवंबर 2026 को आरक्षित दिन रखा गया है। उम्मीदवारों को अपने मूल शैक्षणिक, तकनीकी, अनुभव और श्रेणी प्रमाण पत्र के साथ स्व-प्रमाणित प्रतियों के दो सेट और विस्तृत संवीक्षा फॉर्म लाना होगा।",
     "last_date": null,
     "mistakes_en": [
-      "Do not miss the scheduled date and time for document verification.",
-      "Ensure all required original documents and photocopies are properly arranged."
+      "Failing to bring two sets of self-attested photocopies along with original documents",
+      "Not bringing the experience and technical qualification certificates issued prior to the last date of online application"
     ],
     "mistakes_hi": [
-      "दस्तावेज सत्यापन के लिए निर्धारित तिथि और समय न चूकें।",
-      "सुनिश्चित करें कि सभी आवश्यक मूल दस्तावेज और फोटोकॉपी ठीक से व्यवस्थित हैं।"
+      "मूल दस्तावेजों के साथ स्व-प्रमाणित प्रतियों के दो सेट लाने में विफल रहना",
+      "ऑनलाइन आवेदन की अंतिम तिथि से पूर्व जारी अनुभव और तकनीकी योग्यता प्रमाण पत्र न लाना"
     ],
-    "not_en": [],
-    "not_hi": [],
+    "not_en": [
+      "Candidates who remained absent during earlier document verification and physical verification conducted by RSSB are not included."
+    ],
+    "not_hi": [
+      "वे अभ्यर्थी जो आरएसएसबी द्वारा पूर्व में आयोजित दस्तावेज सत्यापन और शारीरिक सत्यापन के दौरान अनुपस्थित रहे थे, उन्हें शामिल नहीं किया गया है।"
+    ],
     "notice_date": "2026-11-13",
     "official_site": "https://rssb.rajasthan.gov.in/",
     "physical": [],
@@ -136,50 +198,60 @@
       {
         "label_en": "Post Name",
         "label_hi": "पद का नाम",
-        "value_en": "Motor Vehicle Sub Inspector",
-        "value_hi": "मोटर वाहन उप निरीक्षक"
+        "value_en": "Motor Vehicle Sub Inspector 2021",
+        "value_hi": "मोटर वाहन उप निरीक्षक 2021"
       },
       {
-        "label_en": "Exam Year",
-        "label_hi": "परीक्षा वर्ष",
-        "value_en": "2021",
-        "value_hi": "2021"
+        "label_en": "DV Dates",
+        "label_hi": "डीवी तिथियां",
+        "value_en": "16 Nov 2026 to 21 Nov 2026",
+        "value_hi": "16 नवम् 2026 से 21 नवम् 2026"
       },
       {
-        "label_en": "Notice Type",
-        "label_hi": "नोटिस का प्रकार",
-        "value_en": "Document Verification Schedule",
-        "value_hi": "दस्तावेज सत्यापन अनुसूची"
+        "label_en": "Reporting Time",
+        "label_hi": "रिपोर्टिंग समय",
+        "value_en": "11:00 AM",
+        "value_hi": "प्रातः 11:00 बजे"
       }
     ],
     "salary": [],
     "selection_en": [
       "Written Examination",
-      "Document Verification"
+      "Document Verification and Eligibility Checking",
+      "Physical and Medical Standards Verification"
     ],
     "selection_hi": [
       "लिखित परीक्षा",
-      "दस्तावेज सत्यापन"
+      "दस्तावेज सत्यापन और पात्रता जांच",
+      "शारीरिक और चिकित्सा मानक सत्यापन"
     ],
     "share_card": {
-      "headline_en": "DV Schedule 2021",
-      "headline_hi": "दस्तावेज सत्यापन अनुसूची",
+      "headline_en": "DV Schedule 2026",
+      "headline_hi": "डीवी अनुसूची 2026",
       "kind": "sched",
-      "line_en": "Motor Vehicle Sub Inspector",
-      "line_hi": "मोटर वाहन उप निरीक्षक",
+      "line_en": "Motor Vehicle SI 2021",
+      "line_hi": "मोटर वाहन एसआई 2021",
       "posts": null
     },
-    "status_en": "Document verification schedule released",
-    "status_hi": "दस्तावेज सत्यापन अनुसूची जारी",
-    "summary_en": "Rajasthan Staff Selection Board has released the office order regarding the document verification schedule and guidelines for Motor Vehicle Sub Inspector 2021. Candidates whose roll numbers are listed can check their verification dates and instructions. Follow the required guidelines to attend the document verification process.",
-    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने मोटर वाहन उप निरीक्षक 2021 के दस्तावेज सत्यापन कार्यक्रम और दिशा-निर्देशों के संबंध में कार्यालय आदेश जारी कर दिया है। जिन उम्मीदवारों के रोल नंबर सूचीबद्ध हैं, वे अपने सत्यापन तिथियों और निर्देशों की जांच कर सकते हैं। दस्तावेज सत्यापन प्रक्रिया में भाग लेने के लिए आवश्यक दिशा-निर्देशों का पालन करें।",
-    "vacancies": [],
+    "status_en": "Document verification schedule and guidelines released",
+    "status_hi": "दस्तावेज सत्यापन अनुसूची और दिशा-निर्देश जारी",
+    "summary_en": "Rajasthan Staff Selection Board has released the document verification schedule and guidelines for the Motor Vehicle Sub Inspector 2021 recruitment. Shortlisted candidates must attend the verification process with required original documents and two sets of self-attested photocopies.",
+    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने मोटर वाहन उप निरीक्षक 2021 भर्ती के लिए दस्तावेज सत्यापन कार्यक्रम और दिशा-निर्देश जारी कर दिया है। शॉर्टलिस्ट किए गए उम्मीदवारों को आवश्यक मूल दस्तावेजों और स्व-प्रमाणित प्रतियों के दो सेट के साथ सत्यापन प्रक्रिया में उपस्थित होना होगा।",
+    "vacancies": [
+      {
+        "detail_en": "3 times of the vacancies provisionally shortlisted",
+        "detail_hi": "रिक्तियों के 3 गुना अभ्यर्थी अनं रूप से शॉर्टलिस्ट किए गए",
+        "post_en": "Motor Vehicle Sub Inspector",
+        "post_hi": "मोटर वाहन उप निरीक्षक",
+        "total": ""
+      }
+    ],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the RSSB Motor Vehicle Sub Inspector 2021 exam and are shortlisted for document verification."
+      "Candidates shortlisted in the written exam result dated 06.04.2022 for Motor Vehicle SI 2021"
     ],
     "who_hi": [
-      "वे उम्मीदवार जिन्होंने आरएसएसबी मोटर वाहन उप निरीक्षक 2021 की परीक्षा दी है और दस्तावेज सत्यापन के लिए शॉर्टलिस्ट किए गए हैं।"
+      "मोटर वाहन एसआई 2021 के लिए 06.04.2022 को जारी लिखित परीक्षा परिणाम में शॉर्टलिस्ट किए गए उम्मीदवार"
     ]
   },
   "pdf": {
@@ -189,11 +261,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-13T12:03:25Z",
-  "qual": [
-    "10th",
-    "diploma"
-  ],
-  "rewrite": true,
   "slug": "rssb-motor-vehicle-si-dv-schedule-2021-document-verification-dat",
   "source_id": "rssb-home",
   "status": "approved",

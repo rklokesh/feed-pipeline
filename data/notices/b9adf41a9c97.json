@@ -31,10 +31,12 @@
   "org": "ESIC",
   "page": {
     "after_en": [
-      "Selected candidates will be notified regarding further appointment formalities and document verification by ESIC."
+      "Selected candidates will receive joining instructions or offer letters from ESIC Faridabad.",
+      "Document verification will be conducted as per institutional guidelines."
     ],
     "after_hi": [
-      "चयनित उम्मीदवारों को ईएसआईडीसी द्वारा आगे की नियुक्ति औपचारिकता और दस्तावेज़ सत्यापन के बारे में सूचित किया जाएगा।"
+      "चयनित उम्मीदवारों को ईएसआईडीसी फरीदाबाद से नियुक्ति निर्देश या प्रस्ताव पत्र प्राप्त होंगे।",
+      "संस्थागत दिशा-निर्देशों के अनुसार दस्तावेज़ सत्यापन किया जाएगा।"
     ],
     "age": [],
     "apply_start": null,
@@ -42,61 +44,65 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check your roll number or name in the official result PDF.",
-      "Keep a printout of the result for future reference."
+      "Check candidate name and father's/husband's name in the result PDF",
+      "Note down your selection status (Selected or Waitlisted)"
     ],
     "checklist_hi": [
-      "आधिकारिक परिणाम पीडीएफ में अपना रोल नंबर या नाम जांचें।",
-      "भविष्य के संदर्भ के लिए परिणाम का प्रिंटआउट अपने पास रखें।"
+      "परिणाम पीडीएफ में उम्मीदवार का नाम और पिता/पति का नाम जांचें",
+      "अपनी चयन स्थिति (चयनित या प्रतीक्षा सूची) नोट करें"
     ],
     "conducted_by_en": "Employees' State Insurance Corporation (ESIC)",
     "conducted_by_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईडीसी)",
     "dates": [
       {
-        "label_en": "Interview Date",
+        "label_en": "Interview date",
         "label_hi": "साक्षात्कार तिथि",
         "value_en": "11 Nov 2026",
-        "value_hi": "11 नव 2026"
+        "value_hi": "11 नवंबर 2026"
       },
       {
-        "label_en": "Result Declaration Date",
-        "label_hi": "परिणाम घोषणा तिथि",
+        "label_en": "Result publication date",
+        "label_hi": "रिज़ल्ट प्रकाशन तिथि",
         "value_en": "13 Nov 2026",
-        "value_hi": "13 नव 2026"
+        "value_hi": "13 नवंबर 2026"
       }
     ],
-    "documents_en": [],
-    "documents_hi": [],
+    "documents_en": [
+      "Official interview result notice PDF"
+    ],
+    "documents_hi": [
+      "आधिकारिक साक्षात्कार परिणाम सूचना पीडीएफ"
+    ],
     "eligibility": [],
     "exam_date": "2026-11-11",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is the official interview result released by ESIC for candidates who appeared for contractual positions under the research project at ESIC MCH Faridabad on 11 November 2026.",
-        "a_hi": "यह ईएसआईडीसी द्वारा 11 नवंबर 2026 को ईएसआईडीसी एमएच फरीदाबाद में अनुसंधान परियोजना के तहत संविदा पदों के लिए उपस्थित होने वाले उम्मीदवारों के लिए जारी किया गया आधिकारिक साक्षात्कार परिणाम है।",
+        "a_en": "It is the official selection and waitlist notice for various contractual positions under the HPV vaccine research project at ESIC Medical College & Hospital, Faridabad, based on interviews held on 11 November 2026.",
+        "a_hi": "यह 11 नवंबर 2026 को आयोजित साक्षात्कारों के आधार पर ईएसआईडीसी चिकित्सा महाविद्यालय एवं अस्पताल, फरीदाबाद में एचपीवी वैक्सीन अनुसंधान परियोजना के तहत विभिन्न संविदा पदों के लिए आधिकारिक चयन और प्रतीक्षा सूची की सूचना है।",
         "q_en": "What is the ESIC Faridabad Research Project Result?",
-        "q_hi": "ईएसआईडीसी फरीदाबाद अनुसंधान परियोजना परिणाम क्या है?"
+        "q_hi": "ईएसआईडीसी फरीदाबाद अनुसंधान परियोजना रिज़ल्ट क्या है?"
       }
     ],
     "extra": [],
     "faq": [
       {
-        "a_en": "The interview was held on 11 November 2026.",
+        "a_en": "The interview was conducted on 11 November 2026.",
         "a_hi": "साक्षात्कार 11 नवंबर 2026 को आयोजित किया गया था।",
-        "q_en": "When was the ESIC Faridabad Research Project interview held?",
+        "q_en": "When was the ESIC Faridabad research project interview held?",
         "q_hi": "ईएसआईडीसी फरीदाबाद अनुसंधान परियोजना का साक्षात्कार कब आयोजित किया गया था?"
       },
       {
-        "a_en": "The result was declared on 13 November 2026.",
-        "a_hi": "परिणाम 13 नवंबर 2026 को घोषित किया गया था।",
-        "q_en": "When was the ESIC Faridabad Research Project result declared?",
-        "q_hi": "ईएसआईडीसी फरीदाबाद अनुसंधान परियोजना का परिणाम कब घोषित किया गया?"
+        "a_en": "The result was published on 13 November 2026.",
+        "a_hi": "परिणाम 13 नवंबर 2026 को प्रकाशित किया गया था।",
+        "q_en": "When was the interview result declared?",
+        "q_hi": "साक्षात्कार परिणाम कब घोषित किया गया?"
       },
       {
-        "a_en": "You can download the result PDF from the official ESIC website under the recruitment section.",
-        "a_hi": "आप भर्ती अनुभाग के तहत आधिकारिक ईएसआईडीसी वेबसाइट से परिणाम पीडीएफ डाउनलोड कर सकते हैं।",
-        "q_en": "Where can I download the ESIC Faridabad Research Project Result PDF?",
-        "q_hi": "मैं ईएसआईडीसी फरीदाबाद अनुसंधान परियोजना परिणाम पीडीएफ कहां से डाउनलोड कर सकता हूं?"
+        "a_en": "Results for Medical Officer, Study Coordinator, Study Nurse, Lab Technician, and Field Worker under the research project are announced.",
+        "a_hi": "अनुसंधान परियोजना के तहत मेडिकल ऑफिसर, स्टडी कोऑर्डिनेटर, स्टडी नर्स, लैब तकनीशियन और फील्ड वर्कर के परिणाम घोषित किए गए हैं।",
+        "q_en": "Which posts results are announced in this notice?",
+        "q_hi": "इस सूचना में किन पदों के परिणाम घोषित किए गए हैं?"
       }
     ],
     "fees": [],
@@ -104,63 +110,60 @@
     "h1_hi": "ईएसआईएफ फरीदाबाद अनुसंधान परियोजना रिज़ल्ट 2026 – साक्षात्कार परिणाम",
     "hindi_notice_url": null,
     "how_en": [
-      "Go to the official ESIC website.",
-      "Navigate to the recruitment section.",
-      "Click on the link for the result of the interview held on 11.11.2026 for contractual posts for the Research Project at ESIC MCH Faridabad.",
-      "Download and check the result PDF."
+      "Visit the official ESIC website at esic.gov.in",
+      "Go to the recruitment section and find the result notice for ESIC MCH Faridabad research project",
+      "Open the PDF and check your roll number or candidate name in the selected/waitlisted list"
     ],
     "how_hi": [
-      "आधिकारिक ईएसआईडीसी वेबसाइट पर जाएं।",
-      "भर्ती अनुभाग पर जाएं।",
-      "ईएसआईडीसी एमएच फरीदाबाद में अनुसंधान परियोजना के लिए संविदा पदों के लिए 11.11.2026 को आयोजित साक्षात्कार के परिणाम के लिंक पर क्लिक करें।",
-      "परिणाम पीडीएफ डाउनलोड करें और जांचें।"
+      "आधिकारिक ईएसआईडीसी वेबसाइट esic.gov.in पर जाएं",
+      "भर्ती अनुभाग पर जाएं और ईएसआईडीसी एमएच फरीदाबाद अनुसंधान परियोजना के परिणाम की सूचना खोजें",
+      "पीडीएफ खोलें और चयनित/प्रतीक्षा सूची में अपना नाम जांचें"
     ],
-    "intro_en": "The Employees' State Insurance Corporation (ESIC) has published the official result for the interviews held on 11 November 2026 for various contractual posts under the Research Project at ESIC MCH Faridabad. Candidates who participated in the interview process can now check the result notice to verify their selection. This page provides the essential details regarding the declared outcome.",
-    "intro_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईडीसी) ने ईएसआईडीसी एमएच फरीदाबाद में अनुसंधान परियोजना के तहत विभिन्न संविदा पदों के लिए 11 नवंबर 2026 को आयोजित साक्षात्कार के लिए आधिकारिक परिणाम जारी कर दिया है। साक्षात्कार प्रक्रिया में भाग लेने वाले उम्मीदवार अपने चयन की पुष्टि के लिए परिणाम सूचना देख सकते हैं। यह पृष्ठ घोषित परिणाम से संबंधित आवश्यक विवरण प्रदान करता है।",
+    "intro_en": "The Employees' State Insurance Corporation (ESIC) MCH Faridabad has announced the result of interviews held on 11 November 2026 for contractual posts under the research project. The selection list includes candidates for positions such as Medical Officer, Study Coordinator, Study Nurse, and Lab Technician. Candidates who appeared for the interview can view the selected and waitlisted names directly from the published notice.",
+    "intro_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईडीसी) एमएच फरीदाबाद ने अनुसंधान परियोजना के तहत संविदा पदों के लिए 11 नवंबर 2026 को आयोजित साक्षात्कारों का परिणाम घोषित कर दिया है। चयन सूची में मेडिकल ऑफिसर, स्टडी कोऑर्डिनेटर, स्टडी नर्स और लैब तकनीशियन जैसे पदों के लिए उम्मीदवार शामिल हैं। साक्षात्कार में शामिल होने वाले उम्मीदवार प्रकाशित सूचना में से चयनित और प्रतीक्षा सूची के नाम देख सकते हैं।",
     "last_date": null,
     "mistakes_en": [],
     "mistakes_hi": [],
     "not_en": [],
     "not_hi": [],
     "notice_date": "2026-11-13",
-    "official_site": "https://esic.gov.in",
+    "official_site": "https://esic.nic.in",
     "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Post Name",
-        "label_hi": "पद का नाम",
-        "value_en": "Contractual Posts for Research Project",
-        "value_hi": "अनुसंधान परियोजना के लिए संविदा पद"
+        "label_en": "Organisation",
+        "label_hi": "संस्था",
+        "value_en": "ESIC Medical College & Hospital, Faridabad",
+        "value_hi": "ईएसआईडीसी चिकित्सा महाविद्यालय एवं अस्पताल, फरीदाबाद"
+      },
+      {
+        "label_en": "Project Name",
+        "label_hi": "परियोजना का नाम",
+        "value_en": "Understanding the correlates of vaccine-induced immune response: an Indian cohort study involving HPV vaccines",
+        "value_hi": "अंडरस्टैंडिंग द कोरिलेट्स ऑफ़ वैक्सीन-इंड्यूस्ड इम्यून रिस्पांस: एन इंडियन कोहोर्ट स्टडी इन्वॉल्विंग एचपीवी वैक्सीन्स"
       },
       {
         "label_en": "Interview Date",
         "label_hi": "साक्षात्कार तिथि",
         "value_en": "11 Nov 2026",
-        "value_hi": "11 नव 2026"
+        "value_hi": "11 नवंबर 2026"
       },
       {
         "label_en": "Result Date",
-        "label_hi": "परिणाम तिथि",
+        "label_hi": "रिज़ल्ट तिथि",
         "value_en": "13 Nov 2026",
-        "value_hi": "13 नव 2026"
-      },
-      {
-        "label_en": "Location",
-        "label_hi": "स्थान",
-        "label_hi_alt": "",
-        "value_en": "ESIC MCH Faridabad",
-        "value_hi": "ईएसआईडीसी एमएच फरीदाबाद"
+        "value_hi": "13 नवंबर 2026"
       }
     ],
     "salary": [],
     "selection_en": [
-      "Interview",
-      "Result Declaration"
+      "Walk-in or scheduled interview held on 11 Nov 2026",
+      "Document verification and final selection list release"
     ],
     "selection_hi": [
-      "साक्षात्कार",
-      "परिणाम घोषणा"
+      "11 नवंबर 2026 को आयोजित साक्षात्कार",
+      "दस्तावेज़ सत्यापन और अंतिम चयन सूची जारी करना"
     ],
     "share_card": {
       "headline_en": "Interview Result 2026",
@@ -168,27 +171,27 @@
       "kind": "result",
       "line_en": "ESIC Faridabad Research Project",
       "line_hi": "ईएसआईडीसी फरीदाबाद अनुसंधान परियोजना",
-      "posts": null
+      "posts": 7
     },
-    "status_en": "Interview result declared",
-    "status_hi": "साक्षात्कार परिणाम घोषित",
-    "summary_en": "The Employees' State Insurance Corporation has released the interview result for various contractual posts under the research project at ESIC MCH Faridabad. The interview was conducted on 11 November 2026. Candidates who appeared for the interview can check their selection status.",
-    "summary_hi": "कर्मचारी राज्य बीमा निगम ने ईएसआईडीसी एमएच फरीदाबाद में अनुसंधान परियोजना के तहत विभिन्न संविदा पदों के लिए साक्षात्कार का परिणाम जारी कर दिया है। साक्षात्कार 11 नवंबर 2026 को आयोजित किया गया था। साक्षात्कार में शामिल होने वाले उम्मीदवार अपनी चयन स्थिति की जांच कर सकते हैं।",
+    "status_en": "Result declared",
+    "status_hi": "रिज़ल्ट घोषित",
+    "summary_en": "The Employees' State Insurance Corporation has released the interview result for various contractual posts under the research project at ESIC MCH Faridabad. The interview was conducted on 11 November 2026. Candidates can check their selection status in the official notice.",
+    "summary_hi": "कर्मचारी राज्य बीमा निगम ने ईएसआईडीसी एमएच फरीदाबाद में अनुसंधान परियोजना के तहत विभिन्न संविदा पदों के लिए साक्षात्कार का परिणाम जारी कर दिया है। साक्षात्कार 11 नवंबर 2026 को आयोजित किया गया था। उम्मीदवार आधिकारिक सूचना में अपनी चयन स्थिति की जांच कर सकते हैं।",
     "vacancies": [
       {
-        "detail_en": "Various contractual posts for the Research Project at ESIC MCH Faridabad",
-        "detail_hi": "ईएसआईडीसी एमएच फरीदाबाद में अनुसंधान परियोजना के लिए विभिन्न संविदा पद",
+        "detail_en": "Medical Officer, Study Coordinator, Study Nurse, Lab Technician, Field Worker",
+        "detail_hi": "मेडिकल ऑफिसर, स्टडी कोऑर्डिनेटर, स्टडी नर्स, लैब तकनीशियन, फील्ड वर्कर",
         "post_en": "Contractual Posts for Research Project",
         "post_hi": "अनुसंधान परियोजना के लिए संविदा पद",
-        "total": null
+        "total": "7"
       }
     ],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the interview on 11 Nov 2026 for research project posts at ESIC Faridabad."
+      "Candidates who appeared for the interview on 11 Nov 2026 at ESIC Faridabad"
     ],
     "who_hi": [
-      "वे उम्मीदवार जो ईएसआईडीसी फरीदाबाद में अनुसंधान परियोजना पदों के लिए 11 नव 2026 को साक्षात्कार में शामिल हुए थे।"
+      "वे उम्मीदवार जो 11 नवंबर 2026 को ईएसआईडीसी फरीदाबाद में साक्षात्कार के लिए उपस्थित हुए थे"
     ]
   },
   "pdf": {
@@ -198,11 +201,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-13T10:32:34Z",
-  "qual": [
-    "graduate",
-    "postgraduate"
-  ],
-  "rewrite": true,
   "slug": "esic-faridabad-research-project-result-2026-interview-result",
   "source_id": "esic-recruitment",
   "status": "approved",
