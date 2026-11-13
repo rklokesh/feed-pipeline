@@ -1,0 +1,27 @@
+{
+  "board_url": "https://rect.crpf.gov.in/",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "e can be downloaded by shortlisted candidates from the link https://ssccr.gov.in/admit-card/696529dfde07fd2f63e510d9 and the same is also available on CRPF website (i.e. https://rect.crpf.gov.in).",
+      "source": "rule",
+      "value": "https://ssccr.gov.in/admit-card/696529dfde07fd2f63e510d9"
+    }
+  },
+  "first_seen": "2026-11-13T08:58:08+00:00",
+  "id": "1b2e82623e4c",
+  "kind": "admit_card",
+  "org": "CRPF",
+  "pdf": {
+    "bytes": 144343,
+    "pages": 1,
+    "sha256": "d8b7d752cf0d82036defdaab501306774fc931e01ec1d7bae0c6eae9ed27c084",
+    "text_kind": "text"
+  },
+  "source_id": "crpf-recruitment",
+  "status": "pending_review",
+  "title": "1 Click here to download Admit card 12-Nov-2026 (140 KB)",
+  "url": "https://rect.crpf.gov.in/Upload/Recruitment/Important_Notice_The_PET_PST_events_of_CT_GD_Exam-2026_in_CAPFs-223.pdf"
+}
