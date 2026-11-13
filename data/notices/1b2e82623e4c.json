@@ -1,5 +1,23 @@
 {
+  "auto_published": true,
   "board_url": "https://rect.crpf.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-20",
+    "last_date": null,
+    "list": true,
+    "posts": "Constable GD",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Admit cards for the PET/PST stage of Constable GD Exam 2026 are now available. Shortlisted candidates should download and print their admit card for the exam.",
+    "summary_hi": "कांस्टेबल जीडी परीक्षा 2026 के पीईटी/पीएसटी चरण के लिए प्रवेश पत्र जारी कर दिए गए हैं। शॉर्टलिस्ट किए गए उम्मीदवार अपना प्रवेश पत्र डाउनलोड करके प्रिंट कर लें।",
+    "title_en": "CRPF Constable GD Admit Card 2026 Out – PET PST Exam Date Link",
+    "title_hi": "सीआरपीएफ कांस्टेबल जीडी एडमिट कार्ड 2026 जारी – पीईटी पीएसटी परीक्षा तिथि लिंक",
+    "type": "Admit card",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {},
   "extraction": {
     "ai": null
   },
@@ -12,16 +30,219 @@
   },
   "first_seen": "2026-11-13T08:58:08+00:00",
   "id": "1b2e82623e4c",
+  "issue": 1247,
+  "issue_tidy": true,
   "kind": "admit_card",
+  "notice_date": "2026-11-12",
   "org": "CRPF",
+  "page": {
+    "after_en": [
+      "Candidates who qualify the PET/PST stage will proceed to the Detailed Medical Examination (DME) and Document Verification."
+    ],
+    "after_hi": [
+      "पीईटी/पीएसटी चरण उत्तीर्ण करने वाले उम्मीदवार विस्तृत चिकित्सा परीक्षा (डीएमई) और दस्तावेज़ सत्यापन के लिए आगे बढ़ेंगे।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://ssccr.gov.in/admit-card/696529dfde07fd2f63e510d9",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Download the admit card using the official link.",
+      "Verify all personal details and exam date/venue on the admit card.",
+      "Take a printout showing the clear barcode."
+    ],
+    "checklist_hi": [
+      "आधिकारिक लिंक का उपयोग करके एडमिट कार्ड डाउनलोड करें।",
+      "एडमिट कार्ड पर सभी व्यक्तिगत विवरण और परीक्षा तिथि/स्थान की जांच करें।",
+      "स्पष्ट बारकोड दिखाने वाला प्रिंटआउट लें।"
+    ],
+    "conducted_by_en": "Central Reserve Police Force (CRPF)",
+    "conducted_by_hi": "केंद्रीय रिजर्व पुलिस बल (सीआरपीएफ)",
+    "dates": [
+      {
+        "label_en": "Notice issued date",
+        "label_hi": "नोटिस जारी होने की तिथि",
+        "value_en": "12 Nov 2026",
+        "value_hi": "12 नवंबर 2026"
+      },
+      {
+        "label_en": "PET/PST Exam starts",
+        "label_hi": "पीईटी/पीएसटी परीक्षा शुरू",
+        "value_en": "20 Nov 2026",
+        "value_hi": "20 नवंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Printed copy of E-Admit Card with Barcode",
+      "Valid Photo Identity Proof"
+    ],
+    "documents_hi": [
+      "बारकोड के साथ ई-एडमिट कार्ड की प्रिंटेड कॉपी",
+      "मान्य फोटो पहचान प्रमाण"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Status",
+        "label_hi": "स्थिति",
+        "value_en": "Qualified in CBE (Computer Based Examination)",
+        "value_hi": "सीबीई (कंप्यूटर आधारित परीक्षा) में सफल"
+      }
+    ],
+    "exam_date": "2026-11-20",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "The Physical Efficiency Test (PET) and Physical Standard Test (PST) are stages in the recruitment process for Constable GD where candidates are evaluated on physical parameters like running, height, chest, and weight after qualifying the written exam.",
+        "a_hi": "शारीरिक दक्षता परीक्षा (पीईटी) और शारीरिक मानक परीक्षा (पीएसटी) कांस्टेबल जीडी भर्ती प्रक्रिया के चरण हैं जहां लिखित परीक्षा उत्तीर्ण करने के बाद उम्मीदवारों का मूल्यांकन दौड़, ऊंचाई, छाती और वजन जैसे शारीरिक मापदंडों पर किया जाता है।",
+        "q_en": "What is CRPF Constable GD PET/PST?",
+        "q_hi": "सीआरपीएफ कांस्टेबल जीडी पीईटी/पीएसटी क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Nodal Force",
+        "label_hi": "नोडल बल",
+        "value_en": "Central Reserve Police Force (CRPF)",
+        "value_hi": "केंद्रीय रिजर्व पुलिस बल (सीआरपीएफ)"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The PET/PST events are scheduled to start from 20 November 2026 onwards.",
+        "a_hi": "पीईटी/पीएसटी परीक्षा 20 नवंबर 2026 से शुरू होने निर्धारित है।",
+        "q_en": "When will the CRPF Constable GD PET/PST 2026 start?",
+        "q_hi": "सीआरपीएफ कांस्टेबल जीडी पीईटी/पीएसटी 2026 कब से शुरू होगा?"
+      },
+      {
+        "a_en": "You can download the admit card from the official link provided on the CRPF website (rect.crpf.gov.in) or the direct SSC regional link.",
+        "a_hi": "आप सीआरपीएफ वेबसाइट (rect.crpf.gov.in) पर दिए गए आधिकारिक लिंक या सीधे एसएससी क्षेत्रीय लिंक से एडमिट कार्ड डाउनलोड कर सकते हैं।",
+        "q_en": "How can I download the CRPF Constable GD Admit Card 2026?",
+        "q_hi": "मैं सीआरपीएफ कांस्टेबल जीडी एडमिट कार्ड 2026 कैसे डाउनलोड कर सकता हूँ?"
+      },
+      {
+        "a_en": "Yes, candidates must bring a printed copy of the E-Admit card containing a Barcode. Candidates without it will not be permitted.",
+        "a_hi": "हाँ, उम्मीदवारों को बारकोड वाला ई-एडमिट कार्ड का प्रिंटेड रूप लाना अनिवार्य है। इसके बिना अनुमति नहीं दी जाएगी।",
+        "q_en": "Is the barcode necessary on the admit card?",
+        "q_hi": "क्या एडमिट कार्ड पर बारकोड होना आवश्यक है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "CRPF Constable GD Admit Card 2026 Out – PET PST Exam Date Link",
+    "h1_hi": "सीआरपीएफ कांस्टेबल जीडी एडमिट कार्ड 2026 जारी – पीईटी पीएसटी परीक्षा तिथि लिंक",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Click on the official admit card download link provided on the CRPF website or the direct link.",
+      "Enter your credentials as required to log in.",
+      "Download the E-Admit card containing the Barcode.",
+      "Take a clear printout of the admit card to carry to the PET/PST venue."
+    ],
+    "how_hi": [
+      "सीआरपीएफ वेबसाइट पर दिए गए आधिकारिक एडमिट कार्ड डाउनलोड लिंक पर क्लिक करें।",
+      "लॉगिन करने के लिए आवश्यक विवरण दर्ज करें।",
+      "बारकोड वाला ई-प्रवेश पत्र डाउनलोड करें।",
+      "पीईटी/पीएसटी केंद्र पर ले जाने के लिए एडमिट कार्ड का स्पष्ट प्रिंटआउट निकाल लें।"
+    ],
+    "intro_en": "The Central Reserve Police Force (CRPF) as the nodal force has announced the schedule and release of e-admit cards for the Physical Efficiency Test (PET) and Physical Standard Test (PST) stage of Constable (GD) Exam 2026 in CAPFs, SSF, and Rifleman (GD) in Assam Rifles. The events are scheduled to commence from 20 November 2026 for all Computer Based Examination (CBE) qualified and shortlisted candidates. Candidates must download their admit cards containing a barcode from the designated portal and carry a printed copy to the venue.",
+    "intro_hi": "केंद्रीय रिजर्व पुलिस बल (सीआरपीएफ) ने नोडल बल के रूप में सीएपीएफ, एसएसएफ और असम राइफल में राइफलमैन (जीडीडी) और कांस्टेबल (जीडी) परीक्षा 2026 के शारीरिक दक्षता परीक्षा (पीईटी) और शारीरिक मानक परीक्षा (पीएसटी) चरण के लिए प्रवेश पत्र जारी करने की घोषणा की है। यह परीक्षा उन सभी उम्मीदवारों के लिए 20 नवंबर 2026 से शुरू होगी जो कंप्यूटर आधारित परीक्षा में सफल हुए हैं। उम्मीदवारों को अपना प्रवेश पत्र जिसमें बारकोड हो, डाउनलोड करके परीक्षा केंद्र पर ले जाना अनिवार्य है।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not forget to carry the printed copy of the E-Admit card with a Barcode to the exam venue."
+    ],
+    "mistakes_hi": [
+      "परीक्षा केंद्र पर बारकोड वाले ई-एडमिट कार्ड की प्रिंटेड कॉपी ले जाना न भूलें।"
+    ],
+    "not_en": [
+      "Candidates without a printed E-Admit card containing a Barcode will not be permitted for PET/PST."
+    ],
+    "not_hi": [
+      "बारकोड वाले प्रिंटेड ई-एडमिट कार्ड के बिना उम्मीदवारों को पीईटी/पीएसटी के लिए अनुमति नहीं दी जाएगी।"
+    ],
+    "notice_date": "2026-11-12",
+    "official_site": "https://rect.crpf.gov.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Exam Name",
+        "label_hi": "परीक्षा का नाम",
+        "value_en": "Constable GD Exam 2026",
+        "value_hi": "कांस्टेबल जीडी परीक्षा 2026"
+      },
+      {
+        "label_en": "Stage",
+        "label_hi": "चरण",
+        "value_en": "PET / PST",
+        "value_hi": "पीईटी / पीएसटी"
+      },
+      {
+        "label_en": "PET/PST Date",
+        "label_hi": "पीईटी/पीएसटी तिथि",
+        "value_en": "20 Nov 2026 onwards",
+        "value_hi": "20 नवंबर 2026 से"
+      },
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस तिथि",
+        "value_en": "12 Nov 2026",
+        "value_hi": "12 नवंबर 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Computer Based Examination (CBE)",
+      "Physical Efficiency Test (PET) and Physical Standard Test (PST)",
+      "Detailed Medical Examination (DME) / Review Medical Examination (RME)",
+      "Document Verification"
+    ],
+    "selection_hi": [
+      "कंप्यूटर आधारित परीक्षा (सीबीई)",
+      "शारीरिक दक्षता परीक्षा (पीईटी) और शारीरिक मानक परीक्षा (पीएसटी)",
+      "विस्तृत चिकित्सा परीक्षा (डीएमई) / समीक्षा चिकित्सा परीक्षा (आरएमई)",
+      "दस्तावेज़ सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "PET PST Admit Card",
+      "headline_hi": "पीईटी पीएसटी एडमिट कार्ड",
+      "kind": "admit",
+      "line_en": "Constable GD Exam 2026",
+      "line_hi": "कांस्टेबल जीडी परीक्षा 2026",
+      "posts": null
+    },
+    "status_en": "Admit card released, PET/PST starts 20 Nov 2026",
+    "status_hi": "एडमिट कार्ड जारी, पीईटी/पीएसटी 20 नवंबर 2026 से शुरू",
+    "summary_en": "The Central Reserve Police Force has released the e-admit cards for the PET/PST stage of the Constable GD Exam 2026. Shortlisted candidates can download their admit card using the official link and must bring a printed copy with a barcode to the exam center.",
+    "summary_hi": "केंद्रीय रिजर्व पुलिस बल ने कांस्टेबल जीडी परीक्षा 2026 के पीईटी/पीएसटी चरण के लिए ई-प्रवेश पत्र जारी कर दिए हैं। शॉर्टलिस्ट किए गए उम्मीदवार आधिकारिक लिंक से अपना प्रवेश पत्र डाउनलोड कर सकते हैं और परीक्षा केंद्र पर बारकोड वाला प्रिंटेड एडमिट कार्ड साथ लेकर जाएं।",
+    "vacancies": [
+      {
+        "detail_en": "For CBE qualified candidates",
+        "detail_hi": "सीबीई योग्य उम्मीदवारों के लिए",
+        "post_en": "Constable (GD) in CAPFs, SSF, and Rifleman (GD) in Assam Rifles",
+        "post_hi": "सीएपीएफ, एसएसएफ और असम राइफल में कांस्टेबल (जीडी)",
+        "total": "Not specified in notice"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates shortlisted in the Computer Based Examination for Constable GD Exam 2026"
+    ],
+    "who_hi": [
+      "कांस्टेबल जीडी परीक्षा 2026 के कंप्यूटर आधारित परीक्षा में शॉर्टलिस्ट किए गए उम्मीदवार"
+    ]
+  },
   "pdf": {
     "bytes": 144343,
     "pages": 1,
     "sha256": "d8b7d752cf0d82036defdaab501306774fc931e01ec1d7bae0c6eae9ed27c084",
     "text_kind": "text"
   },
+  "published_at": "2026-11-13T09:01:19Z",
+  "qual": [
+    "10th"
+  ],
+  "slug": "crpf-constable-gd-admit-card-2026-out-pet-pst-exam-date-link",
   "source_id": "crpf-recruitment",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1 Click here to download Admit card 12-Nov-2026 (140 KB)",
   "url": "https://rect.crpf.gov.in/Upload/Recruitment/Important_Notice_The_PET_PST_events_of_CT_GD_Exam-2026_in_CAPFs-223.pdf"
 }

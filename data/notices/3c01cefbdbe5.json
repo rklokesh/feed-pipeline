@@ -1,21 +1,228 @@
 {
+  "auto_published": true,
   "board_url": "https://rect.crpf.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Constable (Technical, Tradesmen and Pioneer)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "CRPF has released a corrigendum regarding vacancy details for Constable Pioneer posts under the 2026 recruitment.",
+    "summary_hi": "सीआरपीएफ ने 2026 भर्ती के तहत कांस्टेबल पायनियर पदों के लिए रिक्ति विवरण के संबंध में शुद्धिपत्र जारी किया है।",
+    "title_en": "CRPF Constable Pioneer Vacancy 2026 – Corrigendum Notice Out",
+    "title_hi": "सीआरपीएफ कांस्टेबल पायनियर वैकेंसी 2026 – शुद्धिपत्र नोटिस जारी",
+    "type": "Update",
+    "vacancies": 8
+  },
+  "editor_notes": [],
+  "exam": {},
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-13T08:58:08+00:00",
   "id": "3c01cefbdbe5",
+  "issue": 1248,
+  "issue_tidy": true,
   "kind": "update",
+  "notice_date": "2026-11-13",
   "org": "CRPF",
+  "page": {
+    "after_en": [
+      "Proceed with the recruitment process according to the updated vacancy details."
+    ],
+    "after_hi": [
+      "अद्यतन रिक्ति विवरण के अनुसार भर्ती प्रक्रिया के साथ आगे बढ़ें।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": null,
+    "changes": [
+      {
+        "new_en": "1 Post (UR: 1)",
+        "new_hi": "1 पद (अनारक्षित: 1)",
+        "old_en": "As per original advertisement",
+        "old_hi": "मूल विज्ञापन के अनुसार",
+        "what_en": "Mason Post Vacancy",
+        "what_hi": "मेसन पद रिक्ति"
+      },
+      {
+        "new_en": "7 Posts (SC: 1, OBC: 2, EWS: 1, UR: 3)",
+        "new_hi": "7 पद (एससी: 1, ओबीसी: 2, ईडब्ल्यूएस: 1, अनारक्षित: 3)",
+        "old_en": "As per original advertisement",
+        "old_hi": "मूल विज्ञापन के अनुसार",
+        "what_en": "Electrician Post Vacancy",
+        "what_hi": "इलेक्ट्रीशियन पद रिक्ति"
+      }
+    ],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Read the official corrigendum PDF to note the category-wise vacancy changes."
+    ],
+    "checklist_hi": [
+      "श्रेणी-वार रिक्ति परिवर्तनों को नोट करने के लिए आधिकारिक शुद्धिपत्र पीडीएफ पढ़ें।"
+    ],
+    "conducted_by_en": "Central Reserve Police Force (CRPF)",
+    "conducted_by_hi": "केंद्रीय रिजर्व पुलिस बल (सीआरपीएफ)",
+    "dates": [
+      {
+        "label_en": "Original Advertisement Date",
+        "label_hi": "मूल विज्ञापन तिथि",
+        "value_en": "08 Apr 2026",
+        "value_hi": "08 अप्रैल 2026"
+      },
+      {
+        "label_en": "Corrigendum Date",
+        "label_hi": "शुद्धिपत्र तिथि",
+        "value_en": "13 Nov 2026",
+        "value_hi": "13 नवंबर 2026"
+      }
+    ],
+    "documents_en": [],
+    "documents_hi": [],
+    "eligibility": [],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "This is a corrigendum notice issued by the Central Reserve Police Force regarding the revision of vacancies for Constable Pioneer posts (Mason and Electrician trades) under the 2026 recruitment.",
+        "a_hi": "यह केंद्रीय रिजर्व पुलिस बल द्वारा 2026 भर्ती के तहत कांस्टेबल पायनियर पदों (मेसन और इलेक्ट्रीशियन ट्रेड) के लिए रिक्तियों के संशोधन के संबंध में जारी किया गया एक शुद्धिपत्र नोटिस है।",
+        "q_en": "What is this CRPF notice about?",
+        "q_hi": "यह सीआरपीएफ नोटिस किस बारे में है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Reason for Revision",
+        "label_hi": "संशोधन का कारण",
+        "value_en": "Implementation of common staffing norms as per MoF/MoE directions",
+        "value_hi": "वित्त मंत्रालय/शिक्षा मंत्रालय के निर्देशों के अनुसार सामान्य स्टाफिंग मानदंडों का कार्यान्वयन"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "Vacancies for Constable Pioneer posts, specifically Mason and Electrician trades, have been revised.",
+        "a_hi": "कांस्टेबल पायनियर पदों, विशेष रूप से मेसन और इलेक्ट्रीशियन ट्रेडों के लिए रिक्तियों को संशोधित किया गया है।",
+        "q_en": "Which posts have revised vacancies in this CRPF notice?",
+        "q_hi": "इस सीआरपीएफ नोटिस में किन पदों की रिक्तियां संशोधित की गई हैं?"
+      },
+      {
+        "a_en": "A total of 8 vacancies are now available for Constable Pioneer (1 for Mason and 7 for Electrician).",
+        "a_hi": "कांस्टेबल पायनियर के लिए कुल 8 रिक्तियां उपलब्ध हैं (मेसन के लिए 1 और इलेक्ट्रीशियन के लिए 7)।",
+        "q_en": "What is the total number of revised vacancies for Constable Pioneer?",
+        "q_hi": "कांस्टेबल पायनियर के लिए कुल संशोधित रिक्तियां कितनी हैं?"
+      },
+      {
+        "a_en": "No, vacancies for all other posts remain unchanged as per the original advertisement.",
+        "a_hi": "नहीं, मूल विज्ञापन के अनुसार अन्य सभी पदों की रिक्तियां अपरिवर्तित हैं।",
+        "q_en": "Have vacancies for other posts in CRPF 2026 recruitment changed?",
+        "q_hi": "क्या सीआरपीएफ 2026 भर्ती में अन्य पदों की रिक्तियां बदल गई हैं?"
+      },
+      {
+        "a_en": "The corrigendum was issued on 13 November 2026.",
+        "a_hi": "शुद्धिपत्र 13 नवंबर 2026 को जारी किया गया था।",
+        "q_en": "When was this CRPF corrigendum issued?",
+        "q_hi": "यह सीआरपीएफ शुद्धिपत्र कब जारी किया गया था?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "CRPF Constable Pioneer Vacancy 2026 – Corrigendum Notice Out",
+    "h1_hi": "सीआरपीएफ कांस्टेबल पायनियर वैकेंसी 2026 – शुद्धिपत्र नोटिस जारी",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official CRPF recruitment website.",
+      "Check the corrigendum notice dated 13 Nov 2026 for revised vacancy details."
+    ],
+    "how_hi": [
+      "आधिकारिक सीआरपीएफ भर्ती वेबसाइट पर जाएं।",
+      "संशोधित रिक्ति विवरण के लिए 13 नवंबर 2026 के शुद्धिपत्र नोटिस की जाँच करें।"
+    ],
+    "intro_en": "The Central Reserve Police Force (CRPF) has issued a corrigendum and addendum on 13 November 2026 concerning the recruitment of Constable (Technical, Tradesmen and Pioneer) Male/Female – 2026. This notice amends the vacancy details for the Constable (Pioneer) post specifically for Mason and Electrician trades due to the implementation of common staffing norms as directed by the Ministry of Finance / Ministry of Education. Candidates who applied for these posts should check the revised category-wise vacancy distribution. Vacancies for all other posts mentioned in the original advertisement remain unchanged.",
+    "intro_hi": "केंद्रीय रिजर्व पुलिस बल (सीआरपीएफ) ने कांस्टेबल (टेक्निकल, ट्रेड्समेन और पायनियर) पुरुष/महिला भर्ती-2026 के संबंध में 13 नवंबर 2026 को एक शुद्धिपत्र और जोड़ा पत्र जारी किया है। यह नोटिस वित्त मंत्रालय/शिक्षा मंत्रालय के निर्देशों के अनुसार सामान्य स्टाफिंग मानदंडों के कार्यान्वयन के कारण विशेष रूप से मेसन और इलेक्ट्रीशियन ट्रेडों के लिए कांस्टेबल (पायनियर) पद के रिक्ति विवरण में संशोधन करता है। इन पदों के लिए आवेदन करने वाले उम्मीदवारों को संशोधित श्रेणी-वार रिक्ति वितरण की जांच करनी चाहिए। मूल विज्ञापन में उल्लिखित अन्य सभी पदों की रिक्तियां अपरिवर्तित रहेंगी।",
+    "last_date": null,
+    "mistakes_en": [],
+    "mistakes_hi": [],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-13",
+    "official_site": "https://rect.crpf.gov.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Constable (Pioneer) - Mason & Electrician",
+        "value_hi": "कांस्टेबल (पायनियर) - मेसन और इलेक्ट्रीशियन"
+      },
+      {
+        "label_en": "Total Revised Vacancies",
+        "label_hi": "कुल संशोधित रिक्तियां",
+        "value_en": "8 Posts",
+        "value_hi": "8 पद"
+      },
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस की तिथि",
+        "value_en": "13 Nov 2026",
+        "value_hi": "13 नव 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [],
+    "selection_hi": [],
+    "share_card": {
+      "headline_en": "Corrigendum Notice",
+      "headline_hi": "शुद्धिपत्र नोटिस",
+      "kind": "corr",
+      "line_en": "Constable Pioneer Vacancy",
+      "line_hi": "कांस्टेबल पायनियर वैकेंसी",
+      "posts": 8
+    },
+    "status_en": "Corrigendum released for Constable Pioneer vacancies",
+    "status_hi": "कांस्टेबल पायनियर रिक्तियों के लिए शुद्धिपत्र जारी",
+    "summary_en": "Central Reserve Police Force has released a corrigendum and addendum modifying the vacancy details for Constable Pioneer posts under the 2026 recruitment. The vacancies for Mason and Electrician have been revised due to common staffing norms. Other post vacancies remain unchanged.",
+    "summary_hi": "केंद्रीय रिजर्व पुलिस बल ने 2026 भर्ती के तहत कांस्टेबल पायनियर पदों के लिए रिक्ति विवरण में संशोधन करते हुए एक शुद्धिपत्र और जोड़ा पत्र जारी किया है। सामान्य स्टाफिंग मानदंडों के कारण मेसन और इलेक्ट्रीशियन के लिए रिक्तियों को संशोधित किया गया है। अन्य पदों की रिक्तियां अपरिवर्तित रहेंगी।",
+    "vacancies": [
+      {
+        "detail_en": "UR 1, Others 0",
+        "detail_hi": "अनारक्षित 1, अन्य 0",
+        "post_en": "Constable (Pioneer) - Mason",
+        "post_hi": "कांस्टेबल (पायनियर) - मेसन",
+        "total": "1"
+      },
+      {
+        "detail_en": "SC 1, OBC 2, EWS 1, UR 3, Others 0",
+        "detail_hi": "एससी 1, ओबीसी 2, ईडब्ल्यूएस 1, अनारक्षित 3, अन्य 0",
+        "post_en": "Constable (Pioneer) - Electrician",
+        "post_hi": "कांस्टेबल (पायनियर) - इलेक्ट्रीशियन",
+        "total": "7"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Applicants who applied for CRPF Constable Pioneer Recruitment 2026"
+    ],
+    "who_hi": [
+      "सीआरपीएफ कांस्टेबल पायनियर भर्ती 2026 के लिए आवेदन करने वाले आवेदक"
+    ]
+  },
   "pdf": {
     "bytes": 97478,
     "pages": 1,
     "sha256": "1173fb8ba903eaadf1ba2f03b20a3ad0b9fc2c080909b9c82e2605a1276529be",
     "text_kind": "text"
   },
+  "published_at": "2026-11-13T09:01:26Z",
+  "qual": [
+    "10th",
+    "iti"
+  ],
+  "slug": "crpf-constable-pioneer-vacancy-2026-corrigendum-notice-out",
   "source_id": "crpf-recruitment",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1 CORRIGENDUM/ADDENDUM 13-Nov-2026 (95 KB)",
   "url": "https://rect.crpf.gov.in/Upload/Recruitment/CORRIGENDUM_ADDENDUM_Advertisement_for_recruitment_of_Constable_Technical_Tradesmen_and_ Pioneer_ Male-Female–2026-490.pdf"
 }
