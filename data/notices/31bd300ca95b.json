@@ -3,7 +3,7 @@
   "board_url": "https://rrb.indianrailways.gov.in/",
   "card": {
     "confidence": "high",
-    "exam_date": "2026-08-25",
+    "exam_date": "2026-08-03",
     "last_date": null,
     "list": true,
     "posts": "Level 1 Posts",
@@ -37,16 +37,12 @@
   "org": "RRB",
   "page": {
     "after_en": [
-      "Physical Efficiency Test (PET)",
-      "Document Verification",
-      "Medical Examination",
-      "Final Panel Publication"
+      "Shortlisted candidates will be called for the Physical Efficiency Test (PET) conducted by the respective Railway Recruitment Cells (RRCs).",
+      "Qualified candidates in PET will proceed to Document Verification and Medical Examination."
     ],
     "after_hi": [
-      "शारीरिक दक्षता परीक्षा (पीईटी)",
-      "दस्तावेज़ सत्यापन",
-      "चिकित्सा परीक्षा",
-      "अंतिम पैनल प्रकाशन"
+      "शॉर्टलिस्ट किए गए उम्मीदवारों को संबंधित रेलवे भर्ती सेल (आरआरसी) द्वारा आयोजित शारीरिक दक्षता परीक्षा (पीईटी) के लिए बुलाया जाएगा।",
+      "पीईटी में सफल उम्मीदवार दस्तावेज़ सत्यापन और चिकित्सा परीक्षा के लिए आगे बढ़ेंगे।"
     ],
     "age": [],
     "apply_start": null,
@@ -54,93 +50,82 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Keep your registration number ready",
-      "Check your score between 16 Nov 2026 and 01 Dec 2026"
+      "Keep your registration number and date of birth ready.",
+      "Check the official RRC website for PET schedule and e-call letter."
     ],
     "checklist_hi": [
-      "अपना पंजीकरण नंबर तैयार रखें",
-      "16 नवंबर 2026 से 01 दिसंबर 2026 के बीच अपना स्कोर जांचें"
+      "अपना पंजीकरण नंबर और जन्म तिथि तैयार रखें।",
+      "पीईटी अनुसूची और ई-कॉल लेटर के लिए आधिकारिक आरआरसी वेबसाइट देखें।"
     ],
     "conducted_by_en": "Railway Recruitment Board (RRB)",
     "conducted_by_hi": "रेलवे भर्ती बोर्ड (आरआरबी)",
     "dates": [
       {
-        "label_en": "CBT exam held on",
-        "label_hi": "सीबीटी परीक्षा आयोजित",
-        "value_en": "03 Aug 2026 – 25 Aug 2026",
-        "value_hi": "03 अगस्त 2026 – 25 अगस्त 2026"
+        "label_en": "CBT Exam Date",
+        "label_hi": "सीबीटी परीक्षा तिथि",
+        "value_en": "03 Aug 2026 - 25 Aug 2026",
+        "value_hi": "03 अगस्त 2026 - 25 अगस्त 2026"
       },
       {
-        "label_en": "Scorecard link active from",
-        "label_hi": "स्कोरकार्ड लिंक सक्रिय",
+        "label_en": "Scorecard download starts",
+        "label_hi": "स्कोरकार्ड डाउनलोड शुरू",
         "value_en": "16 Nov 2026",
         "value_hi": "16 नवंबर 2026"
       },
       {
-        "label_en": "Scorecard link active till",
-        "label_hi": "स्कोरकार्ड लिंक अंतिम तिथि",
+        "label_en": "Scorecard download ends",
+        "label_hi": "स्कोरकार्ड डाउनलोड समाप्त",
         "value_en": "01 Dec 2026",
         "value_hi": "01 दिसंबर 2026"
       }
     ],
     "documents_en": [
       "Registration Number",
-      "Date of Birth"
+      "Date of Birth",
+      "E-Call Letter for PET"
     ],
     "documents_hi": [
       "पंजीकरण संख्या",
-      "जन्म तिथि"
+      "जन्म तिथि",
+      "पीईटी के लिए ई-कॉल लेटर"
     ],
     "eligibility": [
       {
-        "label_en": "Exemption from PET",
+        "label_en": "Exemptions from PET",
         "label_hi": "पीईटी से छूट",
-        "value_en": "PwBD, ExSM, and CCAA candidates are exempted from PET.",
-        "value_hi": "दिव्यांग, भूतपूर्व सैनिक और कोर्स पूर्ण अधिनियम अप्रेन्टिस (सीसीएए) उम्मीदवारों को पीईटी से छूट दी गई है।"
+        "value_en": "PwBD, Ex-Servicemen, and CCAA candidates are exempted from PET.",
+        "value_hi": "पीडब्ल्यूडी, भूतपूर्व सैनिक और सीसीएए उम्मीदवारों को पीईटी से छूट दी गई है।"
       }
     ],
-    "exam_date": "2026-08-25",
+    "exam_date": "2026-08-03",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is the list of candidates provisionally selected to appear for the Physical Efficiency Test (PET) based on their performance in the Computer Based Test (CBT) for Level 1 posts under CEN 09/2025.",
-        "a_hi": "यह सीईएन 09/2025 के तहत लेवल 1 पदों के लिए कंप्यूटर आधारित परीक्षा (सीबीटी) में उनके प्रदर्शन के आधार पर शारीरिक दक्षता परीक्षा (पीईटी) में शामिल होने के लिए अनंतिम रूप से चुने गए उम्मीदवारों की सूची है।",
-        "q_en": "What is RRB Level 1 PET Shortlist?",
-        "q_hi": "आरआरबी लेवल 1 पीईटी शॉर्टलिस्ट क्या है?"
+        "a_en": "It is the list of candidates shortlisted for the Physical Efficiency Test (PET) based on their performance in the Computer Based Test (CBT) for Level 1 posts under CEN 09/2025.",
+        "a_hi": "यह केंद्रीय रोजगार सूचना 09/2025 के तहत लेवल 1 पदों के लिए कंप्यूटर आधारित परीक्षा (सीबीटी) में उनके प्रदर्शन के आधार पर शारीरिक दक्षता परीक्षा (पीईटी) के लिए शॉर्टलिस्ट किए गए उम्मीदवारों की सूची है।",
+        "q_en": "What is RRB Level 1 CEN 09/2025 PET Result?",
+        "q_hi": "आरआरबी लेवल 1 सीईएन 09/2025 पीईटी रिजल्ट क्या है?"
       }
     ],
-    "extra": [
-      {
-        "label_en": "Zonal Railway for RRB Bhopal",
-        "label_hi": "आरआरबी भोपाल के लिए क्षेत्रीय रेलवे",
-        "value_en": "West Central Railway, RRC Jabalpur (wcr.indianrailways.gov.in)",
-        "value_hi": "पश्चिम मध्य रेलवे, आरआरसी जबलपुर (wcr.indianrailways.gov.in)"
-      }
-    ],
+    "extra": [],
     "faq": [
       {
-        "a_en": "The CBT exam was conducted from 03.08.2026 to 25.08.2026.",
-        "a_hi": "सीबीटी परीक्षा 03.08.2026 से 25.08.2026 तक आयोजित की गई थी।",
+        "a_en": "The CBT exam was conducted from 03 August 2026 to 25 August 2026.",
+        "a_hi": "सीबीटी परीक्षा 03 अगस्त 2026 से 25 अगस्त 2026 तक आयोजित की गई थी।",
         "q_en": "When was the RRB Level 1 CBT exam conducted?",
         "q_hi": "आरआरबी लेवल 1 सीबीटी परीक्षा कब आयोजित की गई थी?"
       },
       {
-        "a_en": "You can check your normalized marks by logging in with your registration number and date of birth on the official RRB website.",
-        "a_hi": "आप आधिकारिक आरआरबी वेबसाइट पर अपने पंजीकरण नंबर और जन्म तिथि के साथ लॉगिन करके अपने नॉर्मलाइज्ड अंक देख सकते हैं।",
-        "q_en": "How can I check my normalized marks for RRB Level 1?",
-        "q_hi": "मैं आरआरबी लेवल 1 के लिए अपने नॉर्मलाइज्ड अंक कैसे देख सकता हूँ?"
+        "a_en": "The score and percentile link will be live from 16 November 2026 (17:00 Hrs) to 01 December 2026 (23:55 Hrs).",
+        "a_hi": "स्कोर और परसेंटाइल लिंक 16 नवंबर 2026 (17:00 बजे) से 01 दिसंबर 2026 (23:55 बजे) तक लाइव रहेगा।",
+        "q_en": "When can I check my normalized marks and percentile score?",
+        "q_hi": "मैं अपने नॉर्मलाइज्ड अंक और परसेंटाइल स्कोर कब देख सकता हूँ?"
       },
       {
-        "a_en": "The scorecard link is active from 16.11.2026 (17:00 Hrs) to 01.12.2026 (23:55 Hrs).",
-        "a_hi": "स्कोरकार्ड लिंक 16.11.2026 (17:00 बजे) से 01.12.2026 (23:55 बजे) तक सक्रिय है।",
-        "q_en": "When is the scorecard link active?",
-        "q_hi": "स्कोरकार्ड लिंक कब सक्रिय है?"
-      },
-      {
-        "a_en": "No, PwBD, Ex-Servicemen, and CCAA candidates are exempted from PET.",
-        "a_hi": "नहीं, दिव्यांग, भूतपूर्व सैनिक और सीसीएए उम्मीदवारों को पीईटी से छूट दी गई है।",
-        "q_en": "Are PwBD and ExSM candidates required to appear for PET?",
-        "q_hi": "क्या दिव्यांग और भूतपूर्व सैनिक उम्मीदवारों को पीईटी में शामिल होना आवश्यक है?"
+        "a_en": "No, PwBD, Ex-Servicemen, and CCAA candidates are exempted from the Physical Efficiency Test (PET).",
+        "a_hi": "नहीं, पीडब्ल्यूडी, भूतपूर्व सैनिक और सीसीएए उम्मीदवारों को शारीरिक दक्षता परीक्षा (पीईटी) से छूट दी गई है।",
+        "q_en": "Are PwBD and Ex-Servicemen candidates required to appear for PET?",
+        "q_hi": "क्या पीडब्ल्यूडी और भूतपूर्व सैनिक उम्मीदवारों को पीईटी के लिए उपस्थित होना आवश्यक है?"
       }
     ],
     "fees": [],
@@ -148,25 +133,25 @@
     "h1_hi": "आरआरबी लेवल 1 सीईएन 09/2025 पीईटी रिज़ल्ट 2026 – शॉर्टलिस्ट सूची",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official RRB website.",
-      "Click on the link to view marks and scorecard.",
-      "Enter your Registration Number and Date of Birth (DDMMYYYY).",
-      "View and download your normalized marks and scorecard."
+      "Visit the official website of your regional RRB or RRC.",
+      "Click on the link to view the PET shortlist or view marks.",
+      "Enter your Registration Number and Date of Birth (DDMMYYYY format).",
+      "View and download your scorecard or check your roll number in the list."
     ],
     "how_hi": [
-      "आधिकारिक आरआरबी वेबसाइट पर जाएं।",
-      "अंक और स्कोरकार्ड देखने के लिए दिए गए लिंक पर क्लिक करें।",
-      "अपना पंजीकरण नंबर और जन्म तिथि (डीडीएमएमवाईवाईवाईवाई) दर्ज करें।",
-      "अपने नॉर्मलाइज्ड अंक और स्कोरकार्ड देखें और डाउनलोड करें।"
+      "अपने क्षेत्रीय आरआरबी या आरआरसी की आधिकारिक वेबसाइट पर जाएं।",
+      "पीईटी शॉर्टलिस्ट सूची या अंक देखने के लिए दिए गए लिंक पर क्लिक करें।",
+      "अपना पंजीकरण नंबर और जन्म तिथि (डीडीएमएमवाईवाईवाईवाई प्रारूप में) दर्ज करें।",
+      "अपना स्कोरकार्ड देखें और डाउनलोड करें या सूची में अपना रोल नंबर जांचें।"
     ],
-    "intro_en": "The Railway Recruitment Board (RRB) has announced the result and shortlist of candidates for the Physical Efficiency Test (PET) for Level 1 posts under Centralized Employment Notice (CEN) No. 09/2025. The Computer Based Test (CBT) was held from 03 August to 25 August 2026. Candidates who appeared for the exam can check their roll numbers in the shortlist and view their percentile scores and normalized marks using their registration number and date of birth.",
-    "intro_hi": "रेलवे भर्ती बोर्ड (आरआरबी) ने केंद्रीकृत रोजगार सूचना (सीईएन) संख्या 09/2025 के अंतर्गत लेवल 1 पदों के लिए शारीरिक दक्षता परीक्षा (पीईटी) हेतु उम्मीदवारों का परिणाम और शॉर्टलिस्ट घोषित कर दिया है। कंप्यूटर आधारित परीक्षा (सीबीटी) 03 अगस्त से 25 अगस्त 2026 के बीच आयोजित की गई थी। परीक्षा में शामिल होने वाले उम्मीदवार शॉर्टलिस्ट में अपने रोल नंबर देख सकते हैं और अपने पंजीकरण नंबर तथा जन्म तिथि का उपयोग करके अपने परसेंटाइल स्कोर और नॉर्मलाइज्ड अंक देख सकते हैं।",
+    "intro_en": "Railway Recruitment Board (RRB) has announced the results of the Computer Based Test (CBT) held from 03 August 2026 to 25 August 2026 for various posts in Level-1 of the 7th CPC Pay Matrix under CEN 09/2025. Candidates have been provisionally shortlisted for the Physical Efficiency Test (PET) at three times the community-wise vacancies. Candidates can view their normalized marks and percentile scores through the official RRB websites using their registration number and date of birth from 16 November 2026 to 01 December 2026.",
+    "intro_hi": "रेलवे भर्ती बोर्ड (आरआरबी) ने केंद्रीय रोजगार सूचना 09/2025 के तहत लेवल-1 के विभिन्न पदों के लिए 03 अगस्त 2026 से 25 अगस्त 2026 तक आयोजित कंप्यूटर आधारित परीक्षा (सीबीटी) का परिणाम घोषित कर दिया है। उम्मीदवारों को समुदायवार रिक्तियों से तीन गुना संख्या में शारीरिक दक्षता परीक्षा (पीईटी) के लिए अनंतिम रूप से शॉर्टलिस्ट किया गया है। उम्मीदवार 16 नवंबर 2026 से 01 दिसंबर 2026 तक अपने पंजीकरण नंबर और जन्म तिथि का उपयोग करके आधिकारिक वेबसाइटों के माध्यम से अपने नॉर्मलाइज्ड अंक और परसेंटाइल स्कोर देख सकते हैं।",
     "last_date": null,
     "mistakes_en": [
-      "Do not enter date of birth in formats other than DDMMYYYY."
+      "Do not enter date of birth in incorrect format; use DDMMYYYY format."
     ],
     "mistakes_hi": [
-      "जन्म तिथि को डीडीएमएमवाईवाईवाईवाई प्रारूप के अलावा अन्य प्रारूप में दर्ज न करें।"
+      "जन्म तिथि गलत प्रारूप में दर्ज न करें; डीडीएमएमवाईवाईवाईवाई प्रारूप का उपयोग करें।"
     ],
     "not_en": [],
     "not_hi": [],
@@ -176,26 +161,20 @@
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Post Name",
-        "label_hi": "पद का नाम",
-        "value_en": "Level 1 Posts",
-        "value_hi": "लेवल 1 पद"
+        "label_en": "Posts",
+        "label_hi": "पदों",
+        "value_en": "Level-1 Posts (CEN 09/2025)",
+        "value_hi": "लेवल-1 पद (केंद्रीय रोजगार सूचना 09/2025)"
       },
       {
-        "label_en": "Advertisement No.",
-        "label_hi": "विज्ञापन संख्या",
-        "value_en": "CEN 09/2025",
-        "value_hi": "सीईएन 09/2025"
-      },
-      {
-        "label_en": "CBT Exam Date",
+        "label_en": "CBT Exam Dates",
         "label_hi": "सीबीटी परीक्षा तिथि",
-        "value_en": "03 Aug 2026 – 25 Aug 2026",
-        "value_hi": "03 अगस्त 2026 – 25 अगस्त 2026"
+        "value_en": "03 Aug 2026 to 25 Aug 2026",
+        "value_hi": "03 अगस्त 2026 से 25 अगस्त 2026"
       },
       {
-        "label_en": "Scorecard Window",
-        "label_hi": "स्कोरकार्ड विंडो",
+        "label_en": "Scorecard Link Active",
+        "label_hi": "स्कोरकार्ड लिंक सक्रिय",
         "value_en": "16 Nov 2026 to 01 Dec 2026",
         "value_hi": "16 नवंबर 2026 से 01 दिसंबर 2026"
       }
@@ -215,31 +194,31 @@
     ],
     "share_card": {
       "headline_en": "PET Shortlist Result",
-      "headline_hi": "पीईटी शॉर्टलिस्ट रिज़ल्ट",
+      "headline_hi": "पीईटी शॉर्टलिस्ट रिजल्ट",
       "kind": "result",
       "line_en": "Level 1 CEN 09/2025",
       "line_hi": "लेवल 1 सीईएन 09/2025",
-      "posts": 1
+      "posts": null
     },
-    "status_en": "PET shortlist and scorecard link released",
-    "status_hi": "पीईटी शॉर्टलिस्ट और स्कोरकार्ड लिंक जारी",
-    "summary_en": "RRB has released the shortlist of candidates for the Physical Efficiency Test (PET) for Level 1 posts under CEN 09/2025. Candidates can view their normalized marks and scorecard from 16 Nov to 01 Dec 2026.",
-    "summary_hi": "आरआरबी ने सीईएन 09/2025 के तहत लेवल 1 पदों के लिए शारीरिक दक्षता परीक्षा (पीईटी) के वास्ते उम्मीदवारों की शॉर्टलिस्ट जारी कर दी है। उम्मीदवार 16 नवंबर से 01 दिसंबर 2026 तक अपने नॉर्मलाइज्ड अंक और स्कोरकार्ड देख सकते हैं।",
+    "status_en": "PET shortlist result declared, scorecards available from 16 Nov 2026",
+    "status_hi": "पीईटी शॉर्टलिस्ट रिजल्ट घोषित, स्कोरकार्ड 16 नवंबर 2026 से उपलब्ध",
+    "summary_en": "RRB has released the list of candidates shortlisted for the Physical Efficiency Test (PET) for Level 1 posts under CEN 09/2025. Candidates can check their status and view percentile scores and normalized marks online.",
+    "summary_hi": "आरआरबी ने केंद्रीय रोजगार सूचना 09/2025 के तहत लेवल 1 पदों के लिए शारीरिक दक्षता परीक्षा हेतु शॉर्टलिस्ट किए गए उम्मीदवारों की सूची जारी कर दी है। उम्मीदवार अपने अंक और स्थिति ऑनलाइन देख सकते हैं।",
     "vacancies": [
       {
-        "detail_en": "Shortlisted candidates are 3 times the community-wise total vacancies.",
-        "detail_hi": "शॉर्टलिस्ट किए गए उम्मीदवार समुदाय-वार कुल रिक्तियों के 3 गुना हैं।",
-        "post_en": "Level 1 Posts",
-        "post_hi": "लेवल 1 पद",
+        "detail_en": "CEN 09/2025 7th CPC Pay Matrix Level 1",
+        "detail_hi": "केंद्रीय रोजगार सूचना 09/2025 7वां सीपीसी वेतन मैट्रिक्स लेवल 1",
+        "post_en": "Level-1 Posts",
+        "post_hi": "लेवल-1 पद",
         "total": "Various"
       }
     ],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for RRB CEN 09/2025 Level 1 CBT exam"
+      "Candidates who appeared for the RRB Level 1 CEN 09/2025 CBT exam."
     ],
     "who_hi": [
-      "आरआरबी सीईएन 09/2025 लेवल 1 सीबीटी परीक्षा में शामिल होने वाले उम्मीदवार"
+      "वे उम्मीदवार जिन्होंने आरआरबी लेवल 1 सीईएन 09/2025 सीबीटी परीक्षा दी थी।"
     ]
   },
   "pdf": {

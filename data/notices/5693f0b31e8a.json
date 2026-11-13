@@ -11,11 +11,12 @@
     "skip_reason": "",
     "summary_en": "RRB has activated the application status link for CEN 05/2026 Paramedical category recruitment. Candidates can log in to the portal from 12 November 2026 to check whether their application is accepted or rejected.",
     "summary_hi": "आरआरबी ने सीईएन 05/2026 पैरामेडिकल भर्ती के लिए आवेदन स्थिति लिंक सक्रिय कर दिया है। उम्मीदवार 12 नवंबर 2026 से पोर्टल पर लॉगिन करके अपने आवेदन की स्थिति जांच सकते हैं।",
-    "title_en": "RRB Paramedical (CEN 05/2026) Application Status",
-    "title_hi": "आरआरबी पैरामेडिकल (सीईएन 05/2026) आवेदन स्थिति",
+    "title_en": "RRB Paramedical CEN 05/2026 Application Status Link Out 2026",
+    "title_hi": "आरआरबी पैरामेडिकल सीईएन 05/2026 आवेदन स्थिति लिंक जारी 2026",
     "type": "Update",
     "vacancies": null
   },
+  "editor_notes": [],
   "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest:429"
@@ -32,7 +33,192 @@
   "issue": 1236,
   "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-12",
   "org": "RRB",
+  "page": {
+    "after_en": [
+      "Candidates with accepted applications will be eligible for further stages of the recruitment process as per RRB guidelines."
+    ],
+    "after_hi": [
+      "स्वीकृत आवेदन वाले उम्मीदवार आरआरबी दिशानिर्देशों के अनुसार भर्ती प्रक्रिया के अगले चरणों के लिए पात्र होंगे।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://www.rrbapply.gov.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Keep your login credentials ready",
+      "Check the official portal for your exact status"
+    ],
+    "checklist_hi": [
+      "अपने लॉगिन क्रेडेंशियल तैयार रखें",
+      "अपनी सटीक स्थिति के लिए आधिकारिक पोर्टल की जाँच करें"
+    ],
+    "conducted_by_en": "Railway Recruitment Boards (RRB)",
+    "conducted_by_hi": "रेलवे भर्ती बोर्ड (आरआरबी)",
+    "dates": [
+      {
+        "label_en": "Initial notification date",
+        "label_hi": "प्रारंभिक अधिसूचना तिथि",
+        "value_en": "15 Sep 2026",
+        "value_hi": "15 सित 2026"
+      },
+      {
+        "label_en": "Application status link active",
+        "label_hi": "आवेदन स्थिति लिंक सक्रिय",
+        "value_en": "12 Nov 2026",
+        "value_hi": "12 नव 2026"
+      }
+    ],
+    "documents_en": [
+      "User credentials (registration details / password)"
+    ],
+    "documents_hi": [
+      "यूजर क्रेडेंशियल (पंजीकरण विवरण / पासवर्ड)"
+    ],
+    "eligibility": [],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is an update from the Railway Recruitment Boards showing whether a candidate's submitted application has been provisionally accepted, conditionally accepted, or rejected for CEN 05/2026.",
+        "a_hi": "यह रेलवे भर्ती बोर्डों की ओर से एक अपडेट है जो यह दर्शाता है कि सीईएन 05/2026 के लिए उम्मीदवार का जमा किया गया आवेदन अनंतिम रूप से स्वीकार किया गया है, सशर्त स्वीकार किया गया है या अस्वीकार कर दिया गया है।",
+        "q_en": "What is RRB Paramedical Application Status?",
+        "q_hi": "आरआरबी पैरामेडिकल आवेदन स्थिति क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Helpdesk Phone Numbers",
+        "label_hi": "हेल्पलाइन फोन नंबर",
+        "value_en": "9592-001-188, 0172-565-3333",
+        "value_hi": "9592-001-188, 0172-565-3333"
+      },
+      {
+        "label_en": "Helpdesk Email",
+        "label_hi": "हेल्पलाइन ईमेल",
+        "value_en": "rrb.help@csc.gov.in",
+        "value_hi": "rrb.help@csc.gov.in"
+      },
+      {
+        "label_en": "Helpdesk Timings",
+        "label_hi": "हेल्पलाइन समय",
+        "value_en": "Monday to Friday (10:00 AM to 05:00 PM)",
+        "value_hi": "सोमवार से शुक्रवार (सुबह 10:00 बजे से शाम 5:00 बजे तक)"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The application status link became active on 12 November 2026.",
+        "a_hi": "आवेदन स्थिति लिंक 12 नवंबर 2026 को सक्रिय हुआ।",
+        "q_en": "When did the RRB Paramedical CEN 05/2026 application status link become active?",
+        "q_hi": "आरआरबी पैरामेडिकल सीईएन 05/2026 आवेदन स्थिति लिंक कब सक्रिय हुआ?"
+      },
+      {
+        "a_en": "You can check your status by logging in at www.rrbapply.gov.in.",
+        "a_hi": "आप www.rrbapply.gov.in पर लॉगिन करके अपनी स्थिति देख सकते हैं।",
+        "q_en": "Where can I check my RRB Paramedical application status?",
+        "q_hi": "मैं अपनी आरआरबी पैरामेडिकल आवेदन स्थिति कहां देख सकता हूं?"
+      },
+      {
+        "a_en": "The statuses are provisionally accepted, conditionally accepted, and rejected along with reasons for rejection.",
+        "a_hi": "स्थितियां अनंतिम रूप से स्वीकृत, सशर्त स्वीकृत और अस्वीकृति के कारणों के साथ अस्वीकृत हैं।",
+        "q_en": "What are the application status categories provided by RRB?",
+        "q_hi": "आरआरबी द्वारा प्रदान की जाने वाली आवेदन स्थिति श्रेणियां क्या हैं?"
+      },
+      {
+        "a_en": "Yes, SMS and email will be sent to the registered mobile number and email ID provided in the application.",
+        "a_hi": "हाँ, आवेदन में दिए गए पंजीकृत मोबाइल नंबर और ईमेल आईडी पर एसएमएस और ईमेल भेजा जाएगा।",
+        "q_en": "Will I receive any notification on my mobile or email regarding application status?",
+        "q_hi": "क्या मुझे आवेदन स्थिति के संबंध में मेरे मोबाइल या ईमेल पर कोई सूचना मिलेगी?"
+      },
+      {
+        "a_en": "The official website is https://rrb.indianrailways.gov.in.",
+        "a_hi": "आधिकारिक वेबसाइट https://rrb.indianrailways.gov.in है।",
+        "q_en": "What is the official website for RRB recruitment updates?",
+        "q_hi": "आरआरबी भर्ती अपडेट के लिए आधिकारिक वेबसाइट कौन सी है?"
+      },
+      {
+        "a_en": "You can contact the helpdesk at 9592-001-188 or 0172-565-3333, or email rrb.help@csc.gov.in between 10:00 AM and 05:00 PM from Monday to Friday.",
+        "a_hi": "आप सोमवार से शुक्रवार सुबह 10:00 बजे से शाम 05:00 बजे के बीच हेल्पडेस्क नंबर 9592-001-188 या 0172-565-3333 पर संपर्क कर सकते हैं, या rrb.help@csc.gov.in पर ईमेल कर सकते हैं।",
+        "q_en": "Who should I contact if I face issues with my application status?",
+        "q_hi": "यदि मुझे अपनी आवेदन स्थिति में समस्या आती है तो मुझे किससे संपर्क करना चाहिए?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "RRB Paramedical CEN 05/2026 Application Status Link Out 2026",
+    "h1_hi": "आरआरबी पैरामेडिकल सीईएन 05/2026 आवेदन स्थिति लिंक जारी 2026",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Go to the official application portal at www.rrbapply.gov.in.",
+      "Log in using your user credentials.",
+      "Check whether your application status is provisionally accepted, conditionally accepted, or rejected along with reasons."
+    ],
+    "how_hi": [
+      "आधिकारिक आवेदन पोर्टल www.rrbapply.gov.in पर जाएं।",
+      "अपने यूजर क्रेडेंशियल का उपयोग करके लॉगिन करें।",
+      "देखें कि आपका आवेदन प्रोविजनल रूप से स्वीकार किया गया है, सशर्त स्वीकार किया गया है, या कारणों के साथ अस्वीकार किया गया है।"
+    ],
+    "intro_en": "Railway Recruitment Boards (RRB) has released the application status notice for CEN 05/2026 Paramedical Category recruitment. Scrutiny of applications has been completed. Candidates who applied for these posts can now check their provisional acceptance, conditional acceptance, or rejection status by logging in with their credentials. The application status link is active from 12 November 2026 on the official portal.",
+    "intro_hi": "रेलवे भर्ती बोर्ड (आरआरबी) ने सीईएन 05/2026 पैरामेडिकल कोटि भर्ती के लिए आवेदन स्थिति सूचना जारी कर दी है। आवेदनों की संवीक्षा पूरी हो चुकी है। इन पदों के लिए आवेदन करने वाले उम्मीदवार अब अपने क्रेडेंशियल के साथ लॉगिन करके अपनी अनंतिम स्वीकार्यता, सशर्त स्वीकार्यता या अस्वीकृति की स्थिति की जांच कर सकते हैं। आवेदन स्थिति लिंक 12 नवंबर 2026 से आधिकारिक पोर्टल पर सक्रिय है।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not rely on unauthenticated sources for recruitment updates."
+    ],
+    "mistakes_hi": [
+      "भर्ती अपडेट के लिए अप्रमाणित स्रोतों पर भरोसा न करें।"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-12",
+    "official_site": "https://rrb.indianrailways.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Notification Number",
+        "label_hi": "अधिसूचना संख्या",
+        "value_en": "CEN No. 05/2026",
+        "value_hi": "सीईएन सं. 05/2026"
+      },
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Paramedical Category Posts",
+        "value_hi": "पैरामेडिकल कोटि के पद"
+      },
+      {
+        "label_en": "Status Link Active Date",
+        "label_hi": "स्थिति लिंक सक्रिय होने की तिथि",
+        "value_en": "12 Nov 2026",
+        "value_hi": "12 नव 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [],
+    "selection_hi": [],
+    "share_card": {
+      "headline_en": "Application Status Out",
+      "headline_hi": "आवेदन स्थिति जारी",
+      "kind": "update",
+      "line_en": "Paramedical Category CEN 05/2026",
+      "line_hi": "पैरामेडिकल कोटि सीईएन 05/2026",
+      "posts": null
+    },
+    "status_en": "Application status link released, check login status now",
+    "status_hi": "आवेदन स्थिति लिंक जारी, लॉगिन स्थिति अभी जांचें",
+    "summary_en": "RRB has activated the application status link for CEN 05/2026 Paramedical category recruitment. Candidates can log in to the portal from 12 November 2026 to check whether their application is accepted or rejected.",
+    "summary_hi": "आरआरबी ने सीईएन 05/2026 पैरामेडिकल भर्ती के लिए आवेदन स्थिति लिंक सक्रिय कर दिया है। उम्मीदवार 12 नवंबर 2026 से पोर्टल पर लॉगिन करके अपने आवेदन की स्थिति जांच सकते हैं।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Candidates who applied for RRB Paramedical Category posts under CEN 05/2026"
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जिन्होंने सीईएन 05/2026 के तहत आरआरबी पैरामेडिकल कोटि के पदों के लिए आवेदन किया है"
+    ]
+  },
   "pdf": {
     "bytes": 485927,
     "pages": 2,
@@ -40,6 +226,12 @@
     "text_kind": "text"
   },
   "published_at": "2026-11-12T20:36:30Z",
+  "qual": [
+    "12th",
+    "diploma",
+    "graduate"
+  ],
+  "slug": "rrb-paramedical-cen-05-2026-application-status-link-out-2026",
   "source_id": "rrb-unified",
   "status": "approved",
   "title": "RRB CEN 05/2026: 2026 App Status Notice",
