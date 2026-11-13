@@ -1,5 +1,31 @@
 {
+  "auto_published": true,
   "board_url": "https://www.esic.gov.in/recruitments",
+  "card": {
+    "confidence": "medium",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Professor and Associate Professor in Super Specialty Departments",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "ESIC Medical College, Bihta invites applications for Professor and Associate Professor positions on a contract basis. Candidates should check the detailed advertisement and submit their applications as prescribed.",
+    "summary_hi": "ईएसआईसी मेडिकल कॉलेज, बिहटा ने अनुबंध के आधार पर प्रोफेसर और एसोसिएट प्रोफेसर पदों के लिए आवेदन आमंत्रित किए हैं। उम्मीदवार विस्तृत विज्ञापन की जांच करें और निर्धारित अनुसार आवेदन जमा करें।",
+    "title_en": "ESIC Bihta Professor Recruitment 2026 – Apply Offline Form",
+    "title_hi": "ईएसआईसी बिहटा प्रोफेसर भर्ती 2026 – ऑफलाइन आवेदन फॉर्म",
+    "type": "Job",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": null,
+    "age_min": null,
+    "age_on": null,
+    "domicile": null,
+    "qual": "postgraduate",
+    "relax": {}
+  },
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -51,16 +77,285 @@
   },
   "first_seen": "2026-11-13T11:58:19+00:00",
   "id": "0297d9a28379",
+  "issue": 1253,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-13",
   "org": "ESIC",
+  "page": {
+    "after_en": [
+      "Scrutiny of application forms and documents",
+      "Offline interview for eligible candidates",
+      "Publication of final result and engagement on contract basis"
+    ],
+    "after_hi": [
+      "आवेदन पत्र और दस्तावेजों की जांच",
+      "योग्य उम्मीदवारों के लिए ऑफ़लाइन साक्षात्कार",
+      "अंतिम परिणाम का प्रकाशन और अनुबंध के आधार पर नियुक्ति"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://esic.gov.in/attachments/recruitmentfile/Application_form_1794569615.pdf",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Read the detailed advertisement carefully.",
+      "Fill out the application form completely in capital letters.",
+      "Attach the interview fee demand draft if not exempted.",
+      "Ensure all required self-attested document copies are enclosed."
+    ],
+    "checklist_hi": [
+      "विस्तृत विज्ञापन को ध्यान से पढ़ें।",
+      "बड़े अक्षरों में पूरी तरह से आवेदन पत्र भरें।",
+      "यदि छूट प्राप्त नहीं है तो साक्षात्कार शुल्क डिमांड ड्राफ्ट संलग्न करें।",
+      "सुनिश्चित करें कि सभी आवश्यक स्व-सत्यापित दस्तावेज प्रतियां संलग्न हैं।"
+    ],
+    "conducted_by_en": "Employees' State Insurance Corporation Medical College and Hospital, Bihta, Patna (ESIC)",
+    "conducted_by_hi": "कर्मचारी राज्य बीमा निगम मेडिकल कॉलेज और अस्पताल, बिहटा, पटना (ईएसआईसी)",
+    "dates": [
+      {
+        "label_en": "Age calculation date",
+        "label_hi": "आयु गणना की तिथि",
+        "value_en": "17 Apr 2026",
+        "value_hi": "17 अप्रैल 2026"
+      }
+    ],
+    "documents_en": [
+      "Demand Draft of Rs. 500/- as Interview Fee (if applicable)",
+      "Admit Card or Certificate of Class 10th for Date of Birth",
+      "All Mark Sheets of MBBS",
+      "Attempt Certificate of MBBS",
+      "Degree Certificate of MBBS",
+      "All Mark Sheets of MD/MS/DNB",
+      "Attempt Certificate of MD/MS/DNB Examination",
+      "Degree Certificate of MD/MS/DNB Examination",
+      "EWS/OBC/SC/ST Certificate (if applicable)",
+      "Updated NMC / State Medical Council Registration Certificate",
+      "Aadhaar Card",
+      "Proof of Publications, Certificate of Training, Attendance in Conference/Workshop/Seminar",
+      "NOC from Current Employer (if applicable)",
+      "Relieving Certificate from previous Employer (if applicable)",
+      "Experience Certificate (if applicable)"
+    ],
+    "documents_hi": [
+      "साक्षात्कार शुल्क के रूप में ₹500 का डिमांड ड्राफ्ट (यदि लागू हो)",
+      "जन्म तिथि के लिए कक्षा 10वीं का प्रवेश पत्र या प्रमाण पत्र",
+      "एमबीबीएस की सभी अंकतालिकाएं",
+      "एमबीबीएस का प्रयास प्रमाण पत्र",
+      "एमबीबीएस की डिग्री प्रमाण पत्र",
+      "एमडी/एमएस/डीएनबी की सभी अंकतालिकाएं",
+      "एमडी/एमएस/डीएनबी परीक्षा का प्रयास प्रमाण पत्र",
+      "एमडी/एमएस/डीएनबी परीक्षा की डिग्री प्रमाण पत्र",
+      "ईडब्ल्यूएस/ओबीसी/एससी/एसटी प्रमाण पत्र (यदि लागू हो)",
+      "अद्यतन एनएमसी / राज्य मेडिकल काउंसिल पंजीकरण प्रमाण पत्र",
+      "आधार कार्ड",
+      "प्रकाशनों का प्रमाण, प्रशिक्षण प्रमाण पत्र, सम्मेलन/कार्यशाला/संगोष्ठी में उपस्थिति",
+      "वर्तमान नियोक्ता से अनापत्ति प्रमाण पत्र (यदि लागू हो)",
+      "पिछले नियोक्ता से कार्यमुक्त प्रमाण पत्र (यदि लागू हो)",
+      "अनुभव प्रमाण पत्र (यदि लागू हो)"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Education",
+        "label_hi": "शिक्षा",
+        "value_en": "MBBS / MD / MS / DNB / PG Diploma / BDS / MDS or equivalent with relevant certificates",
+        "value_hi": "एमबीबीएस / एमडी / एमएस / डीएनबी / पीजी डिप्लोमा / बीडीएस / एमडीएस या समकक्ष प्रमाण पत्र के साथ"
+      },
+      {
+        "label_en": "Registration",
+        "label_hi": "पंजीकरण",
+        "value_en": "NMC / State Medical Council / Dental Council of India / State Dental Council registration",
+        "value_hi": "एनएमसी / राज्य मेडिकल काउंसिल / डेंटल काउंसिल ऑफ इंडिया / राज्य डेंटल काउंसिल पंजीकरण"
+      },
+      {
+        "label_en": "Nationality",
+        "label_hi": "राष्ट्रीयता",
+        "value_en": "Indian / Other",
+        "value_hi": "भारतीय / अन्य"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a recruitment process conducted by ESIC Medical College and Hospital, Bihta to hire Professors and Associate Professors in Super Specialty Departments on a contract basis through an offline interview process.",
+        "a_hi": "यह एक ऑफ़लाइन साक्षात्कार प्रक्रिया के माध्यम से अनुबंध के आधार पर सुपर स्पेशलिटी विभागों में प्रोफेसरों और एसोसिएट प्रोफेसरों को नियुक्त करने के लिए ईएसआईसी मेडिकल कॉलेज और अस्पताल, बिहटा द्वारा आयोजित एक भर्ती प्रक्रिया है।",
+        "q_en": "What is ESIC Bihta Professor Recruitment?",
+        "q_hi": "ईएसआईसी बिहटा प्रोफेसर भर्ती क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "The application mode is offline as per the notification format.",
+        "a_hi": "अधिसूचना प्रारूप के अनुसार आवेदन का माध्यम ऑफ़लाइन है।",
+        "q_en": "What is the application mode for ESIC Bihta Professor Recruitment 2026?",
+        "q_hi": "ईएसआईसी बिहटा प्रोफेसर भर्ती 2026 के लिए आवेदन का माध्यम क्या है?"
+      },
+      {
+        "a_en": "General and OBC candidates are required to pay an interview fee of ₹500 through a Demand Draft, if applicable.",
+        "a_hi": "सामान्य और अन्य पिछड़ा वर्ग के उम्मीदवारों को डिमांड ड्राफ्ट के माध्यम से ₹500 का साक्षात्कार शुल्क देना होगा, यदि लागू हो।",
+        "q_en": "What is the application fee for General and OBC candidates?",
+        "q_hi": "सामान्य और अन्य पिछड़ा वर्ग के उम्मीदवारों के लिए आवेदन शुल्क क्या है?"
+      },
+      {
+        "a_en": "SC, ST, Female, ESIC Regular Employees, Defence Ex-servicemen, and PH candidates are exempted from the interview fee.",
+        "a_hi": "एससी, एसटी, महिला, ईएसआईसी नियमित कर्मचारी, रक्षा भूतपूर्व सैनिक और दिव्यांग उम्मीदवारों को साक्षात्कार शुल्क से छूट दी गई है।",
+        "q_en": "Who is exempted from paying the interview fee?",
+        "q_hi": "साक्षात्कार शुल्क का भुगतान करने से किसे छूट दी गई है?"
+      },
+      {
+        "a_en": "Candidates must possess an MBBS, MD, MS, DNB, PG Diploma, BDS, MDS, or equivalent qualification with necessary certificates.",
+        "a_hi": "उम्मीदवारों के पास आवश्यक प्रमाण पत्र के साथ एमबीबीएस, एमडी, एमएस, डीएनबी, पीजी डिप्लोमा, बीडीएस, एमडीएस या समकक्ष योग्यता होनी चाहिए।",
+        "q_en": "What educational qualifications are required?",
+        "q_hi": "कौन सी शैक्षणिक योग्यता आवश्यक है?"
+      },
+      {
+        "a_en": "The age is calculated as on 17 April 2026.",
+        "a_hi": "आयु की गणना 17 अप्रैल 2026 के अनुसार की जाती है।",
+        "q_en": "What is the crucial date for age calculation?",
+        "q_hi": "आयु की गणना के लिए महत्वपूर्ण तिथि क्या है?"
+      }
+    ],
+    "fees": [
+      {
+        "amount": "₹500",
+        "cat_en": "General / OBC",
+        "cat_hi": "सामान्य / अन्य पिछड़ा वर्ग"
+      },
+      {
+        "amount": "₹0 (Fee exempted)",
+        "cat_en": "SC / ST / Female / ESIC Regular Employee / Defence Ex-servicemen / PH",
+        "cat_hi": "अनुसूचित जाति / अनुसूचित जनजाति / महिला / ईएसआईसी नियमित कर्मचारी / रक्षा भूतपूर्व सैनिक / दिव्यांग"
+      }
+    ],
+    "h1_en": "ESIC Bihta Professor Recruitment 2026 – Apply Offline Form",
+    "h1_hi": "ईएसआईसी बिहटा प्रोफेसर भर्ती 2026 – ऑफलाइन आवेदन फॉर्म",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Download the application form and read the detailed advertisement carefully.",
+      "Fill out the application form in person using clear capital letters.",
+      "Affix a recent color photograph with a neutral expression, showing full face, both ears, and neck, and sign across it.",
+      "Attach self-attested copies of all required educational, experience, registration, and identity documents in a single PDF file if submitting digitally or compile them physically as prescribed.",
+      "Attach a Demand Draft of ₹500 as an interview fee, if applicable, drawn in favor of the designated authority.",
+      "Submit the completed application form along with all enclosures."
+    ],
+    "how_hi": [
+      "आवेदन पत्र डाउनलोड करें और विस्तृत विज्ञापन को ध्यान से पढ़ें।",
+      "स्पष्ट और बड़े अक्षरों में स्वयं आवेदन पत्र भरें।",
+      "तटस्थ भाव, पूरे चेहरे, दोनों कान और गर्दन के साथ हाल ही में रंगीन फोटोग्राफ चिपकाएं और उस पर हस्ताक्षर करें।",
+      "सभी आवश्यक शैक्षणिक, अनुभव, पंजीकरण और पहचान दस्तावेजों की स्व-सत्यापित प्रतियां संलग्न करें।",
+      "यदि लागू हो, तो साक्षात्कार शुल्क के रूप में ₹500 का डिमांड ड्राफ्ट संलग्न करें।",
+      "सभी संलग्नों के साथ पूरा किया गया आवेदन पत्र जमा करें।"
+    ],
+    "intro_en": "ESIC Medical College and Hospital, Bihta, Patna has released Advertisement No. 16 and 17 of 2026 for the recruitment of Professor and Associate Professor in Super Specialty Departments on a contract basis. Interested and eligible candidates must fill out the prescribed application form in capital letters, attach necessary certificates, and submit it along with an interview fee demand draft of ₹500 if applicable. Candidates should ensure they meet the qualifications and keep their active mobile number and email ID preserved until the final result.",
+    "intro_hi": "ईएसआईसी मेडिकल कॉलेज और अस्पताल, बिहटा, पटना ने अनुबंध के आधार पर सुपर स्पेशलिटी विभागों में प्रोफेसर और एसोसिएट प्रोफेसर के पद पर भर्ती के लिए वर्ष 2026 का विज्ञापन संख्या 16 और 17 जारी किया है। इच्छुक और योग्य उम्मीदवारों को बड़े अक्षरों में निर्धारित आवेदन पत्र भरना होगा, आवश्यक प्रमाण पत्र संलग्न करने होंगे और यदि लागू हो तो ₹500 के साक्षात्कार शुल्क डिमांड ड्राफ्ट के साथ इसे जमा करना होगा।",
+    "last_date": null,
+    "mistakes_en": [
+      "Submitting incomplete application forms which are liable to be rejected",
+      "Failing to sign across the passport-size photograph",
+      "Not enclosing required documents such as medical council registration and degree certificates"
+    ],
+    "mistakes_hi": [
+      "अधूरे आवेदन पत्र जमा करना जो अस्वीकार किए जा सकते हैं",
+      "पासपोर्ट आकार के फोटोग्राफ पर हस्ताक्षर करने में विफल रहना",
+      "मेडिकल काउंसिल पंजीकरण और डिग्री प्रमाण पत्र जैसे आवश्यक दस्तावेज संलग्न न करना"
+    ],
+    "not_en": [
+      "Candidates with incomplete application forms",
+      "Candidates lacking required NMC or State Medical Council registration"
+    ],
+    "not_hi": [
+      "अधूरे आवेदन पत्र वाले उम्मीदवार",
+      "आवश्यक एनएमसी या राज्य चिकित्सा परिषद पंजीकरण की कमी वाले उम्मीदवार"
+    ],
+    "notice_date": null,
+    "official_site": "https://esic.gov.in/recruitments",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Professor and Associate Professor in Super Specialty Departments",
+        "value_hi": "सुपर स्पेशलिटी विभागों में प्रोफेसर और एसोसिएट प्रोफेसर"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "Advt. No. 16 & 17 of 2026",
+        "value_hi": "विज्ञापन संख्या 16 और 17, वर्ष 2026"
+      },
+      {
+        "label_en": "Age as on",
+        "label_hi": "आयु इस तिथि को",
+        "value_en": "17 Apr 2026",
+        "value_hi": "17 अप्रैल 2026"
+      },
+      {
+        "label_en": "Interview Fee",
+        "label_hi": "साक्षात्कार शुल्क",
+        "value_en": "₹500 (Gen/OBC, if applicable)",
+        "value_en_hi": "₹500 (सामान्य/अन्य पिछड़ा वर्ग, यदि लागू हो)",
+        "value_hi": "₹500 (सामान्य/अन्य पिछड़ा वर्ग, यदि लागू हो)"
+      },
+      {
+        "label_en": "Mode of Application",
+        "label_hi": "आवेदन का माध्यम",
+        "value_en": "Offline",
+        "value_hi": "ऑफ़लाइन"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Offline Interview"
+    ],
+    "selection_hi": [
+      "ऑफ़लाइन साक्षात्कार"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Professor & Associate Prof.",
+      "line_hi": "प्रोफेसर और एसोसिएट प्रोफेसर",
+      "posts": null
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "ESIC Medical College and Hospital, Bihta invites applications for Professor and Associate Professor positions on a contract basis under Advertisement No. 16 and 17 of 2026. Eligible candidates should submit their offline application form along with required documents and fee. Read the notice for details on eligibility and application format.",
+    "summary_hi": "ईएसआईसी मेडिकल कॉलेज और अस्पताल, बिहटा ने विज्ञापन संख्या 16 और 17 के तहत अनुबंध के आधार पर प्रोफेसर और एसोसिएट प्रोफेसर पदों के लिए आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार आवश्यक दस्तावेजों और शुल्क के साथ अपना ऑफलाइन आवेदन पत्र जमा करें। पात्रता और आवेदन प्रारूप के विवरण के लिए नोटिस पढ़ें।",
+    "vacancies": [
+      {
+        "detail_en": "As per Advertisement No. 16 and 17 of 2026",
+        "detail_hi": "विज्ञापन संख्या 16 और 17 वर्ष 2026 के अनुसार",
+        "post_en": "Professor / Associate Professor (Super Specialty Departments)",
+        "post_hi": "प्रोफेसर / एसोसिएट प्रोफेसर (सुपर स्पेशलिटी विभाग)",
+        "total": "Not specified"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Medical professionals with MBBS/MD/MS/DNB/BDS/MDS and required teaching experience wanting a contract position at ESIC Bihta"
+    ],
+    "who_hi": [
+      "ईएसआईसी बिहटा में अनुबंध पद चाहने वाले एमबीबीएस/एमडी/एमएस/डीएनबी/बीडीएस/एमडीएस और आवश्यक शिक्षण अनुभव वाले चिकित्सा पेशेवर"
+    ]
+  },
   "pdf": {
     "bytes": 447078,
     "pages": 5,
     "sha256": "1efdbec49657c10ab3d5b266c263d22293630416f99d5cfdd887e987c59781fb",
     "text_kind": "text"
   },
+  "published_at": "2026-11-13T12:03:18Z",
+  "qual": [
+    "graduate",
+    "postgraduate"
+  ],
+  "slug": "esic-bihta-professor-recruitment-2026-apply-offline-form",
   "source_id": "esic-recruitment",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1 ESIC Medical College and Hospital, Bihta, Patna- 801103 Advertisement No. 16 of 2026 Recruitment of Professor in Super Specialty Departments on contract basis- PDF size:(381.37 KB) . Application form- PDF size:(436.60 KB) . Advertisement No. 17 of 2026 Recruitment of Associate Professor in Super S",
   "url": "https://esic.gov.in/attachments/recruitmentfile/Application_form_1794569615.pdf"
 }

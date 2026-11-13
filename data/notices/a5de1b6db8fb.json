@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://www.esic.gov.in/recruitments",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-21",
+    "last_date": "2026-11-20",
+    "list": true,
+    "posts": "Professor in Super Specialty Departments",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "ESIC Medical College and Hospital, Bihta, Patna invites applications for Professor posts on a contract basis. Eligible candidates must send their applications by email by 20.11.2026 and attend the interview on 21.11.2026.",
+    "summary_hi": "ईएसआईसी मेडिकल कॉलेज और अस्पताल, बिहटा, पटना ने अनुबंध के आधार पर प्रोफेसर के पदों के लिए आवेदन मांगे हैं। योग्य उम्मीदवार 20.11.2026 तक ईमेल द्वारा आवेदन भेजें और 21.11.2026 को साक्षात्कार में शामिल हों।",
+    "title_en": "ESIC Medical College Bihta Professor Recruitment 2026",
+    "title_hi": "ईएसआईसी मेडिकल कॉलेज बिहटा प्रोफेसर भर्ती 2026",
+    "type": "Job",
+    "vacancies": 10
+  },
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -153,6 +170,8 @@
   },
   "first_seen": "2026-11-13T11:58:19+00:00",
   "id": "a5de1b6db8fb",
+  "issue": 1256,
+  "issue_tidy": true,
   "kind": "notification",
   "org": "ESIC",
   "pdf": {
@@ -161,8 +180,13 @@
     "sha256": "4a0370b8c94b51f4403b320e1ed41fc996536069887f62651c23df9bdf93b5ee",
     "text_kind": "text"
   },
+  "published_at": "2026-11-13T12:03:39Z",
+  "qual": [
+    "graduate",
+    "postgraduate"
+  ],
   "source_id": "esic-recruitment",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1 ESIC Medical College and Hospital, Bihta, Patna- 801103 Advertisement No. 16 of 2026 Recruitment of Professor in Super Specialty Departments on contract basis- PDF size:(381.37 KB) . Application form- PDF size:(436.60 KB) . Advertisement No. 17 of 2026 Recruitment of Associate Professor in Super S",
   "url": "https://esic.gov.in/attachments/recruitmentfile/Advertisement_No_16_of_2026_Recruitment_of_Professor_in_Super_Specialty_Departments_on_contract_basis_1794569615.pdf"
 }
