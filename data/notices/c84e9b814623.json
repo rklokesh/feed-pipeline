@@ -1,5 +1,34 @@
 {
+  "auto_published": true,
   "board_url": "https://www.upsc.gov.in/whats-new",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Dental Surgeon, Ayurveda Physician, Homeopathic Physician, Scientist B",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Union Public Service Commission has invited online applications for 13 vacancies of Dental Surgeon, Ayurveda Physician, Homeopathic Physician, and Scientist B under Advertisement No. 13/2026. Eligible candidates can apply online through the UPSC online portal.",
+    "summary_hi": "संघ लोक सेवा आयोग ने विज्ञापन संख्या 13/2026 के तहत दंत सर्जन, आयुर्वेद चिकित्सक, होम्योपैथिक चिकित्सक और वैज्ञानिक बी के 13 पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार यूपीएससी पोर्टल के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+    "title_en": "UPSC Medical & Scientific Officers Recruitment 2026 – Apply Online for 13 Posts",
+    "title_hi": "संघ लोक सेवा आयोग चिकित्सा एवं वैज्ञानिक अधिकारी भर्ती 2026 – 13 पदों के लिए ऑनलाइन आवेदन",
+    "type": "Job",
+    "vacancies": 13
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": 35,
+    "age_min": null,
+    "age_on": null,
+    "domicile": null,
+    "qual": "graduate",
+    "relax": {
+      "PwD": 10,
+      "SC": 5
+    }
+  },
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -72,8 +101,246 @@
   },
   "first_seen": "2026-11-13T12:28:22+00:00",
   "id": "c84e9b814623",
+  "issue": 1265,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-13",
   "org": "UPSC",
+  "page": {
+    "after_en": [
+      "Shortlisting and interview by UPSC followed by final appointment."
+    ],
+    "after_hi": [
+      "यूपीएससी द्वारा शॉर्टलिस्टिंग और साक्षात्कार जिसके बाद अंतिम नियुक्ति होगी।"
+    ],
+    "age": [
+      {
+        "label_en": "Dental Surgeon",
+        "label_hi": "दंत सर्जन",
+        "value_en": "35 years for UR/EWS, 40 years for SC (relaxable up to 10 years for PwBD)",
+        "value_hi": "सामान्य/आर्थिक रूप से कमजोर वर्ग के लिए 35 वर्ष, अनुसूचित जाति के लिए 40 वर्ष (दिव्यांग उम्मीदवारों के लिए 10 वर्ष तक की छूट)"
+      },
+      {
+        "label_en": "Ayurveda Physician",
+        "label_hi": "आयुर्वेद चिकित्सक",
+        "value_en": "35 years for UR/EWS (relaxable up to 10 years for PwBD)",
+        "value_hi": "सामान्य/आर्थिक रूप से कमजोर वर्ग के लिए 35 वर्ष (दिव्यांग उम्मीदवारों के लिए 10 वर्ष तक की छूट)"
+      },
+      {
+        "label_en": "Homeopathic Physician",
+        "label_hi": "होम्योपैथिक चिकित्सक",
+        "value_en": "35 years for EWS (relaxable up to 10 years for PwBD)",
+        "value_hi": "आर्थिक रूप से कमजोर वर्ग के लिए 35 वर्ष (दिव्यांग उम्मीदवारों के लिए 10 वर्ष तक की छूट)"
+      }
+    ],
+    "apply_start": null,
+    "apply_url": "https://upsconline.nic.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check eligibility criteria",
+      "Keep documents ready",
+      "Apply online at upsconline.nic.in"
+    ],
+    "checklist_hi": [
+      "पात्रता मापदंड की जांच करें",
+      "दस्तावेज़ तैयार रखें",
+      "upsconline.nic.in पर ऑनलाइन आवेदन करें"
+    ],
+    "conducted_by_en": "Union Public Service Commission (UPSC)",
+    "conducted_by_hi": "संघ लोक सेवा आयोग (यूपीएससी)",
+    "dates": [],
+    "documents_en": [
+      "Educational certificates",
+      "Medical council registration certificate",
+      "Category/Caste certificate if applicable",
+      "Photo ID proof"
+    ],
+    "documents_hi": [
+      "शैक्षणिक प्रमाण पत्र",
+      "चिकित्सा परिषद पंजीकरण प्रमाण पत्र",
+      "श्रेणी/जाति प्रमाण पत्र यदि लागू हो",
+      "फोटो पहचान प्रमाण"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Dental Surgeon",
+        "label_hi": "दंत सर्जन",
+        "value_en": "Bachelor of Dental Surgery (BDS) degree and registration with any State Dental Council or Tribunal in India.",
+        "value_hi": "डेंटल सर्जरी में स्नातक (बीडीएस) की डिग्री और भारत में किसी भी राज्य दंत परिषद या ट्रिब्यूनल के साथ पंजीकरण।"
+      },
+      {
+        "label_en": "Ayurveda Physician",
+        "label_hi": "आयुर्वेद चिकित्सक",
+        "value_en": "Degree in Ayurveda recognized under the Indian Medicine Central Council Act 1970 and enrolment on Central/State Register.",
+        "value_hi": "भारतीय चिकित्सा केंद्रीय परिषद अधिनियम 1970 के तहत मान्यता प्राप्त आयुर्वेद में डिग्री और केंद्रीय/राज्य रजिस्टर में नामांकन।"
+      },
+      {
+        "label_en": "Homeopathic Physician",
+        "label_hi": "होम्योपैथिक चिकित्सक",
+        "value_en": "Degree in Homoeopathy recognized under the Homoeopathic Central Council Act, 1973 and enrolment on Central/State Register.",
+        "value_hi": "होम्योपैथिक केंद्रीय परिषद अधिनियम, 1973 के तहत मान्यता प्राप्त होम्योपैथी में डिग्री और केंद्रीय/राज्य रजिस्टर में नामांकन।"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is an official recruitment notification issued by the Union Public Service Commission to fill 13 vacancies for medical and scientific posts across various departments.",
+        "a_hi": "यह विभिन्न विभागों में चिकित्सा और वैज्ञानिक पदों के लिए 13 रिक्तियों को भरने के लिए संघ लोक सेवा आयोग द्वारा जारी एक आधिकारिक भर्ती अधिसूचना है।",
+        "q_en": "What is UPSC Advertisement No. 13/2026?",
+        "q_hi": "यूपीएससी विज्ञापन संख्या 13/2026 क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Pay Scale for Dental Surgeon & Ayurveda Physician",
+        "label_hi": "दंत सर्जन और आयुर्वेद चिकित्सक के लिए वेतनमान",
+        "value_en": "Level-10 in the Pay Matrix as per 7th CPC (plus NPA for Ayurveda Physician)",
+        "value_hi": "सातवें वेतन आयोग के अनुसार वेतन मैट्रिक्स में लेवल-10 (आयुर्वेद चिकित्सक के लिए एनपीए सहित)"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "A total of 13 vacancies are advertised for various posts.",
+        "a_hi": "विभिन्न पदों के लिए कुल 13 रिक्तियां विज्ञापित की गई हैं।",
+        "q_en": "How many total vacancies are advertised in UPSC Advt 13/2026?",
+        "q_hi": "यूपीएससी विज्ञापन 13/2026 में कुल कितनी रिक्तियां विज्ञापित की गई हैं?"
+      },
+      {
+        "a_en": "You can apply online through the official website upsconline.nic.in.",
+        "a_hi": "आप आधिकारिक वेबसाइट upsconline.nic.in के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+        "q_en": "Where can I apply online for UPSC Advertisement No. 13/2026?",
+        "q_hi": "मैं यूपीएससी विज्ञापन संख्या 13/2026 के लिए ऑनलाइन आवेदन कहां कर सकता हूं?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "UPSC Medical & Scientific Officers Recruitment 2026 – Apply Online for 13 Posts",
+    "h1_hi": "संघ लोक सेवा आयोग चिकित्सा एवं वैज्ञानिक अधिकारी भर्ती 2026 – 13 पदों के लिए ऑनलाइन आवेदन",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Go to the official UPSC online portal at upsconline.nic.in.",
+      "Click on Online Recruitment Application (ORA) for various posts.",
+      "Register and fill out the application form with correct details.",
+      "Upload necessary documents and submit the application."
+    ],
+    "how_hi": [
+      "आधिकारिक यूपीएससी ऑनलाइन पोर्टल upsconline.nic.in पर जाएं।",
+      "विभिन्न पदों के लिए ऑनलाइन भर्ती आवेदन (ओआरए) पर क्लिक करें।",
+      "पंजीकरण करें और सही विवरण के साथ आवेदन पत्र भरें।",
+      "आवश्यक दस्तावेज अपलोड करें और आवेदन जमा करें।"
+    ],
+    "intro_en": "The Union Public Service Commission (UPSC) has released Advertisement No. 13/2026 for recruitment to 13 vacancies across various medical and scientific posts including Dental Surgeon, Ayurveda Physician, Homeopathic Physician, and Scientist 'B'. Eligible and interested candidates can submit their applications online through the official UPSC portal at upsconline.nic.in. Candidates must check their eligibility criteria, educational qualifications, and age limits before applying for the respective posts.",
+    "intro_hi": "संघ लोक सेवा आयोग (यूपीएससी) ने दंत सर्जन, आयुर्वेद चिकित्सक, होम्योपैथिक चिकित्सक और वैज्ञानिक 'बी' सहित विभिन्न चिकित्सा और वैज्ञानिक पदों के तहत 13 रिक्तियों के लिए विज्ञापन संख्या 13/2026 जारी किया है। योग्य और इच्छुक उम्मीदवार आधिकारिक यूपीएससी पोर्टल upsconline.nic.in के माध्यम से ऑनलाइन आवेदन कर सकते हैं। उम्मीदवारों को अपने संबंधित पदों के लिए आवेदन करने से पहले पात्रता मानदंड, शैक्षणिक योग्यता और आयु सीमा की जांच करनी चाहिए।",
+    "last_date": null,
+    "mistakes_en": [
+      "Entering incorrect registration or qualification details during online application."
+    ],
+    "mistakes_hi": [
+      "ऑनलाइन आवेदन के दौरान गलत पंजीकरण या योग्यता विवरण दर्ज करना।"
+    ],
+    "not_en": [
+      "Candidates who do not possess the essential educational qualifications and age limits."
+    ],
+    "not_hi": [
+      "उम्मीदवार जिनके पास आवश्यक शैक्षणिक योग्यता और आयु सीमा नहीं है।"
+    ],
+    "notice_date": null,
+    "official_site": "https://www.upsc.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Dental Surgeon, Ayurveda Physician, Homeopathic Physician, Scientist B",
+        "value_hi": "दंत सर्जन, आयुर्वेद चिकित्सक, होम्योपैथिक चिकित्सक, वैज्ञानिक बी"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल वैकेंसी",
+        "value_en": "13",
+        "value_hi": "13"
+      },
+      {
+        "label_en": "Apply online",
+        "label_hi": "ऑनलाइन आवेदन",
+        "value_en": "upsconline.nic.in",
+        "value_hi": "upsconline.nic.in"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "13/2026",
+        "value_hi": "13/2026"
+      }
+    ],
+    "salary": [
+      {
+        "label_en": "Pay Level",
+        "label_hi": "वेतन स्तर",
+        "value_en": "Level 10",
+        "value_hi": "लेवल 10"
+      }
+    ],
+    "selection_en": [
+      "Online Recruitment Application",
+      "Interview / Selection by UPSC"
+    ],
+    "selection_hi": [
+      "ऑनलाइन भर्ती आवेदन",
+      "यूपीएससी द्वारा साक्षात्कार / चयन"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Medical & Scientific Officers",
+      "line_hi": "चिकित्सा एवं वैज्ञानिक अधिकारी",
+      "posts": 13
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Union Public Service Commission has invited online applications for 13 vacancies of Dental Surgeon, Ayurveda Physician, Homeopathic Physician, and Scientist B under Advertisement No. 13/2026. Eligible candidates can apply online through the UPSC online portal.",
+    "summary_hi": "संघ लोक सेवा आयोग ने विज्ञापन संख्या 13/2026 के तहत दंत सर्जन, आयुर्वेद चिकित्सक, होम्योपैथिक चिकित्सक और वैज्ञानिक बी के 13 पदों के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार यूपीएससी पोर्टल के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "UR 03, EWS 01, SC 01 (includes PwBD-01)",
+        "detail_hi": "अनारक्षित 03, आर्थिक रूप से कमजोर वर्ग 01, अनुसूचित जाति 01 (दिव्यांग-01 सहित)",
+        "post_en": "Dental Surgeon",
+        "post_hi": "दंत सर्जन",
+        "total": "5"
+      },
+      {
+        "detail_en": "UR 01, EWS 01",
+        "detail_hi": "अनारक्षित 01, आर्थिक रूप से कमजोर वर्ग 01",
+        "post_en": "Ayurveda Physician",
+        "post_hi": "आयुर्वेद चिकित्सक",
+        "total": "2"
+      },
+      {
+        "detail_en": "EWS 01",
+        "detail_hi": "आर्थिक रूप से कमजोर वर्ग 01",
+        "post_en": "Homeopathic Physician",
+        "post_hi": "होम्योपैथिक चिकित्सक",
+        "total": "1"
+      },
+      {
+        "detail_en": "UR 02, EWS 01, OBC 01, SC 01",
+        "detail_hi": "अनारक्षित 02, आर्थिक रूप से कमजोर वर्ग 01, अन्य पिछड़ा वर्ग 01, अनुसूचित जाति 01",
+        "post_en": "Scientist 'B'",
+        "post_hi": "वैज्ञानिक 'बी'",
+        "total": "5"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Eligible medical and science graduates looking for government jobs through UPSC."
+    ],
+    "who_hi": [
+      "यूपीएससी के माध्यम से सरकारी नौकरियों की तलाश कर रहे योग्य चिकित्सा और विज्ञान स्नातक।"
+    ]
+  },
   "pdf": {
     "bytes": 1005900,
     "pages": 28,
@@ -81,8 +348,14 @@
     "text_kind": "text",
     "via": "https://www.upsc.gov.in/sites/default/files/AdvtNo-13-2026-Engl-131126_0.pdf"
   },
+  "published_at": "2026-11-13T12:32:29Z",
+  "qual": [
+    "graduate",
+    "postgraduate"
+  ],
+  "slug": "upsc-medical-scientific-officers-recruitment-2026-apply-online-f",
   "source_id": "upsc-whats-new",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Advertisement No.13 - 2026",
   "url": "https://www.upsc.gov.in/whats-new/13 - 2026"
 }
