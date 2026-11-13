@@ -1,5 +1,31 @@
 {
+  "auto_published": true,
   "board_url": "https://www.esic.gov.in/recruitments",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-12-01",
+    "list": true,
+    "posts": "Field Worker",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "ESIC Medical College and Hospital Faridabad has invited applications for the contractual post of Field Worker. Eligible candidates should apply via email by 1st December 2026.",
+    "summary_hi": "ईएसआईसी मेडिकल कॉलेज और अस्पताल फरीदाबाद ने फील्ड वर्कर के संविदा पद के लिए आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 1 दिसंबर 2026 तक ईमेल के माध्यम से आवेदन करें।",
+    "title_en": "ESIC Faridabad Field Worker Recruitment 2026 – Apply Online",
+    "title_hi": "ईएसआईसी फरीदाबाद फील्ड वर्कर भर्ती 2026 – आवेदन करें",
+    "type": "Job",
+    "vacancies": 1
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": 30,
+    "age_min": null,
+    "age_on": "2026-12-01",
+    "domicile": null,
+    "qual": "12th",
+    "relax": {}
+  },
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -48,16 +74,301 @@
   },
   "first_seen": "2026-11-13T10:28:13+00:00",
   "id": "0344555b6780",
+  "issue": 1249,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-13",
   "org": "ESIC",
+  "page": {
+    "after_en": [
+      "Screening of applications and shortlisting of candidates.",
+      "Conducting written test or interview for shortlisted candidates.",
+      "Issuing appointment orders to the selected candidate."
+    ],
+    "after_hi": [
+      "आवेदन पत्रों की स्क्रीनिंग और उम्मीदवारों की शॉर्टलिस्टिंग।",
+      "शॉर्टलिस्ट किए गए उम्मीदवारों के लिए लिखित परीक्षा या इंटरव्यू आयोजित करना।",
+      "चयनित उम्मीदवार को नियुक्ति आदेश जारी करना।"
+    ],
+    "age": [
+      {
+        "label_en": "Maximum age",
+        "label_hi": "अधिकतम आयु",
+        "value_en": "30 years",
+        "value_hi": "30 वर्ष"
+      },
+      {
+        "label_en": "As on date",
+        "label_hi": "इस तिथि के अनुसार",
+        "value_en": "01 Dec 2026",
+        "value_hi": "01 दिस 2026"
+      }
+    ],
+    "apply_start": null,
+    "apply_url": "https://esic.gov.in/attachments/recruitmentfile/STAFF_RECRUITMENT_FOR_RESEARCH_PROJECT_ESIC_MEDICAL_COLLEGE_AND_HOSPITAL_FARIDABAD_1794564781.pdf",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check eligibility criteria including age and qualification.",
+      "Fill out the application form completely.",
+      "Attach self-attested copies of all required documents.",
+      "Send the email before the last date."
+    ],
+    "checklist_hi": [
+      "आयु और योग्यता सहित पात्रता मानदंडों की जांच करें।",
+      "आवेदन पत्र को पूरी तरह से भरें।",
+      "सभी आवश्यक दस्तावेजों की स्व-सत्यापित प्रतियां संलग्न करें।",
+      "अंतिन तिथि से पहले ईमेल भेजें।"
+    ],
+    "conducted_by_en": "Employees' State Insurance Corporation Medical College & Hospital, Faridabad (ESIC)",
+    "conducted_by_hi": "कर्मचारी राज्य बीमा निगम मेडिकल कॉलेज एवं अस्पताल, फरीदाबाद",
+    "dates": [
+      {
+        "label_en": "Last date of submission of application",
+        "label_hi": "आवेदन जमा करने की अंतिम तिथि",
+        "value_en": "01 Dec 2026",
+        "value_hi": "01 दिस 2026"
+      },
+      {
+        "label_en": "Date of interview/skill test",
+        "label_hi": "इंटरव्यू/स्किल टेस्ट की तिथि",
+        "value_en": "To be notified",
+        "value_hi": "सूचित किया जाएगा"
+      }
+    ],
+    "documents_en": [
+      "Completed Application Form with passport-size photograph",
+      "Proof of Date of Birth (10th certificate)",
+      "Educational qualification certificates (10th and 12th)",
+      "Experience certificates",
+      "Identity Proof (Aadhar card / PAN card / Voter ID / Driving license)"
+    ],
+    "documents_hi": [
+      "पासपोर्ट साइज फोटो के साथ भरा हुआ आवेदन पत्र",
+      "जन्म तिथि का प्रमाण (10वीं का प्रमाण पत्र)",
+      "शैक्षणिक योग्यता प्रमाण पत्र (10वीं और 12वीं)",
+      "अनुभव प्रमाण पत्र",
+      "पहचान प्रमाण (आधार कार्ड / पैन कार्ड / वोटर आईडी / ड्राइविंग लाइसेंस)"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Education",
+        "label_hi": "शिक्षा",
+        "value_en": "12th Pass with one year experience in medical research projects/community surveys",
+        "value_hi": "मेडिकल रिसर्च प्रोजेक्ट्स/कम्युनिटी सर्वे में एक साल के अनुभव के साथ 12वीं पास"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a temporary contractual recruitment for a Field Worker under a research project at ESIC Medical College & Hospital, Faridabad.",
+        "a_hi": "यह ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, फरीदाबाद में एक रिसर्च प्रोजेक्ट के तहत फील्ड वर्कर के लिए एक अस्थायी संविदा भर्ती है।",
+        "q_en": "What is the ESIC Faridabad Field Worker Recruitment?",
+        "q_hi": "ईएसआईसी फरीदाबाद फील्ड वर्कर भर्ती क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Consolidated salary",
+        "label_hi": "समेकित वेतन",
+        "value_en": "₹23,400 per month",
+        "value_hi": "₹23,400 प्रति माह"
+      },
+      {
+        "label_en": "Tenure of appointment",
+        "label_hi": "नियुक्ति की अवधि",
+        "value_en": "Initially for 11 months, extendable",
+        "value_hi": "शुरुआत में 11 महीने के लिए, आगे बढ़ाई जा सकती है"
+      },
+      {
+        "label_en": "Location",
+        "label_hi": "स्थान",
+        "value_en": "ESIC Medical College & Hospital, Faridabad, Haryana-121001",
+        "value_hi": "ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, फरीदाबाद, हरियाणा-121001"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The last date to submit applications is 1st December 2026 before 04:00 PM.",
+        "a_hi": "आवेदन जमा करने की अंतिम तिथि 1 दिसंबर 2026 शाम 04:00 बजे से पहले है।",
+        "q_en": "What is the last date to apply for ESIC Faridabad Field Worker Recruitment 2026?",
+        "q_hi": "ईएसआईसी फरीदाबाद फील्ड वर्कर भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "You need to send the filled application form along with documents via email to dean-faridabad@esic.gov.in.",
+        "a_hi": "आपको भरे हुए आवेदन पत्र को दस्तावेजों के साथ dean-faridabad@esic.gov.in पर ईमेल करना होगा।",
+        "q_en": "How can I apply for the Field Worker post at ESIC Faridabad?",
+        "q_hi": "मैं ईएसआईसी फरीदाबाद में फील्ड वर्कर पद के लिए कैसे आवेदन कर सकता हूँ?"
+      },
+      {
+        "a_en": "The maximum age limit is 30 years as on 1st December 2026.",
+        "a_hi": "1 दिसंबर 2026 के अनुसार अधिकतम आयु सीमा 30 वर्ष है।",
+        "q_en": "What is the age limit for ESIC Faridabad Field Worker?",
+        "q_hi": "ईएसआईसी फरीदाबाद फील्ड वर्कर के लिए आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "Candidates must be 12th Pass with one year of experience in medical research projects or community surveys.",
+        "a_hi": "उम्मीदवारों को मेडिकल रिसर्च प्रोजेक्ट्स या कम्युनिटी सर्वे में एक साल के अनुभव के साथ 12वीं पास होना चाहिए।",
+        "q_en": "What is the educational qualification required?",
+        "q_hi": "आवश्यक शैक्षणिक योग्यता क्या है?"
+      },
+      {
+        "a_en": "The consolidated salary is ₹23,400 per month.",
+        "a_hi": "समेकित वेतन ₹23,400 प्रति माह है।",
+        "q_en": "What is the salary for the Field Worker post?",
+        "q_hi": "फील्ड वर्कर पद के लिए वेतन क्या है?"
+      },
+      {
+        "a_en": "No, this is a purely temporary and contractual appointment for a research project.",
+        "a_hi": "नहीं, यह एक रिसर्च प्रोजेक्ट के लिए पूरी तरह से अस्थायी और संविदात्मक नियुक्ति है।",
+        "q_en": "Is this a permanent job?",
+        "q_hi": "क्या यह एक स्थायी नौकरी है?"
+      },
+      {
+        "a_en": "Applications should be emailed to dean-faridabad@esic.gov.in.",
+        "a_hi": "आवेदन dean-faridabad@esic.gov.in पर ईमेल किया जाना चाहिए।",
+        "q_en": "Where should I send the application email?",
+        "q_hi": "मुझे आवेदन ईमेल कहाँ भेजना चाहिए?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "ESIC Faridabad Field Worker Recruitment 2026 – Apply Online",
+    "h1_hi": "ईएसआईसी फरीदाबाद फील्ड वर्कर भर्ती 2026 – आवेदन करें",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Download the application form from the official notice.",
+      "Fill out the application form with personal and educational details and affix a passport-size photograph.",
+      "Attach self-attested copies of 10th and 12th certificates, experience certificates, and identity proof.",
+      "Email the completed application to dean-faridabad@esic.gov.in on or before 1st December 2026 by 04:00 PM."
+    ],
+    "how_hi": [
+      "आधिकारिक नोटिस से आवेदन पत्र डाउनलोड करें।",
+      "व्यक्तिगत और शैक्षणिक विवरण के साथ आवेदन पत्र भरें और पासपोर्ट साइज फोटोग्राफ चिपकाएं।",
+      "10वीं और 12वीं के प्रमाण पत्र, अनुभव प्रमाण पत्र और पहचान प्रमाण की स्व-सत्यापित प्रतियां संलग्न करें।",
+      "पूर्ण आवेदन 1 दिसंबर 2026 को शाम 04:00 बजे या उससे पहले dean-faridabad@esic.gov.in पर ईमेल करें।"
+    ],
+    "intro_en": "ESIC Medical College & Hospital, Faridabad has released a recruitment notification for the contractual post of Field Worker under a research project. There is a total of 1 vacancy available for this temporary position. Eligible and interested candidates must submit their applications via email by 1st December 2026 before 04:00 PM. Read on for details regarding qualifications, age limit, and application process.",
+    "intro_hi": "ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, फरीदाबाद ने एक रिसर्च प्रोजेक्ट के तहत फील्ड वर्कर के संविदा पद के लिए भर्ती अधिसूचना जारी की है। इस अस्थायी पद के लिए कुल 1 वैकेंसी उपलब्ध है। योग्य और इच्छुक उम्मीदवार 1 दिसंबर 2026 को शाम 04:00 बजे से पहले ईमेल के माध्यम से अपने आवेदन भेज सकते हैं। योग्यता, आयु सीमा और आवेदन प्रक्रिया से संबंधित विवरण आगे पढ़ें।",
+    "last_date": "2026-12-01",
+    "mistakes_en": [
+      "Submitting the application after 04:00 PM on 1st December 2026.",
+      "Failing to attach self-attested educational or experience certificates."
+    ],
+    "mistakes_hi": [
+      "1 दिसंबर 2026 को शाम 04:00 बजे के बाद आवेदन जमा करना।",
+      "शैक्षणिक या अनुभव प्रमाण पत्रों को स्व-सत्यापित करके संलग्न न करना।"
+    ],
+    "not_en": [
+      "Candidates whose applications are incomplete or received after the due date.",
+      "Candidates who do not meet the educational or experience criteria."
+    ],
+    "not_hi": [
+      "वे उम्मीदवार जिनके आवेदन अधूरे हैं या नियत तिथि के बाद प्राप्त हुए हैं।",
+      "वे उम्मीदवार जो शैक्षणिक या अनुभव मानदंडों को पूरा नहीं करते हैं।"
+    ],
+    "notice_date": null,
+    "official_site": "https://esic.gov.in/recruitments",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Field Worker",
+        "value_hi": "फील्ड वर्कर"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल वैकेंसी",
+        "value_en": "1",
+        "value_hi": "1"
+      },
+      {
+        "label_en": "Last date to apply",
+        "label_hi": "आवेदन की अंतिम तिथि",
+        "value_en": "01 Dec 2026",
+        "value_hi": "01 दिस 2026"
+      },
+      {
+        "label_en": "Educational qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "12th Pass with one year experience in medical research projects/community surveys",
+        "value_hi": "मेडिकल रिसर्च प्रोजेक्ट्स/कम्युनिटी सर्वे में एक साल के अनुभव के साथ 12वीं पास"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "Maximum 30 years (As on 01 Dec 2026)",
+        "value_hi": "अधिकतम 30 वर्ष (01 दिस 2026 के अनुसार)"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "U/95/2026-MED I/4625139/2026",
+        "value_hi": "U/95/2026-MED I/4625139/2026"
+      }
+    ],
+    "salary": [
+      {
+        "label_en": "Consolidated Salary",
+        "label_hi": "समेकित वेतन",
+        "value_en": "₹23,400 per month",
+        "value_hi": "₹23,400 प्रति माह"
+      }
+    ],
+    "selection_en": [
+      "Screening of applications",
+      "Written test (if required)",
+      "Interview by the Selection Panel"
+    ],
+    "selection_hi": [
+      "आवेदन पत्रों की स्क्रीनिंग",
+      "लिखित परीक्षा (यदि आवश्यक हो)",
+      "चयन पैनल द्वारा इंटरव्यू"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Field Worker",
+      "line_hi": "फील्ड वर्कर",
+      "posts": 1
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "ESIC Medical College and Hospital Faridabad has invited applications for the contractual post of Field Worker. Eligible candidates should apply via email by 1st December 2026.",
+    "summary_hi": "ईएसआईसी मेडिकल कॉलेज और अस्पताल फरीदाबाद ने फील्ड वर्कर के संविदा पद के लिए आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 1 दिसंबर 2026 तक ईमेल के माध्यम से आवेदन करें।",
+    "vacancies": [
+      {
+        "detail_en": "Contractual post under research project",
+        "detail_hi": "रिसर्च प्रोजेक्ट के तहत संविदा पद",
+        "post_en": "Field Worker",
+        "post_hi": "फील्ड वर्कर",
+        "total": "1"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates aged up to 30 years with 12th pass and required experience who want a project-based job at ESIC Faridabad."
+    ],
+    "who_hi": [
+      "30 वर्ष तक की आयु के वे उम्मीदवार जो 12वीं पास हैं और ईएसआईसी फरीदाबाद में प्रोजेक्ट-आधारित नौकरी चाहते हैं।"
+    ]
+  },
   "pdf": {
     "bytes": 550977,
     "pages": 4,
     "sha256": "e4da4a2ac46af349331e6a27d70b2e90233eb9aee1280a0493980381f82b0a5c",
     "text_kind": "text"
   },
+  "published_at": "2026-11-13T10:32:19Z",
+  "qual": [
+    "graduate"
+  ],
+  "slug": "esic-faridabad-field-worker-recruitment-2026-apply-online",
   "source_id": "esic-recruitment",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1 ESIC MCH Faridabad STAFF RECRUITMENT FOR RESEARCH PROJECT ESIC MEDICAL COLLEGE AND HOSPITAL FARIDABAD- PDF size:(538.06 KB) . 2026-11-13 Last Date(2026-12-01) 12752/2026",
   "url": "https://esic.gov.in/attachments/recruitmentfile/STAFF_RECRUITMENT_FOR_RESEARCH_PROJECT_ESIC_MEDICAL_COLLEGE_AND_HOSPITAL_FARIDABAD_1794564781.pdf"
 }
