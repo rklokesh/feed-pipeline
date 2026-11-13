@@ -35,10 +35,10 @@
   "org": "MPPSC",
   "page": {
     "after_en": [
-      "Final selection and document verification followed by recommendation for appointment"
+      "Final selection and recommendation for appointment based on written exam and interview performance."
     ],
     "after_hi": [
-      "अंतिम चयन और दस्तावेज सत्यापन के बाद नियुक्ति के लिए सिफारिश"
+      "लिखित परीक्षा और साक्षात्कार के प्रदर्शन के आधार पर नियुक्ति के लिए अंतिम चयन और अनुशंसा।"
     ],
     "age": [],
     "apply_start": null,
@@ -46,58 +46,60 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Download the interview call letter from 20 November 2026",
-      "Verify reporting time and venue",
-      "Keep all original certificates and documents ready"
+      "Download your interview admit card from 20 November 2026.",
+      "Check all terms and conditions on the admit card.",
+      "Reach the commission office on time at 9:30 AM on the interview date."
     ],
     "checklist_hi": [
-      "20 नवंबर 2026 से साक्षात्कार पत्र डाउनलोड करें",
-      "रिपोर्टिंग समय और स्थान की जांच करें",
-      "सभी मूल प्रमाण पत्र और दस्तावेज तैयार रखें"
+      "20 नवंबर 2026 से अपना साक्षात्कार प्रवेश पत्र डाउनलोड करें।",
+      "प्रवेश पत्र पर सभी नियमों और शर्तों की जांच करें।",
+      "साक्षात्कार तिथि को समय पर प्रातः 9:30 बजे आयोग कार्यालय पहुंचे।"
     ],
     "conducted_by_en": "Madhya Pradesh Public Service Commission (MPPSC)",
-    "conducted_by_hi": "मध्य प्रदेश लोक सेवा आयोग",
+    "conducted_by_hi": "मध्य प्रदेश लोक सेवा आयोग (एमपीएससी)",
     "dates": [
       {
-        "label_en": "Written exam date",
+        "label_en": "Written Exam Date",
         "label_hi": "लिखित परीक्षा तिथि",
         "value_en": "01 Jun 2025",
         "value_hi": "01 जून 2025"
       },
       {
-        "label_en": "Written exam result date",
+        "label_en": "Written Result Date",
         "label_hi": "लिखित परीक्षा परिणाम तिथि",
         "value_en": "30 Oct 2025",
         "value_hi": "30 अक्टूबर 2025"
       },
       {
-        "label_en": "Interview call letter download",
-        "label_hi": "साक्षात्कार पत्र डाउनलोड",
+        "label_en": "Admit Card Download Date",
+        "label_hi": "प्रवेश पत्र डाउनलोड तिथि",
         "value_en": "20 Nov 2026",
         "value_hi": "20 नवंबर 2026"
       },
       {
-        "label_en": "Interview date",
+        "label_en": "Interview Date",
         "label_hi": "साक्षात्कार तिथि",
         "value_en": "03 Dec 2026",
         "value_hi": "03 दिसंबर 2026"
       }
     ],
     "documents_en": [
-      "Interview call letter with all conditions read and fulfilled",
-      "Required educational and identity documents"
+      "Interview Call Letter / Admit Card",
+      "Photo ID Proof",
+      "Educational and category certificates as specified in the instructions"
     ],
     "documents_hi": [
-      "सभी शर्तों को पढ़कर पूरी किया हुआ साक्षात्कार पत्र",
-      "आवश्यक शैक्षणिक और पहचान दस्तावेज"
+      "साक्षात्कार बुलावा पत्र / प्रवेश पत्र",
+      "फोटो पहचान प्रमाण",
+      "निर्देशों में निर्दिष्ट शैक्षणिक और श्रेणी प्रमाण पत्र"
     ],
     "eligibility": [],
     "exam_date": "2025-06-01",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is the final stage of selection for candidates who qualified the written examination held for Assistant Professor posts in English under the Madhya Pradesh Higher Education Department.",
-        "a_hi": "यह मध्य प्रदेश उच्च शिक्षा विभाग के अंतर्गत अंग्रेजी में सहायक प्राध्यापक पदों के लिए आयोजित लिखित परीक्षा में सफल होने वाले उम्मीदवारों के लिए चयन का अंतिम चरण है।",
+        "a_en": "It is the final selection stage for candidates who qualified the written examination for the Assistant Professor (English) posts under the Madhya Pradesh Higher Education Department.",
+        "a_hi": "यह मध्य प्रदेश उच्च शिक्षा विभाग के तहत सहायक प्राध्यापक (अंग्रेजी) पदों के लिए लिखित परीक्षा उत्तीर्ण करने वाले उम्मीदवारों के लिए अंतिम चयन चरण है।",
         "q_en": "What is the MPPSC Assistant Professor English Interview?",
         "q_hi": "एमपीपीएससी सहायक प्राध्यापक अंग्रेजी साक्षात्कार क्या है?"
       }
@@ -107,26 +109,32 @@
       {
         "a_en": "The interviews will start from 03 December 2026.",
         "a_hi": "साक्षात्कार 03 दिसंबर 2026 से शुरू होंगे।",
-        "q_en": "When will the MPPSC Assistant Professor English interviews start?",
-        "q_hi": "एमपीपीएससी सहायक प्राध्यापक अंग्रेजी के साक्षात्कार कब शुरू होंगे?"
+        "q_en": "When will the MPPSC Assistant Professor English interviews be held?",
+        "q_hi": "एमपीपीएससी सहायक प्राध्यापक अंग्रेजी के साक्षात्कार कब आयोजित किए जाएंगे?"
       },
       {
-        "a_en": "Interview letters can be downloaded from the official website starting 20 November 2026.",
-        "a_hi": "साक्षात्कार पत्र 20 नवंबर 2026 से आधिकारिक वेबसाइट से डाउनलोड किए जा सकते हैं।",
+        "a_en": "Interview admit cards can be downloaded from the official website starting 20 November 2026.",
+        "a_hi": "साक्षात्कार प्रवेश पत्र 20 नवंबर 2026 से आधिकारिक वेबसाइट से डाउनलोड किए जा सकते हैं।",
         "q_en": "When can I download the interview admit card?",
         "q_hi": "मैं साक्षात्कार प्रवेश पत्र कब डाउनलोड कर सकता हूँ?"
       },
       {
-        "a_en": "Candidates must report at the commission office by 9.30 AM on the day of the interview.",
-        "a_hi": "उम्मीदवारों को साक्षात्कार के दिन सुबह 9.30 बजे आयोग कार्यालय में उपस्थित होना होगा।",
-        "q_en": "What is the reporting time for the interview?",
-        "q_hi": "साक्षात्कार के लिए रिपोर्टिंग समय क्या है?"
+        "a_en": "The interviews will be held at the MPPSC commission office.",
+        "a_hi": "साक्षात्कार एमपीपीएससी आयोग कार्यालय में आयोजित किए जाएंगे।",
+        "q_en": "Where will the interviews take place?",
+        "q_hi": "साक्षात्कार कहाँ आयोजित किए जाएंगे?"
       },
       {
-        "a_en": "There are a total of 96 vacancies for the post.",
-        "a_hi": "इस पद के लिए कुल 96 रिक्तियां हैं।",
-        "q_en": "How many total vacancies are there for Assistant Professor English?",
-        "q_hi": "सहायक प्राध्यापक अंग्रेजी के लिए कुल कितने पद हैं?"
+        "a_en": "Candidates must report to the commission office by 9:30 AM on the interview day.",
+        "a_hi": "उम्मीदवारों को साक्षात्कार के दिन प्रातः 9:30 बजे आयोग कार्यालय में रिपोर्ट करना होगा।",
+        "q_en": "What is the reporting time for the interview?",
+        "q_hi": "साक्षात्कार के लिए रिपोर्टिंग का समय क्या है?"
+      },
+      {
+        "a_en": "There are a total of 96 vacancies for the Assistant Professor English post.",
+        "a_hi": "सहायक प्राध्यापक अंग्रेजी पद के लिए कुल 96 रिक्तियां हैं।",
+        "q_en": "How many total vacancies are there for this recruitment?",
+        "q_hi": "इस भर्ती के लिए कुल कितने पद हैं?"
       }
     ],
     "fees": [],
@@ -134,27 +142,27 @@
     "h1_hi": "एमपीपीएससी सहायक प्राध्यापक अंग्रेजी साक्षात्कार कार्यक्रम 2024 जारी",
     "hindi_notice_url": null,
     "how_en": [
-      "Go to the official website www.mppsc.mp.gov.in",
-      "Click on the link to download the interview letter for Assistant Professor English Exam 2024",
-      "Enter your login credentials to download and print the admit card",
-      "Report at the commission office on the interview day by 9:30 AM"
+      "Visit the official MPPSC website at www.mppsc.mp.gov.in.",
+      "Click on the link to download the interview admit card for Assistant Professor English Exam 2024 starting from 20 November 2026.",
+      "Enter your login credentials to download and print the interview call letter.",
+      "Report to the commission office on the interview date at 9:30 AM."
     ],
     "how_hi": [
-      "आधिकारिक वेबसाइट www.mppsc.mp.gov.in पर जाएं",
-      "सहायक प्राध्यापक अंग्रेजी परीक्षा 2024 के साक्षात्कार पत्र डाउनलोड करने के लिंक पर क्लिक करें",
-      "प्रवेश पत्र डाउनलोड करने और प्रिंट करने के लिए अपने लॉगिन विवरण दर्ज करें",
-      "साक्षात्कार के दिन सुबह 9.30 बजे आयोग कार्यालय में उपस्थित हों"
+      "एमपीएससी की आधिकारिक वेबसाइट www.mppsc.mp.gov.in पर जाएं।",
+      "20 नवंबर 2026 से सहायक प्राध्यापक अंग्रेजी परीक्षा 2024 के साक्षात्कार प्रवेश पत्र डाउनलोड करने के लिए लिंक पर क्लिक करें।",
+      "साक्षात्कार पत्र डाउनलोड करने और प्रिंट करने के लिए अपनी लॉगिन जानकारी दर्ज करें।",
+      "साक्षात्कार तिथि को प्रातः 9:30 बजे आयोग कार्यालय में उपस्थित हों।"
     ],
-    "intro_en": "Madhya Pradesh Public Service Commission (MPPSC) has issued the interview schedule for Assistant Professor (English) Exam 2024. A total of 96 vacancies are to be filled through this recruitment. Candidates who qualified the written exam held on 01 June 2025 can download their interview call letters starting from 20 November 2026. The interviews will commence at the commission office from 03 December 2026.",
-    "intro_hi": "मध्य प्रदेश लोक सेवा आयोग (एमपीपीएससी) ने सहायक प्राध्यापक (अंग्रेजी) परीक्षा 2024 के लिए साक्षात्कार कार्यक्रम जारी कर दिया है। इस भर्ती के माध्यम से कुल 96 पदों को भरा जाना है। 01 जून 2025 को आयोजित लिखित परीक्षा में सफल होने वाले उम्मीदवार 20 नवंबर 2026 से अपने साक्षात्कार पत्र डाउनलोड कर सकते हैं। साक्षात्कार 03 दिसंबर 2026 से आयोग कार्यालय में शुरू होंगे।",
+    "intro_en": "Madhya Pradesh Public Service Commission (MPPSC) has announced the interview schedule for the Assistant Professor (English) Exam 2024. The written exam result was declared earlier, and interviews for the 96 vacancies will commence on 03 December 2026 at the commission office. Candidates who cleared the written test can download their interview call letters starting from 20 November 2026.",
+    "intro_hi": "मध्य प्रदेश लोक सेवा आयोग (एमपीएससी) ने सहायक प्राध्यापक (अंग्रेजी) परीक्षा 2024 के लिए साक्षात्कार कार्यक्रम की घोषणा कर दी है। लिखित परीक्षा का परिणाम पहले घोषित किया गया था, और 96 रिक्तियों के लिए साक्षात्कार 03 दिसंबर 2026 से आयोग कार्यालय में शुरू होंगे। लिखित परीक्षा में सफल होने वाले उम्मीदवार 20 नवंबर 2026 से अपने साक्षात्कार पत्र डाउनलोड कर सकते हैं।",
     "last_date": null,
     "mistakes_en": [
-      "Do not forget to report at the commission office by 9.30 AM on the interview day",
-      "Do not miss reading all instructions mentioned on the interview call letter"
+      "Do not forget to report to the commission office by 9:30 AM on the interview day.",
+      "Read and follow all instructions mentioned on the interview admit card thoroughly."
     ],
     "mistakes_hi": [
-      "साक्षात्कार के दिन सुबह 9.30 बजे तक आयोग कार्यालय में उपस्थित होना न भूलें",
-      "साक्षात्कार पत्र में दी गई सभी शर्तों को पढ़ना न भूलें"
+      "साक्षात्कार के दिन प्रातः 9:30 बजे तक आयोग कार्यालय में उपस्थित होना न भूलें।",
+      "साक्षात्कार प्रवेश पत्र पर उल्लिखित सभी निर्देशों को अच्छी तरह से पढ़ें और उनका पालन करें।"
     ],
     "not_en": [],
     "not_hi": [],
@@ -164,40 +172,28 @@
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Posts",
+        "label_en": "Post",
         "label_hi": "पद",
         "value_en": "Assistant Professor (English)",
         "value_hi": "सहायक प्राध्यापक (अंग्रेजी)"
       },
       {
-        "label_en": "Total vacancies",
+        "label_en": "Total Vacancies",
         "label_hi": "कुल पद",
         "value_en": "96",
         "value_hi": "96"
       },
       {
-        "label_en": "Exam date",
-        "label_hi": "परीक्षा तिथि",
-        "value_en": "01 Jun 2025 (Written)",
-        "value_hi": "01 जून 2025 (लिखित)"
-      },
-      {
-        "label_en": "Interview date",
+        "label_en": "Interview Date",
         "label_hi": "साक्षात्कार तिथि",
         "value_en": "03 Dec 2026",
         "value_hi": "03 दिसंबर 2026"
       },
       {
-        "label_en": "Admit card date",
+        "label_en": "Admit Card Date",
         "label_hi": "प्रवेश पत्र तिथि",
         "value_en": "20 Nov 2026",
         "value_hi": "20 नवंबर 2026"
-      },
-      {
-        "label_en": "Advertisement number",
-        "label_hi": "विज्ञापन संख्या",
-        "value_en": "27/2024",
-        "value_hi": "27/2024"
       }
     ],
     "salary": [],
@@ -217,8 +213,8 @@
       "line_hi": "सहायक प्राध्यापक अंग्रेजी",
       "posts": 96
     },
-    "status_en": "Interview schedule released",
-    "status_hi": "साक्षात्कार कार्यक्रम जारी किया गया",
+    "status_en": "Interview schedule released, interviews start 03 Dec 2026",
+    "status_hi": "साक्षात्कार कार्यक्रम जारी, साक्षात्कार 03 दिसंबर 2026 से शुरू",
     "summary_en": "Madhya Pradesh Public Service Commission has released the interview schedule for the Assistant Professor English Exam 2024. Interviews are scheduled from 03 December 2026, and admit cards can be downloaded from 20 November 2026.",
     "summary_hi": "मध्य प्रदेश लोक सेवा आयोग ने सहायक प्राध्यापक अंग्रेजी परीक्षा 2024 के लिए साक्षात्कार कार्यक्रम जारी कर दिया है। साक्षात्कार 03 दिसंबर 2026 से आयोजित होंगे और प्रवेश पत्र 20 नवंबर 2026 से डाउनलोड किए जा सकेंगे।",
     "vacancies": [
@@ -232,10 +228,10 @@
     ],
     "video_url": null,
     "who_en": [
-      "Candidates who cleared the MPPSC Assistant Professor English written exam 2024"
+      "Candidates who cleared the MPPSC Assistant Professor English written exam 2024."
     ],
     "who_hi": [
-      "वे उम्मीदवार जिन्होंने एमपीपीएससी सहायक प्राध्यापक अंग्रेजी लिखित परीक्षा 2024 उत्तीर्ण की है"
+      "वे उम्मीदवार जिन्होंने एमपीपीएससी सहायक प्राध्यापक अंग्रेजी लिखित परीक्षा 2024 उत्तीर्ण की है।"
     ]
   },
   "pdf": {
@@ -245,7 +241,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-13T14:03:04Z",
-  "rewrite": true,
   "slug": "mppsc-assistant-professor-english-interview-schedule-2024-out",
   "source_id": "mppsc-home",
   "status": "approved",
@@ -253,8 +248,9 @@
   "url": "https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_English_Exam_2024_Dated_13_11_2026.pdf",
   "verify": {
     "at": "2026-11-13",
+    "held": false,
     "missing": [
-      "Interview date: 2026-12-03"
+      "Interview Date: 2026-12-03"
     ],
     "tries": 1
   }
