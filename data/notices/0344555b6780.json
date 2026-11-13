@@ -1,0 +1,63 @@
+{
+  "board_url": "https://www.esic.gov.in/recruitments",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "U/95/2026-MED I/4625139/2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "U/95/2026-MED I/4625139/2026"
+    },
+    "age_limit": {
+      "evidence": "30 years",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": "2026-12-01",
+        "max": 30,
+        "min": null
+      }
+    },
+    "apply_last": {
+      "evidence": "l and binding. U/95/2026-MED I/4625139/2026 IMPORTANT DATES Last Date of Submission of Application: 01.12.2026 Date of Interview/Skill Test: To be notified SELECTION PROCEDURE Selection will be based on: • Screening of appl",
+      "source": "rule",
+      "value": "2026-12-01"
+    },
+    "post_names": {
+      "evidence": "Field Worker",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Field Worker"
+      ]
+    },
+    "qualification": {
+      "evidence": "12th Pass with one year experience in medical research projects/ community surveys",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "12th Pass with one year experience in medical research projects/ community surveys"
+    },
+    "total_vacancies": {
+      "evidence": "01",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 1
+    }
+  },
+  "first_seen": "2026-11-13T10:28:13+00:00",
+  "id": "0344555b6780",
+  "kind": "notification",
+  "org": "ESIC",
+  "pdf": {
+    "bytes": 550977,
+    "pages": 4,
+    "sha256": "e4da4a2ac46af349331e6a27d70b2e90233eb9aee1280a0493980381f82b0a5c",
+    "text_kind": "text"
+  },
+  "source_id": "esic-recruitment",
+  "status": "pending_review",
+  "title": "1 ESIC MCH Faridabad STAFF RECRUITMENT FOR RESEARCH PROJECT ESIC MEDICAL COLLEGE AND HOSPITAL FARIDABAD- PDF size:(538.06 KB) . 2026-11-13 Last Date(2026-12-01) 12752/2026",
+  "url": "https://esic.gov.in/attachments/recruitmentfile/STAFF_RECRUITMENT_FOR_RESEARCH_PROJECT_ESIC_MEDICAL_COLLEGE_AND_HOSPITAL_FARIDABAD_1794564781.pdf"
+}
