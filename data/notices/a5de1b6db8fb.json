@@ -1,0 +1,168 @@
+{
+  "board_url": "https://www.esic.gov.in/recruitments",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "……………………………………………..…………………………. No. 423-A/12/28/2025-Part(2) Advertisement No. 16 of 2026 Recruitment of Professor in Super Specialty Departments on contract basis. Any",
+      "source": "rule",
+      "value": "16 of 2026"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "Advertisement No. 16 of 2026"
+      }
+    },
+    "age_limit": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": "2026-11-21",
+        "max": 69,
+        "min": null
+      }
+    },
+    "age_limit_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "age_limit": "1. Age Limit as on : 21.11.2026 69 Years (Not Exceeding)"
+      }
+    },
+    "apply_last": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-20"
+    },
+    "apply_last_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_last": "email: dean-bihta.bh@esic.gov.in by 03:00 PM of 20.11.2026."
+      }
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "www.mcpatna.esic.gov.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "वेिसाइट/ Website: www.mcpatna.esic.gov.in"
+      }
+    },
+    "exam_date": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-21"
+    },
+    "exam_date_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "exam_date": "(iii) Date of Interview: 21.11.2026."
+      }
+    },
+    "fee": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "female": 0,
+        "general": 500,
+        "obc": 500,
+        "pwd": 0,
+        "sc_st": 0
+      }
+    },
+    "fee_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "fee": "1 SC /ST/ Female/ ESIC (Regular Employee), Defence Ex-Servicemen & PH Candidate Nil\n2 All Other categories Rs. 500/-"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Professor in Burns & Plastic Surgery",
+        "Professor in Cardiology",
+        "Professor in Endocrinology & Metabolism",
+        "Professor in Gastroenterology",
+        "Professor in Hematology",
+        "Professor in Medical Oncology",
+        "Professor in Nephrology",
+        "Professor in Neurology",
+        "Professor in Pediatric Surgery",
+        "Professor in Urology"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "Recruitment of Professor in Super Specialty Departments on contract basis."
+      }
+    },
+    "qualification": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "As per NMC (MCI) TEQ Rules as amended with all post MBBS/ MD/ MS/ DM/ Mch/ Dr. DNB Qualification(s)."
+    },
+    "qualification_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "qualification": "2. Educational Qualifications: As per NMC (MCI) TEQ Rules as amended."
+      }
+    },
+    "total_vacancies": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 10
+    },
+    "total_vacancies_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "total_vacancies": "Total 10 10"
+      }
+    }
+  },
+  "first_seen": "2026-11-13T11:58:19+00:00",
+  "id": "a5de1b6db8fb",
+  "kind": "notification",
+  "org": "ESIC",
+  "pdf": {
+    "bytes": 390526,
+    "pages": 3,
+    "sha256": "4a0370b8c94b51f4403b320e1ed41fc996536069887f62651c23df9bdf93b5ee",
+    "text_kind": "text"
+  },
+  "source_id": "esic-recruitment",
+  "status": "pending_review",
+  "title": "1 ESIC Medical College and Hospital, Bihta, Patna- 801103 Advertisement No. 16 of 2026 Recruitment of Professor in Super Specialty Departments on contract basis- PDF size:(381.37 KB) . Application form- PDF size:(436.60 KB) . Advertisement No. 17 of 2026 Recruitment of Associate Professor in Super S",
+  "url": "https://esic.gov.in/attachments/recruitmentfile/Advertisement_No_16_of_2026_Recruitment_of_Professor_in_Super_Specialty_Departments_on_contract_basis_1794569615.pdf"
+}

@@ -1,0 +1,66 @@
+{
+  "board_url": "https://www.esic.gov.in/recruitments",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "ral, non- smiling expression and with open eyes directed 1. Advertisement No. 1 6 & Year 2026 at the camera. 2. Post applied for: 3. Department in which applied:",
+      "source": "rule",
+      "value": "1 6"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "1. Advertisement No. 1 6 & Year 2026"
+    },
+    "fee": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "female": null,
+        "general": 500,
+        "obc": 500,
+        "pwd": null,
+        "sc_st": null
+      }
+    },
+    "fee_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "general": "Demand Draft of Rs. 500/- as Interview Fee, if applicable",
+        "obc": "Demand Draft of Rs. 500/- as Interview Fee, if applicable"
+      }
+    },
+    "qualification": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "MBBS/MD/MS/DNB/PG Diploma/BDS/ MDS etc."
+    },
+    "qualification_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "Qualifications (MBBS/MD/MS/DNB/PG Diploma/BDS/ MDS etc. with Certificates)"
+    }
+  },
+  "first_seen": "2026-11-13T11:58:19+00:00",
+  "id": "0297d9a28379",
+  "kind": "notification",
+  "org": "ESIC",
+  "pdf": {
+    "bytes": 447078,
+    "pages": 5,
+    "sha256": "1efdbec49657c10ab3d5b266c263d22293630416f99d5cfdd887e987c59781fb",
+    "text_kind": "text"
+  },
+  "source_id": "esic-recruitment",
+  "status": "pending_review",
+  "title": "1 ESIC Medical College and Hospital, Bihta, Patna- 801103 Advertisement No. 16 of 2026 Recruitment of Professor in Super Specialty Departments on contract basis- PDF size:(381.37 KB) . Application form- PDF size:(436.60 KB) . Advertisement No. 17 of 2026 Recruitment of Associate Professor in Super S",
+  "url": "https://esic.gov.in/attachments/recruitmentfile/Application_form_1794569615.pdf"
+}

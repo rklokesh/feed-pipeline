@@ -1,0 +1,27 @@
+{
+  "board_url": "https://www.esic.gov.in/recruitments",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "ral, non- smiling expression and with open eyes directed 1. Advertisement No. 1 7 & Year 2026 at the camera. 2. Post applied for: 3. Department in which applied:",
+      "source": "rule",
+      "value": "1 7"
+    }
+  },
+  "first_seen": "2026-11-13T11:58:19+00:00",
+  "id": "42902ca45014",
+  "kind": "notification",
+  "org": "ESIC",
+  "pdf": {
+    "bytes": 447292,
+    "pages": 5,
+    "sha256": "331d39ee22be9d761389d5bc0e5eacac8723acf033d807c9befc59856575c1e4",
+    "text_kind": "text"
+  },
+  "source_id": "esic-recruitment",
+  "status": "pending_review",
+  "title": "1 ESIC Medical College and Hospital, Bihta, Patna- 801103 Advertisement No. 16 of 2026 Recruitment of Professor in Super Specialty Departments on contract basis- PDF size:(381.37 KB) . Application form- PDF size:(436.60 KB) . Advertisement No. 17 of 2026 Recruitment of Associate Professor in Super S",
+  "url": "https://esic.gov.in/attachments/recruitmentfile/Application_Form_17_of_2026_1794569615.pdf"
+}
