@@ -1,0 +1,66 @@
+{
+  "board_url": "https://www.rrc-wr.com/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": {
+        "advt_no": "09/2025"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "09/2025"
+    },
+    "apply_or_official_url": {
+      "evidence": "एंगी, िजनक(cid:551) आ(cid:876)धका(cid:464)रक वेबसाइट का पता https://rrc-wr.com/ है। 4.0 तदनुसार, अ(cid:232)थाई (cid:510)प से चय(cid:467)नत अ(cid:223)य(cid:876)",
+      "source": "rule",
+      "value": "https://rrc-wr.com/"
+    },
+    "apply_url": {
+      "evidence": {
+        "apply_url": "https://rrc-wr.com/"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://rrc-wr.com/"
+    },
+    "exam_date": {
+      "evidence": {
+        "exam_date": "03.08.2026 स े 25.08.2026"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-08-03 to 2026-08-25"
+    },
+    "post_names": {
+      "evidence": {
+        "post_names": "CEN 09/2025 (Various Posts in Level-1 of 7th CPC Pay Matrix)"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Various Posts in Level-1 of 7th CPC Pay Matrix"
+      ]
+    },
+    "total_vacancies": {
+      "evidence": "tion, Medical Examination and publishing of Panel for Level-1 posts shall be carried out by the Railway Recruitment Cells(RRCs) of the respective Z",
+      "source": "rule",
+      "value": 1
+    }
+  },
+  "first_seen": "2026-11-13T12:28:22+00:00",
+  "id": "2613417a81a7",
+  "kind": "notification",
+  "org": "RRC Western Railway",
+  "pdf": {
+    "bytes": 709074,
+    "pages": 18,
+    "sha256": "f33323e59c91df3d2c9f936a08db51d92e80f46e6a8b2ca0f4dbd38ef506be4f",
+    "text_kind": "text"
+  },
+  "source_id": "rrc-wr",
+  "status": "pending_review",
+  "title": "to view/download List of Candidates Shortlisted for Physical Efficiency Test (PET)",
+  "url": "https://www.rrc-wr.com/rrwc/Files/b3242df3-c071-4db8-96fe-c03d4b2bdfd5.pdf"
+}

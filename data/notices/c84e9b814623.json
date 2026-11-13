@@ -1,0 +1,88 @@
+{
+  "board_url": "https://www.upsc.gov.in/whats-new",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "ADVERTISEMENT NO. 13/2026 UNION PUBLIC SERVICE COMMISSION INVITES ONLINE RECRUITMENT APPLICATIONS FOR REC",
+      "source": "rule",
+      "value": "13/2026"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "ADVERTISEMENT NO. 13/2026"
+      }
+    },
+    "apply_or_official_url": {
+      "evidence": "N TO THE FOLLOWING POSTS (by using the Commission’s website https://upsconline.nic.in VACANCY DETAILS 1. (Vacancy No. 26111301114) Five vacancies for the post of Den",
+      "source": "rule",
+      "value": "https://upsconline.nic.in"
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://upsconline.nic.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "https://upsconline.nic.in"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Dental Surgeon",
+        "Ayurveda Physician",
+        "Homeopathic Physician",
+        "Scientist 'B'"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "Five vacancies for the post of Dental Surgeon in Department of Health & Family Welfare, Ministry of Health & Family Welfare. ... Two vacancies for the post of Ayurveda Physician in New Delhi Municipal Council (NDMC). ... One vacancy for the post of Homeopathic Physician in New Delhi Municipal Council (NDMC). ... Five vacancies for the post of Scientist 'B' in Botanical Survey of India, Ministry of Environment Forests and Climate Change."
+      }
+    },
+    "total_vacancies": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 13
+    },
+    "total_vacancies_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "total_vacancies": "Five vacancies for the post of Dental Surgeon... Two vacancies for the post of Ayurveda Physician... One vacancy for the post of Homeopathic Physician... Five vacancies for the post of Scientist 'B'"
+      }
+    }
+  },
+  "first_seen": "2026-11-13T12:28:22+00:00",
+  "id": "c84e9b814623",
+  "kind": "notification",
+  "org": "UPSC",
+  "pdf": {
+    "bytes": 1005900,
+    "pages": 28,
+    "sha256": "9fd48faeee9e3ff6286514c65e6172cb4814e1d3ddf25d7a7c7dac22de4925d4",
+    "text_kind": "text",
+    "via": "https://www.upsc.gov.in/sites/default/files/AdvtNo-13-2026-Engl-131126_0.pdf"
+  },
+  "source_id": "upsc-whats-new",
+  "status": "pending_review",
+  "title": "Advertisement No.13 - 2026",
+  "url": "https://www.upsc.gov.in/whats-new/13 - 2026"
+}
