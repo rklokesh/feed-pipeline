@@ -1,5 +1,27 @@
 {
+  "auto_published": true,
   "board_url": "https://ssc.gov.in/home/notice-board",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-23",
+    "last_date": null,
+    "list": true,
+    "posts": "Sub-Inspector",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Candidates can check their exam city and download the admission certificate for Paper-I. Affected candidates must upload their Class 10 marksheet by 20th November 2026.",
+    "summary_hi": "उम्मीदवार परीक्षा शहर की जांच कर सकते हैं और पेपर-I के लिए प्रवेश पत्र डाउनलोड कर सकते हैं। प्रभावित उम्मीदवार 20 नवंबर 2026 तक अपनी 10वीं की अंक तालिका अपलोड करें।",
+    "title_en": "SSC CPO Admit Card 2026 Out – Delhi Police SI Paper-I Exam City",
+    "title_hi": "एसएससी सीपीओ एडमिट कार्ड 2026 जारी – दिल्ली पुलिस एसआई पेपर-I परीक्षा शहर",
+    "type": "Admit card",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "ssc-sub-inspector-in-delhi-police-and-capfs-exam-2026",
+    "name_en": "SSC Sub-Inspector in Delhi Police and CAPFs Exam 2026",
+    "name_hi": "एससी दिल्ली पुलिस और सीएपीएफ सब-इंस्पेक्टर परीक्षा 2026"
+  },
   "extraction": {
     "ai": null
   },
@@ -17,16 +39,199 @@
   },
   "first_seen": "2026-11-13T13:30:38+00:00",
   "id": "c2e334ea1a3b",
+  "issue": 1273,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-11-13",
   "org": "SSC",
+  "page": {
+    "after_en": [
+      "Appear for Paper-I on the scheduled date.",
+      "Check results and proceed to the next stages of recruitment."
+    ],
+    "after_hi": [
+      "निर्धारित तिथि पर पेपर-I के लिए उपस्थित हों।",
+      "परिणाम की जांच करें और भर्ती के अगले चरणों के लिए आगे बढ़ें।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://ssc.gov.in/",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check your exam city and date.",
+      "Download admission certificate 2-3 days before the exam.",
+      "Upload Class 10 marksheet by 20 Nov 2026 if notified."
+    ],
+    "checklist_hi": [
+      "अपने परीक्षा शहर और तिथि की जांच करें।",
+      "परीक्षा से 2-3 दिन पहले प्रवेश पत्र डाउनलोड करें।",
+      "यदि सूचित किया गया हो तो 20 नवंबर 2026 तक कक्षा 10 की अंक तालिका अपलोड करें।"
+    ],
+    "conducted_by_en": "Staff Selection Commission (SSC)",
+    "conducted_by_hi": "कर्मचारी चयन आयोग (एसएससी)",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस की तिथि",
+        "value_en": "13 Nov 2026",
+        "value_hi": "13 नवंबर 2026"
+      },
+      {
+        "label_en": "Class 10 Marksheet Upload Deadline (for affected candidates)",
+        "label_hi": "कक्षा 10 अंक तालिका अपलोड करने की अंतिम तिथि (प्रभावित उम्मीदवारों के लिए)",
+        "value_en": "20 Nov 2026",
+        "value_hi": "20 नवंबर 2026"
+      },
+      {
+        "label_en": "Exam Date (Paper-I)",
+        "label_hi": "परीक्षा तिथि (पेपर-I)",
+        "value_en": "23 Nov 2026 to 28 Nov 2026",
+        "value_hi": "23 नवंबर 2026 से 28 नवंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Class 10 marksheet (for provisionally affected candidates)",
+      "Admission Certificate",
+      "Valid photo ID proof"
+    ],
+    "documents_hi": [
+      "कक्षा 10 की अंक तालिका (अनंतिम रूप से प्रभावित उम्मीदवारों के लिए)",
+      "प्रवेश पत्र",
+      "वैध फोटो पहचान प्रमाण"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-11-23",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is the first stage examination conducted by the Staff Selection Commission for recruitment to the posts of Sub-Inspector in Delhi Police and Central Armed Police Forces.",
+        "a_hi": "यह दिल्ली पुलिस और केंद्रीय सशस्त्र पुलिस बल में सब-inspector के पदों पर भर्ती के लिए कर्मचारी चयन आयोग द्वारा आयोजित पहली चरण की परीक्षा है।",
+        "q_en": "What is SSC CPO Paper-I Exam 2026?",
+        "q_hi": "एसएससी सीपीओ पेपर-I परीक्षा 2026 क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Affected Candidates Notice",
+        "label_hi": "प्रभावित उम्मीदवारों के लिए सूचना",
+        "value_en": "About 21,000 candidates need to upload Class 10 marksheet due to matriculation detail discrepancies.",
+        "value_hi": "मैट्रिकुलेशन विवरण में विसंगति के कारण लगभग 21,000 उम्मीदवारों को 10वीं की अंक तालिका अपलोड करनी होगी।"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The Paper-I exam is scheduled from 23rd November 2026 to 28th November 2026.",
+        "a_hi": "पेपर-I परीक्षा 23 नवंबर 2026 से 28 नवंबर 2026 तक निर्धारित है।",
+        "q_en": "When is the SSC CPO Paper-I Exam 2026 scheduled?",
+        "q_hi": "एसएससी सीपीओ पेपर-I परीक्षा 2026 कब निर्धारित है?"
+      },
+      {
+        "a_en": "You can download the admission certificate by logging in through the designated login module on the official SSC website (ssc.gov.in) 2-3 days prior to your exam date.",
+        "a_hi": "आप अपनी परीक्षा तिथि से 2-3 दिन पहले आधिकारिक एसएससी वेबसाइट (ssc.gov.in) पर नामित लॉगिन मॉड्यूल के माध्यम से लॉगिन करके प्रवेश पत्र डाउनलोड कर सकते हैं।",
+        "q_en": "How can I download the SSC CPO Admit Card 2026?",
+        "q_hi": "मैं एसएससी सीपीओ एडमिट कार्ड 2026 कैसे डाउनलोड कर सकता हूँ?"
+      },
+      {
+        "a_en": "The affected candidates must upload a copy of their Class 10 marksheet by 20th November 2026.",
+        "a_hi": "प्रभावित उम्मीदवारों को 20 नवंबर 2026 तक अपनी 10वीं की अंक तालिका की प्रति अपलोड करनी होगी।",
+        "q_en": "What is the last date to upload the Class 10 marksheet for affected candidates?",
+        "q_hi": "प्रभावित उम्मीदवारों के लिए कक्षा 10 की अंक तालिका अपलोड करने की अंतिम तिथि क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "SSC CPO Admit Card 2026 Out – Delhi Police SI Paper-I Exam City",
+    "h1_hi": "एसएससी सीपीओ एडमिट कार्ड 2026 जारी – दिल्ली पुलिस एसआई पेपर-I परीक्षा शहर",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Go to the official website of SSC at ssc.gov.in.",
+      "Log in using your candidate credentials.",
+      "Check the City Live / Admit Card Status page for SICPO 2026.",
+      "Download and print your admission certificate prior to the exam date."
+    ],
+    "how_hi": [
+      "एसएससी की आधिकारिक वेबसाइट ssc.gov.in पर जाएं।",
+      "अपने क्रेडेंशियल का उपयोग करके लॉगिन करें।",
+      "SICPO 2026 परीक्षा के लिए सिटी लाइव / एडमिट कार्ड स्टेटस पेज देखें।",
+      "परीक्षा तिथि से पहले अपना प्रवेश पत्र डाउनलोड करें और प्रिंट करें।"
+    ],
+    "intro_en": "The Staff Selection Commission (SSC) has released the information regarding the examination city and admission certificate for Sub-Inspector in Delhi Police and Central Armed Police Forces Examination, 2026 (Paper-I). Paper-I will be conducted from 23rd November 2026 to 28th November 2026. Candidates can view their exam city by logging into the official SSC website. Additionally, approximately 21,000 candidates with discrepancies in their matriculation details must upload their Class 10 marksheet by 20th November 2026.",
+    "intro_hi": "कर्मचारी चयन आयोग (एसएससी) ने दिल्ली पुलिस और केंद्रीय सशस्त्र पुलिस बल परीक्षा, 2026 (पेपर-I) के सब-इंस्पेक्टर के लिए परीक्षा शहर और प्रवेश पत्र के संबंध में जानकारी जारी कर दी है। पेपर-I का आयोजन 23 नवंबर 2026 से 28 नवंबर 2026 तक किया जाएगा। उम्मीदवार आधिकारिक एसएससी वेबसाइट पर लॉगिन करके अपना परीक्षा शहर देख सकते हैं। इसके अतिरिक्त, अपने मैट्रिकुलेशन विवरण में विसंगति वाले लगभग 21,000 उम्मीदवारों को 20 नवंबर 2026 तक अपनी 10वीं की अंक तालिका अपलोड करनी होगी।",
+    "last_date": null,
+    "mistakes_en": [
+      "Failing to check exam city and download the admit card on time.",
+      "Affected candidates missing the 20 November 2026 deadline to upload their Class 10 marksheet."
+    ],
+    "mistakes_hi": [
+      "समय पर परीक्षा शहर की जांच करने और एडमिट कार्ड डाउनलोड करने में विफल रहना।",
+      "प्रभावित उम्मीदवारों द्वारा 20 नवंबर 2026 की समय सीमा तक 10वीं की अंक तालिका अपलोड करने से चूक जाना।"
+    ],
+    "not_en": [],
+    "notice_date": "2026-11-13",
+    "official_site": "https://ssc.gov.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "23 Nov 2026 to 28 Nov 2026",
+        "value_hi": "23 नवंबर 2026 से 28 नवंबर 2026"
+      },
+      {
+        "label_en": "Admit Card Download",
+        "label_hi": "प्रवेश पत्र डाउनलोड",
+        "value_en": "2-3 days before exam date",
+        "value_hi": "परीक्षा तिथि से 2-3 दिन पहले"
+      },
+      {
+        "label_en": "Class 10 Marksheet Upload Last Date (for specific candidates)",
+        "label_hi": "कक्षा 10 अंक तालिका अपलोड करने की अंतिम तिथि (विशेष उम्मीदवारों के लिए)",
+        "value_en": "20 Nov 2026",
+        "value_hi": "20 नवंबर 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Paper-I Examination"
+    ],
+    "selection_hi": [
+      "पेपर-I परीक्षा"
+    ],
+    "share_card": {
+      "headline_en": "Admit Card 2026",
+      "headline_hi": "एडमिट कार्ड 2026",
+      "kind": "admit",
+      "line_en": "Delhi Police & CAPFs SI",
+      "line_hi": "दिल्ली पुलिस और सीएपीएफ एसआई",
+      "posts": null
+    },
+    "status_en": "Exam city and status released",
+    "status_hi": "परीक्षा शहर और स्थिति जारी",
+    "summary_en": "Staff Selection Commission has released the examination city details for Sub-Inspector in Delhi Police and CAPFs Examination, 2026 Paper-I. The exam is scheduled from 23rd Nov 2026 to 28th Nov 2026. Candidates can download their admission certificate 2-3 days prior to their exam date.",
+    "summary_hi": "कर्मचारी चयन आयोग ने दिल्ली पुलिस और सीएपीएफ सब-इंस्पेक्टर परीक्षा 2026 पेपर-I के लिए परीक्षा शहर का विवरण जारी कर दिया है। परीक्षा 23 नवंबर 2026 से 28 नवंबर 2026 तक आयोजित होनी है। उम्मीदवार अपनी परीक्षा तिथि से 2-3 दिन पहले अपना प्रवेश पत्र डाउनलोड कर सकते हैं।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Candidates who applied for the SSC CPO 2026 Paper-I examination."
+    ],
+    "who_hi": [
+      "एसएससी सीपीओ 2026 पेपर-I परीक्षा के लिए आवेदन करने वाले उम्मीदवार।"
+    ]
+  },
   "pdf": {
     "bytes": 328499,
     "pages": 1,
     "sha256": "33c91b9e835b04144c7133c2b942f6c87d14efee8df409a2c1e27a4e7ca75808",
     "text_kind": "text"
   },
+  "published_at": "2026-11-13T13:32:40Z",
+  "qual": [
+    "graduate"
+  ],
+  "slug": "ssc-cpo-admit-card-2026-out-delhi-police-si-paper-i-exam-city",
   "source_id": "ssc-notice-board",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Information regarding the city of examination and admission certificate for the candidates of Sub-Inspector in Delhi Police and Central Armed Police Forces Examination, 2026 (Paper-I).",
   "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/City live CPO Exam notice_13112026.pdf"
 }
