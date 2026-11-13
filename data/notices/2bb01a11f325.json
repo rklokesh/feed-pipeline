@@ -1,5 +1,20 @@
 {
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "medium",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Corrigendum to an internal or closed notice with no details",
+    "summary_en": "Corrigendum notice for RRB CEN 07/2026.",
+    "summary_hi": "आरआरबी सीईएन 07/2026 के लिए शुद्धिपत्र सूचना।",
+    "title_en": "RRB CEN 07/2026 Corrigendum",
+    "title_hi": "आरआरबी सीईएन 07/2026 शुद्धिपत्र",
+    "type": "Update",
+    "vacancies": null
+  },
   "fields": {},
   "first_seen": "2026-11-13T17:28:42+00:00",
   "id": "2bb01a11f325",
@@ -12,7 +27,7 @@
     "text_kind": "not-pdf"
   },
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "RRB CEN 07/2026: corrigendum1",
   "url": "https://rrb.indianrailways.gov.in/-/image/1794590849723corrigendum1.pdf/examsDocuments"
 }
