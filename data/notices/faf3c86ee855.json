@@ -1,12 +1,34 @@
 {
+  "auto_published": true,
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
-  "card": null,
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-22",
+    "last_date": null,
+    "list": true,
+    "posts": "हवलदार प्रशिक्षक",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "UPSSSC has released the advance exam city intimation for the Hawaldar Instructor main exam 2026. Candidates must pay the prescribed fee to view their exam district.",
+    "summary_hi": "यूपीएसएसएससी ने हवलदार प्रशिक्षक मुख्य परीक्षा 2026 के लिए परीक्षा जनपद की अग्रिम सूचना जारी कर दी है। अभ्यर्थी निर्धारित शुल्क जमा करके अपने परीक्षा जिले की जानकारी देख सकते हैं।",
+    "title_en": "UPSSSC Hawaldar Instructor Main Exam 2026 City Info",
+    "title_hi": "यूपीएसएसएससी हवलदार प्रशिक्षक मुख्य परीक्षा 2026 परीक्षा जनपद सूचना",
+    "type": "Update",
+    "vacancies": 209
+  },
+  "exam": {
+    "key": "upsssc-hawaldar-instructor-2026",
+    "name_en": "UPSSSC Hawaldar Instructor 2026",
+    "name_hi": "यूपीएसएसएससी हवलदार प्रशिक्षक 2026"
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-12T09:14:29+00:00",
   "id": "faf3c86ee855",
+  "issue": 1241,
+  "issue_tidy": true,
   "kind": "notification",
   "org": "UPSSSC",
   "pdf": {
@@ -15,8 +37,9 @@
     "sha256": "f4f0682a692f39b70b68bd442070ac34d777338b33a338c5bd4b21a1c1665e35",
     "text_kind": "ocr-legacy-font"
   },
+  "published_at": "2026-11-13T00:09:52Z",
   "source_id": "upsssc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "विज्ञापन संख्या-11-परीक्षा/2026, हवलदार प्रशिक्षक मुख्य परीक्षा (प्रा०अ०प०-2025)...",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?8gFyyKfR64p0lgrNDsHm+P6OjDUwFDEXTeU+MOXaPoc="
 }
