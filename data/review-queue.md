@@ -1,13 +1,7 @@
-# Review queue — 7 pending
+# Review queue — 1 pending
 
-_Updated 2026-11-13T13:30:38+00:00_
+_Updated 2026-11-13T14:01:39+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-11-13 | UPPSC | result | 13 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq3P5HGkQk3RF) |
-| 2026-11-13 | UPPSC | result | 13 Dec 2027 RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdqx9TZEVjD3pj) |
-| 2026-11-13 | UPPSC | result | 2. RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/A.. Visi | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdqx0OkEkFHHmZ) |
-| 2026-11-13 | UPPSC | result | 3. RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/A.. Visi | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq47NrLLiwkPi) |
-| 2026-11-13 | UPPSC | result | 13 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq1AZ1QP/oV/E) |
-| 2026-11-13 | UPPSC | result | 1. RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/A.. Visi | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq6pNygydf5ja) |
-| 2026-11-13 | SSC | other | Information regarding the city of examination and admission certificate for the candidates | — | — | — | — | [open](https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/City live CPO Exam notice_13112026.pdf) |
+| 2026-11-13 | MPPSC | other | सहायक प्राध्‍यापक (अंग्रेजी) परीक्षा - 2024 के पद हेतु साक्षात्‍कार आयोजन संबंधी सूचना, दि | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_English_Exam_2024_Dated_13_11_2026.pdf) |
