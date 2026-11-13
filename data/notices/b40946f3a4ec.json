@@ -35,10 +35,12 @@
   "org": "UPPSC",
   "page": {
     "after_en": [
-      "Selected candidates will proceed for further document verification and appointment processes as per commission guidelines."
+      "Provisional candidates must submit pending documents for final appointment.",
+      "Unfilled posts due to lack of eligible candidates will be re-advertised."
     ],
     "after_hi": [
-      "चयनित उम्मीदवार आयोग के दिशा-निर्देशों के अनुसार आगे की दस्तावेज सत्यापन और नियुक्ति प्रक्रिया के लिए आगे बढ़ेंगे।"
+      "औपबंधिक उम्मीदवारों को अंतिम नियुक्ति के लिए लंबित दस्तावेज जमा करने होंगे।",
+      "योग्य उम्मीदवारों की कमी के कारण खाली रहे पदों को फिर से विज्ञापित किया जाएगा।"
     ],
     "age": [],
     "apply_start": null,
@@ -46,42 +48,65 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Keep your registration details handy.",
-      "Download and save the result PDF."
+      "Check your result in the official PDF list.",
+      "Ensure all required documents are ready if selected provisionally."
     ],
     "checklist_hi": [
-      "अपने पंजीकरण विवरण तैयार रखें।",
-      "परिणाम पीडीएफ डाउनलोड करें और सुरक्षित रखें।"
+      "आधिकारिक पीडीएफ सूची में अपना परिणाम देखें।",
+      "यदि औपबंधिक रूप से चयनित हैं, तो सुनिश्चित करें कि सभी आवश्यक दस्तावेज तैयार हैं।"
     ],
     "conducted_by_en": "Uttar Pradesh Public Service Commission (UPPSC)",
     "conducted_by_hi": "उत्तर प्रदेश लोक सेवा आयोग (यूपीपीएससी)",
-    "dates": [],
-    "documents_en": [],
-    "documents_hi": [],
+    "dates": [
+      {
+        "label_en": "Interview dates",
+        "label_hi": "साक्षात्कार तिथियां",
+        "value_en": "26 & 27 October 2026",
+        "value_hi": "26 और 27 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Result notification date",
+        "label_hi": "परिणाम सूचना तिथि",
+        "value_en": "12 November 2026",
+        "value_hi": "12 नवंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Provisional selected candidates must submit their required documents to clear their provisional status."
+    ],
+    "documents_hi": [
+      "औपबंधिक रूप से चयनित उम्मीदवारों को अपनी औपबंधिक स्थिति स्पष्ट करने के लिए वांछित दस्तावेज जमा करने होंगे।"
+    ],
     "eligibility": [],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is the official recruitment result released by the Uttar Pradesh Public Service Commission for positions in the Medical Education Department (Allopathy) under Advt. No. D-1/E-1/2026.",
-        "a_hi": "यह उत्तर प्रदेश लोक सेवा आयोग द्वारा विज्ञापन संख्या डी-1/ई-1/2026 के तहत चिकित्सा शिक्षा विभाग (एलोपैथी) में पदों के लिए जारी किया गया आधिकारिक भर्ती परिणाम है।",
-        "q_en": "What is UPPSC Medical Education Department Result 2026?",
-        "q_hi": "यूपीपीएससी चिकित्सा शिक्षा विभाग परिणाम 2026 क्या है?"
+        "a_en": "It is a recruitment process conducted by the Uttar Pradesh Public Service Commission for selecting teaching faculty in state medical colleges under the Medical Education Department.",
+        "a_hi": "यह चिकित्सा शिक्षा विभाग के अंतर्गत राजकीय मेडिकल कॉलेजों में शिक्षण संकाय का चयन करने के लिए उत्तर प्रदेश लोक सेवा आयोग द्वारा आयोजित एक भर्ती प्रक्रिया है।",
+        "q_en": "What is UPPSC Medical Education Department Recruitment?",
+        "q_hi": "यूपीपीएससी चिकित्सा शिक्षा विभाग भर्ती क्या है?"
       }
     ],
     "extra": [],
     "faq": [
       {
-        "a_en": "You can check the result by visiting the official UPPSC website and clicking on the result link provided for Advt. No. D-1/E-1/2026.",
-        "a_hi": "आप आधिकारिक यूपीपीएससी वेबसाइट पर जाकर और विज्ञापन संख्या डी-1/ई-1/2026 के लिए दिए गए परिणाम लिंक पर क्लिक करके परिणाम देख सकते हैं।",
-        "q_en": "How can I check the UPPSC Medical Education Department Result 2026?",
-        "q_hi": "मैं यूपीपीएससी चिकित्सा शिक्षा विभाग परिणाम 2026 कैसे देख सकता हूँ?"
+        "a_en": "The result was released on 12 November 2026.",
+        "a_hi": "परिणाम 12 नवंबर 2026 को जारी किया गया था।",
+        "q_en": "When was the UPPSC Assistant Professor Anatomy result 2026 released?",
+        "q_hi": "यूपीपीएससी सहायक आचार्य एनाटॉमी परिणाम 2026 कब जारी किया गया था?"
       },
       {
-        "a_en": "The advertisement number is D-1/E-1/2026.",
-        "a_hi": "विज्ञापन संख्या डी-1/ई-1/2026 है।",
-        "q_en": "What is the advertisement number for this recruitment?",
-        "q_hi": "इस भर्ती के लिए विज्ञापन संख्या क्या है?"
+        "a_en": "The interviews were held on 26 and 27 October 2026.",
+        "a_hi": "साक्षात्कार 26 और 27 अक्टूबर 2026 को आयोजित किए गए थे।",
+        "q_en": "When were the interviews conducted for this recruitment?",
+        "q_hi": "इस भर्ती के लिए साक्षात्कार कब आयोजित किए गए थे?"
+      },
+      {
+        "a_en": "A total of 18 posts were advertised.",
+        "a_hi": "कुल 18 पद विज्ञापित किए गए थे।",
+        "q_en": "How many posts were advertised for Assistant Professor Anatomy?",
+        "q_hi": "सहायक आचार्य एनाटॉमी के लिए कुल कितने पद विज्ञापित किए गए थे?"
       }
     ],
     "fees": [],
@@ -89,62 +114,86 @@
     "h1_hi": "यूपीपीएससी चिकित्सा शिक्षा विभाग परिणाम 2026 – चयन सूची देखें",
     "hindi_notice_url": null,
     "how_en": [
-      "Go to the official website of UPPSC.",
-      "Click on the result link for Medical Education Department U.P. (Allopathy) Advt. No. D-1/E-1/2026.",
-      "View and download the result PDF for future reference."
+      "Visit the official UPPSC website.",
+      "Go to the results section and check the Medical Education Department Allopathy result notice.",
+      "Search your Application ID or name in the list."
     ],
     "how_hi": [
       "यूपीपीएससी की आधिकारिक वेबसाइट पर जाएं।",
-      "चिकित्सा शिक्षा विभाग (एलोपैथी) विज्ञापन संख्या डी-1/ई-1/2026 के परिणाम लिंक पर क्लिक करें।",
-      "भविष्य के संदर्भ के लिए परिणाम पीडीएफ देखें और डाउनलोड करें।"
+      "परिणाम अनुभाग में जाएं और चिकित्सा शिक्षा विभाग एलोपैथी परिणाम सूचना की जांच करें।",
+      "सूची में अपनी आवेदन आईडी या नाम खोजें।"
     ],
-    "intro_en": "The Uttar Pradesh Public Service Commission (UPPSC) has released the final result for the Medical Education Department (Allopathy) under Advertisement Number D-1/E-1/2026. Candidates who participated in this recruitment process can now check their results. The notice is visible on the official UPPSC portal.",
-    "intro_hi": "उत्तर प्रदेश लोक सेवा आयोग (यूपीपीएससी) ने विज्ञापन संख्या डी-1/ई-1/2026 के अंतर्गत चिकित्सा शिक्षा विभाग (एलोपैथी) के लिए परिणाम जारी कर दिया है। इस भर्ती प्रक्रिया में भाग लेने वाले उम्मीदवार अब अपना परिणाम देख सकते हैं। यह सूचना आधिकारिक यूपीपीएससी पोर्टल पर उपलब्ध है।",
+    "intro_en": "The Uttar Pradesh Public Service Commission (UPPSC) has announced the recruitment result for Assistant Professor Anatomy in the Medical Education Department (Allopathy) under Advertisement Number D-1/E-1/2026. The interviews were conducted on 26 and 27 October 2026. A total of 15 candidates have been selected in the main list out of 18 posts, while 3 posts for Scheduled Castes have been recommended to be re-advertised due to candidates scoring less than the minimum qualifying marks.",
+    "intro_hi": "उत्तर प्रदेश लोक सेवा आयोग (यूपीपीएससी) ने विज्ञापन संख्या डी-1/ई-1/2026 के अंतर्गत चिकित्सा शिक्षा विभाग (एलोपैथी) में सहायक आचार्य एनाटॉमी के पद के लिए भर्ती परिणाम घोषित कर दिया है। साक्षात्कार 26 और 27 अक्टूबर 2026 को आयोजित किए गए थे। कुल 18 पदों में से मुख्य सूची में 15 उम्मीदवारों का चयन किया गया है, जबकि अनुसूचित जाति के 3 पदों के लिए उम्मीदवारों के न्यूनतम अर्हतांक से कम अंक होने के कारण उन्हें पुनर्विज्ञापित करने की संस्तुति की गई है।",
     "last_date": null,
     "mistakes_en": [],
     "mistakes_hi": [],
     "not_en": [],
     "not_hi": [],
-    "notice_date": null,
+    "notice_date": "2026-11-12",
     "official_site": "https://uppsc.up.nic.in/",
     "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Advertisement Number",
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Assistant Professor Anatomy",
+        "value_hi": "सहायक आचार्य एनाटॉमी"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "18 posts",
+        "value_hi": "18 पद"
+      },
+      {
+        "label_en": "Interview dates",
+        "label_hi": "साक्षात्कार तिथियां",
+        "value_en": "26 & 27 October 2026",
+        "value_hi": "26 और 27 अक्टूबर 2026"
+      },
+      {
+        "label_en": "Advertisement number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "D-1/E-1/2026",
         "value_hi": "डी-1/ई-1/2026"
-      },
-      {
-        "label_en": "Department",
-        "label_hi": "विभाग",
-        "value_en": "Medical Education Department U.P. (Allopathy)",
-        "value_hi": "चिकित्सा शिक्षा विभाग उत्तर प्रदेश (एलोपैथी)"
       }
     ],
     "salary": [],
-    "selection_en": [],
-    "selection_hi": [],
+    "selection_en": [
+      "Direct recruitment via Interview"
+    ],
+    "selection_hi": [
+      "साक्षात्कार के माध्यम से सीधी भर्ती"
+    ],
     "share_card": {
-      "headline_en": "Result Declared",
-      "headline_hi": "परिणाम घोषित",
+      "headline_en": "Result Declared 2026",
+      "headline_hi": "परिणाम घोषित 2026",
       "kind": "result",
-      "line_en": "Medical Education Dept",
-      "line_hi": "चिकित्सा शिक्षा विभाग",
+      "line_en": "Medical Education Dept Anatomy",
+      "line_hi": "चिकित्सा शिक्षा विभाग एनाटॉमी",
       "posts": null
     },
     "status_en": "Result declared",
     "status_hi": "परिणाम घोषित",
-    "summary_en": "Uttar Pradesh Public Service Commission has declared the result for Medical Education Department (Allopathy) under Advt. No. D-1/E-1/2026. Candidates who appeared for the recruitment can check their results on the official website.",
-    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने विज्ञापन संख्या डी-1/ई-1/2026 के तहत चिकित्सा शिक्षा विभाग (एलोपैथी) का परिणाम घोषित कर दिया है। परीक्षा में शामिल होने वाले उम्मीदवार आधिकारिक वेबसाइट पर अपना परिणाम देख सकते हैं।",
-    "vacancies": [],
+    "summary_en": "Uttar Pradesh Public Service Commission has released the final interview result for Assistant Professor Anatomy under Advt No. D-1/E-1/2026. Candidates who appeared for the interview can check their results.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने विज्ञापन संख्या डी-1/ई-1/2026 के अंतर्गत सहायक आचार्य एनाटॉमी पद के लिए साक्षात्कार का अंतिम परिणाम जारी कर दिया है। साक्षात्कार में शामिल होने वाले उम्मीदवार अपना परिणाम देख सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "UR 13, SC 03, OBC 01, EWS 01 (Female horizontal reservation 03)",
+        "detail_hi": "अनारक्षित 13, अनु0जाति 03, आ0पि0वर्ग 01, ई0डब्ल्यूएस 01 (महिला क्षैतिज आरक्षण 03)",
+        "post_en": "Assistant Professor Anatomy",
+        "post_hi": "सहायक आचार्य एनाटॉमी",
+        "total": "18"
+      }
+    ],
     "video_url": null,
     "who_en": [
-      "Candidates who appeared for the UPPSC Medical Education Department Allopathy recruitment under Advt. No. D-1/E-1/2026."
+      "Candidates who appeared for the UPPSC Assistant Professor Anatomy interview under Advt No. D-1/E-1/2026."
     ],
     "who_hi": [
-      "विज्ञापन संख्या डी-1/ई-1/2026 के तहत यूपीपीएससी चिकित्सा शिक्षा विभाग एलोपैथी भर्ती के लिए उपस्थित होने वाले उम्मीदवार।"
+      "विज्ञापन संख्या डी-1/ई-1/2026 के अंतर्गत यूपीपीएससी सहायक आचार्य एनाटॉमी साक्षात्कार में शामिल होने वाले उम्मीदवार।"
     ]
   },
   "pdf": {
@@ -154,10 +203,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-12T15:19:09Z",
-  "qual": [
-    "postgraduate"
-  ],
-  "rewrite": true,
   "slug": "uppsc-medical-education-department-result-2026-check-list",
   "source_id": "uppsc-home",
   "status": "approved",
