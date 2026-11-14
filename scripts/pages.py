@@ -436,6 +436,12 @@ def render(n: dict, slug: str, related: list | None = None, exam_groups: dict | 
     if last:
         btns.append(f'<a class="btn" id="remind" href="/notice/{slug}/remind.ics" download="last-date-{slug[:40]}.ics" data-gcal="{esc(gcal_url(en["h1"], last, slug))}" hidden>{bell}<span data-t="aRemind">{esc(en["aRemind"])}</span></a>')
     box = '      <div class="doit" id="doit">\n        ' + "\n        ".join(btns) + '\n      </div>\n'
+    from exams import strip_year as _sy   # one quiet line under the buttons: follow this exam on the WhatsApp channel
+    _e = n.get("exam") or {}
+    _ne = _sy(_e.get("name_en") or "") or (n.get("org") or "")
+    _nh = _sy(_e.get("name_hi") or "") or _ne
+    en["waAlert"], hi["waAlert"] = (f"Get the next {_ne} update on WhatsApp, free →", f"{_nh} का अगला अपडेट व्हाट्सऐप पर पाएँ, मुफ़्त →") if _ne else ("Get every new govt job alert on WhatsApp, free →", "हर नई सरकारी नौकरी की सूचना व्हाट्सऐप पर पाएँ, मुफ़्त →")
+    box += f'      <p class="walert"><a href="https://whatsapp.com/channel/0029Vb9M2x930LKIvmiBrY2s" target="_blank" rel="noopener" data-t="waAlert">{esc(en["waAlert"])}</a></p>\n'
     i_ = main[0].index('<p class="status">')
     j_ = main[0].index("\n", i_) + 1      # right after the status / last-date line, before the summary
     main[0] = main[0][:j_] + box + main[0][j_:]

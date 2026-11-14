@@ -131,6 +131,11 @@ h1 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; text-wrap: b
 .doit .btn.pri:hover { opacity: .9; background: var(--ink); }
 .doit .btn[hidden] { display: none; }
 @media print { .doit { display: none !important; } }
+.walert { margin: 2px auto 0; text-align: center; font-size: .9375rem; }
+.walert a { color: #1a7f45; font-weight: 500; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+:root[data-theme="dark"] .walert a { color: #5fd38d; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .walert a { color: #5fd38d; } }
+@media print { .walert { display: none !important; } }
 .note { display: grid; gap: 18px; max-width: 46rem; }
 .actions { row-gap: 12px !important; column-gap: 28px !important; }
 .actions .act { display: inline-flex; align-items: center; gap: 6px; }
@@ -682,6 +687,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
         <a class="btn wa js-share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a>
         <a class="btn" id="remind" href="/notice/itbp-constable-gd-sports-quota-recruitment-2025/remind.ics" download="last-date-itbp-constable-gd-sports-quota-recruitme.ics" data-gcal="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Last+date%3A+ITBP+Constable+GD+Sports+Quota+Recruitment+2025&amp;dates=20261101%2F20261102&amp;details=https%3A%2F%2Fsarkarichart.com%2Fnotice%2Fitbp-constable-gd-sports-quota-recruitment-2025%2F" hidden><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg><span data-t="aRemind">अंतिम तिथि से पहले याद दिलाएँ</span></a>
       </div>
+      <p class="walert"><a href="https://whatsapp.com/channel/0029Vb9M2x930LKIvmiBrY2s" target="_blank" rel="noopener" data-t="waAlert">आईटीबीपी कांस्टेबल जीडी स्पोर्ट्सपर्सन का अगला अपडेट व्हाट्सऐप पर पाएँ, मुफ़्त →</a></p>
       <p class="lead" data-t="summary">भारत-तिब्बत सीमा पुलिस बल ने खेल कोटा 2025 के तहत कांस्टेबल सामान्य ड्यूटी के 126 पदों पर भर्ती के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 3 अक्टूबर 2026 से 1 नवंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।</p>
       <img class="ogimg" id="ogimg" src="/notice/itbp-constable-gd-sports-quota-recruitment-2025/og.png" data-en="/notice/itbp-constable-gd-sports-quota-recruitment-2025/og.png" data-hi="/notice/itbp-constable-gd-sports-quota-recruitment-2025/og-hi.png" width="1200" height="675" alt="ITBP Constable GD Sports Quota Recruitment 2025 — summary card" decoding="async" onerror="this.hidden=true">
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
@@ -830,6 +836,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       prefSrc: "Add SarkariChart as a preferred source on Google",
       title: "ITBP Constable GD Sports Quota Recruitment 2025 | SarkariChart",
       h1: "ITBP Constable GD Sports Quota Recruitment 2025",
+      waAlert: "Get the next ITBP Constable GD Sportsperson update on WhatsApp, free →",
       crumbType: "Jobs",
       org: "ITBP",
       summary: "Indo-Tibetan Border Police Force invites online applications for 126 Constable General Duty posts under Sports Quota 2025. Eligible candidates can apply online from 3rd October 2026 to 1st November 2026.",
@@ -969,6 +976,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ",
       title: "आईटीबीपी कांस्टेबल जीडी खेल कोटा भर्ती 2025 | सरकारी चार्ट",
       h1: "आईटीबीपी कांस्टेबल जीडी खेल कोटा भर्ती 2025",
+      waAlert: "आईटीबीपी कांस्टेबल जीडी स्पोर्ट्सपर्सन का अगला अपडेट व्हाट्सऐप पर पाएँ, मुफ़्त →",
       crumbType: "नौकरियाँ",
       org: "ITBP",
       summary: "भारत-तिब्बत सीमा पुलिस बल ने खेल कोटा 2025 के तहत कांस्टेबल सामान्य ड्यूटी के 126 पदों पर भर्ती के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 3 अक्टूबर 2026 से 1 नवंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं।",

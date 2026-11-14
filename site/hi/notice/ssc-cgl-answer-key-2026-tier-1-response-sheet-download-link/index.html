@@ -131,6 +131,11 @@ h1 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; text-wrap: b
 .doit .btn.pri:hover { opacity: .9; background: var(--ink); }
 .doit .btn[hidden] { display: none; }
 @media print { .doit { display: none !important; } }
+.walert { margin: 2px auto 0; text-align: center; font-size: .9375rem; }
+.walert a { color: #1a7f45; font-weight: 500; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+:root[data-theme="dark"] .walert a { color: #5fd38d; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .walert a { color: #5fd38d; } }
+@media print { .walert { display: none !important; } }
 .note { display: grid; gap: 18px; max-width: 46rem; }
 .actions { row-gap: 12px !important; column-gap: 28px !important; }
 .actions .act { display: inline-flex; align-items: center; gap: 6px; }
@@ -681,6 +686,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
         <a class="btn" href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_04112026.pdf" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg><span data-t="aPdf">आधिकारिक सूचना (PDF)</span></a>
         <a class="btn wa js-share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a>
       </div>
+      <p class="walert"><a href="https://whatsapp.com/channel/0029Vb9M2x930LKIvmiBrY2s" target="_blank" rel="noopener" data-t="waAlert">एसएससी सीजीएल का अगला अपडेट व्हाट्सऐप पर पाएँ, मुफ़्त →</a></p>
       <p class="lead" data-t="summary">कर्मचारी चयन आयोग ने संयुक्त स्नातक स्तर परीक्षा 2026 टीयर-1 की संभावित उत्तर कुंजियां और प्रतिक्रिया पत्रक जारी कर दिए हैं। उम्मीदवार 04.11.2026 से 07.11.2026 तक प्रति प्रश्न ₹50 शुल्क के साथ ऑनलाइन आपत्ति दर्ज करा सकते हैं।</p>
       <img class="ogimg" id="ogimg" src="/notice/ssc-cgl-answer-key-2026-tier-1-response-sheet-download-link/og.png" data-en="/notice/ssc-cgl-answer-key-2026-tier-1-response-sheet-download-link/og.png" data-hi="/notice/ssc-cgl-answer-key-2026-tier-1-response-sheet-download-link/og-hi.png" width="1200" height="675" alt="SSC CGL Answer Key 2026 Tier 1 – Response Sheet Download Link — summary card" decoding="async" onerror="this.hidden=true">
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
@@ -807,6 +813,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       prefSrc: "Add SarkariChart as a preferred source on Google",
       title: "SSC CGL Answer Key 2026 Tier 1 – Response Sheet Download Link",
       h1: "SSC CGL Answer Key 2026 Tier 1 – Response Sheet Download Link",
+      waAlert: "Get the next SSC CGL update on WhatsApp, free →",
       crumbType: "Answer keys",
       org: "SSC",
       summary: "The Staff Selection Commission has released the tentative answer keys and response sheets for the Combined Graduate Level Examination 2026 Tier-I. Candidates can submit online challenges from 04.11.2026 to 07.11.2026 by paying ₹50 per question.",
@@ -917,6 +924,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ",
       title: "एसएससी सीजीएल आंसर की 2026 टीयर 1 – रिस्पॉन्स शीट डाउनलोड लिंक",
       h1: "एसएससी सीजीएल आंसर की 2026 टीयर 1 – रिस्पॉन्स शीट डाउनलोड लिंक",
+      waAlert: "एसएससी सीजीएल का अगला अपडेट व्हाट्सऐप पर पाएँ, मुफ़्त →",
       crumbType: "आंसर की",
       org: "एसएससी",
       summary: "कर्मचारी चयन आयोग ने संयुक्त स्नातक स्तर परीक्षा 2026 टीयर-1 की संभावित उत्तर कुंजियां और प्रतिक्रिया पत्रक जारी कर दिए हैं। उम्मीदवार 04.11.2026 से 07.11.2026 तक प्रति प्रश्न ₹50 शुल्क के साथ ऑनलाइन आपत्ति दर्ज करा सकते हैं।",

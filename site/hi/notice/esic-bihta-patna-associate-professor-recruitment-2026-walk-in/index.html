@@ -131,6 +131,11 @@ h1 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; text-wrap: b
 .doit .btn.pri:hover { opacity: .9; background: var(--ink); }
 .doit .btn[hidden] { display: none; }
 @media print { .doit { display: none !important; } }
+.walert { margin: 2px auto 0; text-align: center; font-size: .9375rem; }
+.walert a { color: #1a7f45; font-weight: 500; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+:root[data-theme="dark"] .walert a { color: #5fd38d; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .walert a { color: #5fd38d; } }
+@media print { .walert { display: none !important; } }
 .note { display: grid; gap: 18px; max-width: 46rem; }
 .actions { row-gap: 12px !important; column-gap: 28px !important; }
 .actions .act { display: inline-flex; align-items: center; gap: 6px; }
@@ -682,6 +687,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
         <a class="btn wa js-share" href="#"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E676" d="M12 .9a11 11 0 0 0-9.6 16.4L.9 23.1l6-1.6A11 11 0 1 0 12 .9z"/><path fill="#F5FFF9" transform="translate(12 11.6) scale(1.32) translate(-12 -12)" d="M16.6 13.9c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1.1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg><span data-t="share">Share on WhatsApp</span></a>
         <a class="btn" id="remind" href="/notice/esic-bihta-patna-associate-professor-recruitment-2026-walk-in/remind.ics" download="last-date-esic-bihta-patna-associate-professor-rec.ics" data-gcal="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Last+date%3A+ESIC+Bihta+Patna+Associate+Professor+Recruitment+2026+%E2%80%93+Walk-In&amp;dates=20261120%2F20261121&amp;details=https%3A%2F%2Fsarkarichart.com%2Fnotice%2Fesic-bihta-patna-associate-professor-recruitment-2026-walk-in%2F" hidden><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg><span data-t="aRemind">अंतिम तिथि से पहले याद दिलाएँ</span></a>
       </div>
+      <p class="walert"><a href="https://whatsapp.com/channel/0029Vb9M2x930LKIvmiBrY2s" target="_blank" rel="noopener" data-t="waAlert">ESIC का अगला अपडेट व्हाट्सऐप पर पाएँ, मुफ़्त →</a></p>
       <p class="lead" data-t="summary">ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, बेहटा, पटना ने अनुबंध के आधार पर सुपर स्पेशलिटी विभागों में सह प्राध्यापक के पदों के लिए आवेदन मांगे हैं। योग्य उम्मीदवार 20.11.2026 तक आवेदन भेजें और 21.11.2026 को वॉक-इन इंटरव्यू में भाग लें।</p>
       <img class="ogimg" id="ogimg" src="/notice/esic-bihta-patna-associate-professor-recruitment-2026-walk-in/og.png" data-en="/notice/esic-bihta-patna-associate-professor-recruitment-2026-walk-in/og.png" data-hi="/notice/esic-bihta-patna-associate-professor-recruitment-2026-walk-in/og-hi.png" width="1200" height="675" alt="ESIC Bihta Patna Associate Professor Recruitment 2026 – Walk-In — summary card" decoding="async" onerror="this.hidden=true">
       <script>(function(){var i=document.getElementById("ogimg");function s(){var h=document.documentElement.lang==="hi";var u=i.dataset[h?"hi":"en"];if(i.getAttribute("src")!==u){i.hidden=false;i.src=u;}}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script>
@@ -834,6 +840,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       prefSrc: "Add SarkariChart as a preferred source on Google",
       title: "ESIC Bihta Patna Associate Professor Recruitment 2026 – Walk-In",
       h1: "ESIC Bihta Patna Associate Professor Recruitment 2026 – Walk-In",
+      waAlert: "Get the next ESIC update on WhatsApp, free →",
       crumbType: "Jobs",
       org: "ESIC",
       summary: "ESIC Medical College and Hospital, Bihta, Patna invites applications for Associate Professor posts in super specialty departments on a contract basis. Eligible candidates should send scanned applications by 20.11.2026 and attend the walk-in interview on 21.11.2026.",
@@ -985,6 +992,7 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
       prefSrc: "गूगल पर सरकारी चार्ट को पसंदीदा स्रोत बनाएँ",
       title: "ईएसआईसी बेहटा पटना सह प्राध्यापक भर्ती 2026 – वॉक-इन इंटरव्यू",
       h1: "ईएसआईसी बेहटा पटना सह प्राध्यापक भर्ती 2026 – वॉक-इन इंटरव्यू",
+      waAlert: "ESIC का अगला अपडेट व्हाट्सऐप पर पाएँ, मुफ़्त →",
       crumbType: "नौकरियाँ",
       org: "ESIC",
       summary: "ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, बेहटा, पटना ने अनुबंध के आधार पर सुपर स्पेशलिटी विभागों में सह प्राध्यापक के पदों के लिए आवेदन मांगे हैं। योग्य उम्मीदवार 20.11.2026 तक आवेदन भेजें और 21.11.2026 को वॉक-इन इंटरव्यू में भाग लें।",
