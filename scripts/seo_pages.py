@@ -266,6 +266,130 @@ def build(slug, name, match, intro, faq, all_items, links, links2=(), kind=None,
     return len(open_jobs), len(other)
 
 
+WA_URL = "https://whatsapp.com/channel/0029Vb9M2x930LKIvmiBrY2s"
+TG_URL = "https://t.me/sarkarichart"
+PSTYLE = """<style>
+      .sp .status { margin: 14px 0 0; padding: 12px 14px; border-radius: 10px; background: var(--soft); line-height: 1.5; }
+      .sp .status b { font-weight: 600; }
+      .sp .facts { width: 100%; border-collapse: collapse; }
+      .sp .facts th, .sp .facts td { text-align: left; vertical-align: top; padding: 10px 0; border-top: 1px solid var(--line); line-height: 1.45; }
+      .sp .facts tr:last-child th, .sp .facts tr:last-child td { border-bottom: 1px solid var(--line); }
+      .sp .facts th { width: 32%; padding-right: 14px; font-weight: 500; color: var(--grey); }
+      .sp .basis { margin: 0; color: var(--grey); font-size: .875rem; }
+      .sp .alert { display: grid; gap: 10px; padding: 16px; border: 1px solid var(--line); border-radius: 12px; }
+      .sp .alert p { margin: 0; line-height: 1.5; }
+      .sp .alert .btns { display: flex; flex-wrap: wrap; gap: 10px; }
+      .sp .alert a { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; font-weight: 500; text-decoration: none; }
+      .sp .alert a.wa { background: #1FA855; color: #fff; }
+      .sp .alert a.tg { border: 1px solid var(--line); color: var(--ink); }
+      @media (max-width: 640px) { .sp .alert a { flex: 1 1 100%; justify-content: center; } .sp .facts th { width: 38%; } }
+    </style>"""
+
+
+def profile_pages(all_items):
+    """Big recurring exams (data/exam_profiles.json): a permanent page that exists BEFORE the notice (status 'expected',
+    last cycle's facts, alert box) and fills in by itself as notices arrive. Returns (slugs made, series keys absorbed)."""
+    esc = html.escape
+    path = ROOT / "data" / "exam_profiles.json"
+    if not path.exists():
+        return [], set()
+    profiles = json.loads(path.read_text(encoding="utf-8"))
+    today = dt.datetime.now(IST).date()
+    made, absorbed = [], set()
+    for pf in profiles:
+        absorbed.update(pf.get("absorbs") or [])
+        mrx, orx = re.compile(pf["match"], re.I), re.compile(pf["org"], re.I)
+        mine = [i for i in all_items if i.get("page") and orx.search(i.get("org") or "") and mrx.search(i.get("title") or "")]
+        mine.sort(key=lambda i: i.get("publishedAt") or "", reverse=True)
+        recent = [i for i in mine if i.get("posted", "") >= (today - dt.timedelta(days=365)).isoformat()]
+        open_jobs = [i for i in mine if i["type"] == "Job" and i.get("last") and dt.date.fromisoformat(i["last"]) >= today]
+        ne, nh = pf["name_en"], pf["name_hi"]
+        en = {"h1": f"{ne} {YEAR}", "lead": f"{ne} {YEAR}: notification, eligibility, fee, exam dates, admit card, answer key and result, from official notices, with the official link for each.",
+              "factsH": "Key facts", "basis": pf["basis_en"] + ". The new notice may change these; we update this page when it is out.",
+              "alertT": f"Get the {ne} notification, admit card and result the moment they are out, free.",
+              "wa": "Alerts on WhatsApp", "tg": "Telegram", "updH": f"All {ne} updates", "noneU": "No updates yet for this cycle.",
+              "offL": "Official website", "srcL": "Source of these facts", "lastL": "Last date"}
+        hi = {"h1": f"{nh} {YEAR}", "lead": f"{nh} {YEAR}: अधिसूचना, पात्रता, शुल्क, परीक्षा तिथि, एडमिट कार्ड, आंसर की और रिज़ल्ट, आधिकारिक सूचनाओं से, हर एक के आधिकारिक लिंक के साथ।",
+              "factsH": "मुख्य जानकारी", "basis": pf["basis_hi"] + "। नई सूचना में ये बदल सकते हैं; सूचना आते ही हम यह पेज अपडेट करते हैं।",
+              "alertT": f"{nh} की अधिसूचना, एडमिट कार्ड और रिज़ल्ट आते ही पाएँ, मुफ़्त।",
+              "wa": "व्हाट्सऐप पर अलर्ट", "tg": "टेलीग्राम", "updH": f"{nh} के सभी अपडेट", "noneU": "इस चक्र का अभी कोई अपडेट नहीं।",
+              "offL": "आधिकारिक वेबसाइट", "srcL": "इस जानकारी का स्रोत", "lastL": "अंतिम तिथि"}
+        # status: what a reader most needs to know right now
+        if open_jobs:
+            j = min(open_jobs, key=lambda i: i["last"])
+            en["st"] = f"Applications open. Last date: {fd(j['last'])} {j['last'][:4]}."
+            hi["st"] = f"आवेदन जारी हैं। अंतिम तिथि: {fd(j['last'], True)} {j['last'][:4]}।"
+        elif recent:
+            x = recent[0]
+            en["st"] = f"Latest: {x['title']} ({fd(x['posted'])} {x['posted'][:4]})."
+            hi["st"] = f"ताज़ा: {x.get('hi') or x['title']} ({fd(x['posted'], True)} {x['posted'][:4]})।"
+            if pf.get("next_en"):   # the official calendar line still matters after the last cycle's updates
+                en["st"] += " Next: " + pf["next_en"]
+                hi["st"] += " अगला: " + pf["next_hi"]
+        elif pf.get("next_en"):
+            en["st"], hi["st"] = "Notification expected. " + pf["next_en"], "अधिसूचना की प्रतीक्षा। " + pf["next_hi"]
+        else:
+            en["st"] = "The next notification is not announced yet. It appears here the moment the board publishes it."
+            hi["st"] = "अगली अधिसूचना अभी घोषित नहीं हुई। बोर्ड के जारी करते ही यह यहाँ दिखेगी।"
+        frows = ""
+        for k, (le, ve, lh, vh) in enumerate(pf["facts"]):
+            en[f"fl{k}"], en[f"fv{k}"], hi[f"fl{k}"], hi[f"fv{k}"] = le, ve, lh, vh
+            frows += f'<tr><th scope="row" data-t="fl{k}">{esc(le)}</th><td data-t="fv{k}">{esc(ve)}</td></tr>'
+        urows = ""
+        for k, i in enumerate(mine[:40]):
+            en[f"u{k}"], hi[f"u{k}"] = i["title"], i.get("hi") or i["title"]
+            typ_hi = TYPE_HI.get(i["type"], i["type"])
+            en[f"um{k}"], hi[f"um{k}"] = f'{i.get("org", "")} · {i["type"]}', f'{i.get("org", "")} · {typ_hi}'
+            if i["type"] == "Job" and i.get("last"):
+                hot = (dt.date.fromisoformat(i["last"]) - today).days <= 7
+                en[f"ud{k}"], hi[f"ud{k}"] = fd(i["last"]), fd(i["last"], True)
+                d = f'<span class="d{" hot" if hot else ""}"><span data-t="ud{k}">{esc(en[f"ud{k}"])}</span><small data-t="lastL">Last date</small></span>'
+            else:
+                en[f"ud{k}"], hi[f"ud{k}"] = fd(i["posted"]), fd(i["posted"], True)
+                d = f'<span class="d g" data-t="ud{k}">{esc(en[f"ud{k}"])}</span>'
+            urows += f'<a href="{esc(i["url"])}"><span class="t" data-t="u{k}">{esc(en[f"u{k}"])}</span><span class="m g" data-t="um{k}">{esc(en[f"um{k}"])}</span>{d}</a>'
+        wa_icon = '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 .5A11.5 11.5 0 0 0 2.1 17.8L.6 23.4l5.8-1.5A11.5 11.5 0 1 0 12 .5z"/><path fill="#1FA855" d="M17.3 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1a7.6 7.6 0 0 1-3.8-3.3c-.3-.5.3-.4.8-1.4.1-.2 0-.3 0-.5l-.9-2.1c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 5 4.4 1.9.8 2.6.9 3.5.7.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.5-.3z"/></svg>'
+        slug = f"exam/{pf['slug']}"
+        url = f"{SITE_URL}/{slug}/"
+        src_links = f'<a href="{esc(pf["official"])}" rel="noopener" target="_blank" data-t="offL">{esc(en["offL"])}</a> · <a href="{esc(pf["src"])}" rel="noopener nofollow" target="_blank" data-t="srcL">{esc(en["srcL"])}</a>'
+        if pf.get("next_src") and not open_jobs:
+            src_links += f' · <a href="{esc(pf["next_src"])}" rel="noopener nofollow" target="_blank">calendar</a>'
+        ld = [{"@context": "https://schema.org", "@type": "WebPage", "name": en["h1"], "description": en["lead"], "url": url,
+               "about": {"@type": "Thing", "name": ne}},
+              {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+                  {"@type": "ListItem", "position": 1, "name": "SarkariChart", "item": SITE_URL + "/"},
+                  {"@type": "ListItem", "position": 2, "name": "Exams", "item": SITE_URL + "/exam/"},
+                  {"@type": "ListItem", "position": 3, "name": en["h1"], "item": url}]}]
+        main = (STYLE + PSTYLE + '\n    <article class="sp">\n'
+                f'      <div><h1 data-t="h1">{esc(en["h1"])}</h1><p class="lead" data-t="lead">{esc(en["lead"])}</p>'
+                f'<p class="status" data-t="st">{esc(en["st"])}</p></div>\n'
+                f'      <section class="alert"><p data-t="alertT">{esc(en["alertT"])}</p><p class="btns">'
+                f'<a class="wa" href="{WA_URL}" target="_blank" rel="noopener">{wa_icon}<span data-t="wa">{esc(en["wa"])}</span></a>'
+                f'<a class="tg" href="{TG_URL}" target="_blank" rel="noopener"><span data-t="tg">{esc(en["tg"])}</span></a></p></section>\n'
+                f'      <section><h2 data-t="factsH">{esc(en["factsH"])}</h2><table class="facts"><tbody>{frows}</tbody></table>'
+                f'<p class="basis" data-t="basis">{esc(en["basis"])}</p><p class="basis">{src_links}</p></section>\n'
+                f'      <section><h2 data-t="updH">{esc(en["updH"])}</h2>'
+                + (f'<div class="jl">{urows}</div>' if urows else f'<p class="none" data-t="noneU">{esc(en["noneU"])}</p>') + '</section>\n'
+                '    </article>\n'
+                '    <script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>\n"
+                '    <span id="state" hidden></span><span id="left" hidden></span><span id="views" hidden></span><a id="dlPdf" hidden></a>')
+        title_en = f"{ne} {YEAR}: Notification, Eligibility, Exam Date, Admit Card, Result | SarkariChart"
+        title_hi = f"{nh} {YEAR}: अधिसूचना, पात्रता, परीक्षा तिथि, एडमिट कार्ड, रिज़ल्ट | सरकारी चार्ट"
+        en["title"], hi["title"] = title_en, title_hi
+        desc = f"{ne} {YEAR}: {en['st']} Eligibility, fee and selection process, with every official update."[:158]
+        js = lambda v: json.dumps(v, ensure_ascii=False)
+        out = (TPL.replace("{{TITLE}}", esc(title_en)).replace("{{DESC}}", esc(desc)).replace("{{MAIN}}", main)
+               .replace("{{T_EN}}", "\n".join(f"      {k}: {js(v)}," for k, v in en.items()))
+               .replace("{{T_HI}}", "\n".join(f"      {k}: {js(v)}," for k, v in hi.items()))
+               .replace("{{SLUG}}", slug.replace("/", "-")).replace("{{OGIMG}}", f"{SITE_URL}/og.png").replace("{{URL}}", url)
+               .replace("{{OGALT}}", esc(f"SarkariChart — {en['h1']}")).replace("{{LAST}}", "null"))
+        d = SITE / slug
+        d.mkdir(parents=True, exist_ok=True)
+        (d / "index.html").write_text(out, encoding="utf-8")
+        made.append((pf["slug"], ne, nh, len(mine), mine[0].get("publishedAt") if mine else "", en["st"], hi["st"]))
+    return made, absorbed
+
+
 EXAM_MIN = 3   # an exam page only once the exam has 3+ notices on the site (no thin pages)
 
 
@@ -288,9 +412,10 @@ def exam_pages(all_items, links):
     out = SITE / "exam"
     if out.exists():
         shutil.rmtree(out)
+    prof, absorbed = profile_pages(all_items)
     made = []
     for key, its in groups.items():
-        if len(its) < EXAM_MIN:
+        if len(its) < EXAM_MIN or key in absorbed:
             continue
         newest = max(its, key=lambda i: i.get("publishedAt") or "")
         _, en_name, hi_name, _ = ex[newest["id"]]
@@ -311,13 +436,19 @@ def exam_pages(all_items, links):
     esc = html.escape
     en, hi = {"h1": "Exams", "lead": "Every exam with its full timeline: notification, admit card, answer key and result, from official notices."}, {"h1": "परीक्षाएँ", "lead": "हर परीक्षा की पूरी टाइमलाइन: अधिसूचना, एडमिट कार्ड, आंसर की और रिज़ल्ट, आधिकारिक सूचनाओं से।"}
     rows = ""
+    en["bigH"], hi["bigH"], en["moreX"], hi["moreX"] = "Big exams", "बड़ी परीक्षाएँ", "More exams", "और परीक्षाएँ"
+    big = ""
+    for k, (key, en_name, hi_name, cnt, _, st_en, st_hi) in enumerate(prof):
+        en[f"b{k}"], hi[f"b{k}"], en[f"bs{k}"], hi[f"bs{k}"] = en_name, hi_name, st_en, st_hi
+        big += f'<a href="/exam/{key}/"><span class="t" data-t="b{k}">{esc(en_name)}</span><span class="m g" data-t="bs{k}">{esc(st_en)}</span></a>'
     for k, (key, en_name, hi_name, cnt, _) in enumerate(made):
         en[f"x{k}"], hi[f"x{k}"] = en_name, hi_name
         en[f"n{k}"], hi[f"n{k}"] = f"{cnt} updates", f"{cnt} अपडेट"
         rows += f'<a href="/exam/{key}/"><span class="t" data-t="x{k}">{esc(en_name)}</span><span class="d g" data-t="n{k}">{esc(en[f"n{k}"])}</span></a>'
     main = (STYLE + '\n    <article class="sp">\n'
             f'      <div><h1 data-t="h1">{esc(en["h1"])}</h1><p class="lead" data-t="lead">{esc(en["lead"])}</p></div>\n'
-            f'      <section><div class="jl">{rows}</div></section>\n    </article>\n'
+            f'      <section><h2 data-t="bigH">{esc(en["bigH"])}</h2><div class="jl">{big}</div></section>\n'
+            f'      <section><h2 data-t="moreX">{esc(en["moreX"])}</h2><div class="jl">{rows}</div></section>\n    </article>\n'
             '    <span id="state" hidden></span><span id="left" hidden></span><span id="views" hidden></span><a id="dlPdf" hidden></a>')
     en["title"], hi["title"] = f"All Exams {YEAR}: Admit Card, Result, Answer Key | SarkariChart", f"सभी परीक्षाएँ {YEAR}: एडमिट कार्ड, रिज़ल्ट, आंसर की | सरकारी चार्ट"
     js = lambda v: json.dumps(v, ensure_ascii=False)
@@ -328,7 +459,21 @@ def exam_pages(all_items, links):
             .replace("{{OGALT}}", "SarkariChart — Exams").replace("{{LAST}}", "null"))
     out.mkdir(parents=True, exist_ok=True)
     (out / "index.html").write_text(page, encoding="utf-8")
-    print(f"seo: {len(made)} exam pages + /exam/")
+    # old auto pages now folded into a big-exam page: send their address to it
+    rd = SITE / "_redirects"
+    if rd.exists():
+        t = rd.read_text(encoding="utf-8")
+        t = re.sub(r"# EXAM-PROFILES:START.*?# EXAM-PROFILES:END\n?", "", t, flags=re.S)
+        prof_keys = {p[0] for p in prof}
+        lines = []
+        for f in json.loads((ROOT / "data" / "exam_profiles.json").read_text(encoding="utf-8")):
+            for a in f.get("absorbs") or []:
+                if a != f["slug"] and a not in prof_keys:
+                    lines += [f"/exam/{a}/ /exam/{f['slug']}/ 301", f"/hi/exam/{a}/ /hi/exam/{f['slug']}/ 301"]
+        if lines:
+            t = t.rstrip("\n") + "\n# EXAM-PROFILES:START\n" + "\n".join(lines) + "\n# EXAM-PROFILES:END\n"
+        rd.write_text(t, encoding="utf-8")
+    print(f"seo: {len(prof)} big-exam pages, {len(made)} exam pages + /exam/")
 
 
 def main():

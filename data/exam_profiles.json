@@ -1,0 +1,549 @@
+[
+ {
+  "slug": "rrb-ntpc",
+  "name_en": "RRB NTPC",
+  "name_hi": "आरआरबी एनटीपीसी",
+  "org": "RRB|RRC",
+  "match": "ntpc",
+  "absorbs": [
+   "rrb-ntpc-undergraduate",
+   "rrb-ntpc-graduate"
+  ],
+  "official": "https://www.rrbcdg.gov.in/",
+  "basis_en": "As per the last notices: CEN 06/2026 (Graduate) and CEN 07/2026 (Undergraduate)",
+  "basis_hi": "पिछली सूचनाओं के अनुसार: CEN 06/2026 (स्नातक) और CEN 07/2026 (अंडरग्रेजुएट)",
+  "src": "https://www.careerpower.in/rrb-ntpc.html",
+  "facts": [
+   [
+    "Posts",
+    "3,548 (Graduate) + 1,688 (Undergraduate)",
+    "पद",
+    "3,548 (स्नातक) + 1,688 (अंडरग्रेजुएट)"
+   ],
+   [
+    "Age",
+    "18–33 (Graduate), 18–30 (Undergraduate), as on 1 Jan 2027",
+    "आयु",
+    "18–33 (स्नातक), 18–30 (अंडरग्रेजुएट), 1 जनवरी 2027 को"
+   ],
+   [
+    "Qualification",
+    "Graduate posts: any degree. Undergraduate posts: 12th pass",
+    "योग्यता",
+    "स्नातक पद: कोई भी डिग्री। अंडरग्रेजुएट पद: 12वीं पास"
+   ],
+   [
+    "Fee",
+    "₹500 (₹400 refunded after CBT 1); ₹250 for SC, ST, women, PwD and other listed groups (refunded after CBT 1)",
+    "शुल्क",
+    "₹500 (CBT 1 के बाद ₹400 वापस); SC, ST, महिला, दिव्यांग और अन्य सूचीबद्ध वर्गों के लिए ₹250 (CBT 1 के बाद वापस)"
+   ],
+   [
+    "Selection",
+    "CBT 1, CBT 2, typing test or CBAT for some posts, document verification, medical",
+    "चयन",
+    "CBT 1, CBT 2, कुछ पदों के लिए टाइपिंग टेस्ट या CBAT, दस्तावेज़ सत्यापन, मेडिकल"
+   ]
+  ]
+ },
+ {
+  "slug": "rrb-group-d",
+  "name_en": "RRB Group D (Level 1)",
+  "name_hi": "आरआरबी ग्रुप डी (लेवल 1)",
+  "org": "RRB|RRC",
+  "match": "group[ -]?d|level[ -]?1\\b|cen[ -]?0?9/2025",
+  "absorbs": [],
+  "official": "https://www.rrbcdg.gov.in/",
+  "basis_en": "As per the last notice: CEN 09/2025",
+  "basis_hi": "पिछली सूचना के अनुसार: CEN 09/2025",
+  "src": "https://www.careerpower.in/rrb-group-d.html",
+  "facts": [
+   [
+    "Age",
+    "18–33",
+    "आयु",
+    "18–33"
+   ],
+   [
+    "Qualification",
+    "10th pass, or ITI / NAC",
+    "योग्यता",
+    "10वीं पास, या ITI / NAC"
+   ],
+   [
+    "Fee",
+    "₹500 (₹400 refunded after the CBT); ₹250 for SC, ST, women and other listed groups (refunded after the CBT)",
+    "शुल्क",
+    "₹500 (CBT के बाद ₹400 वापस); SC, ST, महिला और अन्य सूचीबद्ध वर्गों के लिए ₹250 (CBT के बाद वापस)"
+   ],
+   [
+    "Selection",
+    "CBT, physical efficiency test (PET), document verification, medical",
+    "चयन",
+    "CBT, शारीरिक दक्षता परीक्षा (PET), दस्तावेज़ सत्यापन, मेडिकल"
+   ]
+  ]
+ },
+ {
+  "slug": "rrb-alp",
+  "name_en": "RRB ALP (Assistant Loco Pilot)",
+  "name_hi": "आरआरबी एएलपी (असिस्टेंट लोको पायलट)",
+  "org": "^RRB$",
+  "match": "\\balp\\b|assistant loco|cen[ -]?0?1/2026",
+  "absorbs": [
+   "rrb-alp",
+   "rrb-cen-01"
+  ],
+  "official": "https://www.rrbcdg.gov.in/",
+  "basis_en": "As per the last notice: CEN 01/2026",
+  "basis_hi": "पिछली सूचना के अनुसार: CEN 01/2026",
+  "src": "https://www.careerpower.in/rrb-alp.html",
+  "facts": [
+   [
+    "Posts",
+    "14,627 (after the November 2026 increase)",
+    "पद",
+    "14,627 (नवंबर 2026 की बढ़ोतरी के बाद)"
+   ],
+   [
+    "Age",
+    "18–30, as on 1 Jul 2026",
+    "आयु",
+    "18–30, 1 जुलाई 2026 को"
+   ],
+   [
+    "Qualification",
+    "10th + ITI in listed trades, or engineering diploma or degree",
+    "योग्यता",
+    "10वीं + सूचीबद्ध ट्रेड में ITI, या इंजीनियरिंग डिप्लोमा या डिग्री"
+   ],
+   [
+    "Fee",
+    "₹500 (₹400 refunded after the CBT); ₹250 for SC, ST, women and other listed groups (refunded)",
+    "शुल्क",
+    "₹500 (CBT के बाद ₹400 वापस); SC, ST, महिला और अन्य सूचीबद्ध वर्गों के लिए ₹250 (वापस)"
+   ],
+   [
+    "Selection",
+    "CBT 1, CBT 2, computer-based aptitude test (CBAT), document verification, medical",
+    "चयन",
+    "CBT 1, CBT 2, कंप्यूटर आधारित एप्टीट्यूड टेस्ट (CBAT), दस्तावेज़ सत्यापन, मेडिकल"
+   ]
+  ]
+ },
+ {
+  "slug": "rrb-je",
+  "name_en": "RRB JE (Junior Engineer)",
+  "name_hi": "आरआरबी जेई (जूनियर इंजीनियर)",
+  "org": "^RRB$",
+  "match": "\\bje\\b|junior engineer",
+  "absorbs": [
+   "rrb-je"
+  ],
+  "official": "https://www.rrbcdg.gov.in/",
+  "basis_en": "As per the last notice: CEN 04/2026",
+  "basis_hi": "पिछली सूचना के अनुसार: CEN 04/2026",
+  "src": "https://www.careerpower.in/rrb-je.html",
+  "facts": [
+   [
+    "Posts",
+    "4,487 (after the increase)",
+    "पद",
+    "4,487 (बढ़ोतरी के बाद)"
+   ],
+   [
+    "Age",
+    "18–33, as on 1 Jan 2027",
+    "आयु",
+    "18–33, 1 जनवरी 2027 को"
+   ],
+   [
+    "Qualification",
+    "Engineering diploma or degree (some posts accept other degrees, as listed in the notice)",
+    "योग्यता",
+    "इंजीनियरिंग डिप्लोमा या डिग्री (कुछ पदों के लिए सूचना में दी गई अन्य डिग्रियाँ)"
+   ],
+   [
+    "Fee",
+    "₹500; ₹250 for SC, ST, women and other listed groups",
+    "शुल्क",
+    "₹500; SC, ST, महिला और अन्य सूचीबद्ध वर्गों के लिए ₹250"
+   ],
+   [
+    "Selection",
+    "CBT 1, CBT 2, document verification, medical",
+    "चयन",
+    "CBT 1, CBT 2, दस्तावेज़ सत्यापन, मेडिकल"
+   ]
+  ]
+ },
+ {
+  "slug": "ssc-cgl",
+  "name_en": "SSC CGL",
+  "name_hi": "एसएससी सीजीएल",
+  "org": "^SSC$",
+  "match": "\\bcgl\\b|combined graduate",
+  "absorbs": [
+   "ssc-cgl"
+  ],
+  "official": "https://ssc.gov.in/",
+  "basis_en": "As per the last notice: CGL 2026",
+  "basis_hi": "पिछली सूचना के अनुसार: CGL 2026",
+  "src": "https://testbook.com/news/ssc-cgl-tier-1-exam-date-2026-out/",
+  "facts": [
+   [
+    "Posts",
+    "10,731 (revised)",
+    "पद",
+    "10,731 (संशोधित)"
+   ],
+   [
+    "Age",
+    "18–32, depending on the post",
+    "आयु",
+    "18–32, पद के अनुसार"
+   ],
+   [
+    "Qualification",
+    "Graduation in any subject (some posts need specific subjects)",
+    "योग्यता",
+    "किसी भी विषय में स्नातक (कुछ पदों के लिए विशेष विषय)"
+   ],
+   [
+    "Fee",
+    "₹100; free for women, SC, ST, PwBD and ex-servicemen",
+    "शुल्क",
+    "₹100; महिला, SC, ST, दिव्यांग और पूर्व सैनिकों के लिए निःशुल्क"
+   ],
+   [
+    "Selection",
+    "Tier 1, Tier 2 (plus skill tests for some posts), document verification",
+    "चयन",
+    "टियर 1, टियर 2 (कुछ पदों के लिए स्किल टेस्ट), दस्तावेज़ सत्यापन"
+   ]
+  ]
+ },
+ {
+  "slug": "ssc-chsl",
+  "name_en": "SSC CHSL",
+  "name_hi": "एसएससी सीएचएसएल",
+  "org": "^SSC$",
+  "match": "\\bchsl\\b|higher secondary",
+  "absorbs": [
+   "ssc-chsl"
+  ],
+  "official": "https://ssc.gov.in/",
+  "basis_en": "As per the last notice: CHSL 2026",
+  "basis_hi": "पिछली सूचना के अनुसार: CHSL 2026",
+  "src": "https://testbook.com/news/ssc-chsl-exam-date-2026-out/",
+  "facts": [
+   [
+    "Age",
+    "18–27",
+    "आयु",
+    "18–27"
+   ],
+   [
+    "Qualification",
+    "12th pass",
+    "योग्यता",
+    "12वीं पास"
+   ],
+   [
+    "Fee",
+    "₹100; free for women, SC, ST, PwBD and ex-servicemen",
+    "शुल्क",
+    "₹100; महिला, SC, ST, दिव्यांग और पूर्व सैनिकों के लिए निःशुल्क"
+   ],
+   [
+    "Selection",
+    "Tier 1, Tier 2 (with typing or skill test), document verification",
+    "चयन",
+    "टियर 1, टियर 2 (टाइपिंग या स्किल टेस्ट सहित), दस्तावेज़ सत्यापन"
+   ]
+  ]
+ },
+ {
+  "slug": "ssc-mts",
+  "name_en": "SSC MTS and Havaldar",
+  "name_hi": "एसएससी एमटीएस और हवलदार",
+  "org": "^SSC$",
+  "match": "\\bmts\\b|multi[- ]tasking|havaldar",
+  "absorbs": [
+   "ssc-mts"
+  ],
+  "official": "https://ssc.gov.in/",
+  "basis_en": "As per the last notice",
+  "basis_hi": "पिछली सूचना के अनुसार",
+  "src": "https://testbook.com/news/ssc-new-exam-calendar-2026-27-out/",
+  "facts": [
+   [
+    "Age",
+    "18–25 (MTS), 18–27 (Havaldar)",
+    "आयु",
+    "18–25 (एमटीएस), 18–27 (हवलदार)"
+   ],
+   [
+    "Qualification",
+    "10th pass",
+    "योग्यता",
+    "10वीं पास"
+   ],
+   [
+    "Fee",
+    "₹100; free for women, SC, ST, PwBD and ex-servicemen",
+    "शुल्क",
+    "₹100; महिला, SC, ST, दिव्यांग और पूर्व सैनिकों के लिए निःशुल्क"
+   ],
+   [
+    "Selection",
+    "Computer-based exam; physical tests (PET/PST) for Havaldar only",
+    "चयन",
+    "कंप्यूटर आधारित परीक्षा; केवल हवलदार के लिए शारीरिक परीक्षा (PET/PST)"
+   ]
+  ]
+ },
+ {
+  "slug": "ssc-gd",
+  "name_en": "SSC GD Constable",
+  "name_hi": "एसएससी जीडी कांस्टेबल",
+  "org": "^SSC$",
+  "match": "\\bgd\\b",
+  "absorbs": [
+   "ssc-gd"
+  ],
+  "official": "https://ssc.gov.in/",
+  "next_en": "SSC's exam calendar 2026–27 lists the GD Constable 2027 notification for October–November 2026 (tentative).",
+  "next_hi": "एसएससी के परीक्षा कैलेंडर 2026–27 में जीडी कांस्टेबल 2027 की अधिसूचना अक्टूबर–नवंबर 2026 (संभावित) में दी गई है।",
+  "next_src": "https://testbook.com/news/ssc-new-exam-calendar-2026-27-out/",
+  "basis_en": "As per the last notice",
+  "basis_hi": "पिछली सूचना के अनुसार",
+  "src": "https://testbook.com/news/ssc-new-exam-calendar-2026-27-out/",
+  "facts": [
+   [
+    "Age",
+    "18–23",
+    "आयु",
+    "18–23"
+   ],
+   [
+    "Qualification",
+    "10th pass",
+    "योग्यता",
+    "10वीं पास"
+   ],
+   [
+    "Fee",
+    "₹100; free for women, SC, ST and ex-servicemen",
+    "शुल्क",
+    "₹100; महिला, SC, ST और पूर्व सैनिकों के लिए निःशुल्क"
+   ],
+   [
+    "Selection",
+    "Computer-based exam, physical tests (PET/PST), medical, document verification",
+    "चयन",
+    "कंप्यूटर आधारित परीक्षा, शारीरिक परीक्षा (PET/PST), मेडिकल, दस्तावेज़ सत्यापन"
+   ]
+  ]
+ },
+ {
+  "slug": "ssc-cpo",
+  "name_en": "SSC CPO (Delhi Police and CAPF SI)",
+  "name_hi": "एसएससी सीपीओ (दिल्ली पुलिस और सीएपीएफ एसआई)",
+  "org": "^SSC$",
+  "match": "\\bcpo\\b|sub[- ]inspector",
+  "absorbs": [
+   "ssc-cpo"
+  ],
+  "official": "https://ssc.gov.in/",
+  "basis_en": "As per the last notice: CPO 2026",
+  "basis_hi": "पिछली सूचना के अनुसार: CPO 2026",
+  "src": "https://testbook.com/ssc-cpo/eligibility-criteria",
+  "facts": [
+   [
+    "Posts",
+    "1,871",
+    "पद",
+    "1,871"
+   ],
+   [
+    "Age",
+    "20–25 (18–30 for SI Fire, CISF)",
+    "आयु",
+    "20–25 (एसआई फायर, सीआईएसएफ के लिए 18–30)"
+   ],
+   [
+    "Qualification",
+    "Graduation in any subject",
+    "योग्यता",
+    "किसी भी विषय में स्नातक"
+   ],
+   [
+    "Selection",
+    "Paper 1, physical tests (PST/PET), Paper 2, medical",
+    "चयन",
+    "पेपर 1, शारीरिक परीक्षा (PST/PET), पेपर 2, मेडिकल"
+   ]
+  ]
+ },
+ {
+  "slug": "up-police-constable",
+  "name_en": "UP Police Constable",
+  "name_hi": "यूपी पुलिस कांस्टेबल",
+  "org": "UP Police|UPPRPB|UPPBPB",
+  "match": "constable|आरक्षी",
+  "absorbs": [
+   "up-police-constable"
+  ],
+  "official": "https://uppbpb.gov.in/",
+  "basis_en": "As per the last notice: Advt PRPB-B 07/2025",
+  "basis_hi": "पिछली सूचना के अनुसार: विज्ञापन PRPB-B 07/2025",
+  "src": "https://www.careerpower.in/blog/up-police-constable-recruitment-2026",
+  "facts": [
+   [
+    "Posts",
+    "32,679",
+    "पद",
+    "32,679"
+   ],
+   [
+    "Age",
+    "Men 18–25, women 18–28 (relaxation for SC, ST, OBC)",
+    "आयु",
+    "पुरुष 18–25, महिला 18–28 (SC, ST, OBC को छूट)"
+   ],
+   [
+    "Qualification",
+    "12th pass",
+    "योग्यता",
+    "12वीं पास"
+   ],
+   [
+    "Fee",
+    "₹400 (General, OBC)",
+    "शुल्क",
+    "₹400 (सामान्य, OBC)"
+   ],
+   [
+    "Selection",
+    "Written exam, document verification and physical standards, running test (PET), medical",
+    "चयन",
+    "लिखित परीक्षा, दस्तावेज़ सत्यापन और शारीरिक मानक, दौड़ (PET), मेडिकल"
+   ]
+  ]
+ },
+ {
+  "slug": "upsssc-pet",
+  "name_en": "UPSSSC PET",
+  "name_hi": "यूपीएसएसएससी पीईटी",
+  "org": "UPSSSC",
+  "match": "\\bpet\\b|preliminary eligibility",
+  "absorbs": [
+   "upsssc-pet"
+  ],
+  "official": "https://upsssc.gov.in/",
+  "basis_en": "As per the last notice: PET 2026",
+  "basis_hi": "पिछली सूचना के अनुसार: PET 2026",
+  "src": "https://www.careerpower.in/upsssc-pet.html",
+  "facts": [
+   [
+    "Age",
+    "18–40 (relaxation for SC, ST, OBC, PwD)",
+    "आयु",
+    "18–40 (SC, ST, OBC, दिव्यांग को छूट)"
+   ],
+   [
+    "Qualification",
+    "10th pass",
+    "योग्यता",
+    "10वीं पास"
+   ],
+   [
+    "Fee",
+    "₹185 (General, OBC), ₹95 (SC, ST), ₹25 (PwD)",
+    "शुल्क",
+    "₹185 (सामान्य, OBC), ₹95 (SC, ST), ₹25 (दिव्यांग)"
+   ],
+   [
+    "What it is",
+    "A qualifying test: its score is needed to apply for UPSSSC Group C main exams",
+    "यह क्या है",
+    "एक पात्रता परीक्षा: UPSSSC ग्रुप C की मुख्य परीक्षाओं में आवेदन के लिए इसका स्कोर ज़रूरी है"
+   ]
+  ]
+ },
+ {
+  "slug": "ctet",
+  "name_en": "CTET",
+  "name_hi": "सीटीईटी",
+  "org": "CTET|CBSE",
+  "match": "\\bctet\\b",
+  "absorbs": [
+   "ctet"
+  ],
+  "official": "https://ctet.nic.in/",
+  "basis_en": "As per the last notice: CTET 2026",
+  "basis_hi": "पिछली सूचना के अनुसार: CTET 2026",
+  "src": "https://www.careerpower.in/ctet.html",
+  "facts": [
+   [
+    "Age",
+    "No upper age limit",
+    "आयु",
+    "कोई अधिकतम आयु सीमा नहीं"
+   ],
+   [
+    "Qualification",
+    "Paper I (Classes 1–5): 12th with D.El.Ed or as listed. Paper II (Classes 6–8): graduation with B.Ed or as listed",
+    "योग्यता",
+    "पेपर I (कक्षा 1–5): 12वीं के साथ D.El.Ed या सूचना अनुसार। पेपर II (कक्षा 6–8): स्नातक के साथ B.Ed या सूचना अनुसार"
+   ],
+   [
+    "Fee",
+    "₹1,000 one paper, ₹1,200 both (General, OBC); ₹500 / ₹600 (SC, ST, PwD)",
+    "शुल्क",
+    "एक पेपर ₹1,000, दोनों ₹1,200 (सामान्य, OBC); ₹500 / ₹600 (SC, ST, दिव्यांग)"
+   ],
+   [
+    "Exam",
+    "150 questions, 150 minutes, no negative marking; 60% to qualify",
+    "परीक्षा",
+    "150 प्रश्न, 150 मिनट, कोई नेगेटिव मार्किंग नहीं; पास होने के लिए 60%"
+   ]
+  ]
+ },
+ {
+  "slug": "uptet",
+  "name_en": "UPTET",
+  "name_hi": "यूपीटीईटी",
+  "org": "UPESSC|UPTET|UPBEB",
+  "match": "\\buptet\\b|\\btet\\b",
+  "absorbs": [
+   "uptet"
+  ],
+  "official": "https://upessc.up.gov.in/",
+  "basis_en": "As per the last notice: UPTET 2026",
+  "basis_hi": "पिछली सूचना के अनुसार: UPTET 2026",
+  "src": "https://www.careerpower.in/uptet.html",
+  "facts": [
+   [
+    "Age",
+    "No age limit",
+    "आयु",
+    "कोई आयु सीमा नहीं"
+   ],
+   [
+    "Fee",
+    "₹600 one paper, ₹1,200 both (General, OBC); ₹400 / ₹800 (SC, ST); ₹100 / ₹200 (PwD)",
+    "शुल्क",
+    "एक पेपर ₹600, दोनों ₹1,200 (सामान्य, OBC); ₹400 / ₹800 (SC, ST); ₹100 / ₹200 (दिव्यांग)"
+   ],
+   [
+    "Exam",
+    "150 questions, 150 minutes, no negative marking; 60% to qualify (55% reserved categories)",
+    "परीक्षा",
+    "150 प्रश्न, 150 मिनट, कोई नेगेटिव मार्किंग नहीं; पास होने के लिए 60% (आरक्षित वर्ग 55%)"
+   ]
+  ]
+ }
+]
