@@ -1007,7 +1007,17 @@ if(v==="b")h.classList.add("nb");if(!f)window.SC_ABN=v})()</script>
     if (ap) { const shut = !!(last && Math.ceil((last - new Date()) / 864e5) < 0); ap.classList.toggle("pri", !shut); ap.classList.toggle("was", shut);
       ap.querySelector("span").textContent = shut ? t("applyClosed") : t("aGo"); }
     const wtxt = (t("waText") || t("h1")) + "\n" + location.origin + location.pathname;
-    document.querySelectorAll(".js-share").forEach(a => { a.href = "https://wa.me/?text=" + encodeURIComponent(wtxt); a.target = "_blank"; a.rel = "noopener"; });
+    /* Share card: on phones, Share sends the notice's image card + message through the phone's share sheet (arrives in
+       WhatsApp as a picture with a caption); desktop keeps WhatsApp Web. Every message ends with the channel invite. */
+    const waJoin = (document.documentElement.lang === "hi" ? "मुफ़्त सरकारी नौकरी अलर्ट, व्हाट्सऐप पर: " : "Free govt job alerts on WhatsApp: ") + "https://whatsapp.com/channel/0029Vb9M2x930LKIvmiBrY2s";
+    const stxt = wtxt + "\n\n" + waJoin;
+    let card = null;
+    const phone = matchMedia("(pointer: coarse)").matches && navigator.canShare;
+    if (phone) { const og = document.querySelector('meta[property="og:image"]');   // fetched ahead, so the tap can share at once
+      if (og && og.content.startsWith(location.origin)) fetch(og.content).then(r => r.ok ? r.blob() : null).then(b => { if (b) { const f = new File([b], "sarkarichart.png", { type: b.type || "image/png" }); if (navigator.canShare({ files: [f] })) card = f; } }).catch(() => {}); }
+    document.querySelectorAll(".js-share").forEach(a => { a.href = "https://wa.me/?text=" + encodeURIComponent(stxt); a.target = "_blank"; a.rel = "noopener";
+      if (phone) a.addEventListener("click", e => { e.preventDefault();
+        navigator.share(card ? { files: [card], text: stxt } : { text: stxt }).catch(x => { if (x && x.name !== "AbortError") window.open(a.href, "_blank", "noopener"); }); }); });
     const rm = document.getElementById("remind");   // calendar reminder: only while the last date is ahead; iPhone/Mac get the .ics, others Google Calendar
     if (rm) { rm.hidden = !(last && last - new Date() > 0);
       if (!/iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent) && rm.dataset.gcal) { rm.href = rm.dataset.gcal; rm.removeAttribute("download"); rm.target = "_blank"; rm.rel = "noopener"; } }
