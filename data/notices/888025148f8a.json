@@ -1,0 +1,84 @@
+{
+  "board_url": "https://rrb.indianrailways.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "CEN No. 05/2026"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "CEN No. 05/2026"
+      }
+    },
+    "apply_or_official_url": {
+      "evidence": "लवे भती बोर्ड / RAILWAY RECRUITMENT BOARDS वेबसाइट/Website: https://rrb.indianrailways.gov.in CEN No. 05/2026 (Recruitment of various posts of Paramedical Category) Notice r",
+      "source": "rule",
+      "value": "https://rrb.indianrailways.gov.in"
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://rrb.indianrailways.gov.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "वेबसाइट/Website: https://rrb.indianrailways.gov.in"
+      }
+    },
+    "exam_date": {
+      "evidence": "their exam city 10 days (tentatively) prior the respective exam date which is scheduled on 23.11.2026 and 25.11.2026. 2. Downloading of E-Call letters will start 4 days (tentatively) prior to exam dates menti",
+      "source": "rule",
+      "value": "2026-11-23"
+    },
+    "exam_date_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "exam_date": "scheduled on 23.11.2026 and 25.11.2026"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Paramedical Category"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "(Recruitment of various posts of Paramedical Category)"
+      }
+    }
+  },
+  "first_seen": "2026-11-14T05:29:35+00:00",
+  "id": "888025148f8a",
+  "kind": "notification",
+  "org": "RRB",
+  "pdf": {
+    "bytes": 173840,
+    "pages": 1,
+    "sha256": "732abd3f841b0c2d82d97692e53e916b82853dbbccc0080e5fef5331022675f2",
+    "text_kind": "text"
+  },
+  "source_id": "rrb-unified",
+  "status": "pending_review",
+  "title": "RRB CEN 05/2026: City Intimation Notice 05 2026 English",
+  "url": "https://rrb.indianrailways.gov.in/-/image/1794633983175City_Intimation_Notice_05_2026_English.pdf/examsDocuments"
+}
