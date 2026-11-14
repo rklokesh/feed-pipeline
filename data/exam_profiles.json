@@ -545,5 +545,166 @@
     "150 प्रश्न, 150 मिनट, कोई नेगेटिव मार्किंग नहीं; पास होने के लिए 60% (आरक्षित वर्ग 55%)"
    ]
   ]
+ },
+ {
+  "slug": "bihar-police-constable",
+  "name_en": "Bihar Police Constable",
+  "name_hi": "बिहार पुलिस सिपाही",
+  "org": "CSBC|Bihar Police",
+  "match": "constable|sipahi|सिपाही",
+  "absorbs": [],
+  "official": "https://csbc.bihar.gov.in/",
+  "basis_en": "As per CSBC's constable notices",
+  "basis_hi": "CSBC की सिपाही भर्ती सूचनाओं के अनुसार",
+  "src": "https://rojgarwithankit.com/police/bihar-police-csbc-constable-2025",
+  "facts": [
+   [
+    "Qualification",
+    "12th pass",
+    "योग्यता",
+    "12वीं पास"
+   ],
+   [
+    "Selection",
+    "Written exam, then physical tests and document verification, as set in each notice",
+    "चयन",
+    "लिखित परीक्षा, फिर शारीरिक परीक्षा और दस्तावेज़ सत्यापन, हर सूचना के अनुसार"
+   ],
+   [
+    "Age and fee",
+    "Differ by category and by notice; check the official notice on csbc.bihar.gov.in",
+    "आयु और शुल्क",
+    "वर्ग और सूचना के अनुसार अलग; csbc.bihar.gov.in पर आधिकारिक सूचना देखें"
+   ]
+  ]
+ },
+ {
+  "slug": "hssc-cet",
+  "name_en": "HSSC CET (Group C and D)",
+  "name_hi": "एचएसएससी सीईटी (ग्रुप C और D)",
+  "org": "HSSC",
+  "match": "\\bcet\\b",
+  "absorbs": [
+   "hssc-group-d-cet",
+   "hssc-cet"
+  ],
+  "official": "https://hssc.gov.in/",
+  "basis_en": "As per the last notice: CET Group D 2026 (Advt 05/2026)",
+  "basis_hi": "पिछली सूचना के अनुसार: CET ग्रुप D 2026 (विज्ञापन 05/2026)",
+  "src": "https://www.careerpower.in/blog/hssc-cet-group-d-notification-2026",
+  "facts": [
+   [
+    "Age",
+    "18–42 (relaxation as per Haryana rules)",
+    "आयु",
+    "18–42 (हरियाणा नियमों के अनुसार छूट)"
+   ],
+   [
+    "Qualification",
+    "Group D: 10th pass with Hindi or Sanskrit at 10th level (some posts exempt)",
+    "योग्यता",
+    "ग्रुप D: 10वीं पास, 10वीं स्तर पर हिंदी या संस्कृत के साथ (कुछ पदों में छूट)"
+   ],
+   [
+    "Exam",
+    "One test: 100 questions, 100 marks; 50% to qualify (40% reserved categories)",
+    "परीक्षा",
+    "एक परीक्षा: 100 प्रश्न, 100 अंक; पास होने के लिए 50% (आरक्षित वर्ग 40%)"
+   ],
+   [
+    "What it is",
+    "Haryana's common eligibility test: posts are filled from the CET score",
+    "यह क्या है",
+    "हरियाणा की सामान्य पात्रता परीक्षा: पद CET स्कोर से भरे जाते हैं"
+   ]
+  ]
+ },
+ {
+  "slug": "rajasthan-patwari",
+  "name_en": "Rajasthan Patwari",
+  "name_hi": "राजस्थान पटवारी",
+  "org": "RSSB|RSMSSB",
+  "match": "patwari|पटवारी",
+  "absorbs": [
+   "rssb-patwari",
+   "rajasthan-patwari"
+  ],
+  "official": "https://rssb.rajasthan.gov.in/",
+  "basis_en": "As per the last notice: Advt 02/2025",
+  "basis_hi": "पिछली सूचना के अनुसार: विज्ञापन 02/2025",
+  "src": "https://www.careerpower.in/blog/rajasthan-patwari-notification-2025",
+  "facts": [
+   [
+    "Posts",
+    "3,705",
+    "पद",
+    "3,705"
+   ],
+   [
+    "Age",
+    "18–40 (relaxation for Rajasthan reserved categories and women)",
+    "आयु",
+    "18–40 (राजस्थान के आरक्षित वर्गों और महिलाओं को छूट)"
+   ],
+   [
+    "Qualification",
+    "Graduation plus a computer qualification (such as RS-CIT or O-Level)",
+    "योग्यता",
+    "स्नातक के साथ कंप्यूटर योग्यता (जैसे RS-CIT या O-Level)"
+   ],
+   [
+    "Selection",
+    "Written exam (150 questions, 300 marks, negative marking), document verification",
+    "चयन",
+    "लिखित परीक्षा (150 प्रश्न, 300 अंक, नेगेटिव मार्किंग), दस्तावेज़ सत्यापन"
+   ]
+  ]
+ },
+ {
+  "slug": "delhi-police-constable",
+  "name_en": "Delhi Police Constable",
+  "name_hi": "दिल्ली पुलिस कांस्टेबल",
+  "org": "SSC|Delhi Police",
+  "match": "delhi police constable|constable \\(?(executive|driver)",
+  "absorbs": [
+   "ssc-delhi-police-constable",
+   "delhi-police-constable"
+  ],
+  "official": "https://ssc.gov.in/",
+  "basis_en": "As per the last notice: Constable (Executive) 2025",
+  "basis_hi": "पिछली सूचना के अनुसार: कांस्टेबल (एग्ज़ीक्यूटिव) 2025",
+  "src": "https://www.careerindia.com/news/delhi-police-constable-recruitment-2025-ssc-notification-out-for-7565-vacancies-apply-online-053127.html",
+  "facts": [
+   [
+    "Posts",
+    "7,565",
+    "पद",
+    "7,565"
+   ],
+   [
+    "Age",
+    "18–25",
+    "आयु",
+    "18–25"
+   ],
+   [
+    "Qualification",
+    "12th pass; men need a valid LMV driving licence by the physical test",
+    "योग्यता",
+    "12वीं पास; पुरुषों के पास शारीरिक परीक्षा तक वैध LMV ड्राइविंग लाइसेंस"
+   ],
+   [
+    "Fee",
+    "₹100; free for women, SC, ST and ex-servicemen",
+    "शुल्क",
+    "₹100; महिला, SC, ST और पूर्व सैनिकों के लिए निःशुल्क"
+   ],
+   [
+    "Selection",
+    "Computer-based exam, physical tests (PE&MT), medical",
+    "चयन",
+    "कंप्यूटर आधारित परीक्षा, शारीरिक परीक्षा (PE&MT), मेडिकल"
+   ]
+  ]
  }
 ]
