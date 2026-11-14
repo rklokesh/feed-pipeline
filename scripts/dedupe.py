@@ -69,7 +69,7 @@ def main() -> None:
     text = rf.read_text() if rf.exists() else ""
     if START in text:
         text = text[:text.index(START)].rstrip("\n") + "\n" + text[text.index(END) + len(END):].lstrip("\n")
-    block = [START] + [f"{L}/notice/{a}{s} {L}/notice/{b}/ 301" for a, b in sorted(redirects) for L in ("", "/hi") for s in ("", "/", "/*")] + [END]
+    block = [START] + [f"{L}/notice/{a}{s} {L}/notice/{b}/ 301" for a, b in sorted(redirects) for L in ("", "/hi") for s in ("", "/")]   # no "/*" rules: Cloudflare ignores wildcard rules past the first 100 + [END]
     rf.write_text(text.rstrip("\n") + "\n" + "\n".join(block) + "\n")
     print(f"dedupe: {changed} newly merged, {len(redirects)} old addresses redirect")
 
