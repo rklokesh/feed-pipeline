@@ -1,0 +1,34 @@
+{
+  "board_url": "https://uppbpb.gov.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "post_names": {
+      "evidence": {
+        "post_names": "उप निरी०क नाग०रक पुलिस, पीएसी ०लाटून कमा०डर एवं अि०नशमन ि०तीय अिधकारी के पद० पर सीधी भत०-2020-21"
+      },
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "उप निरीक्षक नागरिक पुलिस",
+        "पीएसी प्लाटून कमाण्डर",
+        "अग्निशमन द्वितीय अधिकारी"
+      ]
+    }
+  },
+  "first_seen": "2026-11-14T10:29:54+00:00",
+  "id": "5c178be7b2c5",
+  "kind": "notification",
+  "org": "UP Police",
+  "pdf": {
+    "bytes": 927188,
+    "pages": 7,
+    "sha256": "e5b43eaf98ddb90e4da05991db1b8c8ce7e0a60a416291c3e15310aa18734359",
+    "text_kind": "text"
+  },
+  "source_id": "uppbpb-home",
+  "status": "pending_review",
+  "title": "LATEST NOTICE: उप निरीक्षक नागरिक पुलिस, पीएसी प्लाटून कमाण्डर एवं अग्निशमन द्वितीय अधिकारी के पदों पर सीधी भर्ती-2020-21 विशेष अपील संख्या: 651/2026 में मा० उच्च न्यायालय, इलाहाबाद द्वारा पारित निर्णय /आदेश दिनांकित 01-09-2026 (सम्बन्धित रिट याचिका ए- संख्या: 11427/2022 में पारित आदेश दिनांकित 29-0",
+  "url": "https://uppbpb.gov.in/FilesUploaded/Notice/Final_with_Notice_List_1_2_SI_2020_213d48b1b7-79ed-4c56-ac69-f1072e647331.pdf"
+}
