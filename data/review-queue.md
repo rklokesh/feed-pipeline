@@ -1,9 +1,10 @@
-# Review queue — 5 pending
+# Review queue — 6 pending
 
-_Updated 2026-11-14T13:34:11+00:00_
+_Updated 2026-11-14T14:05:48+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-14 | NTA | notification | Inviting Online Applications for SHRESHTA (NETS) – 2027 Read More | — | — | — | — | [open](https://nta.ac.in/Download/Notice/Notice_20261114192445.pdf) |
 | 2026-11-14 | NTA | update | Extension of Registration Dates for the National Institute of Fashion Technology Entrance  | — | — | — | — | [open](https://nta.ac.in/Download/Notice/Notice_20261114165715.pdf) |
 | 2026-11-14 | MPPSC | other | आंतरिक लेखा परीक्षण अधिकारी - 2026 के रिक्त पद हेतु उम्मीदवारी निरस्‍त किए जाने संबंधी सूच | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Candidature_Rejection_Internal_Accounts_Examiner_Officer_2026_Dated_14_11_2026.pdf) |
 | 2026-11-14 | MPPSC | other | विशेषज्ञ आयुर्वेद - 2024 के पद हेतु साक्षात्‍कार आयोजन संबंधी सूचना, दिनांक 14/11/2026 | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Specialist_Ayurved_2024_Dated_14_11_2026.pdf) |
