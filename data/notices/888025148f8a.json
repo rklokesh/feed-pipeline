@@ -1,5 +1,23 @@
 {
+  "auto_published": true,
   "board_url": "https://rrb.indianrailways.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-23",
+    "last_date": null,
+    "list": true,
+    "posts": "Paramedical Category",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "RRB has released the exam city intimation slip and travel authority link for the Paramedical Category computer-based test scheduled on 23.11.2026 and 25.11.2026. Candidates should check their exam city and ensure Aadhaar authentication is ready.",
+    "summary_hi": "रेलवे ने 23.11.2026 और 25.11.2026 को होने वाली पैरामेडिकल श्रेणी कंप्यूटर आधारित परीक्षा के लिए परीक्षा शहर सूचना पर्ची और यात्रा प्राधिकार लिंक जारी कर दिया है। उम्मीदवार अपने परीक्षा शहर की जांच करें और आधार प्रमाणीकरण सुनिश्चित करें।",
+    "title_en": "RRB Paramedical Category Exam City Intimation Notice 2026",
+    "title_hi": "रेलवे पैरामेडिकल श्रेणी परीक्षा शहर सूचना नोटिस 2026",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -69,16 +87,242 @@
   },
   "first_seen": "2026-11-14T05:29:35+00:00",
   "id": "888025148f8a",
+  "issue": 1277,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-13",
   "org": "RRB",
+  "page": {
+    "after_en": [
+      "Download E-Call letter 4 days prior to the exam date.",
+      "Appear for the Computer Based Test on the scheduled date with mandatory identity proofs and Aadhaar authentication."
+    ],
+    "after_hi": [
+      "परीक्षा तिथि से 4 दिन पहले ई-कॉल लेटर डाउनलोड करें।",
+      "अनिवार्य पहचान प्रमाण और आधार प्रमाणीकरण के साथ निर्धारित तिथि पर कंप्यूटर आधारित परीक्षा में उपस्थित हों।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://rrb.indianrailways.gov.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check exam city and date on the official RRB website.",
+      "Ensure Aadhaar biometrics and details are up to date and unlocked in UIDAI.",
+      "Keep helpdesk contact handy for queries."
+    ],
+    "checklist_hi": [
+      "आधिकारिक रेलवे भर्ती बोर्ड वेबसाइट पर परीक्षा शहर और तिथि की जांच करें।",
+      "सुनिश्चित करें कि यूआईडीएआई में आधार बायोमेट्रिक और विवरण अद्यतन और अनलॉक हैं।",
+      "पूछताछ के लिए हेल्पडेस्क संपर्क तैयार रखें।"
+    ],
+    "conducted_by_en": "Railway Recruitment Boards (RRB)",
+    "conducted_by_hi": "रेलवे भर्ती बोर्ड (RRB)",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस की तारीख",
+        "value_en": "13 Nov 2026",
+        "value_hi": "13 नव 2026"
+      },
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा की तारीख",
+        "value_en": "23 Nov 2026 and 25 Nov 2026",
+        "value_hi": "23 नव 2026 और 25 नव 2026"
+      },
+      {
+        "label_en": "E-Call Letter Download",
+        "label_hi": "ई-कॉल लेटर डाउनलोड",
+        "value_en": "4 days prior to exam date (tentative)",
+        "value_hi": "परीक्षा तिथि से 4 दिन पहले (संभावित)"
+      }
+    ],
+    "documents_en": [
+      "Original Aadhaar Card or printout of e-verified Aadhaar",
+      "E-Call Letter",
+      "Travel Authority (for SC/ST candidates)"
+    ],
+    "documents_hi": [
+      "मूल आधार कार्ड या ई-सत्यापित आधार का प्रिंटआउट",
+      "ई-कॉल लेटर",
+      "यात्रा प्राधिकार (एससी/एसटी उम्मीदवारों के लिए)"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-11-23",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is an advance intimation slip issued by Railway Recruitment Boards informing candidates about their exam city and date for the upcoming Computer Based Test under CEN No. 05/2026, allowing them to plan their travel.",
+        "a_hi": "यह रेलवे भर्ती बोर्ड द्वारा जारी एक अग्रिम सूचना पर्ची है जो उम्मीदवारों को CEN No. 05/2026 के तहत आगामी कंप्यूटर आधारित परीक्षा के लिए उनके परीक्षा शहर और तारीख के बारे में सूचित करती है, जिससे वे अपनी यात्रा की योजना बना सकें।",
+        "q_en": "What is RRB Paramedical Category Exam City Intimation?",
+        "q_hi": "रेलवे पैरामेडिकल श्रेणी परीक्षा शहर सूचना क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Helpdesk Number",
+        "label_hi": "हेल्पलाइन नंबर",
+        "value_en": "7353921119 (Monday to Saturday, 09:00 AM to 06:00 PM)",
+        "value_hi": "7353921119 (सोमवार से शनिवार, सुबह 09:00 बजे से शाम 06:00 बजे तक)"
+      },
+      {
+        "label_en": "ID Requirement",
+        "label_hi": "पहचान पत्र आवश्यकता",
+        "value_en": "Original Aadhaar Card or printout of e-verified Aadhaar",
+        "value_hi": "मूल आधार कार्ड या ई-सत्यापित आधार का प्रिंटआउट"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The Computer Based Test is scheduled on 23.11.2026 and 25.11.2026.",
+        "a_hi": "कंप्यूटर आधारित परीक्षा 23.11.2026 और 25.11.2026 को निर्धारित है।",
+        "q_en": "When is the RRB Paramedical Category CBT scheduled?",
+        "q_hi": "रेलवे पैरामेडिकल श्रेणी सीबीटी कब निर्धारित है?"
+      },
+      {
+        "a_en": "You can view your exam city by logging into the official websites of RRBs using your credentials.",
+        "a_hi": "आप अपने क्रेडेंशियल्स का उपयोग करके रेलवे भर्ती बोर्ड की आधिकारिक वेबसाइटों पर लॉगिन करके अपना परीक्षा शहर देख सकते हैं।",
+        "q_en": "How can I check my exam city for CEN 05/2026?",
+        "q_hi": "मैं CEN 05/2026 के लिए अपना परीक्षा शहर कैसे देख सकता हूं?"
+      },
+      {
+        "a_en": "E-Call letters will be available for download 4 days prior to the exam dates mentioned in the city intimation link.",
+        "a_hi": "शहर सूचना लिंक में उल्लिखित परीक्षा तिथियों से 4 दिन पहले ई-कॉल लेटर डाउनलोड के लिए उपलब्ध होंगे।",
+        "q_en": "When will the E-Call letters be available for download?",
+        "q_hi": "ई-कॉल लेटर डाउनलोड के लिए कब उपलब्ध होंगे?"
+      },
+      {
+        "a_en": "Candidates must bring their original Aadhaar Card or printout of e-verified Aadhaar for biometric authentication.",
+        "a_hi": "उम्मीदवारों को बायोमेट्रिक प्रमाणीकरण के लिए अपना मूल आधार कार्ड या ई-सत्यापित आधार का प्रिंटआउटलाना होगा।",
+        "q_en": "What ID proof is mandatory for the exam?",
+        "q_hi": "परीक्षा के लिए कौन सा आईडी प्रमाण अनिवार्य है?"
+      },
+      {
+        "a_en": "The helpdesk contact number is 7353921119, operational from Monday to Saturday between 09:00 am and 06:00 pm.",
+        "a_hi": "हेल्पडेस्क संपर्क नंबर 7353921119 है, जो सोमवार से शनिवार सुबह 09:00 बजे से शाम 06:00 बजे तक चालू रहता है।",
+        "q_en": "What is the helpdesk number for RRB CEN 05/2026?",
+        "q_hi": "RRB CEN 05/2026 के लिए हेल्पडेस्क नंबर क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "RRB Paramedical Category Exam City Intimation Notice 2026",
+    "h1_hi": "रेलवे पैरामेडिकल श्रेणी परीक्षा शहर सूचना नोटिस 2026",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official website of your respective RRB.",
+      "Click on the link for viewing Exam City & Date and downloading Travel Authority for CEN No. 05/2026.",
+      "Log in using your credentials to view the exam city details.",
+      "Complete Aadhaar authentication at www.rrbapply.gov.in if not done already."
+    ],
+    "how_hi": [
+      "अपने संबंधित रेलवे भर्ती बोर्ड की आधिकारिक वेबसाइट पर जाएं।",
+      "CEN No. 05/2026 के लिए परीक्षा शहर और तिथि देखने तथा यात्रा प्राधिकार डाउनलोड करने के लिंक पर क्लिक करें।",
+      "परीक्षा शहर का विवरण देखने के लिए अपने क्रेडेंशियल का उपयोग करके लॉगिन करें।",
+      "यदि पहले नहीं किया गया है, तो www.rrbapply.gov.in पर आधार प्रमाणीकरण पूरा करें।"
+    ],
+    "intro_en": "Railway Recruitment Boards (RRB) has released the exam city intimation notice for CEN No. 05/2026 Paramedical Category recruitment computer-based test. The examinations are scheduled to be held on 23.11.2026 and 25.11.2026. Candidates can view their exam city and date, and download the travel authority for SC/ST candidates through the official website link. Candidates are also advised to ensure their Aadhaar linked biometric authentication is ready before the exam day.",
+    "intro_hi": "रेलवे भर्ती बोर्ड (RRB) ने CEN No. 05/2026 पैरामेडिकल श्रेणी भर्ती कंप्यूटर आधारित परीक्षा के लिए परीक्षा शहर सूचना नोटिस जारी कर दिया है। परीक्षाएं 23.11.2026 और 25.11.2026 को आयोजित होने वाली हैं। उम्मीदवार आधिकारिक वेबसाइट लिंक के माध्यम से अपने परीक्षा शहर और तारीख की जांच कर सकते हैं और एससी/एसटी उम्मीदवारों के लिए यात्रा प्राधिकार डाउनलोड कर सकते हैं। उम्मीदवारों को परीक्षा के दिन से पहले अपना आधार लिंक्ड बायोमेट्रिक प्रमाणीकरण तैयार रखने की भी सलाह दी जाती है।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not keep Aadhaar in locked condition in the UIDAI system.",
+      "Ensure Aadhaar details match with 10th class certificate (name, date of birth, etc.).",
+      "Do not rely on unauthenticated sources for recruitment updates."
+    ],
+    "mistakes_hi": [
+      "यूआईडीएआई सिस्टम में आधार को लॉक स्थिति में न रखें।",
+      "सुनिश्चित करें कि आधार विवरण 10वीं कक्षा के प्रमाण पत्र से मेल खाता हो (नाम, जन्म तिथि, आदि)।",
+      "भर्ती अपडेट के लिए अप्रमाणित स्रोतों पर भरोसा न करें।"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-13",
+    "official_site": "https://rrb.indianrailways.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "CEN No. 05/2026",
+        "value_hi": "CEN No. 05/2026"
+      },
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Paramedical Category",
+        "value_hi": "पैरामेडिकल श्रेणी"
+      },
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा की तारीख",
+        "value_en": "23.11.2026 and 25.11.2026",
+        "value_hi": "23.11.2026 और 25.11.2026"
+      },
+      {
+        "label_en": "City Intimation Link",
+        "label_hi": "शहर सूचना लिंक",
+        "value_en": "Live on official RRB websites",
+        "value_hi": "सभी रेलवे भर्ती बोर्ड की आधिकारिक वेबसाइटों पर लाइव"
+      },
+      {
+        "label_en": "Admit Card Download",
+        "label_hi": "एडमिट कार्ड डाउनलोड",
+        "value_en": "4 days prior to exam date",
+        "value_hi": "परीक्षा तिथि से 4 दिन पहले"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Computer Based Test (CBT)",
+      "Document Verification / Medical Examination"
+    ],
+    "selection_hi": [
+      "कंप्यूटर आधारित परीक्षा (CBT)",
+      "दस्तावेज़ सत्यापन / चिकित्सा परीक्षा"
+    ],
+    "share_card": {
+      "headline_en": "Exam City Notice 2026",
+      "headline_hi": "परीक्षा शहर नोटिस 2026",
+      "kind": "admit",
+      "line_en": "Paramedical Category CBT",
+      "line_hi": "पैरामेडिकल श्रेणी सीबीटी",
+      "posts": null
+    },
+    "status_en": "Exam city intimation slip and travel authority link released",
+    "status_hi": "परीक्षा शहर सूचना पर्ची और यात्रा प्राधिकार लिंक जारी कर दिया गया है",
+    "summary_en": "RRB has released the exam city intimation slip and travel authority link for the Paramedical Category computer-based test scheduled on 23.11.2026 and 25.11.2026. Candidates should check their exam city and ensure Aadhaar authentication is ready.",
+    "summary_hi": "रेलवे ने 23.11.2026 और 25.11.2026 को होने वाली पैरामेडिकल श्रेणी कंप्यूटर आधारित परीक्षा के लिए परीक्षा शहर सूचना पर्ची और यात्रा प्राधिकार लिंक जारी कर दिया है। उम्मीदवार अपने परीक्षा शहर की जांच करें और आधार प्रमाणीकरण सुनिश्चित करें।",
+    "vacancies": [
+      {
+        "detail_en": "Various posts under Paramedical Category",
+        "detail_hi": "पैरामेडिकल श्रेणी के तहत विभिन्न पद",
+        "post_en": "Paramedical Category",
+        "post_hi": "पैरामेडिकल श्रेणी",
+        "total": null
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates who applied for RRB CEN No. 05/2026 Paramedical Category recruitment."
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जिन्होंने रेलवे भर्ती बोर्ड CEN No. 05/2026 पैरामेडिकल श्रेणी भर्ती के लिए आवेदन किया है।"
+    ]
+  },
   "pdf": {
     "bytes": 173840,
     "pages": 1,
     "sha256": "732abd3f841b0c2d82d97692e53e916b82853dbbccc0080e5fef5331022675f2",
     "text_kind": "text"
   },
+  "published_at": "2026-11-14T05:33:08Z",
+  "qual": [
+    "graduate"
+  ],
+  "slug": "rrb-paramedical-category-exam-city-intimation-notice-2026",
   "source_id": "rrb-unified",
-  "status": "pending_review",
+  "status": "approved",
   "title": "RRB CEN 05/2026: City Intimation Notice 05 2026 English",
   "url": "https://rrb.indianrailways.gov.in/-/image/1794633983175City_Intimation_Notice_05_2026_English.pdf/examsDocuments"
 }
