@@ -128,6 +128,11 @@ h1 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; text-wrap: b
 .doit .btn.pri:hover { opacity: .9; background: var(--ink); }
 .doit .btn[hidden] { display: none; }
 @media print { .doit { display: none !important; } }
+.walert { margin: 2px auto 0; text-align: center; font-size: .9375rem; }
+.walert a { color: #1a7f45; font-weight: 500; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+:root[data-theme="dark"] .walert a { color: #5fd38d; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .walert a { color: #5fd38d; } }
+@media print { .walert { display: none !important; } }
 .note { display: grid; gap: 18px; max-width: 46rem; }
 .actions { row-gap: 12px !important; column-gap: 28px !important; }
 .actions .act { display: inline-flex; align-items: center; gap: 6px; }
