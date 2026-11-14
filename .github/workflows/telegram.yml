@@ -10,6 +10,12 @@ on:
       test:
         description: "Send a test message only (true/false)"
         default: "false"
+      facebook_status:
+        description: "Facebook only: check the page token, post nothing (true/false)"
+        default: "false"
+      facebook_test:
+        description: "Facebook only: post one sample notice (true/false)"
+        default: "false"
       whatsapp_status:
         description: "WhatsApp only: check the Whapi connection, post nothing (true/false)"
         default: "false"
@@ -42,9 +48,17 @@ jobs:
       - name: Post
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-        if: inputs.whatsapp_test != 'true' && inputs.whatsapp_status != 'true'
+        if: inputs.whatsapp_test != 'true' && inputs.whatsapp_status != 'true' && inputs.facebook_test != 'true' && inputs.facebook_status != 'true'
         run: python scripts/telegram.py ${{ inputs.test == 'true' && '--test' || '' }}
+      - name: Post to Facebook page
+        continue-on-error: true   # Facebook trouble must never stop the others
+        if: inputs.whatsapp_test != 'true' && inputs.whatsapp_status != 'true'
+        env:
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+        run: python scripts/facebook.py ${{ inputs.facebook_status == 'true' && '--status' || '' }} ${{ inputs.facebook_test == 'true' && '--test' || '' }}
       - name: Post to WhatsApp channel
+        if: inputs.facebook_test != 'true' && inputs.facebook_status != 'true'
         continue-on-error: true   # WhatsApp trouble must never stop Telegram
         env:
           WHAPI_TOKEN: ${{ secrets.WHAPI_TOKEN }}
@@ -55,7 +69,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/telegram.json 2>/dev/null || true
           git add reports/telegram.txt 2>/dev/null || true
-          git add data/whatsapp.json reports/whatsapp.txt 2>/dev/null || true
+          git add data/whatsapp.json reports/whatsapp.txt data/facebook.json reports/facebook.txt 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git commit -m "Telegram/WhatsApp: posted $(date -u +%Y-%m-%dT%H:%MZ)"
           for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 6; done
