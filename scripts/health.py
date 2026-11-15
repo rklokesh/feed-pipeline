@@ -38,6 +38,37 @@ def ago(t):
     return f"{int(h * 60)} min ago" if h < 1 else f"{h:.0f} h ago" if h < 48 else f"{h / 24:.0f} days ago"
 
 
+BIG = ["ssc-notice-board", "upsc-whats-new", "rrb-unified", "uppbpb-home", "upsssc-home", "uppsc-home", "csbc-home", "bpsc-home",
+       "bssc-home", "hssc-notices", "hssc-adverts", "rssb-home", "rpsc-home", "dsssb-home", "ctet-home", "nta-home", "ibps-home",
+       "sbi-careers", "mpesb-home", "mppsc-home", "ukpsc-home", "ukssc-home", "jssc-home"]
+
+
+def quiet_boards(sources, health, notices):
+    """Big boards that have gone silent much longer than they usually do, or load with no notice links at all."""
+    by_id = {s["id"]: s for s in sources}
+    out = []
+    for sid in BIG:
+        s = by_id.get(sid)
+        if not s or not s.get("enabled", True):
+            continue
+        h = health.get(sid, {})
+        name = f"{s.get('org')} ({sid})"
+        if h and not h.get("consecutive_failures") and not h.get("last_links"):
+            out.append(f"- {name}: the page loads but shows **no notice links** — the board likely changed its site")
+            continue
+        times = sorted(t for t in (ts(n.get("published_at") or n.get("first_seen")) for n in notices
+                                   if n.get("source_id") == sid and n.get("status") == "approved") if t)
+        if len(times) < 3:
+            continue
+        recent = [t for t in times if NOW - t < dt.timedelta(days=120)] or times[-6:]
+        gaps = sorted((b - a).total_seconds() / 86400 for a, b in zip(recent, recent[1:])) or [7]
+        typical = max(gaps[len(gaps) // 2], 2)
+        silent = (NOW - times[-1]).total_seconds() / 86400
+        if silent > max(14, 3 * typical):
+            out.append(f"- {name}: no new notice for **{silent:.0f} days** (usually every ~{typical:.0f} days) — check its site")
+    return out
+
+
 def main():
     sources = yaml.safe_load((ROOT / "sources/sources.yaml").read_text())
     sources = sources["sources"] if isinstance(sources, dict) else sources
@@ -71,7 +102,11 @@ def main():
           ("⚠️ Mac mini has NOT checked in for " + (ago(india_last) if india_last else "a long time") +
            " — is it on, awake and logged in? India boards are paused until it is.")
     day = NOW.astimezone(IST).strftime("%a %d %b %Y")
-    lines = [f"## Daily health — {day}", "", mac, "",
+    quiet = quiet_boards(sources, health, notices)
+    lines = [f"## Daily health — {day}", "", mac, ""]
+    if quiet:
+        lines += ["### ⚠️ Big boards that need a look"] + quiet + [""]
+    lines += [
              f"**Live on the site:** {total_live} notices · **went live in the last 24 h:** {len(live24)} · "
              f"**waiting for you (low-confidence):** {len(waiting)}", ""]
     if live24:
