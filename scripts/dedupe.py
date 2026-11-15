@@ -68,8 +68,15 @@ def main() -> None:
     rf = SITE / "_redirects"
     text = rf.read_text() if rf.exists() else ""
     if START in text:
-        text = text[:text.index(START)].rstrip("\n") + "\n" + text[text.index(END) + len(END):].lstrip("\n")
-    block = [START] + [f"{L}/notice/{a}{s} {L}/notice/{b}/ 301" for a, b in sorted(redirects) for L in ("", "/hi") for s in ("", "/")]   # no "/*" rules: Cloudflare ignores wildcard rules past the first 100 + [END]
+        a_ = text.index(START)
+        if END in text:
+            b_ = text.index(END) + len(END)
+        else:   # end marker lost: the block runs to the next "# " section or the end of the file
+            nxt = text.find("\n# ", a_ + len(START))
+            b_ = nxt if nxt >= 0 else len(text)
+        text = text[:a_].rstrip("\n") + "\n" + text[b_:].lstrip("\n")
+    # no "/*" rules: Cloudflare ignores wildcard rules past the first 100
+    block = [START] + [f"{L}/notice/{a}{s} {L}/notice/{b}/ 301" for a, b in sorted(redirects) for L in ("", "/hi") for s in ("", "/")] + [END]
     rf.write_text(text.rstrip("\n") + "\n" + "\n".join(block) + "\n")
     print(f"dedupe: {changed} newly merged, {len(redirects)} old addresses redirect")
 
