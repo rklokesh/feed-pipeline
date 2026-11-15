@@ -1,9 +1,12 @@
-# Review queue — 6 pending
+# Review queue — 9 pending
 
-_Updated 2026-11-15T09:05:36+00:00_
+_Updated 2026-11-15T09:36:51+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-15 | UPSSSC | notification | विज्ञापन संख्या-01-परीक्षा/2024, भेषजिक (आयुर्वेदिक) मुख्य परीक्षा (प्रा०अ०प०-20... | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?viSrKKYPvDup5RrInD0wD7g2fj+C7xkAtIvgIPiHkgg=) |
+| 2026-11-15 | UPSSSC | notification | विज्ञापन संख्या-05-परीक्षा/2026, सहायक सांख्यिकीय अधिकारी / सहायक शोध अधिकारी (स... | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?viSrKKYPvDtwe7rXQmj509ApOnD6vpwheKciC0G8jNk=) |
+| 2026-11-15 | UPSSSC | notification | विज्ञापन संख्या-06-परीक्षा/2026, प्राविधिक सहायक ग्रुप-सी मुख्य परीक्षा (प्रा०अ०... | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?viSrKKYPvDsPHIxdRkEhea5E0gYFF6thFXnhz5TBpzQ=) |
 | 2026-11-14 | NTA | notification | Inviting Online Applications for SHRESHTA (NETS) – 2027 Read More | — | — | — | — | [open](https://nta.ac.in/Download/Notice/Notice_20261114192445.pdf) |
 | 2026-11-14 | NTA | update | Extension of Registration Dates for the National Institute of Fashion Technology Entrance  | — | — | — | — | [open](https://nta.ac.in/Download/Notice/Notice_20261114165715.pdf) |
 | 2026-11-14 | MPPSC | other | आंतरिक लेखा परीक्षण अधिकारी - 2026 के रिक्त पद हेतु उम्मीदवारी निरस्‍त किए जाने संबंधी सूच | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Candidature_Rejection_Internal_Accounts_Examiner_Officer_2026_Dated_14_11_2026.pdf) |
