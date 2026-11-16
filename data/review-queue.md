@@ -1,9 +1,10 @@
-# Review queue — 11 pending
+# Review queue — 12 pending
 
-_Updated 2026-11-16T04:37:09+00:00_
+_Updated 2026-11-16T05:07:14+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-16 | ESIC | result | 1 ईएसआईसी सुपर स्पेशलिटी अस्पताल, सनतनगर, हैदराबाद / ESIC Super Speciality Hospital, Sanat | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/Result_of_the_Walk_in_Interviews_conducted_on_13_11_2026_for_the_post_of_Visiting_Faculty_Professor_Department_of_Neuro_Surgery_vide_Advertisement_No_03_2026_1794805215.pdf) |
 | 2026-11-16 | ESIC | result | 2 ESIC Medical College and Hospital, Varanasi. Result of 05 of 2026 ESIC Medical College H | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/Result_of_05_of_2026_ESIC_Medical_College_Hospital_Varanasi_1794803289.pdf) |
 | 2026-11-16 | ESIC | result | 1 ESIC Medical College and Hospital Beltola, Guwahati, Assam RESULT OF THE WALK-IN-INTERVI | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/RESULT_OF_THE_WALK_IN_INTERVIEW_FOR_RECRUITMENT_TO_THE_POST_OF_SENIOR_RESIDENT_HELD_ON_20_01_2026_FOR_ESIC_MEDICAL_COLLEGE_amp_HOSPITAL_BELTOLA_GUWAHATI_1794803426.pdf) |
 | 2026-11-15 | UPSSSC | notification | विज्ञापन संख्या-01-परीक्षा/2024, भेषजिक (आयुर्वेदिक) मुख्य परीक्षा (प्रा०अ०प०-20... | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?viSrKKYPvDup5RrInD0wD7g2fj+C7xkAtIvgIPiHkgg=) |
