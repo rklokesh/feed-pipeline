@@ -1,9 +1,11 @@
-# Review queue — 9 pending
+# Review queue — 11 pending
 
-_Updated 2026-11-16T04:09:21+00:00_
+_Updated 2026-11-16T04:37:09+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-16 | ESIC | result | 2 ESIC Medical College and Hospital, Varanasi. Result of 05 of 2026 ESIC Medical College H | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/Result_of_05_of_2026_ESIC_Medical_College_Hospital_Varanasi_1794803289.pdf) |
+| 2026-11-16 | ESIC | result | 1 ESIC Medical College and Hospital Beltola, Guwahati, Assam RESULT OF THE WALK-IN-INTERVI | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/RESULT_OF_THE_WALK_IN_INTERVIEW_FOR_RECRUITMENT_TO_THE_POST_OF_SENIOR_RESIDENT_HELD_ON_20_01_2026_FOR_ESIC_MEDICAL_COLLEGE_amp_HOSPITAL_BELTOLA_GUWAHATI_1794803426.pdf) |
 | 2026-11-15 | UPSSSC | notification | विज्ञापन संख्या-01-परीक्षा/2024, भेषजिक (आयुर्वेदिक) मुख्य परीक्षा (प्रा०अ०प०-20... | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?viSrKKYPvDup5RrInD0wD7g2fj+C7xkAtIvgIPiHkgg=) |
 | 2026-11-15 | UPSSSC | notification | विज्ञापन संख्या-05-परीक्षा/2026, सहायक सांख्यिकीय अधिकारी / सहायक शोध अधिकारी (स... | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?viSrKKYPvDtwe7rXQmj509ApOnD6vpwheKciC0G8jNk=) |
 | 2026-11-15 | UPSSSC | notification | विज्ञापन संख्या-06-परीक्षा/2026, प्राविधिक सहायक ग्रुप-सी मुख्य परीक्षा (प्रा०अ०... | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?viSrKKYPvDsPHIxdRkEhea5E0gYFF6thFXnhz5TBpzQ=) |
