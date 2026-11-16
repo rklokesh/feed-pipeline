@@ -1,9 +1,11 @@
-# Review queue — 25 pending
+# Review queue — 27 pending
 
-_Updated 2026-11-16T16:17:25+00:00_
+_Updated 2026-11-16T16:47:31+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-16 | UPPSC | result | 1. RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) .. Visi | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq+2I4ea+ym87) |
+| 2026-11-16 | UPPSC | result | 16 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq8R3/HLrIFDx) |
 | 2026-11-16 | RPSC | other | 16/11/2026 Additional Provisional List for Eligibility Checking for Asst. Testing Officer  | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/Result/1260ACB959804E5BAF6E46A73EC33DEC.pdf) |
 | 2026-11-16 | UP Police | notification | LATEST NOTICE: उत्तर प्रदेश पुलिस में आरक्षी नागरिक पुलिस एवं समकक्ष पदों पर सीधी भर्ती-20 | — | — | — | — | [open](https://uppbpb.gov.in/FilesUploaded/Notice/CONST 25 VIGGYAPTI 16-11-2026e9f869c6-bb93-4210-acb5-e17dabd0d0c4.pdf) |
 | 2026-11-16 | MPPSC | other | सहायक प्राध्‍यापक (वनस्‍पति शास्‍त्र, प्राणी शास्‍त्र एवं कम्‍प्‍यूटर विज्ञान) परीक्षा 202 | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Corrigendum_AP_Botany_Zoology_Computer_Science_Exam_2025_Dated_16_11_2026.pdf) |
