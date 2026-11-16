@@ -1,9 +1,11 @@
-# Review queue — 23 pending
+# Review queue — 25 pending
 
-_Updated 2026-11-16T11:47:01+00:00_
+_Updated 2026-11-16T12:18:08+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-16 | RPSC | other | 16/11/2026 Additional Provisional List for Eligibility Checking for Asst. Testing Officer  | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/Result/1260ACB959804E5BAF6E46A73EC33DEC.pdf) |
+| 2026-11-16 | UP Police | notification | LATEST NOTICE: उत्तर प्रदेश पुलिस में आरक्षी नागरिक पुलिस एवं समकक्ष पदों पर सीधी भर्ती-20 | — | — | — | — | [open](https://uppbpb.gov.in/FilesUploaded/Notice/CONST 25 VIGGYAPTI 16-11-2026e9f869c6-bb93-4210-acb5-e17dabd0d0c4.pdf) |
 | 2026-11-16 | MPPSC | other | सहायक प्राध्‍यापक (वनस्‍पति शास्‍त्र, प्राणी शास्‍त्र एवं कम्‍प्‍यूटर विज्ञान) परीक्षा 202 | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Corrigendum_AP_Botany_Zoology_Computer_Science_Exam_2025_Dated_16_11_2026.pdf) |
 | 2026-11-16 | MPPSC | answer_key | Final Answer Key - Assistant District Public Prosecution Officer Exam 2026, Dated 16/11/20 | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/files/Final_Answer_Key_ADPPO_Exam_2026_Dated_16_11_2026.pdf) |
 | 2026-11-16 | HPSC | notification | Announcement dated 16.11.2026 - Recruitment for the posts of Assistant Professor (College  | — | — | — | — | [open](https://hpsc.gov.in/Portals/0/Ann_Inclus_Result_AP_History_16_11_2026.pdf) |
