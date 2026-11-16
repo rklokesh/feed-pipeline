@@ -1,9 +1,12 @@
-# Review queue — 12 pending
+# Review queue — 15 pending
 
-_Updated 2026-11-16T05:37:28+00:00_
+_Updated 2026-11-16T06:07:17+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-16 | MPPSC | other | संशाेेधित विज्ञप्ति - सहायक प्राध्‍यापक (भौतिकशास्‍त्र) परीक्षा - 2024 के पद हेतु साक्षात् | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_Physics_Exam_2024_Dated_16_11_2026.pdf) |
+| 2026-11-16 | MPPSC | other | संशोधित विज्ञप्ति - सहायक प्राध्‍यापक (अंग्रेजी) परीक्षा - 2024 के पद हेतु साक्षात्‍कार आय | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_English_Exam_2024_Dated_16_11_2026.pdf) |
+| 2026-11-16 | MPPSC | other | संशोधित विज्ञप्ति - सहायक संचालक / पशु चिकित्‍सा सहायक शल्‍यज्ञ / पशु चिकित्‍सा विस्‍तार अ | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Veterinary_Assistant_Surgeon_VEO_Exam_2026_Dated_16_11_20261.pdf) |
 | 2026-11-16 | ESIC | result | 1 ईएसआईसी सुपर स्पेशलिटी अस्पताल, सनतनगर, हैदराबाद / ESIC Super Speciality Hospital, Sanat | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/Result_of_the_Walk_in_Interviews_conducted_on_13_11_2026_for_the_post_of_Visiting_Faculty_Professor_Department_of_Neuro_Surgery_vide_Advertisement_No_03_2026_1794805215.pdf) |
 | 2026-11-16 | ESIC | result | 2 ESIC Medical College and Hospital, Varanasi. Result of 05 of 2026 ESIC Medical College H | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/Result_of_05_of_2026_ESIC_Medical_College_Hospital_Varanasi_1794803289.pdf) |
 | 2026-11-16 | ESIC | result | 1 ESIC Medical College and Hospital Beltola, Guwahati, Assam RESULT OF THE WALK-IN-INTERVI | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/RESULT_OF_THE_WALK_IN_INTERVIEW_FOR_RECRUITMENT_TO_THE_POST_OF_SENIOR_RESIDENT_HELD_ON_20_01_2026_FOR_ESIC_MEDICAL_COLLEGE_amp_HOSPITAL_BELTOLA_GUWAHATI_1794803426.pdf) |
