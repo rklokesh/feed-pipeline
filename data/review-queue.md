@@ -1,9 +1,10 @@
-# Review queue — 20 pending
+# Review queue — 21 pending
 
-_Updated 2026-11-16T09:38:51+00:00_
+_Updated 2026-11-16T10:09:08+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-16 | HPSC | notification | Announcement dated 16.11.2026 - Recruitment for the posts of Assistant Professor (College  | — | — | — | — | [open](https://hpsc.gov.in/Portals/0/Ann_Inclus_Result_AP_History_16_11_2026.pdf) |
 | 2026-11-16 | SSC | result | Sub-Inspector in Delhi Police and CAPFs Examination, 2025: Corrigendum to PET/PST Result p | — | — | — | — | [open](https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/corrigendum_16112026.pdf) |
 | 2026-11-16 | ESIC | notification | 1 Recruitment Branch NOTICE - Recruitment of Professors in ESIC PGIMSRS & ESIC Medical Col | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/NOTICE_Recruitment_of_Professors_in_ESIC_PGIMSRS_amp_ESIC_Medical_Colleges_on_direct_recruitment_basis_Advertisement_dated_19_05_2026_Rescheduling_of_Interviews_for_the_Specialties_of_Transfusion_Medicine_and_Emergency_Medicine_1794819555.pdf) |
 | 2026-11-16 | UKSSSC | other | Accessible Version : View (327 KB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/2026111375696386.pdf) |
