@@ -1,9 +1,11 @@
-# Review queue — 18 pending
+# Review queue — 20 pending
 
-_Updated 2026-11-16T08:37:39+00:00_
+_Updated 2026-11-16T09:07:47+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-16 | SSC | result | Sub-Inspector in Delhi Police and CAPFs Examination, 2025: Corrigendum to PET/PST Result p | — | — | — | — | [open](https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/corrigendum_16112026.pdf) |
+| 2026-11-16 | ESIC | notification | 1 Recruitment Branch NOTICE - Recruitment of Professors in ESIC PGIMSRS & ESIC Medical Col | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/NOTICE_Recruitment_of_Professors_in_ESIC_PGIMSRS_amp_ESIC_Medical_Colleges_on_direct_recruitment_basis_Advertisement_dated_19_05_2026_Rescheduling_of_Interviews_for_the_Specialties_of_Transfusion_Medicine_and_Emergency_Medicine_1794819555.pdf) |
 | 2026-11-16 | UKSSSC | other | Accessible Version : View (327 KB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/2026111375696386.pdf) |
 | 2026-11-16 | UKSSSC | other | Accessible Version : View (2 MB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/20261109327718160.pdf) |
 | 2026-11-16 | KVS | other | केंद्रीय विद्यालय संगठन में सहायक अनुभाग अधिकारी के वेतन स्तर-6 के 57 पदों के प्रत्यर्पण क | — | 45 | — | — | [open](https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111641.pdf) |

@@ -1,0 +1,48 @@
+{
+  "board_url": "https://www.esic.gov.in/recruitments",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "F.No.A-12011/1/2026-EXAM",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "F.No.A-12011/1/2026-EXAM"
+    },
+    "apply_url": {
+      "evidence": "Website :www.esic.gov.in",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "www.esic.gov.in"
+    },
+    "exam_date": {
+      "evidence": "of Labour & Employment, Govt of India) F.No.A-12011/1/2026-EXAM Dated: 16.11.2026 NOTICE Subject: Deferment of Interview for the post of Professor in Transfusion Medicine and Emergency Medicine in ESIC. In co",
+      "source": "rule",
+      "value": "2026-11-16"
+    },
+    "post_names": {
+      "evidence": "Deferment of Interview for the post of Professor in Transfusion Medicine and Emergency Medicine in ESIC.",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Professor in Transfusion Medicine",
+        "Professor in Emergency Medicine"
+      ]
+    }
+  },
+  "first_seen": "2026-11-16T09:05:03+00:00",
+  "id": "c786b3f3dcf8",
+  "kind": "notification",
+  "org": "ESIC",
+  "pdf": {
+    "bytes": 263877,
+    "pages": 1,
+    "sha256": "9a0cea63aa2f71c2ba34d4d061b0b76ad5fa3819b1f56a4dd6250ef083cf13a8",
+    "text_kind": "text"
+  },
+  "source_id": "esic-recruitment",
+  "status": "pending_review",
+  "title": "1 Recruitment Branch NOTICE - Recruitment of Professors in ESIC PGIMSRS & ESIC Medical Colleges on direct recruitment basis (Advertisement dated 19.05.2026)-Rescheduling of Interviews for the Specialties of Transfusion Medicine and Emergency Medicine- PDF size:(257.69 KB) . 2026-11-16 Interview(2026",
+  "url": "https://esic.gov.in/attachments/recruitmentfile/NOTICE_Recruitment_of_Professors_in_ESIC_PGIMSRS_amp_ESIC_Medical_Colleges_on_direct_recruitment_basis_Advertisement_dated_19_05_2026_Rescheduling_of_Interviews_for_the_Specialties_of_Transfusion_Medicine_and_Emergency_Medicine_1794819555.pdf"
+}
