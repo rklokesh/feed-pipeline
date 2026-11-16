@@ -1,9 +1,10 @@
-# Review queue — 15 pending
+# Review queue — 16 pending
 
-_Updated 2026-11-16T07:07:30+00:00_
+_Updated 2026-11-16T07:22:09+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-16 | KVS | other | केंद्रीय विद्यालय संगठन में सहायक अनुभाग अधिकारी के वेतन स्तर-6 के 57 पदों के प्रत्यर्पण क | — | 45 | — | — | [open](https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111641.pdf) |
 | 2026-11-16 | MPPSC | other | संशाेेधित विज्ञप्ति - सहायक प्राध्‍यापक (भौतिकशास्‍त्र) परीक्षा - 2024 के पद हेतु साक्षात् | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_Physics_Exam_2024_Dated_16_11_2026.pdf) |
 | 2026-11-16 | MPPSC | other | संशोधित विज्ञप्ति - सहायक प्राध्‍यापक (अंग्रेजी) परीक्षा - 2024 के पद हेतु साक्षात्‍कार आय | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_English_Exam_2024_Dated_16_11_2026.pdf) |
 | 2026-11-16 | MPPSC | other | संशोधित विज्ञप्ति - सहायक संचालक / पशु चिकित्‍सा सहायक शल्‍यज्ञ / पशु चिकित्‍सा विस्‍तार अ | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Veterinary_Assistant_Surgeon_VEO_Exam_2026_Dated_16_11_20261.pdf) |
