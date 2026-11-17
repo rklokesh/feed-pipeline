@@ -1,0 +1,32 @@
+{
+  "board_url": "https://www.mha.gov.in/en/notifications/vacancies",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_last": {
+      "evidence": "LPAI) on deputation/contract basis, it is informed that the last date for receiving of applications has been extended up to 30.11.2026. All other terms and conditions contained in the original advertisement shall r",
+      "source": "rule",
+      "value": "2026-11-30"
+    },
+    "apply_or_official_url": {
+      "evidence": "viii)I T Section, MHA for posting on the web-site of MHA at http://mha.gov.in at appropriate place. IMMEDIATE )BY SPEED POST F. No.2/3/2026-BM-II/ICp (CFN: 3",
+      "source": "rule",
+      "value": "http://mha.gov.in"
+    }
+  },
+  "first_seen": "2026-11-17T01:05:11+00:00",
+  "id": "485b3f024dc5",
+  "kind": "other",
+  "org": "MHA",
+  "pdf": {
+    "bytes": 3744025,
+    "pages": 10,
+    "sha256": "911d6d046caea7a600c80266eb494316919501ddf4b026f6711493c033106816",
+    "text_kind": "text"
+  },
+  "source_id": "mha-vacancies",
+  "status": "pending_review",
+  "title": "Appointment to the Post of Member (Finance) of the Land Ports Authority of India on Deputation Basis",
+  "url": "https://www.mha.gov.in/files/vacancies_documents/VacanciesLPI_12112026.pdf"
+}

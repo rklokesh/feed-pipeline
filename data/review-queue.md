@@ -1,9 +1,10 @@
-# Review queue — 27 pending
+# Review queue — 28 pending
 
-_Updated 2026-11-17T00:48:01+00:00_
+_Updated 2026-11-17T01:09:15+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-17 | MHA | other | Appointment to the Post of Member (Finance) of the Land Ports Authority of India on Deputa | 2026-11-30 | — | — | — | [open](https://www.mha.gov.in/files/vacancies_documents/VacanciesLPI_12112026.pdf) |
 | 2026-11-16 | UPPSC | result | 1. RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) .. Visi | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq+2I4ea+ym87) |
 | 2026-11-16 | UPPSC | result | 16 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq8R3/HLrIFDx) |
 | 2026-11-16 | RPSC | other | 16/11/2026 Additional Provisional List for Eligibility Checking for Asst. Testing Officer  | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/Result/1260ACB959804E5BAF6E46A73EC33DEC.pdf) |
