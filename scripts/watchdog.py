@@ -10,7 +10,26 @@ from health import IST, NOW, gh, ts
 LIMIT_H, QUIET_H = 2, 12
 
 
+def publishing() -> None:
+    """Publishing must not stop silently: alert if the last 2 'Prepare' runs failed, or nothing went live for 6 hours
+    while the Mac keeps finding new notices."""
+    from alert import send
+    runs = (gh("GET", "/actions/workflows/prepare.yml/runs", params={"status": "completed", "per_page": 6}) or {}).get("workflow_runs", [])
+    done = [r for r in runs if r.get("conclusion") in ("success", "failure")]
+    if len(done) >= 2 and all(r["conclusion"] == "failure" for r in done[:2]):
+        send("prepare-failing", "Publishing is failing: the last 2 'Prepare notices' runs crashed, so new notices are NOT going live.")
+        return
+    ok = [r for r in done if r["conclusion"] == "success"]
+    found = (gh("GET", "/actions/workflows/watch-india.yml/runs", params={"status": "success", "per_page": 1}) or {}).get("workflow_runs", [])
+    if ok and found and NOW - ts(ok[0]["updated_at"]) > dt.timedelta(hours=6) and NOW - ts(found[0]["updated_at"]) < dt.timedelta(hours=2):
+        send("prepare-stalled", "Nothing has been published for 6 hours although the Mac is checking the boards.")
+
+
 def main() -> None:
+    try:
+        publishing()
+    except Exception as e:   # the Mac check below must still run
+        print("publishing check failed:", e)
     runs = (gh("GET", "/actions/workflows/watch-india.yml/runs", params={"status": "success", "per_page": 1}) or {}).get("workflow_runs", [])
     last = ts(runs[0]["updated_at"]) if runs else None
     if last and NOW - last < dt.timedelta(hours=LIMIT_H):

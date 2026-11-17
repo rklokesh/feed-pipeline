@@ -1,0 +1,34 @@
+name: Safety check
+
+# After every change to code, templates or settings: run the whole publishing chain on a copy. If it breaks,
+# the owner gets a Telegram alert at once (instead of finding out days later that nothing is publishing).
+on:
+  push:
+    branches: [main]
+    paths: ["scripts/**", "templates/**", ".github/workflows/**", "site/_redirects", "sources/**", "data/exam_profiles.json", "requirements.txt"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Safety check
+        run: python scripts/selftest.py
+      - name: Alert the owner
+        if: failure()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          OWNER_CHAT_ID: ${{ secrets.OWNER_CHAT_ID }}
+        run: cd scripts && python alert.py safety-check "The latest change broke the publishing chain (safety check failed). New notices may stop going live until it is fixed."
