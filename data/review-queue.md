@@ -1,9 +1,27 @@
-# Review queue — 31 pending
+# Review queue — 49 pending
 
-_Updated 2026-11-17T06:48:05+00:00_
+_Updated 2026-11-17T16:25:02+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-17 | NTA | other | Advance Intimation of Examination City allotted to the applicants of the Rashtriya Indian  | — | — | — | — | [open](https://nta.ac.in/Download/Notice/Notice_20261117205801.pdf) |
+| 2026-11-17 | UPPSC | result | 2. LIST OF PROVISIONALLY SELECTED CANDIDATES IN ADVT. NO. A-5/E-1/2025, ASSISTANT .. Visib | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq5GDnL3/PIOE) |
+| 2026-11-17 | UPPSC | result | 1. LIST OF SELECTED CANDIDATES IN Advt. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTM.. Visi | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq1V5zwlKle8k) |
+| 2026-11-17 | UPPSC | result | 17 Dec 2026 LIST OF PROVISIONALLY SELECTED CANDIDATES IN ADVT. NO. A-5/E-1/2025, ASSISTANT | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq+ZDBcgQKxjJ) |
+| 2026-11-17 | SSC | other | Important Notice - Rescheduling of PET/PST dates of some candidates of SSC Constable (GD)  | — | — | — | — | [open](https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/noticectgd_17112026.pdf) |
+| 2026-11-17 | UPPSC | result | 16 Dec 2026 LIST OF SELECTED CANDIDATES IN Advt. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPAR | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq1b9+dbHbD9+) |
+| 2026-11-17 | SSC | other | Notice of Grade 'C' Stenographers Limited Departmental Competitive Examination, 2026 | 2026-12-08 | — | — | — | [open](https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_STENO-LDC_2026.pdf) |
+| 2026-11-17 | SSC | other | Advisory for Candidates regarding Aadhaar Data Updates and Biometric Authentication. | — | — | — | — | [open](https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/DFA_notice_17112026.pdf) |
+| 2026-11-17 | UPSC | result | Interview Schedule: Civil Services (Main) Examination, 2026 | — | — | — | — | [open](https://www.upsc.gov.in/whats-new/Civil%20Services%20%28Main%29%20Examination%2C%202026/Interview%20Schedule) |
+| 2026-11-17 | UKSSSC | other | Accessible Version : View (1 MB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/20261117534346549.pdf) |
+| 2026-11-17 | CRPF | notification | 1 Walk-in-interview for Contractual appointment of 19 Specialist Medical Officers for vari | — | 19 (AI) | None–70 (AI) | — | [open](https://rect.crpf.gov.in/Upload/Recruitment/Walk-in-interview_for_19_Specialist_Medical_Officers_337112026-567.pdf) |
+| 2026-11-17 | RSSB Rajasthan | other | 17-11-2026 - Junior Engineer (JEN) 2026 : Press Note regarding Department preference editi | — | — | — | — | [open](https://rssb.rajasthan.gov.in/storage/news_item/1794922507.pdf) |
+| 2026-11-17 | CRPF | update | 1 Corrigendum for Recruitment of Sub-Inspector (LDCE)Exam-2026 in CAPFs 16-Nov-2026 (274 K | — | — | — | — | [open](https://rect.crpf.gov.in/Upload/Recruitment/Recruitment_of_Sub-Inspector_LDCE_Exam-2026_in_CAPFs_336112026-497.pdf) |
+| 2026-11-17 | ESIC | notification | 1 ESIC Medical College & Hospital, Surat Walk in Interview for Recruitment of Teaching Fac | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/Walk_in_Interview_for_Recruitment_of_Teaching_Faculty_and_Senior_Residents_on_contract_basis_at_ESIC_Medical_College_amp_Hospital_Surat_Gujarat_1794914153.pdf) |
+| 2026-11-17 | UKSSSC | other | Accessible Version : View (1 MB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/202611171265583333.pdf) |
+| 2026-11-17 | ESIC | notification | 1 ESIC Medical College & Hospital, Surat Walk in Interview for Recruitment of Teaching Fac | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/Application_form_for_advertisement_1794914153.pdf) |
+| 2026-11-17 | UKSSSC | other | Accessible Version : View (340 KB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/202611171372213402.pdf) |
+| 2026-11-17 | ESIC | other | 2 ESIC MEDICAL COLLEGE AND HOSPITAL RAJAJI NAGAR BANGALORE Applications are invited for en | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/Applications_are_invited_for_engagement_of_Visiting_Part_Time_Lecturers_on_an_hourly_basis_at_ESIC_College_of_Nursing_Indiranagar_Bengaluru_for_the_academic_year_2026_27_1794899156.pdf) |
 | 2026-11-17 | RSSB Rajasthan | admit_card | 17-11-2026 - Common Eligibility Test(Senior Secondary Level) 2026 : Admit card issue date  | — | — | — | — | [open](https://rssb.rajasthan.gov.in/storage/news_item/1794893623.pdf) |
 | 2026-11-17 | CRPF | result | 1 List of 01 selected candidates on compassionate appointment in CRPF (Vacancy released on | — | — | — | — | [open](https://rect.crpf.gov.in/Upload/Recruitment/compassionate_appointment_on_16-11-2026-105.pdf) |
 | 2026-11-17 | ESIC | other | 1 Regional Office Mumbai "Walk in Interviews" for appointment of Contractual Part Time Spe | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/quot_Walk_in_Interviews_quot_for_appointment_of_Contractual_Part_Time_Specialist_Senior_Resident_and_Medical_Officer_on_Contract_basis_in_ESI_Society_Hospital_Mulund_1794892421.pdf) |

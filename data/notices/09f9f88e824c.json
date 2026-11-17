@@ -1,0 +1,28 @@
+{
+  "board_url": "https://www.upsc.gov.in/whats-new",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "rtly, which may be downloaded from the Commission’s Website https://www.upsc.gov.in and https://upsconline.nic.in. No request for change in the date and time of th",
+      "source": "rule",
+      "value": "https://www.upsc.gov.in"
+    }
+  },
+  "first_seen": "2026-11-17T16:17:35+00:00",
+  "id": "09f9f88e824c",
+  "kind": "result",
+  "org": "UPSC",
+  "pdf": {
+    "bytes": 1751279,
+    "pages": 103,
+    "sha256": "525b6dd259659386325fc3325d7ed4586fe6662b33245fa6302e427239fdacbd",
+    "text_kind": "text",
+    "via": "https://www.upsc.gov.in/sites/default/files/Intv-CSM-2026-Engl-171126.pdf"
+  },
+  "source_id": "upsc-whats-new",
+  "status": "pending_review",
+  "title": "Interview Schedule: Civil Services (Main) Examination, 2026",
+  "url": "https://www.upsc.gov.in/whats-new/Civil%20Services%20%28Main%29%20Examination%2C%202026/Interview%20Schedule"
+}

@@ -1,0 +1,27 @@
+{
+  "board_url": "https://www.esic.gov.in/recruitments",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest:ReadTimeout"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "26/2026 No.: 376/A/ESICH/SURAT/Recruitment/2026-Admin Date: Advertisement No.: 03 of 2026 Walk in Interview for Recruitment of Teaching Faculty and Senior Residents on c",
+      "source": "rule",
+      "value": "03 of 2026"
+    }
+  },
+  "first_seen": "2026-11-17T16:17:35+00:00",
+  "id": "a0051fd47cbb",
+  "kind": "notification",
+  "org": "ESIC",
+  "pdf": {
+    "bytes": 1106680,
+    "pages": 7,
+    "sha256": "e46cfb2a524ad997f29ca73a82b4f49fce3608c5fa12fe1ce3da52b7b630eff1",
+    "text_kind": "text"
+  },
+  "source_id": "esic-recruitment",
+  "status": "pending_review",
+  "title": "1 ESIC Medical College & Hospital, Surat Walk in Interview for Recruitment of Teaching Faculty and Senior Residents on contract basis at ESIC Medical College & Hospital, Surat (Gujarat)- PDF size:(1.06 MB) . Application form for advertisement - PDF size:(355.53 KB) . 2026-11-17 Interview (2026-11-25",
+  "url": "https://esic.gov.in/attachments/recruitmentfile/Walk_in_Interview_for_Recruitment_of_Teaching_Faculty_and_Senior_Residents_on_contract_basis_at_ESIC_Medical_College_amp_Hospital_Surat_Gujarat_1794914153.pdf"
+}

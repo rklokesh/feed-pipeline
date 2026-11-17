@@ -1,0 +1,32 @@
+{
+  "board_url": "https://ssc.gov.in/home/notice-board",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_last": {
+      "evidence": "submission of online 17.11.2026 applications to 08.12.2026 Last date and time for receipt of online 08.12.2026 applications (2300hours) Schedule of Computer Based Feb-Mar, 2027 Examination No. 4/12/2026-CONF-5",
+      "source": "rule",
+      "value": "2026-12-08"
+    },
+    "apply_or_official_url": {
+      "evidence": "(To be uploaded on the website of the Commission https://ssc.gov.in on 17.11.2026) भारत सरकार, Government of India, कार्मिक, लोकर्िकायत एवं पेंिन म",
+      "source": "rule",
+      "value": "https://ssc.gov.in"
+    }
+  },
+  "first_seen": "2026-11-17T16:25:02+00:00",
+  "id": "dd13684b84b4",
+  "kind": "other",
+  "org": "SSC",
+  "pdf": {
+    "bytes": 2370281,
+    "pages": 39,
+    "sha256": "7cd76e377ba0b4b909d32b0c7c731724dafd32d5cbd8af63a9fb5b0a6a60bf15",
+    "text_kind": "text"
+  },
+  "source_id": "ssc-notice-board",
+  "status": "pending_review",
+  "title": "Notice of Grade 'C' Stenographers Limited Departmental Competitive Examination, 2026",
+  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_STENO-LDC_2026.pdf"
+}
