@@ -1,9 +1,10 @@
-# Review queue — 55 pending
+# Review queue — 56 pending
 
-_Updated 2026-11-17T16:49:49+00:00_
+_Updated 2026-11-17T17:20:16+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-17 | RSSB Rajasthan | info | 13-11-2026 - Motor Vehicle Sub Inspector 2021 : Ammended Office Order Regarding Document V | — | — | — | — | [open](https://rssb.rajasthan.gov.in/storage/news_item/1794931032.pdf) |
 | 2026-11-17 | RPSC | result | 17/11/2026 Result Preamble for Asst. Prof. (Sanskrit College Edu.) - 2024 (Rigved) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/Result/DCE8738CB80A4A07BFB545B20F673126.pdf) |
 | 2026-11-17 | RPSC | result | 17/11/2026 Result Preamble for Asst. Prof. (Sanskrit College Edu.) - 2024 (Jyotish Falit) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/Result/EE669B0807B3478C80EDF245F17F2105.pdf) |
 | 2026-11-17 | RPSC | other | 17/11/2026 Question Paper for Protection Officer - 2025 (Paper-II) (Law) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/D39C13A8-504D-4F14-B40E-2AF4F6EA3EC6.pdf) |
