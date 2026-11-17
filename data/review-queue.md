@@ -1,9 +1,11 @@
-# Review queue — 56 pending
+# Review queue — 58 pending
 
-_Updated 2026-11-17T17:49:40+00:00_
+_Updated 2026-11-17T18:19:57+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-17 | UKSSSC | other | Accessible Version : View (6 MB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/20261117947374675.pdf) |
+| 2026-11-17 | UKSSSC | other | Accessible Version : View (366 KB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/20261117782938234.pdf) |
 | 2026-11-17 | RSSB Rajasthan | info | 13-11-2026 - Motor Vehicle Sub Inspector 2021 : Ammended Office Order Regarding Document V | — | — | — | — | [open](https://rssb.rajasthan.gov.in/storage/news_item/1794931032.pdf) |
 | 2026-11-17 | RPSC | result | 17/11/2026 Result Preamble for Asst. Prof. (Sanskrit College Edu.) - 2024 (Rigved) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/Result/DCE8738CB80A4A07BFB545B20F673126.pdf) |
 | 2026-11-17 | RPSC | result | 17/11/2026 Result Preamble for Asst. Prof. (Sanskrit College Edu.) - 2024 (Jyotish Falit) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/Result/EE669B0807B3478C80EDF245F17F2105.pdf) |
