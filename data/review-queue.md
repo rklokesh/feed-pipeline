@@ -1,9 +1,10 @@
-# Review queue — 30 pending
+# Review queue — 31 pending
 
-_Updated 2026-11-17T05:17:57+00:00_
+_Updated 2026-11-17T05:48:30+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-17 | RSSB Rajasthan | admit_card | 17-11-2026 - Common Eligibility Test(Senior Secondary Level) 2026 : Admit card issue date  | — | — | — | — | [open](https://rssb.rajasthan.gov.in/storage/news_item/1794893623.pdf) |
 | 2026-11-17 | CRPF | result | 1 List of 01 selected candidates on compassionate appointment in CRPF (Vacancy released on | — | — | — | — | [open](https://rect.crpf.gov.in/Upload/Recruitment/compassionate_appointment_on_16-11-2026-105.pdf) |
 | 2026-11-17 | ESIC | other | 1 Regional Office Mumbai "Walk in Interviews" for appointment of Contractual Part Time Spe | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/quot_Walk_in_Interviews_quot_for_appointment_of_Contractual_Part_Time_Specialist_Senior_Resident_and_Medical_Officer_on_Contract_basis_in_ESI_Society_Hospital_Mulund_1794892421.pdf) |
 | 2026-11-17 | MHA | other | Appointment to the Post of Member (Finance) of the Land Ports Authority of India on Deputa | 2026-11-30 | — | — | — | [open](https://www.mha.gov.in/files/vacancies_documents/VacanciesLPI_12112026.pdf) |
