@@ -1,9 +1,15 @@
-# Review queue — 49 pending
+# Review queue — 55 pending
 
-_Updated 2026-11-17T16:25:02+00:00_
+_Updated 2026-11-17T16:49:49+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-17 | RPSC | result | 17/11/2026 Result Preamble for Asst. Prof. (Sanskrit College Edu.) - 2024 (Rigved) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/Result/DCE8738CB80A4A07BFB545B20F673126.pdf) |
+| 2026-11-17 | RPSC | result | 17/11/2026 Result Preamble for Asst. Prof. (Sanskrit College Edu.) - 2024 (Jyotish Falit) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/Result/EE669B0807B3478C80EDF245F17F2105.pdf) |
+| 2026-11-17 | RPSC | other | 17/11/2026 Question Paper for Protection Officer - 2025 (Paper-II) (Law) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/D39C13A8-504D-4F14-B40E-2AF4F6EA3EC6.pdf) |
+| 2026-11-17 | RPSC | other | 17/11/2026 Question Paper for Protection Officer - 2025 (Paper-I) (G.K) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/39AEEF32-2A94-4AF7-BCD1-1F4B2EB5D1FE.pdf) |
+| 2026-11-17 | RPSC | other | 17/11/2026 Question Paper for Protection Officer - 2025 (Paper-II) (Social Work) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/1A5AEE48-A423-4A4E-A357-327F8E88916A.pdf) |
+| 2026-11-17 | RPSC | other | 17/11/2026 Additional Provisional List for Eligibility Checking for Agriculture Dept. Exam | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/Result/088BC0AEC1FD4A17BAD51F513827C864.pdf) |
 | 2026-11-17 | NTA | other | Advance Intimation of Examination City allotted to the applicants of the Rashtriya Indian  | — | — | — | — | [open](https://nta.ac.in/Download/Notice/Notice_20261117205801.pdf) |
 | 2026-11-17 | UPPSC | result | 2. LIST OF PROVISIONALLY SELECTED CANDIDATES IN ADVT. NO. A-5/E-1/2025, ASSISTANT .. Visib | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq5GDnL3/PIOE) |
 | 2026-11-17 | UPPSC | result | 1. LIST OF SELECTED CANDIDATES IN Advt. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTM.. Visi | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq1V5zwlKle8k) |
