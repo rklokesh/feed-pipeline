@@ -9,10 +9,10 @@
     "posts": "Teaching Faculty and Senior Residents",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
-    "summary_en": "Walk-in interview for recruitment of Teaching Faculty and Senior Residents on a contract basis at ESIC Medical College & Hospital, Naroda-Bapunagar, Ahmedabad. Download the application form and attend the interview.",
-    "summary_hi": "ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, नरोडा-बापुनगर, अहमदाबाद में अनुबंध के आधार पर शिक्षण संकाय और सीनियर रेजिडेंट के पदों पर भर्ती के लिए वॉक-इन इंटरव्यू। आवेदन पत्र डाउनलोड करें और इंटरव्यू में भाग लें।",
-    "title_en": "ESIC Medical College Ahmedabad Walk in Interview 2026 – Faculty Posts",
-    "title_hi": "ईएसआईसी मेडिकल कॉलेज अहमदाबाद वॉक इन इंटरव्यू 2026 – फैकल्टी पद",
+    "summary_en": "ESIC Medical College & Hospital, Naroda-Bapunagar has released the application form for contractual recruitment of Teaching Faculty and Senior Residents under Advt. No. 03/2026. Interested candidates must fill out the form and appear for the walk-in interview with required documents.",
+    "summary_hi": "ईएसआईसी मेडिकल कॉलेज एवं अस्पताल, नरोदा-बापूनगर ने विज्ञापन संख्या 03/2026 के तहत टीचिंग फैकल्टी और सीनियर रेजिडेंट पदों के लिए आवेदन पत्र जारी किया है। इच्छुक उम्मीदवार फॉर्म भरकर आवश्यक दस्तावेजों के साथ वॉक-इन इंटरव्यू में उपस्थित हों।",
+    "title_en": "ESIC Ahmedabad Faculty and Senior Resident Recruitment 2026",
+    "title_hi": "ईएसआईसी अहमदाबाद फैकल्टी और सीनियर रेजिडेंट भर्ती 2026",
     "type": "Job",
     "vacancies": null
   },
@@ -25,6 +25,7 @@
     "qual": "postgraduate",
     "relax": {}
   },
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -56,10 +57,14 @@
   "org": "ESIC",
   "page": {
     "after_en": [
-      "Selected candidates will be offered engagement as Teaching Faculty or Senior Residents on a contract basis at ESIC Medical College & Hospital, Ahmedabad."
+      "Appearance in walk-in interview",
+      "Document verification",
+      "Publication of final result and joining"
     ],
     "after_hi": [
-      "चयनित उम्मीदवारों को ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, अहमदाबाद में अनुबंध के आधार पर शिक्षण संकाय या सीनियर रेजिडेंट के रूप में नियुक्ति की पेशकश की जाएगी।"
+      "वॉक-इन इंटरव्यू में उपस्थिति",
+      "दस्तावेज़ सत्यापन",
+      "अंतिम परिणाम का प्रकाशन और ज्वाइनिंग"
     ],
     "age": [],
     "apply_start": null,
@@ -67,199 +72,188 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Ensure you have an active email ID and mobile number.",
-      "Fill out the application form clearly in capital letters.",
-      "Keep all original educational, experience, and registration documents ready along with self-attested photocopies.",
-      "Prepare the demand draft for the interview fee if applicable."
+      "Download and fill out the application form clearly",
+      "Keep the Demand Draft ready for the interview fee",
+      "Arrange all photocopies and original certificates as per the checklist",
+      "Ensure active email ID and mobile number are provided"
     ],
     "checklist_hi": [
-      "सुनिश्चित करें कि आपके पास एक सक्रिय ईमेल आईडी और मोबाइल नंबर है।",
-      "आवेदन पत्र को स्पष्ट रूप से कैपिटल अक्षरों में भरें।",
-      "स्व-प्रमाणित फोटोकॉपी के साथ सभी मूल शैक्षणिक, अनुभव और पंजीकरण दस्तावेज तैयार रखें।",
-      "यदि लागू हो तो साक्षात्कार शुल्क के लिए डिमांड ड्राफ्ट तैयार रखें।"
+      "आवेदन पत्र डाउनलोड करें और स्पष्ट रूप से भरें",
+      "साक्षात्कार शुल्क के लिए डिमांड ड्राफ्ट तैयार रखें",
+      "चेकलिस्ट के अनुसार सभी फोटोकॉपी और मूल प्रमाण पत्र व्यवस्थित करें",
+      "सुनिश्चित करें कि सक्रिय ईमेल आईडी और मोबाइल नंबर प्रदान किया गया है"
     ],
-    "conducted_by_en": "Employees' State Insurance Corporation (ESIC)",
-    "conducted_by_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईसी)",
+    "conducted_by_en": "Employees' State Insurance Corporation Medical College & Hospital, Naroda-Bapunagar, Ahmedabad (ESIC)",
+    "conducted_by_hi": "कर्मचारी राज्य बीमा निगम मेडिकल कॉलेज एवं अस्पताल, नरोदा-बापूनगर, अहमदाबाद (ईएसआईसी)",
     "dates": [],
     "documents_en": [
-      "Demand Draft of ₹500/- as Interview Fee, if applicable",
+      "Demand Draft of Rs. 500/- as Interview Fee (if applicable)",
       "Admit Card/ Certificate of Class 10th for Date of Birth",
-      "All Marks Sheets of MBBS",
+      "All Marks Sheets and Degree Certificate of MBBS",
       "Attempt Certificate of MBBS",
-      "Degree Certificate of MBBS",
-      "All Marks Sheets of MD/MS/DNB",
-      "Attempt Certificate of MD/MS/DNB Examination",
-      "Degree Certificate of MD/MS/DNB Examination",
+      "All Marks Sheets, Degree Certificate, and Attempt Certificate of MD/MS/DNB (if applicable)",
       "EWS/OBC/SC/ST Certificate, when applicable",
-      "NMC/ State Medical Council Registration Certificate (updated)",
+      "Updated NMC/ State Medical Council Registration Certificate",
       "Aadhaar Card",
-      "Proof of Publications, Certificate of Training, Attendance in the Conference/ Workshop/ Seminar, if any",
+      "Proof of Publications, Certificate of Training, Attendance in Conference/ Workshop/ Seminar, if any",
       "NOC from Current Employer, if applicable",
       "Relieving Certificate from previous Employer, if applicable",
       "Experience Certificate, if applicable"
     ],
     "documents_hi": [
-      "साक्षात्कार शुल्क के रूप में ₹500/- का डिमांड ड्राफ्ट, यदि लागू हो",
-      "जन्म तिथि के लिए कक्षा 10वीं का प्रवेश पत्र/प्रमाण पत्र",
-      "एमबीबीएस की सभी मार्कशीट",
-      "एमबीबीएस का प्रयास प्रमाण पत्र",
-      "एमबीबीएस की डिग्री प्रमाण पत्र",
-      "एमडी/एमएस/डीएनबी की सभी मार्कशीट",
-      "एमडी/एमएस/डीएनबी परीक्षा का प्रयास प्रमाण पत्र",
-      "एमडी/एमएस/डीएनबी परीक्षा की डिग्री प्रमाण पत्र",
-      "ईडब्ल्यूएस/ओबीसी/एससी/एसटी प्रमाण पत्र, जहां लागू हो",
-      "एनएमसी/राज्य मेडिकल काउंसिल पंजीकरण प्रमाण पत्र (अद्यतन)",
+      "साक्षात्कार शुल्क के रूप में 500 रुपये का डिमांड ड्राफ्ट (यदि लागू हो)",
+      "जन्म तिथि के लिए 10वीं कक्षा का एडमिट कार्ड/प्रमाण पत्र",
+      "एमबीबीएस की सभी अंक तालिकाएं और डिग्री प्रमाण पत्र",
+      "एमडी/एमएस/डीएनबी की सभी अंक तालिकाएं और प्रमाण पत्र",
+      "ईडब्ल्यूएस/ओबीसी/एससी/एसटी प्रमाण पत्र",
+      "अद्यतन एनएमसी/राज्य मेडिकल काउंसिल पंजीकरण प्रमाण पत्र",
       "आधार कार्ड",
-      "प्रकाशनों का प्रमाण, प्रशिक्षण प्रमाण पत्र, सम्मेलन/कार्यशाला/संग्राम में उपस्थिति, यदि कोई हो",
-      "वर्तमान नियोक्ता से अनापत्ति प्रमाण पत्र, यदि लागू हो",
-      "पिछले नियोक्ता से कार्यमुक्त प्रमाण पत्र, यदि लागू हो",
-      "अनुभव प्रमाण पत्र, यदि लागू हो"
+      "प्रकाशनों के प्रमाण, प्रशिक्षण प्रमाण पत्र",
+      "वर्तमान नियोक्ता से एनओसी",
+      "अनुभव प्रमाण पत्र"
     ],
     "eligibility": [
       {
         "label_en": "Education",
         "label_hi": "शिक्षा",
-        "value_en": "MBBS / MD / MS / DNB / PG Diploma / BDS / MDS or equivalent with relevant certificates",
-        "value_hi": "एमबीबीएस / एमडी / एमएस / डीएनबी / पीजी डिप्लोमा / बीडीएस / एमडीएस या समकक्ष प्रासंगिक प्रमाण पत्र के साथ"
+        "value_en": "MBBS / MD / MS / DNB / PG Diploma / BDS / MDS or equivalent with relevant experience",
+        "value_hi": "एमबीबीएस / एमडी / एमएस / डीएनबी / पीजी डिप्लोमा / बीडीएस / एमडीएस या समकक्ष अनुभव के साथ"
+      },
+      {
+        "label_en": "Registration",
+        "label_hi": "पंजीकरण",
+        "value_en": "Valid registration with NMC / State Medical Council / Dental Council of India / State Dental Council",
+        "value_hi": "एनएमसी / राज्य मेडिकल काउंसिल / भारतीय दंत परिषद / राज्य डेंटल काउंसिल के साथ वैध पंजीकरण"
       }
     ],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is a recruitment process conducted by ESIC to hire Teaching Faculty and Senior Residents on a contract basis at ESIC Medical College & Hospital, Naroda-Bapunagar, Ahmedabad, through a walk-in interview.",
-        "a_hi": "यह वॉक-इन इंटरव्यू के माध्यम से ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, नरोडा-बापुनगर, अहमदाबाद में अनुबंध के आधार पर शिक्षण संकाय और सीनियर रेजिडेंट को नियुक्त करने के लिए ईएसआईसी द्वारा आयोजित एक भर्ती प्रक्रिया है।",
-        "q_en": "What is the ESIC Medical College Ahmedabad Walk-in Interview?",
-        "q_hi": "ईएसआईसी मेडिकल कॉलेज अहमदाबाद वॉक-इन इंटरव्यू क्या है?"
+        "a_en": "It is a contractual recruitment process conducted by ESIC Medical College & Hospital, Naroda-Bapunagar, Ahmedabad to hire qualified medical professionals for Teaching Faculty and Senior Resident positions.",
+        "a_hi": "यह टीचिंग फैकल्टी और सीनियर रेजिडेंट पदों के लिए योग्य चिकित्सा पेशेवरों को नियुक्त करने के लिए ईएसआईसी मेडिकल कॉलेज और अस्पताल, नरोदा-बापूनगर, अहमदाबाद द्वारा आयोजित एक संविदा भर्ती प्रक्रिया है।",
+        "q_en": "What is ESIC Ahmedabad Faculty and Senior Resident Recruitment?",
+        "q_hi": "ईएसआईसी अहमदाबाद फैकल्टी और सीनियर रेजिडेंट भर्ती क्या है?"
       }
     ],
-    "extra": [
-      {
-        "label_en": "Mode of Interview",
-        "label_hi": "इंटरव्यू का माध्यम",
-        "value_en": "Offline",
-        "value_hi": "ऑफ़लाइन"
-      }
-    ],
+    "extra": [],
     "faq": [
       {
-        "a_en": "The posts available are Teaching Faculty and Senior Residents on a contract basis.",
-        "a_hi": "अनुबंध के आधार पर शिक्षण संकाय और सीनियर रेजिडेंट के पद उपलब्ध हैं।",
-        "q_en": "What are the posts available in ESIC Ahmedabad Recruitment 2026?",
-        "q_hi": "ईएसआईसी अहमदाबाद भर्ती 2026 में कौन से पद उपलब्ध हैं?"
+        "a_en": "The interview fee is ₹500 via Demand Draft, where applicable.",
+        "a_hi": "लागू होने पर डिमांड ड्राफ्ट के माध्यम से साक्षात्कार शुल्क ₹500 है।",
+        "q_en": "What is the application fee for ESIC Ahmedabad Recruitment?",
+        "q_hi": "ईएसआईसी अहमदाबाद भर्ती के लिए आवेदन शुल्क क्या है?"
       },
       {
-        "a_en": "The interview fee is ₹500/- payable via Demand Draft, if applicable.",
-        "a_hi": "साक्षात्कार शुल्क डिमांड ड्राफ्ट के माध्यम से ₹500/- है, यदि लागू हो।",
-        "q_en": "What is the interview fee for ESIC Ahmedabad Recruitment?",
-        "q_hi": "ईएसआईसी अहमदाबाद भर्ती के लिए साक्षात्कार शुल्क क्या है?"
-      },
-      {
-        "a_en": "You need to download the application form from the notification, fill it out completely in capital letters, attach the required documents and demand draft, and attend the walk-in interview.",
-        "a_hi": "आपको अधिसूचना से आवेदन पत्र डाउनलोड करना होगा, इसे कैपिटल अक्षरों में पूरी तरह से भरना होगा, आवश्यक दस्तावेज और डिमांड ड्राफ्ट संलग्न करना होगा और वॉक-इन इंटरव्यू में शामिल होना होगा।",
-        "q_en": "How can I apply for the ESIC Ahmedabad Teaching Faculty positions?",
-        "q_hi": "मैं ईएसआईसी अहमदाबाद शिक्षण संकाय पदों के लिए आवेदन कैसे कर सकता हूँ?"
+        "a_en": "Candidates need to download the application form, fill it in capital letters, attach necessary documents, and appear for the walk-in interview.",
+        "a_hi": "उम्मीदवारों को आवेदन पत्र डाउनलोड करना होगा, इसे बड़े अक्षरों में भरना होगा, आवश्यक दस्तावेज संलग्न करने होंगे और वॉक-इन इंटरव्यू में उपस्थित होना होगा।",
+        "q_en": "How to apply for ESIC Ahmedabad Faculty and Senior Resident posts?",
+        "q_hi": "ईएसआईसी अहमदाबाद फैकल्टी और सीनियर रेजिडेंट पदों के लिए आवेदन कैसे करें?"
       }
     ],
     "fees": [
       {
         "amount": "₹500",
-        "cat_en": "General / Interview Fee",
-        "cat_hi": "सामान्य / इंटरव्यू शुल्क"
+        "cat_en": "General / Others (Interview Fee)",
+        "cat_hi": "सामान्य / अन्य (इंटरव्यू शुल्क)"
       }
     ],
-    "h1_en": "ESIC Medical College Ahmedabad Walk in Interview 2026 – Faculty Posts",
-    "h1_hi": "ईएसआईसी मेडिकल कॉलेज अहमदाबाद वॉक इन इंटरव्यू 2026 – फैकल्टी पद",
+    "h1_en": "ESIC Ahmedabad Faculty and Senior Resident Recruitment 2026",
+    "h1_hi": "ईएसआईसी अहमदाबाद फैकल्टी और सीनियर रेजिडेंट भर्ती 2026",
     "hindi_notice_url": null,
     "how_en": [
-      "Download the application form and convert it to Word format if needed.",
-      "Fill in all details in capital letters using a clear, in-person approach.",
-      "Affix a recent color photograph with a neutral expression, full face, both ears, and neck visible, signed across.",
-      "Attach the required demand draft of ₹500 (if applicable) and self-attested copies of all necessary certificates.",
-      "Attend the walk-in interview with all original documents."
+      "Download the application form from the official website.",
+      "Fill out the application form clearly in CAPITAL letters in person.",
+      "Attach the required Demand Draft of ₹500 (if applicable) and self-attested photocopies of certificates.",
+      "Appear for the walk-in interview along with original documents."
     ],
     "how_hi": [
-      "आवेदन पत्र डाउनलोड करें और आवश्यकतानुसार इसे वर्ड फॉर्मेट में बदलें।",
-      "स्पष्ट और कैपिटल अक्षरों में सभी विवरण स्वयं भरें।",
-      "न्यूट्रल expresión, पूरा चेहरा, दोनों कान और गर्दन दिखाई देते हुए एक हालिया रंगीन फोटो चिपकाएं और उस पर हस्ताक्षर करें।",
-      "₹500 का आवश्यक डिमांड ड्राफ्ट (यदि लागू हो) और सभी आवश्यक प्रमाण पत्रों की स्व-प्रमाणित प्रतियां संलग्न करें।",
-      "सभी मूल दस्तावेजों के साथ वॉक-इन इंटरव्यू में शामिल हों।"
+      "आधिकारिक वेबसाइट से आवेदन पत्र डाउनलोड करें।",
+      "स्वयं स्पष्ट और बड़े अक्षरों में आवेदन पत्र भरें।",
+      "आवश्यक डिमांड ड्राफ्ट ₹500 (यदि लागू हो) और प्रमाण पत्रों की स्व-सत्यापित प्रतियां संलग्न करें।",
+      "मूल दस्तावेजों के साथ वॉक-इन इंटरव्यू में उपस्थित हों।"
     ],
-    "intro_en": "Employees' State Insurance Corporation (ESIC) has released the application form and notification for the recruitment of Teaching Faculty and Senior Residents on a contract basis at ESIC Medical College & Hospital, Naroda-Bapunagar, Ahmedabad (Gujarat). Interested candidates meeting the eligibility criteria can fill out the application form and attend the walk-in interview with the required documents and demand draft. Candidates must read the instructions carefully before filling out the form.",
-    "intro_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईसी) ने ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, नरोडा-बापुनगर, अहमदाबाद (गुजरात) में अनुबंध के आधार पर शिक्षण संकाय और सीनियर रेजिडेंट के पदों पर भर्ती के लिए आवेदन पत्र और अधिसूचना जारी की है। पात्रता मानदंडों को पूरा करने वाले इच्छुक उम्मीदवार आवेदन पत्र भर सकते हैं और आवश्यक दस्तावेजों तथा डिमांड ड्राफ्ट के साथ वॉक-इन इंटरव्यू में शामिल हो सकते हैं। उम्मीदवारों को फॉर्म भरने से पहले निर्देशों को ध्यान से पढ़ना चाहिए।",
+    "intro_en": "ESIC Medical College & Hospital, Naroda-Bapunagar, Ahmedabad has invited applications for the contractual recruitment of Teaching Faculty and Senior Residents under Advertisement No. 03/2026. Eligible candidates need to fill out the application form and attend the walk-in interview with all necessary certificates, demand draft, and supporting documents. Applicants must ensure they meet the medical qualification and registration requirements before appearing for the interview.",
+    "intro_hi": "ईएसआईसी मेडिकल कॉलेज एवं अस्पताल, नरोदा-बापूनगर, अहमदाबाद ने विज्ञापन संख्या 03/2026 के तहत टीचिंग फैकल्टी और सीनियर रेजिडेंट के संविदात्मक पदों पर भर्ती के लिए आवेदन आमंत्रित किए हैं। योग्य उम्मीदवारों को आवेदन पत्र भरकर सभी आवश्यक प्रमाण पत्र, डिमांड ड्राफ्ट और सहायक दस्तावेजों के साथ वॉक-इन इंटरव्यू में उपस्थित होना होगा।",
     "last_date": null,
     "mistakes_en": [
-      "Submitting incomplete application forms.",
-      "Filling forms in running handwriting instead of clear CAPITAL letters.",
-      "Using photographs where the face, ears, or neck are obscured or not matching the specifications."
+      "Submitting incomplete application forms",
+      "Not signing across the photograph",
+      "Failing to carry original documents during the interview"
     ],
     "mistakes_hi": [
-      "अधूरे आवेदन पत्र जमा करना।",
-      "स्पष्ट कैपिटल अक्षरों के बजाय रनिंग हैंडराइटिंग में फॉर्म भरना।",
-      "ऐसी तस्वीरों का उपयोग करना जहां चेहरा, कान या गर्दन छिपी हुई हो या विनिर्देशों से मेल न खाती हो।"
+      "अधूरे आवेदन पत्र जमा करना",
+      "तस्वीर पर हस्ताक्षर न करना",
+      "इंटरव्यू के दौरान मूल दस्तावेज न ले जाना"
     ],
     "not_en": [
-      "Candidates with incomplete application forms.",
-      "Candidates without proper NMC, State Medical Council, or Dental Council registration."
+      "Candidates with incomplete application forms",
+      "Candidates lacking mandatory educational certificates or valid council registrations"
     ],
     "not_hi": [
-      "अधूरे आवेदन पत्र वाले उम्मीदवार।",
-      "उचित एनएमसी, राज्य मेडिकल काउंसिल या डेंटल काउंसिल पंजीकरण के बिना उम्मीदवार।"
+      "अधूरे आवेदन पत्र वाले उम्मीदवार",
+      "अनिवार्य शैक्षणिक प्रमाण पत्र या वैध काउंसिल पंजीकरण की कमी वाले उम्मीदवार"
     ],
     "notice_date": null,
-    "official_site": "https://www.esic.gov.in/recruitments",
+    "official_site": "https://esic.gov.in/recruitments",
     "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "03/2026",
+        "value_hi": "03/2026"
+      },
+      {
         "label_en": "Posts",
         "label_hi": "पद",
         "value_en": "Teaching Faculty and Senior Residents",
-        "value_hi": "शिक्षण संकाय और सीनियर रेजिडेंट"
+        "value_hi": "टीचिंग फैकल्टी और सीनियर रेजिडेंट"
       },
       {
-        "label_en": "Advertisement Number",
-        "label_hi": "विज्ञापन संख्या",
-        "value_en": "03",
-        "value_hi": "03"
+        "label_en": "Mode of Recruitment",
+        "label_hi": "भर्ती का तरीका",
+        "value_en": "Walk-in Interview (Contract basis)",
+        "value_hi": "वॉक-इन इंटरव्यू (संविदा आधार)"
       }
     ],
     "salary": [],
     "selection_en": [
-      "Walk-in Interview",
-      "Document Verification"
+      "Review of application form and documents",
+      "Walk-in Interview"
     ],
     "selection_hi": [
-      "वॉक-इन इंटरव्यू",
-      "दस्तावेज़ सत्यापन"
+      "आवेदन पत्र और दस्तावेजों की समीक्षा",
+      "वॉक-इन इंटरव्यू"
     ],
     "share_card": {
-      "headline_en": "Walk in Interview 2026",
-      "headline_hi": "वॉक इन इंटरव्यू 2026",
+      "headline_en": "Walk-in Interview",
+      "headline_hi": "वॉक-इन इंटरव्यू",
       "kind": "job",
-      "line_en": "Teaching Faculty & Resident",
-      "line_hi": "शिक्षण संकाय और रेजिडेंट",
+      "line_en": "Faculty & Senior Resident",
+      "line_hi": "फैकल्टी और सीनियर रेजिडेंट",
       "posts": null
     },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "Walk-in interview for recruitment of Teaching Faculty and Senior Residents on a contract basis at ESIC Medical College & Hospital, Naroda-Bapunagar, Ahmedabad. Download the application form and attend the interview.",
-    "summary_hi": "ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, नरोडा-बापुनगर, अहमदाबाद में अनुबंध के आधार पर शिक्षण संकाय और सीनियर रेजिडेंट के पदों पर भर्ती के लिए वॉक-इन इंटरव्यू। आवेदन पत्र डाउनलोड करें और इंटरव्यू में भाग लें।",
+    "summary_en": "ESIC Medical College & Hospital, Naroda-Bapunagar has released the application form for contractual recruitment of Teaching Faculty and Senior Residents under Advt. No. 03/2026. Interested candidates must fill out the form and appear for the walk-in interview with required documents.",
+    "summary_hi": "ईएसआईसी मेडिकल कॉलेज एवं अस्पताल, नरोदा-बापूनगर ने विज्ञापन संख्या 03/2026 के तहत टीचिंग फैकल्टी और सीनियर रेजिडेंट पदों के लिए आवेदन पत्र जारी किया है। इच्छुक उम्मीदवार फॉर्म भरकर आवश्यक दस्तावेजों के साथ वॉक-इन इंटरव्यू में उपस्थित हों।",
     "vacancies": [
       {
-        "detail_en": "Contract basis at ESIC Medical College & Hospital, Naroda-Bapunagar, Ahmedabad",
-        "detail_hi": "ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, नरोडा-बापुनगर, अहमदाबाद में अनुबंध के आधार पर",
-        "post_en": "Teaching Faculty and Senior Residents",
-        "post_hi": "शिक्षण संकाय और सीनियर रेजिडेंट",
+        "detail_en": "As per institutional requirements under Advt. No. 03/2026",
+        "detail_hi": "विज्ञापन संख्या 03/2026 के अनुसार",
+        "post_en": "Teaching Faculty & Senior Residents",
+        "post_hi": "टीचिंग फैकल्टी और सीनियर रेजिडेंट",
         "total": ""
       }
     ],
     "video_url": null,
     "who_en": [
-      "Medical professionals with MBBS, MD, MS, DNB, BDS, MDS or PG Diploma wanting faculty or senior resident positions at ESIC Ahmedabad."
+      "Medical professionals with requisite degrees and registrations wanting contractual positions at ESIC Ahmedabad"
     ],
     "who_hi": [
-      "ईएसआईसी अहमदाबाद में फैकल्टी या सीनियर रेजिडेंट पदों के चाहने वाले एमबीबीएस, एमडी, एमएस, डीएनबी, बीडीएस, एमडीएस या पीजी डिप्लोमा वाले चिकित्सा पेशेवर।"
+      "ईएसआईसी अहमदाबाद में संविदा पदों चाहने वाले आवश्यक डिग्री और पंजीकरण वाले चिकित्सा पेशेवर"
     ]
   },
   "pdf": {
@@ -268,11 +262,11 @@
     "sha256": "30e30cda8c063301fe48c41d41895766470191b51cc69252dd1abe83d54f698d",
     "text_kind": "text"
   },
-  "published_at": "2026-11-18T07:28:08Z",
+  "published_at": "2026-11-18T06:40:57Z",
   "qual": [
     "postgraduate"
   ],
-  "slug": "esic-medical-college-ahmedabad-walk-in-interview-2026-faculty-po",
+  "slug": "esic-ahmedabad-faculty-and-senior-resident-recruitment-2026",
   "source_id": "esic-recruitment",
   "status": "approved",
   "title": "1 ESIC Medical College & Hospital Naroda-Bapunagar, Ahmedabad Walk in Interview for Recruitment of Teaching Faculty and Senior Residents on contract basis at ESIC Medical College & Hospital, Naroda-Bapunagar, Ahmedabad (Gujarat)- PDF size:(318.10 KB) . OBC Certificate Format- PDF size:(283.16 KB) . ",

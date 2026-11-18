@@ -6,38 +6,37 @@
     "exam_date": null,
     "last_date": null,
     "list": true,
-    "posts": "Entrance Examination",
+    "posts": "RIMC Entrance Exam",
     "provider": "gemini/gemini-flash-lite-latest",
     "skip_reason": "",
-    "summary_en": "NTA has released the advance intimation of examination city for the Rashtriya Indian Military College Entrance Examination 2026. Applicants should check their allotted city.",
-    "summary_hi": "राष्ट्रीय भारतीय सैन्य कॉलेज प्रवेश परीक्षा 2026 के लिए परीक्षा शहर की अग्रिम सूचना जारी कर दी गई है। आवेदक अपने आवंटित शहर की जाँच करें।",
-    "title_en": "RIMCEE 2026 Exam City Slip Out – Check Allotted City Link",
-    "title_hi": "आरआईएमसीई 2026 परीक्षा शहर पर्ची जारी – आवंटित शहर देखें",
+    "summary_en": "NTA has released the advance intimation of examination city for the Rashtriya Indian Military College Entrance Examination 2026. Registered applicants should check their allotted exam city online.",
+    "summary_hi": "एनटीए ने राष्ट्रीय इंडियन मिलिट्री कॉलेज प्रवेश परीक्षा 2026 के लिए परीक्षा शहर की अग्रिम सूचना जारी कर दी है। पंजीकृत आवेदक अपना आवंटित परीक्षा शहर ऑनलाइन देख सकते हैं।",
+    "title_en": "NTA RIMCEE Exam City Slip 2026 – Check Allotment",
+    "title_hi": "एनटीए आरआईएमसीई परीक्षा शहर स्लिप 2026 – आवंटन जांचें",
     "type": "Admission",
     "vacancies": null
   },
   "editor_notes": [],
+  "exam": {},
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-17T16:25:02+00:00",
   "id": "0b2d6e6fcce3",
-  "issue": 2428,
+  "issue": 2436,
   "issue_tidy": true,
   "kind": "other",
   "notice_date": "2026-11-17",
   "org": "NTA",
   "page": {
     "after_en": [
-      "Download the formal admit card once released by NTA.",
-      "Verify the exam centre venue, shift timing, and reporting instructions on the admit card.",
-      "Appear for the RIMCEE 2026 entrance examination."
+      "Download the final admit card when released",
+      "Report to the exam center on the specified date"
     ],
     "after_hi": [
-      "एनटीए द्वारा मूल एडमिट कार्ड जारी होने पर उसे डाउनलोड करें।",
-      "एडमिट कार्ड पर दिए गए परीक्षा केंद्र का पता, समय और निर्देशों की पुष्टि करें।",
-      "निर्धारित तिथि पर आरआईएमसीई 2026 परीक्षा में शामिल हों।"
+      "जारी होने पर अंतिम प्रवेश पत्र डाउनलोड करें",
+      "निर्धारित तिथि पर परीक्षा केंद्र पर रिपोर्ट करें"
     ],
     "age": [],
     "apply_start": null,
@@ -45,154 +44,125 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Verify allotted city on the city intimation portal.",
-      "Check connectivity and arrange travel accordingly.",
-      "Keep track of the official portal for admit card release."
+      "Keep your application credentials ready",
+      "Check official website for updates"
     ],
     "checklist_hi": [
-      "पोर्टल पर आवंटित परीक्षा शहर की पुष्टि करें।",
-      "शहर तक पहुंचने के लिए यात्रा की तैयारी करें।",
-      "एडमिट कार्ड जारी होने के लिए आधिकारिक वेबसाइट देखते रहें।"
+      "अपने आवेदन क्रेडेंशियल तैयार रखें",
+      "अपडेट के लिए आधिकारिक वेबसाइट देखें"
     ],
     "conducted_by_en": "National Testing Agency (NTA)",
-    "conducted_by_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए)",
-    "dates": [
-      {
-        "label_en": "Exam city intimation released",
-        "label_hi": "परीक्षा शहर सूचना जारी",
-        "value_en": "Released",
-        "value_hi": "जारी"
-      }
-    ],
+    "conducted_by_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए)",
+    "dates": [],
     "documents_en": [
-      "Application number and login credentials",
-      "Valid photo ID proof for travel planning"
+      "Application number",
+      "Date of birth"
     ],
     "documents_hi": [
-      "आवेदन संख्या और लॉगिन विवरण",
-      "यात्रा के लिए वैध पहचान पत्र"
+      "आवेदन संख्या",
+      "जन्म तिथि"
     ],
     "eligibility": [],
     "exam_date": null,
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is an advance intimation slip issued by NTA to inform candidates about the city where their exam will be conducted so they can arrange travel in advance.",
-        "a_hi": "यह एनटीए द्वारा जारी एक अग्रिम सूचना पर्ची है जिससे परीक्षार्थी को उनके परीक्षा शहर की जानकारी मिलती है ताकि वे समय रहते यात्रा की तैयारी कर सकें।",
-        "q_en": "What is the RIMCEE Exam City Slip?",
-        "q_hi": "आरआईएमसीई परीक्षा शहर पर्ची क्या है?"
+        "a_en": "It is an advance notice issued by NTA to inform registered candidates about the city where their entrance examination center is located, helping them make prior travel arrangements.",
+        "a_hi": "यह पंजीकृत उम्मीदवारों को उस शहर के बारे में सूचित करने के लिए एनटीए द्वारा जारी एक अग्रिम सूचना है जहाँ उनका प्रवेश परीक्षा केंद्र स्थित है, जिससे उन्हें पहले से यात्रा की व्यवस्था करने में मदद मिलती है।",
+        "q_en": "What is the RIMCEE Exam City Intimation Slip?",
+        "q_hi": "आरआईएमसीई परीक्षा शहर सूचना स्लिप क्या है?"
       }
     ],
     "extra": [],
     "faq": [
       {
-        "a_en": "No, this is only an advance intimation of the exam city. The actual admit card will be issued separately.",
-        "a_hi": "नहीं, यह केवल परीक्षा शहर की अग्रिम जानकारी है। मूल एडमिट कार्ड अलग से जारी किया जाएगा।",
-        "q_en": "Is the RIMCEE 2026 exam city slip the same as the admit card?",
-        "q_hi": "क्या आरआईएमसीई 2026 परीक्षा शहर पर्ची ही एडमिट कार्ड है?"
+        "a_en": "You can check your exam city by logging into the official NTA RIMCEE portal using your application number and date of birth.",
+        "a_hi": "आप अपने आवेदन नंबर और जन्म तिथि का उपयोग करके आधिकारिक एनटीए आरआईएमसीई पोर्टल पर लॉग इन करके अपना परीक्षा शहर देख सकते हैं।",
+        "q_en": "How can I check my RIMCEE 2026 exam city?",
+        "q_hi": "मैं अपना आरआईएमसीई 2026 परीक्षा शहर कैसे देख सकता हूँ?"
       },
       {
-        "a_en": "You can check your allotted exam city by logging into the official portal on nta.ac.in.",
-        "a_hi": "आप nta.ac.in पर आधिकारिक पोर्टल में लॉगिन करके अपना आवंटित शहर देख सकते हैं।",
-        "q_en": "Where can I check my RIMCEE 2026 exam city?",
-        "q_hi": "मैं अपना आरआईएमसीई 2026 परीक्षा शहर कहाँ देख सकता हूँ?"
-      },
-      {
-        "a_en": "You will need your RIMCEE 2026 application number and date of birth or password.",
-        "a_hi": "आपको अपना आरआईएमसीई 2026 आवेदन संख्या और जन्मतिथि अथवा पासवर्ड दर्ज करना होगा।",
-        "q_en": "What details are required to download the city slip?",
-        "q_hi": "शहर सूचना पर्ची डाउनलोड करने के लिए क्या विवरण चाहिए?"
+        "a_en": "No, this is only an advance intimation of the examination city. The final admit card will be released separately.",
+        "a_hi": "नहीं, यह केवल परीक्षा शहर की अग्रिम सूचना है। अंतिम प्रवेश पत्र अलग से जारी किया जाएगा।",
+        "q_en": "Is this exam city slip the final admit card?",
+        "q_hi": "क्या यह परीक्षा शहर की स्लिप अंतिम प्रवेश पत्र है?"
       }
     ],
     "fees": [],
-    "h1_en": "RIMCEE 2026 Exam City Slip Out – Check Allotted City Link",
-    "h1_hi": "आरआईएमसीई 2026 परीक्षा शहर पर्ची जारी – आवंटित शहर देखें",
+    "h1_en": "NTA RIMCEE Exam City Slip 2026 – Check Allotment",
+    "h1_hi": "एनटीए आरआईएमसीई परीक्षा शहर स्लिप 2026 – आवंटन जांचें",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the official NTA website at nta.ac.in.",
-      "Look for the RIMCEE 2026 Exam City Intimation link in the public notices or latest news section.",
-      "Enter your application number and date of birth/password.",
-      "View and download your examination city intimation slip.",
-      "Save a copy for your reference and travel arrangements."
+      "Go to the official NTA RIMCEE website",
+      "Click on the link for Advance Intimation of Examination City",
+      "Log in using your application number and date of birth",
+      "View and download the exam city slip for future reference"
     ],
     "how_hi": [
-      "एनटीए की आधिकारिक वेबसाइट nta.ac.in पर जाएं।",
-      "सार्वजनिक सूचना या ताज़ा समाचार अनुभाग में आरआईएमसीई 2026 परीक्षा शहर सूचना लिंक पर क्लिक करें।",
-      "अपना आवेदन संख्या और जन्मतिथि/पासवर्ड दर्ज करें।",
-      "अपनी आवंटित परीक्षा शहर पर्ची देखें और डाउनलोड करें।",
-      "यात्रा व्यवस्था और संदर्भ के लिए एक प्रति सहेज कर रखें।"
+      "आधिकारिक एनटीए आरआईएमसीई वेबसाइट पर जाएं",
+      "परीक्षा शहर की अग्रिम सूचना के लिए लिंक पर क्लिक करें",
+      "अपने आवेदन संख्या और जन्म तिथि का उपयोग करके लॉगिन करें",
+      "भविष्य के संदर्भ के लिए परीक्षा शहर की स्लिप देखें और डाउनलोड करें"
     ],
-    "intro_en": "The National Testing Agency (NTA) has issued an official public notice regarding the advance intimation of examination city allotted to applicants of the Rashtriya Indian Military College Entrance Examination (RIMCEE) 2026. This intimation helps candidates know their designated exam city well in advance to plan their travel. Candidates should note that this city slip is not the final admit card. The actual admit card with exact centre details will be released separately.",
-    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने राष्ट्रीय भारतीय सैन्य कॉलेज प्रवेश परीक्षा (आरआईएमसीई) 2026 के आवेदकों के लिए आवंटित परीक्षा शहर की अग्रिम सूचना जारी की है। इस पर्ची से उम्मीदवार अपनी यात्रा की योजना बनाने के लिए आवंटित शहर की जानकारी पहले से प्राप्त कर सकते हैं। उम्मीदवार ध्यान दें कि यह परीक्षा शहर पर्ची प्रवेश पत्र (एडमिट कार्ड) नहीं है। परीक्षा केंद्र के पते के साथ अंतिम एडमिट कार्ड अलग से जारी किया जाएगा।",
+    "intro_en": "The National Testing Agency (NTA) has issued the advance intimation of examination city for the Rashtriya Indian Military College Entrance Examination (RIMCEE)–2026. Candidates who have successfully registered for the entrance examination can now check the city where their exam center has been allotted. Please note that this is only an advance intimation of the exam city, not the final admit card. The actual admit card with exam center details will be released separately.",
+    "intro_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने राष्ट्रीय इंडियन मिलिट्री कॉलेज प्रवेश परीक्षा (आरआईएमसीई)–2026 के लिए परीक्षा शहर की अग्रिम सूचना जारी कर दी है। प्रवेश परीक्षा के लिए सफलतापूर्वक पंजीकरण करने वाले उम्मीदवार अब उस शहर की जांच कर सकते हैं जहाँ उनका परीक्षा केंद्र आवंटित किया गया है। कृपया ध्यान दें कि यह केवल परीक्षा शहर की अग्रिम सूचना है, अंतिम प्रवेश पत्र नहीं। परीक्षा केंद्र के विवरण के साथ वास्तविक प्रवेश पत्र अलग से जारी किया जाएगा।",
     "last_date": null,
     "mistakes_en": [
-      "Do not treat the exam city intimation slip as the admit card.",
-      "Do not wait until exam day to check travel and accommodation logistics."
+      "Do not confuse the exam city slip with the final admit card."
     ],
     "mistakes_hi": [
-      "परीक्षा शहर सूचना पर्ची को मुख्य एडमिट कार्ड न समझें।",
-      "यात्रा व्यवस्था के लिए अंतिम समय तक प्रतीक्षा न करें।"
+      "परीक्षा शहर की स्लिप को अंतिम प्रवेश पत्र न समझें।"
     ],
-    "not_en": [
-      "Candidates who did not submit a complete application form for RIMCEE 2026."
-    ],
-    "not_hi": [
-      "वे आवेदक जिनका आरआईएमसीई 2026 आवेदन पत्र पूर्ण रूप से जमा नहीं हुआ था।"
-    ],
+    "not_en": [],
+    "not_hi": [],
     "notice_date": null,
     "official_site": "https://nta.ac.in/",
     "physical": [],
-    "provider": "gemini/gemini-flash-latest",
+    "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
         "label_en": "Exam Name",
         "label_hi": "परीक्षा का नाम",
-        "value_en": "Rashtriya Indian Military College Entrance Examination (RIMCEE) 2026",
-        "value_hi": "राष्ट्रीय भारतीय सैन्य कॉलेज प्रवेश परीक्षा (आरआईएमसीई) 2026"
+        "value_en": "Rashtriya Indian Military College Entrance Examination (RIMCEE) – 2026",
+        "value_hi": "राष्ट्रीय इंडियन मिलिट्री कॉलेज प्रवेश परीक्षा (आरआईएमसीई) – 2026"
       },
       {
         "label_en": "Notice Type",
-        "label_hi": "सूचना का प्रकार",
-        "value_en": "Advance Exam City Intimation Slip",
-        "value_hi": "अग्रिम परीक्षा शहर सूचना पर्ची"
-      },
-      {
-        "label_en": "Official Website",
-        "label_hi": "आधिकारिक वेबसाइट",
-        "value_en": "nta.ac.in",
-        "value_hi": "nta.ac.in"
+        "label_hi": "नोटिस का प्रकार",
+        "value_en": "Advance Intimation of Examination City",
+        "value_hi": "परीक्षा शहर की अग्रिम सूचना"
       }
     ],
     "salary": [],
     "selection_en": [
-      "Written Entrance Examination",
-      "Interview / Viva-Voce",
-      "Medical Examination"
+      "Check exam city intimation slip",
+      "Download final admit card",
+      "Appear for the entrance examination"
     ],
     "selection_hi": [
-      "लिखित प्रवेश परीक्षा",
-      "साक्षात्कार",
-      "चिकित्सा परीक्षण"
+      "परीक्षा शहर सूचना स्लिप जांचें",
+      "अंतिम प्रवेश पत्र डाउनलोड करें",
+      "प्रवेश परीक्षा में शामिल हों"
     ],
     "share_card": {
-      "headline_en": "City Slip Out",
-      "headline_hi": "परीक्षा शहर जारी",
+      "headline_en": "City Intimation Out",
+      "headline_hi": "शहर सूचना जारी",
       "kind": "admit",
-      "line_en": "RIMCEE 2026",
-      "line_hi": "आरआईएमसीई 2026",
+      "line_en": "RIMCEE 2026 Exam City",
+      "line_hi": "आरआईएमसीई 2026 परीक्षा शहर",
       "posts": null
     },
-    "status_en": "Advance examination city intimation slip released",
-    "status_hi": "अग्रिम परीक्षा शहर सूचना पर्ची जारी कर दी गई है",
-    "summary_en": "National Testing Agency (NTA) has released the advance exam city intimation slip for the Rashtriya Indian Military College Entrance Examination (RIMCEE) 2026. Registered candidates can check their allotted exam city online on the official website.",
-    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने राष्ट्रीय भारतीय सैन्य कॉलेज प्रवेश परीक्षा (आरआईएमसीई) 2026 के लिए अग्रिम परीक्षा शहर सूचना पर्ची जारी कर दी है। पंजीकृत उम्मीदवार आधिकारिक वेबसाइट पर जाकर अपना आवंटित परीक्षा शहर देख सकते हैं।",
+    "status_en": "Exam city intimation slip released",
+    "status_hi": "परीक्षा शहर सूचना स्लिप जारी कर दी गई है",
+    "summary_en": "National Testing Agency (NTA) has released the advance intimation of examination city for the Rashtriya Indian Military College Entrance Examination (RIMCEE) 2026. Registered applicants can check their allotted exam city online using their credentials. This slip is to help candidates plan their travel to the exam center.",
+    "summary_hi": "राष्ट्रीय परीक्षण एजेंसी (एनटीए) ने राष्ट्रीय इंडियन मिलिट्री कॉलेज प्रवेश परीक्षा (आरआईएमसीई) 2026 के लिए परीक्षा शहर की अग्रिम सूचना जारी कर दी है। पंजीकृत आवेदक अपने क्रेडेंशियल्स का उपयोग करके अपना आवंटित परीक्षा शहर ऑनलाइन देख सकते हैं। यह स्लिप उम्मीदवारों को परीक्षा केंद्र की यात्रा की योजना बनाने में मदद करने के लिए है।",
     "vacancies": [],
     "video_url": null,
     "who_en": [
-      "Candidates who registered for the RIMCEE 2026 entrance examination."
+      "Registered applicants for the RIMCEE 2026 exam"
     ],
     "who_hi": [
-      "वे अभ्यर्थी जिन्होंने आरआईएमसीई 2026 प्रवेश परीक्षा के लिए आवेदन किया है।"
+      "आरआईएमसीई 2026 परीक्षा के लिए पंजीकृत आवेदक"
     ]
   },
   "pdf": {
@@ -201,9 +171,9 @@
     "sha256": "9f560173bcdcb5aaa581ea069180b7979d7ac634f1567bd52f381c06af694ced",
     "text_kind": "scanned"
   },
-  "published_at": "2026-11-18T07:25:17Z",
+  "published_at": "2026-11-18T08:09:05Z",
   "qual": [],
-  "slug": "rimcee-2026-exam-city-slip-out-check-allotted-city-link",
+  "slug": "nta-rimcee-exam-city-slip-2026-check-allotment",
   "source_id": "nta-home",
   "status": "approved",
   "title": "Advance Intimation of Examination City allotted to the applicants of the Rashtriya Indian Military College Entrance Examination (RIMCEE)–2026 Read More",

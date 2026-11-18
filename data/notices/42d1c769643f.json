@@ -1,17 +1,17 @@
 {
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
   "card": {
-    "confidence": "low",
+    "confidence": "high",
     "exam_date": null,
     "last_date": null,
     "list": false,
     "posts": null,
-    "provider": "gemini/gemini-flash-latest",
-    "skip_reason": "No content or text available in the notice",
-    "summary_en": "Notice details could not be retrieved. Please check the official website.",
-    "summary_hi": "सूचना का विवरण उपलब्ध नहीं हो सका। कृपया आधिकारिक वेबसाइट देखें।",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "No PDF text or content provided",
+    "summary_en": "The notice does not contain any readable text or details for aspirants.",
+    "summary_hi": "इस नोटिस में पाठकों के लिए कोई पठनीय पाठ या विवरण उपलब्ध नहीं है।",
     "title_en": "UPSSSC Notice",
-    "title_hi": "यूपीएसएसएससी सूचना",
+    "title_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग सूचना",
     "type": "Update",
     "vacancies": null
   },
