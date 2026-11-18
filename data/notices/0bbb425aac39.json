@@ -1,20 +1,6 @@
 {
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
-  "card": {
-    "confidence": "low",
-    "exam_date": null,
-    "last_date": null,
-    "list": false,
-    "posts": "Pharmacist Ayurvedic",
-    "provider": "gemini/gemini-flash-lite-latest",
-    "skip_reason": "Incomplete notice text and missing essential details.",
-    "summary_en": "This is a notification regarding the Ayurvedic Pharmacist Main Examination by UPSSSC.",
-    "summary_hi": "यह उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग की आयुर्वेदिक भेषजिक मुख्य परीक्षा से संबंधित सूचना है।",
-    "title_en": "UPSSSC Pharmacist Ayurvedic Main Examination",
-    "title_hi": "उप्र अधीनस्थ सेवा चयन आयोग भेषजिक आयुर्वेदिक मुख्य परीक्षा",
-    "type": "Update",
-    "vacancies": null
-  },
+  "card": null,
   "extraction": {
     "ai": null
   },
@@ -27,10 +13,10 @@
     "bytes": 4064561,
     "pages": 16,
     "sha256": "206b061a3b55dbeffcfef666e0263c6fb2e6b20c91887eebbe8666cbe8955b88",
-    "text_kind": "scanned"
+    "text_kind": "ocr-legacy-font"
   },
   "source_id": "upsssc-home",
-  "status": "skipped",
+  "status": "pending_review",
   "title": "विज्ञापन संख्या-01-परीक्षा/2024, भेषजिक (आयुर्वेदिक) मुख्य परीक्षा (प्रा०अ०प०-20...",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?viSrKKYPvDup5RrInD0wD7g2fj+C7xkAtIvgIPiHkgg="
 }
