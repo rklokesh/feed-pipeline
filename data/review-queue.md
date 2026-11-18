@@ -1,6 +1,6 @@
-# Review queue — 58 pending
+# Review queue — 54 pending
 
-_Updated 2026-11-18T04:19:14+00:00_
+_Updated 2026-11-18T04:50:45+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -8,7 +8,6 @@ _Updated 2026-11-18T04:19:14+00:00_
 | 2026-11-17 | UKSSSC | other | Accessible Version : View (6 MB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/20261117947374675.pdf) |
 | 2026-11-17 | UKSSSC | other | Accessible Version : View (366 KB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/20261117782938234.pdf) |
 | 2026-11-17 | RSSB Rajasthan | info | 13-11-2026 - Motor Vehicle Sub Inspector 2021 : Ammended Office Order Regarding Document V | — | — | — | — | [open](https://rssb.rajasthan.gov.in/storage/news_item/1794931032.pdf) |
-| 2026-11-17 | RPSC | result | 17/11/2026 Result Preamble for Asst. Prof. (Sanskrit College Edu.) - 2024 (Rigved) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/Result/DCE8738CB80A4A07BFB545B20F673126.pdf) |
 | 2026-11-17 | RPSC | result | 17/11/2026 Result Preamble for Asst. Prof. (Sanskrit College Edu.) - 2024 (Jyotish Falit) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/Result/EE669B0807B3478C80EDF245F17F2105.pdf) |
 | 2026-11-17 | RPSC | other | 17/11/2026 Question Paper for Protection Officer - 2025 (Paper-II) (Law) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/D39C13A8-504D-4F14-B40E-2AF4F6EA3EC6.pdf) |
 | 2026-11-17 | RPSC | other | 17/11/2026 Question Paper for Protection Officer - 2025 (Paper-I) (G.K) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/39AEEF32-2A94-4AF7-BCD1-1F4B2EB5D1FE.pdf) |
@@ -33,7 +32,6 @@ _Updated 2026-11-18T04:19:14+00:00_
 | 2026-11-17 | UKSSSC | other | Accessible Version : View (340 KB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/202611171372213402.pdf) |
 | 2026-11-17 | ESIC | other | 2 ESIC MEDICAL COLLEGE AND HOSPITAL RAJAJI NAGAR BANGALORE Applications are invited for en | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/Applications_are_invited_for_engagement_of_Visiting_Part_Time_Lecturers_on_an_hourly_basis_at_ESIC_College_of_Nursing_Indiranagar_Bengaluru_for_the_academic_year_2026_27_1794899156.pdf) |
 | 2026-11-17 | RSSB Rajasthan | admit_card | 17-11-2026 - Common Eligibility Test(Senior Secondary Level) 2026 : Admit card issue date  | — | — | — | — | [open](https://rssb.rajasthan.gov.in/storage/news_item/1794893623.pdf) |
-| 2026-11-17 | CRPF | result | 1 List of 01 selected candidates on compassionate appointment in CRPF (Vacancy released on | — | — | — | — | [open](https://rect.crpf.gov.in/Upload/Recruitment/compassionate_appointment_on_16-11-2026-105.pdf) |
 | 2026-11-17 | ESIC | other | 1 Regional Office Mumbai "Walk in Interviews" for appointment of Contractual Part Time Spe | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/quot_Walk_in_Interviews_quot_for_appointment_of_Contractual_Part_Time_Specialist_Senior_Resident_and_Medical_Officer_on_Contract_basis_in_ESI_Society_Hospital_Mulund_1794892421.pdf) |
 | 2026-11-17 | MHA | other | Appointment to the Post of Member (Finance) of the Land Ports Authority of India on Deputa | 2026-11-30 | — | — | — | [open](https://www.mha.gov.in/files/vacancies_documents/VacanciesLPI_12112026.pdf) |
 | 2026-11-16 | UPPSC | result | 1. RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) .. Visi | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq+2I4ea+ym87) |
@@ -56,9 +54,7 @@ _Updated 2026-11-18T04:19:14+00:00_
 | 2026-11-16 | ESIC | result | 1 ESIC Medical College and Hospital Beltola, Guwahati, Assam RESULT OF THE WALK-IN-INTERVI | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/RESULT_OF_THE_WALK_IN_INTERVIEW_FOR_RECRUITMENT_TO_THE_POST_OF_SENIOR_RESIDENT_HELD_ON_20_01_2026_FOR_ESIC_MEDICAL_COLLEGE_amp_HOSPITAL_BELTOLA_GUWAHATI_1794803426.pdf) |
 | 2026-11-15 | UPSSSC | notification | विज्ञापन संख्या-05-परीक्षा/2026, सहायक सांख्यिकीय अधिकारी / सहायक शोध अधिकारी (स... | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?viSrKKYPvDtwe7rXQmj509ApOnD6vpwheKciC0G8jNk=) |
 | 2026-11-15 | UPSSSC | notification | विज्ञापन संख्या-06-परीक्षा/2026, प्राविधिक सहायक ग्रुप-सी मुख्य परीक्षा (प्रा०अ०... | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?viSrKKYPvDsPHIxdRkEhea5E0gYFF6thFXnhz5TBpzQ=) |
-| 2026-11-14 | NTA | notification | Inviting Online Applications for SHRESHTA (NETS) – 2027 Read More | — | — | — | — | [open](https://nta.ac.in/Download/Notice/Notice_20261114192445.pdf) |
 | 2026-11-14 | NTA | update | Extension of Registration Dates for the National Institute of Fashion Technology Entrance  | — | — | — | — | [open](https://nta.ac.in/Download/Notice/Notice_20261114165715.pdf) |
 | 2026-11-14 | MPPSC | other | आंतरिक लेखा परीक्षण अधिकारी - 2026 के रिक्त पद हेतु उम्मीदवारी निरस्‍त किए जाने संबंधी सूच | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Candidature_Rejection_Internal_Accounts_Examiner_Officer_2026_Dated_14_11_2026.pdf) |
-| 2026-11-14 | MPPSC | other | विशेषज्ञ आयुर्वेद - 2024 के पद हेतु साक्षात्‍कार आयोजन संबंधी सूचना, दिनांक 14/11/2026 | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Specialist_Ayurved_2024_Dated_14_11_2026.pdf) |
 | 2026-11-14 | UP Police | notification | LATEST NOTICE: उप निरीक्षक नागरिक पुलिस, पीएसी प्लाटून कमाण्डर एवं अग्निशमन द्वितीय अधिकार | — | — | — | — | [open](https://uppbpb.gov.in/FilesUploaded/Notice/Final_with_Notice_List_1_2_SI_2020_213d48b1b7-79ed-4c56-ac69-f1072e647331.pdf) |
 | 2026-11-14 | UPSSSC | other |  | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?HjcKtIJgOg3BCXF0cy57jMjRci5B14XCBq/Mjz3KyIM=) |
