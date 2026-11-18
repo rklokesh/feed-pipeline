@@ -1,0 +1,32 @@
+{
+  "board_url": "https://ssc.gov.in/home/notice-board",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "e designated login module on the website of the Commission (https://ssc.gov.in/). The ‘Admission Certificate’ will tentatively be available for download, prior",
+      "source": "rule",
+      "value": "https://ssc.gov.in/"
+    },
+    "exam_date": {
+      "evidence": "be available for download, prior to 2-3 days of respective examination date. Detailed instructions in this regard are available in the concerned notices of examination Deputy Director 18.11.2026",
+      "source": "rule",
+      "value": "2026-11-18"
+    }
+  },
+  "first_seen": "2026-11-18T13:49:30+00:00",
+  "id": "8170aad62ff4",
+  "kind": "other",
+  "org": "SSC",
+  "pdf": {
+    "bytes": 112206,
+    "pages": 1,
+    "sha256": "52ce93cd3948704fc448d2519505727fa2b6d02ffa2dbcca943b133f94334941",
+    "text_kind": "text"
+  },
+  "source_id": "ssc-notice-board",
+  "status": "pending_review",
+  "title": "Information regarding the city of examination and admission certificate for the candidates of Sub-Inspector in Delhi Police and Central Armed Police Forces Examination, 2025 (Paper-II)",
+  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/notice_18112026.pdf"
+}
