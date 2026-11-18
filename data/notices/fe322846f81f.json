@@ -1,0 +1,27 @@
+{
+  "board_url": "https://ssc.gov.in/home/notice-board",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "also been made available on the Commission’s website, i.e. https://ssc.gov.in, from 17.11.2026 (23:00 hrs) to 16.12.2026 (23:00 hrs), which can be accessed by",
+      "source": "rule",
+      "value": "https://ssc.gov.in"
+    }
+  },
+  "first_seen": "2026-11-18T01:49:57+00:00",
+  "id": "fe322846f81f",
+  "kind": "answer_key",
+  "org": "SSC",
+  "pdf": {
+    "bytes": 236466,
+    "pages": 1,
+    "sha256": "604f6a21677af6e8bb07b65e1e511a07a9a25cf338acd31b3781be1f75e0f54e",
+    "text_kind": "text"
+  },
+  "source_id": "ssc-notice-board",
+  "status": "pending_review",
+  "title": "Combined Higher Secondary (10+2) Level Examination, 2025 (Tier-II): Uploading of Final Answer Key(s) along with Candidates’ Response Sheet(s) and Marks of candidates",
+  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/answer_key_17112026.pdf"
+}
