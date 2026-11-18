@@ -1,11 +1,29 @@
 {
+  "auto_published": true,
   "board_url": "https://nta.ac.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "SHRESHTA NETS",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Online applications are invited for SHRESHTA NETS 2027. Candidates should check the details and apply online.",
+    "summary_hi": "श्रेष्ठ नेट्स 2027 के लिए ऑनलाइन आवेदन आमंत्रित किए गए हैं। उम्मीदवारों को विवरण की जांच करनी चाहिए और ऑनलाइन आवेदन करना चाहिए।",
+    "title_en": "NTA SHRESHTA NETS Admission 2027",
+    "title_hi": "एनटीए श्रेष्ठ नेट्स प्रवेश 2027",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-14T14:05:48+00:00",
   "id": "069a7309f4d1",
+  "issue": 2423,
+  "issue_tidy": true,
   "kind": "notification",
   "org": "NTA",
   "pdf": {
@@ -14,8 +32,9 @@
     "sha256": "f864d51e9497655ab6c8db75ead39e94aa4cee548015c6252cc0b569d1578d65",
     "text_kind": "scanned"
   },
+  "published_at": "2026-11-18T03:52:06Z",
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Inviting Online Applications for SHRESHTA (NETS) – 2027 Read More",
   "url": "https://nta.ac.in/Download/Notice/Notice_20261114192445.pdf"
 }

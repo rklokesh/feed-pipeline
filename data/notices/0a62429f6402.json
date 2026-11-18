@@ -1,11 +1,29 @@
 {
+  "auto_published": true,
   "board_url": "https://rect.crpf.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "HC/RO / CT/GD",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "CRPF has released the list of selected candidates for compassionate appointment. Check the notice for details.",
+    "summary_hi": "सीआरपीएफ ने अनुकंपा नियुक्ति के लिए चयनित उम्मीदवारों की सूची जारी कर दी है। विवरण के लिए नोटिस देखें।",
+    "title_en": "CRPF Compassionate Appointment Selected Candidates List",
+    "title_hi": "सीआरपीएफ अनुकंपा नियुक्ति चयनित उम्मीदवार सूची",
+    "type": "Result",
+    "vacancies": 1
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-17T05:15:48+00:00",
   "id": "0a62429f6402",
+  "issue": 2424,
+  "issue_tidy": true,
   "kind": "result",
   "org": "CRPF",
   "pdf": {
@@ -14,8 +32,9 @@
     "sha256": "6e8a3f9e91800082c170ec8ab5a8687070a20488f8f94aba4b35839289fd0391",
     "text_kind": "text"
   },
+  "published_at": "2026-11-18T03:56:03Z",
   "source_id": "crpf-recruitment",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1 List of 01 selected candidates on compassionate appointment in CRPF (Vacancy released on 16/11/2026) 16-Nov-2026 (153 KB)",
   "url": "https://rect.crpf.gov.in/Upload/Recruitment/compassionate_appointment_on_16-11-2026-105.pdf"
 }

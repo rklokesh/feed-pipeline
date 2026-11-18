@@ -1,11 +1,29 @@
 {
+  "auto_published": true,
   "board_url": "https://rpsc.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant Professor (Rigved)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Rajasthan Public Service Commission has released the result preamble for Assistant Professor Rigved exam 2024 in compliance with court orders, keeping the earlier written exam result intact.",
+    "summary_hi": "राजस्थान लोक सेवा आयोग ने न्यायालय के आदेशों के अनुपालन में सहायक आचार्य ऋग्वेद परीक्षा 2024 के लिए परिणाम प्रस्तावना जारी कर दी है, जिसमें पिछला लिखित परीक्षा परिणाम यथावत रखा गया है।",
+    "title_en": "RPSC Assistant Professor (Sanskrit College Edu) Rigved 2024 Result",
+    "title_hi": "आरपीएससी सहायक आचार्य ऋग्वेद संस्कृत कॉलेज शिक्षा 2024 परिणाम",
+    "type": "Result",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-17T16:46:20+00:00",
   "id": "054348538490",
+  "issue": 2422,
+  "issue_tidy": true,
   "kind": "result",
   "org": "RPSC",
   "pdf": {
@@ -14,8 +32,9 @@
     "sha256": "d960a65c1a77b54b65a34f8737bb10af58aa7cdef80af040dd5fd48404f5f0d3",
     "text_kind": "text"
   },
+  "published_at": "2026-11-18T03:50:59Z",
   "source_id": "rpsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "17/11/2026 Result Preamble for Asst. Prof. (Sanskrit College Edu.) - 2024 (Rigved)",
   "url": "https://rpsc.rajasthan.gov.in/Static/Result/DCE8738CB80A4A07BFB545B20F673126.pdf"
 }
