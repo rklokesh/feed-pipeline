@@ -8,6 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  models: read      # free GitHub Models: backup AI when the free Gemini allowance runs out
   contents: write   # save cards into data/
   issues: write     # open review issues
 
@@ -18,6 +19,7 @@ concurrency:
 env:
   # when the first model's free daily allowance runs out, the next one (its own free allowance) takes over
   GEMINI_MODELS: "gemini-flash-lite-latest,gemini-flash-latest,gemini-2.0-flash"
+  AI_ENABLE_GITHUB: "1"   # second free AI provider (GitHub Models) as backup when Gemini's daily allowance is used up
 
 jobs:
   prepare:
@@ -46,6 +48,17 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PREPARE_LIMIT: "10"   # small batches: every run finishes and saves; a backlog clears run by run instead of timing out
         run: python scripts/prepare.py
+      - name: Alert if the AI could not make any card
+        if: always()
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          OWNER_CHAT_ID: ${{ secrets.OWNER_CHAT_ID }}
+        run: |
+          head -1 data/debug-prepare.txt | grep -Eq ": [1-9][0-9]* needed a card, 0 went live" || exit 0
+          grep -q "no card" data/debug-prepare.txt || exit 0
+          cd scripts && python alert.py ai-down "The AI that writes notice cards failed for every notice in this run (free quota used up or service down). Notices are waiting, not lost; they go live once the AI works again."
       - name: Write notice pages (new ones + a few older pages upgraded to the full layout each run)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
