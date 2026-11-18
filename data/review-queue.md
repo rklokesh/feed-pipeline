@@ -1,9 +1,12 @@
-# Review queue — 54 pending
+# Review queue — 56 pending
 
-_Updated 2026-11-18T05:20:41+00:00_
+_Updated 2026-11-18T05:49:38+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-18 | ESIC | notification | 1 ESIC Medical College & Hospital Naroda-Bapunagar, Ahmedabad Walk in Interview for Recrui | — | — | — | general 500 (AI) | [open](https://esic.gov.in/attachments/recruitmentfile/APPLICATION_FORM_1794979623.pdf) |
+| 2026-11-18 | ESIC | notification | 1 ESIC Medical College & Hospital Naroda-Bapunagar, Ahmedabad Walk in Interview for Recrui | — | 66 (AI) | None–67 (AI) | — | [open](https://esic.gov.in/attachments/recruitmentfile/Walk_in_Interview_for_Recruitment_of_Teaching_Faculty_and_Senior_Residents_on_contract_basis_at_ESIC_Medical_College_amp_Hospital_Naroda_Bapunagar_Ahmedabad_Gujarat_1794979623.pdf) |
+| 2026-11-18 | ESIC | notification | 1 ESIC Medical College & Hospital Naroda-Bapunagar, Ahmedabad Walk in Interview for Recrui | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/OBC_Certificate_Format_1794979623.pdf) |
 | 2026-11-18 | SSC | answer_key | Combined Higher Secondary (10+2) Level Examination, 2025 (Tier-II): Uploading of Final Ans | — | — | — | — | [open](https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/answer_key_17112026.pdf) |
 | 2026-11-17 | UKSSSC | other | Accessible Version : View (6 MB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/20261117947374675.pdf) |
 | 2026-11-17 | UKSSSC | other | Accessible Version : View (366 KB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/20261117782938234.pdf) |
@@ -34,7 +37,6 @@ _Updated 2026-11-18T05:20:41+00:00_
 | 2026-11-17 | RSSB Rajasthan | admit_card | 17-11-2026 - Common Eligibility Test(Senior Secondary Level) 2026 : Admit card issue date  | — | — | — | — | [open](https://rssb.rajasthan.gov.in/storage/news_item/1794893623.pdf) |
 | 2026-11-17 | ESIC | other | 1 Regional Office Mumbai "Walk in Interviews" for appointment of Contractual Part Time Spe | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/quot_Walk_in_Interviews_quot_for_appointment_of_Contractual_Part_Time_Specialist_Senior_Resident_and_Medical_Officer_on_Contract_basis_in_ESI_Society_Hospital_Mulund_1794892421.pdf) |
 | 2026-11-17 | MHA | other | Appointment to the Post of Member (Finance) of the Land Ports Authority of India on Deputa | 2026-11-30 | — | — | — | [open](https://www.mha.gov.in/files/vacancies_documents/VacanciesLPI_12112026.pdf) |
-| 2026-11-16 | UPPSC | result | 1. RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) .. Visi | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq+2I4ea+ym87) |
 | 2026-11-16 | UPPSC | result | 16 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq8R3/HLrIFDx) |
 | 2026-11-16 | RPSC | other | 16/11/2026 Additional Provisional List for Eligibility Checking for Asst. Testing Officer  | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/Result/1260ACB959804E5BAF6E46A73EC33DEC.pdf) |
 | 2026-11-16 | UP Police | notification | LATEST NOTICE: उत्तर प्रदेश पुलिस में आरक्षी नागरिक पुलिस एवं समकक्ष पदों पर सीधी भर्ती-20 | — | — | — | — | [open](https://uppbpb.gov.in/FilesUploaded/Notice/CONST 25 VIGGYAPTI 16-11-2026e9f869c6-bb93-4210-acb5-e17dabd0d0c4.pdf) |

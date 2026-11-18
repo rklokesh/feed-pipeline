@@ -1,0 +1,66 @@
+{
+  "board_url": "https://www.esic.gov.in/recruitments",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "cid:6)वव(cid:7)(cid:7)ाापपनन ससं(cid:12)ं(cid:12)ययाा: 03 / Advertisement No.: 03 of 2026 ईएसआईसी मे(cid:20)डकल कॉलेज एव ंअ(cid:26)पताल, नरोदा-बापूनगर, अहमदाबाद (गुजरात)",
+      "source": "rule",
+      "value": "03 of 2026"
+    },
+    "age_limit": {
+      "evidence": "Age Limit as on 27.11.2026: Not Exceeding 67 Years (except Senior Resident)",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": "2026-11-27",
+        "max": 67,
+        "min": null
+      }
+    },
+    "exam_date": {
+      "evidence": "Senior Resident 26/11/2026 ... Faculties ... 27/11/2026",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-26 to 2027-11-27"
+    },
+    "post_names": {
+      "evidence": "Teaching Faculty and Senior Residents",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Professor",
+        "Associate Professor",
+        "Assistant Professor",
+        "Senior Resident"
+      ]
+    },
+    "qualification": {
+      "evidence": "Educational Qualifications: In accordance with the latest guidelines of the National Medical Commission (NMC/MCI).",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "In accordance with the latest guidelines of the National Medical Commission (NMC/MCI)."
+    },
+    "total_vacancies": {
+      "evidence": "Total 9 16 10 31",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": 66
+    }
+  },
+  "first_seen": "2026-11-18T05:47:12+00:00",
+  "id": "dc5ab26e7de9",
+  "kind": "notification",
+  "org": "ESIC",
+  "pdf": {
+    "bytes": 325737,
+    "pages": 12,
+    "sha256": "a53af9e949a72a6ee533669dbc164b7a1b27f1f2376f55897909dca2853b4ab0",
+    "text_kind": "text"
+  },
+  "source_id": "esic-recruitment",
+  "status": "pending_review",
+  "title": "1 ESIC Medical College & Hospital Naroda-Bapunagar, Ahmedabad Walk in Interview for Recruitment of Teaching Faculty and Senior Residents on contract basis at ESIC Medical College & Hospital, Naroda-Bapunagar, Ahmedabad (Gujarat)- PDF size:(318.10 KB) . OBC Certificate Format- PDF size:(283.16 KB) . ",
+  "url": "https://esic.gov.in/attachments/recruitmentfile/Walk_in_Interview_for_Recruitment_of_Teaching_Faculty_and_Senior_Residents_on_contract_basis_at_ESIC_Medical_College_amp_Hospital_Naroda_Bapunagar_Ahmedabad_Gujarat_1794979623.pdf"
+}

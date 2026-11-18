@@ -1,0 +1,39 @@
+{
+  "board_url": "https://www.esic.gov.in/recruitments",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "l, non-smiling expression and with open eyes directed at 1. Advertisement No. 03 & Year 2026 the camera. 2. Post applied for: 3. Department in which applied: 4.",
+      "source": "rule",
+      "value": "03"
+    },
+    "fee": {
+      "evidence": "Demand Draft of Rs. 500/- as Interview Fee, if applicable",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "female": null,
+        "general": 500,
+        "obc": null,
+        "pwd": null,
+        "sc_st": null
+      }
+    }
+  },
+  "first_seen": "2026-11-18T05:47:12+00:00",
+  "id": "35dd91bf629f",
+  "kind": "notification",
+  "org": "ESIC",
+  "pdf": {
+    "bytes": 256601,
+    "pages": 5,
+    "sha256": "30e30cda8c063301fe48c41d41895766470191b51cc69252dd1abe83d54f698d",
+    "text_kind": "text"
+  },
+  "source_id": "esic-recruitment",
+  "status": "pending_review",
+  "title": "1 ESIC Medical College & Hospital Naroda-Bapunagar, Ahmedabad Walk in Interview for Recruitment of Teaching Faculty and Senior Residents on contract basis at ESIC Medical College & Hospital, Naroda-Bapunagar, Ahmedabad (Gujarat)- PDF size:(318.10 KB) . OBC Certificate Format- PDF size:(283.16 KB) . ",
+  "url": "https://esic.gov.in/attachments/recruitmentfile/APPLICATION_FORM_1794979623.pdf"
+}
