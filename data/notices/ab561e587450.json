@@ -11,8 +11,8 @@
     "skip_reason": "",
     "summary_en": "ESIC Medical College and Hospital, Surat has announced walk-in interviews for Teaching Faculty and Senior Residents on a contract basis. Eligible candidates should check the details and attend the interview on the scheduled date.",
     "summary_hi": "ईएसआईसी मेडिकल कॉलेज और अस्पताल, सूरत ने अनुबंध के आधार पर शिक्षण संकाय और सीनियर रेजिडेंट के लिए वॉक-इन इंटरव्यू की घोषणा की है। योग्य उम्मीदवारों को विवरण की जांच करनी चाहिए और निर्धारित तिथि पर इंटरव्यू में शामिल होना चाहिए।",
-    "title_en": "ESIC Surat Teaching Faculty & Senior Resident Recruitment 2026",
-    "title_hi": "ईएसआईसी सूरत शिक्षण संकाय और सीनियर रेजिडेंट भर्ती 2026",
+    "title_en": "ESIC Surat Teaching Faculty Recruitment 2026 – Walk in Interview",
+    "title_hi": "ईएसआईसी सूरत शिक्षण संकाय भर्ती 2026 – वॉक इन इंटरव्यू",
     "type": "Job",
     "vacancies": null
   },
@@ -25,6 +25,7 @@
     "qual": "postgraduate",
     "relax": {}
   },
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -44,10 +45,10 @@
   "org": "ESIC",
   "page": {
     "after_en": [
-      "Candidates attending the walk-in interview will be evaluated based on their qualifications, experience, and performance during the interview process for final selection."
+      "Candidates clearing the walk-in interview and document verification will be offered appointment on a contract basis as per ESIC rules."
     ],
     "after_hi": [
-      "वॉक-इन इंटरव्यू में शामिल होने वाले उम्मीदवारों का चयन अंतिम प्रक्रिया के लिए उनकी योग्यताओं, अनुभव और इंटरव्यू के प्रदर्शन के आधार पर किया जाएगा।"
+      "वॉक-इन इंटरव्यू और दस्तावेज सत्यापन को पास करने वाले उम्मीदवारों को ईएसआईसी नियमों के अनुसार अनुबंध के आधार पर नियुक्ति की पेशकश की जाएगी।"
     ],
     "age": [],
     "apply_start": null,
@@ -55,144 +56,142 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Fill out the application form completely in capital letters.",
-      "Keep all original marksheets, degree certificates, and medical council registrations ready.",
-      "Carry valid identity proofs such as Aadhar Card, PAN Card, or Voter ID."
+      "Read the advertisement and instructions carefully.",
+      "Fill out the application form in capital letters.",
+      "Keep all educational and experience certificates ready.",
+      "Attend the interview on 25 Nov 2026."
     ],
     "checklist_hi": [
-      "बड़े अक्षरों में आवेदन पत्र पूरी तरह से भरें।",
-      "सभी मूल मार्कशीट, डिग्री प्रमाण पत्र और चिकित्सा परिषद पंजीकरण तैयार रखें।",
-      "आधार कार्ड, पैन कार्ड या वोटर आईडी जैसे वैध पहचान प्रमाण साथ रखें।"
+      "विज्ञापन और निर्देशों को ध्यान से पढ़ें।",
+      "कैपिटल अक्षरों में आवेदन पत्र भरें।",
+      "सभी शैक्षिक और अनुभव प्रमाण पत्र तैयार रखें।",
+      "25 नवंबर 2026 को इंटरव्यू में शामिल हों।"
     ],
-    "conducted_by_en": "Employees' State Insurance Corporation Medical College & Hospital, Surat (ESIC)",
-    "conducted_by_hi": "कर्मचारी राज्य बीमा निगम मेडिकल कॉलेज एवं अस्पताल, सूरत (ईएसआईसी)",
+    "conducted_by_en": "ESIC Medical College & Hospital, Surat",
+    "conducted_by_hi": "ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, सूरत",
     "dates": [
       {
-        "label_en": "Interview date",
-        "label_hi": "इंटरव्यू की तारीख",
+        "label_en": "Interview Date",
+        "label_hi": "इंटरव्यू तिथि",
         "value_en": "25 Nov 2026",
         "value_hi": "25 नवंबर 2026"
       }
     ],
     "documents_en": [
-      "Demand Draft as Interview Fee (if applicable)",
+      "Demand Draft as Interview Fee, if applicable",
       "Certificate of Class 10th for Date of Birth",
-      "All Marksheets and Degree Certificate of MBBS",
+      "All Marks sheets of MBBS",
       "Attempt Certificate of MBBS",
-      "All Marksheets and Degree Certificate of MD / MS / DNB / Dr.NB",
-      "Attempt Certificate of MD / MS / DNB",
-      "EWS / OBC / SC / ST Certificate (if applicable)",
-      "NMC / State Medical Council Registration Certificate",
+      "Degree Certificate of MBBS",
+      "All Marks sheet of MD/MS/DNB",
+      "Attempt Certificate of MD/MS/DNB",
+      "Degree Certificate of MD/MS/DNB/Dr.NB examination",
+      "EWS/OBC/SC/ST Certificate, when applicable",
+      "NMC/State Medical Council Registration Certificate",
       "Aadhar Card",
-      "NOC from current employer (if applicable)",
-      "Relieving certificate from previous employer (if applicable)",
-      "Experience certificates"
+      "NOC from current Employer, if applicable",
+      "Relieving Certificate from previous Employer, if applicable",
+      "Experience Certificate, if applicable"
     ],
     "documents_hi": [
-      "इंटरव्यू शुल्क के रूप में डिमांड ड्राफ्ट (यदि लागू हो)",
+      "इंटरव्यू शुल्क के रूप में डिमांड ड्राफ्ट, यदि लागू हो",
       "जन्म तिथि के लिए 10वीं कक्षा का प्रमाण पत्र",
-      "एमबीबीएस की सभी मार्कशीट और डिग्री प्रमाण पत्र",
+      "एमबीबीएस की सभी अंकतालिकाएं",
       "एमबीबीएस का प्रयास प्रमाण पत्र",
-      "एमडी / एमएस / डीएनबी / डॉ.एनबी की सभी मार्कशीट और डिग्री प्रमाण पत्र",
-      "एमडी / एमएस / डीएनबी का प्रयास प्रमाण पत्र",
-      "ईडब्ल्यूएस / ओबीसी / एससी / एसटी प्रमाण पत्र (यदि लागू हो)",
-      "एनएमसी / राज्य चिकित्सा परिषद पंजीकरण प्रमाण पत्र",
+      "एमबीबीएस की डिग्री प्रमाण पत्र",
+      "एमडी/एमएस/डीएनबी की सभी अंकतालिकाएं",
+      "एमडी/एमएस/डीएनबी का प्रयास प्रमाण पत्र",
+      "एमडी/एमएस/डीएनबी/डॉ.एनबी परीक्षा का डिग्री प्रमाण पत्र",
+      "ईडब्ल्यूएस/ओबीसी/एससी/एसटी प्रमाण पत्र, जब लागू हो",
+      "एनएमसी/राज्य चिकित्सा परिषद पंजीकरण प्रमाण पत्र",
       "आधार कार्ड",
-      "वर्तमान नियोक्ता से एनओसी (यदि लागू हो)",
-      "पिछले नियोक्ता से कार्यमुक्त प्रमाण पत्र (यदि लागू हो)",
-      "अनुभव प्रमाण पत्र"
+      "वर्तमान नियोक्ता से एनओसी, यदि लागू हो",
+      "पिछले नियोक्ता से कार्यमुक्त प्रमाण पत्र, यदि लागू हो",
+      "अनुभव प्रमाण पत्र, यदि लागू हो"
     ],
     "eligibility": [
       {
         "label_en": "Education",
         "label_hi": "शिक्षा",
-        "value_en": "MBBS / MD / MS / DNB / Dr.NB as per the notified post",
-        "value_hi": "अधिसूचित पद के अनुसार एमबीबीएस / एमडी / एमएस / डीएनबी / डॉ.एनबी"
+        "value_en": "MBBS/MD/MS/DNB/Dr.NB etc. with relevant certificates and medical council registration",
+        "value_hi": "एमबीबीएस/एमडी/एमएस/डीएनबी/डॉ.एनबी आदि प्रासंगिक प्रमाण पत्र और मेडिकल काउंसिल पंजीकरण के साथ"
       }
     ],
     "exam_date": "2026-11-25",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is a direct walk-in interview recruitment process conducted by ESIC Medical College & Hospital, Surat for hiring qualified medical professionals on a contract basis.",
-        "a_hi": "यह अनुबंध के आधार पर योग्य चिकित्सा पेशेवरों को काम पर रखने के लिए ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, सूरत द्वारा आयोजित एक सीधी वॉक-इन इंटरव्यू भर्ती प्रक्रिया है।",
-        "q_en": "What is ESIC Surat Teaching Faculty and Senior Resident Recruitment?",
-        "q_hi": "ईएसआईसी सूरत शिक्षण संकाय और सीनियर रेजिडेंट भर्ती क्या है?"
+        "a_en": "ESIC Medical College & Hospital, Surat conducts walk-in interviews to hire qualified medical professionals for Teaching Faculty and Senior Resident positions on a contract basis.",
+        "a_hi": "ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, सूरत अनुबंध के आधार पर शिक्षण संकाय और सीनियर रेजिडेंट पदों के लिए योग्य चिकित्सा पेशेवरों को काम पर रखने के लिए वॉक-इन इंटरव्यू आयोजित करता है।",
+        "q_en": "What is ESIC Surat Teaching Faculty Recruitment?",
+        "q_hi": "ईएसआईसी सूरत शिक्षण संकाय भर्ती क्या है?"
       }
     ],
     "extra": [
       {
-        "label_en": "Advertisement Number",
-        "label_hi": "विज्ञापन संख्या",
-        "value_en": "03 of 2026",
-        "value_hi": "03/2026"
+        "label_en": "Nature of Appointment",
+        "label_hi": "नियुक्ति की प्रकृति",
+        "value_en": "Contract basis",
+        "value_hi": "अनुबंध के आधार पर"
       }
     ],
     "faq": [
       {
         "a_en": "The walk-in interview is scheduled for 25 Nov 2026.",
         "a_hi": "वॉक-इन इंटरव्यू 25 नवंबर 2026 को निर्धारित है।",
-        "q_en": "When is the ESIC Surat walk-in interview for Teaching Faculty and Senior Residents?",
-        "q_hi": "शिक्षण संकाय और सीनियर रेजिडेंट के लिए ईएसआईसी सूरत वॉक-इन इंटरव्यू कब है?"
+        "q_en": "What is the interview date for ESIC Surat Recruitment 2026?",
+        "q_hi": "ईएसआईसी सूरत भर्ती 2026 के लिए इंटरव्यू की तारीख क्या है?"
       },
       {
-        "a_en": "The advertisement number is 03 of 2026.",
-        "a_hi": "विज्ञापन संख्या 03/2026 है।",
-        "q_en": "What is the advertisement number for this recruitment?",
-        "q_hi": "इस भर्ती के लिए विज्ञापन संख्या क्या है?"
+        "a_en": "The posts include Teaching Faculty and Senior Residents.",
+        "a_hi": "पदों में शिक्षण संकाय और सीनियर रेजिडेंट शामिल हैं।",
+        "q_en": "What posts are offered in ESIC Surat Notification 2026?",
+        "q_hi": "ईएसआईसी सूरत अधिसूचना 2026 में कौन से पद प्रदान किए गए हैं?"
       },
       {
-        "a_en": "It will be held at ESIC Medical College & Hospital, Surat (Gujarat).",
-        "a_hi": "यह ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, सूरत (गुजरात) में आयोजित की जाएगी।",
-        "q_en": "Where will the recruitment take place?",
-        "q_hi": "भर्ती कहाँ आयोजित की जाएगी?"
-      },
-      {
-        "a_en": "Candidates must carry their 10th certificate, MBBS/MD/MS/DNB degrees and marksheets, attempt certificates, NMC/State Medical Council registration, Aadhar card, and experience certificates.",
-        "a_hi": "उम्मीदवारों को अपना 10वीं का प्रमाण पत्र, एमबीबीएस/एमडी/एमएस/डीएनबी डिग्री और मार्कशीट, प्रयास प्रमाण पत्र, एनएमसी/राज्य चिकित्सा परिषद पंजीकरण, आधार कार्ड और अनुभव प्रमाण पत्र ले जाने चाहिए।",
-        "q_en": "What documents are required for the interview?",
-        "q_hi": "इंटरव्यू के लिए कौन से दस्तावेजों की आवश्यकता है?"
+        "a_en": "Candidates need to download the application form, fill it in person with capital letters, and attend the walk-in interview with all necessary documents.",
+        "a_hi": "उम्मीदवारों को आवेदन पत्र डाउनलोड करना होगा, इसे व्यक्तिगत रूप से कैपिटल अक्षरों में भरना होगा, और सभी आवश्यक दस्तावेजों के साथ वॉक-इन इंटरव्यू में शामिल होना होगा।",
+        "q_en": "How can I apply for ESIC Surat Walk-in Interview?",
+        "q_hi": "मैं ईएसआईसी सूरत वॉक-इन इंटरव्यू के लिए कैसे आवेदन कर सकता हूं?"
       }
     ],
     "fees": [],
-    "h1_en": "ESIC Surat Teaching Faculty & Senior Resident Recruitment 2026",
-    "h1_hi": "ईएसआईसी सूरत शिक्षण संकाय और सीनियर रेजिडेंट भर्ती 2026",
+    "h1_en": "ESIC Surat Teaching Faculty Recruitment 2026 – Walk in Interview",
+    "h1_hi": "ईएसआईसी सूरत शिक्षण संकाय भर्ती 2026 – वॉक इन इंटरव्यू",
     "hindi_notice_url": null,
     "how_en": [
-      "Download the application form and read the advertisement carefully.",
-      "Fill out the application form in person using clear capital letters.",
-      "Affix a passport-size photograph with face and both ears clearly visible and sign across it.",
-      "Attach the demand draft for the interview fee if applicable, along with self-attested copies of required certificates.",
-      "Attend the walk-in interview on the scheduled date with all original documents."
+      "Download the application form from the official website.",
+      "Fill out the application form carefully in capital letters in person.",
+      "Affix a passport-size photo with a visible face and sign across it.",
+      "Attend the walk-in interview on 25 Nov 2026 with the filled application form and all original and self-attested copies of required documents."
     ],
     "how_hi": [
-      "आवेदन पत्र डाउनलोड करें और विज्ञापन को ध्यान से पढ़ें।",
-      "स्पष्ट और बड़े अक्षरों में स्वयं आवेदन पत्र भरें।",
-      "चेहरे और दोनों कानों के साथ स्पष्ट रूप से दिखाई देने वाला पासपोर्ट आकार का फोटो चिपकाएं और उस पर हस्ताक्षर करें।",
-      "यदि लागू हो तो इंटरव्यू शुल्क के लिए डिमांड ड्राफ्ट और आवश्यक प्रमाण पत्रों की प्रतियों के साथ संलग्न करें।",
-      "निर्धारित तिथि पर सभी मूल दस्तावेजों के साथ वॉक-इन इंटरव्यू में शामिल हों।"
+      "आधिकारिक वेबसाइट से आवेदन पत्र डाउनलोड करें।",
+      "व्यक्तिगत रूप से स्पष्ट और कैपिटल अक्षरों में आवेदन पत्र सावधानीपूर्वक भरें।",
+      "दिखाई देने वाले चेहरे के साथ पासपोर्ट साइज फोटो चिपकाएं और उस पर हस्ताक्षर करें।",
+      "भरे हुए आवेदन पत्र और आवश्यक दस्तावेजों की सभी मूल और स्व-सत्यापित प्रतियों के साथ 25 नवंबर 2026 को वॉक-इन इंटरव्यू में शामिल हों।"
     ],
-    "intro_en": "ESIC Medical College and Hospital, Surat (Gujarat) has released Advertisement No. 03 of 2026 for walk-in interviews to recruit Teaching Faculty and Senior Residents on a contract basis. Eligible medical professionals should fill out the application form in capital letters and attend the interview on 25 Nov 2026 along with all required documents and certificates. Candidates must ensure they meet the qualification and registration requirements before attending.",
-    "intro_hi": "ईएसआईसी मेडिकल कॉलेज और अस्पताल, सूरत (गुजरात) ने अनुबंध के आधार पर शिक्षण संकाय और सीनियर रेजिडेंट के पदों पर भर्ती के लिए वॉक-इन इंटरव्यू हेतु विज्ञापन संख्या 03/2026 जारी किया है। योग्य चिकित्सा पेशेवरों को बड़े अक्षरों में आवेदन पत्र भरना चाहिए और सभी आवश्यक दस्तावेजों और प्रमाण पत्र के साथ 25 नवंबर 2026 को इंटरव्यू में शामिल होना चाहिए।",
+    "intro_en": "ESIC Medical College & Hospital, Surat (Gujarat) has released the recruitment notification for Teaching Faculty and Senior Residents on a contract basis under Advertisement No. 03 of 2026. Eligible and interested candidates need to attend the walk-in interview scheduled for 25 Nov 2026 along with the filled application form and required documents. Candidates must ensure they meet all eligibility criteria before appearing for the interview.",
+    "intro_hi": "ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, सूरत (गुजरात) ने विज्ञापन संख्या 03 के तहत अनुबंध के आधार पर शिक्षण संकाय और सीनियर रेजिडेंट पदों के लिए भर्ती अधिसूचना जारी की है। योग्य और इच्छुक उम्मीदवारों को आवश्यक दस्तावेजों और भरे हुए आवेदन पत्र के साथ 25 नवंबर 2026 को निर्धारित वॉक-इन इंटरव्यू में शामिल होना होगा। उम्मीदवारों को इंटरव्यू में उपस्थित होने से पहले सभी पात्रता मानदंडों को पूरा करना सुनिश्चित करना चाहिए।",
     "last_date": "2026-11-25",
     "mistakes_en": [
-      "Submitting an incomplete application form.",
-      "Failing to sign across the passport-size photograph.",
-      "Not carrying original educational and medical council registration certificates to the interview."
+      "Filling out the application form with incomplete details.",
+      "Not affixing a properly signed photograph with both ears visible.",
+      "Failing to carry original and self-attested copies of all required certificates."
     ],
     "mistakes_hi": [
-      "अधूरा आवेदन पत्र जमा करना।",
-      "पासपोर्ट आकार के फोटो पर पार हस्ताक्षर करने में विफल रहना।",
-      "इंटरव्यू में मूल शैक्षणिक और चिकित्सा परिषद पंजीकरण प्रमाण पत्र न ले जाना।"
+      "अधूरे विवरण के साथ आवेदन पत्र भरना।",
+      "दोनों कान दिखाई देने वाली ठीक से हस्ताक्षरित तस्वीर न चिपकाना।",
+      "सभी आवश्यक प्रमाण पत्र की मूल और स्व-सत्यापित प्रतियां साथ न ले जाना।"
     ],
     "not_en": [
-      "Candidates with incomplete application forms or without mandatory NMC/State Medical Council registration certificates."
+      "Candidates with incomplete application forms or missing mandatory documents will not be considered."
     ],
     "not_hi": [
-      "अधूरे आवेदन पत्र वाले या अनिवार्य एनएमसी/राज्य चिकित्सा परिषद पंजीकरण प्रमाण पत्र के बिना उम्मीदवार।"
+      "अधूरे आवेदन पत्र या आवश्यक दस्तावेजों के बिना उम्मीदवारों पर विचार नहीं किया जाएगा।"
     ],
     "notice_date": null,
-    "official_site": "https://esic.gov.in/recruitments",
+    "official_site": "https://www.esic.gov.in/recruitments",
     "physical": [],
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
@@ -204,15 +203,21 @@
       },
       {
         "label_en": "Interview date",
-        "label_hi": "इंटरव्यू की तारीख",
+        "label_hi": "इंटरव्यू तिथि",
         "value_en": "25 Nov 2026",
         "value_hi": "25 नवंबर 2026"
       },
       {
-        "label_en": "Advertisement number",
+        "label_en": "Advertisement Number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "03 of 2026",
-        "value_hi": "03/2026"
+        "value_hi": "03 of 2026"
+      },
+      {
+        "label_en": "Mode of selection",
+        "label_hi": "चयन का तरीका",
+        "value_en": "Walk-in Interview",
+        "value_hi": "वॉक-इन इंटरव्यू"
       }
     ],
     "salary": [],
@@ -225,11 +230,11 @@
       "दस्तावेज़ सत्यापन"
     ],
     "share_card": {
-      "headline_en": "Walk-in Interview 2026",
-      "headline_hi": "वॉक-इन इंटरव्यू 2026",
+      "headline_en": "Walk in Interview 2026",
+      "headline_hi": "वॉक इन इंटरव्यू 2026",
       "kind": "job",
-      "line_en": "ESIC Surat Teaching Faculty",
-      "line_hi": "ईएसआईसी सूरत शिक्षण संकाय",
+      "line_en": "Teaching Faculty & Resident",
+      "line_hi": "शिक्षण संकाय और रेजिडेंट",
       "posts": null
     },
     "status_en": "",
@@ -238,19 +243,19 @@
     "summary_hi": "ईएसआईसी मेडिकल कॉलेज और अस्पताल, सूरत ने अनुबंध के आधार पर शिक्षण संकाय और सीनियर रेजिडेंट के लिए वॉक-इन इंटरव्यू की घोषणा की है। योग्य उम्मीदवारों को विवरण की जांच करनी चाहिए और 25 नवंबर 2026 को इंटरव्यू में शामिल होना चाहिए।",
     "vacancies": [
       {
-        "detail_en": "Contract basis at ESIC Medical College & Hospital, Surat",
-        "detail_hi": "ईएसआईसी मेडिकल कॉलेज और अस्पताल, सूरत में अनुबंध के आधार पर",
+        "detail_en": "On contract basis",
+        "detail_hi": "अनुबंध के आधार पर",
         "post_en": "Teaching Faculty and Senior Residents",
         "post_hi": "शिक्षण संकाय और सीनियर रेजिडेंट",
-        "total": ""
+        "total": null
       }
     ],
     "video_url": null,
     "who_en": [
-      "Medical professionals with MBBS, MD, MS, DNB, or Dr.NB degrees looking for faculty or resident positions at ESIC Surat."
+      "Medical professionals with MBBS/MD/MS/DNB degrees looking for faculty or senior resident positions at ESIC Surat."
     ],
     "who_hi": [
-      "ईएसआईसी सूरत में संकाय या रेजिडेंट पदों की तलाश कर रहे एमबीबीएस, एमडी, एमएस, डीएनबी या डॉ.एनबी डिग्रीधारी चिकित्सा पेशेवर।"
+      "ईएसआईसी सूरत में संकाय या सीनियर रेजिडेंट पदों की तलाश कर रहे एमबीबीएस/एमडी/एमएस/डीएनबी डिग्री धारक चिकित्सा पेशेवर।"
     ]
   },
   "pdf": {
@@ -260,10 +265,6 @@
     "text_kind": "text"
   },
   "published_at": "2026-11-18T11:34:26Z",
-  "qual": [
-    "postgraduate"
-  ],
-  "rewrite": true,
   "slug": "esic-surat-teaching-faculty-senior-resident-recruitment-2026",
   "source_id": "esic-recruitment",
   "status": "approved",

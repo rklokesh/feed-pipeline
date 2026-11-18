@@ -1,5 +1,20 @@
 {
   "board_url": "https://kvs.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Section Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal administrative circular regarding sanction and restructuring of posts, not a job vacancy or recruitment notice",
+    "summary_en": "Kendriya Vidyalaya Sangathan has issued a sanction order for the creation of 45 Section Officer posts in lieu of surrendering 57 Assistant Section Officer posts.",
+    "summary_hi": "केंद्रीय विद्यालय संगठन ने 57 सहायक अनुभाग अधिकारी पदों के प्रत्यर्पण के बदले 45 अनुभाग अधिकारी पदों के सृजन के लिए स्वीकृति आदेश जारी किया है।",
+    "title_en": "KVS Sanction of Section Officer Posts",
+    "title_hi": "केंद्रीय विद्यालय संगठन अनुभाग अधिकारी पद सृजन",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -26,7 +41,7 @@
     "text_kind": "text"
   },
   "source_id": "kvs-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "केंद्रीय विद्यालय संगठन में सहायक अनुभाग अधिकारी के वेतन स्तर-6 के 57 पदों के प्रत्यर्पण के बदले वेतन स्तर-7 में अनुभाग अधिकारी के 45 पदों के सृजन की स्वीकृति के संबंध में। नई",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111641.pdf"
 }

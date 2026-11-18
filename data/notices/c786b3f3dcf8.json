@@ -1,5 +1,23 @@
 {
+  "auto_published": true,
   "board_url": "https://www.esic.gov.in/recruitments",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Professor in Transfusion Medicine and Emergency Medicine",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "The interviews for Professor in Transfusion Medicine and Emergency Medicine have been postponed due to administrative reasons. New dates will be announced later.",
+    "summary_hi": "प्रशासनिक कारणों से ट्रांसफ्यूजन मेडिसिन और इमरजेंसी मेडिसिन में प्रोफेसर के साक्षात्कार स्थगित कर दिए गए हैं। नई तिथियों की घोषणा बाद में की जाएगी।",
+    "title_en": "ESIC Professor Interview Postponed 2026 – Rescheduling Notice",
+    "title_hi": "ईएसआईसी प्रोफेसर साक्षात्कार स्थगित 2026 – पुनर्निर्धारण सूचना",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -33,16 +51,213 @@
   },
   "first_seen": "2026-11-16T09:05:03+00:00",
   "id": "c786b3f3dcf8",
+  "issue": 2472,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-16",
   "org": "ESIC",
+  "page": {
+    "after_en": [
+      "Fresh interview dates will be announced on the official ESIC website.",
+      "New call letters will be issued to candidates after the dates are finalized."
+    ],
+    "after_hi": [
+      "ईएसआईसी की आधिकारिक वेबसाइट पर नई साक्षात्कार तिथियों की घोषणा की जाएगी।",
+      "तिथियों को अंतिम रूप दिए जाने के बाद उम्मीदवारों को नए बुलावा पत्र जारी किए जाएंगे।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://www.esic.gov.in",
+    "changes": [
+      {
+        "new_en": "Postponed",
+        "new_hi": "स्थगित",
+        "old_en": "20 Nov 2026",
+        "old_hi": "20 नव 2026",
+        "what_en": "Interview Date for Transfusion Medicine",
+        "what_hi": "ट्रांसफ्यूजन मेडिसिन के लिए साक्षात्कार की तिथि"
+      },
+      {
+        "new_en": "Postponed",
+        "new_hi": "स्थगित",
+        "old_en": "26 Nov 2026",
+        "old_hi": "26 नव 2026",
+        "what_en": "Interview Date for Emergency Medicine",
+        "what_hi": "इमरजेंसी मेडिसिन के लिए साक्षात्कार की तिथि"
+      }
+    ],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Keep checking the ESIC website for new schedule updates.",
+      "Keep your application details ready."
+    ],
+    "checklist_hi": [
+      "नई अनुसूची अपडेट के लिए ईएसआईसी वेबसाइट देखते रहें।",
+      "अपने आवेदन का विवरण तैयार रखें।"
+    ],
+    "conducted_by_en": "Employees’ State Insurance Corporation (ESIC)",
+    "conducted_by_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईसी)",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "सूचना की तिथि",
+        "value_en": "16 Nov 2026",
+        "value_hi": "16 नव 2026"
+      },
+      {
+        "label_en": "Original Interview Date (Transfusion Medicine)",
+        "label_hi": "मूल साक्षात्कार तिथि (ट्रांसफ्यूजन मेडिसिन)",
+        "value_en": "20 Nov 2026",
+        "value_hi": "20 नव 2026"
+      },
+      {
+        "label_en": "Original Interview Date (Emergency Medicine)",
+        "label_hi": "मूल साक्षात्कार तिथि (इमरजेंसी मेडिसिन)",
+        "value_en": "26 Nov 2026",
+        "value_hi": "26 नव 2026"
+      }
+    ],
+    "documents_en": [
+      "Official ID Proof",
+      "Call letter (when released)"
+    ],
+    "documents_hi": [
+      "आधिकारिक पहचान प्रमाण",
+      "बुलावा पत्र (जारी होने पर)"
+    ],
+    "eligibility": [],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "The interviews for Professor in Transfusion Medicine and Emergency Medicine have been deferred due to administrative reasons.",
+        "a_hi": "प्रशासनिक कारणों से ट्रांसफ्यूजन मेडिसिन और इमरजेंसी मेडिसिन में प्रोफेसर के साक्षात्कार स्थगित कर दिए गए हैं।",
+        "q_en": "Why were the ESIC Professor interviews postponed?",
+        "q_hi": "ईएसआईसी प्रोफेसर के साक्षात्कार क्यों स्थगित किए गए?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "No, the interviews have only been kept in abeyance (postponed) due to administrative reasons. New dates will be announced.",
+        "a_hi": "नहीं, प्रशासनिक कारणों से साक्षात्कार केवल स्थगित किए गए हैं। नई तिथियों की घोषणा की जाएगी।",
+        "q_en": "Are the ESIC Professor interviews cancelled permanently?",
+        "q_hi": "क्या ईएसआईसी प्रोफेसर के साक्षात्कार स्थायी रूप से रद्द कर दिए गए हैं?"
+      },
+      {
+        "a_en": "The interviews were originally scheduled for 20.11.2026 (Transfusion Medicine) and 26.11.2026 (Emergency Medicine).",
+        "a_hi": "साक्षात्कार मूल रूप से 20.11.2026 (ट्रांसफ्यूजन मेडिसिन) और 26.11.2026 (इमरजेंसी मेडिसिन) को निर्धारित किए गए थे।",
+        "q_en": "When were the interviews originally scheduled?",
+        "q_hi": "साक्षात्कार मूल रूप से कब निर्धारित किए गए थे?"
+      },
+      {
+        "a_en": "Call letters will be issued to candidates after the finalization of new interview dates.",
+        "a_hi": "नई साक्षात्कार तिथियों को अंतिम रूप दिए जाने के बाद उम्मीदवारों को बुलावा पत्र जारी किए जाएंगे।",
+        "q_en": "How will I get the new call letter?",
+        "q_hi": "मुझे नया बुलावा पत्र कैसे मिलेगा?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "ESIC Professor Interview Postponed 2026 – Rescheduling Notice",
+    "h1_hi": "ईएसआईसी प्रोफेसर साक्षात्कार स्थगित 2026 – पुनर्निर्धारण सूचना",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official ESIC website at www.esic.gov.in.",
+      "Check the recruitment section for updates regarding new interview dates.",
+      "Download the new call letter once released."
+    ],
+    "how_hi": [
+      "ईएसआईसी की आधिकारिक वेबसाइट www.esic.gov.in पर जाएं।",
+      "नई साक्षात्कार तिथियों के संबंध में अपडेट के लिए भर्ती अनुभाग देखें।",
+      "जारी होने पर नया बुलावा पत्र डाउनलोड करें।"
+    ],
+    "intro_en": "The Employees’ State Insurance Corporation (ESIC) has issued a notice regarding the deferment of interviews for the post of Professor in Transfusion Medicine and Emergency Medicine. The interviews previously scheduled for 20.11.2026 and 26.11.2026 have been kept in abeyance due to administrative reasons. Candidates are advised to check the official website for revised interview dates and call letters.",
+    "intro_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईसी) ने ट्रांसफ्यूजन मेडिसिन और इमरजेंसी मेडिसिन में प्रोफेसर के पद के लिए साक्षात्कार स्थगित करने के संबंध में एक नोटिस जारी किया है। प्रशासनिक कारणों से 20.11.2026 और 26.11.2026 को होने वाले साक्षात्कार स्थगित कर दिए गए हैं। उम्मीदवारों को संशोधित साक्षात्कार तिथियों और बुलावा पत्र के लिए आधिकारिक वेबसाइट देखने की सलाह दी जाती है।",
+    "last_date": null,
+    "mistakes_en": [],
+    "mistakes_hi": [],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-16",
+    "official_site": "https://www.esic.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Professor (Transfusion Medicine & Emergency Medicine)",
+        "value_hi": "प्रोफेसर (ट्रांसफ्यूजन मेडिसिन और इमरजेंसी मेडिसिन)"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "F.No.A-12011/1/2026-EXAM",
+        "value_hi": "F.No.A-12011/1/2026-EXAM"
+      },
+      {
+        "label_en": "Notice Date",
+        "label_hi": "सूचना की तिथि",
+        "value_en": "16 Nov 2026",
+        "value_hi": "16 नव 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Interview"
+    ],
+    "selection_hi": [
+      "साक्षात्कार"
+    ],
+    "share_card": {
+      "headline_en": "Interview Postponed",
+      "headline_hi": "साक्षात्कार स्थगित",
+      "kind": "sched",
+      "line_en": "ESIC Professor Interview",
+      "line_hi": "ईएसआईसी प्रोफेसर साक्षात्कार",
+      "posts": null
+    },
+    "status_en": "Interviews postponed, new dates to be announced",
+    "status_hi": "साक्षात्कार स्थगित, नई तिथियों की घोषणा की जाएगी",
+    "summary_en": "The interviews for Professor in Transfusion Medicine and Emergency Medicine have been postponed due to administrative reasons. New dates will be announced later by ESIC.",
+    "summary_hi": "प्रशासनिक कारणों से ट्रांसफ्यूजन मेडिसिन और इमरजेंसी मेडिसिन में प्रोफेसर के साक्षात्कार स्थगित कर दिए गए हैं। नई तिथियों की घोषणा ईएसआईसी द्वारा बाद में की जाएगी।",
+    "vacancies": [
+      {
+        "detail_en": "Interview postponed",
+        "detail_hi": "साक्षात्कार स्थगित",
+        "post_en": "Professor in Transfusion Medicine",
+        "post_hi": "ट्रांसफ्यूजन मेडिसिन में प्रोफेसर",
+        "total": null
+      },
+      {
+        "detail_en": "Interview postponed",
+        "detail_hi": "साक्षात्कार स्थगित",
+        "post_en": "Professor in Emergency Medicine",
+        "post_hi": "इमरजेंसी मेडिसिन में प्रोफेसर",
+        "total": null
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates who applied for Professor posts in Transfusion Medicine and Emergency Medicine under ESIC."
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जिन्होंने ईएसआईसी के तहत ट्रांसफ्यूजन मेडिसिन और इमरजेंसी मेडिसिन में प्रोफेसर पदों के लिए आवेदन किया था।"
+    ]
+  },
   "pdf": {
     "bytes": 263877,
     "pages": 1,
     "sha256": "9a0cea63aa2f71c2ba34d4d061b0b76ad5fa3819b1f56a4dd6250ef083cf13a8",
     "text_kind": "text"
   },
+  "published_at": "2026-11-18T12:33:21Z",
+  "qual": [
+    "postgraduate"
+  ],
+  "slug": "esic-professor-interview-postponed-2026-rescheduling-notice",
   "source_id": "esic-recruitment",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1 Recruitment Branch NOTICE - Recruitment of Professors in ESIC PGIMSRS & ESIC Medical Colleges on direct recruitment basis (Advertisement dated 19.05.2026)-Rescheduling of Interviews for the Specialties of Transfusion Medicine and Emergency Medicine- PDF size:(257.69 KB) . 2026-11-16 Interview(2026",
   "url": "https://esic.gov.in/attachments/recruitmentfile/NOTICE_Recruitment_of_Professors_in_ESIC_PGIMSRS_amp_ESIC_Medical_Colleges_on_direct_recruitment_basis_Advertisement_dated_19_05_2026_Rescheduling_of_Interviews_for_the_Specialties_of_Transfusion_Medicine_and_Emergency_Medicine_1794819555.pdf"
 }
