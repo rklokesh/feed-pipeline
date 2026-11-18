@@ -44,6 +44,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PREPARE_LIMIT: "10"   # small batches: every run finishes and saves; a backlog clears run by run instead of timing out
         run: python scripts/prepare.py
       - name: Write notice pages (new ones + a few older pages upgraded to the full layout each run)
         env:
