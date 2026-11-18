@@ -1,5 +1,21 @@
 {
+  "auto_published": true,
   "board_url": "https://www.esic.gov.in/recruitments",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Teaching Faculty, Senior Residents",
+    "provider": "gemini/gemini-flash-latest",
+    "skip_reason": "",
+    "summary_en": "ESIC Medical College & Hospital, Naroda-Bapunagar has released the application form for contractual recruitment of Teaching Faculty and Senior Residents under Advt. No. 03/2026. Interested candidates must fill out the form and appear for the walk-in interview with required documents.",
+    "summary_hi": "ईएसआईसी मेडिकल कॉलेज एवं अस्पताल, नरोदा-बापूनगर ने विज्ञापन संख्या 03/2026 के तहत टीचिंग फैकल्टी और सीनियर रेजिडेंट पदों के लिए आवेदन पत्र जारी किया है। इच्छुक उम्मीदवार फॉर्म भरकर आवश्यक दस्तावेजों के साथ वॉक-इन इंटरव्यू में उपस्थित हों।",
+    "title_en": "ESIC Ahmedabad Faculty and Senior Resident Recruitment",
+    "title_hi": "ईएसआईसी अहमदाबाद फैकल्टी और सीनियर रेजिडेंट भर्ती",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -24,6 +40,8 @@
   },
   "first_seen": "2026-11-18T05:47:12+00:00",
   "id": "35dd91bf629f",
+  "issue": 2426,
+  "issue_tidy": true,
   "kind": "notification",
   "org": "ESIC",
   "pdf": {
@@ -32,8 +50,9 @@
     "sha256": "30e30cda8c063301fe48c41d41895766470191b51cc69252dd1abe83d54f698d",
     "text_kind": "text"
   },
+  "published_at": "2026-11-18T06:40:57Z",
   "source_id": "esic-recruitment",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1 ESIC Medical College & Hospital Naroda-Bapunagar, Ahmedabad Walk in Interview for Recruitment of Teaching Faculty and Senior Residents on contract basis at ESIC Medical College & Hospital, Naroda-Bapunagar, Ahmedabad (Gujarat)- PDF size:(318.10 KB) . OBC Certificate Format- PDF size:(283.16 KB) . ",
   "url": "https://esic.gov.in/attachments/recruitmentfile/APPLICATION_FORM_1794979623.pdf"
 }
