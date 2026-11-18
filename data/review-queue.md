@@ -1,6 +1,6 @@
-# Review queue — 59 pending
+# Review queue — 49 pending
 
-_Updated 2026-11-18T08:00:15+00:00_
+_Updated 2026-11-18T08:19:17+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -12,13 +12,10 @@ _Updated 2026-11-18T08:00:15+00:00_
 | 2026-11-18 | SSC | answer_key | Combined Higher Secondary (10+2) Level Examination, 2025 (Tier-II): Uploading of Final Ans | — | — | — | — | [open](https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/answer_key_17112026.pdf) |
 | 2026-11-17 | UKSSSC | other | Accessible Version : View (6 MB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/20261117947374675.pdf) |
 | 2026-11-17 | UKSSSC | other | Accessible Version : View (366 KB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/20261117782938234.pdf) |
-| 2026-11-17 | RSSB Rajasthan | info | 13-11-2026 - Motor Vehicle Sub Inspector 2021 : Ammended Office Order Regarding Document V | — | — | — | — | [open](https://rssb.rajasthan.gov.in/storage/news_item/1794931032.pdf) |
-| 2026-11-17 | RPSC | result | 17/11/2026 Result Preamble for Asst. Prof. (Sanskrit College Edu.) - 2024 (Jyotish Falit) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/Result/EE669B0807B3478C80EDF245F17F2105.pdf) |
 | 2026-11-17 | RPSC | other | 17/11/2026 Question Paper for Protection Officer - 2025 (Paper-II) (Law) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/D39C13A8-504D-4F14-B40E-2AF4F6EA3EC6.pdf) |
 | 2026-11-17 | RPSC | other | 17/11/2026 Question Paper for Protection Officer - 2025 (Paper-I) (G.K) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/39AEEF32-2A94-4AF7-BCD1-1F4B2EB5D1FE.pdf) |
 | 2026-11-17 | RPSC | other | 17/11/2026 Question Paper for Protection Officer - 2025 (Paper-II) (Social Work) | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/PreviousQuestionPaper/1A5AEE48-A423-4A4E-A357-327F8E88916A.pdf) |
 | 2026-11-17 | RPSC | other | 17/11/2026 Additional Provisional List for Eligibility Checking for Agriculture Dept. Exam | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/Result/088BC0AEC1FD4A17BAD51F513827C864.pdf) |
-| 2026-11-17 | NTA | other | Advance Intimation of Examination City allotted to the applicants of the Rashtriya Indian  | — | — | — | — | [open](https://nta.ac.in/Download/Notice/Notice_20261117205801.pdf) |
 | 2026-11-17 | UPPSC | result | 2. LIST OF PROVISIONALLY SELECTED CANDIDATES IN ADVT. NO. A-5/E-1/2025, ASSISTANT .. Visib | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq5GDnL3/PIOE) |
 | 2026-11-17 | UPPSC | result | 1. LIST OF SELECTED CANDIDATES IN Advt. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTM.. Visi | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq1V5zwlKle8k) |
 | 2026-11-17 | UPPSC | result | 17 Dec 2026 LIST OF PROVISIONALLY SELECTED CANDIDATES IN ADVT. NO. A-5/E-1/2025, ASSISTANT | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq+ZDBcgQKxjJ) |
@@ -26,8 +23,6 @@ _Updated 2026-11-18T08:00:15+00:00_
 | 2026-11-17 | UPPSC | result | 16 Dec 2026 LIST OF SELECTED CANDIDATES IN Advt. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPAR | — | — | — | — | [open](https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq1b9+dbHbD9+) |
 | 2026-11-17 | SSC | other | Notice of Grade 'C' Stenographers Limited Departmental Competitive Examination, 2026 | 2026-12-08 | — | — | — | [open](https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_STENO-LDC_2026.pdf) |
 | 2026-11-17 | SSC | other | Advisory for Candidates regarding Aadhaar Data Updates and Biometric Authentication. | — | — | — | — | [open](https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/DFA_notice_17112026.pdf) |
-| 2026-11-17 | UPSC | result | Interview Schedule: Civil Services (Main) Examination, 2026 | — | — | — | — | [open](https://www.upsc.gov.in/whats-new/Civil%20Services%20%28Main%29%20Examination%2C%202026/Interview%20Schedule) |
-| 2026-11-17 | UKSSSC | other | Accessible Version : View (1 MB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/20261117534346549.pdf) |
 | 2026-11-17 | CRPF | notification | 1 Walk-in-interview for Contractual appointment of 19 Specialist Medical Officers for vari | — | 19 (AI) | None–70 (AI) | — | [open](https://rect.crpf.gov.in/Upload/Recruitment/Walk-in-interview_for_19_Specialist_Medical_Officers_337112026-567.pdf) |
 | 2026-11-17 | RSSB Rajasthan | other | 17-11-2026 - Junior Engineer (JEN) 2026 : Press Note regarding Department preference editi | — | — | — | — | [open](https://rssb.rajasthan.gov.in/storage/news_item/1794922507.pdf) |
 | 2026-11-17 | CRPF | update | 1 Corrigendum for Recruitment of Sub-Inspector (LDCE)Exam-2026 in CAPFs 16-Nov-2026 (274 K | — | — | — | — | [open](https://rect.crpf.gov.in/Upload/Recruitment/Recruitment_of_Sub-Inspector_LDCE_Exam-2026_in_CAPFs_336112026-497.pdf) |
@@ -50,16 +45,11 @@ _Updated 2026-11-18T08:00:15+00:00_
 | 2026-11-16 | UKSSSC | other | Accessible Version : View (327 KB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/2026111375696386.pdf) |
 | 2026-11-16 | UKSSSC | other | Accessible Version : View (2 MB) | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/20261109327718160.pdf) |
 | 2026-11-16 | KVS | other | केंद्रीय विद्यालय संगठन में सहायक अनुभाग अधिकारी के वेतन स्तर-6 के 57 पदों के प्रत्यर्पण क | — | 45 | — | — | [open](https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111641.pdf) |
-| 2026-11-16 | MPPSC | other | संशाेेधित विज्ञप्ति - सहायक प्राध्‍यापक (भौतिकशास्‍त्र) परीक्षा - 2024 के पद हेतु साक्षात् | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_Physics_Exam_2024_Dated_16_11_2026.pdf) |
-| 2026-11-16 | MPPSC | other | संशोधित विज्ञप्ति - सहायक प्राध्‍यापक (अंग्रेजी) परीक्षा - 2024 के पद हेतु साक्षात्‍कार आय | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Assistant_Professor_English_Exam_2024_Dated_16_11_2026.pdf) |
 | 2026-11-16 | MPPSC | other | संशोधित विज्ञप्ति - सहायक संचालक / पशु चिकित्‍सा सहायक शल्‍यज्ञ / पशु चिकित्‍सा विस्‍तार अ | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Veterinary_Assistant_Surgeon_VEO_Exam_2026_Dated_16_11_20261.pdf) |
 | 2026-11-16 | ESIC | result | 1 ईएसआईसी सुपर स्पेशलिटी अस्पताल, सनतनगर, हैदराबाद / ESIC Super Speciality Hospital, Sanat | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/Result_of_the_Walk_in_Interviews_conducted_on_13_11_2026_for_the_post_of_Visiting_Faculty_Professor_Department_of_Neuro_Surgery_vide_Advertisement_No_03_2026_1794805215.pdf) |
-| 2026-11-16 | ESIC | result | 2 ESIC Medical College and Hospital, Varanasi. Result of 05 of 2026 ESIC Medical College H | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/Result_of_05_of_2026_ESIC_Medical_College_Hospital_Varanasi_1794803289.pdf) |
 | 2026-11-16 | ESIC | result | 1 ESIC Medical College and Hospital Beltola, Guwahati, Assam RESULT OF THE WALK-IN-INTERVI | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/RESULT_OF_THE_WALK_IN_INTERVIEW_FOR_RECRUITMENT_TO_THE_POST_OF_SENIOR_RESIDENT_HELD_ON_20_01_2026_FOR_ESIC_MEDICAL_COLLEGE_amp_HOSPITAL_BELTOLA_GUWAHATI_1794803426.pdf) |
-| 2026-11-15 | UPSSSC | notification | विज्ञापन संख्या-01-परीक्षा/2024, भेषजिक (आयुर्वेदिक) मुख्य परीक्षा (प्रा०अ०प०-20... | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?viSrKKYPvDup5RrInD0wD7g2fj+C7xkAtIvgIPiHkgg=) |
 | 2026-11-15 | UPSSSC | notification | विज्ञापन संख्या-05-परीक्षा/2026, सहायक सांख्यिकीय अधिकारी / सहायक शोध अधिकारी (स... | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?viSrKKYPvDtwe7rXQmj509ApOnD6vpwheKciC0G8jNk=) |
 | 2026-11-15 | UPSSSC | notification | विज्ञापन संख्या-06-परीक्षा/2026, प्राविधिक सहायक ग्रुप-सी मुख्य परीक्षा (प्रा०अ०... | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?viSrKKYPvDsPHIxdRkEhea5E0gYFF6thFXnhz5TBpzQ=) |
 | 2026-11-14 | NTA | update | Extension of Registration Dates for the National Institute of Fashion Technology Entrance  | — | — | — | — | [open](https://nta.ac.in/Download/Notice/Notice_20261114165715.pdf) |
 | 2026-11-14 | MPPSC | other | आंतरिक लेखा परीक्षण अधिकारी - 2026 के रिक्त पद हेतु उम्मीदवारी निरस्‍त किए जाने संबंधी सूच | — | — | — | — | [open](https://mppsc.mp.gov.in/uploads/advertisement/Vigyapti_Candidature_Rejection_Internal_Accounts_Examiner_Officer_2026_Dated_14_11_2026.pdf) |
 | 2026-11-14 | UP Police | notification | LATEST NOTICE: उप निरीक्षक नागरिक पुलिस, पीएसी प्लाटून कमाण्डर एवं अग्निशमन द्वितीय अधिकार | — | — | — | — | [open](https://uppbpb.gov.in/FilesUploaded/Notice/Final_with_Notice_List_1_2_SI_2020_213d48b1b7-79ed-4c56-ac69-f1072e647331.pdf) |
-| 2026-11-14 | UPSSSC | other |  | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?HjcKtIJgOg3BCXF0cy57jMjRci5B14XCBq/Mjz3KyIM=) |
