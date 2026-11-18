@@ -1,10 +1,12 @@
-# Review queue — 56 pending
+# Review queue — 59 pending
 
-_Updated 2026-11-18T07:19:29+00:00_
+_Updated 2026-11-18T07:49:24+00:00_
 
 | Seen | Org | Type | Title | Last date | Vacancies | Age | Fee (₹) | PDF |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-11-18 | ESIC | notification | 1 ESIC Medical College & Hospital Naroda-Bapunagar, Ahmedabad Walk in Interview for Recrui | — | — | — | general 500 (AI) | [open](https://esic.gov.in/attachments/recruitmentfile/APPLICATION_FORM_1794979623.pdf) |
+| 2026-11-18 | RPSC | other | 18/11/2026 Press Note Regarding Online Detailed Application Form for Sr. Teacher (Sec. Edu | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/PressNotes/D49CB5CA-E746-416C-8C20-6B4BFD44D3D2.pdf) |
+| 2026-11-18 | RPSC | other | 18/11/2026 Press Note Regarding Online Detailed Application Form for Sr. Teacher (Sec. Edu | — | — | — | — | [open](https://rpsc.rajasthan.gov.in/Static/PressNotes/ED9EEFC1-B974-42D1-B48A-43B54E6A6E40.pdf) |
+| 2026-11-18 | KVS | other | नया केन्द्रीय विद्यालय बिहारशरीफ शहर, जिला नालंदा, बिहार खोलने के संबंध में । नई | — | — | — | — | [open](https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111896.pdf) |
 | 2026-11-18 | ESIC | notification | 1 ESIC Medical College & Hospital Naroda-Bapunagar, Ahmedabad Walk in Interview for Recrui | — | 66 (AI) | None–67 (AI) | — | [open](https://esic.gov.in/attachments/recruitmentfile/Walk_in_Interview_for_Recruitment_of_Teaching_Faculty_and_Senior_Residents_on_contract_basis_at_ESIC_Medical_College_amp_Hospital_Naroda_Bapunagar_Ahmedabad_Gujarat_1794979623.pdf) |
 | 2026-11-18 | ESIC | notification | 1 ESIC Medical College & Hospital Naroda-Bapunagar, Ahmedabad Walk in Interview for Recrui | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/OBC_Certificate_Format_1794979623.pdf) |
 | 2026-11-18 | SSC | answer_key | Combined Higher Secondary (10+2) Level Examination, 2025 (Tier-II): Uploading of Final Ans | — | — | — | — | [open](https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/answer_key_17112026.pdf) |
@@ -54,6 +56,7 @@ _Updated 2026-11-18T07:19:29+00:00_
 | 2026-11-16 | ESIC | result | 1 ईएसआईसी सुपर स्पेशलिटी अस्पताल, सनतनगर, हैदराबाद / ESIC Super Speciality Hospital, Sanat | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/Result_of_the_Walk_in_Interviews_conducted_on_13_11_2026_for_the_post_of_Visiting_Faculty_Professor_Department_of_Neuro_Surgery_vide_Advertisement_No_03_2026_1794805215.pdf) |
 | 2026-11-16 | ESIC | result | 2 ESIC Medical College and Hospital, Varanasi. Result of 05 of 2026 ESIC Medical College H | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/Result_of_05_of_2026_ESIC_Medical_College_Hospital_Varanasi_1794803289.pdf) |
 | 2026-11-16 | ESIC | result | 1 ESIC Medical College and Hospital Beltola, Guwahati, Assam RESULT OF THE WALK-IN-INTERVI | — | — | — | — | [open](https://esic.gov.in/attachments/recruitmentfile/RESULT_OF_THE_WALK_IN_INTERVIEW_FOR_RECRUITMENT_TO_THE_POST_OF_SENIOR_RESIDENT_HELD_ON_20_01_2026_FOR_ESIC_MEDICAL_COLLEGE_amp_HOSPITAL_BELTOLA_GUWAHATI_1794803426.pdf) |
+| 2026-11-15 | UPSSSC | notification | विज्ञापन संख्या-01-परीक्षा/2024, भेषजिक (आयुर्वेदिक) मुख्य परीक्षा (प्रा०अ०प०-20... | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?viSrKKYPvDup5RrInD0wD7g2fj+C7xkAtIvgIPiHkgg=) |
 | 2026-11-15 | UPSSSC | notification | विज्ञापन संख्या-05-परीक्षा/2026, सहायक सांख्यिकीय अधिकारी / सहायक शोध अधिकारी (स... | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?viSrKKYPvDtwe7rXQmj509ApOnD6vpwheKciC0G8jNk=) |
 | 2026-11-15 | UPSSSC | notification | विज्ञापन संख्या-06-परीक्षा/2026, प्राविधिक सहायक ग्रुप-सी मुख्य परीक्षा (प्रा०अ०... | — | — | — | — | [open](https://upsssc.gov.in/ViewPdf.aspx?viSrKKYPvDsPHIxdRkEhea5E0gYFF6thFXnhz5TBpzQ=) |
 | 2026-11-14 | NTA | update | Extension of Registration Dates for the National Institute of Fashion Technology Entrance  | — | — | — | — | [open](https://nta.ac.in/Download/Notice/Notice_20261114165715.pdf) |
