@@ -1,21 +1,376 @@
 {
+  "auto_published": true,
   "board_url": "https://www.esic.gov.in/recruitments",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-12-03",
+    "last_date": "2026-11-28",
+    "list": true,
+    "posts": "Visiting / Part-Time Lecturers",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "ESIC College of Nursing, Bengaluru has invited applications for engaging Visiting or Part-Time Lecturers on an hourly basis for the academic year 2026-27. Eligible candidates should apply via email by 28.11.2026.",
+    "summary_hi": "ईएसआईसी कॉलेज ऑफ नर्सिंग, बेंगलुरु ने शैक्षणिक वर्ष 2026-27 के लिए प्रति घंटे के आधार पर विजिटिंग या पार्ट-टाइम लेक्चरर के पदों पर आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 28.11.2026 तक ईमेल के माध्यम से आवेदन करें।",
+    "title_en": "ESIC Bangalore Visiting Lecturer Recruitment 2026 – Apply Online",
+    "title_hi": "ईएसआईसी बेंगलुरु विजिटिंग लेक्चरर भर्ती 2026 – ऑनलाइन आवेदन करें",
+    "type": "Job",
+    "vacancies": 5
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": 67,
+    "age_min": null,
+    "age_on": "2026-12-03",
+    "domicile": null,
+    "qual": "postgraduate",
+    "relax": {}
+  },
+  "exam": {},
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-17T16:17:35+00:00",
   "id": "f0dfe75cf194",
+  "issue": 2482,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-11-16",
   "org": "ESIC",
+  "page": {
+    "after_en": [
+      "Selected candidates will be notified via email and website.",
+      "Selected lecturers will conduct classes and internal assessments as per the academic calendar."
+    ],
+    "after_hi": [
+      "चयनित उम्मीदवारों को ईमेल और वेबसाइट के माध्यम से सूचित किया जाएगा।",
+      "चयनित लेक्चरर शैक्षणिक कैलेंडर के अनुसार कक्षाएं और आंतरिक मूल्यांकन आयोजित करेंगे।"
+    ],
+    "age": [
+      {
+        "label_en": "Maximum age limit",
+        "label_hi": "अधिकतम आयु सीमा",
+        "value_en": "67 years",
+        "value_hi": "67 वर्ष"
+      },
+      {
+        "label_en": "As-on date for age limit",
+        "label_hi": "आयु सीमा के लिए निर्धारित तिथि",
+        "value_en": "03 Dec 2026",
+        "value_hi": "03 दिस 2026"
+      }
+    ],
+    "apply_start": "2026-11-16",
+    "apply_url": "https://esic.gov.in/attachments/recruitmentfile/Applications_are_invited_for_engagement_of_Visiting_Part_Time_Lecturers_on_an_hourly_basis_at_ESIC_College_of_Nursing_Indiranagar_Bengaluru_for_the_academic_year_2026_27_1794899156.pdf",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check eligibility criteria including age and educational qualifications.",
+      "Fill out the prescribed application form completely.",
+      "Email the application and documents before the deadline.",
+      "Keep original documents and PPT ready for the interview."
+    ],
+    "checklist_hi": [
+      "आयु और शैक्षणिक योग्यताओं सहित पात्रता मानदंडों की जांच करें।",
+      "निर्धारित आवेदन पत्र को पूरी तरह से भरें।",
+      "समय सीमा से पहले आवेदन और दस्तावेज ईमेल करें।",
+      "साक्षात्कार के लिए मूल दस्तावेज और पीपीटी तैयार रखें।"
+    ],
+    "conducted_by_en": "Employees' State Insurance Corporation (ESIC)",
+    "conducted_by_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईसी)",
+    "dates": [
+      {
+        "label_en": "Notification date",
+        "label_hi": "अधिसूचना तिथि",
+        "value_en": "16 Nov 2026",
+        "value_hi": "16 नव 2026"
+      },
+      {
+        "label_en": "Last date to apply via email",
+        "label_hi": "ईमेल द्वारा आवेदन की अंतिम तिथि",
+        "value_en": "28 Nov 2026 (up to 4 PM)",
+        "value_hi": "28 नव 2026 (शाम 4 बजे तक)"
+      },
+      {
+        "label_en": "Shortlist intimation date",
+        "label_hi": "शॉर्टलिस्ट सूचना तिथि",
+        "value_en": "01 Dec 2026",
+        "value_hi": "01 दिस 2026"
+      },
+      {
+        "label_en": "Interview date",
+        "label_hi": "साक्षात्कार तिथि",
+        "value_en": "03 Dec 2026 (from 8:40 AM)",
+        "value_hi": "03 दिस 2026 (सुबह 8:40 बजे से)"
+      }
+    ],
+    "documents_en": [
+      "Application form with photograph affixed",
+      "SSLC / 10th Standard Certificate (Proof of Date of Birth)",
+      "Degree certificates & Year-wise Marks lists (UG & PG)",
+      "Experience certificates",
+      "Aadhaar card copy",
+      "Two passport-size photographs"
+    ],
+    "documents_hi": [
+      "फोटो लगा हुआ आवेदन पत्र",
+      "एसएसएलसी / 10वीं कक्षा का प्रमाण पत्र (जन्म तिथि प्रमाण)",
+      "डिग्री प्रमाण पत्र और वर्ष-वार अंक सूची (स्नातक और स्नातकोत्तर)",
+      "अनुभव प्रमाण पत्र",
+      "आधार कार्ड की प्रति",
+      "दो पासपोर्ट साइज फोटो"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Educational Qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "Post-Graduation (MA/M.Sc.) with teaching experience in respective subjects (Sociology/Kannada/English/Psychology/Applied Nutrition and Dietetics). Preference for those who have taught B.Sc. Nursing students earlier.",
+        "value_hi": "संबंधित विषयों (समाजशास्त्र/कन्नड़/अंग्रेजी/मनोविज्ञान/अप्लाइड न्यूट्रिशन एंड डाइटेटिक्स) में शिक्षण अनुभव के साथ स्नातकोत्तर (एम.ए./एम.एससी.)। बी.एससी. नर्सिंग छात्रों को पढ़ाने वाले उम्मीदवारों को प्राथमिकता।"
+      },
+      {
+        "label_en": "Teaching Skills",
+        "label_hi": "शिक्षण कौशल",
+        "value_en": "Well-versed with digital teaching methods (PPT, LCD Projectors, etc.) and ability to take classes offline and online.",
+        "value_hi": "डिजिटल शिक्षण पद्धतियों (पीपीटी, एलसीडी प्रोजेक्टर आदि) में पारंगत और ऑफलाइन तथा ऑनलाइन कक्षाएं लेने की क्षमता।"
+      }
+    ],
+    "exam_date": "2026-12-03",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "ESIC College of Nursing, Bengaluru engages qualified professionals as visiting or part-time lecturers on an hourly basis to teach specific subjects for B.Sc. Nursing students during the academic year.",
+        "a_hi": "ईएसआईसी कॉलेज ऑफ नर्सिंग, बेंगलुरु शैक्षणिक वर्ष के दौरान बी.एससी. नर्सिंग छात्रों को विशिष्ट विषय पढ़ाने के लिए प्रति घंटे के आधार पर योग्य पेशेवरों को विजिटिंग या पार्ट-टाइम लेक्चरर के रूप में नियुक्त करता है।",
+        "q_en": "What is the ESIC Visiting / Part-Time Lecturer engagement?",
+        "q_hi": "ईएसआईसी विजिटिंग / पार्ट-टाइम लेक्चरर की नियुक्ति क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Remuneration",
+        "label_hi": "मानदेय",
+        "value_en": "₹1,200 per hour (paid at the end of the semester, subject to statutory deductions like TDS & PT)",
+        "value_hi": "₹1,200 प्रति घंटा (सेमेस्टर के अंत में भुगतान किया जाएगा, टीडीएस और पीटी जैसी कटौतियों के अधीन)"
+      },
+      {
+        "label_en": "Interview Venue",
+        "label_hi": "साक्षात्कार स्थल",
+        "value_en": "Academic Block, ESIC Medical College, PGIMSR & Model Hospital, Rajajinagar, Bengaluru–560010",
+        "value_hi": "एकेडमिक ब्लॉक, ईएसआईसी मेडिकल कॉलेज, पीजीआईएमएसआर एंड मॉडल हॉस्पिटल, राजजीनगर, बेंगलुरु–560010"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The last date to submit the application via email is 28.11.2026 by 4:00 PM.",
+        "a_hi": "ईमेल के माध्यम से आवेदन जमा करने की अंतिम तिथि 28.11.2026 शाम 4:00 बजे तक है।",
+        "q_en": "What is the last date to apply for ESIC Bangalore Visiting Lecturer posts?",
+        "q_hi": "ईएसआईसी बेंगलुरु विजिटिंग लेक्चरर पदों के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "The interview is scheduled for 03.12.2026 starting at 8:40 AM.",
+        "a_hi": "साक्षात्कार 03.12.2026 को सुबह 8:40 बजे से निर्धारित है।",
+        "q_en": "What is the interview date for ESIC Lecturer recruitment 2026?",
+        "q_hi": "ईएसआईसी लेक्चरर भर्ती 2026 के लिए साक्षात्कार की तिथि क्या है?"
+      },
+      {
+        "a_en": "The maximum age limit is 67 years as on 03.12.2026.",
+        "a_hi": "03.12.2026 के अनुसार अधिकतम आयु सीमा 67 वर्ष है।",
+        "q_en": "What is the maximum age limit for these posts?",
+        "q_hi": "इन पदों के लिए अधिकतम आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "Selected candidates will be paid ₹1,200 per hour at the end of the semester.",
+        "a_hi": "चयनित उम्मीदवारों को सेमेस्टर के अंत में ₹1,200 प्रति घंटा भुगतान किया जाएगा।",
+        "q_en": "What is the hourly remuneration offered?",
+        "q_hi": "प्रस्तावित प्रति घंटा मानदेय कितना है?"
+      },
+      {
+        "a_en": "Applications must be emailed to principal-nursingindiranagar.ka@esic.gov.in.",
+        "a_hi": "आवेदन principal-nursingindiranagar.ka@esic.gov.in पर ईमेल किया जाना चाहिए।",
+        "q_en": "Where should the application be emailed?",
+        "q_hi": "आवेदन किस ईमेल पर भेजना होगा?"
+      },
+      {
+        "a_en": "The interview will be held at the Academic Block, ESIC Medical College, PGIMSR & Model Hospital, Rajajinagar, Bengaluru–560010.",
+        "a_hi": "साक्षात्कार एकेडमिक ब्लॉक, ईएसआईसी मेडिकल कॉलेज, पीजीआईएमएसआर एंड मॉडल हॉस्पिटल, राजजीनगर, बेंगलुरु–560010 में आयोजित किया जाएगा।",
+        "q_en": "What is the venue for the interview?",
+        "q_hi": "साक्षात्कार का स्थल क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "ESIC Bangalore Visiting Lecturer Recruitment 2026 – Apply Online",
+    "h1_hi": "ईएसआईसी बेंगलुरु विजिटिंग लेक्चरर भर्ती 2026 – ऑनलाइन आवेदन करें",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Download the application format from the notification PDF.",
+      "Fill out the application completely, affix a passport-size photograph with signature across, and attach required self-attested documents.",
+      "Send the scanned copy of the application and documents via email to principal-nursingindiranagar.ka@esic.gov.in on or before 28.11.2026 by 4 PM.",
+      "Keep two sets of self-attested photocopies and original documents ready to produce on the day of the interview."
+    ],
+    "how_hi": [
+      "अधिसूचना पीडीएफ से आवेदन प्रारूप डाउनलोड करें।",
+      "आवेदन को पूरी तरह से भरें, पार्सपोर्ट साइज फोटो चिपकाकर हस्ताक्षर करें और आवश्यक स्व-प्रमाणित दस्तावेज संलग्न करें।",
+      "आवेदन और दस्तावेजों की स्कैन की गई प्रति 28.11.2026 को शाम 4 बजे से पहले ईमेल principal-nursingindiranagar.ka@esic.gov.in पर भेजें।",
+      "साक्षात्कार के दिन प्रस्तुत करने के लिए स्व-प्रमाणित फोटोकॉपी के दो सेट और मूल दस्तावेज तैयार रखें।"
+    ],
+    "intro_en": "ESIC College of Nursing, Indiranagar, Bengaluru has released a notification for the engagement of Visiting or Part-Time Lecturers on an hourly basis for the academic year 2026-27. There are 5 vacancies across subjects including Kannada, Applied Sociology, Applied Psychology, Communicative English, and Applied Nutrition and Dietetics. Eligible candidates must send their filled applications via email by 28 November 2026. Shortlisted candidates will be called for an interview on 03 December 2026.",
+    "intro_hi": "ईएसआईसी कॉलेज ऑफ नर्सिंग, इंदिरानगर, बेंगलुरु ने शैक्षणिक वर्ष 2026-27 के लिए प्रति घंटे के आधार पर विजिटिंग या पार्ट-टाइम लेक्चरर की नियुक्ति के लिए अधिसूचना जारी की है। कन्नड, अप्लाइड सोशियोलॉजी, अप्लाइड साइकोलॉजी, कम्युनिकेटिव इंग्लिश और अप्लाइड न्यूट्रिशन एंड डाइटेटिक्स विषयों में कुल 5 वैकेंसी हैं। योग्य उम्मीदवार 28 नवंबर 2026 तक ईमेल के माध्यम से आवेदन भेज सकते हैं। शॉर्टलिस्ट किए गए उम्मीदवारों को 03 दिसंबर 2026 को साक्षात्कार के लिए बुलाया जाएगा।",
+    "last_date": "2026-11-28",
+    "mistakes_en": [
+      "Submitting applications after the last date (28.11.2026, 4 PM).",
+      "Reporting late for the interview after 11:00 AM on 03.12.2026.",
+      "Failing to bring a 5-minute PowerPoint presentation on a pen drive for the interview."
+    ],
+    "mistakes_hi": [
+      "अंतिम तिथि (28.11.2026, शाम 4 बजे) के बाद आवेदन जमा करना।",
+      "03.12.2026 को सुबह 11:00 बजे के बाद साक्षात्कार के लिए देर से पहुँचना।",
+      "साक्षात्कार के लिए पेन ड्राइव में 5 मिनट की पावरपॉइंट प्रस्तुति न लाना।"
+    ],
+    "not_en": [
+      "Candidates reporting after 11:00 AM on the interview day will not be considered.",
+      "Incomplete applications without required documents will be disqualified."
+    ],
+    "notice_date": "2026-11-16",
+    "official_site": "https://esic.gov.in/recruitments",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Visiting / Part-Time Lecturers",
+        "value_hi": "विजिटिंग / पार्ट-टाइम लेक्चरर"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल वैकेंसी",
+        "value_en": "5",
+        "value_hi": "5"
+      },
+      {
+        "label_en": "Apply online (email)",
+        "label_hi": "ऑनलाइन आवेदन (ईमेल)",
+        "value_en": "16 Nov 2026 to 28 Nov 2026",
+        "value_hi": "16 नव 2026 से 28 नव 2026"
+      },
+      {
+        "label_en": "Interview date",
+        "label_hi": "साक्षात्कार तिथि",
+        "value_en": "03 Dec 2026",
+        "value_hi": "03 दिस 2026"
+      },
+      {
+        "label_en": "Educational qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "Post-Graduation (MA/M.Sc.) with teaching experience",
+        "value_hi": "स्नातकोत्तर (एम.ए./एम.एससी.) शिक्षण अनुभव के साथ"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "Max 67 years as on 03 Dec 2026",
+        "value_hi": "अधिकतम 67 वर्ष 03 दिस 2026 को"
+      },
+      {
+        "label_en": "Selection process",
+        "label_hi": "चयन प्रक्रिया",
+        "value_en": "Interview and PPT presentation",
+        "value_hi": "साक्षात्कार और पीपीटी प्रस्तुति"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "No.532/A/12/3/Rect.-ESICNC-INR/21-22/Estt.",
+        "value_hi": "सं.532/ए/12/3/रेक्ट.-ईएसआईसीएनसी-आईएनआर/21-22/एस्ट."
+      }
+    ],
+    "salary": [
+      {
+        "label_en": "Hourly Remuneration",
+        "label_hi": "प्रति घंटा मानदेय",
+        "value_en": "₹1,200 per hour",
+        "value_hi": "₹1,200 प्रति घंटा"
+      }
+    ],
+    "selection_en": [
+      "Shortlisting of candidates based on eligibility and application.",
+      "Intimation of shortlisted candidates via email and website on 01 Dec 2026.",
+      "Interview performance and a short 5-minute PowerPoint presentation on the respective subject."
+    ],
+    "selection_hi": [
+      "पात्रता और आवेदन के आधार पर उम्मीदवारों की शॉर्टलिस्टिंग।",
+      "01 दिसंबर 2026 को ईमेल और वेबसाइट के माध्यम से शॉर्टलिस्ट किए गए उम्मीदवारों को सूचना।",
+      "साक्षात्कार प्रदर्शन और संबंधित विषय पर 5 मिनट की पावरपॉइंट प्रस्तुति।"
+    ],
+    "share_card": {
+      "headline_en": "Recruitment 2026",
+      "headline_hi": "भर्ती 2026",
+      "kind": "job",
+      "line_en": "Visiting / Part-Time Lecturers",
+      "line_hi": "विजिटिंग / पार्ट-टाइम लेक्चरर",
+      "posts": 5
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "ESIC College of Nursing, Bengaluru has invited applications for engaging Visiting or Part-Time Lecturers on an hourly basis for the academic year 2026-27. Eligible candidates should apply via email by 28.11.2026.",
+    "summary_hi": "ईएसआईसी कॉलेज ऑफ नर्सिंग, बेंगलुरु ने शैक्षणिक वर्ष 2026-27 के लिए प्रति घंटे के आधार पर विजिटिंग या पार्ट-टाइम लेक्चरर के पदों पर आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 28.11.2026 तक ईमेल के माध्यम से आवेदन करें।",
+    "vacancies": [
+      {
+        "detail_en": "UR: 1 (B.Sc. Nursing 1st Year - 1st Semester)",
+        "detail_hi": "अनारक्षित: 1 (बी.एससी. नर्सिंग प्रथम वर्ष - प्रथम सेमेस्टर)",
+        "post_en": "Visiting / Part-Time Lecturer (Kannada)",
+        "post_hi": "विजिटिंग / पार्ट-टाइम लेक्चरर (कन्नड़)",
+        "total": "1"
+      },
+      {
+        "detail_en": "UR: 1 (B.Sc. Nursing 1st Year - 1st Semester)",
+        "detail_hi": "अनारक्षित: 1 (बी.एससी. नर्सिंग प्रथम वर्ष - प्रथम सेमेस्टर)",
+        "post_en": "Visiting / Part-Time Lecturer (Applied Sociology)",
+        "post_hi": "विजिटिंग / पार्ट-टाइम लेक्चरर (अप्लाइड सोशियोलॉजी)",
+        "total": "1"
+      },
+      {
+        "detail_en": "UR: 1 (B.Sc. Nursing 1st Year - 1st Semester)",
+        "detail_hi": "अनारक्षित: 1 (बी.एससी. नर्सिंग प्रथम वर्ष - प्रथम सेमेस्टर)",
+        "post_en": "Visiting / Part-Time Lecturer (Applied Psychology)",
+        "post_hi": "विजिटिंग / पार्ट-टाइम लेक्चरर (अप्लाइड साइकोलॉजी)",
+        "total": "1"
+      },
+      {
+        "detail_en": "UR: 1 (B.Sc. Nursing 1st Year - 1st Semester)",
+        "detail_hi": "अनारक्षित: 1 (बी.एससी. नर्सिंग प्रथम वर्ष - प्रथम सेमेस्टर)",
+        "post_en": "Visiting / Part-Time Lecturer (Communicative English)",
+        "post_hi": "विजिटिंग / पार्ट-टाइम लेक्चरर (कम्युनिकेटिव इंग्लिश)",
+        "total": "1"
+      },
+      {
+        "detail_en": "UR: 1 (B.Sc. Nursing 1st Year - 2nd Semester)",
+        "detail_hi": "अनारक्षित: 1 (बी.एससी. नर्सिंग प्रथम वर्ष - द्वितीय सेमेस्टर)",
+        "post_en": "Visiting / Part-Time Lecturer (Applied Nutrition and Dietetics)",
+        "post_hi": "विजिटिंग / पार्ट-टाइम लेक्चरर (अप्लाइड न्यूट्रिशन एंड डाइटेटिक्स)",
+        "total": "1"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Post-graduates with teaching experience wanting a visiting lecturer role in Bengaluru."
+    ],
+    "who_hi": [
+      "बेंगलुरु में विजिटिंग लेक्चरर की भूमिका चाहने वाले शिक्षण अनुभव के साथ स्नातकोत्तर।"
+    ]
+  },
   "pdf": {
     "bytes": 115709,
     "pages": 5,
     "sha256": "9acb14eb5813c3250bad0ede202d7dea175eed34fccaaaffb854595fa8e36ec2",
     "text_kind": "text"
   },
+  "published_at": "2026-11-18T20:43:56Z",
+  "qual": [
+    "postgraduate"
+  ],
+  "slug": "esic-bangalore-visiting-lecturer-recruitment-2026-apply-online",
   "source_id": "esic-recruitment",
-  "status": "pending_review",
+  "status": "approved",
   "title": "2 ESIC MEDICAL COLLEGE AND HOSPITAL RAJAJI NAGAR BANGALORE Applications are invited for engagement of Visiting/Part-Time Lecturers on an hourly basis at ESIC College of Nursing, Indiranagar, Bengaluru, for the academic year 2026-27- PDF size:(113.00 KB) . 2026-11-17 Interview (2026-12-03) 12760/2026",
   "url": "https://esic.gov.in/attachments/recruitmentfile/Applications_are_invited_for_engagement_of_Visiting_Part_Time_Lecturers_on_an_hourly_basis_at_ESIC_College_of_Nursing_Indiranagar_Bengaluru_for_the_academic_year_2026_27_1794899156.pdf"
 }

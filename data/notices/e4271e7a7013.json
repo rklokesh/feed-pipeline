@@ -1,5 +1,20 @@
 {
   "board_url": "https://ssc.gov.in/home/notice-board",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Advisory notice for candidates regarding Aadhaar data updates and biometric authentication, not a job vacancy or exam result.",
+    "summary_en": "The Staff Selection Commission has issued an advisory for candidates to keep their Aadhaar demographic and biometric details updated and permanently unlocked during examinations.",
+    "summary_hi": "कर्मचारी चयन आयोग ने उम्मीदवारों के लिए अपने आधार जनसांख्यिकीय और बायोमेट्रिक विवरणों को अपडेट रखने और परीक्षा के दौरान स्थायी रूप से अनलॉक रखने के संबंध में एक सलाह जारी की है।",
+    "title_en": "SSC Aadhaar Data Updates and Biometric Authentication Advisory",
+    "title_hi": "कर्मचारी चयन आयोग आधार डेटा अपडेट और बायोमेट्रिक प्रमाणीकरण सलाह",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "ssc-notice-board",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "Advisory for Candidates regarding Aadhaar Data Updates and Biometric Authentication.",
   "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/DFA_notice_17112026.pdf"
 }

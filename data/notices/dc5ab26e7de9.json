@@ -1,5 +1,31 @@
 {
+  "auto_published": true,
   "board_url": "https://www.esic.gov.in/recruitments",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-26",
+    "last_date": null,
+    "list": true,
+    "posts": "Teaching Faculty and Senior Residents",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "ESIC Medical College & Hospital, Naroda-Bapunagar, Ahmedabad is holding a walk-in interview for Teaching Faculty and Senior Resident posts on a contract basis. Eligible candidates can attend the interview on 26-11-2026 and 27-11-2026.",
+    "summary_hi": "ईएसआईसी मेडिकल कॉलेज एवं अस्पताल, नरोदा-बापूनगर, अहमदाबाद ने संविदा के आधार पर टीचिंग फैकल्टी और सीनियर रेजिडेंट पदों के लिए वॉक-इन इंटरव्यू आयोजित किया है। योग्य उम्मीदवार 26-11-2026 और 27-11-2026 को इंटरव्यू में शामिल हो सकते हैं।",
+    "title_en": "ESIC Ahmedabad Faculty & Senior Resident Recruitment 2026 Walk-In",
+    "title_hi": "ईएसआईसी अहमदाबाद फैकल्टी और सीनियर रेजिडेंट भर्ती 2026 वॉक-इन इंटरव्यू",
+    "type": "Job",
+    "vacancies": 66
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": 67,
+    "age_min": null,
+    "age_on": "2026-11-27",
+    "domicile": null,
+    "qual": "graduate",
+    "relax": {}
+  },
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -51,16 +77,286 @@
   },
   "first_seen": "2026-11-18T05:47:12+00:00",
   "id": "dc5ab26e7de9",
+  "issue": 2478,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-13",
   "org": "ESIC",
+  "page": {
+    "after_en": [
+      "Document verification and interview",
+      "Publication of selection results",
+      "Submission of updated medical registration and joining"
+    ],
+    "after_hi": [
+      "दस्तावेज़ सत्यापन और साक्षात्कार",
+      "चयन परिणाम का प्रकाशन",
+      "अद्यतन मेडिकल पंजीकरण जमा करना और कार्यभार ग्रहण करना"
+    ],
+    "age": [
+      {
+        "label_en": "Senior Resident Max Age",
+        "label_hi": "सीनियर रेजिडेंट अधिकतम आयु",
+        "value_en": "45 years as on 26-11-2026",
+        "value_hi": "45 वर्ष 26-11-2026 के अनुसार"
+      },
+      {
+        "label_en": "Faculty Max Age",
+        "label_hi": "फैकल्टी अधिकतम आयु",
+        "value_en": "67 years as on 27-11-2026",
+        "value_hi": "67 वर्ष 27-11-2026 के अनुसार"
+      }
+    ],
+    "apply_start": null,
+    "apply_url": null,
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Verify your interview date based on the post (26 Nov for Senior Residents, 27 Nov for Faculty).",
+      "Keep original documents and photocopies ready.",
+      "Reach the venue before 10:00 AM."
+    ],
+    "checklist_hi": [
+      "पद के आधार पर अपनी साक्षात्कार तिथि सत्यापित करें (सीनियर रेजिडेंट के लिए 26 नवंबर, फैकल्टी के लिए 27 नवंबर)।",
+      "मूल दस्तावेज और फोटोकॉपी तैयार रखें।",
+      "सुबह 10:00 बजे से पहले स्थल पर पहुंचें।"
+    ],
+    "conducted_by_en": "Employees' State Insurance Corporation (ESIC)",
+    "conducted_by_hi": "कर्मचारी राज्य बीमा निगम (ईएसआईसी)",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस की तिथि",
+        "value_en": "13 Nov 2026",
+        "value_hi": "13 Nov 2026"
+      },
+      {
+        "label_en": "Senior Resident Interview Date",
+        "label_hi": "सीनियर रेजिडेंट साक्षात्कार तिथि",
+        "value_en": "26 Nov 2026",
+        "value_hi": "26 Nov 2026"
+      },
+      {
+        "label_en": "Teaching Faculty Interview Date",
+        "label_hi": "टीचिंग फैकल्टी साक्षात्कार तिथि",
+        "value_en": "27 Nov 2026",
+        "value_hi": "27 Nov 2026"
+      }
+    ],
+    "documents_en": [
+      "Updated Medical Registration Certificate (NMC/State Medical Council) or proof of application",
+      "Educational qualification certificates (MBBS, MD/MS, etc.)",
+      "Experience certificates",
+      "Cast/Category certificate (if applicable)",
+      "NOC from current employer (if working in Govt./Autonomous/Statutory Institution)"
+    ],
+    "documents_hi": [
+      "अद्यतन मेडिकल पंजीकरण प्रमाण पत्र (एनएमसी/राज्य चिकित्सा परिषद) या आवेदन का प्रमाण",
+      "शैक्षणिक योग्यता प्रमाण पत्र (एमबीबीएस, एमडी/एमएस, आदि)",
+      "अनुभव प्रमाण पत्र",
+      "जाति/श्रेणी प्रमाण पत्र (यदि लागू हो)",
+      "वर्तमान नियोक्ता से अनापत्ति प्रमाण पत्र (यदि सरकार/स्वायत्त/वैधानिक संस्था में कार्यरत हैं)"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Education",
+        "label_hi": "शिक्षा",
+        "value_en": "MBBS/MD/MS with updated Medical Registration (NMC/State Medical Council) as per National Medical Commission guidelines.",
+        "value_hi": "राष्ट्रीय आयुर्विज्ञान आयोग के दिशा-निर्देशों के अनुसार एमबीबीएस/एमडी/एमएस और अद्यतन मेडिकल पंजीकरण।"
+      }
+    ],
+    "exam_date": "2026-11-26",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "ESIC Medical College & Hospital, Ahmedabad conducts walk-in interviews to directly select eligible candidates for Teaching Faculty and Senior Resident positions on a contractual basis to fulfill institutional requirements.",
+        "a_hi": "ईएसआईसी मेडिकल कॉलेज एंड हॉस्पिटल, अहमदाबाद संस्थागत आवश्यकताओं को पूरा करने के लिए संविदा के आधार पर टीचिंग फैकल्टी और सीनियर रेजिडेंट पदों के लिए सीधे योग्य उम्मीदवारों का चयन करने के लिए वॉक-इन इंटरव्यू आयोजित करता है।",
+        "q_en": "What is ESIC Ahmedabad Walk-In Recruitment?",
+        "q_hi": "ईएसआईसी अहमदाबाद वॉक-इन भर्ती क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Venue",
+        "label_hi": "स्थान",
+        "value_en": "Office of the Dean, 2nd Floor, Model Hospital Campus, Nr. Hardasnagar Police chowki, Bapunagar, Ahmedabad, Gujarat-380024",
+        "value_hi": "कार्यालय डीन, दूसरी मंजिल, मॉडल अस्पताल परिसर, हरदासनगर पुलिस चौकी के पास, बापूनगर, अहमदाबाद, गुजरात-380024"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The interview will be held at the Office of the Dean, 2nd Floor, Model Hospital Campus, Nr. Hardasnagar Police chowki, Bapunagar, Ahmedabad, Gujarat-380024.",
+        "a_hi": "साक्षात्कार कार्यालय डीन, दूसरी मंजिल, मॉडल अस्पताल परिसर, हरदासनगर पुलिस चौकी के पास, बापूनगर, अहमदाबाद, गुजरात-380024 पर आयोजित किया जाएगा।",
+        "q_en": "What is the venue for the ESIC Ahmedabad walk-in interview?",
+        "q_hi": "ईएसआईसी अहमदाबाद वॉक-इन इंटरव्यू के लिए स्थान क्या है?"
+      },
+      {
+        "a_en": "The walk-in interview for Senior Residents is on 26 November 2026.",
+        "a_hi": "सीनियर रेजिडेंट्स के लिए वॉक-इन इंटरव्यू 26 नवंबर 2026 को है।",
+        "q_en": "What are the interview dates for Senior Residents?",
+        "q_hi": "सीनियर रेजिडेंट्स के लिए साक्षात्कार की तिथि क्या है?"
+      },
+      {
+        "a_en": "The walk-in interview for Teaching Faculty (Professor, Associate Professor, Assistant Professor) is on 27 November 2026.",
+        "a_hi": "टीचिंग फैकल्टी (प्रोफेसर, एसोसिएट प्रोफेसर, असिस्टेंट प्रोफेसर) के लिए वॉक-इन इंटरव्यू 27 नवंबर 2026 को है।",
+        "q_en": "What are the interview dates for Teaching Faculty?",
+        "q_hi": "टीचिंग फैकल्टी के लिए साक्षात्कार की तिथि क्या है?"
+      },
+      {
+        "a_en": "Candidates must report between 9:00 AM and 10:00 AM. Candidates reporting after 10:00 AM will be considered absent.",
+        "a_hi": "उम्मीदवारों को सुबह 9:00 बजे से 10:00 बजे के बीच रिपोर्ट करना होगा। सुबह 10:00 बजे के बाद रिपोर्ट करने वाले उम्मीदवारों को अनुपस्थित माना जाएगा।",
+        "q_en": "What is the reporting time for the interview?",
+        "q_hi": "साक्षात्कार के लिए रिपोर्टिंग का समय क्या है?"
+      },
+      {
+        "a_en": "There are a total of 66 vacancies for Teaching Faculty and Senior Residents combined.",
+        "a_hi": "टीचिंग फैकल्टी और सीनियर रेजिडेंट्स को मिलाकर कुल 66 रिक्तियां हैं।",
+        "q_en": "What is the total number of vacancies?",
+        "q_hi": "कुल रिक्तियों की संख्या क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "ESIC Ahmedabad Faculty & Senior Resident Recruitment 2026 Walk-In",
+    "h1_hi": "ईएसआईसी अहमदाबाद फैकल्टी और सीनियर रेजिडेंट भर्ती 2026 वॉक-इन इंटरव्यू",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Check the official notification and ensure eligibility.",
+      "Prepare all original certificates, application format, and testimonials.",
+      "Report for document verification and interview at the venue on the specified date before 10:00 AM."
+    ],
+    "how_hi": [
+      "आधिकारिक अधिसूचना देखें और अपनी पात्रता सुनिश्चित करें।",
+      "सभी मूल प्रमाण पत्र, आवेदन पत्र और प्रशंसापत्र तैयार रखें।",
+      "निर्धारित तिथि पर सुबह 10:00 बजे से पहले स्थान पर दस्तावेज़ सत्यापन और साक्षात्कार के लिए रिपोर्ट करें।"
+    ],
+    "intro_en": "ESIC Medical College & Hospital, Naroda-Bapunagar, Ahmedabad (Gujarat) has released Advertisement No. 03 of 2026 for the recruitment of Teaching Faculty (Professor, Associate Professor, Assistant Professor) and Senior Residents on a contractual basis. A total of 66 vacancies are available. Eligible and interested candidates can directly attend the walk-in interview scheduled on 26 November 2026 and 27 November 2026 along with required documents.",
+    "intro_hi": "ईएसआईसी मेडिकल कॉलेज एवं अस्पताल, नरोदा-बापूनगर, अहमदाबाद (गुजरात) ने संविदा के आधार पर टीचिंग फैकल्टी (प्रोफेसर, एसोसिएट प्रोफेसर, असिस्टेंट प्रोफेसर) और सीनियर रेजिडेंट पदों पर भर्ती के लिए विज्ञापन संख्या 03/2026 जारी किया है। कुल 66 रिक्तियां उपलब्ध हैं। योग्य और इच्छुक उम्मीदवार आवश्यक दस्तावेजों के साथ 26 नवंबर 2026 और 27 नवंबर 2026 को निर्धारित वॉक-इन इंटरव्यू में सीधे शामिल हो सकते हैं।",
+    "last_date": null,
+    "mistakes_en": [
+      "Reporting late after 10:00 AM on the day of the interview.",
+      "Failing to carry proof of updated medical registration."
+    ],
+    "mistakes_hi": [
+      "साक्षात्कार के दिन सुबह 10:00 बजे के बाद देर से रिपोर्ट करना।",
+      "अद्यतन मेडिकल पंजीकरण का प्रमाण साथ न ले जाना।"
+    ],
+    "not_en": [
+      "Candidates reporting after 10:00 AM on the interview date.",
+      "Candidates without valid medical registration or proof of application for the same."
+    ],
+    "not_hi": [
+      "साक्षात्कार की तिथि पर सुबह 10:00 बजे के बाद रिपोर्ट करने वाले उम्मीदवार।",
+      "वैध मेडिकल पंजीकरण या उसके लिए आवेदन के प्रमाण के बिना उम्मीदवार।"
+    ],
+    "notice_date": "2026-11-13",
+    "official_site": "https://esic.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Teaching Faculty & Senior Residents",
+        "value_hi": "टीचिंग फैकल्टी और सीनियर रेजिडेंट"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "66",
+        "value_hi": "66"
+      },
+      {
+        "label_en": "Interview Date",
+        "label_hi": "साक्षात्कार की तिथि",
+        "value_en": "26-11-2026 & 27-11-2026",
+        "value_hi": "26-11-2026 और 27-11-2026"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "Max 67 years (Faculty), Max 45 years (Senior Resident)",
+        "value_hi": "अधिकतम 67 वर्ष (फैकल्टी), अधिकतम 45 वर्ष (सीनियर रेजिडेंट)"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "03 of 2026",
+        "value_hi": "03/2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Document Verification",
+      "Walk-in Interview"
+    ],
+    "selection_hi": [
+      "दस्तावेज़ सत्यापन",
+      "वॉक-इन इंटरव्यू"
+    ],
+    "share_card": {
+      "headline_en": "Walk-In Interview 2026",
+      "headline_hi": "वॉक-इन इंटरव्यू 2026",
+      "kind": "job",
+      "line_en": "Faculty & Senior Resident",
+      "line_hi": "फैकल्टी और सीनियर रेजिडेंट",
+      "posts": 66
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "ESIC Medical College & Hospital, Naroda-Bapunagar, Ahmedabad is holding a walk-in interview for Teaching Faculty and Senior Resident posts on a contract basis. Eligible candidates can attend the interview on 26 Nov 2026 and 27 Nov 2026.",
+    "summary_hi": "ईएसआईसी मेडिकल कॉलेज एवं अस्पताल, नरोदा-बापूनगर, अहमदाबाद ने संविदा के आधार पर टीचिंग फैकल्टी और सीनियर रेजिडेंट पदों के लिए वॉक-इन इंटरव्यू आयोजित किया है। योग्य उम्मीदवार 26-11-2026 और 27-11-2026 को इंटरव्यू में शामिल हो सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "UR 3, OBC 2, SC 2, ST 1, EWS 1",
+        "detail_hi": "UR 3, OBC 2, SC 2, ST 1, EWS 1",
+        "post_en": "Professor",
+        "post_hi": "प्रोफेसर",
+        "total": "9"
+      },
+      {
+        "detail_en": "UR 7, OBC 5, SC 2, ST 1, EWS 1",
+        "detail_hi": "UR 7, OBC 5, SC 2, ST 1, EWS 1",
+        "post_en": "Associate Professor",
+        "post_hi": "एसोसिएट प्रोफेसर",
+        "total": "16"
+      },
+      {
+        "detail_en": "UR 3, OBC 2, SC 1, ST 2, EWS 2",
+        "detail_hi": "UR 3, OBC 2, SC 1, ST 2, EWS 2",
+        "post_en": "Assistant Professor",
+        "post_hi": "असिस्टेंट प्रोफेसर",
+        "total": "10"
+      },
+      {
+        "detail_en": "UR 8, OBC 10, SC 5, ST 5, EWS 3",
+        "detail_hi": "UR 8, OBC 10, SC 5, ST 5, EWS 3",
+        "post_en": "Senior Resident",
+        "post_hi": "सीनियर रेजिडेंट",
+        "total": "31"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Medical professionals with MBBS/MD/MS degrees looking for contractual teaching or senior resident roles."
+    ],
+    "who_hi": [
+      "संविदा शिक्षण या सीनियर रेजिडेंट भूमिकाओं की तलाश कर रहे एमबीबीएस/एमडी/एमएस डिग्रीधारी चिकित्सा पेशेवर।"
+    ]
+  },
   "pdf": {
     "bytes": 325737,
     "pages": 12,
     "sha256": "a53af9e949a72a6ee533669dbc164b7a1b27f1f2376f55897909dca2853b4ab0",
     "text_kind": "text"
   },
+  "published_at": "2026-11-18T20:43:00Z",
+  "qual": [
+    "graduate",
+    "postgraduate"
+  ],
+  "slug": "esic-ahmedabad-faculty-senior-resident-recruitment-2026-walk-in",
   "source_id": "esic-recruitment",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1 ESIC Medical College & Hospital Naroda-Bapunagar, Ahmedabad Walk in Interview for Recruitment of Teaching Faculty and Senior Residents on contract basis at ESIC Medical College & Hospital, Naroda-Bapunagar, Ahmedabad (Gujarat)- PDF size:(318.10 KB) . OBC Certificate Format- PDF size:(283.16 KB) . ",
   "url": "https://esic.gov.in/attachments/recruitmentfile/Walk_in_Interview_for_Recruitment_of_Teaching_Faculty_and_Senior_Residents_on_contract_basis_at_ESIC_Medical_College_amp_Hospital_Naroda_Bapunagar_Ahmedabad_Gujarat_1794979623.pdf"
 }

@@ -1,5 +1,20 @@
 {
   "board_url": "https://www.esic.gov.in/recruitments",
+  "card": {
+    "confidence": "medium",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Teaching Faculty and Senior Residents",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "The link points to an OBC certificate format rather than a main recruitment notice.",
+    "summary_en": "This document contains the OBC certificate format for the ESIC Medical College and Hospital recruitment.",
+    "summary_hi": "इस दस्तावेज़ में ईएसआईसी मेडिकल कॉलेज और अस्पताल की भर्ती के लिए ओबीसी प्रमाण पत्र का प्रारूप शामिल है।",
+    "title_en": "ESIC Ahmedabad Faculty and Resident Walk-in Interview",
+    "title_hi": "ईएसआईसी अहमदाबाद फैकल्टी और रेजिडेंट वॉक-इन इंटरव्यू",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "scanned"
   },
   "source_id": "esic-recruitment",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "1 ESIC Medical College & Hospital Naroda-Bapunagar, Ahmedabad Walk in Interview for Recruitment of Teaching Faculty and Senior Residents on contract basis at ESIC Medical College & Hospital, Naroda-Bapunagar, Ahmedabad (Gujarat)- PDF size:(318.10 KB) . OBC Certificate Format- PDF size:(283.16 KB) . ",
   "url": "https://esic.gov.in/attachments/recruitmentfile/OBC_Certificate_Format_1794979623.pdf"
 }
