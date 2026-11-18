@@ -1,5 +1,31 @@
 {
+  "auto_published": true,
   "board_url": "https://rect.crpf.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-12-15",
+    "last_date": null,
+    "list": true,
+    "posts": "Specialist Medical Officers",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "CRPF invites eligible candidates for walk-in-interview for contractual appointment of 19 Specialist Medical Officers. Attend the interview on 15 December 2026 with required documents.",
+    "summary_hi": "सीआरपीएफ ने 19 विशेषज्ञ चिकित्सा अधिकारियों के संविदात्मक पदों के लिए वॉक-इन-इंटरव्यू आयोजित किया है। योग्य उम्मीदवार 15 दिसंबर 2026 को आवश्यक दस्तावेजों के साथ साक्षात्कार में उपस्थित हों।",
+    "title_en": "CRPF Specialist Medical Officer Recruitment 2026 – Walk-in for 19 Posts",
+    "title_hi": "सीआरपीएफ विशेषज्ञ चिकित्सा अधिकारी भर्ती 2026 – 19 पदों के लिए वॉक-इन-इंटरव्यू",
+    "type": "Job",
+    "vacancies": 19
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": 70,
+    "age_min": null,
+    "age_on": null,
+    "domicile": null,
+    "qual": "postgraduate",
+    "relax": {}
+  },
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -54,16 +80,277 @@
   },
   "first_seen": "2026-11-17T16:17:35+00:00",
   "id": "62bda19de8dd",
+  "issue": 2449,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-16",
   "org": "CRPF",
+  "page": {
+    "after_en": [
+      "Candidates who clear the walk-in-interview will undergo a medical examination.",
+      "Selected candidates will be appointed on a contractual basis at the respective Composite Hospitals."
+    ],
+    "after_hi": [
+      "वॉक-इन-इंटरव्यू पास करने वाले उम्मीदवारों की चिकित्सा परीक्षा होगी।",
+      "चयनित उम्मीदवारों को संबंधित समेकित अस्पतालों में संविदा के आधार पर नियुक्त किया जाएगा।"
+    ],
+    "age": [
+      {
+        "label_en": "Maximum age",
+        "label_hi": "अधिकतम आयु",
+        "value_en": "Below 70 years",
+        "value_hi": "70 वर्ष से कम"
+      }
+    ],
+    "apply_start": null,
+    "apply_url": "https://rect.crpf.gov.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Verify your age is below 70 years.",
+      "Ensure you possess the required PG Degree/Diploma and post-qualification experience.",
+      "Keep original and photocopies of all educational and experience certificates ready.",
+      "Prepare your application on plain paper and carry 3 photographs."
+    ],
+    "checklist_hi": [
+      "सत्यापित करें कि आपकी आयु 70 वर्ष से कम है।",
+      "सुनिश्चित करें कि आपके पास आवश्यक पीजी डिग्री/डिप्लोमा और अनुभव है।",
+      "सभी शैक्षणिक और अनुभव प्रमाण पत्र की मूल और फोटोकॉपी तैयार रखें।",
+      "सादे कागज पर अपना आवेदन तैयार करें और 3 फोटोग्राफ साथ रखें।"
+    ],
+    "conducted_by_en": "Central Reserve Police Force (CRPF)",
+    "conducted_by_hi": "केंद्रीय रिजर्व पुलिस बल (सीआरपीएफ)",
+    "dates": [
+      {
+        "label_en": "Notification date",
+        "label_hi": "अधिसूचना तिथि",
+        "value_en": "16 Nov 2026",
+        "value_hi": "16 नवंबर 2026"
+      },
+      {
+        "label_en": "Walk-in-Interview date",
+        "label_hi": "वॉक-इन-इंटरव्यू तिथि",
+        "value_en": "15 Dec 2026",
+        "value_hi": "15 दिसंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Application on plain paper with post name superscripted",
+      "Degree certificate and mark sheets",
+      "Age proof",
+      "Experience certificate",
+      "Three recent passport size photographs",
+      "Photocopies of all relevant documents"
+    ],
+    "documents_hi": [
+      "पद के नाम के साथ सादे कागज पर आवेदन",
+      "डिग्री प्रमाण पत्र और अंक पत्र",
+      "आयु प्रमाण",
+      "अनुभव प्रमाण पत्र",
+      "तीन नवीनतम पासपोर्ट आकार के फोटोग्राफ",
+      "सभी प्रासंगिक दस्तावेजों की फोटोकॉपी"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Education",
+        "label_hi": "शिक्षा",
+        "value_en": "Recognized medical qualification included in Indian Medical Council Act 1956, completion of compulsory rotating internship, and PG Degree/Diploma in concerned specialty with 1.5 years experience after PG Degree or 2.5 years experience after PG Diploma.",
+        "value_hi": "भारतीय चिकित्सा परिषद अधिनियम 1956 के तहत मान्यता प्राप्त चिकित्सा योग्यता, अनिवार्य इंटर्नशिप पूरी होनी चाहिए, और संबंधित विषय में पीजी डिग्री/डिप्लोमा के साथ पीजी डिग्री के बाद 1.5 वर्ष या पीजी डिप्लोमा के बाद 2.5 वर्ष का अनुभव।"
+      }
+    ],
+    "exam_date": "2026-12-15",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is a direct recruitment process conducted via a walk-in-interview to fill 19 contractual vacancies of Specialist Medical Officers across various CRPF Composite Hospitals. Eligible candidates directly appear at the interview venue with their documents.",
+        "a_hi": "यह विभिन्न सीआरपीएफ समेकित अस्पतालों में विशेषज्ञ चिकित्सा अधिकारियों के 19 संविदात्मक पदों को भरने के लिए वॉक-इन-इंटरव्यू के माध्यम से आयोजित एक सीधी भर्ती प्रक्रिया है। योग्य उम्मीदवार अपने दस्तावेजों के साथ सीधे साक्षात्कार स्थल पर उपस्थित होते हैं।",
+        "q_en": "What is the CRPF Specialist Medical Officer Walk-in-Interview?",
+        "q_hi": "सीआरपीएफ विशेषज्ञ चिकित्सा अधिकारी वॉक-इन-इंटरव्यू क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Help line Number",
+        "label_hi": "हेल्पलाइन नंबर",
+        "value_en": "011-24368630",
+        "value_hi": "011-24368630"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The walk-in-interview is scheduled for 15 December 2026 at 0900 hours.",
+        "a_hi": "वॉक-इन-इंटरव्यू 15 दिसंबर 2026 को सुबह 09:00 बजे निर्धारित है।",
+        "q_en": "When is the CRPF Specialist Medical Officer walk-in-interview?",
+        "q_hi": "सीआरपीएफ विशेषज्ञ चिकित्सा अधिकारी वॉक-इन-इंटरव्यू कब है?"
+      },
+      {
+        "a_en": "There are a total of 19 vacancies available across various Composite Hospitals.",
+        "a_hi": "विभिन्न समेकित अस्पतालों में कुल 19 रिक्तियां उपलब्ध हैं।",
+        "q_en": "What is the total number of vacancies for Specialist Medical Officers?",
+        "q_hi": "विशेषज्ञ चिकित्सा अधिकारियों के लिए कुल रिक्तियां कितनी हैं?"
+      },
+      {
+        "a_en": "Candidates must be below 70 years of age as on the date of the walk-in-interview.",
+        "a_hi": "वॉक-इन-इंटरव्यू की तिथि पर उम्मीदवारों की आयु 70 वर्ष से कम होनी चाहिए।",
+        "q_en": "What is the age limit for CRPF Specialist Medical Officer recruitment?",
+        "q_hi": "सीआरपीएफ विशेषज्ञ चिकित्सा अधिकारी भर्ती के लिए आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "Selected candidates will receive a consolidated monthly remuneration of ₹85,000.",
+        "a_hi": "चयनित उम्मीदवारों को ₹85,000 का समेकित मासिक पारिश्रमिक मिलेगा।",
+        "q_en": "What is the monthly remuneration for these posts?",
+        "q_hi": "इन पदों के लिए मासिक पारिश्रमिक कितना है?"
+      },
+      {
+        "a_en": "No online application is mentioned; candidates must directly attend the walk-in-interview with an application on plain paper and required documents.",
+        "a_hi": "ऑनलाइन आवेदन का उल्लेख नहीं है; उम्मीदवारों को सादे कागज पर आवेदन और आवश्यक दस्तावेजों के साथ सीधे वॉक-इन-इंटरव्यू में शामिल होना होगा।",
+        "q_en": "Do I need to apply online first?",
+        "q_hi": "क्या मुझे पहले ऑनलाइन आवेदन करना होगा?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "CRPF Specialist Medical Officer Recruitment 2026 – Walk-in for 19 Posts",
+    "h1_hi": "सीआरपीएफ विशेषज्ञ चिकित्सा अधिकारी भर्ती 2026 – 19 पदों के लिए वॉक-इन-इंटरव्यू",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Check the full details and terms on the official CRPF website.",
+      "Prepare an application on plain paper superscribing the name of the post applied for.",
+      "Attend the walk-in-interview on 15 December 2026 at 0900 hrs at the designated Composite Hospital venue.",
+      "Carry original and photocopies of all relevant documents (Degree, Age Proof, Experience Certificate, etc.) and three recent passport size photographs."
+    ],
+    "how_hi": [
+      "आधिकारिक सीआरपीएफ वेबसाइट पर पूर्ण विवरण और शर्तें देखें।",
+      "सादे कागज पर आवेदन तैयार करें जिस पर पद का नाम स्पष्ट लिखा हो।",
+      "15 दिसंबर 2026 को सुबह 09:00 बजे निर्धारित समेकित अस्पताल केंद्र पर वॉक-इन-इंटरव्यू में भाग लें।",
+      "सभी संबंधित दस्तावेजों (डिग्री, आयु प्रमाण, अनुभव प्रमाण पत्र आदि) की मूल और फोटोकॉपी तथा तीन नवीनतम पासपोर्ट आकार के फोटोग्राफ साथ लाएं।"
+    ],
+    "intro_en": "The Central Reserve Police Force (CRPF) has released a notification for the contractual appointment of 19 Specialist Medical Officers across various Composite Hospitals. Eligible and willing candidates are required to attend a walk-in-interview on 15 December 2026 at 0900 hours at the respective interview venues. Candidates must possess a recognized medical qualification along with a Post Graduate Degree or Diploma and required experience. Read the details regarding venues, qualifications, and required documents before attending.",
+    "intro_hi": "केंद्रीय रिजर्व पुलिस बल (सीआरपीएफ) ने विभिन्न समेकित अस्पतालों में 19 विशेषज्ञ चिकित्सा अधिकारियों के संविदात्मक पदों पर नियुक्ति के लिए एक अधिसूचना जारी की है। योग्य और इच्छुक उम्मीदवारों को 15 दिसंबर 2026 को सुबह 09:00 बजे निर्धारित साक्षात्कार केंद्रों पर वॉक-इन-इंटरव्यू के लिए उपस्थित होना होगा। उम्मीदवारों के पास मान्यता प्राप्त चिकित्सा योग्यता के साथ-साथ स्नातकोत्तर डिग्री या डिप्लोमा और आवश्यक अनुभव होना चाहिए।",
+    "last_date": null,
+    "mistakes_en": [
+      "Failing to bring original certificates along with photocopies to the interview.",
+      "Forgetting to bring three recent passport size photographs.",
+      "Not superscribing the name of the post applied for on the plain paper application."
+    ],
+    "mistakes_hi": [
+      "साक्षात्कार में फोटोकॉपी के साथ मूल प्रमाण पत्र न लाना।",
+      "तीन नवीनतम पासपोर्ट आकार के फोटोग्राफ लाना भूल जाना।",
+      "सादे कागज के आवेदन पर पद का नाम स्पष्ट न लिखना।"
+    ],
+    "not_en": [
+      "Candidates aged 70 years or above as on the date of interview.",
+      "Candidates without the required post-graduate qualification and post-qualification experience."
+    ],
+    "not_hi": [
+      "साक्षात्कार की तिथि पर 70 वर्ष या उससे अधिक आयु के उम्मीदवार।",
+      "आवश्यक स्नातकोत्तर योग्यता और अनुभव के बिना उम्मीदवार।"
+    ],
+    "notice_date": "2026-11-16",
+    "official_site": "https://rect.crpf.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Specialist Medical Officers",
+        "value_hi": "विशेषज्ञ चिकित्सा अधिकारी"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल वैकेंसी",
+        "value_en": "19",
+        "value_hi": "19"
+      },
+      {
+        "label_en": "Interview date",
+        "label_hi": "साक्षात्कार तिथि",
+        "value_en": "15 Dec 2026",
+        "value_hi": "15 दिसंबर 2026"
+      },
+      {
+        "label_en": "Educational qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "PG Degree / Diploma in concerned specialty with experience",
+        "value_hi": "संबंधित विषय में पीजी डिग्री / डिप्लोमा और अनुभव"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "Below 70 years as on date of interview",
+        "value_hi": "साक्षात्कार की तिथि पर 70 वर्ष से कम"
+      },
+      {
+        "label_en": "Selection process",
+        "label_hi": "चयन प्रक्रिया",
+        "value_en": "Walk-in-Interview followed by Medical Examination",
+        "value_hi": "वॉक-इन-इंटरव्यू और उसके बाद चिकित्सा परीक्षा"
+      },
+      {
+        "label_en": "Advertisement date",
+        "label_hi": "विज्ञापन तिथि",
+        "value_en": "16 Nov 2026",
+        "value_hi": "16 नवंबर 2026"
+      }
+    ],
+    "salary": [
+      {
+        "label_en": "Monthly Remuneration",
+        "label_hi": "मासिक पारिश्रमिक",
+        "value_en": "₹85,000 P.M.",
+        "value_hi": "₹85,000 प्रति माह"
+      }
+    ],
+    "selection_en": [
+      "Walk-in-Interview",
+      "Medical Examination"
+    ],
+    "selection_hi": [
+      "वॉक-इन-इंटरव्यू",
+      "चिकित्सा परीक्षा"
+    ],
+    "share_card": {
+      "headline_en": "Walk-in-Interview 2026",
+      "headline_hi": "वॉक-इन-इंटरव्यू 2026",
+      "kind": "job",
+      "line_en": "Specialist Medical Officer",
+      "line_hi": "विशेषज्ञ चिकित्सा अधिकारी",
+      "posts": 19
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "Central Reserve Police Force (CRPF) has invited eligible candidates for a walk-in-interview for the contractual appointment of 19 Specialist Medical Officers. Candidates fulfilling the required qualifications can attend the interview on 15 December 2026 at the designated Composite Hospitals.",
+    "summary_hi": "केंद्रीय रिजर्व पुलिस बल (सीआरपीएफ) ने 19 विशेषज्ञ चिकित्सा अधिकारियों के संविदात्मक पदों के लिए वॉक-इन-इंटरव्यू के वास्ते योग्य उम्मीदवारों को आमंत्रित किया है। आवश्यक योग्यता पूरी करने वाले उम्मीदवार 15 दिसंबर 2026 को निर्धारित समेकित अस्पतालों में साक्षात्कार में शामिल हो सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Surgeon: 09, Radiology: 04, Ophthalmology: 02, Anesthesia: 02, Obs & Gynea: 02 across various Composite Hospitals",
+        "detail_hi": "सर्जन: 09, रेडियोलॉजी: 04, नेत्र विज्ञान: 02, एनेस्थीसिया: 02, प्रसूति एवं स्त्री रोग: 02 विभिन्न समेकित अस्पतालों में",
+        "post_en": "Specialist Medical Officers",
+        "post_hi": "विशेषज्ञ चिकित्सा अधिकारी",
+        "total": "19"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Medical professionals with a PG Degree or Diploma and required experience who want a contractual role in CRPF."
+    ],
+    "who_hi": [
+      "पीजी डिग्री या डिप्लोमा और आवश्यक अनुभव वाले चिकित्सा पेशेवर जो सीआरपीएफ में संविदात्मक भूमिका चाहते हैं।"
+    ]
+  },
   "pdf": {
     "bytes": 240723,
     "pages": 2,
     "sha256": "ed4080bbf214f7495732e34767833e783e9ffc216084e467b0e2de5a75637a9d",
     "text_kind": "text"
   },
+  "published_at": "2026-11-18T08:23:03Z",
+  "qual": [
+    "graduate"
+  ],
+  "slug": "crpf-specialist-medical-officer-recruitment-2026-walk-in-for-19",
   "source_id": "crpf-recruitment",
-  "status": "pending_review",
+  "status": "approved",
   "title": "1 Walk-in-interview for Contractual appointment of 19 Specialist Medical Officers for various Composite Hospitals as mentioned in window advertisement 16-Nov-2026 (235 KB)",
   "url": "https://rect.crpf.gov.in/Upload/Recruitment/Walk-in-interview_for_19_Specialist_Medical_Officers_337112026-567.pdf"
 }

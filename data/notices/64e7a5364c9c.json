@@ -1,21 +1,301 @@
 {
+  "auto_published": true,
   "board_url": "https://rssb.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-12-17",
+    "list": true,
+    "posts": "Junior Engineer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "RSSB has re-opened online applications for Junior Engineer recruitment from November 18 to December 17, 2026, and allowed department preference editing for already applied candidates from December 22 to December 31, 2026.",
+    "summary_hi": "बोर्ड द्वारा कनिष्ठ अभियंता भर्ती के लिए 18 नवंबर से 17 दिसंबर 2026 तक पुनः ऑनलाइन आवेदन आमंत्रित किए गए हैं तथा पूर्व में आवेदन कर चुके अभ्यर्थी 22 से 31 दिसंबर 2026 तक विभाग प्राथमिकता में संशोधन कर सकते हैं।",
+    "title_en": "RSSB Junior Engineer Recruitment 2026 – Apply Online for 874 Posts",
+    "title_hi": "राजस्थान JEN भर्ती 2026 – 874 पदों के लिए ऑनलाइन आवेदन",
+    "type": "Job",
+    "vacancies": 874
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": null,
+    "age_min": null,
+    "age_on": null,
+    "domicile": null,
+    "qual": "diploma",
+    "relax": {}
+  },
+  "exam": {},
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-17T16:17:35+00:00",
   "id": "64e7a5364c9c",
+  "issue": 2450,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-11-17",
   "org": "RSSB Rajasthan",
+  "page": {
+    "after_en": [
+      "Written examination date announcement",
+      "Admit card release",
+      "Document verification"
+    ],
+    "after_hi": [
+      "लिखित परीक्षा तिथि की घोषणा",
+      "एडमिट कार्ड जारी होना",
+      "दस्तावेज़ सत्यापन"
+    ],
+    "age": [],
+    "apply_start": "2026-11-18",
+    "apply_url": "https://rssb.rajasthan.gov.in/",
+    "changes": [
+      {
+        "new_en": "Re-opened from 18 Nov to 17 Dec 2026; Preference edit from 22 to 31 Dec 2026",
+        "new_hi": "18 नवंबर से 17 दिसंबर 2026 तक पुनः खुले; प्राथमिकता संशोधन 22 से 31 दिसंबर 2026",
+        "old_en": "Applications closed on 14 Sep 2026",
+        "old_hi": "आवेदन 14 सितंबर 2026 को बंद हुए थे",
+        "what_en": "Re-opening of Online Applications and Department Preference Edit Option",
+        "what_hi": "ऑनलाइन आवेदन पुनः प्रारंभ और विभाग प्राथमिकता संशोधन विकल्प"
+      }
+    ],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check re-open dates before applying",
+      "Note department preference edit dates if already applied"
+    ],
+    "checklist_hi": [
+      "आवेदन करने से पहले पुनः खुलने की तिथियां जांचें",
+      "यदि पहले ही आवेदन कर चुके हैं तो विभाग प्राथमिकता संशोधन तिथियां ध्यान रखें"
+    ],
+    "conducted_by_en": "Rajasthan Staff Selection Board (RSSB)",
+    "conducted_by_hi": "राजस्थान अधीनस्थ एवं मंत्रालयिक सेवा चयन बोर्ड (RSSB)",
+    "dates": [
+      {
+        "label_en": "Original application period",
+        "label_hi": "मूल आवेदन अवधि",
+        "value_en": "16 Aug 2026 to 14 Sep 2026",
+        "value_hi": "16 अगस्त 2026 से 14 सितंबर 2026"
+      },
+      {
+        "label_en": "Re-opened application start date",
+        "label_hi": "पुनः आवेदन प्रारंभ तिथि",
+        "value_en": "18 Nov 2026",
+        "value_hi": "18 नवंबर 2026"
+      },
+      {
+        "label_en": "Re-opened application last date",
+        "label_hi": "पुनः आवेदन अंतिम तिथि",
+        "value_en": "17 Dec 2026",
+        "value_hi": "17 दिसंबर 2026"
+      },
+      {
+        "label_en": "Department preference edit window",
+        "label_hi": "विभाग प्राथमिकता संशोधन अवधि",
+        "value_en": "22 Dec 2026 to 31 Dec 2026",
+        "value_hi": "22 दिसंबर 2026 से 31 दिसंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Photograph",
+      "Signature",
+      "Thumb impression",
+      "Handwriting specimen"
+    ],
+    "documents_hi": [
+      "फोटोशूट",
+      "हस्ताक्षर",
+      "अंगूठे का निशान",
+      "हस्तलिपि नमूना"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Qualification",
+        "label_hi": "योग्यता",
+        "value_en": "Degree or Diploma in relevant engineering branch as per post requirements.",
+        "value_hi": "पदों के अनुसार संबंधित इंजीनियरिंग शाखा में डिग्री या डिप्लोमा।"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "RSSB conducts the Junior Engineer Combined Direct Recruitment for various engineering posts across multiple departments in Rajasthan. This notice announces the re-opening of applications due to revised vacancies and provides a window to edit department preferences.",
+        "a_hi": "राजस्थान कर्मचारी चयन बोर्ड राजस्थान के विभिन्न विभागों में कनिष्ठ अभियंता के पदों के लिए संयुक्त सीधी भर्ती आयोजित करता है। यह नोटिस संशोधित रिक्तियों के कारण आवेदन पुनः शुरू होने और विभाग प्राथमिकता में संशोधन का अवसर देने के लिए जारी किया गया है।",
+        "q_en": "What is RSSB Junior Engineer Recruitment?",
+        "q_hi": "राजस्थान JEN भर्ती क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Departments included",
+        "label_hi": "शामिल विभाग",
+        "value_en": "PWD, Water Resources, PHED, Rajasthan State Agriculture Marketing Board, Local Bodies Department, UDH",
+        "value_hi": "सार्वजनिक निर्माण विभाग, जल संसाधन विभाग, जन स्वास्थ्य अभियांत्रिकी विभाग, राजस्थान राज्य कृषि विपणन बोर्ड, स्वायत्त शासन विभाग, नगरीय विकास एवं आवास विभाग"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "Online applications are re-opened from 18 November 2026 to 17 December 2026.",
+        "a_hi": "ऑनलाइन आवेदन 18 नवंबर 2026 से 17 दिसंबर 2026 तक पुनः खुले हैं।",
+        "q_en": "What are the re-opened online application dates for RSSB JEN 2026?",
+        "q_hi": "आरएसएमएसएसबी JEN 2026 के पुनः ऑनलाइन आवेदन की तिथियां क्या हैं?"
+      },
+      {
+        "a_en": "No, candidates who have already applied in the previous window do not need to apply again.",
+        "a_hi": "नहीं, जिन अभ्यर्थियों ने पिछली अवधि में आवेदन कर दिया है, उन्हें दोबारा आवेदन करने की आवश्यकता नहीं है।",
+        "q_en": "Do candidates who already applied need to apply again?",
+        "q_hi": "क्या जिन अभ्यर्थियों ने पहले आवेदन किया है, उन्हें दोबारा आवेदन करना होगा?"
+      },
+      {
+        "a_en": "Already applied candidates can edit their department preferences free of cost from 22 December 2026 to 31 December 2026.",
+        "a_hi": "पूर्व में आवेदन कर चुके अभ्यर्थी 22 दिसंबर 2026 से 31 दिसंबर 2026 तक अपनी विभाग प्राथमिकता में निःशुल्क संशोधन कर सकते हैं।",
+        "q_en": "When can candidates edit their department preferences?",
+        "q_hi": "अभ्यर्थी अपनी विभाग प्राथमिकता में कब संशोधन कर सकते हैं?"
+      },
+      {
+        "a_en": "A fee of ₹300 is applicable for modifying details other than department preference during the online application period.",
+        "a_hi": "ऑनलाइन आवेदन अवधि के दौरान विभाग प्राथमिकता के अलावा अन्य विवरणों में संशोधन के लिए ₹300 का शुल्क देय है।",
+        "q_en": "What is the fee for editing other details like name or photo?",
+        "q_hi": "नाम या फोटो जैसे अन्य विवरणों में संशोधन का शुल्क क्या है?"
+      },
+      {
+        "a_en": "There are a total of 874 vacancies for the Junior Engineer recruitment.",
+        "a_hi": "कनिष्ठ अभियंता भर्ती के लिए कुल 874 पद हैं।",
+        "q_en": "What is the total number of vacancies for RSSB JEN Recruitment 2026?",
+        "q_hi": "आरएसएमएसएसबी JEN भर्ती 2026 के लिए कुल कितने पद हैं?"
+      }
+    ],
+    "fees": [
+      {
+        "amount": "₹300",
+        "cat_en": "Application / Edit Fee (other details correction)",
+        "cat_hi": "आवेदन / अन्य विवरण संशोधन शुल्क"
+      },
+      {
+        "amount": "Free",
+        "cat_en": "Department preference editing",
+        "cat_hi": "विभाग प्राथमिकता संशोधन"
+      }
+    ],
+    "h1_en": "RSSB Junior Engineer Recruitment 2026 – Apply Online for 874 Posts",
+    "h1_hi": "राजस्थान JEN भर्ती 2026 – 874 पदों के लिए ऑनलाइन आवेदन",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official RSSB website for online application during the re-open window.",
+      "Already applied candidates can log in to modify department preferences from 22 Dec 2026 to 31 Dec 2026.",
+      "Pay ₹300 fee for modifying other details (name, photo, signature, etc.) during the application period."
+    ],
+    "how_hi": [
+      "पुनः आवेदन अवधि के दौरान आधिकारिक वेबसाइट पर जाएं।",
+      "पूर्व में आवेदन कर चुके अभ्यर्थी 22 दिसंबर से 31 दिसंबर 2026 तक विभाग प्राथमिकता में संशोधन कर सकते हैं।",
+      "अन्य विवरणों (नाम, फोटो, हस्ताक्षर आदि) में संशोधन के लिए ₹300 का शुल्क भुगतान करें।"
+    ],
+    "intro_en": "Rajasthan Staff Selection Board (RSSB) has issued a press note regarding the re-opening of online applications for the Junior Engineer (JEN) Combined Direct Recruitment 2026. Due to new and revised requisitions received from various departments, online applications are re-opened from 18 November 2026 to 17 December 2026 for a total of 874 posts. Candidates who applied earlier do not need to apply again. However, already applied candidates can edit their department preference free of cost from 22 December 2026 to 31 December 2026.",
+    "intro_hi": "राजस्थान अधीनस्थ एवं मंत्रालयिक सेवा चयन बोर्ड (RSSB) ने कनिष्ठ अभियंता (JEN) संयुक्त सीधी भर्ती 2026 के संबंध में पुनः ऑनलाइन आवेदन और विभाग प्राथमिकता संशोधन हेतु प्रेस नोट जारी किया है। विभिन्न विभागों से नई और संशोधित अर्थना प्राप्त होने के कारण कुल 874 पदों के लिए 18 नवंबर 2026 से 17 दिसंबर 2026 तक पुनः ऑनलाइन आवेदन आमंत्रित किए गए हैं। जिन अभ्यर्थियों ने पूर्व में आवेदन किया है, उन्हें पुनः आवेदन करने की आवश्यकता नहीं है। ऐसे अभ्यर्थी 22 दिसंबर से 31 दिसंबर 2026 तक अपनी विभाग प्राथमिकता में निःशुल्क संशोधन कर सकते हैं।",
+    "last_date": "2026-12-17",
+    "mistakes_en": [
+      "Do not miss the deadline of 31 Dec 2026 for editing department preferences, as no offline requests will be accepted after that."
+    ],
+    "mistakes_hi": [
+      "विभाग प्राथमिकता संशोधन के लिए 31 दिसंबर 2026 की समय सीमा न चूकें, इसके बाद कोई ऑफलाइन आवेदन स्वीकार नहीं किया जाएगा।"
+    ],
+    "not_en": [
+      "Candidates who already applied do not need to submit a new application form."
+    ],
+    "not_hi": [
+      "जिन अभ्यर्थियों ने पहले आवेदन कर दिया है, उन्हें नया आवेदन फॉर्म भरने की आवश्यकता नहीं है।"
+    ],
+    "notice_date": "2026-11-17",
+    "official_site": "https://rssb.rajasthan.gov.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Junior Engineer (JEN)",
+        "value_hi": "कनिष्ठ अभियंता"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल पद",
+        "value_en": "874",
+        "value_hi": "874"
+      },
+      {
+        "label_en": "Apply online (Re-open)",
+        "label_hi": "ऑनलाइन आवेदन (पुनः)",
+        "value_en": "18 Nov 2026 to 17 Dec 2026",
+        "value_hi": "18 नवंबर 2026 से 17 दिसंबर 2026"
+      },
+      {
+        "label_en": "Department preference edit date",
+        "label_hi": "विभाग प्राथमिकता संशोधन तिथि",
+        "value_en": "22 Dec 2026 to 31 Dec 2026",
+        "value_hi": "22 दिसंबर 2026 से 31 दिसंबर 2026"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "10/2026",
+        "value_hi": "10/2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Written Examination",
+      "Document Verification"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा",
+      "दस्तावेज़ सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "Preference Edit & Re-Open",
+      "headline_hi": "प्राथमिकता संशोधन व पुनः आवेदन",
+      "kind": "corr",
+      "line_en": "Junior Engineer (JEN)",
+      "line_hi": "कनिष्ठ अभियंता (JEN)",
+      "posts": 874
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "RSSB has re-opened online applications for Junior Engineer recruitment from November 18 to December 17, 2026, and allowed department preference editing for already applied candidates from December 22 to December 31, 2026.",
+    "summary_hi": "बोर्ड द्वारा कनिष्ठ अभियंता भर्ती के लिए 18 नवंबर से 17 दिसंबर 2026 तक पुनः ऑनलाइन आवेदन आमंत्रित किए गए हैं तथा पूर्व में आवेदन कर चुके अभ्यर्थी 22 से 31 दिसंबर 2026 तक विभाग प्राथमिकता में संशोधन कर सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Civil (Degree), Civil (Diploma), Mechanical/Electrical (Diploma)",
+        "detail_hi": "सिविल (डिग्री), सिविल (डिप्लोमा), यांत्रिक/विद्युत (डिप्लोमा)",
+        "post_en": "Junior Engineer (Civil, Mechanical/Electrical)",
+        "post_hi": "कनिष्ठ अभियंता (सिविल, यांत्रिक/विद्युत)",
+        "total": "874"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Engineering degree or diploma holders eligible for Junior Engineer posts in Rajasthan."
+    ],
+    "who_hi": [
+      "राजस्थान में कनिष्ठ अभियंता पदों के लिए पात्र इंजीनियरिंग डिग्री या डिप्लोमा धारक।"
+    ]
+  },
   "pdf": {
     "bytes": 95733,
     "pages": 1,
     "sha256": "460abe9be171e591dc548b0a11773962f40409d4d0871e7b1c8fb07969294c2e",
     "text_kind": "text"
   },
+  "published_at": "2026-11-18T08:23:33Z",
+  "qual": [
+    "diploma",
+    "graduate"
+  ],
+  "slug": "rssb-junior-engineer-recruitment-2026-apply-online-for-874-posts",
   "source_id": "rssb-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "17-11-2026 - Junior Engineer (JEN) 2026 : Press Note regarding Department preference editing for already applied candidates",
   "url": "https://rssb.rajasthan.gov.in/storage/news_item/1794922507.pdf"
 }

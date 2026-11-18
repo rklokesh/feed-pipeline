@@ -39,12 +39,12 @@
   "org": "NTA",
   "page": {
     "after_en": [
-      "Appear for the pen-and-paper entrance examination on 10 January 2027",
-      "Check exam results on the official website once declared"
+      "Candidates will appear for the written examination on 10 January 2027.",
+      "Results will be declared by NTA on their official website."
     ],
     "after_hi": [
-      "10 जनवरी 2027 को पेन-एंड-पेपर प्रवेश परीक्षा में शामिल हों",
-      "घोषणा होने के बाद आधिकारिक वेबसाइट पर परीक्षा परिणाम देखें"
+      "उम्मीदवार 10 जनवरी 2027 को लिखित परीक्षा में शामिल होंगे।",
+      "एनटीए द्वारा अपनी आधिकारिक वेबसाइट पर परिणाम घोषित किए जाएंगे।"
     ],
     "age": [],
     "apply_start": "2026-11-14",
@@ -52,14 +52,14 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Verify SC or DNT category eligibility",
-      "Submit online application before 30 November 2026",
-      "Download admit card starting 05 January 2027"
+      "Check eligibility criteria",
+      "Keep documents ready",
+      "Apply before 30 November 2026"
     ],
     "checklist_hi": [
-      "एससी या डीएनटी श्रेणी की पात्रता सत्यापित करें",
-      "30 नवंबर 2026 से पहले ऑनलाइन आवेदन जमा करें",
-      "05 जनवरी 2027 से एडमिट कार्ड डाउनलोड करें"
+      "पात्रता मानदंडों की जाँच करें",
+      "दस्तावेज़ तैयार रखें",
+      "30 नवंबर 2026 से पहले आवेदन करें"
     ],
     "conducted_by_en": "National Testing Agency (NTA)",
     "conducted_by_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए)",
@@ -68,149 +68,127 @@
         "label_en": "Online application starts",
         "label_hi": "ऑनलाइन आवेदन शुरू",
         "value_en": "14 Nov 2026",
-        "value_hi": "14 नव 2026"
+        "value_hi": "14 नवंबर 2026"
       },
       {
-        "label_en": "Last date to apply",
-        "label_hi": "आवेदन की अंतिम तिथि",
+        "label_en": "Online application last date",
+        "label_hi": "ऑनलाइन आवेदन की अंतिम तिथि",
         "value_en": "30 Nov 2026",
-        "value_hi": "30 नव 2026"
+        "value_hi": "30 नवंबर 2026"
       },
       {
-        "label_en": "Application correction window",
-        "label_hi": "आवेदन सुधार विंडो",
-        "value_en": "03 Dec 2026 to 04 Dec 2026",
-        "value_hi": "03 दिस 2026 से 04 दिस 2026"
+        "label_en": "Correction in particulars",
+        "label_hi": "विवरण में सुधार",
+        "value_en": "01 Dec 2026 to 04 Dec 2026",
+        "value_hi": "01 दिसंबर 2026 से 04 दिसंबर 2026"
       },
       {
         "label_en": "City of examination intimation",
         "label_hi": "परीक्षा शहर की सूचना",
         "value_en": "20 Dec 2026",
-        "value_hi": "20 दिस 2026"
+        "value_hi": "20 दिसंबर 2026"
       },
       {
         "label_en": "Admit card download",
         "label_hi": "एडमिट कार्ड डाउनलोड",
-        "value_en": "05 Jan 2027",
-        "value_hi": "05 जन 2027"
+        "value_en": "03 Jan 2027",
+        "value_hi": "03 जनवरी 2027"
       },
       {
-        "label_en": "Date of examination",
+        "label_en": "Exam date",
         "label_hi": "परीक्षा की तिथि",
         "value_en": "10 Jan 2027",
-        "value_hi": "10 जन 2027"
-      },
-      {
-        "label_en": "Declaration of result",
-        "label_hi": "परिणाम की घोषणा",
-        "value_en": "Will be intimated later on website",
-        "value_hi": "वेबसाइट पर बाद में सूचित किया जाएगा"
+        "value_hi": "10 जनवरी 2027"
       }
     ],
     "documents_en": [
-      "Scanned photograph",
-      "Scanned signature",
-      "Category certificate (SC/DNT)"
+      "Caste certificate",
+      "Educational certificates",
+      "Passport size photograph",
+      "Signature"
     ],
     "documents_hi": [
-      "स्कैन की गई तस्वीर",
-      "स्कैन किए गए हस्ताक्षर",
-      "श्रेणी प्रमाण पत्र (एससी/डीएनटी)"
+      "जाति प्रमाण पत्र",
+      "शैक्षणिक प्रमाण पत्र",
+      "पासपोर्ट साइज फोटोग्राफ",
+      "हस्ताक्षर"
     ],
     "eligibility": [
       {
         "label_en": "Category",
         "label_hi": "श्रेणी",
-        "value_en": "Meritorious Scheduled Caste (SC) and De-notified Tribes (DNT) students (Boys & Girls)",
-        "value_hi": "मेधावी अनुसूचित जाति (एससी) और विमुक्त जनजाति (डीएनटी) के छात्र (लड़के और लड़कियाँ)"
-      },
-      {
-        "label_en": "Admission classes",
-        "label_hi": "प्रवेश कक्षाएं",
-        "value_en": "Class 9 and Class 11",
-        "value_hi": "कक्षा 9 और कक्षा 11"
+        "value_en": "Meritorious Scheduled Caste (SC) and De-notified Tribes (DNT) students (Both Boys & Girls)",
+        "value_hi": "मेधावी अनुसूचित जाति (एससी) और विमुक्त जनजाति (डीएनटी) छात्र (लड़के और लड़कियां दोनों)"
       }
     ],
     "exam_date": "2027-01-10",
     "exam_pattern": [
       {
         "marks": "",
-        "part_en": "Test Pattern",
-        "part_hi": "परीक्षा पैटर्न",
-        "questions": "Multiple Choice Questions (MCQ)",
+        "part_en": "Multiple Choice Question (MCQ) Test",
+        "part_hi": "बहुविकल्पीय प्रश्न (एमसीक्यू) परीक्षण",
+        "questions": "",
         "time": "3 Hours"
       }
     ],
     "explain": [
       {
-        "a_en": "SHRESHTA NETS stands for Scheme for Residential Education for Students in High Schools in Targeted Areas. It is an entrance examination conducted by NTA to provide high-quality education to meritorious Scheduled Caste and De-notified Tribes students in reputed private residential schools with full government funding.",
-        "a_hi": "श्रेष्ठ नेट्स का अर्थ लक्षित क्षेत्रों के हाई स्कूलों में छात्रों के लिए आवासीय शिक्षा योजना है। यह प्रतिष्ठित निजी आवासीय विद्यालयों में पूर्ण सरकारी वित्त पोषण के साथ मेधावी अनुसूचित जाति और विमुक्त जनजाति के छात्रों को उच्च गुणवत्ता वाली शिक्षा प्रदान करने के लिए एनटीए द्वारा आयोजित एक प्रवेश परीक्षा है।",
-        "q_en": "What is SHRESHTA NETS 2027?",
-        "q_hi": "श्रेष्ठ नेट्स 2027 क्या है?"
+        "a_en": "SHRESHTA (NETS) is a scheme for residential education for students in high schools in targeted areas, providing high-quality education to meritorious SC and DNT students in reputed private residential schools with complete Central Government funding.",
+        "a_hi": "श्रेष्ठ (नेट्स) लक्षित क्षेत्रों के उच्च विद्यालयों में छात्रों के लिए आवासीय शिक्षा की एक योजना है, जो केंद्र सरकार के पूर्ण वित्तपोषण के साथ प्रतिष्ठित निजी आवासीय विद्यालयों में मेधावी एससी और डीएनटी छात्रों को उच्च गुणवत्ता वाली शिक्षा प्रदान करती है।",
+        "q_en": "What is SHRESHTA (NETS)?",
+        "q_hi": "श्रेष्ठ (नेट्स) क्या है?"
       }
     ],
     "extra": [
       {
-        "label_en": "Exam mode",
-        "label_hi": "परीक्षा मोड",
-        "value_en": "Pen & Paper (OMR Sheet based)",
-        "value_hi": "पेन और पेपर (ओएमआर शीट आधारित)"
+        "label_en": "Timing of Examination",
+        "label_hi": "परीक्षा का समय",
+        "value_en": "02:00 PM to 05:00 PM",
+        "value_hi": "दोपहर 02:00 बजे से शाम 05:00 बजे तक"
       },
       {
-        "label_en": "Medium of paper",
+        "label_en": "Medium of Paper",
         "label_hi": "पेपर का माध्यम",
         "value_en": "Bilingual (Hindi & English)",
         "value_hi": "द्विभाषी (हिंदी और अंग्रेजी)"
       },
       {
-        "label_en": "Exam timing",
-        "label_hi": "परीक्षा का समय",
-        "value_en": "02:00 PM to 05:00 PM",
-        "value_hi": "दोपहर 02:00 बजे से शाम 05:00 बजे तक"
+        "label_en": "Pattern of Test",
+        "label_hi": "परीक्षा का पैटर्न",
+        "value_en": "Multiple Choice Questions (MCQ)",
+        "value_hi": "बहुविकल्पीय प्रश्न (एमसीक्यू)"
       }
     ],
     "faq": [
       {
-        "a_en": "The last date to submit the online application form is 30 November 2026 up to 11:50 PM.",
-        "a_hi": "ऑनलाइन आवेदन पत्र जमा करने की अंतिम तिथि 30 नवंबर 2026 रात 11:50 बजे तक है।",
+        "a_en": "The last date to apply online is 30 November 2026 up to 11:50 PM.",
+        "a_hi": "ऑनलाइन आवेदन करने की अंतिम तिथि 30 नवंबर 2026 रात 11:50 बजे तक है।",
         "q_en": "What is the last date to apply for SHRESHTA NETS 2027?",
         "q_hi": "श्रेष्ठ नेट्स 2027 के लिए आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "The examination is scheduled to be held on 10 January 2027 from 02:00 PM to 05:00 PM.",
-        "a_hi": "परीक्षा 10 जनवरी 2027 को दोपहर 02:00 बजे से शाम 05:00 बजे तक आयोजित होने निर्धारित है।",
+        "a_en": "The examination is scheduled to be held on 10 January 2027 (Sunday).",
+        "a_hi": "परीक्षा 10 जनवरी 2027 (रविवार) को आयोजित होने निर्धारित है।",
         "q_en": "When is the SHRESHTA NETS 2027 exam scheduled?",
-        "q_hi": "श्रेष्ठ नेट्स 2027 परीक्षा कब निर्धारित है?"
+        "q_hi": "श्रेष्ठ नेट्स 2027 की परीक्षा कब निर्धारित है?"
       },
       {
-        "a_en": "Meritorious Scheduled Caste (SC) and De-notified Tribes (DNT) students studying in high schools are eligible to apply for admission to Class 9 and Class 11.",
-        "a_hi": "हाई स्कूलों में पढ़ने वाले मेधावी अनुसूचित जाति (एससी) और विमुक्त जनजाति (डीएनटी) के छात्र कक्षा 9 और कक्षा 11 में प्रवेश के लिए आवेदन करने के पात्र हैं।",
-        "q_en": "Who is eligible to apply for SHRESHTA NETS 2027?",
-        "q_hi": "श्रेष्ठ नेट्स 2027 के लिए आवेदन करने के लिए कौन पात्र है?"
+        "a_en": "Meritorious Scheduled Caste (SC) and De-notified Tribes (DNT) students (both boys and girls) studying in high schools are eligible.",
+        "a_hi": "उच्च विद्यालयों में पढ़ने वाले मेधावी अनुसूचित जाति (एससी) और विमुक्त जनजाति (डीएनटी) के छात्र (लड़के और लड़कियां दोनों) पात्र हैं।",
+        "q_en": "Who is eligible for SHRESHTA NETS 2027?",
+        "q_hi": "श्रेष्ठ नेट्स 2027 के लिए कौन पात्र है?"
       },
       {
-        "a_en": "The exam will be conducted in Pen-and-Paper Based Test (PBT) mode using an OMR sheet.",
-        "a_hi": "परीक्षा ओएमआर शीट का उपयोग करके पेन-एंड-पेपर आधारित परीक्षा (पीबीटी) मोड में आयोजित की जाएगी।",
-        "q_en": "What is the mode of the SHRESHTA NETS 2027 examination?",
-        "q_hi": "श्रेष्ठ नेट्स 2027 परीक्षा का मोड क्या है?"
+        "a_en": "A total of 2,400 seats (2,160 for SCs and 240 for DNTs) are available for admission in Class 9 and Class 11.",
+        "a_hi": "कक्षा 9 और कक्षा 11 में प्रवेश के लिए कुल 2,400 सीटें (एससी के लिए 2,160 और डीएनटी के लिए 240) उपलब्ध हैं।",
+        "q_en": "How many seats are available under SHRESHTA NETS 2027?",
+        "q_hi": "श्रेष्ठ नेट्स 2027 के तहत कितनी सीटें उपलब्ध हैं?"
       },
       {
-        "a_en": "Admit cards will be available for download from the NTA website starting 05 January 2027.",
-        "a_hi": "एडमिट कार्ड 05 जनवरी 2027 से एनटीए वेबसाइट से डाउनलोड के लिए उपलब्ध होंगे।",
-        "q_en": "When will the admit cards be available for download?",
-        "q_hi": "एडमिट कार्ड डाउनलोड के लिए कब उपलब्ध होंगे?"
-      },
-      {
-        "a_en": "Yes, the application correction window will open from 03 December 2026 to 04 December 2026.",
-        "a_hi": "हाँ, आवेदन सुधार विंडो 03 दिसंबर 2026 से 04 दिसंबर 2026 तक खुलेगी।",
-        "q_en": "Is there a correction window for the application form?",
-        "q_hi": "क्या आवेदन पत्र के लिए सुधार विंडो है?"
-      },
-      {
-        "a_en": "Candidates can apply online at https://exams.nta.nic.in/shreshta/.",
-        "a_hi": "उम्मीदवार https://exams.nta.nic.in/shreshta/ पर ऑनलाइन आवेदन कर सकते हैं।",
-        "q_en": "What is the official website to apply for SHRESHTA NETS 2027?",
-        "q_hi": "श्रेष्ठ नेट्स 2027 के लिए आवेदन करने की आधिकारिक वेबसाइट क्या है?"
+        "a_en": "Admit cards will be available for download from the NTA website on 03 January 2027.",
+        "a_hi": "एडमिट कार्ड 03 जनवरी 2027 को एनटीए वेबसाइट से डाउनलोड के लिए उपलब्ध होंगे।",
+        "q_en": "When will the admit cards be released?",
+        "q_hi": "एडमिट कार्ड कब जारी किए जाएंगे?"
       }
     ],
     "fees": [],
@@ -218,27 +196,27 @@
     "h1_hi": "एनटीए श्रेष्ठ नेट्स प्रवेश 2027 – 2,400 सीटों के लिए ऑनलाइन आवेदन करें",
     "hindi_notice_url": null,
     "how_en": [
-      "Go to the official website at https://exams.nta.nic.in/shreshta/",
-      "Read the detailed Information Bulletin carefully before filling out the form",
-      "Fill out the online application form with required details between 14.11.2026 and 30.11.2026",
-      "Take a printout of the confirmation page for future reference"
+      "Visit the official website at https://exams.nta.nic.in/shreshta/.",
+      "Read the detailed Information Bulletin carefully before applying.",
+      "Fill out the online application form with required details.",
+      "Upload necessary documents and submit the form before the last date."
     ],
     "how_hi": [
-      "आधिकारिक वेबसाइट https://exams.nta.nic.in/shreshta/ पर जाएं",
-      "फॉर्म भरने से पहले विस्तृत सूचना बुलेटिन को ध्यान से पढ़ें",
-      "14.11.2026 से 30.11.2026 के बीच आवश्यक विवरण के साथ ऑनलाइन आवेदन पत्र भरें",
-      "भविष्य के संदर्भ के लिए पुष्टिकरण पृष्ठ का प्रिंटआउट लें"
+      "आधिकारिक वेबसाइट https://exams.nta.nic.in/shreshta/ पर जाएं।",
+      "आवेदन करने से पहले विस्तृत सूचना बुलेटिन को ध्यान से पढ़ें।",
+      "आवश्यक विवरण के साथ ऑनलाइन आवेदन पत्र भरें।",
+      "आवश्यक दस्तावेज अपलोड करें और अंतिम तिथि से पहले फॉर्म जमा करें।"
     ],
-    "intro_en": "The National Testing Agency (NTA) has released the public notice inviting online applications for the Scheme for Residential Education for Students in High Schools in Targeted Areas (SHRESHTA NETS) 2027. Under this scheme, approximately 2,400 meritorious Scheduled Caste and De-notified Tribes students will be selected for admission into Class 9 and Class 11 in reputed private residential schools. The online application window is open from 14 November 2026 to 30 November 2026. The pen-and-paper-based entrance test is scheduled for 10 January 2027 across 192 cities in India.",
-    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने लक्षित क्षेत्रों के हाई स्कूलों में छात्रों के लिए आवासीय शिक्षा योजना (श्रेष्ठ नेट्स) 2027 के लिए ऑनलाइन आवेदन आमंत्रित करते हुए सार्वजनिक सूचना जारी की है। इस योजना के तहत प्रतिष्ठित निजी आवासीय विद्यालयों में कक्षा 9 और कक्षा 11 में प्रवेश के लिए लगभग 2,400 मेधावी अनुसूचित जाति और विमुक्त जनजाति के छात्रों का चयन किया जाएगा। ऑनलाइन आवेदन विंडो 14 नवंबर 2026 से 30 नवंबर 2026 तक खुली है। पेन-एंड-पेपर आधारित प्रवेश परीक्षा 10 जनवरी 2027 को भारत के 192 शहरों में आयोजित की जानी है।",
+    "intro_en": "The National Testing Agency (NTA) has released a public notice inviting online applications for the SHRESHTA (NETS) 2027 examination on behalf of the Ministry of Social Justice and Empowerment. The scheme aims to provide high-quality residential education to meritorious Scheduled Caste (SC) and De-notified Tribes (DNT) students in Class 9 and Class 11 in reputed private residential schools. A total of 2,400 seats are available under the scheme, with the entire cost of education funded by the Central Government. Online applications are open from 14 November 2026 to 30 November 2026.",
+    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने सामाजिक न्याय और अधिकारिता मंत्रालय की ओर से श्रेष्ठ (नेट्स) 2027 परीक्षा के लिए ऑनलाइन आवेदन आमंत्रित करते हुए एक सार्वजनिक नोटिस जारी किया है। इस योजना का उद्देश्य प्रतिष्ठित निजी आवासीय विद्यालयों में कक्षा 9 और कक्षा 11 में मेधावी अनुसूचित जाति (एससी) और विमुक्त जनजाति (डीएनटी) के छात्रों को उच्च गुणवत्तापूर्ण आवासीय शिक्षा प्रदान करना है। इस योजना के तहत कुल 2,400 सीटें उपलब्ध हैं, जिसमें शिक्षा की पूरी लागत केंद्र सरकार द्वारा वित्त पोषित है। ऑनलाइन आवेदन 14 नवंबर 2026 से 30 नवंबर 2026 तक खुले हैं।",
     "last_date": "2026-11-30",
     "mistakes_en": [
-      "Do not miss the application deadline of 30 November 2026",
-      "Ensure correct particulars are entered as correction window is only available on 03 and 04 December 2026"
+      "Failing to check eligibility criteria before applying.",
+      "Submitting the application form after the last date (30 November 2026)."
     ],
     "mistakes_hi": [
-      "30 नवंबर 2026 की आवेदन समय सीमा न चूकें",
-      "सुनिश्चित करें कि सही विवरण दर्ज किए गए हैं क्योंकि सुधार विंडो केवल 03 और 04 दिसंबर 2026 को उपलब्ध है"
+      "आवेदन करने से पहले पात्रता मापदंडों की जांच न करना।",
+      "अंतिम तिथि (30 नवंबर 2026) के बाद आवेदन पत्र जमा करना।"
     ],
     "not_en": [],
     "not_hi": [],
@@ -248,28 +226,28 @@
     "provider": "gemini/gemini-flash-lite-latest",
     "rows": [
       {
-        "label_en": "Total seats",
+        "label_en": "Total Seats",
         "label_hi": "कुल सीटें",
         "value_en": "2,400",
         "value_hi": "2,400"
       },
       {
-        "label_en": "Apply online",
+        "label_en": "Apply Online",
         "label_hi": "ऑनलाइन आवेदन",
         "value_en": "14 Nov 2026 to 30 Nov 2026",
-        "value_hi": "14 नव 2026 से 30 नव 2026"
+        "value_hi": "14 नवंबर 2026 से 30 नवंबर 2026"
       },
       {
-        "label_en": "Exam date",
-        "label_hi": "परीक्षा तिथि",
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा की तिथि",
         "value_en": "10 Jan 2027",
-        "value_hi": "10 जन 2027"
+        "value_hi": "10 जनवरी 2027"
       },
       {
-        "label_en": "Advertisement number",
-        "label_hi": "विज्ञापन संख्या",
-        "value_en": "SHRESHTA (NETS) - 2027",
-        "value_hi": "श्रेष्ठ (नेट्स) - 2027"
+        "label_en": "Mode of Test",
+        "label_hi": "परीक्षा का तरीका",
+        "value_en": "Pen & Paper (OMR Based)",
+        "value_hi": "पेन और पेपर (ओएमआर आधारित)"
       }
     ],
     "salary": [],
@@ -278,36 +256,36 @@
       "Declaration of Result"
     ],
     "selection_hi": [
-      "पेन-एंड-पेपर आधारित परीक्षा",
+      "पेन-एंड-पेपर आधारित परीक्षा (पीबीटी)",
       "परिणाम की घोषणा"
     ],
     "share_card": {
       "headline_en": "Admission 2027",
       "headline_hi": "प्रवेश 2027",
       "kind": "job",
-      "line_en": "SHRESHTA NETS 2027",
-      "line_hi": "श्रेष्ठ नेट्स 2027",
-      "posts": 2400
+      "line_en": "SHRESHTA NETS",
+      "line_hi": "श्रेष्ठ नेट्स",
+      "posts": "2400"
     },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "National Testing Agency has invited online applications for SHRESHTA NETS 2027 admission to Class 9 and Class 11. Eligible Scheduled Caste and De-notified Tribes students can apply online up to 30 November 2026. The entrance exam will be held on 10 January 2027.",
-    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने कक्षा 9 और कक्षा 11 में प्रवेश के लिए श्रेष्ठ नेट्स 2027 हेतु ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य अनुसूचित जाति और विमुक्त जनजाति के छात्र 30 नवंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं। प्रवेश परीक्षा 10 जनवरी 2027 को आयोजित की जाएगी।",
+    "summary_en": "National Testing Agency has invited online applications for SHRESHTA (NETS) 2027. Eligible students belonging to Scheduled Caste and De-notified Tribes can apply online till 30 November 2026. The examination is scheduled to be held on 10 January 2027.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने श्रेष्ठ (नेट्स) 2027 के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। अनुसूचित जाति और विमुक्त जातियों से संबंधित पात्र छात्र 30 नवंबर 2026 तक ऑनलाइन आवेदन कर सकते हैं। परीक्षा 10 जनवरी 2027 को आयोजित होने निर्धारित है।",
     "vacancies": [
       {
-        "detail_en": "Scheduled Castes (SCs): 2160, De-notified Tribes (DNTs): 240",
-        "detail_hi": "अनुसूचित जाति (एससी): 2160, विमुक्त जनजाति (डीएनटी): 240",
-        "post_en": "SHRESHTA (NETS) 2027 Admission (Class 9 & 11)",
-        "post_hi": "श्रेष्ठ (नेट्स) 2027 प्रवेश (कक्षा 9 और 11)",
+        "detail_en": "SC: 2160, DNT: 240 (Admission in Class 9 and Class 11)",
+        "detail_hi": "एससी: 2160, डीएनटी: 240 (कक्षा 9 और कक्षा 11 में प्रवेश)",
+        "post_en": "SHRESHTA (NETS) 2027 Admissions",
+        "post_hi": "श्रेष्ठ (नेट्स) 2027 प्रवेश",
         "total": "2400"
       }
     ],
     "video_url": null,
     "who_en": [
-      "Scheduled Caste (SC) and De-notified Tribes (DNT) students studying in high schools seeking admission to Class 9 or 11"
+      "Meritorious SC and DNT students studying in high schools seeking admission to Class 9 and Class 11."
     ],
     "who_hi": [
-      "कक्षा 9 या 11 में प्रवेश चाहने वाले हाई स्कूलों में पढ़ने वाले अनुसूचित जाति (एससी) और विमुक्त जनजाति (डीएनटी) के छात्र"
+      "कक्षा 9 और कक्षा 11 में प्रवेश चाहने वाले उच्च विद्यालयों में पढ़ने वाले मेधावी एससी और डीएनटी छात्र।"
     ]
   },
   "pdf": {
@@ -317,7 +295,6 @@
     "text_kind": "ocr-legacy-font"
   },
   "published_at": "2026-11-18T03:52:06Z",
-  "rewrite": true,
   "slug": "nta-shreshta-nets-admission-2027-apply-online-for-2-400-seats",
   "source_id": "nta-home",
   "status": "approved",
@@ -325,9 +302,10 @@
   "url": "https://nta.ac.in/Download/Notice/Notice_20261114192445.pdf",
   "verify": {
     "at": "2026-11-18",
+    "held": false,
     "missing": [
       "City of examination intimation: 2026-12-20",
-      "Admit card download: 2027-01-05"
+      "Admit card download: 2027-01-03"
     ],
     "tries": 1
   }

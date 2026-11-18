@@ -1,5 +1,20 @@
 {
   "board_url": "https://upsssc.gov.in/AllNotifications.aspx",
+  "card": {
+    "confidence": "low",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "सहायक सांख्यिकीय अधिकारी / सहायक शोध अधिकारी",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "PDF text is empty, insufficient details to list.",
+    "summary_en": "Notification for Assistant Statistical Officer / Assistant Research Officer recruitment.",
+    "summary_hi": "सहायक सांख्यिकीय अधिकारी / सहायक शोध अधिकारी भर्ती हेतु विज्ञापन।",
+    "title_en": "UPSSSC Assistant Statistical Officer Examination 2026",
+    "title_hi": "उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग सहायक सांख्यिकीय अधिकारी परीक्षा 2026",
+    "type": "Job",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "scanned"
   },
   "source_id": "upsssc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "विज्ञापन संख्या-05-परीक्षा/2026, सहायक सांख्यिकीय अधिकारी / सहायक शोध अधिकारी (स...",
   "url": "https://upsssc.gov.in/ViewPdf.aspx?viSrKKYPvDtwe7rXQmj509ApOnD6vpwheKciC0G8jNk="
 }
