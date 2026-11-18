@@ -1,21 +1,247 @@
 {
+  "auto_published": true,
   "board_url": "https://rssb.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-12-01",
+    "last_date": null,
+    "list": true,
+    "posts": "Common Eligibility Test (Senior Secondary Level)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "RSSB has announced the exam schedule for the Common Eligibility Test (Senior Secondary Level) 2026. The exams will be held from December 1 to December 3, 2026.",
+    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने समान पात्रता परीक्षा (सीनियर सेकेंडरी स्तर) 2026 के लिए परीक्षा कार्यक्रम की घोषणा कर दी है। परीक्षा 1 दिसंबर से 3 दिसंबर 2026 तक आयोजित की जाएगी।",
+    "title_en": "RSSB CET Senior Secondary Level Exam Date 2026 – Notice Out",
+    "title_hi": "राजस्थान सीईटी सीनियर सेकेंडरी स्तर परीक्षा तिथि 2026 – नोटिस जारी",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {},
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-17T05:45:50+00:00",
   "id": "8492fc9d1e6d",
+  "issue": 2459,
+  "issue_tidy": true,
   "kind": "admit_card",
+  "notice_date": "2026-11-17",
   "org": "RSSB Rajasthan",
+  "page": {
+    "after_en": [
+      "Appearance in the written examination on the scheduled dates",
+      "Declaration of results and scorecards by RSSB"
+    ],
+    "after_hi": [
+      "निर्धारित तिथियों पर लिखित परीक्षा में शामिल होना",
+      "परिणाम और स्कोरकार्ड की घोषणा"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": null,
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Download the admit card once released",
+      "Verify photo and ID details",
+      "Keep a blue ballpoint pen ready for the exam"
+    ],
+    "checklist_hi": [
+      "जारी होने पर एडमिट कार्ड डाउनलोड करें",
+      "फोटो और आईडी विवरण सत्यापित करें",
+      "नीला बॉलपॉइंट पेन साथ रखें"
+    ],
+    "conducted_by_en": "Rajasthan Staff Selection Board (RSSB)",
+    "conducted_by_hi": "राजस्थान कर्मचारी चयन बोर्ड (RSSB)",
+    "dates": [
+      {
+        "label_en": "Exam Dates",
+        "label_hi": "परीक्षा तिथियां",
+        "value_en": "01 Dec 2026 to 03 Dec 2026",
+        "value_hi": "01 दिसंबर 2026 से 03 दिसंबर 2026"
+      },
+      {
+        "label_en": "Admit Card Download",
+        "label_hi": "एडमिट कार्ड डाउनलोड",
+        "value_en": "To be notified later",
+        "value_hi": "शीघ्र सूचित किया जाएगा"
+      }
+    ],
+    "documents_en": [
+      "Provisional e-Admit Card",
+      "Original Photo ID (Matching with face and photo)",
+      "Updated photograph on ID if older than 3 years"
+    ],
+    "documents_hi": [
+      "प्रोविजनल ई-एडमिट कार्ड",
+      "मूल फोटो पहचान पत्र",
+      "यदि फोटो 3 वर्ष से अधिक पुरानी है तो अद्यतन फोटो पहचान पत्र"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Educational Qualification",
+        "label_hi": "शैक्षणिक योग्यता",
+        "value_en": "Senior Secondary (12th) level as per original notification",
+        "value_hi": "मूल विज्ञापन के अनुसार सीनियर सेकेंडरी (12वीं) स्तर"
+      }
+    ],
+    "exam_date": "2026-12-01",
+    "exam_pattern": [
+      {
+        "marks": "-",
+        "part_en": "OMR Bubbling Check Time",
+        "part_hi": "ओएमआर गोले जांचने का अतिरिक्त समय",
+        "questions": "-",
+        "time": "10 minutes extra"
+      }
+    ],
+    "explain": [
+      {
+        "a_en": "It is a Common Eligibility Test conducted by the Rajasthan Staff Selection Board for various recruitment posts requiring a senior secondary (12th) qualification.",
+        "a_hi": "यह राजस्थान कर्मचारी चयन बोर्ड द्वारा 12वीं कक्षा की योग्यता वाले विभिन्न भर्ती पदों के लिए आयोजित की जाने वाली समान पात्रता परीक्षा है।",
+        "q_en": "What is RSSB CET Senior Secondary Level?",
+        "q_hi": "RSSB CET सीनियर सेकेंडरी स्तर क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "OMR Sheet Format",
+        "label_hi": "ओएमआर शीट प्रारूप",
+        "value_en": "5 options per question (A, B, C, D and E for unattempted)",
+        "value_hi": "प्रत्येक प्रश्न के लिए 5 विकल्प (A, B, C, D और E अनुत्तरित के लिए)"
+      },
+      {
+        "label_en": "Negative Marking",
+        "label_hi": "नकारात्मक मूल्यांकन",
+        "value_en": "1/3rd mark deducted if no option or 'E' is not darkened",
+        "value_hi": "यदि कोई विकल्प या 'E' नहीं भरा गया तो 1/3 अंक काटे जाएंगे"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The exam will be held from December 1 to December 3, 2026.",
+        "a_hi": "परीक्षा 1 दिसंबर से 3 दिसंबर 2026 तक आयोजित की जाएगी।",
+        "q_en": "When will the RSSB CET Senior Secondary Level Exam 2026 be held?",
+        "q_hi": "RSSB CET सीनियर सेकेंडरी स्तर परीक्षा 2026 कब आयोजित होगी?"
+      },
+      {
+        "a_en": "There will be 5 options (A, B, C, D, and E for unattempted questions).",
+        "a_hi": "प्रत्येक प्रश्न के लिए 5 विकल्प (A, B, C, D और E) होंगे।",
+        "q_en": "How many options will be there in each question on the OMR sheet?",
+        "q_hi": "ओएमआर शीट पर प्रत्येक प्रश्न में कितने विकल्प होंगे?"
+      },
+      {
+        "a_en": "Yes, 1/3rd of the mark for a question will be deducted if no option or the 'E' option is darkened for an unattempted question.",
+        "a_hi": "हाँ, यदि कोई विकल्प नहीं भरा जाता है तो 1/3 अंक काटे जाएंगे।",
+        "q_en": "Is there negative marking in the RSSB CET Senior Secondary Exam?",
+        "q_hi": "क्या RSSB CET सीनियर सेकेंडरी परीक्षा में नेगेटिव मार्किंग है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "RSSB CET Senior Secondary Level Exam Date 2026 – Notice Out",
+    "h1_hi": "राजस्थान सीईटी सीनियर सेकेंडरी स्तर परीक्षा तिथि 2026 – नोटिस जारी",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official RSSB website at rsmssb.rajasthan.gov.in.",
+      "Click on the Admit Card link for CET Senior Secondary Level 2026 when available.",
+      "Enter your login credentials to download the provisional e-admit card.",
+      "Take a printout of the admit card and follow all instructions printed on it."
+    ],
+    "how_hi": [
+      "आधिकारिक वेबसाइट rsmssb.rajasthan.gov.in पर जाएं।",
+      "CET सीनियर सेकेंडरी स्तर 2026 के एडमिट कार्ड लिंक पर क्लिक करें।",
+      "अपने लॉगिन विवरण दर्ज करके प्रोविजनल ई-एडमिट कार्ड डाउनलोड करें।",
+      "एडमिट कार्ड का प्रिंटआउट लें।"
+    ],
+    "intro_en": "The Rajasthan Staff Selection Board (RSSB) has announced the official exam schedule for the Common Eligibility Test (CET) Senior Secondary Level 2026. The examinations will take place from December 1, 2026, to December 3, 2026, across various centres. Candidates who applied under advertisement number 08/2026 must read the guidelines carefully regarding the five-option OMR sheet format, negative marking, and photo verification. Provisional e-admit cards will be released separately on the official website.",
+    "intro_hi": "राजस्थान कर्मचारी चयन बोर्ड (RSSB) ने समान पात्रता परीक्षा (CET) सीनियर सेकेंडरी स्तर 2026 के लिए आधिकारिक परीक्षा कार्यक्रम की घोषणा कर दी है। परीक्षा 1 दिसंबर 2026 से 3 दिसंबर 2026 तक आयोजित की जाएगी। विज्ञापित पदों के लिए आवेदन करने वाले उम्मीदवारों को ओएमआर शीट के पांच विकल्पों, नेगेटिव मार्किंग और फोटो सत्यापन से जुड़े दिशा-निर्देशों को ध्यान से पढ़ना चाहिए।",
+    "last_date": null,
+    "mistakes_en": [
+      "Leaving more than 10% of questions completely unbubbled (leads to disqualification).",
+      "Failing to darken either option A, B, C, D or E for every question.",
+      "Carrying an outdated photo ID where the face does not match the admit card."
+    ],
+    "mistakes_hi": [
+      "10% से अधिक प्रश्नों में कोई भी गोला न भरना (अयोग्यता का कारण बन सकता है)।",
+      "प्रत्येक प्रश्न के लिए A, B, C, D या E में से कोई एक गोला काला न करना।"
+    ],
+    "not_en": [
+      "Candidates who do not meet the educational qualification or eligibility criteria"
+    ],
+    "not_hi": [
+      "जो उम्मीदवार शैक्षणिक योग्यता या पात्रता मापदंड पूरा नहीं करते हैं"
+    ],
+    "notice_date": null,
+    "official_site": "https://rssb.rajasthan.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "01 Dec 2026 to 03 Dec 2026",
+        "value_hi": "01 दिसंबर 2026 से 03 दिसंबर 2026"
+      },
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "08/2026",
+        "value_hi": "08/2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Written Examination",
+      "Document Verification (as applicable for subsequent posts)"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा",
+      "दस्तावेज़ सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "Exam Schedule 2026",
+      "headline_hi": "परीक्षा शेड्यूल 2026",
+      "kind": "sched",
+      "line_en": "CET Senior Secondary Level",
+      "line_hi": "CET सीनियर सेकेंडरी स्तर",
+      "posts": null
+    },
+    "status_en": "Exam schedule released, admit cards to be available soon",
+    "status_hi": "परीक्षा शेड्यूल जारी, एडमिट कार्ड जल्द उपलब्ध होंगे",
+    "summary_en": "Rajasthan Staff Selection Board has released the exam schedule and important instructions for the Common Eligibility Test (Senior Secondary Level) 2026. The exam will be conducted from December 1 to December 3, 2026, in two shifts daily. Candidates must check important guidelines regarding admit cards, OMR sheet filling with five options, and negative marking.",
+    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने समान पात्रता परीक्षा (सीनियर सेकेंडरी स्तर) 2026 के लिए परीक्षा कार्यक्रम और महत्वपूर्ण निर्देश जारी कर दिए हैं। परीक्षा 1 दिसंबर से 3 दिसंबर 2026 तक प्रतिदिन दो पारियों में आयोजित की जाएगी।",
+    "vacancies": [
+      {
+        "detail_en": "Exam for senior secondary level posts",
+        "detail_hi": "सीनियर सेकेंडरी स्तर के पदों के लिए परीक्षा",
+        "post_en": "Common Eligibility Test (Senior Secondary Level) 2026",
+        "post_hi": "समान पात्रता परीक्षा (सीनियर सेकेंडरी स्तर) 2026",
+        "total": "As per notification"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates who applied for RSSB CET Senior Secondary Level Exam 2026"
+    ],
+    "who_hi": [
+      "जिन उम्मीदवारों ने RSSB CET सीनियर सेकेंडरी स्तर परीक्षा 2026 के लिए आवेदन किया है"
+    ]
+  },
   "pdf": {
     "bytes": 152913,
     "pages": 2,
     "sha256": "27841cab40b286fdaca5295e531fd15fc6d9dafe0a59fa85b93ae56f5c272161",
     "text_kind": "text"
   },
+  "published_at": "2026-11-18T08:53:29Z",
+  "qual": [
+    "12th"
+  ],
+  "slug": "rssb-cet-senior-secondary-level-exam-date-2026-notice-out",
   "source_id": "rssb-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "17-11-2026 - Common Eligibility Test(Senior Secondary Level) 2026 : Admit card issue date & Important Instructions",
   "url": "https://rssb.rajasthan.gov.in/storage/news_item/1794893623.pdf"
 }

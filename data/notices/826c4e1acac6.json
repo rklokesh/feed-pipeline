@@ -1,21 +1,226 @@
 {
+  "auto_published": true,
   "board_url": "https://rssb.rajasthan.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Supervisor (Woman)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Rajasthan Subordinate and Ministerial Services Selection Board has released the document verification schedule, checklist, and required formats for provisionally selected candidates of Supervisor Woman Exam 2026.",
+    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने पर्यवेक्षक महिला परीक्षा 2026 के अनंतिम रूप سے चयनित अभ्यर्थियों के लिए दस्तावेज सत्यापन अनुसूची, चेकलिस्ट और आवश्यक प्रपत्र जारी किए हैं।",
+    "title_en": "RSSB Supervisor Woman 2026 Document Verification Schedule & Formats",
+    "title_hi": "राजस्थान कर्मचारी चयन बोर्ड पर्यवेक्षक महिला 2026 दस्तावेज सत्यापन अनुसूची और प्रपत्र",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "rssb-supervisor-woman-2026",
+    "name_en": "RSSB Supervisor Woman 2026 Document Verification Schedule an",
+    "name_hi": "आरएसएसबी सुपरवाइजर महिला 2026 दस्तावेज़ सत्यापन अनुसूची और प"
+  },
   "extraction": {
     "ai": null
   },
   "fields": {},
   "first_seen": "2026-11-18T08:47:28+00:00",
   "id": "826c4e1acac6",
+  "issue": 2458,
+  "issue_tidy": true,
   "kind": "result",
+  "notice_date": "2026-11-18",
   "org": "RSSB Rajasthan",
+  "page": {
+    "after_en": [
+      "Final appointment and posting order issuance after successful document verification."
+    ],
+    "after_hi": [
+      "सफल दस्तावेज सत्यापन के बाद अंतिम नियुक्ति और पोस्टिंग आदेश जारी करना।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": null,
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Download the checklist and required formats from the official notice.",
+      "Arrange all certificates in the exact serial order given in the notice.",
+      "Number all pages and sign the declaration forms."
+    ],
+    "checklist_hi": [
+      "आधिकारिक नोटिस से चेकलिस्ट और आवश्यक प्रपत्र डाउनलोड करें।",
+      "नोटिस में दिए गए सटीक क्रम में सभी प्रमाण पत्र व्यवस्थित करें.",
+      "सभी पृष्ठों पर संख्या अंकित करें और घोषणा पत्र पर हस्ताक्षर करें।"
+    ],
+    "conducted_by_en": "Rajasthan Subordinate and Ministerial Services Selection Board (RSSB)",
+    "conducted_by_hi": "राजस्थान कर्मचारी चयन बोर्ड (RSSB)",
+    "dates": [],
+    "documents_en": [
+      "Detailed application form with scrutiny form",
+      "Matriculation/Secondary mark sheet and certificate for date of birth",
+      "Graduation mark sheet and degree/provisional certificate",
+      "Post-Graduation mark sheet and degree/provisional certificate",
+      "Computer Education Qualification (RSCIT or equivalent certificate)",
+      "Bonafide resident certificate",
+      "Category certificate (ST/SC/OBC/MBC/EWS/TSP)",
+      "Sub-category certificate (Widow, divorcee, sports person, disability, etc.)",
+      "Two character certificates from different gazetted officers",
+      "Character certificate from the last educational institution",
+      "Marriage registration certificate (if married)",
+      "General declaration on ₹50 non-judicial stamp paper verified by notary",
+      "Dowry related declaration",
+      "Children information declaration",
+      "Undertaking on plain paper",
+      "Constitution oath on plain paper",
+      "Handwriting specimen format",
+      "Self-signed declaration by widow/divorcee regarding remarriage",
+      "OBC/MBC/EWS affidavit",
+      "Self-attested photocopy of Aadhaar card",
+      "No Objection Certificate (NOC) if employed",
+      "Copy of fee payment receipt"
+    ],
+    "documents_hi": [
+      "विस्तृत आवेदन सह परिपरीक्षा प्रपत्र",
+      "मैट्रिक/सेकंडरी अंक तालिका एवं प्रमाण पत्र (जन्म दिनांक हेतु)",
+      "स्नातक (अंकतालिका एवं प्रमाण पत्र/प्रोविजनल प्रमाण पत्र)",
+      "स्नातकोत्तर (अंकतालिका एवं प्रमाण पत्र/प्रोविजनल प्रमाण पत्र)",
+      "कंप्यूटर शिक्षा योग्यता: आरएससीआईटी (RSCIT) या समकक्ष प्रमाण पत्र",
+      "मूल निवास प्रमाण पत्र",
+      "श्रेणी (ST/SC/OBC/MBC/EWS/TSP) प्रमाण पत्र",
+      "अन्य श्रेणी (विधवा/परित्यक्ता, खेल संबंधी, विशेष योग्यजन आदि का प्रमाण पत्र)",
+      "अलग-अलग राजपत्रित अधिकारियों से सत्यापित 2 चरित्र प्रमाण पत्र",
+      "अंतिम शैक्षणिक संस्थान द्वारा जारी चरित्र प्रमाण पत्र",
+      "विवाह पंजीयन प्रमाण पत्र (विवाह होने की दशा में)",
+      "सामान्य घोषणा पत्र (50 रुपये के गैर-न्यायिक स्टाम्प पर नोटरी द्वारा सत्यापित)",
+      "दहेज संबंधित घोषणा पत्र",
+      "संतानों की सूचना का घोषणा पत्र",
+      "वचनबंध प्रपत्र (सादे कागज पर)",
+      "संविधान शपथ पत्र (सादे कागज पर)",
+      "नमूना हस्तलिपि प्राइप",
+      "विधवा/परित्यक्ता अभ्यर्थियों द्वारा पुनर्विवाह किए जाने/न किए जाने के संबंध में फोटोयुक्त हस्ताक्षर घोषणा पत्र",
+      "ओबीसी/एमबीसी/ईडब्ल्यूएस शपथ पत्र",
+      "आधार कार्ड (स्वप्रमाणित छायाप्रति)",
+      "अनापत्ति प्रमाण पत्र (सेवासरत होने पर)",
+      "जमा फीस की प्रति"
+    ],
+    "eligibility": [],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is the process where provisionally selected candidates for the Supervisor Woman post must present their original educational, category, and identity documents along with filled self-declaration forms for verification by the board.",
+        "a_hi": "यह वह प्रक्रिया है जिसमें पर्यवेक्षक महिला पद के लिए अनंतिम रूप से चयनित अभ्यर्थियों को बोर्ड द्वारा सत्यापन के लिए अपने मूल शैक्षणिक, श्रेणी और पहचान दस्तावेजों के साथ भरे हुए स्व-घोषणा पत्र प्रस्तुत करने होते हैं।",
+        "q_en": "What is RSSB Supervisor Woman Document Verification?",
+        "q_hi": "आरएसएसबी पर्यवेक्षक महिला दस्तावेज सत्यापन क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "Candidates who have been provisionally selected in the RSSB Supervisor Woman recruitment examination are eligible to appear for document verification.",
+        "a_hi": "आरएसएसबी पर्यवेक्षक महिला भर्ती परीक्षा में अनंतिम रूप से चयनित अभ्यर्थी दस्तावेज सत्यापन के लिए उपस्थित होने के पात्र हैं।",
+        "q_en": "Who is eligible for RSSB Supervisor Woman Document Verification 2026?",
+        "q_hi": "आरएसएसबी पर्यवेक्षक महिला दस्तावेज सत्यापन 2026 के लिए कौन पात्र है?"
+      },
+      {
+        "a_en": "Required documents include educational mark sheets, category certificates, character certificates, resident certificates, R-SCIT certificate, and filled self-declaration formats.",
+        "a_hi": "आवश्यक दस्तावेजों में शैक्षणिक अंकतालिकाएं, जाति प्रमाण पत्र, चरित्र प्रमाण पत्र, मूल निवास प्रमाण पत्र, आरएससीआईटी प्रमाण पत्र और भरे हुए स्व-घोषणा प्रपत्र शामिल हैं।",
+        "q_en": "What documents are required for RSSB Supervisor Woman verification?",
+        "q_hi": "आरएसएसबी पर्यवेक्षक महिला सत्यापन के लिए कौन से दस्तावेज आवश्यक हैं?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "RSSB Supervisor Woman 2026 Document Verification Schedule & Formats",
+    "h1_hi": "राजस्थान कर्मचारी चयन बोर्ड पर्यवेक्षक महिला 2026 दस्तावेज सत्यापन अनुसूची और प्रपत्र",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Download the document verification checklist and formats from the official website.",
+      "Fill out the candidate details, self-declaration, and required formats.",
+      "Arrange all original documents along with self-attested photocopies in the specified order.",
+      "Number every page of the documents and attach them with the checklist."
+    ],
+    "how_hi": [
+      "आधिकारिक वेबसाइट से दस्तावेज सत्यापन चेकलिस्ट और प्रपत्र डाउनलोड करें।",
+      "अभ्यर्थी विवरण, स्व-घोषणा और आवश्यक प्रपत्र भरें।",
+      "निर्दिष्ट क्रम में स्व-प्रमाणित छायाप्रतियों के साथ सभी मूल दस्तावेज व्यवस्थित करें।",
+      "दस्तावेजों के प्रत्येक पृष्ठ पर संख्या अंकित करें और चेकलिस्ट के साथ संलग्न करें।"
+    ],
+    "intro_en": "The Rajasthan Subordinate and Ministerial Services Selection Board (RSSB) has issued the document verification notice, checklist, and formats for provisionally selected candidates of the Supervisor (Woman) Direct Recruitment 2026. Candidates who have been provisionally selected are required to arrange all necessary documents, including educational certificates, caste certificates, character certificates, and prescribed declaration forms as per the official checklist. All pages must be numbered and attached properly before submission.",
+    "intro_hi": "राजस्थान कर्मचारी चयन बोर्ड (RSSB) ने पर्यवेक्षक (महिला) सीधी भर्ती 2026 के अनंतिम रूप से चयनित अभ्यर्थियों के लिए दस्तावेज सत्यापन नोटिस, चेकलिस्ट और प्रपत्र जारी कर दिए हैं। अनंतिम रूप से चयनित अभ्यर्थियों को आधिकारिक चेकलिस्ट के अनुसार शैक्षणिक प्रमाण पत्र, जाति प्रमाण पत्र, चरित्र प्रमाण पत्र और निर्धारित घोषणा पत्र सहित सभी आवश्यक दस्तावेज तैयार करने होंगे।",
+    "last_date": null,
+    "mistakes_en": [
+      "Failing to number every page of the documents before attaching them to the checklist.",
+      "Forgetting to get affidavits and declarations notarized on the required stamp paper.",
+      "Not mentioning 'Not Applicable' where fields or documents do not apply."
+    ],
+    "mistakes_hi": [
+      "चेकलिस्ट के साथ संलग्न करने से पहले दस्तावेजों के प्रत्येक पृष्ठ पर संख्या अंकित न करना।",
+      "आवश्यक स्टाम्प पेपर पर शपथ पत्रों और घोषणाओं को नोटरी से सत्यापित कराना भूल जाना।",
+      "जहां क्षेत्र या दस्तावेज लागू नहीं होते, वहां 'लागू नहीं' अंकित न करना।"
+    ],
+    "not_en": [],
+    "notice_date": "2026-11-18",
+    "official_site": "https://rssb.rajasthan.gov.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Supervisor (Woman)",
+        "value_hi": "पर्यवेक्षक (महिला)"
+      },
+      {
+        "label_en": "Notice Type",
+        "label_hi": "नोटिस प्रकार",
+        "value_en": "Document Verification Checklist and Formats",
+        "value_hi": "दस्तावेज सत्यापन चेकलिस्ट और प्रपत्र"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Document Verification"
+    ],
+    "selection_hi": [
+      "दस्तावेज सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "DV Schedule & Formats",
+      "headline_hi": "दस्तावेज सत्यापन अनुसूची",
+      "kind": "sched",
+      "line_en": "Supervisor (Woman)",
+      "line_hi": "पर्यवेक्षक (महिला)",
+      "posts": null
+    },
+    "status_en": "Document verification checklist and formats released",
+    "status_hi": "दस्तावेज सत्यापन चेकलिस्ट और प्रपत्र जारी",
+    "summary_en": "Rajasthan Subordinate and Ministerial Services Selection Board has released the document verification schedule, checklist, and required formats for provisionally selected candidates of Supervisor Woman Exam 2026. Candidates must check the required documents, self-declaration forms, and formats provided in the notice.",
+    "summary_hi": "राजस्थान कर्मचारी चयन बोर्ड ने पर्यवेक्षक महिला परीक्षा 2026 के अनंतिम रूप से चयनित अभ्यर्थियों के लिए दस्तावेज सत्यापन अनुसूची, चेकलिस्ट और आवश्यक प्रपत्र जारी किए हैं। अभ्यर्थी नोटिस में दिए गए आवश्यक दस्तावेजों, स्व-घोषणा पत्रों और प्रारूपों की जांच कर सकते हैं।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Provisionally selected candidates for RSSB Supervisor Woman 2026"
+    ],
+    "who_hi": [
+      "आरएसएसबी पर्यवेक्षक महिला 2026 के लिए अनंतिम रूप से चयनित अभ्यर्थी"
+    ]
+  },
   "pdf": {
     "bytes": 2607248,
     "pages": 19,
     "sha256": "827f9ced5b17ff7ae42b5d4a42240479ae74335f994732b69cfcf7a7d2903bc5",
     "text_kind": "text"
   },
+  "published_at": "2026-11-18T08:53:21Z",
+  "qual": [
+    "graduate"
+  ],
+  "slug": "rssb-supervisor-woman-2026-document-verification-schedule-format",
   "source_id": "rssb-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "18-11-2026 - Supervisor (Woman) 2026 : Schedule For Document Verification of Provisionally Selected Candidates (Checklist and Formats)",
   "url": "https://rssb.rajasthan.gov.in/storage/news_item/1794990652.pdf"
 }
