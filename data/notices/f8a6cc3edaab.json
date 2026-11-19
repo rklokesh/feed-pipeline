@@ -1,5 +1,20 @@
 {
   "board_url": "https://sbi.bank.in/web/careers/current-openings",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Junior Associates",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "acquaint yourself booklet for exam preparation",
+    "summary_en": "SBI has released the acquaintance booklet for the Junior Associates Main Examination. Candidates should review it to understand the exam pattern and instructions.",
+    "summary_hi": "SBI ने जूनियर एसोसिएट्स मुख्य परीक्षा के लिए परिचय पुस्तिका जारी कर दी है। उम्मीदवार परीक्षा पैटर्न और निर्देशों को समझने के लिए इसका अध्ययन करें।",
+    "title_en": "SBI Junior Associates Main Examination Acquaint Yourself Booklet",
+    "title_hi": "SBI जूनियर एसोसिएट्स मुख्य परीक्षा पुस्तिका",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -26,7 +41,7 @@
     "text_kind": "text"
   },
   "source_id": "sbi-careers",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "ACQUAINT YOURSELF BOOKLET(HINDI/ ENGLISH) (NEW)",
   "url": "https://sbi.bank.in/webfiles/uploads/files_2627/11/SBI_Junior_Associates_Mains_IH_Eng_2026_27_17.pdf"
 }

@@ -1,5 +1,27 @@
 {
+  "auto_published": true,
   "board_url": "https://nta.ac.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-12-14",
+    "last_date": null,
+    "list": true,
+    "posts": "UGC-NET",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "NTA has released the subject-wise exam schedule for the UGC-NET December 2026 examination, which will be held from 14 December 2026 to 21 December 2026. Check the schedule and prepare accordingly.",
+    "summary_hi": "एनटीए ने यूजीसी-नेट दिसंबर 2026 परीक्षा के लिए विषय-वार परीक्षा कार्यक्रम जारी कर दिया है, जो 14 दिसंबर 2026 से 21 दिसंबर 2026 तक आयोजित की जाएगी। अपना शेड्यूल जांचें और तदनुसार तैयारी करें।",
+    "title_en": "UGC NET December 2026 Exam Schedule Out – Subject Wise Dates",
+    "title_hi": "यूजीसी नेट दिसंबर 2026 परीक्षा शेड्यूल जारी – विषय वार तिथियां",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "ugc-net-dec-2026",
+    "name_en": "UGC-NET December 2026",
+    "name_hi": "यूजीसी-नेट दिसंबर 2026"
+  },
   "extraction": {
     "ai": null
   },
@@ -12,16 +34,202 @@
   },
   "first_seen": "2026-11-19T17:35:10+00:00",
   "id": "85129b2b064d",
+  "issue": 2485,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-11-19",
   "org": "NTA",
+  "page": {
+    "after_en": [
+      "Release of exam city intimation slip 21 days prior to the exam",
+      "Release of admit cards",
+      "Conduct of CBT examination"
+    ],
+    "after_hi": [
+      "परीक्षा से 21 दिन पहले परीक्षा शहर सूचना पर्ची जारी करना",
+      "एडमिट कार्ड जारी करना",
+      "सीबीटी परीक्षा का आयोजन"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://ugcnet.nta.nic.in/",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check your subject code and corresponding shift timing from the notice.",
+      "Keep visiting the official website for exam city intimation and admit card updates."
+    ],
+    "checklist_hi": [
+      "सूचना से अपने विषय कोड और संबंधित पाली के समय की जांच करें।",
+      "परीक्षा शहर की जानकारी और एडमिट कार्ड के अपडेट के लिए आधिकारिक वेबसाइट पर जाते रहें।"
+    ],
+    "conducted_by_en": "National Testing Agency (NTA)",
+    "conducted_by_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए)",
+    "dates": [
+      {
+        "label_en": "Notice issue date",
+        "label_hi": "सूचना जारी होने की तिथि",
+        "value_en": "19 Nov 2026",
+        "value_hi": "19 नवंबर 2026"
+      },
+      {
+        "label_en": "Exam dates",
+        "label_hi": "परीक्षा तिथियां",
+        "value_en": "14 Dec 2026 to 21 Dec 2026",
+        "value_hi": "14 दिसंबर 2026 से 21 दिसंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Admit card (to be released later)",
+      "Valid photo ID proof"
+    ],
+    "documents_hi": [
+      "एडमिट कार्ड (बाद में जारी किया जाएगा)",
+      "वैध फोटो पहचान पत्र"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-12-14",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is the official timetable released by NTA detailing the dates, shifts, and subject codes for various subjects in the December 2026 UGC-NET examination.",
+        "a_hi": "यह एनटीए द्वारा जारी किया गया आधिकारिक समय सारणी है जो दिसंबर 2026 यूजीसी-नेट परीक्षा के विभिन्न विषयों के लिए तिथियां, पालियां और विषय कोड बताती है।",
+        "q_en": "What is the UGC-NET December 2026 exam schedule?",
+        "q_hi": "यूजीसी नेट दिसंबर 2026 परीक्षा शेड्यूल क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Shift I timing",
+        "label_hi": "प्रथम पाली का समय",
+        "value_en": "09:00 AM to 12:00 PM",
+        "value_hi": "सुबह 09:00 बजे से दोपहर 12:00 बजे तक"
+      },
+      {
+        "label_en": "Shift II timing",
+        "label_hi": "द्वितीय पाली का समय",
+        "value_en": "03:00 PM to 06:00 PM",
+        "value_hi": "दोपहर 03:00 बजे से शाम 06:00 बजे तक"
+      },
+      {
+        "label_en": "Contact helpline",
+        "label_hi": "संपर्क हेल्पलाइन",
+        "value_en": "011-40759000",
+        "value_hi": "011-40759000"
+      },
+      {
+        "label_en": "Official email",
+        "label_hi": "आधिकारिक ईमेल",
+        "value_en": "ugcnet@nta.ac.in",
+        "value_hi": "ugcnet@nta.ac.in"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The exam is scheduled from 14 December 2026 to 18 December 2026, and on 21 December 2026.",
+        "a_hi": "परीक्षा 14 दिसंबर 2026 से 18 दिसंबर 2026 तक और 21 दिसंबर 2026 को निर्धारित है।",
+        "q_en": "When is the UGC-NET December 2026 exam scheduled?",
+        "q_hi": "यूजीसी-नेट दिसंबर 2026 परीक्षा कब निर्धारित है?"
+      },
+      {
+        "a_en": "Shift I is from 09:00 AM to 12:00 PM and Shift II is from 03:00 PM to 06:00 PM.",
+        "a_hi": "प्रथम पाली सुबह 09:00 बजे से दोपहर 12:00 बजे तक और द्वितीय पाली दोपहर 03:00 बजे से शाम 06:00 बजे तक है।",
+        "q_en": "What are the timings of the exam shifts?",
+        "q_hi": "परीक्षा की पालियों का समय क्या है?"
+      },
+      {
+        "a_en": "The notification regarding the exam city centre will be displayed on the NTA website 21 days prior to the examination.",
+        "a_hi": "परीक्षा केंद्र के शहर के संबंध में सूचना परीक्षा से 21 दिन पहले एनटीए की वेबसाइट पर प्रदर्शित की जाएगी।",
+        "q_en": "When will the exam city intimation slip be released?",
+        "q_hi": "परीक्षा शहर सूचना पर्ची कब जारी की जाएगी?"
+      },
+      {
+        "a_en": "The official website is https://ugcnet.nta.nic.in/.",
+        "a_hi": "आधिकारिक वेबसाइट https://ugcnet.nta.nic.in/ है।",
+        "q_en": "What is the official website for UGC-NET December 2026?",
+        "q_hi": "यूजीसी-नेट दिसंबर 2026 के लिए आधिकारिक वेबसाइट क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "UGC NET December 2026 Exam Schedule Out – Subject Wise Dates",
+    "h1_hi": "यूजीसी नेट दिसंबर 2026 परीक्षा शेड्यूल जारी – विषय वार तिथियां",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official NTA UGC-NET website at ugcnet.nta.nic.in.",
+      "Check the public notice and Annexure-I for the subject-wise schedule.",
+      "Note your exam date, shift timing, and subject code."
+    ],
+    "how_hi": [
+      "एनटीए यूजीसी-नेट की आधिकारिक वेबसाइट ugcnet.nta.nic.in पर जाएं।",
+      "विषय-वार शेड्यूल के लिए सार्वजनिक सूचना और एनेक्सीक्स-I की जांच करें।",
+      "अपनी परीक्षा की तिथि, पाली का समय और विषय कोड नोट करें।"
+    ],
+    "intro_en": "The National Testing Agency (NTA) has published the official subject-wise schedule for the UGC-NET December 2026 examination. The exam will be conducted in Computer Based Test (CBT) mode on 14, 15, 16, 17, 18, and 21 December 2026 across two shifts daily. Shift I will be held from 09:00 AM to 12:00 PM and Shift II from 03:00 PM to 06:00 PM. Registered aspirants should check their respective subject codes and dates to prepare accordingly.",
+    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने यूजीसी-नेट दिसंबर 2026 परीक्षा के लिए आधिकारिक विषय-वार शेड्यूल प्रकाशित कर दिया है। परीक्षा कंप्यूटर आधारित टेस्ट (सीबीटी) मोड में 14, 15, 16, 17, 18 और 21 दिसंबर 2026 को प्रतिदिन दो पालियों में आयोजित की जाएगी। प्रथम पाली सुबह 09:00 बजे से दोपहर 12:00 बजे तक और द्वितीय पाली दोपहर 03:00 बजे से शाम 06:00 बजे तक होगी। पंजीकृत उम्मीदवार तदनुसार तैयारी के लिए अपने संबंधित विषय कोड और तिथियों की जांच कर सकते हैं।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not confuse the shift timings and subject codes listed in Annexure-I."
+    ],
+    "mistakes_hi": [
+      "एनेक्सीक्स-I में सूचीबद्ध पाली के समय और विषय कोड में भ्रमित न हों।"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-19",
+    "official_site": "https://ugcnet.nta.nic.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Exam dates",
+        "label_hi": "परीक्षा तिथियां",
+        "value_en": "14, 15, 16, 17, 18 and 21 Dec 2026",
+        "value_hi": "14, 15, 16, 17, 18 और 21 दिसंबर 2026"
+      },
+      {
+        "label_en": "Mode of exam",
+        "label_hi": "परीक्षा का माध्यम",
+        "value_en": "Computer Based Test (CBT)",
+        "value_hi": "कंप्यूटर आधारित टेस्ट (सीबीटी)"
+      }
+    ],
+    "salary": [],
+    "selection_en": [],
+    "selection_hi": [],
+    "share_card": {
+      "headline_en": "Exam Schedule Out",
+      "headline_hi": "परीक्षा शेड्यूल जारी",
+      "kind": "sched",
+      "line_en": "UGC-NET Dec 2026",
+      "line_hi": "यूजीसी-नेट दिस 2026",
+      "posts": null
+    },
+    "status_en": "Subject-wise exam schedule released",
+    "status_hi": "विषय-वार परीक्षा शेड्यूल जारी",
+    "summary_en": "NTA has released the subject-wise schedule for the UGC-NET December 2026 examination, which will be held from 14 December 2026 to 21 December 2026. Candidates can check the exam dates, shifts, and subject codes in the official notice.",
+    "summary_hi": "एनटीए ने यूजीसी-नेट दिसंबर 2026 परीक्षा के लिए विषय-वार परीक्षा कार्यक्रम जारी कर दिया है, जो 14 दिसंबर 2026 से 21 दिसंबर 2026 तक आयोजित की जाएगी। उम्मीदवार आधिकारिक सूचना में परीक्षा तिथियां, शिफ्ट और विषय कोड देख सकते हैं।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Candidates who applied for the UGC-NET December 2026 examination"
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जिन्होंने यूजीसी-नेट दिसंबर 2026 परीक्षा के लिए आवेदन किया है"
+    ]
+  },
   "pdf": {
     "bytes": 1347105,
     "pages": 3,
     "sha256": "292160aa88c8d02be5d833fefb68ce3e25fcdb7295c155031e8f4122a03e40bc",
     "text_kind": "ocr"
   },
+  "published_at": "2026-11-19T20:48:50Z",
+  "qual": [
+    "postgraduate"
+  ],
+  "slug": "ugc-net-december-2026-exam-schedule-out-subject-wise-dates",
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Public Notice for Subject-wise schedule of UGC-NET December 2026 Examination-Reg. Read More",
   "url": "https://nta.ac.in/Download/Notice/Notice_20261119125453.pdf"
 }

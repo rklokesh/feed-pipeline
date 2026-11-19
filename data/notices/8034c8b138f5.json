@@ -1,5 +1,20 @@
 {
   "board_url": "https://sbi.bank.in/web/careers/current-openings",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "exam instruction booklet / acquaint yourself booklet, not a job notice",
+    "summary_en": "SBI has released the acquaintance booklet with instructions for candidates appearing in the Junior Associates Mains examination.",
+    "summary_hi": "भारतीय स्टेट बैंक ने कनिष्ठ सहायक मुख्य परीक्षा में शामिल होने वाले उम्मीदवारों के लिए निर्देश पुस्तिका जारी की है।",
+    "title_en": "SBI Junior Associates Mains Exam Acquaint Yourself Booklet",
+    "title_hi": "भारतीय स्टेट बैंक कनिष्ठ सहायक मुख्य परीक्षा स्वयं जानकारी पुस्तिका",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -21,7 +36,7 @@
     "text_kind": "text"
   },
   "source_id": "sbi-careers",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "ACQUAINT YOURSELF BOOKLET(HINDI/ ENGLISH) (NEW)",
   "url": "https://sbi.bank.in/webfiles/uploads/files_2627/11/SBI_Junior_Associates_Mains_IH_Hindi_2026_27_17.pdf"
 }
