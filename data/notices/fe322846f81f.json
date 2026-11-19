@@ -1,5 +1,27 @@
 {
+  "auto_published": true,
   "board_url": "https://ssc.gov.in/home/notice-board",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Combined Higher Secondary Level (10+2)",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Staff Selection Commission has uploaded the final answer key, response sheet, and marks for the CHSL 2025 Tier-II exam. Candidates can check and download their scorecards by logging in with their registration details.",
+    "summary_hi": "कर्मचारी चयन आयोग ने सीएचएसएल 2025 टियर-II परीक्षा के लिए अंतिम उत्तर कुंजी, प्रतिक्रिया पत्रक और अंक अपलोड कर दिए हैं। उम्मीदवार अपने पंजीकरण विवरण के साथ लॉगिन करके अपने स्कोरकार्ड की जांच और डाउनलोड कर सकते हैं।",
+    "title_en": "SSC CHSL Tier-2 Final Answer Key 2025 – Marks and Response Sheet",
+    "title_hi": "एसएससी सीएचएसएल टियर-2 अंतिम उत्तर कुंजी 2025 – अंक और रिस्पॉन्स शीट",
+    "type": "Answer key",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "ssc-chsl-2025",
+    "name_en": "SSC CHSL 2025",
+    "name_hi": "एसएससी सीएचएसएल 2025"
+  },
   "extraction": {
     "ai": null
   },
@@ -12,16 +34,185 @@
   },
   "first_seen": "2026-11-18T01:49:57+00:00",
   "id": "fe322846f81f",
+  "issue": 2483,
+  "issue_tidy": true,
   "kind": "answer_key",
+  "notice_date": "2026-11-17",
   "org": "SSC",
+  "page": {
+    "after_en": [
+      "Candidates can use their marks and response sheets for self-analysis and recordkeeping."
+    ],
+    "after_hi": [
+      "उम्मीदवार स्व-विश्लेषण और रिकॉर्ड रखने के लिए अपने अंकों और रिस्पॉन्स शीट का उपयोग कर सकते हैं।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://sscexams.cbexams.com/CHSLETier2f2025finalanswerkesdiewNov06/loginnew.aspx",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Keep your Registered ID and Password ready",
+      "Download the response sheet and final answer key",
+      "Take a printout of your scorecard before the last date"
+    ],
+    "checklist_hi": [
+      "अपनी पंजीकृत आईडी और पासवर्ड तैयार रखें",
+      "रिस्पॉन्स शीट और अंतिम उत्तर कुंजी डाउनलोड करें",
+      "अंतिम तिथि से पहले अपने स्कोरकार्ड का प्रिंटआउट लें"
+    ],
+    "conducted_by_en": "Staff Selection Commission (SSC)",
+    "conducted_by_hi": "कर्मचारी चयन आयोग (एसएससी)",
+    "dates": [
+      {
+        "label_en": "Final result declaration date",
+        "label_hi": "अंतिम परिणाम घोषणा तिथि",
+        "value_en": "07 Oct 2026",
+        "value_hi": "07 अक्तू 2026"
+      },
+      {
+        "label_en": "Answer key and marks available from",
+        "label_hi": "उत्तर कुंजी और अंक उपलब्ध होने की तिथि",
+        "value_en": "17 Nov 2026 (23:00 hrs)",
+        "value_hi": "17 नवम् 2026 (23:00 बजे)"
+      },
+      {
+        "label_en": "Answer key and marks available up to",
+        "label_hi": "उत्तर कुंजी और अंक उपलब्ध रहने की अंतिम तिथि",
+        "value_en": "16 Dec 2026 (23:00 hrs)",
+        "value_hi": "16 दिसम् 2026 (23:00 बजे)"
+      }
+    ],
+    "documents_en": [
+      "Registered ID",
+      "Password"
+    ],
+    "documents_hi": [
+      "पंजीकृत आईडी",
+      "पासवर्ड"
+    ],
+    "eligibility": [],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is the official corrected answer key released by the Staff Selection Commission along with candidate response sheets and marks for the Tier-II examination of the Combined Higher Secondary Level Examination, 2025.",
+        "a_hi": "यह कर्मचारी चयन आयोग द्वारा संयुक्त उच्च माध्यमिक स्तर परीक्षा, 2025 के टियर-II परीक्षा के लिए उम्मीदवार की रिस्पॉन्स शीट और अंकों के साथ जारी की गई आधिकारिक संशोधित उत्तर कुंजी है।",
+        "q_en": "What is the SSC CHSL Tier-II Final Answer Key?",
+        "q_hi": "एसएससी सीएचएसएल टियर-II अंतिम उत्तर कुंजी क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "The final answer key can be downloaded up to 16 December 2026 (23:00 hrs).",
+        "a_hi": "अंतिम उत्तर कुंजी 16 दिसंबर 2026 (23:00 बजे) तक डाउनलोड की जा सकती है।",
+        "q_en": "When is the last date to download the SSC CHSL Tier-II Final Answer Key 2025?",
+        "q_hi": "एसएससी सीएचएसएल टियर-II अंतिम उत्तर कुंजी 2025 डाउनलोड करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "Candidates need their Registered ID and Password to log in and check their marks and response sheets.",
+        "a_hi": "उम्मीदवारों को अपने अंक और रिस्पॉन्स शीट देखने के लिए अपनी पंजीकृत आईडी और पासवर्ड की आवश्यकता होती है।",
+        "q_en": "What credentials are required to check SSC CHSL Tier-II marks?",
+        "q_hi": "एसएससी सीएचएसएल टियर-II अंक देखने के लिए किन विवरणों की आवश्यकता है?"
+      },
+      {
+        "a_en": "The final answer key was released on 17 November 2026.",
+        "a_hi": "अंतिम उत्तर कुंजी 17 नवंबर 2026 को जारी की गई थी।",
+        "q_en": "When was the SSC CHSL Tier-II final answer key released?",
+        "q_hi": "एसएससी सीएचएसएल टियर-II अंतिम उत्तर कुंजी कब जारी की गई थी?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "SSC CHSL Tier-2 Final Answer Key 2025 – Marks and Response Sheet",
+    "h1_hi": "एसएससी सीएचएसएल टियर-2 अंतिम उत्तर कुंजी 2025 – अंक और रिस्पॉन्स शीट",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Go to the official website of Staff Selection Commission (ssc.gov.in).",
+      "Click on the login link provided for the CHSL Tier-II Final Answer Key and Marks.",
+      "Enter your Registered ID and Password to log in.",
+      "View and download your final answer key along with the response sheet and marks.",
+      "Take a printout and save a copy for your personal use and self-analysis before 16 Dec 2026."
+    ],
+    "how_hi": [
+      "कर्मचारी चयन आयोग की आधिकारिक वेबसाइट (ssc.gov.in) पर जाएं।",
+      "सीएचएसएल टियर-II अंतिम उत्तर कुंजी और अंकों के लिए दिए गए लॉगिन लिंक पर क्लिक करें।",
+      "लॉगिन करने के लिए अपनी पंजीकृत आईडी और पासवर्ड दर्ज करें।",
+      "अपनी अंतिम उत्तर कुंजी, रिस्पॉन्स शीट और अंक देखें और डाउनलोड करें।",
+      "16 दिसंबर 2026 से पहले व्यक्तिगत उपयोग और स्व-विश्लेषण के लिए प्रिंटआउट लें और सुरक्षित रखें।"
+    ],
+    "intro_en": "The Staff Selection Commission (SSC) has uploaded the final answer keys, response sheets, and individual marks for the Combined Higher Secondary (10+2) Level Examination, 2025 (Tier-II). Candidates who appeared for the exam can check their scores and download their final answer keys from the official website between 17 November 2026 and 16 December 2026. It is mandatory to save a printout of the answer sheet and scorecard within this timeframe, as the links will not remain active after the deadline.",
+    "intro_hi": "कर्मचारी चयन आयोग (एसएससी) ने संयुक्त उच्च माध्यमिक स्तर (10+2) परीक्षा, 2025 (टियर-II) के लिए अंतिम उत्तर कुंजी, रिस्पॉन्स शीट और व्यक्तिगत अंक अपलोड कर दिए हैं। परीक्षा में शामिल होने वाले उम्मीदवार 17 नवंबर 2026 से 16 दिसंबर 2026 के बीच आधिकारिक वेबसाइट से अपने स्कोर और अंतिम उत्तर कुंजी डाउनलोड कर सकते हैं। इस अवधि के भीतर उत्तर पुस्तिका और स्कोरकार्ड का प्रिंटआउट सहेजना अनिवार्य है, क्योंकि समय सीमा समाप्त होने के बाद लिंक सक्रिय नहीं रहेगा।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not forget to download and print your answer key and scorecard before 16 December 2026, as they will not be available later."
+    ],
+    "mistakes_hi": [
+      "16 दिसंबर 2026 से पहले अपनी उत्तर कुंजी और स्कोरकार्ड डाउनलोड और प्रिंट करना न भूलें, क्योंकि बाद में ये उपलब्ध नहीं होंगे।"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-17",
+    "official_site": "https://ssc.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Exam Name",
+        "label_hi": "परीक्षा का नाम",
+        "value_en": "Combined Higher Secondary (10+2) Level Examination, 2025 (Tier-II)",
+        "value_hi": "संयुक्त उच्च माध्यमिक स्तर (10+2) परीक्षा, 2025 (टियर-II)"
+      },
+      {
+        "label_en": "Answer Key Availability",
+        "label_hi": "उत्तर कुंजी उपलब्धता",
+        "value_en": "17 Nov 2026 (23:00 hrs) to 16 Dec 2026 (23:00 hrs)",
+        "value_hi": "17 नवम् 2026 (23:00 बजे) से 16 दिसम् 2026 (23:00 बजे) तक"
+      },
+      {
+        "label_en": "Result Date",
+        "label_hi": "परिणाम तिथि",
+        "value_en": "07 Oct 2026",
+        "value_hi": "07 अक्तू 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [],
+    "selection_hi": [],
+    "share_card": {
+      "headline_en": "Final Answer Key Out",
+      "headline_hi": "अंतिम उत्तर कुंजी जारी",
+      "kind": "answer",
+      "line_en": "CHSL 2025 Tier-II Exam",
+      "line_hi": "सीएचएसएल 2025 टियर-II परीक्षा",
+      "posts": null
+    },
+    "status_en": "Final answer key and marks released, available till 16 Dec 2026",
+    "status_hi": "अंतिम उत्तर कुंजी और अंक जारी, 16 दिसंबर 2026 तक उपलब्ध",
+    "summary_en": "Staff Selection Commission has released the final answer key, response sheet, and marks for the Combined Higher Secondary (10+2) Level Examination, 2025 (Tier-II). Candidates can download their scorecards and answer keys online from 17 November 2026 to 16 December 2026 using their registered ID and password.",
+    "summary_hi": "कर्मचारी चयन आयोग ने संयुक्त उच्च माध्यमिक स्तर (10+2) परीक्षा, 2025 (टियर-II) के लिए अंतिम उत्तर कुंजी, रिस्पॉन्स शीट और अंक जारी कर दिए हैं। उम्मीदवार 17 नवंबर 2026 से 16 दिसंबर 2026 तक अपनी पंजीकृत आईडी और पासवर्ड का उपयोग करके ऑनलाइन स्कोरकार्ड डाउनलोड कर सकते हैं।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Candidates who appeared for the SSC CHSL 2025 Tier-II examination"
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जिन्होंने एसएससी सीएचएसएल 2025 टियर-II परीक्षा दी है"
+    ]
+  },
   "pdf": {
     "bytes": 236466,
     "pages": 1,
     "sha256": "604f6a21677af6e8bb07b65e1e511a07a9a25cf338acd31b3781be1f75e0f54e",
     "text_kind": "text"
   },
+  "published_at": "2026-11-19T01:59:35Z",
+  "qual": [
+    "12th"
+  ],
+  "slug": "ssc-chsl-tier-2-final-answer-key-2025-marks-and-response-sheet",
   "source_id": "ssc-notice-board",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Combined Higher Secondary (10+2) Level Examination, 2025 (Tier-II): Uploading of Final Answer Key(s) along with Candidates’ Response Sheet(s) and Marks of candidates",
   "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/answer_key_17112026.pdf"
 }

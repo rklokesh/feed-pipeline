@@ -54,10 +54,14 @@
   "org": "SSC",
   "page": {
     "after_en": [
-      "Candidates must appear for the Computer Based Examination, followed by a Skill Test and Evaluation of Service Records as per the selection stages."
+      "Computer Based Examination",
+      "Skill Test",
+      "Evaluation of Service Records"
     ],
     "after_hi": [
-      "उम्मीदवारों को चयन चरणों के अनुसार कंप्यूटर आधारित परीक्षा, उसके बाद कौशल परीक्षण और सेवा रिकॉर्ड के मूल्यांकन के लिए उपस्थित होना होगा।"
+      "कंप्यूटर आधारित परीक्षा",
+      "कौशल परीक्षा",
+      "सेवा रिकॉर्ड का मूल्यांकन"
     ],
     "age": [],
     "apply_start": "2026-11-17",
@@ -65,23 +69,23 @@
     "changes": [],
     "changes_from_notes": "",
     "checklist_en": [
-      "Check eligibility conditions for participating services.",
-      "Complete OTR on ssc.gov.in.",
-      "Submit online application before 08.12.2026.",
-      "Get the application verified and forwarded by the Head of Department."
+      "Ensure eligibility and parent service/cadre inclusion",
+      "Generate new OTR on ssc.gov.in",
+      "Submit online application by 08.12.2026",
+      "Forward printed application through proper channel to reach SSC(NR) by 22.12.2026 (or 29.12.2026 for remote areas)"
     ],
     "checklist_hi": [
-      "भाग लेने वाली सेवाओं के लिए पात्रता शर्तों की जाँच करें।",
-      "ssc.gov.in पर ओटीआर पूरा करें।",
-      "08.12.2026 से पहले ऑनलाइन आवेदन जमा करें।",
-      "विभाग प्रमुख द्वारा आवेदन को सत्यापित और अग्रसारित करवाएं।"
+      "पात्रता और मूल सेवा/संवर्ग की भागीदारी सुनिश्चित करें",
+      "ssc.gov.in पर नया ओटीआर जनरेट करें",
+      "08.12.2026 तक ऑनलाइन आवेदन जमा करें",
+      "22.12.2026 (या दूरस्थ क्षेत्रों के लिए 29.12.2026) तक एसएससी (एनआर) तक पहुंचने के लिए उचित माध्यम से प्रिंटेड आवेदन अग्रेषित करें"
     ],
     "conducted_by_en": "Staff Selection Commission (SSC)",
     "conducted_by_hi": "कर्मचारी चयन आयोग (एसएससी)",
     "dates": [
       {
-        "label_en": "Notice publication date",
-        "label_hi": "नोटिस प्रकाशन तिथि",
+        "label_en": "Notification date",
+        "label_hi": "अधिसूचना तिथि",
         "value_en": "17.11.2026",
         "value_hi": "17.11.2026"
       },
@@ -92,106 +96,93 @@
         "value_hi": "17.11.2026"
       },
       {
-        "label_en": "Last date for online applications",
+        "label_en": "Last date to apply online",
         "label_hi": "ऑनलाइन आवेदन की अंतिम तिथि",
-        "value_en": "08.12.2026 (23:00 Hours)",
-        "value_hi": "08.12.2026 (23:00 बजे)"
+        "value_en": "08.12.2026",
+        "value_hi": "08.12.2026"
       },
       {
         "label_en": "Last date for receipt of application through proper channel (General)",
         "label_hi": "उचित माध्यम से आवेदन प्राप्त होने की अंतिम तिथि (सामान्य)",
-        "value_en": "22.12.2026 (18:00 Hours)",
-        "value_hi": "22.12.2026 (18:00 बजे)"
+        "value_en": "22.12.2026",
+        "value_hi": "22.12.2026"
       },
       {
-        "label_en": "Last date for receipt of application (Abroad / Andaman & Nicobar / Lakshadweep)",
-        "label_hi": "आवेदन प्राप्त होने की अंतिम तिथि (विदेश / अंडमान और निकोबार / लक्षद्वीप)",
-        "value_en": "29.12.2026 (18:00 Hours)",
-        "value_hi": "29.12.2026 (18:00 बजे)"
+        "label_en": "Last date for receipt of application through proper channel (Abroad/Remote)",
+        "label_hi": "उचित माध्यम से आवेदन प्राप्त होने की अंतिम तिथि (विदेश/दूरस्थ)",
+        "value_en": "29.12.2026",
+        "value_hi": "29.12.2026"
       },
       {
         "label_en": "Schedule of Computer Based Examination",
-        "label_hi": "कंप्यूटर आधारित परीक्षा का शेड्यूल",
+        "label_hi": "कंप्यूटर आधारित परीक्षा का कार्यक्रम",
         "value_en": "Feb-Mar, 2027",
-        "value_hi": "फरवरी-मार्च, 2027"
+        "value_hi": "फरवरी-मार्च 2027"
       }
     ],
     "documents_en": [
       "Printed copy of online application form",
-      "Necessary supporting documents as per Annexure-I instructions"
+      "Necessary documents as per Instructions to Candidates (Annexure-I)"
     ],
     "documents_hi": [
-      "ऑनलाइन आवेदन पत्र की मुद्रित प्रति",
-      "परिशिष्ट-I के निर्देशों के अनुसार आवश्यक सहायक दस्तावेज"
+      "ऑनलाइन आवेदन पत्र की प्रिंटेड कॉपी",
+      "उम्मीदवारों के लिए निर्देश (अनुलग्नक-I) के अनुसार आवश्यक दस्तावेज"
     ],
     "eligibility": [
       {
-        "label_en": "Departmental Status",
-        "label_hi": "विभागीय स्थिति",
-        "value_en": "Must belong to the participating Services/Cadres and fulfill eligibility conditions.",
-        "value_hi": "भाग लेने वाली सेवाओं/संवर्गों से संबंधित होना चाहिए और पात्रता शर्तों को पूरा करना चाहिए।"
+        "label_en": "Candidate Type",
+        "label_hi": "उम्मीदवार का प्रकार",
+        "value_en": "Departmental candidates belonging to participating services and cadres",
+        "value_hi": "भाग लेने वाली सेवाओं और संवर्गों से संबंधित विभागीय उम्मीदवार"
       }
     ],
     "exam_date": "2027-02-15",
     "exam_pattern": [],
     "explain": [
       {
-        "a_en": "It is a Limited Departmental Competitive Examination conducted by the Staff Selection Commission for eligible departmental candidates to make additions to the Select List of Grade 'C' Stenographers in specific central services and cadres.",
-        "a_hi": "यह विशिष्ट केंद्रीय सेवाओं और संवर्गों में ग्रेड 'C' स्टेनोग्राफर की चयन सूची में जोड़ने के लिए योग्य विभागीय उम्मीदवारों के लिए कर्मचारी चयन आयोग द्वारा आयोजित एक सीमित विभागीय प्रतियोगी परीक्षा है।",
+        "a_en": "It is a Limited Departmental Competitive Examination conducted by the Staff Selection Commission for making additions to the Select List of Grade 'C' Stenographers in various central services and cadres. Only eligible departmental candidates can apply.",
+        "a_hi": "यह विभिन्न केंद्रीय सेवाओं और संवर्गों में ग्रेड 'सी' स्टेनोग्राफर की चयन सूची में जोड़ने के लिए कर्मचारी चयन आयोग द्वारा आयोजित एक सीमित विभागीय प्रतियोगी परीक्षा है। केवल योग्य विभागीय उम्मीदवार आवेदन कर सकते हैं।",
         "q_en": "What is SSC Grade 'C' Stenographers LDCE?",
-        "q_hi": "एसएससी ग्रेड 'C' स्टेनोग्राफर एलडीसीई क्या है?"
+        "q_hi": "एसएससी ग्रेड 'सी' स्टेनोग्राफर एलडीसीई क्या है?"
       }
     ],
-    "extra": [
-      {
-        "label_en": "Examination City",
-        "label_hi": "परीक्षा शहर",
-        "value_en": "Delhi-NCR only",
-        "value_hi": "केवल दिल्ली-एनसीआर"
-      }
-    ],
+    "extra": [],
     "faq": [
       {
-        "a_en": "The last date to submit online applications is 08.12.2026 up to 23:00 hours.",
-        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 08.12.2026 को 23:00 बजे तक है।",
-        "q_en": "What is the last date to apply online for SSC Grade 'C' Steno LDCE 2026?",
-        "q_hi": "एसएससी ग्रेड 'C' स्टेनो एलडीसीई 2026 के लिए ऑनलाइन आवेदन करने की अंतिम तिथि क्या है?"
+        "a_en": "The last date to submit online applications is 08.12.2026 (up to 2300 hours).",
+        "a_hi": "ऑनलाइन आवेदन जमा करने की अंतिम तिथि 08.12.2026 (रात 23:00 बजे तक) है।",
+        "q_en": "What is the last date to apply online for SSC Grade C Steno LDCE 2026?",
+        "q_hi": "एसएससी ग्रेड सी स्टेनो एलडीसीई 2026 के लिए ऑनलाइन आवेदन करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "The printed copy of the online application through proper channel must reach SSC-Northern Region by 22.12.2026, and by 29.12.2026 for those residing abroad or in Andaman & Nicobar and Lakshadweep.",
-        "a_hi": "उचित माध्यम से ऑनलाइन आवेदन की मुद्रित प्रति 22.12.2026 तक और विदेश या अंडमान और निकोबार तथा लक्षद्वीप में रहने वालों के लिए 29.12.2026 तक एसएससी-उत्तरी क्षेत्र में पहुंच जानी चाहिए।",
-        "q_en": "What is the last date for forwarding the application printout to SSC-NR?",
-        "q_hi": "एसएससी-एनआर को आवेदन प्रिंटआउट भेजने की अंतिम तिथि क्या है?"
+        "a_en": "Only eligible departmental candidates belonging to the specified participating services and cadres can apply.",
+        "a_hi": "केवल निर्दिष्ट भाग लेने वाली सेवाओं और संवर्गों से संबंधित योग्य विभागीय उम्मीदवार आवेदन कर सकते हैं।",
+        "q_en": "Who can apply for this examination?",
+        "q_hi": "इस परीक्षा के लिए कौन आवेदन कर सकता है?"
       },
       {
-        "a_en": "Candidates must apply online on the official website of the Staff Selection Commission at https://ssc.gov.in.",
-        "a_hi": "उम्मीदवारों को कर्मचारी चयन आयोग की आधिकारिक वेबसाइट https://ssc.gov.in पर ऑनलाइन आवेदन करना होगा।",
-        "q_en": "Where should I apply online for this examination?",
-        "q_hi": "मुझे इस परीक्षा के लिए ऑनलाइन आवेदन कहाँ करना चाहिए?"
+        "a_en": "The printed copy must reach the Regional Director, Staff Selection Commission (Northern Region) by 22.12.2026 (1800 hrs), and by 29.12.2026 for candidates residing abroad or in Andaman & Nicobar Islands and Lakshadweep.",
+        "a_hi": "प्रिंटेड कॉपी क्षेत्रीय निदेशक, कर्मचारी चयन आयोग (उत्तरी क्षेत्र) के पास 22.12.2026 (शाम 18:00 बजे तक) तक और विदेश या अंडमान और निकोबार द्वीप समूह तथा लक्षद्वीप में रहने वाले उम्मीदवारों के लिए 29.12.2026 तक पहुंच जानी चाहिए।",
+        "q_en": "What is the last date to submit the printed application through proper channel?",
+        "q_hi": "उचित माध्यम से प्रिंटेड आवेदन जमा करने की अंतिम तिथि क्या है?"
       },
       {
-        "a_en": "The Computer Based Examination is scheduled to be held in February-March, 2027.",
-        "a_hi": "कंप्यूटर आधारित परीक्षा फरवरी-मार्च, 2027 में आयोजित होने निर्धारित है।",
-        "q_en": "What is the exam date for SSC Grade 'C' Steno LDCE 2026?",
-        "q_hi": "एसएससी ग्रेड 'C' स्टेनो एलडीसीई 2026 के लिए परीक्षा तिथि क्या है?"
+        "a_en": "The Computer Based Examination is scheduled to be held in Feb-Mar, 2027.",
+        "a_hi": "कंप्यूटर आधारित परीक्षा फरवरी-मार्च 2027 में आयोजित होने निर्धारित है।",
+        "q_en": "When will the Computer Based Examination be held?",
+        "q_hi": "कंप्यूटर आधारित परीक्षा कब आयोजित की जाएगी?"
+      },
+      {
+        "a_en": "Candidates must use the new official website of SSC: https://ssc.gov.in.",
+        "a_hi": "उम्मीदवारों को एसएससी की नई आधिकारिक वेबसाइट https://ssc.gov.in का उपयोग करना चाहिए।",
+        "q_en": "Which website should be used for One Time Registration (OTR) and applying?",
+        "q_hi": "वन टाइम रजिस्ट्रेशन (ओटीआर) और आवेदन के लिए किस वेबसाइट का उपयोग किया जाना चाहिए?"
       },
       {
         "a_en": "A total of 320 tentative vacancies have been announced for the recruitment year 2026.",
-        "a_hi": "भर्ती वर्ष 2026 के लिए कुल 320 संभावित रिक्तियों की घोषणा की गई है।",
-        "q_en": "What are the total tentative vacancies for 2026?",
-        "q_hi": "2026 के लिए कुल संभावित रिक्तियां क्या हैं?"
-      },
-      {
-        "a_en": "The examination will be conducted in Delhi-NCR only.",
-        "a_hi": "परीक्षा केवल दिल्ली-एनसीआर में आयोजित की जाएगी।",
-        "q_en": "Where will the examination be conducted?",
-        "q_hi": "परीक्षा कहाँ आयोजित की जाएगी?"
-      },
-      {
-        "a_en": "No, earlier OTR generated on the old website (ssc.nic.in) is not functional for the new website (ssc.gov.in). Candidates must generate a new OTR.",
-        "a_hi": "नहीं, पुरानी वेबसाइट (ssc.nic.in) पर उत्पन्न पुराना ओटीआर नई वेबसाइट (ssc.gov.in) के लिए काम नहीं करता है। उम्मीदवारों को नया ओटीआर जनरेट करना होगा।",
-        "q_en": "Is the old OTR valid on the new SSC website?",
-        "q_hi": "क्या पुरानी एसएससी वेबसाइट का ओटीआर नई वेबसाइट पर मान्य है?"
+        "a_hi": "भर्ती वर्ष 2026 के लिए कुल 320 अस्थायी रिक्तियों की घोषणा की गई है।",
+        "q_en": "What are the total tentative vacancies announced?",
+        "q_hi": "कुल कितनी अस्थायी रिक्तियों की घोषणा की गई है?"
       }
     ],
     "fees": [],
@@ -199,41 +190,43 @@
     "h1_hi": "एसएससी ग्रेड सी स्टेनोग्राफर एलडीसीई भर्ती 2026 – ऑनलाइन आवेदन करें",
     "hindi_notice_url": null,
     "how_en": [
-      "Visit the new SSC website at ssc.gov.in.",
-      "Complete One Time Registration (OTR) if not already done on the new website.",
-      "Fill out the online application form for the Grade 'C' Stenographers LDCE Exam 2026.",
-      "Capture a live photograph using your device camera as per instructions.",
-      "Submit the online application and take a printout.",
-      "Forward the printed copy of the application along with necessary documents through your Head of Department / Head of Office to the Regional Director, SSC (Northern Region), New Delhi."
+      "Generate One Time Registration (OTR) on the new website ssc.gov.in if not already done.",
+      "Fill out the online application form for the examination using the OTR credentials.",
+      "Opt for Aadhaar-Based Authentication during the OTR process.",
+      "Capture a live photograph directly through the application module following the lighting and background instructions.",
+      "Submit the online application and take a printout of the completed application form.",
+      "Forward the printed application form along with necessary documents through your respective Head of Department/Head of Office to the Regional Director, Staff Selection Commission (Northern Region), New Delhi."
     ],
     "how_hi": [
-      "एसएससी की नई वेबसाइट ssc.gov.in पर जाएं।",
-      "यदि नई वेबसाइट पर पहले से वन टाइम रजिस्ट्रेशन (ओटीआर) नहीं किया है, तो इसे पूरा करें।",
-      "ग्रेड 'C' स्टेनोग्राफर एलडीसीई परीक्षा 2026 के लिए ऑनलाइन आवेदन पत्र भरें।",
-      "निर्देशों के अनुसार अपने डिवाइस के कैमरे का उपयोग करके लाइव फोटोग्राफ कैप्चर करें।",
-      "ऑनलाइन आवेदन जमा करें और उसका प्रिंटआउट लें।",
-      "आवेदन की मुद्रित प्रति आवश्यक दस्तावेजों के साथ अपने विभाग प्रमुख / कार्यालय प्रमुख के माध्यम से क्षेत्रीय निदेशक, एसएससी (उत्तरी क्षेत्र), नई दिल्ली को भेजें।"
+      "यदि पहले से नहीं किया है, तो नई वेबसाइट ssc.gov.in पर वन टाइम रजिस्ट्रेशन (ओटीआर) जनरेट करें।",
+      "ओटीआर क्रेडेंशियल्स का उपयोग करके परीक्षा के लिए ऑनलाइन आवेदन पत्र भरें।",
+      "ओटीआर प्रक्रिया के दौरान आधार-आधारित प्रमाणीकरण का विकल्प चुनें।",
+      "प्रकाश और पृष्ठभूमि के निर्देशों का पालन करते हुए सीधे आवेदन मॉड्यूल के माध्यम से लाइव फोटोग्राफ कैप्चर करें।",
+      "ऑनलाइन आवेदन जमा करें और पूर्ण आवेदन पत्र का प्रिंटआउट लें।",
+      "पूर्ण रूप से भरे हुए आवेदन पत्र को आवश्यक दस्तावेजों के साथ अपने संबंधित विभाग प्रमुख/कार्यालय प्रमुख के माध्यम से क्षेत्रीय निदेशक, कर्मचारी चयन आयोग (उत्तरी क्षेत्र), नई दिल्ली को अग्रेषित करें।"
     ],
-    "intro_en": "The Staff Selection Commission (SSC) has released the notice for the Grade 'C' Stenographers Limited Departmental Competitive Examination, 2026. The examination is held for making additions to the Select List of Grade 'C' Stenographers in participating services and cadres including CSSS, Railway Board, AFHQ, IFS Branch (B), ECI, and CVC. Eligible departmental candidates can submit online applications from 17.11.2026 to 08.12.2026 on the official website ssc.gov.in. Applicants must also forward the printed copy of their online application through their proper channel to the SSC Northern Region office by 22.12.2026.",
-    "intro_hi": "कर्मचारी चयन आयोग (एसएससी) ने ग्रेड 'C' स्टेनोग्राफर सीमित विभागीय प्रतियोगी परीक्षा, 2026 के लिए नोटिस जारी कर दिया है। यह परीक्षा केंद्रीय सचिवालय स्टेनोग्राफर सेवा, रेलवे बोर्ड, एएफएचक्यू, आईएफएस शाखा (बी), ईसीआई और सीवीसी सहित भाग लेने वाली सेवाओं और संवर्गों में ग्रेड 'C' स्टेनोग्राफर्स की चयन सूची में जोड़ने के लिए आयोजित की जाती है। योग्य विभागीय उम्मीदवार आधिकारिक वेबसाइट ssc.gov.in पर 17.11.2026 से 08.12.2026 तक ऑनलाइन आवेदन कर सकते हैं। आवेदकों को अपने ऑनलाइन आवेदन की मुद्रित प्रति उचित माध्यम से 22.12.2026 तक एसएससी उत्तरी क्षेत्रीय कार्यालय को भी भेजनी होगी।",
+    "intro_en": "Staff Selection Commission (SSC) has released the notice for the Grade 'C' Stenographers Limited Departmental Competitive Examination, 2026. Eligible departmental candidates belonging to the participating services and cadres can submit their online applications from 17.11.2026 to 08.12.2026 on the official website ssc.gov.in. Candidates must ensure they fulfill all eligibility conditions and forward their printed application through proper channel. The computer-based examination is scheduled to be held in Feb-Mar, 2027.",
+    "intro_hi": "कर्मचारी चयन आयोग (एसएससी) ने ग्रेड 'C' स्टेनोग्राफर सीमित विभागीय प्रतियोगी परीक्षा, 2026 के लिए नोटिस जारी कर दिया है। भाग लेने वाले सेवाओं और संवर्गों से संबंधित योग्य विभागीय उम्मीदवार 17.11.2026 से 08.12.2026 तक आधिकारिक वेबसाइट ssc.gov.in पर अपने ऑनलाइन आवेदन जमा कर सकते हैं। उम्मीदवारों को यह सुनिश्चित करना चाहिए कि वे सभी पात्रता शर्तों को पूरा करते हैं और उचित माध्यम से अपना प्रिंटेड आवेदन अग्रेषित करते हैं। कंप्यूटर आधारित परीक्षा फरवरी-मार्च 2027 में आयोजित होने निर्धारित है।",
     "last_date": "2026-12-08",
     "mistakes_en": [
-      "Do not use the old ssc.nic.in OTR; generate a new OTR on ssc.gov.in.",
-      "Do not submit multiple application forms.",
-      "Ensure the application is duly forwarded by the Head of Department/Office to reach SSC-NR before the last date."
+      "Using pre-existing OTR generated on the old website (ssc.nic.in); a new OTR on ssc.gov.in is mandatory.",
+      "Submitting multiple application forms.",
+      "Uploading or capturing a pre-existing photograph instead of a live photograph.",
+      "Failing to get the application forwarded through the proper channel by the Head of Department/Head of Office before the last date."
     ],
     "mistakes_hi": [
-      "पुराने ssc.nic.in ओटीआर का उपयोग न करें; ssc.gov.in पर नया ओटीआर बनाएं।",
-      " múltiples आवेदन पत्र जमा न करें।",
-      "सुनिश्चित करें कि अंतिम तिथि से पहले एसएससी-एनआर तक पहुंचने के लिए विभाग प्रमुख/कार्यालय प्रमुख द्वारा आवेदन विधिवत अग्रसारित किया गया हो।"
+      "पुरानी वेबसाइट (ssc.nic.in) पर जनरेट किए गए पुराने ओटीआर का उपयोग करना; ssc.gov.in पर नया ओटीआर अनिवार्य है।",
+      " múltiples आवेदन पत्र जमा करना।",
+      "लाइव फोटोग्राफ के बजाय पूर्व-निर्मित फोटोग्राफ अपलोड करना या कैप्चर करना।",
+      "अंतिम तिथि से पहले विभाग प्रमुख/कार्यालय प्रमुख के माध्यम से उचित चैनल के माध्यम से आवेदन अग्रेषित कराने में विफल रहना।"
     ],
     "not_en": [
-      "Candidates whose applications are not forwarded through proper channel by their Head of Department or Head of Office.",
-      "Candidates applying with multiple application forms."
+      "Candidates who fail to submit their applications through proper channel by the due date",
+      "Candidates whose parent service/cadre is not among the participating services"
     ],
     "not_hi": [
-      "वे उम्मीदवार जिनके आवेदन उनके विभाग प्रमुख या कार्यालय प्रमुख द्वारा उचित माध्यम से अग्रसारित नहीं किए गए हैं।",
-      "एक से अधिक आवेदन पत्र भरने वाले उम्मीदवार।"
+      "वे उम्मीदवार जो निर्धारित तिथि तक उचित माध्यम से अपने आवेदन जमा करने में विफल रहते हैं",
+      "वे उम्मीदवार जिनकी मूल सेवा/संवर्ग भाग लेने वाली सेवाओं में शामिल नहीं है"
     ],
     "notice_date": "2026-11-17",
     "official_site": "https://ssc.gov.in",
@@ -244,7 +237,7 @@
         "label_en": "Posts",
         "label_hi": "पद",
         "value_en": "Grade 'C' Stenographer",
-        "value_hi": "ग्रेड 'C' स्टेनोग्राफर"
+        "value_hi": "ग्रेड 'सी' स्टेनोग्राफर"
       },
       {
         "label_en": "Total vacancies",
@@ -259,22 +252,16 @@
         "value_hi": "17.11.2026 से 08.12.2026"
       },
       {
-        "label_en": "Last date to forward printout to SSC-NR",
-        "label_hi": "एसएससी-एनआर को प्रिंटआउट भेजने की अंतिम तिथि",
-        "value_en": "22.12.2026 (General) / 29.12.2026 (Abroad/Remote)",
-        "value_hi": "22.12.2026 (सामान्य) / 29.12.2026 (विदेश/दूरदराज)"
-      },
-      {
         "label_en": "Exam date",
         "label_hi": "परीक्षा तिथि",
         "value_en": "Feb-Mar, 2027",
-        "value_hi": "फरवरी-मार्च, 2027"
+        "value_hi": "फरवरी-मार्च 2027"
       },
       {
         "label_en": "Advertisement number",
         "label_hi": "विज्ञापन संख्या",
         "value_en": "No. 4/12/2026-CONF-5",
-        "value_hi": "सं. 4/12/2026-CONF-5"
+        "value_hi": "संख्या 4/12/2026-CONF-5"
       }
     ],
     "salary": [],
@@ -285,71 +272,71 @@
     ],
     "selection_hi": [
       "कंप्यूटर आधारित परीक्षा (भाग-ए)",
-      "कौशल परीक्षण (भाग-बी)",
+      "कौशल परीक्षा (भाग-बी)",
       "सेवा रिकॉर्ड का मूल्यांकन (भाग-सी)"
     ],
     "share_card": {
       "headline_en": "Recruitment 2026",
       "headline_hi": "भर्ती 2026",
       "kind": "job",
-      "line_en": "Grade 'C' Steno LDCE",
-      "line_hi": "ग्रेड 'C' स्टेनो एलडीसीई",
-      "posts": "320"
+      "line_en": "Grade 'C' Stenographer LDCE",
+      "line_hi": "ग्रेड 'सी' स्टेनोग्राफर एलडीसीई",
+      "posts": 320
     },
     "status_en": "",
     "status_hi": "",
-    "summary_en": "Staff Selection Commission has announced the Grade 'C' Stenographers Limited Departmental Competitive Examination, 2026. Eligible departmental candidates can apply online from 17.11.2026 to 08.12.2026. Read the notification for services, vacancies, and forwarding instructions.",
-    "summary_hi": "कर्मचारी चयन आयोग ने ग्रेड 'C' स्टेनोग्राफर सीमित विभागीय प्रतियोगी परीक्षा, 2026 की घोषणा की है। योग्य विभागीय उम्मीदवार 17.11.2026 से 08.12.2026 तक ऑनलाइन आवेदन कर सकते हैं। सेवाओं, रिक्तियों और अग्रेषण निर्देशों के लिए अधिसूचना पढ़ें।",
+    "summary_en": "Staff Selection Commission has announced the Grade 'C' Stenographers Limited Departmental Competitive Examination, 2026. Eligible departmental candidates should apply online by 08.12.2026.",
+    "summary_hi": "कर्मचारी चयन आयोग ने ग्रेड सी स्टेनोग्राफर सीमित विभागीय प्रतियोगी परीक्षा 2026 की घोषणा की है। योग्य विभागीय उम्मीदवार 08.12.2026 तक ऑनलाइन आवेदन करें।",
     "vacancies": [
       {
         "detail_en": "UR 210, SC 61, ST 16, PwBD 11",
-        "detail_hi": "सामान्य 210, एससी 61, एसटी 16, दिव्यांग 11",
+        "detail_hi": "अनारक्षित 210, एससी 61, एसटी 16, दिव्यांग 11",
         "post_en": "Central Secretariat Stenographers Service (DoPT)",
-        "post_hi": "केंद्रीय सचिवालय स्टेनोग्राफर सेवा (डीओपीटी)",
+        "post_hi": "केंद्रीय सचिवालय आश्रुलिपिक सेवा (डीओपीटी)",
         "total": "287"
       },
       {
         "detail_en": "UR 07, SC 01, ST 00, PwBD 00",
-        "detail_hi": "सामान्य 07, एससी 01, एसटी 00, दिव्यांग 00",
+        "detail_hi": "अनारक्षित 07, एससी 01, एसटी 00, दिव्यांग 00",
         "post_en": "Railway Board Secretariat Stenographers Service (M/o Railways)",
-        "post_hi": "रेलवे बोर्ड सचिवालय स्टेनोग्राफर सेवा (रेल मंत्रालय)",
+        "post_hi": "रेलवे बोर्ड सचिवालय आश्रुलिपिक सेवा (रेल मंत्रालय)",
         "total": "8"
       },
       {
         "detail_en": "UR 07, SC 04, ST 03, PwBD 00",
-        "detail_hi": "सामान्य 07, एससी 04, एसटी 03, दिव्यांग 00",
+        "detail_hi": "अनारक्षित 07, एससी 04, एसटी 03, दिव्यांग 00",
         "post_en": "Armed Forces Headquarters Stenographers Service (AFHQ)",
-        "post_hi": "सशस्त्र सेना मुख्यालय स्टेनोग्राफर सेवा (एएफएचक्यू)",
+        "post_hi": "सशस्त्र सेना मुख्यालय आश्रुलिपिक सेवा",
         "total": "14"
       },
       {
         "detail_en": "UR 05, SC 02, ST 01, PwBD 00",
-        "detail_hi": "सामान्य 05, एससी 02, एसटी 01, दिव्यांग 00",
+        "detail_hi": "अनारक्षित 05, एससी 02, एसटी 01, दिव्यांग 00",
         "post_en": "Indian Foreign Service Branch(B) Stenographers (M/o External Affairs)",
-        "post_hi": "भारतीय विदेश सेवा शाखा (बी) स्टेनोग्राफर (विदेश मंत्रालय)",
+        "post_hi": "भारतीय विदेश सेवा शाखा (बी) आश्रुलिपिक (विदेश मंत्रालय)",
         "total": "8"
       },
       {
         "detail_en": "UR 01, SC 00, ST 00, PwBD 00",
-        "detail_hi": "सामान्य 01, एससी 00, एसटी 00, दिव्यांग 00",
+        "detail_hi": "अनारक्षित 01, एससी 00, एसटी 00, दिव्यांग 00",
         "post_en": "Election Commission of India Stenographers Service (ECI)",
-        "post_hi": "भारत निर्वाचन आयोग स्टेनोग्राफर सेवा (ईसीआई)",
+        "post_hi": "भारत निर्वाचन आयोग आश्रुलिपिक सेवा",
         "total": "1"
       },
       {
         "detail_en": "UR 01, SC 01, ST 00, PwBD 00",
-        "detail_hi": "सामान्य 01, एससी 01, एसटी 00, दिव्यांग 00",
+        "detail_hi": "अनारक्षित 01, एससी 01, एसटी 00, दिव्यांग 00",
         "post_en": "Central Vigilance Commission (CVC)",
-        "post_hi": "केंद्रीय सतर्कता आयोग (सीवीसी)",
+        "post_hi": "केंद्रीय सतर्कता आयोग",
         "total": "2"
       }
     ],
     "video_url": null,
     "who_en": [
-      "Departmental candidates belonging to the participating services and cadres who wish to appear for the Grade 'C' Stenographers LDCE 2026."
+      "Departmental candidates of participating services and cadres aspiring for Grade 'C' Stenographer positions"
     ],
     "who_hi": [
-      "भाग लेने वाली सेवाओं और संवर्गों के विभागीय उम्मीदवार जो ग्रेड 'C' स्टेनोग्राफर एलडीसीई 2026 में शामिल होना चाहते हैं।"
+      "ग्रेड 'सी' स्टेनोग्राफर पदों के इच्छुक भाग लेने वाली सेवाओं और संवर्गों के विभागीय उम्मीदवार"
     ]
   },
   "pdf": {
@@ -359,10 +346,6 @@
     "text_kind": "text"
   },
   "published_at": "2026-11-18T20:43:03Z",
-  "qual": [
-    "12th"
-  ],
-  "rewrite": true,
   "slug": "ssc-grade-c-stenographer-ldce-recruitment-2026-apply-online",
   "source_id": "ssc-notice-board",
   "status": "approved",

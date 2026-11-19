@@ -1,5 +1,20 @@
 {
   "board_url": "https://kvs.gov.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": null,
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal administrative office order regarding the establishment of a new Kendriya Vidyalaya school building, not a job vacancy.",
+    "summary_en": "Kendriya Vidyalaya Sangathan has issued an administrative order to establish a new Kendriya Vidyalaya in Biharsharif City, Nalanda, starting from the academic session 2027-28.",
+    "summary_hi": "केन्द्रीय विद्यालय संगठन ने शैक्षणिक सत्र 2027-28 से नालंदा के बिहारशरीफ शहर में एक नया केन्द्रीय विद्यालय शुरू करने के संबंध में आदेश जारी किया है।",
+    "title_en": "KVS Opening of New Kendriya Vidyalaya in Biharsharif City Nalanda",
+    "title_hi": "केन्द्रीय विद्यालय संगठन बिहारशरीफ शहर नालंदा में नया विद्यालय खोलने का आदेश",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -21,7 +36,7 @@
     "text_kind": "text"
   },
   "source_id": "kvs-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "नया केन्द्रीय विद्यालय बिहारशरीफ शहर, जिला नालंदा, बिहार खोलने के संबंध में । नई",
   "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/11/2026111896.pdf"
 }
