@@ -1,0 +1,27 @@
+{
+  "board_url": "https://ssc.gov.in/home/notice-board",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "ice dated 23.10.2026 published on the Commission's website (https://ssc.gov.in). 2. The candidates’ Response Sheet(s) along with the Tentative Answer Key(s) f",
+      "source": "rule",
+      "value": "https://ssc.gov.in"
+    }
+  },
+  "first_seen": "2026-11-19T17:35:10+00:00",
+  "id": "0150bdd44e11",
+  "kind": "answer_key",
+  "org": "SSC",
+  "pdf": {
+    "bytes": 214378,
+    "pages": 2,
+    "sha256": "5ce4cc8dff19bbea305d04e960616d3925f0a1a12b4c77c965ade8f8620b05f3",
+    "text_kind": "text"
+  },
+  "source_id": "ssc-notice-board",
+  "status": "pending_review",
+  "title": "Junior Engineer Examination, 2026: Uploading of Tentative Answer Keys along with Candidates’ Response Sheet(s).",
+  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Tentative answer key of JE_2026_P_1_19112026.pdf"
+}

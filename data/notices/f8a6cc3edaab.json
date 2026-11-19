@@ -1,0 +1,32 @@
+{
+  "board_url": "https://sbi.bank.in/web/careers/current-openings",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "ons, period of probation, emoluments etc. were given in the advertisement No. CRPD/CR/2026-27/17. You should ensure that you are eligible in respect of age, educational qualification, nationality as",
+      "source": "rule",
+      "value": "CRPD/CR/2026-27/17. You should ensure tha"
+    },
+    "apply_or_official_url": {
+      "evidence": "gar Samachar issued on 29.08.2026 and on the Bank’s website https://bank.sbi/careers/current-openings or https://sbi.bank.in/web/careers/current-openings . The terms and conditions,",
+      "source": "rule",
+      "value": "https://bank.sbi/careers/current-openings"
+    }
+  },
+  "first_seen": "2026-11-19T17:35:10+00:00",
+  "id": "f8a6cc3edaab",
+  "kind": "info",
+  "org": "SBI",
+  "pdf": {
+    "bytes": 362115,
+    "pages": 10,
+    "sha256": "013e565d3dce322cd29e2576edfce3c87bb22154a46ef9a54fa030eab1b1924b",
+    "text_kind": "text"
+  },
+  "source_id": "sbi-careers",
+  "status": "pending_review",
+  "title": "ACQUAINT YOURSELF BOOKLET(HINDI/ ENGLISH) (NEW)",
+  "url": "https://sbi.bank.in/webfiles/uploads/files_2627/11/SBI_Junior_Associates_Mains_IH_Eng_2026_27_17.pdf"
+}
