@@ -1,5 +1,20 @@
 {
   "board_url": "https://sbi.bank.in/web/careers/current-openings",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Probationary Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Internal bio-data and attestation form for shortlisted candidates appearing for interview, not a direct job advertisement or result list for aspirants.",
+    "summary_en": "SBI has released the bio-data cum attestation form for Probationary Officer interview candidates.",
+    "summary_hi": "भारतीय स्टेट बैंक ने पररवीक्षाधीन अधिकारी साक्षात्कार के उम्मीदवारों के लिए बायोडाटा सह attestation फॉर्म जारी कर दिया है।",
+    "title_en": "SBI Probationary Officer Interview Bio-Data Form",
+    "title_hi": "भारतीय स्टेट बैंक पररवीक्षाधीन अधिकारी साक्षात्कार बायोडाटा फॉर्म",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -21,7 +36,7 @@
     "text_kind": "text"
   },
   "source_id": "sbi-careers",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "ADVERTISEMENT ( Hindi (513 KB) / English (5 MB) ) (NEW) CORRIGENDUM DOWNLOAD ACQUAINT YOURSELF BOOKLET( English (529 KB) /Hindi (961 KB) ) PRELIMINARY EXAMINATION RESULT (NEW) MARKS SECURED BY THE CANDIDATES IN PRELIMINARY EXAMINATION (NEW) INFORMATION HANDOUT (Hindi (506 KB)/ English (1 MB) ) (NEW)",
   "url": "https://sbi.bank.in/webfiles/uploads/files_2627/11/Biodata_Form_for_PO.pdf"
 }

@@ -1,5 +1,20 @@
 {
   "board_url": "https://bssc.bihar.gov.in/NoticeBoard.htm",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Stenographer/Steno Typist Grade - III",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "Normalization procedure guideline document, not a job vacancy or exam result",
+    "summary_en": "BSSC released the normalization methodology and procedure notice for Advertisement Number 07/25.",
+    "summary_hi": "बिहार कर्मचारी चयन आयोग ने विज्ञापन संख्या 07/25 के लिए सामान्यीकरण पद्धति और प्रक्रिया सूचना जारी की है।",
+    "title_en": "BSSC Stenographer Grade III Normalization Procedure Notice",
+    "title_hi": "बिहार कर्मचारी चयन आयोग आशुलिपिक श्रेणी तीन सामान्यीकरण प्रक्रिया सूचना",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "ocr"
   },
   "source_id": "bssc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "20-11-2026 07/25 Important Notice regarding Normalization Methodology for Adv. No.- 07/25, Post- Stenographer/Steno Typist Grade - III Click here to download Normalization Procedure",
   "url": "https://bssc.bihar.gov.in/Advertisement/Normalization_procedure_for_SSC_exams_from_June_2025.pdf"
 }

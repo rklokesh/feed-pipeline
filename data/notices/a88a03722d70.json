@@ -1,5 +1,31 @@
 {
+  "auto_published": true,
   "board_url": "https://nta.ac.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-12-14",
+    "list": true,
+    "posts": "Director, Joint Director, Research Scientist, Deputy Director, Sr. Superintendent",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "National Testing Agency (NTA) has invited applications for various posts on deputation basis. Eligible candidates should apply through proper channel by 14 December 2026.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने प्रतिनियुक्ति के आधार पर विभिन्न पदों के लिए आवेदन आमंत्रित किए हैं। योग्य उम्मीदवार 14 दिसंबर 2026 तक उचित माध्यम से आवेदन भेजें।",
+    "title_en": "NTA Deputation Recruitment 2026 – Apply Offline for 13 Posts",
+    "title_hi": "एनटीए प्रतिनियुक्ति भर्ती 2026 – 13 पदों के लिए ऑफलाइन आवेदन करें",
+    "type": "Job",
+    "vacancies": 13
+  },
+  "editor_notes": [],
+  "elig": {
+    "age_max": 56,
+    "age_min": null,
+    "age_on": "2026-12-14",
+    "domicile": null,
+    "qual": null,
+    "relax": {}
+  },
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -105,16 +131,298 @@
   },
   "first_seen": "2026-11-21T17:40:20+00:00",
   "id": "a88a03722d70",
+  "issue": 2491,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-12",
   "org": "NTA",
+  "page": {
+    "after_en": [
+      "Shortlisted candidates will be called for an interview and document verification."
+    ],
+    "after_hi": [
+      "शॉर्टलिस्ट किए गए उम्मीदवारों को साक्षात्कार और दस्तावेज सत्यापन के लिए बुलाया जाएगा।"
+    ],
+    "age": [
+      {
+        "label_en": "Maximum age limit",
+        "label_hi": "अधिकतम आयु सीमा",
+        "value_en": "56 years as on 14 Dec 2026",
+        "value_hi": "14 दिस 2026 को 56 वर्ष"
+      }
+    ],
+    "apply_start": null,
+    "apply_url": "https://nta.ac.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Verify eligibility criteria and pay level requirements",
+      "Attach NOC and vigilance clearance",
+      "Send via both post and email before the deadline"
+    ],
+    "checklist_hi": [
+      "पात्रता मापदंड और वेतन स्तर की आवश्यकताओं को सत्यापित करें",
+      "एनओसी और सतर्कता निकासी संलग्न करें",
+      "समय सीमा से पहले डाक और ईमेल दोनों के माध्यम से भेजें"
+    ],
+    "conducted_by_en": "National Testing Agency (NTA)",
+    "conducted_by_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए)",
+    "dates": [
+      {
+        "label_en": "Notification date",
+        "label_hi": "अधिसूचना तिथि",
+        "value_en": "12 Nov 2026",
+        "value_hi": "12 नव 2026"
+      },
+      {
+        "label_en": "Last date for submission of application",
+        "label_hi": "आवेदन जमा करने की अंतिम तिथि",
+        "value_en": "14 Dec 2026",
+        "value_hi": "14 दिस 2026"
+      }
+    ],
+    "documents_en": [
+      "Self-attested copy of educational qualification certificates",
+      "Experience Certificate",
+      "Certificate given by Head of Department including Vigilance/Administrative clearance",
+      "No Objection Certificate (NOC) by Head of Department",
+      "APARs and Integrity Certificate"
+    ],
+    "documents_hi": [
+      "शैक्षणिक योग्यता प्रमाण पत्र की स्व-सत्यापित प्रति",
+      "अनुभव प्रमाण पत्र",
+      "सतर्कता/प्रशासनिक निकासी सहित विभाग प्रमुख द्वारा दिया गया प्रमाण पत्र",
+      "विभाग प्रमुख द्वारा अनापत्ति प्रमाण पत्र (एनओसी)",
+      "एपीएआर और अखंडता प्रमाण पत्र"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Service requirement",
+        "label_hi": "सेवा आवश्यकता",
+        "value_en": "Officers having regular service in substantive post in pay levels required as per eligibility conditions of the recruitment rules.",
+        "value_hi": "भर्ती नियमों की पात्रता शर्तों के अनुसार आवश्यक वेतन स्तरों में मूल पद पर नियमित सेवा वाले अधिकारी।"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "National Testing Agency invites applications from eligible regular government officers to fill various administrative and scientific posts on a deputation basis.",
+        "a_hi": "राष्ट्रीय परीक्षा एजेंसी प्रतिनियुक्ति के आधार पर विभिन्न प्रशासनिक और वैज्ञानिक पदों को भरने के लिए योग्य नियमित सरकारी अधिकारियों से आवेदन आमंत्रित करती है।",
+        "q_en": "What is NTA Deputation Recruitment?",
+        "q_hi": "एनटीए प्रतिनियुक्ति भर्ती क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Deputation period",
+        "label_hi": "प्रतिनियुक्ति की अवधि",
+        "value_en": "Initially for three years",
+        "value_hi": "प्रारंभ में तीन वर्ष के लिए"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The last date to submit applications is 14 December 2026.",
+        "a_hi": "आवेदन जमा करने की अंतिम तिथि 14 दिसंबर 2026 है।",
+        "q_en": "What is the last date to apply for NTA Recruitment 2026?",
+        "q_hi": "एनटीए भर्ती 2026 के लिए आवेदन करने की अंतिम तिथि क्या है?"
+      },
+      {
+        "a_en": "There are a total of 13 vacancies available.",
+        "a_hi": "कुल 13 रिक्तियां उपलब्ध हैं।",
+        "q_en": "What is the total number of vacancies?",
+        "q_hi": "कुल रिक्तियों की संख्या क्या है?"
+      },
+      {
+        "a_en": "The maximum age limit is 56 years as on the closing date of application.",
+        "a_hi": "आवेदन की अंतिम तिथि के अनुसार अधिकतम आयु सीमा 56 वर्ष है।",
+        "q_en": "What is the maximum age limit?",
+        "q_hi": "अधिकतम आयु सीमा क्या है?"
+      },
+      {
+        "a_en": "Applications must be sent by post to The Director (Administration), National Testing Agency, 5th Floor, Government of India Press Building, Minto Road, New Delhi - 110002 and by email to administration@nta.ac.in.",
+        "a_hi": "आवेदन निदेशक (प्रशासन), राष्ट्रीय परीक्षा एजेंसी, पाँचवीं मंजिल, भारत सरकार प्रेस भवन, मिंटो रोड, नई दिल्ली - 110002 पर डाक द्वारा और administration@nta.ac.in पर ईमेल द्वारा भेजा जाना चाहिए।",
+        "q_en": "Where should the application be sent?",
+        "q_hi": "आवेदन कहाँ भेजा जाना चाहिए?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "NTA Deputation Recruitment 2026 – Apply Offline for 13 Posts",
+    "h1_hi": "एनटीए प्रतिनियुक्ति भर्ती 2026 – 13 पदों के लिए ऑफलाइन आवेदन करें",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Download the application form from the official website nta.ac.in.",
+      "Fill out the application form and attach required documents including NOC, APARs, Vigilance Clearance, and Integrity Certificate.",
+      "Send the application by post through proper channel to The Director (Administration), National Testing Agency, 5th Floor, Government of India Press Building, Minto Road, New Delhi - 110002.",
+      "Also send a copy of the application via email to administration@nta.ac.in latest by 14 December 2026."
+    ],
+    "how_hi": [
+      "आधिकारिक वेबसाइट nta.ac.in से आवेदन पत्र डाउनलोड करें।",
+      "आवेदन पत्र भरें और एनओसी, एपीएआर, सतर्कता निकासी और अखंडता प्रमाण पत्र सहित आवश्यक दस्तावेज संलग्न करें।",
+      "आवेदन को उचित माध्यम से डाक द्वारा निदेशक (प्रशासन), राष्ट्रीय परीक्षा एजेंसी, पाँचवीं मंजिल, भारत सरकार प्रेस भवन, मिंटो रोड, नई दिल्ली - 110002 पर भेजें।",
+      "आवेदन की एक प्रति ईमेल द्वारा administration@nta.ac.in पर भी 14 दिसंबर 2026 तक भेजें।"
+    ],
+    "intro_en": "National Testing Agency (NTA) has released a vacancy notification for various posts on a deputation basis/foreign service terms. There are a total of 13 vacancies available for posts including Director, Joint Director, Research Scientist 'C', Deputy Director, and Sr. Superintendent. The maximum age limit to apply is 56 years as on the closing date of application. Eligible and willing candidates must submit their applications through the proper channel by post and email latest by 14 December 2026.",
+    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने प्रतिनियुक्ति के आधार पर विभिन्न पदों के लिए रिक्ति अधिसूचना जारी की है। निदेशक, संयुक्त निदेशक, अनुसंधान वैज्ञानिक 'सी', उप निदेशक और वरिष्ठ अधीक्षक सहित विभिन्न पदों के लिए कुल 13 रिक्तियां उपलब्ध हैं। आवेदन की अंतिम तिथि पर अधिकतम आयु सीमा 56 वर्ष है। योग्य और इच्छुक उम्मीदवारों को डाक और ईमेल के माध्यम से उचित चैनल से 14 दिसंबर 2026 तक अपने आवेदन जमा करने होंगे।",
+    "last_date": "2026-12-14",
+    "mistakes_en": [
+      "Do not apply without routing through proper channel (Cadre Controlling Authorities)",
+      "Ensure applications reach before the closing date of 14 December 2026"
+    ],
+    "mistakes_hi": [
+      "उचित माध्यम (कैडर नियंत्रित करने वाले प्राधिकरण) के माध्यम से आवेदन किए बिना न भेजें",
+      "सुनिश्चित करें कि आवेदन 14 दिसंबर 2026 की अंतिम तिथि से पहले पहुंच जाएं"
+    ],
+    "not_en": [
+      "Officers getting desired level of pay under ACP/MACP/Adhoc",
+      "Applications not received through proper channel"
+    ],
+    "not_hi": [
+      "एसीपी/एमएसीपी/तदर्थ के तहत वांछित स्तर का वेतन प्राप्त करने वाले अधिकारी",
+      "उचित माध्यम से प्राप्त न होने वाले आवेदन"
+    ],
+    "notice_date": "2026-11-12",
+    "official_site": "https://nta.ac.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Posts",
+        "label_hi": "पद",
+        "value_en": "Director, Joint Director, Research Scientist, Deputy Director, Sr. Superintendent",
+        "value_hi": "निदेशक, संयुक्त निदेशक, अनुसंधान वैज्ञानिक, उप निदेशक, वरिष्ठ अधीक्षक"
+      },
+      {
+        "label_en": "Total vacancies",
+        "label_hi": "कुल रिक्तियां",
+        "value_en": "13",
+        "value_hi": "13"
+      },
+      {
+        "label_en": "Last date to apply",
+        "label_hi": "आवेदन की अंतिम तिथि",
+        "value_en": "14 Dec 2026",
+        "value_hi": "14 दिस 2026"
+      },
+      {
+        "label_en": "Age limit",
+        "label_hi": "आयु सीमा",
+        "value_en": "Maximum 56 years",
+        "value_hi": "अधिकतम 56 वर्ष"
+      },
+      {
+        "label_en": "Advertisement number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "File No: A-A102(1)/1/2025-PE1(13611)",
+        "value_hi": "फाइल संख्या: A-A102(1)/1/2025-PE1(13611)"
+      }
+    ],
+    "salary": [
+      {
+        "label_en": "Director",
+        "label_hi": "निदेशक",
+        "value_en": "Level 13 (₹1,23,100–2,15,900)",
+        "value_hi": "स्तर 13 (₹1,23,100–2,15,900)"
+      },
+      {
+        "label_en": "Joint Director / Research Scientist C",
+        "label_hi": "संयुक्त निदेशक / अनुसंधान वैज्ञानिक सी",
+        "value_en": "Level 12 (₹78,800–2,09,200)",
+        "value_hi": "स्तर 12 (₹78,800–2,09,200)"
+      },
+      {
+        "label_en": "Deputy Director",
+        "label_hi": "उप निदेशक",
+        "value_en": "Level 11 (₹67,700–2,08,700)",
+        "value_hi": "स्तर 11 (₹67,700–2,08,700)"
+      },
+      {
+        "label_en": "Sr. Superintendent",
+        "label_hi": "वरिष्ठ अधीक्षक",
+        "value_en": "Level 7 (₹44,900–1,42,400)",
+        "value_hi": "स्तर 7 (₹44,900–1,42,400)"
+      }
+    ],
+    "selection_en": [
+      "Shortlisting of candidates",
+      "Interview and document verification"
+    ],
+    "selection_hi": [
+      "उम्मीदवारों की शॉर्टलिस्टिंग",
+      "साक्षात्कार और दस्तावेज सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "Deputation Vacancy 2026",
+      "headline_hi": "प्रतिनियुक्ति रिक्ति 2026",
+      "kind": "job",
+      "line_en": "Director & Other Posts",
+      "line_hi": "निदेशक और अन्य पद",
+      "posts": 13
+    },
+    "status_en": "",
+    "status_hi": "",
+    "summary_en": "National Testing Agency (NTA) has invited applications for various posts on a deputation basis. Eligible officers should send their applications through proper channel by 14 December 2026.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने प्रतिनियुक्ति के आधार पर विभिन्न पदों के लिए आवेदन आमंत्रित किए हैं। योग्य अधिकारी 14 दिसंबर 2026 तक उचित माध्यम से आवेदन भेजें।",
+    "vacancies": [
+      {
+        "detail_en": "Pay Level-13",
+        "detail_hi": "वेतन स्तर-13",
+        "post_en": "Director (Group A)",
+        "post_hi": "निदेशक (समूह क)",
+        "total": "07"
+      },
+      {
+        "detail_en": "Pay Level-12",
+        "detail_hi": "वेतन स्तर-12",
+        "post_en": "Joint Director (Group A)",
+        "post_hi": "संयुक्त निदेशक (समूह क)",
+        "total": "03"
+      },
+      {
+        "detail_en": "Pay Level-12",
+        "detail_hi": "वेतन स्तर-12",
+        "post_en": "Research Scientist ‘C’ (Group A)",
+        "post_hi": "अनुसंधान वैज्ञानिक ‘सी’ (समूह क)",
+        "total": "01"
+      },
+      {
+        "detail_en": "Pay Level-11",
+        "detail_hi": "वेतन स्तर-11",
+        "post_en": "Deputy Director (Group A)",
+        "post_hi": "उप निदेशक (समूह क)",
+        "total": "01"
+      },
+      {
+        "detail_en": "Pay Level-7",
+        "detail_hi": "वेतन स्तर-7",
+        "post_en": "Sr. Superintendent / Sr. Superintendent (Accounts) (Group B)",
+        "post_hi": "वरिष्ठ अधीक्षक / वरिष्ठ अधीक्षक (लेखा) (समूह ख)",
+        "total": "01"
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Eligible government officers seeking deputation opportunities at NTA"
+    ],
+    "who_hi": [
+      "एनटीए में प्रतिनियुक्ति के अवसर चाहने वाले योग्य सरकारी अधिकारी"
+    ]
+  },
   "pdf": {
     "bytes": 3133867,
     "pages": 13,
     "sha256": "b36d3fc050fb04ca6898a7f1e5804ac48ee9a996233080b34de86682d97e76a3",
     "text_kind": "ocr"
   },
+  "published_at": "2026-11-21T19:11:57Z",
+  "qual": [
+    "graduate",
+    "postgraduate"
+  ],
+  "slug": "nta-deputation-recruitment-2026-apply-offline-for-13-posts",
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Publication of Vacancy Notification for Various Posts in the NTA Read More",
   "url": "https://nta.ac.in/Download/Notice/Notice_20261120110558.pdf"
 }

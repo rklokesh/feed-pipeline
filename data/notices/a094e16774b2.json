@@ -1,5 +1,27 @@
 {
+  "auto_published": true,
   "board_url": "https://uppsc.up.nic.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": true,
+    "posts": "Assistant Teacher Trained Graduate",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Uttar Pradesh Public Service Commission has released the document verification schedule for Assistant Teacher Trained Graduate Exam 2025 for Urdu and Music subjects. Candidates should check the schedule and complete authentication on the official website.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने उर्दू और संगीत विषयों के लिए सहायक अध्यापक प्रशिक्षित स्नातक परीक्षा 2025 का दस्तावेज सत्यापन कार्यक्रम जारी कर दिया है। उम्मीदवार आधिकारिक वेबसाइट पर जाकर अपना शेड्यूल देखें और सत्यापन प्रक्रिया पूरी करें।",
+    "title_en": "UPPSC Assistant Teacher Document Verification 2026 – Urdu Music Schedule Out",
+    "title_hi": "UPPSC सहायक अध्यापक दस्तावेज सत्यापन 2026 – उर्दू संगीत शेड्यूल जारी",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "uppsc-assistant-teacher-2025",
+    "name_en": "UPPSC Assistant Teacher 2025",
+    "name_hi": "यूपीपीएससी सहायक शिक्षक 2025"
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -55,16 +77,202 @@
   },
   "first_seen": "2026-11-21T17:40:20+00:00",
   "id": "a094e16774b2",
+  "issue": 2489,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-21",
   "org": "UPPSC",
+  "page": {
+    "after_en": [
+      "Final appointment recommendation by the commission after successful document verification."
+    ],
+    "after_hi": [
+      "सफल दस्तावेज़ सत्यापन के बाद आयोग द्वारा अंतिम नियुक्ति की सिफारिश।"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://uppsc.up.nic.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Complete online authentication via OTR",
+      "Print complete form set for document verification",
+      "Gather all original educational and identity documents"
+    ],
+    "checklist_hi": [
+      "ओ टी आर के माध्यम से ऑनलाइन प्रमाणीकरण पूरा करें",
+      "दस्तावेज़ सत्यापन के लिए पूर्ण फॉर्म सेट प्रिंट करें",
+      "सभी मूल शैक्षणिक और पहचान दस्तावेज एकत्र करें"
+    ],
+    "conducted_by_en": "Uttar Pradesh Public Service Commission (UPPSC)",
+    "conducted_by_hi": "उत्तर प्रदेश लोक सेवा आयोग (UPPSC)",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस तिथि",
+        "value_en": "26 Nov 2026",
+        "value_hi": "26 नव 2026"
+      }
+    ],
+    "documents_en": [
+      "High School marksheet and certificate",
+      "Intermediate marksheet and certificate",
+      "Graduation and post-graduation marksheets and degrees as per requirement",
+      "Two passport-size photographs",
+      "Caste certificate (if applicable)",
+      "Printed copy of complete form set and verification proforma"
+    ],
+    "documents_hi": [
+      "हाईस्कूल अंकपत्र और प्रमाण पत्र",
+      "इंटरमीडिएट अंकपत्र और प्रमाण पत्र",
+      "स्नातक और स्नातकोत्तर अंकपत्र और डिग्री",
+      "दो पासपोर्ट आकार के फोटोग्राफ",
+      "जाति प्रमाण पत्र (यदि लागू हो)",
+      "पूर्ण फॉर्म सेट और सत्यापन प्रपत्र की मुद्रित प्रति"
+    ],
+    "eligibility": [
+      {
+        "label_en": "Subjects covered",
+        "label_hi": "शामिल विषय",
+        "value_en": "Urdu and Music",
+        "value_hi": "उर्दू और संगीत"
+      }
+    ],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is the verification stage where shortlisted candidates for the Assistant Teacher Trained Graduate Exam must present their original educational and category documents to confirm their eligibility.",
+        "a_hi": "यह वह सत्यापन चरण है जहाँ सहायक अध्यापक प्रशिक्षित स्नातक परीक्षा के लिए शॉर्टलिस्ट किए गए उम्मीदवारों को अपनी पात्रता की पुष्टि के लिए अपने मूल शैक्षणिक और श्रेणी के दस्तावेज प्रस्तुत करने होते हैं।",
+        "q_en": "What is UPPSC Assistant Teacher Document Verification?",
+        "q_hi": "UPPSC सहायक अध्यापक दस्तावेज सत्यापन क्या है?"
+      }
+    ],
+    "extra": [],
+    "faq": [
+      {
+        "a_en": "UPPSC has released the document verification schedule for Urdu and Music subjects under the Assistant Teacher Trained Graduate Exam 2025.",
+        "a_hi": "UPPSC ने सहायक अध्यापक प्रशिक्षित स्नातक परीक्षा 2025 के अंतर्गत उर्दू और संगीत विषयों के लिए दस्तावेज सत्यापन शेड्यूल जारी किया है।",
+        "q_en": "Which subjects' document verification schedule has been released by UPPSC?",
+        "q_hi": "UPPSC द्वारा किन विषयों का दस्तावेज सत्यापन शेड्यूल जारी किया गया है?"
+      },
+      {
+        "a_en": "You can download and print the form set by logging into the official UPPSC website (uppsc.up.nic.in) using your OTR number and accessing the applicant dashboard.",
+        "a_hi": "आप अपने ओ टी आर नंबर का उपयोग करके आधिकारिक UPPSC वेबसाइट (uppsc.up.nic.in) पर लॉग इन करके और आवेदक डैशबोर्ड तक पहुंचकर फॉर्म सेट डाउनलोड और प्रिंट कर सकते हैं।",
+        "q_en": "Where can I download the document verification form set?",
+        "q_hi": "मैं दस्तावेज सत्यापन फॉर्म सेट कहां से डाउनलोड कर सकता हूं?"
+      },
+      {
+        "a_en": "The advertisement number is A-5/E-1/2025.",
+        "a_hi": "विज्ञापन संख्या A-5/E-1/2025 है।",
+        "q_en": "What is the advertisement number for this exam?",
+        "q_hi": "इस परीक्षा के लिए विज्ञापन संख्या क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "UPPSC Assistant Teacher Document Verification 2026 – Urdu Music Schedule Out",
+    "h1_hi": "UPPSC सहायक अध्यापक दस्तावेज सत्यापन 2026 – उर्दू संगीत शेड्यूल जारी",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official website uppsc.up.nic.in",
+      "Click on 'Click here for Advt. No. A-5/E-1/2025, Assistant Teacher... Document Verification'",
+      "Click on 'Click here to Authenticate' and enter OTR number",
+      "Go to 'Applicant Dashboard', check latest status, and proceed to print complete form set for document verification",
+      "Bring the printed form set along with two passport-size photographs, self-attested copies, and original documents on the scheduled date"
+    ],
+    "how_hi": [
+      "आधिकारिक वेबसाइट uppsc.up.nic.in पर जाएं",
+      "'Click here for Advt. No. A-5/E-1/2025, Assistant Teacher... Document Verification' पर क्लिक करें",
+      "'Click here to Authenticate' पर क्लिक करें और ओ टी आर नंबर दर्ज करें",
+      "'Applicant Dashboard' पर जाएं, नवीनतम स्थिति जांचें और दस्तावेज सत्यापन के लिए पूर्ण फॉर्म सेट प्रिंट करें",
+      "निर्धारित तिथि पर दो पासपोर्ट साइज फोटो, स्व-सत्यापित प्रतियों और मूल दस्तावेजों के साथ प्रिंटेड फॉर्म सेट लाएं"
+    ],
+    "intro_en": "The Uttar Pradesh Public Service Commission (UPPSC) has issued the document verification schedule for the Assistant Teacher Trained Graduate Grade (Male/Female Branch) Exam 2025 under Advertisement No. A-5/E-1/2025. This notice concerns candidates who qualified in Urdu and Music subjects. Qualified candidates are required to complete their authentication online through the UPPSC website, pay necessary fees if applicable, and print their complete form set along with required documents for verification.",
+    "intro_hi": "उत्तर प्रदेश लोक सेवा आयोग (UPPSC) ने विज्ञापन संख्या A-5/E-1/2025 के अंतर्गत सहायक अध्यापक प्रशिक्षित स्नातक श्रेणी (पुरुष/महिला शाखा) परीक्षा 2025 के लिए दस्तावेज सत्यापन कार्यक्रम जारी कर दिया है। यह नोटिस उर्दू और संगीत विषयों में सफल उम्मीदवारों से संबंधित है। योग्य उम्मीदवारों को UPPSC वेबसाइट के माध्यम से ऑनलाइन प्रमाणीकरण पूरा करना होगा और सत्यापन के लिए आवश्यक दस्तावेजों के साथ अपना फॉर्म सेट प्रिंट करना होगा।",
+    "last_date": null,
+    "mistakes_en": [
+      "Failing to complete online authentication through OTR before printing the form set",
+      "Not bringing original documents along with self-attested photocopies"
+    ],
+    "mistakes_hi": [
+      "फॉर्म सेट प्रिंट करने से पहले ओ टी आर के माध्यम से ऑनलाइन प्रमाणीकरण पूरा करने में विफल होना",
+      "स्व-सत्यापित फोटोकॉपी के साथ मूल दस्तावेज न लाना"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-26",
+    "official_site": "https://uppsc.up.nic.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Assistant Teacher Trained Graduate Grade (Male/Female Branch)",
+        "value_hi": "सहायक अध्यापक प्रशिक्षित स्नातक श्रेणी (पुरुष/महिला शाखा)"
+      },
+      {
+        "label_en": "Advertisement No.",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "A-5/E-1/2025",
+        "value_hi": "A-5/E-1/2025"
+      },
+      {
+        "label_en": "Subjects",
+        "label_hi": "विषय",
+        "value_en": "Urdu, Music",
+        "value_hi": "उर्दू, संगीत"
+      },
+      {
+        "label_en": "Notice Date",
+        "label_hi": "नोटिस तिथि",
+        "value_en": "26 Nov 2026",
+        "value_hi": "26 नव 2026"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Written Exam",
+      "Document Verification"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा",
+      "दस्तावेज़ सत्यापन"
+    ],
+    "share_card": {
+      "headline_en": "Doc Verification 2026",
+      "headline_hi": "दस्तावेज़ सत्यापन 2026",
+      "kind": "sched",
+      "line_en": "Assistant Teacher Urdu & Music",
+      "line_hi": "सहायक अध्यापक उर्दू और संगीत",
+      "posts": null
+    },
+    "status_en": "Document verification schedule released",
+    "status_hi": "दस्तावेज़ सत्यापन कार्यक्रम जारी",
+    "summary_en": "Uttar Pradesh Public Service Commission has released the document verification schedule for the Assistant Teacher Trained Graduate Grade Exam 2025 for Urdu and Music subjects. Candidates must complete authentication and print their complete form set on the official website.",
+    "summary_hi": "उत्तर प्रदेश लोक सेवा आयोग ने उर्दू और संगीत विषयों के लिए सहायक अध्यापक प्रशिक्षित स्नातक श्रेणी परीक्षा 2025 का दस्तावेज सत्यापन कार्यक्रम जारी कर दिया है। उम्मीदवारों को आधिकारिक वेबसाइट पर प्रमाणीकरण पूरा करना होगा और अपना फॉर्म सेट प्रिंट करना होगा।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Candidates who cleared the UPPSC Assistant Teacher Trained Graduate Exam 2025 in Urdu or Music"
+    ],
+    "who_hi": [
+      "वे उम्मीदवार जिन्होंने उर्दू या संगीत में UPPSC सहायक अध्यापक प्रशिक्षित स्नातक परीक्षा 2025 पास की है"
+    ]
+  },
   "pdf": {
     "bytes": 8475430,
     "pages": 2,
     "sha256": "113215b7adbce5d568c5d28dbbc164de447e5429c6d38eb723c10770f797e560",
     "text_kind": "text"
   },
+  "published_at": "2026-11-21T19:11:44Z",
+  "qual": [
+    "graduate"
+  ],
+  "slug": "uppsc-assistant-teacher-document-verification-2026-urdu-music-sc",
   "source_id": "uppsc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "26 Nov 2026 NOTICE REAGARDING DOCUMENT VERIFICATION FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER TRAINED GRADUATE (M./F.) EXAM 2025, (URDU, MUSIC)",
   "url": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq8wa1SBR0ZJ/"
 }

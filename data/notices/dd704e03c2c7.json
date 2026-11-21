@@ -1,5 +1,27 @@
 {
+  "auto_published": true,
   "board_url": "https://nta.ac.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-12-08",
+    "last_date": null,
+    "list": true,
+    "posts": "SWAYAM Courses",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "National Testing Agency has released the advance city intimation slip for SWAYAM July 2026 semester exams. Candidates should download it using their application number and password.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने स्वायम जुलाई 2026 सेमेस्टर परीक्षा के लिए अग्रिम शहर इंटीमेशन पर्ची जारी कर दी है। उम्मीदवार अपने आवेदन नंबर और पासवर्ड का उपयोग करके इसे डाउनलोड करें।",
+    "title_en": "NTA SWAYAM July 2026 Exam City Intimation Slip Out – Check Center",
+    "title_hi": "एनटीए स्वायम जुलाई 2026 परीक्षा शहर इंटीमेशन पर्ची जारी - केंद्र देखें",
+    "type": "Admission",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "nta-swayam-july-semester-2026",
+    "name_en": "NTA SWAYAM July Semester 2026",
+    "name_hi": "एनटीए स्वयं जुलाई सेमेस्टर 2026"
+  },
   "extraction": {
     "ai": null
   },
@@ -12,16 +34,210 @@
   },
   "first_seen": "2026-11-21T17:40:20+00:00",
   "id": "dd704e03c2c7",
+  "issue": 2492,
+  "issue_tidy": true,
   "kind": "other",
+  "notice_date": "2026-11-20",
   "org": "NTA",
+  "page": {
+    "after_en": [
+      "Release of official Admit Card",
+      "Appearing for the online examination on scheduled dates"
+    ],
+    "after_hi": [
+      "आधिकारिक प्रवेश पत्र जारी होना",
+      "निर्धारित तिथियों पर ऑनलाइन परीक्षा में शामिल होना"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://exams.nta.nic.in/swayam/",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Keep your application number and password ready",
+      "Check exam city details",
+      "Watch out for the separate release of the admit card"
+    ],
+    "checklist_hi": [
+      "अपना आवेदन नंबर और पासवर्ड तैयार रखें",
+      "परीक्षा शहर के विवरण की जाँच करें",
+      "प्रवेश पत्र के अलग से जारी होने का इंतजार करें"
+    ],
+    "conducted_by_en": "National Testing Agency (NTA)",
+    "conducted_by_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए)",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "सूचना तिथि",
+        "value_en": "20 November 2026",
+        "value_hi": "20 नवंबर 2026"
+      },
+      {
+        "label_en": "Exam Dates",
+        "label_hi": "परीक्षा तिथियां",
+        "value_en": "08, 09, 10, 11 and 12 December 2026",
+        "value_hi": "08, 09, 10, 11 और 12 दिसंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Application Number",
+      "Password"
+    ],
+    "documents_hi": [
+      "आवेदन संख्या",
+      "पासवर्ड"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-12-08",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "It is an advance document issued by NTA to inform candidates about the city where their examination center will be located, helping them plan their travel in advance.",
+        "a_hi": "यह एनटीए द्वारा जारी किया गया एक अग्रिम दस्तावेज है जो उम्मीदवारों को उस शहर के बारे में सूचित करता है जहां उनका परीक्षा केंद्र स्थित होगा, जिससे उन्हें अपनी यात्रा की योजना पहले से बनाने में मदद मिलती है।",
+        "q_en": "What is the SWAYAM Exam City Intimation Slip?",
+        "q_hi": "स्वायम परीक्षा शहर इंटीमेशन पर्ची क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Helpdesk Numbers",
+        "label_hi": "हेल्पलाइन नंबर",
+        "value_en": "011-40759000, 011-6922770",
+        "value_hi": "011-40759000, 011-6922770"
+      },
+      {
+        "label_en": "Email",
+        "label_hi": "ईमेल",
+        "value_en": "swayam@nta.ac.in",
+        "value_hi": "swayam@nta.ac.in"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The exams are scheduled for 08, 09, 10, 11, and 12 December 2026.",
+        "a_hi": "परीक्षाएं 08, 09, 10, 11 और 12 दिसंबर 2026 को निर्धारित हैं।",
+        "q_en": "When are the SWAYAM July 2026 Semester Exams scheduled?",
+        "q_hi": "स्वायम जुलाई 2026 सेमेस्टर परीक्षाएं कब निर्धारित हैं?"
+      },
+      {
+        "a_en": "You can download it from the official website exams.nta.nic.in/swayam/ using your application number and password.",
+        "a_hi": "आप अपने आवेदन नंबर और पासवर्ड का उपयोग करके आधिकारिक वेबसाइट exams.nta.nic.in/swayam/ से इसे डाउनलोड कर सकते हैं।",
+        "q_en": "How can I download the SWAYAM Exam City Intimation Slip?",
+        "q_hi": "मैं स्वायम परीक्षा शहर इंटीमेशन पर्ची कैसे डाउनलोड कर सकता हूँ?"
+      },
+      {
+        "a_en": "No, this is only an advance intimation of the exam city. Admit cards will be issued separately.",
+        "a_hi": "नहीं, यह केवल परीक्षा शहर की अग्रिम सूचना है। प्रवेश पत्र अलग से जारी किए जाएंगे।",
+        "q_en": "Is the city intimation slip the same as the admit card?",
+        "q_hi": "क्या शहर इंटीमेशन पर्ची और प्रवेश पत्र एक ही हैं?"
+      },
+      {
+        "a_en": "You can contact the NTA Helpdesk at 011-40759000 or email at swayam@nta.ac.in.",
+        "a_hi": "आप 011-40759000 पर एनटीए हेल्पडेस्क से संपर्क कर सकते हैं या swayam@nta.ac.in पर ईमेल कर सकते हैं।",
+        "q_en": "What should I do if I face difficulty downloading the slip?",
+        "q_hi": "पर्ची डाउनलोड करने में कठिनाई होने पर मुझे क्या करना चाहिए?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "NTA SWAYAM July 2026 Exam City Intimation Slip Out – Check Center",
+    "h1_hi": "एनटीए स्वायम जुलाई 2026 परीक्षा शहर इंटीमेशन पर्ची जारी - केंद्र देखें",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Go to the official website at exams.nta.nic.in/swayam/",
+      "Click on the link for Advance City Intimation Slip for SWAYAM July 2026",
+      "Enter your Application Number and Password",
+      "View and download the exam city intimation slip"
+    ],
+    "how_hi": [
+      "आधिकारिक वेबसाइट exams.nta.nic.in/swayam/ पर जाएं",
+      "स्वायम जुलाई 2026 के लिए एडवांस सिटी इंटीमेशन स्लिप के लिंक पर क्लिक करें",
+      "अपना आवेदन नंबर और पासवर्ड दर्ज करें",
+      "परीक्षा शहर इंटीमेशन पर्ची देखें और डाउनलोड करें"
+    ],
+    "intro_en": "The National Testing Agency (NTA) has issued the advance city intimation slip for the Study Webs of Active Learning for Young Aspiring Minds (SWAYAM) July 2026 Semester Exams. The examinations are scheduled to be held on 08, 09, 10, 11, and 12 December 2026 across various centers in the country. Candidates appearing for certification in 661 SWAYAM courses must download their exam city slip using their application number and password. Please note that this is not the admit card; the actual admit card will be released separately.",
+    "intro_hi": "राष्ट्रीय परीक्षा एजेंसी (एनटीए) ने यंग एस्पायरिंग माइंड्स (स्वायम) जुलाई 2026 सेमेस्टर परीक्षाओं के लिए स्टडी वेब्स ऑफ एक्टिव लर्निंग के वास्ते अग्रिम शहर इंटीमेशन पर्ची जारी कर दी है। परीक्षाएं देश भर के विभिन्न केंद्रों पर 08, 09, 10, 11 और 12 दिसंबर 2026 को आयोजित होने वाली हैं। 661 स्वायम पाठ्यक्रमों में प्रमाणन के लिए उपस्थित होने वाले उम्मीदवारों को अपने आवेदन नंबर और पासवर्ड का उपयोग करके अपनी परीक्षा शहर पर्ची डाउनलोड करनी होगी। कृपया ध्यान दें कि यह प्रवेश पत्र नहीं है; वास्तविक प्रवेश पत्र अलग से जारी किया जाएगा।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not mistake the city intimation slip for the final admit card."
+    ],
+    "mistakes_hi": [
+      "शहर इंटीमेशन पर्ची को अंतिम प्रवेश पत्र न समझें।"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-20",
+    "official_site": "https://nta.ac.in/",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Exam Name",
+        "label_hi": "परीक्षा का नाम",
+        "value_en": "SWAYAM July 2026 Semester Exams",
+        "value_hi": "स्वायम जुलाई 2026 सेमेस्टर परीक्षा"
+      },
+      {
+        "label_en": "Exam Dates",
+        "label_hi": "परीक्षा तिथियां",
+        "value_en": "08, 09, 10, 11 and 12 December 2026",
+        "value_hi": "08, 09, 10, 11 और 12 दिसंबर 2026"
+      },
+      {
+        "label_en": "City Slip Status",
+        "label_hi": "शहर पर्ची स्थिति",
+        "value_en": "Released",
+        "value_hi": "जारी कर दी गई है"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Online Examination",
+      "Certification"
+    ],
+    "selection_hi": [
+      "ऑनलाइन परीक्षा",
+      "प्रमाणन"
+    ],
+    "share_card": {
+      "headline_en": "Exam City Slip Out",
+      "headline_hi": "परीक्षा शहर पर्ची जारी",
+      "kind": "admit",
+      "line_en": "SWAYAM July 2026 Exam",
+      "line_hi": "स्वायम जुलाई 2026 परीक्षा",
+      "posts": null
+    },
+    "status_en": "District information slip released",
+    "status_hi": "जिला सूचना पर्ची जारी कर दी गई है",
+    "summary_en": "National Testing Agency has released the advance city intimation slip for SWAYAM July 2026 semester exams. Candidates can check their allotted exam city using their application number and password.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने स्वायम जुलाई 2026 सेमेस्टर परीक्षा के लिए अग्रिम शहर इंटीमेशन पर्ची जारी कर दी है। उम्मीदवार अपने आवेदन नंबर और पासवर्ड का उपयोग करके अपने आवंटित परीक्षा शहर की जांच कर सकते हैं।",
+    "vacancies": [],
+    "video_url": null,
+    "who_en": [
+      "Candidates who registered for SWAYAM July 2026 Semester Exams"
+    ],
+    "who_hi": [
+      "स्वायम जुलाई 2026 सेमेस्टर परीक्षाओं के लिए पंजीकृत उम्मीदवार"
+    ]
+  },
   "pdf": {
     "bytes": 399337,
     "pages": 1,
     "sha256": "89d4089e39d976ebd13fe431c6d25980690fb2ff1e15d951b6b959e740f18ba6",
     "text_kind": "ocr"
   },
+  "published_at": "2026-11-21T19:12:04Z",
+  "qual": [],
+  "rewrite": true,
+  "slug": "nta-swayam-july-2026-exam-city-intimation-slip-out-check-center",
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Advance City Intimation Slip for the Candidates of Study Webs of Active Learning for Young Aspiring Minds(SWAYAM) July 2026 Semester Exams-reg. Read More",
-  "url": "https://nta.ac.in/Download/Notice/Notice_20261120160752.pdf"
+  "url": "https://nta.ac.in/Download/Notice/Notice_20261120160752.pdf",
+  "verify": {
+    "at": "2026-11-21",
+    "missing": [
+      "Exam date: 2026-12-08"
+    ],
+    "tries": 1
+  }
 }
