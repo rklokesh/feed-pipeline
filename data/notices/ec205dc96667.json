@@ -1,5 +1,20 @@
 {
   "board_url": "https://bssc.bihar.gov.in/NoticeBoard.htm",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Stenographer / Steno Typist Grade III",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "debarment notice",
+    "summary_en": "The board has released a notice regarding the debarment of candidates for Advertisement Number 07/25.",
+    "summary_hi": "बोर्ड ने विज्ञापन संख्या 07/25 के लिए उम्मीदवारों के निषेध के संबंध में एक सूचना जारी की है।",
+    "title_en": "BSSC Stenographer Grade III Debarment Notice",
+    "title_hi": "बिहार कर्मचारी चयन आयोग आशुलिपिक श्रेणी 3 निषेध सूचना",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "text"
   },
   "source_id": "bssc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "20-11-2026 07/25 Important Notice regarding Adv. No.- 07/25, Post- Stenographer/Steno Typist Grade - III",
   "url": "https://bssc.bihar.gov.in/Advertisement/debare_notice_annexure.pdf"
 }
