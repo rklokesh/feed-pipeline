@@ -1,0 +1,120 @@
+{
+  "board_url": "https://nta.ac.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "File No: A-A102(1)/1/2025-PE1(13611)"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "File No: A-A102(1)/1/2025-PE1(13611)"
+      }
+    },
+    "age_limit": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "as_on": "2026-12-14",
+        "max": 56,
+        "min": null
+      }
+    },
+    "age_limit_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "age_limit": "The maximum age limit to apply for the above said posts is 56 years as on closing date of application."
+      }
+    },
+    "apply_last": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-12-14"
+    },
+    "apply_last_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_last": "latest by 14 December 2026."
+      }
+    },
+    "apply_or_official_url": {
+      "evidence": "d Selection process. please see the Vacancy Notification at https://nta.ac.in. Application completed in all respects along with No Objection Certificate (NOC)",
+      "source": "rule",
+      "value": "https://nta.ac.in"
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://nta.ac.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "please see the Vacancy Notification at https://nta.ac.in."
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Director (Group A)",
+        "Joint Director (Group A)",
+        "Research Scientist ‘C’ (Group A)",
+        "Deputy Director (Group A)",
+        "Sr. Superintendent / Sr. Superintendent (Accounts) (Group B)"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "1 | Pay Level -13 of 7th CPC 07 ... Joint Director (Group A) ... Research Scientist ‘C’ (Group A) ... Deputy Director (Group A) ... Sr. Superintendent / Sr. Superintendent (Accounts) (Group B)"
+      }
+    },
+    "total_vacancies": {
+      "evidence": "ia) File No: A-A102(1)/1/2025-PE1(13611) Dated 12 November 2026 VACANCY NOTIFICATION Applications are invited from the eligible candidates for the foll",
+      "source": "rule",
+      "value": 2026
+    },
+    "total_vacancies_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "total_vacancies": "07 + 03 + 01 + 01 + 01 = 13 (derived from individual post vacancy counts in the table: 07 for Director, 03 for Joint Director, 01 for Research Scientist C, 01 for Deputy Director, 01 for Sr. Superintendent)"
+      }
+    }
+  },
+  "first_seen": "2026-11-21T17:40:20+00:00",
+  "id": "a88a03722d70",
+  "kind": "notification",
+  "org": "NTA",
+  "pdf": {
+    "bytes": 3133867,
+    "pages": 13,
+    "sha256": "b36d3fc050fb04ca6898a7f1e5804ac48ee9a996233080b34de86682d97e76a3",
+    "text_kind": "ocr"
+  },
+  "source_id": "nta-home",
+  "status": "pending_review",
+  "title": "Publication of Vacancy Notification for Various Posts in the NTA Read More",
+  "url": "https://nta.ac.in/Download/Notice/Notice_20261120110558.pdf"
+}

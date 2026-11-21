@@ -1,0 +1,90 @@
+Government of India
+Department of Personnel and Training
+
+Staff Selection Commission
+CGO Complex, New Delhi
+
+Normalization procedure for SSC exams from June 2025
+
+1 Step-by-step procedure for converting raw scores into normalised
+scores
+
+For each test/subject/area for which the examination is held in multiple shifts, the raw score for
+each candidate appearing for the test/subject is converted into normalised score in the following
+three steps.
+
+Step 1 (Intermediate) Convert raw scores into percentile scores: the percentiles are calculated
+separately for each shift.
+
+Step 2 (Intermediate) Pull-back the percentiles to the marks scale: this is done by first collating
+the data across all sessions into one table, then sorting the records in decreasing (increasing)
+order of percentiles, and finally filling in the gaps in the raw score table by interpolation.
+
+Step 3 (Final) At the end of the previous step, each percentile value will have a corresponding raw
+score value for each session. This is combined to get the normalised score.
+
+This procedure will be done separately for each test /subject /area so that each candidate is assigned
+a score for each test/subject/area which has been opted for and at the end of this transformation
+procedure, each candidate will have a normalised score in each such test/subject /area.
+
+The details of each of the three steps mentioned above are given below.
+
+Step 1: Calculation of Percentile Scores: This first step is to be completed separately
+for each shift.
+
+1. Record the number of candidates who have actually appeared in the shift. Denote this number
+by N.
+
+2. Sort all the candidates in one shift in decreasing order of their marks.
+
+3. Note the raw marks for each candidate. Suppose this is denoted by T. Count the number of
+
+candidates in that shift whose raw scores are less than or equal to T. Denote this number by
+m.
+
+4. The percentile score for this candidate is then calculated as
+
+m
+P=<.
+
+Note that the percentile so calculated will satisfy 0 < P <1.
+
+5. The percentile P above can be rounded off to the requisite number of decimal places. It is
+recommended to do it till 8-th places of decimal.
+
+1.1 Illustration
+
+Suppose that the examination in a certain subject is held in two different shifts, $1 and $2, say.
+Let us consider six candidates A, B,C, D, E and F out of which A, B,C are from shift 51 and the
+other three are from shift $2.
+
+Let the raw marks of the six candidates be 2५, 28, 26 (shift $1 marks) and yp, ४७, yr (shift $2
+marks).
+
+For candidates A, B,C, the percentiles are calculated using the totality of marks obtained by can-
+didates appearing in shift $1 (in the same subject) as explained above.
+
+Similarly, for candidates D, E, F, the percentiles are calculated using the totality of marks obtained
+by candidates appearing in shift $2 (in the same subject).
+
+Let the respective percentiles be denoted by P4, Pg, Po, Pp, Pr, Pr.
+
+We would have a table which would look like the following. The terms in red colour indicate that
+these are the output of this step.
+
+Shift S1 Shift 52
+Candidate | Raw score | Percentile | Candidate | Raw score | Percentile
+A 24 Ps | D | w Pp
+ie | LB Pg E UB Pr
+Cc 22 Po F YF Pr
+
+Since the calculations for percentiles in any shift deppends only on the data from that shift alone,
+in essence, there is a separate table for each shift.
+
+2 Step 2: Sorting the candidates using their percentiles after com-
+bining data from all sessions
+
+1. The session-wise data is now to be combined (or concatanated) together.
+
+2. During the concatenation, the separate percentile columns SHOULD be combined to create
+a single percentile column.

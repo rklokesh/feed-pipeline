@@ -1,0 +1,70 @@
+{
+  "board_url": "https://uppsc.up.nic.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "ciic https://uppsc.up.nic.in * Home Page tu Click here for Advt. No. A-5/E-1/2025, Assistant Teacher, Trained Graduate Grade (Male/Female Branch) Exam-2025 Docum",
+      "source": "rule",
+      "value": "A-5/E-1/2025"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "No. A-5/E-1/2025"
+      }
+    },
+    "apply_or_official_url": {
+      "evidence": "f 1EI i Lb d ci 3TI2.°T 1?'iI ci' 20.11.2026 3 I I I c ciic https://uppsc.up.nic.in * Home Page tu Click here for Advt. No. A-5/E-1/2025, Assistant Teacher, Traine",
+      "source": "rule",
+      "value": "https://uppsc.up.nic.in"
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://uppsc.up.nic.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "https://uppsc.up.nic.in"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Assistant Teacher, Trained Graduate Grade (Male/Female Branch)"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "Assistant Teacher, Trained Graduate Grade\n(Male/Female Branch) Exam-2025"
+      }
+    }
+  },
+  "first_seen": "2026-11-21T17:40:20+00:00",
+  "id": "a094e16774b2",
+  "kind": "notification",
+  "org": "UPPSC",
+  "pdf": {
+    "bytes": 8475430,
+    "pages": 2,
+    "sha256": "113215b7adbce5d568c5d28dbbc164de447e5429c6d38eb723c10770f797e560",
+    "text_kind": "text"
+  },
+  "source_id": "uppsc-home",
+  "status": "pending_review",
+  "title": "26 Nov 2026 NOTICE REAGARDING DOCUMENT VERIFICATION FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER TRAINED GRADUATE (M./F.) EXAM 2025, (URDU, MUSIC)",
+  "url": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq8wa1SBR0ZJ/"
+}
