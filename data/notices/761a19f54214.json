@@ -1,0 +1,32 @@
+{
+  "board_url": "https://sbi.bank.in/web/careers/current-openings",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "OF INDIA CENTRAL RECRUITMENT & PROMOTION DEPARTMENT (CRPD ) ADVERTISEMENT NO. CRPD/PO/2026-27/09 NOTICE PSYCHOMETRIC TEST FOR PROBATIONARY OFFICERS RECRUITMENT (2026–27) An add",
+      "source": "rule",
+      "value": "CRPD/PO/2026-27/09"
+    },
+    "apply_or_official_url": {
+      "evidence": "test through the link given below: Psychometric Test Link: http://ibpsreg.ibps.in/sbipojun26/optcla_oct26/login.php?appid=0ccc916d16abf7276a74ae4a24e0074b Note: Appearance in the Psychometric Test is mandatory for participation in the",
+      "source": "rule",
+      "value": "http://ibpsreg.ibps.in/sbipojun26/optcla_oct26/login.php?appid=0ccc916d16abf7276a74ae4a24e0074b"
+    }
+  },
+  "first_seen": "2026-11-23T19:50:22+00:00",
+  "id": "761a19f54214",
+  "kind": "info",
+  "org": "SBI",
+  "pdf": {
+    "bytes": 93393,
+    "pages": 1,
+    "sha256": "69a204bc09c3e6ad50d97c84b4098a98ce6c1b5baa764128ff524893d6ea3616",
+    "text_kind": "text"
+  },
+  "source_id": "sbi-careers",
+  "status": "pending_review",
+  "title": "ADVERTISEMENT ( Hindi (513 KB) / English (5 MB) ) (NEW) CORRIGENDUM DOWNLOAD ACQUAINT YOURSELF BOOKLET( English (529 KB) /Hindi (961 KB) ) PRELIMINARY EXAMINATION RESULT (NEW) MARKS SECURED BY THE CANDIDATES IN PRELIMINARY EXAMINATION (NEW) INFORMATION HANDOUT (Hindi (506 KB)/ English (1 MB) ) (NEW)",
+  "url": "https://sbi.bank.in/webfiles/uploads/files_2627/11/Notice_for_Psychometric_Test.pdf"
+}

@@ -1,0 +1,27 @@
+{
+  "board_url": "https://ssc.gov.in/home/notice-board",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "e designated login module on the website of the Commission (https://ssc.gov.in/). 2. The ‘Admission Certificate’ for the said examination will tentatively be a",
+      "source": "rule",
+      "value": "https://ssc.gov.in/"
+    }
+  },
+  "first_seen": "2026-11-23T19:50:22+00:00",
+  "id": "9b299d298ae6",
+  "kind": "other",
+  "org": "SSC",
+  "pdf": {
+    "bytes": 41267,
+    "pages": 1,
+    "sha256": "19e59a978f7391908c9f63992f688d493d7aacc94725a0d83106b68969d1ae28",
+    "text_kind": "text"
+  },
+  "source_id": "ssc-notice-board",
+  "status": "pending_review",
+  "title": "Information regarding the city of examination and Admission Certificate for the candidates of Combined Higher Secondary (10+2) Level Examination, 2026 (Computer Based Examination) (Tier-I)",
+  "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/notice_23112026.pdf"
+}

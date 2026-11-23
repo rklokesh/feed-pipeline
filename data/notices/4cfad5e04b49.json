@@ -1,0 +1,27 @@
+{
+  "board_url": "https://bssc.bihar.gov.in/NoticeBoard.htm",
+  "extraction": {
+    "ai": null
+  },
+  "fields": {
+    "apply_or_official_url": {
+      "evidence": "ं प्रवेश पत्र डाउनलोड करने हेतु वांछित लिंक आयोग के वेबसाइट https://bsscbihargov.in 1 निम्नानुसार उपलब्ध करायी जाएगी:- Be शहर की जानकारी के दिनांक-24.11.2026 से।",
+      "source": "rule",
+      "value": "https://bsscbihargov.in"
+    }
+  },
+  "first_seen": "2026-11-23T19:50:22+00:00",
+  "id": "4cfad5e04b49",
+  "kind": "admit_card",
+  "org": "BSSC",
+  "pdf": {
+    "bytes": 453642,
+    "pages": 1,
+    "sha256": "472c1ef85535f5afaddc007383b944ee7d55d8000c48aedbf58fc89085ea0ad5",
+    "text_kind": "ocr"
+  },
+  "source_id": "bssc-home",
+  "status": "pending_review",
+  "title": "23-11-2026 07/25 Important Notice regarding Admit card for Adv. No.- 07/25, Post- Stenographer/Steno Typist Grade - III",
+  "url": "https://bssc.bihar.gov.in/Advertisement/5178_admitCard_notice.pdf"
+}

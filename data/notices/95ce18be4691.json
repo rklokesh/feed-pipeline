@@ -1,0 +1,118 @@
+{
+  "board_url": "https://nta.ac.in/",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "admit_card": {
+      "evidence": "ced later on website English Only Will be indicated on the e-Admit Card | 19-21 February 2027 25 February 2027 , https//cmat.nta.nic.in/ https://nta.ac.in 011- 40759000 / 011-69227700 हेल्पलाइन नंबर / He",
+      "source": "rule",
+      "value": "2027-02-21"
+    },
+    "apply_last": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-12-20"
+    },
+    "apply_last_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_last": "23 November 2026 to 20 December 2026"
+      }
+    },
+    "apply_or_official_url": {
+      "evidence": "1 February 2027 25 February 2027 , https//cmat.nta.nic.in/ https://nta.ac.in 011- 40759000 / 011-69227700 हेल्पलाइन नंबर / Helpline Number: +91-11-4075900",
+      "source": "rule",
+      "value": "https://nta.ac.in"
+    },
+    "apply_start": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-11-23"
+    },
+    "apply_start_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_start": "23 November 2026 to 20 December 2026"
+      }
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://cmat.nta.nic.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "https://cmat.nta.nic.in"
+      }
+    },
+    "exam_date": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "To be announced later on website"
+    },
+    "exam_date_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "exam_date": "To be announced later on website"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "Common Management Admission Test (CMAT)-2027"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "Subject: Inviting Online Applications for Common Management Admission Test (CMAT)-2027-reg."
+      }
+    },
+    "qualification": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "Graduate"
+    },
+    "qualification_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "qualification": "This Test facilitates AICTE affiliated/ Participating Institutions to select suitable graduate candidates"
+      }
+    }
+  },
+  "first_seen": "2026-11-23T19:50:22+00:00",
+  "id": "95ce18be4691",
+  "kind": "notification",
+  "org": "NTA",
+  "pdf": {
+    "bytes": 1552358,
+    "pages": 2,
+    "sha256": "3ec6edd387eb28fc32f89a95d6ad59f4a6febf95a4066beeac50a2f9856bd7a6",
+    "text_kind": "ocr"
+  },
+  "source_id": "nta-home",
+  "status": "pending_review",
+  "title": "Inviting Online Applications for Common Management Admission Test(CMAT)-2027-reg. Read More",
+  "url": "https://nta.ac.in/Download/Notice/Notice_20261123210726.pdf"
+}
