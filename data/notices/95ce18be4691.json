@@ -1,5 +1,22 @@
 {
+  "auto_published": true,
   "board_url": "https://nta.ac.in/",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2026-12-20",
+    "list": true,
+    "posts": "Common Management Admission Test (CMAT) 2027",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "NTA has invited online applications for the Common Management Admission Test (CMAT) 2027. Eligible graduates can apply online through the official website.",
+    "summary_hi": "राष्ट्रीय परीक्षा एजेंसी ने कॉमन मैनेजमेंट एडमिशन टेस्ट (सीमैट) 2027 के लिए ऑनलाइन आवेदन आमंत्रित किए हैं। योग्य स्नातक आधिकारिक वेबसाइट के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
+    "title_en": "Common Management Admission Test CMAT 2027",
+    "title_hi": "कॉमन मैनेजमेंट एडमिशन टेस्ट सीमैट 2027",
+    "type": "Job",
+    "vacancies": null
+  },
+  "exam": {},
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -103,6 +120,8 @@
   },
   "first_seen": "2026-11-23T19:50:22+00:00",
   "id": "95ce18be4691",
+  "issue": 2496,
+  "issue_tidy": true,
   "kind": "notification",
   "org": "NTA",
   "pdf": {
@@ -111,8 +130,12 @@
     "sha256": "3ec6edd387eb28fc32f89a95d6ad59f4a6febf95a4066beeac50a2f9856bd7a6",
     "text_kind": "ocr"
   },
+  "published_at": "2026-11-23T19:52:36Z",
+  "qual": [
+    "graduate"
+  ],
   "source_id": "nta-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "Inviting Online Applications for Common Management Admission Test(CMAT)-2027-reg. Read More",
   "url": "https://nta.ac.in/Download/Notice/Notice_20261123210726.pdf"
 }

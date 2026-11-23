@@ -1,5 +1,26 @@
 {
+  "auto_published": true,
   "board_url": "https://sbi.bank.in/web/careers/current-openings",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-11-23",
+    "last_date": null,
+    "list": true,
+    "posts": "Probationary Officer",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "State Bank of India has announced a re-test for the Probationary Officer psychometric assessment for candidates who missed the previous test due to technical reasons. The online proctored test is scheduled for 23 November 2026.",
+    "summary_hi": "भारतीय स्टेट बैंक ने तकनीकी कारणों से पिछली परीक्षा छूटने वाले उम्मीदवारों के लिए प्रोबेशनरी ऑफिसर साइकोमेट्रिक असेसमेंट की पुनर्परीक्षा की घोषणा की है। ऑनलाइन परीक्षा 23 नवंबर 2026 को आयोजित होगी।",
+    "title_en": "SBI Probationary Officer Psychometric Test Re-Exam 2026",
+    "title_hi": "एसबीआई प्रोबेशनरी ऑफिसर साइकोमेट्रिक टेस्ट पुनर्परीक्षा 2026",
+    "type": "Update",
+    "vacancies": null
+  },
+  "exam": {
+    "key": "sbi-probationary-officer-2026",
+    "name_en": "SBI Probationary Officer 2026",
+    "name_hi": "एसबीआई प्रोबेशनरी ऑफिसर 2026"
+  },
   "extraction": {
     "ai": null
   },
@@ -17,6 +38,8 @@
   },
   "first_seen": "2026-11-23T19:50:22+00:00",
   "id": "761a19f54214",
+  "issue": 2495,
+  "issue_tidy": true,
   "kind": "info",
   "org": "SBI",
   "pdf": {
@@ -25,8 +48,12 @@
     "sha256": "69a204bc09c3e6ad50d97c84b4098a98ce6c1b5baa764128ff524893d6ea3616",
     "text_kind": "text"
   },
+  "published_at": "2026-11-23T19:52:14Z",
+  "qual": [
+    "graduate"
+  ],
   "source_id": "sbi-careers",
-  "status": "pending_review",
+  "status": "approved",
   "title": "ADVERTISEMENT ( Hindi (513 KB) / English (5 MB) ) (NEW) CORRIGENDUM DOWNLOAD ACQUAINT YOURSELF BOOKLET( English (529 KB) /Hindi (961 KB) ) PRELIMINARY EXAMINATION RESULT (NEW) MARKS SECURED BY THE CANDIDATES IN PRELIMINARY EXAMINATION (NEW) INFORMATION HANDOUT (Hindi (506 KB)/ English (1 MB) ) (NEW)",
   "url": "https://sbi.bank.in/webfiles/uploads/files_2627/11/Notice_for_Psychometric_Test.pdf"
 }
