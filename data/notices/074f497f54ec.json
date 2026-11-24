@@ -1,0 +1,85 @@
+{
+  "board_url": "https://bssc.bihar.gov.in/NoticeBoard.htm",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "07 /25"
+    },
+    "advt_no_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "advt_no": "विज्ञापन संख्या-07 /25"
+      }
+    },
+    "apply_or_official_url": {
+      "evidence": "ittps://bsscpracticesteno.cbrt.co.in/login) आयोग के वेबसाइट https://bssc.bihargov.in पर उपलब्ध करा दिया गया है। साथ ही, अभ्यर्थियों के लिए महत्वपूर्ण निर्देश आयोग क",
+      "source": "rule",
+      "value": "https://bssc.bihargov.in"
+    },
+    "apply_url": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://bssc.bihargov.in"
+    },
+    "apply_url_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "apply_url": "आयोग के वेबसाइट https://bssc.bihargov.in पर उपलब्ध करा दिया गया है।"
+      }
+    },
+    "exam_date": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2026-12-01"
+    },
+    "exam_date_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "exam_date": "दिनांक- 01.12.2026 (मंगलवार) को"
+      }
+    },
+    "post_names": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "आशुलिपिक / आशुटंकक-11"
+      ]
+    },
+    "post_names_evidence": {
+      "evidence": "",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": {
+        "post_names": "विज्ञापन संख्या-07 /25, पद-आशुलिपिक / आशुटंकक-11 की लिखित परीक्षा"
+      }
+    }
+  },
+  "first_seen": "2026-11-24T20:35:06+00:00",
+  "id": "074f497f54ec",
+  "kind": "notification",
+  "org": "BSSC",
+  "pdf": {
+    "bytes": 520778,
+    "pages": 1,
+    "sha256": "3bb1b17654de9630c7a10204c4f8daea474aec7cde15b6091b9bfc17d00ad715",
+    "text_kind": "ocr"
+  },
+  "source_id": "bssc-home",
+  "status": "pending_review",
+  "title": "24-11-2026 07/25 Important Notice regarding Adv. No.-07/25, Post-Stenographer/Steno Typist Grade-III Click Here for Instruction to Candidates Click Here for Practice Test",
+  "url": "https://bssc.bihar.gov.in/Advertisement/5208_07_25_notice.pdf"
+}

@@ -1,0 +1,60 @@
+{
+  "board_url": "https://bssc.bihar.gov.in/NoticeBoard.htm",
+  "extraction": {
+    "ai": "gemini/gemini-flash-lite-latest"
+  },
+  "fields": {
+    "advt_no": {
+      "evidence": "07 / 25",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "07 / 25"
+    },
+    "apply_last": {
+      "evidence": "24.11.2025 तक",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2025-11-24"
+    },
+    "apply_or_official_url": {
+      "evidence": "को निदेश दिया जाता है कि अद्यतन सूचना हेतु आयोग के वेबसाईट https://bssc.bihar.gov.in का WAT अवलोकन करते Ve | \\W सचिव बिहार कर्मचारी चयन आयोग, पटना।",
+      "source": "rule",
+      "value": "https://bssc.bihar.gov.in"
+    },
+    "apply_start": {
+      "evidence": "दिनांक-25.09.2025 से",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "2025-09-25"
+    },
+    "apply_url": {
+      "evidence": "https://bssc.bihar.gov.in",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": "https://bssc.bihar.gov.in"
+    },
+    "post_names": {
+      "evidence": "विज्ञापन संख्या-07 / 25, पद-आशुलिपिक / आशुटंकक-ता",
+      "provider": "gemini/gemini-flash-lite-latest",
+      "source": "ai",
+      "value": [
+        "आशुलिपिक",
+        "आशुटंकक"
+      ]
+    }
+  },
+  "first_seen": "2026-11-24T20:35:06+00:00",
+  "id": "7ff96b039d4c",
+  "kind": "notification",
+  "org": "BSSC",
+  "pdf": {
+    "bytes": 537008,
+    "pages": 1,
+    "sha256": "45a0bf822aae52a4ea9523d0dddff64a83bf6eea0db4213f6b87ef25edfdf1fc",
+    "text_kind": "ocr"
+  },
+  "source_id": "bssc-home",
+  "status": "pending_review",
+  "title": "24-11-2026 07/25 Important Notice regarding Debarment of Candidates for Adv. No.-07/25, Post-Stenographer/Steno Typist Grade-III",
+  "url": "https://bssc.bihar.gov.in/Advertisement/5194_dabarred.pdf"
+}
