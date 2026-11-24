@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SarkariChart//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:nta-cmat-2027-online-form-notification-exam-date-last@sarkarichart
+DTSTAMP:20261124T045845Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Last date: NTA CMAT 2027 Online Form – Notification & Exam Date
+DESCRIPTION:https://sarkarichart.com/notice/nta-cmat-2027-online-form-notification-exam-date/
+URL:https://sarkarichart.com/notice/nta-cmat-2027-online-form-notification-exam-date/
+BEGIN:VALARM
+TRIGGER:-P1DT15H
+ACTION:DISPLAY
+DESCRIPTION:Last date: NTA CMAT 2027 Online Form – Notification & Exam Date
+END:VALARM
+END:VEVENT
+END:VCALENDAR
