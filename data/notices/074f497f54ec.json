@@ -1,5 +1,27 @@
 {
+  "auto_published": true,
   "board_url": "https://bssc.bihar.gov.in/NoticeBoard.htm",
+  "card": {
+    "confidence": "high",
+    "exam_date": "2026-12-01",
+    "last_date": null,
+    "list": true,
+    "posts": "Stenographer / Steno Typist Grade-III",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "BSSC has announced the exam date for Stenographer and Steno Typist Grade-III posts. The exam is scheduled for 01.12.2026, and a practice test link has been provided.",
+    "summary_hi": "बिहार कर्मचारी चयन आयोग ने आशुलिपिक एवं आशुटंकक पदों के लिए परीक्षा तिथि की घोषणा कर दी है। परीक्षा 01.12.2026 को आयोजित होगी और अभ्यास परीक्षा लिंक उपलब्ध करा दिया गया है।",
+    "title_en": "BSSC Stenographer Exam Date 2026 – Notice & CBT Practice Link",
+    "title_hi": "बिहार कर्मचारी चयन आयोग आशुलिपिक परीक्षा तिथि 2026 – नोटिस एवं प्रैक्टिस लिंक",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "bpsc-stenographer-2026",
+    "name_en": "BPSC Stenographer 2026",
+    "name_hi": "बीपीएससी आशुलिपिक 2026"
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -70,16 +92,206 @@
   },
   "first_seen": "2026-11-24T20:35:06+00:00",
   "id": "074f497f54ec",
+  "issue": 2498,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-24",
   "org": "BSSC",
+  "page": {
+    "after_en": [
+      "Download admit card when released",
+      "Appear for the CBT exam on 01 Dec 2026"
+    ],
+    "after_hi": [
+      "जारी होने पर प्रवेश पत्र डाउनलोड करें",
+      "01 दिसंबर 2026 को सीबीटी परीक्षा में शामिल हों"
+    ],
+    "age": [],
+    "apply_start": null,
+    "apply_url": "https://bssc.bihargov.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check exam date and shift details",
+      "Attempt the practice test to understand CBT interface",
+      "Read all instructions on the admit card carefully"
+    ],
+    "checklist_hi": [
+      "परीक्षा तिथि और पाली की जानकारी जांचें",
+      "सीबीटी इंटरफेस को समझने के लिए प्रैक्टिस टेस्ट दें",
+      "प्रवेश पत्र पर दिए गए सभी निर्देशों को ध्यान से पढ़ें"
+    ],
+    "conducted_by_en": "Bihar Staff Selection Commission (BSSC)",
+    "conducted_by_hi": "बिहार कर्मचारी चयन आयोग (BSSC)",
+    "dates": [
+      {
+        "label_en": "Notice Date",
+        "label_hi": "सूचना तिथि",
+        "value_en": "24 Nov 2026",
+        "value_hi": "24 नवंबर 2026"
+      },
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "01 Dec 2026",
+        "value_hi": "01 दिसंबर 2026"
+      }
+    ],
+    "documents_en": [
+      "Admit Card",
+      "Valid Photo ID Proof"
+    ],
+    "documents_hi": [
+      "प्रवेश पत्र",
+      "वैध फोटो पहचान पत्र"
+    ],
+    "eligibility": [],
+    "exam_date": "2026-12-01",
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "The BSSC Stenographer and Steno Typist Grade-III exam is scheduled to be held on 01 December 2026 in computer-based test mode.",
+        "a_hi": "बिहार कर्मचारी चयन आयोग आशुलिपिक एवं आशुटंकक पद की परीक्षा 01 दिसंबर 2026 को कंप्यूटर आधारित परीक्षा मोड में आयोजित की जाएगी।",
+        "q_en": "What is the BSSC Stenographer Exam Date 2026?",
+        "q_hi": "बिहार कर्मचारी चयन आयोग आशुलिपिक परीक्षा तिथि 2026 क्या है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Exam Shifts",
+        "label_hi": "परीक्षा की पालियां",
+        "value_en": "Two shifts",
+        "value_hi": "दो पालियां"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "The exam is scheduled for 01 December 2026.",
+        "a_hi": "परीक्षा 01 दिसंबर 2026 को निर्धारित है।",
+        "q_en": "When is the BSSC Stenographer Exam 2026?",
+        "q_hi": "बिहार कर्मचारी चयन आयोग आशुलिपिक परीक्षा 2026 कब है?"
+      },
+      {
+        "a_en": "The exam will be conducted online in Computer Based Test (CBT) mode.",
+        "a_hi": "परीक्षा ऑनलाइन कंप्यूटर आधारित टेस्ट (CBT) मोड में आयोजित की जाएगी।",
+        "q_en": "What is the mode of the BSSC Stenographer exam?",
+        "q_hi": "बिहार कर्मचारी चयन आयोग आशुलिपिक परीक्षा का तरीका क्या है?"
+      },
+      {
+        "a_en": "The practice test demo link is available on the official BSSC website at bssc.bihar.gov.in.",
+        "a_hi": "प्रैक्टिस टेस्ट डेमो लिंक आधिकारिक वेबसाइट bssc.bihar.gov.in पर उपलब्ध है।",
+        "q_en": "Where can I find the practice test link for BSSC Stenographer?",
+        "q_hi": "मुझे आशुलिपिक परीक्षा के लिए प्रैक्टिस टेस्ट लिंक कहां मिल सकता है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "BSSC Stenographer Exam Date 2026 – Notice & CBT Practice Link",
+    "h1_hi": "बिहार कर्मचारी चयन आयोग आशुलिपिक परीक्षा तिथि 2026 – नोटिस एवं प्रैक्टिस लिंक",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official BSSC website at bssc.bihar.gov.in.",
+      "Click on the notice regarding Adv. No. 07/25 for exam date and instructions.",
+      "Use the provided demo link to take the practice test for the CBT interface.",
+      "Download and read all important instructions carefully."
+    ],
+    "how_hi": [
+      "बिहार कर्मचारी चयन आयोग की आधिकारिक वेबसाइट bssc.bihar.gov.in पर जाएं।",
+      "विज्ञापन संख्या 07/25 से संबंधित परीक्षा तिथि और निर्देशों के नोटिस पर क्लिक करें।",
+      "सीबीटी इंटरफेस के अभ्यास के लिए दिए गए डेमो लिंक का उपयोग करें।",
+      "महत्वपूर्ण निर्देशों को ध्यान से पढ़ें।"
+    ],
+    "intro_en": "The Bihar Staff Selection Commission (BSSC) has released an important notice regarding the written examination for Stenographer and Steno Typist Grade-III under Advertisement No. 07/25. The examination is scheduled to be conducted on 01 December 2026 in two shifts through online mode (Computer Based Test). Candidates can practice using the CBT demo link provided on the official website to understand the exam interface. Applicants must read all instructions carefully and visit the official website regularly for updates.",
+    "intro_hi": "बिहार कर्मचारी चयन आयोग (BSSC) ने विज्ञापन संख्या 07/25 के अंतर्गत आशुलिपिक एवं आशुटंकक पदों की लिखित परीक्षा के संबंध में महत्वपूर्ण सूचना जारी की है। परीक्षा 01 दिसंबर 2026 को दो पालियों में ऑनलाइन मोड (कंप्यूटर आधारित परीक्षा) में आयोजित की जाएगी। अभ्यर्थी परीक्षा प्रणाली से परिचित होने के लिए आधिकारिक वेबसाइट पर दिए गए डेमो लिंक का उपयोग कर सकते हैं।",
+    "last_date": null,
+    "mistakes_en": [
+      "Do not consider the practice test demo link as the standard for actual exam question difficulty or pattern."
+    ],
+    "mistakes_hi": [
+      "प्रैक्टिस टेस्ट डेमो लिंक को वास्तविक परीक्षा के प्रश्न-पत्र के स्तर या पैटर्न का मानक न मानें।"
+    ],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-24",
+    "official_site": "https://bssc.bihar.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "07/25",
+        "value_hi": "07/25"
+      },
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Stenographer / Steno Typist Grade-III",
+        "value_hi": "आशुलिपिक / आशुटंकक"
+      },
+      {
+        "label_en": "Exam Date",
+        "label_hi": "परीक्षा तिथि",
+        "value_en": "01 Dec 2026",
+        "value_hi": "01 दिसंबर 2026"
+      },
+      {
+        "label_en": "Exam Mode",
+        "label_hi": "परीक्षा का तरीका",
+        "value_en": "Computer Based Test (CBT)",
+        "value_hi": "कंप्यूटर आधारित परीक्षा (CBT)"
+      }
+    ],
+    "salary": [],
+    "selection_en": [
+      "Written Examination (CBT)",
+      "Skill Test / Subsequent Stages as per rules"
+    ],
+    "selection_hi": [
+      "लिखित परीक्षा (सीबीटी)",
+      "कौशल परीक्षण / नियमानुसार अन्य चरण"
+    ],
+    "share_card": {
+      "headline_en": "Exam Date Out 2026",
+      "headline_hi": "परीक्षा तिथि घोषित 2026",
+      "kind": "admit",
+      "line_en": "Stenographer Exam Date",
+      "line_hi": "आशुलिपिक परीक्षा तिथि",
+      "posts": null
+    },
+    "status_en": "Exam date announced, practice test link active",
+    "status_hi": "परीक्षा तिथि घोषित, प्रैक्टिस टेस्ट लिंक सक्रिय",
+    "summary_en": "BSSC has announced the exam date for Stenographer and Steno Typist Grade-III (Adv. No. 07/25). The exam will be held on 01 Dec 2026 in computer-based mode. Candidates can check the important instructions and take the practice test on the official website.",
+    "summary_hi": "बिहार कर्मचारी चयन आयोग ने विज्ञापन संख्या 07/25 के तहत आशुलिपिक एवं आशुटंकक पदों की परीक्षा तिथि की घोषणा कर दी है। परीक्षा 01 दिसंबर 2026 को ऑनलाइन मोड में आयोजित होगी। अभ्यर्थी आधिकारिक वेबसाइट पर निर्देश पढ़ सकते हैं और प्रैक्टिस टेस्ट दे सकते हैं।",
+    "vacancies": [
+      {
+        "detail_en": "Adv. No. 07/25",
+        "detail_hi": "विज्ञापन संख्या 07/25",
+        "post_en": "Stenographer / Steno Typist Grade-III",
+        "post_hi": "आशुलिपिक / आशुटंकक",
+        "total": null
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates who applied for BSSC Stenographer / Steno Typist Grade-III Adv. No. 07/25"
+    ],
+    "who_hi": [
+      "वे अभ्यर्थी जिन्होंने BSSC आशुलिपिक / आशुटंकक विज्ञापन संख्या 07/25 के लिए आवेदन किया है"
+    ]
+  },
   "pdf": {
     "bytes": 520778,
     "pages": 1,
     "sha256": "3bb1b17654de9630c7a10204c4f8daea474aec7cde15b6091b9bfc17d00ad715",
     "text_kind": "ocr"
   },
+  "published_at": "2026-11-25T02:17:19Z",
+  "qual": [
+    "12th"
+  ],
+  "slug": "bssc-stenographer-exam-date-2026-notice-cbt-practice-link",
   "source_id": "bssc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "24-11-2026 07/25 Important Notice regarding Adv. No.-07/25, Post-Stenographer/Steno Typist Grade-III Click Here for Instruction to Candidates Click Here for Practice Test",
   "url": "https://bssc.bihar.gov.in/Advertisement/5208_07_25_notice.pdf"
 }

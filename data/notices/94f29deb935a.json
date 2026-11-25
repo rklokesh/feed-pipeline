@@ -1,5 +1,20 @@
 {
   "board_url": "https://bssc.bihar.gov.in/NoticeBoard.htm",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": null,
+    "list": false,
+    "posts": "Stenographer / Steno Typist Grade-III",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "General exam day instructions and guidelines for candidates, not a new job, admit card, or result.",
+    "summary_en": "Read the important instructions and guidelines issued for candidates appearing in the Stenographer and Steno Typist Grade-III examination.",
+    "summary_hi": "आशुलिपिक और आशु टंकक ग्रेड-3 परीक्षा में शामिल होने वाले अभ्यर्थियों के लिए महत्वपूर्ण निर्देश और दिशा-निदेश पढ़ें।",
+    "title_en": "BSSC Stenographer and Steno Typist Exam Instructions",
+    "title_hi": "बिहार कर्मचारी चयन आयोग आशुलिपिक परीक्षा निर्देश",
+    "type": "Update",
+    "vacancies": null
+  },
   "extraction": {
     "ai": null
   },
@@ -15,7 +30,7 @@
     "text_kind": "ocr"
   },
   "source_id": "bssc-home",
-  "status": "pending_review",
+  "status": "skipped",
   "title": "24-11-2026 07/25 Important Notice regarding Adv. No.-07/25, Post-Stenographer/Steno Typist Grade-III Click Here for Instruction to Candidates Click Here for Practice Test",
   "url": "https://bssc.bihar.gov.in/Advertisement/07_25_instruction.pdf"
 }

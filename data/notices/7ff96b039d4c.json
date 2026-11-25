@@ -1,5 +1,27 @@
 {
+  "auto_published": true,
   "board_url": "https://bssc.bihar.gov.in/NoticeBoard.htm",
+  "card": {
+    "confidence": "high",
+    "exam_date": null,
+    "last_date": "2025-11-24",
+    "list": true,
+    "posts": "आशुलिपिक / आशुटंकक",
+    "provider": "gemini/gemini-flash-lite-latest",
+    "skip_reason": "",
+    "summary_en": "Bihar Staff Selection Commission has cancelled the candidature of 3 candidates for the Stenographer and Steno Typist post under Advertisement Number 07/25 due to failure to submit required information.",
+    "summary_hi": "बिहार कर्मचारी चयन आयोग ने विज्ञापन संख्या 07/25 के तहत आशुलिपिक और आशुटंकक पद के लिए आवश्यक सूचना उपलब्ध न कराने पर 3 अभ्यर्थियों का अभ्यर्थित्व रद्द कर दिया है।",
+    "title_en": "BSSC Stenographer Advt 07/25 Candidature Cancelled 2026 – Notice",
+    "title_hi": "बिहार कर्मचारी चयन आयोग आशुलिपिक विज्ञापन 07/25 अभ्यर्थित्व रद्द नोटिस 2026",
+    "type": "Update",
+    "vacancies": null
+  },
+  "editor_notes": [],
+  "exam": {
+    "key": "bpsc-stenographer-2026",
+    "name_en": "BPSC Stenographer 2026",
+    "name_hi": "बीपीएससी आशुलिपिक 2026"
+  },
   "extraction": {
     "ai": "gemini/gemini-flash-lite-latest"
   },
@@ -45,16 +67,180 @@
   },
   "first_seen": "2026-11-24T20:35:06+00:00",
   "id": "7ff96b039d4c",
+  "issue": 2499,
+  "issue_tidy": true,
   "kind": "notification",
+  "notice_date": "2026-11-24",
   "org": "BSSC",
+  "page": {
+    "after_en": [
+      "Check the official website regularly for further updates regarding the recruitment process."
+    ],
+    "after_hi": [
+      "भर्ती प्रक्रिया के संबंध में आगे के अपडेट के लिए नियमित रूप से आधिकारिक वेबसाइट देखें।"
+    ],
+    "age": [],
+    "apply_start": "2025-09-25",
+    "apply_url": "https://bssc.bihar.gov.in",
+    "changes": [],
+    "changes_from_notes": "",
+    "checklist_en": [
+      "Check your registration number against the cancelled list if applicable."
+    ],
+    "checklist_hi": [
+      "यदि लागू हो तो रद्द की गई सूची के विरुद्ध अपने पंजीकरण नंबर की जांच करें।"
+    ],
+    "conducted_by_en": "Bihar Staff Selection Commission (BSSC)",
+    "conducted_by_hi": "बिहार कर्मचारी चयन आयोग (बी.एस.एस.सी.)",
+    "dates": [
+      {
+        "label_en": "Online application start date",
+        "label_hi": "ऑनलाइन आवेदन शुरू होने की तिथि",
+        "value_en": "25 Sep 2025",
+        "value_hi": "25 सितंबर 2025"
+      },
+      {
+        "label_en": "Online application last date",
+        "label_hi": "ऑनलाइन आवेदन की अंतिम तिथि",
+        "value_en": "24 Nov 2025",
+        "value_hi": "24 नवंबर 2025"
+      },
+      {
+        "label_en": "Notice issue date",
+        "label_hi": "नोटिस जारी होने की तिथि",
+        "value_en": "24 Nov 2026",
+        "value_hi": "24 नवंबर 2026"
+      }
+    ],
+    "documents_en": [],
+    "documents_hi": [],
+    "eligibility": [],
+    "exam_date": null,
+    "exam_pattern": [],
+    "explain": [
+      {
+        "a_en": "This notice announces the cancellation of candidature of 3 candidates under Advertisement No. 07/25 for failing to provide required information regarding competitive examination debarment.",
+        "a_hi": "यह नोटिस प्रतियोगी परीक्षा से डिबार होने के संबंध में आवश्यक सूचना न देने पर विज्ञापन संख्या 07/25 के तहत 3 अभ्यर्थियों का अभ्यर्थित्व रद्द किए जाने की घोषणा करता है।",
+        "q_en": "What is this BSSC notice about?",
+        "q_hi": "यह बी.एस.एस.सी. नोटिस किस बारे में है?"
+      }
+    ],
+    "extra": [
+      {
+        "label_en": "Cancelled Candidatures",
+        "label_hi": "रद्द किए गए अभ्यर्थित्व",
+        "value_en": "3 candidates (Yashwant Kumar, Ritik Pratap Singh, Prashant Chauhan)",
+        "value_hi": "3 अभ्यर्थी (यशवंत कुमार, रितिक प्रताप सिंह, प्रशांत चौहान)"
+      }
+    ],
+    "faq": [
+      {
+        "a_en": "Candidature was cancelled because the candidates failed to submit required information regarding debarment as demanded by the commission.",
+        "a_hi": "आयोग द्वारा मांगे जाने के बावजूद डिबारमेंट से संबंधित आवश्यक सूचना उपलब्ध न कराने के कारण अभ्यर्थित्व रद्द किया गया।",
+        "q_en": "Why was the candidature cancelled?",
+        "q_hi": "अभ्यर्थित्व क्यों रद्द किया गया?"
+      },
+      {
+        "a_en": "The candidature of 3 candidates has been cancelled.",
+        "a_hi": "3 अभ्यर्थियों का अभ्यर्थित्व रद्द कर दिया गया है।",
+        "q_en": "How many candidates' candidature has been cancelled?",
+        "q_hi": "कितने अभ्यर्थियों का अभ्यर्थित्व रद्द किया गया है?"
+      },
+      {
+        "a_en": "The advertisement number is 07/25.",
+        "a_hi": "विज्ञापन संख्या 07/25 है।",
+        "q_en": "What is the advertisement number for BSSC Stenographer recruitment?",
+        "q_hi": "बी.एस.एस.सी. आशुलिपिक भर्ती के लिए विज्ञापन संख्या क्या है?"
+      }
+    ],
+    "fees": [],
+    "h1_en": "BSSC Stenographer Advt 07/25 Candidature Cancelled 2026 – Notice",
+    "h1_hi": "बिहार कर्मचारी चयन आयोग आशुलिपिक विज्ञापन 07/25 अभ्यर्थित्व रद्द नोटिस 2026",
+    "hindi_notice_url": null,
+    "how_en": [
+      "Visit the official BSSC website at bssc.bihar.gov.in.",
+      "Check the Notice Board for updates regarding Advertisement No. 07/25."
+    ],
+    "how_hi": [
+      "आधिकारिक वेबसाइट bssc.bihar.gov.in पर जाएं।",
+      "विज्ञापन संख्या 07/25 से संबंधित अपडेट के लिए नोटिस बोर्ड देखें।"
+    ],
+    "intro_en": "Bihar Staff Selection Commission (BSSC) has released an important notice regarding Advertisement No. 07/25 for Stenographer and Steno Typist posts. Online applications were invited from 25 September 2025 to 24 November 2025. Candidates who had marked 'Yes' in the debarment column were asked to submit details. Due to non-submission of the required information by the specified date, the candidature of 3 candidates has been officially cancelled.",
+    "intro_hi": "बिहार कर्मचारी चयन आयोग (बी.एस.एस.सी.) ने आशुलिपिक और आशुटंकक पदों के लिए विज्ञापन संख्या 07/25 के संबंध में एक महत्वपूर्ण नोटिस जारी किया है। ऑनलाइन आवेदन 25 सितंबर 2025 से 24 नवंबर 2025 तक आमंत्रित किए गए थे। डिबारमेंट कॉलम में 'Yes' अंकित करने वाले अभ्यर्थियों से विवरण मांगे गए थे। निर्धारित तिथि तक आवश्यक सूचना उपलब्ध न कराने के कारण 3 अभ्यर्थियों का अभ्यर्थित्व आधिकारिक रूप से रद्द कर दिया गया है।",
+    "last_date": "2025-11-24",
+    "mistakes_en": [],
+    "mistakes_hi": [],
+    "not_en": [],
+    "not_hi": [],
+    "notice_date": "2026-11-24",
+    "official_site": "https://bssc.bihar.gov.in",
+    "physical": [],
+    "provider": "gemini/gemini-flash-lite-latest",
+    "rows": [
+      {
+        "label_en": "Advertisement Number",
+        "label_hi": "विज्ञापन संख्या",
+        "value_en": "07 / 25",
+        "value_hi": "07 / 25"
+      },
+      {
+        "label_en": "Post Name",
+        "label_hi": "पद का नाम",
+        "value_en": "Stenographer / Steno Typist Grade-III",
+        "value_hi": "आशुलिपिक / आशुटंकक ग्रेड-III"
+      },
+      {
+        "label_en": "Notice Type",
+        "label_hi": "नोटिस का प्रकार",
+        "value_en": "Candidature Cancellation Notice",
+        "value_hi": "अभ्यर्थित्व रद्द करने की सूचना"
+      }
+    ],
+    "salary": [],
+    "selection_en": [],
+    "selection_hi": [],
+    "share_card": {
+      "headline_en": "Candidature Cancelled",
+      "headline_hi": "अभ्यर्थित्व रद्द",
+      "kind": "job",
+      "line_en": "Stenographer Advt 07/25",
+      "line_hi": "आशुलिपिक विज्ञापन 07/25",
+      "posts": null
+    },
+    "status_en": "Candidature cancelled for 3 candidates",
+    "status_hi": "3 अभ्यर्थियों का अभ्यर्थित्व रद्द",
+    "summary_en": "Bihar Staff Selection Commission has cancelled the candidature of 3 candidates for the Stenographer and Steno Typist post under Advertisement Number 07/25 due to failure to submit required information.",
+    "summary_hi": "बिहार कर्मचारी चयन आयोग ने विज्ञापन संख्या 07/25 के तहत आशुलिपिक और आशुटंकक पद के लिए आवश्यक सूचना उपलब्ध न कराने पर 3 अभ्यर्थियों का अभ्यर्थित्व रद्द कर दिया है।",
+    "vacancies": [
+      {
+        "detail_en": "Advt. No. 07/25",
+        "detail_hi": "विज्ञापन संख्या 07/25",
+        "post_en": "Stenographer / Steno Typist",
+        "post_hi": "आशुलिपिक / आशुटंकक",
+        "total": null
+      }
+    ],
+    "video_url": null,
+    "who_en": [
+      "Candidates who applied for BSSC Advt. No. 07/25 Stenographer and Steno Typist posts"
+    ],
+    "who_hi": [
+      "बी.एस.एस.सी. विज्ञापन संख्या 07/25 आशुलिपिक और आशुटंकक पदों के लिए आवेदन करने वाले अभ्यर्थी"
+    ]
+  },
   "pdf": {
     "bytes": 537008,
     "pages": 1,
     "sha256": "45a0bf822aae52a4ea9523d0dddff64a83bf6eea0db4213f6b87ef25edfdf1fc",
     "text_kind": "ocr"
   },
+  "published_at": "2026-11-25T02:17:26Z",
+  "qual": [
+    "12th"
+  ],
+  "slug": "bssc-stenographer-advt-07-25-candidature-cancelled-2026-notice",
   "source_id": "bssc-home",
-  "status": "pending_review",
+  "status": "approved",
   "title": "24-11-2026 07/25 Important Notice regarding Debarment of Candidates for Adv. No.-07/25, Post-Stenographer/Steno Typist Grade-III",
   "url": "https://bssc.bihar.gov.in/Advertisement/5194_dabarred.pdf"
 }
